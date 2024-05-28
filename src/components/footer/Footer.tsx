@@ -9,7 +9,6 @@ import { LinkedInIcons } from '@/assets/icons/socialLinksIcons/LinkedInIcons';
 import { InstagramIcons } from '@/assets/icons/socialLinksIcons/InstagramIcons';
 import { navigationList } from '@/lib/constants/footerNavigationList';
 
-
 export const Footer = () => {
   return (
     <footer className="w-full bg-primary px-4 py-[124px] md:py-14 flex flex-col justify-center items-center border-t">
