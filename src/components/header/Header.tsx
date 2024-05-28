@@ -2,12 +2,13 @@
 import { LogoIconsS } from '@/assets/icons/logo/LogoIconsS';
 import { Button } from '../ui/button';
 import { BurgerMenu } from '@/assets/icons/burgerMenu/BurgerMenu';
-import { headerNavigationList } from '@/constants/headernavigationList';
+
 import Link from 'next/link';
 import { useState } from 'react';
 import clsx from 'clsx';
 import ToggleButton from '../toogleHeader/ToogleHeader';
 import { GetAppButton } from '../buttonApp/GetAppButton';
+import { headerNavigationList } from '@/lib/constants/headernavigationList';
 
 export const Header = () => {
   const [active, setActive] = useState('/');

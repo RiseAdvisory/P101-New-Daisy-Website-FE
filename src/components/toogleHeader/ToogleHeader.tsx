@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import clsx from 'clsx';
 import { useState } from 'react';
-import { optionsToogle } from '@/constants/headernavigationList';
+import { optionsToogle } from '@/lib/constants/headernavigationList';
 
 const ToggleButton = () => {
   const [active, setActive] = useState(optionsToogle[0].path);
