@@ -8,5 +8,9 @@ export const headerNavigationList = [
 ];
 export const optionsToogle = [
   { label: 'Customer', path: '/customer' },
-  { label: 'Vendor', path: '/vendor' },
+  { label: 'Business', path: '/business' },
+  { label: 'Professional', path: '/professional' },
 ];
+export const changePageMobile = ['Customer', 'Bussines', 'Professional'];
+
+export const changeLanguage = ['EN', 'UA'];

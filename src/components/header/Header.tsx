@@ -1,32 +1,49 @@
 'use client';
 import { LogoIconsS } from '@/assets/icons/logo/LogoIconsS';
-import { Button } from '../ui/button';
-import { BurgerMenu } from '@/assets/icons/burgerMenu/BurgerMenu';
-
 import Link from 'next/link';
 import { useState } from 'react';
 import clsx from 'clsx';
-import ToggleButton from '../toogleHeader/ToogleHeader';
 import { GetAppButton } from '../buttonApp/GetAppButton';
-import { headerNavigationList } from '@/lib/constants/headernavigationList';
+import {
+  changeLanguage,
+  changePageMobile,
+  headerNavigationList,
+} from '@/lib/constants/headernavigationList';
+import { MobileMenu } from '../mobileMenu/MobileMenu';
+import { DropDownMobileHeader } from '../dropdownMobileHeader/DropdownMobileHeader';
 
 export const Header = () => {
   const [active, setActive] = useState('/');
+  const [openMenu, setOpenMenu] = useState(false);
+  const [changePage, setChangePage] = useState('Business');
+  const [changeLang, setChangeLang] = useState('EN');
+
   return (
-    <header className="w-full bg-primary p-4 flex justify-between md:justify-start border-b border-[#CAB2A6] md:px-16">
+    <header className="w-full bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16">
       <div>
         <LogoIconsS />
       </div>
       <nav className="flex justify-end items-center self-center md:justify-between w-full">
         <div className="md:hidden">
-          <Button variant="navigation">Vendor</Button>
-          <Button variant="navigation">Eng</Button>
-
-          <Button variant="navigation">
-            <BurgerMenu />
-          </Button>
+          {!openMenu && (
+            <>
+              <DropDownMobileHeader
+                state={changePage}
+                setState={setChangePage}
+                list={changePageMobile}
+                classNames="text-center"
+              />
+              <DropDownMobileHeader
+                state={changeLang}
+                setState={setChangeLang}
+                list={changeLanguage}
+                classNames="px-2"
+              />
+            </>
+          )}
+          <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
         </div>
-        <ul className="hidden md:flex space-x-8 px-[95px]">
+        <ul className="hidden md:flex space-x-9 mx-auto">
           {headerNavigationList.map((item, index) => {
             return (
               <li
@@ -54,10 +71,13 @@ export const Header = () => {
           })}
         </ul>
         <div className="hidden md:flex space-x-2">
-          <ToggleButton />
-          <Button variant="navigation" className="py-6 px-4">
-            Eng
-          </Button>
+          <DropDownMobileHeader
+            state={changeLang}
+            setState={setChangeLang}
+            list={changeLanguage}
+            classNameContent="!w-[70px]"
+          />
+
           <GetAppButton />
         </div>
       </nav>

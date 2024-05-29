@@ -1,13 +1,20 @@
+'use client';
 import Link from 'next/link';
 import clsx from 'clsx';
 import { useState } from 'react';
 import { optionsToogle } from '@/lib/constants/headernavigationList';
+import { cn } from '@/lib/utils';
 
-const ToggleButton = () => {
+const ToggleButton = ({ className }: { className?: string }) => {
   const [active, setActive] = useState(optionsToogle[0].path);
 
   return (
-    <div className="flex border rounded-lg p-2 bg-customWhite border-primaryBtn">
+    <div
+      className={cn(
+        'flex border rounded-lg p-2 bg-customWhite border-primaryBtn max-w-content',
+        className,
+      )}
+    >
       {optionsToogle.map((option) => (
         <Link
           // href={option.path}

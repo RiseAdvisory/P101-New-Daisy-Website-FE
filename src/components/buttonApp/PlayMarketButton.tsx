@@ -1,7 +1,7 @@
 import { GooglePlayIcons } from '@/assets/icons/appMarket/GooglePlayIcons';
 import { Button } from '../ui/button';
 
-export const PlayMarketButton = ({ className }: { className: string }) => {
+export const PlayMarketButton = ({ className }: { className?: string }) => {
   return (
     <>
       <Button
