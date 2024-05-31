@@ -50,11 +50,17 @@ export const DropDownMobileHeader = ({
       >
         {list?.map((item, index) => (
           <DropdownMenuItem
-            className="w-full flex flex-col self-center text-center justify-center items-center font-montserrat font-normal text-base"
+            className="w-full flex flex-col self-center text-center justify-center !items-center font-montserrat font-normal text-base"
             onClick={() => handleSelect(item.label)}
             key={index}
           >
-            <Link href={item.path}>{item.label}</Link>
+            <Link
+              className="w-full"
+              onClick={() => setOpen(false)}
+              href={item.path}
+            >
+              {item.label}
+            </Link>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

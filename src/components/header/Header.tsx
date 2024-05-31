@@ -11,8 +11,10 @@ import {
 } from '@/lib/constants/headernavigationList';
 import { MobileMenu } from '../mobileMenu/MobileMenu';
 import { DropDownMobileHeader } from '../dropdownMobileHeader/DropdownMobileHeader';
+import { usePathname } from 'next/navigation';
 
 export const Header = () => {
+  const path = usePathname();
   const [active, setActive] = useState('/');
   const [openMenu, setOpenMenu] = useState(false);
   const [changePage, setChangePage] = useState('Business');

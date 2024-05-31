@@ -61,7 +61,8 @@ export const NoScrollingAnimationBusiness = ({
       <motion.ul
         variants={container}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: true }}
         className="mt-8"
       >
         {Array.from({ length: 3 }).map((_, index) => {

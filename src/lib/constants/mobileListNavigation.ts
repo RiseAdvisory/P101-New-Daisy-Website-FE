@@ -1,32 +1,32 @@
 export const mobileListNavigation = [
-  { title: 'Services', nav: '/' },
-  { title: 'About', nav: '/' },
+  { title: 'Services', nav: '/services' },
+  { title: 'About', nav: '/about' },
   {
     title: 'Resources',
-    nav: '/',
+    nav: '/resources',
     submenu: [
       {
         title: 'Lead Quality Optimization',
         subtitle: 'Lorem ipsum dolor sit dolor ',
-        nav: '/',
+        nav: '/resources',
       },
       {
         title: 'Real Time Pricing',
         subtitle: 'Lorem ipsum dolor sit dolor ',
-        nav: '/',
+        nav: '/resources',
       },
       {
         title: 'Website translation',
         subtitle: 'Lorem ipsum dolor sit dolor ',
-        nav: '/',
+        nav: '/resources',
       },
       {
         title: 'Paid search',
         subtitle: 'Lorem ipsum dolor sit dolor ',
-        nav: '/',
+        nav: '/resources',
       },
     ],
   },
-  { title: 'Careers', nav: '/' },
-  { title: 'Contact', nav: '/' },
+  { title: 'Careers', nav: '/careers' },
+  { title: 'Contact', nav: '/cantact' },
 ];

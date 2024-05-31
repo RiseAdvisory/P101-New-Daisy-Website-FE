@@ -2,7 +2,13 @@ import { GrowthIcon } from '@/assets/icons/growthIcon/GrowthIcon';
 import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
 
-export const GrowthSection = () => {
+export const GrowthSection = ({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) => {
   return (
     <>
       <div className=" px-4 md:flex md:bg-[#F8F5F3]">
@@ -13,13 +19,12 @@ export const GrowthSection = () => {
               MARKETPLACE
             </h5>
             <h2 className="pt-2 text-[#172524] leading-10 text-3xl md:text-[40px] md:leading-[50px] md:font-bold">
-              Boost Occupancy, Attract New Clients, And Own Your Success
+              {title}
             </h2>
             <p className="font-montserrat font-medium text-xl pt-3 leading-8 text-primaryBtn md:text-[16px] md:leading-6 md:font-normal md:w-[70%]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
+              {description}
             </p>
-            <Button className="font-semibold w-full text-base mt-8 mb-10 px-[85px] py-[14px] rounded-[9px] md:w-[310px] hover:bg-white hover:text-primary hover:border hover:border-primary">
+            <Button className="font-semibold w-full h-auto text-base mt-8 mb-10 px-[85px] py-[14px] rounded-[9px] md:w-[310px] hover:bg-white hover:text-primary hover:border hover:border-primary">
               Learn More About Us
             </Button>
           </div>

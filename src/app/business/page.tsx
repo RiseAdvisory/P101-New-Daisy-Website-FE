@@ -55,43 +55,13 @@ const Business = () => {
           imageClassName=" absolute w-[60%] h-[80%] bottom-0  -translate-x-1/2 left-[50%]"
         />
       </div>
-
-      {/* <ScrollingAnimationBusiness
-        imageClassName=" absolute w-[80%] h-[90%] top-[50%] -translate-y-1/2 right-0"
-        whileMotion={{ x: 0, opacity: 1 }}
-        initialMotion={{ x: 200, opacity: 0 }}
-        classMotion="absolute w-[100%] h-[100%] right-0"
-        className="absolute w-full h-full bottom-0 left-10 bg-no-repeat bg-left-bottom bg-cover bg-[url('/images/Leaf1.png')]"
-        title="Friendly Design, Works On Any Mobile Or Desktop device"
-        image={image1}
-      />
-      <ScrollingAnimationBusiness
-        imageClassName=" absolute w-[80%] h-[90%] top-[50%] -translate-y-1/2 right-0"
-        whileMotion={{ x: 0, opacity: 1 }}
-        initialMotion={{ x: 200, opacity: 0 }}
-        classMotion="absolute w-[90%] h-[100%] right-0"
-        image={image2}
-        title="Marketing Tools  To Attract New & Retain Current Customers  "
-      />
-      <ScrollingAnimationBusiness
-        imageClassName=" absolute w-[80%] h-[90%] top-[50%] -translate-y-1/2 right-0"
-        whileMotion={{ x: 0, opacity: 1 }}
-        initialMotion={{ x: 200, opacity: 0 }}
-        classMotion="absolute w-[80%] h-[100%] right-0"
-        image={image3}
-        title="Collect Payments, Sync Calendars And Automate Daily Processes  "
-      />
-      <ScrollingAnimationBusiness
-        imageClassName=" absolute w-[80%] h-[90%] right-[50%] -translate-x-1/2 bottom-0"
-        whileMotion={{ x: 0, opacity: 1 }}
-        initialMotion={{ x: 200, opacity: 0 }}
-        classMotion="absolute w-[60%] h-[80%] bottom-0"
-        image={image4}
-        title="Performance Reports And Business Analytics To Help You Grow!"
-      /> */}
       <OurPartnersSection />
       <DaysiMission />
-      <GrowthSection />
+      <GrowthSection
+        title="Boost Occupancy, Attract New Clients, And Own Your Success"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor."
+      />
       <JoinTheDaisy />
       <ExperienceDaisy />
       <QASection />

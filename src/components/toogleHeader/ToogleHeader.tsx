@@ -9,7 +9,6 @@ import { usePathname } from 'next/navigation';
 const ToggleButton = ({ className }: { className?: string }) => {
   const pathname = usePathname();
   const [active, setActive] = useState(pathname);
-
   return (
     <div
       className={cn(
@@ -22,10 +21,13 @@ const ToggleButton = ({ className }: { className?: string }) => {
           href={`${option.path.toLowerCase()}`}
           key={option.path}
           onClick={() => setActive(option.path)}
-          className={clsx('px-6 py-1 rounded-lg font-semibold cursor-pointer hover:text-white', {
-            'bg-white text-black hover:text-black': active === option.path,
-            'text-[#ABB4B3]': active !== option.path,
-          })}
+          className={clsx(
+            'px-6 py-1 rounded-lg font-semibold cursor-pointer ',
+            {
+              'bg-white text-black ': active === option.path,
+              'text-[#ABB4B3] hover:text-white': active !== option.path,
+            },
+          )}
         >
           {option.label}
         </Link>
