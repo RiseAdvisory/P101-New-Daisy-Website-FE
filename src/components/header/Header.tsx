@@ -6,13 +6,15 @@ import clsx from 'clsx';
 import { GetAppButton } from '../buttonApp/GetAppButton';
 import {
   changeLanguage,
-  changePageMobile,
   headerNavigationList,
+  optionsToogle,
 } from '@/lib/constants/headernavigationList';
 import { MobileMenu } from '../mobileMenu/MobileMenu';
 import { DropDownMobileHeader } from '../dropdownMobileHeader/DropdownMobileHeader';
+import { usePathname } from 'next/navigation';
 
 export const Header = () => {
+  const path = usePathname();
   const [active, setActive] = useState('/');
   const [openMenu, setOpenMenu] = useState(false);
   const [changePage, setChangePage] = useState('Business');
@@ -20,9 +22,9 @@ export const Header = () => {
 
   return (
     <header className="w-full bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16">
-      <div>
+      <Link href={'/'}>
         <LogoIconsS />
-      </div>
+      </Link>
       <nav className="flex justify-end items-center self-center md:justify-between w-full">
         <div className="md:hidden">
           {!openMenu && (
@@ -30,14 +32,14 @@ export const Header = () => {
               <DropDownMobileHeader
                 state={changePage}
                 setState={setChangePage}
-                list={changePageMobile}
+                list={optionsToogle}
                 classNames="text-center"
               />
               <DropDownMobileHeader
                 state={changeLang}
                 setState={setChangeLang}
                 list={changeLanguage}
-                classNames="px-2"
+                classNames="px-2 hover:bg-white hover:text-primary"
               />
             </>
           )}
@@ -53,11 +55,10 @@ export const Header = () => {
                 }
               >
                 <Link
-                  //   href={item.nav}
-                  href="/"
+                  href={item.nav}
                   onClick={() => setActive(item.nav)}
                   className={clsx(
-                    'font-openSans font-normal text-[#D5D9D9] leading-6',
+                    'font-openSans font-normal text-[#D5D9D9] leading-6 hover:text-white',
                     {
                       'text-white': active === item.nav,
                       'text-gray-400': active !== item.nav,

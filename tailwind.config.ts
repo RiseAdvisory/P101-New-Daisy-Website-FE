@@ -79,6 +79,10 @@ const config = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
+      backgroundImage: {
+        'custom-gradient':
+          'linear-gradient(to bottom, white 0%, white 50%, #F8F5F3 50%, #F8F5F3 100%)',
+      },
     },
     fontFamily: {
       openSans: 'var(--open-sans)',

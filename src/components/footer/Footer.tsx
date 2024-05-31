@@ -11,15 +11,15 @@ import { navigationList } from '@/lib/constants/footerNavigationList';
 
 export const Footer = () => {
   return (
-    <footer className="w-full bg-primary px-4 py-[124px] md:py-14 flex flex-col justify-center items-center border-t">
-      <div className="mb-6">
+    <footer className="w-full bg-primary px-4 py-[124px] md:py-14 flex flex-col justify-center items-center">
+      <Link href={'/'} className="mb-6">
         <LogoIconsS />
-      </div>
+      </Link>
       <nav className=" justify-center items-center self-center md:pt-6 md:pb-8">
         <ul className="flex flex-col items-center justify-center font-montserrat text-gray-400 md:flex-row md:space-x-5">
           {navigationList.map((item, index) => {
             return (
-              <Link key={index} href="///" className="pb-6">
+              <Link key={index} href="///" className="pb-6 hover:text-white">
                 {item}
               </Link>
             );

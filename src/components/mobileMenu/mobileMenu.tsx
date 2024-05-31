@@ -20,6 +20,7 @@ export const MobileMenu = ({
   openMenu: boolean;
   setOpenMenu: Dispatch<SetStateAction<boolean>>;
 }) => {
+  console.log(openMenu);
   return (
     <DropdownMenu open={openMenu} modal={false}>
       <DropdownMenuTrigger>
@@ -35,10 +36,13 @@ export const MobileMenu = ({
           {mobileListNavigation.map((item, index) => {
             return (
               <li key={index}>
-                <div className="flex justify-between py-4">
+                <div className="flex justify-between items-center py-4">
                   <Link
                     href={item.nav}
-                    className="font-montserrat font-semibold text-xl leading-8 "
+                    className="font-montserrat font-semibold text-xl leading-8 w-full"
+                    onClick={() => {
+                      setOpenMenu(!openMenu);
+                    }}
                   >
                     {item.title}
                   </Link>

@@ -1,6 +1,7 @@
-export const ArrowDownIcon = () => {
+export const ArrowDownIcon = ({ className }: { className: string }) => {
   return (
     <svg
+      className={className}
       width="10"
       height="6"
       viewBox="0 0 10 6"
@@ -9,7 +10,6 @@ export const ArrowDownIcon = () => {
     >
       <path
         d="M1 1L5 5L9 1"
-        stroke="white"
         strokeWidth="1.40196"
         strokeLinecap="round"
         strokeLinejoin="round"
