@@ -4,25 +4,26 @@ import clsx from 'clsx';
 import { useState } from 'react';
 import { optionsToogle } from '@/lib/constants/headernavigationList';
 import { cn } from '@/lib/utils';
+import { usePathname } from 'next/navigation';
 
 const ToggleButton = ({ className }: { className?: string }) => {
-  const [active, setActive] = useState(optionsToogle[0].path);
+  const pathname = usePathname();
+  const [active, setActive] = useState(pathname);
 
   return (
     <div
       className={cn(
-        'flex border rounded-lg p-2 bg-customWhite border-primaryBtn max-w-content',
+        'flex border rounded-lg p-2 bg-customWhite border-primaryBtn max-w-content w-[400px] mb-8',
         className,
       )}
     >
       {optionsToogle.map((option) => (
         <Link
-          // href={option.path}
-          href="/"
+          href={`${option.path.toLowerCase()}`}
           key={option.path}
           onClick={() => setActive(option.path)}
-          className={clsx('px-6 py-1 rounded-lg font-semibold', {
-            'bg-white text-black': active === option.path,
+          className={clsx('px-6 py-1 rounded-lg font-semibold cursor-pointer hover:text-white', {
+            'bg-white text-black hover:text-black': active === option.path,
             'text-[#ABB4B3]': active !== option.path,
           })}
         >

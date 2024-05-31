@@ -4,22 +4,24 @@ import { Button } from '../ui/button';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-export const ScrollingAnimationBusiness = ({
+export const NoScrollingAnimationBusiness = ({
   image,
   title,
   className,
-  classMotion,
-  initialMotion,
-  whileMotion,
   imageClassName,
+  imageBg,
+  imageBgTwo,
+  imageClassNameBg,
+  imageClassNameBgTwo,
 }: {
   image?: any;
   title: string;
   className?: string;
-  classMotion: string;
-  initialMotion: any;
-  whileMotion: any;
   imageClassName: string;
+  imageBg: any;
+  imageBgTwo?: any;
+  imageClassNameBg: string;
+  imageClassNameBgTwo?: string;
 }) => {
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -42,19 +44,13 @@ export const ScrollingAnimationBusiness = ({
     },
   };
   return (
-    <div className="pt-16">
+    <div className="pt-16 bg-primary px-4 pb-[64px]">
       <div className="w-full relative bg-primaryBtn overflow-hidden rounded-[9px] h-[350px]">
-        <div className={className} style={{ backgroundSize: '50%' }}></div>
-        <motion.div
-          initial={initialMotion}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          // viewport={{ once: true }}
-          //   animate={{ y: 0 }}
-          whileInView={whileMotion}
-          className={classMotion}
-        >
-          <Image src={image!} alt="aaa" className={imageClassName} />
-        </motion.div>
+        <Image src={imageBg} alt="bg" className={imageClassNameBg} />
+        {imageBgTwo && (
+          <Image src={imageBgTwo} alt="bgtwo" className={imageClassNameBgTwo} />
+        )}
+        <Image src={image!} alt="photo" className={imageClassName} />
       </div>
       <h5 className="text-[#F2DAD4] pt-8 text-base leading-6">FEATURES</h5>
       <h2 className="pt-2 text-white leading-10 text-3xl">{title}</h2>

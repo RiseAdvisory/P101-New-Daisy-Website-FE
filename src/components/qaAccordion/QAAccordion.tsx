@@ -4,21 +4,23 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import Separator from '../separator/Separator';
 
-export const QAAccordion = () => {
+export const QAAccordion = ({ value }: { value: any }) => {
   return (
     <Accordion
       type="multiple"
       className="w-full bg-white rounded-[16px] space-x-4 mt-4 border "
     >
       <AccordionItem
-        value="item-1"
-        className="focus:bg-primary focus:text-white  p-4"
+        value={`item-${value}`}
+        className="group focus:bg-primary focus:text-white data-[state=open]:bg-primary data-[state=open]:text-white data-[state=open]:rounded-[16px] px-4"
       >
         <AccordionTrigger className="font-montserrat text-base font-semibold text-start">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
         </AccordionTrigger>
-        <AccordionContent>
+        <Separator className="hidden group-data-[state=open]:block data-[state=open]:bg-white group-data-[state=open]:my-4 group-data-[state=open]:mb-10" />
+        <AccordionContent className="md:text-base  text-[#EAECEC] font-montserrat md:font-normal pb-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

@@ -11,6 +11,8 @@ export const optionsToogle = [
   { label: 'Business', path: '/business' },
   { label: 'Professional', path: '/professional' },
 ];
-export const changePageMobile = ['Customer', 'Bussines', 'Professional'];
 
-export const changeLanguage = ['EN', 'UA'];
+export const changeLanguage = [
+  { label: 'EN', path: 'en' },
+  { label: 'UA', path: 'ua' },
+];

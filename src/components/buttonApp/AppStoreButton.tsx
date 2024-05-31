@@ -6,11 +6,15 @@ export const AppStoreButton = () => {
     <>
       <Button
         variant="navigation"
-        className="w-full mr-0 h-full felx items-center justify-center rounded-xl py-4"
+        className="w-full mr-0 h-full felx items-center justify-center rounded-xl py-4 group hover:bg-white hover:text-primary"
       >
         {' '}
         <div className="flex items-center mr-3">
-          <AppStoreIcons w="36" h="36" className="mr-3" />
+          <AppStoreIcons
+            w="36"
+            h="36"
+            className="mr-3 fill-white group-hover:fill-primary"
+          />
           <div>
             <p className="text-start font-inter font-normal text-xs leading-3">
               Download on the
