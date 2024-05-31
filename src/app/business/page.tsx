@@ -34,7 +34,7 @@ const Business = () => {
           title="Friendly Design, Works On Any Mobile Or Desktop device"
           imageClassName=" absolute w-[300px] h-[70%] top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
           imageBgTwo={leaf}
-          imageClassNameBgTwo="absolute -top-[70px] -right-[70px] w-[200px] h-[200px] rotate-180 scale-x-[-1]"
+          imageClassNameBgSecond="absolute -top-[70px] -right-[70px] w-[200px] h-[200px] rotate-180 scale-x-[-1]"
         />
         <NoScrollingAnimationBusiness
           imageBg={leaf}
@@ -44,7 +44,7 @@ const Business = () => {
           title="Collect Payments, Sync Calendars And Automate Daily Processes  "
           imageClassName=" absolute w-[70%] h-[90%] top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
           imageBgTwo={leaf}
-          imageClassNameBgTwo="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
+          imageClassNameBgSecond="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
         />
         <NoScrollingAnimationBusiness
           imageBg={leaf}

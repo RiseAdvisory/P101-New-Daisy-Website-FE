@@ -12,7 +12,7 @@ export const NoScrollingAnimationBusiness = ({
   imageBg,
   imageBgTwo,
   imageClassNameBg,
-  imageClassNameBgTwo,
+  imageClassNameBgSecond,
 }: {
   image?: any;
   title: string;
@@ -21,7 +21,7 @@ export const NoScrollingAnimationBusiness = ({
   imageBg: any;
   imageBgTwo?: any;
   imageClassNameBg: string;
-  imageClassNameBgTwo?: string;
+  imageClassNameBgSecond?: string;
 }) => {
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -48,7 +48,11 @@ export const NoScrollingAnimationBusiness = ({
       <div className="w-full relative bg-primaryBtn overflow-hidden rounded-[9px] h-[350px]">
         <Image src={imageBg} alt="bg" className={imageClassNameBg} />
         {imageBgTwo && (
-          <Image src={imageBgTwo} alt="bgtwo" className={imageClassNameBgTwo} />
+          <Image
+            src={imageBgTwo}
+            alt="bgtwo"
+            className={imageClassNameBgSecond}
+          />
         )}
         <Image src={image!} alt="photo" className={imageClassName} />
       </div>

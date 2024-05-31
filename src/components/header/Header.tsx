@@ -55,8 +55,7 @@ export const Header = () => {
                 }
               >
                 <Link
-                  //   href={item.nav}
-                  href="/"
+                  href={item.nav}
                   onClick={() => setActive(item.nav)}
                   className={clsx(
                     'font-openSans font-normal text-[#D5D9D9] leading-6 hover:text-white',
