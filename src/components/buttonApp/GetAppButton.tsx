@@ -13,7 +13,7 @@ export const GetAppButton = ({ className }: { className?: string }) => {
         className,
       )}
     >
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center hover:bg-white group hover:text-primary cursor-pointer">
         <button className=" border-r-2 border-[#586968] pr-[11px]">
           <AppStoreIcons w="15" h="17" className="group-hover:fill-primary" />
         </button>

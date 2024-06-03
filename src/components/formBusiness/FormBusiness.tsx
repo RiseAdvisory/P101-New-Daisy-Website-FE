@@ -322,10 +322,10 @@ export const ProfileForm = () => {
           />
         </div>
 
-        <Separator className="md:bg-[#E8E9E9] mt-6" />
+        <Separator className="bg-[#E8E9E9] mt-6" />
         <Button
           type="submit"
-          className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary hover:text-white"
+          className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary hover:text-white font-montserrat font-semibold md:h-auto"
         >
           Send Message
         </Button>

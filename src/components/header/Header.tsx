@@ -1,7 +1,7 @@
 'use client';
 import { LogoIconsS } from '@/assets/icons/logo/LogoIconsS';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import { GetAppButton } from '../buttonApp/GetAppButton';
 import {
@@ -9,16 +9,27 @@ import {
   headerNavigationList,
   optionsToogle,
 } from '@/lib/constants/headernavigationList';
-import { MobileMenu } from '../mobileMenu/MobileMenu';
+
 import { DropDownMobileHeader } from '../dropdownMobileHeader/DropdownMobileHeader';
 import { usePathname } from 'next/navigation';
+import { MobileMenu } from '../mobileMenu/mobileMenu';
 
 export const Header = () => {
   const path = usePathname();
-  const [active, setActive] = useState('/');
+  const [active, setActive] = useState('');
   const [openMenu, setOpenMenu] = useState(false);
   const [changePage, setChangePage] = useState('Business');
   const [changeLang, setChangeLang] = useState('EN');
+
+  useEffect(() => {
+    const currentPath = headerNavigationList.find((item) => {
+      if (path === '/customer' || path === '/business') {
+        return item.nav === '/';
+      }
+      return item.nav === path;
+    });
+    setActive(currentPath?.nav || '');
+  }, [path]);
 
   return (
     <header className="w-full bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16">

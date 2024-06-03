@@ -30,7 +30,7 @@ export const OurValue = () => {
               </li>
             ))}
           </ul>
-          <div className="flex flex-col mt-6  justify-start items-start text-start border rounded-[12px] px-6 py-8 bg-white md:w-[30%] md:ml-6 md:mt-[32px]">
+          <div className="flex flex-col mt-6  justify-start md:justify-center md:items-center md:text-center items-start text-start border rounded-[12px] px-6 py-8 bg-white md:w-[30%] md:ml-6 md:mt-[32px]">
             <span>
               <MessageIcons />
             </span>

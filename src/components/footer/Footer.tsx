@@ -19,8 +19,12 @@ export const Footer = () => {
         <ul className="flex flex-col items-center justify-center font-montserrat text-gray-400 md:flex-row md:space-x-5">
           {navigationList.map((item, index) => {
             return (
-              <Link key={index} href="///" className="pb-6 hover:text-white">
-                {item}
+              <Link
+                key={index}
+                href={item.nav}
+                className="pb-6 hover:text-white"
+              >
+                {item.name}
               </Link>
             );
           })}

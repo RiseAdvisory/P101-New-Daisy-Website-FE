@@ -20,7 +20,6 @@ export const MobileMenu = ({
   openMenu: boolean;
   setOpenMenu: Dispatch<SetStateAction<boolean>>;
 }) => {
-  console.log(openMenu);
   return (
     <DropdownMenu open={openMenu} modal={false}>
       <DropdownMenuTrigger>
