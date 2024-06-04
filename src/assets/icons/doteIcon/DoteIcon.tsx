@@ -1,7 +1,7 @@
-export const DoteIcon = () => {
+export const DoteIcon = ({ className }: { className?: string }) => {
   return (
     <svg
-      className="mx-3"
+      className={`mx-3 ${className}`}
       width="4"
       height="4"
       viewBox="0 0 4 4"

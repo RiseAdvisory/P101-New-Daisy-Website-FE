@@ -1,7 +1,14 @@
+'use client';
 import { DoteIcon } from '@/assets/icons/doteIcon/DoteIcon';
 import { Button } from '../ui/button';
+import Separator from '../separator/Separator';
+import { AccordionVacancies } from './Acoordion';
+import { vacanciesList } from '@/lib/constants/vacanciesList';
+import { ModalCV } from './ModalCV';
+import { useState } from 'react';
 
 export const Vacansies = () => {
+  const [openCV, setOpenCV] = useState(false);
   return (
     <div className=" px-4 py-20 bg-[#F8F5F3] md:flex md:justify-between">
       <div className="bg-white p-8 border rounded-[12px] md:mr-6 md:h-fit">
@@ -21,30 +28,40 @@ export const Vacansies = () => {
         </Button>
       </div>
       <ul className="space-y-6 mt-6 md:flex md:flex-col md:w-full md:mt-0">
-        {Array.from({ length: 2 }).map((_, index) => {
+        {vacanciesList.map((item, index) => {
           return (
             <li
               key={index}
-              className="bg-white p-8 border rounded-[12px] w-full"
+              className="bg-white p-8 border rounded-[12px] w-full md:flex md:justify-between md:flex-col"
             >
-              <p className="font-bold text-2xl">Software Engineer</p>
-              <p className="flex justify-start items-center font-montserrat text-[#2E3B3A] my-2">
-                <span>English C1 Remote </span>
-                <DoteIcon /> <span>Remote</span>
-              </p>
-              <span className="text-[#14736F] bg-[#E7F1F1] px-[10px] py-[1px] font-montserrat rounded-[20px]">
-                2 years experience
-              </span>
-              <Button
-                type="submit"
-                className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary font-montserrat font-semibold hover:text-white md:py-4 md:h-auto"
-              >
-                Apply
-              </Button>
+              <div className="md:flex md:justify-between">
+                <div>
+                  <p className="font-bold text-2xl">{item.position}</p>
+                  <div className="md:flex md:justify-center md:items-center">
+                    <p className="flex justify-start items-center font-montserrat text-[#2E3B3A] my-2">
+                      <span>{item.levelEnglish} </span>
+                      <DoteIcon /> <span>{item.jobType}</span>
+                    </p>
+                    <DoteIcon className="hidden md:block" />
+                    <span className="text-[#14736F] bg-[#E7F1F1] px-[10px] py-[1px] font-montserrat rounded-[20px] block w-full md:w-fit">
+                      {item.experience} experience
+                    </span>
+                  </div>
+                </div>
+                <Button
+                  type="button"
+                  onClick={() => setOpenCV(!openCV)}
+                  className="bg-white mb-8 text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary font-montserrat font-semibold hover:text-white md:mt-0  md:w-fit md:h-fit md:py-2 md:px-4"
+                >
+                  Apply
+                </Button>
+              </div>
+              <AccordionVacancies listExperience={item.aboutExperience} />
             </li>
           );
         })}
       </ul>
+      <ModalCV openCV={openCV} setOpenCV={setOpenCV} />
     </div>
   );
 };
