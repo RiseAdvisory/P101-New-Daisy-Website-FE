@@ -1,7 +1,6 @@
 'use client';
 import { DoteIcon } from '@/assets/icons/doteIcon/DoteIcon';
 import { Button } from '../ui/button';
-import Separator from '../separator/Separator';
 import { AccordionVacancies } from './Acoordion';
 import { vacanciesList } from '@/lib/constants/vacanciesList';
 import { ModalCV } from './ModalCV';

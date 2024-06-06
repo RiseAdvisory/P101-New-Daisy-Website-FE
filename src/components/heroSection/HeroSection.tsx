@@ -1,7 +1,11 @@
+'use client';
 import Image from 'next/image';
 import stars from '../../assets/images/starsBg.png';
 import { ArrowSectionDown } from '@/assets/icons/arrowSectionDown/arrowSectionDown';
 import { cn } from '@/lib/utils';
+import { HomeIcon } from '@/assets/icons/homeIcon/HomeIcon';
+import { BreadcrumbWithCustomSeparator } from '../blogPage/blogPosts/BreadCrumbs';
+import { usePathname } from 'next/navigation';
 
 export const HeroPage = ({
   title,
@@ -20,13 +24,24 @@ export const HeroPage = ({
   styleSection?: string;
   secondDescription?: string;
 }) => {
+  const path = usePathname();
+  const isVisibleBreadCrumbs = path.includes('customer');
   return (
     <div
       className={cn(
-        `w-full  bg-primary pt-[100px] flex flex-col justify-start items-center px-4 ${styleSection}`,
-        { 'h-[90vh]': heightScreen },
+        `  w-full  bg-primary pt-[100px] flex flex-col justify-start items-center px-4 ${styleSection}`,
+        { 'h-[95vh]': heightScreen },
       )}
     >
+      {isVisibleBreadCrumbs && (
+        <div className="flex pb-28 mr-auto">
+          <HomeIcon className="mr-2" />
+          <BreadcrumbWithCustomSeparator
+            bredCrumbTitle="Customers’ Testimonials"
+            bredCrumbDesription="Resources"
+          />
+        </div>
+      )}
       <Image src={stars} alt="stars" className="mx-auto w-[60px] h-[60px] " />
       <p className="mt-11 font-semibold text-base text-[#F2DAD4] uppercase">
         {title}
@@ -45,10 +60,9 @@ export const HeroPage = ({
         {secondDescription}
       </p>
       <div
-        className={cn(
-          'mt-[200px] md:mt-[300px] mb-12 flex flex-col justify-center md:mt[200px] ',
-          { hidden: hiddenArrow },
-        )}
+        className={cn('mt-[74px] md:mt-[150px] flex flex-col justify-center ', {
+          hidden: hiddenArrow,
+        })}
       >
         <p className="text-base text-white font-normal font-montserrat">
           Don’t believe us? Keep reading...

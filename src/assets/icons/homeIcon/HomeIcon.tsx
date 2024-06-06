@@ -1,6 +1,7 @@
-export const HomeIcon = () => {
+export const HomeIcon = ({ className }: { className?: string }) => {
   return (
     <svg
+      className={className}
       width="16"
       height="17"
       viewBox="0 0 16 17"

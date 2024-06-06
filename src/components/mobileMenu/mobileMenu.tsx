@@ -4,7 +4,6 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Dispatch, SetStateAction } from 'react';
-
 import { BurgerMenu } from '@/assets/icons/burgerMenu/BurgerMenu';
 import { CloseIcon } from '@/assets/icons/closeIcon/CloseIcon';
 import { GetAppButton } from '../buttonApp/GetAppButton';
@@ -52,24 +51,25 @@ export const MobileMenu = ({
                   <ul>
                     {item.submenu.map((submenuItem, subIndex) => (
                       <li key={subIndex} className="pb-5">
-                        <div className="flex justify-between items-center">
-                          <div>
-                            <Link
-                              href={submenuItem.nav}
-                              className="font-montserrat font-semibold text-base leading-6"
-                            >
+                        <Link
+                          href={submenuItem.nav}
+                          className="font-montserrat font-semibold text-base leading-6"
+                          onClick={() => setOpenMenu(!openMenu)}
+                        >
+                          <div className="flex justify-between items-center">
+                            <div>
                               {submenuItem.title}
-                            </Link>
-                            {submenuItem.subtitle && (
-                              <p className="text-[#D5D9D9] font-normal text-sm py-1">
-                                {submenuItem.subtitle}
-                              </p>
-                            )}
+                              {submenuItem.subtitle && (
+                                <p className="text-[#D5D9D9] font-normal text-sm py-1">
+                                  {submenuItem.subtitle}
+                                </p>
+                              )}
+                            </div>
+                            <div>
+                              <ArrowRightIcon />
+                            </div>
                           </div>
-                          <div>
-                            <ArrowRightIcon />
-                          </div>
-                        </div>
+                        </Link>
                       </li>
                     ))}
                     <Separator className="mt-6" />

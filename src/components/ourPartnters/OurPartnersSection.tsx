@@ -1,9 +1,13 @@
 import { parntersImages } from '@/lib/constants/partnersImage';
 import Image from 'next/image';
 
-export const OurPartnersSection = () => {
+export const OurPartnersSection = ({
+  stylePartners,
+}: {
+  stylePartners?: string;
+}) => {
   return (
-    <div className="bg-white px-4 mt-[80px] pb-[112px]">
+    <div className={`bg-white px-4 mt-[80px] pb-[112px] ${stylePartners}`}>
       <div className="flex flex-col mx-auto text-center pt-20 px-3">
         <h1 className="text-center text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
           Our Partners
@@ -16,7 +20,7 @@ export const OurPartnersSection = () => {
       <ul className="flex space-x-5 mt-8 overflow-x-scroll px-4 items-center justify-center">
         {parntersImages.map((item, index) => {
           return (
-            <li key={index}>
+            <li key={index} className="">
               <Image
                 src={item.img}
                 alt="partners"

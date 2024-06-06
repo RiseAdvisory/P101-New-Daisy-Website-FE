@@ -1,5 +1,5 @@
-import React, { useCallback, useEffect, useState } from 'react';
-import { useDropzone } from 'react-dropzone';
+import React, { useCallback, useState } from 'react';
+import { useDropzone, FileRejection } from 'react-dropzone';
 import styles from './DropZoneUpload.module.css';
 import { CloudUpload } from '@/assets/icons/cloudUpload/CloudUpload';
 import { FileUpload } from '@/assets/icons/fileUpload/FileUpload';
@@ -31,12 +31,12 @@ const DropZoneUpload = () => {
   const [isDragActive, setIsDragActive] = useState(false);
   const [files, setFiles] = useState<any[]>([]);
 
-  const onDropRejected = useCallback((fileRejections: any) => {
+  const onDropRejected = useCallback((fileRejections: FileRejection[]) => {
     console.error(fileRejections[0].errors);
     setIsDragActive(false);
   }, []);
 
-  const onDrop = useCallback((acceptedFiles: any) => {
+  const onDrop = useCallback((acceptedFiles: File[]) => {
     setFiles((prevFiles) => [...prevFiles, ...acceptedFiles]);
   }, []);
 
@@ -55,8 +55,6 @@ const DropZoneUpload = () => {
   const handleRemoveFile = (fileName: string) => {
     setFiles((prevFiles) => prevFiles.filter((file) => file.name !== fileName));
   };
-
-  
 
   return (
     <div

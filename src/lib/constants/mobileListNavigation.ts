@@ -8,22 +8,22 @@ export const mobileListNavigation = [
       {
         title: 'Lead Quality Optimization',
         subtitle: 'Lorem ipsum dolor sit dolor ',
-        nav: '/resources',
+        nav: '/resources/blog-post',
       },
       {
         title: 'Real Time Pricing',
         subtitle: 'Lorem ipsum dolor sit dolor ',
-        nav: '/resources',
+        nav: '/resources/tutorials',
       },
       {
         title: 'Website translation',
         subtitle: 'Lorem ipsum dolor sit dolor ',
-        nav: '/resources',
+        nav: '/resources/tutorials',
       },
       {
         title: 'Paid search',
         subtitle: 'Lorem ipsum dolor sit dolor ',
-        nav: '/resources',
+        nav: '/resources/updates',
       },
     ],
   },
