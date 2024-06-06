@@ -6,22 +6,22 @@ export const mobileListNavigation = [
     nav: '/resources',
     submenu: [
       {
-        title: 'Lead Quality Optimization',
-        subtitle: 'Lorem ipsum dolor sit dolor ',
+        title: 'Blog posts',
+        subtitle: 'Find cool stories and ideas ',
         nav: '/resources/blog-post',
       },
       {
-        title: 'Real Time Pricing',
+        title: 'Customer testimonials',
+        subtitle: 'Lorem ipsum dolor sit dolor ',
+        nav: '/resources/customer',
+      },
+      {
+        title: 'Tutorials & Guides',
         subtitle: 'Lorem ipsum dolor sit dolor ',
         nav: '/resources/tutorials',
       },
       {
-        title: 'Website translation',
-        subtitle: 'Lorem ipsum dolor sit dolor ',
-        nav: '/resources/tutorials',
-      },
-      {
-        title: 'Paid search',
+        title: 'Stay Updated',
         subtitle: 'Lorem ipsum dolor sit dolor ',
         nav: '/resources/updates',
       },

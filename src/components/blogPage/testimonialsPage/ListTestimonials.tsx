@@ -5,7 +5,6 @@ export const TestimonialsCustomerList = () => {
   const firstTestimonial = testimonialsList.slice(0, 3);
   const secondTestimonial = testimonialsList.slice(3, 6);
   const thirdTestimonial = testimonialsList.slice(6, 9);
-  //grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3
   return (
     <div className="bg-[#F8F5F3] pb-12">
       <div className="h-[230px] md:h-[240px] bg-primary"></div>

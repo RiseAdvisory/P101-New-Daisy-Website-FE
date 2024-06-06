@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 export const CustomerHero = () => {
   return (
-    <div className=" bg-primary pt-16 px-4">
+    <div className=" bg-primary pt-16 px-4 h-screen">
       <div className="md:hidden">
         <h1 className="text-white text-5xl leading-[60px]">
           Easy, Flexible And Powerful, Your Customers Will Love It!

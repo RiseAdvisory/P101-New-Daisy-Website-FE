@@ -15,6 +15,9 @@ export const HeroPage = ({
   heightScreen,
   styleSection,
   secondDescription,
+  isVisibleBreadCrumbs,
+  bredCrumbTitle,
+  bredCrumbDesription,
 }: {
   title: string;
   description: string;
@@ -23,9 +26,12 @@ export const HeroPage = ({
   heightScreen: boolean;
   styleSection?: string;
   secondDescription?: string;
+  isVisibleBreadCrumbs?: boolean;
+  bredCrumbTitle?: string;
+  bredCrumbDesription?: string;
 }) => {
   const path = usePathname();
-  const isVisibleBreadCrumbs = path.includes('customer');
+
   return (
     <div
       className={cn(
@@ -37,8 +43,8 @@ export const HeroPage = ({
         <div className="flex pb-28 mr-auto">
           <HomeIcon className="mr-2" />
           <BreadcrumbWithCustomSeparator
-            bredCrumbTitle="Customers’ Testimonials"
-            bredCrumbDesription="Resources"
+            bredCrumbTitle={bredCrumbTitle}
+            bredCrumbDesription={bredCrumbDesription}
           />
         </div>
       )}

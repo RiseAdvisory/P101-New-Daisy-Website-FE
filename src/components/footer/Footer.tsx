@@ -1,5 +1,5 @@
+'use client';
 import { LogoIconsS } from '@/assets/icons/logo/LogoIconsS';
-
 import Link from 'next/link';
 import { PlayMarketButton } from '../buttonApp/PlayMarketButton';
 import { AppStoreButton } from '../buttonApp/AppStoreButton';
@@ -8,8 +8,11 @@ import { TwitterIcons } from '@/assets/icons/socialLinksIcons/TwitterIcons';
 import { LinkedInIcons } from '@/assets/icons/socialLinksIcons/LinkedInIcons';
 import { InstagramIcons } from '@/assets/icons/socialLinksIcons/InstagramIcons';
 import { navigationList } from '@/lib/constants/footerNavigationList';
+import { usePathname } from 'next/navigation';
 
 export const Footer = () => {
+  const path = usePathname();
+  const isVisibleAppBtn = path.includes('get-the-app');
   return (
     <footer className="w-full bg-primary px-4 py-[124px] md:py-14 flex flex-col justify-center items-center">
       <Link href={'/'} className="mb-6">
@@ -30,11 +33,12 @@ export const Footer = () => {
           })}
         </ul>
       </nav>
-      <div className="w-full md:flex md:max-w-[650px]">
-        {' '}
-        <PlayMarketButton className="mb-4 md:mr-6" />
-        <AppStoreButton />
-      </div>
+      {!isVisibleAppBtn && (
+        <div className="w-full md:flex md:max-w-[650px]">
+          <PlayMarketButton className="mb-4 md:mr-6" />
+          <AppStoreButton />
+        </div>
+      )}
       <ul className="flex mx-auto items-center justify-center mt-8 space-x-6">
         <li>
           <FacebookIcons />
