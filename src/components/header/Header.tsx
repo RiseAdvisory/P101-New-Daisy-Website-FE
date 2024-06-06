@@ -13,7 +13,8 @@ import { DropDownMobileHeader } from '../dropdownMobileHeader/DropdownMobileHead
 import { usePathname } from 'next/navigation';
 
 import { DropdownResources } from '../blogPage/DropDownResources';
-import { MobileMenu } from '../mobileMenu/MobileMenu';
+import { MobileMenu } from '../mobileMenu/mobileMenu';
+
 
 export const Header = () => {
   const path = usePathname();
