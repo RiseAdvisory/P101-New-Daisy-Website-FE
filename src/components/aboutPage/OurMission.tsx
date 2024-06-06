@@ -5,11 +5,11 @@ import Image from 'next/image';
 export const OurMissing = () => {
   return (
     <div className="bg-white px-6 mt-[80px] pb-[112px]">
-      <div className="flex flex-col mx-auto text-center">
+      <div className="flex flex-col mx-auto text-center ">
         <h1 className="text-center text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
           Our Missing
         </h1>
-        <p className="text-center text-[#455150] mt-3 font-montserrat text-base font-normal">
+        <p className="text-center text-[#455150] mt-3 font-montserrat text-base font-normal md:px-[440px]">
           Our mission is to curate a selection of renowned spas and skilled
           practitioners, offering exclusive cashback offers that reward you for
           your self-care endeavors.
@@ -18,7 +18,7 @@ export const OurMissing = () => {
       <Separator className="bg-[#E8E9E9] mt-12 md:hidden" />
       <div className=" px-4 md:flex ">
         <div className="md:flex md:justify-between md:bg-white md:mx-[64px] md:mb-[164px] rounded-[16px]">
-          <div className="md:w-[50%] md:px-20 md:ml-[100px] md:pt-[0px]">
+          <div className="md:w-[50%] md:ml-16 md:mr-[50px] md:pt-[0px]">
             <h5 className="text-[#A67F6B] pt-20 text-base leading-6">
               TREASURES
             </h5>

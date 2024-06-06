@@ -8,6 +8,9 @@ const About = () => {
       <HeroPage
         title="We’re some humans who think"
         description="  Our Business Thrives When People Come First - It's That Simple"
+        hiddenArrow={false}
+        visibleDescriiton={false}
+        heightScreen={true}
       />
       <OurMissing />
       <OurValue />
