@@ -1,6 +1,7 @@
 import { GrowthIcon } from '@/assets/icons/growthIcon/GrowthIcon';
 import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
+import Link from 'next/link';
 
 export const GrowthSection = ({
   title,
@@ -14,7 +15,6 @@ export const GrowthSection = ({
       <div className=" px-4 md:flex md:bg-[#F8F5F3]">
         <div className="md:flex md:justify-between md:bg-white md:mx-[64px] md:mb-[164px] rounded-[16px]">
           <div className="md:w-[50%] md:px-20 md:ml-[100px] md:pb-[200px]">
-            {' '}
             <h5 className="text-[#A67F6B] pt-20 text-base leading-6">
               MARKETPLACE
             </h5>
@@ -25,7 +25,7 @@ export const GrowthSection = ({
               {description}
             </p>
             <Button className="font-semibold w-full h-auto text-base mt-8 mb-10 px-[85px] py-[14px] rounded-[9px] md:w-[310px] hover:bg-white hover:text-primary hover:border hover:border-primary">
-              Learn More About Us
+              <Link href="/about"> Learn More About Us</Link>
             </Button>
           </div>
           <Separator className="bg-[#EAECEC] mb-10 md:hidden" />

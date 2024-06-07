@@ -79,7 +79,11 @@ export const MobileMenu = ({
             );
           })}
         </ul>
-        <GetAppButton className="w-full mb-10 mt-6" />
+        <GetAppButton
+          className="w-full mb-10 mt-6"
+          setOpen={setOpenMenu}
+          open={openMenu}
+        />
       </DropdownMenuContent>
     </DropdownMenu>
   );

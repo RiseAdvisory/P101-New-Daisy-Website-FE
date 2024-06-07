@@ -4,11 +4,20 @@ import { GooglePlayIcons } from '@/assets/icons/appMarket/GooglePlayIcons';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
-export const GetAppButton = ({ className }: { className?: string }) => {
+export const GetAppButton = ({
+  className,
+  open,
+  setOpen,
+}: {
+  className?: string;
+  setOpen?: any;
+  open?: boolean;
+}) => {
   return (
     <Button
       asChild
       variant="navigation"
+      onClick={() => setOpen(!open)}
       className={cn(
         `py-6 px-4 group hover:bg-white hover:text-primary`,
         className,

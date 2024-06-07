@@ -15,7 +15,7 @@ const CustomerTestimonials = () => {
         title="TRUST"
         description="Customers’ Testimonials"
         heightScreen={false}
-        styleSection="pb-[100px] pt-6 px-[16px] h-screen"
+        styleSection="pb-[100px] pt-6 px-[16px]"
         secondDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
       <TestimonialsCustomerList />
