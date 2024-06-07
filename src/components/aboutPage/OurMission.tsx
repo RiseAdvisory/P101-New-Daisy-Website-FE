@@ -1,10 +1,21 @@
+'use client';
 import Separator from '../separator/Separator';
 import image from '../../assets/images/AboutMissing.png';
 import Image from 'next/image';
+import { Dispatch, SetStateAction, useEffect, useRef } from 'react';
 
-export const OurMissing = () => {
+export const OurMissing = ({
+  setScroll,
+}: {
+  setScroll: Dispatch<SetStateAction<any>>;
+}) => {
+  const blockRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setScroll(blockRef);
+  }, [setScroll]);
   return (
-    <div className="bg-white px-6 mt-[80px] pb-[112px]">
+    <div className="bg-white px-6 pt-[80px] pb-[112px]" ref={blockRef}>
       <div className="flex flex-col mx-auto text-center ">
         <h1 className="text-center text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
           Our Missing

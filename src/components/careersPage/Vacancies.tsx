@@ -4,12 +4,25 @@ import { Button } from '../ui/button';
 import { AccordionVacancies } from './Acoordion';
 import { vacanciesList } from '@/lib/constants/vacanciesList';
 import { ModalCV } from './ModalCV';
-import { useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
 
-export const Vacansies = () => {
+export const Vacansies = ({
+  setScroll,
+}: {
+  setScroll: Dispatch<SetStateAction<any>>;
+}) => {
   const [openCV, setOpenCV] = useState(false);
+  const blockRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    setScroll(blockRef);
+    window.scrollTo(0, 0);
+  }, [setScroll]);
+
   return (
-    <div className=" px-4 py-20 bg-[#F8F5F3] md:flex md:justify-between">
+    <div
+      className=" px-4 py-20 bg-[#F8F5F3] md:flex md:justify-between"
+      ref={blockRef}
+    >
       <div className="bg-white p-8 border rounded-[12px] md:mr-6 md:h-fit">
         <p className="uppercase text-[#A67F6B] font-bold">get in touch</p>
         <p className="font-montserrat font text-[#2E3B3A] mt-2">

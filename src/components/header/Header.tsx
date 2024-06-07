@@ -15,7 +15,6 @@ import { usePathname } from 'next/navigation';
 import { DropdownResources } from '../blogPage/DropDownResources';
 import { MobileMenu } from '../mobileMenu/mobileMenu';
 
-
 export const Header = () => {
   const path = usePathname();
   const [active, setActive] = useState('');

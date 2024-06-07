@@ -3,5 +3,5 @@ export const navigationList = [
   { name: 'Careers', nav: '/careers' },
   { name: 'FAQs', nav: '/faq' },
   { name: 'Terms & Conditions', nav: '/terms' },
-  { name: 'Privacy Policy', nav: '/policy' },
+  { name: 'Privacy Policy', nav: '/privacy-policy' },
 ];

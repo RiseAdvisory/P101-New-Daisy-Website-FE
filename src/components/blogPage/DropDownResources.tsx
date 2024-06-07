@@ -9,15 +9,17 @@ import Separator from '../separator/Separator';
 import { resourcesLinkList } from '@/lib/constants/resourcesLink';
 import Link from 'next/link';
 import { useState } from 'react';
-import HoverImage1 from '../../assets/images/BlogPostResources.png';
-import HoverImage2 from '../../assets/images/PhoneTutorials.png';
-import HoverImage3 from '../../assets/images/TestimonialResources.png';
-import HoverImage4 from '../../assets/images/StartPhoneResources.png';
-import { imagePositions, leafPositions } from '@/lib/constants/resourcesList';
+import {
+  hoverImages,
+  imagePositions,
+  leafPositions,
+} from '@/lib/constants/resourcesList';
+
 interface IPropsResources {
   openBlog: boolean;
   setOpenBlog: any;
 }
+
 export const DropdownResources = ({
   openBlog,
   setOpenBlog,
@@ -37,8 +39,6 @@ export const DropdownResources = ({
     right: 'auto',
     rotate: '0deg',
   });
-
-  const hoverImages = [HoverImage1, HoverImage2, HoverImage3, HoverImage4];
 
   const handleMouseEnter = (index: any) => {
     setCurrentImage(hoverImages[index]);

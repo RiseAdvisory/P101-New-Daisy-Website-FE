@@ -1,20 +1,25 @@
+'use client';
 import { OurMissing } from '@/components/aboutPage/OurMission';
 import { OurValue } from '@/components/aboutPage/OurValue';
 import { HeroPage } from '@/components/heroSection/HeroSection';
+import { useState } from 'react';
 
 const About = () => {
+  const [scroll, setScroll] = useState(null);
+
   return (
-    <div className="w-full ">
+    <>
       <HeroPage
+        blockRef={scroll}
         title="We’re some humans who think"
         description="  Our Business Thrives When People Come First - It's That Simple"
         hiddenArrow={false}
         visibleDescriiton={false}
         heightScreen={true}
       />
-      <OurMissing />
+      <OurMissing setScroll={setScroll} />
       <OurValue />
-    </div>
+    </>
   );
 };
 export default About;

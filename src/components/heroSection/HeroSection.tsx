@@ -18,6 +18,7 @@ export const HeroPage = ({
   isVisibleBreadCrumbs,
   bredCrumbTitle,
   bredCrumbDesription,
+  blockRef,
 }: {
   title: string;
   description: string;
@@ -29,8 +30,14 @@ export const HeroPage = ({
   isVisibleBreadCrumbs?: boolean;
   bredCrumbTitle?: string;
   bredCrumbDesription?: string;
+  blockRef?: any;
 }) => {
   const path = usePathname();
+  const scrollToTopOfBlock = () => {
+    if (blockRef.current) {
+      blockRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div
@@ -66,7 +73,8 @@ export const HeroPage = ({
         {secondDescription}
       </p>
       <div
-        className={cn('mt-[74px] md:mt-[150px] flex flex-col justify-center ', {
+        onClick={scrollToTopOfBlock}
+        className={cn(' flex flex-col justify-center my-auto', {
           hidden: hiddenArrow,
         })}
       >
