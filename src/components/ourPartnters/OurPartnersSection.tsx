@@ -1,5 +1,4 @@
-import { parntersImages } from '@/lib/constants/partnersImage';
-import Image from 'next/image';
+import { CarouselCompany } from '../carouselCompany/CarouselCompany';
 
 export const OurPartnersSection = ({
   stylePartners,
@@ -17,19 +16,7 @@ export const OurPartnersSection = ({
           eiusmod tempor.
         </p>
       </div>
-      <ul className="flex space-x-5 mt-8 overflow-x-scroll px-4 items-center justify-center">
-        {parntersImages.map((item, index) => {
-          return (
-            <li key={index} className="">
-              <Image
-                src={item.img}
-                alt="partners"
-                className="max-w-none w-[90px] h-[90px] md:w-[120px] md:h-[120px]"
-              />
-            </li>
-          );
-        })}
-      </ul>
+      <CarouselCompany />
     </div>
   );
 };

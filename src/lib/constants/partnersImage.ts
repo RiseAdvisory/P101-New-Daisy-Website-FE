@@ -8,4 +8,10 @@ export const parntersImages = [
   { img: partner2 },
   { img: partner1 },
   { img: partner2 },
+  { img: partner1 },
+  { img: partner2 },
+  { img: partner1 },
+  { img: partner2 },
+  { img: partner1 },
+  { img: partner2 },
 ];

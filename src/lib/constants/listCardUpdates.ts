@@ -1,14 +1,12 @@
-import Jesica from '../../assets/images/WellnessTrends.png';
-import Spotlight from '../../assets/images/Soptlight.png';
-import Incorporatinf from '../../assets/images/Incorporating.png';
-import SelfCare from '../../assets/images/SelfCare.png';
-import Benefits from '../../assets/images/Benefits.png';
-import StressFree from '../../assets/images/StressFree.png';
+import DoublePhone from '../../assets/images/update/DoubleUpdate.png';
+import Points from '../../assets/images/update/PointsUpdate.png';
+import Inside from '../../assets/images//update/InsiderUpdate.png';
+import SelfUp from '../../assets/images/update/SelfCareUpdate.png';
 import iconOwn from '../../assets/images/Jasica.png';
 
-export const ListBlogPosts = [
+export const ListUpdatesResources = [
   {
-    image: Jesica,
+    image: DoublePhone,
     tags: {
       wellness: 'Wellness',
       hair: 'Hair',
@@ -20,7 +18,7 @@ export const ListBlogPosts = [
     iconOwner: iconOwn,
   },
   {
-    image: Spotlight,
+    image: Points,
     tags: {
       wellness: 'Wellness',
       hair: 'Hair',
@@ -32,7 +30,7 @@ export const ListBlogPosts = [
     iconOwner: iconOwn,
   },
   {
-    image: Incorporatinf,
+    image: DoublePhone,
     tags: {
       wellness: 'Wellness',
       hair: 'Hair',
@@ -44,7 +42,7 @@ export const ListBlogPosts = [
     iconOwner: iconOwn,
   },
   {
-    image: SelfCare,
+    image: SelfUp,
     tags: {
       wellness: 'Wellness',
       hair: 'Hair',
@@ -56,7 +54,7 @@ export const ListBlogPosts = [
     iconOwner: iconOwn,
   },
   {
-    image: Benefits,
+    image: DoublePhone,
     tags: {
       wellness: 'Wellness',
       hair: 'Hair',
@@ -68,7 +66,7 @@ export const ListBlogPosts = [
     iconOwner: iconOwn,
   },
   {
-    image: StressFree,
+    image: Inside,
     tags: {
       wellness: 'Wellness',
       hair: 'Hair',

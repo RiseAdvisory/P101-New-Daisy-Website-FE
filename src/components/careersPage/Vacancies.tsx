@@ -5,6 +5,7 @@ import { AccordionVacancies } from './Acoordion';
 import { vacanciesList } from '@/lib/constants/vacanciesList';
 import { ModalCV } from './ModalCV';
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 
 export const Vacansies = ({
   setScroll,
@@ -36,7 +37,7 @@ export const Vacansies = ({
           type="submit"
           className="hover:bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 bg-primary font-montserrat font-semibold text-white hover:text-primary md:py-4 md:h-auto"
         >
-          Got a question? Contact us
+          <Link href={'/contact'}> Got a question? Contact us</Link>
         </Button>
       </div>
       <ul className="space-y-6 mt-6 md:flex md:flex-col md:w-full md:mt-0">

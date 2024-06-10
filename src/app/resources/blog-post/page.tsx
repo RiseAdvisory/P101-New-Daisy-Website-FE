@@ -1,5 +1,6 @@
 import { CardPosts } from '@/components/blogPage/blogPosts/CardPosts';
 import { HeroPage } from '@/components/heroSection/HeroSection';
+import { ListBlogPosts } from '@/lib/constants/listCardBlogPages';
 
 const BlogPosts = () => {
   return (
@@ -13,7 +14,11 @@ const BlogPosts = () => {
         styleSection="pb-[100px]"
         secondDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
-      <CardPosts />
+      <CardPosts
+        listCards={ListBlogPosts}
+        redirect={true}
+        style="cursor-pointer"
+      />
     </div>
   );
 };

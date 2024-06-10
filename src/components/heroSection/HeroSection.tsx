@@ -73,7 +73,6 @@ export const HeroPage = ({
         {secondDescription}
       </p>
       <div
-        onClick={scrollToTopOfBlock}
         className={cn(' flex flex-col justify-center my-auto', {
           hidden: hiddenArrow,
         })}
@@ -81,7 +80,10 @@ export const HeroPage = ({
         <p className="text-base text-white font-normal font-montserrat">
           Don’t believe us? Keep reading...
         </p>
-        <span className="flex justify-center items-center rounded-full border border-primaryBtn w-[40px] h-[40px] cursor-pointer mx-auto mt-6">
+        <span
+          onClick={scrollToTopOfBlock}
+          className="flex justify-center items-center rounded-full border border-primaryBtn w-[40px] h-[40px] cursor-pointer mx-auto mt-6"
+        >
           <ArrowSectionDown />
         </span>
       </div>

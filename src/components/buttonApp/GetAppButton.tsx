@@ -17,7 +17,9 @@ export const GetAppButton = ({
     <Button
       asChild
       variant="navigation"
-      onClick={() => setOpen(!open)}
+      onClick={() => {
+        if (setOpen) setOpen(!open);
+      }}
       className={cn(
         `py-6 px-4 group hover:bg-white hover:text-primary`,
         className,
