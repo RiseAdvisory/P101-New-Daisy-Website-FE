@@ -12,7 +12,6 @@ import image3 from '../../assets/images/collectPayments.png';
 import image4 from '../../assets/images/doublePhone.png';
 import { NoScrollingAnimationBusiness } from '@/components/noAnimationBusiness/NoAnimationBusiness';
 import leaf from '../../assets/images/LeafBg.png';
-import { CarouselCompany } from '@/components/carouselCompany/CarouselCompany';
 
 const Business = () => {
   return (

@@ -19,6 +19,7 @@ export const HeroPage = ({
   bredCrumbTitle,
   bredCrumbDesription,
   blockRef,
+  titleScroll = ' Don’t believe us? Keep reading...',
 }: {
   title: string;
   description: string;
@@ -31,6 +32,7 @@ export const HeroPage = ({
   bredCrumbTitle?: string;
   bredCrumbDesription?: string;
   blockRef?: any;
+  titleScroll?: string;
 }) => {
   const path = usePathname();
   const scrollToTopOfBlock = () => {
@@ -78,7 +80,7 @@ export const HeroPage = ({
         })}
       >
         <p className="text-base text-white font-normal font-montserrat">
-          Don’t believe us? Keep reading...
+          {titleScroll}
         </p>
         <span
           onClick={scrollToTopOfBlock}

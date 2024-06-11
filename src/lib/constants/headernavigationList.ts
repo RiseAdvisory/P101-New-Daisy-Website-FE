@@ -16,3 +16,8 @@ export const changeLanguage = [
   { label: 'EN', path: 'en' },
   { label: 'UA', path: 'ua' },
 ];
+
+export const optionsTooglePricing = [
+  { label: 'Business', path: '/pricing/business' },
+  { label: 'Professional', path: '/pricing/professional' },
+];

@@ -2,28 +2,26 @@
 import Link from 'next/link';
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
-import { optionsToogle } from '@/lib/constants/headernavigationList';
+import {
+  optionsToogle,
+  optionsTooglePricing,
+} from '@/lib/constants/headernavigationList';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 
-const ToggleButton = ({ className }: { className?: string }) => {
+export const TogglePricing = ({ className }: { className?: string }) => {
   const pathname = usePathname();
-  const [active, setActive] = useState('');
+  const [active, setActive] = useState('/pricing/professional');
   let currentPath;
-  if (pathname.includes('business')) currentPath = 'business';
-  if (pathname.includes('customer')) currentPath = 'customer';
-  if (pathname.includes('professional')) currentPath = 'professional';
-
-  console.log('active:', pathname, 'letCurrethy', currentPath);
-  useEffect(() => setActive(pathname), [pathname]);
+  //   useEffect(() => setActive(pathname), [pathname]);
   return (
     <div
       className={cn(
-        'flex border rounded-lg p-2 bg-customWhite border-primaryBtn max-w-content w-[400px] mb-8',
+        'flex border rounded-lg p-2 bg-customWhite border-primaryBtn max-w-content  mb-8',
         className,
       )}
     >
-      {optionsToogle.map((option) => (
+      {optionsTooglePricing.map((option) => (
         <Link
           href={`${option.path.toLowerCase()}`}
           key={option.path}
@@ -42,5 +40,3 @@ const ToggleButton = ({ className }: { className?: string }) => {
     </div>
   );
 };
-
-export default ToggleButton;
