@@ -3,99 +3,50 @@ import {
   DropdownMenu,
   DropdownMenuContent,
 } from '@/components/ui/dropdown-menu';
-import PrimaryPhoto from '../../assets/images/StartPhoneResources.png';
-import leaf from '../../assets/images/LeafBgPrimary.png';
 import Separator from '../separator/Separator';
 import { resourcesLinkList } from '@/lib/constants/resourcesLink';
 import Link from 'next/link';
-import { useState } from 'react';
-import {
-  hoverImages,
-  imagePositions,
-  leafPositions,
-} from '@/lib/constants/resourcesList';
+import { Dispatch, SetStateAction, useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { resourcesDropDownList } from '@/lib/constants/resources/resourcesList';
 
 interface IPropsResources {
   openBlog: boolean;
-  setOpenBlog: any;
+  setOpenBlog: Dispatch<SetStateAction<boolean>>;
+  setActive?: Dispatch<SetStateAction<string>>;
 }
 
 export const DropdownResources = ({
   openBlog,
   setOpenBlog,
+  setActive,
 }: IPropsResources) => {
-  const [currentImage, setCurrentImage] = useState(PrimaryPhoto);
-  const [imagePosition, setImagePosition] = useState({
-    top: 'auto',
-    bottom: '0px',
-    left: 'auto',
-    right: '0px',
-    rotate: '0deg',
-  });
-  const [leafPosition, setLeafPosition] = useState({
-    top: '0px',
-    bottom: 'auto',
-    left: '0px',
-    right: 'auto',
-    rotate: '0deg',
-  });
+  const [currentImage, setCurrentImage] = useState(resourcesDropDownList[3]);
 
   const handleMouseEnter = (index: any) => {
-    setCurrentImage(hoverImages[index]);
-    setImagePosition(imagePositions[index]);
-    setLeafPosition(leafPositions[index]);
+    setCurrentImage(resourcesDropDownList[index]);
   };
 
   const handleMouseLeave = () => {
-    setCurrentImage(PrimaryPhoto);
-    setImagePosition({
-      top: 'auto',
-      bottom: '0px',
-      left: 'auto',
-      right: '0px',
-      rotate: '0deg',
-    });
-    setLeafPosition({
-      top: '0px',
-      bottom: 'auto',
-      left: '0px',
-      right: 'auto',
-      rotate: '0deg',
-    });
+    setCurrentImage(resourcesDropDownList[3]);
   };
+  const path = usePathname();
 
   return (
-    <DropdownMenu open={openBlog} onOpenChange={() => setOpenBlog(!openBlog)}>
+    <DropdownMenu
+      open={openBlog}
+      onOpenChange={() => {
+        setOpenBlog(!openBlog);
+        if (setActive) setActive(path);
+      }}
+    >
       <DropdownMenuContent className="w-[100vw] top-[110px] absolute hidden md:block py-10 px-16">
         <div className="flex">
           <div className="w-[420px] h-[290px] border relative bg-[#E8E9E9] rounded-lg mr-6 overflow-hidden">
             <Image
               src={currentImage}
-              alt="background page"
-              width={250}
-              height={170}
-              className="absolute z-10"
-              style={{
-                top: imagePosition.top,
-                bottom: imagePosition.bottom,
-                left: imagePosition.left,
-                right: imagePosition.right,
-                transform: `rotate(${imagePosition.rotate})`,
-              }}
-            />
-            <Image
-              src={leaf}
-              alt="background leaf"
-              width={200}
-              height={200}
-              className="absolute"
-              style={{
-                top: leafPosition.top,
-                bottom: leafPosition.bottom,
-                left: leafPosition.left,
-                right: leafPosition.right,
-                transform: `rotate(${leafPosition.rotate})`,
-              }}
+              alt="sdasd"
+              className="h-full object-cover"
             />
           </div>
           <div className="w-[70%]">

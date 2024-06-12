@@ -5,7 +5,6 @@ import Separator from '../separator/Separator';
 import leaf from '../../assets/images/LeafBg.png';
 import stars from '../../assets/images/Stars.png';
 import phone from '../../assets/images/PHONEcustomer.png';
-
 import ToggleButton from '../toogleHeader/ToogleHeader';
 import Image from 'next/image';
 
@@ -13,8 +12,8 @@ export const CustomerHero = () => {
   return (
     <div className=" bg-primary pt-16 px-4 h-screen">
       <div className="md:hidden">
-        <h1 className="text-white text-5xl leading-[60px]">
-          Easy, Flexible And Powerful, Your Customers Will Love It!
+        <h1 className="text-white text-5xl leading-[60px] capitalize">
+          Discover, experience & save with the Daisy
         </h1>
         <p className="font-montserrat font-medium leading-[30px] text-xl text-[#D5D9D9] mt-3">
           Your Gateway to Seamless
@@ -55,13 +54,13 @@ export const CustomerHero = () => {
             <Image
               className="absolute top-[60px] right-[50px]"
               src={stars}
-              alt="start"
+              alt="stars"
               width={100}
             />
             <Image
               className="absolute bottom-0 right-[50%] translate-x-1/2"
               src={phone}
-              alt="start"
+              alt="stars"
               width={300}
             />
           </div>

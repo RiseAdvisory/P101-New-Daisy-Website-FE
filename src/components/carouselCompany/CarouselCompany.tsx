@@ -1,0 +1,43 @@
+'use client';
+import * as React from 'react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
+import Image from 'next/image';
+import { parntersImages } from '@/lib/constants/partnersImage';
+
+export const CarouselCompany = () => {
+  return (
+    <Carousel
+      plugins={[
+        Autoplay({
+          delay: 3000,
+          playOnInit: true,
+        }),
+      ]}
+      opts={{
+        align: 'start',
+        loop: true,
+      }}
+      className=" md:w-[800px] items-center mx-auto mt-8 md:mt-20"
+    >
+      <CarouselContent>
+        {parntersImages.map((item, index) => (
+          <CarouselItem
+            key={index}
+            className="basis-1/3 md:basis-1/5 items-center flex justify-center"
+          >
+            <Image
+              src={item.img}
+              alt="partners"
+              className="max-w-none w-[90px] h-[90px] md:w-[120px] md:h-[120px]"
+            />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+    </Carousel>
+  );
+};

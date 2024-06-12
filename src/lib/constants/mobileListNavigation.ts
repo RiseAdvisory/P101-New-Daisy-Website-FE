@@ -29,4 +29,5 @@ export const mobileListNavigation = [
   },
   { title: 'Careers', nav: '/careers' },
   { title: 'Contact', nav: '/contact' },
+  { title: 'Pricing', nav: '/pricing' },
 ];

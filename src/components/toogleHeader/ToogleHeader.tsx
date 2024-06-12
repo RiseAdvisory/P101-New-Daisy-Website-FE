@@ -1,14 +1,21 @@
 'use client';
 import Link from 'next/link';
 import clsx from 'clsx';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { optionsToogle } from '@/lib/constants/headernavigationList';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 
 const ToggleButton = ({ className }: { className?: string }) => {
   const pathname = usePathname();
-  const [active, setActive] = useState(pathname);
+  const [active, setActive] = useState('');
+  let currentPath;
+  if (pathname.includes('business')) currentPath = 'business';
+  if (pathname.includes('customer')) currentPath = 'customer';
+  if (pathname.includes('professional')) currentPath = 'professional';
+
+  console.log('active:', pathname, 'letCurrethy', currentPath);
+  useEffect(() => setActive(pathname), [pathname]);
   return (
     <div
       className={cn(

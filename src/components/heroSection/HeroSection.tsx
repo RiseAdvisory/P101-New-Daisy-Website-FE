@@ -19,6 +19,7 @@ export const HeroPage = ({
   bredCrumbTitle,
   bredCrumbDesription,
   blockRef,
+  titleScroll = ' Don’t believe us? Keep reading...',
 }: {
   title: string;
   description: string;
@@ -31,6 +32,7 @@ export const HeroPage = ({
   bredCrumbTitle?: string;
   bredCrumbDesription?: string;
   blockRef?: any;
+  titleScroll?: string;
 }) => {
   const path = usePathname();
   const scrollToTopOfBlock = () => {
@@ -73,15 +75,17 @@ export const HeroPage = ({
         {secondDescription}
       </p>
       <div
-        onClick={scrollToTopOfBlock}
         className={cn(' flex flex-col justify-center my-auto', {
           hidden: hiddenArrow,
         })}
       >
         <p className="text-base text-white font-normal font-montserrat">
-          Don’t believe us? Keep reading...
+          {titleScroll}
         </p>
-        <span className="flex justify-center items-center rounded-full border border-primaryBtn w-[40px] h-[40px] cursor-pointer mx-auto mt-6">
+        <span
+          onClick={scrollToTopOfBlock}
+          className="flex justify-center items-center rounded-full border border-primaryBtn w-[40px] h-[40px] cursor-pointer mx-auto mt-6"
+        >
           <ArrowSectionDown />
         </span>
       </div>

@@ -56,6 +56,7 @@ const Business = () => {
         />
       </div>
       <OurPartnersSection />
+
       <DaysiMission />
       <GrowthSection
         title="Boost Occupancy, Attract New Clients, And Own Your Success"

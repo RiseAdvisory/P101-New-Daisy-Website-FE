@@ -4,6 +4,7 @@ import Incorporatinf from '../../assets/images/Incorporating.png';
 import SelfCare from '../../assets/images/SelfCare.png';
 import Benefits from '../../assets/images/Benefits.png';
 import StressFree from '../../assets/images/StressFree.png';
+import iconOwn from '../../assets/images/Jasica.png';
 
 export const ListBlogPosts = [
   {
@@ -16,6 +17,7 @@ export const ListBlogPosts = [
     user: { name: 'Jesica Koli', date: '02 December 2022', time: '3 min.' },
     description:
       'In publishing and graphic design, Lorem ipsum is a text placeholder commonly used.',
+    iconOwner: iconOwn,
   },
   {
     image: Spotlight,
@@ -27,6 +29,7 @@ export const ListBlogPosts = [
     user: { name: 'Jesica Koli', date: '02 December 2022', time: '3 min.' },
     description:
       'In publishing and graphic design, Lorem ipsum is a text placeholder commonly used.',
+    iconOwner: iconOwn,
   },
   {
     image: Incorporatinf,
@@ -38,6 +41,7 @@ export const ListBlogPosts = [
     user: { name: 'Jesica Koli', date: '02 December 2022', time: '3 min.' },
     description:
       'In publishing and graphic design, Lorem ipsum is a text placeholder commonly used.',
+    iconOwner: iconOwn,
   },
   {
     image: SelfCare,
@@ -49,6 +53,7 @@ export const ListBlogPosts = [
     user: { name: 'Jesica Koli', date: '02 December 2022', time: '3 min.' },
     description:
       'In publishing and graphic design, Lorem ipsum is a text placeholder commonly used.',
+    iconOwner: iconOwn,
   },
   {
     image: Benefits,
@@ -60,6 +65,7 @@ export const ListBlogPosts = [
     user: { name: 'Jesica Koli', date: '02 December 2022', time: '3 min.' },
     description:
       'In publishing and graphic design, Lorem ipsum is a text placeholder commonly used.',
+    iconOwner: iconOwn,
   },
   {
     image: StressFree,
@@ -71,5 +77,6 @@ export const ListBlogPosts = [
     user: { name: 'Jesica Koli', date: '02 December 2022', time: '3 min.' },
     description:
       'In publishing and graphic design, Lorem ipsum is a text placeholder commonly used.',
+    iconOwner: iconOwn,
   },
 ];

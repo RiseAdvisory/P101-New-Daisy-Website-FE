@@ -11,7 +11,6 @@ import {
 } from '@/lib/constants/headernavigationList';
 import { DropDownMobileHeader } from '../dropdownMobileHeader/DropdownMobileHeader';
 import { usePathname } from 'next/navigation';
-
 import { DropdownResources } from '../blogPage/DropDownResources';
 import { MobileMenu } from '../mobileMenu/mobileMenu';
 
@@ -36,6 +35,7 @@ export const Header = () => {
 
   const handleResourcesClick = (e: React.MouseEvent) => {
     e.preventDefault();
+    setActive('/resources');
     setIsResourcesDropdownOpen(!isResourcesDropdownOpen);
   };
 
@@ -90,6 +90,7 @@ export const Header = () => {
                   <DropdownResources
                     openBlog={isResourcesDropdownOpen}
                     setOpenBlog={setIsResourcesDropdownOpen}
+                    setActive={setActive}
                   />
                 </li>
               );
