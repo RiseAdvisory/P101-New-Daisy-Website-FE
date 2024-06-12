@@ -2,21 +2,21 @@
 import Image from 'next/image';
 import stars from '../../assets/images/starsBg.png';
 import { cn } from '@/lib/utils';
-import { usePathname } from 'next/navigation';
 import { TogglePricing } from './TooglePricing';
 import { CalculatePricing } from './CalculatePricing';
+import { Dispatch, SetStateAction, useState } from 'react';
 
 export const PricingHero = ({
   description,
   heightScreen,
   styleSection,
+  setActivePricingPage,
 }: {
   description: string;
   heightScreen: boolean;
   styleSection?: string;
+  setActivePricingPage: Dispatch<SetStateAction<string>>;
 }) => {
-  const path = usePathname();
-
   return (
     <div
       className={cn(
@@ -35,7 +35,10 @@ export const PricingHero = ({
       </h2>
 
       <div>
-        <TogglePricing className="mt-[46px]" />
+        <TogglePricing
+          setCurrentPricing={setActivePricingPage}
+          className="mt-[46px]"
+        />
       </div>
       <div className="px-16 w-full mt-[47px]">
         <CalculatePricing />

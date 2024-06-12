@@ -1,15 +1,21 @@
+import React, { useState } from 'react';
 import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
+import { ToggleButton } from './ToggleButton';
 
 export const CalculatePricing = () => {
+  const [homeService, setHomeService] = useState(false);
+  const [onboarding, setOnboarding] = useState(false);
+  const [conciergeService, setConciergeService] = useState(false);
+
   return (
     <div className="bg-[#828E8E] rounded-[16px] p-8 w-full">
       <div className="p-8 rounded-[16px] bg-white">
         <div className="flex justify-between">
           <div>
             <h2 className="text-[#172524] font-semibold text-[18px] leading-7 font-montserrat">
-              Let`s Calculate the Perfect Tier for Your Career
+              Let&apos;s Calculate the Perfect Tier for Your Business
             </h2>
             <p className="font-montserrat text-[#455150]">
               Please answer the questions below to help us choose the best tier
@@ -67,18 +73,24 @@ export const CalculatePricing = () => {
                   $25 per additional branch/location
                 </p>
               </div>
-              <Button className="w-20 ml-8 focus:border-[#A67F6B]">cla</Button>
+              <ToggleButton
+                homeService={homeService}
+                setHomeService={setHomeService}
+              />
             </div>
             <div className="flex justify-between mb-6">
               <div>
-                <h2 className="font-montserrat font-semibold text-[18px] leading-7 text-nowrap">
+                <h2 className="font-montserrat font-semibold text-[18px] leading-7 ">
                   Would you like assistance with onboarding and services setup?
                 </h2>
                 <p className="font-montserrat text-[#455150]">
                   One-time Fee $100
                 </p>
               </div>
-              <Button className="w-20 ml-8 focus:border-[#A67F6B]">cla</Button>
+              <ToggleButton
+                homeService={onboarding}
+                setHomeService={setOnboarding}
+              />
             </div>
             <div className="flex justify-between">
               <div>
@@ -89,7 +101,10 @@ export const CalculatePricing = () => {
                   1$ per appointment
                 </p>
               </div>
-              <Button className="w-20 ml-8 focus:border-[#A67F6B]">cla</Button>
+              <ToggleButton
+                homeService={conciergeService}
+                setHomeService={setConciergeService}
+              />
             </div>
           </div>
         </div>

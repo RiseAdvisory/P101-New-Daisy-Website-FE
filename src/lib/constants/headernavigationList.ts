@@ -18,6 +18,6 @@ export const changeLanguage = [
 ];
 
 export const optionsTooglePricing = [
-  { label: 'Business', path: '/pricing/business' },
-  { label: 'Professional', path: '/pricing/professional' },
+  { label: 'Business', path: 'business' },
+  { label: 'Professional', path: 'professional' },
 ];

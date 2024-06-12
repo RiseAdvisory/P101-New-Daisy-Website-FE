@@ -1,19 +1,21 @@
 'use client';
-import Link from 'next/link';
+
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
-import {
-  optionsToogle,
-  optionsTooglePricing,
-} from '@/lib/constants/headernavigationList';
+import { optionsTooglePricing } from '@/lib/constants/headernavigationList';
 import { cn } from '@/lib/utils';
-import { usePathname } from 'next/navigation';
 
-export const TogglePricing = ({ className }: { className?: string }) => {
-  const pathname = usePathname();
-  const [active, setActive] = useState('/pricing/professional');
-  let currentPath;
-  //   useEffect(() => setActive(pathname), [pathname]);
+export const TogglePricing = ({
+  className,
+  setCurrentPricing,
+}: {
+  className?: string;
+  setCurrentPricing: any;
+}) => {
+  const [active, setActive] = useState('professional');
+  useEffect(() => {
+    setCurrentPricing(active);
+  }, [active]);
   return (
     <div
       className={cn(
@@ -22,8 +24,9 @@ export const TogglePricing = ({ className }: { className?: string }) => {
       )}
     >
       {optionsTooglePricing.map((option) => (
-        <Link
-          href={`${option.path.toLowerCase()}`}
+        <button
+          // href={`${option.path.toLowerCase()}`}
+          onClickCapture={() => setActive(option.path)}
           key={option.path}
           onClick={() => setActive(option.path)}
           className={clsx(
@@ -35,7 +38,7 @@ export const TogglePricing = ({ className }: { className?: string }) => {
           )}
         >
           {option.label}
-        </Link>
+        </button>
       ))}
     </div>
   );
