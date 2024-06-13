@@ -1,6 +1,7 @@
-export const StarsBgIcon = () => {
+export const StarsBgIcon = ({ style }: { style?: string }) => {
   return (
     <svg
+      className={style}
       width="102"
       height="108"
       viewBox="0 0 102 108"

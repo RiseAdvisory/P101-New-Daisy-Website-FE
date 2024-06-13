@@ -4,7 +4,7 @@ import stars from '../../assets/images/starsBg.png';
 import { cn } from '@/lib/utils';
 import { TogglePricing } from './TooglePricing';
 import { CalculatePricing } from './CalculatePricing';
-import { Dispatch, SetStateAction, useState } from 'react';
+import { Dispatch, SetStateAction } from 'react';
 
 export const PricingHero = ({
   description,
@@ -40,7 +40,7 @@ export const PricingHero = ({
           className="mt-[46px]"
         />
       </div>
-      <div className="px-16 w-full mt-[47px]">
+      <div className=" md:px-16 w-full mt-[47px]">
         <CalculatePricing />
       </div>
     </div>
