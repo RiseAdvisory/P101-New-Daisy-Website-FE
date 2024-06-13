@@ -83,6 +83,10 @@ const config = {
         'custom-gradient':
           'linear-gradient(to bottom, white 0%, white 50%, #F8F5F3 50%, #F8F5F3 100%)',
       },
+      spacing: {
+        'custom-width': 'calc(100% + 32px)',
+        'custom-width-md': 'calc(100% + 48px)',
+      },
     },
     fontFamily: {
       openSans: 'var(--open-sans)',

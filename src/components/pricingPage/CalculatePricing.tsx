@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '../ui/button';
 import { Calculater } from './Calculater';
+import { ResultCalculate } from './ResultCalculate';
 
 export const CalculatePricing = () => {
   const [homeService, setHomeService] = useState(false);
   const [onboarding, setOnboarding] = useState(false);
   const [conciergeService, setConciergeService] = useState(false);
+  const [onCalculates, setOnCalculates] = useState(true);
   const [calculate, setCalculate] = useState({
     staff: '1',
     branch: '1',
@@ -52,36 +54,50 @@ export const CalculatePricing = () => {
             </p>
           </div>
           <Button
-            onClick={() => onCalculate()}
+            onClick={() => {
+              onCalculate(), setOnCalculates(!onCalculates);
+            }}
             className=" hidden md:inline-flex font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary text-center"
           >
-            Calculate
+            {onCalculates ? 'Calculate' : 'Reset Calculation'}
           </Button>
         </div>
         <Separator
           className="mt-6 bg-[#E8E9E9] -mx-4 w-full"
           style={{ width: 'calc(100% + 32px)' }}
         />
-        <Calculater
-          calculate={calculate}
-          setCalculate={setCalculate}
-          homeService={homeService}
-          setHomeService={setHomeService}
-          onboarding={onboarding}
-          setOnboarding={setOnboarding}
-          conciergeService={conciergeService}
-          setConciergeService={setConciergeService}
-        />
+        {onCalculates ? (
+          <Calculater
+            calculate={calculate}
+            setCalculate={setCalculate}
+            homeService={homeService}
+            setHomeService={setHomeService}
+            onboarding={onboarding}
+            setOnboarding={setOnboarding}
+            conciergeService={conciergeService}
+            setConciergeService={setConciergeService}
+          />
+        ) : (
+          <ResultCalculate />
+        )}
 
         <Separator
           className="my-6 bg-[#E8E9E9] -mx-4 w-full md:hidden"
           style={{ width: 'calc(100% + 32px)' }}
         />
         <Button
-          onClick={() => onCalculate()}
-          className="block md:hidden w-full p-6  font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary"
+          onClick={() => console.log('free')}
+          className="inline-flex md:hidden w-full p-6  font-montserrat border border-[#2E4342]  font-semibold px-[89px] py-[12px] mb-3"
         >
-          Calculate
+          Start Free Trial
+        </Button>
+        <Button
+          onClick={() => {
+            onCalculate(), setOnCalculates(!onCalculates);
+          }}
+          className="inline-flex md:hidden w-full p-6  font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary"
+        >
+          {onCalculates ? 'Calculate' : 'Reset Calculation'}
         </Button>
       </div>
     </div>
