@@ -40,7 +40,7 @@ export const PricingHero = ({
           className="mt-[46px]"
         />
       </div>
-      <div className="px-16 w-full mt-[47px]">
+      <div className=" md:px-16 w-full mt-[47px]">
         <CalculatePricing />
       </div>
     </div>

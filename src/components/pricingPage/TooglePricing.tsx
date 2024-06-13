@@ -15,7 +15,7 @@ export const TogglePricing = ({
   const [active, setActive] = useState('professional');
   useEffect(() => {
     setCurrentPricing(active);
-  }, [active]);
+  }, [setCurrentPricing, active]);
   return (
     <div
       className={cn(

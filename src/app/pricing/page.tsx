@@ -15,7 +15,7 @@ const Pricing = () => {
         heightScreen={false}
         styleSection="pb-[100px]"
       />
-      <div className="px-20 bg-primary pb-28">
+      <div className="px-4 md:px-20 md:pb-[112px] bg-primary pb-28">
         <Separator />
       </div>
       <GridPricingCard />
