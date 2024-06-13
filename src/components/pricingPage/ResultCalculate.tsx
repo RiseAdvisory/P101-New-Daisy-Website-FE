@@ -62,7 +62,7 @@ export const ResultCalculate = () => {
               <h3 className="text-[#455150] font-montserrat text-base font-medium">
                 1 Additional Staff:
               </h3>
-              <p className="text-[#172524] text-[14px] leading-5 font-montserrat font-medium">
+              <p className="text-[#172524] text-[14px] leading-5 font-montserrat font-medium ">
                 $10
                 <span className="text-[#455150] font-normal"> / month</span>
               </p>
