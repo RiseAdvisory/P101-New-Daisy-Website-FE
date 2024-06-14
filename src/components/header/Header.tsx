@@ -24,6 +24,7 @@ export const Header = () => {
 
   useEffect(() => {
     if (path.includes('resources')) return setActive('/resources');
+    if (path.includes('features')) return setActive('/features');
     const currentPath = headerNavigationList.find((item) => {
       if (path === '/customer' || path === '/business') {
         return item.nav === '/';
