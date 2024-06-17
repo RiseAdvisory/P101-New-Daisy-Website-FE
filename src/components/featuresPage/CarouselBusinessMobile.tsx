@@ -27,7 +27,7 @@ export const CarouselBusinessMobile = () => {
         {listImageBusiness.map((item, index) => (
           <CarouselItem key={index} className="mx-auto flex justify-center">
             <div className="bg-[#435655] px-[56px] pt-[45px] rounded-[16px] border mt-10 border-[#586968]">
-              <Image src={item.src} className={`${item.style}`}  alt="item" />
+              <Image src={item.src} className={`${item.style}`} alt="item" />
             </div>
           </CarouselItem>
         ))}

@@ -28,7 +28,7 @@ export const CarouselCompany = () => {
         {parntersImages.map((item, index) => (
           <CarouselItem
             key={index}
-            className="basis-1/3 md:basis-1/5 items-center flex justify-center"
+            className="basis-1/3 md:basis-1/6 items-center flex justify-center"
           >
             <Image
               src={item.img}

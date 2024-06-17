@@ -1,3 +1,4 @@
+'use client';
 import { FeaturesCustomerList } from '@/components/featuresPage/FeaturesCustomerList';
 import { SignUpBlog } from '@/components/featuresPage/SignUpBlog';
 import { HeroPage } from '@/components/heroSection/HeroSection';

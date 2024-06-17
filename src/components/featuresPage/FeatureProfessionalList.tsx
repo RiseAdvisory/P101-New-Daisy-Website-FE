@@ -22,16 +22,22 @@ export const FeatureProfessionalList = ({
       <ul className="mt-[48px] mx-auto">
         {item.map((item: any, index: number) => {
           return (
-            <li key={index} className="text-start mx-auto">
-              <div className="bg-[#586968]  h-[320px] relative rounded-[9px]">
+            <li key={index} className="text-start mx-auto ">
+              <div className="bg-[#586968]  h-[320px] relative rounded-[9px] overflow-hidden ">
                 <Image
                   src={leaf}
                   alt=""
-                  className="absolute bottom-0 left-0"
+                  className="absolute bottom-0 left-0 -z-1"
                   width={150}
                   height={240}
                 />
-                <Image src={item.image} alt="item" />
+                <Image
+                  src={item.image}
+                  alt="item"
+                  width={200}
+                  height={200}
+                  className="mx-auto pt-10"
+                />
               </div>
               <h3 className="mt-6 font-montserrat font-semibold text-[20px] leading-[30px] text-white">
                 {item.title}

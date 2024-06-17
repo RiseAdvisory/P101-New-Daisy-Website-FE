@@ -27,7 +27,7 @@ export const BusinessHero = () => {
       </div>
       <div className="hidden md:flex justify-between mx-16 w-[533px]">
         <div className="flex flex-col mr-[170px]">
-          <ToggleButton />
+        
           <h1 className="text-white text-5xl leading-[60px]">
             Boost off-peak, drive growth, fill occupancy!{' '}
           </h1>

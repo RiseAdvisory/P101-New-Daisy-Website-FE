@@ -2,7 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Separator from '../separator/Separator';
 import Image from 'next/image';
 
-export const TabsFeaturesProfessional = ({
+export const ColumnTabsDesctop = ({
   itemsList,
   styleLeaf,
   bgImage,
@@ -16,7 +16,7 @@ export const TabsFeaturesProfessional = ({
   description: string;
 }) => {
   return (
-    <div>
+    <div className="px-[64px]">
       <div className="flex flex-col justify-center items-center text-center">
         <p className="text-[#F2DAD4] font-semibold uppercase text-[16px] leading-6 text-center">
           {title}
@@ -25,9 +25,12 @@ export const TabsFeaturesProfessional = ({
           {description}
         </h2>
       </div>
-      <Tabs defaultValue={itemsList[0].title} className="flex bg-primary ">
+      <Tabs
+        defaultValue={itemsList[0].title}
+        className="flex flex-col-reverse bg-primary "
+      >
         <TabsList className="flex flex-col justify-center py-6  mr-6 ml-16 bg-primary px-6 h-auto">
-          <ul className=" flex flex-col text-start bg-primary  rounded-xl ">
+          <ul className=" flex space-x-4 text-start bg-primary  rounded-xl ">
             {itemsList.map((item: any, index: number) => {
               return (
                 <li className="group" key={index}>
@@ -53,7 +56,7 @@ export const TabsFeaturesProfessional = ({
               defaultValue={item.title[0]}
               key={index}
               value={item.title}
-              className="px-2 py-4 w-full pr-16"
+              className="px-2 py-4 w-full mx-auto"
             >
               <div className=" w-full h-[480px] bg-[#435655] rounded-[16px] border border-[#828E8E] relative overflow-hidden">
                 {/* <Image src={item.image} alt="" className='w-[50%] h-auto' /> */}

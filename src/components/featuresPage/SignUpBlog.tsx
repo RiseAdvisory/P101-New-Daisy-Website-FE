@@ -5,7 +5,7 @@ import { MailIcons } from '@/assets/icons/mailIcons/mailicons';
 export const SignUpBlog = ({ style }: { style?: string }) => {
   return (
     <div
-      className={`bg-[#DBCCC4] py-28 px-4 md:border-[#E5E7EB] md:rounded-[16px] md:mx-20 md:flex md:items-center md:px-[48px] ${style}`}
+      className={`bg-[#DBCCC4] py-28 px-4 md:border-[#E5E7EB] md:rounded-[16px] md:mx-20 md:flex md:items-center md:p-[48px] ${style}`}
     >
       <div className="md:mr-10 md:w-[60%]">
         <h2 className="text-primary font-bold text-[24px] leading-[30px] capitalize md:text-[32px] md:leading-10">
