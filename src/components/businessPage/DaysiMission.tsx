@@ -13,7 +13,7 @@ export const DaysiMission = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-      <ul className="px-4 mt-12 space-y-6 md:flex md:space-x-6 md:justify-center md:space-y-0">
+      <ul className="px-4 mt-12 space-y-6 md:flex rtl:md:gap-6 md:gap-6 md:justify-center md:space-y-0">
         {daisyMission.map((item, index) => {
           return (
             <li key={index} className="bg-white rounded-[12px] p-6 border">

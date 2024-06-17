@@ -20,6 +20,7 @@ export const HeroPage = ({
   bredCrumbDesription,
   blockRef,
   titleScroll = ' Don’t believe us? Keep reading...',
+  features,
 }: {
   title: string;
   description: string;
@@ -33,6 +34,7 @@ export const HeroPage = ({
   bredCrumbDesription?: string;
   blockRef?: any;
   titleScroll?: string;
+  features?: boolean;
 }) => {
   const path = usePathname();
   const scrollToTopOfBlock = () => {
@@ -58,9 +60,11 @@ export const HeroPage = ({
         </div>
       )}
       <Image src={stars} alt="stars" className="mx-auto w-[60px] h-[60px] " />
-      <p className="mt-11 font-semibold text-base text-[#F2DAD4] uppercase">
-        {title}
-      </p>
+      {title !== '' && (
+        <p className="mt-11 font-semibold text-base text-[#F2DAD4] uppercase">
+          {title}
+        </p>
+      )}
       <h2 className="text-center mt-2 font-semibold text-[32px] leading-10 text-white md:px-[400px] md:text-[48px] md:leading-[60px]">
         {description}
       </h2>
@@ -77,6 +81,7 @@ export const HeroPage = ({
       <div
         className={cn(' flex flex-col justify-center my-auto', {
           hidden: hiddenArrow,
+          'md:hidden': features,
         })}
       >
         <p className="text-base text-white font-normal font-montserrat">
@@ -84,7 +89,9 @@ export const HeroPage = ({
         </p>
         <span
           onClick={scrollToTopOfBlock}
-          className="flex justify-center items-center rounded-full border border-primaryBtn w-[40px] h-[40px] cursor-pointer mx-auto mt-6"
+          className={cn(
+            'flex justify-center items-center rounded-full border border-primaryBtn w-[40px] h-[40px] cursor-pointer mx-auto mt-6',
+          )}
         >
           <ArrowSectionDown />
         </span>

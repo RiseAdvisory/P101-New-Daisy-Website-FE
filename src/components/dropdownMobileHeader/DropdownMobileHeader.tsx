@@ -7,7 +7,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
-import Link from 'next/link';
+import { Button } from '../ui/button';
 
 interface PropsDropDownHeader {
   state: string;
@@ -39,7 +39,7 @@ export const DropDownMobileHeader = ({
           classNames,
         )}
       >
-        <p className="mr-2">{state}</p>
+        <p className="mr-2 rtl:mr-0 rtl:ml-2">{state}</p>
         <ArrowDownIcon className=" stroke-white group-hover:stroke-primary" />
       </DropdownMenuTrigger>
       <DropdownMenuContent
@@ -50,17 +50,16 @@ export const DropDownMobileHeader = ({
       >
         {list?.map((item, index) => (
           <DropdownMenuItem
-            className="w-full flex flex-col self-center text-center justify-center !items-center font-montserrat font-normal text-base"
+            className="w-full flex flex-col self-center text-center justify-center !items-center font-montserrat font-normal text-base group"
             onClick={() => handleSelect(item.label)}
             key={index}
           >
-            <Link
-              className="w-full"
+            <Button
+              className="w-full bg-white text-primary group-hover:bg-[#F2F4F4]"
               onClick={() => setOpen(false)}
-              href={item.path}
             >
               {item.label}
-            </Link>
+            </Button>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

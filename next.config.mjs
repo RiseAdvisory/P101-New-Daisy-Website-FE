@@ -7,6 +7,11 @@ const nextConfig = {
         destination: '/business',
         permanent: false,
       },
+      {
+        source: '/features',
+        destination: '/features/customer',
+        permanent: false,
+      },
     ];
   },
 };

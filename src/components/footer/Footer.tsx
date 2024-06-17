@@ -18,14 +18,14 @@ export const Footer = () => {
       <Link href={'/'} className="mb-6">
         <LogoIconsS />
       </Link>
-      <nav className=" justify-center items-center self-center md:pt-6 md:pb-8">
-        <ul className="flex flex-col items-center justify-center font-montserrat text-gray-400 md:flex-row md:space-x-5">
+      <nav className=" justify-center items-center self-center ">
+        <ul className="flex flex-col items-center justify-center font-montserrat text-[#FFFFFF] md:flex-row md:gap-x-8">
           {navigationList.map((item, index) => {
             return (
               <Link
                 key={index}
                 href={item.nav}
-                className="pb-6 hover:text-white"
+                className="pb-8 hover:text-white"
               >
                 {item.name}
               </Link>
@@ -35,11 +35,11 @@ export const Footer = () => {
       </nav>
       {!isVisibleAppBtn && (
         <div className="w-full md:flex md:max-w-[650px]">
-          <PlayMarketButton className="mb-4 md:mr-6" />
+          <PlayMarketButton className="mb-4 md:mb-0 md:mr-6 rtl:mr-0 rtl:ml-6" />
           <AppStoreButton />
         </div>
       )}
-      <ul className="flex mx-auto items-center justify-center mt-8 space-x-6">
+      <ul className="flex mx-auto items-center justify-center mt-8 gap-x-6">
         <li>
           <FacebookIcons />
         </li>

@@ -12,7 +12,7 @@ export const OurValue = () => {
           practitioners, offering exclusive cashback offers that reward you for
           your self-care endeavors.
         </p>
-        <div className="md:flex md:px-16">
+        <div className="md:flex md:px-[40px]">
           <ul className="mt-8 md:w-[70%] md:grid md:grid-cols-2 md:gap-6 space-y-6 md:space-y-0">
             {Array.from({ length: 4 }).map((_, index) => (
               <li

@@ -1,6 +1,7 @@
-export const MessageIcons = () => {
+export const MessageIcons = ({ style }: { style?: string }) => {
   return (
     <svg
+      className={style}
       width="64"
       height="64"
       viewBox="0 0 64 64"

@@ -15,7 +15,7 @@ export const JoinTheDaisy = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-      <ul className="mt-[48px] space-y-8 pb-20 md:flex md:space-y-0 md:space-x-6">
+      <ul className="mt-[48px] space-y-8 pb-20 md:flex md:space-y-0 md:gap-6">
         {joinDaisyList.map((item, index) => {
           return (
             <li

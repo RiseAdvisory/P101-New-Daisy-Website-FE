@@ -3,6 +3,7 @@ import { Separator } from '@/components/ui/separator';
 import { Button } from '../ui/button';
 import { Calculater } from './Calculater';
 import { ResultCalculate } from './ResultCalculate';
+import { cn } from '@/lib/utils';
 
 export const CalculatePricing = () => {
   const [homeService, setHomeService] = useState(false);
@@ -87,7 +88,10 @@ export const CalculatePricing = () => {
         />
         <Button
           onClick={() => console.log('free')}
-          className="inline-flex md:hidden w-full p-6  font-montserrat border border-[#2E4342]  font-semibold px-[89px] py-[12px] mb-3"
+          className={cn(
+            'inline-flex md:hidden w-full p-6  font-montserrat border border-[#2E4342]  font-semibold px-[89px] py-[12px] mb-3',
+            { hidden: onCalculates },
+          )}
         >
           Start Free Trial
         </Button>

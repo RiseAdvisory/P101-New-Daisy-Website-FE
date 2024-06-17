@@ -5,8 +5,6 @@ import Separator from '../separator/Separator';
 import leaf from '../../assets/images/LeafBg.png';
 import stars from '../../assets/images/Stars.png';
 import phone from '../../assets/images/PHONE.png';
-
-import ToggleButton from '../toogleHeader/ToogleHeader';
 import Image from 'next/image';
 
 export const BusinessHero = () => {
@@ -25,9 +23,8 @@ export const BusinessHero = () => {
           <AppStoreButton />
         </div>
       </div>
-      <div className="hidden md:flex justify-between mx-16 w-[533px]">
-        <div className="flex flex-col mr-[170px]">
-          <ToggleButton />
+      <div className="hidden md:flex justify-between mx-16">
+        <div className="flex flex-col w-[533px]">
           <h1 className="text-white text-5xl leading-[60px]">
             Boost off-peak, drive growth, fill occupancy!{' '}
           </h1>
@@ -36,16 +33,16 @@ export const BusinessHero = () => {
             profits with ease
           </p>
           <Separator className="my-8" />
-          <div className="flex ">
+          <div className="grid grid-cols-[148px_1fr] ">
             <QRCodeIcons />
-            <div className="flex flex-col justify-between border-primaryBtn ml-6 w-[400px]">
+            <div className="flex flex-col justify-between border-primaryBtn ml-6 rtl:mr-6 ">
               <PlayMarketButton className="mb-2 w-full" />
               <AppStoreButton />
             </div>
           </div>
         </div>
-        <div className="mb-[200px]">
-          <div className="w-[600px] h-[500px] bg-primaryBtn rounded-[16px] relative ml-[120px]">
+        <div className="">
+          <div className="w-[600px] h-[500px] bg-primaryBtn rounded-[16px] relative ml-auto">
             <Image
               className="absolute bottom-0 left-0"
               src={leaf}

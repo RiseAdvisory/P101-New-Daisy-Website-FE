@@ -5,7 +5,6 @@ import Separator from '../separator/Separator';
 import leaf from '../../assets/images/LeafBg.png';
 import stars from '../../assets/images/Stars.png';
 import phone from '../../assets/images/PHONEcustomer.png';
-import ToggleButton from '../toogleHeader/ToogleHeader';
 import Image from 'next/image';
 
 export const CustomerHero = () => {
@@ -26,7 +25,6 @@ export const CustomerHero = () => {
       </div>
       <div className="hidden md:flex justify-between mx-16 w-[533px]">
         <div className="flex flex-col mr-[170px]">
-          <ToggleButton />
           <h1 className="text-white text-5xl leading-[60px]">
             Discover, Experience & Save With The Daisy
           </h1>

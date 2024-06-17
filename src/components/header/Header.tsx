@@ -13,19 +13,25 @@ import { DropDownMobileHeader } from '../dropdownMobileHeader/DropdownMobileHead
 import { usePathname } from 'next/navigation';
 import { DropdownResources } from '../blogPage/DropDownResources';
 import { MobileMenu } from '../mobileMenu/mobileMenu';
+import ToggleButton from '../toogleHeader/ToogleHeader';
 
 export const Header = () => {
   const path = usePathname();
   const [active, setActive] = useState('');
   const [openMenu, setOpenMenu] = useState(false);
   const [changePage, setChangePage] = useState('Business');
-  const [changeLang, setChangeLang] = useState('EN');
+  const [changeLang, setChangeLang] = useState('LTR');
   const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState(false);
 
   useEffect(() => {
     if (path.includes('resources')) return setActive('/resources');
+    if (path.includes('features')) return setActive('/features');
     const currentPath = headerNavigationList.find((item) => {
-      if (path === '/customer' || path === '/business') {
+      if (
+        path === '/customer' ||
+        path === '/business' ||
+        path === '/professional'
+      ) {
         return item.nav === '/';
       }
       return item.nav === path;
@@ -38,9 +44,14 @@ export const Header = () => {
     setActive('/resources');
     setIsResourcesDropdownOpen(!isResourcesDropdownOpen);
   };
+  const toggleBodyDir = () => {
+    const currentDir = document.body.getAttribute('dir') || 'rtl';
+    const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
+    document.body.setAttribute('dir', newDir);
+  };
 
   return (
-    <header className="w-full bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16">
+    <header className="w-full rtl:md:  bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16">
       <Link href={'/'}>
         <LogoIconsS />
       </Link>
@@ -64,7 +75,7 @@ export const Header = () => {
           )}
           <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
         </div>
-        <ul className="hidden md:flex space-x-9 mx-auto">
+        <ul className="hidden md:flex md:gap-[10px] lg:gap-[20px] md:ml-[10px]  lg:ml-[55px] rtl:md:ml-0 rtl:md:mr-[55px] rtl:first:mr-4">
           {headerNavigationList.map((item, index) => {
             if (item.title === 'Resources') {
               return (
@@ -120,10 +131,14 @@ export const Header = () => {
             }
           })}
         </ul>
-        <div className="hidden md:flex space-x-2">
+        <ToggleButton />
+        <div className="hidden md:flex ">
           <DropDownMobileHeader
             state={changeLang}
-            setState={setChangeLang}
+            setState={(val: any) => {
+              setChangeLang(val);
+              toggleBodyDir();
+            }}
             list={changeLanguage}
             classNameContent="!w-[70px]"
           />

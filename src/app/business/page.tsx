@@ -1,3 +1,4 @@
+'use client';
 import { QASection } from '@/components/QASection/QASection';
 import { BecomeFormPartner } from '@/components/businessPage/BecomeFormPartner';
 import { BusinessHero } from '@/components/businessPage/BusinessHero';
@@ -17,7 +18,7 @@ const Business = () => {
   return (
     <div className="w-full ">
       <BusinessHero />
-      <div className="md:hidden">
+      <div className="md:hidden ">
         <NoScrollingAnimationBusiness
           imageBg={leaf}
           imageClassNameBg="absolute -bottom-[40px] left-0 w-[300px] h-[300px]"
@@ -46,6 +47,7 @@ const Business = () => {
           imageBgTwo={leaf}
           imageClassNameBgSecond="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
         />
+        wwsww
         <NoScrollingAnimationBusiness
           imageBg={leaf}
           imageClassNameBg="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"

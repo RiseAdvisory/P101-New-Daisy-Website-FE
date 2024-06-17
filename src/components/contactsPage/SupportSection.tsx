@@ -12,7 +12,7 @@ export const SupportSection = () => {
               key={index}
               className="flex flex-col justify-center items-center text-center"
             >
-              {item.icon()}
+              <item.icon />
               <h3 className="mt-5 font-montserrat font-medium text-xl">
                 {item.title}
               </h3>
