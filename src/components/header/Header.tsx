@@ -51,7 +51,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="w-full rtl-md:px-20  bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16">
+    <header className="w-full rtl:md:  bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16">
       <Link href={'/'}>
         <LogoIconsS />
       </Link>
@@ -75,7 +75,7 @@ export const Header = () => {
           )}
           <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
         </div>
-        <ul className="hidden md:flex space-x-9 ml-[55px]">
+        <ul className="hidden md:flex md:gap-[10px] lg:gap-[20px] md:ml-[10px]  lg:ml-[55px] rtl:md:ml-0 rtl:md:mr-[55px] rtl:first:mr-4">
           {headerNavigationList.map((item, index) => {
             if (item.title === 'Resources') {
               return (
@@ -132,7 +132,7 @@ export const Header = () => {
           })}
         </ul>
         <ToggleButton />
-        <div className="hidden md:flex space-x-1">
+        <div className="hidden md:flex ">
           <DropDownMobileHeader
             state={changeLang}
             setState={(val: any) => {

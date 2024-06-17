@@ -61,8 +61,8 @@ export const TutorialSection = ({
       </div>
       {showScroll && (
         <div className="fixed bottom-4 right-4 flex flex-col">
-          <Button className="px-[14px] py-[18px] text-primary bg-white rounded-full shadow-xl  shadow-[#101E1D1A] mb-4 md:hidden">
-            <ContactSupport style='#2E4342'/>
+          <Button className="px-[14px] py-[25px] text-primary bg-white rounded-full shadow-xl  shadow-[#101E1D1A] mb-4 md:hidden">
+            <ContactSupport style="#2E4342" />
           </Button>
           <button
             onClick={scrollToTopOfBlock}

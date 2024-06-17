@@ -27,10 +27,10 @@ export const GetAppButton = ({
     >
       <Link href={'/get-the-app'}>
         <div className="flex justify-center items-center hover:bg-white group hover:text-primary cursor-pointer">
-          <button className=" border-r-2 border-[#586968] pr-[11px]">
+          <button className=" border-r-2 rtl:border-none rtl:ml-2 border-[#586968] pr-[11px]">
             <AppStoreIcons w="15" h="17" className="group-hover:fill-primary" />
           </button>
-          <button className="px-[11px]">
+          <button className="px-[11px] rtl:border-r-2 border-[#586968]">
             <GooglePlayIcons
               w="15"
               h="17"

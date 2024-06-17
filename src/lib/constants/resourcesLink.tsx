@@ -12,7 +12,7 @@ export const resourcesLinkList = [
   {
     title: 'Customer testimonials',
     description: 'Lorem ipsum dolor sit dolor ',
-    nav: '/resources/customer',
+    nav: '/resources/testimonials',
   },
   {
     title: 'Updates',

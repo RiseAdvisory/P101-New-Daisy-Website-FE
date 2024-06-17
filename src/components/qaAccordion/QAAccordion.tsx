@@ -16,7 +16,7 @@ export const QAAccordion = ({ value }: { value: any }) => {
         value={`item-${value}`}
         className="group focus:bg-primary focus:text-white data-[state=open]:bg-primary data-[state=open]:text-white data-[state=open]:rounded-[16px] px-4"
       >
-        <AccordionTrigger className="font-montserrat text-base font-semibold text-start">
+        <AccordionTrigger className="font-montserrat text-base font-semibold text-start !no-underline">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
         </AccordionTrigger>
         <Separator className="hidden group-data-[state=open]:block data-[state=open]:bg-white group-data-[state=open]:my-4 group-data-[state=open]:mb-10" />

@@ -59,7 +59,7 @@ const ToggleButton = ({ className }: { className?: string }) => {
   return (
     <div
       className={cn(
-        'hidden md:flex border rounded-lg p-1 bg-customWhite border-primaryBtn max-w-content ml-auto mr-3',
+        'hidden md:flex border rounded-lg p-1 bg-customWhite border-primaryBtn max-w-content ml-auto mr-2 rtl:mr-auto rtl:ml-0',
         className,
       )}
     >

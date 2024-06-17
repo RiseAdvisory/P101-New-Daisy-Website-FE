@@ -39,7 +39,7 @@ export const DropDownMobileHeader = ({
           classNames,
         )}
       >
-        <p className="mr-2">{state}</p>
+        <p className="mr-2 rtl:mr-0 rtl:ml-2">{state}</p>
         <ArrowDownIcon className=" stroke-white group-hover:stroke-primary" />
       </DropdownMenuTrigger>
       <DropdownMenuContent

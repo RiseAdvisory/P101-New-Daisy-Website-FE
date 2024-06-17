@@ -12,7 +12,7 @@ import doublePhoto from '../../assets/images/PHONEallheight.png';
 
 export const ExperienceDaisy = () => {
   return (
-    <div className="md:bg-custom-gradient">
+    <div className="md:bg-custom-gradient md:mt-[150px]">
       <div className="pt-[80px] px-4 md:flex relative bg-primary md:mx-[63px] md:rounded-[16px]">
         <div className="bg-primaryBtn w-full rounded-[9px] items-center flex justify-center overflow-hidden md:hidden relative">
           <Image
@@ -59,8 +59,8 @@ export const ExperienceDaisy = () => {
           <p className="font-montserrat font-normal text-base pt-3 leading-8 text-[#D5D9D9]">
             Your Gateway to Seamless Services!
           </p>
-          <Separator className="my-[34px]" />
-          <p className="font-montserrat font-normal text-base pt-3 leading-8 text-[#FFFFFF]">
+          <Separator className="my-[34px] md:hidden" />
+          <p className="font-montserrat font-normal text-base pt-3 leading-8 text-[#FFFFFF] md:mt-[40px]">
             Download Now!
           </p>
           <div className="flex flex-col pb-16 md:w-[427px]">

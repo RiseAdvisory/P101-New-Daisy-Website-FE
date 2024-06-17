@@ -6,7 +6,6 @@ import imageLeaf from '../../assets/images/features/business/LeafBusinessFeature
 import imageLeafRight from '../../assets/images/features/business/LeafBusinessRight.png';
 import imageLeafLast from '../../assets/images/features/business/LeafBusinessBottom.png';
 
-
 import {
   listManegamentFeatures,
   listMarketingFeatures,

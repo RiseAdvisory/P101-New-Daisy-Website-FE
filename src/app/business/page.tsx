@@ -47,6 +47,7 @@ const Business = () => {
           imageBgTwo={leaf}
           imageClassNameBgSecond="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
         />
+        wwsww
         <NoScrollingAnimationBusiness
           imageBg={leaf}
           imageClassNameBg="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"

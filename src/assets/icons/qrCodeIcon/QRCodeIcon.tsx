@@ -1,6 +1,7 @@
 export const QRCodeIcons = () => {
   return (
     <svg
+      className="w-fit "
       width="148"
       height="148"
       viewBox="0 0 148 148"
