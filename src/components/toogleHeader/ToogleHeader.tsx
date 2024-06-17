@@ -12,33 +12,40 @@ const ToggleButton = ({ className }: { className?: string }) => {
   const [active, setActive] = useState('');
 
   useEffect(() => {
-    const storedPath = localStorage.getItem('activePage');
+    if (typeof window !== 'undefined') {
+      const storedPath = localStorage.getItem('activePage');
 
-    if (pathname.includes('business') && !pathname.includes('features'))
-      setActive('/business');
-    if (pathname.includes('customer') && !pathname.includes('features'))
-      setActive('/customer');
-    if (pathname.includes('professional') && !pathname.includes('features'))
-      setActive('/professional');
+      if (pathname.includes('business') && !pathname.includes('features'))
+        setActive('/business');
+      if (pathname.includes('customer') && !pathname.includes('features'))
+        setActive('/customer');
+      if (pathname.includes('professional') && !pathname.includes('features'))
+        setActive('/professional');
 
-    if (pathname.startsWith('/features') && storedPath) {
-      const newPath = `/features/${storedPath}`;
-      if (pathname !== newPath) {
-        router.replace(newPath);
+      if (pathname.startsWith('/features') && storedPath) {
+        const newPath = `/features/${storedPath}`;
+        if (pathname !== newPath) {
+          router.replace(newPath);
+        }
       }
     }
   }, [pathname, router]);
 
-  let currentPath: string | undefined;
-  if (pathname.startsWith('/business')) currentPath = 'business';
-  if (pathname.startsWith('/customer')) currentPath = 'customer';
-  if (pathname.startsWith('/professional')) currentPath = 'professional';
-
-  if (currentPath) {
-    localStorage.setItem('activePage', currentPath);
-  }
   useEffect(() => {
-    if (active) {
+    if (typeof window !== 'undefined') {
+      let currentPath: string | undefined;
+      if (pathname.startsWith('/business')) currentPath = 'business';
+      if (pathname.startsWith('/customer')) currentPath = 'customer';
+      if (pathname.startsWith('/professional')) currentPath = 'professional';
+
+      if (currentPath) {
+        localStorage.setItem('activePage', currentPath);
+      }
+    }
+  }, [pathname]);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && active) {
       localStorage.setItem('activePage', active);
     }
   }, [active]);
@@ -48,7 +55,9 @@ const ToggleButton = ({ className }: { className?: string }) => {
     if (path.startsWith('/features/customer')) setActive('/customer');
     if (path.startsWith('/features/professional')) setActive('/professional');
     setActive(path);
-    localStorage.setItem('activePage', path);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('activePage', path);
+    }
     if (pathname.includes('/features')) {
       router.push(`/features${path}`);
     } else {
