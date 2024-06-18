@@ -13,48 +13,60 @@ import image3 from '../../assets/images/collectPayments.png';
 import image4 from '../../assets/images/doublePhone.png';
 import { NoScrollingAnimationBusiness } from '@/components/noAnimationBusiness/NoAnimationBusiness';
 import leaf from '../../assets/images/LeafBg.png';
+import { Separator } from '@/components/ui/separator';
+// import LockerComponent from '@/components/LockerScroll/LockerScroll';
+// import { dataLocker } from '@/lib/constants/LockerScroll';
 
 const Business = () => {
   return (
     <div className="w-full ">
       <BusinessHero />
+      {/* <LockerComponent data={dataLocker} /> */}
       <div className="md:hidden ">
         <NoScrollingAnimationBusiness
           imageBg={leaf}
-          imageClassNameBg="absolute -bottom-[40px] left-0 w-[300px] h-[300px]"
+          imageClassNameBg="absolute -bottom-[40px] left-0 w-[340px] h-[320px] "
           image={image1}
           className="absolute w-full h-full bottom-0 left-10"
           title="Marketing Tools To Attract New & Retain Current Customers"
-          imageClassName=" absolute w-[80%] h-[90%] top-[50%] -translate-y-1/2 right-0"
+          imageClassName=" absolute w-[80%]   top-[50%] -translate-y-1/2 right-0"
         />
+        <div className="px-4 bg-primary">
+          <Separator className="bg-[#586968]" />
+        </div>
         <NoScrollingAnimationBusiness
           imageBg={leaf}
           imageClassNameBg="absolute -bottom-[40px] left-0 w-[300px] h-[300px]"
           image={image2}
           className="absolute w-full h-full bottom-0 left-10 "
           title="Friendly Design, Works On Any Mobile Or Desktop device"
-          imageClassName=" absolute w-[300px] h-[70%] top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
+          imageClassName=" absolute w-[300px]  top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
           imageBgTwo={leaf}
           imageClassNameBgSecond="absolute -top-[70px] -right-[70px] w-[200px] h-[200px] rotate-180 scale-x-[-1]"
         />
+        <div className="px-4 bg-primary">
+          <Separator className="bg-[#586968]" />
+        </div>
         <NoScrollingAnimationBusiness
           imageBg={leaf}
           imageClassNameBg="absolute -bottom-[100px] -right-[180px] w-[300px] h-[300px] rotate-[60deg]"
           image={image3}
           className="absolute w-full h-full bottom-0 left-10 "
           title="Collect Payments, Sync Calendars And Automate Daily Processes  "
-          imageClassName=" absolute w-[70%] h-[90%] top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
+          imageClassName=" absolute w-[70%]  top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
           imageBgTwo={leaf}
           imageClassNameBgSecond="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
         />
-        wwsww
+        <div className="px-4 bg-primary">
+          <Separator className="bg-[#586968]" />
+        </div>
         <NoScrollingAnimationBusiness
           imageBg={leaf}
           imageClassNameBg="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
           image={image4}
           className="absolute w-full h-full bottom-0 left-10 "
           title="Performance Reports And Business Analytics To Help You Grow!"
-          imageClassName=" absolute w-[60%] h-[80%] bottom-0  -translate-x-1/2 left-[50%]"
+          imageClassName=" absolute w-[60%]  bottom-0  -translate-x-1/2 left-[50%]"
         />
       </div>
       <OurPartnersSection />

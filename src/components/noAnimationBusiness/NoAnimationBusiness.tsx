@@ -45,7 +45,7 @@ export const NoScrollingAnimationBusiness = ({
   };
   return (
     <div className="pt-16 bg-primary px-4 pb-[64px]">
-      <div className="w-full relative bg-primaryBtn overflow-hidden rounded-[9px] h-[350px]">
+      <div className="w-full relative bg-primaryBtn overflow-hidden rounded-[9px] h-[340px]">
         <Image src={imageBg} alt="bg" className={imageClassNameBg} />
         {imageBgTwo && (
           <Image

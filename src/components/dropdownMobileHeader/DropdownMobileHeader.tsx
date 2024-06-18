@@ -8,6 +8,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
+import { useRouter } from 'next/navigation';
 
 interface PropsDropDownHeader {
   state: string;
@@ -15,6 +16,7 @@ interface PropsDropDownHeader {
   list?: { label: string; path: string }[];
   classNames?: string;
   classNameContent?: string;
+  link?: boolean;
 }
 
 export const DropDownMobileHeader = ({
@@ -23,9 +25,10 @@ export const DropDownMobileHeader = ({
   list,
   classNames,
   classNameContent,
+  link,
 }: PropsDropDownHeader) => {
   const [open, setOpen] = useState(false);
-
+  const router = useRouter();
   const handleSelect = (label: string) => {
     setState(label);
     setOpen(false);
@@ -39,7 +42,7 @@ export const DropDownMobileHeader = ({
           classNames,
         )}
       >
-        <p className="mr-2 rtl:mr-0 rtl:ml-2">{state}</p>
+        <p className="mr-2 rtl:mr-0 rtl:">{state}</p>
         <ArrowDownIcon className=" stroke-white group-hover:stroke-primary" />
       </DropdownMenuTrigger>
       <DropdownMenuContent
@@ -56,7 +59,10 @@ export const DropDownMobileHeader = ({
           >
             <Button
               className="w-full bg-white text-primary group-hover:bg-[#F2F4F4]"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                setOpen(false);
+                if (link) router.push(item.path);
+              }}
             >
               {item.label}
             </Button>

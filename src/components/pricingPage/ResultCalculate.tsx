@@ -2,6 +2,7 @@ import { Separator } from '@/components/ui/separator';
 import { Button } from '../ui/button';
 import { CheckIconPricing } from '@/assets/icons/checkIconPricing/CheckIconPricing';
 import { Switch } from '@/components/ui/switch';
+import { cn } from '@/lib/utils';
 
 const changePlanList = [
   '1 Staff Free',
@@ -10,7 +11,13 @@ const changePlanList = [
   '1 Additional $10/month',
 ];
 
-export const ResultCalculate = () => {
+export const ResultCalculate = ({
+  setCheckedYear,
+  onCheckedYear,
+}: {
+  onCheckedYear: boolean;
+  setCheckedYear: any;
+}) => {
   return (
     <div>
       <div className="mt-6 md:p-6 md:border md:rounded-[16px]">
@@ -32,7 +39,7 @@ export const ResultCalculate = () => {
           style={{ width: 'calc(100% + 32px)' }}
         />
         <div className="md:flex md:justify-between">
-          <ul className="md:grid md:grid-cols-2 md:w-[50%] md:py-[20px]">
+          <ul className="md:grid md:grid-cols-2  md:w-[50%] md:py-[20px] grid gap-3">
             {changePlanList.map((item, index) => {
               return (
                 <li key={index} className="flex items-center ">
@@ -53,7 +60,7 @@ export const ResultCalculate = () => {
               <h3 className="text-[#455150] font-montserrat text-base font-medium">
                 Basic Plan:
               </h3>
-              <p className="text-[#172524] text-[14px] leading-5 font-montserrat font-medium">
+              <p className="text-[#172524] text-[14px] leading-5 font-montserrat font-medium ">
                 $50
                 <span className="text-[#455150] font-normal"> / month</span>
               </p>
@@ -77,30 +84,66 @@ export const ResultCalculate = () => {
           <h2 className="font-montserrat font-semibold text-base">
             Total Price:
           </h2>
-          <div className="md:flex md:items-center">
+          <div className="md:ml-auto">
             {' '}
-            <div className="flex justify-center mt-[14px] md:mt-0 items-center">
-              <p className="font-montserrat font-semibold text-[20px] leading-[30px]">
-                $60
-                <span className="font-montserrat text-[#455150] font-normal">
-                  {' '}
-                  / month
-                </span>
-              </p>
-              <Switch className="mx-4 data-[state=checked]:bg-[#A67F6B]" />
+            <p
+              className={cn(
+                'bg-[#ECEEED] rounded-[16px] px-[7px] py-[3px] text-[#2E3B3A] text-[10px] leading-[10px] w-fit ml-auto',
+                { 'bg-[#E9ECF7] text-[#2543AD]': onCheckedYear },
+              )}
+            >
+              17% discount
+            </p>
+            <div className="md:flex md:items-center">
+              <div className="flex justify-between  md:mt-0 items-center">
+                <div
+                  className={cn('md:flex md:items-baseline', {
+                    ' opacity-60': onCheckedYear,
+                  })}
+                >
+                  <p className="font-montserrat font-semibold text-[20px] leading-[30px]">
+                    $60
+                    <span className="font-montserrat text-[#455150] font-normal  md:text-[16px] md:leading-[18px]">
+                      {' '}
+                      <span className="hidden md:inline">per</span>
+                      <span className="md:hidden">/</span> month
+                    </span>
+                  </p>
+                  <p className=" font-montserrat text-[10px] leading-[15px] md:flex  md:text-[16px] md:leading-[18px] font-normal text-[#455150]">
+                    <span className="hidden md:inline mx-1">/</span>
+                    billed monthly
+                  </p>
+                </div>
 
-              <p className="font-montserrat font-semibold text-[20px] leading-[30px]">
-                $600
-                <span className="font-montserrat text-[#455150] font-normal">
-                  {' '}
-                  / year
-                </span>
-              </p>
+                <Switch
+                  className="data-[state=checked]:bg-[#A67F6B] w-[50px] h-[28px] md:mx-4"
+                  onCheckedChange={() => setCheckedYear(!onCheckedYear)}
+                />
+
+                <div
+                  className={cn('md:flex md:items-baseline', {
+                    ' opacity-60': !onCheckedYear,
+                  })}
+                >
+                  <p className="font-montserrat font-semibold text-[20px] leading-[30px]">
+                    $600
+                    <span className="font-montserrat text-[#455150] font-normal  md:text-[16px] md:leading-[18px]">
+                      {' '}
+                      <span className="hidden md:inline">per</span>
+                      <span className="md:hidden">/</span> year
+                    </span>
+                  </p>
+                  <p className=" font-montserrat text-[10px] leading-[15px] md:flex  md:text-[16px] md:leading-[18px] font-normal text-[#455150]">
+                    <span className="hidden md:inline mx-1">/</span>
+                    billed monthly
+                  </p>
+                </div>
+              </div>
             </div>
-            <Button className="ml-4 hover:bg-white hover:text-primary border hidden md:inline-flex">
-              Start Free Trial
-            </Button>
           </div>
+          <Button className="ml-4 hover:bg-white hover:text-primary border hidden md:inline-flex rounded-[9px]">
+            Start Free Trial
+          </Button>
         </div>
       </div>
     </div>

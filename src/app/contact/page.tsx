@@ -9,7 +9,7 @@ const Contacts = () => {
         visibleDescriiton={false}
         title="Contact Us"
         description="Get In Touch"
-        heightScreen={true}
+        heightScreen={false}
         styleSection="pb-[100px]"
         secondDescription="Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? 
         Let us know"

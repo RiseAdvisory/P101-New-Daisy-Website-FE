@@ -49,8 +49,8 @@ export const ProfileForm = () => {
   const [activeField, setActiveField] = useState<string | null>(null);
   const [countryCode, setCountryCode] = useState('+965');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [businessType, setBusinessType] = useState(false);
   const [homeService, setHomeService] = useState(false);
-  const [provideService, setProvideService] = useState(false);
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -136,62 +136,64 @@ export const ProfileForm = () => {
           <ToggleButtonForm
             firstValue="Business"
             secondValue="Freelances"
-            homeService={provideService}
-            setHomeService={setProvideService}
+            homeService={businessType}
+            setHomeService={setBusinessType}
           />
         </div>
-        <div className="md:flex md:justify-between">
-          <FormField
-            control={form.control}
-            name="businessname"
-            render={({ field }) => (
-              <FormItem className="md:w-full mt-6 ">
-                <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
-                    activeField === 'businessname' ? 'text-[#A67F6B]' : ''
-                  }`}
-                >
-                  Business Name
-                </FormLabel>
-                <FormControl>
-                  <Input
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
-                    placeholder="Spa Time"
-                    {...field}
-                    onFocus={() => handleFocus('businessname')}
-                    onBlur={handleBlur}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="businessType"
-            render={({ field }) => (
-              <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4">
-                <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
-                    activeField === 'businessType' ? 'text-[#A67F6B]' : ''
-                  }`}
-                >
-                  Business Type
-                </FormLabel>
-                <FormControl>
-                  <Input
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
-                    placeholder="Spa"
-                    {...field}
-                    onFocus={() => handleFocus('businessType')}
-                    onBlur={handleBlur}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
+        {businessType && (
+          <div className="md:flex md:justify-between">
+            <FormField
+              control={form.control}
+              name="businessname"
+              render={({ field }) => (
+                <FormItem className="md:w-full mt-6 ">
+                  <FormLabel
+                    className={`font-montserrat font-semibold text-base ${
+                      activeField === 'businessname' ? 'text-[#A67F6B]' : ''
+                    }`}
+                  >
+                    Business Name
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
+                      placeholder="Spa Time"
+                      {...field}
+                      onFocus={() => handleFocus('businessname')}
+                      onBlur={handleBlur}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="businessType"
+              render={({ field }) => (
+                <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4">
+                  <FormLabel
+                    className={`font-montserrat font-semibold text-base ${
+                      activeField === 'businessType' ? 'text-[#A67F6B]' : ''
+                    }`}
+                  >
+                    Business Type
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
+                      placeholder="Spa"
+                      {...field}
+                      onFocus={() => handleFocus('businessType')}
+                      onBlur={handleBlur}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+        )}
         <div className="md:flex md:justify-between">
           <FormField
             control={form.control}
@@ -211,7 +213,7 @@ export const ProfileForm = () => {
                       value={countryCode}
                       onValueChange={(value) => setCountryCode(value)}
                     >
-                      <SelectTrigger className="w-32 flex">
+                      <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB]">
                         <SelectValue placeholder="+965" />
                       </SelectTrigger>
                       <SelectContent>
@@ -269,73 +271,75 @@ export const ProfileForm = () => {
             )}
           />
         </div>
-        <div className="md:flex md:justify-between">
-          <FormField
-            control={form.control}
-            name="numberoflocation"
-            render={({ field }) => (
-              <FormItem className="md:w-full mt-6">
-                <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
-                    activeField === 'numberoflocation' ? 'text-[#A67F6B]' : ''
-                  }`}
-                >
-                  Number of Locations
-                </FormLabel>
-                <FormControl>
-                  <Select onValueChange={field.onChange}>
-                    <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB]">
-                      <SelectValue className="flex" placeholder="0" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="5" className="flex">
-                        5
-                      </SelectItem>
-                      <SelectItem value="10">10</SelectItem>
-                      <SelectItem value="15">15</SelectItem>
-                      {/* Add other country codes as needed */}
-                    </SelectContent>
-                  </Select>
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+        {businessType && (
+          <div className="md:flex md:justify-between">
+            <FormField
+              control={form.control}
+              name="numberoflocation"
+              render={({ field }) => (
+                <FormItem className="md:w-full mt-6">
+                  <FormLabel
+                    className={`font-montserrat font-semibold text-base ${
+                      activeField === 'numberoflocation' ? 'text-[#A67F6B]' : ''
+                    }`}
+                  >
+                    Number of Locations
+                  </FormLabel>
+                  <FormControl>
+                    <Select onValueChange={field.onChange}>
+                      <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB]">
+                        <SelectValue className="flex" placeholder="0" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="5" className="flex">
+                          5
+                        </SelectItem>
+                        <SelectItem value="10">10</SelectItem>
+                        <SelectItem value="15">15</SelectItem>
+                        {/* Add other country codes as needed */}
+                      </SelectContent>
+                    </Select>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-          <FormField
-            control={form.control}
-            name="numberoflocationName"
-            render={({ field }) => (
-              <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4 ">
-                <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
-                    activeField === 'numberoflocationName'
-                      ? 'text-[#A67F6B]'
-                      : ''
-                  }`}
-                >
-                  Number of Locations
-                </FormLabel>
-                <FormControl>
-                  <Select onValueChange={field.onChange}>
-                    <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB]">
-                      <SelectValue className="flex " placeholder="0" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="5" className="flex">
-                        5
-                      </SelectItem>
-                      <SelectItem value="10">10</SelectItem>
-                      <SelectItem value="15">15</SelectItem>
-                      {/* Add other country codes as needed */}
-                    </SelectContent>
-                  </Select>
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
+            <FormField
+              control={form.control}
+              name="numberoflocationName"
+              render={({ field }) => (
+                <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4 ">
+                  <FormLabel
+                    className={`font-montserrat font-semibold text-base ${
+                      activeField === 'numberoflocationName'
+                        ? 'text-[#A67F6B]'
+                        : ''
+                    }`}
+                  >
+                    Number of Locations
+                  </FormLabel>
+                  <FormControl>
+                    <Select onValueChange={field.onChange}>
+                      <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB]">
+                        <SelectValue className="flex " placeholder="0" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="5" className="flex">
+                          5
+                        </SelectItem>
+                        <SelectItem value="10">10</SelectItem>
+                        <SelectItem value="15">15</SelectItem>
+                        {/* Add other country codes as needed */}
+                      </SelectContent>
+                    </Select>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+        )}
         <div className="w-full mt-6">
           <p className="text-[#172524] font-montserrat font-semibold mb-2">
             Do you provide home service visits?

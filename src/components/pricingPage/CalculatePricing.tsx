@@ -10,6 +10,7 @@ export const CalculatePricing = () => {
   const [onboarding, setOnboarding] = useState(false);
   const [conciergeService, setConciergeService] = useState(false);
   const [onCalculates, setOnCalculates] = useState(true);
+  const [onCheckedYear, setCheckedYear] = useState(false);
   const [calculate, setCalculate] = useState({
     staff: '1',
     branch: '1',
@@ -43,7 +44,7 @@ export const CalculatePricing = () => {
 
   return (
     <div className="bg-[#828E8E] rounded-[16px] p-0 md:p-8 w-full">
-      <div className="p-4 md:p-8 rounded-[16px] bg-white">
+      <div className="p-6 md:p-8 rounded-[16px] bg-white">
         <div className="flex justify-between">
           <div>
             <h2 className="text-[#172524] font-semibold text-[18px] leading-7 font-montserrat">
@@ -79,7 +80,10 @@ export const CalculatePricing = () => {
             setConciergeService={setConciergeService}
           />
         ) : (
-          <ResultCalculate />
+          <ResultCalculate
+            onCheckedYear={onCheckedYear}
+            setCheckedYear={setCheckedYear}
+          />
         )}
 
         <Separator
