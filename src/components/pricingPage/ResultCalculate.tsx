@@ -116,7 +116,7 @@ export const ResultCalculate = ({
                 </div>
 
                 <Switch
-                  className="data-[state=checked]:bg-[#A67F6B] w-[50px] h-[28px] md:mx-4"
+                  className="data-[state=checked]:bg-[#A67F6B] bg-[#aab4b3] md:mx-4"
                   onCheckedChange={() => setCheckedYear(!onCheckedYear)}
                 />
 

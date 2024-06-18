@@ -6,6 +6,7 @@ import Separator from '@/components/separator/Separator';
 import { Switch } from '@/components/ui/switch';
 import { pricingBusinessCard } from '@/lib/constants/pricing/pricingBusiness';
 import { pricingProfessionalCard } from '@/lib/constants/pricing/prisingProfessional';
+import { cn } from '@/lib/utils';
 import { useState } from 'react';
 
 const Pricing = () => {
@@ -27,11 +28,22 @@ const Pricing = () => {
         <Separator />
       </div>
       <div className="flex mx-auto w-fit bg-primary my-[44px]">
-        <p className="font-normal text-[18px] leading-6 text-[#F8F5F3]">
+        <p
+          className={cn('font-normal text-[18px] leading-6 text-[#F8F5F3]', {
+            'text-[#F8F5F3]/60': checkedMonth,
+          })}
+        >
           Pay Monthly
         </p>
-        <Switch className="mx-4" />
-        <p className="font-normal text-[18px] leading-6 text-[#F8F5F3]">
+        <Switch
+          className="mx-4 data-[state=checked]:bg-[#A67F6B] bg-[#aab4b3]"
+          onCheckedChange={() => setCheckedMonth(!checkedMonth)}
+        />
+        <p
+          className={cn('font-normal text-[18px] leading-6 text-[#F8F5F3]', {
+            'text-[#F8F5F3]/60': !checkedMonth,
+          })}
+        >
           Pay Annually
         </p>
       </div>
