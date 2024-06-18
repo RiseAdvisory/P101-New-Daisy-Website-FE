@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '../ui/button';
 import { Calculater } from './Calculater';
@@ -19,27 +19,24 @@ export const CalculatePricing = () => {
     assistantOnboard: false,
     available: false,
   });
+
+  const calculationFormRef = useRef<HTMLDivElement>(null);
+
+  const scrollToCalculationForm = () => {
+    if (calculationFormRef.current) {
+      calculationFormRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   const onCalculate = () => {
-    const staff = parseInt(calculate.staff, 10) * 10;
-    const branch = parseInt(calculate.branch, 10) * 25;
-    const country = parseInt(calculate.country, 10) * 50;
+    scrollToCalculationForm();
+  };
 
-    let total = staff + branch + country;
-
-    if (calculate.provideHome) {
-      total += 25;
-    }
-
-    if (calculate.assistantOnboard) {
-      total += 100;
-    }
-
-    if (calculate.available) {
-      total += 1;
-    }
-
-    console.log(total);
-    console.log(calculate);
+  const onResetCalculation = () => {
+    scrollToCalculationForm();
   };
 
   return (
@@ -57,9 +54,9 @@ export const CalculatePricing = () => {
           </div>
           <Button
             onClick={() => {
-              onCalculate(), setOnCalculates(!onCalculates);
+              setOnCalculates(!onCalculates);
             }}
-            className=" hidden md:inline-flex font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary text-center"
+            className="hidden md:inline-flex font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary text-center"
           >
             {onCalculates ? 'Calculate' : 'Reset Calculation'}
           </Button>
@@ -70,6 +67,7 @@ export const CalculatePricing = () => {
         />
         {onCalculates ? (
           <Calculater
+            calculationFormRef={calculationFormRef}
             calculate={calculate}
             setCalculate={setCalculate}
             homeService={homeService}
@@ -81,6 +79,7 @@ export const CalculatePricing = () => {
           />
         ) : (
           <ResultCalculate
+            calculationFormRef={calculationFormRef}
             onCheckedYear={onCheckedYear}
             setCheckedYear={setCheckedYear}
           />
@@ -91,7 +90,6 @@ export const CalculatePricing = () => {
           style={{ width: 'calc(100% + 32px)' }}
         />
         <Button
-          onClick={() => console.log('free')}
           className={cn(
             'inline-flex md:hidden w-full p-6  font-montserrat border border-[#2E4342]  font-semibold px-[89px] py-[12px] mb-3',
             { hidden: onCalculates },
@@ -101,7 +99,12 @@ export const CalculatePricing = () => {
         </Button>
         <Button
           onClick={() => {
-            onCalculate(), setOnCalculates(!onCalculates);
+            if (onCalculates) {
+              onCalculate();
+            } else {
+              onResetCalculation();
+            }
+            setOnCalculates(!onCalculates);
           }}
           className="inline-flex md:hidden w-full p-6  font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary"
         >

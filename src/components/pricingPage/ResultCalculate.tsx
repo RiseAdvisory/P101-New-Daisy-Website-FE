@@ -14,12 +14,14 @@ const changePlanList = [
 export const ResultCalculate = ({
   setCheckedYear,
   onCheckedYear,
+  calculationFormRef,
 }: {
   onCheckedYear: boolean;
   setCheckedYear: any;
+  calculationFormRef: any;
 }) => {
   return (
-    <div>
+    <div ref={calculationFormRef}>
       <div className="mt-6 md:p-6 md:border md:rounded-[16px]">
         <div className="md:flex md:justify-between md:items-center ">
           <div className="flex justify-between md:justify-start">
