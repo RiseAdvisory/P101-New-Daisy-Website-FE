@@ -5,6 +5,7 @@ export const pricingBusinessCard = [
     description:
       'Just starting out but want to build a solid customer base & brand and while growing their presence as a professional service provider',
     price: '50',
+    priceYear: '42',
     optionPlus: '',
     options: [
       '3 User / Calendar',
@@ -32,6 +33,7 @@ export const pricingBusinessCard = [
     description:
       'Ideal for Solo Experienced Professionals that want to provide an exceptional experience to their customers',
     price: '150',
+    priceYear: '128',
     optionPlus: 'Basic',
     options: [
       '8 User / Calendar',
@@ -53,7 +55,8 @@ export const pricingBusinessCard = [
     subTitle: '14 days try period',
     description:
       'Businesses with multiple branches or locations that are excellence oriented in service and customer service',
-    price: '100',
+    price: '250',
+    priceYear: '208',
     optionPlus: 'Growth',
     options: [
       '12 User / Calendar',

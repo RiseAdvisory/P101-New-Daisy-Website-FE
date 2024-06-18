@@ -36,7 +36,7 @@ const Customer = () => {
           imageClassName=" absolute w-[300px] h-[300px] bottom-0  -translate-x-1/2 left-[50%]"
         />
         <div className="px-4 bg-primary">
-        <Separator className="bg-[#586968]  border-none" />
+          <Separator className="bg-[#586968]  border-none" />
         </div>
         <NoScrollingAnimationBusiness
           imageBg={leaf}
@@ -46,7 +46,6 @@ const Customer = () => {
           title="Rate & Earn Points"
           imageClassName=" absolute w-[230px] h-[320px] top-0 -translate-x-1/2 left-[50%]"
         />
-       
       </div>
       <OurPartnersSection />
       <GrowthSectionCustomer

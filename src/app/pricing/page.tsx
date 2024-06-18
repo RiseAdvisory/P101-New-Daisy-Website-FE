@@ -47,7 +47,10 @@ const Pricing = () => {
           Pay Annually
         </p>
       </div>
-      <GridPricingCard listChangePricing={currentPricing} />
+      <GridPricingCard
+        chechedAnnualy={checkedMonth}
+        listChangePricing={currentPricing}
+      />
       {activePricingPage === 'business' && <EnterPrise />}
     </div>
   );
