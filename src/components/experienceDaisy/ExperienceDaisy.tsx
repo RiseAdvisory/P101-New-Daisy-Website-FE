@@ -12,7 +12,7 @@ import doublePhoto from '../../assets/images/PHONEallheight.png';
 
 export const ExperienceDaisy = () => {
   return (
-    <div className="md:bg-custom-gradient md:mt-[150px]">
+    <div className="md:bg-custom-gradient md:pt-[150px]">
       <div className="pt-[80px] px-4 md:flex relative bg-primary md:mx-[63px] md:rounded-[16px]">
         <div className="bg-primaryBtn w-full rounded-[9px] items-center flex justify-center overflow-hidden md:hidden relative">
           <Image
