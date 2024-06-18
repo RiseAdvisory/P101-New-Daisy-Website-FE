@@ -15,7 +15,7 @@ import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
 import { HomeIcon } from '@/assets/icons/homeIcon/HomeIcon';
-import { BreadcrumbWithCustomSeparator } from '../blogPage/blogPosts/BreadCrumbs';
+import { BreadcrumbMobile } from './breadCrumbMobile';
 
 export const MobileMenu = ({
   openMenu,
@@ -68,14 +68,15 @@ export const MobileMenu = ({
         ) : (
           <div>
             <div className="flex pb-6 mr-auto">
-              <HomeIcon className="mr-2" />
-              <BreadcrumbWithCustomSeparator
+              <BreadcrumbMobile
+                backmenu={onResources}
+                setBackMenu={setResources}
                 bredCrumbTitle="Resources"
                 bredCrumbDesription="Home"
               />
             </div>
             <ul>
-              {mobileListNavigation[2]?.submenu!.map(
+              {mobileListNavigation[3]?.submenu!.map(
                 (submenuItem, subIndex) => (
                   <li key={subIndex} className="pb-5">
                     <Link
