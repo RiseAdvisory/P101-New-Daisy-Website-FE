@@ -5,6 +5,7 @@ export interface PricingOption {
   price: string;
   optionPlus: string;
   options: string[];
+  priceYear: string;
 }
 export const pricingProfessionalCard = [
   {
@@ -13,6 +14,7 @@ export const pricingProfessionalCard = [
     description:
       'Just starting out but want to build a solid customer base & brand and while growing their presence as a professional service provider',
     price: 'Free',
+    priceYear: 'Free',
     optionPlus: '',
     options: [
       '1 User / Calendar',
@@ -41,6 +43,7 @@ export const pricingProfessionalCard = [
     description:
       'Ideal for Solo Experienced Professionals that want to provide an exceptional experience to their customers',
     price: '50',
+    priceYear: '500',
     optionPlus: 'Starter',
     options: [
       '1 User / Calendar',
@@ -66,6 +69,7 @@ export const pricingProfessionalCard = [
     description:
       'Ideal for Solo Experienced Professionals that want to provide an exceptional experience to their customers',
     price: '100',
+    priceYear: '1000',
     optionPlus: 'Professional',
     options: [
       '1 User / Calendar',

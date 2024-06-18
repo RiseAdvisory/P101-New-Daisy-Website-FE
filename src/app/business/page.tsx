@@ -19,7 +19,7 @@ import { Separator } from '@/components/ui/separator';
 
 const Business = () => {
   return (
-    <div className="w-full ">
+    <div className="w-full bg-primary">
       <BusinessHero />
       {/* <LockerComponent data={dataLocker} /> */}
       <div className="md:hidden ">
@@ -31,7 +31,7 @@ const Business = () => {
           title="Marketing Tools To Attract New & Retain Current Customers"
           imageClassName=" absolute w-[80%]   top-[50%] -translate-y-1/2 right-0"
         />
-        <div className="px-4 bg-primary">
+        <div className="mx-4 bg-primary">
           <Separator className="bg-[#586968]" />
         </div>
         <NoScrollingAnimationBusiness

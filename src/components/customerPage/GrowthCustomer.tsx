@@ -14,7 +14,7 @@ export const GrowthSectionCustomer = ({
 }) => {
   return (
     <>
-      <div className=" px-4 md:flex md:bg-white bg-[#EAECEC91]">
+      <div className=" px-4 md:flex bg-[white]/90 md:bg-white">
         <div className="md:flex md:justify-between md:bg-[#D5D9D9] md:mx-[64px] md:mb-[164px] rounded-[16px] relative">
           <Image
             className="hidden md:block absolute top-0 left-[50%] -translate-x-1/2"

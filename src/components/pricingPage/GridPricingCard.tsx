@@ -3,8 +3,10 @@ import { ItemCardPricing } from './ItemPricing';
 
 export const GridPricingCard = ({
   listChangePricing,
+  chechedAnnualy,
 }: {
   listChangePricing: PricingOption[];
+  chechedAnnualy: boolean;
 }) => {
   return (
     <>
@@ -13,6 +15,7 @@ export const GridPricingCard = ({
         {listChangePricing.map((item, index: number) => {
           return (
             <ItemCardPricing
+              chechedAnnualy={chechedAnnualy}
               key={index}
               description={item.description}
               price={item.price}
@@ -20,6 +23,7 @@ export const GridPricingCard = ({
               title={item.title}
               options={item.options}
               optionPlus={item.optionPlus}
+              priceYear={item.priceYear}
             />
           );
         })}

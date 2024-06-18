@@ -9,10 +9,11 @@ import image2 from '../../assets/images/doublePhone.png';
 import image3 from '../../assets/images/PhoneCustomerdown.png';
 import { GrowthSectionCustomer } from '@/components/customerPage/GrowthCustomer';
 import { OurPartnersSection } from '@/components/ourPartnters/OurPartnersSection';
+import { Separator } from '@/components/ui/separator';
 
 const Customer = () => {
   return (
-    <div className="w-full">
+    <div className="w-full bg-primary">
       <CustomerHero />
       <div className="md:hidden">
         <NoScrollingAnimationBusiness
@@ -23,6 +24,9 @@ const Customer = () => {
           title="Enjoy Cashback Magic"
           imageClassName=" absolute w-[220px] h-[320px] right-[50%] translate-x-1/2 top-0"
         />
+        <div className="px-4 bg-primary">
+          <Separator className="bg-[#586968]" />
+        </div>
         <NoScrollingAnimationBusiness
           imageBg={leaf}
           imageClassNameBg="absolute -top-[70px] -left-[120px] w-[200px] h-[200px] rotate-180"
@@ -31,6 +35,9 @@ const Customer = () => {
           title="Manage Your Booking"
           imageClassName=" absolute w-[300px] h-[300px] bottom-0  -translate-x-1/2 left-[50%]"
         />
+        <div className="px-4 bg-primary">
+          <Separator className="bg-[#586968]  border-none" />
+        </div>
         <NoScrollingAnimationBusiness
           imageBg={leaf}
           imageClassNameBg="absolute -bottom-[50px] -right-[100px] w-[200px] h-[200px] rotate-[20deg]"

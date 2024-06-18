@@ -12,7 +12,7 @@ export const GrowthSection = ({
 }) => {
   return (
     <>
-      <div className=" px-4 md:flex md:bg-[#F8F5F3]">
+      <div className=" px-4 md:flex md:bg-[#F8F5F3] bg-white">
         <div className="md:flex md:justify-between md:bg-white md:mx-[64px] md:mb-[164px] rounded-[16px]">
           <div className="md:w-[50%] md:px-20 md:ml-[100px] md:pb-[200px]">
             <h5 className="text-[#A67F6B] pt-20 text-base leading-6">
