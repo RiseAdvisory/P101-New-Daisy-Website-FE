@@ -25,11 +25,16 @@ export const ItemCardPricing = ({
   priceYear: string;
 }) => {
   const [showAll, setShowAll] = useState(false);
-  console.log(title);
+
   const currentPrice = !chechedAnnualy ? price : priceYear;
   return (
     <>
-      <li className="flex bg-white flex-col justify-center items-center text-center first:mt-0 mt-10 md:mt-0 pt-10 md:pt-10 border rounded-[16px] ">
+      <li className="flex bg-white flex-col justify-center items-center text-center first:mt-0 mt-10 md:mt-0 pt-10 md:pt-10 border rounded-[16px] relative overflow-hidden first-border-[2px] first:border-[#A67F6B]">
+        {title === 'Starter' && (
+          <p className="absolute first:block hidden top-0 left-0 right-0 text-center text-[#A67F6B] bg-[#EDE5E1]">
+            Recommended
+          </p>
+        )}
         <div
           className="relative bg-primary -top-[81px]"
           style={{ width: 'calc(100% + 34px)' }}
@@ -48,7 +53,9 @@ export const ItemCardPricing = ({
           <div className="bg-[#F8F5F3] rounded-[8px] p-4 w-full mt-4">
             <div className="p-4 rounded-[8px] border flex flex-col justify-center text-center bg-white">
               <h2 className="font-bold text-[#242424] text-[32px] leading-10">
-                {currentPrice && currentPrice !== 'Free' ? `$ ${currentPrice}` : "Free"}
+                {currentPrice && currentPrice !== 'Free'
+                  ? `$ ${currentPrice}`
+                  : 'Free'}
               </h2>
               <p className="font-montserrat text-[#242424] text-[12px] leading-[18px]">
                 per month / billed monthly
