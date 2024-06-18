@@ -64,6 +64,7 @@ export const Header = () => {
                 setState={setChangePage}
                 list={optionsToogle}
                 classNames="text-center"
+                link={true}
               />
               <DropDownMobileHeader
                 state={changeLang}

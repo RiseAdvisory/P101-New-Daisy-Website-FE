@@ -28,13 +28,11 @@ export const CarouselCompany = () => {
         {parntersImages.map((item, index) => (
           <CarouselItem
             key={index}
-            className="basis-1/3 md:basis-1/6 items-center flex justify-center"
+            className="basis-1/3 md:basis-1/6 items-center flex justify-center "
           >
-            <Image
-              src={item.img}
-              alt="partners"
-              className="max-w-none w-[90px] h-[90px] md:w-[120px] md:h-[120px]"
-            />
+            <div className="border border-[#E8E9E9] rounded-[16px]  w-[90px] h-[90px] md:w-[120px] md:h-[120px] overflow-hidden">
+              <Image src={item.img} alt="partners" className="" />
+            </div>
           </CarouselItem>
         ))}
       </CarouselContent>

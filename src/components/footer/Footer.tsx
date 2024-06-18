@@ -19,7 +19,7 @@ export const Footer = () => {
         <LogoIconsS />
       </Link>
       <nav className=" justify-center items-center self-center ">
-        <ul className="flex flex-col items-center justify-center font-montserrat text-[#FFFFFF] md:flex-row md:gap-x-8">
+        <ul className="flex flex-col items-center justify-center font-montserrat text-[#FFFFFF]/80 md:flex-row md:gap-x-8">
           {navigationList.map((item, index) => {
             return (
               <Link

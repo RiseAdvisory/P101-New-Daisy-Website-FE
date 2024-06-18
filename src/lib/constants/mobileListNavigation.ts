@@ -13,7 +13,7 @@ export const mobileListNavigation = [
       {
         title: 'Customer testimonials',
         subtitle: 'Lorem ipsum dolor sit dolor ',
-        nav: '/resources/customer',
+        nav: '/resources/testimonials',
       },
       {
         title: 'Tutorials & Guides',

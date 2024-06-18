@@ -41,7 +41,7 @@ const formSchema = z.object({
   acceptconditions: z.boolean().default(false).optional(),
 });
 
-export const FormContacts = () => {
+export const FormContacts = ({ style }: { style?: string }) => {
   const [activeField, setActiveField] = useState<string | null>(null);
   const [countryCode, setCountryCode] = useState('+965');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -77,7 +77,7 @@ export const FormContacts = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className=" bg-white p-6 rounded-xl -translate-y-[320px] md:mx-auto md:w-[860px] mx-4 border"
+        className={` bg-white p-6 rounded-xl md:mx-auto md:w-[860px] mx-4 border border-[#E8E9E9] ${style}`}
       >
         <div className="md:flex md:justify-between">
           <FormField
@@ -94,7 +94,7 @@ export const FormContacts = () => {
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B]"
+                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                     placeholder="First name"
                     {...field}
                     onFocus={() => handleFocus('firstname')}
@@ -119,7 +119,7 @@ export const FormContacts = () => {
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B]"
+                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                     placeholder="Last name"
                     {...field}
                     onFocus={() => handleFocus('lastname')}
@@ -147,7 +147,7 @@ export const FormContacts = () => {
                 <FormControl>
                   <Input
                     type="email"
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B]"
+                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                     placeholder="name@example.com"
                     {...field}
                     onFocus={() => handleFocus('email')}
@@ -177,7 +177,7 @@ export const FormContacts = () => {
                       value={countryCode}
                       onValueChange={(value) => setCountryCode(value)}
                     >
-                      <SelectTrigger className="w-32 md:ml-[15px] flex">
+                      <SelectTrigger className="w-32 md:ml-[15px] flex border-[#E8E9E9] bg-[#F9FBFB]">
                         <SelectValue placeholder="+965" />
                       </SelectTrigger>
                       <SelectContent>
@@ -195,7 +195,7 @@ export const FormContacts = () => {
                   </FormControl>
                   <FormControl>
                     <Input
-                      className="focus:text-[#A67F6B] border focus:border-[#A67F6B]"
+                      className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                       type="number"
                       placeholder="00000000"
                       value={phoneNumber}
@@ -224,7 +224,7 @@ export const FormContacts = () => {
               </FormLabel>
               <FormControl>
                 <Textarea
-                  className="focus:text-[#A67F6B] border focus:border-[#A67F6B] h-[155px] resize-none"
+                  className="focus:text-[#A67F6B] border focus:border-[#A67F6B] h-[155px] resize-none border-[#E8E9E9] bg-[#F9FBFB]"
                   {...field}
                   onFocus={() => handleFocus('message')}
                   onBlur={handleBlur}
