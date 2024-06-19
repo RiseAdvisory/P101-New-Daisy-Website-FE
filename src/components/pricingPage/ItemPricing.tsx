@@ -4,6 +4,7 @@ import { Button } from '../ui/button';
 import { PlusIcon } from 'lucide-react';
 import { OptionPricing } from '@/assets/icons/optionPricing/optionPricing';
 import { OtherOptionPricing } from './OtherOptionPricing';
+import { cn } from '@/lib/utils';
 
 export const ItemCardPricing = ({
   title,
@@ -14,6 +15,7 @@ export const ItemCardPricing = ({
   optionPlus,
   chechedAnnualy,
   priceYear,
+  activePricingPage,
 }: {
   title: string;
   subtitle: string;
@@ -23,14 +25,16 @@ export const ItemCardPricing = ({
   optionPlus: string;
   chechedAnnualy: boolean;
   priceYear: string;
+  activePricingPage: string;
 }) => {
   const [showAll, setShowAll] = useState(false);
 
   const currentPrice = !chechedAnnualy ? price : priceYear;
+  const isRecommended = title === 'Starter' || title === 'Basic';
   return (
     <>
       <li className="flex bg-white flex-col justify-center items-center text-center first:mt-0 mt-10 md:mt-0 pt-10 md:pt-10 border rounded-[16px] relative overflow-hidden first-border-[2px] first:border-[#A67F6B]">
-        {title === 'Starter' && (
+        {isRecommended && (
           <p className="absolute first:block hidden top-0 left-0 right-0 text-center text-[#A67F6B] bg-[#EDE5E1]">
             Recommended
           </p>
@@ -58,7 +62,18 @@ export const ItemCardPricing = ({
                   : 'Free'}
               </h2>
               <p className="font-montserrat text-[#242424] text-[12px] leading-[18px]">
-                per month / billed monthly
+                per month / billed {chechedAnnualy ? 'annualy' : 'monthly'}
+                <span
+                  className={cn(
+                    'bg-[#E9ECF7] text-[#2543AD] rounded-[16px] px-[7px] py-[3px] hidden text-[12px] leading-[12px] font-inter font-medium w-fit ml-1',
+                    {
+                      inline:
+                        chechedAnnualy && activePricingPage === 'business',
+                    },
+                  )}
+                >
+                  17% discount
+                </span>
               </p>
               <Button className="font-montserrat font-semibold mt-4 bg-white text-primary hover:text-white hover:bg-primary border border-primary">
                 Get Started Now

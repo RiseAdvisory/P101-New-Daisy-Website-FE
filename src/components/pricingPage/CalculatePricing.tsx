@@ -5,7 +5,7 @@ import { Calculater } from './Calculater';
 import { ResultCalculate } from './ResultCalculate';
 import { cn } from '@/lib/utils';
 
-export const CalculatePricing = () => {
+export const CalculatePricing = ({ onScrollToGrid }: any) => {
   const [homeService, setHomeService] = useState(false);
   const [onboarding, setOnboarding] = useState(false);
   const [conciergeService, setConciergeService] = useState(false);
@@ -82,6 +82,7 @@ export const CalculatePricing = () => {
             calculationFormRef={calculationFormRef}
             onCheckedYear={onCheckedYear}
             setCheckedYear={setCheckedYear}
+            onScrollToGrid={onScrollToGrid}
           />
         )}
 

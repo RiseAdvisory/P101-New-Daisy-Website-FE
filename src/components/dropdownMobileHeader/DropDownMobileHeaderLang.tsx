@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { ArrowDownIcon } from '@/assets/icons/arrowDown/ArrowDownIcon';
 import {
   DropdownMenu,
@@ -8,7 +8,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 interface PropsDropDownHeader {
   state: string;
@@ -19,7 +19,7 @@ interface PropsDropDownHeader {
   link?: boolean;
 }
 
-export const DropDownMobileHeader = ({
+export const DropDownMobileHeaderLang = ({
   state,
   setState,
   list,
@@ -29,22 +29,10 @@ export const DropDownMobileHeader = ({
 }: PropsDropDownHeader) => {
   const [open, setOpen] = useState(false);
   const router = useRouter();
-  const [active, setActive] = useState('');
-  const [stateActive, setStateActive] = useState('');
-  const pathname = usePathname();
   const handleSelect = (label: string) => {
     setState(label);
     setOpen(false);
   };
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const storedPath = localStorage.getItem('activePage');
-      if (storedPath) setStateActive(storedPath);
-    }
-    if (typeof window !== 'undefined' && active) {
-      localStorage.setItem('activePage', active);
-    }
-  }, [active, setActive]);
 
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
@@ -74,13 +62,6 @@ export const DropDownMobileHeader = ({
               onClick={() => {
                 setOpen(false);
                 if (link) router.push(item.path);
-
-                if (item.path === '/features/business') setActive('/business');
-
-                if (item.path === '/features/customer') setActive('/customer');
-
-                if (item.path === '/features/professional')
-                  setActive('/professional');
               }}
             >
               {item.label}
