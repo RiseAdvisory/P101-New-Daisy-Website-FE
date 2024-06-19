@@ -7,8 +7,8 @@ export const headerNavigationList = [
   { title: 'Contact', nav: '/contact' },
 ];
 export const optionsToogle = [
-  { label: 'Customer', path: '/customer' },
   { label: 'Business', path: '/business' },
+  { label: 'Customer', path: '/customer' },
   { label: 'Professional', path: '/professional' },
 ];
 export const optionsToogleFeatures = [

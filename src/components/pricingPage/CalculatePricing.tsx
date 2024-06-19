@@ -5,7 +5,7 @@ import { Calculater } from './Calculater';
 import { ResultCalculate } from './ResultCalculate';
 import { cn } from '@/lib/utils';
 
-export const CalculatePricing = ({ onScrollToGrid }: any) => {
+export const CalculatePricing = ({ onScrollToGrid, setIsRecommended }: any) => {
   const [homeService, setHomeService] = useState(false);
   const [onboarding, setOnboarding] = useState(false);
   const [conciergeService, setConciergeService] = useState(false);
@@ -55,6 +55,7 @@ export const CalculatePricing = ({ onScrollToGrid }: any) => {
           <Button
             onClick={() => {
               setOnCalculates(!onCalculates);
+              setIsRecommended((prev: boolean) => !prev);
             }}
             className="hidden md:inline-flex font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary text-center"
           >
@@ -106,6 +107,7 @@ export const CalculatePricing = ({ onScrollToGrid }: any) => {
               onResetCalculation();
             }
             setOnCalculates(!onCalculates);
+            setIsRecommended((prev: boolean) => !prev);
           }}
           className="inline-flex md:hidden w-full p-6  font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary"
         >

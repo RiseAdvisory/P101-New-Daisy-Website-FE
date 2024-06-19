@@ -12,12 +12,14 @@ export const PricingHero = ({
   styleSection,
   setActivePricingPage,
   onScrollToGrid,
+  setIsRecommended,
 }: {
   description: string;
   heightScreen: boolean;
   styleSection?: string;
   setActivePricingPage: Dispatch<SetStateAction<string>>;
   onScrollToGrid: any;
+  setIsRecommended: any;
 }) => {
   return (
     <div
@@ -43,7 +45,7 @@ export const PricingHero = ({
         />
       </div>
       <div className=" md:px-16 w-full mt-[47px]">
-        <CalculatePricing onScrollToGrid={onScrollToGrid} />
+        <CalculatePricing onScrollToGrid={onScrollToGrid} setIsRecommended={setIsRecommended} />
       </div>
     </div>
   );

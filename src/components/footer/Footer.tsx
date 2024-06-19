@@ -15,7 +15,7 @@ export const Footer = () => {
   const isVisibleAppBtn = path.includes('get-the-app');
   return (
     <footer className="w-full bg-primary px-4 py-[124px] md:py-14 flex flex-col justify-center items-center">
-      <Link href={'/'} className="mb-6">
+      <Link href={'/'} className="mb-6 opacity-60">
         <LogoIconsS />
       </Link>
       <nav className=" justify-center items-center self-center ">

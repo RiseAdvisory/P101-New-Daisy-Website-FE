@@ -5,7 +5,7 @@ import { Button } from '../ui/button';
 
 export const EnterPrise = () => {
   return (
-    <div className="bg-primary rounded-[16px] mx-16 mb-[180px] hidden md:flex">
+    <div className="bg-primary rounded-[16px] mx-16  hidden md:flex">
       <div className="pt-20 pl-[95px]">
         <div className="flex  items-center">
           <h2 className="text-white font-bold text-[32px] leading-10">
