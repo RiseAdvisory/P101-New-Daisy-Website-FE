@@ -156,3 +156,8 @@ h5 {
     width: calc(100% + 48px);
   }
 }
+
+html,
+body {
+  margin: 0;
+}

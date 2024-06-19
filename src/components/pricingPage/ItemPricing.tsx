@@ -16,6 +16,7 @@ export const ItemCardPricing = ({
   chechedAnnualy,
   priceYear,
   activePricingPage,
+  isRescomennded,
 }: {
   title: string;
   subtitle: string;
@@ -26,6 +27,7 @@ export const ItemCardPricing = ({
   chechedAnnualy: boolean;
   priceYear: string;
   activePricingPage: string;
+  isRescomennded: boolean;
 }) => {
   const [showAll, setShowAll] = useState(false);
 
@@ -33,8 +35,13 @@ export const ItemCardPricing = ({
   const isRecommended = title === 'Starter' || title === 'Basic';
   return (
     <>
-      <li className="flex bg-white flex-col justify-center items-center text-center first:mt-0 mt-10 md:mt-0 pt-10 md:pt-10 border rounded-[16px] relative overflow-hidden first-border-[2px] first:border-[#A67F6B]">
-        {isRecommended && (
+      <li
+        className={cn(
+          'flex bg-white flex-col justify-center items-center text-center first:mt-0 mt-10 md:mt-0 pt-10 md:pt-10 border rounded-[16px] relative overflow-hidden first-border-[2px] ',
+          { 'first:border-[#A67F6B]': isRecommended && isRescomennded },
+        )}
+      >
+        {isRecommended && isRescomennded && (
           <p className="absolute first:block hidden top-0 left-0 right-0 text-center text-[#A67F6B] bg-[#EDE5E1]">
             Recommended
           </p>
@@ -65,7 +72,7 @@ export const ItemCardPricing = ({
                 per month / billed {chechedAnnualy ? 'annualy' : 'monthly'}
                 <span
                   className={cn(
-                    'bg-[#E9ECF7] text-[#2543AD] rounded-[16px] px-[7px] py-[3px] hidden text-[12px] leading-[12px] font-inter font-medium w-fit ml-1',
+                    'bg-[#E9ECF7] text-[#2543AD] rounded-[16px] px-[7px] py-[3px] hidden text-[12px] leading-[12px] font-inter font-medium w-fit ml-1 text-nowrap',
                     {
                       inline:
                         chechedAnnualy && activePricingPage === 'business',

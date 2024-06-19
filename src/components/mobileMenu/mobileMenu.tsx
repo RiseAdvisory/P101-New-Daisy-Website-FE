@@ -14,7 +14,6 @@ import { ArrowRightIcon } from '@/assets/icons/arrowRightIcon/ArrowRightIcon';
 import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
-import { HomeIcon } from '@/assets/icons/homeIcon/HomeIcon';
 import { BreadcrumbMobile } from './breadCrumbMobile';
 
 export const MobileMenu = ({
