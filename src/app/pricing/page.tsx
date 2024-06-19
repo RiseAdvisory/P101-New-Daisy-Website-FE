@@ -7,7 +7,7 @@ import { Switch } from '@/components/ui/switch';
 import { pricingBusinessCard } from '@/lib/constants/pricing/pricingBusiness';
 import { pricingProfessionalCard } from '@/lib/constants/pricing/prisingProfessional';
 import { cn } from '@/lib/utils';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 const Pricing = () => {
   const [activePricingPage, setActivePricingPage] = useState('professional');
@@ -16,6 +16,13 @@ const Pricing = () => {
     activePricingPage === 'professional'
       ? pricingProfessionalCard
       : pricingBusinessCard;
+  const gridCardRef = useRef<HTMLDivElement>(null);
+
+  const handleScrollToGrid = () => {
+    if (gridCardRef.current) {
+      gridCardRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className="bg-primary">
       <PricingHero
@@ -23,6 +30,7 @@ const Pricing = () => {
         description="Straightforward pricing that grows with you"
         heightScreen={false}
         styleSection="pb-[100px]"
+        onScrollToGrid={handleScrollToGrid}
       />
       <div className="px-4 md:px-20  bg-primary">
         <Separator />
@@ -47,10 +55,13 @@ const Pricing = () => {
           Pay Annually
         </p>
       </div>
-      <GridPricingCard
-        chechedAnnualy={checkedMonth}
-        listChangePricing={currentPricing}
-      />
+      <div ref={gridCardRef}>
+        <GridPricingCard
+          activePricingPage={activePricingPage}
+          chechedAnnualy={checkedMonth}
+          listChangePricing={currentPricing}
+        />
+      </div>
       {activePricingPage === 'business' && <EnterPrise />}
     </div>
   );

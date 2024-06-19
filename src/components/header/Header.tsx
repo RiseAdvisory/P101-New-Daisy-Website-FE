@@ -8,12 +8,14 @@ import {
   changeLanguage,
   headerNavigationList,
   optionsToogle,
+  optionsToogleFeatures,
 } from '@/lib/constants/headernavigationList';
 import { DropDownMobileHeader } from '../dropdownMobileHeader/DropdownMobileHeader';
 import { usePathname } from 'next/navigation';
 import { DropdownResources } from '../blogPage/DropDownResources';
 import { MobileMenu } from '../mobileMenu/mobileMenu';
 import ToggleButton from '../toogleHeader/ToogleHeader';
+import { DropDownMobileHeaderLang } from '../dropdownMobileHeader/DropDownMobileHeaderLang';
 
 export const Header = () => {
   const path = usePathname();
@@ -50,9 +52,13 @@ export const Header = () => {
     document.body.setAttribute('dir', newDir);
   };
 
+  const navListFeatures = path.includes('features')
+    ? optionsToogleFeatures
+    : optionsToogle;
+
   return (
     <header className="w-full rtl:md:  bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16">
-      <Link href={'/'}>
+      <Link href={'/'} onClick={() => setChangePage('Business')}>
         <LogoIconsS />
       </Link>
       <nav className="flex justify-end items-center self-center md:justify-between w-full">
@@ -62,11 +68,11 @@ export const Header = () => {
               <DropDownMobileHeader
                 state={changePage}
                 setState={setChangePage}
-                list={optionsToogle}
+                list={navListFeatures}
                 classNames="text-center"
                 link={true}
               />
-              <DropDownMobileHeader
+              <DropDownMobileHeaderLang
                 state={changeLang}
                 setState={setChangeLang}
                 list={changeLanguage}

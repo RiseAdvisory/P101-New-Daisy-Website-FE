@@ -15,10 +15,12 @@ export const ResultCalculate = ({
   setCheckedYear,
   onCheckedYear,
   calculationFormRef,
+  onScrollToGrid,
 }: {
   onCheckedYear: boolean;
   setCheckedYear: any;
   calculationFormRef: any;
+  onScrollToGrid: any;
 }) => {
   return (
     <div ref={calculationFormRef}>
@@ -32,7 +34,10 @@ export const ResultCalculate = ({
               14 days try period
             </p>
           </div>
-          <Button className="font-montserrat font-semibold bg-transparent border-none text-[#2543AD] pl-0">
+          <Button
+            className="font-montserrat font-semibold bg-transparent border-none text-[#2543AD] pl-0"
+            onClick={() => onScrollToGrid()}
+          >
             View details
           </Button>
         </div>
@@ -88,14 +93,6 @@ export const ResultCalculate = ({
           </h2>
           <div className="md:ml-auto">
             {' '}
-            <p
-              className={cn(
-                'bg-[#ECEEED] rounded-[16px] px-[7px] py-[3px] text-[#2E3B3A] text-[10px] leading-[10px] w-fit ml-auto',
-                { 'bg-[#E9ECF7] text-[#2543AD]': onCheckedYear },
-              )}
-            >
-              17% discount
-            </p>
             <div className="md:flex md:items-center">
               <div className="flex justify-between  md:mt-0 items-center">
                 <div

@@ -11,6 +11,11 @@ export const optionsToogle = [
   { label: 'Business', path: '/business' },
   { label: 'Professional', path: '/professional' },
 ];
+export const optionsToogleFeatures = [
+  { label: 'Business', path: '/features/business' },
+  { label: 'Customer', path: '/features/customer' },
+  { label: 'Professional', path: '/features/professional' },
+];
 
 export const changeLanguage = [
   { label: 'LTR', path: 'en' },
