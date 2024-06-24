@@ -24,6 +24,7 @@ import {
 import Separator from '../separator/Separator';
 import { KuwaitIcon } from '@/assets/icons/kuwaitIcon/KuwaitIcon';
 import { ToggleButtonForm } from './ToogleForm';
+import { countries } from 'country-data';
 
 const formSchema = z.object({
   fullname: z.string().min(5, {
@@ -55,6 +56,7 @@ export const ProfileForm = () => {
   const form = useForm({
     resolver: zodResolver(formSchema),
   });
+  const usedCountryCodes = new Set();
 
   const onSubmit = (data: any) => {
     const completePhoneNumber = countryCode + phoneNumber;
@@ -69,6 +71,7 @@ export const ProfileForm = () => {
   const handleBlur = () => {
     setActiveField(null);
   };
+  
 
   return (
     <Form {...form}>
@@ -214,18 +217,33 @@ export const ProfileForm = () => {
                       onValueChange={(value) => setCountryCode(value)}
                     >
                       <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB]">
-                        <SelectValue placeholder="+965" />
+                        <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="+965">
-                          <span className="flex items-center justify-center">
-                            <KuwaitIcon />
-                            +965
-                          </span>
-                        </SelectItem>
-                        <SelectItem value="+1">+1</SelectItem>
-                        <SelectItem value="+44">+44</SelectItem>
-                        {/* Add other country codes as needed */}
+                        {countries.all.map((item, i) => {
+                          const countryCode = item.countryCallingCodes[0];
+                          if (
+                            !item.emoji ||
+                            !countryCode ||
+                            usedCountryCodes.has(countryCode)
+                          ) {
+                            return null;
+                          }
+
+                          usedCountryCodes.add(countryCode);
+
+                          return (
+                            <SelectItem
+                              key={`${countryCode}-${item.name}`}
+                              value={countryCode}
+                            >
+                              <span className="flex items-center justify-center text-nowrap">
+                                <span>{item.emoji} </span>
+                                {countryCode}
+                              </span>
+                            </SelectItem>
+                          );
+                        })}
                       </SelectContent>
                     </Select>
                   </FormControl>

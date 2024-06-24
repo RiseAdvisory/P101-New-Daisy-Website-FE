@@ -14,32 +14,59 @@ import { NoScrollingAnimationBusiness } from '@/components/noAnimationBusiness/N
 import leaf from '../../assets/images/LeafBg.png';
 import { Separator } from '@/components/ui/separator';
 import { ProfessionalHero } from '@/components/professional/ProfessionalHero';
+import axiosInstance from '@/helpers/axiosConfig';
+import { useEffect, useState } from 'react';
+import ScrollSection from '@/components/scrolling-section/ScrollingSect';
+import SwapStickyImage from '@/components/locker/lockerText';
 // import LockerComponent from '@/components/LockerScroll/LockerScroll';
 // import { dataLocker } from '@/lib/constants/LockerScroll';
 
 const Professional = () => {
+  const [heroProfessional, setHeroProfessional] = useState<any>();
+  const [growth, setGrowth] = useState<any>();
+
+  useEffect(() => {
+    (async function getProfessional() {
+      try {
+        const responseGrowth = await axiosInstance.get('/growth-professionals');
+        const response = await axiosInstance.get('/home-professionals');
+        setGrowth(responseGrowth?.data.data[0].attributes);
+        setHeroProfessional(response.data.data);
+      } catch (error) {
+        console.error(error);
+      }
+    })();
+  }, []);
   return (
     <div className="w-full bg-primary">
       <ProfessionalHero />
       {/* <LockerComponent data={dataLocker} /> */}
+      {/* <ScrollSection /> */}
+      {/* <SwapStickyImage /> */}
       <div className="md:hidden ">
         <NoScrollingAnimationBusiness
+          subtitle={heroProfessional?.[0].attributes.hero.title}
+          title={heroProfessional?.[0].attributes.hero.subtitle}
+          desription={heroProfessional?.[0].attributes.hero.description}
+          list={heroProfessional?.[0].attributes.hero.listSub}
           imageBg={leaf}
           imageClassNameBg="absolute -bottom-[40px] left-0 w-[340px] h-[320px] "
           image={image1}
           className="absolute w-full h-full bottom-0 left-10"
-          title="Marketing Tools To Attract New & Retain Current Customers"
           imageClassName=" absolute w-[80%]   top-[50%] -translate-y-1/2 right-0"
         />
         <div className="mx-4 bg-primary">
           <Separator className="bg-[#586968]" />
         </div>
         <NoScrollingAnimationBusiness
+          subtitle={heroProfessional?.[1].attributes.hero.title}
+          title={heroProfessional?.[1].attributes.hero.subtitle}
+          desription={heroProfessional?.[1].attributes.hero.description}
+          list={heroProfessional?.[1].attributes.hero.listSub}
           imageBg={leaf}
           imageClassNameBg="absolute -bottom-[40px] left-0 w-[300px] h-[300px]"
           image={image2}
           className="absolute w-full h-full bottom-0 left-10 "
-          title="Friendly Design, Works On Any Mobile Or Desktop device"
           imageClassName=" absolute w-[300px]  top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
           imageBgTwo={leaf}
           imageClassNameBgSecond="absolute -top-[70px] -right-[70px] w-[200px] h-[200px] rotate-180 scale-x-[-1]"
@@ -48,11 +75,14 @@ const Professional = () => {
           <Separator className="bg-[#586968]" />
         </div>
         <NoScrollingAnimationBusiness
+          subtitle={heroProfessional?.[2].attributes.hero.title}
+          title={heroProfessional?.[2].attributes.hero.subtitle}
+          desription={heroProfessional?.[2].attributes.hero.description}
+          list={heroProfessional?.[2].attributes.hero.listSub}
           imageBg={leaf}
           imageClassNameBg="absolute -bottom-[100px] -right-[180px] w-[300px] h-[300px] rotate-[60deg]"
           image={image3}
           className="absolute w-full h-full bottom-0 left-10 "
-          title="Collect Payments, Sync Calendars And Automate Daily Processes  "
           imageClassName=" absolute w-[70%]  top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
           imageBgTwo={leaf}
           imageClassNameBgSecond="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
@@ -61,25 +91,23 @@ const Professional = () => {
           <Separator className="bg-[#586968]" />
         </div>
         <NoScrollingAnimationBusiness
+          subtitle={heroProfessional?.[0].attributes.hero.title}
+          title={heroProfessional?.[0].attributes.hero.subtitle}
+          desription={heroProfessional?.[0].attributes.hero.description}
+          list={heroProfessional?.[0].attributes.hero.listSub}
           imageBg={leaf}
           imageClassNameBg="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
           image={image4}
           className="absolute w-full h-full bottom-0 left-10 "
-          title="Performance Reports And Business Analytics To Help You Grow!"
           imageClassName=" absolute w-[60%]  bottom-0  -translate-x-1/2 left-[50%]"
         />
       </div>
       <OurPartnersSection />
-
       <DaysiMission />
-      <GrowthSection
-        title="Boost Occupancy, Attract New Clients, And Own Your Success"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor."
-      />
+      <GrowthSection title={growth?.title} description={growth?.description} />
       <JoinTheDaisy />
       <ExperienceDaisy />
-      <QASection />
+      <QASection pageType="Business" />
       <BecomeFormPartner />
     </div>
   );

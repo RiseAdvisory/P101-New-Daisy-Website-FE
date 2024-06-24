@@ -46,6 +46,7 @@ export const Header = () => {
     setActive('/resources');
     setIsResourcesDropdownOpen(!isResourcesDropdownOpen);
   };
+
   const toggleBodyDir = () => {
     const currentDir = document.body.getAttribute('dir') || 'rtl';
     const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
@@ -84,6 +85,14 @@ export const Header = () => {
         </div>
         <ul className="hidden md:flex md:gap-[10px] lg:gap-[20px] md:ml-[10px]  lg:ml-[55px] rtl:md:ml-0 rtl:md:mr-[55px] rtl:first:mr-4">
           {headerNavigationList.map((item, index) => {
+            let href = item.nav;
+
+            if (item.title === 'Home') {
+              const storedHref = localStorage.getItem('activePage');
+              if (storedHref) {
+                href = storedHref;
+              }
+            }
             if (item.title === 'Resources') {
               return (
                 <li
@@ -121,7 +130,7 @@ export const Header = () => {
                   }
                 >
                   <Link
-                    href={item.nav}
+                    href={href}
                     onClick={() => setActive(item.nav)}
                     className={clsx(
                       'font-openSans font-normal text-[#D5D9D9] leading-6 hover:text-white',

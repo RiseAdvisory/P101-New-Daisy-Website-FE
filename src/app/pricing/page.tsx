@@ -12,7 +12,7 @@ import { useRef, useState } from 'react';
 const Pricing = () => {
   const [activePricingPage, setActivePricingPage] = useState('professional');
   const [checkedMonth, setCheckedMonth] = useState(false);
-  const [isRescomennded, setIsRecommended] = useState(false)
+  const [isRescomennded, setIsRecommended] = useState(false);
   const currentPricing =
     activePricingPage === 'professional'
       ? pricingProfessionalCard
@@ -37,7 +37,7 @@ const Pricing = () => {
       <div className="px-4 md:px-20 bg-primary">
         <Separator />
       </div>
-      <div className='w-full bg-primary py-[44px]'>
+      <div className="w-full bg-primary py-[44px]">
         <div className="flex mx-auto w-fit bg-primary ">
           <p
             className={cn('font-normal text-[18px] leading-6 text-[#F8F5F3]', {

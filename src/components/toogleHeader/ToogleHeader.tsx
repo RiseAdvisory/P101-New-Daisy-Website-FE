@@ -34,9 +34,9 @@ const ToggleButton = ({ className }: { className?: string }) => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       let currentPath: string | undefined;
-      if (pathname.startsWith('/business')) currentPath = 'business';
-      if (pathname.startsWith('/customer')) currentPath = 'customer';
-      if (pathname.startsWith('/professional')) currentPath = 'professional';
+      if (pathname.startsWith('/business')) currentPath = '/business';
+      if (pathname.startsWith('/customer')) currentPath = '/customer';
+      if (pathname.startsWith('/professional')) currentPath = '/professional';
 
       if (currentPath) {
         localStorage.setItem('activePage', currentPath);
@@ -51,9 +51,9 @@ const ToggleButton = ({ className }: { className?: string }) => {
   }, [active]);
 
   const handleClick = (path: string) => {
-    if (path.startsWith('/features/business')) setActive('/business');
-    if (path.startsWith('/features/customer')) setActive('/customer');
-    if (path.startsWith('/features/professional')) setActive('/professional');
+    if (path.startsWith('/features/business')) setActive('business');
+    if (path.startsWith('/features/customer')) setActive('customer');
+    if (path.startsWith('/features/professional')) setActive('professional');
     setActive(path);
     if (typeof window !== 'undefined') {
       localStorage.setItem('activePage', path);
@@ -64,6 +64,13 @@ const ToggleButton = ({ className }: { className?: string }) => {
       router.push(path);
     }
   };
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const currentPath = localStorage.getItem('activePage');
+
+      if (currentPath) setActive(currentPath);
+    }
+  }, []);
 
   return (
     <div
