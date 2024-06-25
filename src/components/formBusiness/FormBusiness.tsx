@@ -22,46 +22,96 @@ import {
   SelectItem,
 } from '@/components/ui/select';
 import Separator from '../separator/Separator';
-import { KuwaitIcon } from '@/assets/icons/kuwaitIcon/KuwaitIcon';
 import { ToggleButtonForm } from './ToogleForm';
 import { countries } from 'country-data';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const formSchema = z.object({
-  fullname: z.string().min(5, {
-    message: 'Full Name must be at least 5 characters.',
-  }),
-  businessType: z.string().min(5, {
-    message: 'Business Type must be at least 5 characters.',
-  }),
+  name: z.string(),
+  business_type: z.string(),
   email: z
     .string()
     .min(5, {
       message: 'Email must be at least 5 characters.',
     })
     .email('This is not a valid email.'),
-  url: z.string().url(),
-  countryCode: z.string(),
-  phonenumber: z.string(),
-  numberoflocation: z.string(),
-  businessname: z.string(),
+  social_media: z.string().url(),
+  country_code: z.string(),
+  mobile: z.string(),
+  location_count: z.string(),
+  staff_count: z.string(),
+  business_name: z.string(),
 });
 
 export const ProfileForm = () => {
   const [activeField, setActiveField] = useState<string | null>(null);
-  const [countryCode, setCountryCode] = useState('+965');
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [businessType, setBusinessType] = useState(false);
+  const [country_code, setCountryCode] = useState('+965');
+  const [mobile, setPhoneNumber] = useState('');
+  const [business_type, setBusinessType] = useState(false);
   const [homeService, setHomeService] = useState(false);
+  const [isSubmit, setIsSubmit] = useState(false);
+  const [contentChange, setContentChange] = useState({
+    serviceProvidorType: 'Freelances',
+    homeVisits: 'No',
+  });
 
   const form = useForm({
     resolver: zodResolver(formSchema),
+    defaultValues: {
+      type: 'enquiry',
+      name: '',
+      business_type: '',
+      email: '',
+      social_media: '',
+      mobile: '',
+      location_count: '',
+      staff_count: '',
+      business_name: '',
+      content: '',
+      country_code: '+965',
+    },
   });
   const usedCountryCodes = new Set();
 
-  const onSubmit = (data: any) => {
-    const completePhoneNumber = countryCode + phoneNumber;
-    const updatedData = { ...data, phoneNumber: completePhoneNumber };
-    console.log(updatedData);
+  const onSubmit = async (data: any) => {
+    const completePhoneNumber = country_code + mobile;
+    const contentChangeString = JSON.stringify(contentChange);
+    const formData = {
+      ...data,
+      mobile: completePhoneNumber,
+      content: contentChangeString,
+      type: 'enquiry',
+    };
+    try {
+      setIsSubmit(true);
+      const response = await fetch(
+        `https://devapp.trythedaisy.com/api/v1/vendor/demo/enquiry`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        },
+      );
+
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+
+      const data = await response.json();
+      toast.success('Success Submitet!');
+      console.log('Form submitted', data);
+      setPhoneNumber('00000000');
+      form.reset();
+    } catch (error) {
+      setIsSubmit(false);
+      console.error('Error:', error);
+      toast.error('Error!');
+    } finally {
+      setIsSubmit(false);
+    }
   };
 
   const handleFocus = (fieldName: string) => {
@@ -71,7 +121,6 @@ export const ProfileForm = () => {
   const handleBlur = () => {
     setActiveField(null);
   };
-  
 
   return (
     <Form {...form}>
@@ -82,12 +131,12 @@ export const ProfileForm = () => {
         <div className="md:flex md:justify-between">
           <FormField
             control={form.control}
-            name="fullname"
+            name="name"
             render={({ field }) => (
               <FormItem className="md:w-full mt-6">
                 <FormLabel
                   className={`font-montserrat font-semibold text-base ${
-                    activeField === 'fullname' ? 'text-[#A67F6B]' : ''
+                    activeField === 'name' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
                   Full Name
@@ -97,7 +146,7 @@ export const ProfileForm = () => {
                     className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                     placeholder="Your name"
                     {...field}
-                    onFocus={() => handleFocus('fullname')}
+                    onFocus={() => handleFocus('name')}
                     onBlur={handleBlur}
                   />
                 </FormControl>
@@ -139,20 +188,22 @@ export const ProfileForm = () => {
           <ToggleButtonForm
             firstValue="Business"
             secondValue="Freelances"
-            homeService={businessType}
+            homeService={business_type}
             setHomeService={setBusinessType}
+            setContent={setContentChange}
+            name="serviceProvidorType"
           />
         </div>
-        {businessType && (
+        {business_type && (
           <div className="md:flex md:justify-between">
             <FormField
               control={form.control}
-              name="businessname"
+              name="business_name"
               render={({ field }) => (
                 <FormItem className="md:w-full mt-6 ">
                   <FormLabel
                     className={`font-montserrat font-semibold text-base ${
-                      activeField === 'businessname' ? 'text-[#A67F6B]' : ''
+                      activeField === ' business_name' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
                     Business Name
@@ -162,7 +213,7 @@ export const ProfileForm = () => {
                       className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                       placeholder="Spa Time"
                       {...field}
-                      onFocus={() => handleFocus('businessname')}
+                      onFocus={() => handleFocus('business_name')}
                       onBlur={handleBlur}
                     />
                   </FormControl>
@@ -172,12 +223,12 @@ export const ProfileForm = () => {
             />
             <FormField
               control={form.control}
-              name="businessType"
+              name="business_type"
               render={({ field }) => (
                 <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4">
                   <FormLabel
                     className={`font-montserrat font-semibold text-base ${
-                      activeField === 'businessType' ? 'text-[#A67F6B]' : ''
+                      activeField === 'business_type' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
                     Business Type
@@ -187,7 +238,7 @@ export const ProfileForm = () => {
                       className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                       placeholder="Spa"
                       {...field}
-                      onFocus={() => handleFocus('businessType')}
+                      onFocus={() => handleFocus('business_type')}
                       onBlur={handleBlur}
                     />
                   </FormControl>
@@ -200,12 +251,12 @@ export const ProfileForm = () => {
         <div className="md:flex md:justify-between">
           <FormField
             control={form.control}
-            name="phonenumber"
+            name="mobile"
             render={({ field }) => (
               <FormItem className="md:w-full mt-6">
                 <FormLabel
                   className={`font-montserrat font-semibold text-base ${
-                    activeField === 'phonenumber' ? 'text-[#A67F6B]' : ''
+                    activeField === 'mobile' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
                   Phone Number
@@ -213,7 +264,7 @@ export const ProfileForm = () => {
                 <div className="flex gap-x-2">
                   <FormControl>
                     <Select
-                      value={countryCode}
+                      value={country_code}
                       onValueChange={(value) => setCountryCode(value)}
                     >
                       <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB]">
@@ -221,25 +272,25 @@ export const ProfileForm = () => {
                       </SelectTrigger>
                       <SelectContent>
                         {countries.all.map((item, i) => {
-                          const countryCode = item.countryCallingCodes[0];
+                          const country_code = item.countryCallingCodes[0];
                           if (
                             !item.emoji ||
-                            !countryCode ||
-                            usedCountryCodes.has(countryCode)
+                            !country_code ||
+                            usedCountryCodes.has(country_code)
                           ) {
                             return null;
                           }
 
-                          usedCountryCodes.add(countryCode);
+                          usedCountryCodes.add(country_code);
 
                           return (
                             <SelectItem
-                              key={`${countryCode}-${item.name}`}
-                              value={countryCode}
+                              key={`${country_code}-${item.name}`}
+                              value={country_code}
                             >
                               <span className="flex items-center justify-center text-nowrap">
                                 <span>{item.emoji} </span>
-                                {countryCode}
+                                {country_code}
                               </span>
                             </SelectItem>
                           );
@@ -252,9 +303,9 @@ export const ProfileForm = () => {
                       className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                       type="number"
                       placeholder="00000000"
-                      value={phoneNumber}
+                      value={mobile}
                       onChange={(e) => setPhoneNumber(e.target.value)}
-                      onFocus={() => handleFocus('phoneNumber')}
+                      onFocus={() => handleFocus('mobile')}
                       onBlur={handleBlur}
                     />
                   </FormControl>
@@ -265,12 +316,12 @@ export const ProfileForm = () => {
           />
           <FormField
             control={form.control}
-            name="url"
+            name="social_media"
             render={({ field }) => (
               <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4">
                 <FormLabel
                   className={`font-montserrat font-semibold text-base ${
-                    activeField === 'url' ? 'text-[#A67F6B]' : ''
+                    activeField === 'social_media' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
                   Social Media Account
@@ -280,7 +331,7 @@ export const ProfileForm = () => {
                     className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                     placeholder="https:/www.youMediaAccount.com"
                     {...field}
-                    onFocus={() => handleFocus('url')}
+                    onFocus={() => handleFocus('social_media')}
                     onBlur={handleBlur}
                   />
                 </FormControl>
@@ -289,16 +340,16 @@ export const ProfileForm = () => {
             )}
           />
         </div>
-        {businessType && (
+        {business_type && (
           <div className="md:flex md:justify-between">
             <FormField
               control={form.control}
-              name="numberoflocation"
+              name="location_count"
               render={({ field }) => (
                 <FormItem className="md:w-full mt-6">
                   <FormLabel
                     className={`font-montserrat font-semibold text-base ${
-                      activeField === 'numberoflocation' ? 'text-[#A67F6B]' : ''
+                      activeField === 'location_count' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
                     Number of Locations
@@ -325,17 +376,15 @@ export const ProfileForm = () => {
 
             <FormField
               control={form.control}
-              name="numberoflocationName"
+              name="staff_count"
               render={({ field }) => (
                 <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4 ">
                   <FormLabel
                     className={`font-montserrat font-semibold text-base ${
-                      activeField === 'numberoflocationName'
-                        ? 'text-[#A67F6B]'
-                        : ''
+                      activeField === 'staff_count' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
-                    Number of Locations
+                    Number of Staff
                   </FormLabel>
                   <FormControl>
                     <Select onValueChange={field.onChange}>
@@ -367,17 +416,21 @@ export const ProfileForm = () => {
             secondValue="No"
             homeService={homeService}
             setHomeService={setHomeService}
+            setContent={setContentChange}
+            name="homeVisits"
           />
         </div>
 
         <Separator className="bg-[#E8E9E9] mt-6" />
         <Button
           type="submit"
+          disabled={isSubmit}
           className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary hover:text-white font-montserrat font-semibold md:h-auto"
         >
-          Send Message
+          {isSubmit ? 'Sending...' : 'Send Message'}
         </Button>
       </form>
+      <ToastContainer />
     </Form>
   );
 };

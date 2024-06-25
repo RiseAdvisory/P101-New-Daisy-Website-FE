@@ -1,20 +1,35 @@
+'use client';
 import { SupportSection } from '@/components/contactsPage/SupportSection';
 import { HeroPage } from '@/components/heroSection/HeroSection';
+import axiosInstance from '@/helpers/axiosConfig';
+import { useEffect, useState } from 'react';
 
 const Contacts = () => {
+  const [contacts, setContacts] = useState<any>();
+  console.log('🚀 ~ Contacts ~ contacts:', contacts);
+
+  useEffect(() => {
+    (async function getBusiness() {
+      try {
+        const response = await axiosInstance.get('/contact-pages');
+        setContacts(response.data.data[0].attributes);
+      } catch (error) {
+        console.error(error);
+      }
+    })();
+  }, []);
   return (
     <div className="w-full">
       <HeroPage
         hiddenArrow={true}
         visibleDescriiton={false}
-        title="Contact Us"
-        description="Get In Touch"
+        title={contacts?.heroTitle}
+        description={contacts?.heroSubtitle}
         heightScreen={false}
         styleSection="pb-[100px]"
-        secondDescription="Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? 
-        Let us know"
+        secondDescription={contacts?.heroDescription}
       />
-      <SupportSection />
+      <SupportSection contacts={contacts?.listContact} />
     </div>
   );
 };

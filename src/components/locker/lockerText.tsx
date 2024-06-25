@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './locker.module.css';
+import Image from 'next/image';
 
 const StickySection = () => {
   // useEffect(() => {
@@ -80,25 +81,33 @@ const StickySection = () => {
     <div className="locker">
       <div className="locker__image">
         <div className="locker__container">
-          <img
+          <Image
             className="image image--1 imgqqqq"
-            src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
+            src="https://Image-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
             alt="Image 1"
+            width={600}
+            height={600}
           />
-          <img
+          <Image
             className="image image--2 imgqqqq"
             src="https://assets.codepen.io/325536/tech.jpeg"
             alt="Image 2"
+            width={600}
+            height={600}
           />
-          <img
+          <Image
             className="image image--3 imgqqqq"
             src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
             alt="Image 3"
+            width={600}
+            height={600}
           />
-          <img
+          <Image
             className="image image--4 imgqqqq"
             src="https://assets.codepen.io/325536/tech-3.jpeg"
             alt="Image 4"
+            width={600}
+            height={600}
           />
         </div>
       </div>

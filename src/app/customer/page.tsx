@@ -24,7 +24,7 @@ const Customer = () => {
         const responseGrowth = await axiosInstance.get('/growth-customers');
         const response = await axiosInstance.get('/home-customers');
         setGrowth(responseGrowth?.data.data[0].attributes);
-        setHeroCustomer(response.data.data);
+        setHeroCustomer(response.data.data[0].attributes);
       } catch (error) {
         console.error(error);
       }
@@ -32,13 +32,16 @@ const Customer = () => {
   }, []);
   return (
     <div className="w-full bg-primary">
-      <CustomerHero />
+      <CustomerHero
+        title={heroCustomer?.title}
+        subtitle={heroCustomer?.subtitle}
+      />
       <div className="md:hidden">
         <NoScrollingAnimationBusiness
-          subtitle={heroCustomer?.[0].attributes.hero.title}
-          title={heroCustomer?.[0].attributes.hero.subtitle}
-          desription={heroCustomer?.[0].attributes.hero.description}
-          list={heroCustomer?.[0].attributes.hero.listSub}
+          subtitle={heroCustomer?.listPost[0].title}
+          title={heroCustomer?.listPost[0].subtitle}
+          desription={heroCustomer?.listPost[0].description}
+          list={heroCustomer?.listPost[0].listSub}
           imageBg={leaf}
           imageClassNameBg="absolute -bottom-[40px] left-0 w-[300px] h-[300px]"
           image={image1}
@@ -49,10 +52,10 @@ const Customer = () => {
           <Separator className="bg-[#586968]" />
         </div>
         <NoScrollingAnimationBusiness
-          subtitle={heroCustomer?.[1].attributes.hero.title}
-          title={heroCustomer?.[1].attributes.hero.subtitle}
-          desription={heroCustomer?.[1].attributes.hero.description}
-          list={heroCustomer?.[1].attributes.hero.listSub}
+          subtitle={heroCustomer?.listPost[1].title}
+          title={heroCustomer?.listPost[1].subtitle}
+          desription={heroCustomer?.listPost[1].description}
+          list={heroCustomer?.listPost[1].listSub}
           imageBg={leaf}
           imageClassNameBg="absolute -top-[70px] -left-[120px] w-[200px] h-[200px] rotate-180"
           image={image2}
@@ -63,10 +66,10 @@ const Customer = () => {
           <Separator className="bg-[#586968]  border-none" />
         </div>
         <NoScrollingAnimationBusiness
-          subtitle={heroCustomer?.[2].attributes.hero.title}
-          title={heroCustomer?.[2].attributes.hero.subtitle}
-          desription={heroCustomer?.[2].attributes.hero.description}
-          list={heroCustomer?.[2].attributes.hero.listSub}
+          subtitle={heroCustomer?.listPost[2].title}
+          title={heroCustomer?.listPost[2].subtitle}
+          desription={heroCustomer?.listPost[2].description}
+          list={heroCustomer?.listPost[2].listSub}
           imageBg={leaf}
           imageClassNameBg="absolute -bottom-[50px] -right-[100px] w-[200px] h-[200px] rotate-[20deg]"
           image={image3}

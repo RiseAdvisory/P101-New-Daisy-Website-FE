@@ -88,9 +88,11 @@ export const Header = () => {
             let href = item.nav;
 
             if (item.title === 'Home') {
-              const storedHref = localStorage.getItem('activePage');
-              if (storedHref) {
-                href = storedHref;
+              if (typeof window !== 'undefined') {
+                const storedHref = localStorage.getItem('activePage');
+                if (storedHref) {
+                  href = storedHref;
+                }
               }
             }
             if (item.title === 'Resources') {

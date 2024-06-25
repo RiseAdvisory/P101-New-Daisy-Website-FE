@@ -16,10 +16,6 @@ import leaf from '../../assets/images/LeafBg.png';
 import { Separator } from '@/components/ui/separator';
 import axiosInstance from '../../helpers/axiosConfig';
 import { useEffect, useState } from 'react';
-import TextSection from '@/components/locker/lockerText';
-// import Locker from '@/components/locker/lockerScroll';
-// import LockerComponent from '@/components/LockerScroll/LockerScroll';
-// import { dataLocker } from '@/lib/constants/LockerScroll';
 
 const Business = () => {
   const [heroBusiness, setHeroBusiness] = useState<any>();
@@ -30,7 +26,7 @@ const Business = () => {
       try {
         const responseGrowth = await axiosInstance.get('/growth-businesses');
         const response = await axiosInstance.get('/home-businesses');
-        setHeroBusiness(response.data.data);
+        setHeroBusiness(response.data.data[0].attributes);
         setGrowth(responseGrowth?.data.data[0].attributes);
       } catch (error) {
         console.error(error);
@@ -39,22 +35,21 @@ const Business = () => {
   }, []);
   return (
     <div className="w-full bg-primary">
-      {/* <div>
-        <Locker />
-      </div> */}
-      <BusinessHero />
-      {/* <LockerComponent data={dataLocker} /> */}
+      <BusinessHero
+        title={heroBusiness?.title}
+        subtitle={heroBusiness?.subtitle}
+      />
       <div className="md:hidden ">
         <NoScrollingAnimationBusiness
-          subtitle={heroBusiness?.[0].attributes.hero.title}
+          subtitle={heroBusiness?.listHeroPost[0].title}
           imageBg={leaf}
           imageClassNameBg="absolute -bottom-[40px] left-0 w-[340px] h-[320px] "
           image={image1}
           className="absolute w-full h-full bottom-0 left-10"
-          title={heroBusiness?.[0].attributes.hero.subtitle}
-          desription={heroBusiness?.[0].attributes.hero.description}
+          title={heroBusiness?.listHeroPost[0].subtitle}
+          desription={heroBusiness?.listHeroPost[0].description}
           imageClassName=" absolute w-[80%]   top-[50%] -translate-y-1/2 right-0"
-          list={heroBusiness?.[0].attributes.hero.listSub}
+          list={heroBusiness?.listHeroPost[0].listSub}
         />
         <div className="mx-4 bg-primary">
           <Separator className="bg-[#586968]" />
@@ -67,10 +62,10 @@ const Business = () => {
           imageClassName=" absolute w-[300px]  top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
           imageBgTwo={leaf}
           imageClassNameBgSecond="absolute -top-[70px] -right-[70px] w-[200px] h-[200px] rotate-180 scale-x-[-1]"
-          desription={heroBusiness?.[1].attributes.hero.description}
-          title={heroBusiness?.[1].attributes.hero.subtitle}
-          subtitle={heroBusiness?.[1].attributes.hero.title}
-          list={heroBusiness?.[1].attributes.hero.listSub}
+          desription={heroBusiness?.listHeroPost[1].description}
+          title={heroBusiness?.listHeroPost[1].subtitle}
+          subtitle={heroBusiness?.listHeroPost[1].title}
+          list={heroBusiness?.listHeroPost[1].listSub}
         />
         <div className="px-4 bg-primary">
           <Separator className="bg-[#586968]" />
@@ -83,30 +78,33 @@ const Business = () => {
           imageClassName=" absolute w-[70%]  top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
           imageBgTwo={leaf}
           imageClassNameBgSecond="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
-          desription={heroBusiness?.[2].attributes.hero.description}
-          title={heroBusiness?.[2].attributes.hero.subtitle}
-          subtitle={heroBusiness?.[2].attributes.hero.title}
-          list={heroBusiness?.[2].attributes.hero.listSub}
+          desription={heroBusiness?.listHeroPost[2].description}
+          title={heroBusiness?.listHeroPost[2].subtitle}
+          subtitle={heroBusiness?.listHeroPost[2].title}
+          list={heroBusiness?.listHeroPost[2].listSub}
         />
         <div className="px-4 bg-primary">
           <Separator className="bg-[#586968]" />
         </div>
         <NoScrollingAnimationBusiness
-          subtitle="features"
           imageBg={leaf}
           imageClassNameBg="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
           image={image4}
           className="absolute w-full h-full bottom-0 left-10 "
-          title="Performance Reports And Business Analytics To Help You Grow!"
           imageClassName=" absolute w-[60%]  bottom-0  -translate-x-1/2 left-[50%]"
-          desription={heroBusiness?.[0].attributes.hero.description}
-          list={heroBusiness?.[0].attributes.hero.listSub}
+          desription={heroBusiness?.listHeroPost[0].description}
+          title={heroBusiness?.listHeroPost[0].subtitle}
+          subtitle={heroBusiness?.listHeroPost[0].title}
+          list={heroBusiness?.listHeroPost[0].listSub}
         />
       </div>
       <OurPartnersSection />
-
       <DaysiMission />
-      <GrowthSection title={growth?.title} description={growth?.description} />
+      <GrowthSection
+        title={growth?.title}
+        description={growth?.description}
+        subtitle={growth?.subtitle}
+      />
       <JoinTheDaisy />
       <ExperienceDaisy />
       <QASection pageType="Business" />

@@ -1,14 +1,12 @@
 'use client';
 import Image from 'next/image';
 import { Button } from '../ui/button';
-
 import { useEffect, useState } from 'react';
 import axiosInstance from '@/helpers/axiosConfig';
 import Customers from '../../assets/images/JoinCustomers.png';
 import Vendors from '../../assets/images/JoinVendors.png';
 import Colleagues from '../../assets/images/JoinColleagues.png';
 
-//http://localhost:1337/api/about-values
 export const JoinTheDaisy = () => {
   const [joinDaisy, setJoinDaisy] = useState<any>();
 
@@ -27,10 +25,10 @@ export const JoinTheDaisy = () => {
     <div className="bg-white  px-4 md:px-16">
       <div className="flex flex-col mx-auto text-center pt-20 px-3">
         <h1 className="text-center text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
-          Join The Daisy
+          {joinDaisy?.title}
         </h1>
         <p className="text-center text-[#455150] mt-3 font-montserrat md:text-base md:font-normal">
-          {joinDaisy?.title}
+          {joinDaisy?.subtitle}
         </p>
       </div>
       <ul className="mt-[48px] space-y-8 pb-20 md:flex md:space-y-0 md:gap-6">
@@ -43,10 +41,10 @@ export const JoinTheDaisy = () => {
 
           <div className="px-6 flex flex-col justify-end items-center ">
             <h4 className="font-semibold text-2xl mt-6 md:mt-4">
-              {joinDaisy?.listCustomers.title}
+              {joinDaisy?.listJoin[0].title}
             </h4>
             <p className="mt-2 font-montserrat font-normal text-center text-[#455150]">
-              {joinDaisy?.listCustomers.description}
+              {joinDaisy?.listJoin[0].description}
             </p>
             <Button className="bg-white w-full text-primary border border-primary py-[14px] px-[108px] my-6 font-montserrat text-base font-semibold hover:bg-primary hover:text-white">
               Learn more
@@ -63,10 +61,10 @@ export const JoinTheDaisy = () => {
 
           <div className="px-6 flex flex-col justify-end items-center ">
             <h4 className="font-semibold text-2xl mt-6 md:mt-4">
-              {joinDaisy?.listVendors.title}
+              {joinDaisy?.listJoin[1].title}
             </h4>
             <p className="mt-2 font-montserrat font-normal text-center text-[#455150]">
-              {joinDaisy?.listVendors.description}
+              {joinDaisy?.listJoin[1].description}
             </p>
             <Button className="bg-white w-full text-primary border border-primary py-[14px] px-[108px] my-6 font-montserrat text-base font-semibold hover:bg-primary hover:text-white">
               Learn more
@@ -83,10 +81,10 @@ export const JoinTheDaisy = () => {
 
           <div className="px-6 flex flex-col justify-end items-center ">
             <h4 className="font-semibold text-2xl mt-6 md:mt-4">
-              {joinDaisy?.listColleagues.title}
+              {joinDaisy?.listJoin[2].title}
             </h4>
             <p className="mt-2 font-montserrat font-normal text-center text-[#455150]">
-              {joinDaisy?.listColleagues.description}
+              {joinDaisy?.listJoin[2].description}
             </p>
             <Button className="bg-white w-full text-primary border border-primary py-[14px] px-[108px] my-6 font-montserrat text-base font-semibold hover:bg-primary hover:text-white">
               Learn more

@@ -16,13 +16,12 @@ import { Separator } from '@/components/ui/separator';
 import { ProfessionalHero } from '@/components/professional/ProfessionalHero';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useEffect, useState } from 'react';
-import ScrollSection from '@/components/scrolling-section/ScrollingSect';
-import SwapStickyImage from '@/components/locker/lockerText';
-// import LockerComponent from '@/components/LockerScroll/LockerScroll';
-// import { dataLocker } from '@/lib/constants/LockerScroll';
+
+import LockerContainer from '@/components/lockerScrollingSection/LockerContainer/LockerContainer';
 
 const Professional = () => {
   const [heroProfessional, setHeroProfessional] = useState<any>();
+
   const [growth, setGrowth] = useState<any>();
 
   useEffect(() => {
@@ -40,9 +39,8 @@ const Professional = () => {
   return (
     <div className="w-full bg-primary">
       <ProfessionalHero />
-      {/* <LockerComponent data={dataLocker} /> */}
-      {/* <ScrollSection /> */}
-      {/* <SwapStickyImage /> */}
+
+      <LockerContainer />
       <div className="md:hidden ">
         <NoScrollingAnimationBusiness
           subtitle={heroProfessional?.[0].attributes.hero.title}
@@ -104,7 +102,11 @@ const Professional = () => {
       </div>
       <OurPartnersSection />
       <DaysiMission />
-      <GrowthSection title={growth?.title} description={growth?.description} />
+      <GrowthSection
+        title={growth?.title}
+        description={growth?.description}
+        subtitle={growth?.subtitle}
+      />
       <JoinTheDaisy />
       <ExperienceDaisy />
       <QASection pageType="Business" />
