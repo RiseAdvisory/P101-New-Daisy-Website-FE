@@ -36,7 +36,7 @@ export default function RootLayout({
         className={`${openSans.variable} ${montserrat.variable} ${inter.variable} font-openSans`}
         dir="ltr"
       >
-        <div className="overflow-x-hidden">
+        <div className="">
           <Header />
           {children}
           <Footer />

@@ -117,35 +117,7 @@ h5 {
     line-height: 130%;
   }
 }
-
-.section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  padding: 20px;
-  margin: auto;
-  height: 200vh; /* To create scrollable content */
-  background-color: #2f3e46;
-  color: white;
-}
-
-.text,
-.image {
-  width: 45%;
-}
-
-.textContent,
-.imageContent {
-  display: none;
-  transition: opacity 1s;
-}
-
-.textContent.active,
-.imageContent.active {
-  display: block;
-  opacity: 1;
-}
+/*  */
 
 .custom-width {
   width: calc(100% + 32px);
@@ -160,4 +132,14 @@ h5 {
 html,
 body {
   margin: 0;
+}
+
+#message {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  height: auto;
+  padding: 10px 20px;
+  z-index: 900;
 }

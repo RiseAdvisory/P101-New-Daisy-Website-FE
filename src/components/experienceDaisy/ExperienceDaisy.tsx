@@ -9,8 +9,22 @@ import { AppStoreButton } from '../buttonApp/AppStoreButton';
 import leaf from '../../assets/images/LeafBg.png';
 import stars from '../../assets/images/starsBg.png';
 import doublePhoto from '../../assets/images/PHONEallheight.png';
+import { useEffect, useState } from 'react';
+import axiosInstance from '@/helpers/axiosConfig';
 
 export const ExperienceDaisy = () => {
+  const [experienceDaisy, setExperienceDaisy] = useState<any>();
+
+  useEffect(() => {
+    (async function getBusiness() {
+      try {
+        const response = await axiosInstance.get('/experience-daisies');
+        setExperienceDaisy(response.data.data[0].attributes);
+      } catch (error) {
+        console.error(error);
+      }
+    })();
+  }, []);
   return (
     <div className="md:bg-custom-gradient md:pt-[150px]">
       <div className="pt-[80px] px-4 md:flex relative bg-primary md:mx-[63px] md:rounded-[16px]">
@@ -54,14 +68,14 @@ export const ExperienceDaisy = () => {
 
         <div className="md:ml-[560px] md:mr-[114px]">
           <h1 className="pt-5 text-white leading-10 text-3xl">
-            Discover, Experience, And Save With The Daisy
+            {experienceDaisy?.title}
           </h1>
           <p className="font-montserrat font-normal text-base pt-3 leading-8 text-[#D5D9D9]">
-            Your Gateway to Seamless Services!
+            {experienceDaisy?.subtitle}
           </p>
           <Separator className="my-[34px] md:hidden" />
           <p className="font-montserrat font-normal text-base pt-3 leading-8 text-[#FFFFFF] md:mt-[40px]">
-            Download Now!
+            {experienceDaisy?.description}
           </p>
           <div className="flex flex-col pb-16 md:w-[427px]">
             <PlayMarketButton className="mb-6 mt-8" />

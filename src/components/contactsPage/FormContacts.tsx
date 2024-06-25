@@ -22,29 +22,25 @@ import {
   SelectItem,
 } from '@/components/ui/select';
 import Separator from '../separator/Separator';
-import { KuwaitIcon } from '@/assets/icons/kuwaitIcon/KuwaitIcon';
 import { Textarea } from '../ui/textarea';
 import { Checkbox } from '../ui/checkbox';
+import { countries } from 'country-data';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const formSchema = z.object({
-  firstname: z.string().min(5, {
-    message: 'Full Name must be at least 5 characters.',
-  }),
-  lastname: z.string().min(5, {
-    message: 'Last Name must be at least 5 characters.',
-  }),
-  email: z
-    .string()
-
-    .email('This is not a valid email.'),
-  message: z.string(),
+  firstname: z.string(),
+  lastname: z.string(),
+  email: z.string().email('This is not a valid email.'),
+  content: z.string(),
   acceptconditions: z.boolean().default(false).optional(),
 });
 
 export const FormContacts = ({ style }: { style?: string }) => {
   const [activeField, setActiveField] = useState<string | null>(null);
-  const [countryCode, setCountryCode] = useState('+965');
-  const [phoneNumber, setPhoneNumber] = useState('');
+  const [country_code, setCountryCode] = useState('+965');
+  const [mobile, setPhoneNumber] = useState('');
+  const [isSubmit, setIsSubmit] = useState(false);
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -52,17 +48,53 @@ export const FormContacts = ({ style }: { style?: string }) => {
       firstname: '',
       lastname: '',
       email: '',
-      message: '',
-      phonenumber: '',
+      content: '',
+      mobile: '',
       acceptconditions: false,
+
+      country_code: '+965',
     },
   });
 
-  const onSubmit = (data: any) => {
-    const completePhoneNumber = countryCode + phoneNumber;
-    const updatedData = { ...data, phoneNumber: completePhoneNumber };
-    console.log(updatedData);
-    form.reset();
+  const onSubmit = async (data: any) => {
+    const completePhoneNumber = country_code + mobile;
+    const formData = {
+      ...data,
+      mobile: completePhoneNumber,
+      country_code,
+      type: 'enquiry',
+    };
+    console.log(formData);
+    try {
+      setIsSubmit(true);
+      delete formData.acceptconditions;
+      const response = await fetch(
+        `https://devapp.trythedaisy.com/api/v1/vendor/demo/enquiry`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        },
+      );
+
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+
+      const data = await response.json();
+      toast.success('Success Submitet!');
+      console.log('Form submitted', data);
+      setPhoneNumber('00000000');
+      form.reset();
+    } catch (error) {
+      setIsSubmit(false);
+      console.error('Error:', error);
+      toast.error('Error!');
+    } finally {
+      setIsSubmit(false);
+    }
   };
 
   const handleFocus = (fieldName: string) => {
@@ -73,6 +105,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
     setActiveField(null);
   };
 
+  const usedCountryCodes = new Set();
   return (
     <Form {...form}>
       <form
@@ -161,12 +194,12 @@ export const FormContacts = ({ style }: { style?: string }) => {
 
           <FormField
             control={form.control}
-            name="phonenumber"
+            name="mobile"
             render={({ field }) => (
-              <FormItem className="md:w-full mt-6">
+              <FormItem className="md:w-full mt-6 md:ml-4">
                 <FormLabel
                   className={`font-montserrat font-semibold text-base md:ml-[15px]${
-                    activeField === 'phonenumber' ? 'text-[#A67F6B]' : ''
+                    activeField === 'mobile' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
                   Phone Number
@@ -174,22 +207,37 @@ export const FormContacts = ({ style }: { style?: string }) => {
                 <div className="flex space-x-2 ">
                   <FormControl>
                     <Select
-                      value={countryCode}
+                      value={country_code}
                       onValueChange={(value) => setCountryCode(value)}
                     >
-                      <SelectTrigger className="w-32 md:ml-[15px] flex border-[#E8E9E9] bg-[#F9FBFB]">
-                        <SelectValue placeholder="+965" />
+                      <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB]">
+                        <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="+965">
-                          <span className="flex items-center justify-center">
-                            <KuwaitIcon />
-                            +965
-                          </span>
-                        </SelectItem>
-                        <SelectItem value="+1">+1</SelectItem>
-                        <SelectItem value="+44">+44</SelectItem>
-                        {/* Add other country codes as needed */}
+                        {countries.all.map((item, i) => {
+                          const country_code = item.countryCallingCodes[0];
+                          if (
+                            !item.emoji ||
+                            !country_code ||
+                            usedCountryCodes.has(country_code)
+                          ) {
+                            return null;
+                          }
+
+                          usedCountryCodes.add(country_code);
+
+                          return (
+                            <SelectItem
+                              key={`${country_code}-${item.name}`}
+                              value={country_code}
+                            >
+                              <span className="flex items-center justify-center text-nowrap">
+                                <span>{item.emoji} </span>
+                                {country_code}
+                              </span>
+                            </SelectItem>
+                          );
+                        })}
                       </SelectContent>
                     </Select>
                   </FormControl>
@@ -198,9 +246,9 @@ export const FormContacts = ({ style }: { style?: string }) => {
                       className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                       type="number"
                       placeholder="00000000"
-                      value={phoneNumber}
+                      value={mobile}
                       onChange={(e) => setPhoneNumber(e.target.value)}
-                      onFocus={() => handleFocus('phonenumber')}
+                      onFocus={() => handleFocus('mobile')}
                       onBlur={handleBlur}
                     />
                   </FormControl>
@@ -212,23 +260,23 @@ export const FormContacts = ({ style }: { style?: string }) => {
         </div>
         <FormField
           control={form.control}
-          name="message"
+          name="content"
           render={({ field }) => (
             <FormItem className="md:w-full mt-6">
               <FormLabel
                 className={`font-montserrat font-semibold text-base ${
-                  activeField === 'message' ? 'text-[#A67F6B]' : ''
+                  activeField === 'content' ? 'text-[#A67F6B]' : ''
                 }`}
               >
-                Your Message
+                Your content
               </FormLabel>
               <FormControl>
                 <Textarea
                   className="focus:text-[#A67F6B] border focus:border-[#A67F6B] h-[155px] resize-none border-[#E8E9E9] bg-[#F9FBFB]"
                   {...field}
-                  onFocus={() => handleFocus('message')}
+                  onFocus={() => handleFocus('content')}
                   onBlur={handleBlur}
-                  placeholder="Type your message here."
+                  placeholder="Type your content here."
                 />
               </FormControl>
               <FormMessage />
@@ -262,11 +310,13 @@ export const FormContacts = ({ style }: { style?: string }) => {
         <Separator className="bg-[#E8E9E9] mt-6 " />
         <Button
           type="submit"
+          disabled={!form.getValues().acceptconditions}
           className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary font-montserrat font-semibold hover:text-white md:py-4 md:h-auto"
         >
-          Send Message
+          {isSubmit ? 'Sending...' : 'Send content'}
         </Button>
       </form>
+      <ToastContainer />
     </Form>
   );
 };

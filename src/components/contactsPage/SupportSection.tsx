@@ -1,7 +1,7 @@
 import { constactsList } from '@/lib/constants/constactsList';
 import { FormContacts } from './FormContacts';
 
-export const SupportSection = () => {
+export const SupportSection = ({ contacts }: { contacts: any }) => {
   return (
     <div className="bg-[#F8F5F3] pb-20 ">
       <div className="w-full h-[300px] md:h-[236px] bg-primary "></div>

@@ -7,7 +7,13 @@ import stars from '../../assets/images/Stars.png';
 import phone from '../../assets/images/PHONE.png';
 import Image from 'next/image';
 
-export const BusinessHero = () => {
+export const BusinessHero = ({
+  title,
+  subtitle,
+}: {
+  title: string;
+  subtitle: string;
+}) => {
   return (
     <div className=" bg-primary pt-16 px-4 h-screen">
       <div className="md:hidden">
@@ -25,12 +31,9 @@ export const BusinessHero = () => {
       </div>
       <div className="hidden md:flex justify-between mx-16">
         <div className="flex flex-col w-[533px]">
-          <h1 className="text-white text-5xl leading-[60px]">
-            Boost off-peak, drive growth, fill occupancy!{' '}
-          </h1>
+          <h1 className="text-white text-5xl leading-[60px]">{title}</h1>
           <p className="font-montserrat font-medium leading-[30px] text-xl text-[#D5D9D9] mt-3">
-            Disconer the power of expanding your reach and maximizing your
-            profits with ease
+            {subtitle}
           </p>
           <Separator className="my-8" />
           <div className="grid grid-cols-[148px_1fr] ">

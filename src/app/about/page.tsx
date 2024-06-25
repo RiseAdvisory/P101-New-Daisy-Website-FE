@@ -2,23 +2,36 @@
 import { OurMissing } from '@/components/aboutPage/OurMission';
 import { OurValue } from '@/components/aboutPage/OurValue';
 import { HeroPage } from '@/components/heroSection/HeroSection';
-import { useState } from 'react';
+import axiosInstance from '@/helpers/axiosConfig';
+import { useEffect, useState } from 'react';
 
 const About = () => {
   const [scroll, setScroll] = useState(null);
+  const [heroAbout, setHeroAbout] = useState<any>();
+
+  useEffect(() => {
+    (async function getUser() {
+      try {
+        const response = await axiosInstance.get('/about-pages');
+        setHeroAbout(response.data.data[0].attributes);
+      } catch (error) {
+        console.error(error);
+      }
+    })();
+  }, []);
 
   return (
     <>
       <HeroPage
         blockRef={scroll}
-        title="We’re some humans who think"
-        description="  Our Business Thrives When People Come First - It's That Simple"
+        title={heroAbout?.heroTitle}
+        description={heroAbout?.heroSubtitle}
         hiddenArrow={false}
         visibleDescriiton={false}
         heightScreen={true}
       />
-      <OurMissing setScroll={setScroll} />
-      <OurValue />
+      <OurMissing setScroll={setScroll} heroAbout={heroAbout} />
+      <OurValue heroAbout={heroAbout} />
     </>
   );
 };
