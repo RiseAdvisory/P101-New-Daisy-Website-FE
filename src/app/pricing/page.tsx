@@ -4,19 +4,23 @@ import { GridPricingCard } from '@/components/pricingPage/GridPricingCard';
 import { PricingHero } from '@/components/pricingPage/HeroPricing';
 import Separator from '@/components/separator/Separator';
 import { Switch } from '@/components/ui/switch';
+import axiosInstance from '@/helpers/axiosConfig';
 import { pricingBusinessCard } from '@/lib/constants/pricing/pricingBusiness';
 import { pricingProfessionalCard } from '@/lib/constants/pricing/prisingProfessional';
 import { cn } from '@/lib/utils';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const Pricing = () => {
   const [activePricingPage, setActivePricingPage] = useState('professional');
   const [checkedMonth, setCheckedMonth] = useState(false);
   const [isRescomennded, setIsRecommended] = useState(false);
+  const [dataPricing, setDataPricing] = useState<any>();
+  console.log('🚀 ~ Pricing ~ dataPricing:', dataPricing?.enterprise);
+
   const currentPricing =
     activePricingPage === 'professional'
-      ? pricingProfessionalCard
-      : pricingBusinessCard;
+      ? dataPricing?.business.pricingCard
+      : dataPricing?.professional.pricingCard;
   const gridCardRef = useRef<HTMLDivElement>(null);
 
   const handleScrollToGrid = () => {
@@ -24,15 +28,30 @@ const Pricing = () => {
       gridCardRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const response = await axiosInstance.get('/pricings');
+        setDataPricing(response.data.data[0].attributes);
+      } catch (error) {
+        console.error(error);
+      }
+    })();
+  }, []);
+
+  const pay = dataPricing?.switchAnnually;
   return (
     <div className="bg-[#F8F5F3] pb-[180px]">
       <PricingHero
         setActivePricingPage={setActivePricingPage}
-        description="Straightforward pricing that grows with you"
+        description={dataPricing?.title}
         heightScreen={false}
         styleSection="pb-[100px]"
         onScrollToGrid={handleScrollToGrid}
         setIsRecommended={setIsRecommended}
+        activePricingPage={activePricingPage}
+        dataPricing={dataPricing}
       />
       <div className="px-4 md:px-20 bg-primary">
         <Separator />
@@ -44,7 +63,7 @@ const Pricing = () => {
               'text-[#F8F5F3]/60': checkedMonth,
             })}
           >
-            Pay Monthly
+            {pay?.monthly}
           </p>
           <Switch
             className="mx-4 data-[state=checked]:bg-[#A67F6B] bg-[#aab4b3]"
@@ -55,7 +74,7 @@ const Pricing = () => {
               'text-[#F8F5F3]/60': !checkedMonth,
             })}
           >
-            Pay Annually
+            {pay?.annually}
           </p>
         </div>
       </div>
@@ -65,9 +84,12 @@ const Pricing = () => {
           activePricingPage={activePricingPage}
           chechedAnnualy={checkedMonth}
           listChangePricing={currentPricing}
+          dataPricing={currentPricing}
         />
       </div>
-      {activePricingPage === 'business' && <EnterPrise />}
+      {activePricingPage === 'business' && (
+        <EnterPrise data={dataPricing?.enterprise} />
+      )}
     </div>
   );
 };

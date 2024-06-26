@@ -7,7 +7,7 @@ const LockerImageItem = ({ isActive, imageUrl }: any) => {
     <Image
       src={imageUrl}
       className={styles.image + (isActive ? ' ' + styles.active : '')}
-      alt='daw'
+      alt="daw"
       width={100}
       height={100}
     />

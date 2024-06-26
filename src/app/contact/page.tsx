@@ -6,10 +6,9 @@ import { useEffect, useState } from 'react';
 
 const Contacts = () => {
   const [contacts, setContacts] = useState<any>();
-  console.log('🚀 ~ Contacts ~ contacts:', contacts);
 
   useEffect(() => {
-    (async function getBusiness() {
+    (async () => {
       try {
         const response = await axiosInstance.get('/contact-pages');
         setContacts(response.data.data[0].attributes);
@@ -18,6 +17,7 @@ const Contacts = () => {
       }
     })();
   }, []);
+
   return (
     <div className="w-full">
       <HeroPage

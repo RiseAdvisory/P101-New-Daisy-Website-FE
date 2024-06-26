@@ -1,5 +1,31 @@
 import { Input } from '../ui/input';
 import { ToggleButton } from './ToggleButton';
+const text = {
+  firstInput: {
+    title: 'How many working staff do you have in your team?',
+    description: '$10 per additional calendar',
+  },
+  thirdInput: {
+    title: 'How many countries do you operate in?',
+    description: '$50 per additional country',
+  },
+  secondInput: {
+    title: 'How many branches or locations do you have?',
+    description: '$25 per additional branch/location',
+  },
+  toggleFirst: {
+    title: 'Do you provide home service visits?',
+    description: '$25 per additional branch/location',
+  },
+  toggleThird: {
+    title: 'Would you like to have the 24/7 concierge service?',
+    description: '1$ per appointment',
+  },
+  toggleSecond: {
+    title: 'Would you like assistance with onboarding and services setup?',
+    description: 'One-time Fee $100',
+  },
+};
 
 export const Calculater = ({
   calculate,
@@ -11,6 +37,7 @@ export const Calculater = ({
   conciergeService,
   setConciergeService,
   calculationFormRef,
+  titleTypeCalculate,
 }: any) => {
   return (
     <>
@@ -22,10 +49,10 @@ export const Calculater = ({
           <div className="flex flex-col md:flex-row justify-between mb-8 md:mb-6 ">
             <div className="md:min-h-[56px]">
               <h2 className="font-montserrat font-semibold text-[18px] leading-7">
-                How many working staff do you have in your team?
+                {titleTypeCalculate?.firstInput.title}
               </h2>
               <p className="font-montserrat text-[#455150] mt-1 md:mt-0">
-                $10 per additional calendar
+                {titleTypeCalculate?.firstInput.description}
               </p>
             </div>
             <Input
@@ -44,10 +71,10 @@ export const Calculater = ({
           <div className="flex flex-col md:flex-row justify-between mb-8 md:mb-6">
             <div className="md:min-h-[84px]">
               <h2 className="font-montserrat font-semibold text-[18px] leading-7">
-                How many branches or locations do you have?
+                {titleTypeCalculate?.secondInput.title}
               </h2>
               <p className="font-montserrat text-[#455150] mt-1 md:mt-0">
-                $25 per additional branch/location
+                {titleTypeCalculate?.secondInput.description}
               </p>
             </div>
             <Input
@@ -66,10 +93,10 @@ export const Calculater = ({
           <div className="flex flex-col md:flex-row justify-between">
             <div className="md:min-h-[56px]">
               <h2 className="font-montserrat font-semibold text-[18px] leading-7">
-                How many countries do you operate in?
+                {titleTypeCalculate?.thirdInput.title}
               </h2>
               <p className="font-montserrat text-[#455150] mt-1 md:mt-0">
-                $50 per additional country
+                {titleTypeCalculate?.thirdInput.description}
               </p>
             </div>
             <Input
@@ -90,10 +117,10 @@ export const Calculater = ({
           <div className="flex flex-col md:flex-row justify-between mb-6">
             <div className="min-h-[56px]">
               <h2 className="font-montserrat font-semibold text-[18px] leading-7">
-                Do you provide home service visits?
+                {titleTypeCalculate?.toggleFirst.title}
               </h2>
               <p className="font-montserrat text-[#455150]">
-                $25 per additional branch/location
+                {titleTypeCalculate?.toggleFirst.description}
               </p>
             </div>
             <ToggleButton
@@ -106,10 +133,10 @@ export const Calculater = ({
           <div className="flex flex-col md:flex-row justify-between mb-6">
             <div className="min-h-[84px]">
               <h2 className="font-montserrat font-semibold text-[18px] leading-7 ">
-                Would you like assistance with onboarding and services setup?
+                {titleTypeCalculate?.toggleSecond.title}
               </h2>
               <p className="font-montserrat text-[#455150]">
-                One-time Fee $100
+                {titleTypeCalculate?.toggleSecond.title}
               </p>
             </div>
             <ToggleButton
@@ -122,10 +149,10 @@ export const Calculater = ({
           <div className="flex flex-col md:flex-row md:justify-between">
             <div className="min-h-[56px]">
               <h2 className="font-montserrat font-semibold text-[18px] leading-7">
-                Would you like to have the 24/7 concierge service?
+                {titleTypeCalculate?.toggleThird.title}
               </h2>
               <p className="font-montserrat text-[#455150]">
-                1$ per appointment
+                {titleTypeCalculate?.toggleThird.description}
               </p>
             </div>
             <ToggleButton
