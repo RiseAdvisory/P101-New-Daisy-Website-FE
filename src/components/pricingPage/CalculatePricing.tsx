@@ -5,7 +5,12 @@ import { Calculater } from './Calculater';
 import { ResultCalculate } from './ResultCalculate';
 import { cn } from '@/lib/utils';
 
-export const CalculatePricing = ({ onScrollToGrid, setIsRecommended }: any) => {
+export const CalculatePricing = ({
+  activePricingPage,
+  dataPricing,
+  onScrollToGrid,
+  setIsRecommended,
+}: any) => {
   const [homeService, setHomeService] = useState(false);
   const [onboarding, setOnboarding] = useState(false);
   const [conciergeService, setConciergeService] = useState(false);
@@ -39,17 +44,21 @@ export const CalculatePricing = ({ onScrollToGrid, setIsRecommended }: any) => {
     scrollToCalculationForm();
   };
 
+  const titleTypeCalculate =
+    activePricingPage === 'business'
+      ? dataPricing?.business
+      : dataPricing?.professional;
+
   return (
     <div className="bg-[#828E8E] rounded-[16px] p-0 md:p-8 w-full">
       <div className="p-6 md:p-8 rounded-[16px] bg-white">
         <div className="flex justify-between">
           <div>
             <h2 className="text-[#172524] font-semibold text-[18px] leading-7 font-montserrat">
-              Let&apos;s Calculate the Perfect Tier for Your Business
+              {titleTypeCalculate?.title}
             </h2>
             <p className="font-montserrat text-[#455150]">
-              Please answer the questions below to help us choose the best tier
-              for your business.
+              {titleTypeCalculate?.subtitle}
             </p>
           </div>
           <Button
@@ -77,6 +86,7 @@ export const CalculatePricing = ({ onScrollToGrid, setIsRecommended }: any) => {
             setOnboarding={setOnboarding}
             conciergeService={conciergeService}
             setConciergeService={setConciergeService}
+            titleTypeCalculate={titleTypeCalculate?.calculate}
           />
         ) : (
           <ResultCalculate

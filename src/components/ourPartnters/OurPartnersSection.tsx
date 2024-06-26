@@ -2,24 +2,19 @@
 import { useEffect, useState } from 'react';
 import { CarouselCompany } from '../carouselCompany/CarouselCompany';
 import axiosInstance from '@/helpers/axiosConfig';
+import { useLoadingStore } from '@/store/loading';
+import { Skeleton } from '../ui/skeleton';
 
 export const OurPartnersSection = ({
   stylePartners,
 }: {
   stylePartners?: string;
 }) => {
+  const { array } = useLoadingStore();
   const [ourPartners, setOurPartners] = useState<any>();
-  const [partners, setPartners] = useState<any[]>([]);
-
   useEffect(() => {
-    (async function getUser() {
+    (async () => {
       try {
-        const listPartners = await getData();
-        if (listPartners) {
-          const randomPartners = getRandomElements(listPartners, 60);
-          setPartners(randomPartners);
-        }
-
         const {
           data: { data },
         } = await axiosInstance.get('/partners');
@@ -41,34 +36,18 @@ export const OurPartnersSection = ({
           {ourPartners?.[0].attributes.subtitle}
         </p>
       </div>
-      <CarouselCompany data={partners} />
+      {array.length ? (
+        <CarouselCompany data={array} />
+      ) : (
+        <div className="md:w-[800px] items-center mx-auto mt-8 md:mt-20 flex space-x-9 md:space-x-3 justify-center">
+          <Skeleton className="hidden md:block  w-[90px] h-[90px] md:w-[120px] md:h-[120px] " />
+          <Skeleton className="hidden md:block  w-[90px] h-[90px] md:w-[120px] md:h-[120px] " />
+          <Skeleton className="hidden md:block  w-[90px] h-[90px] md:w-[120px] md:h-[120px] " />
+          <Skeleton className="  w-[90px] h-[90px] md:w-[120px] md:h-[120px] " />
+          <Skeleton className="  w-[90px] h-[90px] md:w-[120px] md:h-[120px] " />
+          <Skeleton className="  w-[90px] h-[90px] md:w-[120px] md:h-[120px] " />
+        </div>
+      )}
     </div>
   );
-};
-
-const getData = async () => {
-  try {
-    const res = await fetch('https://devapp.trythedaisy.com/api/v1/vendors', {
-      cache: 'no-store',
-    });
-
-    if (!res.ok) {
-      throw new Error(`HTTP error! status: ${res.status}`);
-    }
-
-    const responseData: any = await res.json();
-
-    if (!responseData.status) throw new Error('No data found');
-
-    return responseData.data.vendors;
-  } catch (error) {
-    console.error('An error occurred while fetching the data:', error);
-    // You can return a default value or throw the error to handle it in the component
-    return null;
-  }
-};
-
-const getRandomElements = (array: any[], count: number) => {
-  const shuffled = array.sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
 };

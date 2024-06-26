@@ -17,10 +17,10 @@ export const GrowthSection = ({
       <div className=" px-4 md:flex md:bg-[#F8F5F3] bg-white">
         <div className="md:flex md:justify-between md:bg-white md:mx-[64px] md:mb-[164px] rounded-[16px]">
           <div className="md:w-[50%] md:px-20 md:ml-[100px] md:pb-[200px]">
-            <h5 className="text-[#A67F6B] pt-20 text-base leading-6">
+            <h5 className="text-[#A67F6B] pt-20 text-base leading-6 uppercase">
               {subtitle}
             </h5>
-            <h2 className="pt-2 text-[#172524] leading-10 text-3xl md:text-[40px] md:leading-[50px] md:font-bold">
+            <h2 className="pt-2 text-[#172524] leading-10 text-3xl md:text-[40px] md:leading-[50px] md:font-bold capitalize">
               {title}
             </h2>
             <p className="font-montserrat font-medium text-xl pt-3 leading-8 text-primaryBtn md:text-[16px] md:leading-6 md:font-normal md:w-[70%]">

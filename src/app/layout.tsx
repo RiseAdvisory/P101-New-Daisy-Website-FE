@@ -38,7 +38,7 @@ export default function RootLayout({
       >
         <div className="">
           <Header />
-          {children}
+          <div className="md:pt-[100px]"> {children}</div>
           <Footer />
         </div>
       </body>

@@ -143,3 +143,30 @@ body {
   padding: 10px 20px;
   z-index: 900;
 }
+
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skeleton-title {
+  height: 20px;
+  width: 60%;
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.skeleton-text {
+  height: 15px;
+  width: 80%;
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.skeleton-image {
+  height: 200px;
+  width: 100%;
+  background: #ccc;
+  border-radius: 4px;
+}

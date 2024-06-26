@@ -8,11 +8,14 @@ import { useEffect, useState } from 'react';
 const About = () => {
   const [scroll, setScroll] = useState(null);
   const [heroAbout, setHeroAbout] = useState<any>();
+  const [aboutImage, setAboutImage] = useState(
+    heroAbout?.heropicture.data[0].attributes.url,
+  );
 
   useEffect(() => {
-    (async function getUser() {
+    (async () => {
       try {
-        const response = await axiosInstance.get('/about-pages');
+        const response = await axiosInstance.get('/about-pages?populate=*');
         setHeroAbout(response.data.data[0].attributes);
       } catch (error) {
         console.error(error);

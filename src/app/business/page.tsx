@@ -16,11 +16,14 @@ import leaf from '../../assets/images/LeafBg.png';
 import { Separator } from '@/components/ui/separator';
 import axiosInstance from '../../helpers/axiosConfig';
 import { useEffect, useState } from 'react';
+import { useLoadingStore } from '@/store/loading';
+import { getData, getRandomElements } from '@/helpers/getPartners';
+import { Skeleton } from '@/components/ui/skeleton';
 
 const Business = () => {
   const [heroBusiness, setHeroBusiness] = useState<any>();
   const [growth, setGrowth] = useState<any>();
-
+  const { handleArray, handleLoadingStatus, array } = useLoadingStore();
   useEffect(() => {
     (async function getBusiness() {
       try {
@@ -30,86 +33,118 @@ const Business = () => {
         setGrowth(responseGrowth?.data.data[0].attributes);
       } catch (error) {
         console.error(error);
+        handleLoadingStatus(false);
+      } finally {
+        handleLoadingStatus(false);
       }
     })();
   }, []);
+
+  useEffect(() => {
+    try {
+      (async () => {
+        handleLoadingStatus(true);
+        const listPartners = await getData();
+        const randomPartners = getRandomElements(listPartners, 60);
+        handleArray(randomPartners);
+      })();
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+
   return (
-    <div className="w-full bg-primary">
-      <BusinessHero
-        title={heroBusiness?.title}
-        subtitle={heroBusiness?.subtitle}
-      />
-      <div className="md:hidden ">
-        <NoScrollingAnimationBusiness
-          subtitle={heroBusiness?.listHeroPost[0].title}
-          imageBg={leaf}
-          imageClassNameBg="absolute -bottom-[40px] left-0 w-[340px] h-[320px] "
-          image={image1}
-          className="absolute w-full h-full bottom-0 left-10"
-          title={heroBusiness?.listHeroPost[0].subtitle}
-          desription={heroBusiness?.listHeroPost[0].description}
-          imageClassName=" absolute w-[80%]   top-[50%] -translate-y-1/2 right-0"
-          list={heroBusiness?.listHeroPost[0].listSub}
-        />
-        <div className="mx-4 bg-primary">
-          <Separator className="bg-[#586968]" />
+    <>
+      {heroBusiness ? (
+        <div className="w-full bg-primary">
+          <BusinessHero
+            title={heroBusiness?.title}
+            subtitle={heroBusiness?.subtitle}
+          />
+          <div className="md:hidden ">
+            <NoScrollingAnimationBusiness
+              subtitle={heroBusiness?.listHeroPost[0].title}
+              imageBg={leaf}
+              imageClassNameBg="absolute -bottom-[40px] left-0 w-[340px] h-[320px] "
+              image={image1}
+              className="absolute w-full h-full bottom-0 left-10"
+              title={heroBusiness?.listHeroPost[0].subtitle}
+              desription={heroBusiness?.listHeroPost[0].description}
+              imageClassName=" absolute w-[80%]   top-[50%] -translate-y-1/2 right-0"
+              list={heroBusiness?.listHeroPost[0].listSub}
+            />
+            <div className="mx-4 bg-primary">
+              <Separator className="bg-[#586968]" />
+            </div>
+            <NoScrollingAnimationBusiness
+              imageBg={leaf}
+              imageClassNameBg="absolute -bottom-[40px] left-0 w-[300px] h-[300px]"
+              image={image2}
+              className="absolute w-full h-full bottom-0 left-10 "
+              imageClassName=" absolute w-[300px]  top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
+              imageBgTwo={leaf}
+              imageClassNameBgSecond="absolute -top-[70px] -right-[70px] w-[200px] h-[200px] rotate-180 scale-x-[-1]"
+              desription={heroBusiness?.listHeroPost[1].description}
+              title={heroBusiness?.listHeroPost[1].subtitle}
+              subtitle={heroBusiness?.listHeroPost[1].title}
+              list={heroBusiness?.listHeroPost[1].listSub}
+            />
+            <div className="px-4 bg-primary">
+              <Separator className="bg-[#586968]" />
+            </div>
+            <NoScrollingAnimationBusiness
+              imageBg={leaf}
+              imageClassNameBg="absolute -bottom-[100px] -right-[180px] w-[300px] h-[300px] rotate-[60deg]"
+              image={image3}
+              className="absolute w-full h-full bottom-0 left-10 "
+              imageClassName=" absolute w-[70%]  top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
+              imageBgTwo={leaf}
+              imageClassNameBgSecond="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
+              desription={heroBusiness?.listHeroPost[2].description}
+              title={heroBusiness?.listHeroPost[2].subtitle}
+              subtitle={heroBusiness?.listHeroPost[2].title}
+              list={heroBusiness?.listHeroPost[2].listSub}
+            />
+            <div className="px-4 bg-primary">
+              <Separator className="bg-[#586968]" />
+            </div>
+            <NoScrollingAnimationBusiness
+              imageBg={leaf}
+              imageClassNameBg="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
+              image={image4}
+              className="absolute w-full h-full bottom-0 left-10 "
+              imageClassName=" absolute w-[60%]  bottom-0  -translate-x-1/2 left-[50%]"
+              desription={heroBusiness?.listHeroPost[0].description}
+              title={heroBusiness?.listHeroPost[0].subtitle}
+              subtitle={heroBusiness?.listHeroPost[0].title}
+              list={heroBusiness?.listHeroPost[0].listSub}
+            />
+          </div>
+          <OurPartnersSection />
+          <DaysiMission />
+          <GrowthSection
+            title={growth?.title}
+            description={growth?.description}
+            subtitle={growth?.subtitle}
+          />
+          <JoinTheDaisy />
+          <ExperienceDaisy />
+          <QASection pageType="Business" />
+          <BecomeFormPartner />
         </div>
-        <NoScrollingAnimationBusiness
-          imageBg={leaf}
-          imageClassNameBg="absolute -bottom-[40px] left-0 w-[300px] h-[300px]"
-          image={image2}
-          className="absolute w-full h-full bottom-0 left-10 "
-          imageClassName=" absolute w-[300px]  top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
-          imageBgTwo={leaf}
-          imageClassNameBgSecond="absolute -top-[70px] -right-[70px] w-[200px] h-[200px] rotate-180 scale-x-[-1]"
-          desription={heroBusiness?.listHeroPost[1].description}
-          title={heroBusiness?.listHeroPost[1].subtitle}
-          subtitle={heroBusiness?.listHeroPost[1].title}
-          list={heroBusiness?.listHeroPost[1].listSub}
-        />
-        <div className="px-4 bg-primary">
-          <Separator className="bg-[#586968]" />
+      ) : (
+        <div className="w-full h-screen mt-[100px] px-[50px] pt-[100px]">
+          <Skeleton className="w-full mb-10 h-[20px]" />
+          <Skeleton className="w-full mb-10 h-[20px]" />
+          <Skeleton className="w-full mb-10 h-[20px]" />
+          <Skeleton className="w-full mb-10 h-[20px]" />
+          <Skeleton className="w-full mb-10 h-[20px]" />
+          <Skeleton className="w-full mb-10 h-[20px]" />
+          <Skeleton className="w-full mb-10 h-[20px]" />
+          <Skeleton className="w-full mb-10 h-[20px]" />
         </div>
-        <NoScrollingAnimationBusiness
-          imageBg={leaf}
-          imageClassNameBg="absolute -bottom-[100px] -right-[180px] w-[300px] h-[300px] rotate-[60deg]"
-          image={image3}
-          className="absolute w-full h-full bottom-0 left-10 "
-          imageClassName=" absolute w-[70%]  top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
-          imageBgTwo={leaf}
-          imageClassNameBgSecond="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
-          desription={heroBusiness?.listHeroPost[2].description}
-          title={heroBusiness?.listHeroPost[2].subtitle}
-          subtitle={heroBusiness?.listHeroPost[2].title}
-          list={heroBusiness?.listHeroPost[2].listSub}
-        />
-        <div className="px-4 bg-primary">
-          <Separator className="bg-[#586968]" />
-        </div>
-        <NoScrollingAnimationBusiness
-          imageBg={leaf}
-          imageClassNameBg="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
-          image={image4}
-          className="absolute w-full h-full bottom-0 left-10 "
-          imageClassName=" absolute w-[60%]  bottom-0  -translate-x-1/2 left-[50%]"
-          desription={heroBusiness?.listHeroPost[0].description}
-          title={heroBusiness?.listHeroPost[0].subtitle}
-          subtitle={heroBusiness?.listHeroPost[0].title}
-          list={heroBusiness?.listHeroPost[0].listSub}
-        />
-      </div>
-      <OurPartnersSection />
-      <DaysiMission />
-      <GrowthSection
-        title={growth?.title}
-        description={growth?.description}
-        subtitle={growth?.subtitle}
-      />
-      <JoinTheDaisy />
-      <ExperienceDaisy />
-      <QASection pageType="Business" />
-      <BecomeFormPartner />
-    </div>
+      )}
+    </>
   );
 };
 export default Business;

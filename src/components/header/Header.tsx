@@ -58,7 +58,7 @@ export const Header = () => {
     : optionsToogle;
 
   return (
-    <header className="w-full rtl:md:  bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16">
+    <header className="w-full rtl:md:  bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16 md:fixed md:z-40">
       <Link href={'/'} onClick={() => setChangePage('Business')}>
         <LogoIconsS />
       </Link>
@@ -77,7 +77,7 @@ export const Header = () => {
                 state={changeLang}
                 setState={setChangeLang}
                 list={changeLanguage}
-                classNames="px-2 hover:bg-white hover:text-primary"
+                classNames="px-2 hover:bg-white hover:text-primary "
               />
             </>
           )}

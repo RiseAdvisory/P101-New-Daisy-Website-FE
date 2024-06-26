@@ -13,6 +13,8 @@ export const PricingHero = ({
   setActivePricingPage,
   onScrollToGrid,
   setIsRecommended,
+  activePricingPage,
+  dataPricing,
 }: {
   description: string;
   heightScreen: boolean;
@@ -20,7 +22,11 @@ export const PricingHero = ({
   setActivePricingPage: Dispatch<SetStateAction<string>>;
   onScrollToGrid: any;
   setIsRecommended: any;
+  activePricingPage: string;
+  dataPricing: any;
 }) => {
+  const toogleName = dataPricing?.toggleBusinessProfessional;
+
   return (
     <div
       className={cn(
@@ -40,6 +46,7 @@ export const PricingHero = ({
 
       <div>
         <TogglePricing
+          toogleName={toogleName}
           setCurrentPricing={setActivePricingPage}
           className="mt-[46px]"
         />
@@ -48,6 +55,8 @@ export const PricingHero = ({
         <CalculatePricing
           onScrollToGrid={onScrollToGrid}
           setIsRecommended={setIsRecommended}
+          activePricingPage={activePricingPage}
+          dataPricing={dataPricing}
         />
       </div>
     </div>
