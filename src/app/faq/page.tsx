@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 const Faq = () => {
   const [dataFAQ, setDataFAQ] = useState<any>();
   const [pageTypes, setPageTypes] = useState<string>('Business');
-  if (window !== undefined) {
+  if (typeof window !== 'undefined') {
     const pageType = localStorage.getItem('activePage');
 
     // if (pageType === '/business') {
