@@ -2,6 +2,7 @@
 import { Constants } from '@/helpers/oldApi';
 import { QAAccordion } from '../qaAccordion/QAAccordion';
 import { useEffect, useState } from 'react';
+import { cn } from '@/lib/utils';
 
 enum PageType {
   Customer = 'Customer',
@@ -26,11 +27,15 @@ export const QASection = ({
   styles,
   stylesAcoordion,
   stylesAccordionItem,
+  titleHidden,
+  blockTop,
 }: {
   pageType: any;
   styles?: string;
   stylesAcoordion?: string;
   stylesAccordionItem?: string;
+  titleHidden?: boolean;
+  blockTop?: string;
 }) => {
   const [qaList, setQAlist] = useState<any>();
   useEffect(() => {
@@ -42,10 +47,15 @@ export const QASection = ({
 
   return (
     <div className={`bg-[#F8F5F3] px-4 pb-28 md:pt-[200px] ${styles}`}>
-      <h1 className="text-primary font-bold text-center text-[32px] leading-[40px] pt-[112px] md:text-[40px] md:leading-[50px] md:font-bold">
+      <h1
+        className={cn(
+          'text-primary font-bold text-center text-[32px] leading-[40px] pt-[112px] md:text-[40px] md:leading-[50px] md:font-bold',
+          { hidden: titleHidden },
+        )}
+      >
         Frequently Asked Question
       </h1>
-      <div className="md:mt-12 md:px-[288px]">
+      <div className={`md:mt-12 md:px-[288px] ${blockTop}`}>
         {qaList?.map((item: any, index: number) => {
           return (
             <QAAccordion

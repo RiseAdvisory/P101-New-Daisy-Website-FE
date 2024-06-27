@@ -17,7 +17,7 @@ const Faq = () => {
     })();
   }, []);
   return (
-    <>
+    <div className="bg-primary">
       <HeroPage
         title={dataFAQ?.title}
         description={dataFAQ?.subtitle}
@@ -28,10 +28,13 @@ const Faq = () => {
       />
       <QASection
         pageType="Business"
-        styles="bg-primary !pt-0"
+        styles="!bg-primary !pt-10"
         stylesAcoordion="!bg-primaryBtn text-white border-none"
+        titleHidden={true}
+        blockTop="!mt-0"
+        stylesAccordionItem=""
       />
-    </>
+    </div>
   );
 };
 

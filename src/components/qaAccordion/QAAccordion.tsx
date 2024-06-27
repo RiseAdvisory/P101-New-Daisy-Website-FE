@@ -17,6 +17,7 @@ export const QAAccordion = ({
   stylesAcoordion?: string;
   stylesAccordionItem?: string;
 }) => {
+  console.log(stylesAccordionItem);
   return (
     <Accordion
       type="multiple"
