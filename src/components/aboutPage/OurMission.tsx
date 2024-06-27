@@ -19,6 +19,7 @@ export const OurMissing = ({
   }, [setScroll]);
   const imageAbout = `${baseURLImage + heroAbout?.heropicture.data[0].attributes.url}`;
 
+  console.log('🚀 ~ imageAbout:', imageAbout);
   return (
     <div className="bg-white px-4 pt-[80px] pb-[140px]" ref={blockRef}>
       <div className="flex flex-col mx-auto text-center ">
