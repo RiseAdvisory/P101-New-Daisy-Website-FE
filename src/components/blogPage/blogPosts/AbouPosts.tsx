@@ -1,111 +1,50 @@
+'use client';
 import Image from 'next/image';
-import SelfImages from '../../../assets/images/BlogPageLegal.png';
+import { usePostStore } from '@/store/post';
+import { baseURLImage } from '@/helpers/axiosConfig';
 
 export const AboutPosts = () => {
+  const { post } = usePostStore();
+  const aboutImage = baseURLImage + post?.imageAboutPost.data[0].attributes.url;
+
   return (
     <div className="px-4 md:px-[280px]">
-      <h2 className="text-[#172524] font-bold text-3xl pt-20">Project</h2>
-      <p className="font-montserrat text-[#455150] mt-3">
-        Brand identity design for the modern online flea market.
-      </p>
-      <h2 className="text-[#172524] font-bold text-3xl pt-10">Idea</h2>
-      <p className="font-montserrat text-[#455150] mt-3">
-        A flea market is a place of surprises and unexpected findings; it is a
-        comeback to the nostalgic past, with its quirks and peculiarities.
-        That’s things that got reborn, possessing a completely new value and
-        significance. A flea market as a cultural junction of different times
-        connects the incompatible. That set of ideas determined the basis of the
-        stylistic approach. The combination and joint of fundamentally different
-        essences and contexts resulted in the visual concept of the whole online
-        flea market. A flea market is a place of surprises and unexpected
-        findings; it is a comeback to the nostalgic past, with its quirks and
-        peculiarities. That’s things that got reborn, possessing a completely
-        new value and significance. A flea market as a cultural junction of
-        different times connects the incompatible. That set of ideas determined
-        the basis of the stylistic approach. The combination and joint of
-        fundamentally different essences and contexts resulted in the visual
-        concept of the whole online flea market.
-      </p>
-      <h2 className="text-[#172524] font-bold text-3xl pt-10">
-        Identity Design
+      <h2 className="text-[#172524] font-bold text-3xl pt-20">
+        {post.aboutPost.project}
       </h2>
       <p className="font-montserrat text-[#455150] mt-3">
-        A flea market is a place of surprises and unexpected findings; it is a
-        comeback to the nostalgic past, with its quirks and peculiarities.
-        That’s things that got reborn, possessing a completely new value and
-        significance. A flea market as a cultural junction of different times
-        connects the incompatible. That set of ideas determined the basis of the
-        stylistic approach. The combination and joint of fundamentally different
-        essences and contexts resulted in the visual concept of the whole online
-        flea market. A flea market is a place of surprises and unexpected
-        findings; it is a comeback to the nostalgic past, with its quirks and
-        peculiarities. That’s things that got reborn, possessing a completely
-        new value and significance. A flea market as a cultural junction of
-        different times connects the incompatible. That set of ideas determined
-        the basis of the stylistic approach. The combination and joint of
-        fundamentally different essences and contexts resulted in the visual
-        concept of the whole online flea market. A flea market is a place of
-        surprises and unexpected findings; it is a comeback to the nostalgic
-        past, with its quirks and peculiarities. That’s things that got reborn,
-        possessing a completely new value and significance. A flea market as a
-        cultural junction of different times connects the incompatible. That set
-        of ideas determined the basis of the stylistic approach. The combination
-        and joint of fundamentally different essences and contexts resulted in
-        the visual concept of the whole online flea market. A flea market is a
-        place of surprises and unexpected findings; it is a comeback to the
-        nostalgic past, with its quirks and peculiarities. That’s things that
-        got reborn, possessing a completely new value and significance. A flea
-        market as a cultural junction of different times connects the
-        incompatible. That set of ideas determined the basis of the stylistic
-        approach. The combination and joint of fundamentally different essences
-        and contexts resulted in the visual concept of the whole online flea
-        market.
+        {post.aboutPost.projectSubcription}
+      </p>
+      <h2 className="text-[#172524] font-bold text-3xl pt-10">
+        {post.aboutPost.idea}
+      </h2>
+      <p className="font-montserrat text-[#455150] mt-3">
+        {post.aboutPost.ideaSubcription}
+      </p>
+      <h2 className="text-[#172524] font-bold text-3xl pt-10">
+        {post.aboutPost.identity}
+      </h2>
+      <p className="font-montserrat text-[#455150] mt-3">
+        {post.aboutPost.identitySubcription}
       </p>
 
       <div className="w-full h-[440px] overflow-hidden mx-auto">
         <Image
-          src={SelfImages}
+          src={aboutImage}
           alt="group meeting"
           className="w-full mt-10 object-fit"
+          width={1400}
+          height={200}
         />
       </div>
 
       <div className="w-full items-center flex justify-center mt-4">
         <span className="uppercase text-[14px] leading-[33px] text-[#455150]">
-          Branded truck livery and T-shirt design
+          {post.aboutPost.branded}
         </span>
       </div>
       <p className="font-montserrat text-[#455150] mt-10">
-        A flea market is a place of surprises and unexpected findings; it is a
-        comeback to the nostalgic past, with its quirks and peculiarities.
-        That’s things that got reborn, possessing a completely new value and
-        significance. A flea market as a cultural junction of different times
-        connects the incompatible. That set of ideas determined the basis of the
-        stylistic approach. The combination and joint of fundamentally different
-        essences and contexts resulted in the visual concept of the whole online
-        flea market. A flea market is a place of surprises and unexpected
-        findings; it is a comeback to the nostalgic past, with its quirks and
-        peculiarities. That’s things that got reborn, possessing a completely
-        new value and significance. A flea market as a cultural junction of
-        different times connects the incompatible. That set of ideas determined
-        the basis of the stylistic approach. The combination and joint of
-        fundamentally different essences and contexts resulted in the visual
-        concept of the whole online flea market. A flea market is a place of
-        surprises and unexpected findings; it is a comeback to the nostalgic
-        past, with its quirks and peculiarities. That’s things that got reborn,
-        possessing a completely new value and significance. A flea market as a
-        cultural junction of different times connects the incompatible. That set
-        of ideas determined the basis of the stylistic approach. The combination
-        and joint of fundamentally different essences and contexts resulted in
-        the visual concept of the whole online flea market. A flea market is a
-        place of surprises and unexpected findings; it is a comeback to the
-        nostalgic past, with its quirks and peculiarities. That’s things that
-        got reborn, possessing a completely new value and significance. A flea
-        market as a cultural junction of different times connects the
-        incompatible. That set of ideas determined the basis of the stylistic
-        approach. The combination and joint of fundamentally different essences
-        and contexts resulted in the visual concept of the whole online flea
-        market.
+        {post.aboutPost.identitySubcription}
       </p>
     </div>
   );

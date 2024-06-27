@@ -11,3 +11,4 @@ const axiosInstance = axios.create({
 });
 
 export default axiosInstance;
+export const baseURLImage = 'http://localhost:1337';

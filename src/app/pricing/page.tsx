@@ -15,7 +15,6 @@ const Pricing = () => {
   const [checkedMonth, setCheckedMonth] = useState(false);
   const [isRescomennded, setIsRecommended] = useState(false);
   const [dataPricing, setDataPricing] = useState<any>();
-  console.log('🚀 ~ Pricing ~ dataPricing:', dataPricing?.enterprise);
 
   const currentPricing =
     activePricingPage === 'professional'
