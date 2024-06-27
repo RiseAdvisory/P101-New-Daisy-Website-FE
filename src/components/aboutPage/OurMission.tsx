@@ -19,7 +19,6 @@ export const OurMissing = ({
   }, [setScroll]);
   const imageAbout = `${baseURLImage + heroAbout?.heropicture.data[0].attributes.url}`;
 
-  console.log('🚀 ~ imageAbout:', imageAbout);
   return (
     <div className="bg-white px-4 pt-[80px] pb-[140px]" ref={blockRef}>
       <div className="flex flex-col mx-auto text-center ">
@@ -48,7 +47,7 @@ export const OurMissing = ({
             {!imageAbout.includes('undefined') && (
               <Image
                 className=" md:!w-[648px] md:!h-[480px]"
-                src={imageAbout}
+                src={imageAbout || image}
                 alt="eyes in the leaves"
                 width={1000}
                 height={1000}
