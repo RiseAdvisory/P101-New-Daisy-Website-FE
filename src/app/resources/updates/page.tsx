@@ -17,7 +17,7 @@ const Updates = () => {
         styleSection="pb-[100px] pt-6 px-[16px]"
         secondDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
-      <CardPosts listCards={ListUpdatesResources} redirect={false} />
+      <CardPosts redirect={false} />
     </div>
   );
 };
