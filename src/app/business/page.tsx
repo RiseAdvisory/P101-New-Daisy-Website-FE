@@ -23,7 +23,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 const Business = () => {
   const [heroBusiness, setHeroBusiness] = useState<any>();
   const [growth, setGrowth] = useState<any>();
-  const { handleArray, handleLoadingStatus, array } = useLoadingStore();
+  const { handleArray, handleLoadingStatus } = useLoadingStore();
   useEffect(() => {
     (async function getBusiness() {
       try {

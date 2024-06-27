@@ -11,3 +11,4 @@ const axiosInstance = axios.create({
 });
 
 export default axiosInstance;
+export const baseURLImage = process.env.NEXT_PUBLIC_STRAPI_URL_IMAGE;

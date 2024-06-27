@@ -1,3 +1,4 @@
+'use client';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -6,21 +7,25 @@ import {
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 import { ArrowRightIcon } from '@/assets/icons/arrowRightIcon/ArrowRightIcon';
+import { useRouter } from 'next/navigation';
 
 export const BreadcrumbWithCustomSeparator = ({
   bredCrumbTitle = 'Legal',
   bredCrumbDesription = 'Blog posts',
+  bredCrumbHref = '/',
 }: {
   bredCrumbTitle?: string;
   bredCrumbDesription?: string;
+  bredCrumbHref?: string;
 }) => {
+  const router = useRouter();
   return (
     <Breadcrumb>
       <BreadcrumbList>
         <BreadcrumbItem>
           <BreadcrumbLink
-            href="/"
-            className="text-white hover:text-[#C5C8C8] font-montserrat text-sm md:font-inter md:font-medium"
+            href={bredCrumbHref}
+            className="text-white hover:text-[#C5C8C8] font-montserrat text-sm md:font-inter md:font-medium cursor-pointer"
           >
             {bredCrumbDesription}
           </BreadcrumbLink>

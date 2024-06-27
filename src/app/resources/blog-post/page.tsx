@@ -1,24 +1,29 @@
+'use client';
 import { CardPosts } from '@/components/blogPage/blogPosts/CardPosts';
 import { HeroPage } from '@/components/heroSection/HeroSection';
-import { ListBlogPosts } from '@/lib/constants/listCardBlogPages';
+import axiosInstance from '@/helpers/axiosConfig';
+import { useEffect, useState } from 'react';
 
 const BlogPosts = () => {
+  const [heroBlog, setHeroBlog] = useState<any>();
+  useEffect(() => {
+    (async () => {
+      const response = await axiosInstance.get('hero-resources-blogposts');
+      setHeroBlog(response?.data.data[0].attributes);
+    })();
+  }, []);
   return (
     <div className="w-full">
       <HeroPage
         hiddenArrow={true}
         visibleDescriiton={false}
-        title="CONTACT US"
-        description="Stories & Ideas"
+        title={heroBlog?.title}
+        description={heroBlog?.subtitle}
         heightScreen={false}
         styleSection="pb-[100px]"
-        secondDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        secondDescription={heroBlog?.description}
       />
-      <CardPosts
-        listCards={ListBlogPosts}
-        redirect={true}
-        style="cursor-pointer"
-      />
+      <CardPosts redirect={true} style="cursor-pointer" />
     </div>
   );
 };

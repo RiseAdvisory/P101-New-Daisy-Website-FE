@@ -58,7 +58,7 @@ export const Header = () => {
     : optionsToogle;
 
   return (
-    <header className="w-full rtl:md:  bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16 md:fixed md:z-40">
+    <header className="w-full rtl:md:  bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16 fixed z-40">
       <Link href={'/'} onClick={() => setChangePage('Business')}>
         <LogoIconsS />
       </Link>

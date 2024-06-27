@@ -3,6 +3,7 @@ import Separator from '../separator/Separator';
 import image from '../../assets/images/AboutMissing.png';
 import Image from 'next/image';
 import { Dispatch, SetStateAction, useEffect, useRef } from 'react';
+import { baseURLImage } from '@/helpers/axiosConfig';
 
 export const OurMissing = ({
   setScroll,
@@ -16,6 +17,8 @@ export const OurMissing = ({
   useEffect(() => {
     setScroll(blockRef);
   }, [setScroll]);
+  const imageAbout = `${baseURLImage + heroAbout?.heropicture.data[0].attributes.url}`;
+
   return (
     <div className="bg-white px-4 pt-[80px] pb-[140px]" ref={blockRef}>
       <div className="flex flex-col mx-auto text-center ">
@@ -41,11 +44,15 @@ export const OurMissing = ({
             </p>
           </div>
           <div className="flex mt-10 justify-center md:mt-0 items-center  ">
-            <Image
-              className=" md:!w-[648px] md:!h-[480px]"
-              src={image}
-              alt="eyes in the leaves"
-            />
+            {!imageAbout.includes('undefined') && (
+              <Image
+                className=" md:!w-[648px] md:!h-[480px]"
+                src={imageAbout}
+                alt="eyes in the leaves"
+                width={1000}
+                height={1000}
+              />
+            )}
           </div>
         </div>
       </div>

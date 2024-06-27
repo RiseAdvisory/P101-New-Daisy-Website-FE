@@ -6,15 +6,25 @@ import {
 } from '@/components/ui/accordion';
 import Separator from '../separator/Separator';
 
-export const QAAccordion = ({ value, item }: { value: any; item: any }) => {
+export const QAAccordion = ({
+  value,
+  item,
+  stylesAcoordion,
+  stylesAccordionItem,
+}: {
+  value: any;
+  item: any;
+  stylesAcoordion?: string;
+  stylesAccordionItem?: string;
+}) => {
   return (
     <Accordion
       type="multiple"
-      className="w-full bg-white rounded-[16px] space-x-4 mt-4 border "
+      className={`w-full bg-white rounded-[16px] space-x-4 mt-4 border ${stylesAcoordion} `}
     >
       <AccordionItem
         value={`item-${value}`}
-        className="group focus:bg-primary focus:text-white data-[state=open]:bg-primary data-[state=open]:text-white data-[state=open]:rounded-[16px] px-4"
+        className={`group focus:bg-primary focus:text-white data-[state=open]:bg-primary data-[state=open]:text-white data-[state=open]:rounded-[16px] px-4 ${stylesAccordionItem}`}
       >
         <AccordionTrigger className="font-montserrat text-base font-semibold text-start !no-underline">
           {item?.question}

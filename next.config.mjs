@@ -21,6 +21,7 @@ const nextConfig = {
         hostname: '**',
       },
     ],
+    domains: ['localhost'],
   },
   reactStrictMode: false,
 };

@@ -21,6 +21,7 @@ export const HeroPage = ({
   blockRef,
   titleScroll = ' Don’t believe us? Keep reading...',
   features,
+  bredCrumbHref,
 }: {
   title: string;
   description: string;
@@ -35,6 +36,7 @@ export const HeroPage = ({
   blockRef?: any;
   titleScroll?: string;
   features?: boolean;
+  bredCrumbHref?: string;
 }) => {
   const path = usePathname();
   const scrollToTopOfBlock = () => {
@@ -42,7 +44,6 @@ export const HeroPage = ({
       blockRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
   return (
     <div
       className={cn(
