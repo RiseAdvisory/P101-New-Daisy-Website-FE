@@ -29,6 +29,7 @@ export const QASection = ({
   stylesAccordionItem,
   titleHidden,
   blockTop,
+  sectionFQ,
 }: {
   pageType: any;
   styles?: string;
@@ -36,6 +37,7 @@ export const QASection = ({
   stylesAccordionItem?: string;
   titleHidden?: boolean;
   blockTop?: string;
+  sectionFQ?: boolean;
 }) => {
   const [qaList, setQAlist] = useState<any>();
   useEffect(() => {
@@ -43,7 +45,7 @@ export const QASection = ({
       const data = await getData('en', pageType);
       setQAlist(data);
     })();
-  }, [pageType]);
+  }, []);
 
   return (
     <div className={`bg-[#F8F5F3] px-4 pb-28 md:pt-[200px] ${styles}`}>
@@ -64,6 +66,7 @@ export const QASection = ({
               item={item}
               stylesAcoordion={stylesAcoordion}
               stylesAccordionItem={stylesAccordionItem}
+              sectionFQ={sectionFQ}
             />
           );
         })}

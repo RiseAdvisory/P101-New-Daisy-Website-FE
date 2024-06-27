@@ -6,6 +6,14 @@ import { useEffect, useState } from 'react';
 
 const Faq = () => {
   const [dataFAQ, setDataFAQ] = useState<any>();
+  const [pageTypes, setPageTypes] = useState<string>('Business');
+  if (window !== undefined) {
+    const pageType = localStorage.getItem('activePage');
+
+    // if (pageType === '/business') {
+    //   return setPageTypes('Business');
+    // }
+  }
   useEffect(() => {
     (async () => {
       try {
@@ -27,12 +35,13 @@ const Faq = () => {
         secondDescription={dataFAQ?.description}
       />
       <QASection
-        pageType="Business"
+        pageType={pageTypes}
         styles="!bg-primary !pt-10"
         stylesAcoordion="!bg-primaryBtn text-white border-none"
         titleHidden={true}
         blockTop="!mt-0"
-        stylesAccordionItem=""
+        stylesAccordionItem="data-[state=open]:bg-white data-[state=open]:text-primary"
+        sectionFQ={true}
       />
     </div>
   );

@@ -5,19 +5,21 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import Separator from '../separator/Separator';
+import { cn } from '@/lib/utils';
 
 export const QAAccordion = ({
   value,
   item,
   stylesAcoordion,
   stylesAccordionItem,
+  sectionFQ,
 }: {
   value: any;
   item: any;
   stylesAcoordion?: string;
   stylesAccordionItem?: string;
+  sectionFQ?: boolean;
 }) => {
-  console.log(stylesAccordionItem);
   return (
     <Accordion
       type="multiple"
@@ -32,7 +34,10 @@ export const QAAccordion = ({
         </AccordionTrigger>
         <Separator className="hidden group-data-[state=open]:block data-[state=open]:bg-white group-data-[state=open]:my-4 group-data-[state=open]:mb-10" />
         <AccordionContent className="md:text-base  text-[#EAECEC] font-montserrat md:font-normal pb-6">
-          <div dangerouslySetInnerHTML={{ __html: item?.answer }} />
+          <div
+            className={cn('', { 'text-primaryBtn': sectionFQ })}
+            dangerouslySetInnerHTML={{ __html: item?.answer }}
+          />
         </AccordionContent>
       </AccordionItem>
     </Accordion>
