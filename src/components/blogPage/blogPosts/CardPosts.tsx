@@ -38,9 +38,11 @@ export const CardPosts = ({
         {listCard &&
           listCard.map((item: any, index: number) => {
             const [data] = item.attributes.image.data;
-            const imagePosts = `${baseURLImage + data.attributes.url}`;
+            const imagePosts = new URL(data.attributes.url, baseURLImage).href;
             const [dataOwner] = item.attributes.iconOwner.data;
-            const ownerSrc = `${baseURLImage + dataOwner.attributes.url}`;
+            const ownerSrc = new URL(dataOwner.attributes.url, baseURLImage)
+              .href;
+
             return (
               <li
                 onClick={() => {

@@ -1,6 +1,5 @@
 'use client';
 import Separator from '../separator/Separator';
-import image from '../../assets/images/AboutMissing.png';
 import Image from 'next/image';
 import { Dispatch, SetStateAction, useEffect, useRef } from 'react';
 import { baseURLImage } from '@/helpers/axiosConfig';
@@ -18,7 +17,6 @@ export const OurMissing = ({
     setScroll(blockRef);
   }, [setScroll]);
 
-  // Використання URL constructor для побудови URL
   const imageAbout = new URL(
     heroAbout?.heropicture.data[0].attributes.url,
     baseURLImage,
