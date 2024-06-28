@@ -6,9 +6,15 @@ import { useEffect, useState } from 'react';
 
 const BlogPosts = () => {
   const [heroBlog, setHeroBlog] = useState<any>();
+  const [listCard, setListCards] = useState<any>();
+
   useEffect(() => {
     (async () => {
       const response = await axiosInstance.get('hero-resources-blogposts');
+      const responseList = await axiosInstance.get(
+        '/resources-blog-posts?populate=*',
+      );
+      setListCards(responseList?.data.data);
       setHeroBlog(response?.data.data[0].attributes);
     })();
   }, []);
@@ -23,7 +29,7 @@ const BlogPosts = () => {
         styleSection="pb-[100px]"
         secondDescription={heroBlog?.description}
       />
-      <CardPosts redirect={true} style="cursor-pointer" />
+      <CardPosts redirect={true} style="cursor-pointer" listCard={listCard} />
     </div>
   );
 };

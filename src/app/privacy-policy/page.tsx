@@ -1,10 +1,24 @@
 'use client';
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import { PrivacyPoliceList } from '@/components/privacyPolice/PrivacyPolicyList';
-import { useState } from 'react';
+import axiosInstance from '@/helpers/axiosConfig';
+import { useEffect, useState } from 'react';
 
 const PrivacyPolicy = () => {
   const [scroll, setScroll] = useState(null);
+  const [dataSection, setDataSection] = useState<any>();
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const response = await axiosInstance.get('/pravicy-policies');
+        const [data] = response.data.data;
+        setDataSection(data.attributes);
+      } catch (error) {
+        console.log(error);
+      }
+    })();
+  }, []);
 
   return (
     <>
@@ -15,13 +29,13 @@ const PrivacyPolicy = () => {
         isVisibleBreadCrumbs={true}
         hiddenArrow={false}
         visibleDescriiton={false}
-        title="data usage"
-        description="Privacy Policy"
+        title={dataSection?.titleHero}
+        description={dataSection?.subtitleHero}
         heightScreen={true}
         styleSection="pb-[100px] pt-6 px-[16px] h-screen"
-        secondDescription="Guardians of Your Information: Welcome to The Daisy's Privacy Safehouse"
+        secondDescription={dataSection?.descriptionHero}
       />
-      <PrivacyPoliceList setScroll={setScroll} />
+      <PrivacyPoliceList setScroll={setScroll} dataSection={dataSection} />
     </>
   );
 };
