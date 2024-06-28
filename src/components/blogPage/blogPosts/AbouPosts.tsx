@@ -5,7 +5,10 @@ import { baseURLImage } from '@/helpers/axiosConfig';
 
 export const AboutPosts = () => {
   const { post } = usePostStore();
-  const aboutImage = baseURLImage + post?.imageAboutPost.data[0].attributes.url;
+  const aboutImage = new URL(
+    post?.imageAboutPost.data[0].attributes.url,
+    baseURLImage,
+  ).href;
 
   return (
     <div className="px-4 md:px-[280px]">
@@ -32,9 +35,9 @@ export const AboutPosts = () => {
         <Image
           src={aboutImage}
           alt="group meeting"
-          className="w-full mt-10 object-fit"
-          width={1400}
-          height={200}
+          className="w-full h-full mt-10 object-fit"
+          width={post?.image.data[0].attributes.width}
+          height={post?.image.data[0].attributes.height}
         />
       </div>
 
