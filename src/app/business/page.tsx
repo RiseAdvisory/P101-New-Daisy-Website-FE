@@ -38,7 +38,7 @@ const Business = () => {
         handleLoadingStatus(false);
       }
     })();
-  }, []);
+  }, [handleLoadingStatus]);
 
   useEffect(() => {
     try {
@@ -51,7 +51,7 @@ const Business = () => {
     } catch (error) {
       console.log(error);
     }
-  }, []);
+  }, [handleArray, handleLoadingStatus]);
 
   return (
     <>

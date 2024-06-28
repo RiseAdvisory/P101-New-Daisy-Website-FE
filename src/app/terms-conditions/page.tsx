@@ -1,11 +1,19 @@
 'use client';
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import { TermsConditionsSection } from '@/components/termsConditionsPage/TermsConditions';
-import { useState } from 'react';
+import axiosInstance from '@/helpers/axiosConfig';
+import { useEffect, useState } from 'react';
 
 const TermsConditions = () => {
   const [scroll, setScroll] = useState(null);
-
+  const [dataConditions, setDataConditions] = useState<any>();
+  useEffect(() => {
+    (async () => {
+      const response = await axiosInstance.get('/terms-conditions');
+      const [data] = response.data.data;
+      setDataConditions(data.attributes);
+    })();
+  }, []);
   return (
     <>
       <HeroPage
@@ -15,14 +23,17 @@ const TermsConditions = () => {
         isVisibleBreadCrumbs={true}
         hiddenArrow={false}
         visibleDescriiton={false}
-        title="policies"
-        description="Terms & Conditions"
+        title={dataConditions?.heroTitle}
+        description={dataConditions?.heroSubtitle}
         heightScreen={true}
         styleSection="pb-[100px] pt-6 px-[16px] h-screen"
         titleScroll="Explore the  terms"
-        secondDescription=" Welcome to the Gateway of Guidelines - You've Just Stepped onto The Daisy's Terms and Conditions Turf!"
+        secondDescription={dataConditions?.heroSubcription}
       />
-      <TermsConditionsSection setScroll={setScroll} />
+      <TermsConditionsSection
+        setScroll={setScroll}
+        dataConditions={dataConditions}
+      />
     </>
   );
 };

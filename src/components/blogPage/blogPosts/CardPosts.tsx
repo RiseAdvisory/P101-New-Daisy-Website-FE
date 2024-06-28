@@ -3,34 +3,25 @@ import Image from 'next/image';
 import { ClockIcon } from '@/assets/icons/clockIcon/ClockIcon';
 import { CalendarIcon } from '@/assets/icons/calendarIcon/CalendarIcon';
 import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import axiosInstance, { baseURLImage } from '@/helpers/axiosConfig';
+import { useEffect } from 'react';
+import { baseURLImage } from '@/helpers/axiosConfig';
 import { usePostStore } from '@/store/post';
 
 export const CardPosts = ({
   redirect,
   style,
+  listCard,
 }: {
   redirect: boolean;
   style?: string;
+  listCard: any;
 }) => {
-  const [listCard, setListCards] = useState<any>();
   const router = useRouter();
   const { handlePost } = usePostStore();
 
   useEffect(() => {
-    (async () => {
-      try {
-        const response = await axiosInstance.get(
-          '/resources-blog-posts?populate=*',
-        );
-        setListCards(response?.data.data);
-      } catch (error) {
-        console.log(error);
-      }
-    })();
     handlePost({});
-  }, []);
+  }, [handlePost]);
   return (
     <div className="bg-[#F8F5F3]">
       <div className="h-[230px] md:h-[240px] bg-primary"></div>
@@ -54,7 +45,7 @@ export const CardPosts = ({
                 key={index}
                 className={`w-full mx-auto flex flex-col items-center text-start rounded-[12px] bg-white border overflow-hidden ${style} hover:shadow-2xl`}
               >
-                <div className="w-full h-[230px]">
+                <div className="w-full h-[240px]">
                   <Image
                     src={imagePosts}
                     alt="welness"

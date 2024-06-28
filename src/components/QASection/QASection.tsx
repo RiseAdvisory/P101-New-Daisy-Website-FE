@@ -45,7 +45,7 @@ export const QASection = ({
       const data = await getData('en', pageType);
       setQAlist(data);
     })();
-  }, []);
+  }, [pageType]);
 
   return (
     <div className={`bg-[#F8F5F3] px-4 pb-28 md:pt-[200px] ${styles}`}>
