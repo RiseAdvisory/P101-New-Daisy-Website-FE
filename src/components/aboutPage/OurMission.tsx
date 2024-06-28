@@ -1,4 +1,4 @@
- 'use client';
+'use client';
 import Separator from '../separator/Separator';
 import image from '../../assets/images/AboutMissing.png';
 import Image from 'next/image';
