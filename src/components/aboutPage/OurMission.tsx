@@ -1,4 +1,4 @@
-'use client';
+ 'use client';
 import Separator from '../separator/Separator';
 import image from '../../assets/images/AboutMissing.png';
 import Image from 'next/image';
@@ -17,7 +17,12 @@ export const OurMissing = ({
   useEffect(() => {
     setScroll(blockRef);
   }, [setScroll]);
-  const imageAbout = `${baseURLImage + heroAbout?.heropicture.data[0].attributes.url}`;
+
+  // Використання URL constructor для побудови URL
+  const imageAbout = new URL(
+    heroAbout?.heropicture.data[0].attributes.url,
+    baseURLImage,
+  ).href;
 
   return (
     <div className="bg-white px-4 pt-[80px] pb-[140px]" ref={blockRef}>
@@ -47,7 +52,7 @@ export const OurMissing = ({
             {!imageAbout.includes('undefined') && (
               <Image
                 className=" md:!w-[648px] md:!h-[480px]"
-                src={imageAbout || image}
+                src={imageAbout}
                 alt="eyes in the leaves"
                 width={1000}
                 height={1000}
