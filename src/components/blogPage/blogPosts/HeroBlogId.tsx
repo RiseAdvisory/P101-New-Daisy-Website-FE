@@ -9,8 +9,12 @@ import { baseURLImage } from '@/helpers/axiosConfig';
 
 export const HeroBlogPage = () => {
   const { post } = usePostStore();
-  const bgImage = baseURLImage + post?.image.data[0].attributes.url;
-  const iconImg = baseURLImage + post?.iconOwner.data[0].attributes.url;
+
+  const bgImage = new URL(post?.image.data[0].attributes.url, baseURLImage)
+    .href;
+
+  const iconImg = new URL(post?.iconOwner.data[0].attributes.url, baseURLImage)
+    .href;
 
   return (
     <div
