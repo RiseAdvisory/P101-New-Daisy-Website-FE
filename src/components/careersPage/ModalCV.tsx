@@ -21,7 +21,9 @@ export const ModalCV = ({
   const [uploadSucces, setUploadSucces] = useState<number | undefined>();
   return (
     <Dialog open={openCV} onOpenChange={() => setOpenCV(!openCV)}>
-      <DialogContent className={cn("md:w-[700px]",{'max-w-fit':uploadSucces === 200})}>
+      <DialogContent
+        className={cn('md:w-[700px]', { 'max-w-fit': uploadSucces === 200 })}
+      >
         <DialogHeader>
           <DialogTitle
             className={cn(

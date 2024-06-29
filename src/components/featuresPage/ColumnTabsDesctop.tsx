@@ -18,7 +18,6 @@ export const ColumnTabsDesctop = ({
   description: string;
   dataList: any;
 }) => {
-
   return (
     <div className="px-[64px]">
       <div className="flex flex-col justify-center items-center text-center">

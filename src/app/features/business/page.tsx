@@ -13,7 +13,6 @@ const FeaturesBusiness = () => {
   const [dataListPayment, setDataListPayment] = useState<any>();
   const [dataListReports, setDataListReports] = useState<any>();
 
-
   useEffect(() => {
     (async () => {
       try {
@@ -52,9 +51,12 @@ const FeaturesBusiness = () => {
         styleSection="md:h-auto"
       />
       <SectionBusiness listOption={dataFeatures?.listBusinessOptions} />
-      <MobileViewProfessional dataFeatures={dataFeatures} dataListManagm={dataListManagm}
+      <MobileViewProfessional
+        dataFeatures={dataFeatures}
+        dataListManagm={dataListManagm}
         dataListPayment={dataListPayment}
-        dataListReports={dataListReports} />
+        dataListReports={dataListReports}
+      />
       <DesctopViewProfessional
         dataBusiness={dataFeatures}
         dataListManagm={dataListManagm}

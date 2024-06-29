@@ -14,8 +14,10 @@ const GetTheApp = () => {
       setGetApp(data.attributes);
     })();
   }, []);
-  const qrCode = new URL(dataGetApp?.qrCode.data[0].attributes.url, baseURLImage)
-    .href;
+  const qrCode = new URL(
+    dataGetApp?.qrCode.data[0].attributes.url,
+    baseURLImage,
+  ).href;
   console.log(qrCode);
   return (
     <>
