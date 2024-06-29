@@ -43,7 +43,7 @@ export const BusinessHero = ({
           </p>
           <Separator className="my-8" />
           <div className="grid grid-cols-[148px_1fr] ">
-            <div className="mr-6 h-auto hidden md:block bg-primaryBtn rounded-[8px]">
+            <div className="mr-6  hidden md:block bg-primaryBtn rounded-[8px] w-[148px] h-[148px]">
               <Image
                 width={2000}
                 height={2000}

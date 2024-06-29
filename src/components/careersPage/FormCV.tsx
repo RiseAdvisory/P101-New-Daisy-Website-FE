@@ -53,7 +53,7 @@ export const FormCV = ({
 
     try {
       const response = await axiosInstance.post(
-        'http://localhost:1337/api/form-careers',
+        'https://motivated-belief-b4a000ad6e.strapiapp.com/api/form-careers',
         formData,
         {
           headers: {
