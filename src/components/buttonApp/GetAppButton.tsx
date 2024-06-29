@@ -1,8 +1,10 @@
+'use client';
 import { AppStoreIcons } from '@/assets/icons/appMarket/AppStoreIcons';
 import { Button } from '../ui/button';
 import { GooglePlayIcons } from '@/assets/icons/appMarket/GooglePlayIcons';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export const GetAppButton = ({
   className,
@@ -13,6 +15,7 @@ export const GetAppButton = ({
   setOpen?: any;
   open?: boolean;
 }) => {
+  const router = useRouter();
   return (
     <Button
       asChild
@@ -27,10 +30,16 @@ export const GetAppButton = ({
     >
       <Link href={'/get-the-app'}>
         <div className="flex justify-center items-center hover:bg-white group hover:text-primary cursor-pointer">
-          <button className=" border-r-2 rtl:border-none rtl:ml-2 border-[#586968] pr-[11px]">
+          <button
+            className=" border-r-2 rtl:border-none rtl:ml-2 border-[#586968] pr-[11px]"
+            
+          >
             <AppStoreIcons w="15" h="17" className="group-hover:fill-primary" />
           </button>
-          <button className="px-[11px] rtl:border-r-2 border-[#586968]">
+          <button
+            className="px-[11px] rtl:border-r-2 border-[#586968]"
+            
+          >
             <GooglePlayIcons
               w="15"
               h="17"
