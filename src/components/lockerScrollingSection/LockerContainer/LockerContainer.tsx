@@ -36,7 +36,7 @@ const LockerContainer = () => {
   }, []);
 
   return (
-    <div className={styles.locker}>
+    <div className={`${styles.locker} !hidden md:!grid`}>
       <div className={styles.locker__image}>
         <div className={styles.locker__container}>
           {objects.map((el) => {

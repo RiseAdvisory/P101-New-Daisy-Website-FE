@@ -3,22 +3,27 @@ import { CardPosts } from '@/components/blogPage/blogPosts/CardPosts';
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import axiosInstance from '@/helpers/axiosConfig';
 import { ListUpdatesResources } from '@/lib/constants/listCardUpdates';
+import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
 
 const Updates = () => {
   const [heroUpdate, setHeroUpdate] = useState<any>();
   const [listCard, setListCards] = useState<any>();
 
+  const { lang } = useChangeLanguage();
+
   useEffect(() => {
     (async () => {
-      const response = await axiosInstance.get('hero-resources-updates');
-      const responseList = await axiosInstance.get(
-        '/resources-updates?populate=*',
+      const response = await axiosInstance.get(
+        `/hero-resources-updates?locale=${lang}`,
       );
-      setListCards(responseList?.data.data);
-      setHeroUpdate(response?.data.data[0].attributes);
+      const responseList = await axiosInstance.get(
+        `/resources-updates?populate=*&locale=${lang}`,
+      );
+      setListCards(responseList?.data?.data);
+      setHeroUpdate(response?.data?.data[0]?.attributes);
     })();
-  }, []);
+  }, [lang]);
   return (
     <div>
       <HeroPage

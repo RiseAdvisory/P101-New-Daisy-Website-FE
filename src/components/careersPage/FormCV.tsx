@@ -15,7 +15,7 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import DropZoneUpload from './ReactDropZone';
-import axiosInstance from '@/helpers/axiosConfig';
+import axios from 'axios';
 
 const formSchema = z.object({
   firstname: z.string(),
@@ -52,7 +52,7 @@ export const FormCV = ({
     formData.append('cv', files[0]);
 
     try {
-      const response = await axiosInstance.post(
+      const response = await axios.post(
         'https://motivated-belief-b4a000ad6e.strapiapp.com/api/form-careers',
         formData,
         {

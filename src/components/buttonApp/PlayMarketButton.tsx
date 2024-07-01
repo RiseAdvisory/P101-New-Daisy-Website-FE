@@ -2,6 +2,9 @@
 import { GooglePlayIcons } from '@/assets/icons/appMarket/GooglePlayIcons';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import axiosInstance from '@/helpers/axiosConfig';
+import { useChangeLanguage } from '@/store/language';
 
 export const PlayMarketButton = ({
   className,
@@ -12,15 +15,22 @@ export const PlayMarketButton = ({
   hoverText?: string;
   fillHover?: string;
 }) => {
+  const [dataButton, setDataBuutton] = useState<any>();
   const router = useRouter();
+  const { lang } = useChangeLanguage();
+
+  useEffect(() => {
+    (async () => {
+      const response = await axiosInstance.get(`/button-plays?locale=${lang}`);
+      const [data] = response?.data?.data;
+      setDataBuutton(data?.attributes?.objectAppPlay?.googlePlay);
+    })();
+  }, [lang]);
+
   return (
     <>
       <Button
-        onClick={() =>
-          router.push(
-            'https://apps.apple.com/kw/app/the-daisy/id1667105749?itsct=apps_box_link&itscg=30200',
-          )
-        }
+        onClick={() => router.push(dataButton?.link)}
         variant="navigation"
         className={`w-full group hover:bg-white hover:text-primary mr-0 h-full flex items-center justify-center rounded-xl py-4 ${className}`}
       >
@@ -32,10 +42,10 @@ export const PlayMarketButton = ({
           />
           <div className={`hover:text-primary ${hoverText}`}>
             <p className="text-start font-inter font-normal text-xs leading-3">
-              Download on the
+              {dataButton?.download}
             </p>
             <p className="text-start font-inter leading-6 text-lg font-bold">
-              Google Play
+              {dataButton?.type}
             </p>
           </div>
         </div>

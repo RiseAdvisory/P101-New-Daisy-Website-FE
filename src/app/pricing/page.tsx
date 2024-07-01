@@ -5,16 +5,30 @@ import { PricingHero } from '@/components/pricingPage/HeroPricing';
 import Separator from '@/components/separator/Separator';
 import { Switch } from '@/components/ui/switch';
 import axiosInstance from '@/helpers/axiosConfig';
-import { pricingBusinessCard } from '@/lib/constants/pricing/pricingBusiness';
-import { pricingProfessionalCard } from '@/lib/constants/pricing/prisingProfessional';
 import { cn } from '@/lib/utils';
+import { useChangePage } from '@/store/currentPage';
+import { useChangeLanguage } from '@/store/language';
 import { useEffect, useRef, useState } from 'react';
 
 const Pricing = () => {
-  const [activePricingPage, setActivePricingPage] = useState('professional');
+  const [activePricingPage, setActivePricingPage] = useState('');
   const [checkedMonth, setCheckedMonth] = useState(false);
   const [isRescomennded, setIsRecommended] = useState(false);
   const [dataPricing, setDataPricing] = useState<any>();
+  const { lang } = useChangeLanguage();
+  const { page } = useChangePage();
+
+  useEffect(() => {
+    if (page.includes('business')) {
+      setActivePricingPage('business');
+    }
+    if (page.includes('customer')) {
+      setActivePricingPage('business');
+    }
+    if (page.includes('professional')) {
+      setActivePricingPage('professional');
+    }
+  }, [page]);
 
   const currentPricing =
     activePricingPage === 'professional'
@@ -31,15 +45,16 @@ const Pricing = () => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await axiosInstance.get('/pricings');
-        setDataPricing(response.data.data[0].attributes);
+        const response = await axiosInstance.get(`/pricings?locale=${lang}`);
+        setDataPricing(response?.data?.data[0]?.attributes);
       } catch (error) {
         console.error(error);
       }
     })();
-  }, []);
+  }, [lang]);
 
   const pay = dataPricing?.switchAnnually;
+
   return (
     <div className="bg-[#F8F5F3] pb-[180px]">
       <PricingHero

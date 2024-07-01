@@ -13,23 +13,30 @@ import { OurPartnersSection } from '@/components/ourPartnters/OurPartnersSection
 import { Separator } from '@/components/ui/separator';
 import { useEffect, useState } from 'react';
 import axiosInstance from '@/helpers/axiosConfig';
+import { useChangeLanguage } from '@/store/language';
 
 const Customer = () => {
   const [heroCustomer, setHeroCustomer] = useState<any>();
   const [growth, setGrowth] = useState<any>();
 
+  const { lang } = useChangeLanguage();
+
   useEffect(() => {
     (async function getUser() {
       try {
-        const responseGrowth = await axiosInstance.get('/growth-customers');
-        const response = await axiosInstance.get('/home-customers');
-        setGrowth(responseGrowth?.data.data[0].attributes);
-        setHeroCustomer(response.data.data[0].attributes);
+        const responseGrowth = await axiosInstance.get(
+          `/growth-customers?locale=${lang}`,
+        );
+        const response = await axiosInstance.get(
+          `/home-customers?locale=${lang}`,
+        );
+        setGrowth(responseGrowth?.data?.data?.[0].attributes);
+        setHeroCustomer(response?.data?.data?.[0].attributes);
       } catch (error) {
         console.error(error);
       }
     })();
-  }, []);
+  }, [lang]);
   return (
     <div className="w-full bg-primary">
       <CustomerHero

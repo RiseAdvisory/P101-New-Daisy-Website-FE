@@ -2,18 +2,24 @@
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import { TermsConditionsSection } from '@/components/termsConditionsPage/TermsConditions';
 import axiosInstance from '@/helpers/axiosConfig';
+import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
 
 const TermsConditions = () => {
   const [scroll, setScroll] = useState(null);
   const [dataConditions, setDataConditions] = useState<any>();
+
+  const { lang } = useChangeLanguage();
+
   useEffect(() => {
     (async () => {
-      const response = await axiosInstance.get('/terms-conditions');
-      const [data] = response.data.data;
-      setDataConditions(data.attributes);
+      const response = await axiosInstance.get(
+        `/terms-conditions?locale=${lang}`,
+      );
+      const [data] = response?.data?.data;
+      setDataConditions(data?.attributes);
     })();
-  }, []);
+  }, [lang]);
   return (
     <>
       <HeroPage

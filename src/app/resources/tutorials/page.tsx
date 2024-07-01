@@ -3,18 +3,24 @@ import { TutorialSection } from '@/components/blogPage/tutorialPage/TutorialSect
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import { TabsTutorials } from '@/components/tabsTutorials/TabsTutorials';
 import axiosInstance from '@/helpers/axiosConfig';
+import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
 
 const Tutorials = () => {
   const [scroll, setScroll] = useState(null);
   const [dataTutorials, setDataTutorials] = useState<any>();
+
+  const { lang } = useChangeLanguage();
+
   useEffect(() => {
     (async () => {
-      const response = await axiosInstance.get('/resource-tutorials');
-      const [data] = response.data.data;
-      setDataTutorials(data.attributes);
+      const response = await axiosInstance.get(
+        `/resource-tutorials?locale=${lang}`,
+      );
+      const [data] = response?.data?.data;
+      setDataTutorials(data?.attributes);
     })();
-  }, []);
+  }, [lang]);
   return (
     <>
       <HeroPage

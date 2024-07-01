@@ -4,17 +4,18 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Dispatch, SetStateAction, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { BurgerMenu } from '@/assets/icons/burgerMenu/BurgerMenu';
 import { CloseIcon } from '@/assets/icons/closeIcon/CloseIcon';
 import { GetAppButton } from '../buttonApp/GetAppButton';
-import { mobileListNavigation } from '@/lib/constants/mobileListNavigation';
 import Link from 'next/link';
 import { ArrowRightIcon } from '@/assets/icons/arrowRightIcon/ArrowRightIcon';
 import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
 import { BreadcrumbMobile } from './breadCrumbMobile';
+import axiosInstance from '@/helpers/axiosConfig';
+import { useChangeLanguage } from '@/store/language';
 
 export const MobileMenu = ({
   openMenu,
@@ -24,7 +25,28 @@ export const MobileMenu = ({
   setOpenMenu: Dispatch<SetStateAction<boolean>>;
 }) => {
   const [onResources, setResources] = useState(true);
+  const [getTheApp, setGetTheApp] = useState<any>();
+  const [listNav, setListNav] = useState<any>();
   const router = useRouter();
+
+  const { lang } = useChangeLanguage();
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const response = await axiosInstance.get(`/headers?locale=${lang}`);
+        const responseList = await axiosInstance.get(
+          `/mobile-list-navigations?locale=${lang}`,
+        );
+        const [data] = response?.data?.data;
+        const [list] = responseList?.data?.data;
+        setListNav(list?.attributes);
+        setGetTheApp(data?.attributes?.getTheApp);
+      } catch (error) {
+        console.log(error);
+      }
+    })();
+  }, [lang]);
   return (
     <DropdownMenu open={openMenu} modal={false}>
       <DropdownMenuTrigger>
@@ -40,29 +62,30 @@ export const MobileMenu = ({
       <DropdownMenuContent className="rounded-none bg-primary text-white mt-[30px] px-4 md:hidden w-[100vw]">
         {onResources ? (
           <ul>
-            {mobileListNavigation.map((item, index) => {
-              return (
-                <li key={index}>
-                  <div className="flex justify-between items-center py-4">
-                    <Button
-                      className="font-montserrat font-semibold text-xl leading-8 w-full justify-start"
-                      onClick={() => {
-                        if (item.title === 'Resources') {
-                          setResources(false);
-                        } else {
-                          setOpenMenu(!openMenu);
-                          router.push(item.nav);
-                        }
-                      }}
-                    >
-                      {item.title}
-                    </Button>
-                    <ArrowRightIcon />
-                  </div>
-                  <Separator />
-                </li>
-              );
-            })}
+            {listNav?.listNavigation &&
+              listNav?.listNavigation.map((item: any, index: number) => {
+                return (
+                  <li key={index}>
+                    <div className="flex justify-between items-center py-4">
+                      <Button
+                        className="font-montserrat font-semibold text-xl leading-8 w-full justify-start"
+                        onClick={() => {
+                          if (item.title === 'Resources') {
+                            setResources(false);
+                          } else {
+                            setOpenMenu(!openMenu);
+                            router.push(item.nav);
+                          }
+                        }}
+                      >
+                        {item.title}
+                      </Button>
+                      <ArrowRightIcon />
+                    </div>
+                    <Separator />
+                  </li>
+                );
+              })}
           </ul>
         ) : (
           <div>
@@ -75,8 +98,8 @@ export const MobileMenu = ({
               />
             </div>
             <ul>
-              {mobileListNavigation[3]?.submenu!.map(
-                (submenuItem, subIndex) => (
+              {listNav?.listNavigation[3]?.submenu!.map(
+                (submenuItem: any, subIndex: number) => (
                   <li key={subIndex} className="pb-5">
                     <Link
                       href={submenuItem.nav}
@@ -107,6 +130,7 @@ export const MobileMenu = ({
           </div>
         )}
         <GetAppButton
+          textGetApp={getTheApp}
           className="w-full mb-10 mt-6"
           setOpen={setOpenMenu}
           open={openMenu}

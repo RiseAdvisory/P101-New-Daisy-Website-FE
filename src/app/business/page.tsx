@@ -20,18 +20,26 @@ import { useLoadingStore } from '@/store/loading';
 import { getData, getRandomElements } from '@/helpers/getPartners';
 import { Skeleton } from '@/components/ui/skeleton';
 import LockerContainer from '@/components/lockerScrollingSection/LockerContainer/LockerContainer';
+import { useChangeLanguage } from '@/store/language';
 
 const Business = () => {
   const [heroBusiness, setHeroBusiness] = useState<any>();
   const [growth, setGrowth] = useState<any>();
   const { handleArray, handleLoadingStatus } = useLoadingStore();
+
+  const { lang } = useChangeLanguage();
+
   useEffect(() => {
     (async function getBusiness() {
       try {
-        const responseGrowth = await axiosInstance.get('/growth-businesses');
-        const response = await axiosInstance.get('/home-businesses');
-        setHeroBusiness(response.data.data[0].attributes);
-        setGrowth(responseGrowth?.data.data[0].attributes);
+        const responseGrowth = await axiosInstance.get(
+          `/growth-businesses?locale=${lang}`,
+        );
+        const response = await axiosInstance.get(
+          `/home-businesses?locale=${lang}`,
+        );
+        setHeroBusiness(response?.data?.data?.[0]?.attributes);
+        setGrowth(responseGrowth?.data?.data?.[0]?.attributes);
       } catch (error) {
         console.error(error);
         handleLoadingStatus(false);
@@ -39,7 +47,7 @@ const Business = () => {
         handleLoadingStatus(false);
       }
     })();
-  }, [handleLoadingStatus]);
+  }, [handleLoadingStatus, lang]);
 
   useEffect(() => {
     try {
@@ -136,15 +144,8 @@ const Business = () => {
           <BecomeFormPartner />
         </div>
       ) : (
-        <div className="w-full h-screen mt-[100px] px-[50px] pt-[100px]">
-          <Skeleton className="w-full mb-10 h-[20px]" />
-          <Skeleton className="w-full mb-10 h-[20px]" />
-          <Skeleton className="w-full mb-10 h-[20px]" />
-          <Skeleton className="w-full mb-10 h-[20px]" />
-          <Skeleton className="w-full mb-10 h-[20px]" />
-          <Skeleton className="w-full mb-10 h-[20px]" />
-          <Skeleton className="w-full mb-10 h-[20px]" />
-          <Skeleton className="w-full mb-10 h-[20px]" />
+        <div className="w-full h-screen py-[40px] px-[20px] bg-primary">
+          <Skeleton className="w-full mb-10 h-full" />
         </div>
       )}
     </>

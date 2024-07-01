@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -26,6 +26,8 @@ import { ToggleButtonForm } from './ToogleForm';
 import { countries } from 'country-data';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axiosInstance from '@/helpers/axiosConfig';
+import { useChangeLanguage } from '@/store/language';
 
 const formSchema = z.object({
   name: z.string(),
@@ -51,6 +53,8 @@ export const ProfileForm = () => {
   const [business_type, setBusinessType] = useState(false);
   const [homeService, setHomeService] = useState(false);
   const [isSubmit, setIsSubmit] = useState(false);
+  const [textForm, setTextForm] = useState<any>();
+  const [descriptionForm, setDescriptionForm] = useState<any>();
   const [contentChange, setContentChange] = useState({
     serviceProvidorType: 'Freelances',
     homeVisits: 'No',
@@ -112,7 +116,7 @@ export const ProfileForm = () => {
       setIsSubmit(false);
     }
   };
-
+  const { lang } = useChangeLanguage();
   const handleFocus = (fieldName: string) => {
     setActiveField(fieldName);
   };
@@ -120,6 +124,16 @@ export const ProfileForm = () => {
   const handleBlur = () => {
     setActiveField(null);
   };
+  useEffect(() => {
+    (async () => {
+      const response = await axiosInstance.get(
+        `/form-becomepartners?locale${lang}`,
+      );
+      const [data] = response?.data?.data;
+      setTextForm(data?.attributes?.formDescription);
+      setDescriptionForm(data?.attributes?.formPlaceholder);
+    })();
+  }, [lang]);
 
   return (
     <Form {...form}>
@@ -138,12 +152,12 @@ export const ProfileForm = () => {
                     activeField === 'name' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
-                  Full Name
+                  {textForm?.name}
                 </FormLabel>
                 <FormControl>
                   <Input
                     className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
-                    placeholder="Your name"
+                    placeholder={descriptionForm?.name}
                     {...field}
                     onFocus={() => handleFocus('name')}
                     onBlur={handleBlur}
@@ -163,13 +177,13 @@ export const ProfileForm = () => {
                     activeField === 'email' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
-                  Work Email
+                  {textForm?.email}
                 </FormLabel>
                 <FormControl>
                   <Input
                     type="email"
                     className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
-                    placeholder="gmail@gmail.com"
+                    placeholder={descriptionForm?.email}
                     {...field}
                     onFocus={() => handleFocus('email')}
                     onBlur={handleBlur}
@@ -182,11 +196,11 @@ export const ProfileForm = () => {
         </div>
         <div className="w-full mt-6">
           <p className="text-[#172524] font-montserrat font-semibold mb-2">
-            Service Providor Type
+            {textForm?.serviceProvidor}
           </p>
           <ToggleButtonForm
-            firstValue="Business"
-            secondValue="Freelances"
+            firstValue={textForm?.serviceProvidorValue[0]}
+            secondValue={textForm?.serviceProvidorValue[1]}
             homeService={business_type}
             setHomeService={setBusinessType}
             setContent={setContentChange}
@@ -205,12 +219,12 @@ export const ProfileForm = () => {
                       activeField === ' business_name' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
-                    Business Name
+                    {textForm?.businessName}
                   </FormLabel>
                   <FormControl>
                     <Input
                       className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
-                      placeholder="Spa Time"
+                      placeholder={descriptionForm?.businessName}
                       {...field}
                       onFocus={() => handleFocus('business_name')}
                       onBlur={handleBlur}
@@ -230,12 +244,12 @@ export const ProfileForm = () => {
                       activeField === 'business_type' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
-                    Business Type
+                    {textForm?.businessType}
                   </FormLabel>
                   <FormControl>
                     <Input
                       className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
-                      placeholder="Spa"
+                      placeholder={descriptionForm?.businessType}
                       {...field}
                       onFocus={() => handleFocus('business_type')}
                       onBlur={handleBlur}
@@ -258,7 +272,7 @@ export const ProfileForm = () => {
                     activeField === 'mobile' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
-                  Phone Number
+                  {textForm?.phoneNumber}
                 </FormLabel>
                 <div className="flex gap-x-2">
                   <FormControl>
@@ -323,12 +337,12 @@ export const ProfileForm = () => {
                     activeField === 'social_media' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
-                  Social Media Account
+                  {textForm?.socialMediaAccount}
                 </FormLabel>
                 <FormControl>
                   <Input
                     className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
-                    placeholder="https:/www.youMediaAccount.com"
+                    placeholder={descriptionForm?.socialMediaAccount}
                     {...field}
                     onFocus={() => handleFocus('social_media')}
                     onBlur={handleBlur}
@@ -351,7 +365,7 @@ export const ProfileForm = () => {
                       activeField === 'location_count' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
-                    Number of Locations
+                    {textForm?.numberofLocations}
                   </FormLabel>
                   <FormControl>
                     <Select onValueChange={field.onChange}>
@@ -359,12 +373,20 @@ export const ProfileForm = () => {
                         <SelectValue className="flex" placeholder="0" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="5" className="flex">
-                          5
-                        </SelectItem>
-                        <SelectItem value="10">10</SelectItem>
-                        <SelectItem value="15">15</SelectItem>
-                        {/* Add other country codes as needed */}
+                        {descriptionForm.numberofLocations.length &&
+                          descriptionForm.numberofLocations.map(
+                            (item: any, index: number) => {
+                              return (
+                                <SelectItem
+                                  key={index}
+                                  value={item}
+                                  className="flex"
+                                >
+                                  {item}
+                                </SelectItem>
+                              );
+                            },
+                          )}
                       </SelectContent>
                     </Select>
                   </FormControl>
@@ -383,7 +405,7 @@ export const ProfileForm = () => {
                       activeField === 'staff_count' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
-                    Number of Staff
+                    {textForm?.numberofStaff}
                   </FormLabel>
                   <FormControl>
                     <Select onValueChange={field.onChange}>
@@ -391,12 +413,20 @@ export const ProfileForm = () => {
                         <SelectValue className="flex " placeholder="0" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="5" className="flex">
-                          5
-                        </SelectItem>
-                        <SelectItem value="10">10</SelectItem>
-                        <SelectItem value="15">15</SelectItem>
-                        {/* Add other country codes as needed */}
+                        {descriptionForm.numberofStaff.length &&
+                          descriptionForm.numberofStaff.map(
+                            (item: any, index: number) => {
+                              return (
+                                <SelectItem
+                                  key={index}
+                                  value={item}
+                                  className="flex"
+                                >
+                                  {item}
+                                </SelectItem>
+                              );
+                            },
+                          )}
                       </SelectContent>
                     </Select>
                   </FormControl>
@@ -408,11 +438,11 @@ export const ProfileForm = () => {
         )}
         <div className="w-full mt-6">
           <p className="text-[#172524] font-montserrat font-semibold mb-2">
-            Do you provide home service visits?
+            {textForm?.homeServiceVisits}
           </p>
           <ToggleButtonForm
-            firstValue="Yes"
-            secondValue="No"
+            firstValue={textForm?.homeServiceVisitsList?.[0]}
+            secondValue={textForm?.homeServiceVisitsList?.[1]}
             homeService={homeService}
             setHomeService={setHomeService}
             setContent={setContentChange}
@@ -426,7 +456,7 @@ export const ProfileForm = () => {
           disabled={isSubmit}
           className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary hover:text-white font-montserrat font-semibold md:h-auto"
         >
-          {isSubmit ? 'Sending...' : 'Send Message'}
+          {isSubmit ? 'Sending...' : `${textForm?.buttonText}`}
         </Button>
       </form>
       <ToastContainer />
