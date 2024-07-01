@@ -24,7 +24,7 @@ export const TestimonialsCustomerList = () => {
         const response = await axiosInstance.get(
           `/resources-testimonials?populate=*&locale=${lang}`,
         );
-        setListTestimonials(response.data.data);
+        setListTestimonials(response?.data?.data);
       } catch (error) {
         console.log(error);
       }

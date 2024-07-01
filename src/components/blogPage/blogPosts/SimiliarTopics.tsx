@@ -20,7 +20,7 @@ export const SimiliarTopick = () => {
       const responseList = await axiosInstance.get(
         `/resources-blog-posts?populate=*&locale=${lang}`,
       );
-      setListCards(responseList?.data.data);
+      setListCards(responseList?.data?.data);
     })();
   }, [lang]);
   return (

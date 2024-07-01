@@ -16,8 +16,8 @@ const TermsConditions = () => {
       const response = await axiosInstance.get(
         `/terms-conditions?locale=${lang}`,
       );
-      const [data] = response.data.data;
-      setDataConditions(data.attributes);
+      const [data] = response?.data?.data;
+      setDataConditions(data?.attributes);
     })();
   }, [lang]);
   return (

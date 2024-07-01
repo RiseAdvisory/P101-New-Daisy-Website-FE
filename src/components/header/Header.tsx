@@ -30,6 +30,7 @@ export const Header = () => {
   const [optionsToogleFeature, setOptionsToggleFeatures] = useState<any>();
   const [getTheApp, setGetTheApp] = useState<any>();
   const [activePages, setActivePages] = useState<any>();
+  const [listLanguage, setListLanguage] = useState<any>();
 
   const { lang, changeLanguages } = useChangeLanguage();
 
@@ -39,12 +40,17 @@ export const Header = () => {
       const responseToggle = await axiosInstance.get(
         `/options-toogles?locale=${lang}`,
       );
-      const [data] = response.data.data;
-      const [dataToggle] = responseToggle.data.data;
+      const responseLang = await axiosInstance.get(
+        `/change-languages?locale=${lang}`,
+      );
+      const [dataLang] = responseLang?.data?.data;
+      setListLanguage(dataLang?.attributes?.listLanguage);
+      const [data] = response?.data?.data;
+      const [dataToggle] = responseToggle?.data?.data;
       setGetTheApp(data?.attributes?.getTheApp);
-      setOptionsToggle(dataToggle?.attributes.optionsToogle);
-      setOptionsToggleFeatures(dataToggle?.attributes.optionsTooglseFeatures);
-      setListheader(data?.attributes.headerNavList);
+      setOptionsToggle(dataToggle?.attributes?.optionsToogle);
+      setOptionsToggleFeatures(dataToggle?.attributes?.optionsTooglseFeatures);
+      setListheader(data?.attributes?.headerNavList);
     })();
   }, [lang]);
   useEffect(() => {
@@ -87,6 +93,7 @@ export const Header = () => {
     }
   }, []);
   const { page } = useChangePage();
+
   return (
     <header className="w-full rtl:md:  bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16 fixed z-40">
       <Link href={page} onClick={() => setChangePage('Business')}>
@@ -106,7 +113,7 @@ export const Header = () => {
               <DropDownMobileHeaderLang
                 state={changeLang}
                 setState={setChangeLang}
-                list={changeLanguage}
+                list={listLanguage}
                 classNames="px-2 hover:bg-white hover:text-primary "
               />
             </>

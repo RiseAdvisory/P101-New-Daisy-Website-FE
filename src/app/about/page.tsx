@@ -14,14 +14,16 @@ const About = () => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await axiosInstance.get(`/about-pages?populate=*&locale=${lang}`);
+        const response = await axiosInstance.get(
+          `/about-pages?populate=*&locale=${lang}`,
+        );
 
         setHeroAbout(response?.data?.data[0]?.attributes);
       } catch (error) {
         console.error(error);
       }
     })();
-  }, []);
+  }, [lang]);
 
   return (
     <>

@@ -14,13 +14,25 @@ export const TogglePricing = ({
   setCurrentPricing: any;
   toogleName: any;
 }) => {
-  const [active, setActive] = useState('professional');
-  console.log(active);
+  const { page } = useChangePage();
+
+  const [active, setActive] = useState('');
+  useEffect(() => {
+    if (page.includes('business')) {
+      setActive('business');
+    }
+    if (page.includes('customer')) {
+      setActive('business');
+    }
+    if (page.includes('professional')) {
+      setActive('professional');
+    }
+  }, [page]);
+
   useEffect(() => {
     setCurrentPricing(active);
   }, [setCurrentPricing, active]);
-  const { page } = useChangePage();
-  console.log('🚀 ~ page:', page);
+
   return (
     <div
       className={cn(

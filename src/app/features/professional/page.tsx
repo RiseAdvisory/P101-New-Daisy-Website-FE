@@ -16,7 +16,9 @@ const Professional = () => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await axiosInstance.get(`/features-professionals?locale=${lang}`);
+        const response = await axiosInstance.get(
+          `/features-professionals?locale=${lang}`,
+        );
         setDataProfessional(response?.data?.data?.[0].attributes);
         const listProfessionalResponse = await axiosInstance.get(
           `/features-professional-lists?populate=*&locale=${lang}`,

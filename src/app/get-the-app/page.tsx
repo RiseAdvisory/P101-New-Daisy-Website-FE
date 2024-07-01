@@ -10,7 +10,6 @@ const GetTheApp = () => {
   const [dataGetApp, setGetApp] = useState<any>();
 
   const { lang } = useChangeLanguage();
-  console.log(dataGetApp);
   useEffect(() => {
     (async () => {
       const response = await axiosInstance.get(
@@ -24,8 +23,7 @@ const GetTheApp = () => {
     dataGetApp?.qrCode.data[0].attributes.url,
     baseURLImage,
   ).href;
-  console.log(qrCode);
-  console.log(dataGetApp?.titleBredCrumb.title);
+
   return (
     <>
       <HeroPage

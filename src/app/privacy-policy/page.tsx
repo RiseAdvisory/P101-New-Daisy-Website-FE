@@ -17,7 +17,7 @@ const PrivacyPolicy = () => {
         const response = await axiosInstance.get(
           `/pravicy-policies?locale=${lang}`,
         );
-        const [data] = response.data.data;
+        const [data] = response?.data?.data;
         setDataSection(data?.attributes);
       } catch (error) {
         console.log(error);

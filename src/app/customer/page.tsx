@@ -24,8 +24,12 @@ const Customer = () => {
   useEffect(() => {
     (async function getUser() {
       try {
-        const responseGrowth = await axiosInstance.get(`/growth-customers?locale=${lang}`);
-        const response = await axiosInstance.get(`/home-customers?locale=${lang}`);
+        const responseGrowth = await axiosInstance.get(
+          `/growth-customers?locale=${lang}`,
+        );
+        const response = await axiosInstance.get(
+          `/home-customers?locale=${lang}`,
+        );
         setGrowth(responseGrowth?.data?.data?.[0].attributes);
         setHeroCustomer(response?.data?.data?.[0].attributes);
       } catch (error) {

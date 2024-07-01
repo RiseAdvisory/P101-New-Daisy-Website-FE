@@ -12,15 +12,16 @@ const Updates = () => {
 
   const { lang } = useChangeLanguage();
 
-
   useEffect(() => {
     (async () => {
-      const response = await axiosInstance.get(`/hero-resources-updates?locale=${lang}`);
+      const response = await axiosInstance.get(
+        `/hero-resources-updates?locale=${lang}`,
+      );
       const responseList = await axiosInstance.get(
         `/resources-updates?populate=*&locale=${lang}`,
       );
-      setListCards(responseList?.data.data);
-      setHeroUpdate(response?.data.data[0].attributes);
+      setListCards(responseList?.data?.data);
+      setHeroUpdate(response?.data?.data[0]?.attributes);
     })();
   }, [lang]);
   return (

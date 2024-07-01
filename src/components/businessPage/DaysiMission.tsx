@@ -16,8 +16,10 @@ export const DaysiMission = () => {
   useEffect(() => {
     (async function getJoinDaisy() {
       try {
-        const response = await axiosInstance.get(`/daisymissions?locale=${lang}`);
-        setDaisyMission(response.data.data?.[0].attributes);
+        const response = await axiosInstance.get(
+          `/daisymissions?locale=${lang}`,
+        );
+        setDaisyMission(response?.data?.data?.[0]?.attributes);
       } catch (error) {
         console.error(error);
       }

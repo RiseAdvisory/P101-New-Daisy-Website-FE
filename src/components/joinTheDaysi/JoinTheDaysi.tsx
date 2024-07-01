@@ -20,8 +20,8 @@ export const JoinTheDaisy = () => {
         const responseList = await axiosInstance.get(
           `/join-daisylists?populate=*&locale=${lang}`,
         );
-        setJoinDaisyList(responseList.data.data);
-        setJoinDaisy(response.data.data?.[0]?.attributes);
+        setJoinDaisyList(responseList?.data?.data);
+        setJoinDaisy(response?.data?.data?.[0]?.attributes);
       } catch (error) {
         console.error(error);
       }

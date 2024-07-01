@@ -17,12 +17,13 @@ export const ExperienceDaisy = () => {
   const [experienceDaisy, setExperienceDaisy] = useState<any>();
   const { lang } = useChangeLanguage();
 
-
   useEffect(() => {
     (async function getBusiness() {
       try {
-        const response = await axiosInstance.get(`/experience-daisies?locale=${lang}`);
-        setExperienceDaisy(response.data?.data?.[0]?.attributes);
+        const response = await axiosInstance.get(
+          `/experience-daisies?locale=${lang}`,
+        );
+        setExperienceDaisy(response?.data?.data?.[0]?.attributes);
       } catch (error) {
         console.error(error);
       }

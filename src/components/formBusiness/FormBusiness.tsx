@@ -129,7 +129,7 @@ export const ProfileForm = () => {
       const response = await axiosInstance.get(
         `/form-becomepartners?locale${lang}`,
       );
-      const [data] = response.data.data;
+      const [data] = response?.data?.data;
       setTextForm(data?.attributes?.formDescription);
       setDescriptionForm(data?.attributes?.formPlaceholder);
     })();

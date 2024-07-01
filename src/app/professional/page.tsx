@@ -26,14 +26,17 @@ const Professional = () => {
   const [growth, setGrowth] = useState<any>();
   const { lang } = useChangeLanguage();
 
-
   useEffect(() => {
     (async function getProfessional() {
       try {
-        const responseGrowth = await axiosInstance.get(`/growth-professionals?locale=${lang}`);
-        const response = await axiosInstance.get(`/home-professionals?locale=${lang}`);
-        setGrowth(responseGrowth?.data.data[0].attributes);
-        setHeroProfessional(response.data?.data);
+        const responseGrowth = await axiosInstance.get(
+          `/growth-professionals?locale=${lang}`,
+        );
+        const response = await axiosInstance.get(
+          `/home-professionals?locale=${lang}`,
+        );
+        setGrowth(responseGrowth?.data?.data[0]?.attributes);
+        setHeroProfessional(response?.data?.data);
       } catch (error) {
         console.error(error);
       }

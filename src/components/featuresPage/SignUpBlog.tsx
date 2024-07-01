@@ -13,8 +13,10 @@ export const SignUpBlog = ({ style }: { style?: string }) => {
 
   useEffect(() => {
     (async () => {
-      const response = await axiosInstance.get(`/sign-up-blocks?locale=${lang}`);
-      const [data] = response.data.data;
+      const response = await axiosInstance.get(
+        `/sign-up-blocks?locale=${lang}`,
+      );
+      const [data] = response?.data?.data;
       setSignUp(data.attributes.signUpText);
     })();
   }, [lang]);

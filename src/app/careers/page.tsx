@@ -21,7 +21,7 @@ const Careers = () => {
         setDataCareers(data?.attributes);
       } catch (error) {}
     })();
-  }, []);
+  }, [lang]);
 
   return (
     <div className="w-full">

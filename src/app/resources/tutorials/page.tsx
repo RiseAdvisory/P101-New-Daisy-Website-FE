@@ -17,8 +17,8 @@ const Tutorials = () => {
       const response = await axiosInstance.get(
         `/resource-tutorials?locale=${lang}`,
       );
-      const [data] = response.data.data;
-      setDataTutorials(data.attributes);
+      const [data] = response?.data?.data;
+      setDataTutorials(data?.attributes);
     })();
   }, [lang]);
   return (

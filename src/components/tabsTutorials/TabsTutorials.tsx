@@ -13,10 +13,11 @@ export const TabsTutorials = () => {
 
   const { lang } = useChangeLanguage();
 
-
   useEffect(() => {
     (async () => {
-      const response = await axiosInstance.get(`/resorce-tutorial-tabs?locale=${lang}`);
+      const response = await axiosInstance.get(
+        `/resorce-tutorial-tabs?locale=${lang}`,
+      );
       const [data] = response?.data?.data;
       setDataTabs(data?.attributes);
     })();

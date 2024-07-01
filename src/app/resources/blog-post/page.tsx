@@ -19,8 +19,8 @@ const BlogPosts = () => {
       const responseList = await axiosInstance.get(
         `/resources-blog-posts?populate=*&locale=${lang}`,
       );
-      setListCards(responseList?.data.data);
-      setHeroBlog(response?.data.data[0].attributes);
+      setListCards(responseList?.data?.data);
+      setHeroBlog(response?.data?.data[0]?.attributes);
     })();
   }, [lang]);
   return (
