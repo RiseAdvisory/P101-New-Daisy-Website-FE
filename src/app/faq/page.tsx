@@ -18,7 +18,7 @@ const Faq = () => {
     (async () => {
       try {
         const response = await axiosInstance('/faqs');
-        setDataFAQ(response?.data.data[0].attributes);
+        setDataFAQ(response?.data?.data[0]?.attributes);
       } catch (error) {
         console.log(error);
       }

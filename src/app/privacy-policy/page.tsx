@@ -2,23 +2,28 @@
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import { PrivacyPoliceList } from '@/components/privacyPolice/PrivacyPolicyList';
 import axiosInstance from '@/helpers/axiosConfig';
+import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
 
 const PrivacyPolicy = () => {
   const [scroll, setScroll] = useState(null);
   const [dataSection, setDataSection] = useState<any>();
 
+  const { lang } = useChangeLanguage();
+
   useEffect(() => {
     (async () => {
       try {
-        const response = await axiosInstance.get('/pravicy-policies');
+        const response = await axiosInstance.get(
+          `/pravicy-policies?locale=${lang}`,
+        );
         const [data] = response.data.data;
-        setDataSection(data.attributes);
+        setDataSection(data?.attributes);
       } catch (error) {
         console.log(error);
       }
     })();
-  }, []);
+  }, [lang]);
 
   return (
     <>

@@ -11,20 +11,23 @@ import stars from '../../assets/images/starsBg.png';
 import doublePhoto from '../../assets/images/PHONEallheight.png';
 import { useEffect, useState } from 'react';
 import axiosInstance from '@/helpers/axiosConfig';
+import { useChangeLanguage } from '@/store/language';
 
 export const ExperienceDaisy = () => {
   const [experienceDaisy, setExperienceDaisy] = useState<any>();
+  const { lang } = useChangeLanguage();
+
 
   useEffect(() => {
     (async function getBusiness() {
       try {
-        const response = await axiosInstance.get('/experience-daisies');
-        setExperienceDaisy(response.data.data[0].attributes);
+        const response = await axiosInstance.get(`/experience-daisies?locale=${lang}`);
+        setExperienceDaisy(response.data?.data?.[0]?.attributes);
       } catch (error) {
         console.error(error);
       }
     })();
-  }, []);
+  }, [lang]);
   return (
     <div className="md:bg-custom-gradient md:pt-[150px]">
       <div className="pt-[80px] px-4 md:flex relative bg-primary md:mx-[63px] md:rounded-[16px]">

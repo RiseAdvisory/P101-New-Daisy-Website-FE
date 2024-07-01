@@ -8,6 +8,7 @@ import axiosInstance from '@/helpers/axiosConfig';
 import { pricingBusinessCard } from '@/lib/constants/pricing/pricingBusiness';
 import { pricingProfessionalCard } from '@/lib/constants/pricing/prisingProfessional';
 import { cn } from '@/lib/utils';
+import { useChangeLanguage } from '@/store/language';
 import { useEffect, useRef, useState } from 'react';
 
 const Pricing = () => {
@@ -28,16 +29,18 @@ const Pricing = () => {
     }
   };
 
+  const { lang } = useChangeLanguage();
+
   useEffect(() => {
     (async () => {
       try {
-        const response = await axiosInstance.get('/pricings');
+        const response = await axiosInstance.get(`/pricings?locale=${lang}`);
         setDataPricing(response.data.data[0].attributes);
       } catch (error) {
         console.error(error);
       }
     })();
-  }, []);
+  }, [lang]);
 
   const pay = dataPricing?.switchAnnually;
   return (

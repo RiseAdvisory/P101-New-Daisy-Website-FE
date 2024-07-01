@@ -1,6 +1,7 @@
 'use client';
 import axiosInstance, { baseURLImage } from '@/helpers/axiosConfig';
 import { testimonialsList } from '@/lib/constants/testimonialList';
+import { useChangeLanguage } from '@/store/language';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
@@ -14,18 +15,21 @@ const test = {
 
 export const TestimonialsCustomerList = () => {
   const [listTestimonials, setListTestimonials] = useState<any>();
+
+  const { lang } = useChangeLanguage();
+
   useEffect(() => {
     (async () => {
       try {
         const response = await axiosInstance.get(
-          '/resources-testimonials?populate=*',
+          `/resources-testimonials?populate=*&locale=${lang}`,
         );
         setListTestimonials(response.data.data);
       } catch (error) {
         console.log(error);
       }
     })();
-  }, []);
+  }, [lang]);
   const firstTestimonial = listTestimonials?.slice(0, 3);
   const secondTestimonial = listTestimonials?.slice(3, 6);
   const thirdTestimonial = listTestimonials?.slice(6, 9);

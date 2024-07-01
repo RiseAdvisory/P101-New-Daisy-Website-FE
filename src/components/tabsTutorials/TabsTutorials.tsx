@@ -5,18 +5,22 @@ import { tutorialsList, tutorialsListOne } from '@/lib/constants/tutorialsList';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import axiosInstance from '@/helpers/axiosConfig';
+import { useChangeLanguage } from '@/store/language';
 
 export const TabsTutorials = () => {
   const router = useRouter();
   const [dataTabs, setDataTabs] = useState<any>();
 
+  const { lang } = useChangeLanguage();
+
+
   useEffect(() => {
     (async () => {
-      const response = await axiosInstance.get('/resorce-tutorial-tabs');
-      const [data] = response.data.data;
-      setDataTabs(data.attributes);
+      const response = await axiosInstance.get(`/resorce-tutorial-tabs?locale=${lang}`);
+      const [data] = response?.data?.data;
+      setDataTabs(data?.attributes);
     })();
-  }, []);
+  }, [lang]);
   return (
     <Tabs defaultValue={tutorialsList[0]} className="flex bg-[#F8F5F3] ">
       <TabsList className="flex flex-col py-6  mr-6 ml-16 bg-white px-6 h-fit">

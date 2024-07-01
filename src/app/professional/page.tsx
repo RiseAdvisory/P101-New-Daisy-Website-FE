@@ -18,24 +18,27 @@ import axiosInstance from '@/helpers/axiosConfig';
 import { useEffect, useState } from 'react';
 
 import LockerContainer from '@/components/lockerScrollingSection/LockerContainer/LockerContainer';
+import { useChangeLanguage } from '@/store/language';
 
 const Professional = () => {
   const [heroProfessional, setHeroProfessional] = useState<any>();
 
   const [growth, setGrowth] = useState<any>();
+  const { lang } = useChangeLanguage();
+
 
   useEffect(() => {
     (async function getProfessional() {
       try {
-        const responseGrowth = await axiosInstance.get('/growth-professionals');
-        const response = await axiosInstance.get('/home-professionals');
+        const responseGrowth = await axiosInstance.get(`/growth-professionals?locale=${lang}`);
+        const response = await axiosInstance.get(`/home-professionals?locale=${lang}`);
         setGrowth(responseGrowth?.data.data[0].attributes);
-        setHeroProfessional(response.data.data);
+        setHeroProfessional(response.data?.data);
       } catch (error) {
         console.error(error);
       }
     })();
-  }, []);
+  }, [lang]);
   return (
     <div className="w-full bg-primary">
       <ProfessionalHero />

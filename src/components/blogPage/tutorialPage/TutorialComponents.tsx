@@ -4,16 +4,20 @@ import ImageTutorialsTop from '../../../assets/images/ImageTutorials.png';
 import ImageTutorialsSecond from '../../../assets/images/ImagesecondTutorials.png';
 import { useEffect, useState } from 'react';
 import axiosInstance from '@/helpers/axiosConfig';
+import { useChangeLanguage } from '@/store/language';
 
 export const TutorialComponents = () => {
   const [dataInfo, setDataInfo] = useState<any>();
+
+  const { lang } = useChangeLanguage();
+
   useEffect(() => {
     (async () => {
-      const response = await axiosInstance.get('tabs-components');
+      const response = await axiosInstance.get(`/tabs-components${lang}`);
       const [data] = response.data.data;
-      setDataInfo(data.attributes);
+      setDataInfo(data?.attributes);
     })();
-  }, []);
+  }, [lang]);
   return (
     <div>
       <h2 className="capitalize font-bold text-2xl mb-4 text-primary">

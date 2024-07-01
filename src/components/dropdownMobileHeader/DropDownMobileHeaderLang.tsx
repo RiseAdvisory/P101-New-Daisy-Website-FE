@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import { ArrowDownIcon } from '@/assets/icons/arrowDown/ArrowDownIcon';
 import {
@@ -8,7 +9,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
-import { useRouter } from 'next/navigation';
+import { useChangeLanguage } from '@/store/language';
 
 interface PropsDropDownHeader {
   state: string;
@@ -28,7 +29,8 @@ export const DropDownMobileHeaderLang = ({
   link,
 }: PropsDropDownHeader) => {
   const [open, setOpen] = useState(false);
-  const router = useRouter();
+  const { changeLanguages } = useChangeLanguage();
+
   const handleSelect = (label: string) => {
     setState(label);
     setOpen(false);
@@ -42,8 +44,8 @@ export const DropDownMobileHeaderLang = ({
           classNames,
         )}
       >
-        <p className="mr-2 rtl:mr-0 rtl:">{state}</p>
-        <ArrowDownIcon className=" stroke-white group-hover:stroke-primary" />
+        <p className="mr-2 rtl:mr-0 ">{state}</p>
+        <ArrowDownIcon className=" stroke-white group-hover:stroke-primary rtl:!mr-[10px]" />
       </DropdownMenuTrigger>
       <DropdownMenuContent
         className={cn(
@@ -61,7 +63,7 @@ export const DropDownMobileHeaderLang = ({
               className="w-full bg-white text-primary group-hover:bg-[#F2F4F4]"
               onClick={() => {
                 setOpen(false);
-                if (link) router.push(item.path);
+                changeLanguages(item.label.toLowerCase());
               }}
             >
               {item.label}

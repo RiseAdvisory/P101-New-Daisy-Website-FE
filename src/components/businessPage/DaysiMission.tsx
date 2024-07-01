@@ -6,20 +6,23 @@ import { useEffect, useState } from 'react';
 
 import { StarsIcons } from '../../assets/icons/starsIcon/StarIcons';
 import { StrategyIcons } from '../../assets/icons/strategyIcon/StrategyIcon';
+import { useChangeLanguage } from '@/store/language';
 
 export const DaysiMission = () => {
   const [daisyMissions, setDaisyMission] = useState<any>();
 
+  const { lang } = useChangeLanguage();
+
   useEffect(() => {
     (async function getJoinDaisy() {
       try {
-        const response = await axiosInstance.get('/daisymissions');
+        const response = await axiosInstance.get(`/daisymissions?locale=${lang}`);
         setDaisyMission(response.data.data?.[0].attributes);
       } catch (error) {
         console.error(error);
       }
     })();
-  }, []);
+  }, [lang]);
   return (
     <div className="bg-[#F8F5F3] pt-[80px] pb-[112px] md:px-[64px]">
       <div className="flex flex-col mx-auto text-center pt-20 px-3">

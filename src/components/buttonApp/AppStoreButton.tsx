@@ -1,7 +1,10 @@
 'use client';
+import axiosInstance from '@/helpers/axiosConfig';
 import { Button } from '../ui/button';
 import { AppStoreIcons } from '@/assets/icons/appMarket/AppStoreIcons';
+import { useChangeLanguage } from '@/store/language';
 import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 export const AppStoreButton = ({
   className,
@@ -12,15 +15,22 @@ export const AppStoreButton = ({
   hoverText?: string;
   fillHover?: string;
 }) => {
+  const [dataButton, setDataBuutton] = useState<any>();
   const router = useRouter();
+  const { lang } = useChangeLanguage();
+
+  useEffect(() => {
+    (async () => {
+      const response = await axiosInstance.get(`/button-plays?locale=${lang}`);
+      const [data] = response?.data?.data;
+      setDataBuutton(data?.attributes?.objectAppPlay?.appStore);
+    })();
+  }, [lang]);
+
   return (
     <>
       <Button
-        onClick={() =>
-          router.push(
-            'https://play.google.com/store/apps/details?id=com.trythedaisy.app',
-          )
-        }
+        onClick={() => router.push(dataButton?.link)}
         variant="navigation"
         className={`w-full mr-0 h-full felx items-center justify-center rounded-xl py-4 group hover:bg-white hover:text-primary ${className}`}
       >
@@ -32,10 +42,10 @@ export const AppStoreButton = ({
           />
           <div className={`hover:text-primary ${hoverText}`}>
             <p className="text-start font-inter font-normal text-xs leading-3">
-              Download on the
+              {dataButton?.download}
             </p>
             <p className="text-start font-inter leading-6 text-lg font-bold">
-              AppStore
+              {dataButton?.type}
             </p>
           </div>
         </div>

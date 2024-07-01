@@ -11,17 +11,20 @@ import { navigationList } from '@/lib/constants/footerNavigationList';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import axiosInstance from '@/helpers/axiosConfig';
+import { useChangeLanguage } from '@/store/language';
 
 export const Footer = () => {
   const [socialLinks, setSocialLinks] = useState<any>();
   const path = usePathname();
+  const { lang } = useChangeLanguage();
+
   const isVisibleAppBtn = path.includes('get-the-app');
   useEffect(() => {
     (async () => {
-      const response = await axiosInstance.get('/social-links');
-      setSocialLinks(response.data.data[0].attributes.socialLinks);
+      const response = await axiosInstance.get(`/social-links?locale=${lang}`);
+      setSocialLinks(response?.data?.data?.[0]?.attributes?.socialLinks);
     })();
-  }, []);
+  }, [lang]);
   return (
     <footer className="w-full bg-primary px-4 py-[124px] md:py-14 flex flex-col justify-center items-center">
       <Link href={'/'} className="mb-6 opacity-60">

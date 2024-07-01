@@ -4,18 +4,18 @@ import { Button } from '../ui/button';
 import { GooglePlayIcons } from '@/assets/icons/appMarket/GooglePlayIcons';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 
 export const GetAppButton = ({
   className,
   open,
   setOpen,
+  textGetApp,
 }: {
   className?: string;
   setOpen?: any;
   open?: boolean;
+  textGetApp: string;
 }) => {
-  const router = useRouter();
   return (
     <Button
       asChild
@@ -41,7 +41,7 @@ export const GetAppButton = ({
             />
           </button>
           <p className="text-start leading-6 text-base font-semibold">
-            Get The App
+            {textGetApp}
           </p>
         </div>
       </Link>

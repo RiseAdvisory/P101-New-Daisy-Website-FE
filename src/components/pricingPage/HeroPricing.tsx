@@ -26,6 +26,7 @@ export const PricingHero = ({
   dataPricing: any;
 }) => {
   const toogleName = dataPricing?.toggleBusinessProfessional;
+  console.log('🚀 ~ toogleName:', toogleName);
 
   return (
     <div

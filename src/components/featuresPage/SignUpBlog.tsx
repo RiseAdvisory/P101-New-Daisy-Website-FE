@@ -4,16 +4,20 @@ import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { MailIcons } from '@/assets/icons/mailIcons/mailicons';
 import axiosInstance from '@/helpers/axiosConfig';
+import { useChangeLanguage } from '@/store/language';
 
 export const SignUpBlog = ({ style }: { style?: string }) => {
   const [textSignUp, setSignUp] = useState<any>();
+
+  const { lang } = useChangeLanguage();
+
   useEffect(() => {
     (async () => {
-      const response = await axiosInstance.get('/sign-up-blocks');
+      const response = await axiosInstance.get(`/sign-up-blocks?locale=${lang}`);
       const [data] = response.data.data;
       setSignUp(data.attributes.signUpText);
     })();
-  }, []);
+  }, [lang]);
 
   return (
     <div
