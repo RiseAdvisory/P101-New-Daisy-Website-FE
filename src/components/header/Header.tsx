@@ -202,7 +202,7 @@ export const Header = () => {
             </div>
           </>
         ) : (
-          <div className=" flex ml-[50px] rtl:mr-[50px] rtl:ml-0 w-full">
+          <div className=" hidden md:flex ml-[50px] rtl:mr-[50px] rtl:ml-0 w-full">
             <div className="flex ">
               <Skeleton className="w-[100px] h-[30px] mr-2 rtl:mr-0 rtl:ml-2" />
               <Skeleton className="w-[100px] h-[30px] mr-2 rtl:mr-0 rtl:ml-2" />
