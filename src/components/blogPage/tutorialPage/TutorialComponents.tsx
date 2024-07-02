@@ -13,7 +13,9 @@ export const TutorialComponents = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await axiosInstance.get(`/tabs-components${lang}`);
+      const response = await axiosInstance.get(
+        `/tabs-components?locale=${lang}`,
+      );
       const [data] = response?.data?.data;
       setDataInfo(data?.attributes);
     })();

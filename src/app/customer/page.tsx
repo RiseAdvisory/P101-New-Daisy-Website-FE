@@ -37,7 +37,6 @@ const Customer = () => {
       }
     })();
   }, [lang]);
-  console.log(heroCustomer);
   return (
     <div className="w-full bg-primary">
       <CustomerHero

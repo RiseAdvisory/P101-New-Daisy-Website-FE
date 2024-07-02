@@ -10,7 +10,7 @@ const openSans = Open_Sans({
 });
 
 const montserrat = Montserrat({
-  subsets: ['latin', ],
+  subsets: ['latin'],
   variable: '--montserrat',
 });
 const inter = Inter({

@@ -9,7 +9,7 @@ export const BecomeFormPartner = () => {
   const { lang } = useChangeLanguage();
 
   useEffect(() => {
-    (async function getProfessional() {
+    (async () => {
       try {
         const response = await axiosInstance.get(
           `/become-partners?locale=${lang}`,

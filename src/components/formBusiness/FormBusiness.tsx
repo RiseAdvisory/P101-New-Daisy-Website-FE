@@ -127,7 +127,7 @@ export const ProfileForm = () => {
   useEffect(() => {
     (async () => {
       const response = await axiosInstance.get(
-        `/form-becomepartners?locale${lang}`,
+        `/form-becomepartners?locale=${lang}`,
       );
       const [data] = response?.data?.data;
       setTextForm(data?.attributes?.formDescription);
