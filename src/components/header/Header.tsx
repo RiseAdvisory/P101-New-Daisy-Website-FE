@@ -2,12 +2,8 @@
 import { LogoIconsS } from '@/assets/icons/logo/LogoIconsS';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import clsx from 'clsx';
 import { GetAppButton } from '../buttonApp/GetAppButton';
-import {
-  changeLanguage,
-  headerNavigationList,
-} from '@/lib/constants/headernavigationList';
+import { headerNavigationList } from '@/lib/constants/headernavigationList';
 import { DropDownMobileHeader } from '../dropdownMobileHeader/DropdownMobileHeader';
 import { usePathname } from 'next/navigation';
 import { DropdownResources } from '../blogPage/DropDownResources';
@@ -17,6 +13,8 @@ import { DropDownMobileHeaderLang } from '../dropdownMobileHeader/DropDownMobile
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useChangePage } from '@/store/currentPage';
+import { cn } from '@/lib/utils';
+import { Skeleton } from '../ui/skeleton';
 
 export const Header = () => {
   const path = usePathname();
@@ -75,12 +73,6 @@ export const Header = () => {
     setIsResourcesDropdownOpen(!isResourcesDropdownOpen);
   };
 
-  // const toggleBodyDir = () => {
-  //   const currentDir = document.body.getAttribute('dir') || 'rtl';
-  //   const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
-  //   document.body.setAttribute('dir', newDir);
-  // };
-
   const navListFeatures = path.includes('features')
     ? optionsToogleFeature
     : optionsToogle;
@@ -114,94 +106,119 @@ export const Header = () => {
                 state={changeLang}
                 setState={setChangeLang}
                 list={listLanguage}
-                classNames="px-2 hover:bg-white hover:text-primary "
+                classNames="px-2 hover:bg-white hover:text-primary rtl:ml-2"
               />
             </>
           )}
           <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
         </div>
-        <ul className="hidden md:flex md:gap-[10px] lg:gap-[20px] md:ml-[10px] lg:ml-[55px] rtl:md:ml-0 rtl:md:mr-[55px] rtl:first:mr-4">
-          {listHeader &&
-            listHeader.map(
-              (item: { title: string; nav: string }, index: number) => {
-                let href = item.nav;
+        {listHeader ? (
+          <>
+            <ul className="hidden md:flex md:gap-[10px] lg:gap-[20px] md:ml-[10px] lg:ml-[55px] rtl:md:ml-0 rtl:md:mr-[55px] rtl:first:mr-4">
+              {listHeader &&
+                listHeader.map(
+                  (item: { title: string; nav: string }, index: number) => {
+                    let href = item.nav;
 
-                if (item.title === 'Home') {
-                  if (typeof window !== 'undefined') {
-                    const storedHref = localStorage.getItem('activePage');
-                    if (storedHref) {
-                      href = storedHref;
+                    if (item.title === 'Home') {
+                      if (typeof window !== 'undefined') {
+                        const storedHref = localStorage.getItem('activePage');
+                        if (storedHref) {
+                          href = storedHref;
+                        }
+                      }
                     }
-                  }
-                }
-                if (item.title === 'Resources') {
-                  return (
-                    <li
-                      key={index}
-                      className={
-                        active === item.nav ? 'border-b-2 border-[#CAB2A6]' : ''
-                      }
-                    >
-                      <Link
-                        href="#"
-                        onClick={handleResourcesClick}
-                        className={clsx(
-                          ' font-normal text-[#D5D9D9] leading-6 hover:text-white cursor-pointer',
-                          {
-                            'text-white': active === item.nav,
-                            'text-gray-400': active !== item.nav,
-                          },
-                        )}
-                      >
-                        {item.title}
-                      </Link>
-                      <DropdownResources
-                        openBlog={isResourcesDropdownOpen}
-                        setOpenBlog={setIsResourcesDropdownOpen}
-                        setActive={setActive}
-                      />
-                    </li>
-                  );
-                } else {
-                  return (
-                    <li
-                      key={index}
-                      className={
-                        active === item.nav ? 'border-b-2 border-[#CAB2A6]' : ''
-                      }
-                    >
-                      <Link
-                        href={href}
-                        onClick={() => setActive(item.nav)}
-                        className={clsx(
-                          ' font-normal text-[#D5D9D9] leading-6 hover:text-white',
-                          {
-                            'text-white': active === item.nav,
-                            'text-gray-400': active !== item.nav,
-                          },
-                        )}
-                      >
-                        {item.title}
-                      </Link>
-                    </li>
-                  );
-                }
-              },
-            )}
-        </ul>
-        <ToggleButton />
-        <div className="hidden md:flex ">
-          <DropDownMobileHeader
-            state={changeLang}
-            setState={(val: any) => {
-              setChangeLang(val);
-              changeLanguages(val.toLowerCase());
-            }}
-            list={listLanguage}
-            classNameContent="!w-[70px]"
-          />
-          <GetAppButton textGetApp={getTheApp} />
-        </div>
+                    if (item.title === 'Resources') {
+                      return (
+                        <li
+                          key={index}
+                          className={
+                            active === item.nav
+                              ? 'border-b-2 border-[#CAB2A6]'
+                              : ''
+                          }
+                        >
+                          <Link
+                            href="#"
+                            onClick={handleResourcesClick}
+                            className={cn(
+                              ' font-normal text-[#D5D9D9] leading-6 hover:text-white cursor-pointer',
+                              {
+                                'text-white': active === item.nav,
+                                'text-gray-400': active !== item.nav,
+                              },
+                            )}
+                          >
+                            {item.title}
+                          </Link>
+                          <DropdownResources
+                            openBlog={isResourcesDropdownOpen}
+                            setOpenBlog={setIsResourcesDropdownOpen}
+                            setActive={setActive}
+                          />
+                        </li>
+                      );
+                    } else {
+                      return (
+                        <li
+                          key={index}
+                          className={
+                            active === item.nav
+                              ? 'border-b-2 border-[#CAB2A6]'
+                              : ''
+                          }
+                        >
+                          <Link
+                            href={href}
+                            onClick={() => setActive(item.nav)}
+                            className={cn(
+                              ' font-normal text-[#D5D9D9] leading-6 hover:text-white',
+                              {
+                                'text-white': active === item.nav,
+                                'text-gray-400': active !== item.nav,
+                              },
+                            )}
+                          >
+                            {item.title}
+                          </Link>
+                        </li>
+                      );
+                    }
+                  },
+                )}
+            </ul>
+            <ToggleButton />
+            <div className="hidden md:flex ">
+              <DropDownMobileHeader
+                state={changeLang}
+                setState={(val: any) => {
+                  setChangeLang(val);
+                  changeLanguages(val.toLowerCase());
+                }}
+                list={listLanguage}
+                classNameContent="!w-[70px]"
+              />
+              <GetAppButton textGetApp={getTheApp} />
+            </div>
+          </>
+        ) : (
+          <div className=" flex ml-[50px] rtl:mr-[50px] rtl:ml-0 w-full">
+            <div className="flex ">
+              <Skeleton className="w-[100px] h-[30px] mr-2 rtl:mr-0 rtl:ml-2" />
+              <Skeleton className="w-[100px] h-[30px] mr-2 rtl:mr-0 rtl:ml-2" />
+              <Skeleton className="w-[100px] h-[30px] mr-2 rtl:mr-0 rtl:ml-2" />
+              <Skeleton className="w-[100px] h-[30px] mr-2 rtl:mr-0 rtl:ml-2" />
+              <Skeleton className="w-[100px] h-[30px] mr-2 rtl:mr-0 rtl:ml-2" />
+              <Skeleton className="w-[100px] h-[30px] mr-2 rtl:mr-0 rtl:ml-2" />
+            </div>
+
+            <div className="ml-auto rtl:ml-0 rtl:mr-auto flex">
+              <Skeleton className="w-[300px] h-[30px] mr-2 rtl:mr-0 rtl:ml-2" />
+              <Skeleton className="w-[100px] h-[30px] mr-2 rtl:mr-0 rtl:ml-2" />
+              <Skeleton className="w-[200px] h-[30px] mr-2 rtl:mr-0 rtl:ml-2" />
+            </div>
+          </div>
+        )}
       </nav>
     </header>
   );
