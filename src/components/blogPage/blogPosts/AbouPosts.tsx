@@ -15,19 +15,19 @@ export const AboutPosts = () => {
       <h2 className="text-[#172524] font-bold text-3xl pt-20">
         {post.aboutPost.project}
       </h2>
-      <p className="font-montserrat text-[#455150] mt-3">
+      <p className="ltr:font-montserrat text-[#455150] mt-3">
         {post.aboutPost.projectSubcription}
       </p>
       <h2 className="text-[#172524] font-bold text-3xl pt-10">
         {post.aboutPost.idea}
       </h2>
-      <p className="font-montserrat text-[#455150] mt-3">
+      <p className="ltr:font-montserrat text-[#455150] mt-3">
         {post.aboutPost.ideaSubcription}
       </p>
       <h2 className="text-[#172524] font-bold text-3xl pt-10">
         {post.aboutPost.identity}
       </h2>
-      <p className="font-montserrat text-[#455150] mt-3">
+      <p className="ltr:font-montserrat text-[#455150] mt-3">
         {post.aboutPost.identitySubcription}
       </p>
 
@@ -46,7 +46,7 @@ export const AboutPosts = () => {
           {post.aboutPost.branded}
         </span>
       </div>
-      <p className="font-montserrat text-[#455150] mt-10">
+      <p className="ltr:font-montserrat text-[#455150] mt-10">
         {post.aboutPost.identitySubcription}
       </p>
     </div>

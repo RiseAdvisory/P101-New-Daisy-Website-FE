@@ -8,7 +8,7 @@ export const OurValue = ({ heroAbout }: { heroAbout: any }) => {
         <h1 className="text-center text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
           Our Values
         </h1>
-        <p className="text-center text-[#455150] mt-3 font-montserrat text-base font-normal"></p>
+        <p className="text-center text-[#455150] mt-3 ltr:font-montserrat text-base font-normal"></p>
         <div className="md:flex md:px-[40px]">
           <ul className="mt-8 md:w-[70%] md:grid md:grid-cols-2 md:gap-6 space-y-6 md:space-y-0">
             {heroAbout?.aboutValues.map((item: any, index: number) => (
@@ -20,7 +20,7 @@ export const OurValue = ({ heroAbout }: { heroAbout: any }) => {
                   <MessageIcons />
                 </span>
                 <h2 className="mt-6 text-[30px] leading-6">{item.title}</h2>
-                <p className="mt-2 text-[#455150] font-montserrat">
+                <p className="mt-2 text-[#455150] ltr:font-montserrat">
                   {item.subtitle}
                 </p>
               </li>
@@ -33,7 +33,7 @@ export const OurValue = ({ heroAbout }: { heroAbout: any }) => {
             <h2 className="mt-6 text-[30px] leading-6">
               {heroAbout?.lastBottomBlock.title}
             </h2>
-            <p className="mt-2 text-[#455150] font-montserrat">
+            <p className="mt-2 text-[#455150] ltr:font-montserrat">
               {heroAbout?.lastBottomBlock.subtitle}
             </p>
           </div>

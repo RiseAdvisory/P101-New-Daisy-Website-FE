@@ -127,7 +127,7 @@ export const ProfileForm = () => {
   useEffect(() => {
     (async () => {
       const response = await axiosInstance.get(
-        `/form-becomepartners?locale${lang}`,
+        `/form-becomepartners?locale=${lang}`,
       );
       const [data] = response?.data?.data;
       setTextForm(data?.attributes?.formDescription);
@@ -148,7 +148,7 @@ export const ProfileForm = () => {
             render={({ field }) => (
               <FormItem className="md:w-full mt-6">
                 <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
+                  className={`ltr:font-montserrat font-semibold text-base ${
                     activeField === 'name' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
@@ -173,7 +173,7 @@ export const ProfileForm = () => {
             render={({ field }) => (
               <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4">
                 <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
+                  className={`ltr:font-montserrat font-semibold text-base ${
                     activeField === 'email' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
@@ -195,7 +195,7 @@ export const ProfileForm = () => {
           />
         </div>
         <div className="w-full mt-6">
-          <p className="text-[#172524] font-montserrat font-semibold mb-2">
+          <p className="text-[#172524] ltr:font-montserrat font-semibold mb-2">
             {textForm?.serviceProvidor}
           </p>
           <ToggleButtonForm
@@ -215,7 +215,7 @@ export const ProfileForm = () => {
               render={({ field }) => (
                 <FormItem className="md:w-full mt-6 ">
                   <FormLabel
-                    className={`font-montserrat font-semibold text-base ${
+                    className={`ltr:font-montserrat font-semibold text-base ${
                       activeField === ' business_name' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
@@ -240,7 +240,7 @@ export const ProfileForm = () => {
               render={({ field }) => (
                 <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4">
                   <FormLabel
-                    className={`font-montserrat font-semibold text-base ${
+                    className={`ltr:font-montserrat font-semibold text-base ${
                       activeField === 'business_type' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
@@ -268,7 +268,7 @@ export const ProfileForm = () => {
             render={({ field }) => (
               <FormItem className="md:w-full mt-6">
                 <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
+                  className={`ltr:font-montserrat font-semibold text-base ${
                     activeField === 'mobile' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
@@ -333,7 +333,7 @@ export const ProfileForm = () => {
             render={({ field }) => (
               <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4">
                 <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
+                  className={`ltr:font-montserrat font-semibold text-base ${
                     activeField === 'social_media' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
@@ -361,7 +361,7 @@ export const ProfileForm = () => {
               render={({ field }) => (
                 <FormItem className="md:w-full mt-6">
                   <FormLabel
-                    className={`font-montserrat font-semibold text-base ${
+                    className={`ltr:font-montserrat font-semibold text-base ${
                       activeField === 'location_count' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
@@ -401,7 +401,7 @@ export const ProfileForm = () => {
               render={({ field }) => (
                 <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4 ">
                   <FormLabel
-                    className={`font-montserrat font-semibold text-base ${
+                    className={`ltr:font-montserrat font-semibold text-base ${
                       activeField === 'staff_count' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
@@ -437,7 +437,7 @@ export const ProfileForm = () => {
           </div>
         )}
         <div className="w-full mt-6">
-          <p className="text-[#172524] font-montserrat font-semibold mb-2">
+          <p className="text-[#172524] ltr:font-montserrat font-semibold mb-2">
             {textForm?.homeServiceVisits}
           </p>
           <ToggleButtonForm
@@ -454,7 +454,7 @@ export const ProfileForm = () => {
         <Button
           type="submit"
           disabled={isSubmit}
-          className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary hover:text-white font-montserrat font-semibold md:h-auto"
+          className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary hover:text-white ltr:font-montserrat font-semibold md:h-auto"
         >
           {isSubmit ? 'Sending...' : `${textForm?.buttonText}`}
         </Button>

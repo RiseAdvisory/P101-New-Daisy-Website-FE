@@ -42,9 +42,12 @@ const Faq = () => {
         blockTop="!mt-0"
         stylesAccordionItem="data-[state=open]:bg-white data-[state=open]:text-primary"
         sectionFQ={true}
+        titleFraque={'dwa'}
       />
     </div>
   );
 };
 
 export default Faq;
+
+//Frequently Asked Question

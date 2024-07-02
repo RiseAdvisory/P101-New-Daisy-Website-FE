@@ -43,7 +43,7 @@ export const ColumnTabsDesctop = ({
                       className="!items-start !bg-transparent data-[state=active]:!border data-[state=active]:!bg-white/10 group hover:!bg-white/10 flex flex-col w-full text-[16px] !p-6 text-[#172524] mt-[10px] justify-start rounded-lg cursor-pointer capitalize whitespace-nowrap py-3"
                       value={item.attributes.title}
                     >
-                      <span className="w-fit !text-start text-white font-montserrat  font-semibold text-[20px] leading-[30px] ">
+                      <span className="w-fit !text-start text-white ltr:font-montserrat  font-semibold text-[20px] leading-[30px] ">
                         {item.attributes.title}
                       </span>
                       <p className=" text-white">

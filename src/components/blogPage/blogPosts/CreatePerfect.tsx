@@ -10,7 +10,7 @@ export const CreatePerfect = () => {
       </h1>
       <Separator className="my-4 md:hidden" />
       <div>
-        <p className="font-montserrat text-[16px] leading-6 text-white mb-4">
+        <p className="ltr:font-montserrat text-[16px] leading-6 text-white mb-4">
           Download Now!
         </p>
         <div className="md:flex md:w-[420px]">

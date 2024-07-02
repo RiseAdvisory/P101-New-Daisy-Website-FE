@@ -27,7 +27,6 @@ export const PricingHero = ({
 }) => {
   const toogleName = dataPricing?.toggleBusinessProfessional;
 
-  console.log(activePricingPage);
   return (
     <div
       className={cn(

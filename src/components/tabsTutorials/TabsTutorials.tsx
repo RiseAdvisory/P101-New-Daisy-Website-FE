@@ -46,7 +46,7 @@ export const TabsTutorials = () => {
         <Button
           type="button"
           onClick={() => router.push('/contact')}
-          className="hover:bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 bg-primary font-montserrat font-semibold text-white hover:text-primary md:py-4 md:h-auto"
+          className="hover:bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 bg-primary ltr:font-montserrat font-semibold text-white hover:text-primary md:py-4 md:h-auto"
         >
           {dataTabs?.gotAQ}
         </Button>

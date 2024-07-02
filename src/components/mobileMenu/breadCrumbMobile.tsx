@@ -24,7 +24,7 @@ export const BreadcrumbMobile = ({
         <BreadcrumbItem>
           <BreadcrumbLink
             onClick={() => setBackMenu(!backmenu)}
-            className="text-white hover:text-[#C5C8C8] font-montserrat text-sm md:font-inter md:font-medium"
+            className="text-white hover:text-[#C5C8C8] ltr:font-montserrat text-sm md:ltr:font-inter md:font-medium"
           >
             {bredCrumbDesription}
           </BreadcrumbLink>
@@ -35,7 +35,7 @@ export const BreadcrumbMobile = ({
         <BreadcrumbItem>
           <BreadcrumbLink
             href="#"
-            className="text-[#C5C8C8] hover:text-white font-montserrat text-sm md:font-inter md:font-medium"
+            className="text-[#C5C8C8] hover:text-white ltr:font-montserrat text-sm md:ltr:font-inter md:font-medium"
           >
             {bredCrumbTitle}
           </BreadcrumbLink>

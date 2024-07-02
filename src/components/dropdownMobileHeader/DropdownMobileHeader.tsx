@@ -8,7 +8,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 interface PropsDropDownHeader {
   state: string;
@@ -31,7 +31,6 @@ export const DropDownMobileHeader = ({
   const router = useRouter();
   const [active, setActive] = useState('');
   const [stateActive, setStateActive] = useState('');
-  const pathname = usePathname();
   const handleSelect = (label: string) => {
     setState(label);
     setOpen(false);
@@ -55,7 +54,7 @@ export const DropDownMobileHeader = ({
         )}
       >
         <p className="mr-2 rtl:mr-0 rtl:">{state}</p>
-        <ArrowDownIcon className=" stroke-white group-hover:stroke-primary" />
+        <ArrowDownIcon className=" stroke-white group-hover:stroke-primary rtl:mr-2" />
       </DropdownMenuTrigger>
       <DropdownMenuContent
         className={cn(
@@ -65,7 +64,7 @@ export const DropDownMobileHeader = ({
       >
         {list?.map((item, index) => (
           <DropdownMenuItem
-            className="w-full flex flex-col self-center text-center justify-center !items-center font-montserrat font-normal text-base group"
+            className="w-full flex flex-col self-center text-center justify-center !items-center ltr:font-montserrat font-normal text-base group"
             onClick={() => handleSelect(item.label)}
             key={index}
           >

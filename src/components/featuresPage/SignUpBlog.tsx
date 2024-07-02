@@ -29,7 +29,7 @@ export const SignUpBlog = ({ style }: { style?: string }) => {
         <h2 className="text-primary font-bold text-[24px] leading-[30px] capitalize md:text-[32px] md:leading-10">
           {textSignUp?.title}
         </h2>
-        <p className="text-[#455150] font-montserrat text-base md:mt-4">
+        <p className="text-[#455150] ltr:font-montserrat text-base md:mt-4">
           {textSignUp?.description}
         </p>
       </div>
@@ -37,17 +37,17 @@ export const SignUpBlog = ({ style }: { style?: string }) => {
         <div className="flex mt-12 mb-4 md:mt-0">
           <div className="relative w-full">
             <Input
-              className="rounded-r-none border-r-none font-montserrat text-[#455150] pl-[46px]"
+              className="rounded-r-none border-r-none ltr:font-montserrat text-[#455150] pl-[46px]"
               placeholder="Enter your email"
             />
             <MailIcons style="absolute top-[11px] left-[12px]" />
           </div>
 
-          <Button className="rounded-l-none font-montserrat px-4 py-[14px] font-medium">
+          <Button className="rounded-l-none ltr:font-montserrat px-4 py-[14px] font-medium">
             Subscribe
           </Button>
         </div>
-        <p className="font-montserrat text-sm text-[#455150]">
+        <p className="ltr:font-montserrat text-sm text-[#455150]">
           {textSignUp?.about}
           <span className="font-semibold"> {textSignUp?.privacy}</span>
         </p>

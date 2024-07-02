@@ -13,7 +13,7 @@ export const EnterPrise = ({ data }: { data: any }) => {
           </h2>
           <Image src={stars} alt="stars" className="w-[31px] h-[32px] ml-4" />
         </div>
-        <p className="font-montserrat font-regular text-[#EAECEC] mt-4 md:max-w-[600px] md:mr-20">
+        <p className="ltr:font-montserrat font-regular text-[#EAECEC] mt-4 md:max-w-[600px] md:mr-20">
           {data?.description}
         </p>
       </div>

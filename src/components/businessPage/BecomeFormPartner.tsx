@@ -9,7 +9,7 @@ export const BecomeFormPartner = () => {
   const { lang } = useChangeLanguage();
 
   useEffect(() => {
-    (async function getProfessional() {
+    (async () => {
       try {
         const response = await axiosInstance.get(
           `/become-partners?locale=${lang}`,
@@ -26,7 +26,7 @@ export const BecomeFormPartner = () => {
         <h1 className="text-center text-white text-[32px] leading-10">
           {titleFormBecome?.[0]?.attributes?.title}
         </h1>
-        <p className="text-center text-[#D5D9D9]  mt-3 font-montserrat">
+        <p className="text-center text-[#D5D9D9]  mt-3 ltr:font-montserrat">
           {titleFormBecome?.[0]?.attributes?.subtitle}
         </p>
       </div>

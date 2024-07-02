@@ -41,10 +41,10 @@ export const AppStoreButton = ({
             className={`mr-3 rtl:ml-[15px] fill-white group-hover:fill-primary ${fillHover}`}
           />
           <div className={`hover:text-primary ${hoverText}`}>
-            <p className="text-start font-inter font-normal text-xs leading-3">
+            <p className="text-start ltr:font-inter font-normal text-xs leading-3">
               {dataButton?.download}
             </p>
-            <p className="text-start font-inter leading-6 text-lg font-bold">
+            <p className="text-start ltr:font-inter leading-6 text-lg font-bold">
               {dataButton?.type}
             </p>
           </div>

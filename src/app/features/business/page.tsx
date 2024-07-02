@@ -20,18 +20,18 @@ const FeaturesBusiness = () => {
     (async () => {
       try {
         const responseDataFeatures = await axiosInstance.get(
-          `/feature-businesses?populate=*&locale${lang}`,
+          `/feature-businesses?populate=*&locale=${lang}`,
         );
         const [dataFeatures] = responseDataFeatures.data.data;
         setDataFeatures(dataFeatures?.attributes);
         const responseListManagm = await axiosInstance.get(
-          `/features-business-marketings?populate=*&locale${lang}`,
+          `/features-business-marketings?populate=*&locale=${lang}`,
         );
         const responseListPayments = await axiosInstance.get(
-          `/feature-business-payments?populate=*&locale${lang}`,
+          `/feature-business-payments?populate=*&locale=${lang}`,
         );
         const responseListReports = await axiosInstance.get(
-          `/feature-business-reports?populate=*&locale${lang}`,
+          `/feature-business-reports?populate=*&locale=${lang}`,
         );
         setDataListManagm(responseListManagm?.data?.data);
         setDataListPayment(responseListPayments?.data?.data);

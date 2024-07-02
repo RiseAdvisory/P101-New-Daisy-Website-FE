@@ -34,7 +34,7 @@ export const JoinTheDaisy = () => {
         <h1 className="text-center text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
           {joinDaisy?.title}
         </h1>
-        <p className="text-center text-[#455150] mt-3 font-montserrat md:text-base md:font-normal">
+        <p className="text-center text-[#455150] mt-3 ltr:font-montserrat md:text-base md:font-normal">
           {joinDaisy?.subtitle}
         </p>
       </div>
@@ -62,10 +62,10 @@ export const JoinTheDaisy = () => {
                   <h4 className="font-semibold text-2xl mt-6 md:mt-4">
                     {item?.attributes.joinDescription.title}
                   </h4>
-                  <p className="mt-2 font-montserrat font-normal text-center text-[#455150]">
+                  <p className="mt-2 ltr:font-montserrat font-normal text-center text-[#455150]">
                     {item?.attributes.joinDescription.description}
                   </p>
-                  <Button className="bg-white w-full text-primary border border-primary py-[14px] px-[108px] my-6 font-montserrat text-base font-semibold hover:bg-primary hover:text-white">
+                  <Button className="bg-white w-full text-primary border border-primary py-[14px] px-[108px] my-6 ltr:font-montserrat text-base font-semibold hover:bg-primary hover:text-white">
                     {item?.attributes.textButton}
                   </Button>
                 </div>

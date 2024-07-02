@@ -132,7 +132,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
             render={({ field }) => (
               <FormItem className="md:w-full mt-6">
                 <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
+                  className={`ltr:font-montserrat font-semibold text-base ${
                     activeField === 'firstname' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
@@ -157,7 +157,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
             render={({ field }) => (
               <FormItem className="md:w-full md:ml-4 rtl:md:mr-4 mt-6">
                 <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
+                  className={`ltr:font-montserrat font-semibold text-base ${
                     activeField === 'lastname' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
@@ -184,7 +184,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
             render={({ field }) => (
               <FormItem className="md:w-full mt-6">
                 <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
+                  className={`ltr:font-montserrat font-semibold text-base ${
                     activeField === 'email' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
@@ -211,7 +211,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
             render={({ field }) => (
               <FormItem className="md:w-full mt-6 md:ml-4 rtl:md:mr-4">
                 <FormLabel
-                  className={`font-montserrat font-semibold text-base md:ml-[15px]${
+                  className={`ltr:font-montserrat font-semibold text-base md:ml-[15px]${
                     activeField === 'mobile' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
@@ -277,7 +277,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
           render={({ field }) => (
             <FormItem className="md:w-full mt-6">
               <FormLabel
-                className={`font-montserrat font-semibold text-base ${
+                className={`ltr:font-montserrat font-semibold text-base ${
                   activeField === 'content' ? 'text-[#A67F6B]' : ''
                 }`}
               >
@@ -323,7 +323,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
         <Button
           type="submit"
           disabled={!form.getValues().acceptconditions}
-          className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary font-montserrat font-semibold hover:text-white md:py-4 md:h-auto"
+          className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary ltr:font-montserrat font-semibold hover:text-white md:py-4 md:h-auto"
         >
           {isSubmit ? 'Sending...' : `${formText?.textButton}`}
         </Button>

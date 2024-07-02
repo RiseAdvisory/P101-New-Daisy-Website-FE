@@ -13,7 +13,9 @@ export const TutorialComponents = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await axiosInstance.get(`/tabs-components${lang}`);
+      const response = await axiosInstance.get(
+        `/tabs-components?locale=${lang}`,
+      );
       const [data] = response?.data?.data;
       setDataInfo(data?.attributes);
     })();
@@ -23,10 +25,10 @@ export const TutorialComponents = () => {
       <h2 className="capitalize font-bold text-2xl mb-4 text-primary">
         {dataInfo?.title}
       </h2>
-      <p className="font-montserrat text-[#455150] mb-4">
+      <p className="ltr:font-montserrat text-[#455150] mb-4">
         {dataInfo?.tutorialTextDown}
       </p>
-      <p className="font-montserrat mb-4 text-[#455150]">
+      <p className="ltr:font-montserrat mb-4 text-[#455150]">
         {dataInfo?.provisions}
       </p>
       <h2 className="capitalize font-bold text-2xl mb-4 text-primary">
@@ -36,7 +38,10 @@ export const TutorialComponents = () => {
         {dataInfo &&
           dataInfo?.secondoryTheme.map((item: string, index: number) => {
             return (
-              <li className="font-montserrat text-[#455150] mb-4" key={index}>
+              <li
+                className="ltr:font-montserrat text-[#455150] mb-4"
+                key={index}
+              >
                 {item}
               </li>
             );
@@ -48,7 +53,7 @@ export const TutorialComponents = () => {
           alt="image block"
           className="h-[205px] w-[343px] mx-auto md:w-full md:h-[400px]"
         />
-        <span className="font-montserrat text-[#586968] mx-auto">
+        <span className="ltr:font-montserrat text-[#586968] mx-auto">
           {dataInfo?.branded}
         </span>
       </div>
@@ -59,7 +64,10 @@ export const TutorialComponents = () => {
         {dataInfo &&
           dataInfo.userPrivacy.map((item: string, index: number) => {
             return (
-              <li className="font-montserrat text-[#455150] mb-4" key={index}>
+              <li
+                className="ltr:font-montserrat text-[#455150] mb-4"
+                key={index}
+              >
                 {item}
               </li>
             );
@@ -69,7 +77,10 @@ export const TutorialComponents = () => {
         {dataInfo &&
           dataInfo.alphaListPrimary.map((item: string, index: number) => {
             return (
-              <li className="font-montserrat text-[#455150] mb-4" key={index}>
+              <li
+                className="ltr:font-montserrat text-[#455150] mb-4"
+                key={index}
+              >
                 {item}
               </li>
             );
@@ -81,7 +92,7 @@ export const TutorialComponents = () => {
           alt="image block"
           className="h-[205px] w-[343px] mx-auto  md:w-full md:h-[400px]"
         />
-        <span className="font-montserrat text-[#586968] mx-auto">
+        <span className="ltr:font-montserrat text-[#586968] mx-auto">
           {dataInfo?.spanBranded}
         </span>
       </div>
@@ -92,7 +103,10 @@ export const TutorialComponents = () => {
         {dataInfo &&
           dataInfo.personalyInfoList.map((item: number, index: number) => {
             return (
-              <li className="font-montserrat text-[#455150] mb-4" key={index}>
+              <li
+                className="ltr:font-montserrat text-[#455150] mb-4"
+                key={index}
+              >
                 {item}
               </li>
             );
@@ -102,36 +116,44 @@ export const TutorialComponents = () => {
         {dataInfo &&
           dataInfo.alphaListMiddle.map((item: string, index: number) => {
             return (
-              <li className="font-montserrat text-[#455150] mb-4" key={index}>
+              <li
+                className="ltr:font-montserrat text-[#455150] mb-4"
+                key={index}
+              >
                 {item}
               </li>
             );
           })}
       </ol>
-      <p className="font-montserrat text-[#455150] mb-4">
+      <p className="ltr:font-montserrat text-[#455150] mb-4">
         {dataInfo?.caseupload}
       </p>
-      <p className="font-montserrat mb-4 text-[#455150]">
+      <p className="ltr:font-montserrat mb-4 text-[#455150]">
         {dataInfo?.comunicationText}
       </p>
       <ol className=" px-4 ml-4  list-decimal">
         {dataInfo &&
           dataInfo.unlessList.map((item: string, index: number) => {
             return (
-              <li className="font-montserrat text-[#455150] mb-4" key={index}>
+              <li
+                className="ltr:font-montserrat text-[#455150] mb-4"
+                key={index}
+              >
                 {item}
               </li>
             );
           })}
       </ol>
-      <p className="font-montserrat text-[#455150] mb-4">{dataInfo?.appUse}</p>
-      <p className="font-montserrat mb-4 text-[#455150]">
+      <p className="ltr:font-montserrat text-[#455150] mb-4">
+        {dataInfo?.appUse}
+      </p>
+      <p className="ltr:font-montserrat mb-4 text-[#455150]">
         {dataInfo?.willHandle}
       </p>
       <h2 className="capitalize font-bold text-2xl mb-4 text-primary">
         {dataInfo?.titleUnless}
       </h2>
-      <p className="font-montserrat text-[#455150] mb-4">
+      <p className="ltr:font-montserrat text-[#455150] mb-4">
         {dataInfo?.unlessPersonal}
       </p>
     </div>

@@ -40,6 +40,9 @@ const Customer = () => {
   return (
     <div className="w-full bg-primary">
       <CustomerHero
+        discover={heroCustomer?.discover}
+        gateway={heroCustomer?.gatawey}
+        services={heroCustomer?.services}
         title={heroCustomer?.title}
         subtitle={heroCustomer?.subtitle}
       />

@@ -48,16 +48,16 @@ export const CalculatePricing = ({
     activePricingPage === 'business'
       ? dataPricing?.business
       : dataPricing?.professional;
-
+  // console.log(calculate);
   return (
     <div className="bg-[#828E8E] rounded-[16px] p-0 md:p-8 w-full">
       <div className="p-6 md:p-8 rounded-[16px] bg-white">
         <div className="flex justify-between">
           <div>
-            <h2 className="text-[#172524] font-semibold text-[18px] leading-7 font-montserrat">
+            <h2 className="text-[#172524] font-semibold text-[18px] leading-7 ltr:font-montserrat">
               {titleTypeCalculate?.title}
             </h2>
-            <p className="font-montserrat text-[#455150]">
+            <p className="ltr:font-montserrat text-[#455150]">
               {titleTypeCalculate?.subtitle}
             </p>
           </div>
@@ -66,7 +66,7 @@ export const CalculatePricing = ({
               setOnCalculates(!onCalculates);
               setIsRecommended((prev: boolean) => !prev);
             }}
-            className="hidden md:inline-flex font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary text-center"
+            className="hidden md:inline-flex ltr:font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary text-center"
           >
             {onCalculates ? 'Calculate' : 'Reset Calculation'}
           </Button>
@@ -103,7 +103,7 @@ export const CalculatePricing = ({
         />
         <Button
           className={cn(
-            'inline-flex md:hidden w-full p-6  font-montserrat border border-[#2E4342]  font-semibold px-[89px] py-[12px] mb-3',
+            'inline-flex md:hidden w-full p-6  ltr:font-montserrat border border-[#2E4342]  font-semibold px-[89px] py-[12px] mb-3',
             { hidden: onCalculates },
           )}
         >
@@ -119,7 +119,7 @@ export const CalculatePricing = ({
             setOnCalculates(!onCalculates);
             setIsRecommended((prev: boolean) => !prev);
           }}
-          className="inline-flex md:hidden w-full p-6  font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary"
+          className="inline-flex md:hidden w-full p-6  ltr:font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary"
         >
           {onCalculates ? 'Calculate' : 'Reset Calculation'}
         </Button>

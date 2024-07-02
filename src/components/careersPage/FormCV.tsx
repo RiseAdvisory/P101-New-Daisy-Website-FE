@@ -92,7 +92,7 @@ export const FormCV = ({
             render={({ field }) => (
               <FormItem className="md:w-full mt-6">
                 <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
+                  className={`ltr:font-montserrat font-semibold text-base ${
                     activeField === 'firstname' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
@@ -117,7 +117,7 @@ export const FormCV = ({
             render={({ field }) => (
               <FormItem className="md:w-full md:ml-4 mt-6">
                 <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
+                  className={`ltr:font-montserrat font-semibold text-base ${
                     activeField === 'lastname' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
@@ -144,7 +144,7 @@ export const FormCV = ({
             render={({ field }) => (
               <FormItem className="md:w-full mt-6">
                 <FormLabel
-                  className={`font-montserrat font-semibold text-base ${
+                  className={`ltr:font-montserrat font-semibold text-base ${
                     activeField === 'email' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
@@ -169,7 +169,7 @@ export const FormCV = ({
 
         <Button
           type="submit"
-          className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary font-montserrat font-semibold hover:text-white md:py-4 md:h-auto"
+          className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary ltr:font-montserrat font-semibold hover:text-white md:py-4 md:h-auto"
         >
           Submit
         </Button>

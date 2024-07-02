@@ -64,7 +64,7 @@ export const SimiliarTopick = () => {
                       {item.attributes.tags.hair}
                     </span>
                   </div>
-                  <h3 className="mt-2 text-lg font-montserrat font-semibold">
+                  <h3 className="mt-2 text-lg ltr:font-montserrat font-semibold">
                     {item.attributes.title}
                   </h3>
 
@@ -90,7 +90,7 @@ export const SimiliarTopick = () => {
                       {item.attributes.user.time} to read
                     </span>
                   </div>
-                  <p className="mt-2 text-[#455150] text-sm font-montserrat">
+                  <p className="mt-2 text-[#455150] text-sm ltr:font-montserrat">
                     {item.attributes.description}
                   </p>
                 </div>
