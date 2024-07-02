@@ -80,10 +80,10 @@ export const DropdownResources = ({
                       href={item.nav}
                       onClick={() => setOpenBlog(!openBlog)}
                     >
-                      <h3 className="text-base font-montserrat font-semibold">
+                      <h3 className="text-base ltr:font-montserrat font-semibold">
                         {item.title}
                       </h3>
-                      <p className="text-base font-montserrat text-primaryBtn">
+                      <p className="text-base ltr:font-montserrat text-primaryBtn">
                         {item.description}
                       </p>
                     </Link>

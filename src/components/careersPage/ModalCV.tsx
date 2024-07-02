@@ -27,7 +27,7 @@ export const ModalCV = ({
         <DialogHeader>
           <DialogTitle
             className={cn(
-              'font-montserrat font-semibold text-xl flex justify-start ',
+              'ltr:font-montserrat font-semibold text-xl flex justify-start ',
               { hidden: uploadSucces === 200 },
             )}
           >

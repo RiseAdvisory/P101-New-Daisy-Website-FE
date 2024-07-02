@@ -74,11 +74,11 @@ export const ExperienceDaisy = () => {
           <h1 className="pt-5 text-white leading-10 text-3xl">
             {experienceDaisy?.title}
           </h1>
-          <p className="font-montserrat font-normal text-base pt-3 leading-8 text-[#D5D9D9]">
+          <p className="ltr:font-montserrat font-normal text-base pt-3 leading-8 text-[#D5D9D9]">
             {experienceDaisy?.subtitle}
           </p>
           <Separator className="my-[34px] md:hidden" />
-          <p className="font-montserrat font-normal text-base pt-3 leading-8 text-[#FFFFFF] md:mt-[40px]">
+          <p className="ltr:font-montserrat font-normal text-base pt-3 leading-8 text-[#FFFFFF] md:mt-[40px]">
             {experienceDaisy?.description}
           </p>
           <div className="flex flex-col pb-16 md:w-[427px]">

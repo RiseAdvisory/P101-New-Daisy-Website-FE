@@ -69,6 +69,9 @@ const Business = () => {
           <BusinessHero
             title={heroBusiness?.title}
             subtitle={heroBusiness?.subtitle}
+            easyFlexible={heroBusiness?.easyFlexible}
+            gataway={heroBusiness?.gateway}
+            services={heroBusiness?.services}
           />
           <LockerContainer />
 

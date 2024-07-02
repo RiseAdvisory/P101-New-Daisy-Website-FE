@@ -55,10 +55,10 @@ export const ItemCardPricing = ({
 
         <div className="flex flex-col justify-center items-center mb-6 px-4">
           <h2 className="font-semibold text-2xl text-[#242424] ">{title}</h2>
-          <p className="font-inter w-fit text-[12px] mt-3 leading-3 text-[#2543AD] bg-[#E9ECF7] rounded-[20px] px-[9px] py-[4px] font-medium">
+          <p className="ltr:font-inter w-fit text-[12px] mt-3 leading-3 text-[#2543AD] bg-[#E9ECF7] rounded-[20px] px-[9px] py-[4px] font-medium">
             {subtitle}
           </p>
-          <p className="font-montserrat text-[#455150] mt-1 text-center leading-[24px] min-h-[72px]">
+          <p className="ltr:font-montserrat text-[#455150] mt-1 text-center leading-[24px] min-h-[72px]">
             {description}
           </p>
           <div className="bg-[#F8F5F3] rounded-[8px] p-4 w-full mt-4">
@@ -68,11 +68,11 @@ export const ItemCardPricing = ({
                   ? `$ ${currentPrice}`
                   : 'Free'}
               </h2>
-              <p className="font-montserrat text-[#242424] text-[12px] leading-[18px]">
+              <p className="ltr:font-montserrat text-[#242424] text-[12px] leading-[18px]">
                 per month / billed {chechedAnnualy ? 'annualy' : 'monthly'}
                 <span
                   className={cn(
-                    'bg-[#E9ECF7] text-[#2543AD] rounded-[16px] px-[7px] py-[3px] hidden text-[12px] leading-[12px] font-inter font-medium w-fit ml-1 text-nowrap',
+                    'bg-[#E9ECF7] text-[#2543AD] rounded-[16px] px-[7px] py-[3px] hidden text-[12px] leading-[12px] ltr:font-inter font-medium w-fit ml-1 text-nowrap',
                     {
                       inline:
                         chechedAnnualy && activePricingPage === 'business',
@@ -82,7 +82,7 @@ export const ItemCardPricing = ({
                   17% discount
                 </span>
               </p>
-              <Button className="font-montserrat font-semibold mt-4 bg-white text-primary hover:text-white hover:bg-primary border border-primary">
+              <Button className="ltr:font-montserrat font-semibold mt-4 bg-white text-primary hover:text-white hover:bg-primary border border-primary">
                 Get Started Now
               </Button>
             </div>
@@ -94,7 +94,7 @@ export const ItemCardPricing = ({
               <div className="flex justify-center items-center py-3 border bg-white rounded-[8px]">
                 <div className="flex justify-center items-center">
                   <OptionPricing />
-                  <span className="ml-2 font-montserrat font-semibold">
+                  <span className="ml-2 ltr:font-montserrat font-semibold">
                     Everything in the &quot;{optionPlus}&quot;
                   </span>
                 </div>
@@ -108,7 +108,7 @@ export const ItemCardPricing = ({
 
           {!showAll && options.length > 5 && (
             <Button
-              className="md:hidden font-montserrat font-semibold py-4 bg-white text-primary rounded-none border-t -mx-4 rounded-b-[16px]"
+              className="md:hidden ltr:font-montserrat font-semibold py-4 bg-white text-primary rounded-none border-t -mx-4 rounded-b-[16px]"
               onClick={() => setShowAll(true)}
             >
               View all
@@ -116,7 +116,7 @@ export const ItemCardPricing = ({
           )}
           {showAll && (
             <Button
-              className="md:hidden font-montserrat font-semibold py-4 bg-white text-primary rounded-none border-t -mx-4 rounded-b-[16px]"
+              className="md:hidden ltr:font-montserrat font-semibold py-4 bg-white text-primary rounded-none border-t -mx-4 rounded-b-[16px]"
               onClick={() => setShowAll(false)}
             >
               Hide

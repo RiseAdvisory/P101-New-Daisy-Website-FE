@@ -53,10 +53,10 @@ export const TestimonialsCustomerList = () => {
                   key={index}
                   className={`bg-white h-fit p-6 rounded-lg shadow ${index >= 3 && index <= 5 ? 'md:col-span-2 lg:col-span-1' : ''}`}
                 >
-                  <p className="text-lg font-semibold font-montserrat mb-2">
+                  <p className="text-lg font-semibold ltr:font-montserrat mb-2">
                     {infoUser.text}
                   </p>
-                  <p className="text-sm text-[#455150] font-montserrat mb-4">
+                  <p className="text-sm text-[#455150] ltr:font-montserrat mb-4">
                     {infoUser.description}
                   </p>
                   <div className="flex items-center">
@@ -68,10 +68,10 @@ export const TestimonialsCustomerList = () => {
                       height={40}
                     />
                     <div>
-                      <p className="text-sm font-montserrat font-semibold">
+                      <p className="text-sm ltr:font-montserrat font-semibold">
                         {infoUser.author}
                       </p>
-                      <p className="text-sm text-[#455150] font-montserrat">
+                      <p className="text-sm text-[#455150] ltr:font-montserrat">
                         {infoUser.role}
                       </p>
                     </div>
@@ -91,10 +91,10 @@ export const TestimonialsCustomerList = () => {
                   key={index}
                   className={`bg-white h-fit p-6 rounded-lg shadow ${index >= 3 && index <= 5 ? 'md:col-span-2 lg:col-span-1' : ''}`}
                 >
-                  <p className="text-lg font-semibold font-montserrat mb-2">
+                  <p className="text-lg font-semibold ltr:font-montserrat mb-2">
                     {infoUser.text}
                   </p>
-                  <p className="text-sm text-[#455150] font-montserrat mb-4">
+                  <p className="text-sm text-[#455150] ltr:font-montserrat mb-4">
                     {infoUser.description}
                   </p>
                   <div className="flex items-center">
@@ -106,10 +106,10 @@ export const TestimonialsCustomerList = () => {
                       height={40}
                     />
                     <div>
-                      <p className="text-sm font-montserrat font-semibold">
+                      <p className="text-sm ltr:font-montserrat font-semibold">
                         {infoUser.author}
                       </p>
-                      <p className="text-sm text-[#455150] font-montserrat">
+                      <p className="text-sm text-[#455150] ltr:font-montserrat">
                         {infoUser.role}
                       </p>
                     </div>
@@ -129,10 +129,10 @@ export const TestimonialsCustomerList = () => {
                   key={index}
                   className={`bg-white h-fit p-6 rounded-lg shadow ${index >= 3 && index <= 5 ? 'md:col-span-2 lg:col-span-1' : ''}`}
                 >
-                  <p className="text-lg font-semibold font-montserrat mb-2">
+                  <p className="text-lg font-semibold ltr:font-montserrat mb-2">
                     {infoUser.text}
                   </p>
-                  <p className="text-sm text-[#455150] font-montserrat mb-4">
+                  <p className="text-sm text-[#455150] ltr:font-montserrat mb-4">
                     {infoUser.description}
                   </p>
                   <div className="flex items-center">
@@ -144,10 +144,10 @@ export const TestimonialsCustomerList = () => {
                       height={40}
                     />
                     <div>
-                      <p className="text-sm font-montserrat font-semibold">
+                      <p className="text-sm ltr:font-montserrat font-semibold">
                         {infoUser.author}
                       </p>
-                      <p className="text-sm text-[#455150] font-montserrat">
+                      <p className="text-sm text-[#455150] ltr:font-montserrat">
                         {infoUser.role}
                       </p>
                     </div>
@@ -158,7 +158,7 @@ export const TestimonialsCustomerList = () => {
         </ul>
       </div>
       <div className="flex justify-center -mt-20 px-4 ">
-        <button className="bg-[white] text-[#172524] font-montserrat font-semibold py-[10px] px-[60px] rounded-lg border hover:bg-primary hover:text-white w-full md:w-auto">
+        <button className="bg-[white] text-[#172524] ltr:font-montserrat font-semibold py-[10px] px-[60px] rounded-lg border hover:bg-primary hover:text-white w-full md:w-auto">
           View More
         </button>
       </div>

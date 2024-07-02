@@ -45,7 +45,7 @@ export const FeatureProfessionalList = ({
                     className="mx-auto pt-10 h-[320px] absolute bottom-0 left-1/2 transform -translate-x-1/2"
                   />
                 </div>
-                <h3 className="mt-6 font-montserrat font-semibold text-[20px] leading-[30px] text-white">
+                <h3 className="mt-6 ltr:font-montserrat font-semibold text-[20px] leading-[30px] text-white">
                   {item.attributes.title}
                 </h3>
                 <p className="mt-1 text-[#D5D9D9]">

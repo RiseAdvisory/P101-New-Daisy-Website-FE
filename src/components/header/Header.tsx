@@ -120,7 +120,7 @@ export const Header = () => {
           )}
           <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
         </div>
-        <ul className="hidden md:flex md:gap-[10px] lg:gap-[20px] md:ml-[10px]  lg:ml-[55px] rtl:md:ml-0 rtl:md:mr-[55px] rtl:first:mr-4">
+        <ul className="hidden md:flex md:gap-[10px] lg:gap-[20px] md:ml-[10px] lg:ml-[55px] rtl:md:ml-0 rtl:md:mr-[55px] rtl:first:mr-4">
           {listHeader &&
             listHeader.map(
               (item: { title: string; nav: string }, index: number) => {
@@ -146,7 +146,7 @@ export const Header = () => {
                         href="#"
                         onClick={handleResourcesClick}
                         className={clsx(
-                          'font-openSans font-normal text-[#D5D9D9] leading-6 hover:text-white cursor-pointer',
+                          ' font-normal text-[#D5D9D9] leading-6 hover:text-white cursor-pointer',
                           {
                             'text-white': active === item.nav,
                             'text-gray-400': active !== item.nav,
@@ -174,7 +174,7 @@ export const Header = () => {
                         href={href}
                         onClick={() => setActive(item.nav)}
                         className={clsx(
-                          'font-openSans font-normal text-[#D5D9D9] leading-6 hover:text-white',
+                          ' font-normal text-[#D5D9D9] leading-6 hover:text-white',
                           {
                             'text-white': active === item.nav,
                             'text-gray-400': active !== item.nav,
@@ -197,7 +197,7 @@ export const Header = () => {
               setChangeLang(val);
               changeLanguages(val.toLowerCase());
             }}
-            list={changeLanguage}
+            list={listLanguage}
             classNameContent="!w-[70px]"
           />
           <GetAppButton textGetApp={getTheApp} />

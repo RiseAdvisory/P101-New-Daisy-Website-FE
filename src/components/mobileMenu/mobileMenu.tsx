@@ -68,7 +68,7 @@ export const MobileMenu = ({
                   <li key={index}>
                     <div className="flex justify-between items-center py-4">
                       <Button
-                        className="font-montserrat font-semibold text-xl leading-8 w-full justify-start"
+                        className="ltr:font-montserrat font-semibold text-xl leading-8 w-full justify-start"
                         onClick={() => {
                           if (item.title === 'Resources') {
                             setResources(false);
@@ -103,7 +103,7 @@ export const MobileMenu = ({
                   <li key={subIndex} className="pb-5">
                     <Link
                       href={submenuItem.nav}
-                      className="font-montserrat font-semibold text-base leading-6"
+                      className="ltr:font-montserrat font-semibold text-base leading-6"
                       onClick={() => {
                         setOpenMenu(!openMenu), setResources(true);
                       }}
@@ -139,33 +139,4 @@ export const MobileMenu = ({
     </DropdownMenu>
   );
 };
-{
-  /* {item.submenu && (
-                  <ul>
-                    {item.submenu.map((submenuItem, subIndex) => (
-                      <li key={subIndex} className="pb-5">
-                        <Link
-                          href={submenuItem.nav}
-                          className="font-montserrat font-semibold text-base leading-6"
-                          onClick={() => setOpenMenu(!openMenu)}
-                        >
-                          <div className="flex justify-between items-center">
-                            <div>
-                              {submenuItem.title}
-                              {submenuItem.subtitle && (
-                                <p className="text-[#D5D9D9] font-normal text-sm py-1">
-                                  {submenuItem.subtitle}
-                                </p>
-                              )}
-                            </div>
-                            <div>
-                              <ArrowRightIcon />
-                            </div>
-                          </div>
-                        </Link>
-                      </li>
-                    ))}
-                    <Separator className="mt-6" />
-                  </ul>
-                )} */
-}
+

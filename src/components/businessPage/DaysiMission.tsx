@@ -31,7 +31,7 @@ export const DaysiMission = () => {
         <h1 className="text-center mx-[20px] md:mx-0  text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
           {daisyMissions?.title}
         </h1>
-        <p className="text-center text-[#455150] mt-3 font-montserrat md:text-base md:font-normal">
+        <p className="text-center text-[#455150] mt-3 ltr:font-montserrat md:text-base md:font-normal">
           {daisyMissions?.subtitle}
         </p>
       </div>
@@ -43,7 +43,7 @@ export const DaysiMission = () => {
           <h4 className="font-semibold text-2xl mt-6">
             {daisyMissions?.listDaisyMission[0].title}
           </h4>
-          <p className="mt-2 font-montserrat font-normal">
+          <p className="mt-2 ltr:font-montserrat font-normal">
             {daisyMissions?.listDaisyMission[0].description}
           </p>
         </li>
@@ -54,7 +54,7 @@ export const DaysiMission = () => {
           <h4 className="font-semibold text-2xl mt-6">
             {daisyMissions?.listDaisyMission[1].title}
           </h4>
-          <p className="mt-2 font-montserrat font-normal">
+          <p className="mt-2 ltr:font-montserrat font-normal">
             {daisyMissions?.listDaisyMission[1].description}
           </p>
         </li>
@@ -65,7 +65,7 @@ export const DaysiMission = () => {
           <h4 className="font-semibold text-2xl mt-6">
             {daisyMissions?.listDaisyMission[2].title}
           </h4>
-          <p className="mt-2 font-montserrat font-normal">
+          <p className="mt-2 ltr:font-montserrat font-normal">
             {daisyMissions?.listDaisyMission[2].description}
           </p>
         </li>

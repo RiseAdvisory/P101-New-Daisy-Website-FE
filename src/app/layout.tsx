@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Open_Sans, Montserrat, Inter } from 'next/font/google';
+import { Open_Sans, Montserrat, Inter, Cairo } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/header/Header';
 import { Footer } from '@/components/footer/Footer';
@@ -10,13 +10,19 @@ const openSans = Open_Sans({
 });
 
 const montserrat = Montserrat({
-  subsets: ['latin'],
+  subsets: ['latin', ],
   variable: '--montserrat',
 });
 const inter = Inter({
   subsets: ['latin'],
   variable: '--inter',
 });
+
+const cairo = Cairo({
+  subsets: ['arabic'],
+  variable: '--cairo',
+});
+
 export const metadata: Metadata = {
   title: 'Daisy',
   description: 'The Daisy app',
@@ -33,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.variable} ${montserrat.variable} ${inter.variable} font-openSans`}
+        className={`${openSans.variable} ${montserrat.variable} ${inter.variable} ${cairo.variable} font-openSans rtl:font-cairo`}
         dir="ltr"
       >
         <div className="">

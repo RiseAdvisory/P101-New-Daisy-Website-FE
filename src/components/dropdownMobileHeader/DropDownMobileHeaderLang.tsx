@@ -55,7 +55,7 @@ export const DropDownMobileHeaderLang = ({
       >
         {list?.map((item, index) => (
           <DropdownMenuItem
-            className="w-full flex flex-col self-center text-center justify-center !items-center font-montserrat font-normal text-base group"
+            className="w-full flex flex-col self-center text-center justify-center !items-center ltr:font-montserrat font-normal text-base group"
             onClick={() => handleSelect(item.label)}
             key={index}
           >

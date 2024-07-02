@@ -93,6 +93,7 @@ const config = {
       openSans: 'var(--open-sans)',
       montserrat: 'var(--montserrat)',
       inter: 'var(--inter)',
+      cairo: 'var(--cairo)',
     },
   },
   plugins: [require('tailwindcss-animate')],

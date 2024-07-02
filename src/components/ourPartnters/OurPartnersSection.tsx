@@ -36,7 +36,7 @@ export const OurPartnersSection = ({
         <h1 className="text-center text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
           {ourPartners?.[0]?.attributes?.title}
         </h1>
-        <p className="text-center text-[#455150] mt-3 font-montserrat md:text-base md:font-normal">
+        <p className="text-center text-[#455150] mt-3 ltr:font-montserrat md:text-base md:font-normal">
           {ourPartners?.[0]?.attributes?.subtitle}
         </p>
       </div>

@@ -77,7 +77,7 @@ export const HeroPage = ({
       </h2>
       <p
         className={cn(
-          'text-base font-montserrat font-normal text-[#D5D9D9] mt-2 text-center md:px-[400px]',
+          'text-base ltr:font-montserrat font-normal text-[#D5D9D9] mt-2 text-center md:px-[400px]',
           {
             hidden: visibleDescriiton,
           },
@@ -91,7 +91,7 @@ export const HeroPage = ({
           'md:hidden': features,
         })}
       >
-        <p className="text-base text-white font-normal font-montserrat">
+        <p className="text-base text-white font-normal ltr:font-montserrat">
           {titleScroll}
         </p>
         <span
