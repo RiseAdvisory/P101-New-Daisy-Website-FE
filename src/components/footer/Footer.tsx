@@ -15,6 +15,7 @@ import { useChangeLanguage } from '@/store/language';
 
 export const Footer = () => {
   const [socialLinks, setSocialLinks] = useState<any>();
+  const [navList, setNavList] = useState<any>();
   const path = usePathname();
   const { lang } = useChangeLanguage();
 
@@ -23,6 +24,12 @@ export const Footer = () => {
     (async () => {
       const response = await axiosInstance.get(`/social-links?locale=${lang}`);
       setSocialLinks(response?.data?.data?.[0]?.attributes?.socialLinks);
+      const responsefooterList = await axiosInstance.get(
+        `/footers?locale=${lang}`,
+      );
+      setNavList(
+        responsefooterList?.data?.data?.[0]?.attributes?.navigationfooterList,
+      );
     })();
   }, [lang]);
   return (
@@ -32,17 +39,18 @@ export const Footer = () => {
       </Link>
       <nav className=" justify-center items-center self-center ">
         <ul className="flex flex-col items-center justify-center ltr:font-montserrat text-[#FFFFFF]/80 md:flex-row md:gap-x-8">
-          {navigationList.map((item, index) => {
-            return (
-              <Link
-                key={index}
-                href={item.nav}
-                className="pb-8 hover:text-white"
-              >
-                {item.name}
-              </Link>
-            );
-          })}
+          {navList &&
+            navList.map((item: any, index: number) => {
+              return (
+                <Link
+                  key={index}
+                  href={item.nav}
+                  className="pb-8 hover:text-white"
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
         </ul>
       </nav>
       {!isVisibleAppBtn && (
