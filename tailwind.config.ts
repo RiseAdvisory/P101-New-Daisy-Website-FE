@@ -22,7 +22,7 @@ const config = {
       colors: {
         customWhite: 'rgba(255, 255, 255, 0.1)',
         primaryOutline: 'rgba(88, 105, 104, 1)',
-        customGreen: 'hsla(177, 19%, 22%, 1)',
+        customGreen: 'hsl(177, 19%, 22%)',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
