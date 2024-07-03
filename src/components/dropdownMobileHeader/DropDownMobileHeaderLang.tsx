@@ -31,7 +31,7 @@ export const DropDownMobileHeaderLang = ({
   const [open, setOpen] = useState(false);
   const { changeLanguages } = useChangeLanguage();
 
-  const handleSelect = (label: string) => {
+  const handleSelect = (label: any) => {
     setState(label);
     setOpen(false);
   };
@@ -56,7 +56,7 @@ export const DropDownMobileHeaderLang = ({
         {list?.map((item, index) => (
           <DropdownMenuItem
             className="w-full flex flex-col self-center text-center justify-center !items-center ltr:font-montserrat font-normal text-base group"
-            onClick={() => handleSelect(item.label)}
+            onClick={() => handleSelect(item)}
             key={index}
           >
             <Button
