@@ -131,7 +131,7 @@ export const Header = () => {
                         }
                       }
                     }
-                    if (item.title === 'Resources') {
+                    if (item.title === 'Resources' || item.title === 'موارد') {
                       return (
                         <li
                           key={index}
