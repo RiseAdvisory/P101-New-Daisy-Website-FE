@@ -33,7 +33,10 @@ const LockerContainer = ({ listInfo }: { listInfo: any }) => {
       observer.disconnect();
     };
   }, []);
-  const sortList = listInfo.sort((a: any, b: any) => a.id - b.id);
+
+  const sortList = listInfo.sort(
+    (a: any, b: any) => a.attributes.sortId - b.attributes.sortId,
+  );
 
   return (
     <div className={`${styles.locker} !hidden md:!grid `}>
