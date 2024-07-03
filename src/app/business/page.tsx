@@ -25,6 +25,7 @@ import { useChangeLanguage } from '@/store/language';
 const Business = () => {
   const [heroBusiness, setHeroBusiness] = useState<any>();
   const [growth, setGrowth] = useState<any>();
+  const [dataScroll, setDataScroll] = useState<any>();
   const { handleArray, handleLoadingStatus } = useLoadingStore();
 
   const { lang } = useChangeLanguage();
@@ -38,6 +39,10 @@ const Business = () => {
         const response = await axiosInstance.get(
           `/home-businesses?locale=${lang}`,
         );
+        const responseScrolling = await axiosInstance.get(
+          `/home-bussiness-scrollings?populate=*&locale=${lang}`,
+        );
+        setDataScroll(responseScrolling?.data?.data);
         setHeroBusiness(response?.data?.data?.[0]?.attributes);
         setGrowth(responseGrowth?.data?.data?.[0]?.attributes);
       } catch (error) {
@@ -65,7 +70,7 @@ const Business = () => {
   return (
     <>
       {heroBusiness ? (
-        <div className="w-full bg-primary">
+        <div className="w-full bg-primary -mt-[100px]">
           {/* <BusinessHero
             title={heroBusiness?.title}
             subtitle={heroBusiness?.subtitle}
@@ -73,7 +78,7 @@ const Business = () => {
             gataway={heroBusiness?.gateway}
             services={heroBusiness?.services}
           /> */}
-          <LockerContainer />
+          <LockerContainer listInfo={dataScroll} />
 
           <div className="md:hidden ">
             <NoScrollingAnimationBusiness

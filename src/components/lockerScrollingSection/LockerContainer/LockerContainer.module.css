@@ -14,12 +14,12 @@
   position: relative;
   grid-column: col-start 7 / col-end 12;
 }
-.locker__image img {
+/* .locker__image img {
   width: auto;
   height: 70vh;
   position: absolute;
   transition: all 1s ease;
-}
+} */
 .locker__container {
   position: sticky;
   position: -webkit-sticky;
@@ -37,7 +37,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-top: 1px solid #cdcdcd;
 }
 .locker__section:first-child {
   border: none;

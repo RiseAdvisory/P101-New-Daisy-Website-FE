@@ -1,41 +1,61 @@
 import React from 'react';
 import styles from './LockerImageItem.module.css';
 import Image from 'next/image';
-import leaf from '../../../assets/images/LeafBg.png';
-import stars from '../../../assets/images/Stars.png';
-import phone from '../../../assets/images/PHONE.png';
+import { cn } from '@/lib/utils';
+import { baseURLImage } from '@/helpers/axiosConfig';
 
-const LockerImageItem = ({ isActive, imageUrl }: any) => {
+const LockerImageItem = ({ isActive, imageUrl, item }: any) => {
+  const mainImg = item?.attributes.mainImage.data[0].attributes.url;
+  const firstBg = item?.attributes?.firstBg.data[0].attributes.url;
+  const secondBg = item?.attributes?.secondBg?.data?.[0].attributes.url;
+
+  const imegeCurrentURL = (image: any) => {
+    return new URL(image, baseURLImage).href;
+  };
+  console.log(item?.attributes.styleSecondBg);
   return (
-    // <div className="w-[600px] h-[500px] bg-primaryBtn rounded-[16px] relative ml-auto">
+    <>
       <Image
-        src={imageUrl}
-        className={styles.image + (isActive ? ' ' + styles.active : '')}
-        alt="daw"
-        width={100}
-        height={100}
+        className={cn(
+          {
+            [styles.image]: true,
+            [styles.active]: isActive,
+          },
+          item?.attributes.styleFirstBg,
+        )}
+        src={imegeCurrentURL(firstBg)}
+        alt="leaf"
+        width={300}
+        height={500}
       />
-    // </div>
-    // <div className="w-[600px] h-[500px] bg-primaryBtn rounded-[16px] relative ml-auto">
-    //         <Image
-    //           className="absolute bottom-0 left-0"
-    //           src={leaf}
-    //           alt="leaf"
-    //           width={300}
-    //         />
-    //         <Image
-    //           className="absolute top-[60px] right-[50px]"
-    //           src={stars}
-    //           alt="start"
-    //           width={100}
-    //         />
-    //         <Image
-    //           className="absolute bottom-0 right-[50%] translate-x-1/2"
-    //           src={phone}
-    //           alt="start"
-    //           width={300}
-    //         />
-    //       </div>
+      {secondBg && (
+        <Image
+          className={cn(
+            styles.image,
+            isActive ? styles.active : '',
+            item?.attributes.styleSecondBg,
+          )}
+          src={imegeCurrentURL(secondBg)}
+          alt="start"
+          width={100}
+          height={100}
+        />
+      )}
+      <Image
+        src={imegeCurrentURL(mainImg)}
+        className={cn(
+          'z-10',
+          {
+            [styles.image]: true,
+            [styles.active]: isActive,
+          },
+          item?.attributes.styleMainPicture,
+        )}
+        alt="phone"
+        width={1000}
+        height={1000}
+      />
+    </>
   );
 };
 

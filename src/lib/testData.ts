@@ -41,7 +41,7 @@ export const objects = [
   {
     text: 'performance reports and business Analytics to help you grow!',
     url: 'https://assets.codepen.io/325536/tech-3.jpeg',
-    objectId: 3,
+    objectId: 4,
     description:
       'Disconer the power of expanding your reach and maximizing your profits with ease',
     storeBurron: false,
