@@ -12,7 +12,6 @@ const LockerImageItem = ({ isActive, imageUrl, item }: any) => {
   const imegeCurrentURL = (image: any) => {
     return new URL(image, baseURLImage).href;
   };
-  console.log(item?.attributes.styleSecondBg);
   return (
     <>
       <Image
