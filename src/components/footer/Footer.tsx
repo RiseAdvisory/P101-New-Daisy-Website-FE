@@ -7,7 +7,6 @@ import { FacebookIcons } from '@/assets/icons/socialLinksIcons/FacebookIcons';
 import { TwitterIcons } from '@/assets/icons/socialLinksIcons/TwitterIcons';
 import { LinkedInIcons } from '@/assets/icons/socialLinksIcons/LinkedInIcons';
 import { InstagramIcons } from '@/assets/icons/socialLinksIcons/InstagramIcons';
-import { navigationList } from '@/lib/constants/footerNavigationList';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import axiosInstance from '@/helpers/axiosConfig';

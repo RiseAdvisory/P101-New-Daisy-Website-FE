@@ -63,7 +63,6 @@ const LockerContainer = () => {
           );
         })}
       </div>
-      <div className={styles.threshold + ' ' + styles['threshold--top']}></div>
     </div>
   );
 };

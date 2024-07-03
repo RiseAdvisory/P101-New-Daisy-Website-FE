@@ -34,6 +34,7 @@ export const Header = () => {
 
   useEffect(() => {
     (async () => {
+
       const response = await axiosInstance.get(`/headers?locale=${lang}`);
       const responseToggle = await axiosInstance.get(
         `/options-toogles?locale=${lang}`,
@@ -104,7 +105,10 @@ export const Header = () => {
               />
               <DropDownMobileHeaderLang
                 state={changeLang}
-                setState={setChangeLang}
+                setState={(val: any) => {
+                  setChangeLang(val.label);
+                  changeLanguages(val.path.toLowerCase());
+                }}
                 list={listLanguage}
                 classNames="px-2 hover:bg-white hover:text-primary rtl:ml-2"
               />
@@ -192,8 +196,8 @@ export const Header = () => {
               <DropDownMobileHeader
                 state={changeLang}
                 setState={(val: any) => {
-                  setChangeLang(val);
-                  changeLanguages(val.toLowerCase());
+                  setChangeLang(val.label);
+                  changeLanguages(val.path.toLowerCase());
                 }}
                 list={listLanguage}
                 classNameContent="!w-[70px]"
