@@ -25,8 +25,8 @@ const Tutorials = () => {
     <>
       <HeroPage
         blockRef={scroll}
-        bredCrumbDesription="Resources"
-        bredCrumbTitle="Tutorials & Guides"
+        bredCrumbDesription={dataTutorials?.bredCrumbDesription}
+        bredCrumbTitle={dataTutorials?.bredCrumbTitle}
         isVisibleBreadCrumbs={true}
         hiddenArrow={false}
         visibleDescriiton={false}

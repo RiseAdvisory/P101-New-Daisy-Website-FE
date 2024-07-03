@@ -27,6 +27,7 @@ export const MobileMenu = ({
   const [onResources, setResources] = useState(true);
   const [getTheApp, setGetTheApp] = useState<any>();
   const [listNav, setListNav] = useState<any>();
+
   const router = useRouter();
 
   const { lang } = useChangeLanguage();
@@ -38,6 +39,7 @@ export const MobileMenu = ({
         const responseList = await axiosInstance.get(
           `/mobile-list-navigations?locale=${lang}`,
         );
+
         const [data] = response?.data?.data;
         const [list] = responseList?.data?.data;
         setListNav(list?.attributes);
@@ -93,8 +95,8 @@ export const MobileMenu = ({
               <BreadcrumbMobile
                 backmenu={onResources}
                 setBackMenu={setResources}
-                bredCrumbTitle="Resources"
-                bredCrumbDesription="Home"
+                bredCrumbTitle={listNav?.bredCrumbTitle}
+                bredCrumbDesription={listNav?.bredCrumbDesription}
               />
             </div>
             <ul>

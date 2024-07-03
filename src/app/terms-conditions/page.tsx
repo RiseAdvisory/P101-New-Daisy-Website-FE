@@ -24,8 +24,8 @@ const TermsConditions = () => {
     <>
       <HeroPage
         blockRef={scroll}
-        bredCrumbDesription="Home"
-        bredCrumbTitle="Terms & Conditions"
+        bredCrumbDesription={dataConditions?.bredCrumbDesription}
+        bredCrumbTitle={dataConditions?.bredCrumbTitle}
         isVisibleBreadCrumbs={true}
         hiddenArrow={false}
         visibleDescriiton={false}
@@ -33,7 +33,7 @@ const TermsConditions = () => {
         description={dataConditions?.heroSubtitle}
         heightScreen={true}
         styleSection="pb-[100px] pt-6 px-[16px] h-screen"
-        titleScroll="Explore the  terms"
+        titleScroll={dataConditions?.titleScroll}
         secondDescription={dataConditions?.heroSubcription}
       />
       <TermsConditionsSection

@@ -29,8 +29,8 @@ const PrivacyPolicy = () => {
     <>
       <HeroPage
         blockRef={scroll}
-        bredCrumbDesription="Home"
-        bredCrumbTitle="Privacy Policy"
+        bredCrumbDesription={dataSection?.bredCrumbDesription}
+        bredCrumbTitle={dataSection?.bredCrumbTitle}
         isVisibleBreadCrumbs={true}
         hiddenArrow={false}
         visibleDescriiton={false}

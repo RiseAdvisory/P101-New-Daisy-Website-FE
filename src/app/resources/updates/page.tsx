@@ -2,7 +2,6 @@
 import { CardPosts } from '@/components/blogPage/blogPosts/CardPosts';
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import axiosInstance from '@/helpers/axiosConfig';
-import { ListUpdatesResources } from '@/lib/constants/listCardUpdates';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
 
@@ -28,8 +27,8 @@ const Updates = () => {
     <div>
       <HeroPage
         isVisibleBreadCrumbs={true}
-        bredCrumbDesription="Resources"
-        bredCrumbTitle="Stay Updated"
+        bredCrumbDesription={heroUpdate?.bredCrumbDesription}
+        bredCrumbTitle={heroUpdate?.bredCrumbTitle}
         hiddenArrow={true}
         visibleDescriiton={false}
         title={heroUpdate?.title}

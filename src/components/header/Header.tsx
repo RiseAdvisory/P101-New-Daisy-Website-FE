@@ -34,7 +34,6 @@ export const Header = () => {
 
   useEffect(() => {
     (async () => {
-
       const response = await axiosInstance.get(`/headers?locale=${lang}`);
       const responseToggle = await axiosInstance.get(
         `/options-toogles?locale=${lang}`,
