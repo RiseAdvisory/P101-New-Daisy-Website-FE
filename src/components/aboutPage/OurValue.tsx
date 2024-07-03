@@ -6,7 +6,7 @@ export const OurValue = ({ heroAbout }: { heroAbout: any }) => {
     <div className=" px-6 py-[112px] bg-[#F8F5F3]">
       <div className="flex flex-col mx-auto text-center">
         <h1 className="text-center text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
-          Our Values
+          {heroAbout?.ourValues}
         </h1>
         <p className="text-center text-[#455150] mt-3 ltr:font-montserrat text-base font-normal"></p>
         <div className="md:flex md:px-[40px]">

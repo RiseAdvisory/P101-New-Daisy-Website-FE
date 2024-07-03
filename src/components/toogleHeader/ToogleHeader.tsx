@@ -18,10 +18,10 @@ const ToggleButton = ({ className }: { className?: string }) => {
   useEffect(() => {
     (async () => {
       const response = await axiosInstance.get(
-        `/toogle-headers?locale=${lang}`,
+        `/options-toogles?locale=${lang}`,
       );
       const [data] = response?.data?.data;
-      setDataList(data?.attributes?.listToogle);
+      setDataList(data?.attributes?.optionsToogle);
     })();
   }, [lang]);
 
