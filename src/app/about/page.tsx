@@ -34,6 +34,7 @@ const About = () => {
         hiddenArrow={false}
         visibleDescriiton={false}
         heightScreen={true}
+        titleScroll={heroAbout?.titleScroll}
       />
       <OurMissing setScroll={setScroll} heroAbout={heroAbout} />
       <OurValue heroAbout={heroAbout} />
