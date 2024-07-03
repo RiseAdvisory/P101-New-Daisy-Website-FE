@@ -13,7 +13,6 @@ const LockerContainer = () => {
       let activeId = null;
       entries.map((entry: any) => {
         if (entry.isIntersecting) {
-          // dataset properties are strings
           activeId = +entry.target.dataset.objectid;
         }
       });
@@ -36,20 +35,7 @@ const LockerContainer = () => {
   }, []);
 
   return (
-    <div className={`${styles.locker} !hidden md:!grid`}>
-      <div className={styles.locker__image}>
-        <div className={styles.locker__container}>
-          {objects.map((el) => {
-            return (
-              <LockerImageItem
-                key={el.objectId}
-                isActive={el.objectId === activeImageId}
-                imageUrl={el.url}
-              />
-            );
-          })}
-        </div>
-      </div>
+    <div className={`${styles.locker} !hidden md:!grid `}>
       <div className={styles.locker__content}>
         {objects.map((el, index) => {
           return (
@@ -59,9 +45,27 @@ const LockerContainer = () => {
               index={index}
               text={el.text}
               ref={textRef}
+              description={el.description}
+              storeBurron={el.storeBurron}
+              listSub={el.listSub}
             />
           );
         })}
+      </div>
+      <div className={styles.locker__image}>
+        <div className={styles.locker__container}>
+          <div className="w-[600px] h-[700px] bg-primaryBtn rounded-[16px] relative ml-auto">
+            {objects.map((el) => {
+              return (
+                <LockerImageItem
+                  key={el.objectId}
+                  isActive={el.objectId === activeImageId}
+                  imageUrl={el.url}
+                />
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

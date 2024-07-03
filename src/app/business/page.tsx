@@ -66,13 +66,13 @@ const Business = () => {
     <>
       {heroBusiness ? (
         <div className="w-full bg-primary">
-          <BusinessHero
+          {/* <BusinessHero
             title={heroBusiness?.title}
             subtitle={heroBusiness?.subtitle}
             easyFlexible={heroBusiness?.easyFlexible}
             gataway={heroBusiness?.gateway}
             services={heroBusiness?.services}
-          />
+          /> */}
           <LockerContainer />
 
           <div className="md:hidden ">

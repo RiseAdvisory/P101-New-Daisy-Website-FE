@@ -9,9 +9,10 @@
     )
     [center-end] minmax(4.2rem, 1fr) [full-end];
 }
+
 .locker__image {
   position: relative;
-  grid-column: col-start 2 / col-end 6;
+  grid-column: col-start 7 / col-end 12;
 }
 .locker__image img {
   width: auto;
@@ -29,7 +30,7 @@
   justify-content: center;
 }
 .locker__content {
-  grid-column: col-start 8 / center-end;
+  grid-column: center-start / col-start 6;
 }
 .locker__section {
   height: 100vh;

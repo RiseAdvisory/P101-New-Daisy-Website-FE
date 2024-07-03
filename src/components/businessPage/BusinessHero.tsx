@@ -1,5 +1,4 @@
 'use client';
-import { QRCodeIcons } from '@/assets/icons/qrCodeIcon/QRCodeIcon';
 import { AppStoreButton } from '../buttonApp/AppStoreButton';
 import { PlayMarketButton } from '../buttonApp/PlayMarketButton';
 import Separator from '../separator/Separator';
