@@ -1,23 +1,50 @@
 export const objects = [
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    text: 'Easy, flexible and Powerful, Your customers will love it!',
     url: 'https://assets.codepen.io/325536/placeimg_480_720_tech.jpg',
+    objectId: 0,
+    description:
+      'Disconer the power of expanding your reach and maximizing your profits with ease',
+    storeBurron: true,
   },
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    text: 'Friendly Design, Works on any Mobile or Desktop device',
     url: 'https://assets.codepen.io/325536/tech.jpeg',
+    objectId: 1,
+    description:
+      'Disconer the power of expanding your reach and maximizing your profits with ease',
+    storeBurron: false,
+    listSub: ['Lorem ipsum dolor', 'Lorem ipsum dolor', 'Lorem ipsum dolor'],
   },
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    text: 'Marketing tools  to attract new & retain current customers',
     url: 'https://assets.codepen.io/325536/tech-2.jpeg',
+    objectId: 2,
+    description:
+      'Disconer the power of expanding your reach and maximizing your profits with ease',
+    storeBurron: false,
+    listSub: [
+      'Works on Mobile & Web Browsers',
+      'Faster customer management',
+      'Lorem ipsum dolor',
+    ],
   },
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    text: 'Collect Payments, sync Calendars and automate daily processes',
     url: 'https://assets.codepen.io/325536/tech-3.jpeg',
+    objectId: 3,
+    description:
+      'Disconer the power of expanding your reach and maximizing your profits with ease',
+    storeBurron: false,
+    listSub: ['Lorem ipsum dolor', 'Lorem ipsum dolor', 'Lorem ipsum dolor'],
   },
-].map((val, i) => {
-  return {
-    ...val,
-    objectId: i,
-  };
-});
+  {
+    text: 'performance reports and business Analytics to help you grow!',
+    url: 'https://assets.codepen.io/325536/tech-3.jpeg',
+    objectId: 3,
+    description:
+      'Disconer the power of expanding your reach and maximizing your profits with ease',
+    storeBurron: false,
+    listSub: ['Lorem ipsum dolor', 'Lorem ipsum dolor', 'Lorem ipsum dolor'],
+  },
+];
