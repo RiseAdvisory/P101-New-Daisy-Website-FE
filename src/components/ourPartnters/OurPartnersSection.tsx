@@ -55,7 +55,7 @@ export const OurPartnersSection = ({
         </p>
       </div>
       {array.length ? (
-        <CarouselCompany  data={array} />
+        <CarouselCompany data={array} />
       ) : (
         <div className="md:w-[800px] items-center mx-auto mt-8 md:mt-20 flex space-x-9 md:space-x-3 justify-center">
           <Skeleton className="hidden md:block  w-[90px] h-[90px] md:w-[120px] md:h-[120px] " />

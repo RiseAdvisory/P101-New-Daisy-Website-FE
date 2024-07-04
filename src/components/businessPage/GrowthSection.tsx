@@ -7,12 +7,12 @@ export const GrowthSection = ({
   title,
   description,
   subtitle,
-  learnMore
+  learnMore,
 }: {
   title: string;
   description: string;
-    subtitle: string;
-    learnMore:string
+  subtitle: string;
+  learnMore: string;
 }) => {
   return (
     <>

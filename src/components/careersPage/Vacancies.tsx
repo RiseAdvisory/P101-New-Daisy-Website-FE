@@ -61,7 +61,7 @@ export const Vacansies = ({
                       </p>
                       <DoteIcon className="hidden md:block" />
                       <span className="text-[#14736F] bg-[#E7F1F1] px-[10px] py-[1px] ltr:font-montserrat rounded-[20px] block w-full md:w-fit">
-                        {item.experience} 
+                        {item.experience}
                       </span>
                     </div>
                   </div>
@@ -70,10 +70,13 @@ export const Vacansies = ({
                     onClick={() => setOpenCV(!openCV)}
                     className="bg-white mb-8 text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary ltr:font-montserrat font-semibold hover:text-white md:mt-0  md:w-fit md:h-fit md:py-2 md:px-4"
                   >
-                   {dataCareers?.btnApply}
+                    {dataCareers?.btnApply}
                   </Button>
                 </div>
-                <AccordionVacancies dataCareers={dataCareers} listExperience={item.aboutExperience} />
+                <AccordionVacancies
+                  dataCareers={dataCareers}
+                  listExperience={item.aboutExperience}
+                />
               </li>
             );
           })}
