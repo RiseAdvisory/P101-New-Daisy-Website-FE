@@ -65,7 +65,7 @@ const LockerContentItem = forwardRef(
                   className="p-4 w-[180px] h-[150px]"
                 />
               </div>
-              <div className="flex flex-col justify-between border-primaryBtn ml-6 rtl:mr-6 ">
+              <div className="flex flex-col justify-between border-primaryBtn ml-6 rtl:mr-[40px] ">
                 <PlayMarketButton className="mb-2 w-full" />
                 <AppStoreButton />
               </div>

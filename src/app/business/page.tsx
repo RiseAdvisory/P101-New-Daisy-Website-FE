@@ -71,15 +71,7 @@ const Business = () => {
     <>
       {heroBusiness ? (
         <div className="w-full bg-primary -mt-[100px]">
-          {/* <BusinessHero
-            title={heroBusiness?.title}
-            subtitle={heroBusiness?.subtitle}
-            easyFlexible={heroBusiness?.easyFlexible}
-            gataway={heroBusiness?.gateway}
-            services={heroBusiness?.services}
-          /> */}
           <LockerContainer listInfo={dataScroll} />
-
           <div className="md:hidden ">
             <NoScrollingAnimationBusiness
               subtitle={heroBusiness?.listHeroPost[0].title}
@@ -145,6 +137,7 @@ const Business = () => {
             title={growth?.title}
             description={growth?.description}
             subtitle={growth?.subtitle}
+            learnMore={growth?.buttonLearn}
           />
           <JoinTheDaisy />
           <ExperienceDaisy />

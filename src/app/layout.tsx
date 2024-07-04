@@ -42,11 +42,9 @@ export default function RootLayout({
         className={`${openSans.variable} ${montserrat.variable} ${inter.variable} ${cairo.variable} font-openSans rtl:font-cairo`}
         dir="ltr"
       >
-        <div className="">
-          <Header />
-          <div className="pt-[100px]"> {children}</div>
-          <Footer />
-        </div>
+        <Header />
+        <div className="pt-[100px]"> {children}</div>
+        <Footer />
       </body>
     </html>
   );

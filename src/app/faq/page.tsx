@@ -2,6 +2,7 @@
 import { QASection } from '@/components/QASection/QASection';
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import axiosInstance from '@/helpers/axiosConfig';
+import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
 
 const Faq = () => {
@@ -14,16 +15,18 @@ const Faq = () => {
     //   return setPageTypes('Business');
     // }
   }
+  const { lang } = useChangeLanguage();
   useEffect(() => {
     (async () => {
       try {
-        const response = await axiosInstance('/faqs');
+        const response = await axiosInstance(`/faqs?locale=${lang}`);
         setDataFAQ(response?.data?.data[0]?.attributes);
       } catch (error) {
         console.log(error);
       }
     })();
-  }, []);
+  }, [lang]);
+
   return (
     <div className="bg-primary">
       <HeroPage
@@ -42,12 +45,10 @@ const Faq = () => {
         blockTop="!mt-0"
         stylesAccordionItem="data-[state=open]:bg-white data-[state=open]:text-primary"
         sectionFQ={true}
-        titleFraque={'dwa'}
+        titleFraque={dataFAQ?.subtitle}
       />
     </div>
   );
 };
 
 export default Faq;
-
-//Frequently Asked Question

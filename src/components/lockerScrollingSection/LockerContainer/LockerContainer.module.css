@@ -23,17 +23,18 @@
 .locker__container {
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 60px;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .locker__content {
+  margin-top: 50px;
   grid-column: center-start / col-start 6;
 }
 .locker__section {
-  height: 100vh;
+  height: 600px;
   display: flex;
   justify-content: center;
   flex-direction: column;

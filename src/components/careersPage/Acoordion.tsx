@@ -9,8 +9,10 @@ import { useState } from 'react';
 
 export const AccordionVacancies = ({
   listExperience,
+  dataCareers,
 }: {
   listExperience: string[];
+  dataCareers: any;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,7 +27,7 @@ export const AccordionVacancies = ({
     >
       <AccordionItem value="item-1">
         <AccordionContent className="bg-[#F8F5F3] rounded-[8px] px-4 py-6 ">
-          <ul className="list-disc pl-4">
+          <ul className="list-disc pl-4 rtl:pr-4">
             {listExperience.map((item, index) => {
               return (
                 <li key={index} className="ltr:font-montserrat text-primary ">
@@ -39,7 +41,7 @@ export const AccordionVacancies = ({
           onClick={handleToggle}
           className="ltr:font-montserrat font-semibold text-base justify-end pb-0"
         >
-          {isOpen ? 'Hide' : 'View more info'}
+          {isOpen ? dataCareers?.btnHide : dataCareers?.btnView}
         </AccordionTrigger>
       </AccordionItem>
     </Accordion>

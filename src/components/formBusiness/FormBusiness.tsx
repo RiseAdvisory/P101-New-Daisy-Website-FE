@@ -29,23 +29,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 
-const formSchema = z.object({
-  name: z.string(),
-  business_type: z.string(),
-  email: z
-    .string()
-    .min(5, {
-      message: 'Email must be at least 5 characters.',
-    })
-    .email('This is not a valid email.'),
-  social_media: z.string().url(),
-  country_code: z.string(),
-  mobile: z.string(),
-  location_count: z.string(),
-  staff_count: z.string(),
-  business_name: z.string(),
-});
-
 export const ProfileForm = () => {
   const [activeField, setActiveField] = useState<string | null>(null);
   const [country_code, setCountryCode] = useState('+965');
@@ -58,6 +41,20 @@ export const ProfileForm = () => {
   const [contentChange, setContentChange] = useState({
     serviceProvidorType: 'Freelances',
     homeVisits: 'No',
+  });
+  const formSchema = z.object({
+    name: z.string(),
+    business_type: z.string(),
+    email: z
+      .string()
+
+      .email(descriptionForm?.errorEmail),
+    social_media: z.string().url(descriptionForm?.url),
+    country_code: z.string(),
+    mobile: z.string(),
+    location_count: z.string(),
+    staff_count: z.string(),
+    business_name: z.string(),
   });
 
   const form = useForm({

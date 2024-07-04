@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useState } from 'react';
 import LockerImageItem from '../LockerImageItem/LockerImageItem';
 import styles from './LockerContainer.module.css';
 import LockerContentItem from '../LockerContentItem/LockerContentItem';
-import { objects } from '@/lib/testData';
 
 const LockerContainer = ({ listInfo }: { listInfo: any }) => {
   const [activeImageId, setActiveImageId] = useState<any>();
@@ -59,7 +58,7 @@ const LockerContainer = ({ listInfo }: { listInfo: any }) => {
       </div>
       <div className={styles.locker__image}>
         <div className={styles.locker__container}>
-          <div className="w-[600px] h-[600px] bg-primaryBtn rounded-[16px] relative ml-auto overflow-hidden">
+          <div className="w-[600px] h-[600px] bg-primaryBtn rounded-[16px] relative ml-auto rtl:ml-0 rtl:mr-auto overflow-hidden">
             {listInfo &&
               sortList.map((el: any) => {
                 return (
