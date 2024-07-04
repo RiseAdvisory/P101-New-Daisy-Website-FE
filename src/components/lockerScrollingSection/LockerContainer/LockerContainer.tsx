@@ -59,7 +59,7 @@ const LockerContainer = ({ listInfo }: { listInfo: any }) => {
       </div>
       <div className={styles.locker__image}>
         <div className={styles.locker__container}>
-          <div className="w-[600px] h-[600px] bg-primaryBtn rounded-[16px] relative ml-auto">
+          <div className="w-[600px] h-[600px] bg-primaryBtn rounded-[16px] relative ml-auto overflow-hidden">
             {listInfo &&
               sortList.map((el: any) => {
                 return (
