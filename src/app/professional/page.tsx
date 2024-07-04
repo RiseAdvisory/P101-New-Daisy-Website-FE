@@ -30,7 +30,7 @@ const Professional = () => {
     (async function getProfessional() {
       try {
         const responseGrowth = await axiosInstance.get(
-          `/growth-professionals?locale=${lang}`,
+          `/growth-professionals?populate=*&locale=${lang}`,
         );
         const response = await axiosInstance.get(
           `/home-professionals?locale=${lang}`,
@@ -50,7 +50,7 @@ const Professional = () => {
   return (
     <>
       {heroProfessional ? (
-        <div className="w-full bg-primary -mt-[100px]">
+        <div className="w-full bg-primary md:-mt-[100px]">
           <LockerContainer listInfo={dataScroll} />
           <div className="md:hidden ">
             <NoScrollingAnimationBusiness
@@ -118,6 +118,7 @@ const Professional = () => {
             description={growth?.description}
             subtitle={growth?.subtitle}
             learnMore={growth?.buttonLearn}
+            imageUrl={growth?.imageHero?.data?.[0].attributes.url}
           />
           <JoinTheDaisy />
           <ExperienceDaisy />
