@@ -7,10 +7,12 @@ export const GrowthSection = ({
   title,
   description,
   subtitle,
+  learnMore
 }: {
   title: string;
   description: string;
-  subtitle: string;
+    subtitle: string;
+    learnMore:string
 }) => {
   return (
     <>
@@ -27,7 +29,7 @@ export const GrowthSection = ({
               {description}
             </p>
             <Button className="font-semibold w-full h-auto text-base mt-8 mb-10 px-[85px] py-[14px] rounded-[9px] md:w-[310px] hover:bg-white hover:text-primary hover:border hover:border-primary">
-              <Link href="/about"> Learn More About Us</Link>
+              <Link href="/about"> {learnMore}</Link>
             </Button>
           </div>
           <Separator className="bg-[#EAECEC] mb-10 md:hidden" />

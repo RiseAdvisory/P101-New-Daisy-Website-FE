@@ -59,7 +59,7 @@ export const QASection = ({
           { hidden: titleHidden },
         )}
       >
-        Frequently Asked Question
+        {titleFraque}
       </h1>
       <div className={`md:mt-12 md:px-[288px] ${blockTop}`}>
         {qaList?.map((item: any, index: number) => {

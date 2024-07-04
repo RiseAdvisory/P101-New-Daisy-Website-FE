@@ -22,7 +22,6 @@ const Careers = () => {
       } catch (error) {}
     })();
   }, [lang]);
-
   return (
     <div className="w-full">
       <HeroPage
@@ -34,6 +33,7 @@ const Careers = () => {
         heightScreen={true}
         styleSection="pb-[100px]"
         secondDescription={dataCareers?.descriptionHero}
+        titleScroll={dataCareers?.titleScroll}
       />
       <Vacansies setScroll={setScroll} dataCareers={dataCareers} />
     </div>

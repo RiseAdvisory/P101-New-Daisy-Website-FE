@@ -61,6 +61,7 @@ const Carousel = React.forwardRef<
     const [carouselRef, api] = useEmblaCarousel(
       {
         ...opts,
+        direction: document.body.getAttribute('dir') as 'ltr' | 'rtl',
         axis: orientation === 'horizontal' ? 'x' : 'y',
       },
       plugins,

@@ -13,7 +13,6 @@ import image4 from '../../assets/images/doublePhone.png';
 import { NoScrollingAnimationBusiness } from '@/components/noAnimationBusiness/NoAnimationBusiness';
 import leaf from '../../assets/images/LeafBg.png';
 import { Separator } from '@/components/ui/separator';
-import { ProfessionalHero } from '@/components/professional/ProfessionalHero';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useEffect, useState } from 'react';
 
@@ -23,10 +22,10 @@ import { Skeleton } from '@/components/ui/skeleton';
 
 const Professional = () => {
   const [heroProfessional, setHeroProfessional] = useState<any>();
+  const [dataScroll, setDataScroll] = useState<any>();
 
   const [growth, setGrowth] = useState<any>();
   const { lang } = useChangeLanguage();
-
   useEffect(() => {
     (async function getProfessional() {
       try {
@@ -36,6 +35,10 @@ const Professional = () => {
         const response = await axiosInstance.get(
           `/home-professionals?locale=${lang}`,
         );
+        const responseScrolling = await axiosInstance.get(
+          `/home-professional-scrollings?populate=*&locale=${lang}`,
+        );
+        setDataScroll(responseScrolling?.data?.data);
         setGrowth(responseGrowth?.data?.data[0]?.attributes);
         setHeroProfessional(response?.data?.data?.[0]?.attributes);
       } catch (error) {
@@ -47,15 +50,8 @@ const Professional = () => {
   return (
     <>
       {heroProfessional ? (
-        <div className="w-full bg-primary">
-          <ProfessionalHero
-            titte={heroProfessional?.title}
-            subtitle={heroProfessional?.subtitle}
-            easyFlexible={heroProfessional?.easyFlexible}
-            gateway={heroProfessional?.gateway}
-            services={heroProfessional?.services}
-          />
-
+        <div className="w-full bg-primary -mt-[100px]">
+          <LockerContainer listInfo={dataScroll} />
           <div className="md:hidden ">
             <NoScrollingAnimationBusiness
               subtitle={heroProfessional?.listHeroPost[0].title}
@@ -121,6 +117,7 @@ const Professional = () => {
             title={growth?.title}
             description={growth?.description}
             subtitle={growth?.subtitle}
+            learnMore={growth?.buttonLearn}
           />
           <JoinTheDaisy />
           <ExperienceDaisy />

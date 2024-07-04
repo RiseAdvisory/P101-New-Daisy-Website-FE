@@ -5,6 +5,7 @@ import axiosInstance from '@/helpers/axiosConfig';
 import { useLoadingStore } from '@/store/loading';
 import { Skeleton } from '../ui/skeleton';
 import { useChangeLanguage } from '@/store/language';
+import { getData, getRandomElements } from '@/helpers/getPartners';
 
 export const OurPartnersSection = ({
   stylePartners,
@@ -15,6 +16,7 @@ export const OurPartnersSection = ({
   const [ourPartners, setOurPartners] = useState<any>();
 
   const { lang } = useChangeLanguage();
+  const { handleArray, handleLoadingStatus } = useLoadingStore();
 
   useEffect(() => {
     (async () => {
@@ -29,6 +31,18 @@ export const OurPartnersSection = ({
       }
     })();
   }, [lang]);
+  useEffect(() => {
+    try {
+      (async () => {
+        handleLoadingStatus(true);
+        const listPartners = await getData();
+        const randomPartners = getRandomElements(listPartners, 60);
+        handleArray(randomPartners);
+      })();
+    } catch (error) {
+      console.log(error);
+    }
+  }, [handleArray, handleLoadingStatus]);
 
   return (
     <div className={` px-4 mt-[80px] pb-[112px] ${stylePartners} bg-white`}>
@@ -41,7 +55,7 @@ export const OurPartnersSection = ({
         </p>
       </div>
       {array.length ? (
-        <CarouselCompany data={array} />
+        <CarouselCompany  data={array} />
       ) : (
         <div className="md:w-[800px] items-center mx-auto mt-8 md:mt-20 flex space-x-9 md:space-x-3 justify-center">
           <Skeleton className="hidden md:block  w-[90px] h-[90px] md:w-[120px] md:h-[120px] " />

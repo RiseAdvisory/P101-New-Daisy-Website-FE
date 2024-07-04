@@ -19,7 +19,7 @@ export const HeroPage = ({
   bredCrumbTitle,
   bredCrumbDesription,
   blockRef,
-  titleScroll = ' Don’t believe us? Keep reading...',
+  titleScroll = 'Don’t believe us? Keep reading...',
   features,
   bredCrumbHref,
 }: {
