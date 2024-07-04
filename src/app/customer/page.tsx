@@ -28,7 +28,7 @@ const Customer = () => {
     (async function getUser() {
       try {
         const responseGrowth = await axiosInstance.get(
-          `/growth-customers?locale=${lang}`,
+          `/growth-customers?populate=*&locale=${lang}`,
         );
         const response = await axiosInstance.get(
           `/home-customers?locale=${lang}`,
@@ -44,10 +44,11 @@ const Customer = () => {
       }
     })();
   }, [lang]);
+  console.log(growth);
   return (
     <>
       {heroCustomer ? (
-        <div className="w-full bg-primary -mt-[100px]">
+        <div className="w-full bg-primary md:-mt-[100px]">
           <LockerContainer listInfo={dataScroll} />
           <div className="md:hidden">
             <NoScrollingAnimationBusiness
@@ -94,6 +95,9 @@ const Customer = () => {
           <GrowthSectionCustomer
             title={growth?.title}
             description={growth?.description}
+            subtitle={growth?.subtitle}
+            learnMore={growth?.buttonLearn}
+            imageUrl={growth?.imageHero?.data?.[0].attributes.url}
           />
           <JoinTheDaisy />
           <ExperienceDaisy />

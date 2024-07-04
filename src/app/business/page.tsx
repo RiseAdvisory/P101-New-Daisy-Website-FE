@@ -1,7 +1,6 @@
 'use client';
 import { QASection } from '@/components/QASection/QASection';
 import { BecomeFormPartner } from '@/components/businessPage/BecomeFormPartner';
-import { BusinessHero } from '@/components/businessPage/BusinessHero';
 import { DaysiMission } from '@/components/businessPage/DaysiMission';
 import { GrowthSection } from '@/components/businessPage/GrowthSection';
 import { ExperienceDaisy } from '@/components/experienceDaisy/ExperienceDaisy';
@@ -34,7 +33,7 @@ const Business = () => {
     (async function getBusiness() {
       try {
         const responseGrowth = await axiosInstance.get(
-          `/growth-businesses?locale=${lang}`,
+          `/growth-businesses?populate=*&locale=${lang}`,
         );
         const response = await axiosInstance.get(
           `/home-businesses?locale=${lang}`,
@@ -66,11 +65,11 @@ const Business = () => {
       console.log(error);
     }
   }, [handleArray, handleLoadingStatus]);
-
+  console.log(growth);
   return (
     <>
       {heroBusiness ? (
-        <div className="w-full bg-primary -mt-[100px]">
+        <div className="w-full bg-primary md:-mt-[100px]">
           <LockerContainer listInfo={dataScroll} />
           <div className="md:hidden ">
             <NoScrollingAnimationBusiness
@@ -138,6 +137,7 @@ const Business = () => {
             description={growth?.description}
             subtitle={growth?.subtitle}
             learnMore={growth?.buttonLearn}
+            imageUrl={growth?.imageHero?.data?.[0].attributes.url}
           />
           <JoinTheDaisy />
           <ExperienceDaisy />

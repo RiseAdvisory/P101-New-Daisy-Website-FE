@@ -1,19 +1,25 @@
-import { GrowthIcon } from '@/assets/icons/growthIcon/GrowthIcon';
+import growthImage from '../../assets/images/growthBusiness.png';
 import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
 import Link from 'next/link';
+import { baseURLImage } from '@/helpers/axiosConfig';
+import Image from 'next/image';
 
 export const GrowthSection = ({
   title,
   description,
   subtitle,
   learnMore,
+  imageUrl,
 }: {
   title: string;
   description: string;
   subtitle: string;
   learnMore: string;
+  imageUrl: string;
 }) => {
+  const growthImages = new URL(imageUrl, baseURLImage).href;
+
   return (
     <>
       <div className=" px-4 md:flex md:bg-[#F8F5F3] bg-white">
@@ -33,8 +39,13 @@ export const GrowthSection = ({
             </Button>
           </div>
           <Separator className="bg-[#EAECEC] mb-10 md:hidden" />
-          <div className="flex justify-center items-center md:w-[50%] md:pr-28">
-            <GrowthIcon />
+          <div className="flex justify-center items-center md:w-[50%] md:pr-28 md:py-[100px]">
+            <Image
+              width={426}
+              height={548}
+              src={growthImages}
+              alt="customerdaisy"
+            />
           </div>
         </div>
         <Separator className="bg-[#EAECEC] mt-20 md:hidden" />
