@@ -42,22 +42,22 @@ export const ToggleButton = ({
     </div>
   );
 };
-const text =  {
-  "per": "per",
-  "plan": "Basic",
-  "year": "year",
-  "month": "month",
-  "staff": "Additional Staff",
-  "billed": "billed monthly",
-  "details": "View details",
-  "basicPlan": "Basic Plan",
-  "textStart": " Start Free Trial",
-  "tryPeriod": "14 days try period",
-  "totalPrice": "Total Price",
-  "resultOption": [
-      " Staff Free",
-      " Branch Free",
-      " country Free",
-      " Additional $10/month"
-  ]
-}
+const text = {
+  per: 'per',
+  plan: 'Basic',
+  year: 'year',
+  month: 'month',
+  staff: 'Additional Staff',
+  billed: 'billed monthly',
+  details: 'View details',
+  basicPlan: 'Basic Plan',
+  textStart: ' Start Free Trial',
+  tryPeriod: '14 days try period',
+  totalPrice: 'Total Price',
+  resultOption: [
+    ' Staff Free',
+    ' Branch Free',
+    ' country Free',
+    ' Additional $10/month',
+  ],
+};

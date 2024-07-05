@@ -12,8 +12,7 @@ export const GridPricingCard = ({
   activePricingPage: string;
   isRescomennded: boolean;
   dataPricing: any;
-  }) => {
-
+}) => {
   return (
     <>
       <div className="w-full bg-primary h-[420px] md:block hidden"></div>

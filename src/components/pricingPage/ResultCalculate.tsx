@@ -106,7 +106,8 @@ export const ResultCalculate = ({
                       <span className="hidden md:inline">
                         {dataPricing?.resetCalculation?.per}
                       </span>
-                      <span className="md:hidden">/</span> {dataPricing?.resetCalculation?.month}
+                      <span className="md:hidden">/</span>{' '}
+                      {dataPricing?.resetCalculation?.month}
                     </span>
                   </p>
                   <p className=" ltr:font-montserrat text-[10px] leading-[15px] md:flex  md:text-[16px] md:leading-[18px] font-normal text-[#455150]">
@@ -131,7 +132,8 @@ export const ResultCalculate = ({
                       <span className="hidden md:inline">
                         {dataPricing?.resetCalculation?.per}
                       </span>
-                      <span className="md:hidden">/</span> {dataPricing?.resetCalculation?.year}
+                      <span className="md:hidden">/</span>{' '}
+                      {dataPricing?.resetCalculation?.year}
                     </span>
                   </p>
                   <p className=" ltr:font-montserrat text-[10px] leading-[15px] md:flex  md:text-[16px] md:leading-[18px] font-normal text-[#455150]">

@@ -12,9 +12,8 @@ export const Calculater = ({
   setConciergeService,
   calculationFormRef,
   titleTypeCalculate,
-  dataPricing
+  dataPricing,
 }: any) => {
-
   return (
     <>
       <div

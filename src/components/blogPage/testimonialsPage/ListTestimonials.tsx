@@ -4,9 +4,11 @@ import { useChangeLanguage } from '@/store/language';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-
-
-export const TestimonialsCustomerList = ({textMore}:{textMore:string}) => {
+export const TestimonialsCustomerList = ({
+  textMore,
+}: {
+  textMore: string;
+}) => {
   const [listTestimonials, setListTestimonials] = useState<any>();
 
   const { lang } = useChangeLanguage();

@@ -95,8 +95,8 @@ export const CalculatePricing = ({
             calculationFormRef={calculationFormRef}
             onCheckedYear={onCheckedYear}
             setCheckedYear={setCheckedYear}
-              onScrollToGrid={onScrollToGrid}
-              dataPricing={dataPricing}
+            onScrollToGrid={onScrollToGrid}
+            dataPricing={dataPricing}
           />
         )}
 
@@ -130,5 +130,3 @@ export const CalculatePricing = ({
     </div>
   );
 };
-
-
