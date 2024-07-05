@@ -88,7 +88,7 @@ export const CalculatePricing = ({
             conciergeService={conciergeService}
             setConciergeService={setConciergeService}
             titleTypeCalculate={titleTypeCalculate?.calculate}
-            dataPricing={titleTypeCalculate}
+            overflowText={dataPricing}
           />
         ) : (
           <ResultCalculate

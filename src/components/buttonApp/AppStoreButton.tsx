@@ -34,7 +34,7 @@ export const AppStoreButton = ({
         variant="navigation"
         className={`w-full mr-0 h-full felx items-center justify-center rounded-xl py-4 group hover:bg-white hover:text-primary ${className}`}
       >
-        <div className="flex items-center mr-3">
+        <div className="flex items-center mr-3 rtl:flex-row-reverse">
           <AppStoreIcons
             w="36"
             h="36"

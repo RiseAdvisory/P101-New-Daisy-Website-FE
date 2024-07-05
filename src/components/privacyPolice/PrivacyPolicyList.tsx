@@ -52,7 +52,7 @@ export const PrivacyPoliceList = ({
           {dataSection?.theProvisionsSet}
         </p>
         <h2 className="capitalize font-bold text-2xl mb-4 text-primary pt-10">
-          Acceptance of policy
+          {dataSection?.titleAccepted}
         </h2>
         <ol className="list-decimal px-4 ml-4">
           {dataSection &&
