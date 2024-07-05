@@ -16,6 +16,7 @@ import { useRouter } from 'next/navigation';
 import { BreadcrumbMobile } from './breadCrumbMobile';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
+import { ArrowLeft, ChevronLeft } from 'lucide-react';
 
 export const MobileMenu = ({
   openMenu,
@@ -68,9 +69,9 @@ export const MobileMenu = ({
               listNav?.listNavigation.map((item: any, index: number) => {
                 return (
                   <li key={index}>
-                    <div className="flex justify-between items-center py-4">
+                    <div className="flex rtl:flex-row-reverse justify-between items-center py-4 rtl:font-cairo ">
                       <Button
-                        className="ltr:font-montserrat font-semibold text-xl leading-8 w-full justify-start"
+                        className="ltr:font-montserrat font-semibold text-xl leading-8 w-full justify-start  rtl:font-cairo rtl:justify-end"
                         onClick={() => {
                           if (
                             item.title === 'Resources' ||
@@ -85,7 +86,7 @@ export const MobileMenu = ({
                       >
                         {item.title}
                       </Button>
-                      <ArrowRightIcon />
+                      {lang === 'ar' ?  <ChevronLeft /> : <ArrowRightIcon  /> }
                     </div>
                     <Separator />
                   </li>
@@ -94,7 +95,7 @@ export const MobileMenu = ({
           </ul>
         ) : (
           <div>
-            <div className="flex pb-6 mr-auto">
+            <div className="flex pb-6 ltr:mr-auto rtl:ml-auto rtl:font-cairo rtl:flex-row-reverse">
               <BreadcrumbMobile
                 backmenu={onResources}
                 setBackMenu={setResources}
@@ -105,7 +106,7 @@ export const MobileMenu = ({
             <ul>
               {listNav?.listNavigation[3]?.submenu!.map(
                 (submenuItem: any, subIndex: number) => (
-                  <li key={subIndex} className="pb-5">
+                  <li key={subIndex} className="pb-5 ">
                     <Link
                       href={submenuItem.nav}
                       className="ltr:font-montserrat font-semibold text-base leading-6"
@@ -113,17 +114,17 @@ export const MobileMenu = ({
                         setOpenMenu(!openMenu), setResources(true);
                       }}
                     >
-                      <div className="flex justify-between items-center">
+                      <div className="flex justify-between items-center rtl:font-cairo rtl:flex-row-reverse rtl:text-end">
                         <div>
                           {submenuItem.title}
                           {submenuItem.subtitle && (
-                            <p className="text-[#D5D9D9] font-normal text-sm py-1">
+                            <p className="text-[#D5D9D9] font-normal text-sm py-1 rtl:font-cairo">
                               {submenuItem.subtitle}
                             </p>
                           )}
                         </div>
                         <div>
-                          <ArrowRightIcon />
+                        {lang === 'ar' ?  <ChevronLeft /> : <ArrowRightIcon  /> }
                         </div>
                       </div>
                       <Separator className="mt-4" />

@@ -44,7 +44,7 @@ const Customer = () => {
       }
     })();
   }, [lang]);
-
+  console.log(heroCustomer);
   return (
     <>
       {heroCustomer ? (
@@ -101,7 +101,10 @@ const Customer = () => {
           />
           <JoinTheDaisy />
           <ExperienceDaisy />
-          <QASection pageType="Customer" />
+          <QASection
+            pageType="Customer"
+            titleFraque={heroCustomer?.titleFraque}
+          />
         </div>
       ) : (
         <div className="w-full h-screen py-[40px] px-[20px] bg-primary">

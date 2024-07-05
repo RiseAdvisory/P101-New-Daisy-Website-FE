@@ -52,7 +52,7 @@ export const HeroPage = ({
       )}
     >
       {isVisibleBreadCrumbs && (
-        <div className="flex pb-28 mr-auto">
+        <div className="flex pb-28 ltr:mr-auto rtl:ml-auto">
           <HomeIcon className="ltr:mr-2 rtl:ml-2 " />
           <BreadcrumbWithCustomSeparator
             bredCrumbTitle={bredCrumbTitle}

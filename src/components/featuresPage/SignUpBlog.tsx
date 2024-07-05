@@ -29,7 +29,6 @@ export const SignUpBlog = ({ style }: { style?: string }) => {
   };
 
   const handleSubscribe = async () => {
-
     try {
       const response = await axiosInstance.post('/sign-up-form-emails', {
         signUpEmail: email,

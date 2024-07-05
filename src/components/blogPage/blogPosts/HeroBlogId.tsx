@@ -25,30 +25,30 @@ export const HeroBlogPage = () => {
       }}
     >
       <div className="flex pt-6">
-        <HomeIcon className="mr-2" />
+        <HomeIcon className="ltr:mr-2 rtl:ml-2" />
         <BreadcrumbWithCustomSeparator bredCrumbHref="/resources/blog-post" />
       </div>
       <h1 className="text-3xl font-bold text-white mt-8">{post?.title}</h1>
       <div className="flex justify-start text-[#ECEEED] text-sm mt-4 flex-col md:flex-row">
         <div className="flex">
-          <div className="flex border-r pr-[10px]">
+          <div className="flex ltr:border-r ltr:pr-[10px] rtl:pl-[10px]">
             <Image
               src={iconImg}
               alt="people"
-              className="mr-[10px] rounded-full"
+              className="ltr:mr-[10px] rtl:ml-[10px] rounded-full"
               width={18}
               height={18}
             />
             <span className="text-sm">{post.user.name}</span>
           </div>
           <span className="flex items-center border-r px-[10px]">
-            <CalendarIcon className="mr-[10px]" fill="#ECEEED" />
+            <CalendarIcon className="ltr:mr-[10px] rtl:ml-[10px]" fill="#ECEEED" />
             {post.user.date}
           </span>
         </div>
-        <span className="flex items-center mt-2 md:mt-0 md:ml-2">
-          <ClockIcon className="mr-2" fill="#ECEEED" />
-          {post.user.time} to read
+        <span className="flex items-center mt-2 md:mt-0 md:ml-2 rtl:border-r rtl:pr-2">
+          <ClockIcon className="ltr:mr-2 rtl:ml-2" fill="#ECEEED" />
+          {post.user.time} 
         </span>
       </div>
     </div>

@@ -85,7 +85,6 @@ export const Header = () => {
     }
   }, []);
   const { page } = useChangePage();
-
   return (
     <header className="w-full rtl:md:  bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16 fixed z-40">
       <Link href={page} onClick={() => setChangePage('Business')}>
@@ -204,7 +203,7 @@ export const Header = () => {
                 list={listLanguage}
                 classNameContent="!w-[70px]"
               />
-              <GetAppButton textGetApp={getTheApp} />
+              <GetAppButton homePage={true} textGetApp={getTheApp} />
             </div>
           </>
         ) : (

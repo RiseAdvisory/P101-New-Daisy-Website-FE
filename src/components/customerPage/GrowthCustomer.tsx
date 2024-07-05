@@ -53,10 +53,10 @@ export const GrowthSectionCustomer = ({
             </Button>
           </div>
           <Separator className="bg-[#EAECEC] mb-10 md:hidden" />
-          <div className="flex justify-center items-center md:w-[50%] md:pr-28 md:py-[100px]">
+          <div className="flex justify-center items-center md:w-[50%] md:pr-28 md:py-[100px] rtl:ml-40">
             <Image
               width={426}
-              height={548}
+              height={748}
               src={growthImage}
               alt="customerdaisy"
             />
