@@ -49,6 +49,7 @@ export const CalculatePricing = ({
       ? dataPricing?.business
       : dataPricing?.professional;
   // console.log(calculate);
+
   return (
     <div className="bg-[#828E8E] rounded-[16px] p-0 md:p-8 w-full">
       <div className="p-6 md:p-8 rounded-[16px] bg-white">
@@ -68,7 +69,7 @@ export const CalculatePricing = ({
             }}
             className="hidden md:inline-flex ltr:font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary text-center"
           >
-            {onCalculates ? 'Calculate' : 'Reset Calculation'}
+            {onCalculates ? dataPricing?.textCalculate : dataPricing?.textReset}
           </Button>
         </div>
         <Separator
@@ -87,6 +88,7 @@ export const CalculatePricing = ({
             conciergeService={conciergeService}
             setConciergeService={setConciergeService}
             titleTypeCalculate={titleTypeCalculate?.calculate}
+            dataPricing={titleTypeCalculate}
           />
         ) : (
           <ResultCalculate
@@ -94,6 +96,7 @@ export const CalculatePricing = ({
             onCheckedYear={onCheckedYear}
             setCheckedYear={setCheckedYear}
             onScrollToGrid={onScrollToGrid}
+            dataPricing={dataPricing}
           />
         )}
 
@@ -107,7 +110,7 @@ export const CalculatePricing = ({
             { hidden: onCalculates },
           )}
         >
-          Start Free Trial
+          {dataPricing?.textFreeTrial}
         </Button>
         <Button
           onClick={() => {
@@ -119,9 +122,9 @@ export const CalculatePricing = ({
             setOnCalculates(!onCalculates);
             setIsRecommended((prev: boolean) => !prev);
           }}
-          className="inline-flex md:hidden w-full p-6  ltr:font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary"
+          className="inline-flex md:hidden w-full p-6 ltr:font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary"
         >
-          {onCalculates ? 'Calculate' : 'Reset Calculation'}
+          {onCalculates ? dataPricing?.textCalculate : dataPricing?.textReset}
         </Button>
       </div>
     </div>

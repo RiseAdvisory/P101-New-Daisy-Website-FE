@@ -11,12 +11,12 @@ export const GrowthSectionCustomer = ({
   description,
   subtitle,
   learnMore,
-  imageUrl
+  imageUrl,
 }: {
   title: string;
   description: string;
   subtitle: string;
-    learnMore: string;
+  learnMore: string;
   imageUrl: string;
 }) => {
   const growthImage = new URL(imageUrl, baseURLImage).href;

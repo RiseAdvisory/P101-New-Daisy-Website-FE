@@ -16,11 +16,10 @@ const CustomerTestimonials = () => {
       const response = await axiosInstance(
         `/resources-customer-testimonials?locale=${lang}`,
       );
-      const [data] = response.data.data;
-      setDataTestimonials(data.attributes);
+      const [data] = response?.data?.data;
+      setDataTestimonials(data?.attributes);
     })();
   }, [lang]);
-
   return (
     <>
       <HeroPage
@@ -35,7 +34,7 @@ const CustomerTestimonials = () => {
         styleSection="pb-[100px] pt-6 px-[16px]"
         secondDescription={dataTestimonials?.secondDescription}
       />
-      <TestimonialsCustomerList />
+      <TestimonialsCustomerList textMore={dataTestimonials?.textMoreList} />
       <div className="px-4 md:px-20 bg-[#F8F5F3]">
         <Separator className="bg-[#D5D9D9]" />
       </div>

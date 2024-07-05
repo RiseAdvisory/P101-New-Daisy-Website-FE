@@ -92,13 +92,13 @@ const Pricing = () => {
           </p>
         </div>
       </div>
-      <div ref={gridCardRef}>
+      <div ref={gridCardRef} className="md:scroll-mt-[100px] scroll-mt-[120px]">
         <GridPricingCard
           isRescomennded={isRescomennded}
           activePricingPage={activePricingPage}
           chechedAnnualy={checkedMonth}
-          listChangePricing={currentPricing}
           dataPricing={currentPricing}
+          listChangePricing={dataPricing}
         />
       </div>
       {activePricingPage === 'business' && (

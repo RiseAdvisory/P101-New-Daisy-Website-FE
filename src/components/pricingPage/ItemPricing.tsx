@@ -17,6 +17,7 @@ export const ItemCardPricing = ({
   priceYear,
   activePricingPage,
   isRescomennded,
+  textRecomended,
 }: {
   title: string;
   subtitle: string;
@@ -28,11 +29,13 @@ export const ItemCardPricing = ({
   priceYear: string;
   activePricingPage: string;
   isRescomennded: boolean;
+  textRecomended: any;
 }) => {
   const [showAll, setShowAll] = useState(false);
 
   const currentPrice = !chechedAnnualy ? price : priceYear;
   const isRecommended = title === 'Starter' || title === 'Basic';
+  const defaulText = textRecomended?.textItemPricing;
   return (
     <>
       <li
@@ -43,7 +46,7 @@ export const ItemCardPricing = ({
       >
         {isRecommended && isRescomennded && (
           <p className="absolute first:block hidden top-0 left-0 right-0 text-center text-[#A67F6B] bg-[#EDE5E1]">
-            Recommended
+            {textRecomended?.textRecomended}
           </p>
         )}
         <div
@@ -54,7 +57,7 @@ export const ItemCardPricing = ({
         </div>
 
         <div className="flex flex-col justify-center items-center mb-6 px-4">
-          <h2 className="font-semibold text-2xl text-[#242424] ">{title}</h2>
+          <h2 className="font-semibold text-2xl text-[#242424]">{title}</h2>
           <p className="ltr:font-inter w-fit text-[12px] mt-3 leading-3 text-[#2543AD] bg-[#E9ECF7] rounded-[20px] px-[9px] py-[4px] font-medium">
             {subtitle}
           </p>
@@ -69,7 +72,8 @@ export const ItemCardPricing = ({
                   : 'Free'}
               </h2>
               <p className="ltr:font-montserrat text-[#242424] text-[12px] leading-[18px]">
-                per month / billed {chechedAnnualy ? 'annualy' : 'monthly'}
+                {defaulText?.perPeriod}{' '}
+                {chechedAnnualy ? defaulText?.annualy : defaulText?.monthly}
                 <span
                   className={cn(
                     'bg-[#E9ECF7] text-[#2543AD] rounded-[16px] px-[7px] py-[3px] hidden text-[12px] leading-[12px] ltr:font-inter font-medium w-fit ml-1 text-nowrap',
@@ -79,11 +83,11 @@ export const ItemCardPricing = ({
                     },
                   )}
                 >
-                  17% discount
+                  {defaulText?.discount}
                 </span>
               </p>
               <Button className="ltr:font-montserrat font-semibold mt-4 bg-white text-primary hover:text-white hover:bg-primary border border-primary">
-                Get Started Now
+                {defaulText?.textStarted}
               </Button>
             </div>
           </div>
@@ -94,8 +98,8 @@ export const ItemCardPricing = ({
               <div className="flex justify-center items-center py-3 border bg-white rounded-[8px]">
                 <div className="flex justify-center items-center">
                   <OptionPricing />
-                  <span className="ml-2 ltr:font-montserrat font-semibold">
-                    Everything in the &quot;{optionPlus}&quot;
+                  <span className="ltr:ml-2 rtl:mr-2 ltr:font-montserrat font-semibold">
+                    {defaulText?.everything} &quot;{optionPlus}&quot;
                   </span>
                 </div>
               </div>
@@ -111,7 +115,7 @@ export const ItemCardPricing = ({
               className="md:hidden ltr:font-montserrat font-semibold py-4 bg-white text-primary rounded-none border-t -mx-4 rounded-b-[16px]"
               onClick={() => setShowAll(true)}
             >
-              View all
+              {defaulText?.mobileView}
             </Button>
           )}
           {showAll && (
@@ -119,7 +123,7 @@ export const ItemCardPricing = ({
               className="md:hidden ltr:font-montserrat font-semibold py-4 bg-white text-primary rounded-none border-t -mx-4 rounded-b-[16px]"
               onClick={() => setShowAll(false)}
             >
-              Hide
+              {defaulText?.mobileHide}
             </Button>
           )}
         </ul>

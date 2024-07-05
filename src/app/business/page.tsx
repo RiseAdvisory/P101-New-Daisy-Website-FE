@@ -65,7 +65,6 @@ const Business = () => {
       console.log(error);
     }
   }, [handleArray, handleLoadingStatus]);
-  console.log(growth);
   return (
     <>
       {heroBusiness ? (
