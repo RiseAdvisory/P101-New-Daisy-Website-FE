@@ -17,8 +17,6 @@ import { Input } from '@/components/ui/input';
 import DropZoneUpload from './ReactDropZone';
 import axios from 'axios';
 
-
-
 export const FormCV = ({
   openCV,
   setOpenCV,
@@ -84,7 +82,6 @@ export const FormCV = ({
   const handleBlur = () => {
     setActiveField(null);
   };
-  console.log(dataCareers);
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>
@@ -168,7 +165,7 @@ export const FormCV = ({
             )}
           />
         </div>
-        <DropZoneUpload setFiles={setFiles} files={files} />
+        <DropZoneUpload setFiles={setFiles} files={files} dataCareers={dataCareers} />
 
         <Button
           type="submit"

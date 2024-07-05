@@ -27,7 +27,7 @@ function getMonthName(month: number) {
   return monthNames[month];
 }
 
-const DropZoneUpload = ({ setFiles, files }: any) => {
+const DropZoneUpload = ({ setFiles, files, dataCareers }: any) => {
   const [isDragActive, setIsDragActive] = useState(false);
 
   const onDropRejected = useCallback((fileRejections: FileRejection[]) => {
@@ -96,14 +96,14 @@ const DropZoneUpload = ({ setFiles, files }: any) => {
           <CloudUpload className="mb-[10px]" />
           <div>
             <span className="text-sm ltr:font-inter font-semibold">
-              Click to upload
+              {dataCareers?.textDropzone?.textClick}
             </span>
             <span className="text-sm ltr:font-montserrat font-normal">
-              or drag and drop
+              {dataCareers?.textDropzone?.nextTextClick}
             </span>
           </div>
           <span className="ltr:font-montserrat text-[14px] leading-4 mt-[7px]">
-            Max. File Size: 30MB
+            {dataCareers?.textDropzone?.maxFile}
           </span>
           <input {...getInputProps()} />
         </>
@@ -113,3 +113,4 @@ const DropZoneUpload = ({ setFiles, files }: any) => {
 };
 
 export default DropZoneUpload;
+
