@@ -87,7 +87,7 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
             {dataList.map((item, index) => {
               const imageBlock = new URL(
                 item.attributes.picture.data[0].attributes.url,
-                baseURLImage
+                baseURLImage,
               ).href;
 
               return (

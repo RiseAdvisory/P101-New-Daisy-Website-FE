@@ -67,10 +67,10 @@ export const ExperienceDaisy = () => {
           alt="doublephone"
           width={336}
           height={684}
-          className="absolute -top-[70px] left-[60px] hidden md:block"
+          className="absolute -top-[70px] ltr:left-[60px] rtl:right-[60px] hidden md:block"
         />
 
-        <div className="ltr:md:ml-[560px] ltr:md:mr-[114px] rtl:md:ml-[114px] rtl:md:mr-[30%] ">
+        <div className="ltr:md:ml-[560px] ltr:md:mr-[114px] rtl:md:mr-[560px] rtl:md:ml-[114px] ">
           <h1 className="pt-5 text-white leading-10 text-3xl">
             {experienceDaisy?.title}
           </h1>
