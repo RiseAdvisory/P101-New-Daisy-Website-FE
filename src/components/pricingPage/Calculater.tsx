@@ -20,7 +20,7 @@ export const Calculater = ({
         className="flex flex-col md:flex-row justify-between"
         ref={calculationFormRef}
       >
-        <div className="mt-6 w-full mr-12">
+        <div className="mt-6 w-full ltr:mr-12 ">
           <div className="flex flex-col md:flex-row justify-between mb-8 md:mb-6 ">
             <div className="md:min-h-[56px]">
               <h2 className="ltr:font-montserrat font-semibold text-[18px] leading-7">
