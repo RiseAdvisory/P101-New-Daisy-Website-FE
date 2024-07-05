@@ -81,7 +81,11 @@ export const Vacansies = ({
             );
           })}
       </ul>
-      <ModalCV openCV={openCV} setOpenCV={setOpenCV} />
+      <ModalCV
+        openCV={openCV}
+        setOpenCV={setOpenCV}
+        dataCareers={dataCareers}
+      />
     </div>
   );
 };
