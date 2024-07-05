@@ -87,6 +87,7 @@ const config = {
       spacing: {
         'custom-width': 'calc(100% + 32px)',
         'custom-width-md': 'calc(100% + 48px)',
+        'x-reverse': '4px',
       },
     },
     fontFamily: {
