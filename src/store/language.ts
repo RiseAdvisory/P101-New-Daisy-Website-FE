@@ -17,7 +17,6 @@ export const useChangeLanguage = create<ILanguageStore>((set) => ({
   },
 }));
 
-
 if (typeof window !== 'undefined') {
   const initialLang = localStorage.getItem('lang') || 'en';
   document.body.setAttribute('dir', initialLang === 'ar' ? 'rtl' : 'ltr');

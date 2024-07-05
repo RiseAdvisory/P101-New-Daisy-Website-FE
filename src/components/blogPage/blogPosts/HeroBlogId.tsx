@@ -42,13 +42,16 @@ export const HeroBlogPage = () => {
             <span className="text-sm">{post.user.name}</span>
           </div>
           <span className="flex items-center border-r px-[10px]">
-            <CalendarIcon className="ltr:mr-[10px] rtl:ml-[10px]" fill="#ECEEED" />
+            <CalendarIcon
+              className="ltr:mr-[10px] rtl:ml-[10px]"
+              fill="#ECEEED"
+            />
             {post.user.date}
           </span>
         </div>
         <span className="flex items-center mt-2 md:mt-0 md:ml-2 rtl:border-r rtl:pr-2">
           <ClockIcon className="ltr:mr-2 rtl:ml-2" fill="#ECEEED" />
-          {post.user.time} 
+          {post.user.time}
         </span>
       </div>
     </div>

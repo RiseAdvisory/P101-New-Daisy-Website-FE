@@ -86,7 +86,7 @@ export const MobileMenu = ({
                       >
                         {item.title}
                       </Button>
-                      {lang === 'ar' ?  <ChevronLeft /> : <ArrowRightIcon  /> }
+                      {lang === 'ar' ? <ChevronLeft /> : <ArrowRightIcon />}
                     </div>
                     <Separator />
                   </li>
@@ -124,7 +124,7 @@ export const MobileMenu = ({
                           )}
                         </div>
                         <div>
-                        {lang === 'ar' ?  <ChevronLeft /> : <ArrowRightIcon  /> }
+                          {lang === 'ar' ? <ChevronLeft /> : <ArrowRightIcon />}
                         </div>
                       </div>
                       <Separator className="mt-4" />

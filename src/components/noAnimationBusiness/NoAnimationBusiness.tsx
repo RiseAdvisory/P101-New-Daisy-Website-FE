@@ -83,7 +83,7 @@ export const NoScrollingAnimationBusiness = ({
                 variant="navigation"
                 className="w-full justify-start mt-4 font-semibold text-base text-[#D5D9D9]"
               >
-                <CheckIcon className="mr-2" />
+                <CheckIcon className="ltr:mr-2 rtl:ml-2" />
                 {items}
               </Button>
             </motion.li>
