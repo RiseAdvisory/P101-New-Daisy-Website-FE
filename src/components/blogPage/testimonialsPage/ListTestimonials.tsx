@@ -1,19 +1,12 @@
 'use client';
 import axiosInstance, { baseURLImage } from '@/helpers/axiosConfig';
-import { testimonialsList } from '@/lib/constants/testimonialList';
 import { useChangeLanguage } from '@/store/language';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-const test = {
-  role: 'Web developer @themesberg',
-  text: 'Solid foundation for any project',
-  author: 'Bonnie Green',
-  description:
-    'This is a very complex and beautiful set of elements. Under the hood it comes with the best things from 2 different worlds: Figma and Tailwind.',
-};
 
-export const TestimonialsCustomerList = () => {
+
+export const TestimonialsCustomerList = ({textMore}:{textMore:string}) => {
   const [listTestimonials, setListTestimonials] = useState<any>();
 
   const { lang } = useChangeLanguage();
@@ -63,7 +56,7 @@ export const TestimonialsCustomerList = () => {
                     <Image
                       src={iconOwner}
                       alt={infoUser.author}
-                      className="mr-4 rounded-full"
+                      className="mr-4 rtl:mr-0 rtl:ml-4 rounded-full"
                       width={40}
                       height={40}
                     />
@@ -101,7 +94,7 @@ export const TestimonialsCustomerList = () => {
                     <Image
                       src={iconOwner}
                       alt={infoUser.author}
-                      className="mr-4 rounded-full"
+                      className="mr-4 rtl:mr-0 rtl:ml-4  rounded-full"
                       width={40}
                       height={40}
                     />
@@ -139,7 +132,7 @@ export const TestimonialsCustomerList = () => {
                     <Image
                       src={iconOwner}
                       alt={infoUser.author}
-                      className="mr-4 rounded-full"
+                      className="mr-4 rtl:mr-0 rtl:ml-4  rounded-full"
                       width={40}
                       height={40}
                     />
@@ -159,7 +152,7 @@ export const TestimonialsCustomerList = () => {
       </div>
       <div className="flex justify-center -mt-20 px-4 ">
         <button className="bg-[white] text-[#172524] ltr:font-montserrat font-semibold py-[10px] px-[60px] rounded-lg border hover:bg-primary hover:text-white w-full md:w-auto">
-          View More
+          {textMore}
         </button>
       </div>
     </div>

@@ -44,7 +44,7 @@ const Customer = () => {
       }
     })();
   }, [lang]);
-  console.log(growth);
+
   return (
     <>
       {heroCustomer ? (

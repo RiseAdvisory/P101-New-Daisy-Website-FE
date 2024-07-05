@@ -1,4 +1,3 @@
-import { PricingOption } from '@/lib/constants/pricing/prisingProfessional';
 import { ItemCardPricing } from './ItemPricing';
 
 export const GridPricingCard = ({
@@ -8,12 +7,13 @@ export const GridPricingCard = ({
   isRescomennded,
   dataPricing = [],
 }: {
-  listChangePricing?: PricingOption[];
+  listChangePricing?: any;
   chechedAnnualy: boolean;
   activePricingPage: string;
   isRescomennded: boolean;
   dataPricing: any;
-}) => {
+  }) => {
+
   return (
     <>
       <div className="w-full bg-primary h-[420px] md:block hidden"></div>
@@ -32,6 +32,7 @@ export const GridPricingCard = ({
                 options={item.options}
                 optionPlus={item.optionPlus}
                 priceYear={item.priceYear}
+                textRecomended={listChangePricing}
                 isRescomennded={isRescomennded}
               />
             );

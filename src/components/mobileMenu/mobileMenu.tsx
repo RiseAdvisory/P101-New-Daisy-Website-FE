@@ -72,7 +72,10 @@ export const MobileMenu = ({
                       <Button
                         className="ltr:font-montserrat font-semibold text-xl leading-8 w-full justify-start"
                         onClick={() => {
-                          if (item.title === 'Resources') {
+                          if (
+                            item.title === 'Resources' ||
+                            item.title === 'الموارد'
+                          ) {
                             setResources(false);
                           } else {
                             setOpenMenu(!openMenu);

@@ -48,6 +48,7 @@ export const DropdownResources = ({
   return (
     <DropdownMenu
       open={openBlog}
+      modal={false}
       onOpenChange={() => {
         setOpenBlog(!openBlog);
         if (setActive) setActive(path);
@@ -80,10 +81,10 @@ export const DropdownResources = ({
                       href={item.nav}
                       onClick={() => setOpenBlog(!openBlog)}
                     >
-                      <h3 className="text-base ltr:font-montserrat font-semibold">
+                      <h3 className="text-base ltr:font-montserrat font-semibold rtl:font-cairo">
                         {item.title}
                       </h3>
-                      <p className="text-base ltr:font-montserrat text-primaryBtn">
+                      <p className="text-base ltr:font-montserrat text-primaryBtn rtl:font-cairo">
                         {item.description}
                       </p>
                     </Link>

@@ -40,7 +40,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${openSans.variable} ${montserrat.variable} ${inter.variable} ${cairo.variable} font-openSans rtl:font-cairo`}
-        dir="ltr"
+        dir="rtl"
       >
         <Header />
         <div className="pt-[100px]"> {children}</div>
