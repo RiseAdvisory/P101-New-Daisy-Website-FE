@@ -39,11 +39,11 @@ export const DesctopViewProfessional = ({
 
   return (
     <div className="mx-auto hidden md:block mb-[192px]">
-      <ul className="flex space-x-5 mx-auto justify-center mt-[66px]">
+      <ul className="flex space-x-5 rtl:space-x-reverse mx-auto justify-center mt-[66px]">
         <li className="px-[65px] pt-[55px] bg-[#435655] rounded-[16px] border border-[#586968]">
           <Image
             src={firstImage}
-            className={'w-[220px] h-[350px]'}
+            className={'w-[220px] h-[320px]'}
             alt="item"
             width={1000}
             height={1000}
@@ -52,7 +52,7 @@ export const DesctopViewProfessional = ({
         <li className="px-[65px] pt-[55px] bg-[#435655] rounded-[16px] border border-[#586968]">
           <Image
             src={secondImage}
-            className={'w-[515px] h-[350px]'}
+            className={'w-[515px] h-[320px]'}
             alt="item"
             width={1000}
             height={1000}
@@ -61,7 +61,7 @@ export const DesctopViewProfessional = ({
         <li className="px-[65px] pt-[55px] bg-[#435655] rounded-[16px] border border-[#586968]">
           <Image
             src={thirdImage}
-            className={'w-[220px] h-[350px]'}
+            className={'w-[220px] h-[320px]'}
             alt="item"
             width={1000}
             height={1000}
