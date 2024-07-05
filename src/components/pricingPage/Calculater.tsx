@@ -12,7 +12,7 @@ export const Calculater = ({
   setConciergeService,
   calculationFormRef,
   titleTypeCalculate,
-  dataPricing,
+  overflowText,
 }: any) => {
   return (
     <>
@@ -103,7 +103,7 @@ export const Calculater = ({
               name="provideHome"
               homeService={homeService}
               setHomeService={setHomeService}
-              textButton={dataPricing?.btnText}
+              textButton={overflowText?.btnTextCalculate}
             />
           </div>
           <div className="flex flex-col md:flex-row justify-between mb-6">
@@ -120,7 +120,7 @@ export const Calculater = ({
               name="assistantOnboard"
               homeService={onboarding}
               setHomeService={setOnboarding}
-              textButton={dataPricing?.btnText}
+              textButton={overflowText?.btnTextCalculate}
             />
           </div>
           <div className="flex flex-col md:flex-row md:justify-between">
@@ -137,7 +137,7 @@ export const Calculater = ({
               name="available"
               homeService={conciergeService}
               setHomeService={setConciergeService}
-              textButton={dataPricing?.btnText}
+              textButton={overflowText?.btnTextCalculate}
             />
           </div>
         </div>

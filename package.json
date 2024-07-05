@@ -59,8 +59,8 @@
   },
   "lint-staged": {
     "**/*.{ts,tsx,json,css,scss,md}": [
-      "npm run format",
-      "npm run lint"
+      "npm run lint",
+      "npm run format"
     ]
   },
   "husky": {

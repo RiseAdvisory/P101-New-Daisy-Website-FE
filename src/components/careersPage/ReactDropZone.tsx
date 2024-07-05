@@ -113,4 +113,3 @@ const DropZoneUpload = ({ setFiles, files, dataCareers }: any) => {
 };
 
 export default DropZoneUpload;
-

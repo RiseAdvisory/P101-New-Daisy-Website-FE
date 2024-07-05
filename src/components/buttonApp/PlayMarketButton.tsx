@@ -34,7 +34,7 @@ export const PlayMarketButton = ({
         variant="navigation"
         className={`w-full group hover:bg-white hover:text-primary mr-0 h-full flex items-center justify-center rounded-xl py-4 ${className}`}
       >
-        <div className="flex items-center mr-3">
+        <div className="flex items-center mr-3 rtl:flex-row-reverse">
           <GooglePlayIcons
             w="36"
             h="36"

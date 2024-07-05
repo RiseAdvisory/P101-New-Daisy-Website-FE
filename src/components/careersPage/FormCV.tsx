@@ -165,7 +165,11 @@ export const FormCV = ({
             )}
           />
         </div>
-        <DropZoneUpload setFiles={setFiles} files={files} dataCareers={dataCareers} />
+        <DropZoneUpload
+          setFiles={setFiles}
+          files={files}
+          dataCareers={dataCareers}
+        />
 
         <Button
           type="submit"

@@ -70,7 +70,7 @@ export const ExperienceDaisy = () => {
           className="absolute -top-[70px] left-[60px] hidden md:block"
         />
 
-        <div className="md:ml-[560px] md:mr-[114px]">
+        <div className="ltr:md:ml-[560px] ltr:md:mr-[114px] rtl:md:ml-[114px] rtl:md:mr-[30%] ">
           <h1 className="pt-5 text-white leading-10 text-3xl">
             {experienceDaisy?.title}
           </h1>
