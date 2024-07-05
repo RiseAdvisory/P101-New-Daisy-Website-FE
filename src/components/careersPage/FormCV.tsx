@@ -17,23 +17,26 @@ import { Input } from '@/components/ui/input';
 import DropZoneUpload from './ReactDropZone';
 import axios from 'axios';
 
-const formSchema = z.object({
-  firstname: z.string(),
-  lastname: z.string(),
-  email: z.string().email('This is not a valid email.'),
-});
+
 
 export const FormCV = ({
   openCV,
   setOpenCV,
   setUploadSucces,
+  dataCareers,
 }: {
   openCV: boolean;
   setOpenCV: Dispatch<SetStateAction<boolean>>;
   setUploadSucces: Dispatch<SetStateAction<number | undefined>>;
+  dataCareers: any;
 }) => {
   const [activeField, setActiveField] = useState<string | null>(null);
   const [files, setFiles] = useState<any[]>([]);
+  const formSchema = z.object({
+    firstname: z.string(),
+    lastname: z.string(),
+    email: z.string().email(dataCareers?.formDescription?.errorEmail),
+  });
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -81,7 +84,7 @@ export const FormCV = ({
   const handleBlur = () => {
     setActiveField(null);
   };
-
+  console.log(dataCareers);
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>
@@ -96,12 +99,12 @@ export const FormCV = ({
                     activeField === 'firstname' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
-                  First Name
+                  {dataCareers?.formField?.firstName}
                 </FormLabel>
                 <FormControl>
                   <Input
                     className="focus:text-[#A67F6B] border focus:border-[#A67F6B]"
-                    placeholder="First name"
+                    placeholder={dataCareers?.formDescription?.firstName}
                     {...field}
                     onFocus={() => handleFocus('firstname')}
                     onBlur={handleBlur}
@@ -121,12 +124,12 @@ export const FormCV = ({
                     activeField === 'lastname' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
-                  Last Name
+                  {dataCareers?.formField?.lastName}
                 </FormLabel>
                 <FormControl>
                   <Input
                     className="focus:text-[#A67F6B] border focus:border-[#A67F6B]"
-                    placeholder="Last name"
+                    placeholder={dataCareers?.formDescription?.lastName}
                     {...field}
                     onFocus={() => handleFocus('lastname')}
                     onBlur={handleBlur}
@@ -148,13 +151,13 @@ export const FormCV = ({
                     activeField === 'email' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
-                  Email
+                  {dataCareers?.formField?.email}
                 </FormLabel>
                 <FormControl>
                   <Input
                     type="email"
                     className="focus:text-[#A67F6B] border focus:border-[#A67F6B]"
-                    placeholder="name@example.com"
+                    placeholder={dataCareers?.formDescription?.email}
                     {...field}
                     onFocus={() => handleFocus('email')}
                     onBlur={handleBlur}
@@ -171,7 +174,7 @@ export const FormCV = ({
           type="submit"
           className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary ltr:font-montserrat font-semibold hover:text-white md:py-4 md:h-auto"
         >
-          Submit
+          {dataCareers?.formField?.textBtn}
         </Button>
       </form>
     </Form>
