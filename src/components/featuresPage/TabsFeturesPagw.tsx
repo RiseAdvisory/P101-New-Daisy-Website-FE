@@ -42,7 +42,7 @@ export const TabsFeaturesProfessional: React.FC<
   return (
     <>
       {dataList && (
-        <div className='md:rtl:flex-row-reverse'>
+        <div className="md:rtl:flex-row-reverse">
           <div className="flex flex-col justify-center items-center text-center">
             <p className="text-[#F2DAD4] font-semibold uppercase text-[16px] leading-6 text-center">
               {title}

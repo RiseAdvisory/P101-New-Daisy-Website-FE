@@ -49,8 +49,13 @@ export const Header = () => {
       setOptionsToggle(dataToggle?.attributes?.optionsToogle);
       setOptionsToggleFeatures(dataToggle?.attributes?.optionsTooglseFeatures);
       setListheader(data?.attributes?.headerNavList);
+      if (changeLang === 'En') {
+        setChangePage('Business');
+      } else {
+        setChangePage('شركة');
+      }
     })();
-  }, [lang]);
+  }, [changeLang, lang]);
   useEffect(() => {
     if (path.includes('resources')) return setActive('/resources');
     if (path.includes('features')) return setActive('/features');

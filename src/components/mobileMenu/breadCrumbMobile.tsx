@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -20,8 +20,8 @@ export const BreadcrumbMobile = ({
   bredCrumbDesription?: string;
   backmenu: boolean;
   setBackMenu: any;
-  }) => {
-  const {lang} = useChangeLanguage()
+}) => {
+  const { lang } = useChangeLanguage();
   return (
     <Breadcrumb>
       <BreadcrumbList>
@@ -34,7 +34,11 @@ export const BreadcrumbMobile = ({
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator>
-          {lang === 'ar' ? <ChevronLeft className='text-[#C5C8C8]'/>:<ArrowRightIcon stroke="#C5C8C8" />}
+          {lang === 'ar' ? (
+            <ChevronLeft className="text-[#C5C8C8]" />
+          ) : (
+            <ArrowRightIcon stroke="#C5C8C8" />
+          )}
         </BreadcrumbSeparator>
         <BreadcrumbItem>
           <BreadcrumbLink

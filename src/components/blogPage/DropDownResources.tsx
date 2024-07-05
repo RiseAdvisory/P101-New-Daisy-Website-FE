@@ -55,7 +55,7 @@ export const DropdownResources = ({
       }}
     >
       <DropdownMenuContent className="w-[100vw] top-[110px] absolute hidden md:block py-10 px-16">
-        <div className="flex">
+        <div className="flex rtl:md:flex-row-reverse">
           <div className="w-[420px] h-[290px] border relative bg-[#E8E9E9] rounded-lg mr-6 overflow-hidden">
             <Image
               src={currentImage}
@@ -63,12 +63,12 @@ export const DropdownResources = ({
               className="h-full object-cover"
             />
           </div>
-          <div className="w-[70%]">
-            <h2 className="font-semibold text-2xl text-primary">
+          <div className="w-[70%] rtl:mr-6">
+            <h2 className="font-semibold text-2xl text-primary rtl:text-end">
               {listResources?.title}
             </h2>
             <Separator className="my-6 bg-[#E8E9E9]" />
-            <ul className="grid grid-cols-2 gap-x-[100px] gap-y-4 w-[70%]">
+            <ul className="grid grid-cols-2 gap-x-[100px] gap-y-4 w-[70%] rtl:ml-auto">
               {listResources?.itemResources &&
                 listResources?.itemResources.map((item: any, index: number) => (
                   <li
