@@ -277,7 +277,7 @@ export const ProfileForm = () => {
                       value={country_code}
                       onValueChange={(value) => setCountryCode(value)}
                     >
-                      <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB]">
+                      <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -369,7 +369,7 @@ export const ProfileForm = () => {
                       <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB]">
                         <SelectValue className="flex" placeholder="0" />
                       </SelectTrigger>
-                      <SelectContent>
+                      <SelectContent className="overflow-y-auto max-h-[10rem] rtl:flex-row-reverse">
                         {descriptionForm.numberofLocations.length &&
                           descriptionForm.numberofLocations.map(
                             (item: any, index: number) => {
@@ -406,7 +406,7 @@ export const ProfileForm = () => {
                   </FormLabel>
                   <FormControl>
                     <Select onValueChange={field.onChange}>
-                      <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB]">
+                      <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
                         <SelectValue className="flex " placeholder="0" />
                       </SelectTrigger>
                       <SelectContent>

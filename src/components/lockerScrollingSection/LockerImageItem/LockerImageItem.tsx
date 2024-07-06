@@ -43,6 +43,7 @@ const LockerImageItem = ({ isActive, imageUrl, item }: any) => {
       {mainImg && (
         <Image
           src={imegeCurrentURL(mainImg)}
+          // style={{ width: '10px' }}
           className={cn(
             'z-10',
             {

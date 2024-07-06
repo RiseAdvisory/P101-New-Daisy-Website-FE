@@ -3,6 +3,7 @@ import { Open_Sans, Montserrat, Inter, Cairo } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/header/Header';
 import { Footer } from '@/components/footer/Footer';
+import ClientSideEffect from '@/helpers/ClientSideEffect';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -43,6 +44,7 @@ export default function RootLayout({
         dir="ltr"
       >
         <Header />
+        <ClientSideEffect />
         <div className="pt-[100px]"> {children}</div>
         <Footer />
       </body>
