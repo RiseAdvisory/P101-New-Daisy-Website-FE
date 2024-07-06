@@ -31,8 +31,8 @@ export const DropDownMobileHeader = ({
   const router = useRouter();
   const [active, setActive] = useState('');
   const [stateActive, setStateActive] = useState('');
-  const handleSelect = (label: any) => {
-    setState(label);
+  const handleSelect = (item: any) => {
+    setState(item);
     setOpen(false);
   };
   useEffect(() => {
@@ -65,7 +65,7 @@ export const DropDownMobileHeader = ({
         {list?.map((item, index) => (
           <DropdownMenuItem
             className="w-full flex flex-col self-center text-center justify-center !items-center ltr:font-montserrat font-normal text-base group rtl:font-cairo"
-            onClick={() => handleSelect(item.label)}
+            onClick={() => handleSelect(item)}
             key={index}
           >
             <Button
