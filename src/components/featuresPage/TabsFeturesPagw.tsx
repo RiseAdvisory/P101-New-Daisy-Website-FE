@@ -26,11 +26,20 @@ interface TabsFeaturesProfessionalProps {
   title: any;
   description: any;
   dataList: any;
+  idFeatures: any;
 }
 
 export const TabsFeaturesProfessional: React.FC<
   TabsFeaturesProfessionalProps
-> = ({ itemsList, styleLeaf, bgImage, title, description, dataList }) => {
+> = ({
+  itemsList,
+  styleLeaf,
+  bgImage,
+  title,
+  description,
+  dataList,
+  idFeatures,
+}) => {
   const [activeTab, setActiveTab] = useState(dataList?.[0]?.attributes.title);
 
   const { lang } = useChangeLanguage();
@@ -42,8 +51,11 @@ export const TabsFeaturesProfessional: React.FC<
   return (
     <>
       {dataList && (
-        <div className="md:rtl:flex-row-reverse">
-          <div className="flex flex-col justify-center items-center text-center">
+        <div
+          className="md:rtl:flex-row-reverse scroll-mt-[120px]"
+          id={idFeatures}
+        >
+          <div className="flex flex-col justify-center items-center text-center ">
             <p className="text-[#F2DAD4] font-semibold uppercase text-[16px] leading-6 text-center">
               {title}
             </p>
@@ -55,9 +67,9 @@ export const TabsFeaturesProfessional: React.FC<
             defaultValue={activeTab}
             value={activeTab}
             onValueChange={(value) => setActiveTab(value)}
-            className="flex bg-primary"
+            className="flex bg-primary rtl:md:flex-row-reverse"
           >
-            <TabsList className="flex flex-col justify-center py-6 mr-6 ml-16 bg-primary px-6 h-auto text-wrap">
+            <TabsList className="flex flex-col justify-center py-6 ltr:mr-6 rtl:ml-6 ltr:ml-16 rtl:mr-16 bg-primary px-6 h-auto text-wrap">
               <ul className="flex flex-col text-start bg-primary rounded-xl w-[470px]">
                 {dataList.map((item: any, index: any) => (
                   <li className="group" key={index}>
@@ -85,7 +97,7 @@ export const TabsFeaturesProfessional: React.FC<
                 <TabsContent
                   key={index}
                   value={item.attributes.title}
-                  className="px-2 py-4 w-full pr-16"
+                  className="px-2 py-4 w-full pr-16 rtl:pr-0 rtl:pl-16"
                 >
                   <div className="w-full h-[480px] bg-[#435655] rounded-[16px] border border-[#828E8E] relative overflow-hidden my-auto">
                     <Image

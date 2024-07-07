@@ -29,6 +29,7 @@ interface ColumnTabsDesctopProps {
   title: any;
   description: any;
   dataList: DataItem[];
+  idFeatures: any;
 }
 
 export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
@@ -38,6 +39,7 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
   title,
   description,
   dataList,
+  idFeatures,
 }) => {
   const [activeTab, setActiveTab] = useState(dataList?.[0]?.attributes.title);
   const { lang } = useChangeLanguage();
@@ -50,7 +52,7 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
   return (
     <>
       {dataList && (
-        <div className="px-[64px]">
+        <div className="px-[64px] scroll-mt-[120px]" id={idFeatures}>
           <div className="flex flex-col justify-center items-center text-center">
             <p className="text-[#F2DAD4] font-semibold uppercase text-[16px] leading-6 text-center">
               {title}
@@ -66,7 +68,7 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
             className="flex flex-col-reverse bg-primary"
           >
             <TabsList className="flex flex-col justify-center py-6 mr-6 ml-16 bg-primary px-6 h-auto">
-              <ul className="flex space-x-4 text-start bg-primary rounded-xl">
+              <ul className="flex space-x-4 text-start bg-primary rounded-xl rtl:flex-row-reverse">
                 {dataList.map((item, index) => (
                   <li className="group" key={index}>
                     <TabsTrigger

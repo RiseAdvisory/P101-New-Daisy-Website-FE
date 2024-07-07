@@ -12,6 +12,12 @@ const LockerImageItem = ({ isActive, imageUrl, item }: any) => {
   const imegeCurrentURL = (image: any) => {
     return new URL(image, baseURLImage).href;
   };
+  const styleMainImage = item?.attributes.styleMainPictureJSON;
+  const styleFirstBg = item?.attributes.styleFirstBgJSON;
+  const styleSecondBg = item?.attributes.styleSecondBgJSON;
+
+  //{styleFirstBgJSON,styleSecondBgJSON
+
   return (
     <>
       <Image
@@ -22,6 +28,7 @@ const LockerImageItem = ({ isActive, imageUrl, item }: any) => {
           },
           item?.attributes.styleFirstBg,
         )}
+        style={styleFirstBg}
         src={imegeCurrentURL(firstBg)}
         alt="leaf"
         width={300}
@@ -35,6 +42,7 @@ const LockerImageItem = ({ isActive, imageUrl, item }: any) => {
             item?.attributes.styleSecondBg,
           )}
           src={imegeCurrentURL(secondBg)}
+          style={styleSecondBg}
           alt="start"
           width={100}
           height={100}
@@ -43,14 +51,14 @@ const LockerImageItem = ({ isActive, imageUrl, item }: any) => {
       {mainImg && (
         <Image
           src={imegeCurrentURL(mainImg)}
-          // style={{ width: '10px' }}
+          style={styleMainImage}
           className={cn(
-            'z-10',
+            '',
             {
               [styles.image]: true,
               [styles.active]: isActive,
             },
-            item?.attributes.styleMainPicture,
+            // item?.attributes.styleMainPicture,
           )}
           alt="phone"
           width={1000}
