@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 export const SignUpBlog = ({ style }: { style?: string }) => {
   const [textSignUp, setSignUp] = useState<any>();
   const [email, setEmail] = useState<string>('');
+  const [error, setError] = useState<string | null>(null);
 
   const { lang } = useChangeLanguage();
 
@@ -26,9 +27,20 @@ export const SignUpBlog = ({ style }: { style?: string }) => {
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
+    setError(null);
+  };
+
+  const validateEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
   };
 
   const handleSubscribe = async () => {
+    if (!validateEmail(email)) {
+      setError('Please write valid email');
+      return;
+    }
+
     try {
       const response = await axiosInstance.post('/sign-up-form-emails', {
         signUpEmail: email,
@@ -53,7 +65,7 @@ export const SignUpBlog = ({ style }: { style?: string }) => {
           {textSignUp?.description}
         </p>
       </div>
-      <div className=" md:flex md:flex-col md:justify-start md:w-[480px]">
+      <div className="md:flex md:flex-col md:justify-start md:w-[480px]">
         <div className="flex mt-12 mb-4 md:mt-0">
           <div className="relative w-full">
             <Input
@@ -72,6 +84,7 @@ export const SignUpBlog = ({ style }: { style?: string }) => {
             {textSignUp?.subscribeText}
           </Button>
         </div>
+        {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
         <p className="ltr:font-montserrat text-sm text-[#455150]">
           {textSignUp?.about}
           <span className="font-semibold"> {textSignUp?.privacy}</span>
