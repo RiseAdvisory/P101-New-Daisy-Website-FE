@@ -20,8 +20,10 @@ export const OtherOptionPricing = ({
         <span className="w-[22px] ltr:mr-[10px] rtl:ml-[10px]">
           <CheckIconPricing style="ltr:mr-[10px] rtl:ml-[10px]" />
         </span>
-        <span className="text-left">{item}</span>
+        <span className="ltr:text-left rtl:text-right">{item}</span>
       </li>
     );
   });
 };
+
+

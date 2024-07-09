@@ -307,7 +307,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
                   id="acceptconditions"
                   checked={field.value}
                   onCheckedChange={field.onChange}
-                  className='md:rtl:ml-2'
+                  className="md:rtl:ml-2"
                 />
               </FormControl>
               <FormLabel
