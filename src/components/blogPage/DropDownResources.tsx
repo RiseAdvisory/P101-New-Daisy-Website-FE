@@ -73,7 +73,7 @@ export const DropdownResources = ({
                 listResources?.itemResources.map((item: any, index: number) => (
                   <li
                     key={index}
-                    className="pl-4 py-[18px] hover:bg-[#E8E9E9] rounded-xl hover:outline-gray-300 hover:outline"
+                    className="ltr:pl-4 rtl:pr-4 py-[18px] hover:bg-[#E8E9E9] rounded-xl hover:outline-gray-300 hover:outline"
                     onMouseEnter={() => handleMouseEnter(index)}
                     onMouseLeave={handleMouseLeave}
                   >
