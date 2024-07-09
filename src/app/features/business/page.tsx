@@ -41,7 +41,6 @@ const FeaturesBusiness = () => {
       }
     })();
   }, [lang]);
-  console.log(dataFeatures?.listBusinessOptions);
   return (
     <div className="bg-primary px-4">
       <HeroPage
