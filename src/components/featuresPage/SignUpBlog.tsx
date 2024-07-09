@@ -42,7 +42,7 @@ export const SignUpBlog = ({ style }: { style?: string }) => {
     }
 
     try {
-      const response = await axiosInstance.post('/sign-up-form-emails', {
+      await axiosInstance.post('/sign-up-form-emails', {
         signUpEmail: email,
       });
       setEmail('');
