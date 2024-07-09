@@ -406,10 +406,10 @@ export const ProfileForm = () => {
                   </FormLabel>
                   <FormControl>
                     <Select onValueChange={field.onChange}>
-                      <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
+                      <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB]">
                         <SelectValue className="flex " placeholder="0" />
                       </SelectTrigger>
-                      <SelectContent>
+                      <SelectContent className="overflow-y-auto max-h-[10rem] rtl:flex-row-reverse">
                         {descriptionForm.numberofStaff.length &&
                           descriptionForm.numberofStaff.map(
                             (item: any, index: number) => {
