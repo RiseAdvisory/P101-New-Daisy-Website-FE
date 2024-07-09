@@ -209,9 +209,9 @@ export const FormContacts = ({ style }: { style?: string }) => {
             control={form.control}
             name="mobile"
             render={({ field }) => (
-              <FormItem className="md:w-full mt-6 md:ml-4 rtl:md:mr-4">
+              <FormItem className="md:w-full mt-6 ltr:md:ml-4 rtl:md:mr-4">
                 <FormLabel
-                  className={`ltr:font-montserrat font-semibold text-base md:ml-[15px]${
+                  className={`ltr:font-montserrat font-semibold text-base ${
                     activeField === 'mobile' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
@@ -307,11 +307,12 @@ export const FormContacts = ({ style }: { style?: string }) => {
                   id="acceptconditions"
                   checked={field.value}
                   onCheckedChange={field.onChange}
+                  className='md:rtl:ml-2'
                 />
               </FormControl>
               <FormLabel
                 htmlFor="acceptconditions"
-                className="text-sm font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70 leading-6 text-[#455150]"
+                className="text-sm font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70 leading-6 text-[#455150] "
               >
                 {formText?.submit}
               </FormLabel>
