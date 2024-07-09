@@ -101,7 +101,9 @@ export const Header = () => {
             <>
               <DropDownMobileHeader
                 state={changePage}
-                setState={setChangePage}
+                setState={(val: any) => {
+                  setChangePage(val.label);
+                }}
                 list={navListFeatures}
                 classNames="text-center"
                 link={true}

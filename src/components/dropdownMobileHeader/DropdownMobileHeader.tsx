@@ -32,6 +32,7 @@ export const DropDownMobileHeader = ({
   const [active, setActive] = useState('');
   const [stateActive, setStateActive] = useState('');
   const handleSelect = (item: any) => {
+    // console.log(item);
     setState(item);
     setOpen(false);
   };
