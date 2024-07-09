@@ -68,11 +68,11 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
             className="flex flex-col-reverse bg-primary"
           >
             <TabsList className="flex flex-col justify-center py-6 mr-6 ml-16 bg-primary px-6 h-auto">
-              <ul className="flex space-x-4 text-start bg-primary rounded-xl rtl:flex-row-reverse">
+              <ul className="flex gap-4 text-start bg-primary rounded-xl rtl:flex-row-reverse">
                 {dataList.map((item, index) => (
                   <li className="group" key={index}>
                     <TabsTrigger
-                      className="!items-start rtl:!items-end !bg-transparent data-[state=active]:!border data-[state=active]:!bg-white/10 group hover:!bg-white/10 flex flex-col w-full text-[16px] !p-6 text-[#172524] mt-[10px] justify-start rounded-lg cursor-pointer capitalize whitespace-nowrap py-3"
+                      className="!items-start border border-transparent rtl:!items-end !bg-transparent data-[state=active]:border-white data-[state=active]:!bg-white/10 group hover:!bg-white/10 flex flex-col w-full text-[16px] !p-6 text-[#172524] mt-[10px] justify-start rounded-lg cursor-pointer capitalize whitespace-nowrap py-3"
                       value={item.attributes.title}
                     >
                       <span className="w-fit !text-start text-white ltr:font-montserrat rtl:font-cairo font-semibold text-[20px] leading-[30px]">
