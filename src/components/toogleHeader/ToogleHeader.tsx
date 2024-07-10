@@ -72,11 +72,6 @@ const ToggleButton = ({ className }: { className?: string }) => {
     if (typeof window !== 'undefined') {
       localStorage.setItem('activePage', path);
     }
-    // if (pathname.includes('/features')) {
-    //   router.push(`/features${path}`);
-    // } else {
-    //   router.push(path);
-    // }
     if (pathname.includes('/features')) {
       router.push(`/features${path}`);
     }

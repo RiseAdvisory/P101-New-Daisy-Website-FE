@@ -15,6 +15,8 @@ import { useChangeLanguage } from '@/store/language';
 import { useChangePage } from '@/store/currentPage';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '../ui/skeleton';
+import { ChangeUserTypeMobile } from '../dropdownMobileHeader/ChangeUserMobile';
+import { useOpenMenu } from '@/store/openMenu';
 
 export const Header = () => {
   const path = usePathname();
@@ -31,6 +33,7 @@ export const Header = () => {
   const [listLanguage, setListLanguage] = useState<any>();
 
   const { lang, changeLanguages } = useChangeLanguage();
+  const { isOpenMenu } = useOpenMenu();
 
   useEffect(() => {
     (async () => {
@@ -89,38 +92,39 @@ export const Header = () => {
       if (currentPath) setActivePages(currentPath);
     }
     if (lang === 'ar') setChangeLang('ع');
-  }, []);
+  }, [lang]);
   const { page } = useChangePage();
+
   return (
     <header className="w-full rtl:md:  bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16 fixed z-40">
       <Link href={page} onClick={() => setChangePage('Business')}>
         <LogoIconsS />
       </Link>
       <nav className="flex justify-end items-center self-center md:justify-between w-full">
-        <div className="md:hidden">
-          {!openMenu && (
-            <>
-              <DropDownMobileHeader
-                state={changePage}
-                setState={(val: any) => {
-                  setChangePage(val.label);
-                }}
-                list={navListFeatures}
-                classNames="text-center"
-                link={true}
-              />
-              <DropDownMobileHeaderLang
-                state={changeLang}
-                setState={(val: any) => {
-                  setChangeLang(val.label);
-                  changeLanguages(val.path.toLowerCase());
-                }}
-                list={listLanguage}
-                classNames="px-2 hover:bg-white hover:text-primary rtl:ml-2"
-              />
-            </>
-          )}
-          <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
+        <div className="md:!hidden !flex">
+          {/* {!isOpenMenu && ( */}
+          <div className={cn('', { hidden: isOpenMenu })}>
+            <ChangeUserTypeMobile
+              state={changePage}
+              setState={(val: any) => {
+                setChangePage(val.label);
+              }}
+              list={navListFeatures}
+              classNames="text-center"
+              link={true}
+            />
+            <DropDownMobileHeaderLang
+              state={changeLang}
+              setState={(val: any) => {
+                setChangeLang(val.label);
+                changeLanguages(val.path.toLowerCase());
+              }}
+              list={listLanguage}
+              classNames="px-2 hover:bg-white hover:text-primary rtl:ml-2"
+            />
+          </div>
+
+          <MobileMenu />
         </div>
         {listHeader ? (
           <>
