@@ -72,14 +72,14 @@ export const ItemCardPricing = ({
                   : 'Free'}
               </h2>
               <p className="ltr:font-montserrat text-[#242424] text-[12px] leading-[18px]">
-                {defaulText?.perPeriod}{' '}
+                {defaulText?.perPeriod}
                 {chechedAnnualy ? defaulText?.annualy : defaulText?.monthly}
                 <span
                   className={cn(
                     'bg-[#E9ECF7] text-[#2543AD] rounded-[16px] px-[7px] py-[3px] hidden text-[12px] leading-[12px] ltr:font-inter font-medium w-fit ml-1 text-nowrap',
                     {
                       inline:
-                        chechedAnnualy && activePricingPage === 'business',
+                        chechedAnnualy,
                     },
                   )}
                 >

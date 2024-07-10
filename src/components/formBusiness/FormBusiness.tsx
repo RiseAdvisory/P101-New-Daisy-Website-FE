@@ -365,9 +365,12 @@ export const ProfileForm = () => {
                     {textForm?.numberofLocations}
                   </FormLabel>
                   <FormControl>
-                    <Select onValueChange={field.onChange} >
-                      <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse" >
-                        <SelectValue className="flex flex-row-reverse" placeholder="0" />
+                    <Select onValueChange={field.onChange}>
+                      <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
+                        <SelectValue
+                          className="flex flex-row-reverse"
+                          placeholder="0"
+                        />
                       </SelectTrigger>
                       <SelectContent className="overflow-y-auto max-h-[10rem] ">
                         {descriptionForm.numberofLocations.length &&
@@ -406,7 +409,7 @@ export const ProfileForm = () => {
                   </FormLabel>
                   <FormControl>
                     <Select onValueChange={field.onChange}>
-                      <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse" >
+                      <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
                         <SelectValue className="flex " placeholder="0" />
                       </SelectTrigger>
                       <SelectContent className="overflow-y-auto max-h-[10rem] rtl:flex-row-reverse">
