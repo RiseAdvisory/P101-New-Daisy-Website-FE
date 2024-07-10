@@ -44,6 +44,7 @@ const Customer = () => {
       }
     })();
   }, [lang]);
+  console.log('heroCustomer',heroCustomer);
   return (
     <>
       {heroCustomer ? (

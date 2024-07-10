@@ -122,7 +122,10 @@ const Professional = () => {
           />
           <JoinTheDaisy />
           <ExperienceDaisy />
-          <QASection pageType="Business" />
+          <QASection
+            pageType="Professional"
+            titleFraque={heroProfessional?.titleFraque}
+          />
           <BecomeFormPartner />
         </div>
       ) : (
