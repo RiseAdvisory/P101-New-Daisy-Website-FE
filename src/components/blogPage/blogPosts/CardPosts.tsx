@@ -55,7 +55,7 @@ export const CardPosts = ({
                   />
                 </div>
                 <div className="px-6 py-4 mt-6">
-                  <div className="flex justify-start space-x-2 text-sm">
+                  <div className="flex justify-start gap-2 text-sm">
                     <span className="px-3 py-1 text-[#2543AD] bg-[#E9ECF7] rounded-sm">
                       {item.attributes.tags.wellness}
                     </span>
@@ -67,12 +67,12 @@ export const CardPosts = ({
                     {item.attributes.title}
                   </h3>
 
-                  <div className="flex justify-start space-x-2 text-gray-500 text-sm mt-4">
-                    <div className=" hidden md:flex border-r pr-[10px]">
+                  <div className="flex justify-start gap-2 text-gray-500 text-sm mt-4">
+                    <div className=" hidden md:flex ltr:border-r pr-[10px]">
                       <Image
                         src={ownerSrc}
                         alt="people"
-                        className="mr-[10px] rounded-full"
+                        className="ltr:mr-[10px] rtl:ml-[10px] rounded-full"
                         width={18}
                         height={18}
                       />
@@ -81,12 +81,12 @@ export const CardPosts = ({
                       </span>
                     </div>
                     <span className="flex items-center border-r pr-[10px]">
-                      <CalendarIcon className="mr-[10px]" />
+                      <CalendarIcon className="ltr:mr-[10px] rtl:ml-[10px]" />
                       {item.attributes.user.date}
                     </span>
-                    <span className="flex items-center ">
-                      <ClockIcon className="mr-2" />
-                      {item.attributes.user.time} to read
+                    <span className="flex items-center rtl:border-r rtl:pr-2">
+                      <ClockIcon className="ltr:mr-2 rtl:ml-2" />
+                      {item.attributes.user.time}
                     </span>
                   </div>
                   <p className="mt-2 text-[#455150] text-sm ltr:font-montserrat">

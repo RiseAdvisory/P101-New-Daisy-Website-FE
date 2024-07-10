@@ -88,6 +88,7 @@ export const Header = () => {
 
       if (currentPath) setActivePages(currentPath);
     }
+    if (lang === 'ar') setChangeLang('ع');
   }, []);
   const { page } = useChangePage();
   return (
