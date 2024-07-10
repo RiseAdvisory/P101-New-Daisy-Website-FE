@@ -16,22 +16,20 @@ import { useRouter } from 'next/navigation';
 import { BreadcrumbMobile } from './breadCrumbMobile';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
-import { ArrowLeft, ChevronLeft } from 'lucide-react';
+import { ChevronLeft } from 'lucide-react';
+import { useChangePage } from '@/store/currentPage';
+import { useOpenMenu } from '@/store/openMenu';
 
-export const MobileMenu = ({
-  openMenu,
-  setOpenMenu,
-}: {
-  openMenu: boolean;
-  setOpenMenu: Dispatch<SetStateAction<boolean>>;
-}) => {
+export const MobileMenu = () => {
   const [onResources, setResources] = useState(true);
   const [getTheApp, setGetTheApp] = useState<any>();
   const [listNav, setListNav] = useState<any>();
+  const [openMenu, setOpenMenu] = useState(false);
 
+  const { toggleOpenMenu } = useOpenMenu();
   const router = useRouter();
-
   const { lang } = useChangeLanguage();
+  const { page } = useChangePage();
 
   useEffect(() => {
     (async () => {
@@ -50,13 +48,23 @@ export const MobileMenu = ({
       }
     })();
   }, [lang]);
+
   return (
-    <DropdownMenu open={openMenu} modal={false}>
+    <DropdownMenu
+      open={openMenu}
+      modal={false}
+      onOpenChange={() => {
+        toggleOpenMenu(!openMenu);
+        return setOpenMenu(false);
+      }}
+    >
       <DropdownMenuTrigger>
         <span
           className="w-[55px] mr-0 bg-customWhite border text-white px-4 py-3 border-primaryBtn inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
           onClick={() => {
-            setOpenMenu(!openMenu), setResources(true);
+            setOpenMenu(!openMenu),
+              setResources(true),
+              toggleOpenMenu(!openMenu);
           }}
         >
           {!openMenu ? <BurgerMenu /> : <CloseIcon />}
@@ -73,14 +81,23 @@ export const MobileMenu = ({
                       <Button
                         className="ltr:font-montserrat font-semibold text-xl leading-8 w-full justify-start  rtl:font-cairo rtl:justify-end"
                         onClick={() => {
+                          toggleOpenMenu(false);
                           if (
                             item.title === 'Resources' ||
                             item.title === 'الموارد'
                           ) {
                             setResources(false);
-                          } else {
+                          } else if (
+                            item.title === 'Home' ||
+                            item.title === 'الرئيسية'
+                          ) {
                             setOpenMenu(!openMenu);
+                            toggleOpenMenu(!openMenu);
+                            router.push(page);
+                          } else {
                             router.push(item.nav);
+                            setOpenMenu(!openMenu);
+                            toggleOpenMenu(!openMenu);
                           }
                         }}
                       >
