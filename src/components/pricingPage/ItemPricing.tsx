@@ -78,8 +78,7 @@ export const ItemCardPricing = ({
                   className={cn(
                     'bg-[#E9ECF7] text-[#2543AD] rounded-[16px] px-[7px] py-[3px] hidden text-[12px] leading-[12px] ltr:font-inter font-medium w-fit ml-1 text-nowrap',
                     {
-                      inline:
-                        chechedAnnualy,
+                      inline: chechedAnnualy,
                     },
                   )}
                 >

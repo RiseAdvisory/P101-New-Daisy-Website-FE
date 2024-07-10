@@ -129,7 +129,7 @@ export const Header = () => {
                   (item: { title: string; nav: string }, index: number) => {
                     let href = item.nav;
 
-                    if (item.title === 'Home') {
+                    if (item.title === 'Home' || item.title === 'الرئيسية') {
                       if (typeof window !== 'undefined') {
                         const storedHref = localStorage.getItem('activePage');
                         if (storedHref) {

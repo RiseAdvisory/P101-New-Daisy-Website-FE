@@ -65,7 +65,10 @@ export const JoinTheDaisy = () => {
                   <p className="mt-2 ltr:font-montserrat font-normal text-center text-[#455150]">
                     {item?.attributes.joinDescription.description}
                   </p>
-                  <Button className="bg-white w-full text-primary border border-primary py-[14px] px-[108px] my-6 ltr:font-montserrat text-base font-semibold hover:bg-primary hover:text-white">
+                  <Button
+                    className="bg-white w-full text-primary border border-primary py-[14px] px-[108px] my-6 ltr:font-montserrat text-base font-semibold hover:bg-primary hover:text-white"
+                    onClick={() => console.log('obj')}
+                  >
                     {item?.attributes.textButton}
                   </Button>
                 </div>
