@@ -24,7 +24,7 @@ export const TestimonialsCustomerList = ({
   textMore: string;
 }) => {
   const [listTestimonials, setListTestimonials] = useState([]);
-  const [visibleCount, setVisibleCount] = useState(4); 
+  const [visibleCount, setVisibleCount] = useState(4);
 
   const { lang } = useChangeLanguage();
 
