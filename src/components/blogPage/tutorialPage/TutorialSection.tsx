@@ -81,11 +81,11 @@ export const TutorialSection = ({
         />
       </div>
       <div className="flex items-center md:hidden" ref={withBlock}>
-        <SelectTutorials tabsList={dataTabs?.listTab} />
+        <SelectTutorials tabsList={listDataTabs} />
       </div>
       <Separator className="my-8 bg-[#E8E9E9] md:hidden" />
       <div className="block md:hidden">
-        <TutorialComponents />
+        <TutorialComponents tabsList={listDataTabs} />
       </div>
       {showScroll && (
         <div className="fixed bottom-4 right-4 flex flex-col">
