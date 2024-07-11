@@ -3,27 +3,15 @@ import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
 import { tutorialsList, tutorialsListOne } from '@/lib/constants/tutorialsList';
 import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import axiosInstance from '@/helpers/axiosConfig';
-import { useChangeLanguage } from '@/store/language';
 
-export const TabsTutorials = () => {
+export const TabsTutorials = ({ dataTabs }: any) => {
   const router = useRouter();
-  const [dataTabs, setDataTabs] = useState<any>();
 
-  const { lang } = useChangeLanguage();
-
-  useEffect(() => {
-    (async () => {
-      const response = await axiosInstance.get(
-        `/resorce-tutorial-tabs?locale=${lang}`,
-      );
-      const [data] = response?.data?.data;
-      setDataTabs(data?.attributes);
-    })();
-  }, [lang]);
   return (
-    <Tabs defaultValue={tutorialsList[0]} className="flex bg-[#F8F5F3] ">
+    <Tabs
+      defaultValue={tutorialsList[0]}
+      className="flex bg-[#F8F5F3] rtl:flex-row-reverse"
+    >
       <TabsList className="flex flex-col py-6  mr-6 ml-16 bg-white px-6 h-fit">
         <p className=" font-semibold text-base text-[#A67F6B] pt-6 uppercase w-full ">
           {dataTabs?.title}
@@ -46,7 +34,7 @@ export const TabsTutorials = () => {
         <Button
           type="button"
           onClick={() => router.push('/contact')}
-          className="hover:bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 bg-primary ltr:font-montserrat font-semibold text-white hover:text-primary md:py-4 md:h-auto"
+          className="hover:bg-white text-primary rtl:font-cairo border border-primary w-full px-4 rounded-lg text-base mt-6 bg-primary ltr:font-montserrat font-semibold text-white hover:text-primary md:py-4 md:h-auto"
         >
           {dataTabs?.gotAQ}
         </Button>
