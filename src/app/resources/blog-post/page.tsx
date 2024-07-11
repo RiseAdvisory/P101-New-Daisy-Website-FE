@@ -8,14 +8,13 @@ import { useEffect, useState } from 'react';
 const BlogPosts = () => {
   const [heroBlog, setHeroBlog] = useState<any>();
   const [listCard, setListCards] = useState<any>();
-  console.log('🚀 ~ BlogPosts ~ listCard:', listCard?.[3].aboutPosts);
 
   const { lang } = useChangeLanguage();
 
   useEffect(() => {
     (async () => {
       const response = await axiosInstance.get(
-        `hero-resources-blogposts?locale=${lang}`,
+        `hero-resources-blogposts?locale=${lang}&_sort=name:DESCa`,
       );
       const responseList = await axiosInstance.get(
         `/resources-blog-posts?populate=*&locale=${lang}`,
