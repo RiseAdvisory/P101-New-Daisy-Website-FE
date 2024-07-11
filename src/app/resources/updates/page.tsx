@@ -37,7 +37,7 @@ const Updates = () => {
         styleSection="pb-[100px] pt-6 px-[16px]"
         secondDescription={heroUpdate?.description}
       />
-      <CardPosts redirect={false} listCard={listCard} />
+      <CardPosts typePath='updates' redirect={true} listCard={listCard} />
     </div>
   );
 };

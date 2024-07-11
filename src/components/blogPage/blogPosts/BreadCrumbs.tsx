@@ -26,7 +26,7 @@ export const BreadcrumbWithCustomSeparator = ({
         <BreadcrumbItem>
           <BreadcrumbLink
             href={bredCrumbHref}
-            className="text-white hover:text-[#C5C8C8] ltr:font-montserrat text-sm md:ltr:font-inter md:font-medium !cursor-pointer rtl:font-cairo"
+            className="text-white hover:text-[#C5C8C8] ltr:font-montserrat text-sm md:ltr:font-inter md:font-medium !cursor-pointer rtl:font-cairo capitalize"
           >
             {bredCrumbDesription}
           </BreadcrumbLink>

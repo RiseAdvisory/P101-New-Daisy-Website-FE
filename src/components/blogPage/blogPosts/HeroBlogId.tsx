@@ -6,9 +6,12 @@ import { CalendarIcon } from '@/assets/icons/calendarIcon/CalendarIcon';
 import { ClockIcon } from '@/assets/icons/clockIcon/ClockIcon';
 import { usePostStore } from '@/store/post';
 import { baseURLImage } from '@/helpers/axiosConfig';
+import { useChoosePath } from '@/store/currentPath';
 
 export const HeroBlogPage = () => {
   const { post } = usePostStore();
+
+  const { patnName } = useChoosePath();
 
   const bgImage = new URL(post?.image.data[0].attributes.url, baseURLImage)
     .href;
@@ -26,7 +29,10 @@ export const HeroBlogPage = () => {
     >
       <div className="flex pt-6">
         <HomeIcon className="ltr:mr-2 rtl:ml-2" />
-        <BreadcrumbWithCustomSeparator bredCrumbHref="/resources/blog-post" />
+        <BreadcrumbWithCustomSeparator
+          bredCrumbDesription={patnName}
+          bredCrumbHref={`/resources/${patnName}`}
+        />
       </div>
       <h1 className="text-3xl font-bold text-white mt-8">{post?.title}</h1>
       <div className="flex justify-start text-[#ECEEED] text-sm mt-4 flex-col md:flex-row">

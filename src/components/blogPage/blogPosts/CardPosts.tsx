@@ -6,18 +6,22 @@ import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { baseURLImage } from '@/helpers/axiosConfig';
 import { usePostStore } from '@/store/post';
+import { useChoosePath } from '@/store/currentPath';
 
 export const CardPosts = ({
   redirect,
   style,
   listCard,
+  typePath,
 }: {
   redirect: boolean;
   style?: string;
   listCard: any;
+  typePath: string;
 }) => {
   const router = useRouter();
   const { handlePost, setMarkdownPost } = usePostStore();
+  const { choosePatnName } = useChoosePath();
 
   useEffect(() => {
     handlePost({});
@@ -25,6 +29,9 @@ export const CardPosts = ({
   }, [handlePost, setMarkdownPost]);
   const sortingList = listCard?.sort((a: any, b: any) => a.id - b.id);
 
+  useEffect(() => {
+    choosePatnName(typePath);
+  }, []);
   return (
     <div className="bg-[#F8F5F3]">
       <div className="h-[230px] md:h-[240px] bg-primary"></div>
