@@ -44,6 +44,7 @@ export const DesctopViewProfessional = ({
           <Image
             src={firstImage}
             className={'w-[220px] h-[320px]'}
+            style={dataBusiness?.firstImageStyle}
             alt="item"
             width={1000}
             height={1000}
@@ -52,7 +53,8 @@ export const DesctopViewProfessional = ({
         <li className="px-[65px] pt-[55px] bg-[#435655] rounded-[16px] border border-[#586968]">
           <Image
             src={secondImage}
-            className={'w-[515px] h-[320px]'}
+            className={'w-[220px] h-[320px]'}
+            style={dataBusiness?.secondImageStyle}
             alt="item"
             width={1000}
             height={1000}
@@ -62,6 +64,7 @@ export const DesctopViewProfessional = ({
           <Image
             src={thirdImage}
             className={'w-[220px] h-[320px]'}
+            style={dataBusiness?.thirdImageStyle}
             alt="item"
             width={1000}
             height={1000}

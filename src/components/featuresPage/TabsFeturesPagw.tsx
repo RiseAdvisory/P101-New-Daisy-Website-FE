@@ -93,6 +93,7 @@ export const TabsFeaturesProfessional: React.FC<
                 item.attributes.picture.data[0].attributes.url,
                 baseURLImage,
               ).href;
+
               return (
                 <TabsContent
                   key={index}
@@ -104,6 +105,7 @@ export const TabsFeaturesProfessional: React.FC<
                       src={imageBlock}
                       alt=""
                       className="w-[300px] h-[420px] absolute bottom-0 left-[30%] z-20"
+                      style={item?.attributes.stylePicture}
                       width={10000}
                       height={1000}
                     />

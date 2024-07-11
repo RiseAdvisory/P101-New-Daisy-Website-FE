@@ -34,7 +34,12 @@ const BlogPosts = () => {
         styleSection="pb-[100px]"
         secondDescription={heroBlog?.description}
       />
-      <CardPosts typePath='blog-post' redirect={true} style="cursor-pointer" listCard={listCard} />
+      <CardPosts
+        typePath="blog-post"
+        redirect={true}
+        style="cursor-pointer"
+        listCard={listCard}
+      />
     </div>
   );
 };
