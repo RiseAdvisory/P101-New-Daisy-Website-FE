@@ -27,7 +27,6 @@ export const TestimonialsCustomerList = ({
   const [visibleCount, setVisibleCount] = useState(9);
 
   const { lang } = useChangeLanguage();
-
   useEffect(() => {
     (async () => {
       try {
@@ -109,12 +108,14 @@ export const TestimonialsCustomerList = ({
         </ul>
       </div>
       <div className="flex justify-center -mt-20 px-4">
-        <button
-          className="bg-[white] text-[#172524] ltr:font-montserrat font-semibold py-[10px] px-[60px] rounded-lg border hover:bg-primary hover:text-white w-full md:w-auto"
-          onClick={loadMoreTestimonials}
-        >
-          {textMore}
-        </button>
+        {listTestimonials.length > visibleCount && (
+          <button
+            className="bg-[white] text-[#172524] ltr:font-montserrat font-semibold py-[10px] px-[60px] rounded-lg border hover:bg-primary hover:text-white w-full md:w-auto"
+            onClick={loadMoreTestimonials}
+          >
+            {textMore}
+          </button>
+        )}
       </div>
     </div>
   );

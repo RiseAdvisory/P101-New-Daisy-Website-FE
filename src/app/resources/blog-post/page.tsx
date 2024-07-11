@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 const BlogPosts = () => {
   const [heroBlog, setHeroBlog] = useState<any>();
   const [listCard, setListCards] = useState<any>();
+  console.log('🚀 ~ BlogPosts ~ listCard:', listCard?.[3].aboutPosts);
 
   const { lang } = useChangeLanguage();
 
