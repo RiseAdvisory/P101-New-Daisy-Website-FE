@@ -19,18 +19,25 @@ export const TutorialSection = ({
   const blockRef = useRef<HTMLDivElement>(null);
   const withBlock = useRef<HTMLDivElement>(null);
   const [showScroll, setShowScroll] = useState(false);
-
+  const [listDataTabs, setListDataTabs] = useState<any>();
+  const [tutorialInfo, setTutorialInfo] = useState<any>();
   const [dataTabs, setDataTabs] = useState<any>();
   const router = useRouter();
   const { lang } = useChangeLanguage();
 
   useEffect(() => {
     (async () => {
+      const tutorialInfo = await axiosInstance.get(
+        `/resources-tutorial-infos?locale=${lang}`,
+      );
       const response = await axiosInstance.get(
         `/resorce-tutorial-tabs?locale=${lang}`,
       );
+      const [dataInfo] = tutorialInfo?.data?.data;
       const [data] = response?.data?.data;
+      setListDataTabs(response?.data.data);
       setDataTabs(data?.attributes);
+      setTutorialInfo(dataInfo?.attributes);
     })();
   }, [lang]);
 
@@ -67,7 +74,11 @@ export const TutorialSection = ({
       ref={blockRef}
     >
       <div className="hidden md:block" ref={withBlock}>
-        <TabsTutorials dataTabs={dataTabs} />
+        <TabsTutorials
+          dataTabs={dataTabs}
+          listDataTabs={listDataTabs}
+          infoTutorials={tutorialInfo}
+        />
       </div>
       <div className="flex items-center md:hidden" ref={withBlock}>
         <SelectTutorials tabsList={dataTabs?.listTab} />
