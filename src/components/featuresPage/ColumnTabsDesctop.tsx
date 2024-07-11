@@ -10,6 +10,7 @@ interface DataItem {
   attributes: {
     title: string;
     description: string;
+    stylePicture: any;
     picture: {
       data: {
         attributes: {
@@ -102,9 +103,10 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
                     <Image
                       src={imageBlock}
                       alt=""
-                      className="absolute bottom-0 left-1/2 transform -translate-x-1/2 max-w-[750px] max-h-[420px] z-20"
-                      width={item.attributes.picture.data[0].attributes.width}
-                      height={item.attributes.picture.data[0].attributes.height}
+                      className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[650px] h-[420px] z-20"
+                      style={item?.attributes.stylePicture}
+                      width={1000}
+                      height={1000}
                     />
                     <Image
                       src={bgImage}
