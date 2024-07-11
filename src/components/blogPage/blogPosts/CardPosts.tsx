@@ -21,7 +21,7 @@ export const CardPosts = ({
 
   useEffect(() => {
     handlePost({});
-    setMarkdownPost({})
+    setMarkdownPost({});
   }, [handlePost, setMarkdownPost]);
   return (
     <div className="bg-[#F8F5F3]">
@@ -41,7 +41,7 @@ export const CardPosts = ({
                 onClick={() => {
                   if (redirect) {
                     handlePost(item.attributes);
-                    setMarkdownPost(item.attributes.aboutPosts)
+                    setMarkdownPost(item.attributes.aboutPosts);
                     router.push('/resources/legal');
                   }
                 }}
