@@ -11,10 +11,11 @@ export const AboutPosts = () => {
   //   post?.imageAboutPost.data[0].attributes.url,
   //   baseURLImage,
   // ).href;
-  console.log(markDownPost);
+
   return (
     <div className="px-4 md:px-[280px]">
-      <ReactMarkdown rehypePlugins={[rehypeRaw]}>{markDownPost}</ReactMarkdown>
+      {/* <ReactMarkdown rehypePlugins={[rehypeRaw]}>{markDownPost}</ReactMarkdown> */}
+      <div dangerouslySetInnerHTML={{ __html: markDownPost }} />
     </div>
     // <div className="px-4 md:px-[280px]">
     //   <h2 className="text-[#172524] font-bold text-3xl pt-20">
