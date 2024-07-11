@@ -74,7 +74,7 @@ export const TabsFeaturesProfessional: React.FC<
                 {dataList.map((item: any, index: any) => (
                   <li className="group" key={index}>
                     <TabsTrigger
-                      className="!items-start rtl:!items-end !bg-transparent data-[state=active]:!border data-[state=active]:!bg-white/10 group hover:!bg-white/10 flex flex-col w-full text-[16px] !p-6 text-[#172524] mt-[10px] justify-start rounded-lg cursor-pointer capitalize py-3"
+                      className="!items-start rtl:!items-end !bg-transparent data-[state=active]:border-white data-[state=active]:!bg-white/10 group hover:!bg-white/10 flex flex-col w-full text-[16px] !p-6 text-[#172524] mt-[10px] justify-start rounded-lg cursor-pointer capitalize py-3 border-[1px] border-transparent"
                       value={item.attributes.title}
                     >
                       <span className="w-fit !text-start text-white ltr:font-montserrat rtl:font-cairo font-semibold text-[20px] leading-[30px]">
