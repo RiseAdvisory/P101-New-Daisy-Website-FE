@@ -4,6 +4,7 @@ import { Button } from '../ui/button';
 import { Calculater } from './Calculater';
 import { ResultCalculate } from './ResultCalculate';
 import { cn } from '@/lib/utils';
+import { useCalculate } from '@/store/calculateResult';
 
 export const CalculatePricing = ({
   activePricingPage,
@@ -16,14 +17,6 @@ export const CalculatePricing = ({
   const [conciergeService, setConciergeService] = useState(false);
   const [onCalculates, setOnCalculates] = useState(true);
   const [onCheckedYear, setCheckedYear] = useState(false);
-  const [calculate, setCalculate] = useState({
-    staff: '1',
-    branch: '1',
-    country: '1',
-    provideHome: false,
-    assistantOnboard: false,
-    available: false,
-  });
 
   const calculationFormRef = useRef<HTMLDivElement>(null);
 
@@ -48,7 +41,16 @@ export const CalculatePricing = ({
     activePricingPage === 'business'
       ? dataPricing?.business
       : dataPricing?.professional;
-  // console.log(calculate);
+  const {
+    assistantOnboard,
+    available,
+    branch,
+    country,
+    provideHome,
+    setDefaults,
+    staff,
+  } = useCalculate();
+  console.log(assistantOnboard, available, branch, country, provideHome, staff);
 
   return (
     <div className="bg-[#828E8E] rounded-[16px] p-0 md:p-8 w-full">
@@ -66,6 +68,7 @@ export const CalculatePricing = ({
             onClick={() => {
               setOnCalculates(!onCalculates);
               setIsRecommended((prev: boolean) => !prev);
+              if (!onCalculates) setDefaults();
             }}
             className="hidden md:inline-flex ltr:font-montserrat border border-[#2E4342] text-primary hover:text-white font-semibold px-[89px] py-[12px] bg-white hover:bg-primary text-center"
           >
@@ -79,8 +82,6 @@ export const CalculatePricing = ({
         {onCalculates ? (
           <Calculater
             calculationFormRef={calculationFormRef}
-            calculate={calculate}
-            setCalculate={setCalculate}
             homeService={homeService}
             setHomeService={setHomeService}
             onboarding={onboarding}
@@ -119,6 +120,7 @@ export const CalculatePricing = ({
             } else {
               onResetCalculation();
             }
+            if (!onCalculates) setDefaults();
             setOnCalculates(!onCalculates);
             setIsRecommended((prev: boolean) => !prev);
           }}
