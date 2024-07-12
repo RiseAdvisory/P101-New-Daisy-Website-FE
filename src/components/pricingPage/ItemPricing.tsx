@@ -61,7 +61,7 @@ export const ItemCardPricing = ({
           <p className="ltr:font-inter w-fit text-[12px] mt-3 leading-3 text-[#2543AD] bg-[#E9ECF7] rounded-[20px] px-[9px] py-[4px] font-medium">
             {subtitle}
           </p>
-          <p className="ltr:font-montserrat text-[#455150] mt-1 text-center leading-[24px] min-h-[72px]">
+          <p className="ltr:font-montserrat text-[#455150] mt-1 text-center leadin-6 min-h-[6rem] ">
             {description}
           </p>
           <div className="bg-[#F8F5F3] rounded-[8px] p-4 w-full mt-4">
@@ -85,7 +85,7 @@ export const ItemCardPricing = ({
                   {defaulText?.discount}
                 </span>
               </p>
-              <Button className="ltr:font-montserrat font-semibold mt-4 bg-white text-primary hover:text-white hover:bg-primary border border-primary">
+              <Button className="ltr:font-montserrat font-semibold mt-4 bg-white text-primary hover:text-white hover:bg-primary border border-primary ">
                 {defaulText?.textStarted}
               </Button>
             </div>
