@@ -11,7 +11,7 @@ const BlogPosts = () => {
   const [listCard, setListCards] = useState<any>();
 
   const { lang } = useChangeLanguage();
-  const { chooseBreadcrumb } = useChoosePath();
+  const { chooseBreadcrumb, choosePathStrapi } = useChoosePath();
 
   useEffect(() => {
     (async () => {
@@ -28,7 +28,8 @@ const BlogPosts = () => {
   }, [lang]);
   useEffect(() => {
     chooseBreadcrumb(heroBlog?.breadcrumbs);
-  }, [heroBlog,lang]);
+    choosePathStrapi('/resources-blog-posts');
+  }, [heroBlog, lang]);
   return (
     <div className="w-full">
       <HeroPage

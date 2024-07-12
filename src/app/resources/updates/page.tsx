@@ -11,7 +11,7 @@ const Updates = () => {
   const [listCard, setListCards] = useState<any>();
 
   const { lang } = useChangeLanguage();
-  const { chooseBreadcrumb } = useChoosePath();
+  const { chooseBreadcrumb,choosePathStrapi } = useChoosePath();
 
   useEffect(() => {
     (async () => {
@@ -27,7 +27,8 @@ const Updates = () => {
   }, [lang]);
   useEffect(() => {
     chooseBreadcrumb(heroUpdate?.breadcrumbs);
-  }, [heroUpdate,lang]);
+    choosePathStrapi('/hero-resources-updates')
+  }, [heroUpdate, lang]);
 
   return (
     <div>
