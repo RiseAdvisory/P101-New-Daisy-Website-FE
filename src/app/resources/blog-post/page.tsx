@@ -28,7 +28,7 @@ const BlogPosts = () => {
   }, [lang]);
   useEffect(() => {
     chooseBreadcrumb(heroBlog?.breadcrumbs);
-  }, [heroBlog]);
+  }, [heroBlog,lang]);
   return (
     <div className="w-full">
       <HeroPage

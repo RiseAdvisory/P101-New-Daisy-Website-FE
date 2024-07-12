@@ -27,7 +27,7 @@ const Updates = () => {
   }, [lang]);
   useEffect(() => {
     chooseBreadcrumb(heroUpdate?.breadcrumbs);
-  }, [heroUpdate]);
+  }, [heroUpdate,lang]);
 
   return (
     <div>
