@@ -83,6 +83,7 @@ const Pricing = () => {
             {pay?.monthly}
           </p>
           <Switch
+            defaultChecked={checkedMonth}
             className="mx-4 data-[state=checked]:bg-[#A67F6B] my-auto bg-[#aab4b3]"
             onCheckedChange={() => setCheckedMonth(!checkedMonth)}
           />
