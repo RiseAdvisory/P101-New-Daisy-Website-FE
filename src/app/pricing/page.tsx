@@ -12,7 +12,7 @@ import { useEffect, useRef, useState } from 'react';
 
 const Pricing = () => {
   const [activePricingPage, setActivePricingPage] = useState('');
-  const [checkedMonth, setCheckedMonth] = useState(false);
+  const [checkedMonth, setCheckedMonth] = useState(true);
   const [isRescomennded, setIsRecommended] = useState(false);
   const [dataPricing, setDataPricing] = useState<any>();
   const { lang } = useChangeLanguage();

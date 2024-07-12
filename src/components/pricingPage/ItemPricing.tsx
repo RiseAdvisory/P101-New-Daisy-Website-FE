@@ -68,7 +68,7 @@ export const ItemCardPricing = ({
             <div className="p-4 rounded-[8px] border flex flex-col justify-center text-center bg-white">
               <h2 className="font-bold text-[#242424] text-[32px] leading-10">
                 {currentPrice && currentPrice !== 'Free'
-                  ? `$ ${currentPrice}`
+                  ? ` ${currentPrice}`
                   : 'Free'}
               </h2>
               <p className="ltr:font-montserrat text-[#242424] text-[12px] leading-[18px]">
