@@ -25,7 +25,7 @@ const Legal = () => {
       const [data] = response.data.data;
       setDataLegal(data?.attributes);
     })();
-  }, []);
+  }, [lang]);
 
   return (
     <div className="w-full">
