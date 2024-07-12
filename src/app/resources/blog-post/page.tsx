@@ -2,6 +2,7 @@
 import { CardPosts } from '@/components/blogPage/blogPosts/CardPosts';
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import axiosInstance from '@/helpers/axiosConfig';
+import { useChoosePath } from '@/store/currentPath';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
 
@@ -10,6 +11,7 @@ const BlogPosts = () => {
   const [listCard, setListCards] = useState<any>();
 
   const { lang } = useChangeLanguage();
+  const { chooseBreadcrumb } = useChoosePath();
 
   useEffect(() => {
     (async () => {
@@ -20,9 +22,13 @@ const BlogPosts = () => {
         `/resources-blog-posts?populate=*&locale=${lang}`,
       );
       setListCards(responseList?.data?.data);
+
       setHeroBlog(response?.data?.data[0]?.attributes);
     })();
   }, [lang]);
+  useEffect(() => {
+    chooseBreadcrumb(heroBlog?.breadcrumbs);
+  }, [heroBlog]);
   return (
     <div className="w-full">
       <HeroPage

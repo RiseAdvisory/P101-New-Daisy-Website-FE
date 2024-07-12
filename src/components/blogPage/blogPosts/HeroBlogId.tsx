@@ -11,14 +11,13 @@ import { useChoosePath } from '@/store/currentPath';
 export const HeroBlogPage = () => {
   const { post } = usePostStore();
 
-  const { patnName } = useChoosePath();
+  const { patnName, bredcrumb } = useChoosePath();
 
   const bgImage = new URL(post?.image.data[0].attributes.url, baseURLImage)
     .href;
 
   const iconImg = new URL(post?.iconOwner.data[0].attributes.url, baseURLImage)
     .href;
-
   return (
     <div
       className="relative bg-cover bg-center pb-[100px] md:pb-[400px] px-4 md:pl-[64px] md:pt-[25px]"
@@ -30,7 +29,8 @@ export const HeroBlogPage = () => {
       <div className="flex pt-6">
         <HomeIcon className="ltr:mr-2 rtl:ml-2" />
         <BreadcrumbWithCustomSeparator
-          bredCrumbDesription={patnName}
+          bredCrumbTitle={bredcrumb?.description}
+          bredCrumbDesription={bredcrumb?.title}
           bredCrumbHref={`/resources/${patnName}`}
         />
       </div>
