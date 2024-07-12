@@ -73,14 +73,17 @@ const Pricing = () => {
       <div className="w-full bg-primary py-[44px]">
         <div className="flex mx-auto w-fit bg-primary ">
           <p
-            className={cn('font-normal text-[18px] leading-6 text-[#F8F5F3]', {
-              'text-[#F8F5F3]/60': checkedMonth,
-            })}
+            className={cn(
+              'font-normal text-[18px] leading-6 text-[#F8F5F3] text-right',
+              {
+                'text-[#F8F5F3]/60': checkedMonth,
+              },
+            )}
           >
             {pay?.monthly}
           </p>
           <Switch
-            className="mx-4 data-[state=checked]:bg-[#A67F6B] bg-[#aab4b3]"
+            className="mx-4 data-[state=checked]:bg-[#A67F6B] my-auto bg-[#aab4b3]"
             onCheckedChange={() => setCheckedMonth(!checkedMonth)}
           />
           <p
