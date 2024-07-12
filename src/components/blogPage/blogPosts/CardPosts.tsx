@@ -20,7 +20,7 @@ export const CardPosts = ({
   typePath: string;
 }) => {
   const router = useRouter();
-  const { handlePost, setMarkdownPost } = usePostStore();
+  const { handlePost, setMarkdownPost, setHandleId } = usePostStore();
   const { choosePatnName } = useChoosePath();
 
   useEffect(() => {
@@ -48,6 +48,7 @@ export const CardPosts = ({
               <li
                 onClick={() => {
                   if (redirect) {
+                    setHandleId(item.id);
                     handlePost(item.attributes);
                     setMarkdownPost(item.attributes.aboutPosts);
                     router.push('/resources/legal');

@@ -27,9 +27,7 @@ export const FeatureProfessionalList = ({
               item.attributes.picture.data[0].attributes.formats.small.url,
               baseURLImage,
             ).href;
-            console.log(
-              item.attributes.picture.data[0].attributes.formats.small,
-            );
+            
             return (
               <li key={index} className="text-start mx-auto ">
                 <div className="bg-[#586968]  h-[320px] relative rounded-[9px] overflow-hidden ">

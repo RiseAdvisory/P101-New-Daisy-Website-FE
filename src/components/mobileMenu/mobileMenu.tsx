@@ -84,12 +84,14 @@ export const MobileMenu = () => {
                           toggleOpenMenu(false);
                           if (
                             item.title === 'Resources' ||
-                            item.title === 'الموارد'
+                            item.title === 'الموارد' ||
+                            item.title === 'Ресурси'
                           ) {
                             setResources(false);
                           } else if (
                             item.title === 'Home' ||
-                            item.title === 'الرئيسية'
+                            item.title === 'الرئيسية' ||
+                            item.title === 'Додому'
                           ) {
                             setOpenMenu(!openMenu);
                             toggleOpenMenu(!openMenu);

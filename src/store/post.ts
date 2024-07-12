@@ -2,6 +2,8 @@ import { create } from 'zustand';
 
 interface ILoadingStore {
   post: any;
+  handlId: any;
+  setHandleId: (tmp: any) => void;
   handlePost: (tmp: any) => void;
   markDownPost: any;
   setMarkdownPost: (tmp: any) => void;
@@ -10,6 +12,12 @@ interface ILoadingStore {
 export const usePostStore = create<ILoadingStore>((set) => ({
   post: {},
   markDownPost: {},
+  handlId: '',
+  setHandleId: (id: any) => {
+    set(() => ({
+      handlId: id,
+    }));
+  },
   handlePost: (item: any) => {
     set(() => ({
       post: item,
