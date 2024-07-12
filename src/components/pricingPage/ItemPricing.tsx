@@ -1,10 +1,11 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Button } from '../ui/button';
 import { PlusIcon } from 'lucide-react';
 import { OptionPricing } from '@/assets/icons/optionPricing/optionPricing';
 import { OtherOptionPricing } from './OtherOptionPricing';
 import { cn } from '@/lib/utils';
+import { useCalculate } from '@/store/calculateResult';
 
 export const ItemCardPricing = ({
   title,
@@ -23,7 +24,7 @@ export const ItemCardPricing = ({
   subtitle: string;
   description: string;
   price: string;
-  options: string[];
+  options: any;
   optionPlus: string;
   chechedAnnualy: boolean;
   priceYear: string;
@@ -32,10 +33,35 @@ export const ItemCardPricing = ({
   textRecomended: any;
 }) => {
   const [showAll, setShowAll] = useState(false);
+  const [currentPlanBus, setCurrentPlanBus] = useState('');
+  const [currentPlanProf, setCurrentPlanProf] = useState('');
 
+  const { staff, branch } = useCalculate();
   const currentPrice = !chechedAnnualy ? price : priceYear;
-  const isRecommended = title === 'Starter' || title === 'Basic';
+  const isRecommended = title === currentPlanProf || title === currentPlanBus;
   const defaulText = textRecomended?.textItemPricing;
+
+  useEffect(() => {
+    if (staff <= 3) {
+      setCurrentPlanBus('Basic'), setCurrentPlanProf('Starter');
+    }
+    if (staff > 3 && staff < 8) {
+      setCurrentPlanBus('Growth'), setCurrentPlanProf('Professional');
+    }
+    if (staff > 8) {
+      setCurrentPlanBus('Business'), setCurrentPlanProf('Elite');
+    }
+    if (branch <= 1) {
+      setCurrentPlanBus('Basic'), setCurrentPlanProf('Starter');
+    }
+    if (branch > 1 && branch < 2) {
+      setCurrentPlanBus('Growth'), setCurrentPlanProf('Professional');
+    }
+    if (branch > 5) {
+      setCurrentPlanBus('Business'), setCurrentPlanProf('Elite');
+    }
+  }, [staff, branch]);
+
   return (
     <>
       <li

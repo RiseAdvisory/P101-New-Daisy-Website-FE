@@ -1,9 +1,12 @@
+'use client';
 import stars from '../../assets/images/PricingStars.png';
 import Image from 'next/image';
 import ArrowSpiral from '../../assets/images/ArrowSpiral.png';
 import { Button } from '../ui/button';
+import { useRouter } from 'next/navigation';
 
 export const EnterPrise = ({ data }: { data: any }) => {
+  const router = useRouter();
   return (
     <div className="bg-primary rounded-[16px] mx-16  hidden md:flex">
       <div className="pt-20 pl-[95px]">
@@ -28,6 +31,7 @@ export const EnterPrise = ({ data }: { data: any }) => {
       />
       <Button
         className=" py-[14px] px-[110px] my-[106px] mx-auto border border-gray-400"
+        onClick={() => router.push('/contact')}
         style={{ backgroundColor: 'rgba(88, 105, 104, 1)' }}
       >
         {data?.textButton}

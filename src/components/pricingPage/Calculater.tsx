@@ -1,9 +1,8 @@
+import { useCalculate } from '@/store/calculateResult';
 import { Input } from '../ui/input';
 import { ToggleButton } from './ToggleButton';
 
 export const Calculater = ({
-  calculate,
-  setCalculate,
   homeService,
   setHomeService,
   onboarding,
@@ -14,14 +13,16 @@ export const Calculater = ({
   titleTypeCalculate,
   overflowText,
 }: any) => {
+  const { branch, country, setCalculate, staff } = useCalculate();
+
   return (
     <>
       <div
         className="flex flex-col md:flex-row justify-between"
         ref={calculationFormRef}
       >
-        <div className="mt-6 w-full ltr:mr-12 ">
-          <div className="flex flex-col md:flex-row justify-between mb-8 md:mb-6 ">
+        <div className="mt-6 w-full ltr:mr-12">
+          <div className="flex flex-col md:flex-row justify-between mb-8 md:mb-6">
             <div className="md:min-h-[56px]">
               <h2 className="ltr:font-montserrat font-semibold text-[18px] leading-7">
                 {titleTypeCalculate?.firstInput.title}
@@ -31,15 +32,10 @@ export const Calculater = ({
               </p>
             </div>
             <Input
-              onChange={(e) =>
-                setCalculate((prev: any) => ({
-                  ...prev,
-                  staff: e.target.value,
-                }))
-              }
+              onChange={(e) => setCalculate({ staff: e.target.value })}
               type="number"
               className="w-full md:w-20 ml-0 md:ml-8 mt-2 md:mt-0 focus:border-[#A67F6B] text-center py-[14px] md:py-2"
-              defaultValue={calculate.staff}
+              defaultValue={staff}
               min="1"
             />
           </div>
@@ -53,15 +49,10 @@ export const Calculater = ({
               </p>
             </div>
             <Input
-              onChange={(e) =>
-                setCalculate((prev: any) => ({
-                  ...prev,
-                  branch: e.target.value,
-                }))
-              }
+              onChange={(e) => setCalculate({ branch: e.target.value })}
               className="w-full md:w-20 md:ml-8 mt-4 md:mt-0 focus:border-[#A67F6B] text-center py-2"
               type="number"
-              defaultValue={calculate.branch}
+              defaultValue={branch}
               min="1"
             />
           </div>
@@ -75,15 +66,10 @@ export const Calculater = ({
               </p>
             </div>
             <Input
-              onChange={(e) =>
-                setCalculate((prev: any) => ({
-                  ...prev,
-                  country: e.target.value,
-                }))
-              }
+              onChange={(e) => setCalculate({ country: e.target.value })}
               className="w-full md:w-20 md:ml-8 mt-4 md:mt-0 focus:border-[#A67F6B] text-center py-2"
               type="number"
-              defaultValue={calculate.country}
+              defaultValue={country}
               min="1"
             />
           </div>
@@ -99,7 +85,6 @@ export const Calculater = ({
               </p>
             </div>
             <ToggleButton
-              setCalculate={setCalculate}
               name="provideHome"
               homeService={homeService}
               setHomeService={setHomeService}
@@ -108,15 +93,14 @@ export const Calculater = ({
           </div>
           <div className="flex flex-col md:flex-row justify-between mb-6">
             <div className="min-h-[84px]">
-              <h2 className="ltr:font-montserrat font-semibold text-[18px] leading-7 ">
+              <h2 className="ltr:font-montserrat font-semibold text-[18px] leading-7">
                 {titleTypeCalculate?.toggleSecond.title}
               </h2>
               <p className="ltr:font-montserrat text-[#455150]">
-                {titleTypeCalculate?.toggleSecond.title}
+                {titleTypeCalculate?.toggleSecond.description}
               </p>
             </div>
             <ToggleButton
-              setCalculate={setCalculate}
               name="assistantOnboard"
               homeService={onboarding}
               setHomeService={setOnboarding}
@@ -133,7 +117,6 @@ export const Calculater = ({
               </p>
             </div>
             <ToggleButton
-              setCalculate={setCalculate}
               name="available"
               homeService={conciergeService}
               setHomeService={setConciergeService}
