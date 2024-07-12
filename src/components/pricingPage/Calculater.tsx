@@ -13,12 +13,7 @@ export const Calculater = ({
   titleTypeCalculate,
   overflowText,
 }: any) => {
-  const {
-    branch,
-    country,
-    setCalculate,
-    staff,
-  } = useCalculate();
+  const { branch, country, setCalculate, staff } = useCalculate();
 
   return (
     <>

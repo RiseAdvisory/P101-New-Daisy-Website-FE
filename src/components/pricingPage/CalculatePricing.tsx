@@ -50,7 +50,7 @@ export const CalculatePricing = ({
     setDefaults,
     staff,
   } = useCalculate();
-  console.log(assistantOnboard, available, branch, country, provideHome, staff);
+
 
   return (
     <div className="bg-[#828E8E] rounded-[16px] p-0 md:p-8 w-full">
