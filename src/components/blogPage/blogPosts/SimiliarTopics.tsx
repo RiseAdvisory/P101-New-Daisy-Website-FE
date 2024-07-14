@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 import { usePostStore } from '@/store/post';
 import { useChangeLanguage } from '@/store/language';
 
-export const SimiliarTopick = () => {
+export const SimiliarTopick = ({ titleSimilar }: { titleSimilar: string }) => {
   const [listCard, setListCards] = useState<any>();
 
   const router = useRouter();
@@ -26,7 +26,7 @@ export const SimiliarTopick = () => {
   return (
     <div className="flex flex-col justify-center items-center ">
       <h2 className="text-[#172524] text-bold text-[32px] leading-[40px] pt-28 pb-10">
-        Similar Topics
+        {titleSimilar}
       </h2>
       <ul className="bg-[#F8F5F3] px-4 space-y-8 pb-[28px] md:pb-[140px] bg-transparent md:grid md:grid-cols-3 md:gap-6 md:space-y-0">
         {listCard &&
