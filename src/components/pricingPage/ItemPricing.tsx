@@ -46,7 +46,6 @@ export const ItemCardPricing = ({
       setCurrentPlanProf('Starter');
     }
     if ((staff > 3 && staff < 8) || (branch > 1 && branch < 3)) {
-      console.log('object');
       setCurrentPlanBus('Growth');
       setCurrentPlanProf('Professional');
     }
@@ -55,7 +54,7 @@ export const ItemCardPricing = ({
       setCurrentPlanProf('Elite');
     }
   }, [staff, branch]);
-  console.log(title);
+
   return (
     <>
       <li

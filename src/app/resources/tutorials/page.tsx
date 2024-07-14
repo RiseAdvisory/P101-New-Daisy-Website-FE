@@ -21,7 +21,6 @@ const Tutorials = () => {
       setDataTutorials(data?.attributes);
     })();
   }, [lang]);
-  console.log(dataTutorials);
   return (
     <>
       <HeroPage
