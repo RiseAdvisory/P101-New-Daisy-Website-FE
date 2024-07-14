@@ -21,6 +21,7 @@ const Tutorials = () => {
       setDataTutorials(data?.attributes);
     })();
   }, [lang]);
+  console.log(dataTutorials);
   return (
     <>
       <HeroPage
@@ -35,6 +36,7 @@ const Tutorials = () => {
         heightScreen={true}
         styleSection="pb-[100px] pt-6 px-[16px] h-screen"
         secondDescription={dataTutorials?.description}
+        titleScroll={dataTutorials?.titleScroll}
       />
       <TutorialSection setScroll={setScroll} />
       {/* <TabsTutorials /> */}
