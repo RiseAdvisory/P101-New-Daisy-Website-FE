@@ -40,28 +40,22 @@ export const ItemCardPricing = ({
   const currentPrice = !chechedAnnualy ? price : priceYear;
   const isRecommended = title === currentPlanProf || title === currentPlanBus;
   const defaulText = textRecomended?.textItemPricing;
-
   useEffect(() => {
-    if (staff <= 3) {
-      setCurrentPlanBus('Basic'), setCurrentPlanProf('Starter');
+    if (staff <= 3 || branch <= 1) {
+      setCurrentPlanBus('Basic');
+      setCurrentPlanProf('Starter');
     }
-    if (staff > 3 && staff < 8) {
-      setCurrentPlanBus('Growth'), setCurrentPlanProf('Professional');
+    if ((staff > 3 && staff < 8) || (branch > 1 && branch < 3)) {
+      console.log('object');
+      setCurrentPlanBus('Growth');
+      setCurrentPlanProf('Professional');
     }
-    if (staff > 8) {
-      setCurrentPlanBus('Business'), setCurrentPlanProf('Elite');
-    }
-    if (branch <= 1) {
-      setCurrentPlanBus('Basic'), setCurrentPlanProf('Starter');
-    }
-    if (branch > 1 && branch < 2) {
-      setCurrentPlanBus('Growth'), setCurrentPlanProf('Professional');
-    }
-    if (branch > 5) {
-      setCurrentPlanBus('Business'), setCurrentPlanProf('Elite');
+    if (staff > 8 || branch > 5) {
+      setCurrentPlanBus('Business');
+      setCurrentPlanProf('Elite');
     }
   }, [staff, branch]);
-
+  console.log(title);
   return (
     <>
       <li
