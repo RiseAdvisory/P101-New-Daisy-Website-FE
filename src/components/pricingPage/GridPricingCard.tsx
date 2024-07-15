@@ -1,4 +1,23 @@
+'use client';
+import { useEffect, useState } from 'react';
 import { ItemCardPricing } from './ItemPricing';
+interface PricingData {
+  title: string;
+  description: string;
+  price: string;
+  subTitle: string;
+  options: string[];
+  optionPlus?: string;
+  priceYear?: string;
+}
+
+interface GridPricingCardProps {
+  listChangePricing?: string[];
+  chechedAnnualy: boolean;
+  activePricingPage: string;
+  isRescomennded: boolean;
+  dataPricing: PricingData[];
+}
 
 export const GridPricingCard = ({
   listChangePricing,
@@ -6,13 +25,15 @@ export const GridPricingCard = ({
   activePricingPage,
   isRescomennded,
   dataPricing = [],
-}: {
-  listChangePricing?: any;
-  chechedAnnualy: boolean;
-  activePricingPage: string;
-  isRescomennded: boolean;
-  dataPricing: any;
-}) => {
+}: GridPricingCardProps) => {
+  const [titlePricing, setTitlePricing] = useState<string[]>([]);
+
+  useEffect(() => {
+    if (dataPricing.length > 0) {
+      setTitlePricing(dataPricing.map((item) => item.title));
+    }
+  }, [dataPricing]);
+
   return (
     <>
       <div className="w-full bg-primary h-[420px] md:block hidden"></div>
@@ -33,6 +54,7 @@ export const GridPricingCard = ({
                 priceYear={item.priceYear}
                 textRecomended={listChangePricing}
                 isRescomennded={isRescomennded}
+                titlePricing={titlePricing}
               />
             );
           })}
