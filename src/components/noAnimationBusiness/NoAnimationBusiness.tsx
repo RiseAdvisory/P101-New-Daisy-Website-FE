@@ -16,6 +16,8 @@ export const NoScrollingAnimationBusiness = ({
   subtitle,
   desription,
   list,
+  imageWidth,
+  imageHeight,
 }: {
   image?: any;
   title: string;
@@ -28,6 +30,8 @@ export const NoScrollingAnimationBusiness = ({
   subtitle: string;
   desription: string;
   list: string[];
+  imageWidth: any;
+  imageHeight: any;
 }) => {
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -60,7 +64,15 @@ export const NoScrollingAnimationBusiness = ({
             className={imageClassNameBgSecond}
           />
         )}
-        <Image src={image!} alt="photo" className={imageClassName} />
+        {!image.includes(undefined) && (
+          <Image
+            src={image!}
+            alt="photo"
+            className={imageClassName}
+            width={imageWidth}
+            height={imageHeight}
+          />
+        )}
       </div>
       <h5 className="text-[#F2DAD4] pt-8 text-base leading-6 uppercase">
         {subtitle}

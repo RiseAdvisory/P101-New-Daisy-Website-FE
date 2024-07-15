@@ -43,6 +43,7 @@ export const TestimonialsCustomerList = ({
   const loadMoreTestimonials = () => {
     setVisibleCount((prevCount) => prevCount + 3);
   };
+  const sortingList = listTestimonials?.sort((a: any, b: any) => a.id - b.id);
 
   const distributeTestimonials = (
     testimonials: Testimonial[],
@@ -55,7 +56,7 @@ export const TestimonialsCustomerList = ({
     return columns;
   };
 
-  const visibleTestimonials = listTestimonials.slice(0, visibleCount);
+  const visibleTestimonials = sortingList.slice(0, visibleCount);
   const [firstColumn, secondColumn, thirdColumn] =
     distributeTestimonials(visibleTestimonials);
 

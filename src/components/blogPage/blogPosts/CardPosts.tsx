@@ -27,8 +27,11 @@ export const CardPosts = ({
     handlePost({});
     setMarkdownPost({});
   }, [handlePost, setMarkdownPost]);
+  //sorting lists
   const sortingList = listCard?.sort((a: any, b: any) => a.id - b.id);
 
+
+  
   useEffect(() => {
     choosePatnName(typePath);
   }, []);

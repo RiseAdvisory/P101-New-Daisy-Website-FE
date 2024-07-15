@@ -13,7 +13,7 @@ import image4 from '../../assets/images/doublePhone.png';
 import { NoScrollingAnimationBusiness } from '@/components/noAnimationBusiness/NoAnimationBusiness';
 import leaf from '../../assets/images/LeafBg.png';
 import { Separator } from '@/components/ui/separator';
-import axiosInstance from '@/helpers/axiosConfig';
+import axiosInstance, { baseURLImage } from '@/helpers/axiosConfig';
 import { useEffect, useState } from 'react';
 
 import LockerContainer from '@/components/lockerScrollingSection/LockerContainer/LockerContainer';
@@ -60,9 +60,21 @@ const Professional = () => {
               list={heroProfessional?.listHeroPost[0].listSub}
               imageBg={leaf}
               imageClassNameBg="absolute -bottom-[40px] left-0 w-[340px] h-[320px] "
-              image={image1}
+              image={
+                new URL(
+                  dataScroll?.[0].attributes?.mainImage?.data?.[0]?.attributes?.formats?.small?.url,
+                  baseURLImage,
+                ).href
+              }
               className="absolute w-full h-full bottom-0 left-10"
-              imageClassName=" absolute w-[80%]   top-[50%] -translate-y-1/2 right-0"
+              imageClassName=" absolute w-[80%]   bottom-0 translate-x-1/2 right-1/2"
+              imageWidth={
+                dataScroll?.[0]?.attributes?.mainImage?.data?.[0]?.attributes?.formats?.small?.width
+              }
+              imageHeight={
+                dataScroll?.[0]?.attributes?.mainImage?.data?.[0]?.attributes?.formats
+                  ?.small?.height
+              }
             />
             <div className="mx-4 bg-primary">
               <Separator className="bg-[#586968]" />
@@ -74,10 +86,23 @@ const Professional = () => {
               list={heroProfessional?.listHeroPost[1].listSub}
               imageBg={leaf}
               imageClassNameBg="absolute -bottom-[40px] left-0 w-[300px] h-[300px]"
-              image={image2}
+              image={
+                new URL(
+                  dataScroll?.[1]?.attributes?.mainImage?.data?.[0]?.attributes?.formats?.small?.url,
+                  baseURLImage,
+                ).href
+              }
               className="absolute w-full h-full bottom-0 left-10 "
-              imageClassName=" absolute w-[300px]  top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
+              imageClassName=" absolute w-[300px]  bottom-0  -translate-x-1/2 left-[50%] h-[300px]"
               imageBgTwo={leaf}
+              imageWidth={
+                dataScroll?.[1]?.attributes?.mainImage?.data?.[0]?.attributes.formats
+                  .small.width
+              }
+              imageHeight={
+                dataScroll?.[1]?.attributes?.mainImage?.data?.[0]?.attributes?.formats
+                  .small.height
+              }
               imageClassNameBgSecond="absolute -top-[70px] -right-[70px] w-[200px] h-[200px] rotate-180 scale-x-[-1]"
             />
             <div className="px-4 bg-primary">
@@ -90,9 +115,22 @@ const Professional = () => {
               list={heroProfessional?.listHeroPost[2].listSub}
               imageBg={leaf}
               imageClassNameBg="absolute -bottom-[100px] -right-[180px] w-[300px] h-[300px] rotate-[60deg]"
-              image={image3}
+              image={
+                new URL(
+                  dataScroll?.[2]?.attributes?.mainImage?.data?.[0].attributes.formats.small.url,
+                  baseURLImage,
+                ).href
+              }
+              imageWidth={
+                dataScroll?.[2]?.attributes?.mainImage?.data?.[0].attributes.formats
+                  .small.width
+              }
+              imageHeight={
+                dataScroll?.[2]?.attributes?.mainImage?.data?.[0].attributes.formats
+                  .small.height
+              }
               className="absolute w-full h-full bottom-0 left-10 "
-              imageClassName=" absolute w-[70%]  top-[50%] -translate-y-1/2 -translate-x-1/2 left-[50%]"
+              imageClassName=" absolute w-[70%]  bottom-0 -translate-x-1/2 left-[50%]"
               imageBgTwo={leaf}
               imageClassNameBgSecond="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
             />
@@ -105,8 +143,21 @@ const Professional = () => {
               desription={heroProfessional?.listHeroPost[0].description}
               list={heroProfessional?.listHeroPost[0].listSub}
               imageBg={leaf}
+              imageWidth={
+                dataScroll?.[3]?.attributes?.mainImage.data?.[0].attributes.formats
+                  .small.width
+              }
+              imageHeight={
+                dataScroll?.[3]?.attributes?.mainImage.data?.[0].attributes.formats
+                  .small.height
+              }
               imageClassNameBg="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
-              image={image4}
+              image={
+                new URL(
+                  dataScroll?.[3]?.attributes?.mainImage?.data?.[0].attributes.formats.small.url,
+                  baseURLImage,
+                ).href
+              }
               className="absolute w-full h-full bottom-0 left-10 "
               imageClassName=" absolute w-[60%]  bottom-0  -translate-x-1/2 left-[50%]"
             />
