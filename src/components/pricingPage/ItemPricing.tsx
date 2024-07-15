@@ -19,6 +19,7 @@ export const ItemCardPricing = ({
   activePricingPage,
   isRescomennded,
   textRecomended,
+  titlePricing,
 }: {
   title: string;
   subtitle: string;
@@ -31,6 +32,7 @@ export const ItemCardPricing = ({
   activePricingPage: string;
   isRescomennded: boolean;
   textRecomended: any;
+  titlePricing: string[];
 }) => {
   const [showAll, setShowAll] = useState(false);
   const [currentPlanBus, setCurrentPlanBus] = useState('');
@@ -38,19 +40,19 @@ export const ItemCardPricing = ({
 
   const { staff, branch } = useCalculate();
   const currentPrice = !chechedAnnualy ? price : priceYear;
-  const isRecommended = title === currentPlanProf || title === currentPlanBus;
+  const isRecommended = title === currentPlanBus;
   const defaulText = textRecomended?.textItemPricing;
   useEffect(() => {
     if (staff <= 3 || branch <= 1) {
-      setCurrentPlanBus('Basic');
+      setCurrentPlanBus(titlePricing[0]);
       setCurrentPlanProf('Starter');
     }
-    if ((staff > 3 && staff < 8) || (branch > 1 && branch < 3)) {
-      setCurrentPlanBus('Growth');
+    if ((staff > 3 && staff <= 8) || (branch > 1 && branch < 3)) {
+      setCurrentPlanBus(titlePricing[1]);
       setCurrentPlanProf('Professional');
     }
     if (staff > 8 || branch > 5) {
-      setCurrentPlanBus('Business');
+      setCurrentPlanBus(titlePricing[2]);
       setCurrentPlanProf('Elite');
     }
   }, [staff, branch]);
