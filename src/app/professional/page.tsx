@@ -69,11 +69,12 @@ const Professional = () => {
               className="absolute w-full h-full bottom-0 left-10"
               imageClassName=" absolute w-[80%]   bottom-0 translate-x-1/2 right-1/2"
               imageWidth={
-                dataScroll?.[0]?.attributes?.mainImage?.data?.[0]?.attributes?.formats?.small?.width
+                dataScroll?.[0]?.attributes?.mainImage?.data?.[0]?.attributes
+                  ?.formats?.small?.width
               }
               imageHeight={
-                dataScroll?.[0]?.attributes?.mainImage?.data?.[0]?.attributes?.formats
-                  ?.small?.height
+                dataScroll?.[0]?.attributes?.mainImage?.data?.[0]?.attributes
+                  ?.formats?.small?.height
               }
             />
             <div className="mx-4 bg-primary">
@@ -96,12 +97,12 @@ const Professional = () => {
               imageClassName=" absolute w-[300px]  bottom-0  -translate-x-1/2 left-[50%] h-[300px]"
               imageBgTwo={leaf}
               imageWidth={
-                dataScroll?.[1]?.attributes?.mainImage?.data?.[0]?.attributes.formats
-                  .small.width
+                dataScroll?.[1]?.attributes?.mainImage?.data?.[0]?.attributes
+                  .formats.small.width
               }
               imageHeight={
-                dataScroll?.[1]?.attributes?.mainImage?.data?.[0]?.attributes?.formats
-                  .small.height
+                dataScroll?.[1]?.attributes?.mainImage?.data?.[0]?.attributes
+                  ?.formats.small.height
               }
               imageClassNameBgSecond="absolute -top-[70px] -right-[70px] w-[200px] h-[200px] rotate-180 scale-x-[-1]"
             />
@@ -122,12 +123,12 @@ const Professional = () => {
                 ).href
               }
               imageWidth={
-                dataScroll?.[2]?.attributes?.mainImage?.data?.[0].attributes.formats
-                  .small.width
+                dataScroll?.[2]?.attributes?.mainImage?.data?.[0].attributes
+                  .formats.small.width
               }
               imageHeight={
-                dataScroll?.[2]?.attributes?.mainImage?.data?.[0].attributes.formats
-                  .small.height
+                dataScroll?.[2]?.attributes?.mainImage?.data?.[0].attributes
+                  .formats.small.height
               }
               className="absolute w-full h-full bottom-0 left-10 "
               imageClassName=" absolute w-[70%]  bottom-0 -translate-x-1/2 left-[50%]"
@@ -144,12 +145,12 @@ const Professional = () => {
               list={heroProfessional?.listHeroPost[0].listSub}
               imageBg={leaf}
               imageWidth={
-                dataScroll?.[3]?.attributes?.mainImage.data?.[0].attributes.formats
-                  .small.width
+                dataScroll?.[3]?.attributes?.mainImage.data?.[0].attributes
+                  .formats.small.width
               }
               imageHeight={
-                dataScroll?.[3]?.attributes?.mainImage.data?.[0].attributes.formats
-                  .small.height
+                dataScroll?.[3]?.attributes?.mainImage.data?.[0].attributes
+                  .formats.small.height
               }
               imageClassNameBg="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
               image={

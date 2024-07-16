@@ -30,8 +30,6 @@ export const CardPosts = ({
   //sorting lists
   const sortingList = listCard?.sort((a: any, b: any) => a.id - b.id);
 
-
-  
   useEffect(() => {
     choosePatnName(typePath);
   }, []);
@@ -46,7 +44,6 @@ export const CardPosts = ({
             const [dataOwner] = item.attributes.iconOwner.data;
             const ownerSrc = new URL(dataOwner.attributes.url, baseURLImage)
               .href;
-
             return (
               <li
                 onClick={() => {
