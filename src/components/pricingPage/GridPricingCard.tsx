@@ -27,10 +27,12 @@ export const GridPricingCard = ({
   dataPricing = [],
 }: GridPricingCardProps) => {
   const [titlePricing, setTitlePricing] = useState<string[]>([]);
+  const [price, setPrice] = useState<string[]>([]);
 
   useEffect(() => {
     if (dataPricing.length > 0) {
       setTitlePricing(dataPricing.map((item) => item.title));
+      setPrice(dataPricing.map((item) => item.price));
     }
   }, [dataPricing]);
 
@@ -55,6 +57,7 @@ export const GridPricingCard = ({
                 textRecomended={listChangePricing}
                 isRescomennded={isRescomennded}
                 titlePricing={titlePricing}
+                currentPrices={price}
               />
             );
           })}

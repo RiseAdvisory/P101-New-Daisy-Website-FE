@@ -73,7 +73,7 @@ const Business = () => {
               imageClassNameBg="absolute -bottom-[40px] left-0 w-[340px] h-[320px] "
               image={
                 new URL(
-                  dataScroll?.[0].attributes.mainImage.data[0].attributes.formats.small.url,
+                  dataScroll?.[0]?.attributes?.mainImage?.data?.[0].attributes.formats.small.url,
                   baseURLImage,
                 ).href
               }
@@ -82,12 +82,12 @@ const Business = () => {
               desription={heroBusiness?.listHeroPost[0].description}
               imageClassName={`absolute !w-[250px]  bottom-0  left-1/2 -translate-x-1/2 h-[310px]`}
               imageWidth={
-                dataScroll?.[0].attributes.mainImage.data[0].attributes.formats
-                  .small.width
+                dataScroll?.[0]?.attributes?.mainImage?.data?.[0]?.attributes
+                  ?.formats.small.width
               }
               imageHeight={
-                dataScroll?.[0].attributes.mainImage.data[0].attributes.formats
-                  .small.height
+                dataScroll?.[0]?.attributes.mainImage.data?.[0].attributes
+                  .formats.small.height
               }
               list={heroBusiness?.listHeroPost[0].listSub}
             />
@@ -99,7 +99,7 @@ const Business = () => {
               imageClassNameBg="absolute -bottom-[40px] left-0 w-[300px] h-[300px]"
               image={
                 new URL(
-                  dataScroll?.[1].attributes.mainImage.data[0].attributes.formats.small.url,
+                  dataScroll?.[1]?.attributes.mainImage.data?.[0].attributes.formats.small.url,
                   baseURLImage,
                 ).href
               }
@@ -112,12 +112,12 @@ const Business = () => {
               subtitle={heroBusiness?.listHeroPost[1].title}
               list={heroBusiness?.listHeroPost[1].listSub}
               imageWidth={
-                dataScroll?.[1].attributes.mainImage.data[0].attributes.formats
-                  .small.width
+                dataScroll?.[1]?.attributes.mainImage.data?.[0].attributes
+                  .formats.small.width
               }
               imageHeight={
-                dataScroll?.[1].attributes.mainImage.data[0].attributes.formats
-                  .small.height
+                dataScroll?.[1]?.attributes.mainImage.data?.[0].attributes
+                  .formats.small.height
               }
             />
             <div className="px-4 bg-primary">
@@ -128,7 +128,7 @@ const Business = () => {
               imageClassNameBg="absolute -bottom-[100px] -right-[180px] w-[300px] h-[300px] rotate-[60deg]"
               image={
                 new URL(
-                  dataScroll?.[2].attributes.mainImage.data[0].attributes.formats.small.url,
+                  dataScroll?.[2]?.attributes?.mainImage?.data?.[0]?.attributes?.formats?.small.url,
                   baseURLImage,
                 ).href
               }
@@ -141,12 +141,12 @@ const Business = () => {
               subtitle={heroBusiness?.listHeroPost[2].title}
               list={heroBusiness?.listHeroPost[2].listSub}
               imageWidth={
-                dataScroll?.[2].attributes.mainImage.data[0].attributes.formats
-                  .small.width
+                dataScroll?.[2]?.attributes.mainImage.data?.[0].attributes
+                  .formats.small.width
               }
               imageHeight={
-                dataScroll?.[2].attributes.mainImage.data[0].attributes.formats
-                  .small.height
+                dataScroll?.[2]?.attributes.mainImage.data?.[0].attributes
+                  .formats.small.height
               }
             />
             <div className="px-4 bg-primary">
@@ -157,7 +157,7 @@ const Business = () => {
               imageClassNameBg="absolute -top-[70px] left-[-100px] w-[200px] h-[200px] rotate-180"
               image={
                 new URL(
-                  dataScroll?.[3].attributes.mainImage.data[0].attributes.formats.small.url,
+                  dataScroll?.[3]?.attributes.mainImage.data?.[0].attributes.formats.small.url,
                   baseURLImage,
                 ).href
               }
@@ -168,12 +168,12 @@ const Business = () => {
               subtitle={heroBusiness?.listHeroPost[0].title}
               list={heroBusiness?.listHeroPost[0].listSub}
               imageWidth={
-                dataScroll?.[0].attributes.mainImage.data[0].attributes.formats
-                  .small.width
+                dataScroll?.[0]?.attributes.mainImage.data?.[0].attributes
+                  .formats.small.width
               }
               imageHeight={
-                dataScroll?.[0].attributes.mainImage.data[0].attributes.formats
-                  .small.height
+                dataScroll?.[0]?.attributes.mainImage.data?.[0].attributes
+                  .formats.small.height
               }
             />
           </div>

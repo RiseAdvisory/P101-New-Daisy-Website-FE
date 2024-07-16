@@ -6,6 +6,7 @@ import { OptionPricing } from '@/assets/icons/optionPricing/optionPricing';
 import { OtherOptionPricing } from './OtherOptionPricing';
 import { cn } from '@/lib/utils';
 import { useCalculate } from '@/store/calculateResult';
+import { useCurrentPlan } from '@/store/storeCurrentPlan';
 
 export const ItemCardPricing = ({
   title,
@@ -20,6 +21,7 @@ export const ItemCardPricing = ({
   isRescomennded,
   textRecomended,
   titlePricing,
+  currentPrices,
 }: {
   title: string;
   subtitle: string;
@@ -33,11 +35,12 @@ export const ItemCardPricing = ({
   isRescomennded: boolean;
   textRecomended: any;
   titlePricing: string[];
+  currentPrices: string[];
 }) => {
   const [showAll, setShowAll] = useState(false);
   const [currentPlanBus, setCurrentPlanBus] = useState('');
   const [currentPlanProf, setCurrentPlanProf] = useState('');
-
+  const { changePlan, setPricing } = useCurrentPlan();
   const { staff, branch } = useCalculate();
   const currentPrice = !chechedAnnualy ? price : priceYear;
   const isRecommended = title === currentPlanBus;
@@ -45,18 +48,25 @@ export const ItemCardPricing = ({
   useEffect(() => {
     if (staff <= 3 || branch <= 1) {
       setCurrentPlanBus(titlePricing[0]);
+      changePlan(titlePricing[0]);
+      setPricing(currentPrices[0]);
       setCurrentPlanProf('Starter');
     }
     if ((staff > 3 && staff <= 8) || (branch > 1 && branch < 3)) {
       setCurrentPlanBus(titlePricing[1]);
+      changePlan(titlePricing[1]);
+      setPricing(currentPrices[1]);
+
       setCurrentPlanProf('Professional');
     }
     if (staff > 8 || branch > 5) {
       setCurrentPlanBus(titlePricing[2]);
+      changePlan(titlePricing[2]);
+      setPricing(currentPrices[2]);
+
       setCurrentPlanProf('Elite');
     }
   }, [staff, branch]);
-
   return (
     <>
       <li
