@@ -23,11 +23,14 @@ export const ResultCalculate = ({
   const { branch, country, staff } = useCalculate();
 
   const { plan, price } = useCurrentPlan();
-  const staffCount = staff * 10;
-  const branchCount = branch * 25;
-  const countryCount = country * 50;
+  const staffCount = staff > 1 ? (staff - 1) * 10 : 0;
+  const branchCount = branch > 1 ? (branch - 1) * 25 : 0;
+  const countryCount = country > 1 ? (country - 1) * 50 : 0;
+  const totalCount = staffCount + branchCount + countryCount;
 
-  let cleanedAmount = price.replace('$', '');
+  console.log(`Total count: ${totalCount}`);
+
+  let cleanedAmount = price ? price.replace('$', '') : 60;
 
   return (
     <div ref={calculationFormRef}>
@@ -138,7 +141,7 @@ export const ResultCalculate = ({
                   })}
                 >
                   <p className="ltr:font-montserrat font-semibold text-[20px] leading-[30px]">
-                    ${(+cleanedAmount + staffCount) * 10}
+                    ${(+cleanedAmount + staffCount + branchCount + countryCount) * 10}
                     <span className="ltr:font-montserrat text-[#455150] font-normal  md:text-[16px] md:leading-[18px] ml-2">
                       <span className="hidden md:inline">
                         {dataPricing?.resetCalculation?.per}

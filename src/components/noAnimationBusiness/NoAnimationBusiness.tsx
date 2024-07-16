@@ -18,6 +18,7 @@ export const NoScrollingAnimationBusiness = ({
   list,
   imageWidth,
   imageHeight,
+  sizeImage,
 }: {
   image?: any;
   title: string;
@@ -32,6 +33,7 @@ export const NoScrollingAnimationBusiness = ({
   list: string[];
   imageWidth: any;
   imageHeight: any;
+  sizeImage?: any;
 }) => {
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -71,6 +73,7 @@ export const NoScrollingAnimationBusiness = ({
             className={imageClassName}
             width={imageWidth}
             height={imageHeight}
+            style={sizeImage}
           />
         )}
       </div>

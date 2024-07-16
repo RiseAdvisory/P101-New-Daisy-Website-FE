@@ -68,6 +68,7 @@ const Professional = () => {
               }
               className="absolute w-full h-full bottom-0 left-10"
               imageClassName=" absolute w-[80%]   bottom-0 translate-x-1/2 right-1/2"
+              sizeImage={{ width: '230px', height: '290px' }}
               imageWidth={
                 dataScroll?.[0]?.attributes?.mainImage?.data?.[0]?.attributes
                   ?.formats?.small?.width
@@ -94,8 +95,9 @@ const Professional = () => {
                 ).href
               }
               className="absolute w-full h-full bottom-0 left-10 "
-              imageClassName=" absolute w-[300px]  bottom-0  -translate-x-1/2 left-[50%] h-[300px]"
+              imageClassName=" absolute !w-[230px]  bottom-0  -translate-x-1/2 left-[50%] !h-[250px]"
               imageBgTwo={leaf}
+              sizeImage={{ width: '230px', height: '290px' }}
               imageWidth={
                 dataScroll?.[1]?.attributes?.mainImage?.data?.[0]?.attributes
                   .formats.small.width
@@ -114,6 +116,7 @@ const Professional = () => {
               title={heroProfessional?.listHeroPost[2].subtitle}
               desription={heroProfessional?.listHeroPost[2].description}
               list={heroProfessional?.listHeroPost[2].listSub}
+              sizeImage={{ width: '230px', height: '290px' }}
               imageBg={leaf}
               imageClassNameBg="absolute -bottom-[100px] -right-[180px] w-[300px] h-[300px] rotate-[60deg]"
               image={
@@ -143,6 +146,7 @@ const Professional = () => {
               title={heroProfessional?.listHeroPost[0].subtitle}
               desription={heroProfessional?.listHeroPost[0].description}
               list={heroProfessional?.listHeroPost[0].listSub}
+              sizeImage={{ width: '230px', height: '290px' }}
               imageBg={leaf}
               imageWidth={
                 dataScroll?.[3]?.attributes?.mainImage.data?.[0].attributes

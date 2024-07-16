@@ -96,7 +96,7 @@ const Customer = () => {
                   .small.height
               }
               className="absolute w-full h-full bottom-0 left-10 "
-              imageClassName=" absolute w-[260px] h-[300px] top-0  -translate-x-1/2 left-[50%]"
+              imageClassName=" absolute w-[230px] h-[300px] top-0  -translate-x-1/2 left-[50%]"
             />
             <div className="px-4 bg-primary">
               <Separator className="bg-[#586968]  border-none" />
