@@ -28,7 +28,6 @@ export const ResultCalculate = ({
   const countryCount = country > 1 ? (country - 1) * 50 : 0;
   const totalCount = staffCount + branchCount + countryCount;
 
-  console.log(`Total count: ${totalCount}`);
 
   let cleanedAmount = price ? price.replace('$', '') : 60;
 
@@ -141,7 +140,12 @@ export const ResultCalculate = ({
                   })}
                 >
                   <p className="ltr:font-montserrat font-semibold text-[20px] leading-[30px]">
-                    ${(+cleanedAmount + staffCount + branchCount + countryCount) * 10}
+                    $
+                    {(+cleanedAmount +
+                      staffCount +
+                      branchCount +
+                      countryCount) *
+                      10}
                     <span className="ltr:font-montserrat text-[#455150] font-normal  md:text-[16px] md:leading-[18px] ml-2">
                       <span className="hidden md:inline">
                         {dataPricing?.resetCalculation?.per}
