@@ -30,18 +30,20 @@ export const CardPosts = ({
   //sorting lists
 
   const sortingList = listCard?.sort(
-    (a: any, b: any) => a.attributes.sortId - b.attributes.sortId,
+    (a: any, b: any) => b.attributes.sortId - a.attributes.sortId,
   );
 
   useEffect(() => {
     choosePatnName(typePath);
   }, []);
+  console.log(sortingList);
   return (
     <div className="bg-[#F8F5F3]">
       <div className="h-[230px] md:h-[240px] bg-primary"></div>
       <ul className="bg-[#F8F5F3] px-4 space-y-8 pb-[28px] md:pb-[140px] translate-y-[-231px] md:translate-y-[-241px] bg-transparent -mb-[230px] md:grid md:grid-cols-3 md:gap-6 md:space-y-0">
         {listCard &&
           sortingList.map((item: any, index: number) => {
+
             const [data] = item.attributes.image.data;
             const imagePosts = new URL(data.attributes.url, baseURLImage).href;
             const [dataOwner] = item.attributes.iconOwner.data;
