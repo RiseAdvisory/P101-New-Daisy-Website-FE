@@ -30,12 +30,13 @@ export const CardPosts = ({
   //sorting lists
 
   const sortingList = listCard?.sort(
-    (a: any, b: any) => a.attributes.sortId - b.attributes.sortId,
+    (a: any, b: any) => b.attributes.sortId - a.attributes.sortId,
   );
 
   useEffect(() => {
     choosePatnName(typePath);
   }, []);
+
   return (
     <div className="bg-[#F8F5F3]">
       <div className="h-[230px] md:h-[240px] bg-primary"></div>

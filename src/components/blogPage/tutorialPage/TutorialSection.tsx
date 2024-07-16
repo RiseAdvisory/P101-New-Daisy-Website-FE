@@ -69,7 +69,7 @@ export const TutorialSection = ({
     };
   }, []);
   const sortingListDataTabs = listDataTabs?.sort(
-    (a: any, b: any) => a.attributes.sortId - b.attributes.sortId,
+    (a: any, b: any) => b.attributes.sortId - a.attributes.sortId,
   );
 
   return (

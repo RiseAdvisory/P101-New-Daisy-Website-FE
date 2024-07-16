@@ -28,7 +28,6 @@ export const ResultCalculate = ({
   const countryCount = country > 1 ? (country - 1) * 50 : 0;
   const totalCount = staffCount + branchCount + countryCount;
 
-
   let cleanedAmount = price ? price.replace('$', '') : 60;
 
   return (
