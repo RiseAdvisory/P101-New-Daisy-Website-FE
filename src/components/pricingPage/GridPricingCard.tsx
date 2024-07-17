@@ -17,6 +17,7 @@ interface GridPricingCardProps {
   activePricingPage: string;
   isRescomennded: boolean;
   dataPricing: PricingData[];
+  refGridCardRef: any;
 }
 
 export const GridPricingCard = ({
@@ -25,6 +26,7 @@ export const GridPricingCard = ({
   activePricingPage,
   isRescomennded,
   dataPricing = [],
+  refGridCardRef,
 }: GridPricingCardProps) => {
   const [titlePricing, setTitlePricing] = useState<string[]>([]);
   const [price, setPrice] = useState<string[]>([]);
@@ -44,6 +46,7 @@ export const GridPricingCard = ({
           dataPricing.map((item: any, index: number) => {
             return (
               <ItemCardPricing
+              refGridCardRef={refGridCardRef}
                 activePricingPage={activePricingPage}
                 chechedAnnualy={chechedAnnualy}
                 key={index}

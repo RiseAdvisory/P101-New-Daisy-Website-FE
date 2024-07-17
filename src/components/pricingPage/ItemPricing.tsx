@@ -22,6 +22,7 @@ export const ItemCardPricing = ({
   textRecomended,
   titlePricing,
   currentPrices,
+  refGridCardRef,
 }: {
   title: string;
   subtitle: string;
@@ -36,6 +37,7 @@ export const ItemCardPricing = ({
   textRecomended: any;
   titlePricing: string[];
   currentPrices: string[];
+  refGridCardRef: any;
 }) => {
   const [showAll, setShowAll] = useState(false);
   const [currentPlanBus, setCurrentPlanBus] = useState('');
@@ -70,13 +72,20 @@ export const ItemCardPricing = ({
   return (
     <>
       <li
+        // ref={isRecommended && isRescomennded ? refGridCardRef : null}
         className={cn(
           'flex bg-white flex-col justify-center items-center text-center first:mt-0 mt-10 md:mt-0 pt-10 md:pt-10 border rounded-[16px] relative overflow-hidden first-border-[2px] ',
-          { 'first:border-[#A67F6B]': isRecommended && isRescomennded },
+          {
+            'first:border-[#A67F6B] scroll-mt-[1000px]':
+              isRecommended && isRescomennded,
+          },
         )}
       >
         {isRecommended && isRescomennded && (
-          <p className="absolute first:block hidden top-0 left-0 right-0 text-center text-[#A67F6B] bg-[#EDE5E1]">
+          <p
+            className="absolute first:block hidden top-0 left-0 right-0 text-center text-[#A67F6B] bg-[#EDE5E1] "
+            ref={refGridCardRef}
+          >
             {textRecomended?.textRecomended}
           </p>
         )}

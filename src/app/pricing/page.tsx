@@ -96,8 +96,9 @@ const Pricing = () => {
           </p>
         </div>
       </div>
-      <div ref={gridCardRef} className="md:scroll-mt-[100px] scroll-mt-[120px]">
+      <div ref={gridCardRef} className="md:scroll-mt-[150px]">
         <GridPricingCard
+          refGridCardRef={gridCardRef}
           isRescomennded={isRescomennded}
           activePricingPage={activePricingPage}
           chechedAnnualy={checkedMonth}
