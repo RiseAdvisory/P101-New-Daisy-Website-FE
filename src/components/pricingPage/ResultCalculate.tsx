@@ -29,14 +29,13 @@ export const ResultCalculate = ({
   const totalCount = staffCount + branchCount + countryCount;
 
   let cleanedAmount = price ? price.replace('$', '') : 60;
-
   return (
-    <div ref={calculationFormRef}>
+    <div ref={calculationFormRef} className=" scroll-mt-[300px]">
       <div className="mt-6 md:p-6 md:border md:rounded-[16px]">
         <div className="md:flex md:justify-between md:items-center ">
           <div className="flex justify-between md:justify-start">
             <h2 className="ltr:font-montserrat font-semibold text-[#242424] text-[16px] leading-6">
-              {dataPricing?.resetCalculation?.Plan}
+              {plan}
             </h2>
             <p className="bg-[#E9ECF7] px-[9px] py-[4px] ltr:font-inter text-[#2543AD] rounded-[20px] w-fit text-[12px] leading-[12px] font-medium self-center ltr:md:ml-3 rtl:md:mr-3">
               {dataPricing?.resetCalculation?.tryPeriod}
@@ -61,7 +60,7 @@ export const ResultCalculate = ({
                   <li key={index} className="flex items-center ">
                     <CheckIconPricing style="w-[14px] h-[14px]" />
                     <span className="text-[#455150] ltr:font-montserrat font-medium ml-2">
-                      1{item}
+                      {item}
                     </span>
                   </li>
                 );
