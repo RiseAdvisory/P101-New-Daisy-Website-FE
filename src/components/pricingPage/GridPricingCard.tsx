@@ -46,7 +46,7 @@ export const GridPricingCard = ({
           dataPricing.map((item: any, index: number) => {
             return (
               <ItemCardPricing
-              refGridCardRef={refGridCardRef}
+                refGridCardRef={refGridCardRef}
                 activePricingPage={activePricingPage}
                 chechedAnnualy={chechedAnnualy}
                 key={index}
