@@ -48,7 +48,7 @@ export const Header = () => {
       setListLanguage(dataLang?.attributes?.listLanguage);
       const [data] = response?.data?.data;
       const [dataToggle] = responseToggle?.data?.data;
-      console.log(dataToggle, 'DATA TOGGLE')
+      console.log(dataToggle, 'DATA TOGGLE');
       setGetTheApp(data?.attributes?.getTheApp);
       setOptionsToggle(dataToggle?.attributes?.optionsToogle);
       setOptionsToggleFeatures(dataToggle?.attributes?.optionsTooglseFeatures);
@@ -137,7 +137,10 @@ export const Header = () => {
 
                     const currentPage = localStorage.getItem('activePage');
 
-                    if(item.title  === 'Pricing' && currentPage === '/customer'){
+                    if (
+                      item.title === 'Pricing' &&
+                      currentPage === '/customer'
+                    ) {
                       return;
                     }
 
