@@ -74,16 +74,12 @@ export const MobileMenu = () => {
           <ul>
             {listNav?.listNavigation &&
               listNav?.listNavigation.map((item: any, index: number) => {
-                
                 let href = item.nav;
                 const currentPage = localStorage.getItem('activePage');
-                if (
-                  href === '/pricing' &&
-                  currentPage === '/customer'
-                ) {
+                if (href === '/pricing' && currentPage === '/customer') {
                   return;
                 }
-                
+
                 return (
                   <li key={index}>
                     <div className="flex rtl:flex-row-reverse justify-between items-center py-4 rtl:font-cairo ">

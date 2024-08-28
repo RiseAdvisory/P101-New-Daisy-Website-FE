@@ -63,7 +63,7 @@ const ToggleButton = ({ className }: { className?: string }) => {
       localStorage.setItem('activePage', active);
     }
   }, [active]);
-  console.log(active, 'activePage')
+  console.log(active, 'activePage');
 
   const handleClick = (path: string) => {
     if (path.startsWith('/features/business')) setActive('business');
@@ -104,9 +104,7 @@ const ToggleButton = ({ className }: { className?: string }) => {
     >
       {dataList &&
         dataList.map((option: { path: string; label: string }) => {
-          
           return (
-            
             <Button
               key={option.path}
               onClick={() => {
