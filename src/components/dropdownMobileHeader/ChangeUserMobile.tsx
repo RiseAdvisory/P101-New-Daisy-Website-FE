@@ -119,8 +119,6 @@ export const ChangeUserTypeMobile = ({
   }, [dataList, lang]);
   const { changePage } = useChangePage();
 
-  console.log(list, 'LIST');
-
   return (
     <DropdownMenu open={open} onOpenChange={setOpen} modal={false}>
       <DropdownMenuTrigger

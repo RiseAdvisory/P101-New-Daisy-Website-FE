@@ -24,6 +24,7 @@ export const ExperienceDaisy = () => {
           `/experience-daisies?locale=${lang}`,
         );
         setExperienceDaisy(response?.data?.data?.[0]?.attributes);
+        console.log(response, 'responseExperience');
       } catch (error) {
         console.error(error);
       }
@@ -31,6 +32,7 @@ export const ExperienceDaisy = () => {
   }, [lang]);
   return (
     <div className="md:bg-custom-gradient md:pt-[150px]">
+      111
       <div className="pt-[80px] px-4 md:flex relative bg-primary md:mx-[63px] md:rounded-[16px]">
         <div className="bg-primaryBtn w-full rounded-[9px] items-center flex justify-center overflow-hidden md:hidden relative">
           <Image

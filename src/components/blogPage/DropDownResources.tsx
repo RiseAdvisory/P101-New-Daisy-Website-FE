@@ -12,6 +12,7 @@ import { usePathname } from 'next/navigation';
 import { resourcesDropDownList } from '@/lib/constants/resources/resourcesList';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
+import { useChangePage } from '@/store/currentPage';
 
 interface IPropsResources {
   openBlog: boolean;
@@ -34,17 +35,38 @@ export const DropdownResources = ({
   const handleMouseLeave = () => {
     setCurrentImage(resourcesDropDownList[3]);
   };
+
   const path = usePathname();
   const { lang } = useChangeLanguage();
+  const currentPage = localStorage.getItem('activePage');
+
   useEffect(() => {
+    let endpointResourseLink = 'resource-list-business-types';
+
+    if (currentPage === '/customer') {
+      endpointResourseLink = 'resource-list-customer-types';
+    }
+    if (currentPage === '/business') {
+      endpointResourseLink = 'resource-list-business-types';
+    }
+    if (currentPage === '/professional') {
+      endpointResourseLink = 'resource-list-independent-types';
+    }
+
     (async () => {
       const response = await axiosInstance.get(
-        `/resources-lists?locale=${lang}`,
+        `/${endpointResourseLink}?locale=${lang}`,
       );
       const [data] = response?.data?.data;
       setListResources(data?.attributes);
     })();
-  }, [lang]);
+  }, [lang, currentPage]);
+
+  // useEffect(()=>{
+  //   console.log(localStorage.getItem('activePage'), 99999999)
+  //   setCurrentPage(localStorage.getItem('activePage'));
+  // }, [])
+
   return (
     <DropdownMenu
       open={openBlog}
