@@ -5,7 +5,8 @@ import { cn } from '@/lib/utils';
 import { baseURLImage } from '@/helpers/axiosConfig';
 
 const LockerImageItem = ({ isActive, imageUrl, item }: any) => {
-  const mainImg = item?.attributes?.mainImage?.data?.[0]?.attributes?.formats?.large?.url;
+  const mainImg =
+    item?.attributes?.mainImage?.data?.[0]?.attributes?.formats?.large?.url;
   const firstBg = item?.attributes?.firstBg?.data?.[0]?.attributes?.url;
   const secondBg = item?.attributes?.secondBg?.data?.[0]?.attributes?.url;
 
