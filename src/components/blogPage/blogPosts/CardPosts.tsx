@@ -44,7 +44,10 @@ export const CardPosts = ({
         {listCard &&
           sortingList.map((item: any, index: number) => {
             const [data] = item.attributes.image.data;
-            const imagePosts = new URL(data.attributes.formats.large.url, baseURLImage).href;
+            const imagePosts = new URL(
+              data.attributes.formats.large.url,
+              baseURLImage,
+            ).href;
             const [dataOwner] = item.attributes.iconOwner.data;
             const ownerSrc = new URL(dataOwner.attributes.url, baseURLImage)
               .href;

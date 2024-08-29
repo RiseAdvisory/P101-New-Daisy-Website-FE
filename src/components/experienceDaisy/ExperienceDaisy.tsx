@@ -16,20 +16,36 @@ import { useChangeLanguage } from '@/store/language';
 export const ExperienceDaisy = () => {
   const [experienceDaisy, setExperienceDaisy] = useState<any>();
   const { lang } = useChangeLanguage();
+  const currentPage = localStorage.getItem('activePage');
 
   useEffect(() => {
+    let endpointExperienceDaisyLink = 'experience-daisy-customers';
+
+    if (currentPage === '/customer') {
+      endpointExperienceDaisyLink = 'experience-daisy-customers';
+    }
+    if (currentPage === '/business') {
+      endpointExperienceDaisyLink = 'experience-daisy-businesses';
+    }
+    if (currentPage === '/professional') {
+      endpointExperienceDaisyLink = 'experience-daisy-independents';
+    }
+    console.log(endpointExperienceDaisyLink);
+
+
     (async function getBusiness() {
       try {
         const response = await axiosInstance.get(
-          `/experience-daisies?locale=${lang}`,
+          `/${endpointExperienceDaisyLink}?populate=*&locale=${lang}`,
         );
+        console.log(response)
         setExperienceDaisy(response?.data?.data?.[0]?.attributes);
-        console.log(response?.data?.data?.[0]?.attributes, 'responseExperience');
       } catch (error) {
         console.error(error);
       }
     })();
-  }, [lang]);
+  }, [lang, currentPage]);
+
   return (
     <div className="md:bg-custom-gradient md:pt-[150px]">
       <div className="pt-[80px] px-4 md:flex relative bg-primary md:mx-[63px] md:rounded-[16px]">
@@ -64,7 +80,7 @@ export const ExperienceDaisy = () => {
         </div>
 
         <Image
-          src={doublePhoto}
+          src={experienceDaisy?.phoneImage?.data?.attributes?.url}
           alt="doublephone"
           width={336}
           height={684}

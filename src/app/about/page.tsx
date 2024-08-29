@@ -17,8 +17,8 @@ const About = () => {
         const response = await axiosInstance.get(
           `/about-pages?populate=*&locale=${lang}`,
         );
-
         setHeroAbout(response?.data?.data[0]?.attributes);
+        console.log(response?.data?.data[0]?.attributes);
       } catch (error) {
         console.error(error);
       }
