@@ -24,7 +24,7 @@ export const ExperienceDaisy = () => {
           `/experience-daisies?locale=${lang}`,
         );
         setExperienceDaisy(response?.data?.data?.[0]?.attributes);
-        // console.log(response, 'responseExperience');
+        console.log(response?.data?.data?.[0]?.attributes, 'responseExperience');
       } catch (error) {
         console.error(error);
       }
