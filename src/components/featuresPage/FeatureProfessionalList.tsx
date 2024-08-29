@@ -24,7 +24,7 @@ export const FeatureProfessionalList = ({
         {dataList &&
           dataList.map((item: any, index: number) => {
             const imageBlock = new URL(
-              item.attributes.picture.data[0].attributes.formats.small.url,
+              item.attributes.picture.data[0].attributes.formats.large.url,
               baseURLImage,
             ).href;
 

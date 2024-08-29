@@ -90,7 +90,7 @@ const Business = () => {
                         imageClassNameBg="absolute -bottom-[40px] left-0 w-[300px] h-[300px]"
                         image={
                           new URL(
-                            attributes.mainImage.data?.[0].attributes.formats.small.url,
+                            attributes.mainImage.data?.[0]?.attributes?.formats?.large?.url,
                             baseURLImage,
                           ).href
                         }

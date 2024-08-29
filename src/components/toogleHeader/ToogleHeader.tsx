@@ -63,7 +63,6 @@ const ToggleButton = ({ className }: { className?: string }) => {
       localStorage.setItem('activePage', active);
     }
   }, [active]);
-  console.log(active, 'activePage');
 
   const handleClick = (path: string) => {
     if (path.startsWith('/features/business')) setActive('business');

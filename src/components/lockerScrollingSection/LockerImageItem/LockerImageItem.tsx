@@ -18,6 +18,7 @@ const LockerImageItem = ({ isActive, imageUrl, item }: any) => {
   const styleSecondBg = item?.attributes.styleSecondBgJSON;
 
   //{styleFirstBgJSON,styleSecondBgJSON
+  // console.log('styleMainImage', item?.attributes?.mainImage?.data)
   return (
     <>
       <Image
