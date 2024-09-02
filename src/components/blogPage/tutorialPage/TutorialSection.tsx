@@ -10,7 +10,7 @@ import { TutorialComponents } from './TutorialComponents';
 import { useChangeLanguage } from '@/store/language';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useRouter } from 'next/navigation';
-
+import { useMyContext } from '@/app/MyContext';
 export const TutorialSection = ({
   setScroll,
 }: {
@@ -24,14 +24,31 @@ export const TutorialSection = ({
   const [dataTabs, setDataTabs] = useState<any>();
   const router = useRouter();
   const { lang } = useChangeLanguage();
+  const {state:currentPage,setState}= useMyContext();
 
   useEffect(() => {
+    // `/resources-tutorial-infos?locale=${lang}`
+    let endpointTutorialInfos = 'resources-tutorial-infos';
+    let endpointTutorialTabs = 'resorce-tutorial-tabs';
+    if (currentPage === '/customer') {
+      endpointTutorialInfos = 'resources-tutorial-info-customers';
+      endpointTutorialTabs = 'resource-tutorial-tab-customers'
+    }
+    if (currentPage === '/business') {
+      endpointTutorialInfos = 'resources-tutorial-info-businesses';
+      endpointTutorialTabs = 'resource-tutorial-tab-businesses'
+    }
+    if (currentPage === '/professional') {
+      endpointTutorialInfos = 'resources-tutorial-info-independents';
+      endpointTutorialTabs = 'resource-tutorial-tab-independents'
+    }
+
     (async () => {
       const tutorialInfo = await axiosInstance.get(
-        `/resources-tutorial-infos?locale=${lang}`,
+        `/${endpointTutorialInfos}?locale=${lang}`,
       );
       const response = await axiosInstance.get(
-        `/resorce-tutorial-tabs?locale=${lang}`,
+        `/${endpointTutorialTabs}?locale=${lang}`,
       );
       const [dataInfo] = tutorialInfo?.data?.data;
       const [data] = response?.data?.data;
@@ -39,7 +56,7 @@ export const TutorialSection = ({
       setDataTabs(data?.attributes);
       setTutorialInfo(dataInfo?.attributes);
     })();
-  }, [lang]);
+  }, [lang, currentPage]);
 
   useEffect(() => {
     setScroll(blockRef);

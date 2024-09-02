@@ -38,7 +38,7 @@ const LockerContainer = ({ listInfo }: { listInfo: any }) => {
   );
 
   return (
-    <div className={`${styles.locker} !hidden md:!grid `}>
+    <div className={`${styles.locker} !hidden lg:!grid `}>
       <div className={styles.locker__content}>
         {listInfo &&
           sortList.map((el: any, index: number) => {

@@ -31,7 +31,6 @@ export const Header = () => {
   const [getTheApp, setGetTheApp] = useState<any>();
   const [activePages, setActivePages] = useState<any>();
   const [listLanguage, setListLanguage] = useState<any>();
-
   const { lang, changeLanguages } = useChangeLanguage();
   const { isOpenMenu } = useOpenMenu();
   useEffect(() => {
@@ -145,6 +144,7 @@ export const Header = () => {
                     if (item.title === listHeader?.[0].title) {
                       if (typeof window !== 'undefined') {
                         const storedHref = localStorage.getItem('activePage');
+                     
                         if (storedHref) {
                           href = storedHref;
                         }

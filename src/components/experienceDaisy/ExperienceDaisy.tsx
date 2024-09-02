@@ -70,12 +70,15 @@ export const ExperienceDaisy = () => {
             //   animate={{ y: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
           >
+            <div className='h-[326px] w-[212px] '>
             <Image
-              src={phone}
+              src={experienceDaisy?.phoneImage?.data?.attributes?.url}
               alt="phone"
               width={212}
-              className="pt-[65px] relative"
+              height={326}
+              className="pt-[65px] relative "
             />
+            </div>
           </motion.div>
         </div>
 

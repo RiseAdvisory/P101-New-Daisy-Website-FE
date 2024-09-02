@@ -26,6 +26,7 @@ const Legal = () => {
       setDataLegal(data?.attributes);
     })();
   }, [lang]);
+  console.log(dataLeagal,'legalData')
   return (
     <div className="w-full">
       <HeroBlogPage />

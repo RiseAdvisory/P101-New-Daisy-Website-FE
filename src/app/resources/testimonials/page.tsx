@@ -6,20 +6,33 @@ import Separator from '@/components/separator/Separator';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
-
+import { useMyContext } from '@/app/MyContext';
 const CustomerTestimonials = () => {
   const [dataTestimonials, setDataTestimonials] = useState<any>();
   const { lang } = useChangeLanguage();
+  const {state:currentPage,setState}= useMyContext();
 
   useEffect(() => {
+    let endpointTutorialInfos = 'resources-customer-testimonials';
+
+    if (currentPage === '/customer') {
+      endpointTutorialInfos = 'resources-testimonial-customers';
+    }
+    if (currentPage === '/business') {
+      endpointTutorialInfos = 'resources-testimonial-businesses';
+    }
+    if (currentPage === '/professional') {
+      endpointTutorialInfos = 'resources-testimonial-independents';
+    }
+
     (async () => {
       const response = await axiosInstance(
-        `/resources-customer-testimonials?locale=${lang}`,
+        `/${endpointTutorialInfos}?locale=${lang}`,
       );
       const [data] = response?.data?.data;
       setDataTestimonials(data?.attributes);
     })();
-  }, [lang]);
+  }, [lang, currentPage]);
   return (
     <>
       <HeroPage
