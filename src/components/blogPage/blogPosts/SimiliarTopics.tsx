@@ -7,6 +7,7 @@ import axiosInstance, { baseURLImage } from '@/helpers/axiosConfig';
 import { useRouter } from 'next/navigation';
 import { usePostStore } from '@/store/post';
 import { useChangeLanguage } from '@/store/language';
+import { useMyContext } from '@/app/MyContext';
 
 export const SimiliarTopick = ({ titleSimilar }: { titleSimilar: string }) => {
   const [listCard, setListCards] = useState<any>();
@@ -14,11 +15,24 @@ export const SimiliarTopick = ({ titleSimilar }: { titleSimilar: string }) => {
   const router = useRouter();
   const { handlePost } = usePostStore();
   const { lang } = useChangeLanguage();
+  const {state:currentPage,setState}= useMyContext();
+
 
   useEffect(() => {
+    let endpointExperienceDaisyLink = 'resources-blog-post-customers';
+    if (currentPage === '/customer') {
+      endpointExperienceDaisyLink = 'resources-blog-post-customers';
+    }
+    if (currentPage === '/business') {
+      endpointExperienceDaisyLink = 'resources-blog-post-businesses';
+    }
+    if (currentPage === '/professional') {
+      endpointExperienceDaisyLink = 'resources-blog-post-independents';
+    }
+
     (async () => {
       const responseList = await axiosInstance.get(
-        `/resources-blog-posts?populate=*&locale=${lang}`,
+        `/${endpointExperienceDaisyLink}?populate=*&locale=${lang}`,
       );
       setListCards(responseList?.data?.data);
     })();

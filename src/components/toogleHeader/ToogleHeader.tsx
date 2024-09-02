@@ -7,6 +7,7 @@ import { Button } from '../ui/button';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useChangePage } from '@/store/currentPage';
+import { useMyContext } from '@/app/MyContext';
 
 const ToggleButton = ({ className }: { className?: string }) => {
   const pathname = usePathname();
@@ -14,7 +15,8 @@ const ToggleButton = ({ className }: { className?: string }) => {
   const [active, setActive] = useState('');
   const [dataList, setDataList] = useState<any>();
   const { lang } = useChangeLanguage();
-
+  const {state,setState}= useMyContext();
+  
   useEffect(() => {
     (async () => {
       const response = await axiosInstance.get(
@@ -58,13 +60,15 @@ const ToggleButton = ({ className }: { className?: string }) => {
     }
   }, [pathname]);
 
-  useEffect(() => {
+  useEffect(() => { 
+     setState(active)
     if (typeof window !== 'undefined' && active) {
       localStorage.setItem('activePage', active);
     }
   }, [active]);
 
   const handleClick = (path: string) => {
+
     if (path.startsWith('/features/business')) setActive('business');
     if (path.startsWith('/features/customer')) setActive('customer');
     if (path.startsWith('/features/professional')) setActive('professional');
@@ -107,7 +111,9 @@ const ToggleButton = ({ className }: { className?: string }) => {
             <Button
               key={option.path}
               onClick={() => {
+               
                 handleClick(option.path), changePage(option.path);
+                
               }}
               className={clsx(
                 'px-6 rounded-lg font-semibold cursor-pointer bg-transparent',

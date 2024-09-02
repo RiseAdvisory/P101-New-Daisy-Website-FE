@@ -3,7 +3,7 @@ import axiosInstance, { baseURLImage } from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-
+import { useMyContext } from '@/app/MyContext';
 type Testimonial = {
   attributes: {
     iconOwner: {
@@ -25,20 +25,33 @@ export const TestimonialsCustomerList = ({
 }) => {
   const [listTestimonials, setListTestimonials] = useState([]);
   const [visibleCount, setVisibleCount] = useState(9);
+  const {state:currentPage,setState}= useMyContext();
 
   const { lang } = useChangeLanguage();
   useEffect(() => {
+    //resources-testimonials
+    let endpointTutorialInfos = 'resources-testimonial-user-customers';
+    if (currentPage === '/customer') {
+      endpointTutorialInfos = 'resources-testimonial-user-customers';
+    }
+    if (currentPage === '/business') {
+      endpointTutorialInfos = 'resources-testimonial-user-businesses';
+    }
+    if (currentPage === '/professional') {
+      endpointTutorialInfos = 'resources-testimonial-user-independents';
+    }
+
     (async () => {
       try {
         const response = await axiosInstance.get(
-          `/resources-testimonials?populate=*&locale=${lang}`,
+          `/${endpointTutorialInfos}?populate=*&locale=${lang}`,
         );
         setListTestimonials(response?.data?.data || []);
       } catch (error) {
         console.log(error);
       }
     })();
-  }, [lang]);
+  }, [lang, currentPage]);
 
   const loadMoreTestimonials = () => {
     setVisibleCount((prevCount) => prevCount + 3);

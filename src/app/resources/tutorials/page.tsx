@@ -1,4 +1,5 @@
-'use client';
+"use client"
+import { useMyContext } from '@/app/MyContext';
 import { TutorialSection } from '@/components/blogPage/tutorialPage/TutorialSection';
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import { TabsTutorials } from '@/components/tabsTutorials/TabsTutorials';
@@ -9,18 +10,35 @@ import { useEffect, useState } from 'react';
 const Tutorials = () => {
   const [scroll, setScroll] = useState(null);
   const [dataTutorials, setDataTutorials] = useState<any>();
-
   const { lang } = useChangeLanguage();
+  const {state:currentPage,setState}= useMyContext();
+
 
   useEffect(() => {
+    
+    let endpointExperienceDaisyLink = '';
+
+    if (currentPage === '/customer') {
+      endpointExperienceDaisyLink = 'resource-tutorial-customers';
+    }
+    if (currentPage === '/business') {
+      endpointExperienceDaisyLink = 'resource-tutorial-businesses';
+    }
+    if (currentPage === '/professional') {
+      endpointExperienceDaisyLink = 'resource-tutorial-independents';
+    }
+
+    console.log(currentPage);
+
     (async () => {
       const response = await axiosInstance.get(
-        `/resource-tutorials?locale=${lang}`,
+        `/${endpointExperienceDaisyLink}?locale=${lang}`,
       );
       const [data] = response?.data?.data;
       setDataTutorials(data?.attributes);
     })();
-  }, [lang]);
+  }, [lang, currentPage]);
+
   return (
     <>
       <HeroPage
