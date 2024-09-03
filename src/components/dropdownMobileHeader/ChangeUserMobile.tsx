@@ -12,6 +12,8 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useChangePage } from '@/store/currentPage';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
+import { useMyContext } from '@/app/MyContext';
+
 
 interface PropsDropDownHeader {
   state: string;
@@ -37,6 +39,7 @@ export const ChangeUserTypeMobile = ({
   const [currentPage, setCurrentPage] = useState<any>();
   const [dataList, setDataList] = useState<any>();
   const { lang } = useChangeLanguage();
+  const { userChange, setUserChange } = useMyContext();
 
   useEffect(() => {
     (async () => {
@@ -45,9 +48,10 @@ export const ChangeUserTypeMobile = ({
       );
       const [data] = response?.data?.data;
       setDataList(data?.attributes?.optionsToogle);
-      //   setCurrentPage(data?.attributes?.optionsToogle[0].label);
+        // setCurrentPage(data?.attributes?.optionsToogle[0].label);
     })();
   }, [lang]);
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const storedPath = localStorage.getItem('activePage');
@@ -67,7 +71,15 @@ export const ChangeUserTypeMobile = ({
       }
     }
   }, [pathname, router]);
+  
+  useEffect(() => {
+    setUserChange(active);
+    if (typeof window !== 'undefined' && active) {
+      localStorage.setItem('activePage', active);
+    }
+  }, [active]); //UserType
 
+  
   useEffect(() => {
     if (typeof window !== 'undefined') {
       let currentPath: string | undefined;

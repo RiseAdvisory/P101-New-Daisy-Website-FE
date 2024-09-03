@@ -30,15 +30,11 @@ export const ExperienceDaisy = () => {
     if (currentPage === '/professional') {
       endpointExperienceDaisyLink = 'experience-daisy-independents';
     }
-    console.log(endpointExperienceDaisyLink);
-
-
     (async function getBusiness() {
       try {
         const response = await axiosInstance.get(
           `/${endpointExperienceDaisyLink}?populate=*&locale=${lang}`,
         );
-        console.log(response)
         setExperienceDaisy(response?.data?.data?.[0]?.attributes);
       } catch (error) {
         console.error(error);
@@ -70,14 +66,14 @@ export const ExperienceDaisy = () => {
             //   animate={{ y: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
           >
-            <div className='h-[326px] w-[212px] '>
-            <Image
-              src={experienceDaisy?.phoneImage?.data?.attributes?.url}
-              alt="phone"
-              width={212}
-              height={326}
-              className="pt-[65px] relative "
-            />
+            <div className="h-[326px] w-[212px] ">
+              <Image
+                src={experienceDaisy?.phoneImage?.data?.attributes?.url}
+                alt="phone"
+                width={212}
+                height={326}
+                className="pt-[65px] relative "
+              />
             </div>
           </motion.div>
         </div>

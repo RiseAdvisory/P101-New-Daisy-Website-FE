@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import { useMyContext } from '@/app/MyContext';
 import { TutorialSection } from '@/components/blogPage/tutorialPage/TutorialSection';
 import { HeroPage } from '@/components/heroSection/HeroSection';
@@ -11,11 +11,9 @@ const Tutorials = () => {
   const [scroll, setScroll] = useState(null);
   const [dataTutorials, setDataTutorials] = useState<any>();
   const { lang } = useChangeLanguage();
-  const {state:currentPage,setState}= useMyContext();
-
+  const { userChange: currentPage, setUserChange } = useMyContext();
 
   useEffect(() => {
-    
     let endpointExperienceDaisyLink = '';
 
     if (currentPage === '/customer') {
@@ -28,7 +26,6 @@ const Tutorials = () => {
       endpointExperienceDaisyLink = 'resource-tutorial-independents';
     }
 
-    console.log(currentPage);
 
     (async () => {
       const response = await axiosInstance.get(

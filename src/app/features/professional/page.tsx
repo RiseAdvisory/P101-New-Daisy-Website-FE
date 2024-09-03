@@ -21,10 +21,10 @@ const Professional = () => {
         );
         setDataProfessional(response?.data?.data?.[0].attributes);
         const listProfessionalResponse = await axiosInstance.get(
-          `/features-professional-lists?populate=*&locale=${lang}`,
+          `/features-professional-list-sorts?populate=*&locale=${lang}`,
         );
         const sortedObjects = listProfessionalResponse?.data?.data?.sort(
-          (a: any, b: any) => a.id - b.id,
+          (a: any, b: any) => a.sortId - b.sortId,
         );
         setDataListProfessional(sortedObjects);
       } catch (error) {

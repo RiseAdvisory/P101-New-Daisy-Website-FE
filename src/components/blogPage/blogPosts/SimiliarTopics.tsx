@@ -15,8 +15,8 @@ export const SimiliarTopick = ({ titleSimilar }: { titleSimilar: string }) => {
   const router = useRouter();
   const { handlePost } = usePostStore();
   const { lang } = useChangeLanguage();
-  const {state:currentPage,setState}= useMyContext();
-
+  const { userChange: currentPage, setUserChange } = useMyContext();
+  console.log('endpointExperienceDaisyLink');
 
   useEffect(() => {
     let endpointExperienceDaisyLink = 'resources-blog-post-customers';
@@ -36,7 +36,8 @@ export const SimiliarTopick = ({ titleSimilar }: { titleSimilar: string }) => {
       );
       setListCards(responseList?.data?.data);
     })();
-  }, [lang]);
+  }, [lang, currentPage]);
+  
   return (
     <div className="flex flex-col justify-center items-center ">
       <h2 className="text-[#172524] text-bold text-[32px] leading-[40px] pt-28 pb-10">
