@@ -13,7 +13,7 @@ const Updates = () => {
 
   const { lang } = useChangeLanguage();
   const { chooseBreadcrumb, choosePathStrapi } = useChoosePath();
-  const {state:currentPage,setState}= useMyContext();
+  const { userChange: currentPage, setUserChange } = useMyContext();
 
   useEffect(() => {
     //hero-resources-updates
@@ -21,18 +21,17 @@ const Updates = () => {
     let endpointHeroResourseUpdates = '';
     let endpointResourseUpdates = '';
     if (currentPage === '/customer') {
-      endpointHeroResourseUpdates = 'hero-resources-update-customers'
+      endpointHeroResourseUpdates = 'hero-resources-update-customers';
       endpointResourseUpdates = 'resources-update-customers';
     }
     if (currentPage === '/business') {
-      endpointHeroResourseUpdates = 'hero-resources-update-businesses'
+      endpointHeroResourseUpdates = 'hero-resources-update-businesses';
       endpointResourseUpdates = 'resources-update-businesses';
     }
     if (currentPage === '/professional') {
-      endpointHeroResourseUpdates = 'hero-resources-update-independents'
+      endpointHeroResourseUpdates = 'hero-resources-update-independents';
       endpointResourseUpdates = 'resources-update-independents';
     }
-    console.log(endpointHeroResourseUpdates);
     (async () => {
       const response = await axiosInstance.get(
         `/${endpointHeroResourseUpdates}?locale=${lang}`,
@@ -40,28 +39,26 @@ const Updates = () => {
       const responseList = await axiosInstance.get(
         `/${endpointResourseUpdates}?populate=*&locale=${lang}`,
       );
-      console.log(responseList?.data, 'setListCards')
-      console.log(response?.data, 'setHeroUpdate')
       setListCards(responseList?.data?.data);
       setHeroUpdate(response?.data?.data[0]?.attributes);
+      choosePathStrapi(`/${endpointResourseUpdates}`);
     })();
   }, [lang, currentPage]);
 
   useEffect(() => {
     let endpointHeroResourseUpdates = 'hero-resources-updates';
     if (currentPage === '/customer') {
-      endpointHeroResourseUpdates = 'hero-resources-update-customers'
+      endpointHeroResourseUpdates = 'hero-resources-update-customers';
     }
     if (currentPage === '/business') {
-      endpointHeroResourseUpdates = 'hero-resources-update-businesses'
+      endpointHeroResourseUpdates = 'hero-resources-update-businesses';
     }
     if (currentPage === '/professional') {
-      endpointHeroResourseUpdates = 'hero-resources-update-independents'
+      endpointHeroResourseUpdates = 'hero-resources-update-independents';
     }
-    console.log(heroUpdate, 'heroUpdate');
 
     chooseBreadcrumb(heroUpdate?.breadcrumbs);
-    choosePathStrapi(`/${endpointHeroResourseUpdates}`);
+
   }, [heroUpdate, lang, currentPage]);
 
   return (
@@ -78,12 +75,8 @@ const Updates = () => {
         styleSection="pb-[100px] pt-6 px-[16px]"
         secondDescription={heroUpdate?.description}
       />
-      
-      <CardPosts
-        typePath="updates" 
-        redirect={true} 
-        listCard={listCard} 
-      />
+
+      <CardPosts typePath="updates" redirect={true} listCard={listCard} />
     </div>
   );
 };

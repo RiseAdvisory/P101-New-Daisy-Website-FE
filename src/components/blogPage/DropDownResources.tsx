@@ -39,7 +39,6 @@ export const DropdownResources = ({
   const path = usePathname();
   const { lang } = useChangeLanguage();
   const currentPage = localStorage.getItem('activePage');
-
   useEffect(() => {
     let endpointResourseLink = 'resource-list-business-types';
 
@@ -61,11 +60,6 @@ export const DropdownResources = ({
       setListResources(data?.attributes);
     })();
   }, [lang, currentPage]);
-
-  // useEffect(()=>{
-  //   console.log(localStorage.getItem('activePage'), 99999999)
-  //   setCurrentPage(localStorage.getItem('activePage'));
-  // }, [])
 
   return (
     <DropdownMenu

@@ -24,7 +24,7 @@ export const TutorialSection = ({
   const [dataTabs, setDataTabs] = useState<any>();
   const router = useRouter();
   const { lang } = useChangeLanguage();
-  const {state:currentPage,setState}= useMyContext();
+  const { userChange: currentPage, setState } = useMyContext();
 
   useEffect(() => {
     // `/resources-tutorial-infos?locale=${lang}`
@@ -32,15 +32,15 @@ export const TutorialSection = ({
     let endpointTutorialTabs = 'resorce-tutorial-tabs';
     if (currentPage === '/customer') {
       endpointTutorialInfos = 'resources-tutorial-info-customers';
-      endpointTutorialTabs = 'resource-tutorial-tab-customers'
+      endpointTutorialTabs = 'resource-tutorial-tab-customers';
     }
     if (currentPage === '/business') {
       endpointTutorialInfos = 'resources-tutorial-info-businesses';
-      endpointTutorialTabs = 'resource-tutorial-tab-businesses'
+      endpointTutorialTabs = 'resource-tutorial-tab-businesses';
     }
     if (currentPage === '/professional') {
       endpointTutorialInfos = 'resources-tutorial-info-independents';
-      endpointTutorialTabs = 'resource-tutorial-tab-independents'
+      endpointTutorialTabs = 'resource-tutorial-tab-independents';
     }
 
     (async () => {

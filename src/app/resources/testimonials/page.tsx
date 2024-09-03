@@ -7,10 +7,11 @@ import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
 import { useMyContext } from '@/app/MyContext';
+
 const CustomerTestimonials = () => {
   const [dataTestimonials, setDataTestimonials] = useState<any>();
   const { lang } = useChangeLanguage();
-  const {state:currentPage,setState}= useMyContext();
+  const { userChange: currentPage, setUserChange } = useMyContext();
 
   useEffect(() => {
     let endpointTutorialInfos = 'resources-customer-testimonials';

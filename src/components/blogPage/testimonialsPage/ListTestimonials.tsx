@@ -25,7 +25,7 @@ export const TestimonialsCustomerList = ({
 }) => {
   const [listTestimonials, setListTestimonials] = useState([]);
   const [visibleCount, setVisibleCount] = useState(9);
-  const {state:currentPage,setState}= useMyContext();
+  const { userChange: currentPage, setUserChange } = useMyContext();
 
   const { lang } = useChangeLanguage();
   useEffect(() => {

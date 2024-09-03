@@ -15,8 +15,8 @@ const ToggleButton = ({ className }: { className?: string }) => {
   const [active, setActive] = useState('');
   const [dataList, setDataList] = useState<any>();
   const { lang } = useChangeLanguage();
-  const {state,setState}= useMyContext();
-  
+  const { userChange, setUserChange } = useMyContext();
+
   useEffect(() => {
     (async () => {
       const response = await axiosInstance.get(
@@ -60,15 +60,14 @@ const ToggleButton = ({ className }: { className?: string }) => {
     }
   }, [pathname]);
 
-  useEffect(() => { 
-     setState(active)
+  useEffect(() => {
+    setUserChange(active);
     if (typeof window !== 'undefined' && active) {
       localStorage.setItem('activePage', active);
     }
-  }, [active]);
+  }, [active]); //UserType
 
   const handleClick = (path: string) => {
-
     if (path.startsWith('/features/business')) setActive('business');
     if (path.startsWith('/features/customer')) setActive('customer');
     if (path.startsWith('/features/professional')) setActive('professional');
@@ -111,9 +110,7 @@ const ToggleButton = ({ className }: { className?: string }) => {
             <Button
               key={option.path}
               onClick={() => {
-               
                 handleClick(option.path), changePage(option.path);
-                
               }}
               className={clsx(
                 'px-6 rounded-lg font-semibold cursor-pointer bg-transparent',

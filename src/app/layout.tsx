@@ -4,8 +4,7 @@ import './globals.css';
 import { Header } from '@/components/header/Header';
 import { Footer } from '@/components/footer/Footer';
 import ClientSideEffect from '@/helpers/ClientSideEffect';
-import { MyContextProvider } from './MyContext';
-
+import { MyUserTypeProvider } from './MyContext';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -45,9 +44,7 @@ export default function RootLayout({
         className={`${openSans.variable} ${montserrat.variable} ${inter.variable} ${cairo.variable} font-openSans rtl:font-cairo`}
         dir="ltr"
       >
-        <MyContextProvider>
-      {children}
-        </MyContextProvider>
+        <MyUserTypeProvider>{children}</MyUserTypeProvider>
       </body>
     </html>
   );

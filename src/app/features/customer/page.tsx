@@ -21,10 +21,10 @@ const Features = () => {
         );
         setDataCustomer(response?.data?.data?.[0]?.attributes);
         const lstCustomerResponse = await axiosInstance.get(
-          `/feature-cusomer-lists?populate=*&locale=${lang}`,
+          `/feature-customer-list-sorts?populate=*&locale=${lang}`,
         );
         const sortedObjects = lstCustomerResponse?.data?.data?.sort(
-          (a: any, b: any) => a.id - b.id,
+          (a: any, b: any) => a.sortId - b.sortId,
         );
         setDataListBlog(sortedObjects);
       } catch (error) {

@@ -15,19 +15,14 @@ export const AboutPosts = () => {
   useEffect(() => {
     (async () => {
       try {
-        console.log(`${pathStrapi}/${handlId}?locale=${lang}`, 'rout')
-        console.log(pathStrapi, 'pathStrapi')
         const response = await axiosInstance.get(
           `${pathStrapi}/${handlId}?locale=${lang}`,
         );
-        console.log(response?.data?.data.attributes, 'attributes')
         setAboutPost(response?.data?.data.attributes.aboutPosts);
       } catch (error) {
-        console.log(error);
       }
     })();
-  }, [lang, pathStrapi, handlId])
-  console.log(aboutPost,'abouts')
+  }, [lang, pathStrapi, handlId]);
   return (
     <div className="px-4 md:px-[280px]">
       <div dangerouslySetInnerHTML={{ __html: aboutPost }} />

@@ -13,8 +13,7 @@ const BlogPosts = () => {
 
   const { lang } = useChangeLanguage();
   const { chooseBreadcrumb, choosePathStrapi } = useChoosePath();
-  const {state:currentPage,setState}= useMyContext();
-
+  const { userChange: currentPage, setUserChange } = useMyContext();
 
   useEffect(() => {
     //resources-blog-posts
@@ -29,7 +28,6 @@ const BlogPosts = () => {
       endpointExperienceDaisyLink = 'resources-blog-post-independents';
     }
 
-
     (async () => {
       const response = await axiosInstance.get(
         `hero-resources-blogposts?locale=${lang}&_sort=name:DESCa`,
@@ -37,8 +35,6 @@ const BlogPosts = () => {
       const responseList = await axiosInstance.get(
         `/${endpointExperienceDaisyLink}?populate=*&locale=${lang}`,
       );
-      // console.log(responseList?.data, 'setListCards - responseList?.data');
-      // console.log(response?.data, 'setHeroBlog - response?.data')
       setListCards(responseList?.data?.data);
       setHeroBlog(response?.data?.data[0]?.attributes);
     })();
@@ -55,19 +51,21 @@ const BlogPosts = () => {
     if (currentPage === '/professional') {
       endpointExperienceDaisyLink = 'resources-blog-post-independents';
     }
-    // console.log(heroBlog, 'heroBlog')
     chooseBreadcrumb(heroBlog?.breadcrumbs);
     choosePathStrapi(`/${endpointExperienceDaisyLink}`);
   }, [heroBlog, lang, currentPage]);
   return (
     <div className="w-full">
       <HeroPage
+        bredCrumbDesription={'Resources'}
+        bredCrumbTitle={'Blog Posts'}
+        isVisibleBreadCrumbs={true}
         hiddenArrow={true}
         visibleDescriiton={false}
         title={heroBlog?.title}
         description={heroBlog?.subtitle}
         heightScreen={false}
-        styleSection="pb-[100px]"
+        styleSection="pb-[100px] pt-[25px]"
         secondDescription={heroBlog?.description}
       />
       <CardPosts
