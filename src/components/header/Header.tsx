@@ -136,7 +136,7 @@ export const Header = () => {
 
                     if (
                       item.nav === '/pricing' &&
-                      currentPage === '/customer'
+                      (currentPage === '/customer' || currentPage === '/business')
                     ) {
                       return;
                     }
