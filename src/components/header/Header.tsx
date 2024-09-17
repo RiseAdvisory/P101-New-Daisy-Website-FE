@@ -136,7 +136,18 @@ export const Header = () => {
 
                     if (
                       item.nav === '/pricing' &&
-                      (currentPage === '/customer' || currentPage === '/business')
+                      (currentPage === '/customer' ||
+                        currentPage === '/business' ||
+                        currentPage === '/professional')
+                    ) {
+                      return;
+                    }
+
+                    if (
+                      item.nav === '/resources' &&
+                      (currentPage === '/customer' ||
+                        currentPage === '/business' ||
+                        currentPage === '/professional')
                     ) {
                       return;
                     }
