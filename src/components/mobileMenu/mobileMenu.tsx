@@ -76,7 +76,20 @@ export const MobileMenu = () => {
               listNav?.listNavigation.map((item: any, index: number) => {
                 let href = item.nav;
                 const currentPage = localStorage.getItem('activePage');
-                if (href === '/pricing' && (currentPage === '/customer' || currentPage === '/business')) {
+                if (
+                  href === '/pricing' &&
+                  (currentPage === '/customer' ||
+                    currentPage === '/business' ||
+                    currentPage === '/professional')
+                ) {
+                  return;
+                }
+                if (
+                  href === '/resources' &&
+                  (currentPage === '/customer' ||
+                    currentPage === '/business' ||
+                    currentPage === '/professional')
+                ) {
                   return;
                 }
 
