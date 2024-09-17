@@ -19,8 +19,7 @@ export const AboutPosts = () => {
           `${pathStrapi}/${handlId}?locale=${lang}`,
         );
         setAboutPost(response?.data?.data.attributes.aboutPosts);
-      } catch (error) {
-      }
+      } catch (error) {}
     })();
   }, [lang, pathStrapi, handlId]);
   return (

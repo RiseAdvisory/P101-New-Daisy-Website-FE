@@ -26,7 +26,6 @@ const Tutorials = () => {
       endpointExperienceDaisyLink = 'resource-tutorial-independents';
     }
 
-
     (async () => {
       const response = await axiosInstance.get(
         `/${endpointExperienceDaisyLink}?locale=${lang}`,

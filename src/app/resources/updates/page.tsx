@@ -58,7 +58,6 @@ const Updates = () => {
     }
 
     chooseBreadcrumb(heroUpdate?.breadcrumbs);
-
   }, [heroUpdate, lang, currentPage]);
 
   return (

@@ -104,7 +104,7 @@ const Customer = () => {
                 })}
             </ul>
           </div>
-          <OurPartnersSection />
+          {/* <OurPartnersSection /> */}
           <GrowthSectionCustomer
             title={growth?.title}
             description={growth?.description}

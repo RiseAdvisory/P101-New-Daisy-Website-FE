@@ -14,7 +14,6 @@ import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useMyContext } from '@/app/MyContext';
 
-
 interface PropsDropDownHeader {
   state: string;
   setState: any;
@@ -48,7 +47,7 @@ export const ChangeUserTypeMobile = ({
       );
       const [data] = response?.data?.data;
       setDataList(data?.attributes?.optionsToogle);
-        // setCurrentPage(data?.attributes?.optionsToogle[0].label);
+      // setCurrentPage(data?.attributes?.optionsToogle[0].label);
     })();
   }, [lang]);
 
@@ -71,7 +70,7 @@ export const ChangeUserTypeMobile = ({
       }
     }
   }, [pathname, router]);
-  
+
   useEffect(() => {
     setUserChange(active);
     if (typeof window !== 'undefined' && active) {
@@ -79,7 +78,6 @@ export const ChangeUserTypeMobile = ({
     }
   }, [active]); //UserType
 
-  
   useEffect(() => {
     if (typeof window !== 'undefined') {
       let currentPath: string | undefined;

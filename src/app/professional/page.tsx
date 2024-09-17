@@ -105,7 +105,7 @@ const Professional = () => {
                 })}
             </ul>
           </div>
-          <OurPartnersSection />
+          {/* <OurPartnersSection /> */}
           <DaysiMission />
           <GrowthSection
             title={growth?.title}
