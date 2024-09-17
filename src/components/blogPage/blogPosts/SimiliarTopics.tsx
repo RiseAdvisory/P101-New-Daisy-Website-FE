@@ -37,7 +37,7 @@ export const SimiliarTopick = ({ titleSimilar }: { titleSimilar: string }) => {
       setListCards(responseList?.data?.data);
     })();
   }, [lang, currentPage]);
-  
+
   return (
     <div className="flex flex-col justify-center items-center ">
       <h2 className="text-[#172524] text-bold text-[32px] leading-[40px] pt-28 pb-10">

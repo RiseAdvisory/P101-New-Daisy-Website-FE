@@ -2,6 +2,7 @@
 import { QASection } from '@/components/QASection/QASection';
 import { ExperienceDaisy } from '@/components/experienceDaisy/ExperienceDaisy';
 import { JoinTheDaisy } from '@/components/joinTheDaysi/JoinTheDaysi';
+import { DaysiMission } from '@/components/businessPage/DaysiMission';
 import leaf from '../../assets/images/LeafBg.png';
 import { GrowthSectionCustomer } from '@/components/customerPage/GrowthCustomer';
 import { OurPartnersSection } from '@/components/ourPartnters/OurPartnersSection';
@@ -104,7 +105,8 @@ const Customer = () => {
                 })}
             </ul>
           </div>
-          <OurPartnersSection />
+          {/* <OurPartnersSection /> */}
+          <DaysiMission />
           <GrowthSectionCustomer
             title={growth?.title}
             description={growth?.description}
