@@ -116,10 +116,10 @@ const Customer = () => {
           />
           <JoinTheDaisy />
           <ExperienceDaisy />
-          <QASection
+          {/* <QASection
             pageType="Customer"
             titleFraque={heroCustomer?.titleFraque}
-          />
+          /> */}
         </div>
       ) : (
         <div className="w-full h-screen py-[40px] px-[20px] bg-primary">

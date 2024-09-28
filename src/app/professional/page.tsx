@@ -116,10 +116,10 @@ const Professional = () => {
           />
           <JoinTheDaisy />
           <ExperienceDaisy />
-          <QASection
+          {/* <QASection
             pageType="Professional"
             titleFraque={heroProfessional?.titleFraque}
-          />
+          /> */}
           <BecomeFormPartner />
         </div>
       ) : (

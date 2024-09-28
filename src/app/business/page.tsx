@@ -135,10 +135,10 @@ const Business = () => {
           />
           <JoinTheDaisy />
           <ExperienceDaisy />
-          <QASection
+          {/* <QASection
             pageType="Business"
             titleFraque={heroBusiness?.titleFraque}
-          />
+          /> */}
           <BecomeFormPartner />
         </div>
       ) : (
