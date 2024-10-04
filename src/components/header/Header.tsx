@@ -133,7 +133,7 @@ export const Header = () => {
                     let href = item.nav;
 
                     const currentPage = localStorage.getItem('activePage');
-                    
+
                     //removing the menu selections below temporarily
                     if (
                       item.nav === '/pricing' &&
