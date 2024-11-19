@@ -63,10 +63,10 @@ export const FormContacts = ({ style }: { style?: string }) => {
   });
 
   const onSubmit = async (data: any) => {
-    // const completePhoneNumber = country_code + mobile;
+    const completePhoneNumber = country_code + mobile;
     const formData = {
       ...data,
-      mobile,
+      mobile: completePhoneNumber,
       country_code,
       type: 'enquiry',
     };

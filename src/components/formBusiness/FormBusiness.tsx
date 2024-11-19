@@ -76,11 +76,11 @@ export const ProfileForm = () => {
   const usedCountryCodes = new Set();
 
   const onSubmit = async (data: any) => {
-    const completePhoneNumber = country_code + mobile;
+    // const completePhoneNumber = country_code + mobile;
     const contentChangeString = JSON.stringify(contentChange);
     const formData = {
       ...data,
-      mobile: completePhoneNumber,
+      mobile: mobile,
       content: contentChangeString,
       type: 'enquiry',
     };
