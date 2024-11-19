@@ -75,7 +75,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
       setIsSubmit(true);
       delete formData.acceptconditions;
       const response = await fetch(
-        `https://app.trythedaisy.com/api/v1/vendor/demo/enquiry`,
+        `https://devapp.trythedaisy.com/api/v1/vendor/demo/enquiry`,
         {
           method: 'POST',
           headers: {
