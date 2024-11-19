@@ -87,7 +87,7 @@ export const ProfileForm = () => {
     try {
       setIsSubmit(true);
       const response = await fetch(
-        `https://app.trythedaisy.com/api/v1/vendor/demo/enquiry`,
+        `https://devapp.trythedaisy.com/api/v1/vendor/demo/enquiry`,
         {
           method: 'POST',
           headers: {
