@@ -312,7 +312,7 @@ export const ProfileForm = () => {
                     <Input
                       className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                       type="number"
-                      placeholder="00000000"
+                      placeholder=""
                       value={mobile}
                       onChange={(e) => setPhoneNumber(e.target.value)}
                       onFocus={() => handleFocus('mobile')}
