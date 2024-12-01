@@ -70,7 +70,7 @@ export const ProfileForm = () => {
       staff_count: '',
       business_name: '',
       content: '',
-      country_code: '+965',
+      country_code: '+1',
     },
   });
   const usedCountryCodes = new Set();
@@ -102,8 +102,8 @@ export const ProfileForm = () => {
       }
 
       const data = await response.json();
-      toast.success('Success Submitet!');
-      setPhoneNumber('00000000');
+      toast.success('Success Submited!');
+      setPhoneNumber('');
       form.reset();
     } catch (error) {
       setIsSubmit(false);
