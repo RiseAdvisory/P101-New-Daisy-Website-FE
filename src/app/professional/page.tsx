@@ -112,6 +112,7 @@ const Professional = () => {
             description={growth?.description}
             subtitle={growth?.subtitle}
             learnMore={growth?.buttonLearn}
+            buttonLink={growth?.buttonLink}
             imageUrl={growth?.imageHero?.data?.[0].attributes.url}
           />
           <JoinTheDaisy />

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import leaf from '../../assets/images/bgleafcustomer.png';
 import leafdown from '../../assets/images/bgcustomerdown.png';
 import { baseURLImage } from '@/helpers/axiosConfig';
+import { useRouter } from 'next/navigation';
 
 export const GrowthSectionCustomer = ({
   title,
@@ -12,13 +13,16 @@ export const GrowthSectionCustomer = ({
   subtitle,
   learnMore,
   imageUrl,
+  buttonLink,
 }: {
   title: string;
   description: string;
   subtitle: string;
   learnMore: string;
   imageUrl: string;
+  buttonLink: string;
 }) => {
+  const router = useRouter();
   const growthImage = new URL(imageUrl, baseURLImage).href;
   return (
     <>
@@ -49,8 +53,8 @@ export const GrowthSectionCustomer = ({
               {description}
             </p>
             <Button
-              // href="https://daisylnk.com/install-app"
               className="font-semibold w-full h-auto text-base mt-8 mb-10 px-[85px] py-[14px] rounded-[9px] md:w-[310px] hover:bg-white hover:text-primary hover:border hover:border-primary"
+              onClick={() => router.push(buttonLink)}
             >
               {learnMore}
             </Button>

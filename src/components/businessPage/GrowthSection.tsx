@@ -4,6 +4,7 @@ import { Button } from '../ui/button';
 import Link from 'next/link';
 import { baseURLImage } from '@/helpers/axiosConfig';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export const GrowthSection = ({
   title,
@@ -11,15 +12,17 @@ export const GrowthSection = ({
   subtitle,
   learnMore,
   imageUrl,
+  buttonLink,
 }: {
   title: string;
   description: string;
   subtitle: string;
   learnMore: string;
   imageUrl: string;
+  buttonLink: string;
 }) => {
   const growthImages = new URL(imageUrl, baseURLImage).href;
-
+  const router = useRouter();
   return (
     <>
       <div className=" px-4 md:flex md:bg-[#F8F5F3] bg-white">
@@ -34,7 +37,10 @@ export const GrowthSection = ({
             <p className="ltr:font-montserrat font-medium text-xl pt-3 leading-8 text-primaryBtn md:text-[16px] md:leading-6 md:font-normal md:w-[70%]">
               {description}
             </p>
-            <Button className="font-semibold w-full h-auto text-base mt-8 mb-10 px-[85px] py-[14px] rounded-[9px] md:w-[310px] hover:bg-white hover:text-primary hover:border hover:border-primary">
+            <Button
+              className="font-semibold w-full h-auto text-base mt-8 mb-10 px-[85px] py-[14px] rounded-[9px] md:w-[310px] hover:bg-white hover:text-primary hover:border hover:border-primary"
+              onClick={() => router.push(buttonLink)}
+            >
               <Link href="/about"> {learnMore}</Link>
             </Button>
           </div>
