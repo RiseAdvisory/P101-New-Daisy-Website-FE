@@ -54,9 +54,7 @@ export const GrowthSectionCustomer = ({
             </p>
             <Button
               className="font-semibold w-full h-auto text-base mt-8 mb-10 px-[85px] py-[14px] rounded-[9px] md:w-[310px] hover:bg-white hover:text-primary hover:border hover:border-primary"
-              onClick={() =>
-                router.push(buttonLink)
-              }
+              onClick={() => router.push(buttonLink)}
             >
               {learnMore}
             </Button>
