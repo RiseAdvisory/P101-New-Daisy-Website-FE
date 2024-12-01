@@ -6,7 +6,7 @@ interface IPageStore {
 }
 
 export const useChangePage = create<IPageStore>((set) => ({
-  page: '/business',
+  page: '/customer',
   changePage: (choosePage: string) => {
     set(() => ({
       page: choosePage,
