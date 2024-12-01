@@ -122,8 +122,8 @@ export const ChangeUserTypeMobile = ({
     if (typeof window !== 'undefined') {
       const currentPath = localStorage.getItem('activePage');
       if (currentPath) setActive(currentPath);
-      if (currentPath === '/business') setCurrentPage(dataList?.[0].label);
-      if (currentPath === '/customer') setCurrentPage(dataList?.[1].label);
+      if (currentPath === '/customer') setCurrentPage(dataList?.[0].label);
+      if (currentPath === '/business') setCurrentPage(dataList?.[1].label);
       if (currentPath === '/professional') setCurrentPage(dataList?.[2].label);
     }
   }, [dataList, lang]);
