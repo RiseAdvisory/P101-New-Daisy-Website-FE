@@ -11,7 +11,7 @@ export const JoinTheDaisy = () => {
   const [joinDaisyList, setJoinDaisyList] = useState<any>();
 
   const { lang } = useChangeLanguage();
-  // const router = useRouter();
+  const router = useRouter();
   useEffect(() => {
     (async function getJoinDaisy() {
       try {
@@ -68,7 +68,7 @@ export const JoinTheDaisy = () => {
                   </p>
                   <Button
                     className="bg-white w-full text-primary border border-primary py-[14px] px-[108px] my-6 ltr:font-montserrat text-base font-semibold hover:bg-primary hover:text-white"
-                    // onClick={() => router.push('/contact')}
+                    onClick={() => router.push(item?.attributes.linksto)}
                   >
                     {item?.attributes.textButton}
                   </Button>

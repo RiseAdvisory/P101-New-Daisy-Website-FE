@@ -48,7 +48,10 @@ export const GrowthSectionCustomer = ({
             <p className="ltr:font-montserrat font-medium text-xl pt-3 leading-8 text-primaryBtn md:text-[16px] md:leading-6 md:font-normal md:w-[70%]">
               {description}
             </p>
-            <Button className="font-semibold w-full h-auto text-base mt-8 mb-10 px-[85px] py-[14px] rounded-[9px] md:w-[310px] hover:bg-white hover:text-primary hover:border hover:border-primary">
+            <Button
+              // href="https://daisylnk.com/install-app"
+              className="font-semibold w-full h-auto text-base mt-8 mb-10 px-[85px] py-[14px] rounded-[9px] md:w-[310px] hover:bg-white hover:text-primary hover:border hover:border-primary"
+            >
               {learnMore}
             </Button>
           </div>
