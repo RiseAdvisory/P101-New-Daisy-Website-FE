@@ -119,10 +119,11 @@ export const NoScrollingAnimationBusiness = ({
               <motion.li key={index} variants={item}>
                 <Button
                   variant="navigation"
-                  className="w-full h-auto !min-h-10  justify-start mt-4 font-semibold text-base text-[#D5D9D9] text-start overflow-wrap break-word word-wrap break-word whitespace-normal line-clamp-2"
-                >
-                  <CheckIcon className="ltr:mr-2 rtl:ml-2 !min-w-6" />
-                  {items}
+                  className="w-full h-auto !min-h-10 flex items-start mt-4 font-semibold text-base text-[#D5D9D9] text-start">
+                  <CheckIcon className="ltr:mr-2 rtl:ml-2 !min-w-6 flex-shrink-0" />
+                  <span className="overflow-wrap break-word whitespace-normal">
+                    {items}
+                  </span>
                 </Button>
               </motion.li>
             );
