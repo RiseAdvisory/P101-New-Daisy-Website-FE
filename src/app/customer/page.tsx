@@ -123,7 +123,7 @@ const Customer = () => {
           />
         </div>
       ) : (
-        <div className="w-full h-screen py-[40px] px-[20px] bg-primary">
+        <div className="w-full h-screen py-[40px] px-[20px] bg-customGreen">
           <Skeleton className="w-full mb-10 h-full" />
         </div>
       )}
