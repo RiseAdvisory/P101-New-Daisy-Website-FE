@@ -7,6 +7,7 @@ function Skeleton({
   return (
     <div
       className={cn('animate-pulse rounded-md bg-customGreen', className)}
+      aria-hidden="true"
       {...props}
     />
   );
