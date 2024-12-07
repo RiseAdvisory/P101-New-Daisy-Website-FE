@@ -34,8 +34,8 @@ import { useChangeLanguage } from '@/store/language';
 export const ProfileForm = () => {
   const [activeField, setActiveField] = useState<string | null>(null);
   const [country_code, setCountryCode] = useState('+1');
-  const { handleArray, handleLoadingStatus } = useLoadingStore();
-  const { array } = useLoadingStore();
+  const { handlecountryCodesArray, handleLoadingStatus } = useLoadingStore();
+  const { countryCodesArray } = useLoadingStore();
   const [mobile, setPhoneNumber] = useState('');
   const [business_type, setBusinessType] = useState(false);
   const [homeService, setHomeService] = useState(false);
@@ -141,12 +141,12 @@ export const ProfileForm = () => {
       (async () => {
         handleLoadingStatus(true);
         const listCountries = await getData();
-        handleArray(listCountries);
+        handlecountryCodesArray(listCountries);
       })();
     } catch (error) {
       console.log(error);
     }
-  }, [handleArray, handleLoadingStatus]);
+  }, [handlecountryCodesArray, handleLoadingStatus]);
 
   return (
     <Form {...form}>
@@ -297,7 +297,7 @@ export const ProfileForm = () => {
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        {array.map((item, i) => {
+                        {countryCodesArray.map((item, i) => {
                           //console.log(item);
                           const country_code = item.country_code;
                           console.log(item.country_code);
