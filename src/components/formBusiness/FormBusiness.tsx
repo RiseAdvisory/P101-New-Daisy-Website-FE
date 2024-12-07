@@ -275,6 +275,64 @@ export const ProfileForm = () => {
           </div>
         )}
         <div className="md:flex md:justify-between">
+          {/* new form field */}
+                    <FormField
+              control={form.control}
+              name="country_code"
+              render={({ field }) => (
+                <FormItem className="mt-6">
+                  <FormLabel
+                    className={`ltr:font-montserrat font-semibold text-base ${
+                      activeField === 'country_code' ? 'text-[#A67F6B]' : ''
+                    }`}
+                  >
+                    Country Code
+                  </FormLabel>
+                  <FormControl>
+                    <Select
+                      value={field.value}
+                      onValueChange={(value) => {
+                        field.onChange(value); // Update form's country_code field
+                      }}
+                    >
+                      <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {countryCodesArray
+                          .slice()
+                          .sort((a, b) => a.country_code.localeCompare(b.country_code))
+                          .map((item, i) => {
+                            const cc = item.country_code;
+                            if (!item.image || !cc || usedCountryCodes.has(cc)) {
+                              return null;
+                            }
+
+                            usedCountryCodes.add(cc);
+
+                            return (
+                              <SelectItem key={`${cc}-${item.name}`} value={cc}>
+                                <span className="flex items-center justify-center text-nowrap">
+                                  <Image
+                                    src={item.image}
+                                    alt={`${cc} flag`}
+                                    width={15}
+                                    height={15}
+                                    unoptimized // if needed for SVG
+                                  />
+                                  {cc}
+                                </span>
+                              </SelectItem>
+                            );
+                          })}
+                      </SelectContent>
+                    </Select>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            {/* end of new form field */}
           <FormField
             control={form.control}
             name="mobile"
