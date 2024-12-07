@@ -244,7 +244,12 @@ export const FormContacts = ({ style }: { style?: string }) => {
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        {countryCodesArray.map((item, i) => {
+                        {countryCodesArray
+                        .slice() // use slice() if you want to avoid mutating the original array
+                        .sort((a, b) =>
+                          a.country_code.localeCompare(b.country_code),
+                        )
+                        .map((item, i) => {
                           const country_code = item.country_code;
                           if (
                             !item.image ||
@@ -264,12 +269,12 @@ export const FormContacts = ({ style }: { style?: string }) => {
                               <span className="flex items-center justify-center text-nowrap">
                                 <span>
                                   <Image
-                                      src={item.image}
-                                      alt={`${country_code} flag`}
-                                      width={20}
-                                      height={20}
-                                      unoptimized // likely needed for SVGs
-                                    />
+                                    src={item.image}
+                                    alt={`${country_code} flag`}
+                                    width={15}
+                                    height={15}
+                                    unoptimized // likely needed for SVGs
+                                  />
                                 </span>
                                 {country_code}
                               </span>

@@ -327,8 +327,8 @@ export const ProfileForm = () => {
                                     <Image
                                       src={item.image}
                                       alt={`${country_code} flag`}
-                                      width={20}
-                                      height={20}
+                                      width={15}
+                                      height={15}
                                       unoptimized // likely needed for SVGs
                                     />
                                   </span>
