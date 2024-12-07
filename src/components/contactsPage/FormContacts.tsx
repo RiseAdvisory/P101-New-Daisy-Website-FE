@@ -25,6 +25,8 @@ import Separator from '../separator/Separator';
 import { Textarea } from '../ui/textarea';
 import { Checkbox } from '../ui/checkbox';
 import { countries } from 'country-data';
+import { getData } from '@/helpers/getCountryCodes';
+import { useLoadingStore } from '@/store/loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axiosInstance from '@/helpers/axiosConfig';
@@ -41,6 +43,8 @@ const formSchema = z.object({
 export const FormContacts = ({ style }: { style?: string }) => {
   const [activeField, setActiveField] = useState<string | null>(null);
   const [country_code, setCountryCode] = useState('+1');
+  const { handlecountryCodesArray, handleLoadingStatus } = useLoadingStore();
+  const { countryCodesArray } = useLoadingStore();
   const [mobile, setPhoneNumber] = useState('');
   const [isSubmit, setIsSubmit] = useState(false);
   const [formText, setFormText] = useState<any>();
@@ -118,6 +122,19 @@ export const FormContacts = ({ style }: { style?: string }) => {
       setFormTextPlaceholder(data?.attributes?.placeholderContactForm);
     })();
   }, [lang]);
+
+  useEffect(() => {
+    try {
+      (async () => {
+        handleLoadingStatus(true);
+        const listCountries = await getData();
+        handlecountryCodesArray(listCountries);
+      })();
+    } catch (error) {
+      console.log(error);
+    }
+  }, [handlecountryCodesArray, handleLoadingStatus]);
+
   const usedCountryCodes = new Set();
   return (
     <Form {...form}>
@@ -227,10 +244,10 @@ export const FormContacts = ({ style }: { style?: string }) => {
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        {countries.all.map((item, i) => {
-                          const country_code = item.countryCallingCodes[0];
+                        {countryCodesArray.map((item, i) => {
+                          const country_code = item.country_code;
                           if (
-                            !item.emoji ||
+                            !item.image ||
                             !country_code ||
                             usedCountryCodes.has(country_code)
                           ) {
@@ -245,7 +262,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
                               value={country_code}
                             >
                               <span className="flex items-center justify-center text-nowrap">
-                                <span>{item.emoji} </span>
+                                <span>{item.image} </span>
                                 {country_code}
                               </span>
                             </SelectItem>

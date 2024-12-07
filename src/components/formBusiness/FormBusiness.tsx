@@ -300,8 +300,8 @@ export const ProfileForm = () => {
                         {countryCodesArray.map((item, i) => {
                           //console.log(item);
                           const country_code = item.country_code;
-                          console.log(item.country_code);
-                          console.log(item.image);
+                          // console.log(item.country_code);
+                          // console.log(item.image);
                           if (
                             !item.image ||
                             !country_code ||
@@ -318,7 +318,7 @@ export const ProfileForm = () => {
                               value={country_code}
                             >
                               <span className="flex items-center justify-center text-nowrap">
-                                <span>{item.emoji} </span>
+                                <span>{item.image} </span>
                                 {country_code}
                               </span>
                             </SelectItem>
