@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
@@ -24,6 +24,8 @@ import {
 import Separator from '../separator/Separator';
 import { ToggleButtonForm } from './ToogleForm';
 import { countries } from 'country-data';
+import { getData } from '@/helpers/getCountryCodes';
+import { useLoadingStore } from '@/store/loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axiosInstance from '@/helpers/axiosConfig';
@@ -32,6 +34,8 @@ import { useChangeLanguage } from '@/store/language';
 export const ProfileForm = () => {
   const [activeField, setActiveField] = useState<string | null>(null);
   const [country_code, setCountryCode] = useState('+1');
+  const { handlecountryCodesArray, handleLoadingStatus } = useLoadingStore();
+  const { countryCodesArray } = useLoadingStore();
   const [mobile, setPhoneNumber] = useState('');
   const [business_type, setBusinessType] = useState(false);
   const [homeService, setHomeService] = useState(false);
@@ -132,6 +136,17 @@ export const ProfileForm = () => {
       setDescriptionForm(data?.attributes?.formPlaceholder);
     })();
   }, [lang]);
+  useEffect(() => {
+    try {
+      (async () => {
+        handleLoadingStatus(true);
+        const listCountries = await getData();
+        handlecountryCodesArray(listCountries);
+      })();
+    } catch (error) {
+      console.log(error);
+    }
+  }, [handlecountryCodesArray, handleLoadingStatus]);
 
   return (
     <Form {...form}>
@@ -282,30 +297,46 @@ export const ProfileForm = () => {
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        {countries.all.map((item, i) => {
-                          const country_code = item.countryCallingCodes[0];
-                          if (
-                            !item.emoji ||
-                            !country_code ||
-                            usedCountryCodes.has(country_code)
-                          ) {
-                            return null;
-                          }
+                        {countryCodesArray
+                          .slice() // use slice() if you want to avoid mutating the original array
+                          .sort((a, b) =>
+                            a.country_code.localeCompare(b.country_code),
+                          )
+                          .map((item, i) => {
+                            //console.log(item);
+                            const country_code = item.country_code;
+                            // console.log(item.country_code);
+                            // console.log(item.image);
+                            if (
+                              !item.image ||
+                              !country_code ||
+                              usedCountryCodes.has(country_code)
+                            ) {
+                              return null;
+                            }
 
-                          usedCountryCodes.add(country_code);
+                            usedCountryCodes.add(country_code);
 
-                          return (
-                            <SelectItem
-                              key={`${country_code}-${item.name}`}
-                              value={country_code}
-                            >
-                              <span className="flex items-center justify-center text-nowrap">
-                                <span>{item.emoji} </span>
-                                {country_code}
-                              </span>
-                            </SelectItem>
-                          );
-                        })}
+                            return (
+                              <SelectItem
+                                key={`${country_code}-${item.name}`}
+                                value={country_code}
+                              >
+                                <span className="flex items-center justify-center text-nowrap">
+                                  <span>
+                                    <Image
+                                      src={item.image}
+                                      alt={`${country_code} flag`}
+                                      width={15}
+                                      height={15}
+                                      unoptimized // likely needed for SVGs
+                                    />
+                                  </span>
+                                  {country_code}
+                                </span>
+                              </SelectItem>
+                            );
+                          })}
                       </SelectContent>
                     </Select>
                   </FormControl>
