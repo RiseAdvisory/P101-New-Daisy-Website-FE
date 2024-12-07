@@ -300,13 +300,15 @@ export const ProfileForm = () => {
                         {array.map((item, i) => {
                           //console.log(item);
                           const country_code = item.country_code;
-                          // if (
-                          //   !item.image ||
-                          //   !country_code ||
-                          //   usedCountryCodes.has(country_code)
-                          // ) {
-                          //   return null;
-                          // }
+                          console.log(item.country_code);
+                          console.log(item.image);
+                          if (
+                            !item.image ||
+                            !country_code ||
+                            usedCountryCodes.has(country_code)
+                          ) {
+                            return null;
+                          }
 
                           usedCountryCodes.add(country_code);
 
