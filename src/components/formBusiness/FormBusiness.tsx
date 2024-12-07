@@ -31,7 +31,7 @@ import { useChangeLanguage } from '@/store/language';
 
 export const ProfileForm = () => {
   const [activeField, setActiveField] = useState<string | null>(null);
-  const [country_code, setCountryCode] = useState('+965');
+  const [country_code, setCountryCode] = useState('+1');
   const [mobile, setPhoneNumber] = useState('');
   const [business_type, setBusinessType] = useState(false);
   const [homeService, setHomeService] = useState(false);
@@ -49,7 +49,8 @@ export const ProfileForm = () => {
       .string()
 
       .email(descriptionForm?.errorEmail),
-    social_media: z.string().url(descriptionForm?.url),
+    social_media: z.string(),
+    // .url(descriptionForm?.url)
     country_code: z.string(),
     mobile: z.string(),
     location_count: z.string(),
@@ -102,7 +103,7 @@ export const ProfileForm = () => {
       }
 
       const data = await response.json();
-      toast.success('Success Submited!');
+      toast.success('Sent Succesfully!');
       setPhoneNumber('');
       form.reset();
     } catch (error) {
