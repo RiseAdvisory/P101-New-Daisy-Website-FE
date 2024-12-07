@@ -275,6 +275,66 @@ export const ProfileForm = () => {
           </div>
         )}
         <div className="md:flex md:justify-between">
+          {/* new form field */}
+          <FormField
+            control={form.control}
+            name="country_code"
+            render={({ field }) => (
+              <FormItem className="mt-6">
+                <FormLabel
+                  className={`ltr:font-montserrat font-semibold text-base ${
+                    activeField === 'country_code' ? 'text-[#A67F6B]' : ''
+                  }`}
+                >
+                  Code
+                </FormLabel>
+                <FormControl>
+                  <Select
+                    value={field.value}
+                    onValueChange={(value) => {
+                      field.onChange(value); // Update form's country_code field
+                    }}
+                  >
+                    <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {countryCodesArray
+                        .slice()
+                        .sort((a, b) =>
+                          a.country_code.localeCompare(b.country_code),
+                        )
+                        .map((item, i) => {
+                          const country_code = item.country_code;
+                          if (!item.image || !country_code || usedCountryCodes.has(country_code)) {
+                            return null;
+                          }
+
+                          usedCountryCodes.add(country_code);
+
+                          return (
+                            <SelectItem key={`${country_code}-${item.name}`} value={country_code}>
+                              <span className="flex items-center justify-center text-nowrap">
+                                <Image
+                                  src={item.image}
+                                  alt={`${country_code} flag`}
+                                  width={15}
+                                  height={15}
+                                  unoptimized // if needed for SVG
+                                />
+                                {country_code}
+                              </span>
+                            </SelectItem>
+                          );
+                        })}
+                    </SelectContent>
+                  </Select>
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          {/* end of new form field */}
           <FormField
             control={form.control}
             name="mobile"
@@ -288,7 +348,7 @@ export const ProfileForm = () => {
                   {textForm?.phoneNumber}
                 </FormLabel>
                 <div className="flex gap-x-2">
-                  <FormControl>
+                  {/* <FormControl>
                     <Select
                       value={country_code}
                       onValueChange={(value) => setCountryCode(value)}
@@ -339,7 +399,7 @@ export const ProfileForm = () => {
                           })}
                       </SelectContent>
                     </Select>
-                  </FormControl>
+                  </FormControl> */}
                   <FormControl>
                     <Input
                       className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
