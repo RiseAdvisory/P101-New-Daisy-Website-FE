@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
@@ -297,7 +297,9 @@ export const ProfileForm = () => {
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        {countryCodesArray.map((item, i) => {
+                        {countryCodesArray
+                        .slice() // use slice() if you want to avoid mutating the original array
+                        .sort((a, b) => a.country_code.localeCompare(b.country_code)).map((item, i) => {
                           //console.log(item);
                           const country_code = item.country_code;
                           // console.log(item.country_code);
@@ -318,7 +320,14 @@ export const ProfileForm = () => {
                               value={country_code}
                             >
                               <span className="flex items-center justify-center text-nowrap">
-                                <span>{item.image} </span>
+                                <span><Image
+                                      src={item.image}
+                                      alt={`${country_code} flag`}
+                                      width={60}
+                                      height={60}
+                                      unoptimized // likely needed for SVGs
+                                    />
+                                </span>
                                 {country_code}
                               </span>
                             </SelectItem>
