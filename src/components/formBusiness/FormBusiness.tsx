@@ -24,6 +24,8 @@ import {
 import Separator from '../separator/Separator';
 import { ToggleButtonForm } from './ToogleForm';
 import { countries } from 'country-data';
+import { getData } from '@/helpers/getCountryCodes';
+import { useLoadingStore } from '@/store/loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axiosInstance from '@/helpers/axiosConfig';
@@ -32,6 +34,8 @@ import { useChangeLanguage } from '@/store/language';
 export const ProfileForm = () => {
   const [activeField, setActiveField] = useState<string | null>(null);
   const [country_code, setCountryCode] = useState('+1');
+  const { handleArray, handleLoadingStatus } = useLoadingStore();
+  const { array } = useLoadingStore();
   const [mobile, setPhoneNumber] = useState('');
   const [business_type, setBusinessType] = useState(false);
   const [homeService, setHomeService] = useState(false);
@@ -132,6 +136,17 @@ export const ProfileForm = () => {
       setDescriptionForm(data?.attributes?.formPlaceholder);
     })();
   }, [lang]);
+  useEffect(() => {
+    try {
+      (async () => {
+        handleLoadingStatus(true);
+        const listCountries = await getData();
+        handleArray(listCountries);
+      })();
+    } catch (error) {
+      console.log(error);
+    }
+  }, [handleArray, handleLoadingStatus]);
 
   return (
     <Form {...form}>
@@ -282,8 +297,8 @@ export const ProfileForm = () => {
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        {countries.all.map((item, i) => {
-                          const country_code = item.countryCallingCodes[0];
+                        {array.map((item, i) => {
+                          const country_code = item.country_code[0];
                           if (
                             !item.emoji ||
                             !country_code ||
