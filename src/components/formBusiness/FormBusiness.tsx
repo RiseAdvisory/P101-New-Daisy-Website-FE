@@ -298,41 +298,45 @@ export const ProfileForm = () => {
                       </SelectTrigger>
                       <SelectContent>
                         {countryCodesArray
-                        .slice() // use slice() if you want to avoid mutating the original array
-                        .sort((a, b) => a.country_code.localeCompare(b.country_code)).map((item, i) => {
-                          //console.log(item);
-                          const country_code = item.country_code;
-                          // console.log(item.country_code);
-                          // console.log(item.image);
-                          if (
-                            !item.image ||
-                            !country_code ||
-                            usedCountryCodes.has(country_code)
-                          ) {
-                            return null;
-                          }
+                          .slice() // use slice() if you want to avoid mutating the original array
+                          .sort((a, b) =>
+                            a.country_code.localeCompare(b.country_code),
+                          )
+                          .map((item, i) => {
+                            //console.log(item);
+                            const country_code = item.country_code;
+                            // console.log(item.country_code);
+                            // console.log(item.image);
+                            if (
+                              !item.image ||
+                              !country_code ||
+                              usedCountryCodes.has(country_code)
+                            ) {
+                              return null;
+                            }
 
-                          usedCountryCodes.add(country_code);
+                            usedCountryCodes.add(country_code);
 
-                          return (
-                            <SelectItem
-                              key={`${country_code}-${item.name}`}
-                              value={country_code}
-                            >
-                              <span className="flex items-center justify-center text-nowrap">
-                                <span><Image
+                            return (
+                              <SelectItem
+                                key={`${country_code}-${item.name}`}
+                                value={country_code}
+                              >
+                                <span className="flex items-center justify-center text-nowrap">
+                                  <span>
+                                    <Image
                                       src={item.image}
                                       alt={`${country_code} flag`}
-                                      width={60}
-                                      height={60}
+                                      width={20}
+                                      height={20}
                                       unoptimized // likely needed for SVGs
                                     />
+                                  </span>
+                                  {country_code}
                                 </span>
-                                {country_code}
-                              </span>
-                            </SelectItem>
-                          );
-                        })}
+                              </SelectItem>
+                            );
+                          })}
                       </SelectContent>
                     </Select>
                   </FormControl>

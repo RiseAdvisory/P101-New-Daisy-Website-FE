@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
@@ -262,7 +262,15 @@ export const FormContacts = ({ style }: { style?: string }) => {
                               value={country_code}
                             >
                               <span className="flex items-center justify-center text-nowrap">
-                                <span>{item.image} </span>
+                                <span>
+                                  <Image
+                                      src={item.image}
+                                      alt={`${country_code} flag`}
+                                      width={20}
+                                      height={20}
+                                      unoptimized // likely needed for SVGs
+                                    />
+                                </span>
                                 {country_code}
                               </span>
                             </SelectItem>
