@@ -276,7 +276,6 @@ export const ProfileForm = () => {
         )}
         <div className="md:flex md:justify-between">
           {/* new form field */}
-          <div className="md:flex md:justify-between">
           <FormField
             control={form.control}
             name="country_code"
@@ -417,7 +416,6 @@ export const ProfileForm = () => {
               </FormItem>
             )}
           />
-          </div>
           <FormField
             control={form.control}
             name="social_media"
