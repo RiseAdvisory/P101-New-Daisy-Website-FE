@@ -276,6 +276,7 @@ export const ProfileForm = () => {
         )}
         <div className="md:flex md:justify-between">
           {/* new form field */}
+          <div className="md:flex md:justify-between">
           <FormField
             control={form.control}
             name="country_code"
@@ -286,7 +287,7 @@ export const ProfileForm = () => {
                     activeField === 'country_code' ? 'text-[#A67F6B]' : ''
                   }`}
                 >
-                  Country Code
+                  Code
                 </FormLabel>
                 <FormControl>
                   <Select
@@ -305,24 +306,24 @@ export const ProfileForm = () => {
                           a.country_code.localeCompare(b.country_code),
                         )
                         .map((item, i) => {
-                          const cc = item.country_code;
-                          if (!item.image || !cc || usedCountryCodes.has(cc)) {
+                          const country_code = item.country_code;
+                          if (!item.image || !country_code || usedCountryCodes.has(country_code)) {
                             return null;
                           }
 
-                          usedCountryCodes.add(cc);
+                          usedCountryCodes.add(country_code);
 
                           return (
-                            <SelectItem key={`${cc}-${item.name}`} value={cc}>
+                            <SelectItem key={`${country_code}-${item.name}`} value={country_code}>
                               <span className="flex items-center justify-center text-nowrap">
                                 <Image
                                   src={item.image}
-                                  alt={`${cc} flag`}
+                                  alt={`${country_code} flag`}
                                   width={15}
                                   height={15}
                                   unoptimized // if needed for SVG
                                 />
-                                {cc}
+                                {country_code}
                               </span>
                             </SelectItem>
                           );
@@ -416,6 +417,7 @@ export const ProfileForm = () => {
               </FormItem>
             )}
           />
+          </div>
           <FormField
             control={form.control}
             name="social_media"
