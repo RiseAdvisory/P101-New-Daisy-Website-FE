@@ -40,7 +40,7 @@ const formSchema = z.object({
 
 export const FormContacts = ({ style }: { style?: string }) => {
   const [activeField, setActiveField] = useState<string | null>(null);
-  const [country_code, setCountryCode] = useState('+965');
+  const [country_code, setCountryCode] = useState('+1');
   const [mobile, setPhoneNumber] = useState('');
   const [isSubmit, setIsSubmit] = useState(false);
   const [formText, setFormText] = useState<any>();
@@ -58,7 +58,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
       mobile: '',
       acceptconditions: false,
 
-      country_code: '+965',
+      country_code: '+1',
     },
   });
 
@@ -90,7 +90,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
       }
 
       const data = await response.json();
-      toast.success('Success Submitet!');
+      toast.success('Sent Succesfully!');
       setPhoneNumber('00000000');
       form.reset();
     } catch (error) {
