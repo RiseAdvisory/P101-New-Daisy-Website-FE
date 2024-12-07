@@ -298,6 +298,7 @@ export const ProfileForm = () => {
                       </SelectTrigger>
                       <SelectContent>
                         {array.map((item, i) => {
+                          console.log(item)
                           const country_code = item.country_code[0];
                           if (
                             !item.emoji ||
