@@ -274,173 +274,132 @@ export const ProfileForm = () => {
             />
           </div>
         )}
-        <div className="md:flex md:justify-between">
-          {/* new form field */}
-          <FormField
-            control={form.control}
-            name="country_code"
-            render={({ field }) => (
-              <FormItem className="mt-6">
-                <FormLabel
-                  className={`ltr:font-montserrat font-semibold text-base ${
-                    activeField === 'country_code' ? 'text-[#A67F6B]' : ''
-                  }`}
-                >
-                  Code
-                </FormLabel>
-                <FormControl>
-                  <Select
-                    value={field.value}
-                    onValueChange={(value) => {
-                      field.onChange(value); // Update form's country_code field
-                    }}
-                  >
-                    <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {countryCodesArray
-                        .slice()
-                        .sort((a, b) =>
-                          a.country_code.localeCompare(b.country_code),
-                        )
-                        .map((item, i) => {
-                          const country_code = item.country_code;
-                          if (!item.image || !country_code || usedCountryCodes.has(country_code)) {
-                            return null;
-                          }
-
-                          usedCountryCodes.add(country_code);
-
-                          return (
-                            <SelectItem key={`${country_code}-${item.name}`} value={country_code}>
-                              <span className="flex items-center justify-center text-nowrap">
-                                <Image
-                                  src={item.image}
-                                  alt={`${country_code} flag`}
-                                  width={15}
-                                  height={15}
-                                  unoptimized // if needed for SVG
-                                />
-                                {country_code}
-                              </span>
-                            </SelectItem>
-                          );
-                        })}
-                    </SelectContent>
-                  </Select>
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          {/* end of new form field */}
-          <FormField
-            control={form.control}
-            name="mobile"
-            render={({ field }) => (
-              <FormItem className="md:w-full mt-6">
-                <FormLabel
-                  className={`ltr:font-montserrat font-semibold text-base ${
-                    activeField === 'mobile' ? 'text-[#A67F6B]' : ''
-                  }`}
-                >
-                  {textForm?.phoneNumber}
-                </FormLabel>
-                <div className="flex gap-x-2">
-                  {/* <FormControl>
-                    <Select
-                      value={country_code}
-                      onValueChange={(value) => setCountryCode(value)}
+        <div className="flex">
+          <div className="w-[49%] flex">
+            <div className="w-1/4">
+              <FormField
+                control={form.control}
+                name="country_code"
+                render={({ field }) => (
+                  <FormItem className="mt-6">
+                    <FormLabel
+                      className={`ltr:font-montserrat font-semibold text-base ${
+                        activeField === 'country_code' ? 'text-[#A67F6B]' : ''
+                      }`}
                     >
-                      <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {countryCodesArray
-                          .slice() // use slice() if you want to avoid mutating the original array
-                          .sort((a, b) =>
-                            a.country_code.localeCompare(b.country_code),
-                          )
-                          .map((item, i) => {
-                            //console.log(item);
-                            const country_code = item.country_code;
-                            // console.log(item.country_code);
-                            // console.log(item.image);
-                            if (
-                              !item.image ||
-                              !country_code ||
-                              usedCountryCodes.has(country_code)
-                            ) {
-                              return null;
-                            }
+                      Code
+                    </FormLabel>
+                    <FormControl>
+                      <Select
+                        value={field.value}
+                        onValueChange={(value) => {
+                          field.onChange(value); // Update form's country_code field
+                        }}
+                      >
+                        <SelectTrigger className="w-24 flex border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {countryCodesArray
+                            .slice()
+                            .sort((a, b) =>
+                              a.country_code.localeCompare(b.country_code),
+                            )
+                            .map((item, i) => {
+                              const country_code = item.country_code;
+                              if (
+                                !item.image ||
+                                !country_code ||
+                                usedCountryCodes.has(country_code)
+                              ) {
+                                return null;
+                              }
 
-                            usedCountryCodes.add(country_code);
+                              usedCountryCodes.add(country_code);
 
-                            return (
-                              <SelectItem
-                                key={`${country_code}-${item.name}`}
-                                value={country_code}
-                              >
-                                <span className="flex items-center justify-center text-nowrap">
-                                  <span>
+                              return (
+                                <SelectItem
+                                  key={`${country_code}-${item.name}`}
+                                  value={country_code}
+                                >
+                                  <span className="flex items-center justify-center text-nowrap">
                                     <Image
                                       src={item.image}
                                       alt={`${country_code} flag`}
                                       width={15}
                                       height={15}
-                                      unoptimized // likely needed for SVGs
+                                      unoptimized // if needed for SVG
                                     />
+                                    {country_code}
                                   </span>
-                                  {country_code}
-                                </span>
-                              </SelectItem>
-                            );
-                          })}
-                      </SelectContent>
-                    </Select>
-                  </FormControl> */}
+                                </SelectItem>
+                              );
+                            })}
+                        </SelectContent>
+                      </Select>
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+            <div className="w-3/4">
+              <FormField
+                control={form.control}
+                name="mobile"
+                render={({ field }) => (
+                  <FormItem className="md:w-full mt-6">
+                    <FormLabel
+                      className={`ltr:font-montserrat font-semibold text-base ${
+                        activeField === 'mobile' ? 'text-[#A67F6B]' : ''
+                      }`}
+                    >
+                      {textForm?.phoneNumber}
+                    </FormLabel>
+                    <FormControl>
+                      <Input
+                        className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
+                        type="number"
+                        placeholder=""
+                        value={mobile}
+                        onChange={(e) => setPhoneNumber(e.target.value)}
+                        onFocus={() => handleFocus('mobile')}
+                        onBlur={handleBlur}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+          </div>
+          <div className="w-1/2">
+            <FormField
+              control={form.control}
+              name="social_media"
+              render={({ field }) => (
+                <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4">
+                  <FormLabel
+                    className={`ltr:font-montserrat font-semibold text-base ${
+                      activeField === 'social_media' ? 'text-[#A67F6B]' : ''
+                    }`}
+                  >
+                    {textForm?.socialMediaAccount}
+                  </FormLabel>
                   <FormControl>
                     <Input
                       className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
-                      type="number"
-                      placeholder=""
-                      value={mobile}
-                      onChange={(e) => setPhoneNumber(e.target.value)}
-                      onFocus={() => handleFocus('mobile')}
+                      placeholder={descriptionForm?.socialMediaAccount}
+                      {...field}
+                      onFocus={() => handleFocus('social_media')}
                       onBlur={handleBlur}
                     />
                   </FormControl>
-                </div>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="social_media"
-            render={({ field }) => (
-              <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4">
-                <FormLabel
-                  className={`ltr:font-montserrat font-semibold text-base ${
-                    activeField === 'social_media' ? 'text-[#A67F6B]' : ''
-                  }`}
-                >
-                  {textForm?.socialMediaAccount}
-                </FormLabel>
-                <FormControl>
-                  <Input
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
-                    placeholder={descriptionForm?.socialMediaAccount}
-                    {...field}
-                    onFocus={() => handleFocus('social_media')}
-                    onBlur={handleBlur}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
         </div>
         {business_type && (
           <div className="md:flex md:justify-between">
