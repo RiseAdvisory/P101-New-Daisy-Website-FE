@@ -296,7 +296,7 @@ export const ProfileForm = () => {
                           field.onChange(value); // Update form's country_code field
                         }}
                       >
-                        <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
+                        <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse overflow-hidden">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
@@ -373,7 +373,6 @@ export const ProfileForm = () => {
               />
             </div>
           </div>
-          
           <div className="w-1/2">
             <FormField
               control={form.control}
