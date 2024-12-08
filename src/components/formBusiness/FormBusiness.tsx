@@ -274,9 +274,9 @@ export const ProfileForm = () => {
             />
           </div>
         )}
-        <div className="flex">
-          <div className="w-[49%] flex">
-            <div className="w-1/4">
+        <div className="md:flex md:justify-between">
+          <div className="w-[100%] flex flex-grow-2">
+            <div className="w-1/4 flex-grow-1">
               <FormField
                 control={form.control}
                 name="country_code"
@@ -373,7 +373,7 @@ export const ProfileForm = () => {
               />
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="w-[100%] flex-grow-4">
             <FormField
               control={form.control}
               name="social_media"
