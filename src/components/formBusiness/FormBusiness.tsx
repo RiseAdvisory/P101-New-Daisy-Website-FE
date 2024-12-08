@@ -275,7 +275,7 @@ export const ProfileForm = () => {
           </div>
         )}
         <div className="flex gap-4">
-          <div className="w-1/2 flex gap-2">
+          <div className="w-[49%] flex">
             <div className="w-1/4">
               <FormField
                 control={form.control}
@@ -296,7 +296,7 @@ export const ProfileForm = () => {
                           field.onChange(value); // Update form's country_code field
                         }}
                       >
-                        <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse overflow-hidden">
+                        <SelectTrigger className="w-24 flex border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
