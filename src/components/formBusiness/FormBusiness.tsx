@@ -274,7 +274,7 @@ export const ProfileForm = () => {
             />
           </div>
         )}
-        <div className="flex gap-4">
+        <div className="flex">
           <div className="w-[49%] flex">
             <div className="w-1/4">
               <FormField
