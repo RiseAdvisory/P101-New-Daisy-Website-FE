@@ -306,14 +306,21 @@ export const ProfileForm = () => {
                         )
                         .map((item, i) => {
                           const country_code = item.country_code;
-                          if (!item.image || !country_code || usedCountryCodes.has(country_code)) {
+                          if (
+                            !item.image ||
+                            !country_code ||
+                            usedCountryCodes.has(country_code)
+                          ) {
                             return null;
                           }
 
                           usedCountryCodes.add(country_code);
 
                           return (
-                            <SelectItem key={`${country_code}-${item.name}`} value={country_code}>
+                            <SelectItem
+                              key={`${country_code}-${item.name}`}
+                              value={country_code}
+                            >
                               <span className="flex items-center justify-center text-nowrap">
                                 <Image
                                   src={item.image}
