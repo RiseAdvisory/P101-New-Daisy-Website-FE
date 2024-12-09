@@ -17,7 +17,7 @@ export const OurValue = ({ heroAbout }: { heroAbout: any }) => {
                 className="flex flex-col justify-start items-start text-start border rounded-[12px] px-6 py-8 bg-white"
               >
                 <span>
-                  <MessageIcons />
+                  {/* <MessageIcons /> */}
                 </span>
                 <h2 className="mt-6 text-[30px] leading-6">{item.title}</h2>
                 <p className="mt-2 text-[#455150] ltr:font-montserrat">
@@ -28,7 +28,7 @@ export const OurValue = ({ heroAbout }: { heroAbout: any }) => {
           </ul>
           <div className="flex flex-col mt-6  justify-start md:justify-center md:items-center md:text-center items-start text-start border rounded-[12px] px-6 py-8 bg-white md:w-[30%] md:ml-6 rtl:ml-0 rtl:mr-6 md:mt-[32px]">
             <span>
-              <MessageIcons />
+              {/* <MessageIcons /> */}
             </span>
             <h2 className="mt-6 text-[30px] leading-6">
               {heroAbout?.lastBottomBlock.title}
