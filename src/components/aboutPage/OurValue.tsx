@@ -17,7 +17,7 @@ export const OurValue = ({ heroAbout }: { heroAbout: any }) => {
                 className="flex flex-col justify-start items-start text-start border rounded-[12px] px-6 py-8 bg-white"
               >
                 <span>{/* <MessageIcons /> */}</span>
-                <h2 className="mt-6 text-[30px] leading-6">{item.title}</h2>
+                <h2 className="mb-6 text-[30px] leading-6">{item.title}</h2>
                 <p className="mt-2 text-[#455150] ltr:font-montserrat">
                   {item.subtitle}
                 </p>
