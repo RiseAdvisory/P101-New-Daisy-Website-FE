@@ -43,13 +43,13 @@ export default function FreshChatLoader({ lang }) {
 function getScriptContent(lang) {
   if (lang === 'ar') {
     return (
-      <>
-        {`
+        `
             function initFreshChat() {
-                window.fcWidget.init({
-                    token: "215f02d0-982e-4b15-a1a9-0ef4310c6184",
-                host: "https://trythedaisy.freshchat.com"
-                });
+              window.fcWidget.init({
+                  token: "215f02d0-982e-4b15-a1a9-0ef4310c6184",
+            host: "https://trythedaisy.freshchat.com",
+            widgetUuid: "27e333cd-109b-4bc4-b112-1fc11e01a289"
+              });
             }
             function initialize(i,t){var e;i.getElementById(t)?
             initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,
@@ -57,13 +57,11 @@ function getScriptContent(lang) {
             function initiateCall(){initialize(document,"Freshchat-js-sdk")}
             window.addEventListener?window.addEventListener("load",initiateCall,!1):
             window.attachEvent("load",initiateCall,!1);
-            `}
-      </>
+        `
     );
   } else {
     return (
-      <>
-        {`
+        `
           function initFreshChat() {
               window.fcWidget.init({
                   token: "215f02d0-982e-4b15-a1a9-0ef4310c6184",
@@ -76,8 +74,7 @@ function getScriptContent(lang) {
           function initiateCall(){initialize(document,"Freshchat-js-sdk")}
           window.addEventListener?window.addEventListener("load",initiateCall,!1):
           window.attachEvent("load",initiateCall,!1);
-          `}
-      </>
+          `
     );
   }
 }
