@@ -13,6 +13,7 @@ import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import FreshChatWidgetEn from '@/components/freshChatWidget/FreshChatWidgetEn';
 import FreshChatWidgetAr from '@/components/freshChatWidget/FreshChatWidgetAr';
+import FreshChatLoader from '@/components/freshChatWidget/FreshChatWidget';
 
 export const Footer = () => {
   const [socialLinks, setSocialLinks] = useState<any>();
@@ -35,7 +36,8 @@ export const Footer = () => {
   }, [lang]);
   return (
     <footer className="w-full bg-primary px-4 py-[124px] md:py-14 flex flex-col justify-center items-center">
-      {lang === 'ar' ? <FreshChatWidgetAr /> : <FreshChatWidgetEn />}
+      {/* {lang === 'ar' ? <FreshChatWidgetAr /> : <FreshChatWidgetEn />} */}
+      <FreshChatLoader lang={lang} />
       <Link href={'/'} className="mb-6 opacity-60">
         <LogoIconsS />
       </Link>
