@@ -25,12 +25,12 @@ export default function FreshChatLoader({ lang }) {
     const scriptContent = getScriptContent(lang);
 
     // 4) Create a new <script> and inject the full snippet
-    const newScript = document.createElement('script');
-    newScript.id = SCRIPT_ID;
-    newScript.type = 'text/javascript';
-    newScript.text = scriptContent;
+    // const newScript = document.createElement('script');
+    // newScript.id = SCRIPT_ID;
+    // newScript.type = 'text/javascript';
+    // newScript.text = scriptContent;
 
-    document.body.appendChild(newScript);
+    document.body.appendChild(scriptContent);
   }, [lang]);
 
   return null;
