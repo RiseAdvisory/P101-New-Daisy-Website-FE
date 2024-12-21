@@ -13,6 +13,7 @@ import { useChangeLanguage } from '@/store/language';
 import LockerContainer from '@/components/lockerScrollingSection/LockerContainer/LockerContainer';
 import { Skeleton } from '@/components/ui/skeleton';
 import { NoScrollingAnimationBusiness } from '@/components/noAnimationBusiness/NoAnimationBusiness';
+import FreshChatWidget from '@/components/freshChatWidget/FreshChatWidget'
 
 const Customer = () => {
   const [heroCustomer, setHeroCustomer] = useState<any>();
@@ -121,6 +122,7 @@ const Customer = () => {
             pageType="Customer"
             titleFraque={heroCustomer?.titleFraque}
           />
+          <FreshChatWidget />
         </div>
       ) : (
         <div className="w-full h-screen py-[40px] px-[20px] bg-customGreen">
