@@ -52,6 +52,7 @@ const Customer = () => {
       {heroCustomer ? (
         <div className="w-full bg-primary md:-mt-[100px]">
           <LockerContainer listInfo={dataScroll} />
+          <FreshChatWidget />
           <div className="md:hidden">
             <ul>
               {dataScroll &&
@@ -124,8 +125,8 @@ const Customer = () => {
           />
           <div>
             {/* Include the FreshChatWidget here */}
-            <FreshChatWidget />
             <h1>Welcome to the Home Page</h1>
+            <FreshChatWidget />
             <p>This page has the Freshchat widget.</p>
           </div>
         </div>
