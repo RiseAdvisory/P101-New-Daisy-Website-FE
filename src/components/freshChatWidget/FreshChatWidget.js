@@ -44,7 +44,7 @@ function getScriptContent(lang) {
   if (lang === 'ar') {
     return (
       <>
-          {`
+        {`
             function initFreshChat() {
                 window.fcWidget.init({
                     token: "215f02d0-982e-4b15-a1a9-0ef4310c6184",
@@ -63,7 +63,7 @@ function getScriptContent(lang) {
   } else {
     return (
       <>
-          {`
+        {`
           function initFreshChat() {
               window.fcWidget.init({
                   token: "215f02d0-982e-4b15-a1a9-0ef4310c6184",
