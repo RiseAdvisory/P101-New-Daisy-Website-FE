@@ -11,7 +11,8 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
-import FreshChatWidget from '@/components/freshChatWidget/FreshChatWidget';
+import FreshChatWidgetEn from '@/components/freshChatWidget/FreshChatWidgetEn';
+import FreshChatWidgetAr from '@/components/freshChatWidget/FreshChatWidgetAr';
 
 export const Footer = () => {
   const [socialLinks, setSocialLinks] = useState<any>();
@@ -34,7 +35,7 @@ export const Footer = () => {
   }, [lang]);
   return (
     <footer className="w-full bg-primary px-4 py-[124px] md:py-14 flex flex-col justify-center items-center">
-      <FreshChatWidget />
+      {lang === 'ar' ? <FreshChatWidgetAr /> : <FreshChatWidgetEn />}
       <Link href={'/'} className="mb-6 opacity-60">
         <LogoIconsS />
       </Link>

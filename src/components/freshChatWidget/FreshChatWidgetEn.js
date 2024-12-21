@@ -1,6 +1,6 @@
 import Script from 'next/script';
 
-export default function FreshChatWidget() {
+export default function FreshChatWidgetEn() {
   return (
     <>
       <Script id="freshchat-init">
