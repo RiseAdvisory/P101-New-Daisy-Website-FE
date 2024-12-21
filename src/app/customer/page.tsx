@@ -122,7 +122,12 @@ const Customer = () => {
             pageType="Customer"
             titleFraque={heroCustomer?.titleFraque}
           />
-          <FreshChatWidget />
+          <div>
+            {/* Include the FreshChatWidget here */}
+            <FreshChatWidget />
+            <h1>Welcome to the Home Page</h1>
+            <p>This page has the Freshchat widget.</p>
+          </div>
         </div>
       ) : (
         <div className="w-full h-screen py-[40px] px-[20px] bg-customGreen">
