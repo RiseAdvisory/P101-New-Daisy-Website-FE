@@ -4,7 +4,7 @@ import Script from 'next/script';
 
 export default function FreshChatLoader({ lang }) {
   useEffect(() => {
-    const SCRIPT_ID = 'freshchat-script';
+    const SCRIPT_ID = 'freshchat-init';
 
     // 1) Remove any existing Freshchat script from the DOM
     const oldScript = document.getElementById(SCRIPT_ID);
@@ -25,12 +25,12 @@ export default function FreshChatLoader({ lang }) {
     const scriptContent = getScriptContent(lang);
 
     // 4) Create a new <script> and inject the full snippet
-    // const newScript = document.createElement('script');
-    // newScript.id = SCRIPT_ID;
-    // newScript.type = 'text/javascript';
-    // newScript.text = scriptContent;
+    const newScript = document.createElement('script');
+    newScript.id = SCRIPT_ID;
+    newScript.type = 'text/javascript';
+    newScript.text = scriptContent;
 
-    document.body.appendChild(scriptContent);
+    document.body.appendChild(newScript);
   }, [lang]);
 
   return null;
@@ -44,7 +44,6 @@ function getScriptContent(lang) {
   if (lang === 'ar') {
     return (
       <>
-        <Script id="freshchat-init">
           {`
             function initFreshChat() {
                 window.fcWidget.init({
@@ -59,13 +58,11 @@ function getScriptContent(lang) {
             window.addEventListener?window.addEventListener("load",initiateCall,!1):
             window.attachEvent("load",initiateCall,!1);
             `}
-        </Script>
       </>
     );
   } else {
     return (
       <>
-        <Script id="freshchat-init">
           {`
           function initFreshChat() {
               window.fcWidget.init({
@@ -80,7 +77,6 @@ function getScriptContent(lang) {
           window.addEventListener?window.addEventListener("load",initiateCall,!1):
           window.attachEvent("load",initiateCall,!1);
           `}
-        </Script>
       </>
     );
   }
