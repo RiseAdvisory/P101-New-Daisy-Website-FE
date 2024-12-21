@@ -42,8 +42,7 @@ export default function FreshChatLoader({ lang }) {
  */
 function getScriptContent(lang) {
   if (lang === 'ar') {
-    return (
-        `
+    return `
             function initFreshChat() {
               window.fcWidget.init({
                   token: "215f02d0-982e-4b15-a1a9-0ef4310c6184",
@@ -57,11 +56,9 @@ function getScriptContent(lang) {
             function initiateCall(){initialize(document,"Freshchat-js-sdk")}
             window.addEventListener?window.addEventListener("load",initiateCall,!1):
             window.attachEvent("load",initiateCall,!1);
-        `
-    );
+        `;
   } else {
-    return (
-        `
+    return `
           function initFreshChat() {
               window.fcWidget.init({
                   token: "215f02d0-982e-4b15-a1a9-0ef4310c6184",
@@ -74,7 +71,6 @@ function getScriptContent(lang) {
           function initiateCall(){initialize(document,"Freshchat-js-sdk")}
           window.addEventListener?window.addEventListener("load",initiateCall,!1):
           window.attachEvent("load",initiateCall,!1);
-          `
-    );
+          `;
   }
 }
