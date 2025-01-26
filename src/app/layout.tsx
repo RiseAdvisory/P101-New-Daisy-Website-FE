@@ -26,8 +26,8 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
-  title: 'Daisy',
-  description: 'The Daisy app',
+  title: 'The Daisy',
+  description: 'Your Gateway To Exceptional Experiences',
   icons: {
     icon: '/favicon.ico',
   },
