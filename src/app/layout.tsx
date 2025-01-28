@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: 'The Daisy',
     images: [
       {
-        url: 'https://www.jointhedaisy.com/_next/image?url=https%3A%2F%2Fmotivated-belief-b4a000ad6e.media.strapiapp.com%2FJoin_Colleagues_336b010fe7.png&w=1080&q=75',
+        url: 'https://i.imgur.com/vnyAa0C.png',
       },
     ],
   },
