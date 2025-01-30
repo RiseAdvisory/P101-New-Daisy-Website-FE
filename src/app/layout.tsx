@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: 'The Daisy Website',
     images: [
       {
-        url: 'https://i.imgur.com/vnyAa0C.png',
+        url: 'https://i.imgur.com/MNoL6BE.jpeg',
       },
     ],
   },
