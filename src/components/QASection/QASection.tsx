@@ -87,7 +87,7 @@ const getData = async (locale: string, pageType: PageType) => {
             cache: 'no-store',
             headers: { 'Content-Language': locale },
           })
-        : await fetch(`${Constants.BASE_URL}account/faq/user/list`, {
+        : await fetch(`${Constants.BASE_URL}account/faq/customer/list`, {
             cache: 'no-store',
             headers: { 'Content-Language': locale },
           });
