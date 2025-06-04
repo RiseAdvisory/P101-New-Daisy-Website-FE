@@ -44,7 +44,7 @@ export const ExperienceDaisy = () => {
 
   return (
     <div className="md:bg-custom-gradient md:pt-[150px]">
-      <div className="pt-[80px] px-4 md:flex relative bg-primary md:mx-[63px] md:rounded-[16px]">
+      <div className="pt-[80px] px-4 md:flex md:items-start md:justify-center md:gap-10 relative bg-primary md:mx-[63px] md:rounded-[16px]">
         <div className="bg-primaryBtn w-full rounded-[9px] items-center flex justify-center overflow-hidden md:hidden relative">
           <Image
             className="absolute bottom-0 left-0"
@@ -78,15 +78,17 @@ export const ExperienceDaisy = () => {
           </motion.div>
         </div>
 
-        <Image
-          src={experienceDaisy?.phoneImage?.data?.attributes?.url}
-          alt="doublephone"
-          width={336}
-          height={684}
-          className="absolute -top-[70px] ltr:left-[60px] rtl:right-[60px] hidden md:block"
-        />
+        <div className="hidden md:flex md:w-1/2 md:justify-center md:relative">
+          <Image
+            src={experienceDaisy?.phoneImage?.data?.attributes?.url}
+            alt="doublephone"
+            width={336}
+            height={684}
+            className="relative -top-[70px]"
+          />
+        </div>
 
-        <div className="ltr:md:ml-[560px] ltr:md:mr-[114px] rtl:md:mr-[560px] rtl:md:ml-[114px] ">
+        <div className="md:w-1/2 md:px-20 mx-auto text-center md:text-left">
           <h1 className="pt-5 text-white leading-10 text-3xl">
             {experienceDaisy?.title}
           </h1>
@@ -97,7 +99,7 @@ export const ExperienceDaisy = () => {
           <p className="ltr:font-montserrat font-normal text-base pt-3 leading-8 text-[#FFFFFF] md:mt-[40px]">
             {experienceDaisy?.description}
           </p>
-          <div className="flex flex-col pb-16 md:w-[427px]">
+          <div className="flex flex-col pb-16 md:w-[427px] md:mx-0 mx-auto">
             <PlayMarketButton className="mb-6 mt-8" />
             <AppStoreButton />
           </div>
