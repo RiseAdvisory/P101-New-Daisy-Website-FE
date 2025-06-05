@@ -86,7 +86,7 @@ export const ExperienceDaisy = () => {
           className="absolute -top-[70px] ltr:left-[60px] rtl:right-[60px] hidden md:block"
         />
 
-        <div className="md:w-1/2 md:px-20 mx-auto text-center md:text-left">
+        <div className="md:w-1/2 md:px-20 mx-auto text-center ltr:md:text-left rtl:md:text-right">
           <h1 className="pt-5 text-white leading-10 text-3xl">
             {experienceDaisy?.title}
           </h1>
