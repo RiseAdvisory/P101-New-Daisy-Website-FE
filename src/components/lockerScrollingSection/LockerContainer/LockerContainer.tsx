@@ -52,6 +52,7 @@ const LockerContainer = ({ listInfo }: { listInfo: any }) => {
                 description={el?.attributes.infoScroll.description}
                 storeBurron={el?.attributes.infoScroll.storeBurron}
                 listSub={el?.attributes.infoScroll.listSub}
+                qrCode={el?.attributes.qrCode?.data?.[0]?.attributes?.url}
               />
             );
           })}

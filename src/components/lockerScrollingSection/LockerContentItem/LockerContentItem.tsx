@@ -11,13 +11,14 @@ import { CheckIcon } from '@/assets/icons/checkIcon/CheckIcon';
 
 const LockerContentItem = forwardRef(
   (
-    { objectId, text, index, description, storeBurron, listSub }: any,
+    { objectId, text, index, description, storeBurron, listSub, qrCode }: any,
     ref: any,
   ) => {
-    const qrCode = new URL(
+    const defaultQrCode = new URL(
       '/uploads/QR_https_daisylnk_com_install_app_6524ba7590.svg',
       baseURLImage,
     ).href;
+    const qrCodeUrl = qrCode || defaultQrCode;
     const container = {
       hidden: { opacity: 1, scale: 0 },
       visible: {
@@ -60,7 +61,7 @@ const LockerContentItem = forwardRef(
                 <Image
                   width={2000}
                   height={2000}
-                  src={qrCode}
+                  src={qrCodeUrl}
                   alt="qrCode"
                   className="p-4 w-[180px] h-[150px]"
                 />
