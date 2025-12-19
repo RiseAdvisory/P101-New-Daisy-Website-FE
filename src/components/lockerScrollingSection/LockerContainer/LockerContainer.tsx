@@ -36,11 +36,6 @@ const LockerContainer = ({ listInfo }: { listInfo: any }) => {
   const sortList = listInfo.sort(
     (a: any, b: any) => a.attributes.sortId - b.attributes.sortId,
   );
-  
-  // Debug: Log the data structure
-  if (listInfo && listInfo.length > 0) {
-    console.log('Scrolling section data structure:', listInfo[0]);
-  }
 
   return (
     <div className={`${styles.locker} !hidden lg:!grid `}>
@@ -57,7 +52,6 @@ const LockerContainer = ({ listInfo }: { listInfo: any }) => {
                 description={el?.attributes.infoScroll.description}
                 storeBurron={el?.attributes.infoScroll.storeBurron}
                 listSub={el?.attributes.infoScroll.listSub}
-                qrCode={el?.attributes.infoScroll?.qrCode?.data?.[0]?.attributes?.url || el?.attributes.qrCode?.data?.[0]?.attributes?.url}
               />
             );
           })}
