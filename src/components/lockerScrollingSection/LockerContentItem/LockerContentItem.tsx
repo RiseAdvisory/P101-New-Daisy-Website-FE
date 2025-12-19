@@ -15,7 +15,7 @@ const LockerContentItem = forwardRef(
     ref: any,
   ) => {
     const qrCode = new URL(
-      '/uploads/QR_https___thedaisy.link_install-app.svg',
+      '/QR_https_thedaisy_link_install_app_1_bebb385129.svg',
       baseURLImage,
     ).href;
     const container = {
