@@ -15,7 +15,7 @@ const LockerContentItem = forwardRef(
     ref: any,
   ) => {
     const qrCode = new URL(
-      '/uploads/QR_https_daisylnk_com_install_app_6524ba7590.svg',
+      'https://motivated-belief-b4a000ad6e.media.strapiapp.com/QR_https_thedaisy_link_install_app_1_bebb385129.svg',
       baseURLImage,
     ).href;
     const container = {
