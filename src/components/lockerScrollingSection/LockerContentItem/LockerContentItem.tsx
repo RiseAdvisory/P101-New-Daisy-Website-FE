@@ -18,7 +18,12 @@ const LockerContentItem = forwardRef(
       '/uploads/QR_https_daisylnk_com_install_app_6524ba7590.svg',
       baseURLImage,
     ).href;
-    const qrCodeUrl = qrCode || defaultQrCode;
+    
+    // Debug: Log the received QR code
+    console.log('QR Code received:', qrCode);
+    console.log('Store button:', storeBurron);
+    
+    const qrCodeUrl = qrCode ? new URL(qrCode, baseURLImage).href : defaultQrCode;
     const container = {
       hidden: { opacity: 1, scale: 0 },
       visible: {
