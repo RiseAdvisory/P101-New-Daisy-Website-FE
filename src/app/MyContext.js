@@ -7,7 +7,7 @@ import React, { createContext, useContext, useState } from 'react';
 const MyContext = createContext();
 
 export const MyUserTypeProvider = ({ children }) => {
-  const [userChange, setUserChange] = useState('customer');
+  const [userChange, setUserChange] = useState('business');
 
   return (
     <MyContext.Provider value={{ userChange, setUserChange }}>

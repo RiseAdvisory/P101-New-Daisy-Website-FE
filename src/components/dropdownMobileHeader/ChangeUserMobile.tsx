@@ -46,24 +46,33 @@ export const ChangeUserTypeMobile = ({
         `/options-toogles?locale=${lang}`,
       );
       const [data] = response?.data?.data;
-      setDataList(data?.attributes?.optionsToogle);
-      // setCurrentPage(data?.attributes?.optionsToogle[0].label);
+      // Filter out customer option
+      const filteredOptions = data?.attributes?.optionsToogle?.filter(
+        (option: any) => !option.path.includes('customer'),
+      );
+      setDataList(filteredOptions);
     })();
   }, [lang]);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const storedPath = localStorage.getItem('activePage');
+      let storedPath = localStorage.getItem('activePage');
+
+      // Redirect customer to business
+      if (storedPath === '/customer' || storedPath === 'customer') {
+        storedPath = '/business';
+        localStorage.setItem('activePage', '/business');
+      }
 
       if (pathname.includes('business') && !pathname.includes('features'))
         setActive('/business');
-      if (pathname.includes('customer') && !pathname.includes('features'))
-        setActive('/customer');
+      // Skip customer path check since we're hiding it
       if (pathname.includes('professional') && !pathname.includes('features'))
         setActive('/professional');
 
       if (pathname.startsWith('/features') && storedPath) {
-        const newPath = `/features/${storedPath}`;
+        const cleanPath = storedPath.replace('/', '');
+        const newPath = `/features/${cleanPath === 'customer' ? 'business' : cleanPath}`;
         if (pathname !== newPath) {
           router.replace(newPath);
         }
@@ -120,11 +129,18 @@ export const ChangeUserTypeMobile = ({
   };
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const currentPath = localStorage.getItem('activePage');
+      let currentPath = localStorage.getItem('activePage');
+
+      // Redirect customer to business
+      if (currentPath === '/customer' || currentPath === 'customer') {
+        currentPath = '/business';
+        localStorage.setItem('activePage', '/business');
+      }
+
       if (currentPath) setActive(currentPath);
-      if (currentPath === '/customer') setCurrentPage(dataList?.[0].label);
-      if (currentPath === '/business') setCurrentPage(dataList?.[1].label);
-      if (currentPath === '/professional') setCurrentPage(dataList?.[2].label);
+      // Update indices since we filtered out customer (now business is [0], professional is [1])
+      if (currentPath === '/business') setCurrentPage(dataList?.[0]?.label);
+      if (currentPath === '/professional') setCurrentPage(dataList?.[1]?.label);
     }
   }, [dataList, lang]);
   const { changePage } = useChangePage();
