@@ -9,11 +9,13 @@ The Daisy is a multi-user type web application built with Next.js 14, featuring 
 ## Tech Stack
 
 ### Core Framework
+
 - **Next.js 14** with App Router
 - **TypeScript** for type safety
 - **React 18** with Server Components
 
 ### Styling & UI
+
 - **Tailwind CSS** with custom design system
 - **Radix UI** primitives for accessible components
 - **Framer Motion** for animations
@@ -21,12 +23,14 @@ The Daisy is a multi-user type web application built with Next.js 14, featuring 
 - **Lucide React** for icons
 
 ### State Management & Data
+
 - **Zustand** for client-side state management
 - **React Hook Form** with **Zod** validation
 - **Axios** for API calls
 - **Strapi CMS** backend (API endpoints via env vars)
 
 ### Development Tools
+
 - **ESLint** & **Prettier** for code quality
 - **Husky** & **lint-staged** for pre-commit hooks
 
@@ -82,6 +86,7 @@ src/
 ## Key Architecture Patterns
 
 ### 1. Multi-User Type System
+
 - Three user types: `customer`, `business`, `professional`
 - User type context via `MyContext.js` wraps entire app
 - Zustand store (`chooseTabs.ts`) manages active user type
@@ -89,6 +94,7 @@ src/
 - Type-specific routing under `/features/*`
 
 ### 2. Internationalization (i18n)
+
 - Arabic/English language support
 - RTL/LTR direction switching
 - Font switching: Open Sans (English) vs Cairo (Arabic)
@@ -96,6 +102,7 @@ src/
 - Full page reload on language change for proper re-render
 
 ### 3. Routing & Redirects
+
 ```javascript
 // next.config.mjs redirects
 '/' → '/customer'
@@ -103,12 +110,14 @@ src/
 ```
 
 ### 4. SEO & Bot Optimization
+
 - Prerender.io integration for bot traffic (middleware.js)
 - Custom bot detection for social media crawlers
 - Open Graph metadata in layout.tsx
 - Sitemap support
 
 ### 5. Component Patterns
+
 - **Page Components**: Located in `app/[page]/page.tsx`
 - **Feature Components**: Organized by page in `components/[page]Page/`
 - **Shared UI**: Reusable primitives in `components/ui/`
@@ -116,6 +125,7 @@ src/
 - **Form Components**: React Hook Form with Zod schemas
 
 ### 6. State Management
+
 ```typescript
 // Example Zustand store pattern
 interface ILanguageStore {
@@ -135,6 +145,7 @@ export const useChangeLanguage = create<ILanguageStore>((set) => ({
 ```
 
 ### 7. API Integration
+
 - Strapi CMS backend
 - Environment variables:
   - `NEXT_PUBLIC_STRAPI_URL`: API base URL
@@ -143,6 +154,7 @@ export const useChangeLanguage = create<ILanguageStore>((set) => ({
 - API calls scattered throughout page components
 
 ### 8. Styling System
+
 - Tailwind CSS with custom configuration
 - Design tokens in `tailwind.config.ts`:
   - Custom colors: `primary`, `primaryBtn`, `customGreen`, etc.
@@ -154,6 +166,7 @@ export const useChangeLanguage = create<ILanguageStore>((set) => ({
 ## Key Features
 
 ### Global Features
+
 - Responsive mobile-first design
 - Multi-language support (EN/AR) with RTL
 - User type switching (Customer/Business/Professional)
@@ -165,36 +178,42 @@ export const useChangeLanguage = create<ILanguageStore>((set) => ({
 ### Page-Specific Features
 
 #### Customer Portal
+
 - Hero section with app download CTAs
 - Growth/benefits showcase
 - Experience sections with animations
 - Join the Daisy CTA sections
 
-#### Business Portal  
+#### Business Portal
+
 - Partner application form
 - Mission & values sections
 - Growth metrics display
 - Multi-step form with validation
 
 #### Professional Portal
+
 - Professional-focused hero
 - Service listings
 - Specialized features carousel
 
 #### Features Pages
+
 - Tab-based navigation per user type
 - Mobile carousel view
 - Desktop column view
 - Feature comparison lists
 
 #### Resources Section
+
 - Blog posts with categories
 - Video tutorials with tabs
-- Customer testimonials  
+- Customer testimonials
 - Product updates
 - Legal documentation
 
 #### Pricing Page
+
 - Interactive pricing calculator
 - Tiered pricing cards
 - Enterprise options
@@ -203,6 +222,7 @@ export const useChangeLanguage = create<ILanguageStore>((set) => ({
 ## Development Workflow
 
 ### Commands
+
 ```bash
 npm run dev        # Start dev server (localhost:3000)
 npm run build      # Production build
@@ -212,11 +232,14 @@ npm run format     # Prettier formatting
 ```
 
 ### Git Hooks
+
 - Pre-commit: Runs linting and formatting via Husky
 - Lint-staged config for TS, JSON, CSS, MD files
 
 ### Environment Setup
+
 Required `.env.local`:
+
 ```
 NEXT_PUBLIC_STRAPI_URL=https://your-strapi-url.com
 NEXT_PUBLIC_STRAPI_URL_IMAGE=https://your-cdn-url.com
@@ -226,12 +249,13 @@ PRERENDER_TOKEN=your-prerender-token
 ## Common Patterns & Conventions
 
 ### Component File Structure
+
 ```tsx
 // Import icons/images
 import { IconName } from '@/assets/icons/...';
 import imageName from '@/assets/images/...';
 
-// Import UI components  
+// Import UI components
 import { Button } from '@/components/ui/button';
 
 // Component with typed props
@@ -243,21 +267,20 @@ interface ComponentProps {
 export const ComponentName = ({ title }: ComponentProps) => {
   // Hooks first
   const { lang } = useChangeLanguage();
-  
+
   // Render
-  return (
-    <div className="...">
-      {/* Content */}
-    </div>
-  );
+  return <div className="...">{/* Content */}</div>;
 };
 ```
 
 ### Form Pattern
+
 ```tsx
 const form = useForm<FormData>({
   resolver: zodResolver(formSchema),
-  defaultValues: { /* ... */ }
+  defaultValues: {
+    /* ... */
+  },
 });
 
 const onSubmit = async (data: FormData) => {
@@ -271,11 +294,13 @@ const onSubmit = async (data: FormData) => {
 ```
 
 ### Multi-Language Text
+
 - Text content often passed as props from page components
 - Some components have hardcoded English/Arabic conditionals
 - No centralized i18n solution - text is component-specific
 
 ### Responsive Design
+
 - Mobile-first approach
 - Common breakpoints:
   - `md:` for tablet (768px+)
@@ -296,11 +321,13 @@ const onSubmit = async (data: FormData) => {
 10. **User Flow**: Default redirect to customer portal, manual switching between types
 
 ## Recent Changes
+
 - Added `@anthropic-ai/claude-code` package (v2.0.73)
 - Working on minor updates branch
 - Recent commits related to QR code implementation
 
 ## Deployment Considerations
+
 - Prerender.io token required for SEO
 - Strapi backend must be configured
 - Environment variables must be set

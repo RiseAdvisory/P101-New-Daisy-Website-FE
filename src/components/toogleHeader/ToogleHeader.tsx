@@ -25,7 +25,7 @@ const ToggleButton = ({ className }: { className?: string }) => {
       const [data] = response?.data?.data;
       // Filter out customer option
       const filteredOptions = data?.attributes?.optionsToogle?.filter(
-        (option: any) => !option.path.includes('customer')
+        (option: any) => !option.path.includes('customer'),
       );
       setDataList(filteredOptions);
     })();
@@ -34,7 +34,7 @@ const ToggleButton = ({ className }: { className?: string }) => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       let storedPath = localStorage.getItem('activePage');
-      
+
       // Redirect customer to business
       if (storedPath === '/customer' || storedPath === 'customer') {
         storedPath = '/business';

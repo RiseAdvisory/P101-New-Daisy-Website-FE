@@ -48,7 +48,7 @@ export const ChangeUserTypeMobile = ({
       const [data] = response?.data?.data;
       // Filter out customer option
       const filteredOptions = data?.attributes?.optionsToogle?.filter(
-        (option: any) => !option.path.includes('customer')
+        (option: any) => !option.path.includes('customer'),
       );
       setDataList(filteredOptions);
     })();
@@ -57,7 +57,7 @@ export const ChangeUserTypeMobile = ({
   useEffect(() => {
     if (typeof window !== 'undefined') {
       let storedPath = localStorage.getItem('activePage');
-      
+
       // Redirect customer to business
       if (storedPath === '/customer' || storedPath === 'customer') {
         storedPath = '/business';
@@ -130,13 +130,13 @@ export const ChangeUserTypeMobile = ({
   useEffect(() => {
     if (typeof window !== 'undefined') {
       let currentPath = localStorage.getItem('activePage');
-      
+
       // Redirect customer to business
       if (currentPath === '/customer' || currentPath === 'customer') {
         currentPath = '/business';
         localStorage.setItem('activePage', '/business');
       }
-      
+
       if (currentPath) setActive(currentPath);
       // Update indices since we filtered out customer (now business is [0], professional is [1])
       if (currentPath === '/business') setCurrentPage(dataList?.[0]?.label);
