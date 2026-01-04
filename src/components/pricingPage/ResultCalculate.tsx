@@ -20,15 +20,16 @@ export const ResultCalculate = ({
   dataPricing: any;
 }) => {
   const resultList = dataPricing?.resetCalculation?.resultOption;
-  const { workspace, country, staff } = useCalculate();
+  const { workspace, country, staff, provideHome } = useCalculate();
 
-  const { plan, price } = useCurrentPlan();
-  const staffCount = staff > 1 ? (staff - 1) * 10 : 0;
-  const workspaceCount = workspace > 1 ? (workspace - 1) * 25 : 0;
-  const countryCount = country > 1 ? (country - 1) * 50 : 0;
-  const totalCount = staffCount + workspaceCount + countryCount;
+  const { plan, price, priceYear } = useCurrentPlan();
 
-  let cleanedAmount = price ? price.replace('$', '') : 60;
+  // Parse prices - remove $ if present and convert to number
+  const monthlyPrice = price ? Number(price.replace('$', '')) : 0;
+  const annualPrice = priceYear ? Number(priceYear.replace('$', '')) : 0;
+
+  // Calculate effective workspace count (including home services)
+  const effectiveWorkspaces = Number(workspace) + (provideHome ? 1 : 0);
   return (
     <div ref={calculationFormRef} className=" scroll-mt-[300px]">
       <div className="mt-6 md:p-6 md:border md:rounded-[16px]">
@@ -73,24 +74,26 @@ export const ResultCalculate = ({
           <div className=" md:w-[50%]  md:border-l md:py-[20px] md:px-6">
             <div className="flex justify-between">
               <h3 className="text-[#455150] ltr:font-montserrat text-base font-medium">
-                {plan}:
+                {dataPricing?.resetCalculation?.staff}:
               </h3>
               <p className="text-[#172524] text-[14px] leading-5 ltr:font-montserrat font-medium ">
-                {price}
-                <span className="text-[#455150] font-normal">
-                  / {dataPricing?.resetCalculation?.month}
-                </span>
+                {staff}
               </p>
             </div>
             <div className="flex justify-between mt-3">
               <h3 className="text-[#455150] ltr:font-montserrat text-base font-medium">
-                {staff} {dataPricing?.resetCalculation?.staff}:
+                {dataPricing?.resetCalculation?.workspaces || 'Workspaces'}:
               </h3>
               <p className="text-[#172524] text-[14px] leading-5 ltr:font-montserrat font-medium ">
-                ${staffCount}
-                <span className="text-[#455150] font-normal">
-                  / {dataPricing?.resetCalculation?.month}
-                </span>
+                {effectiveWorkspaces}
+              </p>
+            </div>
+            <div className="flex justify-between mt-3">
+              <h3 className="text-[#455150] ltr:font-montserrat text-base font-medium">
+                {dataPricing?.resetCalculation?.countries || 'Countries'}:
+              </h3>
+              <p className="text-[#172524] text-[14px] leading-5 ltr:font-montserrat font-medium ">
+                {country}
               </p>
             </div>
           </div>
@@ -112,11 +115,7 @@ export const ResultCalculate = ({
                   })}
                 >
                   <p className="ltr:font-montserrat font-semibold text-[20px] leading-[30px]">
-                    $
-                    {+cleanedAmount +
-                      staffCount +
-                      workspaceCount +
-                      countryCount}
+                    ${monthlyPrice}
                     <span className="ltr:font-montserrat text-[#455150] font-normal  md:text-[16px] md:leading-[18px] ml-2">
                       <span className="hidden md:inline">
                         {dataPricing?.resetCalculation?.per}
@@ -142,12 +141,7 @@ export const ResultCalculate = ({
                   })}
                 >
                   <p className="ltr:font-montserrat font-semibold text-[20px] leading-[30px]">
-                    $
-                    {(+cleanedAmount +
-                      staffCount +
-                      workspaceCount +
-                      countryCount) *
-                      10}
+                    ${annualPrice}
                     <span className="ltr:font-montserrat text-[#455150] font-normal  md:text-[16px] md:leading-[18px] ml-2">
                       <span className="hidden md:inline">
                         {dataPricing?.resetCalculation?.per}

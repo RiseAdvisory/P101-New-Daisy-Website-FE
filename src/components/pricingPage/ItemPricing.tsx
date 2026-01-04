@@ -22,6 +22,7 @@ export const ItemCardPricing = ({
   textRecomended,
   titlePricing,
   currentPrices,
+  currentPricesYear,
   refGridCardRef,
 }: {
   title: string;
@@ -37,6 +38,7 @@ export const ItemCardPricing = ({
   textRecomended: any;
   titlePricing: string[];
   currentPrices: string[];
+  currentPricesYear: string[];
   refGridCardRef: any;
 }) => {
   const [showAll, setShowAll] = useState(false);
@@ -64,7 +66,7 @@ export const ItemCardPricing = ({
       if (staffNum <= 5 && effectiveWorkspaces <= 1 && countryNum <= 1) {
         setCurrentPlanBus(titlePricing[0]); // Basic
         changePlan(titlePricing[0]);
-        setPricing(currentPrices[0]);
+        setPricing(currentPrices[0], currentPricesYear[0]);
       } else if (
         staffNum <= 10 &&
         effectiveWorkspaces <= 2 &&
@@ -72,11 +74,11 @@ export const ItemCardPricing = ({
       ) {
         setCurrentPlanBus(titlePricing[1]); // Growth
         changePlan(titlePricing[1]);
-        setPricing(currentPrices[1]);
+        setPricing(currentPrices[1], currentPricesYear[1]);
       } else {
         setCurrentPlanBus(titlePricing[2]); // Business
         changePlan(titlePricing[2]);
-        setPricing(currentPrices[2]);
+        setPricing(currentPrices[2], currentPricesYear[2]);
       }
     } else {
       // Professional tiers: Starter (1 user, 1 workspace, 1 country),
@@ -85,15 +87,15 @@ export const ItemCardPricing = ({
       if (staffNum <= 1 && effectiveWorkspaces <= 1 && countryNum <= 1) {
         setCurrentPlanProf('Starter');
         changePlan(titlePricing[0]);
-        setPricing(currentPrices[0]);
+        setPricing(currentPrices[0], currentPricesYear[0]);
       } else if (effectiveWorkspaces <= 1 && countryNum <= 1) {
         setCurrentPlanProf('Professional');
         changePlan(titlePricing[1]);
-        setPricing(currentPrices[1]);
+        setPricing(currentPrices[1], currentPricesYear[1]);
       } else {
         setCurrentPlanProf('Elite');
         changePlan(titlePricing[2]);
-        setPricing(currentPrices[2]);
+        setPricing(currentPrices[2], currentPricesYear[2]);
       }
     }
   }, [
@@ -104,6 +106,7 @@ export const ItemCardPricing = ({
     activePricingPage,
     titlePricing,
     currentPrices,
+    currentPricesYear,
     changePlan,
     setPricing,
   ]);
