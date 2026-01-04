@@ -43,32 +43,70 @@ export const ItemCardPricing = ({
   const [currentPlanBus, setCurrentPlanBus] = useState('');
   const [currentPlanProf, setCurrentPlanProf] = useState('');
   const { changePlan, setPricing } = useCurrentPlan();
-  const { staff, branch } = useCalculate();
+  const { staff, workspace, country, provideHome } = useCalculate();
   const currentPrice = !chechedAnnualy ? price : priceYear;
-  const isRecommended = title === currentPlanBus;
+  const isRecommended =
+    activePricingPage === 'business'
+      ? title === currentPlanBus
+      : title === currentPlanProf;
   const defaulText = textRecomended?.textItemPricing;
   useEffect(() => {
-    if (staff <= 3 || branch <= 1) {
-      setCurrentPlanBus(titlePricing[0]);
-      changePlan(titlePricing[0]);
-      setPricing(currentPrices[0]);
-      setCurrentPlanProf('Starter');
-    }
-    if ((staff > 3 && staff <= 8) || (branch > 1 && branch < 3)) {
-      setCurrentPlanBus(titlePricing[1]);
-      changePlan(titlePricing[1]);
-      setPricing(currentPrices[1]);
+    const staffNum = Number(staff) || 1;
+    const workspaceNum = Number(workspace) || 1;
+    const countryNum = Number(country) || 1;
+    // Home services count as an additional workspace
+    const effectiveWorkspaces = workspaceNum + (provideHome ? 1 : 0);
 
-      setCurrentPlanProf('Professional');
+    if (activePricingPage === 'business') {
+      // Business tiers: Basic (5 users, 1 workspace, 1 country),
+      // Growth (10 users, 2 workspaces, 1 country),
+      // Business (15 users, 4 workspaces, 1 country)
+      if (staffNum <= 5 && effectiveWorkspaces <= 1 && countryNum <= 1) {
+        setCurrentPlanBus(titlePricing[0]); // Basic
+        changePlan(titlePricing[0]);
+        setPricing(currentPrices[0]);
+      } else if (
+        staffNum <= 10 &&
+        effectiveWorkspaces <= 2 &&
+        countryNum <= 1
+      ) {
+        setCurrentPlanBus(titlePricing[1]); // Growth
+        changePlan(titlePricing[1]);
+        setPricing(currentPrices[1]);
+      } else {
+        setCurrentPlanBus(titlePricing[2]); // Business
+        changePlan(titlePricing[2]);
+        setPricing(currentPrices[2]);
+      }
+    } else {
+      // Professional tiers: Starter (1 user, 1 workspace, 1 country),
+      // Professional (1 user, 1 workspace, 1 country),
+      // Elite (1 user, 2 workspaces, 2 countries)
+      if (staffNum <= 1 && effectiveWorkspaces <= 1 && countryNum <= 1) {
+        setCurrentPlanProf('Starter');
+        changePlan(titlePricing[0]);
+        setPricing(currentPrices[0]);
+      } else if (effectiveWorkspaces <= 1 && countryNum <= 1) {
+        setCurrentPlanProf('Professional');
+        changePlan(titlePricing[1]);
+        setPricing(currentPrices[1]);
+      } else {
+        setCurrentPlanProf('Elite');
+        changePlan(titlePricing[2]);
+        setPricing(currentPrices[2]);
+      }
     }
-    if (staff > 8 || branch > 5) {
-      setCurrentPlanBus(titlePricing[2]);
-      changePlan(titlePricing[2]);
-      setPricing(currentPrices[2]);
-
-      setCurrentPlanProf('Elite');
-    }
-  }, [staff, branch]);
+  }, [
+    staff,
+    workspace,
+    country,
+    provideHome,
+    activePricingPage,
+    titlePricing,
+    currentPrices,
+    changePlan,
+    setPricing,
+  ]);
   return (
     <>
       <li

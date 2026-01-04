@@ -18,8 +18,8 @@ const About = () => {
           `/about-pages?populate=*&locale=${lang}`,
         );
         setHeroAbout(response?.data?.data[0]?.attributes);
-      } catch (error) {
-        console.error(error);
+      } catch {
+        // Error fetching about page data
       }
     })();
   }, [lang]);

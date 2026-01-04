@@ -34,7 +34,7 @@ const nextConfig = {
     ],
     domains: ['localhost'],
   },
-  reactStrictMode: false,
+  reactStrictMode: true,
 };
 
 export default nextConfig;

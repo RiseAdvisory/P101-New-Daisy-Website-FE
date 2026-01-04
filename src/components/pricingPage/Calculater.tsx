@@ -13,7 +13,7 @@ export const Calculater = ({
   titleTypeCalculate,
   overflowText,
 }: any) => {
-  const { branch, country, setCalculate, staff } = useCalculate();
+  const { workspace, country, setCalculate, staff } = useCalculate();
 
   return (
     <>
@@ -49,10 +49,10 @@ export const Calculater = ({
               </p>
             </div>
             <Input
-              onChange={(e) => setCalculate({ branch: e.target.value })}
+              onChange={(e) => setCalculate({ workspace: e.target.value })}
               className="w-full md:w-20 md:ml-8 mt-4 md:mt-0 focus:border-[#A67F6B] text-center py-2"
               type="number"
-              defaultValue={branch}
+              defaultValue={workspace}
               min="1"
             />
           </div>

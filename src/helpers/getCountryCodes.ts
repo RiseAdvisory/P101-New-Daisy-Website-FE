@@ -16,9 +16,8 @@ export const getData = async () => {
     if (!responseData.status) throw new Error('No data found');
 
     return responseData.data.countries;
-  } catch (error) {
-    console.error('An error occurred while fetching the data:', error);
-    // You can return a default value or throw the error to handle it in the component
+  } catch {
+    // Error fetching country codes
     return null;
   }
 };

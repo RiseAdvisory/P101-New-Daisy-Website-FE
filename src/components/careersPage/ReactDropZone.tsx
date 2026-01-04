@@ -30,8 +30,7 @@ function getMonthName(month: number) {
 const DropZoneUpload = ({ setFiles, files, dataCareers }: any) => {
   const [isDragActive, setIsDragActive] = useState(false);
 
-  const onDropRejected = useCallback((fileRejections: FileRejection[]) => {
-    console.error(fileRejections[0].errors);
+  const onDropRejected = useCallback(() => {
     setIsDragActive(false);
   }, []);
 

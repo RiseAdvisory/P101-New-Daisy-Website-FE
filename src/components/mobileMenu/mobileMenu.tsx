@@ -43,8 +43,8 @@ export const MobileMenu = () => {
         const [list] = responseList?.data?.data;
         setListNav(list?.attributes);
         setGetTheApp(data?.attributes?.getTheApp);
-      } catch (error) {
-        console.log(error);
+      } catch {
+        // Error fetching mobile menu data
       }
     })();
   }, [lang]);

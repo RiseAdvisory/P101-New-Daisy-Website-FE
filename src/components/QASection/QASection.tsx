@@ -101,9 +101,8 @@ const getData = async (locale: string, pageType: PageType) => {
     if (!responseData.status) throw new Error('No data found');
 
     return responseData.data;
-  } catch (error) {
-    console.error('An error occurred while fetching the data:', error);
-    // You can return a default value or throw the error to handle it in the component
+  } catch {
+    // Error fetching FAQ data
     return null;
   }
 };

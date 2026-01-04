@@ -17,8 +17,8 @@ const Contacts = () => {
           `/contact-pages?locale=${lang}`,
         );
         setContacts(response?.data?.data?.[0].attributes);
-      } catch (error) {
-        console.error(error);
+      } catch {
+        // Error fetching contact page data
       }
     })();
   }, [lang]);

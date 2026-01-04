@@ -63,8 +63,8 @@ export const FormCV = ({
         },
       );
       setUploadSucces(response.status);
-    } catch (error) {
-      console.error('Error submitting form:', error);
+    } catch {
+      // Error submitting form
     }
 
     form.reset();

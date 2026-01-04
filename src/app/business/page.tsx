@@ -43,8 +43,8 @@ const Business = () => {
         );
         setHeroBusiness(response?.data?.data?.[0]?.attributes);
         setGrowth(responseGrowth?.data?.data?.[0]?.attributes);
-      } catch (error) {
-        console.error(error);
+      } catch {
+        // Error fetching business page data
         handleLoadingStatus(false);
       } finally {
         handleLoadingStatus(false);
@@ -60,8 +60,8 @@ const Business = () => {
         const randomPartners = getRandomElements(listPartners, 60);
         handleArray(randomPartners);
       })();
-    } catch (error) {
-      console.log(error);
+    } catch {
+      // Error fetching partners data
     }
   }, [handleArray, handleLoadingStatus]);
 

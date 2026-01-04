@@ -26,8 +26,8 @@ export const OurPartnersSection = ({
         } = await axiosInstance.get(`/partners?locale=${lang}`);
 
         setOurPartners(data);
-      } catch (error) {
-        console.error(error);
+      } catch {
+        // Error fetching partners data
       }
     })();
   }, [lang]);
@@ -39,8 +39,8 @@ export const OurPartnersSection = ({
         const randomPartners = getRandomElements(listPartners, 60);
         handleArray(randomPartners);
       })();
-    } catch (error) {
-      console.log(error);
+    } catch {
+      // Error loading partners
     }
   }, [handleArray, handleLoadingStatus]);
 

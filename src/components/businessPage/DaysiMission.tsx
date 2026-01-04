@@ -20,8 +20,8 @@ export const DaysiMission = () => {
           `/daisymissions?locale=${lang}`,
         );
         setDaisyMission(response?.data?.data?.[0]?.attributes);
-      } catch (error) {
-        console.error(error);
+      } catch {
+        // Error fetching daisy missions
       }
     })();
   }, [lang]);

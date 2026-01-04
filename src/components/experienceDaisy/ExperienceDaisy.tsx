@@ -36,8 +36,8 @@ export const ExperienceDaisy = () => {
           `/${endpointExperienceDaisyLink}?populate=*&locale=${lang}`,
         );
         setExperienceDaisy(response?.data?.data?.[0]?.attributes);
-      } catch (error) {
-        console.error(error);
+      } catch {
+        // Error fetching experience daisy data
       }
     })();
   }, [lang, currentPage]);

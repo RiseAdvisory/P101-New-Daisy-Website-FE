@@ -27,8 +27,8 @@ const Features = () => {
           (a: any, b: any) => a.sortId - b.sortId,
         );
         setDataListBlog(sortedObjects);
-      } catch (error) {
-        console.log(error);
+      } catch {
+        // Error fetching customer features
       }
     })();
   }, [lang]);

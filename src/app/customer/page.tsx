@@ -40,8 +40,8 @@ const Customer = () => {
         );
         setGrowth(responseGrowth?.data?.data?.[0].attributes);
         setHeroCustomer(response?.data?.data?.[0].attributes);
-      } catch (error) {
-        console.error(error);
+      } catch {
+        // Error fetching customer page data
       }
     })();
   }, [lang]);

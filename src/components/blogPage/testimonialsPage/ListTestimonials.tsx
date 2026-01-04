@@ -47,8 +47,8 @@ export const TestimonialsCustomerList = ({
           `/${endpointTutorialInfos}?populate=*&locale=${lang}`,
         );
         setListTestimonials(response?.data?.data || []);
-      } catch (error) {
-        console.log(error);
+      } catch {
+        // Error fetching testimonials
       }
     })();
   }, [lang, currentPage]);

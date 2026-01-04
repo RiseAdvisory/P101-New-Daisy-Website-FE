@@ -20,13 +20,13 @@ export const ResultCalculate = ({
   dataPricing: any;
 }) => {
   const resultList = dataPricing?.resetCalculation?.resultOption;
-  const { branch, country, staff } = useCalculate();
+  const { workspace, country, staff } = useCalculate();
 
   const { plan, price } = useCurrentPlan();
   const staffCount = staff > 1 ? (staff - 1) * 10 : 0;
-  const branchCount = branch > 1 ? (branch - 1) * 25 : 0;
+  const workspaceCount = workspace > 1 ? (workspace - 1) * 25 : 0;
   const countryCount = country > 1 ? (country - 1) * 50 : 0;
-  const totalCount = staffCount + branchCount + countryCount;
+  const totalCount = staffCount + workspaceCount + countryCount;
 
   let cleanedAmount = price ? price.replace('$', '') : 60;
   return (
@@ -112,7 +112,11 @@ export const ResultCalculate = ({
                   })}
                 >
                   <p className="ltr:font-montserrat font-semibold text-[20px] leading-[30px]">
-                    ${+cleanedAmount + staffCount + branchCount + countryCount}
+                    $
+                    {+cleanedAmount +
+                      staffCount +
+                      workspaceCount +
+                      countryCount}
                     <span className="ltr:font-montserrat text-[#455150] font-normal  md:text-[16px] md:leading-[18px] ml-2">
                       <span className="hidden md:inline">
                         {dataPricing?.resetCalculation?.per}
@@ -141,7 +145,7 @@ export const ResultCalculate = ({
                     $
                     {(+cleanedAmount +
                       staffCount +
-                      branchCount +
+                      workspaceCount +
                       countryCount) *
                       10}
                     <span className="ltr:font-montserrat text-[#455150] font-normal  md:text-[16px] md:leading-[18px] ml-2">

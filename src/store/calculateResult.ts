@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 interface ICalculateState {
   staff: any;
-  branch: any;
+  workspace: any;
   country: any;
   provideHome: boolean;
   assistantOnboard: boolean;
@@ -12,7 +12,7 @@ interface ICalculateState {
 
 export const useCalculate = create<ICalculateState>((set) => ({
   staff: '1',
-  branch: '1',
+  workspace: '1',
   country: '1',
   provideHome: false,
   assistantOnboard: false,
@@ -26,7 +26,7 @@ export const useCalculate = create<ICalculateState>((set) => ({
   setDefaults: () => {
     set({
       staff: '1',
-      branch: '1',
+      workspace: '1',
       country: '1',
       provideHome: false,
       assistantOnboard: false,

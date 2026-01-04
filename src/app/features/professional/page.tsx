@@ -27,8 +27,8 @@ const Professional = () => {
           (a: any, b: any) => a.sortId - b.sortId,
         );
         setDataListProfessional(sortedObjects);
-      } catch (error) {
-        console.log(error);
+      } catch {
+        // Error fetching professional features
       }
     })();
   }, [lang]);
