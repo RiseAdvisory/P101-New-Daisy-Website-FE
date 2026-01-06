@@ -15,26 +15,76 @@ const ADDITIONAL_COUNTRY_PRICE = 50;
 
 // Tier configurations
 const BUSINESS_TIERS = [
-  { name: 'Basic', basePrice: 50, basePriceYear: 42, staff: 5, workspaces: 1, countries: 1 },
-  { name: 'Growth', basePrice: 150, basePriceYear: 128, staff: 10, workspaces: 2, countries: 1 },
-  { name: 'Business', basePrice: 250, basePriceYear: 208, staff: 15, workspaces: 4, countries: 1 },
+  {
+    name: 'Basic',
+    basePrice: 50,
+    basePriceYear: 42,
+    staff: 5,
+    workspaces: 1,
+    countries: 1,
+  },
+  {
+    name: 'Growth',
+    basePrice: 150,
+    basePriceYear: 128,
+    staff: 10,
+    workspaces: 2,
+    countries: 1,
+  },
+  {
+    name: 'Business',
+    basePrice: 250,
+    basePriceYear: 208,
+    staff: 15,
+    workspaces: 4,
+    countries: 1,
+  },
 ];
 
 const PROFESSIONAL_TIERS = [
-  { name: 'Starter', basePrice: 0, basePriceYear: 0, staff: 1, workspaces: 1, countries: 1 },
-  { name: 'Professional', basePrice: 50, basePriceYear: 500, staff: 1, workspaces: 1, countries: 1 },
-  { name: 'Elite', basePrice: 100, basePriceYear: 1000, staff: 1, workspaces: 2, countries: 2 },
+  {
+    name: 'Starter',
+    basePrice: 0,
+    basePriceYear: 0,
+    staff: 1,
+    workspaces: 1,
+    countries: 1,
+  },
+  {
+    name: 'Professional',
+    basePrice: 50,
+    basePriceYear: 500,
+    staff: 1,
+    workspaces: 1,
+    countries: 1,
+  },
+  {
+    name: 'Elite',
+    basePrice: 100,
+    basePriceYear: 1000,
+    staff: 1,
+    workspaces: 2,
+    countries: 2,
+  },
 ];
 
 // Calculate total cost for a tier given requirements
 const calculateTierTotalCost = (
-  tier: { basePrice: number; staff: number; workspaces: number; countries: number },
+  tier: {
+    basePrice: number;
+    staff: number;
+    workspaces: number;
+    countries: number;
+  },
   requiredStaff: number,
   requiredWorkspaces: number,
-  requiredCountries: number
+  requiredCountries: number,
 ) => {
   const additionalStaff = Math.max(0, requiredStaff - tier.staff);
-  const additionalWorkspaces = Math.max(0, requiredWorkspaces - tier.workspaces);
+  const additionalWorkspaces = Math.max(
+    0,
+    requiredWorkspaces - tier.workspaces,
+  );
   const additionalCountries = Math.max(0, requiredCountries - tier.countries);
 
   return (
@@ -50,13 +100,18 @@ const findCheapestTier = (
   tiers: typeof BUSINESS_TIERS,
   requiredStaff: number,
   requiredWorkspaces: number,
-  requiredCountries: number
+  requiredCountries: number,
 ) => {
   let cheapestIndex = 0;
   let cheapestCost = Infinity;
 
   tiers.forEach((tier, index) => {
-    const totalCost = calculateTierTotalCost(tier, requiredStaff, requiredWorkspaces, requiredCountries);
+    const totalCost = calculateTierTotalCost(
+      tier,
+      requiredStaff,
+      requiredWorkspaces,
+      requiredCountries,
+    );
     if (totalCost < cheapestCost) {
       cheapestCost = totalCost;
       cheapestIndex = index;
@@ -123,13 +178,16 @@ export const ItemCardPricing = ({
         BUSINESS_TIERS,
         staffNum,
         effectiveWorkspaces,
-        countryNum
+        countryNum,
       );
       const selectedTier = BUSINESS_TIERS[cheapestIndex];
 
       setCurrentPlanBus(titlePricing[cheapestIndex]);
       changePlan(titlePricing[cheapestIndex]);
-      setPricing(currentPrices[cheapestIndex], currentPricesYear[cheapestIndex]);
+      setPricing(
+        currentPrices[cheapestIndex],
+        currentPricesYear[cheapestIndex],
+      );
       setTierLimits({
         includedStaff: selectedTier.staff,
         includedWorkspaces: selectedTier.workspaces,
@@ -141,13 +199,16 @@ export const ItemCardPricing = ({
         PROFESSIONAL_TIERS,
         staffNum,
         effectiveWorkspaces,
-        countryNum
+        countryNum,
       );
       const selectedTier = PROFESSIONAL_TIERS[cheapestIndex];
 
       setCurrentPlanProf(titlePricing[cheapestIndex]);
       changePlan(titlePricing[cheapestIndex]);
-      setPricing(currentPrices[cheapestIndex], currentPricesYear[cheapestIndex]);
+      setPricing(
+        currentPrices[cheapestIndex],
+        currentPricesYear[cheapestIndex],
+      );
       setTierLimits({
         includedStaff: selectedTier.staff,
         includedWorkspaces: selectedTier.workspaces,
