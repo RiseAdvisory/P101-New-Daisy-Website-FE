@@ -245,16 +245,16 @@ export const ItemCardPricing = ({
       <li
         // ref={isRecommended && isRescomennded ? refGridCardRef : null}
         className={cn(
-          'flex bg-white flex-col justify-center items-center text-center first:mt-0 mt-10 md:mt-0 pt-10 md:pt-10 border rounded-[16px] relative overflow-hidden first-border-[2px] ',
+          'flex bg-white flex-col justify-center items-center text-center first:mt-0 mt-10 md:mt-0 pt-10 md:pt-10 border rounded-[16px] relative overflow-hidden',
           {
-            'first:border-[#A67F6B] scroll-mt-[1000px]':
+            'border-[2px] border-[#A67F6B] shadow-lg shadow-[#A67F6B]/20 scroll-mt-[1000px]':
               isRecommended && isRescomennded,
           },
         )}
       >
         {isRecommended && isRescomennded && (
           <p
-            className="absolute first:block hidden top-0 left-0 right-0 text-center text-[#A67F6B] bg-[#EDE5E1] "
+            className="absolute top-0 left-0 right-0 text-center text-[#A67F6B] bg-[#EDE5E1] py-1 font-medium"
             ref={refGridCardRef}
           >
             {textRecomended?.textRecomended}
