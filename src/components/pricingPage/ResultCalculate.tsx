@@ -85,8 +85,18 @@ export const ResultCalculate = ({
 
   // Total prices including additional resources
   const monthlyPrice = baseMonthlyPrice + totalAdditionalCost;
+
+  // Detect if annual price is monthly equivalent or yearly total
+  // Business tiers: priceYear is monthly equivalent (e.g., $42/mo billed annually)
+  // Professional tiers: priceYear is yearly total (e.g., $500/year)
+  // Heuristic: if annualPrice < monthlyPrice * 3, it's a monthly equivalent
+  const isMonthlyEquivalent =
+    baseAnnualPrice > 0 && baseAnnualPrice < baseMonthlyPrice * 3;
+  const yearlyBasePrice = isMonthlyEquivalent
+    ? baseAnnualPrice * 12
+    : baseAnnualPrice;
   const annualPrice =
-    baseAnnualPrice + Math.round(totalAdditionalCost * 12 * 0.83); // ~17% discount for annual
+    yearlyBasePrice + Math.round(totalAdditionalCost * 12 * 0.83); // ~17% discount for annual extras
 
   const hasAdditionalResources =
     additionalStaff > 0 || additionalWorkspaces > 0 || additionalCountries > 0;

@@ -96,16 +96,21 @@ const calculateTierTotalCost = (
 };
 
 // Find the cheapest tier for given requirements
+// minTierIndex: minimum tier index required by enabled features (0-based)
 const findCheapestTier = (
   tiers: typeof BUSINESS_TIERS,
   requiredStaff: number,
   requiredWorkspaces: number,
   requiredCountries: number,
+  minTierIndex: number = 0,
 ) => {
-  let cheapestIndex = 0;
+  let cheapestIndex = minTierIndex; // Start from minimum required tier
   let cheapestCost = Infinity;
 
   tiers.forEach((tier, index) => {
+    // Skip tiers below the minimum required tier
+    if (index < minTierIndex) return;
+
     const totalCost = calculateTierTotalCost(
       tier,
       requiredStaff,
@@ -158,7 +163,8 @@ export const ItemCardPricing = ({
   const [currentPlanBus, setCurrentPlanBus] = useState('');
   const [currentPlanProf, setCurrentPlanProf] = useState('');
   const { changePlan, setPricing, setTierLimits } = useCurrentPlan();
-  const { staff, workspace, country, provideHome } = useCalculate();
+  const { staff, workspace, country, provideHome, toggles, getMinimumRequiredTierIndex } =
+    useCalculate();
   const currentPrice = !chechedAnnualy ? price : priceYear;
   const isRecommended =
     activePricingPage === 'business'
@@ -171,14 +177,17 @@ export const ItemCardPricing = ({
     const countryNum = Number(country) || 1;
     // Home services count as an additional workspace
     const effectiveWorkspaces = workspaceNum + (provideHome ? 1 : 0);
+    // Get minimum tier required by enabled feature toggles
+    const minTierIndex = getMinimumRequiredTierIndex();
 
     if (activePricingPage === 'business') {
-      // Find the cheapest business tier based on total cost
+      // Find the cheapest business tier based on total cost (respecting minimum tier)
       const cheapestIndex = findCheapestTier(
         BUSINESS_TIERS,
         staffNum,
         effectiveWorkspaces,
         countryNum,
+        minTierIndex,
       );
       const selectedTier = BUSINESS_TIERS[cheapestIndex];
 
@@ -194,12 +203,13 @@ export const ItemCardPricing = ({
         includedCountries: selectedTier.countries,
       });
     } else {
-      // Find the cheapest professional tier based on total cost
+      // Find the cheapest professional tier based on total cost (respecting minimum tier)
       const cheapestIndex = findCheapestTier(
         PROFESSIONAL_TIERS,
         staffNum,
         effectiveWorkspaces,
         countryNum,
+        minTierIndex,
       );
       const selectedTier = PROFESSIONAL_TIERS[cheapestIndex];
 
@@ -220,6 +230,7 @@ export const ItemCardPricing = ({
     workspace,
     country,
     provideHome,
+    toggles,
     activePricingPage,
     titlePricing,
     currentPrices,
@@ -227,6 +238,7 @@ export const ItemCardPricing = ({
     changePlan,
     setPricing,
     setTierLimits,
+    getMinimumRequiredTierIndex,
   ]);
   return (
     <>

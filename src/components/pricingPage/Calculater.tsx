@@ -1,6 +1,69 @@
+import { useState, useEffect } from 'react';
 import { useCalculate } from '@/store/calculateResult';
 import { Input } from '../ui/input';
 import { ToggleButton } from './ToggleButton';
+
+// Toggle item interface for dynamic toggles
+interface ToggleItem {
+  id: string;
+  title: string;
+  description: string;
+  minimumTierIndex?: number; // 0=Basic/Starter, 1=Growth/Professional, 2=Business/Elite
+}
+
+// Default minimum tier indices for legacy toggles (until backend is updated)
+// Based on pricing card features:
+// - provideHome: Available from Basic (0)
+// - assistantOnboard: "Free Assisted Onboarding" is Business-only feature (2)
+// - available (concierge): Premium feature, requires Growth (1)
+const LEGACY_TOGGLE_DEFAULTS: Record<string, number> = {
+  provideHome: 0, // Basic tier
+  assistantOnboard: 2, // Business tier
+  available: 1, // Growth tier
+};
+
+// Helper to convert legacy toggle format to array format
+const getTogglesArray = (calculate: any): ToggleItem[] => {
+  // Check if new toggles array format exists
+  if (calculate?.toggles && Array.isArray(calculate.toggles)) {
+    return calculate.toggles;
+  }
+
+  // Fall back to legacy format (toggleFirst, toggleSecond, toggleThird)
+  const legacyToggles: ToggleItem[] = [];
+
+  if (calculate?.toggleFirst) {
+    legacyToggles.push({
+      id: 'provideHome',
+      title: calculate.toggleFirst.title,
+      description: calculate.toggleFirst.description,
+      minimumTierIndex:
+        calculate.toggleFirst.minimumTierIndex ?? LEGACY_TOGGLE_DEFAULTS.provideHome,
+    });
+  }
+
+  if (calculate?.toggleSecond) {
+    legacyToggles.push({
+      id: 'assistantOnboard',
+      title: calculate.toggleSecond.title,
+      description: calculate.toggleSecond.description,
+      minimumTierIndex:
+        calculate.toggleSecond.minimumTierIndex ?? LEGACY_TOGGLE_DEFAULTS.assistantOnboard,
+    });
+  }
+
+  if (calculate?.toggleThird) {
+    legacyToggles.push({
+      id: 'available',
+      title: calculate.toggleThird.title,
+      description: calculate.toggleThird.description,
+      minimumTierIndex:
+        calculate.toggleThird.minimumTierIndex ?? LEGACY_TOGGLE_DEFAULTS.available,
+    });
+  }
+
+  return legacyToggles;
+};
 
 export const Calculater = ({
   homeService,
@@ -14,6 +77,42 @@ export const Calculater = ({
   overflowText,
 }: any) => {
   const { workspace, country, setCalculate, staff } = useCalculate();
+
+  // Dynamic toggle states - keyed by toggle ID
+  const [toggleStates, setToggleStates] = useState<Record<string, boolean>>({});
+
+  // Get toggles array from backend data
+  const togglesArray = getTogglesArray(titleTypeCalculate);
+
+  // Initialize toggle states when toggles array changes
+  useEffect(() => {
+    const initialStates: Record<string, boolean> = {};
+    togglesArray.forEach((toggle) => {
+      // Use existing state or default to false
+      initialStates[toggle.id] = toggleStates[toggle.id] ?? false;
+    });
+    setToggleStates(initialStates);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [titleTypeCalculate]);
+
+  // Create toggle state setter for a specific toggle ID
+  const createToggleSetter = (toggleId: string) => (value: boolean) => {
+    setToggleStates((prev) => ({ ...prev, [toggleId]: value }));
+    // Also update legacy state handlers for backward compatibility
+    if (toggleId === 'provideHome') setHomeService(value);
+    if (toggleId === 'assistantOnboard') setOnboarding(value);
+    if (toggleId === 'available') setConciergeService(value);
+  };
+
+  // Get toggle state for a specific toggle ID
+  const getToggleState = (toggleId: string): boolean => {
+    // Check dynamic state first, then fall back to legacy state
+    if (toggleId in toggleStates) return toggleStates[toggleId];
+    if (toggleId === 'provideHome') return homeService;
+    if (toggleId === 'assistantOnboard') return onboarding;
+    if (toggleId === 'available') return conciergeService;
+    return false;
+  };
 
   return (
     <>
@@ -75,54 +174,29 @@ export const Calculater = ({
           </div>
         </div>
         <div className="mt-6 w-full">
-          <div className="flex flex-col md:flex-row justify-between mb-6">
-            <div className="min-h-[56px]">
-              <h2 className="ltr:font-montserrat font-semibold text-[18px] leading-7">
-                {titleTypeCalculate?.toggleFirst.title}
-              </h2>
-              <p className="ltr:font-montserrat text-[#455150]">
-                {titleTypeCalculate?.toggleFirst.description}
-              </p>
+          {/* Dynamic toggles rendering */}
+          {togglesArray.map((toggle, index) => (
+            <div
+              key={toggle.id}
+              className={`flex flex-col md:flex-row ${index === togglesArray.length - 1 ? 'md:justify-between' : 'justify-between mb-6'}`}
+            >
+              <div className={index === 1 ? 'min-h-[84px]' : 'min-h-[56px]'}>
+                <h2 className="ltr:font-montserrat font-semibold text-[18px] leading-7">
+                  {toggle.title}
+                </h2>
+                <p className="ltr:font-montserrat text-[#455150]">
+                  {toggle.description}
+                </p>
+              </div>
+              <ToggleButton
+                name={toggle.id}
+                homeService={getToggleState(toggle.id)}
+                setHomeService={createToggleSetter(toggle.id)}
+                textButton={overflowText?.btnTextCalculate}
+                minimumTierIndex={toggle.minimumTierIndex ?? 0}
+              />
             </div>
-            <ToggleButton
-              name="provideHome"
-              homeService={homeService}
-              setHomeService={setHomeService}
-              textButton={overflowText?.btnTextCalculate}
-            />
-          </div>
-          <div className="flex flex-col md:flex-row justify-between mb-6">
-            <div className="min-h-[84px]">
-              <h2 className="ltr:font-montserrat font-semibold text-[18px] leading-7">
-                {titleTypeCalculate?.toggleSecond.title}
-              </h2>
-              <p className="ltr:font-montserrat text-[#455150]">
-                {titleTypeCalculate?.toggleSecond.description}
-              </p>
-            </div>
-            <ToggleButton
-              name="assistantOnboard"
-              homeService={onboarding}
-              setHomeService={setOnboarding}
-              textButton={overflowText?.btnTextCalculate}
-            />
-          </div>
-          <div className="flex flex-col md:flex-row md:justify-between">
-            <div className="min-h-[56px]">
-              <h2 className="ltr:font-montserrat font-semibold text-[18px] leading-7">
-                {titleTypeCalculate?.toggleThird.title}
-              </h2>
-              <p className="ltr:font-montserrat text-[#455150]">
-                {titleTypeCalculate?.toggleThird.description}
-              </p>
-            </div>
-            <ToggleButton
-              name="available"
-              homeService={conciergeService}
-              setHomeService={setConciergeService}
-              textButton={overflowText?.btnTextCalculate}
-            />
-          </div>
+          ))}
         </div>
       </div>
     </>
