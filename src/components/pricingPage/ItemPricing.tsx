@@ -8,6 +8,64 @@ import { cn } from '@/lib/utils';
 import { useCalculate } from '@/store/calculateResult';
 import { useCurrentPlan } from '@/store/storeCurrentPlan';
 
+// Per-unit pricing for additional resources (monthly)
+const ADDITIONAL_STAFF_PRICE = 10;
+const ADDITIONAL_WORKSPACE_PRICE = 25;
+const ADDITIONAL_COUNTRY_PRICE = 50;
+
+// Tier configurations
+const BUSINESS_TIERS = [
+  { name: 'Basic', basePrice: 50, basePriceYear: 42, staff: 5, workspaces: 1, countries: 1 },
+  { name: 'Growth', basePrice: 150, basePriceYear: 128, staff: 10, workspaces: 2, countries: 1 },
+  { name: 'Business', basePrice: 250, basePriceYear: 208, staff: 15, workspaces: 4, countries: 1 },
+];
+
+const PROFESSIONAL_TIERS = [
+  { name: 'Starter', basePrice: 0, basePriceYear: 0, staff: 1, workspaces: 1, countries: 1 },
+  { name: 'Professional', basePrice: 50, basePriceYear: 500, staff: 1, workspaces: 1, countries: 1 },
+  { name: 'Elite', basePrice: 100, basePriceYear: 1000, staff: 1, workspaces: 2, countries: 2 },
+];
+
+// Calculate total cost for a tier given requirements
+const calculateTierTotalCost = (
+  tier: { basePrice: number; staff: number; workspaces: number; countries: number },
+  requiredStaff: number,
+  requiredWorkspaces: number,
+  requiredCountries: number
+) => {
+  const additionalStaff = Math.max(0, requiredStaff - tier.staff);
+  const additionalWorkspaces = Math.max(0, requiredWorkspaces - tier.workspaces);
+  const additionalCountries = Math.max(0, requiredCountries - tier.countries);
+
+  return (
+    tier.basePrice +
+    additionalStaff * ADDITIONAL_STAFF_PRICE +
+    additionalWorkspaces * ADDITIONAL_WORKSPACE_PRICE +
+    additionalCountries * ADDITIONAL_COUNTRY_PRICE
+  );
+};
+
+// Find the cheapest tier for given requirements
+const findCheapestTier = (
+  tiers: typeof BUSINESS_TIERS,
+  requiredStaff: number,
+  requiredWorkspaces: number,
+  requiredCountries: number
+) => {
+  let cheapestIndex = 0;
+  let cheapestCost = Infinity;
+
+  tiers.forEach((tier, index) => {
+    const totalCost = calculateTierTotalCost(tier, requiredStaff, requiredWorkspaces, requiredCountries);
+    if (totalCost < cheapestCost) {
+      cheapestCost = totalCost;
+      cheapestIndex = index;
+    }
+  });
+
+  return cheapestIndex;
+};
+
 export const ItemCardPricing = ({
   title,
   subtitle,
@@ -44,7 +102,7 @@ export const ItemCardPricing = ({
   const [showAll, setShowAll] = useState(false);
   const [currentPlanBus, setCurrentPlanBus] = useState('');
   const [currentPlanProf, setCurrentPlanProf] = useState('');
-  const { changePlan, setPricing } = useCurrentPlan();
+  const { changePlan, setPricing, setTierLimits } = useCurrentPlan();
   const { staff, workspace, country, provideHome } = useCalculate();
   const currentPrice = !chechedAnnualy ? price : priceYear;
   const isRecommended =
@@ -60,43 +118,41 @@ export const ItemCardPricing = ({
     const effectiveWorkspaces = workspaceNum + (provideHome ? 1 : 0);
 
     if (activePricingPage === 'business') {
-      // Business tiers: Basic (5 users, 1 workspace, 1 country),
-      // Growth (10 users, 2 workspaces, 1 country),
-      // Business (15 users, 4 workspaces, 1 country)
-      if (staffNum <= 5 && effectiveWorkspaces <= 1 && countryNum <= 1) {
-        setCurrentPlanBus(titlePricing[0]); // Basic
-        changePlan(titlePricing[0]);
-        setPricing(currentPrices[0], currentPricesYear[0]);
-      } else if (
-        staffNum <= 10 &&
-        effectiveWorkspaces <= 2 &&
-        countryNum <= 1
-      ) {
-        setCurrentPlanBus(titlePricing[1]); // Growth
-        changePlan(titlePricing[1]);
-        setPricing(currentPrices[1], currentPricesYear[1]);
-      } else {
-        setCurrentPlanBus(titlePricing[2]); // Business
-        changePlan(titlePricing[2]);
-        setPricing(currentPrices[2], currentPricesYear[2]);
-      }
+      // Find the cheapest business tier based on total cost
+      const cheapestIndex = findCheapestTier(
+        BUSINESS_TIERS,
+        staffNum,
+        effectiveWorkspaces,
+        countryNum
+      );
+      const selectedTier = BUSINESS_TIERS[cheapestIndex];
+
+      setCurrentPlanBus(titlePricing[cheapestIndex]);
+      changePlan(titlePricing[cheapestIndex]);
+      setPricing(currentPrices[cheapestIndex], currentPricesYear[cheapestIndex]);
+      setTierLimits({
+        includedStaff: selectedTier.staff,
+        includedWorkspaces: selectedTier.workspaces,
+        includedCountries: selectedTier.countries,
+      });
     } else {
-      // Professional tiers: Starter (1 user, 1 workspace, 1 country),
-      // Professional (1 user, 1 workspace, 1 country),
-      // Elite (1 user, 2 workspaces, 2 countries)
-      if (staffNum <= 1 && effectiveWorkspaces <= 1 && countryNum <= 1) {
-        setCurrentPlanProf('Starter');
-        changePlan(titlePricing[0]);
-        setPricing(currentPrices[0], currentPricesYear[0]);
-      } else if (effectiveWorkspaces <= 1 && countryNum <= 1) {
-        setCurrentPlanProf('Professional');
-        changePlan(titlePricing[1]);
-        setPricing(currentPrices[1], currentPricesYear[1]);
-      } else {
-        setCurrentPlanProf('Elite');
-        changePlan(titlePricing[2]);
-        setPricing(currentPrices[2], currentPricesYear[2]);
-      }
+      // Find the cheapest professional tier based on total cost
+      const cheapestIndex = findCheapestTier(
+        PROFESSIONAL_TIERS,
+        staffNum,
+        effectiveWorkspaces,
+        countryNum
+      );
+      const selectedTier = PROFESSIONAL_TIERS[cheapestIndex];
+
+      setCurrentPlanProf(titlePricing[cheapestIndex]);
+      changePlan(titlePricing[cheapestIndex]);
+      setPricing(currentPrices[cheapestIndex], currentPricesYear[cheapestIndex]);
+      setTierLimits({
+        includedStaff: selectedTier.staff,
+        includedWorkspaces: selectedTier.workspaces,
+        includedCountries: selectedTier.countries,
+      });
     }
   }, [
     staff,
@@ -109,6 +165,7 @@ export const ItemCardPricing = ({
     currentPricesYear,
     changePlan,
     setPricing,
+    setTierLimits,
   ]);
   return (
     <>
