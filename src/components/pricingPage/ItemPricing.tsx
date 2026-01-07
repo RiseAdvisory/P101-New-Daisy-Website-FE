@@ -254,7 +254,7 @@ export const ItemCardPricing = ({
       >
         {isRecommended && isRescomennded && (
           <p
-            className="absolute top-0 left-0 right-0 text-center text-[#A67F6B] bg-[#EDE5E1] py-1 font-medium"
+            className="absolute top-0 left-0 right-0 text-center text-white bg-[#A67F6B] py-1 font-medium"
             ref={refGridCardRef}
           >
             {textRecomended?.textRecomended}
