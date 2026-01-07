@@ -22,7 +22,7 @@ export const MyUserTypeProvider = ({ children }: MyUserTypeProviderProps) => {
     <MyContext.Provider value={{ userChange, setUserChange }}>
       <Header />
       <ClientSideEffect />
-      <div className="pt-[100px]"> {children}</div>
+      <div className="pt-[100px]">{children}</div>
       <Footer />
     </MyContext.Provider>
   );
