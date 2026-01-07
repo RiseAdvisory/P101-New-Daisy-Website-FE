@@ -146,7 +146,15 @@ export const Calculater = ({
               onKeyDown={(e) => {
                 // Allow: backspace, delete, tab, escape, enter, arrows
                 if (
-                  ['Backspace', 'Delete', 'Tab', 'Escape', 'Enter', 'ArrowLeft', 'ArrowRight'].includes(e.key)
+                  [
+                    'Backspace',
+                    'Delete',
+                    'Tab',
+                    'Escape',
+                    'Enter',
+                    'ArrowLeft',
+                    'ArrowRight',
+                  ].includes(e.key)
                 ) {
                   return;
                 }
@@ -180,7 +188,15 @@ export const Calculater = ({
               onKeyDown={(e) => {
                 // Allow: backspace, delete, tab, escape, enter, arrows
                 if (
-                  ['Backspace', 'Delete', 'Tab', 'Escape', 'Enter', 'ArrowLeft', 'ArrowRight'].includes(e.key)
+                  [
+                    'Backspace',
+                    'Delete',
+                    'Tab',
+                    'Escape',
+                    'Enter',
+                    'ArrowLeft',
+                    'ArrowRight',
+                  ].includes(e.key)
                 ) {
                   return;
                 }
@@ -214,7 +230,15 @@ export const Calculater = ({
               onKeyDown={(e) => {
                 // Allow: backspace, delete, tab, escape, enter, arrows
                 if (
-                  ['Backspace', 'Delete', 'Tab', 'Escape', 'Enter', 'ArrowLeft', 'ArrowRight'].includes(e.key)
+                  [
+                    'Backspace',
+                    'Delete',
+                    'Tab',
+                    'Escape',
+                    'Enter',
+                    'ArrowLeft',
+                    'ArrowRight',
+                  ].includes(e.key)
                 ) {
                   return;
                 }
