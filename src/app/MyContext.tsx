@@ -2,6 +2,7 @@
 import { Footer } from '@/components/footer/Footer';
 import { Header } from '@/components/header/Header';
 import ClientSideEffect from '@/helpers/ClientSideEffect';
+import { TransitionWrapper } from '@/components/TransitionWrapper/TransitionWrapper';
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 interface MyContextType {
@@ -22,7 +23,9 @@ export const MyUserTypeProvider = ({ children }: MyUserTypeProviderProps) => {
     <MyContext.Provider value={{ userChange, setUserChange }}>
       <Header />
       <ClientSideEffect />
-      <div className="pt-[100px]"> {children}</div>
+      <div className="pt-[100px]">
+        <TransitionWrapper>{children}</TransitionWrapper>
+      </div>
       <Footer />
     </MyContext.Provider>
   );

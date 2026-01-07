@@ -1,5 +1,9 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import { Calculater, sanitizeNumberInput, handleNumericKeyDown } from '../Calculater';
+import {
+  Calculater,
+  sanitizeNumberInput,
+  handleNumericKeyDown,
+} from '../Calculater';
 
 // Mock dependencies
 jest.mock('@/store/calculateResult', () => ({
@@ -168,7 +172,9 @@ describe('Calculater Component - Input Validation', () => {
       />,
     );
 
-    const inputs = container.querySelectorAll('input[type="text"][inputMode="numeric"]');
+    const inputs = container.querySelectorAll(
+      'input[type="text"][inputMode="numeric"]',
+    );
     expect(inputs).toHaveLength(3);
   });
 
@@ -187,7 +193,9 @@ describe('Calculater Component - Input Validation', () => {
       />,
     );
 
-    const inputs = container.querySelectorAll('input[type="text"][inputMode="numeric"]');
+    const inputs = container.querySelectorAll(
+      'input[type="text"][inputMode="numeric"]',
+    );
     const staffInput = inputs[0] as HTMLInputElement;
 
     // Simulate pasting "abc123xyz"
@@ -212,7 +220,9 @@ describe('Calculater Component - Input Validation', () => {
       />,
     );
 
-    const inputs = container.querySelectorAll('input[type="text"][inputMode="numeric"]');
+    const inputs = container.querySelectorAll(
+      'input[type="text"][inputMode="numeric"]',
+    );
     const workspaceInput = inputs[1] as HTMLInputElement;
 
     // Simulate entering Arabic numerals
@@ -237,7 +247,9 @@ describe('Calculater Component - Input Validation', () => {
       />,
     );
 
-    const inputs = container.querySelectorAll('input[type="text"][inputMode="numeric"]');
+    const inputs = container.querySelectorAll(
+      'input[type="text"][inputMode="numeric"]',
+    );
     const countryInput = inputs[2] as HTMLInputElement;
 
     // Try to type a letter
@@ -265,7 +277,9 @@ describe('Calculater Component - Input Validation', () => {
       />,
     );
 
-    const inputs = container.querySelectorAll('input[type="text"][inputMode="numeric"]');
+    const inputs = container.querySelectorAll(
+      'input[type="text"][inputMode="numeric"]',
+    );
     const staffInput = inputs[0] as HTMLInputElement;
 
     // Try to type a number
