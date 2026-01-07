@@ -17,6 +17,7 @@ import { cn } from '@/lib/utils';
 import { Skeleton } from '../ui/skeleton';
 import { ChangeUserTypeMobile } from '../dropdownMobileHeader/ChangeUserMobile';
 import { useOpenMenu } from '@/store/openMenu';
+import { shouldHideMenuItem } from '@/lib/utils/menuVisibility';
 
 export const Header = () => {
   const path = usePathname();
@@ -31,6 +32,7 @@ export const Header = () => {
   const [getTheApp, setGetTheApp] = useState<any>();
   const [activePages, setActivePages] = useState<any>();
   const [listLanguage, setListLanguage] = useState<any>();
+  const [currentActivePage, setCurrentActivePage] = useState<string | null>(null);
   const { lang, changeLanguages } = useChangeLanguage();
   const { isOpenMenu } = useOpenMenu();
   useEffect(() => {
@@ -88,6 +90,7 @@ export const Header = () => {
       const currentPath = localStorage.getItem('activePage');
 
       if (currentPath) setActivePages(currentPath);
+      setCurrentActivePage(currentPath);
     }
     if (lang === 'ar') setChangeLang('ع');
   }, [lang]);
@@ -132,7 +135,10 @@ export const Header = () => {
                   (item: { title: string; nav: string }, index: number) => {
                     let href = item.nav;
 
-                    const currentPage = localStorage.getItem('activePage');
+                    // Hide certain menu items based on current active page
+                    if (shouldHideMenuItem(item.nav, currentActivePage)) {
+                      return;
+                    }
 
                     if (item.title === listHeader?.[0].title) {
                       if (typeof window !== 'undefined') {

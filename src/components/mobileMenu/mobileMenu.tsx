@@ -19,12 +19,14 @@ import { useChangeLanguage } from '@/store/language';
 import { ChevronLeft } from 'lucide-react';
 import { useChangePage } from '@/store/currentPage';
 import { useOpenMenu } from '@/store/openMenu';
+import { shouldHideMenuItem } from '@/lib/utils/menuVisibility';
 
 export const MobileMenu = () => {
   const [onResources, setResources] = useState(true);
   const [getTheApp, setGetTheApp] = useState<any>();
   const [listNav, setListNav] = useState<any>();
   const [openMenu, setOpenMenu] = useState(false);
+  const [currentActivePage, setCurrentActivePage] = useState<string | null>(null);
 
   const { toggleOpenMenu } = useOpenMenu();
   const router = useRouter();
@@ -48,6 +50,14 @@ export const MobileMenu = () => {
       }
     })();
   }, [lang]);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const currentPath = localStorage.getItem('activePage');
+      setCurrentActivePage(currentPath);
+    }
+  }, []);
+
   return (
     <DropdownMenu
       open={openMenu}
@@ -75,6 +85,11 @@ export const MobileMenu = () => {
             {listNav?.listNavigation &&
               listNav?.listNavigation.map((item: any, index: number) => {
                 let href = item.nav;
+
+                // Hide certain menu items based on current active page
+                if (shouldHideMenuItem(href, currentActivePage)) {
+                  return;
+                }
 
                 return (
                   <li key={index}>
