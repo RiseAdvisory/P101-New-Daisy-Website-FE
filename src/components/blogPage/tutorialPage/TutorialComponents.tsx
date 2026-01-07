@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useChooseTabs } from '@/store/chooseTabs';
+import DOMPurify from 'dompurify';
 
 export const TutorialComponents = ({ tabsList }: { tabsList: any }) => {
   const [dataInfo, setDataInfo] = useState<any>();
@@ -25,7 +26,9 @@ export const TutorialComponents = ({ tabsList }: { tabsList: any }) => {
   return (
     <div
       dangerouslySetInnerHTML={{
-        __html: currentItem?.[0]?.attributes?.fieldInfoTabs,
+        __html: currentItem?.[0]?.attributes?.fieldInfoTabs
+          ? DOMPurify.sanitize(currentItem[0].attributes.fieldInfoTabs)
+          : '',
       }}
     />
     // <div>

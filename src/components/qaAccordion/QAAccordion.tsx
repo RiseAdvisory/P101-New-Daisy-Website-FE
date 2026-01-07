@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Accordion,
   AccordionContent,
@@ -6,6 +8,7 @@ import {
 } from '@/components/ui/accordion';
 import Separator from '../separator/Separator';
 import { cn } from '@/lib/utils';
+import DOMPurify from 'dompurify';
 
 export const QAAccordion = ({
   value,
@@ -36,7 +39,9 @@ export const QAAccordion = ({
         <AccordionContent className="md:text-base  text-[#EAECEC] ltr:font-montserrat md:font-normal pb-6">
           <div
             className={cn('', { 'text-primaryBtn': sectionFQ })}
-            dangerouslySetInnerHTML={{ __html: item?.answer }}
+            dangerouslySetInnerHTML={{
+              __html: item?.answer ? DOMPurify.sanitize(item.answer) : ''
+            }}
           />
         </AccordionContent>
       </AccordionItem>

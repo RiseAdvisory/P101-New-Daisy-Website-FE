@@ -6,6 +6,7 @@ import { tutorialsList } from '@/lib/constants/tutorialsList';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useChangeLanguage } from '@/store/language';
+import DOMPurify from 'dompurify';
 
 export const TabsTutorials = ({
   dataTabs,
@@ -71,7 +72,9 @@ export const TabsTutorials = ({
             >
               <div
                 dangerouslySetInnerHTML={{
-                  __html: item?.attributes.fieldInfoTabs,
+                  __html: item?.attributes.fieldInfoTabs
+                    ? DOMPurify.sanitize(item.attributes.fieldInfoTabs)
+                    : '',
                 }}
               />
             </TabsContent>
