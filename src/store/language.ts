@@ -14,8 +14,6 @@ export const useChangeLanguage = create<ILanguageStore>((set) => ({
     }));
     localStorage.setItem('lang', newLang);
     document.body.setAttribute('dir', newLang === 'ar' ? 'rtl' : 'ltr');
-    // Force a full page reload:
-    window.location.reload();
   },
 }));
 

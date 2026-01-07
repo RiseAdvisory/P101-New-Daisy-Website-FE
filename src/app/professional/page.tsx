@@ -24,15 +24,13 @@ const Professional = () => {
   useEffect(() => {
     (async function getProfessional() {
       try {
-        const responseGrowth = await axiosInstance.get(
-          `/growth-professionals?populate=*&locale=${lang}`,
-        );
-        const response = await axiosInstance.get(
-          `/home-professionals?locale=${lang}`,
-        );
-        const responseScrolling = await axiosInstance.get(
-          `/home-professional-scrollings?populate=*&locale=${lang}`,
-        );
+        // Parallelize API calls for better performance
+        const [responseGrowth, response, responseScrolling] = await Promise.all([
+          axiosInstance.get(`/growth-professionals?populate=*&locale=${lang}`),
+          axiosInstance.get(`/home-professionals?locale=${lang}`),
+          axiosInstance.get(`/home-professional-scrollings?populate=*&locale=${lang}`),
+        ]);
+
         setDataScroll(
           responseScrolling?.data?.data.sort(
             (a: any, b: any) => a.attributes.sortId - b.attributes.sortId,
