@@ -17,9 +17,9 @@ export const AboutPosts = () => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await axiosInstance.get<StrapiResponse<BlogPostAttributes>>(
-          `${pathStrapi}/${handlId}?locale=${lang}`,
-        );
+        const response = await axiosInstance.get<
+          StrapiResponse<BlogPostAttributes>
+        >(`${pathStrapi}/${handlId}?locale=${lang}`);
         setAboutPost(response?.data?.data.attributes.aboutPosts || '');
       } catch (error) {
         // Handle error silently

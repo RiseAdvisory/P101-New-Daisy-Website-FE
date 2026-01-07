@@ -25,11 +25,17 @@ const Professional = () => {
     (async function getProfessional() {
       try {
         // Parallelize API calls for better performance
-        const [responseGrowth, response, responseScrolling] = await Promise.all([
-          axiosInstance.get(`/growth-professionals?populate=*&locale=${lang}`),
-          axiosInstance.get(`/home-professionals?locale=${lang}`),
-          axiosInstance.get(`/home-professional-scrollings?populate=*&locale=${lang}`),
-        ]);
+        const [responseGrowth, response, responseScrolling] = await Promise.all(
+          [
+            axiosInstance.get(
+              `/growth-professionals?populate=*&locale=${lang}`,
+            ),
+            axiosInstance.get(`/home-professionals?locale=${lang}`),
+            axiosInstance.get(
+              `/home-professional-scrollings?populate=*&locale=${lang}`,
+            ),
+          ],
+        );
 
         setDataScroll(
           responseScrolling?.data?.data.sort(

@@ -28,11 +28,15 @@ const Business = () => {
     (async function getBusiness() {
       try {
         // Parallelize API calls for better performance
-        const [responseGrowth, response, responseScrolling] = await Promise.all([
-          axiosInstance.get(`/growth-businesses?populate=*&locale=${lang}`),
-          axiosInstance.get(`/home-businesses?locale=${lang}`),
-          axiosInstance.get(`/home-bussiness-scrollings?populate=*&locale=${lang}`),
-        ]);
+        const [responseGrowth, response, responseScrolling] = await Promise.all(
+          [
+            axiosInstance.get(`/growth-businesses?populate=*&locale=${lang}`),
+            axiosInstance.get(`/home-businesses?locale=${lang}`),
+            axiosInstance.get(
+              `/home-bussiness-scrollings?populate=*&locale=${lang}`,
+            ),
+          ],
+        );
 
         setDataScroll(
           responseScrolling?.data?.data.sort(

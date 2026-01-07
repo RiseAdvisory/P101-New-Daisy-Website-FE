@@ -87,7 +87,11 @@ export const ProfileForm = () => {
       .sort((a, b) => a.country_code.localeCompare(b.country_code))
       .filter((item) => {
         const country_code = item.country_code;
-        if (!item.image || !country_code || usedCountryCodes.has(country_code)) {
+        if (
+          !item.image ||
+          !country_code ||
+          usedCountryCodes.has(country_code)
+        ) {
           return false;
         }
         usedCountryCodes.add(country_code);

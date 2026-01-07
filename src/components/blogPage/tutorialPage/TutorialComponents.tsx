@@ -18,7 +18,9 @@ interface TutorialComponentsProps {
 }
 
 export const TutorialComponents = ({ tabsList }: TutorialComponentsProps) => {
-  const [dataInfo, setDataInfo] = useState<TutorialComponentAttributes | null>(null);
+  const [dataInfo, setDataInfo] = useState<TutorialComponentAttributes | null>(
+    null,
+  );
 
   const { lang } = useChangeLanguage();
   const { tabsTitle } = useChooseTabs();

@@ -13,7 +13,7 @@ describe('Next.js Image Configuration Security', () => {
   describe('Image Remote Patterns Security', () => {
     it('should only allow specific trusted domains', () => {
       const allowedHostnames = nextConfig.default.images.remotePatterns.map(
-        (pattern) => pattern.hostname
+        (pattern) => pattern.hostname,
       );
 
       expect(allowedHostnames).toEqual([
@@ -26,7 +26,7 @@ describe('Next.js Image Configuration Security', () => {
 
     it('should not allow wildcard hostname', () => {
       const hasWildcard = nextConfig.default.images.remotePatterns.some(
-        (pattern) => pattern.hostname === '**'
+        (pattern) => pattern.hostname === '**',
       );
 
       expect(hasWildcard).toBe(false);
@@ -34,7 +34,7 @@ describe('Next.js Image Configuration Security', () => {
 
     it('should have proper protocol restrictions', () => {
       const protocols = nextConfig.default.images.remotePatterns.map(
-        (pattern) => pattern.protocol
+        (pattern) => pattern.protocol,
       );
 
       // All patterns should have a protocol defined
@@ -46,7 +46,7 @@ describe('Next.js Image Configuration Security', () => {
 
     it('should allow https for production domains', () => {
       const httpsPatterns = nextConfig.default.images.remotePatterns.filter(
-        (pattern) => pattern.protocol === 'https'
+        (pattern) => pattern.protocol === 'https',
       );
 
       const productionDomains = [
@@ -57,14 +57,14 @@ describe('Next.js Image Configuration Security', () => {
 
       productionDomains.forEach((domain) => {
         expect(
-          httpsPatterns.some((pattern) => pattern.hostname === domain)
+          httpsPatterns.some((pattern) => pattern.hostname === domain),
         ).toBe(true);
       });
     });
 
     it('should allow http only for localhost', () => {
       const httpPatterns = nextConfig.default.images.remotePatterns.filter(
-        (pattern) => pattern.protocol === 'http'
+        (pattern) => pattern.protocol === 'http',
       );
 
       expect(httpPatterns).toHaveLength(1);
@@ -99,7 +99,7 @@ describe('Next.js Image Configuration Security', () => {
       const redirects = await nextConfig.default.redirects();
 
       const customerRedirects = redirects.filter((r) =>
-        r.source.includes('customer')
+        r.source.includes('customer'),
       );
 
       expect(customerRedirects.length).toBeGreaterThan(0);
