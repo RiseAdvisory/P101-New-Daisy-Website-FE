@@ -3,6 +3,11 @@ import { useCalculate } from '@/store/calculateResult';
 import { Input } from '../ui/input';
 import { ToggleButton } from './ToggleButton';
 
+// Helper to sanitize input to only allow English numerals
+const sanitizeNumberInput = (value: string): string => {
+  return value.replace(/[^0-9]/g, '');
+};
+
 // Toggle item interface for dynamic toggles
 interface ToggleItem {
   id: string;
@@ -134,8 +139,25 @@ export const Calculater = ({
               </p>
             </div>
             <Input
-              onChange={(e) => setCalculate({ staff: e.target.value })}
-              type="number"
+              onChange={(e) => {
+                const sanitized = sanitizeNumberInput(e.target.value);
+                setCalculate({ staff: sanitized });
+              }}
+              onKeyDown={(e) => {
+                // Allow: backspace, delete, tab, escape, enter, arrows
+                if (
+                  ['Backspace', 'Delete', 'Tab', 'Escape', 'Enter', 'ArrowLeft', 'ArrowRight'].includes(e.key)
+                ) {
+                  return;
+                }
+                // Block non-English digits (0-9)
+                if (!/^[0-9]$/.test(e.key)) {
+                  e.preventDefault();
+                }
+              }}
+              type="text"
+              inputMode="numeric"
+              pattern="[0-9]*"
               className="w-full md:w-20 ml-0 md:ml-8 mt-2 md:mt-0 focus:border-[#A67F6B] text-center py-[14px] md:py-2"
               defaultValue={staff}
               min="1"
@@ -151,9 +173,26 @@ export const Calculater = ({
               </p>
             </div>
             <Input
-              onChange={(e) => setCalculate({ workspace: e.target.value })}
+              onChange={(e) => {
+                const sanitized = sanitizeNumberInput(e.target.value);
+                setCalculate({ workspace: sanitized });
+              }}
+              onKeyDown={(e) => {
+                // Allow: backspace, delete, tab, escape, enter, arrows
+                if (
+                  ['Backspace', 'Delete', 'Tab', 'Escape', 'Enter', 'ArrowLeft', 'ArrowRight'].includes(e.key)
+                ) {
+                  return;
+                }
+                // Block non-English digits (0-9)
+                if (!/^[0-9]$/.test(e.key)) {
+                  e.preventDefault();
+                }
+              }}
+              type="text"
+              inputMode="numeric"
+              pattern="[0-9]*"
               className="w-full md:w-20 md:ml-8 mt-4 md:mt-0 focus:border-[#A67F6B] text-center py-2"
-              type="number"
               defaultValue={workspace}
               min="1"
             />
@@ -168,9 +207,26 @@ export const Calculater = ({
               </p>
             </div>
             <Input
-              onChange={(e) => setCalculate({ country: e.target.value })}
+              onChange={(e) => {
+                const sanitized = sanitizeNumberInput(e.target.value);
+                setCalculate({ country: sanitized });
+              }}
+              onKeyDown={(e) => {
+                // Allow: backspace, delete, tab, escape, enter, arrows
+                if (
+                  ['Backspace', 'Delete', 'Tab', 'Escape', 'Enter', 'ArrowLeft', 'ArrowRight'].includes(e.key)
+                ) {
+                  return;
+                }
+                // Block non-English digits (0-9)
+                if (!/^[0-9]$/.test(e.key)) {
+                  e.preventDefault();
+                }
+              }}
+              type="text"
+              inputMode="numeric"
+              pattern="[0-9]*"
               className="w-full md:w-20 md:ml-8 mt-4 md:mt-0 focus:border-[#A67F6B] text-center py-2"
-              type="number"
               defaultValue={country}
               min="1"
             />
