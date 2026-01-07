@@ -37,7 +37,9 @@ export default function FreshChatLoader({ lang }: FreshChatLoaderProps) {
     // Get and validate environment variables
     const token = validateConfig(process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN || '');
     const host = validateConfig(process.env.NEXT_PUBLIC_FRESHCHAT_HOST || '');
-    const widgetUuid = validateConfig(process.env.NEXT_PUBLIC_FRESHCHAT_WIDGET_UUID || '');
+    const widgetUuid = validateConfig(
+      process.env.NEXT_PUBLIC_FRESHCHAT_WIDGET_UUID || '',
+    );
 
     // Validate that required values are present
     if (!token || !host) {

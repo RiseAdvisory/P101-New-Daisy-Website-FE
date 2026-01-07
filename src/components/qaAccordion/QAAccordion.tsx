@@ -10,19 +10,26 @@ import Separator from '../separator/Separator';
 import { cn } from '@/lib/utils';
 import DOMPurify from 'dompurify';
 
+interface QAItem {
+  question: string;
+  answer: string | null;
+}
+
+interface QAAccordionProps {
+  value: string | number;
+  item: QAItem;
+  stylesAcoordion?: string;
+  stylesAccordionItem?: string;
+  sectionFQ?: boolean;
+}
+
 export const QAAccordion = ({
   value,
   item,
   stylesAcoordion,
   stylesAccordionItem,
   sectionFQ,
-}: {
-  value: any;
-  item: any;
-  stylesAcoordion?: string;
-  stylesAccordionItem?: string;
-  sectionFQ?: boolean;
-}) => {
+}: QAAccordionProps) => {
   return (
     <Accordion
       type="multiple"
@@ -40,7 +47,7 @@ export const QAAccordion = ({
           <div
             className={cn('', { 'text-primaryBtn': sectionFQ })}
             dangerouslySetInnerHTML={{
-              __html: item?.answer ? DOMPurify.sanitize(item.answer) : ''
+              __html: item?.answer ? DOMPurify.sanitize(item.answer) : '',
             }}
           />
         </AccordionContent>

@@ -163,8 +163,14 @@ export const ItemCardPricing = ({
   const [currentPlanBus, setCurrentPlanBus] = useState('');
   const [currentPlanProf, setCurrentPlanProf] = useState('');
   const { changePlan, setPricing, setTierLimits } = useCurrentPlan();
-  const { staff, workspace, country, provideHome, toggles, getMinimumRequiredTierIndex } =
-    useCalculate();
+  const {
+    staff,
+    workspace,
+    country,
+    provideHome,
+    toggles,
+    getMinimumRequiredTierIndex,
+  } = useCalculate();
   const currentPrice = !chechedAnnualy ? price : priceYear;
   const isRecommended =
     activePricingPage === 'business'

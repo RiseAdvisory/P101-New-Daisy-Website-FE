@@ -19,7 +19,11 @@ interface ICalculateState {
   // Computed minimum tier index based on enabled toggles
   getMinimumRequiredTierIndex: () => number;
   setCalculate: (newState: any) => void;
-  setToggle: (toggleId: string, enabled: boolean, minimumTierIndex: number) => void;
+  setToggle: (
+    toggleId: string,
+    enabled: boolean,
+    minimumTierIndex: number,
+  ) => void;
   setDefaults: () => void;
 }
 
