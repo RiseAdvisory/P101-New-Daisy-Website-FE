@@ -6,16 +6,31 @@ import { tutorialsList } from '@/lib/constants/tutorialsList';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useChangeLanguage } from '@/store/language';
+import DOMPurify from 'dompurify';
+
+interface TutorialTabItem {
+  attributes: {
+    titleListTab: string;
+    fieldInfoTabs: string;
+  };
+}
+
+interface TutorialInfo {
+  title: string;
+  gotAQ: string;
+}
+
+interface TabsTutorialsProps {
+  dataTabs: boolean;
+  listDataTabs: TutorialTabItem[];
+  infoTutorials: TutorialInfo;
+}
 
 export const TabsTutorials = ({
   dataTabs,
   listDataTabs,
   infoTutorials,
-}: {
-  dataTabs: any;
-  listDataTabs: any;
-  infoTutorials: any;
-}) => {
+}: TabsTutorialsProps) => {
   const router = useRouter();
   const { lang } = useChangeLanguage();
   const [defaultValue, setDefaultValue] = useState<string>('');
@@ -71,7 +86,9 @@ export const TabsTutorials = ({
             >
               <div
                 dangerouslySetInnerHTML={{
-                  __html: item?.attributes.fieldInfoTabs,
+                  __html: item?.attributes.fieldInfoTabs
+                    ? DOMPurify.sanitize(item.attributes.fieldInfoTabs)
+                    : '',
                 }}
               />
             </TabsContent>

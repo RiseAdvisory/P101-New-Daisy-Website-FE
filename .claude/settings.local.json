@@ -10,7 +10,18 @@
       "Bash(git commit:*)",
       "Bash(git config:*)",
       "Bash(grep -c \"''/>\" \"C:\\Users\\AbdullrahimRahimiCFA\\.claude-worktrees\\P101-New-Daisy-Website-FE\\intelligent-panini\\src\"/**/*.tsx)",
-      "Bash(npm install)"
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(cat:*)",
+      "Bash(pkill:*)",
+      "Bash(git push:*)",
+      "Bash(gh pr view:*)",
+      "Bash(npm install:*)",
+      "Bash(npm audit fix:*)",
+      "Bash(npm audit:*)",
+      "Bash(npm view:*)",
+      "Bash(npx update-browserslist-db@latest:*)",
+      "Bash(npm test:*)"
     ],
     "deny": []
   }

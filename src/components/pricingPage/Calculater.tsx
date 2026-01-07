@@ -38,7 +38,8 @@ const getTogglesArray = (calculate: any): ToggleItem[] => {
       title: calculate.toggleFirst.title,
       description: calculate.toggleFirst.description,
       minimumTierIndex:
-        calculate.toggleFirst.minimumTierIndex ?? LEGACY_TOGGLE_DEFAULTS.provideHome,
+        calculate.toggleFirst.minimumTierIndex ??
+        LEGACY_TOGGLE_DEFAULTS.provideHome,
     });
   }
 
@@ -48,7 +49,8 @@ const getTogglesArray = (calculate: any): ToggleItem[] => {
       title: calculate.toggleSecond.title,
       description: calculate.toggleSecond.description,
       minimumTierIndex:
-        calculate.toggleSecond.minimumTierIndex ?? LEGACY_TOGGLE_DEFAULTS.assistantOnboard,
+        calculate.toggleSecond.minimumTierIndex ??
+        LEGACY_TOGGLE_DEFAULTS.assistantOnboard,
     });
   }
 
@@ -58,7 +60,8 @@ const getTogglesArray = (calculate: any): ToggleItem[] => {
       title: calculate.toggleThird.title,
       description: calculate.toggleThird.description,
       minimumTierIndex:
-        calculate.toggleThird.minimumTierIndex ?? LEGACY_TOGGLE_DEFAULTS.available,
+        calculate.toggleThird.minimumTierIndex ??
+        LEGACY_TOGGLE_DEFAULTS.available,
     });
   }
 

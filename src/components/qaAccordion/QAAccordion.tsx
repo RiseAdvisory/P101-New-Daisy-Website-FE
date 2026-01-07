@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Accordion,
   AccordionContent,
@@ -6,6 +8,20 @@ import {
 } from '@/components/ui/accordion';
 import Separator from '../separator/Separator';
 import { cn } from '@/lib/utils';
+import DOMPurify from 'dompurify';
+
+interface QAItem {
+  question: string;
+  answer: string | null;
+}
+
+interface QAAccordionProps {
+  value: string | number;
+  item: QAItem;
+  stylesAcoordion?: string;
+  stylesAccordionItem?: string;
+  sectionFQ?: boolean;
+}
 
 export const QAAccordion = ({
   value,
@@ -13,13 +29,7 @@ export const QAAccordion = ({
   stylesAcoordion,
   stylesAccordionItem,
   sectionFQ,
-}: {
-  value: any;
-  item: any;
-  stylesAcoordion?: string;
-  stylesAccordionItem?: string;
-  sectionFQ?: boolean;
-}) => {
+}: QAAccordionProps) => {
   return (
     <Accordion
       type="multiple"
@@ -36,7 +46,9 @@ export const QAAccordion = ({
         <AccordionContent className="md:text-base  text-[#EAECEC] ltr:font-montserrat md:font-normal pb-6">
           <div
             className={cn('', { 'text-primaryBtn': sectionFQ })}
-            dangerouslySetInnerHTML={{ __html: item?.answer }}
+            dangerouslySetInnerHTML={{
+              __html: item?.answer ? DOMPurify.sanitize(item.answer) : '',
+            }}
           />
         </AccordionContent>
       </AccordionItem>

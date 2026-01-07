@@ -3,9 +3,22 @@ import { useEffect, useState } from 'react';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useChooseTabs } from '@/store/chooseTabs';
+import DOMPurify from 'dompurify';
+import type { TutorialComponentAttributes } from '@/types/strapi';
 
-export const TutorialComponents = ({ tabsList }: { tabsList: any }) => {
-  const [dataInfo, setDataInfo] = useState<any>();
+interface TutorialTabItem {
+  attributes: {
+    titleListTab: string;
+    fieldInfoTabs: string;
+  };
+}
+
+interface TutorialComponentsProps {
+  tabsList: TutorialTabItem[];
+}
+
+export const TutorialComponents = ({ tabsList }: TutorialComponentsProps) => {
+  const [dataInfo, setDataInfo] = useState<TutorialComponentAttributes | null>(null);
 
   const { lang } = useChangeLanguage();
   const { tabsTitle } = useChooseTabs();
@@ -19,13 +32,15 @@ export const TutorialComponents = ({ tabsList }: { tabsList: any }) => {
     })();
   }, [lang]);
   const currentItem = tabsList?.filter(
-    (item: any) => item.attributes.titleListTab === tabsTitle,
+    (item) => item.attributes.titleListTab === tabsTitle,
   );
 
   return (
     <div
       dangerouslySetInnerHTML={{
-        __html: currentItem?.[0]?.attributes?.fieldInfoTabs,
+        __html: currentItem?.[0]?.attributes?.fieldInfoTabs
+          ? DOMPurify.sanitize(currentItem[0].attributes.fieldInfoTabs)
+          : '',
       }}
     />
     // <div>
