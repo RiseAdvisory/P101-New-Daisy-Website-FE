@@ -3,9 +3,34 @@ import { useCalculate } from '@/store/calculateResult';
 import { Input } from '../ui/input';
 import { ToggleButton } from './ToggleButton';
 
-// Helper to sanitize input to only allow English numerals
-const sanitizeNumberInput = (value: string): string => {
+// Helper to sanitize input to only allow English numerals (integers only)
+// Note: Currently strips decimals - only accepts 0-9 for integer values
+export const sanitizeNumberInput = (value: string): string => {
   return value.replace(/[^0-9]/g, '');
+};
+
+// Shared handler for blocking non-numeric key presses
+export const handleNumericKeyDown = (
+  e: React.KeyboardEvent<HTMLInputElement>,
+) => {
+  // Allow: backspace, delete, tab, escape, enter, arrows
+  if (
+    [
+      'Backspace',
+      'Delete',
+      'Tab',
+      'Escape',
+      'Enter',
+      'ArrowLeft',
+      'ArrowRight',
+    ].includes(e.key)
+  ) {
+    return;
+  }
+  // Block non-English digits (0-9)
+  if (!/^[0-9]$/.test(e.key)) {
+    e.preventDefault();
+  }
 };
 
 // Toggle item interface for dynamic toggles
@@ -86,6 +111,14 @@ export const Calculater = ({
 }: any) => {
   const { workspace, country, setCalculate, staff } = useCalculate();
 
+  // Shared handler factory for numeric input changes
+  const createNumericChangeHandler =
+    (field: 'staff' | 'workspace' | 'country') =>
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const sanitized = sanitizeNumberInput(e.target.value);
+      setCalculate({ [field]: sanitized });
+    };
+
   // Dynamic toggle states - keyed by toggle ID
   const [toggleStates, setToggleStates] = useState<Record<string, boolean>>({});
 
@@ -139,30 +172,8 @@ export const Calculater = ({
               </p>
             </div>
             <Input
-              onChange={(e) => {
-                const sanitized = sanitizeNumberInput(e.target.value);
-                setCalculate({ staff: sanitized });
-              }}
-              onKeyDown={(e) => {
-                // Allow: backspace, delete, tab, escape, enter, arrows
-                if (
-                  [
-                    'Backspace',
-                    'Delete',
-                    'Tab',
-                    'Escape',
-                    'Enter',
-                    'ArrowLeft',
-                    'ArrowRight',
-                  ].includes(e.key)
-                ) {
-                  return;
-                }
-                // Block non-English digits (0-9)
-                if (!/^[0-9]$/.test(e.key)) {
-                  e.preventDefault();
-                }
-              }}
+              onChange={createNumericChangeHandler('staff')}
+              onKeyDown={handleNumericKeyDown}
               type="text"
               inputMode="numeric"
               pattern="[0-9]*"
@@ -181,30 +192,8 @@ export const Calculater = ({
               </p>
             </div>
             <Input
-              onChange={(e) => {
-                const sanitized = sanitizeNumberInput(e.target.value);
-                setCalculate({ workspace: sanitized });
-              }}
-              onKeyDown={(e) => {
-                // Allow: backspace, delete, tab, escape, enter, arrows
-                if (
-                  [
-                    'Backspace',
-                    'Delete',
-                    'Tab',
-                    'Escape',
-                    'Enter',
-                    'ArrowLeft',
-                    'ArrowRight',
-                  ].includes(e.key)
-                ) {
-                  return;
-                }
-                // Block non-English digits (0-9)
-                if (!/^[0-9]$/.test(e.key)) {
-                  e.preventDefault();
-                }
-              }}
+              onChange={createNumericChangeHandler('workspace')}
+              onKeyDown={handleNumericKeyDown}
               type="text"
               inputMode="numeric"
               pattern="[0-9]*"
@@ -223,30 +212,8 @@ export const Calculater = ({
               </p>
             </div>
             <Input
-              onChange={(e) => {
-                const sanitized = sanitizeNumberInput(e.target.value);
-                setCalculate({ country: sanitized });
-              }}
-              onKeyDown={(e) => {
-                // Allow: backspace, delete, tab, escape, enter, arrows
-                if (
-                  [
-                    'Backspace',
-                    'Delete',
-                    'Tab',
-                    'Escape',
-                    'Enter',
-                    'ArrowLeft',
-                    'ArrowRight',
-                  ].includes(e.key)
-                ) {
-                  return;
-                }
-                // Block non-English digits (0-9)
-                if (!/^[0-9]$/.test(e.key)) {
-                  e.preventDefault();
-                }
-              }}
+              onChange={createNumericChangeHandler('country')}
+              onKeyDown={handleNumericKeyDown}
               type="text"
               inputMode="numeric"
               pattern="[0-9]*"
