@@ -74,10 +74,7 @@ export const CalculatePricing = ({
             {onCalculates ? dataPricing?.textCalculate : dataPricing?.textReset}
           </Button>
         </div>
-        <Separator
-          className="mt-6 bg-[#E8E9E9] -mx-4 w-full"
-          style={{ width: 'calc(100% + 32px)' }}
-        />
+        <Separator className="mt-6 bg-[#E8E9E9] -mx-4 w-full max-w-full" />
         {onCalculates ? (
           <Calculater
             calculationFormRef={calculationFormRef}
@@ -100,10 +97,7 @@ export const CalculatePricing = ({
           />
         )}
 
-        <Separator
-          className="my-6 bg-[#E8E9E9] -mx-4 w-full md:hidden"
-          style={{ width: 'calc(100% + 32px)' }}
-        />
+        <Separator className="my-6 bg-[#E8E9E9] -mx-4 w-full md:hidden max-w-full" />
         <Button
           className={cn(
             'inline-flex md:hidden w-full p-6  ltr:font-montserrat border border-[#2E4342]  font-semibold px-[89px] py-[12px] mb-3',
