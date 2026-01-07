@@ -97,9 +97,8 @@ export const FormContacts = ({ style }: { style?: string }) => {
       toast.success('Sent Succesfully!');
       setPhoneNumber('00000000');
       form.reset();
-    } catch (error) {
+    } catch {
       setIsSubmit(false);
-      console.error('Error:', error);
       toast.error('Error!');
     } finally {
       setIsSubmit(false);
@@ -130,8 +129,8 @@ export const FormContacts = ({ style }: { style?: string }) => {
         const listCountries = await getData();
         handlecountryCodesArray(listCountries);
       })();
-    } catch (error) {
-      console.log(error);
+    } catch {
+      // Error fetching country codes
     }
   }, [handlecountryCodesArray, handleLoadingStatus]);
 

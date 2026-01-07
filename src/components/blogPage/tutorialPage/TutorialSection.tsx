@@ -24,7 +24,7 @@ export const TutorialSection = ({
   const [dataTabs, setDataTabs] = useState<any>();
   const router = useRouter();
   const { lang } = useChangeLanguage();
-  const { userChange: currentPage, setState } = useMyContext();
+  const { userChange: currentPage } = useMyContext();
 
   useEffect(() => {
     // `/resources-tutorial-infos?locale=${lang}`

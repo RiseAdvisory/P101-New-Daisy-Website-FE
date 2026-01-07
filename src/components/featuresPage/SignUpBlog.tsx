@@ -47,9 +47,8 @@ export const SignUpBlog = ({ style }: { style?: string }) => {
       });
       setEmail('');
       toast.success(textSignUp?.succesSend);
-    } catch (error: any) {
-      console.error('Error sending email:', error);
-      toast.error(error);
+    } catch {
+      toast.error('Error sending email');
     }
   };
 

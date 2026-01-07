@@ -15,8 +15,8 @@ export const BecomeFormPartner = () => {
           `/become-partners?locale=${lang}`,
         );
         setTitleFormBecome(response?.data?.data);
-      } catch (error) {
-        console.error(error);
+      } catch {
+        // Error fetching become partner data
       }
     })();
   }, [lang]);

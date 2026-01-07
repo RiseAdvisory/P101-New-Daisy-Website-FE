@@ -44,7 +44,7 @@ export const CalculatePricing = ({
   const {
     assistantOnboard,
     available,
-    branch,
+    workspace,
     country,
     provideHome,
     setDefaults,

@@ -36,8 +36,8 @@ const FeaturesBusiness = () => {
         setDataListManagm(responseListManagm?.data?.data);
         setDataListPayment(responseListPayments?.data?.data);
         setDataListReports(responseListReports?.data?.data);
-      } catch (error) {
-        console.log(error);
+      } catch {
+        // Error fetching business features
       }
     })();
   }, [lang]);

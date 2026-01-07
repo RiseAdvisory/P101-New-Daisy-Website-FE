@@ -16,7 +16,6 @@ export const SimiliarTopick = ({ titleSimilar }: { titleSimilar: string }) => {
   const { handlePost } = usePostStore();
   const { lang } = useChangeLanguage();
   const { userChange: currentPage, setUserChange } = useMyContext();
-  console.log('endpointExperienceDaisyLink');
 
   useEffect(() => {
     let endpointExperienceDaisyLink = 'resources-blog-post-customers';

@@ -32,8 +32,8 @@ const Pricing = () => {
 
   const currentPricing =
     activePricingPage === 'professional'
-      ? dataPricing?.business.pricingCard
-      : dataPricing?.professional.pricingCard;
+      ? dataPricing?.professional.pricingCard
+      : dataPricing?.business.pricingCard;
   const gridCardRef = useRef<HTMLDivElement>(null);
 
   const handleScrollToGrid = () => {
@@ -48,7 +48,7 @@ const Pricing = () => {
         const response = await axiosInstance.get(`/pricings?locale=${lang}`);
         setDataPricing(response?.data?.data[0]?.attributes);
       } catch (error) {
-        console.error(error);
+        // Error fetching pricing data
       }
     })();
   }, [lang]);

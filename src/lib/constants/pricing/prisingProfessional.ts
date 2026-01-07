@@ -18,8 +18,8 @@ export const pricingProfessionalCard = [
     optionPlus: '',
     options: [
       '1 User / Calendar',
-      '1 Branch/location',
-      '1 country ',
+      '1 Workspace/location',
+      '1 Country',
       '100 Bookings',
       'Themed Profile site with Social links & booking feature',
       'Schedule Management',
@@ -47,8 +47,8 @@ export const pricingProfessionalCard = [
     optionPlus: 'Starter',
     options: [
       '1 User / Calendar',
-      '1 Branch/location',
-      '1 country ',
+      '1 Workspace/location',
+      '1 Country',
       'Unlimited bookings',
       'Automated reminders to reduce no shows & encourage early rebooking',
       'Subscription packages',
@@ -73,8 +73,8 @@ export const pricingProfessionalCard = [
     optionPlus: 'Professional',
     options: [
       '1 User / Calendar',
-      '1 Branch/location',
-      '1 country ',
+      '2 Workspaces/location',
+      '2 Countries',
       'Unlimited bookings',
       'Automated reminders to reduce no shows & encourage early rebooking',
       'Subscription packages',

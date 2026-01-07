@@ -30,11 +30,13 @@ export const GridPricingCard = ({
 }: GridPricingCardProps) => {
   const [titlePricing, setTitlePricing] = useState<string[]>([]);
   const [price, setPrice] = useState<string[]>([]);
+  const [priceYearList, setPriceYearList] = useState<string[]>([]);
 
   useEffect(() => {
     if (dataPricing.length > 0) {
       setTitlePricing(dataPricing.map((item) => item.title));
       setPrice(dataPricing.map((item) => item.price));
+      setPriceYearList(dataPricing.map((item) => item.priceYear || item.price));
     }
   }, [dataPricing]);
 
@@ -61,6 +63,7 @@ export const GridPricingCard = ({
                 isRescomennded={isRescomennded}
                 titlePricing={titlePricing}
                 currentPrices={price}
+                currentPricesYear={priceYearList}
               />
             );
           })}

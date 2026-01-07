@@ -16,8 +16,8 @@ const Faq = () => {
       try {
         const response = await axiosInstance(`/faqs?locale=${lang}`);
         setDataFAQ(response?.data?.data[0]?.attributes);
-      } catch (error) {
-        console.log(error);
+      } catch {
+        // Error fetching FAQ data
       }
     })();
   }, [lang]);

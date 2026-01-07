@@ -19,8 +19,8 @@ const PrivacyPolicy = () => {
         );
         const [data] = response?.data?.data;
         setDataSection(data?.attributes);
-      } catch (error) {
-        console.log(error);
+      } catch {
+        // Error fetching privacy policy
       }
     })();
   }, [lang]);

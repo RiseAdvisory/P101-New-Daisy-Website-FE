@@ -1,6 +1,6 @@
-import { NextResponse } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 
-export async function middleware(request) {
+export async function middleware(request: NextRequest) {
   const userAgent = request.headers.get('user-agent');
   const bots = [
     'googlebot',
@@ -37,7 +37,7 @@ export async function middleware(request) {
     'xing-contenttabreceiver',
     'chrome-lighthouse',
     'telegrambot',
-    'integration-test', // Integration testing
+    'integration-test',
   ];
 
   const IGNORE_EXTENSIONS = [
@@ -97,12 +97,10 @@ export async function middleware(request) {
   ) {
     return NextResponse.next();
   } else {
-    // Check if request is coming from a bot
     if (isBot) {
       const newURL = `https://service.prerender.io/${request.url}`;
       const newHeaders = new Headers(request.headers);
-      //Do not forget to add your Prerender token as an environment variable
-      newHeaders.set('X-Prerender-Token', process.env.PRERENDER_TOKEN);
+      newHeaders.set('X-Prerender-Token', process.env.PRERENDER_TOKEN || '');
       newHeaders.set('X-Prerender-Int-Type', 'NextJS');
 
       const res = await fetch(

@@ -23,8 +23,8 @@ export const JoinTheDaisy = () => {
         );
         setJoinDaisyList(responseList?.data?.data);
         setJoinDaisy(response?.data?.data?.[0]?.attributes);
-      } catch (error) {
-        console.error(error);
+      } catch {
+        // Error fetching join daisy data
       }
     })();
   }, [lang]);
