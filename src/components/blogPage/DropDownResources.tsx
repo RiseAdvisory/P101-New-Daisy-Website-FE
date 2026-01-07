@@ -70,21 +70,21 @@ export const DropdownResources = ({
         if (setActive) setActive(path);
       }}
     >
-      <DropdownMenuContent className="w-[100vw] top-[110px] absolute hidden md:block py-10 px-16">
+      <DropdownMenuContent className="w-full max-w-screen-2xl top-[110px] absolute hidden md:block py-10 px-4 md:px-8 lg:px-16">
         <div className="flex rtl:md:flex-row-reverse">
-          <div className="w-[420px] h-[290px] border relative bg-[#E8E9E9] rounded-lg mr-6 overflow-hidden">
+          <div className="w-full max-w-[420px] h-[290px] border relative bg-[#E8E9E9] rounded-lg mr-6 flex-shrink-0 overflow-hidden">
             <Image
               src={currentImage}
               alt="sdasd"
               className="h-full object-cover"
             />
           </div>
-          <div className="w-[70%] rtl:mr-6">
+          <div className="flex-1 rtl:mr-6">
             <h2 className="font-semibold text-2xl text-primary rtl:text-end">
               {listResources?.title}
             </h2>
             <Separator className="my-6 bg-[#E8E9E9]" />
-            <ul className="grid grid-cols-2 gap-x-[100px] gap-y-4 w-[70%] rtl:ml-auto">
+            <ul className="grid grid-cols-2 gap-x-4 md:gap-x-8 lg:gap-x-[100px] gap-y-4 max-w-full rtl:ml-auto">
               {listResources?.itemResources &&
                 listResources?.itemResources.map((item: any, index: number) => (
                   <li

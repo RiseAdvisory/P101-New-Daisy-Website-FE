@@ -266,10 +266,7 @@ export const ItemCardPricing = ({
             {textRecomended?.textRecomended}
           </p>
         )}
-        <div
-          className="relative bg-primary -top-[81px]"
-          style={{ width: 'calc(100% + 34px)' }}
-        >
+        <div className="relative bg-primary -top-[81px] w-full max-w-full">
           <div className=" md:hidden w-full bg-primary h-[441px] -z-10 absolute top-0 "></div>
         </div>
 

@@ -24,15 +24,17 @@ const Customer = () => {
   useEffect(() => {
     (async function getUser() {
       try {
-        const responseGrowth = await axiosInstance.get(
-          `/growth-customers?populate=*&locale=${lang}`,
+        // Parallelize API calls for better performance
+        const [responseGrowth, response, responseScrolling] = await Promise.all(
+          [
+            axiosInstance.get(`/growth-customers?populate=*&locale=${lang}`),
+            axiosInstance.get(`/home-customers?locale=${lang}`),
+            axiosInstance.get(
+              `/home-customer-scrollings?populate=*&locale=${lang}`,
+            ),
+          ],
         );
-        const response = await axiosInstance.get(
-          `/home-customers?locale=${lang}`,
-        );
-        const responseScrolling = await axiosInstance.get(
-          `/home-customer-scrollings?populate=*&locale=${lang}`,
-        );
+
         setDataScroll(
           responseScrolling?.data?.data.sort(
             (a: any, b: any) => a.attributes.sortId - b.attributes.sortId,

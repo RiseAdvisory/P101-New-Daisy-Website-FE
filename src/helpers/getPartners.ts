@@ -1,7 +1,7 @@
 export const getData = async () => {
   try {
     const res = await fetch('https://app.trythedaisy.com/api/v1/vendors', {
-      cache: 'no-store',
+      next: { revalidate: 3600 }, // Cache for 1 hour
     });
 
     if (!res.ok) {
@@ -18,7 +18,19 @@ export const getData = async () => {
     return null;
   }
 };
+
+// Fisher-Yates shuffle algorithm for unbiased random selection
 export const getRandomElements = (array: any[] = [], count: number) => {
-  const shuffled = array.sort(() => 0.5 - Math.random());
+  if (!array || array.length === 0) return [];
+
+  // Create a copy to avoid mutating the original array
+  const shuffled = [...array];
+
+  // Fisher-Yates shuffle
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
   return shuffled.slice(0, count);
 };

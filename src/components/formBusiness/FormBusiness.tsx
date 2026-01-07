@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -78,7 +78,26 @@ export const ProfileForm = () => {
       country_code: '+1',
     },
   });
-  const usedCountryCodes = new Set();
+
+  // Memoize sorted and filtered country codes for better performance
+  const sortedCountryCodes = useMemo(() => {
+    const usedCountryCodes = new Set();
+    return countryCodesArray
+      .slice()
+      .sort((a, b) => a.country_code.localeCompare(b.country_code))
+      .filter((item) => {
+        const country_code = item.country_code;
+        if (
+          !item.image ||
+          !country_code ||
+          usedCountryCodes.has(country_code)
+        ) {
+          return false;
+        }
+        usedCountryCodes.add(country_code);
+        return true;
+      });
+  }, [countryCodesArray]);
 
   const onSubmit = async (data: any) => {
     // const completePhoneNumber = country_code + mobile;
@@ -299,41 +318,26 @@ export const ProfileForm = () => {
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          {countryCodesArray
-                            .slice()
-                            .sort((a, b) =>
-                              a.country_code.localeCompare(b.country_code),
-                            )
-                            .map((item, i) => {
-                              const country_code = item.country_code;
-                              if (
-                                !item.image ||
-                                !country_code ||
-                                usedCountryCodes.has(country_code)
-                              ) {
-                                return null;
-                              }
-
-                              usedCountryCodes.add(country_code);
-
-                              return (
-                                <SelectItem
-                                  key={`${country_code}-${item.name}`}
-                                  value={country_code}
-                                >
-                                  <span className="flex items-center justify-center text-nowrap">
-                                    <Image
-                                      src={item.image}
-                                      alt={`${country_code} flag`}
-                                      width={15}
-                                      height={15}
-                                      unoptimized // if needed for SVG
-                                    />
-                                    {country_code}
-                                  </span>
-                                </SelectItem>
-                              );
-                            })}
+                          {sortedCountryCodes.map((item) => {
+                            const country_code = item.country_code;
+                            return (
+                              <SelectItem
+                                key={`${country_code}-${item.name}`}
+                                value={country_code}
+                              >
+                                <span className="flex items-center justify-center text-nowrap">
+                                  <Image
+                                    src={item.image}
+                                    alt={`${country_code} flag`}
+                                    width={15}
+                                    height={15}
+                                    unoptimized // if needed for SVG
+                                  />
+                                  {country_code}
+                                </span>
+                              </SelectItem>
+                            );
+                          })}
                         </SelectContent>
                       </Select>
                     </FormControl>

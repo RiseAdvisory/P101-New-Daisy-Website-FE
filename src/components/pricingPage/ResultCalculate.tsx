@@ -119,10 +119,7 @@ export const ResultCalculate = ({
             {dataPricing?.resetCalculation?.details}
           </Button>
         </div>
-        <Separator
-          className="my-6 md:mb-0 bg-[#E8E9E9] -mx-4 w-full spacing-custom-width md:spacing-custom-width-md"
-          style={{ width: 'calc(100% + 32px)' }}
-        />
+        <Separator className="my-6 md:mb-0 bg-[#E8E9E9] -mx-4 w-full spacing-custom-width md:spacing-custom-width-md max-w-full" />
         <div className="md:flex md:justify-between">
           <div className="md:w-[50%] md:py-[20px]">
             {/* Included in Plan Title */}
@@ -177,10 +174,7 @@ export const ResultCalculate = ({
               )}
             </ul>
           </div>
-          <Separator
-            className="my-6 bg-[#E8E9E9] -mx-4 w-full md:hidden"
-            style={{ width: 'calc(100% + 32px)' }}
-          />
+          <Separator className="my-6 bg-[#E8E9E9] -mx-4 w-full md:hidden max-w-full" />
           <div className=" md:w-[50%]  md:border-l md:py-[20px] md:px-6">
             {/* Additional Resources Section - Only show if there are extras */}
             {hasAdditionalResources && (
@@ -278,10 +272,7 @@ export const ResultCalculate = ({
             </div>
           </div>
         </div>
-        <Separator
-          className="my-6 md:mt-0 bg-[#E8E9E9] -mx-4 w-full"
-          style={{ width: 'calc(100% + 32px)' }}
-        />
+        <Separator className="my-6 md:mt-0 bg-[#E8E9E9] -mx-4 w-full max-w-full" />
         <div className="md:flex md:items-center md:self-center md:justify-between">
           <div>
             <h2 className="ltr:font-montserrat font-semibold text-base">

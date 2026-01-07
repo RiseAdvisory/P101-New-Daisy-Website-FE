@@ -27,15 +27,17 @@ const Business = () => {
   useEffect(() => {
     (async function getBusiness() {
       try {
-        const responseGrowth = await axiosInstance.get(
-          `/growth-businesses?populate=*&locale=${lang}`,
+        // Parallelize API calls for better performance
+        const [responseGrowth, response, responseScrolling] = await Promise.all(
+          [
+            axiosInstance.get(`/growth-businesses?populate=*&locale=${lang}`),
+            axiosInstance.get(`/home-businesses?locale=${lang}`),
+            axiosInstance.get(
+              `/home-bussiness-scrollings?populate=*&locale=${lang}`,
+            ),
+          ],
         );
-        const response = await axiosInstance.get(
-          `/home-businesses?locale=${lang}`,
-        );
-        const responseScrolling = await axiosInstance.get(
-          `/home-bussiness-scrollings?populate=*&locale=${lang}`,
-        );
+
         setDataScroll(
           responseScrolling?.data?.data.sort(
             (a: any, b: any) => a.attributes.sortId - b.attributes.sortId,

@@ -81,7 +81,8 @@ describe('AboutPosts Security Tests', () => {
   });
 
   it('should sanitize HTML with iframe injection', async () => {
-    const maliciousHTML = '<p>Content</p><iframe src="https://evil.com"></iframe>';
+    const maliciousHTML =
+      '<p>Content</p><iframe src="https://evil.com"></iframe>';
     const sanitizedHTML = '<p>Content</p>';
 
     mockAxiosInstance.get.mockResolvedValueOnce({

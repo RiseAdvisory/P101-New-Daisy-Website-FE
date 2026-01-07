@@ -9,7 +9,7 @@ describe('FreshChatWidget Security Tests', () => {
     process.env = { ...originalEnv };
 
     // Clean up any existing scripts
-    document.querySelectorAll('#freshchat-js-sdk').forEach(el => el.remove());
+    document.querySelectorAll('#freshchat-js-sdk').forEach((el) => el.remove());
 
     // Clean up window objects
     delete (window as any).fcWidget;
@@ -35,7 +35,8 @@ describe('FreshChatWidget Security Tests', () => {
   });
 
   it('should reject malicious characters in token', () => {
-    process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token<script>alert("XSS")</script>';
+    process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN =
+      'token<script>alert("XSS")</script>';
     process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
 
     const consoleWarnSpy = jest.spyOn(console, 'warn').mockImplementation();
@@ -62,7 +63,9 @@ describe('FreshChatWidget Security Tests', () => {
 
     render(<FreshChatLoader lang="en" />);
 
-    expect(consoleWarnSpy).toHaveBeenCalledWith('FreshChat: Missing required configuration');
+    expect(consoleWarnSpy).toHaveBeenCalledWith(
+      'FreshChat: Missing required configuration',
+    );
 
     consoleWarnSpy.mockRestore();
   });
@@ -93,7 +96,8 @@ describe('FreshChatWidget Security Tests', () => {
 
   it('should sanitize host URL to prevent injection', () => {
     process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
-    process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://evil.com" onload="alert(\'XSS\')';
+    process.env.NEXT_PUBLIC_FRESHCHAT_HOST =
+      'https://evil.com" onload="alert(\'XSS\')';
 
     render(<FreshChatLoader lang="en" />);
 
@@ -123,7 +127,9 @@ describe('FreshChatWidget Security Tests', () => {
         const errorEvent = new Event('error');
         script.dispatchEvent(errorEvent);
 
-        expect(consoleErrorSpy).toHaveBeenCalledWith('FreshChat: Failed to load widget script');
+        expect(consoleErrorSpy).toHaveBeenCalledWith(
+          'FreshChat: Failed to load widget script',
+        );
       }
     });
 

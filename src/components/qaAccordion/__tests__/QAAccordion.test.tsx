@@ -58,7 +58,8 @@ describe('QAAccordion Security Tests', () => {
   it('should sanitize answer with style-based XSS', () => {
     const maliciousItem = {
       question: 'Test question',
-      answer: '<div style="background: url(javascript:alert(\'XSS\'))">Content</div>',
+      answer:
+        '<div style="background: url(javascript:alert(\'XSS\'))">Content</div>',
     };
 
     mockDOMPurify.sanitize.mockReturnValueOnce('<div>Content</div>');

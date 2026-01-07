@@ -21,7 +21,11 @@
       "Bash(npm audit:*)",
       "Bash(npm view:*)",
       "Bash(npx update-browserslist-db@latest:*)",
-      "Bash(npm test:*)"
+      "Bash(npm test:*)",
+      "Bash(gh pr comment:*)",
+      "Bash(gh pr:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)"
     ],
     "deny": []
   }

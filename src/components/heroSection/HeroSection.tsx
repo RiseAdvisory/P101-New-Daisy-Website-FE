@@ -72,12 +72,12 @@ export const HeroPage = ({
           {title}
         </p>
       )}
-      <h2 className="text-center mt-2 font-semibold text-[32px] leading-10 text-white md:px-[400px] md:text-[48px] md:leading-[60px]">
+      <h2 className="text-center mt-2 font-semibold text-[32px] leading-10 text-white md:px-16 lg:px-32 xl:px-48 md:text-[48px] md:leading-[60px]">
         {description}
       </h2>
       <p
         className={cn(
-          'text-base ltr:font-montserrat font-normal text-[#D5D9D9] mt-2 text-center md:px-[400px]',
+          'text-base ltr:font-montserrat font-normal text-[#D5D9D9] mt-2 text-center md:px-16 lg:px-32 xl:px-48',
           {
             hidden: visibleDescriiton,
           },
