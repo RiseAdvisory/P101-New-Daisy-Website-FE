@@ -134,6 +134,25 @@ export const Header = () => {
 
                     const currentPage = localStorage.getItem('activePage');
 
+                    //removing the menu selections below temporarily
+                    if (
+                      item.nav === '/resources' &&
+                      (currentPage === '/customer' ||
+                        currentPage === '/business' ||
+                        currentPage === '/professional')
+                    ) {
+                      return;
+                    }
+
+                    if (
+                      item.nav === '/features' &&
+                      (currentPage === '/customer' ||
+                        currentPage === '/business' ||
+                        currentPage === '/professional')
+                    ) {
+                      return;
+                    }
+
                     if (item.title === listHeader?.[0].title) {
                       if (typeof window !== 'undefined') {
                         const storedHref = localStorage.getItem('activePage');

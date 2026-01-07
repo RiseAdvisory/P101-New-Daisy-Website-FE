@@ -75,6 +75,24 @@ export const MobileMenu = () => {
             {listNav?.listNavigation &&
               listNav?.listNavigation.map((item: any, index: number) => {
                 let href = item.nav;
+                const currentPage = localStorage.getItem('activePage');
+                //removing the menu selections below temporarily
+                if (
+                  href === '/resources' &&
+                  (currentPage === '/customer' ||
+                    currentPage === '/business' ||
+                    currentPage === '/professional')
+                ) {
+                  return;
+                }
+                if (
+                  href === '/features' &&
+                  (currentPage === '/customer' ||
+                    currentPage === '/business' ||
+                    currentPage === '/professional')
+                ) {
+                  return;
+                }
 
                 return (
                   <li key={index}>
