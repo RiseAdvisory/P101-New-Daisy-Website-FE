@@ -5,8 +5,21 @@ import { ToggleButton } from './ToggleButton';
 
 // Helper to sanitize input to only allow English numerals (integers only)
 // Note: Currently strips decimals - only accepts 0-9 for integer values
+// Enforces min=1, max=999 constraints
 export const sanitizeNumberInput = (value: string): string => {
-  return value.replace(/[^0-9]/g, '');
+  const sanitized = value.replace(/[^0-9]/g, '');
+
+  if (sanitized === '') return '';
+
+  const numValue = parseInt(sanitized, 10);
+
+  // Enforce max 999
+  if (numValue > 999) return '999';
+
+  // Enforce min 1 (but allow empty string for user to type)
+  if (numValue < 1) return '';
+
+  return sanitized;
 };
 
 // Shared handler for blocking non-numeric key presses
@@ -180,6 +193,7 @@ export const Calculater = ({
               className="w-full md:w-20 ml-0 md:ml-8 mt-2 md:mt-0 focus:border-[#A67F6B] text-center py-[14px] md:py-2"
               defaultValue={staff}
               min="1"
+              max="999"
             />
           </div>
           <div className="flex flex-col md:flex-row justify-between mb-8 md:mb-6">
@@ -200,6 +214,7 @@ export const Calculater = ({
               className="w-full md:w-20 md:ml-8 mt-4 md:mt-0 focus:border-[#A67F6B] text-center py-2"
               defaultValue={workspace}
               min="1"
+              max="999"
             />
           </div>
           <div className="flex flex-col md:flex-row justify-between">
@@ -220,6 +235,7 @@ export const Calculater = ({
               className="w-full md:w-20 md:ml-8 mt-4 md:mt-0 focus:border-[#A67F6B] text-center py-2"
               defaultValue={country}
               min="1"
+              max="999"
             />
           </div>
         </div>
