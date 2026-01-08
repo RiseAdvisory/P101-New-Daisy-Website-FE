@@ -22,9 +22,9 @@ describe('sanitizeNumberInput', () => {
     expect(sanitizeNumberInput('1a2b3c')).toBe('123');
   });
 
-  it('should preserve English numerals (0-9)', () => {
+  it('should preserve English numerals (0-9) within min/max range', () => {
     expect(sanitizeNumberInput('123')).toBe('123');
-    expect(sanitizeNumberInput('0')).toBe('0');
+    expect(sanitizeNumberInput('0')).toBe(''); // 0 is below min of 1
     expect(sanitizeNumberInput('999')).toBe('999');
   });
 
@@ -36,9 +36,10 @@ describe('sanitizeNumberInput', () => {
 
   it('should strip special characters and symbols', () => {
     expect(sanitizeNumberInput('!@#$%')).toBe('');
-    expect(sanitizeNumberInput('12.34')).toBe('1234');
-    expect(sanitizeNumberInput('12,34')).toBe('1234');
-    expect(sanitizeNumberInput('12-34')).toBe('1234');
+    expect(sanitizeNumberInput('12.34')).toBe('999'); // 1234 exceeds max of 999
+    expect(sanitizeNumberInput('12,34')).toBe('999'); // 1234 exceeds max of 999
+    expect(sanitizeNumberInput('12-34')).toBe('999'); // 1234 exceeds max of 999
+    expect(sanitizeNumberInput('1.2')).toBe('12'); // 12 is within range
   });
 
   it('should handle empty strings', () => {
@@ -48,6 +49,28 @@ describe('sanitizeNumberInput', () => {
   it('should handle mixed content', () => {
     expect(sanitizeNumberInput('Price: $123')).toBe('123');
     expect(sanitizeNumberInput('10 items')).toBe('10');
+  });
+
+  it('should enforce max value of 999', () => {
+    expect(sanitizeNumberInput('999')).toBe('999');
+    expect(sanitizeNumberInput('1000')).toBe('999');
+    expect(sanitizeNumberInput('5000')).toBe('999');
+    expect(sanitizeNumberInput('99999')).toBe('999');
+  });
+
+  it('should enforce min value of 1 (empty string for values < 1)', () => {
+    expect(sanitizeNumberInput('0')).toBe('');
+    expect(sanitizeNumberInput('1')).toBe('1');
+  });
+
+  it('should allow empty string for user input', () => {
+    expect(sanitizeNumberInput('')).toBe('');
+  });
+
+  it('should handle edge cases correctly', () => {
+    expect(sanitizeNumberInput('1')).toBe('1');
+    expect(sanitizeNumberInput('999')).toBe('999');
+    expect(sanitizeNumberInput('500')).toBe('500');
   });
 });
 
