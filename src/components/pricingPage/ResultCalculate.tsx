@@ -105,9 +105,14 @@ export const ResultCalculate = ({
       <div className="mt-6 md:p-6 md:border md:rounded-[16px]">
         <div className="md:flex md:justify-between md:items-center ">
           <div className="flex justify-between md:justify-start">
-            <h2 className="ltr:font-montserrat font-semibold text-[#242424] text-[16px] leading-6">
-              {plan}
-            </h2>
+            <div className="flex flex-col md:flex-row md:items-center">
+              <span className="ltr:font-montserrat font-normal text-[#455150] text-[14px] leading-5 ltr:md:mr-2 rtl:md:ml-2">
+                {dataPricing?.resetCalculation?.weRecommend || 'We Recommend:'}
+              </span>
+              <h2 className="ltr:font-montserrat font-semibold text-[#242424] text-[16px] leading-6 mt-1 md:mt-0">
+                {plan}
+              </h2>
+            </div>
             <p className="bg-[#E9ECF7] px-[9px] py-[4px] ltr:font-inter text-[#2543AD] rounded-[20px] w-fit text-[12px] leading-[12px] font-medium self-center ltr:md:ml-3 rtl:md:mr-3">
               {dataPricing?.resetCalculation?.tryPeriod}
             </p>
