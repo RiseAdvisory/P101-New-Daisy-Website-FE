@@ -4,13 +4,15 @@
  */
 
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import { ResultCalculate } from '../ResultCalculate';
+import { render, screen, fireEvent } from '@testing-library/react';
+import { ResultCalculate, getSafeNavigationPath } from '../ResultCalculate';
+import { useRouter } from 'next/navigation';
 
 // Mock next/navigation
+const mockPush = jest.fn();
 jest.mock('next/navigation', () => ({
   useRouter: jest.fn(() => ({
-    push: jest.fn(),
+    push: mockPush,
   })),
 }));
 
@@ -292,5 +294,71 @@ describe('ResultCalculate - We Recommend Label', () => {
       expect(screen.getByText('Total Price:')).toBeInTheDocument();
       expect(screen.getByText('Get Started')).toBeInTheDocument();
     });
+  });
+
+  describe('navigation to partner form', () => {
+    beforeEach(() => {
+      mockPush.mockClear();
+    });
+
+    it('should navigate to /business#partner-with-us when clicking Get Started button with business page', () => {
+      render(<ResultCalculate {...mockProps} activePricingPage="business" />);
+
+      const getStartedButton = screen.getByText('Get Started');
+      fireEvent.click(getStartedButton);
+
+      expect(mockPush).toHaveBeenCalledTimes(1);
+      expect(mockPush).toHaveBeenCalledWith('/business#partner-with-us');
+    });
+
+    it('should navigate to /professional#partner-with-us when clicking Get Started button with professional page', () => {
+      render(
+        <ResultCalculate {...mockProps} activePricingPage="professional" />,
+      );
+
+      const getStartedButton = screen.getByText('Get Started');
+      fireEvent.click(getStartedButton);
+
+      expect(mockPush).toHaveBeenCalledTimes(1);
+      expect(mockPush).toHaveBeenCalledWith('/professional#partner-with-us');
+    });
+
+    it('should fallback to /business#partner-with-us when activePricingPage is invalid', () => {
+      render(<ResultCalculate {...mockProps} activePricingPage="invalid" />);
+
+      const getStartedButton = screen.getByText('Get Started');
+      fireEvent.click(getStartedButton);
+
+      expect(mockPush).toHaveBeenCalledTimes(1);
+      expect(mockPush).toHaveBeenCalledWith('/business#partner-with-us');
+    });
+
+    it('should fallback to /business#partner-with-us when activePricingPage is empty', () => {
+      render(<ResultCalculate {...mockProps} activePricingPage="" />);
+
+      const getStartedButton = screen.getByText('Get Started');
+      fireEvent.click(getStartedButton);
+
+      expect(mockPush).toHaveBeenCalledTimes(1);
+      expect(mockPush).toHaveBeenCalledWith('/business#partner-with-us');
+    });
+  });
+});
+
+describe('getSafeNavigationPath helper', () => {
+  it('should return /business#partner-with-us for business', () => {
+    expect(getSafeNavigationPath('business')).toBe('/business#partner-with-us');
+  });
+
+  it('should return /professional#partner-with-us for professional', () => {
+    expect(getSafeNavigationPath('professional')).toBe(
+      '/professional#partner-with-us',
+    );
+  });
+
+  it('should fallback to /business#partner-with-us for invalid values', () => {
+    expect(getSafeNavigationPath('invalid')).toBe('/business#partner-with-us');
+    expect(getSafeNavigationPath('')).toBe('/business#partner-with-us');
+    expect(getSafeNavigationPath('customer')).toBe('/business#partner-with-us');
   });
 });
