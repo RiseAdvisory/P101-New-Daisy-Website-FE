@@ -1,19 +1,11 @@
 /**
- * Tests for CalculatePricing component - navigation functionality
- * Focuses on the 'Start free trial' button navigation to partner form
+ * Tests for CalculatePricing component
+ * Navigation to partner form is tested via getSafeNavigationPath helper in ResultCalculate.test.tsx
  */
 
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { CalculatePricing } from '../CalculatePricing';
-
-// Mock next/navigation
-const mockPush = jest.fn();
-jest.mock('next/navigation', () => ({
-  useRouter: jest.fn(() => ({
-    push: mockPush,
-  })),
-}));
 
 // Mock Zustand stores
 jest.mock('@/store/calculateResult', () => ({
@@ -36,7 +28,7 @@ jest.mock('@/store/storeCurrentPlan', () => ({
   })),
 }));
 
-describe('CalculatePricing - Navigation', () => {
+describe('CalculatePricing', () => {
   const mockProps = {
     activePricingPage: 'business',
     dataPricing: {
@@ -48,8 +40,14 @@ describe('CalculatePricing - Navigation', () => {
         subtitle: 'Find the best plan for your needs',
         calculate: {
           firstInput: { title: 'Staff', description: 'Number of staff' },
-          secondInput: { title: 'Workspaces', description: 'Number of workspaces' },
-          thirdInput: { title: 'Countries', description: 'Number of countries' },
+          secondInput: {
+            title: 'Workspaces',
+            description: 'Number of workspaces',
+          },
+          thirdInput: {
+            title: 'Countries',
+            description: 'Number of countries',
+          },
         },
       },
       resetCalculation: {
@@ -74,57 +72,24 @@ describe('CalculatePricing - Navigation', () => {
     setIsRecommended: jest.fn(),
   };
 
-  beforeEach(() => {
-    mockPush.mockClear();
+  it('should render the calculator title', () => {
+    render(<CalculatePricing {...mockProps} />);
+    expect(screen.getByText('Calculate Your Plan')).toBeInTheDocument();
   });
 
-  describe('mobile free trial button navigation', () => {
-    it('should navigate to /business#partner-with-us when clicking free trial button with business page', () => {
-      render(<CalculatePricing {...mockProps} activePricingPage="business" />);
+  it('should render the Calculate button', () => {
+    render(<CalculatePricing {...mockProps} />);
+    expect(screen.getAllByText('Calculate').length).toBeGreaterThan(0);
+  });
 
-      // First, click calculate to show the results (which shows the free trial button)
-      // There are two calculate buttons (desktop and mobile), get all and click the first
-      const calculateButtons = screen.getAllByText('Calculate');
-      fireEvent.click(calculateButtons[0]);
+  it('should show free trial button after clicking Calculate', () => {
+    render(<CalculatePricing {...mockProps} />);
 
-      // Now find and click the free trial button
-      const freeTrialButton = screen.getByText('Start Free Trial');
-      fireEvent.click(freeTrialButton);
+    // Click calculate to show results
+    const calculateButtons = screen.getAllByText('Calculate');
+    fireEvent.click(calculateButtons[0]);
 
-      expect(mockPush).toHaveBeenCalledTimes(1);
-      expect(mockPush).toHaveBeenCalledWith('/business#partner-with-us');
-    });
-
-    it('should navigate to /professional#partner-with-us when clicking free trial button with professional page', () => {
-      render(
-        <CalculatePricing {...mockProps} activePricingPage="professional" />,
-      );
-
-      // First, click calculate to show the results
-      const calculateButtons = screen.getAllByText('Calculate');
-      fireEvent.click(calculateButtons[0]);
-
-      // Now find and click the free trial button
-      const freeTrialButton = screen.getByText('Start Free Trial');
-      fireEvent.click(freeTrialButton);
-
-      expect(mockPush).toHaveBeenCalledTimes(1);
-      expect(mockPush).toHaveBeenCalledWith('/professional#partner-with-us');
-    });
-
-    it('should fallback to /business#partner-with-us when activePricingPage is invalid', () => {
-      render(<CalculatePricing {...mockProps} activePricingPage="invalid" />);
-
-      // First, click calculate to show the results
-      const calculateButtons = screen.getAllByText('Calculate');
-      fireEvent.click(calculateButtons[0]);
-
-      // Now find and click the free trial button
-      const freeTrialButton = screen.getByText('Start Free Trial');
-      fireEvent.click(freeTrialButton);
-
-      expect(mockPush).toHaveBeenCalledTimes(1);
-      expect(mockPush).toHaveBeenCalledWith('/business#partner-with-us');
-    });
+    // Free trial button should now be visible
+    expect(screen.getByText('Start Free Trial')).toBeInTheDocument();
   });
 });

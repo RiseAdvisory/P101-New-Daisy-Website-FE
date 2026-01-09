@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import { useRouter } from 'next/navigation';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '../ui/button';
 import { Calculater } from './Calculater';
@@ -34,7 +33,6 @@ export const CalculatePricing = ({
   onScrollToGrid,
   setIsRecommended,
 }: CalculatePricingProps) => {
-  const router = useRouter();
   const [homeService, setHomeService] = useState(false);
   const [onboarding, setOnboarding] = useState(false);
   const [conciergeService, setConciergeService] = useState(false);
@@ -127,7 +125,9 @@ export const CalculatePricing = ({
             'inline-flex md:hidden w-full p-6  ltr:font-montserrat border border-[#2E4342]  font-semibold px-[89px] py-[12px] mb-3',
             { hidden: onCalculates },
           )}
-          onClick={() => router.push(getSafeNavigationPath(activePricingPage))}
+          onClick={() => {
+            window.location.href = getSafeNavigationPath(activePricingPage);
+          }}
         >
           {dataPricing?.textFreeTrial}
         </Button>
