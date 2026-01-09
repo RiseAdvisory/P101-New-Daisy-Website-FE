@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '../ui/button';
 import { Calculater } from './Calculater';
@@ -6,12 +7,34 @@ import { ResultCalculate } from './ResultCalculate';
 import { cn } from '@/lib/utils';
 import { useCalculate } from '@/store/calculateResult';
 
+// Valid pricing page types for navigation
+const VALID_PRICING_PAGES = ['business', 'professional'] as const;
+type ValidPricingPage = (typeof VALID_PRICING_PAGES)[number];
+
+// Helper to get safe navigation path
+const getSafeNavigationPath = (activePricingPage: string): string => {
+  const safePage: ValidPricingPage = VALID_PRICING_PAGES.includes(
+    activePricingPage as ValidPricingPage,
+  )
+    ? (activePricingPage as ValidPricingPage)
+    : 'business';
+  return `/${safePage}#partner-with-us`;
+};
+
+interface CalculatePricingProps {
+  activePricingPage: string;
+  dataPricing: any;
+  onScrollToGrid: () => void;
+  setIsRecommended: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 export const CalculatePricing = ({
   activePricingPage,
   dataPricing,
   onScrollToGrid,
   setIsRecommended,
-}: any) => {
+}: CalculatePricingProps) => {
+  const router = useRouter();
   const [homeService, setHomeService] = useState(false);
   const [onboarding, setOnboarding] = useState(false);
   const [conciergeService, setConciergeService] = useState(false);
@@ -94,6 +117,7 @@ export const CalculatePricing = ({
             setCheckedYear={setCheckedYear}
             onScrollToGrid={onScrollToGrid}
             dataPricing={dataPricing}
+            activePricingPage={activePricingPage}
           />
         )}
 
@@ -103,6 +127,7 @@ export const CalculatePricing = ({
             'inline-flex md:hidden w-full p-6  ltr:font-montserrat border border-[#2E4342]  font-semibold px-[89px] py-[12px] mb-3',
             { hidden: onCalculates },
           )}
+          onClick={() => router.push(getSafeNavigationPath(activePricingPage))}
         >
           {dataPricing?.textFreeTrial}
         </Button>
