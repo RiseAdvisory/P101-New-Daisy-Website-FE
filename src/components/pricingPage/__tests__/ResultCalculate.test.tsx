@@ -7,6 +7,13 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { ResultCalculate } from '../ResultCalculate';
 
+// Mock next/navigation
+jest.mock('next/navigation', () => ({
+  useRouter: jest.fn(() => ({
+    push: jest.fn(),
+  })),
+}));
+
 // Mock Zustand stores
 jest.mock('@/store/calculateResult', () => ({
   useCalculate: jest.fn(() => ({
@@ -36,6 +43,7 @@ describe('ResultCalculate - We Recommend Label', () => {
     setCheckedYear: jest.fn(),
     calculationFormRef: { current: null },
     onScrollToGrid: jest.fn(),
+    activePricingPage: 'business',
     dataPricing: {
       resetCalculation: {
         weRecommend: 'We Recommend:',

@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { useRouter } from 'next/navigation';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '../ui/button';
 import { CheckIconPricing } from '@/assets/icons/checkIconPricing/CheckIconPricing';
@@ -40,13 +41,16 @@ export const ResultCalculate = ({
   calculationFormRef,
   onScrollToGrid,
   dataPricing,
+  activePricingPage,
 }: {
   onCheckedYear: boolean;
   setCheckedYear: any;
   calculationFormRef: any;
   onScrollToGrid: any;
   dataPricing: any;
+  activePricingPage: string;
 }) => {
+  const router = useRouter();
   const { workspace, country, staff, provideHome } = useCalculate();
 
   const { plan, price, priceYear } = useCurrentPlan();
@@ -345,7 +349,10 @@ export const ResultCalculate = ({
               </div>
             </div>
           </div>
-          <Button className="ml-4 hover:bg-white hover:text-primary border hidden md:inline-flex rounded-[9px]">
+          <Button
+            className="ml-4 hover:bg-white hover:text-primary border hidden md:inline-flex rounded-[9px]"
+            onClick={() => router.push(`/${activePricingPage}#partner-with-us`)}
+          >
             {dataPricing?.resetCalculation?.textStart}
           </Button>
         </div>
