@@ -8,6 +8,10 @@ import { cn } from '@/lib/utils';
 import { useCalculate } from '@/store/calculateResult';
 import { useCurrentPlan } from '@/store/storeCurrentPlan';
 
+// Navigation path for the "Get started" button
+// Using window.location.href for full page navigation to Contact page
+const CONTACT_PAGE_PATH = '/contact';
+
 // Per-unit pricing for additional resources (monthly)
 const ADDITIONAL_STAFF_PRICE = 10;
 const ADDITIONAL_WORKSPACE_PRICE = 25;
@@ -299,7 +303,12 @@ export const ItemCardPricing = ({
                   {defaulText?.discount}
                 </span>
               </p>
-              <Button className="ltr:font-montserrat font-semibold mt-4 bg-white text-primary hover:text-white hover:bg-primary border border-primary ">
+              <Button
+                onClick={() => {
+                  window.location.href = CONTACT_PAGE_PATH;
+                }}
+                className="ltr:font-montserrat font-semibold mt-4 bg-white text-primary hover:text-white hover:bg-primary border border-primary "
+              >
                 {defaulText?.textStarted}
               </Button>
             </div>
