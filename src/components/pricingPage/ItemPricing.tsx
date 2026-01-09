@@ -9,8 +9,10 @@ import { useCalculate } from '@/store/calculateResult';
 import { useCurrentPlan } from '@/store/storeCurrentPlan';
 
 // Navigation path for the "Get started" button
-// Using window.location.href for full page navigation to Contact page
-const CONTACT_PAGE_PATH = '/contact';
+// Using window.location.href intentionally for full page navigation to Contact page
+// This ensures consistent behavior with other pricing page buttons (CalculatePricing, ResultCalculate)
+// and provides a clean navigation away from the pricing calculator
+export const CONTACT_PAGE_PATH = '/contact';
 
 // Per-unit pricing for additional resources (monthly)
 const ADDITIONAL_STAFF_PRICE = 10;
