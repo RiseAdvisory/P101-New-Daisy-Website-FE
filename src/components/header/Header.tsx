@@ -32,7 +32,9 @@ export const Header = () => {
   const [getTheApp, setGetTheApp] = useState<any>();
   const [activePages, setActivePages] = useState<any>();
   const [listLanguage, setListLanguage] = useState<any>();
-  const [currentActivePage, setCurrentActivePage] = useState<string | null>(null);
+  const [currentActivePage, setCurrentActivePage] = useState<string | null>(
+    null,
+  );
   const { lang, changeLanguages } = useChangeLanguage();
   const { isOpenMenu } = useOpenMenu();
   useEffect(() => {

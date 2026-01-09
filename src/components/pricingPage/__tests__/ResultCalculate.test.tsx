@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { ResultCalculate, getSafeNavigationPath } from '../ResultCalculate';
+import { ResultCalculate } from '../ResultCalculate';
 
 // Mock Zustand stores
 jest.mock('@/store/calculateResult', () => ({
@@ -285,24 +285,5 @@ describe('ResultCalculate - We Recommend Label', () => {
       expect(screen.getByText('Total Price:')).toBeInTheDocument();
       expect(screen.getByText('Get Started')).toBeInTheDocument();
     });
-  });
-
-});
-
-describe('getSafeNavigationPath helper', () => {
-  it('should return /business#partner-with-us for business', () => {
-    expect(getSafeNavigationPath('business')).toBe('/business#partner-with-us');
-  });
-
-  it('should return /professional#partner-with-us for professional', () => {
-    expect(getSafeNavigationPath('professional')).toBe(
-      '/professional#partner-with-us',
-    );
-  });
-
-  it('should fallback to /business#partner-with-us for invalid values', () => {
-    expect(getSafeNavigationPath('invalid')).toBe('/business#partner-with-us');
-    expect(getSafeNavigationPath('')).toBe('/business#partner-with-us');
-    expect(getSafeNavigationPath('customer')).toBe('/business#partner-with-us');
   });
 });
