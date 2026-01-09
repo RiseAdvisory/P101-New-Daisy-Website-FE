@@ -1,5 +1,4 @@
 import { useMemo } from 'react';
-import { useRouter } from 'next/navigation';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '../ui/button';
 import { CheckIconPricing } from '@/assets/icons/checkIconPricing/CheckIconPricing';
@@ -8,19 +7,10 @@ import { cn } from '@/lib/utils';
 import { useCalculate } from '@/store/calculateResult';
 import { useCurrentPlan } from '@/store/storeCurrentPlan';
 
-// Valid pricing page types for navigation
-const VALID_PRICING_PAGES = ['business', 'professional'] as const;
-type ValidPricingPage = (typeof VALID_PRICING_PAGES)[number];
-
-// Helper to get safe navigation path
-export const getSafeNavigationPath = (activePricingPage: string): string => {
-  const safePage: ValidPricingPage = VALID_PRICING_PAGES.includes(
-    activePricingPage as ValidPricingPage,
-  )
-    ? (activePricingPage as ValidPricingPage)
-    : 'business';
-  return `/${safePage}#partner-with-us`;
-};
+// Navigation path for the free trial button
+// Using window.location.href intentionally for full page navigation to Contact page
+// This ensures a clean navigation away from the pricing calculator
+export const CONTACT_PAGE_PATH = '/contact';
 
 // Per-unit pricing for additional resources (monthly)
 const ADDITIONAL_STAFF_PRICE = 10;
@@ -64,7 +54,6 @@ export const ResultCalculate = ({
   dataPricing: any;
   activePricingPage: string;
 }) => {
-  const router = useRouter();
   const { workspace, country, staff, provideHome } = useCalculate();
 
   const { plan, price, priceYear } = useCurrentPlan();
@@ -365,7 +354,9 @@ export const ResultCalculate = ({
           </div>
           <Button
             className="ml-4 hover:bg-white hover:text-primary border hidden md:inline-flex rounded-[9px]"
-            onClick={() => router.push(getSafeNavigationPath(activePricingPage))}
+            onClick={() => {
+              window.location.href = CONTACT_PAGE_PATH;
+            }}
           >
             {dataPricing?.resetCalculation?.textStart}
           </Button>

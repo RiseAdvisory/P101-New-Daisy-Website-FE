@@ -26,7 +26,9 @@ export const MobileMenu = () => {
   const [getTheApp, setGetTheApp] = useState<any>();
   const [listNav, setListNav] = useState<any>();
   const [openMenu, setOpenMenu] = useState(false);
-  const [currentActivePage, setCurrentActivePage] = useState<string | null>(null);
+  const [currentActivePage, setCurrentActivePage] = useState<string | null>(
+    null,
+  );
 
   const { toggleOpenMenu } = useOpenMenu();
   const router = useRouter();

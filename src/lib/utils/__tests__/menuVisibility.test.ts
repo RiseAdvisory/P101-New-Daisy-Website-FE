@@ -17,15 +17,15 @@ describe('menuVisibility', () => {
 
     describe('when activePage is a user type page (customer/business/professional)', () => {
       it('should hide Resources on customer page', () => {
-        expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, NAV_PATHS.CUSTOMER)).toBe(
-          true,
-        );
+        expect(
+          shouldHideMenuItem(NAV_PATHS.RESOURCES, NAV_PATHS.CUSTOMER),
+        ).toBe(true);
       });
 
       it('should hide Resources on business page', () => {
-        expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, NAV_PATHS.BUSINESS)).toBe(
-          true,
-        );
+        expect(
+          shouldHideMenuItem(NAV_PATHS.RESOURCES, NAV_PATHS.BUSINESS),
+        ).toBe(true);
       });
 
       it('should hide Resources on professional page', () => {
