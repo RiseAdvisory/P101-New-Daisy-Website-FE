@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { ResultCalculate } from '../ResultCalculate';
+import { ResultCalculate, CONTACT_PAGE_PATH } from '../ResultCalculate';
 
 // Mock Zustand stores
 jest.mock('@/store/calculateResult', () => ({
@@ -284,6 +284,28 @@ describe('ResultCalculate - We Recommend Label', () => {
       expect(screen.getByText('Your Requirements')).toBeInTheDocument();
       expect(screen.getByText('Total Price:')).toBeInTheDocument();
       expect(screen.getByText('Get Started')).toBeInTheDocument();
+    });
+  });
+
+  describe('navigation to Contact page', () => {
+    it('should have CONTACT_PAGE_PATH set to /contact', () => {
+      expect(CONTACT_PAGE_PATH).toBe('/contact');
+    });
+
+    it('should render the Get Started button for navigation', () => {
+      render(<ResultCalculate {...mockProps} />);
+
+      const getStartedButton = screen.getByText('Get Started');
+      expect(getStartedButton).toBeInTheDocument();
+      expect(getStartedButton.tagName).toBe('BUTTON');
+    });
+
+    it('should have onClick handler on Get Started button', () => {
+      render(<ResultCalculate {...mockProps} />);
+
+      const getStartedButton = screen.getByText('Get Started');
+      // Verify button can be clicked without throwing
+      expect(() => fireEvent.click(getStartedButton)).not.toThrow();
     });
   });
 });

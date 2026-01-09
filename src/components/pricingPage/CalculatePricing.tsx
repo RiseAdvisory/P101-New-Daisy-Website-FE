@@ -7,6 +7,8 @@ import { cn } from '@/lib/utils';
 import { useCalculate } from '@/store/calculateResult';
 
 // Navigation path for the free trial button
+// Using window.location.href intentionally for full page navigation to Contact page
+// This ensures a clean navigation away from the pricing calculator
 const CONTACT_PAGE_PATH = '/contact';
 
 interface CalculatePricingProps {

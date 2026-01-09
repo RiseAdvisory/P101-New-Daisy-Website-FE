@@ -8,7 +8,9 @@ import { useCalculate } from '@/store/calculateResult';
 import { useCurrentPlan } from '@/store/storeCurrentPlan';
 
 // Navigation path for the free trial button
-const CONTACT_PAGE_PATH = '/contact';
+// Using window.location.href intentionally for full page navigation to Contact page
+// This ensures a clean navigation away from the pricing calculator
+export const CONTACT_PAGE_PATH = '/contact';
 
 // Per-unit pricing for additional resources (monthly)
 const ADDITIONAL_STAFF_PRICE = 10;

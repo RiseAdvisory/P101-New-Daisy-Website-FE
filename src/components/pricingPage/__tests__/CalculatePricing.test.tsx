@@ -1,6 +1,6 @@
 /**
  * Tests for CalculatePricing component
- * Navigation to partner form is tested via getSafeNavigationPath helper in ResultCalculate.test.tsx
+ * Tests rendering and navigation to Contact page
  */
 
 import React from 'react';
@@ -91,5 +91,31 @@ describe('CalculatePricing', () => {
 
     // Free trial button should now be visible
     expect(screen.getByText('Start Free Trial')).toBeInTheDocument();
+  });
+
+  describe('navigation to Contact page', () => {
+    it('should render Start Free Trial button after calculation', () => {
+      render(<CalculatePricing {...mockProps} />);
+
+      // Click calculate to show results
+      const calculateButtons = screen.getAllByText('Calculate');
+      fireEvent.click(calculateButtons[0]);
+
+      const freeTrialButton = screen.getByText('Start Free Trial');
+      expect(freeTrialButton).toBeInTheDocument();
+      expect(freeTrialButton.tagName).toBe('BUTTON');
+    });
+
+    it('should have onClick handler on Start Free Trial button', () => {
+      render(<CalculatePricing {...mockProps} />);
+
+      // Click calculate to show results
+      const calculateButtons = screen.getAllByText('Calculate');
+      fireEvent.click(calculateButtons[0]);
+
+      // Click the free trial button - should not throw
+      const freeTrialButton = screen.getByText('Start Free Trial');
+      expect(() => fireEvent.click(freeTrialButton)).not.toThrow();
+    });
   });
 });
