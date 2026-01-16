@@ -290,21 +290,40 @@ describe('FreshChatWidget Script Loading Tests', () => {
     jest.useRealTimers();
   });
 
-  it('should destroy existing widget before reinitializing', () => {
+  it('should destroy existing widget before reinitializing when initialized', () => {
     process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
     process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
 
-    // Mock existing fcWidget
+    // Mock existing initialized fcWidget
     const mockDestroy = jest.fn();
     (window as any).fcWidget = {
       init: jest.fn(),
       destroy: mockDestroy,
+      isInitialized: jest.fn(() => true),
     };
 
     render(<FreshChatLoader lang="en" />);
 
-    // destroy should have been called to clean up existing widget
+    // destroy should have been called to clean up existing initialized widget
     expect(mockDestroy).toHaveBeenCalled();
+  });
+
+  it('should not destroy widget if not initialized', () => {
+    process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
+    process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
+
+    // Mock existing but not initialized fcWidget
+    const mockDestroy = jest.fn();
+    (window as any).fcWidget = {
+      init: jest.fn(),
+      destroy: mockDestroy,
+      isInitialized: jest.fn(() => false),
+    };
+
+    render(<FreshChatLoader lang="en" />);
+
+    // destroy should NOT have been called since widget is not initialized
+    expect(mockDestroy).not.toHaveBeenCalled();
   });
 
   it('should not create duplicate scripts on language change', async () => {
@@ -317,10 +336,11 @@ describe('FreshChatWidget Script Loading Tests', () => {
     let scripts = document.querySelectorAll(`#${SCRIPT_ID}`);
     expect(scripts.length).toBe(1);
 
-    // Mock fcWidget for rerender
+    // Mock fcWidget for rerender (not yet initialized)
     (window as any).fcWidget = {
       init: jest.fn(),
       destroy: jest.fn(),
+      isInitialized: jest.fn(() => false),
     };
 
     // Rerender with different language
@@ -329,6 +349,50 @@ describe('FreshChatWidget Script Loading Tests', () => {
     // Should still have only one script (reuses existing)
     scripts = document.querySelectorAll(`#${SCRIPT_ID}`);
     expect(scripts.length).toBe(1);
+  });
+
+  it('should reinitialize widget with delay on language change when already initialized', async () => {
+    jest.useFakeTimers();
+
+    process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
+    process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
+    process.env.NEXT_PUBLIC_FRESHCHAT_WIDGET_UUID = 'arabic-uuid';
+
+    const { rerender } = render(<FreshChatLoader lang="en" />);
+
+    // Mock fcWidget as initialized (simulating after initial load)
+    const mockInit = jest.fn();
+    const mockDestroy = jest.fn();
+    (window as any).fcWidget = {
+      init: mockInit,
+      destroy: mockDestroy,
+      isInitialized: jest.fn(() => true),
+    };
+
+    // Switch to Arabic language
+    rerender(<FreshChatLoader lang="ar" />);
+
+    // destroy should be called immediately
+    expect(mockDestroy).toHaveBeenCalled();
+
+    // init should NOT be called immediately (waiting for cleanup)
+    expect(mockInit).not.toHaveBeenCalled();
+
+    // Advance timers by 500ms (the delay for reinitialization)
+    await act(async () => {
+      jest.advanceTimersByTime(500);
+    });
+
+    // Now init should have been called with Arabic config
+    expect(mockInit).toHaveBeenCalledWith(
+      expect.objectContaining({
+        token: 'token',
+        host: 'https://freshchat.com',
+        widgetUuid: 'arabic-uuid',
+      }),
+    );
+
+    jest.useRealTimers();
   });
 
   it('should call init with widgetUuid for Arabic language when script exists', async () => {
