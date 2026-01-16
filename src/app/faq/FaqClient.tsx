@@ -53,12 +53,10 @@ export const FaqClient = () => {
           const data = await res.json();
           if (data.status && data.data) {
             setFaqItems(
-              data.data.map(
-                (item: { question: string; answer: string }) => ({
-                  question: item.question,
-                  answer: item.answer,
-                }),
-              ),
+              data.data.map((item: { question: string; answer: string }) => ({
+                question: item.question,
+                answer: item.answer,
+              })),
             );
           }
         }

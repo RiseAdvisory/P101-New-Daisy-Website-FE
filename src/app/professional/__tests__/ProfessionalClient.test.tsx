@@ -254,7 +254,9 @@ describe('ProfessionalClient', () => {
     render(<ProfessionalClient />);
 
     await waitFor(() => {
-      expect(screen.getByTestId('qa-section')).toHaveTextContent('Professional');
+      expect(screen.getByTestId('qa-section')).toHaveTextContent(
+        'Professional',
+      );
     });
   });
 

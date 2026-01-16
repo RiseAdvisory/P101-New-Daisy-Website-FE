@@ -1,4 +1,10 @@
-import { render, screen, cleanup, fireEvent, act } from '@testing-library/react';
+import {
+  render,
+  screen,
+  cleanup,
+  fireEvent,
+  act,
+} from '@testing-library/react';
 import { Footer } from '../Footer';
 import * as apiCache from '@/helpers/apiCache';
 
@@ -65,7 +71,9 @@ jest.mock('@/assets/icons/socialLinksIcons/InstagramIcons', () => ({
 
 // Mock buttons
 jest.mock('@/components/buttonApp/PlayMarketButton', () => ({
-  PlayMarketButton: () => <button data-testid="play-market-btn">Play Store</button>,
+  PlayMarketButton: () => (
+    <button data-testid="play-market-btn">Play Store</button>
+  ),
 }));
 
 jest.mock('@/components/buttonApp/AppStoreButton', () => ({
