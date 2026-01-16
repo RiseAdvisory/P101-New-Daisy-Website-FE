@@ -6,6 +6,26 @@ import { motion } from 'framer-motion';
 import { PlayMarketButton } from '../buttonApp/PlayMarketButton';
 import { AppStoreButton } from '../buttonApp/AppStoreButton';
 
+interface NoScrollingAnimationBusinessProps {
+  image?: string;
+  title: string;
+  className?: string;
+  imageClassName?: string;
+  imageBg: string;
+  imageBgTwo?: string;
+  imageClassNameBg: string;
+  imageClassNameBgSecond?: string;
+  subtitle: string;
+  description: string;
+  list?: string[];
+  imageWidth?: number;
+  imageHeight?: number;
+  sizeImage?: Record<string, string | number>;
+  styleFirstBgJSON?: Record<string, string | number>;
+  styleSecondBgJSON?: Record<string, string | number>;
+  styleBgMobileSecond?: Record<string, string | number>;
+}
+
 export const NoScrollingAnimationBusiness = ({
   image,
   title,
@@ -16,7 +36,7 @@ export const NoScrollingAnimationBusiness = ({
   imageClassNameBg,
   imageClassNameBgSecond,
   subtitle,
-  desription,
+  description,
   list,
   imageWidth,
   imageHeight,
@@ -24,25 +44,7 @@ export const NoScrollingAnimationBusiness = ({
   styleFirstBgJSON,
   styleSecondBgJSON,
   styleBgMobileSecond,
-}: {
-  image?: any;
-  title: string;
-  className?: string;
-  imageClassName?: string;
-  imageBg: any;
-  imageBgTwo?: any;
-  imageClassNameBg: string;
-  imageClassNameBgSecond?: string;
-  subtitle: string;
-  desription: string;
-  list: string[];
-  imageWidth: any;
-  imageHeight: any;
-  sizeImage?: any;
-  styleFirstBgJSON: any;
-  styleSecondBgJSON: any;
-  styleBgMobileSecond?: any;
-}) => {
+}: NoScrollingAnimationBusinessProps) => {
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -66,7 +68,7 @@ export const NoScrollingAnimationBusiness = ({
   return (
     <div className="pt-16 bg-primary px-4 pb-[64px]">
       <div className="w-full relative bg-primaryBtn overflow-hidden rounded-[9px] h-[340px]">
-        {!imageBg.includes(undefined) && (
+        {imageBg && !imageBg.includes('undefined') && (
           <Image
             src={imageBg}
             style={styleFirstBgJSON}
@@ -76,7 +78,7 @@ export const NoScrollingAnimationBusiness = ({
             height={1000}
           />
         )}
-        {!imageBgTwo.includes(undefined) && (
+        {imageBgTwo && !imageBgTwo.includes('undefined') && (
           <Image
             src={imageBgTwo}
             style={styleBgMobileSecond}
@@ -86,7 +88,7 @@ export const NoScrollingAnimationBusiness = ({
             height={1000}
           />
         )}
-        {!image.includes(undefined) && (
+        {image && !image.includes('undefined') && (
           <Image
             src={image!}
             alt="photo"
@@ -104,7 +106,7 @@ export const NoScrollingAnimationBusiness = ({
         {title}
       </h2>
       <p className="ltr:font-montserrat font-medium text-xl pt-3 leading-8 text-[#D5D9D9] capitalize">
-        {desription}
+        {description}
       </p>
       {list ? (
         <motion.ul
@@ -114,7 +116,7 @@ export const NoScrollingAnimationBusiness = ({
           viewport={{ once: true }}
           className="mt-8"
         >
-          {list.map((items: any, index: number) => {
+          {list.map((listItem: string, index: number) => {
             return (
               <motion.li key={index} variants={item}>
                 <Button
@@ -123,7 +125,7 @@ export const NoScrollingAnimationBusiness = ({
                 >
                   <CheckIcon className="ltr:mr-2 rtl:ml-2 !min-w-6 flex-shrink-0" />
                   <span className="overflow-wrap break-word whitespace-normal">
-                    {items}
+                    {listItem}
                   </span>
                 </Button>
               </motion.li>
