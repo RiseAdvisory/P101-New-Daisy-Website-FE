@@ -1,41 +1,46 @@
-'use client';
-import { SupportSection } from '@/components/contactsPage/SupportSection';
-import { HeroPage } from '@/components/heroSection/HeroSection';
-import axiosInstance from '@/helpers/axiosConfig';
-import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
+import { Metadata } from 'next';
+import { ContactClient } from './ContactClient';
 
-const Contacts = () => {
-  const [contacts, setContacts] = useState<any>();
-
-  const { lang } = useChangeLanguage();
-
-  useEffect(() => {
-    (async () => {
-      try {
-        const response = await axiosInstance.get(
-          `/contact-pages?locale=${lang}`,
-        );
-        setContacts(response?.data?.data?.[0].attributes);
-      } catch {
-        // Error fetching contact page data
-      }
-    })();
-  }, [lang]);
-
-  return (
-    <div className="w-full">
-      <HeroPage
-        hiddenArrow={true}
-        visibleDescriiton={false}
-        title={contacts?.heroTitle}
-        description={contacts?.heroSubtitle}
-        heightScreen={false}
-        styleSection="pb-[100px]"
-        secondDescription={contacts?.heroDescription}
-      />
-      <SupportSection contacts={contacts?.listContact} />
-    </div>
-  );
+export const metadata: Metadata = {
+  title: 'Contact Us | The Daisy - Beauty Booking Platform',
+  description:
+    'Get in touch with The Daisy team. Questions about our beauty booking platform, salon partnerships, or customer support? We are here to help.',
+  keywords: [
+    'contact The Daisy',
+    'beauty platform support',
+    'salon partnership inquiry',
+    'customer support',
+    'beauty app help',
+    'spa business inquiry',
+    'vendor onboarding',
+    'beauty marketplace contact',
+  ],
+  openGraph: {
+    title: 'Contact Us | The Daisy - Beauty Booking Platform',
+    description:
+      'Get in touch with The Daisy team for beauty platform questions and support.',
+    url: 'https://jointhedaisy.com/contact',
+    type: 'website',
+    images: [
+      {
+        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact The Daisy',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Us | The Daisy - Beauty Booking Platform',
+    description: 'Get in touch with The Daisy team for questions and support.',
+    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+  },
+  alternates: {
+    canonical: 'https://jointhedaisy.com/contact',
+  },
 };
-export default Contacts;
+
+export default function ContactPage() {
+  return <ContactClient />;
+}

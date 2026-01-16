@@ -1,47 +1,45 @@
-'use client';
-import { HeroPage } from '@/components/heroSection/HeroSection';
-import { PrivacyPoliceList } from '@/components/privacyPolice/PrivacyPolicyList';
-import axiosInstance from '@/helpers/axiosConfig';
-import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
+import { Metadata } from 'next';
+import { PrivacyPolicyClient } from './PrivacyPolicyClient';
 
-const PrivacyPolicy = () => {
-  const [scroll, setScroll] = useState(null);
-  const [dataSection, setDataSection] = useState<any>();
-
-  const { lang } = useChangeLanguage();
-
-  useEffect(() => {
-    (async () => {
-      try {
-        const response = await axiosInstance.get(
-          `/pravicy-policies?locale=${lang}`,
-        );
-        const [data] = response?.data?.data;
-        setDataSection(data?.attributes);
-      } catch {
-        // Error fetching privacy policy
-      }
-    })();
-  }, [lang]);
-
-  return (
-    <>
-      <HeroPage
-        blockRef={scroll}
-        bredCrumbDesription={dataSection?.bredCrumbDesription}
-        bredCrumbTitle={dataSection?.bredCrumbTitle}
-        isVisibleBreadCrumbs={true}
-        hiddenArrow={false}
-        visibleDescriiton={false}
-        title={dataSection?.titleHero}
-        description={dataSection?.subtitleHero}
-        heightScreen={true}
-        styleSection="pb-[100px] pt-6 px-[16px] h-screen"
-        secondDescription={dataSection?.descriptionHero}
-      />
-      <PrivacyPoliceList setScroll={setScroll} dataSection={dataSection} />
-    </>
-  );
+export const metadata: Metadata = {
+  title: 'Privacy Policy | The Daisy - Beauty Booking Platform',
+  description:
+    'Read The Daisy privacy policy to understand how we collect, use, and protect your personal information when using our beauty booking platform.',
+  keywords: [
+    'privacy policy',
+    'data protection',
+    'personal information',
+    'beauty app privacy',
+    'salon booking privacy',
+    'user data protection',
+    'The Daisy privacy',
+  ],
+  openGraph: {
+    title: 'Privacy Policy | The Daisy - Beauty Booking Platform',
+    description:
+      'Read The Daisy privacy policy to understand how we protect your personal information.',
+    url: 'https://jointhedaisy.com/privacy-policy',
+    type: 'website',
+    images: [
+      {
+        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'The Daisy Privacy Policy',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy | The Daisy - Beauty Booking Platform',
+    description: 'Read The Daisy privacy policy and data protection practices.',
+    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+  },
+  alternates: {
+    canonical: 'https://jointhedaisy.com/privacy-policy',
+  },
 };
-export default PrivacyPolicy;
+
+export default function PrivacyPolicyPage() {
+  return <PrivacyPolicyClient />;
+}

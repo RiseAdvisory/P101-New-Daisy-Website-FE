@@ -1,41 +1,45 @@
-'use client';
-import { AboutPosts } from '@/components/blogPage/blogPosts/AbouPosts';
-import { CreatePerfect } from '@/components/blogPage/blogPosts/CreatePerfect';
-import { HeroBlogPage } from '@/components/blogPage/blogPosts/HeroBlogId';
-import { SimiliarTopick } from '@/components/blogPage/blogPosts/SimiliarTopics';
-import axiosInstance from '@/helpers/axiosConfig';
-import { useChangeLanguage } from '@/store/language';
-import { usePostStore } from '@/store/post';
-import { redirect } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { Metadata } from 'next';
+import { LegalClient } from './LegalClient';
 
-const Legal = () => {
-  const { post } = usePostStore();
-  const { lang } = useChangeLanguage();
-  const [dataLeagal, setDataLegal] = useState<any>();
-  const isEmpty = (obj: any) => {
-    return JSON.stringify(obj) === '{}';
-  };
-  if (isEmpty(post)) redirect('/resources/blog-post');
-  useEffect(() => {
-    (async () => {
-      const response = await axiosInstance.get(
-        `/legal-downloads?locale=${lang}`,
-      );
-      const [data] = response.data.data;
-      setDataLegal(data?.attributes);
-    })();
-  }, [lang]);
-  return (
-    <div className="w-full">
-      <HeroBlogPage />
-      <AboutPosts />
-      <CreatePerfect
-        textDownload={dataLeagal?.textDownload}
-        textCreate={dataLeagal?.textCreate}
-      />
-      <SimiliarTopick titleSimilar={dataLeagal?.titleSimilar} />
-    </div>
-  );
+export const metadata: Metadata = {
+  title: 'Legal Resources | The Daisy Beauty Platform',
+  description:
+    'Access legal resources, documentation, and downloads related to The Daisy beauty booking platform services and policies.',
+  keywords: [
+    'legal resources',
+    'beauty platform documentation',
+    'salon app legal',
+    'vendor agreements',
+    'The Daisy legal',
+    'platform policies',
+    'service agreements',
+  ],
+  openGraph: {
+    title: 'Legal Resources | The Daisy Beauty Platform',
+    description:
+      'Access legal resources and documentation from The Daisy beauty platform.',
+    url: 'https://jointhedaisy.com/resources/legal',
+    type: 'website',
+    images: [
+      {
+        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'The Daisy Legal Resources',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Legal Resources | The Daisy Beauty Platform',
+    description: 'Access legal resources and documentation from The Daisy.',
+    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+  },
+  alternates: {
+    canonical: 'https://jointhedaisy.com/resources/legal',
+  },
 };
-export default Legal;
+
+export default function LegalPage() {
+  return <LegalClient />;
+}

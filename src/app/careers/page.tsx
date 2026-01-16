@@ -1,42 +1,47 @@
-'use client';
-import { Vacansies } from '@/components/careersPage/Vacancies';
-import { HeroPage } from '@/components/heroSection/HeroSection';
-import axiosInstance from '@/helpers/axiosConfig';
-import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
+import { Metadata } from 'next';
+import { CareersClient } from './CareersClient';
 
-const Careers = () => {
-  const [scroll, setScroll] = useState(null);
-  const [dataCareers, setDataCareers] = useState<any>();
-
-  const { lang } = useChangeLanguage();
-
-  useEffect(() => {
-    (async () => {
-      try {
-        const response = await axiosInstance.get(
-          `/careers-pages?locale=${lang}`,
-        );
-        const [data] = response?.data?.data;
-        setDataCareers(data?.attributes);
-      } catch (error) {}
-    })();
-  }, [lang]);
-  return (
-    <div className="w-full">
-      <HeroPage
-        blockRef={scroll}
-        hiddenArrow={false}
-        visibleDescriiton={false}
-        title={dataCareers?.titleHero}
-        description={dataCareers?.subtitleHero}
-        heightScreen={true}
-        styleSection="pb-[100px]"
-        secondDescription={dataCareers?.descriptionHero}
-        titleScroll={dataCareers?.titleScroll}
-      />
-      <Vacansies setScroll={setScroll} dataCareers={dataCareers} />
-    </div>
-  );
+export const metadata: Metadata = {
+  title: 'Careers | The Daisy - Beauty Tech Jobs',
+  description:
+    'Join The Daisy team and help build the future of beauty and wellness booking. Explore open positions in engineering, design, marketing, and more.',
+  keywords: [
+    'beauty tech careers',
+    'The Daisy jobs',
+    'wellness startup jobs',
+    'beauty industry careers',
+    'tech jobs',
+    'startup careers',
+    'beauty marketplace jobs',
+    'work in beauty tech',
+  ],
+  openGraph: {
+    title: 'Careers | The Daisy - Beauty Tech Jobs',
+    description:
+      'Join The Daisy team and help build the future of beauty and wellness booking.',
+    url: 'https://jointhedaisy.com/careers',
+    type: 'website',
+    images: [
+      {
+        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Careers at The Daisy',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Careers | The Daisy - Beauty Tech Jobs',
+    description:
+      'Join The Daisy team. Explore career opportunities in beauty tech.',
+    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+  },
+  alternates: {
+    canonical: 'https://jointhedaisy.com/careers',
+  },
 };
-export default Careers;
+
+export default function CareersPage() {
+  return <CareersClient />;
+}
