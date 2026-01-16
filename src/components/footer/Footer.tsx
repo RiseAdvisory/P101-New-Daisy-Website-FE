@@ -80,8 +80,8 @@ export const Footer = () => {
           passive: true,
         });
 
-        // Auto-load after 5 seconds as fallback (ensures widget always appears)
-        timeoutId = setTimeout(loadChat, 5000);
+        // Auto-load after 2 seconds as fallback (ensures widget always appears)
+        timeoutId = setTimeout(loadChat, 2000);
       };
 
       if ('requestIdleCallback' in window) {
