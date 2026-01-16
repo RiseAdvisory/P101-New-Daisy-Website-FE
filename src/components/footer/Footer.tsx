@@ -46,53 +46,64 @@ export const Footer = () => {
 
   const isVisibleAppBtn = path.includes('get-the-app');
 
-  // Defer FreshChat loading until user scrolls or interacts
+  // Defer FreshChat loading until user scrolls/interacts OR after timeout
   useEffect(() => {
-    const handleInteraction = () => {
-      setShouldLoadChat(true);
-      // Remove listeners after first interaction
-      window.removeEventListener('scroll', handleInteraction);
-      window.removeEventListener('click', handleInteraction);
-      window.removeEventListener('touchstart', handleInteraction);
+    let timeoutId: NodeJS.Timeout;
+    let listenersAdded = false;
+
+    const loadChat = () => {
+      if (!shouldLoadChat) {
+        setShouldLoadChat(true);
+      }
+      // Clean up listeners and timeout
+      if (listenersAdded) {
+        window.removeEventListener('scroll', loadChat);
+        window.removeEventListener('click', loadChat);
+        window.removeEventListener('touchstart', loadChat);
+      }
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
     };
 
     // Use requestIdleCallback if available, otherwise setTimeout
     const scheduleLoad = () => {
-      if ('requestIdleCallback' in window) {
-        window.requestIdleCallback(() => {
-          window.addEventListener('scroll', handleInteraction, {
-            once: true,
-            passive: true,
-          });
-          window.addEventListener('click', handleInteraction, { once: true });
-          window.addEventListener('touchstart', handleInteraction, {
-            once: true,
-            passive: true,
-          });
+      const setupListeners = () => {
+        listenersAdded = true;
+        window.addEventListener('scroll', loadChat, {
+          once: true,
+          passive: true,
         });
+        window.addEventListener('click', loadChat, { once: true });
+        window.addEventListener('touchstart', loadChat, {
+          once: true,
+          passive: true,
+        });
+
+        // Auto-load after 2 seconds as fallback (ensures widget always appears)
+        timeoutId = setTimeout(loadChat, 2000);
+      };
+
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(setupListeners);
       } else {
-        setTimeout(() => {
-          window.addEventListener('scroll', handleInteraction, {
-            once: true,
-            passive: true,
-          });
-          window.addEventListener('click', handleInteraction, { once: true });
-          window.addEventListener('touchstart', handleInteraction, {
-            once: true,
-            passive: true,
-          });
-        }, 2000);
+        setTimeout(setupListeners, 100);
       }
     };
 
     scheduleLoad();
 
     return () => {
-      window.removeEventListener('scroll', handleInteraction);
-      window.removeEventListener('click', handleInteraction);
-      window.removeEventListener('touchstart', handleInteraction);
+      if (listenersAdded) {
+        window.removeEventListener('scroll', loadChat);
+        window.removeEventListener('click', loadChat);
+        window.removeEventListener('touchstart', loadChat);
+      }
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
     };
-  }, []);
+  }, [shouldLoadChat]);
 
   useEffect(() => {
     const fetchFooterData = async () => {

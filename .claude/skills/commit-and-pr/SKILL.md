@@ -142,21 +142,32 @@ Return the PR URL to the user.
 
 ---
 
-## Step 7: Check PR Status (3 minutes after creation)
+## Step 7: Check PR Status (Automatic Background Timer)
 
-- Wait approximately 3 minutes after PR creation
-- Check the PR status:
+**IMPORTANT**: This step runs automatically in the background. Do NOT skip this step.
+
+Immediately after creating the PR, start a background task that waits 3 minutes then checks the status:
 
 ```bash
-gh pr view <pr-number> --json state,reviewDecision,statusCheckRollup,reviews
+# Run this with run_in_background: true and timeout: 300000
+sleep 180 && gh pr view <pr-number> --json state,reviewDecision,statusCheckRollup,reviews
 ```
 
-Report whether the PR is:
+**Implementation**:
+
+- Use Bash tool with `run_in_background: true`
+- Set `timeout: 300000` (5 minutes to allow for the 3-minute wait + command execution)
+- The task will complete in the background while the conversation continues
+- Check the background task output later using `TaskOutput` or by reading the output file
+
+When the result is ready, report whether the PR is:
 
 - **Approved** - Ready to merge
 - **Changes Requested** - Review feedback and suggest fixes
 - **Pending Review** - Still awaiting reviewer
 - **CI/CD Status** - Pass/Fail of automated checks
+
+If changes are requested, summarize the feedback and offer to fix the issues.
 
 ---
 
