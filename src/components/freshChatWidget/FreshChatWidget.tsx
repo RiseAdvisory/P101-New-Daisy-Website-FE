@@ -10,11 +10,7 @@ declare global {
         widgetUuid?: string;
       }) => void;
       destroy?: () => void;
-    };
-    fcWidgetConfig?: {
-      token: string;
-      host: string;
-      widgetUuid?: string;
+      isInitialized?: () => boolean;
     };
   }
 }
@@ -32,7 +28,7 @@ function validateConfig(value: string): string {
 
 export default function FreshChatLoader({ lang }: FreshChatLoaderProps) {
   useEffect(() => {
-    const SCRIPT_ID = 'freshchat-js-sdk';
+    const SDK_SCRIPT_ID = 'Freshchat-js-sdk';
 
     // Get and validate environment variables
     const token = validateConfig(process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN || '');
@@ -47,7 +43,7 @@ export default function FreshChatLoader({ lang }: FreshChatLoaderProps) {
       return;
     }
 
-    // Clean up existing widget
+    // Clean up existing widget before reinitializing
     if (
       typeof window !== 'undefined' &&
       window.fcWidget &&
@@ -56,29 +52,32 @@ export default function FreshChatLoader({ lang }: FreshChatLoaderProps) {
       window.fcWidget.destroy();
     }
 
-    // Store config in window object (safer than template literals)
-    window.fcWidgetConfig = {
+    // Build config object
+    const config: { token: string; host: string; widgetUuid?: string } = {
       token,
       host,
-      ...(lang === 'ar' && widgetUuid ? { widgetUuid } : {}),
     };
+    if (lang === 'ar' && widgetUuid) {
+      config.widgetUuid = widgetUuid;
+    }
 
-    // Initialize FreshChat
+    // Initialize FreshChat widget
     const initFreshChat = () => {
-      if (window.fcWidget && window.fcWidgetConfig) {
-        window.fcWidget.init(window.fcWidgetConfig);
+      if (window.fcWidget) {
+        window.fcWidget.init(config);
       }
     };
 
-    // Load FreshChat SDK
-    const existingScript = document.getElementById(SCRIPT_ID);
+    // Check if SDK script already exists
+    const existingScript = document.getElementById(SDK_SCRIPT_ID);
     if (existingScript) {
-      // Script already loaded, just reinitialize
-      initFreshChat();
+      // SDK already loaded, initialize directly
+      // Use setTimeout to ensure fcWidget is available after script execution
+      setTimeout(initFreshChat, 0);
     } else {
-      // Load the script
+      // Load the FreshChat SDK
       const script = document.createElement('script');
-      script.id = SCRIPT_ID;
+      script.id = SDK_SCRIPT_ID;
       script.async = true;
       script.src = `${host}/js/widget.js`;
       script.onload = initFreshChat;
