@@ -1,0 +1,29 @@
+# robots.txt for The Daisy
+# https://jointhedaisy.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jointhedaisy.com/sitemap.xml
+
+# Disallow admin/api paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow search engines to crawl all public pages
+Allow: /business
+Allow: /customer
+Allow: /professional
+Allow: /about
+Allow: /pricing
+Allow: /contact
+Allow: /faq
+Allow: /features/
+Allow: /resources/
+Allow: /careers
+Allow: /get-the-app
+
+# Crawl delay for politeness
+Crawl-delay: 1

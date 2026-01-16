@@ -162,11 +162,14 @@ This ensures all generated documentation is organized in one location, can be ea
 
 When the user says `/commit-and-pr` or asks to "commit and create a PR", execute the following sequence:
 
-#### Step 1: Review Changes
+#### Step 1: Clean Up & Review Changes
 
 ```bash
+# Remove any temporary files first
+rm -rf tmpclaude-* 2>/dev/null
+
 git status                    # See all changed files
-git diff                      # Review unstaged changes
+git diff --stat               # Review changed files summary
 git log --oneline -5          # Check recent commit style
 ```
 
@@ -174,6 +177,7 @@ git log --oneline -5          # Check recent commit style
 
 - Review the changes and stage appropriate files
 - Exclude any sensitive files (.env, credentials, etc.)
+- Exclude local settings (`.claude/settings.local.json`)
 - Ask the user if unclear which files to include
 
 #### Step 3: Commit
@@ -182,11 +186,26 @@ git log --oneline -5          # Check recent commit style
 - Follow the repository's commit message style
 - Include `Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>`
 
+**Note:** Pre-commit hooks (Prettier/ESLint) will run automatically. If hooks modify files:
+
+```bash
+# Amend the commit to include hook-modified files
+git add <modified-files>
+git commit --amend --no-edit
+```
+
 #### Step 4: Sync with Remote
 
 ```bash
-git fetch origin              # Get latest from remote
+git fetch origin
+
+# Stash any remaining unstaged changes before rebase
+git stash
+
 git rebase origin/main        # Rebase on top of main branch
+
+# Restore stashed changes (if any were stashed)
+git stash pop 2>/dev/null || true
 ```
 
 - Resolve any conflicts if they occur
@@ -195,8 +214,11 @@ git rebase origin/main        # Rebase on top of main branch
 #### Step 5: Push to Remote
 
 ```bash
-git push -u origin <branch-name>
+# Use --force-with-lease after rebase (safe force push)
+git push -u origin <branch-name> --force-with-lease
 ```
+
+**Note:** `--force-with-lease` is required after rebase since history changed. It's safe because it won't overwrite others' work.
 
 #### Step 6: Create PR
 
@@ -204,14 +226,19 @@ git push -u origin <branch-name>
 gh pr create --title "Title" --body "Description"
 ```
 
-- Include a summary of changes
-- Add a test plan section
+- Include a summary of changes (bullet points)
+- Add a test plan section with checklist
 - Include the Claude Code attribution footer
 
 #### Step 7: Check PR Status (3 minutes after creation)
 
-- Wait 3 minutes after PR creation
-- Check the PR status using `gh pr view`
+- Wait 3 minutes after PR creation (run in background)
+- Check the PR status using:
+
+```bash
+gh pr view <pr-number> --json state,reviewDecision,statusCheckRollup,reviews
+```
+
 - Report whether the PR is:
   - **Approved** - Ready to merge
   - **Changes Requested** - Review feedback and suggest fixes
