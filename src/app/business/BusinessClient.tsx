@@ -1,10 +1,5 @@
 'use client';
-import { QASection } from '@/components/QASection/QASection';
-import { BecomeFormPartner } from '@/components/businessPage/BecomeFormPartner';
-import { DaysiMission } from '@/components/businessPage/DaysiMission';
-import { GrowthSection } from '@/components/businessPage/GrowthSection';
-import { ExperienceDaisy } from '@/components/experienceDaisy/ExperienceDaisy';
-import { JoinTheDaisy } from '@/components/joinTheDaysi/JoinTheDaysi';
+import dynamic from 'next/dynamic';
 import { MobileScrollSection } from '@/components/shared/MobileScrollSection';
 import axiosInstance from '../../helpers/axiosConfig';
 import { useEffect, useState } from 'react';
@@ -18,6 +13,47 @@ import {
   HomePageAttributes,
   ScrollSectionItem,
 } from '@/types/strapi';
+
+// Lazy load below-fold components to reduce initial bundle size and blocking time
+const QASection = dynamic(
+  () => import('@/components/QASection/QASection').then((mod) => mod.QASection),
+  { ssr: false },
+);
+const BecomeFormPartner = dynamic(
+  () =>
+    import('@/components/businessPage/BecomeFormPartner').then(
+      (mod) => mod.BecomeFormPartner,
+    ),
+  { ssr: false },
+);
+const DaysiMission = dynamic(
+  () =>
+    import('@/components/businessPage/DaysiMission').then(
+      (mod) => mod.DaysiMission,
+    ),
+  { ssr: false },
+);
+const GrowthSection = dynamic(
+  () =>
+    import('@/components/businessPage/GrowthSection').then(
+      (mod) => mod.GrowthSection,
+    ),
+  { ssr: false },
+);
+const ExperienceDaisy = dynamic(
+  () =>
+    import('@/components/experienceDaisy/ExperienceDaisy').then(
+      (mod) => mod.ExperienceDaisy,
+    ),
+  { ssr: false },
+);
+const JoinTheDaisy = dynamic(
+  () =>
+    import('@/components/joinTheDaysi/JoinTheDaysi').then(
+      (mod) => mod.JoinTheDaisy,
+    ),
+  { ssr: false },
+);
 
 export const BusinessClient = () => {
   const [heroBusiness, setHeroBusiness] = useState<HomePageAttributes | null>(

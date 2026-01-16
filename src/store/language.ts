@@ -5,6 +5,30 @@ interface ILanguageStore {
   changeLanguages: (newLang: string) => void;
 }
 
+/**
+ * Helper to update document direction without blocking the main thread.
+ * Uses queueMicrotask to defer DOM manipulation.
+ */
+function updateDocumentDirection(lang: string): void {
+  const dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+  // Use queueMicrotask to avoid blocking the main thread during initial render
+  if (typeof queueMicrotask !== 'undefined') {
+    queueMicrotask(() => {
+      if (document.body.getAttribute('dir') !== dir) {
+        document.body.setAttribute('dir', dir);
+      }
+    });
+  } else {
+    // Fallback for older browsers
+    setTimeout(() => {
+      if (document.body.getAttribute('dir') !== dir) {
+        document.body.setAttribute('dir', dir);
+      }
+    }, 0);
+  }
+}
+
 export const useChangeLanguage = create<ILanguageStore>((set) => ({
   lang:
     typeof window !== 'undefined' ? localStorage.getItem('lang') || 'en' : 'en',
@@ -12,12 +36,16 @@ export const useChangeLanguage = create<ILanguageStore>((set) => ({
     set(() => ({
       lang: newLang,
     }));
-    localStorage.setItem('lang', newLang);
-    document.body.setAttribute('dir', newLang === 'ar' ? 'rtl' : 'ltr');
+
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('lang', newLang);
+      updateDocumentDirection(newLang);
+    }
   },
 }));
 
+// Initialize document direction on load (deferred)
 if (typeof window !== 'undefined') {
   const initialLang = localStorage.getItem('lang') || 'en';
-  document.body.setAttribute('dir', initialLang === 'ar' ? 'rtl' : 'ltr');
+  updateDocumentDirection(initialLang);
 }

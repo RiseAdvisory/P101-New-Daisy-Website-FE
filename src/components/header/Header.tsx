@@ -1,7 +1,7 @@
 'use client';
 import { LogoIconsS } from '@/assets/icons/logo/LogoIconsS';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, startTransition } from 'react';
 import { GetAppButton } from '../buttonApp/GetAppButton';
 import { headerNavigationList } from '@/lib/constants/headernavigationList';
 import { DropDownMobileHeader } from '../dropdownMobileHeader/DropdownMobileHeader';
@@ -18,6 +18,12 @@ import { Skeleton } from '../ui/skeleton';
 import { ChangeUserTypeMobile } from '../dropdownMobileHeader/ChangeUserMobile';
 import { useOpenMenu } from '@/store/openMenu';
 import { shouldHideMenuItem } from '@/lib/utils/menuVisibility';
+import {
+  getCached,
+  setCache,
+  getCacheKey,
+  CACHE_KEYS,
+} from '@/helpers/apiCache';
 
 export const Header = () => {
   const path = usePathname();
@@ -38,28 +44,82 @@ export const Header = () => {
   const { lang, changeLanguages } = useChangeLanguage();
   const { isOpenMenu } = useOpenMenu();
   useEffect(() => {
-    (async () => {
-      const response = await axiosInstance.get(`/headers?locale=${lang}`);
-      const responseToggle = await axiosInstance.get(
-        `/options-toogles?locale=${lang}`,
-      );
-      const responseLang = await axiosInstance.get(
-        `/change-languages?locale=${lang}`,
-      );
-      const [dataLang] = responseLang?.data?.data;
-      setListLanguage(dataLang?.attributes?.listLanguage);
-      const [data] = response?.data?.data;
-      const [dataToggle] = responseToggle?.data?.data;
-      setGetTheApp(data?.attributes?.getTheApp);
-      setOptionsToggle(dataToggle?.attributes?.optionsToogle);
-      setOptionsToggleFeatures(dataToggle?.attributes?.optionsTooglseFeatures);
-      setListheader(data?.attributes?.headerNavList);
-      if (changeLang === 'En') {
-        setChangePage('Business');
-      } else {
-        setChangePage('شركة');
+    const fetchHeaderData = async () => {
+      // Check cache first for all data
+      const headerCacheKey = getCacheKey(CACHE_KEYS.HEADER, lang);
+      const toggleCacheKey = getCacheKey(CACHE_KEYS.HEADER_TOGGLE, lang);
+      const langCacheKey = getCacheKey(CACHE_KEYS.HEADER_LANG, lang);
+
+      const cachedHeader = getCached<{ getTheApp: unknown; headerNavList: unknown }>(headerCacheKey);
+      const cachedToggle = getCached<{ optionsToogle: unknown; optionsTooglseFeatures: unknown }>(toggleCacheKey);
+      const cachedLang = getCached<{ listLanguage: unknown }>(langCacheKey);
+
+      // If all data is cached, use it immediately
+      if (cachedHeader && cachedToggle && cachedLang) {
+        startTransition(() => {
+          setGetTheApp(cachedHeader.getTheApp);
+          setListheader(cachedHeader.headerNavList);
+          setOptionsToggle(cachedToggle.optionsToogle);
+          setOptionsToggleFeatures(cachedToggle.optionsTooglseFeatures);
+          setListLanguage(cachedLang.listLanguage);
+        });
+        return;
       }
-    })();
+
+      // Fetch all data in parallel
+      const [response, responseToggle, responseLang] = await Promise.all([
+        cachedHeader ? Promise.resolve(null) : axiosInstance.get(`/headers?locale=${lang}`),
+        cachedToggle ? Promise.resolve(null) : axiosInstance.get(`/options-toogles?locale=${lang}`),
+        cachedLang ? Promise.resolve(null) : axiosInstance.get(`/change-languages?locale=${lang}`),
+      ]);
+
+      // Process and cache header data
+      if (response) {
+        const [data] = response?.data?.data || [];
+        const headerData = {
+          getTheApp: data?.attributes?.getTheApp,
+          headerNavList: data?.attributes?.headerNavList,
+        };
+        setCache(headerCacheKey, headerData);
+        startTransition(() => {
+          setGetTheApp(headerData.getTheApp);
+          setListheader(headerData.headerNavList);
+        });
+      }
+
+      // Process and cache toggle data
+      if (responseToggle) {
+        const [dataToggle] = responseToggle?.data?.data || [];
+        const toggleData = {
+          optionsToogle: dataToggle?.attributes?.optionsToogle,
+          optionsTooglseFeatures: dataToggle?.attributes?.optionsTooglseFeatures,
+        };
+        setCache(toggleCacheKey, toggleData);
+        startTransition(() => {
+          setOptionsToggle(toggleData.optionsToogle);
+          setOptionsToggleFeatures(toggleData.optionsTooglseFeatures);
+        });
+      }
+
+      // Process and cache language data
+      if (responseLang) {
+        const [dataLang] = responseLang?.data?.data || [];
+        const langData = { listLanguage: dataLang?.attributes?.listLanguage };
+        setCache(langCacheKey, langData);
+        startTransition(() => {
+          setListLanguage(langData.listLanguage);
+        });
+      }
+    };
+
+    fetchHeaderData();
+
+    // Set default page label based on language
+    if (changeLang === 'En') {
+      setChangePage('Business');
+    } else {
+      setChangePage('شركة');
+    }
   }, [changeLang, lang]);
   useEffect(() => {
     if (path.includes('resources')) return setActive('/resources');
