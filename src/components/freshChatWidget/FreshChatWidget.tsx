@@ -68,9 +68,9 @@ export default function FreshChatLoader({ lang }: FreshChatLoaderProps) {
       window.fcWidget.isInitialized &&
       window.fcWidget.isInitialized();
 
-    if (needsDestroy) {
+    if (needsDestroy && window.fcWidget?.destroy) {
       // Destroy existing widget and wait before reinitializing
-      window.fcWidget!.destroy();
+      window.fcWidget.destroy();
       // Give FreshChat SDK time to fully clean up before reinitializing
       initTimeoutId = setTimeout(initFreshChat, 500);
     } else {
