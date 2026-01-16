@@ -42,8 +42,7 @@ export const MobileScrollSection = ({
                   attributes.mainImage?.data?.[0]?.attributes?.formats?.large
                     ?.url
                     ? new URL(
-                        attributes.mainImage.data[0].attributes.formats.large
-                          .url,
+                        attributes.mainImage.data[0].attributes.formats.large.url,
                         baseURLImage,
                       ).href
                     : ''

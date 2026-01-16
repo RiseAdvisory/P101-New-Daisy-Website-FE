@@ -50,8 +50,14 @@ export const Header = () => {
       const toggleCacheKey = getCacheKey(CACHE_KEYS.HEADER_TOGGLE, lang);
       const langCacheKey = getCacheKey(CACHE_KEYS.HEADER_LANG, lang);
 
-      const cachedHeader = getCached<{ getTheApp: unknown; headerNavList: unknown }>(headerCacheKey);
-      const cachedToggle = getCached<{ optionsToogle: unknown; optionsTooglseFeatures: unknown }>(toggleCacheKey);
+      const cachedHeader = getCached<{
+        getTheApp: unknown;
+        headerNavList: unknown;
+      }>(headerCacheKey);
+      const cachedToggle = getCached<{
+        optionsToogle: unknown;
+        optionsTooglseFeatures: unknown;
+      }>(toggleCacheKey);
       const cachedLang = getCached<{ listLanguage: unknown }>(langCacheKey);
 
       // If all data is cached, use it immediately
@@ -68,9 +74,15 @@ export const Header = () => {
 
       // Fetch all data in parallel
       const [response, responseToggle, responseLang] = await Promise.all([
-        cachedHeader ? Promise.resolve(null) : axiosInstance.get(`/headers?locale=${lang}`),
-        cachedToggle ? Promise.resolve(null) : axiosInstance.get(`/options-toogles?locale=${lang}`),
-        cachedLang ? Promise.resolve(null) : axiosInstance.get(`/change-languages?locale=${lang}`),
+        cachedHeader
+          ? Promise.resolve(null)
+          : axiosInstance.get(`/headers?locale=${lang}`),
+        cachedToggle
+          ? Promise.resolve(null)
+          : axiosInstance.get(`/options-toogles?locale=${lang}`),
+        cachedLang
+          ? Promise.resolve(null)
+          : axiosInstance.get(`/change-languages?locale=${lang}`),
       ]);
 
       // Process and cache header data
@@ -92,7 +104,8 @@ export const Header = () => {
         const [dataToggle] = responseToggle?.data?.data || [];
         const toggleData = {
           optionsToogle: dataToggle?.attributes?.optionsToogle,
-          optionsTooglseFeatures: dataToggle?.attributes?.optionsTooglseFeatures,
+          optionsTooglseFeatures:
+            dataToggle?.attributes?.optionsTooglseFeatures,
         };
         setCache(toggleCacheKey, toggleData);
         startTransition(() => {

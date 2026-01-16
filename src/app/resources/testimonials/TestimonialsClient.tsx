@@ -64,7 +64,9 @@ export const TestimonialsClient = () => {
         styleSection="pb-[100px] pt-6 px-[16px]"
         secondDescription={dataTestimonials?.secondDescription}
       />
-      <TestimonialsCustomerList textMore={dataTestimonials?.textMoreList ?? ''} />
+      <TestimonialsCustomerList
+        textMore={dataTestimonials?.textMoreList ?? ''}
+      />
       <div className="px-4 md:px-20 bg-[#F8F5F3]">
         <Separator className="bg-[#D5D9D9]" />
       </div>

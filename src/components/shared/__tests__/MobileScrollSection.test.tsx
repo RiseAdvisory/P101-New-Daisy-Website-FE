@@ -10,26 +10,23 @@ jest.mock('next/image', () => ({
 }));
 
 // Mock the NoScrollingAnimationBusiness component
-jest.mock(
-  '@/components/noAnimationBusiness/NoAnimationBusiness',
-  () => ({
-    NoScrollingAnimationBusiness: ({
-      title,
-      subtitle,
-      description,
-    }: {
-      title: string;
-      subtitle: string;
-      description: string;
-    }) => (
-      <div data-testid="no-scrolling-animation">
-        <span data-testid="title">{title}</span>
-        <span data-testid="subtitle">{subtitle}</span>
-        <span data-testid="description">{description}</span>
-      </div>
-    ),
-  }),
-);
+jest.mock('@/components/noAnimationBusiness/NoAnimationBusiness', () => ({
+  NoScrollingAnimationBusiness: ({
+    title,
+    subtitle,
+    description,
+  }: {
+    title: string;
+    subtitle: string;
+    description: string;
+  }) => (
+    <div data-testid="no-scrolling-animation">
+      <span data-testid="title">{title}</span>
+      <span data-testid="subtitle">{subtitle}</span>
+      <span data-testid="description">{description}</span>
+    </div>
+  ),
+}));
 
 // Mock the Separator component
 jest.mock('@/components/ui/separator', () => ({

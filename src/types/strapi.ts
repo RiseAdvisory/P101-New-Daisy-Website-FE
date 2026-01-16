@@ -223,11 +223,14 @@ export interface EnterpriseData {
 
 // FAQ Page
 export interface FaqPageAttributes {
-  listFaq?: Record<string, {
-    title?: string;
-    subtitle?: string;
-    description?: string;
-  }>;
+  listFaq?: Record<
+    string,
+    {
+      title?: string;
+      subtitle?: string;
+      description?: string;
+    }
+  >;
 }
 
 // Privacy/Terms Pages

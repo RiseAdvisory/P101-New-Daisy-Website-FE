@@ -60,15 +60,27 @@ export const Footer = () => {
     const scheduleLoad = () => {
       if ('requestIdleCallback' in window) {
         window.requestIdleCallback(() => {
-          window.addEventListener('scroll', handleInteraction, { once: true, passive: true });
+          window.addEventListener('scroll', handleInteraction, {
+            once: true,
+            passive: true,
+          });
           window.addEventListener('click', handleInteraction, { once: true });
-          window.addEventListener('touchstart', handleInteraction, { once: true, passive: true });
+          window.addEventListener('touchstart', handleInteraction, {
+            once: true,
+            passive: true,
+          });
         });
       } else {
         setTimeout(() => {
-          window.addEventListener('scroll', handleInteraction, { once: true, passive: true });
+          window.addEventListener('scroll', handleInteraction, {
+            once: true,
+            passive: true,
+          });
           window.addEventListener('click', handleInteraction, { once: true });
-          window.addEventListener('touchstart', handleInteraction, { once: true, passive: true });
+          window.addEventListener('touchstart', handleInteraction, {
+            once: true,
+            passive: true,
+          });
         }, 2000);
       }
     };
@@ -102,20 +114,26 @@ export const Footer = () => {
 
       // Fetch data in parallel
       const [responseSocial, responseNav] = await Promise.all([
-        cachedSocial ? Promise.resolve(null) : axiosInstance.get(`/social-links?locale=${lang}`),
-        cachedNav ? Promise.resolve(null) : axiosInstance.get(`/footers?locale=${lang}`),
+        cachedSocial
+          ? Promise.resolve(null)
+          : axiosInstance.get(`/social-links?locale=${lang}`),
+        cachedNav
+          ? Promise.resolve(null)
+          : axiosInstance.get(`/footers?locale=${lang}`),
       ]);
 
       // Process and cache social links
       if (responseSocial) {
-        const socialData = responseSocial?.data?.data?.[0]?.attributes?.socialLinks;
+        const socialData =
+          responseSocial?.data?.data?.[0]?.attributes?.socialLinks;
         setCache(socialCacheKey, socialData);
         startTransition(() => setSocialLinks(socialData));
       }
 
       // Process and cache navigation list
       if (responseNav) {
-        const navData = responseNav?.data?.data?.[0]?.attributes?.navigationfooterList;
+        const navData =
+          responseNav?.data?.data?.[0]?.attributes?.navigationfooterList;
         setCache(navCacheKey, navData);
         startTransition(() => setNavList(navData));
       }

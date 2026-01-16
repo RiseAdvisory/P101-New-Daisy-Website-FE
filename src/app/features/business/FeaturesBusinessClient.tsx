@@ -12,9 +12,9 @@ import { FeaturesPageAttributes, FeatureListItem } from '@/types/strapi';
 export const FeaturesBusinessClient = () => {
   const [dataFeatures, setDataFeatures] =
     useState<FeaturesPageAttributes | null>(null);
-  const [dataListManagm, setDataListManagm] = useState<FeatureListItem[] | null>(
-    null,
-  );
+  const [dataListManagm, setDataListManagm] = useState<
+    FeatureListItem[] | null
+  >(null);
   const [dataListPayment, setDataListPayment] = useState<
     FeatureListItem[] | null
   >(null);
