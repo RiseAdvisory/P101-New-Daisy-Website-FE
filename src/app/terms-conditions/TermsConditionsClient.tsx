@@ -4,22 +4,38 @@ import { TermsConditionsSection } from '@/components/termsConditionsPage/TermsCo
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
+import { LegalPageAttributes } from '@/types/strapi';
+
+interface TermsConditionsData extends LegalPageAttributes {
+  bredCrumbDesription?: string;
+  bredCrumbTitle?: string;
+  heroTitle?: string;
+  heroSubtitle?: string;
+  heroSubcription?: string;
+  titleScroll?: string;
+}
 
 export const TermsConditionsClient = () => {
   const [scroll, setScroll] = useState(null);
-  const [dataConditions, setDataConditions] = useState<any>();
+  const [dataConditions, setDataConditions] =
+    useState<TermsConditionsData | null>(null);
 
   const { lang } = useChangeLanguage();
 
   useEffect(() => {
     (async () => {
-      const response = await axiosInstance.get(
-        `/terms-conditions?locale=${lang}`,
-      );
-      const [data] = response?.data?.data;
-      setDataConditions(data?.attributes);
+      try {
+        const response = await axiosInstance.get(
+          `/terms-conditions?locale=${lang}`,
+        );
+        const [data] = response?.data?.data;
+        setDataConditions(data?.attributes);
+      } catch (error) {
+        console.error('Error fetching terms and conditions:', error);
+      }
     })();
   }, [lang]);
+
   return (
     <>
       <HeroPage
@@ -29,8 +45,8 @@ export const TermsConditionsClient = () => {
         isVisibleBreadCrumbs={true}
         hiddenArrow={false}
         visibleDescriiton={false}
-        title={dataConditions?.heroTitle}
-        description={dataConditions?.heroSubtitle}
+        title={dataConditions?.heroTitle ?? ''}
+        description={dataConditions?.heroSubtitle ?? ''}
         heightScreen={true}
         styleSection="pb-[100px] pt-6 px-[16px] h-screen"
         titleScroll={dataConditions?.titleScroll}

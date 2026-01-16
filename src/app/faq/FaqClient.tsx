@@ -7,6 +7,7 @@ import { Constants } from '@/helpers/oldApi';
 import { useChangePage } from '@/store/currentPage';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
+import { FaqPageAttributes } from '@/types/strapi';
 
 interface FaqItem {
   question: string;
@@ -14,7 +15,7 @@ interface FaqItem {
 }
 
 export const FaqClient = () => {
-  const [dataFAQ, setDataFAQ] = useState<any>();
+  const [dataFAQ, setDataFAQ] = useState<FaqPageAttributes | null>(null);
   const [faqItems, setFaqItems] = useState<FaqItem[]>([]);
 
   const { page } = useChangePage();
@@ -25,8 +26,8 @@ export const FaqClient = () => {
       try {
         const response = await axiosInstance(`/faqs?locale=${lang}`);
         setDataFAQ(response?.data?.data[0]?.attributes);
-      } catch {
-        // Error fetching FAQ data
+      } catch (error) {
+        console.error('Error fetching FAQ data:', error);
       }
     })();
   }, [lang]);
@@ -52,30 +53,33 @@ export const FaqClient = () => {
           const data = await res.json();
           if (data.status && data.data) {
             setFaqItems(
-              data.data.map((item: any) => ({
-                question: item.question,
-                answer: item.answer,
-              })),
+              data.data.map(
+                (item: { question: string; answer: string }) => ({
+                  question: item.question,
+                  answer: item.answer,
+                }),
+              ),
             );
           }
         }
-      } catch {
-        // Error fetching FAQ items for schema
+      } catch (error) {
+        console.error('Error fetching FAQ items for schema:', error);
       }
     })();
   }, [page, lang]);
 
-  let currentPage = page.replace('/', '');
+  const currentPage = page.replace('/', '');
   const capitalizeFirstLetter = (string: string) => {
     if (!string) return string;
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
+
   return (
     <div className="bg-primary">
       <FaqSchema faqs={faqItems} />
       <HeroPage
-        title={dataFAQ?.listFaq?.[currentPage]?.title}
-        description={dataFAQ?.listFaq?.[currentPage]?.subtitle}
+        title={dataFAQ?.listFaq?.[currentPage]?.title ?? ''}
+        description={dataFAQ?.listFaq?.[currentPage]?.subtitle ?? ''}
         hiddenArrow={true}
         visibleDescriiton={false}
         heightScreen={false}

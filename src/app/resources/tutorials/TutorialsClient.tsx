@@ -2,16 +2,27 @@
 import { useMyContext } from '@/app/MyContext';
 import { TutorialSection } from '@/components/blogPage/tutorialPage/TutorialSection';
 import { HeroPage } from '@/components/heroSection/HeroSection';
-import { TabsTutorials } from '@/components/tabsTutorials/TabsTutorials';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
+import { ResourcePageAttributes } from '@/types/strapi';
+
+interface TutorialsData extends ResourcePageAttributes {
+  bredCrumbDesription?: string;
+  bredCrumbTitle?: string;
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  titleScroll?: string;
+}
 
 export const TutorialsClient = () => {
   const [scroll, setScroll] = useState(null);
-  const [dataTutorials, setDataTutorials] = useState<any>();
+  const [dataTutorials, setDataTutorials] = useState<TutorialsData | null>(
+    null,
+  );
   const { lang } = useChangeLanguage();
-  const { userChange: currentPage, setUserChange } = useMyContext();
+  const { userChange: currentPage } = useMyContext();
 
   useEffect(() => {
     let endpointExperienceDaisyLink = '';
@@ -27,11 +38,15 @@ export const TutorialsClient = () => {
     }
 
     (async () => {
-      const response = await axiosInstance.get(
-        `/${endpointExperienceDaisyLink}?locale=${lang}`,
-      );
-      const [data] = response?.data?.data;
-      setDataTutorials(data?.attributes);
+      try {
+        const response = await axiosInstance.get(
+          `/${endpointExperienceDaisyLink}?locale=${lang}`,
+        );
+        const [data] = response?.data?.data;
+        setDataTutorials(data?.attributes);
+      } catch (error) {
+        console.error('Error fetching tutorials:', error);
+      }
     })();
   }, [lang, currentPage]);
 
@@ -44,8 +59,8 @@ export const TutorialsClient = () => {
         isVisibleBreadCrumbs={true}
         hiddenArrow={false}
         visibleDescriiton={false}
-        title={dataTutorials?.title}
-        description={dataTutorials?.subtitle}
+        title={dataTutorials?.title ?? ''}
+        description={dataTutorials?.subtitle ?? ''}
         heightScreen={true}
         styleSection="pb-[100px] pt-6 px-[16px] h-screen"
         secondDescription={dataTutorials?.description}

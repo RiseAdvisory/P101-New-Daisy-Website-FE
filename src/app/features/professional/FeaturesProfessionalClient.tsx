@@ -5,30 +5,37 @@ import { HeroPage } from '@/components/heroSection/HeroSection';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
+import { FeaturesPageAttributes, FeatureListItem } from '@/types/strapi';
 
 export const FeaturesProfessionalClient = () => {
   const [scroll, setScroll] = useState(null);
-  const [dataProfessional, setDataProfessional] = useState<any>();
-  const [dataListProfessional, setDataListProfessional] = useState<any>();
+  const [dataProfessional, setDataProfessional] =
+    useState<FeaturesPageAttributes | null>(null);
+  const [dataListProfessional, setDataListProfessional] = useState<
+    FeatureListItem[] | null
+  >(null);
 
   const { lang } = useChangeLanguage();
 
   useEffect(() => {
     (async () => {
       try {
-        const response = await axiosInstance.get(
-          `/features-professionals?locale=${lang}`,
-        );
-        setDataProfessional(response?.data?.data?.[0].attributes);
-        const listProfessionalResponse = await axiosInstance.get(
-          `/features-professional-list-sorts?populate=*&locale=${lang}`,
-        );
+        // Parallelize API calls for better performance
+        const [response, listProfessionalResponse] = await Promise.all([
+          axiosInstance.get(`/features-professionals?locale=${lang}`),
+          axiosInstance.get(
+            `/features-professional-list-sorts?populate=*&locale=${lang}`,
+          ),
+        ]);
+
+        setDataProfessional(response?.data?.data?.[0]?.attributes);
         const sortedObjects = listProfessionalResponse?.data?.data?.sort(
-          (a: any, b: any) => a.sortId - b.sortId,
+          (a: FeatureListItem, b: FeatureListItem) =>
+            (a.sortId || 0) - (b.sortId || 0),
         );
         setDataListProfessional(sortedObjects);
-      } catch {
-        // Error fetching professional features
+      } catch (error) {
+        console.error('Error fetching professional features:', error);
       }
     })();
   }, [lang]);
@@ -39,7 +46,7 @@ export const FeaturesProfessionalClient = () => {
         blockRef={scroll}
         title=""
         titleScroll={dataProfessional?.titleScroll}
-        description={dataProfessional?.title}
+        description={dataProfessional?.title ?? ''}
         hiddenArrow={false}
         visibleDescriiton={false}
         heightScreen={true}

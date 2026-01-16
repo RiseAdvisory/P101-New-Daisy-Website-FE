@@ -4,10 +4,21 @@ import { PrivacyPoliceList } from '@/components/privacyPolice/PrivacyPolicyList'
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
+import { LegalPageAttributes } from '@/types/strapi';
+
+interface PrivacyPolicyData extends LegalPageAttributes {
+  bredCrumbDesription?: string;
+  bredCrumbTitle?: string;
+  titleHero?: string;
+  subtitleHero?: string;
+  descriptionHero?: string;
+}
 
 export const PrivacyPolicyClient = () => {
   const [scroll, setScroll] = useState(null);
-  const [dataSection, setDataSection] = useState<any>();
+  const [dataSection, setDataSection] = useState<PrivacyPolicyData | null>(
+    null,
+  );
 
   const { lang } = useChangeLanguage();
 
@@ -19,8 +30,8 @@ export const PrivacyPolicyClient = () => {
         );
         const [data] = response?.data?.data;
         setDataSection(data?.attributes);
-      } catch {
-        // Error fetching privacy policy
+      } catch (error) {
+        console.error('Error fetching privacy policy:', error);
       }
     })();
   }, [lang]);
@@ -34,8 +45,8 @@ export const PrivacyPolicyClient = () => {
         isVisibleBreadCrumbs={true}
         hiddenArrow={false}
         visibleDescriiton={false}
-        title={dataSection?.titleHero}
-        description={dataSection?.subtitleHero}
+        title={dataSection?.titleHero ?? ''}
+        description={dataSection?.subtitleHero ?? ''}
         heightScreen={true}
         styleSection="pb-[100px] pt-6 px-[16px] h-screen"
         secondDescription={dataSection?.descriptionHero}

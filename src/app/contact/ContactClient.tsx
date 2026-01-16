@@ -4,9 +4,10 @@ import { HeroPage } from '@/components/heroSection/HeroSection';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
+import { ContactPageAttributes } from '@/types/strapi';
 
 export const ContactClient = () => {
-  const [contacts, setContacts] = useState<any>();
+  const [contacts, setContacts] = useState<ContactPageAttributes | null>(null);
 
   const { lang } = useChangeLanguage();
 
@@ -16,9 +17,9 @@ export const ContactClient = () => {
         const response = await axiosInstance.get(
           `/contact-pages?locale=${lang}`,
         );
-        setContacts(response?.data?.data?.[0].attributes);
-      } catch {
-        // Error fetching contact page data
+        setContacts(response?.data?.data?.[0]?.attributes);
+      } catch (error) {
+        console.error('Error fetching contact page data:', error);
       }
     })();
   }, [lang]);
@@ -28,8 +29,8 @@ export const ContactClient = () => {
       <HeroPage
         hiddenArrow={true}
         visibleDescriiton={false}
-        title={contacts?.heroTitle}
-        description={contacts?.heroSubtitle}
+        title={contacts?.heroTitle ?? ''}
+        description={contacts?.heroSubtitle ?? ''}
         heightScreen={false}
         styleSection="pb-[100px]"
         secondDescription={contacts?.heroDescription}

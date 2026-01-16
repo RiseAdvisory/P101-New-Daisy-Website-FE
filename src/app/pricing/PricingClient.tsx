@@ -10,11 +10,28 @@ import { useChangePage } from '@/store/currentPage';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useRef, useState } from 'react';
 
+// Using inline interface since the API response structure is complex
+// and varies between business/professional pricing types
+interface PricingData {
+  title?: string;
+  switchAnnually?: {
+    monthly?: string;
+    annually?: string;
+  };
+  business?: {
+    pricingCard?: unknown[];
+  };
+  professional?: {
+    pricingCard?: unknown[];
+  };
+  enterprise?: unknown;
+}
+
 export const PricingClient = () => {
   const [activePricingPage, setActivePricingPage] = useState('');
   const [checkedMonth, setCheckedMonth] = useState(true);
-  const [isRescomennded, setIsRecommended] = useState(false);
-  const [dataPricing, setDataPricing] = useState<any>();
+  const [isRecommended, setIsRecommended] = useState(false);
+  const [dataPricing, setDataPricing] = useState<PricingData | null>(null);
   const { lang } = useChangeLanguage();
   const { page } = useChangePage();
 
@@ -32,8 +49,8 @@ export const PricingClient = () => {
 
   const currentPricing =
     activePricingPage === 'professional'
-      ? dataPricing?.professional.pricingCard
-      : dataPricing?.business.pricingCard;
+      ? dataPricing?.professional?.pricingCard
+      : dataPricing?.business?.pricingCard;
   const gridCardRef = useRef<HTMLDivElement>(null);
 
   const handleScrollToGrid = () => {
@@ -48,7 +65,7 @@ export const PricingClient = () => {
         const response = await axiosInstance.get(`/pricings?locale=${lang}`);
         setDataPricing(response?.data?.data[0]?.attributes);
       } catch (error) {
-        // Error fetching pricing data
+        console.error('Error fetching pricing data:', error);
       }
     })();
   }, [lang]);
@@ -59,7 +76,7 @@ export const PricingClient = () => {
     <div className="bg-[#F8F5F3] pb-[180px]">
       <PricingHero
         setActivePricingPage={setActivePricingPage}
-        description={dataPricing?.title}
+        description={dataPricing?.title ?? ''}
         heightScreen={false}
         styleSection="pb-[100px]"
         onScrollToGrid={handleScrollToGrid}
@@ -99,11 +116,11 @@ export const PricingClient = () => {
       <div ref={gridCardRef} className="md:scroll-mt-[150px]">
         <GridPricingCard
           refGridCardRef={gridCardRef}
-          isRescomennded={isRescomennded}
+          isRescomennded={isRecommended}
           activePricingPage={activePricingPage}
           chechedAnnualy={checkedMonth}
-          dataPricing={currentPricing}
-          listChangePricing={dataPricing}
+          dataPricing={(currentPricing as never) ?? []}
+          listChangePricing={dataPricing as never}
         />
       </div>
       {activePricingPage === 'business' && (

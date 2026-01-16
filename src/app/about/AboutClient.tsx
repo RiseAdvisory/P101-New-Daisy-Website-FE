@@ -5,10 +5,11 @@ import { HeroPage } from '@/components/heroSection/HeroSection';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
+import { AboutPageAttributes } from '@/types/strapi';
 
 export const AboutClient = () => {
   const [scroll, setScroll] = useState(null);
-  const [heroAbout, setHeroAbout] = useState<any>();
+  const [heroAbout, setHeroAbout] = useState<AboutPageAttributes | null>(null);
   const { lang } = useChangeLanguage();
 
   useEffect(() => {
@@ -18,8 +19,8 @@ export const AboutClient = () => {
           `/about-pages?populate=*&locale=${lang}`,
         );
         setHeroAbout(response?.data?.data[0]?.attributes);
-      } catch {
-        // Error fetching about page data
+      } catch (error) {
+        console.error('Error fetching about page data:', error);
       }
     })();
   }, [lang]);
@@ -28,8 +29,8 @@ export const AboutClient = () => {
     <>
       <HeroPage
         blockRef={scroll}
-        title={heroAbout?.heroTitle}
-        description={heroAbout?.heroSubtitle}
+        title={heroAbout?.heroTitle ?? ''}
+        description={heroAbout?.heroSubtitle ?? ''}
         hiddenArrow={false}
         visibleDescriiton={false}
         heightScreen={true}

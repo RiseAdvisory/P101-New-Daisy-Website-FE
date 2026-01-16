@@ -7,46 +7,62 @@ import { HeroPage } from '@/components/heroSection/HeroSection';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
+import { FeaturesPageAttributes, FeatureListItem } from '@/types/strapi';
 
 export const FeaturesBusinessClient = () => {
-  const [dataFeatures, setDataFeatures] = useState<any>();
-  const [dataListManagm, setDataListManagm] = useState<any>();
-  const [dataListPayment, setDataListPayment] = useState<any>();
-  const [dataListReports, setDataListReports] = useState<any>();
+  const [dataFeatures, setDataFeatures] =
+    useState<FeaturesPageAttributes | null>(null);
+  const [dataListManagm, setDataListManagm] = useState<FeatureListItem[] | null>(
+    null,
+  );
+  const [dataListPayment, setDataListPayment] = useState<
+    FeatureListItem[] | null
+  >(null);
+  const [dataListReports, setDataListReports] = useState<
+    FeatureListItem[] | null
+  >(null);
 
   const { lang } = useChangeLanguage();
 
   useEffect(() => {
     (async () => {
       try {
-        const responseDataFeatures = await axiosInstance.get(
-          `/feature-businesses?populate=*&locale=${lang}`,
-        );
+        // Parallelize API calls for better performance
+        const [
+          responseDataFeatures,
+          responseListManagm,
+          responseListPayments,
+          responseListReports,
+        ] = await Promise.all([
+          axiosInstance.get(`/feature-businesses?populate=*&locale=${lang}`),
+          axiosInstance.get(
+            `/features-business-marketings?populate=*&locale=${lang}`,
+          ),
+          axiosInstance.get(
+            `/feature-business-payments?populate=*&locale=${lang}`,
+          ),
+          axiosInstance.get(
+            `/feature-business-reports?populate=*&locale=${lang}`,
+          ),
+        ]);
+
         const [dataFeatures] = responseDataFeatures.data.data;
         setDataFeatures(dataFeatures?.attributes);
-        const responseListManagm = await axiosInstance.get(
-          `/features-business-marketings?populate=*&locale=${lang}`,
-        );
-        const responseListPayments = await axiosInstance.get(
-          `/feature-business-payments?populate=*&locale=${lang}`,
-        );
-        const responseListReports = await axiosInstance.get(
-          `/feature-business-reports?populate=*&locale=${lang}`,
-        );
         setDataListManagm(responseListManagm?.data?.data);
         setDataListPayment(responseListPayments?.data?.data);
         setDataListReports(responseListReports?.data?.data);
-      } catch {
-        // Error fetching business features
+      } catch (error) {
+        console.error('Error fetching business features:', error);
       }
     })();
   }, [lang]);
+
   return (
     <div className="bg-primary px-4">
       <HeroPage
         title=""
         titleScroll="Explore the features"
-        description={dataFeatures?.title}
+        description={dataFeatures?.title ?? ''}
         hiddenArrow={true}
         visibleDescriiton={false}
         heightScreen={false}
