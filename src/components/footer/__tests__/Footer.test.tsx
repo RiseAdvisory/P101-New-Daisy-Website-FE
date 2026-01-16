@@ -227,6 +227,130 @@ describe('Footer', () => {
     });
   });
 
+  describe('2-second timeout fallback', () => {
+    beforeEach(() => {
+      jest.useFakeTimers();
+    });
+
+    afterEach(() => {
+      jest.useRealTimers();
+    });
+
+    it('loads FreshChat after 2-second timeout without user interaction', async () => {
+      // Override requestIdleCallback to execute immediately but not trigger interaction
+      const mockRIC = jest.fn((callback) => {
+        callback({ didTimeout: false, timeRemaining: () => 50 });
+        return 1;
+      });
+      window.requestIdleCallback =
+        mockRIC as unknown as typeof window.requestIdleCallback;
+
+      render(<Footer />);
+
+      // FreshChat should not be rendered initially
+      expect(screen.queryByTestId('freshchat-loader')).not.toBeInTheDocument();
+
+      // Advance timers by 2 seconds (the fallback timeout)
+      await act(async () => {
+        jest.advanceTimersByTime(2000);
+      });
+
+      // FreshChat should now be rendered after timeout
+      expect(screen.getByTestId('freshchat-loader')).toBeInTheDocument();
+    });
+
+    it('clears timeout when user interacts before 2 seconds', async () => {
+      const clearTimeoutSpy = jest.spyOn(global, 'clearTimeout');
+
+      // Override requestIdleCallback to execute immediately
+      const mockRIC = jest.fn((callback) => {
+        callback({ didTimeout: false, timeRemaining: () => 50 });
+        return 1;
+      });
+      window.requestIdleCallback =
+        mockRIC as unknown as typeof window.requestIdleCallback;
+
+      render(<Footer />);
+
+      // Advance timers by 1 second (before the 2-second timeout)
+      await act(async () => {
+        jest.advanceTimersByTime(1000);
+      });
+
+      // FreshChat should not be rendered yet
+      expect(screen.queryByTestId('freshchat-loader')).not.toBeInTheDocument();
+
+      // User clicks before timeout
+      await act(async () => {
+        fireEvent.click(window);
+      });
+
+      // FreshChat should now be rendered
+      expect(screen.getByTestId('freshchat-loader')).toBeInTheDocument();
+
+      // Timeout should have been cleared
+      expect(clearTimeoutSpy).toHaveBeenCalled();
+
+      clearTimeoutSpy.mockRestore();
+    });
+
+    it('clears timeout on component unmount', async () => {
+      const clearTimeoutSpy = jest.spyOn(global, 'clearTimeout');
+
+      // Override requestIdleCallback to execute immediately
+      const mockRIC = jest.fn((callback) => {
+        callback({ didTimeout: false, timeRemaining: () => 50 });
+        return 1;
+      });
+      window.requestIdleCallback =
+        mockRIC as unknown as typeof window.requestIdleCallback;
+
+      const { unmount } = render(<Footer />);
+
+      // Advance timers by 1 second (timeout is still pending)
+      await act(async () => {
+        jest.advanceTimersByTime(1000);
+      });
+
+      // Unmount before timeout fires
+      unmount();
+
+      // Timeout should have been cleared during cleanup
+      expect(clearTimeoutSpy).toHaveBeenCalled();
+
+      clearTimeoutSpy.mockRestore();
+    });
+
+    it('does not load FreshChat multiple times if timeout fires after interaction', async () => {
+      // Override requestIdleCallback to execute immediately
+      const mockRIC = jest.fn((callback) => {
+        callback({ didTimeout: false, timeRemaining: () => 50 });
+        return 1;
+      });
+      window.requestIdleCallback =
+        mockRIC as unknown as typeof window.requestIdleCallback;
+
+      render(<Footer />);
+
+      // User clicks to trigger FreshChat loading
+      await act(async () => {
+        fireEvent.click(window);
+      });
+
+      // FreshChat should be rendered
+      expect(screen.getByTestId('freshchat-loader')).toBeInTheDocument();
+
+      // Advance timers past the 2-second mark
+      await act(async () => {
+        jest.advanceTimersByTime(3000);
+      });
+
+      // FreshChat should still be rendered (only once)
+      const freshChatLoaders = screen.getAllByTestId('freshchat-loader');
+      expect(freshChatLoaders).toHaveLength(1);
+    });
+  });
+
   describe('fallback behavior without requestIdleCallback', () => {
     beforeEach(() => {
       // @ts-expect-error - intentionally removing for test

@@ -1,5 +1,8 @@
-import { render, waitFor } from '@testing-library/react';
+import { render, waitFor, act } from '@testing-library/react';
 import FreshChatLoader from '../FreshChatWidget';
+
+// Correct script ID used in the component
+const SCRIPT_ID = 'Freshchat-js-sdk';
 
 describe('FreshChatWidget Security Tests', () => {
   const originalEnv = process.env;
@@ -8,8 +11,9 @@ describe('FreshChatWidget Security Tests', () => {
     jest.resetModules();
     process.env = { ...originalEnv };
 
-    // Clean up any existing scripts
+    // Clean up any existing scripts (both old and new ID formats)
     document.querySelectorAll('#freshchat-js-sdk').forEach((el) => el.remove());
+    document.querySelectorAll(`#${SCRIPT_ID}`).forEach((el) => el.remove());
 
     // Clean up window objects
     delete (window as any).fcWidget;
@@ -20,21 +24,41 @@ describe('FreshChatWidget Security Tests', () => {
     process.env = originalEnv;
   });
 
-  it('should validate and sanitize environment variables', () => {
+  it('should validate and sanitize environment variables', async () => {
     process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'valid-token-123';
     process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
     process.env.NEXT_PUBLIC_FRESHCHAT_WIDGET_UUID = 'uuid-123';
 
+    // Mock fcWidget to capture the config passed to init
+    const mockInit = jest.fn();
+    (window as any).fcWidget = {
+      init: mockInit,
+      destroy: jest.fn(),
+    };
+
     render(<FreshChatLoader lang="en" />);
 
-    waitFor(() => {
-      expect((window as any).fcWidgetConfig).toBeDefined();
-      expect((window as any).fcWidgetConfig.token).toBe('valid-token-123');
-      expect((window as any).fcWidgetConfig.host).toBe('https://freshchat.com');
+    // Wait for the script to load and init to be called
+    await waitFor(() => {
+      const script = document.getElementById(SCRIPT_ID);
+      expect(script).toBeTruthy();
+    });
+
+    // Trigger the onload handler to simulate script loading
+    const script = document.getElementById(SCRIPT_ID) as HTMLScriptElement;
+    script?.onload?.(new Event('load'));
+
+    await waitFor(() => {
+      expect(mockInit).toHaveBeenCalledWith(
+        expect.objectContaining({
+          token: 'valid-token-123',
+          host: 'https://freshchat.com',
+        }),
+      );
     });
   });
 
-  it('should reject malicious characters in token', () => {
+  it('should reject malicious characters in token', async () => {
     process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN =
       'token<script>alert("XSS")</script>';
     process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
@@ -43,7 +67,7 @@ describe('FreshChatWidget Security Tests', () => {
 
     render(<FreshChatLoader lang="en" />);
 
-    waitFor(() => {
+    await waitFor(() => {
       const config = (window as any).fcWidgetConfig;
       // Script tags should be stripped by validation
       if (config) {
@@ -70,38 +94,59 @@ describe('FreshChatWidget Security Tests', () => {
     consoleWarnSpy.mockRestore();
   });
 
-  it('should include widgetUuid for Arabic language', () => {
+  it('should include widgetUuid for Arabic language', async () => {
     process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
     process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
     process.env.NEXT_PUBLIC_FRESHCHAT_WIDGET_UUID = 'uuid-ar';
 
+    // Mock fcWidget to capture the config passed to init
+    const mockInit = jest.fn();
+    (window as any).fcWidget = {
+      init: mockInit,
+      destroy: jest.fn(),
+    };
+
     render(<FreshChatLoader lang="ar" />);
 
-    waitFor(() => {
-      expect((window as any).fcWidgetConfig?.widgetUuid).toBe('uuid-ar');
+    // Wait for the script to be created
+    await waitFor(() => {
+      const script = document.getElementById(SCRIPT_ID);
+      expect(script).toBeTruthy();
+    });
+
+    // Trigger the onload handler to simulate script loading
+    const script = document.getElementById(SCRIPT_ID) as HTMLScriptElement;
+    script?.onload?.(new Event('load'));
+
+    await waitFor(() => {
+      expect(mockInit).toHaveBeenCalledWith(
+        expect.objectContaining({
+          widgetUuid: 'uuid-ar',
+        }),
+      );
     });
   });
 
-  it('should not include widgetUuid for English language', () => {
+  it('should not include widgetUuid for English language', async () => {
     process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
     process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
     process.env.NEXT_PUBLIC_FRESHCHAT_WIDGET_UUID = 'uuid-en';
 
     render(<FreshChatLoader lang="en" />);
 
-    waitFor(() => {
+    await waitFor(() => {
       expect((window as any).fcWidgetConfig?.widgetUuid).toBeUndefined();
     });
   });
 
-  it('should sanitize host URL to prevent injection', () => {
+  it('should sanitize host URL to prevent injection', async () => {
     process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
     process.env.NEXT_PUBLIC_FRESHCHAT_HOST =
       'https://evil.com" onload="alert(\'XSS\')';
 
     render(<FreshChatLoader lang="en" />);
 
-    waitFor(() => {
+    await waitFor(() => {
       const config = (window as any).fcWidgetConfig;
       if (config) {
         expect(config.host).not.toContain('onload');
@@ -110,7 +155,7 @@ describe('FreshChatWidget Security Tests', () => {
     });
   });
 
-  it('should handle script loading with proper error handling', () => {
+  it('should handle script loading with proper error handling', async () => {
     process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
     process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
 
@@ -118,8 +163,8 @@ describe('FreshChatWidget Security Tests', () => {
 
     render(<FreshChatLoader lang="en" />);
 
-    waitFor(() => {
-      const script = document.getElementById('freshchat-js-sdk');
+    await waitFor(() => {
+      const script = document.getElementById(SCRIPT_ID);
       expect(script).toBeDefined();
 
       // Trigger error event
@@ -136,7 +181,7 @@ describe('FreshChatWidget Security Tests', () => {
     consoleErrorSpy.mockRestore();
   });
 
-  it('should clean up on unmount', () => {
+  it('should clean up on unmount', async () => {
     process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
     process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
 
@@ -148,8 +193,228 @@ describe('FreshChatWidget Security Tests', () => {
 
     unmount();
 
-    waitFor(() => {
+    await waitFor(() => {
       expect((window as any).fcWidget.destroy).toHaveBeenCalled();
     });
+  });
+});
+
+describe('FreshChatWidget Script Loading Tests', () => {
+  const originalEnv = process.env;
+
+  beforeEach(() => {
+    jest.resetModules();
+    process.env = { ...originalEnv };
+
+    // Clean up any existing scripts
+    document.querySelectorAll(`#${SCRIPT_ID}`).forEach((el) => el.remove());
+
+    // Clean up window objects
+    delete (window as any).fcWidget;
+  });
+
+  afterEach(() => {
+    process.env = originalEnv;
+    // Ensure real timers are restored if any test used fake timers
+    jest.useRealTimers();
+  });
+
+  it('should use correct script ID (Freshchat-js-sdk)', () => {
+    process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
+    process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
+
+    render(<FreshChatLoader lang="en" />);
+
+    // Script should be created with the correct ID
+    const script = document.getElementById(SCRIPT_ID);
+    expect(script).toBeTruthy();
+    expect(script?.tagName).toBe('SCRIPT');
+  });
+
+  it('should create script with async attribute', () => {
+    process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
+    process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
+
+    render(<FreshChatLoader lang="en" />);
+
+    const script = document.getElementById(SCRIPT_ID) as HTMLScriptElement;
+    expect(script).toBeTruthy();
+    expect(script.async).toBe(true);
+  });
+
+  it('should set correct script src from host env variable', () => {
+    process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
+    process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://wchat.freshchat.com';
+
+    render(<FreshChatLoader lang="en" />);
+
+    const script = document.getElementById(SCRIPT_ID) as HTMLScriptElement;
+    expect(script).toBeTruthy();
+    expect(script.src).toBe('https://wchat.freshchat.com/js/widget.js');
+  });
+
+  it('should use setTimeout(0) for initialization when script already exists', async () => {
+    jest.useFakeTimers();
+
+    process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
+    process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
+
+    // Pre-create the script element (simulating it already being loaded)
+    const existingScript = document.createElement('script');
+    existingScript.id = SCRIPT_ID;
+    document.head.appendChild(existingScript);
+
+    // Mock fcWidget
+    const mockInit = jest.fn();
+    (window as any).fcWidget = {
+      init: mockInit,
+      destroy: jest.fn(),
+    };
+
+    render(<FreshChatLoader lang="en" />);
+
+    // init should not be called synchronously
+    expect(mockInit).not.toHaveBeenCalled();
+
+    // Advance timers to trigger setTimeout(initFreshChat, 0)
+    await act(async () => {
+      jest.advanceTimersByTime(0);
+    });
+
+    // Now init should have been called
+    expect(mockInit).toHaveBeenCalledWith({
+      token: 'token',
+      host: 'https://freshchat.com',
+    });
+
+    jest.useRealTimers();
+  });
+
+  it('should destroy existing widget before reinitializing', () => {
+    process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
+    process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
+
+    // Mock existing fcWidget
+    const mockDestroy = jest.fn();
+    (window as any).fcWidget = {
+      init: jest.fn(),
+      destroy: mockDestroy,
+    };
+
+    render(<FreshChatLoader lang="en" />);
+
+    // destroy should have been called to clean up existing widget
+    expect(mockDestroy).toHaveBeenCalled();
+  });
+
+  it('should not create duplicate scripts on language change', async () => {
+    process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
+    process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
+
+    const { rerender } = render(<FreshChatLoader lang="en" />);
+
+    // Should have one script
+    let scripts = document.querySelectorAll(`#${SCRIPT_ID}`);
+    expect(scripts.length).toBe(1);
+
+    // Mock fcWidget for rerender
+    (window as any).fcWidget = {
+      init: jest.fn(),
+      destroy: jest.fn(),
+    };
+
+    // Rerender with different language
+    rerender(<FreshChatLoader lang="ar" />);
+
+    // Should still have only one script (reuses existing)
+    scripts = document.querySelectorAll(`#${SCRIPT_ID}`);
+    expect(scripts.length).toBe(1);
+  });
+
+  it('should call init with widgetUuid for Arabic language when script exists', async () => {
+    jest.useFakeTimers();
+
+    process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
+    process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
+    process.env.NEXT_PUBLIC_FRESHCHAT_WIDGET_UUID = 'arabic-uuid';
+
+    // Pre-create the script element
+    const existingScript = document.createElement('script');
+    existingScript.id = SCRIPT_ID;
+    document.head.appendChild(existingScript);
+
+    // Mock fcWidget
+    const mockInit = jest.fn();
+    (window as any).fcWidget = {
+      init: mockInit,
+      destroy: jest.fn(),
+    };
+
+    render(<FreshChatLoader lang="ar" />);
+
+    // Advance timers to trigger setTimeout(initFreshChat, 0)
+    await act(async () => {
+      jest.advanceTimersByTime(0);
+    });
+
+    // Should include widgetUuid for Arabic
+    expect(mockInit).toHaveBeenCalledWith({
+      token: 'token',
+      host: 'https://freshchat.com',
+      widgetUuid: 'arabic-uuid',
+    });
+
+    jest.useRealTimers();
+  });
+
+  it('should handle script onload callback correctly', async () => {
+    process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
+    process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
+
+    const mockInit = jest.fn();
+
+    render(<FreshChatLoader lang="en" />);
+
+    const script = document.getElementById(SCRIPT_ID) as HTMLScriptElement;
+    expect(script).toBeTruthy();
+
+    // Simulate script loading and fcWidget becoming available
+    (window as any).fcWidget = {
+      init: mockInit,
+      destroy: jest.fn(),
+    };
+
+    // Trigger onload
+    await act(async () => {
+      script.onload?.(new Event('load'));
+    });
+
+    expect(mockInit).toHaveBeenCalledWith({
+      token: 'token',
+      host: 'https://freshchat.com',
+    });
+  });
+
+  it('should handle script onerror callback correctly', async () => {
+    process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN = 'token';
+    process.env.NEXT_PUBLIC_FRESHCHAT_HOST = 'https://freshchat.com';
+
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation();
+
+    render(<FreshChatLoader lang="en" />);
+
+    const script = document.getElementById(SCRIPT_ID) as HTMLScriptElement;
+    expect(script).toBeTruthy();
+
+    // Trigger onerror
+    await act(async () => {
+      script.onerror?.(new Event('error'));
+    });
+
+    expect(consoleErrorSpy).toHaveBeenCalledWith(
+      'FreshChat: Failed to load widget script',
+    );
+
+    consoleErrorSpy.mockRestore();
   });
 });
