@@ -29,6 +29,7 @@ function validateConfig(value: string): string {
 export default function FreshChatLoader({ lang }: FreshChatLoaderProps) {
   useEffect(() => {
     const SDK_SCRIPT_ID = 'Freshchat-js-sdk';
+    let initTimeoutId: NodeJS.Timeout | null = null;
 
     // Get and validate environment variables
     const token = validateConfig(process.env.NEXT_PUBLIC_FRESHCHAT_TOKEN || '');
@@ -41,15 +42,6 @@ export default function FreshChatLoader({ lang }: FreshChatLoaderProps) {
     if (!token || !host) {
       console.warn('FreshChat: Missing required configuration');
       return;
-    }
-
-    // Clean up existing widget before reinitializing
-    if (
-      typeof window !== 'undefined' &&
-      window.fcWidget &&
-      window.fcWidget.destroy
-    ) {
-      window.fcWidget.destroy();
     }
 
     // Build config object
@@ -68,26 +60,45 @@ export default function FreshChatLoader({ lang }: FreshChatLoaderProps) {
       }
     };
 
-    // Check if SDK script already exists
-    const existingScript = document.getElementById(SDK_SCRIPT_ID);
-    if (existingScript) {
-      // SDK already loaded, initialize directly
-      // Use setTimeout to ensure fcWidget is available after script execution
-      setTimeout(initFreshChat, 0);
+    // Check if widget needs to be destroyed first (language change scenario)
+    const needsDestroy =
+      typeof window !== 'undefined' &&
+      window.fcWidget &&
+      window.fcWidget.destroy &&
+      window.fcWidget.isInitialized &&
+      window.fcWidget.isInitialized();
+
+    if (needsDestroy) {
+      // Destroy existing widget and wait before reinitializing
+      window.fcWidget!.destroy();
+      // Give FreshChat SDK time to fully clean up before reinitializing
+      initTimeoutId = setTimeout(initFreshChat, 500);
     } else {
-      // Load the FreshChat SDK
-      const script = document.createElement('script');
-      script.id = SDK_SCRIPT_ID;
-      script.async = true;
-      script.src = `${host}/js/widget.js`;
-      script.onload = initFreshChat;
-      script.onerror = () => {
-        console.error('FreshChat: Failed to load widget script');
-      };
-      document.head.appendChild(script);
+      // Check if SDK script already exists
+      const existingScript = document.getElementById(SDK_SCRIPT_ID);
+      if (existingScript) {
+        // SDK already loaded, initialize directly
+        // Use setTimeout to ensure fcWidget is available after script execution
+        initTimeoutId = setTimeout(initFreshChat, 0);
+      } else {
+        // Load the FreshChat SDK
+        const script = document.createElement('script');
+        script.id = SDK_SCRIPT_ID;
+        script.async = true;
+        script.src = `${host}/js/widget.js`;
+        script.onload = initFreshChat;
+        script.onerror = () => {
+          console.error('FreshChat: Failed to load widget script');
+        };
+        document.head.appendChild(script);
+      }
     }
 
     return () => {
+      // Clear any pending initialization timeout
+      if (initTimeoutId) {
+        clearTimeout(initTimeoutId);
+      }
       // Cleanup on unmount
       if (window.fcWidget && window.fcWidget.destroy) {
         window.fcWidget.destroy();
