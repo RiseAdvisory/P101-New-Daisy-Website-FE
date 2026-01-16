@@ -1,115 +1,47 @@
-'use client';
-import { EnterPrise } from '@/components/pricingPage/EnterpriseSection';
-import { GridPricingCard } from '@/components/pricingPage/GridPricingCard';
-import { PricingHero } from '@/components/pricingPage/HeroPricing';
-import Separator from '@/components/separator/Separator';
-import { Switch } from '@/components/ui/switch';
-import axiosInstance from '@/helpers/axiosConfig';
-import { cn } from '@/lib/utils';
-import { useChangePage } from '@/store/currentPage';
-import { useChangeLanguage } from '@/store/language';
-import { useEffect, useRef, useState } from 'react';
+import { Metadata } from 'next';
+import { PricingClient } from './PricingClient';
 
-const Pricing = () => {
-  const [activePricingPage, setActivePricingPage] = useState('');
-  const [checkedMonth, setCheckedMonth] = useState(true);
-  const [isRescomennded, setIsRecommended] = useState(false);
-  const [dataPricing, setDataPricing] = useState<any>();
-  const { lang } = useChangeLanguage();
-  const { page } = useChangePage();
-
-  useEffect(() => {
-    if (page.includes('business')) {
-      setActivePricingPage('business');
-    }
-    if (page.includes('customer')) {
-      setActivePricingPage('business');
-    }
-    if (page.includes('professional')) {
-      setActivePricingPage('professional');
-    }
-  }, [page]);
-
-  const currentPricing =
-    activePricingPage === 'professional'
-      ? dataPricing?.professional.pricingCard
-      : dataPricing?.business.pricingCard;
-  const gridCardRef = useRef<HTMLDivElement>(null);
-
-  const handleScrollToGrid = () => {
-    if (gridCardRef.current) {
-      gridCardRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  useEffect(() => {
-    (async () => {
-      try {
-        const response = await axiosInstance.get(`/pricings?locale=${lang}`);
-        setDataPricing(response?.data?.data[0]?.attributes);
-      } catch (error) {
-        // Error fetching pricing data
-      }
-    })();
-  }, [lang]);
-
-  const pay = dataPricing?.switchAnnually;
-
-  return (
-    <div className="bg-[#F8F5F3] pb-[180px]">
-      <PricingHero
-        setActivePricingPage={setActivePricingPage}
-        description={dataPricing?.title}
-        heightScreen={false}
-        styleSection="pb-[100px]"
-        onScrollToGrid={handleScrollToGrid}
-        setIsRecommended={setIsRecommended}
-        activePricingPage={activePricingPage}
-        dataPricing={dataPricing}
-      />
-      <div className="px-4 md:px-20 bg-primary">
-        <Separator />
-      </div>
-      <div className="w-full bg-primary py-[44px]">
-        <div className="flex mx-auto w-fit bg-primary ">
-          <p
-            className={cn(
-              'font-normal text-[18px] leading-6 text-[#F8F5F3] text-right',
-              {
-                'text-[#F8F5F3]/60': checkedMonth,
-              },
-            )}
-          >
-            {pay?.monthly}
-          </p>
-          <Switch
-            defaultChecked={checkedMonth}
-            className="mx-4 data-[state=checked]:bg-[#A67F6B] my-auto bg-[#aab4b3]"
-            onCheckedChange={() => setCheckedMonth(!checkedMonth)}
-          />
-          <p
-            className={cn('font-normal text-[18px] leading-6 text-[#F8F5F3]', {
-              'text-[#F8F5F3]/60': !checkedMonth,
-            })}
-          >
-            {pay?.annually}
-          </p>
-        </div>
-      </div>
-      <div ref={gridCardRef} className="md:scroll-mt-[150px]">
-        <GridPricingCard
-          refGridCardRef={gridCardRef}
-          isRescomennded={isRescomennded}
-          activePricingPage={activePricingPage}
-          chechedAnnualy={checkedMonth}
-          dataPricing={currentPricing}
-          listChangePricing={dataPricing}
-        />
-      </div>
-      {activePricingPage === 'business' && (
-        <EnterPrise data={dataPricing?.enterprise} />
-      )}
-    </div>
-  );
+export const metadata: Metadata = {
+  title: 'Pricing Plans for Salons & Spas | The Daisy',
+  description:
+    'Flexible pricing plans for salons, spas, and beauty professionals. Choose monthly or annual billing with commission-based pricing tailored to your business size.',
+  keywords: [
+    'salon software pricing',
+    'spa booking system cost',
+    'beauty business subscription',
+    'salon management pricing',
+    'beauty marketplace fees',
+    'commission pricing',
+    'salon app pricing',
+    'wellness business plans',
+  ],
+  openGraph: {
+    title: 'Pricing Plans for Salons & Spas | The Daisy',
+    description:
+      'Flexible pricing plans for salons, spas, and beauty professionals. Monthly or annual billing available.',
+    url: 'https://jointhedaisy.com/pricing',
+    type: 'website',
+    images: [
+      {
+        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'The Daisy Pricing Plans',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pricing Plans for Salons & Spas | The Daisy',
+    description:
+      'Flexible pricing plans for salons, spas, and beauty professionals.',
+    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+  },
+  alternates: {
+    canonical: 'https://jointhedaisy.com/pricing',
+  },
 };
-export default Pricing;
+
+export default function PricingPage() {
+  return <PricingClient />;
+}

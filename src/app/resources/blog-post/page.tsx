@@ -1,80 +1,46 @@
-'use client';
-import { CardPosts } from '@/components/blogPage/blogPosts/CardPosts';
-import { HeroPage } from '@/components/heroSection/HeroSection';
-import axiosInstance from '@/helpers/axiosConfig';
-import { useChoosePath } from '@/store/currentPath';
-import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
-import { useMyContext } from '@/app/MyContext';
+import { Metadata } from 'next';
+import { BlogPostClient } from './BlogPostClient';
 
-const BlogPosts = () => {
-  const [heroBlog, setHeroBlog] = useState<any>();
-  const [listCard, setListCards] = useState<any>();
-
-  const { lang } = useChangeLanguage();
-  const { chooseBreadcrumb, choosePathStrapi } = useChoosePath();
-  const { userChange: currentPage, setUserChange } = useMyContext();
-
-  useEffect(() => {
-    //resources-blog-posts
-    let endpointExperienceDaisyLink = 'resources-blog-post-customers';
-    if (currentPage === '/customer') {
-      endpointExperienceDaisyLink = 'resources-blog-post-customers';
-    }
-    if (currentPage === '/business') {
-      endpointExperienceDaisyLink = 'resources-blog-post-businesses';
-    }
-    if (currentPage === '/professional') {
-      endpointExperienceDaisyLink = 'resources-blog-post-independents';
-    }
-
-    (async () => {
-      const response = await axiosInstance.get(
-        `hero-resources-blogposts?locale=${lang}&_sort=name:DESCa`,
-      );
-      const responseList = await axiosInstance.get(
-        `/${endpointExperienceDaisyLink}?populate=*&locale=${lang}`,
-      );
-      setListCards(responseList?.data?.data);
-      setHeroBlog(response?.data?.data[0]?.attributes);
-    })();
-  }, [lang, currentPage]);
-
-  useEffect(() => {
-    let endpointExperienceDaisyLink = 'resources-blog-post-customers';
-    if (currentPage === '/customer') {
-      endpointExperienceDaisyLink = 'resources-blog-post-customers';
-    }
-    if (currentPage === '/business') {
-      endpointExperienceDaisyLink = 'resources-blog-post-businesses';
-    }
-    if (currentPage === '/professional') {
-      endpointExperienceDaisyLink = 'resources-blog-post-independents';
-    }
-    chooseBreadcrumb(heroBlog?.breadcrumbs);
-    choosePathStrapi(`/${endpointExperienceDaisyLink}`);
-  }, [heroBlog, lang, currentPage]);
-  return (
-    <div className="w-full">
-      <HeroPage
-        bredCrumbDesription={'Resources'}
-        bredCrumbTitle={'Blog Posts'}
-        isVisibleBreadCrumbs={true}
-        hiddenArrow={true}
-        visibleDescriiton={false}
-        title={heroBlog?.title}
-        description={heroBlog?.subtitle}
-        heightScreen={false}
-        styleSection="pb-[100px] pt-[25px]"
-        secondDescription={heroBlog?.description}
-      />
-      <CardPosts
-        typePath="blog-post"
-        redirect={true}
-        style="cursor-pointer"
-        listCard={listCard}
-      />
-    </div>
-  );
+export const metadata: Metadata = {
+  title: 'Beauty & Wellness Blog | The Daisy Resources',
+  description:
+    'Read the latest beauty and wellness industry insights from The Daisy. Tips for salon owners, beauty professionals, and customers on booking, marketing, and trends.',
+  keywords: [
+    'beauty blog',
+    'salon tips',
+    'wellness articles',
+    'beauty industry trends',
+    'salon marketing tips',
+    'beauty business insights',
+    'spa industry blog',
+    'The Daisy blog',
+  ],
+  openGraph: {
+    title: 'Beauty & Wellness Blog | The Daisy Resources',
+    description:
+      'Read the latest beauty and wellness industry insights from The Daisy.',
+    url: 'https://jointhedaisy.com/resources/blog-post',
+    type: 'website',
+    images: [
+      {
+        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'The Daisy Beauty Blog',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Beauty & Wellness Blog | The Daisy Resources',
+    description: 'Read the latest beauty and wellness insights from The Daisy.',
+    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+  },
+  alternates: {
+    canonical: 'https://jointhedaisy.com/resources/blog-post',
+  },
 };
-export default BlogPosts;
+
+export default function BlogPostPage() {
+  return <BlogPostClient />;
+}

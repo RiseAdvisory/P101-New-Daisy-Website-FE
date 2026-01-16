@@ -1,49 +1,46 @@
-'use client';
-import { GetTheAppScan } from '@/components/getTheApp/GetTheApp';
-import { HeroPage } from '@/components/heroSection/HeroSection';
-import Separator from '@/components/separator/Separator';
-import axiosInstance, { baseURLImage } from '@/helpers/axiosConfig';
-import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
+import { Metadata } from 'next';
+import { GetTheAppClient } from './GetTheAppClient';
 
-const GetTheApp = () => {
-  const [dataGetApp, setGetApp] = useState<any>();
-
-  const { lang } = useChangeLanguage();
-  useEffect(() => {
-    (async () => {
-      const response = await axiosInstance.get(
-        `/get-the-apps?populate=*&locale=${lang}`,
-      );
-      const [data] = response?.data?.data;
-      setGetApp(data?.attributes);
-    })();
-  }, [lang]);
-  const qrCode = new URL(
-    dataGetApp?.qrCode.data[0].attributes.url,
-    baseURLImage,
-  ).href;
-
-  return (
-    <>
-      <HeroPage
-        bredCrumbTitle={dataGetApp?.titleBredCrumb.title}
-        bredCrumbDesription={dataGetApp?.titleBredCrumb.description}
-        isVisibleBreadCrumbs={true}
-        hiddenArrow={true}
-        visibleDescriiton={false}
-        title={dataGetApp?.title}
-        description={dataGetApp?.description}
-        heightScreen={false}
-        styleSection="pb-0 pt-6 px-[16px]"
-        secondDescription={dataGetApp?.subtitle}
-      />
-      <div className="px-4 bg-primary py-[46px] md:px-[400px]">
-        <Separator className="bg-[#586968] " />
-      </div>
-      <GetTheAppScan qrCode={qrCode} />
-    </>
-  );
+export const metadata: Metadata = {
+  title: 'Download The Daisy App | Beauty Booking for iOS & Android',
+  description:
+    'Download The Daisy beauty booking app for iOS and Android. Find salons near you, book appointments, earn cashback, and manage your beauty services on the go.',
+  keywords: [
+    'beauty booking app download',
+    'salon app iOS',
+    'beauty app Android',
+    'download salon booking app',
+    'beauty services app',
+    'The Daisy mobile app',
+    'wellness booking app',
+    'spa app download',
+  ],
+  openGraph: {
+    title: 'Download The Daisy App | Beauty Booking for iOS & Android',
+    description:
+      'Download The Daisy beauty booking app. Find salons, book appointments, and earn cashback.',
+    url: 'https://jointhedaisy.com/get-the-app',
+    type: 'website',
+    images: [
+      {
+        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Download The Daisy Beauty Booking App',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Download The Daisy App | Beauty Booking for iOS & Android',
+    description: 'Download The Daisy beauty booking app for iOS and Android.',
+    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+  },
+  alternates: {
+    canonical: 'https://jointhedaisy.com/get-the-app',
+  },
 };
 
-export default GetTheApp;
+export default function GetTheAppPage() {
+  return <GetTheAppClient />;
+}

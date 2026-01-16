@@ -1,53 +1,47 @@
-'use client';
-import { QASection } from '@/components/QASection/QASection';
-import { HeroPage } from '@/components/heroSection/HeroSection';
-import axiosInstance from '@/helpers/axiosConfig';
-import { useChangePage } from '@/store/currentPage';
-import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
+import { Metadata } from 'next';
+import { FaqClient } from './FaqClient';
 
-const Faq = () => {
-  const [dataFAQ, setDataFAQ] = useState<any>();
-
-  const { page } = useChangePage();
-  const { lang } = useChangeLanguage();
-  useEffect(() => {
-    (async () => {
-      try {
-        const response = await axiosInstance(`/faqs?locale=${lang}`);
-        setDataFAQ(response?.data?.data[0]?.attributes);
-      } catch {
-        // Error fetching FAQ data
-      }
-    })();
-  }, [lang]);
-  let currentPage = page.replace('/', '');
-  const capitalizeFirstLetter = (string: string) => {
-    if (!string) return string;
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  };
-  return (
-    <div className="bg-primary">
-      <HeroPage
-        title={dataFAQ?.listFaq?.[currentPage]?.title}
-        description={dataFAQ?.listFaq?.[currentPage]?.subtitle}
-        hiddenArrow={true}
-        visibleDescriiton={false}
-        heightScreen={false}
-        secondDescription={dataFAQ?.listFaq?.[currentPage]?.description}
-      />
-      <QASection
-        pageType={capitalizeFirstLetter(currentPage)}
-        styles="!bg-primary !pt-10"
-        stylesAcoordion="!bg-primaryBtn text-white border-none"
-        titleHidden={true}
-        blockTop="!mt-0"
-        stylesAccordionItem="data-[state=open]:bg-white data-[state=open]:text-primary"
-        sectionFQ={true}
-        titleFraque={dataFAQ?.listFaq?.[currentPage]?.subtitle}
-      />
-    </div>
-  );
+export const metadata: Metadata = {
+  title: 'FAQ - Beauty Booking Questions | The Daisy',
+  description:
+    'Find answers to common questions about The Daisy beauty booking platform. Learn about salon bookings, cashback rewards, business features, and getting started.',
+  keywords: [
+    'beauty booking FAQ',
+    'salon app questions',
+    'cashback help',
+    'how to book salon',
+    'beauty app help',
+    'vendor FAQ',
+    'booking questions',
+    'spa booking help',
+  ],
+  openGraph: {
+    title: 'FAQ - Beauty Booking Questions | The Daisy',
+    description:
+      'Find answers to common questions about The Daisy beauty booking platform.',
+    url: 'https://jointhedaisy.com/faq',
+    type: 'website',
+    images: [
+      {
+        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'The Daisy FAQ',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'FAQ - Beauty Booking Questions | The Daisy',
+    description:
+      'Find answers to common questions about The Daisy beauty platform.',
+    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+  },
+  alternates: {
+    canonical: 'https://jointhedaisy.com/faq',
+  },
 };
 
-export default Faq;
+export default function FaqPage() {
+  return <FaqClient />;
+}

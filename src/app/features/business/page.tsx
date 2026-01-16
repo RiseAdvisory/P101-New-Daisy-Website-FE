@@ -1,74 +1,49 @@
-'use client';
-import { DesctopViewProfessional } from '@/components/featuresPage/DesctopViewProfessional';
-import { MobileViewProfessional } from '@/components/featuresPage/MobileSectionProfessional';
-import { SectionBusiness } from '@/components/featuresPage/SectionBusiness';
-import { SignUpBlog } from '@/components/featuresPage/SignUpBlog';
-import { HeroPage } from '@/components/heroSection/HeroSection';
-import axiosInstance from '@/helpers/axiosConfig';
-import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
+import { Metadata } from 'next';
+import { FeaturesBusinessClient } from './FeaturesBusinessClient';
 
-const FeaturesBusiness = () => {
-  const [dataFeatures, setDataFeatures] = useState<any>();
-  const [dataListManagm, setDataListManagm] = useState<any>();
-  const [dataListPayment, setDataListPayment] = useState<any>();
-  const [dataListReports, setDataListReports] = useState<any>();
-
-  const { lang } = useChangeLanguage();
-
-  useEffect(() => {
-    (async () => {
-      try {
-        const responseDataFeatures = await axiosInstance.get(
-          `/feature-businesses?populate=*&locale=${lang}`,
-        );
-        const [dataFeatures] = responseDataFeatures.data.data;
-        setDataFeatures(dataFeatures?.attributes);
-        const responseListManagm = await axiosInstance.get(
-          `/features-business-marketings?populate=*&locale=${lang}`,
-        );
-        const responseListPayments = await axiosInstance.get(
-          `/feature-business-payments?populate=*&locale=${lang}`,
-        );
-        const responseListReports = await axiosInstance.get(
-          `/feature-business-reports?populate=*&locale=${lang}`,
-        );
-        setDataListManagm(responseListManagm?.data?.data);
-        setDataListPayment(responseListPayments?.data?.data);
-        setDataListReports(responseListReports?.data?.data);
-      } catch {
-        // Error fetching business features
-      }
-    })();
-  }, [lang]);
-  return (
-    <div className="bg-primary px-4">
-      <HeroPage
-        title=""
-        titleScroll="Explore the features"
-        description={dataFeatures?.title}
-        hiddenArrow={true}
-        visibleDescriiton={false}
-        heightScreen={false}
-        features={true}
-        styleSection="md:h-auto"
-      />
-      <SectionBusiness listOption={dataFeatures?.listBusinessOptions} />
-      <MobileViewProfessional
-        dataFeatures={dataFeatures}
-        dataListManagm={dataListManagm}
-        dataListPayment={dataListPayment}
-        dataListReports={dataListReports}
-      />
-      <DesctopViewProfessional
-        dataBusiness={dataFeatures}
-        dataListManagm={dataListManagm}
-        dataListPayment={dataListPayment}
-        dataListReports={dataListReports}
-      />
-      <SignUpBlog style="-mx-4" />
-    </div>
-  );
+export const metadata: Metadata = {
+  title: 'Salon Business Features - Marketing & Payments | The Daisy',
+  description:
+    'Powerful features for salon & spa businesses: promotions management, earnings dashboard, payout processing, staff scheduling, multi-branch support, and detailed analytics.',
+  keywords: [
+    'salon marketing features',
+    'spa payment processing',
+    'salon analytics dashboard',
+    'beauty business reports',
+    'multi-branch salon management',
+    'staff scheduling features',
+    'salon promotion tools',
+    'beauty business earnings',
+    'salon payout system',
+    'workspace management',
+  ],
+  openGraph: {
+    title: 'Salon Business Features - Marketing & Payments | The Daisy',
+    description:
+      'Powerful features for salon & spa businesses: marketing, payments, analytics, and multi-branch management.',
+    url: 'https://jointhedaisy.com/features/business',
+    type: 'website',
+    images: [
+      {
+        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'The Daisy Business Features',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Salon Business Features - Marketing & Payments | The Daisy',
+    description:
+      'Powerful features for salon & spa businesses on The Daisy platform.',
+    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+  },
+  alternates: {
+    canonical: 'https://jointhedaisy.com/features/business',
+  },
 };
 
-export default FeaturesBusiness;
+export default function FeaturesBusinessPage() {
+  return <FeaturesBusinessClient />;
+}
