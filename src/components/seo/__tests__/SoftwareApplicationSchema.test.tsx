@@ -4,14 +4,18 @@ import { SoftwareApplicationSchema } from '../SoftwareApplicationSchema';
 describe('SoftwareApplicationSchema', () => {
   it('renders a script tag with application/ld+json type', () => {
     const { container } = render(<SoftwareApplicationSchema />);
-    const scriptTag = container.querySelector('script[type="application/ld+json"]');
+    const scriptTag = container.querySelector(
+      'script[type="application/ld+json"]',
+    );
 
     expect(scriptTag).toBeInTheDocument();
   });
 
   it('contains valid JSON-LD structure', () => {
     const { container } = render(<SoftwareApplicationSchema />);
-    const scriptTag = container.querySelector('script[type="application/ld+json"]');
+    const scriptTag = container.querySelector(
+      'script[type="application/ld+json"]',
+    );
     const jsonContent = scriptTag?.innerHTML;
 
     expect(() => JSON.parse(jsonContent || '')).not.toThrow();
@@ -23,7 +27,9 @@ describe('SoftwareApplicationSchema', () => {
 
   it('contains correct application metadata', () => {
     const { container } = render(<SoftwareApplicationSchema />);
-    const scriptTag = container.querySelector('script[type="application/ld+json"]');
+    const scriptTag = container.querySelector(
+      'script[type="application/ld+json"]',
+    );
     const schema = JSON.parse(scriptTag?.innerHTML || '');
 
     expect(schema.name).toBe('The Daisy');
@@ -35,7 +41,9 @@ describe('SoftwareApplicationSchema', () => {
 
   it('contains all 6 subscription plan offers', () => {
     const { container } = render(<SoftwareApplicationSchema />);
-    const scriptTag = container.querySelector('script[type="application/ld+json"]');
+    const scriptTag = container.querySelector(
+      'script[type="application/ld+json"]',
+    );
     const schema = JSON.parse(scriptTag?.innerHTML || '');
 
     expect(schema.offers).toBeDefined();
@@ -50,7 +58,9 @@ describe('SoftwareApplicationSchema', () => {
 
     beforeEach(() => {
       const { container } = render(<SoftwareApplicationSchema />);
-      const scriptTag = container.querySelector('script[type="application/ld+json"]');
+      const scriptTag = container.querySelector(
+        'script[type="application/ld+json"]',
+      );
       schema = JSON.parse(scriptTag?.innerHTML || '');
       offers = (schema.offers as Record<string, unknown>).offers as Array<
         Record<string, unknown>
@@ -59,18 +69,20 @@ describe('SoftwareApplicationSchema', () => {
 
     it('contains Starter Plan with correct pricing (Free)', () => {
       const starterPlan = offers.find((o) =>
-        (o.name as string).includes('Starter')
+        (o.name as string).includes('Starter'),
       );
 
       expect(starterPlan).toBeDefined();
       expect(starterPlan?.price).toBe('0');
       expect(starterPlan?.priceCurrency).toBe('USD');
-      expect((starterPlan?.description as string)).toContain('First 100 bookings free');
+      expect(starterPlan?.description as string).toContain(
+        'First 100 bookings free',
+      );
     });
 
     it('contains Professional Plan with correct pricing ($50/month)', () => {
       const professionalPlan = offers.find(
-        (o) => o.name === 'Professional Plan'
+        (o) => o.name === 'Professional Plan',
       );
 
       expect(professionalPlan).toBeDefined();
@@ -86,13 +98,13 @@ describe('SoftwareApplicationSchema', () => {
 
     it('contains Elite Plan with correct pricing ($100/month)', () => {
       const elitePlan = offers.find((o) =>
-        (o.name as string).includes('Elite')
+        (o.name as string).includes('Elite'),
       );
 
       expect(elitePlan).toBeDefined();
       expect(elitePlan?.price).toBe('100');
-      expect((elitePlan?.description as string)).toContain('2 workspaces');
-      expect((elitePlan?.description as string)).toContain('2 countries');
+      expect(elitePlan?.description as string).toContain('2 workspaces');
+      expect(elitePlan?.description as string).toContain('2 countries');
     });
   });
 
@@ -102,7 +114,9 @@ describe('SoftwareApplicationSchema', () => {
 
     beforeEach(() => {
       const { container } = render(<SoftwareApplicationSchema />);
-      const scriptTag = container.querySelector('script[type="application/ld+json"]');
+      const scriptTag = container.querySelector(
+        'script[type="application/ld+json"]',
+      );
       schema = JSON.parse(scriptTag?.innerHTML || '');
       offers = (schema.offers as Record<string, unknown>).offers as Array<
         Record<string, unknown>
@@ -111,24 +125,24 @@ describe('SoftwareApplicationSchema', () => {
 
     it('contains Basic Business Plan with correct pricing ($50/month)', () => {
       const basicPlan = offers.find((o) =>
-        (o.name as string).includes('Basic')
+        (o.name as string).includes('Basic'),
       );
 
       expect(basicPlan).toBeDefined();
       expect(basicPlan?.price).toBe('50');
-      expect((basicPlan?.description as string)).toContain('5 users/calendars');
-      expect((basicPlan?.description as string)).toContain('14-day trial');
+      expect(basicPlan?.description as string).toContain('5 users/calendars');
+      expect(basicPlan?.description as string).toContain('14-day trial');
     });
 
     it('contains Growth Business Plan with correct pricing ($150/month)', () => {
       const growthPlan = offers.find((o) =>
-        (o.name as string).includes('Growth')
+        (o.name as string).includes('Growth'),
       );
 
       expect(growthPlan).toBeDefined();
       expect(growthPlan?.price).toBe('150');
-      expect((growthPlan?.description as string)).toContain('10 users/calendars');
-      expect((growthPlan?.description as string)).toContain('2 workspaces');
+      expect(growthPlan?.description as string).toContain('10 users/calendars');
+      expect(growthPlan?.description as string).toContain('2 workspaces');
     });
 
     it('contains Business Plan with correct pricing ($250/month)', () => {
@@ -136,14 +150,18 @@ describe('SoftwareApplicationSchema', () => {
 
       expect(businessPlan).toBeDefined();
       expect(businessPlan?.price).toBe('250');
-      expect((businessPlan?.description as string)).toContain('15 users/calendars');
-      expect((businessPlan?.description as string)).toContain('4 workspaces');
+      expect(businessPlan?.description as string).toContain(
+        '15 users/calendars',
+      );
+      expect(businessPlan?.description as string).toContain('4 workspaces');
     });
   });
 
   it('contains required feature list', () => {
     const { container } = render(<SoftwareApplicationSchema />);
-    const scriptTag = container.querySelector('script[type="application/ld+json"]');
+    const scriptTag = container.querySelector(
+      'script[type="application/ld+json"]',
+    );
     const schema = JSON.parse(scriptTag?.innerHTML || '');
 
     expect(schema.featureList).toBeDefined();
@@ -155,7 +173,9 @@ describe('SoftwareApplicationSchema', () => {
 
   it('contains correct price range in aggregate offer', () => {
     const { container } = render(<SoftwareApplicationSchema />);
-    const scriptTag = container.querySelector('script[type="application/ld+json"]');
+    const scriptTag = container.querySelector(
+      'script[type="application/ld+json"]',
+    );
     const schema = JSON.parse(scriptTag?.innerHTML || '');
 
     expect(schema.offers.lowPrice).toBe('0');
@@ -165,7 +185,9 @@ describe('SoftwareApplicationSchema', () => {
 
   it('contains audience information', () => {
     const { container } = render(<SoftwareApplicationSchema />);
-    const scriptTag = container.querySelector('script[type="application/ld+json"]');
+    const scriptTag = container.querySelector(
+      'script[type="application/ld+json"]',
+    );
     const schema = JSON.parse(scriptTag?.innerHTML || '');
 
     expect(schema.audience).toBeDefined();
@@ -176,7 +198,9 @@ describe('SoftwareApplicationSchema', () => {
 
   it('matches snapshot for JSON-LD schema structure', () => {
     const { container } = render(<SoftwareApplicationSchema />);
-    const scriptTag = container.querySelector('script[type="application/ld+json"]');
+    const scriptTag = container.querySelector(
+      'script[type="application/ld+json"]',
+    );
     const schema = JSON.parse(scriptTag?.innerHTML || '');
 
     expect(schema).toMatchSnapshot();
