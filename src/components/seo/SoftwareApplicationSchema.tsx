@@ -13,41 +13,113 @@ export function SoftwareApplicationSchema() {
       '@type': 'AggregateOffer',
       priceCurrency: 'USD',
       lowPrice: '0',
-      highPrice: '99',
-      offerCount: '3',
+      highPrice: '250',
+      offerCount: '6',
       offers: [
+        // Professional Plans (for freelancers/solo professionals)
         {
           '@type': 'Offer',
-          name: 'Free Plan',
+          name: 'Starter Plan (Professional)',
           price: '0',
           priceCurrency: 'USD',
-          description: 'Get started with essential booking features',
+          description:
+            'Free plan for professionals starting out. First 100 bookings free, 1 user/calendar, 1 workspace, themed profile site, schedule management, POS, client management, WhatsApp notifications, and basic support.',
         },
         {
           '@type': 'Offer',
           name: 'Professional Plan',
-          price: '49',
+          price: '50',
           priceCurrency: 'USD',
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
-            price: '49',
+            price: '50',
             priceCurrency: 'USD',
             billingDuration: 'P1M',
+            referenceQuantity: {
+              '@type': 'QuantitativeValue',
+              value: '500',
+              unitText: 'annual',
+            },
           },
-          description: 'For growing beauty professionals',
+          description:
+            'For solo experienced professionals. 1 user/calendar, 1 workspace, unlimited bookings, online payments, automated reminders, subscription packages, marketplace visibility, advanced analytics, free data migration, and priority support.',
+        },
+        {
+          '@type': 'Offer',
+          name: 'Elite Plan (Professional)',
+          price: '100',
+          priceCurrency: 'USD',
+          priceSpecification: {
+            '@type': 'UnitPriceSpecification',
+            price: '100',
+            priceCurrency: 'USD',
+            billingDuration: 'P1M',
+            referenceQuantity: {
+              '@type': 'QuantitativeValue',
+              value: '1000',
+              unitText: 'annual',
+            },
+          },
+          description:
+            'For solo experienced professionals needing multi-location support. 1 user/calendar, 2 workspaces, 2 countries, unlimited bookings, online payments, automated reminders, advanced analytics, free data migration, and priority support.',
+        },
+        // Business Plans (for salons/spas with teams)
+        {
+          '@type': 'Offer',
+          name: 'Basic Plan (Business)',
+          price: '50',
+          priceCurrency: 'USD',
+          priceSpecification: {
+            '@type': 'UnitPriceSpecification',
+            price: '50',
+            priceCurrency: 'USD',
+            billingDuration: 'P1M',
+            referenceQuantity: {
+              '@type': 'QuantitativeValue',
+              value: '42',
+              unitText: 'monthly when billed annually',
+            },
+          },
+          description:
+            'For businesses starting out. 14-day trial, 5 users/calendars, 1 workspace, unlimited bookings, POS, client management, WhatsApp notifications, themed profile site, and basic support.',
+        },
+        {
+          '@type': 'Offer',
+          name: 'Growth Plan (Business)',
+          price: '150',
+          priceCurrency: 'USD',
+          priceSpecification: {
+            '@type': 'UnitPriceSpecification',
+            price: '150',
+            priceCurrency: 'USD',
+            billingDuration: 'P1M',
+            referenceQuantity: {
+              '@type': 'QuantitativeValue',
+              value: '128',
+              unitText: 'monthly when billed annually',
+            },
+          },
+          description:
+            'For growing businesses. 14-day trial, 10 users/calendars, 2 workspaces, unlimited bookings, online payments, automated reminders, subscription packages, marketplace visibility, and priority support.',
         },
         {
           '@type': 'Offer',
           name: 'Business Plan',
-          price: '99',
+          price: '250',
           priceCurrency: 'USD',
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
-            price: '99',
+            price: '250',
             priceCurrency: 'USD',
             billingDuration: 'P1M',
+            referenceQuantity: {
+              '@type': 'QuantitativeValue',
+              value: '208',
+              unitText: 'monthly when billed annually',
+            },
           },
-          description: 'For salons and spas with multiple staff',
+          description:
+            'For established businesses with multiple locations. 14-day trial, 15 users/calendars, 4 workspaces, unlimited bookings, advanced analytics, free data migration, free assisted onboarding, and all Growth plan features.',
         },
       ],
     },
