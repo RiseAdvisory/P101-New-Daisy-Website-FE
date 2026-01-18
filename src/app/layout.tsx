@@ -6,6 +6,7 @@ import { Footer } from '@/components/footer/Footer';
 import ClientSideEffect from '@/helpers/ClientSideEffect';
 import { MyUserTypeProvider } from './MyContext';
 import { OrganizationSchema } from '@/components/seo/OrganizationSchema';
+import { SoftwareApplicationSchema } from '@/components/seo/SoftwareApplicationSchema';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -78,6 +79,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <OrganizationSchema />
+        <SoftwareApplicationSchema />
       </head>
       <body
         className={`${openSans.variable} ${montserrat.variable} ${inter.variable} ${cairo.variable} font-openSans rtl:font-cairo`}
