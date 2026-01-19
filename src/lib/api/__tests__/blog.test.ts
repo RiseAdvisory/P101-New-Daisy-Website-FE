@@ -11,7 +11,7 @@ import {
 jest.mock('axios');
 const mockedAxios = axios as jest.Mocked<typeof axios>;
 
-// Mock base URL
+// Mock axios config exports
 jest.mock('@/helpers/axiosConfig', () => ({
   baseURL: 'https://api.test.com',
   baseURLImage: 'https://cdn.test.com',
