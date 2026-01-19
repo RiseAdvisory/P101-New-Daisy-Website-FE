@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next';
+import { getAllBlogSlugs } from '@/lib/api/blog';
 
 const BASE_URL = 'https://jointhedaisy.com';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const currentDate = new Date().toISOString();
 
   // Main pages
@@ -145,11 +146,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // Dynamically fetch blog posts
+  const blogSlugs = await getAllBlogSlugs();
+  const blogPages = blogSlugs.map((item) => ({
+    url: `${BASE_URL}/resources/blog/${item.userType}/${item.slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  }));
+
   return [
     ...mainPages,
     ...featurePages,
     ...infoPages,
     ...resourcePages,
     ...legalPages,
+    ...blogPages,
   ];
 }

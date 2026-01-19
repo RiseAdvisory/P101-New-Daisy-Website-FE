@@ -26,11 +26,87 @@ export interface StrapiListResponse<T> {
 }
 
 export interface BlogPostAttributes {
-  aboutPosts: string;
-  title?: string;
-  content?: string;
-  createdAt?: string;
-  updatedAt?: string;
+  // Content fields
+  title: string;
+  slug: string;
+  description: string;
+  aboutPosts?: string; // Legacy field
+  content?: string; // Legacy field
+
+  // SEO fields
+  metaTitle?: string;
+  metaDescription?: string;
+
+  // Media fields
+  picture?: {
+    data: {
+      attributes: {
+        url: string;
+        alternativeText?: string;
+        formats?: {
+          thumbnail?: StrapiImageFormat;
+          small?: StrapiImageFormat;
+          medium?: StrapiImageFormat;
+          large?: StrapiImageFormat;
+        };
+      };
+    };
+  };
+  ogImage?: {
+    data: {
+      attributes: {
+        url: string;
+      };
+    };
+  };
+
+  // Author information
+  user: {
+    data: {
+      id: number;
+      attributes: {
+        name: string;
+        jobTitle: string;
+        picture: {
+          data: {
+            attributes: {
+              url: string;
+            };
+          };
+        };
+      };
+    };
+  };
+
+  // Category
+  category: {
+    data: {
+      id: number;
+      attributes: {
+        name: string;
+      };
+    };
+  };
+
+  // Legacy fields
+  tags?: {
+    wellness?: string;
+    hair?: string;
+  };
+
+  // Timestamps
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+
+  // Internationalization
+  locale: string;
+  localizations?: {
+    data: Array<{
+      id: number;
+      attributes: BlogPostAttributes;
+    }>;
+  };
 }
 
 export interface QAItemAttributes {
