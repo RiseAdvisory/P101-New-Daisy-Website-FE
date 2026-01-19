@@ -68,18 +68,24 @@ export const BusinessHero = ({
               src={leaf}
               alt="leaf"
               width={300}
+              height={300}
+              priority
             />
             <Image
               className="absolute top-[40px] md:top-[60px] right-[30px] md:right-[50px] w-[80px] md:w-[100px]"
               src={stars}
-              alt="start"
+              alt="stars"
               width={100}
+              height={100}
+              priority
             />
             <Image
               className="absolute bottom-0 right-[50%] translate-x-1/2 w-1/2 max-w-[300px]"
               src={phone}
-              alt="start"
+              alt="phone"
               width={300}
+              height={500}
+              priority
             />
           </div>
         </div>

@@ -60,7 +60,7 @@ const LockerContainer = ({ listInfo }: { listInfo: any }) => {
         <div className={styles.locker__container}>
           <div className="w-[600px] h-[600px] bg-primaryBtn rounded-[16px] relative ml-auto rtl:ml-0 rtl:mr-auto overflow-hidden">
             {listInfo &&
-              sortList.map((el: any) => {
+              sortList.map((el: any, index: number) => {
                 return (
                   <LockerImageItem
                     key={el?.attributes.infoScroll.objectId}
@@ -69,6 +69,7 @@ const LockerContainer = ({ listInfo }: { listInfo: any }) => {
                     }
                     imageUrl={el.url}
                     item={el}
+                    priority={index === 0}
                   />
                 );
               })}

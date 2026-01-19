@@ -7,6 +7,8 @@ import ClientSideEffect from '@/helpers/ClientSideEffect';
 import { MyUserTypeProvider } from './MyContext';
 import { OrganizationSchema } from '@/components/seo/OrganizationSchema';
 import { SoftwareApplicationSchema } from '@/components/seo/SoftwareApplicationSchema';
+import { WebVitals } from '@/components/performance/WebVitals';
+import { ServiceWorkerRegistration } from '@/components/performance/ServiceWorkerRegistration';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -75,9 +77,33 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Get Strapi URL for preconnect hints
+  const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_URL || '';
+  const strapiImageUrl = process.env.NEXT_PUBLIC_STRAPI_URL_IMAGE || '';
+
   return (
     <html lang="en">
       <head>
+        {/* Preconnect to critical origins for faster resource loading */}
+        {strapiUrl && (
+          <>
+            <link rel="preconnect" href={strapiUrl} />
+            <link rel="dns-prefetch" href={strapiUrl} />
+          </>
+        )}
+        {strapiImageUrl && strapiImageUrl !== strapiUrl && (
+          <>
+            <link rel="preconnect" href={strapiImageUrl} />
+            <link rel="dns-prefetch" href={strapiImageUrl} />
+          </>
+        )}
+        {/* Preconnect to Google Fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <OrganizationSchema />
         <SoftwareApplicationSchema />
       </head>
@@ -85,6 +111,8 @@ export default function RootLayout({
         className={`${openSans.variable} ${montserrat.variable} ${inter.variable} ${cairo.variable} font-openSans rtl:font-cairo`}
         dir="ltr"
       >
+        <WebVitals />
+        <ServiceWorkerRegistration />
         <MyUserTypeProvider>{children}</MyUserTypeProvider>
       </body>
     </html>

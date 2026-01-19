@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { baseURLImage } from '@/helpers/axiosConfig';
 
-const LockerImageItem = ({ isActive, imageUrl, item }: any) => {
+const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) => {
   const mainImg =
     item?.attributes?.mainImage?.data?.[0]?.attributes?.formats?.large?.url;
   const firstBg = item?.attributes?.firstBg?.data?.[0]?.attributes?.url;
@@ -32,6 +32,7 @@ const LockerImageItem = ({ isActive, imageUrl, item }: any) => {
         alt="leaf"
         width={300}
         height={500}
+        priority={priority}
       />
       {secondBg && (
         <Image
@@ -62,6 +63,7 @@ const LockerImageItem = ({ isActive, imageUrl, item }: any) => {
           alt="phone"
           width={1000}
           height={1000}
+          priority={priority}
         />
       )}
     </>
