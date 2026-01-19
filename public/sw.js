@@ -70,10 +70,37 @@ function isStaticAsset(url) {
 }
 
 // Helper function to check if a request is for an API call
+// Uses pattern matching to identify API requests without hardcoding domains
 function isApiRequest(url) {
-  return url.pathname.startsWith('/api') ||
-         url.hostname.includes('strapiapp.com') ||
-         url.hostname.includes('trythedaisy.com');
+  // Local API routes
+  if (url.pathname.startsWith('/api')) {
+    return true;
+  }
+
+  // Cross-origin requests to external APIs
+  // Check if it's a different origin (external API call)
+  if (url.origin !== self.location.origin) {
+    // Common API path patterns
+    const apiPatterns = [
+      '/api/',
+      '/v1/',
+      '/v2/',
+      '/graphql',
+      '/rest/',
+    ];
+
+    // Check if URL contains common API patterns
+    if (apiPatterns.some((pattern) => url.pathname.includes(pattern))) {
+      return true;
+    }
+
+    // Check for Strapi-specific patterns (uploads, content-types)
+    if (url.pathname.includes('/uploads/') || url.pathname.includes('/api/')) {
+      return true;
+    }
+  }
+
+  return false;
 }
 
 // Helper function to check if a request is a navigation request

@@ -4,7 +4,12 @@ import {
   getCacheKey,
   clearCache,
   clearLocaleCache,
+  isStale,
+  isRevalidating,
+  markRevalidating,
+  getCacheStats,
   CACHE_KEYS,
+  CACHE_DURATIONS,
 } from '../apiCache';
 
 describe('apiCache', () => {
@@ -211,6 +216,127 @@ describe('apiCache', () => {
       expect(keys).toContain('HEADER_LANG');
       expect(keys).toContain('FOOTER_NAV');
       expect(keys).toContain('FOOTER_SOCIAL');
+    });
+  });
+
+  describe('isStale (SWR pattern)', () => {
+    it('should return true for non-existent keys', () => {
+      expect(isStale('non-existent-key')).toBe(true);
+    });
+
+    it('should return false for fresh cache entries', () => {
+      jest.useFakeTimers();
+      const now = Date.now();
+      jest.setSystemTime(now);
+
+      setCache('fresh-key', 'data', 5 * 60 * 1000); // 5 minute duration
+
+      // Immediately after setting, should not be stale
+      expect(isStale('fresh-key')).toBe(false);
+    });
+
+    it('should return true when cache is past stale threshold', () => {
+      jest.useFakeTimers();
+      const now = Date.now();
+      jest.setSystemTime(now);
+
+      // Set cache with 5 minute duration (stale buffer is 1 minute)
+      setCache('stale-test', 'data', 5 * 60 * 1000);
+
+      // After 4 minutes, should be stale (5min - 1min buffer = 4min stale threshold)
+      jest.setSystemTime(now + 4 * 60 * 1000 + 1);
+      expect(isStale('stale-test')).toBe(true);
+
+      // But data should still be retrievable (not expired yet)
+      expect(getCached('stale-test')).toBe('data');
+    });
+  });
+
+  describe('isRevalidating and markRevalidating', () => {
+    it('should return false for keys not being revalidated', () => {
+      expect(isRevalidating('some-key')).toBe(false);
+    });
+
+    it('should track revalidation status correctly', () => {
+      const key = 'revalidating-key';
+
+      expect(isRevalidating(key)).toBe(false);
+
+      markRevalidating(key, true);
+      expect(isRevalidating(key)).toBe(true);
+
+      markRevalidating(key, false);
+      expect(isRevalidating(key)).toBe(false);
+    });
+
+    it('should clear revalidation status when cache is set', () => {
+      const key = 'auto-clear-key';
+
+      markRevalidating(key, true);
+      expect(isRevalidating(key)).toBe(true);
+
+      // Setting cache should clear the revalidation flag
+      setCache(key, 'new-data');
+      expect(isRevalidating(key)).toBe(false);
+    });
+  });
+
+  describe('getCacheStats', () => {
+    it('should return correct stats for empty cache', () => {
+      const stats = getCacheStats();
+      expect(stats.size).toBe(0);
+      expect(stats.keys).toEqual([]);
+    });
+
+    it('should return correct stats for populated cache', () => {
+      setCache('key1', 'value1');
+      setCache('key2', 'value2');
+      setCache('key3', 'value3');
+
+      const stats = getCacheStats();
+      expect(stats.size).toBe(3);
+      expect(stats.keys).toContain('key1');
+      expect(stats.keys).toContain('key2');
+      expect(stats.keys).toContain('key3');
+    });
+  });
+
+  describe('CACHE_DURATIONS', () => {
+    it('should have correct duration values', () => {
+      expect(CACHE_DURATIONS.DEFAULT).toBe(5 * 60 * 1000); // 5 minutes
+      expect(CACHE_DURATIONS.STATIC).toBe(30 * 60 * 1000); // 30 minutes
+      expect(CACHE_DURATIONS.SHORT).toBe(2 * 60 * 1000); // 2 minutes
+    });
+  });
+
+  describe('static content cache duration', () => {
+    it('should use longer duration for header cache keys', () => {
+      jest.useFakeTimers();
+      const now = Date.now();
+      jest.setSystemTime(now);
+
+      // Header keys should use 30 minute duration
+      setCache(`${CACHE_KEYS.HEADER}:en`, 'header data');
+
+      // Should still be valid after 25 minutes
+      jest.setSystemTime(now + 25 * 60 * 1000);
+      expect(getCached(`${CACHE_KEYS.HEADER}:en`)).toBe('header data');
+
+      // Should be expired after 30+ minutes
+      jest.setSystemTime(now + 30 * 60 * 1000 + 1);
+      expect(getCached(`${CACHE_KEYS.HEADER}:en`)).toBeNull();
+    });
+
+    it('should use longer duration for footer cache keys', () => {
+      jest.useFakeTimers();
+      const now = Date.now();
+      jest.setSystemTime(now);
+
+      setCache(`${CACHE_KEYS.FOOTER_NAV}:en`, 'footer nav data');
+
+      // Should still be valid after 25 minutes
+      jest.setSystemTime(now + 25 * 60 * 1000);
+      expect(getCached(`${CACHE_KEYS.FOOTER_NAV}:en`)).toBe('footer nav data');
     });
   });
 
