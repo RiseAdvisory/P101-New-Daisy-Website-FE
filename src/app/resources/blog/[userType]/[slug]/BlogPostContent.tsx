@@ -4,7 +4,8 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { BlogPost, UserType, getRelatedBlogPosts } from '@/lib/api/blog';
 import { baseURLImage } from '@/helpers/axiosConfig';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
+import DOMPurify from 'isomorphic-dompurify';
 
 interface BlogPostContentProps {
   post: BlogPost;
@@ -19,7 +20,13 @@ export default function BlogPostContent({
   const [relatedPosts, setRelatedPosts] = useState<BlogPost[]>([]);
   const { attributes } = post;
 
-  // Fetch related posts
+  // Sanitize HTML content to prevent XSS attacks
+  const sanitizedDescription = useMemo(
+    () => DOMPurify.sanitize(attributes.description),
+    [attributes.description]
+  );
+
+  // Fetch related posts with error handling
   useEffect(() => {
     if (attributes.category?.data?.id) {
       getRelatedBlogPosts(
@@ -27,7 +34,13 @@ export default function BlogPostContent({
         attributes.category.data.id,
         post.id,
         attributes.locale
-      ).then(setRelatedPosts);
+      )
+        .then(setRelatedPosts)
+        .catch((error) => {
+          console.error('Failed to fetch related posts:', error);
+          // Fail silently - related posts are optional
+          setRelatedPosts([]);
+        });
     }
   }, [post.id, userType, attributes.category, attributes.locale]);
 
@@ -120,7 +133,7 @@ export default function BlogPostContent({
         <div className="prose prose-lg max-w-none">
           <div
             className="text-[#455150] leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: attributes.description }}
+            dangerouslySetInnerHTML={{ __html: sanitizedDescription }}
           />
         </div>
 
