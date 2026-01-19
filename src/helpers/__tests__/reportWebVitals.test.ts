@@ -34,10 +34,10 @@ describe('reportWebVitals', () => {
     mockOnTTFB.mockClear();
     mockOnINP.mockClear();
 
-    // Re-import to get fresh module
-    const module = await import('../reportWebVitals');
-    reportWebVitals = module.reportWebVitals;
-    logWebVitals = module.logWebVitals;
+    // Re-import to get fresh instance
+    const vitalsModule = await import('../reportWebVitals');
+    reportWebVitals = vitalsModule.reportWebVitals;
+    logWebVitals = vitalsModule.logWebVitals;
   });
 
   afterEach(() => {
