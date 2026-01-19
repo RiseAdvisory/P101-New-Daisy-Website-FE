@@ -29,7 +29,7 @@ export const OurMissing = ({
           {heroAbout?.missingTitle}
         </h1>
         <p className="text-center text-[#455150] mt-3 ltr:font-montserrat text-base font-normal md:px-[440px]">
-          {heroAbout?.missinngDescription}
+          {heroAbout?.missingDescription}
         </p>
       </div>
       <Separator className="bg-[#E8E9E9] mt-12 md:hidden" />

@@ -58,7 +58,13 @@ export const CardPosts = ({
                     setHandleId(item.id);
                     handlePost(item.attributes);
                     setMarkdownPost(item.attributes.aboutPosts);
-                    router.push('/resources/legal');
+                    // Navigate to blog post using slug
+                    if (item.attributes.slug) {
+                      router.push(`/resources/blog/${typePath}/${item.attributes.slug}`);
+                    } else {
+                      // Fallback to old route if slug doesn't exist yet
+                      router.push('/resources/legal');
+                    }
                   }
                 }}
                 key={index}

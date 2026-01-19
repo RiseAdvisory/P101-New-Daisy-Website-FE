@@ -55,7 +55,18 @@ export const SimiliarTopick = ({ titleSimilar }: { titleSimilar: string }) => {
               <li
                 onClick={() => {
                   handlePost(item.attributes);
-                  router.push('/resources/legal');
+                  // Determine userType from currentPage
+                  let userType = 'customer';
+                  if (currentPage === '/business') userType = 'business';
+                  if (currentPage === '/professional') userType = 'professional';
+
+                  // Navigate to blog post using slug
+                  if (item.attributes.slug) {
+                    router.push(`/resources/blog/${userType}/${item.attributes.slug}`);
+                  } else {
+                    // Fallback to old route if slug doesn't exist yet
+                    router.push('/resources/legal');
+                  }
                 }}
                 key={index}
                 className={`w-full mx-auto flex flex-col items-center text-start rounded-[12px] bg-white border overflow-hidden hover:shadow-2xl`}
