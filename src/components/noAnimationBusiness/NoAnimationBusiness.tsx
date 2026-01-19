@@ -2,7 +2,7 @@
 import { CheckIcon } from '@/assets/icons/checkIcon/CheckIcon';
 import { Button } from '../ui/button';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { LazyMotionUl, LazyMotionLi } from '../performance/LazyMotion';
 import { PlayMarketButton } from '../buttonApp/PlayMarketButton';
 import { AppStoreButton } from '../buttonApp/AppStoreButton';
 
@@ -109,7 +109,7 @@ export const NoScrollingAnimationBusiness = ({
         {description}
       </p>
       {list ? (
-        <motion.ul
+        <LazyMotionUl
           variants={container}
           initial="hidden"
           whileInView="visible"
@@ -118,7 +118,7 @@ export const NoScrollingAnimationBusiness = ({
         >
           {list.map((listItem: string, index: number) => {
             return (
-              <motion.li key={index} variants={item}>
+              <LazyMotionLi key={index} variants={item}>
                 <Button
                   variant="navigation"
                   className="w-full h-auto !min-h-10 flex items-start justify-start mt-4 font-semibold text-base text-[#D5D9D9] text-start"
@@ -128,10 +128,10 @@ export const NoScrollingAnimationBusiness = ({
                     {listItem}
                   </span>
                 </Button>
-              </motion.li>
+              </LazyMotionLi>
             );
           })}
-        </motion.ul>
+        </LazyMotionUl>
       ) : (
         <div className="grid mt-4  w-full">
           <>

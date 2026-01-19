@@ -66,6 +66,7 @@ export const HeroPage = ({
         className="mx-auto w-[60px] h-[60px] "
         width={60}
         height={60}
+        priority
       />
       {title !== '' && (
         <p className="mt-11 font-semibold text-base text-[#F2DAD4] uppercase">

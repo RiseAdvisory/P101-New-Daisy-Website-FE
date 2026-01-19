@@ -2,7 +2,7 @@
 import { CheckIcon } from '@/assets/icons/checkIcon/CheckIcon';
 import { Button } from '../ui/button';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { LazyMotionDiv, LazyMotionUl, LazyMotionLi } from '../performance/LazyMotion';
 
 export const ScrollingAnimationBusiness = ({
   image,
@@ -45,16 +45,14 @@ export const ScrollingAnimationBusiness = ({
     <div className="pt-16">
       <div className="w-full relative bg-primaryBtn overflow-hidden rounded-[9px] h-[350px]">
         <div className={className} style={{ backgroundSize: '50%' }}></div>
-        <motion.div
+        <LazyMotionDiv
           initial={initialMotion}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          // viewport={{ once: true }}
-          //   animate={{ y: 0 }}
           whileInView={whileMotion}
           className={classMotion}
         >
           <Image src={image!} alt="aaa" className={imageClassName} />
-        </motion.div>
+        </LazyMotionDiv>
       </div>
       <h5 className="text-[#F2DAD4] pt-8 text-base leading-6">FEATURES</h5>
       <h2 className="pt-2 text-white leading-10 text-3xl">{title}</h2>
@@ -62,7 +60,7 @@ export const ScrollingAnimationBusiness = ({
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor.
       </p>
-      <motion.ul
+      <LazyMotionUl
         variants={container}
         initial="hidden"
         animate="visible"
@@ -70,7 +68,7 @@ export const ScrollingAnimationBusiness = ({
       >
         {Array.from({ length: 3 }).map((_, index) => {
           return (
-            <motion.li key={index} variants={item}>
+            <LazyMotionLi key={index} variants={item}>
               <Button
                 variant="navigation"
                 className="w-full justify-start mt-4 font-semibold text-base text-[#D5D9D9]"
@@ -78,10 +76,10 @@ export const ScrollingAnimationBusiness = ({
                 <CheckIcon className="mr-2" />
                 Lorem ipsum dolor
               </Button>
-            </motion.li>
+            </LazyMotionLi>
           );
         })}
-      </motion.ul>
+      </LazyMotionUl>
     </div>
   );
 };

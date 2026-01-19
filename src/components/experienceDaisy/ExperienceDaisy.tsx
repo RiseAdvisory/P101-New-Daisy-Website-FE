@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { LazyMotionDiv } from '../performance/LazyMotion';
 import phone from '../../assets/images/PHONE.png';
 import Separator from '../separator/Separator';
 import { PlayMarketButton } from '../buttonApp/PlayMarketButton';
@@ -59,11 +59,10 @@ export const ExperienceDaisy = () => {
             width={100}
           />
 
-          <motion.div
+          <LazyMotionDiv
             initial={{ y: 200, opacity: 0 }}
             transition={{ duration: 0.5, stiffness: 200 }}
             viewport={{ once: true }}
-            //   animate={{ y: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
           >
             <div className="h-[326px] w-[212px] ">
@@ -75,7 +74,7 @@ export const ExperienceDaisy = () => {
                 className="pt-[65px] relative "
               />
             </div>
-          </motion.div>
+          </LazyMotionDiv>
         </div>
 
         <Image

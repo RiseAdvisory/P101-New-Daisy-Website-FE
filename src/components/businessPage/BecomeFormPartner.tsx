@@ -1,7 +1,26 @@
+'use client';
 import { useEffect, useState } from 'react';
-import { ProfileForm } from '../formBusiness/FormBusiness';
+import dynamic from 'next/dynamic';
 import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
+import { Skeleton } from '@/components/ui/skeleton';
+
+// Lazy load the form component to reduce initial bundle size
+const ProfileForm = dynamic(
+  () =>
+    import('../formBusiness/FormBusiness').then((mod) => mod.ProfileForm),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="bg-white p-6 rounded-xl mt-[48px] md:mx-auto md:w-[860px]">
+        <Skeleton className="h-12 w-full mb-4" />
+        <Skeleton className="h-12 w-full mb-4" />
+        <Skeleton className="h-12 w-full mb-4" />
+        <Skeleton className="h-12 w-full" />
+      </div>
+    ),
+  },
+);
 
 export const BecomeFormPartner = () => {
   const [titleFormBecome, setTitleFormBecome] = useState<any>();

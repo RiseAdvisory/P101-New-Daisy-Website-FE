@@ -1,7 +1,25 @@
-import { FormContacts } from './FormContacts';
+'use client';
+import dynamic from 'next/dynamic';
 import { MessageIcons } from '../../assets/icons/messageIcons/MessageIcons';
 import { PhoneIcon } from '../../assets/icons/phoneIcon/PhoneIcon';
 import { SupportIcon } from '../../assets/icons/supportIcon/SupportIcon';
+import { Skeleton } from '@/components/ui/skeleton';
+
+// Lazy load the form component to reduce initial bundle size
+const FormContacts = dynamic(
+  () => import('./FormContacts').then((mod) => mod.FormContacts),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="bg-white p-6 rounded-xl md:mx-auto md:w-[860px] mx-4 border border-[#E8E9E9] md:-translate-y-[235px] -translate-y-[299px]">
+        <Skeleton className="h-12 w-full mb-4" />
+        <Skeleton className="h-12 w-full mb-4" />
+        <Skeleton className="h-32 w-full mb-4" />
+        <Skeleton className="h-12 w-full" />
+      </div>
+    ),
+  },
+);
 
 export const SupportSection = ({ contacts = [] }: { contacts: any }) => {
   return (
