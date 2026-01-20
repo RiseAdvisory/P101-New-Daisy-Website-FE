@@ -93,7 +93,7 @@ export const DropdownResources = ({
           />
         </div>
         <div className="flex-1">
-          <h2 className="font-semibold text-2xl text-primary rtl:text-end">
+          <h2 className="font-semibold text-2xl text-primary">
             {listResources?.title}
           </h2>
           <Separator className="my-6 bg-[#E8E9E9]" />
@@ -111,10 +111,10 @@ export const DropdownResources = ({
                     onClick={() => setOpenBlog(!openBlog)}
                     className="block ltr:pl-4 rtl:pr-4"
                   >
-                    <h3 className="text-base ltr:font-montserrat font-semibold rtl:font-cairo rtl:text-end">
+                    <h3 className="text-base ltr:font-montserrat font-semibold rtl:font-cairo">
                       {item.title}
                     </h3>
-                    <p className="text-base ltr:font-montserrat text-primaryBtn rtl:font-cairo rtl:text-end">
+                    <p className="text-base ltr:font-montserrat text-primaryBtn rtl:font-cairo">
                       {item.description}
                     </p>
                   </Link>
