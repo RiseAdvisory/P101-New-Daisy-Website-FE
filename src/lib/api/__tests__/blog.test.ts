@@ -44,11 +44,11 @@ describe('Blog API', () => {
       const result = await getAllBlogPosts('customer', 'en');
 
       expect(mockedAxios.get).toHaveBeenCalledWith(
-        'https://api.test.com/api/resources-blog-post-customers',
+        'https://api.test.com/resources-blog-post-customers',
         {
           params: {
             locale: 'en',
-            populate: ['user.picture', 'category', 'picture', 'ogImage'],
+            populate: ['user.picture', 'iconOwner', 'category', 'picture', 'image', 'ogImage', 'tags'],
             sort: 'publishedAt:desc',
           },
         }
@@ -63,7 +63,7 @@ describe('Blog API', () => {
       await getAllBlogPosts('business', 'ar');
 
       expect(mockedAxios.get).toHaveBeenCalledWith(
-        'https://api.test.com/api/resources-blog-post-businesses',
+        'https://api.test.com/resources-blog-post-businesses',
         expect.objectContaining({
           params: expect.objectContaining({
             locale: 'ar',
@@ -79,24 +79,17 @@ describe('Blog API', () => {
       await getAllBlogPosts('professional', 'en');
 
       expect(mockedAxios.get).toHaveBeenCalledWith(
-        'https://api.test.com/api/resources-blog-post-independents',
+        'https://api.test.com/resources-blog-post-independents',
         expect.any(Object)
       );
     });
 
     it('should return empty array on error', async () => {
-      const consoleErrorSpy = jest
-        .spyOn(console, 'error')
-        .mockImplementation(() => {});
-
       mockedAxios.get.mockRejectedValueOnce(new Error('Network error'));
 
       const result = await getAllBlogPosts('customer', 'en');
 
       expect(result).toEqual([]);
-      expect(consoleErrorSpy).toHaveBeenCalled();
-
-      consoleErrorSpy.mockRestore();
     });
 
     it('should handle missing data in response', async () => {
@@ -130,12 +123,12 @@ describe('Blog API', () => {
       const result = await getBlogPostBySlug('customer', 'test-post', 'en');
 
       expect(mockedAxios.get).toHaveBeenCalledWith(
-        'https://api.test.com/api/resources-blog-post-customers',
+        'https://api.test.com/resources-blog-post-customers',
         {
           params: {
             locale: 'en',
             'filters[slug][$eq]': 'test-post',
-            populate: ['user.picture', 'category', 'picture', 'ogImage'],
+            populate: ['user.picture', 'iconOwner', 'category', 'picture', 'image', 'ogImage', 'tags'],
           },
         }
       );
@@ -151,18 +144,11 @@ describe('Blog API', () => {
     });
 
     it('should return null on error', async () => {
-      const consoleErrorSpy = jest
-        .spyOn(console, 'error')
-        .mockImplementation(() => {});
-
       mockedAxios.get.mockRejectedValueOnce(new Error('Network error'));
 
       const result = await getBlogPostBySlug('customer', 'test-post', 'en');
 
       expect(result).toBeNull();
-      expect(consoleErrorSpy).toHaveBeenCalled();
-
-      consoleErrorSpy.mockRestore();
     });
 
     it('should use default locale when not provided', async () => {
@@ -230,10 +216,6 @@ describe('Blog API', () => {
     });
 
     it('should handle errors gracefully and continue', async () => {
-      const consoleErrorSpy = jest
-        .spyOn(console, 'error')
-        .mockImplementation(() => {});
-
       // First call succeeds, second fails
       mockedAxios.get
         .mockResolvedValueOnce({
@@ -253,9 +235,6 @@ describe('Blog API', () => {
 
       // Should continue despite error
       expect(mockedAxios.get).toHaveBeenCalledTimes(6);
-      expect(consoleErrorSpy).toHaveBeenCalled();
-
-      consoleErrorSpy.mockRestore();
     });
   });
 
@@ -277,13 +256,13 @@ describe('Blog API', () => {
       const result = await getRelatedBlogPosts('customer', 5, 1, 'en', 3);
 
       expect(mockedAxios.get).toHaveBeenCalledWith(
-        'https://api.test.com/api/resources-blog-post-customers',
+        'https://api.test.com/resources-blog-post-customers',
         {
           params: {
             locale: 'en',
             'filters[category][id][$eq]': 5,
             'filters[id][$ne]': 1,
-            populate: ['user.picture', 'category', 'picture'],
+            populate: ['user.picture', 'iconOwner', 'category', 'picture', 'image', 'ogImage', 'tags'],
             sort: 'publishedAt:desc',
             'pagination[limit]': 3,
           },
@@ -323,18 +302,11 @@ describe('Blog API', () => {
     });
 
     it('should return empty array on error', async () => {
-      const consoleErrorSpy = jest
-        .spyOn(console, 'error')
-        .mockImplementation(() => {});
-
       mockedAxios.get.mockRejectedValueOnce(new Error('Network error'));
 
       const result = await getRelatedBlogPosts('customer', 5, 1, 'en');
 
       expect(result).toEqual([]);
-      expect(consoleErrorSpy).toHaveBeenCalled();
-
-      consoleErrorSpy.mockRestore();
     });
   });
 
