@@ -84,20 +84,20 @@ export const DropdownResources = ({
       ref={dropdownRef}
       className="w-screen max-w-screen-2xl fixed left-0 rtl:left-auto rtl:right-0 top-[100px] hidden md:block py-10 px-4 md:px-8 lg:px-16 border-t border-primaryBtn bg-white z-50 shadow-md"
     >
-      <div className="flex rtl:md:flex-row-reverse">
-        <div className="w-full max-w-[420px] h-[290px] border relative bg-[#E8E9E9] rounded-lg mr-6 flex-shrink-0 overflow-hidden">
+      <div className="flex rtl:flex-row-reverse">
+        <div className="w-full max-w-[420px] h-[290px] border relative bg-[#E8E9E9] rounded-lg ltr:mr-6 rtl:ml-6 flex-shrink-0 overflow-hidden">
           <Image
             src={currentImage}
             alt="sdasd"
             className="h-full object-cover"
           />
         </div>
-        <div className="flex-1 rtl:mr-6">
+        <div className="flex-1">
           <h2 className="font-semibold text-2xl text-primary rtl:text-end">
             {listResources?.title}
           </h2>
           <Separator className="my-6 bg-[#E8E9E9]" />
-          <ul className="grid grid-cols-2 gap-x-4 md:gap-x-8 lg:gap-x-[100px] gap-y-4 max-w-full rtl:ml-auto">
+          <ul className="grid grid-cols-2 gap-x-4 md:gap-x-8 lg:gap-x-[100px] gap-y-4 max-w-full">
             {listResources?.itemResources &&
               listResources?.itemResources.map((item: any, index: number) => (
                 <li
@@ -110,10 +110,10 @@ export const DropdownResources = ({
                     href={item.nav}
                     onClick={() => setOpenBlog(!openBlog)}
                   >
-                    <h3 className="text-base ltr:font-montserrat font-semibold rtl:font-cairo rtl:md:text-end">
+                    <h3 className="text-base ltr:font-montserrat font-semibold rtl:font-cairo rtl:text-end">
                       {item.title}
                     </h3>
-                    <p className="text-base ltr:font-montserrat text-primaryBtn rtl:font-cairo rtl:md:text-end">
+                    <p className="text-base ltr:font-montserrat text-primaryBtn rtl:font-cairo rtl:text-end">
                       {item.description}
                     </p>
                   </Link>
