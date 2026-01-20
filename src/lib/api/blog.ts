@@ -120,21 +120,40 @@ export async function getBlogPostBySlug(
 ): Promise<BlogPost | null> {
   try {
     const endpoint = getEndpointForUserType(userType);
-    const response = await axios.get<StrapiResponse<BlogPost[]>>(
-      `${baseURL}/api/${endpoint}`,
-      {
-        params: {
-          locale,
-          'filters[slug][$eq]': slug,
-          populate: ['user.picture', 'category', 'picture', 'ogImage'],
-        },
-      }
-    );
+    const url = `${baseURL}/api/${endpoint}`;
+
+    console.log('[getBlogPostBySlug] Fetching:', {
+      url,
+      userType,
+      slug,
+      locale,
+      baseURL,
+    });
+
+    const response = await axios.get<StrapiResponse<BlogPost[]>>(url, {
+      params: {
+        locale,
+        'filters[slug][$eq]': slug,
+        populate: ['user.picture', 'category', 'picture', 'ogImage'],
+      },
+    });
+
+    console.log('[getBlogPostBySlug] Response:', {
+      status: response.status,
+      dataLength: response.data.data?.length,
+      hasData: !!response.data.data,
+    });
 
     const posts = response.data.data;
     return posts && posts.length > 0 ? posts[0] : null;
   } catch (error) {
-    console.error(`Error fetching blog post by slug ${slug}:`, error);
+    console.error(`[getBlogPostBySlug] Error fetching blog post:`, {
+      userType,
+      slug,
+      locale,
+      baseURL,
+      error: error instanceof Error ? error.message : error,
+    });
     return null;
   }
 }
