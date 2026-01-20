@@ -22,13 +22,15 @@ export default function BlogPostContent({
 
   // Sanitize HTML content to prevent XSS attacks
   // Only sanitize on client-side to avoid SSR/build errors
+  // Use aboutPosts for full content, fallback to description for short intro
   const sanitizedDescription = useMemo(() => {
+    const content = attributes.aboutPosts || attributes.description;
     if (typeof window === 'undefined') {
       // Server-side: return raw HTML (will be sanitized after hydration)
-      return attributes.description;
+      return content;
     }
-    return DOMPurify.sanitize(attributes.description);
-  }, [attributes.description]);
+    return DOMPurify.sanitize(content);
+  }, [attributes.aboutPosts, attributes.description]);
 
   // Fetch related posts with error handling
   useEffect(() => {
@@ -49,8 +51,16 @@ export default function BlogPostContent({
   }, [post.id, userType, attributes.category, attributes.locale]);
 
   // Build image URLs
-  const featuredImageUrl = attributes.picture?.data?.attributes?.url
-    ? new URL(attributes.picture.data.attributes.url, baseURLImage).href
+  // Use image field (new) or fallback to picture field (legacy)
+  const featuredImageUrl = (
+    attributes.image?.data?.attributes?.url ||
+    attributes.picture?.data?.attributes?.url
+  )
+    ? new URL(
+        (attributes.image?.data?.attributes?.url ||
+          attributes.picture?.data?.attributes?.url)!,
+        baseURLImage
+      ).href
     : '';
 
   const authorImageUrl = attributes.user?.data?.attributes?.picture?.data
@@ -123,6 +133,7 @@ export default function BlogPostContent({
             <Image
               src={featuredImageUrl}
               alt={
+                attributes.image?.data?.attributes?.alternativeText ||
                 attributes.picture?.data?.attributes?.alternativeText ||
                 attributes.title
               }
@@ -149,10 +160,13 @@ export default function BlogPostContent({
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedPosts.map((relatedPost) => {
-                const relatedImageUrl = relatedPost.attributes.picture?.data
-                  ?.attributes?.url
+                const relatedImageUrl = (
+                  relatedPost.attributes.image?.data?.attributes?.url ||
+                  relatedPost.attributes.picture?.data?.attributes?.url
+                )
                   ? new URL(
-                      relatedPost.attributes.picture.data.attributes.url,
+                      (relatedPost.attributes.image?.data?.attributes?.url ||
+                        relatedPost.attributes.picture?.data?.attributes?.url)!,
                       baseURLImage
                     ).href
                   : '';

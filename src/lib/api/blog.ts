@@ -7,6 +7,7 @@ interface BlogPostAttributes {
   title: string;
   slug: string;
   description: string;
+  aboutPosts?: string;
   metaTitle?: string;
   metaDescription?: string;
   createdAt: string;
@@ -37,7 +38,15 @@ interface BlogPostAttributes {
       };
     };
   };
-  picture: {
+  picture?: {
+    data: {
+      attributes: {
+        url: string;
+        alternativeText?: string;
+      };
+    };
+  };
+  image?: {
     data: {
       attributes: {
         url: string;
