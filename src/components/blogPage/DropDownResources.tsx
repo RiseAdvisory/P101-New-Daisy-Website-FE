@@ -97,12 +97,12 @@ export const DropdownResources = ({
             {listResources?.title}
           </h2>
           <Separator className="my-6 bg-[#E8E9E9]" />
-          <ul className="grid grid-cols-2 gap-x-4 md:gap-x-8 lg:gap-x-[100px] gap-y-4 max-w-full">
+          <ul className="grid grid-cols-2 gap-x-4 md:gap-x-8 lg:gap-x-[100px] gap-y-4 max-w-full rtl:justify-items-end">
             {listResources?.itemResources &&
               listResources?.itemResources.map((item: any, index: number) => (
                 <li
                   key={index}
-                  className="ltr:pl-4 rtl:pr-4 py-[18px] hover:bg-[#E8E9E9] rounded-xl hover:outline-gray-300 hover:outline"
+                  className="ltr:pl-4 rtl:pr-4 py-[18px] hover:bg-[#E8E9E9] rounded-xl hover:outline-gray-300 hover:outline w-full"
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
                 >
