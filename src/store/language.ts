@@ -15,6 +15,10 @@ function updateDocumentDirection(lang: string): void {
   // Use queueMicrotask to avoid blocking the main thread during initial render
   if (typeof queueMicrotask !== 'undefined') {
     queueMicrotask(() => {
+      // Update both html and body elements for Tailwind RTL support
+      if (document.documentElement.getAttribute('dir') !== dir) {
+        document.documentElement.setAttribute('dir', dir);
+      }
       if (document.body.getAttribute('dir') !== dir) {
         document.body.setAttribute('dir', dir);
       }
@@ -22,6 +26,10 @@ function updateDocumentDirection(lang: string): void {
   } else {
     // Fallback for older browsers
     setTimeout(() => {
+      // Update both html and body elements for Tailwind RTL support
+      if (document.documentElement.getAttribute('dir') !== dir) {
+        document.documentElement.setAttribute('dir', dir);
+      }
       if (document.body.getAttribute('dir') !== dir) {
         document.body.setAttribute('dir', dir);
       }

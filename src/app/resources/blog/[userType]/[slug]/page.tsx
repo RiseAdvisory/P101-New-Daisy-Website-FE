@@ -16,6 +16,9 @@ interface PageProps {
   };
 }
 
+// Allow dynamic params for blog posts not in generateStaticParams
+export const dynamicParams = true;
+
 // Generate static params for all blog posts
 export async function generateStaticParams() {
   const slugs = await getAllBlogSlugs();

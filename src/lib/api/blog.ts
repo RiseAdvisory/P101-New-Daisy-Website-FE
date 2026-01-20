@@ -7,21 +7,30 @@ interface BlogPostAttributes {
   title: string;
   slug: string;
   description: string;
+  aboutPosts?: string;
   metaTitle?: string;
   metaDescription?: string;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
   locale: string;
-  user: {
-    data: {
+  tags?: {
+    wellness?: string;
+    hair?: string;
+    digital?: string;
+    [key: string]: string | undefined;
+  };
+  user?: {
+    data?: {
       id: number;
-      attributes: {
+      attributes?: {
         name: string;
-        jobTitle: string;
-        picture: {
-          data: {
-            attributes: {
+        jobTitle?: string;
+        date?: string;
+        time?: string;
+        picture?: {
+          data?: {
+            attributes?: {
               url: string;
             };
           };
@@ -29,21 +38,36 @@ interface BlogPostAttributes {
       };
     };
   };
-  category: {
-    data: {
+  iconOwner?: {
+    data?: {
+      attributes?: {
+        url: string;
+      };
+    }[];
+  };
+  category?: {
+    data?: {
       id: number;
-      attributes: {
+      attributes?: {
         name: string;
       };
     };
   };
-  picture: {
-    data: {
-      attributes: {
+  picture?: {
+    data?: {
+      attributes?: {
         url: string;
         alternativeText?: string;
       };
     };
+  };
+  image?: {
+    data?: {
+      attributes?: {
+        url: string;
+        alternativeText?: string;
+      };
+    }[];
   };
   ogImage?: {
     data: {
@@ -93,11 +117,11 @@ export async function getAllBlogPosts(
   try {
     const endpoint = getEndpointForUserType(userType);
     const response = await axios.get<StrapiResponse<BlogPost[]>>(
-      `${baseURL}/api/${endpoint}`,
+      `${baseURL}/${endpoint}`,
       {
         params: {
           locale,
-          populate: ['user.picture', 'category', 'picture', 'ogImage'],
+          populate: ['user.picture', 'iconOwner', 'category', 'picture', 'image', 'ogImage', 'tags'],
           sort: 'publishedAt:desc',
         },
       }
@@ -105,7 +129,6 @@ export async function getAllBlogPosts(
 
     return response.data.data || [];
   } catch (error) {
-    console.error(`Error fetching blog posts for ${userType}:`, error);
     return [];
   }
 }
@@ -120,21 +143,19 @@ export async function getBlogPostBySlug(
 ): Promise<BlogPost | null> {
   try {
     const endpoint = getEndpointForUserType(userType);
-    const response = await axios.get<StrapiResponse<BlogPost[]>>(
-      `${baseURL}/api/${endpoint}`,
-      {
-        params: {
-          locale,
-          'filters[slug][$eq]': slug,
-          populate: ['user.picture', 'category', 'picture', 'ogImage'],
-        },
-      }
-    );
+    const url = `${baseURL}/${endpoint}`;
+
+    const response = await axios.get<StrapiResponse<BlogPost[]>>(url, {
+      params: {
+        locale,
+        'filters[slug][$eq]': slug,
+        populate: ['user.picture', 'iconOwner', 'category', 'picture', 'image', 'ogImage', 'tags'],
+      },
+    });
 
     const posts = response.data.data;
     return posts && posts.length > 0 ? posts[0] : null;
   } catch (error) {
-    console.error(`Error fetching blog post by slug ${slug}:`, error);
     return null;
   }
 }
@@ -188,13 +209,13 @@ export async function getRelatedBlogPosts(
   try {
     const endpoint = getEndpointForUserType(userType);
     const response = await axios.get<StrapiResponse<BlogPost[]>>(
-      `${baseURL}/api/${endpoint}`,
+      `${baseURL}/${endpoint}`,
       {
         params: {
           locale,
           'filters[category][id][$eq]': categoryId,
           'filters[id][$ne]': currentPostId,
-          populate: ['user.picture', 'category', 'picture'],
+          populate: ['user.picture', 'iconOwner', 'category', 'picture', 'image', 'ogImage', 'tags'],
           sort: 'publishedAt:desc',
           'pagination[limit]': limit,
         },
@@ -203,7 +224,6 @@ export async function getRelatedBlogPosts(
 
     return response.data.data || [];
   } catch (error) {
-    console.error('Error fetching related blog posts:', error);
     return [];
   }
 }

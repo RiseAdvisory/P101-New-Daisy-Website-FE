@@ -1,10 +1,15 @@
 import { create } from 'zustand';
 
+interface Breadcrumb {
+  title?: string;
+  description?: string;
+}
+
 interface IChoosePath {
   patnName: string;
-  bredcrumb: any;
+  bredcrumb: Breadcrumb | string | any;
   choosePatnName: (newLang: string) => void;
-  chooseBreadcrumb: (newLang: string) => void;
+  chooseBreadcrumb: (breadcrumb: Breadcrumb | string | any) => void;
   pathStrapi: string;
   choosePathStrapi: (path: string) => void;
 }
