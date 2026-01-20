@@ -14,15 +14,23 @@ interface BlogPostAttributes {
   updatedAt: string;
   publishedAt: string;
   locale: string;
-  user: {
-    data: {
+  tags?: {
+    wellness?: string;
+    hair?: string;
+    digital?: string;
+    [key: string]: string | undefined;
+  };
+  user?: {
+    data?: {
       id: number;
-      attributes: {
+      attributes?: {
         name: string;
-        jobTitle: string;
-        picture: {
-          data: {
-            attributes: {
+        jobTitle?: string;
+        date?: string;
+        time?: string;
+        picture?: {
+          data?: {
+            attributes?: {
               url: string;
             };
           };
@@ -30,10 +38,17 @@ interface BlogPostAttributes {
       };
     };
   };
-  category: {
-    data: {
+  iconOwner?: {
+    data?: {
+      attributes?: {
+        url: string;
+      };
+    }[];
+  };
+  category?: {
+    data?: {
       id: number;
-      attributes: {
+      attributes?: {
         name: string;
       };
     };
