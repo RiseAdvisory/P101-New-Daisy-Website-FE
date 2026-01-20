@@ -84,8 +84,8 @@ export const DropdownResources = ({
       ref={dropdownRef}
       className="w-screen max-w-screen-2xl fixed left-0 rtl:left-auto rtl:right-0 top-[100px] hidden md:block py-10 px-4 md:px-8 lg:px-16 border-t border-primaryBtn bg-white z-50 shadow-md"
     >
-      <div className="flex rtl:flex-row-reverse">
-        <div className="w-full max-w-[420px] h-[290px] border relative bg-[#E8E9E9] rounded-lg me-6 flex-shrink-0 overflow-hidden">
+      <div className="flex ltr:flex-row rtl:flex-row-reverse">
+        <div className="w-full max-w-[420px] h-[290px] border relative bg-[#E8E9E9] rounded-lg ltr:mr-6 rtl:ml-6 flex-shrink-0 overflow-hidden">
           <Image
             src={currentImage}
             alt="sdasd"
@@ -93,7 +93,7 @@ export const DropdownResources = ({
           />
         </div>
         <div className="flex-1">
-          <h2 className="font-semibold text-2xl text-primary text-center rtl:text-right">
+          <h2 className="font-semibold text-2xl text-primary rtl:text-right">
             {listResources?.title}
           </h2>
           <Separator className="my-6 bg-[#E8E9E9]" />
@@ -111,10 +111,10 @@ export const DropdownResources = ({
                     onClick={() => setOpenBlog(!openBlog)}
                     className="block ltr:pl-4 rtl:pr-4"
                   >
-                    <h3 className="text-base ltr:font-montserrat font-semibold rtl:font-cairo text-center rtl:text-right">
+                    <h3 className="text-base ltr:font-montserrat font-semibold rtl:font-cairo rtl:text-right">
                       {item.title}
                     </h3>
-                    <p className="text-base ltr:font-montserrat text-primaryBtn rtl:font-cairo text-center rtl:text-right">
+                    <p className="text-base ltr:font-montserrat text-primaryBtn rtl:font-cairo rtl:text-right">
                       {item.description}
                     </p>
                   </Link>
