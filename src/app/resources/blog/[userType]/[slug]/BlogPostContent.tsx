@@ -21,10 +21,14 @@ export default function BlogPostContent({
   const { attributes } = post;
 
   // Sanitize HTML content to prevent XSS attacks
-  const sanitizedDescription = useMemo(
-    () => DOMPurify.sanitize(attributes.description),
-    [attributes.description]
-  );
+  // Only sanitize on client-side to avoid SSR/build errors
+  const sanitizedDescription = useMemo(() => {
+    if (typeof window === 'undefined') {
+      // Server-side: return raw HTML (will be sanitized after hydration)
+      return attributes.description;
+    }
+    return DOMPurify.sanitize(attributes.description);
+  }, [attributes.description]);
 
   // Fetch related posts with error handling
   useEffect(() => {
