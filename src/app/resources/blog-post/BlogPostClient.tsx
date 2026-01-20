@@ -18,6 +18,7 @@ interface BlogHeroData extends ResourcePageAttributes {
 export const BlogPostClient = () => {
   const [heroBlog, setHeroBlog] = useState<BlogHeroData | null>(null);
   const [listCard, setListCards] = useState<ResourceItem[] | null>(null);
+  const [userType, setUserType] = useState<string>('customer');
 
   const { lang } = useChangeLanguage();
   const { chooseBreadcrumb, choosePathStrapi } = useChoosePath();
@@ -25,15 +26,22 @@ export const BlogPostClient = () => {
 
   useEffect(() => {
     let endpointExperienceDaisyLink = 'resources-blog-post-customers';
+    let type = 'customer';
+
     if (currentPage === '/customer') {
       endpointExperienceDaisyLink = 'resources-blog-post-customers';
+      type = 'customer';
     }
     if (currentPage === '/business') {
       endpointExperienceDaisyLink = 'resources-blog-post-businesses';
+      type = 'business';
     }
     if (currentPage === '/professional') {
       endpointExperienceDaisyLink = 'resources-blog-post-independents';
+      type = 'professional';
     }
+
+    setUserType(type);
 
     (async () => {
       try {
@@ -83,7 +91,7 @@ export const BlogPostClient = () => {
         secondDescription={heroBlog?.description}
       />
       <CardPosts
-        typePath="blog-post"
+        typePath={userType}
         redirect={true}
         style="cursor-pointer"
         listCard={listCard}
