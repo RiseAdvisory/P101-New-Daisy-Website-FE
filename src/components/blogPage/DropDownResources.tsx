@@ -102,13 +102,14 @@ export const DropdownResources = ({
               listResources?.itemResources.map((item: any, index: number) => (
                 <li
                   key={index}
-                  className="ltr:pl-4 rtl:pr-4 py-[18px] hover:bg-[#E8E9E9] rounded-xl hover:outline-gray-300 hover:outline w-full"
+                  className="py-[18px] hover:bg-[#E8E9E9] rounded-xl hover:outline-gray-300 hover:outline w-full"
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
                 >
                   <Link
                     href={item.nav}
                     onClick={() => setOpenBlog(!openBlog)}
+                    className="block ltr:pl-4 rtl:pr-4"
                   >
                     <h3 className="text-base ltr:font-montserrat font-semibold rtl:font-cairo rtl:text-end">
                       {item.title}
