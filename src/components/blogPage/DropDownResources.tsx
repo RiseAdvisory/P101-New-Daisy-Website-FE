@@ -70,7 +70,12 @@ export const DropdownResources = ({
         if (setActive) setActive(path);
       }}
     >
-      <DropdownMenuContent className="w-full max-w-screen-2xl top-[110px] absolute hidden md:block py-10 px-4 md:px-8 lg:px-16">
+      <DropdownMenuContent
+        align="start"
+        side="bottom"
+        sideOffset={20}
+        className="w-screen max-w-screen-2xl hidden md:block py-10 px-4 md:px-8 lg:px-16"
+      >
         <div className="flex rtl:md:flex-row-reverse">
           <div className="w-full max-w-[420px] h-[290px] border relative bg-[#E8E9E9] rounded-lg mr-6 flex-shrink-0 overflow-hidden">
             <Image
