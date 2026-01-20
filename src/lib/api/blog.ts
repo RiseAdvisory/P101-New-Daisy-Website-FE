@@ -54,20 +54,20 @@ interface BlogPostAttributes {
     };
   };
   picture?: {
-    data: {
-      attributes: {
+    data?: {
+      attributes?: {
         url: string;
         alternativeText?: string;
       };
     };
   };
   image?: {
-    data: {
-      attributes: {
+    data?: {
+      attributes?: {
         url: string;
         alternativeText?: string;
       };
-    };
+    }[];
   };
   ogImage?: {
     data: {
