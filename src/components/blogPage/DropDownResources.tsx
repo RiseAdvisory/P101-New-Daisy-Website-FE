@@ -93,11 +93,11 @@ export const DropdownResources = ({
           />
         </div>
         <div className="flex-1">
-          <h2 className="font-semibold text-2xl text-primary">
+          <h2 className="font-semibold text-2xl text-primary text-center rtl:text-right">
             {listResources?.title}
           </h2>
           <Separator className="my-6 bg-[#E8E9E9]" />
-          <ul className="grid grid-cols-2 gap-x-4 md:gap-x-8 lg:gap-x-[100px] gap-y-4 max-w-full rtl:justify-items-end">
+          <ul className="grid grid-cols-2 gap-x-4 md:gap-x-8 lg:gap-x-[100px] gap-y-4 max-w-full">
             {listResources?.itemResources &&
               listResources?.itemResources.map((item: any, index: number) => (
                 <li
@@ -111,10 +111,10 @@ export const DropdownResources = ({
                     onClick={() => setOpenBlog(!openBlog)}
                     className="block ltr:pl-4 rtl:pr-4"
                   >
-                    <h3 className="text-base ltr:font-montserrat font-semibold rtl:font-cairo">
+                    <h3 className="text-base ltr:font-montserrat font-semibold rtl:font-cairo text-center rtl:text-right">
                       {item.title}
                     </h3>
-                    <p className="text-base ltr:font-montserrat text-primaryBtn rtl:font-cairo">
+                    <p className="text-base ltr:font-montserrat text-primaryBtn rtl:font-cairo text-center rtl:text-right">
                       {item.description}
                     </p>
                   </Link>
