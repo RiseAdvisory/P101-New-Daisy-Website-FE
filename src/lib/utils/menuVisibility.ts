@@ -35,8 +35,8 @@ export const shouldHideMenuItem = (
     return false;
   }
 
-  // Hide Resources and Features when on user type pages (customer/business/professional)
-  // Pricing should remain visible
+  // Hide Features when on user type pages (customer/business/professional)
+  // Resources and Pricing remain visible for all user types
   const isUserTypePage = USER_TYPE_PAGES.includes(
     activePage as (typeof USER_TYPE_PAGES)[number],
   );
@@ -45,6 +45,6 @@ export const shouldHideMenuItem = (
     return false;
   }
 
-  // Hide Resources and Features, but keep Pricing visible
-  return navPath === NAV_PATHS.RESOURCES || navPath === NAV_PATHS.FEATURES;
+  // Hide Features only, keep Resources and Pricing visible for all user types
+  return navPath === NAV_PATHS.FEATURES;
 };
