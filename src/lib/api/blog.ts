@@ -93,7 +93,7 @@ export async function getAllBlogPosts(
   try {
     const endpoint = getEndpointForUserType(userType);
     const response = await axios.get<StrapiResponse<BlogPost[]>>(
-      `${baseURL}/api/${endpoint}`,
+      `${baseURL}/${endpoint}`,
       {
         params: {
           locale,
@@ -120,7 +120,7 @@ export async function getBlogPostBySlug(
 ): Promise<BlogPost | null> {
   try {
     const endpoint = getEndpointForUserType(userType);
-    const url = `${baseURL}/api/${endpoint}`;
+    const url = `${baseURL}/${endpoint}`;
 
     console.log('[getBlogPostBySlug] Fetching:', {
       url,
@@ -207,7 +207,7 @@ export async function getRelatedBlogPosts(
   try {
     const endpoint = getEndpointForUserType(userType);
     const response = await axios.get<StrapiResponse<BlogPost[]>>(
-      `${baseURL}/api/${endpoint}`,
+      `${baseURL}/${endpoint}`,
       {
         params: {
           locale,
