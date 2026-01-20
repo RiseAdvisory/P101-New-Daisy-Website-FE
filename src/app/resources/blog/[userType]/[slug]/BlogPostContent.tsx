@@ -208,7 +208,7 @@ export default function BlogPostContent({
         {/* Back to Blog */}
         <div className="mt-12 text-center">
           <button
-            onClick={() => router.push(`/resources/blog`)}
+            onClick={() => router.push(`/resources/blog-post`)}
             className="inline-flex items-center gap-2 text-[#A67F6B] hover:text-[#8B6854] font-medium transition-colors"
           >
             <svg
