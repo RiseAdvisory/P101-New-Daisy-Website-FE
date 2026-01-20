@@ -121,7 +121,7 @@ export async function getAllBlogPosts(
       {
         params: {
           locale,
-          populate: '*',
+          populate: ['user.picture', 'iconOwner', 'category', 'picture', 'image', 'ogImage', 'tags'],
           sort: 'publishedAt:desc',
         },
       }
@@ -129,7 +129,6 @@ export async function getAllBlogPosts(
 
     return response.data.data || [];
   } catch (error) {
-    console.error(`Error fetching blog posts for ${userType}:`, error);
     return [];
   }
 }
@@ -146,38 +145,17 @@ export async function getBlogPostBySlug(
     const endpoint = getEndpointForUserType(userType);
     const url = `${baseURL}/${endpoint}`;
 
-    console.log('[getBlogPostBySlug] Fetching:', {
-      url,
-      userType,
-      slug,
-      locale,
-      baseURL,
-    });
-
     const response = await axios.get<StrapiResponse<BlogPost[]>>(url, {
       params: {
         locale,
         'filters[slug][$eq]': slug,
-        populate: '*',
+        populate: ['user.picture', 'iconOwner', 'category', 'picture', 'image', 'ogImage', 'tags'],
       },
-    });
-
-    console.log('[getBlogPostBySlug] Response:', {
-      status: response.status,
-      dataLength: response.data.data?.length,
-      hasData: !!response.data.data,
     });
 
     const posts = response.data.data;
     return posts && posts.length > 0 ? posts[0] : null;
   } catch (error) {
-    console.error(`[getBlogPostBySlug] Error fetching blog post:`, {
-      userType,
-      slug,
-      locale,
-      baseURL,
-      error: error instanceof Error ? error.message : error,
-    });
     return null;
   }
 }
@@ -237,7 +215,7 @@ export async function getRelatedBlogPosts(
           locale,
           'filters[category][id][$eq]': categoryId,
           'filters[id][$ne]': currentPostId,
-          populate: '*',
+          populate: ['user.picture', 'iconOwner', 'category', 'picture', 'image', 'ogImage', 'tags'],
           sort: 'publishedAt:desc',
           'pagination[limit]': limit,
         },
@@ -246,7 +224,6 @@ export async function getRelatedBlogPosts(
 
     return response.data.data || [];
   } catch (error) {
-    console.error('Error fetching related blog posts:', error);
     return [];
   }
 }

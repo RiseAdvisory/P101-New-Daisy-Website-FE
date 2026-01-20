@@ -58,9 +58,23 @@ export default function BlogPostContent({
           `/legal-downloads?locale=${lang}`
         );
         const [data] = response.data.data;
-        setCtaData(data?.attributes);
+        const attributes = data?.attributes;
+
+        // Validate and sanitize CTA data
+        const validateText = (text: unknown, maxLength: number = 500): string | undefined => {
+          if (typeof text === 'string' && text.length > 0 && text.length <= maxLength) {
+            // Remove any HTML tags for security
+            return text.replace(/<[^>]*>/g, '');
+          }
+          return undefined;
+        };
+
+        setCtaData({
+          textCreate: validateText(attributes?.textCreate),
+          textDownload: validateText(attributes?.textDownload, 100),
+          titleSimilar: validateText(attributes?.titleSimilar, 200),
+        });
       } catch (error) {
-        console.error('Error fetching CTA data:', error);
         // Set default values if fetch fails
         setCtaData({
           textCreate: 'Create Your Own Perfect Wellness Ritual With The Daisy Packages',
