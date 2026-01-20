@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { BlogPost, UserType, getRelatedBlogPosts } from '@/lib/api/blog';
 import { baseURLImage } from '@/helpers/axiosConfig';
 import { useEffect, useState, useMemo } from 'react';
-import DOMPurify from 'isomorphic-dompurify';
+import DOMPurify from 'dompurify';
 
 interface BlogPostContentProps {
   post: BlogPost;
