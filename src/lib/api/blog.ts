@@ -97,7 +97,7 @@ export async function getAllBlogPosts(
       {
         params: {
           locale,
-          populate: ['user.picture', 'category', 'picture', 'ogImage'],
+          populate: '*',
           sort: 'publishedAt:desc',
         },
       }
@@ -134,7 +134,7 @@ export async function getBlogPostBySlug(
       params: {
         locale,
         'filters[slug][$eq]': slug,
-        populate: ['user.picture', 'category', 'picture', 'ogImage'],
+        populate: '*',
       },
     });
 
@@ -213,7 +213,7 @@ export async function getRelatedBlogPosts(
           locale,
           'filters[category][id][$eq]': categoryId,
           'filters[id][$ne]': currentPostId,
-          populate: ['user.picture', 'category', 'picture'],
+          populate: '*',
           sort: 'publishedAt:desc',
           'pagination[limit]': limit,
         },
