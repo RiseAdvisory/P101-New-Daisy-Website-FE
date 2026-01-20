@@ -27,7 +27,7 @@ export default function BlogPostContent({
   userType,
 }: BlogPostContentProps) {
   const { handlePost, setHandleId } = usePostStore();
-  const { choosePathStrapi, chooseBreadcrumb } = useChoosePath();
+  const { choosePathStrapi, chooseBreadcrumb, choosePatnName } = useChoosePath();
   const { lang } = useChangeLanguage();
   const [ctaData, setCtaData] = useState<CTAData | null>(null);
 
@@ -47,8 +47,16 @@ export default function BlogPostContent({
     }`;
 
     choosePathStrapi(`/${endpoint}`);
-    chooseBreadcrumb('Blog Posts');
-  }, [post, userType, handlePost, setHandleId, choosePathStrapi, chooseBreadcrumb]);
+
+    // Set path name for breadcrumb link - points to /resources/blog-post
+    choosePatnName('blog-post');
+
+    // Set breadcrumb structure: title = "Resources", description = "Blog Posts"
+    chooseBreadcrumb({
+      title: 'Resources',
+      description: 'Blog Posts',
+    });
+  }, [post, userType, handlePost, setHandleId, choosePathStrapi, chooseBreadcrumb, choosePatnName]);
 
   // Fetch CTA text from legal-downloads endpoint
   useEffect(() => {
