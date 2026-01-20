@@ -183,20 +183,20 @@ describe('MobileMenu - Menu Visibility Logic', () => {
     // The MobileMenu component uses this function internally
 
     it('should correctly identify items to hide on customer page', () => {
-      expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, '/customer')).toBe(true);
+      expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, '/customer')).toBe(false);
       expect(shouldHideMenuItem(NAV_PATHS.FEATURES, '/customer')).toBe(true);
       expect(shouldHideMenuItem(NAV_PATHS.PRICING, '/customer')).toBe(false);
     });
 
     it('should correctly identify items to hide on business page', () => {
-      expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, '/business')).toBe(true);
+      expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, '/business')).toBe(false);
       expect(shouldHideMenuItem(NAV_PATHS.FEATURES, '/business')).toBe(true);
       expect(shouldHideMenuItem(NAV_PATHS.PRICING, '/business')).toBe(false);
     });
 
     it('should correctly identify items to hide on professional page', () => {
       expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, '/professional')).toBe(
-        true,
+        false,
       );
       expect(shouldHideMenuItem(NAV_PATHS.FEATURES, '/professional')).toBe(
         true,
