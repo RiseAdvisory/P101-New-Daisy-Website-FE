@@ -71,7 +71,7 @@ export const DropdownResources = ({
       }}
     >
       <DropdownMenuContent
-        className="w-screen max-w-screen-2xl fixed left-0 top-[100px] hidden md:block py-10 px-4 md:px-8 lg:px-16 border-t border-primaryBtn"
+        className="w-screen max-w-screen-2xl fixed left-0 rtl:left-auto rtl:right-0 top-[100px] hidden md:block py-10 px-4 md:px-8 lg:px-16 border-t border-primaryBtn"
       >
         <div className="flex rtl:md:flex-row-reverse">
           <div className="w-full max-w-[420px] h-[290px] border relative bg-[#E8E9E9] rounded-lg mr-6 flex-shrink-0 overflow-hidden">
