@@ -1,7 +1,22 @@
 import { NextResponse, NextRequest } from 'next/server';
 
 export async function middleware(request: NextRequest) {
-  const userAgent = request.headers.get('user-agent');
+  const userAgent = request.headers.get('user-agent') || '';
+  const ua = userAgent.toLowerCase();
+
+  const pathname = new URL(request.url).pathname;
+
+  // ✅ Never prerender compliance pages (Meta validators must reach origin)
+  if (
+    pathname === '/privacy-policy' ||
+    pathname === '/terms' ||
+    pathname === '/terms-conditions' ||
+    pathname === '/data-deletion' ||
+    pathname === '/cookie-policy'
+  ) {
+    return NextResponse.next();
+  }
+
   const bots = [
     'googlebot',
     'yahoo! slurp',
@@ -59,7 +74,6 @@ export async function middleware(request: NextRequest) {
     '.rar',
     '.exe',
     '.wmv',
-    '.doc',
     '.avi',
     '.ppt',
     '.mpg',
@@ -84,42 +98,36 @@ export async function middleware(request: NextRequest) {
     '.svg',
     '.webmanifest',
   ];
-  const isBot =
-    userAgent && bots.some((bot) => userAgent.toLowerCase().includes(bot));
-  const isPrerender = request.headers.get('X-Prerender');
-  const pathname = new URL(request.url).pathname;
-  const extension = pathname.slice(((pathname.lastIndexOf('.') - 1) >>> 0) + 1);
 
-  if (
-    isPrerender ||
-    !isBot ||
-    (extension.length && IGNORE_EXTENSIONS.includes(extension))
-  ) {
-    return NextResponse.next();
-  } else {
-    if (isBot) {
-      const newURL = `https://service.prerender.io/${request.url}`;
-      const newHeaders = new Headers(request.headers);
-      newHeaders.set('X-Prerender-Token', process.env.PRERENDER_TOKEN || '');
-      newHeaders.set('X-Prerender-Int-Type', 'NextJS');
+  const isBot = bots.some((bot) => ua.includes(bot));
+  const isPrerender = request.headers.get('x-prerender');
 
-      const res = await fetch(
-        new Request(newURL, {
-          headers: newHeaders,
-          redirect: 'manual',
-        }),
-      );
+  const ext = pathname.includes('.')
+    ? pathname.substring(pathname.lastIndexOf('.')).toLowerCase()
+    : '';
 
-      const responseHeaders = new Headers(res.headers);
-      responseHeaders.set('X-Redirected-From', request.url);
-
-      return new Response(res.body, {
-        status: res.status,
-        statusText: res.statusText,
-        headers: responseHeaders,
-      });
-    }
-
+  if (isPrerender || !isBot || (ext && IGNORE_EXTENSIONS.includes(ext))) {
     return NextResponse.next();
   }
+
+  // Bot -> prerender
+  const newURL = `https://service.prerender.io/${request.url}`;
+  const newHeaders = new Headers(request.headers);
+
+  // ⚠️ If this is empty in Edge, prerender will reject (your current issue)
+  newHeaders.set('X-Prerender-Token', process.env.PRERENDER_TOKEN || '');
+  newHeaders.set('X-Prerender-Int-Type', 'NextJS');
+
+  const res = await fetch(
+    new Request(newURL, { headers: newHeaders, redirect: 'manual' }),
+  );
+
+  const responseHeaders = new Headers(res.headers);
+  responseHeaders.set('X-Redirected-From', request.url);
+
+  return new Response(res.body, {
+    status: res.status,
+    statusText: res.statusText,
+    headers: responseHeaders,
+  });
 }
