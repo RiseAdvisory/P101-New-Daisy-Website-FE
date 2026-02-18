@@ -111,11 +111,20 @@ export async function middleware(request: NextRequest) {
   }
 
   // Bot -> prerender
+  const prerenderToken = process.env.PRERENDER_TOKEN;
+
+  // If token is missing, skip prerendering and serve directly to avoid silent failures
+  if (!prerenderToken) {
+    console.warn(
+      'PRERENDER_TOKEN is not configured; bots will be served directly without prerendering',
+    );
+    return NextResponse.next();
+  }
+
   const newURL = `https://service.prerender.io/${request.url}`;
   const newHeaders = new Headers(request.headers);
 
-  // ⚠️ If this is empty in Edge, prerender will reject (your current issue)
-  newHeaders.set('X-Prerender-Token', process.env.PRERENDER_TOKEN || '');
+  newHeaders.set('X-Prerender-Token', prerenderToken);
   newHeaders.set('X-Prerender-Int-Type', 'NextJS');
 
   const res = await fetch(
