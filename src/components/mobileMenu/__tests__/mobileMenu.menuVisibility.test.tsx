@@ -182,24 +182,24 @@ describe('MobileMenu - Menu Visibility Logic', () => {
     // These tests verify that the shouldHideMenuItem function works correctly
     // The MobileMenu component uses this function internally
 
-    it('should correctly identify items to hide on customer page', () => {
+    it('should not hide any items on customer page', () => {
       expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, '/customer')).toBe(false);
-      expect(shouldHideMenuItem(NAV_PATHS.FEATURES, '/customer')).toBe(true);
+      expect(shouldHideMenuItem(NAV_PATHS.FEATURES, '/customer')).toBe(false);
       expect(shouldHideMenuItem(NAV_PATHS.PRICING, '/customer')).toBe(false);
     });
 
-    it('should correctly identify items to hide on business page', () => {
+    it('should not hide any items on business page', () => {
       expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, '/business')).toBe(false);
-      expect(shouldHideMenuItem(NAV_PATHS.FEATURES, '/business')).toBe(true);
+      expect(shouldHideMenuItem(NAV_PATHS.FEATURES, '/business')).toBe(false);
       expect(shouldHideMenuItem(NAV_PATHS.PRICING, '/business')).toBe(false);
     });
 
-    it('should correctly identify items to hide on professional page', () => {
+    it('should not hide any items on professional page', () => {
       expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, '/professional')).toBe(
         false,
       );
       expect(shouldHideMenuItem(NAV_PATHS.FEATURES, '/professional')).toBe(
-        true,
+        false,
       );
       expect(shouldHideMenuItem(NAV_PATHS.PRICING, '/professional')).toBe(
         false,

@@ -147,53 +147,39 @@ describe('Header - Menu Visibility Logic', () => {
   });
 
   describe('when localStorage activePage is /customer', () => {
-    it('should hide Resources and Features but show Pricing', async () => {
+    it('should show all menu items including Features', async () => {
       localStorageMock['activePage'] = '/customer';
 
       render(<Header />);
 
       await waitFor(() => {
-        // Features and Resources should be hidden
-        const allLinks = screen.queryAllByRole('link');
-        const linkTexts = allLinks.map((link) => link.textContent);
-
-        expect(linkTexts).not.toContain('Resources');
-        expect(linkTexts).not.toContain('Features');
-        // Pricing should be visible
+        expect(screen.queryByText('Features')).toBeInTheDocument();
         expect(screen.queryByText('Pricing')).toBeInTheDocument();
       });
     });
   });
 
   describe('when localStorage activePage is /business', () => {
-    it('should hide Resources and Features but show Pricing', async () => {
+    it('should show all menu items including Features', async () => {
       localStorageMock['activePage'] = '/business';
 
       render(<Header />);
 
       await waitFor(() => {
-        const allLinks = screen.queryAllByRole('link');
-        const linkTexts = allLinks.map((link) => link.textContent);
-
-        expect(linkTexts).not.toContain('Resources');
-        expect(linkTexts).not.toContain('Features');
+        expect(screen.queryByText('Features')).toBeInTheDocument();
         expect(screen.queryByText('Pricing')).toBeInTheDocument();
       });
     });
   });
 
   describe('when localStorage activePage is /professional', () => {
-    it('should hide Resources and Features but show Pricing', async () => {
+    it('should show all menu items including Features', async () => {
       localStorageMock['activePage'] = '/professional';
 
       render(<Header />);
 
       await waitFor(() => {
-        const allLinks = screen.queryAllByRole('link');
-        const linkTexts = allLinks.map((link) => link.textContent);
-
-        expect(linkTexts).not.toContain('Resources');
-        expect(linkTexts).not.toContain('Features');
+        expect(screen.queryByText('Features')).toBeInTheDocument();
         expect(screen.queryByText('Pricing')).toBeInTheDocument();
       });
     });
