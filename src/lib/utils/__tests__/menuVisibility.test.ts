@@ -16,55 +16,37 @@ describe('menuVisibility', () => {
     });
 
     describe('when activePage is a user type page (customer/business/professional)', () => {
-      it('should hide Resources on customer page', () => {
+      it('should NOT hide any menu items on customer page', () => {
         expect(
           shouldHideMenuItem(NAV_PATHS.RESOURCES, NAV_PATHS.CUSTOMER),
-        ).toBe(true);
+        ).toBe(false);
+        expect(
+          shouldHideMenuItem(NAV_PATHS.FEATURES, NAV_PATHS.CUSTOMER),
+        ).toBe(false);
+        expect(
+          shouldHideMenuItem(NAV_PATHS.PRICING, NAV_PATHS.CUSTOMER),
+        ).toBe(false);
       });
 
-      it('should hide Resources on business page', () => {
+      it('should NOT hide any menu items on business page', () => {
         expect(
           shouldHideMenuItem(NAV_PATHS.RESOURCES, NAV_PATHS.BUSINESS),
-        ).toBe(true);
+        ).toBe(false);
+        expect(
+          shouldHideMenuItem(NAV_PATHS.FEATURES, NAV_PATHS.BUSINESS),
+        ).toBe(false);
+        expect(
+          shouldHideMenuItem(NAV_PATHS.PRICING, NAV_PATHS.BUSINESS),
+        ).toBe(false);
       });
 
-      it('should hide Resources on professional page', () => {
+      it('should NOT hide any menu items on professional page', () => {
         expect(
           shouldHideMenuItem(NAV_PATHS.RESOURCES, NAV_PATHS.PROFESSIONAL),
-        ).toBe(true);
-      });
-
-      it('should hide Features on customer page', () => {
-        expect(shouldHideMenuItem(NAV_PATHS.FEATURES, NAV_PATHS.CUSTOMER)).toBe(
-          true,
-        );
-      });
-
-      it('should hide Features on business page', () => {
-        expect(shouldHideMenuItem(NAV_PATHS.FEATURES, NAV_PATHS.BUSINESS)).toBe(
-          true,
-        );
-      });
-
-      it('should hide Features on professional page', () => {
+        ).toBe(false);
         expect(
           shouldHideMenuItem(NAV_PATHS.FEATURES, NAV_PATHS.PROFESSIONAL),
-        ).toBe(true);
-      });
-
-      it('should NOT hide Pricing on customer page', () => {
-        expect(shouldHideMenuItem(NAV_PATHS.PRICING, NAV_PATHS.CUSTOMER)).toBe(
-          false,
-        );
-      });
-
-      it('should NOT hide Pricing on business page', () => {
-        expect(shouldHideMenuItem(NAV_PATHS.PRICING, NAV_PATHS.BUSINESS)).toBe(
-          false,
-        );
-      });
-
-      it('should NOT hide Pricing on professional page', () => {
+        ).toBe(false);
         expect(
           shouldHideMenuItem(NAV_PATHS.PRICING, NAV_PATHS.PROFESSIONAL),
         ).toBe(false);
@@ -72,22 +54,10 @@ describe('menuVisibility', () => {
     });
 
     describe('when activePage is not a user type page', () => {
-      it('should not hide Resources on other pages', () => {
+      it('should not hide any menu items on other pages', () => {
         expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, '/about')).toBe(false);
-        expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, '/contact')).toBe(false);
-        expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, '/')).toBe(false);
-      });
-
-      it('should not hide Features on other pages', () => {
         expect(shouldHideMenuItem(NAV_PATHS.FEATURES, '/about')).toBe(false);
-        expect(shouldHideMenuItem(NAV_PATHS.FEATURES, '/contact')).toBe(false);
-        expect(shouldHideMenuItem(NAV_PATHS.FEATURES, '/')).toBe(false);
-      });
-
-      it('should not hide Pricing on other pages', () => {
         expect(shouldHideMenuItem(NAV_PATHS.PRICING, '/about')).toBe(false);
-        expect(shouldHideMenuItem(NAV_PATHS.PRICING, '/contact')).toBe(false);
-        expect(shouldHideMenuItem(NAV_PATHS.PRICING, '/')).toBe(false);
       });
     });
 
@@ -98,7 +68,6 @@ describe('menuVisibility', () => {
       });
 
       it('should handle case sensitivity correctly', () => {
-        // Navigation paths are case-sensitive
         expect(shouldHideMenuItem('/Resources', NAV_PATHS.CUSTOMER)).toBe(
           false,
         );
@@ -121,12 +90,16 @@ describe('menuVisibility', () => {
       const otherPages = ['/', '/about', '/contact', '/faq'];
 
       userTypePages.forEach((activePage) => {
-        it(`should hide Resources and Features but not Pricing on ${activePage}`, () => {
+        it(`should not hide any menu items on ${activePage}`, () => {
           expect(shouldHideMenuItem(NAV_PATHS.RESOURCES, activePage)).toBe(
-            true,
+            false,
           );
-          expect(shouldHideMenuItem(NAV_PATHS.FEATURES, activePage)).toBe(true);
-          expect(shouldHideMenuItem(NAV_PATHS.PRICING, activePage)).toBe(false);
+          expect(shouldHideMenuItem(NAV_PATHS.FEATURES, activePage)).toBe(
+            false,
+          );
+          expect(shouldHideMenuItem(NAV_PATHS.PRICING, activePage)).toBe(
+            false,
+          );
         });
       });
 

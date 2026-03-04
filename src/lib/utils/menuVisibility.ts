@@ -45,6 +45,6 @@ export const shouldHideMenuItem = (
     return false;
   }
 
-  // Hide Features only, keep Resources and Pricing visible for all user types
-  return navPath === NAV_PATHS.FEATURES;
+  // All menu items are now visible for all user types
+  return false;
 };
