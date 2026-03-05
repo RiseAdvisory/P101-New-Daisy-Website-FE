@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import { FeaturesBusinessClient } from './FeaturesBusinessClient';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: 'AI-Powered Salon Business Features - Booking, Marketing & Payments | The Daisy',
   description:
