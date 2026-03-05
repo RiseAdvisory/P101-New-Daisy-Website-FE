@@ -178,7 +178,7 @@ export const DesctopViewProfessional = ({
               bgImage={section.bgImage}
               styleLeaf={section.styleLeaf}
               itemsList={section.itemsList}
-              dataList={dataList}
+              dataList={dataList as any}
             />
           </div>
         );
