@@ -1,83 +1,50 @@
 import { CarouselBusinessMobile } from './CarouselBusinessMobile';
 import { Separator } from '@/components/ui/separator';
 import { FeatureProfessionalList } from './FeatureProfessionalList';
+import { CategoryData, CategoryKey } from '@/app/features/business/FeaturesBusinessClient';
+
+interface MobileSectionConfig {
+  categoryKey: CategoryKey;
+  titleField: string;
+}
+
+/** Section order: AI, Booking, Communication, Marketing, Payments, Growth, Control, Reports */
+const SECTIONS: MobileSectionConfig[] = [
+  { categoryKey: 'ai', titleField: 'aiPowered' },
+  { categoryKey: 'booking', titleField: 'bookingManagement' },
+  { categoryKey: 'communication', titleField: 'communication' },
+  { categoryKey: 'marketing', titleField: 'marketingTools' },
+  { categoryKey: 'payments', titleField: 'collectPayments' },
+  { categoryKey: 'growth', titleField: 'growth' },
+  { categoryKey: 'control', titleField: 'control' },
+  { categoryKey: 'reports', titleField: 'performanceReports' },
+];
 
 export const MobileViewProfessional = ({
   dataFeatures,
-  dataListAi,
-  dataListBooking,
-  dataListCommunication,
-  dataListManagm,
-  dataListPayment,
-  dataListGrowth,
-  dataListControl,
-  dataListReports,
+  categoryData,
 }: {
   dataFeatures: any;
-  dataListAi: any;
-  dataListBooking: any;
-  dataListCommunication: any;
-  dataListManagm: any;
-  dataListPayment: any;
-  dataListGrowth: any;
-  dataListControl: any;
-  dataListReports: any;
+  categoryData: CategoryData;
 }) => {
   return (
     <div className="md:hidden">
       <CarouselBusinessMobile dataBusiness={dataFeatures} />
       <Separator className="bg-[#586968] my-20" />
-      {/* Section order: AI, Booking, Communication, Marketing, Payments, Growth, Control, Reports */}
-      {dataListAi && dataListAi.length > 0 && (
-        <FeatureProfessionalList
-          title={dataFeatures?.aiPowered?.title}
-          desription={dataFeatures?.aiPowered?.description}
-          dataList={dataListAi}
-        />
-      )}
-      {dataListBooking && dataListBooking.length > 0 && (
-        <FeatureProfessionalList
-          title={dataFeatures?.bookingManagement?.title}
-          desription={dataFeatures?.bookingManagement?.description}
-          dataList={dataListBooking}
-        />
-      )}
-      {dataListCommunication && dataListCommunication.length > 0 && (
-        <FeatureProfessionalList
-          title={dataFeatures?.communication?.title}
-          desription={dataFeatures?.communication?.description}
-          dataList={dataListCommunication}
-        />
-      )}
-      <FeatureProfessionalList
-        title={dataFeatures?.marketingTools?.title}
-        desription={dataFeatures?.marketingTools?.description}
-        dataList={dataListManagm}
-      />
-      <FeatureProfessionalList
-        title={dataFeatures?.collectPayments?.title}
-        desription={dataFeatures?.collectPayments?.description}
-        dataList={dataListPayment}
-      />
-      {dataListGrowth && dataListGrowth.length > 0 && (
-        <FeatureProfessionalList
-          title={dataFeatures?.growth?.title}
-          desription={dataFeatures?.growth?.description}
-          dataList={dataListGrowth}
-        />
-      )}
-      {dataListControl && dataListControl.length > 0 && (
-        <FeatureProfessionalList
-          title={dataFeatures?.control?.title}
-          desription={dataFeatures?.control?.description}
-          dataList={dataListControl}
-        />
-      )}
-      <FeatureProfessionalList
-        title={dataFeatures?.performanceReports?.title}
-        desription={dataFeatures?.performanceReports?.description}
-        dataList={dataListReports}
-      />
+      {SECTIONS.map((section) => {
+        const dataList = categoryData[section.categoryKey];
+        if (!dataList || dataList.length === 0) return null;
+
+        const sectionData = dataFeatures?.[section.titleField];
+        return (
+          <FeatureProfessionalList
+            key={section.categoryKey}
+            title={sectionData?.title}
+            desription={sectionData?.description}
+            dataList={dataList}
+          />
+        );
+      })}
     </div>
   );
 };
