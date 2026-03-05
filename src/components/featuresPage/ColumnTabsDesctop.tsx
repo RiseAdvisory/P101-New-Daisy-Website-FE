@@ -4,24 +4,7 @@ import Separator from '../separator/Separator';
 import Image from 'next/image';
 import { baseURLImage } from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
-
-interface DataItem {
-  id: number;
-  attributes: {
-    title: string;
-    description: string;
-    stylePicture: any;
-    picture: {
-      data: {
-        attributes: {
-          url: string;
-          width: number;
-          height: number;
-        };
-      }[];
-    };
-  };
-}
+import { FeatureListItem } from '@/types/strapi';
 
 interface ColumnTabsDesctopProps {
   itemsList: any;
@@ -29,7 +12,7 @@ interface ColumnTabsDesctopProps {
   bgImage: any;
   title: any;
   description: any;
-  dataList: any;
+  dataList: FeatureListItem[];
   idFeatures: any;
 }
 
@@ -70,7 +53,7 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
           >
             <TabsList className="flex flex-col justify-center py-6 mr-6 ml-16 bg-primary px-6 h-auto">
               <ul className="flex gap-4 text-start bg-primary rounded-xl rtl:flex-row-reverse">
-                {dataList.map((item: any, index: number) => (
+                {dataList.map((item, index) => (
                   <li className="group" key={index}>
                     <TabsTrigger
                       className="!items-start border border-transparent rtl:!items-end !bg-transparent data-[state=active]:border-white data-[state=active]:!bg-white/10 group hover:!bg-white/10 flex flex-col w-full text-[16px] !p-6 text-[#172524] mt-[10px] justify-start rounded-lg cursor-pointer capitalize whitespace-nowrap py-3"
@@ -87,7 +70,7 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
                 ))}
               </ul>
             </TabsList>
-            {dataList.map((item: any, index: number) => {
+            {dataList.map((item, index) => {
               const imageBlock = new URL(
                 item.attributes.picture.data[0].attributes.url,
                 baseURLImage,
