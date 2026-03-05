@@ -4,24 +4,7 @@ import Separator from '../separator/Separator';
 import Image from 'next/image';
 import { baseURLImage } from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
-
-interface DataItem {
-  id: number;
-  attributes: {
-    title: string;
-    description: string;
-    stylePicture: any;
-    picture: {
-      data: {
-        attributes: {
-          url: string;
-          width: number;
-          height: number;
-        };
-      }[];
-    };
-  };
-}
+import { FeatureListItem } from '@/types/strapi';
 
 interface ColumnTabsDesctopProps {
   itemsList: any;
@@ -29,7 +12,7 @@ interface ColumnTabsDesctopProps {
   bgImage: any;
   title: any;
   description: any;
-  dataList: DataItem[];
+  dataList: FeatureListItem[];
   idFeatures: any;
 }
 
