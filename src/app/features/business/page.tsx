@@ -2,10 +2,12 @@ import { Metadata } from 'next';
 import { FeaturesBusinessClient } from './FeaturesBusinessClient';
 
 export const metadata: Metadata = {
-  title: 'Salon Business Features - Marketing & Payments | The Daisy',
+  title: 'AI-Powered Salon Business Features - Booking, Marketing & Payments | The Daisy',
   description:
-    'Powerful features for salon & spa businesses: promotions management, earnings dashboard, payout processing, staff scheduling, multi-branch support, and detailed analytics.',
+    'AI-powered features for salon & spa businesses: smart scheduling, appointment booking, marketing tools, payment processing, team management, customer CRM, multi-channel communication, and detailed analytics.',
   keywords: [
+    'AI salon features',
+    'AI-powered salon management',
     'salon marketing features',
     'spa payment processing',
     'salon analytics dashboard',
@@ -14,13 +16,15 @@ export const metadata: Metadata = {
     'staff scheduling features',
     'salon promotion tools',
     'beauty business earnings',
-    'salon payout system',
-    'workspace management',
+    'salon appointment booking',
+    'salon customer CRM',
+    'salon communication tools',
+    'salon staff management',
   ],
   openGraph: {
-    title: 'Salon Business Features - Marketing & Payments | The Daisy',
+    title: 'AI-Powered Salon Business Features - Booking, Marketing & Payments | The Daisy',
     description:
-      'Powerful features for salon & spa businesses: marketing, payments, analytics, and multi-branch management.',
+      'AI-powered features for salon & spa businesses: smart scheduling, booking, marketing, payments, communication, growth, and team management.',
     url: 'https://jointhedaisy.com/features/business',
     type: 'website',
     images: [
@@ -34,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Salon Business Features - Marketing & Payments | The Daisy',
+    title: 'AI-Powered Salon Business Features | The Daisy',
     description:
-      'Powerful features for salon & spa businesses on The Daisy platform.',
+      'AI-powered features for salon & spa businesses on The Daisy platform.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {

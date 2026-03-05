@@ -21,13 +21,28 @@ export const FeaturesBusinessClient = () => {
   const [dataListReports, setDataListReports] = useState<
     FeatureListItem[] | null
   >(null);
+  const [dataListBooking, setDataListBooking] = useState<
+    FeatureListItem[] | null
+  >(null);
+  const [dataListCommunication, setDataListCommunication] = useState<
+    FeatureListItem[] | null
+  >(null);
+  const [dataListGrowth, setDataListGrowth] = useState<
+    FeatureListItem[] | null
+  >(null);
+  const [dataListControl, setDataListControl] = useState<
+    FeatureListItem[] | null
+  >(null);
+  const [dataListAi, setDataListAi] = useState<FeatureListItem[] | null>(
+    null,
+  );
 
   const { lang } = useChangeLanguage();
 
   useEffect(() => {
     (async () => {
       try {
-        // Parallelize API calls for better performance
+        // Fetch existing category data
         const [
           responseDataFeatures,
           responseListManagm,
@@ -51,6 +66,34 @@ export const FeaturesBusinessClient = () => {
         setDataListManagm(responseListManagm?.data?.data);
         setDataListPayment(responseListPayments?.data?.data);
         setDataListReports(responseListReports?.data?.data);
+
+        // Fetch new category data — graceful fallback if content types don't exist yet
+        const newCategoryResults = await Promise.allSettled([
+          axiosInstance.get(
+            `/feature-business-ai-powereds?populate=*&locale=${lang}`,
+          ),
+          axiosInstance.get(
+            `/feature-business-bookings?populate=*&locale=${lang}`,
+          ),
+          axiosInstance.get(
+            `/feature-business-communications?populate=*&locale=${lang}`,
+          ),
+          axiosInstance.get(
+            `/feature-business-growths?populate=*&locale=${lang}`,
+          ),
+          axiosInstance.get(
+            `/feature-business-controls?populate=*&locale=${lang}`,
+          ),
+        ]);
+
+        const getDataOrNull = (result: PromiseSettledResult<any>) =>
+          result.status === 'fulfilled' ? result.value?.data?.data : null;
+
+        setDataListAi(getDataOrNull(newCategoryResults[0]));
+        setDataListBooking(getDataOrNull(newCategoryResults[1]));
+        setDataListCommunication(getDataOrNull(newCategoryResults[2]));
+        setDataListGrowth(getDataOrNull(newCategoryResults[3]));
+        setDataListControl(getDataOrNull(newCategoryResults[4]));
       } catch (error) {
         console.error('Error fetching business features:', error);
       }
@@ -72,14 +115,24 @@ export const FeaturesBusinessClient = () => {
       <SectionBusiness listOption={dataFeatures?.listBusinessOptions} />
       <MobileViewProfessional
         dataFeatures={dataFeatures}
+        dataListAi={dataListAi}
+        dataListBooking={dataListBooking}
+        dataListCommunication={dataListCommunication}
         dataListManagm={dataListManagm}
         dataListPayment={dataListPayment}
+        dataListGrowth={dataListGrowth}
+        dataListControl={dataListControl}
         dataListReports={dataListReports}
       />
       <DesctopViewProfessional
         dataBusiness={dataFeatures}
+        dataListAi={dataListAi}
+        dataListBooking={dataListBooking}
+        dataListCommunication={dataListCommunication}
         dataListManagm={dataListManagm}
         dataListPayment={dataListPayment}
+        dataListGrowth={dataListGrowth}
+        dataListControl={dataListControl}
         dataListReports={dataListReports}
       />
       <SignUpBlog style="-mx-4" />
