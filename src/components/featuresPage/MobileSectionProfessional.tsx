@@ -1,37 +1,50 @@
 import { CarouselBusinessMobile } from './CarouselBusinessMobile';
 import { Separator } from '@/components/ui/separator';
 import { FeatureProfessionalList } from './FeatureProfessionalList';
+import { CategoryData, CategoryKey } from '@/app/features/business/FeaturesBusinessClient';
+
+interface MobileSectionConfig {
+  categoryKey: CategoryKey;
+  titleField: string;
+}
+
+/** Section order: AI, Booking, Communication, Marketing, Payments, Growth, Control, Reports */
+const SECTIONS: MobileSectionConfig[] = [
+  { categoryKey: 'ai', titleField: 'aiPowered' },
+  { categoryKey: 'booking', titleField: 'bookingManagement' },
+  { categoryKey: 'communication', titleField: 'communication' },
+  { categoryKey: 'marketing', titleField: 'marketingTools' },
+  { categoryKey: 'payments', titleField: 'collectPayments' },
+  { categoryKey: 'growth', titleField: 'growth' },
+  { categoryKey: 'control', titleField: 'control' },
+  { categoryKey: 'reports', titleField: 'performanceReports' },
+];
 
 export const MobileViewProfessional = ({
   dataFeatures,
-  dataListManagm,
-  dataListPayment,
-  dataListReports,
+  categoryData,
 }: {
   dataFeatures: any;
-  dataListManagm: any;
-  dataListPayment: any;
-  dataListReports: any;
+  categoryData: CategoryData;
 }) => {
   return (
     <div className="md:hidden">
       <CarouselBusinessMobile dataBusiness={dataFeatures} />
       <Separator className="bg-[#586968] my-20" />
-      <FeatureProfessionalList
-        title={dataFeatures?.marketingTools.title}
-        desription={dataFeatures?.marketingTools.description}
-        dataList={dataListManagm}
-      />
-      <FeatureProfessionalList
-        title={dataFeatures?.collectPayments.title}
-        desription={dataFeatures?.collectPayments.description}
-        dataList={dataListPayment}
-      />
-      <FeatureProfessionalList
-        title={dataFeatures?.performanceReports.title}
-        desription={dataFeatures?.performanceReports.description}
-        dataList={dataListReports}
-      />
+      {SECTIONS.map((section) => {
+        const dataList = categoryData[section.categoryKey];
+        if (!dataList || dataList.length === 0) return null;
+
+        const sectionData = dataFeatures?.[section.titleField];
+        return (
+          <FeatureProfessionalList
+            key={section.categoryKey}
+            title={sectionData?.title}
+            desription={sectionData?.description}
+            dataList={dataList}
+          />
+        );
+      })}
     </div>
   );
 };
