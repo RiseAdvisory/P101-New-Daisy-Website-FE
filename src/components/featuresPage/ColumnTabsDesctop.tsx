@@ -29,7 +29,7 @@ interface ColumnTabsDesctopProps {
   bgImage: any;
   title: any;
   description: any;
-  dataList: DataItem[];
+  dataList: any;
   idFeatures: any;
 }
 
@@ -70,7 +70,7 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
           >
             <TabsList className="flex flex-col justify-center py-6 mr-6 ml-16 bg-primary px-6 h-auto">
               <ul className="flex gap-4 text-start bg-primary rounded-xl rtl:flex-row-reverse">
-                {dataList.map((item, index) => (
+                {dataList.map((item: any, index: number) => (
                   <li className="group" key={index}>
                     <TabsTrigger
                       className="!items-start border border-transparent rtl:!items-end !bg-transparent data-[state=active]:border-white data-[state=active]:!bg-white/10 group hover:!bg-white/10 flex flex-col w-full text-[16px] !p-6 text-[#172524] mt-[10px] justify-start rounded-lg cursor-pointer capitalize whitespace-nowrap py-3"
@@ -87,7 +87,7 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
                 ))}
               </ul>
             </TabsList>
-            {dataList.map((item, index) => {
+            {dataList.map((item: any, index: number) => {
               const imageBlock = new URL(
                 item.attributes.picture.data[0].attributes.url,
                 baseURLImage,
