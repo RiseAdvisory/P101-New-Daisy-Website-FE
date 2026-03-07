@@ -24,7 +24,7 @@ export const FeaturesProfessionalClient = () => {
         const [response, listProfessionalResponse] = await Promise.all([
           axiosInstance.get(`/features-professionals?locale=${lang}`),
           axiosInstance.get(
-            `/features-professional-list-sorts?populate=*&locale=${lang}`,
+            `/features-professional-list-sorts?populate=*&locale=${lang}&pagination[pageSize]=100`,
           ),
         ]);
 

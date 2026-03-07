@@ -58,7 +58,7 @@ export const FeaturesBusinessClient = () => {
           axiosInstance.get(`/feature-businesses?populate=*&locale=${lang}`),
           ...EXISTING_ENDPOINTS.map((key) =>
             axiosInstance.get(
-              `${CATEGORY_ENDPOINTS[key]}?populate=*&locale=${lang}`,
+              `${CATEGORY_ENDPOINTS[key]}?populate=*&locale=${lang}&pagination[pageSize]=100`,
             ),
           ),
         ]);
@@ -84,7 +84,7 @@ export const FeaturesBusinessClient = () => {
         const newResults = await Promise.allSettled(
           newKeys.map((key) =>
             axiosInstance.get(
-              `${CATEGORY_ENDPOINTS[key]}?populate=*&locale=${lang}`,
+              `${CATEGORY_ENDPOINTS[key]}?populate=*&locale=${lang}&pagination[pageSize]=100`,
             ),
           ),
         );
