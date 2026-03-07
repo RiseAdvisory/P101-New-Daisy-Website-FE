@@ -40,7 +40,7 @@ export const FeatureProfessionalList = ({
                   />
                   <Image
                     src={imageBlock}
-                    alt="item"
+                    alt={item.attributes.title}
                     width={200}
                     height={200}
                     className={`mx-auto px-[10px] pt-10 h-[320px] w-[${item.attributes.picture.data[0].attributes.formats.small.width}px] absolute bottom-0 left-1/2 transform -translate-x-1/2`}

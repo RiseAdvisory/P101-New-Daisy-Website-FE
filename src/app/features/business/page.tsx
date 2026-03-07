@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { FeaturesBusinessClient } from './FeaturesBusinessClient';
+import { FeaturesBreadcrumbSchema } from '@/components/seo/FeaturesBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'AI-Powered Salon Business Features - Booking, Marketing & Payments | The Daisy',
@@ -49,5 +50,10 @@ export const metadata: Metadata = {
 };
 
 export default function FeaturesBusinessPage() {
-  return <FeaturesBusinessClient />;
+  return (
+    <>
+      <FeaturesBreadcrumbSchema pageName="Business" pageSlug="business" />
+      <FeaturesBusinessClient />
+    </>
+  );
 }

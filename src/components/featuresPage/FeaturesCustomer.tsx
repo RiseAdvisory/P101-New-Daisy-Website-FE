@@ -44,7 +44,7 @@ export const FeaturesCustomerItem = ({
           height={1000}
           src={currentImage}
           style={item?.sizePicture}
-          alt="features-images"
+          alt={item.title}
         />
       </li>
       <div className="mx-4 last:hidden md:hidden">
