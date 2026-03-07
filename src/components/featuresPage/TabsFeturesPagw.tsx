@@ -89,7 +89,7 @@ export const TabsFeaturesProfessional: React.FC<
                   <div className="w-full h-[480px] bg-[#435655] rounded-[16px] border border-[#828E8E] relative overflow-hidden my-auto">
                     <Image
                       src={imageBlock}
-                      alt=""
+                      alt={item.attributes.title}
                       className="w-[300px] h-[420px] absolute bottom-0 left-[30%] z-20"
                       style={item?.attributes.stylePicture}
                       width={10000}

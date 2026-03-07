@@ -193,29 +193,29 @@ describe('FeaturesBusinessClient', () => {
       );
       // Existing 3 endpoints
       expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/features-business-marketings?populate=*&locale=en',
+        '/features-business-marketings?populate=*&locale=en&pagination[pageSize]=100',
       );
       expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-payments?populate=*&locale=en',
+        '/feature-business-payments?populate=*&locale=en&pagination[pageSize]=100',
       );
       expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-reports?populate=*&locale=en',
+        '/feature-business-reports?populate=*&locale=en&pagination[pageSize]=100',
       );
       // New 5 endpoints
       expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-ai-powereds?populate=*&locale=en',
+        '/feature-business-ai-powereds?populate=*&locale=en&pagination[pageSize]=100',
       );
       expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-bookings?populate=*&locale=en',
+        '/feature-business-bookings?populate=*&locale=en&pagination[pageSize]=100',
       );
       expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-communications?populate=*&locale=en',
+        '/feature-business-communications?populate=*&locale=en&pagination[pageSize]=100',
       );
       expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-growths?populate=*&locale=en',
+        '/feature-business-growths?populate=*&locale=en&pagination[pageSize]=100',
       );
       expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-controls?populate=*&locale=en',
+        '/feature-business-controls?populate=*&locale=en&pagination[pageSize]=100',
       );
     });
   });

@@ -24,7 +24,7 @@ export const FeaturesCustomerClient = () => {
         const [response, lstCustomerResponse] = await Promise.all([
           axiosInstance.get(`/features-customers?locale=${lang}`),
           axiosInstance.get(
-            `/feature-customer-list-sorts?populate=*&locale=${lang}`,
+            `/feature-customer-list-sorts?populate=*&locale=${lang}&pagination[pageSize]=100`,
           ),
         ]);
 

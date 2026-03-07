@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { FeaturesProfessionalClient } from './FeaturesProfessionalClient';
+import { FeaturesBreadcrumbSchema } from '@/components/seo/FeaturesBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Beauty Professional Features - Scheduling & Earnings | The Daisy',
@@ -44,5 +45,10 @@ export const metadata: Metadata = {
 };
 
 export default function FeaturesProfessionalPage() {
-  return <FeaturesProfessionalClient />;
+  return (
+    <>
+      <FeaturesBreadcrumbSchema pageName="Professional" pageSlug="professional" />
+      <FeaturesProfessionalClient />
+    </>
+  );
 }

@@ -47,7 +47,7 @@ export const CarouselBusinessMobile = ({
             <Image
               src={firstImage}
               className={'w-[220px] !h-[350px] '}
-              alt="item"
+              alt="Daisy business features overview"
               width={1000}
               height={1000}
             />
@@ -58,7 +58,7 @@ export const CarouselBusinessMobile = ({
             <Image
               src={secondImage}
               className={'w-[250px] h-[330px]'}
-              alt="item"
+              alt="Daisy business features overview"
               width={1000}
               height={1000}
             />
@@ -69,7 +69,7 @@ export const CarouselBusinessMobile = ({
             <Image
               src={thirdImage}
               className={'w-[220px] h-[350px]'}
-              alt="item"
+              alt="Daisy business features overview"
               width={1000}
               height={1000}
             />
