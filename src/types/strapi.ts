@@ -260,8 +260,8 @@ export interface BusinessOption {
 
 export interface FeatureListItem {
   id: number;
-  sortId?: number;
   attributes: {
+    sortId?: number;
     title: string;
     description: string;
     picture: {
