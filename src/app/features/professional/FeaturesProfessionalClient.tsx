@@ -31,7 +31,7 @@ export const FeaturesProfessionalClient = () => {
         setDataProfessional(response?.data?.data?.[0]?.attributes);
         const sortedObjects = listProfessionalResponse?.data?.data?.sort(
           (a: FeatureListItem, b: FeatureListItem) =>
-            (a.sortId || 0) - (b.sortId || 0),
+            (a.attributes.sortId || 0) - (b.attributes.sortId || 0),
         );
         setDataListProfessional(sortedObjects);
       } catch (error) {

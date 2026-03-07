@@ -56,6 +56,13 @@ jest.mock('@/components/featuresPage/DesctopViewProfessional', () => ({
         {categories.length > 0
           ? `Categories: ${categories.join(', ')}`
           : 'No categories'}
+        {Object.entries(categoryData).map(([key, items]: [string, any]) =>
+          items && items.length > 0 ? (
+            <div key={key} data-testid={`category-${key}`}>
+              {items.map((item: any) => item.attributes?.title).join(', ')}
+            </div>
+          ) : null,
+        )}
       </div>
     );
   },
@@ -307,6 +314,104 @@ describe('FeaturesBusinessClient', () => {
     await waitFor(() => {
       expect(screen.getByTestId('hero-page')).toHaveTextContent(
         'Business Features',
+      );
+    });
+  });
+
+  it('sorts category data by attributes.sortId in ascending order', async () => {
+    const unsortedItems = [
+      { id: 1, attributes: { sortId: 3, title: 'Third' } },
+      { id: 2, attributes: { sortId: 1, title: 'First' } },
+      { id: 3, attributes: { sortId: 2, title: 'Second' } },
+    ];
+
+    mockAxiosInstance.get.mockImplementation((url: string) => {
+      if (url.includes('feature-businesses')) {
+        return Promise.resolve(mockPageData);
+      }
+      if (url.includes('features-business-marketings')) {
+        return Promise.resolve(mockCategoryResponse(unsortedItems));
+      }
+      if (
+        url.includes('feature-business-payments') ||
+        url.includes('feature-business-reports')
+      ) {
+        return Promise.resolve(mockCategoryResponse([]));
+      }
+      return Promise.reject(new Error('Not Found'));
+    });
+
+    render(<FeaturesBusinessClient />);
+
+    await waitFor(() => {
+      expect(screen.getByTestId('category-marketing')).toHaveTextContent(
+        'First, Second, Third',
+      );
+    });
+  });
+
+  it('sorts correctly when sortId values exceed 50', async () => {
+    const highSortIds = [
+      { id: 1, attributes: { sortId: 100, title: 'Hundredth' } },
+      { id: 2, attributes: { sortId: 5, title: 'Fifth' } },
+      { id: 3, attributes: { sortId: 55, title: 'FiftyFifth' } },
+      { id: 4, attributes: { sortId: 60, title: 'Sixtieth' } },
+      { id: 5, attributes: { sortId: 2, title: 'Second' } },
+    ];
+
+    mockAxiosInstance.get.mockImplementation((url: string) => {
+      if (url.includes('feature-businesses')) {
+        return Promise.resolve(mockPageData);
+      }
+      if (url.includes('features-business-marketings')) {
+        return Promise.resolve(mockCategoryResponse(highSortIds));
+      }
+      if (
+        url.includes('feature-business-payments') ||
+        url.includes('feature-business-reports')
+      ) {
+        return Promise.resolve(mockCategoryResponse([]));
+      }
+      return Promise.reject(new Error('Not Found'));
+    });
+
+    render(<FeaturesBusinessClient />);
+
+    await waitFor(() => {
+      expect(screen.getByTestId('category-marketing')).toHaveTextContent(
+        'Second, Fifth, FiftyFifth, Sixtieth, Hundredth',
+      );
+    });
+  });
+
+  it('handles items with missing sortId using fallback of 0', async () => {
+    const mixedSortIds = [
+      { id: 1, attributes: { sortId: 3, title: 'Third' } },
+      { id: 2, attributes: { title: 'NoSort' } },
+      { id: 3, attributes: { sortId: 1, title: 'First' } },
+    ];
+
+    mockAxiosInstance.get.mockImplementation((url: string) => {
+      if (url.includes('feature-businesses')) {
+        return Promise.resolve(mockPageData);
+      }
+      if (url.includes('features-business-marketings')) {
+        return Promise.resolve(mockCategoryResponse(mixedSortIds));
+      }
+      if (
+        url.includes('feature-business-payments') ||
+        url.includes('feature-business-reports')
+      ) {
+        return Promise.resolve(mockCategoryResponse([]));
+      }
+      return Promise.reject(new Error('Not Found'));
+    });
+
+    render(<FeaturesBusinessClient />);
+
+    await waitFor(() => {
+      expect(screen.getByTestId('category-marketing')).toHaveTextContent(
+        'NoSort, First, Third',
       );
     });
   });
