@@ -13,19 +13,19 @@ export function FeaturesBreadcrumbSchema({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://jointhedaisy.com',
+        item: 'https://www.jointhedaisy.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Features',
-        item: 'https://jointhedaisy.com/features',
+        item: 'https://www.jointhedaisy.com/features',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: pageName,
-        item: `https://jointhedaisy.com/features/${pageSlug}`,
+        item: `https://www.jointhedaisy.com/features/${pageSlug}`,
       },
     ],
   };

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Salon & Spa Success Stories | The Daisy Testimonials',
     description:
       'Read success stories from salons, spas, and beauty professionals on The Daisy.',
-    url: 'https://jointhedaisy.com/resources/testimonials',
+    url: 'https://www.jointhedaisy.com/resources/testimonials',
     type: 'website',
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/resources/testimonials',
+    canonical: 'https://www.jointhedaisy.com/resources/testimonials',
   },
 };
 

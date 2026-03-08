@@ -1,10 +1,10 @@
 # robots.txt for The Daisy
-# https://jointhedaisy.com
+# https://www.jointhedaisy.com
 
 User-agent: *
 Allow: /
 
-Sitemap: https://jointhedaisy.com/sitemap.xml
+Sitemap: https://www.jointhedaisy.com/sitemap.xml
 
 Disallow: /api/
 Disallow: /_next/

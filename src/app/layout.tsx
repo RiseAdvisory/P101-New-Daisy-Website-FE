@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://jointhedaisy.com',
+    url: 'https://www.jointhedaisy.com',
     title: 'The Daisy - Beauty & Wellness Booking App',
     description:
       'Book beauty, wellness & salon services with cashback rewards. Find salons near you and enjoy exclusive promotions.',

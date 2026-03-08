@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: 'Book Beauty & Salon Services | The Daisy',
     description:
       'Discover salons near you, earn cashback rewards, and book beauty services with exclusive promotions.',
-    url: 'https://jointhedaisy.com/customer',
+    url: 'https://www.jointhedaisy.com/customer',
     type: 'website',
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/customer',
+    canonical: 'https://www.jointhedaisy.com/business',
   },
 };
 

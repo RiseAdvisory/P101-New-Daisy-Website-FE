@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Privacy Policy | The Daisy - Beauty Booking Platform',
     description:
       'Read The Daisy privacy policy to understand how we protect your personal information.',
-    url: 'https://jointhedaisy.com/privacy-policy',
+    url: 'https://www.jointhedaisy.com/privacy-policy',
     type: 'website',
     images: [
       {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/privacy-policy',
+    canonical: 'https://www.jointhedaisy.com/privacy-policy',
   },
 };
 

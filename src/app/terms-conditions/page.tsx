@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Terms & Conditions | The Daisy - Beauty Booking Platform',
     description:
       'Review The Daisy terms and conditions governing the use of our beauty booking platform.',
-    url: 'https://jointhedaisy.com/terms-conditions',
+    url: 'https://www.jointhedaisy.com/terms-conditions',
     type: 'website',
     images: [
       {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/terms-conditions',
+    canonical: 'https://www.jointhedaisy.com/terms-conditions',
   },
 };
 

@@ -6,7 +6,7 @@ export function SoftwareApplicationSchema() {
     applicationCategory: 'BusinessApplication',
     applicationSubCategory: 'Booking & Scheduling Software',
     operatingSystem: 'Web browser, iOS, Android',
-    url: 'https://jointhedaisy.com',
+    url: 'https://www.jointhedaisy.com',
     description:
       'Beauty and wellness booking management software for salons, spas, and freelance service providers. Features online booking, appointment management, client management, payment processing, and cashback rewards.',
     offers: {
@@ -138,12 +138,12 @@ export function SoftwareApplicationSchema() {
     screenshot: 'https://i.imgur.com/MNoL6BE.jpeg',
     softwareHelp: {
       '@type': 'WebPage',
-      url: 'https://jointhedaisy.com/faq',
+      url: 'https://www.jointhedaisy.com/faq',
     },
     creator: {
       '@type': 'Organization',
       name: 'The Daisy',
-      url: 'https://jointhedaisy.com',
+      url: 'https://www.jointhedaisy.com',
     },
     audience: {
       '@type': 'BusinessAudience',

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Beauty Booking Tutorials | The Daisy Resources',
     description:
       'Learn how to use The Daisy beauty booking platform with step-by-step tutorials.',
-    url: 'https://jointhedaisy.com/resources/tutorials',
+    url: 'https://www.jointhedaisy.com/resources/tutorials',
     type: 'website',
     images: [
       {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/resources/tutorials',
+    canonical: 'https://www.jointhedaisy.com/resources/tutorials',
   },
 };
 

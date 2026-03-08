@@ -83,7 +83,7 @@ export async function generateMetadata({
       images: ogImageUrl ? [ogImageUrl] : undefined,
     },
     alternates: {
-      canonical: `/resources/blog/${userType}/${slug}`,
+      canonical: `https://www.jointhedaisy.com/resources/blog/${userType}/${slug}`,
       languages: {
         en: `/resources/blog/${userType}/${slug}`,
         ar: `/ar/resources/blog/${userType}/${slug}`,

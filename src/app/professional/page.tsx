@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: 'For Beauty Professionals | The Daisy',
     description:
       'Join The Daisy as a beauty professional. Manage appointments, build your client base, and grow your career.',
-    url: 'https://jointhedaisy.com/professional',
+    url: 'https://www.jointhedaisy.com/professional',
     type: 'website',
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/professional',
+    canonical: 'https://www.jointhedaisy.com/professional',
   },
 };
 

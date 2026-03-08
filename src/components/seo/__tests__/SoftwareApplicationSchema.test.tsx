@@ -30,7 +30,7 @@ describe('SoftwareApplicationSchema', () => {
     expect(schema.applicationCategory).toBe('BusinessApplication');
     expect(schema.applicationSubCategory).toBe('Booking & Scheduling Software');
     expect(schema.operatingSystem).toBe('Web browser, iOS, Android');
-    expect(schema.url).toBe('https://jointhedaisy.com');
+    expect(schema.url).toBe('https://www.jointhedaisy.com');
   });
 
   it('contains all 6 subscription plan offers', () => {

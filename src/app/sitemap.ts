@@ -1,19 +1,13 @@
 import { MetadataRoute } from 'next';
 import { getAllBlogSlugs } from '@/lib/api/blog';
 
-const BASE_URL = 'https://jointhedaisy.com';
+const BASE_URL = 'https://www.jointhedaisy.com';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const currentDate = new Date().toISOString();
 
-  // Main pages
+  // Main pages (root / redirects to /business, so not included separately)
   const mainPages = [
-    {
-      url: BASE_URL,
-      lastModified: currentDate,
-      changeFrequency: 'weekly' as const,
-      priority: 1,
-    },
     {
       url: `${BASE_URL}/business`,
       lastModified: currentDate,
