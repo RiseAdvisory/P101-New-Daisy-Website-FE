@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Beauty & Wellness Blog | The Daisy Resources',
     description:
       'Read the latest beauty and wellness industry insights from The Daisy.',
-    url: 'https://jointhedaisy.com/resources/blog-post',
+    url: 'https://www.jointhedaisy.com/resources/blog-post',
     type: 'website',
     images: [
       {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/resources/blog-post',
+    canonical: 'https://www.jointhedaisy.com/resources/blog-post',
   },
 };
 

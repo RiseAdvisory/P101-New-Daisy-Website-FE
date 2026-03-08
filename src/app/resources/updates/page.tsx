@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Platform Updates | The Daisy Beauty Booking News',
     description:
       'Stay informed with the latest updates and features from The Daisy beauty booking platform.',
-    url: 'https://jointhedaisy.com/resources/updates',
+    url: 'https://www.jointhedaisy.com/resources/updates',
     type: 'website',
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/resources/updates',
+    canonical: 'https://www.jointhedaisy.com/resources/updates',
   },
 };
 

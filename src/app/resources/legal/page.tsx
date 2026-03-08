@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Legal Resources | The Daisy Beauty Platform',
     description:
       'Access legal resources and documentation from The Daisy beauty platform.',
-    url: 'https://jointhedaisy.com/resources/legal',
+    url: 'https://www.jointhedaisy.com/resources/legal',
     type: 'website',
     images: [
       {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/resources/legal',
+    canonical: 'https://www.jointhedaisy.com/resources/legal',
   },
 };
 

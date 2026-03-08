@@ -20,7 +20,7 @@ exports[`SoftwareApplicationSchema matches snapshot for JSON-LD schema structure
   "creator": {
     "@type": "Organization",
     "name": "The Daisy",
-    "url": "https://jointhedaisy.com",
+    "url": "https://www.jointhedaisy.com",
   },
   "description": "Beauty and wellness booking management software for salons, spas, and freelance service providers. Features online booking, appointment management, client management, payment processing, and cashback rewards.",
   "featureList": [
@@ -156,8 +156,8 @@ exports[`SoftwareApplicationSchema matches snapshot for JSON-LD schema structure
   "screenshot": "https://i.imgur.com/MNoL6BE.jpeg",
   "softwareHelp": {
     "@type": "WebPage",
-    "url": "https://jointhedaisy.com/faq",
+    "url": "https://www.jointhedaisy.com/faq",
   },
-  "url": "https://jointhedaisy.com",
+  "url": "https://www.jointhedaisy.com",
 }
 `;
