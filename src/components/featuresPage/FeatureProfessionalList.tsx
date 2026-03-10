@@ -30,7 +30,7 @@ export const FeatureProfessionalList = ({
 
             return (
               <li key={index} className="text-start mx-auto ">
-                <div className="bg-[#586968]  h-[320px] relative rounded-[9px] overflow-hidden ">
+                <div className="bg-[#586968] h-[320px] relative rounded-[9px] overflow-hidden">
                   <Image
                     src={leaf}
                     alt=""
@@ -41,9 +41,14 @@ export const FeatureProfessionalList = ({
                   <Image
                     src={imageBlock}
                     alt={item.attributes.title}
-                    width={200}
-                    height={200}
-                    className={`mx-auto px-[10px] pt-10 h-[320px] w-[${item.attributes.picture.data[0].attributes.formats.small.width}px] absolute bottom-0 left-1/2 transform -translate-x-1/2`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-contain z-10"
+                    style={{
+                      padding: '16px 10px',
+                      boxSizing: 'border-box',
+                      ...item?.attributes?.stylePicture,
+                    }}
                   />
                 </div>
                 <h3 className="mt-6 ltr:font-montserrat font-semibold text-[20px] leading-[30px] text-white">

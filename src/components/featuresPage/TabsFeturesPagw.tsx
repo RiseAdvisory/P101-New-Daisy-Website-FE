@@ -90,10 +90,14 @@ export const TabsFeaturesProfessional: React.FC<
                     <Image
                       src={imageBlock}
                       alt={item.attributes.title}
-                      className="w-[300px] h-[420px] absolute bottom-0 left-[30%] z-20"
-                      style={item?.attributes.stylePicture}
-                      width={10000}
-                      height={1000}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-contain z-20"
+                      style={{
+                        padding: '24px',
+                        boxSizing: 'border-box',
+                        ...item?.attributes?.stylePicture,
+                      }}
                     />
                     <Image
                       src={bgImage}
