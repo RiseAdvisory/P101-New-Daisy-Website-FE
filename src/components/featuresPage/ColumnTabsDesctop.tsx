@@ -82,11 +82,11 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
                   value={item.attributes.title}
                   className="px-2 py-4 w-full mx-auto"
                 >
-                  <div className="w-full h-[480px] bg-[#435655] rounded-[16px] border border-[#828E8E] relative overflow-hidden">
+                  <div className="w-full h-[480px] bg-[#435655] rounded-[16px] border border-[#828E8E] relative overflow-hidden flex items-center justify-center">
                     <Image
                       src={imageBlock}
                       alt={item.attributes.title}
-                      className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[650px] h-[420px] z-20"
+                      className="relative z-20 max-h-full object-contain"
                       style={item?.attributes.stylePicture}
                       width={1000}
                       height={1000}
