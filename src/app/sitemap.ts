@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next';
 import { getAllBlogSlugs } from '@/lib/api/blog';
+import { getAllCompareSlugs, getAllAlternativeSlugs } from '@/lib/constants/competitors/comparisonPages';
+import { getAllSolutionSlugs } from '@/lib/constants/solutions';
 
 const BASE_URL = 'https://www.jointhedaisy.com';
 
@@ -137,6 +139,34 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
+  // WS2: Comparison pages
+  const compareIndexPages = [
+    { url: `${BASE_URL}/compare`, lastModified: currentDate, changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: `${BASE_URL}/alternative`, lastModified: currentDate, changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: `${BASE_URL}/solutions`, lastModified: currentDate, changeFrequency: 'weekly' as const, priority: 0.8 },
+  ];
+
+  const comparePages = getAllCompareSlugs().map((slug) => ({
+    url: `${BASE_URL}/compare/${slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  const alternativePagesList = getAllAlternativeSlugs().map((slug) => ({
+    url: `${BASE_URL}/alternative/${slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  const solutionPages = getAllSolutionSlugs().map((slug) => ({
+    url: `${BASE_URL}/solutions/${slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
   return [
     ...mainPages,
     ...featurePages,
@@ -144,5 +174,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...resourcePages,
     ...legalPages,
     ...blogPages,
+    ...compareIndexPages,
+    ...comparePages,
+    ...alternativePagesList,
+    ...solutionPages,
   ];
 }
