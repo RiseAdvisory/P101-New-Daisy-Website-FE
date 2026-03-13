@@ -260,11 +260,20 @@ export interface BusinessOption {
 
 export interface FeatureListItem {
   id: number;
-  sortId?: number;
-  attributes?: {
-    title?: string;
-    description?: string;
-    image?: StrapiImage;
+  attributes: {
+    sortId?: number;
+    title: string;
+    description: string;
+    picture: {
+      data: {
+        attributes: {
+          url: string;
+          width?: number;
+          height?: number;
+        };
+      }[];
+    };
+    stylePicture?: Record<string, string | number>;
   };
 }
 

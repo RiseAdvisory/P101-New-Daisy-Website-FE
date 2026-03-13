@@ -58,7 +58,7 @@ export const FeaturesBusinessClient = () => {
           axiosInstance.get(`/feature-businesses?populate=*&locale=${lang}`),
           ...EXISTING_ENDPOINTS.map((key) =>
             axiosInstance.get(
-              `${CATEGORY_ENDPOINTS[key]}?populate=*&locale=${lang}`,
+              `${CATEGORY_ENDPOINTS[key]}?populate=*&locale=${lang}&pagination[pageSize]=100`,
             ),
           ),
         ]);
@@ -66,9 +66,14 @@ export const FeaturesBusinessClient = () => {
         const [pageData] = responsePage.data.data;
         setDataFeatures(pageData?.attributes);
 
+        const sortBySortId = (items: FeatureListItem[] | null) =>
+          items?.sort(
+            (a, b) => (a.attributes.sortId || 0) - (b.attributes.sortId || 0),
+          ) ?? null;
+
         const existingData: Partial<CategoryData> = {};
         EXISTING_ENDPOINTS.forEach((key, i) => {
-          existingData[key] = existingResponses[i]?.data?.data ?? null;
+          existingData[key] = sortBySortId(existingResponses[i]?.data?.data ?? null);
         });
 
         // Fetch new categories — graceful fallback if content types don't exist yet
@@ -79,7 +84,7 @@ export const FeaturesBusinessClient = () => {
         const newResults = await Promise.allSettled(
           newKeys.map((key) =>
             axiosInstance.get(
-              `${CATEGORY_ENDPOINTS[key]}?populate=*&locale=${lang}`,
+              `${CATEGORY_ENDPOINTS[key]}?populate=*&locale=${lang}&pagination[pageSize]=100`,
             ),
           ),
         );
@@ -89,7 +94,7 @@ export const FeaturesBusinessClient = () => {
           const result = newResults[i];
           newData[key] =
             result.status === 'fulfilled'
-              ? result.value?.data?.data ?? null
+              ? sortBySortId(result.value?.data?.data ?? null)
               : null;
         });
 

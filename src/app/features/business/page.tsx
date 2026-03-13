@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { FeaturesBusinessClient } from './FeaturesBusinessClient';
+import { FeaturesBreadcrumbSchema } from '@/components/seo/FeaturesBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'AI-Powered Salon Business Features - Booking, Marketing & Payments | The Daisy',
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     title: 'AI-Powered Salon Business Features - Booking, Marketing & Payments | The Daisy',
     description:
       'AI-powered features for salon & spa businesses: smart scheduling, booking, marketing, payments, communication, growth, and team management.',
-    url: 'https://jointhedaisy.com/features/business',
+    url: 'https://www.jointhedaisy.com/features/business',
     type: 'website',
     images: [
       {
@@ -44,10 +45,15 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/features/business',
+    canonical: 'https://www.jointhedaisy.com/features/business',
   },
 };
 
 export default function FeaturesBusinessPage() {
-  return <FeaturesBusinessClient />;
+  return (
+    <>
+      <FeaturesBreadcrumbSchema pageName="Business" pageSlug="business" />
+      <FeaturesBusinessClient />
+    </>
+  );
 }

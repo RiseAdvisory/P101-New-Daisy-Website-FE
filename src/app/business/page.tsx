@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: 'Salon & Spa Business Solutions | The Daisy',
     description:
       'Grow your salon or spa business with The Daisy. Manage bookings, staff, and promotions on our beauty marketplace.',
-    url: 'https://jointhedaisy.com/business',
+    url: 'https://www.jointhedaisy.com/business',
     type: 'website',
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/business',
+    canonical: 'https://www.jointhedaisy.com/business',
   },
 };
 

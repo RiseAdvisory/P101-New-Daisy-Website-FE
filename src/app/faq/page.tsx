@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'FAQ - Beauty Booking Questions | The Daisy',
     description:
       'Find answers to common questions about The Daisy beauty booking platform.',
-    url: 'https://jointhedaisy.com/faq',
+    url: 'https://www.jointhedaisy.com/faq',
     type: 'website',
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/faq',
+    canonical: 'https://www.jointhedaisy.com/faq',
   },
 };
 

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: 'Customer Features - Salon Booking & Cashback | The Daisy',
     description:
       'Find salons near you, earn cashback rewards, and manage beauty appointments with The Daisy.',
-    url: 'https://jointhedaisy.com/features/customer',
+    url: 'https://www.jointhedaisy.com/features/customer',
     type: 'website',
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/features/customer',
+    canonical: 'https://www.jointhedaisy.com/features/business',
   },
 };
 

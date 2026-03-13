@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'About Us | The Daisy - Beauty & Wellness Marketplace',
     description:
       'Learn about The Daisy, the beauty and wellness marketplace connecting customers with salons and beauty professionals.',
-    url: 'https://jointhedaisy.com/about',
+    url: 'https://www.jointhedaisy.com/about',
     type: 'website',
     images: [
       {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/about',
+    canonical: 'https://www.jointhedaisy.com/about',
   },
 };
 

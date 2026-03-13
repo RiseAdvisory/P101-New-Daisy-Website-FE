@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Pricing Plans for Salons & Spas | The Daisy',
     description:
       'Flexible pricing plans for salons, spas, and beauty professionals. Monthly or annual billing available.',
-    url: 'https://jointhedaisy.com/pricing',
+    url: 'https://www.jointhedaisy.com/pricing',
     type: 'website',
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/pricing',
+    canonical: 'https://www.jointhedaisy.com/pricing',
   },
 };
 

@@ -3,21 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { baseURLImage } from '@/helpers/axiosConfig';
 import Image from 'next/image';
 import { useChangeLanguage } from '@/store/language';
-
-interface DataItem {
-  id: number;
-  attributes: {
-    title: string;
-    description: string;
-    picture: {
-      data: {
-        attributes: {
-          url: string;
-        };
-      }[];
-    };
-  };
-}
+import { FeatureListItem } from '@/types/strapi';
 
 interface TabsFeaturesProfessionalProps {
   itemsList: any;
@@ -25,7 +11,7 @@ interface TabsFeaturesProfessionalProps {
   bgImage: any;
   title: any;
   description: any;
-  dataList: any;
+  dataList: FeatureListItem[];
   idFeatures: any;
 }
 
@@ -71,7 +57,7 @@ export const TabsFeaturesProfessional: React.FC<
           >
             <TabsList className="flex flex-col justify-center py-6 ltr:mr-6 rtl:ml-6 ltr:ml-16 rtl:mr-16 bg-primary px-6 h-auto text-wrap">
               <ul className="flex flex-col text-start bg-primary rounded-xl w-[470px]">
-                {dataList.map((item: any, index: any) => (
+                {dataList.map((item, index) => (
                   <li className="group" key={index}>
                     <TabsTrigger
                       className="!items-start rtl:!items-end !bg-transparent data-[state=active]:border-white data-[state=active]:!bg-white/10 group hover:!bg-white/10 flex flex-col w-full text-[16px] !p-6 text-[#172524] mt-[10px] justify-start rounded-lg cursor-pointer capitalize py-3 border-[1px] border-transparent"
@@ -88,7 +74,7 @@ export const TabsFeaturesProfessional: React.FC<
                 ))}
               </ul>
             </TabsList>
-            {dataList.map((item: any, index: any) => {
+            {dataList.map((item, index) => {
               const imageBlock = new URL(
                 item.attributes.picture.data[0].attributes.url,
                 baseURLImage,
@@ -103,11 +89,15 @@ export const TabsFeaturesProfessional: React.FC<
                   <div className="w-full h-[480px] bg-[#435655] rounded-[16px] border border-[#828E8E] relative overflow-hidden my-auto">
                     <Image
                       src={imageBlock}
-                      alt=""
-                      className="w-[300px] h-[420px] absolute bottom-0 left-[30%] z-20"
-                      style={item?.attributes.stylePicture}
-                      width={10000}
-                      height={1000}
+                      alt={item.attributes.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-contain z-20"
+                      style={{
+                        padding: '24px',
+                        boxSizing: 'border-box',
+                        ...item?.attributes?.stylePicture,
+                      }}
                     />
                     <Image
                       src={bgImage}

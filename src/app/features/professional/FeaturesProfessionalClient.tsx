@@ -24,14 +24,14 @@ export const FeaturesProfessionalClient = () => {
         const [response, listProfessionalResponse] = await Promise.all([
           axiosInstance.get(`/features-professionals?locale=${lang}`),
           axiosInstance.get(
-            `/features-professional-list-sorts?populate=*&locale=${lang}`,
+            `/features-professional-list-sorts?populate=*&locale=${lang}&pagination[pageSize]=100`,
           ),
         ]);
 
         setDataProfessional(response?.data?.data?.[0]?.attributes);
         const sortedObjects = listProfessionalResponse?.data?.data?.sort(
           (a: FeatureListItem, b: FeatureListItem) =>
-            (a.sortId || 0) - (b.sortId || 0),
+            (a.attributes.sortId || 0) - (b.attributes.sortId || 0),
         );
         setDataListProfessional(sortedObjects);
       } catch (error) {

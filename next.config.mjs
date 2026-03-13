@@ -11,23 +11,23 @@ const nextConfig = {
       {
         source: '/',
         destination: '/business',
-        permanent: false,
+        permanent: true,
       },
       {
         source: '/features',
         destination: '/features/business',
-        permanent: false,
+        permanent: true,
       },
       // Redirect customer pages to business
       {
         source: '/customer',
         destination: '/business',
-        permanent: false,
+        permanent: true,
       },
       {
         source: '/features/customer',
         destination: '/features/business',
-        permanent: false,
+        permanent: true,
       },
     ];
   },

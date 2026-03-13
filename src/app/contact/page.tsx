@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Contact Us | The Daisy - Beauty Booking Platform',
     description:
       'Get in touch with The Daisy team for beauty platform questions and support.',
-    url: 'https://jointhedaisy.com/contact',
+    url: 'https://www.jointhedaisy.com/contact',
     type: 'website',
     images: [
       {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/contact',
+    canonical: 'https://www.jointhedaisy.com/contact',
   },
 };
 

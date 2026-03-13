@@ -128,7 +128,7 @@ export const DesctopViewProfessional = ({
             src={firstImage}
             className={'w-[220px] h-[320px]'}
             style={dataBusiness?.firstImageStyle}
-            alt="item"
+            alt="Daisy business features overview"
             width={1000}
             height={1000}
           />
@@ -138,7 +138,7 @@ export const DesctopViewProfessional = ({
             src={secondImage}
             className={'w-[220px] h-[320px]'}
             style={dataBusiness?.secondImageStyle}
-            alt="item"
+            alt="Daisy business features overview"
             width={1000}
             height={1000}
           />
@@ -148,7 +148,7 @@ export const DesctopViewProfessional = ({
             src={thirdImage}
             className={'w-[220px] h-[320px]'}
             style={dataBusiness?.thirdImageStyle}
-            alt="item"
+            alt="Daisy business features overview"
             width={1000}
             height={1000}
           />

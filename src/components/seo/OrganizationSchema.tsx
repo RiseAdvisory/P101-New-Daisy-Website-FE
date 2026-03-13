@@ -3,7 +3,7 @@ export function OrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'The Daisy',
-    url: 'https://jointhedaisy.com',
+    url: 'https://www.jointhedaisy.com',
     logo: 'https://i.imgur.com/MNoL6BE.jpeg',
     description:
       'The Daisy is a platform connecting businesses, professionals, and customers for exceptional service experiences.',
@@ -13,13 +13,13 @@ export function OrganizationSchema() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer service',
-      url: 'https://jointhedaisy.com/contact',
+      url: 'https://www.jointhedaisy.com/contact',
     },
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://jointhedaisy.com/search?q={search_term_string}',
+        urlTemplate: 'https://www.jointhedaisy.com/search?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },

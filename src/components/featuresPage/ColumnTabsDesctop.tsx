@@ -4,24 +4,7 @@ import Separator from '../separator/Separator';
 import Image from 'next/image';
 import { baseURLImage } from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
-
-interface DataItem {
-  id: number;
-  attributes: {
-    title: string;
-    description: string;
-    stylePicture: any;
-    picture: {
-      data: {
-        attributes: {
-          url: string;
-          width: number;
-          height: number;
-        };
-      }[];
-    };
-  };
-}
+import { FeatureListItem } from '@/types/strapi';
 
 interface ColumnTabsDesctopProps {
   itemsList: any;
@@ -29,7 +12,7 @@ interface ColumnTabsDesctopProps {
   bgImage: any;
   title: any;
   description: any;
-  dataList: DataItem[];
+  dataList: FeatureListItem[];
   idFeatures: any;
 }
 
@@ -102,11 +85,15 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
                   <div className="w-full h-[480px] bg-[#435655] rounded-[16px] border border-[#828E8E] relative overflow-hidden">
                     <Image
                       src={imageBlock}
-                      alt=""
-                      className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[650px] h-[420px] z-20"
-                      style={item?.attributes.stylePicture}
-                      width={1000}
-                      height={1000}
+                      alt={item.attributes.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 100vw"
+                      className="object-contain z-20"
+                      style={{
+                        padding: '24px',
+                        boxSizing: 'border-box',
+                        ...item?.attributes?.stylePicture,
+                      }}
                     />
                     <Image
                       src={bgImage}

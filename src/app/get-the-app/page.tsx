@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Download The Daisy App | Beauty Booking for iOS & Android',
     description:
       'Download The Daisy beauty booking app. Find salons, book appointments, and earn cashback.',
-    url: 'https://jointhedaisy.com/get-the-app',
+    url: 'https://www.jointhedaisy.com/get-the-app',
     type: 'website',
     images: [
       {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/get-the-app',
+    canonical: 'https://www.jointhedaisy.com/get-the-app',
   },
 };
 

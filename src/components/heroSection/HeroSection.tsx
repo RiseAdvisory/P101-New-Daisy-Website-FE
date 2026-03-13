@@ -39,6 +39,7 @@ export const HeroPage = ({
   bredCrumbHref?: string;
 }) => {
   const path = usePathname();
+  const Heading = features ? 'h1' : 'h2';
   const scrollToTopOfBlock = () => {
     if (blockRef.current) {
       blockRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -73,9 +74,9 @@ export const HeroPage = ({
           {title}
         </p>
       )}
-      <h2 className="text-center mt-2 font-semibold text-[32px] leading-10 text-white md:px-16 lg:px-32 xl:px-48 md:text-[48px] md:leading-[60px]">
+      <Heading className="text-center mt-2 font-semibold text-[32px] leading-10 text-white md:px-16 lg:px-32 xl:px-48 md:text-[48px] md:leading-[60px]">
         {description}
-      </h2>
+      </Heading>
       <p
         className={cn(
           'text-base ltr:font-montserrat font-normal text-[#D5D9D9] mt-2 text-center md:px-16 lg:px-32 xl:px-48',

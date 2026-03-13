@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Careers | The Daisy - Beauty Tech Jobs',
     description:
       'Join The Daisy team and help build the future of beauty and wellness booking.',
-    url: 'https://jointhedaisy.com/careers',
+    url: 'https://www.jointhedaisy.com/careers',
     type: 'website',
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/careers',
+    canonical: 'https://www.jointhedaisy.com/careers',
   },
 };
 

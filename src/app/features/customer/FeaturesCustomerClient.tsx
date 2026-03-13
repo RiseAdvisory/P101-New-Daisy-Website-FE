@@ -24,14 +24,14 @@ export const FeaturesCustomerClient = () => {
         const [response, lstCustomerResponse] = await Promise.all([
           axiosInstance.get(`/features-customers?locale=${lang}`),
           axiosInstance.get(
-            `/feature-customer-list-sorts?populate=*&locale=${lang}`,
+            `/feature-customer-list-sorts?populate=*&locale=${lang}&pagination[pageSize]=100`,
           ),
         ]);
 
         setDataCustomer(response?.data?.data?.[0]?.attributes);
         const sortedObjects = lstCustomerResponse?.data?.data?.sort(
           (a: FeatureListItem, b: FeatureListItem) =>
-            (a.sortId || 0) - (b.sortId || 0),
+            (a.attributes.sortId || 0) - (b.attributes.sortId || 0),
         );
         setDataListBlog(sortedObjects);
       } catch (error) {

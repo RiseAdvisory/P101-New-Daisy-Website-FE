@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { FeaturesProfessionalClient } from './FeaturesProfessionalClient';
+import { FeaturesBreadcrumbSchema } from '@/components/seo/FeaturesBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Beauty Professional Features - Scheduling & Earnings | The Daisy',
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     title: 'Beauty Professional Features - Scheduling & Earnings | The Daisy',
     description:
       'Features for beauty professionals: scheduling, client management, and earnings tracking.',
-    url: 'https://jointhedaisy.com/features/professional',
+    url: 'https://www.jointhedaisy.com/features/professional',
     type: 'website',
     images: [
       {
@@ -39,10 +40,15 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://jointhedaisy.com/features/professional',
+    canonical: 'https://www.jointhedaisy.com/features/professional',
   },
 };
 
 export default function FeaturesProfessionalPage() {
-  return <FeaturesProfessionalClient />;
+  return (
+    <>
+      <FeaturesBreadcrumbSchema pageName="Professional" pageSlug="professional" />
+      <FeaturesProfessionalClient />
+    </>
+  );
 }
