@@ -7,7 +7,8 @@ import ClientSideEffect from '@/helpers/ClientSideEffect';
 import { MyUserTypeProvider } from './MyContext';
 import { OrganizationSchema } from '@/components/seo/OrganizationSchema';
 import { SoftwareApplicationSchema } from '@/components/seo/SoftwareApplicationSchema';
-import { WebVitals } from '@/components/performance/WebVitals';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ServiceWorkerRegistration } from '@/components/performance/ServiceWorkerRegistration';
 
 const openSans = Open_Sans({
@@ -111,7 +112,8 @@ export default function RootLayout({
         className={`${openSans.variable} ${montserrat.variable} ${inter.variable} ${cairo.variable} font-openSans rtl:font-cairo`}
         dir="ltr"
       >
-        <WebVitals />
+        <Analytics />
+        <SpeedInsights />
         <ServiceWorkerRegistration />
         <MyUserTypeProvider>{children}</MyUserTypeProvider>
       </body>
