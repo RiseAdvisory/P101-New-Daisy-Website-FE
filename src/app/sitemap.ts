@@ -86,24 +86,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'daily' as const,
       priority: 0.7,
     },
-    {
-      url: `${BASE_URL}/resources/tutorials`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly' as const,
-      priority: 0.6,
-    },
-    {
-      url: `${BASE_URL}/resources/testimonials`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly' as const,
-      priority: 0.5,
-    },
-    {
-      url: `${BASE_URL}/resources/updates`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly' as const,
-      priority: 0.6,
-    },
   ];
 
   // Legal pages
@@ -116,12 +98,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${BASE_URL}/terms-conditions`,
-      lastModified: currentDate,
-      changeFrequency: 'yearly' as const,
-      priority: 0.3,
-    },
-    {
-      url: `${BASE_URL}/resources/legal`,
       lastModified: currentDate,
       changeFrequency: 'yearly' as const,
       priority: 0.3,
