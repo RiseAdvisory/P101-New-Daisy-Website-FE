@@ -58,10 +58,16 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'MARKETPLACE',
-          text: 'Showcase Your Team, Boost Your Business',
+          title: 'Smart Booking',
+          text: 'AI-Powered Appointment Management',
           description:
-            'Unlock new opportunities to grow your customer base and increase profits with ease.',
+            'Let Daisy\'s AI receptionist handle bookings 24/7, so you never miss a customer. Manage your calendar, staff schedules, and service slots all in one place.',
+          listSub: [
+            '24/7 AI booking assistant',
+            'Automated reminders & confirmations',
+            'Smart calendar management',
+            'Multi-staff scheduling',
+          ],
         },
       },
       {
@@ -93,14 +99,20 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'FEATURES',
-          text: 'User-Friendly Design',
+          title: 'Customer Acquisition',
+          text: '360° Customer Growth Engine',
           description:
-            'Effortlessly manage bookings on both mobile and desktop.',
+            'Attract new customers through our marketplace, cashback rewards, and built-in marketing tools. Grow your client base without the guesswork.',
+          listSub: [
+            'Marketplace visibility to thousands of users',
+            'Cashback incentives that drive repeat visits',
+            'Integrated marketing campaigns',
+            'Customer loyalty programs',
+          ],
         },
       },
       {
-        sortId: 4,
+        sortId: 3,
         mainImage: '/images/pages/business/scroll/integrations.png',
         firstBg: '/images/pages/business/scroll/leaf-bg.png',
         secondBg: '/images/pages/business/scroll/stars.png',
@@ -143,14 +155,20 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'AUTOMATION',
-          text: 'Simplify and Automate',
+          title: 'Brand Control',
+          text: 'Your Brand, Your Way',
           description:
-            'Streamline payment processing, synchronize appointments, and automate routine tasks.',
+            'Maintain full control over your brand identity with white-label solutions. Customize your booking page, notifications, and customer experience to match your brand.',
+          listSub: [
+            'Customizable booking page',
+            'White-label communications',
+            'Branded customer experience',
+            'Custom domain support',
+          ],
         },
       },
       {
-        sortId: 5,
+        sortId: 4,
         mainImage: '/images/pages/business/scroll/analytics.png',
         firstBg: '/images/pages/business/scroll/leaf-bg.png',
         styleMainPictureJSON: {
@@ -178,10 +196,16 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'ANALYTICS',
-          text: 'Insights to Drive Growth',
+          title: 'Business Analytics',
+          text: 'Data-Driven Decisions',
           description:
-            'Powerful analytics to track performance, identify trends, and optimize your operations for success.',
+            'Track performance, understand your customers, and make smarter business decisions with comprehensive analytics and reporting tools.',
+          listSub: [
+            'Real-time revenue tracking',
+            'Customer insights & trends',
+            'Staff performance metrics',
+            'Booking analytics dashboard',
+          ],
         },
       },
     ],
@@ -243,10 +267,16 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'السوق العام',
-          text: 'وسّع نطاقك، أبهج العملاء، وزد من نمو عملك بسهولة',
+          title: 'الحجز الذكي',
+          text: 'إدارة المواعيد بالذكاء الاصطناعي',
           description:
-            'وسّع نطاقك، أبهج العملاء، وزد من نمو عملك بسهولة',
+            'دع مساعد ديزي الذكي يتولى الحجوزات على مدار الساعة، حتى لا تفوتك أي فرصة. أدِر تقويمك وجداول الموظفين وفترات الخدمة في مكان واحد.',
+          listSub: [
+            'مساعد حجز ذكي يعمل على مدار الساعة',
+            'تذكيرات وتأكيدات تلقائية',
+            'إدارة تقويم ذكية',
+            'جدولة متعددة الموظفين',
+          ],
         },
       },
       {
@@ -278,14 +308,20 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'المميزات',
-          text: 'تصميم سهل الاستخدام، متاح عبر جميع الأجهزة، يتكامل مع أنظمتك الحالية',
+          title: 'اكتساب العملاء',
+          text: 'محرك نمو العملاء 360°',
           description:
-            'تصميم سهل الاستخدام، متاح عبر جميع الأجهزة، يتكامل مع أنظمتك الحالية',
+            'اجذب عملاء جدد من خلال سوقنا ومكافآت الاسترداد النقدي وأدوات التسويق المدمجة. نمِّ قاعدة عملائك دون تخمين.',
+          listSub: [
+            'ظهور في السوق أمام آلاف المستخدمين',
+            'حوافز استرداد نقدي تدفع لتكرار الزيارات',
+            'حملات تسويقية متكاملة',
+            'برامج ولاء العملاء',
+          ],
         },
       },
       {
-        sortId: 4,
+        sortId: 3,
         mainImage: '/images/pages/business/scroll/integrations.png',
         firstBg: '/images/pages/business/scroll/leaf-bg.png',
         secondBg: '/images/pages/business/scroll/stars.png',
@@ -328,14 +364,20 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'الأتمتة',
-          text: 'بسط المدفوعات، مزامنة الجداول، وأتمتة مهامك اليومية',
+          title: 'التحكم بالعلامة التجارية',
+          text: 'علامتك التجارية، بأسلوبك',
           description:
-            'بسط المدفوعات، مزامنة الجداول، وأتمتة مهامك اليومية',
+            'حافظ على السيطرة الكاملة على هوية علامتك التجارية مع حلول العلامة البيضاء. خصص صفحة الحجز والإشعارات وتجربة العملاء لتتناسب مع علامتك.',
+          listSub: [
+            'صفحة حجز قابلة للتخصيص',
+            'اتصالات بعلامتك التجارية',
+            'تجربة عملاء مخصصة',
+            'دعم النطاق المخصص',
+          ],
         },
       },
       {
-        sortId: 5,
+        sortId: 4,
         mainImage: '/images/pages/business/scroll/analytics.png',
         firstBg: '/images/pages/business/scroll/leaf-bg.png',
         styleMainPictureJSON: {
@@ -363,10 +405,16 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'التحليلات',
-          text: 'افتح رؤى مع تقارير الأداء لتحفيز النمو',
+          title: 'تحليلات الأعمال',
+          text: 'قرارات مبنية على البيانات',
           description:
-            'افتح رؤى مع تقارير الأداء لتحفيز النمو',
+            'تتبع الأداء، وافهم عملاءك، واتخذ قرارات أعمال أذكى مع أدوات التحليل والتقارير الشاملة.',
+          listSub: [
+            'تتبع الإيرادات في الوقت الفعلي',
+            'رؤى واتجاهات العملاء',
+            'مقاييس أداء الموظفين',
+            'لوحة تحكم تحليلات الحجوزات',
+          ],
         },
       },
     ],

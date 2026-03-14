@@ -58,10 +58,16 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'MARKETPLACE',
-          text: 'Curated Services To Guarantee Your Experience',
+          title: 'Easy Booking',
+          text: 'Book in Seconds',
           description:
-            'Explore trusted and verified service providers.',
+            'Find and book beauty and wellness services near you in just a few taps. Browse salons, spas, and clinics with real-time availability.',
+          listSub: [
+            'Instant booking confirmation',
+            'Real-time availability',
+            'Browse by service or location',
+            'Save your favorite places',
+          ],
         },
       },
       {
@@ -93,10 +99,16 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'DISCOVER',
-          text: 'Discover Top Providers',
+          title: 'Cashback Rewards',
+          text: 'Earn While You Glow',
           description:
-            'Check out before-and-afters showing customer results.',
+            'Get cashback on every booking. The more you book, the more you earn. Use your rewards on future services or withdraw to your wallet.',
+          listSub: [
+            'Cashback on every booking',
+            'Accumulate and redeem rewards',
+            'Wallet management',
+            'Exclusive member deals',
+          ],
         },
       },
       {
@@ -143,10 +155,16 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'BOOKINGS',
-          text: 'Easily Manage Bookings',
+          title: 'Verified Reviews',
+          text: 'Trust What Others Say',
           description:
-            'Booking appointments has never been easier or faster.',
+            'Read verified reviews from real customers to choose the best services. Share your experience and help the community make informed decisions.',
+          listSub: [
+            'Verified customer reviews',
+            'Star ratings & photos',
+            'Detailed service feedback',
+            'Community-driven trust',
+          ],
         },
       },
       {
@@ -178,10 +196,16 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'CASHBACK',
-          text: 'Earn Cashback Rewards!',
+          title: 'Smart Reminders',
+          text: 'Never Miss an Appointment',
           description:
-            'Find great deals and earn cashback.',
+            'Get timely reminders before your appointments. Manage, reschedule, or cancel your bookings easily from the app.',
+          listSub: [
+            'Automated appointment reminders',
+            'Easy rescheduling',
+            'Booking history at a glance',
+            'Calendar sync',
+          ],
         },
       },
     ],
@@ -243,10 +267,16 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'السوق العام',
-          text: 'اختر خدمتك التالية بثقة، وضمان تجربتك الاستثنائية.',
+          title: 'حجز سهل',
+          text: 'احجزي في ثوانٍ',
           description:
-            'اختر خدمتك التالية بثقة، وضمان تجربتك الاستثنائية.',
+            'ابحثي واحجزي خدمات التجميل والعافية القريبة منك بلمسات قليلة. تصفحي الصالونات والمنتجعات والعيادات مع التوفر الفوري.',
+          listSub: [
+            'تأكيد فوري للحجز',
+            'توفر في الوقت الفعلي',
+            'تصفح حسب الخدمة أو الموقع',
+            'احفظي أماكنك المفضلة',
+          ],
         },
       },
       {
@@ -278,10 +308,16 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'اكتشف',
-          text: 'اكتشف التجارب من أفضل مزودي الخدمات',
+          title: 'مكافآت الاسترداد النقدي',
+          text: 'اكسبي أثناء تألقك',
           description:
-            'اكتشف التجارب من أفضل مزودي الخدمات',
+            'احصلي على استرداد نقدي على كل حجز. كلما حجزتِ أكثر، كسبتِ أكثر. استخدمي مكافآتك على الخدمات المستقبلية أو اسحبيها إلى محفظتك.',
+          listSub: [
+            'استرداد نقدي على كل حجز',
+            'اجمعي واستبدلي المكافآت',
+            'إدارة المحفظة',
+            'عروض حصرية للأعضاء',
+          ],
         },
       },
       {
@@ -328,10 +364,16 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'الحجوزات',
-          text: 'إدارة حجوزاتك بسهولة بنقرة واحدة',
+          title: 'تقييمات موثوقة',
+          text: 'ثقي بما يقوله الآخرون',
           description:
-            'إدارة حجوزاتك بسهولة بنقرة واحدة',
+            'اقرأي تقييمات موثوقة من عملاء حقيقيين لاختيار أفضل الخدمات. شاركي تجربتك وساعدي المجتمع في اتخاذ قرارات مدروسة.',
+          listSub: [
+            'تقييمات عملاء موثوقة',
+            'تقييمات بالنجوم والصور',
+            'ملاحظات مفصلة عن الخدمة',
+            'ثقة مدعومة من المجتمع',
+          ],
         },
       },
       {
@@ -363,10 +405,16 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'الاسترداد النقدي',
-          text: 'اكسب استرداد نقدي بينما تدلل نفسك!',
+          title: 'تذكيرات ذكية',
+          text: 'لا تفوّتي أي موعد',
           description:
-            'اكسب استرداد نقدي بينما تدلل نفسك!',
+            'احصلي على تذكيرات في الوقت المناسب قبل مواعيدك. أديري وأعيدي جدولة أو ألغي حجوزاتك بسهولة من التطبيق.',
+          listSub: [
+            'تذكيرات تلقائية بالمواعيد',
+            'إعادة جدولة سهلة',
+            'سجل الحجوزات بنظرة واحدة',
+            'مزامنة التقويم',
+          ],
         },
       },
     ],

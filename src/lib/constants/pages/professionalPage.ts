@@ -58,10 +58,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'BRAND',
-          text: 'Showcase Your Work, Elevate Your Brand',
+          title: 'Flexible Schedule',
+          text: 'Work on Your Terms',
           description:
-            'Your gateway to building a stronger reputation.',
+            'Set your own hours and manage your availability with ease. Daisy gives you full control over when and where you work.',
+          listSub: [
+            'Set your own working hours',
+            'Block time for personal commitments',
+            'Real-time schedule updates',
+            'Multi-location support',
+          ],
         },
       },
       {
@@ -93,10 +99,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'CLIENTS',
-          text: 'Engage With New Clients',
+          title: 'Client Management',
+          text: 'Build Lasting Relationships',
           description:
-            'Build stronger connections with tools designed to keep clients coming back.',
+            'Keep track of your clients, their preferences, and appointment history. Build stronger relationships and deliver personalized services.',
+          listSub: [
+            'Detailed client profiles',
+            'Appointment history tracking',
+            'Client preference notes',
+            'Automated follow-ups',
+          ],
         },
       },
       {
@@ -143,10 +155,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'SCHEDULE',
-          text: 'Control Your Schedule',
+          title: 'Earnings Tracker',
+          text: 'Maximize Your Income',
           description:
-            'Efficiently manage your appointments with easy-to-use scheduling tools.',
+            'Track your earnings in real-time, view detailed reports, and understand your revenue patterns. Stay on top of your finances effortlessly.',
+          listSub: [
+            'Real-time earnings dashboard',
+            'Detailed payment reports',
+            'Revenue trends & insights',
+            'Commission tracking',
+          ],
         },
       },
       {
@@ -178,10 +196,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'GROWTH',
-          text: 'Track Your Growth',
+          title: 'Professional Profile',
+          text: 'Showcase Your Expertise',
           description:
-            'Stay on top of your revenue and profits.',
+            'Build a professional profile that highlights your skills, experience, and client reviews. Stand out and attract more clients.',
+          listSub: [
+            'Portfolio showcase',
+            'Client reviews & ratings',
+            'Skill certifications display',
+            'Service menu customization',
+          ],
         },
       },
     ],
@@ -243,10 +267,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'العلامة التجارية',
-          text: 'ارتقِ بعلامتك الشخصية',
+          title: 'جدول مرن',
+          text: 'اعمل بشروطك',
           description:
-            'ارتقِ بعلامتك الشخصية',
+            'حدد ساعات عملك وأدِر توافرك بسهولة. ديزي يمنحك تحكمًا كاملاً في متى وأين تعمل.',
+          listSub: [
+            'حدد ساعات عملك الخاصة',
+            'خصص وقتًا لالتزاماتك الشخصية',
+            'تحديثات الجدول في الوقت الفعلي',
+            'دعم المواقع المتعددة',
+          ],
         },
       },
       {
@@ -278,10 +308,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'العملاء',
-          text: 'عزّز تفاعل العملاء ونمِّ سمعتك',
+          title: 'إدارة العملاء',
+          text: 'ابنِ علاقات دائمة',
           description:
-            'عزّز تفاعل العملاء ونمِّ سمعتك',
+            'تابع عملاءك وتفضيلاتهم وسجل مواعيدهم. ابنِ علاقات أقوى وقدّم خدمات مخصصة.',
+          listSub: [
+            'ملفات تعريف مفصلة للعملاء',
+            'تتبع سجل المواعيد',
+            'ملاحظات تفضيلات العملاء',
+            'متابعات تلقائية',
+          ],
         },
       },
       {
@@ -328,10 +364,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'الجدول',
-          text: 'تحكم في جدولك وزد إنتاجيتك',
+          title: 'تتبع الأرباح',
+          text: 'حقق أقصى دخل لك',
           description:
-            'تحكم في جدولك وزد إنتاجيتك',
+            'تتبع أرباحك في الوقت الفعلي، واعرض تقارير مفصلة، وافهم أنماط إيراداتك. ابقَ على اطلاع بأمورك المالية بسهولة.',
+          listSub: [
+            'لوحة أرباح في الوقت الفعلي',
+            'تقارير دفع مفصلة',
+            'اتجاهات ورؤى الإيرادات',
+            'تتبع العمولات',
+          ],
         },
       },
       {
@@ -363,10 +405,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'النمو',
-          text: 'تتبع نموك المالي واتخذ قرارات مستندة إلى البيانات',
+          title: 'الملف المهني',
+          text: 'اعرض خبراتك',
           description:
-            'تتبع نموك المالي واتخذ قرارات مستندة إلى البيانات',
+            'أنشئ ملفًا مهنيًا يبرز مهاراتك وخبراتك وتقييمات العملاء. تميّز واجذب المزيد من العملاء.',
+          listSub: [
+            'عرض معرض الأعمال',
+            'تقييمات ومراجعات العملاء',
+            'عرض الشهادات المهنية',
+            'تخصيص قائمة الخدمات',
+          ],
         },
       },
     ],
