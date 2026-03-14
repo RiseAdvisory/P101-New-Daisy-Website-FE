@@ -24,7 +24,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/feature-1.png',
+                    url: '/images/features/business/ai-receptionist.png',
                   },
                 },
               ],
@@ -35,13 +35,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               margin: '0 auto',
             },
             mobilePicture: {
-              data: [
-                {
-                  attributes: {
-                    url: '/images/features/professional/feature-1-mobile.png',
-                  },
-                },
-              ],
+              data: null,
             },
             mobileStylePicture: {
               width: '70%',
@@ -61,7 +55,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/feature-2.png',
+                    url: '/images/features/business/ai-booking.png',
                   },
                 },
               ],
@@ -72,13 +66,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               margin: '0 auto',
             },
             mobilePicture: {
-              data: [
-                {
-                  attributes: {
-                    url: '/images/features/professional/feature-2-mobile.png',
-                  },
-                },
-              ],
+              data: null,
             },
             mobileStylePicture: {
               width: '70%',
@@ -98,7 +86,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/feature-3.png',
+                    url: '/images/features/business/analytics-alt.png',
                   },
                 },
               ],
@@ -109,13 +97,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               margin: '0 auto',
             },
             mobilePicture: {
-              data: [
-                {
-                  attributes: {
-                    url: '/images/features/professional/feature-3-mobile.png',
-                  },
-                },
-              ],
+              data: null,
             },
             mobileStylePicture: {
               width: '70%',
@@ -135,7 +117,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/feature-4.png',
+                    url: '/images/features/business/schedule-page.png',
                   },
                 },
               ],
@@ -146,13 +128,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               margin: '0 auto',
             },
             mobilePicture: {
-              data: [
-                {
-                  attributes: {
-                    url: '/images/features/professional/feature-4-mobile.png',
-                  },
-                },
-              ],
+              data: null,
             },
             mobileStylePicture: {
               width: '70%',
@@ -172,7 +148,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/feature-5.png',
+                    url: '/images/features/business/multilingual-ai.png',
                   },
                 },
               ],
@@ -183,13 +159,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               margin: '0 auto',
             },
             mobilePicture: {
-              data: [
-                {
-                  attributes: {
-                    url: '/images/features/professional/feature-5-mobile.png',
-                  },
-                },
-              ],
+              data: null,
             },
             mobileStylePicture: {
               width: '70%',
@@ -209,7 +179,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/feature-6.png',
+                    url: '/images/features/business/247-concierge.png',
                   },
                 },
               ],
@@ -220,13 +190,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               margin: '0 auto',
             },
             mobilePicture: {
-              data: [
-                {
-                  attributes: {
-                    url: '/images/features/professional/feature-6-mobile.png',
-                  },
-                },
-              ],
+              data: null,
             },
             mobileStylePicture: {
               width: '70%',
@@ -252,7 +216,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/feature-1.png',
+                    url: '/images/features/business/ai-receptionist.png',
                   },
                 },
               ],
@@ -263,13 +227,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               margin: '0 auto',
             },
             mobilePicture: {
-              data: [
-                {
-                  attributes: {
-                    url: '/images/features/professional/feature-1-mobile.png',
-                  },
-                },
-              ],
+              data: null,
             },
             mobileStylePicture: {
               width: '70%',
@@ -289,7 +247,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/feature-2.png',
+                    url: '/images/features/business/ai-booking.png',
                   },
                 },
               ],
@@ -300,13 +258,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               margin: '0 auto',
             },
             mobilePicture: {
-              data: [
-                {
-                  attributes: {
-                    url: '/images/features/professional/feature-2-mobile.png',
-                  },
-                },
-              ],
+              data: null,
             },
             mobileStylePicture: {
               width: '70%',
@@ -326,7 +278,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/feature-3.png',
+                    url: '/images/features/business/analytics-alt.png',
                   },
                 },
               ],
@@ -337,13 +289,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               margin: '0 auto',
             },
             mobilePicture: {
-              data: [
-                {
-                  attributes: {
-                    url: '/images/features/professional/feature-3-mobile.png',
-                  },
-                },
-              ],
+              data: null,
             },
             mobileStylePicture: {
               width: '70%',
@@ -363,7 +309,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/feature-4.png',
+                    url: '/images/features/business/schedule-page.png',
                   },
                 },
               ],
@@ -374,13 +320,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               margin: '0 auto',
             },
             mobilePicture: {
-              data: [
-                {
-                  attributes: {
-                    url: '/images/features/professional/feature-4-mobile.png',
-                  },
-                },
-              ],
+              data: null,
             },
             mobileStylePicture: {
               width: '70%',
@@ -400,7 +340,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/feature-5.png',
+                    url: '/images/features/business/multilingual-ai.png',
                   },
                 },
               ],
@@ -411,13 +351,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               margin: '0 auto',
             },
             mobilePicture: {
-              data: [
-                {
-                  attributes: {
-                    url: '/images/features/professional/feature-5-mobile.png',
-                  },
-                },
-              ],
+              data: null,
             },
             mobileStylePicture: {
               width: '70%',
@@ -437,7 +371,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/feature-6.png',
+                    url: '/images/features/business/247-concierge.png',
                   },
                 },
               ],
@@ -448,13 +382,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               margin: '0 auto',
             },
             mobilePicture: {
-              data: [
-                {
-                  attributes: {
-                    url: '/images/features/professional/feature-6-mobile.png',
-                  },
-                },
-              ],
+              data: null,
             },
             mobileStylePicture: {
               width: '70%',

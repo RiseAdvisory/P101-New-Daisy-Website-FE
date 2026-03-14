@@ -16,9 +16,9 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
     scrollSections: [
       {
         sortId: 1,
-        mainImage: '/images/pages/professional/scroll/section-1-main.png',
-        firstBg: '/images/pages/professional/scroll/section-1-bg1.png',
-        secondBg: '/images/pages/professional/scroll/section-1-bg2.png',
+        mainImage: '/images/pages/professional/scroll/staff-details.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
+        secondBg: '/images/pages/business/scroll/stars.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -65,15 +65,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           listSub: [
             'Set your own working hours',
             'Block time for personal commitments',
-            'Real-time schedule updates',
             'Multi-location support',
           ],
         },
       },
       {
         sortId: 2,
-        mainImage: '/images/pages/professional/scroll/section-2-main.png',
-        firstBg: '/images/pages/professional/scroll/section-2-bg1.png',
+        mainImage: '/images/pages/business/scroll/schedule.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -102,20 +101,19 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           title: 'Client Management',
           text: 'Build Lasting Relationships',
           description:
-            'Keep track of your clients, their preferences, and appointment history. Build stronger relationships and deliver personalized services.',
+            'Build stronger relationships and deliver personalized services.',
           listSub: [
             'Detailed client profiles',
             'Appointment history tracking',
             'Client preference notes',
-            'Automated follow-ups',
           ],
         },
       },
       {
         sortId: 3,
-        mainImage: '/images/pages/professional/scroll/section-3-main.png',
-        firstBg: '/images/pages/professional/scroll/section-3-bg1.png',
-        secondBg: '/images/pages/professional/scroll/section-3-bg2.png',
+        mainImage: '/images/pages/business/scroll/analytics.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
+        secondBg: '/images/pages/business/scroll/stars.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -158,19 +156,18 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           title: 'Earnings Tracker',
           text: 'Maximize Your Income',
           description:
-            'Track your earnings in real-time, view detailed reports, and understand your revenue patterns. Stay on top of your finances effortlessly.',
+            'Track your earnings in real-time, view detailed reports, and understand your revenue patterns.',
           listSub: [
             'Real-time earnings dashboard',
             'Detailed payment reports',
             'Revenue trends & insights',
-            'Commission tracking',
           ],
         },
       },
       {
         sortId: 4,
-        mainImage: '/images/pages/professional/scroll/section-4-main.png',
-        firstBg: '/images/pages/professional/scroll/section-4-bg1.png',
+        mainImage: '/images/pages/business/scroll/device-mockups.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -199,63 +196,12 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           title: 'Professional Profile',
           text: 'Showcase Your Expertise',
           description:
-            'Build a professional profile that highlights your skills, experience, and client reviews. Stand out and attract more clients.',
+            'Highlights your skills, experience, and client reviews. Stand out and attract more clients.',
           listSub: [
             'Portfolio showcase',
             'Client reviews & ratings',
-            'Skill certifications display',
             'Service menu customization',
           ],
-        },
-      },
-      {
-        sortId: 5,
-        mainImage: '/images/pages/professional/scroll/section-5-main.png',
-        firstBg: '/images/pages/professional/scroll/section-5-bg1.png',
-        secondBg: '/images/pages/professional/scroll/section-5-bg2.png',
-        styleMainPictureJSON: {
-          position: 'absolute',
-          bottom: '0',
-          right: '50%',
-          transform: 'translateX(50%)',
-          width: '50%',
-          maxWidth: '300px',
-        },
-        styleFirstBgJSON: {
-          position: 'absolute',
-          bottom: '0',
-          left: '0',
-          width: '50%',
-          maxWidth: '300px',
-        },
-        styleSecondBgJSON: {
-          position: 'absolute',
-          top: '40px',
-          right: '30px',
-          width: '100px',
-        },
-        styleBgMobileSecond: {
-          position: 'absolute',
-          top: '-70px',
-          right: '-70px',
-          width: '200px',
-          height: '200px',
-          transform: 'rotate(180deg) scaleX(-1)',
-        },
-        styleImageMobile: {
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-          bottom: '0',
-          left: '40px',
-        },
-        mainImageWidth: 300,
-        mainImageHeight: 500,
-        infoScroll: {
-          title: 'Get Started',
-          text: 'Join Daisy Today',
-          description:
-            'Join a growing community of beauty and wellness professionals. Download Daisy and take your career to the next level.',
         },
       },
     ],
@@ -275,9 +221,9 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
     scrollSections: [
       {
         sortId: 1,
-        mainImage: '/images/pages/professional/scroll/section-1-main.png',
-        firstBg: '/images/pages/professional/scroll/section-1-bg1.png',
-        secondBg: '/images/pages/professional/scroll/section-1-bg2.png',
+        mainImage: '/images/pages/professional/scroll/staff-details.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
+        secondBg: '/images/pages/business/scroll/stars.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -331,8 +277,8 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 2,
-        mainImage: '/images/pages/professional/scroll/section-2-main.png',
-        firstBg: '/images/pages/professional/scroll/section-2-bg1.png',
+        mainImage: '/images/pages/business/scroll/schedule.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -372,9 +318,9 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 3,
-        mainImage: '/images/pages/professional/scroll/section-3-main.png',
-        firstBg: '/images/pages/professional/scroll/section-3-bg1.png',
-        secondBg: '/images/pages/professional/scroll/section-3-bg2.png',
+        mainImage: '/images/pages/business/scroll/analytics.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
+        secondBg: '/images/pages/business/scroll/stars.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -428,8 +374,8 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 4,
-        mainImage: '/images/pages/professional/scroll/section-4-main.png',
-        firstBg: '/images/pages/professional/scroll/section-4-bg1.png',
+        mainImage: '/images/pages/business/scroll/device-mockups.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -465,56 +411,6 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
             'عرض الشهادات المهنية',
             'تخصيص قائمة الخدمات',
           ],
-        },
-      },
-      {
-        sortId: 5,
-        mainImage: '/images/pages/professional/scroll/section-5-main.png',
-        firstBg: '/images/pages/professional/scroll/section-5-bg1.png',
-        secondBg: '/images/pages/professional/scroll/section-5-bg2.png',
-        styleMainPictureJSON: {
-          position: 'absolute',
-          bottom: '0',
-          right: '50%',
-          transform: 'translateX(50%)',
-          width: '50%',
-          maxWidth: '300px',
-        },
-        styleFirstBgJSON: {
-          position: 'absolute',
-          bottom: '0',
-          left: '0',
-          width: '50%',
-          maxWidth: '300px',
-        },
-        styleSecondBgJSON: {
-          position: 'absolute',
-          top: '40px',
-          right: '30px',
-          width: '100px',
-        },
-        styleBgMobileSecond: {
-          position: 'absolute',
-          top: '-70px',
-          right: '-70px',
-          width: '200px',
-          height: '200px',
-          transform: 'rotate(180deg) scaleX(-1)',
-        },
-        styleImageMobile: {
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-          bottom: '0',
-          left: '40px',
-        },
-        mainImageWidth: 300,
-        mainImageHeight: 500,
-        infoScroll: {
-          title: 'ابدأ الآن',
-          text: 'انضم إلى ديزي اليوم',
-          description:
-            'انضم إلى مجتمع متنامٍ من محترفي التجميل والعافية. حمّل ديزي وارتقِ بمسيرتك المهنية.',
         },
       },
     ],

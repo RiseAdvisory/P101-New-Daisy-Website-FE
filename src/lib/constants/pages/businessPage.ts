@@ -16,9 +16,9 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     scrollSections: [
       {
         sortId: 1,
-        mainImage: '/images/pages/business/scroll/section-1-main.png',
-        firstBg: '/images/pages/business/scroll/section-1-bg1.png',
-        secondBg: '/images/pages/business/scroll/section-1-bg2.png',
+        mainImage: '/images/pages/business/scroll/device-mockups.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
+        secondBg: '/images/pages/business/scroll/stars.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -61,19 +61,18 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           title: 'Smart Booking',
           text: 'AI-Powered Appointment Management',
           description:
-            'Let Daisy\'s AI receptionist handle bookings 24/7, so you never miss a customer. Manage your calendar, staff schedules, and service slots all in one place.',
+            'Let Daisy\'s AI receptionist handle bookings 24/7, so you never miss a customer.',
           listSub: [
             '24/7 AI booking assistant',
             'Automated reminders & confirmations',
             'Smart calendar management',
-            'Multi-staff scheduling',
           ],
         },
       },
       {
         sortId: 2,
-        mainImage: '/images/pages/business/scroll/section-2-main.png',
-        firstBg: '/images/pages/business/scroll/section-2-bg1.png',
+        mainImage: '/images/pages/business/scroll/schedule.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -102,20 +101,19 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           title: 'Customer Acquisition',
           text: '360° Customer Growth Engine',
           description:
-            'Attract new customers through our marketplace, cashback rewards, and built-in marketing tools. Grow your client base without the guesswork.',
+            'Grow your client base without the guesswork.',
           listSub: [
             'Marketplace visibility to thousands of users',
             'Cashback incentives that drive repeat visits',
             'Integrated marketing campaigns',
-            'Customer loyalty programs',
           ],
         },
       },
       {
         sortId: 3,
-        mainImage: '/images/pages/business/scroll/section-3-main.png',
-        firstBg: '/images/pages/business/scroll/section-3-bg1.png',
-        secondBg: '/images/pages/business/scroll/section-3-bg2.png',
+        mainImage: '/images/pages/business/scroll/integrations.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
+        secondBg: '/images/pages/business/scroll/stars.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -158,19 +156,18 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           title: 'Brand Control',
           text: 'Your Brand, Your Way',
           description:
-            'Maintain full control over your brand identity with white-label solutions. Customize your booking page, notifications, and customer experience to match your brand.',
+            'Customize your booking page, notifications, and customer experience to match your brand.',
           listSub: [
             'Customizable booking page',
             'White-label communications',
             'Branded customer experience',
-            'Custom domain support',
           ],
         },
       },
       {
         sortId: 4,
-        mainImage: '/images/pages/business/scroll/section-4-main.png',
-        firstBg: '/images/pages/business/scroll/section-4-bg1.png',
+        mainImage: '/images/pages/business/scroll/analytics.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -199,63 +196,12 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           title: 'Business Analytics',
           text: 'Data-Driven Decisions',
           description:
-            'Track performance, understand your customers, and make smarter business decisions with comprehensive analytics and reporting tools.',
+            'Track performance, understand your customers, and make smarter business decisions.',
           listSub: [
-            'Real-time revenue tracking',
             'Customer insights & trends',
             'Staff performance metrics',
             'Booking analytics dashboard',
           ],
-        },
-      },
-      {
-        sortId: 5,
-        mainImage: '/images/pages/business/scroll/section-5-main.png',
-        firstBg: '/images/pages/business/scroll/section-5-bg1.png',
-        secondBg: '/images/pages/business/scroll/section-5-bg2.png',
-        styleMainPictureJSON: {
-          position: 'absolute',
-          bottom: '0',
-          right: '50%',
-          transform: 'translateX(50%)',
-          width: '50%',
-          maxWidth: '300px',
-        },
-        styleFirstBgJSON: {
-          position: 'absolute',
-          bottom: '0',
-          left: '0',
-          width: '50%',
-          maxWidth: '300px',
-        },
-        styleSecondBgJSON: {
-          position: 'absolute',
-          top: '40px',
-          right: '30px',
-          width: '100px',
-        },
-        styleBgMobileSecond: {
-          position: 'absolute',
-          top: '-70px',
-          right: '-70px',
-          width: '200px',
-          height: '200px',
-          transform: 'rotate(180deg) scaleX(-1)',
-        },
-        styleImageMobile: {
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-          bottom: '0',
-          left: '40px',
-        },
-        mainImageWidth: 300,
-        mainImageHeight: 500,
-        infoScroll: {
-          title: 'Get Started',
-          text: 'Download Daisy Today',
-          description:
-            'Join thousands of beauty and wellness businesses already growing with Daisy. Download the app and start managing your business smarter.',
         },
       },
     ],
@@ -275,9 +221,9 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     scrollSections: [
       {
         sortId: 1,
-        mainImage: '/images/pages/business/scroll/section-1-main.png',
-        firstBg: '/images/pages/business/scroll/section-1-bg1.png',
-        secondBg: '/images/pages/business/scroll/section-1-bg2.png',
+        mainImage: '/images/pages/business/scroll/device-mockups.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
+        secondBg: '/images/pages/business/scroll/stars.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -331,8 +277,8 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 2,
-        mainImage: '/images/pages/business/scroll/section-2-main.png',
-        firstBg: '/images/pages/business/scroll/section-2-bg1.png',
+        mainImage: '/images/pages/business/scroll/schedule.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -372,9 +318,9 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 3,
-        mainImage: '/images/pages/business/scroll/section-3-main.png',
-        firstBg: '/images/pages/business/scroll/section-3-bg1.png',
-        secondBg: '/images/pages/business/scroll/section-3-bg2.png',
+        mainImage: '/images/pages/business/scroll/integrations.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
+        secondBg: '/images/pages/business/scroll/stars.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -428,8 +374,8 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 4,
-        mainImage: '/images/pages/business/scroll/section-4-main.png',
-        firstBg: '/images/pages/business/scroll/section-4-bg1.png',
+        mainImage: '/images/pages/business/scroll/analytics.png',
+        firstBg: '/images/pages/business/scroll/leaf-bg.png',
         styleMainPictureJSON: {
           position: 'absolute',
           bottom: '0',
@@ -465,56 +411,6 @@ export const businessPageData: I18nContent<LandingPageContent> = {
             'مقاييس أداء الموظفين',
             'لوحة تحكم تحليلات الحجوزات',
           ],
-        },
-      },
-      {
-        sortId: 5,
-        mainImage: '/images/pages/business/scroll/section-5-main.png',
-        firstBg: '/images/pages/business/scroll/section-5-bg1.png',
-        secondBg: '/images/pages/business/scroll/section-5-bg2.png',
-        styleMainPictureJSON: {
-          position: 'absolute',
-          bottom: '0',
-          right: '50%',
-          transform: 'translateX(50%)',
-          width: '50%',
-          maxWidth: '300px',
-        },
-        styleFirstBgJSON: {
-          position: 'absolute',
-          bottom: '0',
-          left: '0',
-          width: '50%',
-          maxWidth: '300px',
-        },
-        styleSecondBgJSON: {
-          position: 'absolute',
-          top: '40px',
-          right: '30px',
-          width: '100px',
-        },
-        styleBgMobileSecond: {
-          position: 'absolute',
-          top: '-70px',
-          right: '-70px',
-          width: '200px',
-          height: '200px',
-          transform: 'rotate(180deg) scaleX(-1)',
-        },
-        styleImageMobile: {
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-          bottom: '0',
-          left: '40px',
-        },
-        mainImageWidth: 300,
-        mainImageHeight: 500,
-        infoScroll: {
-          title: 'ابدأ الآن',
-          text: 'حمّل ديزي اليوم',
-          description:
-            'انضم إلى آلاف شركات التجميل والعافية التي تنمو بالفعل مع ديزي. حمّل التطبيق وابدأ بإدارة أعمالك بذكاء.',
         },
       },
     ],
