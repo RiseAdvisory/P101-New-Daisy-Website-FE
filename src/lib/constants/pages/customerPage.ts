@@ -58,16 +58,10 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'Easy Booking',
-          text: 'Book in Seconds',
+          title: 'MARKETPLACE',
+          text: 'Curated Services To Guarantee Your Experience',
           description:
-            'Find and book beauty and wellness services near you in just a few taps. Browse salons, spas, and clinics with real-time availability.',
-          listSub: [
-            'Instant booking confirmation',
-            'Real-time availability',
-            'Browse by service or location',
-            'Save your favorite places',
-          ],
+            'Explore trusted and verified service providers.',
         },
       },
       {
@@ -99,16 +93,10 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'Cashback Rewards',
-          text: 'Earn While You Glow',
+          title: 'DISCOVER',
+          text: 'Discover Top Providers',
           description:
-            'Get cashback on every booking. The more you book, the more you earn. Use your rewards on future services or withdraw to your wallet.',
-          listSub: [
-            'Cashback on every booking',
-            'Accumulate and redeem rewards',
-            'Wallet management',
-            'Exclusive member deals',
-          ],
+            'Check out before-and-afters showing customer results.',
         },
       },
       {
@@ -155,16 +143,10 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'Verified Reviews',
-          text: 'Trust What Others Say',
+          title: 'BOOKINGS',
+          text: 'Easily Manage Bookings',
           description:
-            'Read verified reviews from real customers to choose the best services. Share your experience and help the community make informed decisions.',
-          listSub: [
-            'Verified customer reviews',
-            'Star ratings & photos',
-            'Detailed service feedback',
-            'Community-driven trust',
-          ],
+            'Booking appointments has never been easier or faster.',
         },
       },
       {
@@ -196,16 +178,10 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'Smart Reminders',
-          text: 'Never Miss an Appointment',
+          title: 'CASHBACK',
+          text: 'Earn Cashback Rewards!',
           description:
-            'Get timely reminders before your appointments. Manage, reschedule, or cancel your bookings easily from the app.',
-          listSub: [
-            'Automated appointment reminders',
-            'Easy rescheduling',
-            'Booking history at a glance',
-            'Calendar sync',
-          ],
+            'Find great deals and earn cashback.',
         },
       },
     ],
@@ -267,16 +243,10 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'حجز سهل',
-          text: 'احجزي في ثوانٍ',
+          title: 'السوق العام',
+          text: 'اختر خدمتك التالية بثقة، وضمان تجربتك الاستثنائية.',
           description:
-            'ابحثي واحجزي خدمات التجميل والعافية القريبة منك بلمسات قليلة. تصفحي الصالونات والمنتجعات والعيادات مع التوفر الفوري.',
-          listSub: [
-            'تأكيد فوري للحجز',
-            'توفر في الوقت الفعلي',
-            'تصفح حسب الخدمة أو الموقع',
-            'احفظي أماكنك المفضلة',
-          ],
+            'اختر خدمتك التالية بثقة، وضمان تجربتك الاستثنائية.',
         },
       },
       {
@@ -308,16 +278,10 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'مكافآت الاسترداد النقدي',
-          text: 'اكسبي أثناء تألقك',
+          title: 'اكتشف',
+          text: 'اكتشف التجارب من أفضل مزودي الخدمات',
           description:
-            'احصلي على استرداد نقدي على كل حجز. كلما حجزتِ أكثر، كسبتِ أكثر. استخدمي مكافآتك على الخدمات المستقبلية أو اسحبيها إلى محفظتك.',
-          listSub: [
-            'استرداد نقدي على كل حجز',
-            'اجمعي واستبدلي المكافآت',
-            'إدارة المحفظة',
-            'عروض حصرية للأعضاء',
-          ],
+            'اكتشف التجارب من أفضل مزودي الخدمات',
         },
       },
       {
@@ -364,16 +328,10 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'تقييمات موثوقة',
-          text: 'ثقي بما يقوله الآخرون',
+          title: 'الحجوزات',
+          text: 'إدارة حجوزاتك بسهولة بنقرة واحدة',
           description:
-            'اقرأي تقييمات موثوقة من عملاء حقيقيين لاختيار أفضل الخدمات. شاركي تجربتك وساعدي المجتمع في اتخاذ قرارات مدروسة.',
-          listSub: [
-            'تقييمات عملاء موثوقة',
-            'تقييمات بالنجوم والصور',
-            'ملاحظات مفصلة عن الخدمة',
-            'ثقة مدعومة من المجتمع',
-          ],
+            'إدارة حجوزاتك بسهولة بنقرة واحدة',
         },
       },
       {
@@ -405,16 +363,10 @@ export const customerPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'تذكيرات ذكية',
-          text: 'لا تفوّتي أي موعد',
+          title: 'الاسترداد النقدي',
+          text: 'اكسب استرداد نقدي بينما تدلل نفسك!',
           description:
-            'احصلي على تذكيرات في الوقت المناسب قبل مواعيدك. أديري وأعيدي جدولة أو ألغي حجوزاتك بسهولة من التطبيق.',
-          listSub: [
-            'تذكيرات تلقائية بالمواعيد',
-            'إعادة جدولة سهلة',
-            'سجل الحجوزات بنظرة واحدة',
-            'مزامنة التقويم',
-          ],
+            'اكسب استرداد نقدي بينما تدلل نفسك!',
         },
       },
     ],
