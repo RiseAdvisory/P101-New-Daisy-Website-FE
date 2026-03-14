@@ -270,10 +270,32 @@ export interface FeatureListItem {
           url: string;
           width?: number;
           height?: number;
+          formats?: {
+            large?: { url: string };
+            medium?: { url: string };
+            small?: { url: string };
+            thumbnail?: { url: string };
+          };
         };
       }[];
     };
     stylePicture?: Record<string, string | number>;
+    mobilePicture?: {
+      data: {
+        attributes: {
+          url: string;
+          width?: number;
+          height?: number;
+          formats?: {
+            large?: { url: string };
+            medium?: { url: string };
+            small?: { url: string };
+            thumbnail?: { url: string };
+          };
+        };
+      }[] | null;
+    };
+    mobileStylePicture?: Record<string, string | number>;
   };
 }
 

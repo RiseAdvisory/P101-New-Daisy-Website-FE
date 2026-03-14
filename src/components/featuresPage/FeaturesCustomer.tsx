@@ -13,8 +13,14 @@ export const FeaturesCustomerItem = ({
 }) => {
   const image = new URL(item.picture.data?.[0].attributes.url, baseURLImage)
     .href;
+  const desktopImage = image.includes('undefined') ? imageLeaf.src : image;
 
-  const currentImage = image.includes('undefined') ? imageLeaf.src : image;
+  const mobileImageUrl = item.mobilePicture?.data?.[0]?.attributes?.url;
+  const hasMobileImage = mobileImageUrl && !mobileImageUrl.includes('undefined');
+  const mobileImage = hasMobileImage
+    ? new URL(mobileImageUrl, baseURLImage).href
+    : null;
+
   return (
     <>
       <li
@@ -38,14 +44,35 @@ export const FeaturesCustomerItem = ({
           style={{ width: 'calc(100% + 32px)' }}
         />
 
-        <Image
-          className={cn(`mx-auto ${item.style}`)}
-          width={1000}
-          height={1000}
-          src={currentImage}
-          style={item?.sizePicture}
-          alt={item.title}
-        />
+        {mobileImage ? (
+          <>
+            <Image
+              className={cn(`mx-auto ${item.style} hidden md:block`)}
+              width={1000}
+              height={1000}
+              src={desktopImage}
+              style={item?.sizePicture}
+              alt={item.title}
+            />
+            <Image
+              className={cn(`mx-auto ${item.style} md:hidden`)}
+              width={1000}
+              height={1000}
+              src={mobileImage}
+              style={item?.mobileStylePicture ?? item?.sizePicture}
+              alt={item.title}
+            />
+          </>
+        ) : (
+          <Image
+            className={cn(`mx-auto ${item.style}`)}
+            width={1000}
+            height={1000}
+            src={desktopImage}
+            style={item?.sizePicture}
+            alt={item.title}
+          />
+        )}
       </li>
       <div className="mx-4 last:hidden md:hidden">
         <Separator className="bg-[#586968] w-full mt-20 " />
