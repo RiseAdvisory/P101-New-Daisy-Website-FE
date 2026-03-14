@@ -70,7 +70,7 @@ describe('SolutionsPageClient', () => {
     it('renders FAQ section when faqs exist', () => {
       render(<SolutionsPageClient slug="salon-management-software" />);
       expect(
-        screen.getByText('Frequently Asked Questions')
+        screen.getByText(/Frequently Asked Questions/)
       ).toBeInTheDocument();
     });
 

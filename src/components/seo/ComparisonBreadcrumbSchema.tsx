@@ -3,7 +3,7 @@
 interface Props {
   pageName: string;
   pageSlug: string;
-  section: 'compare' | 'alternative' | 'solutions';
+  section: 'compare' | 'alternative' | 'solutions' | 'glossary' | 'guides';
 }
 
 const sectionConfig: Record<
@@ -13,6 +13,8 @@ const sectionConfig: Record<
   compare: { label: 'Compare', path: 'compare' },
   alternative: { label: 'Alternatives', path: 'alternative' },
   solutions: { label: 'Solutions', path: 'solutions' },
+  glossary: { label: 'Glossary', path: 'glossary' },
+  guides: { label: 'Guides', path: 'guides' },
 };
 
 export function ComparisonBreadcrumbSchema({

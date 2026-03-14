@@ -1,0 +1,232 @@
+# Daisy (The Daisy) -- Full Reference
+
+> Daisy is an AI-powered beauty and wellness platform that helps salons, spas, clinics, and beauty businesses grow through an AI receptionist, 360-degree customer acquisition (marketplace + cashback + marketing automation), and full white-label brand control. Available in English and Arabic with native GCC support across UAE, Saudi Arabia, Kuwait, Bahrain, Oman, and Qatar.
+
+## Company Overview
+
+- **Website**: https://www.jointhedaisy.com
+- **Type**: B2B SaaS platform for beauty and wellness businesses
+- **Founded**: Pre-launch, pilot partners committed
+- **Markets**: GCC (UAE, Saudi Arabia, Kuwait, Bahrain, Oman, Qatar) and global
+- **Languages**: Full bilingual English and Arabic with native RTL support
+- **Platforms**: iOS App, Android App, Progressive Web App, Mobile Web
+
+## What Makes Daisy Different
+
+1. **AI Receptionist**: 24/7 AI-powered voice and chat receptionist that handles customer inquiries, books appointments, and processes payments automatically -- no missed calls or after-hours lost revenue.
+
+2. **360-Degree Customer Acquisition**: Unlike operations-only tools, Daisy combines a discovery marketplace, cashback loyalty system, and automated marketing into one platform that actively brings new customers to your business.
+
+3. **Full White-Label Brand Control**: Every customer touchpoint (booking page, app, receipts, communications) can be fully branded to your business -- your brand, not Daisy's.
+
+4. **Network Effects**: The AI improves with more data across the platform, delivering smarter scheduling, better recommendations, and more accurate business insights over time.
+
+5. **All-in-One Platform**: Replaces 5+ separate tools (booking, POS, CRM, marketing, analytics) with one integrated system across 8 feature categories.
+
+6. **Bilingual Arabic/English**: Native Arabic support with equal priority -- not a translation layer. Designed for GCC markets with local payment methods, compliance, and support.
+
+## Pricing Plans (Flat Pricing, No Per-Staff Fees)
+
+### Basic Plan -- $50/month
+- Up to 5 users
+- 1 workspace/location
+- Unlimited bookings
+- Point of Sale (POS)
+- Client management
+- Mobile and desktop app
+- 14-day free trial
+
+### Growth Plan -- $150/month
+- Up to 10 users
+- 2 workspaces/locations
+- Everything in Basic, plus:
+- Online payment processing
+- Automated appointment reminders
+- Marketplace visibility and discovery
+- Priority customer support
+
+### Business Plan -- $250/month
+- Up to 15 users
+- 4 workspaces/locations
+- Everything in Growth, plus:
+- Advanced analytics and reporting
+- Free data migration from other platforms
+- Assisted onboarding
+- All premium features included
+
+### Pricing Highlights
+- No transaction fees on any plan
+- No marketplace commission
+- No per-staff pricing that scales unpredictably
+- Transparent flat monthly rate
+- 14-day free trial on all plans
+- Free data migration (Business plan)
+
+## Feature Categories (Detailed)
+
+### 1. Online Booking & Scheduling
+AI-powered appointment management with real-time availability, automated reminders, waitlist management, and 24/7 online booking. Smart scheduling optimizes staff utilization and reduces gaps.
+
+### 2. POS & Payments
+Integrated point of sale with no transaction fees, multiple payment methods, receipt management, and tip handling. Supports local payment methods in GCC markets.
+
+### 3. Client Management
+Full CRM with customer profiles, appointment history, preferences, notes, and communication history. Track customer lifetime value and identify VIP clients.
+
+### 4. Staff Management
+Employee scheduling, shift management, performance tracking, commission calculations, and access controls. Calendar sync with Google Calendar for two-way updates.
+
+### 5. Marketing & CRM
+Automated marketing campaigns, cashback rewards system, customer acquisition tools, email/SMS marketing, and promotional campaign management. Includes marketplace listing for discovery.
+
+### 6. Inventory Management
+Product and supply tracking, low-stock alerts, supplier management, and inventory reporting. Track product usage per service for accurate cost analysis.
+
+### 7. Reporting & Analytics
+AI-driven business insights including revenue analytics, staff performance, customer retention metrics, booking trends, and financial reporting. Predictive analytics for demand forecasting.
+
+### 8. AI Capabilities
+- **AI Voice Receptionist**: Handles phone calls 24/7, books appointments, answers questions
+- **AI Chatbot**: Manages online inquiries and booking via chat
+- **Smart Scheduling**: AI optimizes appointment slots to maximize revenue
+- **Marketing Automation**: AI-driven campaign targeting and optimization
+- **Predictive Analytics**: Demand forecasting and business insights
+
+## Solution Pages (Detailed)
+
+### Salon Management Software
+AI-powered all-in-one salon management platform with booking, POS, CRM, staff scheduling, inventory, and marketing. Designed for hair salons, beauty salons, and multi-location salon businesses.
+URL: https://www.jointhedaisy.com/solutions/salon-management-software
+
+### Spa Booking System
+Comprehensive spa scheduling and management software with treatment room management, package booking, membership management, and wellness-focused features.
+URL: https://www.jointhedaisy.com/solutions/spa-booking-system
+
+### Beauty Salon Software
+Complete beauty business software with cashback customer loyalty, AI receptionist, and tools designed specifically for beauty industry workflows.
+URL: https://www.jointhedaisy.com/solutions/beauty-salon-software
+
+### Salon Appointment Scheduling
+Smart scheduling software that uses AI to optimize appointment slots, reduce no-shows with automated reminders, and manage staff calendars efficiently.
+URL: https://www.jointhedaisy.com/solutions/salon-appointment-scheduling
+
+### Barbershop Software
+Barbershop-specific management tools with walk-in queue management, barber scheduling, and male grooming service optimization.
+URL: https://www.jointhedaisy.com/solutions/barbershop-software
+
+### Nail Salon Software
+Nail salon booking and management with service duration optimization, technician scheduling, and product inventory tracking for nail supplies.
+URL: https://www.jointhedaisy.com/solutions/nail-salon-software
+
+### Med Spa Software
+Medical spa software with compliance features, consent form management, treatment tracking, and HIPAA-aware data handling for aesthetic medicine practices.
+URL: https://www.jointhedaisy.com/solutions/med-spa-software
+
+### Salon POS System
+Integrated point of sale for salons with retail product sales, service bundling, tip management, and financial reporting without transaction fees.
+URL: https://www.jointhedaisy.com/solutions/salon-pos-system
+
+### Salon CRM Software
+AI-powered customer relationship management for salons with automated follow-ups, customer segmentation, loyalty tracking, and personalized marketing.
+URL: https://www.jointhedaisy.com/solutions/salon-crm-software
+
+### Salon Marketing Software
+Marketing automation platform for salons with cashback campaigns, email/SMS marketing, social media integration, and customer acquisition tools.
+URL: https://www.jointhedaisy.com/solutions/salon-marketing-software
+
+### Salon Booking App
+Mobile-first salon booking app for iOS and Android with real-time availability, cashback rewards, and customer self-service features.
+URL: https://www.jointhedaisy.com/solutions/salon-booking-app
+
+### Beauty Business Management
+All-in-one platform for managing beauty businesses of any size, from single-chair operators to multi-location enterprises.
+URL: https://www.jointhedaisy.com/solutions/beauty-business-management
+
+## Competitor Comparisons (Summary)
+
+### Daisy vs Fresha
+Fresha is a free marketplace-based platform (recently introducing paid features). Daisy offers AI receptionist, cashback loyalty, and white-label branding that Fresha lacks. Fresha charges marketplace commission; Daisy uses flat pricing with no commissions.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-fresha
+
+### Daisy vs Booksy
+Booksy is a mobile-first marketplace popular with barbers. Daisy provides deeper AI capabilities, Arabic language support, and business growth tools beyond basic booking.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-booksy
+
+### Daisy vs Vagaro
+Vagaro offers feature-rich salon software at $49-199/mo with per-staff pricing. Daisy's flat pricing model and AI capabilities provide better value for growing businesses.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-vagaro
+
+### Daisy vs GlossGenius
+GlossGenius focuses on design-forward booking for solo professionals. Daisy serves businesses of all sizes with multi-location support and advanced AI tools.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-glossgenius
+
+### Daisy vs Mindbody
+Mindbody targets fitness and wellness with enterprise pricing ($75-150+/mo). Daisy offers comparable features at lower price points with superior AI and GCC market support.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-mindbody
+
+### Daisy vs Boulevard
+Boulevard is a premium US-focused platform ($188M funded). Daisy matches Boulevard's sophistication while serving GCC markets and offering flat pricing without per-staff fees.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-boulevard
+
+### Daisy vs Glamera
+Glamera is an Arabic-native Saudi marketplace. Daisy provides a more comprehensive AI suite, true bilingual support (not Arabic-only), and business growth tools beyond marketplace listing.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-glamera
+
+### Daisy vs DINGG
+DINGG is India-based with AI features expanding to UAE. Daisy offers native GCC presence with local payment integrations, Arabic support, and deeper AI receptionist capabilities.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-dingg
+
+### Daisy vs RepeatMD
+RepeatMD focuses on med spa growth with cashback ($700/mo). Daisy provides similar cashback mechanics at a fraction of the price while serving all beauty verticals.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-repeatmd
+
+### Daisy vs Planity
+Planity is a French marketplace (10M+ monthly bookings). Daisy offers global reach with GCC focus, AI receptionist, and growth tools beyond marketplace-only discovery.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-planity
+
+### Daisy vs Mangomint
+Mangomint is a premium US salon software with clean UX. Daisy matches the modern interface while adding AI receptionist, cashback, and Arabic/GCC market support.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-mangomint
+
+### Daisy vs Square Appointments
+Square Appointments is part of Square's payment ecosystem. Daisy provides deeper beauty-specific features, AI capabilities, and no reliance on Square hardware.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-square-appointments
+
+### Daisy vs Phorest
+Phorest focuses on salon client retention. Daisy adds AI receptionist, marketplace discovery, and cashback acquisition tools to complement retention strategies.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-phorest
+
+### Daisy vs Acuity Scheduling
+Acuity (by Squarespace) is a general appointment scheduler. Daisy is purpose-built for beauty with industry-specific features, AI, and integrated payments.
+URL: https://www.jointhedaisy.com/compare/daisy-vs-acuity-scheduling
+
+## All Page URLs
+
+### Core Pages
+- https://www.jointhedaisy.com/business
+- https://www.jointhedaisy.com/professional
+- https://www.jointhedaisy.com/pricing
+- https://www.jointhedaisy.com/about
+- https://www.jointhedaisy.com/contact
+- https://www.jointhedaisy.com/faq
+- https://www.jointhedaisy.com/get-the-app
+- https://www.jointhedaisy.com/careers
+
+### Feature Pages
+- https://www.jointhedaisy.com/features/business
+- https://www.jointhedaisy.com/features/professional
+
+### Resource Pages
+- https://www.jointhedaisy.com/resources/blog-post
+- https://www.jointhedaisy.com/resources/tutorials
+- https://www.jointhedaisy.com/resources/testimonials
+- https://www.jointhedaisy.com/resources/updates
+
+### Index Pages
+- https://www.jointhedaisy.com/compare
+- https://www.jointhedaisy.com/alternative
+- https://www.jointhedaisy.com/solutions
+
+### Legal Pages
+- https://www.jointhedaisy.com/privacy-policy
+- https://www.jointhedaisy.com/terms-conditions

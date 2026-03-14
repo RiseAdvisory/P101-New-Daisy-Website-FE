@@ -3,9 +3,54 @@
 
 User-agent: *
 Allow: /
-
-Sitemap: https://www.jointhedaisy.com/sitemap.xml
-
 Disallow: /api/
 Disallow: /_next/
-Disallow: /static/
+
+# Sitemap
+Sitemap: https://www.jointhedaisy.com/sitemap.xml
+
+# AI Crawlers - Explicitly Allowed
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Google AI
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# ByteDance
+User-agent: Bytespider
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Meta
+User-agent: meta-externalagent
+Allow: /
+
+# Common Crawl (used by many AI models)
+User-agent: CCBot
+Allow: /

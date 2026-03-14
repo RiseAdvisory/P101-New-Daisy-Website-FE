@@ -7,14 +7,15 @@ interface ProsConsListProps {
   pros: string[];
   cons: string[];
   title: string;
+  heading?: string;
 }
 
-export const ProsConsList: FC<ProsConsListProps> = ({ pros, cons, title }) => {
+export const ProsConsList: FC<ProsConsListProps> = ({ pros, cons, title, heading }) => {
   return (
     <section className="py-16 px-4">
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-6xl">
         <h2 className="mb-10 text-center text-3xl font-bold text-[#172524]">
-          {title}
+          {heading || title}
         </h2>
 
         <div className="grid gap-8 md:grid-cols-2">

@@ -74,7 +74,7 @@ export function SolutionsPageClient({ slug }: Props) {
       {data.faqs.length > 0 && (
         <section className="mx-auto max-w-4xl px-4 py-12">
           <h2 className="mb-6 text-2xl font-bold text-gray-900">
-            Frequently Asked Questions
+            Frequently Asked Questions About {data.heroTitle}
           </h2>
           <div className="space-y-4">
             {data.faqs.map((faq, i) => (
