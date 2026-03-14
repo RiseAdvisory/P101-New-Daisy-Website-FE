@@ -1,7 +1,6 @@
-import { render, waitFor } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import BlogPostContent from '../BlogPostContent';
 import { BlogPost } from '@/lib/api/blog';
-import axiosInstance from '@/helpers/axiosConfig';
 
 // Mock dependencies
 jest.mock('@/store/post', () => ({
@@ -24,8 +23,6 @@ jest.mock('@/store/language', () => ({
     lang: 'en',
   }),
 }));
-
-jest.mock('@/helpers/axiosConfig');
 
 // Mock components
 jest.mock('@/components/blogPage/blogPosts/HeroBlogId', () => ({
@@ -53,8 +50,6 @@ jest.mock('@/components/blogPage/blogPosts/SimiliarTopics', () => ({
   ),
 }));
 
-const mockedAxiosInstance = axiosInstance as jest.Mocked<typeof axiosInstance>;
-
 describe('BlogPostContent', () => {
   const mockPost: BlogPost = {
     id: 1,
@@ -73,10 +68,6 @@ describe('BlogPostContent', () => {
   });
 
   it('should render all child components', () => {
-    mockedAxiosInstance.get.mockResolvedValueOnce({
-      data: { data: [] },
-    });
-
     const { getByTestId } = render(
       <BlogPostContent post={mockPost} userType="customer" />
     );
@@ -87,173 +78,33 @@ describe('BlogPostContent', () => {
     expect(getByTestId('similar-topics')).toBeInTheDocument();
   });
 
-  it('should fetch CTA data successfully', async () => {
-    const mockCTAData = {
-      data: {
-        data: [
-          {
-            attributes: {
-              textCreate: 'Custom CTA Text',
-              textDownload: 'Custom Download',
-              titleSimilar: 'Custom Similar Title',
-            },
-          },
-        ],
-      },
-    };
-
-    mockedAxiosInstance.get.mockResolvedValueOnce(mockCTAData);
-
+  it('should display CTA text from local data', () => {
     const { getByTestId } = render(
       <BlogPostContent post={mockPost} userType="customer" />
     );
 
-    await waitFor(() => {
-      expect(mockedAxiosInstance.get).toHaveBeenCalledWith(
-        '/legal-downloads?locale=en'
-      );
-    });
-
-    await waitFor(() => {
-      expect(getByTestId('text-download')).toHaveTextContent('Custom Download');
-      expect(getByTestId('text-create')).toHaveTextContent('Custom CTA Text');
-      expect(getByTestId('title-similar')).toHaveTextContent(
-        'Custom Similar Title'
-      );
-    });
-  });
-
-  it('should use default CTA text when fetch fails', async () => {
-    mockedAxiosInstance.get.mockRejectedValueOnce(new Error('Network error'));
-
-    const { getByTestId } = render(
-      <BlogPostContent post={mockPost} userType="customer" />
+    expect(getByTestId('text-download')).toHaveTextContent('Download now!');
+    expect(getByTestId('text-create')).toHaveTextContent(
+      'Create Your Own Perfect Wellness Ritual With The Daisy Packages'
     );
-
-    await waitFor(() => {
-      expect(getByTestId('text-download')).toHaveTextContent('Download now!');
-      expect(getByTestId('text-create')).toHaveTextContent(
-        'Create Your Own Perfect Wellness Ritual With The Daisy Packages'
-      );
-      expect(getByTestId('title-similar')).toHaveTextContent(
-        'Other Topics That You May Interest You'
-      );
-    });
-  });
-
-  it('should sanitize CTA data by removing HTML tags', async () => {
-    const mockCTADataWithHTML = {
-      data: {
-        data: [
-          {
-            attributes: {
-              textCreate: '<script>alert("xss")</script>Valid Text',
-              textDownload: '<b>Download</b>',
-              titleSimilar: '<img src=x onerror=alert(1)>Title',
-            },
-          },
-        ],
-      },
-    };
-
-    mockedAxiosInstance.get.mockResolvedValueOnce(mockCTADataWithHTML);
-
-    const { getByTestId } = render(
-      <BlogPostContent post={mockPost} userType="customer" />
+    expect(getByTestId('title-similar')).toHaveTextContent(
+      'Other Topics That May Interest You'
     );
-
-    await waitFor(() => {
-      // HTML tags should be stripped
-      expect(getByTestId('text-create')).toHaveTextContent('Valid Text');
-      expect(getByTestId('text-download')).toHaveTextContent('Download');
-      expect(getByTestId('title-similar')).toHaveTextContent('Title');
-    });
-  });
-
-  it('should reject CTA text that exceeds max length', async () => {
-    const mockCTADataTooLong = {
-      data: {
-        data: [
-          {
-            attributes: {
-              textCreate: 'A'.repeat(501), // Exceeds 500 char limit
-              textDownload: 'B'.repeat(101), // Exceeds 100 char limit
-              titleSimilar: 'C'.repeat(201), // Exceeds 200 char limit
-            },
-          },
-        ],
-      },
-    };
-
-    mockedAxiosInstance.get.mockResolvedValueOnce(mockCTADataTooLong);
-
-    const { getByTestId } = render(
-      <BlogPostContent post={mockPost} userType="customer" />
-    );
-
-    await waitFor(() => {
-      // Should use default values when text is too long
-      expect(getByTestId('text-download')).toHaveTextContent('Download now!');
-      expect(getByTestId('text-create')).toHaveTextContent(
-        'Create Your Own Perfect Wellness Ritual With The Daisy Packages'
-      );
-      expect(getByTestId('title-similar')).toHaveTextContent(
-        'Other Topics That You May Interest You'
-      );
-    });
   });
 
   it('should handle business user type', () => {
-    mockedAxiosInstance.get.mockResolvedValueOnce({
-      data: { data: [] },
-    });
+    const { getByTestId } = render(
+      <BlogPostContent post={mockPost} userType="business" />
+    );
 
-    render(<BlogPostContent post={mockPost} userType="business" />);
-
-    // Component should render without errors
-    expect(mockedAxiosInstance.get).toHaveBeenCalled();
+    expect(getByTestId('hero-blog-page')).toBeInTheDocument();
   });
 
   it('should handle professional user type', () => {
-    mockedAxiosInstance.get.mockResolvedValueOnce({
-      data: { data: [] },
-    });
-
-    render(<BlogPostContent post={mockPost} userType="professional" />);
-
-    // Component should render without errors
-    expect(mockedAxiosInstance.get).toHaveBeenCalled();
-  });
-
-  it('should use default values when CTA data is invalid type', async () => {
-    const mockInvalidCTAData = {
-      data: {
-        data: [
-          {
-            attributes: {
-              textCreate: 123, // Invalid type
-              textDownload: null, // Invalid type
-              titleSimilar: undefined, // Invalid type
-            },
-          },
-        ],
-      },
-    };
-
-    mockedAxiosInstance.get.mockResolvedValueOnce(mockInvalidCTAData);
-
     const { getByTestId } = render(
-      <BlogPostContent post={mockPost} userType="customer" />
+      <BlogPostContent post={mockPost} userType="professional" />
     );
 
-    await waitFor(() => {
-      expect(getByTestId('text-download')).toHaveTextContent('Download now!');
-      expect(getByTestId('text-create')).toHaveTextContent(
-        'Create Your Own Perfect Wellness Ritual With The Daisy Packages'
-      );
-      expect(getByTestId('title-similar')).toHaveTextContent(
-        'Other Topics That You May Interest You'
-      );
-    });
+    expect(getByTestId('hero-blog-page')).toBeInTheDocument();
   });
 });

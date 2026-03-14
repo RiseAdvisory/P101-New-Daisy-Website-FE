@@ -1,12 +1,8 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import { AboutClient } from '../AboutClient';
-import axiosInstance from '@/helpers/axiosConfig';
 
 // Mock dependencies
-jest.mock('@/helpers/axiosConfig');
 jest.mock('@/store/language');
-
-const mockAxiosInstance = axiosInstance as jest.Mocked<typeof axiosInstance>;
 
 // Mock Next.js Image component
 jest.mock('next/image', () => ({
@@ -66,85 +62,7 @@ describe('AboutClient', () => {
     }));
   });
 
-  const mockAboutData = {
-    data: {
-      data: [
-        {
-          attributes: {
-            heroTitle: 'About Us',
-            heroSubtitle: 'Our Story',
-            titleScroll: 'Learn More',
-            missionTitle: 'Our Mission',
-            missionDescription: 'To provide the best service',
-            valueTitle: 'Our Values',
-            valueDescription: 'Excellence and integrity',
-          },
-        },
-      ],
-    },
-  };
-
-  it('renders hero section with fetched data', async () => {
-    mockAxiosInstance.get.mockResolvedValueOnce(mockAboutData);
-
-    render(<AboutClient />);
-
-    await waitFor(() => {
-      expect(screen.getByTestId('hero-title')).toHaveTextContent('About Us');
-      expect(screen.getByTestId('hero-description')).toHaveTextContent(
-        'Our Story',
-      );
-    });
-  });
-
-  it('fetches data from correct API endpoint', async () => {
-    mockAxiosInstance.get.mockResolvedValueOnce(mockAboutData);
-
-    render(<AboutClient />);
-
-    await waitFor(() => {
-      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/about-pages?populate=*&locale=en',
-      );
-    });
-  });
-
-  it('renders OurMission and OurValue components', async () => {
-    mockAxiosInstance.get.mockResolvedValueOnce(mockAboutData);
-
-    render(<AboutClient />);
-
-    await waitFor(() => {
-      expect(screen.getByTestId('our-mission')).toHaveTextContent(
-        'Mission Loaded',
-      );
-      expect(screen.getByTestId('our-value')).toHaveTextContent('Value Loaded');
-    });
-  });
-
-  it('handles API error gracefully', async () => {
-    const consoleSpy = jest
-      .spyOn(console, 'error')
-      .mockImplementation(() => {});
-    mockAxiosInstance.get.mockRejectedValueOnce(new Error('API Error'));
-
-    render(<AboutClient />);
-
-    await waitFor(() => {
-      expect(consoleSpy).toHaveBeenCalledWith(
-        'Error fetching about page data:',
-        expect.any(Error),
-      );
-    });
-
-    consoleSpy.mockRestore();
-  });
-
-  it('renders with empty data without crashing', async () => {
-    mockAxiosInstance.get.mockResolvedValueOnce({
-      data: { data: [{ attributes: {} }] },
-    });
-
+  it('renders hero section with local data', async () => {
     render(<AboutClient />);
 
     await waitFor(() => {
@@ -152,26 +70,20 @@ describe('AboutClient', () => {
     });
   });
 
-  it('refetches data when language changes', async () => {
-    mockAxiosInstance.get.mockResolvedValue(mockAboutData);
-
-    const { rerender } = render(<AboutClient />);
+  it('renders OurMission and OurValue components', async () => {
+    render(<AboutClient />);
 
     await waitFor(() => {
-      expect(mockAxiosInstance.get).toHaveBeenCalledTimes(1);
+      expect(screen.getByTestId('our-mission')).toBeInTheDocument();
+      expect(screen.getByTestId('our-value')).toBeInTheDocument();
     });
+  });
 
-    // Simulate language change
-    require('@/store/language').useChangeLanguage = jest.fn(() => ({
-      lang: 'ar',
-    }));
-
-    rerender(<AboutClient />);
+  it('renders with data without crashing', async () => {
+    render(<AboutClient />);
 
     await waitFor(() => {
-      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/about-pages?populate=*&locale=ar',
-      );
+      expect(screen.getByTestId('hero-page')).toBeInTheDocument();
     });
   });
 });

@@ -1,7 +1,6 @@
 import { render, screen, cleanup, act } from '@testing-library/react';
 import { Header } from '../Header';
 import * as apiCache from '@/helpers/apiCache';
-import axiosInstance from '@/helpers/axiosConfig';
 
 // Mock next/navigation
 jest.mock('next/navigation', () => ({
@@ -41,14 +40,6 @@ jest.mock('@/store/currentPage', () => ({
 
 jest.mock('@/store/openMenu', () => ({
   useOpenMenu: jest.fn(() => ({ isOpenMenu: false })),
-}));
-
-// Mock axios
-jest.mock('@/helpers/axiosConfig', () => ({
-  __esModule: true,
-  default: {
-    get: jest.fn(),
-  },
 }));
 
 // Mock icons
@@ -155,9 +146,6 @@ describe('Header', () => {
     // Reset apiCache mocks
     (apiCache.getCached as jest.Mock).mockReturnValue(null);
 
-    // Reset axios mocks
-    (axiosInstance.get as jest.Mock).mockResolvedValue({ data: { data: [] } });
-
     // Mock localStorage
     Object.defineProperty(window, 'localStorage', {
       value: {
@@ -218,118 +206,9 @@ describe('Header', () => {
         await new Promise((resolve) => setTimeout(resolve, 0));
       });
 
-      // API should not be called when cache is available
-      expect(axiosInstance.get).not.toHaveBeenCalled();
-
       // Should display cached navigation
       expect(screen.getByText('Home')).toBeInTheDocument();
       expect(screen.getByText('Pricing')).toBeInTheDocument();
-    });
-
-    it('fetches data and caches it when cache is empty', async () => {
-      // Set up axios to return data
-      (axiosInstance.get as jest.Mock).mockImplementation((url: string) => {
-        if (url.includes('/headers')) {
-          return Promise.resolve({
-            data: { data: [{ attributes: mockHeaderData }] },
-          });
-        }
-        if (url.includes('/options-toogles')) {
-          return Promise.resolve({
-            data: { data: [{ attributes: mockToggleData }] },
-          });
-        }
-        if (url.includes('/change-languages')) {
-          return Promise.resolve({
-            data: { data: [{ attributes: mockLangData }] },
-          });
-        }
-        return Promise.resolve({ data: { data: [] } });
-      });
-
-      render(<Header />);
-
-      await act(async () => {
-        await new Promise((resolve) => setTimeout(resolve, 100));
-      });
-
-      // All API calls should be made
-      expect(axiosInstance.get).toHaveBeenCalledWith('/headers?locale=en');
-      expect(axiosInstance.get).toHaveBeenCalledWith(
-        '/options-toogles?locale=en',
-      );
-      expect(axiosInstance.get).toHaveBeenCalledWith(
-        '/change-languages?locale=en',
-      );
-
-      // Data should be cached
-      expect(apiCache.setCache).toHaveBeenCalledWith(
-        'header:en',
-        expect.objectContaining({
-          getTheApp: mockHeaderData.getTheApp,
-          headerNavList: mockHeaderData.headerNavList,
-        }),
-      );
-    });
-
-    it('fetches only missing data when partial cache exists', async () => {
-      // Set up partial cache
-      (apiCache.getCached as jest.Mock).mockImplementation((key: string) => {
-        if (key === 'header:en') return mockHeaderData;
-        if (key === 'header-toggle:en') return mockToggleData;
-        return null; // Language data not cached
-      });
-
-      // Set up axios for language data
-      (axiosInstance.get as jest.Mock).mockResolvedValue({
-        data: { data: [{ attributes: mockLangData }] },
-      });
-
-      render(<Header />);
-
-      await act(async () => {
-        await new Promise((resolve) => setTimeout(resolve, 100));
-      });
-
-      // Only language API should be called
-      expect(axiosInstance.get).toHaveBeenCalledWith(
-        '/change-languages?locale=en',
-      );
-      // Header and toggle APIs should not be called
-      expect(axiosInstance.get).not.toHaveBeenCalledWith('/headers?locale=en');
-      expect(axiosInstance.get).not.toHaveBeenCalledWith(
-        '/options-toogles?locale=en',
-      );
-    });
-  });
-
-  describe('parallel API calls', () => {
-    it('makes all API calls in parallel using Promise.all', async () => {
-      const apiCallOrder: string[] = [];
-      let resolvers: Array<(value: unknown) => void> = [];
-
-      (axiosInstance.get as jest.Mock).mockImplementation((url: string) => {
-        apiCallOrder.push(url);
-        return new Promise((resolve) => {
-          resolvers.push(() =>
-            resolve({
-              data: { data: [{ attributes: {} }] },
-            }),
-          );
-        });
-      });
-
-      render(<Header />);
-
-      await act(async () => {
-        await new Promise((resolve) => setTimeout(resolve, 0));
-      });
-
-      // All three API calls should be initiated together
-      expect(apiCallOrder).toHaveLength(3);
-      expect(apiCallOrder).toContain('/headers?locale=en');
-      expect(apiCallOrder).toContain('/options-toogles?locale=en');
-      expect(apiCallOrder).toContain('/change-languages?locale=en');
     });
   });
 

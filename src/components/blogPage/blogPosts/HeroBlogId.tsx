@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { CalendarIcon } from '@/assets/icons/calendarIcon/CalendarIcon';
 import { ClockIcon } from '@/assets/icons/clockIcon/ClockIcon';
 import { usePostStore } from '@/store/post';
-import { baseURLImage } from '@/helpers/axiosConfig';
 import { useChoosePath } from '@/store/currentPath';
 
 export const HeroBlogPage = () => {
@@ -13,18 +12,15 @@ export const HeroBlogPage = () => {
 
   const { patnName, bredcrumb } = useChoosePath();
 
-  // Handle missing image data gracefully
+  // Handle missing image data gracefully - now uses local paths directly
   const bgImage = post?.image?.data?.[0]?.attributes?.url
-    ? new URL(post.image.data[0].attributes.url, baseURLImage).href
-    : post?.picture?.data?.attributes?.url
-    ? new URL(post.picture.data.attributes.url, baseURLImage).href
-    : '';
+    ?? post?.picture?.data?.attributes?.url
+    ?? '';
 
   const iconImg = post?.iconOwner?.data?.[0]?.attributes?.url
-    ? new URL(post.iconOwner.data[0].attributes.url, baseURLImage).href
-    : post?.user?.data?.attributes?.picture?.data?.attributes?.url
-    ? new URL(post.user.data.attributes.picture.data.attributes.url, baseURLImage).href
-    : '';
+    ?? post?.user?.data?.attributes?.picture?.data?.attributes?.url
+    ?? '';
+
   return (
     <div
       className="relative bg-cover bg-center pb-[100px] md:pb-[400px] px-4 md:pl-[64px] md:pt-[25px]"

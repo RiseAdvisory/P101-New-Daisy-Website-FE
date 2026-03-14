@@ -5,7 +5,6 @@ import {
   getAllBlogSlugs,
   UserType,
 } from '@/lib/api/blog';
-import { baseURLImage } from '@/helpers/axiosConfig';
 import BlogPostContent from './BlogPostContent';
 import BlogPostJsonLd from './BlogPostJsonLd';
 
@@ -57,12 +56,10 @@ export async function generateMetadata({
     attributes.description?.substring(0, 160) ||
     '';
 
-  // Get OG image URL
+  // Get OG image URL - now uses local paths directly
   const ogImageUrl = attributes.ogImage?.data?.attributes?.url
-    ? new URL(attributes.ogImage.data.attributes.url, baseURLImage).href
-    : attributes.picture?.data?.attributes?.url
-    ? new URL(attributes.picture.data.attributes.url, baseURLImage).href
-    : undefined;
+    ?? attributes.picture?.data?.attributes?.url
+    ?? undefined;
 
   return {
     title: metaTitle,
@@ -83,7 +80,7 @@ export async function generateMetadata({
       images: ogImageUrl ? [ogImageUrl] : undefined,
     },
     alternates: {
-      canonical: `https://www.jointhedaisy.com/resources/blog/${userType}/${slug}`,
+      canonical: `/resources/blog/${userType}/${slug}`,
       languages: {
         en: `/resources/blog/${userType}/${slug}`,
         ar: `/ar/resources/blog/${userType}/${slug}`,

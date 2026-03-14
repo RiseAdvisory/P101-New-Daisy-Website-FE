@@ -4,7 +4,6 @@ import { ClockIcon } from '@/assets/icons/clockIcon/ClockIcon';
 import { CalendarIcon } from '@/assets/icons/calendarIcon/CalendarIcon';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
-import { baseURLImage } from '@/helpers/axiosConfig';
 import { usePostStore } from '@/store/post';
 import { useChoosePath } from '@/store/currentPath';
 
@@ -43,14 +42,12 @@ export const CardPosts = ({
       <ul className="bg-[#F8F5F3] px-4 space-y-8 pb-[28px] md:pb-[140px] translate-y-[-231px] md:translate-y-[-241px] bg-transparent -mb-[230px] md:grid md:grid-cols-3 md:gap-6 md:space-y-0">
         {listCard &&
           sortingList.map((item: any, index: number) => {
-            const [data] = item.attributes.image.data;
-            const imagePosts = new URL(
-              data.attributes.formats.large.url,
-              baseURLImage,
-            ).href;
-            const [dataOwner] = item.attributes.iconOwner.data;
-            const ownerSrc = new URL(dataOwner.attributes.url, baseURLImage)
-              .href;
+            const imageData = item.attributes.image?.data?.[0];
+            const imagePosts = imageData?.attributes?.formats?.large?.url
+              ?? imageData?.attributes?.url
+              ?? '/images/blog/placeholder.webp';
+            const ownerData = item.attributes.iconOwner?.data?.[0];
+            const ownerSrc = ownerData?.attributes?.url ?? '/images/blog/author-daisy-team.webp';
             return (
               <li
                 onClick={() => {
@@ -82,10 +79,10 @@ export const CardPosts = ({
                 <div className="px-6 py-4 mt-6">
                   <div className="flex justify-start gap-2 text-sm">
                     <span className="px-3 py-1 text-[#2543AD] bg-[#E9ECF7] rounded-sm">
-                      {item.attributes.tags.wellness}
+                      {item.attributes.tags?.wellness}
                     </span>
                     <span className="px-3 py-1 text-[#14736F] bg-[#E7F1F1] rounded-sm">
-                      {item.attributes.tags.hair}
+                      {item.attributes.tags?.hair}
                     </span>
                   </div>
                   <h3 className="mt-2 text-lg ltr:font-montserrat font-semibold">
@@ -102,16 +99,16 @@ export const CardPosts = ({
                         height={18}
                       />
                       <span className=" text-gray-500 text-sm">
-                        {item.attributes.user.name}
+                        {item.attributes.user?.data?.attributes?.name ?? item.attributes.user?.name}
                       </span>
                     </div>
                     <span className="flex items-center border-r pr-[10px]">
                       <CalendarIcon className="ltr:mr-[10px] rtl:ml-[10px]" />
-                      {item.attributes.user.date}
+                      {item.attributes.user?.data?.attributes?.date ?? item.attributes.user?.date}
                     </span>
                     <span className="flex items-center rtl:border-r rtl:pr-2">
                       <ClockIcon className="ltr:mr-2 rtl:ml-2" />
-                      {item.attributes.user.time}
+                      {item.attributes.user?.data?.attributes?.time ?? item.attributes.user?.time}
                     </span>
                   </div>
                   <p className="mt-2 text-[#455150] text-sm ltr:font-montserrat">

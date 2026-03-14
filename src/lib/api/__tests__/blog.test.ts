@@ -1,4 +1,3 @@
-import axios from 'axios';
 import {
   getAllBlogPosts,
   getBlogPostBySlug,
@@ -7,324 +6,126 @@ import {
   UserType,
 } from '../blog';
 
-// Mock axios
-jest.mock('axios');
-const mockedAxios = axios as jest.Mocked<typeof axios>;
-
-// Mock axios config exports
-jest.mock('@/helpers/axiosConfig', () => ({
-  baseURL: 'https://api.test.com',
-  baseURLImage: 'https://cdn.test.com',
-}));
-
-describe('Blog API', () => {
-  beforeEach(() => {
-    jest.clearAllMocks();
-  });
-
+describe('Blog API (Local Data)', () => {
   describe('getAllBlogPosts', () => {
-    it('should fetch all blog posts for customer type', async () => {
-      const mockResponse = {
-        data: {
-          data: [
-            {
-              id: 1,
-              attributes: {
-                title: 'Test Post',
-                slug: 'test-post',
-                description: 'Test description',
-              },
-            },
-          ],
-        },
-      };
-
-      mockedAxios.get.mockResolvedValueOnce(mockResponse);
-
+    it('should return blog posts for customer type', async () => {
       const result = await getAllBlogPosts('customer', 'en');
 
-      expect(mockedAxios.get).toHaveBeenCalledWith(
-        'https://api.test.com/resources-blog-post-customers',
-        {
-          params: {
-            locale: 'en',
-            populate: ['user.picture', 'iconOwner', 'category', 'picture', 'image', 'ogImage', 'tags'],
-            sort: 'publishedAt:desc',
-          },
-        }
-      );
-      expect(result).toEqual(mockResponse.data.data);
+      expect(result).toBeInstanceOf(Array);
+      expect(result.length).toBeGreaterThan(0);
+      result.forEach((post) => {
+        expect(post).toHaveProperty('id');
+        expect(post).toHaveProperty('attributes');
+        expect(post.attributes).toHaveProperty('title');
+        expect(post.attributes).toHaveProperty('slug');
+      });
     });
 
-    it('should handle business user type', async () => {
-      const mockResponse = { data: { data: [] } };
-      mockedAxios.get.mockResolvedValueOnce(mockResponse);
+    it('should return blog posts for business type', async () => {
+      const result = await getAllBlogPosts('business', 'en');
 
-      await getAllBlogPosts('business', 'ar');
-
-      expect(mockedAxios.get).toHaveBeenCalledWith(
-        'https://api.test.com/resources-blog-post-businesses',
-        expect.objectContaining({
-          params: expect.objectContaining({
-            locale: 'ar',
-          }),
-        })
-      );
+      expect(result).toBeInstanceOf(Array);
+      expect(result.length).toBeGreaterThan(0);
     });
 
-    it('should handle professional user type', async () => {
-      const mockResponse = { data: { data: [] } };
-      mockedAxios.get.mockResolvedValueOnce(mockResponse);
+    it('should return blog posts for professional type', async () => {
+      const result = await getAllBlogPosts('professional', 'en');
 
-      await getAllBlogPosts('professional', 'en');
-
-      expect(mockedAxios.get).toHaveBeenCalledWith(
-        'https://api.test.com/resources-blog-post-independents',
-        expect.any(Object)
-      );
+      expect(result).toBeInstanceOf(Array);
+      expect(result.length).toBeGreaterThan(0);
     });
 
-    it('should return empty array on error', async () => {
-      mockedAxios.get.mockRejectedValueOnce(new Error('Network error'));
-
-      const result = await getAllBlogPosts('customer', 'en');
-
-      expect(result).toEqual([]);
-    });
-
-    it('should handle missing data in response', async () => {
-      mockedAxios.get.mockResolvedValueOnce({ data: {} });
-
-      const result = await getAllBlogPosts('customer', 'en');
+    it('should return empty array for unknown user type', async () => {
+      const result = await getAllBlogPosts('unknown' as UserType, 'en');
 
       expect(result).toEqual([]);
     });
   });
 
   describe('getBlogPostBySlug', () => {
-    it('should fetch blog post by slug', async () => {
-      const mockPost = {
-        id: 1,
-        attributes: {
-          title: 'Test Post',
-          slug: 'test-post',
-          description: 'Test description',
-        },
-      };
-
-      const mockResponse = {
-        data: {
-          data: [mockPost],
-        },
-      };
-
-      mockedAxios.get.mockResolvedValueOnce(mockResponse);
-
-      const result = await getBlogPostBySlug('customer', 'test-post', 'en');
-
-      expect(mockedAxios.get).toHaveBeenCalledWith(
-        'https://api.test.com/resources-blog-post-customers',
-        {
-          params: {
-            locale: 'en',
-            'filters[slug][$eq]': 'test-post',
-            populate: ['user.picture', 'iconOwner', 'category', 'picture', 'image', 'ogImage', 'tags'],
-          },
-        }
+    it('should return a blog post by slug', async () => {
+      const result = await getBlogPostBySlug(
+        'customer',
+        'top-5-wellness-trends-2026',
+        'en'
       );
-      expect(result).toEqual(mockPost);
+
+      expect(result).not.toBeNull();
+      expect(result?.attributes.slug).toBe('top-5-wellness-trends-2026');
+      expect(result?.attributes.title).toBe(
+        'Top 5 Wellness Trends to Watch in 2026'
+      );
     });
 
     it('should return null when post not found', async () => {
-      mockedAxios.get.mockResolvedValueOnce({ data: { data: [] } });
-
-      const result = await getBlogPostBySlug('customer', 'non-existent', 'en');
-
-      expect(result).toBeNull();
-    });
-
-    it('should return null on error', async () => {
-      mockedAxios.get.mockRejectedValueOnce(new Error('Network error'));
-
-      const result = await getBlogPostBySlug('customer', 'test-post', 'en');
+      const result = await getBlogPostBySlug(
+        'customer',
+        'non-existent-slug',
+        'en'
+      );
 
       expect(result).toBeNull();
     });
 
     it('should use default locale when not provided', async () => {
-      mockedAxios.get.mockResolvedValueOnce({ data: { data: [] } });
-
-      await getBlogPostBySlug('customer', 'test-post');
-
-      expect(mockedAxios.get).toHaveBeenCalledWith(
-        expect.any(String),
-        expect.objectContaining({
-          params: expect.objectContaining({
-            locale: 'en',
-          }),
-        })
+      const result = await getBlogPostBySlug(
+        'customer',
+        'top-5-wellness-trends-2026'
       );
+
+      expect(result).not.toBeNull();
     });
   });
 
   describe('getAllBlogSlugs', () => {
-    it('should fetch all slugs for all user types and locales', async () => {
-      const mockPosts = [
-        {
-          id: 1,
-          attributes: { slug: 'post-1', title: 'Post 1', description: '' },
-        },
-        {
-          id: 2,
-          attributes: { slug: 'post-2', title: 'Post 2', description: '' },
-        },
-      ];
-
-      // Mock 6 calls (3 user types × 2 locales)
-      mockedAxios.get.mockResolvedValue({ data: { data: mockPosts } });
-
+    it('should return slugs for all user types', async () => {
       const result = await getAllBlogSlugs();
 
-      // Should have called for each user type and locale combination
-      expect(mockedAxios.get).toHaveBeenCalledTimes(6);
-
-      // Should return slugs for all combinations
-      expect(result).toHaveLength(12); // 2 posts × 3 types × 2 locales
+      expect(result).toBeInstanceOf(Array);
+      expect(result.length).toBeGreaterThan(0);
 
       // Verify structure
-      expect(result[0]).toHaveProperty('userType');
-      expect(result[0]).toHaveProperty('slug');
-      expect(result[0]).toHaveProperty('locale');
-    });
+      result.forEach((item) => {
+        expect(item).toHaveProperty('userType');
+        expect(item).toHaveProperty('slug');
+        expect(item).toHaveProperty('locale');
+      });
 
-    it('should skip posts without slugs', async () => {
-      const mockPosts = [
-        {
-          id: 1,
-          attributes: { slug: 'post-1', title: 'Post 1', description: '' },
-        },
-        { id: 2, attributes: { slug: null, title: 'Post 2', description: '' } },
-      ];
-
-      mockedAxios.get.mockResolvedValue({ data: { data: mockPosts } });
-
-      const result = await getAllBlogSlugs();
-
-      // Should only include posts with slugs (1 post × 3 types × 2 locales = 6)
-      expect(result).toHaveLength(6);
-      expect(result.every((item) => item.slug)).toBe(true);
-    });
-
-    it('should handle errors gracefully and continue', async () => {
-      // First call succeeds, second fails
-      mockedAxios.get
-        .mockResolvedValueOnce({
-          data: {
-            data: [
-              {
-                id: 1,
-                attributes: { slug: 'post-1', title: 'Post 1', description: '' },
-              },
-            ],
-          },
-        })
-        .mockRejectedValueOnce(new Error('Network error'))
-        .mockResolvedValue({ data: { data: [] } });
-
-      const result = await getAllBlogSlugs();
-
-      // Should continue despite error
-      expect(mockedAxios.get).toHaveBeenCalledTimes(6);
+      // Should have slugs for all three user types
+      const userTypes = new Set(result.map((item) => item.userType));
+      expect(userTypes.has('customer')).toBe(true);
+      expect(userTypes.has('business')).toBe(true);
+      expect(userTypes.has('professional')).toBe(true);
     });
   });
 
   describe('getRelatedBlogPosts', () => {
-    it('should fetch related posts by category', async () => {
-      const mockPosts = [
-        {
-          id: 2,
-          attributes: {
-            slug: 'related-post',
-            title: 'Related Post',
-            description: '',
-          },
-        },
-      ];
+    it('should return related posts by category', async () => {
+      const result = await getRelatedBlogPosts('customer', 1, 999, 'en', 3);
 
-      mockedAxios.get.mockResolvedValueOnce({ data: { data: mockPosts } });
-
-      const result = await getRelatedBlogPosts('customer', 5, 1, 'en', 3);
-
-      expect(mockedAxios.get).toHaveBeenCalledWith(
-        'https://api.test.com/resources-blog-post-customers',
-        {
-          params: {
-            locale: 'en',
-            'filters[category][id][$eq]': 5,
-            'filters[id][$ne]': 1,
-            populate: ['user.picture', 'iconOwner', 'category', 'picture', 'image', 'ogImage', 'tags'],
-            sort: 'publishedAt:desc',
-            'pagination[limit]': 3,
-          },
-        }
-      );
-      expect(result).toEqual(mockPosts);
+      expect(result).toBeInstanceOf(Array);
     });
 
     it('should exclude current post from results', async () => {
-      mockedAxios.get.mockResolvedValueOnce({ data: { data: [] } });
+      // Post ID 1 is in category 1 (Wellness)
+      const result = await getRelatedBlogPosts('customer', 1, 1, 'en');
 
-      await getRelatedBlogPosts('customer', 5, 10, 'en');
-
-      expect(mockedAxios.get).toHaveBeenCalledWith(
-        expect.any(String),
-        expect.objectContaining({
-          params: expect.objectContaining({
-            'filters[id][$ne]': 10,
-          }),
-        })
-      );
+      // Should not include post with id 1
+      result.forEach((post) => {
+        expect(post.id).not.toBe(1);
+      });
     });
 
-    it('should use default limit of 3', async () => {
-      mockedAxios.get.mockResolvedValueOnce({ data: { data: [] } });
+    it('should respect the limit parameter', async () => {
+      const result = await getRelatedBlogPosts('customer', 1, 999, 'en', 1);
 
-      await getRelatedBlogPosts('customer', 5, 1, 'en');
-
-      expect(mockedAxios.get).toHaveBeenCalledWith(
-        expect.any(String),
-        expect.objectContaining({
-          params: expect.objectContaining({
-            'pagination[limit]': 3,
-          }),
-        })
-      );
+      expect(result.length).toBeLessThanOrEqual(1);
     });
 
-    it('should return empty array on error', async () => {
-      mockedAxios.get.mockRejectedValueOnce(new Error('Network error'));
-
-      const result = await getRelatedBlogPosts('customer', 5, 1, 'en');
+    it('should return empty array for non-matching category', async () => {
+      const result = await getRelatedBlogPosts('customer', 999, 1, 'en');
 
       expect(result).toEqual([]);
-    });
-  });
-
-  describe('Edge Cases', () => {
-    it('should handle malformed API responses', async () => {
-      mockedAxios.get.mockResolvedValueOnce({ data: null });
-
-      const result = await getAllBlogPosts('customer', 'en');
-
-      expect(result).toEqual([]);
-    });
-
-    it('should handle undefined data in response', async () => {
-      mockedAxios.get.mockResolvedValueOnce({});
-
-      const result = await getBlogPostBySlug('customer', 'test', 'en');
-
-      expect(result).toBeNull();
     });
   });
 });

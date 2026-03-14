@@ -33,11 +33,6 @@ jest.mock('@/components/ui/separator', () => ({
   Separator: () => <hr data-testid="separator" />,
 }));
 
-// Mock axios config
-jest.mock('@/helpers/axiosConfig', () => ({
-  baseURLImage: 'https://example.com',
-}));
-
 describe('MobileScrollSection', () => {
   const mockScrollData = [
     {

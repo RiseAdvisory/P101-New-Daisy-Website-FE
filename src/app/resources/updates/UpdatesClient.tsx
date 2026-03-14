@@ -1,61 +1,43 @@
 'use client';
 import { CardPosts } from '@/components/blogPage/blogPosts/CardPosts';
 import { HeroPage } from '@/components/heroSection/HeroSection';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useChoosePath } from '@/store/currentPath';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
 import { useMyContext } from '@/app/MyContext';
-import { ResourcePageAttributes, ResourceItem } from '@/types/strapi';
-
-interface UpdatesHeroData extends ResourcePageAttributes {
-  title?: string;
-  subtitle?: string;
-  description?: string;
-  bredCrumbDesription?: string;
-  bredCrumbTitle?: string;
-  breadcrumbs?: string;
-}
+import { updatesHeroData, updatesPostsByUserType } from '@/lib/constants/resources/resourcesData';
+import { t } from '@/lib/constants/i18n';
 
 export const UpdatesClient = () => {
-  const [heroUpdate, setHeroUpdate] = useState<UpdatesHeroData | null>(null);
-  const [listCard, setListCards] = useState<ResourceItem[] | null>(null);
+  const [heroUpdate, setHeroUpdate] = useState<{
+    title: string;
+    subtitle: string;
+    description?: string;
+    bredCrumbDesription?: string;
+    bredCrumbTitle?: string;
+    breadcrumbs?: string;
+  } | null>(null);
+  const [listCard, setListCards] = useState<any[] | null>(null);
 
   const { lang } = useChangeLanguage();
   const { chooseBreadcrumb, choosePathStrapi } = useChoosePath();
   const { userChange: currentPage } = useMyContext();
 
   useEffect(() => {
-    let endpointHeroResourceUpdates = '';
-    let endpointResourceUpdates = '';
-    if (currentPage === '/customer') {
-      endpointHeroResourceUpdates = 'hero-resources-update-customers';
-      endpointResourceUpdates = 'resources-update-customers';
-    }
-    if (currentPage === '/business') {
-      endpointHeroResourceUpdates = 'hero-resources-update-businesses';
-      endpointResourceUpdates = 'resources-update-businesses';
-    }
-    if (currentPage === '/professional') {
-      endpointHeroResourceUpdates = 'hero-resources-update-independents';
-      endpointResourceUpdates = 'resources-update-independents';
+    let type = 'customer';
+    if (currentPage === '/customer') type = 'customer';
+    if (currentPage === '/business') type = 'business';
+    if (currentPage === '/professional') type = 'professional';
+
+    const hero = updatesHeroData[type];
+    if (hero) {
+      const heroData = t(hero, lang);
+      setHeroUpdate(heroData);
     }
 
-    (async () => {
-      try {
-        const [response, responseList] = await Promise.all([
-          axiosInstance.get(`/${endpointHeroResourceUpdates}?locale=${lang}`),
-          axiosInstance.get(
-            `/${endpointResourceUpdates}?populate=*&locale=${lang}`,
-          ),
-        ]);
-        setListCards(responseList?.data?.data);
-        setHeroUpdate(response?.data?.data[0]?.attributes);
-        choosePathStrapi(`/${endpointResourceUpdates}`);
-      } catch (error) {
-        console.error('Error fetching updates:', error);
-      }
-    })();
+    const posts = updatesPostsByUserType[type] || [];
+    setListCards(posts);
+    choosePathStrapi(`/resources/updates/${type}`);
   }, [lang, currentPage, choosePathStrapi]);
 
   useEffect(() => {

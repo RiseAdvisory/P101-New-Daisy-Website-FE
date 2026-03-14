@@ -8,9 +8,11 @@ import { ArrowUp } from 'lucide-react';
 import { TabsTutorials } from '@/components/tabsTutorials/TabsTutorials';
 import { TutorialComponents } from './TutorialComponents';
 import { useChangeLanguage } from '@/store/language';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useRouter } from 'next/navigation';
 import { useMyContext } from '@/app/MyContext';
+import { tutorialInfoData, tutorialTabsData } from '@/lib/constants/resources/resourcesData';
+import { t } from '@/lib/constants/i18n';
+
 export const TutorialSection = ({
   setScroll,
 }: {
@@ -27,35 +29,26 @@ export const TutorialSection = ({
   const { userChange: currentPage } = useMyContext();
 
   useEffect(() => {
-    // `/resources-tutorial-infos?locale=${lang}`
-    let endpointTutorialInfos = 'resources-tutorial-infos';
-    let endpointTutorialTabs = 'resorce-tutorial-tabs';
-    if (currentPage === '/customer') {
-      endpointTutorialInfos = 'resources-tutorial-info-customers';
-      endpointTutorialTabs = 'resource-tutorial-tab-customers';
-    }
-    if (currentPage === '/business') {
-      endpointTutorialInfos = 'resources-tutorial-info-businesses';
-      endpointTutorialTabs = 'resource-tutorial-tab-businesses';
-    }
-    if (currentPage === '/professional') {
-      endpointTutorialInfos = 'resources-tutorial-info-independents';
-      endpointTutorialTabs = 'resource-tutorial-tab-independents';
+    let type = 'customer';
+    if (currentPage === '/customer') type = 'customer';
+    if (currentPage === '/business') type = 'business';
+    if (currentPage === '/professional') type = 'professional';
+
+    // Load tutorial info from local data
+    const infoData = tutorialInfoData[type];
+    if (infoData) {
+      setTutorialInfo(t(infoData, lang));
     }
 
-    (async () => {
-      const tutorialInfo = await axiosInstance.get(
-        `/${endpointTutorialInfos}?locale=${lang}`,
-      );
-      const response = await axiosInstance.get(
-        `/${endpointTutorialTabs}?locale=${lang}`,
-      );
-      const [dataInfo] = tutorialInfo?.data?.data;
-      const [data] = response?.data?.data;
-      setListDataTabs(response?.data.data);
-      setDataTabs(data?.attributes);
-      setTutorialInfo(dataInfo?.attributes);
-    })();
+    // Load tutorial tabs from local data
+    const tabs = tutorialTabsData[type];
+    if (tabs) {
+      const tabData = t(tabs, lang);
+      setListDataTabs(tabData);
+      if (tabData.length > 0) {
+        setDataTabs(tabData[0].attributes);
+      }
+    }
   }, [lang, currentPage]);
 
   useEffect(() => {

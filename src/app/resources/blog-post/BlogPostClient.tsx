@@ -1,23 +1,15 @@
 'use client';
 import { CardPosts } from '@/components/blogPage/blogPosts/CardPosts';
 import { HeroPage } from '@/components/heroSection/HeroSection';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useChoosePath } from '@/store/currentPath';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
 import { useMyContext } from '@/app/MyContext';
-import { ResourcePageAttributes, ResourceItem } from '@/types/strapi';
-
-interface BlogHeroData extends ResourcePageAttributes {
-  title?: string;
-  subtitle?: string;
-  description?: string;
-  breadcrumbs?: string;
-}
+import { blogHeroData, blogPostsByUserType } from '@/lib/constants/blog/blogData';
+import { t } from '@/lib/constants/i18n';
 
 export const BlogPostClient = () => {
-  const [heroBlog, setHeroBlog] = useState<BlogHeroData | null>(null);
-  const [listCard, setListCards] = useState<ResourceItem[] | null>(null);
+  const [listCard, setListCards] = useState<any[] | null>(null);
   const [userType, setUserType] = useState<string>('customer');
 
   const { lang } = useChangeLanguage();
@@ -25,56 +17,31 @@ export const BlogPostClient = () => {
   const { userChange: currentPage } = useMyContext();
 
   useEffect(() => {
-    let endpointExperienceDaisyLink = 'resources-blog-post-customers';
     let type = 'customer';
 
     if (currentPage === '/customer') {
-      endpointExperienceDaisyLink = 'resources-blog-post-customers';
       type = 'customer';
     }
     if (currentPage === '/business') {
-      endpointExperienceDaisyLink = 'resources-blog-post-businesses';
       type = 'business';
     }
     if (currentPage === '/professional') {
-      endpointExperienceDaisyLink = 'resources-blog-post-independents';
       type = 'professional';
     }
 
     setUserType(type);
 
-    (async () => {
-      try {
-        const [response, responseList] = await Promise.all([
-          axiosInstance.get(
-            `hero-resources-blogposts?locale=${lang}&_sort=name:DESCa`,
-          ),
-          axiosInstance.get(
-            `/${endpointExperienceDaisyLink}?populate=*&locale=${lang}`,
-          ),
-        ]);
-        setListCards(responseList?.data?.data);
-        setHeroBlog(response?.data?.data[0]?.attributes);
-      } catch (error) {
-        console.error('Error fetching blog posts:', error);
-      }
-    })();
+    // Load blog posts from local data
+    const posts = blogPostsByUserType[type] || [];
+    setListCards(posts);
   }, [lang, currentPage]);
 
+  const hero = t(blogHeroData, lang);
+
   useEffect(() => {
-    let endpointExperienceDaisyLink = 'resources-blog-post-customers';
-    if (currentPage === '/customer') {
-      endpointExperienceDaisyLink = 'resources-blog-post-customers';
-    }
-    if (currentPage === '/business') {
-      endpointExperienceDaisyLink = 'resources-blog-post-businesses';
-    }
-    if (currentPage === '/professional') {
-      endpointExperienceDaisyLink = 'resources-blog-post-independents';
-    }
-    chooseBreadcrumb(heroBlog?.breadcrumbs ?? '');
-    choosePathStrapi(`/${endpointExperienceDaisyLink}`);
-  }, [heroBlog, lang, currentPage, chooseBreadcrumb, choosePathStrapi]);
+    chooseBreadcrumb(hero.breadcrumbs ?? '');
+    choosePathStrapi(`/resources/blog/${userType}`);
+  }, [hero, lang, currentPage, chooseBreadcrumb, choosePathStrapi, userType]);
 
   return (
     <div className="w-full">
@@ -84,11 +51,11 @@ export const BlogPostClient = () => {
         isVisibleBreadCrumbs={true}
         hiddenArrow={true}
         visibleDescriiton={false}
-        title={heroBlog?.title ?? ''}
-        description={heroBlog?.subtitle ?? ''}
+        title={hero.title ?? ''}
+        description={hero.subtitle ?? ''}
         heightScreen={false}
         styleSection="pb-[100px] pt-[25px]"
-        secondDescription={heroBlog?.description}
+        secondDescription={hero.description}
       />
       <CardPosts
         typePath={userType}

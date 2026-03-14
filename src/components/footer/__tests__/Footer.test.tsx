@@ -40,14 +40,6 @@ jest.mock('@/store/language', () => ({
   useChangeLanguage: jest.fn(() => ({ lang: 'en' })),
 }));
 
-// Mock axios
-jest.mock('@/helpers/axiosConfig', () => ({
-  __esModule: true,
-  default: {
-    get: jest.fn(),
-  },
-}));
-
 // Mock icons
 jest.mock('@/assets/icons/logo/LogoIconsS', () => ({
   LogoIconsS: () => <div data-testid="logo-icon">Logo</div>,

@@ -84,26 +84,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Get Strapi URL for preconnect hints
-  const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_URL || '';
-  const strapiImageUrl = process.env.NEXT_PUBLIC_STRAPI_URL_IMAGE || '';
-
   return (
     <html lang="en">
       <head>
-        {/* Preconnect to critical origins for faster resource loading */}
-        {strapiUrl && (
-          <>
-            <link rel="preconnect" href={strapiUrl} />
-            <link rel="dns-prefetch" href={strapiUrl} />
-          </>
-        )}
-        {strapiImageUrl && strapiImageUrl !== strapiUrl && (
-          <>
-            <link rel="preconnect" href={strapiImageUrl} />
-            <link rel="dns-prefetch" href={strapiImageUrl} />
-          </>
-        )}
         {/* Preconnect to Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
