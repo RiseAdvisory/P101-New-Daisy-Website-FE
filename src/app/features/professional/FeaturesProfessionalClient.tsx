@@ -2,51 +2,23 @@
 import { FeaturesCustomerList } from '@/components/featuresPage/FeaturesCustomerList';
 import { SignUpBlog } from '@/components/featuresPage/SignUpBlog';
 import { HeroPage } from '@/components/heroSection/HeroSection';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
-import { FeaturesPageAttributes, FeatureListItem } from '@/types/strapi';
+import { useState } from 'react';
+import { t } from '@/lib/constants/i18n';
+import { featuresProfessionalData } from '@/lib/constants/features/featuresProfessionalList';
 
 export const FeaturesProfessionalClient = () => {
   const [scroll, setScroll] = useState(null);
-  const [dataProfessional, setDataProfessional] =
-    useState<FeaturesPageAttributes | null>(null);
-  const [dataListProfessional, setDataListProfessional] = useState<
-    FeatureListItem[] | null
-  >(null);
-
   const { lang } = useChangeLanguage();
-
-  useEffect(() => {
-    (async () => {
-      try {
-        // Parallelize API calls for better performance
-        const [response, listProfessionalResponse] = await Promise.all([
-          axiosInstance.get(`/features-professionals?locale=${lang}`),
-          axiosInstance.get(
-            `/features-professional-list-sorts?populate=*&locale=${lang}&pagination[pageSize]=100`,
-          ),
-        ]);
-
-        setDataProfessional(response?.data?.data?.[0]?.attributes);
-        const sortedObjects = listProfessionalResponse?.data?.data?.sort(
-          (a: FeatureListItem, b: FeatureListItem) =>
-            (a.attributes.sortId || 0) - (b.attributes.sortId || 0),
-        );
-        setDataListProfessional(sortedObjects);
-      } catch (error) {
-        console.error('Error fetching professional features:', error);
-      }
-    })();
-  }, [lang]);
+  const data = t(featuresProfessionalData, lang);
 
   return (
     <div className="bg-primary md:pb-40">
       <HeroPage
         blockRef={scroll}
         title=""
-        titleScroll={dataProfessional?.titleScroll}
-        description={dataProfessional?.title ?? ''}
+        titleScroll={data.titleScroll}
+        description={data.title}
         hiddenArrow={false}
         visibleDescriiton={false}
         heightScreen={true}
@@ -55,7 +27,7 @@ export const FeaturesProfessionalClient = () => {
       />
       <FeaturesCustomerList
         setScroll={setScroll}
-        dataListBlog={dataListProfessional}
+        dataListBlog={data.featureList}
       />
       <SignUpBlog />
     </div>

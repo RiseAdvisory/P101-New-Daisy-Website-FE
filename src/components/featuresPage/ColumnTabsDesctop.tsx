@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Separator from '../separator/Separator';
 import Image from 'next/image';
-import { baseURLImage } from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { FeatureListItem } from '@/types/strapi';
 
@@ -71,10 +70,7 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
               </ul>
             </TabsList>
             {dataList.map((item, index) => {
-              const imageBlock = new URL(
-                item.attributes.picture.data[0].attributes.url,
-                baseURLImage,
-              ).href;
+              const imageUrl = item.attributes.picture.data[0].attributes.url;
 
               return (
                 <TabsContent
@@ -84,7 +80,7 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
                 >
                   <div className="w-full h-[480px] bg-[#435655] rounded-[16px] border border-[#828E8E] relative overflow-hidden">
                     <Image
-                      src={imageBlock}
+                      src={imageUrl}
                       alt={item.attributes.title}
                       fill
                       sizes="(max-width: 768px) 100vw, 100vw"

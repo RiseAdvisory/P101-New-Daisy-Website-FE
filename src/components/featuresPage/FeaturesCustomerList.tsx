@@ -1,5 +1,4 @@
 'use client';
-import { featuresCustomerList } from '@/lib/constants/features/featuresCustomerList';
 import { FeaturesCustomerItem } from './FeaturesCustomer';
 import { Dispatch, SetStateAction, useEffect, useRef } from 'react';
 

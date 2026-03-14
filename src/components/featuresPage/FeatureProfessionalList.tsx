@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { Separator } from '../ui/separator';
 import leaf from '../../assets/images/features/professional/Group.png';
-import { baseURLImage } from '@/helpers/axiosConfig';
 
 export const FeatureProfessionalList = ({
   title,
@@ -32,9 +31,9 @@ export const FeatureProfessionalList = ({
               mobileImageData?.url ??
               desktopImageData?.formats?.large?.url ??
               desktopImageData?.url;
-            const imageBlock = new URL(imageUrl, baseURLImage).href;
 
-            const imageStyle = item?.attributes?.mobileStylePicture ??
+            const imageStyle =
+              item?.attributes?.mobileStylePicture ??
               item?.attributes?.stylePicture;
 
             return (
@@ -48,7 +47,7 @@ export const FeatureProfessionalList = ({
                     height={240}
                   />
                   <Image
-                    src={imageBlock}
+                    src={imageUrl}
                     alt={item.attributes.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"

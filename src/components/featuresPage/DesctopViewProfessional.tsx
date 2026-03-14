@@ -5,13 +5,7 @@ import imageLeaf from '../../assets/images/features/business/LeafBusinessFeature
 import imageLeafRight from '../../assets/images/features/business/LeafBusinessRight.png';
 import imageLeafLast from '../../assets/images/features/business/LeafBusinessBottom.png';
 
-import {
-  listManegamentFeatures,
-  listMarketingFeatures,
-  listPerfomanceFeatures,
-} from '@/lib/constants/features/featuresProfessionalList';
 import { ColumnTabsDesctop } from './ColumnTabsDesctop';
-import { baseURLImage } from '@/helpers/axiosConfig';
 import { CategoryData, CategoryKey } from '@/app/features/business/FeaturesBusinessClient';
 
 interface SectionConfig {
@@ -21,7 +15,6 @@ interface SectionConfig {
   layout: 'vertical' | 'horizontal';
   bgImage: typeof imageLeaf;
   styleLeaf: string;
-  itemsList: any;
 }
 
 /** Section order: AI, Booking, Communication, Marketing, Payments, Growth, Control, Reports */
@@ -33,7 +26,6 @@ const SECTIONS: SectionConfig[] = [
     layout: 'vertical',
     bgImage: imageLeafRight,
     styleLeaf: 'absolute bottom-0 right-0 w-[500px]',
-    itemsList: listMarketingFeatures,
   },
   {
     categoryKey: 'booking',
@@ -42,7 +34,6 @@ const SECTIONS: SectionConfig[] = [
     layout: 'vertical',
     bgImage: imageLeaf,
     styleLeaf: 'absolute bottom-0 left-0 w-[500px]',
-    itemsList: listMarketingFeatures,
   },
   {
     categoryKey: 'communication',
@@ -51,7 +42,6 @@ const SECTIONS: SectionConfig[] = [
     layout: 'horizontal',
     bgImage: imageLeafLast,
     styleLeaf: 'absolute top-0 left-0 h-[300px] w-[200px]',
-    itemsList: listPerfomanceFeatures,
   },
   {
     categoryKey: 'marketing',
@@ -60,7 +50,6 @@ const SECTIONS: SectionConfig[] = [
     layout: 'vertical',
     bgImage: imageLeafRight,
     styleLeaf: 'absolute bottom-0 right-0 w-[500px]',
-    itemsList: listManegamentFeatures,
   },
   {
     categoryKey: 'payments',
@@ -69,7 +58,6 @@ const SECTIONS: SectionConfig[] = [
     layout: 'vertical',
     bgImage: imageLeaf,
     styleLeaf: 'absolute bottom-0 left-0 w-[500px]',
-    itemsList: listMarketingFeatures,
   },
   {
     categoryKey: 'growth',
@@ -78,7 +66,6 @@ const SECTIONS: SectionConfig[] = [
     layout: 'horizontal',
     bgImage: imageLeafLast,
     styleLeaf: 'absolute top-0 left-0 h-[300px] w-[200px]',
-    itemsList: listPerfomanceFeatures,
   },
   {
     categoryKey: 'control',
@@ -87,7 +74,6 @@ const SECTIONS: SectionConfig[] = [
     layout: 'vertical',
     bgImage: imageLeafRight,
     styleLeaf: 'absolute bottom-0 right-0 w-[500px]',
-    itemsList: listManegamentFeatures,
   },
   {
     categoryKey: 'reports',
@@ -96,7 +82,6 @@ const SECTIONS: SectionConfig[] = [
     layout: 'horizontal',
     bgImage: imageLeafLast,
     styleLeaf: 'absolute top-0 left-0 h-[300px] w-[200px]',
-    itemsList: listPerfomanceFeatures,
   },
 ];
 
@@ -107,18 +92,9 @@ export const DesctopViewProfessional = ({
   dataBusiness: any;
   categoryData: CategoryData;
 }) => {
-  const firstImage = new URL(
-    dataBusiness?.firstImage.data[0].attributes.url,
-    baseURLImage,
-  ).href;
-  const secondImage = new URL(
-    dataBusiness?.secondImage.data[0].attributes.url,
-    baseURLImage,
-  ).href;
-  const thirdImage = new URL(
-    dataBusiness?.thirdImage.data[0].attributes.url,
-    baseURLImage,
-  ).href;
+  const firstImage = dataBusiness?.firstImage?.data?.[0]?.attributes?.url;
+  const secondImage = dataBusiness?.secondImage?.data?.[0]?.attributes?.url;
+  const thirdImage = dataBusiness?.thirdImage?.data?.[0]?.attributes?.url;
 
   return (
     <div className="mx-auto hidden md:block mb-[192px]">
@@ -177,7 +153,7 @@ export const DesctopViewProfessional = ({
               description={sectionData?.description}
               bgImage={section.bgImage}
               styleLeaf={section.styleLeaf}
-              itemsList={section.itemsList}
+              itemsList={null}
               dataList={dataList}
             />
           </div>
