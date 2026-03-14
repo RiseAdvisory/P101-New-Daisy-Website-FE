@@ -3,14 +3,14 @@ import { LandingPageContent } from './scrollSections.types';
 
 export const customerPageData: I18nContent<LandingPageContent> = {
   en: {
-    titleFraque: 'Frequently Asked Questions',
+    titleFraque: 'Frequently Asked Question',
     growth: {
-      title: 'Your Beauty, Your Rewards',
+      title: 'Discover Premium Services, Book Effortlessly, and Elevate Your Experience with The Daisy.',
       description:
-        'Book your favorite beauty and wellness services and earn cashback on every visit. Daisy makes self-care rewarding.',
-      subtitle: 'DISCOVER & SAVE',
-      buttonLearn: 'Learn More',
-      buttonLink: '/features/customer',
+        'Unlock a world of premium beauty and wellness services...',
+      subtitle: 'MARKETPLACE',
+      buttonLearn: 'GET THE APP',
+      buttonLink: '/get-the-app',
       imageUrl: '/images/pages/customer/growth.png',
     },
     scrollSections: [
@@ -262,14 +262,14 @@ export const customerPageData: I18nContent<LandingPageContent> = {
   },
 
   ar: {
-    titleFraque: 'الأسئلة الشائعة',
+    titleFraque: 'أسئلة شائعة',
     growth: {
-      title: 'جمالك، مكافآتك',
+      title: 'اكتشف الخدمات المتميزة، احجز بسهولة، وارفع تجربتك مع ذا ديزي.',
       description:
-        'احجزي خدمات التجميل والعافية المفضلة لديك واكسبي استردادًا نقديًا في كل زيارة. ديزي تجعل العناية بالذات مجزية.',
-      subtitle: 'اكتشفي ووفّري',
-      buttonLearn: 'اعرف المزيد',
-      buttonLink: '/features/customer',
+        'افتح عالمًا من خدمات الجمال والعافية المتميزة...',
+      subtitle: 'السوق العام',
+      buttonLearn: 'احصل على التطبيق',
+      buttonLink: '/get-the-app',
       imageUrl: '/images/pages/customer/growth.png',
     },
     scrollSections: [

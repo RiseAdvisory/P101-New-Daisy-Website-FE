@@ -24,28 +24,28 @@ export interface HeaderData {
 
 export const headerData: I18nContent<HeaderData> = {
   en: {
-    getTheApp: 'Get the App',
+    getTheApp: 'Get The App',
     headerNavList: [
       { title: 'Home', nav: '/' },
       { title: 'Features', nav: '/features' },
       { title: 'Pricing', nav: '/pricing' },
       { title: 'Resources', nav: '/resources' },
-      { title: 'About', nav: '/about' },
+      { title: 'About Us', nav: '/about' },
       { title: 'Contact', nav: '/contact' },
     ],
     optionsToogle: [
-      { label: 'Business', path: '/business' },
       { label: 'Customer', path: '/customer' },
+      { label: 'Business', path: '/business' },
       { label: 'Professional', path: '/professional' },
     ],
     optionsTooglseFeatures: [
-      { label: 'Business', path: '/features/business' },
       { label: 'Customer', path: '/features/customer' },
+      { label: 'Business', path: '/features/business' },
       { label: 'Professional', path: '/features/professional' },
     ],
     listLanguage: [
       { label: 'En', path: 'en' },
-      { label: 'Ar', path: 'ar' },
+      { label: 'ع', path: 'ar' },
     ],
     mobileNavList: [
       { title: 'Home', nav: '/' },
@@ -77,31 +77,31 @@ export const headerData: I18nContent<HeaderData> = {
           },
         ],
       },
-      { title: 'About', nav: '/about' },
+      { title: 'About Us', nav: '/about' },
       { title: 'Contact', nav: '/contact' },
     ],
-    bredCrumbTitle: 'Menu',
-    bredCrumbDesription: 'Navigate',
+    bredCrumbTitle: 'Resources',
+    bredCrumbDesription: 'Home',
   },
 
   ar: {
-    getTheApp: 'حمّل التطبيق',
+    getTheApp: 'حمل التطبيق',
     headerNavList: [
       { title: 'الرئيسية', nav: '/' },
       { title: 'المميزات', nav: '/features' },
       { title: 'الأسعار', nav: '/pricing' },
       { title: 'الموارد', nav: '/resources' },
-      { title: 'عن ديزي', nav: '/about' },
-      { title: 'اتصل بنا', nav: '/contact' },
+      { title: 'نبذه عنا', nav: '/about' },
+      { title: 'تواصل', nav: '/contact' },
     ],
     optionsToogle: [
-      { label: 'أعمال', path: '/business' },
       { label: 'عميل', path: '/customer' },
+      { label: 'شركة', path: '/business' },
       { label: 'محترف', path: '/professional' },
     ],
     optionsTooglseFeatures: [
-      { label: 'أعمال', path: '/features/business' },
       { label: 'عميل', path: '/features/customer' },
+      { label: 'شركة', path: '/features/business' },
       { label: 'محترف', path: '/features/professional' },
     ],
     listLanguage: [
@@ -117,7 +117,7 @@ export const headerData: I18nContent<HeaderData> = {
         nav: '/resources',
         submenu: [
           {
-            title: 'مقالات المدونة',
+            title: 'مشاركات المدونة',
             subtitle: 'اكتشف قصص وأفكار رائعة',
             nav: '/resources/blog-post',
           },
@@ -132,16 +132,16 @@ export const headerData: I18nContent<HeaderData> = {
             nav: '/resources/tutorials',
           },
           {
-            title: 'آخر التحديثات',
+            title: 'ابق على اطلاع',
             subtitle: 'أحدث الأخبار وتحديثات المنصة',
             nav: '/resources/updates',
           },
         ],
       },
-      { title: 'عن ديزي', nav: '/about' },
-      { title: 'اتصل بنا', nav: '/contact' },
+      { title: 'نبذه عنا', nav: '/about' },
+      { title: 'التواصل', nav: '/contact' },
     ],
-    bredCrumbTitle: 'القائمة',
-    bredCrumbDesription: 'تصفح',
+    bredCrumbTitle: 'الموارد',
+    bredCrumbDesription: 'الرئيسية',
   },
 };

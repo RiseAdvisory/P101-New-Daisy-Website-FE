@@ -21,20 +21,18 @@ export type ExperienceDaisyData = Record<
 export const experienceDaisyData: ExperienceDaisyData = {
   customer: {
     en: {
-      title: 'Experience Daisy Today',
+      title: 'Discover, Book, and Enjoy with The Daisy',
       subtitle:
-        'Discover a new way to book beauty services with cashback rewards on every appointment.',
-      description:
-        'Download the Daisy app and start booking your favourite beauty services. Earn cashback on every visit and enjoy a seamless booking experience.',
+        'Your trusted platform for seamless beauty and wellness services.',
+      description: 'Download Now!',
       phoneMobileImage: phoneMobile,
       phoneDesktopImage: phoneDesktop,
     },
     ar: {
-      title: 'جرّب دايزي اليوم',
+      title: 'اكتشف، احجز، واستمتع مع ذا ديزي',
       subtitle:
-        'اكتشف طريقة جديدة لحجز خدمات التجميل مع مكافآت استرداد نقدي على كل موعد.',
-      description:
-        'حمّل تطبيق دايزي وابدأ بحجز خدمات التجميل المفضلة لديك. اكسب استرداداً نقدياً في كل زيارة واستمتع بتجربة حجز سلسة.',
+        'منصتك الموثوقة لخدمات الجمال والعافية السلسة.',
+      description: 'حمل التطبيق الآن!',
       phoneMobileImage: phoneMobile,
       phoneDesktopImage: phoneDesktop,
     },
@@ -42,20 +40,18 @@ export const experienceDaisyData: ExperienceDaisyData = {
 
   business: {
     en: {
-      title: 'Grow Your Business with Daisy',
+      title: 'Grow, Manage, and Thrive with The Daisy',
       subtitle:
-        'Manage your beauty business smarter with AI-powered tools and attract new customers effortlessly.',
-      description:
-        'Download the Daisy app and unlock powerful business management features. From appointment scheduling to customer retention, we have got you covered.',
+        'Your solution for managing bookings and elevating your business.',
+      description: 'Download Now!',
       phoneMobileImage: phoneMobile,
       phoneDesktopImage: phoneDesktop,
     },
     ar: {
-      title: 'نمِّ أعمالك مع دايزي',
+      title: 'نمِّ، نظم، وازدهر مع ذا ديزي',
       subtitle:
-        'أدِر أعمال التجميل بذكاء مع أدوات مدعومة بالذكاء الاصطناعي واجذب عملاء جدد بسهولة.',
-      description:
-        'حمّل تطبيق دايزي واطلق العنان لميزات إدارة الأعمال القوية. من جدولة المواعيد إلى الاحتفاظ بالعملاء، نحن نغطي كل شيء.',
+        'حلّك لإدارة الحجوزات والارتقاء بعملك.',
+      description: 'حمل التطبيق الآن!',
       phoneMobileImage: phoneMobile,
       phoneDesktopImage: phoneDesktop,
     },
@@ -63,20 +59,18 @@ export const experienceDaisyData: ExperienceDaisyData = {
 
   professional: {
     en: {
-      title: 'Elevate Your Career with Daisy',
+      title: 'Connect, Engage, and Build with The Daisy',
       subtitle:
-        'Take control of your schedule, build your client base, and grow your earnings as a beauty professional.',
-      description:
-        'Download the Daisy app and access tools designed for independent professionals. Manage your calendar, track earnings, and deliver exceptional service.',
+        'Empowering you to grow your business and reach more clients.',
+      description: 'Download Now!',
       phoneMobileImage: phoneMobile,
       phoneDesktopImage: phoneDesktop,
     },
     ar: {
-      title: 'ارتقِ بمسيرتك المهنية مع دايزي',
+      title: 'تواصل، تفاعل، وابنِ مع ذا ديزي',
       subtitle:
-        'تحكّم بجدولك الزمني، وابنِ قاعدة عملائك، وزِد أرباحك كمتخصص في التجميل.',
-      description:
-        'حمّل تطبيق دايزي واحصل على أدوات مصممة للمتخصصين المستقلين. أدِر تقويمك، وتتبّع أرباحك، وقدّم خدمة استثنائية.',
+        'نمكنك من تنمية عملك والوصول إلى المزيد من العملاء.',
+      description: 'حمل التطبيق الآن!',
       phoneMobileImage: phoneMobile,
       phoneDesktopImage: phoneDesktop,
     },

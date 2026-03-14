@@ -76,19 +76,19 @@ export interface PricingPageContent {
 
 export const pricingPageData: I18nContent<PricingPageContent> = {
   en: {
-    title: 'Simple, Transparent Pricing',
+    title: 'Straightforward Pricing That Grows With You',
     switchAnnually: {
       monthly: 'Monthly',
       annually: 'Annually',
     },
     toggleBusinessProfessional: [
-      { path: 'business', label: 'Business' },
+      { path: 'business', label: 'Businesses' },
       { path: 'professional', label: 'Professional' },
     ],
-    textCalculate: 'Calculate Your Price',
-    textReset: 'Reset Calculator',
-    textFreeTrial: 'Start Your Free Trial',
-    textRecomended: 'Recommended',
+    textCalculate: 'Calculate',
+    textReset: 'Reset Calculation',
+    textFreeTrial: 'Start Free Trial',
+    textRecomended: 'Recomended',
     textItemPricing: {
       perPeriod: '/ ',
       annualy: 'year',
@@ -178,8 +178,8 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           subTitle: 'First 100 bookings Free',
           description:
             'Just starting out but want to build a solid customer base & brand and while growing their presence as a professional service provider',
-          price: 'Free',
-          priceYear: 'Free',
+          price: '25',
+          priceYear: '21',
           optionPlus: '',
           options: [
             '1 User / Calendar',
@@ -208,7 +208,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           description:
             'Ideal for Solo Experienced Professionals that want to provide an exceptional experience to their customers',
           price: '50',
-          priceYear: '500',
+          priceYear: '42',
           optionPlus: 'Starter',
           options: [
             '1 User / Calendar',
@@ -234,7 +234,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           description:
             'Ideal for Solo Experienced Professionals that want to provide an exceptional experience to their customers',
           price: '100',
-          priceYear: '1000',
+          priceYear: '83',
           optionPlus: 'Professional',
           options: [
             '1 User / Calendar',
@@ -259,7 +259,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
     enterprise: {
       title: 'Enterprise',
       description:
-        'For large-scale businesses with unique requirements. Custom pricing, dedicated support, and tailored solutions for your organization.',
+        'Multi national businesses that are looking to integrate their systems with a system that overlook all their entities globally',
       textButton: 'Contact Us',
     },
     resetCalculation: {
@@ -289,7 +289,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
   },
 
   ar: {
-    title: 'أسعار بسيطة وشفافة',
+    title: 'التسعير المباشر الذي ينمو معك',
     switchAnnually: {
       monthly: 'شهري',
       annually: 'سنوي',
@@ -298,9 +298,9 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       { path: 'business', label: 'أعمال' },
       { path: 'professional', label: 'محترف' },
     ],
-    textCalculate: 'احسب سعرك',
-    textReset: 'إعادة تعيين الحاسبة',
-    textFreeTrial: 'ابدأ تجربتك المجانية',
+    textCalculate: 'احسب',
+    textReset: 'إعادة تعيين الحساب',
+    textFreeTrial: 'ابدأ النسخة التجريبية المجانية',
     textRecomended: 'موصى به',
     textItemPricing: {
       perPeriod: '/ ',
@@ -366,7 +366,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           ],
         },
         {
-          title: 'أعمال',
+          title: 'عمل',
           subTitle: 'فترة تجريبية 14 يوم',
           description:
             'للشركات ذات المساحات أو المواقع المتعددة التي تسعى للتميز في الخدمة وخدمة العملاء',
@@ -391,8 +391,8 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           subTitle: 'أول 100 حجز مجاناً',
           description:
             'بدأت للتو ولكن تريد بناء قاعدة عملاء قوية وعلامة تجارية مع تنمية حضورك كمقدم خدمة محترف',
-          price: 'مجاني',
-          priceYear: 'مجاني',
+          price: '25',
+          priceYear: '21',
           optionPlus: '',
           options: [
             '1 مستخدم / تقويم',
@@ -421,7 +421,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           description:
             'مثالي للمحترفين ذوي الخبرة الذين يرغبون في تقديم تجربة استثنائية لعملائهم',
           price: '50',
-          priceYear: '500',
+          priceYear: '42',
           optionPlus: 'مبتدئ',
           options: [
             '1 مستخدم / تقويم',
@@ -442,12 +442,12 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           ],
         },
         {
-          title: 'نخبة',
+          title: 'النخبة',
           subTitle: 'أول 100 حجز مجاناً',
           description:
             'مثالي للمحترفين ذوي الخبرة الذين يرغبون في تقديم تجربة استثنائية لعملائهم',
           price: '100',
-          priceYear: '1000',
+          priceYear: '83',
           optionPlus: 'محترف',
           options: [
             '1 مستخدم / تقويم',

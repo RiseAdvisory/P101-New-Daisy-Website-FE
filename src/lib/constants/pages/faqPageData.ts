@@ -14,22 +14,22 @@ export const faqPageData: I18nContent<FaqPageContent> = {
   en: {
     listFaq: {
       customer: {
-        title: 'Frequently Asked Questions',
-        subtitle: 'Customer FAQ',
+        title: 'support',
+        subtitle: 'Frequently Asked Questions',
         description:
-          'Find answers to the most common questions about using Daisy as a customer. From booking services to earning cashback, we have you covered.',
+          'Find answers to the most commonly asked questions about our services, products, and policies',
       },
       business: {
-        title: 'Frequently Asked Questions',
-        subtitle: 'Business FAQ',
+        title: 'support',
+        subtitle: 'Frequently Asked Questions',
         description:
-          'Everything you need to know about using Daisy to manage and grow your beauty or wellness business. Get answers about features, pricing, and more.',
+          'Find answers to the most commonly asked questions about our services, products, and policies',
       },
       professional: {
-        title: 'Frequently Asked Questions',
-        subtitle: 'Professional FAQ',
+        title: 'support',
+        subtitle: 'Frequently Asked Questions',
         description:
-          'Answers to common questions for beauty and wellness professionals using Daisy. Learn about scheduling, client management, and earning opportunities.',
+          'Find answers to the most commonly asked questions about our services, products, and policies',
       },
     },
   },
@@ -37,22 +37,22 @@ export const faqPageData: I18nContent<FaqPageContent> = {
   ar: {
     listFaq: {
       customer: {
-        title: 'الأسئلة الشائعة',
-        subtitle: 'أسئلة العملاء',
+        title: 'الدعم',
+        subtitle: 'الأسئلة الشائعة',
         description:
-          'اعثر على إجابات لأكثر الأسئلة شيوعاً حول استخدام ديزي كعميل. من حجز الخدمات إلى كسب الاسترداد النقدي، لدينا كل ما تحتاجه.',
+          'ابحث عن إجابات للأسئلة الأكثر شيوعًا حول خدماتنا ومنتجاتنا وسياساتنا',
       },
       business: {
-        title: 'الأسئلة الشائعة',
-        subtitle: 'أسئلة الأعمال',
+        title: 'الدعم',
+        subtitle: 'الأسئلة الشائعة',
         description:
-          'كل ما تحتاج معرفته حول استخدام ديزي لإدارة وتنمية أعمال التجميل أو العافية الخاصة بك. احصل على إجابات حول الميزات والتسعير والمزيد.',
+          'ابحث عن إجابات للأسئلة الأكثر شيوعًا حول خدماتنا ومنتجاتنا وسياساتنا',
       },
       professional: {
-        title: 'الأسئلة الشائعة',
-        subtitle: 'أسئلة المحترفين',
+        title: 'الدعم',
+        subtitle: 'الأسئلة الشائعة',
         description:
-          'إجابات على الأسئلة الشائعة لمحترفي التجميل والعافية الذين يستخدمون ديزي. تعرف على الجدولة وإدارة العملاء وفرص الكسب.',
+          'ابحث عن إجابات للأسئلة الأكثر شيوعًا حول خدماتنا ومنتجاتنا وسياساتنا',
       },
     },
   },

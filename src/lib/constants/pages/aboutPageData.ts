@@ -36,28 +36,33 @@ export interface AboutPageContent {
 
 export const aboutPageData: I18nContent<AboutPageContent> = {
   en: {
-    heroTitle: 'About Daisy',
+    heroTitle: 'WHERE EXCELLENCE MEETS OPPORTUNITY',
     heroSubtitle:
-      'We are on a mission to transform the beauty and wellness industry through technology, making it easier for businesses to grow and customers to discover amazing services.',
-    titleScroll: 'Our Mission',
+      'Empowering Premium Service Providers And Giving Customers Unparalleled Beauty & Wellness Experiences',
+    titleScroll: 'Don\'t believe us? Keep reading...',
 
     missingTitle: 'Our Mission',
     missingDescription:
-      'We believe that beauty and wellness businesses deserve powerful tools that help them thrive. Daisy brings together cutting-edge technology with deep industry expertise to create a platform that truly understands the needs of beauty professionals and their customers.',
+      'Empowering exceptional service providers with greater visibility, enabling customers to make confident, informed choices.',
     heroImage: '/images/pages/about/hero.png',
     personalizedPath: {
-      title: 'Our Journey',
-      subtitle: 'A Personalized Path to Beauty',
+      title: 'ABOUT US',
+      subtitle: 'Empowering Providers, Elevating Experiences',
       description:
-        'Daisy was born from a simple observation: beauty and wellness businesses needed better technology. We set out to build a platform that combines appointment booking, customer loyalty, business management, and marketing into one seamless experience. Today, we are proud to serve businesses across the region, helping them grow and delight their customers.',
+        'We are dedicated to elevating the profiles of premium service providers while offering discerning customers access to exceptional experiences...',
     },
 
     ourValues: 'Our Values',
     aboutValues: [
       {
-        title: 'Innovation',
+        title: 'Excellence',
         subtitle:
-          'We leverage AI and cutting-edge technology to continuously improve the experience for businesses and customers alike.',
+          'We hold ourselves to the highest standards in everything we build, ensuring reliability, quality, and a delightful user experience.',
+      },
+      {
+        title: 'Trust',
+        subtitle:
+          'Transparency and integrity are at the heart of everything we do. We earn trust by delivering on our promises and putting our partners first.',
       },
       {
         title: 'Empowerment',
@@ -65,46 +70,46 @@ export const aboutPageData: I18nContent<AboutPageContent> = {
           'We give businesses the tools they need to take full control of their brand, their customer relationships, and their growth.',
       },
       {
-        title: 'Excellence',
+        title: 'Transparency',
         subtitle:
-          'We hold ourselves to the highest standards in everything we build, ensuring reliability, quality, and a delightful user experience.',
-      },
-      {
-        title: 'Community',
-        subtitle:
-          'We believe in the power of connection. Daisy brings together businesses, professionals, and customers in a thriving ecosystem.',
+          'We believe in open communication and clear processes that build confidence with our partners and customers.',
       },
     ],
     lastBottomBlock: {
-      title: 'Trust',
+      title: 'Integrity',
       subtitle:
-        'Transparency and integrity are at the heart of everything we do. We earn trust by delivering on our promises and putting our partners first.',
+        'We are committed to doing the right thing, always. Integrity guides every decision we make and every relationship we build.',
     },
   },
 
   ar: {
-    heroTitle: 'عن ديزي',
+    heroTitle: 'حيث يلتقي التميز بالفرص',
     heroSubtitle:
-      'نحن في مهمة لتحويل صناعة التجميل والعافية من خلال التكنولوجيا، مما يسهل على الشركات النمو وعلى العملاء اكتشاف خدمات مذهلة.',
-    titleScroll: 'مهمتنا',
+      'تمكين مقدمي الخدمات المتميزة وتقديم تجارب جمال ورفاهية لا مثيل لها للعملاء',
+    titleScroll: 'لا تصدقنا؟ واصل القراءة...',
 
     missingTitle: 'مهمتنا',
     missingDescription:
-      'نؤمن بأن شركات التجميل والعافية تستحق أدوات قوية تساعدها على الازدهار. تجمع ديزي بين التكنولوجيا المتطورة والخبرة العميقة في الصناعة لإنشاء منصة تفهم حقاً احتياجات محترفي التجميل وعملائهم.',
+      'تمكين مقدمي الخدمات الاستثنائيين من تحقيق رؤية أكبر، مما يتيح للعملاء اتخاذ قرارات واثقة ومستنيرة.',
     heroImage: '/images/pages/about/hero.png',
     personalizedPath: {
-      title: 'رحلتنا',
-      subtitle: 'مسار شخصي نحو الجمال',
+      title: 'نبذه عنا',
+      subtitle: 'تمكين مقدمي الخدمات، الارتقاء بالتجارب',
       description:
-        'وُلدت ديزي من ملاحظة بسيطة: شركات التجميل والعافية بحاجة إلى تكنولوجيا أفضل. انطلقنا لبناء منصة تجمع بين حجز المواعيد وولاء العملاء وإدارة الأعمال والتسويق في تجربة واحدة سلسة. اليوم، نفخر بخدمة الشركات في جميع أنحاء المنطقة، ومساعدتها على النمو وإسعاد عملائها.',
+        'نحن ملتزمون بتعزيز ملفات مقدمي الخدمات المتميزة مع تقديم تجارب استثنائية للعملاء المتميزين...',
     },
 
     ourValues: 'قيمنا',
     aboutValues: [
       {
-        title: 'الابتكار',
+        title: 'التميز',
         subtitle:
-          'نستفيد من الذكاء الاصطناعي والتكنولوجيا المتطورة لتحسين التجربة باستمرار للشركات والعملاء على حد سواء.',
+          'نلتزم بأعلى المعايير في كل ما نبنيه، لضمان الموثوقية والجودة وتجربة مستخدم ممتعة.',
+      },
+      {
+        title: 'الثقة',
+        subtitle:
+          'الشفافية والنزاهة هما جوهر كل ما نقوم به. نكسب الثقة من خلال الوفاء بوعودنا ووضع شركائنا في المقام الأول.',
       },
       {
         title: 'التمكين',
@@ -112,20 +117,15 @@ export const aboutPageData: I18nContent<AboutPageContent> = {
           'نمنح الشركات الأدوات التي تحتاجها للتحكم الكامل في علامتها التجارية وعلاقاتها مع العملاء ونموها.',
       },
       {
-        title: 'التميز',
+        title: 'الشفافية',
         subtitle:
-          'نلتزم بأعلى المعايير في كل ما نبنيه، لضمان الموثوقية والجودة وتجربة مستخدم ممتعة.',
-      },
-      {
-        title: 'المجتمع',
-        subtitle:
-          'نؤمن بقوة التواصل. تجمع ديزي بين الشركات والمحترفين والعملاء في منظومة مزدهرة.',
+          'نؤمن بالتواصل المفتوح والعمليات الواضحة التي تبني الثقة مع شركائنا وعملائنا.',
       },
     ],
     lastBottomBlock: {
-      title: 'الثقة',
+      title: 'النزاهة',
       subtitle:
-        'الشفافية والنزاهة هما جوهر كل ما نقوم به. نكسب الثقة من خلال الوفاء بوعودنا ووضع شركائنا في المقام الأول.',
+        'نحن ملتزمون بفعل الصواب دائماً. النزاهة توجه كل قرار نتخذه وكل علاقة نبنيها.',
     },
   },
 };

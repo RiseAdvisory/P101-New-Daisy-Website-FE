@@ -24,22 +24,22 @@ export type ResourcesDropdownData = Record<
 export const resourcesDropdownData: ResourcesDropdownData = {
   customer: {
     en: {
-      title: 'Resources for Customers',
+      title: 'CUSTOMER',
       itemResources: [
         {
           nav: '/resources/blog-post',
-          title: 'Blog Posts',
-          description: 'Tips and trends for your beauty journey',
-        },
-        {
-          nav: '/resources/testimonials',
-          title: 'Customer Testimonials',
-          description: 'Real stories from happy customers',
+          title: 'Blog posts',
+          description: 'Find cool stories and ideas',
         },
         {
           nav: '/resources/tutorials',
           title: 'Tutorials & Guides',
           description: 'Step-by-step guides to get the most from Daisy',
+        },
+        {
+          nav: '/resources/testimonials',
+          title: 'Customer testimonials',
+          description: 'Real stories from happy customers',
         },
         {
           nav: '/resources/updates',
@@ -49,27 +49,27 @@ export const resourcesDropdownData: ResourcesDropdownData = {
       ],
     },
     ar: {
-      title: 'موارد للعملاء',
+      title: 'عميل',
       itemResources: [
         {
           nav: '/resources/blog-post',
-          title: 'المقالات',
-          description: 'نصائح واتجاهات لرحلة جمالك',
+          title: 'مقالات المدونة',
+          description: 'اكتشف قصصًا وأفكارًا مميزة',
+        },
+        {
+          nav: '/resources/tutorials',
+          title: 'الدروس التعليمية والأدلة',
+          description: 'نص تجريبي لأغراض العرض فقط',
         },
         {
           nav: '/resources/testimonials',
           title: 'آراء العملاء',
-          description: 'قصص حقيقية من عملاء سعداء',
-        },
-        {
-          nav: '/resources/tutorials',
-          title: 'الدروس والأدلة',
-          description: 'أدلة خطوة بخطوة للاستفادة القصوى من دايزي',
+          description: 'نص تجريبي لأغراض العرض فقط',
         },
         {
           nav: '/resources/updates',
           title: 'التحديثات',
-          description: 'أحدث الميزات والتحسينات',
+          description: 'نص تجريبي لأغراض العرض فقط',
         },
       ],
     },
@@ -77,52 +77,52 @@ export const resourcesDropdownData: ResourcesDropdownData = {
 
   business: {
     en: {
-      title: 'Resources for Businesses',
+      title: 'BUSINESS',
       itemResources: [
         {
           nav: '/resources/blog-post',
-          title: 'Blog Posts',
-          description: 'Insights to grow your beauty business',
-        },
-        {
-          nav: '/resources/testimonials',
-          title: 'Customer Testimonials',
-          description: 'See how businesses thrive with Daisy',
+          title: 'Blog posts',
+          description: 'Find cool stories and ideas',
         },
         {
           nav: '/resources/tutorials',
           title: 'Tutorials & Guides',
-          description: 'Learn how to maximize your business tools',
+          description: 'Step-by-step guides to get the most from Daisy',
+        },
+        {
+          nav: '/resources/testimonials',
+          title: 'Customer testimonials',
+          description: 'Real stories from happy customers',
         },
         {
           nav: '/resources/updates',
           title: 'Updates',
-          description: 'New features for business owners',
+          description: 'Latest features and improvements',
         },
       ],
     },
     ar: {
-      title: 'موارد للأعمال',
+      title: 'شركة',
       itemResources: [
         {
           nav: '/resources/blog-post',
-          title: 'المقالات',
-          description: 'رؤى لتنمية أعمال التجميل الخاصة بك',
+          title: 'مقالات المدونة',
+          description: 'اكتشف قصصًا وأفكارًا مميزة',
+        },
+        {
+          nav: '/resources/tutorials',
+          title: 'الدروس التعليمية والأدلة',
+          description: 'نص تجريبي لأغراض العرض فقط',
         },
         {
           nav: '/resources/testimonials',
           title: 'آراء العملاء',
-          description: 'شاهد كيف تزدهر الأعمال مع دايزي',
-        },
-        {
-          nav: '/resources/tutorials',
-          title: 'الدروس والأدلة',
-          description: 'تعلّم كيفية تحقيق أقصى استفادة من أدوات عملك',
+          description: 'نص تجريبي لأغراض العرض فقط',
         },
         {
           nav: '/resources/updates',
           title: 'التحديثات',
-          description: 'ميزات جديدة لأصحاب الأعمال',
+          description: 'نص تجريبي لأغراض العرض فقط',
         },
       ],
     },
@@ -130,52 +130,52 @@ export const resourcesDropdownData: ResourcesDropdownData = {
 
   professional: {
     en: {
-      title: 'Resources for Professionals',
+      title: 'PROFESSIONAL',
       itemResources: [
         {
           nav: '/resources/blog-post',
-          title: 'Blog Posts',
-          description: 'Career tips for beauty professionals',
-        },
-        {
-          nav: '/resources/testimonials',
-          title: 'Customer Testimonials',
-          description: 'Hear from professionals on the platform',
+          title: 'Blog posts',
+          description: 'Find cool stories and ideas',
         },
         {
           nav: '/resources/tutorials',
           title: 'Tutorials & Guides',
-          description: 'Guides to build your professional profile',
+          description: 'Step-by-step guides to get the most from Daisy',
+        },
+        {
+          nav: '/resources/testimonials',
+          title: 'Customer testimonials',
+          description: 'Real stories from happy customers',
         },
         {
           nav: '/resources/updates',
           title: 'Updates',
-          description: 'Latest tools for independent professionals',
+          description: 'Latest features and improvements',
         },
       ],
     },
     ar: {
-      title: 'موارد للمتخصصين',
+      title: 'محترف',
       itemResources: [
         {
           nav: '/resources/blog-post',
-          title: 'المقالات',
+          title: 'مقالات المدونة',
           description: 'نصائح مهنية لمتخصصي التجميل',
         },
         {
           nav: '/resources/testimonials',
           title: 'آراء العملاء',
-          description: 'استمع إلى المتخصصين على المنصة',
+          description: 'نص تجريبي لأغراض العرض فقط',
         },
         {
           nav: '/resources/tutorials',
-          title: 'الدروس والأدلة',
-          description: 'أدلة لبناء ملفك المهني',
+          title: 'الدروس التعليمية والأدلة',
+          description: 'نص تجريبي لأغراض العرض فقط',
         },
         {
           nav: '/resources/updates',
           title: 'التحديثات',
-          description: 'أحدث الأدوات للمتخصصين المستقلين',
+          description: 'نص تجريبي لأغراض العرض فقط',
         },
       ],
     },

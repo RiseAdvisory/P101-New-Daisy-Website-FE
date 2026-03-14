@@ -13,26 +13,26 @@ export interface GetTheAppPageContent {
 
 export const getTheAppPageData: I18nContent<GetTheAppPageContent> = {
   en: {
-    title: 'Get the Daisy App',
+    title: 'GET THE APP',
     description:
-      'Download Daisy and start booking beauty and wellness services with cashback rewards. Available on iOS and Android.',
-    subtitle: 'Scan the QR code or download directly from the app stores below.',
+      'Select One Of The Methods Below To Download The App',
+    subtitle: 'Scan the QR code or visit the relevant store to join us...',
     titleBredCrumb: {
-      title: 'Home',
-      description: 'Get the App',
+      title: 'Get the app',
+      description: 'Home',
     },
-    qrCode: '/images/pages/get-the-app/qr-code.png',
+    qrCode: '/images/pages/get-the-app/qr-code.svg',
   },
 
   ar: {
-    title: 'حمّل تطبيق ديزي',
+    title: 'حمل التطبيق',
     description:
-      'حمّل ديزي وابدأ بحجز خدمات التجميل والعافية مع مكافآت الاسترداد النقدي. متاح على iOS و Android.',
-    subtitle: 'امسح رمز QR أو حمّل مباشرة من متاجر التطبيقات أدناه.',
+      'قم بإختيار وسيلة تحميل التطبيق',
+    subtitle: 'امسح رمز QR أو قم بزيارة المتجر المناسب للانضمام إلينا...',
     titleBredCrumb: {
-      title: 'الرئيسية',
-      description: 'حمّل التطبيق',
+      title: 'حمل التطبيق',
+      description: 'الرئيسية',
     },
-    qrCode: '/images/pages/get-the-app/qr-code.png',
+    qrCode: '/images/pages/get-the-app/qr-code.svg',
   },
 };

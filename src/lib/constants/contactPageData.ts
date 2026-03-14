@@ -34,26 +34,26 @@ export interface ContactPageContent {
 
 export const contactPageData: I18nContent<ContactPageContent> = {
   en: {
-    heroTitle: 'Contact Us',
-    heroSubtitle: 'We\'d Love to Hear From You',
+    heroTitle: 'CONTACT US',
+    heroSubtitle: 'Get In Touch',
     heroDescription:
-      'Have questions about Daisy? Want to learn more about how we can help your business grow? Get in touch with our team.',
+      'Got a question or technical issue? Want to send feedback about a feature? Need details about our pricing & plans? Let us know',
     listContact: [
       {
         title: 'Email us:',
         subtitle:
           'Email us for general queries, including marketing and partnership opportunities.',
-        contact: 'hello@jointhedaisy.com',
+        contact: 'info@trythedaisy.com',
       },
       {
         title: 'Call us:',
         subtitle:
           'Call us to speak to a member of our team. We are always happy to help.',
-        contact: '+1 (646) 786-5060',
+        contact: '+1 (646) 647-8895',
       },
       {
         title: 'Support',
-        subtitle: 'Check out helpful resources, FAQs and developer tools.',
+        subtitle: 'Check out helpful resources, FAQs and detailed Guides.',
       },
     ],
     textContactForm: {
@@ -61,57 +61,57 @@ export const contactPageData: I18nContent<ContactPageContent> = {
       lastName: 'Last Name',
       email: 'Email',
       phone: 'Phone Number',
-      content: 'Message',
+      content: 'Your Message',
       submit:
-        'I agree to the processing of personal data in accordance with the Privacy Policy.',
+        'By submitting this form, you confirm that you have read and agree to The Daisy\'s Terms of Service and Privacy Statement',
       textButton: 'Send Message',
     },
     placeholderContactForm: {
-      name: 'Enter your first name',
-      lastName: 'Enter your last name',
-      email: 'Enter your email address',
-      content: 'Write your message here...',
+      name: 'Your First Name here',
+      lastName: 'Your Last Name here',
+      email: 'example@example.com',
+      content: 'Your message here.',
     },
   },
 
   ar: {
-    heroTitle: 'اتصل بنا',
-    heroSubtitle: 'يسعدنا سماع رأيك',
+    heroTitle: 'تواصل معنا',
+    heroSubtitle: 'ابقى على تواصل',
     heroDescription:
-      'هل لديك أسئلة حول ديزي؟ هل تريد معرفة المزيد عن كيف يمكننا مساعدة عملك على النمو؟ تواصل مع فريقنا.',
+      'هل لديك استفسار أو مشكلة فنية؟ هل تريد إرسال تعليقات حول إحدى المميزات؟ هل تحتاج إلى تفاصيل للاشتراكات والأسعار؟',
     listContact: [
       {
         title: 'راسلنا:',
         subtitle:
           'راسلنا عبر البريد الإلكتروني للاستفسارات العامة، بما في ذلك فرص التسويق والشراكة.',
-        contact: 'hello@jointhedaisy.com',
+        contact: 'info@trythedaisy.com',
       },
       {
         title: 'اتصل بنا:',
         subtitle:
           'اتصل بنا للتحدث مع أحد أعضاء فريقنا. يسعدنا دائماً مساعدتك.',
-        contact: '+1 (646) 786-5060',
+        contact: '+1 (646) 647-8895',
       },
       {
         title: 'الدعم',
-        subtitle: 'تحقق من الموارد المفيدة والأسئلة الشائعة وأدوات المطورين.',
+        subtitle: 'تحقق من الموارد المفيدة والأسئلة الشائعة والأدلة التفصيلية.',
       },
     ],
     textContactForm: {
       name: 'الاسم الأول',
       lastName: 'اسم العائلة',
-      email: 'البريد الإلكتروني',
-      phone: 'رقم الهاتف',
-      content: 'الرسالة',
+      email: 'بريد إلكتروني',
+      phone: 'رقم التليفون',
+      content: 'المحتوى الخاص بك',
       submit:
         'أوافق على معالجة البيانات الشخصية وفقاً لسياسة الخصوصية.',
       textButton: 'إرسال الرسالة',
     },
     placeholderContactForm: {
-      name: 'أدخل اسمك الأول',
-      lastName: 'أدخل اسم عائلتك',
-      email: 'أدخل بريدك الإلكتروني',
-      content: 'اكتب رسالتك هنا...',
+      name: 'الاسم الأول هنا',
+      lastName: 'اسم العائلة هنا',
+      email: 'example@example.com',
+      content: 'اكتب المحتوى الخاص بك هنا.',
     },
   },
 };

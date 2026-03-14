@@ -3,14 +3,14 @@ import { LandingPageContent } from './scrollSections.types';
 
 export const businessPageData: I18nContent<LandingPageContent> = {
   en: {
-    titleFraque: 'Frequently Asked Questions',
+    titleFraque: 'Frequently Asked Question',
     growth: {
-      title: 'Grow Your Business With Daisy',
+      title: 'Maximize Bookings, Engage New Clients, and Grow Your Business with The Daisy.',
       description:
-        'Daisy helps you attract new customers, retain existing ones, and streamline your operations — all from one powerful platform.',
-      subtitle: 'YOUR GROWTH PARTNER',
-      buttonLearn: 'Learn More',
-      buttonLink: '/features/business',
+        'Leverage our platform to drive bookings, attract high-value clients, and manage your operations seamlessly.',
+      subtitle: 'MARKETPLACE',
+      buttonLearn: 'GET THE APP',
+      buttonLink: '/get-the-app',
       imageUrl: '/images/pages/business/growth.png',
     },
     scrollSections: [
@@ -262,14 +262,14 @@ export const businessPageData: I18nContent<LandingPageContent> = {
   },
 
   ar: {
-    titleFraque: 'الأسئلة الشائعة',
+    titleFraque: 'أسئلة شائعة',
     growth: {
-      title: 'نمِّ أعمالك مع ديزي',
+      title: 'زِد حجوزاتك، جذب عملاء جدد، ونمِّ عملك مع ذا ديزي.',
       description:
-        'تساعدك ديزي على جذب عملاء جدد، والحفاظ على العملاء الحاليين، وتبسيط عملياتك — كل ذلك من منصة واحدة قوية.',
-      subtitle: 'شريك نموك',
-      buttonLearn: 'اعرف المزيد',
-      buttonLink: '/features/business',
+        'استفد من منصتنا لزيادة الحجوزات وجذب العملاء ذوي القيمة العالية وإدارة عملياتك بسلاسة.',
+      subtitle: 'السوق العام',
+      buttonLearn: 'احصل على التطبيق',
+      buttonLink: '/get-the-app',
       imageUrl: '/images/pages/business/growth.png',
     },
     scrollSections: [

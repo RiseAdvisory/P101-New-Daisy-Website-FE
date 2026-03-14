@@ -13,46 +13,46 @@ export interface DaisyMissionData {
 
 export const daisyMissionData: I18nContent<DaisyMissionData> = {
   en: {
-    title: 'Our Mission, Values & Strategy',
+    title: 'The Daisy Mission & Strategy',
     subtitle:
-      'Discover what drives us and how we plan to revolutionize the beauty industry.',
+      'Empowering Premium Service Providers And Giving Customers Unparalleled Beauty & Wellness Experiences',
     listDaisyMission: [
       {
         title: 'Mission',
         description:
-          'You deserve the peace of mind that your experience will be nothing less than perfect. Sign up now!',
+          'Empowering exceptional service providers with greater visibility, enabling customers to make confident, informed choices.',
       },
       {
         title: 'Values',
         description:
-          'You deserve the peace of mind that your experience will be nothing less than perfect. Sign up now!',
+          'We prioritize excellence, trust, empowerment, transparency, and integrity. These values guide everything we do.',
       },
       {
         title: 'Strategy',
         description:
-          'You deserve the peace of mind that your experience will be nothing less than perfect. Sign up now!',
+          'Creating a seamless connection between customers and service providers, by simplifying the decision-making process.',
       },
     ],
   },
 
   ar: {
-    title: 'مهمتنا وقيمنا واستراتيجيتنا',
-    subtitle: 'اكتشف ما يحركنا وكيف نخطط لإحداث ثورة في صناعة التجميل.',
+    title: 'مهمة واستراتيجية ذا ديزي',
+    subtitle: 'تمكين مقدمي الخدمات المتميزة وتقديم تجارب جمال ورفاهية لا مثيل لها للعملاء',
     listDaisyMission: [
       {
         title: 'المهمة',
         description:
-          'أنت تستحق راحة البال بأن تجربتك لن تكون أقل من مثالية. سجّل الآن!',
+          'تمكين مقدمي الخدمات الاستثنائيين من تحقيق رؤية أكبر، مما يتيح للعملاء اتخاذ قرارات واثقة ومستنيرة.',
       },
       {
         title: 'القيم',
         description:
-          'أنت تستحق راحة البال بأن تجربتك لن تكون أقل من مثالية. سجّل الآن!',
+          'نحن نولي الأولوية للتميز، الثقة، التمكين، الشفافية، والنزاهة.',
       },
       {
         title: 'الاستراتيجية',
         description:
-          'أنت تستحق راحة البال بأن تجربتك لن تكون أقل من مثالية. سجّل الآن!',
+          'إنشاء اتصال سلس بين العملاء ومقدمي الخدمات من خلال تبسيط عملية اتخاذ القرار.',
       },
     ],
   },

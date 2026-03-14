@@ -55,22 +55,22 @@ export interface PrivacyPolicyPageContent {
 export const privacyPolicyPageData: I18nContent<PrivacyPolicyPageContent> = {
   en: {
     // Hero
-    bredCrumbDesription: 'Privacy Policy',
-    bredCrumbTitle: 'Legal',
-    titleHero: 'Privacy Policy',
-    subtitleHero: 'Your Privacy Matters to Us',
+    bredCrumbDesription: 'Home',
+    bredCrumbTitle: 'Privacy Policy',
+    titleHero: 'DATA USAGE',
+    subtitleHero: 'Privacy Policy',
     descriptionHero:
-      'Learn how Daisy collects, uses, and protects your personal information when you use our platform.',
+      'Guardians of Your Information: Welcome to The Daisy\'s Privacy Safehouse',
 
     // Section titles & text
-    titleWelcome: 'Welcome',
+    titleWelcome: 'Welcome to The Daisy',
     daisyDescription:
       'Daisy ("Application") is committed to protecting the privacy of all users ("User" or "Users") who access or use our services. This Privacy Policy describes how we collect, use, disclose, and safeguard your information when you use our Application.',
     theProvisionsSet:
       'The provisions set out herein are applicable to all services offered by the Provider through the Application.',
-    titleAccepted: 'Acceptance of Policy',
-    collectionofData: 'Collection of Data',
-    useAndHandling: 'Use and Handling of Data',
+    titleAccepted: 'Acceptance of policy',
+    collectionofData: 'Collection of data',
+    useAndHandling: 'Use and handling of data',
     publicInformationDisclosure:
       'We may disclose your personal information if required by law, regulation, or legal process.',
     comunicationText:
@@ -79,12 +79,12 @@ export const privacyPolicyPageData: I18nContent<PrivacyPolicyPageContent> = {
       'If you use the Application, you acknowledge and agree that such information may be used as described in this Privacy Policy.',
     handleAllPersonal:
       'We will handle all personal information in accordance with applicable data protection laws and regulations.',
-    disseminationofData: 'Dissemination of Data',
+    disseminationofData: 'Dissemination of data',
     privacyPolicy:
       'Be assured that we will never sell any of your personal or sensitive user data to any third parties for commercial gain. "Sale" means the exchange or transfer of personal and sensitive user data to a third party for monetary consideration. User-initiated transfer of personal and sensitive user data (for example, when the user is using a feature of the app to transfer a file to a third party, or when the user chooses to use a dedicated purpose research study app), is not regarded as sale.',
     accordingly:
       'Accordingly, the Provider shall be entitled to disclose Data to the extent required by applicable laws, regulations and/or court orders.',
-    consent: 'Consent and Opting Out',
+    consent: 'Consent and opting-out',
     submittingorProviding:
       'By submitting or providing Data to us, you consent to:',
     strictSecurity:
@@ -93,15 +93,15 @@ export const privacyPolicyPageData: I18nContent<PrivacyPolicyPageContent> = {
       'We use leading technologies to safeguard your Data, and keep strict security standards to prevent any unauthorized access to it.',
     youInform:
       'You may inform us at any time should you wish to withdraw your consent to our use of your Data. If you do not wish to receive any promotional communications from us or our Business Partners, you may opt out at any time by contacting us.',
-    informationRequests: 'Information Requests',
+    informationRequests: 'information requests',
     personalnformation:
       'You may request details of your Personal Information which we hold about you under applicable data protection laws. If you believe that any information we are holding is inaccurate or incomplete, please write to or email us and we will promptly correct any information found to be incorrect.',
-    cookies: 'Cookies',
+    cookies: 'cookies',
     aplication:
       'If you use our Application, our computer server may automatically send you a cookie. A cookie is a small "log-file" that can be placed on your computer\'s hard disk for record-keeping purposes and we may use them to do a number of things:',
     alsoPossible:
       'It is also possible for you to switch off cookies. If you choose to do so, however, this may affect your experience while using our Application.',
-    modificationofPrivacypolicy: 'Modification of Privacy Policy',
+    modificationofPrivacypolicy: 'Modification of Privacy policy',
     thisPrivacyPolicy:
       'This Privacy Policy may be modified, altered or otherwise updated by the Provider at any time. We will indicate any changes by updating the date of this Privacy Policy.',
     checkRegularly:
@@ -192,15 +192,15 @@ export const privacyPolicyPageData: I18nContent<PrivacyPolicyPageContent> = {
 
   ar: {
     // Hero
-    bredCrumbDesription: 'سياسة الخصوصية',
-    bredCrumbTitle: 'قانوني',
-    titleHero: 'سياسة الخصوصية',
-    subtitleHero: 'خصوصيتك تهمنا',
+    bredCrumbDesription: 'الرئيسية',
+    bredCrumbTitle: 'سياسة الخصوصية',
+    titleHero: 'استخدام البيانات',
+    subtitleHero: 'سياسة الخصوصية',
     descriptionHero:
-      'تعرف على كيفية جمع ديزي لمعلوماتك الشخصية واستخدامها وحمايتها عند استخدام منصتنا.',
+      'حراس معلوماتك: مرحبًا بكم في منزل الخصوصية الآمن الخاص بشركة Daisy',
 
     // Section titles & text
-    titleWelcome: 'مرحباً',
+    titleWelcome: 'مرحبًا بك في The Daisy',
     daisyDescription:
       'تلتزم ديزي ("التطبيق") بحماية خصوصية جميع المستخدمين ("المستخدم" أو "المستخدمين") الذين يصلون إلى خدماتنا أو يستخدمونها. تصف سياسة الخصوصية هذه كيفية جمعنا لمعلوماتك واستخدامها والإفصاح عنها وحمايتها عند استخدام تطبيقنا.',
     theProvisionsSet:

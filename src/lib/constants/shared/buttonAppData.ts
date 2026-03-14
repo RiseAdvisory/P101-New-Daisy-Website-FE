@@ -16,12 +16,12 @@ export interface ButtonAppData {
 export const buttonAppData: I18nContent<ButtonAppData> = {
   en: {
     googlePlay: {
-      link: 'https://play.google.com/store/apps/details?id=com.daisy.app',
-      download: 'Download on',
+      link: 'https://play.google.com/store/apps/details?id=com.trythedaisy.app',
+      download: 'Download on the',
       type: 'Google Play',
     },
     appStore: {
-      link: 'https://apps.apple.com/app/daisy/id6478529949',
+      link: 'https://apps.apple.com/kw/app/the-daisy/id1667105749?itsct=apps_box_link&itscg=30200',
       download: 'Download on the',
       type: 'App Store',
     },
@@ -29,13 +29,13 @@ export const buttonAppData: I18nContent<ButtonAppData> = {
 
   ar: {
     googlePlay: {
-      link: 'https://play.google.com/store/apps/details?id=com.daisy.app',
-      download: 'حمّل من',
+      link: 'https://play.google.com/store/apps/details?id=com.trythedaisy.app',
+      download: 'حمل التطبيق من',
       type: 'Google Play',
     },
     appStore: {
-      link: 'https://apps.apple.com/app/daisy/id6478529949',
-      download: 'حمّل من',
+      link: 'https://apps.apple.com/kw/app/the-daisy/id1667105749?itsct=apps_box_link&itscg=30200',
+      download: 'حمل التطبيق من',
       type: 'App Store',
     },
   },

@@ -12,24 +12,24 @@ export interface SignUpBlockData {
 
 export const signUpBlockData: I18nContent<SignUpBlockData> = {
   en: {
-    title: 'Stay Up to Date',
+    title: 'Sign up for our Blog',
     description:
-      'Subscribe to our newsletter and get the latest beauty industry news, tips, and exclusive offers delivered to your inbox.',
-    placeholderEmail: 'Enter your email',
+      'Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.',
+    placeholderEmail: 'Enter your email!',
     subscribeText: 'Subscribe',
-    succesSend: 'Thank you for subscribing!',
-    about: 'By subscribing you agree to our',
+    succesSend: 'Success Submitet email!',
+    about: 'We care about the protection of your data. Read our',
     privacy: 'Privacy Policy',
   },
 
   ar: {
-    title: 'ابقَ على اطلاع',
+    title: 'اشترك في مدونتنا',
     description:
-      'اشترك في نشرتنا الإخبارية واحصل على أحدث أخبار صناعة التجميل والنصائح والعروض الحصرية مباشرة إلى بريدك الإلكتروني.',
-    placeholderEmail: 'أدخل بريدك الإلكتروني',
+      'ابق على اطلاع بتقدم خارطة الطريق، والإعلانات، والخصومات الحصرية.',
+    placeholderEmail: 'أدخل بريدك الإلكتروني!',
     subscribeText: 'اشترك',
-    succesSend: 'شكرًا لاشتراكك!',
-    about: 'بالاشتراك فإنك توافق على',
+    succesSend: 'تم إرسال البريد الإلكتروني بنجاح!',
+    about: 'نحن نهتم بحماية بياناتك. اقرأ',
     privacy: 'سياسة الخصوصية',
   },
 };

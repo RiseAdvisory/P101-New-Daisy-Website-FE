@@ -88,13 +88,13 @@ export interface TermsConditionsPageContent {
 export const termsConditionsPageData: I18nContent<TermsConditionsPageContent> = {
   en: {
     // Hero
-    bredCrumbDesription: 'Terms & Conditions',
-    bredCrumbTitle: 'Legal',
-    heroTitle: 'Terms & Conditions',
-    heroSubtitle: 'Please Read Before Using Our Services',
+    bredCrumbDesription: 'Home',
+    bredCrumbTitle: 'Terms & Conditions',
+    heroTitle: 'POLICIES',
+    heroSubtitle: 'Terms & Conditions',
     heroSubcription:
-      'These terms govern your use of the Daisy platform, including our website, mobile application, and all related services.',
-    titleScroll: 'Terms & Conditions',
+      'Welcome to the Gateway of Guidelines - You\'ve Just Stepped onto The Daisy\'s Terms and Conditions Turf!',
+    titleScroll: 'Explore the terms',
 
     // Section titles & text
     titleWelcomeDaisy: 'Welcome to Daisy',
@@ -247,13 +247,13 @@ export const termsConditionsPageData: I18nContent<TermsConditionsPageContent> = 
 
   ar: {
     // Hero
-    bredCrumbDesription: 'الشروط والأحكام',
-    bredCrumbTitle: 'قانوني',
-    heroTitle: 'الشروط والأحكام',
-    heroSubtitle: 'يرجى القراءة قبل استخدام خدماتنا',
+    bredCrumbDesription: 'الرئيسية',
+    bredCrumbTitle: 'الشروط والأحكام',
+    heroTitle: 'الشروط',
+    heroSubtitle: 'الشروط والأحكام',
     heroSubcription:
-      'تحكم هذه الشروط استخدامك لمنصة ديزي، بما في ذلك موقعنا الإلكتروني وتطبيق الهاتف المحمول وجميع الخدمات ذات الصلة.',
-    titleScroll: 'الشروط والأحكام',
+      'مرحبًا بكم في بوابة الإرشادات - لقد خطوت للتو إلى ميدان الشروط والأحكام الخاصة بـ The Daisy!',
+    titleScroll: 'استكشف الشروط',
 
     // Section titles & text
     titleWelcomeDaisy: 'مرحباً بك في ديزي',

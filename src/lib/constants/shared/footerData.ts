@@ -27,26 +27,26 @@ export const footerData: I18nContent<FooterData> = {
       { name: 'Privacy Policy', nav: '/privacy-policy' },
     ],
     socialLinks: {
-      facebook_url: 'https://www.facebook.com/jointhedaisy',
-      twitter_url: 'https://twitter.com/jointhedaisy',
-      linkedin_url: 'https://www.linkedin.com/company/jointhedaisy',
-      instagram_url: 'https://www.instagram.com/jointhedaisy',
+      facebook_url: 'https://www.threads.net/@thedaisy.app',
+      twitter_url: 'https://twitter.com/thedaisy_app',
+      linkedin_url: 'https://www.linkedin.com/company/the-daisy/',
+      instagram_url: 'https://www.instagram.com/thedaisy.app/',
     },
   },
 
   ar: {
     navigationfooterList: [
-      { name: 'عن ديزي', nav: '/about' },
-      { name: 'وظائف', nav: '/careers' },
-      { name: 'الأسئلة الشائعة', nav: '/faq' },
+      { name: 'نبذه عنا', nav: '/about' },
+      { name: 'فرص وظيفية', nav: '/careers' },
+      { name: 'أسئلة شائعة', nav: '/faq' },
       { name: 'الشروط والأحكام', nav: '/terms-conditions' },
       { name: 'سياسة الخصوصية', nav: '/privacy-policy' },
     ],
     socialLinks: {
-      facebook_url: 'https://www.facebook.com/jointhedaisy',
-      twitter_url: 'https://twitter.com/jointhedaisy',
-      linkedin_url: 'https://www.linkedin.com/company/jointhedaisy',
-      instagram_url: 'https://www.instagram.com/jointhedaisy',
+      facebook_url: 'https://www.threads.net/@thedaisy.app',
+      twitter_url: 'https://twitter.com/thedaisy_app',
+      linkedin_url: 'https://www.linkedin.com/company/the-daisy/',
+      instagram_url: 'https://www.instagram.com/thedaisy.app/',
     },
   },
 };

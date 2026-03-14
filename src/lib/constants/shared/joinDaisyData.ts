@@ -22,63 +22,63 @@ export const joinDaisyData: I18nContent<JoinDaisyData> = {
   en: {
     title: 'Join The Daisy',
     subtitle:
-      'Discover how Daisy can transform your beauty experience, whether you are a customer, business owner, or professional.',
+      'Become part of our vision. Customers deserve nothing less than exceptional service, and exceptional providers should thrive with greater visibility and growth.',
     items: [
       {
         image: Customers,
         title: 'As Customers',
         description:
-          'You deserve the peace of mind that your experience will be nothing less than perfect.',
-        linksto: '/customer',
-        textButton: 'Learn More',
+          'You deserve the confidence that every experience will be seamless and beyond perfect.',
+        linksto: '/get-the-app',
+        textButton: 'Get The App',
       },
       {
         image: Vendors,
-        title: 'As Vendors',
+        title: 'As Vedors',
         description:
-          'If perfection & customer satisfaction are your core values. We can\'t wait to work with you!',
-        linksto: '/business',
-        textButton: 'Learn More',
+          'Your commitment to excellence and customer satisfaction should drive your business growth.',
+        linksto: '/get-the-app',
+        textButton: 'Partner With Us',
       },
       {
         image: Colleagues,
         title: 'As Colleagues',
         description:
-          'If you love serving others and making people smile, we would love to talk to you. Apply now!',
-        linksto: '/professional',
-        textButton: 'Learn More',
+          'Join us if you believe in providing exceptional service with every customer interaction.',
+        linksto: '/careers',
+        textButton: 'Join Our Team',
       },
     ],
   },
 
   ar: {
-    title: 'انضم إلى دايزي',
+    title: 'انضم إلى ديزي',
     subtitle:
-      'اكتشف كيف يمكن لدايزي تحويل تجربة الجمال الخاصة بك، سواء كنت عميلاً أو صاحب عمل أو متخصصاً.',
+      'كن جزءًا من رؤيتنا. يستحق العملاء خدمات استثنائية فقط، ويجب أن يزدهر مقدمو الخدمات الاستثنائيون من خلال رؤية أكبر ونمو مستمر.',
     items: [
       {
         image: Customers,
         title: 'كعملاء',
         description:
-          'أنت تستحق راحة البال بأن تجربتك لن تكون أقل من مثالية.',
-        linksto: '/customer',
-        textButton: 'اعرف المزيد',
+          'أنتم تستحقون الثقة بأن كل تجربة ستكون سلسة وأكثر من مثالية.',
+        linksto: '/get-the-app',
+        textButton: 'احصل على التطبيق',
       },
       {
         image: Vendors,
-        title: 'كأصحاب أعمال',
+        title: 'كمقدمي خدمات',
         description:
-          'إذا كانت الكمال ورضا العملاء من قيمك الأساسية، فنحن نتطلع للعمل معك!',
-        linksto: '/business',
-        textButton: 'اعرف المزيد',
+          'يجب أن يدفعك التزامك بالتميز ورضا العملاء نحو نمو عملك بشكل أكبر.',
+        linksto: '/get-the-app',
+        textButton: 'تعاون معنا',
       },
       {
         image: Colleagues,
         title: 'كزملاء',
         description:
-          'إذا كنت تحب خدمة الآخرين وإسعاد الناس، نود التحدث إليك. قدّم الآن!',
-        linksto: '/professional',
-        textButton: 'اعرف المزيد',
+          'انضم إلينا إذا كنت تؤمن بتقديم خدمة استثنائية مع كل تفاعل مع العملاء.',
+        linksto: '/careers',
+        textButton: 'إنضم إلى فريقنا',
       },
     ],
   },

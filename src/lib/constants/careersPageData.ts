@@ -54,20 +54,20 @@ export interface CareersPageContent {
 
 export const careersPageData: I18nContent<CareersPageContent> = {
   en: {
-    titleHero: 'Careers at Daisy',
-    subtitleHero: 'Join Our Growing Team',
+    titleHero: 'CAREERS',
+    subtitleHero: 'Current Openings',
     descriptionHero:
-      'We\'re building the future of beauty and wellness technology. Join us and help transform how businesses and customers connect.',
+      'We are always looking for motivated and motivated people to join our team...',
     titleScroll: 'Open Positions',
 
-    getInTouch: 'Get in Touch',
+    getInTouch: 'keep in touch',
     fillSpeak: 'Feel free to reach out to us if you have any questions about the positions or the application process.',
-    email: 'careers@jointhedaisy.com',
+    email: 'careers@trythedaisy.com',
     question: 'Contact Us',
 
-    btnApply: 'Apply Now',
-    btnView: 'View Responsibilities',
-    btnHide: 'Hide Responsibilities',
+    btnApply: 'Apply',
+    btnView: 'View more info',
+    btnHide: 'Hide info',
 
     formField: {
       titleUpload: 'Upload Your CV',
@@ -92,10 +92,10 @@ export const careersPageData: I18nContent<CareersPageContent> = {
 
     vacanciesList: [
       {
-        position: 'Software Engineer',
-        levelEnglish: 'English C1',
+        position: 'Front-End Software Engineer',
+        levelEnglish: 'English C2',
         jobType: 'Remote',
-        experience: '2 years',
+        experience: '3+ years',
         aboutExperience: [
           'Collaborate with the backend team to develop and maintain metadata management systems for a global broadcast/video streaming platform.',
           'Utilize Kotlin, Kubernetes, REST APIs, CI/CD, and Kafka to build scalable and reliable backend services.',
@@ -106,10 +106,10 @@ export const careersPageData: I18nContent<CareersPageContent> = {
         ],
       },
       {
-        position: 'Software Engineer',
+        position: 'Back-End Software Engineer',
         levelEnglish: 'English C2',
-        jobType: 'Office',
-        experience: '5 years',
+        jobType: 'Remote',
+        experience: '5+ years',
         aboutExperience: [
           'Collaborate with the backend team to develop and maintain metadata management systems for a global broadcast/video streaming platform.',
           'Utilize Kotlin, Kubernetes, REST APIs, CI/CD, and Kafka to build scalable and reliable backend services.',
@@ -123,20 +123,20 @@ export const careersPageData: I18nContent<CareersPageContent> = {
   },
 
   ar: {
-    titleHero: 'وظائف في ديزي',
-    subtitleHero: 'انضم إلى فريقنا المتنامي',
+    titleHero: 'وظائف',
+    subtitleHero: 'فرص وظيفية',
     descriptionHero:
       'نحن نبني مستقبل تكنولوجيا التجميل والعافية. انضم إلينا وساعد في تحويل كيفية تواصل الشركات والعملاء.',
     titleScroll: 'الوظائف المتاحة',
 
     getInTouch: 'تواصل معنا',
     fillSpeak: 'لا تتردد في التواصل معنا إذا كان لديك أي أسئلة حول الوظائف أو عملية التقديم.',
-    email: 'careers@jointhedaisy.com',
+    email: 'careers@trythedaisy.com',
     question: 'اتصل بنا',
 
-    btnApply: 'قدم الآن',
-    btnView: 'عرض المسؤوليات',
-    btnHide: 'إخفاء المسؤوليات',
+    btnApply: 'تقديم',
+    btnView: 'المزيد',
+    btnHide: 'إخفاء',
 
     formField: {
       titleUpload: 'حمّل سيرتك الذاتية',

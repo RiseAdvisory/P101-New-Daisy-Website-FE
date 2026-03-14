@@ -3,14 +3,14 @@ import { LandingPageContent } from './scrollSections.types';
 
 export const professionalPageData: I18nContent<LandingPageContent> = {
   en: {
-    titleFraque: 'Frequently Asked Questions',
+    titleFraque: 'Frequently Asked Question',
     growth: {
-      title: 'Elevate Your Career With Daisy',
+      title: 'Expand Your Clientele, Manage Your Schedule, and Build Your Brand with The Daisy.',
       description:
-        'Take control of your professional journey. Manage your schedule, grow your client base, and maximize your earnings — all with Daisy.',
-      subtitle: 'YOUR CAREER PARTNER',
-      buttonLearn: 'Learn More',
-      buttonLink: '/features/professional',
+        'Grow your freelance business with ease...',
+      subtitle: 'MARKETPLACE',
+      buttonLearn: 'GET THE APP',
+      buttonLink: '/get-the-app',
       imageUrl: '/images/pages/professional/growth.png',
     },
     scrollSections: [
@@ -262,14 +262,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
   },
 
   ar: {
-    titleFraque: 'الأسئلة الشائعة',
+    titleFraque: 'أسئلة شائعة',
     growth: {
-      title: 'ارتقِ بمسيرتك المهنية مع ديزي',
+      title: 'وسّع قاعدة عملائك، نظم جدولك، وابنِ علامتك التجارية مع ذا ديزي.',
       description:
-        'تحكّم في مسيرتك المهنية. أدِر جدولك، وسّع قاعدة عملائك، وحقق أقصى أرباحك — كل ذلك مع ديزي.',
-      subtitle: 'شريك مسيرتك المهنية',
-      buttonLearn: 'اعرف المزيد',
-      buttonLink: '/features/professional',
+        'نمِّ عملك الحر بسهولة...',
+      subtitle: 'السوق العام',
+      buttonLearn: 'احصل على التطبيق',
+      buttonLink: '/get-the-app',
       imageUrl: '/images/pages/professional/growth.png',
     },
     scrollSections: [
