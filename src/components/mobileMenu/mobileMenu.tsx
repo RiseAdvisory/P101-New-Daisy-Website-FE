@@ -14,8 +14,9 @@ import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
 import { BreadcrumbMobile } from './breadCrumbMobile';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
+import { headerData } from '@/lib/constants/shared/headerData';
+import { t } from '@/lib/constants/i18n';
 import { ChevronLeft } from 'lucide-react';
 import { useChangePage } from '@/store/currentPage';
 import { useOpenMenu } from '@/store/openMenu';
@@ -23,8 +24,6 @@ import { shouldHideMenuItem } from '@/lib/utils/menuVisibility';
 
 export const MobileMenu = () => {
   const [onResources, setResources] = useState(true);
-  const [getTheApp, setGetTheApp] = useState<any>();
-  const [listNav, setListNav] = useState<any>();
   const [openMenu, setOpenMenu] = useState(false);
   const [currentActivePage, setCurrentActivePage] = useState<string | null>(
     null,
@@ -35,23 +34,13 @@ export const MobileMenu = () => {
   const { lang } = useChangeLanguage();
   const { page } = useChangePage();
 
-  useEffect(() => {
-    (async () => {
-      try {
-        const response = await axiosInstance.get(`/headers?locale=${lang}`);
-        const responseList = await axiosInstance.get(
-          `/mobile-list-navigations?locale=${lang}`,
-        );
-
-        const [data] = response?.data?.data;
-        const [list] = responseList?.data?.data;
-        setListNav(list?.attributes);
-        setGetTheApp(data?.attributes?.getTheApp);
-      } catch {
-        // Error fetching mobile menu data
-      }
-    })();
-  }, [lang]);
+  const hData = t(headerData, lang);
+  const getTheApp = hData.getTheApp;
+  const listNav = {
+    listNavigation: hData.mobileNavList,
+    bredCrumbTitle: hData.bredCrumbTitle,
+    bredCrumbDesription: hData.bredCrumbDesription,
+  };
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

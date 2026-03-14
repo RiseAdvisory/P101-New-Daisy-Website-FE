@@ -1,11 +1,7 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { FeaturesProfessionalClient } from '../FeaturesProfessionalClient';
-import axiosInstance from '@/helpers/axiosConfig';
 
-jest.mock('@/helpers/axiosConfig');
 jest.mock('@/store/language');
-
-const mockAxiosInstance = axiosInstance as jest.Mocked<typeof axiosInstance>;
 
 jest.mock('next/image', () => ({
   __esModule: true,
@@ -58,149 +54,44 @@ describe('FeaturesProfessionalClient', () => {
     }));
   });
 
-  const mockPageData = {
-    data: {
-      data: [
-        {
-          attributes: {
-            title: 'Professional Features',
-            titleScroll: 'Explore Features',
-          },
-        },
-      ],
-    },
-  };
-
-  const makeFeatureItem = (id: number, sortId: number, title: string) => ({
-    id,
-    attributes: {
-      sortId,
-      title,
-      description: `${title} description`,
-      picture: {
-        data: [{ attributes: { url: '/img.png', width: 100, height: 100 } }],
-      },
-    },
+  it('renders hero with title from local data', () => {
+    render(<FeaturesProfessionalClient />);
+    expect(screen.getByTestId('hero-page')).toHaveTextContent(
+      'Tools Built for Beauty Professionals',
+    );
   });
 
-  it('sorts feature list by attributes.sortId in ascending order', async () => {
-    const unsortedList = {
-      data: {
-        data: [
-          makeFeatureItem(1, 3, 'Third'),
-          makeFeatureItem(2, 1, 'First'),
-          makeFeatureItem(3, 2, 'Second'),
-        ],
-      },
-    };
-
-    mockAxiosInstance.get.mockImplementation((url: string) => {
-      if (url.includes('features-professionals')) {
-        return Promise.resolve(mockPageData);
-      }
-      if (url.includes('features-professional-list-sorts')) {
-        return Promise.resolve(unsortedList);
-      }
-      return Promise.resolve({ data: { data: [] } });
-    });
-
+  it('renders feature list from local data', () => {
     render(<FeaturesProfessionalClient />);
-
-    await waitFor(() => {
-      expect(screen.getByTestId('features-list')).toHaveTextContent(
-        'First, Second, Third',
-      );
-    });
+    const list = screen.getByTestId('features-list');
+    expect(list).toHaveTextContent('Smart Calendar Management');
+    expect(list).toHaveTextContent('Client Profiles & History');
+    expect(list).toHaveTextContent('Earnings Dashboard');
   });
 
-  it('sorts correctly when sortId values exceed 50', async () => {
-    const highSortIds = {
-      data: {
-        data: [
-          makeFeatureItem(1, 100, 'Hundredth'),
-          makeFeatureItem(2, 5, 'Fifth'),
-          makeFeatureItem(3, 55, 'FiftyFifth'),
-          makeFeatureItem(4, 60, 'Sixtieth'),
-          makeFeatureItem(5, 2, 'Second'),
-        ],
-      },
-    };
-
-    mockAxiosInstance.get.mockImplementation((url: string) => {
-      if (url.includes('features-professionals')) {
-        return Promise.resolve(mockPageData);
-      }
-      if (url.includes('features-professional-list-sorts')) {
-        return Promise.resolve(highSortIds);
-      }
-      return Promise.resolve({ data: { data: [] } });
-    });
-
+  it('renders all 6 features', () => {
     render(<FeaturesProfessionalClient />);
-
-    await waitFor(() => {
-      expect(screen.getByTestId('features-list')).toHaveTextContent(
-        'Second, Fifth, FiftyFifth, Sixtieth, Hundredth',
-      );
-    });
+    const list = screen.getByTestId('features-list');
+    expect(list).toHaveTextContent('Smart Calendar Management');
+    expect(list).toHaveTextContent('Client Profiles & History');
+    expect(list).toHaveTextContent('Earnings Dashboard');
+    expect(list).toHaveTextContent('Service Menu Builder');
+    expect(list).toHaveTextContent('Flexible Scheduling');
+    expect(list).toHaveTextContent('Instant Notifications');
   });
 
-  it('handles items with missing sortId using fallback of 0', async () => {
-    const mixedSortIds = {
-      data: {
-        data: [
-          makeFeatureItem(1, 3, 'Third'),
-          {
-            id: 2,
-            attributes: {
-              title: 'NoSort',
-              description: 'No sortId',
-              picture: {
-                data: [
-                  { attributes: { url: '/img.png', width: 100, height: 100 } },
-                ],
-              },
-            },
-          },
-          makeFeatureItem(3, 1, 'First'),
-        ],
-      },
-    };
-
-    mockAxiosInstance.get.mockImplementation((url: string) => {
-      if (url.includes('features-professionals')) {
-        return Promise.resolve(mockPageData);
-      }
-      if (url.includes('features-professional-list-sorts')) {
-        return Promise.resolve(mixedSortIds);
-      }
-      return Promise.resolve({ data: { data: [] } });
-    });
-
+  it('renders Arabic content when language is ar', () => {
+    require('@/store/language').useChangeLanguage = jest.fn(() => ({
+      lang: 'ar',
+    }));
     render(<FeaturesProfessionalClient />);
-
-    await waitFor(() => {
-      expect(screen.getByTestId('features-list')).toHaveTextContent(
-        'NoSort, First, Third',
-      );
-    });
+    expect(screen.getByTestId('hero-page')).toHaveTextContent(
+      'أدوات مصممة لمحترفي الجمال',
+    );
   });
 
-  it('handles empty feature list', async () => {
-    mockAxiosInstance.get.mockImplementation((url: string) => {
-      if (url.includes('features-professionals')) {
-        return Promise.resolve(mockPageData);
-      }
-      if (url.includes('features-professional-list-sorts')) {
-        return Promise.resolve({ data: { data: [] } });
-      }
-      return Promise.resolve({ data: { data: [] } });
-    });
-
+  it('renders signup blog section', () => {
     render(<FeaturesProfessionalClient />);
-
-    await waitFor(() => {
-      expect(screen.getByTestId('features-list')).toHaveTextContent('');
-    });
+    expect(screen.getByTestId('signup-blog')).toBeInTheDocument();
   });
 });

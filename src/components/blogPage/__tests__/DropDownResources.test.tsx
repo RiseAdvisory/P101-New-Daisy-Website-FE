@@ -1,7 +1,6 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { DropdownResources } from '../DropDownResources';
 import * as languageStore from '@/store/language';
-import axiosInstance from '@/helpers/axiosConfig';
 
 // Mock next/navigation
 jest.mock('next/navigation', () => ({
@@ -48,14 +47,6 @@ jest.mock('@/store/currentPage', () => ({
   useChangePage: jest.fn(() => ({ page: 'business' })),
 }));
 
-// Mock axios
-jest.mock('@/helpers/axiosConfig', () => ({
-  __esModule: true,
-  default: {
-    get: jest.fn(),
-  },
-}));
-
 // Mock localStorage
 const localStorageMock = (() => {
   let store: Record<string, string> = {};
@@ -75,74 +66,6 @@ describe('DropdownResources', () => {
   const mockSetOpenBlog = jest.fn();
   const mockSetActive = jest.fn();
 
-  const mockResourcesDataEn = {
-    data: {
-      data: [
-        {
-          attributes: {
-            title: 'BUSINESS',
-            itemResources: [
-              {
-                title: 'Blog posts',
-                description: 'Find cool stories and ideas',
-                nav: '/resources/blog-post',
-              },
-              {
-                title: 'Tutorials & Guides',
-                description: 'Lorem ipsum dolor sit dolor',
-                nav: '/resources/tutorials',
-              },
-              {
-                title: 'Customer testimonials',
-                description: 'Lorem ipsum dolor sit dolor',
-                nav: '/resources/testimonials',
-              },
-              {
-                title: 'Updates',
-                description: 'Lorem ipsum dolor sit dolor',
-                nav: '/resources/updates',
-              },
-            ],
-          },
-        },
-      ],
-    },
-  };
-
-  const mockResourcesDataAr = {
-    data: {
-      data: [
-        {
-          attributes: {
-            title: 'شركة',
-            itemResources: [
-              {
-                title: 'مقالات المدونة',
-                description: 'اكتشف قصصًا وأفكارًا مميزة',
-                nav: '/resources/blog-post',
-              },
-              {
-                title: 'الدروس التعليمية والأدلة',
-                description: 'نص تجريبي لأغراض العرض فقط',
-                nav: '/resources/tutorials',
-              },
-              {
-                title: 'آراء العملاء',
-                description: 'نص تجريبي لأغراض العرض فقط',
-                nav: '/resources/testimonials',
-              },
-              {
-                title: 'التحديثات',
-                description: 'نص تجريبي لأغراض العرض فقط',
-                nav: '/resources/updates',
-              },
-            ],
-          },
-        },
-      ],
-    },
-  };
-
   beforeEach(() => {
     jest.clearAllMocks();
     localStorageMock.clear();
@@ -157,10 +80,9 @@ describe('DropdownResources', () => {
         lang: 'en',
         changeLanguages: jest.fn(),
       });
-      (axiosInstance.get as jest.Mock).mockResolvedValue(mockResourcesDataEn);
     });
 
-    it('should render dropdown when openBlog is true', async () => {
+    it('should render dropdown when openBlog is true', () => {
       render(
         <DropdownResources
           openBlog={true}
@@ -169,9 +91,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      await waitFor(() => {
-        expect(screen.getByText('BUSINESS')).toBeInTheDocument();
-      });
+      expect(screen.getByText('Resources for Businesses')).toBeInTheDocument();
     });
 
     it('should not render dropdown when openBlog is false', () => {
@@ -183,10 +103,10 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.queryByText('BUSINESS')).not.toBeInTheDocument();
+      expect(screen.queryByText('Resources for Businesses')).not.toBeInTheDocument();
     });
 
-    it('should display all menu items with correct text alignment', async () => {
+    it('should display all menu items with correct text alignment', () => {
       render(
         <DropdownResources
           openBlog={true}
@@ -195,19 +115,17 @@ describe('DropdownResources', () => {
         />
       );
 
-      await waitFor(() => {
-        expect(screen.getByText('Blog posts')).toBeInTheDocument();
-        expect(screen.getByText('Tutorials & Guides')).toBeInTheDocument();
-        expect(screen.getByText('Customer testimonials')).toBeInTheDocument();
-        expect(screen.getByText('Updates')).toBeInTheDocument();
-      });
+      expect(screen.getByText('Blog Posts')).toBeInTheDocument();
+      expect(screen.getByText('Tutorials & Guides')).toBeInTheDocument();
+      expect(screen.getByText('Customer Testimonials')).toBeInTheDocument();
+      expect(screen.getByText('Updates')).toBeInTheDocument();
 
       // Check for left padding in LTR mode
-      const linkElement = screen.getByText('Blog posts').closest('a');
+      const linkElement = screen.getByText('Blog Posts').closest('a');
       expect(linkElement).toHaveClass('ltr:pl-4');
     });
 
-    it('should have correct positioning classes for LTR', async () => {
+    it('should have correct positioning classes for LTR', () => {
       const { container } = render(
         <DropdownResources
           openBlog={true}
@@ -215,10 +133,6 @@ describe('DropdownResources', () => {
           setActive={mockSetActive}
         />
       );
-
-      await waitFor(() => {
-        expect(screen.getByText('BUSINESS')).toBeInTheDocument();
-      });
 
       const dropdown = container.querySelector('.fixed');
       expect(dropdown).toHaveClass('left-0');
@@ -226,26 +140,7 @@ describe('DropdownResources', () => {
       expect(dropdown).toHaveClass('rtl:right-0');
     });
 
-    it('should close dropdown when clicking outside', async () => {
-      const { container } = render(
-        <DropdownResources
-          openBlog={true}
-          setOpenBlog={mockSetOpenBlog}
-          setActive={mockSetActive}
-        />
-      );
-
-      await waitFor(() => {
-        expect(screen.getByText('BUSINESS')).toBeInTheDocument();
-      });
-
-      // Click outside the dropdown
-      fireEvent.mouseDown(document.body);
-
-      expect(mockSetOpenBlog).toHaveBeenCalledWith(false);
-    });
-
-    it('should call setOpenBlog when clicking a menu item', async () => {
+    it('should close dropdown when clicking outside', () => {
       render(
         <DropdownResources
           openBlog={true}
@@ -254,17 +149,14 @@ describe('DropdownResources', () => {
         />
       );
 
-      await waitFor(() => {
-        expect(screen.getByText('Blog posts')).toBeInTheDocument();
-      });
-
-      fireEvent.click(screen.getByText('Blog posts'));
+      // Click outside the dropdown
+      fireEvent.mouseDown(document.body);
 
       expect(mockSetOpenBlog).toHaveBeenCalledWith(false);
     });
 
-    it('should render image element before content element in LTR', async () => {
-      const { container } = render(
+    it('should call setOpenBlog when clicking a menu item', () => {
+      render(
         <DropdownResources
           openBlog={true}
           setOpenBlog={mockSetOpenBlog}
@@ -272,9 +164,19 @@ describe('DropdownResources', () => {
         />
       );
 
-      await waitFor(() => {
-        expect(screen.getByText('BUSINESS')).toBeInTheDocument();
-      });
+      fireEvent.click(screen.getByText('Blog Posts'));
+
+      expect(mockSetOpenBlog).toHaveBeenCalledWith(false);
+    });
+
+    it('should render image element before content element in LTR', () => {
+      const { container } = render(
+        <DropdownResources
+          openBlog={true}
+          setOpenBlog={mockSetOpenBlog}
+          setActive={mockSetActive}
+        />
+      );
 
       const flexContainer = container.querySelector('.flex.ltr\\:flex-row');
       const firstChild = flexContainer?.firstChild as HTMLElement;
@@ -290,12 +192,11 @@ describe('DropdownResources', () => {
         lang: 'ar',
         changeLanguages: jest.fn(),
       });
-      (axiosInstance.get as jest.Mock).mockResolvedValue(mockResourcesDataAr);
       localStorageMock.setItem('lang', 'ar');
       document.documentElement.setAttribute('dir', 'rtl');
     });
 
-    it('should render dropdown in RTL mode with Arabic content', async () => {
+    it('should render dropdown in RTL mode with Arabic content', () => {
       render(
         <DropdownResources
           openBlog={true}
@@ -304,12 +205,10 @@ describe('DropdownResources', () => {
         />
       );
 
-      await waitFor(() => {
-        expect(screen.getByText('شركة')).toBeInTheDocument();
-      });
+      expect(screen.getByText('موارد للأعمال')).toBeInTheDocument();
     });
 
-    it('should display all menu items in Arabic with correct text alignment', async () => {
+    it('should display all menu items in Arabic with correct text alignment', () => {
       render(
         <DropdownResources
           openBlog={true}
@@ -318,19 +217,17 @@ describe('DropdownResources', () => {
         />
       );
 
-      await waitFor(() => {
-        expect(screen.getByText('مقالات المدونة')).toBeInTheDocument();
-        expect(screen.getByText('الدروس التعليمية والأدلة')).toBeInTheDocument();
-        expect(screen.getByText('آراء العملاء')).toBeInTheDocument();
-        expect(screen.getByText('التحديثات')).toBeInTheDocument();
-      });
+      expect(screen.getByText('المقالات')).toBeInTheDocument();
+      expect(screen.getByText('الدروس والأدلة')).toBeInTheDocument();
+      expect(screen.getByText('آراء العملاء')).toBeInTheDocument();
+      expect(screen.getByText('التحديثات')).toBeInTheDocument();
 
       // Check for right padding in RTL mode
-      const linkElement = screen.getByText('مقالات المدونة').closest('a');
+      const linkElement = screen.getByText('المقالات').closest('a');
       expect(linkElement).toHaveClass('rtl:pr-4');
     });
 
-    it('should have rtl:text-right class for heading in RTL mode', async () => {
+    it('should have rtl:text-right class for heading in RTL mode', () => {
       render(
         <DropdownResources
           openBlog={true}
@@ -339,13 +236,11 @@ describe('DropdownResources', () => {
         />
       );
 
-      await waitFor(() => {
-        const heading = screen.getByText('شركة');
-        expect(heading).toHaveClass('rtl:text-right');
-      });
+      const heading = screen.getByText('موارد للأعمال');
+      expect(heading).toHaveClass('rtl:text-right');
     });
 
-    it('should render content element before image element in RTL', async () => {
+    it('should render content element before image element in RTL', () => {
       const { container } = render(
         <DropdownResources
           openBlog={true}
@@ -353,10 +248,6 @@ describe('DropdownResources', () => {
           setActive={mockSetActive}
         />
       );
-
-      await waitFor(() => {
-        expect(screen.getByText('شركة')).toBeInTheDocument();
-      });
 
       const flexContainer = container.querySelector('.flex.rtl\\:flex-row-reverse');
       const firstChild = flexContainer?.firstChild as HTMLElement;
@@ -365,7 +256,7 @@ describe('DropdownResources', () => {
       expect(firstChild).toHaveClass('flex-1');
     });
 
-    it('should apply flex-row-reverse in RTL mode', async () => {
+    it('should apply flex-row-reverse in RTL mode', () => {
       const { container } = render(
         <DropdownResources
           openBlog={true}
@@ -373,10 +264,6 @@ describe('DropdownResources', () => {
           setActive={mockSetActive}
         />
       );
-
-      await waitFor(() => {
-        expect(screen.getByText('شركة')).toBeInTheDocument();
-      });
 
       const flexContainer = container.querySelector('.flex');
       expect(flexContainer).toHaveClass('rtl:flex-row-reverse');
@@ -389,10 +276,9 @@ describe('DropdownResources', () => {
         lang: 'en',
         changeLanguages: jest.fn(),
       });
-      (axiosInstance.get as jest.Mock).mockResolvedValue(mockResourcesDataEn);
     });
 
-    it('should have hover styles on menu items', async () => {
+    it('should have hover styles on menu items', () => {
       render(
         <DropdownResources
           openBlog={true}
@@ -401,24 +287,20 @@ describe('DropdownResources', () => {
         />
       );
 
-      await waitFor(() => {
-        expect(screen.getByText('Blog posts')).toBeInTheDocument();
-      });
-
-      const listItem = screen.getByText('Blog posts').closest('li');
+      const listItem = screen.getByText('Blog Posts').closest('li');
       expect(listItem).toHaveClass('hover:bg-[#E8E9E9]');
       expect(listItem).toHaveClass('hover:outline-gray-300');
       expect(listItem).toHaveClass('hover:outline');
     });
   });
 
-  describe('API Integration', () => {
-    it('should fetch resources for business page', async () => {
+  describe('Page Type Selection', () => {
+    it('should show customer resources when activePage is /customer', () => {
       (languageStore.useChangeLanguage as jest.Mock).mockReturnValue({
         lang: 'en',
         changeLanguages: jest.fn(),
       });
-      (axiosInstance.get as jest.Mock).mockResolvedValue(mockResourcesDataEn);
+      localStorageMock.setItem('activePage', '/customer');
 
       render(
         <DropdownResources
@@ -428,20 +310,15 @@ describe('DropdownResources', () => {
         />
       );
 
-      await waitFor(() => {
-        expect(axiosInstance.get).toHaveBeenCalledWith(
-          '/resource-list-business-types?locale=en'
-        );
-      });
+      expect(screen.getByText('Resources for Customers')).toBeInTheDocument();
     });
 
-    it('should fetch resources in Arabic locale', async () => {
+    it('should show professional resources when activePage is /professional', () => {
       (languageStore.useChangeLanguage as jest.Mock).mockReturnValue({
-        lang: 'ar',
+        lang: 'en',
         changeLanguages: jest.fn(),
       });
-      (axiosInstance.get as jest.Mock).mockResolvedValue(mockResourcesDataAr);
-      localStorageMock.setItem('lang', 'ar');
+      localStorageMock.setItem('activePage', '/professional');
 
       render(
         <DropdownResources
@@ -451,11 +328,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      await waitFor(() => {
-        expect(axiosInstance.get).toHaveBeenCalledWith(
-          '/resource-list-business-types?locale=ar'
-        );
-      });
+      expect(screen.getByText('Resources for Professionals')).toBeInTheDocument();
     });
   });
 });

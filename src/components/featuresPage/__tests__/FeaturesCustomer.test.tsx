@@ -8,10 +8,6 @@ jest.mock('next/image', () => {
   };
 });
 
-jest.mock('@/helpers/axiosConfig', () => ({
-  baseURLImage: 'https://cms.example.com',
-}));
-
 jest.mock('@/lib/utils', () => ({
   cn: (...args: unknown[]) => args.filter(Boolean).join(' '),
 }));
@@ -22,7 +18,7 @@ const makeItem = (overrides: Record<string, any> = {}) => ({
   style: '',
   sizePicture: { width: '200px' },
   picture: {
-    data: [{ attributes: { url: '/uploads/desktop.png' } }],
+    data: [{ attributes: { url: '/images/features/customer/desktop.png' } }],
   },
   ...overrides,
 });
@@ -35,14 +31,16 @@ describe('FeaturesCustomerItem', () => {
     expect(images).toHaveLength(1);
     expect(images[0]).toHaveAttribute(
       'src',
-      'https://cms.example.com/uploads/desktop.png',
+      '/images/features/customer/desktop.png',
     );
   });
 
   it('renders two images when mobilePicture is provided', () => {
     const item = makeItem({
       mobilePicture: {
-        data: [{ attributes: { url: '/uploads/mobile.png' } }],
+        data: [
+          { attributes: { url: '/images/features/customer/mobile.png' } },
+        ],
       },
     });
 
@@ -54,14 +52,14 @@ describe('FeaturesCustomerItem', () => {
     // Desktop image (hidden on mobile)
     expect(images[0]).toHaveAttribute(
       'src',
-      'https://cms.example.com/uploads/desktop.png',
+      '/images/features/customer/desktop.png',
     );
     expect(images[0].className).toContain('hidden md:block');
 
     // Mobile image (hidden on desktop)
     expect(images[1]).toHaveAttribute(
       'src',
-      'https://cms.example.com/uploads/mobile.png',
+      '/images/features/customer/mobile.png',
     );
     expect(images[1].className).toContain('md:hidden');
   });
@@ -69,7 +67,9 @@ describe('FeaturesCustomerItem', () => {
   it('applies mobileStylePicture to the mobile image', () => {
     const item = makeItem({
       mobilePicture: {
-        data: [{ attributes: { url: '/uploads/mobile.png' } }],
+        data: [
+          { attributes: { url: '/images/features/customer/mobile.png' } },
+        ],
       },
       mobileStylePicture: { width: '100px', padding: '8px' },
     });
@@ -86,7 +86,9 @@ describe('FeaturesCustomerItem', () => {
     const item = makeItem({
       sizePicture: { width: '200px' },
       mobilePicture: {
-        data: [{ attributes: { url: '/uploads/mobile.png' } }],
+        data: [
+          { attributes: { url: '/images/features/customer/mobile.png' } },
+        ],
       },
     });
 

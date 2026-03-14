@@ -8,10 +8,6 @@ jest.mock('next/image', () => {
   };
 });
 
-jest.mock('@/helpers/axiosConfig', () => ({
-  baseURLImage: 'https://cms.example.com',
-}));
-
 jest.mock('embla-carousel-autoplay', () => {
   return jest.fn(() => ({}));
 });
@@ -28,13 +24,19 @@ jest.mock('@/components/ui/carousel', () => ({
 
 const makeBusinessData = (overrides: Record<string, any> = {}) => ({
   firstImage: {
-    data: [{ attributes: { url: '/uploads/first-desktop.png' } }],
+    data: [
+      { attributes: { url: '/images/features/business/first-desktop.png' } },
+    ],
   },
   secondImage: {
-    data: [{ attributes: { url: '/uploads/second-desktop.png' } }],
+    data: [
+      { attributes: { url: '/images/features/business/second-desktop.png' } },
+    ],
   },
   thirdImage: {
-    data: [{ attributes: { url: '/uploads/third-desktop.png' } }],
+    data: [
+      { attributes: { url: '/images/features/business/third-desktop.png' } },
+    ],
   },
   firstImageStyle: { width: '220px' },
   secondImageStyle: { width: '250px' },
@@ -49,28 +51,46 @@ describe('CarouselBusinessMobile', () => {
     const images = screen.getAllByRole('img');
     expect(images[0]).toHaveAttribute(
       'src',
-      'https://cms.example.com/uploads/first-desktop.png',
+      '/images/features/business/first-desktop.png',
     );
     expect(images[1]).toHaveAttribute(
       'src',
-      'https://cms.example.com/uploads/second-desktop.png',
+      '/images/features/business/second-desktop.png',
     );
     expect(images[2]).toHaveAttribute(
       'src',
-      'https://cms.example.com/uploads/third-desktop.png',
+      '/images/features/business/third-desktop.png',
     );
   });
 
   it('uses mobile images when provided', () => {
     const data = makeBusinessData({
       firstMobileImage: {
-        data: [{ attributes: { url: '/uploads/first-mobile.png' } }],
+        data: [
+          {
+            attributes: {
+              url: '/images/features/business/first-mobile.png',
+            },
+          },
+        ],
       },
       secondMobileImage: {
-        data: [{ attributes: { url: '/uploads/second-mobile.png' } }],
+        data: [
+          {
+            attributes: {
+              url: '/images/features/business/second-mobile.png',
+            },
+          },
+        ],
       },
       thirdMobileImage: {
-        data: [{ attributes: { url: '/uploads/third-mobile.png' } }],
+        data: [
+          {
+            attributes: {
+              url: '/images/features/business/third-mobile.png',
+            },
+          },
+        ],
       },
     });
 
@@ -79,15 +99,15 @@ describe('CarouselBusinessMobile', () => {
     const images = screen.getAllByRole('img');
     expect(images[0]).toHaveAttribute(
       'src',
-      'https://cms.example.com/uploads/first-mobile.png',
+      '/images/features/business/first-mobile.png',
     );
     expect(images[1]).toHaveAttribute(
       'src',
-      'https://cms.example.com/uploads/second-mobile.png',
+      '/images/features/business/second-mobile.png',
     );
     expect(images[2]).toHaveAttribute(
       'src',
-      'https://cms.example.com/uploads/third-mobile.png',
+      '/images/features/business/third-mobile.png',
     );
   });
 
@@ -118,7 +138,13 @@ describe('CarouselBusinessMobile', () => {
   it('mixes mobile and desktop images when partially provided', () => {
     const data = makeBusinessData({
       firstMobileImage: {
-        data: [{ attributes: { url: '/uploads/first-mobile.png' } }],
+        data: [
+          {
+            attributes: {
+              url: '/images/features/business/first-mobile.png',
+            },
+          },
+        ],
       },
       // secondMobileImage not provided — should fall back
       // thirdMobileImage not provided — should fall back
@@ -129,15 +155,15 @@ describe('CarouselBusinessMobile', () => {
     const images = screen.getAllByRole('img');
     expect(images[0]).toHaveAttribute(
       'src',
-      'https://cms.example.com/uploads/first-mobile.png',
+      '/images/features/business/first-mobile.png',
     );
     expect(images[1]).toHaveAttribute(
       'src',
-      'https://cms.example.com/uploads/second-desktop.png',
+      '/images/features/business/second-desktop.png',
     );
     expect(images[2]).toHaveAttribute(
       'src',
-      'https://cms.example.com/uploads/third-desktop.png',
+      '/images/features/business/third-desktop.png',
     );
   });
 });

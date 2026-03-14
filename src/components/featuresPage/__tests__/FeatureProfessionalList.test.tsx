@@ -8,10 +8,6 @@ jest.mock('next/image', () => {
   };
 });
 
-jest.mock('@/helpers/axiosConfig', () => ({
-  baseURLImage: 'https://cms.example.com',
-}));
-
 const makeListItem = (overrides: Record<string, any> = {}) => ({
   attributes: {
     title: 'Test Feature',
@@ -20,8 +16,12 @@ const makeListItem = (overrides: Record<string, any> = {}) => ({
       data: [
         {
           attributes: {
-            url: '/uploads/desktop.png',
-            formats: { large: { url: '/uploads/desktop-large.png' } },
+            url: '/images/features/professional/desktop.png',
+            formats: {
+              large: {
+                url: '/images/features/professional/desktop-large.png',
+              },
+            },
           },
         },
       ],
@@ -47,7 +47,7 @@ describe('FeatureProfessionalList', () => {
     );
     expect(featureImage).toBeDefined();
     expect(featureImage!.getAttribute('src')).toBe(
-      'https://cms.example.com/uploads/desktop-large.png',
+      '/images/features/professional/desktop-large.png',
     );
   });
 
@@ -57,8 +57,12 @@ describe('FeatureProfessionalList', () => {
         data: [
           {
             attributes: {
-              url: '/uploads/mobile.png',
-              formats: { large: { url: '/uploads/mobile-large.png' } },
+              url: '/images/features/professional/mobile.png',
+              formats: {
+                large: {
+                  url: '/images/features/professional/mobile-large.png',
+                },
+              },
             },
           },
         ],
@@ -79,7 +83,7 @@ describe('FeatureProfessionalList', () => {
     );
     expect(featureImage).toBeDefined();
     expect(featureImage!.getAttribute('src')).toBe(
-      'https://cms.example.com/uploads/mobile-large.png',
+      '/images/features/professional/mobile-large.png',
     );
   });
 
@@ -87,7 +91,13 @@ describe('FeatureProfessionalList', () => {
     const item = makeListItem({
       mobileStylePicture: { padding: '8px', width: '100%' },
       mobilePicture: {
-        data: [{ attributes: { url: '/uploads/mobile.png' } }],
+        data: [
+          {
+            attributes: {
+              url: '/images/features/professional/mobile.png',
+            },
+          },
+        ],
       },
     });
 
@@ -100,8 +110,8 @@ describe('FeatureProfessionalList', () => {
     );
 
     const images = screen.getAllByRole('img');
-    const featureImage = images.find((img) =>
-      img.getAttribute('alt') === 'Test Feature',
+    const featureImage = images.find(
+      (img) => img.getAttribute('alt') === 'Test Feature',
     );
     expect(featureImage!.style.padding).toBe('8px');
   });
@@ -116,8 +126,8 @@ describe('FeatureProfessionalList', () => {
     );
 
     const images = screen.getAllByRole('img');
-    const featureImage = images.find((img) =>
-      img.getAttribute('alt') === 'Test Feature',
+    const featureImage = images.find(
+      (img) => img.getAttribute('alt') === 'Test Feature',
     );
     expect(featureImage!.style.padding).toBe('20px');
   });
@@ -125,7 +135,13 @@ describe('FeatureProfessionalList', () => {
   it('falls back to desktop url when mobilePicture has no formats', () => {
     const item = makeListItem({
       mobilePicture: {
-        data: [{ attributes: { url: '/uploads/mobile-raw.png' } }],
+        data: [
+          {
+            attributes: {
+              url: '/images/features/professional/mobile-raw.png',
+            },
+          },
+        ],
       },
     });
 

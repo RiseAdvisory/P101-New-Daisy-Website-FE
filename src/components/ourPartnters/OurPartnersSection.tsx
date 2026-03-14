@@ -1,11 +1,12 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { CarouselCompany } from '../carouselCompany/CarouselCompany';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useLoadingStore } from '@/store/loading';
 import { Skeleton } from '../ui/skeleton';
 import { useChangeLanguage } from '@/store/language';
 import { getData, getRandomElements } from '@/helpers/getPartners';
+import { partnersData } from '@/lib/constants/resources/resourcesData';
+import { t } from '@/lib/constants/i18n';
 
 export const OurPartnersSection = ({
   stylePartners,
@@ -13,24 +14,11 @@ export const OurPartnersSection = ({
   stylePartners?: string;
 }) => {
   const { array } = useLoadingStore();
-  const [ourPartners, setOurPartners] = useState<any>();
-
   const { lang } = useChangeLanguage();
   const { handleArray, handleLoadingStatus } = useLoadingStore();
 
-  useEffect(() => {
-    (async () => {
-      try {
-        const {
-          data: { data },
-        } = await axiosInstance.get(`/partners?locale=${lang}`);
+  const partners = t(partnersData, lang);
 
-        setOurPartners(data);
-      } catch {
-        // Error fetching partners data
-      }
-    })();
-  }, [lang]);
   useEffect(() => {
     try {
       (async () => {
@@ -48,10 +36,10 @@ export const OurPartnersSection = ({
     <div className={` px-4 mt-[80px] pb-[112px] ${stylePartners} bg-white`}>
       <div className="flex flex-col mx-auto text-center pt-20 px-3">
         <h1 className="text-center text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
-          {ourPartners?.[0]?.attributes?.title}
+          {partners.title}
         </h1>
         <p className="text-center text-[#455150] mt-3 ltr:font-montserrat md:text-base md:font-normal">
-          {ourPartners?.[0]?.attributes?.subtitle}
+          {partners.subtitle}
         </p>
       </div>
       {array.length ? (

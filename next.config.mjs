@@ -35,14 +35,6 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '*.strapiapp.com',
-      },
-      {
-        protocol: 'https',
-        hostname: '*.media.strapiapp.com',
-      },
-      {
-        protocol: 'https',
         hostname: '*.trythedaisy.com',
       },
       {

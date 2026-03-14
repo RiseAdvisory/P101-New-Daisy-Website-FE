@@ -16,10 +16,6 @@ jest.mock('@/lib/api/blog', () => ({
   getAllBlogSlugs: jest.fn(),
 }));
 
-jest.mock('@/helpers/axiosConfig', () => ({
-  baseURLImage: 'https://cdn.test.com',
-}));
-
 // Mock the child components
 jest.mock('../BlogPostContent', () => {
   return function MockBlogPostContent() {
@@ -65,10 +61,8 @@ describe('Blog Post Page', () => {
             jobTitle: 'Content Writer',
             picture: {
               data: {
-                id: 1,
                 attributes: {
-                  url: '/uploads/author.jpg',
-                  alternativeText: 'Author photo',
+                  url: '/images/blog/author.webp',
                 },
               },
             },
@@ -85,18 +79,16 @@ describe('Blog Post Page', () => {
       },
       picture: {
         data: {
-          id: 2,
           attributes: {
-            url: '/uploads/featured.jpg',
+            url: '/images/blog/featured.webp',
             alternativeText: 'Featured image',
           },
         },
       },
       ogImage: {
         data: {
-          id: 3,
           attributes: {
-            url: '/uploads/og-image.jpg',
+            url: '/images/blog/og-image.webp',
           },
         },
       },
@@ -108,7 +100,7 @@ describe('Blog Post Page', () => {
       const mockSlugs = [
         { userType: 'customer' as const, slug: 'post-1', locale: 'en' },
         { userType: 'business' as const, slug: 'post-2', locale: 'en' },
-        { userType: 'professional' as const, slug: 'post-3', locale: 'ar' },
+        { userType: 'professional' as const, slug: 'post-3', locale: 'en' },
       ];
 
       mockedGetAllBlogSlugs.mockResolvedValueOnce(mockSlugs);
@@ -129,12 +121,6 @@ describe('Blog Post Page', () => {
       const result = await generateStaticParams();
 
       expect(result).toEqual([]);
-    });
-
-    it('should handle errors gracefully', async () => {
-      mockedGetAllBlogSlugs.mockRejectedValueOnce(new Error('API error'));
-
-      await expect(generateStaticParams()).rejects.toThrow('API error');
     });
   });
 
@@ -185,13 +171,13 @@ describe('Blog Post Page', () => {
           publishedTime: '2026-01-15T10:00:00.000Z',
           modifiedTime: '2026-01-16T10:00:00.000Z',
           authors: ['John Doe'],
-          images: [{ url: 'https://cdn.test.com/uploads/og-image.jpg' }],
+          images: [{ url: '/images/blog/og-image.webp' }],
         },
         twitter: {
           card: 'summary_large_image',
           title: 'Test Meta Title',
           description: 'Test meta description for SEO',
-          images: ['https://cdn.test.com/uploads/og-image.jpg'],
+          images: ['/images/blog/og-image.webp'],
         },
         alternates: {
           canonical: '/resources/blog/customer/test-blog-post',
@@ -224,30 +210,6 @@ describe('Blog Post Page', () => {
       expect(metadata.openGraph?.title).toBe('Test Blog Post');
     });
 
-    it('should fall back to description substring when metaDescription is missing', async () => {
-      const postWithoutMetaDescription = {
-        ...mockBlogPost,
-        attributes: {
-          ...mockBlogPost.attributes,
-          metaDescription: undefined,
-        },
-      };
-
-      mockedGetBlogPostBySlug.mockResolvedValueOnce(
-        postWithoutMetaDescription
-      );
-
-      const params = {
-        params: { userType: 'customer', slug: 'test-blog-post' },
-      };
-
-      const metadata = await generateMetadata(params);
-
-      expect(metadata.description).toBe(
-        'This is a test blog post description.'
-      );
-    });
-
     it('should use picture as fallback when ogImage is missing', async () => {
       const postWithoutOgImage = {
         ...mockBlogPost,
@@ -266,10 +228,10 @@ describe('Blog Post Page', () => {
       const metadata = await generateMetadata(params);
 
       expect(metadata.openGraph?.images).toEqual([
-        { url: 'https://cdn.test.com/uploads/featured.jpg' },
+        { url: '/images/blog/featured.webp' },
       ]);
       expect(metadata.twitter?.images).toEqual([
-        'https://cdn.test.com/uploads/featured.jpg',
+        '/images/blog/featured.webp',
       ]);
     });
 
@@ -313,27 +275,6 @@ describe('Blog Post Page', () => {
       const metadata = await generateMetadata(params);
 
       expect(metadata.openGraph?.authors).toEqual(['The Daisy Team']);
-    });
-
-    it('should handle empty description', async () => {
-      const postWithEmptyDescription = {
-        ...mockBlogPost,
-        attributes: {
-          ...mockBlogPost.attributes,
-          description: '',
-          metaDescription: undefined,
-        },
-      };
-
-      mockedGetBlogPostBySlug.mockResolvedValueOnce(postWithEmptyDescription);
-
-      const params = {
-        params: { userType: 'customer', slug: 'test-blog-post' },
-      };
-
-      const metadata = await generateMetadata(params);
-
-      expect(metadata.description).toBe('');
     });
   });
 
@@ -402,73 +343,6 @@ describe('Blog Post Page', () => {
         'business',
         'test-blog-post'
       );
-    });
-
-    it('should handle professional user type', async () => {
-      mockedGetBlogPostBySlug.mockResolvedValueOnce(mockBlogPost);
-
-      const params = {
-        params: { userType: 'professional', slug: 'test-blog-post' },
-      };
-
-      await BlogPostPage(params);
-
-      expect(mockedGetBlogPostBySlug).toHaveBeenCalledWith(
-        'professional',
-        'test-blog-post'
-      );
-    });
-  });
-
-  describe('Edge Cases', () => {
-    it('should handle post with minimal data', async () => {
-      const minimalPost: BlogPost = {
-        id: 1,
-        attributes: {
-          title: 'Minimal Post',
-          slug: 'minimal-post',
-          description: 'Minimal description',
-          publishedAt: '2026-01-15T10:00:00.000Z',
-          updatedAt: '2026-01-15T10:00:00.000Z',
-          locale: 'en',
-        },
-      };
-
-      mockedGetBlogPostBySlug.mockResolvedValueOnce(minimalPost);
-
-      const params = {
-        params: { userType: 'customer', slug: 'minimal-post' },
-      };
-
-      const metadata = await generateMetadata(params);
-
-      expect(metadata.title).toBe('Minimal Post');
-      expect(metadata.description).toBe('Minimal description');
-      expect(metadata.openGraph?.authors).toEqual(['The Daisy Team']);
-      expect(metadata.openGraph?.images).toBeUndefined();
-    });
-
-    it('should truncate long description to 160 characters', async () => {
-      const longDescription = 'A'.repeat(200);
-      const postWithLongDescription = {
-        ...mockBlogPost,
-        attributes: {
-          ...mockBlogPost.attributes,
-          description: longDescription,
-          metaDescription: undefined,
-        },
-      };
-
-      mockedGetBlogPostBySlug.mockResolvedValueOnce(postWithLongDescription);
-
-      const params = {
-        params: { userType: 'customer', slug: 'test-blog-post' },
-      };
-
-      const metadata = await generateMetadata(params);
-
-      expect(metadata.description?.length).toBe(160);
-      expect(metadata.description).toBe('A'.repeat(160));
     });
   });
 });

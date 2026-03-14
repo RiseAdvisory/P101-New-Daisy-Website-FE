@@ -1,14 +1,8 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { FeaturesBusinessClient } from '../FeaturesBusinessClient';
-import axiosInstance from '@/helpers/axiosConfig';
 
-// Mock dependencies
-jest.mock('@/helpers/axiosConfig');
 jest.mock('@/store/language');
 
-const mockAxiosInstance = axiosInstance as jest.Mocked<typeof axiosInstance>;
-
-// Mock Next.js Image component
 jest.mock('next/image', () => ({
   __esModule: true,
   default: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
@@ -16,7 +10,6 @@ jest.mock('next/image', () => ({
   ),
 }));
 
-// Mock Next.js navigation
 jest.mock('next/navigation', () => ({
   useRouter: jest.fn(() => ({
     push: jest.fn(),
@@ -26,7 +19,6 @@ jest.mock('next/navigation', () => ({
   usePathname: jest.fn(() => '/features/business'),
 }));
 
-// Mock child components
 jest.mock('@/components/heroSection/HeroSection', () => ({
   HeroPage: ({ description }: { description: string }) => (
     <div data-testid="hero-page">{description}</div>
@@ -92,10 +84,6 @@ jest.mock('@/components/featuresPage/SignUpBlog', () => ({
   SignUpBlog: () => <div data-testid="signup-blog">SignUp</div>,
 }));
 
-jest.mock('@/components/ui/skeleton', () => ({
-  Skeleton: () => <div data-testid="skeleton">Loading...</div>,
-}));
-
 describe('FeaturesBusinessClient', () => {
   beforeEach(() => {
     jest.clearAllMocks();
@@ -104,315 +92,76 @@ describe('FeaturesBusinessClient', () => {
     }));
   });
 
-  const mockPageData = {
-    data: {
-      data: [
-        {
-          attributes: {
-            title: 'Business Features',
-            listBusinessOptions: [
-              { title: 'AI', path: 'ai' },
-              { title: 'Booking', path: 'booking' },
-              { title: 'Communication', path: 'communication' },
-              { title: 'Marketing', path: 'marketing' },
-              { title: 'Payments', path: 'payments' },
-              { title: 'Growth', path: 'growth' },
-              { title: 'Control', path: 'control' },
-              { title: 'Reports', path: 'reports' },
-            ],
-            marketingTools: {
-              title: 'Marketing Tools',
-              description: 'Boost your business',
-            },
-            collectPayments: {
-              title: 'Collect Payments',
-              description: 'Get paid easily',
-            },
-            performanceReports: {
-              title: 'Reports',
-              description: 'Track performance',
-            },
-          },
-        },
-      ],
-    },
-  };
-
-  const mockCategoryResponse = (items: any[] = [{ id: 1 }]) => ({
-    data: { data: items },
+  it('renders hero with title from local data', () => {
+    render(<FeaturesBusinessClient />);
+    expect(screen.getByTestId('hero-page')).toHaveTextContent(
+      'Everything Your Business Needs to Grow',
+    );
   });
 
-  const setupMockResponses = ({
-    existingFail = false,
-    newFail = false,
-  } = {}) => {
-    mockAxiosInstance.get.mockImplementation((url: string) => {
-      if (url.includes('feature-businesses')) {
-        return Promise.resolve(mockPageData);
-      }
-      // Existing endpoints
-      if (
-        url.includes('features-business-marketings') ||
-        url.includes('feature-business-payments') ||
-        url.includes('feature-business-reports')
-      ) {
-        if (existingFail) return Promise.reject(new Error('API Error'));
-        return Promise.resolve(mockCategoryResponse());
-      }
-      // New endpoints
-      if (newFail) return Promise.reject(new Error('Not Found'));
-      return Promise.resolve(mockCategoryResponse());
-    });
-  };
-
-  it('renders skeleton while loading', () => {
-    mockAxiosInstance.get.mockImplementation(() => new Promise(() => {}));
+  it('renders navigation with 8 business options', () => {
     render(<FeaturesBusinessClient />);
-    expect(screen.getByTestId('skeleton')).toBeInTheDocument();
+    expect(screen.getByTestId('section-business')).toHaveTextContent(
+      '8 options',
+    );
   });
 
-  it('renders content after data is fetched', async () => {
-    setupMockResponses();
+  it('renders all 8 category sections', () => {
     render(<FeaturesBusinessClient />);
-
-    await waitFor(() => {
-      expect(screen.getByTestId('desktop-view')).toBeInTheDocument();
-      expect(screen.getByTestId('mobile-view')).toBeInTheDocument();
-      expect(screen.getByTestId('section-business')).toBeInTheDocument();
-    });
+    const desktopView = screen.getByTestId('desktop-view');
+    expect(desktopView).toHaveTextContent('ai');
+    expect(desktopView).toHaveTextContent('booking');
+    expect(desktopView).toHaveTextContent('communication');
+    expect(desktopView).toHaveTextContent('marketing');
+    expect(desktopView).toHaveTextContent('payments');
+    expect(desktopView).toHaveTextContent('growth');
+    expect(desktopView).toHaveTextContent('control');
+    expect(desktopView).toHaveTextContent('reports');
   });
 
-  it('fetches from all 8 category endpoints plus page data', async () => {
-    setupMockResponses();
+  it('renders AI category items', () => {
     render(<FeaturesBusinessClient />);
-
-    await waitFor(() => {
-      // Page data
-      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-businesses?populate=*&locale=en',
-      );
-      // Existing 3 endpoints
-      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/features-business-marketings?populate=*&locale=en&pagination[pageSize]=100',
-      );
-      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-payments?populate=*&locale=en&pagination[pageSize]=100',
-      );
-      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-reports?populate=*&locale=en&pagination[pageSize]=100',
-      );
-      // New 5 endpoints
-      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-ai-powereds?populate=*&locale=en&pagination[pageSize]=100',
-      );
-      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-bookings?populate=*&locale=en&pagination[pageSize]=100',
-      );
-      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-communications?populate=*&locale=en&pagination[pageSize]=100',
-      );
-      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-growths?populate=*&locale=en&pagination[pageSize]=100',
-      );
-      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
-        '/feature-business-controls?populate=*&locale=en&pagination[pageSize]=100',
-      );
-    });
+    expect(screen.getByTestId('category-ai')).toHaveTextContent(
+      'AI Receptionist',
+    );
+    expect(screen.getByTestId('category-ai')).toHaveTextContent(
+      'Smart Scheduling',
+    );
   });
 
-  it('passes category data to desktop and mobile views', async () => {
-    setupMockResponses();
+  it('renders marketing category items', () => {
     render(<FeaturesBusinessClient />);
-
-    await waitFor(() => {
-      const desktopView = screen.getByTestId('desktop-view');
-      expect(desktopView).toHaveTextContent('marketing');
-      expect(desktopView).toHaveTextContent('payments');
-      expect(desktopView).toHaveTextContent('reports');
-      expect(desktopView).toHaveTextContent('ai');
-      expect(desktopView).toHaveTextContent('booking');
-    });
+    expect(screen.getByTestId('category-marketing')).toHaveTextContent(
+      'Marketplace Listing',
+    );
+    expect(screen.getByTestId('category-marketing')).toHaveTextContent(
+      'Cashback Campaigns',
+    );
   });
 
-  it('renders navigation with correct option count', async () => {
-    setupMockResponses();
+  it('renders Arabic content when language is ar', () => {
+    require('@/store/language').useChangeLanguage = jest.fn(() => ({
+      lang: 'ar',
+    }));
     render(<FeaturesBusinessClient />);
-
-    await waitFor(() => {
-      expect(screen.getByTestId('section-business')).toHaveTextContent(
-        '8 options',
-      );
-    });
+    expect(screen.getByTestId('hero-page')).toHaveTextContent(
+      'كل ما يحتاجه عملك للنمو',
+    );
   });
 
-  it('handles new endpoint failures gracefully — existing categories still render', async () => {
-    setupMockResponses({ newFail: true });
+  it('renders desktop and mobile views', () => {
     render(<FeaturesBusinessClient />);
-
-    await waitFor(() => {
-      const desktopView = screen.getByTestId('desktop-view');
-      // Existing categories should still render
-      expect(desktopView).toHaveTextContent('marketing');
-      expect(desktopView).toHaveTextContent('payments');
-      expect(desktopView).toHaveTextContent('reports');
-      // New categories should not appear
-      expect(desktopView).not.toHaveTextContent('ai');
-      expect(desktopView).not.toHaveTextContent('booking');
-    });
+    expect(screen.getByTestId('desktop-view')).toBeInTheDocument();
+    expect(screen.getByTestId('mobile-view')).toBeInTheDocument();
   });
 
-  it('handles complete API failure gracefully', async () => {
-    const consoleSpy = jest
-      .spyOn(console, 'error')
-      .mockImplementation(() => {});
-    mockAxiosInstance.get.mockRejectedValue(new Error('Network Error'));
-
+  it('renders signup blog section', () => {
     render(<FeaturesBusinessClient />);
-
-    await waitFor(() => {
-      expect(consoleSpy).toHaveBeenCalledWith(
-        'Error fetching business features:',
-        expect.any(Error),
-      );
-    });
-
-    consoleSpy.mockRestore();
+    expect(screen.getByTestId('signup-blog')).toBeInTheDocument();
   });
 
-  it('removes skeleton after loading completes', async () => {
-    setupMockResponses();
+  it('no longer shows skeleton (data is synchronous)', () => {
     render(<FeaturesBusinessClient />);
-
-    // Skeleton should be visible initially
-    expect(screen.getByTestId('skeleton')).toBeInTheDocument();
-
-    // After loading, skeleton should be gone
-    await waitFor(() => {
-      expect(screen.queryByTestId('skeleton')).not.toBeInTheDocument();
-    });
-  });
-
-  it('removes skeleton even after API error', async () => {
-    const consoleSpy = jest
-      .spyOn(console, 'error')
-      .mockImplementation(() => {});
-    mockAxiosInstance.get.mockRejectedValue(new Error('Error'));
-
-    render(<FeaturesBusinessClient />);
-
-    await waitFor(() => {
-      expect(screen.queryByTestId('skeleton')).not.toBeInTheDocument();
-    });
-
-    consoleSpy.mockRestore();
-  });
-
-  it('passes hero description from page data', async () => {
-    setupMockResponses();
-    render(<FeaturesBusinessClient />);
-
-    await waitFor(() => {
-      expect(screen.getByTestId('hero-page')).toHaveTextContent(
-        'Business Features',
-      );
-    });
-  });
-
-  it('sorts category data by attributes.sortId in ascending order', async () => {
-    const unsortedItems = [
-      { id: 1, attributes: { sortId: 3, title: 'Third' } },
-      { id: 2, attributes: { sortId: 1, title: 'First' } },
-      { id: 3, attributes: { sortId: 2, title: 'Second' } },
-    ];
-
-    mockAxiosInstance.get.mockImplementation((url: string) => {
-      if (url.includes('feature-businesses')) {
-        return Promise.resolve(mockPageData);
-      }
-      if (url.includes('features-business-marketings')) {
-        return Promise.resolve(mockCategoryResponse(unsortedItems));
-      }
-      if (
-        url.includes('feature-business-payments') ||
-        url.includes('feature-business-reports')
-      ) {
-        return Promise.resolve(mockCategoryResponse([]));
-      }
-      return Promise.reject(new Error('Not Found'));
-    });
-
-    render(<FeaturesBusinessClient />);
-
-    await waitFor(() => {
-      expect(screen.getByTestId('category-marketing')).toHaveTextContent(
-        'First, Second, Third',
-      );
-    });
-  });
-
-  it('sorts correctly when sortId values exceed 50', async () => {
-    const highSortIds = [
-      { id: 1, attributes: { sortId: 100, title: 'Hundredth' } },
-      { id: 2, attributes: { sortId: 5, title: 'Fifth' } },
-      { id: 3, attributes: { sortId: 55, title: 'FiftyFifth' } },
-      { id: 4, attributes: { sortId: 60, title: 'Sixtieth' } },
-      { id: 5, attributes: { sortId: 2, title: 'Second' } },
-    ];
-
-    mockAxiosInstance.get.mockImplementation((url: string) => {
-      if (url.includes('feature-businesses')) {
-        return Promise.resolve(mockPageData);
-      }
-      if (url.includes('features-business-marketings')) {
-        return Promise.resolve(mockCategoryResponse(highSortIds));
-      }
-      if (
-        url.includes('feature-business-payments') ||
-        url.includes('feature-business-reports')
-      ) {
-        return Promise.resolve(mockCategoryResponse([]));
-      }
-      return Promise.reject(new Error('Not Found'));
-    });
-
-    render(<FeaturesBusinessClient />);
-
-    await waitFor(() => {
-      expect(screen.getByTestId('category-marketing')).toHaveTextContent(
-        'Second, Fifth, FiftyFifth, Sixtieth, Hundredth',
-      );
-    });
-  });
-
-  it('handles items with missing sortId using fallback of 0', async () => {
-    const mixedSortIds = [
-      { id: 1, attributes: { sortId: 3, title: 'Third' } },
-      { id: 2, attributes: { title: 'NoSort' } },
-      { id: 3, attributes: { sortId: 1, title: 'First' } },
-    ];
-
-    mockAxiosInstance.get.mockImplementation((url: string) => {
-      if (url.includes('feature-businesses')) {
-        return Promise.resolve(mockPageData);
-      }
-      if (url.includes('features-business-marketings')) {
-        return Promise.resolve(mockCategoryResponse(mixedSortIds));
-      }
-      if (
-        url.includes('feature-business-payments') ||
-        url.includes('feature-business-reports')
-      ) {
-        return Promise.resolve(mockCategoryResponse([]));
-      }
-      return Promise.reject(new Error('Not Found'));
-    });
-
-    render(<FeaturesBusinessClient />);
-
-    await waitFor(() => {
-      expect(screen.getByTestId('category-marketing')).toHaveTextContent(
-        'NoSort, First, Third',
-      );
-    });
+    expect(screen.queryByTestId('skeleton')).not.toBeInTheDocument();
   });
 });

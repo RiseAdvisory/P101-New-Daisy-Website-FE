@@ -4,10 +4,8 @@ import {
   CarouselContent,
   CarouselItem,
 } from '@/components/ui/carousel';
-import { listImageBusiness } from '@/lib/constants/features/listBusinessOptions';
 import Image from 'next/image';
 import Autoplay from 'embla-carousel-autoplay';
-import { baseURLImage } from '@/helpers/axiosConfig';
 
 export const CarouselBusinessMobile = ({
   dataBusiness,
@@ -22,7 +20,7 @@ export const CarouselBusinessMobile = ({
       dataBusiness?.[mobileField]?.data?.[0]?.attributes?.url;
     const desktopUrl =
       dataBusiness?.[desktopField]?.data?.[0]?.attributes?.url;
-    return new URL(mobileUrl ?? desktopUrl, baseURLImage).href;
+    return mobileUrl ?? desktopUrl ?? '';
   };
 
   const firstImage = getImageUrl('firstMobileImage', 'firstImage');

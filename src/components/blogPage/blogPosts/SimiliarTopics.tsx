@@ -3,39 +3,34 @@ import Image from 'next/image';
 import { CalendarIcon } from '@/assets/icons/calendarIcon/CalendarIcon';
 import { ClockIcon } from '@/assets/icons/clockIcon/ClockIcon';
 import { useEffect, useState } from 'react';
-import axiosInstance, { baseURLImage } from '@/helpers/axiosConfig';
 import { useRouter } from 'next/navigation';
 import { usePostStore } from '@/store/post';
-import { useChangeLanguage } from '@/store/language';
 import { useMyContext } from '@/app/MyContext';
+import { blogPostsByUserType } from '@/lib/constants/blog/blogData';
 
 export const SimiliarTopick = ({ titleSimilar }: { titleSimilar: string }) => {
   const [listCard, setListCards] = useState<any>();
 
   const router = useRouter();
   const { handlePost } = usePostStore();
-  const { lang } = useChangeLanguage();
   const { userChange: currentPage, setUserChange } = useMyContext();
 
   useEffect(() => {
-    let endpointExperienceDaisyLink = 'resources-blog-post-customers';
+    let type = 'customer';
     if (currentPage === '/customer') {
-      endpointExperienceDaisyLink = 'resources-blog-post-customers';
+      type = 'customer';
     }
     if (currentPage === '/business') {
-      endpointExperienceDaisyLink = 'resources-blog-post-businesses';
+      type = 'business';
     }
     if (currentPage === '/professional') {
-      endpointExperienceDaisyLink = 'resources-blog-post-independents';
+      type = 'professional';
     }
 
-    (async () => {
-      const responseList = await axiosInstance.get(
-        `/${endpointExperienceDaisyLink}?populate=*&locale=${lang}`,
-      );
-      setListCards(responseList?.data?.data);
-    })();
-  }, [lang, currentPage]);
+    // Load from local data
+    const posts = blogPostsByUserType[type] || [];
+    setListCards(posts);
+  }, [currentPage]);
 
   return (
     <div className="flex flex-col justify-center items-center ">
@@ -45,11 +40,10 @@ export const SimiliarTopick = ({ titleSimilar }: { titleSimilar: string }) => {
       <ul className="bg-[#F8F5F3] px-4 space-y-8 pb-[28px] md:pb-[140px] bg-transparent md:grid md:grid-cols-3 md:gap-6 md:space-y-0">
         {listCard &&
           listCard.map((item: any, index: number) => {
-            const [data] = item.attributes.image.data;
-            const imagePosts = new URL(data.attributes.url, baseURLImage).href;
-            const [dataOwner] = item.attributes.iconOwner.data;
-            const ownerSrc = new URL(dataOwner.attributes.url, baseURLImage)
-              .href;
+            const imageData = item.attributes.image?.data?.[0];
+            const imagePosts = imageData?.attributes?.url ?? '/images/blog/placeholder.webp';
+            const ownerData = item.attributes.iconOwner?.data?.[0];
+            const ownerSrc = ownerData?.attributes?.url ?? '/images/blog/author-daisy-team.webp';
 
             return (
               <li
@@ -83,10 +77,10 @@ export const SimiliarTopick = ({ titleSimilar }: { titleSimilar: string }) => {
                 <div className="px-6 py-4 mt-6">
                   <div className="flex justify-start gap-2 text-sm">
                     <span className="px-3 py-1 text-[#2543AD] bg-[#E9ECF7] rounded-sm ">
-                      {item.attributes.tags.wellness}
+                      {item.attributes.tags?.wellness}
                     </span>
                     <span className="px-3 py-1 text-[#14736F] bg-[#E7F1F1] rounded-sm">
-                      {item.attributes.tags.hair}
+                      {item.attributes.tags?.hair}
                     </span>
                   </div>
                   <h3 className="mt-2 text-lg ltr:font-montserrat font-semibold">
@@ -103,16 +97,16 @@ export const SimiliarTopick = ({ titleSimilar }: { titleSimilar: string }) => {
                         height={18}
                       />
                       <span className=" text-gray-500 text-sm">
-                        {item.attributes.user.name}
+                        {item.attributes.user?.data?.attributes?.name ?? item.attributes.user?.name}
                       </span>
                     </div>
                     <span className="flex items-center border-r pr-[10px]">
                       <CalendarIcon className="ltr:mr-[10px] rtl:ml-[10px]" />
-                      {item.attributes.user.date}
+                      {item.attributes.user?.data?.attributes?.date ?? item.attributes.user?.date}
                     </span>
                     <span className="flex items-center rtl:pr-2 rtl:border-r">
                       <ClockIcon className="ltr:mr-[10px] rtl:ml-[10px]" />
-                      {item.attributes.user.time}
+                      {item.attributes.user?.data?.attributes?.time ?? item.attributes.user?.time}
                     </span>
                   </div>
                   <p className="mt-2 text-[#455150] text-sm ltr:font-montserrat">

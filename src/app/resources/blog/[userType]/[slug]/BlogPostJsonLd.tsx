@@ -1,7 +1,6 @@
 'use client';
 
 import { BlogPost, UserType } from '@/lib/api/blog';
-import { baseURLImage } from '@/helpers/axiosConfig';
 
 interface BlogPostJsonLdProps {
   post: BlogPost;
@@ -14,19 +13,12 @@ export default function BlogPostJsonLd({
 }: BlogPostJsonLdProps) {
   const { attributes } = post;
 
-  // Build image URL
-  const imageUrl = attributes.picture?.data?.attributes?.url
-    ? new URL(attributes.picture.data.attributes.url, baseURLImage).href
-    : '';
+  // Build image URL (now local paths)
+  const imageUrl = attributes.picture?.data?.attributes?.url ?? '';
 
   // Build author image URL
-  const authorImageUrl = attributes.user?.data?.attributes?.picture?.data
-    ?.attributes?.url
-    ? new URL(
-        attributes.user.data.attributes.picture.data.attributes.url,
-        baseURLImage
-      ).href
-    : '';
+  const authorImageUrl =
+    attributes.user?.data?.attributes?.picture?.data?.attributes?.url ?? '';
 
   // Article schema
   const articleSchema = {

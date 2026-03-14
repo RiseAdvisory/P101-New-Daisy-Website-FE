@@ -4,7 +4,6 @@ import { PlayMarketButton } from '@/components/buttonApp/PlayMarketButton';
 import { AppStoreButton } from '@/components/buttonApp/AppStoreButton';
 import { Separator } from '@/components/ui/separator';
 import Image from 'next/image';
-import { baseURLImage } from '@/helpers/axiosConfig';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { CheckIcon } from '@/assets/icons/checkIcon/CheckIcon';
@@ -14,10 +13,7 @@ const LockerContentItem = forwardRef(
     { objectId, text, index, description, storeBurron, listSub }: any,
     ref: any,
   ) => {
-    const qrCode = new URL(
-      'https://motivated-belief-b4a000ad6e.media.strapiapp.com/QR_https_thedaisy_link_install_app_1_bebb385129.svg',
-      baseURLImage,
-    ).href;
+    const qrCode = '/images/pages/get-the-app/qr-code.png';
     const container = {
       hidden: { opacity: 1, scale: 0 },
       visible: {

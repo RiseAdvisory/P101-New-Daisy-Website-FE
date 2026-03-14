@@ -1,10 +1,8 @@
 import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
-import growImage from '../../assets/images/customerDaisy.png';
 import Image from 'next/image';
 import leaf from '../../assets/images/bgleafcustomer.png';
 import leafdown from '../../assets/images/bgcustomerdown.png';
-import { baseURLImage } from '@/helpers/axiosConfig';
 import { useRouter } from 'next/navigation';
 
 export const GrowthSectionCustomer = ({
@@ -23,7 +21,6 @@ export const GrowthSectionCustomer = ({
   buttonLink: string;
 }) => {
   const router = useRouter();
-  const growthImage = new URL(imageUrl, baseURLImage).href;
   return (
     <>
       <div className=" px-4 md:flex bg-[white]/90 md:bg-white">
@@ -64,7 +61,7 @@ export const GrowthSectionCustomer = ({
             <Image
               width={426}
               height={748}
-              src={growthImage}
+              src={imageUrl}
               alt="customerdaisy"
             />
           </div>

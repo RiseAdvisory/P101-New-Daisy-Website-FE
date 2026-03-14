@@ -29,7 +29,8 @@ import { getData } from '@/helpers/getCountryCodes';
 import { useLoadingStore } from '@/store/loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import axiosInstance from '@/helpers/axiosConfig';
+import { contactPageData } from '@/lib/constants/contactPageData';
+import { t } from '@/lib/constants/i18n';
 import { useChangeLanguage } from '@/store/language';
 
 const formSchema = z.object({
@@ -47,10 +48,11 @@ export const FormContacts = ({ style }: { style?: string }) => {
   const { countryCodesArray } = useLoadingStore();
   const [mobile, setPhoneNumber] = useState('');
   const [isSubmit, setIsSubmit] = useState(false);
-  const [formText, setFormText] = useState<any>();
-  const [formTextPlaceholder, setFormTextPlaceholder] = useState<any>();
 
   const { lang } = useChangeLanguage();
+  const pageData = t(contactPageData, lang);
+  const formText = pageData.textContactForm;
+  const formTextPlaceholder = pageData.placeholderContactForm;
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -112,15 +114,6 @@ export const FormContacts = ({ style }: { style?: string }) => {
   const handleBlur = () => {
     setActiveField(null);
   };
-
-  useEffect(() => {
-    (async () => {
-      const response = await axiosInstance.get(`/contact-forms?locale=${lang}`);
-      const [data] = response?.data?.data;
-      setFormText(data?.attributes?.textContactForm);
-      setFormTextPlaceholder(data?.attributes?.placeholderContactForm);
-    })();
-  }, [lang]);
 
   useEffect(() => {
     try {

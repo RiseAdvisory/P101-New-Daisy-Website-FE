@@ -1,9 +1,10 @@
 'use client';
-import axiosInstance, { baseURLImage } from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { useMyContext } from '@/app/MyContext';
+import { testimonialsListByUserType } from '@/lib/constants/resources/resourcesData';
+
 type Testimonial = {
   attributes: {
     iconOwner: {
@@ -23,34 +24,19 @@ export const TestimonialsCustomerList = ({
 }: {
   textMore: string;
 }) => {
-  const [listTestimonials, setListTestimonials] = useState([]);
+  const [listTestimonials, setListTestimonials] = useState<any[]>([]);
   const [visibleCount, setVisibleCount] = useState(9);
   const { userChange: currentPage, setUserChange } = useMyContext();
 
   const { lang } = useChangeLanguage();
   useEffect(() => {
-    //resources-testimonials
-    let endpointTutorialInfos = 'resources-testimonial-user-customers';
-    if (currentPage === '/customer') {
-      endpointTutorialInfos = 'resources-testimonial-user-customers';
-    }
-    if (currentPage === '/business') {
-      endpointTutorialInfos = 'resources-testimonial-user-businesses';
-    }
-    if (currentPage === '/professional') {
-      endpointTutorialInfos = 'resources-testimonial-user-independents';
-    }
+    let type = 'customer';
+    if (currentPage === '/customer') type = 'customer';
+    if (currentPage === '/business') type = 'business';
+    if (currentPage === '/professional') type = 'professional';
 
-    (async () => {
-      try {
-        const response = await axiosInstance.get(
-          `/${endpointTutorialInfos}?populate=*&locale=${lang}`,
-        );
-        setListTestimonials(response?.data?.data || []);
-      } catch {
-        // Error fetching testimonials
-      }
-    })();
+    const testimonials = testimonialsListByUserType[type] || [];
+    setListTestimonials(testimonials);
   }, [lang, currentPage]);
 
   const loadMoreTestimonials = () => {
@@ -75,9 +61,9 @@ export const TestimonialsCustomerList = ({
     distributeTestimonials(visibleTestimonials);
 
   const renderTestimonial = (testimonial: any, index: any) => {
-    const [data] = testimonial.attributes.iconOwner.data;
+    const ownerData = testimonial.attributes.iconOwner?.data?.[0];
     const infoUser = testimonial.attributes.listTestimonials;
-    const iconOwner = new URL(data.attributes.url, baseURLImage).href;
+    const iconOwner = ownerData?.attributes?.url ?? '/images/testimonials/default-avatar.webp';
 
     return (
       <li key={index} className="bg-white h-fit p-6 rounded-lg shadow">

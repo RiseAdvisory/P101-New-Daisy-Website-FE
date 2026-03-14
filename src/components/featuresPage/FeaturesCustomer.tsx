@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { Separator } from '../ui/separator';
 import { cn } from '@/lib/utils';
 import imageLeaf from '../../assets/images/features/Group.png';
-import { baseURLImage } from '@/helpers/axiosConfig';
 
 export const FeaturesCustomerItem = ({
   item,
@@ -11,15 +10,11 @@ export const FeaturesCustomerItem = ({
   item: any;
   index?: number;
 }) => {
-  const image = new URL(item.picture.data?.[0].attributes.url, baseURLImage)
-    .href;
-  const desktopImage = image.includes('undefined') ? imageLeaf.src : image;
+  const imageUrl = item.picture?.data?.[0]?.attributes?.url;
+  const desktopImage = imageUrl || imageLeaf.src;
 
   const mobileImageUrl = item.mobilePicture?.data?.[0]?.attributes?.url;
-  const hasMobileImage = mobileImageUrl && !mobileImageUrl.includes('undefined');
-  const mobileImage = hasMobileImage
-    ? new URL(mobileImageUrl, baseURLImage).href
-    : null;
+  const mobileImage = mobileImageUrl || null;
 
   return (
     <>

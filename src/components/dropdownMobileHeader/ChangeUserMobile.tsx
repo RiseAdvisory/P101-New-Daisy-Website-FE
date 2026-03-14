@@ -10,9 +10,10 @@ import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
 import { usePathname, useRouter } from 'next/navigation';
 import { useChangePage } from '@/store/currentPage';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useMyContext } from '@/app/MyContext';
+import { headerData } from '@/lib/constants/shared/headerData';
+import { t } from '@/lib/constants/i18n';
 
 interface PropsDropDownHeader {
   state: string;
@@ -36,23 +37,14 @@ export const ChangeUserTypeMobile = ({
   const router = useRouter();
   const [active, setActive] = useState('');
   const [currentPage, setCurrentPage] = useState<any>();
-  const [dataList, setDataList] = useState<any>();
   const { lang } = useChangeLanguage();
   const { userChange, setUserChange } = useMyContext();
 
-  useEffect(() => {
-    (async () => {
-      const response = await axiosInstance.get(
-        `/options-toogles?locale=${lang}`,
-      );
-      const [data] = response?.data?.data;
-      // Filter out customer option
-      const filteredOptions = data?.attributes?.optionsToogle?.filter(
-        (option: any) => !option.path.includes('customer'),
-      );
-      setDataList(filteredOptions);
-    })();
-  }, [lang]);
+  const hData = t(headerData, lang);
+  // Filter out customer option
+  const dataList = hData.optionsToogle.filter(
+    (option) => !option.path.includes('customer'),
+  );
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

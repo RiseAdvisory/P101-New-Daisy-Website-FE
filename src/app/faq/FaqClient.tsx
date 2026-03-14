@@ -2,12 +2,12 @@
 import { QASection } from '@/components/QASection/QASection';
 import { FaqSchema } from '@/components/seo/FaqSchema';
 import { HeroPage } from '@/components/heroSection/HeroSection';
-import axiosInstance from '@/helpers/axiosConfig';
 import { Constants } from '@/helpers/oldApi';
 import { useChangePage } from '@/store/currentPage';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
-import { FaqPageAttributes } from '@/types/strapi';
+import { t } from '@/lib/constants/i18n';
+import { faqPageData } from '@/lib/constants/pages/faqPageData';
 
 interface FaqItem {
   question: string;
@@ -15,24 +15,14 @@ interface FaqItem {
 }
 
 export const FaqClient = () => {
-  const [dataFAQ, setDataFAQ] = useState<FaqPageAttributes | null>(null);
   const [faqItems, setFaqItems] = useState<FaqItem[]>([]);
 
   const { page } = useChangePage();
   const { lang } = useChangeLanguage();
 
-  useEffect(() => {
-    (async () => {
-      try {
-        const response = await axiosInstance(`/faqs?locale=${lang}`);
-        setDataFAQ(response?.data?.data[0]?.attributes);
-      } catch (error) {
-        console.error('Error fetching FAQ data:', error);
-      }
-    })();
-  }, [lang]);
+  const data = t(faqPageData, lang);
 
-  // Fetch FAQ items for schema
+  // Fetch FAQ items from Laravel backend API
   useEffect(() => {
     const currentPage = page.replace('/', '');
     const pageType = currentPage.charAt(0).toUpperCase() + currentPage.slice(1);
@@ -76,12 +66,12 @@ export const FaqClient = () => {
     <div className="bg-primary">
       <FaqSchema faqs={faqItems} />
       <HeroPage
-        title={dataFAQ?.listFaq?.[currentPage]?.title ?? ''}
-        description={dataFAQ?.listFaq?.[currentPage]?.subtitle ?? ''}
+        title={data.listFaq?.[currentPage]?.title ?? ''}
+        description={data.listFaq?.[currentPage]?.subtitle ?? ''}
         hiddenArrow={true}
         visibleDescriiton={false}
         heightScreen={false}
-        secondDescription={dataFAQ?.listFaq?.[currentPage]?.description}
+        secondDescription={data.listFaq?.[currentPage]?.description}
       />
       <QASection
         pageType={capitalizeFirstLetter(currentPage)}
@@ -91,7 +81,7 @@ export const FaqClient = () => {
         blockTop="!mt-0"
         stylesAccordionItem="data-[state=open]:bg-white data-[state=open]:text-primary"
         sectionFQ={true}
-        titleFraque={dataFAQ?.listFaq?.[currentPage]?.subtitle}
+        titleFraque={data.listFaq?.[currentPage]?.subtitle}
       />
     </div>
   );

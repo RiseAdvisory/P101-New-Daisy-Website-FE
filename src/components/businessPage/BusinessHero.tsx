@@ -6,7 +6,6 @@ import leaf from '../../assets/images/LeafBg.png';
 import stars from '../../assets/images/Stars.png';
 import phone from '../../assets/images/PHONE.png';
 import Image from 'next/image';
-import { baseURLImage } from '@/helpers/axiosConfig';
 
 export const BusinessHero = ({
   title,
@@ -21,10 +20,7 @@ export const BusinessHero = ({
   gataway: string;
   services: string;
 }) => {
-  const qrCode = new URL(
-    'https://motivated-belief-b4a000ad6e.media.strapiapp.com/QR_https_thedaisy_link_install_app_1_bebb385129.svg',
-    baseURLImage,
-  ).href;
+  const qrCode = '/images/pages/get-the-app/qr-code.png';
   return (
     <div className=" bg-primary pt-16 px-4 min-h-screen">
       <div className="md:hidden">

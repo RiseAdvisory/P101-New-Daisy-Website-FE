@@ -22,33 +22,6 @@ jest.mock('next/navigation', () => ({
   })),
 }));
 
-// Mock axios
-jest.mock('@/helpers/axiosConfig', () => ({
-  __esModule: true,
-  default: {
-    get: jest.fn(() =>
-      Promise.resolve({
-        data: {
-          data: [
-            {
-              attributes: {
-                headerNavList: [
-                  { title: 'Home', nav: '/' },
-                  { title: 'About', nav: '/about' },
-                  { title: 'Features', nav: '/features' },
-                  { title: 'Resources', nav: '/resources' },
-                  { title: 'Pricing', nav: '/pricing' },
-                ],
-                getTheApp: 'Get the app',
-              },
-            },
-          ],
-        },
-      }),
-    ),
-  },
-}));
-
 // Mock Zustand stores
 jest.mock('@/store/language', () => ({
   useChangeLanguage: () => ({

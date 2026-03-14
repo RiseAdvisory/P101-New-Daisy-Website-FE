@@ -2,52 +2,35 @@
 import { useMyContext } from '@/app/MyContext';
 import { TutorialSection } from '@/components/blogPage/tutorialPage/TutorialSection';
 import { HeroPage } from '@/components/heroSection/HeroSection';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
-import { ResourcePageAttributes } from '@/types/strapi';
-
-interface TutorialsData extends ResourcePageAttributes {
-  bredCrumbDesription?: string;
-  bredCrumbTitle?: string;
-  title?: string;
-  subtitle?: string;
-  description?: string;
-  titleScroll?: string;
-}
+import { tutorialsHeroData } from '@/lib/constants/resources/resourcesData';
+import { t } from '@/lib/constants/i18n';
 
 export const TutorialsClient = () => {
   const [scroll, setScroll] = useState(null);
-  const [dataTutorials, setDataTutorials] = useState<TutorialsData | null>(
-    null,
-  );
   const { lang } = useChangeLanguage();
   const { userChange: currentPage } = useMyContext();
 
+  const [dataTutorials, setDataTutorials] = useState<{
+    bredCrumbDesription?: string;
+    bredCrumbTitle?: string;
+    title: string;
+    subtitle: string;
+    description?: string;
+    titleScroll?: string;
+  } | null>(null);
+
   useEffect(() => {
-    let endpointExperienceDaisyLink = '';
+    let type = 'customer';
+    if (currentPage === '/customer') type = 'customer';
+    if (currentPage === '/business') type = 'business';
+    if (currentPage === '/professional') type = 'professional';
 
-    if (currentPage === '/customer') {
-      endpointExperienceDaisyLink = 'resource-tutorial-customers';
+    const heroData = tutorialsHeroData[type];
+    if (heroData) {
+      setDataTutorials(t(heroData, lang));
     }
-    if (currentPage === '/business') {
-      endpointExperienceDaisyLink = 'resource-tutorial-businesses';
-    }
-    if (currentPage === '/professional') {
-      endpointExperienceDaisyLink = 'resource-tutorial-independents';
-    }
-
-    (async () => {
-      try {
-        const response = await axiosInstance.get(
-          `/${endpointExperienceDaisyLink}?locale=${lang}`,
-        );
-        const [data] = response?.data?.data;
-        setDataTutorials(data?.attributes);
-      } catch (error) {
-        console.error('Error fetching tutorials:', error);
-      }
-    })();
   }, [lang, currentPage]);
 
   return (

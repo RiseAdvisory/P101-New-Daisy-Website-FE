@@ -1,60 +1,35 @@
 'use client';
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import { TermsConditionsSection } from '@/components/termsConditionsPage/TermsConditions';
-import axiosInstance from '@/helpers/axiosConfig';
+import { termsConditionsPageData } from '@/lib/constants/termsConditionsData';
+import { t } from '@/lib/constants/i18n';
 import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
-import { LegalPageAttributes } from '@/types/strapi';
-
-interface TermsConditionsData extends LegalPageAttributes {
-  bredCrumbDesription?: string;
-  bredCrumbTitle?: string;
-  heroTitle?: string;
-  heroSubtitle?: string;
-  heroSubcription?: string;
-  titleScroll?: string;
-}
+import { useState } from 'react';
 
 export const TermsConditionsClient = () => {
   const [scroll, setScroll] = useState(null);
-  const [dataConditions, setDataConditions] =
-    useState<TermsConditionsData | null>(null);
-
   const { lang } = useChangeLanguage();
-
-  useEffect(() => {
-    (async () => {
-      try {
-        const response = await axiosInstance.get(
-          `/terms-conditions?locale=${lang}`,
-        );
-        const [data] = response?.data?.data;
-        setDataConditions(data?.attributes);
-      } catch (error) {
-        console.error('Error fetching terms and conditions:', error);
-      }
-    })();
-  }, [lang]);
+  const data = t(termsConditionsPageData, lang);
 
   return (
     <>
       <HeroPage
         blockRef={scroll}
-        bredCrumbDesription={dataConditions?.bredCrumbDesription}
-        bredCrumbTitle={dataConditions?.bredCrumbTitle}
+        bredCrumbDesription={data.bredCrumbDesription}
+        bredCrumbTitle={data.bredCrumbTitle}
         isVisibleBreadCrumbs={true}
         hiddenArrow={false}
         visibleDescriiton={false}
-        title={dataConditions?.heroTitle ?? ''}
-        description={dataConditions?.heroSubtitle ?? ''}
+        title={data.heroTitle}
+        description={data.heroSubtitle}
         heightScreen={true}
         styleSection="pb-[100px] pt-6 px-[16px] h-screen"
-        titleScroll={dataConditions?.titleScroll}
-        secondDescription={dataConditions?.heroSubcription}
+        titleScroll={data.titleScroll}
+        secondDescription={data.heroSubcription}
       />
       <TermsConditionsSection
         setScroll={setScroll}
-        dataConditions={dataConditions}
+        dataConditions={data}
       />
     </>
   );

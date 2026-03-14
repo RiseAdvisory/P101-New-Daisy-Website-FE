@@ -3,51 +3,34 @@ import { TestimonialsCustomerList } from '@/components/blogPage/testimonialsPage
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import { OurPartnersSection } from '@/components/ourPartnters/OurPartnersSection';
 import Separator from '@/components/separator/Separator';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useEffect, useState } from 'react';
 import { useMyContext } from '@/app/MyContext';
-import { ResourcePageAttributes } from '@/types/strapi';
-
-interface TestimonialsData extends ResourcePageAttributes {
-  bredCrumbTitle?: string;
-  bredCrumbDesription?: string;
-  title?: string;
-  description?: string;
-  secondDescription?: string;
-  textMoreList?: string;
-}
+import { testimonialsHeroData } from '@/lib/constants/resources/resourcesData';
+import { t } from '@/lib/constants/i18n';
 
 export const TestimonialsClient = () => {
-  const [dataTestimonials, setDataTestimonials] =
-    useState<TestimonialsData | null>(null);
+  const [dataTestimonials, setDataTestimonials] = useState<{
+    bredCrumbTitle?: string;
+    bredCrumbDesription?: string;
+    title: string;
+    description: string;
+    secondDescription?: string;
+    textMoreList?: string;
+  } | null>(null);
   const { lang } = useChangeLanguage();
   const { userChange: currentPage } = useMyContext();
 
   useEffect(() => {
-    let endpointTutorialInfos = 'resources-customer-testimonials';
+    let type = 'customer';
+    if (currentPage === '/customer') type = 'customer';
+    if (currentPage === '/business') type = 'business';
+    if (currentPage === '/professional') type = 'professional';
 
-    if (currentPage === '/customer') {
-      endpointTutorialInfos = 'resources-testimonial-customers';
+    const heroData = testimonialsHeroData[type];
+    if (heroData) {
+      setDataTestimonials(t(heroData, lang));
     }
-    if (currentPage === '/business') {
-      endpointTutorialInfos = 'resources-testimonial-businesses';
-    }
-    if (currentPage === '/professional') {
-      endpointTutorialInfos = 'resources-testimonial-independents';
-    }
-
-    (async () => {
-      try {
-        const response = await axiosInstance(
-          `/${endpointTutorialInfos}?locale=${lang}`,
-        );
-        const [data] = response?.data?.data;
-        setDataTestimonials(data?.attributes);
-      } catch (error) {
-        console.error('Error fetching testimonials:', error);
-      }
-    })();
   }, [lang, currentPage]);
 
   return (

@@ -9,15 +9,10 @@ import { TwitterIcons } from '@/assets/icons/socialLinksIcons/TwitterIcons';
 import { LinkedInIcons } from '@/assets/icons/socialLinksIcons/LinkedInIcons';
 import { InstagramIcons } from '@/assets/icons/socialLinksIcons/InstagramIcons';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState, startTransition } from 'react';
-import axiosInstance from '@/helpers/axiosConfig';
+import { useEffect, useState } from 'react';
 import { useChangeLanguage } from '@/store/language';
-import {
-  getCached,
-  setCache,
-  getCacheKey,
-  CACHE_KEYS,
-} from '@/helpers/apiCache';
+import { footerData } from '@/lib/constants/shared/footerData';
+import { t } from '@/lib/constants/i18n';
 
 // Lazy load FreshChat widget - only load after user interaction
 const FreshChatLoader = dynamic(
@@ -25,24 +20,14 @@ const FreshChatLoader = dynamic(
   { ssr: false },
 );
 
-interface NavItem {
-  nav: string;
-  name: string;
-}
-
-interface SocialLinks {
-  facebook_url: string;
-  twitter_url: string;
-  linkedin_url: string;
-  instagram_url: string;
-}
-
 export const Footer = () => {
-  const [socialLinks, setSocialLinks] = useState<SocialLinks | null>(null);
-  const [navList, setNavList] = useState<NavItem[] | null>(null);
   const [shouldLoadChat, setShouldLoadChat] = useState(false);
   const path = usePathname();
   const { lang } = useChangeLanguage();
+
+  const data = t(footerData, lang);
+  const socialLinks = data.socialLinks;
+  const navList = data.navigationfooterList;
 
   const isVisibleAppBtn = path.includes('get-the-app');
 
@@ -55,7 +40,6 @@ export const Footer = () => {
       if (!shouldLoadChat) {
         setShouldLoadChat(true);
       }
-      // Clean up listeners and timeout
       if (listenersAdded) {
         window.removeEventListener('scroll', loadChat);
         window.removeEventListener('click', loadChat);
@@ -66,7 +50,6 @@ export const Footer = () => {
       }
     };
 
-    // Use requestIdleCallback if available, otherwise setTimeout
     const scheduleLoad = () => {
       const setupListeners = () => {
         listenersAdded = true;
@@ -79,8 +62,6 @@ export const Footer = () => {
           once: true,
           passive: true,
         });
-
-        // Auto-load after 2 seconds as fallback (ensures widget always appears)
         timeoutId = setTimeout(loadChat, 2000);
       };
 
@@ -105,53 +86,6 @@ export const Footer = () => {
     };
   }, [shouldLoadChat]);
 
-  useEffect(() => {
-    const fetchFooterData = async () => {
-      // Check cache first
-      const socialCacheKey = getCacheKey(CACHE_KEYS.FOOTER_SOCIAL, lang);
-      const navCacheKey = getCacheKey(CACHE_KEYS.FOOTER_NAV, lang);
-
-      const cachedSocial = getCached<SocialLinks>(socialCacheKey);
-      const cachedNav = getCached<NavItem[]>(navCacheKey);
-
-      // If all data is cached, use it immediately
-      if (cachedSocial && cachedNav) {
-        startTransition(() => {
-          setSocialLinks(cachedSocial);
-          setNavList(cachedNav);
-        });
-        return;
-      }
-
-      // Fetch data in parallel
-      const [responseSocial, responseNav] = await Promise.all([
-        cachedSocial
-          ? Promise.resolve(null)
-          : axiosInstance.get(`/social-links?locale=${lang}`),
-        cachedNav
-          ? Promise.resolve(null)
-          : axiosInstance.get(`/footers?locale=${lang}`),
-      ]);
-
-      // Process and cache social links
-      if (responseSocial) {
-        const socialData =
-          responseSocial?.data?.data?.[0]?.attributes?.socialLinks;
-        setCache(socialCacheKey, socialData);
-        startTransition(() => setSocialLinks(socialData));
-      }
-
-      // Process and cache navigation list
-      if (responseNav) {
-        const navData =
-          responseNav?.data?.data?.[0]?.attributes?.navigationfooterList;
-        setCache(navCacheKey, navData);
-        startTransition(() => setNavList(navData));
-      }
-    };
-
-    fetchFooterData();
-  }, [lang]);
   return (
     <footer className="w-full bg-primary px-4 py-[124px] md:py-14 flex flex-col justify-center items-center">
       {shouldLoadChat && <FreshChatLoader lang={lang} />}
@@ -160,16 +94,15 @@ export const Footer = () => {
       </Link>
       <nav className=" justify-center items-center self-center ">
         <ul className="flex flex-col items-center justify-center ltr:font-montserrat text-[#FFFFFF]/80 md:flex-row md:gap-x-8">
-          {navList &&
-            navList.map((item, index) => (
-              <Link
-                key={index}
-                href={item.nav}
-                className="pb-8 hover:text-white"
-              >
-                {item.name}
-              </Link>
-            ))}
+          {navList.map((item, index) => (
+            <Link
+              key={index}
+              href={item.nav}
+              className="pb-8 hover:text-white"
+            >
+              {item.name}
+            </Link>
+          ))}
         </ul>
       </nav>
       {!isVisibleAppBtn && (
@@ -178,30 +111,28 @@ export const Footer = () => {
           <AppStoreButton />
         </div>
       )}
-      {socialLinks && (
-        <ul className="flex mx-auto items-center justify-center mt-8 gap-x-6">
-          <li>
-            <Link href={socialLinks.facebook_url} target="blank">
-              <FacebookIcons />
-            </Link>
-          </li>
-          <li>
-            <Link href={socialLinks.twitter_url} target="blank">
-              <TwitterIcons />
-            </Link>
-          </li>
-          <li>
-            <Link href={socialLinks.linkedin_url} target="blank">
-              <LinkedInIcons />
-            </Link>
-          </li>
-          <li>
-            <Link href={socialLinks.instagram_url} target="blank">
-              <InstagramIcons />
-            </Link>
-          </li>
-        </ul>
-      )}
+      <ul className="flex mx-auto items-center justify-center mt-8 gap-x-6">
+        <li>
+          <Link href={socialLinks.facebook_url} target="blank">
+            <FacebookIcons />
+          </Link>
+        </li>
+        <li>
+          <Link href={socialLinks.twitter_url} target="blank">
+            <TwitterIcons />
+          </Link>
+        </li>
+        <li>
+          <Link href={socialLinks.linkedin_url} target="blank">
+            <LinkedInIcons />
+          </Link>
+        </li>
+        <li>
+          <Link href={socialLinks.instagram_url} target="blank">
+            <InstagramIcons />
+          </Link>
+        </li>
+      </ul>
     </footer>
   );
 };
