@@ -17,6 +17,8 @@ import { RelatedPages } from '@/components/comparePage/RelatedPages';
 import { FaqSchema } from '@/components/seo/FaqSchema';
 import { ComparisonBreadcrumbSchema } from '@/components/seo/ComparisonBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { ProductComparisonSchema } from '@/components/seo/ProductComparisonSchema';
+import { daisyData } from '@/lib/constants/competitors/competitorData';
 
 interface Props {
   slug: string;
@@ -103,6 +105,25 @@ function DaisyVsPage({
         url={`https://www.jointhedaisy.com/compare/${slug}`}
       />
       {competitor.faq.length > 0 && <FaqSchema faqs={competitor.faq} />}
+      <ProductComparisonSchema
+        products={[
+          {
+            name: 'Daisy',
+            description: 'AI-powered beauty and wellness platform with cashback, AI receptionist, and white-label branding',
+            url: 'https://www.jointhedaisy.com',
+            startingPrice: daisyData.pricing.startingPrice,
+            features: ['AI Receptionist', 'Cashback Loyalty', 'White-Label', 'Arabic + English', 'No Transaction Fees'],
+          },
+          {
+            name: competitor.name,
+            description: `${competitor.name} salon and beauty business management software`,
+            startingPrice: competitor.pricing.startingPrice,
+            rating: competitor.reviews.length > 0 ? competitor.reviews[0].rating : undefined,
+          },
+        ]}
+        pageTitle={`Daisy vs ${competitor.name} Comparison ${new Date().getFullYear()}`}
+        pageUrl={`https://www.jointhedaisy.com/compare/${slug}`}
+      />
 
       <ComparisonHero
         title={data.heroTitle}
@@ -119,26 +140,18 @@ function DaisyVsPage({
       </section>
 
       {/* Quick Comparison */}
-      <section className="mx-auto max-w-5xl px-4 py-8">
-        <h2 className="mb-6 text-2xl font-bold text-gray-900">
-          Quick Comparison
-        </h2>
-        <QuickComparisonTable
-          entries={quickEntries}
-          competitorName={competitor.name}
-        />
-      </section>
+      <QuickComparisonTable
+        entries={quickEntries}
+        competitorName={competitor.name}
+      />
 
       {/* Feature Comparison */}
+      <FeatureComparisonTable
+        competitorSlug={data.competitorSlug}
+        competitorName={competitor.name}
+      />
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-5xl px-4">
-          <h2 className="mb-6 text-2xl font-bold text-gray-900">
-            Feature-by-Feature Comparison
-          </h2>
-          <FeatureComparisonTable
-            competitorSlug={data.competitorSlug}
-            competitorName={competitor.name}
-          />
 
           {/* Feature Commentary */}
           <div className="mt-8 space-y-6">
@@ -157,27 +170,20 @@ function DaisyVsPage({
       </section>
 
       {/* Pricing */}
-      <section className="mx-auto max-w-5xl px-4 py-12">
-        <h2 className="mb-6 text-2xl font-bold text-gray-900">
-          Pricing Comparison
-        </h2>
-        <PricingComparisonCard
-          competitorSlug={data.competitorSlug}
-          competitorName={competitor.name}
-        />
-      </section>
+      <PricingComparisonCard
+        competitorSlug={data.competitorSlug}
+        competitorName={competitor.name}
+      />
 
       {/* Pros & Cons */}
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-5xl px-4">
-          <h2 className="mb-6 text-2xl font-bold text-gray-900">
-            Strengths & Weaknesses
-          </h2>
           <div className="grid gap-8 md:grid-cols-2">
             <ProsConsList
               pros={competitor.competitorStrengths}
               cons={competitor.competitorWeaknesses}
               title={competitor.name}
+              heading={`What Are ${competitor.name}'s Strengths and Limitations?`}
             />
             <ProsConsList
               pros={[
@@ -193,6 +199,7 @@ function DaisyVsPage({
                 'Premium positioning (not the cheapest option)',
               ]}
               title="Daisy"
+              heading="What Are Daisy's Strengths and Limitations?"
             />
           </div>
         </div>
@@ -228,7 +235,7 @@ function DaisyVsPage({
         <section className="bg-gray-50 py-12">
           <div className="mx-auto max-w-4xl px-4">
             <h2 className="mb-6 text-2xl font-bold text-gray-900">
-              Frequently Asked Questions
+              Frequently Asked Questions About {competitor.name}
             </h2>
             <div className="space-y-4">
               {competitor.faq.map((faq, i) => (
@@ -303,16 +310,12 @@ function CompetitorVsPage({
       />
 
       {/* Feature Comparison */}
-      <section className="mx-auto max-w-5xl px-4 py-12">
-        <h2 className="mb-6 text-2xl font-bold text-gray-900">
-          Feature Comparison
-        </h2>
-        <FeatureComparisonTable
-          competitorSlug={data.slugA}
-          competitorName={competitorA.name}
-          secondCompetitor={{ slug: data.slugB, name: competitorB.name }}
-        />
-      </section>
+      <FeatureComparisonTable
+        competitorSlug={data.slugA}
+        competitorName={competitorA.name}
+        secondCompetitor={{ slug: data.slugB, name: competitorB.name }}
+        heading={`How Do ${competitorA.name} and ${competitorB.name} Compare on Features?`}
+      />
 
       {/* Verdict */}
       <section className="bg-gray-50 py-12">

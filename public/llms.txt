@@ -1,0 +1,105 @@
+# Daisy (The Daisy)
+
+> Daisy is an AI-powered beauty and wellness platform that helps salons, spas, clinics, and beauty businesses grow through an AI receptionist, 360-degree customer acquisition (marketplace + cashback + marketing automation), and full white-label brand control. Available in English and Arabic with native GCC support.
+
+## Product Facts
+
+- **Website**: https://www.jointhedaisy.com
+- **Type**: SaaS platform for beauty and wellness businesses
+- **Languages**: English and Arabic (full RTL support)
+- **Markets**: GCC (UAE, Saudi Arabia, Kuwait, Bahrain, Oman, Qatar) and global
+- **Pricing**: From $50/mo (Basic), $150/mo (Growth), $250/mo (Business) -- flat pricing, no per-staff fees
+- **Free Trial**: 14 days
+- **Key Differentiators**: AI receptionist, cashback loyalty system, white-label branding, bilingual Arabic/English
+
+## Core Features (8 Categories)
+
+1. Online Booking & Scheduling -- AI-powered appointment management with 24/7 availability
+2. POS & Payments -- Integrated point of sale with no transaction fees
+3. Client Management -- CRM with customer profiles, history, and preferences
+4. Staff Management -- Employee scheduling, performance tracking, commissions
+5. Marketing & CRM -- Automated campaigns, cashback rewards, customer acquisition
+6. Inventory Management -- Stock tracking, low-stock alerts, supplier management
+7. Reporting & Analytics -- AI-driven business insights and revenue analytics
+8. AI Capabilities -- Voice receptionist, chatbot, smart scheduling, predictive analytics
+
+## User Types
+
+- **Business Owners**: Salon/spa/clinic owners seeking growth tools and business management
+- **Professionals**: Beauty and wellness service providers managing their careers
+- **Customers**: End users booking beauty services and earning cashback rewards
+
+## Pages
+
+### Main Pages
+- [Business Landing](https://www.jointhedaisy.com/business): Value proposition for salon and spa owners
+- [Professional Landing](https://www.jointhedaisy.com/professional): Career opportunities for beauty professionals
+- [Pricing](https://www.jointhedaisy.com/pricing): Transparent pricing plans and comparison
+- [About](https://www.jointhedaisy.com/about): Company mission, vision, and team
+- [Contact](https://www.jointhedaisy.com/contact): Get in touch with Daisy
+- [FAQ](https://www.jointhedaisy.com/faq): Frequently asked questions
+- [Get the App](https://www.jointhedaisy.com/get-the-app): Download Daisy on iOS and Android
+
+### Feature Pages
+- [Business Features](https://www.jointhedaisy.com/features/business): All features for salon and spa owners
+- [Professional Features](https://www.jointhedaisy.com/features/professional): Features for beauty professionals
+
+### Solution Pages (by Use Case)
+- [Salon Management Software](https://www.jointhedaisy.com/solutions/salon-management-software): AI-powered salon management
+- [Spa Booking System](https://www.jointhedaisy.com/solutions/spa-booking-system): Spa scheduling and management
+- [Beauty Salon Software](https://www.jointhedaisy.com/solutions/beauty-salon-software): Complete beauty business software
+- [Salon Appointment Scheduling](https://www.jointhedaisy.com/solutions/salon-appointment-scheduling): Smart scheduling tools
+- [Barbershop Software](https://www.jointhedaisy.com/solutions/barbershop-software): Barbershop management tools
+- [Nail Salon Software](https://www.jointhedaisy.com/solutions/nail-salon-software): Nail salon booking and management
+- [Med Spa Software](https://www.jointhedaisy.com/solutions/med-spa-software): Medical spa with compliance tools
+- [Salon POS System](https://www.jointhedaisy.com/solutions/salon-pos-system): Point of sale for salons
+- [Salon CRM Software](https://www.jointhedaisy.com/solutions/salon-crm-software): Customer relationship management
+- [Salon Marketing Software](https://www.jointhedaisy.com/solutions/salon-marketing-software): Marketing automation tools
+- [Salon Booking App](https://www.jointhedaisy.com/solutions/salon-booking-app): Mobile booking application
+- [Beauty Business Management](https://www.jointhedaisy.com/solutions/beauty-business-management): All-in-one business platform
+
+### Competitor Comparisons
+- [Daisy vs Fresha](https://www.jointhedaisy.com/compare/daisy-vs-fresha): Side-by-side comparison
+- [Daisy vs Booksy](https://www.jointhedaisy.com/compare/daisy-vs-booksy): Side-by-side comparison
+- [Daisy vs Vagaro](https://www.jointhedaisy.com/compare/daisy-vs-vagaro): Side-by-side comparison
+- [Daisy vs GlossGenius](https://www.jointhedaisy.com/compare/daisy-vs-glossgenius): Side-by-side comparison
+- [Daisy vs Mindbody](https://www.jointhedaisy.com/compare/daisy-vs-mindbody): Side-by-side comparison
+- [Daisy vs Boulevard](https://www.jointhedaisy.com/compare/daisy-vs-boulevard): Side-by-side comparison
+- [Daisy vs Glamera](https://www.jointhedaisy.com/compare/daisy-vs-glamera): Side-by-side comparison
+- [Daisy vs DINGG](https://www.jointhedaisy.com/compare/daisy-vs-dingg): Side-by-side comparison
+- [Daisy vs RepeatMD](https://www.jointhedaisy.com/compare/daisy-vs-repeatmd): Side-by-side comparison
+- [Daisy vs Planity](https://www.jointhedaisy.com/compare/daisy-vs-planity): Side-by-side comparison
+- [Daisy vs Mangomint](https://www.jointhedaisy.com/compare/daisy-vs-mangomint): Side-by-side comparison
+- [Daisy vs Square Appointments](https://www.jointhedaisy.com/compare/daisy-vs-square-appointments): Side-by-side comparison
+- [Daisy vs Phorest](https://www.jointhedaisy.com/compare/daisy-vs-phorest): Side-by-side comparison
+- [Daisy vs Acuity Scheduling](https://www.jointhedaisy.com/compare/daisy-vs-acuity-scheduling): Side-by-side comparison
+
+### Alternative Pages
+- [Fresha Alternative](https://www.jointhedaisy.com/alternative/fresha): Why switch from Fresha to Daisy
+- [Booksy Alternative](https://www.jointhedaisy.com/alternative/booksy): Why switch from Booksy to Daisy
+- [Vagaro Alternative](https://www.jointhedaisy.com/alternative/vagaro): Why switch from Vagaro to Daisy
+- [GlossGenius Alternative](https://www.jointhedaisy.com/alternative/glossgenius): Why switch from GlossGenius to Daisy
+- [Mindbody Alternative](https://www.jointhedaisy.com/alternative/mindbody): Why switch from Mindbody to Daisy
+- [Boulevard Alternative](https://www.jointhedaisy.com/alternative/boulevard): Why switch from Boulevard to Daisy
+
+### Glossary (Definitions)
+- [Salon Management Software](https://www.jointhedaisy.com/glossary/salon-management-software): What is salon management software?
+- [AI Receptionist for Salons](https://www.jointhedaisy.com/glossary/ai-receptionist-for-salons): What is an AI receptionist for salons?
+- [Cashback in Beauty Booking](https://www.jointhedaisy.com/glossary/cashback-beauty-booking): What is cashback in beauty booking?
+- [White-Label Salon Software](https://www.jointhedaisy.com/glossary/white-label-salon-software): What is white-label salon software?
+- [Salon Booking Software](https://www.jointhedaisy.com/glossary/salon-booking-software): What is salon booking software?
+
+### How-To Guides
+- [Reduce Salon No-Shows](https://www.jointhedaisy.com/guides/reduce-salon-no-shows): How to reduce no-shows by 30-40%
+- [Get More Salon Clients](https://www.jointhedaisy.com/guides/get-more-salon-clients): How to grow your salon client base
+- [Choose Best Salon Software](https://www.jointhedaisy.com/guides/choose-best-salon-software): How to evaluate and choose salon software
+- [Switch from Fresha](https://www.jointhedaisy.com/guides/switch-from-fresha): Step-by-step Fresha migration guide
+- [Set Up Online Booking](https://www.jointhedaisy.com/guides/set-up-online-booking-salon): How to set up online booking for your salon
+
+### Industry Data
+- [Salon Industry Statistics 2026](https://www.jointhedaisy.com/insights): Comprehensive beauty industry data and trends
+
+### Resources
+- [Blog](https://www.jointhedaisy.com/resources/blog-post): Beauty industry insights, tips, and platform updates
+- [Tutorials](https://www.jointhedaisy.com/resources/tutorials): How-to guides for using Daisy
+- [Testimonials](https://www.jointhedaisy.com/resources/testimonials): Customer success stories

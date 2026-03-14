@@ -9,6 +9,7 @@ interface VerdictSectionProps {
   daisyReasons: string[];
   competitorReasons: string[];
   competitorName: string;
+  heading?: string;
 }
 
 export const VerdictSection: FC<VerdictSectionProps> = ({
@@ -16,10 +17,15 @@ export const VerdictSection: FC<VerdictSectionProps> = ({
   daisyReasons,
   competitorReasons,
   competitorName,
+  heading,
 }) => {
   return (
     <section className="py-16 px-4 bg-[#F8F5F3]">
       <div className="mx-auto max-w-4xl">
+        <h2 className="mb-6 text-center text-3xl font-bold text-[#172524]">
+          {heading || `Should You Choose Daisy or ${competitorName}?`}
+        </h2>
+
         {/* Verdict Box */}
         <div className="mb-10 overflow-hidden rounded-2xl border border-primaryBtn/30 bg-primary/5 p-8 shadow-sm md:p-10">
           <div className="mb-4 flex items-center gap-2">

@@ -1,0 +1,59 @@
+import { Metadata } from 'next';
+import Link from 'next/link';
+import { glossaryEntries } from '@/lib/constants/glossary/glossaryData';
+
+export const metadata: Metadata = {
+  title: 'Beauty & Salon Software Glossary | Key Terms Explained | Daisy',
+  description:
+    'Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations of salon management, AI receptionist, cashback booking, and more.',
+  openGraph: {
+    title: 'Beauty & Salon Software Glossary | Key Terms Explained',
+    description:
+      'Understand key beauty industry and salon software terms. Expert definitions and comparisons.',
+    url: 'https://www.jointhedaisy.com/glossary',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://www.jointhedaisy.com/glossary',
+  },
+};
+
+export default function GlossaryIndex() {
+  return (
+    <main className="min-h-screen bg-white">
+      <section className="bg-[#F8F5F3] px-4 py-16 md:py-24">
+        <div className="mx-auto max-w-4xl text-center">
+          <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">
+            Salon Software Glossary
+          </h1>
+          <p className="text-lg text-[#455150]" data-geo-answer="true">
+            Key terms and definitions for beauty business technology, explained
+            in plain language.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-4 py-12">
+        <div className="grid gap-6 md:grid-cols-2">
+          {glossaryEntries.map((entry) => (
+            <Link
+              key={entry.slug}
+              href={`/glossary/${entry.slug}`}
+              className="group rounded-2xl border border-[#E8E9E9] bg-white p-6 shadow-sm transition-all hover:border-primary/20 hover:shadow-md"
+            >
+              <h2 className="mb-2 text-xl font-bold text-[#172524] group-hover:text-primary">
+                What is {entry.term}?
+              </h2>
+              <p className="text-sm leading-relaxed text-[#455150]">
+                <dfn className="not-italic font-medium text-[#172524]">
+                  {entry.term}
+                </dfn>{' '}
+                {entry.definition.slice(0, 150)}...
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}

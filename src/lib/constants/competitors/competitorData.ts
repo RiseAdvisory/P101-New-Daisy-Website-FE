@@ -21,6 +21,7 @@ export interface FeatureMatrix {
   reportingAndAnalytics: FeatureRating;
   marketplaceAndDiscovery: FeatureRating;
   aiCapabilities: FeatureRating;
+  brandingAndWhiteLabel: FeatureRating;
 }
 
 export interface PricingTier {
@@ -207,21 +208,66 @@ export const daisyData: {
     onlineBooking: 3,
     posAndPayments: 3,
     clientManagement: 3,
-    staffManagement: 3,
+    staffManagement: 1,
     marketingAndCrm: 3,
     inventoryManagement: 2,
     reportingAndAnalytics: 3,
-    marketplaceAndDiscovery: 3,
-    aiCapabilities: 3,
+    marketplaceAndDiscovery: 0,
+    aiCapabilities: 2,
+    brandingAndWhiteLabel: 3,
   },
   pricing: {
     hasFreePlan: false,
     freeTrialDays: 14,
-    startingPrice: 'Contact for pricing',
-    tiers: [],
+    startingPrice: 'From $50/mo',
+    startingPriceNumeric: 50,
+    tiers: [
+      {
+        name: 'Basic',
+        price: '$50/mo',
+        priceNumeric: 50,
+        billingCycle: 'monthly',
+        features: [
+          '5 users / calendar',
+          '1 workspace/location',
+          'Unlimited bookings',
+          'Sales management (POS)',
+          'Client management',
+          'Mobile & desktop app',
+        ],
+      },
+      {
+        name: 'Growth',
+        price: '$150/mo',
+        priceNumeric: 150,
+        billingCycle: 'monthly',
+        features: [
+          '10 users / calendar',
+          '2 workspaces/locations',
+          'Online payments',
+          'Automated reminders',
+          'Marketplace visibility',
+          'Priority support',
+        ],
+      },
+      {
+        name: 'Business',
+        price: '$250/mo',
+        priceNumeric: 250,
+        billingCycle: 'monthly',
+        features: [
+          '15 users / calendar',
+          '4 workspaces/locations',
+          'Advanced analytics',
+          'Free data migration',
+          'Assisted onboarding',
+          'All features included',
+        ],
+      },
+    ],
     hiddenCosts: [],
     pricingModel: 'flat',
-    lastVerified: '2026-03-13',
+    lastVerified: '2026-03-14',
   },
   gccPresence: {
     hasArabicUI: true,

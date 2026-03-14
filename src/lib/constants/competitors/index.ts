@@ -121,11 +121,11 @@ export function compareFeatures(slug: string): {
     { key: 'posAndPayments', label: 'POS & Payments' },
     { key: 'clientManagement', label: 'Client Management' },
     { key: 'staffManagement', label: 'Staff Management' },
-    { key: 'marketingAndCrm', label: 'Marketing & CRM' },
+    { key: 'marketingAndCrm', label: 'Marketing & Promotion' },
     { key: 'inventoryManagement', label: 'Inventory Management' },
     { key: 'reportingAndAnalytics', label: 'Reporting & Analytics' },
-    { key: 'marketplaceAndDiscovery', label: 'Marketplace & Discovery' },
     { key: 'aiCapabilities', label: 'AI Capabilities' },
+    { key: 'brandingAndWhiteLabel', label: 'Branding & White-Label' },
   ];
 
   return categories.map(({ key, label }) => ({

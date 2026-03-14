@@ -9,11 +9,13 @@ import { Check, AlertTriangle } from 'lucide-react';
 interface PricingComparisonCardProps {
   competitorSlug: string;
   competitorName: string;
+  heading?: string;
 }
 
 export const PricingComparisonCard: FC<PricingComparisonCardProps> = ({
   competitorSlug,
   competitorName,
+  heading,
 }) => {
   const competitor = getCompetitor(competitorSlug);
 
@@ -23,9 +25,9 @@ export const PricingComparisonCard: FC<PricingComparisonCardProps> = ({
     <section className="py-16 px-4">
       <div className="mx-auto max-w-5xl">
         <h2 className="mb-2 text-center text-3xl font-bold text-[#172524]">
-          Pricing Comparison
+          {heading || `How Much Does Daisy Cost vs ${competitorName}?`}
         </h2>
-        <p className="mb-10 text-center text-[#455150]">
+        <p className="mb-10 text-center text-[#455150]" data-geo-answer="true">
           Transparent pricing vs hidden costs
         </p>
 
@@ -55,17 +57,38 @@ export const PricingComparisonCard: FC<PricingComparisonCardProps> = ({
                 model
               </p>
 
+              {/* Daisy Pricing Tiers */}
+              {daisyData.pricing.tiers.length > 0 && (
+                <div className="mt-6 space-y-3">
+                  <p className="text-sm font-semibold text-[#455150] uppercase tracking-wider">
+                    Plans
+                  </p>
+                  {daisyData.pricing.tiers.map((tier) => (
+                    <div
+                      key={tier.name}
+                      className="flex items-center justify-between rounded-lg bg-primary/5 px-3 py-2"
+                    >
+                      <span className="text-sm font-medium text-[#455150]">
+                        {tier.name}
+                      </span>
+                      <span className="text-sm font-semibold text-primary">
+                        {tier.price}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
               <div className="mt-6 space-y-3">
                 <p className="text-sm font-semibold text-[#455150] uppercase tracking-wider">
-                  What you get
+                  Included in all plans
                 </p>
                 {[
                   'AI receptionist included',
                   'No transaction fees',
                   'No marketplace commission',
-                  'All 8 feature categories',
                   'Arabic & English support',
-                  'Transparent pricing',
+                  'Transparent flat pricing',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2">
                     <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-primaryBtn" />

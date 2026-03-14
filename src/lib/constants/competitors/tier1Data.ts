@@ -31,17 +31,19 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       reportingAndAnalytics: 2,
       marketplaceAndDiscovery: 3,
       aiCapabilities: 1,
+      brandingAndWhiteLabel: 0,
     },
 
     pricing: {
-      hasFreePlan: true,
-      startingPrice: 'Free (transaction fees apply)',
-      startingPriceNumeric: 0,
+      hasFreePlan: false,
+      freeTrialDays: 14,
+      startingPrice: 'From $9.95/mo + fees',
+      startingPriceNumeric: 9.95,
       tiers: [
         {
-          name: 'Free',
-          price: 'Free',
-          priceNumeric: 0,
+          name: 'Starter',
+          price: '$9.95/mo',
+          priceNumeric: 9.95,
           features: [
             'Appointment scheduling',
             'Calendar management',
@@ -50,27 +52,39 @@ export const tier1Competitors: Record<string, CompetitorData> = {
           ],
         },
         {
-          name: 'Plus Features',
-          price: 'Pay per use',
+          name: 'Standard',
+          price: '$25/mo',
+          priceNumeric: 25,
           features: [
-            'Online payments (2.19% + $0.20)',
-            'Marketplace listing (20% new client commission)',
-            'Blast campaigns ($0.02/msg)',
+            'All Starter features',
+            'Online payments',
+            'Email marketing',
             'Google integration',
+          ],
+        },
+        {
+          name: 'Premium',
+          price: 'Custom pricing',
+          features: [
+            'All Standard features',
+            'Marketplace listing',
+            'Advanced marketing',
+            'Priority support',
           ],
         },
       ],
       transactionFees: '2.19% + $0.20 per transaction',
       commissionOnMarketplace: '20% on new clients from marketplace',
       hiddenCosts: [
-        'Transaction fees on all card payments',
+        'Transaction fees on all card payments on top of subscription',
         'Marketplace commission on new clients',
         'SMS/email campaign costs per message',
         'No-show protection fees',
+        'Previously free features now require paid plans',
       ],
-      pricingModel: 'usage-based',
+      pricingModel: 'hybrid',
       pricingPageUrl: 'https://www.fresha.com/for-business/pricing',
-      lastVerified: '2026-03-13',
+      lastVerified: '2026-03-14',
     },
 
     reviews: [
@@ -101,7 +115,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     },
 
     targetMarket:
-      'Solo practitioners and small-to-medium beauty/wellness businesses globally. Attracts price-sensitive businesses with free base plan.',
+      'Solo practitioners and small-to-medium beauty/wellness businesses globally. Attracts businesses with low starting prices and marketplace exposure.',
 
     contentAndSeo: {
       estimatedMonthlyTraffic: '5M+',
@@ -129,12 +143,12 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     messaging: {
       tagline: 'The super app for beauty and wellness',
       primaryValueProp:
-        'Free business management software with the world\'s largest beauty marketplace built in',
+        'Business management software with the world\'s largest beauty marketplace built in',
       targetAudience:
-        'Independent beauty professionals and small salon owners who want free software with marketplace exposure',
-      toneAndVoice: 'Simple, direct, accessible — emphasizes "free" and "easy"',
+        'Independent beauty professionals and small salon owners who want affordable software with marketplace exposure',
+      toneAndVoice: 'Simple, direct, accessible — emphasizes ease of use and marketplace reach',
       keyMessages: [
-        'Free forever — no monthly fees',
+        'Affordable plans starting at $9.95/mo',
         '450M+ appointments booked',
         '100K+ partner venues',
         'All-in-one platform',
@@ -143,8 +157,8 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     },
 
     conversionStrategy: {
-      primaryCta: 'Sign up free',
-      freeTrialOffered: false,
+      primaryCta: 'Start free trial',
+      freeTrialOffered: true,
       demoOffered: false,
       socialProof: [
         '100,000+ partner venues',
@@ -153,10 +167,11 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Featured in Forbes, TechCrunch',
       ],
       conversionTactics: [
-        'Free forever positioning',
+        'Low starting price positioning',
         'Marketplace discovery as lead magnet',
         'Self-serve signup',
         'Mobile-first onboarding',
+        'Free trial to reduce friction',
       ],
     },
 
@@ -196,7 +211,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       '360° customer acquisition (marketplace + cashback + AI marketing) vs marketplace-only discovery',
       'Native Arabic UI with equal Arabic/English priority vs English-only platform',
       'Full brand control and white-labeling vs Fresha-branded experience',
-      'Predictable flat pricing vs hidden transaction fees and commissions',
+      'Predictable flat pricing vs subscription fees plus transaction fees and commissions',
       'AI-powered analytics and recommendations vs basic static reports',
       'Complete GCC compliance (VAT, local payment methods) vs limited UAE presence',
     ],
@@ -213,7 +228,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     competitorStrengths: [
       'Largest beauty marketplace (25M+ consumers)',
-      'Free base platform attracts price-sensitive businesses',
+      'Low starting price ($9.95/mo) for basic features',
       'Very high app store ratings and consumer adoption',
       'Global presence with strong brand recognition',
       'Simple, intuitive user interface',
@@ -222,7 +237,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: [
       'No AI capabilities (receptionist, chatbot, or smart scheduling)',
       'No Arabic UI — English only',
-      'Hidden costs: transaction fees + marketplace commissions erode "free" value',
+      'Subscription fees plus transaction fees and marketplace commissions add up quickly',
       'Basic marketing tools (no AI, no CRM automation)',
       'No white-labeling — all customer-facing pages are Fresha-branded',
       'Limited GCC presence — no local compliance, payment methods, or support',
@@ -231,9 +246,9 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     faq: [
       {
-        question: 'Is Fresha really free?',
+        question: 'How much does Fresha cost?',
         answer:
-          'Fresha\'s base calendar and appointment management is free, but they charge transaction fees (2.19% + $0.20) on all card payments, 20% commission on new marketplace clients, and per-message fees for marketing campaigns. A salon processing $10,000/month in card payments would pay $239 in transaction fees alone, plus marketplace commissions.',
+          'Fresha is no longer free. Plans start at $9.95/month for basic features, with higher tiers for advanced capabilities. On top of subscription fees, they charge transaction fees (2.19% + $0.20) on all card payments, 20% commission on new marketplace clients, and per-message fees for marketing campaigns. A salon processing $10,000/month in card payments would pay $239 in transaction fees alone, plus the monthly subscription and marketplace commissions.',
       },
       {
         question: 'How does Daisy compare to Fresha for salon management?',
@@ -250,11 +265,41 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         answer:
           'Fresha has some presence in the UAE but doesn\'t offer Arabic language support, local payment methods, or GCC-specific compliance features. Daisy is built for the GCC market with native Arabic UI, local payment integration, and full VAT compliance across all six GCC countries.',
       },
+      {
+        question: 'Is Fresha really free to use?',
+        answer:
+          'No — Fresha dropped its free plan. It now charges monthly subscriptions starting at $9.95/mo, plus 2.19% + $0.20 per card transaction, 20% commission on new marketplace clients, and per-message fees for marketing. The "free" branding is outdated. Daisy offers transparent all-inclusive pricing with no hidden commissions or per-message charges.',
+      },
+      {
+        question: 'What are the hidden costs of using Fresha?',
+        answer:
+          'Beyond subscription fees, Fresha charges transaction fees on every card payment (2.19% + $0.20), a 20% commission on new clients booked through their marketplace, fees for SMS/email marketing campaigns, and charges for no-show protection. These stacked costs can exceed the subscription itself. Daisy bundles marketing, AI, and payment processing into straightforward plans with no surprise fees.',
+      },
+      {
+        question: 'How hard is it to migrate my data from Fresha?',
+        answer:
+          'Fresha allows you to export client data and appointment history, though the process isn\'t always seamless. Daisy provides dedicated migration support — our team handles the data transfer of your client database, service menu, staff schedules, and booking history. Most businesses complete the switch within a week with zero downtime.',
+      },
+      {
+        question: 'Does Fresha have AI features like Daisy?',
+        answer:
+          'Fresha announced an AI receptionist for 2026 but it\'s not yet available. Currently, Fresha has no AI-powered features for marketing, scheduling optimization, or customer engagement. Daisy\'s AI receptionist is live today — handling bookings, payments, and customer service 24/7 in both Arabic and English.',
+      },
+      {
+        question: 'How good is the Fresha mobile app?',
+        answer:
+          'Fresha\'s consumer app is well-designed for discovery and booking, but the business app has mixed reviews — salon owners report issues with notification reliability, limited offline functionality, and a cluttered interface as features have been added. Daisy\'s business app is purpose-built for salon operations with an intuitive interface and reliable push notifications.',
+      },
+      {
+        question: 'Can I reach Fresha customer support quickly?',
+        answer:
+          'Fresha offers email and in-app chat support, but many users report slow response times — especially since the transition away from the free model increased their support volume. There\'s no phone support. Daisy provides dedicated account management, live chat, and phone support with priority response for all plan levels.',
+      },
     ],
 
     lastResearched: '2026-03-13',
     notes:
-      'Recently shifted from purely free model to usage-based fees, causing partner backlash. AI receptionist announced for 2026 but not yet available. Key vulnerability: no Arabic support and growing hidden costs.',
+      'No longer free — now charges monthly subscriptions on top of transaction fees, causing partner backlash. AI receptionist announced for 2026 but not yet available. Key vulnerability: no Arabic support and compounding costs (subscription + transaction fees + commissions).',
   },
 
   // ---------------------------------------------------------------------------
@@ -282,6 +327,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       reportingAndAnalytics: 2,
       marketplaceAndDiscovery: 2,
       aiCapabilities: 2,
+      brandingAndWhiteLabel: 0,
     },
 
     pricing: {
@@ -509,6 +555,36 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         answer:
           'Yes — Booksy has no long-term contracts. Daisy provides migration support to transfer your client data, service menu, and booking history. The switch typically takes less than a week.',
       },
+      {
+        question: 'How much does Booksy cost per month?',
+        answer:
+          'Booksy Biz starts at $29.99/month per service provider, which adds up fast for teams. A 5-person salon pays roughly $150/month before add-ons. Booksy Biz+ with advanced marketing, reports, and multi-location support is priced higher. Daisy offers team-friendly pricing that doesn\'t multiply per staff member, keeping costs predictable as you grow.',
+      },
+      {
+        question: 'Does Booksy support Arabic or work well in the Gulf region?',
+        answer:
+          'Booksy has zero presence in the GCC — no Arabic language support, no local payment integration, and no regional compliance features. If you operate in the UAE, Saudi Arabia, Kuwait, or any Gulf country, Daisy is purpose-built with native Arabic UI, local payment methods, and full VAT compliance across all six GCC markets.',
+      },
+      {
+        question: 'How does Booksy\'s AI compare to Daisy\'s AI receptionist?',
+        answer:
+          'Booksy\'s Digital Doorman answers phone calls and redirects callers to online booking — it\'s essentially a call router. It can\'t process payments, answer detailed service questions, or manage complex booking requests. Daisy\'s AI receptionist handles the full customer journey: answering questions, booking appointments, processing payments, and following up — all 24/7 in both Arabic and English.',
+      },
+      {
+        question: 'Is the Booksy app good for salon owners?',
+        answer:
+          'Booksy\'s consumer app is polished and well-reviewed for discovering and booking services. The business app is functional but some owners report a learning curve with navigation, limited customization options, and occasional sync issues between the consumer and business sides. Daisy offers a unified experience where the business and customer sides are seamlessly integrated.',
+      },
+      {
+        question: 'Can Booksy handle multiple salon locations?',
+        answer:
+          'Booksy offers multi-location management in its higher-tier Booksy Biz+ plan, but it was originally designed for single-provider businesses (especially barbers). Multi-location features like cross-branch reporting and centralized staff management are less mature than dedicated enterprise platforms. Daisy supports multi-branch operations natively with centralized analytics, staff scheduling across locations, and unified client records.',
+      },
+      {
+        question: 'Does Booksy integrate with other business tools I use?',
+        answer:
+          'Booksy offers limited integrations — primarily Google Calendar sync, basic social media booking links, and their own payment processing. There\'s no open API for custom integrations. Daisy provides broader integration capabilities including Google Calendar sync, social media, payment gateways, and API access for connecting with your existing business tools.',
+      },
     ],
 
     lastResearched: '2026-03-13',
@@ -541,6 +617,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       reportingAndAnalytics: 2,
       marketplaceAndDiscovery: 2,
       aiCapabilities: 1,
+      brandingAndWhiteLabel: 0,
     },
 
     pricing: {
@@ -768,6 +845,36 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         answer:
           'Yes — Vagaro has no contracts and offers data export. Daisy provides migration support to transfer client data, appointment history, and service menus. Most businesses transition within a week.',
       },
+      {
+        question: 'What are the hidden fees with Vagaro?',
+        answer:
+          'While Vagaro\'s $30/month base price looks attractive, costs stack up. Each additional staff calendar is $10/month, payment processing is 2.75% per transaction, text marketing costs extra per message, the website builder is an add-on, custom forms are paid, and branded app listings have additional fees. A 5-person salon with marketing features could easily pay $100+/month before transaction fees. Daisy includes AI marketing and team features in the base plan.',
+      },
+      {
+        question: 'Does Vagaro work for salons in Dubai or Saudi Arabia?',
+        answer:
+          'Vagaro is US-focused with no Arabic language support, no GCC payment methods, and no regional compliance features. It doesn\'t support VAT calculations for Gulf countries. Daisy is built for the GCC market with native Arabic/English UI, local payment integration, and full VAT compliance across UAE, KSA, Kuwait, Bahrain, Oman, and Qatar.',
+      },
+      {
+        question: 'Does Vagaro have real AI features?',
+        answer:
+          'Vagaro offers a basic AI chatbot that can answer questions about your business, but it cannot book appointments, process payments, or handle complex customer requests autonomously. There\'s no AI-powered marketing, scheduling optimization, or predictive analytics. Daisy\'s AI receptionist handles the full booking flow including payments, plus AI-driven marketing campaigns and smart scheduling — all included in the base plan.',
+      },
+      {
+        question: 'How good is the Vagaro mobile app for business owners?',
+        answer:
+          'Vagaro\'s business mobile app covers basic scheduling and client management, but some users report it feels cluttered with too many features crammed into the interface. Push notification reliability has also been a common complaint. The consumer marketplace app is separate. Daisy provides a clean, purpose-built business app with reliable notifications and an integrated customer experience.',
+      },
+      {
+        question: 'Can Vagaro scale for multiple salon locations?',
+        answer:
+          'Vagaro supports multi-location management, but reporting across branches is basic and centralized inventory tracking requires manual setup. After acquiring Schedulicity, some integration gaps remain. For multi-location businesses, Daisy offers centralized analytics dashboards, cross-branch staff scheduling, unified client records, and streamlined inventory management across all locations.',
+      },
+      {
+        question: 'How is Vagaro\'s customer support?',
+        answer:
+          'Vagaro offers phone, email, and live chat support during US business hours (Mon-Fri). Users generally rate support as responsive but note that complex issues can take multiple interactions to resolve. There\'s no 24/7 support. Daisy provides dedicated account management, live chat, and priority support across all plan levels with coverage aligned to GCC and global business hours.',
+      },
     ],
 
     lastResearched: '2026-03-13',
@@ -800,6 +907,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       reportingAndAnalytics: 3,
       marketplaceAndDiscovery: 3,
       aiCapabilities: 1,
+      brandingAndWhiteLabel: 0,
     },
 
     pricing: {
@@ -1061,6 +1169,36 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         answer:
           'Mindbody typically requires annual contracts with early termination fees. Check your specific agreement for terms. When you\'re ready to switch, Daisy offers no-contract plans and migration support to transfer your data seamlessly.',
       },
+      {
+        question: 'Why is Mindbody so expensive compared to other salon software?',
+        answer:
+          'Mindbody\'s pricing reflects its enterprise-first model under Vista Equity Partners ownership. Plans range from $139/mo to $699/mo, but the real costs stack up: the AI front desk (Messenger[ai]) is ~$199/mo extra, payment processing adds per-transaction fees, and annual contracts lock you in. A mid-size salon on Accelerate with AI could pay $478+/mo. Daisy includes AI features in the base plan at a fraction of that cost.',
+      },
+      {
+        question: 'Does Mindbody support Arabic or work well in the Gulf?',
+        answer:
+          'Mindbody\'s platform is primarily English-focused with limited localization. It doesn\'t offer Arabic language UI, GCC-specific payment methods, or regional VAT compliance. For salons and spas operating in the Gulf, Daisy provides native Arabic/English support, local payment integration, and full compliance across all six GCC countries.',
+      },
+      {
+        question: 'Does Mindbody have real AI or is it just marketing?',
+        answer:
+          'Mindbody\'s AI capabilities come through its acquisition of Messenger[ai], which provides an AI front desk for call answering and basic booking. However, it\'s a paid add-on (~$199/mo) and is not deeply integrated into the platform. Mindbody has no AI-powered marketing, scheduling optimization, or predictive analytics in its core product. Daisy includes a full AI suite — receptionist, marketing, and smart scheduling — in the base plan.',
+      },
+      {
+        question: 'How hard is it to move my data out of Mindbody?',
+        answer:
+          'Migrating from Mindbody can be challenging. While they allow data exports, the process is cumbersome and some users report incomplete exports, especially for historical reporting data and client communication records. Annual contracts add timing constraints. Daisy provides dedicated enterprise migration support with parallel run periods to ensure a smooth transition with no data loss.',
+      },
+      {
+        question: 'Is the Mindbody app reliable for salon management?',
+        answer:
+          'Mindbody\'s consumer app (for finding and booking) is well-known with millions of downloads. However, the business management app has seen declining review scores — salon owners report a dated interface, slow performance, and features that feel more geared toward fitness studios than beauty businesses. Daisy\'s app is purpose-built for beauty and wellness with a modern interface and fast performance.',
+      },
+      {
+        question: 'Can Mindbody handle multi-location salon chains?',
+        answer:
+          'Yes — multi-location management is one of Mindbody\'s strengths, especially at higher pricing tiers. However, this comes at significant cost ($419-$699/mo per location), and some chains report that cross-location reporting requires manual consolidation. Daisy supports multi-branch operations with centralized dashboards, unified client records, and cross-location analytics at a more accessible price point.',
+      },
     ],
 
     lastResearched: '2026-03-13',
@@ -1093,6 +1231,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       reportingAndAnalytics: 3,
       marketplaceAndDiscovery: 1,
       aiCapabilities: 3,
+      brandingAndWhiteLabel: 1,
     },
 
     pricing: {
@@ -1327,6 +1466,36 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         question: 'Can I switch from Zenoti to Daisy?',
         answer:
           'Zenoti typically has annual contracts — check your agreement for terms. When your contract allows, Daisy provides dedicated migration support for enterprise clients, including data transfer, parallel run periods, and staff training. The transition is typically faster than Zenoti\'s initial implementation.',
+      },
+      {
+        question: 'How much does Zenoti really cost?',
+        answer:
+          'Zenoti uses opaque, custom pricing starting around $225+/month per location, but costs increase significantly with add-ons like advanced AI agents, marketing automation, and enterprise features. Annual contracts are standard, and implementation fees can be substantial. Daisy offers transparent, published pricing with AI features included in the base plan and no contracts.',
+      },
+      {
+        question: 'Is Zenoti too complex for small or mid-size salons?',
+        answer:
+          'Zenoti is built for enterprise and multi-location businesses, and its complexity reflects that. Small and mid-size salons often find the implementation lengthy (weeks to months), the learning curve steep, and the feature set overwhelming. Daisy is designed to be powerful yet accessible — AI-powered features without the enterprise complexity, suitable for single-location salons to growing chains.',
+      },
+      {
+        question: 'Why doesn\'t Zenoti have Arabic support despite having a Dubai office?',
+        answer:
+          'Despite having a physical presence in Dubai and serving clients across all six GCC countries, Zenoti\'s platform is English-only with no Arabic user interface. This means Arabic-speaking staff and customers must navigate an English-only system. Daisy provides native Arabic with equal Arabic/English priority, purpose-built for GCC businesses and their customers.',
+      },
+      {
+        question: 'How good is Zenoti\'s customer support?',
+        answer:
+          'Zenoti offers tiered support — basic support is included, but priority and dedicated support require higher-tier plans. Some users report slow response times on standard plans and that support tickets can take days to resolve. Given the platform\'s complexity, this can be frustrating during critical issues. Daisy provides responsive support across all plan levels with dedicated account management.',
+      },
+      {
+        question: 'Does Zenoti have a consumer marketplace for customer acquisition?',
+        answer:
+          'No — Zenoti is purely a B2B management platform with no consumer-facing marketplace or discovery features. Businesses must drive their own traffic. Daisy combines a consumer marketplace with cashback rewards and AI-powered marketing to actively acquire new customers for your business — a 360-degree acquisition engine that Zenoti doesn\'t offer.',
+      },
+      {
+        question: 'How does Zenoti\'s mobile app compare to Daisy\'s?',
+        answer:
+          'Zenoti offers both staff and customer-facing mobile apps with solid functionality for enterprise operations. However, the apps are complex and mirror the desktop platform\'s enterprise orientation — some users find them less intuitive for day-to-day salon tasks. Daisy\'s mobile app is designed for simplicity and speed, with AI assistance built in to handle routine tasks automatically.',
       },
     ],
 

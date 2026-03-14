@@ -20,6 +20,7 @@ interface Feature {
 
 interface IndustryFeaturesProps {
   features: Feature[];
+  heading?: string;
 }
 
 const iconMap: Record<string, LucideIcon> = {
@@ -33,7 +34,7 @@ const iconMap: Record<string, LucideIcon> = {
   sparkles: Sparkles,
 };
 
-export function IndustryFeatures({ features }: IndustryFeaturesProps) {
+export function IndustryFeatures({ features, heading }: IndustryFeaturesProps) {
   if (!features || features.length === 0) {
     return null;
   }
@@ -42,7 +43,7 @@ export function IndustryFeatures({ features }: IndustryFeaturesProps) {
     <section className="w-full bg-white px-4 py-16 md:py-24">
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-4 text-center text-[28px] font-semibold leading-9 text-gray-900 md:text-[36px] md:leading-[44px]">
-          How Daisy Solves It
+          {heading || 'How Does Daisy Solve These Challenges?'}
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-base text-gray-600">
           Purpose-built tools designed to help your business grow, not just

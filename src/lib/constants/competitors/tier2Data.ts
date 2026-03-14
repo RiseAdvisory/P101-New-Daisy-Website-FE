@@ -31,6 +31,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       reportingAndAnalytics: 1,
       marketplaceAndDiscovery: 2,
       aiCapabilities: 0,
+      brandingAndWhiteLabel: 0,
     },
 
     pricing: {
@@ -159,6 +160,41 @@ export const tier2Competitors: Record<string, CompetitorData> = {
         answer:
           'Glamera is expanding to UAE and Egypt but is primarily Saudi-focused. Daisy serves all 6 GCC countries with equal Arabic/English support, local payment methods, and compliance — plus global scalability.',
       },
+      {
+        question: 'What are the hidden costs when using Glamera?',
+        answer:
+          'Glamera charges marketplace commissions on bookings made through its consumer platform, and premium placement fees for better visibility. The free tier is heavily limited, pushing businesses toward paid plans. Daisy offers transparent pricing with no per-booking commissions and includes all core features in its plans.',
+      },
+      {
+        question: 'How hard is it to switch from Glamera to Daisy?',
+        answer:
+          'Switching from Glamera is straightforward since its feature set is basic — there is less data complexity to migrate. Daisy provides onboarding support and data migration assistance to help you transfer client records, booking history, and staff details without disruption to your operations.',
+      },
+      {
+        question: 'Does Glamera have AI features like an AI receptionist?',
+        answer:
+          'No. Glamera has zero AI capabilities — only basic automated booking confirmations. Daisy provides a full AI ecosystem including a 24/7 AI receptionist that handles calls, bookings, and payments, plus AI-powered marketing, smart scheduling, and analytics.',
+      },
+      {
+        question: 'How good is Glamera\'s mobile app compared to Daisy?',
+        answer:
+          'Glamera has decent app ratings (4.5 on App Store, 4.3 on Google Play) and functions well as a consumer marketplace for finding salons. However, its business management features are basic. Daisy\'s app provides a complete business management suite with AI capabilities, POS, inventory, and advanced reporting in addition to marketplace features.',
+      },
+      {
+        question: 'Can Glamera support a multi-location salon business?',
+        answer:
+          'Glamera was designed primarily for individual salon listings on its marketplace and has limited multi-location management features. Daisy is built to scale with multi-branch management, centralized reporting, staff scheduling across locations, and unified inventory — making it the better choice for growing businesses.',
+      },
+      {
+        question: 'What kind of customer support does Glamera provide?',
+        answer:
+          'Glamera offers Arabic-speaking customer support focused on the Saudi market. However, as a smaller team (50-100 employees) with limited funding ($2.37M), their support capacity may be constrained. Daisy provides dedicated onboarding, multi-channel support in Arabic and English, and a larger support infrastructure.',
+      },
+      {
+        question: 'Can I keep my own brand identity on Glamera or is everything Glamera-branded?',
+        answer:
+          'Glamera is marketplace-first, meaning your business appears under the Glamera brand. There is no white-labeling or custom branding option. Daisy offers full white-label brand control, allowing you to maintain your own brand identity across booking pages, apps, and customer communications.',
+      },
     ],
 
     lastResearched: '2026-03-13',
@@ -191,6 +227,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       reportingAndAnalytics: 2,
       marketplaceAndDiscovery: 1,
       aiCapabilities: 2,
+      brandingAndWhiteLabel: 0,
     },
 
     pricing: {
@@ -326,6 +363,46 @@ export const tier2Competitors: Record<string, CompetitorData> = {
         answer:
           'DINGG is expanding to UAE with native Arabic UI and local payment support, but hasn\'t yet reached KSA, Kuwait, Bahrain, Oman, or Qatar. Daisy operates across all 6 GCC countries with full local compliance.',
       },
+      {
+        question: 'How much does DINGG really cost with all the add-ons?',
+        answer:
+          'DINGG starts at $49/mo for basic features, but the AI Genius suite is only available at $79/mo. You will also pay payment processing fees and SMS/messaging costs on top of the subscription. Daisy includes AI capabilities in its core platform without locking key features behind higher tiers.',
+      },
+      {
+        question: 'Can I migrate my salon data from DINGG to Daisy?',
+        answer:
+          'Yes. Daisy provides migration support to transfer your client database, appointment history, and staff records from DINGG. Since both platforms share similar data structures for booking and client management, the transition is manageable with Daisy\'s onboarding team guiding you through each step.',
+      },
+      {
+        question: 'How does DINGG\'s AI receptionist compare to Daisy\'s?',
+        answer:
+          'DINGG\'s AI Genius suite includes an AI receptionist and chatbot that handle calls and messages, plus smart scheduling. However, Daisy\'s AI receptionist goes further by processing full booking flows and payments autonomously, and is backed by a consumer marketplace and cashback system that DINGG lacks entirely.',
+      },
+      {
+        question: 'Is DINGG\'s Arabic support as good as Daisy\'s for GCC businesses?',
+        answer:
+          'DINGG has native Arabic UI quality and is building GCC presence, but currently only operates in UAE. Daisy provides native Arabic support across all 6 GCC countries with local payment methods, regulatory compliance, and local customer support — a much broader and more established GCC footprint.',
+      },
+      {
+        question: 'How good is DINGG\'s mobile app for day-to-day salon management?',
+        answer:
+          'DINGG\'s mobile app has a 4.2 rating on Google Play and 4.0 on the App Store, with reasonable functionality for booking and client management. However, user reviews indicate it is still maturing. Daisy\'s app offers a more polished experience with full POS, inventory, AI features, and marketplace access all in one interface.',
+      },
+      {
+        question: 'Does DINGG support multi-branch salon businesses?',
+        answer:
+          'DINGG offers basic multi-location features, but its relatively small team and limited funding ($3M) mean enterprise-level multi-branch management is not its strength. Daisy is built for scalability with centralized multi-branch dashboards, cross-location reporting, staff allocation, and inventory management.',
+      },
+      {
+        question: 'What integrations does DINGG support compared to Daisy?',
+        answer:
+          'DINGG integrates with common payment gateways and basic tools, but its integration ecosystem is still growing given its size. Daisy offers broader integrations including local GCC payment methods, marketing tools, Google Calendar sync, and a consumer marketplace — providing a more connected business ecosystem.',
+      },
+      {
+        question: 'Is DINGG a reliable long-term choice for my beauty business?',
+        answer:
+          'DINGG is a promising platform with strong AI features, but with only $3M in funding and a small team (50-100), its long-term growth and support capacity carry some risk. Daisy offers a more established platform with broader market presence, deeper feature set, and the infrastructure to support businesses as they scale.',
+      },
     ],
 
     lastResearched: '2026-03-13',
@@ -358,6 +435,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       reportingAndAnalytics: 2,
       marketplaceAndDiscovery: 1,
       aiCapabilities: 1,
+      brandingAndWhiteLabel: 1,
     },
 
     pricing: {
@@ -512,6 +590,46 @@ export const tier2Competitors: Record<string, CompetitorData> = {
         answer:
           'GlossGenius offers an AI Growth Analyst in its Platinum tier ($148/mo) that provides business insights. However, it lacks an AI receptionist, chatbot, or smart scheduling. Daisy includes comprehensive AI capabilities in its base platform.',
       },
+      {
+        question: 'What are the real costs of using GlossGenius once you add everything up?',
+        answer:
+          'GlossGenius starts at $24/mo but charges 2.6% per transaction on all payments. Team management and AI features require the Platinum tier at $148/mo. For a salon processing $10,000/mo in payments, transaction fees alone add $260. Daisy offers transparent pricing with AI included in the core platform without per-transaction surcharges eating into your revenue.',
+      },
+      {
+        question: 'Can I switch from GlossGenius to Daisy and keep my client data?',
+        answer:
+          'Yes. Daisy\'s onboarding team helps you export client profiles, appointment history, and payment records from GlossGenius and import them into Daisy. The process is designed to be seamless so you do not lose any client relationships or booking history during the transition.',
+      },
+      {
+        question: 'Does GlossGenius support Arabic or work in the Middle East?',
+        answer:
+          'No. GlossGenius is entirely US-focused with English-only support. There is no Arabic UI, no GCC compliance, and no local payment methods for Middle Eastern markets. Daisy is built from the ground up with native Arabic and English support across all 6 GCC countries.',
+      },
+      {
+        question: 'How good is GlossGenius\'s mobile app for running a salon?',
+        answer:
+          'GlossGenius has an excellent mobile app with a 4.9 rating on the App Store and 45,000+ reviews. Its strength is in beautiful design and ease of use for independent professionals. However, it lacks depth for growing teams, and advanced features like AI and staff management require expensive upgrades. Daisy provides comparable app quality with a much broader feature set built in.',
+      },
+      {
+        question: 'Can GlossGenius handle a salon with multiple locations?',
+        answer:
+          'GlossGenius was designed for independent professionals and solopreneurs. Multi-location management and team features are only available in the Platinum tier ($148/mo), and even then the capabilities are limited compared to enterprise solutions. Daisy is built to scale from single-chair stylists to multi-branch salon chains with centralized management.',
+      },
+      {
+        question: 'What kind of customer support does GlossGenius offer?',
+        answer:
+          'GlossGenius provides priority support in its Gold ($48/mo) and Platinum ($148/mo) tiers. Standard tier users receive basic support. All support is in English only. Daisy offers multi-channel support in both Arabic and English with dedicated onboarding assistance regardless of your plan level.',
+      },
+      {
+        question: 'Does GlossGenius integrate with other tools I already use?',
+        answer:
+          'GlossGenius offers limited integrations, focusing mainly on payment processing and its own ecosystem. It does not have extensive third-party integrations for marketing, accounting, or inventory. Daisy provides a broader integration ecosystem including local GCC payment gateways, Google Calendar, marketing tools, and a built-in consumer marketplace.',
+      },
+      {
+        question: 'Is GlossGenius good for salons that want to attract new customers?',
+        answer:
+          'GlossGenius provides a basic marketplace listing and beautiful booking pages, but has no active customer acquisition engine. It does not offer cashback rewards, loyalty programs, or AI-powered marketing. Daisy includes a consumer marketplace with cashback, AI-driven marketing campaigns, and a full customer acquisition engine designed to bring new clients to your door.',
+      },
     ],
 
     lastResearched: '2026-03-13',
@@ -544,6 +662,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       reportingAndAnalytics: 1,
       marketplaceAndDiscovery: 0,
       aiCapabilities: 0,
+      brandingAndWhiteLabel: 0,
     },
 
     pricing: {
@@ -630,6 +749,46 @@ export const tier2Competitors: Record<string, CompetitorData> = {
         answer:
           'Zylu is an early-stage GCC-focused platform with basic booking features, while Daisy is a comprehensive AI-powered platform with full business management, marketplace, cashback, and native Arabic support across all 6 GCC countries.',
       },
+      {
+        question: 'How much does Zylu cost and is the pricing transparent?',
+        answer:
+          'Zylu uses quote-based pricing that requires contacting their sales team, with no public pricing page. This makes it difficult to compare costs upfront. Daisy offers transparent pricing tiers published openly, so you know exactly what you are paying for before you commit.',
+      },
+      {
+        question: 'Does Zylu have AI-powered features for salon management?',
+        answer:
+          'No. Zylu currently has no AI capabilities — no AI receptionist, no chatbot, no smart scheduling, and no AI-powered marketing. Daisy provides a full AI ecosystem including a 24/7 AI receptionist, intelligent scheduling, automated marketing, and AI-driven analytics.',
+      },
+      {
+        question: 'Can I switch from Zylu to Daisy easily?',
+        answer:
+          'Yes. Since Zylu offers a basic feature set, migrating to Daisy is relatively simple with less data complexity. Daisy\'s onboarding team assists with transferring your client records, booking data, and staff information to ensure a smooth transition.',
+      },
+      {
+        question: 'Does Zylu support Arabic for beauty businesses in the Gulf?',
+        answer:
+          'Despite positioning itself for the GCC market, Zylu does not have a confirmed Arabic UI. Daisy provides fully native Arabic support with right-to-left layout, Arabic content, and bilingual Arabic/English functionality designed specifically for Gulf businesses.',
+      },
+      {
+        question: 'Is Zylu reliable enough for a growing salon business?',
+        answer:
+          'Zylu is bootstrapped with a very small team (10-30 employees) and no external funding, which raises questions about long-term sustainability and feature development pace. Daisy is a more established platform with a larger team, proven product, and the resources to support businesses as they scale across multiple locations.',
+      },
+      {
+        question: 'Does Zylu have a mobile app and how good is it?',
+        answer:
+          'Zylu has minimal public reviews and no significant app store presence, making it hard to evaluate mobile app quality. Daisy offers a fully featured mobile app with high ratings, providing complete business management, AI tools, POS, and marketplace access on the go.',
+      },
+      {
+        question: 'Can Zylu support a salon chain with multiple branches?',
+        answer:
+          'Zylu\'s basic feature set and small team suggest limited multi-location capabilities. Daisy is purpose-built for scalability with multi-branch dashboards, centralized reporting, cross-location staff management, and unified inventory tracking for salon chains of any size.',
+      },
+      {
+        question: 'What integrations does Zylu offer?',
+        answer:
+          'Zylu\'s integration ecosystem appears limited given its early stage and small team. It does not offer local GCC payment method integrations despite targeting the region. Daisy integrates with local payment gateways, Google Calendar, marketing platforms, and includes a built-in consumer marketplace — providing a more connected solution.',
+      },
     ],
 
     lastResearched: '2026-03-13',
@@ -662,6 +821,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       reportingAndAnalytics: 2,
       marketplaceAndDiscovery: 1,
       aiCapabilities: 2,
+      brandingAndWhiteLabel: 0,
     },
 
     pricing: {
@@ -785,6 +945,46 @@ export const tier2Competitors: Record<string, CompetitorData> = {
         answer:
           'Beauty Bank is RepeatMD\'s cashback loyalty concept that rewards patients for repeat visits. Daisy includes a similar cashback system as part of its complete platform, along with a consumer marketplace for acquisition — features RepeatMD doesn\'t offer.',
       },
+      {
+        question: 'Why does RepeatMD cost $700 a month and are there hidden fees on top?',
+        answer:
+          'RepeatMD charges approximately $700/mo for its marketing and retention tools, plus implementation fees. Crucially, it does not include booking, POS, or operations features — so you need to pay for separate software on top. Daisy includes marketing, AI, booking, POS, and operations in one platform at a fraction of the combined cost.',
+      },
+      {
+        question: 'Can I move my patient data from RepeatMD to Daisy?',
+        answer:
+          'Yes. Daisy\'s onboarding team helps you migrate client profiles, loyalty balances, and engagement history from RepeatMD. Since RepeatMD focuses on marketing and retention data rather than full operations, the migration primarily involves customer records and campaign data, making the transition manageable.',
+      },
+      {
+        question: 'Does RepeatMD work for beauty businesses in the Middle East?',
+        answer:
+          'No. RepeatMD is focused exclusively on the US and Canadian med spa market with English-only support. It has no Arabic UI, no GCC compliance, and no local payment methods. Daisy serves the entire GCC region with native Arabic support, local payment integrations, and regional regulatory compliance.',
+      },
+      {
+        question: 'How do RepeatMD\'s AI agents compare to Daisy\'s AI receptionist?',
+        answer:
+          'RepeatMD offers Adonis (marketing/lead generation) and Aria (patient communication) as chat-based AI agents. However, neither handles voice calls or processes bookings and payments autonomously. Daisy\'s AI receptionist manages voice calls, chat, full booking flows, and payment processing 24/7 — a more complete AI solution.',
+      },
+      {
+        question: 'Does RepeatMD have a mobile app for managing my business?',
+        answer:
+          'RepeatMD has limited mobile app presence with only 80 G2 reviews and no significant app store ratings. Since it is a marketing tool rather than a full management platform, the mobile experience is focused on campaign monitoring rather than day-to-day operations. Daisy provides a comprehensive mobile app for complete business management including bookings, POS, staff, and AI features.',
+      },
+      {
+        question: 'Can RepeatMD handle multiple clinic locations?',
+        answer:
+          'RepeatMD can serve multi-location med spas for marketing and retention campaigns, but since it lacks booking, POS, and operations features, you still need separate software for each location\'s daily management. Daisy provides centralized multi-branch management with unified booking, staff scheduling, reporting, and marketing across all locations in a single platform.',
+      },
+      {
+        question: 'What integrations does RepeatMD offer and do I need other software too?',
+        answer:
+          'RepeatMD integrates with some EMR/EHR systems and marketing tools, but you absolutely need separate booking software, POS, and operations tools alongside it. This means managing multiple vendors, logins, and data silos. Daisy eliminates this fragmentation by providing booking, POS, marketing, AI, and operations in one integrated platform.',
+      },
+      {
+        question: 'Is RepeatMD suitable for regular beauty salons or just med spas?',
+        answer:
+          'RepeatMD is designed specifically for med spas and aesthetic practices — its pricing, features, and AI agents are tailored to that niche. Regular beauty salons, barbershops, and wellness businesses would find it overpriced and poorly fitted. Daisy serves all beauty and wellness verticals equally, from hair salons to med spas to nail studios.',
+      },
     ],
 
     lastResearched: '2026-03-13',
@@ -817,6 +1017,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       reportingAndAnalytics: 3,
       marketplaceAndDiscovery: 1,
       aiCapabilities: 2,
+      brandingAndWhiteLabel: 1,
     },
 
     pricing: {
@@ -969,6 +1170,46 @@ export const tier2Competitors: Record<string, CompetitorData> = {
         answer:
           'No — Boulevard is US-only with no Arabic support, GCC compliance, or local payment methods. For Middle East beauty businesses, Daisy provides native Arabic UI, local payment integration, and compliance across all 6 GCC countries.',
       },
+      {
+        question: 'What does Boulevard actually cost when you include transaction fees?',
+        answer:
+          'Boulevard charges $158-410/mo in subscription fees plus 2.6% + $0.10 per transaction on every payment. A salon processing $20,000/mo in payments would pay an additional $520+ in processing fees alone. AI features require the $295/mo Premier tier. Daisy provides more accessible pricing with AI included in the core platform and without per-transaction fees eroding your margins.',
+      },
+      {
+        question: 'How difficult is it to switch from Boulevard to Daisy?',
+        answer:
+          'Boulevard has a comprehensive data structure, so migration requires transferring client profiles, appointment history, staff records, POS data, and product inventory. Daisy\'s onboarding team provides dedicated migration support to ensure all your data transfers accurately and your team gets up to speed quickly without disrupting daily operations.',
+      },
+      {
+        question: 'How does Boulevard\'s Precision Scheduling AI compare to Daisy\'s AI?',
+        answer:
+          'Boulevard\'s Precision Scheduling AI optimizes appointment slot allocation, and its Duo assistant provides business insights — both only available at $295/mo. Daisy\'s AI goes further with a 24/7 voice and chat receptionist that handles bookings and payments autonomously, plus AI-powered marketing and analytics, all included in the core platform.',
+      },
+      {
+        question: 'Does Boulevard support Arabic-speaking staff and clients?',
+        answer:
+          'No. Boulevard is English-only with no Arabic interface, no RTL layout support, and no Middle Eastern localization. Daisy offers fully native Arabic and English support with bilingual staff interfaces, client communications, and booking pages — purpose-built for the GCC market.',
+      },
+      {
+        question: 'How good is Boulevard\'s mobile app for daily salon management?',
+        answer:
+          'Boulevard has solid reviews (4.6 on Capterra, 4.5 on G2) and a well-designed mobile experience consistent with its premium brand. The app handles bookings, client check-in, and POS well. However, its premium pricing puts it out of reach for many businesses. Daisy offers comparable mobile quality with broader features including AI and marketplace at more accessible pricing.',
+      },
+      {
+        question: 'Can Boulevard support franchise or multi-location salon businesses?',
+        answer:
+          'Yes — Boulevard offers franchise management in its Prestige tier ($410/mo) with custom integrations, API access, and a dedicated success manager. However, the high price point makes it expensive for growing chains. Daisy provides multi-branch management, centralized reporting, and cross-location tools at more accessible pricing tiers.',
+      },
+      {
+        question: 'What customer support does Boulevard provide?',
+        answer:
+          'Boulevard provides support based on your tier level, with dedicated success managers only available in the Prestige plan ($410/mo). All support is in English only. Daisy offers multi-channel support in both Arabic and English, with onboarding assistance included regardless of plan, ensuring businesses in the GCC receive the same quality of support.',
+      },
+      {
+        question: 'Does Boulevard help attract new customers or just manage existing ones?',
+        answer:
+          'Boulevard focuses on operations and client experience management — it does not have a consumer marketplace, cashback program, or active customer acquisition tools. Daisy combines full operations management with a consumer marketplace, cashback rewards, and AI-driven marketing to both manage existing clients and actively bring new ones through your door.',
+      },
     ],
 
     lastResearched: '2026-03-13',
@@ -1001,6 +1242,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       reportingAndAnalytics: 2,
       marketplaceAndDiscovery: 3,
       aiCapabilities: 0,
+      brandingAndWhiteLabel: 0,
     },
 
     pricing: {
@@ -1115,6 +1357,46 @@ export const tier2Competitors: Record<string, CompetitorData> = {
         question: 'How does Planity compare to Daisy?',
         answer:
           'Planity dominates France with 10M+ monthly bookings and commission-free pricing, but is limited to European markets with no AI capabilities. Daisy provides a complete AI-powered growth platform with Arabic/English support, cashback rewards, and GCC compliance — designed for a global audience.',
+      },
+      {
+        question: 'Does Planity charge commission on bookings like other marketplaces?',
+        answer:
+          'No — Planity\'s key differentiator is its commission-free SaaS model at approximately 59 euros per month. You pay a flat subscription fee with no per-booking commissions. Daisy also avoids per-booking commissions and includes AI, cashback, and full business management features that Planity lacks, offering more value for the subscription cost.',
+      },
+      {
+        question: 'Does Planity work outside of France or support Arabic?',
+        answer:
+          'Planity is expanding within Europe but remains France-focused with no Arabic support, no GCC compliance, and no Middle Eastern payment methods. Daisy is built for global markets with native Arabic and English support, coverage across all 6 GCC countries, and local payment integrations.',
+      },
+      {
+        question: 'Does Planity have any AI features?',
+        answer:
+          'No. Planity has zero AI capabilities — only basic automated booking confirmations and reminders. There is no AI receptionist, chatbot, smart scheduling, or AI-powered marketing. Daisy provides a comprehensive AI ecosystem that handles calls, bookings, payments, marketing, and analytics autonomously.',
+      },
+      {
+        question: 'How difficult is it to migrate from Planity to Daisy?',
+        answer:
+          'Migrating from Planity is straightforward since its feature set focuses on booking and basic client management. Daisy\'s onboarding team assists with transferring client databases, appointment history, and business profiles. The transition is especially relevant for businesses expanding from European to Middle Eastern markets.',
+      },
+      {
+        question: 'How good is Planity\'s mobile app compared to Daisy?',
+        answer:
+          'Planity has excellent app ratings (4.8 on App Store with 180,000+ reviews) driven by its massive French consumer base. However, the business management side is basic. Daisy\'s app provides both a consumer-facing marketplace and a comprehensive business management suite with AI, POS, inventory, and marketing tools.',
+      },
+      {
+        question: 'Can Planity support a multi-location beauty business?',
+        answer:
+          'Planity offers multi-location listing capabilities on its marketplace, but its business management tools are basic compared to dedicated enterprise solutions. Daisy provides centralized multi-branch dashboards, cross-location staff scheduling, unified inventory, and consolidated reporting designed for growing salon chains.',
+      },
+      {
+        question: 'What customer support does Planity offer and is it available in English?',
+        answer:
+          'Planity\'s support is primarily in French, reflecting its market focus. English support is limited, and Arabic support is nonexistent. Daisy provides fully bilingual Arabic and English customer support with dedicated onboarding assistance, making it the clear choice for businesses in the GCC or those operating in multilingual environments.',
+      },
+      {
+        question: 'Does Planity integrate with other business tools and payment systems?',
+        answer:
+          'Planity integrates with European payment systems and basic salon management tools, but its ecosystem is designed for the French market. It does not support GCC payment gateways like mada, Benefit, or KNET. Daisy integrates with local GCC payment methods, Google Calendar, marketing tools, and provides a built-in marketplace — offering a much broader integration ecosystem for international businesses.',
       },
     ],
 
