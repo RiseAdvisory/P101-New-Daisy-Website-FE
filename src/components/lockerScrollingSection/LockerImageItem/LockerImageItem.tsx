@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './LockerImageItem.module.css';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
-import { baseURLImage } from '@/helpers/axiosConfig';
 
 const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) => {
   const mainImg =
@@ -10,9 +9,6 @@ const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) =>
   const firstBg = item?.attributes?.firstBg?.data?.[0]?.attributes?.url;
   const secondBg = item?.attributes?.secondBg?.data?.[0]?.attributes?.url;
 
-  const imegeCurrentURL = (image: any) => {
-    return new URL(image, baseURLImage).href;
-  };
   const styleMainImage = item?.attributes.styleMainPictureJSON;
   const styleFirstBg = item?.attributes.styleFirstBgJSON;
   const styleSecondBg = item?.attributes.styleSecondBgJSON;
@@ -28,7 +24,7 @@ const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) =>
           item?.attributes.styleFirstBg,
         )}
         style={styleFirstBg}
-        src={imegeCurrentURL(firstBg)}
+        src={firstBg}
         alt="leaf"
         width={300}
         height={500}
@@ -41,7 +37,7 @@ const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) =>
             isActive ? styles.active : '',
             item?.attributes.styleSecondBg,
           )}
-          src={imegeCurrentURL(secondBg)}
+          src={secondBg}
           style={styleSecondBg}
           alt="start"
           width={100}
@@ -50,7 +46,7 @@ const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) =>
       )}
       {mainImg && (
         <Image
-          src={imegeCurrentURL(mainImg)}
+          src={mainImg}
           style={styleMainImage}
           className={cn(
             '',

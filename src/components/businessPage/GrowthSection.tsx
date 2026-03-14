@@ -1,8 +1,6 @@
-import growthImage from '../../assets/images/growthBusiness.png';
 import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
 import Link from 'next/link';
-import { baseURLImage } from '@/helpers/axiosConfig';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
@@ -21,7 +19,6 @@ export const GrowthSection = ({
   imageUrl: string;
   buttonLink: string;
 }) => {
-  const growthImages = new URL(imageUrl, baseURLImage).href;
   const router = useRouter();
   return (
     <>
@@ -49,7 +46,7 @@ export const GrowthSection = ({
             <Image
               width={426}
               height={548}
-              src={growthImages}
+              src={imageUrl}
               alt="customerdaisy"
             />
           </div>

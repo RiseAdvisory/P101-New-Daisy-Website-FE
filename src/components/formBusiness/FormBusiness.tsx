@@ -28,8 +28,9 @@ import { getData } from '@/helpers/getCountryCodes';
 import { useLoadingStore } from '@/store/loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
+import { t } from '@/lib/constants/i18n';
+import { formBusinessData } from '@/lib/constants/shared/formBusinessData';
 
 export const ProfileForm = () => {
   const [activeField, setActiveField] = useState<string | null>(null);
@@ -40,12 +41,16 @@ export const ProfileForm = () => {
   const [business_type, setBusinessType] = useState(false);
   const [homeService, setHomeService] = useState(false);
   const [isSubmit, setIsSubmit] = useState(false);
-  const [textForm, setTextForm] = useState<any>();
-  const [descriptionForm, setDescriptionForm] = useState<any>();
   const [contentChange, setContentChange] = useState({
     serviceProvidorType: 'Freelances',
     homeVisits: 'No',
   });
+
+  const { lang } = useChangeLanguage();
+  const formContent = t(formBusinessData, lang);
+  const textForm = formContent.formDescription;
+  const descriptionForm = formContent.formPlaceholder;
+
   const formSchema = z.object({
     name: z.string(),
     business_type: z.string(),
@@ -136,7 +141,6 @@ export const ProfileForm = () => {
       setIsSubmit(false);
     }
   };
-  const { lang } = useChangeLanguage();
   const handleFocus = (fieldName: string) => {
     setActiveField(fieldName);
   };
@@ -144,16 +148,6 @@ export const ProfileForm = () => {
   const handleBlur = () => {
     setActiveField(null);
   };
-  useEffect(() => {
-    (async () => {
-      const response = await axiosInstance.get(
-        `/form-becomepartners?locale=${lang}`,
-      );
-      const [data] = response?.data?.data;
-      setTextForm(data?.attributes?.formDescription);
-      setDescriptionForm(data?.attributes?.formPlaceholder);
-    })();
-  }, [lang]);
   useEffect(() => {
     try {
       (async () => {
