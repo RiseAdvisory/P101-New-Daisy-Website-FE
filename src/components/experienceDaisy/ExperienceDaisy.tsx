@@ -16,7 +16,7 @@ import {
 
 export const ExperienceDaisy = () => {
   const { lang } = useChangeLanguage();
-  const currentPage = localStorage.getItem('activePage');
+  const currentPage = typeof window !== 'undefined' ? localStorage.getItem('activePage') : null;
 
   let pageType: ExperienceDaisyPageType = 'customer';
   if (currentPage === '/business') {

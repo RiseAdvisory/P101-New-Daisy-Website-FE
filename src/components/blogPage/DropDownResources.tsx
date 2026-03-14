@@ -38,7 +38,7 @@ export const DropdownResources = ({
 
   const path = usePathname();
   const { lang } = useChangeLanguage();
-  const currentPage = localStorage.getItem('activePage');
+  const currentPage = typeof window !== 'undefined' ? localStorage.getItem('activePage') : null;
 
   let pageType: ResourcesDropdownPageType = 'business';
   if (currentPage === '/customer') {
