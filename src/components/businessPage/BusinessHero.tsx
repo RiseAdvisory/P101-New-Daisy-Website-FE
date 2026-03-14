@@ -20,7 +20,7 @@ export const BusinessHero = ({
   gataway: string;
   services: string;
 }) => {
-  const qrCode = '/images/pages/get-the-app/qr-code.png';
+  const qrCode = '/images/pages/get-the-app/qr-code.svg';
   return (
     <div className=" bg-primary pt-16 px-4 min-h-screen">
       <div className="md:hidden">

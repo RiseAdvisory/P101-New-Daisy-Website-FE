@@ -13,7 +13,7 @@ const LockerContentItem = forwardRef(
     { objectId, text, index, description, storeBurron, listSub }: any,
     ref: any,
   ) => {
-    const qrCode = '/images/pages/get-the-app/qr-code.png';
+    const qrCode = '/images/pages/get-the-app/qr-code.svg';
     const container = {
       hidden: { opacity: 1, scale: 0 },
       visible: {
