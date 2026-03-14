@@ -65,7 +65,6 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           listSub: [
             'Set your own working hours',
             'Block time for personal commitments',
-            'Real-time schedule updates',
             'Multi-location support',
           ],
         },
@@ -102,12 +101,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           title: 'Client Management',
           text: 'Build Lasting Relationships',
           description:
-            'Keep track of your clients, their preferences, and appointment history. Build stronger relationships and deliver personalized services.',
+            'Build stronger relationships and deliver personalized services.',
           listSub: [
             'Detailed client profiles',
             'Appointment history tracking',
             'Client preference notes',
-            'Automated follow-ups',
           ],
         },
       },
@@ -158,12 +156,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           title: 'Earnings Tracker',
           text: 'Maximize Your Income',
           description:
-            'Track your earnings in real-time, view detailed reports, and understand your revenue patterns. Stay on top of your finances effortlessly.',
+            'Track your earnings in real-time, view detailed reports, and understand your revenue patterns.',
           listSub: [
             'Real-time earnings dashboard',
             'Detailed payment reports',
             'Revenue trends & insights',
-            'Commission tracking',
           ],
         },
       },
@@ -199,11 +196,10 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           title: 'Professional Profile',
           text: 'Showcase Your Expertise',
           description:
-            'Build a professional profile that highlights your skills, experience, and client reviews. Stand out and attract more clients.',
+            'Highlights your skills, experience, and client reviews. Stand out and attract more clients.',
           listSub: [
             'Portfolio showcase',
             'Client reviews & ratings',
-            'Skill certifications display',
             'Service menu customization',
           ],
         },

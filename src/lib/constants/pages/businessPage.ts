@@ -61,12 +61,11 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           title: 'Smart Booking',
           text: 'AI-Powered Appointment Management',
           description:
-            'Let Daisy\'s AI receptionist handle bookings 24/7, so you never miss a customer. Manage your calendar, staff schedules, and service slots all in one place.',
+            'Let Daisy\'s AI receptionist handle bookings 24/7, so you never miss a customer.',
           listSub: [
             '24/7 AI booking assistant',
             'Automated reminders & confirmations',
             'Smart calendar management',
-            'Multi-staff scheduling',
           ],
         },
       },
@@ -102,12 +101,11 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           title: 'Customer Acquisition',
           text: '360° Customer Growth Engine',
           description:
-            'Attract new customers through our marketplace, cashback rewards, and built-in marketing tools. Grow your client base without the guesswork.',
+            'Grow your client base without the guesswork.',
           listSub: [
             'Marketplace visibility to thousands of users',
             'Cashback incentives that drive repeat visits',
             'Integrated marketing campaigns',
-            'Customer loyalty programs',
           ],
         },
       },
@@ -158,12 +156,11 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           title: 'Brand Control',
           text: 'Your Brand, Your Way',
           description:
-            'Maintain full control over your brand identity with white-label solutions. Customize your booking page, notifications, and customer experience to match your brand.',
+            'Customize your booking page, notifications, and customer experience to match your brand.',
           listSub: [
             'Customizable booking page',
             'White-label communications',
             'Branded customer experience',
-            'Custom domain support',
           ],
         },
       },
@@ -199,9 +196,8 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           title: 'Business Analytics',
           text: 'Data-Driven Decisions',
           description:
-            'Track performance, understand your customers, and make smarter business decisions with comprehensive analytics and reporting tools.',
+            'Track performance, understand your customers, and make smarter business decisions.',
           listSub: [
-            'Real-time revenue tracking',
             'Customer insights & trends',
             'Staff performance metrics',
             'Booking analytics dashboard',
