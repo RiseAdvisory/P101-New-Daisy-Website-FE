@@ -26,11 +26,11 @@ export default function CompareIndexPage() {
   return (
     <main className="min-h-screen">
       {/* Hero */}
-      <section className="bg-gradient-to-b from-gray-50 to-white px-4 py-16 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
+      <section className="bg-gradient-to-b from-[#F8F5F3] to-white px-4 py-16 text-center">
+        <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">
           Compare Daisy
         </h1>
-        <p className="mx-auto max-w-2xl text-lg text-gray-600">
+        <p className="mx-auto max-w-2xl text-lg text-[#455150]">
           Honest, detailed comparisons to help you choose the right beauty
           business platform. We show strengths and weaknesses — for everyone.
         </p>
@@ -38,7 +38,7 @@ export default function CompareIndexPage() {
 
       {/* Daisy vs Pages */}
       <section className="mx-auto max-w-5xl px-4 py-12">
-        <h2 className="mb-8 text-2xl font-bold text-gray-900">
+        <h2 className="mb-8 text-2xl font-bold text-[#172524]">
           Daisy vs Competitors
         </h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -49,15 +49,15 @@ export default function CompareIndexPage() {
               <Link
                 key={page.slug}
                 href={`/compare/${page.slug}`}
-                className="rounded-lg border border-gray-200 p-5 transition-shadow hover:shadow-md"
+                className="rounded-lg border border-[#E8E9E9] p-5 transition-shadow hover:shadow-md"
               >
-                <h3 className="mb-1 text-lg font-semibold text-gray-900">
+                <h3 className="mb-1 text-lg font-semibold text-[#172524]">
                   Daisy vs {competitor.name}
                 </h3>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-[#586968]">
                   Tier {competitor.tier} · {competitor.headquarters}
                 </p>
-                <p className="mt-2 line-clamp-2 text-sm text-gray-600">
+                <p className="mt-2 line-clamp-2 text-sm text-[#455150]">
                   {page.tldr}
                 </p>
               </Link>
@@ -67,9 +67,9 @@ export default function CompareIndexPage() {
       </section>
 
       {/* Competitor vs Competitor */}
-      <section className="bg-gray-50 py-12">
+      <section className="bg-[#F8F5F3] py-12">
         <div className="mx-auto max-w-5xl px-4">
-          <h2 className="mb-8 text-2xl font-bold text-gray-900">
+          <h2 className="mb-8 text-2xl font-bold text-[#172524]">
             Competitor vs Competitor
           </h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -81,12 +81,12 @@ export default function CompareIndexPage() {
                 <Link
                   key={page.combinedSlug}
                   href={`/compare/${page.combinedSlug}`}
-                  className="rounded-lg border border-gray-200 bg-white p-5 transition-shadow hover:shadow-md"
+                  className="rounded-lg border border-[#E8E9E9] bg-white p-5 transition-shadow hover:shadow-md"
                 >
-                  <h3 className="mb-1 text-lg font-semibold text-gray-900">
+                  <h3 className="mb-1 text-lg font-semibold text-[#172524]">
                     {a.name} vs {b.name}
                   </h3>
-                  <p className="mt-2 line-clamp-2 text-sm text-gray-600">
+                  <p className="mt-2 line-clamp-2 text-sm text-[#455150]">
                     {page.verdict}
                   </p>
                 </Link>
@@ -98,15 +98,15 @@ export default function CompareIndexPage() {
 
       {/* CTA */}
       <section className="px-4 py-16 text-center">
-        <h2 className="mb-4 text-2xl font-bold text-gray-900">
+        <h2 className="mb-4 text-2xl font-bold text-[#172524]">
           Ready to see Daisy in action?
         </h2>
-        <p className="mb-6 text-gray-600">
+        <p className="mb-6 text-[#455150]">
           Start your free trial and experience the difference AI makes.
         </p>
         <Link
           href="/get-the-app"
-          className="inline-block rounded-lg bg-green-600 px-8 py-3 font-semibold text-white transition-colors hover:bg-green-700"
+          className="inline-block rounded-lg bg-primaryBtn px-8 py-3 font-semibold text-white transition-colors hover:bg-primary"
         >
           Get Started Free
         </Link>

@@ -28,10 +28,10 @@ export const DaisyDifferentiators: FC<DaisyDifferentiatorsProps> = ({
   return (
     <section className="py-16 px-4 bg-white">
       <div className="mx-auto max-w-5xl">
-        <h2 className="mb-2 text-center text-3xl font-bold text-gray-900">
+        <h2 className="mb-2 text-center text-3xl font-bold text-[#172524]">
           What Makes Daisy Different
         </h2>
-        <p className="mb-12 text-center text-gray-600">
+        <p className="mb-12 text-center text-[#455150]">
           Six differentiators that set Daisy apart from every competitor
         </p>
 
@@ -53,13 +53,13 @@ export const DaisyDifferentiators: FC<DaisyDifferentiatorsProps> = ({
                 className={cn(
                   'group relative rounded-2xl border p-6 transition-all hover:shadow-md',
                   isHighlighted
-                    ? 'border-green-300 bg-green-50 shadow-sm ring-2 ring-green-100'
-                    : 'border-gray-200 bg-white',
+                    ? 'border-primaryBtn/40 bg-primary/5 shadow-sm ring-2 ring-primary/10'
+                    : 'border-[#E8E9E9] bg-white',
                 )}
               >
                 {isHighlighted && (
                   <div className="absolute -top-2.5 right-4">
-                    <span className="rounded-full bg-green-600 px-3 py-0.5 text-[10px] font-bold text-white uppercase">
+                    <span className="rounded-full bg-primaryBtn px-3 py-0.5 text-[10px] font-bold text-white uppercase">
                       Key advantage
                     </span>
                   </div>
@@ -69,17 +69,17 @@ export const DaisyDifferentiators: FC<DaisyDifferentiatorsProps> = ({
                   className={cn(
                     'mb-4 flex h-12 w-12 items-center justify-center rounded-xl transition-colors',
                     isHighlighted
-                      ? 'bg-green-200 text-green-800'
-                      : 'bg-green-50 text-green-700 group-hover:bg-green-100',
+                      ? 'bg-primaryBtn/20 text-primary'
+                      : 'bg-primary/5 text-primary group-hover:bg-primary/10',
                   )}
                 >
                   <Icon className="h-6 w-6" />
                 </div>
 
-                <h3 className="mb-2 text-base font-bold text-gray-900">
+                <h3 className="mb-2 text-base font-bold text-[#172524]">
                   {title}
                 </h3>
-                <p className="text-sm leading-relaxed text-gray-600">
+                <p className="text-sm leading-relaxed text-[#455150]">
                   {description}
                 </p>
               </div>

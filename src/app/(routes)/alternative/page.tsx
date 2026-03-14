@@ -25,11 +25,11 @@ export default function AlternativeIndexPage() {
   return (
     <main className="min-h-screen">
       {/* Hero */}
-      <section className="bg-gradient-to-b from-gray-50 to-white px-4 py-16 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
+      <section className="bg-gradient-to-b from-[#F8F5F3] to-white px-4 py-16 text-center">
+        <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">
           Salon Software Alternatives
         </h1>
-        <p className="mx-auto max-w-2xl text-lg text-gray-600">
+        <p className="mx-auto max-w-2xl text-lg text-[#455150]">
           Ready to switch? Find the best alternative for your current salon
           platform — with honest comparisons and clear recommendations.
         </p>
@@ -37,7 +37,7 @@ export default function AlternativeIndexPage() {
 
       {/* Alternative Pages */}
       <section className="mx-auto max-w-5xl px-4 py-12">
-        <h2 className="mb-8 text-2xl font-bold text-gray-900">
+        <h2 className="mb-8 text-2xl font-bold text-[#172524]">
           Find Your Alternative
         </h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -48,12 +48,12 @@ export default function AlternativeIndexPage() {
               <Link
                 key={page.slug}
                 href={`/alternative/${page.slug}`}
-                className="rounded-lg border border-gray-200 p-5 transition-shadow hover:shadow-md"
+                className="rounded-lg border border-[#E8E9E9] p-5 transition-shadow hover:shadow-md"
               >
-                <h3 className="mb-1 text-lg font-semibold text-gray-900">
+                <h3 className="mb-1 text-lg font-semibold text-[#172524]">
                   {competitor.name} Alternative
                 </h3>
-                <p className="mt-2 line-clamp-2 text-sm text-gray-600">
+                <p className="mt-2 line-clamp-2 text-sm text-[#455150]">
                   {page.heroSubtitle}
                 </p>
               </Link>
@@ -63,9 +63,9 @@ export default function AlternativeIndexPage() {
       </section>
 
       {/* Best Alternatives */}
-      <section className="bg-gray-50 py-12">
+      <section className="bg-[#F8F5F3] py-12">
         <div className="mx-auto max-w-5xl px-4">
-          <h2 className="mb-8 text-2xl font-bold text-gray-900">
+          <h2 className="mb-8 text-2xl font-bold text-[#172524]">
             Best Alternatives Roundups
           </h2>
           <div className="grid gap-4 md:grid-cols-2">
@@ -76,12 +76,12 @@ export default function AlternativeIndexPage() {
                 <Link
                   key={page.slug}
                   href={`/alternative/${page.slug}`}
-                  className="rounded-lg border border-gray-200 bg-white p-5 transition-shadow hover:shadow-md"
+                  className="rounded-lg border border-[#E8E9E9] bg-white p-5 transition-shadow hover:shadow-md"
                 >
-                  <h3 className="mb-1 text-lg font-semibold text-gray-900">
+                  <h3 className="mb-1 text-lg font-semibold text-[#172524]">
                     {page.heroTitle}
                   </h3>
-                  <p className="mt-2 line-clamp-2 text-sm text-gray-600">
+                  <p className="mt-2 line-clamp-2 text-sm text-[#455150]">
                     {page.intro}
                   </p>
                 </Link>
@@ -93,15 +93,15 @@ export default function AlternativeIndexPage() {
 
       {/* CTA */}
       <section className="px-4 py-16 text-center">
-        <h2 className="mb-4 text-2xl font-bold text-gray-900">
+        <h2 className="mb-4 text-2xl font-bold text-[#172524]">
           Ready to make the switch?
         </h2>
-        <p className="mb-6 text-gray-600">
+        <p className="mb-6 text-[#455150]">
           Daisy makes switching easy with migration support and zero downtime.
         </p>
         <Link
           href="/get-the-app"
-          className="inline-block rounded-lg bg-green-600 px-8 py-3 font-semibold text-white transition-colors hover:bg-green-700"
+          className="inline-block rounded-lg bg-primaryBtn px-8 py-3 font-semibold text-white transition-colors hover:bg-primary"
         >
           Start Free Trial
         </Link>

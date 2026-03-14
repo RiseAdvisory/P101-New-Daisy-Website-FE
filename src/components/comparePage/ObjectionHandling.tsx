@@ -67,10 +67,10 @@ export const ObjectionHandling: FC<ObjectionHandlingProps> = ({
   return (
     <section className="py-16 px-4">
       <div className="mx-auto max-w-3xl">
-        <h2 className="mb-2 text-center text-3xl font-bold text-gray-900">
+        <h2 className="mb-2 text-center text-3xl font-bold text-[#172524]">
           Common Questions About Switching
         </h2>
-        <p className="mb-10 text-center text-gray-600">
+        <p className="mb-10 text-center text-[#455150]">
           Honest answers to the concerns we hear most
         </p>
 
@@ -85,31 +85,31 @@ export const ObjectionHandling: FC<ObjectionHandlingProps> = ({
                 className={cn(
                   'overflow-hidden rounded-xl border transition-all',
                   isOpen
-                    ? 'border-green-200 bg-green-50/30 shadow-sm'
-                    : 'border-gray-200 bg-white',
+                    ? 'border-primaryBtn/30 bg-primary/5 shadow-sm'
+                    : 'border-[#E8E9E9] bg-white',
                 )}
               >
                 <button
                   type="button"
                   onClick={() => toggleIndex(index)}
-                  className="flex w-full items-center gap-4 px-6 py-5 text-left transition-colors hover:bg-gray-50/50"
+                  className="flex w-full items-center gap-4 px-6 py-5 text-left transition-colors hover:bg-[#F8F5F3]/50"
                 >
                   <div
                     className={cn(
                       'flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg transition-colors',
                       isOpen
-                        ? 'bg-green-100 text-green-700'
-                        : 'bg-gray-100 text-gray-500',
+                        ? 'bg-primary/10 text-primary'
+                        : 'bg-[#F8F5F3] text-[#586968]',
                     )}
                   >
                     <Icon className="h-5 w-5" />
                   </div>
-                  <span className="flex-1 text-base font-semibold text-gray-900">
+                  <span className="flex-1 text-base font-semibold text-[#172524]">
                     {objection.question}
                   </span>
                   <ChevronDown
                     className={cn(
-                      'h-5 w-5 flex-shrink-0 text-gray-400 transition-transform duration-200',
+                      'h-5 w-5 flex-shrink-0 text-[#D5D9D9] transition-transform duration-200',
                       isOpen && 'rotate-180',
                     )}
                   />
@@ -124,7 +124,7 @@ export const ObjectionHandling: FC<ObjectionHandlingProps> = ({
                   )}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-6 pb-5 pl-20 text-sm leading-relaxed text-gray-600">
+                    <p className="px-6 pb-5 pl-20 text-sm leading-relaxed text-[#455150]">
                       {objection.answer}
                     </p>
                   </div>
