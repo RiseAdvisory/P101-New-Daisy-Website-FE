@@ -15,7 +15,7 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import DropZoneUpload from './ReactDropZone';
-import axios from 'axios';
+import axios from 'axios'; // TODO: replace with fetch in future cleanup
 
 export const FormCV = ({
   openCV,
@@ -54,7 +54,7 @@ export const FormCV = ({
 
     try {
       const response = await axios.post(
-        'https://motivated-belief-b4a000ad6e.strapiapp.com/api/form-careers',
+        '/api/careers',
         formData,
         {
           headers: {

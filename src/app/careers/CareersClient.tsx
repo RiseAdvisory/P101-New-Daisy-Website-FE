@@ -1,32 +1,15 @@
 'use client';
 import { Vacansies } from '@/components/careersPage/Vacancies';
 import { HeroPage } from '@/components/heroSection/HeroSection';
-import axiosInstance from '@/helpers/axiosConfig';
+import { careersPageData } from '@/lib/constants/careersPageData';
+import { t } from '@/lib/constants/i18n';
 import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
-import { CareersPageAttributes } from '@/types/strapi';
+import { useState } from 'react';
 
 export const CareersClient = () => {
   const [scroll, setScroll] = useState(null);
-  const [dataCareers, setDataCareers] = useState<CareersPageAttributes | null>(
-    null,
-  );
-
   const { lang } = useChangeLanguage();
-
-  useEffect(() => {
-    (async () => {
-      try {
-        const response = await axiosInstance.get(
-          `/careers-pages?locale=${lang}`,
-        );
-        const [data] = response?.data?.data;
-        setDataCareers(data?.attributes);
-      } catch (error) {
-        console.error('Error fetching careers page data:', error);
-      }
-    })();
-  }, [lang]);
+  const data = t(careersPageData, lang);
 
   return (
     <div className="w-full">
@@ -34,14 +17,14 @@ export const CareersClient = () => {
         blockRef={scroll}
         hiddenArrow={false}
         visibleDescriiton={false}
-        title={dataCareers?.titleHero ?? ''}
-        description={dataCareers?.subtitleHero ?? ''}
+        title={data.titleHero}
+        description={data.subtitleHero}
         heightScreen={true}
         styleSection="pb-[100px]"
-        secondDescription={dataCareers?.descriptionHero}
-        titleScroll={dataCareers?.titleScroll}
+        secondDescription={data.descriptionHero}
+        titleScroll={data.titleScroll}
       />
-      <Vacansies setScroll={setScroll} dataCareers={dataCareers} />
+      <Vacansies setScroll={setScroll} dataCareers={data} />
     </div>
   );
 };

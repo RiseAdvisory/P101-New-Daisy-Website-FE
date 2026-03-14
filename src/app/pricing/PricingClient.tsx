@@ -4,36 +4,20 @@ import { GridPricingCard } from '@/components/pricingPage/GridPricingCard';
 import { PricingHero } from '@/components/pricingPage/HeroPricing';
 import Separator from '@/components/separator/Separator';
 import { Switch } from '@/components/ui/switch';
-import axiosInstance from '@/helpers/axiosConfig';
 import { cn } from '@/lib/utils';
 import { useChangePage } from '@/store/currentPage';
 import { useChangeLanguage } from '@/store/language';
+import { pricingPageData } from '@/lib/constants/pricing/pricingPageData';
+import { t } from '@/lib/constants/i18n';
 import { useEffect, useRef, useState } from 'react';
-
-// Using inline interface since the API response structure is complex
-// and varies between business/professional pricing types
-interface PricingData {
-  title?: string;
-  switchAnnually?: {
-    monthly?: string;
-    annually?: string;
-  };
-  business?: {
-    pricingCard?: unknown[];
-  };
-  professional?: {
-    pricingCard?: unknown[];
-  };
-  enterprise?: unknown;
-}
 
 export const PricingClient = () => {
   const [activePricingPage, setActivePricingPage] = useState('');
   const [checkedMonth, setCheckedMonth] = useState(true);
   const [isRecommended, setIsRecommended] = useState(false);
-  const [dataPricing, setDataPricing] = useState<PricingData | null>(null);
   const { lang } = useChangeLanguage();
   const { page } = useChangePage();
+  const dataPricing = t(pricingPageData, lang);
 
   useEffect(() => {
     if (page.includes('business')) {
@@ -58,17 +42,6 @@ export const PricingClient = () => {
       gridCardRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-  useEffect(() => {
-    (async () => {
-      try {
-        const response = await axiosInstance.get(`/pricings?locale=${lang}`);
-        setDataPricing(response?.data?.data[0]?.attributes);
-      } catch (error) {
-        console.error('Error fetching pricing data:', error);
-      }
-    })();
-  }, [lang]);
 
   const pay = dataPricing?.switchAnnually;
 
