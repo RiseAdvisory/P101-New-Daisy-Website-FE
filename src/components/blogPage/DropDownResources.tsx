@@ -6,9 +6,13 @@ import Link from 'next/link';
 import { Dispatch, SetStateAction, useEffect, useState, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import { resourcesDropDownList } from '@/lib/constants/resources/resourcesList';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { useChangePage } from '@/store/currentPage';
+import { t } from '@/lib/constants/i18n';
+import {
+  resourcesDropdownData,
+  ResourcesDropdownPageType,
+} from '@/lib/constants/shared/resourcesDropdownData';
 
 interface IPropsResources {
   openBlog: boolean;
@@ -22,7 +26,6 @@ export const DropdownResources = ({
   setActive,
 }: IPropsResources) => {
   const [currentImage, setCurrentImage] = useState(resourcesDropDownList[3]);
-  const [listResources, setListResources] = useState<any>();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleMouseEnter = (index: any) => {
@@ -37,27 +40,14 @@ export const DropdownResources = ({
   const { lang } = useChangeLanguage();
   const currentPage = localStorage.getItem('activePage');
 
-  useEffect(() => {
-    let endpointResourseLink = 'resource-list-business-types';
+  let pageType: ResourcesDropdownPageType = 'business';
+  if (currentPage === '/customer') {
+    pageType = 'customer';
+  } else if (currentPage === '/professional') {
+    pageType = 'professional';
+  }
 
-    if (currentPage === '/customer') {
-      endpointResourseLink = 'resource-list-customer-types';
-    }
-    if (currentPage === '/business') {
-      endpointResourseLink = 'resource-list-business-types';
-    }
-    if (currentPage === '/professional') {
-      endpointResourseLink = 'resource-list-independent-types';
-    }
-
-    (async () => {
-      const response = await axiosInstance.get(
-        `/${endpointResourseLink}?locale=${lang}`,
-      );
-      const [data] = response?.data?.data;
-      setListResources(data?.attributes);
-    })();
-  }, [lang, currentPage]);
+  const listResources = t(resourcesDropdownData[pageType], lang);
 
   // Click outside to close dropdown
   useEffect(() => {
@@ -92,32 +82,31 @@ export const DropdownResources = ({
   const contentElement = (
     <div className="flex-1">
       <h2 className="font-semibold text-2xl text-primary rtl:text-right">
-        {listResources?.title}
+        {listResources.title}
       </h2>
       <Separator className="my-6 bg-[#E8E9E9]" />
       <ul className="grid grid-cols-2 gap-x-4 md:gap-x-8 lg:gap-x-[100px] gap-y-4 max-w-full">
-        {listResources?.itemResources &&
-          listResources?.itemResources.map((item: any, index: number) => (
-            <li
-              key={index}
-              className="py-[18px] hover:bg-[#E8E9E9] rounded-xl hover:outline-gray-300 hover:outline w-full"
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
+        {listResources.itemResources.map((item, index) => (
+          <li
+            key={index}
+            className="py-[18px] hover:bg-[#E8E9E9] rounded-xl hover:outline-gray-300 hover:outline w-full"
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link
+              href={item.nav}
+              onClick={() => setOpenBlog(!openBlog)}
+              className="block ltr:pl-4 rtl:pr-4"
             >
-              <Link
-                href={item.nav}
-                onClick={() => setOpenBlog(!openBlog)}
-                className="block ltr:pl-4 rtl:pr-4"
-              >
-                <h3 className="text-base ltr:font-montserrat font-semibold rtl:font-cairo rtl:text-right">
-                  {item.title}
-                </h3>
-                <p className="text-base ltr:font-montserrat text-primaryBtn rtl:font-cairo rtl:text-right">
-                  {item.description}
-                </p>
-              </Link>
-            </li>
-          ))}
+              <h3 className="text-base ltr:font-montserrat font-semibold rtl:font-cairo rtl:text-right">
+                {item.title}
+              </h3>
+              <p className="text-base ltr:font-montserrat text-primaryBtn rtl:font-cairo rtl:text-right">
+                {item.description}
+              </p>
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

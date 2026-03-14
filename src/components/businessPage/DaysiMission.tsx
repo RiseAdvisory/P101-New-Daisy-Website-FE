@@ -1,38 +1,23 @@
-'use list';
+'use client';
 import { MissionIcon } from '@/assets/icons/missioIcon/MissionIcon';
-import axiosInstance from '@/helpers/axiosConfig';
-
-import { useEffect, useState } from 'react';
-
 import { StarsIcons } from '../../assets/icons/starsIcon/StarIcons';
 import { StrategyIcons } from '../../assets/icons/strategyIcon/StrategyIcon';
 import { useChangeLanguage } from '@/store/language';
+import { t } from '@/lib/constants/i18n';
+import { daisyMissionData } from '@/lib/constants/shared/daisyMissionData';
 
 export const DaysiMission = () => {
-  const [daisyMissions, setDaisyMission] = useState<any>();
-
   const { lang } = useChangeLanguage();
+  const data = t(daisyMissionData, lang);
 
-  useEffect(() => {
-    (async function getJoinDaisy() {
-      try {
-        const response = await axiosInstance.get(
-          `/daisymissions?locale=${lang}`,
-        );
-        setDaisyMission(response?.data?.data?.[0]?.attributes);
-      } catch {
-        // Error fetching daisy missions
-      }
-    })();
-  }, [lang]);
   return (
     <div className="bg-[#F8F5F3] pt-[80px] pb-[112px] md:px-[64px]">
       <div className="flex flex-col mx-auto text-center pt-20 px-3">
         <h1 className="text-center mx-[20px] md:mx-0  text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
-          {daisyMissions?.title}
+          {data.title}
         </h1>
         <p className="text-center text-[#455150] mt-3 ltr:font-montserrat md:text-base md:font-normal">
-          {daisyMissions?.subtitle}
+          {data.subtitle}
         </p>
       </div>
       <ul className="px-4 mt-12 space-y-6 md:flex rtl:md:gap-6 md:gap-6 md:justify-center md:space-y-0">
@@ -41,10 +26,10 @@ export const DaysiMission = () => {
             {<MissionIcon />}
           </span>
           <h4 className="font-semibold text-2xl mt-6">
-            {daisyMissions?.listDaisyMission[0].title}
+            {data.listDaisyMission[0].title}
           </h4>
           <p className="mt-2 ltr:font-montserrat font-normal">
-            {daisyMissions?.listDaisyMission[0].description}
+            {data.listDaisyMission[0].description}
           </p>
         </li>
         <li className="bg-white rounded-[12px] p-6 border">
@@ -52,10 +37,10 @@ export const DaysiMission = () => {
             {<StarsIcons />}
           </span>
           <h4 className="font-semibold text-2xl mt-6">
-            {daisyMissions?.listDaisyMission[1].title}
+            {data.listDaisyMission[1].title}
           </h4>
           <p className="mt-2 ltr:font-montserrat font-normal">
-            {daisyMissions?.listDaisyMission[1].description}
+            {data.listDaisyMission[1].description}
           </p>
         </li>
         <li className="bg-white rounded-[12px] p-6 border">
@@ -63,10 +48,10 @@ export const DaysiMission = () => {
             {<StrategyIcons />}
           </span>
           <h4 className="font-semibold text-2xl mt-6">
-            {daisyMissions?.listDaisyMission[2].title}
+            {data.listDaisyMission[2].title}
           </h4>
           <p className="mt-2 ltr:font-montserrat font-normal">
-            {daisyMissions?.listDaisyMission[2].description}
+            {data.listDaisyMission[2].description}
           </p>
         </li>
       </ul>

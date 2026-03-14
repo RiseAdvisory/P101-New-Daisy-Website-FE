@@ -4,8 +4,9 @@ import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import clsx from 'clsx';
 import { Button } from '../ui/button';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
+import { headerData } from '@/lib/constants/shared/headerData';
+import { t } from '@/lib/constants/i18n';
 import { useChangePage } from '@/store/currentPage';
 import { useMyContext } from '@/app/MyContext';
 
@@ -13,23 +14,14 @@ const ToggleButton = ({ className }: { className?: string }) => {
   const pathname = usePathname();
   const router = useRouter();
   const [active, setActive] = useState('');
-  const [dataList, setDataList] = useState<any>();
   const { lang } = useChangeLanguage();
   const { userChange, setUserChange } = useMyContext();
 
-  useEffect(() => {
-    (async () => {
-      const response = await axiosInstance.get(
-        `/options-toogles?locale=${lang}`,
-      );
-      const [data] = response?.data?.data;
-      // Filter out customer option
-      const filteredOptions = data?.attributes?.optionsToogle?.filter(
-        (option: any) => !option.path.includes('customer'),
-      );
-      setDataList(filteredOptions);
-    })();
-  }, [lang]);
+  const data = t(headerData, lang);
+  // Filter out customer option
+  const dataList = data.optionsToogle.filter(
+    (option) => !option.path.includes('customer'),
+  );
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

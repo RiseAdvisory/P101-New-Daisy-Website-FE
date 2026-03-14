@@ -1,29 +1,20 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { MailIcons } from '@/assets/icons/mailIcons/mailicons';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { t } from '@/lib/constants/i18n';
+import { signUpBlockData } from '@/lib/constants/shared/signUpBlockData';
 
 export const SignUpBlog = ({ style }: { style?: string }) => {
-  const [textSignUp, setSignUp] = useState<any>();
   const [email, setEmail] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
 
   const { lang } = useChangeLanguage();
-
-  useEffect(() => {
-    (async () => {
-      const response = await axiosInstance.get(
-        `/sign-up-blocks?locale=${lang}`,
-      );
-      const [data] = response?.data?.data;
-      setSignUp(data?.attributes?.signUpText);
-    })();
-  }, [lang]);
+  const textSignUp = t(signUpBlockData, lang);
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
@@ -42,11 +33,13 @@ export const SignUpBlog = ({ style }: { style?: string }) => {
     }
 
     try {
-      await axiosInstance.post('/sign-up-form-emails', {
-        signUpEmail: email,
+      await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ signUpEmail: email }),
       });
       setEmail('');
-      toast.success(textSignUp?.succesSend);
+      toast.success(textSignUp.succesSend);
     } catch {
       toast.error('Error sending email');
     }
@@ -58,10 +51,10 @@ export const SignUpBlog = ({ style }: { style?: string }) => {
     >
       <div className="md:mr-10 md:w-[60%]">
         <h2 className="text-primary font-bold text-[24px] leading-[30px] capitalize md:text-[32px] md:leading-10">
-          {textSignUp?.title}
+          {textSignUp.title}
         </h2>
         <p className="text-[#455150] ltr:font-montserrat text-base md:mt-4">
-          {textSignUp?.description}
+          {textSignUp.description}
         </p>
       </div>
       <div className="md:flex md:flex-col md:justify-start md:w-[480px]">
@@ -72,7 +65,7 @@ export const SignUpBlog = ({ style }: { style?: string }) => {
               type="email"
               value={email}
               onChange={handleEmailChange}
-              placeholder={textSignUp?.placeholderEmail}
+              placeholder={textSignUp.placeholderEmail}
             />
             <MailIcons style="absolute top-[11px] left-[12px]" />
           </div>
@@ -80,13 +73,13 @@ export const SignUpBlog = ({ style }: { style?: string }) => {
             className="ltr:rounded-l-none rtl:rounded-r-none ltr:font-montserrat px-4 py-[14px] font-medium"
             onClick={handleSubscribe}
           >
-            {textSignUp?.subscribeText}
+            {textSignUp.subscribeText}
           </Button>
         </div>
         {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
         <p className="ltr:font-montserrat text-sm text-[#455150]">
-          {textSignUp?.about}
-          <span className="font-semibold"> {textSignUp?.privacy}</span>
+          {textSignUp.about}
+          <span className="font-semibold"> {textSignUp.privacy}</span>
         </p>
       </div>
       <ToastContainer />

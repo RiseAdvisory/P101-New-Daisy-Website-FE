@@ -2,9 +2,9 @@
 import { GooglePlayIcons } from '@/assets/icons/appMarket/GooglePlayIcons';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import axiosInstance from '@/helpers/axiosConfig';
 import { useChangeLanguage } from '@/store/language';
+import { buttonAppData } from '@/lib/constants/shared/buttonAppData';
+import { t } from '@/lib/constants/i18n';
 
 export const PlayMarketButton = ({
   className,
@@ -15,17 +15,9 @@ export const PlayMarketButton = ({
   hoverText?: string;
   fillHover?: string;
 }) => {
-  const [dataButton, setDataBuutton] = useState<any>();
   const router = useRouter();
   const { lang } = useChangeLanguage();
-
-  useEffect(() => {
-    (async () => {
-      const response = await axiosInstance.get(`/button-plays?locale=${lang}`);
-      const [data] = response?.data?.data;
-      setDataBuutton(data?.attributes?.objectAppPlay?.googlePlay);
-    })();
-  }, [lang]);
+  const dataButton = t(buttonAppData, lang).googlePlay;
 
   return (
     <>
