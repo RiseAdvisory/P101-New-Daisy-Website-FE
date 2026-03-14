@@ -22,11 +22,11 @@ export default function SolutionsIndexPage() {
   return (
     <main className="min-h-screen">
       {/* Hero */}
-      <section className="bg-gradient-to-b from-gray-50 to-white px-4 py-16 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
+      <section className="bg-gradient-to-b from-[#F8F5F3] to-white px-4 py-16 text-center">
+        <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">
           Solutions for Every Beauty Business
         </h1>
-        <p className="mx-auto max-w-2xl text-lg text-gray-600">
+        <p className="mx-auto max-w-2xl text-lg text-[#455150]">
           Whether you run a salon, spa, barbershop, or med spa — Daisy has
           AI-powered tools built specifically for your business type.
         </p>
@@ -39,19 +39,19 @@ export default function SolutionsIndexPage() {
             <Link
               key={solution.slug}
               href={`/solutions/${solution.slug}`}
-              className="group rounded-lg border border-gray-200 p-6 transition-all hover:border-green-300 hover:shadow-md"
+              className="group rounded-lg border border-[#E8E9E9] p-6 transition-all hover:border-primaryBtn/40 hover:shadow-md"
             >
-              <h2 className="mb-2 text-xl font-semibold text-gray-900 group-hover:text-green-700">
+              <h2 className="mb-2 text-xl font-semibold text-[#172524] group-hover:text-primary">
                 {solution.heroTitle}
               </h2>
-              <p className="mb-4 line-clamp-3 text-sm text-gray-600">
+              <p className="mb-4 line-clamp-3 text-sm text-[#455150]">
                 {solution.heroSubtitle}
               </p>
               <div className="flex flex-wrap gap-1">
                 {solution.keywords.slice(0, 3).map((kw) => (
                   <span
                     key={kw}
-                    className="rounded bg-gray-100 px-2 py-0.5 text-xs text-gray-500"
+                    className="rounded bg-[#F8F5F3] px-2 py-0.5 text-xs text-[#586968]"
                   >
                     {kw}
                   </span>
@@ -63,24 +63,24 @@ export default function SolutionsIndexPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gray-50 px-4 py-16 text-center">
-        <h2 className="mb-4 text-2xl font-bold text-gray-900">
+      <section className="bg-[#F8F5F3] px-4 py-16 text-center">
+        <h2 className="mb-4 text-2xl font-bold text-[#172524]">
           Not sure which solution fits?
         </h2>
-        <p className="mb-6 text-gray-600">
+        <p className="mb-6 text-[#455150]">
           Talk to our team and get a personalized recommendation for your beauty
           business.
         </p>
         <div className="flex justify-center gap-4">
           <Link
             href="/get-the-app"
-            className="inline-block rounded-lg bg-green-600 px-8 py-3 font-semibold text-white transition-colors hover:bg-green-700"
+            className="inline-block rounded-lg bg-primaryBtn px-8 py-3 font-semibold text-white transition-colors hover:bg-primary"
           >
             Get Started Free
           </Link>
           <Link
             href="/contact"
-            className="inline-block rounded-lg border border-gray-300 px-8 py-3 font-semibold text-gray-700 transition-colors hover:bg-gray-100"
+            className="inline-block rounded-lg border border-[#E8E9E9] px-8 py-3 font-semibold text-[#455150] transition-colors hover:bg-[#F8F5F3]"
           >
             Contact Us
           </Link>

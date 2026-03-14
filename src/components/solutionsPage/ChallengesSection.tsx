@@ -17,9 +17,9 @@ export function ChallengesSection({ challenges }: ChallengesSectionProps) {
   }
 
   return (
-    <section className="w-full bg-[#F8F9FA] px-4 py-16 md:py-24">
+    <section className="w-full bg-[#F8F5F3] px-4 py-16 md:py-24">
       <div className="mx-auto max-w-6xl">
-        <h2 className="mb-12 text-center text-[28px] font-semibold leading-9 text-gray-900 md:text-[36px] md:leading-[44px]">
+        <h2 className="mb-12 text-center text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
           The Challenges You Face
         </h2>
 
@@ -27,15 +27,15 @@ export function ChallengesSection({ challenges }: ChallengesSectionProps) {
           {challenges.map((challenge, index) => (
             <div
               key={index}
-              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow duration-200 hover:shadow-md"
+              className="rounded-2xl border border-[#E8E9E9] bg-white p-6 shadow-sm transition-shadow duration-200 hover:shadow-md"
             >
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-red-50">
                 <AlertCircle className="h-6 w-6 text-red-500" />
               </div>
-              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+              <h3 className="mb-2 text-lg font-semibold text-[#172524]">
                 {challenge.title}
               </h3>
-              <p className="text-sm leading-relaxed text-gray-600">
+              <p className="text-sm leading-relaxed text-[#455150]">
                 {challenge.description}
               </p>
             </div>

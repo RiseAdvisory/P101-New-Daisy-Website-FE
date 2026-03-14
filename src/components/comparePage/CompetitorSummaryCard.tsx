@@ -32,7 +32,7 @@ function MiniRating({ rating }: { rating: FeatureRating }) {
           key={level}
           className={cn(
             'h-1.5 w-4 rounded-full',
-            level <= rating ? 'bg-green-500' : 'bg-gray-200',
+            level <= rating ? 'bg-primary' : 'bg-[#E8E9E9]',
           )}
         />
       ))}
@@ -56,13 +56,13 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
       className={cn(
         'relative overflow-hidden rounded-2xl border bg-white p-6 shadow-sm transition-shadow hover:shadow-md',
         recommended
-          ? 'border-green-300 ring-2 ring-green-100'
-          : 'border-gray-200',
+          ? 'border-primaryBtn/40 ring-2 ring-primary/10'
+          : 'border-[#E8E9E9]',
       )}
     >
       {/* Rank Badge */}
       {rank !== undefined && (
-        <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-br-xl bg-gray-100 text-sm font-bold text-gray-600">
+        <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-br-xl bg-[#F8F5F3] text-sm font-bold text-[#455150]">
           #{rank}
         </div>
       )}
@@ -70,7 +70,7 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
       {/* Recommended Badge */}
       {recommended && (
         <div className="absolute right-4 top-4">
-          <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-700 uppercase">
+          <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary uppercase">
             Recommended
           </span>
         </div>
@@ -80,27 +80,27 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
         {/* Name & Description */}
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h3 className="text-xl font-bold text-gray-900">
+            <h3 className="text-xl font-bold text-[#172524]">
               {competitor.name}
             </h3>
             {competitor.founded && (
-              <p className="mt-0.5 text-xs text-gray-400">
+              <p className="mt-0.5 text-xs text-[#D5D9D9]">
                 Founded {competitor.founded}
                 {competitor.headquarters && ` - ${competitor.headquarters}`}
               </p>
             )}
           </div>
           {avgRating !== null && (
-            <div className="flex items-center gap-1 rounded-lg bg-gray-50 px-2.5 py-1.5">
-              <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
-              <span className="text-sm font-bold text-gray-700">
+            <div className="flex items-center gap-1 rounded-lg bg-[#F8F5F3] px-2.5 py-1.5">
+              <Star className="h-4 w-4 fill-[#A67F6B] text-[#A67F6B]" />
+              <span className="text-sm font-bold text-[#455150]">
                 {avgRating}
               </span>
             </div>
           )}
         </div>
 
-        <p className="mt-3 text-sm leading-relaxed text-gray-600 line-clamp-2">
+        <p className="mt-3 text-sm leading-relaxed text-[#455150] line-clamp-2">
           {competitor.description}
         </p>
 
@@ -108,7 +108,7 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
         <div className="mt-5 grid grid-cols-3 gap-x-4 gap-y-2">
           {featureLabels.map(({ key, label }) => (
             <div key={key} className="flex items-center justify-between gap-1">
-              <span className="text-xs text-gray-500 truncate">{label}</span>
+              <span className="text-xs text-[#586968] truncate">{label}</span>
               <MiniRating
                 rating={features[key as keyof typeof features] as FeatureRating}
               />
@@ -117,15 +117,15 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
         </div>
 
         {/* Pricing */}
-        <div className="mt-5 flex items-center justify-between rounded-lg bg-gray-50 px-4 py-3">
+        <div className="mt-5 flex items-center justify-between rounded-lg bg-[#F8F5F3] px-4 py-3">
           <div>
-            <p className="text-xs text-gray-500">Starting at</p>
-            <p className="text-sm font-bold text-gray-900">
+            <p className="text-xs text-[#586968]">Starting at</p>
+            <p className="text-sm font-bold text-[#172524]">
               {competitor.pricing.startingPrice}
             </p>
           </div>
           {competitor.pricing.hasFreePlan && (
-            <span className="rounded-full bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-700">
+            <span className="rounded-full bg-primary/5 px-2.5 py-1 text-xs font-medium text-primary">
               Free plan
             </span>
           )}
@@ -136,7 +136,7 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
           href={competitor.website}
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-gray-500 transition-colors hover:text-gray-700"
+          className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[#586968] transition-colors hover:text-[#455150]"
         >
           Visit {competitor.name}
           <ExternalLink className="h-3.5 w-3.5" />
