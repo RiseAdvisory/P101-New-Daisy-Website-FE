@@ -14,18 +14,24 @@ export const CarouselBusinessMobile = ({
 }: {
   dataBusiness: any;
 }) => {
-  const firstImage = new URL(
-    dataBusiness?.firstImage.data[0].attributes.url,
-    baseURLImage,
-  ).href;
-  const secondImage = new URL(
-    dataBusiness?.secondImage.data[0].attributes.url,
-    baseURLImage,
-  ).href;
-  const thirdImage = new URL(
-    dataBusiness?.thirdImage.data[0].attributes.url,
-    baseURLImage,
-  ).href;
+  const getImageUrl = (
+    mobileField: string,
+    desktopField: string,
+  ): string => {
+    const mobileUrl =
+      dataBusiness?.[mobileField]?.data?.[0]?.attributes?.url;
+    const desktopUrl =
+      dataBusiness?.[desktopField]?.data?.[0]?.attributes?.url;
+    return new URL(mobileUrl ?? desktopUrl, baseURLImage).href;
+  };
+
+  const firstImage = getImageUrl('firstMobileImage', 'firstImage');
+  const secondImage = getImageUrl('secondMobileImage', 'secondImage');
+  const thirdImage = getImageUrl('thirdMobileImage', 'thirdImage');
+
+  const firstStyle = dataBusiness?.firstMobileImageStyle ?? dataBusiness?.firstImageStyle;
+  const secondStyle = dataBusiness?.secondMobileImageStyle ?? dataBusiness?.secondImageStyle;
+  const thirdStyle = dataBusiness?.thirdMobileImageStyle ?? dataBusiness?.thirdImageStyle;
 
   return (
     <Carousel
@@ -47,6 +53,7 @@ export const CarouselBusinessMobile = ({
             <Image
               src={firstImage}
               className={'w-[220px] !h-[350px] '}
+              style={firstStyle}
               alt="Daisy business features overview"
               width={1000}
               height={1000}
@@ -58,6 +65,7 @@ export const CarouselBusinessMobile = ({
             <Image
               src={secondImage}
               className={'w-[250px] h-[330px]'}
+              style={secondStyle}
               alt="Daisy business features overview"
               width={1000}
               height={1000}
@@ -69,6 +77,7 @@ export const CarouselBusinessMobile = ({
             <Image
               src={thirdImage}
               className={'w-[220px] h-[350px]'}
+              style={thirdStyle}
               alt="Daisy business features overview"
               width={1000}
               height={1000}

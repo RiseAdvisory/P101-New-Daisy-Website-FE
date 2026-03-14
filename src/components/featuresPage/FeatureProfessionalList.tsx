@@ -23,10 +23,19 @@ export const FeatureProfessionalList = ({
       <ul className="mt-[48px] mx-auto">
         {dataList &&
           dataList.map((item: any, index: number) => {
-            const imageBlock = new URL(
-              item.attributes.picture.data[0].attributes.formats.large.url,
-              baseURLImage,
-            ).href;
+            const mobileImageData =
+              item.attributes.mobilePicture?.data?.[0]?.attributes;
+            const desktopImageData =
+              item.attributes.picture.data[0].attributes;
+            const imageUrl =
+              mobileImageData?.formats?.large?.url ??
+              mobileImageData?.url ??
+              desktopImageData?.formats?.large?.url ??
+              desktopImageData?.url;
+            const imageBlock = new URL(imageUrl, baseURLImage).href;
+
+            const imageStyle = item?.attributes?.mobileStylePicture ??
+              item?.attributes?.stylePicture;
 
             return (
               <li key={index} className="text-start mx-auto ">
@@ -47,7 +56,7 @@ export const FeatureProfessionalList = ({
                     style={{
                       padding: '16px 10px',
                       boxSizing: 'border-box',
-                      ...item?.attributes?.stylePicture,
+                      ...imageStyle,
                     }}
                   />
                 </div>
