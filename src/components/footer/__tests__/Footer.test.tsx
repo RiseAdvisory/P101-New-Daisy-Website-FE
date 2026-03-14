@@ -6,7 +6,6 @@ import {
   act,
 } from '@testing-library/react';
 import { Footer } from '../Footer';
-import * as apiCache from '@/helpers/apiCache';
 
 // Mock next/navigation
 jest.mock('next/navigation', () => ({
@@ -72,32 +71,9 @@ jest.mock('@/components/buttonApp/AppStoreButton', () => ({
   AppStoreButton: () => <button data-testid="app-store-btn">App Store</button>,
 }));
 
-// Mock apiCache
-jest.mock('@/helpers/apiCache', () => ({
-  getCached: jest.fn(),
-  setCache: jest.fn(),
-  getCacheKey: jest.fn((key, locale) => `${key}:${locale}`),
-  CACHE_KEYS: {
-    FOOTER_SOCIAL: 'footer-social',
-    FOOTER_NAV: 'footer-nav',
-  },
-}));
-
 describe('Footer', () => {
   let mockRequestIdleCallback: jest.Mock;
   let originalRequestIdleCallback: typeof window.requestIdleCallback;
-
-  const mockSocialLinks = {
-    facebook_url: 'https://facebook.com/test',
-    twitter_url: 'https://twitter.com/test',
-    linkedin_url: 'https://linkedin.com/test',
-    instagram_url: 'https://instagram.com/test',
-  };
-
-  const mockNavList = [
-    { nav: '/about', name: 'About' },
-    { nav: '/contact', name: 'Contact' },
-  ];
 
   beforeEach(() => {
     jest.clearAllMocks();
@@ -112,9 +88,6 @@ describe('Footer', () => {
     });
     window.requestIdleCallback =
       mockRequestIdleCallback as unknown as typeof window.requestIdleCallback;
-
-    // Reset apiCache mocks
-    (apiCache.getCached as jest.Mock).mockReturnValue(null);
   });
 
   afterEach(() => {
@@ -133,38 +106,19 @@ describe('Footer', () => {
     expect(logoLink).toHaveAttribute('href', '/');
   });
 
-  describe('caching behavior', () => {
-    it('checks cache on mount', async () => {
-      render(<Footer />);
+  it('renders navigation links from constants', () => {
+    render(<Footer />);
+    // Footer now uses hardcoded i18n constants, so nav items should be present immediately
+    expect(screen.getByText('About Us')).toBeInTheDocument();
+    expect(screen.getByText('Privacy Policy')).toBeInTheDocument();
+  });
 
-      // Should check cache for both social and nav data
-      expect(apiCache.getCacheKey).toHaveBeenCalledWith('footer-social', 'en');
-      expect(apiCache.getCacheKey).toHaveBeenCalledWith('footer-nav', 'en');
-      expect(apiCache.getCached).toHaveBeenCalled();
-    });
-
-    it('uses cached data when available', async () => {
-      // Set up cache to return data
-      (apiCache.getCached as jest.Mock).mockImplementation((key: string) => {
-        if (key === 'footer-social:en') return mockSocialLinks;
-        if (key === 'footer-nav:en') return mockNavList;
-        return null;
-      });
-
-      render(<Footer />);
-
-      // Wait for state updates
-      await act(async () => {
-        await new Promise((resolve) => setTimeout(resolve, 0));
-      });
-
-      // Should display cached navigation
-      expect(screen.getByText('About')).toBeInTheDocument();
-      expect(screen.getByText('Contact')).toBeInTheDocument();
-
-      // Should display social icons
-      expect(screen.getByTestId('facebook-icon')).toBeInTheDocument();
-    });
+  it('renders social links', () => {
+    render(<Footer />);
+    expect(screen.getByTestId('facebook-icon')).toBeInTheDocument();
+    expect(screen.getByTestId('twitter-icon')).toBeInTheDocument();
+    expect(screen.getByTestId('linkedin-icon')).toBeInTheDocument();
+    expect(screen.getByTestId('instagram-icon')).toBeInTheDocument();
   });
 
   describe('deferred FreshChat loading', () => {
