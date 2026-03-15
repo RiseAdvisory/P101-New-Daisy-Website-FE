@@ -9,21 +9,19 @@ export const SectionBusiness = ({ listOption }: any) => {
   };
 
   return (
-    <div>
-      <ul className="hidden md:flex mx-auto space-x-4 rtl:space-x-reverse justify-center items-center mt-[33px]">
+    <div className="hidden md:block mt-[33px] px-4">
+      <ul className="flex flex-wrap gap-3 justify-center">
         {listOption &&
-          listOption.map((item: any, index: number) => {
-            return (
-              <li key={index}>
-                <Button
-                  className="py-3 px-[67px] border border-[#586968] bg-white/10  text-white"
-                  onClick={() => handleScroll(item.path)}
-                >
-                  {item.title}
-                </Button>
-              </li>
-            );
-          })}
+          listOption.map((item: any, index: number) => (
+            <li key={index}>
+              <Button
+                className="py-3 px-6 border border-[#586968] bg-white/10 text-white whitespace-nowrap"
+                onClick={() => handleScroll(item.path)}
+              >
+                {item.title}
+              </Button>
+            </li>
+          ))}
       </ul>
     </div>
   );

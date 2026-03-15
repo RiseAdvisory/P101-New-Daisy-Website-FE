@@ -87,36 +87,22 @@ describe('FeatureProfessionalList', () => {
     );
   });
 
-  it('applies mobileStylePicture when provided', () => {
-    const item = makeListItem({
-      mobileStylePicture: { padding: '8px', width: '100%' },
-      mobilePicture: {
-        data: [
-          {
-            attributes: {
-              url: '/images/features/professional/mobile.png',
-            },
-          },
-        ],
-      },
-    });
-
-    render(
+  it('applies stylePicture to the ImageWrapper div', () => {
+    const { container } = render(
       <FeatureProfessionalList
         title="Section"
         desription="Description"
-        dataList={[item]}
+        dataList={[makeListItem()]}
       />,
     );
 
-    const images = screen.getAllByRole('img');
-    const featureImage = images.find(
-      (img) => img.getAttribute('alt') === 'Test Feature',
-    );
-    expect(featureImage!.style.padding).toBe('8px');
+    // ImageWrapper div receives the stylePicture padding
+    const wrapperDiv = container.querySelector('.z-10') as HTMLElement;
+    expect(wrapperDiv).toBeTruthy();
+    expect(wrapperDiv.style.padding).toBe('20px');
   });
 
-  it('falls back to stylePicture when mobileStylePicture is absent', () => {
+  it('image uses objectFit contain', () => {
     render(
       <FeatureProfessionalList
         title="Section"
@@ -129,7 +115,7 @@ describe('FeatureProfessionalList', () => {
     const featureImage = images.find(
       (img) => img.getAttribute('alt') === 'Test Feature',
     );
-    expect(featureImage!.style.padding).toBe('20px');
+    expect(featureImage!.style.objectFit).toBe('contain');
   });
 
   it('falls back to desktop url when mobilePicture has no formats', () => {

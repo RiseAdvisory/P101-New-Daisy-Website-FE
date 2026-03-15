@@ -39,35 +39,40 @@ export const FeaturesCustomerItem = ({
           style={{ width: 'calc(100% + 32px)' }}
         />
 
-        {mobileImage ? (
-          <>
+        <div
+          className="w-full flex-1 min-h-[250px] md:min-h-[300px] overflow-hidden"
+          style={{ padding: '24px', ...item?.stylePicture }}
+        >
+          {mobileImage ? (
+            <>
+              <Image
+                className="hidden md:block w-full h-full"
+                width={1000}
+                height={1000}
+                src={desktopImage}
+                style={{ objectFit: 'contain' }}
+                alt={item.title}
+              />
+              <Image
+                className="md:hidden w-full h-full"
+                width={1000}
+                height={1000}
+                src={mobileImage}
+                style={{ objectFit: 'contain', ...(item?.mobileStylePicture ?? {}) }}
+                alt={item.title}
+              />
+            </>
+          ) : (
             <Image
-              className={cn(`mx-auto ${item.style} hidden md:block`)}
+              className="w-full h-full"
               width={1000}
               height={1000}
               src={desktopImage}
-              style={item?.sizePicture}
+              style={{ objectFit: 'contain' }}
               alt={item.title}
             />
-            <Image
-              className={cn(`mx-auto ${item.style} md:hidden`)}
-              width={1000}
-              height={1000}
-              src={mobileImage}
-              style={item?.mobileStylePicture ?? item?.sizePicture}
-              alt={item.title}
-            />
-          </>
-        ) : (
-          <Image
-            className={cn(`mx-auto ${item.style}`)}
-            width={1000}
-            height={1000}
-            src={desktopImage}
-            style={item?.sizePicture}
-            alt={item.title}
-          />
-        )}
+          )}
+        </div>
       </li>
       <div className="mx-4 last:hidden md:hidden">
         <Separator className="bg-[#586968] w-full mt-20 " />

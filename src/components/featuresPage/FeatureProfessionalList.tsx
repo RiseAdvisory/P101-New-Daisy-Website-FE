@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Separator } from '../ui/separator';
 import leaf from '../../assets/images/features/professional/Group.png';
+import { ImageWrapper } from './ImageWrapper';
 
 export const FeatureProfessionalList = ({
   title,
@@ -32,9 +33,7 @@ export const FeatureProfessionalList = ({
               desktopImageData?.formats?.large?.url ??
               desktopImageData?.url;
 
-            const imageStyle =
-              item?.attributes?.mobileStylePicture ??
-              item?.attributes?.stylePicture;
+            const desktopStyle = item?.attributes?.stylePicture;
 
             return (
               <li key={index} className="text-start mx-auto ">
@@ -46,17 +45,11 @@ export const FeatureProfessionalList = ({
                     width={150}
                     height={240}
                   />
-                  <Image
+                  <ImageWrapper
                     src={imageUrl}
                     alt={item.attributes.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-contain z-10"
-                    style={{
-                      padding: '16px 10px',
-                      boxSizing: 'border-box',
-                      ...imageStyle,
-                    }}
+                    stylePicture={desktopStyle}
+                    zIndex="z-10"
                   />
                 </div>
                 <h3 className="mt-6 ltr:font-montserrat font-semibold text-[20px] leading-[30px] text-white">

@@ -28,7 +28,7 @@ export const featuresCustomerData: I18nContent<FeaturesCustomerPageContent> = {
               },
             ],
           },
-          stylePicture: { width: '80%', maxWidth: '300px', margin: '0 auto' },
+          stylePicture: { width: '100%', height: '100%', padding: '24px', objectFit: 'contain' },
           mobilePicture: {
             data: null,
           },
@@ -55,7 +55,7 @@ export const featuresCustomerData: I18nContent<FeaturesCustomerPageContent> = {
               },
             ],
           },
-          stylePicture: { width: '80%', maxWidth: '300px', margin: '0 auto' },
+          stylePicture: { width: '100%', height: '100%', padding: '24px', objectFit: 'contain' },
           mobilePicture: {
             data: null,
           },
@@ -88,7 +88,7 @@ export const featuresCustomerData: I18nContent<FeaturesCustomerPageContent> = {
               },
             ],
           },
-          stylePicture: { width: '80%', maxWidth: '300px', margin: '0 auto' },
+          stylePicture: { width: '100%', height: '100%', padding: '24px', objectFit: 'contain' },
           mobilePicture: {
             data: null,
           },
@@ -115,7 +115,7 @@ export const featuresCustomerData: I18nContent<FeaturesCustomerPageContent> = {
               },
             ],
           },
-          stylePicture: { width: '80%', maxWidth: '300px', margin: '0 auto' },
+          stylePicture: { width: '100%', height: '100%', padding: '24px', objectFit: 'contain' },
           mobilePicture: {
             data: null,
           },

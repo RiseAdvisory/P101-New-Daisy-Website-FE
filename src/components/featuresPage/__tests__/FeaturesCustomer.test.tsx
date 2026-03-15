@@ -82,9 +82,8 @@ describe('FeaturesCustomerItem', () => {
     expect(images[1].style.padding).toBe('8px');
   });
 
-  it('falls back to sizePicture when mobileStylePicture is absent', () => {
+  it('mobile image gets objectFit contain when mobileStylePicture is absent', () => {
     const item = makeItem({
-      sizePicture: { width: '200px' },
       mobilePicture: {
         data: [
           { attributes: { url: '/images/features/customer/mobile.png' } },
@@ -95,8 +94,8 @@ describe('FeaturesCustomerItem', () => {
     render(<FeaturesCustomerItem item={item} index={0} />);
 
     const images = screen.getAllByRole('img');
-    // Mobile image should fall back to sizePicture
-    expect(images[1].style.width).toBe('200px');
+    // Mobile image should have objectFit contain
+    expect(images[1].style.objectFit).toBe('contain');
   });
 
   it('renders single image when mobilePicture data is null', () => {
