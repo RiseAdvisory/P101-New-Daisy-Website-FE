@@ -32,9 +32,8 @@ export const FeatureProfessionalList = ({
               desktopImageData?.formats?.large?.url ??
               desktopImageData?.url;
 
-            const imageStyle =
-              item?.attributes?.mobileStylePicture ??
-              item?.attributes?.stylePicture;
+            const desktopStyle = item?.attributes?.stylePicture;
+            const mobileStyle = item?.attributes?.mobileStylePicture ?? desktopStyle;
 
             return (
               <li key={index} className="text-start mx-auto ">
@@ -46,18 +45,22 @@ export const FeatureProfessionalList = ({
                     width={150}
                     height={240}
                   />
-                  <Image
-                    src={imageUrl}
-                    alt={item.attributes.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-contain z-10"
+                  <div
+                    className="absolute inset-0 z-10"
                     style={{
-                      padding: '16px 10px',
-                      boxSizing: 'border-box',
-                      ...imageStyle,
+                      padding: '24px',
+                      ...desktopStyle,
                     }}
-                  />
+                  >
+                    <Image
+                      src={imageUrl}
+                      alt={item.attributes.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="!relative w-full h-full"
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
                 </div>
                 <h3 className="mt-6 ltr:font-montserrat font-semibold text-[20px] leading-[30px] text-white">
                   {item.attributes.title}

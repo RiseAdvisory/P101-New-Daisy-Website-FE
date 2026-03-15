@@ -122,7 +122,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       perPeriod: '/ ',
       annualy: 'year',
       monthly: 'month',
-      discount: 'Save up to 20%',
+      discount: 'Save up to 17%',
       textStarted: 'Get Started',
       everything: 'Everything in',
       mobileView: 'View all features',
@@ -274,7 +274,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       pricingCard: [
         {
           title: 'Starter',
-          subTitle: 'First 100 bookings Free',
+          subTitle: '14-day free trial, no credit card required',
           description:
             'Just starting out but want to build a solid customer base & brand and while growing their presence as a professional service provider',
           price: '25',
@@ -303,7 +303,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'Professional',
-          subTitle: 'First 100 bookings Free',
+          subTitle: '14-day free trial, no credit card required',
           description:
             'Ideal for Solo Experienced Professionals that want to provide an exceptional experience to their customers',
           price: '50',
@@ -329,7 +329,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'Elite',
-          subTitle: 'First 100 bookings Free',
+          subTitle: '14-day free trial, no credit card required',
           description:
             'Ideal for Solo Experienced Professionals that want to provide an exceptional experience to their customers',
           price: '100',
@@ -405,7 +405,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       perPeriod: '/ ',
       annualy: 'سنة',
       monthly: 'شهر',
-      discount: 'وفر حتى 20%',
+      discount: 'وفر حتى 17%',
       textStarted: 'ابدأ الآن',
       everything: 'كل شيء في',
       mobileView: 'عرض جميع الميزات',
@@ -553,7 +553,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       pricingCard: [
         {
           title: 'مبتدئ',
-          subTitle: 'أول 100 حجز مجاناً',
+          subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
             'بدأت للتو ولكن تريد بناء قاعدة عملاء قوية وعلامة تجارية مع تنمية حضورك كمقدم خدمة محترف',
           price: '25',
@@ -582,7 +582,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'محترف',
-          subTitle: 'أول 100 حجز مجاناً',
+          subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
             'مثالي للمحترفين ذوي الخبرة الذين يرغبون في تقديم تجربة استثنائية لعملائهم',
           price: '50',
@@ -608,7 +608,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'النخبة',
-          subTitle: 'أول 100 حجز مجاناً',
+          subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
             'مثالي للمحترفين ذوي الخبرة الذين يرغبون في تقديم تجربة استثنائية لعملائهم',
           price: '100',

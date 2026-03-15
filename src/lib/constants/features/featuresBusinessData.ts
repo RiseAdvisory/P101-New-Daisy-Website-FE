@@ -65,8 +65,10 @@ function item(
         data: [{ attributes: { url: imageUrl } }],
       },
       stylePicture: stylePicture ?? {
+        width: '100%',
+        height: '100%',
         padding: '24px',
-        boxSizing: 'border-box',
+        objectFit: 'contain',
       },
       mobilePicture: mobileImageUrl
         ? { data: [{ attributes: { url: mobileImageUrl } }] }
@@ -184,12 +186,12 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
           'AI suggests upsells and add-on services based on client history, increasing average ticket value.',
           '/images/features/business/multilingual-ai.png',
         ),
-        item(
-          4,
-          'Automated Follow-ups',
-          'Never lose a client. AI sends personalized follow-up messages, rebooking reminders, and birthday offers automatically.',
-          '/images/features/business/247-concierge.png',
-        ),
+        //item(
+        //  4,
+        //  'Automated Follow-ups',
+        //  'Never lose a client. AI sends personalized follow-up messages, rebooking reminders, and birthday offers automatically.',
+        //  '/images/features/business/247-concierge.png',
+        //),
       ],
       booking: [
         item(
@@ -210,12 +212,12 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
           'Reduce no-shows by up to 90% with automatic SMS and push notification reminders sent before appointments.',
           '/images/features/business/schedule-page.png',
         ),
-        item(
-          4,
-          'Waitlist Management',
-          'Fill cancelled slots automatically from your waitlist. Keep your schedule full and your revenue flowing.',
-          '/images/pages/business/scroll/integrations.png',
-        ),
+        //item(
+        //  4,
+        //  'Waitlist Management',
+        //  'Fill cancelled slots automatically from your waitlist. Keep your schedule full and your revenue flowing.',
+        //  '/images/pages/business/scroll/integrations.png',
+        //),
       ],
       communication: [
         item(
@@ -238,26 +240,26 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
         ),
       ],
       marketing: [
+        //item(
+        //  1,
+        //  'Marketplace Listing',
+        //  'Get discovered by thousands of new customers on the Daisy marketplace. Your profile showcases your best work.',
+        //  '/images/pages/business/scroll/vendor-intro.png',
+        //),
         item(
           1,
-          'Marketplace Listing',
-          'Get discovered by thousands of new customers on the Daisy marketplace. Your profile showcases your best work.',
-          '/images/pages/business/scroll/vendor-intro.png',
-        ),
-        item(
-          2,
           'Cashback Campaigns',
           'Create irresistible cashback offers that bring customers back again and again. You set the rules.',
           '/images/pages/customer/scroll/experiences.png',
         ),
         item(
-          3,
+          2,
           'Referral Program',
           'Turn happy clients into brand ambassadors. Reward them for bringing friends and family to your business.',
           '/images/pages/business/scroll/analytics.png',
         ),
         item(
-          4,
+          3,
           'Social Media Tools',
           'Share your services, reviews, and offers directly to Instagram, Facebook, and more with one click.',
           '/images/pages/customer/scroll/rating.png',
@@ -286,7 +288,7 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
       growth: [
         item(
           1,
-          'Multi-Branch Management',
+          'Multi-Workspace Management',
           'Manage multiple locations from one dashboard. Compare performance and allocate resources where they matter most.',
           '/images/pages/business/scroll/vendor-intro.png',
         ),
@@ -302,12 +304,12 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
           'Build lasting relationships with built-in loyalty programs. Reward repeat customers and increase lifetime value.',
           '/images/pages/business/scroll/vendor-intro.png',
         ),
-        item(
-          4,
-          'Subscription Plans',
-          'Offer membership packages that guarantee recurring revenue. Clients commit, you grow.',
-          '/images/pages/business/scroll/vendor-intro.png',
-        ),
+        //item(
+        //  4,
+        //  'Subscription Plans',
+        //  'Offer membership packages that guarantee recurring revenue. Clients commit, you grow.',
+        //  '/images/pages/business/scroll/vendor-intro.png',
+        //),
       ],
       control: [
         item(

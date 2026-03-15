@@ -50,18 +50,18 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
             onValueChange={(value) => setActiveTab(value)}
             className="flex flex-col-reverse bg-primary"
           >
-            <TabsList className="flex flex-col justify-center py-6 mr-6 ml-16 bg-primary px-6 h-auto">
-              <ul className="flex gap-4 text-start bg-primary rounded-xl rtl:flex-row-reverse">
+            <TabsList className="flex flex-col justify-center py-6 bg-primary px-2 h-auto w-full">
+              <ul className="flex gap-4 bg-primary rounded-xl w-full">
                 {dataList.map((item, index) => (
-                  <li className="group" key={index}>
+                  <li className="group flex-1 min-w-0" key={index}>
                     <TabsTrigger
-                      className="!items-start border border-transparent rtl:!items-end !bg-transparent data-[state=active]:border-white data-[state=active]:!bg-white/10 group hover:!bg-white/10 flex flex-col w-full text-[16px] !p-6 text-[#172524] mt-[10px] justify-start rounded-lg cursor-pointer capitalize whitespace-nowrap py-3"
+                      className="!items-start border border-transparent rtl:!items-end !bg-transparent data-[state=active]:border-white data-[state=active]:!bg-white/10 group hover:!bg-white/10 flex flex-col w-full text-[16px] !p-6 text-[#172524] mt-[10px] justify-start rounded-lg cursor-pointer capitalize py-3 h-full"
                       value={item.attributes.title}
                     >
-                      <span className="w-fit !text-start text-white ltr:font-montserrat rtl:font-cairo font-semibold text-[20px] leading-[30px]">
+                      <span className="w-fit text-white ltr:font-montserrat ltr:text-left rtl:font-cairo rtl:text-right font-semibold text-[20px] leading-[30px]">
                         {item.attributes.title}
                       </span>
-                      <p className="text-white rtl:font-cairo">
+                      <p className="text-white ltr:text-left rtl:text-right rtl:font-cairo text-wrap">
                         {item.attributes.description}
                       </p>
                     </TabsTrigger>
@@ -79,18 +79,19 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
                   className="px-2 py-4 w-full mx-auto"
                 >
                   <div className="w-full h-[480px] bg-[#435655] rounded-[16px] border border-[#828E8E] relative overflow-hidden">
-                    <Image
-                      src={imageUrl}
-                      alt={item.attributes.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 100vw"
-                      className="object-contain z-20"
-                      style={{
-                        padding: '24px',
-                        boxSizing: 'border-box',
-                        ...item?.attributes?.stylePicture,
-                      }}
-                    />
+                    <div
+                      className="absolute inset-0 z-20"
+                      style={{ padding: '24px', ...item?.attributes?.stylePicture }}
+                    >
+                      <Image
+                        src={imageUrl}
+                        alt={item.attributes.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 100vw"
+                        className="!relative w-full h-full"
+                        style={{ objectFit: 'contain' }}
+                      />
+                    </div>
                     <Image
                       src={bgImage}
                       alt=""
