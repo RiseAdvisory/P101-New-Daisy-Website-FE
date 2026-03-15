@@ -186,12 +186,6 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
           'AI suggests upsells and add-on services based on client history, increasing average ticket value.',
           '/images/features/business/multilingual-ai.png',
         ),
-        //item(
-        //  4,
-        //  'Automated Follow-ups',
-        //  'Never lose a client. AI sends personalized follow-up messages, rebooking reminders, and birthday offers automatically.',
-        //  '/images/features/business/247-concierge.png',
-        //),
       ],
       booking: [
         item(
@@ -212,12 +206,6 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
           'Reduce no-shows by up to 90% with automatic SMS and push notification reminders sent before appointments.',
           '/images/features/business/schedule-page.png',
         ),
-        //item(
-        //  4,
-        //  'Waitlist Management',
-        //  'Fill cancelled slots automatically from your waitlist. Keep your schedule full and your revenue flowing.',
-        //  '/images/pages/business/scroll/integrations.png',
-        //),
       ],
       communication: [
         item(
@@ -240,12 +228,6 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
         ),
       ],
       marketing: [
-        //item(
-        //  1,
-        //  'Marketplace Listing',
-        //  'Get discovered by thousands of new customers on the Daisy marketplace. Your profile showcases your best work.',
-        //  '/images/pages/business/scroll/vendor-intro.png',
-        //),
         item(
           1,
           'Cashback Campaigns',
@@ -304,12 +286,6 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
           'Build lasting relationships with built-in loyalty programs. Reward repeat customers and increase lifetime value.',
           '/images/pages/business/scroll/vendor-intro.png',
         ),
-        //item(
-        //  4,
-        //  'Subscription Plans',
-        //  'Offer membership packages that guarantee recurring revenue. Clients commit, you grow.',
-        //  '/images/pages/business/scroll/vendor-intro.png',
-        //),
       ],
       control: [
         item(

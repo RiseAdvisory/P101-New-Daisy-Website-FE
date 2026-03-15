@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Image from 'next/image';
 import { useChangeLanguage } from '@/store/language';
 import { FeatureListItem } from '@/types/strapi';
+import { ImageWrapper } from './ImageWrapper';
 
 interface TabsFeaturesProfessionalProps {
   itemsList: any;
@@ -83,19 +84,11 @@ export const TabsFeaturesProfessional: React.FC<
                   className="px-2 py-4 w-full pr-16 rtl:pr-0 rtl:pl-16 my-auto"
                 >
                   <div className="w-full min-h-[480px] bg-[#435655] rounded-[16px] border border-[#828E8E] relative overflow-hidden">
-                    <div
-                      className="absolute inset-0 z-20"
-                      style={{ padding: '24px', ...item?.attributes?.stylePicture }}
-                    >
-                      <Image
-                        src={imageUrl}
-                        alt={item.attributes.title}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        className="!relative w-full h-full"
-                        style={{ objectFit: 'contain' }}
-                      />
-                    </div>
+                    <ImageWrapper
+                      src={imageUrl}
+                      alt={item.attributes.title}
+                      stylePicture={item?.attributes?.stylePicture}
+                    />
                     <Image
                       src={bgImage}
                       alt=""

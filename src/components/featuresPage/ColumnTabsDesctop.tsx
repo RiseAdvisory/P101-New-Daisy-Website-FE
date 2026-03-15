@@ -4,6 +4,7 @@ import Separator from '../separator/Separator';
 import Image from 'next/image';
 import { useChangeLanguage } from '@/store/language';
 import { FeatureListItem } from '@/types/strapi';
+import { ImageWrapper } from './ImageWrapper';
 
 interface ColumnTabsDesctopProps {
   itemsList: any;
@@ -79,19 +80,12 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
                   className="px-2 py-4 w-full mx-auto"
                 >
                   <div className="w-full h-[480px] bg-[#435655] rounded-[16px] border border-[#828E8E] relative overflow-hidden">
-                    <div
-                      className="absolute inset-0 z-20"
-                      style={{ padding: '24px', ...item?.attributes?.stylePicture }}
-                    >
-                      <Image
-                        src={imageUrl}
-                        alt={item.attributes.title}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 100vw"
-                        className="!relative w-full h-full"
-                        style={{ objectFit: 'contain' }}
-                      />
-                    </div>
+                    <ImageWrapper
+                      src={imageUrl}
+                      alt={item.attributes.title}
+                      stylePicture={item?.attributes?.stylePicture}
+                      sizes="(max-width: 768px) 100vw, 100vw"
+                    />
                     <Image
                       src={bgImage}
                       alt=""
