@@ -52,6 +52,38 @@ export interface TextItemPricing {
   mobileHide: string;
 }
 
+export interface CalculateInputField {
+  title: string;
+  description: string;
+}
+
+export interface CalculateToggleField {
+  title: string;
+  description: string;
+  minimumTierIndex?: number;
+}
+
+export interface CalculateData {
+  firstInput: CalculateInputField;
+  secondInput: CalculateInputField;
+  thirdInput: CalculateInputField;
+  toggleFirst: CalculateToggleField;
+  toggleSecond: CalculateToggleField;
+  toggleThird: CalculateToggleField;
+}
+
+export interface PricingTypeData {
+  title: string;
+  subtitle: string;
+  pricingCard: PricingCardItem[];
+  calculate: CalculateData;
+}
+
+export interface BtnTextCalculate {
+  yes: string;
+  no: string;
+}
+
 export interface PricingPageContent {
   title: string;
   switchAnnually: {
@@ -64,12 +96,9 @@ export interface PricingPageContent {
   textFreeTrial: string;
   textRecomended: string;
   textItemPricing: TextItemPricing;
-  business: {
-    pricingCard: PricingCardItem[];
-  };
-  professional: {
-    pricingCard: PricingCardItem[];
-  };
+  btnTextCalculate: BtnTextCalculate;
+  business: PricingTypeData;
+  professional: PricingTypeData;
   enterprise: EnterpriseData;
   resetCalculation: ResetCalculation;
 }
@@ -99,7 +128,44 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       mobileView: 'View all features',
       mobileHide: 'Hide features',
     },
+    btnTextCalculate: {
+      yes: 'Yes',
+      no: 'No',
+    },
     business: {
+      title: 'Find the Right Plan',
+      subtitle: 'Answer a few questions to find the best plan for your business',
+      calculate: {
+        firstInput: {
+          title: 'How many staff do you have?',
+          description: 'Number of staff members who will use the platform',
+        },
+        secondInput: {
+          title: 'How many workspaces?',
+          description:
+            'Number of locations or workspaces your business operates from',
+        },
+        thirdInput: {
+          title: 'How many countries?',
+          description: 'Number of countries you operate in',
+        },
+        toggleFirst: {
+          title: 'Do you provide home services?',
+          description: 'Mobile or on-site services at customer locations',
+          minimumTierIndex: 0,
+        },
+        toggleSecond: {
+          title: 'Do you need assisted onboarding?',
+          description:
+            'Help with setting up your services menu and platform configuration',
+          minimumTierIndex: 2,
+        },
+        toggleThird: {
+          title: 'Do you need concierge support?',
+          description: 'Dedicated 24/7 support for your business',
+          minimumTierIndex: 1,
+        },
+      },
       pricingCard: [
         {
           title: 'Basic',
@@ -172,6 +238,39 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       ],
     },
     professional: {
+      title: 'Find the Right Plan',
+      subtitle:
+        'Answer a few questions to find the best plan for your career',
+      calculate: {
+        firstInput: {
+          title: 'How many staff do you have?',
+          description: 'Number of professionals in your team',
+        },
+        secondInput: {
+          title: 'How many workspaces?',
+          description: 'Number of locations you work from',
+        },
+        thirdInput: {
+          title: 'How many countries?',
+          description: 'Number of countries you operate in',
+        },
+        toggleFirst: {
+          title: 'Do you provide home services?',
+          description: 'Mobile or on-site services at customer locations',
+          minimumTierIndex: 0,
+        },
+        toggleSecond: {
+          title: 'Do you need assisted onboarding?',
+          description:
+            'Help with setting up your services menu and platform configuration',
+          minimumTierIndex: 2,
+        },
+        toggleThird: {
+          title: 'Do you need concierge support?',
+          description: 'Dedicated 24/7 support for your practice',
+          minimumTierIndex: 1,
+        },
+      },
       pricingCard: [
         {
           title: 'Starter',
@@ -312,7 +411,42 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       mobileView: 'عرض جميع الميزات',
       mobileHide: 'إخفاء الميزات',
     },
+    btnTextCalculate: {
+      yes: 'نعم',
+      no: 'لا',
+    },
     business: {
+      title: 'اعثر على الخطة المناسبة',
+      subtitle: 'أجب عن بعض الأسئلة للعثور على أفضل خطة لعملك',
+      calculate: {
+        firstInput: {
+          title: 'كم عدد الموظفين لديك؟',
+          description: 'عدد الموظفين الذين سيستخدمون المنصة',
+        },
+        secondInput: {
+          title: 'كم عدد مساحات العمل؟',
+          description: 'عدد المواقع أو مساحات العمل التي يعمل منها عملك',
+        },
+        thirdInput: {
+          title: 'كم عدد الدول؟',
+          description: 'عدد الدول التي تعمل فيها',
+        },
+        toggleFirst: {
+          title: 'هل تقدم خدمات منزلية؟',
+          description: 'خدمات متنقلة أو في موقع العميل',
+          minimumTierIndex: 0,
+        },
+        toggleSecond: {
+          title: 'هل تحتاج مساعدة في الإعداد؟',
+          description: 'مساعدة في إعداد قائمة خدماتك وتكوين المنصة',
+          minimumTierIndex: 2,
+        },
+        toggleThird: {
+          title: 'هل تحتاج دعم مخصص؟',
+          description: 'دعم مخصص على مدار الساعة لعملك',
+          minimumTierIndex: 1,
+        },
+      },
       pricingCard: [
         {
           title: 'أساسي',
@@ -385,6 +519,37 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       ],
     },
     professional: {
+      title: 'اعثر على الخطة المناسبة',
+      subtitle: 'أجب عن بعض الأسئلة للعثور على أفضل خطة لمسيرتك المهنية',
+      calculate: {
+        firstInput: {
+          title: 'كم عدد الموظفين لديك؟',
+          description: 'عدد المحترفين في فريقك',
+        },
+        secondInput: {
+          title: 'كم عدد مساحات العمل؟',
+          description: 'عدد المواقع التي تعمل منها',
+        },
+        thirdInput: {
+          title: 'كم عدد الدول؟',
+          description: 'عدد الدول التي تعمل فيها',
+        },
+        toggleFirst: {
+          title: 'هل تقدم خدمات منزلية؟',
+          description: 'خدمات متنقلة أو في موقع العميل',
+          minimumTierIndex: 0,
+        },
+        toggleSecond: {
+          title: 'هل تحتاج مساعدة في الإعداد؟',
+          description: 'مساعدة في إعداد قائمة خدماتك وتكوين المنصة',
+          minimumTierIndex: 2,
+        },
+        toggleThird: {
+          title: 'هل تحتاج دعم مخصص؟',
+          description: 'دعم مخصص على مدار الساعة لممارستك',
+          minimumTierIndex: 1,
+        },
+      },
       pricingCard: [
         {
           title: 'مبتدئ',
