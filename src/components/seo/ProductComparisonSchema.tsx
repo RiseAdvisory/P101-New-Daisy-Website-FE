@@ -1,5 +1,3 @@
-'use client';
-
 interface ProductItem {
   name: string;
   description: string;

@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { AboutClient } from './AboutClient';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'About Us | The Daisy - Beauty & Wellness Marketplace',
@@ -42,5 +44,17 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  return <AboutClient />;
+  return (
+    <>
+      <WebPageSchema
+        title="About Us | The Daisy - Beauty & Wellness Marketplace"
+        description="Learn about The Daisy, the beauty and wellness marketplace connecting customers with salons, spas, and beauty professionals."
+        url="https://www.jointhedaisy.com/about"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'About Us', url: 'https://www.jointhedaisy.com/about' }]}
+      />
+      <AboutClient />
+    </>
+  );
 }

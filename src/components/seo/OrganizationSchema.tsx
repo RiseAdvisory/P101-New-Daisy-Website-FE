@@ -8,7 +8,18 @@ export function OrganizationSchema() {
     description:
       'The Daisy is a platform connecting businesses, professionals, and customers for exceptional service experiences.',
     sameAs: [
-      // Add social media links when available
+      'https://www.threads.net/@thedaisy.app',
+      'https://twitter.com/thedaisy_app',
+      'https://www.linkedin.com/company/the-daisy/',
+      'https://www.instagram.com/thedaisy.app/',
+    ],
+    areaServed: [
+      { '@type': 'Country', name: 'United Arab Emirates' },
+      { '@type': 'Country', name: 'Saudi Arabia' },
+      { '@type': 'Country', name: 'Kuwait' },
+      { '@type': 'Country', name: 'Bahrain' },
+      { '@type': 'Country', name: 'Oman' },
+      { '@type': 'Country', name: 'Qatar' },
     ],
     contactPoint: {
       '@type': 'ContactPoint',

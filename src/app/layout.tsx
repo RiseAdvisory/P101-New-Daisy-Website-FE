@@ -7,6 +7,7 @@ import ClientSideEffect from '@/helpers/ClientSideEffect';
 import { MyUserTypeProvider } from './MyContext';
 import { OrganizationSchema } from '@/components/seo/OrganizationSchema';
 import { SoftwareApplicationSchema } from '@/components/seo/SoftwareApplicationSchema';
+import { WebSiteSchema } from '@/components/seo/WebSiteSchema';
 import { WebVitals } from '@/components/performance/WebVitals';
 import { ServiceWorkerRegistration } from '@/components/performance/ServiceWorkerRegistration';
 
@@ -101,6 +102,7 @@ export default function RootLayout({
         />
         <OrganizationSchema />
         <SoftwareApplicationSchema />
+        <WebSiteSchema />
       </head>
       <body
         className={`${openSans.variable} ${montserrat.variable} ${inter.variable} ${cairo.variable} font-openSans rtl:font-cairo`}

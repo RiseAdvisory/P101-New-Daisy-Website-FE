@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import {
   alternativePages,
   bestAlternativesPages,
@@ -16,6 +18,19 @@ export const metadata: Metadata = {
     'vagaro alternative',
     'salon software alternatives',
   ],
+  openGraph: {
+    title: 'Salon Software Alternatives — Compare & Switch | Daisy',
+    description:
+      'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives with AI features, pricing, and Arabic support.',
+    url: 'https://www.jointhedaisy.com/alternative',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Salon Software Alternatives — Compare & Switch | Daisy',
+    description:
+      'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives.',
+  },
   alternates: {
     canonical: 'https://www.jointhedaisy.com/alternative',
   },
@@ -24,6 +39,14 @@ export const metadata: Metadata = {
 export default function AlternativeIndexPage() {
   return (
     <main className="min-h-screen">
+      <WebPageSchema
+        title="Salon Software Alternatives — Compare & Switch | Daisy"
+        description="Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives."
+        url="https://www.jointhedaisy.com/alternative"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'Alternatives', url: 'https://www.jointhedaisy.com/alternative' }]}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#F8F5F3] to-white px-4 py-16 text-center">
         <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">

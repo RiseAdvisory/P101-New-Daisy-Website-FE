@@ -1,5 +1,3 @@
-'use client';
-
 interface SolutionHeroProps {
   title: string;
   subtitle: string;

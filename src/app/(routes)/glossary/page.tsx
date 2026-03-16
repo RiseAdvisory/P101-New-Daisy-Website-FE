@@ -1,17 +1,32 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { glossaryEntries } from '@/lib/constants/glossary/glossaryData';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Beauty & Salon Software Glossary | Key Terms Explained | Daisy',
   description:
     'Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations of salon management, AI receptionist, cashback booking, and more.',
+  keywords: [
+    'salon software glossary',
+    'beauty industry terms',
+    'salon management definitions',
+    'AI receptionist definition',
+    'cashback booking explained',
+  ],
   openGraph: {
     title: 'Beauty & Salon Software Glossary | Key Terms Explained',
     description:
       'Understand key beauty industry and salon software terms. Expert definitions and comparisons.',
     url: 'https://www.jointhedaisy.com/glossary',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Beauty & Salon Software Glossary | Key Terms Explained | Daisy',
+    description:
+      'Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations.',
   },
   alternates: {
     canonical: 'https://www.jointhedaisy.com/glossary',
@@ -21,6 +36,14 @@ export const metadata: Metadata = {
 export default function GlossaryIndex() {
   return (
     <main className="min-h-screen bg-white">
+      <WebPageSchema
+        title="Beauty & Salon Software Glossary | Key Terms Explained | Daisy"
+        description="Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations."
+        url="https://www.jointhedaisy.com/glossary"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'Glossary', url: 'https://www.jointhedaisy.com/glossary' }]}
+      />
       <section className="bg-[#F8F5F3] px-4 py-16 md:py-24">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">

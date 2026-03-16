@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { FaqClient } from './FaqClient';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'FAQ - Beauty Booking Questions | The Daisy',
@@ -43,5 +45,17 @@ export const metadata: Metadata = {
 };
 
 export default function FaqPage() {
-  return <FaqClient />;
+  return (
+    <>
+      <WebPageSchema
+        title="FAQ - Beauty Booking Questions | The Daisy"
+        description="Find answers to common questions about The Daisy beauty booking platform."
+        url="https://www.jointhedaisy.com/faq"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'FAQ', url: 'https://www.jointhedaisy.com/faq' }]}
+      />
+      <FaqClient />
+    </>
+  );
 }

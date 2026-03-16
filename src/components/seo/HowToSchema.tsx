@@ -1,5 +1,3 @@
-'use client';
-
 interface HowToStep {
   name: string;
   text: string;

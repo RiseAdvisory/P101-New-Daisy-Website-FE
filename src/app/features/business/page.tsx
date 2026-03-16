@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import { FeaturesBusinessClient } from './FeaturesBusinessClient';
 import { FeaturesBreadcrumbSchema } from '@/components/seo/FeaturesBreadcrumbSchema';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { FeatureDeepDiveLinks } from '@/components/featuresPage/FeatureDeepDiveLinks';
 
 export const metadata: Metadata = {
   title: 'AI-Powered Salon Business Features - Booking, Marketing & Payments | The Daisy',
@@ -53,7 +55,13 @@ export default function FeaturesBusinessPage() {
   return (
     <>
       <FeaturesBreadcrumbSchema pageName="Business" pageSlug="business" />
+      <WebPageSchema
+        title="AI-Powered Salon Business Features | The Daisy"
+        description="AI-powered features for salon & spa businesses: smart scheduling, booking, marketing, payments, and team management."
+        url="https://www.jointhedaisy.com/features/business"
+      />
       <FeaturesBusinessClient />
+      <FeatureDeepDiveLinks userType="business" />
     </>
   );
 }

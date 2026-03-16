@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { getGlossaryEntry } from '@/lib/constants/glossary/glossaryData';
 import { FaqSchema } from '@/components/seo/FaqSchema';

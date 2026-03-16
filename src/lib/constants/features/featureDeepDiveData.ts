@@ -2,6 +2,9 @@
 // WS3: Feature Deep-Dive Page Data — Category-level deep dives
 // =============================================================================
 
+import { professionalEntries1 } from './professionalDeepDiveEntries1';
+import { professionalEntries2 } from './professionalDeepDiveEntries2';
+
 export interface FeatureDeepDiveFaq {
   question: string;
   answer: string;
@@ -89,11 +92,11 @@ export interface FeatureDeepDive {
 
 export const featureDeepDives: FeatureDeepDive[] = [
   // =========================================================================
-  // BUSINESS: AI-Powered Intelligence
+  // BUSINESS: AI Salon Management
   // =========================================================================
   {
     slug: 'ai-salon-management',
-    categoryName: 'AI-Powered Intelligence',
+    categoryName: 'AI Salon Management',
     userType: 'business',
 
     metaTitle:
@@ -614,7 +617,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
 
     integrationPoints: [
       {
-        category: 'AI-Powered Intelligence',
+        category: 'AI Salon Management',
         slug: 'ai-salon-management',
         benefit:
           'AI optimises your booking calendar by analysing patterns, predicting demand, and suggesting schedule adjustments that maximise revenue per hour.',
@@ -941,7 +944,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
           'Appointment confirmations, reminders, and rescheduling options are sent automatically through the client\'s preferred communication channel.',
       },
       {
-        category: 'AI-Powered Intelligence',
+        category: 'AI Salon Management',
         slug: 'ai-salon-management',
         benefit:
           'AI powers conversational responses, understands client intent, and personalises message content based on client behaviour patterns.',
@@ -2510,7 +2513,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
 
     integrationPoints: [
       {
-        category: 'AI-Powered Intelligence',
+        category: 'AI Salon Management',
         slug: 'ai-salon-management',
         benefit:
           'AI surfaces predictive insights — churn risk, demand forecasting, revenue opportunities — that go beyond historical reporting into forward-looking recommendations.',
@@ -2605,4 +2608,10 @@ export const featureDeepDives: FeatureDeepDive[] = [
     ],
     relatedArticleSlugs: [],
   },
+
+  // =========================================================================
+  // PROFESSIONAL DEEP-DIVES (WS3 — 8 categories)
+  // =========================================================================
+  ...professionalEntries1,
+  ...professionalEntries2,
 ];

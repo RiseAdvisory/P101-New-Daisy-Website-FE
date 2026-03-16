@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { CustomerClient } from './CustomerClient';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Book Beauty & Salon Services | The Daisy',
@@ -40,10 +42,22 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://www.jointhedaisy.com/business',
+    canonical: 'https://www.jointhedaisy.com/customer',
   },
 };
 
 export default function CustomerPage() {
-  return <CustomerClient />;
+  return (
+    <>
+      <WebPageSchema
+        title="Book Beauty & Salon Services | The Daisy"
+        description="Book beauty, wellness & salon services with The Daisy. Discover salons near you, earn cashback rewards, manage appointments, and enjoy exclusive promotions."
+        url="https://www.jointhedaisy.com/customer"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'For Customers', url: 'https://www.jointhedaisy.com/customer' }]}
+      />
+      <CustomerClient />
+    </>
+  );
 }

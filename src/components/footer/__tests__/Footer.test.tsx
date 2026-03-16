@@ -108,9 +108,9 @@ describe('Footer', () => {
 
   it('renders navigation links from constants', () => {
     render(<Footer />);
-    // Footer now uses hardcoded i18n constants, so nav items should be present immediately
+    // Footer now uses multi-column layout with footerColumns
     expect(screen.getByText('About Us')).toBeInTheDocument();
-    expect(screen.getByText('Privacy Policy')).toBeInTheDocument();
+    expect(screen.getByText('Privacy')).toBeInTheDocument();
   });
 
   it('renders social links', () => {

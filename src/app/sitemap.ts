@@ -10,8 +10,8 @@ const BASE_URL = 'https://www.jointhedaisy.com';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Use fixed dates for static content so crawlers know what actually changed
-  const STATIC_CONTENT_DATE = '2026-03-14T00:00:00.000Z';
-  const SEO_CONTENT_DATE = '2026-03-14T00:00:00.000Z';
+  const STATIC_CONTENT_DATE = '2026-03-17T00:00:00.000Z';
+  const SEO_CONTENT_DATE = '2026-03-17T00:00:00.000Z';
   const LEGAL_DATE = '2026-01-01T00:00:00.000Z';
 
   // Main pages (root / redirects to /business, so not included separately)

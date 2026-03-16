@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { getGuide } from '@/lib/constants/guides/guideData';
 import { FaqSchema } from '@/components/seo/FaqSchema';
