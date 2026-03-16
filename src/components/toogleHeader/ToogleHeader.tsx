@@ -42,7 +42,9 @@ const ToggleButton = ({ className }: { className?: string }) => {
       if (pathname.startsWith('/features') && storedPath) {
         const cleanPath = storedPath.replace('/', '');
         const newPath = `/features/${cleanPath === 'customer' ? 'business' : cleanPath}`;
-        if (pathname !== newPath) {
+        // Only redirect top-level /features/{userType} pages, not nested sub-pages
+        const featureSegments = pathname.replace('/features/', '').split('/');
+        if (featureSegments.length === 1 && pathname !== newPath) {
           router.replace(newPath);
         }
       }
