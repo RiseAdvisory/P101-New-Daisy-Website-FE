@@ -91,7 +91,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
   // BUSINESS: AI-Powered Intelligence
   // =========================================================================
   {
-    slug: 'ai-powered-intelligence',
+    slug: 'ai-salon-management',
     categoryName: 'AI-Powered Intelligence',
     userType: 'business',
 
@@ -597,7 +597,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
     integrationPoints: [
       {
         category: 'AI-Powered Intelligence',
-        slug: 'ai-powered-intelligence',
+        slug: 'ai-salon-management',
         benefit:
           'AI optimises your booking calendar by analysing patterns, predicting demand, and suggesting schedule adjustments that maximise revenue per hour.',
       },
@@ -685,7 +685,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
     ],
 
     relatedCategories: [
-      'ai-powered-intelligence',
+      'ai-salon-management',
       'payment-processing',
       'team-management',
     ],
@@ -916,7 +916,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
       },
       {
         category: 'AI-Powered Intelligence',
-        slug: 'ai-powered-intelligence',
+        slug: 'ai-salon-management',
         benefit:
           'AI powers conversational responses, understands client intent, and personalises message content based on client behaviour patterns.',
       },
@@ -998,7 +998,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
     ],
 
     relatedCategories: [
-      'ai-powered-intelligence',
+      'ai-salon-management',
       'booking-management',
       'marketing-promotions',
     ],
@@ -2445,7 +2445,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
     integrationPoints: [
       {
         category: 'AI-Powered Intelligence',
-        slug: 'ai-powered-intelligence',
+        slug: 'ai-salon-management',
         benefit:
           'AI surfaces predictive insights — churn risk, demand forecasting, revenue opportunities — that go beyond historical reporting into forward-looking recommendations.',
       },
@@ -2533,7 +2533,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
     ],
 
     relatedCategories: [
-      'ai-powered-intelligence',
+      'ai-salon-management',
       'payment-processing',
       'team-management',
     ],

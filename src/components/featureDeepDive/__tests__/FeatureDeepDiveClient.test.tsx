@@ -84,7 +84,7 @@ describe('FeatureDeepDiveClient', () => {
     render(
       <FeatureDeepDiveClient
         userType="business"
-        slug="ai-powered-intelligence"
+        slug="ai-salon-management"
       />,
     );
 
@@ -103,7 +103,7 @@ describe('FeatureDeepDiveClient', () => {
     render(
       <FeatureDeepDiveClient
         userType="business"
-        slug="ai-powered-intelligence"
+        slug="ai-salon-management"
       />,
     );
 
@@ -116,7 +116,7 @@ describe('FeatureDeepDiveClient', () => {
     render(
       <FeatureDeepDiveClient
         userType="business"
-        slug="ai-powered-intelligence"
+        slug="ai-salon-management"
       />,
     );
 
@@ -129,7 +129,7 @@ describe('FeatureDeepDiveClient', () => {
     render(
       <FeatureDeepDiveClient
         userType="business"
-        slug="ai-powered-intelligence"
+        slug="ai-salon-management"
       />,
     );
 
@@ -142,7 +142,7 @@ describe('FeatureDeepDiveClient', () => {
     render(
       <FeatureDeepDiveClient
         userType="business"
-        slug="ai-powered-intelligence"
+        slug="ai-salon-management"
       />,
     );
 
@@ -155,7 +155,7 @@ describe('FeatureDeepDiveClient', () => {
     render(
       <FeatureDeepDiveClient
         userType="business"
-        slug="ai-powered-intelligence"
+        slug="ai-salon-management"
       />,
     );
 
@@ -167,7 +167,7 @@ describe('FeatureDeepDiveClient', () => {
     render(
       <FeatureDeepDiveClient
         userType="business"
-        slug="ai-powered-intelligence"
+        slug="ai-salon-management"
       />,
     );
 
@@ -180,7 +180,7 @@ describe('FeatureDeepDiveClient', () => {
     render(
       <FeatureDeepDiveClient
         userType="business"
-        slug="ai-powered-intelligence"
+        slug="ai-salon-management"
       />,
     );
 

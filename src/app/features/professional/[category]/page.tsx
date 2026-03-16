@@ -32,6 +32,11 @@ export function generateMetadata({
       url: `https://www.jointhedaisy.com/features/professional/${params.category}`,
       type: 'website',
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: data.metaTitle,
+      description: data.metaDescription,
+    },
     alternates: {
       canonical: `https://www.jointhedaisy.com/features/professional/${params.category}`,
     },
