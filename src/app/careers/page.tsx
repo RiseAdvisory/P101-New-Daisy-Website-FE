@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { CareersClient } from './CareersClient';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Careers | The Daisy - Beauty Tech Jobs',
@@ -43,5 +45,17 @@ export const metadata: Metadata = {
 };
 
 export default function CareersPage() {
-  return <CareersClient />;
+  return (
+    <>
+      <WebPageSchema
+        title="Careers | The Daisy - Beauty Tech Jobs"
+        description="Join The Daisy team and help build the future of beauty and wellness booking. Explore open positions."
+        url="https://www.jointhedaisy.com/careers"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'Careers', url: 'https://www.jointhedaisy.com/careers' }]}
+      />
+      <CareersClient />
+    </>
+  );
 }

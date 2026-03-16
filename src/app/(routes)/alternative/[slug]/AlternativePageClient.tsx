@@ -1,5 +1,3 @@
-'use client';
-
 import { getAlternativePageData } from '@/lib/constants/competitors/comparisonPages';
 import { getRelatedAlternativePages } from '@/lib/constants/competitors/comparisonPages';
 import { getCompetitor } from '@/lib/constants/competitors';

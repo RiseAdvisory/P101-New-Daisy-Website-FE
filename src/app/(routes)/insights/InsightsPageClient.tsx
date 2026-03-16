@@ -1,5 +1,3 @@
-'use client';
-
 import { industryStats } from '@/lib/constants/insights/insightData';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 

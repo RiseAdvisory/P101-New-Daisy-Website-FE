@@ -1,4 +1,3 @@
-'use client';
 
 import { Network, CheckCircle2 } from 'lucide-react';
 

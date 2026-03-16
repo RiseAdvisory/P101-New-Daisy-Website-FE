@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { PricingClient } from './PricingClient';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Pricing Plans for Salons & Spas | The Daisy',
@@ -43,5 +45,17 @@ export const metadata: Metadata = {
 };
 
 export default function PricingPage() {
-  return <PricingClient />;
+  return (
+    <>
+      <WebPageSchema
+        title="Pricing Plans for Salons & Spas | The Daisy"
+        description="Flexible pricing plans for salons, spas, and beauty professionals. Choose monthly or annual billing."
+        url="https://www.jointhedaisy.com/pricing"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'Pricing', url: 'https://www.jointhedaisy.com/pricing' }]}
+      />
+      <PricingClient />
+    </>
+  );
 }

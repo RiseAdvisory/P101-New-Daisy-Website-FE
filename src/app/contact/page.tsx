@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { ContactClient } from './ContactClient';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Contact Us | The Daisy - Beauty Booking Platform',
@@ -42,5 +44,17 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  return <ContactClient />;
+  return (
+    <>
+      <WebPageSchema
+        title="Contact Us | The Daisy - Beauty Booking Platform"
+        description="Get in touch with The Daisy team. Questions about our beauty booking platform, salon partnerships, or customer support?"
+        url="https://www.jointhedaisy.com/contact"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'Contact', url: 'https://www.jointhedaisy.com/contact' }]}
+      />
+      <ContactClient />
+    </>
+  );
 }

@@ -1,17 +1,32 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { guideEntries } from '@/lib/constants/guides/guideData';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Salon Business Guides | How-To Guides for Beauty Businesses | Daisy',
   description:
     'Step-by-step guides for salon owners: reduce no-shows, get more clients, choose the right software, set up online booking, and grow your beauty business.',
+  keywords: [
+    'salon business guides',
+    'how to reduce no-shows salon',
+    'salon online booking setup',
+    'beauty business growth tips',
+    'salon software guide',
+  ],
   openGraph: {
     title: 'Salon Business Guides | How-To Guides for Beauty Businesses',
     description:
       'Step-by-step guides for salon owners on growing their beauty business.',
     url: 'https://www.jointhedaisy.com/guides',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Salon Business Guides | How-To Guides for Beauty Businesses | Daisy',
+    description:
+      'Step-by-step guides for salon owners: reduce no-shows, get more clients, choose the right software.',
   },
   alternates: {
     canonical: 'https://www.jointhedaisy.com/guides',
@@ -21,6 +36,14 @@ export const metadata: Metadata = {
 export default function GuidesIndex() {
   return (
     <main className="min-h-screen bg-white">
+      <WebPageSchema
+        title="Salon Business Guides | How-To Guides for Beauty Businesses | Daisy"
+        description="Step-by-step guides for salon owners: reduce no-shows, get more clients, choose the right software."
+        url="https://www.jointhedaisy.com/guides"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'Guides', url: 'https://www.jointhedaisy.com/guides' }]}
+      />
       <section className="bg-[#F8F5F3] px-4 py-16 md:py-24">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">

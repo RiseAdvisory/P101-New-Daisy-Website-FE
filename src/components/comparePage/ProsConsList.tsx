@@ -1,5 +1,3 @@
-'use client';
-
 import { FC } from 'react';
 import { Check, X } from 'lucide-react';
 

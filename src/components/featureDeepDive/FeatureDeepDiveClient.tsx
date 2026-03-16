@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import {
   getFeatureDeepDive,
@@ -8,6 +6,40 @@ import {
 import { FeaturesBreadcrumbSchema } from '@/components/seo/FeaturesBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { FaqSchema } from '@/components/seo/FaqSchema';
+
+function SoftwareApplicationSchema({
+  name,
+  description,
+  url,
+}: {
+  name: string;
+  description: string;
+  url: string;
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'The Daisy',
+    applicationCategory: 'BusinessApplication',
+    description,
+    url,
+    operatingSystem: 'Web, iOS, Android',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+      description: 'Free trial available',
+    },
+    featureList: name,
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
 import { SolutionCTA } from '@/components/solutionsPage/SolutionCTA';
 import { RelatedPages } from '@/components/comparePage/RelatedPages';
 import { FeatureHero } from './FeatureHero';
@@ -54,6 +86,11 @@ export function FeatureDeepDiveClient({ userType, slug }: Props) {
         url={`https://www.jointhedaisy.com/features/${userType}/${slug}`}
       />
       {data.faqs.length > 0 && <FaqSchema faqs={data.faqs} />}
+      <SoftwareApplicationSchema
+        name={data.categoryName}
+        description={data.metaDescription}
+        url={`https://www.jointhedaisy.com/features/${userType}/${slug}`}
+      />
 
       {/* Visual Breadcrumb */}
       <div className="bg-gradient-to-br from-primary via-primary to-[#1a3a3a] px-4 pt-28 md:pt-32">
@@ -82,7 +119,9 @@ export function FeatureDeepDiveClient({ userType, slug }: Props) {
 
       {/* Overview + Pain Points + Growth Outcome */}
       <OverviewSection
+        categoryName={data.categoryName}
         overview={data.overview}
+        keyCapabilities={data.keyCapabilities}
         painPoints={data.painPoints}
         growthOutcome={data.growthOutcome}
       />

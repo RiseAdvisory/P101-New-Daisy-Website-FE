@@ -17,6 +17,7 @@ const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) =>
     <>
       <Image
         className={cn(
+          'z-0',
           {
             [styles.image]: true,
             [styles.active]: isActive,
@@ -33,6 +34,7 @@ const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) =>
       {secondBg && (
         <Image
           className={cn(
+            'z-0',
             styles.image,
             isActive ? styles.active : '',
             item?.attributes.styleSecondBg,
@@ -49,12 +51,11 @@ const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) =>
           src={mainImg}
           style={styleMainImage}
           className={cn(
-            '',
+            'z-10',
             {
               [styles.image]: true,
               [styles.active]: isActive,
             },
-            // item?.attributes.styleMainPicture,
           )}
           alt="phone"
           width={1000}

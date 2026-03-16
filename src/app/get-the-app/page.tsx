@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { GetTheAppClient } from './GetTheAppClient';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Download The Daisy App | Beauty Booking for iOS & Android',
@@ -42,5 +44,17 @@ export const metadata: Metadata = {
 };
 
 export default function GetTheAppPage() {
-  return <GetTheAppClient />;
+  return (
+    <>
+      <WebPageSchema
+        title="Download The Daisy App | Beauty Booking for iOS & Android"
+        description="Download The Daisy beauty booking app for iOS and Android. Find salons near you, book appointments, earn cashback."
+        url="https://www.jointhedaisy.com/get-the-app"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'Get the App', url: 'https://www.jointhedaisy.com/get-the-app' }]}
+      />
+      <GetTheAppClient />
+    </>
+  );
 }

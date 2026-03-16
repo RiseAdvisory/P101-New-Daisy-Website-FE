@@ -37,6 +37,7 @@ describe('featureDeepDives data', () => {
 
       // Overview
       expect(entry.overview).toBeTruthy();
+      expect(entry.keyCapabilities.length).toBeGreaterThan(0);
       expect(entry.painPoints.length).toBeGreaterThan(0);
       expect(entry.growthOutcome).toBeTruthy();
 
@@ -103,7 +104,7 @@ describe('featureDeepDives data', () => {
 
   it('integration points reference known category slugs', () => {
     const validSlugs = [
-      'ai-powered-intelligence',
+      'ai-salon-management',
       'booking-management',
       'communication-tools',
       'marketing-promotions',
@@ -138,7 +139,7 @@ describe('getAllFeatureDeepDiveSlugs', () => {
 
   it('includes known business slug', () => {
     const slugs = getAllFeatureDeepDiveSlugs('business');
-    expect(slugs).toContain('ai-powered-intelligence');
+    expect(slugs).toContain('ai-salon-management');
   });
 
   it('has no duplicates', () => {
@@ -149,7 +150,7 @@ describe('getAllFeatureDeepDiveSlugs', () => {
 
 describe('getFeatureDeepDive', () => {
   it('returns data for a valid business slug', () => {
-    const data = getFeatureDeepDive('business', 'ai-powered-intelligence');
+    const data = getFeatureDeepDive('business', 'ai-salon-management');
     expect(data).toBeDefined();
     expect(data?.categoryName).toBe('AI-Powered Intelligence');
     expect(data?.userType).toBe('business');
@@ -161,7 +162,7 @@ describe('getFeatureDeepDive', () => {
   });
 
   it('returns undefined for wrong userType', () => {
-    const data = getFeatureDeepDive('professional', 'ai-powered-intelligence');
+    const data = getFeatureDeepDive('professional', 'ai-salon-management');
     // May or may not exist depending on data — just ensure it doesn't return a business entry
     if (data) {
       expect(data.userType).toBe('professional');
@@ -173,7 +174,7 @@ describe('getRelatedFeatureDeepDives', () => {
   it('returns related entries for valid input', () => {
     const related = getRelatedFeatureDeepDives(
       'business',
-      'ai-powered-intelligence',
+      'ai-salon-management',
     );
     expect(Array.isArray(related)).toBe(true);
   });
@@ -181,10 +182,10 @@ describe('getRelatedFeatureDeepDives', () => {
   it('excludes the current entry from results', () => {
     const related = getRelatedFeatureDeepDives(
       'business',
-      'ai-powered-intelligence',
+      'ai-salon-management',
     );
     related.forEach((r) => {
-      expect(r.slug).not.toBe('ai-powered-intelligence');
+      expect(r.slug).not.toBe('ai-salon-management');
     });
   });
 
@@ -196,7 +197,7 @@ describe('getRelatedFeatureDeepDives', () => {
   it('returned entries have correct userType', () => {
     const related = getRelatedFeatureDeepDives(
       'business',
-      'ai-powered-intelligence',
+      'ai-salon-management',
     );
     related.forEach((r) => {
       expect(r.userType).toBe('business');

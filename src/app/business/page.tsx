@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { BusinessClient } from './BusinessClient';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Salon & Spa Business Solutions | The Daisy',
@@ -45,5 +47,17 @@ export const metadata: Metadata = {
 };
 
 export default function BusinessPage() {
-  return <BusinessClient />;
+  return (
+    <>
+      <WebPageSchema
+        title="Salon & Spa Business Solutions | The Daisy"
+        description="Grow your salon or spa business with The Daisy. Manage bookings, staff scheduling, promotions, and payments."
+        url="https://www.jointhedaisy.com/business"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'For Business', url: 'https://www.jointhedaisy.com/business' }]}
+      />
+      <BusinessClient />
+    </>
+  );
 }

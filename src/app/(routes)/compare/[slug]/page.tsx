@@ -39,6 +39,11 @@ export function generateMetadata({
       url: `https://www.jointhedaisy.com/compare/${params.slug}`,
       type: 'website',
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: metaTitle,
+      description: metaDescription,
+    },
     alternates: {
       canonical: `https://www.jointhedaisy.com/compare/${params.slug}`,
     },

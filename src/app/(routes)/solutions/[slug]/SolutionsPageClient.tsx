@@ -1,5 +1,3 @@
-'use client';
-
 import { getSolution, getRelatedSolutions } from '@/lib/constants/solutions';
 import { SolutionHero } from '@/components/solutionsPage/SolutionHero';
 import { ChallengesSection } from '@/components/solutionsPage/ChallengesSection';
@@ -51,6 +49,21 @@ export function SolutionsPageClient({ slug }: Props) {
       {data.faqs.length > 0 && <FaqSchema faqs={data.faqs} />}
 
       <SolutionHero title={data.heroTitle} subtitle={data.heroSubtitle} />
+
+      {/* Definition — GEO-optimized answer block */}
+      {data.definition && (
+        <section className="mx-auto max-w-4xl px-4 py-10">
+          <h2 className="mb-3 text-2xl font-bold text-gray-900">
+            What Is {data.heroTitle.replace(/That .+|Powered .+|Built .+|Automated .+|Designed .+|for the .+|with .+|,.*/, '').trim()}?
+          </h2>
+          <p
+            className="text-lg leading-relaxed text-gray-600"
+            data-geo-answer="true"
+          >
+            {data.definition}
+          </p>
+        </section>
+      )}
 
       {/* Intro */}
       <section className="mx-auto max-w-4xl px-4 py-8">

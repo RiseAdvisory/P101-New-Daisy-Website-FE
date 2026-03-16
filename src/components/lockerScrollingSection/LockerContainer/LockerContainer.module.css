@@ -31,7 +31,7 @@
 }
 .locker__content {
   margin-top: 50px;
-  grid-column: center-start / col-start 6;
+  grid-column: center-start / col-start 7;
 }
 .locker__section {
   height: 600px;

@@ -1,4 +1,3 @@
-'use client';
 
 interface FeatureHeroProps {
   title: string;

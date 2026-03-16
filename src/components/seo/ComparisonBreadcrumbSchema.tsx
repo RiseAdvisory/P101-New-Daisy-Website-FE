@@ -1,5 +1,3 @@
-'use client';
-
 interface Props {
   pageName: string;
   pageSlug: string;

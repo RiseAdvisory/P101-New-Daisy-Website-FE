@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import { FeaturesProfessionalClient } from './FeaturesProfessionalClient';
 import { FeaturesBreadcrumbSchema } from '@/components/seo/FeaturesBreadcrumbSchema';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { FeatureDeepDiveLinks } from '@/components/featuresPage/FeatureDeepDiveLinks';
 
 export const metadata: Metadata = {
   title: 'Beauty Professional Features - Scheduling & Earnings | The Daisy',
@@ -48,7 +50,13 @@ export default function FeaturesProfessionalPage() {
   return (
     <>
       <FeaturesBreadcrumbSchema pageName="Professional" pageSlug="professional" />
+      <WebPageSchema
+        title="Beauty Professional Features - Scheduling & Earnings | The Daisy"
+        description="Features for beauty professionals: appointment scheduling, client management, earnings tracking, and tools to grow your career."
+        url="https://www.jointhedaisy.com/features/professional"
+      />
       <FeaturesProfessionalClient />
+      <FeatureDeepDiveLinks userType="professional" />
     </>
   );
 }

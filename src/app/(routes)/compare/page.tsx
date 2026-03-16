@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import {
   daisyVsPages,
   competitorVsPages,
@@ -17,6 +19,19 @@ export const metadata: Metadata = {
     'daisy vs booksy',
     'salon software reviews',
   ],
+  openGraph: {
+    title: 'Daisy Comparisons — See How We Stack Up | Daisy',
+    description:
+      'Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis, pricing breakdowns, and honest verdicts.',
+    url: 'https://www.jointhedaisy.com/compare',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Daisy Comparisons — See How We Stack Up | Daisy',
+    description:
+      'Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis and pricing breakdowns.',
+  },
   alternates: {
     canonical: 'https://www.jointhedaisy.com/compare',
   },
@@ -25,6 +40,14 @@ export const metadata: Metadata = {
 export default function CompareIndexPage() {
   return (
     <main className="min-h-screen">
+      <WebPageSchema
+        title="Daisy Comparisons — See How We Stack Up | Daisy"
+        description="Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis and pricing breakdowns."
+        url="https://www.jointhedaisy.com/compare"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'Compare', url: 'https://www.jointhedaisy.com/compare' }]}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#F8F5F3] to-white px-4 py-16 text-center">
         <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">

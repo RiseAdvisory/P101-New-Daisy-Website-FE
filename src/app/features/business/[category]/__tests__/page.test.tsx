@@ -38,14 +38,14 @@ describe('Business Feature Deep-Dive Page', () => {
     it('includes known category slug', () => {
       const params = generateStaticParams();
       const slugs = params.map((p) => p.category);
-      expect(slugs).toContain('ai-powered-intelligence');
+      expect(slugs).toContain('ai-salon-management');
     });
   });
 
   describe('generateMetadata', () => {
     it('returns title and description for valid slug', () => {
       const meta = generateMetadata({
-        params: { category: 'ai-powered-intelligence' },
+        params: { category: 'ai-salon-management' },
       });
       expect(meta.title).toBeTruthy();
       expect(meta.description).toBeTruthy();
@@ -53,7 +53,7 @@ describe('Business Feature Deep-Dive Page', () => {
 
     it('includes keywords', () => {
       const meta = generateMetadata({
-        params: { category: 'ai-powered-intelligence' },
+        params: { category: 'ai-salon-management' },
       });
       expect(Array.isArray(meta.keywords)).toBe(true);
       expect((meta.keywords as string[]).length).toBeGreaterThan(0);
@@ -61,19 +61,19 @@ describe('Business Feature Deep-Dive Page', () => {
 
     it('has correct canonical URL', () => {
       const meta = generateMetadata({
-        params: { category: 'ai-powered-intelligence' },
+        params: { category: 'ai-salon-management' },
       });
       expect((meta.alternates as any)?.canonical).toContain(
-        '/features/business/ai-powered-intelligence',
+        '/features/business/ai-salon-management',
       );
     });
 
     it('has correct OpenGraph URL', () => {
       const meta = generateMetadata({
-        params: { category: 'ai-powered-intelligence' },
+        params: { category: 'ai-salon-management' },
       });
       expect((meta.openGraph as any)?.url).toContain(
-        '/features/business/ai-powered-intelligence',
+        '/features/business/ai-salon-management',
       );
     });
 
@@ -93,11 +93,11 @@ describe('Business Feature Deep-Dive Page', () => {
 
     it('renders client component for valid slug', () => {
       const { getByTestId } = render(
-        <Page params={{ category: 'ai-powered-intelligence' }} />,
+        <Page params={{ category: 'ai-salon-management' }} />,
       );
       expect(getByTestId('feature-deep-dive-client')).toBeInTheDocument();
       expect(getByTestId('feature-deep-dive-client').textContent).toBe(
-        'business/ai-powered-intelligence',
+        'business/ai-salon-management',
       );
     });
   });

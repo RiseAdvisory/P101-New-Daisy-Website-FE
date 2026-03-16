@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { TermsConditionsClient } from './TermsConditionsClient';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions | The Daisy - Beauty Booking Platform',
@@ -42,5 +44,17 @@ export const metadata: Metadata = {
 };
 
 export default function TermsConditionsPage() {
-  return <TermsConditionsClient />;
+  return (
+    <>
+      <WebPageSchema
+        title="Terms & Conditions | The Daisy"
+        description="Review The Daisy terms and conditions governing the use of our beauty booking platform."
+        url="https://www.jointhedaisy.com/terms-conditions"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'Terms & Conditions', url: 'https://www.jointhedaisy.com/terms-conditions' }]}
+      />
+      <TermsConditionsClient />
+    </>
+  );
 }

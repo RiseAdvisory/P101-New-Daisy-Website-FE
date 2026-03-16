@@ -25,10 +25,11 @@ export function SubFeaturesSection({
     <section className="w-full bg-white px-4 py-16 md:py-24">
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-4 text-center text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
-          What&apos;s Inside {categoryName}
+          How Does The Daisy&apos;s {categoryName} Work?
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-base leading-relaxed text-[#455150]">
-          Every capability is designed to save you time and grow your revenue.
+          Every tool is designed to save beauty businesses time and grow
+          revenue.
         </p>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">

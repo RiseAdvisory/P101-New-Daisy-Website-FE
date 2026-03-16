@@ -1,5 +1,3 @@
-'use client';
-
 interface WebPageSchemaProps {
   title: string;
   description: string;

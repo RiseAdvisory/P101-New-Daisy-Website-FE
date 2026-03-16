@@ -26,6 +26,11 @@ export function generateMetadata({
       url: `https://www.jointhedaisy.com/guides/${params.slug}`,
       type: 'article',
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: guide.metaTitle,
+      description: guide.metaDescription,
+    },
     alternates: {
       canonical: `https://www.jointhedaisy.com/guides/${params.slug}`,
     },

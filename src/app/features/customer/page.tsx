@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { FeaturesCustomerClient } from './FeaturesCustomerClient';
+import { FeaturesBreadcrumbSchema } from '@/components/seo/FeaturesBreadcrumbSchema';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
 
 export const metadata: Metadata = {
   title: 'Customer Features - Salon Booking & Cashback | The Daisy',
@@ -40,10 +42,20 @@ export const metadata: Metadata = {
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
   alternates: {
-    canonical: 'https://www.jointhedaisy.com/features/business',
+    canonical: 'https://www.jointhedaisy.com/features/customer',
   },
 };
 
 export default function FeaturesCustomerPage() {
-  return <FeaturesCustomerClient />;
+  return (
+    <>
+      <FeaturesBreadcrumbSchema pageName="Customer" pageSlug="customer" />
+      <WebPageSchema
+        title="Customer Features - Salon Booking & Cashback | The Daisy"
+        description="Explore The Daisy customer features: find salons near you, book beauty services, earn cashback rewards, manage appointments."
+        url="https://www.jointhedaisy.com/features/customer"
+      />
+      <FeaturesCustomerClient />
+    </>
+  );
 }

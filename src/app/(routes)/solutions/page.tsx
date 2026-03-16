@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { solutions } from '@/lib/constants/solutions';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Beauty Business Solutions — AI-Powered Software | Daisy',
@@ -13,6 +15,19 @@ export const metadata: Metadata = {
     'salon appointment scheduling',
     'beauty business solutions',
   ],
+  openGraph: {
+    title: 'Beauty Business Solutions — AI-Powered Software | Daisy',
+    description:
+      'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing.',
+    url: 'https://www.jointhedaisy.com/solutions',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Beauty Business Solutions — AI-Powered Software | Daisy',
+    description:
+      'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing.',
+  },
   alternates: {
     canonical: 'https://www.jointhedaisy.com/solutions',
   },
@@ -21,6 +36,14 @@ export const metadata: Metadata = {
 export default function SolutionsIndexPage() {
   return (
     <main className="min-h-screen">
+      <WebPageSchema
+        title="Beauty Business Solutions — AI-Powered Software | Daisy"
+        description="Explore Daisy's solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing."
+        url="https://www.jointhedaisy.com/solutions"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'Solutions', url: 'https://www.jointhedaisy.com/solutions' }]}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#F8F5F3] to-white px-4 py-16 text-center">
         <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">

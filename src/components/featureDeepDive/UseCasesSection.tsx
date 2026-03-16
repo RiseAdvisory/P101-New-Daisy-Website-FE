@@ -1,4 +1,3 @@
-'use client';
 
 import { Building2 } from 'lucide-react';
 
@@ -17,10 +16,10 @@ export function UseCasesSection({ useCases }: UseCasesSectionProps) {
     <section className="w-full bg-[#F8F5F3] px-4 py-16 md:py-24">
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-4 text-center text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
-          Real-World Scenarios
+          How Do Beauty Businesses Use This?
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-base leading-relaxed text-[#455150]">
-          See how different types of beauty businesses use this feature to grow.
+          Real-world examples from salons, spas, and clinics.
         </p>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

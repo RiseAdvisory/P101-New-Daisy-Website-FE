@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { ProfessionalClient } from './ProfessionalClient';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'For Beauty Professionals | The Daisy',
@@ -45,5 +47,17 @@ export const metadata: Metadata = {
 };
 
 export default function ProfessionalPage() {
-  return <ProfessionalClient />;
+  return (
+    <>
+      <WebPageSchema
+        title="For Beauty Professionals | The Daisy"
+        description="Join The Daisy as a beauty professional. Manage your appointments, build your client base, track earnings, and grow your career."
+        url="https://www.jointhedaisy.com/professional"
+      />
+      <PageBreadcrumbSchema
+        items={[{ name: 'For Professionals', url: 'https://www.jointhedaisy.com/professional' }]}
+      />
+      <ProfessionalClient />
+    </>
+  );
 }

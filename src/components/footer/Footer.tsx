@@ -27,7 +27,7 @@ export const Footer = () => {
 
   const data = t(footerData, lang);
   const socialLinks = data.socialLinks;
-  const navList = data.navigationfooterList;
+  const columns = data.footerColumns;
 
   const isVisibleAppBtn = path.includes('get-the-app');
 
@@ -87,52 +87,80 @@ export const Footer = () => {
   }, [shouldLoadChat]);
 
   return (
-    <footer className="w-full bg-primary px-4 py-[124px] md:py-14 flex flex-col justify-center items-center">
+    <footer className="w-full bg-primary px-4 py-16 md:py-14">
       {shouldLoadChat && <FreshChatLoader lang={lang} />}
-      <Link href={'/'} className="mb-6 opacity-60">
-        <LogoIconsS />
-      </Link>
-      <nav className=" justify-center items-center self-center ">
-        <ul className="flex flex-col items-center justify-center ltr:font-montserrat text-[#FFFFFF]/80 md:flex-row md:gap-x-8">
-          {navList.map((item, index) => (
-            <Link
-              key={index}
-              href={item.nav}
-              className="pb-8 hover:text-white"
-            >
-              {item.name}
+      <div className="mx-auto max-w-6xl">
+        {/* Logo + Columns */}
+        <div className="flex flex-col gap-12 md:flex-row md:justify-between">
+          {/* Logo & App Buttons */}
+          <div className="flex flex-col items-center md:items-start">
+            <Link href={'/'} className="mb-6 opacity-60">
+              <LogoIconsS />
             </Link>
-          ))}
-        </ul>
-      </nav>
-      {!isVisibleAppBtn && (
-        <div className="w-full md:flex md:max-w-[650px]">
-          <PlayMarketButton className="mb-4 md:mb-0 md:mr-6 rtl:mr-0 rtl:ml-6" />
-          <AppStoreButton />
+            {!isVisibleAppBtn && (
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <PlayMarketButton className="" />
+                <AppStoreButton />
+              </div>
+            )}
+          </div>
+
+          {/* Navigation Columns */}
+          <nav className="grid grid-cols-2 gap-8 sm:grid-cols-4">
+            {columns.map((column) => (
+              <div key={column.title}>
+                <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/60 ltr:font-montserrat">
+                  {column.title}
+                </h3>
+                <ul className="space-y-3">
+                  {column.links.map((item) => (
+                    <li key={item.nav}>
+                      <Link
+                        href={item.nav}
+                        className="text-sm text-white/80 transition-colors hover:text-white ltr:font-montserrat"
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </nav>
         </div>
-      )}
-      <ul className="flex mx-auto items-center justify-center mt-8 gap-x-6">
-        <li>
-          <Link href={socialLinks.facebook_url} target="blank">
-            <FacebookIcons />
-          </Link>
-        </li>
-        <li>
-          <Link href={socialLinks.twitter_url} target="blank">
-            <TwitterIcons />
-          </Link>
-        </li>
-        <li>
-          <Link href={socialLinks.linkedin_url} target="blank">
-            <LinkedInIcons />
-          </Link>
-        </li>
-        <li>
-          <Link href={socialLinks.instagram_url} target="blank">
-            <InstagramIcons />
-          </Link>
-        </li>
-      </ul>
+
+        {/* Divider */}
+        <div className="my-10 h-px bg-white/10" />
+
+        {/* Social Links */}
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+          <p className="text-xs text-white/40 ltr:font-montserrat">
+            &copy; {new Date().getFullYear()} The Daisy. All rights reserved.
+          </p>
+          <ul className="flex items-center gap-x-6">
+            <li>
+              <Link href={socialLinks.facebook_url} target="_blank" rel="noopener noreferrer">
+                <FacebookIcons />
+              </Link>
+            </li>
+            <li>
+              <Link href={socialLinks.twitter_url} target="_blank" rel="noopener noreferrer">
+                <TwitterIcons />
+              </Link>
+            </li>
+            <li>
+              <Link href={socialLinks.linkedin_url} target="_blank" rel="noopener noreferrer">
+                <LinkedInIcons />
+              </Link>
+            </li>
+            <li>
+              <Link href={socialLinks.instagram_url} target="_blank" rel="noopener noreferrer">
+                <InstagramIcons />
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   );
 };
