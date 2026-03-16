@@ -4,6 +4,7 @@ import { getAllCompareSlugs, getAllAlternativeSlugs } from '@/lib/constants/comp
 import { getAllSolutionSlugs } from '@/lib/constants/solutions';
 import { getAllGlossarySlugs } from '@/lib/constants/glossary/glossaryData';
 import { getAllGuideSlugs } from '@/lib/constants/guides/guideData';
+import { getAllFeatureDeepDiveSlugs } from '@/lib/constants/features/featureDeepDive';
 
 const BASE_URL = 'https://www.jointhedaisy.com';
 
@@ -193,6 +194,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
+  // Feature deep-dive pages (WS3)
+  const featureDeepDiveBusinessPages = getAllFeatureDeepDiveSlugs('business').map((slug) => ({
+    url: `${BASE_URL}/features/business/${slug}`,
+    lastModified: SEO_CONTENT_DATE,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
+  const featureDeepDiveProfessionalPages = getAllFeatureDeepDiveSlugs('professional').map((slug) => ({
+    url: `${BASE_URL}/features/professional/${slug}`,
+    lastModified: SEO_CONTENT_DATE,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
   return [
     ...mainPages,
     ...featurePages,
@@ -207,5 +223,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...geoIndexPages,
     ...glossaryPages,
     ...guidePages,
+    ...featureDeepDiveBusinessPages,
+    ...featureDeepDiveProfessionalPages,
   ];
 }
