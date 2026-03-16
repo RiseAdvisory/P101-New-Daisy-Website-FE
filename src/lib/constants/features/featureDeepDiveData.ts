@@ -96,9 +96,9 @@ export const featureDeepDives: FeatureDeepDive[] = [
     userType: 'business',
 
     metaTitle:
-      'AI-Powered Salon Intelligence — Automate Bookings, Calls & Growth | Daisy',
+      'AI for Beauty Salons — AI Receptionist, Smart Booking & Business Intelligence | The Daisy',
     metaDescription:
-      'Daisy\'s AI receptionist answers calls, books appointments, processes payments, and delivers smart insights 24/7 in Arabic and English. See how AI transforms salon management.',
+      'The Daisy is an AI-powered salon management platform with a 24/7 AI receptionist that answers calls, books appointments, processes payments, and delivers smart business insights in Arabic and English.',
     keywords: [
       'AI salon management',
       'AI receptionist for salons',
@@ -112,16 +112,16 @@ export const featureDeepDives: FeatureDeepDive[] = [
       'virtual receptionist salon',
     ],
 
-    heroTitle: 'AI-Powered Intelligence for Your Beauty Business',
+    heroTitle: 'AI Business Intelligence for Salons & Beauty Businesses',
     heroSubtitle:
-      'Your 24/7 AI receptionist that answers every call, books every appointment, and uncovers growth insights your competitors miss — in Arabic and English.',
+      'The Daisy\'s AI receptionist answers every call, books every appointment, processes payments, and delivers smart business insights 24/7 — in Arabic and English.',
     heroStat: {
       value: '24/7',
       label: 'Always-on AI receptionist',
     },
 
     overview:
-      'The beauty industry is experiencing a fundamental shift. Businesses that rely solely on manual processes — answering phones, scheduling appointments, following up with clients — are losing ground to competitors who leverage artificial intelligence. Daisy\'s AI-Powered Intelligence is not a simple chatbot; it is a comprehensive AI system built specifically for beauty businesses. It handles customer interactions across voice, chat, and messaging in both Arabic and English, processes bookings and payments autonomously, and surfaces actionable insights from your business data. Whether you run a single chair or manage a multi-location chain, the AI scales to match your ambitions without increasing your headcount.',
+      'The Daisy is an AI-powered booking and business management platform designed for the beauty and wellness industry. Unlike generic salon management software, The Daisy integrates artificial intelligence into every aspect of your operations — from an AI receptionist that answers calls and books appointments 24/7, to predictive analytics that forecast demand and identify growth opportunities. Beauty professionals spend hours managing schedules, clients, and marketing manually. AI automation handles these repetitive tasks so you can focus on delivering exceptional service. The Daisy\'s AI system understands beauty industry terminology, communicates naturally in both Arabic and English, processes bookings and payments autonomously, and surfaces actionable business insights from your data. Whether you run a single chair or manage a multi-location chain, the AI scales to match your ambitions without increasing your headcount.',
 
     painPoints: [
       'Industry data shows salons miss 30–40% of inbound calls, meaning potential bookings go to competitors who respond faster.',
@@ -332,39 +332,39 @@ export const featureDeepDives: FeatureDeepDive[] = [
 
     faqs: [
       {
-        question: 'How does the AI receptionist handle complex booking requests?',
+        question: 'How can AI help beauty salons grow revenue?',
         answer:
-          'The AI understands multi-service bookings, specific staff requests, time preferences, and special requirements. It checks real-time availability across your team, considers service durations and buffer times, and can handle changes or cancellations autonomously. For truly unique situations, it seamlessly routes to a human team member with full context.',
+          'AI helps beauty salons grow revenue in several ways: it captures bookings 24/7 through an AI receptionist (eliminating missed calls), optimises scheduling to minimise calendar gaps, predicts demand to adjust staffing and promotions, and identifies upsell opportunities based on client history. The Daisy platform integrates all of these AI capabilities specifically for the beauty and wellness industry.',
       },
       {
-        question: 'Is the AI receptionist available in Arabic?',
+        question: 'What is an AI receptionist for salons and how does it work?',
         answer:
-          'Yes. Daisy\'s AI operates natively in both Arabic and English with full cultural context understanding. It is not a translation layer — it genuinely understands and responds in both languages, including GCC dialects and beauty industry terminology. Clients can even switch languages mid-conversation.',
+          'An AI receptionist is an automated system that handles customer interactions — phone calls, WhatsApp messages, Instagram DMs, and website chat — without human intervention. The Daisy\'s AI receptionist understands booking requests, checks real-time availability, confirms appointments, and processes payments. It operates 24/7 in both Arabic and English, meaning your salon never misses a potential booking.',
       },
       {
-        question: 'Will the AI replace my reception staff?',
+        question: 'Does The Daisy AI work in Arabic?',
         answer:
-          'The AI is designed to augment, not replace. It handles routine enquiries, after-hours calls, and high-volume periods that your team cannot manage alone. Your staff can focus on premium in-person service while the AI ensures no opportunity is missed. Many businesses find they can grow without adding reception headcount.',
+          'Yes. The Daisy\'s AI operates natively in both Arabic and English with full cultural context understanding. It is not a translation layer — it genuinely understands and responds in both languages, including GCC dialects and beauty industry terminology. Clients can even switch languages mid-conversation.',
       },
       {
-        question: 'How long does it take to set up the AI?',
+        question: 'Will AI replace my salon reception staff?',
+        answer:
+          'AI is designed to augment, not replace. The Daisy\'s AI handles routine enquiries, after-hours calls, and high-volume periods that your team cannot manage alone. Your staff can focus on premium in-person service while the AI ensures no opportunity is missed. Many businesses find they can grow without adding reception headcount.',
+      },
+      {
+        question: 'How long does it take to set up AI for my salon?',
         answer:
           'Initial setup takes under an hour. You connect your communication channels, import your service menu and pricing, and set your business rules. The AI begins handling interactions immediately and continues improving its understanding of your specific business over the first few weeks.',
       },
       {
-        question: 'Can the AI process payments?',
+        question: 'What AI tools does The Daisy offer for beauty businesses?',
         answer:
-          'Yes. The AI can collect deposits, process full payments, and handle payment-related queries — all within the conversation flow. It integrates with Daisy\'s built-in payment processing, so clients can pay when they book without being redirected to a separate page.',
+          'The Daisy offers AI-powered tools including: a 24/7 AI receptionist for calls and messages, smart scheduling that optimises your calendar for maximum revenue, predictive business insights with automated weekly reports, personalised client communication across all channels, bilingual Arabic/English support, and AI-driven upselling recommendations based on client history.',
       },
       {
-        question: 'How does the AI improve over time?',
+        question: 'How is The Daisy different from other salon booking software?',
         answer:
-          'The AI learns from every interaction — yours and the broader Daisy network. It refines its understanding of your services, client preferences, and communication style. Additionally, platform-wide learning means the AI incorporates industry trends and best practices from thousands of beauty businesses.',
-      },
-      {
-        question: 'What happens if the AI cannot handle a request?',
-        answer:
-          'The AI gracefully escalates to your team. It transfers the conversation with full context — what the client asked, their history, and any relevant details — so the handoff is seamless. You can also set custom rules for which types of requests should always go to a human.',
+          'Unlike generic booking software, The Daisy integrates AI-driven analytics and automation designed specifically for beauty and wellness businesses. While most platforms offer basic calendar management, The Daisy\'s AI handles client interactions, optimises scheduling, predicts business trends, and communicates in both Arabic and English — all from one platform with zero commission on bookings.',
       },
     ],
 
@@ -383,10 +383,10 @@ export const featureDeepDives: FeatureDeepDive[] = [
     slug: 'booking-management',
     categoryName: 'Booking Management',
     userType: 'business',
-    metaTitle: 'Smart Salon Booking System — Online Scheduling & Calendar | Daisy',
-    metaDescription: 'Daisy\'s booking management handles online scheduling, no-show prevention, multi-service appointments, waitlists, and recurring bookings — so your calendar runs itself.',
+    metaTitle: 'Online Salon Booking System — Appointment Scheduling Software for Salons | The Daisy',
+    metaDescription: 'The Daisy\'s salon booking system handles online appointment scheduling, no-show prevention, multi-service bookings, waitlists, and recurring appointments — so your calendar runs itself.',
     keywords: ['salon booking system', 'online appointment scheduling', 'salon calendar management', 'no-show prevention salon', 'beauty booking software', 'spa scheduling system', 'appointment management', 'salon waitlist', 'recurring bookings salon', 'multi-service booking'],
-    heroTitle: 'Booking Management That Fills Every Slot',
+    heroTitle: 'Online Booking System for Salons & Beauty Businesses',
     heroSubtitle: 'Online scheduling, smart calendar management, and no-show prevention that keeps your chairs full and your revenue predictable.',
     heroStat: { value: '40%', label: 'Reduction in no-shows' },
     overview: 'Your appointment book is the heartbeat of your beauty business. When it runs smoothly, revenue flows predictably. When it doesn\'t, you lose money to gaps, no-shows, and double-bookings. Daisy\'s Booking Management goes far beyond a basic digital calendar. It provides intelligent scheduling that accounts for service durations, staff expertise, setup times, and client preferences. Clients book online 24/7 through your website, social media, or the Daisy marketplace — and the system handles confirmations, reminders, deposits, and waitlist management automatically. Whether you run a solo studio or a multi-branch operation, every appointment is optimised for maximum revenue and minimum wasted time.',
@@ -453,10 +453,10 @@ export const featureDeepDives: FeatureDeepDive[] = [
     slug: 'communication-tools',
     categoryName: 'Communication Tools',
     userType: 'business',
-    metaTitle: 'Salon Communication Tools — WhatsApp, SMS & Multi-Channel Messaging | Daisy',
-    metaDescription: 'Reach clients on WhatsApp, SMS, email, and Instagram from one inbox. Automated reminders, review collection, and broadcast campaigns — all built for beauty businesses.',
+    metaTitle: 'Salon Communication Tools — WhatsApp, SMS & Client Messaging for Salons | The Daisy',
+    metaDescription: 'The Daisy\'s salon communication platform connects WhatsApp, SMS, email, and Instagram in one inbox. Automated appointment reminders, review collection, and client messaging built for beauty businesses.',
     keywords: ['salon communication tools', 'WhatsApp salon booking', 'salon SMS reminders', 'beauty business messaging', 'client communication platform', 'salon review collection', 'multi-channel messaging salon', 'automated salon reminders', 'salon marketing messages', 'client engagement tools'],
-    heroTitle: 'Communication Tools That Keep Clients Connected',
+    heroTitle: 'Client Communication Tools for Salons & Beauty Businesses',
     heroSubtitle: 'One inbox for WhatsApp, SMS, email, and Instagram. Automated reminders, review requests, and campaigns that feel personal — at scale.',
     heroStat: { value: '98%', label: 'Message open rate on WhatsApp' },
     overview: 'In beauty, the relationship between client and business is everything. But maintaining personal communication with hundreds or thousands of clients manually is impossible. Daisy\'s Communication Tools bring every channel — WhatsApp, SMS, email, Instagram DMs, and in-app messaging — into a single unified inbox. Automated workflows handle appointment reminders, follow-ups, review requests, birthday messages, and re-engagement campaigns while keeping every interaction feeling personal. Your staff sees the full conversation history regardless of channel, and clients receive messages on whichever platform they prefer. The result is stronger relationships, fewer missed appointments, and a reputation that grows through genuine client advocacy.',
@@ -522,10 +522,10 @@ export const featureDeepDives: FeatureDeepDive[] = [
     slug: 'marketing-promotions',
     categoryName: 'Marketing & Promotions',
     userType: 'business',
-    metaTitle: 'Salon Marketing & Promotions — Cashback, Referrals & Loyalty | Daisy',
-    metaDescription: 'Grow your beauty business with cashback rewards, referral programs, loyalty points, targeted promotions, and marketplace visibility — all built into Daisy.',
+    metaTitle: 'Salon Marketing Tools — Cashback Rewards, Referral Programs & Loyalty | The Daisy',
+    metaDescription: 'The Daisy\'s salon marketing tools include cashback rewards, referral programs, loyalty tiers, targeted promotions, and marketplace visibility — a complete growth engine for beauty businesses.',
     keywords: ['salon marketing tools', 'beauty business promotions', 'salon cashback rewards', 'salon referral program', 'loyalty program salon', 'salon customer acquisition', 'beauty marketing platform', 'salon promotion ideas', 'salon marketplace listing', 'beauty business growth marketing'],
-    heroTitle: 'Marketing & Promotions That Bring Clients Back',
+    heroTitle: 'Marketing & Loyalty Tools for Salons & Beauty Businesses',
     heroSubtitle: 'Cashback rewards, referral programs, targeted promotions, and marketplace visibility — a complete customer acquisition and retention engine.',
     heroStat: { value: '3x', label: 'Higher retention with cashback' },
     overview: 'Acquiring new clients is expensive. Keeping them is profitable. Daisy\'s Marketing & Promotions tools address both sides of the equation with a comprehensive system that attracts new clients through marketplace visibility and referral incentives, then keeps them coming back with cashback rewards and loyalty programs. Unlike generic marketing platforms, every tool is designed specifically for beauty businesses — understanding service patterns, seasonal demand, and client lifecycle. You can run targeted promotions to specific client segments, automate loyalty rewards, and track exactly which marketing efforts drive bookings. The result is a self-reinforcing growth engine where happy clients bring their friends, and every visit builds toward the next.',
@@ -590,10 +590,10 @@ export const featureDeepDives: FeatureDeepDive[] = [
     slug: 'payment-processing',
     categoryName: 'Payment Processing',
     userType: 'business',
-    metaTitle: 'Salon Payment Processing — POS, Online Payments & Invoicing | Daisy',
-    metaDescription: 'Accept payments anywhere with Daisy: POS, online checkout, deposits, split payments, tipping, invoicing, and subscription billing — built for beauty businesses.',
+    metaTitle: 'Salon Payment Processing — POS, Online Payments & Invoicing | The Daisy',
+    metaDescription: 'The Daisy\'s salon payment system handles POS, online checkout, deposits, split payments, tipping, invoicing, and subscription billing — zero commission, built for beauty businesses.',
     keywords: ['salon payment processing', 'beauty business POS', 'salon online payments', 'spa payment system', 'salon deposit collection', 'beauty business invoicing', 'salon split payments', 'salon tipping system', 'beauty payment gateway', 'salon subscription billing'],
-    heroTitle: 'Payment Processing Without the Friction',
+    heroTitle: 'Payment Processing for Salons & Beauty Businesses',
     heroSubtitle: 'POS, online payments, deposits, split payments, tipping, and invoicing — accept money however your clients want to pay.',
     heroStat: { value: '0%', label: 'Commission on payments' },
     overview: 'Getting paid should be the simplest part of running your beauty business. Yet many salons and spas juggle separate systems for in-person payments, online deposits, invoicing, and tipping — creating reconciliation headaches and a fragmented client experience. Daisy\'s Payment Processing unifies everything into one system. Accept card payments at the chair, collect deposits when clients book online, process split payments between friends, handle tips gracefully, and send invoices for corporate clients — all flowing into a single financial dashboard. Unlike marketplace platforms that charge commissions on every transaction, Daisy uses flat-rate processing with no hidden fees. Every payment is tracked, reconciled, and reported automatically, so you always know exactly where your money is.',
@@ -658,10 +658,10 @@ export const featureDeepDives: FeatureDeepDive[] = [
     slug: 'business-growth',
     categoryName: 'Business Growth',
     userType: 'business',
-    metaTitle: 'Salon Business Growth — Marketplace, Multi-Location & White-Label | Daisy',
-    metaDescription: 'Scale your beauty business with Daisy: marketplace visibility, customer acquisition engine, white-label branding, multi-location management, and franchise support.',
+    metaTitle: 'Salon Business Growth Tools — Marketplace, Multi-Location & White-Label | The Daisy',
+    metaDescription: 'Scale your beauty business with The Daisy: marketplace visibility, 360° customer acquisition, white-label branding, multi-location management, and franchise support.',
     keywords: ['salon business growth', 'beauty business expansion', 'salon marketplace listing', 'multi-location salon management', 'white-label salon software', 'beauty franchise software', 'salon customer acquisition', 'beauty brand building', 'salon scaling tools', 'salon growth platform'],
-    heroTitle: 'Business Growth Tools to Scale Your Brand',
+    heroTitle: 'Business Growth & Customer Acquisition for Beauty Businesses',
     heroSubtitle: 'Marketplace visibility, customer acquisition, white-label branding, and multi-location management — everything you need to grow beyond a single chair.',
     heroStat: { value: '360°', label: 'Customer acquisition coverage' },
     overview: 'Growth in the beauty industry means more than just getting busier. It means building a brand that attracts clients, systems that scale without chaos, and infrastructure that supports multiple locations or franchise models. Daisy\'s Business Growth tools provide the full stack: marketplace visibility to get discovered, a customer acquisition engine that combines organic discovery with referrals and cashback, white-label capabilities that let you maintain your brand identity, and multi-location management that gives you a unified view across all your branches. Whether you\'re expanding from one chair to three, opening a second location, or building a franchise network, Daisy provides the operational backbone and the growth engine in one platform.',
@@ -725,10 +725,10 @@ export const featureDeepDives: FeatureDeepDive[] = [
     slug: 'team-management',
     categoryName: 'Team Management',
     userType: 'business',
-    metaTitle: 'Salon Team Management — Scheduling, Performance & Commissions | Daisy',
-    metaDescription: 'Manage your beauty team with Daisy: staff scheduling, performance tracking, commission management, role-based access, skill assignments, and leave management.',
+    metaTitle: 'Salon Staff Management Software — Scheduling, Performance & Commissions | The Daisy',
+    metaDescription: 'The Daisy\'s salon staff management handles scheduling, performance tracking, commission calculations, role-based access, skill assignments, and leave management for beauty teams.',
     keywords: ['salon staff management', 'beauty team scheduling', 'salon commission tracking', 'salon employee management', 'beauty staff performance', 'salon role management', 'staff scheduling software', 'salon payroll management', 'beauty team tools', 'salon workforce management'],
-    heroTitle: 'Team Management That Empowers Your Staff',
+    heroTitle: 'Staff Management Software for Salons & Beauty Businesses',
     heroSubtitle: 'Scheduling, performance tracking, commissions, role-based access, and skill assignments — manage your team efficiently and keep them motivated.',
     heroStat: { value: '100%', label: 'Commission transparency' },
     overview: 'Your team is your greatest asset and your biggest cost. Managing staff schedules, tracking performance, calculating commissions, and ensuring fair workload distribution is complex — especially as your team grows. Daisy\'s Team Management provides a comprehensive system that handles staff scheduling with conflict detection, tracks individual performance metrics, calculates commissions automatically based on your rules, manages role-based access to the platform, and assigns services based on each team member\'s skills and certifications. Staff see their own schedules, earnings, and performance on their devices, creating transparency that builds trust and motivation. Owners and managers get the oversight they need without the spreadsheet headaches.',
@@ -793,10 +793,10 @@ export const featureDeepDives: FeatureDeepDive[] = [
     slug: 'analytics-reports',
     categoryName: 'Analytics & Reports',
     userType: 'business',
-    metaTitle: 'Salon Analytics & Reports — Revenue Dashboards & Client Insights | Daisy',
-    metaDescription: 'Make data-driven decisions with Daisy: revenue dashboards, client retention metrics, service performance, staff productivity, trend analysis, and custom reports.',
+    metaTitle: 'Salon Analytics & Reporting Software — Revenue Dashboards & Client Insights | The Daisy',
+    metaDescription: 'The Daisy\'s salon analytics provides real-time revenue dashboards, client retention metrics, service performance tracking, staff productivity reports, and AI-powered trend analysis.',
     keywords: ['salon analytics', 'beauty business reports', 'salon revenue dashboard', 'client retention metrics', 'salon performance tracking', 'beauty business insights', 'salon data analytics', 'spa reporting tools', 'salon trend analysis', 'beauty business KPIs'],
-    heroTitle: 'Analytics & Reports That Drive Decisions',
+    heroTitle: 'Analytics & Reporting Software for Salons & Beauty Businesses',
     heroSubtitle: 'Revenue dashboards, client retention metrics, service performance, staff productivity, and trend analysis — your business performance at a glance.',
     heroStat: { value: 'Real-time', label: 'Business intelligence' },
     overview: 'You can\'t improve what you don\'t measure. Yet most beauty businesses make decisions based on gut feeling because their data is scattered across booking systems, payment terminals, and spreadsheets. Daisy\'s Analytics & Reports brings everything together into clear, actionable dashboards. See your revenue in real-time. Track which services drive the most profit. Understand client retention patterns. Compare staff performance. Identify trends before they become problems. Every metric is calculated automatically from your actual business data — bookings, payments, client visits, reviews, and staff activity. No manual data entry, no spreadsheet formulas, no waiting for month-end reports. Just clear answers to the questions that matter: "Am I growing?" "Where should I invest?" "What needs attention?"',

@@ -121,7 +121,7 @@ describe('FeatureDeepDiveClient', () => {
     );
 
     expect(screen.getByTestId('feature-hero').textContent).toContain(
-      'AI-Powered Intelligence',
+      'Salons',
     );
   });
 
