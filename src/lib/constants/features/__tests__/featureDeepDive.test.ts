@@ -37,6 +37,7 @@ describe('featureDeepDives data', () => {
 
       // Overview
       expect(entry.overview).toBeTruthy();
+      expect(entry.keyCapabilities.length).toBeGreaterThan(0);
       expect(entry.painPoints.length).toBeGreaterThan(0);
       expect(entry.growthOutcome).toBeTruthy();
 

@@ -24,6 +24,7 @@ export interface FeatureDeepDive {
 
   // Overview
   overview: string;
+  keyCapabilities: string[];
   painPoints: string[];
   growthOutcome: string;
 
@@ -122,6 +123,15 @@ export const featureDeepDives: FeatureDeepDive[] = [
 
     overview:
       'The Daisy is an AI-powered booking and business management platform designed for the beauty and wellness industry. Unlike generic salon management software, The Daisy integrates artificial intelligence into every aspect of your operations — from an AI receptionist that answers calls and books appointments 24/7, to predictive analytics that forecast demand and identify growth opportunities. Beauty professionals spend hours managing schedules, clients, and marketing manually. AI automation handles these repetitive tasks so you can focus on delivering exceptional service. The Daisy\'s AI system understands beauty industry terminology, communicates naturally in both Arabic and English, processes bookings and payments autonomously, and surfaces actionable business insights from your data. Whether you run a single chair or manage a multi-location chain, the AI scales to match your ambitions without increasing your headcount.',
+
+    keyCapabilities: [
+      'AI receptionist that answers calls and books appointments 24/7',
+      'Smart scheduling that optimises calendars for maximum revenue',
+      'Predictive business insights with automated weekly reports',
+      'Automated client communication across WhatsApp, SMS, and email',
+      'Native bilingual support in Arabic and English',
+      'AI-driven upselling based on client purchase history',
+    ],
 
     painPoints: [
       'Industry data shows salons miss 30–40% of inbound calls, meaning potential bookings go to competitors who respond faster.',
@@ -411,6 +421,14 @@ export const featureDeepDives: FeatureDeepDive[] = [
 
     overview:
       'Your appointment book is the heartbeat of your beauty business. Every empty slot is lost revenue that can never be recovered, and every scheduling conflict erodes client trust. Yet most salons still rely on disconnected tools — a paper diary, a basic online form, and a phone that rings while stylists are mid-service. Daisy\'s Booking Management system replaces that patchwork with a unified, intelligent scheduling platform built specifically for the beauty industry. Clients book online 24/7 through your branded booking page, your website, social media links, or the Daisy marketplace. The system understands service durations, staff specialisations, buffer times, and equipment requirements — so it never creates impossible schedules. Waitlists automatically fill cancelled slots. Deposit collection and cancellation policies reduce no-shows before they happen. Multi-service bookings calculate total duration and find the optimal sequence. Recurring appointment scheduling locks in regular clients for months ahead. And because every booking flows through a single system, your entire team sees one real-time calendar — no double-bookings, no confusion, no missed revenue. Whether you operate a single chair or manage a multi-location chain, Daisy\'s booking system scales with your business while keeping the client experience effortless.',
+
+    keyCapabilities: [
+      '24/7 online booking through website, social media, and marketplace',
+      'Smart calendar management with conflict detection and gap minimisation',
+      'No-show prevention with deposits, reminders, and waitlists',
+      'Recurring appointment scheduling for predictable revenue',
+      'Multi-service and group booking coordination',
+    ],
 
     painPoints: [
       'Empty slots during peak hours cost salons thousands in unrealised monthly revenue, yet most businesses lack the tools to fill cancellations quickly.',
@@ -728,6 +746,14 @@ export const featureDeepDives: FeatureDeepDive[] = [
     overview:
       'Communication is the invisible thread that holds your client relationships together. A missed reminder leads to a no-show. A forgotten follow-up means a lapsed client. A review never requested is social proof never gained. Yet most beauty businesses are stuck with fragmented communication — a personal WhatsApp here, a text message there, an email that goes unopened. Daisy\'s Communication Tools unify every client interaction into a single, automated system that works across WhatsApp, SMS, email, and Instagram DMs. Appointment reminders go out at precisely the right intervals on the client\'s preferred channel. Post-visit follow-ups request reviews and suggest rebooking. Birthday messages, loyalty milestones, and special offers are triggered automatically based on client data. Broadcast campaigns reach your entire client base or targeted segments with a few clicks. And every conversation — whether started by you or the client — is tracked in a central inbox, so no message falls through the cracks. The system does not just send messages; it sends the right message, to the right person, at the right time, on the right channel. This is how modern beauty businesses build relationships that last.',
 
+    keyCapabilities: [
+      'In-person POS with automatic cashback and discount application',
+      'Online deposit collection at booking time',
+      'Split payments between multiple clients',
+      'Integrated tipping with per-staff tracking',
+      'Invoicing and subscription billing for memberships',
+    ],
+
     painPoints: [
       'Clients ignore generic email blasts — open rates for salon emails typically sit below 20%, meaning 80% of your marketing effort goes unseen.',
       'Staff using personal WhatsApp accounts for client communication creates data loss when they leave and blurs professional boundaries.',
@@ -1040,6 +1066,14 @@ export const featureDeepDives: FeatureDeepDive[] = [
 
     overview:
       'Most beauty businesses are excellent at delivering services but struggle to market themselves effectively. Running promotions means juggling discount codes, loyalty stamps, referral tracking, and social media posts across disconnected tools — if they happen at all. The result is inconsistent marketing, wasted budget, and growth that plateaus. Daisy\'s Marketing & Promotions suite changes the equation entirely. It brings every growth lever into a single platform: cashback rewards that incentivise repeat bookings, referral programs that turn satisfied clients into active promoters, loyalty points that reward your most valuable clients, targeted promotions that fill quiet periods, marketplace visibility that exposes your business to thousands of potential new clients, and social media integration that keeps your online presence active. Each tool works individually, but together they create a compounding growth engine. A new client discovers you on the marketplace, books with a first-visit cashback incentive, refers a friend for bonus rewards, earns loyalty points that lock them into a long-term relationship, and receives targeted promotions during their service intervals. This is not scattershot marketing — it is a systematic acquisition and retention machine built for beauty businesses. You control everything from one dashboard, and every marketing rand, dirham, or dollar you spend is tracked to its impact on bookings and revenue.',
+
+    keyCapabilities: [
+      'Cashback rewards on every booking to drive repeat visits',
+      'Automated referral program with dual rewards',
+      'Targeted promotions to specific client segments',
+      'Daisy marketplace listing for organic discovery',
+      'Loyalty tiers with progressive benefits for top clients',
+    ],
 
     painPoints: [
       'Most salon marketing is reactive — last-minute discounts when bookings are slow — rather than a systematic strategy that compounds over time.',
@@ -1357,6 +1391,14 @@ export const featureDeepDives: FeatureDeepDive[] = [
     overview:
       'Money touches every part of your beauty business — bookings, services, products, tips, refunds, memberships, packages. Yet most salons juggle a separate card terminal, a basic bank transfer for deposits, a spreadsheet for tracking, and an invoicing tool for corporate clients. The result is reconciliation nightmares, missed payments, cash flow blind spots, and hours spent on admin that should be spent on clients. Daisy\'s Payment Processing unifies every transaction into a single, integrated system. Clients pay deposits when they book online. The in-salon POS processes card, contactless, and digital wallet payments at checkout. Split payments allow groups to divide a bill effortlessly. Membership and package subscriptions are billed automatically. Corporate clients receive professional invoices. Tips are tracked and allocated to the right staff member. Refunds are processed with a few clicks, and the associated booking and financial records update automatically. Every transaction — online, in-person, subscription, or refund — flows into a single financial view. You see your real-time revenue, outstanding payments, cash flow forecast, and payment method breakdown without switching between tools or reconciling spreadsheets. This is payment processing that understands beauty businesses, not generic card processing bolted onto booking software.',
 
+    keyCapabilities: [
+      'In-person POS with automatic cashback and discount application',
+      'Online deposit collection at booking time',
+      'Split payments between multiple clients',
+      'Integrated tipping with per-staff tracking',
+      'Invoicing and subscription billing for memberships',
+    ],
+
     painPoints: [
       'Reconciling payments across separate card terminals, bank transfers, and booking systems wastes hours every week and introduces errors.',
       'Collecting deposits for bookings is cumbersome without integrated online payments, leading to higher no-show rates.',
@@ -1663,6 +1705,14 @@ export const featureDeepDives: FeatureDeepDive[] = [
     overview:
       'Growing a beauty business has traditionally meant one of two things: opening more locations with all the operational complexity that entails, or spending more on marketing with uncertain returns. Daisy changes the growth equation by providing a comprehensive platform that handles both acquisition and operations as you scale. Your business is listed on the Daisy marketplace, putting you in front of thousands of potential clients actively searching for beauty services. Your brand is showcased through a white-label experience — your logo, your colours, your domain — so clients see your brand, not a generic platform. As you add locations, every branch is managed from a single dashboard with unified reporting, cross-location booking, and centralised brand control. For businesses ready to franchise, Daisy provides the infrastructure for franchisee onboarding, standardised operations, and performance monitoring. This is not just a booking tool that happens to work for multiple locations. It is a growth platform designed from the ground up for beauty businesses that think bigger — whether bigger means dominating your local market or expanding across regions.',
 
+    keyCapabilities: [
+      'Commission-free marketplace listing for client discovery',
+      '360-degree customer acquisition across multiple channels',
+      'White-label branding on booking pages, emails, and receipts',
+      'Multi-location management from a single dashboard',
+      'Franchise support with centralised policies and local flexibility',
+    ],
+
     painPoints: [
       'Opening a second location means duplicating systems, retraining staff on different tools, and losing the operational clarity you had with one site.',
       'Generic booking platforms strip away your brand identity, making clients loyal to the platform rather than to your business.',
@@ -1950,6 +2000,14 @@ export const featureDeepDives: FeatureDeepDive[] = [
 
     overview:
       'Your team is your business. Every stylist, therapist, technician, and receptionist directly impacts your client experience, your revenue, and your reputation. Yet most beauty businesses manage their teams with a combination of WhatsApp groups, paper rotas, manual commission calculations, and gut-feel performance assessments. The result is scheduling conflicts, payroll disputes, unclear performance expectations, and talented staff who leave because they feel undervalued or under-managed. Daisy\'s Team Management brings structure and transparency to every aspect of people management in your beauty business. Schedules are created and shared digitally — staff see their shifts, upcoming appointments, and any changes in real time. Commission structures are configured once and calculated automatically from every transaction, eliminating disputes and building trust. Performance metrics — revenue generated, client retention, rebooking rates, average service value — are tracked per staff member, giving you objective data for reviews and development conversations. Role-based access ensures each team member sees what they need and nothing more. Skill and specialisation assignments route the right clients to the right staff. Leave management handles time-off requests, approvals, and schedule adjustments without the back-and-forth of WhatsApp messages. This is how you build a team that stays, performs, and grows with your business.',
+
+    keyCapabilities: [
+      'Visual drag-and-drop staff scheduling with conflict detection',
+      'Automated commission calculations with real-time staff visibility',
+      'Per-staff performance tracking across revenue, retention, and satisfaction',
+      'Granular role-based access controls per feature',
+      'Skill-based service assignments for quality assurance',
+    ],
 
     painPoints: [
       'Manual rota creation takes hours each week and still results in conflicts, with staff frequently claiming they did not see the schedule or were not notified of changes.',
@@ -2262,6 +2320,14 @@ export const featureDeepDives: FeatureDeepDive[] = [
 
     overview:
       'Most beauty business owners know their business intuitively — they sense when things are busy, notice when regulars stop coming, and feel when a promotion works. But intuition does not scale. As your business grows, the gap between what you feel and what is actually happening widens. You cannot spot a declining stylist, a churning client segment, or an underperforming service category by instinct alone. Daisy\'s Analytics & Reports transforms every booking, transaction, client interaction, and staff activity into clear, actionable business intelligence. Your revenue dashboard shows real-time daily, weekly, and monthly performance with trend comparisons. Client retention analytics reveal who is coming back, who is not, and why. Service performance metrics identify your most profitable services and those that underperform. Staff productivity dashboards show revenue generated, utilisation rates, and rebooking success per team member. Trend analysis spots seasonal patterns, emerging demand, and early warning signals. Custom reports let you drill into any dimension of your business — by location, by service, by staff member, by time period, by client segment. This is not a reporting afterthought bolted onto a booking tool. It is a business intelligence layer designed for beauty businesses, showing exactly the metrics that matter for salons, spas, and clinics. Every data point comes from your actual operations — no manual entry, no guesswork, no stale spreadsheets. The numbers update in real time, so the decision you make this morning reflects what happened this morning.',
+
+    keyCapabilities: [
+      'Real-time revenue dashboard with period comparison',
+      'Client retention metrics including churn risk and lifetime value',
+      'Service performance analysis by revenue, margin, and rebooking rate',
+      'Per-staff productivity tracking and benchmarking',
+      'Custom reports with scheduled delivery and CSV/PDF export',
+    ],
 
     painPoints: [
       'Business owners rely on end-of-month bank statements to understand performance — by the time they see the numbers, it is too late to act on them.',

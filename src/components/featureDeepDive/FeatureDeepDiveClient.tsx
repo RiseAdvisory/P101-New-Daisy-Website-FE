@@ -121,7 +121,9 @@ export function FeatureDeepDiveClient({ userType, slug }: Props) {
 
       {/* Overview + Pain Points + Growth Outcome */}
       <OverviewSection
+        categoryName={data.categoryName}
         overview={data.overview}
+        keyCapabilities={data.keyCapabilities}
         painPoints={data.painPoints}
         growthOutcome={data.growthOutcome}
       />
