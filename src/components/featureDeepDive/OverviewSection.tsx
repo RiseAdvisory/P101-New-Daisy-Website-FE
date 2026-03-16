@@ -1,4 +1,3 @@
-'use client';
 
 import { AlertCircle, TrendingUp } from 'lucide-react';
 
