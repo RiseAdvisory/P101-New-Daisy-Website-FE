@@ -10,21 +10,18 @@ import { toScrollSectionItems } from '@/lib/constants/pages/scrollSections.types
 // Lazy load below-fold components to reduce initial bundle size and blocking time
 const QASection = dynamic(
   () => import('@/components/QASection/QASection').then((mod) => mod.QASection),
-  { ssr: false },
 );
 const DaysiMission = dynamic(
   () =>
     import('@/components/businessPage/DaysiMission').then(
       (mod) => mod.DaysiMission,
     ),
-  { ssr: false },
 );
 const GrowthSectionCustomer = dynamic(
   () =>
     import('@/components/customerPage/GrowthCustomer').then(
       (mod) => mod.GrowthSectionCustomer,
     ),
-  { ssr: false },
 );
 const ExperienceDaisy = dynamic(
   () =>
@@ -38,7 +35,6 @@ const JoinTheDaisy = dynamic(
     import('@/components/joinTheDaysi/JoinTheDaysi').then(
       (mod) => mod.JoinTheDaisy,
     ),
-  { ssr: false },
 );
 
 export const CustomerClient = () => {

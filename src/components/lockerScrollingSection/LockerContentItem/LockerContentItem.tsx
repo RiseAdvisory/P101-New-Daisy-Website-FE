@@ -1,3 +1,5 @@
+'use client';
+
 import React, { forwardRef } from 'react';
 import styles from './LockerContentItem.module.css';
 import { PlayMarketButton } from '@/components/buttonApp/PlayMarketButton';

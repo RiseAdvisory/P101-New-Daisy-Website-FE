@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useRef, useEffect, useState } from 'react';
 import LockerImageItem from '../LockerImageItem/LockerImageItem';
 import styles from './LockerContainer.module.css';

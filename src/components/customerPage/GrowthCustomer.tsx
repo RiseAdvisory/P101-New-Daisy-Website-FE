@@ -1,3 +1,5 @@
+'use client';
+
 import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
 import Image from 'next/image';
