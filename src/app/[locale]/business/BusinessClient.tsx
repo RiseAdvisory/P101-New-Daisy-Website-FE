@@ -37,7 +37,6 @@ const ExperienceDaisy = dynamic(
     import('@/components/experienceDaisy/ExperienceDaisy').then(
       (mod) => mod.ExperienceDaisy,
     ),
-  { ssr: false },
 );
 const JoinTheDaisy = dynamic(
   () =>
@@ -83,7 +82,7 @@ export const BusinessClient = () => {
         imageUrl={pageData.growth.imageUrl}
       />
       <JoinTheDaisy />
-      <ExperienceDaisy />
+      <ExperienceDaisy pageType="business" />
       <QASection pageType="Business" titleFraque={pageData.titleFraque} />
       <BecomeFormPartner />
     </div>

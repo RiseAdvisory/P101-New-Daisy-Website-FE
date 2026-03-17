@@ -14,17 +14,12 @@ import {
   ExperienceDaisyPageType,
 } from '@/lib/constants/shared/experienceDaisyData';
 
-export const ExperienceDaisy = () => {
+interface ExperienceDaisyProps {
+  pageType?: ExperienceDaisyPageType;
+}
+
+export const ExperienceDaisy = ({ pageType = 'customer' }: ExperienceDaisyProps) => {
   const { lang } = useChangeLanguage();
-  const currentPage = typeof window !== 'undefined' ? localStorage.getItem('activePage') : null;
-
-  let pageType: ExperienceDaisyPageType = 'customer';
-  if (currentPage === '/business') {
-    pageType = 'business';
-  } else if (currentPage === '/professional') {
-    pageType = 'professional';
-  }
-
   const data = t(experienceDaisyData[pageType], lang);
 
   return (

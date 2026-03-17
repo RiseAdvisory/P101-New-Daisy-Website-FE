@@ -18,20 +18,12 @@ export interface SocialLinks {
 }
 
 export interface FooterData {
-  navigationfooterList: FooterNavItem[];
   footerColumns: FooterColumn[];
   socialLinks: SocialLinks;
 }
 
 export const footerData: I18nContent<FooterData> = {
   en: {
-    navigationfooterList: [
-      { name: 'About Us', nav: '/about' },
-      { name: 'Careers', nav: '/careers' },
-      { name: 'FAQs', nav: '/faq' },
-      { name: 'Terms & Conditions', nav: '/terms-conditions' },
-      { name: 'Privacy Policy', nav: '/privacy-policy' },
-    ],
     footerColumns: [
       {
         title: 'Product',
@@ -79,13 +71,6 @@ export const footerData: I18nContent<FooterData> = {
   },
 
   ar: {
-    navigationfooterList: [
-      { name: 'نبذه عنا', nav: '/about' },
-      { name: 'فرص وظيفية', nav: '/careers' },
-      { name: 'أسئلة شائعة', nav: '/faq' },
-      { name: 'الشروط والأحكام', nav: '/terms-conditions' },
-      { name: 'سياسة الخصوصية', nav: '/privacy-policy' },
-    ],
     footerColumns: [
       {
         title: 'المنتج',
