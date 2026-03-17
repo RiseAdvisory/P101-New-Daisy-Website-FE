@@ -27,7 +27,6 @@ const ExperienceDaisy = dynamic(
     import('@/components/experienceDaisy/ExperienceDaisy').then(
       (mod) => mod.ExperienceDaisy,
     ),
-  { ssr: false },
 );
 const JoinTheDaisy = dynamic(
   () =>
@@ -56,7 +55,7 @@ export const CustomerClient = ({ lang }: { lang: string }) => {
         imageUrl={pageData.growth.imageUrl}
       />
       <JoinTheDaisy />
-      <ExperienceDaisy />
+      <ExperienceDaisy pageType="customer" />
       <QASection pageType="Customer" titleFraque={pageData.titleFraque} />
     </div>
   );
