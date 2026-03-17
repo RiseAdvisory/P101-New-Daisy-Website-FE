@@ -28,7 +28,15 @@ export async function middleware(request: NextRequest) {
             url.searchParams.set('utm_source', source);
             url.searchParams.set('utm_medium', 'ai_referral');
             url.searchParams.set('utm_campaign', 'ai_search');
-            return NextResponse.redirect(url);
+            const redirectResponse = NextResponse.redirect(url);
+            if (!request.cookies.get('locale')?.value) {
+              redirectResponse.cookies.set('locale', 'en', {
+                path: '/',
+                maxAge: 60 * 60 * 24 * 365,
+                sameSite: 'lax',
+              });
+            }
+            return redirectResponse;
           }
           break;
         }
@@ -38,5 +46,16 @@ export async function middleware(request: NextRequest) {
     }
   }
 
-  return NextResponse.next();
+  const response = NextResponse.next();
+
+  // Phase 1 bridge: set locale cookie if not present
+  if (!request.cookies.get('locale')?.value) {
+    response.cookies.set('locale', 'en', {
+      path: '/',
+      maxAge: 60 * 60 * 24 * 365, // 1 year
+      sameSite: 'lax',
+    });
+  }
+
+  return response;
 }
