@@ -63,7 +63,7 @@ export const DropDownMobileHeaderLang = ({
               className="w-full bg-white text-primary group-hover:bg-[#F2F4F4]"
               onClick={() => {
                 setOpen(false);
-                changeLanguages(item.label.toLowerCase());
+                changeLanguages(item.path.toLowerCase());
               }}
             >
               {item.label}

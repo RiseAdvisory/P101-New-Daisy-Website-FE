@@ -9,7 +9,6 @@ import { Skeleton } from '@/components/ui/skeleton';
 const FormContacts = dynamic(
   () => import('./FormContacts').then((mod) => mod.FormContacts),
   {
-    ssr: false,
     loading: () => (
       <div className="bg-white p-6 rounded-xl md:mx-auto md:w-[860px] mx-4 border border-[#E8E9E9] md:-translate-y-[235px] -translate-y-[299px]">
         <Skeleton className="h-12 w-full mb-4" />

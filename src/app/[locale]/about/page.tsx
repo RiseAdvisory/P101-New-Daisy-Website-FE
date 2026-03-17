@@ -25,7 +25,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'About Us | The Daisy - Beauty & Wellness Marketplace',
     description:
       'Learn about The Daisy, the beauty and wellness marketplace connecting customers with salons and beauty professionals.',
-    url: 'https://www.jointhedaisy.com/about',
+    url: `https://www.jointhedaisy.com/${locale}/about`,
     type: 'website',
     images: [
       {

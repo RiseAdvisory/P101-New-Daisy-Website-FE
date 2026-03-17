@@ -22,7 +22,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Beauty Booking Tutorials | The Daisy Resources',
     description:
       'Learn how to use The Daisy beauty booking platform with step-by-step tutorials.',
-    url: 'https://www.jointhedaisy.com/resources/tutorials',
+    url: `https://www.jointhedaisy.com/${locale}/resources/tutorials`,
     type: 'website',
     images: [
       {

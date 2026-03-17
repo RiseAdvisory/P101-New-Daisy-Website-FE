@@ -27,7 +27,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Beauty Professional Features - Scheduling & Earnings | The Daisy',
     description:
       'Features for beauty professionals: scheduling, client management, and earnings tracking.',
-    url: 'https://www.jointhedaisy.com/features/professional',
+    url: `https://www.jointhedaisy.com/${locale}/features/professional`,
     type: 'website',
     images: [
       {

@@ -1,8 +1,5 @@
-'use client';
-
-import { FC, useState } from 'react';
-import { cn } from '@/lib/utils';
-import { ChevronDown, Shield, ArrowRightLeft, Database, Award, Clock } from 'lucide-react';
+import { FC } from 'react';
+import { Shield, ArrowRightLeft, Database, Award, Clock } from 'lucide-react';
 
 interface ObjectionHandlingProps {
   variant: 'full' | 'compact';
@@ -58,12 +55,6 @@ export const ObjectionHandling: FC<ObjectionHandlingProps> = ({
   const objections =
     variant === 'compact' ? allObjections.slice(0, 3) : allObjections;
 
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggleIndex = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
     <section className="py-16 px-4">
       <div className="mx-auto max-w-3xl">
@@ -76,60 +67,37 @@ export const ObjectionHandling: FC<ObjectionHandlingProps> = ({
 
         <div className="space-y-3">
           {objections.map((objection, index) => {
-            const isOpen = openIndex === index;
             const Icon = objection.icon;
 
             return (
-              <div
+              <details
                 key={index}
-                className={cn(
-                  'overflow-hidden rounded-xl border transition-all',
-                  isOpen
-                    ? 'border-primaryBtn/30 bg-primary/5 shadow-sm'
-                    : 'border-[#E8E9E9] bg-white',
-                )}
+                className="group rounded-xl border border-[#E8E9E9] bg-white transition-all open:border-primaryBtn/30 open:bg-primary/5 open:shadow-sm"
               >
-                <button
-                  type="button"
-                  onClick={() => toggleIndex(index)}
-                  className="flex w-full items-center gap-4 px-6 py-5 text-left transition-colors hover:bg-[#F8F5F3]/50"
-                >
-                  <div
-                    className={cn(
-                      'flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg transition-colors',
-                      isOpen
-                        ? 'bg-primary/10 text-primary'
-                        : 'bg-[#F8F5F3] text-[#586968]',
-                    )}
-                  >
+                <summary className="flex cursor-pointer items-center gap-4 px-6 py-5 text-left transition-colors hover:bg-[#F8F5F3]/50 [&::-webkit-details-marker]:hidden list-none">
+                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-[#F8F5F3] text-[#586968] transition-colors group-open:bg-primary/10 group-open:text-primary">
                     <Icon className="h-5 w-5" />
                   </div>
                   <span className="flex-1 text-base font-semibold text-[#172524]">
                     {objection.question}
                   </span>
-                  <ChevronDown
-                    className={cn(
-                      'h-5 w-5 flex-shrink-0 text-[#D5D9D9] transition-transform duration-200',
-                      isOpen && 'rotate-180',
-                    )}
-                  />
-                </button>
-
-                <div
-                  className={cn(
-                    'grid transition-all duration-200',
-                    isOpen
-                      ? 'grid-rows-[1fr] opacity-100'
-                      : 'grid-rows-[0fr] opacity-0',
-                  )}
-                >
-                  <div className="overflow-hidden">
-                    <p className="px-6 pb-5 pl-20 text-sm leading-relaxed text-[#455150]">
-                      {objection.answer}
-                    </p>
-                  </div>
-                </div>
-              </div>
+                  <svg
+                    className="h-5 w-5 flex-shrink-0 text-[#D5D9D9] transition-transform duration-200 group-open:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </summary>
+                <p className="px-6 pb-5 pl-20 text-sm leading-relaxed text-[#455150]">
+                  {objection.answer}
+                </p>
+              </details>
             );
           })}
         </div>

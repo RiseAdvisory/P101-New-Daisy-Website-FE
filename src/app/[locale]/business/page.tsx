@@ -26,7 +26,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Salon & Spa Business Solutions | The Daisy',
     description:
       'Grow your salon or spa business with The Daisy. Manage bookings, staff, and promotions on our beauty marketplace.',
-    url: 'https://www.jointhedaisy.com/business',
+    url: `https://www.jointhedaisy.com/${locale}/business`,
     type: 'website',
     images: [
       {

@@ -9,6 +9,7 @@ export interface GlossaryEntry {
   relatedTerms: string[];
   metaTitle: string;
   metaDescription: string;
+  keywords: string[];
 }
 
 export const glossaryEntries: GlossaryEntry[] = [
@@ -75,6 +76,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     metaTitle: 'What is Salon Management Software? | Definition & Features Guide',
     metaDescription:
       'Learn what salon management software is, key features to look for, and how AI-powered platforms like Daisy help salons grow with automated booking, payments, and marketing.',
+    keywords: ['salon management software', 'salon software features', 'beauty business software', 'salon POS system', 'salon booking platform'],
   },
   {
     slug: 'ai-receptionist-for-salons',
@@ -139,6 +141,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     metaTitle: 'What is an AI Receptionist for Salons? | 24/7 Automated Booking',
     metaDescription:
       'Learn what an AI receptionist for salons does, how it books appointments 24/7, and why beauty businesses are adopting AI to capture missed calls and grow revenue.',
+    keywords: ['AI receptionist salon', 'salon virtual receptionist', 'automated salon booking', '24/7 salon answering', 'AI phone answering beauty'],
   },
   {
     slug: 'cashback-beauty-booking',
@@ -203,6 +206,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     metaTitle: 'What is Cashback in Beauty Booking? | Salon Loyalty Guide',
     metaDescription:
       'Learn how cashback beauty booking works, why it outperforms traditional loyalty programs, and how platforms like Daisy use cashback to acquire and retain salon clients.',
+    keywords: ['cashback beauty booking', 'salon loyalty program', 'salon cashback rewards', 'beauty booking rewards', 'salon customer retention'],
   },
   {
     slug: 'white-label-salon-software',
@@ -267,6 +271,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     metaTitle: 'What is White-Label Salon Software? | Custom Branded Booking',
     metaDescription:
       'Learn what white-label salon software is, why brand control matters for beauty businesses, and how Daisy lets you fully rebrand your booking experience.',
+    keywords: ['white-label salon software', 'branded salon booking', 'custom salon app', 'salon branding software', 'white-label beauty platform'],
   },
   {
     slug: 'salon-booking-software',
@@ -331,6 +336,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     metaTitle: 'What is Salon Booking Software? | Online Appointment Scheduling',
     metaDescription:
       'Learn what salon booking software does, how it reduces no-shows by 30-40%, and why AI-powered scheduling helps beauty businesses grow revenue.',
+    keywords: ['salon booking software', 'online salon scheduling', 'salon appointment system', 'beauty booking platform', 'salon no-show reduction'],
   },
 ];
 

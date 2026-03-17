@@ -25,7 +25,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Contact Us | The Daisy - Beauty Booking Platform',
     description:
       'Get in touch with The Daisy team for beauty platform questions and support.',
-    url: 'https://www.jointhedaisy.com/contact',
+    url: `https://www.jointhedaisy.com/${locale}/contact`,
     type: 'website',
     images: [
       {

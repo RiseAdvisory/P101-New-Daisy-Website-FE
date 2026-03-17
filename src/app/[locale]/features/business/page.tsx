@@ -31,7 +31,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'AI-Powered Salon Business Features - Booking, Marketing & Payments | The Daisy',
     description:
       'AI-powered features for salon & spa businesses: smart scheduling, booking, marketing, payments, communication, growth, and team management.',
-    url: 'https://www.jointhedaisy.com/features/business',
+    url: `https://www.jointhedaisy.com/${locale}/features/business`,
     type: 'website',
     images: [
       {

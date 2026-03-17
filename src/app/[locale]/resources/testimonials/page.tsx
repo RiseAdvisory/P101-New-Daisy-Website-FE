@@ -22,7 +22,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Salon & Spa Success Stories | The Daisy Testimonials',
     description:
       'Read success stories from salons, spas, and beauty professionals on The Daisy.',
-    url: 'https://www.jointhedaisy.com/resources/testimonials',
+    url: `https://www.jointhedaisy.com/${locale}/resources/testimonials`,
     type: 'website',
     images: [
       {

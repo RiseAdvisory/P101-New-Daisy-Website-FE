@@ -10,7 +10,6 @@ const ProfileForm = dynamic(
   () =>
     import('../formBusiness/FormBusiness').then((mod) => mod.ProfileForm),
   {
-    ssr: false,
     loading: () => (
       <div className="bg-white p-6 rounded-xl mt-[48px] md:mx-auto md:w-[860px]">
         <Skeleton className="h-12 w-full mb-4" />

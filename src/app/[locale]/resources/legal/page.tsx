@@ -21,7 +21,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Legal Resources | The Daisy Beauty Platform',
     description:
       'Access legal resources and documentation from The Daisy beauty platform.',
-    url: 'https://www.jointhedaisy.com/resources/legal',
+    url: `https://www.jointhedaisy.com/${locale}/resources/legal`,
     type: 'website',
     images: [
       {

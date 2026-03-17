@@ -24,7 +24,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'FAQ - Beauty Booking Questions | The Daisy',
     description:
       'Find answers to common questions about The Daisy beauty booking platform.',
-    url: 'https://www.jointhedaisy.com/faq',
+    url: `https://www.jointhedaisy.com/${locale}/faq`,
     type: 'website',
     images: [
       {

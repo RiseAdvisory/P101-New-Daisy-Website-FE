@@ -24,16 +24,19 @@ export function generateMetadata({
   return {
     title: entry.metaTitle,
     description: entry.metaDescription,
+    keywords: entry.keywords,
     openGraph: {
       title: entry.metaTitle,
       description: entry.metaDescription,
-      url: `https://www.jointhedaisy.com/glossary/${params.slug}`,
+      url: `https://www.jointhedaisy.com/${params.locale}/glossary/${params.slug}`,
       type: 'article',
+      images: [{ url: 'https://i.imgur.com/MNoL6BE.jpeg', width: 1200, height: 630, alt: 'The Daisy' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: entry.metaTitle,
       description: entry.metaDescription,
+      images: ['https://i.imgur.com/MNoL6BE.jpeg'],
     },
     alternates: localeAlternates(`/glossary/${params.slug}`, params.locale),
   };

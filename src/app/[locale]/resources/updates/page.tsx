@@ -22,7 +22,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Platform Updates | The Daisy Beauty Booking News',
     description:
       'Stay informed with the latest updates and features from The Daisy beauty booking platform.',
-    url: 'https://www.jointhedaisy.com/resources/updates',
+    url: `https://www.jointhedaisy.com/${locale}/resources/updates`,
     type: 'website',
     images: [
       {

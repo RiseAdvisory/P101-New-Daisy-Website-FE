@@ -23,7 +23,7 @@ export function OverviewSection({
         <h2 className="mb-6 text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
           What Is {categoryName} for Beauty Businesses?
         </h2>
-        <p className="mb-6 text-lg leading-relaxed text-[#455150]">
+        <p className="mb-6 text-lg leading-relaxed text-[#455150]" data-geo-answer="true">
           {overview}
         </p>
 

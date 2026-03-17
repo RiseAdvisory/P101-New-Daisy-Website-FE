@@ -24,7 +24,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Pricing Plans for Salons & Spas | The Daisy',
     description:
       'Flexible pricing plans for salons, spas, and beauty professionals. Monthly or annual billing available.',
-    url: 'https://www.jointhedaisy.com/pricing',
+    url: `https://www.jointhedaisy.com/${locale}/pricing`,
     type: 'website',
     images: [
       {
