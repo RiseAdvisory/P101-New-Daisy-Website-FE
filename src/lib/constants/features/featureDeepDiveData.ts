@@ -386,7 +386,12 @@ export const featureDeepDives: FeatureDeepDive[] = [
       'communication-tools',
       'analytics-reports',
     ],
-    relatedArticleSlugs: [],
+    relatedArticleSlugs: [
+      'ai-scheduling-saves-salon-owners-time',
+      'predictive-analytics-salons-beginners-guide',
+      '5-ways-ai-transform-beauty-business-2026',
+      'daisy-ai-vs-competitors-scheduling-comparison',
+    ],
   },
 
   // =========================================================================

@@ -13,8 +13,8 @@ export const AboutPosts = () => {
   const sanitizedHTML = aboutPost ? DOMPurify.sanitize(aboutPost) : '';
 
   return (
-    <div className="px-4 md:px-[280px]">
-      <div dangerouslySetInnerHTML={{ __html: sanitizedHTML }} />
+    <div className="px-4 md:px-[280px] py-10 md:py-16">
+      <div className="blog-content" dangerouslySetInnerHTML={{ __html: sanitizedHTML }} />
     </div>
   );
 };
