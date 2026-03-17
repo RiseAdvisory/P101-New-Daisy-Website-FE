@@ -4,7 +4,7 @@ export function OrganizationSchema() {
     '@type': 'Organization',
     name: 'The Daisy',
     url: 'https://www.jointhedaisy.com',
-    logo: 'https://i.imgur.com/MNoL6BE.jpeg',
+    logo: 'https://www.jointhedaisy.com/icon-512.png',
     description:
       'The Daisy is a platform connecting businesses, professionals, and customers for exceptional service experiences.',
     sameAs: [

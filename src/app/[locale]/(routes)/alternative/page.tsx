@@ -25,14 +25,16 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Salon Software Alternatives — Compare & Switch | Daisy',
     description:
       'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives with AI features, pricing, and Arabic support.',
-    url: 'https://www.jointhedaisy.com/alternative',
+    url: `https://www.jointhedaisy.com/${locale}/alternative`,
     type: 'website',
+    images: [{ url: 'https://i.imgur.com/MNoL6BE.jpeg', width: 1200, height: 630, alt: 'The Daisy' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Salon Software Alternatives — Compare & Switch | Daisy',
     description:
       'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives.',
+    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
     alternates: localeAlternates('/alternative', locale),
   };

@@ -13,6 +13,7 @@ export interface GuideData {
   faqs: { question: string; answer: string }[];
   metaTitle: string;
   metaDescription: string;
+  keywords: string[];
   relatedGuides: string[];
 }
 
@@ -97,6 +98,7 @@ export const guideEntries: GuideData[] = [
     metaTitle: 'How to Reduce Salon No-Shows by 40% | Proven Strategies',
     metaDescription:
       'Learn proven strategies to reduce salon no-shows by 30-40%. Automated reminders, deposits, AI prediction, and smart waitlists -- with step-by-step implementation guide.',
+    keywords: ['reduce salon no-shows', 'salon no-show prevention', 'salon automated reminders', 'salon deposit policy', 'salon waitlist management'],
     relatedGuides: ['get-more-salon-clients', 'choose-best-salon-software'],
   },
   {
@@ -169,6 +171,7 @@ export const guideEntries: GuideData[] = [
     metaTitle: 'How to Get More Salon Clients in 2026 | Growth Strategies',
     metaDescription:
       'Learn how to attract more clients to your salon with marketplace discovery, cashback programs, AI marketing, and 24/7 booking. Step-by-step client acquisition guide.',
+    keywords: ['get more salon clients', 'salon customer acquisition', 'salon marketing strategies', 'salon growth tips', 'beauty business marketing'],
     relatedGuides: ['reduce-salon-no-shows', 'choose-best-salon-software'],
   },
   {
@@ -251,6 +254,7 @@ export const guideEntries: GuideData[] = [
     metaTitle: 'How to Choose the Best Salon Software in 2026 | Buyer\'s Guide',
     metaDescription:
       'Step-by-step guide to choosing salon software. Compare features, pricing models, AI capabilities, and hidden fees. Find the right platform for your beauty business.',
+    keywords: ['best salon software', 'salon software comparison', 'choose salon software', 'salon software pricing', 'beauty business software guide'],
     relatedGuides: ['reduce-salon-no-shows', 'get-more-salon-clients'],
   },
   {
@@ -323,6 +327,7 @@ export const guideEntries: GuideData[] = [
     metaTitle: 'How to Switch from Fresha | Migration Guide 2026',
     metaDescription:
       'Step-by-step guide to switching from Fresha to a better salon platform. Export data, migrate clients, and transition smoothly with zero downtime.',
+    keywords: ['switch from Fresha', 'Fresha alternative migration', 'Fresha data export', 'salon software migration', 'leave Fresha'],
     relatedGuides: ['choose-best-salon-software', 'get-more-salon-clients'],
   },
   {
@@ -395,6 +400,7 @@ export const guideEntries: GuideData[] = [
     metaTitle: 'How to Set Up Online Booking for Your Salon | Complete Guide',
     metaDescription:
       'Step-by-step guide to setting up online salon booking. Configure services, embed on your website, enable Google booking, and start accepting appointments 24/7.',
+    keywords: ['salon online booking setup', 'salon appointment scheduling', 'salon booking widget', 'Reserve with Google salon', 'online booking beauty business'],
     relatedGuides: ['reduce-salon-no-shows', 'get-more-salon-clients'],
   },
 ];

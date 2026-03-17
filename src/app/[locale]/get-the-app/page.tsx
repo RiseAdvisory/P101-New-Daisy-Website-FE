@@ -25,7 +25,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Download The Daisy App | Beauty Booking for iOS & Android',
     description:
       'Download The Daisy beauty booking app. Find salons, book appointments, and earn cashback.',
-    url: 'https://www.jointhedaisy.com/get-the-app',
+    url: `https://www.jointhedaisy.com/${locale}/get-the-app`,
     type: 'website',
     images: [
       {

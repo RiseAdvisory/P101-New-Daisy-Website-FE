@@ -27,7 +27,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'For Beauty Professionals | The Daisy',
     description:
       'Join The Daisy as a beauty professional. Manage appointments, build your client base, and grow your career.',
-    url: 'https://www.jointhedaisy.com/professional',
+    url: `https://www.jointhedaisy.com/${locale}/professional`,
     type: 'website',
     images: [
       {

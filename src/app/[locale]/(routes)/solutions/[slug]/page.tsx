@@ -25,13 +25,15 @@ export function generateMetadata({
     openGraph: {
       title: data.metaTitle,
       description: data.metaDescription,
-      url: `https://www.jointhedaisy.com/solutions/${params.slug}`,
+      url: `https://www.jointhedaisy.com/${params.locale}/solutions/${params.slug}`,
       type: 'website',
+      images: [{ url: 'https://i.imgur.com/MNoL6BE.jpeg', width: 1200, height: 630, alt: 'The Daisy' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: data.metaTitle,
       description: data.metaDescription,
+      images: ['https://i.imgur.com/MNoL6BE.jpeg'],
     },
     alternates: localeAlternates(`/solutions/${params.slug}`, params.locale),
   };

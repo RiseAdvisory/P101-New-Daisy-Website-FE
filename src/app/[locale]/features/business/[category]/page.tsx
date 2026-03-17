@@ -30,7 +30,7 @@ export function generateMetadata({
     openGraph: {
       title: data.metaTitle,
       description: data.metaDescription,
-      url: `https://www.jointhedaisy.com/features/business/${params.category}`,
+      url: `https://www.jointhedaisy.com/${params.locale}/features/business/${params.category}`,
       type: 'website',
     },
     twitter: {

@@ -30,13 +30,15 @@ export function generateMetadata({
     openGraph: {
       title: metaTitle,
       description: metaDescription,
-      url: `https://www.jointhedaisy.com/alternative/${params.slug}`,
+      url: `https://www.jointhedaisy.com/${params.locale}/alternative/${params.slug}`,
       type: 'website',
+      images: [{ url: 'https://i.imgur.com/MNoL6BE.jpeg', width: 1200, height: 630, alt: 'The Daisy' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: metaTitle,
       description: metaDescription,
+      images: ['https://i.imgur.com/MNoL6BE.jpeg'],
     },
     alternates: localeAlternates(`/alternative/${params.slug}`, params.locale),
   };

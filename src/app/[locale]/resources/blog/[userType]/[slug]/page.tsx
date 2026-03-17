@@ -11,6 +11,7 @@ import BlogPostJsonLd from './BlogPostJsonLd';
 
 interface PageProps {
   params: {
+    locale: string;
     userType: string;
     slug: string;
   };
@@ -33,7 +34,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const { userType, slug } = params;
+  const { locale, userType, slug } = params;
 
   // Validate userType
   if (!['customer', 'business', 'professional'].includes(userType)) {
@@ -80,13 +81,7 @@ export async function generateMetadata({
       description: metaDescription,
       images: ogImageUrl ? [ogImageUrl] : undefined,
     },
-    alternates: {
-      canonical: `/resources/blog/${userType}/${slug}`,
-      languages: {
-        en: `/resources/blog/${userType}/${slug}`,
-        ar: `/ar/resources/blog/${userType}/${slug}`,
-      },
-    },
+    alternates: localeAlternates(`/resources/blog/${userType}/${slug}`, locale),
   };
 }
 

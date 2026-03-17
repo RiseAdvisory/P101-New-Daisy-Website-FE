@@ -25,7 +25,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Careers | The Daisy - Beauty Tech Jobs',
     description:
       'Join The Daisy team and help build the future of beauty and wellness booking.',
-    url: 'https://www.jointhedaisy.com/careers',
+    url: `https://www.jointhedaisy.com/${locale}/careers`,
     type: 'website',
     images: [
       {

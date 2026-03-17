@@ -24,7 +24,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Terms & Conditions | The Daisy - Beauty Booking Platform',
     description:
       'Review The Daisy terms and conditions governing the use of our beauty booking platform.',
-    url: 'https://www.jointhedaisy.com/terms-conditions',
+    url: `https://www.jointhedaisy.com/${locale}/terms-conditions`,
     type: 'website',
     images: [
       {

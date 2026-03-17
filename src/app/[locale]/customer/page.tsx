@@ -27,7 +27,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Book Beauty & Salon Services | The Daisy',
     description:
       'Discover salons near you, earn cashback rewards, and book beauty services with exclusive promotions.',
-    url: 'https://www.jointhedaisy.com/customer',
+    url: `https://www.jointhedaisy.com/${locale}/customer`,
     type: 'website',
     images: [
       {

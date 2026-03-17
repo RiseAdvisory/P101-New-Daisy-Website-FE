@@ -26,7 +26,6 @@ export const LazyMotionDiv = dynamic(
       return mod.motion.div;
     }),
   {
-    ssr: false,
     loading: () => <LoadingPlaceholder />,
   },
 );
@@ -41,7 +40,6 @@ export const LazyMotionUl = dynamic(
       return mod.motion.ul;
     }),
   {
-    ssr: false,
     loading: () => <LoadingPlaceholder />,
   },
 );
@@ -56,7 +54,6 @@ export const LazyMotionLi = dynamic(
       return mod.motion.li;
     }),
   {
-    ssr: false,
     loading: () => <LoadingPlaceholder />,
   },
 );

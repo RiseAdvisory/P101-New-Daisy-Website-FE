@@ -22,7 +22,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Beauty & Wellness Blog | The Daisy Resources',
     description:
       'Read the latest beauty and wellness industry insights from The Daisy.',
-    url: 'https://www.jointhedaisy.com/resources/blog-post',
+    url: `https://www.jointhedaisy.com/${locale}/resources/blog-post`,
     type: 'website',
     images: [
       {

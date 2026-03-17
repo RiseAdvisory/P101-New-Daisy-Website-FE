@@ -24,7 +24,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Privacy Policy | The Daisy - Beauty Booking Platform',
     description:
       'Read The Daisy privacy policy to understand how we protect your personal information.',
-    url: 'https://www.jointhedaisy.com/privacy-policy',
+    url: `https://www.jointhedaisy.com/${locale}/privacy-policy`,
     type: 'website',
     images: [
       {
