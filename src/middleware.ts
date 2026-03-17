@@ -102,9 +102,25 @@ export async function middleware(request: NextRequest) {
     }
   }
 
-  // If URL already has a valid locale prefix, pass through
+  // If URL already has a valid locale prefix, handle convenience redirects then pass through
   if (pathnameHasLocale(pathname)) {
     const urlLocale = pathname.split('/')[1];
+    const pathWithoutLocale = pathname.replace(`/${urlLocale}`, '') || '/';
+
+    // Convenience redirects (replaces old next.config.mjs redirects)
+    const convenienceRedirects: Record<string, string> = {
+      '/': '/business',
+      '/features': '/features/business',
+      '/features/customer': '/features/business',
+    };
+
+    const redirectTo = convenienceRedirects[pathWithoutLocale];
+    if (redirectTo) {
+      const newUrl = request.nextUrl.clone();
+      newUrl.pathname = `/${urlLocale}${redirectTo}`;
+      return setLocaleCookie(NextResponse.redirect(newUrl, 301), urlLocale);
+    }
+
     return setLocaleCookie(NextResponse.next(), urlLocale);
   }
 

@@ -89,6 +89,61 @@ describe('middleware', () => {
     expect(response.headers.get('location')).toContain('/ar/business');
   });
 
+  // Convenience redirect tests
+  it('should redirect /en/features to /en/features/business', async () => {
+    const request = new NextRequest('https://example.com/en/features', {
+      headers: { 'user-agent': 'Mozilla/5.0' },
+    });
+
+    const response = await middleware(request);
+
+    expect(response.status).toBe(301);
+    expect(response.headers.get('location')).toContain('/en/features/business');
+  });
+
+  it('should redirect /ar/features to /ar/features/business', async () => {
+    const request = new NextRequest('https://example.com/ar/features', {
+      headers: { 'user-agent': 'Mozilla/5.0' },
+    });
+
+    const response = await middleware(request);
+
+    expect(response.status).toBe(301);
+    expect(response.headers.get('location')).toContain('/ar/features/business');
+  });
+
+  it('should redirect /en/features/customer to /en/features/business', async () => {
+    const request = new NextRequest('https://example.com/en/features/customer', {
+      headers: { 'user-agent': 'Mozilla/5.0' },
+    });
+
+    const response = await middleware(request);
+
+    expect(response.status).toBe(301);
+    expect(response.headers.get('location')).toContain('/en/features/business');
+  });
+
+  it('should redirect /en/ to /en/business', async () => {
+    const request = new NextRequest('https://example.com/en/', {
+      headers: { 'user-agent': 'Mozilla/5.0' },
+    });
+
+    const response = await middleware(request);
+
+    expect(response.status).toBe(301);
+    expect(response.headers.get('location')).toContain('/en/business');
+  });
+
+  it('should not redirect /en/about (valid page)', async () => {
+    const request = new NextRequest('https://example.com/en/about', {
+      headers: { 'user-agent': 'Mozilla/5.0' },
+    });
+
+    const response = await middleware(request);
+
+    expect(response.headers.get('x-middleware-next')).toBe('1');
+  });
+
   it('should pass through sitemap requests', async () => {
     const request = new NextRequest('https://example.com/sitemap.xml', {
       headers: {
