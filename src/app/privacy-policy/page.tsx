@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { PrivacyPolicyClient } from './PrivacyPolicyClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
+import { getLocale } from '@/lib/locale';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | The Daisy - Beauty Booking Platform',
@@ -43,6 +44,8 @@ export const metadata: Metadata = {
 };
 
 export default function PrivacyPolicyPage() {
+  const locale = getLocale();
+
   return (
     <>
       <WebPageSchema
@@ -53,7 +56,7 @@ export default function PrivacyPolicyPage() {
       <PageBreadcrumbSchema
         items={[{ name: 'Privacy Policy', url: 'https://www.jointhedaisy.com/privacy-policy' }]}
       />
-      <PrivacyPolicyClient />
+      <PrivacyPolicyClient lang={locale} />
     </>
   );
 }

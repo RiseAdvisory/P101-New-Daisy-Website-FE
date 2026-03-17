@@ -173,7 +173,7 @@ describe('FeatureDeepDiveClient', () => {
 
     expect(screen.getByText('Features')).toBeInTheDocument();
     expect(screen.getByText('Business')).toBeInTheDocument();
-    expect(screen.getByText('AI-Powered Intelligence')).toBeInTheDocument();
+    expect(screen.getByText('AI Salon Management')).toBeInTheDocument();
   });
 
   it('renders CTA with category-specific headline', () => {
@@ -185,7 +185,7 @@ describe('FeatureDeepDiveClient', () => {
     );
 
     expect(screen.getByTestId('solution-cta').textContent).toContain(
-      'AI-Powered Intelligence',
+      'AI Salon Management',
     );
   });
 });

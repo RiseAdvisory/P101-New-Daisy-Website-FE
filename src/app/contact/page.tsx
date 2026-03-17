@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { ContactClient } from './ContactClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
+import { getLocale } from '@/lib/locale';
 
 export const metadata: Metadata = {
   title: 'Contact Us | The Daisy - Beauty Booking Platform',
@@ -44,6 +45,8 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const locale = getLocale();
+
   return (
     <>
       <WebPageSchema
@@ -54,7 +57,7 @@ export default function ContactPage() {
       <PageBreadcrumbSchema
         items={[{ name: 'Contact', url: 'https://www.jointhedaisy.com/contact' }]}
       />
-      <ContactClient />
+      <ContactClient lang={locale} />
     </>
   );
 }

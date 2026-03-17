@@ -3,10 +3,8 @@ import { SupportSection } from '@/components/contactsPage/SupportSection';
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import { contactPageData } from '@/lib/constants/contactPageData';
 import { t } from '@/lib/constants/i18n';
-import { useChangeLanguage } from '@/store/language';
 
-export const ContactClient = () => {
-  const { lang } = useChangeLanguage();
+export const ContactClient = ({ lang }: { lang: string }) => {
   const data = t(contactPageData, lang);
 
   return (

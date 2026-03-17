@@ -2,14 +2,12 @@
 import { FeaturesCustomerList } from '@/components/featuresPage/FeaturesCustomerList';
 import { SignUpBlog } from '@/components/featuresPage/SignUpBlog';
 import { HeroPage } from '@/components/heroSection/HeroSection';
-import { useChangeLanguage } from '@/store/language';
 import { useState } from 'react';
 import { t } from '@/lib/constants/i18n';
 import { featuresCustomerData } from '@/lib/constants/features/featuresCustomerList';
 
-export const FeaturesCustomerClient = () => {
+export const FeaturesCustomerClient = ({ lang }: { lang: string }) => {
   const [scroll, setScroll] = useState(null);
-  const { lang } = useChangeLanguage();
   const data = t(featuresCustomerData, lang);
 
   return (

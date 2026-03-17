@@ -3,12 +3,10 @@ import { HeroPage } from '@/components/heroSection/HeroSection';
 import { TermsConditionsSection } from '@/components/termsConditionsPage/TermsConditions';
 import { termsConditionsPageData } from '@/lib/constants/termsConditionsData';
 import { t } from '@/lib/constants/i18n';
-import { useChangeLanguage } from '@/store/language';
 import { useState } from 'react';
 
-export const TermsConditionsClient = () => {
+export const TermsConditionsClient = ({ lang }: { lang: string }) => {
   const [scroll, setScroll] = useState(null);
-  const { lang } = useChangeLanguage();
   const data = t(termsConditionsPageData, lang);
 
   return (

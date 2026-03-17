@@ -47,6 +47,8 @@ export const useChangeLanguage = create<ILanguageStore>((set) => ({
 
     if (typeof window !== 'undefined') {
       localStorage.setItem('lang', newLang);
+      // Bridge: sync to cookie so server components can read locale
+      document.cookie = `locale=${newLang}; path=/; max-age=${60 * 60 * 24 * 365}; samesite=lax`;
       updateDocumentDirection(newLang);
     }
   },
@@ -55,5 +57,7 @@ export const useChangeLanguage = create<ILanguageStore>((set) => ({
 // Initialize document direction on load (deferred)
 if (typeof window !== 'undefined') {
   const initialLang = localStorage.getItem('lang') || 'en';
+  // Sync localStorage value to cookie for server components
+  document.cookie = `locale=${initialLang}; path=/; max-age=${60 * 60 * 24 * 365}; samesite=lax`;
   updateDocumentDirection(initialLang);
 }

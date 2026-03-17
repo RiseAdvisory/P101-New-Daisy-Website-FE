@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { ProfessionalClient } from './ProfessionalClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
+import { getLocale } from '@/lib/locale';
 
 export const metadata: Metadata = {
   title: 'For Beauty Professionals | The Daisy',
@@ -47,6 +48,8 @@ export const metadata: Metadata = {
 };
 
 export default function ProfessionalPage() {
+  const locale = getLocale();
+
   return (
     <>
       <WebPageSchema
@@ -57,7 +60,7 @@ export default function ProfessionalPage() {
       <PageBreadcrumbSchema
         items={[{ name: 'For Professionals', url: 'https://www.jointhedaisy.com/professional' }]}
       />
-      <ProfessionalClient />
+      <ProfessionalClient lang={locale} />
     </>
   );
 }

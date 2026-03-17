@@ -152,7 +152,7 @@ describe('getFeatureDeepDive', () => {
   it('returns data for a valid business slug', () => {
     const data = getFeatureDeepDive('business', 'ai-salon-management');
     expect(data).toBeDefined();
-    expect(data?.categoryName).toBe('AI-Powered Intelligence');
+    expect(data?.categoryName).toBe('AI Salon Management');
     expect(data?.userType).toBe('business');
   });
 
