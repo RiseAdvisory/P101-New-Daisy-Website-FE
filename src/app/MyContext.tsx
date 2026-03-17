@@ -1,7 +1,4 @@
 'use client';
-import { Footer } from '@/components/footer/Footer';
-import { Header } from '@/components/header/Header';
-import ClientSideEffect from '@/helpers/ClientSideEffect';
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 interface MyContextType {
@@ -20,10 +17,7 @@ export const MyUserTypeProvider = ({ children }: MyUserTypeProviderProps) => {
 
   return (
     <MyContext.Provider value={{ userChange, setUserChange }}>
-      <Header />
-      <ClientSideEffect />
-      <div className="pt-[100px]">{children}</div>
-      <Footer />
+      {children}
     </MyContext.Provider>
   );
 };

@@ -1,10 +1,6 @@
 import type { Metadata } from 'next';
 import { Open_Sans, Montserrat, Inter, Cairo } from 'next/font/google';
 import './globals.css';
-import { Header } from '@/components/header/Header';
-import { Footer } from '@/components/footer/Footer';
-import ClientSideEffect from '@/helpers/ClientSideEffect';
-import { MyUserTypeProvider } from './MyContext';
 import { OrganizationSchema } from '@/components/seo/OrganizationSchema';
 import { SoftwareApplicationSchema } from '@/components/seo/SoftwareApplicationSchema';
 import { WebSiteSchema } from '@/components/seo/WebSiteSchema';
@@ -91,7 +87,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Preconnect to Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -107,10 +103,11 @@ export default function RootLayout({
       <body
         className={`${openSans.variable} ${montserrat.variable} ${inter.variable} ${cairo.variable} font-openSans rtl:font-cairo`}
         dir="ltr"
+        suppressHydrationWarning
       >
         <WebVitals />
         <ServiceWorkerRegistration />
-        <MyUserTypeProvider>{children}</MyUserTypeProvider>
+        {children}
       </body>
     </html>
   );

@@ -128,7 +128,7 @@ describe('Header', () => {
   it('renders logo with link to home', () => {
     render(<Header />);
     const logoLink = screen.getByRole('link', { name: /logo/i });
-    expect(logoLink).toHaveAttribute('href', '/');
+    expect(logoLink).toHaveAttribute('href', '/en/business');
   });
 
   describe('navigation from constants', () => {
@@ -156,13 +156,13 @@ describe('Header', () => {
       render(<Header />);
 
       const pricingLink = screen.getByText('Pricing').closest('a');
-      expect(pricingLink).toHaveAttribute('href', '/pricing');
+      expect(pricingLink).toHaveAttribute('href', '/en/pricing');
 
       const aboutLink = screen.getByText('About').closest('a');
-      expect(aboutLink).toHaveAttribute('href', '/about');
+      expect(aboutLink).toHaveAttribute('href', '/en/about');
 
       const contactLink = screen.getByText('Contact').closest('a');
-      expect(contactLink).toHaveAttribute('href', '/contact');
+      expect(contactLink).toHaveAttribute('href', '/en/contact');
     });
   });
 

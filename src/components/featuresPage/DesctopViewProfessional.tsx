@@ -6,7 +6,7 @@ import imageLeafRight from '../../assets/images/features/business/LeafBusinessRi
 import imageLeafLast from '../../assets/images/features/business/LeafBusinessBottom.png';
 
 import { ColumnTabsDesctop } from './ColumnTabsDesctop';
-import { CategoryData, CategoryKey } from '@/app/features/business/FeaturesBusinessClient';
+import { CategoryData, CategoryKey } from '@/app/[locale]/features/business/FeaturesBusinessClient';
 
 interface SectionConfig {
   categoryKey: CategoryKey;

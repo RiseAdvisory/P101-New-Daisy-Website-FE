@@ -17,8 +17,6 @@ describe('Next.js Image Configuration Security', () => {
       );
 
       expect(allowedHostnames).toEqual([
-        '*.strapiapp.com',
-        '*.media.strapiapp.com',
         '*.trythedaisy.com',
         'localhost',
       ]);
@@ -50,8 +48,6 @@ describe('Next.js Image Configuration Security', () => {
       );
 
       const productionDomains = [
-        '*.strapiapp.com',
-        '*.media.strapiapp.com',
         '*.trythedaisy.com',
       ];
 
@@ -78,35 +74,9 @@ describe('Next.js Image Configuration Security', () => {
   });
 
   describe('Redirect Configuration', () => {
-    it('should have redirects configured', async () => {
-      const redirects = await nextConfig.default.redirects();
-
-      expect(Array.isArray(redirects)).toBe(true);
-      expect(redirects.length).toBeGreaterThan(0);
-    });
-
-    it('should redirect root to business page', async () => {
-      const redirects = await nextConfig.default.redirects();
-
-      const rootRedirect = redirects.find((r) => r.source === '/');
-
-      expect(rootRedirect).toBeDefined();
-      expect(rootRedirect.destination).toBe('/business');
-      expect(rootRedirect.permanent).toBe(false);
-    });
-
-    it('should redirect customer pages to business', async () => {
-      const redirects = await nextConfig.default.redirects();
-
-      const customerRedirects = redirects.filter((r) =>
-        r.source.includes('customer'),
-      );
-
-      expect(customerRedirects.length).toBeGreaterThan(0);
-
-      customerRedirects.forEach((redirect) => {
-        expect(redirect.destination).toContain('business');
-      });
+    it('should not have redirects (handled by middleware)', () => {
+      // Redirects are now handled by middleware for locale-aware routing
+      expect(nextConfig.default.redirects).toBeUndefined();
     });
   });
 

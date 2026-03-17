@@ -1,7 +1,7 @@
 'use client';
 import { LogoIconsS } from '@/assets/icons/logo/LogoIconsS';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { GetAppButton } from '../buttonApp/GetAppButton';
 import { headerNavigationList } from '@/lib/constants/headernavigationList';
 import { DropDownMobileHeader } from '../dropdownMobileHeader/DropdownMobileHeader';
@@ -18,9 +18,13 @@ import { useOpenMenu } from '@/store/openMenu';
 import { shouldHideMenuItem } from '@/lib/utils/menuVisibility';
 import { headerData } from '@/lib/constants/shared/headerData';
 import { t } from '@/lib/constants/i18n';
+import { getLocaleFromPathname, stripLocaleFromPathname, localePath } from '@/lib/utils/locale';
 
 export const Header = () => {
-  const path = usePathname();
+  const fullPath = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPath), [fullPath]);
+  // path without locale prefix, for comparison with existing route constants
+  const path = useMemo(() => stripLocaleFromPathname(fullPath), [fullPath]);
   const [active, setActive] = useState('');
   const [openMenu, setOpenMenu] = useState(false);
   const [changePage, setChangePage] = useState('Business');
@@ -88,7 +92,7 @@ export const Header = () => {
 
   return (
     <header className="w-full rtl:md:  bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16 fixed z-40">
-      <Link href={'/'}>
+      <Link href={localePath('/business', locale)}>
         <LogoIconsS />
       </Link>
       <nav className="flex justify-end items-center self-center md:justify-between w-full">
@@ -176,7 +180,7 @@ export const Header = () => {
                       }
                     >
                       <Link
-                        href={href}
+                        href={localePath(href, locale)}
                         onClick={() => setActive(item.nav)}
                         className={cn(
                           ' font-normal text-[#D5D9D9] leading-6 hover:text-white',

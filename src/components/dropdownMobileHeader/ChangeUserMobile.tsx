@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { ArrowDownIcon } from '@/assets/icons/arrowDown/ArrowDownIcon';
 import {
   DropdownMenu,
@@ -14,6 +14,7 @@ import { useChangeLanguage } from '@/store/language';
 import { useMyContext } from '@/app/MyContext';
 import { headerData } from '@/lib/constants/shared/headerData';
 import { t } from '@/lib/constants/i18n';
+import { getLocaleFromPathname, stripLocaleFromPathname, localePath } from '@/lib/utils/locale';
 
 interface PropsDropDownHeader {
   state: string;
@@ -33,7 +34,9 @@ export const ChangeUserTypeMobile = ({
   link,
 }: PropsDropDownHeader) => {
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const pathname = useMemo(() => stripLocaleFromPathname(fullPathname), [fullPathname]);
   const router = useRouter();
   const [active, setActive] = useState('');
   const [currentPage, setCurrentPage] = useState<any>();
@@ -68,11 +71,11 @@ export const ChangeUserTypeMobile = ({
         // Only redirect top-level /features/{userType} pages, not nested sub-pages
         const featureSegments = pathname.replace('/features/', '').split('/');
         if (featureSegments.length === 1 && pathname !== newPath) {
-          router.replace(newPath);
+          router.replace(localePath(newPath, locale));
         }
       }
     }
-  }, [pathname, router]);
+  }, [pathname, router, locale]);
 
   useEffect(() => {
     setUserChange(active);
@@ -109,16 +112,16 @@ export const ChangeUserTypeMobile = ({
       localStorage.setItem('activePage', path);
     }
     if (pathname.includes('/features')) {
-      router.push(`/features${path}`);
+      router.push(localePath(`/features${path}`, locale));
     }
     if (pathname.startsWith('/business')) {
-      router.push(path);
+      router.push(localePath(path, locale));
     }
     if (pathname.startsWith('/customer')) {
-      router.push(path);
+      router.push(localePath(path, locale));
     }
     if (pathname.startsWith('/professional')) {
-      router.push(path);
+      router.push(localePath(path, locale));
     }
   };
   useEffect(() => {

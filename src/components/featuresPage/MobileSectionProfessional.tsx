@@ -1,7 +1,7 @@
 import { CarouselBusinessMobile } from './CarouselBusinessMobile';
 import { Separator } from '@/components/ui/separator';
 import { FeatureProfessionalList } from './FeatureProfessionalList';
-import { CategoryData, CategoryKey } from '@/app/features/business/FeaturesBusinessClient';
+import { CategoryData, CategoryKey } from '@/app/[locale]/features/business/FeaturesBusinessClient';
 
 interface MobileSectionConfig {
   categoryKey: CategoryKey;
