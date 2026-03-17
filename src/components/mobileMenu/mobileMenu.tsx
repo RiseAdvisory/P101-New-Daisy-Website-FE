@@ -4,7 +4,7 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useMemo, useState } from 'react';
 import { BurgerMenu } from '@/assets/icons/burgerMenu/BurgerMenu';
 import { CloseIcon } from '@/assets/icons/closeIcon/CloseIcon';
 import { GetAppButton } from '../buttonApp/GetAppButton';
@@ -12,7 +12,7 @@ import Link from 'next/link';
 import { ArrowRightIcon } from '@/assets/icons/arrowRightIcon/ArrowRightIcon';
 import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { BreadcrumbMobile } from './breadCrumbMobile';
 import { useChangeLanguage } from '@/store/language';
 import { headerData } from '@/lib/constants/shared/headerData';
@@ -21,8 +21,11 @@ import { ChevronLeft } from 'lucide-react';
 import { useChangePage } from '@/store/currentPage';
 import { useOpenMenu } from '@/store/openMenu';
 import { shouldHideMenuItem } from '@/lib/utils/menuVisibility';
+import { getLocaleFromPathname, localePath } from '@/lib/utils/locale';
 
 export const MobileMenu = () => {
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const [onResources, setResources] = useState(true);
   const [openMenu, setOpenMenu] = useState(false);
   const [currentActivePage, setCurrentActivePage] = useState<string | null>(
@@ -96,9 +99,9 @@ export const MobileMenu = () => {
                           ) {
                             setOpenMenu(!openMenu);
                             toggleOpenMenu(!openMenu);
-                            router.push(page);
+                            router.push(localePath(page || '/business', locale));
                           } else {
-                            router.push(item.nav);
+                            router.push(localePath(item.nav, locale));
                             setOpenMenu(!openMenu);
                             toggleOpenMenu(!openMenu);
                           }
@@ -128,7 +131,7 @@ export const MobileMenu = () => {
                 (submenuItem: any, subIndex: number) => (
                   <li key={subIndex} className="pb-5 ">
                     <Link
-                      href={submenuItem.nav}
+                      href={localePath(submenuItem.nav, locale)}
                       className="ltr:font-montserrat font-semibold text-base leading-6"
                       onClick={() => {
                         setOpenMenu(!openMenu), setResources(true);

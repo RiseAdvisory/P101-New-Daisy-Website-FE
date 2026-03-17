@@ -1,5 +1,7 @@
 import { create } from 'zustand';
 
+const SUPPORTED_LOCALES = ['en', 'ar'];
+
 interface ILanguageStore {
   lang: string;
   changeLanguages: (newLang: string) => void;
@@ -37,27 +39,67 @@ function updateDocumentDirection(lang: string): void {
   }
 }
 
-export const useChangeLanguage = create<ILanguageStore>((set) => ({
+/**
+ * Extract the current locale from the URL path.
+ * Returns the locale segment if present, otherwise null.
+ */
+function getLocaleFromUrl(): string | null {
+  if (typeof window === 'undefined') return null;
+  const segments = window.location.pathname.split('/');
+  // URL format: /{locale}/rest-of-path
+  if (segments.length >= 2 && SUPPORTED_LOCALES.includes(segments[1])) {
+    return segments[1];
+  }
+  return null;
+}
+
+/**
+ * Navigate to the same page in a different locale.
+ * Replaces the locale segment in the current URL path.
+ */
+function navigateToLocale(newLang: string): void {
+  if (typeof window === 'undefined') return;
+  const currentLocale = getLocaleFromUrl();
+  if (!currentLocale || currentLocale === newLang) return;
+
+  const pathname = window.location.pathname;
+  // Replace /{currentLocale}/ with /{newLang}/
+  const newPathname = pathname.replace(`/${currentLocale}`, `/${newLang}`);
+  window.location.pathname = newPathname;
+}
+
+export const useChangeLanguage = create<ILanguageStore>((set, get) => ({
   lang:
-    typeof window !== 'undefined' ? localStorage.getItem('lang') || 'en' : 'en',
+    typeof window !== 'undefined'
+      ? getLocaleFromUrl() || localStorage.getItem('lang') || 'en'
+      : 'en',
   changeLanguages: (newLang: string) => {
+    const currentLang = get().lang;
+
     set(() => ({
       lang: newLang,
     }));
 
     if (typeof window !== 'undefined') {
       localStorage.setItem('lang', newLang);
-      // Bridge: sync to cookie so server components can read locale
+      // Sync to cookie so server components and middleware can read locale
       document.cookie = `locale=${newLang}; path=/; max-age=${60 * 60 * 24 * 365}; samesite=lax`;
       updateDocumentDirection(newLang);
+
+      // If the language actually changed (user action, not initial sync),
+      // navigate to the same page in the new locale
+      if (currentLang !== newLang) {
+        navigateToLocale(newLang);
+      }
     }
   },
 }));
 
 // Initialize document direction on load (deferred)
 if (typeof window !== 'undefined') {
-  const initialLang = localStorage.getItem('lang') || 'en';
-  // Sync localStorage value to cookie for server components
+  const initialLang = getLocaleFromUrl() || localStorage.getItem('lang') || 'en';
+  // Sync localStorage and cookie with URL locale
+  localStorage.setItem('lang', initialLang);
   document.cookie = `locale=${initialLang}; path=/; max-age=${60 * 60 * 24 * 365}; samesite=lax`;
   updateDocumentDirection(initialLang);
 }

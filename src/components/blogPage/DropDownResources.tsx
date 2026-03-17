@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Separator from '../separator/Separator';
 import { resourcesLinkList } from '@/lib/constants/resourcesLink';
 import Link from 'next/link';
-import { Dispatch, SetStateAction, useEffect, useState, useRef } from 'react';
+import { Dispatch, SetStateAction, useEffect, useMemo, useState, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import { resourcesDropDownList } from '@/lib/constants/resources/resourcesList';
 import { useChangeLanguage } from '@/store/language';
@@ -13,6 +13,7 @@ import {
   resourcesDropdownData,
   ResourcesDropdownPageType,
 } from '@/lib/constants/shared/resourcesDropdownData';
+import { getLocaleFromPathname, localePath } from '@/lib/utils/locale';
 
 interface IPropsResources {
   openBlog: boolean;
@@ -37,6 +38,7 @@ export const DropdownResources = ({
   };
 
   const path = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(path), [path]);
   const { lang } = useChangeLanguage();
   const currentPage = typeof window !== 'undefined' ? localStorage.getItem('activePage') : null;
 
@@ -94,7 +96,7 @@ export const DropdownResources = ({
             onMouseLeave={handleMouseLeave}
           >
             <Link
-              href={item.nav}
+              href={localePath(item.nav, locale)}
               onClick={() => setOpenBlog(!openBlog)}
               className="block ltr:pl-4 rtl:pr-4"
             >

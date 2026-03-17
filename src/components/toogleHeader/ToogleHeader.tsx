@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import clsx from 'clsx';
@@ -9,9 +9,12 @@ import { headerData } from '@/lib/constants/shared/headerData';
 import { t } from '@/lib/constants/i18n';
 import { useChangePage } from '@/store/currentPage';
 import { useMyContext } from '@/app/MyContext';
+import { getLocaleFromPathname, stripLocaleFromPathname, localePath } from '@/lib/utils/locale';
 
 const ToggleButton = ({ className }: { className?: string }) => {
-  const pathname = usePathname();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const pathname = useMemo(() => stripLocaleFromPathname(fullPathname), [fullPathname]);
   const router = useRouter();
   const [active, setActive] = useState('');
   const { lang } = useChangeLanguage();
@@ -45,11 +48,11 @@ const ToggleButton = ({ className }: { className?: string }) => {
         // Only redirect top-level /features/{userType} pages, not nested sub-pages
         const featureSegments = pathname.replace('/features/', '').split('/');
         if (featureSegments.length === 1 && pathname !== newPath) {
-          router.replace(newPath);
+          router.replace(localePath(newPath, locale));
         }
       }
     }
-  }, [pathname, router]);
+  }, [pathname, router, locale]);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -80,16 +83,16 @@ const ToggleButton = ({ className }: { className?: string }) => {
       localStorage.setItem('activePage', path);
     }
     if (pathname.includes('/features')) {
-      router.push(`/features${path}`);
+      router.push(localePath(`/features${path}`, locale));
     }
     if (pathname.startsWith('/business')) {
-      router.push(`${path}`);
+      router.push(localePath(path, locale));
     }
     if (pathname.startsWith('/customer')) {
-      router.push(`${path}`);
+      router.push(localePath(path, locale));
     }
     if (pathname.startsWith('/professional')) {
-      router.push(`${path}`);
+      router.push(localePath(path, locale));
     }
   };
   useEffect(() => {

@@ -9,10 +9,11 @@ import { TwitterIcons } from '@/assets/icons/socialLinksIcons/TwitterIcons';
 import { LinkedInIcons } from '@/assets/icons/socialLinksIcons/LinkedInIcons';
 import { InstagramIcons } from '@/assets/icons/socialLinksIcons/InstagramIcons';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useChangeLanguage } from '@/store/language';
 import { footerData } from '@/lib/constants/shared/footerData';
 import { t } from '@/lib/constants/i18n';
+import { getLocaleFromPathname, localePath } from '@/lib/utils/locale';
 
 // Lazy load FreshChat widget - only load after user interaction
 const FreshChatLoader = dynamic(
@@ -22,7 +23,9 @@ const FreshChatLoader = dynamic(
 
 export const Footer = () => {
   const [shouldLoadChat, setShouldLoadChat] = useState(false);
-  const path = usePathname();
+  const fullPath = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPath), [fullPath]);
+  const path = fullPath;
   const { lang } = useChangeLanguage();
 
   const data = t(footerData, lang);
@@ -94,7 +97,7 @@ export const Footer = () => {
         <div className="flex flex-col gap-12 md:flex-row md:justify-between">
           {/* Logo & App Buttons */}
           <div className="flex flex-col items-center md:items-start">
-            <Link href={'/'} className="mb-6 opacity-60">
+            <Link href={localePath('/business', locale)} className="mb-6 opacity-60">
               <LogoIconsS />
             </Link>
             {!isVisibleAppBtn && (
@@ -116,7 +119,7 @@ export const Footer = () => {
                   {column.links.map((item) => (
                     <li key={item.nav}>
                       <Link
-                        href={item.nav}
+                        href={localePath(item.nav, locale)}
                         className="text-sm text-white/80 transition-colors hover:text-white ltr:font-montserrat"
                       >
                         {item.name}
