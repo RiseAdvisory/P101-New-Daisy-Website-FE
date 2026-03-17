@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { CareersClient } from './CareersClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import { getLocale } from '@/lib/locale';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Careers | The Daisy - Beauty Tech Jobs',
   description:
     'Join The Daisy team and help build the future of beauty and wellness booking. Explore open positions in engineering, design, marketing, and more.',
@@ -40,10 +43,9 @@ export const metadata: Metadata = {
       'Join The Daisy team. Explore career opportunities in beauty tech.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/careers',
-  },
-};
+    alternates: localeAlternates('/careers', locale),
+  };
+}
 
 export default function CareersPage() {
   const locale = getLocale();

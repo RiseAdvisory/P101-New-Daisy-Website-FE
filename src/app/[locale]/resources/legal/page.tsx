@@ -1,7 +1,10 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { LegalClient } from './LegalClient';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Legal Resources | The Daisy Beauty Platform',
   description:
     'Access legal resources, documentation, and downloads related to The Daisy beauty booking platform services and policies.',
@@ -35,10 +38,9 @@ export const metadata: Metadata = {
     description: 'Access legal resources and documentation from The Daisy.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/resources/legal',
-  },
-};
+    alternates: localeAlternates('/resources/legal', locale),
+  };
+}
 
 export default function LegalPage() {
   return <LegalClient />;

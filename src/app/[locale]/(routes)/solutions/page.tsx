@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import Link from 'next/link';
 import { solutions } from '@/lib/constants/solutions';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Beauty Business Solutions — AI-Powered Software | Daisy',
   description:
     'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing. AI-powered software built for beauty businesses.',
@@ -28,10 +31,9 @@ export const metadata: Metadata = {
     description:
       'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing.',
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/solutions',
-  },
-};
+    alternates: localeAlternates('/solutions', locale),
+  };
+}
 
 export default function SolutionsIndexPage() {
   return (

@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { FeaturesCustomerClient } from './FeaturesCustomerClient';
 import { FeaturesBreadcrumbSchema } from '@/components/seo/FeaturesBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { getLocale } from '@/lib/locale';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Customer Features - Salon Booking & Cashback | The Daisy',
   description:
     'Explore The Daisy customer features: find salons near you, book beauty services, earn cashback rewards, manage appointments, rate & earn points, and enjoy home beauty services.',
@@ -42,10 +45,9 @@ export const metadata: Metadata = {
       'Find salons near you, earn cashback rewards, and manage beauty appointments.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/features/customer',
-  },
-};
+    alternates: localeAlternates('/features/customer', locale),
+  };
+}
 
 export default function FeaturesCustomerPage() {
   const locale = getLocale();

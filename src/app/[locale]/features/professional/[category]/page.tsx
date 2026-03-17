@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import {
   getAllFeatureDeepDiveSlugs,
   getFeatureDeepDive,
@@ -17,7 +18,7 @@ export function generateStaticParams() {
 export function generateMetadata({
   params,
 }: {
-  params: { category: string };
+  params: { locale: string; category: string };
 }): Metadata {
   const data = getFeatureDeepDive('professional', params.category);
   if (!data) return { title: 'Not Found' };
@@ -37,16 +38,14 @@ export function generateMetadata({
       title: data.metaTitle,
       description: data.metaDescription,
     },
-    alternates: {
-      canonical: `https://www.jointhedaisy.com/features/professional/${params.category}`,
-    },
+    alternates: localeAlternates(`/features/professional/${params.category}`, params.locale),
   };
 }
 
 export default function FeatureProfessionalDeepDivePage({
   params,
 }: {
-  params: { category: string };
+  params: { locale: string; category: string };
 }) {
   const data = getFeatureDeepDive('professional', params.category);
   if (!data) notFound();

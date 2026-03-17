@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { getGuide, getAllGuideSlugs } from '@/lib/constants/guides/guideData';
 import { GuidesPageClient } from './GuidesPageClient';
 
@@ -12,7 +13,7 @@ export function generateStaticParams() {
 export function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: { locale: string; slug: string };
 }): Metadata {
   const guide = getGuide(params.slug);
   if (!guide) return { title: 'Not Found' };
@@ -31,16 +32,14 @@ export function generateMetadata({
       title: guide.metaTitle,
       description: guide.metaDescription,
     },
-    alternates: {
-      canonical: `https://www.jointhedaisy.com/guides/${params.slug}`,
-    },
+    alternates: localeAlternates(`/guides/${params.slug}`, params.locale),
   };
 }
 
 export default function GuidePage({
   params,
 }: {
-  params: { slug: string };
+  params: { locale: string; slug: string };
 }) {
   const guide = getGuide(params.slug);
   if (!guide) notFound();

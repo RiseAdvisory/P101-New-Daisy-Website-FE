@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { TermsConditionsClient } from './TermsConditionsClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import { getLocale } from '@/lib/locale';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Terms & Conditions | The Daisy - Beauty Booking Platform',
   description:
     'Review The Daisy terms and conditions governing the use of our beauty booking platform, services, and your rights and responsibilities as a customer or vendor.',
@@ -39,10 +42,9 @@ export const metadata: Metadata = {
       'Review The Daisy terms and conditions for using our platform.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/terms-conditions',
-  },
-};
+    alternates: localeAlternates('/terms-conditions', locale),
+  };
+}
 
 export default function TermsConditionsPage() {
   const locale = getLocale();

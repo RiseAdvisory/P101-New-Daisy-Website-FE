@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import {
   industryStats,
   insightsMetaTitle,
@@ -8,7 +9,9 @@ import { InsightsPageClient } from './InsightsPageClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: insightsMetaTitle,
   description: insightsMetaDescription,
   keywords: [
@@ -29,10 +32,9 @@ export const metadata: Metadata = {
     title: insightsMetaTitle,
     description: insightsMetaDescription,
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/insights',
-  },
-};
+    alternates: localeAlternates('/insights', locale),
+  };
+}
 
 export default function InsightsPage() {
   return (

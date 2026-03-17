@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { AboutClient } from './AboutClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import { getLocale } from '@/lib/locale';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'About Us | The Daisy - Beauty & Wellness Marketplace',
   description:
     'Learn about The Daisy, the beauty and wellness marketplace connecting customers with salons, spas, and beauty professionals. Our mission is to transform how you discover and book beauty services.',
@@ -39,10 +42,9 @@ export const metadata: Metadata = {
     description: 'Learn about The Daisy beauty and wellness marketplace.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/about',
-  },
-};
+    alternates: localeAlternates('/about', locale),
+  };
+}
 
 export default function AboutPage() {
   const locale = getLocale();

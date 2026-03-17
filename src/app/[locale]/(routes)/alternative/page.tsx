@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import Link from 'next/link';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
@@ -8,7 +9,9 @@ import {
 } from '@/lib/constants/competitors/comparisonPages';
 import { getCompetitor } from '@/lib/constants/competitors';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Salon Software Alternatives — Compare & Switch | Daisy',
   description:
     'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives with AI features, pricing, and Arabic support.',
@@ -31,10 +34,9 @@ export const metadata: Metadata = {
     description:
       'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives.',
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/alternative',
-  },
-};
+    alternates: localeAlternates('/alternative', locale),
+  };
+}
 
 export default function AlternativeIndexPage() {
   return (

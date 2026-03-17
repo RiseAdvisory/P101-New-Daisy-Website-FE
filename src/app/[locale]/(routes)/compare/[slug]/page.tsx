@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import {
   getAllCompareSlugs,
   getComparePageData,
@@ -15,7 +16,7 @@ export function generateStaticParams() {
 export function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: { locale: string; slug: string };
 }): Metadata {
   const result = getComparePageData(params.slug);
   if (!result) return { title: 'Not Found' };
@@ -44,16 +45,14 @@ export function generateMetadata({
       title: metaTitle,
       description: metaDescription,
     },
-    alternates: {
-      canonical: `https://www.jointhedaisy.com/compare/${params.slug}`,
-    },
+    alternates: localeAlternates(`/compare/${params.slug}`, params.locale),
   };
 }
 
 export default function ComparePage({
   params,
 }: {
-  params: { slug: string };
+  params: { locale: string; slug: string };
 }) {
   const result = getComparePageData(params.slug);
   if (!result) notFound();

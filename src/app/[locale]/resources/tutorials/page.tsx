@@ -1,7 +1,10 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { TutorialsClient } from './TutorialsClient';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Beauty Booking Tutorials | The Daisy Resources',
   description:
     'Learn how to use The Daisy beauty booking platform with step-by-step tutorials. Guides for salon owners, beauty professionals, and customers.',
@@ -36,10 +39,9 @@ export const metadata: Metadata = {
     description: 'Learn how to use The Daisy with step-by-step tutorials.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/resources/tutorials',
-  },
-};
+    alternates: localeAlternates('/resources/tutorials', locale),
+  };
+}
 
 export default function TutorialsPage() {
   return <TutorialsClient />;

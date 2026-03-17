@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import {
   getGlossaryEntry,
   getAllGlossarySlugs,
@@ -15,7 +16,7 @@ export function generateStaticParams() {
 export function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: { locale: string; slug: string };
 }): Metadata {
   const entry = getGlossaryEntry(params.slug);
   if (!entry) return { title: 'Not Found' };
@@ -34,16 +35,14 @@ export function generateMetadata({
       title: entry.metaTitle,
       description: entry.metaDescription,
     },
-    alternates: {
-      canonical: `https://www.jointhedaisy.com/glossary/${params.slug}`,
-    },
+    alternates: localeAlternates(`/glossary/${params.slug}`, params.locale),
   };
 }
 
 export default function GlossaryPage({
   params,
 }: {
-  params: { slug: string };
+  params: { locale: string; slug: string };
 }) {
   const entry = getGlossaryEntry(params.slug);
   if (!entry) notFound();

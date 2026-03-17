@@ -1,9 +1,12 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { PricingClient } from './PricingClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Pricing Plans for Salons & Spas | The Daisy',
   description:
     'Flexible pricing plans for salons, spas, and beauty professionals. Choose monthly or annual billing with commission-based pricing tailored to your business size.',
@@ -39,10 +42,9 @@ export const metadata: Metadata = {
       'Flexible pricing plans for salons, spas, and beauty professionals.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/pricing',
-  },
-};
+    alternates: localeAlternates('/pricing', locale),
+  };
+}
 
 export default function PricingPage() {
   return (

@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { PrivacyPolicyClient } from './PrivacyPolicyClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import { getLocale } from '@/lib/locale';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Privacy Policy | The Daisy - Beauty Booking Platform',
   description:
     'Read The Daisy privacy policy to understand how we collect, use, and protect your personal information when using our beauty booking platform.',
@@ -38,10 +41,9 @@ export const metadata: Metadata = {
     description: 'Read The Daisy privacy policy and data protection practices.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/privacy-policy',
-  },
-};
+    alternates: localeAlternates('/privacy-policy', locale),
+  };
+}
 
 export default function PrivacyPolicyPage() {
   const locale = getLocale();

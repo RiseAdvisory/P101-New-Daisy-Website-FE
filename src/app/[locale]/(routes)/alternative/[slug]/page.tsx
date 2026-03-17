@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import {
   getAllAlternativeSlugs,
   getAlternativePageData,
@@ -15,7 +16,7 @@ export function generateStaticParams() {
 export function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: { locale: string; slug: string };
 }): Metadata {
   const result = getAlternativePageData(params.slug);
   if (!result) return { title: 'Not Found' };
@@ -37,16 +38,14 @@ export function generateMetadata({
       title: metaTitle,
       description: metaDescription,
     },
-    alternates: {
-      canonical: `https://www.jointhedaisy.com/alternative/${params.slug}`,
-    },
+    alternates: localeAlternates(`/alternative/${params.slug}`, params.locale),
   };
 }
 
 export default function AlternativePage({
   params,
 }: {
-  params: { slug: string };
+  params: { locale: string; slug: string };
 }) {
   const result = getAlternativePageData(params.slug);
   if (!result) notFound();

@@ -1,7 +1,10 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { TestimonialsClient } from './TestimonialsClient';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Salon & Spa Success Stories | The Daisy Testimonials',
   description:
     'Read success stories from salons, spas, beauty professionals, and customers who use The Daisy beauty booking platform.',
@@ -37,10 +40,9 @@ export const metadata: Metadata = {
       'Read success stories from salons and beauty professionals on The Daisy.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/resources/testimonials',
-  },
-};
+    alternates: localeAlternates('/resources/testimonials', locale),
+  };
+}
 
 export default function TestimonialsPage() {
   return <TestimonialsClient />;

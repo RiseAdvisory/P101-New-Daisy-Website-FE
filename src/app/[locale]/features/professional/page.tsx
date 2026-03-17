@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { FeaturesProfessionalClient } from './FeaturesProfessionalClient';
 import { FeaturesBreadcrumbSchema } from '@/components/seo/FeaturesBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { FeatureDeepDiveLinks } from '@/components/featuresPage/FeatureDeepDiveLinks';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Beauty Professional Features - Scheduling & Earnings | The Daisy',
   description:
     'Features for beauty professionals: appointment scheduling, client management, earnings tracking, service bookings, and tools to grow your career as a stylist, nail tech, or spa therapist.',
@@ -41,10 +44,9 @@ export const metadata: Metadata = {
     description: 'Features for beauty professionals to grow their careers.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/features/professional',
-  },
-};
+    alternates: localeAlternates('/features/professional', locale),
+  };
+}
 
 export default function FeaturesProfessionalPage() {
   return (

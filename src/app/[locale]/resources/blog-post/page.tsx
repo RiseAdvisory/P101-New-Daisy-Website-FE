@@ -1,7 +1,10 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { BlogPostClient } from './BlogPostClient';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Beauty & Wellness Blog | The Daisy Resources',
   description:
     'Read the latest beauty and wellness industry insights from The Daisy. Tips for salon owners, beauty professionals, and customers on booking, marketing, and trends.',
@@ -36,10 +39,9 @@ export const metadata: Metadata = {
     description: 'Read the latest beauty and wellness insights from The Daisy.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/resources/blog-post',
-  },
-};
+    alternates: localeAlternates('/resources/blog-post', locale),
+  };
+}
 
 export default function BlogPostPage() {
   return <BlogPostClient />;

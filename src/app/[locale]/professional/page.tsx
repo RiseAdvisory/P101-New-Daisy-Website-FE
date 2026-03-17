@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { ProfessionalClient } from './ProfessionalClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import { getLocale } from '@/lib/locale';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'For Beauty Professionals | The Daisy',
   description:
     'Join The Daisy as a beauty professional. Manage your appointments, build your client base, track earnings, and grow your career in the beauty and wellness industry.',
@@ -42,10 +45,9 @@ export const metadata: Metadata = {
       'Join The Daisy as a beauty professional. Grow your career in beauty and wellness.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/professional',
-  },
-};
+    alternates: localeAlternates('/professional', locale),
+  };
+}
 
 export default function ProfessionalPage() {
   const locale = getLocale();

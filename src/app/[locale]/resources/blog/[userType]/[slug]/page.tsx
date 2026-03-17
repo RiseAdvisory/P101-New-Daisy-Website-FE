@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { notFound } from 'next/navigation';
 import {
   getBlogPostBySlug,

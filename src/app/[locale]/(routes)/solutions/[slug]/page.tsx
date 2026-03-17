@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { getAllSolutionSlugs, getSolution } from '@/lib/constants/solutions';
 import { SolutionsPageClient } from './SolutionsPageClient';
 
@@ -12,7 +13,7 @@ export function generateStaticParams() {
 export function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: { locale: string; slug: string };
 }): Metadata {
   const data = getSolution(params.slug);
   if (!data) return { title: 'Not Found' };
@@ -32,16 +33,14 @@ export function generateMetadata({
       title: data.metaTitle,
       description: data.metaDescription,
     },
-    alternates: {
-      canonical: `https://www.jointhedaisy.com/solutions/${params.slug}`,
-    },
+    alternates: localeAlternates(`/solutions/${params.slug}`, params.locale),
   };
 }
 
 export default function SolutionsPage({
   params,
 }: {
-  params: { slug: string };
+  params: { locale: string; slug: string };
 }) {
   const data = getSolution(params.slug);
   if (!data) notFound();

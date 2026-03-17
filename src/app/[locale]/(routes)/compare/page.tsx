@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import Link from 'next/link';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
@@ -8,7 +9,9 @@ import {
 } from '@/lib/constants/competitors/comparisonPages';
 import { getCompetitor } from '@/lib/constants/competitors';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Daisy Comparisons — See How We Stack Up | Daisy',
   description:
     'Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis, pricing breakdowns, and honest verdicts.',
@@ -32,10 +35,9 @@ export const metadata: Metadata = {
     description:
       'Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis and pricing breakdowns.',
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/compare',
-  },
-};
+    alternates: localeAlternates('/compare', locale),
+  };
+}
 
 export default function CompareIndexPage() {
   return (

@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { GetTheAppClient } from './GetTheAppClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import { getLocale } from '@/lib/locale';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Download The Daisy App | Beauty Booking for iOS & Android',
   description:
     'Download The Daisy beauty booking app for iOS and Android. Find salons near you, book appointments, earn cashback, and manage your beauty services on the go.',
@@ -39,10 +42,9 @@ export const metadata: Metadata = {
     description: 'Download The Daisy beauty booking app for iOS and Android.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/get-the-app',
-  },
-};
+    alternates: localeAlternates('/get-the-app', locale),
+  };
+}
 
 export default function GetTheAppPage() {
   const locale = getLocale();

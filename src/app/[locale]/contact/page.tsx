@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { ContactClient } from './ContactClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import { getLocale } from '@/lib/locale';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Contact Us | The Daisy - Beauty Booking Platform',
   description:
     'Get in touch with The Daisy team. Questions about our beauty booking platform, salon partnerships, or customer support? We are here to help.',
@@ -39,10 +42,9 @@ export const metadata: Metadata = {
     description: 'Get in touch with The Daisy team for questions and support.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/contact',
-  },
-};
+    alternates: localeAlternates('/contact', locale),
+  };
+}
 
 export default function ContactPage() {
   const locale = getLocale();

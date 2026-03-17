@@ -1,7 +1,10 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { UpdatesClient } from './UpdatesClient';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Platform Updates | The Daisy Beauty Booking News',
   description:
     'Stay informed with the latest updates, new features, and announcements from The Daisy beauty booking platform. See what is new for salons, spas, and customers.',
@@ -37,10 +40,9 @@ export const metadata: Metadata = {
       'Stay informed with the latest updates from The Daisy beauty platform.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/resources/updates',
-  },
-};
+    alternates: localeAlternates('/resources/updates', locale),
+  };
+}
 
 export default function UpdatesPage() {
   return <UpdatesClient />;

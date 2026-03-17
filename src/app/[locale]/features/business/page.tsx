@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { FeaturesBusinessClient } from './FeaturesBusinessClient';
 import { FeaturesBreadcrumbSchema } from '@/components/seo/FeaturesBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { FeatureDeepDiveLinks } from '@/components/featuresPage/FeatureDeepDiveLinks';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'AI-Powered Salon Business Features - Booking, Marketing & Payments | The Daisy',
   description:
     'AI-powered features for salon & spa businesses: smart scheduling, appointment booking, marketing tools, payment processing, team management, customer CRM, multi-channel communication, and detailed analytics.',
@@ -46,10 +49,9 @@ export const metadata: Metadata = {
       'AI-powered features for salon & spa businesses on The Daisy platform.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/features/business',
-  },
-};
+    alternates: localeAlternates('/features/business', locale),
+  };
+}
 
 export default function FeaturesBusinessPage() {
   return (

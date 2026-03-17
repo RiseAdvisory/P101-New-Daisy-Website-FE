@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { CustomerClient } from './CustomerClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import { getLocale } from '@/lib/locale';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Book Beauty & Salon Services | The Daisy',
   description:
     'Book beauty, wellness & salon services with The Daisy. Discover salons near you, earn cashback rewards, manage appointments, and enjoy exclusive promotions on hair, nails & spa services.',
@@ -42,10 +45,9 @@ export const metadata: Metadata = {
       'Discover salons near you, earn cashback rewards, and book beauty services.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/customer',
-  },
-};
+    alternates: localeAlternates('/customer', locale),
+  };
+}
 
 export default function CustomerPage() {
   const locale = getLocale();

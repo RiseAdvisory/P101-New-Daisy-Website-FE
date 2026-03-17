@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import Link from 'next/link';
 import { glossaryEntries } from '@/lib/constants/glossary/glossaryData';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Beauty & Salon Software Glossary | Key Terms Explained | Daisy',
   description:
     'Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations of salon management, AI receptionist, cashback booking, and more.',
@@ -28,10 +31,9 @@ export const metadata: Metadata = {
     description:
       'Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations.',
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/glossary',
-  },
-};
+    alternates: localeAlternates('/glossary', locale),
+  };
+}
 
 export default function GlossaryIndex() {
   return (

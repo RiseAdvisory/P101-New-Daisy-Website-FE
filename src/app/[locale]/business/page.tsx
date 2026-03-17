@@ -1,9 +1,12 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { BusinessClient } from './BusinessClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Salon & Spa Business Solutions | The Daisy',
   description:
     'Grow your salon or spa business with The Daisy. Manage bookings, staff scheduling, promotions, and payments. Reach new customers through our beauty marketplace.',
@@ -41,10 +44,9 @@ export const metadata: Metadata = {
       'Grow your salon or spa business with The Daisy beauty marketplace.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/business',
-  },
-};
+    alternates: localeAlternates('/business', locale),
+  };
+}
 
 export default function BusinessPage() {
   return (

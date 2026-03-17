@@ -1,9 +1,12 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import { FaqClient } from './FaqClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'FAQ - Beauty Booking Questions | The Daisy',
   description:
     'Find answers to common questions about The Daisy beauty booking platform. Learn about salon bookings, cashback rewards, business features, and getting started.',
@@ -39,10 +42,9 @@ export const metadata: Metadata = {
       'Find answers to common questions about The Daisy beauty platform.',
     images: ['https://i.imgur.com/MNoL6BE.jpeg'],
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/faq',
-  },
-};
+    alternates: localeAlternates('/faq', locale),
+  };
+}
 
 export default function FaqPage() {
   return (

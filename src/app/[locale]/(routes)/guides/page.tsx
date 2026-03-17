@@ -1,10 +1,13 @@
 import { Metadata } from 'next';
+import { localeAlternates } from '@/lib/utils/metadata';
 import Link from 'next/link';
 import { guideEntries } from '@/lib/constants/guides/guideData';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
-export const metadata: Metadata = {
+export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
+  const { locale } = params;
+  return {
   title: 'Salon Business Guides | How-To Guides for Beauty Businesses | Daisy',
   description:
     'Step-by-step guides for salon owners: reduce no-shows, get more clients, choose the right software, set up online booking, and grow your beauty business.',
@@ -28,10 +31,9 @@ export const metadata: Metadata = {
     description:
       'Step-by-step guides for salon owners: reduce no-shows, get more clients, choose the right software.',
   },
-  alternates: {
-    canonical: 'https://www.jointhedaisy.com/guides',
-  },
-};
+    alternates: localeAlternates('/guides', locale),
+  };
+}
 
 export default function GuidesIndex() {
   return (
