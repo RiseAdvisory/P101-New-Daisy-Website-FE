@@ -6,31 +6,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/business',
-        permanent: true,
-      },
-      {
-        source: '/features',
-        destination: '/features/business',
-        permanent: true,
-      },
-      // Redirect customer pages to business
-      {
-        source: '/customer',
-        destination: '/business',
-        permanent: true,
-      },
-      {
-        source: '/features/customer',
-        destination: '/features/business',
-        permanent: true,
-      },
-    ];
-  },
+  // Redirects moved to middleware for locale-aware routing (Phase 2)
   images: {
     remotePatterns: [
       {

@@ -160,12 +160,12 @@ export function GuidesPageClient({ slug }: Props) {
           <p className="mb-6 text-white/80">
             Try Daisy free for 14 days. No credit card required.
           </p>
-          <a
+          <Link
             href="/get-the-app"
             className="inline-block rounded-full bg-white px-8 py-3 font-semibold text-primary transition-colors hover:bg-white/90"
           >
             Start Free Trial
-          </a>
+          </Link>
         </div>
       </section>
     </main>

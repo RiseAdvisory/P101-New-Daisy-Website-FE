@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { industryStats } from '@/lib/constants/insights/insightData';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 
@@ -123,12 +124,12 @@ export function InsightsPageClient() {
             Daisy uses AI and data to help beauty businesses grow smarter. Start
             your 14-day free trial.
           </p>
-          <a
+          <Link
             href="/get-the-app"
             className="inline-block rounded-full bg-white px-8 py-3 font-semibold text-primary transition-colors hover:bg-white/90"
           >
             Start Free Trial
-          </a>
+          </Link>
         </div>
       </section>
     </main>

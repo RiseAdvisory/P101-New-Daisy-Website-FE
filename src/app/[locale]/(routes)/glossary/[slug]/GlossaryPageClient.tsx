@@ -183,12 +183,12 @@ export function GlossaryPageClient({ slug }: Props) {
             Start your 14-day free trial and see how Daisy transforms your
             beauty business.
           </p>
-          <a
+          <Link
             href="/get-the-app"
             className="inline-block rounded-full bg-white px-8 py-3 font-semibold text-primary transition-colors hover:bg-white/90"
           >
             Start Free Trial
-          </a>
+          </Link>
         </div>
       </section>
     </main>
