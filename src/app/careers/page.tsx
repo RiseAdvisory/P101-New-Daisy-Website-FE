@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { CareersClient } from './CareersClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
+import { getLocale } from '@/lib/locale';
 
 export const metadata: Metadata = {
   title: 'Careers | The Daisy - Beauty Tech Jobs',
@@ -45,6 +46,8 @@ export const metadata: Metadata = {
 };
 
 export default function CareersPage() {
+  const locale = getLocale();
+
   return (
     <>
       <WebPageSchema
@@ -55,7 +58,7 @@ export default function CareersPage() {
       <PageBreadcrumbSchema
         items={[{ name: 'Careers', url: 'https://www.jointhedaisy.com/careers' }]}
       />
-      <CareersClient />
+      <CareersClient lang={locale} />
     </>
   );
 }

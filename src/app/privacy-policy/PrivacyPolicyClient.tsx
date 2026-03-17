@@ -3,12 +3,10 @@ import { HeroPage } from '@/components/heroSection/HeroSection';
 import { PrivacyPoliceList } from '@/components/privacyPolice/PrivacyPolicyList';
 import { privacyPolicyPageData } from '@/lib/constants/privacyPolicyData';
 import { t } from '@/lib/constants/i18n';
-import { useChangeLanguage } from '@/store/language';
 import { useState } from 'react';
 
-export const PrivacyPolicyClient = () => {
+export const PrivacyPolicyClient = ({ lang }: { lang: string }) => {
   const [scroll, setScroll] = useState(null);
-  const { lang } = useChangeLanguage();
   const data = t(privacyPolicyPageData, lang);
 
   return (

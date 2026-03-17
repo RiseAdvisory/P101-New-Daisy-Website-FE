@@ -2,12 +2,10 @@
 import { GetTheAppScan } from '@/components/getTheApp/GetTheApp';
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import Separator from '@/components/separator/Separator';
-import { useChangeLanguage } from '@/store/language';
 import { t } from '@/lib/constants/i18n';
 import { getTheAppPageData } from '@/lib/constants/pages/getTheAppPageData';
 
-export const GetTheAppClient = () => {
-  const { lang } = useChangeLanguage();
+export const GetTheAppClient = ({ lang }: { lang: string }) => {
 
   const data = t(getTheAppPageData, lang);
 

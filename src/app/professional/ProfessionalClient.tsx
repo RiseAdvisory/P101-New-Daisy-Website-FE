@@ -2,7 +2,6 @@
 import dynamic from 'next/dynamic';
 import { MobileScrollSection } from '@/components/shared/MobileScrollSection';
 import LockerContainer from '@/components/lockerScrollingSection/LockerContainer/LockerContainer';
-import { useChangeLanguage } from '@/store/language';
 import { t } from '@/lib/constants/i18n';
 import { professionalPageData } from '@/lib/constants/pages/professionalPage';
 import { toScrollSectionItems } from '@/lib/constants/pages/scrollSections.types';
@@ -43,8 +42,7 @@ const JoinTheDaisy = dynamic(
     ),
 );
 
-export const ProfessionalClient = () => {
-  const { lang } = useChangeLanguage();
+export const ProfessionalClient = ({ lang }: { lang: string }) => {
 
   const pageData = t(professionalPageData, lang);
   const dataScroll = toScrollSectionItems(pageData.scrollSections);

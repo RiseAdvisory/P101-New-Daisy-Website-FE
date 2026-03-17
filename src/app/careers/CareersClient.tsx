@@ -3,12 +3,10 @@ import { Vacansies } from '@/components/careersPage/Vacancies';
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import { careersPageData } from '@/lib/constants/careersPageData';
 import { t } from '@/lib/constants/i18n';
-import { useChangeLanguage } from '@/store/language';
 import { useState } from 'react';
 
-export const CareersClient = () => {
+export const CareersClient = ({ lang }: { lang: string }) => {
   const [scroll, setScroll] = useState(null);
-  const { lang } = useChangeLanguage();
   const data = t(careersPageData, lang);
 
   return (

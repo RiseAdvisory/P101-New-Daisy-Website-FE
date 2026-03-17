@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { CustomerClient } from './CustomerClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
+import { getLocale } from '@/lib/locale';
 
 export const metadata: Metadata = {
   title: 'Book Beauty & Salon Services | The Daisy',
@@ -47,6 +48,8 @@ export const metadata: Metadata = {
 };
 
 export default function CustomerPage() {
+  const locale = getLocale();
+
   return (
     <>
       <WebPageSchema
@@ -57,7 +60,7 @@ export default function CustomerPage() {
       <PageBreadcrumbSchema
         items={[{ name: 'For Customers', url: 'https://www.jointhedaisy.com/customer' }]}
       />
-      <CustomerClient />
+      <CustomerClient lang={locale} />
     </>
   );
 }

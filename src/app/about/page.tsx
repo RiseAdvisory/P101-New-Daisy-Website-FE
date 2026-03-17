@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { AboutClient } from './AboutClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
+import { getLocale } from '@/lib/locale';
 
 export const metadata: Metadata = {
   title: 'About Us | The Daisy - Beauty & Wellness Marketplace',
@@ -44,6 +45,8 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const locale = getLocale();
+
   return (
     <>
       <WebPageSchema
@@ -54,7 +57,7 @@ export default function AboutPage() {
       <PageBreadcrumbSchema
         items={[{ name: 'About Us', url: 'https://www.jointhedaisy.com/about' }]}
       />
-      <AboutClient />
+      <AboutClient lang={locale} />
     </>
   );
 }

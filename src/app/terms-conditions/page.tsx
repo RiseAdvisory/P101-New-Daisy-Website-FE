@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { TermsConditionsClient } from './TermsConditionsClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
+import { getLocale } from '@/lib/locale';
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions | The Daisy - Beauty Booking Platform',
@@ -44,6 +45,8 @@ export const metadata: Metadata = {
 };
 
 export default function TermsConditionsPage() {
+  const locale = getLocale();
+
   return (
     <>
       <WebPageSchema
@@ -54,7 +57,7 @@ export default function TermsConditionsPage() {
       <PageBreadcrumbSchema
         items={[{ name: 'Terms & Conditions', url: 'https://www.jointhedaisy.com/terms-conditions' }]}
       />
-      <TermsConditionsClient />
+      <TermsConditionsClient lang={locale} />
     </>
   );
 }
