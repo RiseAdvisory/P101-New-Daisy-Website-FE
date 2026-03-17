@@ -297,7 +297,9 @@ export const professionalEntries1: FeatureDeepDive[] = [
       'communication-tools',
       'analytics-reports',
     ],
-    relatedArticleSlugs: [],
+    relatedArticleSlugs: [
+      'ai-tools-independent-beauty-professional',
+    ],
   },
 
   // =========================================================================

@@ -22,7 +22,7 @@ export const FeaturesBusinessClient = () => {
   const categoryData: CategoryData = data.categoryItems;
 
   return (
-    <div className="bg-primary px-4">
+    <div className="bg-primary px-4 md:pb-40">
       <HeroPage
         title=""
         titleScroll="Explore the features"
