@@ -55,14 +55,14 @@ describe('FeaturesCustomerClient', () => {
   });
 
   it('renders hero with title from local data', () => {
-    render(<FeaturesCustomerClient />);
+    render(<FeaturesCustomerClient lang="en" />);
     expect(screen.getByTestId('hero-page')).toHaveTextContent(
       'Everything You Need to Book, Save & Shine',
     );
   });
 
   it('renders feature list from local data', () => {
-    render(<FeaturesCustomerClient />);
+    render(<FeaturesCustomerClient lang="en" />);
     const list = screen.getByTestId('features-list');
     expect(list).toHaveTextContent('Cashback Magic');
     expect(list).toHaveTextContent('Manage Your Bookings');
@@ -70,7 +70,7 @@ describe('FeaturesCustomerClient', () => {
   });
 
   it('renders all 6 features', () => {
-    render(<FeaturesCustomerClient />);
+    render(<FeaturesCustomerClient lang="en" />);
     const list = screen.getByTestId('features-list');
     // All 6 titles should be present
     expect(list).toHaveTextContent('Cashback Magic');
@@ -82,17 +82,14 @@ describe('FeaturesCustomerClient', () => {
   });
 
   it('renders Arabic content when language is ar', () => {
-    require('@/store/language').useChangeLanguage = jest.fn(() => ({
-      lang: 'ar',
-    }));
-    render(<FeaturesCustomerClient />);
+    render(<FeaturesCustomerClient lang="ar" />);
     expect(screen.getByTestId('hero-page')).toHaveTextContent(
       'كل ما تحتاجه للحجز والتوفير والتألق',
     );
   });
 
   it('renders signup blog section', () => {
-    render(<FeaturesCustomerClient />);
+    render(<FeaturesCustomerClient lang="en" />);
     expect(screen.getByTestId('signup-blog')).toBeInTheDocument();
   });
 });

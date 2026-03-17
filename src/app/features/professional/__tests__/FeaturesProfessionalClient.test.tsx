@@ -55,14 +55,14 @@ describe('FeaturesProfessionalClient', () => {
   });
 
   it('renders hero with title from local data', () => {
-    render(<FeaturesProfessionalClient />);
+    render(<FeaturesProfessionalClient lang="en" />);
     expect(screen.getByTestId('hero-page')).toHaveTextContent(
       'Tools Built for Beauty Professionals',
     );
   });
 
   it('renders feature list from local data', () => {
-    render(<FeaturesProfessionalClient />);
+    render(<FeaturesProfessionalClient lang="en" />);
     const list = screen.getByTestId('features-list');
     expect(list).toHaveTextContent('Smart Calendar Management');
     expect(list).toHaveTextContent('Client Profiles & History');
@@ -70,7 +70,7 @@ describe('FeaturesProfessionalClient', () => {
   });
 
   it('renders all 6 features', () => {
-    render(<FeaturesProfessionalClient />);
+    render(<FeaturesProfessionalClient lang="en" />);
     const list = screen.getByTestId('features-list');
     expect(list).toHaveTextContent('Smart Calendar Management');
     expect(list).toHaveTextContent('Client Profiles & History');
@@ -81,17 +81,14 @@ describe('FeaturesProfessionalClient', () => {
   });
 
   it('renders Arabic content when language is ar', () => {
-    require('@/store/language').useChangeLanguage = jest.fn(() => ({
-      lang: 'ar',
-    }));
-    render(<FeaturesProfessionalClient />);
+    render(<FeaturesProfessionalClient lang="ar" />);
     expect(screen.getByTestId('hero-page')).toHaveTextContent(
       'أدوات مصممة لمحترفي الجمال',
     );
   });
 
   it('renders signup blog section', () => {
-    render(<FeaturesProfessionalClient />);
+    render(<FeaturesProfessionalClient lang="en" />);
     expect(screen.getByTestId('signup-blog')).toBeInTheDocument();
   });
 });
