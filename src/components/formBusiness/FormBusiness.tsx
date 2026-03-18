@@ -153,7 +153,7 @@ export const ProfileForm = ({ defaultType }: ProfileFormProps) => {
   const handleBlur = () => {
     setActiveField(null);
   };
-  const showToggle = defaultType !== 'freelance';
+  const showToggle = !defaultType;
 
   useEffect(() => {
     try {
