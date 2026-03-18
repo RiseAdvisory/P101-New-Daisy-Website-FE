@@ -21,7 +21,11 @@ const ProfileForm = dynamic(
   },
 );
 
-export const BecomeFormPartner = () => {
+interface BecomeFormPartnerProps {
+  defaultType?: 'business' | 'freelance';
+}
+
+export const BecomeFormPartner = ({ defaultType }: BecomeFormPartnerProps) => {
   const { lang } = useChangeLanguage();
   const data = t(becomePartnerData, lang);
 
@@ -38,7 +42,7 @@ export const BecomeFormPartner = () => {
           {data.subtitle}
         </p>
       </div>
-      <ProfileForm />
+      <ProfileForm defaultType={defaultType} />
     </div>
   );
 };

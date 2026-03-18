@@ -33,13 +33,17 @@ import { useChangeLanguage } from '@/store/language';
 import { t } from '@/lib/constants/i18n';
 import { formBusinessData } from '@/lib/constants/shared/formBusinessData';
 
-export const ProfileForm = () => {
+interface ProfileFormProps {
+  defaultType?: 'business' | 'freelance';
+}
+
+export const ProfileForm = ({ defaultType }: ProfileFormProps) => {
   const [activeField, setActiveField] = useState<string | null>(null);
   const [country_code, setCountryCode] = useState('+1');
   const { handlecountryCodesArray, handleLoadingStatus } = useLoadingStore();
   const { countryCodesArray } = useLoadingStore();
   const [mobile, setPhoneNumber] = useState('');
-  const [business_type, setBusinessType] = useState(false);
+  const [business_type, setBusinessType] = useState(defaultType === 'business');
   const [homeService, setHomeService] = useState(false);
   const [isSubmit, setIsSubmit] = useState(false);
   const [contentChange, setContentChange] = useState({
@@ -149,6 +153,8 @@ export const ProfileForm = () => {
   const handleBlur = () => {
     setActiveField(null);
   };
+  const showToggle = defaultType !== 'freelance';
+
   useEffect(() => {
     try {
       (async () => {
@@ -220,19 +226,21 @@ export const ProfileForm = () => {
             )}
           />
         </div>
-        <div className="w-full mt-6">
-          <p className="text-[#172524] ltr:font-montserrat font-semibold mb-2">
-            {textForm?.serviceProvidor}
-          </p>
-          <ToggleButtonForm
-            firstValue={textForm?.serviceProvidorValue[0]}
-            secondValue={textForm?.serviceProvidorValue[1]}
-            homeService={business_type}
-            setHomeService={setBusinessType}
-            setContent={setContentChange}
-            name="serviceProvidorType"
-          />
-        </div>
+        {showToggle && (
+          <div className="w-full mt-6">
+            <p className="text-[#172524] ltr:font-montserrat font-semibold mb-2">
+              {textForm?.serviceProvidor}
+            </p>
+            <ToggleButtonForm
+              firstValue={textForm?.serviceProvidorValue[0]}
+              secondValue={textForm?.serviceProvidorValue[1]}
+              homeService={business_type}
+              setHomeService={setBusinessType}
+              setContent={setContentChange}
+              name="serviceProvidorType"
+            />
+          </div>
+        )}
         {business_type && (
           <div className="md:flex md:justify-between">
             <FormField
