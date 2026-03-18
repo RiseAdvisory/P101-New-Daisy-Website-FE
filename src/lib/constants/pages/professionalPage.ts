@@ -16,6 +16,26 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           'The Daisy is an all-in-one app for beauty and wellness professionals to manage bookings, build a client base, track earnings, and grow their career. It features flexible scheduling, 24/7 AI-powered booking, and bilingual Arabic/English support.',
       },
     },
+    platformStrengths: {
+      headline: 'Everything You Need in One App',
+      subHeadline:
+        'No more juggling between scheduling apps, payment tools, and messaging clients. Daisy brings it all together.',
+      capabilities: [
+        { label: 'Flexible Scheduling', description: 'Set your own hours across multiple locations' },
+        { label: 'Client Management', description: 'Build relationships with detailed client profiles' },
+        { label: 'Earnings Tracker', description: 'Track revenue in real-time with detailed breakdowns' },
+        { label: 'Professional Profile', description: 'Showcase your work and attract new clients' },
+        { label: 'Smart Booking', description: 'AI handles bookings even when you are busy' },
+        { label: 'Notifications', description: 'Stay on top of appointments and messages' },
+        { label: 'Calendar Sync', description: 'Sync with Google Calendar and other tools' },
+        { label: 'Portfolio', description: 'Display your best work to potential clients' },
+      ],
+      stats: [
+        { value: '1', context: 'app for everything' },
+        { value: '24/7', context: 'AI-powered booking' },
+        { value: '2', context: 'languages — Arabic & English' },
+      ],
+    },
     titleFraque: 'Frequently Asked Question',
     growth: {
       title: 'Expand Your Clientele, Manage Your Schedule, and Build Your Brand with The Daisy.',
@@ -273,6 +293,26 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         answer:
           'ذا ديزي هو تطبيق شامل لمتخصصي التجميل والعافية لإدارة الحجوزات وبناء قاعدة العملاء وتتبع الأرباح وتطوير مسيرتهم المهنية. يتميز بجدولة مرنة وحجز مدعوم بالذكاء الاصطناعي على مدار الساعة ودعم ثنائي اللغة عربي/إنجليزي.',
       },
+    },
+    platformStrengths: {
+      headline: 'كل ما تحتاجه في تطبيق واحد',
+      subHeadline:
+        'لا مزيد من التنقل بين تطبيقات الجدولة وأدوات الدفع ومراسلة العملاء. ديزي تجمع كل شيء معًا.',
+      capabilities: [
+        { label: 'جدولة مرنة', description: 'حدد ساعات عملك عبر مواقع متعددة' },
+        { label: 'إدارة العملاء', description: 'ابنِ علاقات مع ملفات عملاء مفصلة' },
+        { label: 'متتبع الأرباح', description: 'تتبع الإيرادات في الوقت الفعلي مع تفاصيل دقيقة' },
+        { label: 'الملف المهني', description: 'اعرض أعمالك واجذب عملاء جدد' },
+        { label: 'حجز ذكي', description: 'الذكاء الاصطناعي يدير الحجوزات حتى وأنت مشغول' },
+        { label: 'الإشعارات', description: 'ابقَ على اطلاع بالمواعيد والرسائل' },
+        { label: 'مزامنة التقويم', description: 'مزامنة مع تقويم جوجل وأدوات أخرى' },
+        { label: 'معرض الأعمال', description: 'اعرض أفضل أعمالك للعملاء المحتملين' },
+      ],
+      stats: [
+        { value: '1', context: 'تطبيق لكل شيء' },
+        { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' },
+        { value: '2', context: 'لغات — عربي وإنجليزي' },
+      ],
     },
     titleFraque: 'أسئلة شائعة',
     growth: {

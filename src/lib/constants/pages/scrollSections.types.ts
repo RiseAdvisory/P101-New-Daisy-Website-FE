@@ -39,8 +39,23 @@ export interface HeroData {
   };
 }
 
+export interface PlatformStrengthsData {
+  headline: string;
+  subHeadline: string;
+  capabilities: Array<{
+    label: string;
+    description: string;
+  }>;
+  stats: Array<{
+    value: string;
+    context: string;
+    source?: string;
+  }>;
+}
+
 export interface LandingPageContent {
   hero?: HeroData;
+  platformStrengths?: PlatformStrengthsData;
   titleFraque: string;
   growth: GrowthData;
   scrollSections: LocalScrollSection[];

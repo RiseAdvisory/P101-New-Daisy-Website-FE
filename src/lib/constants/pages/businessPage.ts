@@ -16,6 +16,26 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           'The Daisy is an AI-powered beauty business platform that combines booking management, customer acquisition, payments, staff scheduling, and marketing into one system. It replaces 5+ separate tools with a single bilingual (Arabic/English) platform featuring a 24/7 AI receptionist.',
       },
     },
+    platformStrengths: {
+      headline: 'One Platform Replaces Your Entire Tool Stack',
+      subHeadline:
+        'Stop paying for 5+ separate tools. Daisy combines everything you need to run and grow your beauty business.',
+      capabilities: [
+        { label: 'AI Receptionist', description: '24/7 automated booking, payments, and customer service' },
+        { label: 'Smart Booking', description: 'Intelligent scheduling that fills your calendar' },
+        { label: 'Customer Acquisition', description: 'Marketplace, cashback, and marketing tools' },
+        { label: 'Payments & Invoicing', description: 'Seamless transactions and financial tracking' },
+        { label: 'Staff Management', description: 'Scheduling, permissions, and performance' },
+        { label: 'Marketing Engine', description: 'Promotions, campaigns, and customer retention' },
+        { label: 'Analytics Dashboard', description: 'Revenue trends, insights, and reporting' },
+        { label: 'Brand Control', description: 'White-label everything with your brand' },
+      ],
+      stats: [
+        { value: '8', context: 'tools in one platform' },
+        { value: '24/7', context: 'AI receptionist' },
+        { value: '2', context: 'languages — Arabic & English' },
+      ],
+    },
     titleFraque: 'Frequently Asked Question',
     growth: {
       title: 'Maximize Bookings, Engage New Clients, and Grow Your Business with The Daisy.',
@@ -275,6 +295,26 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         answer:
           'ذا ديزي هو منصة أعمال تجميل مدعومة بالذكاء الاصطناعي تجمع بين إدارة الحجوزات واستقطاب العملاء والمدفوعات وجدولة الموظفين والتسويق في نظام واحد. يستبدل أكثر من 5 أدوات منفصلة بمنصة ثنائية اللغة (عربي/إنجليزي) مع موظف استقبال ذكي يعمل على مدار الساعة.',
       },
+    },
+    platformStrengths: {
+      headline: 'منصة واحدة تحل محل جميع أدواتك',
+      subHeadline:
+        'توقف عن الدفع لأكثر من 5 أدوات منفصلة. ديزي تجمع كل ما تحتاجه لإدارة وتنمية أعمالك في مجال التجميل.',
+      capabilities: [
+        { label: 'موظف استقبال ذكي', description: 'حجوزات ومدفوعات وخدمة عملاء آلية على مدار الساعة' },
+        { label: 'حجز ذكي', description: 'جدولة ذكية تملأ تقويمك' },
+        { label: 'استقطاب العملاء', description: 'سوق إلكتروني وكاش باك وأدوات تسويق' },
+        { label: 'المدفوعات والفوترة', description: 'معاملات سلسة وتتبع مالي' },
+        { label: 'إدارة الموظفين', description: 'جدولة وصلاحيات وأداء' },
+        { label: 'محرك التسويق', description: 'عروض وحملات والاحتفاظ بالعملاء' },
+        { label: 'لوحة التحليلات', description: 'اتجاهات الإيرادات والرؤى والتقارير' },
+        { label: 'التحكم بالعلامة التجارية', description: 'كل شيء بعلامتك التجارية الخاصة' },
+      ],
+      stats: [
+        { value: '8', context: 'أدوات في منصة واحدة' },
+        { value: '24/7', context: 'موظف استقبال ذكي' },
+        { value: '2', context: 'لغات — عربي وإنجليزي' },
+      ],
     },
     titleFraque: 'أسئلة شائعة',
     growth: {
