@@ -46,7 +46,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function FaqPage() {
+export default function FaqPage({ params }: { params: { locale: string } }) {
   return (
     <>
       <WebPageSchema

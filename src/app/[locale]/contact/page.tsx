@@ -3,7 +3,6 @@ import { localeAlternates } from '@/lib/utils/metadata';
 import { ContactClient } from './ContactClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
-import { getLocale } from '@/lib/locale';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
@@ -46,9 +45,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function ContactPage() {
-  const locale = getLocale();
-
+export default function ContactPage({ params }: { params: { locale: string } }) {
   return (
     <>
       <WebPageSchema
@@ -59,7 +56,7 @@ export default function ContactPage() {
       <PageBreadcrumbSchema
         items={[{ name: 'Contact', url: 'https://www.jointhedaisy.com/contact' }]}
       />
-      <ContactClient lang={locale} />
+      <ContactClient lang={params.locale} />
     </>
   );
 }
