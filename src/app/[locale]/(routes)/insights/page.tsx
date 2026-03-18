@@ -26,13 +26,13 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     description: insightsMetaDescription,
     url: `https://www.jointhedaisy.com/${locale}/insights`,
     type: 'article',
-    images: [{ url: 'https://i.imgur.com/MNoL6BE.jpeg', width: 1200, height: 630, alt: 'The Daisy' }],
+    images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: insightsMetaTitle,
     description: insightsMetaDescription,
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/insights', locale),
   };

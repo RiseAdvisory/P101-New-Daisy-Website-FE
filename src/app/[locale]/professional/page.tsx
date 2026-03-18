@@ -3,8 +3,6 @@ import { localeAlternates } from '@/lib/utils/metadata';
 import { ProfessionalClient } from './ProfessionalClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
-import { getLocale } from '@/lib/locale';
-
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
@@ -31,7 +29,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     type: 'website',
     images: [
       {
-        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        url: '/images/og/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'The Daisy - For Beauty Professionals',
@@ -43,15 +41,13 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'For Beauty Professionals | The Daisy',
     description:
       'Join The Daisy as a beauty professional. Grow your career in beauty and wellness.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/professional', locale),
   };
 }
 
-export default function ProfessionalPage() {
-  const locale = getLocale();
-
+export default function ProfessionalPage({ params }: { params: { locale: string } }) {
   return (
     <>
       <WebPageSchema
@@ -62,7 +58,7 @@ export default function ProfessionalPage() {
       <PageBreadcrumbSchema
         items={[{ name: 'For Professionals', url: 'https://www.jointhedaisy.com/professional' }]}
       />
-      <ProfessionalClient lang={locale} />
+      <ProfessionalClient lang={params.locale} />
     </>
   );
 }

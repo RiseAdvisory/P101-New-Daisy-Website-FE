@@ -24,14 +24,14 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
       'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing.',
     url: `https://www.jointhedaisy.com/${locale}/solutions`,
     type: 'website',
-    images: [{ url: 'https://i.imgur.com/MNoL6BE.jpeg', width: 1200, height: 630, alt: 'The Daisy' }],
+    images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Beauty Business Solutions — AI-Powered Software | Daisy',
     description:
       'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/solutions', locale),
   };

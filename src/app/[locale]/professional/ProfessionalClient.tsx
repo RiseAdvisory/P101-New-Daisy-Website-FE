@@ -1,4 +1,3 @@
-'use client';
 import dynamic from 'next/dynamic';
 import { MobileScrollSection } from '@/components/shared/MobileScrollSection';
 import LockerContainer from '@/components/lockerScrollingSection/LockerContainer/LockerContainer';
@@ -6,7 +5,7 @@ import { t } from '@/lib/constants/i18n';
 import { professionalPageData } from '@/lib/constants/pages/professionalPage';
 import { toScrollSectionItems } from '@/lib/constants/pages/scrollSections.types';
 
-// Lazy load below-fold components to reduce initial bundle size and blocking time
+// Lazy load below-fold client components to reduce initial JS bundle
 const QASection = dynamic(
   () => import('@/components/QASection/QASection').then((mod) => mod.QASection),
 );

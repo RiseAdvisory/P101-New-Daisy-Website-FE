@@ -2,7 +2,6 @@ import { render, screen, waitFor } from '@testing-library/react';
 import { ProfessionalClient } from '../ProfessionalClient';
 
 // Mock dependencies
-jest.mock('@/store/language');
 
 // Mock Next.js Image component
 jest.mock('next/image', () => ({
@@ -89,15 +88,10 @@ jest.mock('@/components/ui/skeleton', () => ({
 describe('ProfessionalClient', () => {
   beforeEach(() => {
     jest.clearAllMocks();
-
-    // Mock language store
-    require('@/store/language').useChangeLanguage = jest.fn(() => ({
-      lang: 'en',
-    }));
   });
 
   it('renders content from local data', async () => {
-    render(<ProfessionalClient />);
+    render(<ProfessionalClient lang="en" />);
 
     await waitFor(() => {
       expect(screen.getByTestId('growth-section')).toBeInTheDocument();
@@ -105,7 +99,7 @@ describe('ProfessionalClient', () => {
   });
 
   it('renders QASection with Professional pageType', async () => {
-    render(<ProfessionalClient />);
+    render(<ProfessionalClient lang="en" />);
 
     await waitFor(() => {
       expect(screen.getByTestId('qa-section')).toHaveTextContent(
@@ -115,7 +109,7 @@ describe('ProfessionalClient', () => {
   });
 
   it('renders BecomeFormPartner component', async () => {
-    render(<ProfessionalClient />);
+    render(<ProfessionalClient lang="en" />);
 
     await waitFor(() => {
       expect(screen.getByTestId('become-partner')).toBeInTheDocument();
@@ -123,7 +117,7 @@ describe('ProfessionalClient', () => {
   });
 
   it('renders all main sections when data is loaded', async () => {
-    render(<ProfessionalClient />);
+    render(<ProfessionalClient lang="en" />);
 
     await waitFor(() => {
       expect(screen.getByTestId('locker-container')).toBeInTheDocument();

@@ -35,7 +35,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     type: 'website',
     images: [
       {
-        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        url: '/images/og/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'The Daisy Business Features',
@@ -47,7 +47,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'AI-Powered Salon Business Features | The Daisy',
     description:
       'AI-powered features for salon & spa businesses on The Daisy platform.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/features/business', locale),
   };

@@ -26,7 +26,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     type: 'website',
     images: [
       {
-        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        url: '/images/og/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'The Daisy Tutorials',
@@ -37,7 +37,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     card: 'summary_large_image',
     title: 'Beauty Booking Tutorials | The Daisy Resources',
     description: 'Learn how to use The Daisy with step-by-step tutorials.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/resources/tutorials', locale),
   };

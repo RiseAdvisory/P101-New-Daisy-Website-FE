@@ -29,7 +29,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     type: 'website',
     images: [
       {
-        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        url: '/images/og/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'About The Daisy',
@@ -40,7 +40,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     card: 'summary_large_image',
     title: 'About Us | The Daisy - Beauty & Wellness Marketplace',
     description: 'Learn about The Daisy beauty and wellness marketplace.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/about', locale),
   };

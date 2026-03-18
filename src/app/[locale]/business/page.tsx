@@ -30,7 +30,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     type: 'website',
     images: [
       {
-        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        url: '/images/og/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'The Daisy - Salon & Spa Business Solutions',
@@ -42,13 +42,13 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Salon & Spa Business Solutions | The Daisy',
     description:
       'Grow your salon or spa business with The Daisy beauty marketplace.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/business', locale),
   };
 }
 
-export default function BusinessPage() {
+export default function BusinessPage({ params }: { params: { locale: string } }) {
   return (
     <>
       <WebPageSchema
@@ -59,7 +59,7 @@ export default function BusinessPage() {
       <PageBreadcrumbSchema
         items={[{ name: 'For Business', url: 'https://www.jointhedaisy.com/business' }]}
       />
-      <BusinessClient />
+      <BusinessClient lang={params.locale} />
     </>
   );
 }
