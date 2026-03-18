@@ -53,7 +53,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function FeaturesBusinessPage() {
+export default function FeaturesBusinessPage({ params }: { params: { locale: string } }) {
   return (
     <>
       <FeaturesBreadcrumbSchema pageName="Business" pageSlug="business" />
@@ -62,7 +62,7 @@ export default function FeaturesBusinessPage() {
         description="AI-powered features for salon & spa businesses: smart scheduling, booking, marketing, payments, and team management."
         url="https://www.jointhedaisy.com/features/business"
       />
-      <FeaturesBusinessClient />
+      <FeaturesBusinessClient lang={params.locale} />
       <FeatureDeepDiveLinks userType="business" />
     </>
   );
