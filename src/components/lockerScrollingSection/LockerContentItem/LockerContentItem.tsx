@@ -44,9 +44,9 @@ const LockerContentItem = forwardRef(
           ref.current[objectId] = el;
         }}
       >
-        <h1 className="text-white text-5xl leading-[60px] capitalize">
+        <h2 className="text-white text-5xl leading-[60px] capitalize">
           {text}
-        </h1>
+        </h2>
         <p className="ltr:font-montserrat font-medium leading-[30px] text-xl text-[#D5D9D9] mt-3">
           {description}
         </p>

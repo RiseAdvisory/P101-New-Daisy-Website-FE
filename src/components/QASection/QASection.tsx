@@ -8,6 +8,7 @@ import { useChangeLanguage } from '@/store/language';
 enum PageType {
   Customer = 'Customer',
   Business = 'Business',
+  Professional = 'Professional',
 }
 
 interface FAQ {
@@ -53,14 +54,14 @@ export const QASection = ({
 
   return (
     <div className={`bg-[#F8F5F3] px-4 pb-28 md:pt-[200px] ${styles}`}>
-      <h1
+      <h2
         className={cn(
           'text-primary font-bold text-center text-[32px] leading-[40px] pt-[112px] md:text-[40px] md:leading-[50px] md:font-bold',
           { hidden: titleHidden },
         )}
       >
         {titleFraque}
-      </h1>
+      </h2>
       <div className={`md:mt-12 md:px-[288px] ${blockTop}`}>
         {qaList?.map((item: any, index: number) => {
           return (
@@ -82,7 +83,7 @@ export const QASection = ({
 const getData = async (locale: string, pageType: PageType) => {
   try {
     const res =
-      pageType == PageType.Business
+      pageType == PageType.Business || pageType == PageType.Professional
         ? await fetch(`${Constants.BASE_URL}account/faq/vendor/list`, {
             cache: 'no-store',
             headers: { 'Content-Language': locale },

@@ -31,9 +31,9 @@ export const BecomeFormPartner = () => {
       className="bg-primary px-4 border-b border-primaryBtn pb-14"
     >
       <div className="flex flex-col mx-auto text-center pt-20 px-3">
-        <h1 className="text-center text-white text-[32px] leading-10">
+        <h2 className="text-center text-white text-[32px] leading-10">
           {data.title}
-        </h1>
+        </h2>
         <p className="text-center text-[#D5D9D9]  mt-3 ltr:font-montserrat">
           {data.subtitle}
         </p>
