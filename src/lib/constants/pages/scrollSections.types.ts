@@ -1,3 +1,8 @@
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface LocalScrollSection {
   sortId: number;
   mainImage: string;
@@ -59,6 +64,7 @@ export interface LandingPageContent {
   titleFraque: string;
   growth: GrowthData;
   scrollSections: LocalScrollSection[];
+  fallbackFaqs?: FaqItem[];
 }
 
 /**

@@ -37,6 +37,13 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       ],
     },
     titleFraque: 'Frequently Asked Question',
+    fallbackFaqs: [
+      { question: 'How do I join The Daisy as a professional?', answer: 'Download The Daisy app, create your professional profile, set your services and availability, and start accepting bookings.' },
+      { question: 'Can I set my own schedule?', answer: 'Yes. You have full control over your availability, working hours, break times, and can block time for personal appointments.' },
+      { question: 'How does payment work?', answer: 'Your earnings are tracked in real-time in the app. Payments are processed securely and deposited to your account on a regular schedule.' },
+      { question: 'Do I need to work at a salon to join?', answer: 'No. Freelance professionals, independent stylists, and mobile service providers are all welcome on The Daisy.' },
+      { question: 'Is The Daisy available in Arabic?', answer: 'Yes. The Daisy is fully bilingual with complete Arabic and English support throughout the app.' },
+    ],
     growth: {
       title: 'Expand Your Clientele, Manage Your Schedule, and Build Your Brand with The Daisy.',
       description:
@@ -315,6 +322,13 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       ],
     },
     titleFraque: 'أسئلة شائعة',
+    fallbackFaqs: [
+      { question: 'كيف أنضم إلى ذا ديزي كمتخصص؟', answer: 'قم بتنزيل تطبيق ذا ديزي وأنشئ ملفك المهني وحدد خدماتك وتوافرك وابدأ في قبول الحجوزات.' },
+      { question: 'هل يمكنني تحديد جدولي الخاص؟', answer: 'نعم. لديك سيطرة كاملة على توافرك وساعات عملك وأوقات الراحة ويمكنك حجز وقت للمواعيد الشخصية.' },
+      { question: 'كيف تعمل المدفوعات؟', answer: 'يتم تتبع أرباحك في الوقت الفعلي في التطبيق. تتم معالجة المدفوعات بشكل آمن وإيداعها في حسابك وفق جدول منتظم.' },
+      { question: 'هل أحتاج للعمل في صالون للانضمام؟', answer: 'لا. المتخصصون المستقلون والمصممون المستقلون ومقدمو الخدمات المتنقلون مرحب بهم جميعًا في ذا ديزي.' },
+      { question: 'هل ذا ديزي متاح باللغة العربية؟', answer: 'نعم. ذا ديزي ثنائي اللغة بالكامل مع دعم كامل للعربية والإنجليزية في جميع أنحاء التطبيق.' },
+    ],
     growth: {
       title: 'وسّع قاعدة عملائك، نظم جدولك، وابنِ علامتك التجارية مع ذا ديزي.',
       description:
