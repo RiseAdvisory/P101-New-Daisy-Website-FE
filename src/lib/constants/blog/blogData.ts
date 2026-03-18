@@ -28,6 +28,9 @@ import {
   analyticsReportsBusinessArticles,
   analyticsReportsProfessionalArticles,
 } from './articles/analytics-reports';
+import { daisyAdvantageBusinessArticles } from './articles/daisy-advantage';
+import { bottomOfFunnelBusinessArticles } from './articles/bottom-of-funnel';
+import { thoughtLeadershipBusinessArticles } from './articles/thought-leadership';
 
 /**
  * Blog post data structure matching the Strapi response shape
@@ -135,6 +138,9 @@ export const businessBlogPosts: LocalBlogPost[] = [
   ...businessGrowthBusinessArticles,
   ...teamManagementBusinessArticles,
   ...analyticsReportsBusinessArticles,
+  ...daisyAdvantageBusinessArticles,
+  ...bottomOfFunnelBusinessArticles,
+  ...thoughtLeadershipBusinessArticles,
 ];
 
 /**
