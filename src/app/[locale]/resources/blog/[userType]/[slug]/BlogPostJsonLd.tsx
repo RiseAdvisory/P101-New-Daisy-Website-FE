@@ -1,5 +1,3 @@
-'use client';
-
 import { BlogPost, UserType } from '@/lib/api/blog';
 
 interface BlogPostJsonLdProps {

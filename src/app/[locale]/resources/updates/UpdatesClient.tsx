@@ -35,16 +35,12 @@ export const UpdatesClient = () => {
     if (hero) {
       const heroData = t(hero, locale);
       setHeroUpdate(heroData);
+      chooseBreadcrumb(heroData.breadcrumbs ?? '');
     }
 
-    const posts = updatesPostsByUserType[type] || [];
-    setListCards(posts);
+    setListCards(updatesPostsByUserType[type] || []);
     choosePathStrapi(`/resources/updates/${type}`);
-  }, [locale, currentPage, choosePathStrapi]);
-
-  useEffect(() => {
-    chooseBreadcrumb(heroUpdate?.breadcrumbs ?? '');
-  }, [heroUpdate, locale, currentPage, chooseBreadcrumb]);
+  }, [locale, currentPage, choosePathStrapi, chooseBreadcrumb]);
 
   return (
     <div>

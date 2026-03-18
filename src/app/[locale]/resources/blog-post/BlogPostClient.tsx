@@ -18,32 +18,19 @@ export const BlogPostClient = () => {
   const { chooseBreadcrumb, choosePathStrapi } = useChoosePath();
   const { userChange: currentPage } = useMyContext();
 
-  useEffect(() => {
-    let type = 'customer';
-
-    if (currentPage === '/customer') {
-      type = 'customer';
-    }
-    if (currentPage === '/business') {
-      type = 'business';
-    }
-    if (currentPage === '/professional') {
-      type = 'professional';
-    }
-
-    setUserType(type);
-
-    // Load blog posts from local data
-    const posts = blogPostsByUserType[type] || [];
-    setListCards(posts);
-  }, [locale, currentPage]);
-
   const hero = t(blogHeroData, locale);
 
   useEffect(() => {
+    let type = 'customer';
+    if (currentPage === '/customer') type = 'customer';
+    if (currentPage === '/business') type = 'business';
+    if (currentPage === '/professional') type = 'professional';
+
+    setUserType(type);
+    setListCards(blogPostsByUserType[type] || []);
     chooseBreadcrumb(hero.breadcrumbs ?? '');
-    choosePathStrapi(`/resources/blog/${userType}`);
-  }, [hero, locale, currentPage, chooseBreadcrumb, choosePathStrapi, userType]);
+    choosePathStrapi(`/resources/blog/${type}`);
+  }, [locale, currentPage, hero, chooseBreadcrumb, choosePathStrapi]);
 
   return (
     <div className="w-full">
