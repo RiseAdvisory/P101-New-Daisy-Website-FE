@@ -3,6 +3,19 @@ import { LandingPageContent } from './scrollSections.types';
 
 export const businessPageData: I18nContent<LandingPageContent> = {
   en: {
+    hero: {
+      categoryLabel: 'FOR BUSINESS OWNERS',
+      headline: 'Grow Your Salon with AI-Powered Everything',
+      subHeadline:
+        'Replace 5+ tools with one platform. AI receptionist, customer acquisition, booking, payments, and marketing — all with your brand, your way.',
+      ctaText: 'Start Free Trial',
+      ctaLink: '/get-the-app',
+      answerBlock: {
+        question: 'What is The Daisy for salons?',
+        answer:
+          'The Daisy is an AI-powered beauty business platform that combines booking management, customer acquisition, payments, staff scheduling, and marketing into one system. It replaces 5+ separate tools with a single bilingual (Arabic/English) platform featuring a 24/7 AI receptionist.',
+      },
+    },
     titleFraque: 'Frequently Asked Question',
     growth: {
       title: 'Maximize Bookings, Engage New Clients, and Grow Your Business with The Daisy.',
@@ -250,6 +263,19 @@ export const businessPageData: I18nContent<LandingPageContent> = {
   },
 
   ar: {
+    hero: {
+      categoryLabel: 'لأصحاب الأعمال',
+      headline: 'طوّر صالونك مع الذكاء الاصطناعي',
+      subHeadline:
+        'استبدل أكثر من 5 أدوات بمنصة واحدة. موظف استقبال ذكي، استقطاب العملاء، الحجوزات، المدفوعات، والتسويق — كل ذلك بعلامتك التجارية.',
+      ctaText: 'ابدأ تجربتك المجانية',
+      ctaLink: '/get-the-app',
+      answerBlock: {
+        question: 'ما هو ذا ديزي للصالونات؟',
+        answer:
+          'ذا ديزي هو منصة أعمال تجميل مدعومة بالذكاء الاصطناعي تجمع بين إدارة الحجوزات واستقطاب العملاء والمدفوعات وجدولة الموظفين والتسويق في نظام واحد. يستبدل أكثر من 5 أدوات منفصلة بمنصة ثنائية اللغة (عربي/إنجليزي) مع موظف استقبال ذكي يعمل على مدار الساعة.',
+      },
+    },
     titleFraque: 'أسئلة شائعة',
     growth: {
       title: 'زِد حجوزاتك، جذب عملاء جدد، ونمِّ عملك مع ذا ديزي.',

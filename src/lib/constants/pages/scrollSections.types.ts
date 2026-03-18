@@ -27,7 +27,20 @@ export interface GrowthData {
   imageUrl: string;
 }
 
+export interface HeroData {
+  categoryLabel: string;
+  headline: string;
+  subHeadline: string;
+  ctaText: string;
+  ctaLink: string;
+  answerBlock?: {
+    question: string;
+    answer: string;
+  };
+}
+
 export interface LandingPageContent {
+  hero?: HeroData;
   titleFraque: string;
   growth: GrowthData;
   scrollSections: LocalScrollSection[];

@@ -3,6 +3,19 @@ import { LandingPageContent } from './scrollSections.types';
 
 export const professionalPageData: I18nContent<LandingPageContent> = {
   en: {
+    hero: {
+      categoryLabel: 'FOR BEAUTY PROFESSIONALS',
+      headline: 'Your Career, Your Schedule, Your Clients',
+      subHeadline:
+        'Manage bookings, build your client base, and track your earnings — all from one app. Flexible scheduling with 24/7 AI support.',
+      ctaText: 'Start Free Trial',
+      ctaLink: '/get-the-app',
+      answerBlock: {
+        question: 'What is The Daisy for beauty professionals?',
+        answer:
+          'The Daisy is an all-in-one app for beauty and wellness professionals to manage bookings, build a client base, track earnings, and grow their career. It features flexible scheduling, 24/7 AI-powered booking, and bilingual Arabic/English support.',
+      },
+    },
     titleFraque: 'Frequently Asked Question',
     growth: {
       title: 'Expand Your Clientele, Manage Your Schedule, and Build Your Brand with The Daisy.',
@@ -248,6 +261,19 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
   },
 
   ar: {
+    hero: {
+      categoryLabel: 'لمتخصصي التجميل',
+      headline: 'مسيرتك المهنية، جدولك، عملاؤك',
+      subHeadline:
+        'أدِر حجوزاتك، وابنِ قاعدة عملائك، وتابع أرباحك — كل ذلك من تطبيق واحد. جدولة مرنة مع دعم الذكاء الاصطناعي على مدار الساعة.',
+      ctaText: 'ابدأ تجربتك المجانية',
+      ctaLink: '/get-the-app',
+      answerBlock: {
+        question: 'ما هو ذا ديزي لمتخصصي التجميل؟',
+        answer:
+          'ذا ديزي هو تطبيق شامل لمتخصصي التجميل والعافية لإدارة الحجوزات وبناء قاعدة العملاء وتتبع الأرباح وتطوير مسيرتهم المهنية. يتميز بجدولة مرنة وحجز مدعوم بالذكاء الاصطناعي على مدار الساعة ودعم ثنائي اللغة عربي/إنجليزي.',
+      },
+    },
     titleFraque: 'أسئلة شائعة',
     growth: {
       title: 'وسّع قاعدة عملائك، نظم جدولك، وابنِ علامتك التجارية مع ذا ديزي.',
