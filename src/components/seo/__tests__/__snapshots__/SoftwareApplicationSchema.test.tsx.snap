@@ -153,7 +153,7 @@ exports[`SoftwareApplicationSchema matches snapshot for JSON-LD schema structure
     "priceCurrency": "USD",
   },
   "operatingSystem": "Web browser, iOS, Android",
-  "screenshot": "https://i.imgur.com/MNoL6BE.jpeg",
+  "screenshot": "/images/og/og-default.jpg",
   "softwareHelp": {
     "@type": "WebPage",
     "url": "https://www.jointhedaisy.com/faq",
