@@ -49,6 +49,11 @@ import {
   staffManagementProfessionalArticles,
 } from './articles/staff-management';
 import {
+  clientRetentionBusinessArticles,
+  clientRetentionProfessionalArticles,
+} from './articles/client-retention';
+import { freelanceBeautyProfessionalArticles } from './articles/freelance-beauty';
+import {
   industryTrendsBusinessArticles,
   industryTrendsProfessionalArticles,
 } from './articles/industry-trends';
@@ -169,6 +174,7 @@ export const businessBlogPosts: LocalBlogPost[] = [
   ...beautyBusinessGrowthBusinessArticles,
   ...salonPaymentsBusinessArticles,
   ...staffManagementBusinessArticles,
+  ...clientRetentionBusinessArticles,
   ...industryTrendsBusinessArticles,
   ...salonAnalyticsBusinessArticles,
   ...multiChannelBusinessArticles,
@@ -189,6 +195,8 @@ export const professionalBlogPosts: LocalBlogPost[] = [
   ...beautyBusinessGrowthProfessionalArticles,
   ...salonPaymentsProfessionalArticles,
   ...staffManagementProfessionalArticles,
+  ...clientRetentionProfessionalArticles,
+  ...freelanceBeautyProfessionalArticles,
   ...industryTrendsProfessionalArticles,
 ];
 
