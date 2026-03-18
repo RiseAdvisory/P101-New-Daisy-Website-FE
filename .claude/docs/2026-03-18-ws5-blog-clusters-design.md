@@ -2,7 +2,7 @@
 
 **Date:** 2026-03-18
 **Status:** Approved
-**Scope:** 80 new blog articles across 14 data files, supporting 11 pillar pages
+**Scope:** 72 new blog articles across 13 data files + 1 modified file, supporting 11 pillar pages
 
 ---
 
@@ -15,7 +15,7 @@ Build 72 new blog articles organized into 11 topic clusters plus 3 additional gr
 - **38 WS3 articles** already exist across 8 feature category files — these stay as-is
 - **6 WS5 slugs** match existing WS3 articles exactly — these are already covered, no new article needed
 - **~12 WS5 articles** overlap topically with WS3 — both kept, differentiated by angle (WS3 = Daisy-feature-focused, WS5 = industry-generic keyword), cross-linked as related reading
-- **80 genuinely new articles** to create
+- **72 genuinely new articles** to create
 
 ---
 
@@ -23,7 +23,7 @@ Build 72 new blog articles organized into 11 topic clusters plus 3 additional gr
 
 | Decision | Choice | Rationale |
 |----------|--------|-----------|
-| Build scope | All 80 articles, phased | Dominate SEO/GEO with maximum topical authority |
+| Build scope | All 72 articles, phased | Dominate SEO/GEO with maximum topical authority |
 | Overlap handling | Keep both WS3 and WS5, differentiate angle | WS3 captures feature keywords, WS5 captures industry keywords — no cannibalization with different slugs and angles |
 | Infrastructure | Reuse existing blog system entirely | Same LocalBlogPost interface, same rendering, same blogData.ts wiring |
 | Phasing | 6 build sessions in priority order | Ship highest-conversion content first (Daisy differentiators, BOFU) |
@@ -351,12 +351,11 @@ Content tone:
 - Wire into `blogData.ts`
 - Run TypeScript check + blog tests
 
-### Session 2: Top Pillar Support (10 articles)
+### Session 2: Top Pillar Support (9 articles)
 - `salon-management.ts` — 8 articles (IDs 150-157)
 - Append ID 158 to existing `booking-management.ts` (Cluster 2 business article)
-- Append ID 211 to `freelance-beauty.ts` (Cluster 2 professional article, built in Session 5)
 - Wire into `blogData.ts`
-- Note: ID 211 is deferred to Session 5 when `freelance-beauty.ts` is created
+- Note: ID 211 (Cluster 2 professional article) is deferred to Session 5 when `freelance-beauty.ts` is created
 
 ### Session 3: Marketing + Growth (15 articles)
 - `salon-marketing.ts` — 8 articles (IDs 159-165, 212)
