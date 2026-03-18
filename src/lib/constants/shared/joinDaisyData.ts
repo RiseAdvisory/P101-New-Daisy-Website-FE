@@ -34,7 +34,7 @@ export const joinDaisyData: I18nContent<JoinDaisyData> = {
       },
       {
         image: Vendors,
-        title: 'As Vedors',
+        title: 'As Vendors',
         description:
           'Your commitment to excellence and customer satisfaction should drive your business growth.',
         linksto: '/get-the-app',
