@@ -1,9 +1,10 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Image from 'next/image';
-import { useChangeLanguage } from '@/store/language';
 import { FeatureListItem } from '@/types/strapi';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 import { ImageWrapper } from './ImageWrapper';
 
 interface TabsFeaturesProfessionalProps {
@@ -29,11 +30,12 @@ export const TabsFeaturesProfessional: React.FC<
 }) => {
   const [activeTab, setActiveTab] = useState(dataList?.[0]?.attributes.title);
 
-  const { lang } = useChangeLanguage();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
 
   useEffect(() => {
     setActiveTab(dataList?.[0]?.attributes.title);
-  }, [lang, dataList]);
+  }, [locale, dataList]);
 
   return (
     <>

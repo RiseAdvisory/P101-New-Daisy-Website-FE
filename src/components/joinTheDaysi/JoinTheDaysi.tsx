@@ -1,15 +1,17 @@
 'use client';
 import Image from 'next/image';
+import { useMemo } from 'react';
 import { Button } from '../ui/button';
-import { useChangeLanguage } from '@/store/language';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { t } from '@/lib/constants/i18n';
 import { joinDaisyData } from '@/lib/constants/shared/joinDaisyData';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 export const JoinTheDaisy = () => {
-  const { lang } = useChangeLanguage();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const router = useRouter();
-  const data = t(joinDaisyData, lang);
+  const data = t(joinDaisyData, locale);
 
   return (
     <div className="bg-white  px-4 md:px-16">

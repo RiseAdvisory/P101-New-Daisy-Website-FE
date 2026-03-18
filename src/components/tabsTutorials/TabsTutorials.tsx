@@ -3,9 +3,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
 import { tutorialsList } from '@/lib/constants/tutorialsList';
-import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import { useChangeLanguage } from '@/store/language';
+import { usePathname, useRouter } from 'next/navigation';
+import { useEffect, useMemo, useState } from 'react';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 import DOMPurify from 'dompurify';
 
 interface TutorialTabItem {
@@ -32,13 +32,14 @@ export const TabsTutorials = ({
   infoTutorials,
 }: TabsTutorialsProps) => {
   const router = useRouter();
-  const { lang } = useChangeLanguage();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const [defaultValue, setDefaultValue] = useState<string>('');
   useEffect(() => {
     if (listDataTabs && listDataTabs.length > 0) {
       setDefaultValue(listDataTabs[0].attributes.titleListTab);
     }
-  }, [listDataTabs, lang]);
+  }, [listDataTabs, locale]);
 
   if (!defaultValue) {
     return null;

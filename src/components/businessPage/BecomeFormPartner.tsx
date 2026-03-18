@@ -1,9 +1,11 @@
 'use client';
+import { useMemo } from 'react';
 import dynamic from 'next/dynamic';
-import { useChangeLanguage } from '@/store/language';
 import { Skeleton } from '@/components/ui/skeleton';
 import { t } from '@/lib/constants/i18n';
 import { becomePartnerData } from '@/lib/constants/shared/becomePartnerData';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 // Lazy load the form component to reduce initial bundle size
 const ProfileForm = dynamic(
@@ -26,8 +28,9 @@ interface BecomeFormPartnerProps {
 }
 
 export const BecomeFormPartner = ({ defaultType }: BecomeFormPartnerProps) => {
-  const { lang } = useChangeLanguage();
-  const data = t(becomePartnerData, lang);
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const data = t(becomePartnerData, locale);
 
   return (
     <div

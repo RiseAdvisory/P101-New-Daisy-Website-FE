@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import { ExperienceDaisy } from '../ExperienceDaisy';
 
-jest.mock('@/store/language', () => ({
-  useChangeLanguage: jest.fn(() => ({ lang: 'en' })),
+jest.mock('next/navigation', () => ({
+  usePathname: jest.fn(() => '/en/business'),
 }));
 
 jest.mock('next/image', () => ({

@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { Dispatch, SetStateAction, useEffect, useMemo, useState, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import { resourcesDropDownList } from '@/lib/constants/resources/resourcesList';
-import { useChangeLanguage } from '@/store/language';
 import { useChangePage } from '@/store/currentPage';
 import { t } from '@/lib/constants/i18n';
 import {
@@ -39,7 +38,6 @@ export const DropdownResources = ({
 
   const path = usePathname();
   const locale = useMemo(() => getLocaleFromPathname(path), [path]);
-  const { lang } = useChangeLanguage();
   const currentPage = typeof window !== 'undefined' ? localStorage.getItem('activePage') : null;
 
   let pageType: ResourcesDropdownPageType = 'business';
@@ -49,7 +47,7 @@ export const DropdownResources = ({
     pageType = 'professional';
   }
 
-  const listResources = t(resourcesDropdownData[pageType], lang);
+  const listResources = t(resourcesDropdownData[pageType], locale);
 
   // Click outside to close dropdown
   useEffect(() => {
@@ -119,7 +117,7 @@ export const DropdownResources = ({
       className="w-screen max-w-screen-2xl fixed left-0 rtl:left-auto rtl:right-0 top-[100px] hidden md:block py-10 px-4 md:px-8 lg:px-16 border-t border-primaryBtn bg-white z-50 shadow-md"
     >
       <div className="flex ltr:flex-row rtl:flex-row-reverse">
-        {lang === 'ar' ? (
+        {locale === 'ar' ? (
           <>
             {contentElement}
             {imageElement}

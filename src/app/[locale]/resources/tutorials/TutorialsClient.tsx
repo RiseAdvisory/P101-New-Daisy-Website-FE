@@ -2,14 +2,16 @@
 import { useMyContext } from '@/app/MyContext';
 import { TutorialSection } from '@/components/blogPage/tutorialPage/TutorialSection';
 import { HeroPage } from '@/components/heroSection/HeroSection';
-import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { tutorialsHeroData } from '@/lib/constants/resources/resourcesData';
 import { t } from '@/lib/constants/i18n';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 export const TutorialsClient = () => {
   const [scroll, setScroll] = useState(null);
-  const { lang } = useChangeLanguage();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const { userChange: currentPage } = useMyContext();
 
   const [dataTutorials, setDataTutorials] = useState<{
@@ -29,9 +31,9 @@ export const TutorialsClient = () => {
 
     const heroData = tutorialsHeroData[type];
     if (heroData) {
-      setDataTutorials(t(heroData, lang));
+      setDataTutorials(t(heroData, locale));
     }
-  }, [lang, currentPage]);
+  }, [locale, currentPage]);
 
   return (
     <>

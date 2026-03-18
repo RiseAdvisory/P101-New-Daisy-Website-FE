@@ -10,7 +10,6 @@ import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
 import { usePathname, useRouter } from 'next/navigation';
 import { useChangePage } from '@/store/currentPage';
-import { useChangeLanguage } from '@/store/language';
 import { useMyContext } from '@/app/MyContext';
 import { headerData } from '@/lib/constants/shared/headerData';
 import { t } from '@/lib/constants/i18n';
@@ -40,10 +39,9 @@ export const ChangeUserTypeMobile = ({
   const router = useRouter();
   const [active, setActive] = useState('');
   const [currentPage, setCurrentPage] = useState<any>();
-  const { lang } = useChangeLanguage();
   const { userChange, setUserChange } = useMyContext();
 
-  const hData = t(headerData, lang);
+  const hData = t(headerData, locale);
   // Filter out customer option
   const dataList = hData.optionsToogle.filter(
     (option) => !option.path.includes('customer'),
@@ -139,7 +137,7 @@ export const ChangeUserTypeMobile = ({
       if (currentPath === '/business') setCurrentPage(dataList?.[0]?.label);
       if (currentPath === '/professional') setCurrentPage(dataList?.[1]?.label);
     }
-  }, [dataList, lang]);
+  }, [dataList, locale]);
   const { changePage } = useChangePage();
 
   return (

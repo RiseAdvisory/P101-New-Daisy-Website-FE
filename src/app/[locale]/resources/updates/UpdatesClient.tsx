@@ -2,11 +2,12 @@
 import { CardPosts } from '@/components/blogPage/blogPosts/CardPosts';
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import { useChoosePath } from '@/store/currentPath';
-import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useMyContext } from '@/app/MyContext';
 import { updatesHeroData, updatesPostsByUserType } from '@/lib/constants/resources/resourcesData';
 import { t } from '@/lib/constants/i18n';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 export const UpdatesClient = () => {
   const [heroUpdate, setHeroUpdate] = useState<{
@@ -19,7 +20,8 @@ export const UpdatesClient = () => {
   } | null>(null);
   const [listCard, setListCards] = useState<any[] | null>(null);
 
-  const { lang } = useChangeLanguage();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const { chooseBreadcrumb, choosePathStrapi } = useChoosePath();
   const { userChange: currentPage } = useMyContext();
 
@@ -31,18 +33,18 @@ export const UpdatesClient = () => {
 
     const hero = updatesHeroData[type];
     if (hero) {
-      const heroData = t(hero, lang);
+      const heroData = t(hero, locale);
       setHeroUpdate(heroData);
     }
 
     const posts = updatesPostsByUserType[type] || [];
     setListCards(posts);
     choosePathStrapi(`/resources/updates/${type}`);
-  }, [lang, currentPage, choosePathStrapi]);
+  }, [locale, currentPage, choosePathStrapi]);
 
   useEffect(() => {
     chooseBreadcrumb(heroUpdate?.breadcrumbs ?? '');
-  }, [heroUpdate, lang, currentPage, chooseBreadcrumb]);
+  }, [heroUpdate, locale, currentPage, chooseBreadcrumb]);
 
   return (
     <div>

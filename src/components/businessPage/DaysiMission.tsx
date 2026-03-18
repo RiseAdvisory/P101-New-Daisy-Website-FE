@@ -1,14 +1,17 @@
 'use client';
+import { useMemo } from 'react';
 import { MissionIcon } from '@/assets/icons/missioIcon/MissionIcon';
 import { StarsIcons } from '../../assets/icons/starsIcon/StarIcons';
 import { StrategyIcons } from '../../assets/icons/strategyIcon/StrategyIcon';
-import { useChangeLanguage } from '@/store/language';
 import { t } from '@/lib/constants/i18n';
 import { daisyMissionData } from '@/lib/constants/shared/daisyMissionData';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 export const DaysiMission = () => {
-  const { lang } = useChangeLanguage();
-  const data = t(daisyMissionData, lang);
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const data = t(daisyMissionData, locale);
 
   return (
     <div className="bg-[#F8F5F3] pt-[80px] pb-[112px] md:px-[64px]">

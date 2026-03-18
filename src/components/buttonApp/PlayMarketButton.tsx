@@ -1,10 +1,11 @@
 'use client';
+import { useMemo } from 'react';
 import { GooglePlayIcons } from '@/assets/icons/appMarket/GooglePlayIcons';
 import { Button } from '../ui/button';
-import { useRouter } from 'next/navigation';
-import { useChangeLanguage } from '@/store/language';
+import { usePathname, useRouter } from 'next/navigation';
 import { buttonAppData } from '@/lib/constants/shared/buttonAppData';
 import { t } from '@/lib/constants/i18n';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 export const PlayMarketButton = ({
   className,
@@ -16,8 +17,9 @@ export const PlayMarketButton = ({
   fillHover?: string;
 }) => {
   const router = useRouter();
-  const { lang } = useChangeLanguage();
-  const dataButton = t(buttonAppData, lang).googlePlay;
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const dataButton = t(buttonAppData, locale).googlePlay;
 
   return (
     <>

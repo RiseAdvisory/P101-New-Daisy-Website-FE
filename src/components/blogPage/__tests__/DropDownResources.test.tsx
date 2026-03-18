@@ -1,10 +1,10 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { DropdownResources } from '../DropDownResources';
-import * as languageStore from '@/store/language';
+import { usePathname } from 'next/navigation';
 
 // Mock next/navigation
 jest.mock('next/navigation', () => ({
-  usePathname: jest.fn(() => '/business'),
+  usePathname: jest.fn(() => '/en/business'),
 }));
 
 // Mock next/link
@@ -37,10 +37,7 @@ jest.mock('next/image', () => ({
   },
 }));
 
-// Mock Zustand language store
-jest.mock('@/store/language', () => ({
-  useChangeLanguage: jest.fn(),
-}));
+// usePathname mock is already set above
 
 // Mock Zustand current page store
 jest.mock('@/store/currentPage', () => ({
@@ -76,10 +73,7 @@ describe('DropdownResources', () => {
 
   describe('LTR Mode (English)', () => {
     beforeEach(() => {
-      (languageStore.useChangeLanguage as jest.Mock).mockReturnValue({
-        lang: 'en',
-        changeLanguages: jest.fn(),
-      });
+      (usePathname as jest.Mock).mockReturnValue('/en/business');
     });
 
     it('should render dropdown when openBlog is true', () => {
@@ -188,10 +182,7 @@ describe('DropdownResources', () => {
 
   describe('RTL Mode (Arabic)', () => {
     beforeEach(() => {
-      (languageStore.useChangeLanguage as jest.Mock).mockReturnValue({
-        lang: 'ar',
-        changeLanguages: jest.fn(),
-      });
+      (usePathname as jest.Mock).mockReturnValue('/ar/business');
       localStorageMock.setItem('lang', 'ar');
       document.documentElement.setAttribute('dir', 'rtl');
     });
@@ -271,10 +262,7 @@ describe('DropdownResources', () => {
 
   describe('Hover Behavior', () => {
     beforeEach(() => {
-      (languageStore.useChangeLanguage as jest.Mock).mockReturnValue({
-        lang: 'en',
-        changeLanguages: jest.fn(),
-      });
+      (usePathname as jest.Mock).mockReturnValue('/en/business');
     });
 
     it('should have hover styles on menu items', () => {
@@ -295,10 +283,7 @@ describe('DropdownResources', () => {
 
   describe('Page Type Selection', () => {
     it('should show customer resources when activePage is /customer', () => {
-      (languageStore.useChangeLanguage as jest.Mock).mockReturnValue({
-        lang: 'en',
-        changeLanguages: jest.fn(),
-      });
+      (usePathname as jest.Mock).mockReturnValue('/en/customer');
       localStorageMock.setItem('activePage', '/customer');
 
       render(
@@ -313,10 +298,7 @@ describe('DropdownResources', () => {
     });
 
     it('should show professional resources when activePage is /professional', () => {
-      (languageStore.useChangeLanguage as jest.Mock).mockReturnValue({
-        lang: 'en',
-        changeLanguages: jest.fn(),
-      });
+      (usePathname as jest.Mock).mockReturnValue('/en/professional');
       localStorageMock.setItem('activePage', '/professional');
 
       render(

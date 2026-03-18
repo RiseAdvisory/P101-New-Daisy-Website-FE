@@ -29,9 +29,10 @@ import { getData } from '@/helpers/getCountryCodes';
 import { useLoadingStore } from '@/store/loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useChangeLanguage } from '@/store/language';
 import { t } from '@/lib/constants/i18n';
 import { formBusinessData } from '@/lib/constants/shared/formBusinessData';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 interface ProfileFormProps {
   defaultType?: 'business' | 'freelance';
@@ -51,8 +52,9 @@ export const ProfileForm = ({ defaultType }: ProfileFormProps) => {
     homeVisits: 'No',
   });
 
-  const { lang } = useChangeLanguage();
-  const formContent = t(formBusinessData, lang);
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const formContent = t(formBusinessData, locale);
   const textForm = formContent.formDescription;
   const descriptionForm = formContent.formPlaceholder;
 

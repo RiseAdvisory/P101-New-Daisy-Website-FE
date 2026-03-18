@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -31,7 +31,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { contactPageData } from '@/lib/constants/contactPageData';
 import { t } from '@/lib/constants/i18n';
-import { useChangeLanguage } from '@/store/language';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 const formSchema = z.object({
   firstname: z.string(),
@@ -49,8 +50,9 @@ export const FormContacts = ({ style }: { style?: string }) => {
   const [mobile, setPhoneNumber] = useState('');
   const [isSubmit, setIsSubmit] = useState(false);
 
-  const { lang } = useChangeLanguage();
-  const pageData = t(contactPageData, lang);
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const pageData = t(contactPageData, locale);
   const formText = pageData.textContactForm;
   const formTextPlaceholder = pageData.placeholderContactForm;
 

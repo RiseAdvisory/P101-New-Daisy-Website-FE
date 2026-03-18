@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useRef, Dispatch, SetStateAction } from 'react';
+import { useState, useEffect, useRef, useMemo, Dispatch, SetStateAction } from 'react';
 import { ContactSupport } from '@/assets/icons/contactSupport/ContactSupport';
 import { SelectTutorials } from './SelectTutorial';
 import { Button } from '@/components/ui/button';
@@ -7,11 +7,11 @@ import Separator from '@/components/separator/Separator';
 import { ArrowUp } from 'lucide-react';
 import { TabsTutorials } from '@/components/tabsTutorials/TabsTutorials';
 import { TutorialComponents } from './TutorialComponents';
-import { useChangeLanguage } from '@/store/language';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useMyContext } from '@/app/MyContext';
 import { tutorialInfoData, tutorialTabsData } from '@/lib/constants/resources/resourcesData';
 import { t } from '@/lib/constants/i18n';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 export const TutorialSection = ({
   setScroll,
@@ -25,7 +25,8 @@ export const TutorialSection = ({
   const [tutorialInfo, setTutorialInfo] = useState<any>();
   const [dataTabs, setDataTabs] = useState<any>();
   const router = useRouter();
-  const { lang } = useChangeLanguage();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const { userChange: currentPage } = useMyContext();
 
   useEffect(() => {
@@ -37,19 +38,19 @@ export const TutorialSection = ({
     // Load tutorial info from local data
     const infoData = tutorialInfoData[type];
     if (infoData) {
-      setTutorialInfo(t(infoData, lang));
+      setTutorialInfo(t(infoData, locale));
     }
 
     // Load tutorial tabs from local data
     const tabs = tutorialTabsData[type];
     if (tabs) {
-      const tabData = t(tabs, lang);
+      const tabData = t(tabs, locale);
       setListDataTabs(tabData);
       if (tabData.length > 0) {
         setDataTabs(tabData[0].attributes);
       }
     }
-  }, [lang, currentPage]);
+  }, [locale, currentPage]);
 
   useEffect(() => {
     setScroll(blockRef);

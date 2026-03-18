@@ -1,7 +1,8 @@
 'use client';
-import { useChangeLanguage } from '@/store/language';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 import { useMyContext } from '@/app/MyContext';
 import { testimonialsListByUserType } from '@/lib/constants/resources/resourcesData';
 
@@ -28,7 +29,8 @@ export const TestimonialsCustomerList = ({
   const [visibleCount, setVisibleCount] = useState(9);
   const { userChange: currentPage, setUserChange } = useMyContext();
 
-  const { lang } = useChangeLanguage();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   useEffect(() => {
     let type = 'customer';
     if (currentPage === '/customer') type = 'customer';
@@ -37,7 +39,7 @@ export const TestimonialsCustomerList = ({
 
     const testimonials = testimonialsListByUserType[type] || [];
     setListTestimonials(testimonials);
-  }, [lang, currentPage]);
+  }, [locale, currentPage]);
 
   const loadMoreTestimonials = () => {
     setVisibleCount((prevCount) => prevCount + 3);
