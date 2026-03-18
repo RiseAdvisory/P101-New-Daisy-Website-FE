@@ -103,7 +103,7 @@ describe('Footer', () => {
   it('renders logo with link to home', () => {
     render(<Footer />);
     const logoLink = screen.getByRole('link', { name: /logo/i });
-    expect(logoLink).toHaveAttribute('href', '/en/business');
+    expect(logoLink).toHaveAttribute('href', '/en');
   });
 
   it('renders navigation links from constants', () => {

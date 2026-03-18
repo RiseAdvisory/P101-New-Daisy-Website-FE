@@ -91,7 +91,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.getByText('Resources for Businesses')).toBeInTheDocument();
+      expect(screen.getByText('BUSINESS')).toBeInTheDocument();
     });
 
     it('should not render dropdown when openBlog is false', () => {
@@ -103,7 +103,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.queryByText('Resources for Businesses')).not.toBeInTheDocument();
+      expect(screen.queryByText('BUSINESS')).not.toBeInTheDocument();
     });
 
     it('should display all menu items with correct text alignment', () => {
@@ -115,13 +115,13 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.getByText('Blog Posts')).toBeInTheDocument();
+      expect(screen.getByText('Blog posts')).toBeInTheDocument();
       expect(screen.getByText('Tutorials & Guides')).toBeInTheDocument();
-      expect(screen.getByText('Customer Testimonials')).toBeInTheDocument();
+      expect(screen.getByText('Customer testimonials')).toBeInTheDocument();
       expect(screen.getByText('Updates')).toBeInTheDocument();
 
       // Check for left padding in LTR mode
-      const linkElement = screen.getByText('Blog Posts').closest('a');
+      const linkElement = screen.getByText('Blog posts').closest('a');
       expect(linkElement).toHaveClass('ltr:pl-4');
     });
 
@@ -164,7 +164,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      fireEvent.click(screen.getByText('Blog Posts'));
+      fireEvent.click(screen.getByText('Blog posts'));
 
       expect(mockSetOpenBlog).toHaveBeenCalledWith(false);
     });
@@ -205,7 +205,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.getByText('موارد للأعمال')).toBeInTheDocument();
+      expect(screen.getByText('شركة')).toBeInTheDocument();
     });
 
     it('should display all menu items in Arabic with correct text alignment', () => {
@@ -217,13 +217,13 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.getByText('المقالات')).toBeInTheDocument();
-      expect(screen.getByText('الدروس والأدلة')).toBeInTheDocument();
+      expect(screen.getByText('مقالات المدونة')).toBeInTheDocument();
+      expect(screen.getByText('الدروس التعليمية والأدلة')).toBeInTheDocument();
       expect(screen.getByText('آراء العملاء')).toBeInTheDocument();
       expect(screen.getByText('التحديثات')).toBeInTheDocument();
 
       // Check for right padding in RTL mode
-      const linkElement = screen.getByText('المقالات').closest('a');
+      const linkElement = screen.getByText('مقالات المدونة').closest('a');
       expect(linkElement).toHaveClass('rtl:pr-4');
     });
 
@@ -236,7 +236,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      const heading = screen.getByText('موارد للأعمال');
+      const heading = screen.getByText('شركة');
       expect(heading).toHaveClass('rtl:text-right');
     });
 
@@ -249,10 +249,9 @@ describe('DropdownResources', () => {
         />
       );
 
-      const flexContainer = container.querySelector('.flex.rtl\\:flex-row-reverse');
+      const flexContainer = container.querySelector('.flex.ltr\\:flex-row');
+      // In RTL (lang=ar), component renders contentElement first, then imageElement
       const firstChild = flexContainer?.firstChild as HTMLElement;
-
-      // In RTL, content (flex-1) should be first child
       expect(firstChild).toHaveClass('flex-1');
     });
 
@@ -287,7 +286,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      const listItem = screen.getByText('Blog Posts').closest('li');
+      const listItem = screen.getByText('Blog posts').closest('li');
       expect(listItem).toHaveClass('hover:bg-[#E8E9E9]');
       expect(listItem).toHaveClass('hover:outline-gray-300');
       expect(listItem).toHaveClass('hover:outline');
@@ -310,7 +309,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.getByText('Resources for Customers')).toBeInTheDocument();
+      expect(screen.getByText('CUSTOMER')).toBeInTheDocument();
     });
 
     it('should show professional resources when activePage is /professional', () => {
@@ -328,7 +327,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.getByText('Resources for Professionals')).toBeInTheDocument();
+      expect(screen.getByText('PROFESSIONAL')).toBeInTheDocument();
     });
   });
 });

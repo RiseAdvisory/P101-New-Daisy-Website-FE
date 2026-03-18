@@ -127,7 +127,7 @@ describe('Blog Post Page', () => {
   describe('generateMetadata', () => {
     it('should return "Not Found" for invalid userType', async () => {
       const params = {
-        params: { userType: 'invalid', slug: 'test-slug' },
+        params: { locale: 'en', userType: 'invalid', slug: 'test-slug' },
       };
 
       const metadata = await generateMetadata(params);
@@ -140,7 +140,7 @@ describe('Blog Post Page', () => {
       mockedGetBlogPostBySlug.mockResolvedValueOnce(null);
 
       const params = {
-        params: { userType: 'customer', slug: 'non-existent' },
+        params: { locale: 'en', userType: 'customer', slug: 'non-existent' },
       };
 
       const metadata = await generateMetadata(params);
@@ -156,7 +156,7 @@ describe('Blog Post Page', () => {
       mockedGetBlogPostBySlug.mockResolvedValueOnce(mockBlogPost);
 
       const params = {
-        params: { userType: 'customer', slug: 'test-blog-post' },
+        params: { locale: 'en', userType: 'customer', slug: 'test-blog-post' },
       };
 
       const metadata = await generateMetadata(params);
@@ -180,10 +180,11 @@ describe('Blog Post Page', () => {
           images: ['/images/blog/og-image.webp'],
         },
         alternates: {
-          canonical: '/resources/blog/customer/test-blog-post',
+          canonical: 'https://www.jointhedaisy.com/en/resources/blog/customer/test-blog-post',
           languages: {
-            en: '/resources/blog/customer/test-blog-post',
-            ar: '/ar/resources/blog/customer/test-blog-post',
+            en: 'https://www.jointhedaisy.com/en/resources/blog/customer/test-blog-post',
+            ar: 'https://www.jointhedaisy.com/ar/resources/blog/customer/test-blog-post',
+            'x-default': 'https://www.jointhedaisy.com/en/resources/blog/customer/test-blog-post',
           },
         },
       });
@@ -201,7 +202,7 @@ describe('Blog Post Page', () => {
       mockedGetBlogPostBySlug.mockResolvedValueOnce(postWithoutMetaTitle);
 
       const params = {
-        params: { userType: 'customer', slug: 'test-blog-post' },
+        params: { locale: 'en', userType: 'customer', slug: 'test-blog-post' },
       };
 
       const metadata = await generateMetadata(params);
@@ -222,7 +223,7 @@ describe('Blog Post Page', () => {
       mockedGetBlogPostBySlug.mockResolvedValueOnce(postWithoutOgImage);
 
       const params = {
-        params: { userType: 'customer', slug: 'test-blog-post' },
+        params: { locale: 'en', userType: 'customer', slug: 'test-blog-post' },
       };
 
       const metadata = await generateMetadata(params);
@@ -248,7 +249,7 @@ describe('Blog Post Page', () => {
       mockedGetBlogPostBySlug.mockResolvedValueOnce(postWithoutImages);
 
       const params = {
-        params: { userType: 'customer', slug: 'test-blog-post' },
+        params: { locale: 'en', userType: 'customer', slug: 'test-blog-post' },
       };
 
       const metadata = await generateMetadata(params);
@@ -269,7 +270,7 @@ describe('Blog Post Page', () => {
       mockedGetBlogPostBySlug.mockResolvedValueOnce(postWithoutAuthor);
 
       const params = {
-        params: { userType: 'customer', slug: 'test-blog-post' },
+        params: { locale: 'en', userType: 'customer', slug: 'test-blog-post' },
       };
 
       const metadata = await generateMetadata(params);
@@ -285,7 +286,7 @@ describe('Blog Post Page', () => {
       });
 
       const params = {
-        params: { userType: 'invalid', slug: 'test-slug' },
+        params: { locale: 'en', userType: 'invalid', slug: 'test-slug' },
       };
 
       await expect(BlogPostPage(params)).rejects.toThrow('Not Found');
@@ -300,7 +301,7 @@ describe('Blog Post Page', () => {
       });
 
       const params = {
-        params: { userType: 'customer', slug: 'non-existent' },
+        params: { locale: 'en', userType: 'customer', slug: 'non-existent' },
       };
 
       await expect(BlogPostPage(params)).rejects.toThrow('Not Found');
@@ -315,7 +316,7 @@ describe('Blog Post Page', () => {
       mockedGetBlogPostBySlug.mockResolvedValueOnce(mockBlogPost);
 
       const params = {
-        params: { userType: 'customer', slug: 'test-blog-post' },
+        params: { locale: 'en', userType: 'customer', slug: 'test-blog-post' },
       };
 
       const result = await BlogPostPage(params);
@@ -334,7 +335,7 @@ describe('Blog Post Page', () => {
       mockedGetBlogPostBySlug.mockResolvedValueOnce(mockBlogPost);
 
       const params = {
-        params: { userType: 'business', slug: 'test-blog-post' },
+        params: { locale: 'en', userType: 'business', slug: 'test-blog-post' },
       };
 
       await BlogPostPage(params);

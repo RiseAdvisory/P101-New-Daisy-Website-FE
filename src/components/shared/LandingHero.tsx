@@ -23,7 +23,7 @@ export const LandingHero = ({
 }: LandingHeroProps) => {
   return (
     <section className="w-full bg-primary pt-32 pb-16 md:pt-40 md:pb-20 px-4">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center mb-8">
         <p className="text-sm font-semibold tracking-widest text-[#F2DAD4] uppercase mb-4">
           {categoryLabel}
         </p>
@@ -41,7 +41,7 @@ export const LandingHero = ({
         </Link>
         {answerBlock && (
           <div
-            className="mt-12 text-left max-w-2xl mx-auto bg-white/10 rounded-xl p-6 [&_h3]:text-white [&_p]:text-[#B0C4C3]"
+            className="mt-12 text-left rtl:text-right max-w-2xl mx-auto bg-white/10 rounded-xl p-6 [&_h3]:text-white [&_p]:text-[#B0C4C3]"
             data-testid="geo-answer"
           >
             <AnswerBlock

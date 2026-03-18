@@ -32,11 +32,11 @@ describe('ItemPricing - Navigation to Contact page', () => {
     title: 'Basic',
     subtitle: 'For small teams',
     description: 'Perfect for getting started',
-    price: '$50',
+    price: '50',
     options: ['Feature 1', 'Feature 2'],
     optionPlus: '',
     chechedAnnualy: false,
-    priceYear: '$42',
+    priceYear: '42',
     activePricingPage: 'business',
     isRescomennded: false,
     textRecomended: {
@@ -53,8 +53,8 @@ describe('ItemPricing - Navigation to Contact page', () => {
       },
     },
     titlePricing: ['Basic', 'Growth', 'Business'],
-    currentPrices: ['$50', '$150', '$250'],
-    currentPricesYear: ['$42', '$128', '$208'],
+    currentPrices: ['50', '150', '250'],
+    currentPricesYear: ['42', '128', '208'],
     refGridCardRef: { current: null },
   };
 

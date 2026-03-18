@@ -140,7 +140,7 @@ describe('Header', () => {
       expect(screen.getByText('Pricing')).toBeInTheDocument();
       // Resources text appears in both the nav link and the mocked dropdown
       expect(screen.getAllByText('Resources').length).toBeGreaterThanOrEqual(1);
-      expect(screen.getByText('About')).toBeInTheDocument();
+      expect(screen.getByText('About Us')).toBeInTheDocument();
       expect(screen.getByText('Contact')).toBeInTheDocument();
     });
 
@@ -148,7 +148,7 @@ describe('Header', () => {
       render(<Header />);
 
       expect(screen.getByTestId('get-app-btn')).toHaveTextContent(
-        'Get the App',
+        'Start Free Trial',
       );
     });
 
@@ -158,7 +158,7 @@ describe('Header', () => {
       const pricingLink = screen.getByText('Pricing').closest('a');
       expect(pricingLink).toHaveAttribute('href', '/en/pricing');
 
-      const aboutLink = screen.getByText('About').closest('a');
+      const aboutLink = screen.getByText('About Us').closest('a');
       expect(aboutLink).toHaveAttribute('href', '/en/about');
 
       const contactLink = screen.getByText('Contact').closest('a');
