@@ -10,7 +10,6 @@ import { LinkedInIcons } from '@/assets/icons/socialLinksIcons/LinkedInIcons';
 import { InstagramIcons } from '@/assets/icons/socialLinksIcons/InstagramIcons';
 import { usePathname } from 'next/navigation';
 import { useEffect, useMemo, useState } from 'react';
-import { useChangeLanguage } from '@/store/language';
 import { footerData } from '@/lib/constants/shared/footerData';
 import { t } from '@/lib/constants/i18n';
 import { getLocaleFromPathname, localePath } from '@/lib/utils/locale';
@@ -26,9 +25,7 @@ export const Footer = () => {
   const fullPath = usePathname();
   const locale = useMemo(() => getLocaleFromPathname(fullPath), [fullPath]);
   const path = fullPath;
-  const { lang } = useChangeLanguage();
-
-  const data = t(footerData, lang);
+  const data = t(footerData, locale);
   const socialLinks = data.socialLinks;
   const columns = data.footerColumns;
 
@@ -91,13 +88,13 @@ export const Footer = () => {
 
   return (
     <footer className="w-full bg-primary px-4 py-16 md:py-14">
-      {shouldLoadChat && <FreshChatLoader lang={lang} />}
+      {shouldLoadChat && <FreshChatLoader lang={locale} />}
       <div className="mx-auto max-w-6xl">
         {/* Logo + Columns */}
         <div className="flex flex-col gap-12 md:flex-row md:justify-between">
           {/* Logo & App Buttons */}
           <div className="flex flex-col items-center md:items-start">
-            <Link href={localePath('/business', locale)} className="mb-6 opacity-60">
+            <Link href={localePath('/', locale)} className="mb-6 opacity-60">
               <LogoIconsS />
             </Link>
             {!isVisibleAppBtn && (

@@ -24,14 +24,14 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
       'Step-by-step guides for salon owners on growing their beauty business.',
     url: `https://www.jointhedaisy.com/${locale}/guides`,
     type: 'website',
-    images: [{ url: 'https://i.imgur.com/MNoL6BE.jpeg', width: 1200, height: 630, alt: 'The Daisy' }],
+    images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Salon Business Guides | How-To Guides for Beauty Businesses | Daisy',
     description:
       'Step-by-step guides for salon owners: reduce no-shows, get more clients, choose the right software.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/guides', locale),
   };

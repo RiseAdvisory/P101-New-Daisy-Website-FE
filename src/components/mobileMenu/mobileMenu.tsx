@@ -14,7 +14,6 @@ import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
 import { usePathname, useRouter } from 'next/navigation';
 import { BreadcrumbMobile } from './breadCrumbMobile';
-import { useChangeLanguage } from '@/store/language';
 import { headerData } from '@/lib/constants/shared/headerData';
 import { t } from '@/lib/constants/i18n';
 import { ChevronLeft } from 'lucide-react';
@@ -34,10 +33,9 @@ export const MobileMenu = () => {
 
   const { toggleOpenMenu } = useOpenMenu();
   const router = useRouter();
-  const { lang } = useChangeLanguage();
   const { page } = useChangePage();
 
-  const hData = t(headerData, lang);
+  const hData = t(headerData, locale);
   const getTheApp = hData.getTheApp;
   const listNav = {
     listNavigation: hData.mobileNavList,
@@ -109,7 +107,7 @@ export const MobileMenu = () => {
                       >
                         {item.title}
                       </Button>
-                      {lang === 'ar' ? <ChevronLeft /> : <ArrowRightIcon />}
+                      {locale === 'ar' ? <ChevronLeft /> : <ArrowRightIcon />}
                     </div>
                     <Separator />
                   </li>
@@ -147,7 +145,7 @@ export const MobileMenu = () => {
                           )}
                         </div>
                         <div>
-                          {lang === 'ar' ? <ChevronLeft /> : <ArrowRightIcon />}
+                          {locale === 'ar' ? <ChevronLeft /> : <ArrowRightIcon />}
                         </div>
                       </div>
                       <Separator className="mt-4" />

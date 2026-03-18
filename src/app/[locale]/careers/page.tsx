@@ -29,7 +29,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     type: 'website',
     images: [
       {
-        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        url: '/images/og/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'Careers at The Daisy',
@@ -41,7 +41,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Careers | The Daisy - Beauty Tech Jobs',
     description:
       'Join The Daisy team. Explore career opportunities in beauty tech.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/careers', locale),
   };

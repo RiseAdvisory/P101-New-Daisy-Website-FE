@@ -1,12 +1,13 @@
 'use client';
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { CarouselCompany } from '../carouselCompany/CarouselCompany';
 import { useLoadingStore } from '@/store/loading';
 import { Skeleton } from '../ui/skeleton';
-import { useChangeLanguage } from '@/store/language';
 import { getData, getRandomElements } from '@/helpers/getPartners';
 import { partnersData } from '@/lib/constants/resources/resourcesData';
 import { t } from '@/lib/constants/i18n';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 export const OurPartnersSection = ({
   stylePartners,
@@ -14,10 +15,11 @@ export const OurPartnersSection = ({
   stylePartners?: string;
 }) => {
   const { array } = useLoadingStore();
-  const { lang } = useChangeLanguage();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const { handleArray, handleLoadingStatus } = useLoadingStore();
 
-  const partners = t(partnersData, lang);
+  const partners = t(partnersData, locale);
 
   useEffect(() => {
     try {

@@ -1,8 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { FeaturesCustomerClient } from '../FeaturesCustomerClient';
 
-jest.mock('@/store/language');
-
 jest.mock('next/image', () => ({
   __esModule: true,
   default: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
@@ -49,9 +47,6 @@ jest.mock('@/components/featuresPage/SignUpBlog', () => ({
 describe('FeaturesCustomerClient', () => {
   beforeEach(() => {
     jest.clearAllMocks();
-    require('@/store/language').useChangeLanguage = jest.fn(() => ({
-      lang: 'en',
-    }));
   });
 
   it('renders hero with title from local data', () => {
@@ -65,20 +60,15 @@ describe('FeaturesCustomerClient', () => {
     render(<FeaturesCustomerClient lang="en" />);
     const list = screen.getByTestId('features-list');
     expect(list).toHaveTextContent('Cashback Magic');
-    expect(list).toHaveTextContent('Manage Your Bookings');
     expect(list).toHaveTextContent('Rate & Earn Points');
   });
 
-  it('renders all 6 features', () => {
+  it('renders all 2 features', () => {
     render(<FeaturesCustomerClient lang="en" />);
     const list = screen.getByTestId('features-list');
-    // All 6 titles should be present
+    // All 2 titles should be present
     expect(list).toHaveTextContent('Cashback Magic');
-    expect(list).toHaveTextContent('Manage Your Bookings');
     expect(list).toHaveTextContent('Rate & Earn Points');
-    expect(list).toHaveTextContent('Discover Top Services');
-    expect(list).toHaveTextContent('Wallet & Rewards');
-    expect(list).toHaveTextContent('Personalized Recommendations');
   });
 
   it('renders Arabic content when language is ar', () => {

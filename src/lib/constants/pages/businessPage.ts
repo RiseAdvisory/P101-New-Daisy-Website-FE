@@ -3,7 +3,47 @@ import { LandingPageContent } from './scrollSections.types';
 
 export const businessPageData: I18nContent<LandingPageContent> = {
   en: {
+    hero: {
+      categoryLabel: 'FOR BUSINESS OWNERS',
+      headline: 'Grow Your Salon with AI-Powered Everything',
+      subHeadline:
+        'Replace 5+ tools with one platform. AI receptionist, customer acquisition, booking, payments, and marketing — all with your brand, your way.',
+      ctaText: 'Start Free Trial',
+      ctaLink: '/get-the-app',
+      answerBlock: {
+        question: 'What is The Daisy for salons?',
+        answer:
+          'The Daisy is an AI-powered beauty business platform that combines booking management, customer acquisition, payments, staff scheduling, and marketing into one system. It replaces 5+ separate tools with a single bilingual (Arabic/English) platform featuring a 24/7 AI receptionist.',
+      },
+    },
+    platformStrengths: {
+      headline: 'One Platform Replaces Your Entire Tool Stack',
+      subHeadline:
+        'Stop paying for 5+ separate tools. Daisy combines everything you need to run and grow your beauty business.',
+      capabilities: [
+        { label: 'AI Receptionist', description: '24/7 automated booking, payments, and customer service' },
+        { label: 'Smart Booking', description: 'Intelligent scheduling that fills your calendar' },
+        { label: 'Customer Acquisition', description: 'Marketplace, cashback, and marketing tools' },
+        { label: 'Payments & Invoicing', description: 'Seamless transactions and financial tracking' },
+        { label: 'Staff Management', description: 'Scheduling, permissions, and performance' },
+        { label: 'Marketing Engine', description: 'Promotions, campaigns, and customer retention' },
+        { label: 'Analytics Dashboard', description: 'Revenue trends, insights, and reporting' },
+        { label: 'Brand Control', description: 'White-label everything with your brand' },
+      ],
+      stats: [
+        { value: '8', context: 'tools in one platform' },
+        { value: '24/7', context: 'AI receptionist' },
+        { value: '2', context: 'languages — Arabic & English' },
+      ],
+    },
     titleFraque: 'Frequently Asked Question',
+    fallbackFaqs: [
+      { question: 'How much does The Daisy cost?', answer: 'The Daisy offers flexible pricing tiers starting with a 14-day free trial. Visit our pricing page for detailed plan comparisons.' },
+      { question: 'Can I migrate from my current booking system?', answer: 'Yes. Our onboarding team helps you migrate your client data, booking history, and preferences from your existing system at no extra cost.' },
+      { question: 'Does The Daisy work in Arabic?', answer: 'Yes. The Daisy is fully bilingual with complete Arabic and English support, including RTL interface, Arabic customer communications, and bilingual AI receptionist.' },
+      { question: 'What is the AI receptionist?', answer: 'The AI receptionist handles customer inquiries, booking requests, and payments 24/7 — even outside business hours. It speaks both Arabic and English and learns your business preferences over time.' },
+      { question: 'Is there a free trial?', answer: 'Yes. Every new business gets a 14-day free trial with full access to all features. No credit card required to start.' },
+    ],
     growth: {
       title: 'Maximize Bookings, Engage New Clients, and Grow Your Business with The Daisy.',
       description:
@@ -250,7 +290,47 @@ export const businessPageData: I18nContent<LandingPageContent> = {
   },
 
   ar: {
+    hero: {
+      categoryLabel: 'لأصحاب الأعمال',
+      headline: 'طوّر صالونك مع الذكاء الاصطناعي',
+      subHeadline:
+        'استبدل أكثر من 5 أدوات بمنصة واحدة. موظف استقبال ذكي، استقطاب العملاء، الحجوزات، المدفوعات، والتسويق — كل ذلك بعلامتك التجارية.',
+      ctaText: 'ابدأ تجربتك المجانية',
+      ctaLink: '/get-the-app',
+      answerBlock: {
+        question: 'ما هو ذا ديزي للصالونات؟',
+        answer:
+          'ذا ديزي هو منصة أعمال تجميل مدعومة بالذكاء الاصطناعي تجمع بين إدارة الحجوزات واستقطاب العملاء والمدفوعات وجدولة الموظفين والتسويق في نظام واحد. يستبدل أكثر من 5 أدوات منفصلة بمنصة ثنائية اللغة (عربي/إنجليزي) مع موظف استقبال ذكي يعمل على مدار الساعة.',
+      },
+    },
+    platformStrengths: {
+      headline: 'منصة واحدة تحل محل جميع أدواتك',
+      subHeadline:
+        'توقف عن الدفع لأكثر من 5 أدوات منفصلة. ديزي تجمع كل ما تحتاجه لإدارة وتنمية أعمالك في مجال التجميل.',
+      capabilities: [
+        { label: 'موظف استقبال ذكي', description: 'حجوزات ومدفوعات وخدمة عملاء آلية على مدار الساعة' },
+        { label: 'حجز ذكي', description: 'جدولة ذكية تملأ تقويمك' },
+        { label: 'استقطاب العملاء', description: 'سوق إلكتروني وكاش باك وأدوات تسويق' },
+        { label: 'المدفوعات والفوترة', description: 'معاملات سلسة وتتبع مالي' },
+        { label: 'إدارة الموظفين', description: 'جدولة وصلاحيات وأداء' },
+        { label: 'محرك التسويق', description: 'عروض وحملات والاحتفاظ بالعملاء' },
+        { label: 'لوحة التحليلات', description: 'اتجاهات الإيرادات والرؤى والتقارير' },
+        { label: 'التحكم بالعلامة التجارية', description: 'كل شيء بعلامتك التجارية الخاصة' },
+      ],
+      stats: [
+        { value: '8', context: 'أدوات في منصة واحدة' },
+        { value: '24/7', context: 'موظف استقبال ذكي' },
+        { value: '2', context: 'لغات — عربي وإنجليزي' },
+      ],
+    },
     titleFraque: 'أسئلة شائعة',
+    fallbackFaqs: [
+      { question: 'كم تكلفة ذا ديزي؟', answer: 'تقدم ذا ديزي باقات أسعار مرنة تبدأ بتجربة مجانية لمدة 14 يومًا. زر صفحة الأسعار لمقارنة الباقات بالتفصيل.' },
+      { question: 'هل يمكنني الانتقال من نظام الحجز الحالي؟', answer: 'نعم. يساعدك فريق الإعداد لدينا في نقل بيانات عملائك وسجل الحجوزات وتفضيلاتك من نظامك الحالي دون أي تكلفة إضافية.' },
+      { question: 'هل يعمل ذا ديزي باللغة العربية؟', answer: 'نعم. ذا ديزي ثنائي اللغة بالكامل مع دعم كامل للعربية والإنجليزية، بما في ذلك واجهة RTL واتصالات العملاء بالعربية وموظف استقبال ذكي ثنائي اللغة.' },
+      { question: 'ما هو موظف الاستقبال الذكي؟', answer: 'يتعامل موظف الاستقبال الذكي مع استفسارات العملاء وطلبات الحجز والمدفوعات على مدار الساعة — حتى خارج ساعات العمل. يتحدث العربية والإنجليزية ويتعلم تفضيلات عملك بمرور الوقت.' },
+      { question: 'هل هناك تجربة مجانية؟', answer: 'نعم. يحصل كل عمل جديد على تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان للبدء.' },
+    ],
     growth: {
       title: 'زِد حجوزاتك، جذب عملاء جدد، ونمِّ عملك مع ذا ديزي.',
       description:

@@ -3,7 +3,47 @@ import { LandingPageContent } from './scrollSections.types';
 
 export const professionalPageData: I18nContent<LandingPageContent> = {
   en: {
+    hero: {
+      categoryLabel: 'FOR BEAUTY PROFESSIONALS',
+      headline: 'Your Career, Your Schedule, Your Clients',
+      subHeadline:
+        'Manage bookings, build your client base, and track your earnings — all from one app. Flexible scheduling with 24/7 AI support.',
+      ctaText: 'Start Free Trial',
+      ctaLink: '/get-the-app',
+      answerBlock: {
+        question: 'What is The Daisy for beauty professionals?',
+        answer:
+          'The Daisy is an all-in-one app for beauty and wellness professionals to manage bookings, build a client base, track earnings, and grow their career. It features flexible scheduling, 24/7 AI-powered booking, and bilingual Arabic/English support.',
+      },
+    },
+    platformStrengths: {
+      headline: 'Everything You Need in One App',
+      subHeadline:
+        'No more juggling between scheduling apps, payment tools, and messaging clients. Daisy brings it all together.',
+      capabilities: [
+        { label: 'Flexible Scheduling', description: 'Set your own hours across multiple locations' },
+        { label: 'Client Management', description: 'Build relationships with detailed client profiles' },
+        { label: 'Earnings Tracker', description: 'Track revenue in real-time with detailed breakdowns' },
+        { label: 'Professional Profile', description: 'Showcase your work and attract new clients' },
+        { label: 'Smart Booking', description: 'AI handles bookings even when you are busy' },
+        { label: 'Notifications', description: 'Stay on top of appointments and messages' },
+        { label: 'Calendar Sync', description: 'Sync with Google Calendar and other tools' },
+        { label: 'Portfolio', description: 'Display your best work to potential clients' },
+      ],
+      stats: [
+        { value: '1', context: 'app for everything' },
+        { value: '24/7', context: 'AI-powered booking' },
+        { value: '2', context: 'languages — Arabic & English' },
+      ],
+    },
     titleFraque: 'Frequently Asked Question',
+    fallbackFaqs: [
+      { question: 'How do I join The Daisy as a professional?', answer: 'Download The Daisy app, create your professional profile, set your services and availability, and start accepting bookings.' },
+      { question: 'Can I set my own schedule?', answer: 'Yes. You have full control over your availability, working hours, break times, and can block time for personal appointments.' },
+      { question: 'How does payment work?', answer: 'Your earnings are tracked in real-time in the app. Payments are processed securely and deposited to your account on a regular schedule.' },
+      { question: 'Do I need to work at a salon to join?', answer: 'No. Freelance professionals, independent stylists, and mobile service providers are all welcome on The Daisy.' },
+      { question: 'Is The Daisy available in Arabic?', answer: 'Yes. The Daisy is fully bilingual with complete Arabic and English support throughout the app.' },
+    ],
     growth: {
       title: 'Expand Your Clientele, Manage Your Schedule, and Build Your Brand with The Daisy.',
       description:
@@ -248,7 +288,47 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
   },
 
   ar: {
+    hero: {
+      categoryLabel: 'لمتخصصي التجميل',
+      headline: 'مسيرتك المهنية، جدولك، عملاؤك',
+      subHeadline:
+        'أدِر حجوزاتك، وابنِ قاعدة عملائك، وتابع أرباحك — كل ذلك من تطبيق واحد. جدولة مرنة مع دعم الذكاء الاصطناعي على مدار الساعة.',
+      ctaText: 'ابدأ تجربتك المجانية',
+      ctaLink: '/get-the-app',
+      answerBlock: {
+        question: 'ما هو ذا ديزي لمتخصصي التجميل؟',
+        answer:
+          'ذا ديزي هو تطبيق شامل لمتخصصي التجميل والعافية لإدارة الحجوزات وبناء قاعدة العملاء وتتبع الأرباح وتطوير مسيرتهم المهنية. يتميز بجدولة مرنة وحجز مدعوم بالذكاء الاصطناعي على مدار الساعة ودعم ثنائي اللغة عربي/إنجليزي.',
+      },
+    },
+    platformStrengths: {
+      headline: 'كل ما تحتاجه في تطبيق واحد',
+      subHeadline:
+        'لا مزيد من التنقل بين تطبيقات الجدولة وأدوات الدفع ومراسلة العملاء. ديزي تجمع كل شيء معًا.',
+      capabilities: [
+        { label: 'جدولة مرنة', description: 'حدد ساعات عملك عبر مواقع متعددة' },
+        { label: 'إدارة العملاء', description: 'ابنِ علاقات مع ملفات عملاء مفصلة' },
+        { label: 'متتبع الأرباح', description: 'تتبع الإيرادات في الوقت الفعلي مع تفاصيل دقيقة' },
+        { label: 'الملف المهني', description: 'اعرض أعمالك واجذب عملاء جدد' },
+        { label: 'حجز ذكي', description: 'الذكاء الاصطناعي يدير الحجوزات حتى وأنت مشغول' },
+        { label: 'الإشعارات', description: 'ابقَ على اطلاع بالمواعيد والرسائل' },
+        { label: 'مزامنة التقويم', description: 'مزامنة مع تقويم جوجل وأدوات أخرى' },
+        { label: 'معرض الأعمال', description: 'اعرض أفضل أعمالك للعملاء المحتملين' },
+      ],
+      stats: [
+        { value: '1', context: 'تطبيق لكل شيء' },
+        { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' },
+        { value: '2', context: 'لغات — عربي وإنجليزي' },
+      ],
+    },
     titleFraque: 'أسئلة شائعة',
+    fallbackFaqs: [
+      { question: 'كيف أنضم إلى ذا ديزي كمتخصص؟', answer: 'قم بتنزيل تطبيق ذا ديزي وأنشئ ملفك المهني وحدد خدماتك وتوافرك وابدأ في قبول الحجوزات.' },
+      { question: 'هل يمكنني تحديد جدولي الخاص؟', answer: 'نعم. لديك سيطرة كاملة على توافرك وساعات عملك وأوقات الراحة ويمكنك حجز وقت للمواعيد الشخصية.' },
+      { question: 'كيف تعمل المدفوعات؟', answer: 'يتم تتبع أرباحك في الوقت الفعلي في التطبيق. تتم معالجة المدفوعات بشكل آمن وإيداعها في حسابك وفق جدول منتظم.' },
+      { question: 'هل أحتاج للعمل في صالون للانضمام؟', answer: 'لا. المتخصصون المستقلون والمصممون المستقلون ومقدمو الخدمات المتنقلون مرحب بهم جميعًا في ذا ديزي.' },
+      { question: 'هل ذا ديزي متاح باللغة العربية؟', answer: 'نعم. ذا ديزي ثنائي اللغة بالكامل مع دعم كامل للعربية والإنجليزية في جميع أنحاء التطبيق.' },
+    ],
     growth: {
       title: 'وسّع قاعدة عملائك، نظم جدولك، وابنِ علامتك التجارية مع ذا ديزي.',
       description:

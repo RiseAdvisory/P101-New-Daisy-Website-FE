@@ -23,13 +23,13 @@ export function generateMetadata({
       description: data.metaDescription,
       url: `https://www.jointhedaisy.com/${params.locale}/${SLUG}`,
       type: 'article',
-      images: [{ url: 'https://i.imgur.com/MNoL6BE.jpeg', width: 1200, height: 630, alt: data.title }],
+      images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: data.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: data.metaTitle,
       description: data.metaDescription,
-      images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+      images: ['/images/og/og-default.jpg'],
     },
     alternates: localeAlternates(`/${SLUG}`, params.locale),
   };

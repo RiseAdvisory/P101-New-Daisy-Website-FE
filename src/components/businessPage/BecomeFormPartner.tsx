@@ -1,9 +1,11 @@
 'use client';
+import { useMemo } from 'react';
 import dynamic from 'next/dynamic';
-import { useChangeLanguage } from '@/store/language';
 import { Skeleton } from '@/components/ui/skeleton';
 import { t } from '@/lib/constants/i18n';
 import { becomePartnerData } from '@/lib/constants/shared/becomePartnerData';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 // Lazy load the form component to reduce initial bundle size
 const ProfileForm = dynamic(
@@ -21,9 +23,14 @@ const ProfileForm = dynamic(
   },
 );
 
-export const BecomeFormPartner = () => {
-  const { lang } = useChangeLanguage();
-  const data = t(becomePartnerData, lang);
+interface BecomeFormPartnerProps {
+  defaultType?: 'business' | 'freelance';
+}
+
+export const BecomeFormPartner = ({ defaultType }: BecomeFormPartnerProps) => {
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const data = t(becomePartnerData, locale);
 
   return (
     <div
@@ -31,14 +38,14 @@ export const BecomeFormPartner = () => {
       className="bg-primary px-4 border-b border-primaryBtn pb-14"
     >
       <div className="flex flex-col mx-auto text-center pt-20 px-3">
-        <h1 className="text-center text-white text-[32px] leading-10">
+        <h2 className="text-center text-white text-[32px] leading-10">
           {data.title}
-        </h1>
+        </h2>
         <p className="text-center text-[#D5D9D9]  mt-3 ltr:font-montserrat">
           {data.subtitle}
         </p>
       </div>
-      <ProfileForm />
+      <ProfileForm defaultType={defaultType} />
     </div>
   );
 };

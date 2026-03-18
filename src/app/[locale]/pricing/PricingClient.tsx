@@ -6,18 +6,20 @@ import Separator from '@/components/separator/Separator';
 import { Switch } from '@/components/ui/switch';
 import { cn } from '@/lib/utils';
 import { useChangePage } from '@/store/currentPage';
-import { useChangeLanguage } from '@/store/language';
 import { pricingPageData } from '@/lib/constants/pricing/pricingPageData';
 import { t } from '@/lib/constants/i18n';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 export const PricingClient = () => {
   const [activePricingPage, setActivePricingPage] = useState('');
   const [checkedMonth, setCheckedMonth] = useState(true);
   const [isRecommended, setIsRecommended] = useState(false);
-  const { lang } = useChangeLanguage();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const { page } = useChangePage();
-  const dataPricing = t(pricingPageData, lang);
+  const dataPricing = t(pricingPageData, locale);
 
   useEffect(() => {
     if (page.includes('business')) {

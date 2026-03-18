@@ -1,20 +1,22 @@
 'use client';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { MailIcons } from '@/assets/icons/mailIcons/mailicons';
-import { useChangeLanguage } from '@/store/language';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { t } from '@/lib/constants/i18n';
 import { signUpBlockData } from '@/lib/constants/shared/signUpBlockData';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 export const SignUpBlog = ({ style }: { style?: string }) => {
   const [email, setEmail] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
 
-  const { lang } = useChangeLanguage();
-  const textSignUp = t(signUpBlockData, lang);
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const textSignUp = t(signUpBlockData, locale);
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);

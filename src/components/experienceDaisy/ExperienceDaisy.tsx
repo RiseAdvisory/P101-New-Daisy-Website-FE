@@ -1,5 +1,6 @@
 'use client';
 
+import { useMemo } from 'react';
 import Image from 'next/image';
 import { LazyMotionDiv } from '../performance/LazyMotion';
 import Separator from '../separator/Separator';
@@ -7,8 +8,9 @@ import { PlayMarketButton } from '../buttonApp/PlayMarketButton';
 import { AppStoreButton } from '../buttonApp/AppStoreButton';
 import leaf from '../../assets/images/LeafBg.png';
 import stars from '../../assets/images/starsBg.png';
-import { useChangeLanguage } from '@/store/language';
 import { t } from '@/lib/constants/i18n';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 import {
   experienceDaisyData,
   ExperienceDaisyPageType,
@@ -19,8 +21,9 @@ interface ExperienceDaisyProps {
 }
 
 export const ExperienceDaisy = ({ pageType = 'customer' }: ExperienceDaisyProps) => {
-  const { lang } = useChangeLanguage();
-  const data = t(experienceDaisyData[pageType], lang);
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const data = t(experienceDaisyData[pageType], locale);
 
   return (
     <div className="md:bg-custom-gradient md:pt-[150px]">

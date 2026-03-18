@@ -4,10 +4,11 @@ import { FaqSchema } from '@/components/seo/FaqSchema';
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import { Constants } from '@/helpers/oldApi';
 import { useChangePage } from '@/store/currentPage';
-import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { t } from '@/lib/constants/i18n';
 import { faqPageData } from '@/lib/constants/pages/faqPageData';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 interface FaqItem {
   question: string;
@@ -18,9 +19,10 @@ export const FaqClient = () => {
   const [faqItems, setFaqItems] = useState<FaqItem[]>([]);
 
   const { page } = useChangePage();
-  const { lang } = useChangeLanguage();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
 
-  const data = t(faqPageData, lang);
+  const data = t(faqPageData, locale);
 
   // Fetch FAQ items from Laravel backend API
   useEffect(() => {
@@ -36,7 +38,7 @@ export const FaqClient = () => {
 
         const res = await fetch(endpoint, {
           cache: 'no-store',
-          headers: { 'Content-Language': lang },
+          headers: { 'Content-Language': locale },
         });
 
         if (res.ok) {
@@ -54,7 +56,7 @@ export const FaqClient = () => {
         console.error('Error fetching FAQ items for schema:', error);
       }
     })();
-  }, [page, lang]);
+  }, [page, locale]);
 
   const currentPage = page.replace('/', '');
   const capitalizeFirstLetter = (string: string) => {

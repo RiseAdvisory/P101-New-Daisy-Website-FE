@@ -22,6 +22,7 @@ jest.mock('next/navigation', () => ({
   useRouter: jest.fn(() => ({
     push: jest.fn(),
   })),
+  usePathname: jest.fn(() => '/en/business'),
 }));
 
 // Mock Zustand stores

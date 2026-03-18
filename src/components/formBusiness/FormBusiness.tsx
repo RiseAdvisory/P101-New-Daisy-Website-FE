@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useEffect, useState, useMemo } from 'react';
+import { Constants } from '@/helpers/oldApi';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -28,17 +29,22 @@ import { getData } from '@/helpers/getCountryCodes';
 import { useLoadingStore } from '@/store/loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useChangeLanguage } from '@/store/language';
 import { t } from '@/lib/constants/i18n';
 import { formBusinessData } from '@/lib/constants/shared/formBusinessData';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
-export const ProfileForm = () => {
+interface ProfileFormProps {
+  defaultType?: 'business' | 'freelance';
+}
+
+export const ProfileForm = ({ defaultType }: ProfileFormProps) => {
   const [activeField, setActiveField] = useState<string | null>(null);
   const [country_code, setCountryCode] = useState('+1');
   const { handlecountryCodesArray, handleLoadingStatus } = useLoadingStore();
   const { countryCodesArray } = useLoadingStore();
   const [mobile, setPhoneNumber] = useState('');
-  const [business_type, setBusinessType] = useState(false);
+  const [business_type, setBusinessType] = useState(defaultType === 'business');
   const [homeService, setHomeService] = useState(false);
   const [isSubmit, setIsSubmit] = useState(false);
   const [contentChange, setContentChange] = useState({
@@ -46,8 +52,9 @@ export const ProfileForm = () => {
     homeVisits: 'No',
   });
 
-  const { lang } = useChangeLanguage();
-  const formContent = t(formBusinessData, lang);
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const formContent = t(formBusinessData, locale);
   const textForm = formContent.formDescription;
   const descriptionForm = formContent.formPlaceholder;
 
@@ -116,7 +123,7 @@ export const ProfileForm = () => {
     try {
       setIsSubmit(true);
       const response = await fetch(
-        `https://devapp.trythedaisy.com/api/v1/vendor/demo/enquiry`,
+        `${Constants.BASE_URL}vendor/demo/enquiry`,
         {
           method: 'POST',
           headers: {
@@ -148,6 +155,8 @@ export const ProfileForm = () => {
   const handleBlur = () => {
     setActiveField(null);
   };
+  const showToggle = !defaultType;
+
   useEffect(() => {
     try {
       (async () => {
@@ -219,19 +228,21 @@ export const ProfileForm = () => {
             )}
           />
         </div>
-        <div className="w-full mt-6">
-          <p className="text-[#172524] ltr:font-montserrat font-semibold mb-2">
-            {textForm?.serviceProvidor}
-          </p>
-          <ToggleButtonForm
-            firstValue={textForm?.serviceProvidorValue[0]}
-            secondValue={textForm?.serviceProvidorValue[1]}
-            homeService={business_type}
-            setHomeService={setBusinessType}
-            setContent={setContentChange}
-            name="serviceProvidorType"
-          />
-        </div>
+        {showToggle && (
+          <div className="w-full mt-6">
+            <p className="text-[#172524] ltr:font-montserrat font-semibold mb-2">
+              {textForm?.serviceProvidor}
+            </p>
+            <ToggleButtonForm
+              firstValue={textForm?.serviceProvidorValue[0]}
+              secondValue={textForm?.serviceProvidorValue[1]}
+              homeService={business_type}
+              setHomeService={setBusinessType}
+              setContent={setContentChange}
+              name="serviceProvidorType"
+            />
+          </div>
+        )}
         {business_type && (
           <div className="md:flex md:justify-between">
             <FormField

@@ -140,7 +140,7 @@ describe('Header', () => {
       expect(screen.getByText('Pricing')).toBeInTheDocument();
       // Resources text appears in both the nav link and the mocked dropdown
       expect(screen.getAllByText('Resources').length).toBeGreaterThanOrEqual(1);
-      expect(screen.getByText('About')).toBeInTheDocument();
+      expect(screen.getByText('About Us')).toBeInTheDocument();
       expect(screen.getByText('Contact')).toBeInTheDocument();
     });
 
@@ -148,7 +148,7 @@ describe('Header', () => {
       render(<Header />);
 
       expect(screen.getByTestId('get-app-btn')).toHaveTextContent(
-        'Get the App',
+        'Start Free Trial',
       );
     });
 
@@ -158,7 +158,7 @@ describe('Header', () => {
       const pricingLink = screen.getByText('Pricing').closest('a');
       expect(pricingLink).toHaveAttribute('href', '/en/pricing');
 
-      const aboutLink = screen.getByText('About').closest('a');
+      const aboutLink = screen.getByText('About Us').closest('a');
       expect(aboutLink).toHaveAttribute('href', '/en/about');
 
       const contactLink = screen.getByText('Contact').closest('a');
@@ -177,7 +177,7 @@ describe('Header', () => {
 
   describe('language change behavior', () => {
     it('switches to Arabic header data when language changes', async () => {
-      const { useChangeLanguage } = require('@/store/language');
+      const { usePathname } = require('next/navigation');
 
       // First render with English
       const { rerender } = render(<Header />);
@@ -186,11 +186,8 @@ describe('Header', () => {
         await new Promise((resolve) => setTimeout(resolve, 0));
       });
 
-      // Change language to Arabic
-      useChangeLanguage.mockReturnValue({
-        lang: 'ar',
-        changeLanguages: jest.fn(),
-      });
+      // Change pathname to Arabic locale
+      usePathname.mockReturnValue('/ar/business');
 
       rerender(<Header />);
 

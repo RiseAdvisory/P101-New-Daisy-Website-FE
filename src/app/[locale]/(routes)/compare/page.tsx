@@ -28,14 +28,14 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
       'Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis, pricing breakdowns, and honest verdicts.',
     url: `https://www.jointhedaisy.com/${locale}/compare`,
     type: 'website',
-    images: [{ url: 'https://i.imgur.com/MNoL6BE.jpeg', width: 1200, height: 630, alt: 'The Daisy' }],
+    images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Daisy Comparisons — See How We Stack Up | Daisy',
     description:
       'Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis and pricing breakdowns.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/compare', locale),
   };

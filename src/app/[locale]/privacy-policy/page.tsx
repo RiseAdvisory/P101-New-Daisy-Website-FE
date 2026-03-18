@@ -28,7 +28,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     type: 'website',
     images: [
       {
-        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        url: '/images/og/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'The Daisy Privacy Policy',
@@ -39,7 +39,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     card: 'summary_large_image',
     title: 'Privacy Policy | The Daisy - Beauty Booking Platform',
     description: 'Read The Daisy privacy policy and data protection practices.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/privacy-policy', locale),
   };

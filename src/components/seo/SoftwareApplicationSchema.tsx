@@ -135,7 +135,7 @@ export function SoftwareApplicationSchema() {
       'Mobile app for iOS and Android',
       'Real-time availability calendar',
     ],
-    screenshot: 'https://i.imgur.com/MNoL6BE.jpeg',
+    screenshot: '/images/og/og-default.jpg',
     softwareHelp: {
       '@type': 'WebPage',
       url: 'https://www.jointhedaisy.com/faq',

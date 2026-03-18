@@ -28,7 +28,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     type: 'website',
     images: [
       {
-        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        url: '/images/og/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'The Daisy Pricing Plans',
@@ -40,7 +40,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Pricing Plans for Salons & Spas | The Daisy',
     description:
       'Flexible pricing plans for salons, spas, and beauty professionals.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/pricing', locale),
   };

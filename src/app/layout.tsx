@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     siteName: 'The Daisy',
     images: [
       {
-        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        url: '/images/og/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'The Daisy - Beauty & Wellness Booking App',
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     title: 'The Daisy - Beauty & Wellness Booking App',
     description:
       'Book beauty, wellness & salon services with cashback rewards. Find salons near you.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
 };
 

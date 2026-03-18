@@ -24,14 +24,14 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
       'Understand key beauty industry and salon software terms. Expert definitions and comparisons.',
     url: `https://www.jointhedaisy.com/${locale}/glossary`,
     type: 'website',
-    images: [{ url: 'https://i.imgur.com/MNoL6BE.jpeg', width: 1200, height: 630, alt: 'The Daisy' }],
+    images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Beauty & Salon Software Glossary | Key Terms Explained | Daisy',
     description:
       'Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/glossary', locale),
   };

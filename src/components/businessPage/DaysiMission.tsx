@@ -1,21 +1,24 @@
 'use client';
+import { useMemo } from 'react';
 import { MissionIcon } from '@/assets/icons/missioIcon/MissionIcon';
 import { StarsIcons } from '../../assets/icons/starsIcon/StarIcons';
 import { StrategyIcons } from '../../assets/icons/strategyIcon/StrategyIcon';
-import { useChangeLanguage } from '@/store/language';
 import { t } from '@/lib/constants/i18n';
 import { daisyMissionData } from '@/lib/constants/shared/daisyMissionData';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 export const DaysiMission = () => {
-  const { lang } = useChangeLanguage();
-  const data = t(daisyMissionData, lang);
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const data = t(daisyMissionData, locale);
 
   return (
     <div className="bg-[#F8F5F3] pt-[80px] pb-[112px] md:px-[64px]">
       <div className="flex flex-col mx-auto text-center pt-20 px-3">
-        <h1 className="text-center mx-[20px] md:mx-0  text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
+        <h2 className="text-center mx-[20px] md:mx-0  text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
           {data.title}
-        </h1>
+        </h2>
         <p className="text-center text-[#455150] mt-3 ltr:font-montserrat md:text-base md:font-normal">
           {data.subtitle}
         </p>

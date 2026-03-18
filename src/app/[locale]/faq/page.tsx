@@ -28,7 +28,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     type: 'website',
     images: [
       {
-        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        url: '/images/og/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'The Daisy FAQ',
@@ -40,7 +40,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'FAQ - Beauty Booking Questions | The Daisy',
     description:
       'Find answers to common questions about The Daisy beauty platform.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/faq', locale),
   };

@@ -1,10 +1,10 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { DropdownResources } from '../DropDownResources';
-import * as languageStore from '@/store/language';
+import { usePathname } from 'next/navigation';
 
 // Mock next/navigation
 jest.mock('next/navigation', () => ({
-  usePathname: jest.fn(() => '/business'),
+  usePathname: jest.fn(() => '/en/business'),
 }));
 
 // Mock next/link
@@ -37,10 +37,7 @@ jest.mock('next/image', () => ({
   },
 }));
 
-// Mock Zustand language store
-jest.mock('@/store/language', () => ({
-  useChangeLanguage: jest.fn(),
-}));
+// usePathname mock is already set above
 
 // Mock Zustand current page store
 jest.mock('@/store/currentPage', () => ({
@@ -76,10 +73,7 @@ describe('DropdownResources', () => {
 
   describe('LTR Mode (English)', () => {
     beforeEach(() => {
-      (languageStore.useChangeLanguage as jest.Mock).mockReturnValue({
-        lang: 'en',
-        changeLanguages: jest.fn(),
-      });
+      (usePathname as jest.Mock).mockReturnValue('/en/business');
     });
 
     it('should render dropdown when openBlog is true', () => {
@@ -91,7 +85,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.getByText('Resources for Businesses')).toBeInTheDocument();
+      expect(screen.getByText('BUSINESS')).toBeInTheDocument();
     });
 
     it('should not render dropdown when openBlog is false', () => {
@@ -103,7 +97,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.queryByText('Resources for Businesses')).not.toBeInTheDocument();
+      expect(screen.queryByText('BUSINESS')).not.toBeInTheDocument();
     });
 
     it('should display all menu items with correct text alignment', () => {
@@ -115,13 +109,13 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.getByText('Blog Posts')).toBeInTheDocument();
+      expect(screen.getByText('Blog posts')).toBeInTheDocument();
       expect(screen.getByText('Tutorials & Guides')).toBeInTheDocument();
-      expect(screen.getByText('Customer Testimonials')).toBeInTheDocument();
+      expect(screen.getByText('Customer testimonials')).toBeInTheDocument();
       expect(screen.getByText('Updates')).toBeInTheDocument();
 
       // Check for left padding in LTR mode
-      const linkElement = screen.getByText('Blog Posts').closest('a');
+      const linkElement = screen.getByText('Blog posts').closest('a');
       expect(linkElement).toHaveClass('ltr:pl-4');
     });
 
@@ -164,7 +158,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      fireEvent.click(screen.getByText('Blog Posts'));
+      fireEvent.click(screen.getByText('Blog posts'));
 
       expect(mockSetOpenBlog).toHaveBeenCalledWith(false);
     });
@@ -188,10 +182,7 @@ describe('DropdownResources', () => {
 
   describe('RTL Mode (Arabic)', () => {
     beforeEach(() => {
-      (languageStore.useChangeLanguage as jest.Mock).mockReturnValue({
-        lang: 'ar',
-        changeLanguages: jest.fn(),
-      });
+      (usePathname as jest.Mock).mockReturnValue('/ar/business');
       localStorageMock.setItem('lang', 'ar');
       document.documentElement.setAttribute('dir', 'rtl');
     });
@@ -205,7 +196,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.getByText('موارد للأعمال')).toBeInTheDocument();
+      expect(screen.getByText('شركة')).toBeInTheDocument();
     });
 
     it('should display all menu items in Arabic with correct text alignment', () => {
@@ -217,13 +208,13 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.getByText('المقالات')).toBeInTheDocument();
-      expect(screen.getByText('الدروس والأدلة')).toBeInTheDocument();
+      expect(screen.getByText('مقالات المدونة')).toBeInTheDocument();
+      expect(screen.getByText('الدروس التعليمية والأدلة')).toBeInTheDocument();
       expect(screen.getByText('آراء العملاء')).toBeInTheDocument();
       expect(screen.getByText('التحديثات')).toBeInTheDocument();
 
       // Check for right padding in RTL mode
-      const linkElement = screen.getByText('المقالات').closest('a');
+      const linkElement = screen.getByText('مقالات المدونة').closest('a');
       expect(linkElement).toHaveClass('rtl:pr-4');
     });
 
@@ -236,7 +227,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      const heading = screen.getByText('موارد للأعمال');
+      const heading = screen.getByText('شركة');
       expect(heading).toHaveClass('rtl:text-right');
     });
 
@@ -249,10 +240,9 @@ describe('DropdownResources', () => {
         />
       );
 
-      const flexContainer = container.querySelector('.flex.rtl\\:flex-row-reverse');
+      const flexContainer = container.querySelector('.flex.ltr\\:flex-row');
+      // In RTL (lang=ar), component renders contentElement first, then imageElement
       const firstChild = flexContainer?.firstChild as HTMLElement;
-
-      // In RTL, content (flex-1) should be first child
       expect(firstChild).toHaveClass('flex-1');
     });
 
@@ -272,10 +262,7 @@ describe('DropdownResources', () => {
 
   describe('Hover Behavior', () => {
     beforeEach(() => {
-      (languageStore.useChangeLanguage as jest.Mock).mockReturnValue({
-        lang: 'en',
-        changeLanguages: jest.fn(),
-      });
+      (usePathname as jest.Mock).mockReturnValue('/en/business');
     });
 
     it('should have hover styles on menu items', () => {
@@ -287,7 +274,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      const listItem = screen.getByText('Blog Posts').closest('li');
+      const listItem = screen.getByText('Blog posts').closest('li');
       expect(listItem).toHaveClass('hover:bg-[#E8E9E9]');
       expect(listItem).toHaveClass('hover:outline-gray-300');
       expect(listItem).toHaveClass('hover:outline');
@@ -296,10 +283,7 @@ describe('DropdownResources', () => {
 
   describe('Page Type Selection', () => {
     it('should show customer resources when activePage is /customer', () => {
-      (languageStore.useChangeLanguage as jest.Mock).mockReturnValue({
-        lang: 'en',
-        changeLanguages: jest.fn(),
-      });
+      (usePathname as jest.Mock).mockReturnValue('/en/customer');
       localStorageMock.setItem('activePage', '/customer');
 
       render(
@@ -310,14 +294,11 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.getByText('Resources for Customers')).toBeInTheDocument();
+      expect(screen.getByText('CUSTOMER')).toBeInTheDocument();
     });
 
     it('should show professional resources when activePage is /professional', () => {
-      (languageStore.useChangeLanguage as jest.Mock).mockReturnValue({
-        lang: 'en',
-        changeLanguages: jest.fn(),
-      });
+      (usePathname as jest.Mock).mockReturnValue('/en/professional');
       localStorageMock.setItem('activePage', '/professional');
 
       render(
@@ -328,7 +309,7 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.getByText('Resources for Professionals')).toBeInTheDocument();
+      expect(screen.getByText('PROFESSIONAL')).toBeInTheDocument();
     });
   });
 });

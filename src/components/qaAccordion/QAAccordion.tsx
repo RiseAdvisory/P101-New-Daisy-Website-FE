@@ -47,7 +47,11 @@ export const QAAccordion = ({
           <div
             className={cn('', { 'text-primaryBtn': sectionFQ })}
             dangerouslySetInnerHTML={{
-              __html: item?.answer ? DOMPurify.sanitize(item.answer) : '',
+              __html: item?.answer
+                ? typeof window !== 'undefined'
+                  ? DOMPurify.sanitize(item.answer)
+                  : item.answer
+                : '',
             }}
           />
         </AccordionContent>

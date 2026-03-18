@@ -3,11 +3,12 @@ import { TestimonialsCustomerList } from '@/components/blogPage/testimonialsPage
 import { HeroPage } from '@/components/heroSection/HeroSection';
 import { OurPartnersSection } from '@/components/ourPartnters/OurPartnersSection';
 import Separator from '@/components/separator/Separator';
-import { useChangeLanguage } from '@/store/language';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useMyContext } from '@/app/MyContext';
 import { testimonialsHeroData } from '@/lib/constants/resources/resourcesData';
 import { t } from '@/lib/constants/i18n';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 export const TestimonialsClient = () => {
   const [dataTestimonials, setDataTestimonials] = useState<{
@@ -18,7 +19,8 @@ export const TestimonialsClient = () => {
     secondDescription?: string;
     textMoreList?: string;
   } | null>(null);
-  const { lang } = useChangeLanguage();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const { userChange: currentPage } = useMyContext();
 
   useEffect(() => {
@@ -29,9 +31,9 @@ export const TestimonialsClient = () => {
 
     const heroData = testimonialsHeroData[type];
     if (heroData) {
-      setDataTestimonials(t(heroData, lang));
+      setDataTestimonials(t(heroData, locale));
     }
-  }, [lang, currentPage]);
+  }, [locale, currentPage]);
 
   return (
     <>

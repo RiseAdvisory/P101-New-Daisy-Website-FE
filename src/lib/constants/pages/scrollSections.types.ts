@@ -1,3 +1,8 @@
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface LocalScrollSection {
   sortId: number;
   mainImage: string;
@@ -27,10 +32,39 @@ export interface GrowthData {
   imageUrl: string;
 }
 
+export interface HeroData {
+  categoryLabel: string;
+  headline: string;
+  subHeadline: string;
+  ctaText: string;
+  ctaLink: string;
+  answerBlock?: {
+    question: string;
+    answer: string;
+  };
+}
+
+export interface PlatformStrengthsData {
+  headline: string;
+  subHeadline: string;
+  capabilities: Array<{
+    label: string;
+    description: string;
+  }>;
+  stats: Array<{
+    value: string;
+    context: string;
+    source?: string;
+  }>;
+}
+
 export interface LandingPageContent {
+  hero?: HeroData;
+  platformStrengths?: PlatformStrengthsData;
   titleFraque: string;
   growth: GrowthData;
   scrollSections: LocalScrollSection[];
+  fallbackFaqs?: FaqItem[];
 }
 
 /**

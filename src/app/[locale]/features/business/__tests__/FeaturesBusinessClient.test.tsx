@@ -1,8 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { FeaturesBusinessClient } from '../FeaturesBusinessClient';
 
-jest.mock('@/store/language');
-
 jest.mock('next/image', () => ({
   __esModule: true,
   default: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
@@ -87,27 +85,24 @@ jest.mock('@/components/featuresPage/SignUpBlog', () => ({
 describe('FeaturesBusinessClient', () => {
   beforeEach(() => {
     jest.clearAllMocks();
-    require('@/store/language').useChangeLanguage = jest.fn(() => ({
-      lang: 'en',
-    }));
   });
 
   it('renders hero with title from local data', () => {
-    render(<FeaturesBusinessClient />);
+    render(<FeaturesBusinessClient lang="en" />);
     expect(screen.getByTestId('hero-page')).toHaveTextContent(
       'Everything Your Business Needs to Grow',
     );
   });
 
   it('renders navigation with 8 business options', () => {
-    render(<FeaturesBusinessClient />);
+    render(<FeaturesBusinessClient lang="en" />);
     expect(screen.getByTestId('section-business')).toHaveTextContent(
       '8 options',
     );
   });
 
   it('renders all 8 category sections', () => {
-    render(<FeaturesBusinessClient />);
+    render(<FeaturesBusinessClient lang="en" />);
     const desktopView = screen.getByTestId('desktop-view');
     expect(desktopView).toHaveTextContent('ai');
     expect(desktopView).toHaveTextContent('booking');
@@ -120,7 +115,7 @@ describe('FeaturesBusinessClient', () => {
   });
 
   it('renders AI category items', () => {
-    render(<FeaturesBusinessClient />);
+    render(<FeaturesBusinessClient lang="en" />);
     expect(screen.getByTestId('category-ai')).toHaveTextContent(
       'AI Receptionist',
     );
@@ -130,38 +125,38 @@ describe('FeaturesBusinessClient', () => {
   });
 
   it('renders marketing category items', () => {
-    render(<FeaturesBusinessClient />);
-    expect(screen.getByTestId('category-marketing')).toHaveTextContent(
-      'Marketplace Listing',
-    );
+    render(<FeaturesBusinessClient lang="en" />);
     expect(screen.getByTestId('category-marketing')).toHaveTextContent(
       'Cashback Campaigns',
+    );
+    expect(screen.getByTestId('category-marketing')).toHaveTextContent(
+      'Referral Program',
+    );
+    expect(screen.getByTestId('category-marketing')).toHaveTextContent(
+      'Social Media Tools',
     );
   });
 
   it('renders Arabic content when language is ar', () => {
-    require('@/store/language').useChangeLanguage = jest.fn(() => ({
-      lang: 'ar',
-    }));
-    render(<FeaturesBusinessClient />);
+    render(<FeaturesBusinessClient lang="ar" />);
     expect(screen.getByTestId('hero-page')).toHaveTextContent(
       'كل ما يحتاجه عملك للنمو',
     );
   });
 
   it('renders desktop and mobile views', () => {
-    render(<FeaturesBusinessClient />);
+    render(<FeaturesBusinessClient lang="en" />);
     expect(screen.getByTestId('desktop-view')).toBeInTheDocument();
     expect(screen.getByTestId('mobile-view')).toBeInTheDocument();
   });
 
   it('renders signup blog section', () => {
-    render(<FeaturesBusinessClient />);
+    render(<FeaturesBusinessClient lang="en" />);
     expect(screen.getByTestId('signup-blog')).toBeInTheDocument();
   });
 
   it('no longer shows skeleton (data is synchronous)', () => {
-    render(<FeaturesBusinessClient />);
+    render(<FeaturesBusinessClient lang="en" />);
     expect(screen.queryByTestId('skeleton')).not.toBeInTheDocument();
   });
 });

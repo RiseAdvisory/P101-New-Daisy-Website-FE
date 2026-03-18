@@ -26,7 +26,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     type: 'website',
     images: [
       {
-        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        url: '/images/og/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'The Daisy Testimonials',
@@ -38,7 +38,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Salon & Spa Success Stories | The Daisy Testimonials',
     description:
       'Read success stories from salons and beauty professionals on The Daisy.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/resources/testimonials', locale),
   };

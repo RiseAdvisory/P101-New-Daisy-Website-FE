@@ -4,7 +4,6 @@ import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import clsx from 'clsx';
 import { Button } from '../ui/button';
-import { useChangeLanguage } from '@/store/language';
 import { headerData } from '@/lib/constants/shared/headerData';
 import { t } from '@/lib/constants/i18n';
 import { useChangePage } from '@/store/currentPage';
@@ -17,10 +16,9 @@ const ToggleButton = ({ className }: { className?: string }) => {
   const pathname = useMemo(() => stripLocaleFromPathname(fullPathname), [fullPathname]);
   const router = useRouter();
   const [active, setActive] = useState('');
-  const { lang } = useChangeLanguage();
   const { userChange, setUserChange } = useMyContext();
 
-  const data = t(headerData, lang);
+  const data = t(headerData, locale);
   // Filter out customer option
   const dataList = data.optionsToogle.filter(
     (option) => !option.path.includes('customer'),

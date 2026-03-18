@@ -18,10 +18,8 @@ jest.mock('@/store/currentPath', () => ({
   }),
 }));
 
-jest.mock('@/store/language', () => ({
-  useChangeLanguage: () => ({
-    lang: 'en',
-  }),
+jest.mock('next/navigation', () => ({
+  usePathname: jest.fn(() => '/en/resources/blog'),
 }));
 
 // Mock components

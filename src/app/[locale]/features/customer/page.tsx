@@ -3,7 +3,6 @@ import { localeAlternates } from '@/lib/utils/metadata';
 import { FeaturesCustomerClient } from './FeaturesCustomerClient';
 import { FeaturesBreadcrumbSchema } from '@/components/seo/FeaturesBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
-import { getLocale } from '@/lib/locale';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
@@ -31,7 +30,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     type: 'website',
     images: [
       {
-        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        url: '/images/og/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'The Daisy Customer Features',
@@ -43,15 +42,13 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     title: 'Customer Features - Salon Booking & Cashback | The Daisy',
     description:
       'Find salons near you, earn cashback rewards, and manage beauty appointments.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/features/customer', locale),
   };
 }
 
-export default function FeaturesCustomerPage() {
-  const locale = getLocale();
-
+export default function FeaturesCustomerPage({ params }: { params: { locale: string } }) {
   return (
     <>
       <FeaturesBreadcrumbSchema pageName="Customer" pageSlug="customer" />
@@ -60,7 +57,7 @@ export default function FeaturesCustomerPage() {
         description="Explore The Daisy customer features: find salons near you, book beauty services, earn cashback rewards, manage appointments."
         url="https://www.jointhedaisy.com/features/customer"
       />
-      <FeaturesCustomerClient lang={locale} />
+      <FeaturesCustomerClient lang={params.locale} />
     </>
   );
 }

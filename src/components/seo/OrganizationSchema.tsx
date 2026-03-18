@@ -26,14 +26,6 @@ export function OrganizationSchema() {
       contactType: 'customer service',
       url: 'https://www.jointhedaisy.com/contact',
     },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: 'https://www.jointhedaisy.com/search?q={search_term_string}',
-      },
-      'query-input': 'required name=search_term_string',
-    },
   };
 
   return (

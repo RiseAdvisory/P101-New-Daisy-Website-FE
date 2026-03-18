@@ -1,8 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { FeaturesProfessionalClient } from '../FeaturesProfessionalClient';
 
-jest.mock('@/store/language');
-
 jest.mock('next/image', () => ({
   __esModule: true,
   default: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
@@ -49,41 +47,38 @@ jest.mock('@/components/featuresPage/SignUpBlog', () => ({
 describe('FeaturesProfessionalClient', () => {
   beforeEach(() => {
     jest.clearAllMocks();
-    require('@/store/language').useChangeLanguage = jest.fn(() => ({
-      lang: 'en',
-    }));
   });
 
   it('renders hero with title from local data', () => {
     render(<FeaturesProfessionalClient lang="en" />);
     expect(screen.getByTestId('hero-page')).toHaveTextContent(
-      'Tools Built for Beauty Professionals',
+      'Easy, Flexible and Powerful, You will love it!',
     );
   });
 
   it('renders feature list from local data', () => {
     render(<FeaturesProfessionalClient lang="en" />);
     const list = screen.getByTestId('features-list');
-    expect(list).toHaveTextContent('Smart Calendar Management');
-    expect(list).toHaveTextContent('Client Profiles & History');
-    expect(list).toHaveTextContent('Earnings Dashboard');
+    expect(list).toHaveTextContent('AI Receptionist');
+    expect(list).toHaveTextContent('AI Appointment Booking');
+    expect(list).toHaveTextContent('Multilingual Support');
   });
 
-  it('renders all 6 features', () => {
+  it('renders features from flat list', () => {
     render(<FeaturesProfessionalClient lang="en" />);
     const list = screen.getByTestId('features-list');
-    expect(list).toHaveTextContent('Smart Calendar Management');
-    expect(list).toHaveTextContent('Client Profiles & History');
-    expect(list).toHaveTextContent('Earnings Dashboard');
-    expect(list).toHaveTextContent('Service Menu Builder');
-    expect(list).toHaveTextContent('Flexible Scheduling');
-    expect(list).toHaveTextContent('Instant Notifications');
+    expect(list).toHaveTextContent('AI Receptionist');
+    expect(list).toHaveTextContent('Smart Calendar');
+    expect(list).toHaveTextContent('Online Payments');
+    expect(list).toHaveTextContent('Earnings Reports');
+    expect(list).toHaveTextContent('Schedule Control');
+    expect(list).toHaveTextContent('Marketplace Visibility');
   });
 
   it('renders Arabic content when language is ar', () => {
     render(<FeaturesProfessionalClient lang="ar" />);
     expect(screen.getByTestId('hero-page')).toHaveTextContent(
-      'أدوات مصممة لمحترفي الجمال',
+      'سهلة ومرنة وقوية، سيحبها عملاؤك!',
     );
   });
 

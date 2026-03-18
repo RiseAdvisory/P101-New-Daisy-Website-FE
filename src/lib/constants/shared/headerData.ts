@@ -24,7 +24,7 @@ export interface HeaderData {
 
 export const headerData: I18nContent<HeaderData> = {
   en: {
-    getTheApp: 'Get The App',
+    getTheApp: 'Start Free Trial',
     headerNavList: [
       { title: 'Home', nav: '/' },
       { title: 'Features', nav: '/features' },
@@ -85,7 +85,7 @@ export const headerData: I18nContent<HeaderData> = {
   },
 
   ar: {
-    getTheApp: 'حمل التطبيق',
+    getTheApp: 'ابدأ تجربتك المجانية',
     headerNavList: [
       { title: 'الرئيسية', nav: '/' },
       { title: 'المميزات', nav: '/features' },

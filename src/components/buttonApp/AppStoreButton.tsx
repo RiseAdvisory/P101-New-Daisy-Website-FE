@@ -1,10 +1,11 @@
 'use client';
+import { useMemo } from 'react';
 import { Button } from '../ui/button';
 import { AppStoreIcons } from '@/assets/icons/appMarket/AppStoreIcons';
-import { useChangeLanguage } from '@/store/language';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { buttonAppData } from '@/lib/constants/shared/buttonAppData';
 import { t } from '@/lib/constants/i18n';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 export const AppStoreButton = ({
   className,
@@ -16,8 +17,9 @@ export const AppStoreButton = ({
   fillHover?: string;
 }) => {
   const router = useRouter();
-  const { lang } = useChangeLanguage();
-  const dataButton = t(buttonAppData, lang).appStore;
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const dataButton = t(buttonAppData, locale).appStore;
 
   return (
     <>

@@ -1,4 +1,5 @@
 'use client';
+import { useMemo } from 'react';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -7,8 +8,9 @@ import {
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 import { ArrowRightIcon } from '@/assets/icons/arrowRightIcon/ArrowRightIcon';
-import { useChangeLanguage } from '@/store/language';
 import { ChevronLeft } from 'lucide-react';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 export const BreadcrumbWithCustomSeparator = ({
   bredCrumbTitle = 'Legal',
@@ -19,7 +21,8 @@ export const BreadcrumbWithCustomSeparator = ({
   bredCrumbDesription?: string;
   bredCrumbHref?: string;
 }) => {
-  const { lang } = useChangeLanguage();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   return (
     <Breadcrumb>
       <BreadcrumbList>
@@ -32,7 +35,7 @@ export const BreadcrumbWithCustomSeparator = ({
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator>
-          {lang === 'ar' ? (
+          {locale === 'ar' ? (
             <ChevronLeft className="text-[#C5C8C8]" />
           ) : (
             <ArrowRightIcon stroke="#C5C8C8" />

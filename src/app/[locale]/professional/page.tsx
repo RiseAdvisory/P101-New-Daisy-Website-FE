@@ -3,14 +3,15 @@ import { localeAlternates } from '@/lib/utils/metadata';
 import { ProfessionalClient } from './ProfessionalClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
-import { getLocale } from '@/lib/locale';
-
+import { LandingHero } from '@/components/shared/LandingHero';
+import { t } from '@/lib/constants/i18n';
+import { professionalPageData } from '@/lib/constants/pages/professionalPage';
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'For Beauty Professionals | The Daisy',
+  title: 'Beauty Professional App — Manage Bookings & Grow Clients | The Daisy',
   description:
-    'Join The Daisy as a beauty professional. Manage your appointments, build your client base, track earnings, and grow your career in the beauty and wellness industry.',
+    'Join The Daisy as a beauty professional. Manage bookings, track earnings, build your client base, and grow your career with flexible scheduling and 24/7 AI support.',
   keywords: [
     'beauty professional platform',
     'hairstylist booking app',
@@ -24,14 +25,14 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'wellness professional',
   ],
   openGraph: {
-    title: 'For Beauty Professionals | The Daisy',
+    title: 'Beauty Professional App — Manage Bookings & Grow Clients | The Daisy',
     description:
-      'Join The Daisy as a beauty professional. Manage appointments, build your client base, and grow your career.',
+      'Join The Daisy as a beauty professional. Manage bookings, track earnings, build your client base, and grow your career with flexible scheduling and 24/7 AI support.',
     url: `https://www.jointhedaisy.com/${locale}/professional`,
     type: 'website',
     images: [
       {
-        url: 'https://i.imgur.com/MNoL6BE.jpeg',
+        url: '/images/og/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'The Daisy - For Beauty Professionals',
@@ -40,17 +41,17 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'For Beauty Professionals | The Daisy',
+    title: 'Beauty Professional App — Manage Bookings & Grow Clients | The Daisy',
     description:
-      'Join The Daisy as a beauty professional. Grow your career in beauty and wellness.',
-    images: ['https://i.imgur.com/MNoL6BE.jpeg'],
+      'Join The Daisy as a beauty professional. Manage bookings, track earnings, build your client base, and grow your career with flexible scheduling and 24/7 AI support.',
+    images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/professional', locale),
   };
 }
 
-export default function ProfessionalPage() {
-  const locale = getLocale();
+export default function ProfessionalPage({ params }: { params: { locale: string } }) {
+  const pageData = t(professionalPageData, params.locale);
 
   return (
     <>
@@ -62,7 +63,17 @@ export default function ProfessionalPage() {
       <PageBreadcrumbSchema
         items={[{ name: 'For Professionals', url: 'https://www.jointhedaisy.com/professional' }]}
       />
-      <ProfessionalClient lang={locale} />
+      {pageData.hero && (
+        <LandingHero
+          categoryLabel={pageData.hero.categoryLabel}
+          headline={pageData.hero.headline}
+          subHeadline={pageData.hero.subHeadline}
+          ctaText={pageData.hero.ctaText}
+          ctaLink={pageData.hero.ctaLink}
+          answerBlock={pageData.hero.answerBlock}
+        />
+      )}
+      <ProfessionalClient lang={params.locale} />
     </>
   );
 }
