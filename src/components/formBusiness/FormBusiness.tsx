@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useEffect, useState, useMemo } from 'react';
+import { Constants } from '@/helpers/oldApi';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -116,7 +117,7 @@ export const ProfileForm = () => {
     try {
       setIsSubmit(true);
       const response = await fetch(
-        `https://devapp.trythedaisy.com/api/v1/vendor/demo/enquiry`,
+        `${Constants.BASE_URL}vendor/demo/enquiry`,
         {
           method: 'POST',
           headers: {
