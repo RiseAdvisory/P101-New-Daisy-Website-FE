@@ -48,7 +48,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function FeaturesProfessionalPage() {
+export default function FeaturesProfessionalPage({ params }: { params: { locale: string } }) {
   return (
     <>
       <FeaturesBreadcrumbSchema pageName="Professional" pageSlug="professional" />
@@ -57,7 +57,7 @@ export default function FeaturesProfessionalPage() {
         description="Features for beauty professionals: appointment scheduling, client management, earnings tracking, and tools to grow your career."
         url="https://www.jointhedaisy.com/features/professional"
       />
-      <FeaturesProfessionalClient />
+      <FeaturesProfessionalClient lang={params.locale} />
       <FeatureDeepDiveLinks userType="professional" />
     </>
   );
