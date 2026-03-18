@@ -46,7 +46,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function PricingPage() {
+export default function PricingPage({ params }: { params: { locale: string } }) {
   return (
     <>
       <WebPageSchema
