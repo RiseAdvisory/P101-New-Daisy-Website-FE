@@ -826,6 +826,163 @@ const mobileBookingArticle: LocalBlogPost = {
 };
 
 // ---------------------------------------------------------------------------
+// Article 6: Recurring Appointment Scheduling for Salons
+// Type: Guide | User: Business | Category: Booking Management
+// Parent pillar: /beauty-booking-system
+// ---------------------------------------------------------------------------
+const recurringAppointmentArticle: LocalBlogPost = {
+  id: 158,
+  attributes: {
+    title: 'Recurring Appointment Scheduling for Salons',
+    slug: 'recurring-appointment-scheduling-salon',
+    description:
+      'How to set up and manage recurring appointment scheduling for your salon. Learn how standing bookings increase retention, stabilise revenue, and reduce the administrative burden of rebooking loyal clients.',
+    aboutPosts: `
+<h2>Recurring Appointments Turn Occasional Clients Into Predictable Revenue</h2>
+<p>Recurring appointment scheduling lets your clients book a standing appointment &mdash; the same service, same stylist, same day and time &mdash; on an automatic cycle. Instead of rebooking after every visit, the next appointment is already on the calendar. For salons, this transforms unpredictable bookings into reliable, foreseeable revenue. For clients, it eliminates the friction of remembering to rebook and the risk of losing their preferred slot.</p>
+<p>If your <a href="/en/beauty-booking-system">beauty booking system</a> supports recurring scheduling, you are sitting on one of the most powerful retention tools available. If it does not, you are losing clients to competitors who make rebooking effortless.</p>
+
+<h2>Why Recurring Scheduling Matters for Salons</h2>
+<p>The beauty industry runs on repeat visits. Hair colour needs refreshing every 4-6 weeks. Regular trims happen every 6-8 weeks. Facial treatments, nail maintenance, and brow shaping all follow predictable cycles. Yet most salons treat every booking as a one-time event, relying on clients to remember, call, and hope their preferred slot is available.</p>
+<p>Recurring scheduling solves this by locking in the pattern. The benefits are substantial:</p>
+<ul>
+<li><strong>Higher client retention:</strong> Clients with recurring appointments are 60-70% more likely to remain active after 12 months compared to clients who rebook manually each time. The appointment is already there &mdash; inertia works in your favour.</li>
+<li><strong>Predictable revenue:</strong> When you know that 40% of next month's slots are already booked by recurring clients, you can forecast revenue with confidence, make staffing decisions based on data, and plan marketing to fill the remaining capacity.</li>
+<li><strong>Reduced no-shows:</strong> Recurring clients have a significantly lower no-show rate because the appointment is part of their routine, not something they scheduled impulsively.</li>
+<li><strong>Less administrative work:</strong> Every recurring appointment that auto-schedules is a rebooking conversation your front desk does not have to initiate. Multiply that by dozens of recurring clients and the time savings are substantial.</li>
+<li><strong>Protected prime slots:</strong> Your best clients lock in the most desirable time slots. This rewards loyalty and ensures your peak hours are filled with committed, high-value appointments.</li>
+</ul>
+
+<h2>How to Set Up Recurring Appointments</h2>
+
+<h3>Step 1: Identify Ideal Services for Recurring Scheduling</h3>
+<p>Not every service is suited for recurring booking. Focus on services with a natural repeat cycle:</p>
+<ul>
+<li><strong>Hair colour and highlights:</strong> 4-6 week cycle</li>
+<li><strong>Haircuts and trims:</strong> 4-8 week cycle</li>
+<li><strong>Nail maintenance (manicure and pedicure):</strong> 2-4 week cycle</li>
+<li><strong>Brow shaping and threading:</strong> 2-4 week cycle</li>
+<li><strong>Facial treatments:</strong> 4-6 week cycle</li>
+<li><strong>Beard trims and men's grooming:</strong> 2-4 week cycle</li>
+<li><strong>Eyelash extensions (refills):</strong> 2-3 week cycle</li>
+</ul>
+<p>Services that are booked sporadically &mdash; like one-time bridal styling or special-occasion makeup &mdash; are not candidates for recurring scheduling.</p>
+
+<h3>Step 2: Configure Recurring Options in Your Booking System</h3>
+<p>Your <a href="/en/features/business/booking-management">booking management platform</a> should support these recurring settings:</p>
+<ul>
+<li><strong>Frequency options:</strong> Every 2 weeks, 3 weeks, 4 weeks, 6 weeks, 8 weeks, or custom intervals.</li>
+<li><strong>Same staff assignment:</strong> Lock the recurring appointment to the client's preferred stylist. If that stylist is unavailable on a specific date, the system should notify you rather than silently reassigning.</li>
+<li><strong>Same time slot:</strong> Reserve the same day and time each cycle. "Every other Tuesday at 10am" should be as simple to set up as a single appointment.</li>
+<li><strong>End date or ongoing:</strong> Let clients choose to recur for a set number of appointments (e.g., 6 visits) or indefinitely until they cancel.</li>
+<li><strong>Automatic reminders:</strong> Each recurring instance should trigger the same confirmation and reminder sequence as a one-time booking.</li>
+</ul>
+
+<h3>Step 3: Offer Recurring Booking at the Right Moment</h3>
+<p>The best time to suggest a recurring appointment is at checkout, when the client is satisfied with their service and already thinking about maintaining their look. Train your team to make the offer naturally:</p>
+<ul>
+<li><em>"Your colour looks amazing. Would you like me to book you in for the same time in 5 weeks so you never have to think about scheduling?"</em></li>
+<li><em>"I have your usual slot open in 4 weeks. Want me to set it up as a standing appointment so it is always reserved for you?"</em></li>
+</ul>
+<p>Frame recurring booking as a convenience for the client &mdash; not a sales tactic for the salon. The client benefits from guaranteed availability with their preferred stylist at their preferred time.</p>
+
+<h3>Step 4: Manage Cancellations and Changes Gracefully</h3>
+<p>Recurring appointments need flexibility to work long-term:</p>
+<ul>
+<li><strong>Single-instance changes:</strong> Clients should be able to skip or reschedule one occurrence without affecting the rest of the series. "I cannot make the 15th, but keep the 12th of next month" should be easy.</li>
+<li><strong>Series modifications:</strong> Allow changes to the frequency, time, or service for all future occurrences. Client schedules change; your software should accommodate this without requiring a new series.</li>
+<li><strong>Cancellation policies:</strong> Apply your standard cancellation policy to each recurring instance. If a recurring client cancels within your cancellation window, the same deposit or fee policy applies.</li>
+<li><strong>Automatic gap filling:</strong> When a recurring client skips or cancels one occurrence, that slot should immediately become available for other clients &mdash; ideally with waitlist notification if anyone is waiting for that time.</li>
+</ul>
+
+<h2>Recurring Scheduling Best Practices</h2>
+
+<h3>Set Expectations Clearly</h3>
+<p>When clients opt into recurring appointments, explain:</p>
+<ul>
+<li>How far in advance each instance will appear on their calendar</li>
+<li>How to skip, reschedule, or cancel a single occurrence</li>
+<li>How to stop the recurring series entirely</li>
+<li>Whether deposits or prepayment apply to each occurrence</li>
+</ul>
+<p>Clear expectations prevent misunderstandings and cancellation frustration.</p>
+
+<h3>Send Confirmation for Each Occurrence</h3>
+<p>Do not assume clients remember every recurring appointment. Send a confirmation 7 days before and a reminder 24 hours before each occurrence, just as you would for any standard booking. This keeps the appointment visible and reduces no-shows.</p>
+
+<h3>Protect Against Over-Booking</h3>
+<p>Recurring appointments lock up calendar slots weeks or months in advance. Monitor your booking capacity to ensure recurring commitments do not prevent you from accepting new clients. A healthy balance is 30-50% of slots filled by recurring clients, leaving the rest available for new and ad-hoc bookings.</p>
+
+<h3>Review Recurring Patterns Quarterly</h3>
+<p>Every quarter, review your recurring appointments to identify:</p>
+<ul>
+<li>Clients who have not attended their last 2+ recurring appointments (they may have disengaged but not cancelled the series)</li>
+<li>Staff members with too many recurring commitments (limiting their availability for new clients)</li>
+<li>Time slots that are fully booked with recurring clients (consider whether to open additional availability or adjust pricing for prime slots)</li>
+</ul>
+
+<h2>The Revenue Impact of Recurring Scheduling</h2>
+<p>Salons that implement recurring scheduling typically see these results within 6 months:</p>
+<ul>
+<li><strong>15-25% increase in client retention rate</strong> because the friction of rebooking is eliminated</li>
+<li><strong>More predictable monthly revenue</strong> with 30-50% of capacity pre-booked by recurring clients</li>
+<li><strong>10-15% reduction in no-show rates</strong> among recurring clients compared to ad-hoc bookers</li>
+<li><strong>Reduced front desk workload</strong> from fewer rebooking calls and messages</li>
+<li><strong>Higher average lifetime value per client</strong> because retained clients spend more over time</li>
+</ul>
+<p>Explore <a href="/en/pricing">The Daisy's pricing plans</a> for a platform with built-in recurring scheduling, automated reminders, and intelligent calendar management.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>What if a client's preferred stylist leaves the salon?</h3>
+<p>When a stylist departs, review all their recurring appointments immediately. Contact each recurring client personally to offer reassignment to another team member at the same day and time. Clients appreciate proactive communication. Most will accept a new stylist if approached personally rather than through an automated message. If the client prefers to pause, cancel the series gracefully and note them for follow-up.</p>
+
+<h3>Should I offer a discount for recurring appointments?</h3>
+<p>You can, but it is not necessary. The primary value of recurring scheduling for clients is convenience and guaranteed availability, not price savings. If you do offer a recurring discount, keep it small (5-10%) and frame it as a loyalty benefit. Larger discounts can devalue your services and attract price-sensitive clients who may not be your most profitable segment.</p>
+
+<h3>How far in advance should recurring appointments appear on the calendar?</h3>
+<p>Generate recurring instances 8-12 weeks in advance. This gives clients enough visibility to plan around their appointments while keeping your calendar manageable. Generating too far in advance (6+ months) can clutter your calendar and make capacity planning difficult.</p>
+
+<h3>Can recurring appointments work with deposit requirements?</h3>
+<p>Yes. Configure your system to collect or charge a deposit for each recurring instance according to your standard policy. Some salons waive deposits for established recurring clients with a strong attendance history as a loyalty gesture, while maintaining deposits for newer clients. Your booking platform should support deposit rules flexible enough to handle both scenarios.</p>
+
+<h3>What percentage of my bookings should be recurring?</h3>
+<p>Aim for 30-50% of total bookings from recurring clients. Below 30%, you are not leveraging the retention benefits of recurring scheduling. Above 50%, you risk limiting availability for new clients and reducing your salon's capacity to grow. The ideal balance ensures predictable revenue while maintaining enough open slots for client acquisition.</p>
+`,
+    metaTitle: 'Recurring Appointment Scheduling for Salons | Daisy',
+    metaDescription:
+      'Set up recurring appointment scheduling for your salon. Boost retention, stabilise revenue, and reduce rebooking admin with standing appointments.',
+    createdAt: '2026-03-18T12:00:00.000Z',
+    updatedAt: '2026-03-18T12:00:00.000Z',
+    publishedAt: '2026-03-18T12:00:00.000Z',
+    locale: 'en',
+    sortId: 64,
+    tags: { digital: 'Booking', wellness: 'Scheduling' },
+    user: defaultAuthor,
+    iconOwner: defaultIconOwner,
+    category: { data: { id: 6, attributes: { name: 'Booking Management' } } },
+    picture: {
+      data: {
+        attributes: {
+          url: '/images/blog/recurring-appointment-scheduling.webp',
+          alternativeText: 'Recurring appointment scheduling for salons',
+        },
+      },
+    },
+    image: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/recurring-appointment-scheduling.webp',
+            formats: { large: { url: '/images/blog/recurring-appointment-scheduling.webp' } },
+          },
+        },
+      ],
+    },
+  },
+};
+
+// ---------------------------------------------------------------------------
 // Exports
 // ---------------------------------------------------------------------------
 
@@ -836,4 +993,5 @@ export const bookingManagementBusinessArticles: LocalBlogPost[] = [
   waitlistManagementArticle,
   groupBookingArticle,
   mobileBookingArticle,
+  recurringAppointmentArticle,
 ];

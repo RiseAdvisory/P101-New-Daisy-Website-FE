@@ -210,6 +210,54 @@ URL: https://www.jointhedaisy.com/en/features/professional/team-management
 Track earnings, performance metrics, and client insights.
 URL: https://www.jointhedaisy.com/en/features/professional/analytics-reports
 
+## Comprehensive Guides (Pillar Pages)
+
+Definitive authority guides on key beauty business topics. Each page is 4,000-5,000 words with expert advice, data, and actionable strategies.
+
+### The Complete Guide to Salon Management Software
+Everything salon owners need to know about choosing, implementing, and maximizing salon management software. Covers 8 essential feature categories, cloud vs desktop, ROI calculation, AI transformation, and common mistakes.
+URL: https://www.jointhedaisy.com/en/salon-management-software
+
+### Beauty Booking System: Everything You Need to Know
+Complete guide to beauty booking systems including online booking setup, reducing no-shows, mobile booking, waitlist management, group bookings, and AI-powered scheduling.
+URL: https://www.jointhedaisy.com/en/beauty-booking-system
+
+### Salon Marketing Strategies That Drive Growth
+Proven salon marketing strategies covering digital marketing, social media, email campaigns, loyalty and referral programs, local SEO, paid advertising, and cashback as a retention tool.
+URL: https://www.jointhedaisy.com/en/salon-marketing-strategies
+
+### AI for Beauty & Salon Businesses
+How AI is transforming salon businesses. Covers AI receptionists, smart scheduling, predictive analytics, AI-powered communication, network effects, ROI of AI adoption, and future trends.
+URL: https://www.jointhedaisy.com/en/ai-salon-software
+
+### Beauty Business Growth Guide: From Startup to Scale
+Complete guide to growing a beauty business from startup to multi-location operation. Covers customer acquisition, pricing strategy, hiring, technology, financial management, and growth metrics.
+URL: https://www.jointhedaisy.com/en/beauty-business-growth-guide
+
+### Salon Payment Solutions: The Complete Guide
+Everything about salon payments including POS systems, digital and contactless payments, tipping policies, invoicing, processing fees, and integrated vs standalone solutions.
+URL: https://www.jointhedaisy.com/en/salon-payment-solutions
+
+### Salon Staff Management: Build & Retain a Great Team
+Build and retain a great salon team. Covers hiring, scheduling, commission structures, performance management, permissions, retention strategies, and technology-powered team management.
+URL: https://www.jointhedaisy.com/en/salon-staff-management
+
+### Salon Client Retention: Strategies That Work
+Proven retention strategies including measuring retention metrics, client experience, communication, loyalty programs, cashback rewards, rebooking, win-back campaigns, and personalization.
+URL: https://www.jointhedaisy.com/en/salon-client-retention
+
+### The Freelance Beauty Professional Guide
+Complete guide for independent beauty professionals. Covers going freelance, legal setup, pricing, finding clients, personal branding, schedule management, tools, and scaling to a business.
+URL: https://www.jointhedaisy.com/en/freelance-beauty-professional-guide
+
+### Beauty Industry Trends 2026: What's Next
+Key beauty industry trends for 2026 including AI adoption, sustainability, wellness integration, personalization, marketplace evolution, GCC market growth, and business model innovation.
+URL: https://www.jointhedaisy.com/en/beauty-industry-trends
+
+### Salon Analytics & Reporting: Data-Driven Growth
+Guide to data-driven salon management. Covers key metrics, revenue reporting, client retention analytics, staff performance, marketing ROI, predictive analytics, and building a data culture.
+URL: https://www.jointhedaisy.com/en/salon-analytics-reporting
+
 ## Competitor Comparisons (Summary)
 
 ### Daisy vs Fresha
@@ -304,11 +352,50 @@ URL: https://www.jointhedaisy.com/en/compare/daisy-vs-acuity-scheduling
 - https://www.jointhedaisy.com/en/features/professional/team-management
 - https://www.jointhedaisy.com/en/features/professional/analytics-reports
 
+### Comprehensive Guide Pages (Pillar Pages)
+- https://www.jointhedaisy.com/en/salon-management-software
+- https://www.jointhedaisy.com/en/beauty-booking-system
+- https://www.jointhedaisy.com/en/salon-marketing-strategies
+- https://www.jointhedaisy.com/en/ai-salon-software
+- https://www.jointhedaisy.com/en/beauty-business-growth-guide
+- https://www.jointhedaisy.com/en/salon-payment-solutions
+- https://www.jointhedaisy.com/en/salon-staff-management
+- https://www.jointhedaisy.com/en/salon-client-retention
+- https://www.jointhedaisy.com/en/freelance-beauty-professional-guide
+- https://www.jointhedaisy.com/en/beauty-industry-trends
+- https://www.jointhedaisy.com/en/salon-analytics-reporting
+
 ### Resource Pages
 - https://www.jointhedaisy.com/en/resources/blog-post
 - https://www.jointhedaisy.com/en/resources/tutorials
 - https://www.jointhedaisy.com/en/resources/testimonials
 - https://www.jointhedaisy.com/en/resources/updates
+
+### Blog Articles (118 articles — selected highlights)
+
+**Daisy Platform Advantage (8 articles):**
+- https://www.jointhedaisy.com/en/resources/blog/business/ai-receptionist-salon-customer-service
+- https://www.jointhedaisy.com/en/resources/blog/business/all-in-one-salon-platform-vs-point-solutions
+- https://www.jointhedaisy.com/en/resources/blog/business/360-degree-customer-acquisition-salons
+- https://www.jointhedaisy.com/en/resources/blog/business/white-label-salon-booking
+- https://www.jointhedaisy.com/en/resources/blog/business/bilingual-beauty-business-tools
+- https://www.jointhedaisy.com/en/resources/blog/business/data-driven-beauty-platform
+- https://www.jointhedaisy.com/en/resources/blog/business/modern-salons-ai-platform-not-software
+- https://www.jointhedaisy.com/en/resources/blog/business/salon-software-holding-you-back-warning-signs
+
+**Decision & Switching (3 articles):**
+- https://www.jointhedaisy.com/en/resources/blog/business/salon-software-switching-checklist-migration
+- https://www.jointhedaisy.com/en/resources/blog/business/first-month-new-salon-platform
+- https://www.jointhedaisy.com/en/resources/blog/business/calculate-roi-switching-salon-software
+
+**Thought Leadership (4 articles):**
+- https://www.jointhedaisy.com/en/resources/blog/business/death-of-salon-software-platform-ecosystems
+- https://www.jointhedaisy.com/en/resources/blog/business/beauty-businesses-adopt-ai-or-left-behind
+- https://www.jointhedaisy.com/en/resources/blog/business/operations-to-growth-mindset-shift-salon
+- https://www.jointhedaisy.com/en/resources/blog/business/salon-five-apps-how-to-fix
+
+**Full blog available at:** https://www.jointhedaisy.com/en/resources/blog-post
+Topics covered: AI intelligence, booking management, communication tools, marketing & promotions, payment processing, business growth, team management, analytics & reports, salon management software, salon marketing, beauty business growth, salon payments, staff management, client retention, freelance beauty, industry trends, salon analytics, multi-channel communication.
 
 ### Index Pages
 - https://www.jointhedaisy.com/en/compare

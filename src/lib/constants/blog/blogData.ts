@@ -28,6 +28,37 @@ import {
   analyticsReportsBusinessArticles,
   analyticsReportsProfessionalArticles,
 } from './articles/analytics-reports';
+import { daisyAdvantageBusinessArticles } from './articles/daisy-advantage';
+import { bottomOfFunnelBusinessArticles } from './articles/bottom-of-funnel';
+import { thoughtLeadershipBusinessArticles } from './articles/thought-leadership';
+import { salonManagementBusinessArticles } from './articles/salon-management';
+import {
+  salonMarketingBusinessArticles,
+  salonMarketingProfessionalArticles,
+} from './articles/salon-marketing';
+import {
+  beautyBusinessGrowthBusinessArticles,
+  beautyBusinessGrowthProfessionalArticles,
+} from './articles/beauty-business-growth';
+import {
+  salonPaymentsBusinessArticles,
+  salonPaymentsProfessionalArticles,
+} from './articles/salon-payments';
+import {
+  staffManagementBusinessArticles,
+  staffManagementProfessionalArticles,
+} from './articles/staff-management';
+import {
+  clientRetentionBusinessArticles,
+  clientRetentionProfessionalArticles,
+} from './articles/client-retention';
+import { freelanceBeautyProfessionalArticles } from './articles/freelance-beauty';
+import {
+  industryTrendsBusinessArticles,
+  industryTrendsProfessionalArticles,
+} from './articles/industry-trends';
+import { salonAnalyticsBusinessArticles } from './articles/salon-analytics';
+import { multiChannelBusinessArticles } from './articles/multi-channel';
 
 /**
  * Blog post data structure matching the Strapi response shape
@@ -135,6 +166,18 @@ export const businessBlogPosts: LocalBlogPost[] = [
   ...businessGrowthBusinessArticles,
   ...teamManagementBusinessArticles,
   ...analyticsReportsBusinessArticles,
+  ...daisyAdvantageBusinessArticles,
+  ...bottomOfFunnelBusinessArticles,
+  ...thoughtLeadershipBusinessArticles,
+  ...salonManagementBusinessArticles,
+  ...salonMarketingBusinessArticles,
+  ...beautyBusinessGrowthBusinessArticles,
+  ...salonPaymentsBusinessArticles,
+  ...staffManagementBusinessArticles,
+  ...clientRetentionBusinessArticles,
+  ...industryTrendsBusinessArticles,
+  ...salonAnalyticsBusinessArticles,
+  ...multiChannelBusinessArticles,
 ];
 
 /**
@@ -148,6 +191,13 @@ export const professionalBlogPosts: LocalBlogPost[] = [
   ...businessGrowthProfessionalArticles,
   ...teamManagementProfessionalArticles,
   ...analyticsReportsProfessionalArticles,
+  ...salonMarketingProfessionalArticles,
+  ...beautyBusinessGrowthProfessionalArticles,
+  ...salonPaymentsProfessionalArticles,
+  ...staffManagementProfessionalArticles,
+  ...clientRetentionProfessionalArticles,
+  ...freelanceBeautyProfessionalArticles,
+  ...industryTrendsProfessionalArticles,
 ];
 
 /**

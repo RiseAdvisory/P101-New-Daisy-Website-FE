@@ -5,6 +5,7 @@ import { getAllSolutionSlugs } from '@/lib/constants/solutions';
 import { getAllGlossarySlugs } from '@/lib/constants/glossary/glossaryData';
 import { getAllGuideSlugs } from '@/lib/constants/guides/guideData';
 import { getAllFeatureDeepDiveSlugs } from '@/lib/constants/features/featureDeepDive';
+import { getAllPillarSlugs } from '@/lib/constants/pillars';
 
 const BASE_URL = 'https://www.jointhedaisy.com';
 const LOCALES = ['en', 'ar'];
@@ -125,6 +126,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     localizedEntries(`/features/professional/${slug}`, { lastModified: SEO_CONTENT_DATE, changeFrequency: 'monthly', priority: 0.8 })
   );
 
+  // Pillar pages — top-level authority pages (highest SEO priority after homepage)
+  const pillarPages = getAllPillarSlugs().flatMap((slug) =>
+    localizedEntries(`/${slug}`, {
+      lastModified: SEO_CONTENT_DATE,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    })
+  );
+
   return [
     ...mainPages,
     ...featurePages,
@@ -141,5 +151,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...guidePages,
     ...featureDeepDiveBusinessPages,
     ...featureDeepDiveProfessionalPages,
+    ...pillarPages,
   ];
 }
