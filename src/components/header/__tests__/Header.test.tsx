@@ -177,7 +177,7 @@ describe('Header', () => {
 
   describe('language change behavior', () => {
     it('switches to Arabic header data when language changes', async () => {
-      const { useChangeLanguage } = require('@/store/language');
+      const { usePathname } = require('next/navigation');
 
       // First render with English
       const { rerender } = render(<Header />);
@@ -186,11 +186,8 @@ describe('Header', () => {
         await new Promise((resolve) => setTimeout(resolve, 0));
       });
 
-      // Change language to Arabic
-      useChangeLanguage.mockReturnValue({
-        lang: 'ar',
-        changeLanguages: jest.fn(),
-      });
+      // Change pathname to Arabic locale
+      usePathname.mockReturnValue('/ar/business');
 
       rerender(<Header />);
 

@@ -34,10 +34,10 @@ export const Header = () => {
   const [currentActivePage, setCurrentActivePage] = useState<string | null>(
     null,
   );
-  const { lang, changeLanguages } = useChangeLanguage();
+  const { changeLanguages } = useChangeLanguage();
   const { isOpenMenu } = useOpenMenu();
 
-  const data = t(headerData, lang);
+  const data = t(headerData, locale);
   const listHeader = data.headerNavList;
   const optionsToogle = data.optionsToogle;
   const optionsToogleFeature = data.optionsTooglseFeatures;
@@ -45,14 +45,14 @@ export const Header = () => {
   const listLanguage = data.listLanguage;
 
   useEffect(() => {
-    if (lang === 'ar') {
+    if (locale === 'ar') {
       setChangeLang('ع');
       setChangePage('شركة');
     } else {
       setChangeLang('En');
       setChangePage('Business');
     }
-  }, [lang]);
+  }, [locale]);
 
   useEffect(() => {
     if (path.includes('resources')) return setActive('/resources');
@@ -87,7 +87,7 @@ export const Header = () => {
       if (currentPath) setActivePages(currentPath);
       setCurrentActivePage(currentPath);
     }
-  }, [lang]);
+  }, [locale]);
   const { page } = useChangePage();
 
   return (
