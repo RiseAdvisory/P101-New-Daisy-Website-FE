@@ -9,9 +9,9 @@ import { professionalPageData } from '@/lib/constants/pages/professionalPage';
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'For Beauty Professionals | The Daisy',
+  title: 'Beauty Professional App — Manage Bookings & Grow Clients | The Daisy',
   description:
-    'Join The Daisy as a beauty professional. Manage your appointments, build your client base, track earnings, and grow your career in the beauty and wellness industry.',
+    'Join The Daisy as a beauty professional. Manage bookings, track earnings, build your client base, and grow your career with flexible scheduling and 24/7 AI support.',
   keywords: [
     'beauty professional platform',
     'hairstylist booking app',
@@ -25,9 +25,9 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'wellness professional',
   ],
   openGraph: {
-    title: 'For Beauty Professionals | The Daisy',
+    title: 'Beauty Professional App — Manage Bookings & Grow Clients | The Daisy',
     description:
-      'Join The Daisy as a beauty professional. Manage appointments, build your client base, and grow your career.',
+      'Join The Daisy as a beauty professional. Manage bookings, track earnings, build your client base, and grow your career with flexible scheduling and 24/7 AI support.',
     url: `https://www.jointhedaisy.com/${locale}/professional`,
     type: 'website',
     images: [
@@ -41,9 +41,9 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'For Beauty Professionals | The Daisy',
+    title: 'Beauty Professional App — Manage Bookings & Grow Clients | The Daisy',
     description:
-      'Join The Daisy as a beauty professional. Grow your career in beauty and wellness.',
+      'Join The Daisy as a beauty professional. Manage bookings, track earnings, build your client base, and grow your career with flexible scheduling and 24/7 AI support.',
     images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/professional', locale),

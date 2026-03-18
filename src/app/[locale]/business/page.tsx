@@ -10,9 +10,9 @@ import { businessPageData } from '@/lib/constants/pages/businessPage';
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'Salon & Spa Business Solutions | The Daisy',
+  title: 'AI-Powered Salon & Spa Management Platform | The Daisy',
   description:
-    'Grow your salon or spa business with The Daisy. Manage bookings, staff scheduling, promotions, and payments. Reach new customers through our beauty marketplace.',
+    'Grow your salon or spa with The Daisy. AI receptionist, smart booking, customer acquisition, payments, and marketing — all in one platform. Start your 14-day free trial.',
   keywords: [
     'salon management software',
     'spa booking system',
@@ -26,9 +26,9 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'client management system',
   ],
   openGraph: {
-    title: 'Salon & Spa Business Solutions | The Daisy',
+    title: 'AI-Powered Salon & Spa Management Platform | The Daisy',
     description:
-      'Grow your salon or spa business with The Daisy. Manage bookings, staff, and promotions on our beauty marketplace.',
+      'Grow your salon or spa with The Daisy. AI receptionist, smart booking, customer acquisition, payments, and marketing — all in one platform. Start your 14-day free trial.',
     url: `https://www.jointhedaisy.com/${locale}/business`,
     type: 'website',
     images: [
@@ -42,9 +42,9 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Salon & Spa Business Solutions | The Daisy',
+    title: 'AI-Powered Salon & Spa Management Platform | The Daisy',
     description:
-      'Grow your salon or spa business with The Daisy beauty marketplace.',
+      'Grow your salon or spa with The Daisy. AI receptionist, smart booking, customer acquisition, payments, and marketing — all in one platform. Start your 14-day free trial.',
     images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/business', locale),
