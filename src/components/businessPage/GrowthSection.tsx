@@ -2,7 +2,6 @@
 
 import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
-import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
@@ -40,7 +39,7 @@ export const GrowthSection = ({
               className="font-semibold w-full h-auto text-base mt-8 mb-10 px-[85px] py-[14px] rounded-[9px] md:w-[310px] hover:bg-white hover:text-primary hover:border hover:border-primary"
               onClick={() => router.push(buttonLink)}
             >
-              <Link href="/about"> {learnMore}</Link>
+              {learnMore}
             </Button>
           </div>
           <Separator className="bg-[#EAECEC] mb-10 md:hidden" />
