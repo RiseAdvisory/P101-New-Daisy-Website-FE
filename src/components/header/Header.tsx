@@ -27,8 +27,8 @@ export const Header = () => {
   const path = useMemo(() => stripLocaleFromPathname(fullPath), [fullPath]);
   const [active, setActive] = useState('');
   const [openMenu, setOpenMenu] = useState(false);
-  const [changePage, setChangePage] = useState('Business');
-  const [changeLang, setChangeLang] = useState('En');
+  const [changePage, setChangePage] = useState(locale === 'ar' ? 'شركة' : 'Business');
+  const [changeLang, setChangeLang] = useState(locale === 'ar' ? 'ع' : 'En');
   const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState(false);
   const [activePages, setActivePages] = useState<any>();
   const [currentActivePage, setCurrentActivePage] = useState<string | null>(
