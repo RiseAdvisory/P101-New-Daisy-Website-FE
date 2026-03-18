@@ -66,7 +66,7 @@ export const BusinessClient = ({ lang }: { lang: string }) => {
       />
       <JoinTheDaisy />
       <ExperienceDaisy pageType="business" />
-      <QASection pageType="Business" titleFraque={pageData.titleFraque} />
+      <QASection pageType="Business" titleFraque={pageData.titleFraque} fallbackFaqs={pageData.fallbackFaqs} />
       <BecomeFormPartner defaultType="business" />
     </div>
   );

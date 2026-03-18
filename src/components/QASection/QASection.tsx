@@ -4,6 +4,7 @@ import { QAAccordion } from '../qaAccordion/QAAccordion';
 import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { useChangeLanguage } from '@/store/language';
+import { FaqSchema } from '@/components/seo/FaqSchema';
 
 enum PageType {
   Customer = 'Customer',
@@ -24,6 +25,11 @@ interface GetFAQResponse {
   data: FAQ[];
 }
 
+interface FallbackFaq {
+  question: string;
+  answer: string;
+}
+
 export const QASection = ({
   pageType = 'Customer',
   styles,
@@ -33,6 +39,7 @@ export const QASection = ({
   blockTop,
   sectionFQ,
   titleFraque,
+  fallbackFaqs,
 }: {
   pageType: any;
   styles?: string;
@@ -42,8 +49,9 @@ export const QASection = ({
   blockTop?: string;
   sectionFQ?: boolean;
   titleFraque?: string;
+  fallbackFaqs?: FallbackFaq[];
 }) => {
-  const [qaList, setQAlist] = useState<any>();
+  const [qaList, setQAlist] = useState<FAQ[] | null>(null);
   const { lang } = useChangeLanguage();
   useEffect(() => {
     (async () => {
@@ -52,8 +60,15 @@ export const QASection = ({
     })();
   }, [pageType, lang]);
 
+  // Use API data when available; fall back to static FAQs if API returns empty or fails
+  const hasApiData = qaList && qaList.length > 0;
+  const displayList: Array<{ question: string; answer: string }> = hasApiData
+    ? qaList
+    : (fallbackFaqs ?? []);
+
   return (
     <div className={`bg-[#F8F5F3] px-4 pb-28 md:pt-[200px] ${styles}`}>
+      <FaqSchema faqs={displayList} />
       <h2
         className={cn(
           'text-primary font-bold text-center text-[32px] leading-[40px] pt-[112px] md:text-[40px] md:leading-[50px] md:font-bold',
@@ -63,7 +78,7 @@ export const QASection = ({
         {titleFraque}
       </h2>
       <div className={`md:mt-12 md:px-[288px] ${blockTop}`}>
-        {qaList?.map((item: any, index: number) => {
+        {displayList.map((item: any, index: number) => {
           return (
             <QAAccordion
               key={index}
