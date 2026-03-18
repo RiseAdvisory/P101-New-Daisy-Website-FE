@@ -40,6 +40,20 @@ import {
   beautyBusinessGrowthBusinessArticles,
   beautyBusinessGrowthProfessionalArticles,
 } from './articles/beauty-business-growth';
+import {
+  salonPaymentsBusinessArticles,
+  salonPaymentsProfessionalArticles,
+} from './articles/salon-payments';
+import {
+  staffManagementBusinessArticles,
+  staffManagementProfessionalArticles,
+} from './articles/staff-management';
+import {
+  industryTrendsBusinessArticles,
+  industryTrendsProfessionalArticles,
+} from './articles/industry-trends';
+import { salonAnalyticsBusinessArticles } from './articles/salon-analytics';
+import { multiChannelBusinessArticles } from './articles/multi-channel';
 
 /**
  * Blog post data structure matching the Strapi response shape
@@ -153,6 +167,11 @@ export const businessBlogPosts: LocalBlogPost[] = [
   ...salonManagementBusinessArticles,
   ...salonMarketingBusinessArticles,
   ...beautyBusinessGrowthBusinessArticles,
+  ...salonPaymentsBusinessArticles,
+  ...staffManagementBusinessArticles,
+  ...industryTrendsBusinessArticles,
+  ...salonAnalyticsBusinessArticles,
+  ...multiChannelBusinessArticles,
 ];
 
 /**
@@ -168,6 +187,9 @@ export const professionalBlogPosts: LocalBlogPost[] = [
   ...analyticsReportsProfessionalArticles,
   ...salonMarketingProfessionalArticles,
   ...beautyBusinessGrowthProfessionalArticles,
+  ...salonPaymentsProfessionalArticles,
+  ...staffManagementProfessionalArticles,
+  ...industryTrendsProfessionalArticles,
 ];
 
 /**
