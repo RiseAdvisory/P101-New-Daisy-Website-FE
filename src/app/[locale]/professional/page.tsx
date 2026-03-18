@@ -3,6 +3,9 @@ import { localeAlternates } from '@/lib/utils/metadata';
 import { ProfessionalClient } from './ProfessionalClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
+import { LandingHero } from '@/components/shared/LandingHero';
+import { t } from '@/lib/constants/i18n';
+import { professionalPageData } from '@/lib/constants/pages/professionalPage';
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
@@ -48,6 +51,8 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
 }
 
 export default function ProfessionalPage({ params }: { params: { locale: string } }) {
+  const pageData = t(professionalPageData, params.locale);
+
   return (
     <>
       <WebPageSchema
@@ -58,6 +63,16 @@ export default function ProfessionalPage({ params }: { params: { locale: string 
       <PageBreadcrumbSchema
         items={[{ name: 'For Professionals', url: 'https://www.jointhedaisy.com/professional' }]}
       />
+      {pageData.hero && (
+        <LandingHero
+          categoryLabel={pageData.hero.categoryLabel}
+          headline={pageData.hero.headline}
+          subHeadline={pageData.hero.subHeadline}
+          ctaText={pageData.hero.ctaText}
+          ctaLink={pageData.hero.ctaLink}
+          answerBlock={pageData.hero.answerBlock}
+        />
+      )}
       <ProfessionalClient lang={params.locale} />
     </>
   );

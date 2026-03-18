@@ -3,6 +3,9 @@ import { localeAlternates } from '@/lib/utils/metadata';
 import { BusinessClient } from './BusinessClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
+import { LandingHero } from '@/components/shared/LandingHero';
+import { t } from '@/lib/constants/i18n';
+import { businessPageData } from '@/lib/constants/pages/businessPage';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
@@ -49,6 +52,8 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
 }
 
 export default function BusinessPage({ params }: { params: { locale: string } }) {
+  const pageData = t(businessPageData, params.locale);
+
   return (
     <>
       <WebPageSchema
@@ -59,6 +64,16 @@ export default function BusinessPage({ params }: { params: { locale: string } })
       <PageBreadcrumbSchema
         items={[{ name: 'For Business', url: 'https://www.jointhedaisy.com/business' }]}
       />
+      {pageData.hero && (
+        <LandingHero
+          categoryLabel={pageData.hero.categoryLabel}
+          headline={pageData.hero.headline}
+          subHeadline={pageData.hero.subHeadline}
+          ctaText={pageData.hero.ctaText}
+          ctaLink={pageData.hero.ctaLink}
+          answerBlock={pageData.hero.answerBlock}
+        />
+      )}
       <BusinessClient lang={params.locale} />
     </>
   );

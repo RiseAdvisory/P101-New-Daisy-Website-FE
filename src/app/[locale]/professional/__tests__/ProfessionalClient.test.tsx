@@ -81,6 +81,10 @@ jest.mock('@/components/ui/skeleton', () => ({
   Skeleton: () => <div data-testid="skeleton">Loading...</div>,
 }));
 
+jest.mock('@/components/shared/PlatformStrengths', () => ({
+  PlatformStrengths: () => <div data-testid="platform-strengths">Strengths</div>,
+}));
+
 describe('ProfessionalClient', () => {
   beforeEach(() => {
     jest.clearAllMocks();

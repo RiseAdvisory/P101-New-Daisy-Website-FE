@@ -33,6 +33,12 @@ const JoinTheDaisy = dynamic(
       (mod) => mod.JoinTheDaisy,
     ),
 );
+const PlatformStrengths = dynamic(
+  () =>
+    import('@/components/shared/PlatformStrengths').then(
+      (mod) => mod.PlatformStrengths,
+    ),
+);
 
 export const ProfessionalClient = ({ lang }: { lang: string }) => {
 
@@ -44,6 +50,14 @@ export const ProfessionalClient = ({ lang }: { lang: string }) => {
       <LockerContainer listInfo={dataScroll} />
       <MobileScrollSection dataScroll={dataScroll} />
       {/* <OurPartnersSection /> */}
+      {pageData.platformStrengths && (
+        <PlatformStrengths
+          headline={pageData.platformStrengths.headline}
+          subHeadline={pageData.platformStrengths.subHeadline}
+          capabilities={pageData.platformStrengths.capabilities}
+          stats={pageData.platformStrengths.stats}
+        />
+      )}
       <GrowthSection
         title={pageData.growth.title}
         description={pageData.growth.description}

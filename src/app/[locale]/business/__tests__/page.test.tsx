@@ -88,6 +88,14 @@ jest.mock('@/components/seo/PageBreadcrumbSchema', () => ({
   PageBreadcrumbSchema: () => null,
 }));
 
+jest.mock('@/components/shared/LandingHero', () => ({
+  LandingHero: () => <div data-testid="landing-hero">Hero</div>,
+}));
+
+jest.mock('@/components/shared/PlatformStrengths', () => ({
+  PlatformStrengths: () => <div data-testid="platform-strengths">Strengths</div>,
+}));
+
 describe('Business Page', () => {
   beforeEach(() => {
     jest.clearAllMocks();
