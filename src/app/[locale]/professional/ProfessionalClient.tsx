@@ -15,12 +15,6 @@ const BecomeFormPartner = dynamic(
       (mod) => mod.BecomeFormPartner,
     ),
 );
-const DaysiMission = dynamic(
-  () =>
-    import('@/components/businessPage/DaysiMission').then(
-      (mod) => mod.DaysiMission,
-    ),
-);
 const GrowthSection = dynamic(
   () =>
     import('@/components/businessPage/GrowthSection').then(
@@ -50,7 +44,6 @@ export const ProfessionalClient = ({ lang }: { lang: string }) => {
       <LockerContainer listInfo={dataScroll} />
       <MobileScrollSection dataScroll={dataScroll} />
       {/* <OurPartnersSection /> */}
-      <DaysiMission />
       <GrowthSection
         title={pageData.growth.title}
         description={pageData.growth.description}
@@ -65,7 +58,7 @@ export const ProfessionalClient = ({ lang }: { lang: string }) => {
         pageType="Professional"
         titleFraque={pageData.titleFraque}
       />
-      <BecomeFormPartner />
+      <BecomeFormPartner defaultType="freelance" />
     </div>
   );
 };

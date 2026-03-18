@@ -15,12 +15,6 @@ const BecomeFormPartner = dynamic(
       (mod) => mod.BecomeFormPartner,
     ),
 );
-const DaysiMission = dynamic(
-  () =>
-    import('@/components/businessPage/DaysiMission').then(
-      (mod) => mod.DaysiMission,
-    ),
-);
 const GrowthSection = dynamic(
   () =>
     import('@/components/businessPage/GrowthSection').then(
@@ -48,7 +42,6 @@ export const BusinessClient = ({ lang }: { lang: string }) => {
     <div className="w-full bg-primary md:-mt-[100px]">
       <LockerContainer listInfo={dataScroll} />
       <MobileScrollSection dataScroll={dataScroll} />
-      <DaysiMission />
       <GrowthSection
         title={pageData.growth.title}
         description={pageData.growth.description}
@@ -60,7 +53,7 @@ export const BusinessClient = ({ lang }: { lang: string }) => {
       <JoinTheDaisy />
       <ExperienceDaisy pageType="business" />
       <QASection pageType="Business" titleFraque={pageData.titleFraque} />
-      <BecomeFormPartner />
+      <BecomeFormPartner defaultType="business" />
     </div>
   );
 };
