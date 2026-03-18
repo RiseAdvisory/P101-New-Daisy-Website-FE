@@ -31,6 +31,7 @@ import {
 import { daisyAdvantageBusinessArticles } from './articles/daisy-advantage';
 import { bottomOfFunnelBusinessArticles } from './articles/bottom-of-funnel';
 import { thoughtLeadershipBusinessArticles } from './articles/thought-leadership';
+import { salonManagementBusinessArticles } from './articles/salon-management';
 
 /**
  * Blog post data structure matching the Strapi response shape
@@ -141,6 +142,7 @@ export const businessBlogPosts: LocalBlogPost[] = [
   ...daisyAdvantageBusinessArticles,
   ...bottomOfFunnelBusinessArticles,
   ...thoughtLeadershipBusinessArticles,
+  ...salonManagementBusinessArticles,
 ];
 
 /**
