@@ -63,7 +63,7 @@ export const footerData: I18nContent<FooterData> = {
       },
     ],
     socialLinks: {
-      facebook_url: 'https://www.threads.net/@thedaisy.app',
+      facebook_url: 'https://www.facebook.com/thedaisy.app',
       twitter_url: 'https://twitter.com/thedaisy_app',
       linkedin_url: 'https://www.linkedin.com/company/the-daisy/',
       instagram_url: 'https://www.instagram.com/thedaisy.app/',
@@ -110,7 +110,7 @@ export const footerData: I18nContent<FooterData> = {
       },
     ],
     socialLinks: {
-      facebook_url: 'https://www.threads.net/@thedaisy.app',
+      facebook_url: 'https://www.facebook.com/thedaisy.app',
       twitter_url: 'https://twitter.com/thedaisy_app',
       linkedin_url: 'https://www.linkedin.com/company/the-daisy/',
       instagram_url: 'https://www.instagram.com/thedaisy.app/',

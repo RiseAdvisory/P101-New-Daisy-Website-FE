@@ -97,7 +97,7 @@ export const Footer = () => {
         <div className="flex flex-col gap-12 md:flex-row md:justify-between">
           {/* Logo & App Buttons */}
           <div className="flex flex-col items-center md:items-start">
-            <Link href={localePath('/business', locale)} className="mb-6 opacity-60">
+            <Link href={localePath('/', locale)} className="mb-6 opacity-60">
               <LogoIconsS />
             </Link>
             {!isVisibleAppBtn && (
