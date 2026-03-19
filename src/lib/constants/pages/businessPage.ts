@@ -5,16 +5,16 @@ export const businessPageData: I18nContent<LandingPageContent> = {
   en: {
     hero: {
       categoryLabel: 'FOR BUSINESS OWNERS',
-      headline: 'Stop Losing Customers to Missed Calls',
+      headline: 'Every Customer Message Answered. Instantly.',
       subHeadline:
-        "Daisy's AI receptionist answers every inquiry, books every appointment, and processes every payment — 24/7. One platform replaces your entire front desk.",
+        "Daisy's AI receptionist handles every WhatsApp and Instagram inquiry, books appointments, and processes payments — 24/7. One platform replaces your entire front desk.",
       ctaText: 'Start Your 14-Day Free Trial',
       ctaLink: '/start-free-trial/business',
       trustLine: 'No credit card required. Our team helps you set up.',
       answerBlock: {
         question: 'What is The Daisy for beauty businesses?',
         answer:
-          'The Daisy is an AI-powered beauty business platform that combines a 24/7 AI receptionist with booking management, customer acquisition, payments, staff scheduling, and marketing. It replaces 8 separate tools with one multilingual platform — currently supporting Arabic and English.',
+          'The Daisy is an AI-powered beauty business platform that combines a 24/7 AI receptionist — handling WhatsApp and Instagram messages — with booking management, customer acquisition, payments, staff scheduling, and marketing. It replaces 8 separate tools with one multilingual platform — currently supporting Arabic and English.',
       },
     },
     platformStrengths: {
@@ -22,7 +22,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       subHeadline:
         'Stop paying for 8 separate tools. Daisy combines everything you need to run and grow your beauty business.',
       capabilities: [
-        { label: 'AI Receptionist', description: '24/7 automated booking, payments, and customer service' },
+        { label: 'AI Receptionist', description: '24/7 WhatsApp and Instagram messaging, booking, and payments' },
         { label: 'Smart Booking', description: 'Intelligent scheduling that fills your calendar' },
         { label: 'Customer Acquisition', description: 'Marketplace, cashback, and marketing tools' },
         { label: 'Payments & Invoicing', description: 'Seamless transactions and financial tracking' },
@@ -39,7 +39,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     },
     socialProofStats: [
       { value: '8', context: 'tools replaced by one platform' },
-      { value: '24/7', context: 'AI receptionist — never misses a call' },
+      { value: '24/7', context: 'AI receptionist — never misses a message' },
       { value: '10+', context: 'languages supported' },
     ],
     howItWorks: {
@@ -51,7 +51,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     },
     pricingHook: {
       headline: 'Free to Start. Grow at Your Own Pace.',
-      body: '14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Commission only on new customers the Daisy marketplace brings you — your existing clients, zero commission.',
+      body: "14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Your AI receptionist doesn't just handle messages — it learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you — your existing clients, zero commission.",
       ctaText: 'Start Your 14-Day Free Trial',
       ctaLink: '/start-free-trial/business',
       pricingLinkText: 'See full pricing details →',
@@ -67,14 +67,16 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         headline: 'Start Your 14-Day Free Trial',
         ctaText: 'Start Your 14-Day Free Trial',
         ctaLink: '/start-free-trial/business',
+        secondaryLinkText: 'Explore all features →',
+        secondaryLinkHref: '/features/business',
       },
     },
     titleFraque: 'Frequently Asked Questions',
     fallbackFaqs: [
+      { question: 'How much does it cost?', answer: 'Start with a 14-day free trial — full access, no credit card required. After that, flexible plans start from $50/month. You only pay commission on new customers who find you through the Daisy marketplace. Your existing clients — zero commission.' },
+      { question: 'How does the AI receptionist work?', answer: 'The AI handles your WhatsApp and Instagram messages 24/7 — answering customer questions, checking availability, booking appointments, and processing payments. It learns your services, pricing, and preferences over time to give your customers a personalized experience.' },
       { question: 'Can I migrate from my current booking system?', answer: 'Yes. Our onboarding team helps you migrate your client data, booking history, and preferences at no extra cost.' },
-      { question: 'Does The Daisy work in Arabic?', answer: 'Yes. Fully multilingual — your AI receptionist speaks Arabic and English fluently. Customer communications, your booking page, and the entire interface support both languages with full RTL. More languages coming soon.' },
-      { question: 'Do I need to change how I run my business?', answer: 'No. Daisy adapts to your workflow. Keep your brand, your processes, your team. We just handle your reception and give you better tools.' },
-      { question: 'Is my data safe?', answer: 'Yes. Enterprise-grade encryption, secure payment processing, and your data is never shared. You own your customer data completely.' },
+      { question: 'What messaging channels does the AI handle?', answer: 'Currently WhatsApp and Instagram DMs, with more channels coming soon. The AI responds instantly in Arabic and English, matching your customers\' preferred language.' },
     ],
     scrollSections: [
       {
@@ -124,7 +126,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           title: 'A Customer Has a Question',
           text: 'Your AI Receptionist Responds Instantly',
           description:
-            "A customer messages at 9 PM asking about availability for a balayage appointment. Your AI receptionist responds within seconds — friendly, professional, in their language.",
+            "A customer sends a WhatsApp message at 9 PM asking about availability for a balayage appointment. Your AI receptionist responds within seconds — friendly, professional, in their language.",
           listSub: [
             'Responds in Arabic and English',
             'Available 24/7, even holidays',
@@ -271,16 +273,16 @@ export const businessPageData: I18nContent<LandingPageContent> = {
   ar: {
     hero: {
       categoryLabel: 'لأصحاب الأعمال',
-      headline: 'توقف عن خسارة العملاء بسبب المكالمات الفائتة',
+      headline: 'كل رسالة عميل تُجاب. فورًا.',
       subHeadline:
-        'موظف الاستقبال الذكي من ديزي يجيب على كل استفسار، يحجز كل موعد، ويعالج كل دفعة — على مدار الساعة. منصة واحدة تحل محل مكتب الاستقبال بالكامل.',
+        'موظف الاستقبال الذكي من ديزي يتولى كل استفسار على واتساب وإنستغرام، يحجز المواعيد، ويعالج المدفوعات — على مدار الساعة. منصة واحدة تحل محل مكتب الاستقبال بالكامل.',
       ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
       ctaLink: '/start-free-trial/business',
       trustLine: 'لا حاجة لبطاقة ائتمان. فريقنا يساعدك في الإعداد.',
       answerBlock: {
         question: 'ما هو ذا ديزي لأعمال التجميل؟',
         answer:
-          'ذا ديزي هو منصة أعمال تجميل مدعومة بالذكاء الاصطناعي تجمع بين موظف استقبال ذكي يعمل على مدار الساعة مع إدارة الحجوزات واستقطاب العملاء والمدفوعات وجدولة الموظفين والتسويق. يستبدل 8 أدوات منفصلة بمنصة متعددة اللغات — تدعم حاليًا العربية والإنجليزية.',
+          'ذا ديزي هو منصة أعمال تجميل مدعومة بالذكاء الاصطناعي تجمع بين موظف استقبال ذكي يعمل على مدار الساعة — يتولى رسائل واتساب وإنستغرام — مع إدارة الحجوزات واستقطاب العملاء والمدفوعات وجدولة الموظفين والتسويق. يستبدل 8 أدوات منفصلة بمنصة متعددة اللغات — تدعم حاليًا العربية والإنجليزية.',
       },
     },
     platformStrengths: {
@@ -288,7 +290,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       subHeadline:
         'توقف عن الدفع لـ 8 أدوات منفصلة. ديزي تجمع كل ما تحتاجه لإدارة وتنمية أعمالك في مجال التجميل.',
       capabilities: [
-        { label: 'موظف استقبال ذكي', description: 'حجوزات ومدفوعات وخدمة عملاء آلية على مدار الساعة' },
+        { label: 'موظف استقبال ذكي', description: 'رسائل واتساب وإنستغرام وحجوزات ومدفوعات على مدار الساعة' },
         { label: 'حجز ذكي', description: 'جدولة ذكية تملأ تقويمك' },
         { label: 'استقطاب العملاء', description: 'سوق إلكتروني وكاش باك وأدوات تسويق' },
         { label: 'المدفوعات والفوترة', description: 'معاملات سلسة وتتبع مالي' },
@@ -305,7 +307,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     },
     socialProofStats: [
       { value: '8', context: 'أدوات تم استبدالها بمنصة واحدة' },
-      { value: '24/7', context: 'موظف استقبال ذكي — لا يفوت أي مكالمة' },
+      { value: '24/7', context: 'موظف استقبال ذكي — لا يفوت أي رسالة' },
       { value: '+10', context: 'لغة مدعومة' },
     ],
     howItWorks: {
@@ -317,7 +319,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     },
     pricingHook: {
       headline: 'ابدأ مجانًا. انمُ بالسرعة التي تناسبك.',
-      body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولار/شهريًا. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي — عملاؤك الحاليون، بدون أي عمولة.',
+      body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولار/شهريًا. موظف الاستقبال الذكي لا يتولى الرسائل فحسب — بل يتعلم تفضيلات عملائك بمرور الوقت، ويُخصّص كل تفاعل ويحوّل الزوار الجدد إلى عملاء أوفياء. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي — عملاؤك الحاليون، بدون أي عمولة.',
       ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
       ctaLink: '/start-free-trial/business',
       pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة ←',
@@ -333,14 +335,16 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
         ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
         ctaLink: '/start-free-trial/business',
+        secondaryLinkText: 'استكشف جميع الميزات →',
+        secondaryLinkHref: '/features/business',
       },
     },
     titleFraque: 'أسئلة شائعة',
     fallbackFaqs: [
+      { question: 'كم تبلغ التكلفة؟', answer: 'ابدأ بتجربة مجانية لمدة 14 يومًا — وصول كامل، بدون بطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولار/شهريًا. تدفع عمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي. عملاؤك الحاليون — بدون أي عمولة.' },
+      { question: 'كيف يعمل موظف الاستقبال الذكي؟', answer: 'يتولى الذكاء الاصطناعي رسائل واتساب وإنستغرام الخاصة بك على مدار الساعة — يجيب على أسئلة العملاء، يتحقق من التوافر، يحجز المواعيد، ويعالج المدفوعات. يتعلم خدماتك وأسعارك وتفضيلاتك بمرور الوقت ليمنح عملاءك تجربة شخصية.' },
       { question: 'هل يمكنني الانتقال من نظام الحجز الحالي؟', answer: 'نعم. يساعدك فريق الإعداد لدينا في نقل بيانات عملائك وسجل الحجوزات وتفضيلاتك دون أي تكلفة إضافية.' },
-      { question: 'هل يعمل ذا ديزي باللغة العربية؟', answer: 'نعم. متعدد اللغات بالكامل — موظف الاستقبال الذكي يتحدث العربية والإنجليزية بطلاقة. اتصالات العملاء وصفحة الحجز والواجهة بالكامل تدعم اللغتين مع RTL كامل. المزيد من اللغات قريبًا.' },
-      { question: 'هل أحتاج لتغيير طريقة إدارة عملي؟', answer: 'لا. ديزي يتكيف مع سير عملك. احتفظ بعلامتك التجارية وعملياتك وفريقك. نحن فقط نتولى الاستقبال ونمنحك أدوات أفضل.' },
-      { question: 'هل بياناتي آمنة؟', answer: 'نعم. تشفير بمستوى المؤسسات ومعالجة دفع آمنة وبياناتك لا تُشارك أبدًا. أنت تملك بيانات عملائك بالكامل.' },
+      { question: 'ما قنوات المراسلة التي يتولاها الذكاء الاصطناعي؟', answer: 'حاليًا واتساب ورسائل إنستغرام المباشرة، مع المزيد من القنوات قريبًا. يرد الذكاء الاصطناعي فورًا بالعربية والإنجليزية، مطابقًا اللغة المفضلة لعملائك.' },
     ],
     scrollSections: [
       {
@@ -389,7 +393,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           title: 'عميل لديه سؤال',
           text: 'موظف الاستقبال الذكي يرد فورًا',
           description:
-            'عميل يراسل الساعة 9 مساءً يسأل عن توفر موعد للبالاياج. موظف الاستقبال الذكي يرد خلال ثوانٍ — ودود، محترف، بلغته.',
+            'عميل يرسل رسالة واتساب الساعة 9 مساءً يسأل عن توفر موعد للبالاياج. موظف الاستقبال الذكي يرد خلال ثوانٍ — ودود، محترف، بلغته.',
           listSub: [
             'يرد بالعربية والإنجليزية',
             'متاح على مدار الساعة، حتى في العطل',

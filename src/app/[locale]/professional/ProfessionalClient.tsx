@@ -75,6 +75,8 @@ export const ProfessionalClient = ({ lang }: { lang: string }) => {
           headline={pageData.inlineCtas.afterFeatures.headline}
           ctaText={pageData.inlineCtas.afterFeatures.ctaText}
           ctaLink={pageData.inlineCtas.afterFeatures.ctaLink}
+          secondaryLinkText={pageData.inlineCtas.afterFeatures.secondaryLinkText}
+          secondaryLinkHref={pageData.inlineCtas.afterFeatures.secondaryLinkHref}
         />
       )}
       <QASection pageType="Professional" titleFraque={pageData.titleFraque} fallbackFaqs={pageData.fallbackFaqs} />

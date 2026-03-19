@@ -81,6 +81,8 @@ export interface InlineCTAData {
   headline: string;
   ctaText: string;
   ctaLink: string;
+  secondaryLinkText?: string;
+  secondaryLinkHref?: string;
 }
 
 export interface SocialProofStat {

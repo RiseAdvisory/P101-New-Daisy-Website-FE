@@ -4,9 +4,17 @@ interface InlineCTAProps {
   headline: string;
   ctaText: string;
   ctaLink: string;
+  secondaryLinkText?: string;
+  secondaryLinkHref?: string;
 }
 
-export const InlineCTA = ({ headline, ctaText, ctaLink }: InlineCTAProps) => {
+export const InlineCTA = ({
+  headline,
+  ctaText,
+  ctaLink,
+  secondaryLinkText,
+  secondaryLinkHref,
+}: InlineCTAProps) => {
   return (
     <section className="w-full bg-primary py-12 md:py-16 px-4 text-center">
       <p className="text-[#D5D9D9] text-lg md:text-xl mb-6">{headline}</p>
@@ -16,6 +24,16 @@ export const InlineCTA = ({ headline, ctaText, ctaLink }: InlineCTAProps) => {
       >
         {ctaText}
       </Link>
+      {secondaryLinkText && secondaryLinkHref && (
+        <div className="mt-4">
+          <Link
+            href={secondaryLinkHref}
+            className="text-[#D5D9D9] text-sm hover:text-white hover:underline"
+          >
+            {secondaryLinkText}
+          </Link>
+        </div>
+      )}
     </section>
   );
 };
