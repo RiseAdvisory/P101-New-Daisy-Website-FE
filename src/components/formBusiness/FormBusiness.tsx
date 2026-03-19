@@ -36,9 +36,11 @@ import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 interface ProfileFormProps {
   defaultType?: 'business' | 'freelance';
+  buttonText?: string;
+  onSuccess?: () => void;
 }
 
-export const ProfileForm = ({ defaultType }: ProfileFormProps) => {
+export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormProps) => {
   const [activeField, setActiveField] = useState<string | null>(null);
   const [country_code, setCountryCode] = useState('+1');
   const { handlecountryCodesArray, handleLoadingStatus } = useLoadingStore();
@@ -141,6 +143,7 @@ export const ProfileForm = ({ defaultType }: ProfileFormProps) => {
       toast.success('Sent Successfully!');
       setPhoneNumber('');
       form.reset();
+      onSuccess?.();
     } catch {
       setIsSubmit(false);
       toast.error('Error!');
@@ -515,7 +518,7 @@ export const ProfileForm = ({ defaultType }: ProfileFormProps) => {
           disabled={isSubmit}
           className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary hover:text-white ltr:font-montserrat font-semibold md:h-auto"
         >
-          {isSubmit ? 'Sending...' : `${textForm?.buttonText}`}
+          {isSubmit ? 'Sending...' : buttonText || `${textForm?.buttonText}`}
         </Button>
       </form>
       <ToastContainer />
