@@ -100,6 +100,8 @@ export interface LandingPageContent {
     afterFeatures: InlineCTAData;
   };
   titleFraque: string;
+  /** @deprecated Used by customer page only. Removed from business/professional in V2 redesign. */
+  growth?: GrowthData;
   fallbackFaqs?: FaqItem[];
 }
 

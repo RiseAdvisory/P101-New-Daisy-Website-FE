@@ -46,14 +46,16 @@ export const CustomerClient = ({ lang }: { lang: string }) => {
       <MobileScrollSection dataScroll={dataScroll} />
       {/* <OurPartnersSection /> */}
       <DaysiMission />
-      <GrowthSectionCustomer
-        title={pageData.growth.title}
-        description={pageData.growth.description}
-        subtitle={pageData.growth.subtitle}
-        learnMore={pageData.growth.buttonLearn}
-        buttonLink={pageData.growth.buttonLink}
-        imageUrl={pageData.growth.imageUrl}
-      />
+      {pageData.growth && (
+        <GrowthSectionCustomer
+          title={pageData.growth.title}
+          description={pageData.growth.description}
+          subtitle={pageData.growth.subtitle}
+          learnMore={pageData.growth.buttonLearn}
+          buttonLink={pageData.growth.buttonLink}
+          imageUrl={pageData.growth.imageUrl}
+        />
+      )}
       <JoinTheDaisy />
       <ExperienceDaisy pageType="customer" />
       <QASection pageType="Customer" titleFraque={pageData.titleFraque} />
