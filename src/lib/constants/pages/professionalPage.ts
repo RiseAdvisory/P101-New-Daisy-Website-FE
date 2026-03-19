@@ -33,10 +33,10 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '1', context: 'app for everything' },
         { value: '24/7', context: 'AI-powered booking' },
-        { value: '10+', context: 'languages — Arabic, English & more' },
+        { value: '10+', context: 'languages supported' },
       ],
     },
-    titleFraque: 'Frequently Asked Question',
+    titleFraque: 'Frequently Asked Questions',
     fallbackFaqs: [
       { question: 'How do I join The Daisy as a professional?', answer: 'Download The Daisy app, create your professional profile, set your services and availability, and start accepting bookings.' },
       { question: 'Can I set my own schedule?', answer: 'Yes. You have full control over your availability, working hours, break times, and can block time for personal appointments.' },
@@ -45,9 +45,9 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       { question: 'Is The Daisy available in Arabic?', answer: 'Yes. The Daisy is fully multilingual with complete Arabic and English support throughout the app, with more languages coming soon.' },
     ],
     growth: {
-      title: 'Expand Your Clientele, Manage Your Schedule, and Build Your Brand with The Daisy.',
+      title: 'Build Your Freelance Business Without Chasing Clients',
       description:
-        'Grow your freelance business with ease...',
+        'The Daisy marketplace brings customers to you — people actively searching for beauty professionals nearby. Built-in cashback rewards keep them coming back, so you spend less time marketing and more time doing what you love.',
       subtitle: 'MARKETPLACE',
       buttonLearn: 'GET THE APP',
       buttonLink: '/get-the-app',
@@ -105,6 +105,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
             'Set your own working hours',
             'Block time for personal commitments',
             'Multi-location support',
+            'Real-time schedule updates',
           ],
         },
       },
@@ -144,6 +145,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
             'Detailed client profiles',
             'Appointment history tracking',
             'Client preference notes',
+            'Automatic follow-ups',
           ],
         },
       },
@@ -198,6 +200,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
             'Real-time earnings dashboard',
             'Detailed payment reports',
             'Revenue trends & insights',
+            'Commission tracking',
           ],
         },
       },
@@ -232,11 +235,12 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           title: 'Professional Profile',
           text: 'Showcase Your Expertise',
           description:
-            'Highlights your skills, experience, and client reviews. Stand out and attract more clients.',
+            'Highlight your skills, experience, and client reviews. Stand out and attract more clients.',
           listSub: [
             'Portfolio showcase',
             'Client reviews & ratings',
             'Service menu customization',
+            'Display professional certifications',
           ],
         },
       },
@@ -318,7 +322,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '1', context: 'تطبيق لكل شيء' },
         { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' },
-        { value: '+10', context: 'لغات — عربي وإنجليزي والمزيد' },
+        { value: '+10', context: 'لغة مدعومة' },
       ],
     },
     titleFraque: 'أسئلة شائعة',
@@ -330,9 +334,9 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       { question: 'هل ذا ديزي متاح باللغة العربية؟', answer: 'نعم. ذا ديزي متعدد اللغات بالكامل مع دعم كامل للعربية والإنجليزية في جميع أنحاء التطبيق، مع المزيد من اللغات قريبًا.' },
     ],
     growth: {
-      title: 'وسّع قاعدة عملائك، نظم جدولك، وابنِ علامتك التجارية مع ذا ديزي.',
+      title: 'ابنِ عملك الحر دون ملاحقة العملاء',
       description:
-        'نمِّ عملك الحر بسهولة...',
+        'سوق ذا ديزي يجلب لك العملاء — أشخاص يبحثون بنشاط عن متخصصي تجميل بالقرب منهم. مكافآت الكاش باك المدمجة تجعلهم يعودون، فتقضي وقتًا أقل في التسويق ووقتًا أكثر فيما تحب.',
       subtitle: 'السوق العام',
       buttonLearn: 'احصل على التطبيق',
       buttonLink: '/get-the-app',

@@ -3,7 +3,7 @@ import { LandingPageContent } from './scrollSections.types';
 
 export const customerPageData: I18nContent<LandingPageContent> = {
   en: {
-    titleFraque: 'Frequently Asked Question',
+    titleFraque: 'Frequently Asked Questions',
     growth: {
       title: 'Discover Premium Services, Book Effortlessly, and Elevate Your Experience with The Daisy.',
       description:

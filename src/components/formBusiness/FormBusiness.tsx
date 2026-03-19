@@ -138,7 +138,7 @@ export const ProfileForm = ({ defaultType }: ProfileFormProps) => {
       }
 
       const data = await response.json();
-      toast.success('Sent Succesfully!');
+      toast.success('Sent Successfully!');
       setPhoneNumber('');
       form.reset();
     } catch {

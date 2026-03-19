@@ -5,21 +5,21 @@ export const businessPageData: I18nContent<LandingPageContent> = {
   en: {
     hero: {
       categoryLabel: 'FOR BUSINESS OWNERS',
-      headline: 'Grow Your Salon with AI-Powered Everything',
+      headline: 'Grow Your Beauty Business with AI-Powered Everything',
       subHeadline:
-        'Replace 5+ tools with one platform. AI receptionist, customer acquisition, booking, payments, and marketing — all with your brand, your way.',
+        'Replace 8 tools with one platform. AI receptionist, customer acquisition, booking, payments, and marketing — all with your brand, your way.',
       ctaText: 'Start Free Trial',
       ctaLink: '/get-the-app',
       answerBlock: {
-        question: 'What is The Daisy for salons?',
+        question: 'What is The Daisy for beauty businesses?',
         answer:
-          'The Daisy is an AI-powered beauty business platform that combines booking management, customer acquisition, payments, staff scheduling, and marketing into one system. It replaces 5+ separate tools with a single multilingual platform — currently supporting Arabic and English — featuring a 24/7 AI receptionist.',
+          'The Daisy is an AI-powered beauty business platform that combines booking management, customer acquisition, payments, staff scheduling, and marketing into one system. It replaces 8 separate tools with a single multilingual platform — currently supporting Arabic and English — featuring a 24/7 AI receptionist.',
       },
     },
     platformStrengths: {
       headline: 'One Platform Replaces Your Entire Tool Stack',
       subHeadline:
-        'Stop paying for 5+ separate tools. Daisy combines everything you need to run and grow your beauty business.',
+        'Stop paying for 8 separate tools. Daisy combines everything you need to run and grow your beauty business.',
       capabilities: [
         { label: 'AI Receptionist', description: '24/7 automated booking, payments, and customer service' },
         { label: 'Smart Booking', description: 'Intelligent scheduling that fills your calendar' },
@@ -33,10 +33,10 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '8', context: 'tools in one platform' },
         { value: '24/7', context: 'AI receptionist' },
-        { value: '10+', context: 'languages — Arabic, English & more' },
+        { value: '10+', context: 'languages supported' },
       ],
     },
-    titleFraque: 'Frequently Asked Question',
+    titleFraque: 'Frequently Asked Questions',
     fallbackFaqs: [
       { question: 'How much does The Daisy cost?', answer: 'The Daisy offers flexible pricing tiers starting with a 14-day free trial. Visit our pricing page for detailed plan comparisons.' },
       { question: 'Can I migrate from my current booking system?', answer: 'Yes. Our onboarding team helps you migrate your client data, booking history, and preferences from your existing system at no extra cost.' },
@@ -106,6 +106,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
             '24/7 AI booking assistant',
             'Automated reminders & confirmations',
             'Smart calendar management',
+            'Multi-staff scheduling',
           ],
         },
       },
@@ -146,6 +147,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
             'Marketplace visibility to thousands of users',
             'Cashback incentives that drive repeat visits',
             'Integrated marketing campaigns',
+            'Customer loyalty programs',
           ],
         },
       },
@@ -200,6 +202,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
             'Customizable booking page',
             'White-label communications',
             'Branded customer experience',
+            'Custom domain support',
           ],
         },
       },
@@ -234,11 +237,12 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           title: 'Business Analytics',
           text: 'Data-Driven Decisions',
           description:
-            'Track performance, understand your customers, and make smarter business decisions.',
+            'See which services, staff, and promotions drive revenue — and act on it.',
           listSub: [
             'Customer insights & trends',
             'Staff performance metrics',
             'Booking analytics dashboard',
+            'Real-time revenue tracking',
           ],
         },
       },
@@ -292,21 +296,21 @@ export const businessPageData: I18nContent<LandingPageContent> = {
   ar: {
     hero: {
       categoryLabel: 'لأصحاب الأعمال',
-      headline: 'طوّر صالونك مع الذكاء الاصطناعي',
+      headline: 'طوّر أعمالك التجميلية مع الذكاء الاصطناعي',
       subHeadline:
-        'استبدل أكثر من 5 أدوات بمنصة واحدة. موظف استقبال ذكي، استقطاب العملاء، الحجوزات، المدفوعات، والتسويق — كل ذلك بعلامتك التجارية.',
+        'استبدل 8 أدوات بمنصة واحدة. موظف استقبال ذكي، استقطاب العملاء، الحجوزات، المدفوعات، والتسويق — كل ذلك بعلامتك التجارية.',
       ctaText: 'ابدأ تجربتك المجانية',
       ctaLink: '/get-the-app',
       answerBlock: {
-        question: 'ما هو ذا ديزي للصالونات؟',
+        question: 'ما هو ذا ديزي لأعمال التجميل؟',
         answer:
-          'ذا ديزي هو منصة أعمال تجميل مدعومة بالذكاء الاصطناعي تجمع بين إدارة الحجوزات واستقطاب العملاء والمدفوعات وجدولة الموظفين والتسويق في نظام واحد. يستبدل أكثر من 5 أدوات منفصلة بمنصة ثنائية اللغة (عربي/إنجليزي) مع موظف استقبال ذكي يعمل على مدار الساعة.',
+          'ذا ديزي هو منصة أعمال تجميل مدعومة بالذكاء الاصطناعي تجمع بين إدارة الحجوزات واستقطاب العملاء والمدفوعات وجدولة الموظفين والتسويق في نظام واحد. يستبدل 8 أدوات منفصلة بمنصة ثنائية اللغة (عربي/إنجليزي) مع موظف استقبال ذكي يعمل على مدار الساعة.',
       },
     },
     platformStrengths: {
       headline: 'منصة واحدة تحل محل جميع أدواتك',
       subHeadline:
-        'توقف عن الدفع لأكثر من 5 أدوات منفصلة. ديزي تجمع كل ما تحتاجه لإدارة وتنمية أعمالك في مجال التجميل.',
+        'توقف عن الدفع لـ 8 أدوات منفصلة. ديزي تجمع كل ما تحتاجه لإدارة وتنمية أعمالك في مجال التجميل.',
       capabilities: [
         { label: 'موظف استقبال ذكي', description: 'حجوزات ومدفوعات وخدمة عملاء آلية على مدار الساعة' },
         { label: 'حجز ذكي', description: 'جدولة ذكية تملأ تقويمك' },
@@ -320,7 +324,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '8', context: 'أدوات في منصة واحدة' },
         { value: '24/7', context: 'موظف استقبال ذكي' },
-        { value: '+10', context: 'لغات — عربي وإنجليزي والمزيد' },
+        { value: '+10', context: 'لغة مدعومة' },
       ],
     },
     titleFraque: 'أسئلة شائعة',
@@ -522,7 +526,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           title: 'تحليلات الأعمال',
           text: 'قرارات مبنية على البيانات',
           description:
-            'تتبع الأداء، وافهم عملاءك، واتخذ قرارات أعمال أذكى مع أدوات التحليل والتقارير الشاملة.',
+            'اكتشف أي الخدمات والموظفين والعروض تحقق الإيرادات — واتخذ إجراءً.',
           listSub: [
             'تتبع الإيرادات في الوقت الفعلي',
             'رؤى واتجاهات العملاء',
