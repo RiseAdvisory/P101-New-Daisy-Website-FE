@@ -36,23 +36,22 @@ jest.mock('@/components/businessPage/BecomeFormPartner', () => ({
   ),
 }));
 
-jest.mock('@/components/experienceDaisy/ExperienceDaisy', () => ({
-  ExperienceDaisy: () => <div data-testid="experience-daisy">Experience</div>,
+jest.mock('@/components/shared/InlineCTA', () => ({
+  InlineCTA: ({ headline }: { headline: string }) => (
+    <div data-testid="inline-cta">{headline}</div>
+  ),
 }));
 
-jest.mock('@/components/businessPage/GrowthSection', () => ({
-  GrowthSection: ({
-    title,
-    description,
-  }: {
-    title: string;
-    description: string;
-  }) => (
-    <div data-testid="growth-section">
-      <span data-testid="growth-title">{title}</span>
-      <span data-testid="growth-description">{description}</span>
-    </div>
-  ),
+jest.mock('@/components/shared/SocialProofBar', () => ({
+  SocialProofBar: () => <div data-testid="social-proof-bar">Social Proof</div>,
+}));
+
+jest.mock('@/components/shared/HowItWorks', () => ({
+  HowItWorks: () => <div data-testid="how-it-works">How It Works</div>,
+}));
+
+jest.mock('@/components/shared/PricingHook', () => ({
+  PricingHook: () => <div data-testid="pricing-hook">Pricing Hook</div>,
 }));
 
 jest.mock('@/components/shared/MobileScrollSection', () => ({
@@ -108,15 +107,18 @@ describe('Business Page', () => {
   });
 
   it('should render all main sections', async () => {
-    const { getByTestId } = render(
+    const { getByTestId, getAllByTestId } = render(
       <Business params={{ locale: 'en' }} />,
     );
 
     await waitFor(() => {
       expect(getByTestId('locker-container')).toBeInTheDocument();
       expect(getByTestId('mobile-scroll-section')).toBeInTheDocument();
-      expect(getByTestId('growth-section')).toBeInTheDocument();
-      expect(getByTestId('experience-daisy')).toBeInTheDocument();
+      expect(getAllByTestId('inline-cta').length).toBeGreaterThanOrEqual(1);
+      expect(getByTestId('social-proof-bar')).toBeInTheDocument();
+      expect(getByTestId('how-it-works')).toBeInTheDocument();
+      expect(getByTestId('pricing-hook')).toBeInTheDocument();
+      expect(getByTestId('platform-strengths')).toBeInTheDocument();
       expect(getByTestId('qa-section')).toBeInTheDocument();
       expect(getByTestId('become-partner')).toBeInTheDocument();
     });
