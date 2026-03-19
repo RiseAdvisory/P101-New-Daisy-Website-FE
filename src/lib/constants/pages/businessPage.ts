@@ -5,19 +5,19 @@ export const businessPageData: I18nContent<LandingPageContent> = {
   en: {
     hero: {
       categoryLabel: 'FOR BUSINESS OWNERS',
-      headline: 'Grow Your Beauty Business with AI-Powered Everything',
+      headline: 'Stop Losing Customers to Missed Calls',
       subHeadline:
-        'Replace 8 tools with one platform. AI receptionist, customer acquisition, booking, payments, and marketing — all with your brand, your way.',
-      ctaText: 'Start Free Trial',
+        "Daisy's AI receptionist answers every inquiry, books every appointment, and processes every payment — 24/7. One platform replaces your entire front desk.",
+      ctaText: 'Start Your 14-Day Free Trial',
       ctaLink: '/start-free-trial/business',
       answerBlock: {
         question: 'What is The Daisy for beauty businesses?',
         answer:
-          'The Daisy is an AI-powered beauty business platform that combines booking management, customer acquisition, payments, staff scheduling, and marketing into one system. It replaces 8 separate tools with a single multilingual platform — currently supporting Arabic and English — featuring a 24/7 AI receptionist.',
+          'The Daisy is an AI-powered beauty business platform that combines a 24/7 AI receptionist with booking management, customer acquisition, payments, staff scheduling, and marketing. It replaces 8 separate tools with one multilingual platform — currently supporting Arabic and English.',
       },
     },
     platformStrengths: {
-      headline: 'One Platform Replaces Your Entire Tool Stack',
+      headline: 'Everything You Need to Run Your Business',
       subHeadline:
         'Stop paying for 8 separate tools. Daisy combines everything you need to run and grow your beauty business.',
       capabilities: [
@@ -36,23 +36,45 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         { value: '10+', context: 'languages supported' },
       ],
     },
+    socialProofStats: [
+      { value: '8', context: 'tools replaced by one platform' },
+      { value: '24/7', context: 'AI receptionist — never misses a call' },
+      { value: '10+', context: 'languages supported' },
+    ],
+    howItWorks: {
+      steps: [
+        { title: 'Sign up and tell us about your business', description: 'Takes 5 minutes. Tell us your services, staff, and hours.' },
+        { title: 'Our team helps you get set up', description: 'We migrate your data, configure your AI receptionist, and test everything with you.' },
+        { title: 'Go live — your AI receptionist takes over', description: 'Customers get instant responses. You get control.' },
+      ],
+    },
+    pricingHook: {
+      headline: 'Free to Start. Grow at Your Own Pace.',
+      body: '14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Commission only on new customers the Daisy marketplace brings you — your existing clients, zero commission.',
+      ctaText: 'Start Your 14-Day Free Trial',
+      ctaLink: '/start-free-trial/business',
+      pricingLinkText: 'See full pricing details →',
+      pricingLinkHref: '/pricing',
+    },
+    inlineCtas: {
+      afterScroll: {
+        headline: 'Ready to put your reception on autopilot?',
+        ctaText: 'Start Your 14-Day Free Trial',
+        ctaLink: '/start-free-trial/business',
+      },
+      afterFeatures: {
+        headline: 'Start Your 14-Day Free Trial',
+        ctaText: 'Start Your 14-Day Free Trial',
+        ctaLink: '/start-free-trial/business',
+      },
+    },
     titleFraque: 'Frequently Asked Questions',
     fallbackFaqs: [
-      { question: 'How much does The Daisy cost?', answer: 'The Daisy offers flexible pricing tiers starting with a 14-day free trial. Visit our pricing page for detailed plan comparisons.' },
-      { question: 'Can I migrate from my current booking system?', answer: 'Yes. Our onboarding team helps you migrate your client data, booking history, and preferences from your existing system at no extra cost.' },
-      { question: 'Does The Daisy work in Arabic?', answer: 'Yes. The Daisy is fully multilingual with complete Arabic and English support, including RTL interface, Arabic customer communications, and a multilingual AI receptionist — with more languages on the way.' },
-      { question: 'What is the AI receptionist?', answer: 'The AI receptionist handles customer inquiries, booking requests, and payments 24/7 — even outside business hours. It speaks both Arabic and English and learns your business preferences over time.' },
-      { question: 'Is there a free trial?', answer: 'Yes. Every new business gets a 14-day free trial with full access to all features. No credit card required to start.' },
+      { question: 'Can I migrate from my current booking system?', answer: 'Yes. Our onboarding team helps you migrate your client data, booking history, and preferences at no extra cost.' },
+      { question: 'Does The Daisy work in Arabic?', answer: 'Yes. Fully multilingual — your AI receptionist speaks Arabic and English fluently. Customer communications, your booking page, and the entire interface support both languages with full RTL. More languages coming soon.' },
+      { question: 'Do I need to change how I run my business?', answer: 'No. Daisy adapts to your workflow. Keep your brand, your processes, your team. We just handle your reception and give you better tools.' },
+      { question: 'Is my data safe?', answer: 'Yes. Enterprise-grade encryption, secure payment processing, and your data is never shared. You own your customer data completely.' },
     ],
-    growth: {
-      title: 'Stop Paying for 8 Separate Tools',
-      description:
-        'Booking, marketing, payments, staff scheduling, customer acquisition, analytics, brand management, and AI reception — Daisy replaces them all. One subscription, one dashboard, one login.',
-      subtitle: 'MARKETPLACE',
-      buttonLearn: 'GET THE APP',
-      buttonLink: '/start-free-trial/business',
-      imageUrl: '/images/pages/business/growth.png',
-    },
     scrollSections: [
       {
         sortId: 1,
@@ -98,14 +120,14 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'Smart Booking',
-          text: 'AI-Powered Appointment Management',
+          title: 'A Customer Has a Question',
+          text: 'Your AI Receptionist Responds Instantly',
           description:
-            'Let Daisy\'s AI receptionist handle bookings 24/7, so you never miss a customer.',
+            "A customer messages at 9 PM asking about availability for a balayage appointment. Your AI receptionist responds within seconds — friendly, professional, in their language.",
           listSub: [
-            '24/7 AI booking assistant',
-            'Automated reminders & confirmations',
-            'Smart calendar management',
+            'Responds in Arabic and English',
+            'Available 24/7, even holidays',
+            'Knows your services and pricing',
           ],
         },
       },
@@ -138,14 +160,14 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'Customer Acquisition',
-          text: '360° Customer Growth Engine',
+          title: 'Appointment Booked in Minutes',
+          text: 'Smart Scheduling, Zero Conflicts',
           description:
-            'Grow your client base without the guesswork.',
+            "The AI checks your real-time availability, suggests the best time slot, and books the appointment — no double-bookings, no back-and-forth.",
           listSub: [
-            'Marketplace visibility to thousands of users',
-            'Cashback incentives that drive repeat visits',
-            'Integrated marketing campaigns',
+            'Checks staff availability automatically',
+            'Sends instant confirmation',
+            'Avoids scheduling conflicts',
           ],
         },
       },
@@ -192,14 +214,14 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'Brand Control',
-          text: 'Your Brand, Your Way',
+          title: 'Payment Handled Before They Arrive',
+          text: 'Deposits, Full Payments, or Pay-at-Visit',
           description:
-            'Customize your booking page, notifications, and customer experience to match your brand.',
+            "The customer pays a deposit or the full amount right in the chat. By the time they walk in, everything is settled.",
           listSub: [
-            'Customizable booking page',
-            'White-label communications',
-            'Branded customer experience',
+            'Secure in-chat payment',
+            'Deposit or full payment options',
+            'Automatic receipts sent',
           ],
         },
       },
@@ -231,59 +253,15 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'Business Analytics',
-          text: 'Data-Driven Decisions',
+          title: 'Confirmed and on Your Calendar',
+          text: "You Didn't Lift a Finger",
           description:
-            'See which services, staff, and promotions drive revenue — and act on it.',
+            "The appointment appears on your calendar with all the details — service, time, staff member, payment status. Your customer got a perfect experience. You were home with your family.",
           listSub: [
-            'Customer insights & trends',
-            'Staff performance metrics',
-            'Booking analytics dashboard',
+            'Synced to your business calendar',
+            'Customer gets reminder before visit',
+            'Staff notified automatically',
           ],
-        },
-      },
-      {
-        sortId: 5,
-        mainImage: '/images/pages/business/scroll/device-mockups.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
-        secondBg: '/images/pages/business/scroll/stars.png',
-        styleMainPictureJSON: {
-          position: 'absolute',
-          padding: '24px',
-          width: '100%',
-          height: '100%',
-          objectFit: 'contain',
-        },
-        styleFirstBgJSON: {
-          position: 'absolute',
-          bottom: '-40px',
-          left: '0',
-          width: '300px',
-          height: '300px',
-          opacity: 0.6,
-        },
-        styleSecondBgJSON: {
-          position: 'absolute',
-          top: '-70px',
-          right: '-70px',
-          width: '200px',
-          height: '200px',
-          opacity: 0.4,
-        },
-        styleImageMobile: {
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-          bottom: '0',
-          left: '40px',
-        },
-        mainImageWidth: 300,
-        mainImageHeight: 500,
-        infoScroll: {
-          title: 'Get Started',
-          text: 'Ready to Grow Your Business?',
-          description:
-            'Download The Daisy app and start managing your bookings, growing your customer base, and taking your business to the next level.',
         },
       },
     ],
@@ -292,19 +270,19 @@ export const businessPageData: I18nContent<LandingPageContent> = {
   ar: {
     hero: {
       categoryLabel: 'لأصحاب الأعمال',
-      headline: 'طوّر أعمالك التجميلية مع الذكاء الاصطناعي',
+      headline: 'توقف عن خسارة العملاء بسبب المكالمات الفائتة',
       subHeadline:
-        'استبدل 8 أدوات بمنصة واحدة. موظف استقبال ذكي، استقطاب العملاء، الحجوزات، المدفوعات، والتسويق — كل ذلك بعلامتك التجارية.',
-      ctaText: 'ابدأ تجربتك المجانية',
+        'موظف الاستقبال الذكي من ديزي يجيب على كل استفسار، يحجز كل موعد، ويعالج كل دفعة — على مدار الساعة. منصة واحدة تحل محل مكتب الاستقبال بالكامل.',
+      ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
       ctaLink: '/start-free-trial/business',
       answerBlock: {
         question: 'ما هو ذا ديزي لأعمال التجميل؟',
         answer:
-          'ذا ديزي هو منصة أعمال تجميل مدعومة بالذكاء الاصطناعي تجمع بين إدارة الحجوزات واستقطاب العملاء والمدفوعات وجدولة الموظفين والتسويق في نظام واحد. يستبدل 8 أدوات منفصلة بمنصة ثنائية اللغة (عربي/إنجليزي) مع موظف استقبال ذكي يعمل على مدار الساعة.',
+          'ذا ديزي هو منصة أعمال تجميل مدعومة بالذكاء الاصطناعي تجمع بين موظف استقبال ذكي يعمل على مدار الساعة مع إدارة الحجوزات واستقطاب العملاء والمدفوعات وجدولة الموظفين والتسويق. يستبدل 8 أدوات منفصلة بمنصة متعددة اللغات — تدعم حاليًا العربية والإنجليزية.',
       },
     },
     platformStrengths: {
-      headline: 'منصة واحدة تحل محل جميع أدواتك',
+      headline: 'كل ما تحتاجه لإدارة عملك',
       subHeadline:
         'توقف عن الدفع لـ 8 أدوات منفصلة. ديزي تجمع كل ما تحتاجه لإدارة وتنمية أعمالك في مجال التجميل.',
       capabilities: [
@@ -323,23 +301,45 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         { value: '+10', context: 'لغة مدعومة' },
       ],
     },
+    socialProofStats: [
+      { value: '8', context: 'أدوات تم استبدالها بمنصة واحدة' },
+      { value: '24/7', context: 'موظف استقبال ذكي — لا يفوت أي مكالمة' },
+      { value: '+10', context: 'لغة مدعومة' },
+    ],
+    howItWorks: {
+      steps: [
+        { title: 'سجّل وأخبرنا عن عملك', description: 'يستغرق 5 دقائق. أخبرنا عن خدماتك وموظفيك وساعات عملك.' },
+        { title: 'فريقنا يساعدك في الإعداد', description: 'ننقل بياناتك ونُعدّ موظف الاستقبال الذكي ونختبر كل شيء معك.' },
+        { title: 'ابدأ العمل — موظف الاستقبال الذكي يتولى المهمة', description: 'العملاء يحصلون على ردود فورية. أنت تحصل على التحكم.' },
+      ],
+    },
+    pricingHook: {
+      headline: 'ابدأ مجانًا. انمُ بالسرعة التي تناسبك.',
+      body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولار/شهريًا. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي — عملاؤك الحاليون، بدون أي عمولة.',
+      ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
+      ctaLink: '/start-free-trial/business',
+      pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة ←',
+      pricingLinkHref: '/pricing',
+    },
+    inlineCtas: {
+      afterScroll: {
+        headline: 'مستعد لوضع استقبالك على الطيار الآلي؟',
+        ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
+        ctaLink: '/start-free-trial/business',
+      },
+      afterFeatures: {
+        headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
+        ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
+        ctaLink: '/start-free-trial/business',
+      },
+    },
     titleFraque: 'أسئلة شائعة',
     fallbackFaqs: [
-      { question: 'كم تكلفة ذا ديزي؟', answer: 'تقدم ذا ديزي باقات أسعار مرنة تبدأ بتجربة مجانية لمدة 14 يومًا. زر صفحة الأسعار لمقارنة الباقات بالتفصيل.' },
-      { question: 'هل يمكنني الانتقال من نظام الحجز الحالي؟', answer: 'نعم. يساعدك فريق الإعداد لدينا في نقل بيانات عملائك وسجل الحجوزات وتفضيلاتك من نظامك الحالي دون أي تكلفة إضافية.' },
-      { question: 'هل يعمل ذا ديزي باللغة العربية؟', answer: 'نعم. ذا ديزي متعدد اللغات بالكامل مع دعم كامل للعربية والإنجليزية، بما في ذلك واجهة RTL واتصالات العملاء بالعربية وموظف استقبال ذكي متعدد اللغات — مع المزيد من اللغات قريبًا.' },
-      { question: 'ما هو موظف الاستقبال الذكي؟', answer: 'يتعامل موظف الاستقبال الذكي مع استفسارات العملاء وطلبات الحجز والمدفوعات على مدار الساعة — حتى خارج ساعات العمل. يتحدث العربية والإنجليزية ويتعلم تفضيلات عملك بمرور الوقت.' },
-      { question: 'هل هناك تجربة مجانية؟', answer: 'نعم. يحصل كل عمل جديد على تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان للبدء.' },
+      { question: 'هل يمكنني الانتقال من نظام الحجز الحالي؟', answer: 'نعم. يساعدك فريق الإعداد لدينا في نقل بيانات عملائك وسجل الحجوزات وتفضيلاتك دون أي تكلفة إضافية.' },
+      { question: 'هل يعمل ذا ديزي باللغة العربية؟', answer: 'نعم. متعدد اللغات بالكامل — موظف الاستقبال الذكي يتحدث العربية والإنجليزية بطلاقة. اتصالات العملاء وصفحة الحجز والواجهة بالكامل تدعم اللغتين مع RTL كامل. المزيد من اللغات قريبًا.' },
+      { question: 'هل أحتاج لتغيير طريقة إدارة عملي؟', answer: 'لا. ديزي يتكيف مع سير عملك. احتفظ بعلامتك التجارية وعملياتك وفريقك. نحن فقط نتولى الاستقبال ونمنحك أدوات أفضل.' },
+      { question: 'هل بياناتي آمنة؟', answer: 'نعم. تشفير بمستوى المؤسسات ومعالجة دفع آمنة وبياناتك لا تُشارك أبدًا. أنت تملك بيانات عملائك بالكامل.' },
     ],
-    growth: {
-      title: 'توقف عن الدفع لـ 8 أدوات منفصلة',
-      description:
-        'الحجوزات، التسويق، المدفوعات، جدولة الموظفين، استقطاب العملاء، التحليلات، إدارة العلامة التجارية، والاستقبال الذكي — ديزي تستبدلهم جميعًا. اشتراك واحد، لوحة تحكم واحدة، تسجيل دخول واحد.',
-      subtitle: 'السوق العام',
-      buttonLearn: 'احصل على التطبيق',
-      buttonLink: '/start-free-trial/business',
-      imageUrl: '/images/pages/business/growth.png',
-    },
     scrollSections: [
       {
         sortId: 1,
@@ -384,14 +384,14 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'الحجز الذكي',
-          text: 'إدارة المواعيد بالذكاء الاصطناعي',
+          title: 'عميل لديه سؤال',
+          text: 'موظف الاستقبال الذكي يرد فورًا',
           description:
-            'دع مساعد ديزي الذكي يتولى الحجوزات على مدار الساعة، حتى لا تفوتك أي فرصة. أدِر تقويمك وجداول الموظفين وفترات الخدمة في مكان واحد.',
+            'عميل يراسل الساعة 9 مساءً يسأل عن توفر موعد للبالاياج. موظف الاستقبال الذكي يرد خلال ثوانٍ — ودود، محترف، بلغته.',
           listSub: [
-            'مساعد حجز ذكي يعمل على مدار الساعة',
-            'تذكيرات وتأكيدات تلقائية',
-            'إدارة تقويم ذكية',
+            'يرد بالعربية والإنجليزية',
+            'متاح على مدار الساعة، حتى في العطل',
+            'يعرف خدماتك وأسعارك',
           ],
         },
       },
@@ -423,14 +423,14 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'اكتساب العملاء',
-          text: 'محرك نمو العملاء 360°',
+          title: 'الموعد محجوز في دقائق',
+          text: 'جدولة ذكية، بدون تعارضات',
           description:
-            'اجذب عملاء جدد من خلال سوقنا ومكافآت الاسترداد النقدي وأدوات التسويق المدمجة. نمِّ قاعدة عملائك دون تخمين.',
+            'يتحقق الذكاء الاصطناعي من توافرك الفعلي ويقترح أفضل وقت ويحجز الموعد — بدون حجوزات مزدوجة، بدون تراسل متكرر.',
           listSub: [
-            'ظهور في السوق أمام آلاف المستخدمين',
-            'حوافز استرداد نقدي تدفع لتكرار الزيارات',
-            'حملات تسويقية متكاملة',
+            'يتحقق من توافر الموظفين تلقائيًا',
+            'يرسل تأكيدًا فوريًا',
+            'يتجنب تعارض المواعيد',
           ],
         },
       },
@@ -477,14 +477,14 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'التحكم بالعلامة التجارية',
-          text: 'علامتك التجارية، بأسلوبك',
+          title: 'الدفع تم قبل وصولهم',
+          text: 'عربون، دفع كامل، أو عند الزيارة',
           description:
-            'حافظ على السيطرة الكاملة على هوية علامتك التجارية مع حلول العلامة البيضاء. خصص صفحة الحجز والإشعارات وتجربة العملاء لتتناسب مع علامتك.',
+            'العميل يدفع عربونًا أو المبلغ الكامل مباشرة في المحادثة. عند وصوله، كل شيء مُنجز.',
           listSub: [
-            'صفحة حجز قابلة للتخصيص',
-            'اتصالات بعلامتك التجارية',
-            'تجربة عملاء مخصصة',
+            'دفع آمن في المحادثة',
+            'خيارات عربون أو دفع كامل',
+            'إيصالات تلقائية تُرسل',
           ],
         },
       },
@@ -516,59 +516,15 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'تحليلات الأعمال',
-          text: 'قرارات مبنية على البيانات',
+          title: 'مؤكد ومسجل في تقويمك',
+          text: 'لم تحرك ساكنًا',
           description:
-            'اكتشف أي الخدمات والموظفين والعروض تحقق الإيرادات — واتخذ إجراءً.',
+            'الموعد يظهر في تقويمك بكل التفاصيل — الخدمة، الوقت، الموظف، حالة الدفع. عميلك حصل على تجربة مثالية. وأنت كنت في المنزل مع عائلتك.',
           listSub: [
-            'رؤى واتجاهات العملاء',
-            'مقاييس أداء الموظفين',
-            'لوحة تحكم تحليلات الحجوزات',
+            'مزامنة مع تقويم عملك',
+            'العميل يحصل على تذكير قبل الزيارة',
+            'الموظفون يُبلَّغون تلقائيًا',
           ],
-        },
-      },
-      {
-        sortId: 5,
-        mainImage: '/images/pages/business/scroll/device-mockups.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
-        secondBg: '/images/pages/business/scroll/stars.png',
-        styleMainPictureJSON: {
-          position: 'absolute',
-          padding: '24px',
-          width: '100%',
-          height: '100%',
-          objectFit: 'contain',
-        },
-        styleFirstBgJSON: {
-          position: 'absolute',
-          bottom: '-40px',
-          left: '0',
-          width: '300px',
-          height: '300px',
-          opacity: 0.6,
-        },
-        styleSecondBgJSON: {
-          position: 'absolute',
-          top: '-70px',
-          right: '-70px',
-          width: '200px',
-          height: '200px',
-          opacity: 0.4,
-        },
-        styleImageMobile: {
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-          bottom: '0',
-          left: '40px',
-        },
-        mainImageWidth: 300,
-        mainImageHeight: 500,
-        infoScroll: {
-          title: 'ابدأ الآن',
-          text: 'هل أنت مستعد لتنمية عملك؟',
-          description:
-            'حمّل تطبيق ديزي وابدأ في إدارة حجوزاتك وتنمية قاعدة عملائك والارتقاء بعملك.',
         },
       },
     ],
