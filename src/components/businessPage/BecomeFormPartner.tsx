@@ -26,9 +26,10 @@ const ProfileForm = dynamic(
 interface BecomeFormPartnerProps {
   defaultType?: 'business' | 'freelance';
   title?: string;
+  subtitle?: string;
 }
 
-export const BecomeFormPartner = ({ defaultType, title }: BecomeFormPartnerProps) => {
+export const BecomeFormPartner = ({ defaultType, title, subtitle }: BecomeFormPartnerProps) => {
   const fullPathname = usePathname();
   const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const data = t(becomePartnerData, locale);
@@ -43,7 +44,7 @@ export const BecomeFormPartner = ({ defaultType, title }: BecomeFormPartnerProps
           {title || data.title}
         </h2>
         <p className="text-center text-[#D5D9D9]  mt-3 ltr:font-montserrat">
-          {data.subtitle}
+          {subtitle || data.subtitle}
         </p>
       </div>
       <ProfileForm defaultType={defaultType} />
