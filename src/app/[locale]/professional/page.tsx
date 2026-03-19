@@ -70,6 +70,7 @@ export default function ProfessionalPage({ params }: { params: { locale: string 
           subHeadline={pageData.hero.subHeadline}
           ctaText={pageData.hero.ctaText}
           ctaLink={pageData.hero.ctaLink}
+          trustLine={pageData.hero.trustLine}
           answerBlock={pageData.hero.answerBlock}
         />
       )}

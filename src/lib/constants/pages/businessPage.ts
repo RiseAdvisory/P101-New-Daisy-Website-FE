@@ -10,6 +10,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         "Daisy's AI receptionist answers every inquiry, books every appointment, and processes every payment — 24/7. One platform replaces your entire front desk.",
       ctaText: 'Start Your 14-Day Free Trial',
       ctaLink: '/start-free-trial/business',
+      trustLine: 'No credit card required. Our team helps you set up.',
       answerBlock: {
         question: 'What is The Daisy for beauty businesses?',
         answer:
@@ -275,6 +276,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         'موظف الاستقبال الذكي من ديزي يجيب على كل استفسار، يحجز كل موعد، ويعالج كل دفعة — على مدار الساعة. منصة واحدة تحل محل مكتب الاستقبال بالكامل.',
       ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
       ctaLink: '/start-free-trial/business',
+      trustLine: 'لا حاجة لبطاقة ائتمان. فريقنا يساعدك في الإعداد.',
       answerBlock: {
         question: 'ما هو ذا ديزي لأعمال التجميل؟',
         answer:

@@ -7,6 +7,7 @@ interface LandingHeroProps {
   subHeadline: string;
   ctaText: string;
   ctaLink: string;
+  trustLine?: string;
   answerBlock?: {
     question: string;
     answer: string;
@@ -19,6 +20,7 @@ export const LandingHero = ({
   subHeadline,
   ctaText,
   ctaLink,
+  trustLine,
   answerBlock,
 }: LandingHeroProps) => {
   return (
@@ -39,6 +41,9 @@ export const LandingHero = ({
         >
           {ctaText}
         </Link>
+        {trustLine && (
+          <p className="text-[#D5D9D9] text-sm mt-4">{trustLine}</p>
+        )}
         {answerBlock && (
           <div
             className="mt-12 text-left rtl:text-right max-w-2xl mx-auto bg-white/10 rounded-xl p-6 [&_h3]:text-white [&_p]:text-[#B0C4C3]"

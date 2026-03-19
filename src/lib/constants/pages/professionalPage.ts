@@ -10,6 +10,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         "Stop being your own receptionist. Daisy's AI manages your bookings, answers client questions, and processes payments — while your hands are busy doing what you do best.",
       ctaText: 'Start Your Free Trial',
       ctaLink: '/start-free-trial/professional',
+      trustLine: 'Free to join. No credit card required.',
       answerBlock: {
         question: 'What is The Daisy for beauty professionals?',
         answer:
@@ -273,6 +274,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         'توقف عن كونك موظف استقبال نفسك. الذكاء الاصطناعي في ديزي يدير حجوزاتك، يجيب على أسئلة العملاء، ويعالج المدفوعات — بينما يداك مشغولتان بما تتقنه.',
       ctaText: 'ابدأ تجربتك المجانية',
       ctaLink: '/start-free-trial/professional',
+      trustLine: 'الانضمام مجاني. لا حاجة لبطاقة ائتمان.',
       answerBlock: {
         question: 'ما هو ذا ديزي لمتخصصي التجميل؟',
         answer:

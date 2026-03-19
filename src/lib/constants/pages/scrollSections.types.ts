@@ -38,6 +38,7 @@ export interface HeroData {
   subHeadline: string;
   ctaText: string;
   ctaLink: string;
+  trustLine?: string;
   answerBlock?: {
     question: string;
     answer: string;

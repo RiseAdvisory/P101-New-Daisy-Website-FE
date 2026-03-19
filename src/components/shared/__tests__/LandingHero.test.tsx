@@ -55,4 +55,19 @@ describe('LandingHero', () => {
     render(<LandingHero {...defaultProps} />);
     expect(screen.queryByTestId('geo-answer')).not.toBeInTheDocument();
   });
+
+  it('renders trust line when provided', () => {
+    render(
+      <LandingHero
+        {...defaultProps}
+        trustLine="No credit card required."
+      />,
+    );
+    expect(screen.getByText('No credit card required.')).toBeInTheDocument();
+  });
+
+  it('does not render trust line when not provided', () => {
+    render(<LandingHero {...defaultProps} />);
+    expect(screen.queryByText('No credit card required.')).not.toBeInTheDocument();
+  });
 });
