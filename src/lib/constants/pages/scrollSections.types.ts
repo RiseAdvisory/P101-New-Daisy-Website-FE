@@ -58,12 +58,47 @@ export interface PlatformStrengthsData {
   }>;
 }
 
+export interface HowItWorksStep {
+  title: string;
+  description: string;
+}
+
+export interface HowItWorksData {
+  steps: HowItWorksStep[];
+}
+
+export interface PricingHookData {
+  headline: string;
+  body: string;
+  ctaText: string;
+  ctaLink: string;
+  pricingLinkText: string;
+  pricingLinkHref: string;
+}
+
+export interface InlineCTAData {
+  headline: string;
+  ctaText: string;
+  ctaLink: string;
+}
+
+export interface SocialProofStat {
+  value: string;
+  context: string;
+}
+
 export interface LandingPageContent {
   hero?: HeroData;
-  platformStrengths?: PlatformStrengthsData;
-  titleFraque: string;
-  growth: GrowthData;
   scrollSections: LocalScrollSection[];
+  platformStrengths?: PlatformStrengthsData;
+  socialProofStats?: SocialProofStat[];
+  howItWorks?: HowItWorksData;
+  pricingHook?: PricingHookData;
+  inlineCtas?: {
+    afterScroll: InlineCTAData;
+    afterFeatures: InlineCTAData;
+  };
+  titleFraque: string;
   fallbackFaqs?: FaqItem[];
 }
 
