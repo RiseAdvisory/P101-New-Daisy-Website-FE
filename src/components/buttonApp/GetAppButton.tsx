@@ -30,7 +30,7 @@ export const GetAppButton = ({
         className,
       )}
     >
-      <Link href={'/get-the-app'}>
+      <Link href={'/start-free-trial/business'}>
         <div className="flex justify-center items-center hover:bg-white group hover:text-primary cursor-pointer">
           <button className=" border-r-2 rtl:border-none rtl:ml-2 border-[#586968] pr-[11px]">
             <AppStoreIcons w="15" h="17" className="group-hover:fill-primary" />

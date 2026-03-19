@@ -9,7 +9,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       subHeadline:
         'Manage bookings, build your client base, and track your earnings — all from one app. Flexible scheduling with 24/7 AI support.',
       ctaText: 'Start Free Trial',
-      ctaLink: '/get-the-app',
+      ctaLink: '/start-free-trial/professional',
       answerBlock: {
         question: 'What is The Daisy for beauty professionals?',
         answer:
@@ -52,7 +52,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         'The Daisy marketplace brings customers to you — people actively searching for beauty professionals nearby. Built-in cashback rewards keep them coming back, so you spend less time marketing and more time doing what you love.',
       subtitle: 'MARKETPLACE',
       buttonLearn: 'GET THE APP',
-      buttonLink: '/get-the-app',
+      buttonLink: '/start-free-trial/professional',
       imageUrl: '/images/pages/professional/growth.png',
     },
     scrollSections: [
@@ -296,7 +296,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       subHeadline:
         'أدِر حجوزاتك، وابنِ قاعدة عملائك، وتابع أرباحك — كل ذلك من تطبيق واحد. جدولة مرنة مع دعم الذكاء الاصطناعي على مدار الساعة.',
       ctaText: 'ابدأ تجربتك المجانية',
-      ctaLink: '/get-the-app',
+      ctaLink: '/start-free-trial/professional',
       answerBlock: {
         question: 'ما هو ذا ديزي لمتخصصي التجميل؟',
         answer:
@@ -339,7 +339,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         'سوق ذا ديزي يجلب لك العملاء — أشخاص يبحثون بنشاط عن متخصصي تجميل بالقرب منهم. مكافآت الكاش باك المدمجة تجعلهم يعودون، فتقضي وقتًا أقل في التسويق ووقتًا أكثر فيما تحب.',
       subtitle: 'السوق العام',
       buttonLearn: 'احصل على التطبيق',
-      buttonLink: '/get-the-app',
+      buttonLink: '/start-free-trial/professional',
       imageUrl: '/images/pages/professional/growth.png',
     },
     scrollSections: [

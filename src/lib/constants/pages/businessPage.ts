@@ -9,7 +9,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       subHeadline:
         'Replace 8 tools with one platform. AI receptionist, customer acquisition, booking, payments, and marketing — all with your brand, your way.',
       ctaText: 'Start Free Trial',
-      ctaLink: '/get-the-app',
+      ctaLink: '/start-free-trial/business',
       answerBlock: {
         question: 'What is The Daisy for beauty businesses?',
         answer:
@@ -50,7 +50,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         'Booking, marketing, payments, staff scheduling, customer acquisition, analytics, brand management, and AI reception — Daisy replaces them all. One subscription, one dashboard, one login.',
       subtitle: 'MARKETPLACE',
       buttonLearn: 'GET THE APP',
-      buttonLink: '/get-the-app',
+      buttonLink: '/start-free-trial/business',
       imageUrl: '/images/pages/business/growth.png',
     },
     scrollSections: [
@@ -296,7 +296,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       subHeadline:
         'استبدل 8 أدوات بمنصة واحدة. موظف استقبال ذكي، استقطاب العملاء، الحجوزات، المدفوعات، والتسويق — كل ذلك بعلامتك التجارية.',
       ctaText: 'ابدأ تجربتك المجانية',
-      ctaLink: '/get-the-app',
+      ctaLink: '/start-free-trial/business',
       answerBlock: {
         question: 'ما هو ذا ديزي لأعمال التجميل؟',
         answer:
@@ -337,7 +337,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         'الحجوزات، التسويق، المدفوعات، جدولة الموظفين، استقطاب العملاء، التحليلات، إدارة العلامة التجارية، والاستقبال الذكي — ديزي تستبدلهم جميعًا. اشتراك واحد، لوحة تحكم واحدة، تسجيل دخول واحد.',
       subtitle: 'السوق العام',
       buttonLearn: 'احصل على التطبيق',
-      buttonLink: '/get-the-app',
+      buttonLink: '/start-free-trial/business',
       imageUrl: '/images/pages/business/growth.png',
     },
     scrollSections: [
