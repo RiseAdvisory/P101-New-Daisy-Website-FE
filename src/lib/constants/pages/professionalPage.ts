@@ -42,6 +42,8 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       { question: 'Can I set my own schedule?', answer: 'Yes. You have full control over your availability, working hours, break times, and can block time for personal appointments.' },
       { question: 'How does payment work?', answer: 'Your earnings are tracked in real-time in the app. Payments are processed securely and deposited to your account on a regular schedule.' },
       { question: 'Do I need to work at a salon to join?', answer: 'No. Freelance professionals, independent stylists, and mobile service providers are all welcome on The Daisy.' },
+      { question: 'Is there a fee or commission?', answer: 'Joining The Daisy is free. Premium features are available through paid subscription tiers. Commission is only charged on new clients who book you through the Daisy marketplace — your existing clients, zero commission.' },
+      { question: 'How do customers find my profile?', answer: 'Your profile appears in the Daisy marketplace when customers search for beauty services in your area. The more complete your profile and portfolio, the higher your visibility.' },
       { question: 'Is The Daisy available in Arabic?', answer: 'Yes. The Daisy is fully multilingual with complete Arabic and English support throughout the app, with more languages coming soon.' },
     ],
     growth: {
@@ -137,15 +139,15 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'Client Management',
-          text: 'Build Lasting Relationships',
+          title: 'AI Booking Assistant',
+          text: 'Never Miss a Booking Again',
           description:
-            'Build stronger relationships and deliver personalized services.',
+            "Daisy's AI handles inquiries, bookings, and payments while you're with a client. It works 24/7 — answering questions, confirming appointments, and processing payments even when you can't pick up the phone.",
           listSub: [
-            'Detailed client profiles',
-            'Appointment history tracking',
-            'Client preference notes',
-            'Automatic follow-ups',
+            'AI answers booking requests 24/7',
+            'Automatic payment processing',
+            'Smart conflict detection',
+            'Client communication on autopilot',
           ],
         },
       },
@@ -331,6 +333,8 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       { question: 'هل يمكنني تحديد جدولي الخاص؟', answer: 'نعم. لديك سيطرة كاملة على توافرك وساعات عملك وأوقات الراحة ويمكنك حجز وقت للمواعيد الشخصية.' },
       { question: 'كيف تعمل المدفوعات؟', answer: 'يتم تتبع أرباحك في الوقت الفعلي في التطبيق. تتم معالجة المدفوعات بشكل آمن وإيداعها في حسابك وفق جدول منتظم.' },
       { question: 'هل أحتاج للعمل في صالون للانضمام؟', answer: 'لا. المتخصصون المستقلون والمصممون المستقلون ومقدمو الخدمات المتنقلون مرحب بهم جميعًا في ذا ديزي.' },
+      { question: 'هل هناك رسوم أو عمولة؟', answer: 'الانضمام إلى ذا ديزي مجاني. الميزات المتقدمة متاحة من خلال باقات الاشتراك. العمولة تُفرض فقط على العملاء الجدد الذين يحجزون عبر سوق ذا ديزي — عملاؤك الحاليون، بدون أي عمولة.' },
+      { question: 'كيف يجد العملاء ملفي المهني؟', answer: 'يظهر ملفك المهني في سوق ذا ديزي عندما يبحث العملاء عن خدمات التجميل في منطقتك. كلما كان ملفك ومعرض أعمالك أكثر اكتمالًا، زادت ظهورك.' },
       { question: 'هل ذا ديزي متاح باللغة العربية؟', answer: 'نعم. ذا ديزي متعدد اللغات بالكامل مع دعم كامل للعربية والإنجليزية في جميع أنحاء التطبيق، مع المزيد من اللغات قريبًا.' },
     ],
     growth: {
@@ -426,15 +430,15 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'إدارة العملاء',
-          text: 'ابنِ علاقات دائمة',
+          title: 'مساعد الحجز الذكي',
+          text: 'لا تفوّت أي حجز بعد الآن',
           description:
-            'تابع عملاءك وتفضيلاتهم وسجل مواعيدهم. ابنِ علاقات أقوى وقدّم خدمات مخصصة.',
+            'الذكاء الاصطناعي في ديزي يتعامل مع الاستفسارات والحجوزات والمدفوعات أثناء انشغالك مع عميل. يعمل على مدار الساعة — يجيب على الأسئلة ويؤكد المواعيد ويعالج المدفوعات حتى عندما لا تستطيع الرد على الهاتف.',
           listSub: [
-            'ملفات تعريف مفصلة للعملاء',
-            'تتبع سجل المواعيد',
-            'ملاحظات تفضيلات العملاء',
-            'متابعات تلقائية',
+            'الذكاء الاصطناعي يجيب على طلبات الحجز على مدار الساعة',
+            'معالجة المدفوعات تلقائيًا',
+            'كشف ذكي عن تعارض المواعيد',
+            'التواصل مع العملاء بشكل آلي',
           ],
         },
       },

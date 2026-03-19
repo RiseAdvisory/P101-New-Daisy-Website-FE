@@ -27,12 +27,6 @@ const ExperienceDaisy = dynamic(
       (mod) => mod.ExperienceDaisy,
     ),
 );
-const JoinTheDaisy = dynamic(
-  () =>
-    import('@/components/joinTheDaysi/JoinTheDaysi').then(
-      (mod) => mod.JoinTheDaisy,
-    ),
-);
 const PlatformStrengths = dynamic(
   () =>
     import('@/components/shared/PlatformStrengths').then(
@@ -41,9 +35,9 @@ const PlatformStrengths = dynamic(
 );
 
 export const ProfessionalClient = ({ lang }: { lang: string }) => {
-
   const pageData = t(professionalPageData, lang);
   const dataScroll = toScrollSectionItems(pageData.scrollSections);
+  const formTitle = lang === 'ar' ? 'سجّل في ذا ديزي — مجانًا' : 'Get Listed on The Daisy — Free';
 
   return (
     <div className="w-full bg-primary md:-mt-[100px]">
@@ -66,14 +60,13 @@ export const ProfessionalClient = ({ lang }: { lang: string }) => {
         buttonLink={pageData.growth.buttonLink}
         imageUrl={pageData.growth.imageUrl}
       />
-      <JoinTheDaisy />
       <ExperienceDaisy pageType="professional" />
       <QASection
         pageType="Professional"
         titleFraque={pageData.titleFraque}
         fallbackFaqs={pageData.fallbackFaqs}
       />
-      <BecomeFormPartner defaultType="freelance" />
+      <BecomeFormPartner defaultType="freelance" title={formTitle} />
     </div>
   );
 };

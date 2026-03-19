@@ -40,10 +40,6 @@ jest.mock('@/components/experienceDaisy/ExperienceDaisy', () => ({
   ExperienceDaisy: () => <div data-testid="experience-daisy">Experience</div>,
 }));
 
-jest.mock('@/components/joinTheDaysi/JoinTheDaysi', () => ({
-  JoinTheDaisy: () => <div data-testid="join-daisy">Join</div>,
-}));
-
 jest.mock('@/components/businessPage/GrowthSection', () => ({
   GrowthSection: ({
     title,
@@ -120,7 +116,6 @@ describe('Business Page', () => {
       expect(getByTestId('locker-container')).toBeInTheDocument();
       expect(getByTestId('mobile-scroll-section')).toBeInTheDocument();
       expect(getByTestId('growth-section')).toBeInTheDocument();
-      expect(getByTestId('join-daisy')).toBeInTheDocument();
       expect(getByTestId('experience-daisy')).toBeInTheDocument();
       expect(getByTestId('qa-section')).toBeInTheDocument();
       expect(getByTestId('become-partner')).toBeInTheDocument();

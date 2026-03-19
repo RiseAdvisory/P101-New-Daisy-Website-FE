@@ -25,9 +25,10 @@ const ProfileForm = dynamic(
 
 interface BecomeFormPartnerProps {
   defaultType?: 'business' | 'freelance';
+  title?: string;
 }
 
-export const BecomeFormPartner = ({ defaultType }: BecomeFormPartnerProps) => {
+export const BecomeFormPartner = ({ defaultType, title }: BecomeFormPartnerProps) => {
   const fullPathname = usePathname();
   const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const data = t(becomePartnerData, locale);
@@ -39,7 +40,7 @@ export const BecomeFormPartner = ({ defaultType }: BecomeFormPartnerProps) => {
     >
       <div className="flex flex-col mx-auto text-center pt-20 px-3">
         <h2 className="text-center text-white text-[32px] leading-10">
-          {data.title}
+          {title || data.title}
         </h2>
         <p className="text-center text-[#D5D9D9]  mt-3 ltr:font-montserrat">
           {data.subtitle}

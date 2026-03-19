@@ -45,9 +45,9 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       { question: 'Is there a free trial?', answer: 'Yes. Every new business gets a 14-day free trial with full access to all features. No credit card required to start.' },
     ],
     growth: {
-      title: 'Maximize Bookings, Engage New Clients, and Grow Your Business with The Daisy.',
+      title: 'Stop Paying for 8 Separate Tools',
       description:
-        'Leverage our platform to drive bookings, attract high-value clients, and manage your operations seamlessly.',
+        'Booking, marketing, payments, staff scheduling, customer acquisition, analytics, brand management, and AI reception — Daisy replaces them all. One subscription, one dashboard, one login.',
       subtitle: 'MARKETPLACE',
       buttonLearn: 'GET THE APP',
       buttonLink: '/get-the-app',
@@ -336,9 +336,9 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       { question: 'هل هناك تجربة مجانية؟', answer: 'نعم. يحصل كل عمل جديد على تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان للبدء.' },
     ],
     growth: {
-      title: 'زِد حجوزاتك، جذب عملاء جدد، ونمِّ عملك مع ذا ديزي.',
+      title: 'توقف عن الدفع لـ 8 أدوات منفصلة',
       description:
-        'استفد من منصتنا لزيادة الحجوزات وجذب العملاء ذوي القيمة العالية وإدارة عملياتك بسلاسة.',
+        'الحجوزات، التسويق، المدفوعات، جدولة الموظفين، استقطاب العملاء، التحليلات، إدارة العلامة التجارية، والاستقبال الذكي — ديزي تستبدلهم جميعًا. اشتراك واحد، لوحة تحكم واحدة، تسجيل دخول واحد.',
       subtitle: 'السوق العام',
       buttonLearn: 'احصل على التطبيق',
       buttonLink: '/get-the-app',

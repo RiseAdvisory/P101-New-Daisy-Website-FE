@@ -27,12 +27,6 @@ const ExperienceDaisy = dynamic(
       (mod) => mod.ExperienceDaisy,
     ),
 );
-const JoinTheDaisy = dynamic(
-  () =>
-    import('@/components/joinTheDaysi/JoinTheDaysi').then(
-      (mod) => mod.JoinTheDaisy,
-    ),
-);
 const PlatformStrengths = dynamic(
   () =>
     import('@/components/shared/PlatformStrengths').then(
@@ -64,7 +58,6 @@ export const BusinessClient = ({ lang }: { lang: string }) => {
         buttonLink={pageData.growth.buttonLink}
         imageUrl={pageData.growth.imageUrl}
       />
-      <JoinTheDaisy />
       <ExperienceDaisy pageType="business" />
       <QASection pageType="Business" titleFraque={pageData.titleFraque} fallbackFaqs={pageData.fallbackFaqs} />
       <BecomeFormPartner defaultType="business" />
