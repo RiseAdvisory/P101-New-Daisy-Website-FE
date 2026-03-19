@@ -60,7 +60,7 @@ export const ProfessionalClient = ({ lang }: { lang: string }) => {
         buttonLink={pageData.growth.buttonLink}
         imageUrl={pageData.growth.imageUrl}
       />
-      <ExperienceDaisy pageType="professional" />
+      <ExperienceDaisy pageType="professional" ctaLink="/start-free-trial/professional" ctaText="Start Your Free Trial" />
       <QASection
         pageType="Professional"
         titleFraque={pageData.titleFraque}

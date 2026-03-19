@@ -58,7 +58,7 @@ export const BusinessClient = ({ lang }: { lang: string }) => {
         buttonLink={pageData.growth.buttonLink}
         imageUrl={pageData.growth.imageUrl}
       />
-      <ExperienceDaisy pageType="business" />
+      <ExperienceDaisy pageType="business" ctaLink="/start-free-trial/business" ctaText="Start Your Free Trial" />
       <QASection pageType="Business" titleFraque={pageData.titleFraque} fallbackFaqs={pageData.fallbackFaqs} />
       <BecomeFormPartner defaultType="business" />
     </div>
