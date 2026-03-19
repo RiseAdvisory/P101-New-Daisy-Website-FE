@@ -114,7 +114,7 @@ export const glossaryEntries: GlossaryEntry[] = [
       {
         question: 'Does Daisy\'s AI receptionist work in Arabic?',
         answer:
-          'Yes. Daisy\'s AI receptionist supports full bilingual operation in both Arabic and English, making it ideal for GCC markets. It can switch languages naturally within conversations.',
+          'Yes. Daisy\'s AI receptionist supports full multilingual operation in Arabic, English, and more, making it ideal for GCC markets. It can switch languages naturally within conversations.',
       },
       {
         question: 'How does an AI receptionist handle salon bookings?',

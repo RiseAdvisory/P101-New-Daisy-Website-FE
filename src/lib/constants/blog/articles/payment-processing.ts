@@ -624,7 +624,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <li><strong>Commission on bookings:</strong> None through Square itself, but Square Appointments charges a monthly fee</li>
 <li><strong>Monthly fee:</strong> Free basic plan; Plus plan at $29/month per location; Premium at $69/month</li>
 <li><strong>Payout speed:</strong> 1-2 business days (instant transfer available for additional fee)</li>
-<li><strong>Key consideration:</strong> Square is a solid general-purpose POS but lacks beauty-specific features like AI booking, integrated WhatsApp communication, and bilingual Arabic/English support. You may need additional tools to fill the gaps.</li>
+<li><strong>Key consideration:</strong> Square is a solid general-purpose POS but lacks beauty-specific features like AI booking, integrated WhatsApp communication, and multilingual Arabic/English support. You may need additional tools to fill the gaps.</li>
 </ul>
 
 <h3>Fresha</h3>
@@ -698,7 +698,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <h3>Choose an Integrated Salon Platform (Like The Daisy) If:</h3>
 <ul>
 <li>You want payment processing, booking, client management, and communication in one system</li>
-<li>You need bilingual Arabic/English support for clients and staff</li>
+<li>You need multilingual support (Arabic, English, and more) for clients and staff</li>
 <li>You want zero commission on bookings &mdash; your growth should not increase your platform costs disproportionately</li>
 <li>You value AI-powered features like automated booking, smart scheduling, and predictive analytics alongside payment processing</li>
 <li>You want next-business-day payouts without extra fees</li>

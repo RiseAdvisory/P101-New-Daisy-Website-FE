@@ -9,11 +9,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       subHeadline:
         'Manage bookings, build your client base, and track your earnings — all from one app. Flexible scheduling with 24/7 AI support.',
       ctaText: 'Start Free Trial',
-      ctaLink: '/get-the-app',
+      ctaLink: '/start-free-trial/professional',
       answerBlock: {
         question: 'What is The Daisy for beauty professionals?',
         answer:
-          'The Daisy is an all-in-one app for beauty and wellness professionals to manage bookings, build a client base, track earnings, and grow their career. It features flexible scheduling, 24/7 AI-powered booking, and bilingual Arabic/English support.',
+          'The Daisy is an all-in-one app for beauty and wellness professionals to manage bookings, build a client base, track earnings, and grow their career. It features flexible scheduling, 24/7 AI-powered booking, and multilingual support — currently in Arabic and English.',
       },
     },
     platformStrengths: {
@@ -33,24 +33,26 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '1', context: 'app for everything' },
         { value: '24/7', context: 'AI-powered booking' },
-        { value: '2', context: 'languages — Arabic & English' },
+        { value: '10+', context: 'languages supported' },
       ],
     },
-    titleFraque: 'Frequently Asked Question',
+    titleFraque: 'Frequently Asked Questions',
     fallbackFaqs: [
       { question: 'How do I join The Daisy as a professional?', answer: 'Download The Daisy app, create your professional profile, set your services and availability, and start accepting bookings.' },
       { question: 'Can I set my own schedule?', answer: 'Yes. You have full control over your availability, working hours, break times, and can block time for personal appointments.' },
       { question: 'How does payment work?', answer: 'Your earnings are tracked in real-time in the app. Payments are processed securely and deposited to your account on a regular schedule.' },
       { question: 'Do I need to work at a salon to join?', answer: 'No. Freelance professionals, independent stylists, and mobile service providers are all welcome on The Daisy.' },
-      { question: 'Is The Daisy available in Arabic?', answer: 'Yes. The Daisy is fully bilingual with complete Arabic and English support throughout the app.' },
+      { question: 'Is there a fee or commission?', answer: 'Joining The Daisy is free. Premium features are available through paid subscription tiers. Commission is only charged on new clients who book you through the Daisy marketplace — your existing clients, zero commission.' },
+      { question: 'How do customers find my profile?', answer: 'Your profile appears in the Daisy marketplace when customers search for beauty services in your area. The more complete your profile and portfolio, the higher your visibility.' },
+      { question: 'Is The Daisy available in Arabic?', answer: 'Yes. The Daisy is fully multilingual with complete Arabic and English support throughout the app, with more languages coming soon.' },
     ],
     growth: {
-      title: 'Expand Your Clientele, Manage Your Schedule, and Build Your Brand with The Daisy.',
+      title: 'Build Your Freelance Business Without Chasing Clients',
       description:
-        'Grow your freelance business with ease...',
+        'The Daisy marketplace brings customers to you — people actively searching for beauty professionals nearby. Built-in cashback rewards keep them coming back, so you spend less time marketing and more time doing what you love.',
       subtitle: 'MARKETPLACE',
       buttonLearn: 'GET THE APP',
-      buttonLink: '/get-the-app',
+      buttonLink: '/start-free-trial/professional',
       imageUrl: '/images/pages/professional/growth.png',
     },
     scrollSections: [
@@ -136,14 +138,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'Client Management',
-          text: 'Build Lasting Relationships',
+          title: 'AI Booking Assistant',
+          text: 'Never Miss a Booking Again',
           description:
-            'Build stronger relationships and deliver personalized services.',
+            "Daisy's AI handles inquiries, bookings, and payments while you're with a client. It works 24/7 — answering questions, confirming appointments, and processing payments even when you can't pick up the phone.",
           listSub: [
-            'Detailed client profiles',
-            'Appointment history tracking',
-            'Client preference notes',
+            'AI answers booking requests 24/7',
+            'Automatic payment processing',
+            'Smart conflict detection',
           ],
         },
       },
@@ -232,7 +234,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           title: 'Professional Profile',
           text: 'Showcase Your Expertise',
           description:
-            'Highlights your skills, experience, and client reviews. Stand out and attract more clients.',
+            'Highlight your skills, experience, and client reviews. Stand out and attract more clients.',
           listSub: [
             'Portfolio showcase',
             'Client reviews & ratings',
@@ -294,11 +296,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       subHeadline:
         'أدِر حجوزاتك، وابنِ قاعدة عملائك، وتابع أرباحك — كل ذلك من تطبيق واحد. جدولة مرنة مع دعم الذكاء الاصطناعي على مدار الساعة.',
       ctaText: 'ابدأ تجربتك المجانية',
-      ctaLink: '/get-the-app',
+      ctaLink: '/start-free-trial/professional',
       answerBlock: {
         question: 'ما هو ذا ديزي لمتخصصي التجميل؟',
         answer:
-          'ذا ديزي هو تطبيق شامل لمتخصصي التجميل والعافية لإدارة الحجوزات وبناء قاعدة العملاء وتتبع الأرباح وتطوير مسيرتهم المهنية. يتميز بجدولة مرنة وحجز مدعوم بالذكاء الاصطناعي على مدار الساعة ودعم ثنائي اللغة عربي/إنجليزي.',
+          'ذا ديزي هو تطبيق شامل لمتخصصي التجميل والعافية لإدارة الحجوزات وبناء قاعدة العملاء وتتبع الأرباح وتطوير مسيرتهم المهنية. يتميز بجدولة مرنة وحجز مدعوم بالذكاء الاصطناعي على مدار الساعة ودعم متعدد اللغات — حاليًا بالعربية والإنجليزية.',
       },
     },
     platformStrengths: {
@@ -318,7 +320,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '1', context: 'تطبيق لكل شيء' },
         { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' },
-        { value: '2', context: 'لغات — عربي وإنجليزي' },
+        { value: '+10', context: 'لغة مدعومة' },
       ],
     },
     titleFraque: 'أسئلة شائعة',
@@ -327,15 +329,17 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       { question: 'هل يمكنني تحديد جدولي الخاص؟', answer: 'نعم. لديك سيطرة كاملة على توافرك وساعات عملك وأوقات الراحة ويمكنك حجز وقت للمواعيد الشخصية.' },
       { question: 'كيف تعمل المدفوعات؟', answer: 'يتم تتبع أرباحك في الوقت الفعلي في التطبيق. تتم معالجة المدفوعات بشكل آمن وإيداعها في حسابك وفق جدول منتظم.' },
       { question: 'هل أحتاج للعمل في صالون للانضمام؟', answer: 'لا. المتخصصون المستقلون والمصممون المستقلون ومقدمو الخدمات المتنقلون مرحب بهم جميعًا في ذا ديزي.' },
-      { question: 'هل ذا ديزي متاح باللغة العربية؟', answer: 'نعم. ذا ديزي ثنائي اللغة بالكامل مع دعم كامل للعربية والإنجليزية في جميع أنحاء التطبيق.' },
+      { question: 'هل هناك رسوم أو عمولة؟', answer: 'الانضمام إلى ذا ديزي مجاني. الميزات المتقدمة متاحة من خلال باقات الاشتراك. العمولة تُفرض فقط على العملاء الجدد الذين يحجزون عبر سوق ذا ديزي — عملاؤك الحاليون، بدون أي عمولة.' },
+      { question: 'كيف يجد العملاء ملفي المهني؟', answer: 'يظهر ملفك المهني في سوق ذا ديزي عندما يبحث العملاء عن خدمات التجميل في منطقتك. كلما كان ملفك ومعرض أعمالك أكثر اكتمالًا، زادت ظهورك.' },
+      { question: 'هل ذا ديزي متاح باللغة العربية؟', answer: 'نعم. ذا ديزي متعدد اللغات بالكامل مع دعم كامل للعربية والإنجليزية في جميع أنحاء التطبيق، مع المزيد من اللغات قريبًا.' },
     ],
     growth: {
-      title: 'وسّع قاعدة عملائك، نظم جدولك، وابنِ علامتك التجارية مع ذا ديزي.',
+      title: 'ابنِ عملك الحر دون ملاحقة العملاء',
       description:
-        'نمِّ عملك الحر بسهولة...',
+        'سوق ذا ديزي يجلب لك العملاء — أشخاص يبحثون بنشاط عن متخصصي تجميل بالقرب منهم. مكافآت الكاش باك المدمجة تجعلهم يعودون، فتقضي وقتًا أقل في التسويق ووقتًا أكثر فيما تحب.',
       subtitle: 'السوق العام',
       buttonLearn: 'احصل على التطبيق',
-      buttonLink: '/get-the-app',
+      buttonLink: '/start-free-trial/professional',
       imageUrl: '/images/pages/professional/growth.png',
     },
     scrollSections: [
@@ -389,7 +393,6 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           listSub: [
             'حدد ساعات عملك الخاصة',
             'خصص وقتًا لالتزاماتك الشخصية',
-            'تحديثات الجدول في الوقت الفعلي',
             'دعم المواقع المتعددة',
           ],
         },
@@ -422,15 +425,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'إدارة العملاء',
-          text: 'ابنِ علاقات دائمة',
+          title: 'مساعد الحجز الذكي',
+          text: 'لا تفوّت أي حجز بعد الآن',
           description:
-            'تابع عملاءك وتفضيلاتهم وسجل مواعيدهم. ابنِ علاقات أقوى وقدّم خدمات مخصصة.',
+            'الذكاء الاصطناعي في ديزي يتعامل مع الاستفسارات والحجوزات والمدفوعات أثناء انشغالك مع عميل. يعمل على مدار الساعة — يجيب على الأسئلة ويؤكد المواعيد ويعالج المدفوعات حتى عندما لا تستطيع الرد على الهاتف.',
           listSub: [
-            'ملفات تعريف مفصلة للعملاء',
-            'تتبع سجل المواعيد',
-            'ملاحظات تفضيلات العملاء',
-            'متابعات تلقائية',
+            'الذكاء الاصطناعي يجيب على طلبات الحجز على مدار الساعة',
+            'معالجة المدفوعات تلقائيًا',
+            'كشف ذكي عن تعارض المواعيد',
           ],
         },
       },
@@ -485,7 +487,6 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
             'لوحة أرباح في الوقت الفعلي',
             'تقارير دفع مفصلة',
             'اتجاهات ورؤى الإيرادات',
-            'تتبع العمولات',
           ],
         },
       },
@@ -524,7 +525,6 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           listSub: [
             'عرض معرض الأعمال',
             'تقييمات ومراجعات العملاء',
-            'عرض الشهادات المهنية',
             'تخصيص قائمة الخدمات',
           ],
         },

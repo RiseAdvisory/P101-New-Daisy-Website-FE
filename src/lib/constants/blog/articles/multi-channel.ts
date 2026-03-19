@@ -462,7 +462,7 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 <ul>
 <li>Tone: Professional but warm, helpful, and approachable.</li>
 <li>Language: Match the channel's formality level (slightly more casual on Instagram, slightly more structured in email) while maintaining the same underlying personality.</li>
-<li>Bilingual consistency: If you serve Arabic and English speakers, ensure both languages are available across all channels with equal quality.</li>
+<li>Multilingual consistency: If you serve Arabic and English speakers (or other languages), ensure all languages are available across all channels with equal quality.</li>
 </ul>
 
 <h3>Step 5: Automate Where Appropriate</h3>

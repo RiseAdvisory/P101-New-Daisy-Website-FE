@@ -42,7 +42,7 @@ export const experienceDaisyData: ExperienceDaisyData = {
     en: {
       title: 'Grow, Manage, and Thrive with The Daisy',
       subtitle:
-        'Your solution for managing bookings and elevating your business.',
+        'Download and start your 14-day free trial — no credit card required.',
       description: 'Download Now!',
       phoneMobileImage: phoneMobile,
       phoneDesktopImage: phoneDesktop,
@@ -50,7 +50,7 @@ export const experienceDaisyData: ExperienceDaisyData = {
     ar: {
       title: 'نمِّ، نظم، وازدهر مع ذا ديزي',
       subtitle:
-        'حلّك لإدارة الحجوزات والارتقاء بعملك.',
+        'حمّل وابدأ تجربتك المجانية لمدة 14 يومًا — لا حاجة لبطاقة ائتمان.',
       description: 'حمل التطبيق الآن!',
       phoneMobileImage: phoneMobile,
       phoneDesktopImage: phoneDesktop,
@@ -59,17 +59,17 @@ export const experienceDaisyData: ExperienceDaisyData = {
 
   professional: {
     en: {
-      title: 'Connect, Engage, and Build with The Daisy',
+      title: 'Your Next Client Is Already Searching',
       subtitle:
-        'Empowering you to grow your business and reach more clients.',
+        'Download and start your free trial — go live in minutes.',
       description: 'Download Now!',
       phoneMobileImage: phoneMobile,
       phoneDesktopImage: phoneDesktop,
     },
     ar: {
-      title: 'تواصل، تفاعل، وابنِ مع ذا ديزي',
+      title: 'عميلك القادم يبحث عنك الآن',
       subtitle:
-        'نمكنك من تنمية عملك والوصول إلى المزيد من العملاء.',
+        'حمّل وابدأ تجربتك المجانية — انطلق في دقائق.',
       description: 'حمل التطبيق الآن!',
       phoneMobileImage: phoneMobile,
       phoneDesktopImage: phoneDesktop,

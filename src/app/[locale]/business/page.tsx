@@ -58,7 +58,7 @@ export default function BusinessPage({ params }: { params: { locale: string } })
     <>
       <WebPageSchema
         title="Salon & Spa Business Solutions | The Daisy"
-        description="Grow your salon or spa business with The Daisy. Manage bookings, staff scheduling, promotions, and payments."
+        description="AI-powered beauty business platform. Manage bookings, customer acquisition, staff scheduling, payments, and marketing — all in one."
         url="https://www.jointhedaisy.com/business"
       />
       <PageBreadcrumbSchema

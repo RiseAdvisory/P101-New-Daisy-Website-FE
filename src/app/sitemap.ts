@@ -39,6 +39,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const mainPages = [
     ...localizedEntries('/business', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'weekly', priority: 1 }),
     ...localizedEntries('/professional', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'weekly', priority: 0.9 }),
+    ...localizedEntries('/start-free-trial/business', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'monthly', priority: 0.9 }),
+    ...localizedEntries('/start-free-trial/professional', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'monthly', priority: 0.9 }),
   ];
 
   // Feature pages

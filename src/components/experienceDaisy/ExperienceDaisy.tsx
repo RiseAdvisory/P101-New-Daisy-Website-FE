@@ -2,6 +2,7 @@
 
 import { useMemo } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { LazyMotionDiv } from '../performance/LazyMotion';
 import Separator from '../separator/Separator';
 import { PlayMarketButton } from '../buttonApp/PlayMarketButton';
@@ -18,9 +19,11 @@ import {
 
 interface ExperienceDaisyProps {
   pageType?: ExperienceDaisyPageType;
+  ctaLink?: string;
+  ctaText?: string;
 }
 
-export const ExperienceDaisy = ({ pageType = 'customer' }: ExperienceDaisyProps) => {
+export const ExperienceDaisy = ({ pageType = 'customer', ctaLink, ctaText }: ExperienceDaisyProps) => {
   const fullPathname = usePathname();
   const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const data = t(experienceDaisyData[pageType], locale);
@@ -80,8 +83,19 @@ export const ExperienceDaisy = ({ pageType = 'customer' }: ExperienceDaisyProps)
             {data.description}
           </p>
           <div className="flex flex-col pb-16 md:w-[427px]">
-            <PlayMarketButton className="mb-6 mt-8" />
-            <AppStoreButton />
+            {ctaLink ? (
+              <Link
+                href={ctaLink}
+                className="inline-block bg-white text-primary font-semibold px-[50px] py-[14px] rounded-[9px] text-base hover:bg-primary hover:text-white hover:border hover:border-white transition-colors border border-transparent mt-8 text-center"
+              >
+                {ctaText || 'Start Your Free Trial'}
+              </Link>
+            ) : (
+              <>
+                <PlayMarketButton className="mb-6 mt-8" />
+                <AppStoreButton />
+              </>
+            )}
           </div>
         </div>
       </div>

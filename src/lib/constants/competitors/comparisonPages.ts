@@ -1240,7 +1240,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'POS and hardware integration matter',
       'You need strong inventory and reporting',
     ],
-    daisyPitch: 'Both are solid operations platforms. Daisy offers what neither provides: full AI ecosystem, Arabic/English bilingual support, cashback customer acquisition, and white-label brand control.',
+    daisyPitch: 'Both are solid operations platforms. Daisy offers what neither provides: full AI ecosystem, Arabic/English multilingual support, cashback customer acquisition, and white-label brand control.',
   },
   {
     slugA: 'vagaro',

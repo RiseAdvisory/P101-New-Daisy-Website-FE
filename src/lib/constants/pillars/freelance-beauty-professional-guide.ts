@@ -191,7 +191,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
 <p>Build your prices using this four-step framework:</p>
 <ol>
   <li><strong>Research your market:</strong> Survey 10-15 competitors in your area and specialty. Note their prices, experience levels, and positioning. This establishes the range clients expect to pay.</li>
-  <li><strong>Identify your differentiators:</strong> What do you offer that competitors do not? Specialized techniques, premium products, exceptional aftercare, bilingual service, mobile convenience — each differentiator justifies a premium.</li>
+  <li><strong>Identify your differentiators:</strong> What do you offer that competitors do not? Specialized techniques, premium products, exceptional aftercare, multilingual service, mobile convenience — each differentiator justifies a premium.</li>
   <li><strong>Calculate your floor:</strong> Determine the minimum hourly rate you need to cover all costs (supplies, rent, insurance, taxes, savings, living expenses) and still earn a reasonable income. For most markets, this floor is $60-$120 per hour depending on location and specialty.</li>
   <li><strong>Set your target rate:</strong> Position yourself within the top 30% of your market range. Premium pricing attracts clients who value quality and are less likely to cancel, haggle, or switch providers for a small discount.</li>
 </ol>

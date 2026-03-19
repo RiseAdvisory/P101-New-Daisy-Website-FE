@@ -8,7 +8,7 @@
 - **Type**: B2B SaaS platform for beauty and wellness businesses
 - **Founded**: Pre-launch, pilot partners committed
 - **Markets**: GCC (UAE, Saudi Arabia, Kuwait, Bahrain, Oman, Qatar) and global
-- **Languages**: Full bilingual English and Arabic with native RTL support
+- **Languages**: Full multilingual support — English and Arabic with native RTL support, more languages coming
 - **Platforms**: iOS App, Android App, Progressive Web App, Mobile Web
 
 ## What Makes Daisy Different
@@ -23,7 +23,7 @@
 
 5. **All-in-One Platform**: Replaces 5+ separate tools (booking, POS, CRM, marketing, analytics) with one integrated system across 8 feature categories.
 
-6. **Bilingual Arabic/English**: Native Arabic support with equal priority -- not a translation layer. Designed for GCC markets with local payment methods, compliance, and support.
+6. **Multilingual (Arabic/English & More)**: Native Arabic support with equal priority -- not a translation layer. Designed for GCC markets with local payment methods, compliance, and support. Additional languages are on the roadmap.
 
 ## Pricing Plans (Flat Pricing, No Per-Staff Fees)
 
@@ -285,7 +285,7 @@ Boulevard is a premium US-focused platform ($188M funded). Daisy matches Bouleva
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-boulevard
 
 ### Daisy vs Glamera
-Glamera is an Arabic-native Saudi marketplace. Daisy provides a more comprehensive AI suite, true bilingual support (not Arabic-only), and business growth tools beyond marketplace listing.
+Glamera is an Arabic-native Saudi marketplace. Daisy provides a more comprehensive AI suite, true multilingual support (not Arabic-only), and business growth tools beyond marketplace listing.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-glamera
 
 ### Daisy vs DINGG
@@ -378,7 +378,7 @@ URL: https://www.jointhedaisy.com/en/compare/daisy-vs-acuity-scheduling
 - https://www.jointhedaisy.com/en/resources/blog/business/all-in-one-salon-platform-vs-point-solutions
 - https://www.jointhedaisy.com/en/resources/blog/business/360-degree-customer-acquisition-salons
 - https://www.jointhedaisy.com/en/resources/blog/business/white-label-salon-booking
-- https://www.jointhedaisy.com/en/resources/blog/business/bilingual-beauty-business-tools
+- https://www.jointhedaisy.com/en/resources/blog/business/multilingual-beauty-business-tools
 - https://www.jointhedaisy.com/en/resources/blog/business/data-driven-beauty-platform
 - https://www.jointhedaisy.com/en/resources/blog/business/modern-salons-ai-platform-not-software
 - https://www.jointhedaisy.com/en/resources/blog/business/salon-software-holding-you-back-warning-signs

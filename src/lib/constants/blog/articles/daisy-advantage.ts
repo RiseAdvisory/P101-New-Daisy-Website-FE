@@ -87,7 +87,7 @@ const aiReceptionistArticle: LocalBlogPost = {
 <p>Not all AI receptionists are created equal. The Daisy&rsquo;s AI is purpose-built for the beauty and wellness industry, which creates critical advantages over generic AI assistants or basic chatbot tools.</p>
 <ul>
 <li><strong>Beauty industry training:</strong> The AI understands salon-specific terminology, service categories, pricing structures, and client expectations. It knows the difference between a balayage and highlights, understands that a &ldquo;trim&rdquo; means different things to different clients, and can discuss treatment options knowledgeably.</li>
-<li><strong>Bilingual fluency:</strong> Full Arabic and English support with natural code-switching for clients who mix languages. This is not basic translation &mdash; the AI understands cultural nuances and communication styles in both languages.</li>
+<li><strong>Multilingual fluency:</strong> Full Arabic and English support — with more languages coming — and natural code-switching for clients who mix languages. This is not basic translation &mdash; the AI understands cultural nuances and communication styles across languages.</li>
 <li><strong>Multi-channel unified experience:</strong> Whether a client calls, messages on WhatsApp, or DMs on Instagram, the AI maintains a single conversation thread. A client can start a booking on WhatsApp and follow up by phone &mdash; the AI has full context of the entire interaction.</li>
 <li><strong>Deep integration:</strong> The AI receptionist is not a bolt-on tool. It is integrated into The Daisy&rsquo;s complete <a href="/en/features/business/ai-salon-management">salon management platform</a>, meaning it has real-time access to your calendar, client database, service menu, pricing, and staff availability.</li>
 <li><strong>Continuous learning:</strong> Every interaction makes the AI smarter. It learns your business patterns, client preferences, common questions, and seasonal trends. After the first month, its accuracy and helpfulness measurably increase.</li>
@@ -560,23 +560,23 @@ const whiteLabelBookingArticle: LocalBlogPost = {
 };
 
 // ---------------------------------------------------------------------------
-// Article 5: Running a Bilingual Beauty Business: Tools and Tips
+// Article 5: Running a Multilingual Beauty Business: Tools and Tips
 // Type: Guide | User: Business | Category: Daisy Platform
 // ---------------------------------------------------------------------------
-const bilingualBusinessArticle: LocalBlogPost = {
+const multilingualBusinessArticle: LocalBlogPost = {
   id: 139,
   attributes: {
-    title: 'Running a Bilingual Beauty Business: Tools and Tips',
-    slug: 'bilingual-beauty-business-tools',
+    title: 'Running a Multilingual Beauty Business: Tools and Tips',
+    slug: 'multilingual-beauty-business-tools',
     description:
-      'Operating a bilingual Arabic-English beauty business requires tools that support both languages natively. Learn practical tips for bilingual client communication, marketing, booking systems, and AI customer service that serves every client in their preferred language.',
+      'Operating a multilingual beauty business requires tools that support multiple languages natively. Learn practical tips for multilingual client communication, marketing, booking systems, and AI customer service that serves every client in their preferred language.',
     aboutPosts: `
-<h2>Why Bilingual Operations Are Essential for Beauty Businesses</h2>
-<p>In markets across the GCC, Middle East, and increasingly in Western cities with diverse populations, beauty businesses serve clients who communicate in Arabic, English, or a mix of both. A salon that only operates in one language is leaving revenue on the table and alienating a significant portion of its potential client base.</p>
-<p>Bilingual operations are not just about translating your service menu into two languages. They require systems, tools, and workflows that treat both Arabic and English as first-class languages across every touchpoint &mdash; from booking and client communication to marketing, receipts, and customer service. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy are built from the ground up with equal Arabic and English support, which is fundamentally different from platforms that bolt on translation as an afterthought.</p>
+<h2>Why Multilingual Operations Are Essential for Beauty Businesses</h2>
+<p>In markets across the GCC, Middle East, and increasingly in Western cities with diverse populations, beauty businesses serve clients who communicate in Arabic, English, or a mix of both — and often other languages too. A salon that only operates in one language is leaving revenue on the table and alienating a significant portion of its potential client base.</p>
+<p>Multilingual operations are not just about translating your service menu into additional languages. They require systems, tools, and workflows that treat every supported language as first-class across every touchpoint &mdash; from booking and client communication to marketing, receipts, and customer service. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy are built from the ground up with equal Arabic and English support (with more languages coming), which is fundamentally different from platforms that bolt on translation as an afterthought.</p>
 
-<h2>The Challenges of Running a Bilingual Salon</h2>
-<p>Salon owners who serve bilingual communities face practical challenges that monolingual businesses never encounter.</p>
+<h2>The Challenges of Running a Multilingual Salon</h2>
+<p>Salon owners who serve multilingual communities face practical challenges that monolingual businesses never encounter.</p>
 
 <h3>Communication Complexity</h3>
 <p>Your clients expect to communicate in their preferred language, and many code-switch between Arabic and English within the same conversation. A client might message in Arabic, then switch to English for specific service terms, then back to Arabic for scheduling details. Your team &mdash; and your technology &mdash; needs to handle this seamlessly.</p>
@@ -586,47 +586,47 @@ const bilingualBusinessArticle: LocalBlogPost = {
 <p>Arabic text reads right-to-left, which means your booking pages, client communications, and marketing materials need to be properly formatted for RTL display. Simply translating English content into Arabic without adjusting the layout creates a confusing, unprofessional experience that signals to Arabic-speaking clients that they are an afterthought.</p>
 
 <h3>Staff Language Skills</h3>
-<p>Not every staff member speaks both languages fluently. Your receptionist might be strong in Arabic but struggle with English, while your social media manager might be the opposite. Managing a bilingual client base with a team that has uneven language skills creates service inconsistencies.</p>
+<p>Not every staff member speaks both languages fluently. Your receptionist might be strong in Arabic but struggle with English, while your social media manager might be the opposite. Managing a multilingual client base with a team that has uneven language skills creates service inconsistencies.</p>
 
 <h3>Marketing Across Languages</h3>
-<p>Effective bilingual marketing is not simply translating one language into another. Cultural nuances, humour, idioms, and communication styles differ significantly between Arabic and English. A marketing message that resonates in English may fall flat in Arabic, and vice versa. Each language requires its own content strategy while maintaining brand consistency.</p>
+<p>Effective multilingual marketing is not simply translating one language into another. Cultural nuances, humour, idioms, and communication styles differ significantly between Arabic and English. A marketing message that resonates in English may fall flat in Arabic, and vice versa. Each language requires its own content strategy while maintaining brand consistency.</p>
 
-<h2>Technology Requirements for Bilingual Salons</h2>
-<p>The tools you choose determine whether bilingual operations are smooth or stressful. Here are the non-negotiable technology requirements for a salon serving Arabic and English speakers.</p>
+<h2>Technology Requirements for Multilingual Salons</h2>
+<p>The tools you choose determine whether multilingual operations are smooth or stressful. Here are the non-negotiable technology requirements for a salon serving Arabic and English speakers — and preparing for additional languages.</p>
 
-<h3>Native Bilingual Booking System</h3>
+<h3>Native Multilingual Booking System</h3>
 <p>Your booking system must support both languages natively &mdash; not through a clunky language toggle that reloads the page. The Daisy&rsquo;s booking system detects the client&rsquo;s language preference automatically and serves the entire experience &mdash; service descriptions, availability, pricing, and confirmation &mdash; in their preferred language with proper RTL/LTR formatting.</p>
 
-<h3>Bilingual AI Customer Service</h3>
+<h3>Multilingual AI Customer Service</h3>
 <p>An AI receptionist that only speaks English is useless for half your client base. The Daisy&rsquo;s <a href="/en/features/business/ai-salon-management">AI receptionist</a> is fluent in both Arabic and English, understands code-switching, and responds in the client&rsquo;s language automatically. It does not translate &mdash; it communicates natively in each language, understanding cultural context and beauty industry terminology in both.</p>
 
-<h3>Bilingual Marketing Automation</h3>
-<p>Your marketing engine must segment clients by language preference and deliver appropriately localised content to each segment. The Daisy&rsquo;s marketing automation does this automatically: Arabic-speaking clients receive Arabic campaigns, English speakers receive English campaigns, and bilingual clients can receive content in their preference. Campaign templates, subject lines, and CTAs are all language-aware.</p>
+<h3>Multilingual Marketing Automation</h3>
+<p>Your marketing engine must segment clients by language preference and deliver appropriately localised content to each segment. The Daisy&rsquo;s marketing automation does this automatically: Arabic-speaking clients receive Arabic campaigns, English speakers receive English campaigns, and multilingual clients can receive content in their preference. Campaign templates, subject lines, and CTAs are all language-aware.</p>
 
-<h3>Bilingual Notifications and Reminders</h3>
+<h3>Multilingual Notifications and Reminders</h3>
 <p>Appointment confirmations, reminders, follow-ups, and receipts must be sent in the client&rsquo;s preferred language. Sending an English reminder to an Arabic-speaking client increases the risk of no-shows because the message may not be read or understood. The Daisy handles this automatically based on each client&rsquo;s language profile.</p>
 
-<h2>Practical Tips for Bilingual Salon Operations</h2>
-<p>Beyond technology, these operational practices help bilingual salons deliver a consistently excellent experience.</p>
+<h2>Practical Tips for Multilingual Salon Operations</h2>
+<p>Beyond technology, these operational practices help multilingual salons deliver a consistently excellent experience.</p>
 
 <h3>Create Parallel Content, Not Translations</h3>
-<p>Instead of writing content in one language and translating it, create original content for each language that resonates with that audience. Your Arabic Instagram posts should feel native to Arabic speakers, not like translated English captions. This requires either bilingual content creators or separate content contributors for each language.</p>
+<p>Instead of writing content in one language and translating it, create original content for each language that resonates with that audience. Your Arabic Instagram posts should feel native to Arabic speakers, not like translated English captions. This requires either multilingual content creators or separate content contributors for each language.</p>
 
 <h3>Train Staff on Language Protocol</h3>
-<p>Establish a clear protocol for client interactions: greet every client in Arabic first (in GCC markets), then switch to their preferred language. Ensure staff know how to handle situations where they are not fluent in the client&rsquo;s language &mdash; whether that means switching to a bilingual colleague or relying on the AI receptionist for communication support.</p>
+<p>Establish a clear protocol for client interactions: greet every client in Arabic first (in GCC markets), then switch to their preferred language. Ensure staff know how to handle situations where they are not fluent in the client&rsquo;s language &mdash; whether that means switching to a multilingual colleague or relying on the AI receptionist for communication support.</p>
 
-<h3>Bilingual Signage and In-Salon Materials</h3>
-<p>Your physical salon should reflect the bilingual digital experience. Menu boards, price lists, product descriptions, and signage should be in both languages. This consistency reinforces to every client that they are equally valued regardless of their language.</p>
+<h3>Multilingual Signage and In-Salon Materials</h3>
+<p>Your physical salon should reflect the multilingual digital experience. Menu boards, price lists, product descriptions, and signage should be in both languages. This consistency reinforces to every client that they are equally valued regardless of their language.</p>
 
 <h3>Use Language Data for Business Decisions</h3>
 <p>Track the language split of your client base over time. If 60% of your new bookings come from Arabic speakers but your marketing spend is 80% English, you have a misalignment. The Daisy&rsquo;s analytics break down booking and revenue data by client language, giving you insight into where to allocate resources.</p>
 
-<h2>The Business Case for Bilingual Excellence</h2>
-<p>Investing in bilingual operations is not just about inclusivity &mdash; it is about capturing a larger share of an already diverse market. Salons that serve both languages fluently and professionally report higher client satisfaction scores, stronger retention rates, and a broader referral network than monolingual competitors.</p>
-<p>In GCC markets specifically, the expatriate population creates a naturally bilingual client base. A salon that serves only Arabic or only English is immediately disqualifying itself from a significant portion of the market. The salons that win are the ones that make every client feel equally welcome and equally served.</p>
-<p>Consider the competitive dynamics: if your competitor offers a fully bilingual booking experience, bilingual AI communication, and bilingual marketing while your salon only operates in one language, clients who speak the underserved language will choose your competitor by default. This is not about being nice &mdash; it is about not handing market share to competitors who invest in serving the full market.</p>
+<h2>The Business Case for Multilingual Excellence</h2>
+<p>Investing in multilingual operations is not just about inclusivity &mdash; it is about capturing a larger share of an already diverse market. Salons that serve multiple languages fluently and professionally report higher client satisfaction scores, stronger retention rates, and a broader referral network than monolingual competitors.</p>
+<p>In GCC markets specifically, the expatriate population creates a naturally multilingual client base. A salon that serves only Arabic or only English is immediately disqualifying itself from a significant portion of the market. The salons that win are the ones that make every client feel equally welcome and equally served.</p>
+<p>Consider the competitive dynamics: if your competitor offers a fully multilingual booking experience, multilingual AI communication, and multilingual marketing while your salon only operates in one language, clients who speak the underserved language will choose your competitor by default. This is not about being nice &mdash; it is about not handing market share to competitors who invest in serving the full market.</p>
 
-<h2>Measuring Bilingual Performance</h2>
+<h2>Measuring Multilingual Performance</h2>
 <p>The Daisy&rsquo;s analytics break down key metrics by client language, giving you visibility into how well you serve each audience segment. Track these metrics monthly to identify opportunities:</p>
 <ul>
 <li><strong>New client bookings by language:</strong> Reveals whether your marketing is reaching both audiences equally.</li>
@@ -636,18 +636,18 @@ const bilingualBusinessArticle: LocalBlogPost = {
 <li><strong>AI conversation completion rate by language:</strong> Confirms that the AI receptionist performs equally well in Arabic and English.</li>
 </ul>
 <p>If you notice a significant gap in any metric between language groups, it signals an opportunity to improve service for the underperforming segment &mdash; whether that means adjusting marketing creative, retraining staff, or refining the AI&rsquo;s responses in that language.</p>
-<p>Review <a href="/en/pricing">The Daisy&rsquo;s pricing plans</a> to see bilingual features included at every tier &mdash; because we believe language support is a necessity, not a premium add-on.</p>
+<p>Review <a href="/en/pricing">The Daisy&rsquo;s pricing plans</a> to see multilingual features included at every tier &mdash; because we believe language support is a necessity, not a premium add-on.</p>
 
 <h2>Frequently Asked Questions</h2>
 
 <h3>Does the AI receptionist handle code-switching within a single conversation?</h3>
-<p>Yes. The Daisy&rsquo;s AI naturally handles conversations where the client switches between Arabic and English. It detects the language shift and responds accordingly, without requiring the client to select a language or restart the conversation. This mirrors how bilingual speakers naturally communicate and creates a frictionless experience.</p>
+<p>Yes. The Daisy&rsquo;s AI naturally handles conversations where the client switches between Arabic and English. It detects the language shift and responds accordingly, without requiring the client to select a language or restart the conversation. This mirrors how multilingual speakers naturally communicate and creates a frictionless experience.</p>
 
 <h3>Can I set different marketing campaigns for Arabic and English audiences?</h3>
 <p>Yes. The marketing engine supports fully independent campaigns for each language segment, including different messaging, imagery, offers, and timing. You can also create universal campaigns that automatically adapt to each client&rsquo;s language preference. Both approaches are available and can be mixed based on your strategy.</p>
 
 <h3>What if my staff only speaks one language?</h3>
-<p>The AI receptionist bridges the language gap for client communications. Booking, confirmations, reminders, and follow-ups are handled in the client&rsquo;s language automatically. For in-salon interactions, you can use The Daisy&rsquo;s client profiles to see language preferences before the appointment, allowing you to prepare or assign bilingual staff when needed.</p>
+<p>The AI receptionist bridges the language gap for client communications. Booking, confirmations, reminders, and follow-ups are handled in the client&rsquo;s language automatically. For in-salon interactions, you can use The Daisy&rsquo;s client profiles to see language preferences before the appointment, allowing you to prepare or assign multilingual staff when needed.</p>
 
 <h3>Is Arabic support an add-on or is it included by default?</h3>
 <p>Arabic is a first-class language on The Daisy. It is not an add-on, not a premium feature, and not a partial translation. Every feature &mdash; booking, AI receptionist, marketing, analytics, notifications, and reporting &mdash; works fully in both Arabic and English. This is built into the platform architecture, not layered on top.</p>
@@ -655,9 +655,9 @@ const bilingualBusinessArticle: LocalBlogPost = {
 <h3>How does RTL formatting work for marketing emails?</h3>
 <p>The Daisy&rsquo;s email templates automatically detect the content language and apply the correct text direction, alignment, and layout. Arabic emails render in RTL format with proper alignment, while English emails render in LTR. Mixed-language emails handle each paragraph according to its detected language. No manual formatting is needed.</p>
 `,
-    metaTitle: 'Bilingual Beauty Business Tools & Tips | Daisy',
+    metaTitle: 'Multilingual Beauty Business Tools & Tips | Daisy',
     metaDescription:
-      'Run a bilingual Arabic-English beauty business with tools built for both languages. AI, booking, marketing, and client communication that work natively in each.',
+      'Run a multilingual beauty business with tools built for multiple languages. AI, booking, marketing, and client communication that work natively in Arabic, English, and more.',
     createdAt: '2026-03-18T10:00:00.000Z',
     updatedAt: '2026-03-18T10:00:00.000Z',
     publishedAt: '2026-03-18T10:00:00.000Z',
@@ -670,8 +670,8 @@ const bilingualBusinessArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/bilingual-beauty-business.webp',
-          alternativeText: 'Bilingual Arabic English beauty business tools',
+          url: '/images/blog/multilingual-beauty-business.webp',
+          alternativeText: 'Multilingual beauty business tools for Arabic English and more',
         },
       },
     },
@@ -679,8 +679,8 @@ const bilingualBusinessArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/bilingual-beauty-business.webp',
-            formats: { large: { url: '/images/blog/bilingual-beauty-business.webp' } },
+            url: '/images/blog/multilingual-beauty-business.webp',
+            formats: { large: { url: '/images/blog/multilingual-beauty-business.webp' } },
           },
         },
       ],
@@ -966,7 +966,7 @@ const softwareWarningSignsArticle: LocalBlogPost = {
 <p>White-label booking &mdash; where your brand, colours, logo, and domain are the only things clients see &mdash; is the standard for modern salon platforms. If your software cannot deliver this, your digital presence is working against your brand, not for it.</p>
 
 <h2>Warning Sign 3: You Cannot Serve Arabic and English Clients Equally</h2>
-<p>If your software only supports English (or treats Arabic as a secondary afterthought with poor RTL formatting), you are excluding or underserving a significant portion of your potential client base. In the GCC and Middle Eastern markets, bilingual support is not a feature &mdash; it is a baseline requirement.</p>
+<p>If your software only supports English (or treats Arabic as a secondary afterthought with poor RTL formatting), you are excluding or underserving a significant portion of your potential client base. In the GCC and Middle Eastern markets, multilingual support is not a feature &mdash; it is a baseline requirement.</p>
 <p>Modern platforms like The Daisy offer native Arabic and English support across every touchpoint &mdash; booking, AI communication, marketing, notifications, and analytics. Both languages are treated as first-class, not as translations of each other.</p>
 
 <h2>Warning Sign 4: Your Marketing Is Manual and Inconsistent</h2>
@@ -1014,7 +1014,7 @@ const softwareWarningSignsArticle: LocalBlogPost = {
 <p>The short-term disruption of switching is minimal &mdash; most migrations take less than a week &mdash; while the long-term cost of staying on outdated software compounds every month. Missed bookings, lost clients, manual inefficiencies, and stalled growth are far more disruptive than a one-time platform migration. Salons that switch typically report the transition was easier than expected and wish they had done it sooner.</p>
 
 <h3>What if my current software vendor promises to add the features I need?</h3>
-<p>Feature promises are common and rarely delivered on the timeline or quality expected. If a vendor has not shipped AI reception, bilingual support, marketplace presence, or automated marketing by now, these capabilities are likely not core to their product vision. It is safer to evaluate platforms where these features already exist and are proven than to wait for promises.</p>
+<p>Feature promises are common and rarely delivered on the timeline or quality expected. If a vendor has not shipped AI reception, multilingual support, marketplace presence, or automated marketing by now, these capabilities are likely not core to their product vision. It is safer to evaluate platforms where these features already exist and are proven than to wait for promises.</p>
 
 <h3>Will my clients notice the switch?</h3>
 <p>Clients will notice an improvement, not a disruption. Faster responses, easier booking, personalised communications, and a polished branded experience are positive changes. The underlying platform is invisible to clients &mdash; they experience the benefits without knowing or caring about the technology behind them.</p>
@@ -1068,7 +1068,7 @@ export const daisyAdvantageBusinessArticles: LocalBlogPost[] = [
   allInOnePlatformArticle,
   customerAcquisitionArticle,
   whiteLabelBookingArticle,
-  bilingualBusinessArticle,
+  multilingualBusinessArticle,
   dataDrivenPlatformArticle,
   modernSalonsAiArticle,
   softwareWarningSignsArticle,
