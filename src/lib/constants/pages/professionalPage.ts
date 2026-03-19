@@ -13,7 +13,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       answerBlock: {
         question: 'What is The Daisy for beauty professionals?',
         answer:
-          'The Daisy is an all-in-one app for beauty and wellness professionals to manage bookings, build a client base, track earnings, and grow their career. It features flexible scheduling, 24/7 AI-powered booking, and bilingual Arabic/English support.',
+          'The Daisy is an all-in-one app for beauty and wellness professionals to manage bookings, build a client base, track earnings, and grow their career. It features flexible scheduling, 24/7 AI-powered booking, and multilingual support — currently in Arabic and English.',
       },
     },
     platformStrengths: {
@@ -33,7 +33,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '1', context: 'app for everything' },
         { value: '24/7', context: 'AI-powered booking' },
-        { value: '2', context: 'languages — Arabic & English' },
+        { value: '10+', context: 'languages — Arabic, English & more' },
       ],
     },
     titleFraque: 'Frequently Asked Question',
@@ -42,7 +42,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       { question: 'Can I set my own schedule?', answer: 'Yes. You have full control over your availability, working hours, break times, and can block time for personal appointments.' },
       { question: 'How does payment work?', answer: 'Your earnings are tracked in real-time in the app. Payments are processed securely and deposited to your account on a regular schedule.' },
       { question: 'Do I need to work at a salon to join?', answer: 'No. Freelance professionals, independent stylists, and mobile service providers are all welcome on The Daisy.' },
-      { question: 'Is The Daisy available in Arabic?', answer: 'Yes. The Daisy is fully bilingual with complete Arabic and English support throughout the app.' },
+      { question: 'Is The Daisy available in Arabic?', answer: 'Yes. The Daisy is fully multilingual with complete Arabic and English support throughout the app, with more languages coming soon.' },
     ],
     growth: {
       title: 'Expand Your Clientele, Manage Your Schedule, and Build Your Brand with The Daisy.',
@@ -298,7 +298,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       answerBlock: {
         question: 'ما هو ذا ديزي لمتخصصي التجميل؟',
         answer:
-          'ذا ديزي هو تطبيق شامل لمتخصصي التجميل والعافية لإدارة الحجوزات وبناء قاعدة العملاء وتتبع الأرباح وتطوير مسيرتهم المهنية. يتميز بجدولة مرنة وحجز مدعوم بالذكاء الاصطناعي على مدار الساعة ودعم ثنائي اللغة عربي/إنجليزي.',
+          'ذا ديزي هو تطبيق شامل لمتخصصي التجميل والعافية لإدارة الحجوزات وبناء قاعدة العملاء وتتبع الأرباح وتطوير مسيرتهم المهنية. يتميز بجدولة مرنة وحجز مدعوم بالذكاء الاصطناعي على مدار الساعة ودعم متعدد اللغات — حاليًا بالعربية والإنجليزية.',
       },
     },
     platformStrengths: {
@@ -318,7 +318,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '1', context: 'تطبيق لكل شيء' },
         { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' },
-        { value: '2', context: 'لغات — عربي وإنجليزي' },
+        { value: '+10', context: 'لغات — عربي وإنجليزي والمزيد' },
       ],
     },
     titleFraque: 'أسئلة شائعة',
@@ -327,7 +327,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       { question: 'هل يمكنني تحديد جدولي الخاص؟', answer: 'نعم. لديك سيطرة كاملة على توافرك وساعات عملك وأوقات الراحة ويمكنك حجز وقت للمواعيد الشخصية.' },
       { question: 'كيف تعمل المدفوعات؟', answer: 'يتم تتبع أرباحك في الوقت الفعلي في التطبيق. تتم معالجة المدفوعات بشكل آمن وإيداعها في حسابك وفق جدول منتظم.' },
       { question: 'هل أحتاج للعمل في صالون للانضمام؟', answer: 'لا. المتخصصون المستقلون والمصممون المستقلون ومقدمو الخدمات المتنقلون مرحب بهم جميعًا في ذا ديزي.' },
-      { question: 'هل ذا ديزي متاح باللغة العربية؟', answer: 'نعم. ذا ديزي ثنائي اللغة بالكامل مع دعم كامل للعربية والإنجليزية في جميع أنحاء التطبيق.' },
+      { question: 'هل ذا ديزي متاح باللغة العربية؟', answer: 'نعم. ذا ديزي متعدد اللغات بالكامل مع دعم كامل للعربية والإنجليزية في جميع أنحاء التطبيق، مع المزيد من اللغات قريبًا.' },
     ],
     growth: {
       title: 'وسّع قاعدة عملائك، نظم جدولك، وابنِ علامتك التجارية مع ذا ديزي.',

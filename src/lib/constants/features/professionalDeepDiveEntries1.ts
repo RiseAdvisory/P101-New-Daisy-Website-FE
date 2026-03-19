@@ -42,7 +42,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       'Smart scheduling that optimises your calendar for maximum daily earnings',
       'Client insight reports showing your top services, busiest periods, and income trends',
       'Automated reminders and follow-ups sent on your behalf across WhatsApp, SMS, and email',
-      'Native bilingual communication in Arabic and English',
+      'Native multilingual communication — currently in Arabic and English',
       'AI-driven rebooking suggestions based on each client\'s service history',
     ],
 
@@ -113,9 +113,9 @@ export const professionalEntries1: FeatureDeepDive[] = [
           'Keep clients coming back consistently without spending your evenings sending messages.',
       },
       {
-        name: 'Bilingual Communication (Arabic & English)',
+        name: 'Multilingual Communication (Arabic, English & More)',
         description:
-          'Not just translation — genuine bilingual understanding. The AI communicates naturally with your clients in both Arabic and English, including GCC dialects and beauty industry terminology. Clients can switch languages mid-conversation and the AI adapts seamlessly. This is essential for professionals serving diverse communities where clients expect service in their preferred language.',
+          'Not just translation — genuine multilingual understanding. The AI communicates naturally with your clients in Arabic, English, and more, including GCC dialects and beauty industry terminology. Clients can switch languages mid-conversation and the AI adapts seamlessly. This is essential for professionals serving diverse communities where clients expect service in their preferred language.',
         keyBenefit:
           'Serve Arabic and English-speaking clients with equal professionalism, expanding your potential client base.',
       },
@@ -250,7 +250,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         'Client communication becomes more effective as the AI learns which reminder timing and messaging styles drive the best attendance and rebooking rates.',
         'Income insights become more precise as the AI benchmarks your performance against anonymised industry data.',
         'Service recommendations become more relevant as the AI understands emerging treatment trends and client preferences across the market.',
-        'Bilingual capabilities strengthen with every Arabic and English conversation, capturing more regional nuances and beauty terminology.',
+        'Multilingual capabilities strengthen with every conversation, capturing more regional nuances and beauty terminology across Arabic, English, and additional languages.',
       ],
     },
 

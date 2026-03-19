@@ -13,7 +13,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       answerBlock: {
         question: 'What is The Daisy for salons?',
         answer:
-          'The Daisy is an AI-powered beauty business platform that combines booking management, customer acquisition, payments, staff scheduling, and marketing into one system. It replaces 5+ separate tools with a single bilingual (Arabic/English) platform featuring a 24/7 AI receptionist.',
+          'The Daisy is an AI-powered beauty business platform that combines booking management, customer acquisition, payments, staff scheduling, and marketing into one system. It replaces 5+ separate tools with a single multilingual platform — currently supporting Arabic and English — featuring a 24/7 AI receptionist.',
       },
     },
     platformStrengths: {
@@ -33,14 +33,14 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '8', context: 'tools in one platform' },
         { value: '24/7', context: 'AI receptionist' },
-        { value: '2', context: 'languages — Arabic & English' },
+        { value: '10+', context: 'languages — Arabic, English & more' },
       ],
     },
     titleFraque: 'Frequently Asked Question',
     fallbackFaqs: [
       { question: 'How much does The Daisy cost?', answer: 'The Daisy offers flexible pricing tiers starting with a 14-day free trial. Visit our pricing page for detailed plan comparisons.' },
       { question: 'Can I migrate from my current booking system?', answer: 'Yes. Our onboarding team helps you migrate your client data, booking history, and preferences from your existing system at no extra cost.' },
-      { question: 'Does The Daisy work in Arabic?', answer: 'Yes. The Daisy is fully bilingual with complete Arabic and English support, including RTL interface, Arabic customer communications, and bilingual AI receptionist.' },
+      { question: 'Does The Daisy work in Arabic?', answer: 'Yes. The Daisy is fully multilingual with complete Arabic and English support, including RTL interface, Arabic customer communications, and a multilingual AI receptionist — with more languages on the way.' },
       { question: 'What is the AI receptionist?', answer: 'The AI receptionist handles customer inquiries, booking requests, and payments 24/7 — even outside business hours. It speaks both Arabic and English and learns your business preferences over time.' },
       { question: 'Is there a free trial?', answer: 'Yes. Every new business gets a 14-day free trial with full access to all features. No credit card required to start.' },
     ],
@@ -320,14 +320,14 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '8', context: 'أدوات في منصة واحدة' },
         { value: '24/7', context: 'موظف استقبال ذكي' },
-        { value: '2', context: 'لغات — عربي وإنجليزي' },
+        { value: '+10', context: 'لغات — عربي وإنجليزي والمزيد' },
       ],
     },
     titleFraque: 'أسئلة شائعة',
     fallbackFaqs: [
       { question: 'كم تكلفة ذا ديزي؟', answer: 'تقدم ذا ديزي باقات أسعار مرنة تبدأ بتجربة مجانية لمدة 14 يومًا. زر صفحة الأسعار لمقارنة الباقات بالتفصيل.' },
       { question: 'هل يمكنني الانتقال من نظام الحجز الحالي؟', answer: 'نعم. يساعدك فريق الإعداد لدينا في نقل بيانات عملائك وسجل الحجوزات وتفضيلاتك من نظامك الحالي دون أي تكلفة إضافية.' },
-      { question: 'هل يعمل ذا ديزي باللغة العربية؟', answer: 'نعم. ذا ديزي ثنائي اللغة بالكامل مع دعم كامل للعربية والإنجليزية، بما في ذلك واجهة RTL واتصالات العملاء بالعربية وموظف استقبال ذكي ثنائي اللغة.' },
+      { question: 'هل يعمل ذا ديزي باللغة العربية؟', answer: 'نعم. ذا ديزي متعدد اللغات بالكامل مع دعم كامل للعربية والإنجليزية، بما في ذلك واجهة RTL واتصالات العملاء بالعربية وموظف استقبال ذكي متعدد اللغات — مع المزيد من اللغات قريبًا.' },
       { question: 'ما هو موظف الاستقبال الذكي؟', answer: 'يتعامل موظف الاستقبال الذكي مع استفسارات العملاء وطلبات الحجز والمدفوعات على مدار الساعة — حتى خارج ساعات العمل. يتحدث العربية والإنجليزية ويتعلم تفضيلات عملك بمرور الوقت.' },
       { question: 'هل هناك تجربة مجانية؟', answer: 'نعم. يحصل كل عمل جديد على تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان للبدء.' },
     ],

@@ -450,7 +450,7 @@ const aiToolsProfessionalArticle: LocalBlogPost = {
 <li><strong>All-in-one platforms</strong> rather than separate tools for booking, communication, and analytics. Managing multiple subscriptions adds complexity and cost.</li>
 <li><strong>Mobile-first design</strong> &mdash; you are likely managing your business from your phone, not a desktop computer.</li>
 <li><strong>No commission on bookings</strong> &mdash; some platforms take a percentage of every booking, which directly reduces your income.</li>
-<li><strong>Bilingual support</strong> &mdash; if you serve clients in multiple languages, make sure the AI handles both seamlessly.</li>
+<li><strong>Multilingual support</strong> &mdash; if you serve clients in multiple languages, make sure the AI handles them seamlessly.</li>
 <li><strong>Client data ownership</strong> &mdash; your client list should belong to you, not the platform.</li>
 </ul>
 
@@ -532,9 +532,9 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
 <p><strong>Why it matters:</strong> The difference between a manually managed calendar and an AI-optimised one can mean 2-4 additional appointments per day per stylist &mdash; without extending working hours.</p>
 
 <h3>Language and Cultural Support</h3>
-<p><strong>Traditional platforms:</strong> Most salon software is built for English-speaking markets. Arabic support, when available, is typically a translation layer applied to the interface rather than genuine bilingual capability. Customer-facing communications are usually English-only.</p>
-<p><strong>The Daisy (AI-powered):</strong> Native bilingual AI that understands and responds in both Arabic and English with cultural context awareness. Clients can switch languages mid-conversation. The AI understands GCC dialects and beauty-specific terminology in both languages.</p>
-<p><strong>Why it matters:</strong> For salons operating in the GCC region or serving multilingual client bases, genuine bilingual support is not optional &mdash; it directly affects whether potential clients can interact comfortably with your booking system.</p>
+<p><strong>Traditional platforms:</strong> Most salon software is built for English-speaking markets. Arabic support, when available, is typically a translation layer applied to the interface rather than genuine multilingual capability. Customer-facing communications are usually English-only.</p>
+<p><strong>The Daisy (AI-powered):</strong> Native multilingual AI that understands and responds in Arabic, English, and more with cultural context awareness. Clients can switch languages mid-conversation. The AI understands GCC dialects and beauty-specific terminology across languages.</p>
+<p><strong>Why it matters:</strong> For salons operating in the GCC region or serving multilingual client bases, genuine multilingual support is not optional &mdash; it directly affects whether potential clients can interact comfortably with your booking system.</p>
 
 <h3>Client Communication Automation</h3>
 <p><strong>Traditional platforms:</strong> Offer basic automated SMS or email reminders before appointments. Some platforms provide simple marketing email tools. Follow-up and re-engagement messaging is typically manual.</p>

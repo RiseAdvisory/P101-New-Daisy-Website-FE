@@ -767,7 +767,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Zylu support Arabic for beauty businesses in the Gulf?',
         answer:
-          'Despite positioning itself for the GCC market, Zylu does not have a confirmed Arabic UI. Daisy provides fully native Arabic support with right-to-left layout, Arabic content, and bilingual Arabic/English functionality designed specifically for Gulf businesses.',
+          'Despite positioning itself for the GCC market, Zylu does not have a confirmed Arabic UI. Daisy provides fully native Arabic support with right-to-left layout, Arabic content, and multilingual Arabic/English functionality designed specifically for Gulf businesses.',
       },
       {
         question: 'Is Zylu reliable enough for a growing salon business?',
@@ -1188,7 +1188,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Boulevard support Arabic-speaking staff and clients?',
         answer:
-          'No. Boulevard is English-only with no Arabic interface, no RTL layout support, and no Middle Eastern localization. Daisy offers fully native Arabic and English support with bilingual staff interfaces, client communications, and booking pages — purpose-built for the GCC market.',
+          'No. Boulevard is English-only with no Arabic interface, no RTL layout support, and no Middle Eastern localization. Daisy offers fully native Arabic and English support with multilingual staff interfaces, client communications, and booking pages — purpose-built for the GCC market.',
       },
       {
         question: 'How good is Boulevard\'s mobile app for daily salon management?',
@@ -1391,7 +1391,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'What customer support does Planity offer and is it available in English?',
         answer:
-          'Planity\'s support is primarily in French, reflecting its market focus. English support is limited, and Arabic support is nonexistent. Daisy provides fully bilingual Arabic and English customer support with dedicated onboarding assistance, making it the clear choice for businesses in the GCC or those operating in multilingual environments.',
+          'Planity\'s support is primarily in French, reflecting its market focus. English support is limited, and Arabic support is nonexistent. Daisy provides fully multilingual Arabic and English customer support with dedicated onboarding assistance, making it the clear choice for businesses in the GCC or those operating in multilingual environments.',
       },
       {
         question: 'Does Planity integrate with other business tools and payment systems?',

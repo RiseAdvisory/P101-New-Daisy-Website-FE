@@ -416,7 +416,7 @@ export const beautyIndustryTrends: PillarPageData = {
 
 <h3>Opportunities for Beauty Businesses in the GCC</h3>
 <ul>
-  <li><strong>Bilingual operations:</strong> Businesses that serve clients fluently in both Arabic and English capture a larger market share. Platforms with bilingual AI support — like Daisy — eliminate the language barrier without requiring bilingual staff for every position.</li>
+  <li><strong>Multilingual operations:</strong> Businesses that serve clients fluently in Arabic, English, and other languages capture a larger market share. Platforms with multilingual AI support — like Daisy — eliminate the language barrier without requiring multilingual staff for every position.</li>
   <li><strong>Home and mobile services:</strong> The demand for at-home beauty services in the GCC is 2-3x higher than in Western markets. Building a mobile service capability alongside a fixed location captures this growing segment.</li>
   <li><strong>Premium and luxury positioning:</strong> GCC consumers are willing to pay premium prices for premium experiences. Investing in ambience, product quality, and service personalization yields higher returns per client in this market than almost anywhere else.</li>
   <li><strong>Technology adoption:</strong> GCC consumers are early adopters of technology. Salons that offer app-based booking, contactless payments, virtual consultations, and AI-powered services have a competitive advantage in this digitally sophisticated market.</li>
@@ -424,7 +424,7 @@ export const beautyIndustryTrends: PillarPageData = {
 <p>The GCC represents the most attractive growth opportunity in global beauty services. Businesses that understand and respect the cultural nuances while leveraging modern technology are positioned for exceptional returns.</p>`,
       callout: {
         type: 'info',
-        text: 'GCC beauty consumers spend 2-3x more per capita on beauty services than the global average, with weekly to bi-weekly salon visits being common. Bilingual (Arabic/English) operations and mobile service capabilities are essential to capture this market.',
+        text: 'GCC beauty consumers spend 2-3x more per capita on beauty services than the global average, with weekly to bi-weekly salon visits being common. Multilingual operations (starting with Arabic and English) and mobile service capabilities are essential to capture this market.',
       },
     },
 
@@ -588,7 +588,7 @@ export const beautyIndustryTrends: PillarPageData = {
   <li><strong>Invest in sustainability</strong> — not as marketing, but as operational DNA that reduces costs and attracts values-aligned clients</li>
   <li><strong>Diversify revenue streams</strong> — add at least one new revenue channel (memberships, retail, digital) within the next 12 months</li>
   <li><strong>Develop your team</strong> — invest in cross-training, wellness education, and technology literacy for every team member</li>
-  <li><strong>Position for the GCC opportunity</strong> — if you operate in or near the GCC, ensure bilingual operations and mobile service capabilities</li>
+  <li><strong>Position for the GCC opportunity</strong> — if you operate in or near the GCC, ensure multilingual operations and mobile service capabilities</li>
 </ol>
 <p>The beauty industry rewards those who move first. The trends are clear, the technology is accessible, and the market is growing. The only question is whether you will lead or follow.</p>`,
       callout: {

@@ -132,7 +132,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
       'Smart scheduling that optimises calendars for maximum revenue',
       'Predictive business insights with automated weekly reports',
       'Automated client communication across WhatsApp, SMS, and email',
-      'Native bilingual support in Arabic and English',
+      'Native multilingual support — currently in Arabic and English',
       'AI-driven upselling based on client purchase history',
     ],
 
@@ -202,9 +202,9 @@ export const featureDeepDives: FeatureDeepDive[] = [
           'Reduce no-shows and keep clients coming back without manual follow-up effort.',
       },
       {
-        name: 'Bilingual Intelligence (Arabic & English)',
+        name: 'Multilingual Intelligence (Arabic, English & More)',
         description:
-          'Not just translation — true bilingual understanding. The AI comprehends cultural nuances, local dialects, and industry terminology in both Arabic and English. Clients can switch languages mid-conversation, and the AI adapts seamlessly. This is particularly critical for GCC markets where clients expect service in their preferred language.',
+          'Not just translation — true multilingual understanding. The AI comprehends cultural nuances, local dialects, and industry terminology in Arabic, English, and more. Clients can switch languages mid-conversation, and the AI adapts seamlessly. This is particularly critical for GCC markets where clients expect service in their preferred language.',
         keyBenefit:
           'Serve Arabic and English-speaking clients equally well, expanding your addressable market.',
       },
@@ -297,7 +297,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
           'A 5-branch salon group was spending on multiple receptionists across locations. Daisy\'s AI handles all incoming communications centrally, routes bookings to the correct branch, and provides unified analytics across all locations. The group reduced reception overhead while improving booking capture rates.',
       },
       {
-        title: 'The Premium Spa Offering Bilingual Luxury',
+        title: 'The Premium Spa Offering Multilingual Luxury',
         businessType: 'Luxury Spa',
         scenario:
           'A high-end spa in Dubai serves both Arabic and English-speaking clients. The AI communicates naturally in both languages, understands premium service expectations, and personalises every interaction based on the client\'s history and preferences — maintaining the luxury experience from first contact to follow-up.',
@@ -339,7 +339,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
         'Client communication becomes more effective as the AI learns which messaging approaches drive the highest engagement and rebooking rates.',
         'Revenue forecasting accuracy increases with exposure to diverse business models and market conditions.',
         'Service recommendations become more relevant as the AI understands cross-industry trends and emerging client preferences.',
-        'Bilingual capabilities strengthen with every Arabic and English conversation, capturing more nuances and dialects.',
+        'Multilingual capabilities strengthen with every conversation, capturing more nuances and dialects across Arabic, English, and additional languages.',
       ],
     },
 
@@ -372,7 +372,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
       {
         question: 'What AI tools does The Daisy offer for beauty businesses?',
         answer:
-          'The Daisy offers AI-powered tools including: a 24/7 AI receptionist for calls and messages, smart scheduling that optimises your calendar for maximum revenue, predictive business insights with automated weekly reports, personalised client communication across all channels, bilingual Arabic/English support, and AI-driven upselling recommendations based on client history.',
+          'The Daisy offers AI-powered tools including: a 24/7 AI receptionist for calls and messages, smart scheduling that optimises your calendar for maximum revenue, predictive business insights with automated weekly reports, personalised client communication across all channels, multilingual support (currently Arabic and English, with more languages coming), and AI-driven upselling recommendations based on client history.',
       },
       {
         question: 'How is The Daisy different from other salon booking software?',

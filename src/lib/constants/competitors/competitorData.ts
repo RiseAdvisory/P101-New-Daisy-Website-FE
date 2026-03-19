@@ -293,7 +293,7 @@ export const daisyData: {
     'Full brand control (white-label everything)',
     'Network effects (AI improves with more data)',
     'All-in-one (8 categories replacing 5+ tools)',
-    'Bilingual Arabic/English (equal priority, GCC + global)',
+    'Multilingual (Arabic/English with equal priority, more languages coming, GCC + global)',
   ],
 };
 

@@ -498,7 +498,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     daisyAdvantages: [
       'Full AI ecosystem (receptionist + chatbot + smart scheduling + marketing) vs single "Digital Doorman" feature',
-      'Native Arabic/English bilingual support vs English-only platform',
+      'Native multilingual support (Arabic/English and more) vs English-only platform',
       'Customer acquisition engine with cashback rewards vs basic marketplace listing',
       'Full brand control with white-labeling vs Booksy-branded experience',
       'Complete GCC market support vs zero GCC presence',
