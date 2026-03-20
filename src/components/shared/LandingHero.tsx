@@ -24,7 +24,7 @@ export const LandingHero = ({
   answerBlock,
 }: LandingHeroProps) => {
   return (
-    <section className="w-full bg-primary pt-32 pb-16 md:pt-40 md:pb-20 px-4">
+    <section className="w-full bg-primary pt-24 pb-16 md:pt-24 md:pb-20 px-4">
       <div className="max-w-4xl mx-auto text-center mb-8">
         <p className="text-sm font-semibold tracking-widest text-[#F2DAD4] uppercase mb-4">
           {categoryLabel}
@@ -42,7 +42,7 @@ export const LandingHero = ({
           {ctaText}
         </Link>
         {trustLine && (
-          <p className="text-[#D5D9D9] text-sm mt-4">{trustLine}</p>
+          <p className="text-white/80 text-base mt-4">{trustLine}</p>
         )}
         {answerBlock && (
           <div

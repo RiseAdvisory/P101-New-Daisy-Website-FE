@@ -1,13 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { SocialProofBar } from '../SocialProofBar';
 
-// Mock StatisticHighlight
-jest.mock('@/components/geo/StatisticHighlight', () => ({
-  StatisticHighlight: ({ value, context }: { value: string; context: string }) => (
-    <span data-testid="stat">{value} {context}</span>
-  ),
-}));
-
 describe('SocialProofBar', () => {
   const defaultStats = [
     { value: '8', context: 'tools replaced' },
@@ -15,16 +8,17 @@ describe('SocialProofBar', () => {
     { value: '10+', context: 'languages supported' },
   ];
 
-  it('renders all stats', () => {
+  it('renders all stat values', () => {
     render(<SocialProofBar stats={defaultStats} />);
-    const stats = screen.getAllByTestId('stat');
-    expect(stats).toHaveLength(3);
+    expect(screen.getByText('8')).toBeInTheDocument();
+    expect(screen.getByText('24/7')).toBeInTheDocument();
+    expect(screen.getByText('10+')).toBeInTheDocument();
   });
 
-  it('renders stat values and contexts', () => {
+  it('renders stat contexts', () => {
     render(<SocialProofBar stats={defaultStats} />);
-    expect(screen.getByText('8 tools replaced')).toBeInTheDocument();
-    expect(screen.getByText('24/7 AI receptionist')).toBeInTheDocument();
-    expect(screen.getByText('10+ languages supported')).toBeInTheDocument();
+    expect(screen.getByText('tools replaced')).toBeInTheDocument();
+    expect(screen.getByText('AI receptionist')).toBeInTheDocument();
+    expect(screen.getByText('languages supported')).toBeInTheDocument();
   });
 });

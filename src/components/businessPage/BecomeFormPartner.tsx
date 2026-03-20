@@ -43,7 +43,7 @@ export const BecomeFormPartner = ({ defaultType, title, subtitle }: BecomeFormPa
         <h2 className="text-center text-white text-[32px] leading-10">
           {title || data.title}
         </h2>
-        <p className="text-center text-[#D5D9D9]  mt-3 ltr:font-montserrat">
+        <p className="text-center text-white/80 mt-3 ltr:font-montserrat">
           {subtitle || data.subtitle}
         </p>
       </div>

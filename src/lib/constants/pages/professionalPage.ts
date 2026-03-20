@@ -7,7 +7,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       categoryLabel: 'FOR BEAUTY PROFESSIONALS',
       headline: 'Focus on Your Craft. Daisy Handles the Rest.',
       subHeadline:
-        "Stop being your own receptionist. Daisy's AI handles your WhatsApp and Instagram messages, books appointments, and processes payments, while your hands are busy doing what you do best.",
+        "Stop being your own receptionist. Daisy's AI handles your WhatsApp and Instagram messages, books appointments, and processes payments, while you focus on what you do best.",
       ctaText: 'Start Your Free Trial',
       ctaLink: '/start-free-trial/professional',
       trustLine: 'Free to join. No credit card required.',
@@ -273,7 +273,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       categoryLabel: 'لمتخصصي التجميل',
       headline: 'ركّز على إبداعك. ديزي تتولى الباقي.',
       subHeadline:
-        'توقف عن كونك موظف استقبال نفسك. الذكاء الاصطناعي في ديزي يتولى رسائل واتساب وإنستغرام، يحجز المواعيد، ويعالج المدفوعات، بينما يداك مشغولتان بما تتقنه.',
+        'توقف عن كونك موظف استقبال نفسك. الذكاء الاصطناعي في ديزي يتولى رسائل واتساب وإنستغرام، يحجز المواعيد، ويعالج المدفوعات، بينما تركز على ما تتقنه.',
       ctaText: 'ابدأ تجربتك المجانية',
       ctaLink: '/start-free-trial/professional',
       trustLine: 'الانضمام مجاني. لا حاجة لبطاقة ائتمان.',

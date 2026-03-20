@@ -16,7 +16,7 @@ export const InlineCTA = ({
   secondaryLinkHref,
 }: InlineCTAProps) => {
   return (
-    <section className="w-full bg-primary py-12 md:py-16 px-4 text-center">
+    <section className="w-full bg-primary py-12 md:py-16 px-4 text-center flex flex-col justify-start items-center">
       <p className="text-[#D5D9D9] text-lg md:text-xl mb-6">{headline}</p>
       <Link
         href={ctaLink}

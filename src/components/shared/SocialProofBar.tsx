@@ -1,5 +1,3 @@
-import { StatisticHighlight } from '@/components/geo/StatisticHighlight';
-
 interface SocialProofBarProps {
   stats: Array<{ value: string; context: string }>;
 }
@@ -10,7 +8,12 @@ export const SocialProofBar = ({ stats }: SocialProofBarProps) => {
       <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-8 md:gap-16">
         {stats.map((stat) => (
           <div key={stat.context} className="text-center px-6 py-4">
-            <StatisticHighlight value={stat.value} context={stat.context} />
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-1">
+              {stat.value}
+            </div>
+            <div className="text-[#455150] text-sm md:text-base">
+              {stat.context}
+            </div>
           </div>
         ))}
       </div>

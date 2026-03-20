@@ -23,7 +23,7 @@ export const PricingHook = ({
         <h2 className="text-[#172524] text-3xl md:text-4xl font-bold mb-6">
           {headline}
         </h2>
-        <p className="text-[#455150] text-lg leading-relaxed mb-8">
+        <p className="text-[#455150] text-lg leading-relaxed mb-8 text-left rtl:text-right">
           {body}
         </p>
         <Link
