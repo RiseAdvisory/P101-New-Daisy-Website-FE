@@ -18,7 +18,7 @@ export const HowItWorks = ({ steps }: HowItWorksProps) => {
               <h3 className="text-[#172524] font-semibold text-lg mb-2">
                 {step.title}
               </h3>
-              <p className="text-[#455150] text-sm">{step.description}</p>
+              <p className="text-[#455150] text-base">{step.description}</p>
             </div>
           ))}
         </div>

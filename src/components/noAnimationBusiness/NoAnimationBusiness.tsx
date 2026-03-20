@@ -119,15 +119,12 @@ export const NoScrollingAnimationBusiness = ({
           {list.map((listItem: string, index: number) => {
             return (
               <LazyMotionLi key={index} variants={item}>
-                <Button
-                  variant="navigation"
-                  className="w-full h-auto !min-h-10 flex items-start justify-start mt-4 font-semibold text-base text-[#D5D9D9] text-start"
-                >
+                <span className="w-full h-auto min-h-10 flex items-start justify-start mt-4 font-semibold text-base text-[#D5D9D9] text-start">
                   <CheckIcon className="ltr:mr-2 rtl:ml-2 !min-w-6 flex-shrink-0" />
                   <span className="overflow-wrap break-word whitespace-normal">
                     {listItem}
                   </span>
-                </Button>
+                </span>
               </LazyMotionLi>
             );
           })}
