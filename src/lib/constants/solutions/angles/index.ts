@@ -65,4 +65,4 @@ export function getAllAngleParams(): Array<{ slug: string; persona: string }> {
 }
 
 // Import all angle data files to trigger registration
-// These will be added as each angle data file is created
+import './ai-receptionist';
