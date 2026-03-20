@@ -68,3 +68,4 @@ export function getAllAngleParams(): Array<{ slug: string; persona: string }> {
 import './ai-receptionist';
 import './unified-inbox';
 import './brand-control';
+import './smart-scheduling';
