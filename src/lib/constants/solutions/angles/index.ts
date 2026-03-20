@@ -59,7 +59,6 @@ export function getAllAngleParams(): Array<{ slug: string; persona: string }> {
 // Using require() instead of import to avoid hoisting issues:
 // static imports are hoisted before variable declarations, causing
 // registerAngle() calls to fail because angleRegistry isn't initialized yet.
-/* eslint-disable @typescript-eslint/no-require-imports */
 require('./ai-receptionist');
 require('./unified-inbox');
 require('./brand-control');
@@ -67,7 +66,6 @@ require('./smart-scheduling');
 require('./service-portfolio');
 require('./ai-marketing');
 require('./all-in-one');
-/* eslint-enable @typescript-eslint/no-require-imports */
 
 // Slug namespace collision guard
 const solutionSlugs = getAllSolutionSlugs();
