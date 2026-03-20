@@ -71,3 +71,4 @@ import './brand-control';
 import './smart-scheduling';
 import './service-portfolio';
 import './ai-marketing';
+import './all-in-one';
