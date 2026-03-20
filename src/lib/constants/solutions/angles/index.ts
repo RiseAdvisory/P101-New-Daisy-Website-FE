@@ -67,3 +67,4 @@ export function getAllAngleParams(): Array<{ slug: string; persona: string }> {
 // Import all angle data files to trigger registration
 import './ai-receptionist';
 import './unified-inbox';
+import './brand-control';
