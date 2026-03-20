@@ -1,6 +1,9 @@
 // =============================================================================
 // WS2: Solution Page Data. Use-case and vertical pages
 // =============================================================================
+// IMPORTANT: Solution slugs must NOT overlap with angle landing page slugs
+// defined in src/lib/constants/solutions/angles/index.ts
+// (e.g., ai-receptionist, unified-inbox, brand-control, etc.)
 
 export interface SolutionFaq {
   question: string;

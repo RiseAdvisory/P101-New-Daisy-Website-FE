@@ -4,7 +4,7 @@ import { localeAlternates } from '@/lib/utils/metadata';
 import { getAllSolutionSlugs, getSolution } from '@/lib/constants/solutions';
 import { SolutionsPageClient } from './SolutionsPageClient';
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return getAllSolutionSlugs().map((slug) => ({ slug }));
