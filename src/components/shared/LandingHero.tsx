@@ -29,7 +29,7 @@ export const LandingHero = ({
         <p className="text-sm font-semibold tracking-widest text-[#F2DAD4] uppercase mb-4">
           {categoryLabel}
         </p>
-        <h1 className="text-white text-[32px] leading-10 md:text-[48px] md:leading-[60px] font-semibold mb-6">
+        <h1 className="text-white text-[32px] leading-10 md:text-[48px] md:leading-[60px] font-semibold mb-6 whitespace-pre-line">
           {headline}
         </h1>
         <p className="text-[#D5D9D9] ltr:font-montserrat text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto">

@@ -5,7 +5,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
   en: {
     hero: {
       categoryLabel: 'FOR BEAUTY PROFESSIONALS',
-      headline: 'Focus on Your Craft. Daisy Handles the Rest.',
+      headline: 'Focus on Your Craft.\nDaisy Handles the Rest.',
       subHeadline:
         "Stop being your own receptionist. Daisy's AI handles your WhatsApp and Instagram messages, books appointments, and processes payments, while you focus on what you do best.",
       ctaText: 'Start Your Free Trial',
@@ -271,7 +271,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
   ar: {
     hero: {
       categoryLabel: 'لمتخصصي التجميل',
-      headline: 'ركّز على إبداعك. ديزي تتولى الباقي.',
+      headline: 'ركّز على إبداعك.\nديزي تتولى الباقي.',
       subHeadline:
         'توقف عن كونك موظف استقبال نفسك. الذكاء الاصطناعي في ديزي يتولى رسائل واتساب وإنستغرام، يحجز المواعيد، ويعالج المدفوعات، بينما تركز على ما تتقنه.',
       ctaText: 'ابدأ تجربتك المجانية',
