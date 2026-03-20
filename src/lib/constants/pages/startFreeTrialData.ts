@@ -21,7 +21,7 @@ export const startFreeTrialData: Record<TrialType, I18nContent<StartFreeTrialCon
     en: {
       hero: {
         headline: 'Start Your 14-Day Free Trial',
-        subHeadline: 'Set up your salon, spa, or clinic on The Daisy in minutes. Full access to all features — no credit card required.',
+        subHeadline: 'Set up your salon, spa, or clinic on The Daisy in minutes. Full access to all features, no credit card required.',
       },
       form: {
         buttonText: 'Start Your Free Trial',
@@ -34,7 +34,7 @@ export const startFreeTrialData: Record<TrialType, I18nContent<StartFreeTrialCon
     ar: {
       hero: {
         headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
-        subHeadline: 'أعد تشغيل صالونك أو سبا أو عيادتك على ذا ديزي في دقائق. وصول كامل لجميع الميزات — لا حاجة لبطاقة ائتمان.',
+        subHeadline: 'أعد تشغيل صالونك أو سبا أو عيادتك على ذا ديزي في دقائق. وصول كامل لجميع الميزات، لا حاجة لبطاقة ائتمان.',
       },
       form: {
         buttonText: 'ابدأ تجربتك المجانية',
@@ -49,7 +49,7 @@ export const startFreeTrialData: Record<TrialType, I18nContent<StartFreeTrialCon
     en: {
       hero: {
         headline: 'Start Your Free Trial',
-        subHeadline: 'Create your professional profile and start accepting bookings. Free to join — no credit card required.',
+        subHeadline: 'Create your professional profile and start accepting bookings. Free to join, no credit card required.',
       },
       form: {
         buttonText: 'Start Your Free Trial',
@@ -62,7 +62,7 @@ export const startFreeTrialData: Record<TrialType, I18nContent<StartFreeTrialCon
     ar: {
       hero: {
         headline: 'ابدأ تجربتك المجانية',
-        subHeadline: 'أنشئ ملفك المهني وابدأ في قبول الحجوزات. الانضمام مجاني — لا حاجة لبطاقة ائتمان.',
+        subHeadline: 'أنشئ ملفك المهني وابدأ في قبول الحجوزات. الانضمام مجاني، لا حاجة لبطاقة ائتمان.',
       },
       form: {
         buttonText: 'ابدأ تجربتك المجانية',

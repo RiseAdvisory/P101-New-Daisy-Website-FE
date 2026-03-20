@@ -7,14 +7,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       categoryLabel: 'FOR BEAUTY PROFESSIONALS',
       headline: 'Focus on Your Craft. Daisy Handles the Rest.',
       subHeadline:
-        "Stop being your own receptionist. Daisy's AI handles your WhatsApp and Instagram messages, books appointments, and processes payments — while your hands are busy doing what you do best.",
+        "Stop being your own receptionist. Daisy's AI handles your WhatsApp and Instagram messages, books appointments, and processes payments, while your hands are busy doing what you do best.",
       ctaText: 'Start Your Free Trial',
       ctaLink: '/start-free-trial/professional',
       trustLine: 'Free to join. No credit card required.',
       answerBlock: {
         question: 'What is The Daisy for beauty professionals?',
         answer:
-          "The Daisy is an all-in-one app for beauty and wellness professionals. Its AI assistant handles WhatsApp and Instagram messages, bookings, and payments 24/7 — so professionals can focus on providing exceptional services. Features flexible scheduling, multilingual support, and a marketplace for client discovery.",
+          "The Daisy is an all-in-one app for beauty and wellness professionals. Its AI assistant handles WhatsApp and Instagram messages, bookings, and payments 24/7, so professionals can focus on providing exceptional services. Features flexible scheduling, multilingual support, and a marketplace for client discovery.",
       },
     },
     platformStrengths: {
@@ -46,13 +46,13 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       steps: [
         { title: 'Sign up and tell us about yourself', description: 'Takes 5 minutes. Set your services, availability, and pricing.' },
         { title: 'Our team helps you get set up', description: 'We configure your profile, set up your AI assistant, and walk you through everything.' },
-        { title: 'Go live — focus on your clients', description: 'Daisy handles your bookings. You handle your craft.' },
+        { title: 'Go live. Focus on your clients.', description: 'Daisy handles your bookings. You handle your craft.' },
       ],
     },
     pricingHook: {
       headline: 'Free to Join. Zero Risk.',
-      body: "Create your profile and start accepting bookings at no cost. Premium features available through affordable plans. Daisy doesn't just manage your schedule — it learns your clients' preferences, personalizes their booking experience, and makes sure you never miss an inquiry. Commission only on new clients who find you through the Daisy marketplace — your existing clients, always zero commission.",
-      ctaText: 'Get Listed — Free',
+      body: "Create your profile and start accepting bookings at no cost. Premium features available through affordable plans. Daisy doesn't just manage your schedule. It learns your clients' preferences, personalizes their booking experience, and makes sure you never miss an inquiry. Commission only on new clients who find you through the Daisy marketplace, your existing clients always pay zero commission.",
+      ctaText: 'Get Listed for Free',
       ctaLink: '/start-free-trial/professional',
       pricingLinkText: 'See full pricing details →',
       pricingLinkHref: '/pricing',
@@ -73,7 +73,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
     },
     titleFraque: 'Frequently Asked Questions',
     fallbackFaqs: [
-      { question: 'Is there a fee or commission?', answer: 'Joining is free. Commission is only charged on new clients who book you through the Daisy marketplace — your existing clients, zero commission. Premium features available through affordable subscription tiers.' },
+      { question: 'Is there a fee or commission?', answer: 'Joining is free. Commission is only charged on new clients who book you through the Daisy marketplace, your existing clients pay zero commission. Premium features available through affordable subscription tiers.' },
       { question: 'Do I need to work at a salon to join?', answer: 'No. Freelance professionals, independent stylists, mobile service providers, and salon-based professionals are all welcome.' },
       { question: 'How do customers find my profile?', answer: 'Your profile appears in the Daisy marketplace when customers search for beauty services in your area. The more complete your profile, the higher your visibility.' },
       { question: 'How does payment work?', answer: 'Your earnings are tracked in real-time in the app. Payments are processed securely and deposited to your bank account weekly. You can see exactly what you earned from each appointment.' },
@@ -125,7 +125,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           title: 'A Client Messages You on WhatsApp',
           text: "You're Mid-Appointment. Daisy Answers.",
           description:
-            "You're giving a haircut when a new client sends a WhatsApp message asking about your availability for highlights. Daisy responds instantly — you never even see the notification.",
+            "You're giving a haircut when a new client sends a WhatsApp message asking about your availability for highlights. Daisy responds instantly. You never even see the notification.",
           listSub: [
             'AI responds while you work',
             'Knows your services and prices',
@@ -273,14 +273,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       categoryLabel: 'لمتخصصي التجميل',
       headline: 'ركّز على إبداعك. ديزي تتولى الباقي.',
       subHeadline:
-        'توقف عن كونك موظف استقبال نفسك. الذكاء الاصطناعي في ديزي يتولى رسائل واتساب وإنستغرام، يحجز المواعيد، ويعالج المدفوعات — بينما يداك مشغولتان بما تتقنه.',
+        'توقف عن كونك موظف استقبال نفسك. الذكاء الاصطناعي في ديزي يتولى رسائل واتساب وإنستغرام، يحجز المواعيد، ويعالج المدفوعات، بينما يداك مشغولتان بما تتقنه.',
       ctaText: 'ابدأ تجربتك المجانية',
       ctaLink: '/start-free-trial/professional',
       trustLine: 'الانضمام مجاني. لا حاجة لبطاقة ائتمان.',
       answerBlock: {
         question: 'ما هو ذا ديزي لمتخصصي التجميل؟',
         answer:
-          'ذا ديزي هو تطبيق شامل لمتخصصي التجميل والعافية. مساعده الذكي يتولى رسائل واتساب وإنستغرام والحجوزات والمدفوعات على مدار الساعة — حتى يتمكن المتخصصون من التركيز على تقديم خدمات استثنائية. يتميز بجدولة مرنة ودعم متعدد اللغات وسوق لاكتشاف العملاء.',
+          'ذا ديزي هو تطبيق شامل لمتخصصي التجميل والعافية. مساعده الذكي يتولى رسائل واتساب وإنستغرام والحجوزات والمدفوعات على مدار الساعة، حتى يتمكن المتخصصون من التركيز على تقديم خدمات استثنائية. يتميز بجدولة مرنة ودعم متعدد اللغات وسوق لاكتشاف العملاء.',
       },
     },
     platformStrengths: {
@@ -312,12 +312,12 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       steps: [
         { title: 'سجّل وأخبرنا عن نفسك', description: 'يستغرق 5 دقائق. حدد خدماتك وتوافرك وأسعارك.' },
         { title: 'فريقنا يساعدك في الإعداد', description: 'نُعدّ ملفك الشخصي ونُجهّز مساعدك الذكي ونشرح لك كل شيء.' },
-        { title: 'ابدأ العمل — ركّز على عملائك', description: 'ديزي تتولى حجوزاتك. أنت تتولى إبداعك.' },
+        { title: 'ابدأ العمل. ركّز على عملائك.', description: 'ديزي تتولى حجوزاتك. أنت تتولى إبداعك.' },
       ],
     },
     pricingHook: {
       headline: 'الانضمام مجاني. بدون أي مخاطر.',
-      body: 'أنشئ ملفك الشخصي وابدأ بقبول الحجوزات بدون تكلفة. الميزات المتقدمة متاحة من خلال باقات بأسعار معقولة. ديزي لا تدير جدولك فحسب — بل تتعلم تفضيلات عملائك، وتُخصّص تجربة حجزهم، وتتأكد من عدم تفويت أي استفسار. العمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي — عملاؤك الحاليون، بدون أي عمولة دائمًا.',
+      body: 'أنشئ ملفك الشخصي وابدأ بقبول الحجوزات بدون تكلفة. الميزات المتقدمة متاحة من خلال باقات بأسعار معقولة. ديزي لا تدير جدولك فحسب. بل تتعلم تفضيلات عملائك، وتُخصّص تجربة حجزهم، وتتأكد من عدم تفويت أي استفسار. العمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي، عملاؤك الحاليون، بدون أي عمولة دائمًا.',
       ctaText: 'سجّل مجانًا',
       ctaLink: '/start-free-trial/professional',
       pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة ←',
@@ -339,7 +339,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
     },
     titleFraque: 'أسئلة شائعة',
     fallbackFaqs: [
-      { question: 'هل هناك رسوم أو عمولة؟', answer: 'الانضمام مجاني. العمولة تُفرض فقط على العملاء الجدد الذين يحجزون عبر سوق ديزي — عملاؤك الحاليون، بدون أي عمولة. الميزات المتقدمة متاحة من خلال باقات اشتراك بأسعار معقولة.' },
+      { question: 'هل هناك رسوم أو عمولة؟', answer: 'الانضمام مجاني. العمولة تُفرض فقط على العملاء الجدد الذين يحجزون عبر سوق ديزي، عملاؤك الحاليون، بدون أي عمولة. الميزات المتقدمة متاحة من خلال باقات اشتراك بأسعار معقولة.' },
       { question: 'هل أحتاج للعمل في صالون للانضمام؟', answer: 'لا. المتخصصون المستقلون والمصممون المستقلون ومقدمو الخدمات المتنقلون والمتخصصون في الصالونات مرحب بهم جميعًا.' },
       { question: 'كيف يجد العملاء ملفي الشخصي؟', answer: 'يظهر ملفك الشخصي في سوق ديزي عندما يبحث العملاء عن خدمات التجميل في منطقتك. كلما كان ملفك أكثر اكتمالًا، زاد ظهورك.' },
       { question: 'كيف يعمل الدفع؟', answer: 'يتم تتبع أرباحك في الوقت الفعلي في التطبيق. تتم معالجة المدفوعات بشكل آمن وإيداعها في حسابك البنكي أسبوعيًا. يمكنك رؤية ما كسبته بالضبط من كل موعد.' },
@@ -391,7 +391,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
           title: 'عميل يراسلك على واتساب',
           text: 'أنت في منتصف موعد. ديزي ترد.',
           description:
-            'أنت تقص شعرًا عندما يرسل عميل جديد رسالة واتساب يسأل عن توفرك لتسليط الضوء. ديزي ترد فورًا — لم تلاحظ حتى الإشعار.',
+            'أنت تقص شعرًا عندما يرسل عميل جديد رسالة واتساب يسأل عن توفرك لتسليط الضوء. ديزي ترد فورًا. لم تلاحظ حتى الإشعار.',
           listSub: [
             'الذكاء الاصطناعي يرد أثناء عملك',
             'يعرف خدماتك وأسعارك',
