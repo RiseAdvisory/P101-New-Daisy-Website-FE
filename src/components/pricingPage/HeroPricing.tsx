@@ -37,7 +37,7 @@ export const PricingHero = ({
       <Image
         src={stars}
         alt="stars"
-        className="mx-auto w-[60px] h-[60px] mt-20"
+        className="mx-auto w-[60px] h-[60px]"
       />
 
       <h2 className="text-center capitalize mt-[46px] font-semibold text-[32px] leading-10 text-white md:px-[400px] md:text-[48px] md:leading-[60px]">

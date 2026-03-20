@@ -33,24 +33,23 @@ import { t } from '@/lib/constants/i18n';
 import { formBusinessData } from '@/lib/constants/shared/formBusinessData';
 import { usePathname } from 'next/navigation';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
+import { getCountryFromCookie, getDialCode } from '@/helpers/countryDialCodes';
 
 interface ProfileFormProps {
-  defaultType?: 'business' | 'freelance';
+  defaultType?: 'business' | 'professional';
   buttonText?: string;
   onSuccess?: () => void;
 }
 
 export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormProps) => {
   const [activeField, setActiveField] = useState<string | null>(null);
-  const [country_code, setCountryCode] = useState('+1');
   const { handlecountryCodesArray, handleLoadingStatus } = useLoadingStore();
   const { countryCodesArray } = useLoadingStore();
-  const [mobile, setPhoneNumber] = useState('');
   const [business_type, setBusinessType] = useState(defaultType === 'business');
   const [homeService, setHomeService] = useState(false);
   const [isSubmit, setIsSubmit] = useState(false);
   const [contentChange, setContentChange] = useState({
-    serviceProvidorType: 'Freelances',
+    serviceProvidorType: 'Professional',
     homeVisits: 'No',
   });
 
@@ -60,24 +59,47 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
   const textForm = formContent.formDescription;
   const descriptionForm = formContent.formPlaceholder;
 
-  const formSchema = z.object({
-    name: z.string(),
-    business_type: z.string(),
-    email: z
-      .string()
+  // Geo-based country code default
+  const detectedCountry = getCountryFromCookie();
+  const defaultDialCode = getDialCode(detectedCountry);
 
-      .email(descriptionForm?.errorEmail),
-    social_media: z.string(),
-    // .url(descriptionForm?.url)
-    country_code: z.string(),
-    mobile: z.string(),
-    location_count: z.string(),
-    staff_count: z.string(),
-    business_name: z.string(),
-  });
+  const getFormSchema = (isBusiness: boolean) =>
+    z
+      .object({
+        name: z.string().min(1, textForm?.errorRequired || 'Required'),
+        business_type: z.string(),
+        email: z.string().email(descriptionForm?.errorEmail),
+        social_media: z.string(),
+        country_code: z.string(),
+        mobile: z.string().min(1, textForm?.errorRequired || 'Required'),
+        location_count: z.string(),
+        staff_count: z.string(),
+        business_name: z.string(),
+      })
+      .superRefine((data, ctx) => {
+        if (isBusiness) {
+          if (!data.business_type) {
+            ctx.addIssue({
+              code: 'custom',
+              path: ['business_type'],
+              message: textForm?.errorRequired || 'Required',
+            });
+          }
+          if (!data.business_name) {
+            ctx.addIssue({
+              code: 'custom',
+              path: ['business_name'],
+              message: textForm?.errorRequired || 'Required',
+            });
+          }
+        }
+      });
 
   const form = useForm({
-    resolver: zodResolver(formSchema),
+    resolver: async (values, context, options) => {
+      const schema = getFormSchema(business_type);
+      return zodResolver(schema)(values, context, options);
+    },
     defaultValues: {
       type: 'enquiry',
       name: '',
@@ -89,9 +111,14 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
       staff_count: '',
       business_name: '',
       content: '',
-      country_code: '+1',
+      country_code: defaultDialCode,
     },
   });
+
+  // Clear stale errors when business_type toggle changes
+  useEffect(() => {
+    form.clearErrors();
+  }, [business_type, form]);
 
   // Memoize sorted and filtered country codes for better performance
   const sortedCountryCodes = useMemo(() => {
@@ -114,11 +141,9 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
   }, [countryCodesArray]);
 
   const onSubmit = async (data: any) => {
-    // const completePhoneNumber = country_code + mobile;
     const contentChangeString = JSON.stringify(contentChange);
     const formData = {
       ...data,
-      mobile: mobile,
       content: contentChangeString,
       type: 'enquiry',
     };
@@ -139,14 +164,12 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
         throw new Error('Form submission failed');
       }
 
-      const data = await response.json();
-      toast.success('Sent Successfully!');
-      setPhoneNumber('');
+      await response.json();
       form.reset();
       onSuccess?.();
     } catch {
       setIsSubmit(false);
-      toast.error('Error!');
+      toast.error(descriptionForm?.errorSubmit || 'Error!');
     } finally {
       setIsSubmit(false);
     }
@@ -286,13 +309,20 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                     {textForm?.businessType}
                   </FormLabel>
                   <FormControl>
-                    <Input
-                      className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
-                      placeholder={descriptionForm?.businessType}
-                      {...field}
-                      onFocus={() => handleFocus('business_type')}
-                      onBlur={handleBlur}
-                    />
+                    <Select onValueChange={field.onChange} value={field.value}>
+                      <SelectTrigger className="border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
+                        <SelectValue placeholder={descriptionForm?.businessType} />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {descriptionForm?.businessTypeOptions?.map(
+                          (option: string, index: number) => (
+                            <SelectItem key={index} value={option}>
+                              {option}
+                            </SelectItem>
+                          ),
+                        )}
+                      </SelectContent>
+                    </Select>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -313,7 +343,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                         activeField === 'country_code' ? 'text-[#A67F6B]' : ''
                       }`}
                     >
-                      Code
+                      {textForm?.countryCode || 'Code'}
                     </FormLabel>
                     <FormControl>
                       <Select
@@ -372,8 +402,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                         className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                         type="number"
                         placeholder=""
-                        value={mobile}
-                        onChange={(e) => setPhoneNumber(e.target.value)}
+                        {...field}
                         onFocus={() => handleFocus('mobile')}
                         onBlur={handleBlur}
                       />
@@ -395,7 +424,12 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                       activeField === 'social_media' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
-                    {textForm?.socialMediaAccount}
+                    {textForm?.socialMediaAccount}{' '}
+                    {textForm?.optionalLabel && (
+                      <span className="text-[#aab4b3] font-normal">
+                        {textForm.optionalLabel}
+                      </span>
+                    )}
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -424,7 +458,12 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                       activeField === 'location_count' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
-                    {textForm?.numberofLocations}
+                    {textForm?.numberofLocations}{' '}
+                    {textForm?.optionalLabel && (
+                      <span className="text-[#aab4b3] font-normal">
+                        {textForm.optionalLabel}
+                      </span>
+                    )}
                   </FormLabel>
                   <FormControl>
                     <Select onValueChange={field.onChange}>
@@ -467,7 +506,12 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                       activeField === 'staff_count' ? 'text-[#A67F6B]' : ''
                     }`}
                   >
-                    {textForm?.numberofStaff}
+                    {textForm?.numberofStaff}{' '}
+                    {textForm?.optionalLabel && (
+                      <span className="text-[#aab4b3] font-normal">
+                        {textForm.optionalLabel}
+                      </span>
+                    )}
                   </FormLabel>
                   <FormControl>
                     <Select onValueChange={field.onChange}>
@@ -500,7 +544,12 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
         )}
         <div className="w-full mt-6">
           <p className="text-[#172524] ltr:font-montserrat font-semibold mb-2">
-            {textForm?.homeServiceVisits}
+            {textForm?.homeServiceVisits}{' '}
+            {textForm?.optionalLabel && (
+              <span className="text-[#aab4b3] font-normal">
+                {textForm.optionalLabel}
+              </span>
+            )}
           </p>
           <ToggleButtonForm
             firstValue={textForm?.homeServiceVisitsList?.[0]}
@@ -518,7 +567,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
           disabled={isSubmit}
           className="bg-primary text-white border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-white hover:text-primary ltr:font-montserrat font-semibold md:h-auto"
         >
-          {isSubmit ? 'Sending...' : buttonText || `${textForm?.buttonText}`}
+          {isSubmit ? (textForm?.buttonLoading || 'Sending...') : buttonText || `${textForm?.buttonText}`}
         </Button>
       </form>
       <ToastContainer />

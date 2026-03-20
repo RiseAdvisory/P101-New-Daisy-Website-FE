@@ -81,7 +81,7 @@ export default function StartFreeTrialPage({
 
   const trialType = type as TrialType;
   const data = t(startFreeTrialData[trialType], locale);
-  const defaultType = trialType === 'business' ? 'business' : 'freelance';
+  const defaultType = trialType === 'business' ? 'business' : 'professional';
 
   return (
     <>

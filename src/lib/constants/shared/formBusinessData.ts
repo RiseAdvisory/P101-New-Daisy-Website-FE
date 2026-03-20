@@ -15,6 +15,10 @@ export interface FormBusinessContent {
     homeServiceVisits: string;
     homeServiceVisitsList: string[];
     buttonText: string;
+    errorRequired: string;
+    countryCode: string;
+    buttonLoading: string;
+    optionalLabel: string;
   };
   formPlaceholder: {
     name: string;
@@ -25,6 +29,8 @@ export interface FormBusinessContent {
     numberofLocations: string[];
     numberofStaff: string[];
     errorEmail: string;
+    errorSubmit: string;
+    businessTypeOptions: string[];
   };
 }
 
@@ -44,6 +50,10 @@ export const formBusinessData: I18nContent<FormBusinessContent> = {
       homeServiceVisits: 'Do you provide home service visits?',
       homeServiceVisitsList: ['Yes', 'No'],
       buttonText: 'Get Started',
+      errorRequired: 'This field is required',
+      countryCode: 'Code',
+      buttonLoading: 'Sending...',
+      optionalLabel: '(Optional)',
     },
     formPlaceholder: {
       name: 'Your name',
@@ -54,6 +64,8 @@ export const formBusinessData: I18nContent<FormBusinessContent> = {
       numberofLocations: ['1-5', '6-10', '11-20', '20+'],
       numberofStaff: ['1-5', '6-20', '21-50', '50+'],
       errorEmail: 'This is not a valid email.',
+      errorSubmit: 'Something went wrong. Please try again.',
+      businessTypeOptions: ['Salon', 'Spa', 'Clinic', 'Other'],
     },
   },
 
@@ -72,6 +84,10 @@ export const formBusinessData: I18nContent<FormBusinessContent> = {
       homeServiceVisits: 'هل توفرون زيارات خدمة منزلية؟',
       homeServiceVisitsList: ['نعم', 'لا'],
       buttonText: 'ابدأ الآن',
+      errorRequired: 'هذا الحقل مطلوب',
+      countryCode: 'الرمز',
+      buttonLoading: 'جاري الإرسال...',
+      optionalLabel: '(اختياري)',
     },
     formPlaceholder: {
       name: 'اسمك',
@@ -82,6 +98,8 @@ export const formBusinessData: I18nContent<FormBusinessContent> = {
       numberofLocations: ['1-5', '6-10', '11-20', '20+'],
       numberofStaff: ['1-5', '6-20', '21-50', '50+'],
       errorEmail: 'هذا ليس بريد إلكتروني صالح.',
+      errorSubmit: 'حدث خطأ. يرجى المحاولة مرة أخرى.',
+      businessTypeOptions: ['صالون', 'سبا', 'عيادة', 'أخرى'],
     },
   },
 };

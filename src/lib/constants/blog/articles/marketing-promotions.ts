@@ -43,7 +43,7 @@ const salonLoyaltyProgramsArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Why Salon Loyalty Programs Matter More Than Ever</h2>
 <p>Acquiring a new salon client costs five to seven times more than retaining an existing one. Yet many beauty businesses pour their marketing budgets into attracting first-time visitors while neglecting the clients already in their chairs. A well-designed loyalty program reverses this equation by giving existing clients a tangible reason to return, spend more, and recommend your business to others.</p>
-<p>Industry research from the International Spa Association shows that salons with structured loyalty programs see a 20-30% increase in repeat visit frequency and a 15-25% lift in average transaction value. These are not marginal gains &mdash; for a salon generating $30,000 per month, a 20% increase in repeat visits translates to $72,000 in additional annual revenue.</p>
+<p>Industry research from the International Spa Association shows that salons with structured loyalty programs see a 20-30% increase in repeat visit frequency and a 15-25% lift in average transaction value. These are not marginal gains - for a salon generating $30,000 per month, a 20% increase in repeat visits translates to $72,000 in additional annual revenue.</p>
 <p>The shift toward digital loyalty platforms has made it dramatically easier to run a program that previously required plastic cards, paper punch sheets, and manual tracking. Modern salon management platforms like <a href="/en/features/business/marketing-promotions">The Daisy</a> integrate loyalty directly into the booking and payment workflow, so points are earned and redeemed automatically without any extra effort from your team.</p>
 
 <h2>Types of Salon Loyalty Programs</h2>
@@ -68,7 +68,7 @@ const salonLoyaltyProgramsArticle: LocalBlogPost = {
 <p><strong>Best for:</strong> Salons focused on building consistent visit frequency among a broad client base.</p>
 
 <h3>Cashback Programs</h3>
-<p>Clients receive a percentage of their spending back as credit toward future services. For example, 5% cashback on every booking, redeemable on any future service. <a href="/en/features/business/marketing-promotions">The Daisy's built-in cashback system</a> automates this entirely &mdash; cashback is calculated at checkout and credited to the client's wallet automatically.</p>
+<p>Clients receive a percentage of their spending back as credit toward future services. For example, 5% cashback on every booking, redeemable on any future service. <a href="/en/features/business/marketing-promotions">The Daisy's built-in cashback system</a> automates this entirely - cashback is calculated at checkout and credited to the client's wallet automatically.</p>
 <p><strong>Pros:</strong> Feels like real money saved. Creates a running balance that encourages return visits. Simple to explain: "You get 5% back every time."</p>
 <p><strong>Cons:</strong> Directly reduces margin on every transaction (though the retention uplift typically far exceeds the cost).</p>
 <p><strong>Best for:</strong> Salons competing on value and looking for a frictionless loyalty experience.</p>
@@ -85,31 +85,31 @@ const salonLoyaltyProgramsArticle: LocalBlogPost = {
 <h3>Step 1: Define Your Primary Goal</h3>
 <p>What specific metric do you want the program to move? Common goals include:</p>
 <ul>
-<li><strong>Increase visit frequency</strong> &mdash; if your average client visits 4 times per year but you want to reach 6</li>
-<li><strong>Increase average transaction value</strong> &mdash; if clients typically book one service but you want them to add treatments</li>
-<li><strong>Reduce churn</strong> &mdash; if clients typically leave after 3-4 visits and you want to retain them longer</li>
-<li><strong>Drive referrals</strong> &mdash; if you want existing clients to actively bring in new ones</li>
+<li><strong>Increase visit frequency</strong> - if your average client visits 4 times per year but you want to reach 6</li>
+<li><strong>Increase average transaction value</strong> - if clients typically book one service but you want them to add treatments</li>
+<li><strong>Reduce churn</strong> - if clients typically leave after 3-4 visits and you want to retain them longer</li>
+<li><strong>Drive referrals</strong> - if you want existing clients to actively bring in new ones</li>
 </ul>
 <p>Your goal determines which program structure to choose and how to measure success.</p>
 
 <h3>Step 2: Set Earning and Redemption Rules</h3>
 <p>For points-based and cashback programs, set clear rules:</p>
 <ul>
-<li><strong>Earning rate:</strong> How many points (or what percentage cashback) per dollar spent? Keep it simple &mdash; 1 point per $1, or 5% cashback.</li>
+<li><strong>Earning rate:</strong> How many points (or what percentage cashback) per dollar spent? Keep it simple - 1 point per $1, or 5% cashback.</li>
 <li><strong>Redemption threshold:</strong> What is the minimum balance needed to redeem? Lower thresholds (e.g., 50 points = $5 off) create faster gratification. Higher thresholds (e.g., 200 points = $25 off) create bigger perceived value.</li>
 <li><strong>Expiration:</strong> Do points expire? If so, how long do clients have? Expiration creates urgency but can frustrate infrequent visitors. A 12-month rolling expiration is a common balance.</li>
 <li><strong>Exclusions:</strong> Are any services or products excluded from earning or redemption? Keep exclusions minimal to avoid confusion.</li>
 </ul>
 
 <h3>Step 3: Choose Your Technology Platform</h3>
-<p>Manual tracking with spreadsheets or paper cards is unreliable and creates friction for both staff and clients. A digital platform automates earning, tracking, and redemption so the program runs without constant management. The Daisy integrates loyalty tracking directly into the booking and payment flow &mdash; clients earn rewards automatically, and your team never needs to remember to apply points.</p>
+<p>Manual tracking with spreadsheets or paper cards is unreliable and creates friction for both staff and clients. A digital platform automates earning, tracking, and redemption so the program runs without constant management. The Daisy integrates loyalty tracking directly into the booking and payment flow - clients earn rewards automatically, and your team never needs to remember to apply points.</p>
 
 <h3>Step 4: Create a Launch Plan</h3>
 <p>A loyalty program that nobody knows about is a loyalty program that fails. Plan your launch:</p>
 <ol>
 <li><strong>Announce 2 weeks before launch</strong> via social media, email, and in-salon signage.</li>
 <li><strong>Train your team</strong> to explain the program in one sentence: "You earn [X] every time you visit, redeemable for [Y]."</li>
-<li><strong>Offer a sign-up bonus</strong> to drive initial enrollment &mdash; e.g., 50 bonus points or $5 in cashback for joining.</li>
+<li><strong>Offer a sign-up bonus</strong> to drive initial enrollment - e.g., 50 bonus points or $5 in cashback for joining.</li>
 <li><strong>Enroll every existing client automatically</strong> (with their permission) so they start accumulating rewards immediately rather than needing to opt in.</li>
 </ol>
 
@@ -152,7 +152,7 @@ const salonLoyaltyProgramsArticle: LocalBlogPost = {
 <p>Most successful salon loyalty programs allocate 3-7% of revenue to rewards. A 5% cashback program, for example, costs $1,500 per month for a salon generating $30,000. However, the typical 20-30% increase in repeat visits generates far more revenue than the reward cost. Track your program ROI monthly to ensure the math works for your business.</p>
 
 <h3>Should I use points or cashback?</h3>
-<p>Cashback is generally easier for clients to understand and value &mdash; "You have $12.50 in your account" is more tangible than "You have 250 points." Points offer more flexibility for creative reward structures (bonus point events, double points on slow days), but require more explanation. If simplicity is your priority, start with cashback.</p>
+<p>Cashback is generally easier for clients to understand and value - "You have $12.50 in your account" is more tangible than "You have 250 points." Points offer more flexibility for creative reward structures (bonus point events, double points on slow days), but require more explanation. If simplicity is your priority, start with cashback.</p>
 
 <h3>How do I handle loyalty rewards for walk-in clients who are not enrolled?</h3>
 <p>Treat every walk-in as an enrollment opportunity. Ask at checkout: "Would you like to join our loyalty program? You would have earned [X] from today's visit." On The Daisy, enrollment takes seconds through a phone number or the app, and retroactive credit for the current visit can be applied immediately.</p>
@@ -210,8 +210,8 @@ const salonReferralProgramsArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Why Referrals Are the Highest-Quality Client Acquisition Channel</h2>
 <p>Referred clients are the gold standard of salon marketing. Research from the Wharton School of Business found that referred customers have a 16% higher lifetime value than clients acquired through other channels. They arrive with built-in trust because someone they know personally recommended your salon, which means they are more likely to book premium services, less likely to price-shop, and far more likely to become long-term regulars.</p>
-<p>Despite this, most salons leave referrals entirely to chance. A client might mention your salon to a friend, and that friend might eventually book &mdash; or they might not. A structured referral program transforms passive word-of-mouth into an active, trackable, and scalable acquisition channel.</p>
-<p>The beauty of referrals for salon owners is that the cost per acquisition is dramatically lower than paid advertising. Where a Facebook or Instagram ad might cost $15-40 to acquire a single new client, a referral reward typically costs $10-25 &mdash; and delivers a client who is pre-qualified and predisposed to loyalty.</p>
+<p>Despite this, most salons leave referrals entirely to chance. A client might mention your salon to a friend, and that friend might eventually book - or they might not. A structured referral program transforms passive word-of-mouth into an active, trackable, and scalable acquisition channel.</p>
+<p>The beauty of referrals for salon owners is that the cost per acquisition is dramatically lower than paid advertising. Where a Facebook or Instagram ad might cost $15-40 to acquire a single new client, a referral reward typically costs $10-25 - and delivers a client who is pre-qualified and predisposed to loyalty.</p>
 
 <h2>Anatomy of a Referral Program That Works</h2>
 <p>A referral program has four critical components. Get any one wrong, and participation drops dramatically.</p>
@@ -234,7 +234,7 @@ const salonReferralProgramsArticle: LocalBlogPost = {
 <p><a href="/en/features/business/marketing-promotions">The Daisy's referral tools</a> generate a unique shareable link for each client that automatically tracks referrals and applies rewards when the new client books.</p>
 
 <h3>3. Automatic Tracking and Reward Fulfilment</h3>
-<p>Manual referral tracking is the number one reason salon referral programs fail. When a client says "My friend Sarah referred me," and the front desk forgets to record it &mdash; or records it but forgets to apply Sarah's reward &mdash; trust in the program erodes. Both the referrer and the new client need to see their rewards applied instantly and automatically.</p>
+<p>Manual referral tracking is the number one reason salon referral programs fail. When a client says "My friend Sarah referred me," and the front desk forgets to record it - or records it but forgets to apply Sarah's reward - trust in the program erodes. Both the referrer and the new client need to see their rewards applied instantly and automatically.</p>
 
 <h3>4. Consistent Promotion</h3>
 <p>A referral program that is mentioned once at launch and never again will generate a burst of activity followed by a long silence. Effective promotion is ongoing:</p>
@@ -261,7 +261,7 @@ const salonReferralProgramsArticle: LocalBlogPost = {
 <tr><td>Tiered</td><td>$10 for 1st referral, $15 for 2nd, $25 for 3rd+</td><td>20% off first visit</td><td>Salons wanting high-volume referrals</td></tr>
 </tbody>
 </table>
-<p>If your salon uses The Daisy's cashback system, tying referral rewards to cashback credits creates a seamless experience &mdash; the reward lands in the same wallet clients already use.</p>
+<p>If your salon uses The Daisy's cashback system, tying referral rewards to cashback credits creates a seamless experience - the reward lands in the same wallet clients already use.</p>
 
 <h3>Step 2: Set Up Digital Tracking</h3>
 <p>Every referral needs to be tracked from share to booking to reward fulfilment. Your system should:</p>
@@ -269,7 +269,7 @@ const salonReferralProgramsArticle: LocalBlogPost = {
 <li>Generate a unique referral link or code per client</li>
 <li>Attribute new client bookings to the correct referrer</li>
 <li>Automatically apply the new client discount at checkout</li>
-<li>Automatically credit the referrer's reward after the new client completes their first appointment (not just books &mdash; completes)</li>
+<li>Automatically credit the referrer's reward after the new client completes their first appointment (not just books - completes)</li>
 <li>Notify both parties when rewards are applied</li>
 </ol>
 <p>Tying the referrer reward to appointment completion rather than booking prevents abuse and ensures you only pay for actual new business.</p>
@@ -308,7 +308,7 @@ const salonReferralProgramsArticle: LocalBlogPost = {
 <p>Reward your team for actively promoting the referral program. A small bonus ($2-5) for each client they enrol in the referral program incentivises your staff to mention it consistently.</p>
 
 <h3>Social Proof Integration</h3>
-<p>When a new client books through a referral, ask permission to share a brief social media post: "Welcome [New Client]! Referred by [Referrer] &mdash; our referral program rewards you both!" This promotes the program organically while welcoming the new client publicly.</p>
+<p>When a new client books through a referral, ask permission to share a brief social media post: "Welcome [New Client]! Referred by [Referrer] - our referral program rewards you both!" This promotes the program organically while welcoming the new client publicly.</p>
 
 <h2>Measuring Referral Program Performance</h2>
 <p>Track these metrics monthly to evaluate and optimise your program:</p>
@@ -332,13 +332,13 @@ const salonReferralProgramsArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How soon after launching should I expect results?</h3>
-<p>Most salon referral programs see initial referrals within the first 1-2 weeks, with momentum building over 2-3 months as awareness spreads. Expect the program to reach steady-state performance around month 3-4. The key is consistent promotion &mdash; a single launch announcement is not enough.</p>
+<p>Most salon referral programs see initial referrals within the first 1-2 weeks, with momentum building over 2-3 months as awareness spreads. Expect the program to reach steady-state performance around month 3-4. The key is consistent promotion - a single launch announcement is not enough.</p>
 
 <h3>What is a realistic referral rate for a salon?</h3>
 <p>A well-run salon referral program can expect 10-20% of active clients to participate as referrers within the first year. Of those, about 30-50% will generate at least one successful referral. Top-performing programs see 3-5 new clients per month per 100 active referrers.</p>
 
 <h3>Should I offer cash or service-based rewards?</h3>
-<p>Service-based rewards (credits, free treatments) are generally more cost-effective because the perceived value exceeds the actual cost. A deep-conditioning treatment valued at $25 may cost you $5 in product. However, cashback to a digital wallet &mdash; like The Daisy's cashback system &mdash; combines the simplicity of cash with the retention benefit of keeping the reward within your ecosystem.</p>
+<p>Service-based rewards (credits, free treatments) are generally more cost-effective because the perceived value exceeds the actual cost. A deep-conditioning treatment valued at $25 may cost you $5 in product. However, cashback to a digital wallet - like The Daisy's cashback system - combines the simplicity of cash with the retention benefit of keeping the reward within your ecosystem.</p>
 
 <h3>How do I prevent referral fraud?</h3>
 <p>Tie referrer rewards to completed first appointments (not just bookings) to prevent fake sign-ups. Require unique contact information for each new client. The Daisy's referral system automatically validates new client uniqueness and only triggers rewards after appointment completion.</p>
@@ -393,7 +393,7 @@ const emailMarketingSalonsArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Why Email Marketing Still Works for Salons</h2>
 <p>In an era dominated by social media, email marketing remains the highest-ROI digital channel for beauty businesses. Campaign Monitor reports an average return of $42 for every $1 spent on email marketing, and the Direct Marketing Association found that email generates 40x more client acquisitions than Facebook and Twitter combined.</p>
-<p>For salons specifically, email works because it reaches clients directly in their inbox &mdash; not competing with hundreds of other posts in a social media feed. Open rates for beauty and wellness businesses average 18-25%, compared to 1-3% organic reach on Instagram. And unlike social media, you own your email list. Algorithm changes, platform outages, or account suspensions cannot take away your direct line to clients.</p>
+<p>For salons specifically, email works because it reaches clients directly in their inbox - not competing with hundreds of other posts in a social media feed. Open rates for beauty and wellness businesses average 18-25%, compared to 1-3% organic reach on Instagram. And unlike social media, you own your email list. Algorithm changes, platform outages, or account suspensions cannot take away your direct line to clients.</p>
 <p>The key is sending the right email to the right client at the right time. Blasting your entire list with a generic promotion every week will train clients to ignore you. Strategic, personalised, automated email campaigns drive bookings consistently without annoying your audience.</p>
 
 <h2>Building Your Salon Email List</h2>
@@ -406,7 +406,7 @@ const emailMarketingSalonsArticle: LocalBlogPost = {
 <p>Offer free salon Wi-Fi in exchange for an email address. Clients willingly provide their email to access the internet while waiting or during longer treatments. This captures emails from clients who might otherwise not provide them.</p>
 
 <h3>Lead Magnets</h3>
-<p>Create a simple downloadable resource &mdash; a seasonal hair care guide, a "What to Ask Your Stylist" checklist, or a skincare routine planner &mdash; and offer it on your website and social media in exchange for an email address. This also builds your list with potential clients who have not visited yet.</p>
+<p>Create a simple downloadable resource - a seasonal hair care guide, a "What to Ask Your Stylist" checklist, or a skincare routine planner - and offer it on your website and social media in exchange for an email address. This also builds your list with potential clients who have not visited yet.</p>
 
 <h3>In-Salon Signage</h3>
 <p>A sign at the front desk or in treatment rooms with a QR code that links to an email sign-up page captures clients who are already in your salon and engaged with your brand.</p>
@@ -432,26 +432,26 @@ const emailMarketingSalonsArticle: LocalBlogPost = {
 
 <h3>4. Birthday and Anniversary Emails (Automated)</h3>
 <p>Trigger: Client's birthday or anniversary of their first visit.</p>
-<p>Birthday emails have 481% higher transaction rates than standard promotional emails, according to Experian. Offer a genuine birthday gift &mdash; a complimentary treatment upgrade, a product sample, or a meaningful discount. Make it feel personal, not transactional.</p>
+<p>Birthday emails have 481% higher transaction rates than standard promotional emails, according to Experian. Offer a genuine birthday gift - a complimentary treatment upgrade, a product sample, or a meaningful discount. Make it feel personal, not transactional.</p>
 <p>First-visit anniversaries work similarly: "It has been one year since you joined [Salon Name]! Here is a thank-you gift."</p>
 
 <h3>5. Seasonal Promotion Campaigns (Scheduled)</h3>
 <p>Trigger: Seasonal calendar (plan 4-8 campaigns per year).</p>
 <p>Key dates for salon promotions:</p>
 <ul>
-<li><strong>January:</strong> New year, new look &mdash; colour and cut promotions</li>
-<li><strong>February:</strong> Valentine's Day &mdash; couples packages, gift certificates</li>
-<li><strong>March/April:</strong> Spring refresh &mdash; skin treatments, new season styles</li>
-<li><strong>May:</strong> Mother's Day &mdash; gift packages, pampering bundles</li>
-<li><strong>June-August:</strong> Summer hair care &mdash; UV protection, beach-ready styles</li>
-<li><strong>September:</strong> Back-to-routine &mdash; maintenance packages</li>
-<li><strong>November-December:</strong> Holiday season &mdash; event styling, gift certificates, party-ready packages</li>
+<li><strong>January:</strong> New year, new look - colour and cut promotions</li>
+<li><strong>February:</strong> Valentine's Day - couples packages, gift certificates</li>
+<li><strong>March/April:</strong> Spring refresh - skin treatments, new season styles</li>
+<li><strong>May:</strong> Mother's Day - gift packages, pampering bundles</li>
+<li><strong>June-August:</strong> Summer hair care - UV protection, beach-ready styles</li>
+<li><strong>September:</strong> Back-to-routine - maintenance packages</li>
+<li><strong>November-December:</strong> Holiday season - event styling, gift certificates, party-ready packages</li>
 </ul>
 <p>Plan campaigns 3-4 weeks before each date. Send a teaser, the main offer, and a last-chance reminder.</p>
 
 <h3>6. New Service or Product Launch (Scheduled)</h3>
 <p>Trigger: Addition of a new service, treatment, or retail product.</p>
-<p>Announce new offerings with an exclusive early-access window for existing clients. "Be the first to try our new keratin smoothing treatment &mdash; book this week and receive 15% off the introductory price." This makes loyal clients feel valued and generates immediate bookings for the new service.</p>
+<p>Announce new offerings with an exclusive early-access window for existing clients. "Be the first to try our new keratin smoothing treatment - book this week and receive 15% off the introductory price." This makes loyal clients feel valued and generates immediate bookings for the new service.</p>
 
 <h3>7. Re-engagement Campaign (Automated)</h3>
 <p>Trigger: Client has not booked in 90+ days (customise based on your business).</p>
@@ -465,7 +465,7 @@ const emailMarketingSalonsArticle: LocalBlogPost = {
 <p>How your emails look and feel directly impacts whether clients read them or delete them. Follow these design principles:</p>
 <ul>
 <li><strong>Mobile-first design:</strong> 65-70% of salon emails are opened on mobile devices. Use a single-column layout, large tap targets for buttons, and text that is readable without zooming.</li>
-<li><strong>Strong visual header:</strong> Lead with a high-quality image of your work (before/after, styled looks, or salon interior). Beauty is a visual industry &mdash; let your email reflect that.</li>
+<li><strong>Strong visual header:</strong> Lead with a high-quality image of your work (before/after, styled looks, or salon interior). Beauty is a visual industry - let your email reflect that.</li>
 <li><strong>One clear call-to-action:</strong> Every email should have one primary action: "Book Now," "Claim Your Offer," or "Share Your Referral Link." Multiple competing CTAs reduce conversion.</li>
 <li><strong>Brand consistency:</strong> Use your salon's colours, fonts, and logo consistently. Clients should recognise your emails at a glance.</li>
 <li><strong>Short copy:</strong> Get to the point within the first 2-3 sentences. Email is not the place for long-form content. Save detailed information for your blog or website.</li>
@@ -495,7 +495,7 @@ const emailMarketingSalonsArticle: LocalBlogPost = {
 </ul>
 
 <h2>Automation: Set It and Let It Work</h2>
-<p>The biggest advantage of email marketing for busy salon owners is automation. Once your campaigns are built, they run continuously without daily attention. The Daisy's <a href="/en/features/business/marketing-promotions">marketing automation features</a> integrate email, SMS, and WhatsApp campaigns with your booking data so messages trigger automatically based on client behaviour &mdash; bookings, visit intervals, birthdays, and lapsed activity.</p>
+<p>The biggest advantage of email marketing for busy salon owners is automation. Once your campaigns are built, they run continuously without daily attention. The Daisy's <a href="/en/features/business/marketing-promotions">marketing automation features</a> integrate email, SMS, and WhatsApp campaigns with your booking data so messages trigger automatically based on client behaviour - bookings, visit intervals, birthdays, and lapsed activity.</p>
 <p>Start with the welcome sequence and appointment reminders (highest impact, easiest to set up), then add rebooking and re-engagement campaigns as you get comfortable.</p>
 
 <h2>Frequently Asked Questions</h2>
@@ -561,7 +561,7 @@ const socialMediaMarketingArticle: LocalBlogPost = {
       'A practical social media marketing guide for freelance stylists, independent nail techs, and solo beauty professionals. Covers content strategy, platform selection, posting schedules, and converting followers into paying clients.',
     aboutPosts: `
 <h2>Why Social Media Is Non-Negotiable for Independent Beauty Professionals</h2>
-<p>For independent beauty professionals &mdash; freelance stylists, mobile makeup artists, solo nail technicians, and independent estheticians &mdash; social media is your storefront, portfolio, and marketing department in one. You do not have a salon's walk-by foot traffic, a receptionist answering phones, or a marketing budget for paid advertising. Your social media presence is how potential clients discover you, evaluate your work, and decide to book.</p>
+<p>For independent beauty professionals - freelance stylists, mobile makeup artists, solo nail technicians, and independent estheticians - social media is your storefront, portfolio, and marketing department in one. You do not have a salon's walk-by foot traffic, a receptionist answering phones, or a marketing budget for paid advertising. Your social media presence is how potential clients discover you, evaluate your work, and decide to book.</p>
 <p>According to a 2025 survey by the Professional Beauty Association, 78% of clients discover independent beauty professionals through Instagram or TikTok before booking their first appointment. More importantly, 62% of clients said they chose their current stylist or technician based specifically on their social media portfolio. Your feed is your resume.</p>
 <p>The challenge for independents is time. You are already delivering services, managing your calendar, handling client communication, and running your finances. Social media can feel like another full-time job. This guide provides a realistic, efficient approach to social media marketing that generates clients without consuming your evenings and weekends.</p>
 
@@ -585,7 +585,7 @@ const socialMediaMarketingArticle: LocalBlogPost = {
 <p>Facebook and Twitter/X have lower organic reach for beauty content and require more effort to generate booking-quality leads. Unless your specific client demographic is active on these platforms, allocate your time to Instagram and TikTok first.</p>
 
 <h2>Content Strategy: What to Post and When</h2>
-<p>The biggest mistake independent beauty professionals make on social media is inconsistency &mdash; posting five times one week and then going silent for two weeks. A simple, repeatable content framework prevents this.</p>
+<p>The biggest mistake independent beauty professionals make on social media is inconsistency - posting five times one week and then going silent for two weeks. A simple, repeatable content framework prevents this.</p>
 
 <h3>The 4-Pillar Content Framework</h3>
 <p>Every piece of content you create should fall into one of four categories:</p>
@@ -613,7 +613,7 @@ const socialMediaMarketingArticle: LocalBlogPost = {
 <p>Your Instagram and TikTok bios are the most valuable real estate in your social media presence. Include:</p>
 <ul>
 <li>What you do: "Balayage Specialist | Precision Cuts"</li>
-<li>Where you are based: "Dubai Marina" or "Mobile &mdash; Serving Greater London"</li>
+<li>Where you are based: "Dubai Marina" or "Mobile - Serving Greater London"</li>
 <li>How to book: A direct link to your booking page</li>
 </ul>
 <p>Use a link-in-bio tool or your booking platform's direct link. On <a href="/en/features/professional/marketing-promotions">The Daisy</a>, your professional profile includes a shareable booking link that you can place in your bio, making it one tap from discovery to appointment.</p>
@@ -689,10 +689,10 @@ const socialMediaMarketingArticle: LocalBlogPost = {
 <p>Be polite but firm: "My prices reflect the quality of products, training, and time that go into each service. I do not offer discounts, but I do have a loyalty programme that rewards returning clients. You can check it out at [link]." Consistency in pricing builds your brand value. If you discount for one person who asks, word spreads quickly.</p>
 
 <h3>Is it worth paying for social media ads as an independent?</h3>
-<p>Organic content should be your primary strategy. However, a small monthly budget ($50-100) on Instagram or TikTok ads targeting your local area can accelerate discovery, especially when you are building your initial following. Target ads to your service radius and specific demographics. Boost your best-performing organic posts rather than creating separate ad content &mdash; content that already resonates organically will perform well as a paid promotion.</p>
+<p>Organic content should be your primary strategy. However, a small monthly budget ($50-100) on Instagram or TikTok ads targeting your local area can accelerate discovery, especially when you are building your initial following. Target ads to your service radius and specific demographics. Boost your best-performing organic posts rather than creating separate ad content - content that already resonates organically will perform well as a paid promotion.</p>
 
 <h3>How do I get clients to let me photograph their results?</h3>
-<p>Ask at the start of the appointment, not the end. "I love sharing my work on Instagram &mdash; would you be comfortable with me taking a quick before and after photo? I can blur or skip the face if you prefer." Most clients are happy to be featured. Offering a small incentive (10% off next visit, or a free add-on treatment) for photo permission increases your consent rate significantly.</p>
+<p>Ask at the start of the appointment, not the end. "I love sharing my work on Instagram - would you be comfortable with me taking a quick before and after photo? I can blur or skip the face if you prefer." Most clients are happy to be featured. Offering a small incentive (10% off next visit, or a free add-on treatment) for photo permission increases your consent rate significantly.</p>
 `,
     metaTitle: 'Social Media Marketing for Beauty Pros | The Daisy',
     metaDescription:
@@ -742,7 +742,7 @@ const daisyCashbackArticle: LocalBlogPost = {
 <h2>What Is The Daisy's Cashback System?</h2>
 <p>The Daisy's cashback system is a built-in loyalty mechanism that automatically rewards clients with a percentage of their spending back as credit in a digital wallet. Unlike traditional loyalty programs that require separate enrollment, manual tracking, and physical cards, cashback on The Daisy is integrated directly into the booking and payment workflow. Clients earn cashback every time they pay for a service, and the credit is available immediately for their next booking.</p>
 <p>For salon owners, this means running a professional loyalty program with zero additional effort. There are no punch cards to print, no spreadsheets to maintain, and no staff training required beyond explaining: "You earn cashback on every visit that you can use on future services."</p>
-<p>The system is designed around a simple principle: make loyalty automatic. When earning and redeeming rewards requires no extra steps from either the client or the business, participation rates soar. Salons using The Daisy's cashback system report enrollment rates above 85% &mdash; compared to the 40-60% enrollment typical of traditional loyalty programs that require opt-in.</p>
+<p>The system is designed around a simple principle: make loyalty automatic. When earning and redeeming rewards requires no extra steps from either the client or the business, participation rates soar. Salons using The Daisy's cashback system report enrollment rates above 85% - compared to the 40-60% enrollment typical of traditional loyalty programs that require opt-in.</p>
 
 <h2>How Cashback Works: The Client Experience</h2>
 <p>Understanding the client-side experience is critical because the program's effectiveness depends entirely on how clients perceive and interact with it.</p>
@@ -752,10 +752,10 @@ const daisyCashbackArticle: LocalBlogPost = {
 <p>The immediacy matters. Unlike points programs where rewards feel abstract, cashback in dollar (or dirham) amounts feels like real money. Research from the Journal of Consumer Psychology shows that cashback denominated in currency generates 34% higher perceived value than equivalent points-based rewards.</p>
 
 <h3>Step 2: Building a Balance</h3>
-<p>As clients return for subsequent appointments, their wallet balance grows. Each visit adds to their balance, creating what behavioural economists call the "endowment effect" &mdash; once someone has accumulated value in an account, they are strongly motivated to use it rather than walk away. A client with $35 in cashback balance has a tangible financial reason to rebook with you rather than trying a competitor.</p>
+<p>As clients return for subsequent appointments, their wallet balance grows. Each visit adds to their balance, creating what behavioural economists call the "endowment effect" - once someone has accumulated value in an account, they are strongly motivated to use it rather than walk away. A client with $35 in cashback balance has a tangible financial reason to rebook with you rather than trying a competitor.</p>
 
 <h3>Step 3: Redeeming Cashback</h3>
-<p>When booking their next appointment, clients see their available balance and can apply it directly as a discount. The redemption happens within the booking flow &mdash; no codes to enter, no staff to notify, no awkward checkout conversations. The client simply taps "Apply cashback" and the discount is reflected in their total.</p>
+<p>When booking their next appointment, clients see their available balance and can apply it directly as a discount. The redemption happens within the booking flow - no codes to enter, no staff to notify, no awkward checkout conversations. The client simply taps "Apply cashback" and the discount is reflected in their total.</p>
 <p>The key design choice here is that cashback can be used on any service, not just specific items. This flexibility removes restrictions that frustrate clients in traditional loyalty programs ("Sorry, your points can only be used on products, not services").</p>
 
 <h2>How Cashback Works: The Business Owner Experience</h2>
@@ -772,10 +772,10 @@ const daisyCashbackArticle: LocalBlogPost = {
 <h3>Automatic Operation</h3>
 <p>Once configured, the system runs without intervention:</p>
 <ul>
-<li>Cashback is calculated and credited at every checkout &mdash; automatically</li>
-<li>Client notifications are sent with balance updates &mdash; automatically</li>
-<li>Redemption is processed during booking &mdash; automatically</li>
-<li>Reporting on cashback costs and retention impact is available in your dashboard &mdash; in real time</li>
+<li>Cashback is calculated and credited at every checkout - automatically</li>
+<li>Client notifications are sent with balance updates - automatically</li>
+<li>Redemption is processed during booking - automatically</li>
+<li>Reporting on cashback costs and retention impact is available in your dashboard - in real time</li>
 </ul>
 <p>Your team never needs to remember to apply points, check balances, or process redemptions. Everything happens within the existing booking and payment workflow.</p>
 
@@ -792,13 +792,13 @@ const daisyCashbackArticle: LocalBlogPost = {
 <p>Cashback leverages several well-documented psychological principles that make it more effective than many traditional loyalty structures:</p>
 
 <h3>Loss Aversion</h3>
-<p>Nobel Prize-winning research by Daniel Kahneman and Amos Tversky demonstrated that people feel the pain of losing something roughly twice as strongly as the pleasure of gaining it. A client with $25 in cashback balance feels a real loss if they switch to a competitor and abandon that balance. This "switching cost" is psychological rather than contractual &mdash; clients are not locked in, but their accumulated value creates a powerful pull.</p>
+<p>Nobel Prize-winning research by Daniel Kahneman and Amos Tversky demonstrated that people feel the pain of losing something roughly twice as strongly as the pleasure of gaining it. A client with $25 in cashback balance feels a real loss if they switch to a competitor and abandon that balance. This "switching cost" is psychological rather than contractual - clients are not locked in, but their accumulated value creates a powerful pull.</p>
 
 <h3>The Endowment Effect</h3>
 <p>People value things more highly once they own them. Cashback in a wallet feels like the client's money. They earned it, and the salon is holding it for them. This ownership feeling is stronger than points or stamps because cashback is denominated in real currency. "I have $40 in my wallet" is more motivating than "I have 800 points."</p>
 
 <h3>Mental Accounting</h3>
-<p>Behavioural economist Richard Thaler's research on mental accounting shows that people categorise money differently based on its source. Cashback is mentally categorised as "bonus money" or "found money" &mdash; it feels like it is free to spend because it was not earned through labour. This makes clients more willing to spend it (often adding a service or upgrading their booking) rather than hoarding it.</p>
+<p>Behavioural economist Richard Thaler's research on mental accounting shows that people categorise money differently based on its source. Cashback is mentally categorised as "bonus money" or "found money" - it feels like it is free to spend because it was not earned through labour. This makes clients more willing to spend it (often adding a service or upgrading their booking) rather than hoarding it.</p>
 
 <h3>Variable Reward Accumulation</h3>
 <p>Because cashback amounts vary based on service price, each visit generates a slightly different reward. This variability, while small, creates a more engaging experience than fixed rewards. The client earning $12.50 one visit and $7.00 the next notices their balance growing at a rate that reflects their actual spending, reinforcing the relationship between visits and value.</p>
@@ -807,7 +807,7 @@ const daisyCashbackArticle: LocalBlogPost = {
 <p>Getting started takes less than 15 minutes:</p>
 <ol>
 <li><strong>Navigate to Marketing &amp; Promotions</strong> in your Daisy business dashboard.</li>
-<li><strong>Enable Cashback</strong> and set your percentage rate (start with 5% if unsure &mdash; you can adjust later).</li>
+<li><strong>Enable Cashback</strong> and set your percentage rate (start with 5% if unsure - you can adjust later).</li>
 <li><strong>Choose applicability:</strong> Apply cashback to all services, or exclude specific low-margin treatments.</li>
 <li><strong>Set redemption rules:</strong> Minimum balance for redemption (e.g., $5), maximum percentage of a booking payable with cashback (e.g., 50%), and any service exclusions for redemption.</li>
 <li><strong>Activate.</strong> Cashback begins earning on the next completed appointment.</li>
@@ -823,7 +823,7 @@ const daisyCashbackArticle: LocalBlogPost = {
 <tr><td>Enrollment</td><td>Requires opt-in</td><td>Automatic for all clients</td></tr>
 <tr><td>Tracking</td><td>Manual or separate system</td><td>Integrated into booking flow</td></tr>
 <tr><td>Client understanding</td><td>"What are my points worth?"</td><td>"I have $22 in my wallet"</td></tr>
-<tr><td>Staff effort</td><td>Must explain, track, and redeem</td><td>Zero &mdash; fully automated</td></tr>
+<tr><td>Staff effort</td><td>Must explain, track, and redeem</td><td>Zero - fully automated</td></tr>
 <tr><td>Perceived value</td><td>Abstract (800 points = ???)</td><td>Concrete ($22 = $22)</td></tr>
 <tr><td>Typical enrollment rate</td><td>40-60%</td><td>85%+</td></tr>
 <tr><td>Switching cost for client</td><td>Low (points feel disposable)</td><td>High (money in wallet feels real)</td></tr>
@@ -834,13 +834,13 @@ const daisyCashbackArticle: LocalBlogPost = {
 <p>Once your cashback system is running, these strategies amplify its effectiveness:</p>
 
 <h3>Balance Reminder Notifications</h3>
-<p>The Daisy automatically sends periodic balance reminders to clients who have accumulated cashback but have not booked recently. "You have $18.50 in cashback waiting to be used &mdash; book now to put it toward your next service." These reminders convert dormant balances into active rebookings.</p>
+<p>The Daisy automatically sends periodic balance reminders to clients who have accumulated cashback but have not booked recently. "You have $18.50 in cashback waiting to be used - book now to put it toward your next service." These reminders convert dormant balances into active rebookings.</p>
 
 <h3>Bonus Cashback Events</h3>
 <p>Run limited-time promotions where the cashback rate is doubled. "Double Cashback Week" during slower periods drives bookings when you need them most. The promotional cost is controlled because you set the rate and duration.</p>
 
 <h3>Pair with Referrals</h3>
-<p>Credit referral rewards as cashback rather than separate vouchers. This builds the referring client's wallet balance, reinforcing their loyalty. "You earned $15 referral cashback &mdash; your wallet balance is now $37.50." Seeing a growing balance motivates continued referral activity.</p>
+<p>Credit referral rewards as cashback rather than separate vouchers. This builds the referring client's wallet balance, reinforcing their loyalty. "You earned $15 referral cashback - your wallet balance is now $37.50." Seeing a growing balance motivates continued referral activity.</p>
 
 <h3>Communicate Savings at Checkout</h3>
 <p>After every payment, remind clients of their total lifetime savings: "You have saved $142 with cashback since joining [Salon Name]." Lifetime savings figures reinforce the ongoing value of their loyalty and make the idea of switching feel costly.</p>
@@ -864,24 +864,24 @@ const daisyCashbackArticle: LocalBlogPost = {
 <li><strong>Higher average transaction value</strong> on visits where cashback is redeemed</li>
 <li><strong>Reduced dependency on paid advertising</strong> because retained clients generate more lifetime revenue</li>
 </ul>
-<p>The compounding effect is significant. A 20% increase in visit frequency combined with a 20% improvement in retention does not add 40% to revenue &mdash; it compounds over time because each retained client generates more visits, which generates more cashback, which drives more retention.</p>
+<p>The compounding effect is significant. A 20% increase in visit frequency combined with a 20% improvement in retention does not add 40% to revenue - it compounds over time because each retained client generates more visits, which generates more cashback, which drives more retention.</p>
 
 <h2>Frequently Asked Questions</h2>
 
 <h3>How much does the cashback program cost to run?</h3>
-<p>The cashback system is included in The Daisy's subscription &mdash; there is no separate fee. Your only cost is the cashback itself, which is the percentage you choose to return to clients. A 5% cashback rate on $30,000 monthly revenue means $1,500 in cashback earned by clients. However, not all cashback is redeemed (typical redemption rates are 60-75%), so your actual cost is lower. The revenue generated by increased visits and retention typically delivers 3-5x return on the cashback investment.</p>
+<p>The cashback system is included in The Daisy's subscription - there is no separate fee. Your only cost is the cashback itself, which is the percentage you choose to return to clients. A 5% cashback rate on $30,000 monthly revenue means $1,500 in cashback earned by clients. However, not all cashback is redeemed (typical redemption rates are 60-75%), so your actual cost is lower. The revenue generated by increased visits and retention typically delivers 3-5x return on the cashback investment.</p>
 
 <h3>Can I change my cashback rate after launching?</h3>
 <p>Yes. You can adjust your cashback rate at any time through the dashboard. Changes apply to future transactions and do not affect already-earned balances. Many salons start at a higher rate (7-8%) to build momentum and client awareness, then adjust to a sustainable level (4-5%) after the first quarter.</p>
 
 <h3>What happens to cashback balances if a client stops coming?</h3>
-<p>Unredeemed cashback balances can be configured to expire after a set period (e.g., 12 months of inactivity). Before expiration, The Daisy sends automated reminders: "Your $23.00 cashback balance will expire in 30 days &mdash; book now to use it." These expiration reminders often re-engage lapsed clients who would otherwise be lost.</p>
+<p>Unredeemed cashback balances can be configured to expire after a set period (e.g., 12 months of inactivity). Before expiration, The Daisy sends automated reminders: "Your $23.00 cashback balance will expire in 30 days - book now to use it." These expiration reminders often re-engage lapsed clients who would otherwise be lost.</p>
 
 <h3>Can clients abuse the cashback system?</h3>
 <p>The system includes built-in safeguards. You can set a maximum cashback percentage per transaction (e.g., cashback can cover up to 50% of a booking), minimum balance thresholds for redemption, and service-specific exclusions. Cashback is earned only on completed and paid appointments, preventing gaming through cancellations or no-shows.</p>
 
 <h3>Does cashback work for premium salons?</h3>
-<p>Yes. Premium salons can use a lower cashback rate (2-3%) paired with exclusive perks for high-balance clients. The psychological mechanics &mdash; loss aversion, endowment effect, and mental accounting &mdash; work regardless of price point. A client with $80 in accumulated cashback at a premium salon feels the same pull to return as a client with $20 at a mid-range salon. The key is matching the rate to your margin structure.</p>
+<p>Yes. Premium salons can use a lower cashback rate (2-3%) paired with exclusive perks for high-balance clients. The psychological mechanics - loss aversion, endowment effect, and mental accounting - work regardless of price point. A client with $80 in accumulated cashback at a premium salon feels the same pull to return as a client with $20 at a mid-range salon. The key is matching the rate to your margin structure.</p>
 `,
     metaTitle: 'Daisy Cashback: How It Drives Loyalty | The Daisy',
     metaDescription:

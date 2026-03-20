@@ -47,21 +47,21 @@ const salonKpisToTrackArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>KPIs Are the Language of Salon Growth</h2>
 <p>A Key Performance Indicator (KPI) is a quantifiable metric that tells you whether your business is moving toward or away from a specific goal. For salon owners, KPIs transform intuition into evidence. Instead of "I think we're doing well," KPIs give you "Our client retention rate is 72%, up from 65% last quarter." That precision is the difference between hoping for growth and engineering it.</p>
-<p>Most salon owners track revenue. Revenue is important, but it is a lagging indicator &mdash; it tells you what already happened. The KPIs in this article include both leading indicators (which predict future performance) and lagging indicators (which confirm past results). Together, they give you a complete picture of your salon's health across acquisition, retention, efficiency, and profitability. For a broader context on why <a href="/en/salon-analytics-reporting">salon analytics</a> matter, see our pillar guide.</p>
+<p>Most salon owners track revenue. Revenue is important, but it is a lagging indicator - it tells you what already happened. The KPIs in this article include both leading indicators (which predict future performance) and lagging indicators (which confirm past results). Together, they give you a complete picture of your salon's health across acquisition, retention, efficiency, and profitability. For a broader context on why <a href="/en/salon-analytics-reporting">salon analytics</a> matter, see our pillar guide.</p>
 <p>Each KPI below includes the formula, a practical example, industry benchmarks, and the specific actions you should take when the number moves in the wrong direction.</p>
 
 <h2>KPI 1: Client Retention Rate</h2>
 <p>Client retention rate measures the percentage of clients who return for a second (or subsequent) visit within a defined period. It is the single most important KPI for salon profitability because acquiring a new client costs 5&ndash;7 times more than retaining an existing one.</p>
 <p><strong>Formula:</strong> (Number of clients who visited more than once in the period &divide; Total unique clients in the period) &times; 100</p>
 <p><strong>Example:</strong> If 400 unique clients visited your salon this quarter and 280 of them had visited before, your retention rate is (280 &divide; 400) &times; 100 = 70%.</p>
-<p><strong>Benchmark:</strong> A healthy salon retention rate is 60&ndash;80%. Salons below 50% have a significant acquisition dependency &mdash; they need a constant stream of new clients just to maintain revenue. Salons above 80% have strong loyalty but should check whether they are growing their client base or just serving the same people.</p>
+<p><strong>Benchmark:</strong> A healthy salon retention rate is 60&ndash;80%. Salons below 50% have a significant acquisition dependency - they need a constant stream of new clients just to maintain revenue. Salons above 80% have strong loyalty but should check whether they are growing their client base or just serving the same people.</p>
 <p><strong>What to do if it drops:</strong> Investigate the client journey. Are follow-up communications happening? Is the rebooking prompt effective? Are there service quality issues? Deploy automated re-engagement messages for clients who exceed their typical visit interval. Platforms like <a href="/en/features/business/analytics-reports">The Daisy</a> flag at-risk clients automatically so you can intervene before they churn.</p>
 
 <h2>KPI 2: Average Revenue Per Client (ARPC)</h2>
 <p>Average Revenue Per Client measures how much each client spends per visit, on average. It captures both service revenue and retail sales in a single number.</p>
 <p><strong>Formula:</strong> Total revenue &divide; Total number of client visits</p>
 <p><strong>Example:</strong> If your salon generated $48,000 in revenue from 800 visits this month, your ARPC is $48,000 &divide; 800 = $60.</p>
-<p><strong>Benchmark:</strong> ARPC varies enormously by market and positioning. For a mid-range salon, $50&ndash;$80 per visit is typical. For premium salons, $100&ndash;$200+. The number itself matters less than the trend &mdash; you want ARPC to increase over time, indicating successful upselling, service bundling, or pricing optimisation.</p>
+<p><strong>Benchmark:</strong> ARPC varies enormously by market and positioning. For a mid-range salon, $50&ndash;$80 per visit is typical. For premium salons, $100&ndash;$200+. The number itself matters less than the trend - you want ARPC to increase over time, indicating successful upselling, service bundling, or pricing optimisation.</p>
 <p><strong>What to do if it stagnates:</strong> Review your service menu for bundling opportunities. Train staff on natural upselling techniques. Introduce premium add-ons (treatments, conditioning services, scalp therapy) that increase ticket value without requiring significantly more time. Check whether retail attach rate (the percentage of service clients who also purchase products) is being optimised.</p>
 
 <h2>KPI 3: Chair Utilisation Rate</h2>
@@ -82,7 +82,7 @@ const salonKpisToTrackArticle: LocalBlogPost = {
 <p>New client acquisition rate tracks how many first-time clients you attract within a given period. While retention is cheaper than acquisition, you still need a steady inflow of new clients to replace natural attrition and grow.</p>
 <p><strong>Formula:</strong> (Number of first-time clients in the period &divide; Total unique clients in the period) &times; 100</p>
 <p><strong>Example:</strong> If you served 400 unique clients this month and 80 were first-time visitors, your new client rate is (80 &divide; 400) &times; 100 = 20%.</p>
-<p><strong>Benchmark:</strong> A healthy balance is 15&ndash;25% new clients. Below 10% suggests growth stagnation &mdash; you are serving the same shrinking base. Above 30% may indicate a retention problem (you are acquiring many new clients but not keeping them).</p>
+<p><strong>Benchmark:</strong> A healthy balance is 15&ndash;25% new clients. Below 10% suggests growth stagnation - you are serving the same shrinking base. Above 30% may indicate a retention problem (you are acquiring many new clients but not keeping them).</p>
 <p><strong>What to do if it is low:</strong> Evaluate your visibility channels. Are you listed on beauty marketplaces? Is your Google Business Profile optimised? Are your <a href="/en/features/business/marketing-promotions">marketing campaigns</a> reaching new audiences, or just re-engaging existing clients? Referral programmes, marketplace listings, and social media advertising are the three most effective acquisition channels for salons.</p>
 
 <h2>KPI 6: Client Lifetime Value (CLV)</h2>
@@ -122,7 +122,7 @@ const salonKpisToTrackArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How often should I review salon KPIs?</h3>
-<p>Review the full KPI dashboard weekly &mdash; ideally at the same time each week so it becomes a habit. Daily glances at utilisation and booking volume are useful for operational decisions but should not replace the structured weekly review. Monthly, step back and look at 4-week trends rather than individual weeks to identify patterns that weekly reviews might miss.</p>
+<p>Review the full KPI dashboard weekly - ideally at the same time each week so it becomes a habit. Daily glances at utilisation and booking volume are useful for operational decisions but should not replace the structured weekly review. Monthly, step back and look at 4-week trends rather than individual weeks to identify patterns that weekly reviews might miss.</p>
 
 <h3>What is the most important KPI for a new salon?</h3>
 <p>For a salon in its first 12 months, new client acquisition rate and chair utilisation are the most critical KPIs. You need to build a client base and fill your schedule before retention and lifetime value become meaningful. Once your book is consistently 60%+ utilised, shift focus to retention and average revenue per client to maximise the value of the clients you are attracting.</p>
@@ -131,7 +131,7 @@ const salonKpisToTrackArticle: LocalBlogPost = {
 <p>Yes, and manual tracking is vastly better than no tracking. Create a simple weekly spreadsheet with one column per KPI and update it every Monday morning. The limitation of manual tracking is that it requires discipline, is time-consuming, and is prone to errors. Automated platforms that calculate KPIs from your booking and payment data eliminate these limitations and provide real-time access rather than weekly snapshots.</p>
 
 <h3>How do salon KPIs differ from retail KPIs?</h3>
-<p>Salon KPIs focus on time-based revenue (chair utilisation, hourly productivity) rather than inventory-based metrics (stock turns, sell-through rate). The fundamental constraint in a salon is available service hours, not available product inventory. This makes utilisation, no-show rate, and staff productivity more critical for salons than they would be for a retail business. Client retention is equally important in both models but is measured differently &mdash; salons track visit frequency while retailers track purchase frequency.</p>
+<p>Salon KPIs focus on time-based revenue (chair utilisation, hourly productivity) rather than inventory-based metrics (stock turns, sell-through rate). The fundamental constraint in a salon is available service hours, not available product inventory. This makes utilisation, no-show rate, and staff productivity more critical for salons than they would be for a retail business. Client retention is equally important in both models but is measured differently - salons track visit frequency while retailers track purchase frequency.</p>
 
 <h3>Should I share KPI data with my staff?</h3>
 <p>Yes, selectively. Individual stylists should see their own utilisation, productivity, and retention rates. This creates healthy accountability and enables self-improvement. Team-wide averages provide context without creating harmful competition. Revenue and profitability data is typically shared with managers but not all staff. The principle is: share data that people can act on and that motivates improvement without creating anxiety or resentment.</p>
@@ -183,7 +183,7 @@ const salonClientLifetimeValueArticle: LocalBlogPost = {
       'Client Lifetime Value (CLV) is the most powerful metric for salon business strategy. This deep dive explains how to calculate CLV for your salon, what drives it up or down, how to use CLV to make smarter marketing and retention decisions, and why it should guide every investment you make.',
     aboutPosts: `
 <h2>What Client Lifetime Value Means for Your Salon</h2>
-<p>Client Lifetime Value (CLV) is the total revenue a single client generates throughout their entire relationship with your business. It is not a per-visit number &mdash; it is the cumulative value of every visit, every product purchase, every referral, and every service from the first appointment to the last. CLV is the metric that answers the most fundamental business question: how much is a client actually worth to you?</p>
+<p>Client Lifetime Value (CLV) is the total revenue a single client generates throughout their entire relationship with your business. It is not a per-visit number - it is the cumulative value of every visit, every product purchase, every referral, and every service from the first appointment to the last. CLV is the metric that answers the most fundamental business question: how much is a client actually worth to you?</p>
 <p>Most salon owners have an intuitive sense that some clients are worth more than others. CLV turns that intuition into a precise number that guides real decisions: how much you should spend to acquire a new client, how much you should invest to retain an existing one, which client segments deserve premium attention, and where your <a href="/en/salon-analytics-reporting">analytics efforts</a> should focus.</p>
 <p>This article explains how to calculate CLV for your salon, what factors drive it, and how to use it as the foundation for data-driven business strategy.</p>
 
@@ -209,7 +209,7 @@ const salonClientLifetimeValueArticle: LocalBlogPost = {
 <p>Segmented CLV tells you where to invest. If colour clients are worth 7x more than cut-only clients, marketing spend to attract colour clients delivers 7x the return. <a href="/en/features/business/analytics-reports">Analytics platforms</a> that calculate segmented CLV automatically give you this intelligence without manual spreadsheet work.</p>
 
 <h2>The Three Levers That Drive CLV</h2>
-<p>CLV has three components, and improving any one of them increases the total value. Understanding which lever to pull &mdash; and when &mdash; is the core of CLV-driven strategy.</p>
+<p>CLV has three components, and improving any one of them increases the total value. Understanding which lever to pull - and when - is the core of CLV-driven strategy.</p>
 
 <h3>Lever 1: Average Revenue Per Visit</h3>
 <p>Increasing what each client spends per appointment is the fastest way to lift CLV. Strategies include:</p>
@@ -234,7 +234,7 @@ const salonClientLifetimeValueArticle: LocalBlogPost = {
 <ul>
 <li><strong>Consistent service quality:</strong> The number one reason clients leave is inconsistent quality. One bad experience can end a multi-year relationship. Quality control systems, staff training, and client feedback loops are the foundation of lifespan extension.</li>
 <li><strong>Personal relationships:</strong> Clients who have a personal connection with their stylist stay longer. Encourage staff to build genuine relationships, remember personal details, and create continuity in the client experience.</li>
-<li><strong>Addressing problems proactively:</strong> When something goes wrong (and it will), how you respond determines whether the client stays or leaves. Proactive service recovery &mdash; acknowledging the issue, apologising, and offering a concrete remedy &mdash; often strengthens the relationship beyond its pre-issue level.</li>
+<li><strong>Addressing problems proactively:</strong> When something goes wrong (and it will), how you respond determines whether the client stays or leaves. Proactive service recovery - acknowledging the issue, apologising, and offering a concrete remedy - often strengthens the relationship beyond its pre-issue level.</li>
 <li><strong>Making switching difficult (in a good way):</strong> Not through contracts or penalties, but through accumulated value: loyalty points, personalised service history, a stylist who knows their preferences, and convenience that competitors cannot instantly match.</li>
 </ul>
 
@@ -261,7 +261,7 @@ const salonClientLifetimeValueArticle: LocalBlogPost = {
 <ul>
 <li><strong>Rising CLV:</strong> Indicates improving retention, growing per-visit spending, or both. Your business is becoming more valuable per client.</li>
 <li><strong>Flat CLV:</strong> Suggests stability but no growth. Look for opportunities to improve one of the three levers.</li>
-<li><strong>Declining CLV:</strong> A serious warning signal. Diagnose which lever is weakening &mdash; are clients spending less, visiting less often, or leaving sooner? The answer determines the response.</li>
+<li><strong>Declining CLV:</strong> A serious warning signal. Diagnose which lever is weakening - are clients spending less, visiting less often, or leaving sooner? The answer determines the response.</li>
 </ul>
 <p>Compare CLV trends across segments to identify which client groups are growing in value and which are declining. This intelligence is essential for strategic planning and resource allocation.</p>
 <p>Explore <a href="/en/pricing">The Daisy's pricing plans</a> to see how integrated analytics make CLV tracking automatic and actionable.</p>
@@ -278,7 +278,7 @@ const salonClientLifetimeValueArticle: LocalBlogPost = {
 <p>If your salon has been operating for less than 2 years, you do not have enough data for a reliable lifespan estimate. Use a conservative estimate of 2 years for your calculations and update as you accumulate data. After 12 months of operation, you can calculate actual retention curves from your booking data. After 24 months, your lifespan estimates become reasonably reliable.</p>
 
 <h3>Should I treat referral value as part of CLV?</h3>
-<p>Some models include referral value &mdash; the revenue generated by clients that a given client refers to you. This is powerful but harder to track accurately. If you have a referral programme with trackable links or codes, include referral-generated revenue in your CLV calculation. If referrals are informal and untracked, exclude them from the formal calculation but acknowledge that your true CLV is likely higher than the measured number.</p>
+<p>Some models include referral value - the revenue generated by clients that a given client refers to you. This is powerful but harder to track accurately. If you have a referral programme with trackable links or codes, include referral-generated revenue in your CLV calculation. If referrals are informal and untracked, exclude them from the formal calculation but acknowledge that your true CLV is likely higher than the measured number.</p>
 
 <h3>How does CLV connect to the other salon KPIs?</h3>
 <p>CLV is the outcome metric that all other KPIs feed into. Retention rate drives client lifespan. Average revenue per client drives the per-visit component. Chair utilisation affects how many clients you can serve. No-show rate reduces realised revenue. New client acquisition rate determines how many CLV streams you are creating. Every KPI improvement flows through to CLV improvement. That is why tracking the full set of KPIs together (not just CLV in isolation) gives you the diagnostic power to improve CLV systematically.</p>
@@ -362,7 +362,7 @@ const salonRevenueReportingArticle: LocalBlogPost = {
 <p>This metric serves multiple purposes:</p>
 <ul>
 <li><strong>Fair compensation:</strong> Commission and bonus structures should reflect actual revenue contribution. Transparent tracking ensures fairness.</li>
-<li><strong>Coaching opportunities:</strong> Staff members with lower-than-average revenue are not necessarily underperforming &mdash; they may need training on upselling, different service mix exposure, or better scheduling. The data reveals where coaching is needed.</li>
+<li><strong>Coaching opportunities:</strong> Staff members with lower-than-average revenue are not necessarily underperforming - they may need training on upselling, different service mix exposure, or better scheduling. The data reveals where coaching is needed.</li>
 <li><strong>Scheduling optimisation:</strong> High-revenue staff should be scheduled during peak demand periods. Lower-revenue staff can fill off-peak slots. <a href="/en/features/business/team-management">Team management tools</a> make this scheduling alignment automatic.</li>
 </ul>
 
@@ -390,7 +390,7 @@ const salonRevenueReportingArticle: LocalBlogPost = {
 <p>This analysis often reveals surprises. The channel that generates the most new clients may not generate the most revenue when you account for client quality, retention, and average spend.</p>
 
 <h2>Building Revenue Reports That Drive Decisions</h2>
-<p>A report that sits in a spreadsheet unread is worse than no report &mdash; it creates the illusion of data-driven management without the substance. Effective revenue reports are structured for action.</p>
+<p>A report that sits in a spreadsheet unread is worse than no report - it creates the illusion of data-driven management without the substance. Effective revenue reports are structured for action.</p>
 
 <h3>The Weekly Revenue Summary</h3>
 <p>Create a one-page weekly summary that includes:</p>
@@ -454,7 +454,7 @@ const salonRevenueReportingArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How often should I look at revenue reports?</h3>
-<p>Check daily revenue at the end of each business day &mdash; this is a quick glance, not a deep analysis. Review the detailed weekly summary every Monday. Conduct a thorough monthly analysis in the first week of each month. Do a strategic quarterly review at the start of each quarter. This cadence gives you real-time awareness, weekly accountability, monthly depth, and quarterly perspective.</p>
+<p>Check daily revenue at the end of each business day - this is a quick glance, not a deep analysis. Review the detailed weekly summary every Monday. Conduct a thorough monthly analysis in the first week of each month. Do a strategic quarterly review at the start of each quarter. This cadence gives you real-time awareness, weekly accountability, monthly depth, and quarterly perspective.</p>
 
 <h3>What percentage of salon revenue should come from retail?</h3>
 <p>Industry benchmarks suggest 8&ndash;15% of total revenue from retail product sales. Top-performing salons achieve 15&ndash;20%. If your retail is below 5%, the most common causes are lack of product recommendations during services, poor product display, and not including retail in the checkout flow. Staff training on natural product recommendations and integrated payment systems that simplify adding products to a service transaction are the fastest fixes.</p>
@@ -520,15 +520,15 @@ const dataDrivenSalonManagementArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>What Data-Driven Management Actually Means</h2>
 <p>Data-driven salon management is the practice of making business decisions based on measured evidence rather than intuition, habit, or guesswork. It does not mean you need to become a data scientist or spend hours in spreadsheets. It means asking "what do the numbers say?" before making important decisions about staffing, pricing, marketing, service offerings, and operations.</p>
-<p>The difference between a data-driven salon and a gut-feeling salon is not intelligence &mdash; it is information. The owner who checks retention data before redesigning the loyalty programme makes a better decision than the owner who guesses what clients want. The manager who reviews hourly revenue data before adjusting staff schedules makes a better decision than the one who schedules based on "what we've always done." For a deeper look at the analytics that power data-driven management, see our <a href="/en/salon-analytics-reporting">salon analytics pillar guide</a>.</p>
+<p>The difference between a data-driven salon and a gut-feeling salon is not intelligence - it is information. The owner who checks retention data before redesigning the loyalty programme makes a better decision than the owner who guesses what clients want. The manager who reviews hourly revenue data before adjusting staff schedules makes a better decision than the one who schedules based on "what we've always done." For a deeper look at the analytics that power data-driven management, see our <a href="/en/salon-analytics-reporting">salon analytics pillar guide</a>.</p>
 <p>This guide is for salon owners who know they should be using data but are not sure where to start. It covers the foundations, the first steps, and the mindset shift that turns data from an intimidating concept into a daily advantage.</p>
 
 <h2>Why Salon Owners Avoid Data (and Why That Is Changing)</h2>
 <p>Most salon owners started their businesses because they love beauty, not because they love numbers. The common objections to data-driven management are understandable:</p>
 <ul>
-<li><strong>"I do not have time."</strong> True if you are tracking data manually. False if you use a platform that collects and presents data automatically. The time investment for data-driven decisions is 15&ndash;30 minutes per week &mdash; less time than a single colour appointment.</li>
+<li><strong>"I do not have time."</strong> True if you are tracking data manually. False if you use a platform that collects and presents data automatically. The time investment for data-driven decisions is 15&ndash;30 minutes per week - less time than a single colour appointment.</li>
 <li><strong>"I do not understand analytics."</strong> You do not need to understand analytics in an academic sense. You need to understand what 5 specific numbers mean for your business. This article will teach you that in 10 minutes.</li>
-<li><strong>"My business is too small for data."</strong> Even a solo stylist generates data worth analysing. Your appointment book, client list, and revenue records contain insights about which services are most profitable, which days are busiest, and which clients are your most valuable. Size does not determine whether data is useful &mdash; it determines how much data you have.</li>
+<li><strong>"My business is too small for data."</strong> Even a solo stylist generates data worth analysing. Your appointment book, client list, and revenue records contain insights about which services are most profitable, which days are busiest, and which clients are your most valuable. Size does not determine whether data is useful - it determines how much data you have.</li>
 <li><strong>"I trust my instincts."</strong> Good instincts are an asset. Data-informed instincts are a superpower. The best salon owners use data to confirm or challenge their instincts, not to replace them.</li>
 </ul>
 
@@ -560,7 +560,7 @@ const dataDrivenSalonManagementArticle: LocalBlogPost = {
 
 <h3>Week 1: Set Up Tracking</h3>
 <ul>
-<li>If you are using a salon management platform, explore its reporting and analytics features. Most platforms track the five numbers above automatically &mdash; you just need to know where to find them.</li>
+<li>If you are using a salon management platform, explore its reporting and analytics features. Most platforms track the five numbers above automatically - you just need to know where to find them.</li>
 <li>If you are not using a platform, create a simple spreadsheet with five columns: Date, Total Revenue, Number of Visits, Number of No-Shows, Number of New Clients. Fill it in at the end of each day. This takes 2 minutes.</li>
 <li>Review your client list and identify how many unique clients visited in the last 90 days versus how many are repeat visitors. This gives you your baseline retention rate.</li>
 </ul>
@@ -568,7 +568,7 @@ const dataDrivenSalonManagementArticle: LocalBlogPost = {
 <h3>Week 2: Establish Your Baseline</h3>
 <ul>
 <li>After 7 days of tracking, calculate your first set of numbers: ARPV, daily utilisation, no-show rate.</li>
-<li>Write these numbers down. They are your baseline &mdash; the starting point from which all future improvements will be measured.</li>
+<li>Write these numbers down. They are your baseline - the starting point from which all future improvements will be measured.</li>
 <li>Do not judge the numbers. There is no "wrong" starting point. The purpose is awareness, not self-criticism.</li>
 </ul>
 
@@ -582,7 +582,7 @@ const dataDrivenSalonManagementArticle: LocalBlogPost = {
 <h3>Week 4: Review and Commit</h3>
 <ul>
 <li>Compare your week 3&ndash;4 numbers to your week 1&ndash;2 baseline. If you implemented a change in week 3, you may already see improvement.</li>
-<li>Schedule a recurring weekly 15-minute "data review" &mdash; the same time every week. This is your new management habit.</li>
+<li>Schedule a recurring weekly 15-minute "data review" - the same time every week. This is your new management habit.</li>
 <li>Decide whether your current tracking method is sustainable. If the spreadsheet feels cumbersome, it is time to invest in an <a href="/en/features/business/analytics-reports">analytics-enabled salon platform</a> that automates the process.</li>
 </ul>
 
@@ -590,9 +590,9 @@ const dataDrivenSalonManagementArticle: LocalBlogPost = {
 <p>Data-driven management is not a solo activity. Your team needs to understand and engage with the numbers that affect their work.</p>
 <ul>
 <li><strong>Share relevant metrics weekly.</strong> At your weekly team meeting (even a 5-minute standup counts), share one or two numbers: "Our retention rate went up 3% this month" or "No-shows dropped to 4% thanks to the new reminder system." Celebrate improvements.</li>
-<li><strong>Make individual data visible.</strong> Each stylist should have access to their own utilisation rate, average ticket, and rebooking rate. This is not surveillance &mdash; it is empowerment. When people can see their numbers, they naturally work to improve them.</li>
+<li><strong>Make individual data visible.</strong> Each stylist should have access to their own utilisation rate, average ticket, and rebooking rate. This is not surveillance - it is empowerment. When people can see their numbers, they naturally work to improve them.</li>
 <li><strong>Connect data to decisions.</strong> When you make a change (adjusting the schedule, launching a promotion, changing a product line), explain the data that informed the decision. "We are adding Tuesday evening appointments because our data shows 15% of booking requests come in for times we are currently closed" is more compelling than "I think we should try evening hours."</li>
-<li><strong>Reward data-driven behaviour.</strong> When a team member notices a pattern, suggests a data-informed improvement, or asks "what do the numbers say?" &mdash; acknowledge and encourage it. The more your team sees data as helpful rather than threatening, the faster your culture shifts.</li>
+<li><strong>Reward data-driven behaviour.</strong> When a team member notices a pattern, suggests a data-informed improvement, or asks "what do the numbers say?" - acknowledge and encourage it. The more your team sees data as helpful rather than threatening, the faster your culture shifts.</li>
 </ul>
 
 <h2>Common Beginner Mistakes</h2>

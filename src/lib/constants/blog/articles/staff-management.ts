@@ -45,7 +45,7 @@ const staffSchedulingArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Why Staff Scheduling Is the Foundation of Salon Operations</h2>
 <p>Staff scheduling determines almost everything in a salon: client capacity, revenue potential, staff satisfaction, and service quality. A well-built schedule maximises your <a href="/en/resources/blog/businesses/salon-staff-management">staff management workflow</a> by ensuring the right people are available at the right times, while a poorly managed schedule leads to overstaffing during slow periods, understaffing during peak hours, and a team that feels overworked or undervalued.</p>
-<p>According to a 2025 Homebase workforce study, beauty businesses that optimised their scheduling reduced labour costs by 12% while simultaneously increasing staff satisfaction scores by 18%. The key is not working your team harder &mdash; it is scheduling smarter. This guide provides the frameworks, templates, and best practices to build a scheduling system that works for your salon, your team, and your clients.</p>
+<p>According to a 2025 Homebase workforce study, beauty businesses that optimised their scheduling reduced labour costs by 12% while simultaneously increasing staff satisfaction scores by 18%. The key is not working your team harder - it is scheduling smarter. This guide provides the frameworks, templates, and best practices to build a scheduling system that works for your salon, your team, and your clients.</p>
 
 <h2>Understanding Your Salon's Scheduling Patterns</h2>
 <p>Before building a schedule, you need to understand the demand patterns unique to your business. Data-driven scheduling outperforms intuition-based scheduling every time.</p>
@@ -117,7 +117,7 @@ const staffSchedulingArticle: LocalBlogPost = {
 </ul>
 
 <h2>Workload Balancing: Preventing Burnout and Idle Time</h2>
-<p>The goal of intelligent scheduling is not just coverage &mdash; it is balanced coverage where every team member has a sustainable workload.</p>
+<p>The goal of intelligent scheduling is not just coverage - it is balanced coverage where every team member has a sustainable workload.</p>
 
 <h3>Appointment Distribution</h3>
 <p>Track each stylist&rsquo;s daily appointment count and total service hours. Watch for imbalances where one stylist is consistently booked solid while another has gaps. Causes include:</p>
@@ -244,8 +244,8 @@ const commissionStructuresArticle: LocalBlogPost = {
       'An in-depth guide to salon commission structures covering flat commission, tiered models, hybrid salary-plus-commission, booth rental, and team-based pay. Includes real calculations, pros and cons of each, and guidance on choosing the right model for your business.',
     aboutPosts: `
 <h2>Why Your Commission Structure Defines Your Salon Culture</h2>
-<p>Your commission structure is not just a payroll mechanism &mdash; it is the single most powerful lever you have for shaping staff behaviour, retention, and salon culture. The way you pay your team directly influences whether they upsell, whether they prioritise quality, whether they stay through busy seasons, and whether your best talent walks across the street to a competitor. Your <a href="/en/resources/blog/businesses/salon-staff-management">staff management approach</a> succeeds or fails based on how you structure compensation.</p>
-<p>According to a 2025 Professional Beauty Industry survey, commission structure was the #2 reason beauty professionals cited for leaving a salon (after work-life balance). Getting compensation right does not just affect your payroll &mdash; it determines whether you can attract and retain the talent that drives your business forward.</p>
+<p>Your commission structure is not just a payroll mechanism - it is the single most powerful lever you have for shaping staff behaviour, retention, and salon culture. The way you pay your team directly influences whether they upsell, whether they prioritise quality, whether they stay through busy seasons, and whether your best talent walks across the street to a competitor. Your <a href="/en/resources/blog/businesses/salon-staff-management">staff management approach</a> succeeds or fails based on how you structure compensation.</p>
+<p>According to a 2025 Professional Beauty Industry survey, commission structure was the #2 reason beauty professionals cited for leaving a salon (after work-life balance). Getting compensation right does not just affect your payroll - it determines whether you can attract and retain the talent that drives your business forward.</p>
 <p>This guide walks through every major commission model with real calculations so you can choose the structure that aligns your team&rsquo;s incentives with your business goals.</p>
 
 <h2>Commission Model 1: Straight Commission</h2>
@@ -273,7 +273,7 @@ const commissionStructuresArticle: LocalBlogPost = {
 
 <h3>Pros</h3>
 <ul>
-<li>Strong performance incentive &mdash; income directly tied to effort and results</li>
+<li>Strong performance incentive - income directly tied to effort and results</li>
 <li>Lower fixed cost for the salon during slow periods</li>
 <li>Top performers can earn more than they would on salary</li>
 <li>Simple to calculate and understand</li>
@@ -281,7 +281,7 @@ const commissionStructuresArticle: LocalBlogPost = {
 
 <h3>Cons</h3>
 <ul>
-<li>Income instability for staff &mdash; slow weeks hit their wallet immediately</li>
+<li>Income instability for staff - slow weeks hit their wallet immediately</li>
 <li>Can create a competitive (rather than collaborative) team culture</li>
 <li>Staff may prioritise high-ticket services over client needs</li>
 <li>Higher turnover risk during slow seasons when income drops</li>
@@ -345,7 +345,7 @@ const commissionStructuresArticle: LocalBlogPost = {
 
 <h3>Pros</h3>
 <ul>
-<li>Income stability for staff &mdash; guaranteed base protects during slow periods</li>
+<li>Income stability for staff - guaranteed base protects during slow periods</li>
 <li>Still incentivises performance through the commission component</li>
 <li>Easier to recruit because candidates see income security</li>
 <li>Reduces turnover during seasonal dips</li>
@@ -378,13 +378,13 @@ const commissionStructuresArticle: LocalBlogPost = {
 <li>Predictable, guaranteed income for the salon regardless of the stylist&rsquo;s performance</li>
 <li>No payroll administration, benefits, or commission calculations</li>
 <li>Attracts experienced professionals who want independence and higher earning potential</li>
-<li>Lower operational involvement &mdash; the renter runs their own business</li>
+<li>Lower operational involvement - the renter runs their own business</li>
 </ul>
 
 <h3>Cons</h3>
 <ul>
 <li>Less control over service quality, pricing, and client experience</li>
-<li>Renters are not your employees &mdash; you cannot direct their work or enforce standards the same way</li>
+<li>Renters are not your employees - you cannot direct their work or enforce standards the same way</li>
 <li>Clients may follow the renter if they leave, taking revenue with them</li>
 <li>Complex legal and regulatory requirements in some jurisdictions (independent contractor vs employee classification)</li>
 <li>Harder to build a cohesive brand and team culture</li>
@@ -428,7 +428,7 @@ const commissionStructuresArticle: LocalBlogPost = {
 <li><strong>Startup or small salon (1&ndash;3 staff):</strong> Salary plus commission provides the income stability that helps you attract first hires while keeping your costs manageable.</li>
 <li><strong>Growing salon (4&ndash;8 staff):</strong> Tiered commission rewards your best performers and creates clear growth targets that motivate the team.</li>
 <li><strong>Established premium salon (8+ staff):</strong> Hybrid or team-based models that combine base salary with performance bonuses create the stable, collaborative culture that premium brands require.</li>
-<li><strong>Multi-service salon with specialists:</strong> Consider different models for different roles &mdash; commission for client-facing stylists, salary for reception and support staff, booth rental for visiting specialists.</li>
+<li><strong>Multi-service salon with specialists:</strong> Consider different models for different roles - commission for client-facing stylists, salary for reception and support staff, booth rental for visiting specialists.</li>
 </ul>
 <p>The Daisy&rsquo;s <a href="/en/features/business/team-management">team management platform</a> supports all commission structures with automatic calculation, real-time performance tracking, and transparent reporting that staff can access to see their earnings at any time.</p>
 
@@ -451,7 +451,7 @@ const commissionStructuresArticle: LocalBlogPost = {
 <p>Yes. Retail commissions of 10&ndash;20% incentivise product recommendations that benefit clients (better home care results) and the salon (additional revenue). Without retail commission, most staff will not proactively recommend products, leaving significant revenue on the table.</p>
 
 <h3>How do I handle commission when a client no-shows?</h3>
-<p>If the client was charged a no-show fee, distribute commission on the fee amount as if it were service revenue. If the appointment slot was simply lost, no commission is owed. This is another reason why enforcing a no-show/late cancellation policy &mdash; and collecting fees &mdash; protects both the salon and the staff.</p>
+<p>If the client was charged a no-show fee, distribute commission on the fee amount as if it were service revenue. If the appointment slot was simply lost, no commission is owed. This is another reason why enforcing a no-show/late cancellation policy - and collecting fees - protects both the salon and the staff.</p>
 
 <h3>Can I change commission rates without losing staff?</h3>
 <p>Yes, if you handle the transition well. The key is transparency and fairness: show staff their projected earnings under the new structure, provide a transition guarantee period, and ensure the change is positioned as a benefit (e.g., tiered commission that rewards growth). Surprise commission cuts with no explanation are the fastest way to lose your best people.</p>
@@ -502,7 +502,7 @@ const hiringSalonStaffArticle: LocalBlogPost = {
       'A practical hiring guide for salon owners covering where to find candidates, interview question frameworks for technical and cultural fit, red flags to watch for, trial shift best practices, and onboarding fundamentals.',
     aboutPosts: `
 <h2>Why Hiring Is the Highest-Leverage Activity in Your Salon</h2>
-<p>Every hire either strengthens or weakens your salon. A great stylist brings clients, lifts team morale, and contributes to your reputation. A poor hire drives clients away, creates team friction, and costs you months of wasted training and management energy. In a service business where the team IS the product, hiring well is not just an HR function &mdash; it is the most important business decision you make repeatedly.</p>
+<p>Every hire either strengthens or weakens your salon. A great stylist brings clients, lifts team morale, and contributes to your reputation. A poor hire drives clients away, creates team friction, and costs you months of wasted training and management energy. In a service business where the team IS the product, hiring well is not just an HR function - it is the most important business decision you make repeatedly.</p>
 <p>The beauty industry faces chronic hiring challenges. A 2025 NHBF (National Hair and Beauty Federation) report found that 67% of salon owners cited recruitment as their biggest operational challenge, ahead of marketing, pricing, and technology. The talent pool is competitive, and the best professionals have options. Your hiring process needs to attract them and accurately identify who will thrive in your environment.</p>
 <p>This guide gives you a structured approach to finding, evaluating, and onboarding salon staff that fits your culture and delivers results. Use it alongside your <a href="/en/resources/blog/businesses/salon-staff-management">broader staff management strategy</a> for best results.</p>
 
@@ -510,7 +510,7 @@ const hiringSalonStaffArticle: LocalBlogPost = {
 <p>Before you can interview, you need a pipeline of qualified candidates. The best hires rarely come from a single source.</p>
 
 <h3>Industry-Specific Platforms</h3>
-<p>Beauty industry job boards (SalonEmployment, StyleSeat job listings, Indeed filtered to beauty/wellness) reach candidates who are actively looking. Post detailed listings that describe your salon culture, compensation structure, and growth opportunities &mdash; not just the job requirements.</p>
+<p>Beauty industry job boards (SalonEmployment, StyleSeat job listings, Indeed filtered to beauty/wellness) reach candidates who are actively looking. Post detailed listings that describe your salon culture, compensation structure, and growth opportunities - not just the job requirements.</p>
 
 <h3>Social Media Recruitment</h3>
 <p>Instagram is the beauty industry&rsquo;s primary portfolio platform. Posting hiring announcements on your salon&rsquo;s Instagram reaches candidates who already know and admire your work. Searching beauty-related hashtags in your area (#DubaiStylist, #RiyadhHairArtist) lets you identify talented professionals directly.</p>
@@ -532,8 +532,8 @@ const hiringSalonStaffArticle: LocalBlogPost = {
 <ul>
 <li>Consistency and quality of work across different styles and clients</li>
 <li>Range of skills (not just one signature look)</li>
-<li>Presentation quality &mdash; how they photograph and display their work reflects their attention to detail</li>
-<li>Career trajectory &mdash; progression through roles and salons, or long tenures showing stability</li>
+<li>Presentation quality - how they photograph and display their work reflects their attention to detail</li>
+<li>Career trajectory - progression through roles and salons, or long tenures showing stability</li>
 </ul>
 
 <h3>Stage 2: In-Person Interview</h3>
@@ -547,7 +547,7 @@ const hiringSalonStaffArticle: LocalBlogPost = {
 
 <h3>For Hair Stylists</h3>
 <ul>
-<li>&ldquo;Walk me through your consultation process for a new client who wants a major change &mdash; say, going from long to a pixie cut.&rdquo; (Reveals: consultation skills, client management, managing expectations)</li>
+<li>&ldquo;Walk me through your consultation process for a new client who wants a major change - say, going from long to a pixie cut.&rdquo; (Reveals: consultation skills, client management, managing expectations)</li>
 <li>&ldquo;A client comes in with colour-damaged hair wanting another colour treatment. What do you do?&rdquo; (Reveals: ethical judgment, technical knowledge, ability to say no when needed)</li>
 <li>&ldquo;What colour lines and products are you most experienced with? What would you want to learn?&rdquo; (Reveals: product knowledge, willingness to learn your salon&rsquo;s preferred brands)</li>
 <li>&ldquo;How do you handle a situation where the client is unhappy with the result?&rdquo; (Reveals: problem-solving, emotional maturity, client retention instinct)</li>
@@ -627,7 +627,7 @@ const hiringSalonStaffArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How many candidates should I interview before making an offer?</h3>
-<p>Aim to interview 3&ndash;5 qualified candidates for each position. Fewer than 3 means you may not have seen enough options; more than 5 suggests your screening process is not filtering effectively. If you find an exceptional candidate after the first interview, it is fine to move forward &mdash; do not delay for the sake of seeing more people.</p>
+<p>Aim to interview 3&ndash;5 qualified candidates for each position. Fewer than 3 means you may not have seen enough options; more than 5 suggests your screening process is not filtering effectively. If you find an exceptional candidate after the first interview, it is fine to move forward - do not delay for the sake of seeing more people.</p>
 
 <h3>Should I hire for skill or attitude?</h3>
 <p>Hire for attitude and train for skill when the skill gap is bridgeable (junior to mid-level technical ability). Hire for skill when you need immediate expertise (senior colourist, advanced skin therapist). A highly skilled professional with a poor attitude will damage your team faster than a positive, trainable person with developing skills.</p>
@@ -686,16 +686,16 @@ const employeeRetentionArticle: LocalBlogPost = {
 <h2>The Cost of Losing a Stylist Is Higher Than You Think</h2>
 <p>When a talented stylist leaves your salon, the financial impact goes far beyond replacing one employee. The true cost of turnover includes lost clients who follow the departing stylist (typically 30&ndash;50% of their book), recruitment costs (job posting, interviewing, trial shifts), training investment for the replacement (3&ndash;6 months to reach full productivity), team morale impact (remaining staff question their own tenure), and revenue gap during the transition (empty chair for 4&ndash;8 weeks minimum).</p>
 <p>Industry research puts the total cost of replacing a mid-level stylist at 1.5&ndash;2x their annual compensation. For a stylist earning 8,000 AED/month, that is 144,000&ndash;192,000 AED in direct and indirect costs. Yet most salon owners spend far more time and money on client acquisition than on <a href="/en/resources/blog/businesses/salon-staff-management">retaining the staff</a> who serve those clients.</p>
-<p>This guide focuses on the strategies that actually reduce turnover &mdash; based on industry data and the real reasons beauty professionals leave.</p>
+<p>This guide focuses on the strategies that actually reduce turnover - based on industry data and the real reasons beauty professionals leave.</p>
 
 <h2>Why Beauty Professionals Actually Leave</h2>
 <p>Understanding the real reasons behind departures is essential for prevention. A 2025 survey by the Professional Beauty Association identified the top reasons:</p>
 
 <h3>1. Insufficient Income or Lack of Financial Growth (42%)</h3>
-<p>The #1 reason is money &mdash; but not always the current amount. Many stylists leave because they see no path to earning more. They have hit their commission ceiling, there is no performance bonus structure, and they feel their income has plateaued while their skills have grown.</p>
+<p>The #1 reason is money - but not always the current amount. Many stylists leave because they see no path to earning more. They have hit their commission ceiling, there is no performance bonus structure, and they feel their income has plateaued while their skills have grown.</p>
 
 <h3>2. Work-Life Balance (28%)</h3>
-<p>Beauty is a physically demanding profession with irregular hours. Stylists who consistently work 10-hour days, miss weekends with family, and have unpredictable schedules burn out and leave &mdash; even when they love the work itself.</p>
+<p>Beauty is a physically demanding profession with irregular hours. Stylists who consistently work 10-hour days, miss weekends with family, and have unpredictable schedules burn out and leave - even when they love the work itself.</p>
 
 <h3>3. Toxic Work Environment or Poor Management (18%)</h3>
 <p>Interpersonal conflict, favouritism, micromanagement, and lack of recognition drive out good people. A skilled stylist with options will not tolerate a bad work environment for long.</p>
@@ -723,7 +723,7 @@ const employeeRetentionArticle: LocalBlogPost = {
 </ul>
 
 <h2>Strategy 2: Career Development Pathways</h2>
-<p>Staff stay longer at salons where they can see a future &mdash; not just a job. Create formal career levels with clear requirements for advancement.</p>
+<p>Staff stay longer at salons where they can see a future - not just a job. Create formal career levels with clear requirements for advancement.</p>
 
 <h3>Example Career Ladder</h3>
 <ul>
@@ -745,7 +745,7 @@ const employeeRetentionArticle: LocalBlogPost = {
 </ul>
 
 <h2>Strategy 3: Work-Life Balance That Prevents Burnout</h2>
-<p>Beauty professionals are athletes of service &mdash; their bodies and energy are their tools. Protecting their wellbeing directly protects your business.</p>
+<p>Beauty professionals are athletes of service - their bodies and energy are their tools. Protecting their wellbeing directly protects your business.</p>
 
 <h3>Schedule Predictability</h3>
 <p>Publish schedules 2&ndash;4 weeks in advance. Staff who cannot plan their personal lives around their work schedules experience constant low-grade stress that accumulates into burnout and departure.</p>
@@ -763,11 +763,11 @@ const employeeRetentionArticle: LocalBlogPost = {
 <p>Beauty professionals absorb clients&rsquo; emotional energy all day. Acknowledge the emotional labour of the role. Options include: access to employee assistance programs, periodic team wellness days, and a culture where staff feel comfortable taking a mental health day when needed.</p>
 
 <h2>Strategy 4: Culture and Recognition</h2>
-<p>People leave managers more often than they leave jobs. Building a positive culture is not about ping pong tables &mdash; it is about how people feel at work every day.</p>
+<p>People leave managers more often than they leave jobs. Building a positive culture is not about ping pong tables - it is about how people feel at work every day.</p>
 
 <h3>Regular Recognition</h3>
 <ul>
-<li><strong>Weekly shout-outs:</strong> Publicly recognise achievements in team meetings &mdash; highest rebooking rate, best client review, most product sales.</li>
+<li><strong>Weekly shout-outs:</strong> Publicly recognise achievements in team meetings - highest rebooking rate, best client review, most product sales.</li>
 <li><strong>Monthly awards:</strong> &ldquo;Stylist of the Month&rdquo; with a small reward (gift card, extra half-day off, product bundle).</li>
 <li><strong>Client feedback sharing:</strong> Share positive client reviews with the specific team member they mention. This is free, takes 30 seconds, and is one of the most powerful recognition tools available.</li>
 </ul>
@@ -776,7 +776,7 @@ const employeeRetentionArticle: LocalBlogPost = {
 <p>Monthly team activities (dinner, outing, team training session) build the relationships that make people want to stay. The investment is small (500&ndash;2,000 AED/month) relative to the retention value.</p>
 
 <h3>Open Communication</h3>
-<p>Conduct quarterly one-on-one conversations with each team member. Ask about their satisfaction, challenges, and goals. Act on the feedback. Staff who feel heard and valued are significantly less likely to leave &mdash; even when competitors offer slightly higher pay.</p>
+<p>Conduct quarterly one-on-one conversations with each team member. Ask about their satisfaction, challenges, and goals. Act on the feedback. Staff who feel heard and valued are significantly less likely to leave - even when competitors offer slightly higher pay.</p>
 
 <h3>Conflict Resolution</h3>
 <p>Address interpersonal conflicts immediately and privately. Unresolved tension between team members is one of the most common reasons people leave, and it often goes unmentioned in exit interviews because people do not want to name names.</p>
@@ -803,7 +803,7 @@ const employeeRetentionArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>What is the biggest retention mistake salon owners make?</h3>
-<p>Taking their best people for granted. Top performers are quiet about their dissatisfaction because they are professional &mdash; until they leave. Proactively check in with your strongest staff, recognise their contributions, and ensure their compensation reflects their value. By the time they tell you they are leaving, they have usually already accepted another offer.</p>
+<p>Taking their best people for granted. Top performers are quiet about their dissatisfaction because they are professional - until they leave. Proactively check in with your strongest staff, recognise their contributions, and ensure their compensation reflects their value. By the time they tell you they are leaving, they have usually already accepted another offer.</p>
 
 <h3>Should I counter-offer when a stylist gives notice?</h3>
 <p>Counter-offers have a poor track record. Data shows that 50&ndash;80% of employees who accept a counter-offer leave within 12 months anyway, because the underlying issues (culture, growth, management) were not resolved by a pay increase. It is better to invest in retention before the resignation than to scramble after it.</p>
@@ -861,7 +861,7 @@ const freelanceBeautyScheduleArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Why Schedule Management Makes or Breaks a Freelance Beauty Career</h2>
 <p>As a freelance stylist, makeup artist, or independent beauty professional, your schedule is your business plan. Every hour you work, every gap between clients, every cancelled appointment, and every commute directly affects your income and wellbeing. Unlike salon-employed professionals who have a manager handling the schedule, you are responsible for building, protecting, and optimising every day yourself.</p>
-<p>The difference between freelancers earning 6,000 AED/month and those earning 15,000 AED/month is rarely skill &mdash; it is schedule management. Top-earning freelance beauty professionals fill 75&ndash;85% of their available hours with billable work, while struggling freelancers fill 40&ndash;50%. The gap is not about working harder &mdash; it is about booking smarter, reducing dead time, and protecting your energy for the work that pays.</p>
+<p>The difference between freelancers earning 6,000 AED/month and those earning 15,000 AED/month is rarely skill - it is schedule management. Top-earning freelance beauty professionals fill 75&ndash;85% of their available hours with billable work, while struggling freelancers fill 40&ndash;50%. The gap is not about working harder - it is about booking smarter, reducing dead time, and protecting your energy for the work that pays.</p>
 <p>This guide gives you the frameworks and tools to manage your freelance beauty schedule like a business.</p>
 
 <h2>Time Blocking: The Foundation of a Productive Schedule</h2>
@@ -873,20 +873,20 @@ const freelanceBeautyScheduleArticle: LocalBlogPost = {
 <li><strong>Block service windows.</strong> Group appointments into morning (9am&ndash;12pm) and afternoon (1pm&ndash;5pm) blocks with a lunch break between. This creates natural rhythm and prevents the scattered one-appointment-here, one-appointment-there pattern that wastes hours in transit and transition.</li>
 <li><strong>Block travel time.</strong> If you are a mobile professional, allocate specific travel windows between appointments based on your service area. A 30-minute appointment with 45 minutes of travel on each side is actually a 2-hour commitment.</li>
 <li><strong>Block admin time.</strong> Reserve 30&ndash;60 minutes daily (or 2&ndash;3 hours weekly) for non-client work: responding to inquiries, managing social media, bookkeeping, ordering supplies, and continuing education.</li>
-<li><strong>Block personal time.</strong> Put your gym sessions, family commitments, and rest time in your calendar as non-negotiable blocks. Clients cannot see these &mdash; they simply see that the time is unavailable.</li>
+<li><strong>Block personal time.</strong> Put your gym sessions, family commitments, and rest time in your calendar as non-negotiable blocks. Clients cannot see these - they simply see that the time is unavailable.</li>
 </ol>
 
 <h3>Communicating Your Availability</h3>
-<p>Share your available time slots (not your entire schedule) with clients through your booking platform. <a href="/en/features/professional/payment-processing">The Daisy for professionals</a> lets you set your availability, and clients book from the open slots &mdash; you never need to negotiate appointment times via WhatsApp messages.</p>
+<p>Share your available time slots (not your entire schedule) with clients through your booking platform. <a href="/en/features/professional/payment-processing">The Daisy for professionals</a> lets you set your availability, and clients book from the open slots - you never need to negotiate appointment times via WhatsApp messages.</p>
 
 <h2>Client Booking Policies That Protect Your Schedule</h2>
 <p>Clear booking policies prevent the scheduling chaos that most freelancers experience. Establish these policies from day one and communicate them to every client:</p>
 
 <h3>Minimum Booking Notice</h3>
-<p>Require a minimum advance booking time (e.g., 24 hours). This prevents last-minute requests that disrupt your planned day. Exceptions for loyal, regular clients are fine &mdash; but the default should protect your schedule.</p>
+<p>Require a minimum advance booking time (e.g., 24 hours). This prevents last-minute requests that disrupt your planned day. Exceptions for loyal, regular clients are fine - but the default should protect your schedule.</p>
 
 <h3>Cancellation and No-Show Policy</h3>
-<p>Define clear terms: cancellations within 24 hours forfeit the deposit or incur a fee (50% of service cost is standard). No-shows are charged the full service amount. Enforce this consistently &mdash; one exception sets the precedent that the policy does not apply.</p>
+<p>Define clear terms: cancellations within 24 hours forfeit the deposit or incur a fee (50% of service cost is standard). No-shows are charged the full service amount. Enforce this consistently - one exception sets the precedent that the policy does not apply.</p>
 
 <h3>Late Arrival Policy</h3>
 <p>If a client arrives more than 15 minutes late, you have the right to shorten the service to fit the remaining time or reschedule. Communicate this upfront: &ldquo;If you arrive more than 15 minutes late, I may need to adjust the service to stay on schedule for my other clients.&rdquo;</p>
@@ -916,13 +916,13 @@ const freelanceBeautyScheduleArticle: LocalBlogPost = {
 <p>Define a sustainable maximum based on your service type. For a mobile makeup artist doing 60-minute services with travel, 4&ndash;5 clients per day is typically the maximum for sustainable performance. For a salon-based stylist doing back-to-back appointments, 6&ndash;8 clients may be sustainable with proper breaks.</p>
 
 <h3>Mandatory Breaks</h3>
-<p>Block a minimum 45-minute lunch break and 10&ndash;15 minutes between every appointment. These buffers are not wasted time &mdash; they are what keeps your energy and quality consistent from the first client to the last.</p>
+<p>Block a minimum 45-minute lunch break and 10&ndash;15 minutes between every appointment. These buffers are not wasted time - they are what keeps your energy and quality consistent from the first client to the last.</p>
 
 <h3>Weekly Off-Days</h3>
 <p>Take at least one full day off per week with no client communication. Turn off booking notifications. The income from one extra work day does not compensate for the quality decline across the other six days when you are exhausted and resentful.</p>
 
 <h3>Seasonal Breaks</h3>
-<p>Plan 1&ndash;2 weeks of complete break per quarter. Announce vacation dates to clients 4 weeks in advance so they can book around your absence. You will return refreshed, and clients will not leave &mdash; they will simply reschedule.</p>
+<p>Plan 1&ndash;2 weeks of complete break per quarter. Announce vacation dates to clients 4 weeks in advance so they can book around your absence. You will return refreshed, and clients will not leave - they will simply reschedule.</p>
 
 <h2>Scheduling Tools for Freelance Professionals</h2>
 <p>Manual scheduling via WhatsApp messages and mental notes does not scale past 10&ndash;15 regular clients. Here is what your scheduling stack should include:</p>
@@ -934,7 +934,7 @@ const freelanceBeautyScheduleArticle: LocalBlogPost = {
 <p>Your booking system should sync with Google Calendar, Apple Calendar, or Outlook so all your commitments (personal and professional) are visible in one place. Double-bookings happen when your business calendar does not see your personal commitments.</p>
 
 <h3>Automated Reminders</h3>
-<p>Automatic appointment reminders sent 24 hours and 1 hour before the appointment reduce no-shows by 30&ndash;50%. These should be sent via WhatsApp, SMS, or email automatically &mdash; you should never need to manually remind a client.</p>
+<p>Automatic appointment reminders sent 24 hours and 1 hour before the appointment reduce no-shows by 30&ndash;50%. These should be sent via WhatsApp, SMS, or email automatically - you should never need to manually remind a client.</p>
 
 <h3>Waitlist Management</h3>
 <p>When your schedule is full, a waitlist lets interested clients join a queue. If a cancellation opens a slot, the waitlist is notified automatically, filling the gap without you lifting a finger.</p>
@@ -1019,7 +1019,7 @@ const performanceReviewsArticle: LocalBlogPost = {
 <p>Annual reviews are insufficient for fast-paced salon environments. By the time you address an issue at the annual review, it has been affecting your business for months. Instead, use a layered review schedule:</p>
 
 <h3>Weekly Check-Ins (5&ndash;10 Minutes)</h3>
-<p>A brief, informal conversation &mdash; at the start of a shift or during a quiet moment &mdash; covering:</p>
+<p>A brief, informal conversation - at the start of a shift or during a quiet moment - covering:</p>
 <ul>
 <li>How was last week? Anything you are proud of or concerned about?</li>
 <li>Any client situations you want to discuss?</li>
@@ -1040,7 +1040,7 @@ const performanceReviewsArticle: LocalBlogPost = {
 <p>Evaluate each team member across these six dimensions. Rate each on a 1&ndash;5 scale with specific examples supporting the rating:</p>
 
 <h3>1. Technical Skill and Service Quality (Weight: 30%)</h3>
-<p>Evaluates the quality of the professional&rsquo;s technical work &mdash; the core of what clients pay for.</p>
+<p>Evaluates the quality of the professional&rsquo;s technical work - the core of what clients pay for.</p>
 <ul>
 <li>Consistency of service quality across different clients and services</li>
 <li>Accuracy in delivering what the client requested during consultation</li>
@@ -1115,7 +1115,7 @@ const performanceReviewsArticle: LocalBlogPost = {
 <p>Ask the team member to share their own assessment first: &ldquo;How do you feel about your performance this quarter? What are you most proud of, and where do you think you have room to improve?&rdquo; This reveals their self-awareness and often surfaces the same points you planned to raise, making feedback feel collaborative rather than top-down.</p>
 
 <h3>Manager Assessment (15 Minutes)</h3>
-<p>Walk through each evaluation dimension with your ratings and specific examples. Start with strengths, then address development areas. Use evidence and data, not opinions: &ldquo;Your rebooking rate was 72%, which is above our 65% target &mdash; that shows your clients value what you do&rdquo; is more effective than &ldquo;I think you are good with clients.&rdquo;</p>
+<p>Walk through each evaluation dimension with your ratings and specific examples. Start with strengths, then address development areas. Use evidence and data, not opinions: &ldquo;Your rebooking rate was 72%, which is above our 65% target - that shows your clients value what you do&rdquo; is more effective than &ldquo;I think you are good with clients.&rdquo;</p>
 
 <h3>Goal Setting (10 Minutes)</h3>
 <p>Collaborate on 2&ndash;3 specific, measurable goals for the next quarter. Goals should be achievable but stretching. Examples:</p>
@@ -1141,7 +1141,7 @@ const performanceReviewsArticle: LocalBlogPost = {
 <p>Listen fully before responding. Ask: &ldquo;Help me understand your perspective.&rdquo; If they present valid evidence you did not consider, adjust your assessment. If they are defensive without evidence, acknowledge their feelings but maintain your position: &ldquo;I understand you see it differently. The data shows [specific evidence], and I need to be honest about what I am observing.&rdquo;</p>
 
 <h2>Using Reviews to Drive Development, Not Just Assessment</h2>
-<p>The most common mistake is treating reviews as a report card. The real purpose is development &mdash; helping each team member become better, earn more, and advance their career.</p>
+<p>The most common mistake is treating reviews as a report card. The real purpose is development - helping each team member become better, earn more, and advance their career.</p>
 <ul>
 <li><strong>Link reviews to training:</strong> If a review identifies a technical gap, schedule specific training to address it.</li>
 <li><strong>Link reviews to compensation:</strong> Annual reviews should directly inform commission rate adjustments, bonuses, and promotions. Staff who see a clear connection between review performance and financial reward take reviews seriously.</li>
@@ -1158,7 +1158,7 @@ const performanceReviewsArticle: LocalBlogPost = {
 <p>Scores provide a clear, objective framework that reduces ambiguity. Use a 1&ndash;5 scale for each dimension (1: below expectations, 2: partially meeting, 3: meeting expectations, 4: exceeding, 5: exceptional) with specific examples justifying each score. The overall weighted score gives both you and the staff member a clear picture of where they stand.</p>
 
 <h3>How do I handle a review for a top performer?</h3>
-<p>Top performers need reviews too &mdash; but the focus shifts from development areas to growth opportunities. Ask: &ldquo;Where do you want to go next?&rdquo; and discuss senior roles, specialisation opportunities, mentoring responsibilities, or compensation increases. Neglecting top performers because they are &ldquo;doing fine&rdquo; is a common path to losing them.</p>
+<p>Top performers need reviews too - but the focus shifts from development areas to growth opportunities. Ask: &ldquo;Where do you want to go next?&rdquo; and discuss senior roles, specialisation opportunities, mentoring responsibilities, or compensation increases. Neglecting top performers because they are &ldquo;doing fine&rdquo; is a common path to losing them.</p>
 
 <h3>What documentation should I keep from reviews?</h3>
 <p>Keep a written record of every formal review (monthly and quarterly) including: the evaluation scores, specific examples discussed, goals set, and any commitments made by either party. Both the manager and the staff member should sign the record. This documentation protects you legally and provides continuity if management changes.</p>

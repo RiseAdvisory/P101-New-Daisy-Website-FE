@@ -43,7 +43,7 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
       'A step-by-step guide to choosing the right salon management software for your business. Learn how to evaluate features, pricing, scalability, and support so you make a confident, informed decision.',
     aboutPosts: `
 <h2>Why Choosing the Right Salon Software Matters More Than Ever</h2>
-<p>The salon management software you choose will touch every part of your business &mdash; booking, payments, staff scheduling, client communication, marketing, and reporting. Choosing the wrong platform costs you more than a monthly subscription; it costs you clients, revenue, and hours of wasted effort trying to work around limitations.</p>
+<p>The salon management software you choose will touch every part of your business - booking, payments, staff scheduling, client communication, marketing, and reporting. Choosing the wrong platform costs you more than a monthly subscription; it costs you clients, revenue, and hours of wasted effort trying to work around limitations.</p>
 <p>In 2026, <a href="/en/salon-management-software">salon management software</a> has evolved from basic appointment calendars into comprehensive business platforms. The right choice accelerates growth. The wrong one holds you back while competitors pull ahead. This guide walks you through a structured evaluation process so you choose with confidence, not guesswork.</p>
 
 <h2>Step 1: Define Your Business Requirements</h2>
@@ -79,7 +79,7 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
 </ul>
 
 <h2>Step 3: Evaluate the Client Experience</h2>
-<p>Your software does not just serve you &mdash; it serves your clients. Book a test appointment on each platform you are considering and evaluate it as a client would:</p>
+<p>Your software does not just serve you - it serves your clients. Book a test appointment on each platform you are considering and evaluate it as a client would:</p>
 <ul>
 <li><strong>How many taps does it take to book?</strong> Fewer than 4 is the benchmark. Every extra step costs you completed bookings.</li>
 <li><strong>Is the booking page mobile-optimised?</strong> Over 70% of bookings happen on phones. If the page is clunky on mobile, clients will leave.</li>
@@ -89,7 +89,7 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
 </ul>
 
 <h2>Step 4: Assess Scalability and Growth Support</h2>
-<p>You are not just choosing software for today &mdash; you are choosing a platform for the next 2-3 years. Evaluate how well each option supports growth:</p>
+<p>You are not just choosing software for today - you are choosing a platform for the next 2-3 years. Evaluate how well each option supports growth:</p>
 <ul>
 <li><strong>Multi-location support:</strong> If you plan to expand, can the platform manage multiple branches from a single dashboard? Will you pay significantly more per location?</li>
 <li><strong>Team growth:</strong> How does pricing change as you add staff? Some platforms have per-seat pricing that becomes expensive at scale; others offer unlimited team members.</li>
@@ -115,7 +115,7 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
 <li>Process a real booking from start to finish, including payment and follow-up.</li>
 <li>Ask your team to use it for a day and collect their honest feedback.</li>
 <li>Contact customer support with a question and measure how quickly they respond and how helpful the answer is.</li>
-<li>Test the mobile experience &mdash; both the client booking page and the staff management app.</li>
+<li>Test the mobile experience - both the client booking page and the staff management app.</li>
 </ul>
 
 <h2>Step 7: Make Your Decision and Plan the Transition</h2>
@@ -138,7 +138,7 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
 <p>No. Your competitors' needs, budget, and growth stage are different from yours. What matters is whether the platform solves your specific business challenges and supports your growth plans. Research competitors for awareness, but evaluate based on your own requirements.</p>
 
 <h3>Is it worth paying more for salon software with AI features?</h3>
-<p>Yes, if those AI features directly generate revenue. An AI receptionist that handles after-hours booking inquiries can capture 15-25% more bookings per month. That revenue far exceeds the additional cost. AI features that are cosmetic or gimmicky are not worth paying extra for &mdash; focus on AI that handles real tasks like booking, client communication, and scheduling optimisation.</p>
+<p>Yes, if those AI features directly generate revenue. An AI receptionist that handles after-hours booking inquiries can capture 15-25% more bookings per month. That revenue far exceeds the additional cost. AI features that are cosmetic or gimmicky are not worth paying extra for - focus on AI that handles real tasks like booking, client communication, and scheduling optimisation.</p>
 
 <h3>Can I negotiate salon software pricing?</h3>
 <p>Many platforms offer discounts for annual commitments, multi-location deals, or early-stage businesses. It never hurts to ask, especially if you are bringing multiple branches or a large team. Some platforms also offer onboarding credits or waive setup fees for new clients migrating from a competitor.</p>
@@ -199,19 +199,19 @@ const salonSoftwareChecklistArticle: LocalBlogPost = {
 <p>Clients must be able to book appointments from a mobile-friendly page without calling your salon. This is the single most important digital feature. Over 70% of salon bookings in 2026 originate from mobile devices, and clients who encounter booking friction go to a competitor.</p>
 
 <h3>2. Multi-Channel Booking</h3>
-<p>Your booking system should accept appointments from your website, Google Business Profile, Instagram, WhatsApp, and a direct link &mdash; all feeding into one unified calendar. If clients have to figure out which channel to use, you are losing bookings.</p>
+<p>Your booking system should accept appointments from your website, Google Business Profile, Instagram, WhatsApp, and a direct link - all feeding into one unified calendar. If clients have to figure out which channel to use, you are losing bookings.</p>
 
 <h3>3. Staff-Level Scheduling</h3>
 <p>Each team member needs individual availability settings, including working hours, break times, days off, and service permissions. Clients should only see real-time availability for the specific staff member and service they want.</p>
 
 <h3>4. Automated Appointment Reminders</h3>
-<p>SMS and WhatsApp reminders sent 24 hours and 2 hours before appointments reduce no-shows by 30-40%. This is not a convenience feature &mdash; it directly protects your revenue. The best systems let you customise the timing, channel, and message content.</p>
+<p>SMS and WhatsApp reminders sent 24 hours and 2 hours before appointments reduce no-shows by 30-40%. This is not a convenience feature - it directly protects your revenue. The best systems let you customise the timing, channel, and message content.</p>
 
 <h3>5. Waitlist Management</h3>
 <p>When a preferred time slot is full, clients should be able to join a waitlist. When a cancellation opens that slot, the system automatically notifies the waitlisted client. This recovers bookings that would otherwise be lost.</p>
 
 <h3>6. Recurring Appointment Scheduling</h3>
-<p>Regular clients should be able to book standing appointments &mdash; the same service, same stylist, same time, every 4 or 6 weeks. This locks in recurring revenue and reduces the cognitive load of rebooking for both you and your clients.</p>
+<p>Regular clients should be able to book standing appointments - the same service, same stylist, same time, every 4 or 6 weeks. This locks in recurring revenue and reduces the cognitive load of rebooking for both you and your clients.</p>
 
 <h3>7. Buffer Time Settings</h3>
 <p>The ability to add preparation and cleanup time between appointments prevents back-to-back scheduling that stresses your team and degrades service quality. A 10-15 minute buffer between colour services, for example, keeps your schedule realistic.</p>
@@ -222,13 +222,13 @@ const salonSoftwareChecklistArticle: LocalBlogPost = {
 <p>Every client should have a single profile containing their contact information, appointment history, service preferences, product purchases, notes, and communication history. When a client calls or walks in, you should know everything about their relationship with your salon in seconds.</p>
 
 <h3>9. Client Notes and Preferences</h3>
-<p>Staff should be able to add notes to client profiles &mdash; colour formulas, preferred products, conversation topics, allergies, and special requests. These notes ensure consistency across visits and across different team members.</p>
+<p>Staff should be able to add notes to client profiles - colour formulas, preferred products, conversation topics, allergies, and special requests. These notes ensure consistency across visits and across different team members.</p>
 
 <h3>10. Automated Follow-Up Messages</h3>
 <p>After each appointment, the system should automatically send a thank-you message, a review request, and a rebooking prompt. These touchpoints drive repeat visits and build your online reputation without requiring manual effort.</p>
 
 <h3>11. Client Segmentation</h3>
-<p>Group clients by visit frequency, spending level, preferred services, or last visit date. Segmentation powers targeted marketing &mdash; you can send a re-engagement offer specifically to clients who have not visited in 60 days, for example, rather than blasting your entire database.</p>
+<p>Group clients by visit frequency, spending level, preferred services, or last visit date. Segmentation powers targeted marketing - you can send a re-engagement offer specifically to clients who have not visited in 60 days, for example, rather than blasting your entire database.</p>
 
 <h3>12. Two-Way Communication</h3>
 <p>Clients should be able to message your salon (and receive replies) through the same platform. Centralised messaging prevents conversations from getting lost across WhatsApp, Instagram DMs, text messages, and phone calls.</p>
@@ -239,7 +239,7 @@ const salonSoftwareChecklistArticle: LocalBlogPost = {
 <p>Process card, contactless, and mobile payments directly through your salon software. When payments and bookings live in the same system, your revenue reporting is accurate and real-time, with no manual reconciliation needed.</p>
 
 <h3>14. Deposit and Prepayment Collection</h3>
-<p>Collect deposits at the time of booking to reduce no-shows and protect your revenue. The best systems let you set deposit rules per service &mdash; higher deposits for longer, more expensive services, and no deposit required for quick walk-in services.</p>
+<p>Collect deposits at the time of booking to reduce no-shows and protect your revenue. The best systems let you set deposit rules per service - higher deposits for longer, more expensive services, and no deposit required for quick walk-in services.</p>
 
 <h3>15. Commission and Payroll Tracking</h3>
 <p>Automatically calculate staff commissions based on services performed, products sold, or a combination. This eliminates manual spreadsheet work and ensures accurate, transparent pay calculations every pay period.</p>
@@ -285,7 +285,7 @@ const salonSoftwareChecklistArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>Do I need all 25 features from day one?</h3>
-<p>No. Focus on the booking, scheduling, and client management features first &mdash; these impact your daily operations immediately. Marketing, AI, and advanced analytics features become more valuable as your client base grows. However, choose a platform that offers all 25 so you do not have to switch again when you are ready to use them.</p>
+<p>No. Focus on the booking, scheduling, and client management features first - these impact your daily operations immediately. Marketing, AI, and advanced analytics features become more valuable as your client base grows. However, choose a platform that offers all 25 so you do not have to switch again when you are ready to use them.</p>
 
 <h3>Which features have the biggest impact on revenue?</h3>
 <p>Online booking, automated reminders, and AI receptionist have the most direct revenue impact. Online booking captures demand 24/7, reminders prevent no-show losses, and an AI receptionist ensures you never miss a booking inquiry. Together, these three features can increase monthly revenue by 20-35%.</p>
@@ -343,7 +343,7 @@ const switchingSalonSoftwareArticle: LocalBlogPost = {
       'A comprehensive guide to switching salon management software without losing clients, data, or revenue. Covers evaluation, data migration, staff training, and go-live planning for a seamless transition.',
     aboutPosts: `
 <h2>Switching Salon Software Is Easier Than You Think</h2>
-<p>The fear of switching <a href="/en/salon-management-software">salon management software</a> keeps many owners stuck on platforms that no longer serve their business. The reality is that a well-planned migration takes 2-4 weeks, involves zero downtime, and typically results in measurable improvements within the first month. The cost of staying on the wrong platform &mdash; missed bookings, limited features, rising fees &mdash; almost always exceeds the short-term effort of switching.</p>
+<p>The fear of switching <a href="/en/salon-management-software">salon management software</a> keeps many owners stuck on platforms that no longer serve their business. The reality is that a well-planned migration takes 2-4 weeks, involves zero downtime, and typically results in measurable improvements within the first month. The cost of staying on the wrong platform - missed bookings, limited features, rising fees - almost always exceeds the short-term effort of switching.</p>
 <p>This guide covers every stage of the migration process, from deciding whether to switch through to optimising your new platform after go-live. For a quick 30-day checklist, see our <a href="/en/resources/blog/businesses/salon-software-switching-checklist-migration">salon software switching checklist</a>.</p>
 
 <h2>Part 1: Deciding Whether to Switch</h2>
@@ -374,7 +374,7 @@ const switchingSalonSoftwareArticle: LocalBlogPost = {
 <li><strong>Service menu:</strong> Every service name, description, duration, price, and staff assignment.</li>
 <li><strong>Staff configuration:</strong> Schedules, permissions, commission structures, and calendar settings.</li>
 <li><strong>Financial records:</strong> Outstanding gift card balances, prepaid package credits, and any loyalty points balances.</li>
-<li><strong>Integrations:</strong> Every third-party connection &mdash; payment processor, Google Calendar, social media, review platforms.</li>
+<li><strong>Integrations:</strong> Every third-party connection - payment processor, Google Calendar, social media, review platforms.</li>
 <li><strong>Automated messages:</strong> Confirmation templates, reminder settings, follow-up sequences, and marketing campaigns.</li>
 </ul>
 
@@ -402,24 +402,24 @@ const switchingSalonSoftwareArticle: LocalBlogPost = {
 <h2>Part 4: The Migration Process</h2>
 
 <h3>Week 1: Setup and Data Import</h3>
-<p>Create your account, configure your business profile, and import your data. Rebuild your service menu, set up staff schedules, and connect your payment processor. This is the foundation week &mdash; nothing is client-facing yet.</p>
+<p>Create your account, configure your business profile, and import your data. Rebuild your service menu, set up staff schedules, and connect your payment processor. This is the foundation week - nothing is client-facing yet.</p>
 
 <h3>Week 2: Testing and Training</h3>
-<p>Test every workflow: booking creation, payment processing, cancellations, rescheduling, and automated messages. Train your team in role-specific sessions &mdash; front desk staff learn different features from service providers. Keep sessions short (30-45 minutes) and hands-on.</p>
+<p>Test every workflow: booking creation, payment processing, cancellations, rescheduling, and automated messages. Train your team in role-specific sessions - front desk staff learn different features from service providers. Keep sessions short (30-45 minutes) and hands-on.</p>
 
 <h3>Week 3: Parallel Operation</h3>
-<p>Run both systems simultaneously. New bookings go into the new platform; existing bookings in the old system are honoured until completed. Update all external booking links &mdash; website, Google, social media, email signatures &mdash; to point to the new system. Send one clear client communication about the upgrade.</p>
+<p>Run both systems simultaneously. New bookings go into the new platform; existing bookings in the old system are honoured until completed. Update all external booking links - website, Google, social media, email signatures - to point to the new system. Send one clear client communication about the upgrade.</p>
 
 <h3>Week 4: Full Cutover and Optimisation</h3>
 <p>Stop using the old system for new bookings. Complete any remaining appointments from the old calendar. Review your first week of live data for accuracy. Collect staff feedback and make configuration adjustments. Export a final backup from your old platform and cancel your previous subscription.</p>
 
 <h2>Part 5: Post-Migration Optimisation</h2>
-<p>The migration is not done when you go live &mdash; the first 30 days of operation are your optimisation window:</p>
+<p>The migration is not done when you go live - the first 30 days of operation are your optimisation window:</p>
 <ul>
 <li><strong>Monitor booking conversion:</strong> Are clients completing online bookings at the same or better rate than before?</li>
 <li><strong>Track no-show rates:</strong> Your new reminder system should reduce no-shows within the first month.</li>
 <li><strong>Review client feedback:</strong> Ask clients about their booking experience. Their perspective reveals issues your team might miss.</li>
-<li><strong>Explore advanced features:</strong> Once basic operations are smooth, start using features your old platform lacked &mdash; marketing campaigns, AI receptionist, loyalty programmes, and advanced analytics.</li>
+<li><strong>Explore advanced features:</strong> Once basic operations are smooth, start using features your old platform lacked - marketing campaigns, AI receptionist, loyalty programmes, and advanced analytics.</li>
 <li><strong>Measure ROI:</strong> Compare monthly revenue, booking volume, and client acquisition costs before and after the switch.</li>
 </ul>
 <p>View <a href="/en/pricing">The Daisy's pricing</a> to understand the total cost of ownership for a modern, fully-featured platform.</p>
@@ -442,7 +442,7 @@ const switchingSalonSoftwareArticle: LocalBlogPost = {
 <p>Export all outstanding gift card balances and prepaid package credits from your current system. Recreate these balances in client profiles on your new platform. Verify accuracy by spot-checking several accounts. This is standard practice and well-supported by modern platforms.</p>
 
 <h3>What if my current software vendor makes data export difficult?</h3>
-<p>Under data portability regulations in many jurisdictions, software vendors are required to provide your data in a usable format. Contact their support team directly and request a full export. If they are uncooperative, document your requests in writing &mdash; this usually resolves the issue. As a last resort, you can manually recreate your core data, starting with active clients from the last 12 months.</p>
+<p>Under data portability regulations in many jurisdictions, software vendors are required to provide your data in a usable format. Contact their support team directly and request a full export. If they are uncooperative, document your requests in writing - this usually resolves the issue. As a last resort, you can manually recreate your core data, starting with active clients from the last 12 months.</p>
 
 <h3>Is it better to migrate during a slow period?</h3>
 <p>Yes. Plan your migration for your quietest month. Lower booking volume means fewer parallel operations to manage, less staff stress, and more time to troubleshoot any issues. For most salons, January or mid-summer tends to be the slowest period.</p>
@@ -497,7 +497,7 @@ const cloudVsDesktopArticle: LocalBlogPost = {
       'A detailed comparison of cloud-based and desktop salon management software. Understand the differences in cost, accessibility, security, updates, and scalability to choose the right architecture for your salon.',
     aboutPosts: `
 <h2>Cloud Salon Software Wins for Almost Every Salon in 2026</h2>
-<p>Cloud-based <a href="/en/salon-management-software">salon management software</a> runs on remote servers and is accessed through a web browser or mobile app. Desktop software is installed locally on a specific computer in your salon. While desktop solutions dominated the beauty industry for decades, cloud platforms have become the clear choice for the vast majority of salons. Here is why &mdash; and the few scenarios where desktop still has a place.</p>
+<p>Cloud-based <a href="/en/salon-management-software">salon management software</a> runs on remote servers and is accessed through a web browser or mobile app. Desktop software is installed locally on a specific computer in your salon. While desktop solutions dominated the beauty industry for decades, cloud platforms have become the clear choice for the vast majority of salons. Here is why - and the few scenarios where desktop still has a place.</p>
 
 <h2>How Cloud Salon Software Works</h2>
 <p>Cloud software runs on servers maintained by the vendor. You access it through any web browser or a dedicated mobile app. Your data is stored securely in the cloud, synchronised in real time across all devices, and backed up automatically. There is nothing to install on your salon's computers.</p>
@@ -509,7 +509,7 @@ const cloudVsDesktopArticle: LocalBlogPost = {
 <h2>The Core Differences</h2>
 
 <h3>Accessibility</h3>
-<p><strong>Cloud:</strong> Access from anywhere with an internet connection &mdash; your phone, tablet, laptop, or any computer. Check tomorrow's schedule from home, manage bookings while travelling, or let staff view their calendar from their own devices.</p>
+<p><strong>Cloud:</strong> Access from anywhere with an internet connection - your phone, tablet, laptop, or any computer. Check tomorrow's schedule from home, manage bookings while travelling, or let staff view their calendar from their own devices.</p>
 <p><strong>Desktop:</strong> Access only from the installed computer. If you want to check the schedule from home, you cannot (unless you set up remote desktop access, which adds complexity and cost). Staff cannot view their schedules on their phones.</p>
 <p><strong>Verdict:</strong> Cloud wins decisively. Modern salon management requires mobile access for owners, staff, and clients.</p>
 
@@ -530,7 +530,7 @@ const cloudVsDesktopArticle: LocalBlogPost = {
 
 <h3>Internet Dependency</h3>
 <p><strong>Cloud:</strong> Requires an internet connection. If your internet goes down, you cannot access the system (though many platforms have offline modes for basic operations like viewing the day's schedule).</p>
-<p><strong>Desktop:</strong> Works without internet. This was desktop's strongest argument &mdash; but with reliable broadband and mobile hotspot backups available everywhere in 2026, internet outages lasting more than a few minutes are rare in most markets.</p>
+<p><strong>Desktop:</strong> Works without internet. This was desktop's strongest argument - but with reliable broadband and mobile hotspot backups available everywhere in 2026, internet outages lasting more than a few minutes are rare in most markets.</p>
 <p><strong>Verdict:</strong> Desktop has a theoretical advantage here, but in practice, internet reliability has made this a non-issue for the vast majority of salons. If your area has genuinely unreliable internet, keep a mobile hotspot as backup.</p>
 
 <h3>Scalability</h3>
@@ -570,7 +570,7 @@ const cloudVsDesktopArticle: LocalBlogPost = {
 <p>Yes. Cloud software runs in a web browser, so it works on any computer, tablet, or phone with internet access. You do not need new hardware. Your existing front desk computer, a personal laptop, or even a basic tablet can run a cloud-based salon platform.</p>
 
 <h3>Do I need a fast internet connection for cloud salon software?</h3>
-<p>A standard broadband connection (10+ Mbps) is more than sufficient. Cloud salon software transfers small amounts of data &mdash; text-based booking information, not large files. If you can stream YouTube videos, your connection is fast enough for cloud salon software.</p>
+<p>A standard broadband connection (10+ Mbps) is more than sufficient. Cloud salon software transfers small amounts of data - text-based booking information, not large files. If you can stream YouTube videos, your connection is fast enough for cloud salon software.</p>
 `,
     metaTitle: 'Cloud vs Desktop Salon Software Compared | Daisy',
     metaDescription:
@@ -619,7 +619,7 @@ const smallSalonSoftwareArticle: LocalBlogPost = {
       'A guide to choosing salon management software for small teams of 1-5 staff. Learn which features matter most, how to avoid overpaying, and what to look for as you grow.',
     aboutPosts: `
 <h2>Small Salons Need Smart Software, Not Scaled-Down Software</h2>
-<p>Running a salon with 1-5 staff does not mean you need less from your <a href="/en/salon-management-software">salon management software</a>. It means you need the right features at the right price, without paying for enterprise capabilities you will not use for years. The best small salon software handles booking, payments, client management, and marketing in one platform &mdash; so a small team can compete with larger competitors without hiring extra staff.</p>
+<p>Running a salon with 1-5 staff does not mean you need less from your <a href="/en/salon-management-software">salon management software</a>. It means you need the right features at the right price, without paying for enterprise capabilities you will not use for years. The best small salon software handles booking, payments, client management, and marketing in one platform - so a small team can compete with larger competitors without hiring extra staff.</p>
 
 <h2>What Small Salons Actually Need</h2>
 <p>As a small salon owner, you are likely wearing multiple hats: stylist, receptionist, marketer, and business manager. Your software needs to reduce your administrative workload, not add to it. Here are the features that matter most for teams of 1-5:</p>
@@ -652,16 +652,16 @@ const smallSalonSoftwareArticle: LocalBlogPost = {
 <ul>
 <li><strong>Per-seat pricing that escalates:</strong> Some platforms charge per team member. At $15-30 per seat per month, a 5-person team can quickly reach $75-150/month in seat fees alone, on top of the base subscription.</li>
 <li><strong>Transaction fees that add up:</strong> If your platform charges 1-2% on every transaction and you process $15,000/month in payments, that is $150-300/month in transaction fees. Compare this against platforms with flat monthly pricing and no per-transaction charges.</li>
-<li><strong>"Free" plans with limited value:</strong> Free tiers often restrict the number of bookings, clients, or features available, pushing you to upgrade quickly. Calculate what you will actually pay once you outgrow the free tier &mdash; it is often more expensive than platforms that charge a fair monthly rate from the start.</li>
+<li><strong>"Free" plans with limited value:</strong> Free tiers often restrict the number of bookings, clients, or features available, pushing you to upgrade quickly. Calculate what you will actually pay once you outgrow the free tier - it is often more expensive than platforms that charge a fair monthly rate from the start.</li>
 <li><strong>Feature gating:</strong> Essential features like online booking, reminders, or reporting locked behind higher-priced tiers. If you need a mid-tier or premium plan just to get basic functionality, the headline price is misleading.</li>
 </ul>
 
 <h2>The Solo Operator Setup</h2>
-<p>If you are a solo operator &mdash; the only service provider in your salon or suite &mdash; here is the ideal software configuration:</p>
+<p>If you are a solo operator - the only service provider in your salon or suite - here is the ideal software configuration:</p>
 <ul>
 <li><strong>Online booking with direct link:</strong> Share your booking link on Instagram, WhatsApp, Google, and your website. Clients book themselves; you focus on delivering great service.</li>
 <li><strong>AI receptionist or automated responses:</strong> An <a href="/en/features/business/ai-salon-management">AI receptionist</a> handles booking inquiries while you are with clients. No more missed calls, no more "sorry I could not get to the phone" messages.</li>
-<li><strong>Automated reminders:</strong> Set it once &mdash; every client gets a reminder 24 hours and 2 hours before their appointment. No-shows drop immediately.</li>
+<li><strong>Automated reminders:</strong> Set it once - every client gets a reminder 24 hours and 2 hours before their appointment. No-shows drop immediately.</li>
 <li><strong>One-tap rebooking:</strong> After each appointment, prompt the client to schedule their next visit. Recurring revenue becomes predictable revenue.</li>
 <li><strong>Integrated payments:</strong> Accept payment, record the transaction, and update your daily report in one step.</li>
 </ul>
@@ -687,16 +687,16 @@ const smallSalonSoftwareArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>Is free salon software good enough for a small salon?</h3>
-<p>Free salon software gets you started, but it typically limits the number of bookings, clients, or features available. Most small salons outgrow free plans within 3-6 months. The bigger concern is what happens when you need to switch &mdash; migrating away from a free platform often means losing data or starting over. A reasonably priced platform ($30-80/month) that includes all essential features is a better investment from day one.</p>
+<p>Free salon software gets you started, but it typically limits the number of bookings, clients, or features available. Most small salons outgrow free plans within 3-6 months. The bigger concern is what happens when you need to switch - migrating away from a free platform often means losing data or starting over. A reasonably priced platform ($30-80/month) that includes all essential features is a better investment from day one.</p>
 
 <h3>Do I need salon software if I only have one or two clients per day?</h3>
 <p>Yes. Even with a few daily clients, online booking captures the bookings you miss when you are busy, automated reminders prevent the no-shows that disproportionately hurt low-volume schedules, and client profiles help you deliver consistently excellent service. The time you save on administration is time you can spend on marketing and client acquisition to grow your volume.</p>
 
 <h3>How much should a small salon spend on software?</h3>
-<p>Budget $30-80 per month for a comprehensive platform that includes online booking, automated communications, payments, and basic reporting. If your software generates even two additional bookings per month (from online booking and reduced no-shows), it pays for itself. Any spend above $100/month should be justified by specific features that directly drive revenue &mdash; like AI receptionist or advanced marketing tools.</p>
+<p>Budget $30-80 per month for a comprehensive platform that includes online booking, automated communications, payments, and basic reporting. If your software generates even two additional bookings per month (from online booking and reduced no-shows), it pays for itself. Any spend above $100/month should be justified by specific features that directly drive revenue - like AI receptionist or advanced marketing tools.</p>
 
 <h3>Can I start with basic software and upgrade later?</h3>
-<p>You can, but switching platforms later means migrating data, retraining staff, and updating all your booking links. It is more efficient to choose a platform that offers a starter-friendly plan now with the ability to unlock advanced features as you grow &mdash; same platform, same data, no migration needed.</p>
+<p>You can, but switching platforms later means migrating data, retraining staff, and updating all your booking links. It is more efficient to choose a platform that offers a starter-friendly plan now with the ability to unlock advanced features as you grow - same platform, same data, no migration needed.</p>
 `,
     metaTitle: 'Small Salon Software for 1-5 Staff | Daisy',
     metaDescription:
@@ -749,7 +749,7 @@ const multiLocationSalonArticle: LocalBlogPost = {
 <p>Multi-location salon software solves these problems by giving you a single platform that manages every branch. Here is what to look for and how to set it up for efficient multi-branch operations.</p>
 
 <h2>Why Multi-Location Management Requires Dedicated Software</h2>
-<p>Many salon owners try to scale by replicating their single-location setup at each new branch &mdash; separate booking accounts, separate client lists, separate reporting. This approach breaks down quickly:</p>
+<p>Many salon owners try to scale by replicating their single-location setup at each new branch - separate booking accounts, separate client lists, separate reporting. This approach breaks down quickly:</p>
 <ul>
 <li><strong>Clients who visit multiple locations</strong> end up with separate profiles at each branch, fragmenting their history and making personalised service impossible.</li>
 <li><strong>Revenue reporting</strong> requires manually combining data from multiple sources, introducing errors and delays.</li>
@@ -761,7 +761,7 @@ const multiLocationSalonArticle: LocalBlogPost = {
 <h2>Essential Features for Multi-Location Salons</h2>
 
 <h3>Centralised Dashboard</h3>
-<p>View real-time metrics for all locations from one screen: total revenue, bookings by branch, staff utilisation, and client flow. A centralised dashboard lets you identify which branch is underperforming, which is overbooked, and where to allocate resources &mdash; without logging into separate accounts for each location.</p>
+<p>View real-time metrics for all locations from one screen: total revenue, bookings by branch, staff utilisation, and client flow. A centralised dashboard lets you identify which branch is underperforming, which is overbooked, and where to allocate resources - without logging into separate accounts for each location.</p>
 
 <h3>Unified Client Database</h3>
 <p>Every client has one profile that spans all locations. Their appointment history, preferences, colour formulas, and payment methods are accessible at any branch. When a client who usually visits your downtown location books at your suburban branch, the stylist sees the complete picture.</p>
@@ -790,7 +790,7 @@ const multiLocationSalonArticle: LocalBlogPost = {
 <h2>Setting Up Multi-Location Software</h2>
 
 <h3>Step 1: Choose a True Multi-Location Platform</h3>
-<p>Not every salon software supports multi-location well. Some offer it as an afterthought &mdash; essentially separate accounts with a shared login. Look for platforms where multi-branch management is a core capability, with a unified database and centralised controls. <a href="/en/features/business/ai-salon-management">The Daisy</a> is built for multi-location from the ground up, with a single dashboard managing unlimited branches.</p>
+<p>Not every salon software supports multi-location well. Some offer it as an afterthought - essentially separate accounts with a shared login. Look for platforms where multi-branch management is a core capability, with a unified database and centralised controls. <a href="/en/features/business/ai-salon-management">The Daisy</a> is built for multi-location from the ground up, with a single dashboard managing unlimited branches.</p>
 
 <h3>Step 2: Standardise Your Operations</h3>
 <p>Before setting up multi-location software, standardise across branches:</p>
@@ -800,7 +800,7 @@ const multiLocationSalonArticle: LocalBlogPost = {
 <li>Communication templates (confirmations, reminders, follow-ups)</li>
 <li>Staff roles and permission levels</li>
 </ul>
-<p>Standardisation ensures a consistent client experience and makes reporting meaningful &mdash; you cannot compare branches effectively if they track services differently.</p>
+<p>Standardisation ensures a consistent client experience and makes reporting meaningful - you cannot compare branches effectively if they track services differently.</p>
 
 <h3>Step 3: Configure Branch-Specific Settings</h3>
 <p>Within your standardised framework, configure each branch with its own:</p>
@@ -895,7 +895,7 @@ const salonSoftwareROIArticle: LocalBlogPost = {
     description:
       'How to calculate the return on investment of salon management software. Understand the revenue gains, cost savings, and time savings that justify your software investment with real numbers.',
     aboutPosts: `
-<h2>Salon Software Is Not a Cost &mdash; It Is a Revenue Multiplier</h2>
+<h2>Salon Software Is Not a Cost - It Is a Revenue Multiplier</h2>
 <p>Most salon owners think of <a href="/en/salon-management-software">salon management software</a> as a monthly expense. The reality is that the right platform generates significantly more revenue than it costs. The challenge is quantifying this return so you can make confident investment decisions. This guide shows you exactly how to calculate the ROI of salon software using real metrics from your own business.</p>
 
 <h2>The Three Categories of Salon Software ROI</h2>
@@ -954,7 +954,7 @@ const salonSoftwareROIArticle: LocalBlogPost = {
 <li>Time value recovered: $1,720/month</li>
 </ul>
 <p><strong>Total monthly value: $10,809</strong></p>
-<p>If your salon software costs $150/month, your ROI is over 7,000%. Even at the most conservative estimates &mdash; cutting each category in half &mdash; the return still exceeds $5,000 per month against a $150 investment.</p>
+<p>If your salon software costs $150/month, your ROI is over 7,000%. Even at the most conservative estimates - cutting each category in half - the return still exceeds $5,000 per month against a $150 investment.</p>
 
 <h2>How to Calculate Your Specific ROI</h2>
 <p>Use your own numbers to calculate a personalised ROI:</p>
@@ -972,7 +972,7 @@ const salonSoftwareROIArticle: LocalBlogPost = {
 <ul>
 <li><strong>Professional brand perception:</strong> A polished online booking experience signals professionalism. Clients form opinions about your salon before they walk in the door.</li>
 <li><strong>Staff satisfaction:</strong> Reduced administrative burden and clear scheduling improve team morale. Lower turnover saves significant recruiting and training costs.</li>
-<li><strong>Decision quality:</strong> Real-time data helps you make better decisions about pricing, services, staffing, and marketing &mdash; each decision compounding in value over time.</li>
+<li><strong>Decision quality:</strong> Real-time data helps you make better decisions about pricing, services, staffing, and marketing - each decision compounding in value over time.</li>
 <li><strong>Scalability:</strong> Software infrastructure makes opening a second location dramatically easier. The operational foundation is already in place.</li>
 </ul>
 <p>Explore <a href="/en/pricing">The Daisy's pricing</a> and run your own ROI calculation against the plans available.</p>
@@ -983,13 +983,13 @@ const salonSoftwareROIArticle: LocalBlogPost = {
 <p>Most salons see measurable revenue improvements within 30-60 days. Reduced no-shows are immediate (from the first reminder sent), additional online bookings accumulate quickly as clients discover your booking page, and time savings begin from day one. The full ROI compounds over 3-6 months as retention improvements and marketing features take effect.</p>
 
 <h3>Is cheaper software always worse ROI?</h3>
-<p>Not necessarily, but often yes. Cheaper platforms tend to lack the features that drive the biggest returns &mdash; AI receptionist, advanced marketing, and multi-channel booking. A platform that costs $50 more per month but captures 10 additional bookings is generating far more return. Evaluate total value, not just the subscription price.</p>
+<p>Not necessarily, but often yes. Cheaper platforms tend to lack the features that drive the biggest returns - AI receptionist, advanced marketing, and multi-channel booking. A platform that costs $50 more per month but captures 10 additional bookings is generating far more return. Evaluate total value, not just the subscription price.</p>
 
 <h3>How do I justify salon software cost to a business partner or investor?</h3>
-<p>Present the ROI calculation with your actual business numbers. Show the gap between the monthly software cost and the projected monthly revenue gain. Frame it as a growth investment with a measurable, proven return &mdash; not an expense. The numbers speak for themselves.</p>
+<p>Present the ROI calculation with your actual business numbers. Show the gap between the monthly software cost and the projected monthly revenue gain. Frame it as a growth investment with a measurable, proven return - not an expense. The numbers speak for themselves.</p>
 
 <h3>Can salon software ROI decline over time?</h3>
-<p>It can if you stop using the platform's capabilities. The biggest ROI comes from features you actively use &mdash; marketing campaigns, AI receptionist, analytics-driven decisions. If you only use the platform for basic booking, you capture only a fraction of the potential return. Treat your software as a growth tool, not just a calendar.</p>
+<p>It can if you stop using the platform's capabilities. The biggest ROI comes from features you actively use - marketing campaigns, AI receptionist, analytics-driven decisions. If you only use the platform for basic booking, you capture only a fraction of the potential return. Treat your software as a growth tool, not just a calendar.</p>
 `,
     metaTitle: 'Salon Software ROI: Calculate Your Return | Daisy',
     metaDescription:
@@ -1038,15 +1038,15 @@ const freeVsPaidSalonSoftwareArticle: LocalBlogPost = {
       'An honest comparison of free and paid salon management software. Understand hidden costs, feature limitations, and the real total cost of ownership to make the right choice for your business.',
     aboutPosts: `
 <h2>"Free" Salon Software Always Has a Price</h2>
-<p>Free <a href="/en/salon-management-software">salon management software</a> is appealing on the surface &mdash; no monthly fees, no commitment, no risk. But the true cost of free software is hidden in feature limitations, transaction fees, restricted growth, and the revenue you lose from missing capabilities. This comparison breaks down the real economics so you can make an informed decision.</p>
+<p>Free <a href="/en/salon-management-software">salon management software</a> is appealing on the surface - no monthly fees, no commitment, no risk. But the true cost of free software is hidden in feature limitations, transaction fees, restricted growth, and the revenue you lose from missing capabilities. This comparison breaks down the real economics so you can make an informed decision.</p>
 
 <h2>How Free Salon Software Makes Money</h2>
 <p>Free platforms are not charities. They monetise through one or more of these models:</p>
 <ul>
-<li><strong>Transaction fees:</strong> A percentage (typically 1-2.6%) on every payment processed. If you process $15,000/month, that is $150-$390 in monthly transaction fees &mdash; often more than a paid platform's subscription.</li>
+<li><strong>Transaction fees:</strong> A percentage (typically 1-2.6%) on every payment processed. If you process $15,000/month, that is $150-$390 in monthly transaction fees - often more than a paid platform's subscription.</li>
 <li><strong>Feature gating:</strong> Core features like online booking, marketing, or advanced reporting are free in a basic version but require a paid upgrade to be useful. The free tier gets you started; the paid tier is where value lives.</li>
 <li><strong>Advertising and data:</strong> Some free platforms monetise your client data or show ads to your clients during the booking process. Your clients see competitor promotions within your booking flow.</li>
-<li><strong>Marketplace commission:</strong> Platforms that include a marketplace may charge commission on bookings that come through their discovery channels &mdash; 20-30% is not uncommon.</li>
+<li><strong>Marketplace commission:</strong> Platforms that include a marketplace may charge commission on bookings that come through their discovery channels - 20-30% is not uncommon.</li>
 <li><strong>Upselling paid products:</strong> Free platforms often aggressively promote upgrades, add-ons, and premium features within the interface, creating a cluttered experience for you and your team.</li>
 </ul>
 
@@ -1102,7 +1102,7 @@ const freeVsPaidSalonSoftwareArticle: LocalBlogPost = {
 <p>Free salon software makes sense in specific situations:</p>
 <ul>
 <li><strong>Brand new businesses</strong> testing the market before committing to software expenses. Use free for the first 1-3 months while building your client base.</li>
-<li><strong>Very low volume operations</strong> with fewer than 30 bookings per month and no staff &mdash; a side business or getting-started phase.</li>
+<li><strong>Very low volume operations</strong> with fewer than 30 bookings per month and no staff - a side business or getting-started phase.</li>
 <li><strong>Evaluation purposes</strong> to test a platform's interface and workflow before upgrading to a paid plan.</li>
 </ul>
 <p>In all three cases, free is a stepping stone, not a long-term strategy.</p>
@@ -1143,10 +1143,10 @@ const freeVsPaidSalonSoftwareArticle: LocalBlogPost = {
 <p>Yes. Transaction fees alone can exceed a paid subscription once you process more than $5,000/month. Add the cost of separate tools for features that paid platforms include (SMS, marketing, reporting) and the revenue lost from missing capabilities (AI receptionist, advanced booking), and free platforms consistently cost more than paid alternatives for any salon beyond the earliest startup stage.</p>
 
 <h3>What happens to my data if I outgrow a free plan?</h3>
-<p>Most free platforms allow data export, though some make it inconvenient. Before committing to any free platform, verify you can export client data, appointment history, and financial records in CSV format. If a platform makes export difficult, that is a red flag &mdash; they are relying on data lock-in to keep you.</p>
+<p>Most free platforms allow data export, though some make it inconvenient. Before committing to any free platform, verify you can export client data, appointment history, and financial records in CSV format. If a platform makes export difficult, that is a red flag - they are relying on data lock-in to keep you.</p>
 
 <h3>Should I start free and upgrade to paid on the same platform?</h3>
-<p>This is a reasonable approach if the paid tier of your chosen platform offers everything you need. The advantage is that you keep your data and familiarity with the interface. The disadvantage is that the best free platform may not be the best paid platform &mdash; different vendors excel at different price points. Evaluate the paid tier on its own merits, not just as an upgrade from free.</p>
+<p>This is a reasonable approach if the paid tier of your chosen platform offers everything you need. The advantage is that you keep your data and familiarity with the interface. The disadvantage is that the best free platform may not be the best paid platform - different vendors excel at different price points. Evaluate the paid tier on its own merits, not just as an upgrade from free.</p>
 
 <h3>Are there any truly free salon software options with no hidden costs?</h3>
 <p>Very few. Open-source salon software exists but requires technical expertise to set up, maintain, and customise. For most salon owners, the time investment in managing open-source software far exceeds the cost of a paid subscription. In practice, "truly free" salon software either lacks the features needed to run a professional business or requires enough technical effort that it is not really free.</p>

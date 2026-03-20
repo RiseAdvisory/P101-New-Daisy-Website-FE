@@ -43,7 +43,7 @@ const automatedRemindersArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>The Real Cost of No-Shows for Beauty Businesses</h2>
 <p>No-shows are one of the most frustrating and financially damaging problems in the beauty industry. When a client fails to appear for a scheduled appointment, the business loses not just the revenue from that service but also the opportunity cost of a slot that could have been filled by another paying client.</p>
-<p>Industry research estimates that the average no-show rate across beauty and wellness businesses sits between 15% and 30%. For a salon generating $10,000 per week in revenue, a 20% no-show rate translates to roughly $2,000 in lost weekly income &mdash; more than $100,000 per year vanishing because clients simply did not turn up.</p>
+<p>Industry research estimates that the average no-show rate across beauty and wellness businesses sits between 15% and 30%. For a salon generating $10,000 per week in revenue, a 20% no-show rate translates to roughly $2,000 in lost weekly income - more than $100,000 per year vanishing because clients simply did not turn up.</p>
 <p>The good news is that automated reminder systems have proven to reduce no-show rates dramatically. Salons and spas using well-timed, multi-channel reminders report reductions of 30-40% in missed appointments. The key is not just sending reminders, but sending the <em>right</em> reminders at the <em>right</em> time through the <em>right</em> channels.</p>
 
 <h2>Why Clients No-Show in the First Place</h2>
@@ -51,7 +51,7 @@ const automatedRemindersArticle: LocalBlogPost = {
 <ul>
 <li><strong>They genuinely forgot:</strong> This is the most common reason, accounting for approximately 40-50% of no-shows. Life gets busy, and an appointment booked two weeks ago can slip from memory entirely.</li>
 <li><strong>Schedule conflicts arose:</strong> Work meetings, family obligations, or unexpected events may have made the original time impossible. Without an easy cancellation process, some clients simply do not show up rather than going through the effort of rescheduling.</li>
-<li><strong>They felt uncertain about the booking:</strong> If the confirmation process was unclear &mdash; perhaps the client was not sure the appointment was actually confirmed &mdash; they may assume it did not go through.</li>
+<li><strong>They felt uncertain about the booking:</strong> If the confirmation process was unclear - perhaps the client was not sure the appointment was actually confirmed - they may assume it did not go through.</li>
 <li><strong>Price anxiety:</strong> As the appointment approaches, some clients second-guess the cost commitment, especially for premium services. Rather than cancelling explicitly, they avoid the situation.</li>
 <li><strong>Poor previous experience:</strong> Clients who had to wait past their appointment time previously may subconsciously deprioritize punctuality with your business.</li>
 <li><strong>No perceived consequence:</strong> If there is no cancellation policy or deposit requirement, the cost of not showing up is zero for the client.</li>
@@ -68,10 +68,10 @@ const automatedRemindersArticle: LocalBlogPost = {
 <p>Two days before the appointment, send a reminder that includes all the essential details plus a clear option to reschedule or cancel. This timing gives the client enough lead time to make adjustments and gives you enough runway to fill the slot from your waitlist if they cancel. This reminder catches the largest share of schedule conflicts and forgotten appointments.</p>
 
 <h3>2-Hour Pre-Appointment Reminder</h3>
-<p>A short, friendly message two hours before the appointment serves as the final nudge. At this point, the client is planning their immediate day, and the reminder ensures your appointment is part of that plan. Keep this message brief &mdash; just the time, location, and a note about parking or check-in if relevant.</p>
+<p>A short, friendly message two hours before the appointment serves as the final nudge. At this point, the client is planning their immediate day, and the reminder ensures your appointment is part of that plan. Keep this message brief - just the time, location, and a note about parking or check-in if relevant.</p>
 
 <h3>Optional: 7-Day Advance Reminder (For Premium Services)</h3>
-<p>For high-value services booked well in advance &mdash; such as bridal packages, extensive colour treatments, or multi-hour sessions &mdash; an additional reminder one week before helps clients plan and prepare. This is especially important for services that require pre-appointment preparation like avoiding sun exposure before a facial or washing hair before a colour correction.</p>
+<p>For high-value services booked well in advance - such as bridal packages, extensive colour treatments, or multi-hour sessions - an additional reminder one week before helps clients plan and prepare. This is especially important for services that require pre-appointment preparation like avoiding sun exposure before a facial or washing hair before a colour correction.</p>
 <p>Platforms like <a href="/en/features/business/communication-tools">The Daisy</a> allow you to configure these timing intervals per service type, so a quick 30-minute nail appointment gets a simpler sequence while a 3-hour bridal trial gets the full multi-step flow.</p>
 
 <h2>Choosing the Right Channels for Reminders</h2>
@@ -204,7 +204,7 @@ const clientCommunicationTemplatesArticle: LocalBlogPost = {
       'Save hours every week with ready-to-use communication templates for beauty businesses. Includes templates for booking confirmations, follow-ups, re-engagement, review requests, and promotional messages.',
     aboutPosts: `
 <h2>Why Every Beauty Business Needs Communication Templates</h2>
-<p>Consistent, professional communication is what separates thriving beauty businesses from those that struggle with client retention. Yet most salon and spa owners spend hours each week writing individual messages to clients &mdash; booking confirmations, follow-ups, promotional texts, and re-engagement outreach &mdash; often from scratch each time.</p>
+<p>Consistent, professional communication is what separates thriving beauty businesses from those that struggle with client retention. Yet most salon and spa owners spend hours each week writing individual messages to clients - booking confirmations, follow-ups, promotional texts, and re-engagement outreach - often from scratch each time.</p>
 <p>Communication templates solve this problem by giving you pre-written, tested messages that you can personalise and send in seconds. The best templates feel personal to the client while requiring minimal effort from your team. They ensure every client interaction is on-brand, professional, and effective.</p>
 <p>This guide provides ready-to-use templates for every stage of the client journey, plus guidance on customising them for your specific business.</p>
 
@@ -238,7 +238,7 @@ const clientCommunicationTemplatesArticle: LocalBlogPost = {
 <li><em>[Parking/access note, e.g., 'Free parking is available behind the building']</em></li>
 <li><em>[Check-in instruction, e.g., 'Just let our front desk know your name when you arrive']</em></li>
 </ul>
-<p><em>Questions? Reply anytime &mdash; we are happy to help!"</em></p>
+<p><em>Questions? Reply anytime - we are happy to help!"</em></p>
 <p>First-time clients have more uncertainty about the visit. Addressing logistics proactively reduces anxiety and makes the experience smoother for everyone.</p>
 
 <h3>Premium Service Confirmation</h3>
@@ -279,7 +279,7 @@ const clientCommunicationTemplatesArticle: LocalBlogPost = {
 <p><em>Ready to book your next visit? [Booking Link]"</em></p>
 
 <h3>Review Request (24-48 Hours After)</h3>
-<p><em>"Hi [Client Name], we hope you are still loving your [Service Name]! If you had a great experience, we would really appreciate a quick review &mdash; it helps other people discover us.</em></p>
+<p><em>"Hi [Client Name], we hope you are still loving your [Service Name]! If you had a great experience, we would really appreciate a quick review - it helps other people discover us.</em></p>
 <p><em>[Review Link]</em></p>
 <p><em>Thank you for being a valued client!"</em></p>
 <p>Timing matters for review requests. Sending 24-48 hours after the appointment catches clients while the experience is fresh but gives them time to appreciate the results (especially for services like colour or skincare treatments where results develop over a day).</p>
@@ -297,7 +297,7 @@ const clientCommunicationTemplatesArticle: LocalBlogPost = {
 <p><em>"Hi [Client Name], it has been a while since your last visit and we miss seeing you! Your last [Service Name] was on [Date]. Ready for a refresh? Book your next appointment here: [Booking Link]."</em></p>
 
 <h3>60-Day Inactivity With Incentive</h3>
-<p><em>"Hi [Client Name], we have not seen you in a while and wanted to check in. We would love to welcome you back &mdash; here is [Offer, e.g., '15% off your next visit'] as a thank you for being a valued client. Book here: [Booking Link]. Offer valid until [Expiry Date]."</em></p>
+<p><em>"Hi [Client Name], we have not seen you in a while and wanted to check in. We would love to welcome you back - here is [Offer, e.g., '15% off your next visit'] as a thank you for being a valued client. Book here: [Booking Link]. Offer valid until [Expiry Date]."</em></p>
 
 <h3>90-Day Win-Back Message</h3>
 <p><em>"Hi [Client Name], it has been 3 months since your last visit. We have been thinking of you and wanted to share what is new at [Salon Name]:</em></p>
@@ -316,7 +316,7 @@ const clientCommunicationTemplatesArticle: LocalBlogPost = {
 <p><em>"Exciting news, [Client Name]! We have just added [New Service] to our menu. [One sentence describing the service and its benefit]. As one of our valued clients, you get first access to book. Schedule your appointment: [Booking Link]"</em></p>
 
 <h3>Seasonal Promotion</h3>
-<p><em>"[Season] is here, [Client Name]! Treat yourself to our [Seasonal Package Name] &mdash; [brief description of what is included]. Available [Date Range] at [Price or Discount]. Limited spots available &mdash; book now: [Booking Link]"</em></p>
+<p><em>"[Season] is here, [Client Name]! Treat yourself to our [Seasonal Package Name] - [brief description of what is included]. Available [Date Range] at [Price or Discount]. Limited spots available - book now: [Booking Link]"</em></p>
 
 <h3>Birthday Message</h3>
 <p><em>"Happy Birthday, [Client Name]! To celebrate, we have a special gift for you: [Birthday Offer, e.g., 'a complimentary deep conditioning treatment with your next service']. Book your birthday treat: [Booking Link]. Valid for [Timeframe]. Wishing you a wonderful day!"</em></p>
@@ -326,7 +326,7 @@ const clientCommunicationTemplatesArticle: LocalBlogPost = {
 <ol>
 <li><strong>Customise for your brand voice:</strong> Adjust the tone and language to match your salon's personality. A luxury spa uses more formal language; a trendy hair studio might be more casual and playful.</li>
 <li><strong>Add your specific details:</strong> Replace placeholder information with your actual salon name, address, booking link, and policies.</li>
-<li><strong>Set up automation triggers:</strong> Configure each template to send automatically at the right moment &mdash; after booking, before appointments, after visits, and during inactivity periods.</li>
+<li><strong>Set up automation triggers:</strong> Configure each template to send automatically at the right moment - after booking, before appointments, after visits, and during inactivity periods.</li>
 <li><strong>Test before going live:</strong> Send each template to yourself and your team first. Check that personalisation tags populate correctly, links work, and the formatting looks good on mobile devices.</li>
 <li><strong>Review and refresh quarterly:</strong> Update templates every three months to keep messaging fresh and aligned with current promotions, services, and seasonal relevance.</li>
 </ol>
@@ -337,7 +337,7 @@ const clientCommunicationTemplatesArticle: LocalBlogPost = {
 <li><strong>Being too generic:</strong> "Dear Customer, you have an appointment" feels impersonal. Always use the client's name and reference specific services.</li>
 <li><strong>Overloading with information:</strong> Each message should have one clear purpose. Do not combine a reminder with a promotion with a review request in a single message.</li>
 <li><strong>Ignoring mobile formatting:</strong> Most clients read messages on their phones. Keep paragraphs short, use bullet points, and ensure links are tappable.</li>
-<li><strong>Forgetting the call to action:</strong> Every message should tell the client what to do next &mdash; book, confirm, review, reply, or click a link.</li>
+<li><strong>Forgetting the call to action:</strong> Every message should tell the client what to do next - book, confirm, review, reply, or click a link.</li>
 <li><strong>Using "no-reply" accounts:</strong> Clients should always be able to respond to your messages. Two-way communication reduces no-shows and builds trust.</li>
 </ul>
 
@@ -403,7 +403,7 @@ const smsMarketingArticle: LocalBlogPost = {
 <h2>Why SMS Marketing Works for Salons</h2>
 <p>SMS marketing is one of the most effective and underutilised tools available to beauty businesses. While social media algorithms limit organic reach and email open rates hover around 20-30%, SMS messages achieve an extraordinary 98% open rate with 90% of messages read within three minutes of delivery.</p>
 <p>For salons with empty chairs to fill, this immediacy is invaluable. A well-crafted SMS sent at 10 AM can generate bookings by lunchtime. No other marketing channel delivers this speed of response.</p>
-<p>Despite these numbers, most beauty businesses either do not use SMS marketing at all or use it poorly &mdash; sending generic blasts that annoy clients rather than targeted messages that drive action. This guide shows you how to build an SMS strategy that fills chairs, retains clients, and respects your audience.</p>
+<p>Despite these numbers, most beauty businesses either do not use SMS marketing at all or use it poorly - sending generic blasts that annoy clients rather than targeted messages that drive action. This guide shows you how to build an SMS strategy that fills chairs, retains clients, and respects your audience.</p>
 
 <h2>Building Your SMS Subscriber List the Right Way</h2>
 <p>An SMS marketing list is only valuable if the people on it have actively opted in and are genuinely interested in hearing from you. Here is how to build a quality list:</p>
@@ -436,7 +436,7 @@ const smsMarketingArticle: LocalBlogPost = {
 
 <h3>2. Slow Day Flash Promotions</h3>
 <p>If your Tuesday afternoons or Wednesday mornings are consistently quiet, create a recurring flash promotion for those periods.</p>
-<p><em>"Midweek treat! Book any [Service Category] this Wednesday and enjoy [Offer]. Limited spots &mdash; book here: [Link]"</em></p>
+<p><em>"Midweek treat! Book any [Service Category] this Wednesday and enjoy [Offer]. Limited spots - book here: [Link]"</em></p>
 <p>Send these messages 24-48 hours before the slow period. This gives clients time to adjust their schedules but maintains enough urgency to drive quick decisions. Track which days and times consistently underperform and create targeted campaigns for each.</p>
 
 <h3>3. Rebooking Reminders</h3>
@@ -463,10 +463,10 @@ const smsMarketingArticle: LocalBlogPost = {
 <p>SMS is a constrained format. Each message segment is 160 characters, and while you can send longer messages, brevity is your friend. Here are the rules for high-converting salon SMS copy:</p>
 
 <h3>Lead With the Benefit or Offer</h3>
-<p>The first few words determine whether the client reads the rest. Start with what matters most to them &mdash; the offer, the urgency, or the benefit. "20% off this week" grabs more attention than "Dear valued customer, we are pleased to announce..."</p>
+<p>The first few words determine whether the client reads the rest. Start with what matters most to them - the offer, the urgency, or the benefit. "20% off this week" grabs more attention than "Dear valued customer, we are pleased to announce..."</p>
 
 <h3>Create Urgency Without Being Pushy</h3>
-<p>Real urgency drives action. Phrases like "today only," "last 3 spots," and "offer ends Friday" work because they give the client a reason to act now rather than later. Avoid fake urgency &mdash; if you say "last chance" every week, clients learn to ignore it.</p>
+<p>Real urgency drives action. Phrases like "today only," "last 3 spots," and "offer ends Friday" work because they give the client a reason to act now rather than later. Avoid fake urgency - if you say "last chance" every week, clients learn to ignore it.</p>
 
 <h3>Include One Clear Call to Action</h3>
 <p>Every SMS should have exactly one action for the client to take: book, reply, or click a link. Multiple options create decision paralysis. "Book now: [Link]" is better than "Call us, visit our website, or reply to this message to learn more."</p>
@@ -503,7 +503,7 @@ const smsMarketingArticle: LocalBlogPost = {
 <p>SMS marketing is most powerful when it connects directly with your booking and client management system. Here is why integration matters:</p>
 <ul>
 <li><strong>Automatic segmentation:</strong> Your booking data tells you who books what, when, and how often. An integrated system uses this data to target messages automatically rather than requiring manual list management.</li>
-<li><strong>Behavioural triggers:</strong> Instead of blasting your entire list, set up automated triggers based on client behaviour &mdash; approaching rebooking date, inactivity period, birthday, or service anniversary.</li>
+<li><strong>Behavioural triggers:</strong> Instead of blasting your entire list, set up automated triggers based on client behaviour - approaching rebooking date, inactivity period, birthday, or service anniversary.</li>
 <li><strong>Direct booking links:</strong> SMS messages can include links that pre-populate the service, preferred staff member, and available times based on the client's history, making booking a one-tap process.</li>
 <li><strong>Performance tracking:</strong> Integration lets you track the complete journey from SMS receipt to completed booking and payment, giving you accurate ROI data.</li>
 </ul>
@@ -521,7 +521,7 @@ const smsMarketingArticle: LocalBlogPost = {
 <p>Use both, strategically. WhatsApp is better for rich, media-heavy messages and two-way conversations. SMS is better for short, urgent messages that need to reach every client regardless of whether they use WhatsApp. In the GCC region, WhatsApp penetration is extremely high, making it the primary channel, with SMS as a reliable fallback.</p>
 
 <h3>How do I prevent clients from unsubscribing?</h3>
-<p>The key is value. Every message should give the client something useful &mdash; an exclusive offer, relevant information, or early access to bookings. Maintain a reasonable frequency (no more than 4-6 promotional messages per month), personalise messages using client data, and always make it easy to book directly from the message. Clients unsubscribe when messages feel spammy, irrelevant, or too frequent.</p>
+<p>The key is value. Every message should give the client something useful - an exclusive offer, relevant information, or early access to bookings. Maintain a reasonable frequency (no more than 4-6 promotional messages per month), personalise messages using client data, and always make it easy to book directly from the message. Clients unsubscribe when messages feel spammy, irrelevant, or too frequent.</p>
 `,
     metaTitle: 'SMS Marketing to Fill Salon Chairs | The Daisy',
     metaDescription:
@@ -569,8 +569,8 @@ const buildingClientRelationshipsArticle: LocalBlogPost = {
       'Strong client relationships are built on great communication. Learn proven communication strategies for beauty professionals to build loyalty, increase rebookings, and grow your personal client base.',
     aboutPosts: `
 <h2>Why Communication Defines Your Success as a Beauty Professional</h2>
-<p>Technical skill gets clients through the door once. Communication is what brings them back again and again. As a beauty professional &mdash; whether you are a hairstylist, esthetician, nail technician, or makeup artist &mdash; your ability to communicate effectively with clients directly impacts your rebooking rate, tip income, referral volume, and career growth.</p>
-<p>Research across the service industry consistently shows that client satisfaction depends more on the quality of the interaction than the technical outcome alone. A client who receives a good haircut with excellent communication will rate their experience higher than a client who receives a great haircut with poor communication. This is not opinion &mdash; it is replicated across decades of service industry research.</p>
+<p>Technical skill gets clients through the door once. Communication is what brings them back again and again. As a beauty professional - whether you are a hairstylist, esthetician, nail technician, or makeup artist - your ability to communicate effectively with clients directly impacts your rebooking rate, tip income, referral volume, and career growth.</p>
+<p>Research across the service industry consistently shows that client satisfaction depends more on the quality of the interaction than the technical outcome alone. A client who receives a good haircut with excellent communication will rate their experience higher than a client who receives a great haircut with poor communication. This is not opinion - it is replicated across decades of service industry research.</p>
 <p>This guide covers the communication skills and strategies that separate fully booked professionals from those who struggle to build a loyal client base.</p>
 
 <h2>The Consultation: Where Relationships Begin</h2>
@@ -605,27 +605,27 @@ const buildingClientRelationshipsArticle: LocalBlogPost = {
 <ul>
 <li><strong>Chatty clients:</strong> Give short answers, maintain eye contact, and ask follow-up questions. They want connection.</li>
 <li><strong>Quiet clients:</strong> Give short responses, avoid initiating unrelated conversation, and let silence be comfortable. Check in periodically on comfort ("Is the water temperature okay?") without forcing conversation.</li>
-<li><strong>Stressed clients:</strong> Acknowledge what you sense. "You seem like you have had a long day &mdash; just relax and enjoy this." This shows emotional intelligence and makes them feel cared for.</li>
+<li><strong>Stressed clients:</strong> Acknowledge what you sense. "You seem like you have had a long day - just relax and enjoy this." This shows emotional intelligence and makes them feel cared for.</li>
 </ul>
 
 <h3>Explain What You Are Doing and Why</h3>
 <p>Clients feel more confident and engaged when they understand the process. Brief explanations during the service demonstrate expertise and educate the client:</p>
 <ul>
 <li>"I am going to apply a toner to neutralize the warm tones and give you that cool, ashy finish you showed me."</li>
-<li>"I am using a slightly heavier moisturiser today because your skin is a bit dehydrated &mdash; probably from the dry weather we have been having."</li>
-<li>"I am shaping your nails into a soft almond shape &mdash; it elongates the fingers and works beautifully with the colour you chose."</li>
+<li>"I am using a slightly heavier moisturiser today because your skin is a bit dehydrated - probably from the dry weather we have been having."</li>
+<li>"I am shaping your nails into a soft almond shape - it elongates the fingers and works beautifully with the colour you chose."</li>
 </ul>
 <p>These explanations educate without being condescending. They also create natural product recommendation opportunities because you are explaining <em>why</em> specific products matter rather than just suggesting purchases.</p>
 
 <h3>Handle Feedback Gracefully</h3>
-<p>Sometimes a client will express concern during the service &mdash; the colour looks different than expected, the pressure is too firm, or the shape is not what they envisioned. How you respond in these moments defines the relationship:</p>
+<p>Sometimes a client will express concern during the service - the colour looks different than expected, the pressure is too firm, or the shape is not what they envisioned. How you respond in these moments defines the relationship:</p>
 <ol>
 <li><strong>Acknowledge without defensiveness:</strong> "I hear you. Let me take a look at that."</li>
-<li><strong>Validate their concern:</strong> "You are right &mdash; that area is a bit warmer than we planned."</li>
+<li><strong>Validate their concern:</strong> "You are right - that area is a bit warmer than we planned."</li>
 <li><strong>Explain your solution:</strong> "I am going to adjust the toner to cool that down. It will look much closer to the reference once we are done."</li>
 <li><strong>Check satisfaction:</strong> "How does that look now? Are you happy with the direction?"</li>
 </ol>
-<p>Clients who feel heard during corrections become more loyal, not less. It is how you handle imperfections &mdash; not whether they occur &mdash; that determines trust.</p>
+<p>Clients who feel heard during corrections become more loyal, not less. It is how you handle imperfections - not whether they occur - that determines trust.</p>
 
 <h2>Digital Communication: Staying Connected Between Visits</h2>
 <p>Your relationship with clients should not go silent between appointments. Digital communication keeps you top of mind and strengthens the connection that began in the chair.</p>
@@ -639,7 +639,7 @@ const buildingClientRelationshipsArticle: LocalBlogPost = {
 <p>Position yourself as a knowledgeable resource by sending relevant aftercare advice tied to the specific service you performed:</p>
 <ul>
 <li>After a colour service: "To keep your colour vibrant, try to wait 48 hours before your first wash, and use a colour-safe shampoo."</li>
-<li>After a facial: "Your skin may be slightly sensitive today &mdash; skip active ingredients (retinol, AHAs) for 24 hours and use a gentle moisturiser."</li>
+<li>After a facial: "Your skin may be slightly sensitive today - skip active ingredients (retinol, AHAs) for 24 hours and use a gentle moisturiser."</li>
 <li>After extensions: "Sleep with your hair in a loose braid to prevent tangling. A silk pillowcase makes a big difference too."</li>
 </ul>
 <p>Aftercare tips demonstrate expertise, help the client maintain their results, and reduce callbacks or complaints caused by improper at-home care.</p>
@@ -650,14 +650,14 @@ const buildingClientRelationshipsArticle: LocalBlogPost = {
 <li><strong>Showcase your work:</strong> Before-and-after photos (with client permission) build credibility and attract new clients. Tag clients who are comfortable being featured.</li>
 <li><strong>Share educational content:</strong> Quick tips, product recommendations, and behind-the-scenes glimpses of your process build trust and position you as an expert.</li>
 <li><strong>Engage with client content:</strong> When clients post photos of their hair, skin, or nails after visiting you, like and comment genuinely. This reinforces the relationship and encourages future sharing.</li>
-<li><strong>Respond to DMs promptly:</strong> Many potential clients will reach out via social media before booking. Responding within a few hours &mdash; or letting <a href="/en/features/professional/communication-tools">The Daisy's communication tools</a> handle initial inquiries &mdash; can mean the difference between gaining and losing a new client.</li>
+<li><strong>Respond to DMs promptly:</strong> Many potential clients will reach out via social media before booking. Responding within a few hours - or letting <a href="/en/features/professional/communication-tools">The Daisy's communication tools</a> handle initial inquiries - can mean the difference between gaining and losing a new client.</li>
 </ul>
 
 <h2>Handling Difficult Conversations</h2>
 <p>Not every client interaction will be smooth. Difficult conversations are inevitable, and how you handle them determines whether the relationship survives or ends.</p>
 
 <h3>When a Client Is Unhappy With Results</h3>
-<p>An unhappy client is not a lost cause &mdash; they are an opportunity to demonstrate professionalism:</p>
+<p>An unhappy client is not a lost cause - they are an opportunity to demonstrate professionalism:</p>
 <ol>
 <li><strong>Listen fully</strong> without interrupting or defending. Let them express their disappointment completely.</li>
 <li><strong>Empathise genuinely:</strong> "I completely understand your frustration. That is not the result either of us wanted."</li>
@@ -676,7 +676,7 @@ const buildingClientRelationshipsArticle: LocalBlogPost = {
 <p>Honesty about limitations builds more trust than attempting something and delivering a mediocre result.</p>
 
 <h2>Building a Personal Brand Through Communication</h2>
-<p>Every interaction &mdash; in person and digital &mdash; contributes to your personal brand. Consistent, professional communication creates a reputation that attracts the right clients and grows your career.</p>
+<p>Every interaction - in person and digital - contributes to your personal brand. Consistent, professional communication creates a reputation that attracts the right clients and grows your career.</p>
 
 <h3>Define Your Communication Style</h3>
 <p>Your communication style should reflect your professional identity. Are you warm and nurturing? Direct and fashion-forward? Fun and energetic? Consistency matters. Clients should know what to expect from every interaction with you, whether it is in the chair, on social media, or through text messages.</p>
@@ -685,8 +685,8 @@ const buildingClientRelationshipsArticle: LocalBlogPost = {
 <p>Response time communicates how much you value the client's business. Aim to respond to booking inquiries and questions within 2-4 hours during business hours. If you cannot respond that quickly consistently, tools like <a href="/en/features/professional/communication-tools">The Daisy's professional communication platform</a> can handle initial responses and booking requests automatically while maintaining your personal brand voice.</p>
 
 <h3>Ask for Reviews the Right Way</h3>
-<p>Reviews are career currency for beauty professionals. The best time to ask is at the moment of highest satisfaction &mdash; right after a service when the client is admiring the result:</p>
-<p><em>"I am so glad you love it! If you have a moment, a quick review would mean a lot to me &mdash; it really helps other people find me. Here is a link: [Review Link]"</em></p>
+<p>Reviews are career currency for beauty professionals. The best time to ask is at the moment of highest satisfaction - right after a service when the client is admiring the result:</p>
+<p><em>"I am so glad you love it! If you have a moment, a quick review would mean a lot to me - it really helps other people find me. Here is a link: [Review Link]"</em></p>
 <p>Ask naturally, not apologetically. You did great work and deserve recognition.</p>
 
 <h2>Communication Tools That Scale Your Effort</h2>
@@ -702,7 +702,7 @@ const buildingClientRelationshipsArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How do I build rapport with a client I have never met before?</h3>
-<p>Start with a warm, genuine greeting using their name. Ask open-ended questions about their goals for the visit and their current routine. Find a common ground early in the conversation &mdash; even a shared observation about the weather or a compliment on something they are wearing. Most importantly, listen more than you talk during the first 10 minutes. Clients feel rapport when they feel heard.</p>
+<p>Start with a warm, genuine greeting using their name. Ask open-ended questions about their goals for the visit and their current routine. Find a common ground early in the conversation - even a shared observation about the weather or a compliment on something they are wearing. Most importantly, listen more than you talk during the first 10 minutes. Clients feel rapport when they feel heard.</p>
 
 <h3>What should I do if a client is rude or disrespectful?</h3>
 <p>Stay calm and professional. Often, rudeness stems from a bad day rather than a reflection of how they feel about you. If the behaviour is persistent or abusive, it is appropriate to set a boundary: "I want to give you the best experience possible, and I find it difficult to do my best work when I feel disrespected. Can we restart this interaction?" If the behaviour continues, speak with your manager or, if you are independent, you have every right to decline future bookings with that client.</p>
@@ -714,7 +714,7 @@ const buildingClientRelationshipsArticle: LocalBlogPost = {
 <p>Adjust your communication style based on individual preferences, not gender assumptions. Some male clients are highly communicative and engaged in the process; some female clients prefer minimal conversation. Read each individual's signals and adapt accordingly. The only universal rule is to treat every client with equal professionalism, attention, and care.</p>
 
 <h3>How do I transition online followers into paying clients?</h3>
-<p>Make the path from following to booking as simple as possible. Include a booking link in your bio, respond to DMs about services with a direct link to book, and periodically post content that naturally leads to a booking call-to-action ("Love this look? I have availability this week &mdash; link in bio"). Share client results (with permission), pricing transparency, and your availability. Followers become clients when they trust your skill, know your pricing, and can book in seconds.</p>
+<p>Make the path from following to booking as simple as possible. Include a booking link in your bio, respond to DMs about services with a direct link to book, and periodically post content that naturally leads to a booking call-to-action ("Love this look? I have availability this week - link in bio"). Share client results (with permission), pricing transparency, and your availability. Followers become clients when they trust your skill, know your pricing, and can book in seconds.</p>
 `,
     metaTitle: 'Client Communication Tips for Beauty Pros | Daisy',
     metaDescription:
@@ -763,7 +763,7 @@ const reviewRequestAutomationArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Why Online Reviews Make or Break Beauty Businesses</h2>
 <p>Online reviews are the single most influential factor in how new clients choose a beauty business. Research shows that 93% of consumers read online reviews before trying a new service provider, and 84% trust online reviews as much as personal recommendations. For beauty businesses specifically, the stakes are even higher because services are personal, visible, and difficult to evaluate before experiencing them.</p>
-<p>A salon with 4.8 stars and 200+ reviews will consistently attract more new clients than a salon with 4.2 stars and 30 reviews &mdash; even if the lower-rated salon offers better services. Perception drives initial discovery, and reviews drive perception.</p>
+<p>A salon with 4.8 stars and 200+ reviews will consistently attract more new clients than a salon with 4.2 stars and 30 reviews - even if the lower-rated salon offers better services. Perception drives initial discovery, and reviews drive perception.</p>
 <p>The problem is that satisfied clients rarely leave reviews spontaneously. Industry data shows that without prompting, only 5-10% of happy clients will write a review. Unhappy clients, conversely, are 2-3 times more likely to share their experience unprompted. This creates a natural negativity bias in your review profile that does not reflect the actual quality of your work.</p>
 <p>Review request automation solves this by systematically asking every satisfied client to share their experience, at the optimal moment, through the most effective channel.</p>
 
@@ -781,7 +781,7 @@ const reviewRequestAutomationArticle: LocalBlogPost = {
 </ul>
 
 <h3>Why Immediate Requests Underperform</h3>
-<p>Asking for a review at checkout feels transactional and pressured. The client is focused on payment, scheduling their next appointment, and leaving &mdash; not on writing a thoughtful review. Some businesses place review QR codes at the reception desk, but conversion rates from this approach are typically below 5% because the context is wrong.</p>
+<p>Asking for a review at checkout feels transactional and pressured. The client is focused on payment, scheduling their next appointment, and leaving - not on writing a thoughtful review. Some businesses place review QR codes at the reception desk, but conversion rates from this approach are typically below 5% because the context is wrong.</p>
 
 <h3>Why Delayed Requests Also Underperform</h3>
 <p>If you wait a week or more to request a review, the emotional connection to the experience has weakened. The client's daily life has resumed, and the effort of writing a review feels disproportionate to the fading memory of the service. The sweet spot is 2-48 hours after the appointment, depending on service type.</p>
@@ -825,7 +825,7 @@ const reviewRequestAutomationArticle: LocalBlogPost = {
 
 <h3>Standard Review Request (WhatsApp/SMS)</h3>
 <p><em>"Hi [Client Name], we hope you are loving your [Service Name]! If you had a great experience, a quick review would mean the world to us: [Direct Review Link]. Thank you for being a valued client at [Salon Name]!"</em></p>
-<p>This template is concise, personal, and includes a single clear call to action. The phrase "if you had a great experience" subtly filters &mdash; clients who had a neutral or negative experience are less likely to click, while happy clients feel affirmed and motivated.</p>
+<p>This template is concise, personal, and includes a single clear call to action. The phrase "if you had a great experience" subtly filters - clients who had a neutral or negative experience are less likely to click, while happy clients feel affirmed and motivated.</p>
 
 <h3>First-Time Client Review Request</h3>
 <p><em>"Hi [Client Name], it was wonderful meeting you today! We hope your first visit to [Salon Name] was everything you expected. If you have a moment, we would love to hear about your experience: [Direct Review Link]. Your feedback helps us keep improving."</em></p>
@@ -833,7 +833,7 @@ const reviewRequestAutomationArticle: LocalBlogPost = {
 
 <h3>Follow-Up for Non-Responders</h3>
 <p><em>"Hi [Client Name], we hope you have been enjoying your [Service Name]! If you have not had a chance yet, we would really appreciate a quick review: [Direct Review Link]. It only takes a minute and helps other people discover us. Thank you!"</em></p>
-<p>Send a single follow-up 3-5 days after the initial request if the client has not left a review. Do not send more than one follow-up &mdash; repeated requests feel pushy and can damage the relationship.</p>
+<p>Send a single follow-up 3-5 days after the initial request if the client has not left a review. Do not send more than one follow-up - repeated requests feel pushy and can damage the relationship.</p>
 
 <h3>Premium Service Review Request (Email)</h3>
 <p>For high-value services, a slightly longer email format works well:</p>
@@ -841,24 +841,24 @@ const reviewRequestAutomationArticle: LocalBlogPost = {
 <p><em>Hi [Client Name],</em></p>
 <p><em>We hope your [Service Name] with [Staff Name] has been making you feel amazing. We put a lot of care into every detail, and hearing from you helps us maintain the high standards you deserve.</em></p>
 <p><em>If you have a moment, we would be grateful for a review: [Direct Review Link]</em></p>
-<p><em>Your words help other people in [City] find great beauty services &mdash; and they mean a lot to our team.</em></p>
+<p><em>Your words help other people in [City] find great beauty services - and they mean a lot to our team.</em></p>
 <p><em>Thank you for choosing [Salon Name]."</em></p>
 
 <h2>Handling Negative Reviews Professionally</h2>
-<p>Even with the best service, negative reviews will occasionally appear. How you respond to them matters as much as the review itself &mdash; potential clients read your responses to judge how you handle problems.</p>
+<p>Even with the best service, negative reviews will occasionally appear. How you respond to them matters as much as the review itself - potential clients read your responses to judge how you handle problems.</p>
 
 <h3>Respond Quickly</h3>
 <p>Reply to negative reviews within 24 hours. A prompt response shows you take feedback seriously and care about client satisfaction. Delayed responses can appear dismissive.</p>
 
 <h3>Follow the HEAR Framework</h3>
 <ol>
-<li><strong>H &mdash; Hear them out:</strong> Acknowledge the specific issue the client raised without being defensive.</li>
-<li><strong>E &mdash; Empathise:</strong> Show that you understand their frustration and take their experience seriously.</li>
-<li><strong>A &mdash; Apologise:</strong> Offer a genuine apology for the experience falling short of expectations.</li>
-<li><strong>R &mdash; Resolve:</strong> Propose a specific solution &mdash; a complimentary correction, a discount on their next visit, or an invitation to discuss the issue privately.</li>
+<li><strong>H - Hear them out:</strong> Acknowledge the specific issue the client raised without being defensive.</li>
+<li><strong>E - Empathise:</strong> Show that you understand their frustration and take their experience seriously.</li>
+<li><strong>A - Apologise:</strong> Offer a genuine apology for the experience falling short of expectations.</li>
+<li><strong>R - Resolve:</strong> Propose a specific solution - a complimentary correction, a discount on their next visit, or an invitation to discuss the issue privately.</li>
 </ol>
 <p>Example response:</p>
-<p><em>"Thank you for sharing your experience, [Client Name]. I am sorry that your [Service] did not meet your expectations &mdash; that is not the standard we aim for. I would love the opportunity to make this right. Please contact us at [phone/email] so we can arrange a complimentary correction at your convenience."</em></p>
+<p><em>"Thank you for sharing your experience, [Client Name]. I am sorry that your [Service] did not meet your expectations - that is not the standard we aim for. I would love the opportunity to make this right. Please contact us at [phone/email] so we can arrange a complimentary correction at your convenience."</em></p>
 
 <h3>Take the Conversation Private</h3>
 <p>After your public response, invite the client to continue the conversation privately. Resolving issues publicly can become confrontational, while private resolution lets you address the problem thoroughly and personally.</p>
@@ -886,7 +886,7 @@ const reviewRequestAutomationArticle: LocalBlogPost = {
 <ul>
 <li><strong>Review request conversion rate:</strong> The percentage of review requests that result in a submitted review. Aim for 15-25% with automated requests.</li>
 <li><strong>Average rating:</strong> Track your average star rating over time. Automated requests from satisfied clients should gradually lift your overall rating.</li>
-<li><strong>Review velocity:</strong> How many new reviews you receive per week or month. Consistency matters for platform algorithms &mdash; a steady stream of reviews signals an active, trusted business.</li>
+<li><strong>Review velocity:</strong> How many new reviews you receive per week or month. Consistency matters for platform algorithms - a steady stream of reviews signals an active, trusted business.</li>
 <li><strong>Platform distribution:</strong> Ensure reviews are spread across the platforms that matter most (Google, The Daisy, social media) rather than concentrated on one.</li>
 <li><strong>Response rate:</strong> Track what percentage of reviews (both positive and negative) you respond to. Aim for 100% response rate on negative reviews and at least 50% on positive ones.</li>
 </ul>
@@ -895,19 +895,19 @@ const reviewRequestAutomationArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>Is it ethical to ask clients for reviews?</h3>
-<p>Absolutely. Asking clients to share their honest experience is standard practice across every service industry. What is unethical is incentivising reviews (offering discounts or gifts in exchange for reviews), writing fake reviews, or selectively deleting negative ones. Asking for genuine, honest feedback is both ethical and necessary &mdash; without proactive requests, your review profile will not accurately represent the quality of your business.</p>
+<p>Absolutely. Asking clients to share their honest experience is standard practice across every service industry. What is unethical is incentivising reviews (offering discounts or gifts in exchange for reviews), writing fake reviews, or selectively deleting negative ones. Asking for genuine, honest feedback is both ethical and necessary - without proactive requests, your review profile will not accurately represent the quality of your business.</p>
 
 <h3>How do I get reviews on Google specifically?</h3>
 <p>Create a direct Google review link from your Google Business Profile. In the "Get more reviews" section, Google provides a short link that takes clients directly to your review form with the star rating prompt already visible. Include this specific link in your review request messages rather than asking clients to search for your business on Google.</p>
 
 <h3>What should I do about fake or competitor reviews?</h3>
-<p>Report fake reviews to the platform using their flagging system. Google, in particular, investigates flagged reviews and removes those that violate their guidelines (fake reviews, reviews from non-customers, and reviews containing hate speech or spam). While the removal process can take 1-4 weeks, persistently flagging illegitimate reviews does work. Do not respond publicly to reviews you believe are fake &mdash; flag and report them privately.</p>
+<p>Report fake reviews to the platform using their flagging system. Google, in particular, investigates flagged reviews and removes those that violate their guidelines (fake reviews, reviews from non-customers, and reviews containing hate speech or spam). While the removal process can take 1-4 weeks, persistently flagging illegitimate reviews does work. Do not respond publicly to reviews you believe are fake - flag and report them privately.</p>
 
 <h3>How many reviews do I need to be competitive?</h3>
-<p>The minimum credible number varies by market, but generally: fewer than 20 reviews signals a new or unestablished business; 50-100 reviews builds solid credibility; 200+ reviews positions you as a well-established, trusted business. More important than total count is recency &mdash; a business with 50 recent reviews outranks a business with 200 reviews that are all 2+ years old. Aim for at least 4-8 new reviews per month to maintain review freshness and velocity.</p>
+<p>The minimum credible number varies by market, but generally: fewer than 20 reviews signals a new or unestablished business; 50-100 reviews builds solid credibility; 200+ reviews positions you as a well-established, trusted business. More important than total count is recency - a business with 50 recent reviews outranks a business with 200 reviews that are all 2+ years old. Aim for at least 4-8 new reviews per month to maintain review freshness and velocity.</p>
 
 <h3>Should I respond to every review?</h3>
-<p>Respond to every negative review without exception &mdash; your response is read by potential clients more than the review itself. For positive reviews, aim to respond to at least 50%, rotating between different response styles to keep it genuine. A simple, personalised thank-you that references something specific from their review shows authenticity and appreciation.</p>
+<p>Respond to every negative review without exception - your response is read by potential clients more than the review itself. For positive reviews, aim to respond to at least 50%, rotating between different response styles to keep it genuine. A simple, personalised thank-you that references something specific from their review shows authenticity and appreciation.</p>
 `,
     metaTitle: 'Review Request Automation for Salons | The Daisy',
     metaDescription:

@@ -43,10 +43,10 @@ const onlineBookingSetupArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Why Every Salon Needs Online Booking in 2026</h2>
 <p>The data is clear: 72% of beauty service bookings now originate from a mobile device, and 67% of customers say they prefer booking online over calling. Salons without an online booking system are losing clients to competitors who make it easy to book with a few taps.</p>
-<p>Online booking is no longer a nice-to-have &mdash; it is the primary way customers expect to interact with your business. This guide walks you through setting up a complete online booking system for your salon, from choosing the right platform to going live.</p>
+<p>Online booking is no longer a nice-to-have - it is the primary way customers expect to interact with your business. This guide walks you through setting up a complete online booking system for your salon, from choosing the right platform to going live.</p>
 
 <h2>What an Online Booking System Actually Does</h2>
-<p>An online booking system lets clients schedule appointments through your website, social media profiles, Google Business listing, or a dedicated booking page &mdash; without calling or messaging your team. A proper system handles:</p>
+<p>An online booking system lets clients schedule appointments through your website, social media profiles, Google Business listing, or a dedicated booking page - without calling or messaging your team. A proper system handles:</p>
 <ul>
 <li><strong>Real-time availability:</strong> Clients see which time slots are open right now, eliminating the back-and-forth of manual scheduling.</li>
 <li><strong>Service selection:</strong> Clients choose the exact service they want, see the duration and price, and select their preferred staff member.</li>
@@ -63,8 +63,8 @@ const onlineBookingSetupArticle: LocalBlogPost = {
 <li><strong>Multi-channel booking:</strong> Clients should be able to book from your website, Instagram, WhatsApp, Google, and a direct booking link. A platform like <a href="/en/features/business/booking-management">The Daisy</a> connects all channels so every booking lands in one calendar.</li>
 <li><strong>Staff-level scheduling:</strong> Each team member needs their own availability, services, and pricing. The system must handle individual schedules and days off.</li>
 <li><strong>Automated reminders:</strong> SMS and WhatsApp reminders sent 24 hours and 2 hours before appointments reduce no-shows by up to 40%.</li>
-<li><strong>Mobile management:</strong> You and your staff need to view, edit, and manage bookings from your phones &mdash; not just a desktop computer.</li>
-<li><strong>Client profiles:</strong> Every booking should build a client history &mdash; past services, preferences, notes, and spending patterns.</li>
+<li><strong>Mobile management:</strong> You and your staff need to view, edit, and manage bookings from your phones - not just a desktop computer.</li>
+<li><strong>Client profiles:</strong> Every booking should build a client history - past services, preferences, notes, and spending patterns.</li>
 </ul>
 
 <h3>Nice-to-Have Features</h3>
@@ -78,7 +78,7 @@ const onlineBookingSetupArticle: LocalBlogPost = {
 <h2>Step 2: Configure Your Service Menu</h2>
 <p>Your service menu is the foundation of your booking system. Take time to set it up correctly:</p>
 <ol>
-<li><strong>List every service you offer</strong> with accurate names that clients will recognize. Avoid internal jargon &mdash; use terms clients search for.</li>
+<li><strong>List every service you offer</strong> with accurate names that clients will recognize. Avoid internal jargon - use terms clients search for.</li>
 <li><strong>Set accurate durations</strong> including setup and cleanup time. If a balayage takes 2.5 hours of chair time plus 15 minutes of preparation, the total blocked time should be 2 hours 45 minutes.</li>
 <li><strong>Price each service clearly.</strong> If prices vary (e.g., by hair length), create separate service entries or use a &ldquo;starting from&rdquo; price with a note.</li>
 <li><strong>Assign services to staff members.</strong> Not every team member performs every service. Map services to qualified staff so clients only see accurate availability.</li>
@@ -103,7 +103,7 @@ const onlineBookingSetupArticle: LocalBlogPost = {
 <p>Embed a booking widget or add a prominent &ldquo;Book Now&rdquo; button that links to your booking page. Place it in the header, on your homepage, and on every service page.</p>
 
 <h3>Google Business Profile</h3>
-<p>Add a booking link to your Google Business profile. When potential clients search for salons in your area, they can book directly from the search results &mdash; one of the highest-conversion booking sources available.</p>
+<p>Add a booking link to your Google Business profile. When potential clients search for salons in your area, they can book directly from the search results - one of the highest-conversion booking sources available.</p>
 
 <h3>Instagram and Facebook</h3>
 <p>Add a booking action button to your Instagram and Facebook profiles. Clients browsing your portfolio can book immediately without leaving the platform.</p>
@@ -166,7 +166,7 @@ const onlineBookingSetupArticle: LocalBlogPost = {
 <p>Good booking systems include a notes field where clients can add special requests. For entirely custom services, clients can contact you directly or the AI receptionist can handle the conversation and create a custom booking.</p>
 
 <h3>Can I still accept phone and walk-in bookings?</h3>
-<p>Absolutely. Online booking is an additional channel, not a replacement. Your team can still add bookings manually, and an AI receptionist can handle phone bookings automatically. All bookings &mdash; regardless of source &mdash; appear on the same unified calendar.</p>
+<p>Absolutely. Online booking is an additional channel, not a replacement. Your team can still add bookings manually, and an AI receptionist can handle phone bookings automatically. All bookings - regardless of source - appear on the same unified calendar.</p>
 `,
     metaTitle: 'Online Booking for Salons: Setup Guide | The Daisy',
     metaDescription:
@@ -235,14 +235,14 @@ const reduceNoShowsArticle: LocalBlogPost = {
 <ul>
 <li><strong>48 hours before:</strong> First reminder. This gives clients enough time to reschedule if they have a conflict, allowing you to fill the slot.</li>
 <li><strong>24 hours before:</strong> Confirmation reminder. Ask for a simple &ldquo;confirm&rdquo; or &ldquo;cancel&rdquo; response. Clients who do not confirm can be contacted by your team or flagged for follow-up.</li>
-<li><strong>2 hours before:</strong> Final reminder with practical details &mdash; address, parking instructions, or preparation tips. This keeps the appointment top-of-mind.</li>
+<li><strong>2 hours before:</strong> Final reminder with practical details - address, parking instructions, or preparation tips. This keeps the appointment top-of-mind.</li>
 </ul>
 
 <h3>Best Channels for Reminders</h3>
 <p>WhatsApp messages have a 98% open rate compared to 20% for email. SMS sits at around 95%. The Daisy sends reminders across WhatsApp, SMS, and email automatically, using the client's preferred channel. The combination of multiple touchpoints at optimal intervals is what drives no-show rates down.</p>
 
 <h3>What to Include in Reminders</h3>
-<p>Effective reminders include the appointment date and time, service booked, staff member name, salon address, and a one-tap option to confirm, reschedule, or cancel. Making it easy to cancel is counterintuitive but critical &mdash; a cancellation you know about is far better than a no-show.</p>
+<p>Effective reminders include the appointment date and time, service booked, staff member name, salon address, and a one-tap option to confirm, reschedule, or cancel. Making it easy to cancel is counterintuitive but critical - a cancellation you know about is far better than a no-show.</p>
 
 <h2>Strategy 2: Deposit and Prepayment Policies (Reduces No-Shows by 30-50%)</h2>
 <p>Requiring a deposit at booking transforms the appointment from a casual intention into a financial commitment. Here is how to implement deposits without alienating clients:</p>
@@ -272,7 +272,7 @@ const reduceNoShowsArticle: LocalBlogPost = {
 <ul>
 <li><strong>Limit future bookings:</strong> Appointments booked more than 4 weeks in advance have significantly higher no-show rates. Consider limiting how far ahead clients can book for non-recurring services.</li>
 <li><strong>Two-strike policy:</strong> After two no-shows, require full prepayment for future bookings. Communicate this clearly and consistently.</li>
-<li><strong>Easy cancellation:</strong> Paradoxically, making it extremely easy to cancel reduces no-shows. A one-tap cancel link in the reminder message means clients cancel instead of simply not showing up &mdash; giving you time to fill the slot.</li>
+<li><strong>Easy cancellation:</strong> Paradoxically, making it extremely easy to cancel reduces no-shows. A one-tap cancel link in the reminder message means clients cancel instead of simply not showing up - giving you time to fill the slot.</li>
 <li><strong>Confirmation requirement:</strong> For appointments booked more than a week in advance, require confirmation 24-48 hours before. Unconfirmed slots can be released to waitlisted clients.</li>
 </ul>
 
@@ -317,13 +317,13 @@ const reduceNoShowsArticle: LocalBlogPost = {
 <p>Studies show that salon revenue increases after implementing deposit policies, even if a small percentage of casual browsers are deterred. The clients you retain are more committed, have higher lifetime value, and your chair utilization improves dramatically. Most clients expect deposits for premium services and see it as a sign of a professional business.</p>
 
 <h3>How do I handle genuine emergencies?</h3>
-<p>Build flexibility into your policy. Genuine emergencies deserve compassion &mdash; waive the fee and reschedule with no penalty. It is the habitual no-showers you are targeting, not the client who has a family emergency once in two years. Your team can override the policy on a case-by-case basis.</p>
+<p>Build flexibility into your policy. Genuine emergencies deserve compassion - waive the fee and reschedule with no penalty. It is the habitual no-showers you are targeting, not the client who has a family emergency once in two years. Your team can override the policy on a case-by-case basis.</p>
 
-<h3>What is the best reminder channel &mdash; SMS, WhatsApp, or email?</h3>
+<h3>What is the best reminder channel - SMS, WhatsApp, or email?</h3>
 <p>WhatsApp has the highest open rate (98%) and fastest response time. SMS is a strong second choice. Email works best as an additional channel, not the primary one. The most effective approach is multi-channel: WhatsApp as primary, SMS as backup for clients not on WhatsApp, and email for detailed booking information.</p>
 
 <h3>Should I charge a fee for no-shows?</h3>
-<p>A no-show fee (typically 50-100% of the service price, charged to the card on file) is effective but must be clearly communicated at booking time. Many salons find that the threat of a fee is more effective than actually charging it &mdash; when clients know a fee exists, they cancel properly instead of no-showing.</p>
+<p>A no-show fee (typically 50-100% of the service price, charged to the card on file) is effective but must be clearly communicated at booking time. Many salons find that the threat of a fee is more effective than actually charging it - when clients know a fee exists, they cancel properly instead of no-showing.</p>
 `,
     metaTitle: 'How to Reduce Salon No-Shows by 60% | The Daisy',
     metaDescription:
@@ -371,8 +371,8 @@ const waitlistManagementArticle: LocalBlogPost = {
       'A fully booked calendar should not mean lost clients. Learn how automated waitlist management fills cancellations instantly, captures overflow demand, and ensures no booking opportunity is wasted.',
     aboutPosts: `
 <h2>The Hidden Revenue Problem: Full Calendars and Lost Clients</h2>
-<p>A fully booked calendar looks like success. But for every client who sees &ldquo;no availability&rdquo; and leaves, you are losing potential revenue &mdash; both the immediate booking and the long-term relationship. Research shows that 60% of clients who cannot book their preferred time slot do not call back. They book with a competitor instead.</p>
-<p>Meanwhile, cancellations happen. Even the best salons experience a 10-15% cancellation rate. Without a waitlist system, those cancelled slots sit empty &mdash; revenue you already planned for, evaporated. A smart waitlist bridges these two problems: it captures overflow demand and fills cancellations automatically.</p>
+<p>A fully booked calendar looks like success. But for every client who sees &ldquo;no availability&rdquo; and leaves, you are losing potential revenue - both the immediate booking and the long-term relationship. Research shows that 60% of clients who cannot book their preferred time slot do not call back. They book with a competitor instead.</p>
+<p>Meanwhile, cancellations happen. Even the best salons experience a 10-15% cancellation rate. Without a waitlist system, those cancelled slots sit empty - revenue you already planned for, evaporated. A smart waitlist bridges these two problems: it captures overflow demand and fills cancellations automatically.</p>
 
 <h2>How Salon Waitlist Management Works</h2>
 <p>Modern waitlist management goes far beyond a paper list behind the front desk. Here is how an automated system operates:</p>
@@ -385,7 +385,7 @@ const waitlistManagementArticle: LocalBlogPost = {
 <li>Acceptable date range (e.g., &ldquo;any time this week&rdquo; or &ldquo;Tuesday or Wednesday morning&rdquo;)</li>
 <li>How they want to be notified (WhatsApp, SMS, or email)</li>
 </ul>
-<p>This can happen through any booking channel &mdash; website, social media, WhatsApp, or even through an <a href="/en/features/business/ai-salon-management">AI receptionist</a> handling a phone call.</p>
+<p>This can happen through any booking channel - website, social media, WhatsApp, or even through an <a href="/en/features/business/ai-salon-management">AI receptionist</a> handling a phone call.</p>
 
 <h3>Step 2: Cancellation Triggers Automatic Matching</h3>
 <p>The moment a booked client cancels or a no-show is marked, the system immediately:</p>
@@ -396,7 +396,7 @@ const waitlistManagementArticle: LocalBlogPost = {
 </ol>
 
 <h3>Step 3: First Responder Gets the Slot</h3>
-<p>The first client to accept the offer is automatically booked into the slot. The entire process &mdash; from cancellation to new confirmed booking &mdash; can happen in under 2 minutes, with zero manual effort from your team.</p>
+<p>The first client to accept the offer is automatically booked into the slot. The entire process - from cancellation to new confirmed booking - can happen in under 2 minutes, with zero manual effort from your team.</p>
 <p>If the first client does not respond within a configurable time window (typically 15-30 minutes), the system automatically moves to the next client on the list.</p>
 
 <h2>Why Paper Waitlists Do Not Work</h2>
@@ -450,7 +450,7 @@ const waitlistManagementArticle: LocalBlogPost = {
 <li><strong>Slot recovery time:</strong> Average time from cancellation to the slot being filled. Target: under 30 minutes.</li>
 <li><strong>Slot recovery rate:</strong> Percentage of cancelled slots filled through the waitlist. Target: over 60%.</li>
 <li><strong>Revenue recovered:</strong> Dollar value of appointments filled through waitlist automation per month.</li>
-<li><strong>Waitlist size:</strong> Number of active waitlist entries. A growing waitlist indicates demand exceeding supply &mdash; a signal to consider expanding hours or adding staff.</li>
+<li><strong>Waitlist size:</strong> Number of active waitlist entries. A growing waitlist indicates demand exceeding supply - a signal to consider expanding hours or adding staff.</li>
 </ul>
 
 <h2>Revenue Impact: A Real-World Calculation</h2>
@@ -524,7 +524,7 @@ const groupBookingArticle: LocalBlogPost = {
       'Group bookings and service packages increase average revenue per visit by 40-60%. Learn how to create compelling packages, manage group appointments efficiently, and turn one booking into multiple services.',
     aboutPosts: `
 <h2>Why Group Bookings and Packages Matter for Salon Revenue</h2>
-<p>The most profitable salons do not just fill chairs &mdash; they maximize the revenue from every single visit. Group bookings and service packages are two of the most effective ways to increase your average ticket value without acquiring new clients.</p>
+<p>The most profitable salons do not just fill chairs - they maximize the revenue from every single visit. Group bookings and service packages are two of the most effective ways to increase your average ticket value without acquiring new clients.</p>
 <p>The numbers speak for themselves: salons that actively promote packages see a 40-60% increase in average revenue per visit. Group bookings (bridal parties, birthday celebrations, corporate events) generate 3-5x the revenue of a single appointment. Yet most salons leave this revenue on the table because their booking system does not support it easily.</p>
 
 <h2>Understanding Group Bookings</h2>
@@ -551,7 +551,7 @@ const groupBookingArticle: LocalBlogPost = {
 <h2>How to Set Up Group Booking on Your Platform</h2>
 <ol>
 <li><strong>Enable group booking in your settings.</strong> Define the maximum group size your salon can accommodate based on available stations and staff.</li>
-<li><strong>Create group-specific services.</strong> Some services work differently in a group context &mdash; for example, bridal hair might include a trial session, on-site travel, or extended timing.</li>
+<li><strong>Create group-specific services.</strong> Some services work differently in a group context - for example, bridal hair might include a trial session, on-site travel, or extended timing.</li>
 <li><strong>Set group pricing.</strong> Offer a group rate that provides a small discount per person while increasing total revenue. A 10% per-person discount on a group of 5 still generates 4.5x the revenue of a single booking.</li>
 <li><strong>Configure staff allocation rules.</strong> Define which staff can handle which group services and how many simultaneous group members each can serve.</li>
 <li><strong>Set a minimum lead time.</strong> Group bookings require more preparation. Set a minimum advance booking period (e.g., 48 hours or 1 week for large groups) to give your team time to prepare.</li>
@@ -621,7 +621,7 @@ const groupBookingArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How do I price group bookings fairly?</h3>
-<p>Offer a 10-15% discount per person for groups of 4 or more. This rewards the organizer for bringing multiple clients while still generating significantly more revenue than individual bookings. The organizer gets credit for the group &mdash; consider offering them an extra perk like a free add-on service.</p>
+<p>Offer a 10-15% discount per person for groups of 4 or more. This rewards the organizer for bringing multiple clients while still generating significantly more revenue than individual bookings. The organizer gets credit for the group - consider offering them an extra perk like a free add-on service.</p>
 
 <h3>What is the ideal number of packages to offer?</h3>
 <p>Start with 3-5 packages covering different price points and service categories. Too many options create decision paralysis. Rotate seasonal packages quarterly to keep the menu fresh. Track which packages sell and discontinue underperformers.</p>
@@ -678,8 +678,8 @@ const mobileBookingArticle: LocalBlogPost = {
       'Seven out of ten salon bookings now happen on mobile devices. Learn why mobile-first booking is essential, what makes a great mobile booking experience, and how to capture the clients your competitors are losing.',
     aboutPosts: `
 <h2>The Shift to Mobile Booking Is Already Complete</h2>
-<p>If your salon's booking experience is not optimized for mobile, you are not preparing for the future &mdash; you are already behind. Industry data from 2025-2026 shows that 70-75% of all beauty service bookings originate from a mobile device. For clients under 35, that number rises to 85%.</p>
-<p>This is not a trend. It is the new default. Clients discover your salon on Instagram, read a review on Google Maps, and want to book in that same moment &mdash; all from their phone. If the booking experience requires zooming, scrolling sideways, or navigating a desktop-designed page, they leave. The average abandonment rate for non-mobile-optimized booking pages is 67%.</p>
+<p>If your salon's booking experience is not optimized for mobile, you are not preparing for the future - you are already behind. Industry data from 2025-2026 shows that 70-75% of all beauty service bookings originate from a mobile device. For clients under 35, that number rises to 85%.</p>
+<p>This is not a trend. It is the new default. Clients discover your salon on Instagram, read a review on Google Maps, and want to book in that same moment - all from their phone. If the booking experience requires zooming, scrolling sideways, or navigating a desktop-designed page, they leave. The average abandonment rate for non-mobile-optimized booking pages is 67%.</p>
 
 <h2>How Clients Actually Book on Mobile</h2>
 <p>Understanding the mobile booking journey reveals where most salons lose clients:</p>
@@ -700,7 +700,7 @@ const mobileBookingArticle: LocalBlogPost = {
 <ul>
 <li>Clear service names and prices visible without scrolling</li>
 <li>Easy date and time selection with visual availability indicators</li>
-<li>Minimal form fields &mdash; name, phone number, and service selection is enough for most bookings</li>
+<li>Minimal form fields - name, phone number, and service selection is enough for most bookings</li>
 <li>One-tap confirmation without requiring account creation</li>
 </ul>
 
@@ -720,7 +720,7 @@ const mobileBookingArticle: LocalBlogPost = {
 <p>Your booking page must load in under 2 seconds on a mobile connection. Every additional second of load time reduces conversions by 7%. <a href="/en/features/business/booking-management">The Daisy's booking pages</a> are optimized for mobile performance with lightweight interfaces that load instantly.</p>
 
 <h3>Thumb-Friendly Design</h3>
-<p>All tappable elements &mdash; buttons, time slots, service selections &mdash; should be at least 44 pixels tall with adequate spacing. Users navigating with one thumb on a phone screen need large, clearly separated targets.</p>
+<p>All tappable elements - buttons, time slots, service selections - should be at least 44 pixels tall with adequate spacing. Users navigating with one thumb on a phone screen need large, clearly separated targets.</p>
 
 <h3>Smart Defaults</h3>
 <p>Reduce friction by pre-selecting intelligent defaults. If it is Tuesday and the client is booking, default to the current week. If the client has booked before, pre-fill their details and suggest their usual service. Returning clients on The Daisy can rebook in two taps.</p>
@@ -740,10 +740,10 @@ const mobileBookingArticle: LocalBlogPost = {
 <p>Add a &ldquo;Book&rdquo; action button to your Instagram profile. When clients see a service they love in your feed or stories, they can tap through to book without leaving the Instagram app. For every portfolio post, add a story with a booking link sticker.</p>
 
 <h3>Google &ldquo;Reserve&rdquo; Button</h3>
-<p>Connect your booking system to Google Reserve so clients can book directly from your Google Business profile. This is the highest-intent booking channel available &mdash; clients searching for your salon on Google are ready to book right now.</p>
+<p>Connect your booking system to Google Reserve so clients can book directly from your Google Business profile. This is the highest-intent booking channel available - clients searching for your salon on Google are ready to book right now.</p>
 
 <h3>WhatsApp Booking</h3>
-<p>WhatsApp is the dominant messaging platform in many markets, especially the Middle East and South Asia. With AI-powered booking through WhatsApp, clients simply send a message like &ldquo;I want a haircut on Thursday afternoon&rdquo; and the AI handles the rest &mdash; checking availability, suggesting options, and confirming the booking conversationally.</p>
+<p>WhatsApp is the dominant messaging platform in many markets, especially the Middle East and South Asia. With AI-powered booking through WhatsApp, clients simply send a message like &ldquo;I want a haircut on Thursday afternoon&rdquo; and the AI handles the rest - checking availability, suggesting options, and confirming the booking conversationally.</p>
 
 <h3>Direct Booking Link</h3>
 <p>Create a short, memorable booking URL (e.g., book.yoursalon.com) that you include in every digital touchpoint: social media bios, email signatures, text message campaigns, and digital business cards. The fewer taps between intent and booking, the higher your conversion rate.</p>
@@ -754,7 +754,7 @@ const mobileBookingArticle: LocalBlogPost = {
 <li><strong>Desktop-first booking pages.</strong> If your booking page was designed for desktop and &ldquo;works on mobile,&rdquo; it is not mobile-optimized. Mobile-first means designed for phones first, then adapted for larger screens.</li>
 <li><strong>Too many steps.</strong> If the booking takes more than 4 taps to complete, you are losing clients at each step. Audit your booking flow and eliminate every unnecessary field and page.</li>
 <li><strong>Slow-loading images.</strong> A beautiful gallery is great on desktop but deadly on mobile if it slows down the booking page. Optimize images aggressively or defer them until after the booking is complete.</li>
-<li><strong>No one-tap rebooking.</strong> Returning clients should be able to rebook their usual service with their usual stylist in two taps maximum. This is where most booking systems fail &mdash; they treat every booking as if it is the client's first.</li>
+<li><strong>No one-tap rebooking.</strong> Returning clients should be able to rebook their usual service with their usual stylist in two taps maximum. This is where most booking systems fail - they treat every booking as if it is the client's first.</li>
 <li><strong>Unclear pricing.</strong> If a client has to wonder &ldquo;how much will this cost?&rdquo; at any point in the mobile booking flow, you risk losing them. Show prices alongside every service.</li>
 </ul>
 
@@ -784,10 +784,10 @@ const mobileBookingArticle: LocalBlogPost = {
 <p>A mobile-optimized booking page is sufficient for most salons. Clients are not going to download an app for every salon they visit. What matters is that your booking page loads fast, looks great, and works flawlessly on mobile browsers. Platforms like The Daisy provide mobile-optimized booking pages that perform like an app without requiring a download.</p>
 
 <h3>How do I get clients to switch from calling to booking online?</h3>
-<p>Make online booking easier and faster than calling. Add a &ldquo;Book Online&rdquo; prompt to your voicemail, train your front desk to mention online booking, and offer a small first-booking incentive. Within 2-3 months, most clients will prefer the convenience of mobile booking. Do not remove phone booking &mdash; just make online the path of least resistance.</p>
+<p>Make online booking easier and faster than calling. Add a &ldquo;Book Online&rdquo; prompt to your voicemail, train your front desk to mention online booking, and offer a small first-booking incentive. Within 2-3 months, most clients will prefer the convenience of mobile booking. Do not remove phone booking - just make online the path of least resistance.</p>
 
 <h3>What if my older clients are not comfortable with mobile booking?</h3>
-<p>Most clients over 50 are comfortable booking on their phones &mdash; they use banking apps, order food, and buy products online. The barrier is not ability; it is awareness. A personal invitation (&ldquo;Next time, you can book right from your phone &mdash; let me show you how easy it is&rdquo;) converts most hesitant clients after one demonstration.</p>
+<p>Most clients over 50 are comfortable booking on their phones - they use banking apps, order food, and buy products online. The barrier is not ability; it is awareness. A personal invitation (&ldquo;Next time, you can book right from your phone - let me show you how easy it is&rdquo;) converts most hesitant clients after one demonstration.</p>
 
 <h3>Should I accept bookings through all channels or limit to one?</h3>
 <p>Accept bookings from every channel where your clients already spend time. The key is that all channels feed into one unified calendar so you never double-book. A platform like The Daisy consolidates bookings from your website, Instagram, Google, WhatsApp, and phone into a single real-time schedule.</p>
@@ -839,14 +839,14 @@ const recurringAppointmentArticle: LocalBlogPost = {
       'How to set up and manage recurring appointment scheduling for your salon. Learn how standing bookings increase retention, stabilise revenue, and reduce the administrative burden of rebooking loyal clients.',
     aboutPosts: `
 <h2>Recurring Appointments Turn Occasional Clients Into Predictable Revenue</h2>
-<p>Recurring appointment scheduling lets your clients book a standing appointment &mdash; the same service, same stylist, same day and time &mdash; on an automatic cycle. Instead of rebooking after every visit, the next appointment is already on the calendar. For salons, this transforms unpredictable bookings into reliable, foreseeable revenue. For clients, it eliminates the friction of remembering to rebook and the risk of losing their preferred slot.</p>
+<p>Recurring appointment scheduling lets your clients book a standing appointment - the same service, same stylist, same day and time - on an automatic cycle. Instead of rebooking after every visit, the next appointment is already on the calendar. For salons, this transforms unpredictable bookings into reliable, foreseeable revenue. For clients, it eliminates the friction of remembering to rebook and the risk of losing their preferred slot.</p>
 <p>If your <a href="/en/beauty-booking-system">beauty booking system</a> supports recurring scheduling, you are sitting on one of the most powerful retention tools available. If it does not, you are losing clients to competitors who make rebooking effortless.</p>
 
 <h2>Why Recurring Scheduling Matters for Salons</h2>
 <p>The beauty industry runs on repeat visits. Hair colour needs refreshing every 4-6 weeks. Regular trims happen every 6-8 weeks. Facial treatments, nail maintenance, and brow shaping all follow predictable cycles. Yet most salons treat every booking as a one-time event, relying on clients to remember, call, and hope their preferred slot is available.</p>
 <p>Recurring scheduling solves this by locking in the pattern. The benefits are substantial:</p>
 <ul>
-<li><strong>Higher client retention:</strong> Clients with recurring appointments are 60-70% more likely to remain active after 12 months compared to clients who rebook manually each time. The appointment is already there &mdash; inertia works in your favour.</li>
+<li><strong>Higher client retention:</strong> Clients with recurring appointments are 60-70% more likely to remain active after 12 months compared to clients who rebook manually each time. The appointment is already there - inertia works in your favour.</li>
 <li><strong>Predictable revenue:</strong> When you know that 40% of next month's slots are already booked by recurring clients, you can forecast revenue with confidence, make staffing decisions based on data, and plan marketing to fill the remaining capacity.</li>
 <li><strong>Reduced no-shows:</strong> Recurring clients have a significantly lower no-show rate because the appointment is part of their routine, not something they scheduled impulsively.</li>
 <li><strong>Less administrative work:</strong> Every recurring appointment that auto-schedules is a rebooking conversation your front desk does not have to initiate. Multiply that by dozens of recurring clients and the time savings are substantial.</li>
@@ -866,7 +866,7 @@ const recurringAppointmentArticle: LocalBlogPost = {
 <li><strong>Beard trims and men's grooming:</strong> 2-4 week cycle</li>
 <li><strong>Eyelash extensions (refills):</strong> 2-3 week cycle</li>
 </ul>
-<p>Services that are booked sporadically &mdash; like one-time bridal styling or special-occasion makeup &mdash; are not candidates for recurring scheduling.</p>
+<p>Services that are booked sporadically - like one-time bridal styling or special-occasion makeup - are not candidates for recurring scheduling.</p>
 
 <h3>Step 2: Configure Recurring Options in Your Booking System</h3>
 <p>Your <a href="/en/features/business/booking-management">booking management platform</a> should support these recurring settings:</p>
@@ -884,7 +884,7 @@ const recurringAppointmentArticle: LocalBlogPost = {
 <li><em>"Your colour looks amazing. Would you like me to book you in for the same time in 5 weeks so you never have to think about scheduling?"</em></li>
 <li><em>"I have your usual slot open in 4 weeks. Want me to set it up as a standing appointment so it is always reserved for you?"</em></li>
 </ul>
-<p>Frame recurring booking as a convenience for the client &mdash; not a sales tactic for the salon. The client benefits from guaranteed availability with their preferred stylist at their preferred time.</p>
+<p>Frame recurring booking as a convenience for the client - not a sales tactic for the salon. The client benefits from guaranteed availability with their preferred stylist at their preferred time.</p>
 
 <h3>Step 4: Manage Cancellations and Changes Gracefully</h3>
 <p>Recurring appointments need flexibility to work long-term:</p>
@@ -892,7 +892,7 @@ const recurringAppointmentArticle: LocalBlogPost = {
 <li><strong>Single-instance changes:</strong> Clients should be able to skip or reschedule one occurrence without affecting the rest of the series. "I cannot make the 15th, but keep the 12th of next month" should be easy.</li>
 <li><strong>Series modifications:</strong> Allow changes to the frequency, time, or service for all future occurrences. Client schedules change; your software should accommodate this without requiring a new series.</li>
 <li><strong>Cancellation policies:</strong> Apply your standard cancellation policy to each recurring instance. If a recurring client cancels within your cancellation window, the same deposit or fee policy applies.</li>
-<li><strong>Automatic gap filling:</strong> When a recurring client skips or cancels one occurrence, that slot should immediately become available for other clients &mdash; ideally with waitlist notification if anyone is waiting for that time.</li>
+<li><strong>Automatic gap filling:</strong> When a recurring client skips or cancels one occurrence, that slot should immediately become available for other clients - ideally with waitlist notification if anyone is waiting for that time.</li>
 </ul>
 
 <h2>Recurring Scheduling Best Practices</h2>

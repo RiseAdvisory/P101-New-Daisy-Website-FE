@@ -49,6 +49,18 @@ function setLocaleCookie(
   return response;
 }
 
+function setGeoCookie(response: NextResponse, request: NextRequest): NextResponse {
+  const country = request.headers.get('x-vercel-ip-country');
+  if (country) {
+    response.cookies.set('geo-country', country, {
+      path: '/',
+      maxAge: 86400, // 24 hours
+      sameSite: 'lax',
+    });
+  }
+  return response;
+}
+
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
@@ -89,9 +101,12 @@ export async function middleware(request: NextRequest) {
               const locale = getPreferredLocale(request);
               url.pathname = `/${locale}${url.pathname}`;
             }
-            return setLocaleCookie(
-              NextResponse.redirect(url, 301),
-              getPreferredLocale(request),
+            return setGeoCookie(
+              setLocaleCookie(
+                NextResponse.redirect(url, 301),
+                getPreferredLocale(request),
+              ),
+              request,
             );
           }
           break;
@@ -118,13 +133,19 @@ export async function middleware(request: NextRequest) {
     if (redirectTo) {
       const newUrl = request.nextUrl.clone();
       newUrl.pathname = `/${urlLocale}${redirectTo}`;
-      return setLocaleCookie(NextResponse.redirect(newUrl, 301), urlLocale);
+      return setGeoCookie(
+        setLocaleCookie(NextResponse.redirect(newUrl, 301), urlLocale),
+        request,
+      );
     }
 
-    return setLocaleCookie(NextResponse.next(), urlLocale);
+    return setGeoCookie(
+      setLocaleCookie(NextResponse.next(), urlLocale),
+      request,
+    );
   }
 
-  // URL does NOT have locale prefix — 301 redirect to add it
+  // URL does NOT have locale prefix - 301 redirect to add it
   const locale = getPreferredLocale(request);
   const newUrl = request.nextUrl.clone();
 
@@ -135,7 +156,10 @@ export async function middleware(request: NextRequest) {
     newUrl.pathname = `/${locale}${pathname}`;
   }
 
-  return setLocaleCookie(NextResponse.redirect(newUrl, 301), locale);
+  return setGeoCookie(
+    setLocaleCookie(NextResponse.redirect(newUrl, 301), locale),
+    request,
+  );
 }
 
 export const config = {
