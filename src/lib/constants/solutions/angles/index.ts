@@ -17,16 +17,7 @@ export const VALID_PERSONAS = ['business', 'professional'] as const;
 export type AngleSlug = (typeof VALID_ANGLE_SLUGS)[number];
 export type AnglePersona = (typeof VALID_PERSONAS)[number];
 
-// Slug namespace collision guard
-const solutionSlugs = getAllSolutionSlugs();
-const collisions = VALID_ANGLE_SLUGS.filter((s) => solutionSlugs.includes(s));
-if (collisions.length > 0) {
-  throw new Error(
-    `Angle slugs collide with solution slugs: ${collisions.join(', ')}. These namespaces must not overlap.`,
-  );
-}
-
-// Registry — populated by angle data files
+// Registry — populated by angle data files via registerAngle()
 const angleRegistry = new Map<
   string,
   Record<AnglePersona, I18nContent<LandingPageContent>>
@@ -64,11 +55,25 @@ export function getAllAngleParams(): Array<{ slug: string; persona: string }> {
   return params;
 }
 
-// Import all angle data files to trigger registration
-import './ai-receptionist';
-import './unified-inbox';
-import './brand-control';
-import './smart-scheduling';
-import './service-portfolio';
-import './ai-marketing';
-import './all-in-one';
+// Load all angle data files to trigger registration.
+// Using require() instead of import to avoid hoisting issues:
+// static imports are hoisted before variable declarations, causing
+// registerAngle() calls to fail because angleRegistry isn't initialized yet.
+/* eslint-disable @typescript-eslint/no-require-imports */
+require('./ai-receptionist');
+require('./unified-inbox');
+require('./brand-control');
+require('./smart-scheduling');
+require('./service-portfolio');
+require('./ai-marketing');
+require('./all-in-one');
+/* eslint-enable @typescript-eslint/no-require-imports */
+
+// Slug namespace collision guard
+const solutionSlugs = getAllSolutionSlugs();
+const collisions = VALID_ANGLE_SLUGS.filter((s) => solutionSlugs.includes(s));
+if (collisions.length > 0) {
+  throw new Error(
+    `Angle slugs collide with solution slugs: ${collisions.join(', ')}. These namespaces must not overlap.`,
+  );
+}
