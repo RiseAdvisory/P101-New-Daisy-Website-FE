@@ -62,17 +62,17 @@ const howToStartBeautyBusinessArticle: LocalBlogPost = {
 <p>Describe your ideal client in detail: demographics (age, income, location), psychographics (values, lifestyle, beauty priorities), and behaviour (how they discover salons, what they spend, how often they visit). A business designed for "busy professional women aged 30-50 who prioritise convenience and quality" makes different decisions than one targeting "trend-conscious Gen Z clients looking for creative colour work."</p>
 
 <h3>Identify Your Competitive Advantage</h3>
-<p>What will make clients choose you over existing options? Common differentiators include: specialisation in an underserved niche, superior client experience, convenient location, innovative services or techniques, technology-forward operations, or competitive pricing in a premium market. Your competitive advantage should be defensible &mdash; something competitors cannot easily replicate.</p>
+<p>What will make clients choose you over existing options? Common differentiators include: specialisation in an underserved niche, superior client experience, convenient location, innovative services or techniques, technology-forward operations, or competitive pricing in a premium market. Your competitive advantage should be defensible - something competitors cannot easily replicate.</p>
 
 <h2>Step 2: Create a Business Plan</h2>
-<p>A business plan is not just for investors &mdash; it is your operational roadmap. For a detailed template, see our <a href="/en/resources/blog/businesses/salon-business-plan-template">salon business plan guide</a>.</p>
+<p>A business plan is not just for investors - it is your operational roadmap. For a detailed template, see our <a href="/en/resources/blog/businesses/salon-business-plan-template">salon business plan guide</a>.</p>
 
 <h3>Financial Projections</h3>
 <p>Map out your finances for the first 24 months:</p>
 <ul>
 <li><strong>Startup costs:</strong> Lease deposit, build-out, equipment, furniture, initial inventory, technology setup, licensing, insurance, and marketing launch budget.</li>
 <li><strong>Monthly operating costs:</strong> Rent, utilities, product supplies, staff wages and commissions, insurance, marketing, technology subscriptions, and miscellaneous expenses.</li>
-<li><strong>Revenue projections:</strong> Based on the number of service stations, average service price, expected utilisation rate, and ramp-up timeline. Be conservative &mdash; most new salons take 6-12 months to reach break-even.</li>
+<li><strong>Revenue projections:</strong> Based on the number of service stations, average service price, expected utilisation rate, and ramp-up timeline. Be conservative - most new salons take 6-12 months to reach break-even.</li>
 <li><strong>Break-even analysis:</strong> How many appointments per week do you need to cover all costs? This is your critical survival metric in the early months.</li>
 </ul>
 
@@ -104,10 +104,10 @@ const howToStartBeautyBusinessArticle: LocalBlogPost = {
 </ul>
 
 <h3>Build-Out Essentials</h3>
-<p>Budget for professional build-out: plumbing for wash stations, electrical for styling tools and lighting, ventilation for chemical services, reception area, retail display, storage, and a break room. Invest in lighting &mdash; good lighting is the single most impactful design element in a salon. Clients need to see accurate colour, and natural-mimicking LED lighting creates the best client experience.</p>
+<p>Budget for professional build-out: plumbing for wash stations, electrical for styling tools and lighting, ventilation for chemical services, reception area, retail display, storage, and a break room. Invest in lighting - good lighting is the single most impactful design element in a salon. Clients need to see accurate colour, and natural-mimicking LED lighting creates the best client experience.</p>
 
 <h2>Step 5: Set Up Your Technology Stack</h2>
-<p>Technology is not an afterthought &mdash; it is the operational backbone of a modern beauty business. Set up your systems before you open, not after.</p>
+<p>Technology is not an afterthought - it is the operational backbone of a modern beauty business. Set up your systems before you open, not after.</p>
 <ul>
 <li><strong>Salon management platform:</strong> Booking, client management, payment processing, staff scheduling, and analytics in one system. <a href="/en/features/business/booking-management">The Daisy</a> is built specifically for beauty businesses, providing all of these capabilities with AI-powered features that automate routine tasks.</li>
 <li><strong>Payment processing:</strong> Accept cards, contactless payments, and digital wallets. Integrated payment processing through your salon platform eliminates the need for a separate POS terminal.</li>
@@ -211,7 +211,7 @@ const salonPricingStrategyArticle: LocalBlogPost = {
 <h3>Direct Costs Per Service</h3>
 <p>For each service on your menu, calculate:</p>
 <ul>
-<li><strong>Product cost:</strong> The exact amount of product (colour, treatment, styling products) used per service. Measure this precisely &mdash; colour services often use more product than salon owners estimate.</li>
+<li><strong>Product cost:</strong> The exact amount of product (colour, treatment, styling products) used per service. Measure this precisely - colour services often use more product than salon owners estimate.</li>
 <li><strong>Labour cost:</strong> The stylist's pay for the time spent on the service, including consultation, service delivery, and cleanup. If your stylist earns $25/hour and a colour service takes 2.5 hours, the labour cost is $62.50.</li>
 <li><strong>Overhead allocation:</strong> Divide your monthly fixed costs (rent, utilities, insurance, technology) by the total number of service hours available per month. This gives you a per-hour overhead rate. A salon with $15,000 in monthly overhead and 600 available service hours has an overhead rate of $25/hour.</li>
 </ul>
@@ -231,7 +231,7 @@ const salonPricingStrategyArticle: LocalBlogPost = {
 <p><strong>Best for:</strong> Signature services, specialist treatments, and senior/master-level stylists.</p>
 
 <h3>Competitive Pricing</h3>
-<p>Price relative to competitors in your market. This does not mean matching the lowest price &mdash; it means positioning your price where it reflects your value proposition. A premium salon should price 20-40% above the market average. A value-oriented salon should price at or slightly below average while controlling costs to maintain margins.</p>
+<p>Price relative to competitors in your market. This does not mean matching the lowest price - it means positioning your price where it reflects your value proposition. A premium salon should price 20-40% above the market average. A value-oriented salon should price at or slightly below average while controlling costs to maintain margins.</p>
 <p><strong>Best for:</strong> Determining your overall price positioning in the market.</p>
 
 <h2>Menu Engineering for Maximum Revenue</h2>
@@ -250,7 +250,7 @@ const salonPricingStrategyArticle: LocalBlogPost = {
 <p>Create packages that combine services at a perceived discount while maintaining or improving your per-hour profitability. A "Complete Colour Experience" that bundles colour, treatment, and blowout at a $20 discount off individual pricing increases the average ticket while the client feels they are getting a deal. The key: the bundled price should still exceed your per-hour profitability target.</p>
 
 <h3>Add-On Services</h3>
-<p>Add-on services (treatments, glosses, conditioning treatments) have the highest profit margins because they use the chair time already allocated to the primary service. A $25 deep conditioning add-on during a colour service might cost $3 in product and 5 minutes of additional time &mdash; almost pure profit. Train your team to recommend relevant add-ons for every service.</p>
+<p>Add-on services (treatments, glosses, conditioning treatments) have the highest profit margins because they use the chair time already allocated to the primary service. A $25 deep conditioning add-on during a colour service might cost $3 in product and 5 minutes of additional time - almost pure profit. Train your team to recommend relevant add-ons for every service.</p>
 
 <h2>Tiered Pricing by Stylist Level</h2>
 <p>Most successful multi-stylist salons use tiered pricing based on experience and demand:</p>
@@ -278,7 +278,7 @@ const salonPricingStrategyArticle: LocalBlogPost = {
 <li>Give 4-6 weeks advance notice.</li>
 <li>Communicate via email and in-salon signage.</li>
 <li>Frame positively: "To continue investing in the best products, training, and experience for you, our prices will be updated on [date]."</li>
-<li>Apply to new bookings after the effective date &mdash; honour existing appointments at current prices.</li>
+<li>Apply to new bookings after the effective date - honour existing appointments at current prices.</li>
 <li>Expect to lose 5-10% of clients. This is normal and healthy. The increased revenue from higher prices typically more than compensates for the volume loss.</li>
 </ol>
 
@@ -362,8 +362,8 @@ const increaseSalonRevenueArticle: LocalBlogPost = {
 <p>Quick action: raise prices 5-10% on your most popular services. Announce the increase 4 weeks in advance. Expected impact: 5-10% revenue increase with minimal client loss (typically less than 5% of clients leave after a moderate price increase).</p>
 
 <h2>2. Increase Average Ticket Through Add-Ons</h2>
-<p>Add-on services are the highest-margin revenue category in any salon. A $30 deep conditioning treatment during a colour service costs $3-$5 in product and 5-10 minutes of time &mdash; virtually pure profit.</p>
-<p>Implementation: identify 3-5 add-on services relevant to your most popular services. Train your team to recommend one add-on to every client using a consultative approach: "Your hair is showing some dryness &mdash; a bonding treatment during your colour will strengthen it and make the colour last longer. It adds 10 minutes and $35." Track add-on attachment rate and set a team target of 30-40%.</p>
+<p>Add-on services are the highest-margin revenue category in any salon. A $30 deep conditioning treatment during a colour service costs $3-$5 in product and 5-10 minutes of time - virtually pure profit.</p>
+<p>Implementation: identify 3-5 add-on services relevant to your most popular services. Train your team to recommend one add-on to every client using a consultative approach: "Your hair is showing some dryness - a bonding treatment during your colour will strengthen it and make the colour last longer. It adds 10 minutes and $35." Track add-on attachment rate and set a team target of 30-40%.</p>
 
 <h2>3. Reduce No-Shows and Late Cancellations</h2>
 <p>No-shows cost the average salon $10,000-$30,000 per year in lost revenue. Every empty chair is revenue that can never be recovered.</p>
@@ -377,7 +377,7 @@ const increaseSalonRevenueArticle: LocalBlogPost = {
 <p><a href="/en/features/business/booking-management">The Daisy's booking system</a> includes automated reminders, card-on-file capability, and an intelligent waitlist that minimises revenue lost to cancellations.</p>
 
 <h2>4. Maximise Team Utilisation</h2>
-<p>Team utilisation rate &mdash; the percentage of available appointment time that is actually booked &mdash; is the core efficiency metric for any service business. The industry average is 65-70%. Top-performing salons achieve 80-85%.</p>
+<p>Team utilisation rate - the percentage of available appointment time that is actually booked - is the core efficiency metric for any service business. The industry average is 65-70%. Top-performing salons achieve 80-85%.</p>
 <p>Tactics to improve utilisation:</p>
 <ul>
 <li><strong>Fill slow periods:</strong> Identify your lowest-utilisation time slots and offer targeted promotions: "Tuesday morning blowout special" or "Wednesday afternoon colour deal."</li>
@@ -387,12 +387,12 @@ const increaseSalonRevenueArticle: LocalBlogPost = {
 </ul>
 
 <h2>5. Launch a Membership or Subscription Programme</h2>
-<p>Memberships create predictable recurring revenue &mdash; the holy grail of financial planning. A "Blowout Club" at $99/month for two blowouts plus 15% off all other services guarantees revenue regardless of seasonal fluctuations.</p>
+<p>Memberships create predictable recurring revenue - the holy grail of financial planning. A "Blowout Club" at $99/month for two blowouts plus 15% off all other services guarantees revenue regardless of seasonal fluctuations.</p>
 <p>See our detailed <a href="/en/resources/blog/businesses/salon-membership-subscription-models">membership and subscription models guide</a> for programme design, pricing, and launch strategies.</p>
 
 <h2>6. Build a Retail Revenue Stream</h2>
 <p>Professional hair and beauty products carry 40-50% profit margins and generate revenue with zero additional chair time. Yet most salons capture less than 10% of the retail potential from their client base.</p>
-<p>Keys to retail success: display products at every station (not just at reception), train stylists to use and discuss products during services, and create a recommendation culture: "I used [product] today and it is perfect for your hair type &mdash; would you like to take one home?" Set a team retail target of $5-$10 per service client.</p>
+<p>Keys to retail success: display products at every station (not just at reception), train stylists to use and discuss products during services, and create a recommendation culture: "I used [product] today and it is perfect for your hair type - would you like to take one home?" Set a team retail target of $5-$10 per service client.</p>
 
 <h2>7. Implement a Client Loyalty Programme</h2>
 <p>A loyalty programme with cashback or rewards increases visit frequency by 20-30% and average transaction value by 15-25%. Clients with an accumulated rewards balance have a financial incentive to return rather than trying a competitor.</p>
@@ -424,16 +424,16 @@ const increaseSalonRevenueArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>Which revenue strategy should I implement first?</h3>
-<p>Start with no-show reduction and pricing optimisation &mdash; these require the least effort and deliver the fastest results. Automated booking reminders can be activated immediately and typically reduce no-shows by 30-40% within the first month. A 5-10% price increase on your most popular services takes effect immediately with minimal implementation. Once these quick wins are in place, move to add-on training, loyalty programmes, and utilisation optimisation for compounding gains.</p>
+<p>Start with no-show reduction and pricing optimisation - these require the least effort and deliver the fastest results. Automated booking reminders can be activated immediately and typically reduce no-shows by 30-40% within the first month. A 5-10% price increase on your most popular services takes effect immediately with minimal implementation. Once these quick wins are in place, move to add-on training, loyalty programmes, and utilisation optimisation for compounding gains.</p>
 
 <h3>How much can these strategies realistically increase my salon's revenue?</h3>
-<p>Individual results vary, but implementing all 10 strategies typically produces a 30-50% revenue increase over 6-12 months. The breakdown: pricing optimisation (5-10%), add-on upselling (8-12%), no-show reduction (5-8%), utilisation improvement (5-10%), loyalty and retention improvements (5-10%), and retail growth (3-5%). These gains compound &mdash; a client who visits more often, spends more per visit, and buys retail products contributes multiplicatively to overall revenue.</p>
+<p>Individual results vary, but implementing all 10 strategies typically produces a 30-50% revenue increase over 6-12 months. The breakdown: pricing optimisation (5-10%), add-on upselling (8-12%), no-show reduction (5-8%), utilisation improvement (5-10%), loyalty and retention improvements (5-10%), and retail growth (3-5%). These gains compound - a client who visits more often, spends more per visit, and buys retail products contributes multiplicatively to overall revenue.</p>
 
 <h3>Will raising prices cause me to lose clients?</h3>
-<p>A moderate price increase (5-10%) typically results in losing 3-5% of clients &mdash; almost always the most price-sensitive clients who generate the least profit. The revenue increase from higher prices more than compensates for this small volume loss. For example, a salon losing 5% of clients but charging 10% more generates approximately 4.5% more revenue with fewer appointments to deliver, improving both profitability and team workload.</p>
+<p>A moderate price increase (5-10%) typically results in losing 3-5% of clients - almost always the most price-sensitive clients who generate the least profit. The revenue increase from higher prices more than compensates for this small volume loss. For example, a salon losing 5% of clients but charging 10% more generates approximately 4.5% more revenue with fewer appointments to deliver, improving both profitability and team workload.</p>
 
 <h3>How do I get my team to upsell add-on services without being pushy?</h3>
-<p>Frame upselling as professional recommendation, not sales. Train your team to identify genuine needs during the consultation: "I notice some dryness in your mid-lengths &mdash; a bonding treatment would restore the strength and make your colour last 2-3 weeks longer." When the recommendation is authentic and clearly benefits the client, it does not feel pushy. Set team targets for add-on attachment rate (30-40% is a realistic goal) and recognise top performers.</p>
+<p>Frame upselling as professional recommendation, not sales. Train your team to identify genuine needs during the consultation: "I notice some dryness in your mid-lengths - a bonding treatment would restore the strength and make your colour last 2-3 weeks longer." When the recommendation is authentic and clearly benefits the client, it does not feel pushy. Set team targets for add-on attachment rate (30-40% is a realistic goal) and recognise top performers.</p>
 `,
     metaTitle: 'Increase Salon Revenue: 10 Strategies | Daisy',
     metaDescription:
@@ -481,7 +481,7 @@ const expandingSalonLocationsArticle: LocalBlogPost = {
       'A strategic guide to expanding your salon business with additional locations. Covers readiness assessment, location selection, operational systems, staffing, financing, and the technology infrastructure needed to manage multiple branches successfully.',
     aboutPosts: `
 <h2>Expansion Is the Natural Next Step for Successful Salons</h2>
-<p>When your salon is consistently profitable, your team is strong, and client demand exceeds your capacity, opening a second location becomes a logical growth strategy. Multi-location beauty businesses benefit from brand leverage, operational efficiency, and diversified revenue. But the transition from single to multi-location is the most critical inflection point in a salon's lifecycle &mdash; get it right and you build an enterprise; get it wrong and you risk both locations.</p>
+<p>When your salon is consistently profitable, your team is strong, and client demand exceeds your capacity, opening a second location becomes a logical growth strategy. Multi-location beauty businesses benefit from brand leverage, operational efficiency, and diversified revenue. But the transition from single to multi-location is the most critical inflection point in a salon's lifecycle - get it right and you build an enterprise; get it wrong and you risk both locations.</p>
 <p>This guide provides the strategic framework for adding locations as part of your <a href="/en/resources/blog/businesses/beauty-business-growth-guide">beauty business growth plan</a>. It covers every stage from readiness assessment to managing a multi-branch operation.</p>
 
 <h2>Assessing Expansion Readiness</h2>
@@ -651,7 +651,7 @@ const salonMembershipModelsArticle: LocalBlogPost = {
 <h3>Terms and Conditions</h3>
 <ul>
 <li><strong>Minimum commitment:</strong> A 3-month minimum commitment protects your investment in acquiring and onboarding the member. After the minimum, allow month-to-month continuation.</li>
-<li><strong>Cancellation policy:</strong> Require 30 days written notice to cancel. Make the process easy &mdash; difficult cancellation creates resentment, not retention.</li>
+<li><strong>Cancellation policy:</strong> Require 30 days written notice to cancel. Make the process easy - difficult cancellation creates resentment, not retention.</li>
 <li><strong>Unused benefits:</strong> Decide whether unused monthly benefits roll over or expire. Limited rollover (up to one month) creates urgency without feeling punitive.</li>
 <li><strong>Pause option:</strong> Allow members to pause for 1 month per year (e.g., for travel). This prevents cancellations due to temporary absence.</li>
 </ul>
@@ -685,10 +685,10 @@ const salonMembershipModelsArticle: LocalBlogPost = {
 <h2>Retaining Members Long-Term</h2>
 <p>Acquisition gets members in the door; retention determines your programme's profitability. Focus on:</p>
 <ul>
-<li><strong>Consistent value delivery:</strong> Members must feel they are getting their money's worth every month. If utilisation drops, proactively reach out: "You have an unused treatment this month &mdash; let us help you book."</li>
+<li><strong>Consistent value delivery:</strong> Members must feel they are getting their money's worth every month. If utilisation drops, proactively reach out: "You have an unused treatment this month - let us help you book."</li>
 <li><strong>Exclusive experiences:</strong> Members-only events, early access to new services, and surprise perks create emotional loyalty beyond transactional value.</li>
 <li><strong>Personal recognition:</strong> Acknowledge membership milestones: 6-month anniversary, 1-year anniversary, tier upgrades.</li>
-<li><strong>Seamless experience:</strong> Membership benefits should be applied automatically at checkout &mdash; members should never have to ask for their discount or remind staff of their perks.</li>
+<li><strong>Seamless experience:</strong> Membership benefits should be applied automatically at checkout - members should never have to ask for their discount or remind staff of their perks.</li>
 </ul>
 
 <h2>Financial Impact and Measurement</h2>
@@ -762,7 +762,7 @@ const buildingFreelanceBeautyBusinessArticle: LocalBlogPost = {
       'A complete guide to building a freelance beauty business from zero. Covers business setup, financial planning, client acquisition, pricing, legal requirements, workspace options, and growth strategies for independent beauty professionals.',
     aboutPosts: `
 <h2>The Freelance Beauty Economy Is Booming</h2>
-<p>The shift toward independent beauty work is accelerating. More professionals than ever are leaving traditional employment to build their own beauty businesses &mdash; as chair renters, home studio operators, or mobile service providers. The appeal is clear: control over your schedule, your clients, your pricing, and your income. But freelance success requires more than technical skill; it demands business acumen that cosmetology school does not teach.</p>
+<p>The shift toward independent beauty work is accelerating. More professionals than ever are leaving traditional employment to build their own beauty businesses - as chair renters, home studio operators, or mobile service providers. The appeal is clear: control over your schedule, your clients, your pricing, and your income. But freelance success requires more than technical skill; it demands business acumen that cosmetology school does not teach.</p>
 <p>This guide provides the complete <a href="/en/resources/blog/businesses/beauty-business-growth-guide">business growth roadmap</a> for beauty professionals who want to go independent. Whether you are just starting to consider freelance work or you are ready to launch this week, these are the steps that separate thriving independents from those who return to employment within a year.</p>
 
 <h2>Step 1: Choose Your Business Model</h2>
@@ -807,10 +807,10 @@ const buildingFreelanceBeautyBusinessArticle: LocalBlogPost = {
 <p>Add up all business expenses: rent (or vehicle costs for mobile), products, insurance, technology subscriptions, marketing, continuing education, and taxes (set aside 25-30% of income for self-employment taxes). This is your break-even number. Your pricing must cover these costs before generating any income.</p>
 
 <h3>Set Your Target Income</h3>
-<p>Determine the annual income you want to earn, add your annual business expenses, and divide by the number of service hours you plan to work per year. This gives you your required hourly rate. Be realistic about billable hours &mdash; a 40-hour work week typically includes only 25-30 hours of actual client services after accounting for marketing, admin, travel, and breaks.</p>
+<p>Determine the annual income you want to earn, add your annual business expenses, and divide by the number of service hours you plan to work per year. This gives you your required hourly rate. Be realistic about billable hours - a 40-hour work week typically includes only 25-30 hours of actual client services after accounting for marketing, admin, travel, and breaks.</p>
 
 <h3>Research Market Rates</h3>
-<p>Research what other independents and salons charge in your area for comparable services and experience levels. Price yourself within the competitive range, leaning toward the higher end if your skills and experience justify it. Underpricing does not attract more clients &mdash; it attracts the wrong clients and devalues your work.</p>
+<p>Research what other independents and salons charge in your area for comparable services and experience levels. Price yourself within the competitive range, leaning toward the higher end if your skills and experience justify it. Underpricing does not attract more clients - it attracts the wrong clients and devalues your work.</p>
 
 <h2>Step 4: Build Your Client Base</h2>
 <p>Client acquisition is the make-or-break challenge for freelance beauty professionals. You do not have a salon's brand, location, or walk-in traffic working for you. Every client must be earned through your personal marketing efforts.</p>
@@ -833,7 +833,7 @@ const buildingFreelanceBeautyBusinessArticle: LocalBlogPost = {
 <p>As a freelancer, you are the stylist, receptionist, marketer, accountant, and manager. Simplify operations with the right systems.</p>
 
 <h3>Booking and Scheduling</h3>
-<p>Use a professional booking platform &mdash; not WhatsApp messages and mental notes. <a href="/en/features/professional/booking-management">The Daisy</a> provides online booking, automated reminders, client management, and payment processing in one system designed for independent beauty professionals. Automated reminders alone reduce no-shows by 30-40%, directly protecting your income.</p>
+<p>Use a professional booking platform - not WhatsApp messages and mental notes. <a href="/en/features/professional/booking-management">The Daisy</a> provides online booking, automated reminders, client management, and payment processing in one system designed for independent beauty professionals. Automated reminders alone reduce no-shows by 30-40%, directly protecting your income.</p>
 
 <h3>Financial Tracking</h3>
 <p>Track every expense and every dollar of income from day one. Use accounting software or, at minimum, a spreadsheet that categorises expenses by type (product, rent, marketing, insurance, etc.). Review your finances monthly. <a href="/en/features/professional/analytics-reports">The Daisy's professional analytics</a> track income automatically from platform bookings and provide earnings reports without manual entry.</p>
@@ -856,7 +856,7 @@ const buildingFreelanceBeautyBusinessArticle: LocalBlogPost = {
 <li><strong>Underpricing to fill your calendar:</strong> A full calendar at unsustainable prices leads to burnout and financial stress. Price for profitability from day one.</li>
 <li><strong>Neglecting the business side:</strong> Great technical skills do not compensate for poor financial management, inconsistent marketing, or neglected legal requirements.</li>
 <li><strong>Not saving for taxes:</strong> The self-employment tax surprise is one of the top reasons new freelancers struggle financially in their first year.</li>
-<li><strong>Inconsistent marketing:</strong> Marketing is not something you do when you are slow &mdash; it is something you do consistently so you never become slow.</li>
+<li><strong>Inconsistent marketing:</strong> Marketing is not something you do when you are slow - it is something you do consistently so you never become slow.</li>
 <li><strong>Ignoring professional development:</strong> Continuing education in both technical skills and business skills is essential for sustained growth and competitiveness.</li>
 </ul>
 
@@ -920,7 +920,7 @@ const salonBusinessPlanArticle: LocalBlogPost = {
       'Write a comprehensive salon business plan with this step-by-step template. Covers executive summary, market analysis, service offerings, marketing strategy, operations plan, financial projections, and funding preparation for beauty businesses.',
     aboutPosts: `
 <h2>A Business Plan Is Your Salon's Strategic Foundation</h2>
-<p>A salon business plan is not just a document for investors or loan officers &mdash; it is the strategic blueprint that guides every major decision in your beauty business. Salon owners who operate with a written business plan are significantly more likely to achieve their revenue targets, manage cash flow effectively, and make confident growth decisions compared to those who operate without one.</p>
+<p>A salon business plan is not just a document for investors or loan officers - it is the strategic blueprint that guides every major decision in your beauty business. Salon owners who operate with a written business plan are significantly more likely to achieve their revenue targets, manage cash flow effectively, and make confident growth decisions compared to those who operate without one.</p>
 <p>This guide walks you through writing each section of a professional salon business plan as part of your <a href="/en/resources/blog/businesses/beauty-business-growth-guide">beauty business growth strategy</a>. Whether you are launching a new salon, seeking funding for expansion, or simply want to professionalise your existing business, this template provides the structure you need.</p>
 
 <h2>Section 1: Executive Summary</h2>
@@ -1010,13 +1010,13 @@ const salonBusinessPlanArticle: LocalBlogPost = {
 <p>Itemise every startup expense: lease deposit, build-out, equipment, furniture, initial inventory, technology setup, licences, insurance, marketing launch, and working capital reserve.</p>
 
 <h3>Monthly Operating Budget</h3>
-<p>Project monthly expenses for the first 24 months: rent, utilities, payroll, product costs, marketing, technology, insurance, and miscellaneous. Be thorough &mdash; underestimating operating costs is the most common financial planning mistake for new salons.</p>
+<p>Project monthly expenses for the first 24 months: rent, utilities, payroll, product costs, marketing, technology, insurance, and miscellaneous. Be thorough - underestimating operating costs is the most common financial planning mistake for new salons.</p>
 
 <h3>Revenue Projections</h3>
 <p>Project monthly revenue for 24 months based on: number of service stations, average service price, projected utilisation rate (start conservative at 40-50% and ramp to 70-80%), and retail revenue. Show three scenarios: conservative, moderate, and optimistic.</p>
 
 <h3>Break-Even Analysis</h3>
-<p>Calculate the monthly revenue needed to cover all costs. Identify how many appointments per week are required at your average ticket price. This is the most critical number in your entire plan &mdash; it tells you exactly what success looks like in measurable terms.</p>
+<p>Calculate the monthly revenue needed to cover all costs. Identify how many appointments per week are required at your average ticket price. This is the most critical number in your entire plan - it tells you exactly what success looks like in measurable terms.</p>
 
 <h3>Cash Flow Projections</h3>
 <p>Map cash inflows and outflows monthly for 24 months. Identify months where cash flow will be negative and ensure your reserves or credit lines cover those gaps. Many profitable businesses fail because they run out of cash before profitability is reached.</p>

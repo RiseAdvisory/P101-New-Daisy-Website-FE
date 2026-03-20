@@ -81,7 +81,7 @@ export const ProfessionalClient = ({ lang }: { lang: string }) => {
       )}
       <QASection pageType="Professional" titleFraque={pageData.titleFraque} fallbackFaqs={pageData.fallbackFaqs} />
       <BecomeFormPartner
-        defaultType="freelance"
+        defaultType="professional"
         title={formTitle}
         subtitle={formSubtitle}
       />

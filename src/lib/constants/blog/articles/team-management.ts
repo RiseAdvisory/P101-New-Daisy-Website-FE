@@ -42,9 +42,9 @@ const staffSchedulingArticle: LocalBlogPost = {
       'A practical guide to salon staff scheduling that covers shift planning, handling time-off requests, balancing workloads, and using scheduling software to save hours every week while keeping your team happy.',
     aboutPosts: `
 <h2>Why Staff Scheduling Is the Most Underestimated Challenge in Salons</h2>
-<p>Ask any salon owner what takes up the most mental energy each week, and scheduling is almost always in the top three. It sounds straightforward &mdash; assign people to shifts and move on. In reality, salon scheduling is a multi-variable puzzle involving employee preferences, client demand patterns, service specialisations, labour law compliance, and business profitability &mdash; all competing for priority at once.</p>
+<p>Ask any salon owner what takes up the most mental energy each week, and scheduling is almost always in the top three. It sounds straightforward - assign people to shifts and move on. In reality, salon scheduling is a multi-variable puzzle involving employee preferences, client demand patterns, service specialisations, labour law compliance, and business profitability - all competing for priority at once.</p>
 <p>A 2025 survey by the Professional Beauty Association found that salon owners spend an average of 4.5 hours per week on staff scheduling alone. For multi-location operators, that figure climbs to 8-10 hours. That is time taken directly from client service, team development, or business growth. The good news is that modern scheduling tools and proven frameworks can reduce that burden to under 30 minutes per week.</p>
-<p>This guide walks you through a practical, step-by-step approach to building a scheduling system that works for your salon &mdash; regardless of whether you manage 3 stylists or 30.</p>
+<p>This guide walks you through a practical, step-by-step approach to building a scheduling system that works for your salon - regardless of whether you manage 3 stylists or 30.</p>
 
 <h2>Understanding Your Salon's Scheduling Variables</h2>
 <p>Before building any schedule, you need a clear picture of the variables you are working with. Skipping this step is why most scheduling systems break down within weeks.</p>
@@ -56,10 +56,10 @@ const staffSchedulingArticle: LocalBlogPost = {
 <p>Not every team member performs every service. Create a skills matrix that maps each employee to the services they are qualified and confident delivering. This prevents clients from being booked with the wrong stylist and avoids last-minute rearrangements.</p>
 
 <h3>Peak and Off-Peak Demand</h3>
-<p>Analyse your booking data from the last 6-12 months. Identify which days and time slots consistently fill up and which stay empty. Most salons see peak demand on Thursday through Saturday, with Monday and Tuesday running at 40-60% capacity. Your staffing levels should mirror this demand curve &mdash; overstaffing quiet days drains profit, while understaffing busy days loses revenue.</p>
+<p>Analyse your booking data from the last 6-12 months. Identify which days and time slots consistently fill up and which stay empty. Most salons see peak demand on Thursday through Saturday, with Monday and Tuesday running at 40-60% capacity. Your staffing levels should mirror this demand curve - overstaffing quiet days drains profit, while understaffing busy days loses revenue.</p>
 
 <h3>Employee Availability and Preferences</h3>
-<p>Every team member has constraints: school pickups, second commitments, religious observances, or simply a preferred day off. Collect availability in a structured format &mdash; not casual verbal agreements that get forgotten &mdash; and update it monthly.</p>
+<p>Every team member has constraints: school pickups, second commitments, religious observances, or simply a preferred day off. Collect availability in a structured format - not casual verbal agreements that get forgotten - and update it monthly.</p>
 
 <h3>Legal and Contractual Requirements</h3>
 <p>Labour regulations in the GCC and globally set limits on consecutive working hours, mandatory rest periods, and overtime thresholds. Your schedule must comply with these rules. In the UAE, for example, employees cannot work more than 8 hours per day (or 6 hours during Ramadan) without overtime compensation.</p>
@@ -77,13 +77,13 @@ const staffSchedulingArticle: LocalBlogPost = {
 <p>For each remaining open slot, assign staff based on which services are most commonly booked during that time. If your Wednesday afternoons are dominated by hair colour appointments, schedule your strongest colourists. If Friday mornings are popular for bridal prep, assign your most experienced stylists.</p>
 
 <h3>Step 4: Balance Hours Equitably</h3>
-<p>Review the total hours assigned to each team member across the week. Significant imbalances create resentment and turnover. If one stylist consistently gets 45 hours while another gets 28, you will lose the underutilised team member &mdash; or burn out the overutilised one. Aim for variation within 10% of each employee's contracted hours.</p>
+<p>Review the total hours assigned to each team member across the week. Significant imbalances create resentment and turnover. If one stylist consistently gets 45 hours while another gets 28, you will lose the underutilised team member - or burn out the overutilised one. Aim for variation within 10% of each employee's contracted hours.</p>
 
 <h3>Step 5: Build in Buffers</h3>
 <p>Never schedule at 100% capacity. A single late client or service overrun cascades through the entire day. Most successful salons schedule to 85-90% capacity, leaving room for walk-ins, overruns, and breaks.</p>
 
 <h3>Step 6: Publish Early and Consistently</h3>
-<p>Publish your schedule at the same time every week &mdash; ideally 2 weeks in advance. Consistency lets staff plan their personal lives around work, reducing last-minute change requests and call-outs. Platforms like <a href="/en/features/business/team-management">The Daisy</a> let you publish schedules directly to your team's mobile devices with instant notifications.</p>
+<p>Publish your schedule at the same time every week - ideally 2 weeks in advance. Consistency lets staff plan their personal lives around work, reducing last-minute change requests and call-outs. Platforms like <a href="/en/features/business/team-management">The Daisy</a> let you publish schedules directly to your team's mobile devices with instant notifications.</p>
 
 <h2>Handling Time-Off Requests Without Chaos</h2>
 <p>Time-off requests are inevitable and healthy. A clear policy prevents them from derailing your schedule:</p>
@@ -92,7 +92,7 @@ const staffSchedulingArticle: LocalBlogPost = {
 <li><strong>Use a first-come, first-served system.</strong> When multiple staff request the same day off, the earliest request wins. This encourages early planning and removes favouritism.</li>
 <li><strong>Limit simultaneous absences.</strong> Define a maximum number of staff who can be off on the same day. For a 6-person team, allowing more than 1-2 absences on a peak day will hurt service levels.</li>
 <li><strong>Track requests digitally.</strong> Paper notes and verbal agreements get lost. Use scheduling software to log, approve, and track all time-off requests with a clear audit trail.</li>
-<li><strong>Separate emergency absences from planned leave.</strong> Sick days and emergencies need a different process than planned holidays. Have a backup protocol for unexpected absences &mdash; including an on-call list or cross-trained staff who can cover.</li>
+<li><strong>Separate emergency absences from planned leave.</strong> Sick days and emergencies need a different process than planned holidays. Have a backup protocol for unexpected absences - including an on-call list or cross-trained staff who can cover.</li>
 </ul>
 
 <h2>Shift Swapping: Setting Rules That Work</h2>
@@ -110,9 +110,9 @@ const staffSchedulingArticle: LocalBlogPost = {
 <ul>
 <li><strong>Auto-scheduling:</strong> AI analyses your demand patterns, staff skills, and availability constraints to generate an optimised draft schedule in seconds. You review and adjust rather than building from scratch.</li>
 <li><strong>Conflict detection:</strong> The system flags double-bookings, overtime violations, and coverage gaps before you publish the schedule.</li>
-<li><strong>Real-time updates:</strong> When changes happen &mdash; a sick call, a new booking, or a cancellation &mdash; the schedule updates instantly and everyone sees the current version.</li>
+<li><strong>Real-time updates:</strong> When changes happen - a sick call, a new booking, or a cancellation - the schedule updates instantly and everyone sees the current version.</li>
 <li><strong>Labour cost tracking:</strong> See your scheduled labour cost in real-time as you build the schedule. If adding another evening shift pushes your labour percentage above target, you know before committing.</li>
-<li><strong>Employee self-service:</strong> Staff can view their schedules, submit availability, request time off, and propose shift swaps from their phones &mdash; eliminating the constant back-and-forth messages.</li>
+<li><strong>Employee self-service:</strong> Staff can view their schedules, submit availability, request time off, and propose shift swaps from their phones - eliminating the constant back-and-forth messages.</li>
 </ul>
 
 <h2>Common Scheduling Mistakes and How to Fix Them</h2>
@@ -141,7 +141,7 @@ const staffSchedulingArticle: LocalBlogPost = {
 <p>Two weeks is the standard recommendation. It gives staff enough time to plan their personal lives while keeping the schedule close enough to actual demand that accuracy remains high. Some salons publish a rolling 4-week schedule with the understanding that weeks 3-4 may see minor adjustments.</p>
 
 <h3>What do I do when two employees request the same day off?</h3>
-<p>Apply your pre-established policy consistently &mdash; typically first-come, first-served. If both requests arrived simultaneously, consider factors like who has taken fewer days off recently, who worked the last holiday, or whether one request is for a once-in-a-lifetime event. Document your decision to maintain trust and transparency.</p>
+<p>Apply your pre-established policy consistently - typically first-come, first-served. If both requests arrived simultaneously, consider factors like who has taken fewer days off recently, who worked the last holiday, or whether one request is for a once-in-a-lifetime event. Document your decision to maintain trust and transparency.</p>
 
 <h3>How do I handle a team member who frequently calls in sick on busy days?</h3>
 <p>Track absence patterns objectively using your scheduling software. If data confirms a pattern (for example, 70% of sick days fall on Fridays or Saturdays), address it in a private conversation with documentation. Having clear data removes the emotional charge from the discussion and makes the issue harder to dismiss.</p>
@@ -198,12 +198,12 @@ const commissionStructuresArticle: LocalBlogPost = {
       'A comprehensive guide to salon commission models including flat-rate, tiered, hybrid, and team-based structures. Learn how to design compensation plans that attract and retain your best stylists while protecting profitability.',
     aboutPosts: `
 <h2>Why Commission Structure Is the Make-or-Break Factor for Salon Retention</h2>
-<p>Talent retention is the single biggest operational challenge in the beauty industry. The average stylist turnover rate in salons sits between 40-60% annually, and in the GCC region it can climb higher due to visa-linked employment dynamics and a competitive market for skilled professionals. When a top stylist leaves, they take their client book with them &mdash; and rebuilding that revenue can take 6-12 months.</p>
+<p>Talent retention is the single biggest operational challenge in the beauty industry. The average stylist turnover rate in salons sits between 40-60% annually, and in the GCC region it can climb higher due to visa-linked employment dynamics and a competitive market for skilled professionals. When a top stylist leaves, they take their client book with them - and rebuilding that revenue can take 6-12 months.</p>
 <p>The number one reason beauty professionals leave a salon is compensation dissatisfaction. Not necessarily because the total pay is low, but because the structure feels unfair, unclear, or capped. A well-designed commission structure does three things simultaneously: it rewards performance, aligns the stylist's goals with your business goals, and provides enough transparency that your team trusts the system.</p>
 <p>This guide breaks down every major commission model, explains the maths behind each, and helps you choose the right structure for your salon's size and growth stage.</p>
 
 <h2>The Five Main Commission Models for Salons</h2>
-<p>Every salon commission plan is a variation of these five core structures. Understanding the mechanics, advantages, and risks of each model lets you make an informed decision &mdash; or combine elements into a hybrid that fits your specific situation.</p>
+<p>Every salon commission plan is a variation of these five core structures. Understanding the mechanics, advantages, and risks of each model lets you make an informed decision - or combine elements into a hybrid that fits your specific situation.</p>
 
 <h3>1. Flat-Rate Commission</h3>
 <p>The simplest model: every stylist earns a fixed percentage of every service they perform, regardless of revenue volume. Common rates range from 30-50%, with 40% being the most typical for mid-market salons.</p>
@@ -216,14 +216,14 @@ const commissionStructuresArticle: LocalBlogPost = {
 </ul>
 <p><strong>Disadvantages:</strong></p>
 <ul>
-<li>No incentive to grow beyond the baseline &mdash; the stylist earns the same percentage whether they serve 10 clients or 25</li>
+<li>No incentive to grow beyond the baseline - the stylist earns the same percentage whether they serve 10 clients or 25</li>
 <li>Does not account for seniority, skill level, or service complexity</li>
 <li>Can feel punitive for high performers who see newer staff earning the same rate</li>
 </ul>
 <p><strong>Best for:</strong> Small salons with a uniform team and simple service menus. Works well as a starting point before transitioning to a more nuanced model.</p>
 
 <h3>2. Tiered Commission</h3>
-<p>The commission percentage increases as the stylist hits higher revenue thresholds. This directly incentivises growth &mdash; every additional client pushes the stylist closer to a higher earning tier.</p>
+<p>The commission percentage increases as the stylist hits higher revenue thresholds. This directly incentivises growth - every additional client pushes the stylist closer to a higher earning tier.</p>
 <p><strong>Example tiers:</strong></p>
 <ul>
 <li>AED 0 &ndash; 15,000 monthly revenue: 35% commission</li>
@@ -234,7 +234,7 @@ const commissionStructuresArticle: LocalBlogPost = {
 <p><strong>Advantages:</strong></p>
 <ul>
 <li>Directly rewards high performance</li>
-<li>Creates a built-in growth incentive &mdash; stylists want to break through to the next tier</li>
+<li>Creates a built-in growth incentive - stylists want to break through to the next tier</li>
 <li>Naturally retains top talent who earn significantly more at higher tiers</li>
 </ul>
 <p><strong>Disadvantages:</strong></p>
@@ -251,7 +251,7 @@ const commissionStructuresArticle: LocalBlogPost = {
 <p><strong>Advantages:</strong></p>
 <ul>
 <li>Income stability reduces financial stress and turnover</li>
-<li>Easier to recruit &mdash; guaranteed income is more attractive than pure commission during slow months</li>
+<li>Easier to recruit - guaranteed income is more attractive than pure commission during slow months</li>
 <li>The threshold ensures the stylist covers their base cost before earning commission</li>
 </ul>
 <p><strong>Disadvantages:</strong></p>
@@ -285,14 +285,14 @@ const commissionStructuresArticle: LocalBlogPost = {
 <p><strong>Advantages:</strong></p>
 <ul>
 <li>Guaranteed income for the salon owner regardless of stylist performance</li>
-<li>Minimal management overhead &mdash; stylists manage their own schedules and clients</li>
+<li>Minimal management overhead - stylists manage their own schedules and clients</li>
 <li>Attracts experienced, self-motivated professionals</li>
 </ul>
 <p><strong>Disadvantages:</strong></p>
 <ul>
 <li>Zero control over service quality, pricing, or client experience</li>
 <li>No team culture or collaboration</li>
-<li>Stylists have no loyalty to the business &mdash; they can leave at any time and take all their clients</li>
+<li>Stylists have no loyalty to the business - they can leave at any time and take all their clients</li>
 <li>Legal complexity around contractor classification in some jurisdictions</li>
 </ul>
 <p><strong>Best for:</strong> Established stylists who want independence. Not recommended as a primary model if you are building a brand-driven salon business.</p>
@@ -312,7 +312,7 @@ const commissionStructuresArticle: LocalBlogPost = {
 <li><strong>Retail sales commission:</strong> 10-20% on product sales. This is almost pure profit for the salon, so a generous commission here benefits everyone.</li>
 <li><strong>Rebooking bonus:</strong> AED 5-10 per client who rebooks before leaving. Rebooking rates above 60% dramatically improve revenue predictability.</li>
 <li><strong>Review incentive:</strong> A small reward (AED 5-10) for every 5-star review a stylist receives by name. Online reviews directly drive new client acquisition.</li>
-<li><strong>New client bonus:</strong> Reward stylists who bring in new clients through personal referrals &mdash; typically AED 20-50 per new client who completes their first service.</li>
+<li><strong>New client bonus:</strong> Reward stylists who bring in new clients through personal referrals - typically AED 20-50 per new client who completes their first service.</li>
 <li><strong>Attendance bonus:</strong> A monthly bonus for zero unexcused absences or lateness. Even AED 200-500 significantly reduces absenteeism.</li>
 <li><strong>Education and certification:</strong> Pay for advanced training and certifications. Stylists who invest in skills are more engaged and provide higher-value services.</li>
 </ul>
@@ -324,13 +324,13 @@ const commissionStructuresArticle: LocalBlogPost = {
 <li><strong>Put it in writing.</strong> Every team member should have a signed document explaining their compensation structure, with examples and calculations.</li>
 <li><strong>Show the maths.</strong> Walk through real scenarios: &ldquo;If you generate AED 20,000 this month, here is exactly what you earn.&rdquo; Remove ambiguity completely.</li>
 <li><strong>Provide real-time visibility.</strong> Stylists should be able to check their earnings progress at any time, not wait until month-end. The Daisy provides live commission tracking through the employee app.</li>
-<li><strong>Review annually.</strong> Commit to reviewing the commission structure each year and adjusting based on business performance and market rates. This shows your team that compensation is not fixed &mdash; it grows as the business grows.</li>
+<li><strong>Review annually.</strong> Commit to reviewing the commission structure each year and adjusting based on business performance and market rates. This shows your team that compensation is not fixed - it grows as the business grows.</li>
 <li><strong>Be transparent about profitability.</strong> When your team understands salon economics (rent, product costs, overhead), they appreciate why commission rates are what they are. Transparency builds trust.</li>
 </ol>
 
 <h2>Common Commission Mistakes That Drive Talent Away</h2>
 <ul>
-<li><strong>Capping earnings.</strong> If a stylist hits a revenue ceiling and earns nothing extra beyond it, you have just told them to stop trying. Never cap commission &mdash; let your best performers earn what they are worth.</li>
+<li><strong>Capping earnings.</strong> If a stylist hits a revenue ceiling and earns nothing extra beyond it, you have just told them to stop trying. Never cap commission - let your best performers earn what they are worth.</li>
 <li><strong>Changing the structure without consultation.</strong> Surprise commission changes, even small ones, destroy trust instantly. Always consult your team before making changes and give 60-90 days notice.</li>
 <li><strong>Applying one structure to all roles.</strong> A colourist generating AED 40,000/month and an apprentice generating AED 8,000/month have completely different needs. Differentiate your commission tiers by role and experience level.</li>
 <li><strong>Ignoring product sales in compensation.</strong> If you want your team to recommend and sell retail products, you must compensate them for it. Salons that add retail commission see product revenue increase by 25-40%.</li>
@@ -352,7 +352,7 @@ const commissionStructuresArticle: LocalBlogPost = {
 <p>The clearest signal is when your top performers generate 2-3 times the revenue of your average team member but earn the same percentage. At that point, the flat rate is underpaying your best people and overpaying your weakest. Transition to tiers when you have at least 4-5 staff and enough revenue data (6+ months) to set meaningful tier thresholds based on actual performance distribution.</p>
 
 <h3>How does The Daisy help with commission tracking?</h3>
-<p>The Daisy's <a href="/en/features/business/team-management">team management platform</a> automatically calculates commissions based on your configured structure &mdash; whether flat-rate, tiered, or hybrid. Each team member sees their real-time earnings through the app, and salon owners get a payroll-ready report every pay period. The system handles product sales commissions, bonuses, and deductions, eliminating spreadsheet errors and saving hours of manual calculation.</p>
+<p>The Daisy's <a href="/en/features/business/team-management">team management platform</a> automatically calculates commissions based on your configured structure - whether flat-rate, tiered, or hybrid. Each team member sees their real-time earnings through the app, and salon owners get a payroll-ready report every pay period. The system handles product sales commissions, bonuses, and deductions, eliminating spreadsheet errors and saving hours of manual calculation.</p>
 `,
     metaTitle: 'Salon Commission Structures | The Daisy',
     metaDescription:
@@ -400,20 +400,20 @@ const managingPermissionsArticle: LocalBlogPost = {
       'A practical guide to setting up role-based access control in your salon software. Learn how to define permissions for owners, managers, senior stylists, and junior staff to protect sensitive data while empowering your team.',
     aboutPosts: `
 <h2>Why Access Control Matters More Than You Think</h2>
-<p>Most salon owners set up their management software, give everyone full access, and never think about permissions again &mdash; until something goes wrong. A junior stylist accidentally discounts a high-value service. A receptionist exports the entire client database before leaving for a competitor. A team member sees what everyone else earns and morale craters.</p>
-<p>These are not hypothetical scenarios. A 2025 study by the Salon Business Advisors Network found that 34% of salon owners reported a data misuse incident in the previous 12 months, and 62% of those incidents were caused by staff with access permissions that were too broad. The solution is not restricting everything &mdash; it is giving each team member access to exactly what they need to do their job, and nothing more.</p>
+<p>Most salon owners set up their management software, give everyone full access, and never think about permissions again - until something goes wrong. A junior stylist accidentally discounts a high-value service. A receptionist exports the entire client database before leaving for a competitor. A team member sees what everyone else earns and morale craters.</p>
+<p>These are not hypothetical scenarios. A 2025 study by the Salon Business Advisors Network found that 34% of salon owners reported a data misuse incident in the previous 12 months, and 62% of those incidents were caused by staff with access permissions that were too broad. The solution is not restricting everything - it is giving each team member access to exactly what they need to do their job, and nothing more.</p>
 <p>This principle is called &ldquo;least privilege&rdquo; in security, and it is the foundation of effective permission management. This guide shows you how to implement it in your salon using role-based access control.</p>
 
 <h2>Understanding Role-Based Access Control (RBAC)</h2>
 <p>Role-based access control assigns permissions to roles, not to individuals. Instead of configuring access for each person one by one, you define what each role can see and do, then assign team members to the appropriate role. When someone changes positions or leaves, you simply change their role assignment.</p>
 <p>For a typical salon, these roles cover the majority of scenarios:</p>
 <ul>
-<li><strong>Owner / Administrator:</strong> Full access to everything &mdash; financials, reports, client data, settings, staff management, and system configuration.</li>
+<li><strong>Owner / Administrator:</strong> Full access to everything - financials, reports, client data, settings, staff management, and system configuration.</li>
 <li><strong>Salon Manager:</strong> Access to daily operations, staff schedules, client records, booking management, and basic reporting. Typically restricted from changing business settings, subscription details, and detailed financial data like profit margins.</li>
 <li><strong>Senior Stylist / Team Lead:</strong> Access to their own schedule, their assigned clients, service notes, and performance metrics. May have limited access to team schedules for coordination purposes.</li>
 <li><strong>Stylist / Technician:</strong> Access to their own schedule, appointment details for their upcoming clients, and the ability to add service notes. No access to other team members' data, financials, or business reports.</li>
 <li><strong>Receptionist:</strong> Access to the full booking calendar, client contact information, and payment processing. Restricted from viewing staff performance, commission details, and business analytics.</li>
-<li><strong>Apprentice / Intern:</strong> Minimal access &mdash; their own schedule and basic appointment details only. Cannot modify bookings, access client history, or view any business data.</li>
+<li><strong>Apprentice / Intern:</strong> Minimal access - their own schedule and basic appointment details only. Cannot modify bookings, access client history, or view any business data.</li>
 </ul>
 
 <h2>What Data Needs Protection in a Salon</h2>
@@ -447,10 +447,10 @@ const managingPermissionsArticle: LocalBlogPost = {
 <p>Follow this process to implement role-based permissions in your salon:</p>
 
 <h3>Step 1: Audit Current Access</h3>
-<p>Before changing anything, document who currently has access to what. Log into your salon management software and review each team member's current permission level. You will likely find that everyone has the same broad access &mdash; which is exactly the problem to fix.</p>
+<p>Before changing anything, document who currently has access to what. Log into your salon management software and review each team member's current permission level. You will likely find that everyone has the same broad access - which is exactly the problem to fix.</p>
 
 <h3>Step 2: Define Your Roles</h3>
-<p>Based on the role descriptions above, define the specific roles that apply to your salon. A 4-person salon may only need Owner and Stylist roles. A 20-person salon with managers, receptionists, and apprentices will need all six. Do not create more roles than necessary &mdash; complexity increases the chance of misconfiguration.</p>
+<p>Based on the role descriptions above, define the specific roles that apply to your salon. A 4-person salon may only need Owner and Stylist roles. A 20-person salon with managers, receptionists, and apprentices will need all six. Do not create more roles than necessary - complexity increases the chance of misconfiguration.</p>
 
 <h3>Step 3: Map Permissions to Roles</h3>
 <p>For each role, specify exactly which features and data categories are accessible. Use a simple permissions matrix:</p>
@@ -481,7 +481,7 @@ const managingPermissionsArticle: LocalBlogPost = {
 <p>Define a maximum discount percentage the Receptionist role can apply (typically 10-15%) and require manager approval for anything above that threshold. This lets the front desk handle standard promotional offers without waiting for approval, while protecting against unauthorised deep discounts.</p>
 
 <h3>A Manager Is Leaving the Salon</h3>
-<p>Immediately change their role to the most restricted level or deactivate their account. Do this before their last working day, not after. Review any data they may have exported in the previous 30 days. Change any passwords or access codes they had access to. This is not about distrust &mdash; it is a standard off-boarding security practice.</p>
+<p>Immediately change their role to the most restricted level or deactivate their account. Do this before their last working day, not after. Review any data they may have exported in the previous 30 days. Change any passwords or access codes they had access to. This is not about distrust - it is a standard off-boarding security practice.</p>
 
 <h3>A Team Member Needs Temporary Elevated Access</h3>
 <p>If a stylist is covering a manager's holiday, temporarily elevate their role for the duration. Set a calendar reminder to revert the change on the return date. Document the temporary elevation so there is a clear record of who had what access and when.</p>
@@ -489,7 +489,7 @@ const managingPermissionsArticle: LocalBlogPost = {
 <h2>Permission Mistakes That Create Real Problems</h2>
 <ul>
 <li><strong>Giving everyone admin access for convenience.</strong> It feels easier in the moment, but one accidental deletion or one disgruntled employee can cause lasting damage. Convenience is not worth the risk.</li>
-<li><strong>Forgetting to revoke access when someone leaves.</strong> This is the most common security gap in salons. Build account deactivation into your off-boarding checklist and execute it on the employee's last day &mdash; not a week later.</li>
+<li><strong>Forgetting to revoke access when someone leaves.</strong> This is the most common security gap in salons. Build account deactivation into your off-boarding checklist and execute it on the employee's last day - not a week later.</li>
 <li><strong>Not reviewing permissions regularly.</strong> Roles change. A junior stylist gets promoted. A part-time receptionist takes on manager duties. Review role assignments quarterly and adjust as needed.</li>
 <li><strong>Overcomplicating roles.</strong> If you have 8 different roles for a 6-person team, you have gone too far. Keep it simple: 2-4 roles covers most salons effectively.</li>
 <li><strong>Ignoring mobile access.</strong> If your team uses a mobile app to check schedules and client details, the same permissions must apply on mobile. A system that restricts access on desktop but shows everything on mobile defeats the purpose entirely.</li>
@@ -508,13 +508,13 @@ const managingPermissionsArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>Do I really need permissions if I trust my team?</h3>
-<p>Permissions are not about distrust &mdash; they are about reducing risk and simplifying the interface for your team. A stylist who only sees their schedule, clients, and performance dashboard has a cleaner, faster experience than one who has to navigate through financial reports and settings they never use. Permissions protect against accidents as much as they protect against intentional misuse.</p>
+<p>Permissions are not about distrust - they are about reducing risk and simplifying the interface for your team. A stylist who only sees their schedule, clients, and performance dashboard has a cleaner, faster experience than one who has to navigate through financial reports and settings they never use. Permissions protect against accidents as much as they protect against intentional misuse.</p>
 
 <h3>What is the minimum number of permission roles I need?</h3>
-<p>Two: Owner (full access) and Staff (limited access). For most salons with 5+ team members, three roles work well: Owner, Manager, and Staff. Only add additional roles when there is a genuine need &mdash; do not create complexity for its own sake.</p>
+<p>Two: Owner (full access) and Staff (limited access). For most salons with 5+ team members, three roles work well: Owner, Manager, and Staff. Only add additional roles when there is a genuine need - do not create complexity for its own sake.</p>
 
 <h3>How do I handle a team member who asks for more access than their role allows?</h3>
-<p>Listen to the specific request. If a stylist needs to view client history to prepare for appointments, that is a legitimate need &mdash; adjust the role permissions. If someone wants access to revenue data out of curiosity, explain that financial data is restricted to specific roles and offer to share relevant performance metrics instead. Always address the underlying need, not just the access request.</p>
+<p>Listen to the specific request. If a stylist needs to view client history to prepare for appointments, that is a legitimate need - adjust the role permissions. If someone wants access to revenue data out of curiosity, explain that financial data is restricted to specific roles and offer to share relevant performance metrics instead. Always address the underlying need, not just the access request.</p>
 
 <h3>Can different locations have different permission settings?</h3>
 <p>Yes, and they often should. A manager at one location should generally not have access to another location's data unless they oversee both. Multi-location salons should configure permissions per branch, with only the owner or operations director having cross-location visibility. The Daisy supports multi-branch permission configurations, so each location operates independently while the owner maintains a unified view.</p>
@@ -565,7 +565,7 @@ const timeManagementArticle: LocalBlogPost = {
       'Practical time management strategies for freelance and independent beauty professionals. Learn how to structure your day, minimise dead time between clients, set boundaries, and use scheduling tools to maximise income without burning out.',
     aboutPosts: `
 <h2>The Unique Time Challenge for Independent Beauty Professionals</h2>
-<p>When you work for yourself in the beauty industry, time is your only product. Unlike a salon employee who gets paid whether the chair is full or empty, every unbooked hour directly reduces your income. Independent beauty professionals &mdash; freelance stylists, mobile nail technicians, lash artists, and makeup professionals &mdash; face a time management challenge that is fundamentally different from traditional employment.</p>
+<p>When you work for yourself in the beauty industry, time is your only product. Unlike a salon employee who gets paid whether the chair is full or empty, every unbooked hour directly reduces your income. Independent beauty professionals - freelance stylists, mobile nail technicians, lash artists, and makeup professionals - face a time management challenge that is fundamentally different from traditional employment.</p>
 <p>You are simultaneously the service provider, the receptionist, the bookkeeper, the marketer, and the business owner. A 2025 survey by the Freelance Beauty Professionals Association found that independent beauty workers spend an average of 12.4 hours per week on non-billable tasks: answering messages, managing bookings, travelling between clients, posting on social media, and handling finances. That is nearly two full working days lost to administration every week.</p>
 <p>This guide provides proven strategies to reclaim those hours, increase your billable time, and build a sustainable schedule that protects your income without sacrificing your wellbeing.</p>
 
@@ -586,19 +586,19 @@ const timeManagementArticle: LocalBlogPost = {
 <p>Not all hours are equal. Your skill, focus, and energy levels fluctuate throughout the day, and your schedule should reflect that reality.</p>
 
 <h3>Identify Your Peak Performance Window</h3>
-<p>Most people have a 3-4 hour peak performance window where their concentration and fine motor skills are sharpest. For beauty professionals, this is when you should schedule your most complex, highest-value services &mdash; intricate colour work, bridal looks, precision cutting, or detailed nail art. Identify your peak window and protect it fiercely.</p>
+<p>Most people have a 3-4 hour peak performance window where their concentration and fine motor skills are sharpest. For beauty professionals, this is when you should schedule your most complex, highest-value services - intricate colour work, bridal looks, precision cutting, or detailed nail art. Identify your peak window and protect it fiercely.</p>
 
 <h3>Batch Similar Services</h3>
 <p>Switching between different types of services throughout the day requires mental gear-shifting that consumes energy and time. Where possible, group similar services together: all colour appointments in the morning, all cuts in the early afternoon, all styling in the late afternoon. This reduces setup changes and creates a rhythm that makes you faster and more consistent.</p>
 
 <h3>Schedule Admin in Dedicated Blocks</h3>
-<p>Checking messages between every client is inefficient and mentally draining. Instead, designate two 30-minute admin blocks per day &mdash; one in the morning before your first client and one at the end of the working day. During these blocks, respond to all messages, confirm upcoming appointments, and handle bookings. Outside these blocks, your phone goes on silent for client work.</p>
+<p>Checking messages between every client is inefficient and mentally draining. Instead, designate two 30-minute admin blocks per day - one in the morning before your first client and one at the end of the working day. During these blocks, respond to all messages, confirm upcoming appointments, and handle bookings. Outside these blocks, your phone goes on silent for client work.</p>
 
 <h3>Build in Recovery Time</h3>
 <p>Back-to-back clients for 8 hours straight leads to physical fatigue, reduced service quality, and eventual burnout. Schedule a 15-minute buffer between each client and a proper 30-60 minute break in the middle of the day. The small amount of lost booking capacity is more than offset by the sustained quality and longevity of your career.</p>
 
 <h2>Eliminate Dead Time Between Clients</h2>
-<p>Dead time &mdash; gaps in your schedule where you are waiting for the next client &mdash; is the biggest income killer for independent professionals. Here is how to minimise it:</p>
+<p>Dead time - gaps in your schedule where you are waiting for the next client - is the biggest income killer for independent professionals. Here is how to minimise it:</p>
 
 <h3>Set Fixed Booking Slots</h3>
 <p>Instead of letting clients choose any time they want, offer fixed time slots at regular intervals: 9:00, 10:30, 12:00, 14:00, 15:30, 17:00 (adjusted for your service durations). This creates a structured day with predictable gaps. Clients who need flexibility can choose from the available slots, but the underlying structure prevents random 45-minute gaps that cannot be filled.</p>
@@ -607,7 +607,7 @@ const timeManagementArticle: LocalBlogPost = {
 <p>Require at least 24 hours advance booking. This gives you time to arrange your route (for mobile professionals) or adjust your schedule to consolidate appointments. Same-day bookings should be accepted only if they fit neatly into an existing gap.</p>
 
 <h3>Implement a Waitlist for Cancelled Slots</h3>
-<p>When a client cancels, you need someone to fill that gap immediately. Maintain a waitlist of clients who want an earlier appointment or are flexible with timing. When a slot opens up, contact the waitlist automatically. Platforms like <a href="/en/features/professional/team-management">The Daisy</a> automate this process &mdash; when a cancellation occurs, waitlisted clients receive an instant notification and can claim the slot with one tap.</p>
+<p>When a client cancels, you need someone to fill that gap immediately. Maintain a waitlist of clients who want an earlier appointment or are flexible with timing. When a slot opens up, contact the waitlist automatically. Platforms like <a href="/en/features/professional/team-management">The Daisy</a> automate this process - when a cancellation occurs, waitlisted clients receive an instant notification and can claim the slot with one tap.</p>
 
 <h3>Fill Short Gaps Productively</h3>
 <p>Not every gap can be filled with a booking. When you have a 30-45 minute gap, use it for a predefined productive task: restock your kit, create a social media post, respond to enquiries, or update your portfolio. Having a list of &ldquo;gap tasks&rdquo; ensures no time is truly wasted.</p>
@@ -619,7 +619,7 @@ const timeManagementArticle: LocalBlogPost = {
 <p>If you are manually sending confirmation messages and reminders for every appointment, you are spending 3-5 hours per week on a task that software handles in zero seconds. Use a booking platform that sends automatic confirmations when a client books, reminders 24 hours before the appointment, and follow-up messages after the service. The Daisy handles this across WhatsApp, SMS, and email without any manual input.</p>
 
 <h3>Use Online Booking Instead of Message-Based Booking</h3>
-<p>Every booking that happens through back-and-forth messages &mdash; &ldquo;Are you free Thursday?&rdquo; &ldquo;What time?&rdquo; &ldquo;Actually, can we do Friday?&rdquo; &mdash; takes 5-10 minutes of your time. An online booking link where clients see your real-time availability and book instantly takes zero minutes. Share your booking link in your Instagram bio, WhatsApp status, and on your business cards. Redirect every booking conversation to the link.</p>
+<p>Every booking that happens through back-and-forth messages - &ldquo;Are you free Thursday?&rdquo; &ldquo;What time?&rdquo; &ldquo;Actually, can we do Friday?&rdquo; - takes 5-10 minutes of your time. An online booking link where clients see your real-time availability and book instantly takes zero minutes. Share your booking link in your Instagram bio, WhatsApp status, and on your business cards. Redirect every booking conversation to the link.</p>
 
 <h3>Standardise Your Service Menu and Pricing</h3>
 <p>If you spend time quoting prices for every enquiry because your pricing varies, you need a standardised price list. Create a clear, professional price list and make it available on your booking page. Include service descriptions, durations, and any conditions (extra charges for long hair, for example). This eliminates pricing conversations and helps clients self-select the right service.</p>
@@ -632,7 +632,7 @@ const timeManagementArticle: LocalBlogPost = {
 <ul>
 <li><strong>Cluster appointments geographically.</strong> If you serve a wide area, dedicate specific days to specific zones. Monday is the eastern district, Tuesday is the central area, Thursday is the northern suburbs. This prevents 45-minute drives between consecutive appointments.</li>
 <li><strong>Set a service radius and stick to it.</strong> Define a maximum travel distance (15-20 minutes from your base or from the previous appointment) and communicate it clearly. Clients outside your radius can come to you or pay a travel surcharge.</li>
-<li><strong>Account for travel in your pricing.</strong> If a client's location adds 30 minutes of travel, that time needs to be compensated &mdash; either through a travel fee or by increasing the service price for distant locations.</li>
+<li><strong>Account for travel in your pricing.</strong> If a client's location adds 30 minutes of travel, that time needs to be compensated - either through a travel fee or by increasing the service price for distant locations.</li>
 <li><strong>Build travel buffers into your schedule.</strong> If you estimate 20 minutes between locations, block 30 minutes. Traffic, parking, and unexpected delays are inevitable. A 10-minute buffer prevents every client after the first from starting late.</li>
 </ul>
 
@@ -657,18 +657,18 @@ const timeManagementArticle: LocalBlogPost = {
 <li><strong>Booking platform with automated reminders:</strong> Eliminates manual scheduling and reduces no-shows. <a href="/en/features/professional/team-management">The Daisy for Professionals</a> is designed specifically for beauty professionals with real-time availability, automated reminders, and client management.</li>
 <li><strong>Accounting app with receipt scanning:</strong> Photograph receipts as you go and let the app categorise expenses. Spend 10 minutes per week on finances instead of hours at month-end.</li>
 <li><strong>Social media scheduling tool:</strong> Batch-create a week's worth of posts in one 60-minute session and schedule them to publish automatically. Consistent posting without daily effort.</li>
-<li><strong>Client notes and preferences:</strong> Keep digital notes on every client &mdash; their preferred products, colour formulas, sensitivity issues, and personal preferences. This saves consultation time at every visit and impresses clients with personalised service.</li>
+<li><strong>Client notes and preferences:</strong> Keep digital notes on every client - their preferred products, colour formulas, sensitivity issues, and personal preferences. This saves consultation time at every visit and impresses clients with personalised service.</li>
 </ul>
 
 <h2>Building a Sustainable Weekly Rhythm</h2>
-<p>The goal of time management is not to fill every minute with work &mdash; it is to maximise your income during working hours so you can truly rest during non-working hours. A sustainable weekly structure might look like:</p>
+<p>The goal of time management is not to fill every minute with work - it is to maximise your income during working hours so you can truly rest during non-working hours. A sustainable weekly structure might look like:</p>
 <ul>
 <li><strong>Sunday:</strong> Off (or admin-only morning for the week ahead)</li>
-<li><strong>Monday:</strong> Light schedule &mdash; 3-4 clients, afternoon for marketing and content creation</li>
-<li><strong>Tuesday-Wednesday:</strong> Full days &mdash; 5-6 clients each day</li>
-<li><strong>Thursday:</strong> Full day &mdash; highest demand, prioritise premium services</li>
-<li><strong>Friday:</strong> Half day &mdash; 3 clients in the morning, afternoon off</li>
-<li><strong>Saturday:</strong> Full day &mdash; peak demand, bridal and event bookings</li>
+<li><strong>Monday:</strong> Light schedule - 3-4 clients, afternoon for marketing and content creation</li>
+<li><strong>Tuesday-Wednesday:</strong> Full days - 5-6 clients each day</li>
+<li><strong>Thursday:</strong> Full day - highest demand, prioritise premium services</li>
+<li><strong>Friday:</strong> Half day - 3 clients in the morning, afternoon off</li>
+<li><strong>Saturday:</strong> Full day - peak demand, bridal and event bookings</li>
 </ul>
 <p>This structure provides 20-25 billable client slots per week with built-in recovery time. At an average service value of AED 200-350, that is AED 4,000-8,750 in weekly revenue from approximately 30-35 hours of work, including admin and travel.</p>
 
@@ -678,10 +678,10 @@ const timeManagementArticle: LocalBlogPost = {
 <p>The answer depends on your service type and physical demands. Hairstylists who are on their feet all day typically sustain 5-6 clients. Nail technicians doing detailed work may cap at 4-5 before accuracy declines. Massage therapists and body treatment specialists should not exceed 4-5 full sessions. The right number is the maximum where your last client receives the same quality as your first. Track your energy levels for two weeks to find your personal threshold.</p>
 
 <h3>How do I handle clients who are always late?</h3>
-<p>Implement a grace period policy: clients who arrive more than 15 minutes late forfeit their appointment and may be charged a late cancellation fee. For clients who are consistently 5-10 minutes late, send a reminder message saying &ldquo;Your appointment is at 2:00 PM &mdash; please arrive 5 minutes early to start on time.&rdquo; If the pattern continues, have a direct but professional conversation and consider adding a note to their profile to schedule them with an extra buffer.</p>
+<p>Implement a grace period policy: clients who arrive more than 15 minutes late forfeit their appointment and may be charged a late cancellation fee. For clients who are consistently 5-10 minutes late, send a reminder message saying &ldquo;Your appointment is at 2:00 PM - please arrive 5 minutes early to start on time.&rdquo; If the pattern continues, have a direct but professional conversation and consider adding a note to their profile to schedule them with an extra buffer.</p>
 
 <h3>Should I work every weekend to maximise income?</h3>
-<p>Working every Saturday and Sunday without rest leads to burnout within 6-12 months. Take at least one full day off per week, no exceptions. If weekends are your highest-demand days, consider taking Monday or Tuesday off instead. Your career is a marathon, not a sprint &mdash; sustainable scheduling protects both your income and your health over the long term.</p>
+<p>Working every Saturday and Sunday without rest leads to burnout within 6-12 months. Take at least one full day off per week, no exceptions. If weekends are your highest-demand days, consider taking Monday or Tuesday off instead. Your career is a marathon, not a sprint - sustainable scheduling protects both your income and your health over the long term.</p>
 
 <h3>How do I raise my prices without losing clients?</h3>
 <p>Time management and pricing are directly connected: if you cannot take on more clients, the only way to increase income is to increase the value per client. Raise prices gradually (10-15% annually is standard in the beauty industry), communicate the increase 30 days in advance, and frame it as an investment in quality (better products, continued education, upgraded tools). Most clients who value your work will stay. Those who leave for a cheaper alternative were not your ideal clients.</p>

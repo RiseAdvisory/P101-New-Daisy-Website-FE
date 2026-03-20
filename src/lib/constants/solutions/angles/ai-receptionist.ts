@@ -5,7 +5,7 @@ import { professionalPageData } from '@/lib/constants/pages/professionalPage';
 import { registerAngle } from './index';
 
 // ---------------------------------------------------------------------------
-// AI Receptionist angle — reuses main landing page content for scroll sections,
+// AI Receptionist angle - reuses main landing page content for scroll sections,
 // stats, howItWorks, pricingHook, platformStrengths, inlineCtas, and FAQs.
 // Only the hero and answer block differ per angle.
 // ---------------------------------------------------------------------------

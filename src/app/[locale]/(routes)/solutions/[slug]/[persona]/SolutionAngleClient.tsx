@@ -37,7 +37,7 @@ export const SolutionAngleClient = ({
   persona,
 }: SolutionAngleClientProps) => {
   const dataScroll = toScrollSectionItems(pageData.scrollSections);
-  const defaultType = persona === 'business' ? 'business' : 'freelance';
+  const defaultType = persona === 'business' ? 'business' : 'professional';
   const pageType = persona === 'business' ? 'Business' : 'Professional';
 
   const formTitle =
@@ -46,7 +46,7 @@ export const SolutionAngleClient = ({
         ? 'مستعد للسيطرة؟ أخبرنا عن عملك.'
         : 'Ready to Take Control? Tell Us About Your Business.'
       : lang === 'ar'
-        ? 'سجّل في ذا ديزي — مجانًا'
+        ? 'سجّل في ذا ديزي - مجانًا'
         : 'Get Listed on The Daisy for Free';
 
   const formSubtitle =
@@ -109,7 +109,7 @@ export const SolutionAngleClient = ({
         fallbackFaqs={pageData.fallbackFaqs}
       />
       <BecomeFormPartner
-        defaultType={defaultType as 'business' | 'freelance'}
+        defaultType={defaultType as 'business' | 'professional'}
         title={formTitle}
         subtitle={formSubtitle}
       />

@@ -48,16 +48,16 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
 <p>For a comprehensive migration guide covering every edge case, see our <a href="/en/resources/blog/businesses/complete-salon-software-switching-guide">complete salon software switching guide</a>.</p>
 
 <h2>Week 1 (Days 1-7): Assessment and Setup</h2>
-<p>The first week is about laying the groundwork. You are not making any changes your clients or staff will see yet &mdash; this is pure preparation.</p>
+<p>The first week is about laying the groundwork. You are not making any changes your clients or staff will see yet - this is pure preparation.</p>
 
 <h3>Day 1-2: Audit Your Current System</h3>
 <p>Before switching to anything new, document exactly what you have. Open your current salon software and record:</p>
 <ul>
-<li><strong>Client database size:</strong> How many active client records do you have? Active means anyone who visited in the last 12 months. Note total records versus active records &mdash; you may not need to migrate dormant profiles.</li>
-<li><strong>Booking history depth:</strong> How far back does your appointment history go? Most platforms allow full export. Decide how much history matters &mdash; 12 months is typically sufficient for continuity, though some owners prefer to bring everything.</li>
+<li><strong>Client database size:</strong> How many active client records do you have? Active means anyone who visited in the last 12 months. Note total records versus active records - you may not need to migrate dormant profiles.</li>
+<li><strong>Booking history depth:</strong> How far back does your appointment history go? Most platforms allow full export. Decide how much history matters - 12 months is typically sufficient for continuity, though some owners prefer to bring everything.</li>
 <li><strong>Service menu complexity:</strong> Count your services, variations, add-ons, and packages. Note pricing tiers, duration settings, and staff assignments for each service.</li>
 <li><strong>Staff configuration:</strong> List all team members with their schedules, service permissions, commission structures, and calendar settings.</li>
-<li><strong>Integrations:</strong> Identify every third-party tool connected to your current system &mdash; payment processor, Google Calendar sync, social media booking links, website widgets, and marketing tools.</li>
+<li><strong>Integrations:</strong> Identify every third-party tool connected to your current system - payment processor, Google Calendar sync, social media booking links, website widgets, and marketing tools.</li>
 <li><strong>Financial data:</strong> Determine what financial records and reports you need to export for tax and accounting purposes.</li>
 </ul>
 
@@ -70,13 +70,13 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
 <li><strong>Financial reports:</strong> Revenue summaries, outstanding balances, gift card liabilities, and prepaid package balances.</li>
 <li><strong>Staff records:</strong> Commission rates, performance metrics, and scheduling rules.</li>
 </ul>
-<p>Export in CSV or Excel format where possible &mdash; these are universally importable. If your current provider makes export difficult, contact their support team directly. Under data portability regulations in many jurisdictions, they are required to provide your data.</p>
+<p>Export in CSV or Excel format where possible - these are universally importable. If your current provider makes export difficult, contact their support team directly. Under data portability regulations in many jurisdictions, they are required to provide your data.</p>
 
 <h3>Day 5-7: Set Up Your New Platform</h3>
 <p>Create your account on your new platform and complete initial configuration:</p>
 <ul>
 <li><strong>Business profile:</strong> Add your salon name, logo, location details, operating hours, and contact information.</li>
-<li><strong>Service menu:</strong> Recreate your services with accurate names, descriptions, durations, and pricing. This is also an opportunity to clean up &mdash; remove services you no longer offer and update descriptions.</li>
+<li><strong>Service menu:</strong> Recreate your services with accurate names, descriptions, durations, and pricing. This is also an opportunity to clean up - remove services you no longer offer and update descriptions.</li>
 <li><strong>Staff profiles:</strong> Add each team member with their schedule, service permissions, and commission structure.</li>
 <li><strong>Import client data:</strong> Upload your exported client database. Platforms like <a href="/en/features/business/salon-management-software">The Daisy</a> offer guided import tools that map your CSV columns to the correct fields automatically.</li>
 <li><strong>Payment setup:</strong> Connect your payment processor. If switching processors, allow 2-3 business days for verification.</li>
@@ -122,7 +122,7 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
 <p>During this period:</p>
 <ul>
 <li>Enter all new bookings into your new platform as the primary system.</li>
-<li>Honour any existing bookings still in your old system &mdash; do not ask clients to rebook.</li>
+<li>Honour any existing bookings still in your old system - do not ask clients to rebook.</li>
 <li>Compare daily reports between old and new systems to verify data accuracy.</li>
 <li>Note any workflow differences that confuse staff and address them with targeted mini-training.</li>
 </ul>
@@ -141,10 +141,10 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
 <p>Send a clear, simple message to your client base:</p>
 <ul>
 <li>Explain that you have upgraded your booking system for a better experience.</li>
-<li>Emphasise what is better for them &mdash; easier booking, better reminders, new features like cashback rewards.</li>
+<li>Emphasise what is better for them - easier booking, better reminders, new features like cashback rewards.</li>
 <li>Provide the new booking link prominently.</li>
 <li>Reassure them that their appointment history and preferences have been transferred.</li>
-<li>Keep the message positive &mdash; this is an upgrade, not a disruption.</li>
+<li>Keep the message positive - this is an upgrade, not a disruption.</li>
 </ul>
 <p>Frame this as good news. Clients care about their experience improving, not which software you use internally.</p>
 
@@ -173,7 +173,7 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
 <li>Document any custom configurations, workarounds, or processes specific to your setup.</li>
 <li>Create a quick-reference guide for common tasks that staff can refer to.</li>
 <li>Cancel your old software subscription (check contract terms for notice periods).</li>
-<li>Acknowledge your team for navigating the transition &mdash; change management matters.</li>
+<li>Acknowledge your team for navigating the transition - change management matters.</li>
 </ul>
 
 <h2>Migration Risks and How to Mitigate Them</h2>
@@ -191,7 +191,7 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
 <ul>
 <li><strong>AI-powered booking:</strong> Intelligent scheduling that optimises your calendar automatically, not just basic online booking. <a href="/en/features/business/ai-salon-management">The Daisy's AI receptionist</a> handles bookings across every channel 24/7.</li>
 <li><strong>Multi-channel client acquisition:</strong> A platform that brings you new clients, not just manages existing ones. Marketplace visibility, cashback incentives, and integrated marketing tools matter.</li>
-<li><strong>Growth analytics:</strong> Real-time dashboards showing revenue trends, client retention, staff performance, and growth opportunities &mdash; not just basic appointment reports.</li>
+<li><strong>Growth analytics:</strong> Real-time dashboards showing revenue trends, client retention, staff performance, and growth opportunities - not just basic appointment reports.</li>
 <li><strong>Scalability:</strong> If you plan to expand, your platform should support <a href="/en/features/business/business-growth">multi-location management</a> from a single dashboard.</li>
 <li><strong>Modern client experience:</strong> Your clients expect the same quality of digital experience they get from ride-sharing and food delivery apps. If your booking process feels dated, you lose clients before they ever visit.</li>
 </ul>
@@ -206,7 +206,7 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
 <p>Zero downtime. The parallel operation approach means you set up and test your new system completely before switching over. Your old system continues accepting bookings until you are ready to redirect. There is no gap where clients cannot book.</p>
 
 <h3>What if my staff struggle with the new system?</h3>
-<p>Modern salon platforms are designed to be intuitive. Most staff become comfortable within 2-3 days of hands-on use. Keep training sessions short and role-specific &mdash; a stylist does not need to learn reporting features. Designate one tech-comfortable team member as the go-to person for questions during the first two weeks.</p>
+<p>Modern salon platforms are designed to be intuitive. Most staff become comfortable within 2-3 days of hands-on use. Keep training sessions short and role-specific - a stylist does not need to learn reporting features. Designate one tech-comfortable team member as the go-to person for questions during the first two weeks.</p>
 
 <h3>Can I switch salon software if I have prepaid packages or gift cards outstanding?</h3>
 <p>Yes. Export your prepaid package balances and gift card liabilities, then recreate them in your new system. Assign the correct balances to each client profile. Verify with a few clients that their balances are accurate before completing the transition. This is standard practice and well-supported by most platforms.</p>
@@ -265,7 +265,7 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>The First Month Sets the Tone for Everything After</h2>
 <p>Your first 30 days on a new salon platform determine whether your team embraces the change or quietly reverts to old habits. The good news: with a clear understanding of what each week looks like, you can set realistic expectations, celebrate real progress, and avoid the frustration that comes from not knowing what is normal.</p>
-<p>This guide walks you through the first month after going live on a new salon management platform. It is based on the actual onboarding experience of salons that have migrated to modern platforms like <a href="/en/features/business/salon-management-software">The Daisy</a>, and it covers the honest reality &mdash; including the challenges you should expect alongside the wins.</p>
+<p>This guide walks you through the first month after going live on a new salon management platform. It is based on the actual onboarding experience of salons that have migrated to modern platforms like <a href="/en/features/business/salon-management-software">The Daisy</a>, and it covers the honest reality - including the challenges you should expect alongside the wins.</p>
 
 <h2>Week 1: The Learning Curve Is Real (But Short)</h2>
 <p>The first week is the steepest part of the learning curve. Everything is new, and tasks that took seconds on your old system might take a minute or two as you find the right buttons. This is completely normal.</p>
@@ -274,21 +274,21 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
 <ul>
 <li><strong>Slower task completion:</strong> Checking in a client, processing a payment, or creating a booking takes longer than usual. Your fingers do not have muscle memory for the new interface yet. By day 3-4, you will notice speed increasing significantly.</li>
 <li><strong>Staff questions:</strong> Expect a higher-than-usual volume of "how do I do X?" questions. This is a sign your team is engaging with the system, not a sign the system is too complicated.</li>
-<li><strong>Minor configuration adjustments:</strong> You will discover settings that need tweaking &mdash; a reminder message that says the wrong thing, a service duration that needs correcting, or a notification that fires too often. These quick fixes are normal.</li>
+<li><strong>Minor configuration adjustments:</strong> You will discover settings that need tweaking - a reminder message that says the wrong thing, a service duration that needs correcting, or a notification that fires too often. These quick fixes are normal.</li>
 <li><strong>The comparison trap:</strong> Your team will compare every interaction to the old system. "In [old software], I could do this in one click." Resist the urge to judge the new platform against old habits. By week 2, many of these comparisons will reverse as you discover capabilities your old system lacked.</li>
 </ul>
 
 <h3>Quick Wins to Celebrate</h3>
 <ul>
-<li>Your first fully automated booking confirmation &mdash; a client books online and receives a perfect confirmation without anyone touching anything.</li>
-<li>Client data successfully migrated &mdash; search for a long-time client and find their full history intact.</li>
-<li>First AI-handled inquiry &mdash; if your new platform includes an AI receptionist like The Daisy, watch it handle a WhatsApp booking request while your team is with clients.</li>
+<li>Your first fully automated booking confirmation - a client books online and receives a perfect confirmation without anyone touching anything.</li>
+<li>Client data successfully migrated - search for a long-time client and find their full history intact.</li>
+<li>First AI-handled inquiry - if your new platform includes an AI receptionist like The Daisy, watch it handle a WhatsApp booking request while your team is with clients.</li>
 </ul>
 
 <h3>What to Do This Week</h3>
 <ul>
 <li>Designate one team member as the "platform champion" who can answer basic questions so you are not the bottleneck.</li>
-<li>Keep a shared document of questions and issues &mdash; batch them for your platform's support team rather than sending individual tickets.</li>
+<li>Keep a shared document of questions and issues - batch them for your platform's support team rather than sending individual tickets.</li>
 <li>Review automated messages after real clients receive them. Adjust wording if anything feels off-brand.</li>
 <li>Run end-of-day reports and compare revenue totals against your manual tracking to build confidence in the data.</li>
 </ul>
@@ -298,10 +298,10 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
 
 <h3>What You Will Experience</h3>
 <ul>
-<li><strong>Speed normalises:</strong> Most daily tasks &mdash; booking, check-in, payment &mdash; now take the same time or less than your old system. The initial slowness is gone.</li>
+<li><strong>Speed normalises:</strong> Most daily tasks - booking, check-in, payment - now take the same time or less than your old system. The initial slowness is gone.</li>
 <li><strong>Feature discovery:</strong> Staff start stumbling onto features they did not know existed. "Did you know it can automatically message clients who haven't rebooked?" These organic discoveries build genuine enthusiasm.</li>
 <li><strong>Fewer support questions:</strong> The number of "how do I...?" questions drops sharply. Remaining questions tend to be about advanced features rather than basic operations.</li>
-<li><strong>Client feedback arrives:</strong> Some clients will comment on the new booking experience &mdash; most positively ("the new booking link is so much easier"), occasionally noting something they miss. Pay attention to patterns, not individual comments.</li>
+<li><strong>Client feedback arrives:</strong> Some clients will comment on the new booking experience - most positively ("the new booking link is so much easier"), occasionally noting something they miss. Pay attention to patterns, not individual comments.</li>
 </ul>
 
 <h3>Key Milestones to Track</h3>
@@ -314,7 +314,7 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
 <h3>What to Do This Week</h3>
 <ul>
 <li>Schedule a 15-minute team check-in to discuss what is working, what is not, and what features people want to explore.</li>
-<li>Explore one advanced feature you have not set up yet &mdash; perhaps the <a href="/en/features/business/marketing-promotions">marketing automation</a>, loyalty programme, or analytics dashboard.</li>
+<li>Explore one advanced feature you have not set up yet - perhaps the <a href="/en/features/business/marketing-promotions">marketing automation</a>, loyalty programme, or analytics dashboard.</li>
 <li>Review your first weekly performance report from the new platform. Compare key metrics (revenue, bookings, client visits) to the same week last month on your old system.</li>
 </ul>
 
@@ -340,7 +340,7 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
 <h3>What to Do This Week</h3>
 <ul>
 <li>Activate at least one revenue-generating feature you did not have on your old platform.</li>
-<li>Send a targeted campaign to your top 20% of clients &mdash; a loyalty reward, early access to a new service, or a personal thank-you message.</li>
+<li>Send a targeted campaign to your top 20% of clients - a loyalty reward, early access to a new service, or a personal thank-you message.</li>
 <li>Review your <a href="/en/features/business/analytics-reports">analytics dashboard</a> in depth. Identify one metric you want to improve and set a 30-day goal.</li>
 </ul>
 
@@ -372,10 +372,10 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
 <li><strong>Month 2:</strong> Advanced features optimised, marketing campaigns running, AI fully trained on your business patterns. Revenue impact: 10-25% improvement.</li>
 <li><strong>Month 3:</strong> Full platform utilisation, compound effects of client acquisition and retention features, data-driven decisions. Revenue impact: 15-35% improvement.</li>
 </ul>
-<p>These are conservative estimates based on businesses that actively use their platform's capabilities. Salons that treat their platform as just a booking calendar see minimal improvement. Those that embrace the full ecosystem &mdash; AI, marketing, analytics, client acquisition &mdash; see transformative results.</p>
+<p>These are conservative estimates based on businesses that actively use their platform's capabilities. Salons that treat their platform as just a booking calendar see minimal improvement. Those that embrace the full ecosystem - AI, marketing, analytics, client acquisition - see transformative results.</p>
 
 <h2>Why Modern Platforms Deliver Results Legacy Software Cannot</h2>
-<p>If you are coming from a traditional salon software that focused on operations &mdash; calendar, POS, basic reports &mdash; the shift to a platform like The Daisy is fundamentally different. Traditional software manages your existing business. A modern platform <strong>grows</strong> your business.</p>
+<p>If you are coming from a traditional salon software that focused on operations - calendar, POS, basic reports - the shift to a platform like The Daisy is fundamentally different. Traditional software manages your existing business. A modern platform <strong>grows</strong> your business.</p>
 <p>The difference includes:</p>
 <ul>
 <li><strong>Client acquisition:</strong> Traditional software waits for clients to find you. The Daisy's marketplace, cashback programme, and AI-powered marketing actively bring new clients to your door.</li>
@@ -391,13 +391,13 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
 <p>Most staff reach basic competency within 3-5 days of hands-on use. Full confidence with all relevant features typically takes 2-3 weeks. The speed depends on the platform's design quality and how much support is available. Modern platforms with intuitive interfaces and in-app guidance have significantly shorter learning curves than legacy systems.</p>
 
 <h3>Will my clients notice the switch?</h3>
-<p>Clients will notice the new booking interface, which should be an improvement. They may also notice better reminder messages, a smoother check-in process, and new features like cashback rewards. The transition is typically a positive experience for clients. Some long-time clients may ask about the change &mdash; a brief, positive explanation is all that is needed.</p>
+<p>Clients will notice the new booking interface, which should be an improvement. They may also notice better reminder messages, a smoother check-in process, and new features like cashback rewards. The transition is typically a positive experience for clients. Some long-time clients may ask about the change - a brief, positive explanation is all that is needed.</p>
 
 <h3>What if my revenue dips in the first week of switching?</h3>
 <p>A minor dip in the first few days is possible if booking links are not fully updated or if staff are slower at processing. This normalises quickly. If you follow a structured migration plan with parallel operation, any dip is minimal and temporary. By week 2-3, most salons are at or above their pre-switch revenue levels.</p>
 
 <h3>Should I wait for a quiet period to switch salon software?</h3>
-<p>Switching during your slowest week or two reduces pressure, but do not wait months for the "perfect" time &mdash; it does not exist. The opportunity cost of staying on a suboptimal platform during busy periods is higher than the short-term inconvenience of switching. Most salons choose a Monday start so the first week includes a weekend to catch up on any issues.</p>
+<p>Switching during your slowest week or two reduces pressure, but do not wait months for the "perfect" time - it does not exist. The opportunity cost of staying on a suboptimal platform during busy periods is higher than the short-term inconvenience of switching. Most salons choose a Monday start so the first week includes a weekend to catch up on any issues.</p>
 
 <h3>How do I know if my new platform is working better than the old one?</h3>
 <p>Track three metrics before and after: revenue per day, no-show rate, and online booking percentage. If all three improve within 30 days, your switch is successful. Also track qualitative signals: Is your team spending less time on admin? Are clients commenting positively on the booking experience? Are you seeing new clients from channels you did not have before?</p>
@@ -465,13 +465,13 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
 <p><em>Example: 15 missed calls/week x $80 average booking x 50% conversion = $600/week = $2,400/month in recovered revenue.</em></p>
 
 <h4>Reduced No-Shows</h4>
-<p>Automated reminders via SMS, WhatsApp, and email reduce no-shows by 15-40%. Every no-show is a time slot that cannot be resold &mdash; it is pure lost revenue.</p>
+<p>Automated reminders via SMS, WhatsApp, and email reduce no-shows by 15-40%. Every no-show is a time slot that cannot be resold - it is pure lost revenue.</p>
 <p><strong>How to calculate:</strong> Take your current no-show rate and multiply by your total weekly appointment slots and average booking value. Then estimate the reduction from automated reminders.</p>
 <p><em>Example: 8 no-shows/week x $75 average value = $600/week lost. A 30% reduction recovers $180/week = $720/month.</em></p>
 
 <h4>New Client Acquisition</h4>
 <p>Platforms with marketplace visibility, cashback programmes, and integrated marketing bring in clients who would not have found you otherwise. This is revenue your current software cannot generate because it was not designed to.</p>
-<p><strong>How to calculate:</strong> Estimate new clients per month from platform-specific channels. Multiply by average first-visit value. Factor in the lifetime value &mdash; a new client who returns 6 times over the next year is worth far more than their first visit.</p>
+<p><strong>How to calculate:</strong> Estimate new clients per month from platform-specific channels. Multiply by average first-visit value. Factor in the lifetime value - a new client who returns 6 times over the next year is worth far more than their first visit.</p>
 <p><em>Example: 10 new marketplace clients/month x $90 first visit = $900/month in immediate revenue. At an average lifetime value of $540 per client, the annualised impact is $5,400/month in projected recurring revenue.</em></p>
 
 <h4>Increased Average Ticket Value</h4>
@@ -492,7 +492,7 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
 <p><strong>How to calculate:</strong> Track new client sources monthly. As platform-driven acquisition grows, gradually reduce spending on channels delivering lower ROI. A conservative estimate is a 20-30% reduction in paid marketing spend within 3-6 months.</p>
 
 <h4>Reduced Material and Communication Costs</h4>
-<p>Automated digital communication replaces printed reminders, manual SMS sending, and phone time. While individually small, these costs add up &mdash; especially for salons still using manual confirmation calls.</p>
+<p>Automated digital communication replaces printed reminders, manual SMS sending, and phone time. While individually small, these costs add up - especially for salons still using manual confirmation calls.</p>
 
 <h3>Pillar 3: Time Savings</h3>
 <p>Time savings are often the most valuable but hardest to quantify. For owner-operators, every hour saved on admin is an hour available for revenue-generating activities or personal recovery.</p>
@@ -567,7 +567,7 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
 <li>Monthly ROI: <strong>3,293%</strong></li>
 </ul>
 
-<p>Even if you cut these estimates in half to be conservative, the ROI remains compelling. The question is not whether switching pays off &mdash; it is how quickly.</p>
+<p>Even if you cut these estimates in half to be conservative, the ROI remains compelling. The question is not whether switching pays off - it is how quickly.</p>
 
 <h2>Common Objections and How to Evaluate Them</h2>
 
@@ -596,19 +596,19 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How quickly should I expect to see ROI from switching salon software?</h3>
-<p>Most salons see measurable improvements within the first 30 days &mdash; primarily from reduced no-shows and recovered missed bookings. Full ROI typically materialises within 60-90 days as you activate growth features, AI learns your business patterns, and new client acquisition channels ramp up. The one-time switching costs (time, effort, any overlap fees) are usually recovered within the first month of operation.</p>
+<p>Most salons see measurable improvements within the first 30 days - primarily from reduced no-shows and recovered missed bookings. Full ROI typically materialises within 60-90 days as you activate growth features, AI learns your business patterns, and new client acquisition channels ramp up. The one-time switching costs (time, effort, any overlap fees) are usually recovered within the first month of operation.</p>
 
-<h3>What if my salon is small &mdash; does the ROI still work?</h3>
+<h3>What if my salon is small - does the ROI still work?</h3>
 <p>Yes. In fact, the ROI can be even more compelling for small salons. A solo operator or 2-3 person salon where the owner handles everything benefits enormously from AI automation and time savings. The revenue gains are proportionally smaller in absolute terms but the time savings value is often higher because the owner's time is the most constrained and valuable resource.</p>
 
 <h3>Should I factor in switching costs when calculating ROI?</h3>
-<p>Yes, but keep them in perspective. Switching costs include staff training time (typically 2-4 hours per person), any overlap period where you pay for both platforms (usually 1 month), and the time spent on data migration and setup (typically 4-8 hours total). For most salons, total switching costs are equivalent to one to two months of the new platform's subscription &mdash; recovered quickly by the ongoing benefits.</p>
+<p>Yes, but keep them in perspective. Switching costs include staff training time (typically 2-4 hours per person), any overlap period where you pay for both platforms (usually 1 month), and the time spent on data migration and setup (typically 4-8 hours total). For most salons, total switching costs are equivalent to one to two months of the new platform's subscription - recovered quickly by the ongoing benefits.</p>
 
 <h3>How do I compare ROI between different salon platforms?</h3>
 <p>Apply the same four-pillar framework to each platform you are evaluating. Pay special attention to which revenue-generating features each platform offers. A cheaper platform without client acquisition, AI automation, or growth analytics may cost less per month but deliver dramatically less value. The platform with the highest net benefit (gains minus costs) wins, regardless of which has the lowest sticker price.</p>
 
 <h3>What is a good ROI to expect from salon software?</h3>
-<p>A well-utilised modern platform should deliver a minimum of 5x ROI &mdash; meaning for every dollar you spend on the subscription, you gain at least five dollars in revenue, savings, or time value. Top-performing salons using platforms like The Daisy report 10-30x ROI because the compound effect of AI automation, client acquisition, and growth analytics creates outsized returns relative to the subscription cost.</p>
+<p>A well-utilised modern platform should deliver a minimum of 5x ROI - meaning for every dollar you spend on the subscription, you gain at least five dollars in revenue, savings, or time value. Top-performing salons using platforms like The Daisy report 10-30x ROI because the compound effect of AI automation, client acquisition, and growth analytics creates outsized returns relative to the subscription cost.</p>
 `,
     metaTitle: 'Calculate ROI of Switching Salon Software | Daisy',
     metaDescription:

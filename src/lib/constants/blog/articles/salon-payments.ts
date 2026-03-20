@@ -44,9 +44,9 @@ const salonPosBuyersGuideArticle: LocalBlogPost = {
       'A definitive buyer\'s guide to salon POS systems covering hardware selection, essential features, integration requirements, and total cost of ownership. Includes a decision framework for single-location and multi-branch salons.',
     aboutPosts: `
 <h2>What a POS System Really Does for a Modern Salon</h2>
-<p>A salon point-of-sale system is the transactional backbone of every client interaction &mdash; and in 2026, it determines far more than how you accept payments. The right POS connects your <a href="/en/resources/blog/businesses/salon-payment-solutions">payment workflow</a> to appointments, inventory, staff commissions, client profiles, and financial reporting in a single integrated loop. The wrong system fragments these processes, creating manual workarounds that cost you hours every week and money every month.</p>
+<p>A salon point-of-sale system is the transactional backbone of every client interaction - and in 2026, it determines far more than how you accept payments. The right POS connects your <a href="/en/resources/blog/businesses/salon-payment-solutions">payment workflow</a> to appointments, inventory, staff commissions, client profiles, and financial reporting in a single integrated loop. The wrong system fragments these processes, creating manual workarounds that cost you hours every week and money every month.</p>
 <p>According to a 2025 National Retail Federation report, businesses that upgraded to integrated POS systems saw a 23% reduction in checkout time and a 12% increase in average transaction value within the first six months. For salons specifically, where the checkout experience is the last impression before a client leaves, these numbers translate directly into retention and revenue.</p>
-<p>This buyer&rsquo;s guide walks through every decision you need to make when selecting a salon POS &mdash; from hardware form factors and payment method support to integration depth and long-term cost of ownership. Whether you are opening your first location or upgrading an existing multi-branch operation, this guide gives you the framework to evaluate and choose with confidence.</p>
+<p>This buyer&rsquo;s guide walks through every decision you need to make when selecting a salon POS - from hardware form factors and payment method support to integration depth and long-term cost of ownership. Whether you are opening your first location or upgrading an existing multi-branch operation, this guide gives you the framework to evaluate and choose with confidence.</p>
 
 <h2>Hardware: Terminal Types and What Each Suits Best</h2>
 <p>Your first decision is physical: what hardware sits at your front desk and, increasingly, in the hands of your stylists? There are four main form factors, and most salons benefit from a combination.</p>
@@ -84,7 +84,7 @@ const salonPosBuyersGuideArticle: LocalBlogPost = {
 <p>Digital tipping prompts on the payment screen increase average tip amounts by 15&ndash;20% compared to cash-only tipping. Your POS should present configurable suggested percentages (15%, 20%, 25% is standard), allow custom amounts, and support tip splitting across multiple staff members who contributed to a service.</p>
 
 <h3>Client Profile Integration</h3>
-<p>Every transaction should enrich the client&rsquo;s profile with spending history, preferred payment methods, product purchases, and visit frequency. This data powers personalised marketing, loyalty programs, and client lifetime value analysis. A POS that does not connect to client profiles is a standalone cash register &mdash; not a business tool.</p>
+<p>Every transaction should enrich the client&rsquo;s profile with spending history, preferred payment methods, product purchases, and visit frequency. This data powers personalised marketing, loyalty programs, and client lifetime value analysis. A POS that does not connect to client profiles is a standalone cash register - not a business tool.</p>
 
 <h3>Staff-Level Reporting</h3>
 <p>Revenue, average ticket value, product sales, tips, and service mix broken down by individual staff member. This data is essential for commission calculations, performance reviews, scheduling optimisation, and identifying training opportunities.</p>
@@ -99,7 +99,7 @@ const salonPosBuyersGuideArticle: LocalBlogPost = {
 <p>Internet outages should not halt your business. The POS should queue transactions during connectivity issues and process them when the connection restores. This is critical for mobile professionals and any location where internet reliability is inconsistent.</p>
 
 <h2>Integration Depth: The Make-or-Break Factor</h2>
-<p>The most important evaluation criterion for a salon POS is not the payment processing rate &mdash; it is how deeply the POS integrates with the rest of your business tools.</p>
+<p>The most important evaluation criterion for a salon POS is not the payment processing rate - it is how deeply the POS integrates with the rest of your business tools.</p>
 
 <h3>Shallow Integration (Standalone POS)</h3>
 <p>A standalone POS processes payments but does not connect to your booking system, client database, or inventory. You export data manually or use third-party connectors. This creates data silos, duplicate entry, and reconciliation headaches.</p>
@@ -110,8 +110,8 @@ const salonPosBuyersGuideArticle: LocalBlogPost = {
 <p><strong>Example:</strong> You use a salon management platform that integrates with Stripe. Payments sync to client profiles within a few minutes, but tip allocation and commission calculations may require manual steps.</p>
 
 <h3>Deep Integration (Native Platform POS)</h3>
-<p>The POS is built into the same platform that handles booking, client management, staff scheduling, and communication. There is no sync because there is no separation &mdash; a payment is automatically connected to the appointment, the client, the staff member, the commission, and the financial report.</p>
-<p><strong>Example:</strong> <a href="/en/features/business/payment-processing">The Daisy&rsquo;s integrated payment system</a> processes the payment, updates the client profile, calculates the staff commission, adjusts inventory for products used, triggers a digital receipt via WhatsApp, and records the transaction in your financial dashboard &mdash; all in one step.</p>
+<p>The POS is built into the same platform that handles booking, client management, staff scheduling, and communication. There is no sync because there is no separation - a payment is automatically connected to the appointment, the client, the staff member, the commission, and the financial report.</p>
+<p><strong>Example:</strong> <a href="/en/features/business/payment-processing">The Daisy&rsquo;s integrated payment system</a> processes the payment, updates the client profile, calculates the staff commission, adjusts inventory for products used, triggers a digital receipt via WhatsApp, and records the transaction in your financial dashboard - all in one step.</p>
 <p>For most salons, deep integration saves 5&ndash;10 hours per week in administrative work compared to shallow integration, and eliminates the data discrepancies that lead to commission disputes and inaccurate reporting.</p>
 
 <h2>Total Cost of Ownership: Beyond the Processing Rate</h2>
@@ -135,7 +135,7 @@ const salonPosBuyersGuideArticle: LocalBlogPost = {
 
 <h3>Hidden Fees to Investigate</h3>
 <ul>
-<li>Equipment lease fees (never lease &mdash; always buy outright)</li>
+<li>Equipment lease fees (never lease - always buy outright)</li>
 <li>PCI compliance surcharges (reputable providers include this)</li>
 <li>Early termination penalties (avoid long-term contracts)</li>
 <li>Chargeback fees (typically 50&ndash;100 AED per dispute)</li>
@@ -240,8 +240,8 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
       'A comprehensive guide to salon tipping covering etiquette standards, how to set a clear tipping policy for your business, digital tipping solutions that increase gratuities, and tip distribution models that keep your team happy.',
     aboutPosts: `
 <h2>Tipping in the Beauty Industry: The Current Landscape</h2>
-<p>Tipping accounts for 15&ndash;25% of a beauty professional&rsquo;s total compensation in most markets. Yet most salons have no formal tipping policy &mdash; leaving clients confused about expectations, staff uncertain about their income, and owners caught in the middle of disputes over tip distribution. A well-designed tipping framework within your <a href="/en/resources/blog/businesses/salon-payment-solutions">salon payment workflow</a> eliminates this ambiguity for everyone involved.</p>
-<p>The shift to digital payments has fundamentally changed tipping dynamics. Cash tips are declining as fewer clients carry physical currency. A 2025 Square report found that digital tip prompts increase average gratuity by 18% compared to cash-only tipping &mdash; but only when the tipping interface is well-designed and naturally integrated into the checkout experience. Salons that ignore this shift are effectively reducing their team&rsquo;s income.</p>
+<p>Tipping accounts for 15&ndash;25% of a beauty professional&rsquo;s total compensation in most markets. Yet most salons have no formal tipping policy - leaving clients confused about expectations, staff uncertain about their income, and owners caught in the middle of disputes over tip distribution. A well-designed tipping framework within your <a href="/en/resources/blog/businesses/salon-payment-solutions">salon payment workflow</a> eliminates this ambiguity for everyone involved.</p>
+<p>The shift to digital payments has fundamentally changed tipping dynamics. Cash tips are declining as fewer clients carry physical currency. A 2025 Square report found that digital tip prompts increase average gratuity by 18% compared to cash-only tipping - but only when the tipping interface is well-designed and naturally integrated into the checkout experience. Salons that ignore this shift are effectively reducing their team&rsquo;s income.</p>
 <p>This guide covers everything you need to build a clear, fair, and modern tipping system for your salon.</p>
 
 <h2>Tipping Etiquette: What Clients Actually Expect</h2>
@@ -279,7 +279,7 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
 <p>Digital tips processed through your POS should be included in the next regular payroll cycle. Cash tips are typically taken home the same day. Be clear about this timing so staff understand when to expect digital tip payments.</p>
 
 <h3>Tax Implications</h3>
-<p>In most jurisdictions, tips are taxable income for the recipient. Your policy should note that staff are responsible for reporting tip income according to local tax regulations. As the business owner, you may have reporting obligations as well &mdash; consult your accountant for jurisdiction-specific requirements.</p>
+<p>In most jurisdictions, tips are taxable income for the recipient. Your policy should note that staff are responsible for reporting tip income according to local tax regulations. As the business owner, you may have reporting obligations as well - consult your accountant for jurisdiction-specific requirements.</p>
 
 <h2>Digital Tipping: Setup and Optimisation</h2>
 <p>Digital tipping through your POS or salon management platform is the single most impactful change you can make to your team&rsquo;s tip income. Here is how to implement and optimise it.</p>
@@ -289,7 +289,7 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
 <ul>
 <li><strong>Three preset percentages plus custom:</strong> Display three suggested percentages (e.g., 15%, 20%, 25%) and a &ldquo;Custom Amount&rdquo; option. Three choices avoid decision paralysis; four or more slow down the checkout.</li>
 <li><strong>Default highlight:</strong> Visually highlight the middle option (20%) without pre-selecting it. This uses the anchoring effect to nudge clients toward a reasonable amount without feeling manipulative.</li>
-<li><strong>Show dollar amounts:</strong> Display both the percentage and the calculated amount (&ldquo;20% &mdash; 60 AED&rdquo;). Clients process concrete numbers faster than percentages, especially for high-value services.</li>
+<li><strong>Show dollar amounts:</strong> Display both the percentage and the calculated amount (&ldquo;20% - 60 AED&rdquo;). Clients process concrete numbers faster than percentages, especially for high-value services.</li>
 <li><strong>Include a no-tip option:</strong> Always include a clear &ldquo;No Tip&rdquo; or &ldquo;Skip&rdquo; button. Hiding this option creates resentment and negative reviews. Making it visible but slightly less prominent than the tip options is the right balance.</li>
 </ul>
 <p>The Daisy&rsquo;s <a href="/en/features/business/payment-processing">integrated payment system</a> includes fully configurable tipping prompts that salon owners can customise by service type, price tier, and staff member preferences.</p>
@@ -316,7 +316,7 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
 <p>If tip pooling is not your model, significant disparities between team members may indicate coaching opportunities. A stylist consistently receiving below-average tips may benefit from service quality feedback, upselling training, or client communication coaching rather than a change in tip structure.</p>
 
 <h3>Preventing Tip Solicitation</h3>
-<p>Your policy should prohibit staff from directly asking clients for tips or commenting on tip amounts. The digital prompt handles the ask professionally. Staff who pressure clients for tips create an uncomfortable experience that drives clients away &mdash; costing more in lost revenue than any individual tip is worth.</p>
+<p>Your policy should prohibit staff from directly asking clients for tips or commenting on tip amounts. The digital prompt handles the ask professionally. Staff who pressure clients for tips create an uncomfortable experience that drives clients away - costing more in lost revenue than any individual tip is worth.</p>
 
 <h2>Cash Tips vs Digital Tips: A Practical Comparison</h2>
 <p>Both coexist in most salons. Here is how they compare:</p>
@@ -407,7 +407,7 @@ const contactlessPaymentsArticle: LocalBlogPost = {
       'A step-by-step guide to setting up contactless payments in your salon. Covers NFC terminals, mobile wallets, QR code payments, tap-to-pay on phone, and how to train your team for a seamless client checkout experience.',
     aboutPosts: `
 <h2>Why Contactless Payments Are Now the Default</h2>
-<p>Contactless payments &mdash; where a client taps a card, phone, or wearable device against a reader to pay &mdash; have become the dominant checkout method in beauty businesses worldwide. In the GCC region, contactless transactions accounted for 78% of in-person card payments in 2025, up from 54% in 2022, according to Visa&rsquo;s Middle East Payments Report. Your <a href="/en/resources/blog/businesses/salon-payment-solutions">salon payment infrastructure</a> needs to meet this demand seamlessly.</p>
+<p>Contactless payments - where a client taps a card, phone, or wearable device against a reader to pay - have become the dominant checkout method in beauty businesses worldwide. In the GCC region, contactless transactions accounted for 78% of in-person card payments in 2025, up from 54% in 2022, according to Visa&rsquo;s Middle East Payments Report. Your <a href="/en/resources/blog/businesses/salon-payment-solutions">salon payment infrastructure</a> needs to meet this demand seamlessly.</p>
 <p>For salons specifically, contactless checkout offers three tangible advantages: faster transaction times (under 5 seconds vs 15&ndash;30 seconds for chip-and-PIN), a more hygienic experience (no shared PIN pads), and higher client satisfaction scores. A 2025 Mastercard beauty industry study found that salons offering contactless payments had 14% higher client satisfaction at checkout compared to those limited to chip-and-PIN or cash.</p>
 <p>This guide walks you through everything you need to enable contactless payments in your salon, from hardware selection to staff training.</p>
 
@@ -424,10 +424,10 @@ const contactlessPaymentsArticle: LocalBlogPost = {
 <p>Smartwatches (Apple Watch, Samsung Galaxy Watch, Garmin Pay) use the same NFC technology as phones. The client double-taps the watch button and holds their wrist near the reader. This is growing among fitness and wellness-focused clients.</p>
 
 <h3>QR Code Payments</h3>
-<p>The terminal or checkout screen displays a QR code that the client scans with their phone&rsquo;s camera or banking app. The payment is completed in the client&rsquo;s app. QR payments are popular in markets where NFC infrastructure is less widespread, and they work without specialised hardware &mdash; any screen that displays a QR code is sufficient.</p>
+<p>The terminal or checkout screen displays a QR code that the client scans with their phone&rsquo;s camera or banking app. The payment is completed in the client&rsquo;s app. QR payments are popular in markets where NFC infrastructure is less widespread, and they work without specialised hardware - any screen that displays a QR code is sufficient.</p>
 
 <h3>Tap-to-Pay on Phone</h3>
-<p>Your staff uses an iPhone or Android phone as the payment terminal itself &mdash; no separate hardware required. The client taps their card or phone against the staff member&rsquo;s device. Apple Tap to Pay, Google Tap to Pay for Business, and Stripe Tap to Pay enable this. It is ideal for mobile professionals and small salons that want to avoid hardware costs.</p>
+<p>Your staff uses an iPhone or Android phone as the payment terminal itself - no separate hardware required. The client taps their card or phone against the staff member&rsquo;s device. Apple Tap to Pay, Google Tap to Pay for Business, and Stripe Tap to Pay enable this. It is ideal for mobile professionals and small salons that want to avoid hardware costs.</p>
 
 <h2>Hardware Requirements for Each Method</h2>
 
@@ -435,10 +435,10 @@ const contactlessPaymentsArticle: LocalBlogPost = {
 <p>You need an NFC-enabled payment terminal. Most modern terminals manufactured after 2020 include NFC. If your terminal is older, it likely does not support contactless.</p>
 <p><strong>Recommended devices:</strong></p>
 <ul>
-<li>Stripe Terminal BBPOS WisePOS E &mdash; countertop, colour touchscreen, all-in-one</li>
-<li>Square Terminal &mdash; countertop with built-in receipt printer and tipping screen</li>
-<li>SumUp Air &mdash; portable Bluetooth reader, pairs with phone</li>
-<li>Platform-integrated readers &mdash; devices provided by your salon management platform for seamless checkout</li>
+<li>Stripe Terminal BBPOS WisePOS E - countertop, colour touchscreen, all-in-one</li>
+<li>Square Terminal - countertop with built-in receipt printer and tipping screen</li>
+<li>SumUp Air - portable Bluetooth reader, pairs with phone</li>
+<li>Platform-integrated readers - devices provided by your salon management platform for seamless checkout</li>
 </ul>
 
 <h3>For QR Code Payments</h3>
@@ -494,7 +494,7 @@ const contactlessPaymentsArticle: LocalBlogPost = {
 <p>Setting up the hardware is only half the job. Optimising the checkout flow determines whether contactless delivers its full speed and satisfaction benefits.</p>
 
 <h3>Pre-Calculate the Total</h3>
-<p>Have the total ready on the terminal screen before the client approaches the desk. In an integrated system like The Daisy, the appointment automatically populates the checkout total. In disconnected systems, the receptionist must manually enter the amount &mdash; this is where seconds (and client patience) are lost.</p>
+<p>Have the total ready on the terminal screen before the client approaches the desk. In an integrated system like The Daisy, the appointment automatically populates the checkout total. In disconnected systems, the receptionist must manually enter the amount - this is where seconds (and client patience) are lost.</p>
 
 <h3>Present Tipping Before the Tap</h3>
 <p>The tipping prompt must appear before the client taps, not after. Once the client has tapped and the transaction is processing, the interaction feels complete. Inserting a tipping screen after the tap feels like an afterthought and reduces tip rates by up to 30% compared to pre-tap prompts.</p>
@@ -503,7 +503,7 @@ const contactlessPaymentsArticle: LocalBlogPost = {
 <p>After a contactless payment, ask &ldquo;Shall I send the receipt to your email or WhatsApp?&rdquo; rather than &ldquo;Would you like a receipt?&rdquo;. The first phrasing assumes the receipt is wanted (it usually is) and offers a choice of convenient delivery. The Daisy sends automatic post-visit receipts through the client&rsquo;s preferred communication channel.</p>
 
 <h3>Handle Failures Gracefully</h3>
-<p>Contactless transactions occasionally fail due to card positioning, NFC interference, or connectivity issues. Train staff to respond calmly: &ldquo;Let&rsquo;s try once more &mdash; hold your card flat against the reader for a moment.&rdquo; If the second attempt fails, switch to chip-and-PIN without making the client feel like they did something wrong.</p>
+<p>Contactless transactions occasionally fail due to card positioning, NFC interference, or connectivity issues. Train staff to respond calmly: &ldquo;Let&rsquo;s try once more - hold your card flat against the reader for a moment.&rdquo; If the second attempt fails, switch to chip-and-PIN without making the client feel like they did something wrong.</p>
 
 <h2>Security Considerations</h2>
 <p>Contactless payments are more secure than chip-and-PIN for several reasons:</p>
@@ -537,7 +537,7 @@ const contactlessPaymentsArticle: LocalBlogPost = {
 <p>Yes. Apple Tap to Pay (iPhone XS or newer) and Google Tap to Pay for Business (NFC-enabled Android phones) let you accept contactless card and mobile wallet payments directly on your phone. This is ideal for mobile professionals, pop-up events, or as a backup payment method.</p>
 
 <h3>Do I need different hardware for Apple Pay vs Google Pay?</h3>
-<p>No. Any NFC-enabled payment terminal accepts all contactless methods &mdash; physical cards, Apple Pay, Google Pay, Samsung Pay, and wearable payments. They all use the same NFC protocol. One terminal handles everything.</p>
+<p>No. Any NFC-enabled payment terminal accepts all contactless methods - physical cards, Apple Pay, Google Pay, Samsung Pay, and wearable payments. They all use the same NFC protocol. One terminal handles everything.</p>
 `,
     metaTitle: 'Contactless Payments for Salons | Daisy',
     metaDescription:
@@ -586,7 +586,7 @@ const salonInvoicingArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Why Professional Invoicing Matters for Salons</h2>
 <p>Most salons collect payment at the point of service and never think about invoicing. But as your business grows into packages, memberships, corporate accounts, bridal bookings, and multi-visit treatments, professional invoicing becomes essential. A structured invoicing workflow within your <a href="/en/resources/blog/businesses/salon-payment-solutions">salon payment system</a> reduces overdue payments, professionalises your brand, creates clean financial records, and eliminates the awkward &ldquo;you still owe us&rdquo; conversations.</p>
-<p>Salons that implement professional invoicing reduce overdue payments by 40&ndash;60% compared to those relying on verbal agreements and informal follow-ups, according to a 2025 Intuit small business payments study. The reason is simple: a formal invoice creates a clear record with a stated amount, due date, and payment method &mdash; removing ambiguity from the transaction.</p>
+<p>Salons that implement professional invoicing reduce overdue payments by 40&ndash;60% compared to those relying on verbal agreements and informal follow-ups, according to a 2025 Intuit small business payments study. The reason is simple: a formal invoice creates a clear record with a stated amount, due date, and payment method - removing ambiguity from the transaction.</p>
 <p>This guide shows you how to set up professional invoicing for every billing scenario your salon encounters.</p>
 
 <h2>When Salons Need Invoicing</h2>
@@ -610,23 +610,23 @@ const salonInvoicingArticle: LocalBlogPost = {
 <h2>What Every Salon Invoice Should Include</h2>
 <p>A professional salon invoice contains these elements:</p>
 <ol>
-<li><strong>Your salon name, logo, and contact information</strong> &mdash; brand consistency matters even on financial documents.</li>
-<li><strong>Invoice number</strong> &mdash; sequential and unique (e.g., INV-2026-0142). This is essential for record-keeping and reference in any follow-up communication.</li>
-<li><strong>Client name and contact details</strong> &mdash; personalised to the specific client or corporate account.</li>
-<li><strong>Invoice date and due date</strong> &mdash; &ldquo;Due upon receipt&rdquo; for individual clients, &ldquo;Net 30&rdquo; for corporate accounts.</li>
-<li><strong>Itemised services and/or products</strong> &mdash; each line item with description, quantity, unit price, and line total.</li>
-<li><strong>Tax breakdown</strong> &mdash; VAT or applicable sales tax calculated and shown separately.</li>
-<li><strong>Total amount due</strong> &mdash; clearly displayed, including any deposits already paid.</li>
-<li><strong>Payment methods accepted</strong> &mdash; card, bank transfer, online payment link.</li>
-<li><strong>Payment link</strong> &mdash; a clickable link that takes the client directly to a secure payment page. This single addition reduces average time-to-payment by 65% according to Stripe&rsquo;s 2025 invoicing data.</li>
-<li><strong>Terms and conditions</strong> &mdash; cancellation policy, refund policy, and late payment terms.</li>
+<li><strong>Your salon name, logo, and contact information</strong> - brand consistency matters even on financial documents.</li>
+<li><strong>Invoice number</strong> - sequential and unique (e.g., INV-2026-0142). This is essential for record-keeping and reference in any follow-up communication.</li>
+<li><strong>Client name and contact details</strong> - personalised to the specific client or corporate account.</li>
+<li><strong>Invoice date and due date</strong> - &ldquo;Due upon receipt&rdquo; for individual clients, &ldquo;Net 30&rdquo; for corporate accounts.</li>
+<li><strong>Itemised services and/or products</strong> - each line item with description, quantity, unit price, and line total.</li>
+<li><strong>Tax breakdown</strong> - VAT or applicable sales tax calculated and shown separately.</li>
+<li><strong>Total amount due</strong> - clearly displayed, including any deposits already paid.</li>
+<li><strong>Payment methods accepted</strong> - card, bank transfer, online payment link.</li>
+<li><strong>Payment link</strong> - a clickable link that takes the client directly to a secure payment page. This single addition reduces average time-to-payment by 65% according to Stripe&rsquo;s 2025 invoicing data.</li>
+<li><strong>Terms and conditions</strong> - cancellation policy, refund policy, and late payment terms.</li>
 </ol>
 
 <h2>Automating Your Invoicing Workflow</h2>
 <p>Manual invoice creation for every transaction is not scalable. Here is how to automate each billing scenario:</p>
 
 <h3>Point-of-Service Invoicing</h3>
-<p>Your salon management platform should generate an invoice automatically at checkout. When the client completes payment, the system creates an itemised invoice/receipt and delivers it via email, SMS, or WhatsApp. <a href="/en/features/business/payment-processing">The Daisy</a> handles this automatically &mdash; every completed appointment generates a branded invoice sent to the client&rsquo;s preferred communication channel.</p>
+<p>Your salon management platform should generate an invoice automatically at checkout. When the client completes payment, the system creates an itemised invoice/receipt and delivers it via email, SMS, or WhatsApp. <a href="/en/features/business/payment-processing">The Daisy</a> handles this automatically - every completed appointment generates a branded invoice sent to the client&rsquo;s preferred communication channel.</p>
 
 <h3>Deposit Invoicing</h3>
 <p>When a client books a service requiring a deposit, the system should automatically generate and send a deposit invoice with the amount, due date, and a payment link. Configure this as a booking trigger: &ldquo;For bookings over 500 AED, send a 30% deposit invoice within 1 hour of booking confirmation.&rdquo;</p>
@@ -653,8 +653,8 @@ const salonInvoicingArticle: LocalBlogPost = {
 <ul>
 <li><strong>Require stored payment methods</strong> for all clients with recurring bookings or memberships.</li>
 <li><strong>Collect at the point of service</strong> for individual appointments whenever possible.</li>
-<li><strong>Include payment links</strong> on every invoice &mdash; reducing payment friction reduces overdue rates.</li>
-<li><strong>Set clear terms at booking</strong> &mdash; &ldquo;Payment is due at checkout. Deposits are non-refundable within 48 hours of the appointment.&rdquo;</li>
+<li><strong>Include payment links</strong> on every invoice - reducing payment friction reduces overdue rates.</li>
+<li><strong>Set clear terms at booking</strong> - &ldquo;Payment is due at checkout. Deposits are non-refundable within 48 hours of the appointment.&rdquo;</li>
 </ul>
 
 <h2>Invoice Design and Branding</h2>
@@ -746,7 +746,7 @@ const freelanceStylistPaymentArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>The Freelance Payment Landscape in 2026</h2>
 <p>As a freelance stylist or independent beauty professional, how you accept payment directly affects your income, your professionalism, and your client relationships. The right payment setup eliminates awkward money conversations, reduces late payments, and ensures you get paid for every service you deliver. A well-structured payment workflow is as important as your technical skills when building a sustainable freelance beauty business.</p>
-<p>The payment landscape for freelancers has expanded dramatically. Five years ago, most independent beauty pros relied on cash and bank transfers. Today, you have a dozen options &mdash; each with different costs, convenience levels, and client expectations. This guide compares every payment method available to freelance beauty professionals so you can choose the combination that works best for your business model, client base, and location.</p>
+<p>The payment landscape for freelancers has expanded dramatically. Five years ago, most independent beauty pros relied on cash and bank transfers. Today, you have a dozen options - each with different costs, convenience levels, and client expectations. This guide compares every payment method available to freelance beauty professionals so you can choose the combination that works best for your business model, client base, and location.</p>
 
 <h2>Payment Method 1: Mobile Card Readers</h2>
 <p>A portable Bluetooth card reader that pairs with your smartphone, allowing you to accept chip, contactless, and mobile wallet payments anywhere.</p>
@@ -766,11 +766,11 @@ const freelanceStylistPaymentArticle: LocalBlogPost = {
 
 <h3>Pros</h3>
 <ul>
-<li>Professional appearance &mdash; clients expect card acceptance</li>
+<li>Professional appearance - clients expect card acceptance</li>
 <li>Accepts all major cards plus Apple Pay, Google Pay, Samsung Pay</li>
 <li>Automatic digital receipts</li>
 <li>Transaction records for bookkeeping and taxes</li>
-<li>Portable &mdash; fits in your kit bag</li>
+<li>Portable - fits in your kit bag</li>
 </ul>
 
 <h3>Cons</h3>
@@ -781,7 +781,7 @@ const freelanceStylistPaymentArticle: LocalBlogPost = {
 </ul>
 
 <h2>Payment Method 2: Tap-to-Pay on Your Phone</h2>
-<p>Your iPhone or Android phone acts as the payment terminal &mdash; no separate hardware needed. The client taps their card or phone against yours.</p>
+<p>Your iPhone or Android phone acts as the payment terminal - no separate hardware needed. The client taps their card or phone against yours.</p>
 
 <h3>How It Works</h3>
 <p>Enable Tap to Pay through a compatible app (Stripe, Square, or your salon platform). Enter the amount, and the client taps their contactless card or phone against the back of your device. Your phone&rsquo;s NFC chip processes the payment.</p>
@@ -808,7 +808,7 @@ const freelanceStylistPaymentArticle: LocalBlogPost = {
 <ul>
 <li>Only works with contactless cards and wallets (no chip-and-PIN fallback)</li>
 <li>Requires a compatible phone</li>
-<li>Phone battery is your payment system &mdash; if it dies, you cannot accept payments</li>
+<li>Phone battery is your payment system - if it dies, you cannot accept payments</li>
 </ul>
 
 <h2>Payment Method 3: Bank Transfers</h2>
@@ -837,7 +837,7 @@ const freelanceStylistPaymentArticle: LocalBlogPost = {
 
 <h3>Cons</h3>
 <ul>
-<li>No automatic receipt or record &mdash; you must track manually</li>
+<li>No automatic receipt or record - you must track manually</li>
 <li>Sharing your IBAN publicly is a privacy consideration</li>
 <li>No built-in tipping prompt</li>
 <li>Client must take action to send the transfer (friction point for immediate payment)</li>
@@ -879,7 +879,7 @@ const freelanceStylistPaymentArticle: LocalBlogPost = {
 <p>Payments processed through your salon management or freelance platform as part of the booking and service workflow.</p>
 
 <h3>How It Works</h3>
-<p>When a client books through your platform profile, they can pay at booking (deposit or full amount), and the remaining balance is collected at checkout through the platform&rsquo;s integrated payment system. Everything &mdash; booking, service record, payment, receipt, and tip &mdash; is connected in one system.</p>
+<p>When a client books through your platform profile, they can pay at booking (deposit or full amount), and the remaining balance is collected at checkout through the platform&rsquo;s integrated payment system. Everything - booking, service record, payment, receipt, and tip - is connected in one system.</p>
 
 <h3>Costs</h3>
 <ul>
@@ -889,11 +889,11 @@ const freelanceStylistPaymentArticle: LocalBlogPost = {
 </ul>
 
 <h3>Best For</h3>
-<p>Freelancers who want a complete business system &mdash; booking, payments, client management, and communication in one place. The Daisy&rsquo;s <a href="/en/features/professional/payment-processing">professional payment tools</a> are designed specifically for independent beauty professionals.</p>
+<p>Freelancers who want a complete business system - booking, payments, client management, and communication in one place. The Daisy&rsquo;s <a href="/en/features/professional/payment-processing">professional payment tools</a> are designed specifically for independent beauty professionals.</p>
 
 <h3>Pros</h3>
 <ul>
-<li>Fully integrated &mdash; no manual record-keeping</li>
+<li>Fully integrated - no manual record-keeping</li>
 <li>Automatic invoicing and receipts</li>
 <li>Client profiles enriched with payment history</li>
 <li>Integrated tipping</li>
@@ -926,12 +926,12 @@ const freelanceStylistPaymentArticle: LocalBlogPost = {
 
 <h3>Cons</h3>
 <ul>
-<li>No automatic record &mdash; easy to lose track of income</li>
+<li>No automatic record - easy to lose track of income</li>
 <li>Security risk (carrying cash, risk of counterfeit notes)</li>
-<li>No tipping prompt &mdash; cash tips are typically lower than digital</li>
+<li>No tipping prompt - cash tips are typically lower than digital</li>
 <li>Bank deposit required to use the funds digitally</li>
 <li>Declining preference among clients (especially younger demographics)</li>
-<li>Tax compliance risk &mdash; unreported cash income creates liability</li>
+<li>Tax compliance risk - unreported cash income creates liability</li>
 </ul>
 
 <h2>The Recommended Payment Stack for Freelance Stylists</h2>
@@ -1024,8 +1024,8 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
       'A transparent breakdown of every fee salons pay for payment processing. Covers flat-rate, interchange-plus, and commission models with real calculations showing annual cost impact. Includes hidden fees most owners miss.',
     aboutPosts: `
 <h2>The True Cost of Processing Payments in Your Salon</h2>
-<p>Every time a client taps their card at your checkout, you pay a fee. At 2&ndash;3% per transaction, these fees seem minor. But across thousands of transactions per year, payment processing becomes one of your largest operating costs after rent and payroll. A salon processing 100,000 AED in monthly card payments at a 2.75% effective rate pays 33,000 AED annually in processing fees alone &mdash; enough to fund a part-time employee or a significant marketing campaign.</p>
-<p>The challenge is that payment processing pricing is deliberately complex. Processors use different fee structures, bundle costs differently, and bury charges in fine print. Most salon owners know their &ldquo;headline rate&rdquo; but not their effective rate &mdash; the actual total percentage they pay after all fees are counted. This guide dissects your <a href="/en/resources/blog/businesses/salon-payment-solutions">salon payment costs</a> so you understand exactly what you are paying and where you can save.</p>
+<p>Every time a client taps their card at your checkout, you pay a fee. At 2&ndash;3% per transaction, these fees seem minor. But across thousands of transactions per year, payment processing becomes one of your largest operating costs after rent and payroll. A salon processing 100,000 AED in monthly card payments at a 2.75% effective rate pays 33,000 AED annually in processing fees alone - enough to fund a part-time employee or a significant marketing campaign.</p>
+<p>The challenge is that payment processing pricing is deliberately complex. Processors use different fee structures, bundle costs differently, and bury charges in fine print. Most salon owners know their &ldquo;headline rate&rdquo; but not their effective rate - the actual total percentage they pay after all fees are counted. This guide dissects your <a href="/en/resources/blog/businesses/salon-payment-solutions">salon payment costs</a> so you understand exactly what you are paying and where you can save.</p>
 
 <h2>Understanding Fee Structures: The Three Models</h2>
 <p>Payment processors use one of three fee structures. Understanding which model your processor uses is the first step to controlling costs.</p>
@@ -1050,7 +1050,7 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
 <p>The platform takes a percentage of each booking&rsquo;s value as a commission, sometimes in addition to standard processing fees. For example: 20% commission on new client bookings + 2.19% processing fee.</p>
 <p><strong>How it works:</strong> A new client books a 400 AED service. You pay 80 AED in commission plus 8.76 AED in processing fees = 88.76 AED total. An existing client booking the same service pays only the 8.76 AED processing fee.</p>
 <p><strong>Pros:</strong> No upfront costs or monthly subscription. You only pay when you earn revenue.</p>
-<p><strong>Cons:</strong> Extremely expensive at scale. As your new client acquisition grows, your commission costs grow proportionally. A salon acquiring 100 new clients per month at 350 AED average spend pays 7,000 AED monthly in commissions alone &mdash; on top of processing fees.</p>
+<p><strong>Cons:</strong> Extremely expensive at scale. As your new client acquisition grows, your commission costs grow proportionally. A salon acquiring 100 new clients per month at 350 AED average spend pays 7,000 AED monthly in commissions alone - on top of processing fees.</p>
 <p><strong>Who uses this model:</strong> Marketplace-first platforms like Fresha (for marketplace-sourced bookings).</p>
 <p><strong>Best for:</strong> Brand-new salons with zero clients who need marketplace exposure and are willing to pay for client acquisition. Not suitable long-term for established businesses.</p>
 
@@ -1098,7 +1098,7 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
 <p>These are the fees most salon owners do not know they are paying:</p>
 
 <h3>International Card Surcharges</h3>
-<p>In the GCC, a significant percentage of clients hold cards issued in other countries. Some processors charge an additional 1&ndash;1.5% for these cross-border transactions. If 20% of your transactions are international cards with a 1% surcharge, that adds 0.2% to your effective rate &mdash; 1,920 AED annually on 80,000 AED monthly volume.</p>
+<p>In the GCC, a significant percentage of clients hold cards issued in other countries. Some processors charge an additional 1&ndash;1.5% for these cross-border transactions. If 20% of your transactions are international cards with a 1% surcharge, that adds 0.2% to your effective rate - 1,920 AED annually on 80,000 AED monthly volume.</p>
 
 <h3>Chargeback Fees</h3>
 <p>When a client disputes a charge with their bank, the processor charges you a fee (typically 50&ndash;100 AED) regardless of the outcome. Two chargebacks per month at 75 AED each cost 1,800 AED annually.</p>
@@ -1158,7 +1158,7 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
 <p>Switch to a processor with transparent, all-inclusive pricing. <a href="/en/features/business/payment-processing">The Daisy</a> and other modern processors include PCI compliance, do not charge statement fees, and have no minimum volume requirements. Eliminating hidden fees alone can save 2,000&ndash;5,000 AED annually.</p>
 
 <h3>3. Negotiate Volume Discounts</h3>
-<p>If you process over 100,000 AED monthly, ask your processor about volume-based rate reductions. Most processors have tiered pricing that they do not advertise &mdash; you must ask.</p>
+<p>If you process over 100,000 AED monthly, ask your processor about volume-based rate reductions. Most processors have tiered pricing that they do not advertise - you must ask.</p>
 
 <h3>4. Choose the Right Fee Structure</h3>
 <p>For most salons, flat-rate pricing offers the best balance of simplicity and cost. Only consider interchange-plus if you process very high volumes and most transactions are domestic debit cards.</p>
@@ -1194,7 +1194,7 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
 <p>For a salon using flat-rate processing with no commissions, an effective rate of 2.8&ndash;3.5% is typical and acceptable. If your effective rate exceeds 4%, investigate hidden fees or consider switching providers. Salons paying commissions on marketplace bookings may see effective rates of 5&ndash;8% when commissions are included.</p>
 
 <h3>Should I pass processing fees on to clients?</h3>
-<p>In most beauty industry contexts, surcharging clients creates a negative experience and risks losing them to competitors who absorb the cost. Instead, factor processing fees into your service pricing. A 3% fee on a 300 AED service is 9 AED &mdash; increase the service price by 10 AED and absorb the fee transparently.</p>
+<p>In most beauty industry contexts, surcharging clients creates a negative experience and risks losing them to competitors who absorb the cost. Instead, factor processing fees into your service pricing. A 3% fee on a 300 AED service is 9 AED - increase the service price by 10 AED and absorb the fee transparently.</p>
 
 <h3>Are processing fees tax-deductible?</h3>
 <p>Yes. Payment processing fees are a deductible business expense in most jurisdictions. Ensure they are tracked and reported accurately. Automated platforms that categorise payment costs simplify this at tax time.</p>

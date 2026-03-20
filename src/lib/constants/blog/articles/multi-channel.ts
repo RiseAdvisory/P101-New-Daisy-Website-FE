@@ -43,8 +43,8 @@ const whatsappMarketingSalonsArticle: LocalBlogPost = {
       'WhatsApp is the most effective direct marketing channel for salons in 2026, with open rates exceeding 90%. This complete guide covers how to use WhatsApp Business for salon marketing, from broadcast campaigns and automated booking to client retention messaging and compliance.',
     aboutPosts: `
 <h2>WhatsApp Is the Highest-Performing Marketing Channel for Salons</h2>
-<p>WhatsApp marketing for salons delivers open rates of 90&ndash;98%, response rates of 40&ndash;60%, and conversion rates that outperform email, SMS, and social media ads by a factor of 3&ndash;5x. These are not aspirational numbers &mdash; they reflect the reality that WhatsApp is where your clients already spend their time. In the GCC region, WhatsApp handles an estimated 35% of all salon booking inquiries. In markets across Asia, Latin America, and parts of Europe, the figures are similarly dominant.</p>
-<p>For salon owners, WhatsApp is not just a messaging app &mdash; it is a direct marketing, booking, and client relationship channel that outperforms every traditional alternative. This guide covers everything you need to use WhatsApp effectively for <a href="/en/salon-marketing-strategies">salon marketing</a>, from initial setup through advanced automation.</p>
+<p>WhatsApp marketing for salons delivers open rates of 90&ndash;98%, response rates of 40&ndash;60%, and conversion rates that outperform email, SMS, and social media ads by a factor of 3&ndash;5x. These are not aspirational numbers - they reflect the reality that WhatsApp is where your clients already spend their time. In the GCC region, WhatsApp handles an estimated 35% of all salon booking inquiries. In markets across Asia, Latin America, and parts of Europe, the figures are similarly dominant.</p>
+<p>For salon owners, WhatsApp is not just a messaging app - it is a direct marketing, booking, and client relationship channel that outperforms every traditional alternative. This guide covers everything you need to use WhatsApp effectively for <a href="/en/salon-marketing-strategies">salon marketing</a>, from initial setup through advanced automation.</p>
 
 <h2>Setting Up WhatsApp Business for Your Salon</h2>
 <p>Before you start marketing, your WhatsApp Business profile needs to work for you as a professional business channel.</p>
@@ -77,7 +77,7 @@ const whatsappMarketingSalonsArticle: LocalBlogPost = {
 <ul>
 <li><strong>Seasonal promotions:</strong> "Summer colour refresh: 20% off all balayage services this month. Book your spot: [link]"</li>
 <li><strong>New service launches:</strong> "We have just added scalp therapy to our menu! Introductory price of $45 (regular $65). Try it this week: [link]"</li>
-<li><strong>Flash sales:</strong> "This Friday only: complimentary deep conditioning treatment with any colour service. Limited slots &mdash; book now: [link]"</li>
+<li><strong>Flash sales:</strong> "This Friday only: complimentary deep conditioning treatment with any colour service. Limited slots - book now: [link]"</li>
 <li><strong>Last-minute availability:</strong> "We have a cancellation tomorrow at 2pm. First to reply books it! Perfect for a quick cut or blowout."</li>
 </ul>
 <p>Best practices for broadcasts:</p>
@@ -85,7 +85,7 @@ const whatsappMarketingSalonsArticle: LocalBlogPost = {
 <li>Keep messages short (under 160 words for WhatsApp).</li>
 <li>Include a clear call-to-action with a booking link.</li>
 <li>Send during optimal hours (10am&ndash;1pm and 6pm&ndash;9pm typically perform best).</li>
-<li>Segment your list &mdash; do not send colour promotions to clients who only get cuts.</li>
+<li>Segment your list - do not send colour promotions to clients who only get cuts.</li>
 <li>Limit broadcasts to 2&ndash;4 per month. More than that risks being perceived as spam.</li>
 </ul>
 
@@ -102,10 +102,10 @@ const whatsappMarketingSalonsArticle: LocalBlogPost = {
 <p>When a regular client goes quiet (no visit for 2&ndash;3x their usual interval), a WhatsApp message is the most effective re-engagement tool:</p>
 <ul>
 <li><strong>Soft touch:</strong> "We have missed you! It has been a while since your last visit. Is there anything we can help with?"</li>
-<li><strong>Value offer:</strong> "It has been 4 months since we last saw you. We would love to welcome you back &mdash; here is a 15% welcome-back offer: [link]"</li>
+<li><strong>Value offer:</strong> "It has been 4 months since we last saw you. We would love to welcome you back - here is a 15% welcome-back offer: [link]"</li>
 <li><strong>New service hook:</strong> "Since your last visit, we have added three new services to our menu. Take a look and let us know if anything interests you: [catalogue link]"</li>
 </ul>
-<p>Re-engagement messages recover 10&ndash;25% of lapsed clients when sent at the right time with the right message. The key is personalisation &mdash; reference the client's name, their usual service, and their specific gap in visits.</p>
+<p>Re-engagement messages recover 10&ndash;25% of lapsed clients when sent at the right time with the right message. The key is personalisation - reference the client's name, their usual service, and their specific gap in visits.</p>
 
 <h3>Campaign Type 4: Post-Visit Follow-Up</h3>
 <p>A follow-up message 24&ndash;48 hours after a visit strengthens the client relationship and opens the door for rebooking:</p>
@@ -119,7 +119,7 @@ const whatsappMarketingSalonsArticle: LocalBlogPost = {
 <h2>WhatsApp for Booking and Customer Service</h2>
 <p>Beyond marketing, WhatsApp is a powerful booking and service channel.</p>
 <ul>
-<li><strong>Booking via chat:</strong> Clients send a message requesting an appointment. With AI integration, the response is instant: availability is checked, options are presented, and the booking is confirmed &mdash; all within the WhatsApp conversation.</li>
+<li><strong>Booking via chat:</strong> Clients send a message requesting an appointment. With AI integration, the response is instant: availability is checked, options are presented, and the booking is confirmed - all within the WhatsApp conversation.</li>
 <li><strong>Appointment changes:</strong> Clients can cancel or reschedule through WhatsApp without calling. The system updates the calendar automatically and releases the slot for others.</li>
 <li><strong>Service inquiries:</strong> Pricing questions, service descriptions, and preparation instructions are handled instantly via automated responses or AI.</li>
 <li><strong>Before-and-after sharing:</strong> With client permission, share before-and-after photos via WhatsApp status or in direct messages. This is powerful social proof that lives in a trusted, personal channel.</li>
@@ -172,7 +172,7 @@ const whatsappMarketingSalonsArticle: LocalBlogPost = {
 <p>Yes. WhatsApp supports images, videos, documents, voice messages, and catalogue links. Visual content (before-and-after photos, service videos, product images) significantly increases engagement rates. Keep videos under 60 seconds and images high-quality but compressed for fast loading. Service catalogues with photos and prices are particularly effective for driving bookings.</p>
 
 <h3>What should I do if a client does not respond to my WhatsApp message?</h3>
-<p>A single non-response is not actionable &mdash; people are busy. If a client does not respond to two consecutive messages over a period of 4&ndash;6 weeks, reduce your contact frequency rather than increasing it. They may still be reading without responding, which still has marketing value. If a client has not responded to any messages in 3+ months, they may have changed numbers, lost interest, or opted out silently. Move them to a low-frequency list (quarterly check-in only) rather than continuing weekly or monthly messages.</p>
+<p>A single non-response is not actionable - people are busy. If a client does not respond to two consecutive messages over a period of 4&ndash;6 weeks, reduce your contact frequency rather than increasing it. They may still be reading without responding, which still has marketing value. If a client has not responded to any messages in 3+ months, they may have changed numbers, lost interest, or opted out silently. Move them to a low-frequency list (quarterly check-in only) rather than continuing weekly or monthly messages.</p>
 
 <h3>Do I need a separate phone for WhatsApp Business?</h3>
 <p>You can use WhatsApp Business on the same phone as your personal WhatsApp, but they must use different phone numbers. Many salon owners use their business landline number (WhatsApp supports landline registration via voice call verification) or a dedicated mobile number. Using the WhatsApp Business API through a platform like The Daisy eliminates the need for a separate phone entirely, as conversations are managed through the platform dashboard.</p>
@@ -224,14 +224,14 @@ const managingInstagramDmsArticle: LocalBlogPost = {
       'Instagram DMs are a primary booking and inquiry channel for beauty businesses, but most salons manage them poorly. This guide covers how to organise, respond to, and convert Instagram DMs into bookings efficiently, including automation strategies, response templates, and common mistakes to avoid.',
     aboutPosts: `
 <h2>Instagram DMs Are a Revenue Channel, Not Just a Chat Feature</h2>
-<p>For beauty businesses, Instagram is not just a marketing platform &mdash; it is a booking platform. Research shows that 62% of beauty consumers use Instagram to discover new salons, and 40% of those send a DM before making a booking decision. That makes your Instagram inbox a revenue channel that deserves the same operational discipline as your phone line or booking page.</p>
+<p>For beauty businesses, Instagram is not just a marketing platform - it is a booking platform. Research shows that 62% of beauty consumers use Instagram to discover new salons, and 40% of those send a DM before making a booking decision. That makes your Instagram inbox a revenue channel that deserves the same operational discipline as your phone line or booking page.</p>
 <p>The problem is that most salons treat DMs as an afterthought. Messages go unanswered for hours or days. Multiple team members respond inconsistently. Booking inquiries get lost in a sea of spam and comment replies. The result is lost revenue from clients who wanted to book but could not get a timely, helpful response.</p>
 <p>This guide covers how to manage Instagram DMs professionally, convert inquiries into bookings efficiently, and integrate DM management into your broader <a href="/en/salon-marketing-strategies">salon marketing strategy</a>.</p>
 
 <h2>Why Instagram DMs Matter More Than You Think</h2>
 <p>The data on Instagram DMs for beauty businesses is compelling:</p>
 <ul>
-<li><strong>Speed determines conversion:</strong> Clients who receive a DM response within 5 minutes are 4x more likely to book compared to those who wait an hour. After 24 hours, the conversion rate drops to near zero &mdash; they have already booked elsewhere.</li>
+<li><strong>Speed determines conversion:</strong> Clients who receive a DM response within 5 minutes are 4x more likely to book compared to those who wait an hour. After 24 hours, the conversion rate drops to near zero - they have already booked elsewhere.</li>
 <li><strong>DMs are the preferred channel for younger demographics:</strong> Clients under 35 prefer DMs over phone calls by a ratio of 3:1 for initial booking inquiries. If your salon targets this demographic and is not managing DMs effectively, you are invisible in their preferred channel.</li>
 <li><strong>High-intent traffic:</strong> Someone who DMs your salon is further along the decision process than someone who views your profile. They have already seen your content, liked your work, and are actively interested. These are warm leads, not cold traffic. Fumbling the DM response is like ignoring someone who walks into your salon and asks about services.</li>
 <li><strong>Discovery channel:</strong> Instagram's algorithm surfaces salons in Explore pages and search results. When a potential client discovers you and taps "Message," that is a zero-cost acquisition opportunity. Each unanswered DM has a real cost in lost lifetime value.</li>
@@ -273,7 +273,7 @@ const managingInstagramDmsArticle: LocalBlogPost = {
 <h3>The 3-Message Booking Framework</h3>
 <ol>
 <li><strong>Message 1 (their inquiry):</strong> Client asks about availability, pricing, or services.</li>
-<li><strong>Message 2 (your response):</strong> Answer their specific question AND provide a direct booking link or specific available times. Do not just answer the question &mdash; advance the conversation toward a booking.</li>
+<li><strong>Message 2 (your response):</strong> Answer their specific question AND provide a direct booking link or specific available times. Do not just answer the question - advance the conversation toward a booking.</li>
 <li><strong>Message 3 (their confirmation):</strong> Client books through the link or confirms a time.</li>
 </ol>
 <p>Example:</p>
@@ -281,15 +281,15 @@ const managingInstagramDmsArticle: LocalBlogPost = {
 <li><strong>Client:</strong> "How much is a full head of highlights?"</li>
 <li><strong>You:</strong> "Full highlights start from $150, depending on hair length and condition. We have openings this Thursday at 10am and Saturday at 2pm. You can book directly here: [booking link]. Would either of those work for you?"</li>
 </ul>
-<p>Notice: the response answers the price question, offers specific availability, provides a booking link, and asks a closing question &mdash; all in one message. This is dramatically more effective than answering only the price question and waiting for the next message.</p>
+<p>Notice: the response answers the price question, offers specific availability, provides a booking link, and asks a closing question - all in one message. This is dramatically more effective than answering only the price question and waiting for the next message.</p>
 
 <h3>Common Conversion Killers</h3>
 <ul>
 <li><strong>Responding only to the question asked:</strong> If someone asks "How much?" and you respond only with a price, you have answered but not advanced. Always pair the answer with a booking prompt.</li>
-<li><strong>Sending clients to your website to "find more info":</strong> Every redirect is friction. Provide the information directly in the DM and include a direct booking link &mdash; not your homepage.</li>
+<li><strong>Sending clients to your website to "find more info":</strong> Every redirect is friction. Provide the information directly in the DM and include a direct booking link - not your homepage.</li>
 <li><strong>Delayed responses:</strong> A 4-hour delay on a DM that said "Do you have anything today?" means the client has already found and booked with someone else.</li>
 <li><strong>Overly formal language:</strong> Instagram is a casual platform. Match the channel's tone. Friendly, helpful, and concise beats corporate and stiff.</li>
-<li><strong>Not following up:</strong> If a client showed interest but did not book, a polite follow-up 24 hours later ("Just checking in &mdash; would you like me to hold that Saturday slot for you?") converts 15&ndash;20% of otherwise-lost inquiries.</li>
+<li><strong>Not following up:</strong> If a client showed interest but did not book, a polite follow-up 24 hours later ("Just checking in - would you like me to hold that Saturday slot for you?") converts 15&ndash;20% of otherwise-lost inquiries.</li>
 </ul>
 
 <h2>Automating Instagram DM Management</h2>
@@ -304,19 +304,19 @@ const managingInstagramDmsArticle: LocalBlogPost = {
 <h3>Platform-Integrated Automation</h3>
 <p>Connecting Instagram DMs to your salon management platform unlocks more powerful automation:</p>
 <ul>
-<li><strong>AI-powered responses:</strong> An <a href="/en/features/business/ai-salon-management">AI receptionist</a> can read the DM, understand the intent, check real-time availability, and respond with personalised booking options &mdash; all automatically, 24/7.</li>
+<li><strong>AI-powered responses:</strong> An <a href="/en/features/business/ai-salon-management">AI receptionist</a> can read the DM, understand the intent, check real-time availability, and respond with personalised booking options - all automatically, 24/7.</li>
 <li><strong>Unified inbox:</strong> See all client messages (DMs, WhatsApp, phone, web chat) in one <a href="/en/features/business/communication-tools">communication dashboard</a> instead of checking multiple apps.</li>
-<li><strong>Client recognition:</strong> When a DM arrives from an existing client, the system pulls up their profile, booking history, and preferences &mdash; enabling personalised responses even in automated conversations.</li>
+<li><strong>Client recognition:</strong> When a DM arrives from an existing client, the system pulls up their profile, booking history, and preferences - enabling personalised responses even in automated conversations.</li>
 <li><strong>Booking flow within DM:</strong> Instead of redirecting clients to a separate booking page, the AI presents available times and confirms bookings entirely within the Instagram conversation.</li>
 </ul>
 
 <h2>Instagram DM Content Strategy</h2>
-<p>Your DMs are not just for responding &mdash; they can also be a proactive communication channel.</p>
+<p>Your DMs are not just for responding - they can also be a proactive communication channel.</p>
 <ul>
 <li><strong>Story reply engagement:</strong> When clients reply to your Instagram Stories, use these conversations to build relationships and prompt bookings. A client who replies "Love this colour!" to a hair transformation story is a warm lead for a colour appointment.</li>
 <li><strong>Post-tag follow-up:</strong> When a client tags your salon in their post, DM them a thank-you and a rebooking link. This turns user-generated content into a retention opportunity.</li>
-<li><strong>New follower welcome:</strong> Send a brief welcome message to new followers in your area. "Thanks for following! If you are ever interested in booking, here is our service menu: [link]." Keep it light &mdash; this is an introduction, not a sales pitch.</li>
-<li><strong>Behind-the-scenes sharing:</strong> DM your most loyal clients with exclusive content &mdash; a sneak peek at a new service, early access to a promotion, or a personal invitation to an event. This creates a VIP feeling that strengthens loyalty.</li>
+<li><strong>New follower welcome:</strong> Send a brief welcome message to new followers in your area. "Thanks for following! If you are ever interested in booking, here is our service menu: [link]." Keep it light - this is an introduction, not a sales pitch.</li>
+<li><strong>Behind-the-scenes sharing:</strong> DM your most loyal clients with exclusive content - a sneak peek at a new service, early access to a promotion, or a personal invitation to an event. This creates a VIP feeling that strengthens loyalty.</li>
 </ul>
 
 <h2>Measuring Instagram DM Performance</h2>
@@ -333,7 +333,7 @@ const managingInstagramDmsArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How do I handle negative DMs or complaints on Instagram?</h3>
-<p>Respond quickly, empathetically, and privately. Acknowledge the issue ("I'm sorry to hear that &mdash; that is not the experience we want for you"), offer to resolve it ("Can we arrange a complimentary correction appointment?"), and move the conversation to a private channel (phone call or in-person) for detailed resolution. Never argue in DMs. Never ignore a complaint &mdash; an unresolved complaint in your inbox is a review waiting to happen.</p>
+<p>Respond quickly, empathetically, and privately. Acknowledge the issue ("I'm sorry to hear that - that is not the experience we want for you"), offer to resolve it ("Can we arrange a complimentary correction appointment?"), and move the conversation to a private channel (phone call or in-person) for detailed resolution. Never argue in DMs. Never ignore a complaint - an unresolved complaint in your inbox is a review waiting to happen.</p>
 
 <h3>Should I use chatbots for Instagram DMs?</h3>
 <p>Basic chatbots that follow rigid scripts are frustrating for clients. AI-powered assistants that understand natural language and can check real-time availability are highly effective. The difference is capability: if the automation can actually handle the inquiry (answer the question, present booking options, confirm the appointment), clients appreciate the instant response. If it can only say "A team member will get back to you," it adds friction without value.</p>
@@ -393,13 +393,13 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
     description:
       'Omnichannel communication means meeting your salon clients on every channel they use, with a seamless experience across all of them. This strategy guide explains what omnichannel means for salons, which channels matter most, how to unify them, and why fragmented communication is costing you bookings.',
     aboutPosts: `
-<h2>Your Clients Use Multiple Channels &mdash; Your Salon Should Too</h2>
-<p>Omnichannel communication is the practice of engaging clients across every channel they use &mdash; phone, WhatsApp, Instagram, email, SMS, web chat, and walk-in &mdash; with a unified, consistent experience. The "omni" is critical: it means every channel is connected, so a conversation that starts on Instagram can continue on WhatsApp and result in a booking through your website, without the client repeating themselves or your team losing context.</p>
-<p>For salons, omnichannel is not a luxury &mdash; it is how your clients already behave. A typical salon client might discover you on Instagram, ask a question via DM, check prices on your website, book via WhatsApp, receive a confirmation by SMS, and get a reminder by email. If any of these channels fails, the booking is at risk. If the channels are disconnected, the experience feels fragmented and unprofessional.</p>
+<h2>Your Clients Use Multiple Channels - Your Salon Should Too</h2>
+<p>Omnichannel communication is the practice of engaging clients across every channel they use - phone, WhatsApp, Instagram, email, SMS, web chat, and walk-in - with a unified, consistent experience. The "omni" is critical: it means every channel is connected, so a conversation that starts on Instagram can continue on WhatsApp and result in a booking through your website, without the client repeating themselves or your team losing context.</p>
+<p>For salons, omnichannel is not a luxury - it is how your clients already behave. A typical salon client might discover you on Instagram, ask a question via DM, check prices on your website, book via WhatsApp, receive a confirmation by SMS, and get a reminder by email. If any of these channels fails, the booking is at risk. If the channels are disconnected, the experience feels fragmented and unprofessional.</p>
 <p>This guide explains how to build an omnichannel communication system for your salon as part of your broader <a href="/en/salon-marketing-strategies">marketing strategy</a>, which channels to prioritise, and how to unify them without adding operational complexity.</p>
 
 <h2>Multi-Channel vs. Omnichannel: The Critical Difference</h2>
-<p>Most salons are already multi-channel &mdash; they have a phone number, an Instagram account, maybe a website, and WhatsApp. But multi-channel is not the same as omnichannel, and the difference has real revenue implications.</p>
+<p>Most salons are already multi-channel - they have a phone number, an Instagram account, maybe a website, and WhatsApp. But multi-channel is not the same as omnichannel, and the difference has real revenue implications.</p>
 <ul>
 <li><strong>Multi-channel:</strong> You are present on multiple channels, but each channel operates independently. Your Instagram DMs are managed in the Instagram app, WhatsApp messages on a phone, phone calls by the receptionist, and website bookings in a separate system. There is no connection between channels. A client who messages on Instagram and then calls has to start the conversation from scratch.</li>
 <li><strong>Omnichannel:</strong> All channels are connected through a single system. When a client messages on any channel, the system identifies them, pulls up their history, and makes the full conversation context available regardless of which channel they use next. The experience is seamless for the client and efficient for your team.</li>
@@ -414,7 +414,7 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 <li><strong>WhatsApp:</strong> The dominant booking and communication channel in most markets. 90%+ open rates, instant delivery, supports rich media and booking flows. If you only invest in one digital channel, make it WhatsApp.</li>
 <li><strong>Phone:</strong> Still important for complex inquiries, older demographics, and walk-in coordination. Declining in volume but still representing 18&ndash;22% of bookings in most markets. An <a href="/en/features/business/ai-salon-management">AI receptionist</a> can handle phone calls with the same quality as digital channels.</li>
 <li><strong>Instagram DMs:</strong> The primary discovery-to-booking channel for beauty businesses. 40% of beauty consumers who discover a salon on Instagram send a DM before booking. Non-negotiable for salons targeting clients under 40.</li>
-<li><strong>Online booking page:</strong> Your website or <a href="/en/features/business/booking-management">booking platform</a> is where self-service clients go directly. This should be frictionless &mdash; three taps to book.</li>
+<li><strong>Online booking page:</strong> Your website or <a href="/en/features/business/booking-management">booking platform</a> is where self-service clients go directly. This should be frictionless - three taps to book.</li>
 </ul>
 
 <h3>Tier 2: Important Channels</h3>
@@ -445,7 +445,7 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 </ul>
 
 <h3>Step 2: Connect Your Booking System</h3>
-<p>Every channel should connect to your booking system so that availability, pricing, and confirmation flow seamlessly from conversation to booking. When a client asks "Do you have availability Saturday?" on any channel, the response should include real-time availability from your actual calendar &mdash; not a guess that might be wrong by the time the receptionist checks.</p>
+<p>Every channel should connect to your booking system so that availability, pricing, and confirmation flow seamlessly from conversation to booking. When a client asks "Do you have availability Saturday?" on any channel, the response should include real-time availability from your actual calendar - not a guess that might be wrong by the time the receptionist checks.</p>
 
 <h3>Step 3: Implement AI-Powered Responses</h3>
 <p>AI is the technology that makes omnichannel practical for salons without large teams. Without AI, managing 5+ channels manually requires dedicated staff. With AI, routine inquiries across all channels are handled instantly and automatically:</p>
@@ -455,7 +455,7 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 <li>After-hours inquiries receive immediate responses instead of silence until morning.</li>
 <li>Complex or sensitive conversations are escalated to human team members with full context.</li>
 </ul>
-<p>The AI does not replace your team &mdash; it handles the volume so your team can focus on high-value interactions.</p>
+<p>The AI does not replace your team - it handles the volume so your team can focus on high-value interactions.</p>
 
 <h3>Step 4: Create Consistent Brand Voice</h3>
 <p>Omnichannel means your communication feels like one salon across all channels. A client should not experience formal corporate language on email and casual slang on Instagram. Define your brand voice once and apply it everywhere:</p>
@@ -505,13 +505,13 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 <p>Omnichannel is arguably more important for small salons because you have fewer people to monitor channels. A unified inbox means one person can see all messages in one place instead of switching between apps. AI-powered responses handle inquiries while you are with clients, so you never miss a message regardless of how busy you are. The technology is the equaliser that gives a 2-person salon the communication capability of a large team.</p>
 
 <h3>Will omnichannel communication feel impersonal to clients?</h3>
-<p>The opposite. Omnichannel feels more personal because the salon remembers the client across channels. When a client who chatted on Instagram calls your salon and the AI or receptionist says "Hi Sarah, I see you were asking about balayage pricing &mdash; would you like to go ahead and book?" that is a personal, connected experience. It is fragmented communication (where the client has to repeat themselves) that feels impersonal.</p>
+<p>The opposite. Omnichannel feels more personal because the salon remembers the client across channels. When a client who chatted on Instagram calls your salon and the AI or receptionist says "Hi Sarah, I see you were asking about balayage pricing - would you like to go ahead and book?" that is a personal, connected experience. It is fragmented communication (where the client has to repeat themselves) that feels impersonal.</p>
 
 <h3>How much does an omnichannel system cost?</h3>
-<p>Omnichannel capability is typically included in modern salon management platforms at no additional cost beyond the platform subscription. The Daisy includes WhatsApp, Instagram, phone, web chat, and email integration in its standard plans. You are not paying for each channel separately &mdash; you are paying for a platform that connects them all. This is typically less expensive than the combined cost of separate tools for each channel.</p>
+<p>Omnichannel capability is typically included in modern salon management platforms at no additional cost beyond the platform subscription. The Daisy includes WhatsApp, Instagram, phone, web chat, and email integration in its standard plans. You are not paying for each channel separately - you are paying for a platform that connects them all. This is typically less expensive than the combined cost of separate tools for each channel.</p>
 
 <h3>How long does it take to implement omnichannel communication?</h3>
-<p>On a platform that supports omnichannel natively, setup takes 1&ndash;3 days. You connect your WhatsApp Business number, Instagram account, phone number, and website chat widget to the platform. Configure your automated responses and brand voice settings. Once connected, all channels funnel into the unified inbox immediately. The technical setup is straightforward &mdash; the cultural shift (your team using one inbox instead of five apps) takes another week or two to become habitual.</p>
+<p>On a platform that supports omnichannel natively, setup takes 1&ndash;3 days. You connect your WhatsApp Business number, Instagram account, phone number, and website chat widget to the platform. Configure your automated responses and brand voice settings. Once connected, all channels funnel into the unified inbox immediately. The technical setup is straightforward - the cultural shift (your team using one inbox instead of five apps) takes another week or two to become habitual.</p>
 `,
     metaTitle: 'Omnichannel Salon Communication Guide | Daisy',
     metaDescription:

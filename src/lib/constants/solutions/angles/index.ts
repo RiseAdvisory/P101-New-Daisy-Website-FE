@@ -17,7 +17,7 @@ export const VALID_PERSONAS = ['business', 'professional'] as const;
 export type AngleSlug = (typeof VALID_ANGLE_SLUGS)[number];
 export type AnglePersona = (typeof VALID_PERSONAS)[number];
 
-// Registry — populated by angle data files via registerAngle()
+// Registry - populated by angle data files via registerAngle()
 const angleRegistry = new Map<
   string,
   Record<AnglePersona, I18nContent<LandingPageContent>>

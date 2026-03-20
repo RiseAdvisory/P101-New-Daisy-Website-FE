@@ -41,8 +41,8 @@ const salonMarketingIdeas2026Article: LocalBlogPost = {
     description:
       'Discover 15 proven salon marketing ideas for 2026 that drive new client acquisition and repeat bookings. Covers digital strategies, local outreach, partnerships, and technology-powered campaigns that deliver measurable results.',
     aboutPosts: `
-<h2>Why Salon Marketing Has Changed &mdash; and What Works Now</h2>
-<p>Salon marketing in 2026 is not what it was five years ago. Generic discount flyers, one-size-fits-all social posts, and relying on walk-in traffic are no longer enough to sustain a growing beauty business. Today's clients discover salons through search engines, social media, online reviews, and AI-powered recommendations. The salons that thrive are those that meet clients where they are &mdash; online, on their phones, and expecting personalised experiences.</p>
+<h2>Why Salon Marketing Has Changed - and What Works Now</h2>
+<p>Salon marketing in 2026 is not what it was five years ago. Generic discount flyers, one-size-fits-all social posts, and relying on walk-in traffic are no longer enough to sustain a growing beauty business. Today's clients discover salons through search engines, social media, online reviews, and AI-powered recommendations. The salons that thrive are those that meet clients where they are - online, on their phones, and expecting personalised experiences.</p>
 <p>This guide gives you 15 actionable <a href="/en/resources/blog/businesses/salon-marketing-strategies">salon marketing strategies</a> that work right now. Each idea includes implementation steps, expected outcomes, and how to measure success. Whether you are a single-location salon or managing multiple branches, these strategies scale to fit your business.</p>
 
 <h2>1. Optimise Your Google Business Profile</h2>
@@ -51,7 +51,7 @@ const salonMarketingIdeas2026Article: LocalBlogPost = {
 
 <h2>2. Launch a Referral Program With Automatic Rewards</h2>
 <p>Word-of-mouth remains the most trusted form of marketing. A structured referral program converts informal recommendations into a reliable acquisition channel. The key is making referral rewards automatic rather than relying on staff to remember to apply them.</p>
-<p>Offer a clear incentive for both the referrer and the new client &mdash; for example, $20 credit for each when the new client completes their first booking. Platforms like <a href="/en/features/business/marketing-promotions">The Daisy</a> automate referral tracking and reward distribution so your team never has to manage it manually. Learn more in our <a href="/en/resources/blog/businesses/salon-referral-program-guide">salon referral program guide</a>.</p>
+<p>Offer a clear incentive for both the referrer and the new client - for example, $20 credit for each when the new client completes their first booking. Platforms like <a href="/en/features/business/marketing-promotions">The Daisy</a> automate referral tracking and reward distribution so your team never has to manage it manually. Learn more in our <a href="/en/resources/blog/businesses/salon-referral-program-guide">salon referral program guide</a>.</p>
 
 <h2>3. Build a Loyalty Program With Cashback</h2>
 <p>Acquiring a new client costs five to seven times more than retaining an existing one. A loyalty program with cashback creates a financial incentive for clients to return rather than trying a competitor. The psychology is powerful: clients with an accumulated balance feel they are "losing money" by going elsewhere.</p>
@@ -62,11 +62,11 @@ const salonMarketingIdeas2026Article: LocalBlogPost = {
 <p>You do not need professional equipment. A smartphone, natural lighting, and a clean background are sufficient. Post 3-5 short videos per week, focusing on: before-and-after transformations (40%), quick styling tips (30%), team personality and culture (20%), and client testimonials with permission (10%).</p>
 
 <h2>5. Invest in Local SEO</h2>
-<p>Local SEO is the practice of optimising your online presence so your salon appears when potential clients search for beauty services in your area. Unlike paid ads, local SEO delivers compounding returns &mdash; the work you do today continues generating visibility for months and years.</p>
+<p>Local SEO is the practice of optimising your online presence so your salon appears when potential clients search for beauty services in your area. Unlike paid ads, local SEO delivers compounding returns - the work you do today continues generating visibility for months and years.</p>
 <p>Key tactics include creating location-specific pages on your website, earning backlinks from local directories and blogs, and ensuring your NAP (name, address, phone) is consistent across every online listing. Our <a href="/en/resources/blog/businesses/salon-seo-local-search-guide">salon SEO guide</a> covers the complete process.</p>
 
 <h2>6. Send Targeted Email Campaigns</h2>
-<p>Email marketing delivers the highest ROI of any digital marketing channel &mdash; an average of $36 for every $1 spent. For salons, email is especially powerful because you already have your clients' contact information from bookings.</p>
+<p>Email marketing delivers the highest ROI of any digital marketing channel - an average of $36 for every $1 spent. For salons, email is especially powerful because you already have your clients' contact information from bookings.</p>
 <p>Segment your email list by visit frequency, services booked, and spending level. Send personalised campaigns: rebooking reminders for clients approaching their typical visit interval, birthday offers, seasonal service promotions, and new service announcements. See our <a href="/en/resources/blog/businesses/salon-email-marketing-templates">email marketing templates guide</a> for ready-to-use sequences.</p>
 
 <h2>7. Partner With Local Businesses</h2>
@@ -79,18 +79,18 @@ const salonMarketingIdeas2026Article: LocalBlogPost = {
 
 <h2>9. Collect and Showcase Client Reviews</h2>
 <p>Online reviews are the modern equivalent of word-of-mouth. 93% of consumers read online reviews before choosing a local business, and salons with 50+ reviews and a 4.5+ star rating attract significantly more new clients than those without.</p>
-<p>Make review collection systematic: send an automated review request 24 hours after every appointment. Include a direct link to your Google Business Profile review page. Respond to every review &mdash; positive and negative &mdash; with a personalised, professional reply. Feature your best reviews on your website, social media, and in-salon displays.</p>
+<p>Make review collection systematic: send an automated review request 24 hours after every appointment. Include a direct link to your Google Business Profile review page. Respond to every review - positive and negative - with a personalised, professional reply. Feature your best reviews on your website, social media, and in-salon displays.</p>
 
 <h2>10. Offer an Online Booking Experience</h2>
 <p>If a potential client has to call your salon to book an appointment, you are losing bookings. Industry data shows that 40-60% of salon bookings now happen outside business hours, and 30-40% of phone calls to salons go unanswered. Online booking converts these missed opportunities into confirmed appointments.</p>
 <p>Your booking experience should be mobile-first, load in under 3 seconds, and allow clients to select their preferred stylist, service, and time slot in three taps or fewer. <a href="/en/features/business/booking-management">The Daisy's booking platform</a> is purpose-built for beauty businesses, with smart scheduling that avoids double-bookings and maximises your team's utilisation.</p>
 
 <h2>11. Use SMS Marketing for Immediate Impact</h2>
-<p>SMS messages have a 98% open rate and most are read within 3 minutes. For time-sensitive offers &mdash; last-minute availability, flash sales, or appointment reminders &mdash; SMS outperforms every other channel.</p>
+<p>SMS messages have a 98% open rate and most are read within 3 minutes. For time-sensitive offers - last-minute availability, flash sales, or appointment reminders - SMS outperforms every other channel.</p>
 <p>Use SMS sparingly and strategically: booking confirmations and reminders, same-day availability alerts for cancellations you want to fill, and exclusive offers for VIP clients. Always include an opt-out option and comply with local regulations.</p>
 
 <h2>12. Create a Signature Service or Experience</h2>
-<p>A signature service gives clients a reason to choose your salon specifically rather than any alternative. This is a service, treatment, or experience unique to your brand &mdash; something clients cannot get elsewhere.</p>
+<p>A signature service gives clients a reason to choose your salon specifically rather than any alternative. This is a service, treatment, or experience unique to your brand - something clients cannot get elsewhere.</p>
 <p>It could be a proprietary treatment method, a unique service combination, a distinctive client experience element, or a specialisation that no competitor in your area offers. Name it, brand it, and make it the centrepiece of your marketing. Clients talk about unique experiences; they forget generic ones.</p>
 
 <h2>13. Host In-Salon Events</h2>
@@ -169,7 +169,7 @@ const salonSocialMediaMarketingArticle: LocalBlogPost = {
       'Master social media marketing for your salon across Instagram, TikTok, Facebook, and emerging platforms. Learn content strategies, posting schedules, engagement tactics, and conversion techniques that turn followers into booked clients.',
     aboutPosts: `
 <h2>Social Media Is the New Shopfront for Salons</h2>
-<p>Social media is the primary discovery channel for beauty businesses in 2026. More potential clients find their next salon through Instagram and TikTok than through any other channel &mdash; including Google search, word-of-mouth, and walk-ins combined. For salons, social media is not optional marketing; it is your digital shopfront.</p>
+<p>Social media is the primary discovery channel for beauty businesses in 2026. More potential clients find their next salon through Instagram and TikTok than through any other channel - including Google search, word-of-mouth, and walk-ins combined. For salons, social media is not optional marketing; it is your digital shopfront.</p>
 <p>This guide covers platform-specific strategies for every major social network relevant to beauty businesses. Whether you are building from scratch or optimising an existing presence, these are the <a href="/en/resources/blog/businesses/salon-marketing-strategies">salon marketing strategies</a> that generate real bookings, not just vanity metrics.</p>
 
 <h2>Instagram: Your Visual Portfolio and Booking Engine</h2>
@@ -250,7 +250,7 @@ const salonSocialMediaMarketingArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How often should a salon post on social media?</h3>
-<p>For Instagram, aim for 4-5 feed posts per week plus daily Stories. For TikTok, 4-7 posts per week. For Facebook, 2-3 posts per week. Quality matters more than quantity, but consistency matters most. A predictable posting schedule trains both the algorithm and your audience to expect content from you. If you can only manage one platform well, choose Instagram first &mdash; it offers the best balance of reach, engagement, and booking conversion for beauty businesses.</p>
+<p>For Instagram, aim for 4-5 feed posts per week plus daily Stories. For TikTok, 4-7 posts per week. For Facebook, 2-3 posts per week. Quality matters more than quantity, but consistency matters most. A predictable posting schedule trains both the algorithm and your audience to expect content from you. If you can only manage one platform well, choose Instagram first - it offers the best balance of reach, engagement, and booking conversion for beauty businesses.</p>
 
 <h3>What time should salons post on social media?</h3>
 <p>For beauty businesses, the highest engagement windows are: Tuesday through Friday, 11am-1pm (lunch break browsing) and 7pm-9pm (evening scrolling). Saturday mornings (9am-11am) also perform well as people plan their weekend activities. However, your specific audience may differ. Use Instagram Insights and TikTok Analytics to identify when your followers are most active, and schedule posts accordingly.</p>
@@ -259,7 +259,7 @@ const salonSocialMediaMarketingArticle: LocalBlogPost = {
 <p>Consider hiring when: you are consistently unable to post 4+ times per week, your team lacks photography or video skills, or you want to run paid advertising campaigns. Many salons start with an in-house approach (a team member with strong social skills gets dedicated time for content creation) before transitioning to a freelance social media manager at $500-$1,500 per month. The investment pays for itself if it generates even 5-10 additional bookings per month.</p>
 
 <h3>How do I handle negative comments on social media?</h3>
-<p>Respond promptly, professionally, and with empathy. Acknowledge the person's experience, apologise for any shortcoming, and offer to resolve the issue privately: "We are sorry to hear this. Please DM us so we can make it right." Never delete negative comments unless they are abusive or spam &mdash; deleting legitimate complaints erodes trust. A professional response to criticism often impresses potential clients more than the criticism itself deters them.</p>
+<p>Respond promptly, professionally, and with empathy. Acknowledge the person's experience, apologise for any shortcoming, and offer to resolve the issue privately: "We are sorry to hear this. Please DM us so we can make it right." Never delete negative comments unless they are abusive or spam - deleting legitimate complaints erodes trust. A professional response to criticism often impresses potential clients more than the criticism itself deters them.</p>
 `,
     metaTitle: 'Salon Social Media Marketing Guide | Daisy',
     metaDescription:
@@ -380,22 +380,22 @@ const salonEmailMarketingArticle: LocalBlogPost = {
 </ul>
 
 <h2>How The Daisy Automates Salon Email Marketing</h2>
-<p>The Daisy's communication tools integrate email marketing directly into your salon management workflow. Client data from bookings automatically feeds segmentation, triggers automated sequences based on visit history, and tracks which emails generate appointments &mdash; all from one dashboard.</p>
+<p>The Daisy's communication tools integrate email marketing directly into your salon management workflow. Client data from bookings automatically feeds segmentation, triggers automated sequences based on visit history, and tracks which emails generate appointments - all from one dashboard.</p>
 <p>Explore <a href="/en/features/business/communication-tools">The Daisy's communication features</a> to see how automated email campaigns work alongside SMS, push notifications, and in-app messaging. See <a href="/en/pricing">pricing</a> for plans that include marketing automation.</p>
 
 <h2>Frequently Asked Questions</h2>
 
 <h3>How often should a salon send marketing emails?</h3>
-<p>For most salons, 2-4 emails per month is optimal. This typically includes one promotional offer, one educational or inspirational piece, and 1-2 automated sequence emails (rebooking reminders, etc.). Avoid emailing more than once per week unless you have highly segmented lists with distinct content for each segment. Monitor your unsubscribe rate &mdash; if it rises above 0.5% per send, you are emailing too frequently.</p>
+<p>For most salons, 2-4 emails per month is optimal. This typically includes one promotional offer, one educational or inspirational piece, and 1-2 automated sequence emails (rebooking reminders, etc.). Avoid emailing more than once per week unless you have highly segmented lists with distinct content for each segment. Monitor your unsubscribe rate - if it rises above 0.5% per send, you are emailing too frequently.</p>
 
 <h3>What email platform is best for salons?</h3>
-<p>Salon-specific platforms like The Daisy are ideal because they integrate email with your booking, client, and payment data &mdash; enabling automatic segmentation and trigger-based automation without manual data exports. Standalone email platforms (Mailchimp, Klaviyo) work but require manual list management and lack booking-system integration. The additional setup effort rarely justifies the flexibility for small to mid-size salons.</p>
+<p>Salon-specific platforms like The Daisy are ideal because they integrate email with your booking, client, and payment data - enabling automatic segmentation and trigger-based automation without manual data exports. Standalone email platforms (Mailchimp, Klaviyo) work but require manual list management and lack booking-system integration. The additional setup effort rarely justifies the flexibility for small to mid-size salons.</p>
 
 <h3>How do I write email subject lines that get opened?</h3>
-<p>The highest-performing subject line formats for salons are: personalised reminders ("Sarah, your colour refresh is due"), curiosity-driven questions ("Want to try the colour trend everyone is asking for?"), exclusive offers ("VIP only: 20% off this weekend"), and urgency-based prompts ("3 spots left for Saturday &mdash; book now"). A/B test two subject lines on every campaign, sending each version to 20% of your list and the winner to the remaining 60%.</p>
+<p>The highest-performing subject line formats for salons are: personalised reminders ("Sarah, your colour refresh is due"), curiosity-driven questions ("Want to try the colour trend everyone is asking for?"), exclusive offers ("VIP only: 20% off this weekend"), and urgency-based prompts ("3 spots left for Saturday - book now"). A/B test two subject lines on every campaign, sending each version to 20% of your list and the winner to the remaining 60%.</p>
 
 <h3>Can I use email marketing if I only have a small client list?</h3>
-<p>Absolutely. Email marketing is effective at any list size. A list of 100 engaged clients can generate significant bookings if the content is relevant and the timing is right. Start with the welcome series and rebooking reminder automations &mdash; these require no manual effort after setup and work for every client from their first visit. Build your list consistently through every booking and interaction, and your email marketing will scale naturally with your business.</p>
+<p>Absolutely. Email marketing is effective at any list size. A list of 100 engaged clients can generate significant bookings if the content is relevant and the timing is right. Start with the welcome series and rebooking reminder automations - these require no manual effort after setup and work for every client from their first visit. Build your list consistently through every booking and interaction, and your email marketing will scale naturally with your business.</p>
 `,
     metaTitle: 'Salon Email Marketing Templates | Daisy',
     metaDescription:
@@ -444,11 +444,11 @@ const salonLoyaltyProgramGuideArticle: LocalBlogPost = {
       'Step-by-step guide to creating a salon loyalty program that increases client retention and lifetime value. Covers program types, reward structures, launch strategies, and measurement frameworks tailored for beauty businesses.',
     aboutPosts: `
 <h2>Client Retention Is the Most Profitable Growth Strategy</h2>
-<p>A 5% increase in client retention produces a 25-95% increase in profits, according to research from Harvard Business School. For salons, where repeat clients form the backbone of revenue, a loyalty program is not a nice-to-have &mdash; it is a profit multiplier. Yet many beauty businesses either lack a formal loyalty program or run one so poorly that clients forget it exists.</p>
+<p>A 5% increase in client retention produces a 25-95% increase in profits, according to research from Harvard Business School. For salons, where repeat clients form the backbone of revenue, a loyalty program is not a nice-to-have - it is a profit multiplier. Yet many beauty businesses either lack a formal loyalty program or run one so poorly that clients forget it exists.</p>
 <p>This guide takes you from concept to launch with a <a href="/en/resources/blog/businesses/salon-marketing-strategies">salon marketing approach</a> specifically designed for retention. For platform-specific loyalty setup using The Daisy, see our detailed <a href="/en/resources/blog/businesses/complete-guide-salon-loyalty-programs">loyalty program implementation guide</a>.</p>
 
 <h2>Why Generic Loyalty Programs Fail in Salons</h2>
-<p>Most salon loyalty programs underperform because they copy retail models that do not fit the beauty industry's dynamics. A coffee shop punch card works because the product is identical every visit. Salon visits vary in service, price, and provider &mdash; a loyalty program must account for this complexity.</p>
+<p>Most salon loyalty programs underperform because they copy retail models that do not fit the beauty industry's dynamics. A coffee shop punch card works because the product is identical every visit. Salon visits vary in service, price, and provider - a loyalty program must account for this complexity.</p>
 <p>Common failure points:</p>
 <ul>
 <li><strong>Rewards are too far away.</strong> A client who needs to spend $1,000 before earning a reward will lose interest after two visits.</li>
@@ -486,7 +486,7 @@ const salonLoyaltyProgramGuideArticle: LocalBlogPost = {
 <p>Rewards must feel valuable relative to the effort required. Industry research shows that the most popular salon loyalty rewards are: percentage discounts on services (preferred by 45% of clients), complimentary add-on treatments (28%), free products (15%), and exclusive experience upgrades (12%).</p>
 
 <h3>Expiration Policy</h3>
-<p>Should rewards expire? A 12-month rolling expiration creates urgency without frustrating infrequent clients. Always send reminder emails as expiration approaches: "Your $25 reward expires in 14 days &mdash; book now to use it."</p>
+<p>Should rewards expire? A 12-month rolling expiration creates urgency without frustrating infrequent clients. Always send reminder emails as expiration approaches: "Your $25 reward expires in 14 days - book now to use it."</p>
 
 <h3>Avoid Discounting Your Core Services</h3>
 <p>Loyalty rewards should add value, not simply discount your menu. Complimentary upgrades, exclusive add-ons, and VIP experiences feel more valuable than a 10% discount while protecting your margins better. A free deep conditioning treatment during a colour appointment costs you $5 in product but feels like a $30 value to the client.</p>
@@ -533,16 +533,16 @@ const salonLoyaltyProgramGuideArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How much does it cost to run a salon loyalty program?</h3>
-<p>The cost depends on your reward structure. A 5% cashback program on a salon generating $30,000/month costs approximately $1,500 in rewards. However, the typical 20-30% increase in repeat visit frequency generates $6,000-$9,000 in additional monthly revenue, creating a 4-6x return. Digital platforms like The Daisy include loyalty management in their subscription, eliminating separate software costs. The net cost of a well-run program is effectively negative &mdash; it generates more revenue than it costs.</p>
+<p>The cost depends on your reward structure. A 5% cashback program on a salon generating $30,000/month costs approximately $1,500 in rewards. However, the typical 20-30% increase in repeat visit frequency generates $6,000-$9,000 in additional monthly revenue, creating a 4-6x return. Digital platforms like The Daisy include loyalty management in their subscription, eliminating separate software costs. The net cost of a well-run program is effectively negative - it generates more revenue than it costs.</p>
 
 <h3>Should I require clients to opt in or auto-enrol everyone?</h3>
-<p>Auto-enrollment with an opt-out option produces dramatically higher participation rates (80-90%) compared to opt-in models (30-40%). When you auto-enrol clients, they immediately see rewards accumulating, which creates engagement. Always communicate clearly: "We have enrolled you in our loyalty program &mdash; you have already earned $X from today's visit. You can opt out anytime."</p>
+<p>Auto-enrollment with an opt-out option produces dramatically higher participation rates (80-90%) compared to opt-in models (30-40%). When you auto-enrol clients, they immediately see rewards accumulating, which creates engagement. Always communicate clearly: "We have enrolled you in our loyalty program - you have already earned $X from today's visit. You can opt out anytime."</p>
 
 <h3>What if my competitors offer bigger loyalty rewards?</h3>
 <p>Competing solely on reward generosity leads to a race to the bottom. Instead, differentiate on experience: personalised rewards based on each client's preferences, surprise and delight moments (unexpected upgrades or gifts), and exclusive access to services or events. A client who receives a personalised birthday treatment feels more valued than one who receives a generic 10% discount, regardless of the dollar amount.</p>
 
 <h3>How do I re-engage clients who have stopped participating?</h3>
-<p>Segment lapsed loyalty members (no activity in 90+ days) and target them with a reactivation campaign. Send a personalised email showing their current balance and a bonus incentive to return: "You have $35 waiting for you &mdash; plus we are adding $15 as a welcome-back bonus if you book this month." Include a one-tap booking link. This combination of existing balance (loss aversion) plus a bonus (new incentive) is the most effective reactivation strategy.</p>
+<p>Segment lapsed loyalty members (no activity in 90+ days) and target them with a reactivation campaign. Send a personalised email showing their current balance and a bonus incentive to return: "You have $35 waiting for you - plus we are adding $15 as a welcome-back bonus if you book this month." Include a one-tap booking link. This combination of existing balance (loss aversion) plus a bonus (new incentive) is the most effective reactivation strategy.</p>
 `,
     metaTitle: 'Create a Salon Loyalty Program | Daisy',
     metaDescription:
@@ -646,7 +646,7 @@ const salonReferralProgramGuideArticle: LocalBlogPost = {
 <p>The best time to ask for a referral is when a client is happiest: immediately after a great service. Train your team to mention the referral program during checkout: "If you have a friend who would love this, you both get $20 off when they book. I can text you the link right now."</p>
 
 <h3>Post-Appointment Follow-Up</h3>
-<p>Include a referral prompt in your post-appointment communication. A message like "Loved your visit? Share the experience &mdash; refer a friend and you both earn $20" with a direct sharing link converts the post-appointment glow into action.</p>
+<p>Include a referral prompt in your post-appointment communication. A message like "Loved your visit? Share the experience - refer a friend and you both earn $20" with a direct sharing link converts the post-appointment glow into action.</p>
 
 <h3>Social Media Reminders</h3>
 <p>Feature your referral program in social media content monthly. Share success stories (with permission): "This month, 15 clients earned rewards by referring friends. Thank you for spreading the word!" Social proof encourages participation from clients who have not yet referred anyone.</p>
@@ -677,7 +677,7 @@ const salonReferralProgramGuideArticle: LocalBlogPost = {
 <p>Absolutely. Every satisfied client is a potential referrer, regardless of how they discovered you. After a walk-in client's first appointment, invite them to join your referral program as part of the checkout process. Their network of friends and family represents untapped potential. The key is capturing their contact information and providing their unique referral link before they leave.</p>
 
 <h3>How do I reactivate a referral program that has gone stale?</h3>
-<p>Run a limited-time referral boost campaign: "This month only, double rewards for every referral &mdash; you get $40 and your friend gets $40." Send this to your most engaged clients (those who visit regularly and have high satisfaction scores). The urgency of a time-limited offer combined with an increased reward re-ignites participation. Follow the boost campaign with consistent ongoing promotion to maintain momentum.</p>
+<p>Run a limited-time referral boost campaign: "This month only, double rewards for every referral - you get $40 and your friend gets $40." Send this to your most engaged clients (those who visit regularly and have high satisfaction scores). The urgency of a time-limited offer combined with an increased reward re-ignites participation. Follow the boost campaign with consistent ongoing promotion to maintain momentum.</p>
 `,
     metaTitle: 'Salon Referral Programs Guide | Daisy',
     metaDescription:
@@ -742,7 +742,7 @@ const googleMyBusinessSalonArticle: LocalBlogPost = {
 <p>Category selection directly impacts which searches your profile appears for. Set your primary category to the most specific option that describes your business (e.g., "Hair Salon" rather than "Beauty Salon" if hair is your primary service). Add secondary categories for every service type you offer: "Nail Salon," "Day Spa," "Waxing Service," "Makeup Artist," etc. You can add up to 10 categories.</p>
 
 <h3>Business Description</h3>
-<p>Write a 750-character description that includes your key services, location, specialisations, and unique selling points. Include relevant keywords naturally: "Full-service hair salon in [neighbourhood] specialising in balayage, colour correction, and bridal styling. Walk-ins welcome. Online booking available." Do not stuff keywords or use promotional language like "best salon" &mdash; Google may reject descriptions with superlatives.</p>
+<p>Write a 750-character description that includes your key services, location, specialisations, and unique selling points. Include relevant keywords naturally: "Full-service hair salon in [neighbourhood] specialising in balayage, colour correction, and bridal styling. Walk-ins welcome. Online booking available." Do not stuff keywords or use promotional language like "best salon" - Google may reject descriptions with superlatives.</p>
 
 <h3>Services and Menu</h3>
 <p>Add every service you offer with descriptions and price ranges. This information appears when potential clients view your profile and helps Google match your listing to specific service searches (e.g., "keratin treatment near me"). Update prices quarterly to maintain accuracy.</p>
@@ -766,7 +766,7 @@ const googleMyBusinessSalonArticle: LocalBlogPost = {
 </ul>
 
 <h3>Photo Quality Standards</h3>
-<p>Use well-lit, high-resolution photos. Natural lighting is ideal. Avoid heavy filters that misrepresent your work or space. Upload photos in landscape orientation for best display. Add new photos weekly to signal to Google that your profile is actively maintained &mdash; active profiles receive more visibility.</p>
+<p>Use well-lit, high-resolution photos. Natural lighting is ideal. Avoid heavy filters that misrepresent your work or space. Upload photos in landscape orientation for best display. Add new photos weekly to signal to Google that your profile is actively maintained - active profiles receive more visibility.</p>
 
 <h2>Step 4: Master Review Management</h2>
 <p>Reviews are the single most influential factor in a potential client's decision to book. Salons with 50+ reviews and a 4.5+ star rating attract 3-4x more clicks than those with fewer reviews or lower ratings.</p>
@@ -775,7 +775,7 @@ const googleMyBusinessSalonArticle: LocalBlogPost = {
 <p>Do not leave reviews to chance. Implement a systematic review collection process:</p>
 <ol>
 <li>Send an automated review request 24 hours after every appointment with a direct link to your Google review page.</li>
-<li>Include a review request in post-appointment SMS: "Thank you for visiting! We'd love your feedback &mdash; [direct review link]."</li>
+<li>Include a review request in post-appointment SMS: "Thank you for visiting! We'd love your feedback - [direct review link]."</li>
 <li>Train your team to ask for reviews at checkout: "If you enjoyed your experience today, a Google review would mean the world to us."</li>
 <li>Display a QR code at your mirror stations linking to your review page.</li>
 </ol>
@@ -814,7 +814,7 @@ const googleMyBusinessSalonArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How long does it take for Google Business Profile optimisation to show results?</h3>
-<p>Most salons see measurable improvements within 4-8 weeks of completing a full optimisation. Profile completeness improvements show results fastest (more search appearances within days). Review accumulation takes longer but has the most significant impact &mdash; each review incrementally improves your ranking. Consistent weekly updates (photos, posts, review responses) signal activity to Google and gradually improve your position in local search results over 2-3 months.</p>
+<p>Most salons see measurable improvements within 4-8 weeks of completing a full optimisation. Profile completeness improvements show results fastest (more search appearances within days). Review accumulation takes longer but has the most significant impact - each review incrementally improves your ranking. Consistent weekly updates (photos, posts, review responses) signal activity to Google and gradually improve your position in local search results over 2-3 months.</p>
 
 <h3>How many Google reviews does my salon need?</h3>
 <p>There is no magic number, but research shows meaningful ranking and trust benefits begin at 20+ reviews, with significant competitive advantage at 50+. More important than total count is recency and consistency. A salon with 30 reviews in the last 6 months ranks higher than one with 100 reviews but none in the past year. Focus on generating 2-4 new reviews per week through your automated review request system.</p>
@@ -871,7 +871,7 @@ const salonSeoLocalSearchArticle: LocalBlogPost = {
       'Master local SEO for your salon to rank in Google search and Maps results. Covers on-page optimisation, local citations, link building, content strategy, and technical SEO specifically tailored for beauty businesses.',
     aboutPosts: `
 <h2>Local SEO Is the Most Cost-Effective Client Acquisition Channel for Salons</h2>
-<p>Local SEO is the practice of optimising your online presence so your salon appears prominently when potential clients search for beauty services in your area. Unlike paid advertising, which stops generating leads the moment you stop paying, local SEO delivers compounding returns &mdash; the work you invest today continues driving visibility and bookings for months and years.</p>
+<p>Local SEO is the practice of optimising your online presence so your salon appears prominently when potential clients search for beauty services in your area. Unlike paid advertising, which stops generating leads the moment you stop paying, local SEO delivers compounding returns - the work you invest today continues driving visibility and bookings for months and years.</p>
 <p>For beauty businesses, local search intent is extraordinarily high. When someone searches "hair salon near me" or "balayage specialist [city]," they are actively looking to book, not casually browsing. Capturing this intent is the most direct path from search to appointment. This guide is part of our complete <a href="/en/resources/blog/businesses/salon-marketing-strategies">salon marketing strategy</a> series and covers every aspect of local SEO for salons.</p>
 
 <h2>Understanding How Local Search Works for Salons</h2>
@@ -905,7 +905,7 @@ const salonSeoLocalSearchArticle: LocalBlogPost = {
 </ul>
 
 <h3>Location Pages</h3>
-<p>If you operate multiple branches, each location needs its own dedicated page with unique content. Include the specific address, team members at that location, services available, client reviews specific to that branch, and a unique meta title and description. Avoid duplicating content across location pages &mdash; Google penalises duplicate content.</p>
+<p>If you operate multiple branches, each location needs its own dedicated page with unique content. Include the specific address, team members at that location, services available, client reviews specific to that branch, and a unique meta title and description. Avoid duplicating content across location pages - Google penalises duplicate content.</p>
 
 <h2>Building Local Citations</h2>
 <p>A local citation is any online mention of your salon's name, address, and phone number (NAP). Consistent citations across the web signal legitimacy and improve local search rankings.</p>
@@ -979,7 +979,7 @@ const salonSeoLocalSearchArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How long does salon SEO take to produce results?</h3>
-<p>Local SEO is a medium to long-term investment. Typically, you will see initial improvements in 4-8 weeks (particularly from Google Business Profile optimisation and citation building). Meaningful ranking improvements for competitive keywords take 3-6 months of consistent effort. Full maturity &mdash; where your salon consistently appears in the top 3 local results for your target keywords &mdash; usually takes 6-12 months. The compounding nature of SEO means results accelerate over time as your authority builds.</p>
+<p>Local SEO is a medium to long-term investment. Typically, you will see initial improvements in 4-8 weeks (particularly from Google Business Profile optimisation and citation building). Meaningful ranking improvements for competitive keywords take 3-6 months of consistent effort. Full maturity - where your salon consistently appears in the top 3 local results for your target keywords - usually takes 6-12 months. The compounding nature of SEO means results accelerate over time as your authority builds.</p>
 
 <h3>Should I hire an SEO agency or do it myself?</h3>
 <p>Start by handling the fundamentals yourself: Google Business Profile optimisation, review management, and basic on-page SEO. These actions deliver the highest ROI and do not require technical expertise. Consider hiring an agency when you want to pursue more advanced strategies (link building, technical SEO audits, content strategy at scale) or when your time is more valuable spent on salon operations. A good local SEO agency for a single-location salon typically costs $500-$1,500 per month.</p>
@@ -988,7 +988,7 @@ const salonSeoLocalSearchArticle: LocalBlogPost = {
 <p>A blog is not strictly required, but it significantly accelerates your SEO results. Blog content targets long-tail keywords that your service pages cannot cover, demonstrates expertise to both Google and potential clients, and provides fresh content that signals an active website. Even publishing 2 articles per month can meaningfully improve your search visibility within 3-6 months. Focus on topics that combine beauty expertise with local relevance.</p>
 
 <h3>How important are online reviews for salon SEO?</h3>
-<p>Reviews are one of the top three local ranking factors. Google uses review quantity, quality, recency, and the presence of keywords in reviews to determine local rankings. Salons with more recent, high-rated reviews consistently outrank competitors with fewer or older reviews. Beyond ranking, reviews directly influence click-through rates and booking conversion &mdash; a 4.8-star salon with 100 reviews converts visitors to bookings at roughly twice the rate of a 4.2-star salon with 20 reviews.</p>
+<p>Reviews are one of the top three local ranking factors. Google uses review quantity, quality, recency, and the presence of keywords in reviews to determine local rankings. Salons with more recent, high-rated reviews consistently outrank competitors with fewer or older reviews. Beyond ranking, reviews directly influence click-through rates and booking conversion - a 4.8-star salon with 100 reviews converts visitors to bookings at roughly twice the rate of a 4.2-star salon with 20 reviews.</p>
 `,
     metaTitle: 'Salon SEO: Local Search Guide | Daisy',
     metaDescription:
@@ -1036,7 +1036,7 @@ const independentBeautyProfessionalMarketingArticle: LocalBlogPost = {
       'A comprehensive marketing guide for freelance and independent beauty professionals. Covers personal branding, social media strategy, client acquisition, pricing communication, and building a sustainable client base without a salon team behind you.',
     aboutPosts: `
 <h2>Independent Beauty Professionals Need a Different Marketing Approach</h2>
-<p>Marketing as an independent beauty professional is fundamentally different from marketing a salon. You do not have a brand, a team, or a marketing budget behind you &mdash; you are the brand. Every marketing decision reflects directly on you, and every new client relationship starts with your personal reputation.</p>
+<p>Marketing as an independent beauty professional is fundamentally different from marketing a salon. You do not have a brand, a team, or a marketing budget behind you - you are the brand. Every marketing decision reflects directly on you, and every new client relationship starts with your personal reputation.</p>
 <p>The good news: independent professionals have advantages that salons do not. You can build deeper personal connections, move faster on trends, and create an authentic brand that clients feel personally connected to. This guide provides a complete <a href="/en/resources/blog/businesses/salon-marketing-strategies">marketing framework</a> tailored specifically for freelance beauty professionals, whether you rent a chair, run a home studio, or offer mobile services.</p>
 
 <h2>Building Your Personal Brand Foundation</h2>
@@ -1049,7 +1049,7 @@ const independentBeautyProfessionalMarketingArticle: LocalBlogPost = {
 <p>Summarise what you offer in one sentence that a client could repeat to a friend: "She specialises in curly hair transformations and makes you feel completely understood" or "He does the best fades in the city and the vibe is always relaxed." Your value proposition combines your technical specialisation with the experience you create.</p>
 
 <h3>Visual Identity Consistency</h3>
-<p>Develop a consistent visual identity across all touchpoints: your social media profiles, booking page, business cards, and any physical space. This does not require a designer &mdash; choose 2-3 colours, one font, and a consistent photo style. Consistency builds recognition and professionalism.</p>
+<p>Develop a consistent visual identity across all touchpoints: your social media profiles, booking page, business cards, and any physical space. This does not require a designer - choose 2-3 colours, one font, and a consistent photo style. Consistency builds recognition and professionalism.</p>
 
 <h2>Social Media Marketing for Independent Professionals</h2>
 <p>Social media is your most powerful marketing channel. It is free, visual, and reaches potential clients exactly where they spend their time.</p>
@@ -1079,10 +1079,10 @@ const independentBeautyProfessionalMarketingArticle: LocalBlogPost = {
 <p>Beyond social media, independent professionals can leverage several high-impact acquisition channels.</p>
 
 <h3>Platform Profiles</h3>
-<p>Professional booking platforms provide built-in discovery for clients searching by service and location. <a href="/en/features/professional/marketing-promotions">The Daisy's professional profile</a> is optimised for client discovery, with your portfolio, services, reviews, and direct booking in one place. Complete your profile thoroughly &mdash; professionals with complete profiles receive 3-4x more booking enquiries than those with partial profiles.</p>
+<p>Professional booking platforms provide built-in discovery for clients searching by service and location. <a href="/en/features/professional/marketing-promotions">The Daisy's professional profile</a> is optimised for client discovery, with your portfolio, services, reviews, and direct booking in one place. Complete your profile thoroughly - professionals with complete profiles receive 3-4x more booking enquiries than those with partial profiles.</p>
 
 <h3>Google Business Profile</h3>
-<p>If you have a fixed location (rented chair, studio, or home salon), claim a Google Business Profile. This captures the highest-intent clients &mdash; people actively searching for your services in your area. Follow the same optimisation principles from our <a href="/en/resources/blog/businesses/google-my-business-salon-optimization">Google Business Profile guide</a>, adapted for your individual practice.</p>
+<p>If you have a fixed location (rented chair, studio, or home salon), claim a Google Business Profile. This captures the highest-intent clients - people actively searching for your services in your area. Follow the same optimisation principles from our <a href="/en/resources/blog/businesses/google-my-business-salon-optimization">Google Business Profile guide</a>, adapted for your individual practice.</p>
 
 <h3>Referral Network</h3>
 <p>Build a referral network with complementary professionals: makeup artists, photographers, wedding planners, personal stylists, and other beauty professionals who serve your target clients but do not compete with you. Formalise the relationship: "I refer clients to you for nails, you refer clients to me for colour." Track referrals so you can recognise and reward your best referral partners.</p>
@@ -1097,7 +1097,7 @@ const independentBeautyProfessionalMarketingArticle: LocalBlogPost = {
 <p>Display your prices publicly on your booking page and social media. Hidden pricing creates friction and attracts price-sensitive enquiries. Transparent pricing filters for clients who value your work at your stated rate.</p>
 
 <h3>Value-Based Framing</h3>
-<p>Frame your pricing around the outcome and experience, not the time spent. "Signature balayage including consultation, treatment, and styling &mdash; $250" communicates value better than "$250/3 hours." Clients pay for the transformation, not the clock.</p>
+<p>Frame your pricing around the outcome and experience, not the time spent. "Signature balayage including consultation, treatment, and styling - $250" communicates value better than "$250/3 hours." Clients pay for the transformation, not the clock.</p>
 
 <h3>Raising Prices</h3>
 <p>If your calendar is consistently 80%+ booked two weeks in advance, your prices should increase. Raise prices 10-15% annually. Communicate increases to existing clients with 4-6 weeks notice, framing it as an investment in quality: "To continue delivering the exceptional experience you deserve, our prices will be updated on [date]."</p>
@@ -1107,7 +1107,7 @@ const independentBeautyProfessionalMarketingArticle: LocalBlogPost = {
 <ul>
 <li><strong>Rebooking at checkout:</strong> Always offer to schedule the next appointment before the client leaves. Clients who rebook immediately have a 90%+ show rate versus 60% for those who "will book later."</li>
 <li><strong>Personalised follow-up:</strong> A brief message 24-48 hours after the appointment checking in on their experience. <a href="/en/features/professional/communication-tools">The Daisy's communication tools</a> automate this while maintaining a personal feel.</li>
-<li><strong>Loyalty recognition:</strong> Acknowledge milestone visits (10th appointment, one-year anniversary) with a small gesture &mdash; a complimentary upgrade, a personalised note, or a small gift.</li>
+<li><strong>Loyalty recognition:</strong> Acknowledge milestone visits (10th appointment, one-year anniversary) with a small gesture - a complimentary upgrade, a personalised note, or a small gift.</li>
 <li><strong>Consistent experience:</strong> Develop signature touches that make every visit memorable and predictable. Clients return to professionals who deliver consistently, not just occasionally.</li>
 </ul>
 
@@ -1118,15 +1118,15 @@ const independentBeautyProfessionalMarketingArticle: LocalBlogPost = {
 <li><strong>Respond to all feedback:</strong> Thank positive reviewers specifically. Address negative reviews professionally and offer to resolve issues.</li>
 <li><strong>Showcase testimonials:</strong> Feature client feedback prominently on your social media, booking page, and any marketing materials.</li>
 </ul>
-<p>Track your professional metrics &mdash; rebooking rate, client satisfaction, and revenue trends &mdash; with <a href="/en/features/professional/analytics-reports">The Daisy's professional analytics</a> to identify what is working and where to improve.</p>
+<p>Track your professional metrics - rebooking rate, client satisfaction, and revenue trends - with <a href="/en/features/professional/analytics-reports">The Daisy's professional analytics</a> to identify what is working and where to improve.</p>
 
 <h2>Frequently Asked Questions</h2>
 
 <h3>How much should an independent beauty professional spend on marketing?</h3>
-<p>Start with time, not money. The highest-ROI marketing activities for independents are free: social media content creation, Google Business Profile optimisation, referral network building, and review collection. As your income grows, allocate 5-10% of revenue to marketing. For a professional earning $5,000/month, that is $250-$500 &mdash; enough for a booking platform subscription, occasional promoted posts, and professional photography quarterly. Never spend on marketing before you have a strong portfolio and consistent client experience to back it up.</p>
+<p>Start with time, not money. The highest-ROI marketing activities for independents are free: social media content creation, Google Business Profile optimisation, referral network building, and review collection. As your income grows, allocate 5-10% of revenue to marketing. For a professional earning $5,000/month, that is $250-$500 - enough for a booking platform subscription, occasional promoted posts, and professional photography quarterly. Never spend on marketing before you have a strong portfolio and consistent client experience to back it up.</p>
 
 <h3>Should I create a business name or market under my own name?</h3>
-<p>For most independent beauty professionals, marketing under your own name is more effective. Clients book with people, not brands, in the beauty industry. Your name builds a reputation that follows you regardless of where you work. A business name can create unnecessary distance between you and your clients. The exception is if you plan to eventually build a team or open a studio &mdash; in that case, a business name provides a foundation for scaling beyond your personal labour.</p>
+<p>For most independent beauty professionals, marketing under your own name is more effective. Clients book with people, not brands, in the beauty industry. Your name builds a reputation that follows you regardless of where you work. A business name can create unnecessary distance between you and your clients. The exception is if you plan to eventually build a team or open a studio - in that case, a business name provides a foundation for scaling beyond your personal labour.</p>
 
 <h3>How do I compete with salons that have bigger marketing budgets?</h3>
 <p>You compete by being what a salon cannot: personal, authentic, and deeply connected to each client. Salons offer consistency and convenience; you offer a personalised relationship and a unique creative vision. Your marketing should emphasise what makes you different: your specific expertise, your personal approach, your availability for longer consultations, and the exclusivity of a one-on-one experience. Clients who value personal connection over brand names are your target audience, and they are willing to pay premium prices for it.</p>

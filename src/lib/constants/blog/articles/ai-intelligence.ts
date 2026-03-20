@@ -61,7 +61,7 @@ const aiSchedulingArticle: LocalBlogPost = {
 <ol>
 <li><strong>Customer reaches out</strong> via phone, WhatsApp, Instagram DM, website chat, or any connected channel.</li>
 <li><strong>AI identifies the customer</strong> from your database or creates a new profile automatically.</li>
-<li><strong>AI understands the request</strong> &mdash; whether it is a new booking, reschedule, pricing question, or general inquiry &mdash; and responds naturally in Arabic or English.</li>
+<li><strong>AI understands the request</strong> - whether it is a new booking, reschedule, pricing question, or general inquiry - and responds naturally in Arabic or English.</li>
 <li><strong>AI checks real-time availability</strong> across all staff members, accounting for service duration, setup time, and specialization.</li>
 <li><strong>AI optimizes the slot</strong> by selecting times that minimize calendar gaps and maximize daily revenue.</li>
 <li><strong>Booking is confirmed</strong> with automatic confirmation messages sent to both the client and the assigned staff member.</li>
@@ -72,13 +72,13 @@ const aiSchedulingArticle: LocalBlogPost = {
 <p>Here is a breakdown of time savings by specific AI scheduling capability:</p>
 
 <h3>24/7 AI Receptionist: 3-5 Hours Saved</h3>
-<p>An AI receptionist handles every inbound inquiry &mdash; calls, messages, and social media DMs &mdash; without human involvement. It operates around the clock, meaning bookings that would previously be missed during busy periods or after hours are captured automatically. Salon owners report eliminating phone interruptions during client sessions entirely.</p>
+<p>An AI receptionist handles every inbound inquiry - calls, messages, and social media DMs - without human involvement. It operates around the clock, meaning bookings that would previously be missed during busy periods or after hours are captured automatically. Salon owners report eliminating phone interruptions during client sessions entirely.</p>
 
 <h3>Smart Calendar Optimization: 2-3 Hours Saved</h3>
 <p>Instead of manually arranging appointments, AI analyses service durations, staff skills, and historical booking patterns to build an optimized daily schedule. It automatically accounts for buffer time between services, avoids double-bookings, and fills gaps that manual scheduling would miss.</p>
 
 <h3>Automated No-Show Management: 1-2 Hours Saved</h3>
-<p>When a client cancels or no-shows, AI immediately contacts waitlisted clients to fill the slot. Smart reminders sent at the right intervals &mdash; typically 24 hours and 2 hours before the appointment &mdash; reduce no-shows by up to 40%.</p>
+<p>When a client cancels or no-shows, AI immediately contacts waitlisted clients to fill the slot. Smart reminders sent at the right intervals - typically 24 hours and 2 hours before the appointment - reduce no-shows by up to 40%.</p>
 
 <h3>Staff Schedule Coordination: 1-2 Hours Saved</h3>
 <p>AI matches client requests with the right staff member based on specialization, availability, and workload balance. When staff availability changes, the system automatically adjusts affected bookings and notifies clients.</p>
@@ -166,7 +166,7 @@ const predictiveAnalyticsArticle: LocalBlogPost = {
       'Predictive analytics uses historical salon data to forecast demand, identify client churn risk, and optimize staffing. This beginner\'s guide explains what it is, how it works, and how to start using it.',
     aboutPosts: `
 <h2>What Is Predictive Analytics for Salons?</h2>
-<p>Predictive analytics is the use of historical data, statistical algorithms, and machine learning to forecast future outcomes. For salons, this means using your existing booking, revenue, and client data to predict what will happen next &mdash; and make better business decisions as a result.</p>
+<p>Predictive analytics is the use of historical data, statistical algorithms, and machine learning to forecast future outcomes. For salons, this means using your existing booking, revenue, and client data to predict what will happen next - and make better business decisions as a result.</p>
 <p>Instead of guessing which services will be popular next month, when you will need extra staff, or which clients are at risk of leaving, predictive analytics gives you evidence-based answers. Platforms like <a href="/en/features/business/ai-salon-management">The Daisy</a> build this intelligence directly into the salon management workflow.</p>
 
 <h2>Why Should Salon Owners Care About Predictive Analytics?</h2>
@@ -181,10 +181,10 @@ const predictiveAnalyticsArticle: LocalBlogPost = {
 <p>Here are the specific predictions salon analytics can generate from your existing data:</p>
 
 <h3>Demand Forecasting</h3>
-<p>Predictive models analyse historical booking patterns to forecast demand by day of week, time of day, service type, and season. This tells you exactly when to expect busy periods and when to run promotions to fill slower times. For example, the system might identify that balayage bookings spike 3 weeks before major holidays &mdash; giving you time to prepare staff and inventory.</p>
+<p>Predictive models analyse historical booking patterns to forecast demand by day of week, time of day, service type, and season. This tells you exactly when to expect busy periods and when to run promotions to fill slower times. For example, the system might identify that balayage bookings spike 3 weeks before major holidays - giving you time to prepare staff and inventory.</p>
 
 <h3>Client Churn Prediction</h3>
-<p>By analysing rebooking intervals, visit frequency changes, and service pattern shifts, AI can flag clients who are at risk of leaving before they actually stop coming. A client whose average visit interval has stretched from 4 weeks to 7 weeks is showing early signs of churn. Early intervention &mdash; a personalised offer or a check-in message &mdash; can retain clients who would otherwise be lost.</p>
+<p>By analysing rebooking intervals, visit frequency changes, and service pattern shifts, AI can flag clients who are at risk of leaving before they actually stop coming. A client whose average visit interval has stretched from 4 weeks to 7 weeks is showing early signs of churn. Early intervention - a personalised offer or a check-in message - can retain clients who would otherwise be lost.</p>
 
 <h3>Revenue Forecasting</h3>
 <p>Based on current booking trends, client retention rates, and seasonal patterns, predictive analytics projects your revenue for the coming weeks and months. This helps with cash flow planning, staffing decisions, and investment timing.</p>
@@ -201,7 +201,7 @@ const predictiveAnalyticsArticle: LocalBlogPost = {
 <li><strong>Data collection:</strong> Every booking, cancellation, payment, and client interaction is automatically recorded and structured.</li>
 <li><strong>Pattern recognition:</strong> Machine learning algorithms identify trends, cycles, and correlations in your data.</li>
 <li><strong>Prediction generation:</strong> The system generates forecasts and flags anomalies or opportunities.</li>
-<li><strong>Actionable reporting:</strong> You receive weekly insight reports with specific, plain-language recommendations &mdash; not raw data you need to interpret.</li>
+<li><strong>Actionable reporting:</strong> You receive weekly insight reports with specific, plain-language recommendations - not raw data you need to interpret.</li>
 </ol>
 
 <h2>Getting Started: What Data Do You Need?</h2>
@@ -224,17 +224,17 @@ const predictiveAnalyticsArticle: LocalBlogPost = {
 <h2>What Outcomes Can You Expect?</h2>
 <p>Salons using predictive analytics through The Daisy report:</p>
 <ul>
-<li><strong>Better staffing decisions</strong> &mdash; schedule the right number of staff for predicted demand instead of overstaffing slow days or understaffing busy ones.</li>
-<li><strong>Improved client retention</strong> &mdash; early intervention on at-risk clients recovers relationships before they are lost.</li>
-<li><strong>Higher revenue per day</strong> &mdash; optimized scheduling and pricing recommendations fill more slots at better rates.</li>
-<li><strong>Confident decision-making</strong> &mdash; investment, hiring, and expansion decisions backed by data rather than guesswork.</li>
+<li><strong>Better staffing decisions</strong> - schedule the right number of staff for predicted demand instead of overstaffing slow days or understaffing busy ones.</li>
+<li><strong>Improved client retention</strong> - early intervention on at-risk clients recovers relationships before they are lost.</li>
+<li><strong>Higher revenue per day</strong> - optimized scheduling and pricing recommendations fill more slots at better rates.</li>
+<li><strong>Confident decision-making</strong> - investment, hiring, and expansion decisions backed by data rather than guesswork.</li>
 </ul>
 <p>For a complete overview of The Daisy's AI-powered business intelligence capabilities, visit our <a href="/en/features/business/ai-salon-management">AI-Powered Intelligence for Salons</a> page.</p>
 
 <h2>Frequently Asked Questions</h2>
 
 <h3>Do I need technical skills to use predictive analytics?</h3>
-<p>No. The Daisy delivers insights as plain-language weekly reports with specific recommendations. You do not need to understand statistics or data science &mdash; the system translates the data into actionable advice like "Schedule an additional stylist on Thursdays in April" or "Client X has not visited in 6 weeks &mdash; consider a re-engagement offer."</p>
+<p>No. The Daisy delivers insights as plain-language weekly reports with specific recommendations. You do not need to understand statistics or data science - the system translates the data into actionable advice like "Schedule an additional stylist on Thursdays in April" or "Client X has not visited in 6 weeks - consider a re-engagement offer."</p>
 
 <h3>How accurate are salon demand forecasts?</h3>
 <p>Accuracy depends on data volume and consistency. With 6+ months of booking data, demand forecasts are typically reliable enough to inform staffing and promotion decisions. The system clearly indicates its confidence level for each prediction.</p>
@@ -288,13 +288,13 @@ const fiveWaysAiArticle: LocalBlogPost = {
       'AI is changing how beauty businesses operate, from 24/7 receptionists to predictive revenue forecasting. Here are 5 specific ways AI transforms salon and spa operations in 2026.',
     aboutPosts: `
 <h2>How Is AI Changing the Beauty Industry in 2026?</h2>
-<p>Artificial intelligence has moved beyond hype into practical daily use for beauty businesses. In 2026, AI is not about replacing stylists or automating creativity &mdash; it is about eliminating the administrative burden that keeps salon owners from focusing on what they do best: delivering exceptional service.</p>
+<p>Artificial intelligence has moved beyond hype into practical daily use for beauty businesses. In 2026, AI is not about replacing stylists or automating creativity - it is about eliminating the administrative burden that keeps salon owners from focusing on what they do best: delivering exceptional service.</p>
 <p>Here are five specific, proven ways AI is transforming beauty businesses right now, with real outcomes that salon and spa owners are already experiencing.</p>
 
 <h2>1. A 24/7 AI Receptionist That Never Misses a Call</h2>
-<p>The single biggest revenue leak for salons is missed calls. Industry data shows that salons miss 30-40% of inbound calls because staff are busy with clients. Each missed call represents a potential booking &mdash; and a customer who may book with a competitor instead.</p>
+<p>The single biggest revenue leak for salons is missed calls. Industry data shows that salons miss 30-40% of inbound calls because staff are busy with clients. Each missed call represents a potential booking - and a customer who may book with a competitor instead.</p>
 <p>An AI receptionist, like the one built into <a href="/en/features/business/ai-salon-management">The Daisy platform</a>, handles every customer interaction across phone, WhatsApp, Instagram DM, website chat, and SMS. It operates 24 hours a day, 7 days a week, answering inquiries, booking appointments, processing payments, and responding in both Arabic and English.</p>
-<p><strong>The business impact:</strong> Salon owners using AI receptionists report capturing bookings they previously lost &mdash; particularly after-hours inquiries and calls that came in during busy appointment blocks.</p>
+<p><strong>The business impact:</strong> Salon owners using AI receptionists report capturing bookings they previously lost - particularly after-hours inquiries and calls that came in during busy appointment blocks.</p>
 
 <h2>2. Smart Scheduling That Maximizes Revenue Per Day</h2>
 <p>Traditional booking calendars let clients pick any available slot. AI scheduling goes further by analysing which slot arrangement generates the most revenue for your day.</p>
@@ -320,7 +320,7 @@ const fiveWaysAiArticle: LocalBlogPost = {
 <li><strong>Post-appointment follow-ups</strong> requesting reviews and suggesting rebooking.</li>
 <li><strong>Re-engagement messages</strong> for clients who have not visited recently, with personalised offers based on their service history.</li>
 </ul>
-<p>Every message is personalised using client data &mdash; their name, preferred services, last visit, and communication preferences &mdash; making each interaction feel personal rather than automated.</p>
+<p>Every message is personalised using client data - their name, preferred services, last visit, and communication preferences - making each interaction feel personal rather than automated.</p>
 <p><strong>The business impact:</strong> Automated reminders alone reduce no-shows by up to 40%. Combined with re-engagement messaging, salons see higher client retention and more repeat bookings without any manual follow-up effort.</p>
 
 <h2>5. AI-Driven Upselling Based on Client History</h2>
@@ -332,9 +332,9 @@ const fiveWaysAiArticle: LocalBlogPost = {
 <h2>How to Start Using AI in Your Salon</h2>
 <p>Getting started with AI does not require technical expertise or a large upfront investment. The Daisy platform integrates all five capabilities into a single system designed specifically for beauty and wellness businesses:</p>
 <ol>
-<li><strong>Sign up and connect your channels</strong> &mdash; phone, WhatsApp, social media, website.</li>
+<li><strong>Sign up and connect your channels</strong> - phone, WhatsApp, social media, website.</li>
 <li><strong>Import your service menu and staff schedules.</strong></li>
-<li><strong>The AI begins working immediately</strong> &mdash; handling bookings, optimising your calendar, and learning your business patterns.</li>
+<li><strong>The AI begins working immediately</strong> - handling bookings, optimising your calendar, and learning your business patterns.</li>
 <li><strong>Review weekly insight reports</strong> and act on the recommendations.</li>
 </ol>
 <p>Explore the full range of AI capabilities on our <a href="/en/features/business/ai-salon-management">AI-Powered Intelligence</a> page.</p>
@@ -348,7 +348,7 @@ const fiveWaysAiArticle: LocalBlogPost = {
 <p>The Daisy offers AI-powered salon management with zero commission on bookings. Visit the <a href="/en/pricing">pricing page</a> for current plan details. Most salons find that the revenue captured from previously missed bookings alone covers the subscription cost.</p>
 
 <h3>Does AI work in Arabic?</h3>
-<p>The Daisy's AI operates natively in both Arabic and English with full cultural context understanding. It is not a translation layer &mdash; it genuinely comprehends and responds in both languages, including GCC dialects and beauty industry terminology.</p>
+<p>The Daisy's AI operates natively in both Arabic and English with full cultural context understanding. It is not a translation layer - it genuinely comprehends and responds in both languages, including GCC dialects and beauty industry terminology.</p>
 `,
     metaTitle: '5 Ways AI Transforms Your Beauty Business | Daisy',
     metaDescription:
@@ -396,13 +396,13 @@ const aiToolsProfessionalArticle: LocalBlogPost = {
       'Independent beauty professionals can use AI tools to automate booking, manage clients, and grow their business without hiring help. Here are the essential AI tools for freelance stylists and beauty pros.',
     aboutPosts: `
 <h2>Why Do Independent Beauty Professionals Need AI Tools?</h2>
-<p>Independent beauty professionals &mdash; freelance stylists, mobile makeup artists, solo estheticians, and independent nail technicians &mdash; face a unique challenge: they are the business. There is no receptionist to answer calls, no manager to handle scheduling, and no marketing team to attract new clients.</p>
+<p>Independent beauty professionals - freelance stylists, mobile makeup artists, solo estheticians, and independent nail technicians - face a unique challenge: they are the business. There is no receptionist to answer calls, no manager to handle scheduling, and no marketing team to attract new clients.</p>
 <p>AI tools solve this problem by automating the administrative work that eats into billable hours. Instead of spending evenings responding to booking requests and weekends updating social media, you can let AI handle the operational side while you focus on delivering exceptional service.</p>
 
 <h2>Essential AI Tools for Beauty Professionals</h2>
 
 <h3>1. AI Booking Assistant</h3>
-<p>An AI booking assistant handles appointment requests across all your channels &mdash; phone, WhatsApp, Instagram DMs, and your website &mdash; without requiring you to stop what you are doing. When a potential client messages at 9pm asking about availability, the AI responds instantly, checks your calendar, and books the appointment.</p>
+<p>An AI booking assistant handles appointment requests across all your channels - phone, WhatsApp, Instagram DMs, and your website - without requiring you to stop what you are doing. When a potential client messages at 9pm asking about availability, the AI responds instantly, checks your calendar, and books the appointment.</p>
 <p><strong>Why it matters for independents:</strong> Unlike salon employees who can hand off calls to reception, independent professionals lose bookings every time they cannot respond immediately. An AI assistant means you never miss an inquiry, even during appointments, on days off, or outside working hours.</p>
 <p><a href="/en/features/professional/ai-salon-management">The Daisy's AI tools for professionals</a> include a fully autonomous booking assistant that handles the entire conversation naturally in both Arabic and English.</p>
 
@@ -417,22 +417,22 @@ const aiToolsProfessionalArticle: LocalBlogPost = {
 </ul>
 
 <h3>3. Automated Client Communication</h3>
-<p>Maintaining client relationships as an independent professional means sending confirmations, reminders, follow-ups, and re-engagement messages &mdash; all manually. AI communication tools automate this entire lifecycle:</p>
+<p>Maintaining client relationships as an independent professional means sending confirmations, reminders, follow-ups, and re-engagement messages - all manually. AI communication tools automate this entire lifecycle:</p>
 <ul>
 <li><strong>Instant booking confirmations</strong> with service details and preparation tips.</li>
 <li><strong>Smart reminders</strong> that reduce no-shows without you sending a single message.</li>
 <li><strong>Post-service follow-ups</strong> requesting reviews and encouraging rebooking.</li>
-<li><strong>Lapsed client outreach</strong> &mdash; personalised messages to clients who have not booked in a while.</li>
+<li><strong>Lapsed client outreach</strong> - personalised messages to clients who have not booked in a while.</li>
 </ul>
 <p><strong>Why it matters:</strong> Independent professionals report that automated reminders alone reduce their no-show rate significantly, which directly impacts income since every empty slot is unrecoverable revenue.</p>
 
 <h3>4. Client Insights and Analytics</h3>
 <p>Understanding your client base is critical for growing as an independent. AI analytics tools track:</p>
 <ul>
-<li><strong>Top clients by revenue</strong> &mdash; know who your most valuable clients are and prioritise their experience.</li>
-<li><strong>Service popularity trends</strong> &mdash; see which services are most requested and invest in those skills.</li>
-<li><strong>Rebooking rates</strong> &mdash; identify which clients rebook consistently and which ones need attention.</li>
-<li><strong>Revenue patterns</strong> &mdash; understand your earning cycles to plan for slower periods.</li>
+<li><strong>Top clients by revenue</strong> - know who your most valuable clients are and prioritise their experience.</li>
+<li><strong>Service popularity trends</strong> - see which services are most requested and invest in those skills.</li>
+<li><strong>Rebooking rates</strong> - identify which clients rebook consistently and which ones need attention.</li>
+<li><strong>Revenue patterns</strong> - understand your earning cycles to plan for slower periods.</li>
 </ul>
 <p>These insights help you make informed decisions about pricing, skill development, and marketing without spending hours on spreadsheets.</p>
 
@@ -441,17 +441,17 @@ const aiToolsProfessionalArticle: LocalBlogPost = {
 <ul>
 <li><strong>Optimizing your profile</strong> for search visibility based on what potential clients are actually searching for.</li>
 <li><strong>Matching you with clients</strong> whose needs align with your specialization and location.</li>
-<li><strong>Highlighting your strengths</strong> &mdash; the system learns what clients value most about your service and emphasises those qualities.</li>
+<li><strong>Highlighting your strengths</strong> - the system learns what clients value most about your service and emphasises those qualities.</li>
 </ul>
 
 <h2>How to Choose the Right AI Tools</h2>
 <p>When evaluating AI tools as an independent beauty professional, look for:</p>
 <ul>
 <li><strong>All-in-one platforms</strong> rather than separate tools for booking, communication, and analytics. Managing multiple subscriptions adds complexity and cost.</li>
-<li><strong>Mobile-first design</strong> &mdash; you are likely managing your business from your phone, not a desktop computer.</li>
-<li><strong>No commission on bookings</strong> &mdash; some platforms take a percentage of every booking, which directly reduces your income.</li>
-<li><strong>Multilingual support</strong> &mdash; if you serve clients in multiple languages, make sure the AI handles them seamlessly.</li>
-<li><strong>Client data ownership</strong> &mdash; your client list should belong to you, not the platform.</li>
+<li><strong>Mobile-first design</strong> - you are likely managing your business from your phone, not a desktop computer.</li>
+<li><strong>No commission on bookings</strong> - some platforms take a percentage of every booking, which directly reduces your income.</li>
+<li><strong>Multilingual support</strong> - if you serve clients in multiple languages, make sure the AI handles them seamlessly.</li>
+<li><strong>Client data ownership</strong> - your client list should belong to you, not the platform.</li>
 </ul>
 
 <h2>Getting Started</h2>
@@ -523,18 +523,18 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
 
 <h3>Customer Response and Booking Capture</h3>
 <p><strong>Traditional platforms:</strong> Provide an online booking page where clients can self-book during available slots. Phone calls, WhatsApp messages, and social media inquiries still require manual handling by staff. After hours, potential bookings go unanswered until the next business day.</p>
-<p><strong>The Daisy (AI-powered):</strong> An AI receptionist handles every inbound interaction &mdash; phone calls, WhatsApp, Instagram DMs, website chat, and SMS &mdash; 24/7. It understands booking requests, checks availability, confirms appointments, and processes payments without human involvement. Clients get an instant response regardless of when they reach out.</p>
+<p><strong>The Daisy (AI-powered):</strong> An AI receptionist handles every inbound interaction - phone calls, WhatsApp, Instagram DMs, website chat, and SMS - 24/7. It understands booking requests, checks availability, confirms appointments, and processes payments without human involvement. Clients get an instant response regardless of when they reach out.</p>
 <p><strong>Why it matters:</strong> Salons miss 30-40% of inbound calls. The difference between answering every inquiry and missing a third of them compounds into significant revenue over weeks and months.</p>
 
 <h3>Calendar Intelligence</h3>
 <p><strong>Traditional platforms:</strong> Display available time slots and let clients pick. The calendar shows what is open but does not suggest what is optimal. Gaps between appointments, suboptimal service sequencing, and underutilised time slots are left for staff to manage manually.</p>
 <p><strong>The Daisy (AI-powered):</strong> AI analyses service durations, staff specializations, historical patterns, and setup times to actively optimise the daily schedule. It suggests booking arrangements that minimise gaps and maximise revenue per day. When cancellations occur, it automatically contacts waitlisted clients to fill the slot.</p>
-<p><strong>Why it matters:</strong> The difference between a manually managed calendar and an AI-optimised one can mean 2-4 additional appointments per day per stylist &mdash; without extending working hours.</p>
+<p><strong>Why it matters:</strong> The difference between a manually managed calendar and an AI-optimised one can mean 2-4 additional appointments per day per stylist - without extending working hours.</p>
 
 <h3>Language and Cultural Support</h3>
 <p><strong>Traditional platforms:</strong> Most salon software is built for English-speaking markets. Arabic support, when available, is typically a translation layer applied to the interface rather than genuine multilingual capability. Customer-facing communications are usually English-only.</p>
 <p><strong>The Daisy (AI-powered):</strong> Native multilingual AI that understands and responds in Arabic, English, and more with cultural context awareness. Clients can switch languages mid-conversation. The AI understands GCC dialects and beauty-specific terminology across languages.</p>
-<p><strong>Why it matters:</strong> For salons operating in the GCC region or serving multilingual client bases, genuine multilingual support is not optional &mdash; it directly affects whether potential clients can interact comfortably with your booking system.</p>
+<p><strong>Why it matters:</strong> For salons operating in the GCC region or serving multilingual client bases, genuine multilingual support is not optional - it directly affects whether potential clients can interact comfortably with your booking system.</p>
 
 <h3>Client Communication Automation</h3>
 <p><strong>Traditional platforms:</strong> Offer basic automated SMS or email reminders before appointments. Some platforms provide simple marketing email tools. Follow-up and re-engagement messaging is typically manual.</p>
@@ -542,8 +542,8 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
 <p><strong>Why it matters:</strong> The difference between basic reminders and a full communication lifecycle determines your no-show rate, rebooking rate, and online review volume.</p>
 
 <h3>Business Intelligence</h3>
-<p><strong>Traditional platforms:</strong> Provide standard reports &mdash; revenue summaries, appointment counts, top services. The data is historical and requires manual interpretation. You see what happened but not what will happen or what you should do about it.</p>
-<p><strong>The Daisy (AI-powered):</strong> Predictive analytics that forecast demand, flag client churn risk, identify service trends, and generate weekly action-oriented reports. Instead of raw data, you receive specific recommendations like "Schedule additional staff on Thursdays in April" or "Client X is overdue &mdash; send a re-engagement offer."</p>
+<p><strong>Traditional platforms:</strong> Provide standard reports - revenue summaries, appointment counts, top services. The data is historical and requires manual interpretation. You see what happened but not what will happen or what you should do about it.</p>
+<p><strong>The Daisy (AI-powered):</strong> Predictive analytics that forecast demand, flag client churn risk, identify service trends, and generate weekly action-oriented reports. Instead of raw data, you receive specific recommendations like "Schedule additional staff on Thursdays in April" or "Client X is overdue - send a re-engagement offer."</p>
 <p><strong>Why it matters:</strong> The shift from descriptive reporting (what happened) to predictive intelligence (what will happen and what to do) changes salon management from reactive to proactive.</p>
 
 <h3>Pricing Model</h3>
@@ -585,7 +585,7 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
 <p>Yes. The Daisy supports data migration from most salon management platforms. Your client records, booking history, and service menu can be imported during setup. The transition is designed to be smooth with no interruption to your booking flow.</p>
 
 <h3>Does The Daisy work with my existing phone number?</h3>
-<p>Yes. The AI receptionist connects to your existing business phone line. Clients continue calling the same number &mdash; the difference is that every call is answered instantly, 24/7.</p>
+<p>Yes. The AI receptionist connects to your existing business phone line. Clients continue calling the same number - the difference is that every call is answered instantly, 24/7.</p>
 
 <h3>What if I only need basic booking, not full AI?</h3>
 <p>The Daisy offers different plan tiers. You can start with core booking and scheduling features and enable advanced AI capabilities as your business grows. There is no requirement to use every feature from day one.</p>

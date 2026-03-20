@@ -144,7 +144,7 @@ body {
   z-index: 900;
 }
 
-/* Blog article typography — mirrors feature deep-dive styling */
+/* Blog article typography - mirrors feature deep-dive styling */
 .blog-content {
   max-width: 56rem; /* max-w-4xl */
   margin-left: auto;

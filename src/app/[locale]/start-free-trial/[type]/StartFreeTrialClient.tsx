@@ -7,7 +7,7 @@ import { StartFreeTrialContent } from '@/lib/constants/pages/startFreeTrialData'
 
 interface StartFreeTrialClientProps {
   data: StartFreeTrialContent;
-  defaultType: 'business' | 'freelance';
+  defaultType: 'business' | 'professional';
 }
 
 export const StartFreeTrialClient = ({
