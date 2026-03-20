@@ -5,15 +5,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
   en: {
     hero: {
       categoryLabel: 'FOR BEAUTY PROFESSIONALS',
-      headline: 'Your Career, Your Schedule, Your Clients',
+      headline: 'Focus on Your Craft.\nDaisy Handles the Rest.',
       subHeadline:
-        'Manage bookings, build your client base, and track your earnings — all from one app. Flexible scheduling with 24/7 AI support.',
-      ctaText: 'Start Free Trial',
+        "Stop being your own receptionist. Daisy's AI handles your WhatsApp and Instagram messages, books appointments, and processes payments, while you focus on what you do best.",
+      ctaText: 'Start Your Free Trial',
       ctaLink: '/start-free-trial/professional',
+      trustLine: 'Free to join. No credit card required.',
       answerBlock: {
         question: 'What is The Daisy for beauty professionals?',
         answer:
-          'The Daisy is an all-in-one app for beauty and wellness professionals to manage bookings, build a client base, track earnings, and grow their career. It features flexible scheduling, 24/7 AI-powered booking, and multilingual support — currently in Arabic and English.',
+          "The Daisy is an all-in-one app for beauty and wellness professionals. Its AI assistant handles WhatsApp and Instagram messages, bookings, and payments 24/7, so professionals can focus on providing exceptional services. Features flexible scheduling, multilingual support, and a marketplace for client discovery.",
       },
     },
     platformStrengths: {
@@ -21,14 +22,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       subHeadline:
         'No more juggling between scheduling apps, payment tools, and messaging clients. Daisy brings it all together.',
       capabilities: [
+        { label: 'AI Booking Assistant', description: 'Handles bookings and payments while you work' },
         { label: 'Flexible Scheduling', description: 'Set your own hours across multiple locations' },
-        { label: 'Client Management', description: 'Build relationships with detailed client profiles' },
         { label: 'Earnings Tracker', description: 'Track revenue in real-time with detailed breakdowns' },
         { label: 'Professional Profile', description: 'Showcase your work and attract new clients' },
-        { label: 'Smart Booking', description: 'AI handles bookings even when you are busy' },
-        { label: 'Notifications', description: 'Stay on top of appointments and messages' },
+        { label: 'Client Management', description: 'Build relationships with detailed client profiles' },
+        { label: 'Smart Notifications', description: 'Appointment reminders that reduce no-shows' },
         { label: 'Calendar Sync', description: 'Sync with Google Calendar and other tools' },
-        { label: 'Portfolio', description: 'Display your best work to potential clients' },
+        { label: 'Marketplace Visibility', description: 'Customers find you when searching nearby' },
       ],
       stats: [
         { value: '1', context: 'app for everything' },
@@ -36,25 +37,47 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         { value: '10+', context: 'languages supported' },
       ],
     },
+    socialProofStats: [
+      { value: '0%', context: 'commission on your existing clients' },
+      { value: '24/7', context: 'AI handles bookings while you work' },
+      { value: '10+', context: 'languages supported' },
+    ],
+    howItWorks: {
+      steps: [
+        { title: 'Sign up and tell us about yourself', description: 'Takes 5 minutes. Set your services, availability, and pricing.' },
+        { title: 'Our team helps you get set up', description: 'We configure your profile, set up your AI assistant, and walk you through everything.' },
+        { title: 'Go live. Focus on your clients.', description: 'Daisy handles your bookings. You handle your craft.' },
+      ],
+    },
+    pricingHook: {
+      headline: 'Free to Join. Zero Risk.',
+      body: "Create your profile and start accepting bookings at no cost. Premium features available through affordable plans. Daisy doesn't just manage your schedule. It learns your clients' preferences, personalizes their booking experience, and makes sure you never miss an inquiry. Commission only on new clients who find you through the Daisy marketplace, your existing clients always pay zero commission.",
+      ctaText: 'Get Listed for Free',
+      ctaLink: '/start-free-trial/professional',
+      pricingLinkText: 'See full pricing details →',
+      pricingLinkHref: '/pricing',
+    },
+    inlineCtas: {
+      afterScroll: {
+        headline: 'Ready to stop being your own receptionist?',
+        ctaText: 'Start Your Free Trial',
+        ctaLink: '/start-free-trial/professional',
+      },
+      afterFeatures: {
+        headline: 'Start Your Free Trial',
+        ctaText: 'Start Your Free Trial',
+        ctaLink: '/start-free-trial/professional',
+        secondaryLinkText: 'Explore all features →',
+        secondaryLinkHref: '/features/professional',
+      },
+    },
     titleFraque: 'Frequently Asked Questions',
     fallbackFaqs: [
-      { question: 'How do I join The Daisy as a professional?', answer: 'Download The Daisy app, create your professional profile, set your services and availability, and start accepting bookings.' },
-      { question: 'Can I set my own schedule?', answer: 'Yes. You have full control over your availability, working hours, break times, and can block time for personal appointments.' },
-      { question: 'How does payment work?', answer: 'Your earnings are tracked in real-time in the app. Payments are processed securely and deposited to your account on a regular schedule.' },
-      { question: 'Do I need to work at a salon to join?', answer: 'No. Freelance professionals, independent stylists, and mobile service providers are all welcome on The Daisy.' },
-      { question: 'Is there a fee or commission?', answer: 'Joining The Daisy is free. Premium features are available through paid subscription tiers. Commission is only charged on new clients who book you through the Daisy marketplace — your existing clients, zero commission.' },
-      { question: 'How do customers find my profile?', answer: 'Your profile appears in the Daisy marketplace when customers search for beauty services in your area. The more complete your profile and portfolio, the higher your visibility.' },
-      { question: 'Is The Daisy available in Arabic?', answer: 'Yes. The Daisy is fully multilingual with complete Arabic and English support throughout the app, with more languages coming soon.' },
+      { question: 'Is there a fee or commission?', answer: 'Joining is free. Commission is only charged on new clients who book you through the Daisy marketplace, your existing clients pay zero commission. Premium features available through affordable subscription tiers.' },
+      { question: 'Do I need to work at a salon to join?', answer: 'No. Freelance professionals, independent stylists, mobile service providers, and salon-based professionals are all welcome.' },
+      { question: 'How do customers find my profile?', answer: 'Your profile appears in the Daisy marketplace when customers search for beauty services in your area. The more complete your profile, the higher your visibility.' },
+      { question: 'How does payment work?', answer: 'Your earnings are tracked in real-time in the app. Payments are processed securely and deposited to your bank account weekly. You can see exactly what you earned from each appointment.' },
     ],
-    growth: {
-      title: 'Build Your Freelance Business Without Chasing Clients',
-      description:
-        'The Daisy marketplace brings customers to you — people actively searching for beauty professionals nearby. Built-in cashback rewards keep them coming back, so you spend less time marketing and more time doing what you love.',
-      subtitle: 'MARKETPLACE',
-      buttonLearn: 'GET THE APP',
-      buttonLink: '/start-free-trial/professional',
-      imageUrl: '/images/pages/professional/growth.png',
-    },
     scrollSections: [
       {
         sortId: 1,
@@ -99,14 +122,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'Flexible Schedule',
-          text: 'Work on Your Terms',
+          title: 'A Client Messages You on WhatsApp',
+          text: "You're Mid-Appointment. Daisy Answers.",
           description:
-            'Set your own hours and manage your availability with ease. Daisy gives you full control over when and where you work.',
+            "You're giving a haircut when a new client sends a WhatsApp message asking about your availability for highlights. Daisy responds instantly. You never even see the notification.",
           listSub: [
-            'Set your own working hours',
-            'Block time for personal commitments',
-            'Multi-location support',
+            'AI responds while you work',
+            'Knows your services and prices',
+            'Speaks their language',
           ],
         },
       },
@@ -138,14 +161,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'AI Booking Assistant',
-          text: 'Never Miss a Booking Again',
+          title: 'Booked Into Your Next Open Slot',
+          text: 'No Missed Messages. No Back-and-Forth.',
           description:
-            "Daisy's AI handles inquiries, bookings, and payments while you're with a client. It works 24/7 — answering questions, confirming appointments, and processing payments even when you can't pick up the phone.",
+            "Daisy checks your schedule, finds the next available slot, and confirms the booking. The client gets an instant confirmation. You find out when you're done with your current client.",
           listSub: [
-            'AI answers booking requests 24/7',
-            'Automatic payment processing',
-            'Smart conflict detection',
+            'Real-time schedule awareness',
+            'Instant booking confirmation',
+            'Zero interruption to your work',
           ],
         },
       },
@@ -192,14 +215,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'Earnings Tracker',
-          text: 'Maximize Your Income',
+          title: 'Paid Before They Sit Down',
+          text: 'No Awkward Money Conversations',
           description:
-            'Track your earnings in real-time, view detailed reports, and understand your revenue patterns.',
+            "The client pays through the app before their appointment. When they arrive, you just focus on the service.",
           listSub: [
-            'Real-time earnings dashboard',
-            'Detailed payment reports',
-            'Revenue trends & insights',
+            'In-app payment processing',
+            'Deposit or full prepayment',
+            'Automatic receipts',
           ],
         },
       },
@@ -231,59 +254,15 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'Professional Profile',
-          text: 'Showcase Your Expertise',
+          title: 'Your Calendar, Always Up to Date',
+          text: "Check Between Clients. Everything's There.",
           description:
-            'Highlight your skills, experience, and client reviews. Stand out and attract more clients.',
+            "When you check your phone between appointments, you see the new booking with all the details. The client is confirmed, paid, and knows exactly when to arrive. You didn't do a thing.",
           listSub: [
-            'Portfolio showcase',
-            'Client reviews & ratings',
-            'Service menu customization',
+            'Synced to your calendar',
+            'Client gets reminders',
+            'Your earnings update in real-time',
           ],
-        },
-      },
-      {
-        sortId: 5,
-        mainImage: '/images/pages/professional/scroll/staff-details.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
-        secondBg: '/images/pages/business/scroll/stars.png',
-        styleMainPictureJSON: {
-          position: 'absolute',
-          padding: '24px',
-          width: '100%',
-          height: '100%',
-          objectFit: 'contain',
-        },
-        styleFirstBgJSON: {
-          position: 'absolute',
-          bottom: '-40px',
-          left: '0',
-          width: '300px',
-          height: '300px',
-          opacity: 0.6,
-        },
-        styleSecondBgJSON: {
-          position: 'absolute',
-          top: '-70px',
-          right: '-70px',
-          width: '200px',
-          height: '200px',
-          opacity: 0.4,
-        },
-        styleImageMobile: {
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-          bottom: '0',
-          left: '40px',
-        },
-        mainImageWidth: 300,
-        mainImageHeight: 500,
-        infoScroll: {
-          title: 'Get Started',
-          text: 'Launch Your Independent Career',
-          description:
-            'Download The Daisy app and start building your client base, managing your schedule, and growing your brand.',
         },
       },
     ],
@@ -292,15 +271,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
   ar: {
     hero: {
       categoryLabel: 'لمتخصصي التجميل',
-      headline: 'مسيرتك المهنية، جدولك، عملاؤك',
+      headline: 'ركّز على إبداعك.\nديزي تتولى الباقي.',
       subHeadline:
-        'أدِر حجوزاتك، وابنِ قاعدة عملائك، وتابع أرباحك — كل ذلك من تطبيق واحد. جدولة مرنة مع دعم الذكاء الاصطناعي على مدار الساعة.',
+        'توقف عن كونك موظف استقبال نفسك. الذكاء الاصطناعي في ديزي يتولى رسائل واتساب وإنستغرام، يحجز المواعيد، ويعالج المدفوعات، بينما تركز على ما تتقنه.',
       ctaText: 'ابدأ تجربتك المجانية',
       ctaLink: '/start-free-trial/professional',
+      trustLine: 'الانضمام مجاني. لا حاجة لبطاقة ائتمان.',
       answerBlock: {
         question: 'ما هو ذا ديزي لمتخصصي التجميل؟',
         answer:
-          'ذا ديزي هو تطبيق شامل لمتخصصي التجميل والعافية لإدارة الحجوزات وبناء قاعدة العملاء وتتبع الأرباح وتطوير مسيرتهم المهنية. يتميز بجدولة مرنة وحجز مدعوم بالذكاء الاصطناعي على مدار الساعة ودعم متعدد اللغات — حاليًا بالعربية والإنجليزية.',
+          'ذا ديزي هو تطبيق شامل لمتخصصي التجميل والعافية. مساعده الذكي يتولى رسائل واتساب وإنستغرام والحجوزات والمدفوعات على مدار الساعة، حتى يتمكن المتخصصون من التركيز على تقديم خدمات استثنائية. يتميز بجدولة مرنة ودعم متعدد اللغات وسوق لاكتشاف العملاء.',
       },
     },
     platformStrengths: {
@@ -308,14 +288,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       subHeadline:
         'لا مزيد من التنقل بين تطبيقات الجدولة وأدوات الدفع ومراسلة العملاء. ديزي تجمع كل شيء معًا.',
       capabilities: [
+        { label: 'مساعد الحجز الذكي', description: 'يتولى الحجوزات والمدفوعات أثناء عملك' },
         { label: 'جدولة مرنة', description: 'حدد ساعات عملك عبر مواقع متعددة' },
-        { label: 'إدارة العملاء', description: 'ابنِ علاقات مع ملفات عملاء مفصلة' },
         { label: 'متتبع الأرباح', description: 'تتبع الإيرادات في الوقت الفعلي مع تفاصيل دقيقة' },
         { label: 'الملف المهني', description: 'اعرض أعمالك واجذب عملاء جدد' },
-        { label: 'حجز ذكي', description: 'الذكاء الاصطناعي يدير الحجوزات حتى وأنت مشغول' },
-        { label: 'الإشعارات', description: 'ابقَ على اطلاع بالمواعيد والرسائل' },
+        { label: 'إدارة العملاء', description: 'ابنِ علاقات مع ملفات عملاء مفصلة' },
+        { label: 'إشعارات ذكية', description: 'تذكيرات بالمواعيد تقلل حالات عدم الحضور' },
         { label: 'مزامنة التقويم', description: 'مزامنة مع تقويم جوجل وأدوات أخرى' },
-        { label: 'معرض الأعمال', description: 'اعرض أفضل أعمالك للعملاء المحتملين' },
+        { label: 'ظهور في السوق', description: 'العملاء يجدونك عند البحث بالقرب منهم' },
       ],
       stats: [
         { value: '1', context: 'تطبيق لكل شيء' },
@@ -323,25 +303,47 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         { value: '+10', context: 'لغة مدعومة' },
       ],
     },
+    socialProofStats: [
+      { value: '0%', context: 'عمولة على عملائك الحاليين' },
+      { value: '24/7', context: 'الذكاء الاصطناعي يدير الحجوزات أثناء عملك' },
+      { value: '+10', context: 'لغة مدعومة' },
+    ],
+    howItWorks: {
+      steps: [
+        { title: 'سجّل وأخبرنا عن نفسك', description: 'يستغرق 5 دقائق. حدد خدماتك وتوافرك وأسعارك.' },
+        { title: 'فريقنا يساعدك في الإعداد', description: 'نُعدّ ملفك الشخصي ونُجهّز مساعدك الذكي ونشرح لك كل شيء.' },
+        { title: 'ابدأ العمل. ركّز على عملائك.', description: 'ديزي تتولى حجوزاتك. أنت تتولى إبداعك.' },
+      ],
+    },
+    pricingHook: {
+      headline: 'الانضمام مجاني. بدون أي مخاطر.',
+      body: 'أنشئ ملفك الشخصي وابدأ بقبول الحجوزات بدون تكلفة. الميزات المتقدمة متاحة من خلال باقات بأسعار معقولة. ديزي لا تدير جدولك فحسب. بل تتعلم تفضيلات عملائك، وتُخصّص تجربة حجزهم، وتتأكد من عدم تفويت أي استفسار. العمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي، عملاؤك الحاليون، بدون أي عمولة دائمًا.',
+      ctaText: 'سجّل مجانًا',
+      ctaLink: '/start-free-trial/professional',
+      pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة ←',
+      pricingLinkHref: '/pricing',
+    },
+    inlineCtas: {
+      afterScroll: {
+        headline: 'مستعد للتوقف عن كونك موظف استقبال نفسك؟',
+        ctaText: 'ابدأ تجربتك المجانية',
+        ctaLink: '/start-free-trial/professional',
+      },
+      afterFeatures: {
+        headline: 'ابدأ تجربتك المجانية',
+        ctaText: 'ابدأ تجربتك المجانية',
+        ctaLink: '/start-free-trial/professional',
+        secondaryLinkText: 'استكشف جميع الميزات →',
+        secondaryLinkHref: '/features/professional',
+      },
+    },
     titleFraque: 'أسئلة شائعة',
     fallbackFaqs: [
-      { question: 'كيف أنضم إلى ذا ديزي كمتخصص؟', answer: 'قم بتنزيل تطبيق ذا ديزي وأنشئ ملفك المهني وحدد خدماتك وتوافرك وابدأ في قبول الحجوزات.' },
-      { question: 'هل يمكنني تحديد جدولي الخاص؟', answer: 'نعم. لديك سيطرة كاملة على توافرك وساعات عملك وأوقات الراحة ويمكنك حجز وقت للمواعيد الشخصية.' },
-      { question: 'كيف تعمل المدفوعات؟', answer: 'يتم تتبع أرباحك في الوقت الفعلي في التطبيق. تتم معالجة المدفوعات بشكل آمن وإيداعها في حسابك وفق جدول منتظم.' },
-      { question: 'هل أحتاج للعمل في صالون للانضمام؟', answer: 'لا. المتخصصون المستقلون والمصممون المستقلون ومقدمو الخدمات المتنقلون مرحب بهم جميعًا في ذا ديزي.' },
-      { question: 'هل هناك رسوم أو عمولة؟', answer: 'الانضمام إلى ذا ديزي مجاني. الميزات المتقدمة متاحة من خلال باقات الاشتراك. العمولة تُفرض فقط على العملاء الجدد الذين يحجزون عبر سوق ذا ديزي — عملاؤك الحاليون، بدون أي عمولة.' },
-      { question: 'كيف يجد العملاء ملفي المهني؟', answer: 'يظهر ملفك المهني في سوق ذا ديزي عندما يبحث العملاء عن خدمات التجميل في منطقتك. كلما كان ملفك ومعرض أعمالك أكثر اكتمالًا، زادت ظهورك.' },
-      { question: 'هل ذا ديزي متاح باللغة العربية؟', answer: 'نعم. ذا ديزي متعدد اللغات بالكامل مع دعم كامل للعربية والإنجليزية في جميع أنحاء التطبيق، مع المزيد من اللغات قريبًا.' },
+      { question: 'هل هناك رسوم أو عمولة؟', answer: 'الانضمام مجاني. العمولة تُفرض فقط على العملاء الجدد الذين يحجزون عبر سوق ديزي، عملاؤك الحاليون، بدون أي عمولة. الميزات المتقدمة متاحة من خلال باقات اشتراك بأسعار معقولة.' },
+      { question: 'هل أحتاج للعمل في صالون للانضمام؟', answer: 'لا. المتخصصون المستقلون والمصممون المستقلون ومقدمو الخدمات المتنقلون والمتخصصون في الصالونات مرحب بهم جميعًا.' },
+      { question: 'كيف يجد العملاء ملفي الشخصي؟', answer: 'يظهر ملفك الشخصي في سوق ديزي عندما يبحث العملاء عن خدمات التجميل في منطقتك. كلما كان ملفك أكثر اكتمالًا، زاد ظهورك.' },
+      { question: 'كيف يعمل الدفع؟', answer: 'يتم تتبع أرباحك في الوقت الفعلي في التطبيق. تتم معالجة المدفوعات بشكل آمن وإيداعها في حسابك البنكي أسبوعيًا. يمكنك رؤية ما كسبته بالضبط من كل موعد.' },
     ],
-    growth: {
-      title: 'ابنِ عملك الحر دون ملاحقة العملاء',
-      description:
-        'سوق ذا ديزي يجلب لك العملاء — أشخاص يبحثون بنشاط عن متخصصي تجميل بالقرب منهم. مكافآت الكاش باك المدمجة تجعلهم يعودون، فتقضي وقتًا أقل في التسويق ووقتًا أكثر فيما تحب.',
-      subtitle: 'السوق العام',
-      buttonLearn: 'احصل على التطبيق',
-      buttonLink: '/start-free-trial/professional',
-      imageUrl: '/images/pages/professional/growth.png',
-    },
     scrollSections: [
       {
         sortId: 1,
@@ -386,14 +388,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'جدول مرن',
-          text: 'اعمل بشروطك',
+          title: 'عميل يراسلك على واتساب',
+          text: 'أنت في منتصف موعد. ديزي ترد.',
           description:
-            'حدد ساعات عملك وأدِر توافرك بسهولة. ديزي يمنحك تحكمًا كاملاً في متى وأين تعمل.',
+            'أنت تقص شعرًا عندما يرسل عميل جديد رسالة واتساب يسأل عن توفرك لتسليط الضوء. ديزي ترد فورًا. لم تلاحظ حتى الإشعار.',
           listSub: [
-            'حدد ساعات عملك الخاصة',
-            'خصص وقتًا لالتزاماتك الشخصية',
-            'دعم المواقع المتعددة',
+            'الذكاء الاصطناعي يرد أثناء عملك',
+            'يعرف خدماتك وأسعارك',
+            'يتحدث بلغتهم',
           ],
         },
       },
@@ -425,14 +427,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'مساعد الحجز الذكي',
-          text: 'لا تفوّت أي حجز بعد الآن',
+          title: 'محجوز في أقرب وقت متاح',
+          text: 'بدون رسائل فائتة. بدون تراسل متكرر.',
           description:
-            'الذكاء الاصطناعي في ديزي يتعامل مع الاستفسارات والحجوزات والمدفوعات أثناء انشغالك مع عميل. يعمل على مدار الساعة — يجيب على الأسئلة ويؤكد المواعيد ويعالج المدفوعات حتى عندما لا تستطيع الرد على الهاتف.',
+            'ديزي تتحقق من جدولك وتجد أقرب وقت متاح وتؤكد الحجز. العميل يحصل على تأكيد فوري. أنت تعرف عندما تنتهي من عميلك الحالي.',
           listSub: [
-            'الذكاء الاصطناعي يجيب على طلبات الحجز على مدار الساعة',
-            'معالجة المدفوعات تلقائيًا',
-            'كشف ذكي عن تعارض المواعيد',
+            'وعي بالجدول في الوقت الفعلي',
+            'تأكيد حجز فوري',
+            'بدون أي انقطاع في عملك',
           ],
         },
       },
@@ -479,14 +481,14 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'تتبع الأرباح',
-          text: 'حقق أقصى دخل لك',
+          title: 'الدفع تم قبل جلوسهم',
+          text: 'بدون محادثات محرجة عن المال',
           description:
-            'تتبع أرباحك في الوقت الفعلي، واعرض تقارير مفصلة، وافهم أنماط إيراداتك. ابقَ على اطلاع بأمورك المالية بسهولة.',
+            'العميل يدفع عبر التطبيق قبل موعده. عند وصوله، تركز فقط على الخدمة.',
           listSub: [
-            'لوحة أرباح في الوقت الفعلي',
-            'تقارير دفع مفصلة',
-            'اتجاهات ورؤى الإيرادات',
+            'معالجة الدفع عبر التطبيق',
+            'عربون أو دفع مسبق كامل',
+            'إيصالات تلقائية',
           ],
         },
       },
@@ -518,59 +520,15 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         mainImageWidth: 300,
         mainImageHeight: 500,
         infoScroll: {
-          title: 'الملف المهني',
-          text: 'اعرض خبراتك',
+          title: 'تقويمك محدّث دائمًا',
+          text: 'تفقّد بين العملاء. كل شيء موجود.',
           description:
-            'أنشئ ملفًا مهنيًا يبرز مهاراتك وخبراتك وتقييمات العملاء. تميّز واجذب المزيد من العملاء.',
+            'عندما تتفقد هاتفك بين المواعيد، ترى الحجز الجديد بكل التفاصيل. العميل مؤكد ودافع ويعرف بالضبط متى يصل. لم تفعل شيئًا.',
           listSub: [
-            'عرض معرض الأعمال',
-            'تقييمات ومراجعات العملاء',
-            'تخصيص قائمة الخدمات',
+            'مزامنة مع تقويمك',
+            'العميل يحصل على تذكيرات',
+            'أرباحك تتحدث في الوقت الفعلي',
           ],
-        },
-      },
-      {
-        sortId: 5,
-        mainImage: '/images/pages/professional/scroll/staff-details.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
-        secondBg: '/images/pages/business/scroll/stars.png',
-        styleMainPictureJSON: {
-          position: 'absolute',
-          padding: '24px',
-          width: '100%',
-          height: '100%',
-          objectFit: 'contain',
-        },
-        styleFirstBgJSON: {
-          position: 'absolute',
-          bottom: '-40px',
-          left: '0',
-          width: '300px',
-          height: '300px',
-          opacity: 0.6,
-        },
-        styleSecondBgJSON: {
-          position: 'absolute',
-          top: '-70px',
-          right: '-70px',
-          width: '200px',
-          height: '200px',
-          opacity: 0.4,
-        },
-        styleImageMobile: {
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-          bottom: '0',
-          left: '40px',
-        },
-        mainImageWidth: 300,
-        mainImageHeight: 500,
-        infoScroll: {
-          title: 'ابدأ الآن',
-          text: 'أطلق مسيرتك المهنية المستقلة',
-          description:
-            'حمّل تطبيق ديزي وابدأ في بناء قاعدة عملائك وإدارة جدولك وتنمية علامتك التجارية.',
         },
       },
     ],

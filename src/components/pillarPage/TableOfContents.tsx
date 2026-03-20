@@ -51,7 +51,7 @@ export function TableOfContents({
 
   return (
     <>
-      {/* Mobile TOC — collapsible, visible only on small screens */}
+      {/* Mobile TOC, collapsible, visible only on small screens */}
       <details className="mb-8 rounded-xl border border-[#E8E9E9] bg-[#F8F5F3] lg:hidden">
         <summary className="cursor-pointer p-4 font-semibold text-[#172524]">
           Table of Contents
@@ -72,7 +72,7 @@ export function TableOfContents({
         </nav>
       </details>
 
-      {/* Desktop TOC — sticky sidebar, hidden on small screens */}
+      {/* Desktop TOC, sticky sidebar, hidden on small screens */}
       <aside className="hidden lg:block">
         <div className="sticky top-8">
           <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#586968]">

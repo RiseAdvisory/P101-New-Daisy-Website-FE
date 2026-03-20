@@ -30,6 +30,7 @@ interface PlatformStrengthsProps {
     context: string;
     source?: string;
   }>;
+  hideStats?: boolean;
 }
 
 const iconMap: Record<string, ReactNode> = {
@@ -48,6 +49,9 @@ const iconMap: Record<string, ReactNode> = {
   'Notifications': <Bell className="w-6 h-6" />,
   'Calendar Sync': <RefreshCw className="w-6 h-6" />,
   'Portfolio': <ImageIcon className="w-6 h-6" />,
+  'AI Booking Assistant': <Bot className="w-6 h-6" />,
+  'Smart Notifications': <Bell className="w-6 h-6" />,
+  'Marketplace Visibility': <Users className="w-6 h-6" />,
   // Arabic labels
   'موظف استقبال ذكي': <Bot className="w-6 h-6" />,
   'حجز ذكي': <CalendarCheck className="w-6 h-6" />,
@@ -64,6 +68,9 @@ const iconMap: Record<string, ReactNode> = {
   'الإشعارات': <Bell className="w-6 h-6" />,
   'مزامنة التقويم': <RefreshCw className="w-6 h-6" />,
   'معرض الأعمال': <ImageIcon className="w-6 h-6" />,
+  'مساعد الحجز الذكي': <Bot className="w-6 h-6" />,
+  'إشعارات ذكية': <Bell className="w-6 h-6" />,
+  'ظهور في السوق': <Users className="w-6 h-6" />,
 };
 
 export function PlatformStrengths({
@@ -71,6 +78,7 @@ export function PlatformStrengths({
   subHeadline,
   capabilities,
   stats,
+  hideStats,
 }: PlatformStrengthsProps) {
   return (
     <section className="w-full bg-white py-16 md:py-24 px-4">
@@ -101,20 +109,22 @@ export function PlatformStrengths({
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-8">
-          {stats.map((stat) => (
-            <div
-              key={stat.context}
-              className="text-center px-6 py-4 rounded-lg bg-primary/5"
-            >
-              <StatisticHighlight
-                value={stat.value}
-                context={stat.context}
-                source={stat.source}
-              />
-            </div>
-          ))}
-        </div>
+        {!hideStats && (
+          <div className="flex flex-wrap justify-center gap-8">
+            {stats.map((stat) => (
+              <div
+                key={stat.context}
+                className="text-center px-6 py-4 rounded-lg bg-primary/5"
+              >
+                <StatisticHighlight
+                  value={stat.value}
+                  context={stat.context}
+                  source={stat.source}
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

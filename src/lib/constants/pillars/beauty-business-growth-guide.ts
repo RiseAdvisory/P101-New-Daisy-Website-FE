@@ -25,7 +25,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 
   keyTakeaways: [
     'Beauty businesses that follow a structured growth plan are 3x more likely to survive their first five years than those that grow reactively.',
-    'Customer acquisition cost (CAC) should never exceed 25% of first-year client lifetime value — the most profitable salons keep it under 15%.',
+    'Customer acquisition cost (CAC) should never exceed 25% of first-year client lifetime value, the most profitable salons keep it under 15%.',
     'Multi-location expansion succeeds when you systemize operations at your first location before replicating, not after.',
     'Hiring based on culture fit and growth potential outperforms hiring based on technical skill alone for long-term team stability.',
     'Technology is the single greatest multiplier for beauty business growth, enabling one owner to manage what previously required three.',
@@ -33,22 +33,22 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
   ],
 
   introduction: `<p>Growing a beauty business is not the same as running one. Running a salon means delivering great services, managing a calendar, and keeping clients happy. Growing a salon means building systems that attract new clients predictably, retain them profitably, and scale without requiring you to work more hours.</p>
-<p>The beauty and wellness industry generates over $500 billion globally, yet most salon owners hit a revenue ceiling within their first three years. The reason is almost never the quality of their work — it is the absence of a deliberate growth strategy. They are brilliant stylists, therapists, or technicians who never learned the business of beauty.</p>
+<p>The beauty and wellness industry generates over $500 billion globally, yet most salon owners hit a revenue ceiling within their first three years. The reason is almost never the quality of their work. It is the absence of a deliberate growth strategy. They are brilliant stylists, therapists, or technicians who never learned the business of beauty.</p>
 <p>This guide changes that. Whether you are launching your first salon, trying to break through a revenue plateau, or planning your second or third location, you will find a clear framework for every stage. We cover the financial foundations, customer acquisition engines, team-building strategies, and technology decisions that the fastest-growing beauty businesses in the world rely on.</p>
 <p>Every recommendation is grounded in real industry data and the operational patterns we see across thousands of beauty businesses using <a href="/en/features/business/business-growth">modern growth platforms</a>. Let us build your roadmap.</p>`,
 
   sections: [
     // =========================================================================
-    // Section 1: Starting a Beauty Business — Laying the Foundation
+    // Section 1: Starting a Beauty Business. Laying the Foundation
     // =========================================================================
     {
       id: 'starting-a-beauty-business',
-      title: 'Starting a Beauty Business — Laying the Foundation',
-      content: `<p>A successful beauty business starts with clarity, not capital. The most important decisions you make in the first 90 days — your niche, your pricing model, your target client, and your operational infrastructure — will determine whether your business grows steadily or stalls within a year.</p>
+      title: 'Starting a Beauty Business. Laying the Foundation',
+      content: `<p>A successful beauty business starts with clarity, not capital. The most important decisions you make in the first 90 days, your niche, your pricing model, your target client, and your operational infrastructure, will determine whether your business grows steadily or stalls within a year.</p>
 
 <h3>Choosing Your Niche and Positioning</h3>
 <p>The beauty industry is broad enough that trying to serve everyone guarantees you serve no one memorably. Top-performing salons choose a clear niche and build their brand around it. That niche could be defined by service category (colour specialists, bridal beauty, medical aesthetics), by client segment (busy professionals, luxury clients, Gen Z), or by experience (eco-friendly, speed-focused, bespoke consultations).</p>
-<p>Your niche determines your pricing power. A general hair salon competes on proximity and price. A salon positioned as the destination for balayage transformations competes on expertise and reputation — and commands premium prices.</p>
+<p>Your niche determines your pricing power. A general hair salon competes on proximity and price. A salon positioned as the destination for balayage transformations competes on expertise and reputation, and commands premium prices.</p>
 <p>Before you sign a lease or buy equipment, answer three questions:</p>
 <ol>
   <li><strong>Who is your ideal client?</strong> Define them by demographics, lifestyle, and the problem you solve for them.</li>
@@ -59,10 +59,10 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 <h3>Legal and Financial Setup</h3>
 <p>Skipping the financial foundation is the most common startup mistake. Before you serve your first client, establish:</p>
 <ul>
-  <li><strong>Business structure:</strong> Sole proprietorship, LLC, or corporation — each has different liability and tax implications. Consult an accountant before deciding.</li>
+  <li><strong>Business structure:</strong> Sole proprietorship, LLC, or corporation, each has different liability and tax implications. Consult an accountant before deciding.</li>
   <li><strong>Separate business banking:</strong> Never mix personal and business finances. Open a dedicated business account from day one.</li>
   <li><strong>Licences and insurance:</strong> Cosmetology licences, business permits, and professional liability insurance are non-negotiable. Requirements vary by jurisdiction.</li>
-  <li><strong>Accounting system:</strong> Use cloud accounting software from the start. Manual bookkeeping fails the moment you get busy — which is exactly when financial visibility matters most.</li>
+  <li><strong>Accounting system:</strong> Use cloud accounting software from the start. Manual bookkeeping fails the moment you get busy, which is exactly when financial visibility matters most.</li>
   <li><strong>Startup budget:</strong> A realistic salon startup budget ranges from $50,000-$250,000 depending on size and location. Allocate at least 15% as a cash reserve for unexpected costs in your first six months.</li>
 </ul>
 
@@ -97,7 +97,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
       content: `<p>Operational excellence is the prerequisite for sustainable growth. Before you invest in marketing or expansion, your internal systems must be strong enough to handle increased volume without breaking.</p>
 
 <h3>Standard Operating Procedures (SOPs)</h3>
-<p>Document every repeatable process in your salon. SOPs are not bureaucratic overhead — they are the mechanism that lets you deliver consistent quality when you are not personally overseeing every service. Start with these critical processes:</p>
+<p>Document every repeatable process in your salon. SOPs are not bureaucratic overhead, they are the mechanism that lets you deliver consistent quality when you are not personally overseeing every service. Start with these critical processes:</p>
 <ul>
   <li><strong>Client intake:</strong> How new clients are greeted, consulted, and onboarded</li>
   <li><strong>Service delivery:</strong> Step-by-step protocols for your most popular services</li>
@@ -169,7 +169,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
     {
       id: 'customer-acquisition-strategies',
       title: 'Customer Acquisition Strategies for Beauty Businesses',
-      content: `<p>Customer acquisition is the engine that powers beauty business growth. The most successful salons build a multi-channel acquisition system that generates new clients predictably — not one that depends on word-of-mouth alone.</p>
+      content: `<p>Customer acquisition is the engine that powers beauty business growth. The most successful salons build a multi-channel acquisition system that generates new clients predictably, not one that depends on word-of-mouth alone.</p>
 
 <h3>The Acquisition Funnel</h3>
 <p>Every new client goes through a journey: awareness (they learn you exist), consideration (they evaluate you against alternatives), and conversion (they book). Your marketing must serve all three stages. Most salon owners invest only in awareness (social media posts) while neglecting the conversion infrastructure that turns followers into bookings.</p>
@@ -187,7 +187,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 <p>Organic reach has limits. Paid advertising accelerates growth when done strategically:</p>
 <ul>
   <li><strong>Google Ads:</strong> Target high-intent local searches like "balayage near me" or "best facial [your city]." These clients are ready to book.</li>
-  <li><strong>Instagram/Facebook Ads:</strong> Best for building awareness and showcasing your work visually. Use transformation content in ads — it outperforms polished studio shots by 2-3x in click-through rates.</li>
+  <li><strong>Instagram/Facebook Ads:</strong> Best for building awareness and showcasing your work visually. Use transformation content in ads, it outperforms polished studio shots by 2-3x in click-through rates.</li>
   <li><strong>Retargeting:</strong> Show ads to people who visited your booking page but did not complete a booking. Retargeting typically converts at 3-5x the rate of cold traffic.</li>
 </ul>
 <p>The critical metric is customer acquisition cost (CAC). Calculate it by dividing total marketing spend by new clients acquired. A healthy CAC for beauty businesses is $15-$50 per new client, depending on your average ticket value and retention rate.</p>
@@ -196,12 +196,12 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 <p>Your existing clients are your most effective and least expensive acquisition channel. A structured referral program turns satisfied clients into active promoters:</p>
 <ul>
   <li>Offer incentives for both the referrer and the new client (dual-sided rewards increase participation by 40%+)</li>
-  <li>Make it frictionless — a shareable link or QR code is better than "tell your friends"</li>
+  <li>Make it frictionless, a shareable link or QR code is better than "tell your friends"</li>
   <li>Track and reward consistently using your salon platform, not manually</li>
 </ul>
 <p><a href="/en/features/business/marketing-promotions">Cashback and loyalty systems</a> compound this effect. When a client earns cashback on every visit and can share a referral code that gives their friends cashback too, you create a self-reinforcing acquisition loop that grows without additional ad spend.</p>
 
-<h3>Multi-Channel Acquisition — The 360-Degree Approach</h3>
+<h3>Multi-Channel Acquisition. The 360-Degree Approach</h3>
 <p>The fastest-growing beauty businesses do not rely on any single channel. They build a 360-degree acquisition engine that covers:</p>
 <ol>
   <li><strong>Marketplace discovery:</strong> Being found where clients search</li>
@@ -232,7 +232,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'pricing-for-growth',
-      title: 'Pricing for Growth — Beyond Hourly Rates',
+      title: 'Pricing for Growth. Beyond Hourly Rates',
       content: `<p>Your pricing strategy is the single fastest lever for increasing revenue without adding clients or hours. Most beauty businesses underprice their services, leaving significant revenue on the table.</p>
 
 <h3>The True Cost of Underpricing</h3>
@@ -245,7 +245,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 </ul>
 
 <h3>Value-Based Pricing</h3>
-<p>Price based on the value you deliver, not the time you spend. A balayage that takes three hours is not worth "three hours times your hourly rate" — it is worth the transformation, the confidence, and the compliments your client will receive for the next eight weeks. Position your pricing around outcomes, not inputs.</p>
+<p>Price based on the value you deliver, not the time you spend. A balayage that takes three hours is not worth "three hours times your hourly rate". It is worth the transformation, the confidence, and the compliments your client will receive for the next eight weeks. Position your pricing around outcomes, not inputs.</p>
 <p>Practical steps to shift to value-based pricing:</p>
 <ol>
   <li><strong>Audit your service menu:</strong> Identify services where your expertise, products, or results exceed what competitors offer. These are candidates for premium pricing.</li>
@@ -294,7 +294,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 <p>Whichever model you choose, your <a href="/en/features/business/payment-processing">payment platform</a> must support it natively. If you need to manually calculate package credits or membership balances, the model will not scale.</p>`,
       callout: {
         type: 'tip',
-        text: 'A 10% price increase with zero client loss increases profit by far more than 10% — because your costs remain the same. Most salons overestimate the client loss from price increases and underestimate the profit impact.',
+        text: 'A 10% price increase with zero client loss increases profit by far more than 10%, because your costs remain the same. Most salons overestimate the client loss from price increases and underestimate the profit impact.',
       },
     },
 
@@ -304,7 +304,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
     {
       id: 'hiring-and-team-building',
       title: 'Hiring and Team Building for Beauty Businesses',
-      content: `<p>Your team determines your growth ceiling. A salon owner working alone can generate $150,000-$250,000 annually. A salon owner who builds a great team can generate millions. But hiring the wrong people is more expensive than hiring no one — a bad hire costs 2-3x their salary when you factor in training, lost clients, and team disruption.</p>
+      content: `<p>Your team determines your growth ceiling. A salon owner working alone can generate $150,000-$250,000 annually. A salon owner who builds a great team can generate millions. But hiring the wrong people is more expensive than hiring no one, a bad hire costs 2-3x their salary when you factor in training, lost clients, and team disruption.</p>
 
 <h3>When to Hire</h3>
 <p>Hire when demand consistently exceeds capacity, not when you feel busy. Use data to validate the decision:</p>
@@ -326,7 +326,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 <p>Structured interviews with practical assessments outperform casual conversations. Have candidates perform a service on a model, interact with a "client" (a team member role-playing), and discuss how they would handle a specific service challenge.</p>
 
 <h3>Compensation That Retains Talent</h3>
-<p>The beauty industry has notoriously high turnover — averaging 30-40% annually. The salons that retain their best people share common compensation principles:</p>
+<p>The beauty industry has notoriously high turnover, averaging 30-40% annually. The salons that retain their best people share common compensation principles:</p>
 <ul>
   <li><strong>Transparent commission structures:</strong> Staff should know exactly how their pay is calculated. Ambiguity breeds resentment.</li>
   <li><strong>Growth-aligned incentives:</strong> Commission tiers that increase as revenue targets are hit reward performance and align staff goals with business goals.</li>
@@ -335,13 +335,13 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 </ul>
 
 <h3>Building a Team Culture</h3>
-<p>Culture is not bean bags and pizza — it is the shared standards and behaviours that define how your team operates. Define your culture explicitly:</p>
+<p>Culture is not bean bags and pizza. It is the shared standards and behaviours that define how your team operates. Define your culture explicitly:</p>
 <ol>
-  <li>Write down your service standards — how clients should be treated at every touchpoint</li>
-  <li>Model the behaviour you expect — your team mirrors the owner's standards</li>
-  <li>Celebrate publicly, correct privately — recognition drives morale; public criticism destroys it</li>
-  <li>Invest in professional development — teams that are growing together stay together</li>
-  <li>Conduct regular one-on-ones — 15 minutes weekly with each team member prevents small issues from becoming resignation letters</li>
+  <li>Write down your service standards, how clients should be treated at every touchpoint</li>
+  <li>Model the behaviour you expect, your team mirrors the owner's standards</li>
+  <li>Celebrate publicly, correct privately, recognition drives morale; public criticism destroys it</li>
+  <li>Invest in professional development, teams that are growing together stay together</li>
+  <li>Conduct regular one-on-ones, 15 minutes weekly with each team member prevents small issues from becoming resignation letters</li>
 </ol>`,
       relatedLinks: [
         {
@@ -360,8 +360,8 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'multi-location-expansion',
-      title: 'Multi-Location Expansion — When and How to Scale',
-      content: `<p>Opening a second location is the highest-leverage growth move a beauty business can make — and the highest-risk. The salons that succeed at multi-location expansion share a common pattern: they systemize first, then replicate.</p>
+      title: 'Multi-Location Expansion. When and How to Scale',
+      content: `<p>Opening a second location is the highest-leverage growth move a beauty business can make, and the highest-risk. The salons that succeed at multi-location expansion share a common pattern: they systemize first, then replicate.</p>
 
 <h3>Readiness Indicators</h3>
 <p>You are ready for a second location when all of the following are true:</p>
@@ -392,7 +392,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
   <li>Staff management across locations (transfers, shared calendars)</li>
   <li>Standardized service menus with location-specific pricing flexibility</li>
 </ul>
-<p>Platforms designed for multi-location beauty businesses — like Daisy — provide this infrastructure natively. Platforms designed for single locations will create data silos and operational headaches as you expand.</p>`,
+<p>Platforms designed for multi-location beauty businesses, like Daisy, provide this infrastructure natively. Platforms designed for single locations will create data silos and operational headaches as you expand.</p>`,
       callout: {
         type: 'warning',
         text: 'The number one reason second salon locations fail is that the owner neglects the first location during the launch phase. Ensure your first location has autonomous management before committing to expansion.',
@@ -411,7 +411,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
     {
       id: 'technology-for-growth',
       title: 'Technology as a Growth Multiplier',
-      content: `<p>Technology is the single greatest force multiplier available to beauty business owners. The right platform does not just save time — it fundamentally changes what is possible for a single owner or small team to achieve.</p>
+      content: `<p>Technology is the single greatest force multiplier available to beauty business owners. The right platform does not just save time, it fundamentally changes what is possible for a single owner or small team to achieve.</p>
 
 <h3>The Automation Advantage</h3>
 <p>Every hour you spend on a task that software could handle is an hour you are not spending on strategy, client relationships, or personal wellbeing. The highest-impact automations for beauty business growth:</p>
@@ -457,14 +457,14 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
     </tr>
   </tbody>
 </table>
-<p>Total: 13-21 hours per week recovered. That is the equivalent of hiring a part-time administrator — except the software costs a fraction of an employee and never calls in sick.</p>
+<p>Total: 13-21 hours per week recovered. That is the equivalent of hiring a part-time administrator, except the software costs a fraction of an employee and never calls in sick.</p>
 
-<h3>AI — The Next Frontier</h3>
+<h3>AI. The Next Frontier</h3>
 <p>Artificial intelligence is transforming what technology can do for beauty businesses. The most impactful AI applications today:</p>
 <ul>
-  <li><strong>AI receptionist:</strong> Handles booking inquiries 24/7 across phone, WhatsApp, Instagram, and web chat. Clients get instant responses at 2 AM on a Saturday — when your busiest competitors are unavailable.</li>
+  <li><strong>AI receptionist:</strong> Handles booking inquiries 24/7 across phone, WhatsApp, Instagram, and web chat. Clients get instant responses at 2 AM on a Saturday, when your busiest competitors are unavailable.</li>
   <li><strong>Predictive scheduling:</strong> AI analyses historical booking patterns to forecast demand, suggest optimal staff scheduling, and identify periods where targeted promotions could fill gaps.</li>
-  <li><strong>Smart marketing:</strong> AI segments your client base and triggers personalized campaigns based on behaviour — rebooking reminders, birthday offers, lapsed-client win-backs — without manual intervention.</li>
+  <li><strong>Smart marketing:</strong> AI segments your client base and triggers personalized campaigns based on behaviour, rebooking reminders, birthday offers, lapsed-client win-backs, without manual intervention.</li>
   <li><strong>Revenue optimization:</strong> AI identifies which services are most profitable per hour, which clients have the highest lifetime value, and which marketing channels deliver the best ROI.</li>
 </ul>
 <p>The salons adopting <a href="/en/features/business/ai-salon-management">AI-powered platforms</a> today are building a compounding advantage. Every month of data makes their AI smarter, their operations more efficient, and their competitive moat deeper.</p>
@@ -497,15 +497,15 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'marketing-at-scale',
-      title: 'Marketing at Scale — Beyond Social Media',
+      title: 'Marketing at Scale. Beyond Social Media',
       content: `<p>Marketing a beauty business at scale requires moving beyond ad hoc social media posting to building a systematic marketing engine that generates results predictably. The most successful beauty brands invest 8-12% of revenue in marketing and treat it as a growth investment, not an expense.</p>
 
 <h3>Building a Marketing System</h3>
 <p>A marketing system has three components that work together:</p>
 <ol>
-  <li><strong>Acquisition marketing:</strong> Activities that attract new clients — SEO, paid ads, marketplace presence, partnerships, and referral programs.</li>
-  <li><strong>Retention marketing:</strong> Activities that keep existing clients coming back — loyalty programs, cashback, automated rebooking, personalized offers, and client communication.</li>
-  <li><strong>Reputation marketing:</strong> Activities that build your brand's authority — review generation, social proof, content marketing, and community engagement.</li>
+  <li><strong>Acquisition marketing:</strong> Activities that attract new clients. SEO, paid ads, marketplace presence, partnerships, and referral programs.</li>
+  <li><strong>Retention marketing:</strong> Activities that keep existing clients coming back, loyalty programs, cashback, automated rebooking, personalized offers, and client communication.</li>
+  <li><strong>Reputation marketing:</strong> Activities that build your brand's authority, review generation, social proof, content marketing, and community engagement.</li>
 </ol>
 <p>Most salons overinvest in acquisition and underinvest in retention. This is a costly mistake. Acquiring a new client costs 5-7x more than retaining an existing one, and increasing retention by just 5% can boost profits by 25-95%.</p>
 
@@ -522,13 +522,13 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 <p>The power of <a href="/en/features/business/marketing-promotions">marketing automation</a> is that it works continuously without daily effort. Essential automated workflows:</p>
 <ul>
   <li><strong>New client welcome sequence:</strong> A series of messages introducing your salon, highlighting services, and encouraging a second booking</li>
-  <li><strong>Rebooking reminders:</strong> Triggered based on service cycle (e.g., "It's been 6 weeks since your last colour — time to refresh?")</li>
+  <li><strong>Rebooking reminders:</strong> Triggered based on service cycle (e.g., "It's been 6 weeks since your last colour, time to refresh?")</li>
   <li><strong>Birthday and anniversary offers:</strong> Personalized promotions that show clients you remember them</li>
   <li><strong>Lapsed client win-back:</strong> Targeted offers for clients who haven't visited in 90+ days</li>
   <li><strong>Review requests:</strong> Automatically request reviews 24-48 hours after a positive service experience</li>
   <li><strong>Referral prompts:</strong> Ask happy clients to share a referral code after their visit</li>
 </ul>
-<p>These workflows run in the background, generating revenue and reviews while you focus on what you do best — delivering exceptional beauty services.</p>
+<p>These workflows run in the background, generating revenue and reviews while you focus on what you do best, delivering exceptional beauty services.</p>
 
 <h3>Measuring Marketing ROI</h3>
 <p>Every marketing activity should be measurable. Track these metrics monthly:</p>
@@ -547,7 +547,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
     {
       id: 'financial-management',
       title: 'Financial Management for Sustainable Growth',
-      content: `<p>Financial discipline separates beauty businesses that grow sustainably from those that grow fast and collapse. Every growth decision — hiring, expansion, marketing investment — must be grounded in financial reality.</p>
+      content: `<p>Financial discipline separates beauty businesses that grow sustainably from those that grow fast and collapse. Every growth decision, hiring, expansion, marketing investment, must be grounded in financial reality.</p>
 
 <h3>The Profit-First Framework</h3>
 <p>Most salon owners follow the formula: Revenue - Expenses = Profit. Growth-oriented owners flip it: Revenue - Profit = Expenses. By allocating profit first and operating within what remains, you ensure growth never comes at the expense of financial health.</p>
@@ -596,7 +596,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 </table>
 
 <h3>Cash Flow Management</h3>
-<p>Cash flow — not profit — is what kills growing businesses. You can be profitable on paper and still run out of cash if your expenses are timed poorly. Best practices for beauty business cash flow:</p>
+<p>Cash flow, not profit, is what kills growing businesses. You can be profitable on paper and still run out of cash if your expenses are timed poorly. Best practices for beauty business cash flow:</p>
 <ul>
   <li><strong>Collect deposits at booking:</strong> Requiring a 20-50% deposit at the time of booking improves cash flow and dramatically reduces no-shows.</li>
   <li><strong>Offer memberships:</strong> Monthly subscription revenue provides predictable cash flow that smooths seasonal fluctuations.</li>
@@ -627,7 +627,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'growth-metrics-and-kpis',
-      title: 'Growth Metrics and KPIs — Measuring What Matters',
+      title: 'Growth Metrics and KPIs. Measuring What Matters',
       content: `<p>You cannot manage what you do not measure, and you cannot grow what you do not manage. Successful beauty business owners obsess over a small set of metrics that directly indicate growth trajectory.</p>
 
 <h3>The Growth Dashboard</h3>
@@ -642,7 +642,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 <p>These five metrics together tell you whether your business is growing healthily or whether growth in one area is masking decline in another.</p>
 
 <h3>Leading vs Lagging Indicators</h3>
-<p>Revenue is a lagging indicator — it tells you what already happened. Growth-focused owners prioritize leading indicators that predict future revenue:</p>
+<p>Revenue is a lagging indicator, it tells you what already happened. Growth-focused owners prioritize leading indicators that predict future revenue:</p>
 <table>
   <thead>
     <tr>
@@ -675,7 +675,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 </table>
 
 <h3>Setting Growth Targets</h3>
-<p>Effective targets follow the SMART framework — specific, measurable, achievable, relevant, and time-bound. Examples for a beauty business in growth phase:</p>
+<p>Effective targets follow the SMART framework, specific, measurable, achievable, relevant, and time-bound. Examples for a beauty business in growth phase:</p>
 <ul>
   <li>Increase new client count by 15% quarter-over-quarter through multi-channel acquisition</li>
   <li>Achieve 70% 90-day retention rate by implementing automated rebooking and loyalty programs</li>
@@ -685,9 +685,9 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 </ul>
 
 <h3>Using Technology for Growth Tracking</h3>
-<p>Manual tracking fails because it depends on consistency during your busiest periods — exactly when you are least likely to update a spreadsheet. Integrated <a href="/en/features/business/analytics-reporting">salon analytics platforms</a> track every metric automatically, alert you when KPIs move outside target ranges, and surface insights you would never discover manually.</p>
+<p>Manual tracking fails because it depends on consistency during your busiest periods, exactly when you are least likely to update a spreadsheet. Integrated <a href="/en/features/business/analytics-reporting">salon analytics platforms</a> track every metric automatically, alert you when KPIs move outside target ranges, and surface insights you would never discover manually.</p>
 <p>The best platforms provide weekly automated reports that show your growth dashboard, highlight wins, flag concerns, and suggest specific actions. This turns data from an overwhelming wall of numbers into an actionable growth tool.</p>
-<p>Growth is not accidental. It is the result of clear strategy, disciplined execution, and consistent measurement. Build the systems described in this guide, measure relentlessly, and your beauty business will compound its success — from startup to scale.</p>`,
+<p>Growth is not accidental. It is the result of clear strategy, disciplined execution, and consistent measurement. Build the systems described in this guide, measure relentlessly, and your beauty business will compound its success, from startup to scale.</p>`,
     },
   ],
 

@@ -134,7 +134,7 @@ const beautyIndustryStatistics2026Article: LocalBlogPost = {
 <p>The fastest-growing service categories in 2026 are skin treatments and facials (growing 9&ndash;11% annually), wellness-integrated services such as scalp treatments and aromatherapy (growing 12&ndash;15%), men's grooming beyond basic haircuts (growing 7&ndash;9%), and specialised nail art and treatments (growing 8&ndash;10%). Traditional haircuts and colour remain the largest revenue category but are growing at a more modest 3&ndash;5%.</p>
 
 <h3>How does the GCC beauty market compare to Western markets?</h3>
-<p>The GCC beauty market is growing at nearly double the rate of North American and European markets. Per capita beauty spending in the UAE and Saudi Arabia now exceeds most Western European countries. The market is characterised by higher premium penetration, strong digital adoption (especially WhatsApp-based booking), and a younger demographic profile. Multilingual operations — starting with Arabic and English — are a requirement, not a nice-to-have, for businesses operating in this region.</p>
+<p>The GCC beauty market is growing at nearly double the rate of North American and European markets. Per capita beauty spending in the UAE and Saudi Arabia now exceeds most Western European countries. The market is characterised by higher premium penetration, strong digital adoption (especially WhatsApp-based booking), and a younger demographic profile. Multilingual operations, starting with Arabic and English, are a requirement, not a nice-to-have, for businesses operating in this region.</p>
 `,
     metaTitle: 'Beauty Industry Statistics 2026 | Daisy',
     metaDescription:

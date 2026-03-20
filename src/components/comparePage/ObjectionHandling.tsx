@@ -18,7 +18,7 @@ function getObjections(competitorName?: string): Objection[] {
   return [
     {
       question: 'Is it hard to switch?',
-      answer: `Switching from ${name} to Daisy is straightforward. Our dedicated onboarding team handles the entire migration — importing your client database, appointment history, and settings. Most businesses are fully operational on Daisy within 48 hours.`,
+      answer: `Switching from ${name} to Daisy is straightforward. Our dedicated onboarding team handles the entire migration, importing your client database, appointment history, and settings. Most businesses are fully operational on Daisy within 48 hours.`,
       icon: ArrowRightLeft,
     },
     {
@@ -41,7 +41,7 @@ function getObjections(competitorName?: string): Objection[] {
     {
       question: 'How long does onboarding take?',
       answer:
-        'Most businesses are fully up and running within 1-2 days. Our onboarding specialists walk you through every step — from data migration to staff training. We also provide ongoing support whenever you need it.',
+        'Most businesses are fully up and running within 1-2 days. Our onboarding specialists walk you through every step, from data migration to staff training. We also provide ongoing support whenever you need it.',
       icon: Clock,
     },
   ];

@@ -22,7 +22,7 @@ export function PillarSection({
   callout,
   relatedLinks,
 }: PillarSectionProps) {
-  // Content is static TypeScript data (not user input) — safe to render directly
+  // Content is static TypeScript data (not user input), safe to render directly
   return (
     <section id={id} className="scroll-mt-24 py-8">
       <h2 className="mb-6 text-2xl font-bold text-[#172524] md:text-3xl">

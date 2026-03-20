@@ -171,7 +171,7 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
         item(
           1,
           'AI Receptionist',
-          'Your 24/7 virtual receptionist handles bookings, answers questions, and manages customer inquiries — even while you sleep.',
+          'Your 24/7 virtual receptionist handles bookings, answers questions, and manages customer inquiries, even while you sleep.',
           '/images/features/business/ai-receptionist.png',
         ),
         item(
@@ -263,7 +263,7 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
         item(
           3,
           'Tip Management',
-          'Let clients add tips during checkout. Tips go directly to the right professional — no manual tracking needed.',
+          'Let clients add tips during checkout. Tips go directly to the right professional, no manual tracking needed.',
           '/images/pages/customer/scroll/home-screen.png',
         ),
       ],
@@ -466,7 +466,7 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
         item(
           1,
           'موظف استقبال ذكي',
-          'موظف الاستقبال الافتراضي يعمل على مدار الساعة يتعامل مع الحجوزات، يجيب على الأسئلة، ويدير استفسارات العملاء — حتى أثناء نومك.',
+          'موظف الاستقبال الافتراضي يعمل على مدار الساعة يتعامل مع الحجوزات، يجيب على الأسئلة، ويدير استفسارات العملاء ,  حتى أثناء نومك.',
           '/images/features/business/ai-receptionist.png',
         ),
         item(

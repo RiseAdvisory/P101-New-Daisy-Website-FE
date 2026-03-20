@@ -10,9 +10,9 @@ export const professionalEntries1: FeatureDeepDive[] = [
     userType: 'professional',
 
     metaTitle:
-      'AI Tools for Beauty Professionals — Smart Scheduling, Client Insights & Automation | The Daisy',
+      'AI Tools for Beauty Professionals. Smart Scheduling, Client Insights & Automation | The Daisy',
     metaDescription:
-      'The Daisy is an AI-powered platform for beauty professionals that handles bookings, manages client relationships, delivers smart insights, and frees you to focus on your craft — 24/7 in Arabic and English.',
+      'The Daisy is an AI-powered platform for beauty professionals that handles bookings, manages client relationships, delivers smart insights, and frees you to focus on your craft, 24/7 in Arabic and English.',
     keywords: [
       'AI tools for beauty professionals',
       'AI scheduling for freelance stylists',
@@ -26,28 +26,28 @@ export const professionalEntries1: FeatureDeepDive[] = [
       'AI-powered beauty career tools',
     ],
 
-    heroTitle: 'AI That Works While You Work — So You Never Miss an Opportunity',
+    heroTitle: 'AI That Works While You Work. So You Never Miss an Opportunity',
     heroSubtitle:
-      'The Daisy\'s AI handles your bookings, answers client enquiries, and surfaces insights about your business — 24/7 in Arabic and English — so you can focus entirely on your craft.',
+      'The Daisy\'s AI handles your bookings, answers client enquiries, and surfaces insights about your business, 24/7 in Arabic and English, so you can focus entirely on your craft.',
     heroStat: {
       value: '24/7',
       label: 'AI assistant managing your bookings',
     },
 
     overview:
-      'As an independent beauty professional, you are your own receptionist, scheduler, marketer, and bookkeeper — all while delivering the high-quality service your clients expect. The Daisy is an AI-powered platform for beauty professionals that takes the administrative weight off your shoulders. The AI receptionist answers client enquiries via WhatsApp, Instagram DMs, phone, and chat — booking appointments, answering pricing questions, and collecting payments while you are mid-service or off the clock. Smart scheduling analyses your working patterns to optimise your calendar, minimise gaps between appointments, and suggest time blocks that maximise your daily earnings. Client insights surface patterns you would otherwise miss: which services generate the most income, which clients are overdue for a visit, and when your busiest periods are so you can plan accordingly. Whether you are a freelance hairstylist working from a rented chair, a mobile nail technician visiting clients at home, or an esthetician building a client base at a salon, The Daisy\'s AI scales to fit your working style. It communicates naturally in both Arabic and English, understands beauty industry terminology, and learns your preferences over time. The result is more bookings, fewer missed enquiries, and a clear picture of how your career is growing — without hiring an assistant or spending your evenings on admin.',
+      'As an independent beauty professional, you are your own receptionist, scheduler, marketer, and bookkeeper, all while delivering the high-quality service your clients expect. The Daisy is an AI-powered platform for beauty professionals that takes the administrative weight off your shoulders. The AI receptionist answers client enquiries via WhatsApp, Instagram DMs, phone, and chat, booking appointments, answering pricing questions, and collecting payments while you are mid-service or off the clock. Smart scheduling analyses your working patterns to optimise your calendar, minimise gaps between appointments, and suggest time blocks that maximise your daily earnings. Client insights surface patterns you would otherwise miss: which services generate the most income, which clients are overdue for a visit, and when your busiest periods are so you can plan accordingly. Whether you are a freelance hairstylist working from a rented chair, a mobile nail technician visiting clients at home, or an esthetician building a client base at a salon, The Daisy\'s AI scales to fit your working style. It communicates naturally in both Arabic and English, understands beauty industry terminology, and learns your preferences over time. The result is more bookings, fewer missed enquiries, and a clear picture of how your career is growing, without hiring an assistant or spending your evenings on admin.',
 
     keyCapabilities: [
       'AI receptionist that answers client messages and books appointments while you work',
       'Smart scheduling that optimises your calendar for maximum daily earnings',
       'Client insight reports showing your top services, busiest periods, and income trends',
       'Automated reminders and follow-ups sent on your behalf across WhatsApp, SMS, and email',
-      'Native multilingual communication — currently in Arabic and English',
+      'Native multilingual communication, currently in Arabic and English',
       'AI-driven rebooking suggestions based on each client\'s service history',
     ],
 
     painPoints: [
-      'Independent professionals miss up to 40% of enquiries because they cannot answer messages while with a client — sending potential bookings to competitors who respond faster.',
+      'Independent professionals miss up to 40% of enquiries because they cannot answer messages while with a client, sending potential bookings to competitors who respond faster.',
       'Managing your own schedule, reminders, and follow-ups consumes hours each week that could be spent earning or resting.',
       'Without data, you rely on gut feeling to decide which services to promote, when to raise prices, or how to fill quiet periods.',
       'Freelancers working across multiple locations struggle to maintain a single, accurate calendar that clients can book into.',
@@ -55,22 +55,22 @@ export const professionalEntries1: FeatureDeepDive[] = [
     ],
 
     growthOutcome:
-      'Professionals using The Daisy\'s AI tools report capturing significantly more bookings from enquiries they previously missed, spending far less time on admin, and gaining clear visibility into their earnings and client patterns — translating directly into higher income and more control over their careers.',
+      'Professionals using The Daisy\'s AI tools report capturing significantly more bookings from enquiries they previously missed, spending far less time on admin, and gaining clear visibility into their earnings and client patterns, translating directly into higher income and more control over their careers.',
 
     subFeatures: [
       {
         name: 'AI Receptionist for Professionals',
         description:
-          'Your personal AI assistant that handles client interactions across WhatsApp, Instagram DMs, phone, and website chat. It understands booking requests, checks your real-time availability, confirms appointments, and collects payments — all while you are with a client, commuting between locations, or simply off the clock. Every interaction is professional and personalised, reflecting your brand and tone.',
+          'Your personal AI assistant that handles client interactions across WhatsApp, Instagram DMs, phone, and website chat. It understands booking requests, checks your real-time availability, confirms appointments, and collects payments, all while you are with a client, commuting between locations, or simply off the clock. Every interaction is professional and personalised, reflecting your brand and tone.',
         howItWorks: [
           'A client reaches out via WhatsApp, Instagram, phone, or your booking link.',
           'The AI identifies the client from your contact list or creates a new profile automatically.',
-          'It understands the request — booking, rescheduling, pricing question, or availability check — and responds naturally.',
+          'It understands the request, booking, rescheduling, pricing question, or availability check, and responds naturally.',
           'If booking, the AI checks your live calendar, suggests available slots, and confirms the appointment.',
           'Payment or deposit is collected if required, and both you and the client receive confirmation.',
         ],
         keyBenefit:
-          'Never miss a potential booking again — even when you are mid-service or off the clock.',
+          'Never miss a potential booking again, even when you are mid-service or off the clock.',
       },
       {
         name: 'Smart Calendar Optimisation',
@@ -78,7 +78,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
           'Goes beyond a basic diary. The scheduling engine analyses your historical patterns, service durations, and travel time (for mobile professionals) to arrange your day for maximum earnings. It minimises dead time between appointments, accounts for setup and cleanup, and suggests schedule adjustments that help you fit more clients into every working day without rushing.',
         howItWorks: [
           'Analyses your booking history, service durations, and typical gaps between appointments.',
-          'Identifies scheduling inefficiencies — unnecessary gaps, suboptimal booking sequences, underused time slots.',
+          'Identifies scheduling inefficiencies, unnecessary gaps, suboptimal booking sequences, underused time slots.',
           'Recommends optimal appointment arrangements to maximise billable hours per day.',
           'Automatically adjusts buffer times based on service type and your configured preferences.',
           'For mobile professionals, factors in travel time between client locations.',
@@ -92,9 +92,9 @@ export const professionalEntries1: FeatureDeepDive[] = [
           'Transforms your raw booking and payment data into clear, actionable career insights. See which services generate the most income, which clients are your highest value, when your busiest and quietest periods fall, and how your earnings are trending month over month. Instead of guessing, you make informed decisions about pricing, promotions, and working hours.',
         howItWorks: [
           'Continuously analyses your booking, payment, and client data in the background.',
-          'Identifies trends — rising demand for specific services, clients overdue for a visit, seasonal income fluctuations.',
+          'Identifies trends, rising demand for specific services, clients overdue for a visit, seasonal income fluctuations.',
           'Generates weekly insight summaries with specific recommendations tailored to your business.',
-          'Flags opportunities you might miss — such as a cluster of clients due for rebooking or an underpriced popular service.',
+          'Flags opportunities you might miss, such as a cluster of clients due for rebooking or an underpriced popular service.',
         ],
         keyBenefit:
           'Make confident decisions about your career based on real data, not guesswork.',
@@ -102,7 +102,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         name: 'Automated Client Follow-Up',
         description:
-          'Handles the entire client communication lifecycle on your behalf — from booking confirmations and appointment reminders to aftercare messages and rebooking nudges. Each message is personalised based on the client\'s history and preferences, maintaining the personal touch your clients value while eliminating the hours you would spend on manual follow-up.',
+          'Handles the entire client communication lifecycle on your behalf, from booking confirmations and appointment reminders to aftercare messages and rebooking nudges. Each message is personalised based on the client\'s history and preferences, maintaining the personal touch your clients value while eliminating the hours you would spend on manual follow-up.',
         howItWorks: [
           'Sends personalised booking confirmations with service details and any preparation instructions.',
           'Delivers smart reminders at optimal intervals to reduce no-shows.',
@@ -115,7 +115,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         name: 'Multilingual Communication (Arabic, English & More)',
         description:
-          'Not just translation — genuine multilingual understanding. The AI communicates naturally with your clients in Arabic, English, and more, including GCC dialects and beauty industry terminology. Clients can switch languages mid-conversation and the AI adapts seamlessly. This is essential for professionals serving diverse communities where clients expect service in their preferred language.',
+          'Not just translation, genuine multilingual understanding. The AI communicates naturally with your clients in Arabic, English, and more, including GCC dialects and beauty industry terminology. Clients can switch languages mid-conversation and the AI adapts seamlessly. This is essential for professionals serving diverse communities where clients expect service in their preferred language.',
         keyBenefit:
           'Serve Arabic and English-speaking clients with equal professionalism, expanding your potential client base.',
       },
@@ -133,7 +133,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         step: 1,
         title: 'Connect Your Channels',
         description:
-          'Link your WhatsApp, Instagram, phone number, and booking page. The AI starts handling client interactions within minutes — no technical setup required.',
+          'Link your WhatsApp, Instagram, phone number, and booking page. The AI starts handling client interactions within minutes, no technical setup required.',
       },
       {
         step: 2,
@@ -145,7 +145,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         step: 3,
         title: 'Clients Interact Naturally',
         description:
-          'Clients message, call, or visit your booking page as they normally would. The AI handles the conversation, books the appointment, and collects payment — all without your intervention.',
+          'Clients message, call, or visit your booking page as they normally would. The AI handles the conversation, books the appointment, and collects payment, all without your intervention.',
       },
       {
         step: 4,
@@ -157,7 +157,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         step: 5,
         title: 'Insights Guide Your Growth',
         description:
-          'Weekly insight reports show your earnings trends, top services, client patterns, and growth opportunities — giving you the data to make smarter career decisions.',
+          'Weekly insight reports show your earnings trends, top services, client patterns, and growth opportunities, giving you the data to make smarter career decisions.',
       },
     ],
 
@@ -180,7 +180,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         area: 'Client Insights',
         daisy: 'Automated weekly reports with earnings trends and rebooking opportunities',
-        typical: 'No data — you guess which clients are overdue or which services perform best',
+        typical: 'No data, you guess which clients are overdue or which services perform best',
       },
       {
         area: 'Follow-Up',
@@ -199,19 +199,19 @@ export const professionalEntries1: FeatureDeepDive[] = [
         title: 'The Freelance Hairstylist Who Stopped Missing Bookings',
         businessType: 'Freelance Hairstylist',
         scenario:
-          'Layla rents a chair at a busy salon and cannot answer her phone while with clients. Before The Daisy, she estimated she was losing a third of her enquiries. Now the AI receptionist responds to every WhatsApp message and Instagram DM instantly, books appointments into her calendar, and collects deposits — so Layla focuses on her craft while her schedule stays consistently full.',
+          'Layla rents a chair at a busy salon and cannot answer her phone while with clients. Before The Daisy, she estimated she was losing a third of her enquiries. Now the AI receptionist responds to every WhatsApp message and Instagram DM instantly, books appointments into her calendar, and collects deposits, so Layla focuses on her craft while her schedule stays consistently full.',
       },
       {
         title: 'The Mobile Nail Technician With a Smarter Schedule',
         businessType: 'Mobile Nail Technician',
         scenario:
-          'Reem travels to clients\' homes across the city. Scheduling used to be chaotic — back-to-back bookings on opposite sides of town, awkward gaps she could not fill. The Daisy\'s smart scheduling factors in travel time, clusters nearby appointments together, and suggests optimal routes. Reem now fits more clients into each day and finishes earlier.',
+          'Reem travels to clients\' homes across the city. Scheduling used to be chaotic, back-to-back bookings on opposite sides of town, awkward gaps she could not fill. The Daisy\'s smart scheduling factors in travel time, clusters nearby appointments together, and suggests optimal routes. Reem now fits more clients into each day and finishes earlier.',
       },
       {
         title: 'The Independent Esthetician Building a Client Base',
         businessType: 'Independent Esthetician',
         scenario:
-          'Nour recently went independent after years at a clinic. Building her own client base felt overwhelming alongside delivering treatments. The Daisy\'s AI handles all her client communication — reminders, aftercare messages, and rebooking suggestions — while the insights dashboard shows her exactly which services and time slots generate the most income, helping her make strategic decisions about her growing practice.',
+          'Nour recently went independent after years at a clinic. Building her own client base felt overwhelming alongside delivering treatments. The Daisy\'s AI handles all her client communication, reminders, aftercare messages, and rebooking suggestions, while the insights dashboard shows her exactly which services and time slots generate the most income, helping her make strategic decisions about her growing practice.',
       },
     ],
 
@@ -226,7 +226,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         category: 'Client Communication',
         slug: 'communication-tools',
         benefit:
-          'AI powers your client communication — automated reminders, aftercare follow-ups, and rebooking nudges across all channels.',
+          'AI powers your client communication, automated reminders, aftercare follow-ups, and rebooking nudges across all channels.',
       },
       {
         category: 'Analytics & Reports',
@@ -244,7 +244,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
 
     networkEffects: {
       description:
-        'The Daisy\'s AI is not static — it improves with every interaction across the entire platform. As more beauty professionals use The Daisy, the AI learns broader industry patterns: popular services by season, optimal pricing strategies, client communication approaches that drive the highest rebooking rates, and scheduling techniques that maximise daily earnings. This compounding intelligence means early adopters gain an accelerating advantage over peers who manage their careers manually.',
+        'The Daisy\'s AI is not static, it improves with every interaction across the entire platform. As more beauty professionals use The Daisy, the AI learns broader industry patterns: popular services by season, optimal pricing strategies, client communication approaches that drive the highest rebooking rates, and scheduling techniques that maximise daily earnings. This compounding intelligence means early adopters gain an accelerating advantage over peers who manage their careers manually.',
       benefits: [
         'Scheduling suggestions improve as the AI processes millions of appointment patterns from professionals across the industry.',
         'Client communication becomes more effective as the AI learns which reminder timing and messaging styles drive the best attendance and rebooking rates.',
@@ -263,17 +263,17 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         question: 'What is an AI receptionist and do I need one as a freelancer?',
         answer:
-          'An AI receptionist is an automated assistant that handles client enquiries — WhatsApp messages, Instagram DMs, phone calls, and booking page interactions — without you needing to stop what you are doing. As a freelancer, you are your own receptionist, which means every unanswered message is a potentially lost booking. The Daisy\'s AI ensures every enquiry gets an instant, professional response 24/7.',
+          'An AI receptionist is an automated assistant that handles client enquiries. WhatsApp messages, Instagram DMs, phone calls, and booking page interactions, without you needing to stop what you are doing. As a freelancer, you are your own receptionist, which means every unanswered message is a potentially lost booking. The Daisy\'s AI ensures every enquiry gets an instant, professional response 24/7.',
       },
       {
         question: 'Does The Daisy AI work in Arabic for my clients?',
         answer:
-          'Yes. The Daisy\'s AI operates natively in both Arabic and English with full cultural context and beauty-specific terminology. It is not a translation layer — it genuinely understands and responds naturally in both languages, including GCC dialects. Clients can switch languages mid-conversation and the AI adapts seamlessly.',
+          'Yes. The Daisy\'s AI operates natively in both Arabic and English with full cultural context and beauty-specific terminology. It is not a translation layer, it genuinely understands and responds naturally in both languages, including GCC dialects. Clients can switch languages mid-conversation and the AI adapts seamlessly.',
       },
       {
         question: 'Will AI replace the personal touch my clients value?',
         answer:
-          'Not at all. The AI handles administrative tasks — scheduling, reminders, payment collection, follow-ups — so you can invest more energy in the personal, creative work your clients love. Your clients still see you, interact with you during appointments, and experience your expertise. The AI simply ensures nothing falls through the cracks between visits.',
+          'Not at all. The AI handles administrative tasks, scheduling, reminders, payment collection, follow-ups, so you can invest more energy in the personal, creative work your clients love. Your clients still see you, interact with you during appointments, and experience your expertise. The AI simply ensures nothing falls through the cracks between visits.',
       },
       {
         question: 'How long does it take to set up The Daisy as an independent professional?',
@@ -288,7 +288,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         question: 'How is The Daisy different from generic booking apps?',
         answer:
-          'Generic booking apps give you a calendar and a booking link. The Daisy gives you an AI-powered career platform — an AI receptionist that handles client interactions 24/7, smart scheduling that optimises your earnings, client insights that guide your decisions, and automated follow-ups that keep clients coming back. It is built specifically for beauty professionals, not as a one-size-fits-all tool.',
+          'Generic booking apps give you a calendar and a booking link. The Daisy gives you an AI-powered career platform, an AI receptionist that handles client interactions 24/7, smart scheduling that optimises your earnings, client insights that guide your decisions, and automated follow-ups that keep clients coming back. It is built specifically for beauty professionals, not as a one-size-fits-all tool.',
       },
     ],
 
@@ -311,9 +311,9 @@ export const professionalEntries1: FeatureDeepDive[] = [
     userType: 'professional',
 
     metaTitle:
-      'Booking Management for Beauty Professionals — Self-Booking, No-Show Protection & Calendar Control | The Daisy',
+      'Booking Management for Beauty Professionals. Self-Booking, No-Show Protection & Calendar Control | The Daisy',
     metaDescription:
-      'The Daisy\'s booking management gives independent beauty professionals a self-service booking page, no-show protection with deposits, multi-location calendar support, and client self-scheduling — all from one platform.',
+      'The Daisy\'s booking management gives independent beauty professionals a self-service booking page, no-show protection with deposits, multi-location calendar support, and client self-scheduling, all from one platform.',
     keywords: [
       'freelance stylist booking app',
       'beauty professional scheduling tool',
@@ -327,16 +327,16 @@ export const professionalEntries1: FeatureDeepDive[] = [
       'online booking for independent hairdressers',
     ],
 
-    heroTitle: 'Your Calendar, Your Rules — Booking That Works as Hard as You Do',
+    heroTitle: 'Your Calendar, Your Rules. Booking That Works as Hard as You Do',
     heroSubtitle:
-      'Stop losing clients to missed messages and scheduling chaos. The Daisy gives you a professional booking page, no-show protection, and smart calendar management — so every working hour counts.',
+      'Stop losing clients to missed messages and scheduling chaos. The Daisy gives you a professional booking page, no-show protection, and smart calendar management, so every working hour counts.',
     heroStat: {
       value: '0',
       label: 'Double-bookings with unified calendar',
     },
 
     overview:
-      'Your time is your inventory. Every hour you cannot fill is income you cannot recover, and every scheduling conflict damages the trust your clients place in you. Yet most independent beauty professionals still manage bookings through a mix of WhatsApp messages, phone calls, and mental notes — a system that breaks down the moment you get busy. The Daisy\'s Booking Management replaces that chaos with a professional, unified scheduling platform built for the reality of independent beauty work. Clients book directly through your personalised booking page — available 24/7 on your website, social media profiles, and the Daisy marketplace. The system understands your service durations, break preferences, and location schedules, so it never creates impossible days. Deposit collection and clear cancellation policies protect your income from no-shows. If you work at multiple locations — a salon chair two days a week, a home studio three days, mobile clients on weekends — the calendar keeps everything in one place with location-specific availability. Recurring appointment scheduling locks in your regular clients for weeks ahead, giving you predictable income you can count on. Whether you are a freelance hairstylist, mobile nail technician, or independent esthetician, The Daisy ensures your booking process feels as professional as your service.',
+      'Your time is your inventory. Every hour you cannot fill is income you cannot recover, and every scheduling conflict damages the trust your clients place in you. Yet most independent beauty professionals still manage bookings through a mix of WhatsApp messages, phone calls, and mental notes, a system that breaks down the moment you get busy. The Daisy\'s Booking Management replaces that chaos with a professional, unified scheduling platform built for the reality of independent beauty work. Clients book directly through your personalised booking page, available 24/7 on your website, social media profiles, and the Daisy marketplace. The system understands your service durations, break preferences, and location schedules, so it never creates impossible days. Deposit collection and clear cancellation policies protect your income from no-shows. If you work at multiple locations, a salon chair two days a week, a home studio three days, mobile clients on weekends, the calendar keeps everything in one place with location-specific availability. Recurring appointment scheduling locks in your regular clients for weeks ahead, giving you predictable income you can count on. Whether you are a freelance hairstylist, mobile nail technician, or independent esthetician, The Daisy ensures your booking process feels as professional as your service.',
 
     keyCapabilities: [
       'Personal booking page with 24/7 client self-scheduling',
@@ -348,7 +348,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
     ],
 
     painPoints: [
-      'Answering booking messages while mid-service is impossible, meaning clients wait hours for a reply — or book elsewhere.',
+      'Answering booking messages while mid-service is impossible, meaning clients wait hours for a reply, or book elsewhere.',
       'No-shows cost independent professionals their most valuable asset: time. Without deposits, there is no protection and no recourse.',
       'Managing bookings across WhatsApp, DMs, and phone calls leads to double-bookings, forgotten appointments, and damaged client trust.',
       'Professionals working at multiple locations struggle to maintain accurate availability, leading to conflicts and wasted travel.',
@@ -356,13 +356,13 @@ export const professionalEntries1: FeatureDeepDive[] = [
     ],
 
     growthOutcome:
-      'Professionals using The Daisy\'s booking management report significantly fewer no-shows through deposit collection, more bookings from 24/7 online availability, and a noticeable increase in client confidence — all translating into higher weekly income and less administrative stress.',
+      'Professionals using The Daisy\'s booking management report significantly fewer no-shows through deposit collection, more bookings from 24/7 online availability, and a noticeable increase in client confidence, all translating into higher weekly income and less administrative stress.',
 
     subFeatures: [
       {
         name: 'Personal Booking Page',
         description:
-          'A professional, branded booking page that showcases your services, pricing, availability, and portfolio. Clients visit your page — linked from Instagram, WhatsApp, Google, or anywhere you share it — and book instantly without messaging you. The page reflects your personal brand with your name, photos, and service descriptions, making a strong first impression before the client even walks through the door.',
+          'A professional, branded booking page that showcases your services, pricing, availability, and portfolio. Clients visit your page, linked from Instagram, WhatsApp, Google, or anywhere you share it, and book instantly without messaging you. The page reflects your personal brand with your name, photos, and service descriptions, making a strong first impression before the client even walks through the door.',
         howItWorks: [
           'Client visits your personalised booking page via a link you share on social media, your website, or messaging.',
           'They browse your services with descriptions, durations, and pricing, then select what they want.',
@@ -371,7 +371,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
           'Both you and the client receive instant confirmation with all appointment details.',
         ],
         keyBenefit:
-          'Present a polished, professional image and capture bookings 24/7 — even while you sleep.',
+          'Present a polished, professional image and capture bookings 24/7, even while you sleep.',
       },
       {
         name: 'Multi-Location Calendar',
@@ -391,19 +391,19 @@ export const professionalEntries1: FeatureDeepDive[] = [
         description:
           'A multi-layered system that protects your income from clients who do not turn up. Deposits are collected at booking time, timed reminders are sent through the client\'s preferred channel, and cancellation policies are enforced automatically. The system tracks each client\'s reliability history, so you can set stricter requirements for repeat offenders without having awkward conversations.',
         howItWorks: [
-          'You set your deposit amount — a flat fee or percentage — and your cancellation policy window.',
+          'You set your deposit amount, a flat fee or percentage, and your cancellation policy window.',
           'Deposits are collected securely at the time of booking via card payment.',
           'Automated reminders are sent 48 hours, 24 hours, and 2 hours before the appointment.',
           'Clients can confirm, reschedule, or cancel directly from the reminder. Cancelled slots open for others immediately.',
           'No-show clients are flagged in the system, and future bookings can require full prepayment automatically.',
         ],
         keyBenefit:
-          'Stop losing income to no-shows — deposits ensure your time is valued and your calendar stays productive.',
+          'Stop losing income to no-shows, deposits ensure your time is valued and your calendar stays productive.',
       },
       {
         name: 'Waitlist & Instant Backfill',
         description:
-          'When a client cancels, the slot does not stay empty. The waitlist system instantly contacts clients who wanted that time or service. The first to confirm gets the appointment. This happens automatically — no scrolling through your messages to find someone who might be free — turning cancellations from lost income into recovered bookings.',
+          'When a client cancels, the slot does not stay empty. The waitlist system instantly contacts clients who wanted that time or service. The first to confirm gets the appointment. This happens automatically, no scrolling through your messages to find someone who might be free, turning cancellations from lost income into recovered bookings.',
         howItWorks: [
           'Clients who cannot find their preferred time are added to your waitlist with their preferences.',
           'When a matching slot opens due to cancellation, waitlisted clients receive an instant notification.',
@@ -416,9 +416,9 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         name: 'Recurring Appointment Scheduling',
         description:
-          'Lock in your loyal clients with recurring bookings — a 6-weekly colour appointment, a monthly facial, a fortnightly gel set. The system schedules the full series in advance, reserving the same time slot each cycle. Your regulars appreciate the convenience, and you gain predictable income that makes financial planning far more reliable.',
+          'Lock in your loyal clients with recurring bookings, a 6-weekly colour appointment, a monthly facial, a fortnightly gel set. The system schedules the full series in advance, reserving the same time slot each cycle. Your regulars appreciate the convenience, and you gain predictable income that makes financial planning far more reliable.',
         howItWorks: [
-          'During booking, you or your client selects a recurrence pattern — weekly, fortnightly, monthly, or custom interval.',
+          'During booking, you or your client selects a recurrence pattern, weekly, fortnightly, monthly, or custom interval.',
           'The system books the entire series, reserving the same day and time for each occurrence.',
           'Individual appointments can be adjusted without affecting the rest of the series.',
           'Reminders are sent before each appointment as normal, keeping attendance consistent.',
@@ -429,7 +429,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         name: 'Multi-Service Bookings',
         description:
-          'Many clients want more than one service per visit — a cut and colour, nails and lashes, facial and brow shaping. The system calculates total duration, finds a time block that fits, and presents it as a single seamless booking. Clients see the combined price and time commitment upfront, which increases their confidence to add services and raises your average appointment value.',
+          'Many clients want more than one service per visit, a cut and colour, nails and lashes, facial and brow shaping. The system calculates total duration, finds a time block that fits, and presents it as a single seamless booking. Clients see the combined price and time commitment upfront, which increases their confidence to add services and raises your average appointment value.',
         howItWorks: [
           'Client selects multiple services during the booking process on your page.',
           'The system calculates total appointment duration including transitions between services.',
@@ -465,7 +465,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         step: 4,
         title: 'Clients Book and Pay',
         description:
-          'Clients choose their service, pick a time, and pay their deposit — all in under a minute. You get a notification, they get a confirmation, and the appointment is locked in.',
+          'Clients choose their service, pick a time, and pay their deposit, all in under a minute. You get a notification, they get a confirmation, and the appointment is locked in.',
       },
       {
         step: 5,
@@ -561,7 +561,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         {
           title: 'Predictive Demand Insights',
           description:
-            'AI analyses your historical bookings, seasonal trends, and client behaviour to predict busy and quiet periods — helping you plan your availability, set promotions for slow days, and avoid undercharging during peak demand.',
+            'AI analyses your historical bookings, seasonal trends, and client behaviour to predict busy and quiet periods, helping you plan your availability, set promotions for slow days, and avoid undercharging during peak demand.',
         },
         {
           title: 'Smart Gap Filling',
@@ -571,12 +571,12 @@ export const professionalEntries1: FeatureDeepDive[] = [
         {
           title: 'Client Reliability Scoring',
           description:
-            'AI assigns a reliability score to each client based on their attendance history, booking behaviour, and cancellation patterns — automatically applying stricter deposit requirements for higher-risk appointments.',
+            'AI assigns a reliability score to each client based on their attendance history, booking behaviour, and cancellation patterns, automatically applying stricter deposit requirements for higher-risk appointments.',
         },
         {
           title: 'Optimal Pricing Suggestions',
           description:
-            'AI analyses your booking fill rates, service demand, and market positioning to suggest pricing adjustments that reflect your true value — helping you earn what you deserve without guesswork.',
+            'AI analyses your booking fill rates, service demand, and market positioning to suggest pricing adjustments that reflect your true value, helping you earn what you deserve without guesswork.',
         },
       ],
     },
@@ -585,12 +585,12 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         question: 'Can clients book me online without calling or messaging?',
         answer:
-          'Yes. The Daisy gives you a personal booking page where clients browse your services, see real-time availability, and book instantly — no messages, no phone calls, no waiting. You share the link on Instagram, WhatsApp, your website, or anywhere your clients find you.',
+          'Yes. The Daisy gives you a personal booking page where clients browse your services, see real-time availability, and book instantly, no messages, no phone calls, no waiting. You share the link on Instagram, WhatsApp, your website, or anywhere your clients find you.',
       },
       {
         question: 'How does deposit collection protect me from no-shows?',
         answer:
-          'You set a deposit amount for each service — a flat fee or a percentage of the price. The deposit is collected securely when the client books. If they attend, it is applied to their bill. If they no-show or cancel within your policy window, the deposit is forfeited. This ensures your time is valued and significantly reduces no-shows.',
+          'You set a deposit amount for each service, a flat fee or a percentage of the price. The deposit is collected securely when the client books. If they attend, it is applied to their bill. If they no-show or cancel within your policy window, the deposit is forfeited. This ensures your time is valued and significantly reduces no-shows.',
       },
       {
         question: 'Can I manage bookings across multiple locations?',
@@ -600,7 +600,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         question: 'What happens when a client cancels last-minute?',
         answer:
-          'Your cancellation policy is enforced automatically — deposits are forfeited or fees applied per your rules. The cancelled slot is immediately released to your waitlist, and the first waitlisted client to confirm takes the appointment. This automated recovery means you rarely lose income to last-minute changes.',
+          'Your cancellation policy is enforced automatically, deposits are forfeited or fees applied per your rules. The cancelled slot is immediately released to your waitlist, and the first waitlisted client to confirm takes the appointment. This automated recovery means you rarely lose income to last-minute changes.',
       },
       {
         question: 'Can I set different prices or availability for different days?',
@@ -610,7 +610,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         question: 'Do clients need to download an app to book with me?',
         answer:
-          'No. Your booking page works in any web browser — clients simply tap your link and book. There is no app download required for your clients. They can also find and book you through the Daisy marketplace if they discover you there.',
+          'No. Your booking page works in any web browser, clients simply tap your link and book. There is no app download required for your clients. They can also find and book you through the Daisy marketplace if they discover you there.',
       },
       {
         question: 'How does recurring scheduling help me earn more?',
@@ -636,9 +636,9 @@ export const professionalEntries1: FeatureDeepDive[] = [
     userType: 'professional',
 
     metaTitle:
-      'Client Communication for Beauty Professionals — Automated Reminders, Aftercare & Rebooking | The Daisy',
+      'Client Communication for Beauty Professionals. Automated Reminders, Aftercare & Rebooking | The Daisy',
     metaDescription:
-      'The Daisy automates client communication for beauty professionals — appointment reminders, aftercare follow-ups, rebooking nudges, and WhatsApp/SMS messaging that keeps clients coming back without manual effort.',
+      'The Daisy automates client communication for beauty professionals, appointment reminders, aftercare follow-ups, rebooking nudges, and WhatsApp/SMS messaging that keeps clients coming back without manual effort.',
     keywords: [
       'client communication beauty professionals',
       'automated reminders for stylists',
@@ -652,16 +652,16 @@ export const professionalEntries1: FeatureDeepDive[] = [
       'hairstylist client communication app',
     ],
 
-    heroTitle: 'Stay Connected to Every Client — Without the Constant Messaging',
+    heroTitle: 'Stay Connected to Every Client. Without the Constant Messaging',
     heroSubtitle:
-      'The Daisy automates your reminders, aftercare follow-ups, and rebooking nudges across WhatsApp, SMS, and email — keeping your clients engaged and loyal while you focus on your craft.',
+      'The Daisy automates your reminders, aftercare follow-ups, and rebooking nudges across WhatsApp, SMS, and email, keeping your clients engaged and loyal while you focus on your craft.',
     heroStat: {
       value: '3x',
       label: 'Higher rebooking rate with automated follow-ups',
     },
 
     overview:
-      'Client relationships are the foundation of every successful beauty career. Your best clients come back because they trust you, feel valued, and never forget to rebook. But when you are a one-person operation — delivering treatments, managing bookings, handling payments — consistent client communication is the first thing that slips. Messages go unsent, aftercare tips are forgotten, and clients who meant to rebook simply drift away. The Daisy\'s Client Communication tools automate the entire post-booking lifecycle so every client feels personally cared for without you spending hours on your phone. Appointment reminders are sent at the optimal intervals to reduce no-shows. Aftercare messages go out automatically after each treatment with relevant tips and product recommendations. Rebooking nudges reach clients when they are approaching their typical revisit interval, gently prompting them to secure their next appointment. All communication flows through the channels your clients actually use — WhatsApp, SMS, and email — and each message is personalised based on the client\'s history, service, and preferences. The result is stronger client loyalty, higher rebooking rates, and more predictable income — all without you typing a single message. Whether you are a freelance hairstylist, mobile nail technician, or independent esthetician, The Daisy ensures your client relationships stay warm even when your hands are busy.',
+      'Client relationships are the foundation of every successful beauty career. Your best clients come back because they trust you, feel valued, and never forget to rebook. But when you are a one-person operation, delivering treatments, managing bookings, handling payments, consistent client communication is the first thing that slips. Messages go unsent, aftercare tips are forgotten, and clients who meant to rebook simply drift away. The Daisy\'s Client Communication tools automate the entire post-booking lifecycle so every client feels personally cared for without you spending hours on your phone. Appointment reminders are sent at the optimal intervals to reduce no-shows. Aftercare messages go out automatically after each treatment with relevant tips and product recommendations. Rebooking nudges reach clients when they are approaching their typical revisit interval, gently prompting them to secure their next appointment. All communication flows through the channels your clients actually use. WhatsApp, SMS, and email, and each message is personalised based on the client\'s history, service, and preferences. The result is stronger client loyalty, higher rebooking rates, and more predictable income, all without you typing a single message. Whether you are a freelance hairstylist, mobile nail technician, or independent esthetician, The Daisy ensures your client relationships stay warm even when your hands are busy.',
 
     keyCapabilities: [
       'Automated appointment reminders via WhatsApp, SMS, and email at optimal intervals',
@@ -673,7 +673,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
     ],
 
     painPoints: [
-      'Independent professionals lose a significant share of potential repeat bookings simply because clients forget to rebook — not because they were dissatisfied.',
+      'Independent professionals lose a significant share of potential repeat bookings simply because clients forget to rebook, not because they were dissatisfied.',
       'Sending individual reminders, aftercare tips, and follow-up messages manually takes hours each week that could be spent earning.',
       'Missed reminders lead to no-shows that cost freelancers their most irreplaceable resource: time in the chair.',
       'Generic or impersonal communication makes clients feel like a number, weakening the personal relationship that drives loyalty.',
@@ -681,13 +681,13 @@ export const professionalEntries1: FeatureDeepDive[] = [
     ],
 
     growthOutcome:
-      'Professionals using The Daisy\'s automated communication report noticeably higher rebooking rates, a significant drop in no-shows, and clients who feel personally cared for — all translating into more consistent income and a stronger personal reputation.',
+      'Professionals using The Daisy\'s automated communication report noticeably higher rebooking rates, a significant drop in no-shows, and clients who feel personally cared for, all translating into more consistent income and a stronger personal reputation.',
 
     subFeatures: [
       {
         name: 'Smart Appointment Reminders',
         description:
-          'Timed reminders sent through your client\'s preferred channel — WhatsApp, SMS, or email — at the intervals proven to minimise no-shows. Each reminder includes the appointment details, your location, and a one-tap option to confirm, reschedule, or cancel. The system adapts reminder timing based on each client\'s behaviour — reliable clients get a single reminder, while those with a history of missed appointments receive additional touchpoints.',
+          'Timed reminders sent through your client\'s preferred channel. WhatsApp, SMS, or email, at the intervals proven to minimise no-shows. Each reminder includes the appointment details, your location, and a one-tap option to confirm, reschedule, or cancel. The system adapts reminder timing based on each client\'s behaviour, reliable clients get a single reminder, while those with a history of missed appointments receive additional touchpoints.',
         howItWorks: [
           'A booking is confirmed and the reminder sequence is scheduled automatically.',
           'Reminders are sent 48 hours, 24 hours, and 2 hours before the appointment through the client\'s preferred channel.',
@@ -715,7 +715,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         name: 'Rebooking Nudges',
         description:
-          'The system tracks each client\'s typical visit interval — monthly facials, 6-weekly colour appointments, fortnightly nails — and sends a personalised nudge when they are approaching their rebooking window. The message feels natural and helpful, not pushy, because it is timed to when the client genuinely needs their next appointment. Clients can book directly from the message with one tap.',
+          'The system tracks each client\'s typical visit interval, monthly facials, 6-weekly colour appointments, fortnightly nails, and sends a personalised nudge when they are approaching their rebooking window. The message feels natural and helpful, not pushy, because it is timed to when the client genuinely needs their next appointment. Clients can book directly from the message with one tap.',
         howItWorks: [
           'The system calculates each client\'s average revisit interval based on their booking history.',
           'As the client approaches their rebooking window, a personalised message is sent with your next available slots.',
@@ -728,7 +728,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         name: 'Client Re-Engagement',
         description:
-          'When a client has not booked within their usual cycle, the system identifies them as at risk of lapsing and sends a thoughtful re-engagement message. This is not a generic blast — it references the client\'s last service, acknowledges the gap, and offers an easy path to rebook. Recovering even a small percentage of lapsing clients has a meaningful impact on your monthly income.',
+          'When a client has not booked within their usual cycle, the system identifies them as at risk of lapsing and sends a thoughtful re-engagement message. This is not a generic blast, it references the client\'s last service, acknowledges the gap, and offers an easy path to rebook. Recovering even a small percentage of lapsing clients has a meaningful impact on your monthly income.',
         howItWorks: [
           'The system monitors client activity and flags those who have exceeded their typical revisit interval.',
           'A personalised re-engagement message is sent referencing their last service and suggesting a return appointment.',
@@ -741,7 +741,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         name: 'WhatsApp & SMS Integration',
         description:
-          'All communication flows through the channels your clients actually use daily. WhatsApp messages, SMS texts, and emails are sent from your professional profile — not a generic system number — maintaining the personal feel that clients expect from an independent professional. Clients can reply directly to reschedule, ask questions, or confirm, and their responses appear in your Daisy dashboard.',
+          'All communication flows through the channels your clients actually use daily. WhatsApp messages, SMS texts, and emails are sent from your professional profile, not a generic system number, maintaining the personal feel that clients expect from an independent professional. Clients can reply directly to reschedule, ask questions, or confirm, and their responses appear in your Daisy dashboard.',
         howItWorks: [
           'Your WhatsApp Business, SMS, and email are connected to The Daisy during setup.',
           'All automated messages are sent from your professional identity, not a faceless system.',
@@ -755,7 +755,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         name: 'Birthday & Special Occasion Messages',
         description:
-          'Automated greetings for client birthdays and special occasions — with optional promotional offers you define. A birthday message with a small discount or free add-on treatment creates a moment of delight that strengthens the client relationship. These messages are scheduled based on client profile data and sent at the perfect time.',
+          'Automated greetings for client birthdays and special occasions, with optional promotional offers you define. A birthday message with a small discount or free add-on treatment creates a moment of delight that strengthens the client relationship. These messages are scheduled based on client profile data and sent at the perfect time.',
         keyBenefit:
           'Create memorable touchpoints that make clients feel valued and encourage celebratory bookings.',
       },
@@ -784,13 +784,13 @@ export const professionalEntries1: FeatureDeepDive[] = [
         step: 4,
         title: 'Clients Stay Engaged',
         description:
-          'Your clients receive timely, personalised communication that keeps your name top-of-mind. They confirm appointments, rebook from nudges, and respond to aftercare — all without you sending a single manual message.',
+          'Your clients receive timely, personalised communication that keeps your name top-of-mind. They confirm appointments, rebook from nudges, and respond to aftercare, all without you sending a single manual message.',
       },
       {
         step: 5,
         title: 'Track Results and Refine',
         description:
-          'Your analytics dashboard shows message delivery rates, response rates, rebooking conversions, and no-show reduction — so you can see exactly how communication is impacting your income.',
+          'Your analytics dashboard shows message delivery rates, response rates, rebooking conversions, and no-show reduction, so you can see exactly how communication is impacting your income.',
       },
     ],
 
@@ -803,7 +803,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         area: 'Aftercare Follow-Up',
         daisy: 'Personalised aftercare messages sent automatically based on the treatment performed',
-        typical: 'No aftercare communication — clients are on their own after they leave',
+        typical: 'No aftercare communication, clients are on their own after they leave',
       },
       {
         area: 'Rebooking',
@@ -817,12 +817,12 @@ export const professionalEntries1: FeatureDeepDive[] = [
       },
       {
         area: 'Communication Channel',
-        daisy: 'WhatsApp, SMS, and email through your professional identity — clients reply directly',
+        daisy: 'WhatsApp, SMS, and email through your professional identity, clients reply directly',
         typical: 'Generic system messages from unknown numbers that feel impersonal',
       },
       {
         area: 'Time Investment',
-        daisy: 'Zero ongoing effort — all communication is automated once configured',
+        daisy: 'Zero ongoing effort, all communication is automated once configured',
         typical: 'Hours each week spent typing individual messages to clients',
       },
     ],
@@ -832,19 +832,19 @@ export const professionalEntries1: FeatureDeepDive[] = [
         title: 'The Freelance Hairstylist Whose Clients Always Rebook',
         businessType: 'Freelance Hairstylist',
         scenario:
-          'Aisha noticed her clients loved her work but often forgot to rebook until their roots were showing. After enabling The Daisy\'s rebooking nudges, her clients receive a personalised message as they approach their typical 6-week colour interval — with a direct link to book their next appointment. Her rebooking rate increased significantly, and her calendar is now consistently full weeks in advance.',
+          'Aisha noticed her clients loved her work but often forgot to rebook until their roots were showing. After enabling The Daisy\'s rebooking nudges, her clients receive a personalised message as they approach their typical 6-week colour interval, with a direct link to book their next appointment. Her rebooking rate increased significantly, and her calendar is now consistently full weeks in advance.',
       },
       {
         title: 'The Independent Esthetician With Premium Aftercare',
         businessType: 'Independent Esthetician',
         scenario:
-          'Dana performs advanced facial treatments that require specific aftercare. Before The Daisy, she would verbally explain post-treatment care, but clients often forgot the details. Automated aftercare messages now go out within hours of each treatment — with care instructions, product recommendations, and a check-in a few days later. Her clients see better results, leave better reviews, and rebook more consistently.',
+          'Dana performs advanced facial treatments that require specific aftercare. Before The Daisy, she would verbally explain post-treatment care, but clients often forgot the details. Automated aftercare messages now go out within hours of each treatment, with care instructions, product recommendations, and a check-in a few days later. Her clients see better results, leave better reviews, and rebook more consistently.',
       },
       {
         title: 'The Mobile Nail Technician Who Recovered Lapsed Clients',
         businessType: 'Mobile Nail Technician',
         scenario:
-          'Hana realised she was losing clients who simply drifted away after a few visits — not because of bad service, but because no one prompted them to return. The Daisy\'s re-engagement messages identified clients who had exceeded their usual booking interval and sent a thoughtful, personalised message inviting them back. Within the first month, several lapsed clients rebooked, recovering meaningful monthly income.',
+          'Hana realised she was losing clients who simply drifted away after a few visits, not because of bad service, but because no one prompted them to return. The Daisy\'s re-engagement messages identified clients who had exceeded their usual booking interval and sent a thoughtful, personalised message inviting them back. Within the first month, several lapsed clients rebooked, recovering meaningful monthly income.',
       },
     ],
 
@@ -859,13 +859,13 @@ export const professionalEntries1: FeatureDeepDive[] = [
         category: 'AI Professional Tools',
         slug: 'ai-salon-management',
         benefit:
-          'AI powers the communication layer — determining optimal reminder timing, personalising aftercare content, and identifying the best moment to nudge each client to rebook.',
+          'AI powers the communication layer, determining optimal reminder timing, personalising aftercare content, and identifying the best moment to nudge each client to rebook.',
       },
       {
         category: 'Personal Marketing',
         slug: 'marketing-promotions',
         benefit:
-          'Communication tools work alongside your marketing — birthday offers, seasonal promotions, and referral requests are woven naturally into your automated client messaging.',
+          'Communication tools work alongside your marketing, birthday offers, seasonal promotions, and referral requests are woven naturally into your automated client messaging.',
       },
       {
         category: 'Analytics & Reports',
@@ -880,17 +880,17 @@ export const professionalEntries1: FeatureDeepDive[] = [
         {
           title: 'Optimal Timing Prediction',
           description:
-            'AI analyses each client\'s message-reading patterns and response behaviour to send reminders and nudges at the moment they are most likely to see and act on them — maximising open rates and rebooking conversions.',
+            'AI analyses each client\'s message-reading patterns and response behaviour to send reminders and nudges at the moment they are most likely to see and act on them, maximising open rates and rebooking conversions.',
         },
         {
           title: 'Personalised Message Content',
           description:
-            'AI tailors message wording based on the client\'s communication history, preferences, and relationship stage — ensuring long-time regulars receive a different tone than first-time visitors.',
+            'AI tailors message wording based on the client\'s communication history, preferences, and relationship stage, ensuring long-time regulars receive a different tone than first-time visitors.',
         },
         {
           title: 'Churn Risk Detection',
           description:
-            'AI identifies clients who are showing signs of disengagement — longer gaps between visits, declining message responses — and triggers targeted re-engagement before they lapse entirely.',
+            'AI identifies clients who are showing signs of disengagement, longer gaps between visits, declining message responses, and triggers targeted re-engagement before they lapse entirely.',
         },
         {
           title: 'Aftercare Intelligence',
@@ -904,12 +904,12 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         question: 'Will my clients know the messages are automated?',
         answer:
-          'Messages are designed to feel personal, not robotic. They come from your name, reference the specific service performed, and use natural language. Clients experience them as thoughtful follow-ups from you — not system-generated notifications. You can also customise the tone and content to match your personal communication style.',
+          'Messages are designed to feel personal, not robotic. They come from your name, reference the specific service performed, and use natural language. Clients experience them as thoughtful follow-ups from you, not system-generated notifications. You can also customise the tone and content to match your personal communication style.',
       },
       {
         question: 'Which messaging channels does The Daisy support?',
         answer:
-          'The Daisy supports WhatsApp, SMS, and email — the three channels beauty clients use most. Each client\'s preferred channel is stored in their profile, and messages are sent accordingly. If a client does not respond on their primary channel, the system can fall back to an alternative.',
+          'The Daisy supports WhatsApp, SMS, and email, the three channels beauty clients use most. Each client\'s preferred channel is stored in their profile, and messages are sent accordingly. If a client does not respond on their primary channel, the system can fall back to an alternative.',
       },
       {
         question: 'Can I customise the aftercare messages for my services?',
@@ -929,12 +929,12 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         question: 'Will this work if I only have a small number of clients?',
         answer:
-          'Absolutely — in fact, automated communication is even more impactful when your client base is small, because every client matters more. Keeping 20 loyal clients rebooking consistently is worth more than acquiring 50 new ones who visit once. The Daisy ensures every client in your book feels valued and stays engaged.',
+          'Absolutely, in fact, automated communication is even more impactful when your client base is small, because every client matters more. Keeping 20 loyal clients rebooking consistently is worth more than acquiring 50 new ones who visit once. The Daisy ensures every client in your book feels valued and stays engaged.',
       },
       {
         question: 'How does The Daisy help me recover clients who stopped coming?',
         answer:
-          'The system automatically identifies clients who have exceeded their typical visit interval and sends a personalised re-engagement message — referencing their last service and offering a convenient way to rebook. This targeted outreach is far more effective than a generic promotional blast and recovers clients who would otherwise silently move on.',
+          'The system automatically identifies clients who have exceeded their typical visit interval and sends a personalised re-engagement message, referencing their last service and offering a convenient way to rebook. This targeted outreach is far more effective than a generic promotional blast and recovers clients who would otherwise silently move on.',
       },
     ],
 
@@ -955,9 +955,9 @@ export const professionalEntries1: FeatureDeepDive[] = [
     userType: 'professional',
 
     metaTitle:
-      'Personal Marketing for Beauty Professionals — Portfolio, Referrals, Reviews & Social Media | The Daisy',
+      'Personal Marketing for Beauty Professionals. Portfolio, Referrals, Reviews & Social Media | The Daisy',
     metaDescription:
-      'The Daisy helps beauty professionals build their personal brand with a portfolio showcase, automated referral programs, client review collection, and social media integration — turning your talent into a thriving independent career.',
+      'The Daisy helps beauty professionals build their personal brand with a portfolio showcase, automated referral programs, client review collection, and social media integration, turning your talent into a thriving independent career.',
     keywords: [
       'personal branding for beauty professionals',
       'portfolio website for stylists',
@@ -971,16 +971,16 @@ export const professionalEntries1: FeatureDeepDive[] = [
       'independent stylist marketing app',
     ],
 
-    heroTitle: 'Build Your Personal Brand — Turn Your Talent Into a Thriving Career',
+    heroTitle: 'Build Your Personal Brand. Turn Your Talent Into a Thriving Career',
     heroSubtitle:
-      'The Daisy gives you the marketing tools to showcase your work, collect client reviews, grow through referrals, and build an online presence — so your reputation works as hard as you do.',
+      'The Daisy gives you the marketing tools to showcase your work, collect client reviews, grow through referrals, and build an online presence, so your reputation works as hard as you do.',
     heroStat: {
       value: '60%',
       label: 'Of new clients come from referrals and reviews',
     },
 
     overview:
-      'Your talent is exceptional — but talent alone does not fill your calendar. The most successful independent beauty professionals combine outstanding service with a visible personal brand that attracts new clients and keeps existing ones loyal. Yet most freelancers lack the time, tools, or marketing knowledge to build that brand consistently. The Daisy\'s Personal Marketing tools give you everything you need to turn your work into your best advertisement — without becoming a marketing expert. Your professional portfolio showcases your best work with before-and-after galleries that clients can browse before booking. Automated review collection asks every satisfied client to leave a rating, building the social proof that convinces new clients to choose you. A built-in referral program rewards your clients for recommending you to friends, turning your happiest customers into your most effective salespeople. Social media integration connects your booking page to Instagram and other platforms, so followers become clients in one tap. And your presence on the Daisy marketplace puts you in front of new clients actively searching for beauty services in your area. Whether you are building independence as a freelancer or growing your reputation as a salon-based professional, The Daisy ensures your personal brand reflects the quality of your work. Every five-star review, every portfolio photo, and every referral compounds into a reputation that generates bookings while you sleep.',
+      'Your talent is exceptional, but talent alone does not fill your calendar. The most successful independent beauty professionals combine outstanding service with a visible personal brand that attracts new clients and keeps existing ones loyal. Yet most freelancers lack the time, tools, or marketing knowledge to build that brand consistently. The Daisy\'s Personal Marketing tools give you everything you need to turn your work into your best advertisement, without becoming a marketing expert. Your professional portfolio showcases your best work with before-and-after galleries that clients can browse before booking. Automated review collection asks every satisfied client to leave a rating, building the social proof that convinces new clients to choose you. A built-in referral program rewards your clients for recommending you to friends, turning your happiest customers into your most effective salespeople. Social media integration connects your booking page to Instagram and other platforms, so followers become clients in one tap. And your presence on the Daisy marketplace puts you in front of new clients actively searching for beauty services in your area. Whether you are building independence as a freelancer or growing your reputation as a salon-based professional, The Daisy ensures your personal brand reflects the quality of your work. Every five-star review, every portfolio photo, and every referral compounds into a reputation that generates bookings while you sleep.',
 
     keyCapabilities: [
       'Professional portfolio with before-and-after galleries and service showcases',
@@ -1000,13 +1000,13 @@ export const professionalEntries1: FeatureDeepDive[] = [
     ],
 
     growthOutcome:
-      'Professionals using The Daisy\'s marketing tools report a meaningful increase in new client bookings driven by reviews, referrals, and marketplace discovery — building a sustainable pipeline that reduces dependence on any single source of clients.',
+      'Professionals using The Daisy\'s marketing tools report a meaningful increase in new client bookings driven by reviews, referrals, and marketplace discovery, building a sustainable pipeline that reduces dependence on any single source of clients.',
 
     subFeatures: [
       {
         name: 'Professional Portfolio Showcase',
         description:
-          'A visual gallery on your Daisy profile and booking page where you showcase your best work. Upload before-and-after photos, categorise by service type, and let potential clients see the quality of your work before they book. Your portfolio is your strongest sales tool — it communicates your skill level, style, and range more powerfully than any description. The gallery is optimised for mobile viewing, loads fast, and is visible to anyone browsing the Daisy marketplace.',
+          'A visual gallery on your Daisy profile and booking page where you showcase your best work. Upload before-and-after photos, categorise by service type, and let potential clients see the quality of your work before they book. Your portfolio is your strongest sales tool, it communicates your skill level, style, and range more powerfully than any description. The gallery is optimised for mobile viewing, loads fast, and is visible to anyone browsing the Daisy marketplace.',
         howItWorks: [
           'Upload photos of your work directly from your phone, organised by service category.',
           'Add before-and-after comparisons to demonstrate transformation quality.',
@@ -1015,7 +1015,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
           'The gallery updates in real time, so your latest work is always visible.',
         ],
         keyBenefit:
-          'Let your work speak for itself — a compelling portfolio converts browsers into booked clients.',
+          'Let your work speak for itself, a compelling portfolio converts browsers into booked clients.',
       },
       {
         name: 'Automated Review Collection',
@@ -1024,7 +1024,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         howItWorks: [
           'An appointment is marked complete in the system.',
           'Within a configured timeframe, the client receives a review request via their preferred channel.',
-          'The client rates their experience and optionally writes a comment — all within the message thread.',
+          'The client rates their experience and optionally writes a comment, all within the message thread.',
           'The review appears on your public Daisy profile and booking page.',
           'You receive a notification and can respond to the review from your dashboard.',
         ],
@@ -1034,13 +1034,13 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         name: 'Client Referral Program',
         description:
-          'Turn your happiest clients into your marketing team. The built-in referral program gives each client a unique referral link or code to share with friends. When a referred friend books and completes an appointment, both the referrer and the new client receive a reward you define — a discount, a free add-on service, or account credit. The system tracks every referral automatically, so you never lose sight of who is bringing you new business.',
+          'Turn your happiest clients into your marketing team. The built-in referral program gives each client a unique referral link or code to share with friends. When a referred friend books and completes an appointment, both the referrer and the new client receive a reward you define, a discount, a free add-on service, or account credit. The system tracks every referral automatically, so you never lose sight of who is bringing you new business.',
         howItWorks: [
-          'You define the referral reward — discount percentage, free add-on service, or credit amount — for both referrer and new client.',
+          'You define the referral reward, discount percentage, free add-on service, or credit amount, for both referrer and new client.',
           'Each existing client receives a unique referral link or code through their automated messages.',
           'When a new client books using the referral link, the system tracks the connection.',
           'After the new client completes their first appointment, rewards are applied automatically to both parties.',
-          'Your dashboard shows referral activity — who referred whom, conversion rates, and total new clients from referrals.',
+          'Your dashboard shows referral activity, who referred whom, conversion rates, and total new clients from referrals.',
         ],
         keyBenefit:
           'Grow your client base through trusted personal recommendations with zero marketing spend.',
@@ -1048,7 +1048,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         name: 'Social Media Integration',
         description:
-          'Bridge the gap between your social media presence and your appointment book. Link your Instagram, TikTok, and other profiles directly to your Daisy booking page. Followers who admire your work can book with a single tap instead of navigating through DMs and message exchanges. Your booking link sits in your bio, your stories, and your posts — turning every piece of content into a potential booking.',
+          'Bridge the gap between your social media presence and your appointment book. Link your Instagram, TikTok, and other profiles directly to your Daisy booking page. Followers who admire your work can book with a single tap instead of navigating through DMs and message exchanges. Your booking link sits in your bio, your stories, and your posts, turning every piece of content into a potential booking.',
         howItWorks: [
           'Connect your social media profiles to The Daisy during setup.',
           'A direct booking link is generated for each platform, optimised for their link formats.',
@@ -1070,15 +1070,15 @@ export const professionalEntries1: FeatureDeepDive[] = [
           'Clients book directly from your marketplace listing without needing to contact you first.',
         ],
         keyBenefit:
-          'Get discovered by new clients actively looking for your services — no advertising required.',
+          'Get discovered by new clients actively looking for your services, no advertising required.',
       },
       {
         name: 'Promotional Campaigns',
         description:
           'Create targeted promotions to fill quiet periods, launch new services, or reward loyalty. Design seasonal offers, flash discounts, or new-service introductory rates and share them with your existing client base through automated messages. Promotions can be shared on social media with a direct booking link, and the system tracks redemption so you know exactly what works.',
         howItWorks: [
-          'Create a promotion with your offer details — discount type, eligible services, validity period, and any conditions.',
-          'Choose your audience — all clients, specific segments, or new clients only.',
+          'Create a promotion with your offer details, discount type, eligible services, validity period, and any conditions.',
+          'Choose your audience, all clients, specific segments, or new clients only.',
           'The promotion is sent via WhatsApp, SMS, or email and can be shared as a social media post.',
           'Clients book through the promotion link, and the discount is applied automatically.',
           'Your analytics dashboard shows redemption rates and revenue generated from each campaign.',
@@ -1093,7 +1093,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         step: 1,
         title: 'Build Your Portfolio',
         description:
-          'Upload your best work — before-and-after photos, service showcases, and transformations. Categorise by service type so potential clients can browse your specialities.',
+          'Upload your best work, before-and-after photos, service showcases, and transformations. Categorise by service type so potential clients can browse your specialities.',
       },
       {
         step: 2,
@@ -1105,7 +1105,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         step: 3,
         title: 'Connect Your Social Media',
         description:
-          'Link your Instagram and other profiles. Add your booking link to your bio and start sharing it in posts and stories — turning your social following into a booking pipeline.',
+          'Link your Instagram and other profiles. Add your booking link to your bio and start sharing it in posts and stories, turning your social following into a booking pipeline.',
       },
       {
         step: 4,
@@ -1117,14 +1117,14 @@ export const professionalEntries1: FeatureDeepDive[] = [
         step: 5,
         title: 'Track Growth and Optimise',
         description:
-          'Your marketing dashboard shows which channels drive the most bookings — referrals, reviews, social media, or marketplace. Double down on what works and refine your approach with real data.',
+          'Your marketing dashboard shows which channels drive the most bookings, referrals, reviews, social media, or marketplace. Double down on what works and refine your approach with real data.',
       },
     ],
 
     comparisonHighlights: [
       {
         area: 'Portfolio Visibility',
-        daisy: 'Professional gallery on your booking page, profile, and marketplace — visible to thousands',
+        daisy: 'Professional gallery on your booking page, profile, and marketplace, visible to thousands',
         typical: 'Scattered photos on Instagram with no direct path to booking',
       },
       {
@@ -1139,8 +1139,8 @@ export const professionalEntries1: FeatureDeepDive[] = [
       },
       {
         area: 'Social Media Conversion',
-        daisy: 'Direct booking link from social profiles — followers book in one tap',
-        typical: 'Followers must DM, wait for a reply, and negotiate a time — high drop-off',
+        daisy: 'Direct booking link from social profiles, followers book in one tap',
+        typical: 'Followers must DM, wait for a reply, and negotiate a time, high drop-off',
       },
       {
         area: 'New Client Discovery',
@@ -1150,7 +1150,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         area: 'Marketing Effort',
         daisy: 'Automated systems that work continuously with minimal ongoing input from you',
-        typical: 'All marketing depends on your personal time and effort — first thing dropped when busy',
+        typical: 'All marketing depends on your personal time and effort, first thing dropped when busy',
       },
     ],
 
@@ -1159,19 +1159,19 @@ export const professionalEntries1: FeatureDeepDive[] = [
         title: 'The Freelance Hairstylist Who Grew Through Reviews',
         businessType: 'Freelance Hairstylist',
         scenario:
-          'Maya had dozens of delighted clients but only two online reviews because she felt awkward asking in person. After enabling The Daisy\'s automated review collection, every client received a friendly post-appointment message inviting them to rate their experience. Within three months, Maya had accumulated enough five-star reviews to become one of the top-rated stylists on the Daisy marketplace — and new clients started booking based on those reviews alone.',
+          'Maya had dozens of delighted clients but only two online reviews because she felt awkward asking in person. After enabling The Daisy\'s automated review collection, every client received a friendly post-appointment message inviting them to rate their experience. Within three months, Maya had accumulated enough five-star reviews to become one of the top-rated stylists on the Daisy marketplace, and new clients started booking based on those reviews alone.',
       },
       {
         title: 'The Independent Esthetician Whose Clients Became Her Sales Team',
         businessType: 'Independent Esthetician',
         scenario:
-          'Lina activated The Daisy\'s referral program offering a small discount to both the referrer and the new client. Her loyal clients started sharing their referral links with friends, and within two months a meaningful portion of her new bookings came from referrals. The system tracked everything automatically — Lina did not have to manage a single referral manually.',
+          'Lina activated The Daisy\'s referral program offering a small discount to both the referrer and the new client. Her loyal clients started sharing their referral links with friends, and within two months a meaningful portion of her new bookings came from referrals. The system tracked everything automatically. Lina did not have to manage a single referral manually.',
       },
       {
         title: 'The Mobile Nail Technician Who Converted Instagram Followers',
         businessType: 'Mobile Nail Technician',
         scenario:
-          'Yara had a growing Instagram following who loved her nail art, but converting followers into clients was a struggle — DM conversations often stalled before a booking was confirmed. After adding her Daisy booking link to her Instagram bio and stories, followers could book directly in one tap. Her social media went from a showcase to a genuine booking channel, and she started filling previously quiet weekdays with clients who discovered her online.',
+          'Yara had a growing Instagram following who loved her nail art, but converting followers into clients was a struggle. DM conversations often stalled before a booking was confirmed. After adding her Daisy booking link to her Instagram bio and stories, followers could book directly in one tap. Her social media went from a showcase to a genuine booking channel, and she started filling previously quiet weekdays with clients who discovered her online.',
       },
     ],
 
@@ -1180,7 +1180,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         category: 'Booking Management',
         slug: 'booking-management',
         benefit:
-          'Every marketing touchpoint — portfolio, reviews, referrals, social links, marketplace — connects directly to your booking page for seamless client conversion.',
+          'Every marketing touchpoint, portfolio, reviews, referrals, social links, marketplace, connects directly to your booking page for seamless client conversion.',
       },
       {
         category: 'Client Communication',
@@ -1198,7 +1198,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         category: 'Analytics & Reports',
         slug: 'analytics-reports',
         benefit:
-          'Marketing performance data — referral conversions, review scores, promotional redemption, marketplace discovery — feeds into your analytics for clear ROI visibility.',
+          'Marketing performance data, referral conversions, review scores, promotional redemption, marketplace discovery, feeds into your analytics for clear ROI visibility.',
       },
     ],
 
@@ -1207,17 +1207,17 @@ export const professionalEntries1: FeatureDeepDive[] = [
         {
           title: 'Smart Review Timing',
           description:
-            'AI determines the optimal moment to request a review from each client — based on their satisfaction signals, visit frequency, and communication patterns — maximising the likelihood of a positive, detailed response.',
+            'AI determines the optimal moment to request a review from each client, based on their satisfaction signals, visit frequency, and communication patterns, maximising the likelihood of a positive, detailed response.',
         },
         {
           title: 'Referral Opportunity Detection',
           description:
-            'AI identifies clients who are most likely to refer successfully — based on their engagement level, social connectivity, and loyalty patterns — and prioritises referral program messaging to those high-potential advocates.',
+            'AI identifies clients who are most likely to refer successfully, based on their engagement level, social connectivity, and loyalty patterns, and prioritises referral program messaging to those high-potential advocates.',
         },
         {
           title: 'Promotion Performance Prediction',
           description:
-            'AI analyses past promotional campaigns and client behaviour to predict which offers will perform best, which audience segments to target, and when to launch — reducing guesswork and improving return on every promotion.',
+            'AI analyses past promotional campaigns and client behaviour to predict which offers will perform best, which audience segments to target, and when to launch, reducing guesswork and improving return on every promotion.',
         },
         {
           title: 'Portfolio Optimisation',
@@ -1231,17 +1231,17 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         question: 'How does The Daisy help me get more client reviews?',
         answer:
-          'After every completed appointment, The Daisy automatically sends your client a friendly message inviting them to leave a review. The process takes under a minute and happens through WhatsApp, SMS, or email — whichever the client prefers. This removes the awkwardness of asking in person and dramatically increases the number of reviews you receive.',
+          'After every completed appointment, The Daisy automatically sends your client a friendly message inviting them to leave a review. The process takes under a minute and happens through WhatsApp, SMS, or email, whichever the client prefers. This removes the awkwardness of asking in person and dramatically increases the number of reviews you receive.',
       },
       {
         question: 'How does the referral program work?',
         answer:
-          'You set a reward for both the referrer and the new client — such as a discount or free add-on service. Each client gets a unique referral link shared through their automated messages. When a friend books and completes an appointment using the link, both parties receive their reward automatically. You can track all referral activity in your dashboard.',
+          'You set a reward for both the referrer and the new client, such as a discount or free add-on service. Each client gets a unique referral link shared through their automated messages. When a friend books and completes an appointment using the link, both parties receive their reward automatically. You can track all referral activity in your dashboard.',
       },
       {
         question: 'Can I connect my Instagram to my booking page?',
         answer:
-          'Yes. The Daisy generates a booking link optimised for social media profiles. Add it to your Instagram bio, link-in-bio page, or story swipe-ups. Followers tap the link and land on your professional booking page where they can browse services and book instantly — no DMs required.',
+          'Yes. The Daisy generates a booking link optimised for social media profiles. Add it to your Instagram bio, link-in-bio page, or story swipe-ups. Followers tap the link and land on your professional booking page where they can browse services and book instantly, no DMs required.',
       },
       {
         question: 'What is the Daisy marketplace and how does it help me?',
@@ -1261,7 +1261,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         question: 'How do I know which marketing channels are working best for me?',
         answer:
-          'Your Daisy dashboard shows exactly where your new clients come from — referrals, marketplace discovery, social media links, or direct bookings. You can see which channels drive the most bookings and the highest-value clients, allowing you to focus your energy on what actually grows your business.',
+          'Your Daisy dashboard shows exactly where your new clients come from, referrals, marketplace discovery, social media links, or direct bookings. You can see which channels drive the most bookings and the highest-value clients, allowing you to focus your energy on what actually grows your business.',
       },
     ],
 

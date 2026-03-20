@@ -1,5 +1,5 @@
 // ---------------------------------------------------------------------------
-// Pillar Pages — Data Layer
+// Pillar Pages. Data Layer
 // 11 SEO authority pages (4,000-5,000 words each) targeting high-volume
 // industry keywords. Each page anchors a topic cluster.
 // ---------------------------------------------------------------------------
@@ -36,7 +36,7 @@ export interface PillarPageData {
   readingTime: string; // e.g. '18 min read'
   lastUpdated: string; // ISO date: YYYY-MM-DDTHH:mm:ss.sssZ
 
-  // GEO — answer block for AI citation
+  // GEO, answer block for AI citation
   keyTakeaways: string[];
 
   // Content
@@ -54,7 +54,7 @@ export interface PillarPageData {
 }
 
 // ---------------------------------------------------------------------------
-// Registry — import each pillar data file
+// Registry, import each pillar data file
 // ---------------------------------------------------------------------------
 import { salonManagementSoftware } from './salon-management-software';
 import { freelanceBeautyProfessionalGuide } from './freelance-beauty-professional-guide';

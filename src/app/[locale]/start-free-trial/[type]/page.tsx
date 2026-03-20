@@ -12,14 +12,14 @@ const VALID_TYPES: TrialType[] = ['business', 'professional'];
 const metadataByType: Record<TrialType, { en: { title: string; description: string } }> = {
   business: {
     en: {
-      title: 'Start Your Free Trial — Salon, Spa & Clinic Management | The Daisy',
+      title: 'Start Your Free Trial. Salon, Spa & Clinic Management | The Daisy',
       description:
         'Set up your beauty business on The Daisy in minutes. 14-day free trial with full access to AI receptionist, booking, payments, marketing, and staff management. No credit card required.',
     },
   },
   professional: {
     en: {
-      title: 'Start Your Free Trial — Beauty Professional App | The Daisy',
+      title: 'Start Your Free Trial. Beauty Professional App | The Daisy',
       description:
         'Create your professional profile on The Daisy and start accepting bookings. Free to join with flexible scheduling and 24/7 AI support.',
     },

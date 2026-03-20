@@ -9,7 +9,7 @@ interface SwitchingCTAProps {
 
 const defaultReasons = [
   'Free migration support to get you started',
-  'No lock-in contracts — cancel anytime',
+  'No lock-in contracts, cancel anytime',
   'AI receptionist live from day one',
   'Dedicated onboarding team for a smooth transition',
 ];

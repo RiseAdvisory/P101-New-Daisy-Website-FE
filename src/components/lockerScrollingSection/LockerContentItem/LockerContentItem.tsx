@@ -81,13 +81,10 @@ const LockerContentItem = forwardRef(
               {listSub?.map((items: any, index: number) => {
                 return (
                   <motion.li key={index} variants={item}>
-                    <Button
-                      variant="navigation"
-                      className="!w-full justify-start mt-4 font-semibold text-base text-[#D5D9D9]"
-                    >
+                    <span className="flex items-center w-full mt-4 font-semibold text-base text-[#D5D9D9]">
                       <CheckIcon className="mr-2 rtl:mr-0 rtl:ml-2" />
                       {items}
-                    </Button>
+                    </span>
                   </motion.li>
                 );
               })}

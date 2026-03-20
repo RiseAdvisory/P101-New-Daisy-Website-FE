@@ -38,6 +38,7 @@ export interface HeroData {
   subHeadline: string;
   ctaText: string;
   ctaLink: string;
+  trustLine?: string;
   answerBlock?: {
     question: string;
     answer: string;
@@ -58,12 +59,51 @@ export interface PlatformStrengthsData {
   }>;
 }
 
+export interface HowItWorksStep {
+  title: string;
+  description: string;
+}
+
+export interface HowItWorksData {
+  steps: HowItWorksStep[];
+}
+
+export interface PricingHookData {
+  headline: string;
+  body: string;
+  ctaText: string;
+  ctaLink: string;
+  pricingLinkText: string;
+  pricingLinkHref: string;
+}
+
+export interface InlineCTAData {
+  headline: string;
+  ctaText: string;
+  ctaLink: string;
+  secondaryLinkText?: string;
+  secondaryLinkHref?: string;
+}
+
+export interface SocialProofStat {
+  value: string;
+  context: string;
+}
+
 export interface LandingPageContent {
   hero?: HeroData;
-  platformStrengths?: PlatformStrengthsData;
-  titleFraque: string;
-  growth: GrowthData;
   scrollSections: LocalScrollSection[];
+  platformStrengths?: PlatformStrengthsData;
+  socialProofStats?: SocialProofStat[];
+  howItWorks?: HowItWorksData;
+  pricingHook?: PricingHookData;
+  inlineCtas?: {
+    afterScroll: InlineCTAData;
+    afterFeatures: InlineCTAData;
+  };
+  titleFraque: string;
+  /** @deprecated Used by customer page only. Removed from business/professional in V2 redesign. */
+  growth?: GrowthData;
   fallbackFaqs?: FaqItem[];
 }
 

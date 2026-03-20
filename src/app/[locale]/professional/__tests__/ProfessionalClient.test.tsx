@@ -34,23 +34,22 @@ jest.mock('@/components/businessPage/BecomeFormPartner', () => ({
   ),
 }));
 
-jest.mock('@/components/experienceDaisy/ExperienceDaisy', () => ({
-  ExperienceDaisy: () => <div data-testid="experience-daisy">Experience</div>,
+jest.mock('@/components/shared/InlineCTA', () => ({
+  InlineCTA: ({ headline }: { headline: string }) => (
+    <div data-testid="inline-cta">{headline}</div>
+  ),
 }));
 
-jest.mock('@/components/businessPage/GrowthSection', () => ({
-  GrowthSection: ({
-    title,
-    description,
-  }: {
-    title: string;
-    description: string;
-  }) => (
-    <div data-testid="growth-section">
-      <span data-testid="growth-title">{title}</span>
-      <span data-testid="growth-description">{description}</span>
-    </div>
-  ),
+jest.mock('@/components/shared/SocialProofBar', () => ({
+  SocialProofBar: () => <div data-testid="social-proof-bar">Social Proof</div>,
+}));
+
+jest.mock('@/components/shared/HowItWorks', () => ({
+  HowItWorks: () => <div data-testid="how-it-works">How It Works</div>,
+}));
+
+jest.mock('@/components/shared/PricingHook', () => ({
+  PricingHook: () => <div data-testid="pricing-hook">Pricing Hook</div>,
 }));
 
 jest.mock('@/components/shared/MobileScrollSection', () => ({
@@ -90,7 +89,7 @@ describe('ProfessionalClient', () => {
     render(<ProfessionalClient lang="en" />);
 
     await waitFor(() => {
-      expect(screen.getByTestId('growth-section')).toBeInTheDocument();
+      expect(screen.getByTestId('how-it-works')).toBeInTheDocument();
     });
   });
 
@@ -118,8 +117,11 @@ describe('ProfessionalClient', () => {
     await waitFor(() => {
       expect(screen.getByTestId('locker-container')).toBeInTheDocument();
       expect(screen.getByTestId('mobile-scroll-section')).toBeInTheDocument();
-      expect(screen.getByTestId('growth-section')).toBeInTheDocument();
-      expect(screen.getByTestId('experience-daisy')).toBeInTheDocument();
+      expect(screen.getAllByTestId('inline-cta').length).toBeGreaterThanOrEqual(1);
+      expect(screen.getByTestId('social-proof-bar')).toBeInTheDocument();
+      expect(screen.getByTestId('how-it-works')).toBeInTheDocument();
+      expect(screen.getByTestId('pricing-hook')).toBeInTheDocument();
+      expect(screen.getByTestId('platform-strengths')).toBeInTheDocument();
       expect(screen.getByTestId('qa-section')).toBeInTheDocument();
       expect(screen.getByTestId('become-partner')).toBeInTheDocument();
     });

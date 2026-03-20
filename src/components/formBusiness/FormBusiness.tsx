@@ -516,7 +516,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
         <Button
           type="submit"
           disabled={isSubmit}
-          className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary hover:text-white ltr:font-montserrat font-semibold md:h-auto"
+          className="bg-primary text-white border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-white hover:text-primary ltr:font-montserrat font-semibold md:h-auto"
         >
           {isSubmit ? 'Sending...' : buttonText || `${textForm?.buttonText}`}
         </Button>

@@ -1,5 +1,5 @@
 // =============================================================================
-// WS1: Tier 1 Competitors — Deep Research (Full 10-Dimension Analysis)
+// WS1: Tier 1 Competitors. Deep Research (Full 10-Dimension Analysis)
 // Last updated: March 2026
 // =============================================================================
 
@@ -146,7 +146,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Business management software with the world\'s largest beauty marketplace built in',
       targetAudience:
         'Independent beauty professionals and small salon owners who want affordable software with marketplace exposure',
-      toneAndVoice: 'Simple, direct, accessible — emphasizes ease of use and marketplace reach',
+      toneAndVoice: 'Simple, direct, accessible, emphasizes ease of use and marketplace reach',
       keyMessages: [
         'Affordable plans starting at $9.95/mo',
         '450M+ appointments booked',
@@ -207,7 +207,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     },
 
     daisyAdvantages: [
-      '24/7 AI receptionist vs no AI — Daisy handles calls, bookings, and payments automatically',
+      '24/7 AI receptionist vs no AI. Daisy handles calls, bookings, and payments automatically',
       '360° customer acquisition (marketplace + cashback + AI marketing) vs marketplace-only discovery',
       'Native Arabic UI with equal Arabic/English priority vs English-only platform',
       'Full brand control and white-labeling vs Fresha-branded experience',
@@ -220,7 +220,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'Tired of paying 20% commission on marketplace bookings',
       'Need Arabic language support for GCC clients',
       'Want AI to handle after-hours calls and bookings',
-      'Need more than basic marketing — want proactive customer acquisition',
+      'Need more than basic marketing, want proactive customer acquisition',
       'Want full brand control instead of Fresha-branded booking pages',
       'Need local payment methods and VAT compliance for GCC',
       'Frustrated by Fresha removing free features and adding fees',
@@ -236,11 +236,11 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     competitorWeaknesses: [
       'No AI capabilities (receptionist, chatbot, or smart scheduling)',
-      'No Arabic UI — English only',
+      'No Arabic UI. English only',
       'Subscription fees plus transaction fees and marketplace commissions add up quickly',
       'Basic marketing tools (no AI, no CRM automation)',
-      'No white-labeling — all customer-facing pages are Fresha-branded',
-      'Limited GCC presence — no local compliance, payment methods, or support',
+      'No white-labeling, all customer-facing pages are Fresha-branded',
+      'Limited GCC presence, no local compliance, payment methods, or support',
       'Recent pricing changes causing partner dissatisfaction',
     ],
 
@@ -253,12 +253,12 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Daisy compare to Fresha for salon management?',
         answer:
-          'While Fresha focuses on basic operations with a marketplace, Daisy provides a complete growth platform. Daisy includes an AI receptionist that handles bookings 24/7, proactive customer acquisition through cashback and AI-powered marketing, full brand control with white-labeling, and native Arabic/English support — features Fresha doesn\'t offer.',
+          'While Fresha focuses on basic operations with a marketplace, Daisy provides a complete growth platform. Daisy includes an AI receptionist that handles bookings 24/7, proactive customer acquisition through cashback and AI-powered marketing, full brand control with white-labeling, and native Arabic/English support, features Fresha doesn\'t offer.',
       },
       {
         question: 'Can I switch from Fresha to Daisy?',
         answer:
-          'Yes — Fresha has no contracts or lock-in periods. Daisy offers migration support to help transfer your client database, service menu, and booking history. Most businesses complete the switch within a week with zero downtime.',
+          'Yes. Fresha has no contracts or lock-in periods. Daisy offers migration support to help transfer your client database, service menu, and booking history. Most businesses complete the switch within a week with zero downtime.',
       },
       {
         question: 'Does Fresha work in the Middle East?',
@@ -268,7 +268,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Is Fresha really free to use?',
         answer:
-          'No — Fresha dropped its free plan. It now charges monthly subscriptions starting at $9.95/mo, plus 2.19% + $0.20 per card transaction, 20% commission on new marketplace clients, and per-message fees for marketing. The "free" branding is outdated. Daisy offers transparent all-inclusive pricing with no hidden commissions or per-message charges.',
+          'No. Fresha dropped its free plan. It now charges monthly subscriptions starting at $9.95/mo, plus 2.19% + $0.20 per card transaction, 20% commission on new marketplace clients, and per-message fees for marketing. The "free" branding is outdated. Daisy offers transparent all-inclusive pricing with no hidden commissions or per-message charges.',
       },
       {
         question: 'What are the hidden costs of using Fresha?',
@@ -278,28 +278,28 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How hard is it to migrate my data from Fresha?',
         answer:
-          'Fresha allows you to export client data and appointment history, though the process isn\'t always seamless. Daisy provides dedicated migration support — our team handles the data transfer of your client database, service menu, staff schedules, and booking history. Most businesses complete the switch within a week with zero downtime.',
+          'Fresha allows you to export client data and appointment history, though the process isn\'t always seamless. Daisy provides dedicated migration support, our team handles the data transfer of your client database, service menu, staff schedules, and booking history. Most businesses complete the switch within a week with zero downtime.',
       },
       {
         question: 'Does Fresha have AI features like Daisy?',
         answer:
-          'Fresha announced an AI receptionist for 2026 but it\'s not yet available. Currently, Fresha has no AI-powered features for marketing, scheduling optimization, or customer engagement. Daisy\'s AI receptionist is live today — handling bookings, payments, and customer service 24/7 in both Arabic and English.',
+          'Fresha announced an AI receptionist for 2026 but it\'s not yet available. Currently, Fresha has no AI-powered features for marketing, scheduling optimization, or customer engagement. Daisy\'s AI receptionist is live today, handling bookings, payments, and customer service 24/7 in both Arabic and English.',
       },
       {
         question: 'How good is the Fresha mobile app?',
         answer:
-          'Fresha\'s consumer app is well-designed for discovery and booking, but the business app has mixed reviews — salon owners report issues with notification reliability, limited offline functionality, and a cluttered interface as features have been added. Daisy\'s business app is purpose-built for salon operations with an intuitive interface and reliable push notifications.',
+          'Fresha\'s consumer app is well-designed for discovery and booking, but the business app has mixed reviews, salon owners report issues with notification reliability, limited offline functionality, and a cluttered interface as features have been added. Daisy\'s business app is purpose-built for salon operations with an intuitive interface and reliable push notifications.',
       },
       {
         question: 'Can I reach Fresha customer support quickly?',
         answer:
-          'Fresha offers email and in-app chat support, but many users report slow response times — especially since the transition away from the free model increased their support volume. There\'s no phone support. Daisy provides dedicated account management, live chat, and phone support with priority response for all plan levels.',
+          'Fresha offers email and in-app chat support, but many users report slow response times, especially since the transition away from the free model increased their support volume. There\'s no phone support. Daisy provides dedicated account management, live chat, and phone support with priority response for all plan levels.',
       },
     ],
 
     lastResearched: '2026-03-13',
     notes:
-      'No longer free — now charges monthly subscriptions on top of transaction fees, causing partner backlash. AI receptionist announced for 2026 but not yet available. Key vulnerability: no Arabic support and compounding costs (subscription + transaction fees + commissions).',
+      'No longer free, now charges monthly subscriptions on top of transaction fees, causing partner backlash. AI receptionist announced for 2026 but not yet available. Key vulnerability: no Arabic support and compounding costs (subscription + transaction fees + commissions).',
   },
 
   // ---------------------------------------------------------------------------
@@ -538,22 +538,22 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Daisy compare to Booksy?',
         answer:
-          'Booksy is a mobile-first booking app with a consumer marketplace, while Daisy is a complete growth platform. Daisy offers a full AI ecosystem (receptionist, chatbot, smart scheduling, marketing), native Arabic/English support, customer acquisition through cashback rewards, and full brand control — capabilities Booksy doesn\'t provide.',
+          'Booksy is a mobile-first booking app with a consumer marketplace, while Daisy is a complete growth platform. Daisy offers a full AI ecosystem (receptionist, chatbot, smart scheduling, marketing), native Arabic/English support, customer acquisition through cashback rewards, and full brand control, capabilities Booksy doesn\'t provide.',
       },
       {
         question: 'Is Booksy good for salons in the Middle East?',
         answer:
-          'Booksy has zero GCC presence — no Arabic interface, no local payment methods, and no regional compliance. For Middle East salons, Daisy is purpose-built with native Arabic UI, local payment integration, and full GCC compliance across UAE, KSA, Kuwait, Bahrain, Oman, and Qatar.',
+          'Booksy has zero GCC presence, no Arabic interface, no local payment methods, and no regional compliance. For Middle East salons, Daisy is purpose-built with native Arabic UI, local payment integration, and full GCC compliance across UAE, KSA, Kuwait, Bahrain, Oman, and Qatar.',
       },
       {
         question: 'What is Booksy\'s Digital Doorman?',
         answer:
-          'Digital Doorman is Booksy\'s AI voice receptionist that answers phone calls and directs callers to online booking. However, it\'s limited to call routing only — it can\'t process payments, answer detailed questions, or provide 24/7 customer service. Daisy\'s AI receptionist handles calls, bookings, payments, and customer service in both Arabic and English.',
+          'Digital Doorman is Booksy\'s AI voice receptionist that answers phone calls and directs callers to online booking. However, it\'s limited to call routing only, it can\'t process payments, answer detailed questions, or provide 24/7 customer service. Daisy\'s AI receptionist handles calls, bookings, payments, and customer service in both Arabic and English.',
       },
       {
         question: 'Can I switch from Booksy to Daisy?',
         answer:
-          'Yes — Booksy has no long-term contracts. Daisy provides migration support to transfer your client data, service menu, and booking history. The switch typically takes less than a week.',
+          'Yes. Booksy has no long-term contracts. Daisy provides migration support to transfer your client data, service menu, and booking history. The switch typically takes less than a week.',
       },
       {
         question: 'How much does Booksy cost per month?',
@@ -563,12 +563,12 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Booksy support Arabic or work well in the Gulf region?',
         answer:
-          'Booksy has zero presence in the GCC — no Arabic language support, no local payment integration, and no regional compliance features. If you operate in the UAE, Saudi Arabia, Kuwait, or any Gulf country, Daisy is purpose-built with native Arabic UI, local payment methods, and full VAT compliance across all six GCC markets.',
+          'Booksy has zero presence in the GCC, no Arabic language support, no local payment integration, and no regional compliance features. If you operate in the UAE, Saudi Arabia, Kuwait, or any Gulf country, Daisy is purpose-built with native Arabic UI, local payment methods, and full VAT compliance across all six GCC markets.',
       },
       {
         question: 'How does Booksy\'s AI compare to Daisy\'s AI receptionist?',
         answer:
-          'Booksy\'s Digital Doorman answers phone calls and redirects callers to online booking — it\'s essentially a call router. It can\'t process payments, answer detailed service questions, or manage complex booking requests. Daisy\'s AI receptionist handles the full customer journey: answering questions, booking appointments, processing payments, and following up — all 24/7 in both Arabic and English.',
+          'Booksy\'s Digital Doorman answers phone calls and redirects callers to online booking, it\'s essentially a call router. It can\'t process payments, answer detailed service questions, or manage complex booking requests. Daisy\'s AI receptionist handles the full customer journey: answering questions, booking appointments, processing payments, and following up, all 24/7 in both Arabic and English.',
       },
       {
         question: 'Is the Booksy app good for salon owners?',
@@ -583,7 +583,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Booksy integrate with other business tools I use?',
         answer:
-          'Booksy offers limited integrations — primarily Google Calendar sync, basic social media booking links, and their own payment processing. There\'s no open API for custom integrations. Daisy provides broader integration capabilities including Google Calendar sync, social media, payment gateways, and API access for connecting with your existing business tools.',
+          'Booksy offers limited integrations, primarily Google Calendar sync, basic social media booking links, and their own payment processing. There\'s no open API for custom integrations. Daisy provides broader integration capabilities including Google Calendar sync, social media, payment gateways, and API access for connecting with your existing business tools.',
       },
     ],
 
@@ -796,7 +796,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     ],
 
     daisySwitchingReasons: [
-      'Chatbot can\'t actually book appointments — need real AI that converts',
+      'Chatbot can\'t actually book appointments, need real AI that converts',
       'Per-calendar add-on pricing adds up with growing team',
       'No Arabic support for Middle East expansion',
       'Want AI-driven marketing, not just email/text blasts',
@@ -838,12 +838,12 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Can Vagaro\'s AI chatbot book appointments?',
         answer:
-          'No — Vagaro\'s chatbot can answer basic questions about your business but cannot book appointments or process payments. For autonomous booking capability, Daisy\'s AI receptionist handles the full booking flow including payment collection, 24/7 in both Arabic and English.',
+          'No. Vagaro\'s chatbot can answer basic questions about your business but cannot book appointments or process payments. For autonomous booking capability, Daisy\'s AI receptionist handles the full booking flow including payment collection, 24/7 in both Arabic and English.',
       },
       {
         question: 'Can I switch from Vagaro to Daisy?',
         answer:
-          'Yes — Vagaro has no contracts and offers data export. Daisy provides migration support to transfer client data, appointment history, and service menus. Most businesses transition within a week.',
+          'Yes. Vagaro has no contracts and offers data export. Daisy provides migration support to transfer client data, appointment history, and service menus. Most businesses transition within a week.',
       },
       {
         question: 'What are the hidden fees with Vagaro?',
@@ -858,7 +858,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Vagaro have real AI features?',
         answer:
-          'Vagaro offers a basic AI chatbot that can answer questions about your business, but it cannot book appointments, process payments, or handle complex customer requests autonomously. There\'s no AI-powered marketing, scheduling optimization, or predictive analytics. Daisy\'s AI receptionist handles the full booking flow including payments, plus AI-driven marketing campaigns and smart scheduling — all included in the base plan.',
+          'Vagaro offers a basic AI chatbot that can answer questions about your business, but it cannot book appointments, process payments, or handle complex customer requests autonomously. There\'s no AI-powered marketing, scheduling optimization, or predictive analytics. Daisy\'s AI receptionist handles the full booking flow including payments, plus AI-driven marketing campaigns and smart scheduling, all included in the base plan.',
       },
       {
         question: 'How good is the Vagaro mobile app for business owners?',
@@ -879,7 +879,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     lastResearched: '2026-03-13',
     notes:
-      'Best value among Tier 1 competitors at $30/mo. Schedulicity acquisition (Jan 2025) expanded marketplace. AI chatbot is limited — can\'t book. Key vulnerability: no real AI, no internationalization.',
+      'Best value among Tier 1 competitors at $30/mo. Schedulicity acquisition (Jan 2025) expanded marketplace. AI chatbot is limited, can\'t book. Key vulnerability: no real AI, no internationalization.',
   },
 
   // ---------------------------------------------------------------------------
@@ -1139,11 +1139,11 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     competitorWeaknesses: [
       'Most expensive option ($139-699/mo + add-ons)',
-      'No native AI — Messenger[ai] is expensive add-on',
+      'No native AI. Messenger[ai] is expensive add-on',
       'Annual contracts with termination fees',
       'Declining review ratings (4.0 Capterra, 3.6 G2)',
       'No Arabic or GCC support',
-      'Fitness-focused — beauty is secondary',
+      'Fitness-focused, beauty is secondary',
       'Complex pricing makes true cost hard to predict',
       'Slow to innovate under PE ownership',
     ],
@@ -1157,7 +1157,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Daisy compare to Mindbody?',
         answer:
-          'Mindbody has the largest marketplace but charges premium prices with AI as a costly add-on. Daisy includes AI receptionist, marketing, and analytics in the base platform with no contracts. For beauty businesses, Daisy is purpose-built with Arabic support, white-labeling, and cashback rewards — features Mindbody doesn\'t offer.',
+          'Mindbody has the largest marketplace but charges premium prices with AI as a costly add-on. Daisy includes AI receptionist, marketing, and analytics in the base platform with no contracts. For beauty businesses, Daisy is purpose-built with Arabic support, white-labeling, and cashback rewards, features Mindbody doesn\'t offer.',
       },
       {
         question: 'Is Mindbody good for beauty salons?',
@@ -1182,7 +1182,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Mindbody have real AI or is it just marketing?',
         answer:
-          'Mindbody\'s AI capabilities come through its acquisition of Messenger[ai], which provides an AI front desk for call answering and basic booking. However, it\'s a paid add-on (~$199/mo) and is not deeply integrated into the platform. Mindbody has no AI-powered marketing, scheduling optimization, or predictive analytics in its core product. Daisy includes a full AI suite — receptionist, marketing, and smart scheduling — in the base plan.',
+          'Mindbody\'s AI capabilities come through its acquisition of Messenger[ai], which provides an AI front desk for call answering and basic booking. However, it\'s a paid add-on (~$199/mo) and is not deeply integrated into the platform. Mindbody has no AI-powered marketing, scheduling optimization, or predictive analytics in its core product. Daisy includes a full AI suite, receptionist, marketing, and smart scheduling, in the base plan.',
       },
       {
         question: 'How hard is it to move my data out of Mindbody?',
@@ -1192,12 +1192,12 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Is the Mindbody app reliable for salon management?',
         answer:
-          'Mindbody\'s consumer app (for finding and booking) is well-known with millions of downloads. However, the business management app has seen declining review scores — salon owners report a dated interface, slow performance, and features that feel more geared toward fitness studios than beauty businesses. Daisy\'s app is purpose-built for beauty and wellness with a modern interface and fast performance.',
+          'Mindbody\'s consumer app (for finding and booking) is well-known with millions of downloads. However, the business management app has seen declining review scores, salon owners report a dated interface, slow performance, and features that feel more geared toward fitness studios than beauty businesses. Daisy\'s app is purpose-built for beauty and wellness with a modern interface and fast performance.',
       },
       {
         question: 'Can Mindbody handle multi-location salon chains?',
         answer:
-          'Yes — multi-location management is one of Mindbody\'s strengths, especially at higher pricing tiers. However, this comes at significant cost ($419-$699/mo per location), and some chains report that cross-location reporting requires manual consolidation. Daisy supports multi-branch operations with centralized dashboards, unified client records, and cross-location analytics at a more accessible price point.',
+          'Yes, multi-location management is one of Mindbody\'s strengths, especially at higher pricing tiers. However, this comes at significant cost ($419-$699/mo per location), and some chains report that cross-location reporting requires manual consolidation. Daisy supports multi-branch operations with centralized dashboards, unified client records, and cross-location analytics at a more accessible price point.',
       },
     ],
 
@@ -1274,7 +1274,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         },
       ],
       hiddenCosts: [
-        'Custom pricing requires sales call — no transparency',
+        'Custom pricing requires sales call, no transparency',
         'Implementation and onboarding fees',
         'Per-location pricing for multi-site businesses',
         'Advanced AI features may be in higher tiers',
@@ -1306,7 +1306,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: true,
       hasAiPricing: true,
       aiDescription:
-        'Most comprehensive AI suite: 6 AI agents — phone receptionist, marketing campaigns, review management, scheduling optimization, analytics/insights, and staff recommendations. AI-first approach with continuous investment.',
+        'Most comprehensive AI suite: 6 AI agents, phone receptionist, marketing campaigns, review management, scheduling optimization, analytics/insights, and staff recommendations. AI-first approach with continuous investment.',
     },
 
     targetMarket:
@@ -1419,9 +1419,9 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     daisySwitchingReasons: [
       'Enterprise pricing too expensive for small-medium businesses',
-      'Need Arabic UI — Zenoti has GCC offices but English-only platform',
+      'Need Arabic UI. Zenoti has GCC offices but English-only platform',
       'Locked into annual contract and want flexibility',
-      'Don\'t need enterprise complexity — want simpler, faster setup',
+      'Don\'t need enterprise complexity, want simpler, faster setup',
       'Want consumer-facing marketplace and cashback for acquisition',
       'Need transparent pricing without sales calls',
     ],
@@ -1436,7 +1436,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     ],
 
     competitorWeaknesses: [
-      'No Arabic UI despite GCC presence — English only',
+      'No Arabic UI despite GCC presence. English only',
       'Enterprise pricing excludes SMBs',
       'Opaque pricing requires sales calls',
       'Annual contracts with lock-in',
@@ -1465,7 +1465,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Can I switch from Zenoti to Daisy?',
         answer:
-          'Zenoti typically has annual contracts — check your agreement for terms. When your contract allows, Daisy provides dedicated migration support for enterprise clients, including data transfer, parallel run periods, and staff training. The transition is typically faster than Zenoti\'s initial implementation.',
+          'Zenoti typically has annual contracts, check your agreement for terms. When your contract allows, Daisy provides dedicated migration support for enterprise clients, including data transfer, parallel run periods, and staff training. The transition is typically faster than Zenoti\'s initial implementation.',
       },
       {
         question: 'How much does Zenoti really cost?',
@@ -1475,7 +1475,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Is Zenoti too complex for small or mid-size salons?',
         answer:
-          'Zenoti is built for enterprise and multi-location businesses, and its complexity reflects that. Small and mid-size salons often find the implementation lengthy (weeks to months), the learning curve steep, and the feature set overwhelming. Daisy is designed to be powerful yet accessible — AI-powered features without the enterprise complexity, suitable for single-location salons to growing chains.',
+          'Zenoti is built for enterprise and multi-location businesses, and its complexity reflects that. Small and mid-size salons often find the implementation lengthy (weeks to months), the learning curve steep, and the feature set overwhelming. Daisy is designed to be powerful yet accessible. AI-powered features without the enterprise complexity, suitable for single-location salons to growing chains.',
       },
       {
         question: 'Why doesn\'t Zenoti have Arabic support despite having a Dubai office?',
@@ -1485,17 +1485,17 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How good is Zenoti\'s customer support?',
         answer:
-          'Zenoti offers tiered support — basic support is included, but priority and dedicated support require higher-tier plans. Some users report slow response times on standard plans and that support tickets can take days to resolve. Given the platform\'s complexity, this can be frustrating during critical issues. Daisy provides responsive support across all plan levels with dedicated account management.',
+          'Zenoti offers tiered support, basic support is included, but priority and dedicated support require higher-tier plans. Some users report slow response times on standard plans and that support tickets can take days to resolve. Given the platform\'s complexity, this can be frustrating during critical issues. Daisy provides responsive support across all plan levels with dedicated account management.',
       },
       {
         question: 'Does Zenoti have a consumer marketplace for customer acquisition?',
         answer:
-          'No — Zenoti is purely a B2B management platform with no consumer-facing marketplace or discovery features. Businesses must drive their own traffic. Daisy combines a consumer marketplace with cashback rewards and AI-powered marketing to actively acquire new customers for your business — a 360-degree acquisition engine that Zenoti doesn\'t offer.',
+          'No. Zenoti is purely a B2B management platform with no consumer-facing marketplace or discovery features. Businesses must drive their own traffic. Daisy combines a consumer marketplace with cashback rewards and AI-powered marketing to actively acquire new customers for your business, a 360-degree acquisition engine that Zenoti doesn\'t offer.',
       },
       {
         question: 'How does Zenoti\'s mobile app compare to Daisy\'s?',
         answer:
-          'Zenoti offers both staff and customer-facing mobile apps with solid functionality for enterprise operations. However, the apps are complex and mirror the desktop platform\'s enterprise orientation — some users find them less intuitive for day-to-day salon tasks. Daisy\'s mobile app is designed for simplicity and speed, with AI assistance built in to handle routine tasks automatically.',
+          'Zenoti offers both staff and customer-facing mobile apps with solid functionality for enterprise operations. However, the apps are complex and mirror the desktop platform\'s enterprise orientation, some users find them less intuitive for day-to-day salon tasks. Daisy\'s mobile app is designed for simplicity and speed, with AI assistance built in to handle routine tasks automatically.',
       },
     ],
 

@@ -10,9 +10,9 @@ export const professionalEntries2: FeatureDeepDive[] = [
     userType: 'professional',
 
     metaTitle:
-      'Freelance Beauty Payment Tools — Mobile Payments, Invoicing & Tips Tracking | The Daisy',
+      'Freelance Beauty Payment Tools. Mobile Payments, Invoicing & Tips Tracking | The Daisy',
     metaDescription:
-      'The Daisy helps freelance beauty professionals get paid faster with mobile payments, automatic invoicing, tips tracking, split payments with salons, and real-time earnings visibility — no chasing clients for money.',
+      'The Daisy helps freelance beauty professionals get paid faster with mobile payments, automatic invoicing, tips tracking, split payments with salons, and real-time earnings visibility, no chasing clients for money.',
     keywords: [
       'freelance beauty payment processing',
       'mobile payment for stylists',
@@ -28,17 +28,17 @@ export const professionalEntries2: FeatureDeepDive[] = [
 
     heroTitle: 'Get Paid Faster, Track Every Penny, Keep More of What You Earn',
     heroSubtitle:
-      'The Daisy gives freelance beauty professionals mobile payments, instant invoicing, tips tracking, and transparent commission splits — so you spend less time chasing payments and more time building your career.',
+      'The Daisy gives freelance beauty professionals mobile payments, instant invoicing, tips tracking, and transparent commission splits, so you spend less time chasing payments and more time building your career.',
     heroStat: {
       value: '< 24 hrs',
       label: 'Average payout to your account',
     },
 
     overview:
-      'Getting paid should be the simplest part of being a beauty professional. In reality, it is often the most frustrating. Freelancers chase clients for bank transfers that arrive days late. Salon employees lose track of tips pooled across the team. Mobile stylists juggle cash, Venmo, and card readers that charge hidden fees. Commission splits are calculated on paper, and disputes about who earned what create unnecessary tension. The Daisy\'s Payment & Invoicing tools eliminate every one of these friction points. Accept mobile payments on-site — card, contactless, Apple Pay, Google Pay — with transparent fees and fast settlement. Generate professional invoices automatically after every appointment, complete with your branding and service details. Track every tip you receive and see exactly how gratuities are allocated. If you work in a salon, The Daisy handles commission splits transparently so both you and the business owner see the same numbers. If you are freelancing, you get a real-time earnings dashboard that shows your income by day, week, and month — no more waiting until tax season to discover how much you actually made. Whether you are a mobile barber collecting payment at a client\'s home or a salon stylist verifying your weekly commission, The Daisy makes money management effortless so you can focus on your craft.',
+      'Getting paid should be the simplest part of being a beauty professional. In reality, it is often the most frustrating. Freelancers chase clients for bank transfers that arrive days late. Salon employees lose track of tips pooled across the team. Mobile stylists juggle cash, Venmo, and card readers that charge hidden fees. Commission splits are calculated on paper, and disputes about who earned what create unnecessary tension. The Daisy\'s Payment & Invoicing tools eliminate every one of these friction points. Accept mobile payments on-site, card, contactless, Apple Pay, Google Pay, with transparent fees and fast settlement. Generate professional invoices automatically after every appointment, complete with your branding and service details. Track every tip you receive and see exactly how gratuities are allocated. If you work in a salon, The Daisy handles commission splits transparently so both you and the business owner see the same numbers. If you are freelancing, you get a real-time earnings dashboard that shows your income by day, week, and month, no more waiting until tax season to discover how much you actually made. Whether you are a mobile barber collecting payment at a client\'s home or a salon stylist verifying your weekly commission, The Daisy makes money management effortless so you can focus on your craft.',
 
     keyCapabilities: [
-      'Mobile payment acceptance — card, contactless, and digital wallets',
+      'Mobile payment acceptance, card, contactless, and digital wallets',
       'Automatic professional invoice generation after every service',
       'Real-time tips tracking with per-appointment breakdowns',
       'Transparent commission split calculations with salon owners',
@@ -48,23 +48,23 @@ export const professionalEntries2: FeatureDeepDive[] = [
 
     painPoints: [
       'Freelancers spend hours each week chasing late payments via bank transfer, losing income to forgotten invoices and awkward follow-up messages.',
-      'Tips are pooled, rounded, or lost entirely when tracked manually — professionals often have no visibility into what they actually earned in gratuities.',
+      'Tips are pooled, rounded, or lost entirely when tracked manually, professionals often have no visibility into what they actually earned in gratuities.',
       'Commission disputes arise when calculations happen on paper or in the salon owner\'s spreadsheet, with no shared source of truth.',
       'Mobile beauty professionals juggle multiple payment apps and cash, making reconciliation at the end of the week a time-consuming headache.',
       'Without real-time income tracking, professionals have no idea whether they are earning enough to meet their financial goals until it is too late to adjust.',
     ],
 
     growthOutcome:
-      'Professionals using The Daisy\'s payment tools report collecting payments faster, eliminating commission disputes, and gaining clear visibility into their true earnings — enabling confident financial planning and career decisions.',
+      'Professionals using The Daisy\'s payment tools report collecting payments faster, eliminating commission disputes, and gaining clear visibility into their true earnings, enabling confident financial planning and career decisions.',
 
     subFeatures: [
       {
         name: 'Mobile Payment Acceptance',
         description:
-          'Accept payments anywhere you work — in a salon chair, at a client\'s home, or at an event. The Daisy turns your phone into a professional payment terminal that accepts card, contactless, Apple Pay, and Google Pay. Fees are transparent and competitive, and settlement is fast. No separate card reader hardware required for contactless transactions.',
+          'Accept payments anywhere you work, in a salon chair, at a client\'s home, or at an event. The Daisy turns your phone into a professional payment terminal that accepts card, contactless, Apple Pay, and Google Pay. Fees are transparent and competitive, and settlement is fast. No separate card reader hardware required for contactless transactions.',
         howItWorks: [
           'When your service is complete, open the payment screen in The Daisy app.',
-          'The client\'s services and total are pre-loaded from the booking — no manual entry needed.',
+          'The client\'s services and total are pre-loaded from the booking, no manual entry needed.',
           'The client taps their card, phone, or watch to pay contactlessly, or enters card details manually.',
           'Payment is processed instantly with a digital receipt sent to both you and the client.',
           'Funds settle to your linked bank account within 24 hours.',
@@ -79,7 +79,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         howItWorks: [
           'Complete an appointment and process payment through The Daisy.',
           'An invoice is generated automatically with your branding, service details, and payment confirmation.',
-          'The invoice is sent to the client via their preferred channel — email or WhatsApp.',
+          'The invoice is sent to the client via their preferred channel, email or WhatsApp.',
           'All invoices are stored in your payment history for easy access during tax preparation.',
           'Outstanding invoices are flagged with reminders you can send with one tap.',
         ],
@@ -98,14 +98,14 @@ export const professionalEntries2: FeatureDeepDive[] = [
           'Monthly and yearly tip summaries are available for tax reporting.',
         ],
         keyBenefit:
-          'Know exactly what you earn in tips — no more guessing, no more pooled gratuities disappearing into the system.',
+          'Know exactly what you earn in tips, no more guessing, no more pooled gratuities disappearing into the system.',
       },
       {
         name: 'Commission Split Management',
         description:
-          'If you work in a salon on a commission basis, The Daisy calculates your split automatically based on the agreed percentage. Both you and the salon owner see the same numbers — same transactions, same calculations, same totals. No more end-of-week disputes about who earned what. If your commission rate varies by service type, The Daisy handles that too.',
+          'If you work in a salon on a commission basis, The Daisy calculates your split automatically based on the agreed percentage. Both you and the salon owner see the same numbers, same transactions, same calculations, same totals. No more end-of-week disputes about who earned what. If your commission rate varies by service type, The Daisy handles that too.',
         howItWorks: [
-          'Your commission rate is configured in The Daisy — flat percentage, tiered, or per-service rates.',
+          'Your commission rate is configured in The Daisy, flat percentage, tiered, or per-service rates.',
           'Every transaction is automatically split between your earnings and the salon\'s share.',
           'Both you and the salon owner see the same real-time commission dashboard.',
           'At payout time, the exact amounts are calculated with a full transaction-level breakdown.',
@@ -117,7 +117,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Real-Time Earnings Dashboard',
         description:
-          'Your personal earnings dashboard updates in real time with every completed service. See today\'s income, this week\'s total, and monthly earnings at a glance. Break down your income by service type, location, tips versus service fees, and payment method. Set income goals and track your progress throughout the month. This is your financial cockpit — always current, always accurate.',
+          'Your personal earnings dashboard updates in real time with every completed service. See today\'s income, this week\'s total, and monthly earnings at a glance. Break down your income by service type, location, tips versus service fees, and payment method. Set income goals and track your progress throughout the month. This is your financial cockpit, always current, always accurate.',
         howItWorks: [
           'Every payment you receive updates your dashboard instantly.',
           'Income is categorised by service type, location, tips, and commissions.',
@@ -178,7 +178,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
     comparisonHighlights: [
       {
         area: 'Payment Acceptance',
-        daisy: 'Card, contactless, Apple Pay, Google Pay — all from your phone',
+        daisy: 'Card, contactless, Apple Pay, Google Pay, all from your phone',
         typical: 'Cash only, or a separate card reader with hidden monthly fees',
       },
       {
@@ -203,7 +203,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
       },
       {
         area: 'Fee Visibility',
-        daisy: 'Processing fees shown before every transaction — no surprises',
+        daisy: 'Processing fees shown before every transaction, no surprises',
         typical: 'Hidden fees discovered only on monthly statements',
       },
     ],
@@ -213,7 +213,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         title: 'The Mobile Barber Who Stopped Chasing Payments',
         businessType: 'Mobile Barber',
         scenario:
-          'Marcus offers mobile barbering services across the city. Before The Daisy, half his clients paid cash and the other half promised bank transfers that arrived days late — if at all. Now he accepts contactless payments on site, invoices generate automatically, and his earnings dashboard shows exactly what he has made each day. No more awkward follow-up texts about unpaid appointments.',
+          'Marcus offers mobile barbering services across the city. Before The Daisy, half his clients paid cash and the other half promised bank transfers that arrived days late, if at all. Now he accepts contactless payments on site, invoices generate automatically, and his earnings dashboard shows exactly what he has made each day. No more awkward follow-up texts about unpaid appointments.',
       },
       {
         title: 'The Salon Stylist Who Finally Trusts Her Commission',
@@ -234,7 +234,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         category: 'Booking Management',
         slug: 'booking-management',
         benefit:
-          'Payments link directly to bookings — when a client books, deposits are collected automatically, and the final bill is pre-loaded at checkout.',
+          'Payments link directly to bookings, when a client books, deposits are collected automatically, and the final bill is pre-loaded at checkout.',
       },
       {
         category: 'Earnings & Analytics',
@@ -246,7 +246,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         category: 'Communication Tools',
         slug: 'communication-tools',
         benefit:
-          'Payment confirmations and invoices are sent via your preferred client communication channel — WhatsApp, email, or SMS.',
+          'Payment confirmations and invoices are sent via your preferred client communication channel. WhatsApp, email, or SMS.',
       },
       {
         category: 'Career Growth',
@@ -261,7 +261,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         {
           title: 'Smart Payment Reminders',
           description:
-            'The Daisy\'s AI identifies clients with outstanding balances and sends personalised, politely worded payment reminders at the optimal time — so you do not have to be the one chasing money.',
+            'The Daisy\'s AI identifies clients with outstanding balances and sends personalised, politely worded payment reminders at the optimal time, so you do not have to be the one chasing money.',
         },
         {
           title: 'Earnings Forecasting',
@@ -271,12 +271,12 @@ export const professionalEntries2: FeatureDeepDive[] = [
         {
           title: 'Fee Optimisation Suggestions',
           description:
-            'AI reviews your payment method mix and suggests ways to reduce processing costs — such as encouraging contactless payments over manual card entry — saving you money on every transaction.',
+            'AI reviews your payment method mix and suggests ways to reduce processing costs, such as encouraging contactless payments over manual card entry, saving you money on every transaction.',
         },
         {
           title: 'Tip Pattern Insights',
           description:
-            'AI identifies patterns in your tip earnings — which service types, times of day, and client segments generate the highest gratuities — so you can optimise your schedule for maximum total income.',
+            'AI identifies patterns in your tip earnings, which service types, times of day, and client segments generate the highest gratuities, so you can optimise your schedule for maximum total income.',
         },
       ],
     },
@@ -285,7 +285,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         question: 'What payment methods can I accept through The Daisy?',
         answer:
-          'You can accept card payments (Visa, Mastercard, Amex), contactless tap, Apple Pay, Google Pay, and digital wallets — all directly through The Daisy app on your phone. No separate card reader hardware is required for contactless payments.',
+          'You can accept card payments (Visa, Mastercard, Amex), contactless tap, Apple Pay, Google Pay, and digital wallets, all directly through The Daisy app on your phone. No separate card reader hardware is required for contactless payments.',
       },
       {
         question: 'How fast do I get my money?',
@@ -336,7 +336,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
     userType: 'professional',
 
     metaTitle:
-      'Career Growth for Beauty Professionals — Build Your Brand, Grow Your Client Base | The Daisy',
+      'Career Growth for Beauty Professionals. Build Your Brand, Grow Your Client Base | The Daisy',
     metaDescription:
       'The Daisy helps beauty professionals build a personal brand, grow their client base, create a portfolio, manage their reputation, and transition from salon employee to independent professional.',
     keywords: [
@@ -354,14 +354,14 @@ export const professionalEntries2: FeatureDeepDive[] = [
 
     heroTitle: 'Build Your Brand, Grow Your Client Base, Own Your Career',
     heroSubtitle:
-      'The Daisy gives beauty professionals the tools to build a personal brand, attract new clients, showcase their work, and transition from employee to independent — on your terms, at your pace.',
+      'The Daisy gives beauty professionals the tools to build a personal brand, attract new clients, showcase their work, and transition from employee to independent, on your terms, at your pace.',
     heroStat: {
       value: '3x',
       label: 'Average client base growth in first year',
     },
 
     overview:
-      'Your talent deserves to be seen. Whether you are a salon employee dreaming of independence or a freelancer looking to fill your calendar, the biggest challenge is the same: getting your name out there and building a reputation that attracts clients on its own. Most beauty professionals rely on word-of-mouth alone — which works, but it is slow and unpredictable. The Daisy\'s Career Growth tools turn your skills into a visible, searchable personal brand. Build a professional portfolio that showcases your best work with before-and-after photos organised by service type. Claim your own profile on The Daisy\'s marketplace, where clients actively search for professionals in their area. Collect and display verified client reviews that build trust with new prospects. Track your reputation score and respond to feedback promptly. When you are ready to go independent, The Daisy provides the business infrastructure you need — booking, payments, client management, marketing — without the overhead of building it yourself. You do not need a business degree or a marketing budget. You need great skills, a platform that makes those skills visible, and tools that handle the business side while you focus on your craft. The Daisy is that platform. Whether your goal is a fuller calendar, higher-paying clients, or full independence, the path starts with making your work visible and your reputation undeniable.',
+      'Your talent deserves to be seen. Whether you are a salon employee dreaming of independence or a freelancer looking to fill your calendar, the biggest challenge is the same: getting your name out there and building a reputation that attracts clients on its own. Most beauty professionals rely on word-of-mouth alone, which works, but it is slow and unpredictable. The Daisy\'s Career Growth tools turn your skills into a visible, searchable personal brand. Build a professional portfolio that showcases your best work with before-and-after photos organised by service type. Claim your own profile on The Daisy\'s marketplace, where clients actively search for professionals in their area. Collect and display verified client reviews that build trust with new prospects. Track your reputation score and respond to feedback promptly. When you are ready to go independent, The Daisy provides the business infrastructure you need, booking, payments, client management, marketing, without the overhead of building it yourself. You do not need a business degree or a marketing budget. You need great skills, a platform that makes those skills visible, and tools that handle the business side while you focus on your craft. The Daisy is that platform. Whether your goal is a fuller calendar, higher-paying clients, or full independence, the path starts with making your work visible and your reputation undeniable.',
 
     keyCapabilities: [
       'Professional portfolio with before-and-after gallery organised by service',
@@ -374,9 +374,9 @@ export const professionalEntries2: FeatureDeepDive[] = [
 
     painPoints: [
       'Most beauty professionals rely solely on word-of-mouth, which is slow, unpredictable, and limits growth to existing social circles.',
-      'Building a portfolio is time-consuming without a dedicated tool — photos are scattered across phone galleries and social media posts that get buried in feeds.',
+      'Building a portfolio is time-consuming without a dedicated tool, photos are scattered across phone galleries and social media posts that get buried in feeds.',
       'Client reviews live on Google, Instagram, and Facebook separately, making it impossible to present a unified reputation to new clients.',
-      'Transitioning from employee to independent feels overwhelming without business infrastructure — professionals delay the move for years out of fear.',
+      'Transitioning from employee to independent feels overwhelming without business infrastructure, professionals delay the move for years out of fear.',
       'Without visibility on a marketplace, talented professionals lose potential clients to competitors who simply show up earlier in search results.',
     ],
 
@@ -387,11 +387,11 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Professional Portfolio',
         description:
-          'Your work speaks for itself — when people can see it. The Daisy\'s portfolio tool lets you upload and organise your best work with before-and-after photos, service tags, and descriptions. Your portfolio is displayed on your professional profile and shared with potential clients automatically. Unlike social media posts that disappear in a feed, your portfolio is permanent, searchable, and always looks polished.',
+          'Your work speaks for itself, when people can see it. The Daisy\'s portfolio tool lets you upload and organise your best work with before-and-after photos, service tags, and descriptions. Your portfolio is displayed on your professional profile and shared with potential clients automatically. Unlike social media posts that disappear in a feed, your portfolio is permanent, searchable, and always looks polished.',
         howItWorks: [
           'Upload photos of your work directly from your phone after each appointment.',
           'Tag photos with the service type, techniques used, and any relevant details.',
-          'Organise your portfolio by category — hair colour, cuts, bridal, skincare treatments, nails, etc.',
+          'Organise your portfolio by category, hair colour, cuts, bridal, skincare treatments, nails, etc.',
           'Your portfolio displays prominently on your Daisy profile, visible to clients searching the marketplace.',
           'Share individual portfolio items or your full gallery via a link on social media or messaging.',
         ],
@@ -401,13 +401,13 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Marketplace Profile',
         description:
-          'Claim your spot on The Daisy marketplace — where clients actively search for beauty professionals in their area. Your profile displays your specialisations, availability, pricing, portfolio, reviews, and booking link. Clients can find you by service type, location, rating, and availability. This is not passive social media hoping someone notices your post. This is active client acquisition — people searching for exactly what you offer and finding you.',
+          'Claim your spot on The Daisy marketplace, where clients actively search for beauty professionals in their area. Your profile displays your specialisations, availability, pricing, portfolio, reviews, and booking link. Clients can find you by service type, location, rating, and availability. This is not passive social media hoping someone notices your post. This is active client acquisition, people searching for exactly what you offer and finding you.',
         howItWorks: [
           'Create your professional profile with your specialisations, bio, and service menu.',
           'Set your location, availability, and pricing so clients can find and book you directly.',
           'Your portfolio and client reviews are displayed automatically on your profile.',
           'Clients discover you through search by service, location, availability, and rating.',
-          'Interested clients book directly through your profile — no back-and-forth messaging required.',
+          'Interested clients book directly through your profile, no back-and-forth messaging required.',
         ],
         keyBenefit:
           'Get discovered by new clients who are actively looking for the services you offer, without spending on advertising.',
@@ -418,7 +418,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
           'Verified reviews from real clients build trust that no amount of marketing can replicate. The Daisy automatically requests reviews after every appointment, verifies them against actual bookings (so reviews are always genuine), and displays them on your profile. You can respond to reviews publicly, demonstrating your professionalism. Your overall rating is calculated transparently, and you receive alerts about new feedback so you can respond promptly.',
         howItWorks: [
           'After each appointment, the client receives an automated review request via their preferred channel.',
-          'Reviews are verified against actual booking records — no fake or purchased reviews.',
+          'Reviews are verified against actual booking records, no fake or purchased reviews.',
           'Reviews appear on your Daisy profile with the client\'s first name, service received, and date.',
           'You receive a notification for every new review and can respond publicly.',
           'Your reputation score updates in real time based on cumulative ratings and review sentiment.',
@@ -429,12 +429,12 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Client Acquisition & Referrals',
         description:
-          'Growing your client base requires more than just being good at your craft — it requires being visible and giving satisfied clients a reason to spread the word. The Daisy provides a referral programme that rewards existing clients for bringing friends, promotional tools for offering first-time discounts, and visibility features that highlight your profile to clients in your area. Every new client you earn through the platform becomes a long-term relationship you own.',
+          'Growing your client base requires more than just being good at your craft, it requires being visible and giving satisfied clients a reason to spread the word. The Daisy provides a referral programme that rewards existing clients for bringing friends, promotional tools for offering first-time discounts, and visibility features that highlight your profile to clients in your area. Every new client you earn through the platform becomes a long-term relationship you own.',
         howItWorks: [
           'Activate your personalised referral programme with customisable rewards for both referrer and new client.',
           'Create first-time client promotions that appear on your marketplace profile.',
           'The Daisy highlights professionals with strong reviews and availability to clients searching nearby.',
-          'Track which acquisition channels — referrals, marketplace search, promotions — bring you the most clients.',
+          'Track which acquisition channels, referrals, marketplace search, promotions, bring you the most clients.',
         ],
         keyBenefit:
           'Grow your client base systematically instead of relying on unpredictable word-of-mouth alone.',
@@ -442,7 +442,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Independence Readiness Dashboard',
         description:
-          'Thinking about going independent? The Daisy shows you exactly where you stand. Your independence dashboard tracks key metrics — personal client base size, rebooking rate, average revenue per week, client loyalty scores, and income stability. It compares your current performance to benchmarks for successful independent professionals in your field. When the numbers say you are ready, you will know it — and you will have the data to back up the decision.',
+          'Thinking about going independent? The Daisy shows you exactly where you stand. Your independence dashboard tracks key metrics, personal client base size, rebooking rate, average revenue per week, client loyalty scores, and income stability. It compares your current performance to benchmarks for successful independent professionals in your field. When the numbers say you are ready, you will know it, and you will have the data to back up the decision.',
         howItWorks: [
           'The dashboard aggregates your booking, revenue, and client data automatically.',
           'Key independence indicators are tracked: client count, rebooking rate, revenue consistency, and client ownership.',
@@ -451,17 +451,17 @@ export const professionalEntries2: FeatureDeepDive[] = [
           'When your metrics cross the readiness threshold, The Daisy notifies you and provides a transition guide.',
         ],
         keyBenefit:
-          'Make the decision to go independent based on data, not fear — know exactly when you are financially ready.',
+          'Make the decision to go independent based on data, not fear, know exactly when you are financially ready.',
       },
       {
         name: 'Personal Brand Builder',
         description:
-          'Your own booking page, your own branding, your own professional identity. The Daisy lets you create a customised booking page with your name, logo, colours, and service menu. Share this link anywhere — Instagram bio, WhatsApp status, business cards — and clients book directly with you. You are not sending them to a generic platform. You are sending them to your page, your brand, your business.',
+          'Your own booking page, your own branding, your own professional identity. The Daisy lets you create a customised booking page with your name, logo, colours, and service menu. Share this link anywhere. Instagram bio, WhatsApp status, business cards, and clients book directly with you. You are not sending them to a generic platform. You are sending them to your page, your brand, your business.',
         howItWorks: [
           'Customise your booking page with your name, logo, brand colours, and a personalised URL.',
           'Add your full service menu with descriptions, pricing, and duration for each service.',
           'Share your booking link on social media, messaging apps, or printed materials.',
-          'Clients book, pay deposits, and receive confirmations — all branded with your identity.',
+          'Clients book, pay deposits, and receive confirmations, all branded with your identity.',
         ],
         keyBenefit:
           'Present a professional, branded experience to clients that positions you as a serious, independent professional.',
@@ -551,7 +551,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         title: 'The Freelance Makeup Artist Building a Reputation',
         businessType: 'Freelance Makeup Artist',
         scenario:
-          'Yasmin does bridal and event makeup but has no formal online presence beyond Instagram. She creates her Daisy profile, uploads her best bridal looks, and starts collecting verified reviews from every bride. Her profile quickly becomes her most effective marketing tool — new clients mention her reviews and portfolio as the reason they booked. She shares her branded booking page link in every DM and bio, and her reputation grows organically.',
+          'Yasmin does bridal and event makeup but has no formal online presence beyond Instagram. She creates her Daisy profile, uploads her best bridal looks, and starts collecting verified reviews from every bride. Her profile quickly becomes her most effective marketing tool, new clients mention her reviews and portfolio as the reason they booked. She shares her branded booking page link in every DM and bio, and her reputation grows organically.',
       },
     ],
 
@@ -560,7 +560,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         category: 'Booking Management',
         slug: 'booking-management',
         benefit:
-          'Your marketplace profile links directly to your booking system — clients discover you and book in a single flow without leaving the platform.',
+          'Your marketplace profile links directly to your booking system, clients discover you and book in a single flow without leaving the platform.',
       },
       {
         category: 'Communication Tools',
@@ -578,7 +578,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         category: 'Earnings & Analytics',
         slug: 'analytics-reports',
         benefit:
-          'Your career growth metrics — client acquisition rate, revenue growth, and rebooking trends — are tracked alongside your earnings for a complete picture.',
+          'Your career growth metrics, client acquisition rate, revenue growth, and rebooking trends, are tracked alongside your earnings for a complete picture.',
       },
     ],
 
@@ -592,17 +592,17 @@ export const professionalEntries2: FeatureDeepDive[] = [
         {
           title: 'Review Response Suggestions',
           description:
-            'AI drafts thoughtful, professional responses to client reviews — both positive and negative — that you can send with one tap, ensuring you engage with feedback promptly without spending time writing replies.',
+            'AI drafts thoughtful, professional responses to client reviews, both positive and negative, that you can send with one tap, ensuring you engage with feedback promptly without spending time writing replies.',
         },
         {
           title: 'Client Acquisition Insights',
           description:
-            'AI identifies where your new clients come from — marketplace search, referrals, social media links — and recommends where to focus your energy for maximum growth based on what is actually working.',
+            'AI identifies where your new clients come from, marketplace search, referrals, social media links, and recommends where to focus your energy for maximum growth based on what is actually working.',
         },
         {
           title: 'Independence Readiness Coaching',
           description:
-            'AI analyses your career metrics and provides personalised advice on what to focus on next — whether that is increasing your rebooking rate, raising prices, or expanding your service menu — to accelerate your path to independence.',
+            'AI analyses your career metrics and provides personalised advice on what to focus on next, whether that is increasing your rebooking rate, raising prices, or expanding your service menu, to accelerate your path to independence.',
         },
       ],
     },
@@ -611,22 +611,22 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         question: 'Do I need to be independent to use The Daisy\'s career growth tools?',
         answer:
-          'No. The career growth tools are designed for both salon employees and independent professionals. If you are employed, you can build your portfolio, collect reviews, and track your readiness for independence — all while still working at your current salon.',
+          'No. The career growth tools are designed for both salon employees and independent professionals. If you are employed, you can build your portfolio, collect reviews, and track your readiness for independence, all while still working at your current salon.',
       },
       {
         question: 'How does the marketplace help me get new clients?',
         answer:
-          'The Daisy marketplace is where clients actively search for beauty professionals by service type, location, availability, and rating. Your profile, portfolio, and reviews are displayed to clients looking for exactly what you offer. Unlike social media, these are people with intent to book — not just casual browsers.',
+          'The Daisy marketplace is where clients actively search for beauty professionals by service type, location, availability, and rating. Your profile, portfolio, and reviews are displayed to clients looking for exactly what you offer. Unlike social media, these are people with intent to book, not just casual browsers.',
       },
       {
         question: 'Are the reviews on my profile verified?',
         answer:
-          'Yes. Every review on The Daisy is tied to an actual booking. Clients can only leave a review after they have received a service from you, and the system verifies this against your booking records. This means every review is genuine — no purchased or fake reviews.',
+          'Yes. Every review on The Daisy is tied to an actual booking. Clients can only leave a review after they have received a service from you, and the system verifies this against your booking records. This means every review is genuine, no purchased or fake reviews.',
       },
       {
         question: 'What is the independence readiness dashboard?',
         answer:
-          'The independence readiness dashboard tracks the key metrics that determine whether you can sustain a career as an independent professional — client base size, rebooking rate, income consistency, and client loyalty. It compares your numbers against benchmarks and shows you exactly where you stand.',
+          'The independence readiness dashboard tracks the key metrics that determine whether you can sustain a career as an independent professional, client base size, rebooking rate, income consistency, and client loyalty. It compares your numbers against benchmarks and shows you exactly where you stand.',
       },
       {
         question: 'Can I use the branded booking page while still employed at a salon?',
@@ -636,7 +636,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         question: 'How does the referral programme work?',
         answer:
-          'You set a reward for both the referring client and the new client — for example, 10% off their next service. When an existing client shares your referral link and someone books through it, both parties receive the reward automatically. You can track all referrals and their conversion rate in your dashboard.',
+          'You set a reward for both the referring client and the new client, for example, 10% off their next service. When an existing client shares your referral link and someone books through it, both parties receive the reward automatically. You can track all referrals and their conversion rate in your dashboard.',
       },
       {
         question: 'Does building my Daisy profile cost anything?',
@@ -662,9 +662,9 @@ export const professionalEntries2: FeatureDeepDive[] = [
     userType: 'professional',
 
     metaTitle:
-      'Schedule Management for Beauty Professionals — Availability, Work-Life Balance & Multi-Location | The Daisy',
+      'Schedule Management for Beauty Professionals. Availability, Work-Life Balance & Multi-Location | The Daisy',
     metaDescription:
-      'The Daisy helps beauty professionals manage their schedule across locations, set boundaries, block personal time, and maintain work-life balance — your calendar, your rules.',
+      'The Daisy helps beauty professionals manage their schedule across locations, set boundaries, block personal time, and maintain work-life balance, your calendar, your rules.',
     keywords: [
       'beauty professional schedule management',
       'freelance stylist availability calendar',
@@ -678,7 +678,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
       'freelance esthetician scheduling tool',
     ],
 
-    heroTitle: 'Your Time, Your Rules — Schedule Management for Beauty Professionals',
+    heroTitle: 'Your Time, Your Rules. Schedule Management for Beauty Professionals',
     heroSubtitle:
       'The Daisy helps you manage availability across locations, protect your personal time, set clear boundaries, and maintain the work-life balance that makes a freelance career sustainable.',
     heroStat: {
@@ -687,7 +687,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
     },
 
     overview:
-      'Freedom is the reason most beauty professionals go freelance or independent — but without proper schedule management, that freedom can quickly turn into chaos. You say yes to every request, work seven days a week, and burn out within a year. Or you work at multiple locations and lose track of where you are supposed to be. Or a client books a Saturday morning and you realise you never blocked off your child\'s football match. The Daisy\'s Schedule Management tools give you complete control over your time. Set your working hours, block personal time, and define buffer periods between appointments — all in one calendar that syncs across every platform where clients can book you. If you work at multiple locations (a salon on weekdays, your home studio on weekends, and mobile appointments on Wednesdays), The Daisy manages availability per location so clients only see times you are actually available at that specific spot. Set recurring blocks for gym time, school pickups, or rest days, and The Daisy automatically prevents bookings during those periods. Your schedule is your most valuable asset. Protecting it is not selfish — it is essential for a sustainable career. The Daisy ensures you never accidentally double-book, never work hours you did not intend to, and always have breathing room between clients. You control the calendar, and the calendar supports your life — not the other way around.',
+      'Freedom is the reason most beauty professionals go freelance or independent, but without proper schedule management, that freedom can quickly turn into chaos. You say yes to every request, work seven days a week, and burn out within a year. Or you work at multiple locations and lose track of where you are supposed to be. Or a client books a Saturday morning and you realise you never blocked off your child\'s football match. The Daisy\'s Schedule Management tools give you complete control over your time. Set your working hours, block personal time, and define buffer periods between appointments, all in one calendar that syncs across every platform where clients can book you. If you work at multiple locations (a salon on weekdays, your home studio on weekends, and mobile appointments on Wednesdays), The Daisy manages availability per location so clients only see times you are actually available at that specific spot. Set recurring blocks for gym time, school pickups, or rest days, and The Daisy automatically prevents bookings during those periods. Your schedule is your most valuable asset. Protecting it is not selfish. It is essential for a sustainable career. The Daisy ensures you never accidentally double-book, never work hours you did not intend to, and always have breathing room between clients. You control the calendar, and the calendar supports your life, not the other way around.',
 
     keyCapabilities: [
       'Unified calendar across all working locations and booking channels',
@@ -700,7 +700,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
 
     painPoints: [
       'Freelancers working at multiple locations constantly risk double-bookings because availability is tracked in separate calendars or not tracked at all.',
-      'Without built-in boundary tools, professionals end up accepting bookings during intended personal time — eroding work-life balance over months.',
+      'Without built-in boundary tools, professionals end up accepting bookings during intended personal time, eroding work-life balance over months.',
       'Back-to-back appointments without buffer time leads to rushing between clients, late starts, and a deteriorating service experience.',
       'Manual calendar management across different booking channels (DMs, phone, online) consumes hours each week and still misses conflicts.',
       'Burnout is the leading cause of career exit in the beauty industry, often driven by poor schedule boundaries and the inability to say no to requests.',
@@ -713,9 +713,9 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Unified Availability Calendar',
         description:
-          'One calendar that shows everything — every appointment, every location, every blocked period, every buffer. Whether a client books through The Daisy marketplace, your personal booking link, or you add an appointment manually, it all appears in a single view. No more cross-referencing three different calendars to figure out if you are free.',
+          'One calendar that shows everything, every appointment, every location, every blocked period, every buffer. Whether a client books through The Daisy marketplace, your personal booking link, or you add an appointment manually, it all appears in a single view. No more cross-referencing three different calendars to figure out if you are free.',
         howItWorks: [
-          'All bookings from every channel — marketplace, booking page, manual entry — flow into one calendar.',
+          'All bookings from every channel, marketplace, booking page, manual entry, flow into one calendar.',
           'Your availability updates in real time across all platforms as appointments are booked or cancelled.',
           'Colour-coded entries distinguish between appointments, personal blocks, travel time, and breaks.',
           'Daily, weekly, and monthly views let you see your schedule at any level of detail.',
@@ -727,16 +727,16 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Personal Time Blocking',
         description:
-          'Your time off is as important as your time on. The Daisy lets you block any time period as unavailable — one-off events like a dentist appointment, or recurring blocks like school pickups every afternoon at 3 PM. Blocked time is invisible to clients; they simply see that you are not available. No explanations needed, no declining requests, no guilt.',
+          'Your time off is as important as your time on. The Daisy lets you block any time period as unavailable, one-off events like a dentist appointment, or recurring blocks like school pickups every afternoon at 3 PM. Blocked time is invisible to clients; they simply see that you are not available. No explanations needed, no declining requests, no guilt.',
         howItWorks: [
           'Select any time period on your calendar and mark it as a personal block.',
-          'Set blocks as one-time or recurring — daily, weekly, or custom pattern.',
+          'Set blocks as one-time or recurring, daily, weekly, or custom pattern.',
           'Blocked periods are automatically hidden from your public availability.',
           'Add optional private notes to blocks for your own reference (e.g., "Gym", "Kids\' school").',
           'Modify or remove blocks at any time if your plans change.',
         ],
         keyBenefit:
-          'Protect your personal commitments without needing to explain or decline — blocked time simply does not appear to clients.',
+          'Protect your personal commitments without needing to explain or decline, blocked time simply does not appear to clients.',
       },
       {
         name: 'Multi-Location Scheduling',
@@ -744,10 +744,10 @@ export const professionalEntries2: FeatureDeepDive[] = [
           'If you work at a salon on Tuesday through Thursday, do mobile appointments on Friday, and take clients at your home studio on Saturday, The Daisy manages each location independently. Clients searching for your services see only the times and locations where you are actually available. Travel time between locations is accounted for automatically based on your settings.',
         howItWorks: [
           'Add each of your working locations with address, operating hours, and travel radius.',
-          'Set your availability for each location — which days, which hours.',
+          'Set your availability for each location, which days, which hours.',
           'The Daisy shows clients only the times you are available at the location they selected.',
           'Travel time buffers are calculated automatically between back-to-back appointments at different locations.',
-          'Change your location schedule anytime — The Daisy updates availability instantly.',
+          'Change your location schedule anytime. The Daisy updates availability instantly.',
         ],
         keyBenefit:
           'Work across multiple locations without the complexity of juggling separate calendars for each one.',
@@ -755,9 +755,9 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Buffer Time & Break Enforcement',
         description:
-          'Back-to-back appointments are a fast track to burnout and late starts. The Daisy lets you set buffer time between appointments — for cleanup, setup, travel, or simply a breather. You can also enforce mandatory breaks (e.g., a 30-minute lunch break that cannot be overridden by bookings). These buffers appear as unavailable time to clients, maintaining your pace without requiring you to manually block time between every appointment.',
+          'Back-to-back appointments are a fast track to burnout and late starts. The Daisy lets you set buffer time between appointments, for cleanup, setup, travel, or simply a breather. You can also enforce mandatory breaks (e.g., a 30-minute lunch break that cannot be overridden by bookings). These buffers appear as unavailable time to clients, maintaining your pace without requiring you to manually block time between every appointment.',
         howItWorks: [
-          'Set a default buffer time between appointments — 10, 15, 30 minutes, or custom.',
+          'Set a default buffer time between appointments, 10, 15, 30 minutes, or custom.',
           'Define mandatory breaks by time of day (e.g., 12:30-1:00 PM every working day).',
           'The booking system automatically spaces appointments to respect your buffer settings.',
           'Override buffers on a case-by-case basis if you choose to take a tighter schedule.',
@@ -782,9 +782,9 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Smart Scheduling Preferences',
         description:
-          'Tell The Daisy how you prefer to work and it structures your schedule accordingly. Prefer to group appointments in the morning? Avoid late evenings? Need Wednesdays completely free? Set your preferences once and The Daisy prioritises booking slots that align with how you want your week to look — not just when you are technically available.',
+          'Tell The Daisy how you prefer to work and it structures your schedule accordingly. Prefer to group appointments in the morning? Avoid late evenings? Need Wednesdays completely free? Set your preferences once and The Daisy prioritises booking slots that align with how you want your week to look, not just when you are technically available.',
         howItWorks: [
-          'Define your ideal work patterns — preferred start and end times, preferred working days, and preferred off days.',
+          'Define your ideal work patterns, preferred start and end times, preferred working days, and preferred off days.',
           'The Daisy presents your preferred slots to clients first, steering bookings toward your ideal schedule.',
           'Less preferred but available slots are shown only when preferred times are full.',
           'Adjust preferences seasonally or as your life circumstances change.',
@@ -799,13 +799,13 @@ export const professionalEntries2: FeatureDeepDive[] = [
         step: 1,
         title: 'Set Your Working Hours',
         description:
-          'Define when you are available for appointments — by day, by location, by time range. These become the boundaries that protect your schedule from unwanted bookings.',
+          'Define when you are available for appointments, by day, by location, by time range. These become the boundaries that protect your schedule from unwanted bookings.',
       },
       {
         step: 2,
         title: 'Block Personal Time',
         description:
-          'Add recurring blocks for non-work commitments — school pickups, gym sessions, rest days, family time. These blocks are locked in and invisible to clients.',
+          'Add recurring blocks for non-work commitments, school pickups, gym sessions, rest days, family time. These blocks are locked in and invisible to clients.',
       },
       {
         step: 3,
@@ -851,7 +851,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         area: 'Calendar Sync',
         daisy: 'Two-way sync with Google and Apple Calendar, personal events block availability',
-        typical: 'No sync — you check your personal calendar separately',
+        typical: 'No sync, you check your personal calendar separately',
       },
       {
         area: 'Scheduling Preferences',
@@ -871,7 +871,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         title: 'The Mobile Nail Tech Who Protects Her Mornings',
         businessType: 'Mobile Nail Technician',
         scenario:
-          'Fatima is a mobile nail technician and a single mother. Her mornings belong to her kids — school drop-off, breakfast, homework help. She blocks 7 AM to 10 AM every weekday as personal time and sets a recurring Wednesday block for the entire day. Clients only see her available afternoon and evening slots. She never has to explain why she is unavailable or feel guilty about declining a morning request. Her boundaries are built into the system.',
+          'Fatima is a mobile nail technician and a single mother. Her mornings belong to her kids, school drop-off, breakfast, homework help. She blocks 7 AM to 10 AM every weekday as personal time and sets a recurring Wednesday block for the entire day. Clients only see her available afternoon and evening slots. She never has to explain why she is unavailable or feel guilty about declining a morning request. Her boundaries are built into the system.',
       },
       {
         title: 'The Salon Employee Preventing Burnout',
@@ -886,7 +886,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         category: 'Booking Management',
         slug: 'booking-management',
         benefit:
-          'Your schedule feeds directly into the booking system — clients can only book slots that respect your availability, buffers, and personal blocks.',
+          'Your schedule feeds directly into the booking system, clients can only book slots that respect your availability, buffers, and personal blocks.',
       },
       {
         category: 'Payment & Invoicing',
@@ -913,17 +913,17 @@ export const professionalEntries2: FeatureDeepDive[] = [
         {
           title: 'Smart Gap Filling',
           description:
-            'The Daisy\'s AI identifies bookable gaps in your schedule and suggests clients from your waitlist or marketplace enquiries who match the available time, service type, and location — filling revenue holes without you lifting a finger.',
+            'The Daisy\'s AI identifies bookable gaps in your schedule and suggests clients from your waitlist or marketplace enquiries who match the available time, service type, and location, filling revenue holes without you lifting a finger.',
         },
         {
           title: 'Burnout Prevention Alerts',
           description:
-            'AI monitors your working patterns — hours per week, consecutive days without a break, back-to-back appointment density — and alerts you when your pace is approaching unsustainable levels, with specific rest recommendations.',
+            'AI monitors your working patterns, hours per week, consecutive days without a break, back-to-back appointment density, and alerts you when your pace is approaching unsustainable levels, with specific rest recommendations.',
         },
         {
           title: 'Optimal Scheduling Suggestions',
           description:
-            'AI analyses your booking history to recommend the most productive schedule structure — which days and times generate the highest revenue, which gaps to consolidate, and where to add availability for unmet demand.',
+            'AI analyses your booking history to recommend the most productive schedule structure, which days and times generate the highest revenue, which gaps to consolidate, and where to add availability for unmet demand.',
         },
         {
           title: 'Travel Time Intelligence',
@@ -937,12 +937,12 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         question: 'Can I manage multiple work locations in one calendar?',
         answer:
-          'Yes. The Daisy lets you add as many locations as you work at — salon, home studio, mobile, coworking space — each with its own hours and availability. All locations feed into a single unified calendar, so you never double-book across locations.',
+          'Yes. The Daisy lets you add as many locations as you work at, salon, home studio, mobile, coworking space, each with its own hours and availability. All locations feed into a single unified calendar, so you never double-book across locations.',
       },
       {
         question: 'How do I prevent clients from booking during my personal time?',
         answer:
-          'Use personal time blocking to mark any period as unavailable. Blocks can be one-time or recurring. Once blocked, those times simply do not appear in your availability — clients never see them, so there is no need to explain or decline.',
+          'Use personal time blocking to mark any period as unavailable. Blocks can be one-time or recurring. Once blocked, those times simply do not appear in your availability, clients never see them, so there is no need to explain or decline.',
       },
       {
         question: 'Does The Daisy sync with my personal calendar?',
@@ -967,7 +967,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         question: 'How does buffer time work between appointments?',
         answer:
-          'You set a default buffer duration — 10, 15, 30 minutes, or any custom amount. The Daisy automatically spaces your appointments to include this buffer after each one. Clients see the post-buffer time as the next available slot. You can override the buffer for individual appointments if you choose a tighter schedule.',
+          'You set a default buffer duration, 10, 15, 30 minutes, or any custom amount. The Daisy automatically spaces your appointments to include this buffer after each one. Clients see the post-buffer time as the next available slot. You can override the buffer for individual appointments if you choose a tighter schedule.',
       },
     ],
 
@@ -988,9 +988,9 @@ export const professionalEntries2: FeatureDeepDive[] = [
     userType: 'professional',
 
     metaTitle:
-      'Earnings & Analytics for Beauty Professionals — Income Tracking, Service Insights & Goal Setting | The Daisy',
+      'Earnings & Analytics for Beauty Professionals. Income Tracking, Service Insights & Goal Setting | The Daisy',
     metaDescription:
-      'The Daisy gives beauty professionals a personal earnings dashboard with income tracking, service profitability analysis, client retention metrics, and goal setting — know your numbers, grow your career.',
+      'The Daisy gives beauty professionals a personal earnings dashboard with income tracking, service profitability analysis, client retention metrics, and goal setting, know your numbers, grow your career.',
     keywords: [
       'freelance beauty earnings tracker',
       'stylist income analytics',
@@ -1004,7 +1004,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
       'mobile stylist revenue insights',
     ],
 
-    heroTitle: 'Know Your Numbers — Earnings & Analytics for Beauty Professionals',
+    heroTitle: 'Know Your Numbers. Earnings & Analytics for Beauty Professionals',
     heroSubtitle:
       'The Daisy gives you a personal earnings dashboard that tracks income, reveals which services make you the most money, monitors client retention, and helps you set and hit financial goals.',
     heroStat: {
@@ -1013,7 +1013,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
     },
 
     overview:
-      'Most beauty professionals have no idea how much they actually earn. Not the gross number on a payslip — the real number, after expenses, commissions, slow weeks, and seasonal dips. They do not know which services generate the most profit per hour, which clients are worth the most over a year, or whether they are on track to hit their income goals. This lack of visibility leads to underpricing, overworking, and career decisions made on hope rather than data. The Daisy\'s Earnings & Analytics dashboard changes this entirely. Every service you complete, every payment you receive, every tip you earn feeds into a personal financial dashboard built specifically for beauty professionals. See your daily, weekly, and monthly income in real time. Break down earnings by service type to discover which treatments are most profitable for your time. Track client retention to understand how many of your clients come back and how often. Set monthly income goals and watch your progress update with every completed appointment. Compare your performance across time periods to spot trends — are you growing, plateauing, or slipping? The Daisy does not just show you numbers. It surfaces insights that help you make smarter decisions about pricing, specialisation, scheduling, and career direction. When you understand your numbers, you stop guessing and start strategising. That is the difference between a job and a career.',
+      'Most beauty professionals have no idea how much they actually earn. Not the gross number on a payslip, the real number, after expenses, commissions, slow weeks, and seasonal dips. They do not know which services generate the most profit per hour, which clients are worth the most over a year, or whether they are on track to hit their income goals. This lack of visibility leads to underpricing, overworking, and career decisions made on hope rather than data. The Daisy\'s Earnings & Analytics dashboard changes this entirely. Every service you complete, every payment you receive, every tip you earn feeds into a personal financial dashboard built specifically for beauty professionals. See your daily, weekly, and monthly income in real time. Break down earnings by service type to discover which treatments are most profitable for your time. Track client retention to understand how many of your clients come back and how often. Set monthly income goals and watch your progress update with every completed appointment. Compare your performance across time periods to spot trends, are you growing, plateauing, or slipping? The Daisy does not just show you numbers. It surfaces insights that help you make smarter decisions about pricing, specialisation, scheduling, and career direction. When you understand your numbers, you stop guessing and start strategising. That is the difference between a job and a career.',
 
     keyCapabilities: [
       'Real-time earnings dashboard with daily, weekly, and monthly views',
@@ -1026,7 +1026,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
 
     painPoints: [
       'Professionals have no visibility into their actual hourly earnings by service type, leading to underpricing of time-intensive treatments and overemphasis on low-margin services.',
-      'Income tracking happens in spreadsheets that are started enthusiastically in January and abandoned by March — leaving professionals blind to their financial reality.',
+      'Income tracking happens in spreadsheets that are started enthusiastically in January and abandoned by March, leaving professionals blind to their financial reality.',
       'Without client retention data, professionals cannot tell whether they are growing their client base or simply churning through one-time visitors.',
       'Tax season is a nightmare because income records are scattered across bank statements, cash logs, and payment apps with no consolidated view.',
       'Career decisions about pricing, specialisation, and going independent are made on gut feeling because no data exists to inform them objectively.',
@@ -1039,26 +1039,26 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Personal Earnings Dashboard',
         description:
-          'Your financial command centre, updated in real time. See how much you have earned today, this week, this month, and this year. Break down income by service type, location, payment method, and client type. Compare any period against another to spot trends. The dashboard is designed for beauty professionals specifically — it understands commissions, tips, and freelance income patterns.',
+          'Your financial command centre, updated in real time. See how much you have earned today, this week, this month, and this year. Break down income by service type, location, payment method, and client type. Compare any period against another to spot trends. The dashboard is designed for beauty professionals specifically, it understands commissions, tips, and freelance income patterns.',
         howItWorks: [
           'Every completed service and payment automatically updates your earnings dashboard.',
           'Income is categorised by service type, tips, commissions, and product sales.',
           'Daily, weekly, monthly, and yearly views provide income visibility at every level.',
-          'Comparison mode lets you measure any period against a previous one — this month versus last month, this quarter versus last quarter.',
-          'Key figures — total earnings, average per day, average per client — are displayed prominently.',
+          'Comparison mode lets you measure any period against a previous one, this month versus last month, this quarter versus last quarter.',
+          'Key figures, total earnings, average per day, average per client, are displayed prominently.',
         ],
         keyBenefit:
-          'Always know exactly how much you have earned, are earning, and are projected to earn — no more financial guesswork.',
+          'Always know exactly how much you have earned, are earning, and are projected to earn, no more financial guesswork.',
       },
       {
         name: 'Service Profitability Analysis',
         description:
-          'Not all services are equally valuable to your career. A two-hour colour treatment and a 30-minute blowout might generate similar revenue, but your effective hourly rate is vastly different. The Daisy breaks down every service by total revenue, time invested, and income per hour — revealing which treatments are genuinely profitable and which are eating your time for less return.',
+          'Not all services are equally valuable to your career. A two-hour colour treatment and a 30-minute blowout might generate similar revenue, but your effective hourly rate is vastly different. The Daisy breaks down every service by total revenue, time invested, and income per hour, revealing which treatments are genuinely profitable and which are eating your time for less return.',
         howItWorks: [
           'Each service is tracked by revenue generated, actual time spent (including prep and cleanup), and frequency.',
           'Income per hour is calculated for every service type you offer.',
           'Services are ranked by profitability, revealing your true top earners.',
-          'Low-profitability services are flagged with suggestions — reprice, streamline, or replace.',
+          'Low-profitability services are flagged with suggestions, reprice, streamline, or replace.',
           'Trends show whether a service is becoming more or less popular over time.',
         ],
         keyBenefit:
@@ -1067,10 +1067,10 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Client Retention Metrics',
         description:
-          'Acquiring a new client costs time and effort. Keeping them is where stable income lives. The Daisy tracks how many of your clients return, how often they visit, their average spend, and their lifetime value to your career. Identify your most loyal clients — the ones who rebook consistently and refer others. Spot clients who are drifting away before they disappear entirely. Understand what makes some clients stick and others leave.',
+          'Acquiring a new client costs time and effort. Keeping them is where stable income lives. The Daisy tracks how many of your clients return, how often they visit, their average spend, and their lifetime value to your career. Identify your most loyal clients, the ones who rebook consistently and refer others. Spot clients who are drifting away before they disappear entirely. Understand what makes some clients stick and others leave.',
         howItWorks: [
           'Client visit history is analysed to calculate rebooking rate, visit frequency, and average spend.',
-          'Clients are segmented — loyal regulars, occasional visitors, at-risk (overdue for visit), and lapsed.',
+          'Clients are segmented, loyal regulars, occasional visitors, at-risk (overdue for visit), and lapsed.',
           'At-risk clients are flagged with their last visit date and a suggested re-engagement action.',
           'Lifetime value is calculated for each client, showing their total contribution to your earnings.',
           'Retention trends over time show whether your client base is growing, stable, or shrinking.',
@@ -1081,12 +1081,12 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Income Goal Setting',
         description:
-          'Set a monthly income target and watch your progress update with every completed appointment. The Daisy shows your goal, your current earnings, your projected earnings based on booked appointments, and how much more you need to earn to hit your target. It is simple, visual, and motivating — a financial scoreboard for your career.',
+          'Set a monthly income target and watch your progress update with every completed appointment. The Daisy shows your goal, your current earnings, your projected earnings based on booked appointments, and how much more you need to earn to hit your target. It is simple, visual, and motivating, a financial scoreboard for your career.',
         howItWorks: [
-          'Set your income goal for the month — a target amount you want to earn.',
+          'Set your income goal for the month, a target amount you want to earn.',
           'Your dashboard shows a progress bar with current earnings, confirmed upcoming bookings, and the remaining gap.',
           'Projected earnings are calculated from your booked appointments for the rest of the month.',
-          'If you are falling behind, The Daisy suggests actions — open more availability, promote a service, or reach out to lapsed clients.',
+          'If you are falling behind, The Daisy suggests actions, open more availability, promote a service, or reach out to lapsed clients.',
         ],
         keyBenefit:
           'Turn your income from a vague hope into a specific, trackable target that you actively work toward every day.',
@@ -1094,9 +1094,9 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Period Comparison & Trends',
         description:
-          'Are you earning more than last month? Is your client base growing or just staying the same? Which quarter was your strongest? Period comparison shows your performance over time with clear trend lines. Spot seasonal patterns — maybe December is always your best month and August always dips. Use this knowledge to plan promotions, save during strong months, and adjust your strategy during slow periods.',
+          'Are you earning more than last month? Is your client base growing or just staying the same? Which quarter was your strongest? Period comparison shows your performance over time with clear trend lines. Spot seasonal patterns, maybe December is always your best month and August always dips. Use this knowledge to plan promotions, save during strong months, and adjust your strategy during slow periods.',
         howItWorks: [
-          'Select any two time periods to compare — week vs week, month vs month, quarter vs quarter.',
+          'Select any two time periods to compare, week vs week, month vs month, quarter vs quarter.',
           'Key metrics are displayed side by side: total income, number of clients, services delivered, average per appointment.',
           'Growth or decline percentages are calculated for each metric.',
           'Seasonal patterns are identified and highlighted so you can plan ahead.',
@@ -1108,10 +1108,10 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Tax-Ready Income Reports',
         description:
-          'When tax season arrives, your income records are already complete. The Daisy generates exportable income summaries — total earnings by period, breakdown by service type, tips received, expenses logged, and commission splits. Export as CSV or PDF and hand it to your accountant, or use it for your self-assessment filing. No more digging through bank statements and cash logs.',
+          'When tax season arrives, your income records are already complete. The Daisy generates exportable income summaries, total earnings by period, breakdown by service type, tips received, expenses logged, and commission splits. Export as CSV or PDF and hand it to your accountant, or use it for your self-assessment filing. No more digging through bank statements and cash logs.',
         howItWorks: [
           'All income is tracked and categorised automatically throughout the year.',
-          'At any time, generate an income report for a specific period — month, quarter, or full year.',
+          'At any time, generate an income report for a specific period, month, quarter, or full year.',
           'Reports include total income, service breakdown, tips, commissions, and logged expenses.',
           'Export reports as CSV or PDF for your accountant or tax filing.',
         ],
@@ -1123,15 +1123,15 @@ export const professionalEntries2: FeatureDeepDive[] = [
     workflow: [
       {
         step: 1,
-        title: 'Start Working — Data Collects Automatically',
+        title: 'Start Working. Data Collects Automatically',
         description:
-          'Every appointment you complete and every payment you receive is tracked automatically. There is no manual data entry — your earnings dashboard builds itself from your real activity.',
+          'Every appointment you complete and every payment you receive is tracked automatically. There is no manual data entry, your earnings dashboard builds itself from your real activity.',
       },
       {
         step: 2,
         title: 'Set Your Income Goal',
         description:
-          'Choose a monthly income target. Your dashboard shows your progress, projected earnings, and the gap — giving you a clear financial target to work toward.',
+          'Choose a monthly income target. Your dashboard shows your progress, projected earnings, and the gap, giving you a clear financial target to work toward.',
       },
       {
         step: 3,
@@ -1162,12 +1162,12 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         area: 'Service Analysis',
         daisy: 'Income per hour calculated per service type, ranked by profitability',
-        typical: 'No service-level breakdown — just total income',
+        typical: 'No service-level breakdown, just total income',
       },
       {
         area: 'Client Retention',
         daisy: 'Rebooking rates, visit frequency, churn risk, and lifetime value per client',
-        typical: 'No client retention data — you notice regulars are gone only after months',
+        typical: 'No client retention data, you notice regulars are gone only after months',
       },
       {
         area: 'Goal Setting',
@@ -1182,7 +1182,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         area: 'Trend Visibility',
         daisy: 'Period comparison with growth indicators and seasonal pattern detection',
-        typical: 'No historical comparison — each month is an isolated experience',
+        typical: 'No historical comparison, each month is an isolated experience',
       },
     ],
 
@@ -1191,7 +1191,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         title: 'The Freelance Hairstylist Who Repriced Her Services',
         businessType: 'Freelance Hairstylist',
         scenario:
-          'Zara always felt busy but never felt like she was earning enough. The Daisy\'s service profitability analysis showed her that balayage treatments — her most popular service — earned her significantly less per hour than simple cuts because of the extended processing time. She raised her balayage pricing to reflect the true time investment, and her monthly income increased without adding a single extra appointment to her week.',
+          'Zara always felt busy but never felt like she was earning enough. The Daisy\'s service profitability analysis showed her that balayage treatments, her most popular service, earned her significantly less per hour than simple cuts because of the extended processing time. She raised her balayage pricing to reflect the true time investment, and her monthly income increased without adding a single extra appointment to her week.',
       },
       {
         title: 'The Independent Esthetician Who Caught Client Churn Early',
@@ -1212,7 +1212,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         category: 'Payment & Invoicing',
         slug: 'payment-processing',
         benefit:
-          'Every payment you receive feeds directly into your analytics — income tracking is automatic with zero manual entry.',
+          'Every payment you receive feeds directly into your analytics, income tracking is automatic with zero manual entry.',
       },
       {
         category: 'Booking Management',
@@ -1239,7 +1239,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         {
           title: 'Pricing Recommendations',
           description:
-            'The Daisy\'s AI analyses your service profitability, market positioning, and client demand to suggest optimal pricing for each service — helping you charge what your time is truly worth without losing clients.',
+            'The Daisy\'s AI analyses your service profitability, market positioning, and client demand to suggest optimal pricing for each service, helping you charge what your time is truly worth without losing clients.',
         },
         {
           title: 'Churn Prediction',
@@ -1249,7 +1249,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         {
           title: 'Income Optimisation Insights',
           description:
-            'AI reviews your schedule, service mix, and client data to suggest specific actions that would increase your income — such as promoting underbooked high-margin services or adding availability during high-demand periods.',
+            'AI reviews your schedule, service mix, and client data to suggest specific actions that would increase your income, such as promoting underbooked high-margin services or adding availability during high-demand periods.',
         },
         {
           title: 'Seasonal Forecasting',
@@ -1268,12 +1268,12 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         question: 'How is service profitability calculated?',
         answer:
-          'The Daisy calculates income per hour for each service type by dividing the revenue earned from that service by the actual time spent delivering it — including prep and cleanup time. This gives you a true picture of which services are most valuable for your time.',
+          'The Daisy calculates income per hour for each service type by dividing the revenue earned from that service by the actual time spent delivering it, including prep and cleanup time. This gives you a true picture of which services are most valuable for your time.',
       },
       {
         question: 'What client retention metrics are tracked?',
         answer:
-          'The Daisy tracks rebooking rate (percentage of clients who book a follow-up), visit frequency (how often clients return), average spend per visit, and lifetime value (total earnings from each client over time). Clients are also segmented by loyalty status — regular, at-risk, or lapsed.',
+          'The Daisy tracks rebooking rate (percentage of clients who book a follow-up), visit frequency (how often clients return), average spend per visit, and lifetime value (total earnings from each client over time). Clients are also segmented by loyalty status, regular, at-risk, or lapsed.',
       },
       {
         question: 'Can I set different income goals for different months?',
@@ -1288,12 +1288,12 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         question: 'Can I see my earnings if I work at a salon and do freelance on the side?',
         answer:
-          'Yes. The Daisy tracks income from all sources — salon commissions, freelance appointments, mobile services — in one dashboard. You can filter by source to see how much you earn from each, or view the combined total for a complete picture of your financial position.',
+          'Yes. The Daisy tracks income from all sources, salon commissions, freelance appointments, mobile services, in one dashboard. You can filter by source to see how much you earn from each, or view the combined total for a complete picture of your financial position.',
       },
       {
         question: 'How far back can I see my earnings history?',
         answer:
-          'Your entire earnings history from the day you start using The Daisy is available permanently. You can view, compare, and export data from any period — last week, last quarter, or your entire career on the platform. The longer you use The Daisy, the more valuable your historical data becomes for spotting trends and planning ahead.',
+          'Your entire earnings history from the day you start using The Daisy is available permanently. You can view, compare, and export data from any period, last week, last quarter, or your entire career on the platform. The longer you use The Daisy, the more valuable your historical data becomes for spotting trends and planning ahead.',
       },
     ],
 

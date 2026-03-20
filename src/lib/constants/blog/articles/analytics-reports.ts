@@ -828,7 +828,7 @@ const dataDrivenSalonsArticle: LocalBlogPost = {
 <h3>"My salon is too small for data to matter."</h3>
 <p>Small salons actually benefit more from data-driven management because every decision has a proportionally larger impact. A single pricing or scheduling improvement in a 2-chair salon can move the needle by 10-15% of revenue. In a 20-chair salon, the same improvement might move revenue by 2-3%.</p>
 
-<h3>"Beauty is creative — you can't reduce it to numbers."</h3>
+<h3>"Beauty is creative. You can't reduce it to numbers."</h3>
 <p>Data-driven management does not replace creativity or personal service. It frees you to focus more on those things by handling the operational and financial decisions that drain your creative energy. The best salons in the world combine exceptional artistry with rigorous business management.</p>
 
 <h3>"My intuition has worked fine so far."</h3>

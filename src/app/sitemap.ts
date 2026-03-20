@@ -6,6 +6,7 @@ import { getAllGlossarySlugs } from '@/lib/constants/glossary/glossaryData';
 import { getAllGuideSlugs } from '@/lib/constants/guides/guideData';
 import { getAllFeatureDeepDiveSlugs } from '@/lib/constants/features/featureDeepDive';
 import { getAllPillarSlugs } from '@/lib/constants/pillars';
+import { getAllAngleParams } from '@/lib/constants/solutions/angles';
 
 const BASE_URL = 'https://www.jointhedaisy.com';
 const LOCALES = ['en', 'ar'];
@@ -128,7 +129,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     localizedEntries(`/features/professional/${slug}`, { lastModified: SEO_CONTENT_DATE, changeFrequency: 'monthly', priority: 0.8 })
   );
 
-  // Pillar pages — top-level authority pages (highest SEO priority after homepage)
+  // Solution angle landing pages (7 angles x 2 personas = 14 pages)
+  const solutionAnglePages = getAllAngleParams().flatMap(({ slug, persona }) =>
+    localizedEntries(`/solutions/${slug}/${persona}`, {
+      lastModified: SEO_CONTENT_DATE,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    })
+  );
+
+  // Pillar pages, top-level authority pages (highest SEO priority after homepage)
   const pillarPages = getAllPillarSlugs().flatMap((slug) =>
     localizedEntries(`/${slug}`, {
       lastModified: SEO_CONTENT_DATE,
@@ -153,6 +163,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...guidePages,
     ...featureDeepDiveBusinessPages,
     ...featureDeepDiveProfessionalPages,
+    ...solutionAnglePages,
     ...pillarPages,
   ];
 }

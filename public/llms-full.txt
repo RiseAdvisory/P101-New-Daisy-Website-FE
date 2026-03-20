@@ -8,7 +8,7 @@
 - **Type**: B2B SaaS platform for beauty and wellness businesses
 - **Founded**: Pre-launch, pilot partners committed
 - **Markets**: GCC (UAE, Saudi Arabia, Kuwait, Bahrain, Oman, Qatar) and global
-- **Languages**: Full multilingual support — English and Arabic with native RTL support, more languages coming
+- **Languages**: Full multilingual support. English and Arabic with native RTL support, more languages coming
 - **Platforms**: iOS App, Android App, Progressive Web App, Mobile Web
 
 ## What Makes Daisy Different
@@ -371,7 +371,7 @@ URL: https://www.jointhedaisy.com/en/compare/daisy-vs-acuity-scheduling
 - https://www.jointhedaisy.com/en/resources/testimonials
 - https://www.jointhedaisy.com/en/resources/updates
 
-### Blog Articles (118 articles — selected highlights)
+### Blog Articles (118 articles, selected highlights)
 
 **Daisy Platform Advantage (8 articles):**
 - https://www.jointhedaisy.com/en/resources/blog/business/ai-receptionist-salon-customer-service

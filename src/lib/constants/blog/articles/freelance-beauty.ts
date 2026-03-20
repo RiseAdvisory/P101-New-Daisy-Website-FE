@@ -32,7 +32,7 @@ const defaultIconOwner = {
 // ---------------------------------------------------------------------------
 // Article 1: Freelance Stylist Scheduling: Managing Your Own Calendar
 // Type: Guide | User: Professional | Category: Freelance Beauty
-// Cluster 2 — parent pillar: /beauty-booking-system
+// Cluster 2 - parent pillar: /beauty-booking-system
 // ---------------------------------------------------------------------------
 const freelanceStylistSchedulingArticle: LocalBlogPost = {
   id: 211,
@@ -171,7 +171,7 @@ const freelanceStylistSchedulingArticle: LocalBlogPost = {
 // ---------------------------------------------------------------------------
 // Article 2: Going Freelance as a Beauty Professional: Pros & Cons
 // Type: Guide | User: Professional | Category: Freelance Beauty
-// Cluster 8 — parent pillar: /freelance-beauty-professional-guide
+// Cluster 8 - parent pillar: /freelance-beauty-professional-guide
 // ---------------------------------------------------------------------------
 const goingFreelanceArticle: LocalBlogPost = {
   id: 217,

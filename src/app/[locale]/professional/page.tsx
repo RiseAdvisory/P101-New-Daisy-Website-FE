@@ -9,7 +9,7 @@ import { professionalPageData } from '@/lib/constants/pages/professionalPage';
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'Beauty Professional App — Manage Bookings & Grow Clients | The Daisy',
+  title: 'Beauty Professional App. Manage Bookings & Grow Clients | The Daisy',
   description:
     'Join The Daisy as a beauty professional. Manage bookings, track earnings, build your client base, and grow your career with flexible scheduling and 24/7 AI support.',
   keywords: [
@@ -25,7 +25,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'wellness professional',
   ],
   openGraph: {
-    title: 'Beauty Professional App — Manage Bookings & Grow Clients | The Daisy',
+    title: 'Beauty Professional App. Manage Bookings & Grow Clients | The Daisy',
     description:
       'Join The Daisy as a beauty professional. Manage bookings, track earnings, build your client base, and grow your career with flexible scheduling and 24/7 AI support.',
     url: `https://www.jointhedaisy.com/${locale}/professional`,
@@ -41,7 +41,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Beauty Professional App — Manage Bookings & Grow Clients | The Daisy',
+    title: 'Beauty Professional App. Manage Bookings & Grow Clients | The Daisy',
     description:
       'Join The Daisy as a beauty professional. Manage bookings, track earnings, build your client base, and grow your career with flexible scheduling and 24/7 AI support.',
     images: ['/images/og/og-default.jpg'],
@@ -70,6 +70,7 @@ export default function ProfessionalPage({ params }: { params: { locale: string 
           subHeadline={pageData.hero.subHeadline}
           ctaText={pageData.hero.ctaText}
           ctaLink={pageData.hero.ctaLink}
+          trustLine={pageData.hero.trustLine}
           answerBlock={pageData.hero.answerBlock}
         />
       )}

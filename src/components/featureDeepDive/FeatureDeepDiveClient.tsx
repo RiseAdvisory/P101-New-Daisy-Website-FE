@@ -149,14 +149,14 @@ export function FeatureDeepDiveClient({ userType, slug }: Props) {
         userType={userType}
       />
 
-      {/* AI Enhancement — shown for non-AI category pages */}
+      {/* AI Enhancement, shown for non-AI category pages */}
       {data.aiEnhancement && (
         <AiEnhancementSection
           capabilities={data.aiEnhancement.capabilities}
         />
       )}
 
-      {/* Network Effects — AI category page only */}
+      {/* Network Effects. AI category page only */}
       {data.networkEffects && (
         <NetworkEffectsSection
           description={data.networkEffects.description}

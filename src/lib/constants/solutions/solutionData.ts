@@ -1,6 +1,9 @@
 // =============================================================================
-// WS2: Solution Page Data — Use-case and vertical pages
+// WS2: Solution Page Data. Use-case and vertical pages
 // =============================================================================
+// IMPORTANT: Solution slugs must NOT overlap with angle landing page slugs
+// defined in src/lib/constants/solutions/angles/index.ts
+// (e.g., ai-receptionist, unified-inbox, brand-control, etc.)
 
 export interface SolutionFaq {
   question: string;
@@ -45,8 +48,8 @@ export const solutions: SolutionData[] = [
     heroSubtitle:
       'Stop managing. Start growing. Daisy\'s AI handles bookings, payments, and customer service 24/7 while you focus on what you do best.',
     definition:
-      'Salon management software is a digital platform that helps hair salons, beauty studios, and multi-service salons handle day-to-day operations — including appointment scheduling, point-of-sale, client records, staff management, and marketing — from a single system. The Daisy is an AI-powered salon management platform that adds 24/7 automated receptionist, cashback-driven customer acquisition, and native Arabic/English support to the standard feature set.',
-    intro: 'Traditional salon software helps you manage appointments and track payments. Daisy goes further — it\'s a growth platform that uses AI to bring in new clients, keep existing ones coming back, and handle the admin work that eats into your day. The global salon software market is projected to reach $712M by 2028, and salons that adopt management software see a 30-40% reduction in no-shows (industry research). From solo stylists to multi-location salons, Daisy scales with your ambitions.',
+      'Salon management software is a digital platform that helps hair salons, beauty studios, and multi-service salons handle day-to-day operations, including appointment scheduling, point-of-sale, client records, staff management, and marketing, from a single system. The Daisy is an AI-powered salon management platform that adds 24/7 automated receptionist, cashback-driven customer acquisition, and native Arabic/English support to the standard feature set.',
+    intro: 'Traditional salon software helps you manage appointments and track payments. Daisy goes further, it\'s a growth platform that uses AI to bring in new clients, keep existing ones coming back, and handle the admin work that eats into your day. The global salon software market is projected to reach $712M by 2028, and salons that adopt management software see a 30-40% reduction in no-shows (industry research). From solo stylists to multi-location salons, Daisy scales with your ambitions.',
     challenges: [
       {
         title: 'Missed calls mean missed revenue',
@@ -78,7 +81,7 @@ export const solutions: SolutionData[] = [
       {
         title: '24/7 AI Receptionist',
         description:
-          'Never miss a booking again. Daisy\'s AI answers calls, messages, and website inquiries in Arabic and English — processing bookings and payments without human intervention.',
+          'Never miss a booking again. Daisy\'s AI answers calls, messages, and website inquiries in Arabic and English, processing bookings and payments without human intervention.',
       },
       {
         title: 'Smart Online Booking',
@@ -103,19 +106,19 @@ export const solutions: SolutionData[] = [
       {
         title: 'Complete Staff Management',
         description:
-          'Schedule staff, track performance, assign services, and manage permissions — all included in flat pricing, no per-staff fees.',
+          'Schedule staff, track performance, assign services, and manage permissions, all included in flat pricing, no per-staff fees.',
       },
     ],
     faqs: [
       {
         question: 'What makes Daisy different from other salon management software?',
         answer:
-          'Daisy is the only salon platform that combines AI receptionist, cashback customer acquisition, and full business management in one platform. While competitors focus on operations, Daisy focuses on growth — with AI that handles bookings, payments, and marketing 24/7 in Arabic and English.',
+          'Daisy is the only salon platform that combines AI receptionist, cashback customer acquisition, and full business management in one platform. While competitors focus on operations, Daisy focuses on growth, with AI that handles bookings, payments, and marketing 24/7 in Arabic and English.',
       },
       {
         question: 'How much does salon management software cost?',
         answer:
-          'Salon software ranges from free (with hidden fees like Fresha) to $400+/mo (Boulevard, Mangomint). Daisy offers flat pricing that includes AI, unlimited staff, and all features — no per-staff surcharges or feature tiers.',
+          'Salon software ranges from free (with hidden fees like Fresha) to $400+/mo (Boulevard, Mangomint). Daisy offers flat pricing that includes AI, unlimited staff, and all features, no per-staff surcharges or feature tiers.',
       },
       {
         question: 'Can I switch from my current salon software?',
@@ -135,7 +138,7 @@ export const solutions: SolutionData[] = [
       {
         question: 'Does Daisy work in Arabic?',
         answer:
-          'Yes. Daisy features a fully native Arabic interface — not a translation layer. The AI receptionist speaks and processes bookings in Arabic and English fluently, and all client-facing elements support RTL layout.',
+          'Yes. Daisy features a fully native Arabic interface, not a translation layer. The AI receptionist speaks and processes bookings in Arabic and English fluently, and all client-facing elements support RTL layout.',
       },
       {
         question: 'What features should I look for in salon software?',
@@ -145,7 +148,7 @@ export const solutions: SolutionData[] = [
       {
         question: 'Is Daisy suitable for a small salon with one stylist?',
         answer:
-          'Absolutely. Daisy scales from solo stylists to multi-location businesses. For solo operators, the AI receptionist is especially valuable — it acts as your virtual front desk, handling calls and bookings while you focus on clients.',
+          'Absolutely. Daisy scales from solo stylists to multi-location businesses. For solo operators, the AI receptionist is especially valuable, it acts as your virtual front desk, handling calls and bookings while you focus on clients.',
       },
       {
         question: 'How does Daisy help reduce salon no-shows?',
@@ -175,10 +178,10 @@ export const solutions: SolutionData[] = [
     ],
     heroTitle: 'Spa Booking System Powered by AI',
     heroSubtitle:
-      'Give your spa guests the seamless experience they expect — from AI-powered booking to personalized treatment reminders.',
+      'Give your spa guests the seamless experience they expect, from AI-powered booking to personalized treatment reminders.',
     definition:
       'A spa booking system is software that enables spas, wellness centers, and day resorts to manage multi-service appointments, therapist schedules, and guest experiences online. The Daisy is an AI-powered spa booking platform that automates guest communication, manages complex multi-therapist sessions, and drives repeat visits through cashback rewards.',
-    intro: 'Spa businesses run on experience — from the first phone call to the post-treatment follow-up. With the global spa industry valued at over $130 billion and growing 10%+ annually, competition is fiercer than ever. Spas using modern booking technology report up to 25% higher rebooking rates. Daisy ensures every touchpoint is exceptional with AI that handles inquiries, books multi-service appointments, and keeps guests coming back with cashback rewards.',
+    intro: 'Spa businesses run on experience, from the first phone call to the post-treatment follow-up. With the global spa industry valued at over $130 billion and growing 10%+ annually, competition is fiercer than ever. Spas using modern booking technology report up to 25% higher rebooking rates. Daisy ensures every touchpoint is exceptional with AI that handles inquiries, books multi-service appointments, and keeps guests coming back with cashback rewards.',
     challenges: [
       {
         title: 'Complex multi-service bookings',
@@ -205,7 +208,7 @@ export const solutions: SolutionData[] = [
       {
         title: '24/7 AI Concierge',
         description:
-          'Daisy\'s AI handles spa inquiries, recommends packages, and books complex multi-service appointments — all in Arabic and English.',
+          'Daisy\'s AI handles spa inquiries, recommends packages, and books complex multi-service appointments, all in Arabic and English.',
       },
       {
         title: 'Smart Multi-Service Scheduling',
@@ -242,7 +245,7 @@ export const solutions: SolutionData[] = [
       {
         question: 'Can Daisy handle multi-therapist spa bookings?',
         answer:
-          'Yes. Daisy\'s AI scheduling optimizes complex multi-service bookings across therapists, rooms, and equipment — automatically preventing conflicts and minimizing gaps.',
+          'Yes. Daisy\'s AI scheduling optimizes complex multi-service bookings across therapists, rooms, and equipment, automatically preventing conflicts and minimizing gaps.',
       },
       {
         question: 'Does Daisy support spa package bookings?',
@@ -302,7 +305,7 @@ export const solutions: SolutionData[] = [
     ],
     heroTitle: 'Beauty Salon Software Built for Growth',
     heroSubtitle:
-      'The beauty industry moves fast. Your software should keep up — with AI that books, markets, and grows your salon while you create.',
+      'The beauty industry moves fast. Your software should keep up, with AI that books, markets, and grows your salon while you create.',
     definition:
       'Beauty salon software is a business management platform designed for hair salons, beauty studios, and multi-service beauty businesses to manage bookings, payments, clients, staff, and marketing in one place. The Daisy is an AI-powered beauty salon platform that goes beyond operations to actively acquire and retain clients through cashback rewards and a 24/7 AI receptionist.',
     intro: 'Beauty salons need more than appointment books and payment terminals. In a competitive market where the average salon loses 10-25% of clients each year to natural churn, the salons that thrive are the ones that acquire clients efficiently, retain them with loyalty rewards, and deliver exceptional service. Beauty businesses that miss up to 35% of inbound calls outside business hours are leaving revenue on the table. Daisy is built specifically for beauty professionals who think like business owners.',
@@ -310,7 +313,7 @@ export const solutions: SolutionData[] = [
       {
         title: 'Competition is fierce',
         description:
-          'New salons open constantly. Standing out requires more than great service — you need smart marketing, a loyalty strategy, and a professional online presence.',
+          'New salons open constantly. Standing out requires more than great service, you need smart marketing, a loyalty strategy, and a professional online presence.',
       },
       {
         title: 'Client retention costs less than acquisition',
@@ -347,7 +350,7 @@ export const solutions: SolutionData[] = [
       {
         title: 'Marketplace Discovery',
         description:
-          'Get discovered by new clients browsing the Daisy marketplace. No 20% commissions — your clients, your revenue.',
+          'Get discovered by new clients browsing the Daisy marketplace. No 20% commissions, your clients, your revenue.',
       },
       {
         title: 'AI Marketing Automation',
@@ -419,7 +422,7 @@ export const solutions: SolutionData[] = [
     slug: 'salon-appointment-scheduling',
     metaTitle: 'AI Salon Appointment Scheduling Software | Daisy',
     metaDescription:
-      'Automate salon scheduling with AI. Daisy handles bookings, reduces no-shows, and optimizes your calendar — so you focus on clients, not admin.',
+      'Automate salon scheduling with AI. Daisy handles bookings, reduces no-shows, and optimizes your calendar, so you focus on clients, not admin.',
     keywords: [
       'salon appointment scheduling',
       'salon scheduling software',
@@ -431,8 +434,8 @@ export const solutions: SolutionData[] = [
     heroSubtitle:
       'Stop playing phone tag. Let AI fill your calendar, reduce no-shows, and optimize every hour of your day.',
     definition:
-      'Salon appointment scheduling software automates the process of booking, confirming, and managing client appointments for salons and beauty businesses — replacing phone-based booking with online self-service and automated reminders. The Daisy is an AI-powered scheduling platform that handles the entire booking flow 24/7 in Arabic and English, including payment collection and no-show prevention.',
-    intro: 'Appointment scheduling is the backbone of every salon. But manual scheduling — phone calls, DMs, back-and-forth texts — wastes hours every week. Studies show that 60% of online bookings happen outside business hours, and automated reminders reduce no-shows by up to 40%. Daisy\'s AI handles the entire scheduling flow: from inquiry to booking to payment to reminder, in Arabic and English, 24/7.',
+      'Salon appointment scheduling software automates the process of booking, confirming, and managing client appointments for salons and beauty businesses, replacing phone-based booking with online self-service and automated reminders. The Daisy is an AI-powered scheduling platform that handles the entire booking flow 24/7 in Arabic and English, including payment collection and no-show prevention.',
+    intro: 'Appointment scheduling is the backbone of every salon. But manual scheduling, phone calls, DMs, back-and-forth texts, wastes hours every week. Studies show that 60% of online bookings happen outside business hours, and automated reminders reduce no-shows by up to 40%. Daisy\'s AI handles the entire scheduling flow: from inquiry to booking to payment to reminder, in Arabic and English, 24/7.',
     challenges: [
       {
         title: 'Phone tag wastes everyone\'s time',
@@ -459,7 +462,7 @@ export const solutions: SolutionData[] = [
       {
         title: 'AI-Powered Self-Service Booking',
         description:
-          'Clients book directly from any channel — website, phone, social media, marketplace. AI handles the conversation, checks availability, and processes payment.',
+          'Clients book directly from any channel, website, phone, social media, marketplace. AI handles the conversation, checks availability, and processes payment.',
       },
       {
         title: 'Smart Schedule Optimization',
@@ -474,12 +477,12 @@ export const solutions: SolutionData[] = [
       {
         title: '24/7 AI Phone Handling',
         description:
-          'Never miss a call. AI answers in Arabic or English, books appointments, and handles common questions — even at 2 AM.',
+          'Never miss a call. AI answers in Arabic or English, books appointments, and handles common questions, even at 2 AM.',
       },
       {
         title: 'Multi-Channel Booking Sync',
         description:
-          'Website, phone, walk-in, marketplace, social — all bookings sync to one calendar in real-time. Zero conflicts.',
+          'Website, phone, walk-in, marketplace, social, all bookings sync to one calendar in real-time. Zero conflicts.',
       },
       {
         title: 'Waitlist & Cancellation Fill',
@@ -496,7 +499,7 @@ export const solutions: SolutionData[] = [
       {
         question: 'How does AI scheduling work?',
         answer:
-          'Daisy\'s AI answers calls and messages, understands what service the client wants, checks real-time availability across all staff, suggests optimal time slots, processes payment or deposit, and sends confirmation — all without human intervention.',
+          'Daisy\'s AI answers calls and messages, understands what service the client wants, checks real-time availability across all staff, suggests optimal time slots, processes payment or deposit, and sends confirmation, all without human intervention.',
       },
       {
         question: 'Can clients book through WhatsApp?',
@@ -521,7 +524,7 @@ export const solutions: SolutionData[] = [
       {
         question: 'How does Daisy prevent double-bookings?',
         answer:
-          'All booking channels — phone, website, walk-in, social media, and marketplace — sync to a single real-time calendar. The AI checks availability before confirming any booking, making double-bookings impossible.',
+          'All booking channels, phone, website, walk-in, social media, and marketplace, sync to a single real-time calendar. The AI checks availability before confirming any booking, making double-bookings impossible.',
       },
       {
         question: 'What happens when a client cancels an appointment?',
@@ -549,10 +552,10 @@ export const solutions: SolutionData[] = [
     metaDescription: 'Run your barbershop smarter with AI booking, walk-in management, and cashback loyalty. No per-barber pricing.',
     keywords: ['barbershop software', 'barber booking software', 'barbershop management', 'barber scheduling app'],
     heroTitle: 'Barbershop Software That Works as Hard as You Do',
-    heroSubtitle: 'Walk-ins, regulars, and everything in between — managed by AI so you focus on the chair.',
+    heroSubtitle: 'Walk-ins, regulars, and everything in between, managed by AI so you focus on the chair.',
     definition:
       'Barbershop software is a management platform built for barbershops that handles walk-in queues, scheduled appointments, barber preferences, and payments. The Daisy is an AI-powered barbershop platform with flat pricing (no per-barber fees), walk-in/appointment hybrid management, and cashback loyalty.',
-    intro: 'Barbershops run differently than salons. Walk-ins are common, regulars expect their usual, and the vibe matters. The men\'s grooming market has grown to over $80 billion globally, and barbershops that adopt digital booking see up to 30% more appointments from online channels. Daisy understands barbershop culture and provides tools that match — from AI that handles calls to flat pricing that doesn\'t charge per barber.',
+    intro: 'Barbershops run differently than salons. Walk-ins are common, regulars expect their usual, and the vibe matters. The men\'s grooming market has grown to over $80 billion globally, and barbershops that adopt digital booking see up to 30% more appointments from online channels. Daisy understands barbershop culture and provides tools that match, from AI that handles calls to flat pricing that doesn\'t charge per barber.',
     challenges: [
       { title: 'Walk-in management chaos', description: 'Balancing walk-ins with appointments without frustrating either group.' },
       { title: 'Per-barber pricing kills growth', description: 'Adding a new barber to the team shouldn\'t cost $30+/mo extra.' },
@@ -566,15 +569,15 @@ export const solutions: SolutionData[] = [
       { title: 'Cashback Loyalty', description: 'Turn walk-ins into regulars with cashback rewards that bring them back.' },
     ],
     faqs: [
-      { question: 'Is Daisy good for barbershops?', answer: 'Yes. Daisy supports walk-in management, barber preferences, flat pricing (no per-barber fees), and AI phone handling — all designed for how barbershops actually operate.' },
+      { question: 'Is Daisy good for barbershops?', answer: 'Yes. Daisy supports walk-in management, barber preferences, flat pricing (no per-barber fees), and AI phone handling, all designed for how barbershops actually operate.' },
       { question: 'How does Daisy compare to SQUIRE for barbershops?', answer: 'SQUIRE is barbershop-specific but US-only with per-barber pricing. Daisy offers flat pricing, AI, Arabic support, and cashback that SQUIRE lacks.' },
       { question: 'What is the best barbershop software in 2026?', answer: 'For barbershops wanting AI booking, walk-in management, and flat pricing, Daisy leads. SQUIRE is barbershop-specific but US-only and charges per barber. Booksy is popular for mobile booking but lacks AI and cashback features.' },
-      { question: 'How much does barbershop software cost?', answer: 'Barbershop software ranges from $25/mo (basic tools) to $100+/barber/mo (SQUIRE). Daisy uses flat pricing — add your whole team without per-barber fees, including AI receptionist and all features.' },
+      { question: 'How much does barbershop software cost?', answer: 'Barbershop software ranges from $25/mo (basic tools) to $100+/barber/mo (SQUIRE). Daisy uses flat pricing, add your whole team without per-barber fees, including AI receptionist and all features.' },
       { question: 'Can Daisy manage walk-ins and appointments together?', answer: 'Yes. Daisy\'s hybrid system manages walk-ins and scheduled appointments side by side. AI estimates wait times for walk-ins and notifies clients when their barber is ready.' },
       { question: 'Does barbershop software work in Arabic?', answer: 'Daisy is one of the few barbershop platforms with a fully native Arabic interface. The AI receptionist handles calls and bookings in Arabic and English, making it ideal for barbershops in the GCC.' },
       { question: 'How does Daisy help barbershops get more clients?', answer: 'Daisy brings in new clients through the marketplace (where people discover barbershops), cashback rewards (incentivizing repeat visits and referrals), and AI marketing automation that runs targeted campaigns on autopilot.' },
       { question: 'Can clients request their preferred barber when booking?', answer: 'Yes. Clients can select their preferred barber during booking, and AI remembers their preference for future bookings. Regulars are automatically matched with their usual barber.' },
-      { question: 'Does Daisy support barbershop loyalty programs?', answer: 'Yes. Daisy\'s cashback rewards system turns walk-ins into regulars. Clients earn cashback on every visit, creating a financial incentive to keep coming back — more effective than traditional punch cards.' },
+      { question: 'Does Daisy support barbershop loyalty programs?', answer: 'Yes. Daisy\'s cashback rewards system turns walk-ins into regulars. Clients earn cashback on every visit, creating a financial incentive to keep coming back, more effective than traditional punch cards.' },
     ],
     relatedSolutions: ['salon-management-software', 'salon-appointment-scheduling'],
     relatedComparisons: ['daisy-vs-booksy', 'daisy-vs-vagaro'],
@@ -585,7 +588,7 @@ export const solutions: SolutionData[] = [
     metaDescription: 'Manage your nail salon with AI booking, service tracking, and cashback loyalty. Built for nail techs and salon owners.',
     keywords: ['nail salon software', 'nail salon management', 'nail salon booking', 'nail tech software'],
     heroTitle: 'Nail Salon Software Designed for Growth',
-    heroSubtitle: 'From quick manicures to luxury nail art — manage bookings, retain clients, and grow with AI.',
+    heroSubtitle: 'From quick manicures to luxury nail art, manage bookings, retain clients, and grow with AI.',
     definition:
       'Nail salon software is a booking and business management platform for nail salons, nail bars, and nail technicians to manage appointments, services, client preferences, and retail sales. The Daisy is an AI-powered nail salon platform that automates bookings, drives repeat visits with cashback, and manages your business from one dashboard.',
     intro: 'Nail salons have unique needs: varied service durations, multiple techs working simultaneously, and clients who value consistency. The nail care market is projected to exceed $15 billion by 2027, and nail salons with automated rebooking reminders see up to 20% higher client return rates. Daisy handles the scheduling complexity while AI builds client loyalty through personalized experiences and cashback rewards.',
@@ -605,8 +608,8 @@ export const solutions: SolutionData[] = [
       { question: 'What is the best nail salon software in 2026?', answer: 'For nail salons wanting AI booking, automated rebooking, and cashback loyalty, Daisy is the top choice. GlossGenius is popular for solo nail techs on a budget. Fresha offers free basic booking but charges per transaction.' },
       { question: 'How much does nail salon software cost?', answer: 'Nail salon software ranges from free (Fresha, with transaction fees) to $200+/mo for full platforms. Daisy offers flat pricing that includes AI, unlimited techs, rebooking automation, and all features.' },
       { question: 'How does Daisy help nail salons retain clients?', answer: 'Daisy sends automated rebooking reminders when it\'s time for fills or new sets, offers cashback rewards that build with each visit, and uses AI to send personalized offers based on client history and preferences.' },
-      { question: 'Does Daisy work for independent nail technicians?', answer: 'Yes. Daisy scales from solo nail techs to multi-location nail bars. For independent techs, the AI receptionist is invaluable — handling calls and bookings while you focus on your client\'s nails.' },
-      { question: 'Can nail salon clients book online with Daisy?', answer: 'Yes. Clients book 24/7 from your website, social media, or the Daisy marketplace. The AI handles service selection, duration, and payment — even at 2 AM.' },
+      { question: 'Does Daisy work for independent nail technicians?', answer: 'Yes. Daisy scales from solo nail techs to multi-location nail bars. For independent techs, the AI receptionist is invaluable, handling calls and bookings while you focus on your client\'s nails.' },
+      { question: 'Can nail salon clients book online with Daisy?', answer: 'Yes. Clients book 24/7 from your website, social media, or the Daisy marketplace. The AI handles service selection, duration, and payment, even at 2 AM.' },
       { question: 'Does Daisy support walk-in management for nail salons?', answer: 'Yes. Daisy provides a fair digital queue for walk-ins with real-time wait time estimates. Walk-in clients can join the queue online and get notified when their turn is approaching.' },
       { question: 'Can I track nail service preferences in Daisy?', answer: 'Yes. Daisy\'s client profiles store preferred nail shapes, colors, gel vs. acrylic preferences, allergies, and full service history. AI uses this data to personalize every rebooking reminder.' },
       { question: 'Does nail salon software work in Arabic?', answer: 'Daisy features a fully native Arabic interface with RTL layout support. The AI receptionist communicates in Arabic and English, making it the ideal choice for nail salons in the GCC region.' },
@@ -623,7 +626,7 @@ export const solutions: SolutionData[] = [
     heroSubtitle: 'Clinical precision meets AI efficiency. Manage treatments, ensure compliance, and grow your practice.',
     definition:
       'Med spa software is a management platform for medical spas and aesthetic clinics that combines clinical treatment tracking, consent management, and appointment scheduling with business operations. The Daisy is an AI-powered med spa platform that adds automated patient communication, compliance-ready workflows, and cashback-driven client retention.',
-    intro: 'Med spas operate at the intersection of healthcare and beauty. The medical aesthetics market is expected to surpass $25 billion by 2028, growing at over 14% annually. Yet med spas report that patient retention — not acquisition — is their biggest revenue lever, with a 5% increase in retention yielding up to 25% more profit. You need clinical-grade record keeping, consent management, and treatment tracking — plus the marketing and client experience of a luxury business. Daisy delivers both.',
+    intro: 'Med spas operate at the intersection of healthcare and beauty. The medical aesthetics market is expected to surpass $25 billion by 2028, growing at over 14% annually. Yet med spas report that patient retention, not acquisition, is their biggest revenue lever, with a 5% increase in retention yielding up to 25% more profit. You need clinical-grade record keeping, consent management, and treatment tracking, plus the marketing and client experience of a luxury business. Daisy delivers both.',
     challenges: [
       { title: 'Compliance and consent management', description: 'Medical aesthetic treatments require proper consent forms, treatment records, and compliance documentation.' },
       { title: 'High-value patient retention', description: 'Med spa treatments are expensive. Losing a patient to a competitor is costly.' },
@@ -637,13 +640,13 @@ export const solutions: SolutionData[] = [
     ],
     faqs: [
       { question: 'Is Daisy suitable for medical spas?', answer: 'Yes. Daisy supports consent forms, treatment records, multi-session scheduling, and compliance requirements. The AI concierge handles patient inquiries about treatments professionally.' },
-      { question: 'How does Daisy compare to RepeatMD for med spas?', answer: 'RepeatMD is a $700/mo marketing tool requiring separate operations software. Daisy is a complete platform including AI, booking, POS, and marketing with cashback — all in one.' },
+      { question: 'How does Daisy compare to RepeatMD for med spas?', answer: 'RepeatMD is a $700/mo marketing tool requiring separate operations software. Daisy is a complete platform including AI, booking, POS, and marketing with cashback, all in one.' },
       { question: 'What is the best med spa software in 2026?', answer: 'For AI-powered med spa management with cashback retention, Daisy is the top choice. Boulevard targets luxury practices at $200+/mo. AestheticsPro focuses on charting but lacks AI and marketing. Daisy offers the most complete platform at flat pricing.' },
       { question: 'How much does med spa software cost per month?', answer: 'Med spa software ranges from $150/mo (basic tools) to $700+/mo (RepeatMD for marketing alone, plus operations software). Daisy offers flat pricing that includes AI concierge, consent management, marketing, and all features.' },
       { question: 'Can Daisy handle multi-session treatment plans?', answer: 'Yes. Daisy manages treatment series (e.g., 6-session laser packages) with automated scheduling, session tracking, progress documentation, and AI reminders for upcoming appointments.' },
       { question: 'Does Daisy support digital consent forms for med spas?', answer: 'Yes. Create custom digital consent forms that patients sign on a tablet or phone before treatment. Forms are stored securely alongside treatment records and before/after photos.' },
       { question: 'Can I switch from AestheticsPro or Boulevard to Daisy?', answer: 'Yes. Daisy provides migration support for patient records, treatment history, consent forms, and staff schedules. Most med spas complete the transition in under a week with no disruption.' },
-      { question: 'How does Daisy help med spas retain high-value patients?', answer: 'Daisy combines cashback rewards (patients earn on every treatment), automated follow-up reminders, AI-driven rebooking suggestions, and personalized marketing campaigns — all designed to maximize patient lifetime value.' },
+      { question: 'How does Daisy help med spas retain high-value patients?', answer: 'Daisy combines cashback rewards (patients earn on every treatment), automated follow-up reminders, AI-driven rebooking suggestions, and personalized marketing campaigns, all designed to maximize patient lifetime value.' },
       { question: 'Does med spa software work in Arabic?', answer: 'Daisy features a fully native Arabic interface with RTL support. The AI concierge communicates with patients in Arabic and English, making it ideal for med spas across the GCC region.' },
       { question: 'Can Daisy track before-and-after photos for treatments?', answer: 'Yes. Daisy supports before-and-after photo documentation linked to patient records and specific treatments. Photos are stored securely and can be reviewed during follow-up consultations.' },
     ],
@@ -656,10 +659,10 @@ export const solutions: SolutionData[] = [
     metaDescription: 'Complete salon POS with AI-powered payments, inventory tracking, and cashback rewards. Transparent pricing, no hidden fees.',
     keywords: ['salon pos system', 'salon point of sale', 'beauty salon pos', 'salon payment system'],
     heroTitle: 'Salon POS System with Built-In Growth',
-    heroSubtitle: 'Process payments, track retail, and grow revenue — all from one system with transparent pricing.',
+    heroSubtitle: 'Process payments, track retail, and grow revenue, all from one system with transparent pricing.',
     definition:
-      'A salon POS (point-of-sale) system is payment processing and retail management software designed for salons and beauty businesses, handling service payments, product sales, tips, and revenue tracking. The Daisy is an AI-powered salon POS that integrates payments with booking, CRM, and marketing — with zero transaction fees and transparent flat pricing.',
-    intro: 'Your POS should do more than process payments. Salons that add retail product sales alongside services increase average ticket value by 15-25%, and integrated POS systems reduce checkout time by up to 50% compared to separate tools. Daisy\'s salon POS integrates with AI booking, client profiles, and cashback rewards — turning every transaction into a growth opportunity.',
+      'A salon POS (point-of-sale) system is payment processing and retail management software designed for salons and beauty businesses, handling service payments, product sales, tips, and revenue tracking. The Daisy is an AI-powered salon POS that integrates payments with booking, CRM, and marketing, with zero transaction fees and transparent flat pricing.',
+    intro: 'Your POS should do more than process payments. Salons that add retail product sales alongside services increase average ticket value by 15-25%, and integrated POS systems reduce checkout time by up to 50% compared to separate tools. Daisy\'s salon POS integrates with AI booking, client profiles, and cashback rewards, turning every transaction into a growth opportunity.',
     challenges: [
       { title: 'Hidden transaction fees', description: 'Most POS systems charge 2-3% per transaction. On $10,000/mo in card payments, that\'s $200-300 in fees.' },
       { title: 'Retail tracking', description: 'Selling products alongside services requires integrated inventory and payment in one system.' },
@@ -673,10 +676,10 @@ export const solutions: SolutionData[] = [
     ],
     faqs: [
       { question: 'What POS system is best for salons?', answer: 'For beauty-specific POS with AI and cashback, Daisy leads. For hardware-first POS, Square or Toast are strong. For comprehensive features, Vagaro\'s POS is solid.' },
-      { question: 'How much does a salon POS system cost?', answer: 'Salon POS systems range from free (Square, with per-transaction fees) to $200+/mo for integrated platforms. Daisy offers transparent flat pricing with POS included — no hidden per-transaction fees eating into your revenue.' },
+      { question: 'How much does a salon POS system cost?', answer: 'Salon POS systems range from free (Square, with per-transaction fees) to $200+/mo for integrated platforms. Daisy offers transparent flat pricing with POS included, no hidden per-transaction fees eating into your revenue.' },
       { question: 'Does Daisy charge per-transaction fees?', answer: 'Daisy offers transparent pricing. Unlike many POS systems that charge 2-3% per transaction (which on $10,000/mo in card payments means $200-300 in fees), Daisy\'s pricing is clear and predictable.' },
-      { question: 'Can Daisy POS handle retail product sales?', answer: 'Yes. Daisy\'s POS supports retail product sales alongside services. Track inventory automatically, bundle products with treatments, and see retail performance analytics — all in one system.' },
-      { question: 'Does the salon POS support split payments and tips?', answer: 'Yes. Daisy handles split payments across multiple methods, tip processing, gift card redemption, and cashback rewards — all in a smooth checkout flow that staff learn in minutes.' },
+      { question: 'Can Daisy POS handle retail product sales?', answer: 'Yes. Daisy\'s POS supports retail product sales alongside services. Track inventory automatically, bundle products with treatments, and see retail performance analytics, all in one system.' },
+      { question: 'Does the salon POS support split payments and tips?', answer: 'Yes. Daisy handles split payments across multiple methods, tip processing, gift card redemption, and cashback rewards, all in a smooth checkout flow that staff learn in minutes.' },
       { question: 'Can I switch from Square POS to Daisy?', answer: 'Yes. Daisy provides migration support and is purpose-built for beauty businesses. Unlike generic POS systems like Square, Daisy integrates payments with AI booking, client profiles, and cashback loyalty.' },
       { question: 'Does salon POS software work in Arabic?', answer: 'Daisy\'s POS interface is fully native in Arabic with RTL support. Receipts, client-facing screens, and reporting all work seamlessly in Arabic and English.' },
       { question: 'What payment methods does Daisy POS accept?', answer: 'Daisy supports all major payment methods including credit/debit cards, Apple Pay, Google Pay, Mada (GCC), cash, gift cards, and cashback wallet balance. Multiple methods can be combined in one transaction.' },
@@ -693,8 +696,8 @@ export const solutions: SolutionData[] = [
     heroTitle: 'Salon CRM Powered by AI Intelligence',
     heroSubtitle: 'Know your clients better than they know themselves. AI tracks preferences, predicts needs, and automates retention.',
     definition:
-      'Salon CRM (customer relationship management) software tracks client profiles, visit history, preferences, and communication to help salons build stronger relationships and increase retention. The Daisy is an AI-powered salon CRM that automatically logs client interactions, predicts rebooking needs, and triggers personalized marketing — turning data into revenue.',
-    intro: 'Client relationships are the foundation of every successful salon. Research shows that increasing client retention by just 5% can boost salon profits by 25-95%, and the average salon loses 10-25% of its client base each year to natural churn. Daisy\'s AI-powered CRM goes beyond basic profiles — it predicts behavior, personalizes communications, and automatically engages clients to keep them coming back.',
+      'Salon CRM (customer relationship management) software tracks client profiles, visit history, preferences, and communication to help salons build stronger relationships and increase retention. The Daisy is an AI-powered salon CRM that automatically logs client interactions, predicts rebooking needs, and triggers personalized marketing, turning data into revenue.',
+    intro: 'Client relationships are the foundation of every successful salon. Research shows that increasing client retention by just 5% can boost salon profits by 25-95%, and the average salon loses 10-25% of its client base each year to natural churn. Daisy\'s AI-powered CRM goes beyond basic profiles, it predicts behavior, personalizes communications, and automatically engages clients to keep them coming back.',
     challenges: [
       { title: 'Client churn is invisible', description: 'By the time you notice a regular hasn\'t been in, they\'ve already found another salon.' },
       { title: 'Personalization is manual', description: 'Remembering every client\'s preferences and history requires either perfect memory or good notes.' },
@@ -702,19 +705,19 @@ export const solutions: SolutionData[] = [
     ],
     features: [
       { title: 'AI Churn Prediction', description: 'AI identifies clients at risk of leaving before they stop booking. Automatically triggers re-engagement.' },
-      { title: 'Rich Client Profiles', description: 'Color formulas, product preferences, allergies, service history, spending patterns — all in one view.' },
+      { title: 'Rich Client Profiles', description: 'Color formulas, product preferences, allergies, service history, spending patterns, all in one view.' },
       { title: 'Automated Personalized Marketing', description: 'AI sends the right offer to the right client at the right time. Birthday campaigns, rebooking reminders, win-back sequences.' },
       { title: 'Cashback Retention Engine', description: 'Financial incentives tied to client behavior. Reward loyalty, referrals, and reviews automatically.' },
     ],
     faqs: [
       { question: 'What CRM features do salons need?', answer: 'Essential: client profiles, booking history, automated reminders, marketing campaigns. Advanced: AI churn prediction, personalized offers, cashback loyalty, and multi-channel communication.' },
       { question: 'What is the best salon CRM software in 2026?', answer: 'For AI-powered client management with cashback retention, Daisy is the leading choice. Phorest is strong on client communication. Vagaro offers basic CRM with booking. Daisy uniquely combines AI churn prediction, cashback loyalty, and Arabic support.' },
-      { question: 'How much does salon CRM software cost?', answer: 'Standalone salon CRMs range from $50-200/mo. However, most salons benefit from an integrated platform (CRM + booking + POS + marketing). Daisy includes full CRM in its flat pricing — no extra charge for client management features.' },
+      { question: 'How much does salon CRM software cost?', answer: 'Standalone salon CRMs range from $50-200/mo. However, most salons benefit from an integrated platform (CRM + booking + POS + marketing). Daisy includes full CRM in its flat pricing, no extra charge for client management features.' },
       { question: 'How does AI predict client churn in salons?', answer: 'Daisy\'s AI analyzes booking frequency, spending patterns, and engagement signals to identify clients at risk of leaving. When a regular client\'s visit interval increases, AI automatically triggers re-engagement campaigns before they churn.' },
-      { question: 'Can Daisy CRM track client preferences and formulas?', answer: 'Yes. Daisy stores color formulas, product preferences, allergies, service history, spending patterns, and personal notes — all in one rich client profile. Staff can access this information before each appointment.' },
-      { question: 'Does Daisy CRM support automated marketing?', answer: 'Yes. Daisy automatically sends birthday campaigns, rebooking reminders, win-back sequences for lapsed clients, and personalized offers based on client behavior — without any manual work from your team.' },
+      { question: 'Can Daisy CRM track client preferences and formulas?', answer: 'Yes. Daisy stores color formulas, product preferences, allergies, service history, spending patterns, and personal notes, all in one rich client profile. Staff can access this information before each appointment.' },
+      { question: 'Does Daisy CRM support automated marketing?', answer: 'Yes. Daisy automatically sends birthday campaigns, rebooking reminders, win-back sequences for lapsed clients, and personalized offers based on client behavior, without any manual work from your team.' },
       { question: 'Can I import my existing client database into Daisy?', answer: 'Yes. Daisy supports bulk client import from CSV files, other salon software, and spreadsheets. Your client history, notes, and contact details are preserved during migration.' },
-      { question: 'Does salon CRM software work in Arabic?', answer: 'Daisy\'s CRM is fully native in Arabic with RTL support. Client profiles, automated messages, and marketing campaigns all work seamlessly in Arabic and English — essential for salons in the GCC region.' },
+      { question: 'Does salon CRM software work in Arabic?', answer: 'Daisy\'s CRM is fully native in Arabic with RTL support. Client profiles, automated messages, and marketing campaigns all work seamlessly in Arabic and English, essential for salons in the GCC region.' },
       { question: 'How does cashback improve salon client retention?', answer: 'Cashback creates a financial incentive to return. Unlike points that feel abstract, cashback is real money clients can use on their next visit. Combined with AI timing, clients receive offers when they\'re most likely to rebook.' },
     ],
     relatedSolutions: ['salon-management-software', 'beauty-salon-software'],
@@ -726,30 +729,30 @@ export const solutions: SolutionData[] = [
     metaDescription: 'Grow your salon with AI marketing automation and cashback rewards. Automated campaigns, marketplace listing, and Arabic support.',
     keywords: ['salon marketing software', 'beauty salon marketing', 'salon marketing tools', 'salon advertising'],
     heroTitle: 'Salon Marketing That Runs on Autopilot',
-    heroSubtitle: 'Stop guessing. Let AI handle your marketing with campaigns that actually convert — plus cashback that keeps clients coming back.',
+    heroSubtitle: 'Stop guessing. Let AI handle your marketing with campaigns that actually convert, plus cashback that keeps clients coming back.',
     definition:
-      'Salon marketing software automates promotional campaigns, client outreach, and retention strategies for beauty businesses — including email, SMS, social media, and loyalty programs. The Daisy is an AI-powered salon marketing platform that combines automated campaigns with cashback rewards and marketplace exposure to create a 360-degree customer acquisition engine.',
-    intro: 'Most salon owners don\'t have time for marketing. Between servicing clients and managing operations, social media posts and email campaigns fall behind. Yet salons that invest in marketing automation see 20-30% higher rebooking rates, and personalized campaigns generate 6x higher transaction rates than generic blasts. Daisy\'s AI marketing runs on autopilot — sending the right message to the right client at the right time.',
+      'Salon marketing software automates promotional campaigns, client outreach, and retention strategies for beauty businesses, including email, SMS, social media, and loyalty programs. The Daisy is an AI-powered salon marketing platform that combines automated campaigns with cashback rewards and marketplace exposure to create a 360-degree customer acquisition engine.',
+    intro: 'Most salon owners don\'t have time for marketing. Between servicing clients and managing operations, social media posts and email campaigns fall behind. Yet salons that invest in marketing automation see 20-30% higher rebooking rates, and personalized campaigns generate 6x higher transaction rates than generic blasts. Daisy\'s AI marketing runs on autopilot, sending the right message to the right client at the right time.',
     challenges: [
       { title: 'No time for marketing', description: 'Between clients and admin, marketing always gets pushed to "later."' },
       { title: 'Social media is unpredictable', description: 'Algorithm changes, pay-to-play, and no direct booking path make social media unreliable as a growth channel.' },
       { title: 'Acquisition costs keep rising', description: 'Google ads, social ads, and marketplace commissions get more expensive every year.' },
     ],
     features: [
-      { title: 'AI Campaign Manager', description: 'AI creates, schedules, and optimizes campaigns. Birthday offers, seasonal promotions, and rebooking reminders — automated.' },
+      { title: 'AI Campaign Manager', description: 'AI creates, schedules, and optimizes campaigns. Birthday offers, seasonal promotions, and rebooking reminders, automated.' },
       { title: 'Cashback Acquisition Engine', description: 'Cashback rewards create a financial incentive for booking, referring friends, and leaving reviews.' },
       { title: 'Marketplace Visibility', description: 'Get discovered on the Daisy marketplace by clients actively looking for beauty services in your area.' },
-      { title: 'Multi-Channel Outreach', description: 'Email, SMS, WhatsApp — reach clients on the channel they prefer. AI picks the optimal channel per client.' },
+      { title: 'Multi-Channel Outreach', description: 'Email, SMS, WhatsApp, reach clients on the channel they prefer. AI picks the optimal channel per client.' },
     ],
     faqs: [
-      { question: 'How does AI salon marketing work?', answer: 'Daisy\'s AI analyzes your client data to identify opportunities (lapsed clients, upcoming birthdays, seasonal trends), creates personalized campaigns, and sends them at optimal times — all automatically.' },
+      { question: 'How does AI salon marketing work?', answer: 'Daisy\'s AI analyzes your client data to identify opportunities (lapsed clients, upcoming birthdays, seasonal trends), creates personalized campaigns, and sends them at optimal times, all automatically.' },
       { question: 'What is the best salon marketing software in 2026?', answer: 'For AI-powered marketing with cashback acquisition, Daisy is the top choice. RepeatMD focuses on med spa marketing at $700/mo. Phorest has strong email marketing. Daisy uniquely combines AI campaigns, cashback rewards, and marketplace visibility in one platform.' },
-      { question: 'How much does salon marketing software cost?', answer: 'Standalone salon marketing tools range from $50/mo to $700/mo (RepeatMD). Daisy includes full marketing automation in its flat pricing — AI campaigns, cashback rewards, and marketplace listing, no extra subscription needed.' },
-      { question: 'Does Daisy replace the need for social media marketing?', answer: 'Daisy complements social media by providing a direct booking path from social profiles and converting followers into paying clients. It also provides channels social media can\'t — automated SMS, WhatsApp, and email marketing, plus marketplace discovery.' },
+      { question: 'How much does salon marketing software cost?', answer: 'Standalone salon marketing tools range from $50/mo to $700/mo (RepeatMD). Daisy includes full marketing automation in its flat pricing. AI campaigns, cashback rewards, and marketplace listing, no extra subscription needed.' },
+      { question: 'Does Daisy replace the need for social media marketing?', answer: 'Daisy complements social media by providing a direct booking path from social profiles and converting followers into paying clients. It also provides channels social media can\'t, automated SMS, WhatsApp, and email marketing, plus marketplace discovery.' },
       { question: 'How does cashback marketing work for salons?', answer: 'Clients earn cashback on every booking, referral, and review. This creates a self-reinforcing growth loop: existing clients bring new ones, new clients earn cashback and come back, and your marketing cost per acquisition drops over time.' },
-      { question: 'Can Daisy send automated rebooking reminders?', answer: 'Yes. Daisy\'s AI tracks each client\'s booking patterns and sends personalized rebooking reminders at the optimal time — via their preferred channel (SMS, WhatsApp, or email). No manual work required.' },
-      { question: 'Does salon marketing software work in Arabic?', answer: 'Daisy\'s marketing automation is fully native in Arabic. Automated campaigns, client communications, and marketplace listings all work seamlessly in Arabic and English — essential for salons targeting GCC clients.' },
-      { question: 'How does the Daisy marketplace help salons find new clients?', answer: 'The Daisy marketplace is a discovery platform where new clients search for beauty services in their area. Unlike marketplaces that charge 20% commission, Daisy listing is included in your subscription — your clients, your revenue.' },
+      { question: 'Can Daisy send automated rebooking reminders?', answer: 'Yes. Daisy\'s AI tracks each client\'s booking patterns and sends personalized rebooking reminders at the optimal time, via their preferred channel (SMS, WhatsApp, or email). No manual work required.' },
+      { question: 'Does salon marketing software work in Arabic?', answer: 'Daisy\'s marketing automation is fully native in Arabic. Automated campaigns, client communications, and marketplace listings all work seamlessly in Arabic and English, essential for salons targeting GCC clients.' },
+      { question: 'How does the Daisy marketplace help salons find new clients?', answer: 'The Daisy marketplace is a discovery platform where new clients search for beauty services in their area. Unlike marketplaces that charge 20% commission, Daisy listing is included in your subscription, your clients, your revenue.' },
       { question: 'Can I track which marketing campaigns bring in the most bookings?', answer: 'Yes. Daisy provides full campaign analytics showing open rates, click rates, bookings generated, and revenue attributed to each campaign. AI uses this data to optimize future campaigns automatically.' },
     ],
     relatedSolutions: ['salon-crm-software', 'salon-management-software'],
@@ -763,11 +766,11 @@ export const solutions: SolutionData[] = [
     heroTitle: 'The Salon Booking App Clients Love',
     heroSubtitle: 'Clients book in seconds. AI handles the rest. Cashback keeps them coming back.',
     definition:
-      'A salon booking app is a mobile application that allows customers to discover, book, and pay for salon services from their phone — while giving salon owners a management dashboard for appointments, staff, and payments. The Daisy is an AI-powered booking app available on iOS and Android that connects clients with salons and rewards every booking with cashback.',
-    intro: 'Your clients expect to book instantly from their phone — at 10 PM, on the bus, between meetings. Research shows that 78% of consumers prefer booking appointments online, and salons offering mobile booking see up to 35% more appointments from after-hours bookings. Daisy\'s booking app gives them that convenience while AI manages your calendar, prevents double-bookings, and fills cancellations automatically.',
+      'A salon booking app is a mobile application that allows customers to discover, book, and pay for salon services from their phone, while giving salon owners a management dashboard for appointments, staff, and payments. The Daisy is an AI-powered booking app available on iOS and Android that connects clients with salons and rewards every booking with cashback.',
+    intro: 'Your clients expect to book instantly from their phone, at 10 PM, on the bus, between meetings. Research shows that 78% of consumers prefer booking appointments online, and salons offering mobile booking see up to 35% more appointments from after-hours bookings. Daisy\'s booking app gives them that convenience while AI manages your calendar, prevents double-bookings, and fills cancellations automatically.',
     challenges: [
       { title: 'Clients expect instant booking', description: '78% of consumers prefer booking online. If your salon doesn\'t offer it, competitors do.' },
-      { title: 'Multiple booking channels cause chaos', description: 'Phone, Instagram DM, walk-in, website — without sync, you get double-bookings and missed appointments.' },
+      { title: 'Multiple booking channels cause chaos', description: 'Phone, Instagram DM, walk-in, website, without sync, you get double-bookings and missed appointments.' },
       { title: 'Generic booking pages hurt your brand', description: 'A "Powered by Fresha" booking page doesn\'t reflect your salon\'s personality and sends clients to competitor listings.' },
     ],
     features: [
@@ -778,12 +781,12 @@ export const solutions: SolutionData[] = [
     ],
     faqs: [
       { question: 'What is the best salon booking app?', answer: 'For AI-powered booking with Arabic support and cashback, Daisy leads. For free marketplace-based booking, Fresha is popular. For mobile-first, Booksy has a great app.' },
-      { question: 'How much does a salon booking app cost?', answer: 'Salon booking apps range from free (Fresha, with per-transaction fees) to $200+/mo for premium platforms. Daisy offers flat pricing that includes the booking app, AI receptionist, cashback, and all features — no hidden fees.' },
+      { question: 'How much does a salon booking app cost?', answer: 'Salon booking apps range from free (Fresha, with per-transaction fees) to $200+/mo for premium platforms. Daisy offers flat pricing that includes the booking app, AI receptionist, cashback, and all features, no hidden fees.' },
       { question: 'Can clients book appointments through my salon\'s website?', answer: 'Yes. Daisy provides an embeddable booking widget for your website, plus a standalone branded booking page. Clients book directly without leaving your site, and the experience matches your brand aesthetic.' },
       { question: 'Does the salon booking app work offline?', answer: 'Daisy\'s booking app works online from any device. For staff, the management app includes offline functionality for essential tasks like checking schedules and client profiles when connectivity is limited.' },
-      { question: 'Can I switch from Booksy or Fresha\'s booking app to Daisy?', answer: 'Yes. Daisy provides migration support including client data, booking history, and staff profiles. Unlike Fresha, Daisy\'s booking page is fully white-label — no competitor branding or client poaching.' },
+      { question: 'Can I switch from Booksy or Fresha\'s booking app to Daisy?', answer: 'Yes. Daisy provides migration support including client data, booking history, and staff profiles. Unlike Fresha, Daisy\'s booking page is fully white-label, no competitor branding or client poaching.' },
       { question: 'Does the booking app support Arabic?', answer: 'Yes. Daisy\'s booking app is fully native in Arabic with RTL layout. Clients can browse services, select staff, and complete bookings entirely in Arabic or English.' },
-      { question: 'How does Daisy\'s white-label booking work?', answer: 'Daisy removes all third-party branding from your booking experience. Your logo, your colors, your domain — clients see only your brand. No "Powered by" logos or links to competitor listings.' },
+      { question: 'How does Daisy\'s white-label booking work?', answer: 'Daisy removes all third-party branding from your booking experience. Your logo, your colors, your domain, clients see only your brand. No "Powered by" logos or links to competitor listings.' },
       { question: 'Can clients pay when they book through the app?', answer: 'Yes. Daisy supports full payment or deposit collection at the time of booking. This reduces no-shows and secures revenue. Clients can pay via card, Apple Pay, Google Pay, or Mada (GCC).' },
       { question: 'Does the salon booking app send appointment reminders?', answer: 'Yes. Automated reminders are sent via SMS, WhatsApp, or email based on client preference. Reminders go out at configurable intervals (e.g., 24 hours and 1 hour before the appointment) to minimize no-shows.' },
     ],
@@ -793,33 +796,33 @@ export const solutions: SolutionData[] = [
   {
     slug: 'beauty-business-management',
     metaTitle: 'Beauty Business Management Platform | Daisy',
-    metaDescription: 'Complete beauty business management with AI. Booking, POS, staff, marketing, and cashback — all in one platform. Arabic + English.',
+    metaDescription: 'Complete beauty business management with AI. Booking, POS, staff, marketing, and cashback, all in one platform. Arabic + English.',
     keywords: ['beauty business management', 'beauty business software', 'salon business management', 'beauty industry software'],
     heroTitle: 'Beauty Business Management, Reimagined with AI',
     heroSubtitle: 'One platform for everything: booking, payments, staff, marketing, and growth. Powered by AI, built for beauty.',
     definition:
-      'Beauty business management software is an all-in-one platform that consolidates booking, payments, staff scheduling, CRM, marketing, and analytics for beauty and wellness businesses. The Daisy is an AI-powered beauty management platform that replaces 5+ separate tools with one system — adding AI receptionist, cashback loyalty, and marketplace exposure that traditional tools lack.',
-    intro: 'Running a beauty business means wearing many hats: stylist, manager, marketer, accountant. The average beauty business owner uses 4-6 separate software tools, costing $300-500/mo combined and creating data silos that hide critical insights. The global beauty and personal care market is worth over $625 billion and growing, making efficient management more important than ever. Daisy consolidates every tool you need into one AI-powered platform — so you can focus on the creative work that brought you to this industry.',
+      'Beauty business management software is an all-in-one platform that consolidates booking, payments, staff scheduling, CRM, marketing, and analytics for beauty and wellness businesses. The Daisy is an AI-powered beauty management platform that replaces 5+ separate tools with one system, adding AI receptionist, cashback loyalty, and marketplace exposure that traditional tools lack.',
+    intro: 'Running a beauty business means wearing many hats: stylist, manager, marketer, accountant. The average beauty business owner uses 4-6 separate software tools, costing $300-500/mo combined and creating data silos that hide critical insights. The global beauty and personal care market is worth over $625 billion and growing, making efficient management more important than ever. Daisy consolidates every tool you need into one AI-powered platform, so you can focus on the creative work that brought you to this industry.',
     challenges: [
-      { title: 'Tool sprawl', description: 'Booking tool, POS, CRM, marketing, accounting — 5+ subscriptions with no integration.' },
+      { title: 'Tool sprawl', description: 'Booking tool, POS, CRM, marketing, accounting, 5+ subscriptions with no integration.' },
       { title: 'Data silos', description: 'When your tools don\'t talk to each other, you miss insights that could grow your business.' },
       { title: 'Scaling complexity', description: 'What works for one location breaks at two. Growth requires systems, not more manual work.' },
     ],
     features: [
-      { title: 'All-in-One Platform', description: 'Booking, POS, CRM, marketing, inventory, reporting, and AI — one login, one subscription.' },
+      { title: 'All-in-One Platform', description: 'Booking, POS, CRM, marketing, inventory, reporting, and AI, one login, one subscription.' },
       { title: 'AI Business Intelligence', description: 'AI connects all your data to surface insights: revenue trends, client behavior, staff performance, growth opportunities.' },
       { title: 'Multi-Location Ready', description: 'Open your second location without opening a second set of problems. Centralized management, location-specific details.' },
-      { title: 'Growth Engine Built-In', description: 'AI marketing, cashback rewards, and marketplace — acquisition and retention on autopilot.' },
+      { title: 'Growth Engine Built-In', description: 'AI marketing, cashback rewards, and marketplace, acquisition and retention on autopilot.' },
     ],
     faqs: [
-      { question: 'What is beauty business management software?', answer: 'Beauty business management software handles booking, payments, client management, staff scheduling, marketing, and reporting — ideally in one integrated platform. Daisy adds AI and cashback to this foundation.' },
+      { question: 'What is beauty business management software?', answer: 'Beauty business management software handles booking, payments, client management, staff scheduling, marketing, and reporting, ideally in one integrated platform. Daisy adds AI and cashback to this foundation.' },
       { question: 'What is the best beauty business management platform in 2026?', answer: 'For all-in-one management with AI and cashback, Daisy is the leading choice. Vagaro is a solid mid-range option. Mindbody targets fitness and wellness. Boulevard focuses on luxury. Daisy uniquely combines all features with AI and Arabic support at flat pricing.' },
       { question: 'How much does beauty business management software cost?', answer: 'Individual tools (booking + POS + CRM + marketing) can cost $300-500/mo combined. All-in-one platforms range from $50/mo (basic) to $400+/mo (premium). Daisy offers flat pricing that replaces multiple subscriptions with one comprehensive platform.' },
       { question: 'Can I replace multiple software tools with Daisy?', answer: 'Yes. Daisy replaces your booking tool, POS, CRM, marketing software, client management, and reporting tools with one integrated platform. Most beauty businesses eliminate 4-6 separate subscriptions after switching.' },
       { question: 'Does Daisy support multiple beauty business locations?', answer: 'Yes. Daisy offers centralized multi-location management with shared client databases, location-specific staff and services, consolidated reporting, and a single dashboard to control everything.' },
       { question: 'How does Daisy help beauty businesses grow?', answer: 'Daisy drives growth through three engines: AI receptionist (captures every inquiry 24/7), cashback rewards (turns first-timers into regulars who refer friends), and marketplace visibility (new clients discover you). All automated, no extra effort.' },
       { question: 'Can I switch from Vagaro or Mindbody to Daisy?', answer: 'Yes. Daisy provides full migration support including client databases, service menus, booking history, and staff profiles. Most businesses complete the switch in under a week with zero downtime.' },
-      { question: 'Does beauty business software work in Arabic?', answer: 'Daisy is built with native Arabic support — not a translation layer. Every feature from booking to reporting to AI receptionist works natively in Arabic and English, with full RTL layout support.' },
+      { question: 'Does beauty business software work in Arabic?', answer: 'Daisy is built with native Arabic support, not a translation layer. Every feature from booking to reporting to AI receptionist works natively in Arabic and English, with full RTL layout support.' },
       { question: 'What reporting and analytics does Daisy provide?', answer: 'Daisy offers real-time dashboards covering revenue, bookings, staff performance, client retention, marketing ROI, and cashback program metrics. AI surfaces actionable insights and growth opportunities automatically.' },
     ],
     relatedSolutions: ['salon-management-software', 'beauty-salon-software', 'spa-booking-system'],

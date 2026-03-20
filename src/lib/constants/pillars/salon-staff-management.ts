@@ -24,18 +24,18 @@ export const salonStaffManagement: PillarPageData = {
   lastUpdated: '2026-03-18T00:00:00.000Z',
 
   keyTakeaways: [
-    'The beauty industry averages 30-40% annual staff turnover — salons with structured management and transparent compensation cut this by half.',
+    'The beauty industry averages 30-40% annual staff turnover, salons with structured management and transparent compensation cut this by half.',
     'Scheduling efficiency directly impacts profitability: a 10% improvement in staff utilization can increase salon revenue by 15-20% without adding headcount.',
     'Commission structures that include tiered rates and performance bonuses align staff incentives with business growth.',
     'Role-based permissions protect sensitive business data while empowering team members with the access they need to do their jobs.',
-    'Retention is cheaper than recruitment — replacing a stylist costs $3,000-$8,000 in hiring, training, and lost client revenue.',
+    'Retention is cheaper than recruitment, replacing a stylist costs $3,000-$8,000 in hiring, training, and lost client revenue.',
     'Technology automates the most time-consuming aspects of staff management, freeing salon owners to focus on leadership rather than logistics.',
   ],
 
-  introduction: `<p>Your team is the heart of your salon. Every client experience, every review, every referral, and every dollar of revenue flows through the people you hire and how you manage them. Yet staff management is the area where most salon owners feel least confident — and where the consequences of getting it wrong are most severe.</p>
+  introduction: `<p>Your team is the heart of your salon. Every client experience, every review, every referral, and every dollar of revenue flows through the people you hire and how you manage them. Yet staff management is the area where most salon owners feel least confident, and where the consequences of getting it wrong are most severe.</p>
 <p>The beauty industry has a staff turnover problem. Average annual turnover rates of 30-40% mean that many salons are essentially rebuilding their team every two to three years. The cost is staggering: each departing stylist takes their clients, their institutional knowledge, and the months of investment you made in training and integration. Replacing them costs $3,000-$8,000 in direct expenses, and the lost revenue from clients who follow their stylist can be many times that.</p>
 <p>This guide covers every dimension of salon staff management: hiring the right people, building schedules that maximize productivity without burning out your team, designing compensation structures that motivate and retain, managing performance constructively, setting up appropriate access controls, and building a culture that makes people want to stay.</p>
-<p>Whether you manage a team of two or twenty, the principles are the same. Great team management is not about control — it is about creating an environment where talented people can do their best work, grow their careers, and build something meaningful with you. Modern <a href="/en/features/business/team-management">team management technology</a> makes this achievable at any scale.</p>`,
+<p>Whether you manage a team of two or twenty, the principles are the same. Great team management is not about control. It is about creating an environment where talented people can do their best work, grow their careers, and build something meaningful with you. Modern <a href="/en/features/business/team-management">team management technology</a> makes this achievable at any scale.</p>`,
 
   sections: [
     // =========================================================================
@@ -88,7 +88,7 @@ export const salonStaffManagement: PillarPageData = {
 
 <h3>The Link Between Team Health and Client Experience</h3>
 <p>Client satisfaction is a mirror of team satisfaction. When your team is stressed, underappreciated, or uncertain about their schedule and compensation, it shows in every client interaction. Conversely, a team that feels valued, fairly compensated, and empowered delivers the kind of service that generates five-star reviews and loyal clients.</p>
-<p>Research in the beauty industry consistently shows a direct correlation between staff satisfaction scores and client Net Promoter Scores. Salons in the top quartile for employee satisfaction are also in the top quartile for client retention. The connection is not coincidental — it is causal.</p>
+<p>Research in the beauty industry consistently shows a direct correlation between staff satisfaction scores and client Net Promoter Scores. Salons in the top quartile for employee satisfaction are also in the top quartile for client retention. The connection is not coincidental. It is causal.</p>
 
 <h3>Common Team Management Failures</h3>
 <p>Salon owners typically struggle with team management in predictable ways:</p>
@@ -114,7 +114,7 @@ export const salonStaffManagement: PillarPageData = {
     {
       id: 'hiring-the-right-people',
       title: 'Hiring the Right People for Your Salon',
-      content: `<p>Every great team starts with great hiring decisions. The cost of a bad hire in a salon environment is uniquely high because clients form relationships with individual stylists — when that stylist leaves, clients often follow. Hiring right the first time is not just an HR best practice; it is a client retention strategy.</p>
+      content: `<p>Every great team starts with great hiring decisions. The cost of a bad hire in a salon environment is uniquely high because clients form relationships with individual stylists, when that stylist leaves, clients often follow. Hiring right the first time is not just an HR best practice; it is a client retention strategy.</p>
 
 <h3>Define the Role Before You Recruit</h3>
 <p>Before posting a job listing, create a detailed role profile that covers:</p>
@@ -130,7 +130,7 @@ export const salonStaffManagement: PillarPageData = {
 <p>The best candidates are often not actively job-hunting. Diversify your sourcing beyond job boards:</p>
 <ul>
   <li><strong>Industry referrals:</strong> Ask your current team, product suppliers, and industry contacts. Referred candidates have 2x higher retention rates than job board hires.</li>
-  <li><strong>Beauty schools:</strong> Build relationships with local training programs. Offer mentorship placements or workshops — the best students will approach you when they graduate.</li>
+  <li><strong>Beauty schools:</strong> Build relationships with local training programs. Offer mentorship placements or workshops, the best students will approach you when they graduate.</li>
   <li><strong>Social media recruiting:</strong> Post on Instagram showing your salon culture, team events, and working environment. Passionate professionals are drawn to workplaces that visibly invest in their team.</li>
   <li><strong>Industry events:</strong> Hair shows, beauty expos, and trade events are talent-dense environments where you can assess skill and personality in person.</li>
   <li><strong>Your salon platform:</strong> Some platforms include professional profiles that let you discover talented professionals in your area.</li>
@@ -141,21 +141,21 @@ export const salonStaffManagement: PillarPageData = {
 <ol>
   <li><strong>Phone screen (15 minutes):</strong> Verify basic qualifications, salary expectations, availability, and motivation for changing roles. Filter out obvious mismatches early.</li>
   <li><strong>In-person interview and skills assessment (60-90 minutes):</strong> Have the candidate perform a service on a model while you evaluate technique, client interaction, time management, and attention to detail. Follow with a conversational interview focusing on values, career goals, and how they handle common salon scenarios (difficult clients, scheduling conflicts, creative disagreements).</li>
-  <li><strong>Trial day (paid):</strong> Invite your top candidate for a paid trial day in the salon. This lets both sides experience the working relationship before committing. Have your team provide feedback — they will be working alongside this person daily.</li>
+  <li><strong>Trial day (paid):</strong> Invite your top candidate for a paid trial day in the salon. This lets both sides experience the working relationship before committing. Have your team provide feedback, they will be working alongside this person daily.</li>
 </ol>
 
 <h3>Questions That Reveal Character</h3>
 <p>Technical skill can be assessed through the practical demonstration. Use interview questions to assess character and fit:</p>
 <ul>
-  <li>"Tell me about a time a client was unhappy with their service. What did you do?" — reveals accountability and problem-solving</li>
-  <li>"How do you stay current with trends and techniques?" — reveals growth mindset</li>
-  <li>"What does your ideal work environment look like?" — reveals cultural fit expectations</li>
-  <li>"Describe your relationship with your current/previous manager." — reveals how they respond to authority and feedback</li>
-  <li>"Where do you see your career in two years?" — reveals ambition and retention risk</li>
+  <li>"Tell me about a time a client was unhappy with their service. What did you do?", reveals accountability and problem-solving</li>
+  <li>"How do you stay current with trends and techniques?", reveals growth mindset</li>
+  <li>"What does your ideal work environment look like?", reveals cultural fit expectations</li>
+  <li>"Describe your relationship with your current/previous manager.", reveals how they respond to authority and feedback</li>
+  <li>"Where do you see your career in two years?", reveals ambition and retention risk</li>
 </ul>`,
       callout: {
         type: 'tip',
-        text: 'Always check references, even when a candidate seems perfect. Call their previous employer and ask: "Would you rehire this person?" The answer — and especially any hesitation — tells you more than the entire interview.',
+        text: 'Always check references, even when a candidate seems perfect. Call their previous employer and ask: "Would you rehire this person?" The answer, and especially any hesitation, tells you more than the entire interview.',
       },
     },
 
@@ -181,7 +181,7 @@ export const salonStaffManagement: PillarPageData = {
 <ul>
   <li><strong>Publish schedules 2-4 weeks in advance:</strong> Staff need time to plan their lives. Last-minute schedule changes erode trust and morale.</li>
   <li><strong>Rotate weekends and holidays fairly:</strong> Use a rotating system so no one consistently works every Saturday or every holiday. Track rotations in your system to prove fairness.</li>
-  <li><strong>Honour time-off requests:</strong> Have a clear process for requesting time off, with reasonable notice requirements. Approve or deny promptly — uncertainty is worse than a "no."</li>
+  <li><strong>Honour time-off requests:</strong> Have a clear process for requesting time off, with reasonable notice requirements. Approve or deny promptly, uncertainty is worse than a "no."</li>
   <li><strong>Consider preferences:</strong> Where possible, accommodate staff preferences for specific days or shifts. People who work their preferred schedule perform better and stay longer.</li>
 </ul>
 
@@ -229,7 +229,7 @@ export const salonStaffManagement: PillarPageData = {
 <ul>
   <li><strong>Drag-and-drop schedule builders:</strong> Create and adjust schedules visually in minutes</li>
   <li><strong>Availability management:</strong> Staff set their availability, and the system prevents scheduling conflicts</li>
-  <li><strong>Automatic booking alignment:</strong> When a client books online, the system only shows available staff — eliminating double bookings</li>
+  <li><strong>Automatic booking alignment:</strong> When a client books online, the system only shows available staff, eliminating double bookings</li>
   <li><strong>Shift swap facilitation:</strong> Staff can request swaps with eligible colleagues directly in the app, with manager approval</li>
   <li><strong>Labour cost forecasting:</strong> See projected labour costs as you build the schedule, before you publish</li>
 </ul>
@@ -319,13 +319,13 @@ export const salonStaffManagement: PillarPageData = {
     // =========================================================================
     {
       id: 'performance-management',
-      title: 'Performance Management — Developing Your Team',
+      title: 'Performance Management. Developing Your Team',
       content: `<p>Performance management in a salon is not an annual review that nobody enjoys. It is an ongoing process of setting clear expectations, providing regular feedback, and creating development opportunities that help every team member reach their potential.</p>
 
 <h3>Setting Clear Expectations</h3>
 <p>Most performance problems are expectation problems. Staff cannot meet standards they do not know exist. Document and communicate expectations in these areas:</p>
 <ul>
-  <li><strong>Service quality:</strong> What does a "great" service look like at your salon? Define it with specific, observable criteria — consultation thoroughness, technique standards, timing accuracy, client communication.</li>
+  <li><strong>Service quality:</strong> What does a "great" service look like at your salon? Define it with specific, observable criteria, consultation thoroughness, technique standards, timing accuracy, client communication.</li>
   <li><strong>Client experience:</strong> How should clients be greeted? How quickly should messages be returned? What is the rebooking conversation at checkout?</li>
   <li><strong>Professionalism:</strong> Punctuality, appearance, workstation cleanliness, teamwork, attitude during challenging situations.</li>
   <li><strong>Revenue targets:</strong> What is the minimum expected revenue per week/month for their experience level? What is the stretch target?</li>
@@ -375,7 +375,7 @@ export const salonStaffManagement: PillarPageData = {
   <li><strong>Utilization rate:</strong> What percentage of their available hours are booked? Low utilization with high retention may indicate a scheduling problem rather than a performance problem.</li>
   <li><strong>Client feedback scores:</strong> What are clients saying in reviews and feedback surveys?</li>
 </ul>
-<p>Data removes subjectivity from performance conversations. Instead of "I feel like you're not performing well," you can say "Your retention rate dropped from 68% to 52% this quarter — let's figure out why and how to fix it."</p>
+<p>Data removes subjectivity from performance conversations. Instead of "I feel like you're not performing well," you can say "Your retention rate dropped from 68% to 52% this quarter, let's figure out why and how to fix it."</p>
 
 <h3>Professional Development</h3>
 <p>Investing in your team's growth is the highest-ROI retention strategy. Top salons allocate $500-$2,000 per staff member per year for continuing education. Options include:</p>
@@ -483,8 +483,8 @@ export const salonStaffManagement: PillarPageData = {
     // =========================================================================
     {
       id: 'retention-strategies',
-      title: 'Retention Strategies — Keeping Your Best People',
-      content: `<p>Retention is the ultimate measure of management quality. When great people stay, everything else gets easier — client relationships deepen, service quality improves, training costs decrease, and your salon's reputation compounds. When they leave, the damage reverberates through every aspect of your business.</p>
+      title: 'Retention Strategies. Keeping Your Best People',
+      content: `<p>Retention is the ultimate measure of management quality. When great people stay, everything else gets easier, client relationships deepen, service quality improves, training costs decrease, and your salon's reputation compounds. When they leave, the damage reverberates through every aspect of your business.</p>
 
 <h3>Understanding Why Stylists Leave</h3>
 <p>Exit interview data from the beauty industry reveals consistent themes. The top five reasons stylists leave, in order of frequency:</p>
@@ -495,14 +495,14 @@ export const salonStaffManagement: PillarPageData = {
   <li><strong>Poor management relationship (15%):</strong> Conflict with the owner or manager, feeling micromanaged, or lack of recognition</li>
   <li><strong>Better opportunity elsewhere (11%):</strong> A competitor offers a meaningfully better package</li>
 </ol>
-<p>Notice that only 11% leave for a specific better opportunity. The remaining 89% leave because of problems within your salon — problems that are within your power to fix.</p>
+<p>Notice that only 11% leave for a specific better opportunity. The remaining 89% leave because of problems within your salon, problems that are within your power to fix.</p>
 
 <h3>The Retention Toolkit</h3>
 <p>Build a comprehensive retention strategy that addresses each of the common departure reasons:</p>
 
 <h3>Competitive Compensation</h3>
 <ul>
-  <li>Benchmark your rates against local competitors annually — not just other salons, but also booth-rental rates (your team is always evaluating whether they could earn more independently)</li>
+  <li>Benchmark your rates against local competitors annually, not just other salons, but also booth-rental rates (your team is always evaluating whether they could earn more independently)</li>
   <li>Implement tiered commission structures that reward longevity and performance</li>
   <li>Consider retention bonuses: a loyalty bonus paid annually (e.g., $1,000 after each full year of employment) that increases the cost of leaving</li>
 </ul>
@@ -512,23 +512,23 @@ export const salonStaffManagement: PillarPageData = {
   <li>Offer at least one consistent weekday off per team member</li>
   <li>Allow shift swaps between willing colleagues, facilitated by your scheduling system</li>
   <li>Consider compressed work weeks (4 longer days instead of 5 standard days) for staff who prefer them</li>
-  <li>Provide genuine time-off approval — staff should feel comfortable requesting PTO without guilt</li>
+  <li>Provide genuine time-off approval, staff should feel comfortable requesting PTO without guilt</li>
 </ul>
 
 <h3>Growth and Development</h3>
 <ul>
   <li>Create clear career levels (Junior → Stylist → Senior Stylist → Specialist → Lead/Manager) with defined criteria for advancement</li>
   <li>Fund continuing education and celebrate certifications publicly</li>
-  <li>Give senior staff mentoring responsibilities — mentoring others is one of the strongest retention drivers because it adds meaning and status to the role</li>
+  <li>Give senior staff mentoring responsibilities, mentoring others is one of the strongest retention drivers because it adds meaning and status to the role</li>
   <li>Involve your team in business decisions where appropriate (new service launches, salon events, decor choices)</li>
 </ul>
 
 <h3>Management Excellence</h3>
 <ul>
   <li>Conduct regular one-on-ones focused on the employee's goals, not just your targets</li>
-  <li>Recognise achievements promptly and specifically — "Your balayage on Mrs. Johnson today was exceptional and she rebooked on the spot" is better than generic "good job"</li>
-  <li>Address conflicts and concerns within 24 hours — unresolved issues grow</li>
-  <li>Ask for and act on team feedback — an anonymous quarterly survey can surface problems before they become resignations</li>
+  <li>Recognise achievements promptly and specifically ,  "Your balayage on Mrs. Johnson today was exceptional and she rebooked on the spot" is better than generic "good job"</li>
+  <li>Address conflicts and concerns within 24 hours, unresolved issues grow</li>
+  <li>Ask for and act on team feedback, an anonymous quarterly survey can surface problems before they become resignations</li>
 </ul>
 
 <h3>Building Community</h3>
@@ -550,13 +550,13 @@ export const salonStaffManagement: PillarPageData = {
     {
       id: 'technology-for-team-management',
       title: 'Technology for Modern Team Management',
-      content: `<p>Technology transforms team management from a time-consuming administrative burden into a streamlined system that runs largely on autopilot. The right platform handles scheduling, commission calculations, performance tracking, permission management, and team communication — freeing you to focus on leadership rather than logistics.</p>
+      content: `<p>Technology transforms team management from a time-consuming administrative burden into a streamlined system that runs largely on autopilot. The right platform handles scheduling, commission calculations, performance tracking, permission management, and team communication, freeing you to focus on leadership rather than logistics.</p>
 
 <h3>What Salon Team Management Technology Should Do</h3>
 <p>Evaluate team management features against this checklist:</p>
 <ul>
   <li><strong>Automated scheduling:</strong> Drag-and-drop schedule builder with availability constraints, demand-based recommendations, and automatic conflict detection</li>
-  <li><strong>Commission calculation:</strong> Real-time commission tracking based on your configured structure — tiered, flat, or performance-based — viewable by both owner and staff</li>
+  <li><strong>Commission calculation:</strong> Real-time commission tracking based on your configured structure, tiered, flat, or performance-based, viewable by both owner and staff</li>
   <li><strong>Performance dashboards:</strong> Per-staff views showing revenue, utilization, retention rate, average ticket value, and trend data</li>
   <li><strong>Role-based permissions:</strong> Granular access control that limits data visibility and feature access by role</li>
   <li><strong>Staff self-service:</strong> Team members should view their schedule, check their earnings, request time off, and swap shifts through a mobile app</li>
@@ -566,7 +566,7 @@ export const salonStaffManagement: PillarPageData = {
 </ul>
 
 <h3>The Staff Experience Matters</h3>
-<p>Your team uses this technology daily. If the platform is clunky, slow, or confusing, staff will resent it — and by extension, resent the management decisions it enforces. Choose a platform that staff genuinely find useful:</p>
+<p>Your team uses this technology daily. If the platform is clunky, slow, or confusing, staff will resent it, and by extension, resent the management decisions it enforces. Choose a platform that staff genuinely find useful:</p>
 <ul>
   <li><strong>Mobile-first:</strong> Staff should be able to check their schedule, view earnings, and swap shifts from their phone</li>
   <li><strong>Real-time updates:</strong> When a client books, cancels, or is reassigned, the affected stylist should see the change instantly</li>
@@ -606,11 +606,11 @@ export const salonStaffManagement: PillarPageData = {
     </tr>
   </tbody>
 </table>
-<p>Total estimated annual value: $23,000-$56,000 — many multiples of the platform cost.</p>
+<p>Total estimated annual value: $23,000-$56,000, many multiples of the platform cost.</p>
 
 <h3>Choosing the Right Platform</h3>
-<p>The best team management experience comes from platforms where team management is integrated with booking, payments, and analytics — not bolted on as an afterthought. When scheduling, commissions, and performance data all flow from the same booking and payment data, accuracy is guaranteed and admin is eliminated.</p>
-<p><a href="/en/features/business/team-management">Daisy's team management</a> is built on this principle. Every booking, every payment, and every client interaction automatically feeds into team performance data, commission calculations, and scheduling intelligence. The result is a team management system that works for both owners and staff — providing the control you need and the transparency your team deserves.</p>`,
+<p>The best team management experience comes from platforms where team management is integrated with booking, payments, and analytics, not bolted on as an afterthought. When scheduling, commissions, and performance data all flow from the same booking and payment data, accuracy is guaranteed and admin is eliminated.</p>
+<p><a href="/en/features/business/team-management">Daisy's team management</a> is built on this principle. Every booking, every payment, and every client interaction automatically feeds into team performance data, commission calculations, and scheduling intelligence. The result is a team management system that works for both owners and staff, providing the control you need and the transparency your team deserves.</p>`,
       relatedLinks: [
         {
           title: 'Daisy Team Management',
@@ -632,7 +632,7 @@ export const salonStaffManagement: PillarPageData = {
     {
       question: 'What is the average staff turnover rate in salons?',
       answer:
-        'The beauty industry averages 30-40% annual staff turnover, meaning a salon with 5 stylists can expect to replace 1-2 people every year. Salons with structured management practices, transparent compensation, and strong culture typically reduce this to 10-15% — saving thousands in recruitment and training costs annually.',
+        'The beauty industry averages 30-40% annual staff turnover, meaning a salon with 5 stylists can expect to replace 1-2 people every year. Salons with structured management practices, transparent compensation, and strong culture typically reduce this to 10-15%, saving thousands in recruitment and training costs annually.',
     },
     {
       question: 'What is the best commission structure for a salon?',
@@ -657,12 +657,12 @@ export const salonStaffManagement: PillarPageData = {
     {
       question: 'How much does it cost to replace a salon stylist?',
       answer:
-        'Replacing a stylist costs $3,000-$8,000 in direct expenses including job advertising, interview time, training, reduced productivity during ramp-up, and administrative processing. The indirect cost — lost clients who follow the departing stylist — can be significantly higher, often $10,000-$30,000+ for an experienced stylist with a loyal client base.',
+        'Replacing a stylist costs $3,000-$8,000 in direct expenses including job advertising, interview time, training, reduced productivity during ramp-up, and administrative processing. The indirect cost, lost clients who follow the departing stylist, can be significantly higher, often $10,000-$30,000+ for an experienced stylist with a loyal client base.',
     },
     {
       question: 'What is a good chair utilization rate for a salon?',
       answer:
-        'A healthy chair utilization rate is 75-85%. Below 75% indicates scheduling inefficiency or insufficient demand. Above 85% suggests you may be understaffed and at risk of burnout or turning away clients. Track utilization per stylist — if one stylist is at 90% and another at 60%, you have a distribution problem, not a capacity problem.',
+        'A healthy chair utilization rate is 75-85%. Below 75% indicates scheduling inefficiency or insufficient demand. Above 85% suggests you may be understaffed and at risk of burnout or turning away clients. Track utilization per stylist, if one stylist is at 90% and another at 60%, you have a distribution problem, not a capacity problem.',
     },
     {
       question: 'How can salon owners manage a team remotely?',

@@ -8,7 +8,7 @@ import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'Beauty Business Solutions — AI-Powered Software | Daisy',
+  title: 'Beauty Business Solutions. AI-Powered Software | Daisy',
   description:
     'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing. AI-powered software built for beauty businesses.',
   keywords: [
@@ -19,7 +19,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'beauty business solutions',
   ],
   openGraph: {
-    title: 'Beauty Business Solutions — AI-Powered Software | Daisy',
+    title: 'Beauty Business Solutions. AI-Powered Software | Daisy',
     description:
       'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing.',
     url: `https://www.jointhedaisy.com/${locale}/solutions`,
@@ -28,7 +28,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Beauty Business Solutions — AI-Powered Software | Daisy',
+    title: 'Beauty Business Solutions. AI-Powered Software | Daisy',
     description:
       'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing.',
     images: ['/images/og/og-default.jpg'],
@@ -41,7 +41,7 @@ export default function SolutionsIndexPage() {
   return (
     <main className="min-h-screen">
       <WebPageSchema
-        title="Beauty Business Solutions — AI-Powered Software | Daisy"
+        title="Beauty Business Solutions. AI-Powered Software | Daisy"
         description="Explore Daisy's solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing."
         url="https://www.jointhedaisy.com/solutions"
       />
@@ -54,7 +54,7 @@ export default function SolutionsIndexPage() {
           Solutions for Every Beauty Business
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-[#455150]">
-          Whether you run a salon, spa, barbershop, or med spa — Daisy has
+          Whether you run a salon, spa, barbershop, or med spa. Daisy has
           AI-powered tools built specifically for your business type.
         </p>
       </section>
