@@ -120,7 +120,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
     textRecomended: 'Recomended',
     textItemPricing: {
       perPeriod: '/ ',
-      annualy: 'year',
+      annualy: 'month',
       monthly: 'month',
       discount: 'Save up to 17%',
       textStarted: 'Get Started',
@@ -169,7 +169,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       pricingCard: [
         {
           title: 'Basic',
-          subTitle: '14 days try period',
+          subTitle: '14-day free trial',
           description:
             'Just starting out but want to build a solid customer base & brand and while growing their presence as a professional service provider',
           price: '50',
@@ -197,7 +197,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'Growth',
-          subTitle: '14 days try period',
+          subTitle: '14-day free trial',
           description:
             'Ideal for Solo Experienced Professionals that want to provide an exceptional experience to their customers',
           price: '150',
@@ -220,7 +220,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'Business',
-          subTitle: '14 days try period',
+          subTitle: '14-day free trial',
           description:
             'Businesses with multiple workspaces or locations that are excellence oriented in service and customer service',
           price: '250',
@@ -403,7 +403,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
     textRecomended: 'موصى به',
     textItemPricing: {
       perPeriod: '/ ',
-      annualy: 'سنة',
+      annualy: 'شهر',
       monthly: 'شهر',
       discount: 'وفر حتى 17%',
       textStarted: 'ابدأ الآن',
@@ -450,7 +450,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       pricingCard: [
         {
           title: 'أساسي',
-          subTitle: 'فترة تجريبية 14 يوم',
+          subTitle: 'تجربة مجانية 14 يوم',
           description:
             'بدأت للتو ولكن تريد بناء قاعدة عملاء قوية وعلامة تجارية مع تنمية حضورك كمقدم خدمة محترف',
           price: '50',
@@ -478,7 +478,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'نمو',
-          subTitle: 'فترة تجريبية 14 يوم',
+          subTitle: 'تجربة مجانية 14 يوم',
           description:
             'مثالي للمحترفين ذوي الخبرة الذين يرغبون في تقديم تجربة استثنائية لعملائهم',
           price: '150',
@@ -501,7 +501,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'عمل',
-          subTitle: 'فترة تجريبية 14 يوم',
+          subTitle: 'تجربة مجانية 14 يوم',
           description:
             'للشركات ذات المساحات أو المواقع المتعددة التي تسعى للتميز في الخدمة وخدمة العملاء',
           price: '250',
