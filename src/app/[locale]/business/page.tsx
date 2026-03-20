@@ -12,7 +12,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   return {
   title: 'AI-Powered Salon & Spa Management Platform | The Daisy',
   description:
-    'Grow your salon or spa with The Daisy. AI receptionist, smart booking, customer acquisition, payments, and marketing — all in one platform. Start your 14-day free trial.',
+    'Grow your salon or spa with The Daisy. AI receptionist, smart booking, customer acquisition, payments, and marketing, all in one platform. Start your 14-day free trial.',
   keywords: [
     'salon management software',
     'spa booking system',
@@ -28,7 +28,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   openGraph: {
     title: 'AI-Powered Salon & Spa Management Platform | The Daisy',
     description:
-      'Grow your salon or spa with The Daisy. AI receptionist, smart booking, customer acquisition, payments, and marketing — all in one platform. Start your 14-day free trial.',
+      'Grow your salon or spa with The Daisy. AI receptionist, smart booking, customer acquisition, payments, and marketing, all in one platform. Start your 14-day free trial.',
     url: `https://www.jointhedaisy.com/${locale}/business`,
     type: 'website',
     images: [
@@ -44,7 +44,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     card: 'summary_large_image',
     title: 'AI-Powered Salon & Spa Management Platform | The Daisy',
     description:
-      'Grow your salon or spa with The Daisy. AI receptionist, smart booking, customer acquisition, payments, and marketing — all in one platform. Start your 14-day free trial.',
+      'Grow your salon or spa with The Daisy. AI receptionist, smart booking, customer acquisition, payments, and marketing, all in one platform. Start your 14-day free trial.',
     images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/business', locale),
@@ -58,7 +58,7 @@ export default function BusinessPage({ params }: { params: { locale: string } })
     <>
       <WebPageSchema
         title="Salon & Spa Business Solutions | The Daisy"
-        description="AI-powered beauty business platform. Manage bookings, customer acquisition, staff scheduling, payments, and marketing — all in one."
+        description="AI-powered beauty business platform. Manage bookings, customer acquisition, staff scheduling, payments, and marketing, all in one."
         url="https://www.jointhedaisy.com/business"
       />
       <PageBreadcrumbSchema

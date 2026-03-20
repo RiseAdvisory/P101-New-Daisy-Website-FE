@@ -41,7 +41,7 @@ function AlternativeSinglePage({
   const relatedPages = getRelatedAlternativePages(slug);
   // Add cross-link to the compare page
   const compareLink = {
-    title: `Daisy vs ${competitor.name} — Full Comparison`,
+    title: `Daisy vs ${competitor.name}. Full Comparison`,
     url: `/compare/daisy-vs-${data.competitorSlug}`,
     description: `Detailed feature-by-feature comparison of Daisy and ${competitor.name}.`,
   };

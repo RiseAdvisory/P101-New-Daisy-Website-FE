@@ -146,8 +146,8 @@ describe('CarouselBusinessMobile', () => {
           },
         ],
       },
-      // secondMobileImage not provided — should fall back
-      // thirdMobileImage not provided — should fall back
+      // secondMobileImage not provided, should fall back
+      // thirdMobileImage not provided, should fall back
     });
 
     render(<CarouselBusinessMobile dataBusiness={data} />);

@@ -128,7 +128,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     localizedEntries(`/features/professional/${slug}`, { lastModified: SEO_CONTENT_DATE, changeFrequency: 'monthly', priority: 0.8 })
   );
 
-  // Pillar pages — top-level authority pages (highest SEO priority after homepage)
+  // Pillar pages, top-level authority pages (highest SEO priority after homepage)
   const pillarPages = getAllPillarSlugs().flatMap((slug) =>
     localizedEntries(`/${slug}`, {
       lastModified: SEO_CONTENT_DATE,

@@ -163,7 +163,7 @@ describe('getFeatureDeepDive', () => {
 
   it('returns undefined for wrong userType', () => {
     const data = getFeatureDeepDive('professional', 'ai-salon-management');
-    // May or may not exist depending on data — just ensure it doesn't return a business entry
+    // May or may not exist depending on data, just ensure it doesn't return a business entry
     if (data) {
       expect(data.userType).toBe('professional');
     }

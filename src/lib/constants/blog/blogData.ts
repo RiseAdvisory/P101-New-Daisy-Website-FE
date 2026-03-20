@@ -150,7 +150,7 @@ export interface LocalBlogPost {
  * Customer blog posts
  */
 export const customerBlogPosts: LocalBlogPost[] = [
-  // Legacy placeholder articles (ids 1-3) removed — thin content (80-150 words)
+  // Legacy placeholder articles (ids 1-3) removed - thin content (80-150 words)
   // that would hurt SEO. Will be replaced with full-length customer articles.
 ];
 

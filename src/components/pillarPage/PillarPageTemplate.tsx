@@ -16,7 +16,7 @@ interface PillarPageTemplateProps {
 }
 
 export function PillarPageTemplate({ data, locale }: PillarPageTemplateProps) {
-  // Content is static TypeScript data (not user input) — safe to render directly
+  // Content is static TypeScript data (not user input), safe to render directly
   const introHtml = data.introduction;
   const tocSections = data.sections.map((s) => ({ id: s.id, title: s.title }));
   const baseUrl = `https://www.jointhedaisy.com/${locale}/${data.slug}`;
@@ -51,7 +51,7 @@ export function PillarPageTemplate({ data, locale }: PillarPageTemplateProps) {
 
       {/* Content area with TOC */}
       <div className="mx-auto max-w-5xl px-4 py-8">
-        {/* Mobile TOC (collapsible, hidden on desktop — rendered inside TableOfContents) */}
+        {/* Mobile TOC (collapsible, hidden on desktop, rendered inside TableOfContents) */}
         <div className="lg:hidden">
           <TableOfContents sections={tocSections} />
         </div>

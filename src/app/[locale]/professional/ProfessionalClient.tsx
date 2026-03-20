@@ -31,7 +31,7 @@ const BecomeFormPartner = dynamic(
 export const ProfessionalClient = ({ lang }: { lang: string }) => {
   const pageData = t(professionalPageData, lang);
   const dataScroll = toScrollSectionItems(pageData.scrollSections);
-  const formTitle = lang === 'ar' ? 'سجّل في ذا ديزي — مجانًا' : 'Get Listed on The Daisy — Free';
+  const formTitle = lang === 'ar' ? 'سجّل في ذا ديزي ,  مجانًا' : 'Get Listed on The Daisy. Free';
   const formSubtitle = lang === 'ar' ? 'أخبرنا عن نفسك وسيساعدك فريقنا في الإعداد.' : 'Tell us about yourself and our team will help you get set up.';
 
   return (

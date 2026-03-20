@@ -18,7 +18,7 @@ export function OverviewSection({
 }: OverviewSectionProps) {
   return (
     <>
-      {/* GEO Answer Block — first screen, definition + key capabilities */}
+      {/* GEO Answer Block, first screen, definition + key capabilities */}
       <section className="mx-auto max-w-4xl px-4 py-12 md:py-16">
         <h2 className="mb-6 text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
           What Is {categoryName} for Beauty Businesses?
@@ -47,7 +47,7 @@ export function OverviewSection({
         )}
       </section>
 
-      {/* Pain Points — problem-first */}
+      {/* Pain Points, problem-first */}
       <section className="w-full bg-[#F8F5F3] px-4 py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-12 text-center text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
@@ -72,7 +72,7 @@ export function OverviewSection({
         </div>
       </section>
 
-      {/* Growth Outcome — business impact */}
+      {/* Growth Outcome, business impact */}
       <section className="mx-auto max-w-4xl px-4 py-12 md:py-16">
         <div className="rounded-2xl border border-primaryBtn/30 bg-primary/5 p-6 md:p-8">
           <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">

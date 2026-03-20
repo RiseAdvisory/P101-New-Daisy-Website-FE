@@ -742,7 +742,7 @@ const freelanceStylistPaymentArticle: LocalBlogPost = {
     title: 'Getting Paid as a Freelance Stylist: Payment Methods Compared',
     slug: 'freelance-stylist-payment-methods',
     description:
-      'A practical comparison of every payment method available to freelance stylists and independent beauty professionals. Covers card readers, bank transfers, mobile wallets, platform payments, and cash — with pros, cons, and cost breakdowns for each.',
+      'A practical comparison of every payment method available to freelance stylists and independent beauty professionals. Covers card readers, bank transfers, mobile wallets, platform payments, and cash, with pros, cons, and cost breakdowns for each.',
     aboutPosts: `
 <h2>The Freelance Payment Landscape in 2026</h2>
 <p>As a freelance stylist or independent beauty professional, how you accept payment directly affects your income, your professionalism, and your client relationships. The right payment setup eliminates awkward money conversations, reduces late payments, and ensures you get paid for every service you deliver. A well-structured payment workflow is as important as your technical skills when building a sustainable freelance beauty business.</p>
