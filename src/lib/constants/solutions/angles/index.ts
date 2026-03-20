@@ -70,3 +70,4 @@ import './unified-inbox';
 import './brand-control';
 import './smart-scheduling';
 import './service-portfolio';
+import './ai-marketing';
