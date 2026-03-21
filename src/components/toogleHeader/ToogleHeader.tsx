@@ -80,16 +80,16 @@ const ToggleButton = ({ className }: { className?: string }) => {
     if (typeof window !== 'undefined') {
       localStorage.setItem('activePage', path);
     }
-    if (pathname.includes('/features')) {
+    if (pathname.includes('/start-free-trial')) {
+      const persona = path === '/business' ? 'business' : 'professional';
+      router.push(localePath(`/start-free-trial/${persona}`, locale));
+    } else if (pathname.includes('/features')) {
       router.push(localePath(`/features${path}`, locale));
-    }
-    if (pathname.startsWith('/business')) {
+    } else if (pathname.startsWith('/business')) {
       router.push(localePath(path, locale));
-    }
-    if (pathname.startsWith('/customer')) {
+    } else if (pathname.startsWith('/customer')) {
       router.push(localePath(path, locale));
-    }
-    if (pathname.startsWith('/professional')) {
+    } else if (pathname.startsWith('/professional')) {
       router.push(localePath(path, locale));
     }
   };
