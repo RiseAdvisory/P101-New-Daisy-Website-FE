@@ -8,7 +8,7 @@ import { FeatureDeepDiveLinks } from '@/components/featuresPage/FeatureDeepDiveL
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'AI-Powered Salon Business Features - Booking, Marketing & Payments | The Daisy',
+  title: 'AI Salon Business Features | The Daisy',
   description:
     'AI-powered features for salon & spa businesses: smart scheduling, appointment booking, marketing tools, payment processing, team management, customer CRM, multi-channel communication, and detailed analytics.',
   keywords: [
@@ -28,7 +28,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'salon staff management',
   ],
   openGraph: {
-    title: 'AI-Powered Salon Business Features - Booking, Marketing & Payments | The Daisy',
+    title: 'AI Salon Business Features | The Daisy',
     description:
       'AI-powered features for salon & spa businesses: smart scheduling, booking, marketing, payments, communication, growth, and team management.',
     url: `https://www.jointhedaisy.com/${locale}/features/business`,
@@ -44,7 +44,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI-Powered Salon Business Features | The Daisy',
+    title: 'AI Salon Business Features | The Daisy',
     description:
       'AI-powered features for salon & spa businesses on The Daisy platform.',
     images: ['/images/og/og-default.jpg'],

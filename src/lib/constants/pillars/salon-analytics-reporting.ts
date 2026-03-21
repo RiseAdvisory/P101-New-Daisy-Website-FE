@@ -5,7 +5,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   title: 'Salon Analytics & Reporting: Data-Driven Growth',
   excerpt:
     'Master salon analytics to track performance, retain clients, optimize staff, and make data-driven growth decisions.',
-  metaTitle: 'Salon Analytics & Reporting Guide | Daisy',
+  metaTitle: 'Salon Analytics & Reporting Guide | The Daisy',
   metaDescription:
     'Complete guide to salon analytics and reporting. Learn which metrics to track, how to measure ROI, and how data-driven salons consistently outperform competitors.',
   keywords: [

@@ -5,7 +5,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   title: 'The Freelance Beauty Professional Guide',
   excerpt:
     'Everything you need to launch, run, and grow a successful freelance beauty career with confidence.',
-  metaTitle: 'Freelance Beauty Professional Guide | Daisy',
+  metaTitle: 'Freelance Beauty Professional Guide | The Daisy',
   metaDescription:
     'Complete guide for freelance beauty professionals. Learn pricing, client acquisition, personal branding, scheduling, and scaling your independent beauty career.',
   keywords: [

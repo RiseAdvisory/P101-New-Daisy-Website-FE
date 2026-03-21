@@ -25,7 +25,7 @@ export interface PillarPageData {
   excerpt: string; // ≤120 chars, for RelatedPillars cards
 
   // SEO
-  metaTitle: string; // Under 60 chars, includes "| Daisy"
+  metaTitle: string; // Under 60 chars, includes "| The Daisy"
   metaDescription: string; // 150-160 chars
   keywords: string[];
   heroImage?: string; // OG image (falls back to default)

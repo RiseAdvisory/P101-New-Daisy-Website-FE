@@ -135,7 +135,7 @@ const freelanceStylistSchedulingArticle: LocalBlogPost = {
 <h3>Should I work public holidays for the higher demand?</h3>
 <p>Holiday pricing (a 25-50% premium) compensates you for working when others rest. If you choose to work holidays, limit your hours and charge accordingly. Alternatively, offer extended hours in the days leading up to the holiday and take the holiday itself off. Many clients prefer a pre-holiday appointment anyway. Set your policy in advance and communicate it clearly to your regular clients.</p>
 `,
-    metaTitle: 'Freelance Stylist Scheduling Guide | Daisy',
+    metaTitle: 'Freelance Stylist Scheduling Guide | The Daisy',
     metaDescription:
       'Manage your freelance stylist calendar effectively. Covers booking systems, buffer times, no-show policies, and scheduling strategies for maximum income.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -260,7 +260,7 @@ const goingFreelanceArticle: LocalBlogPost = {
 <h3>Do I need to register a business to work as a freelance beauty professional?</h3>
 <p>In most jurisdictions, yes. Requirements vary by location but typically include a business licence or freelance permit, professional liability insurance, health and safety compliance, and tax registration. In the UAE, freelance beauty professionals can obtain a freelance visa and trade licence through various free zones. Consult a local business advisor or check your municipality's requirements before starting. Operating without proper registration exposes you to fines and prevents you from accessing professional benefits.</p>
 `,
-    metaTitle: 'Going Freelance in Beauty: Pros & Cons | Daisy',
+    metaTitle: 'Going Freelance in Beauty: Pros & Cons | The Daisy',
     metaDescription:
       'Honest analysis of going freelance as a beauty professional. Covers income potential, freedom, risks, and how to decide if independent work suits your career.',
     createdAt: '2026-03-18T08:30:00.000Z',
@@ -374,7 +374,7 @@ const freelanceBusinessSetupArticle: LocalBlogPost = {
 <h3>When should I hire an accountant?</h3>
 <p>If your annual revenue exceeds AED 100,000, if you are approaching VAT registration thresholds, or if tax preparation takes more than a few hours, an accountant is a worthwhile investment. A good accountant will save you more in tax optimisation and error prevention than they cost in fees. Many freelance professionals start with a bookkeeper for monthly record-keeping and engage an accountant quarterly or annually for review and tax filing.</p>
 `,
-    metaTitle: 'Freelance Hairstylist Business Setup | Daisy',
+    metaTitle: 'Freelance Hairstylist Business Setup | The Daisy',
     metaDescription:
       'Set up your freelance hairstylist business legally and financially. Covers licences, insurance, banking, accounting, and compliance requirements step by step.',
     createdAt: '2026-03-18T09:00:00.000Z',
@@ -495,7 +495,7 @@ const settingPricesArticle: LocalBlogPost = {
 <h3>What if my area has very low beauty service prices?</h3>
 <p>Low market prices do not mean you must charge low prices. Position yourself as a premium option with superior skill, products, and experience. Communicate your differentiation clearly through your portfolio, reviews, and professional presence. There are premium-paying clients in every market - you need fewer of them to earn a good living, and they are more loyal than bargain-seeking clients. <a href="/en/features/professional/marketing-promotions">The Daisy</a> helps you build the professional presence that justifies premium positioning.</p>
 `,
-    metaTitle: 'Pricing for Beauty Professionals | Daisy',
+    metaTitle: 'Pricing for Beauty Professionals | The Daisy',
     metaDescription:
       'Set your prices as an independent beauty professional. Calculate true costs, research market rates, handle objections, and raise prices without losing clients.',
     createdAt: '2026-03-18T09:30:00.000Z',
@@ -621,7 +621,7 @@ const personalBrandArticle: LocalBlogPost = {
 <h3>How do I differentiate my brand in a crowded market?</h3>
 <p>Specialisation is the fastest path to differentiation. Instead of competing as a generalist in a market with thousands of generalists, become the go-to professional for a specific niche: textured hair, vivid colour, bridal styling, extensions, or a particular technique. Combine your specialisation with a distinctive aesthetic and authentic personality. The more specific your brand, the easier it is for the right clients to find and remember you. <a href="/en/features/professional/marketing-promotions">The Daisy's professional profile</a> helps you showcase your unique specialisation to clients actively searching for your expertise.</p>
 `,
-    metaTitle: 'Personal Brand in Beauty Industry | Daisy',
+    metaTitle: 'Personal Brand in Beauty Industry | The Daisy',
     metaDescription:
       'Build a powerful personal brand as a beauty professional. Covers brand identity, social media strategy, portfolio development, and client attraction tactics.',
     createdAt: '2026-03-18T10:00:00.000Z',
@@ -750,7 +750,7 @@ const findingClientsArticle: LocalBlogPost = {
 <h3>How important are online reviews for getting new clients?</h3>
 <p>Extremely important. A 2025 BrightLocal study found that 87% of consumers read online reviews before visiting a local business, and beauty services rank among the top categories where reviews influence purchasing decisions. Aim for at least 20-30 reviews on Google and your booking platform. Ask every satisfied client for a review, and make it easy with a direct link. Respond to every review, positive or negative, to show engagement.</p>
 `,
-    metaTitle: 'Finding Clients as a Freelancer | Daisy',
+    metaTitle: 'Finding Clients as a Freelancer | The Daisy',
     metaDescription:
       'Proven strategies for freelance beauty professionals to find clients. Social media, referrals, networking, and platform listings to build a full schedule.',
     createdAt: '2026-03-18T10:30:00.000Z',
@@ -878,7 +878,7 @@ const insuranceGuideArticle: LocalBlogPost = {
 <h3>Can I operate legally without insurance?</h3>
 <p>In most jurisdictions, insurance is not legally mandatory for freelance beauty professionals, but it is practically essential. Some venues, event organisers, and corporate clients require proof of insurance. More importantly, operating without insurance means any claim - legitimate or frivolous - comes directly out of your personal finances. The risk-reward calculation is clear: a few thousand per year in premiums versus potential losses of tens of thousands from a single incident.</p>
 `,
-    metaTitle: 'Freelance Beauty Insurance Guide | Daisy',
+    metaTitle: 'Freelance Beauty Insurance Guide | The Daisy',
     metaDescription:
       'Complete insurance guide for freelance beauty professionals. Covers professional liability, public liability, equipment insurance, and choosing the right policy.',
     createdAt: '2026-03-18T11:00:00.000Z',
@@ -1015,7 +1015,7 @@ const taxGuideArticle: LocalBlogPost = {
 <h3>How much should I set aside for taxes?</h3>
 <p>In the UAE, set aside 5% of revenue for VAT if you are registered, plus 9% of profits above AED 375,000 for corporate tax. In jurisdictions with income tax, the standard recommendation is to set aside 25-30% of net income for taxes. Deposit this amount into a separate savings account each month so it is available when payment is due. Underfunding your tax provision is the most common financial crisis freelancers face.</p>
 `,
-    metaTitle: 'Tax Guide for Freelance Beauty Pros | Daisy',
+    metaTitle: 'Tax Guide for Freelance Beauty Pros | The Daisy',
     metaDescription:
       'Practical tax guide for freelance beauty professionals. Covers income tracking, deductible expenses, VAT obligations, and record-keeping best practices.',
     createdAt: '2026-03-18T11:30:00.000Z',
@@ -1155,7 +1155,7 @@ const scalingFreelancerArticle: LocalBlogPost = {
 <h3>Can I scale while keeping my personal touch with clients?</h3>
 <p>Yes, but it requires intentional design. Maintain a personal client list for your most loyal and highest-value clients. Ensure your brand standards and training programme deliver a consistent experience regardless of who performs the service. Use technology to maintain personalised communication at scale. Your personal touch shifts from individual service delivery to brand stewardship - ensuring every client interaction reflects the values and quality that built your reputation.</p>
 `,
-    metaTitle: 'Scaling Freelancer to Business Owner | Daisy',
+    metaTitle: 'Scaling Freelancer to Business Owner | The Daisy',
     metaDescription:
       'Scale from solo freelancer to beauty business owner. Covers hiring, business models, financial planning, and the mindset shift from technician to entrepreneur.',
     createdAt: '2026-03-18T12:00:00.000Z',

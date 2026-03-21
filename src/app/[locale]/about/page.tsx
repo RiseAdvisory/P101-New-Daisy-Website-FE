@@ -9,7 +9,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   return {
   title: 'About Us | The Daisy - Beauty & Wellness Marketplace',
   description:
-    'Learn about The Daisy, the beauty and wellness marketplace connecting customers with salons, spas, and beauty professionals. Our mission is to transform how you discover and book beauty services.',
+    'The Daisy is an AI-powered beauty platform helping salons, spas, and clinics grow through smart booking, marketing, and a 24/7 AI receptionist. Learn our story.',
   keywords: [
     'about The Daisy',
     'beauty marketplace',

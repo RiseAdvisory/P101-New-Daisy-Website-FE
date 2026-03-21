@@ -5,7 +5,7 @@ export const salonManagementSoftware: PillarPageData = {
   title: 'The Complete Guide to Salon Management Software',
   excerpt:
     'Everything salon owners need to know about choosing, implementing, and maximizing salon management software.',
-  metaTitle: 'Salon Management Software: Complete Guide | Daisy',
+  metaTitle: 'Salon Management Software: Complete Guide | The Daisy',
   metaDescription:
     'Complete guide to salon management software. Compare features, evaluate vendors, calculate ROI, and find the right platform for your beauty business.',
   keywords: [

@@ -136,7 +136,7 @@ const beautyIndustryStatistics2026Article: LocalBlogPost = {
 <h3>How does the GCC beauty market compare to Western markets?</h3>
 <p>The GCC beauty market is growing at nearly double the rate of North American and European markets. Per capita beauty spending in the UAE and Saudi Arabia now exceeds most Western European countries. The market is characterised by higher premium penetration, strong digital adoption (especially WhatsApp-based booking), and a younger demographic profile. Multilingual operations, starting with Arabic and English, are a requirement, not a nice-to-have, for businesses operating in this region.</p>
 `,
-    metaTitle: 'Beauty Industry Statistics 2026 | Daisy',
+    metaTitle: 'Beauty Industry Statistics 2026 | The Daisy',
     metaDescription:
       'Key beauty industry statistics for 2026: market size, AI adoption rates, digital booking trends, and regional growth data every salon owner needs to know.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -266,7 +266,7 @@ const aiBeautyIndustryApplicationsArticle: LocalBlogPost = {
 <h3>How quickly can I implement AI in my salon?</h3>
 <p>Most AI-powered salon platforms can be set up and operational within 1&ndash;3 days. The setup involves connecting your communication channels, importing your service menu and pricing, and configuring your business rules. There is no complex technical installation required. Platforms like The Daisy are designed for non-technical users and include guided onboarding that walks you through every step.</p>
 `,
-    metaTitle: 'AI in the Beauty Industry: Applications | Daisy',
+    metaTitle: 'AI in the Beauty Industry: Applications | The Daisy',
     metaDescription:
       'Practical AI applications for salons and spas in 2026: AI receptionists, smart scheduling, predictive analytics, and automated marketing explained.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -401,7 +401,7 @@ const sustainabilityBeautySalonsArticle: LocalBlogPost = {
 <h3>Can a small salon really make a meaningful environmental difference?</h3>
 <p>There are over 1.5 million salons globally. If every salon reduced water consumption by 30%, the collective saving would exceed 60 billion litres annually. Individual action scales through collective adoption. Beyond the numbers, your sustainability practices influence your clients, your staff, your suppliers, and your community. The ripple effect extends far beyond your own four walls.</p>
 `,
-    metaTitle: 'Sustainability in Beauty Salons Guide | Daisy',
+    metaTitle: 'Sustainability in Beauty Salons Guide | The Daisy',
     metaDescription:
       'Practical sustainability guide for salons: reduce water and energy costs, cut waste, attract eco-conscious clients, and improve your bottom line.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -533,7 +533,7 @@ const beautyMarketplacesImpactArticle: LocalBlogPost = {
 <h3>Can I list on multiple marketplaces simultaneously?</h3>
 <p>Yes, unless a specific marketplace requires exclusivity (which is rare and generally a red flag). Managing listings across multiple marketplaces increases administrative overhead, so ensure your <a href="/en/features/business/booking-management">booking management system</a> syncs availability across all platforms in real time to prevent double-bookings.</p>
 `,
-    metaTitle: 'Beauty Marketplaces Impact on Salons | Daisy',
+    metaTitle: 'Beauty Marketplaces Impact on Salons | The Daisy',
     metaDescription:
       'How beauty marketplaces are changing salon client discovery. Learn the risks, opportunities, and strategies for using marketplaces to grow your business.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -661,7 +661,7 @@ const wellnessBeautyIntegrationArticle: LocalBlogPost = {
 <h3>Is the wellness-beauty integration trend likely to last, or is it a fad?</h3>
 <p>The convergence of wellness and beauty is structural, not cyclical. It is driven by deep demographic and cultural shifts: an ageing but health-conscious population, a generation that prioritises experience over possession, and a scientific understanding that beauty and health are interconnected. Industry analysts project continued growth in wellness-integrated beauty services through at least 2030. This is not a trend to wait out - it is a permanent shift in what clients expect from beauty professionals.</p>
 `,
-    metaTitle: 'Wellness Meets Beauty: Integration Trend | Daisy',
+    metaTitle: 'Wellness Meets Beauty: Integration Trend | The Daisy',
     metaDescription:
       'How the wellness-beauty convergence creates new career opportunities for professionals. Explore services, earnings potential, and a practical roadmap.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -805,7 +805,7 @@ const beautyIndustryPredictions2027Article: LocalBlogPost = {
 <h3>Should I wait for these trends to mature before investing?</h3>
 <p>Waiting for a trend to mature means adopting at the same time as everyone else - which means no competitive advantage. The businesses that benefit most from any trend are those that adopted early, learned, and optimised before it became mainstream. The cost of being early is a learning curve. The cost of being late is permanent competitive disadvantage. Every month you wait, your competitors are accumulating data, building AI capabilities, and deepening client relationships that you will need to match from a standing start.</p>
 `,
-    metaTitle: 'Beauty Industry Predictions 2027 | Daisy',
+    metaTitle: 'Beauty Industry Predictions 2027 | The Daisy',
     metaDescription:
       'Data-backed beauty industry predictions for 2027: AI reaching critical mass, marketplace consolidation, subscription models, and workforce transformation.',
     createdAt: '2026-03-18T08:00:00.000Z',

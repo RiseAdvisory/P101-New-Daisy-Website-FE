@@ -10,7 +10,7 @@ import { businessPageData } from '@/lib/constants/pages/businessPage';
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'AI-Powered Salon & Spa Management Platform | The Daisy',
+  title: 'AI Salon & Spa Management Platform | The Daisy',
   description:
     'Grow your salon or spa with The Daisy. AI receptionist, smart booking, customer acquisition, payments, and marketing, all in one platform. Start your 14-day free trial.',
   keywords: [
@@ -26,7 +26,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'client management system',
   ],
   openGraph: {
-    title: 'AI-Powered Salon & Spa Management Platform | The Daisy',
+    title: 'AI Salon & Spa Management Platform | The Daisy',
     description:
       'Grow your salon or spa with The Daisy. AI receptionist, smart booking, customer acquisition, payments, and marketing, all in one platform. Start your 14-day free trial.',
     url: `https://www.jointhedaisy.com/${locale}/business`,
@@ -42,7 +42,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI-Powered Salon & Spa Management Platform | The Daisy',
+    title: 'AI Salon & Spa Management Platform | The Daisy',
     description:
       'Grow your salon or spa with The Daisy. AI receptionist, smart booking, customer acquisition, payments, and marketing, all in one platform. Start your 14-day free trial.',
     images: ['/images/og/og-default.jpg'],

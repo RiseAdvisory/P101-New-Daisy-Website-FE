@@ -25,6 +25,7 @@ export function OrganizationSchema() {
       '@type': 'ContactPoint',
       contactType: 'customer service',
       url: 'https://www.jointhedaisy.com/contact',
+      email: 'hello@jointhedaisy.com',
     },
   };
 

@@ -478,7 +478,7 @@ const waitlistManagementArticle: LocalBlogPost = {
 <h3>Can I run a waitlist without a booking system?</h3>
 <p>Technically yes, with a spreadsheet or notebook, but the speed and consistency will be far lower. The value of an automated waitlist is that it works in real-time, 24/7, with no human bottleneck. Manual waitlists simply cannot match the speed needed to fill cancellations before the appointment time arrives.</p>
 `,
-    metaTitle: 'Salon Waitlist Management: Never Lose a Client | Daisy',
+    metaTitle: 'Salon Waitlist Management: Never Lose a Client | The Daisy',
     metaDescription:
       'Automated salon waitlist management fills cancelled appointment slots in minutes, captures overflow demand, and recovers thousands in lost revenue monthly.',
     createdAt: '2026-03-17T10:00:00.000Z',
@@ -792,7 +792,7 @@ const mobileBookingArticle: LocalBlogPost = {
 <h3>Should I accept bookings through all channels or limit to one?</h3>
 <p>Accept bookings from every channel where your clients already spend time. The key is that all channels feed into one unified calendar so you never double-book. A platform like The Daisy consolidates bookings from your website, Instagram, Google, WhatsApp, and phone into a single real-time schedule.</p>
 `,
-    metaTitle: 'Mobile Booking: Why 70% of Clients Book by Phone | Daisy',
+    metaTitle: 'Mobile Booking: Why 70% of Clients Book by Phone | The Daisy',
     metaDescription:
       'Seventy percent of salon bookings happen on mobile. Learn why mobile-first booking matters, how to optimize the experience, and capture more clients.',
     createdAt: '2026-03-17T11:00:00.000Z',
@@ -949,7 +949,7 @@ const recurringAppointmentArticle: LocalBlogPost = {
 <h3>What percentage of my bookings should be recurring?</h3>
 <p>Aim for 30-50% of total bookings from recurring clients. Below 30%, you are not leveraging the retention benefits of recurring scheduling. Above 50%, you risk limiting availability for new clients and reducing your salon's capacity to grow. The ideal balance ensures predictable revenue while maintaining enough open slots for client acquisition.</p>
 `,
-    metaTitle: 'Recurring Appointment Scheduling for Salons | Daisy',
+    metaTitle: 'Recurring Appointment Scheduling for Salons | The Daisy',
     metaDescription:
       'Set up recurring appointment scheduling for your salon. Boost retention, stabilise revenue, and reduce rebooking admin with standing appointments.',
     createdAt: '2026-03-18T12:00:00.000Z',

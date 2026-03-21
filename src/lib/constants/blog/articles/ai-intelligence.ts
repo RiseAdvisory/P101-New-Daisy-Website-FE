@@ -120,7 +120,7 @@ const aiSchedulingArticle: LocalBlogPost = {
 <h3>What happens if the AI cannot handle a request?</h3>
 <p>Complex or unusual requests are routed to your team with full context of the conversation. The AI learns from these interactions to handle similar requests independently in the future.</p>
 `,
-    metaTitle: 'AI Scheduling Saves Salon Owners 10+ Hours | Daisy',
+    metaTitle: 'AI Scheduling Saves Salon Owners 10+ Hours | The Daisy',
     metaDescription:
       'AI scheduling automates salon booking, calendar optimization, and reminders. Learn how salon owners save 10+ hours per week with smart scheduling software.',
     createdAt: '2026-03-17T08:00:00.000Z',
@@ -350,7 +350,7 @@ const fiveWaysAiArticle: LocalBlogPost = {
 <h3>Does AI work in Arabic?</h3>
 <p>The Daisy's AI operates natively in both Arabic and English with full cultural context understanding. It is not a translation layer - it genuinely comprehends and responds in both languages, including GCC dialects and beauty industry terminology.</p>
 `,
-    metaTitle: '5 Ways AI Transforms Your Beauty Business | Daisy',
+    metaTitle: '5 Ways AI Transforms Your Beauty Business | The Daisy',
     metaDescription:
       'Five ways AI transforms beauty businesses: 24/7 receptionists, smart scheduling, predictive insights, automated communication, and intelligent upselling.',
     createdAt: '2026-03-17T10:00:00.000Z',

@@ -5,7 +5,7 @@ export const salonMarketingStrategies: PillarPageData = {
   title: 'Salon Marketing Strategies That Drive Growth',
   excerpt:
     'Proven salon marketing strategies, social, email, loyalty, local SEO, paid ads, and cashback, to grow your business.',
-  metaTitle: 'Salon Marketing Strategies for Growth | Daisy',
+  metaTitle: 'Salon Marketing Strategies for Growth | The Daisy',
   metaDescription:
     'Proven salon marketing strategies that drive real growth. Master social media, email, loyalty programs, local SEO, cashback, and paid ads for your salon.',
   keywords: [

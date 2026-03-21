@@ -5,7 +5,7 @@ export const aiSalonSoftware: PillarPageData = {
   title: 'AI for Beauty & Salon Businesses',
   excerpt:
     'How AI transforms salon businesses, 24/7 receptionists, smart scheduling, predictive analytics, and network effects.',
-  metaTitle: 'AI for Salon Businesses: Complete Guide | Daisy',
+  metaTitle: 'AI for Salon Businesses: Complete Guide | The Daisy',
   metaDescription:
     'Complete guide to AI in salon software. Learn how AI receptionists, smart scheduling, predictive analytics, and automation transform beauty businesses.',
   keywords: [

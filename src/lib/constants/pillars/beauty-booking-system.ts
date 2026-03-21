@@ -5,7 +5,7 @@ export const beautyBookingSystem: PillarPageData = {
   title: 'Beauty Booking System: Everything You Need to Know',
   excerpt:
     'A complete guide to beauty booking systems, types, features, mobile booking, and AI-powered scheduling.',
-  metaTitle: 'Beauty Booking System: Complete Guide | Daisy',
+  metaTitle: 'Beauty Booking System: Complete Guide | The Daisy',
   metaDescription:
     'Everything you need to know about beauty booking systems. Compare types, must-have features, mobile booking, no-show prevention, and AI-powered scheduling.',
   keywords: [

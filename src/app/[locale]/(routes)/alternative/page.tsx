@@ -12,7 +12,7 @@ import { getCompetitor } from '@/lib/constants/competitors';
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'Salon Software Alternatives. Compare & Switch | Daisy',
+  title: 'Salon Software Alternatives. Compare & Switch | The Daisy',
   description:
     'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives with AI features, pricing, and Arabic support.',
   keywords: [
@@ -22,7 +22,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'salon software alternatives',
   ],
   openGraph: {
-    title: 'Salon Software Alternatives. Compare & Switch | Daisy',
+    title: 'Salon Software Alternatives. Compare & Switch | The Daisy',
     description:
       'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives with AI features, pricing, and Arabic support.',
     url: `https://www.jointhedaisy.com/${locale}/alternative`,
@@ -31,7 +31,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Salon Software Alternatives. Compare & Switch | Daisy',
+    title: 'Salon Software Alternatives. Compare & Switch | The Daisy',
     description:
       'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives.',
     images: ['/images/og/og-default.jpg'],
@@ -44,7 +44,7 @@ export default function AlternativeIndexPage() {
   return (
     <main className="min-h-screen">
       <WebPageSchema
-        title="Salon Software Alternatives. Compare & Switch | Daisy"
+        title="Salon Software Alternatives. Compare & Switch | The Daisy"
         description="Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives."
         url="https://www.jointhedaisy.com/alternative"
       />

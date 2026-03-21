@@ -9,6 +9,8 @@ import { getAngleData, getAllAngleParams } from '@/lib/constants/solutions/angle
 import { t } from '@/lib/constants/i18n';
 import { SolutionAngleClient } from './SolutionAngleClient';
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return getAllAngleParams();
 }

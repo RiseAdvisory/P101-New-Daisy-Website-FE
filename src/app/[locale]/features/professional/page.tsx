@@ -8,7 +8,7 @@ import { FeatureDeepDiveLinks } from '@/components/featuresPage/FeatureDeepDiveL
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'Beauty Professional Features - Scheduling & Earnings | The Daisy',
+  title: 'Beauty Professional Features | The Daisy',
   description:
     'Features for beauty professionals: appointment scheduling, client management, earnings tracking, service bookings, and tools to grow your career as a stylist, nail tech, or spa therapist.',
   keywords: [
@@ -24,7 +24,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'beauty career growth',
   ],
   openGraph: {
-    title: 'Beauty Professional Features - Scheduling & Earnings | The Daisy',
+    title: 'Beauty Professional Features | The Daisy',
     description:
       'Features for beauty professionals: scheduling, client management, and earnings tracking.',
     url: `https://www.jointhedaisy.com/${locale}/features/professional`,
@@ -40,7 +40,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Beauty Professional Features - Scheduling & Earnings | The Daisy',
+    title: 'Beauty Professional Features | The Daisy',
     description: 'Features for beauty professionals to grow their careers.',
     images: ['/images/og/og-default.jpg'],
   },
@@ -53,7 +53,7 @@ export default function FeaturesProfessionalPage({ params }: { params: { locale:
     <>
       <FeaturesBreadcrumbSchema pageName="Professional" pageSlug="professional" />
       <WebPageSchema
-        title="Beauty Professional Features - Scheduling & Earnings | The Daisy"
+        title="Beauty Professional Features | The Daisy"
         description="Features for beauty professionals: appointment scheduling, client management, earnings tracking, and tools to grow your career."
         url="https://www.jointhedaisy.com/features/professional"
       />

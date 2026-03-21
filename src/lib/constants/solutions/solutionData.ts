@@ -34,7 +34,7 @@ export const solutions: SolutionData[] = [
   // P1: 4 highest-traffic keywords
   {
     slug: 'salon-management-software',
-    metaTitle: 'AI-Powered Salon Management Software | Daisy',
+    metaTitle: 'AI-Powered Salon Management Software | The Daisy',
     metaDescription:
       'Daisy is the all-in-one salon management software with AI receptionist, online booking, POS, cashback rewards, and Arabic support. Try free for 14 days.',
     keywords: [
@@ -166,7 +166,7 @@ export const solutions: SolutionData[] = [
   },
   {
     slug: 'spa-booking-system',
-    metaTitle: 'AI Spa Booking System & Management Software | Daisy',
+    metaTitle: 'AI Spa Booking System & Management Software | The Daisy',
     metaDescription:
       'Streamline your spa with Daisy\'s AI booking system. Online reservations, AI receptionist, cashback rewards, and Arabic support for GCC spas.',
     keywords: [
@@ -293,7 +293,7 @@ export const solutions: SolutionData[] = [
   },
   {
     slug: 'beauty-salon-software',
-    metaTitle: 'Beauty Salon Software with AI & Cashback | Daisy',
+    metaTitle: 'Beauty Salon Software with AI & Cashback | The Daisy',
     metaDescription:
       'Complete beauty salon software with AI receptionist, client management, marketing automation, and cashback rewards. Built for the GCC and global market.',
     keywords: [
@@ -420,7 +420,7 @@ export const solutions: SolutionData[] = [
   },
   {
     slug: 'salon-appointment-scheduling',
-    metaTitle: 'AI Salon Appointment Scheduling Software | Daisy',
+    metaTitle: 'AI Salon Appointment Scheduling Software | The Daisy',
     metaDescription:
       'Automate salon scheduling with AI. Daisy handles bookings, reduces no-shows, and optimizes your calendar, so you focus on clients, not admin.',
     keywords: [
@@ -548,7 +548,7 @@ export const solutions: SolutionData[] = [
   // P2: 7 remaining solutions
   {
     slug: 'barbershop-software',
-    metaTitle: 'Barbershop Software with AI Booking | Daisy',
+    metaTitle: 'Barbershop Software with AI Booking | The Daisy',
     metaDescription: 'Run your barbershop smarter with AI booking, walk-in management, and cashback loyalty. No per-barber pricing.',
     keywords: ['barbershop software', 'barber booking software', 'barbershop management', 'barber scheduling app'],
     heroTitle: 'Barbershop Software That Works as Hard as You Do',
@@ -584,7 +584,7 @@ export const solutions: SolutionData[] = [
   },
   {
     slug: 'nail-salon-software',
-    metaTitle: 'Nail Salon Software with AI & Cashback | Daisy',
+    metaTitle: 'Nail Salon Software with AI & Cashback | The Daisy',
     metaDescription: 'Manage your nail salon with AI booking, service tracking, and cashback loyalty. Built for nail techs and salon owners.',
     keywords: ['nail salon software', 'nail salon management', 'nail salon booking', 'nail tech software'],
     heroTitle: 'Nail Salon Software Designed for Growth',
@@ -619,7 +619,7 @@ export const solutions: SolutionData[] = [
   },
   {
     slug: 'med-spa-software',
-    metaTitle: 'Med Spa Software with AI & Compliance | Daisy',
+    metaTitle: 'Med Spa Software with AI & Compliance | The Daisy',
     metaDescription: 'AI-powered med spa management with consent forms, treatment tracking, and cashback retention. HIPAA-aware and GCC compliant.',
     keywords: ['med spa software', 'medspa management', 'aesthetic practice software', 'medical spa booking'],
     heroTitle: 'Med Spa Software for the AI Era',
@@ -655,7 +655,7 @@ export const solutions: SolutionData[] = [
   },
   {
     slug: 'salon-pos-system',
-    metaTitle: 'Salon POS System with AI & Cashback | Daisy',
+    metaTitle: 'Salon POS System with AI & Cashback | The Daisy',
     metaDescription: 'Complete salon POS with AI-powered payments, inventory tracking, and cashback rewards. Transparent pricing, no hidden fees.',
     keywords: ['salon pos system', 'salon point of sale', 'beauty salon pos', 'salon payment system'],
     heroTitle: 'Salon POS System with Built-In Growth',
@@ -690,7 +690,7 @@ export const solutions: SolutionData[] = [
   },
   {
     slug: 'salon-crm-software',
-    metaTitle: 'AI Salon CRM Software | Client Management | Daisy',
+    metaTitle: 'AI Salon CRM Software | Client Management | The Daisy',
     metaDescription: 'Manage salon clients with AI-powered CRM. Track preferences, automate marketing, and drive retention with cashback rewards.',
     keywords: ['salon crm software', 'salon client management', 'beauty crm', 'salon customer management'],
     heroTitle: 'Salon CRM Powered by AI Intelligence',
@@ -725,7 +725,7 @@ export const solutions: SolutionData[] = [
   },
   {
     slug: 'salon-marketing-software',
-    metaTitle: 'AI Salon Marketing Software & Cashback | Daisy',
+    metaTitle: 'AI Salon Marketing Software & Cashback | The Daisy',
     metaDescription: 'Grow your salon with AI marketing automation and cashback rewards. Automated campaigns, marketplace listing, and Arabic support.',
     keywords: ['salon marketing software', 'beauty salon marketing', 'salon marketing tools', 'salon advertising'],
     heroTitle: 'Salon Marketing That Runs on Autopilot',
@@ -760,7 +760,7 @@ export const solutions: SolutionData[] = [
   },
   {
     slug: 'salon-booking-app',
-    metaTitle: 'Salon Booking App with AI & Cashback | Daisy',
+    metaTitle: 'Salon Booking App with AI & Cashback | The Daisy',
     metaDescription: 'Give your clients the best booking experience with Daisy\'s salon booking app. AI-powered, multi-channel, with cashback rewards.',
     keywords: ['salon booking app', 'beauty booking app', 'salon appointment app', 'hair salon booking app'],
     heroTitle: 'The Salon Booking App Clients Love',
@@ -795,7 +795,7 @@ export const solutions: SolutionData[] = [
   },
   {
     slug: 'beauty-business-management',
-    metaTitle: 'Beauty Business Management Platform | Daisy',
+    metaTitle: 'Beauty Business Management Platform | The Daisy',
     metaDescription: 'Complete beauty business management with AI. Booking, POS, staff, marketing, and cashback, all in one platform. Arabic + English.',
     keywords: ['beauty business management', 'beauty business software', 'salon business management', 'beauty industry software'],
     heroTitle: 'Beauty Business Management, Reimagined with AI',

@@ -156,7 +156,7 @@ const howToStartBeautyBusinessArticle: LocalBlogPost = {
 <h3>Should I start as a chair renter before opening my own salon?</h3>
 <p>Chair renting is an excellent intermediate step. It allows you to: build a personal client base, learn the business side of the industry, save capital for your own space, and test your concept in a lower-risk environment. Many successful salon owners spent 1-3 years as chair renters before launching their own business, using that time to build the client base and financial reserves needed for a confident launch.</p>
 `,
-    metaTitle: 'How to Start a Beauty Business | Daisy',
+    metaTitle: 'How to Start a Beauty Business | The Daisy',
     metaDescription:
       'Complete startup guide for launching a beauty business. Covers planning, licensing, location, equipment, hiring, marketing, and technology setup for new salons.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -308,7 +308,7 @@ const salonPricingStrategyArticle: LocalBlogPost = {
 <h3>How often should I raise salon prices?</h3>
 <p>Annual price increases of 5-10% are standard in the beauty industry and match typical cost inflation. If your salon is rapidly growing in reputation and demand, semi-annual increases of 5-7% may be appropriate. The key is consistency: regular, moderate increases are better received by clients than infrequent, large jumps. Communicate every increase professionally and in advance.</p>
 `,
-    metaTitle: 'Salon Pricing Strategy Guide | Daisy',
+    metaTitle: 'Salon Pricing Strategy Guide | The Daisy',
     metaDescription:
       'Master salon pricing strategy to maximise revenue. Covers cost analysis, value-based pricing, menu engineering, tiered pricing, and price increase implementation.',
     createdAt: '2026-03-18T08:30:00.000Z',
@@ -435,7 +435,7 @@ const increaseSalonRevenueArticle: LocalBlogPost = {
 <h3>How do I get my team to upsell add-on services without being pushy?</h3>
 <p>Frame upselling as professional recommendation, not sales. Train your team to identify genuine needs during the consultation: "I notice some dryness in your mid-lengths - a bonding treatment would restore the strength and make your colour last 2-3 weeks longer." When the recommendation is authentic and clearly benefits the client, it does not feel pushy. Set team targets for add-on attachment rate (30-40% is a realistic goal) and recognise top performers.</p>
 `,
-    metaTitle: 'Increase Salon Revenue: 10 Strategies | Daisy',
+    metaTitle: 'Increase Salon Revenue: 10 Strategies | The Daisy',
     metaDescription:
       'Discover 10 proven strategies to increase salon revenue without adding clients. Covers pricing, upselling, no-show reduction, memberships, and team utilisation.',
     createdAt: '2026-03-18T09:00:00.000Z',
@@ -570,7 +570,7 @@ const expandingSalonLocationsArticle: LocalBlogPost = {
 <h3>What technology do I need for multi-location salon management?</h3>
 <p>A multi-location salon requires a platform that supports: centralised booking across all branches with cross-location client profiles, per-branch and consolidated financial reporting, unified marketing campaigns with location-specific targeting, multi-branch inventory management, staff scheduling across locations, and a single dashboard view of all operations. <a href="/en/features/business/business-growth">The Daisy</a> provides all of these capabilities in one integrated platform purpose-built for multi-location beauty businesses.</p>
 `,
-    metaTitle: 'Expanding Your Salon: Adding Locations | Daisy',
+    metaTitle: 'Expanding Your Salon: Adding Locations | The Daisy',
     metaDescription:
       'Strategic guide to opening a second salon location. Covers readiness assessment, site selection, operations, staffing, and multi-branch management systems.',
     createdAt: '2026-03-18T09:30:00.000Z',
@@ -716,7 +716,7 @@ const salonMembershipModelsArticle: LocalBlogPost = {
 <h3>Can a small salon with 2-3 stylists run a membership programme?</h3>
 <p>Absolutely. Small salons are often the best candidates for membership programmes because the personal relationships between stylists and clients create natural loyalty. A small salon with 2 stylists might target 40-60 members across 2 tiers. With an average fee of $89/month, that generates $3,560-$5,340 in predictable monthly revenue. The key is setting realistic capacity limits for each tier to ensure you can deliver the promised benefits without overextending your team.</p>
 `,
-    metaTitle: 'Salon Membership & Subscription Models | Daisy',
+    metaTitle: 'Salon Membership & Subscription Models | The Daisy',
     metaDescription:
       'Design a salon membership programme for predictable recurring revenue. Covers tiered models, pricing, launch strategy, retention, and financial impact measurement.',
     createdAt: '2026-03-18T10:00:00.000Z',
@@ -874,7 +874,7 @@ const buildingFreelanceBeautyBusinessArticle: LocalBlogPost = {
 <h3>How do I handle clients who try to negotiate my prices?</h3>
 <p>Respond with confidence and clarity: "My prices reflect the quality of products I use, my training and experience, and the personalised service I provide. I am confident you will find the value matches the investment." Do not apologise for your prices. If a potential client is focused primarily on price, they are likely not your ideal client. Attracting clients who value quality over price is fundamental to building a profitable freelance beauty business.</p>
 `,
-    metaTitle: 'Build a Freelance Beauty Business | Daisy',
+    metaTitle: 'Build a Freelance Beauty Business | The Daisy',
     metaDescription:
       'Complete guide to building a freelance beauty business from scratch. Covers setup, pricing, client acquisition, finances, and growth strategies for independents.',
     createdAt: '2026-03-18T10:30:00.000Z',
@@ -1048,7 +1048,7 @@ const salonBusinessPlanArticle: LocalBlogPost = {
 <h3>What is the biggest mistake salon owners make in their business plans?</h3>
 <p>Overestimating revenue and underestimating costs. New salon owners tend to project optimistic utilisation rates from month one and forget to account for the ramp-up period where you are building your client base. Be conservative in your revenue projections and generous in your expense estimates. If your plan is profitable under conservative assumptions, you can be confident in your business's viability. If it only works under optimistic scenarios, you need to revisit your cost structure or pricing strategy.</p>
 `,
-    metaTitle: 'Salon Business Plan Template | Daisy',
+    metaTitle: 'Salon Business Plan Template | The Daisy',
     metaDescription:
       'Write a salon business plan with this step-by-step template. Covers market analysis, financial projections, operations, marketing strategy, and funding preparation.',
     createdAt: '2026-03-18T11:00:00.000Z',

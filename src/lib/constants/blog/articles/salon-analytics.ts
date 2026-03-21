@@ -136,7 +136,7 @@ const salonKpisToTrackArticle: LocalBlogPost = {
 <h3>Should I share KPI data with my staff?</h3>
 <p>Yes, selectively. Individual stylists should see their own utilisation, productivity, and retention rates. This creates healthy accountability and enables self-improvement. Team-wide averages provide context without creating harmful competition. Revenue and profitability data is typically shared with managers but not all staff. The principle is: share data that people can act on and that motivates improvement without creating anxiety or resentment.</p>
 `,
-    metaTitle: '7 Salon KPIs Every Owner Should Track | Daisy',
+    metaTitle: '7 Salon KPIs Every Owner Should Track | The Daisy',
     metaDescription:
       'Learn the 7 essential salon KPIs: retention rate, ARPC, chair utilisation, no-show rate, acquisition, CLV, and staff productivity with benchmarks.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -283,7 +283,7 @@ const salonClientLifetimeValueArticle: LocalBlogPost = {
 <h3>How does CLV connect to the other salon KPIs?</h3>
 <p>CLV is the outcome metric that all other KPIs feed into. Retention rate drives client lifespan. Average revenue per client drives the per-visit component. Chair utilisation affects how many clients you can serve. No-show rate reduces realised revenue. New client acquisition rate determines how many CLV streams you are creating. Every KPI improvement flows through to CLV improvement. That is why tracking the full set of KPIs together (not just CLV in isolation) gives you the diagnostic power to improve CLV systematically.</p>
 `,
-    metaTitle: 'Salon Client Lifetime Value Explained | Daisy',
+    metaTitle: 'Salon Client Lifetime Value Explained | The Daisy',
     metaDescription:
       'Learn how to calculate and improve salon Client Lifetime Value. Covers the CLV formula, three growth levers, segmentation, and retention strategy.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -468,7 +468,7 @@ const salonRevenueReportingArticle: LocalBlogPost = {
 <h3>What is a healthy revenue growth rate for a salon?</h3>
 <p>A healthy established salon should grow revenue by 5&ndash;15% annually after adjusting for price increases. New salons typically see faster growth (20&ndash;40%+) as they build their client base. If your salon is growing below the rate of inflation (currently 3&ndash;4% in most markets), you are effectively shrinking in real terms even if the nominal number looks stable. If growth exceeds 20% annually for an established salon, ensure it is sustainable and not driven by unsustainable promotions or excessive discounting.</p>
 `,
-    metaTitle: 'Salon Revenue Reporting Guide | Daisy',
+    metaTitle: 'Salon Revenue Reporting Guide | The Daisy',
     metaDescription:
       'Complete guide to salon revenue reporting: metrics to track, report structures, common mistakes, and how to turn revenue data into better decisions.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -632,7 +632,7 @@ const dataDrivenSalonManagementArticle: LocalBlogPost = {
 <h3>What is the single most important thing to track if I can only track one number?</h3>
 <p>If you can truly only track one number, track client retention rate. Retention drives every other metric: revenue stability, lifetime value, referral volume, and growth sustainability. A salon with strong retention can survive and grow even with limited marketing. A salon with weak retention needs constant expensive acquisition just to maintain revenue. Retention is the foundation on which everything else is built.</p>
 `,
-    metaTitle: 'Data-Driven Salon Management Guide | Daisy',
+    metaTitle: 'Data-Driven Salon Management Guide | The Daisy',
     metaDescription:
       'Start using data to run your salon better. Beginner-friendly guide covering 5 key numbers, a 30-day plan, team culture, and when to upgrade tools.',
     createdAt: '2026-03-18T08:00:00.000Z',

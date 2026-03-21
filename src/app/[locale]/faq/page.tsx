@@ -9,7 +9,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   return {
   title: 'FAQ - Beauty Booking Questions | The Daisy',
   description:
-    'Find answers to common questions about The Daisy beauty booking platform. Learn about salon bookings, cashback rewards, business features, and getting started.',
+    'Get answers to common questions about The Daisy: pricing, free trial, AI receptionist, booking setup, payments, and migration. Everything you need to get started.',
   keywords: [
     'beauty booking FAQ',
     'salon app questions',

@@ -177,7 +177,7 @@ const whatsappMarketingSalonsArticle: LocalBlogPost = {
 <h3>Do I need a separate phone for WhatsApp Business?</h3>
 <p>You can use WhatsApp Business on the same phone as your personal WhatsApp, but they must use different phone numbers. Many salon owners use their business landline number (WhatsApp supports landline registration via voice call verification) or a dedicated mobile number. Using the WhatsApp Business API through a platform like The Daisy eliminates the need for a separate phone entirely, as conversations are managed through the platform dashboard.</p>
 `,
-    metaTitle: 'WhatsApp Marketing for Salons Guide | Daisy',
+    metaTitle: 'WhatsApp Marketing for Salons Guide | The Daisy',
     metaDescription:
       'Complete WhatsApp marketing guide for salons: setup, campaign types, booking automation, list building, compliance, and performance tracking.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -347,7 +347,7 @@ const managingInstagramDmsArticle: LocalBlogPost = {
 <h3>How many DMs should I expect per day as a salon?</h3>
 <p>DM volume depends on your follower count, content quality, and engagement rate. As a rough guide: salons with 1,000&ndash;5,000 followers typically receive 5&ndash;15 DMs per day; 5,000&ndash;20,000 followers receive 15&ndash;40 DMs per day; 20,000+ followers can exceed 50&ndash;100 DMs per day. If your DM volume is low relative to your follower count, your content may not be generating enough engagement or your profile may lack a clear call-to-action for messaging.</p>
 `,
-    metaTitle: 'Managing Instagram DMs for Salons | Daisy',
+    metaTitle: 'Managing Instagram DMs for Salons | The Daisy',
     metaDescription:
       'Turn Instagram DMs into salon bookings. Learn how to organise, respond to, and convert DM inquiries with templates, automation, and best practices.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -513,7 +513,7 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 <h3>How long does it take to implement omnichannel communication?</h3>
 <p>On a platform that supports omnichannel natively, setup takes 1&ndash;3 days. You connect your WhatsApp Business number, Instagram account, phone number, and website chat widget to the platform. Configure your automated responses and brand voice settings. Once connected, all channels funnel into the unified inbox immediately. The technical setup is straightforward - the cultural shift (your team using one inbox instead of five apps) takes another week or two to become habitual.</p>
 `,
-    metaTitle: 'Omnichannel Salon Communication Guide | Daisy',
+    metaTitle: 'Omnichannel Salon Communication Guide | The Daisy',
     metaDescription:
       'Build omnichannel communication for your salon. Unify WhatsApp, Instagram, phone, and web into one system that never misses a booking inquiry.',
     createdAt: '2026-03-18T08:00:00.000Z',
