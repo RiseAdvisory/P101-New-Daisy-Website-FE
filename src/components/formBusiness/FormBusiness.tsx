@@ -147,18 +147,36 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
       content: contentChangeString,
       type: 'enquiry',
     };
+
+    // Enrich payload for n8n with source tracking
+    const enrichedData = {
+      ...formData,
+      source: typeof window !== 'undefined' ? window.location.pathname : '',
+      locale: locale,
+      detectedCountry: detectedCountry || '',
+      submittedAt: new Date().toISOString(),
+      utmSource: typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('utm_source') || '' : '',
+      utmMedium: typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('utm_medium') || '' : '',
+      utmCampaign: typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('utm_campaign') || '' : '',
+    };
+
     try {
       setIsSubmit(true);
-      const response = await fetch(
-        `${Constants.BASE_URL}vendor/demo/enquiry`,
-        {
+
+      // Send to both endpoints in parallel
+      const [response] = await Promise.all([
+        fetch(`${Constants.BASE_URL}vendor/demo/enquiry`, {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData),
-        },
-      );
+        }),
+        // n8n webhook — fire and forget, don't block on failure
+        fetch('https://ra7eme.app.n8n.cloud/webhook/lead-capture', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(enrichedData),
+        }).catch(() => {}),
+      ]);
 
       if (!response.ok) {
         throw new Error('Form submission failed');
