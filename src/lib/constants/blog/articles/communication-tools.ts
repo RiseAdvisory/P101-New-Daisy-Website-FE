@@ -158,7 +158,7 @@ const automatedRemindersArticle: LocalBlogPost = {
 <h3>Can I personalise reminders for different service types?</h3>
 <p>Absolutely. Different services benefit from different reminder content. A reminder for a first-time facial should include preparation instructions, while a reminder for a regular haircut client can be shorter and more casual. The Daisy lets you create service-specific templates that automatically apply based on the booked service.</p>
 `,
-    metaTitle: 'Automated Reminders That Reduce No-Shows | Daisy',
+    metaTitle: 'Automated Reminders That Reduce No-Shows | The Daisy',
     metaDescription:
       'Learn how automated appointment reminders reduce salon no-shows by up to 40%. Get the right timing, channels, and messaging strategies for your beauty business.',
     createdAt: '2026-03-17T08:00:00.000Z',
@@ -355,7 +355,7 @@ const clientCommunicationTemplatesArticle: LocalBlogPost = {
 <h3>Can I use the same templates for all service types?</h3>
 <p>Use the same structural templates but customise the content for different service categories. A confirmation for a quick nail appointment needs less detail than a confirmation for a multi-hour bridal package. Create variants for your most common service categories so that each client gets relevant, specific information.</p>
 `,
-    metaTitle: 'Communication Templates for Beauty Businesses | Daisy',
+    metaTitle: 'Communication Templates for Beauty Businesses | The Daisy',
     metaDescription:
       'Ready-to-use communication templates for beauty businesses. Booking confirmations, reminders, follow-ups, re-engagement, and promotions you can use today.',
     createdAt: '2026-03-17T09:00:00.000Z',
@@ -716,7 +716,7 @@ const buildingClientRelationshipsArticle: LocalBlogPost = {
 <h3>How do I transition online followers into paying clients?</h3>
 <p>Make the path from following to booking as simple as possible. Include a booking link in your bio, respond to DMs about services with a direct link to book, and periodically post content that naturally leads to a booking call-to-action ("Love this look? I have availability this week - link in bio"). Share client results (with permission), pricing transparency, and your availability. Followers become clients when they trust your skill, know your pricing, and can book in seconds.</p>
 `,
-    metaTitle: 'Client Communication Tips for Beauty Pros | Daisy',
+    metaTitle: 'Client Communication Tips for Beauty Pros | The Daisy',
     metaDescription:
       'Communication strategies for beauty professionals to build client loyalty, increase rebookings, and grow your personal client base through every interaction.',
     createdAt: '2026-03-17T11:00:00.000Z',

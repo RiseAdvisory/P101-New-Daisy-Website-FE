@@ -12,9 +12,9 @@ import { getCompetitor } from '@/lib/constants/competitors';
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'Daisy Comparisons. See How We Stack Up | Daisy',
+  title: 'Daisy Comparisons. See How We Stack Up | The Daisy',
   description:
-    'Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis, pricing breakdowns, and honest verdicts.',
+    'Compare The Daisy vs Fresha, Booksy, Vagaro, GlossGenius, and more. Side-by-side features, pricing, and honest verdicts to find the best salon software.',
   keywords: [
     'salon software comparison',
     'beauty booking comparison',
@@ -23,7 +23,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'salon software reviews',
   ],
   openGraph: {
-    title: 'Daisy Comparisons. See How We Stack Up | Daisy',
+    title: 'Daisy Comparisons. See How We Stack Up | The Daisy',
     description:
       'Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis, pricing breakdowns, and honest verdicts.',
     url: `https://www.jointhedaisy.com/${locale}/compare`,
@@ -32,7 +32,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Daisy Comparisons. See How We Stack Up | Daisy',
+    title: 'Daisy Comparisons. See How We Stack Up | The Daisy',
     description:
       'Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis and pricing breakdowns.',
     images: ['/images/og/og-default.jpg'],
@@ -45,7 +45,7 @@ export default function CompareIndexPage() {
   return (
     <main className="min-h-screen">
       <WebPageSchema
-        title="Daisy Comparisons. See How We Stack Up | Daisy"
+        title="Daisy Comparisons. See How We Stack Up | The Daisy"
         description="Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis and pricing breakdowns."
         url="https://www.jointhedaisy.com/compare"
       />

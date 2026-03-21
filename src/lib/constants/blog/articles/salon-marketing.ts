@@ -123,7 +123,7 @@ const salonMarketingIdeas2026Article: LocalBlogPost = {
 <h3>How long before salon marketing efforts show results?</h3>
 <p>Results vary by channel. Google Business Profile optimisation and review collection typically show results within 4-8 weeks as your local search ranking improves. Social media content builds audience over 2-3 months. Email marketing and referral programs can generate bookings within the first week of launch. Local SEO is the longest play, often taking 3-6 months for significant ranking improvements, but it delivers the most sustainable long-term results. Track monthly to identify which channels are gaining traction.</p>
 `,
-    metaTitle: '15 Salon Marketing Ideas for 2026 | Daisy',
+    metaTitle: '15 Salon Marketing Ideas for 2026 | The Daisy',
     metaDescription:
       'Discover 15 proven salon marketing ideas for 2026 that drive new clients and repeat bookings. Covers digital, local, and loyalty strategies with measurable ROI.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -261,7 +261,7 @@ const salonSocialMediaMarketingArticle: LocalBlogPost = {
 <h3>How do I handle negative comments on social media?</h3>
 <p>Respond promptly, professionally, and with empathy. Acknowledge the person's experience, apologise for any shortcoming, and offer to resolve the issue privately: "We are sorry to hear this. Please DM us so we can make it right." Never delete negative comments unless they are abusive or spam - deleting legitimate complaints erodes trust. A professional response to criticism often impresses potential clients more than the criticism itself deters them.</p>
 `,
-    metaTitle: 'Salon Social Media Marketing Guide | Daisy',
+    metaTitle: 'Salon Social Media Marketing Guide | The Daisy',
     metaDescription:
       'Master salon social media marketing across Instagram, TikTok, and Facebook. Learn content strategies, posting schedules, and tactics that convert followers to clients.',
     createdAt: '2026-03-18T08:30:00.000Z',
@@ -397,7 +397,7 @@ const salonEmailMarketingArticle: LocalBlogPost = {
 <h3>Can I use email marketing if I only have a small client list?</h3>
 <p>Absolutely. Email marketing is effective at any list size. A list of 100 engaged clients can generate significant bookings if the content is relevant and the timing is right. Start with the welcome series and rebooking reminder automations - these require no manual effort after setup and work for every client from their first visit. Build your list consistently through every booking and interaction, and your email marketing will scale naturally with your business.</p>
 `,
-    metaTitle: 'Salon Email Marketing Templates | Daisy',
+    metaTitle: 'Salon Email Marketing Templates | The Daisy',
     metaDescription:
       'Build high-converting salon email campaigns with ready-to-use templates. Covers welcome series, rebooking reminders, seasonal promos, and win-back automations.',
     createdAt: '2026-03-18T09:00:00.000Z',
@@ -544,7 +544,7 @@ const salonLoyaltyProgramGuideArticle: LocalBlogPost = {
 <h3>How do I re-engage clients who have stopped participating?</h3>
 <p>Segment lapsed loyalty members (no activity in 90+ days) and target them with a reactivation campaign. Send a personalised email showing their current balance and a bonus incentive to return: "You have $35 waiting for you - plus we are adding $15 as a welcome-back bonus if you book this month." Include a one-tap booking link. This combination of existing balance (loss aversion) plus a bonus (new incentive) is the most effective reactivation strategy.</p>
 `,
-    metaTitle: 'Create a Salon Loyalty Program | Daisy',
+    metaTitle: 'Create a Salon Loyalty Program | The Daisy',
     metaDescription:
       'Step-by-step guide to creating a salon loyalty program that retains clients. Covers cashback, points, tiered models, launch strategies, and success metrics.',
     createdAt: '2026-03-18T09:30:00.000Z',
@@ -679,7 +679,7 @@ const salonReferralProgramGuideArticle: LocalBlogPost = {
 <h3>How do I reactivate a referral program that has gone stale?</h3>
 <p>Run a limited-time referral boost campaign: "This month only, double rewards for every referral - you get $40 and your friend gets $40." Send this to your most engaged clients (those who visit regularly and have high satisfaction scores). The urgency of a time-limited offer combined with an increased reward re-ignites participation. Follow the boost campaign with consistent ongoing promotion to maintain momentum.</p>
 `,
-    metaTitle: 'Salon Referral Programs Guide | Daisy',
+    metaTitle: 'Salon Referral Programs Guide | The Daisy',
     metaDescription:
       'Design a salon referral program that turns clients into ambassadors. Covers two-sided incentives, automation, tracking, and strategies for maximising referrals.',
     createdAt: '2026-03-18T10:00:00.000Z',
@@ -825,7 +825,7 @@ const googleMyBusinessSalonArticle: LocalBlogPost = {
 <h3>Should I use Google Ads alongside my Business Profile?</h3>
 <p>Google Ads (specifically Local Services Ads and Search Ads) can accelerate visibility while your organic profile optimisation takes effect. For salons, the most cost-effective ad format is Google Local Services Ads, which appear at the very top of search results with a "Google Guaranteed" badge. These ads charge per lead rather than per click, making them more predictable for budgeting. Start with a modest daily budget ($10-$20) and scale based on the cost per new client acquired versus your target.</p>
 `,
-    metaTitle: 'Google My Business for Salons | Daisy',
+    metaTitle: 'Google My Business for Salons | The Daisy',
     metaDescription:
       'Optimise your salon Google Business Profile for local search dominance. Covers categories, photos, reviews, posts, and advanced tactics for maximum visibility.',
     createdAt: '2026-03-18T10:30:00.000Z',
@@ -990,7 +990,7 @@ const salonSeoLocalSearchArticle: LocalBlogPost = {
 <h3>How important are online reviews for salon SEO?</h3>
 <p>Reviews are one of the top three local ranking factors. Google uses review quantity, quality, recency, and the presence of keywords in reviews to determine local rankings. Salons with more recent, high-rated reviews consistently outrank competitors with fewer or older reviews. Beyond ranking, reviews directly influence click-through rates and booking conversion - a 4.8-star salon with 100 reviews converts visitors to bookings at roughly twice the rate of a 4.2-star salon with 20 reviews.</p>
 `,
-    metaTitle: 'Salon SEO: Local Search Guide | Daisy',
+    metaTitle: 'Salon SEO: Local Search Guide | The Daisy',
     metaDescription:
       'Master salon local SEO to rank in Google search and Maps. Covers on-page optimisation, citations, link building, content strategy, and technical SEO for salons.',
     createdAt: '2026-03-18T11:00:00.000Z',
@@ -1134,7 +1134,7 @@ const independentBeautyProfessionalMarketingArticle: LocalBlogPost = {
 <h3>When should I invest in a website versus just using social media and a booking platform?</h3>
 <p>A dedicated website becomes valuable when you want to: rank in Google local search (social media profiles rank less effectively), present a comprehensive portfolio beyond social media's scrolling format, build an email list for direct marketing, or present yourself as a premium professional. If you are just starting out, a strong Instagram profile plus a booking platform like <a href="/en/features/professional/marketing-promotions">The Daisy</a> is sufficient. Add a website once your income is stable and you want to invest in long-term search visibility.</p>
 `,
-    metaTitle: 'Marketing for Independent Beauty Pros | Daisy',
+    metaTitle: 'Marketing for Independent Beauty Pros | The Daisy',
     metaDescription:
       'Complete marketing guide for independent beauty professionals. Covers personal branding, social media, client acquisition, pricing, and building a loyal client base.',
     createdAt: '2026-03-18T11:30:00.000Z',

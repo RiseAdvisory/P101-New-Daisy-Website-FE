@@ -121,7 +121,7 @@ const aiReceptionistArticle: LocalBlogPost = {
 <h3>How does the AI handle angry or upset clients?</h3>
 <p>The AI is trained to recognise negative sentiment and respond with empathy, patience, and solution-oriented language. It can offer to reschedule appointments, apply appropriate credits or discounts within your predefined rules, and escalate situations that require human judgement. The AI never responds defensively or emotionally, which often de-escalates situations more effectively than a stressed human receptionist might.</p>
 `,
-    metaTitle: 'AI Receptionists Transform Salon Service | Daisy',
+    metaTitle: 'AI Receptionists Transform Salon Service | The Daisy',
     metaDescription:
       'Learn how AI receptionists handle all salon calls, bookings, and messages 24/7. Reduce missed calls by 90% and unlock after-hours revenue automatically.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -255,7 +255,7 @@ const allInOnePlatformArticle: LocalBlogPost = {
 <h3>Can I still use my favourite tool alongside the platform?</h3>
 <p>Yes. The Daisy provides an open API and integrations with popular third-party tools. If you have a specific tool you love, you can typically connect it. However, most salons find that the integrated features make third-party tools unnecessary within the first month.</p>
 `,
-    metaTitle: 'All-in-One Salon Platform vs Point Solutions | Daisy',
+    metaTitle: 'All-in-One Salon Platform vs Point Solutions | The Daisy',
     metaDescription:
       'Discover why all-in-one salon platforms outperform point solutions on cost, efficiency, and growth. Stop paying the integration tax on disconnected tools.',
     createdAt: '2026-03-18T08:30:00.000Z',
@@ -380,7 +380,7 @@ const customerAcquisitionArticle: LocalBlogPost = {
 <h3>What if I already have a referral programme in place?</h3>
 <p>The Daisy&rsquo;s referral programme is fully customisable. You can match your existing reward structure or design a new one. The advantage of using the platform&rsquo;s built-in referral system is automatic tracking, instant reward crediting, and seamless integration with your client database and marketing automation.</p>
 `,
-    metaTitle: '360-Degree Customer Acquisition for Salons | Daisy',
+    metaTitle: '360-Degree Customer Acquisition for Salons | The Daisy',
     metaDescription:
       'Build a 360-degree salon customer acquisition strategy with marketplace presence, cashback incentives, automated marketing, referrals, and digital discovery.',
     createdAt: '2026-03-18T09:00:00.000Z',
@@ -655,7 +655,7 @@ const multilingualBusinessArticle: LocalBlogPost = {
 <h3>How does RTL formatting work for marketing emails?</h3>
 <p>The Daisy&rsquo;s email templates automatically detect the content language and apply the correct text direction, alignment, and layout. Arabic emails render in RTL format with proper alignment, while English emails render in LTR. Mixed-language emails handle each paragraph according to its detected language. No manual formatting is needed.</p>
 `,
-    metaTitle: 'Multilingual Beauty Business Tools & Tips | Daisy',
+    metaTitle: 'Multilingual Beauty Business Tools & Tips | The Daisy',
     metaDescription:
       'Run a multilingual beauty business with tools built for multiple languages. AI, booking, marketing, and client communication that work natively in Arabic, English, and more.',
     createdAt: '2026-03-18T10:00:00.000Z',
@@ -786,7 +786,7 @@ const dataDrivenPlatformArticle: LocalBlogPost = {
 <h3>How quickly do I start seeing benefits from platform intelligence?</h3>
 <p>You benefit from network intelligence immediately because the platform has already learned from millions of interactions. The AI receptionist, scheduling optimisation, and marketing engine all leverage existing network knowledge from day one. Your salon-specific insights become more personalised over the first 4&ndash;8 weeks as the system learns your unique patterns.</p>
 `,
-    metaTitle: 'Data-Driven Beauty Platform Advantages | Daisy',
+    metaTitle: 'Data-Driven Beauty Platform Advantages | The Daisy',
     metaDescription:
       'Discover how data-driven beauty platforms create competitive moats through network effects, AI intelligence, and market insights that grow stronger over time.',
     createdAt: '2026-03-18T10:30:00.000Z',
@@ -908,7 +908,7 @@ const modernSalonsAiArticle: LocalBlogPost = {
 <h3>How is an AI platform different from adding AI features to my current software?</h3>
 <p>Adding AI features to traditional software is like putting a turbocharger on a bicycle. The fundamental architecture is not designed for AI. Bolt-on AI features work with limited data, limited integration, and limited learning capability. A platform built around AI from the ground up - like The Daisy - delivers fundamentally different results because AI is the foundation, not an accessory.</p>
 `,
-    metaTitle: 'AI Salon Platform vs Traditional Software | Daisy',
+    metaTitle: 'AI Salon Platform vs Traditional Software | The Daisy',
     metaDescription:
       'Learn why modern salons need an AI platform, not just software. Discover how AI-powered systems learn, adapt, and grow your business autonomously over time.',
     createdAt: '2026-03-18T11:00:00.000Z',
@@ -1025,7 +1025,7 @@ const softwareWarningSignsArticle: LocalBlogPost = {
 <h3>What if I am locked into a contract with my current software?</h3>
 <p>Review your contract terms for early termination options. Many vendors offer month-to-month billing or have reasonable cancellation windows. Even if you have remaining contract months, you can begin setting up The Daisy in parallel and transition at the end of your current agreement. The cost of a few overlapping subscription months is negligible compared to the ongoing revenue loss from outdated tools.</p>
 `,
-    metaTitle: '10 Signs Your Salon Software Is Outdated | Daisy',
+    metaTitle: '10 Signs Your Salon Software Is Outdated | The Daisy',
     metaDescription:
       'Spot the 10 warning signs that your current salon software is limiting your growth. Learn what modern AI-powered platforms offer that outdated tools cannot.',
     createdAt: '2026-03-18T11:30:00.000Z',

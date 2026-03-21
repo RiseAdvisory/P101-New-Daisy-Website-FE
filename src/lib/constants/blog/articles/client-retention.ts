@@ -138,7 +138,7 @@ const clientRetentionRateArticle: LocalBlogPost = {
 <h3>What is the difference between client retention and client satisfaction?</h3>
 <p>Satisfaction measures how clients feel about a specific visit; retention measures whether they come back. A client can be satisfied but still not return because they forgot, moved, found a more convenient option, or were never prompted to rebook. High satisfaction is necessary but not sufficient for high retention. You need both a great experience and a proactive system to convert that satisfaction into repeat visits.</p>
 `,
-    metaTitle: 'Salon Client Retention Rate Guide | Daisy',
+    metaTitle: 'Salon Client Retention Rate Guide | The Daisy',
     metaDescription:
       'Calculate your salon client retention rate accurately and discover seven proven strategies to turn first-time visitors into loyal regulars who rebook consistently.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -280,7 +280,7 @@ const rebookingStrategiesArticle: LocalBlogPost = {
 <h3>How soon after a visit should I send a rebooking reminder?</h3>
 <p>Send a thank-you message within 2 hours of the visit, a midpoint reminder at the halfway mark of the service cycle (3 weeks for a 6-week cycle), and an urgency reminder as the cycle approaches its end. <a href="/en/features/business/communication-tools">The Daisy's automated messaging</a> handles this sequence across WhatsApp, SMS, and email with personalised content and one-tap booking links.</p>
 `,
-    metaTitle: 'Salon Rebooking Strategies | Daisy',
+    metaTitle: 'Salon Rebooking Strategies | The Daisy',
     metaDescription:
       'Proven salon rebooking strategies that increase return visit rates by 30-50%. Front-desk scripts, automated reminders, and incentives that drive repeat visits.',
     createdAt: '2026-03-18T08:30:00.000Z',
@@ -412,7 +412,7 @@ const clientExperienceArticle: LocalBlogPost = {
 <h3>What should I do if a client has a negative experience?</h3>
 <p>Respond immediately with empathy and ownership. Acknowledge the issue, apologise sincerely, and offer a concrete resolution (a complimentary redo, a discount on the next visit, or a refund for severe cases). Follow up within 48 hours to ensure the resolution was satisfactory. Clients whose problems are resolved promptly and sincerely often become your most loyal advocates.</p>
 `,
-    metaTitle: 'Salon Client Experience Guide | Daisy',
+    metaTitle: 'Salon Client Experience Guide | The Daisy',
     metaDescription:
       'Design your salon client experience from first visit to loyal regular. Covers every touchpoint: booking, arrival, service, checkout, and post-visit follow-up.',
     createdAt: '2026-03-18T09:00:00.000Z',
@@ -539,7 +539,7 @@ const clientPersonalizationArticle: LocalBlogPost = {
 <h3>Does personalisation work for large, busy salons?</h3>
 <p>Personalisation is actually more important for large salons because clients are more likely to see different team members and feel like a number. Technology scales personalisation in ways that memory cannot. A 20-stylist salon using a comprehensive client profile system can deliver more consistent personalisation than a 3-stylist salon relying on individual memory.</p>
 `,
-    metaTitle: 'Salon Client Personalisation Tips | Daisy',
+    metaTitle: 'Salon Client Personalisation Tips | The Daisy',
     metaDescription:
       'Deliver personalised salon experiences at scale. Capture client preferences, build detailed profiles, and use technology to keep every client feeling valued.',
     createdAt: '2026-03-18T09:30:00.000Z',
@@ -669,7 +669,7 @@ const winBackCampaignsArticle: LocalBlogPost = {
 <h3>What channels work best for win-back campaigns?</h3>
 <p>WhatsApp achieves the highest open and response rates (85-90% open rate) in markets where it is the dominant messaging platform, particularly in the GCC region. SMS is effective as a backup channel. Email works for longer-form content but has lower open rates (20-30%). The ideal approach uses multiple channels: <a href="/en/features/business/communication-tools">The Daisy</a> delivers campaigns across WhatsApp, SMS, and email simultaneously, reaching clients on their preferred channel.</p>
 `,
-    metaTitle: 'Salon Win-Back Campaigns Guide | Daisy',
+    metaTitle: 'Salon Win-Back Campaigns Guide | The Daisy',
     metaDescription:
       'Design win-back campaigns that re-engage lapsed salon clients. Covers segmentation, messaging sequences, value-based incentives, and recovery rate metrics.',
     createdAt: '2026-03-18T10:00:00.000Z',
@@ -810,7 +810,7 @@ const customerFeedbackArticle: LocalBlogPost = {
 <h3>What is a good Net Promoter Score for a salon?</h3>
 <p>A good NPS for a beauty salon is 50 or above. Scores of 70+ indicate exceptional client satisfaction. The beauty industry average is approximately 45. If your NPS is below 30, there are significant experience issues to address. Track NPS monthly and investigate any drop of more than 10 points, as it usually indicates a specific problem (staff change, product issue, or process breakdown).</p>
 `,
-    metaTitle: 'Salon Customer Feedback Guide | Daisy',
+    metaTitle: 'Salon Customer Feedback Guide | The Daisy',
     metaDescription:
       'Collect, analyse, and act on salon customer feedback effectively. Covers survey design, response protocols, and turning complaints into retention wins.',
     createdAt: '2026-03-18T10:30:00.000Z',
@@ -961,7 +961,7 @@ const independentClientLoyaltyArticle: LocalBlogPost = {
 <h3>How many clients do I need for a sustainable independent business?</h3>
 <p>Most independent beauty professionals need 60-100 active regular clients, depending on service frequency and average ticket value. At 70% retention, you need to acquire 2-4 new clients per month to maintain and grow this base. Focus on retention first - it is far easier to keep 70 loyal clients than to constantly replace 30+ churned ones.</p>
 `,
-    metaTitle: 'Client Loyalty for Beauty Pros | Daisy',
+    metaTitle: 'Client Loyalty for Beauty Pros | The Daisy',
     metaDescription:
       'Build deep client loyalty as an independent beauty professional. Covers personal branding, relationship management, and solo loyalty programme strategies.',
     createdAt: '2026-03-18T11:00:00.000Z',

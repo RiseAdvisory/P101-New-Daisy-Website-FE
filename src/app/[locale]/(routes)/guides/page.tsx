@@ -8,7 +8,7 @@ import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'Salon Business Guides | How-To Guides for Beauty Businesses | Daisy',
+  title: 'Salon Business Guides | The Daisy',
   description:
     'Step-by-step guides for salon owners: reduce no-shows, get more clients, choose the right software, set up online booking, and grow your beauty business.',
   keywords: [
@@ -19,7 +19,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'salon software guide',
   ],
   openGraph: {
-    title: 'Salon Business Guides | How-To Guides for Beauty Businesses',
+    title: 'Salon Business Guides | The Daisy',
     description:
       'Step-by-step guides for salon owners on growing their beauty business.',
     url: `https://www.jointhedaisy.com/${locale}/guides`,
@@ -28,7 +28,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Salon Business Guides | How-To Guides for Beauty Businesses | Daisy',
+    title: 'Salon Business Guides | The Daisy',
     description:
       'Step-by-step guides for salon owners: reduce no-shows, get more clients, choose the right software.',
     images: ['/images/og/og-default.jpg'],
@@ -41,7 +41,7 @@ export default function GuidesIndex() {
   return (
     <main className="min-h-screen bg-white">
       <WebPageSchema
-        title="Salon Business Guides | How-To Guides for Beauty Businesses | Daisy"
+        title="Salon Business Guides | The Daisy"
         description="Step-by-step guides for salon owners: reduce no-shows, get more clients, choose the right software."
         url="https://www.jointhedaisy.com/guides"
       />

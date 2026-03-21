@@ -8,9 +8,9 @@ import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'Beauty Business Solutions. AI-Powered Software | Daisy',
+  title: 'Beauty Business Solutions. AI-Powered Software | The Daisy',
   description:
-    'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing. AI-powered software built for beauty businesses.',
+    'Explore The Daisy solutions for salons, spas, barbershops, and med spas. AI booking, POS, CRM, marketing, and staff management built for your business type.',
   keywords: [
     'salon management software',
     'spa booking system',
@@ -19,7 +19,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'beauty business solutions',
   ],
   openGraph: {
-    title: 'Beauty Business Solutions. AI-Powered Software | Daisy',
+    title: 'Beauty Business Solutions. AI-Powered Software | The Daisy',
     description:
       'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing.',
     url: `https://www.jointhedaisy.com/${locale}/solutions`,
@@ -28,7 +28,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Beauty Business Solutions. AI-Powered Software | Daisy',
+    title: 'Beauty Business Solutions. AI-Powered Software | The Daisy',
     description:
       'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing.',
     images: ['/images/og/og-default.jpg'],
@@ -41,7 +41,7 @@ export default function SolutionsIndexPage() {
   return (
     <main className="min-h-screen">
       <WebPageSchema
-        title="Beauty Business Solutions. AI-Powered Software | Daisy"
+        title="Beauty Business Solutions. AI-Powered Software | The Daisy"
         description="Explore Daisy's solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing."
         url="https://www.jointhedaisy.com/solutions"
       />

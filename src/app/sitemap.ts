@@ -61,9 +61,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
 
   // Resource pages
-  const now = new Date().toISOString();
   const resourcePages = [
-    ...localizedEntries('/resources/blog-post', { lastModified: now, changeFrequency: 'daily', priority: 0.7 }),
+    ...localizedEntries('/resources/blog-post', { lastModified: SEO_CONTENT_DATE, changeFrequency: 'daily', priority: 0.7 }),
     ...localizedEntries('/resources/tutorials', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'weekly', priority: 0.6 }),
     ...localizedEntries('/resources/testimonials', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'weekly', priority: 0.5 }),
     ...localizedEntries('/resources/updates', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'weekly', priority: 0.6 }),
@@ -80,7 +79,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogSlugs = await getAllBlogSlugs();
   const blogPages = blogSlugs.flatMap((item) =>
     localizedEntries(`/resources/blog/${item.userType}/${item.slug}`, {
-      lastModified: now,
+      lastModified: item.publishedAt || SEO_CONTENT_DATE,
       changeFrequency: 'weekly',
       priority: 0.7,
     })

@@ -149,7 +149,7 @@ const deathOfSalonSoftwareArticle: LocalBlogPost = {
 <h3>How long does it take to see results after switching to a platform?</h3>
 <p>Operational improvements (automated booking, reduced no-shows, time savings) are visible within the first week. Revenue growth from new client acquisition and retention features typically materialises within 30-60 days. The full compounding effect of AI learning, data accumulation, and ecosystem synergies builds over the first 3-6 months.</p>
 `,
-    metaTitle: 'Death of Salon Software: Platform Future | Daisy',
+    metaTitle: 'Death of Salon Software: Platform Future | The Daisy',
     metaDescription:
       'Traditional salon software is dying. The future belongs to platform ecosystems with AI, client acquisition, and growth tools. Learn why the shift matters.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -450,7 +450,7 @@ const operationsToGrowthMindsetArticle: LocalBlogPost = {
 <h3>What if growth activities do not produce immediate results?</h3>
 <p>Growth work has a longer feedback loop than operations. Fixing a scheduling conflict gives you instant satisfaction. Building a referral programme takes weeks to show results. This delay is why many owners revert to operations - it feels productive in the moment. Commit to 90 days of consistent growth investment before evaluating results. The compound effects need time to accumulate.</p>
 `,
-    metaTitle: 'Operations to Growth Mindset for Salons | Daisy',
+    metaTitle: 'Operations to Growth Mindset for Salons | The Daisy',
     metaDescription:
       'Escape the operator trap. Learn the mindset shift from managing daily salon operations to leading business growth with AI automation and smart delegation.',
     createdAt: '2026-03-18T10:00:00.000Z',

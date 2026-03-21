@@ -192,7 +192,7 @@ const salonPosBuyersGuideArticle: LocalBlogPost = {
 <h3>How do I handle PCI compliance with a POS system?</h3>
 <p>Reputable POS providers handle PCI DSS compliance on your behalf. Card data is encrypted at the terminal and never stored on your local systems. Cloud-based platforms like The Daisy maintain PCI DSS Level 1 compliance, the highest security standard, so you do not need to manage compliance yourself or pay separate compliance fees.</p>
 `,
-    metaTitle: 'Salon POS Systems: Buyer\'s Guide | Daisy',
+    metaTitle: 'Salon POS Systems: Buyer\'s Guide | The Daisy',
     metaDescription:
       'Complete buyer\'s guide to salon POS systems. Compare hardware, software features, integration depth, and total cost. Decision framework for beauty businesses.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -361,7 +361,7 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
 <h3>What percentage of my staff's income should come from tips?</h3>
 <p>Tips should supplement a fair base wage, not replace it. If tips represent more than 25&ndash;30% of a team member&rsquo;s total compensation, your base wages may be too low. Staff who depend heavily on tips experience income volatility that increases turnover.</p>
 `,
-    metaTitle: 'Salon Tipping: Policies & Digital Tips | Daisy',
+    metaTitle: 'Salon Tipping: Policies & Digital Tips | The Daisy',
     metaDescription:
       'Build a clear salon tipping policy. Cover etiquette standards, digital tipping setup, tip distribution models, and staff management. Complete guide for owners.',
     createdAt: '2026-03-18T08:30:00.000Z',
@@ -539,7 +539,7 @@ const contactlessPaymentsArticle: LocalBlogPost = {
 <h3>Do I need different hardware for Apple Pay vs Google Pay?</h3>
 <p>No. Any NFC-enabled payment terminal accepts all contactless methods - physical cards, Apple Pay, Google Pay, Samsung Pay, and wearable payments. They all use the same NFC protocol. One terminal handles everything.</p>
 `,
-    metaTitle: 'Contactless Payments for Salons | Daisy',
+    metaTitle: 'Contactless Payments for Salons | The Daisy',
     metaDescription:
       'Set up contactless payments in your salon. Step-by-step guide covering NFC terminals, mobile wallets, QR codes, tap-to-pay, and staff training tips.',
     createdAt: '2026-03-18T09:00:00.000Z',
@@ -699,7 +699,7 @@ const salonInvoicingArticle: LocalBlogPost = {
 <h3>How do I handle VAT on salon invoices?</h3>
 <p>Include your VAT registration number on every invoice. Show the net amount, VAT amount, and gross total as separate line items. For jurisdictions with 5% VAT (such as the UAE), a 300 AED service would show: Net 285.71 AED + VAT 14.29 AED = Total 300.00 AED. Your salon management platform should calculate this automatically based on your tax configuration.</p>
 `,
-    metaTitle: 'Salon Invoicing: Billing Made Easy | Daisy',
+    metaTitle: 'Salon Invoicing: Billing Made Easy | The Daisy',
     metaDescription:
       'Set up professional invoicing for your salon. Cover deposits, packages, memberships, corporate billing, and automated payment reminders. Templates included.',
     createdAt: '2026-03-18T09:30:00.000Z',
@@ -1202,7 +1202,7 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
 <h3>How often should I review my processing costs?</h3>
 <p>Annually at minimum. The payment processing market is competitive, and new providers or rate adjustments become available regularly. A 15-minute annual review can save thousands of dirhams per year.</p>
 `,
-    metaTitle: 'Salon Payment Processing Fees | Daisy',
+    metaTitle: 'Salon Payment Processing Fees | The Daisy',
     metaDescription:
       'Understand what your salon really pays in payment processing fees. Covers flat-rate, interchange-plus, and commission models with real cost calculations.',
     createdAt: '2026-03-18T10:30:00.000Z',

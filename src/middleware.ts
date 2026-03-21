@@ -80,6 +80,13 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // Remove trailing slashes (except for root /)
+  if (pathname !== '/' && pathname.endsWith('/')) {
+    const newUrl = new URL(request.url);
+    newUrl.pathname = pathname.slice(0, -1);
+    return NextResponse.redirect(newUrl, 301);
+  }
+
   // AI referrer tracking (preserve existing logic)
   const referer = request.headers.get('referer');
   if (referer) {

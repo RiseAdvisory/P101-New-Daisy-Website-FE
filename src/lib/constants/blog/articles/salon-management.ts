@@ -143,7 +143,7 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
 <h3>Can I negotiate salon software pricing?</h3>
 <p>Many platforms offer discounts for annual commitments, multi-location deals, or early-stage businesses. It never hurts to ask, especially if you are bringing multiple branches or a large team. Some platforms also offer onboarding credits or waive setup fees for new clients migrating from a competitor.</p>
 `,
-    metaTitle: 'How to Choose Salon Management Software | Daisy',
+    metaTitle: 'How to Choose Salon Management Software | The Daisy',
     metaDescription:
       'Step-by-step guide to choosing salon management software. Evaluate features, pricing, scalability, and support to make the right decision for your business.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -296,7 +296,7 @@ const salonSoftwareChecklistArticle: LocalBlogPost = {
 <h3>How often should I re-evaluate my salon software?</h3>
 <p>Review your platform annually. The salon software market evolves rapidly, and features that were cutting-edge two years ago may now be standard. An annual review ensures you are not paying premium prices for features that are now widely available, and that you are not missing capabilities that could drive significant growth.</p>
 `,
-    metaTitle: 'Salon Software Features: 25 Must-Haves | Daisy',
+    metaTitle: 'Salon Software Features: 25 Must-Haves | The Daisy',
     metaDescription:
       'Checklist of 25 essential salon software features across booking, payments, marketing, and AI. Score any platform to find gaps before you commit.',
     createdAt: '2026-03-18T08:30:00.000Z',
@@ -450,7 +450,7 @@ const switchingSalonSoftwareArticle: LocalBlogPost = {
 <h3>How soon will I see a return on the time invested in switching?</h3>
 <p>Most salons report measurable improvements within 30-60 days. Reduced no-shows (from automated reminders), increased online bookings (from a better booking experience), and captured after-hours demand (from AI or 24/7 online booking) typically generate enough additional revenue in the first two months to justify the migration effort several times over.</p>
 `,
-    metaTitle: 'Switching Salon Software: Migration Guide | Daisy',
+    metaTitle: 'Switching Salon Software: Migration Guide | The Daisy',
     metaDescription:
       'Complete guide to switching salon software without losing data or clients. Covers evaluation, migration, training, and optimisation for a seamless transition.',
     createdAt: '2026-03-18T09:00:00.000Z',
@@ -572,7 +572,7 @@ const cloudVsDesktopArticle: LocalBlogPost = {
 <h3>Do I need a fast internet connection for cloud salon software?</h3>
 <p>A standard broadband connection (10+ Mbps) is more than sufficient. Cloud salon software transfers small amounts of data - text-based booking information, not large files. If you can stream YouTube videos, your connection is fast enough for cloud salon software.</p>
 `,
-    metaTitle: 'Cloud vs Desktop Salon Software Compared | Daisy',
+    metaTitle: 'Cloud vs Desktop Salon Software Compared | The Daisy',
     metaDescription:
       'Cloud vs desktop salon software: compare cost, accessibility, security, and scalability. Learn why cloud wins for most salons and when desktop still fits.',
     createdAt: '2026-03-18T09:30:00.000Z',
@@ -698,7 +698,7 @@ const smallSalonSoftwareArticle: LocalBlogPost = {
 <h3>Can I start with basic software and upgrade later?</h3>
 <p>You can, but switching platforms later means migrating data, retraining staff, and updating all your booking links. It is more efficient to choose a platform that offers a starter-friendly plan now with the ability to unlock advanced features as you grow - same platform, same data, no migration needed.</p>
 `,
-    metaTitle: 'Small Salon Software for 1-5 Staff | Daisy',
+    metaTitle: 'Small Salon Software for 1-5 Staff | The Daisy',
     metaDescription:
       'Best salon software for small teams of 1-5 staff. Learn which features matter, avoid pricing traps, and choose a platform that scales with your business.',
     createdAt: '2026-03-18T10:00:00.000Z',
@@ -991,7 +991,7 @@ const salonSoftwareROIArticle: LocalBlogPost = {
 <h3>Can salon software ROI decline over time?</h3>
 <p>It can if you stop using the platform's capabilities. The biggest ROI comes from features you actively use - marketing campaigns, AI receptionist, analytics-driven decisions. If you only use the platform for basic booking, you capture only a fraction of the potential return. Treat your software as a growth tool, not just a calendar.</p>
 `,
-    metaTitle: 'Salon Software ROI: Calculate Your Return | Daisy',
+    metaTitle: 'Salon Software ROI: Calculate Your Return | The Daisy',
     metaDescription:
       'Calculate the ROI of salon management software. See revenue gains, cost savings, and time recovered that turn your subscription into a growth investment.',
     createdAt: '2026-03-18T11:00:00.000Z',
@@ -1151,7 +1151,7 @@ const freeVsPaidSalonSoftwareArticle: LocalBlogPost = {
 <h3>Are there any truly free salon software options with no hidden costs?</h3>
 <p>Very few. Open-source salon software exists but requires technical expertise to set up, maintain, and customise. For most salon owners, the time investment in managing open-source software far exceeds the cost of a paid subscription. In practice, "truly free" salon software either lacks the features needed to run a professional business or requires enough technical effort that it is not really free.</p>
 `,
-    metaTitle: 'Free vs Paid Salon Software: True Cost | Daisy',
+    metaTitle: 'Free vs Paid Salon Software: True Cost | The Daisy',
     metaDescription:
       'Compare free and paid salon software beyond the price tag. See hidden costs, feature gaps, and real total cost to find the best value for your salon.',
     createdAt: '2026-03-18T11:30:00.000Z',

@@ -196,7 +196,7 @@ const staffSchedulingArticle: LocalBlogPost = {
 <h3>How do I reduce no-shows from staff?</h3>
 <p>Most no-shows result from schedule confusion, personal emergencies, or disengagement. Reduce them by: pushing schedule notifications to staff phones, sending a day-before reminder, making schedule swaps easy to arrange, and addressing chronic no-shows in private performance conversations.</p>
 `,
-    metaTitle: 'Salon Staff Scheduling Best Practices | Daisy',
+    metaTitle: 'Salon Staff Scheduling Best Practices | The Daisy',
     metaDescription:
       'Master salon staff scheduling with best practices, templates, and automation tips. Cover shift planning, time-off management, and workload balancing.',
     createdAt: '2026-03-18T11:00:00.000Z',
@@ -456,7 +456,7 @@ const commissionStructuresArticle: LocalBlogPost = {
 <h3>Can I change commission rates without losing staff?</h3>
 <p>Yes, if you handle the transition well. The key is transparency and fairness: show staff their projected earnings under the new structure, provide a transition guarantee period, and ensure the change is positioned as a benefit (e.g., tiered commission that rewards growth). Surprise commission cuts with no explanation are the fastest way to lose your best people.</p>
 `,
-    metaTitle: 'Salon Commission Structures Guide | Daisy',
+    metaTitle: 'Salon Commission Structures Guide | The Daisy',
     metaDescription:
       'Find the right salon commission structure. Compare straight, tiered, hybrid, booth rental, and team models with real calculations and implementation guidance.',
     createdAt: '2026-03-18T11:30:00.000Z',
@@ -638,7 +638,7 @@ const hiringSalonStaffArticle: LocalBlogPost = {
 <h3>What if I need to hire urgently?</h3>
 <p>Do not skip the trial shift, even under time pressure. A bad hire made in haste costs more in lost clients, team disruption, and rehiring time than a few weeks of being short-staffed. Use freelance or temporary professionals to cover the gap while you hire properly.</p>
 `,
-    metaTitle: 'Hiring Salon Staff: Interview Guide | Daisy',
+    metaTitle: 'Hiring Salon Staff: Interview Guide | The Daisy',
     metaDescription:
       'Hire the right salon staff with structured interview questions, red flag checklists, trial shift best practices, and onboarding frameworks for beauty businesses.',
     createdAt: '2026-03-18T12:00:00.000Z',
@@ -814,7 +814,7 @@ const employeeRetentionArticle: LocalBlogPost = {
 <h3>Is high turnover normal in the beauty industry?</h3>
 <p>Common, yes. Normal or acceptable, no. The industry average of 30&ndash;40% annual turnover is driven by salons that underinvest in their teams. Salons that implement structured retention strategies consistently achieve below 15% annual turnover, which translates directly into stronger client relationships, higher revenue per stylist, and lower operating costs. See The Daisy&rsquo;s <a href="/en/pricing">pricing plans</a> for tools that support staff retention.</p>
 `,
-    metaTitle: 'Salon Employee Retention Strategies | Daisy',
+    metaTitle: 'Salon Employee Retention Strategies | The Daisy',
     metaDescription:
       'Reduce salon staff turnover with proven retention strategies. Cover compensation, career development, work-life balance, and culture for beauty businesses.',
     createdAt: '2026-03-18T12:30:00.000Z',
@@ -1163,7 +1163,7 @@ const performanceReviewsArticle: LocalBlogPost = {
 <h3>What documentation should I keep from reviews?</h3>
 <p>Keep a written record of every formal review (monthly and quarterly) including: the evaluation scores, specific examples discussed, goals set, and any commitments made by either party. Both the manager and the staff member should sign the record. This documentation protects you legally and provides continuity if management changes.</p>
 `,
-    metaTitle: 'Salon Performance Review Template | Daisy',
+    metaTitle: 'Salon Performance Review Template | The Daisy',
     metaDescription:
       'Ready-to-use salon staff performance review template. Evaluation criteria, conversation framework, goal-setting, and difficult conversation scripts for owners.',
     createdAt: '2026-03-18T13:30:00.000Z',

@@ -490,7 +490,7 @@ const revenueForecastingArticle: LocalBlogPost = {
 <h3>How do I forecast revenue for a new salon with no historical data?</h3>
 <p>For new salons, build a capacity-based forecast. Calculate your maximum capacity (chairs &times; operating hours &times; average service price), then apply conservative utilisation assumptions: 25-35% utilisation in month one, growing by 5-8% per month as you build your client base. Adjust based on your pre-opening marketing results, neighbourhood demographics, and competitive density. Revise the forecast monthly as real data replaces assumptions.</p>
 `,
-    metaTitle: 'Revenue Forecasting for Beauty Businesses | Daisy',
+    metaTitle: 'Revenue Forecasting for Beauty Businesses | The Daisy',
     metaDescription:
       'Learn three proven methods to forecast salon revenue. Build accurate financial projections, account for seasonality, and make smarter growth decisions.',
     createdAt: '2026-03-17T10:00:00.000Z',
@@ -684,7 +684,7 @@ const trackingFreelanceIncomeArticle: LocalBlogPost = {
 <h3>What records should I keep for tax purposes?</h3>
 <p>Keep all business-related receipts (digital scans are accepted in most jurisdictions), bank statements, invoices issued, a mileage log if you travel for work, and your monthly income reports. Most tax authorities require you to retain records for 5-7 years. Cloud storage is ideal - it is secure, searchable, and accessible from anywhere. Organise files by year and month for easy retrieval.</p>
 `,
-    metaTitle: 'Track Freelance Beauty Income Effectively | Daisy',
+    metaTitle: 'Track Freelance Beauty Income Effectively | The Daisy',
     metaDescription:
       'A step-by-step guide to tracking freelance beauty income. Calculate your true hourly rate, manage taxes, and build financial clarity as an independent pro.',
     createdAt: '2026-03-17T11:00:00.000Z',
@@ -861,7 +861,7 @@ const dataDrivenSalonsArticle: LocalBlogPost = {
 <h3>What is the minimum amount of data I need before analytics are useful?</h3>
 <p>You can start drawing useful conclusions with as little as 4-6 weeks of data. At that point, weekly patterns become visible: which days are busiest, which services are most popular, and what your average utilisation looks like. For seasonal analysis and year-over-year comparison, you need 12+ months. Start now, even if the initial insights are basic - the data you capture today becomes the foundation for deeper analysis tomorrow.</p>
 `,
-    metaTitle: 'Data-Driven Salons Outperform Competition | Daisy',
+    metaTitle: 'Data-Driven Salons Outperform Competition | The Daisy',
     metaDescription:
       'Learn how data-driven salons gain competitive advantages in pricing, retention, staffing, and marketing. A practical guide to salon analytics that works.',
     createdAt: '2026-03-17T12:00:00.000Z',

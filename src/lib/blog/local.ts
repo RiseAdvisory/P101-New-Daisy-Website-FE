@@ -42,18 +42,23 @@ export async function getBlogPostBySlug(
  * Get all blog slugs for static generation
  */
 export async function getAllBlogSlugs(): Promise<
-  Array<{ userType: UserType; slug: string; locale: string }>
+  Array<{ userType: UserType; slug: string; locale: string; publishedAt?: string }>
 > {
   const userTypes: UserType[] = ['customer', 'business', 'professional'];
   const locales = ['en'];
-  const slugs: Array<{ userType: UserType; slug: string; locale: string }> = [];
+  const slugs: Array<{ userType: UserType; slug: string; locale: string; publishedAt?: string }> = [];
 
   for (const userType of userTypes) {
     for (const locale of locales) {
       const posts = await getAllBlogPosts(userType, locale);
       posts.forEach((post) => {
         if (post.attributes.slug) {
-          slugs.push({ userType, slug: post.attributes.slug, locale });
+          slugs.push({
+            userType,
+            slug: post.attributes.slug,
+            locale,
+            publishedAt: post.attributes.publishedAt,
+          });
         }
       });
     }

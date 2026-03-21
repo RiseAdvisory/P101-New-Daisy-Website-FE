@@ -217,7 +217,7 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
 <h3>How do I communicate the switch to my clients?</h3>
 <p>Send one clear message (email, WhatsApp, or SMS) explaining that you have upgraded your booking system. Focus on what is better for the client: easier booking, better reminders, new features like cashback. Provide the new booking link. Keep it positive and simple. Most clients will not notice the backend change as long as their experience improves or stays the same.</p>
 `,
-    metaTitle: 'Salon Software Switching Checklist | Daisy',
+    metaTitle: 'Salon Software Switching Checklist | The Daisy',
     metaDescription:
       'Follow this 30-day checklist to switch salon software without losing clients or data. Covers migration, training, client comms, and go-live planning.',
     createdAt: '2026-03-18T08:00:00.000Z',
@@ -402,7 +402,7 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
 <h3>How do I know if my new platform is working better than the old one?</h3>
 <p>Track three metrics before and after: revenue per day, no-show rate, and online booking percentage. If all three improve within 30 days, your switch is successful. Also track qualitative signals: Is your team spending less time on admin? Are clients commenting positively on the booking experience? Are you seeing new clients from channels you did not have before?</p>
 `,
-    metaTitle: 'First Month on New Salon Software | Daisy',
+    metaTitle: 'First Month on New Salon Software | The Daisy',
     metaDescription:
       'A week-by-week guide to your first month on a new salon platform. Know what to expect, hit key milestones, and start seeing results within 30 days.',
     createdAt: '2026-03-18T09:00:00.000Z',
@@ -610,7 +610,7 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
 <h3>What is a good ROI to expect from salon software?</h3>
 <p>A well-utilised modern platform should deliver a minimum of 5x ROI - meaning for every dollar you spend on the subscription, you gain at least five dollars in revenue, savings, or time value. Top-performing salons using platforms like The Daisy report 10-30x ROI because the compound effect of AI automation, client acquisition, and growth analytics creates outsized returns relative to the subscription cost.</p>
 `,
-    metaTitle: 'Calculate ROI of Switching Salon Software | Daisy',
+    metaTitle: 'Calculate ROI of Switching Salon Software | The Daisy',
     metaDescription:
       'Learn how to calculate the ROI of switching salon software. Covers revenue gains, cost savings, time savings, and a step-by-step formula for your business.',
     createdAt: '2026-03-18T10:00:00.000Z',

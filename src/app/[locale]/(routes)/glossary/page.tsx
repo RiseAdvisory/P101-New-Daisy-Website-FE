@@ -8,7 +8,7 @@ import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'Beauty & Salon Software Glossary | Key Terms Explained | Daisy',
+  title: 'Salon Software Glossary | The Daisy',
   description:
     'Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations of salon management, AI receptionist, cashback booking, and more.',
   keywords: [
@@ -19,7 +19,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'cashback booking explained',
   ],
   openGraph: {
-    title: 'Beauty & Salon Software Glossary | Key Terms Explained',
+    title: 'Salon Software Glossary | The Daisy',
     description:
       'Understand key beauty industry and salon software terms. Expert definitions and comparisons.',
     url: `https://www.jointhedaisy.com/${locale}/glossary`,
@@ -28,7 +28,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Beauty & Salon Software Glossary | Key Terms Explained | Daisy',
+    title: 'Salon Software Glossary | The Daisy',
     description:
       'Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations.',
     images: ['/images/og/og-default.jpg'],
@@ -41,7 +41,7 @@ export default function GlossaryIndex() {
   return (
     <main className="min-h-screen bg-white">
       <WebPageSchema
-        title="Beauty & Salon Software Glossary | Key Terms Explained | Daisy"
+        title="Salon Software Glossary | The Daisy"
         description="Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations."
         url="https://www.jointhedaisy.com/glossary"
       />

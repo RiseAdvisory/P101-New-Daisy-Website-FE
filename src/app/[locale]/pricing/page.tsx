@@ -9,7 +9,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   return {
   title: 'Pricing Plans for Salons & Spas | The Daisy',
   description:
-    'Flexible pricing plans for salons, spas, and beauty professionals. Choose monthly or annual billing with commission-based pricing tailored to your business size.',
+    'Compare The Daisy pricing tiers for salons, spas, and clinics. Start with a free 14-day trial, then choose Starter, Growth, or Pro. No hidden fees.',
   keywords: [
     'salon software pricing',
     'spa booking system cost',
