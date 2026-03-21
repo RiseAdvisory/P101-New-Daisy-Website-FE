@@ -49,7 +49,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
   const [homeService, setHomeService] = useState(false);
   const [isSubmit, setIsSubmit] = useState(false);
   const [contentChange, setContentChange] = useState({
-    serviceProvidorType: 'Professional',
+    serviceProvidorType: defaultType === 'business' ? 'Business' : 'Professional',
     homeVisits: 'No',
   });
 
