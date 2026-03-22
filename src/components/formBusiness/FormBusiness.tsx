@@ -350,7 +350,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
         )}
         <div className="md:flex md:justify-between">
           <div className="w-[100%] flex flex-grow-2">
-            <div className="w-1/4 flex-grow-1">
+            <div className="w-1/3 md:w-1/4 flex-grow-1">
               <FormField
                 control={form.control}
                 name="country_code"
@@ -402,7 +402,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                 )}
               />
             </div>
-            <div className="w-3/4">
+            <div className="w-2/3 md:w-3/4">
               <FormField
                 control={form.control}
                 name="mobile"
