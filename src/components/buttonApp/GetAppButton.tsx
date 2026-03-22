@@ -4,6 +4,7 @@ import { Button } from '../ui/button';
 import { GooglePlayIcons } from '@/assets/icons/appMarket/GooglePlayIcons';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { useMyContext } from '@/app/MyContext';
 
 export const GetAppButton = ({
   className,
@@ -18,6 +19,10 @@ export const GetAppButton = ({
   textGetApp: string;
   homePage?: boolean;
 }) => {
+  const { userChange } = useMyContext();
+  const persona = userChange === '/professional' ? 'professional' : 'business';
+  const trialPath = `/start-free-trial/${persona}`;
+
   return (
     <Button
       asChild
@@ -30,7 +35,7 @@ export const GetAppButton = ({
         className,
       )}
     >
-      <Link href={'/start-free-trial/business'}>
+      <Link href={trialPath}>
         <div className="flex justify-center items-center hover:bg-white group hover:text-primary cursor-pointer">
           <button className=" border-r-2 rtl:border-none rtl:ml-2 border-[#586968] pr-[11px]">
             <AppStoreIcons w="15" h="17" className="group-hover:fill-primary" />

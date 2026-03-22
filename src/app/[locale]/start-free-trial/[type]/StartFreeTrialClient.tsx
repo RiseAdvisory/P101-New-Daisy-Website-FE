@@ -42,8 +42,14 @@ export const StartFreeTrialClient = ({
             {data.success.body}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <AppStoreButton />
-            <PlayMarketButton />
+            <AppStoreButton
+              className="bg-primary text-white border-primary hover:bg-primary/90 hover:text-white"
+              fillHover="!fill-white group-hover:!fill-white"
+            />
+            <PlayMarketButton
+              className="bg-primary text-white border-primary hover:bg-primary/90 hover:text-white"
+              fillHover="!fill-white group-hover:!fill-white"
+            />
           </div>
         </div>
       </section>
@@ -51,8 +57,9 @@ export const StartFreeTrialClient = ({
   }
 
   return (
-    <section className="bg-[#F8F5F3] py-16 md:py-24 px-4">
-      <div className="max-w-[860px] mx-auto">
+    <section className="bg-[#F8F5F3] pb-16 md:pb-24">
+      <div className="w-full h-[200px] md:h-[180px] bg-primary" />
+      <div className="max-w-[860px] mx-auto px-4 -translate-y-[180px] md:-translate-y-[160px] -mb-[180px] md:-mb-[160px]">
         <ProfileForm
           defaultType={defaultType}
           buttonText={data.form.buttonText}

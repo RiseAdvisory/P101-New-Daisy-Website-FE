@@ -87,7 +87,7 @@ export const Header = () => {
       if (currentPath) setActivePages(currentPath);
       setCurrentActivePage(currentPath);
     }
-  }, [locale]);
+  }, [locale, path]);
   const { page } = useChangePage();
 
   return (

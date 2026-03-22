@@ -67,8 +67,8 @@ export const TutorialsClient = () => {
       />
       <div className="bg-[#F8F5F3] px-4 md:px-16 pb-20">
         {categories.map((cat) => (
-          <section key={cat.category.slug} className="mb-12">
-            <h2 className="text-2xl font-bold text-[#172524] mb-6">
+          <section key={cat.category.slug} className="mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#172524] text-center pt-8 pb-10">
               {t(cat.category.label, locale)}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
