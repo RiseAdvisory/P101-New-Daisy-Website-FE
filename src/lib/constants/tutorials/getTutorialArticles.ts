@@ -22,7 +22,7 @@ function blogPostToTutorialArticle(
   const isInBusiness = businessBlogPosts.some(
     (p) => p.attributes.slug === post.attributes.slug,
   );
-  const resolvedUserType = isInBusiness ? 'businesses' : 'professionals';
+  const resolvedUserType = isInBusiness ? 'business' : 'professional';
 
   return {
     title: post.attributes.title,
