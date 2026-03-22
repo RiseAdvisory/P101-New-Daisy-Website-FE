@@ -5,23 +5,24 @@ import { TutorialsClient } from './TutorialsClient';
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
   return {
-  title: 'Beauty Booking Tutorials | The Daisy Resources',
+  title: 'Beauty Industry Tutorials & Guides | The Daisy',
   description:
-    'Learn how to use The Daisy beauty booking platform with step-by-step tutorials. Guides for salon owners, beauty professionals, and customers.',
+    'Step-by-step guides for salon owners and beauty professionals. Learn booking management, marketing strategies, staff scheduling, payments, and more.',
   keywords: [
-    'salon app tutorials',
-    'beauty booking guide',
-    'how to book salon',
-    'vendor onboarding guide',
-    'beauty app tutorial',
-    'salon management guide',
+    'beauty industry guides',
+    'salon management tutorials',
+    'salon marketing guide',
+    'beauty business how-to',
+    'salon staff management',
+    'booking management guide',
+    'beauty professional guides',
+    'salon owner resources',
     'The Daisy tutorials',
-    'spa booking help',
   ],
   openGraph: {
-    title: 'Beauty Booking Tutorials | The Daisy Resources',
+    title: 'Beauty Industry Tutorials & Guides | The Daisy',
     description:
-      'Learn how to use The Daisy beauty booking platform with step-by-step tutorials.',
+      'Step-by-step guides for salon owners and beauty professionals. Learn booking management, marketing strategies, staff scheduling, payments, and more.',
     url: `https://www.jointhedaisy.com/${locale}/resources/tutorials`,
     type: 'website',
     images: [
@@ -35,8 +36,9 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Beauty Booking Tutorials | The Daisy Resources',
-    description: 'Learn how to use The Daisy with step-by-step tutorials.',
+    title: 'Beauty Industry Tutorials & Guides | The Daisy',
+    description:
+      'Step-by-step guides for salon owners and beauty professionals. Learn booking management, marketing strategies, staff scheduling, payments, and more.',
     images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/resources/tutorials', locale),
