@@ -1,5 +1,5 @@
 import phoneFirst from '../../../assets/images/features/business/PhoneFirst.png';
-import Ipad from '../../../assets/images/features/business/iPad.png';
+import Ipad from '../../../assets/images/features/business/ipad-tablet-dashboard-mockup.png';
 import lastPhone from '../../../assets/images/features/business/PhoneLast.png';
 
 export const listBusinessOptions = ['Marketing', 'Payments', 'Reports'];

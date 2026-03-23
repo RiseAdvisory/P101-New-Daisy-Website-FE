@@ -335,7 +335,7 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
     },
     secondImage: {
       data: [
-        { attributes: { url: '/images/features/business/ipad.png' } },
+        { attributes: { url: '/images/features/business/ipad-tablet-dashboard-mockup.png' } },
       ],
     },
     thirdImage: {
@@ -356,7 +356,7 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
       data: [
         {
           attributes: {
-            url: '/images/features/business/ipad.png',
+            url: '/images/features/business/ipad-tablet-dashboard-mockup.png',
           },
         },
       ],
@@ -654,7 +654,7 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
     },
     secondImage: {
       data: [
-        { attributes: { url: '/images/features/business/ipad.png' } },
+        { attributes: { url: '/images/features/business/ipad-tablet-dashboard-mockup.png' } },
       ],
     },
     thirdImage: {
@@ -675,7 +675,7 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
       data: [
         {
           attributes: {
-            url: '/images/features/business/ipad.png',
+            url: '/images/features/business/ipad-tablet-dashboard-mockup.png',
           },
         },
       ],

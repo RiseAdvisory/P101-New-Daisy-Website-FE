@@ -1,5 +1,5 @@
-import partner1 from '../../assets/images/Partners1.jpg';
-import partner2 from '../../assets/images/Partners2.jpg';
+import partner1 from '../../assets/images/partner-logo-one.jpg';
+import partner2 from '../../assets/images/partner-logo-two.jpg';
 
 export const parntersImages = [
   { img: partner1 },
