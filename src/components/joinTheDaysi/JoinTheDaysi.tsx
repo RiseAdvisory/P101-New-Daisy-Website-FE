@@ -30,7 +30,7 @@ export const JoinTheDaisy = () => {
             className="bg-white rounded-[12px]  border flex flex-col justify-center items-center overflow-hidden md:justify-start"
           >
             <Image
-              alt="joindaisy"
+              alt="Join The Daisy platform"
               src={item.image}
               className="rounded-top-[12px] block -mt-[1px] h-auto"
               width={1000}

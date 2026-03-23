@@ -62,7 +62,7 @@ export const BusinessHero = ({
             <Image
               className="absolute bottom-0 left-0 w-1/2 max-w-[300px]"
               src={leaf}
-              alt="leaf"
+              alt=""
               width={300}
               height={300}
               priority

@@ -35,12 +35,12 @@ export const ExperienceDaisy = ({ pageType = 'customer', ctaLink, ctaText }: Exp
           <Image
             className="absolute bottom-0 left-0"
             width={200}
-            alt="bgleaf"
+            alt=""
             src={leaf}
           />
           <Image
             className="absolute top-0 right-0 -z-1"
-            alt="bgstars"
+            alt=""
             src={stars}
             width={100}
           />
@@ -65,7 +65,7 @@ export const ExperienceDaisy = ({ pageType = 'customer', ctaLink, ctaText }: Exp
 
         <Image
           src={data.phoneDesktopImage}
-          alt="doublephone"
+          alt="The Daisy app on two mobile devices"
           width={336}
           height={684}
           className="absolute -top-[70px] ltr:left-[60px] rtl:right-[60px] hidden md:block"

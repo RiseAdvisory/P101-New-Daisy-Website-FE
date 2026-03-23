@@ -73,7 +73,7 @@ export const DropdownResources = ({
     <div className="w-full max-w-[420px] h-[290px] border relative bg-[#E8E9E9] rounded-lg ltr:mr-6 rtl:ml-6 flex-shrink-0 overflow-hidden">
       <Image
         src={currentImage}
-        alt="sdasd"
+        alt="Resource article thumbnail"
         className="h-full object-cover"
       />
     </div>

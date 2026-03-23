@@ -64,7 +64,7 @@ export const GrowthSectionCustomer = ({
               width={426}
               height={748}
               src={imageUrl}
-              alt="customerdaisy"
+              alt="Customer experience with The Daisy app"
             />
           </div>
         </div>

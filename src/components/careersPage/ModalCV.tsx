@@ -48,7 +48,7 @@ export const ModalCV = ({
           />
         ) : (
           <div className="flex flex-col justify-center mx-auto items-center">
-            <Image src={imageSucces} width={97} height={97} alt="succesimage" />
+            <Image src={imageSucces} width={97} height={97} alt="CV submitted successfully" />
             <h3 className="font-bold text-2xl text-center text-primary mt-5">
               {dataCareers?.formField?.titleSucess}
             </h3>

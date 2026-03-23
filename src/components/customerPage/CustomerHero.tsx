@@ -55,7 +55,7 @@ export const CustomerHero = ({
             <Image
               className="absolute bottom-0 left-0 w-1/2 max-w-[300px]"
               src={leaf}
-              alt="leaf"
+              alt=""
               width={300}
             />
             <Image

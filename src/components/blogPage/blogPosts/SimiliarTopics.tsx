@@ -68,7 +68,7 @@ export const SimiliarTopick = ({ titleSimilar }: { titleSimilar: string }) => {
                 <div className="w-full h-[240px]">
                   <Image
                     src={imagePosts}
-                    alt="welness"
+                    alt="Beauty and wellness article"
                     className="w-full object-cover h-[230px] md:h-[240px]"
                     width={1000}
                     height={1000}

@@ -26,7 +26,7 @@ const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) =>
         )}
         style={styleFirstBg}
         src={firstBg}
-        alt="leaf"
+        alt=""
         width={300}
         height={500}
         priority={priority}
@@ -41,7 +41,7 @@ const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) =>
           )}
           src={secondBg}
           style={styleSecondBg}
-          alt="start"
+          alt=""
           width={100}
           height={100}
         />
@@ -57,7 +57,7 @@ const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) =>
               [styles.active]: isActive,
             },
           )}
-          alt="phone"
+          alt="Feature demonstration on mobile device"
           width={1000}
           height={1000}
           priority={priority}

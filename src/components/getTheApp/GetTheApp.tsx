@@ -10,7 +10,7 @@ export const GetTheAppScan = ({ qrCode }: { qrCode: string }) => {
           width={148}
           height={148}
           src={qrCode}
-          alt="qrCode"
+          alt="QR code to download The Daisy app"
           className="p-4 "
         />
       </div>
