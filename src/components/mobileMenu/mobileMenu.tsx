@@ -97,7 +97,9 @@ export const MobileMenu = () => {
                           ) {
                             setOpenMenu(!openMenu);
                             toggleOpenMenu(!openMenu);
-                            router.push(localePath(page || '/business', locale));
+                            const activePage = localStorage.getItem('activePage') || '/business';
+                            const homePath = activePage === '/customer' ? '/business' : activePage;
+                            router.push(localePath(homePath, locale));
                           } else {
                             router.push(localePath(item.nav, locale));
                             setOpenMenu(!openMenu);

@@ -24,7 +24,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/ai-receptionist.png',
+                    url: '/images/features/professional/ai-receptionist.png',
                   },
                 },
               ],
@@ -56,7 +56,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/ai-booking.png',
+                    url: '/images/features/professional/ai-booking.png',
                   },
                 },
               ],
@@ -88,7 +88,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/multilingual-ai.png',
+                    url: '/images/features/professional/multilingual-ai.png',
                   },
                 },
               ],
@@ -120,7 +120,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/247-concierge.png',
+                    url: '/images/features/professional/247-concierge.png',
                   },
                 },
               ],
@@ -216,7 +216,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/schedule-page.png',
+                    url: '/images/features/professional/schedule-page.png',
                   },
                 },
               ],
@@ -568,7 +568,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/schedule-page.png',
+                    url: '/images/features/professional/schedule-page.png',
                   },
                 },
               ],
@@ -632,7 +632,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/analytics-alt.png',
+                    url: '/images/features/professional/analytics-alt.png',
                   },
                 },
               ],
@@ -824,7 +824,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/vendor-intro-alt.png',
+                    url: '/images/features/professional/vendor-intro-alt.png',
                   },
                 },
               ],
@@ -952,7 +952,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/analytics-alt.png',
+                    url: '/images/features/professional/analytics-alt.png',
                   },
                 },
               ],
@@ -1016,7 +1016,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/analytics-alt.png',
+                    url: '/images/features/professional/analytics-alt.png',
                   },
                 },
               ],
@@ -1054,7 +1054,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/ai-receptionist.png',
+                    url: '/images/features/professional/ai-receptionist.png',
                   },
                 },
               ],
@@ -1086,7 +1086,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/ai-booking.png',
+                    url: '/images/features/professional/ai-booking.png',
                   },
                 },
               ],
@@ -1118,7 +1118,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/multilingual-ai.png',
+                    url: '/images/features/professional/multilingual-ai.png',
                   },
                 },
               ],
@@ -1150,7 +1150,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/247-concierge.png',
+                    url: '/images/features/professional/247-concierge.png',
                   },
                 },
               ],
@@ -1246,7 +1246,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/schedule-page.png',
+                    url: '/images/features/professional/schedule-page.png',
                   },
                 },
               ],
@@ -1598,7 +1598,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/schedule-page.png',
+                    url: '/images/features/professional/schedule-page.png',
                   },
                 },
               ],
@@ -1662,7 +1662,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/analytics-alt.png',
+                    url: '/images/features/professional/analytics-alt.png',
                   },
                 },
               ],
@@ -1854,7 +1854,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/vendor-intro-alt.png',
+                    url: '/images/features/professional/vendor-intro-alt.png',
                   },
                 },
               ],
@@ -1982,7 +1982,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/analytics-alt.png',
+                    url: '/images/features/professional/analytics-alt.png',
                   },
                 },
               ],
@@ -2046,7 +2046,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/business/analytics-alt.png',
+                    url: '/images/features/professional/analytics-alt.png',
                   },
                 },
               ],

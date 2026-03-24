@@ -179,6 +179,9 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
           'Smart Scheduling',
           'AI optimizes your appointment calendar to minimize gaps and maximize revenue. Automatic conflict detection keeps your day running smoothly.',
           '/images/features/business/ai-booking.png',
+          { padding: '24px 24px 0px 24px', objectFit: 'cover' },
+          '/images/features/business/ai-booking-mobile.png',
+          { padding: '24px 24px 0px 24px', objectFit: 'cover' },
         ),
         item(
           3,

@@ -25,7 +25,7 @@ import {
 import Separator from '../separator/Separator';
 import { ToggleButtonForm } from './ToogleForm';
 import { countries } from 'country-data';
-import { getData } from '@/helpers/getCountryCodes';
+import { staticCountryCodes } from '@/lib/constants/shared/countryCodes';
 import { useLoadingStore } from '@/store/loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -202,15 +202,8 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
   const showToggle = !defaultType;
 
   useEffect(() => {
-    try {
-      (async () => {
-        handleLoadingStatus(true);
-        const listCountries = await getData();
-        handlecountryCodesArray(listCountries);
-      })();
-    } catch {
-      // Error fetching country codes
-    }
+    handleLoadingStatus(true);
+    handlecountryCodesArray(staticCountryCodes);
   }, [handlecountryCodesArray, handleLoadingStatus]);
 
   return (

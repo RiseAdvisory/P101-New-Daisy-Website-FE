@@ -1,3 +1,4 @@
+import { object } from 'zod';
 import { I18nContent } from '../i18n';
 import { LandingPageContent } from './scrollSections.types';
 
@@ -234,10 +235,11 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         firstBg: '/images/pages/business/scroll/leaf-bg.png',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 24px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'bottom',
         },
         styleFirstBgJSON: {
           position: 'absolute',
