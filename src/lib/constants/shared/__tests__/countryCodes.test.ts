@@ -31,9 +31,10 @@ describe('staticCountryCodes', () => {
     }
   });
 
-  it('every entry has an image that is a valid SVG data URI', () => {
+  it('every entry has a non-empty flag emoji image', () => {
     for (const entry of staticCountryCodes) {
-      expect(entry.image.startsWith('data:image/svg+xml,')).toBe(true);
+      expect(entry.image).toBeTruthy();
+      expect(entry.image.length).toBeGreaterThanOrEqual(2);
     }
   });
 

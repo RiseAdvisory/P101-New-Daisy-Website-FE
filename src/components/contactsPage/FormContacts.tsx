@@ -253,16 +253,8 @@ export const FormContacts = ({ style }: { style?: string }) => {
                                 key={`${country_code}-${item.name}`}
                                 value={country_code}
                               >
-                                <span className="flex items-center justify-center text-nowrap">
-                                  <span>
-                                    <Image
-                                      src={item.image}
-                                      alt={`${country_code} flag`}
-                                      width={15}
-                                      height={15}
-                                      unoptimized // likely needed for SVGs
-                                    />
-                                  </span>
+                                <span className="flex items-center justify-center text-nowrap gap-1">
+                                  <span className="text-base leading-none">{item.image}</span>
                                   {country_code}
                                 </span>
                               </SelectItem>
