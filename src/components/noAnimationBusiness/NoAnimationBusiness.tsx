@@ -72,7 +72,7 @@ export const NoScrollingAnimationBusiness = ({
           <Image
             src={imageBg}
             style={styleFirstBgJSON}
-            alt="bg"
+            alt="Decorative leaf background"
             className={imageClassNameBg}
             width={1000}
             height={1000}
@@ -82,7 +82,7 @@ export const NoScrollingAnimationBusiness = ({
           <Image
             src={imageBgTwo}
             style={styleBgMobileSecond}
-            alt="bgtwo"
+            alt="Decorative stars background"
             className={imageClassNameBgSecond}
             width={1000}
             height={1000}
@@ -91,7 +91,7 @@ export const NoScrollingAnimationBusiness = ({
         {image && !image.includes('undefined') && (
           <Image
             src={image!}
-            alt="photo"
+            alt="Feature showcase mockup"
             className={imageClassName}
             width={imageWidth || 1000}
             height={imageHeight || 1000}

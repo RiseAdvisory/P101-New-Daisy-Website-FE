@@ -2,9 +2,9 @@ import { QRCodeIcons } from '@/assets/icons/qrCodeIcon/QRCodeIcon';
 import { AppStoreButton } from '../buttonApp/AppStoreButton';
 import { PlayMarketButton } from '../buttonApp/PlayMarketButton';
 import Separator from '../separator/Separator';
-import leaf from '../../assets/images/LeafBg.png';
+import leaf from '../../assets/images/leaf-background-decoration.png';
 import stars from '../../assets/images/Stars.png';
-import phone from '../../assets/images/PHONE.png';
+import phone from '../../assets/images/mobile-phone-device.png';
 import Image from 'next/image';
 
 export const ProfessionalHero = ({
@@ -53,19 +53,19 @@ export const ProfessionalHero = ({
             <Image
               className="absolute bottom-0 left-0 w-1/2 max-w-[300px]"
               src={leaf}
-              alt="leaf"
+              alt=""
               width={300}
             />
             <Image
               className="absolute top-[40px] md:top-[60px] right-[30px] md:right-[50px] w-[80px] md:w-[100px]"
               src={stars}
-              alt="start"
+              alt=""
               width={100}
             />
             <Image
               className="absolute bottom-0 right-[50%] translate-x-1/2 w-1/2 max-w-[300px]"
               src={phone}
-              alt="start"
+              alt=""
               width={300}
             />
           </div>

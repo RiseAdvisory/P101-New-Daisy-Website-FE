@@ -1,7 +1,7 @@
 import { I18nContent } from '../i18n';
-import Customers from '../../../assets/images/JoinCustomers.png';
-import Vendors from '../../../assets/images/JoinVendors.png';
-import Colleagues from '../../../assets/images/JoinColleagues.png';
+import Customers from '../../../assets/images/join-customer-experience.png';
+import Vendors from '../../../assets/images/join-vendor-partners.png';
+import Colleagues from '../../../assets/images/join-colleagues-team.png';
 import { StaticImageData } from 'next/image';
 
 export interface JoinDaisyItem {

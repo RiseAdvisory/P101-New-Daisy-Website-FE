@@ -25,7 +25,7 @@ import Separator from '../separator/Separator';
 import { Textarea } from '../ui/textarea';
 import { Checkbox } from '../ui/checkbox';
 import { countries } from 'country-data';
-import { getData } from '@/helpers/getCountryCodes';
+import { staticCountryCodes } from '@/lib/constants/shared/countryCodes';
 import { useLoadingStore } from '@/store/loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -118,15 +118,8 @@ export const FormContacts = ({ style }: { style?: string }) => {
   };
 
   useEffect(() => {
-    try {
-      (async () => {
-        handleLoadingStatus(true);
-        const listCountries = await getData();
-        handlecountryCodesArray(listCountries);
-      })();
-    } catch {
-      // Error fetching country codes
-    }
+    handleLoadingStatus(true);
+    handlecountryCodesArray(staticCountryCodes);
   }, [handlecountryCodesArray, handleLoadingStatus]);
 
   const usedCountryCodes = new Set();

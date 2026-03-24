@@ -2,9 +2,9 @@
 import { AppStoreButton } from '../buttonApp/AppStoreButton';
 import { PlayMarketButton } from '../buttonApp/PlayMarketButton';
 import Separator from '../separator/Separator';
-import leaf from '../../assets/images/LeafBg.png';
+import leaf from '../../assets/images/leaf-background-decoration.png';
 import stars from '../../assets/images/Stars.png';
-import phone from '../../assets/images/PHONE.png';
+import phone from '../../assets/images/mobile-phone-device.png';
 import Image from 'next/image';
 
 export const BusinessHero = ({
@@ -62,7 +62,7 @@ export const BusinessHero = ({
             <Image
               className="absolute bottom-0 left-0 w-1/2 max-w-[300px]"
               src={leaf}
-              alt="leaf"
+              alt=""
               width={300}
               height={300}
               priority

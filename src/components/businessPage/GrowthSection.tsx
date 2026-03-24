@@ -48,7 +48,7 @@ export const GrowthSection = ({
               width={426}
               height={548}
               src={imageUrl}
-              alt="customerdaisy"
+              alt="Business growth dashboard overview"
             />
           </div>
         </div>

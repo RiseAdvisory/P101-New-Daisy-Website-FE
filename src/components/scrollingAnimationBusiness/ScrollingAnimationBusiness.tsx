@@ -51,7 +51,7 @@ export const ScrollingAnimationBusiness = ({
           whileInView={whileMotion}
           className={classMotion}
         >
-          <Image src={image!} alt="aaa" className={imageClassName} />
+          <Image src={image!} alt="Business management dashboard preview" className={imageClassName} />
         </LazyMotionDiv>
       </div>
       <h5 className="text-[#F2DAD4] pt-8 text-base leading-6">FEATURES</h5>
