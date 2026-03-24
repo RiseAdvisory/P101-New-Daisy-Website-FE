@@ -1,4 +1,3 @@
-import { object } from 'zod';
 import { I18nContent } from '../i18n';
 import { LandingPageContent } from './scrollSections.types';
 
