@@ -90,7 +90,6 @@ export default function SolutionAnglePage({
           ctaText={pageData.hero.ctaText}
           ctaLink={pageData.hero.ctaLink}
           trustLine={pageData.hero.trustLine}
-          answerBlock={pageData.hero.answerBlock}
         />
       )}
       <SolutionAngleClient

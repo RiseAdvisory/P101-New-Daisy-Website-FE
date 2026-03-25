@@ -14,12 +14,12 @@ export const AnswerBlock: FC<AnswerBlockProps> = ({
   as: Tag = 'h2',
 }) => {
   return (
-    <div>
+    <div className="text-center">
       <Tag className="mb-3 text-2xl font-bold text-[#172524] md:text-3xl">
         {question}
       </Tag>
       <p
-        className="mb-6 text-lg leading-relaxed text-[#455150]"
+        className="mb-6 text-lg leading-relaxed text-[#455150] text-center"
         data-geo-answer="true"
       >
         {answer}

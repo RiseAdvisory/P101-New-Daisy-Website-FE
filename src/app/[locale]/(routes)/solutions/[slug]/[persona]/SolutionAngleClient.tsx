@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 import { MobileScrollSection } from '@/components/shared/MobileScrollSection';
 import LockerContainer from '@/components/lockerScrollingSection/LockerContainer/LockerContainer';
+import { AnswerBlock } from '@/components/geo/AnswerBlock';
 import { toScrollSectionItems, LandingPageContent } from '@/lib/constants/pages/scrollSections.types';
 
 const InlineCTA = dynamic(
@@ -62,6 +63,16 @@ export const SolutionAngleClient = ({
     <div className="w-full bg-primary md:-mt-[100px]">
       <LockerContainer listInfo={dataScroll} />
       <MobileScrollSection dataScroll={dataScroll} />
+      {pageData.hero?.answerBlock && (
+        <div className="bg-[#F8F5F3] px-4 py-12 md:py-16">
+          <div className="max-w-2xl mx-auto">
+            <AnswerBlock
+              question={pageData.hero.answerBlock.question}
+              answer={pageData.hero.answerBlock.answer}
+            />
+          </div>
+        </div>
+      )}
       {pageData.inlineCtas?.afterScroll && (
         <InlineCTA
           headline={pageData.inlineCtas.afterScroll.headline}
