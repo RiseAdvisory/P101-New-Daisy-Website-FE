@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 import { MobileScrollSection } from '@/components/shared/MobileScrollSection';
 import LockerContainer from '@/components/lockerScrollingSection/LockerContainer/LockerContainer';
+import { AnswerBlock } from '@/components/geo/AnswerBlock';
 import { t } from '@/lib/constants/i18n';
 import { professionalPageData } from '@/lib/constants/pages/professionalPage';
 import { toScrollSectionItems } from '@/lib/constants/pages/scrollSections.types';
@@ -38,6 +39,16 @@ export const ProfessionalClient = ({ lang }: { lang: string }) => {
     <div className="w-full bg-primary md:-mt-[100px]">
       <LockerContainer listInfo={dataScroll} />
       <MobileScrollSection dataScroll={dataScroll} />
+      {pageData.hero?.answerBlock && (
+        <div className="bg-[#F8F5F3] px-4 py-12 md:py-16">
+          <div className="max-w-2xl mx-auto">
+            <AnswerBlock
+              question={pageData.hero.answerBlock.question}
+              answer={pageData.hero.answerBlock.answer}
+            />
+          </div>
+        </div>
+      )}
       {pageData.inlineCtas?.afterScroll && (
         <InlineCTA
           headline={pageData.inlineCtas.afterScroll.headline}

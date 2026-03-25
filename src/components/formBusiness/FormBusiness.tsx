@@ -430,11 +430,6 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                     }`}
                   >
                     {textForm?.socialMediaAccount}{' '}
-                    {textForm?.optionalLabel && (
-                      <span className="text-[#aab4b3] font-normal">
-                        {textForm.optionalLabel}
-                      </span>
-                    )}
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -464,11 +459,6 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                     }`}
                   >
                     {textForm?.numberofLocations}{' '}
-                    {textForm?.optionalLabel && (
-                      <span className="text-[#aab4b3] font-normal">
-                        {textForm.optionalLabel}
-                      </span>
-                    )}
                   </FormLabel>
                   <FormControl>
                     <Select onValueChange={field.onChange}>
@@ -512,11 +502,6 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                     }`}
                   >
                     {textForm?.numberofStaff}{' '}
-                    {textForm?.optionalLabel && (
-                      <span className="text-[#aab4b3] font-normal">
-                        {textForm.optionalLabel}
-                      </span>
-                    )}
                   </FormLabel>
                   <FormControl>
                     <Select onValueChange={field.onChange}>
