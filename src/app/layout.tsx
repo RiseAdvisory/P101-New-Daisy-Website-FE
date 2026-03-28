@@ -4,6 +4,8 @@ import './globals.css';
 import { OrganizationSchema } from '@/components/seo/OrganizationSchema';
 import { SoftwareApplicationSchema } from '@/components/seo/SoftwareApplicationSchema';
 import { WebSiteSchema } from '@/components/seo/WebSiteSchema';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { WebVitals } from '@/components/performance/WebVitals';
 import { ServiceWorkerRegistration } from '@/components/performance/ServiceWorkerRegistration';
 
@@ -108,6 +110,8 @@ export default function RootLayout({
         <WebVitals />
         <ServiceWorkerRegistration />
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
