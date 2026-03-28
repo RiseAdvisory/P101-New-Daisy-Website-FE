@@ -47,7 +47,7 @@ describe('middleware', () => {
     expect(response.headers.get('x-middleware-next')).toBe('1');
   });
 
-  it('should redirect root URL to locale business page', async () => {
+  it('should redirect root URL to locale-prefixed root', async () => {
     const request = new NextRequest('https://example.com/', {
       headers: {
         'user-agent': 'Mozilla/5.0',
@@ -57,7 +57,7 @@ describe('middleware', () => {
     const response = await middleware(request);
 
     expect(response.status).toBe(301);
-    expect(response.headers.get('location')).toContain('/en/business');
+    expect(response.headers.get('location')).toContain('/en');
   });
 
   it('should set locale cookie on redirect', async () => {
@@ -123,7 +123,7 @@ describe('middleware', () => {
     expect(response.headers.get('location')).toContain('/en/features/business');
   });
 
-  it('should strip trailing slash from /en/ (then /en re-enters middleware to redirect to /en/business)', async () => {
+  it('should strip trailing slash from /en/ (then /en serves the homepage)', async () => {
     const request = new NextRequest('https://example.com/en/', {
       headers: { 'user-agent': 'Mozilla/5.0' },
     });
@@ -131,7 +131,7 @@ describe('middleware', () => {
     const response = await middleware(request);
 
     expect(response.status).toBe(301);
-    // Trailing slash removal redirects /en/ -> /en (the next request to /en will then redirect to /en/business)
+    // Trailing slash removal redirects /en/ -> /en (which serves the homepage directly)
     expect(response.headers.get('location')).toContain('/en');
   });
 

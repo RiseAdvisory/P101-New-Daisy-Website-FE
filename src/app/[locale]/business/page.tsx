@@ -47,7 +47,10 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
       'Grow your salon or spa with The Daisy. AI receptionist, smart booking, customer acquisition, payments, and marketing, all in one platform. Start your 14-day free trial.',
     images: ['/images/og/og-default.jpg'],
   },
-    alternates: localeAlternates('/business', locale),
+    alternates: {
+      canonical: 'https://www.jointhedaisy.com',
+      ...localeAlternates('/business', locale),
+    },
   };
 }
 
