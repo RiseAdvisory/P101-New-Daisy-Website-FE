@@ -131,7 +131,6 @@ export async function middleware(request: NextRequest) {
 
     // Convenience redirects (replaces old next.config.mjs redirects)
     const convenienceRedirects: Record<string, string> = {
-      '/': '/business',
       '/features': '/features/business',
       '/features/customer': '/features/business',
     };
@@ -156,12 +155,7 @@ export async function middleware(request: NextRequest) {
   const locale = getPreferredLocale(request);
   const newUrl = request.nextUrl.clone();
 
-  // Handle root URL → redirect to /{locale}/business
-  if (pathname === '/') {
-    newUrl.pathname = `/${locale}/business`;
-  } else {
-    newUrl.pathname = `/${locale}${pathname}`;
-  }
+  newUrl.pathname = `/${locale}${pathname}`;
 
   return setGeoCookie(
     setLocaleCookie(NextResponse.redirect(newUrl, 301), locale),
