@@ -11,14 +11,14 @@ export const customerPageData: I18nContent<LandingPageContent> = {
       subtitle: 'MARKETPLACE',
       buttonLearn: 'GET THE APP',
       buttonLink: '/get-the-app',
-      imageUrl: '/images/pages/customer/growth.png',
+      imageUrl: '/images/pages/customer/growth.webp',
     },
     scrollSections: [
       {
         sortId: 1,
-        mainImage: '/images/pages/customer/scroll/home-screen.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
-        secondBg: '/images/pages/business/scroll/stars.png',
+        mainImage: '/images/pages/customer/scroll/home-screen.webp',
+        firstBg: '/images/pages/business/scroll/leaf-bg.webp',
+        secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
           padding: '24px',
@@ -71,8 +71,8 @@ export const customerPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 2,
-        mainImage: '/images/pages/customer/scroll/experiences.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
+        mainImage: '/images/pages/customer/scroll/experiences.webp',
+        firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
           padding: '24px',
@@ -111,9 +111,9 @@ export const customerPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 3,
-        mainImage: '/images/pages/customer/scroll/booking-frame.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
-        secondBg: '/images/pages/business/scroll/stars.png',
+        mainImage: '/images/pages/customer/scroll/booking-frame.webp',
+        firstBg: '/images/pages/business/scroll/leaf-bg.webp',
+        secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
           padding: '24px',
@@ -166,8 +166,8 @@ export const customerPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 4,
-        mainImage: '/images/pages/customer/scroll/rating.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
+        mainImage: '/images/pages/customer/scroll/rating.webp',
+        firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
           padding: '24px',
@@ -206,9 +206,9 @@ export const customerPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 5,
-        mainImage: '/images/pages/customer/scroll/home-screen.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
-        secondBg: '/images/pages/business/scroll/stars.png',
+        mainImage: '/images/pages/customer/scroll/home-screen.webp',
+        firstBg: '/images/pages/business/scroll/leaf-bg.webp',
+        secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
           padding: '24px',
@@ -260,14 +260,14 @@ export const customerPageData: I18nContent<LandingPageContent> = {
       subtitle: 'السوق العام',
       buttonLearn: 'احصل على التطبيق',
       buttonLink: '/get-the-app',
-      imageUrl: '/images/pages/customer/growth.png',
+      imageUrl: '/images/pages/customer/growth.webp',
     },
     scrollSections: [
       {
         sortId: 1,
-        mainImage: '/images/pages/customer/scroll/home-screen.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
-        secondBg: '/images/pages/business/scroll/stars.png',
+        mainImage: '/images/pages/customer/scroll/home-screen.webp',
+        firstBg: '/images/pages/business/scroll/leaf-bg.webp',
+        secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
           padding: '24px',
@@ -320,8 +320,8 @@ export const customerPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 2,
-        mainImage: '/images/pages/customer/scroll/experiences.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
+        mainImage: '/images/pages/customer/scroll/experiences.webp',
+        firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
           padding: '24px',
@@ -360,9 +360,9 @@ export const customerPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 3,
-        mainImage: '/images/pages/customer/scroll/booking-frame.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
-        secondBg: '/images/pages/business/scroll/stars.png',
+        mainImage: '/images/pages/customer/scroll/booking-frame.webp',
+        firstBg: '/images/pages/business/scroll/leaf-bg.webp',
+        secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
           padding: '24px',
@@ -415,8 +415,8 @@ export const customerPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 4,
-        mainImage: '/images/pages/customer/scroll/rating.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
+        mainImage: '/images/pages/customer/scroll/rating.webp',
+        firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
           padding: '24px',
@@ -455,9 +455,9 @@ export const customerPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 5,
-        mainImage: '/images/pages/customer/scroll/home-screen.png',
-        firstBg: '/images/pages/business/scroll/leaf-bg.png',
-        secondBg: '/images/pages/business/scroll/stars.png',
+        mainImage: '/images/pages/customer/scroll/home-screen.webp',
+        firstBg: '/images/pages/business/scroll/leaf-bg.webp',
+        secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
           padding: '24px',
