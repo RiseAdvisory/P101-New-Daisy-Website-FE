@@ -152,7 +152,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.png',
+                    url: '/images/pages/business/scroll/vendor-intro.webp',
                   },
                 },
               ],
@@ -184,7 +184,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/integrations.png',
+                    url: '/images/pages/business/scroll/integrations.webp',
                   },
                 },
               ],
@@ -248,7 +248,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/integrations.png',
+                    url: '/images/pages/business/scroll/integrations.webp',
                   },
                 },
               ],
@@ -280,7 +280,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/schedule.png',
+                    url: '/images/pages/business/scroll/schedule.webp',
                   },
                 },
               ],
@@ -312,7 +312,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.png',
+                    url: '/images/pages/professional/scroll/staff-details.webp',
                   },
                 },
               ],
@@ -344,7 +344,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/schedule.png',
+                    url: '/images/pages/business/scroll/schedule.webp',
                   },
                 },
               ],
@@ -376,7 +376,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.png',
+                    url: '/images/pages/professional/scroll/staff-details.webp',
                   },
                 },
               ],
@@ -408,7 +408,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.png',
+                    url: '/images/pages/business/scroll/vendor-intro.webp',
                   },
                 },
               ],
@@ -440,7 +440,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/experiences.png',
+                    url: '/images/pages/customer/scroll/experiences.webp',
                   },
                 },
               ],
@@ -472,7 +472,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/analytics.png',
+                    url: '/images/pages/business/scroll/analytics.webp',
                   },
                 },
               ],
@@ -504,7 +504,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/rating.png',
+                    url: '/images/pages/customer/scroll/rating.webp',
                   },
                 },
               ],
@@ -536,7 +536,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/integrations.png',
+                    url: '/images/pages/business/scroll/integrations.webp',
                   },
                 },
               ],
@@ -600,7 +600,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/home-screen.png',
+                    url: '/images/pages/customer/scroll/home-screen.webp',
                   },
                 },
               ],
@@ -664,7 +664,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.png',
+                    url: '/images/pages/business/scroll/vendor-intro.webp',
                   },
                 },
               ],
@@ -696,7 +696,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/experiences.png',
+                    url: '/images/pages/customer/scroll/experiences.webp',
                   },
                 },
               ],
@@ -728,7 +728,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.png',
+                    url: '/images/pages/business/scroll/vendor-intro.webp',
                   },
                 },
               ],
@@ -760,7 +760,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.png',
+                    url: '/images/pages/business/scroll/vendor-intro.webp',
                   },
                 },
               ],
@@ -792,7 +792,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.png',
+                    url: '/images/pages/business/scroll/vendor-intro.webp',
                   },
                 },
               ],
@@ -856,7 +856,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/rating.png',
+                    url: '/images/pages/customer/scroll/rating.webp',
                   },
                 },
               ],
@@ -888,7 +888,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.png',
+                    url: '/images/pages/professional/scroll/staff-details.webp',
                   },
                 },
               ],
@@ -920,7 +920,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/analytics.png',
+                    url: '/images/pages/business/scroll/analytics.webp',
                   },
                 },
               ],
@@ -984,7 +984,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.png',
+                    url: '/images/pages/professional/scroll/staff-details.webp',
                   },
                 },
               ],
@@ -1182,7 +1182,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.png',
+                    url: '/images/pages/business/scroll/vendor-intro.webp',
                   },
                 },
               ],
@@ -1214,7 +1214,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/integrations.png',
+                    url: '/images/pages/business/scroll/integrations.webp',
                   },
                 },
               ],
@@ -1278,7 +1278,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/integrations.png',
+                    url: '/images/pages/business/scroll/integrations.webp',
                   },
                 },
               ],
@@ -1310,7 +1310,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/schedule.png',
+                    url: '/images/pages/business/scroll/schedule.webp',
                   },
                 },
               ],
@@ -1342,7 +1342,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.png',
+                    url: '/images/pages/professional/scroll/staff-details.webp',
                   },
                 },
               ],
@@ -1374,7 +1374,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/schedule.png',
+                    url: '/images/pages/business/scroll/schedule.webp',
                   },
                 },
               ],
@@ -1406,7 +1406,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.png',
+                    url: '/images/pages/professional/scroll/staff-details.webp',
                   },
                 },
               ],
@@ -1438,7 +1438,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.png',
+                    url: '/images/pages/business/scroll/vendor-intro.webp',
                   },
                 },
               ],
@@ -1470,7 +1470,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/experiences.png',
+                    url: '/images/pages/customer/scroll/experiences.webp',
                   },
                 },
               ],
@@ -1502,7 +1502,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/analytics.png',
+                    url: '/images/pages/business/scroll/analytics.webp',
                   },
                 },
               ],
@@ -1534,7 +1534,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/rating.png',
+                    url: '/images/pages/customer/scroll/rating.webp',
                   },
                 },
               ],
@@ -1566,7 +1566,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/integrations.png',
+                    url: '/images/pages/business/scroll/integrations.webp',
                   },
                 },
               ],
@@ -1630,7 +1630,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/home-screen.png',
+                    url: '/images/pages/customer/scroll/home-screen.webp',
                   },
                 },
               ],
@@ -1694,7 +1694,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.png',
+                    url: '/images/pages/business/scroll/vendor-intro.webp',
                   },
                 },
               ],
@@ -1726,7 +1726,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/experiences.png',
+                    url: '/images/pages/customer/scroll/experiences.webp',
                   },
                 },
               ],
@@ -1758,7 +1758,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.png',
+                    url: '/images/pages/business/scroll/vendor-intro.webp',
                   },
                 },
               ],
@@ -1790,7 +1790,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.png',
+                    url: '/images/pages/business/scroll/vendor-intro.webp',
                   },
                 },
               ],
@@ -1822,7 +1822,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.png',
+                    url: '/images/pages/business/scroll/vendor-intro.webp',
                   },
                 },
               ],
@@ -1886,7 +1886,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/rating.png',
+                    url: '/images/pages/customer/scroll/rating.webp',
                   },
                 },
               ],
@@ -1918,7 +1918,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.png',
+                    url: '/images/pages/professional/scroll/staff-details.webp',
                   },
                 },
               ],
@@ -1950,7 +1950,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/analytics.png',
+                    url: '/images/pages/business/scroll/analytics.webp',
                   },
                 },
               ],
@@ -2014,7 +2014,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.png',
+                    url: '/images/pages/professional/scroll/staff-details.webp',
                   },
                 },
               ],

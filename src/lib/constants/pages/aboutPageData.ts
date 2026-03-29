@@ -44,7 +44,7 @@ export const aboutPageData: I18nContent<AboutPageContent> = {
     missingTitle: 'Our Mission',
     missingDescription:
       'Empowering exceptional service providers with greater visibility, enabling customers to make confident, informed choices.',
-    heroImage: '/images/pages/about/hero.png',
+    heroImage: '/images/pages/about/hero.webp',
     personalizedPath: {
       title: 'ABOUT US',
       subtitle: 'Empowering Providers, Elevating Experiences',
@@ -91,7 +91,7 @@ export const aboutPageData: I18nContent<AboutPageContent> = {
     missingTitle: 'مهمتنا',
     missingDescription:
       'تمكين مقدمي الخدمات الاستثنائيين من تحقيق رؤية أكبر، مما يتيح للعملاء اتخاذ قرارات واثقة ومستنيرة.',
-    heroImage: '/images/pages/about/hero.png',
+    heroImage: '/images/pages/about/hero.webp',
     personalizedPath: {
       title: 'نبذه عنا',
       subtitle: 'تمكين مقدمي الخدمات، الارتقاء بالتجارب',
