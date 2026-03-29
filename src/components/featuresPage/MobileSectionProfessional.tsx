@@ -30,7 +30,9 @@ export const MobileViewProfessional = ({
 }) => {
   return (
     <div className="md:hidden">
+      {/* Mobile carousel commented out
       <CarouselBusinessMobile dataBusiness={dataFeatures} />
+      */}
       <Separator className="bg-[#586968] my-20" />
       {SECTIONS.map((section) => {
         const dataList = categoryData[section.categoryKey];
