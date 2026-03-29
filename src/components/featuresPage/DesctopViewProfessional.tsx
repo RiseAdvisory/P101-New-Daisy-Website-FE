@@ -93,46 +93,8 @@ export const DesctopViewProfessional = ({
   dataBusiness: any;
   categoryData: CategoryData;
 }) => {
-  const firstImage = dataBusiness?.firstImage?.data?.[0]?.attributes?.url;
-  const secondImage = dataBusiness?.secondImage?.data?.[0]?.attributes?.url;
-  const thirdImage = dataBusiness?.thirdImage?.data?.[0]?.attributes?.url;
-
   return (
     <div className="mx-auto hidden md:block mb-[192px]">
-      {/* 3-image hero carousel commented out
-      <ul className="flex space-x-5 rtl:space-x-reverse mx-auto justify-center mt-[66px] ">
-        <li className="px-[65px] pt-[55px] bg-[#435655] rounded-[16px] border border-[#586968]">
-          <Image
-            src={firstImage}
-            className={'w-[220px] h-[320px]'}
-            style={dataBusiness?.firstImageStyle}
-            alt="Daisy business features overview"
-            width={1000}
-            height={1000}
-          />
-        </li>
-        <li className="px-[65px] pt-[55px] bg-[#435655] rounded-[16px] border border-[#586968]">
-          <Image
-            src={secondImage}
-            className={'w-[220px] h-[320px]'}
-            style={dataBusiness?.secondImageStyle}
-            alt="Daisy business features overview"
-            width={1000}
-            height={1000}
-          />
-        </li>
-        <li className="px-[65px] pt-[55px] bg-[#435655] rounded-[16px] border border-[#586968]">
-          <Image
-            src={thirdImage}
-            className={'w-[220px] h-[320px]'}
-            style={dataBusiness?.thirdImageStyle}
-            alt="Daisy business features overview"
-            width={1000}
-            height={1000}
-          />
-        </li>
-      </ul>
-      */}
       {SECTIONS.map((section) => {
         const dataList = categoryData[section.categoryKey];
         if (!dataList || dataList.length === 0) return null;

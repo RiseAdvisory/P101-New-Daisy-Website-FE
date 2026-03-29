@@ -1,5 +1,4 @@
 'use client';
-import { CarouselBusinessMobile } from './CarouselBusinessMobile';
 import { Separator } from '@/components/ui/separator';
 import { FeatureProfessionalList } from './FeatureProfessionalList';
 import { CategoryData, CategoryKey } from '@/app/[locale]/features/business/FeaturesBusinessClient';
@@ -30,9 +29,6 @@ export const MobileViewProfessional = ({
 }) => {
   return (
     <div className="md:hidden">
-      {/* Mobile carousel commented out
-      <CarouselBusinessMobile dataBusiness={dataFeatures} />
-      */}
       <Separator className="bg-[#586968] my-20" />
       {SECTIONS.map((section) => {
         const dataList = categoryData[section.categoryKey];
