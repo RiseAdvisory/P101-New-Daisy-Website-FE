@@ -33,7 +33,9 @@ export const FeatureProfessionalList = ({
               desktopImageData?.formats?.large?.url ??
               desktopImageData?.url;
 
+            const mobileStyle = item?.attributes?.mobileStylePicture;
             const desktopStyle = item?.attributes?.stylePicture;
+            const appliedStyle = mobileImageData ? mobileStyle : desktopStyle;
 
             return (
               <li key={index} className="text-start mx-auto ">
@@ -48,7 +50,7 @@ export const FeatureProfessionalList = ({
                   <ImageWrapper
                     src={imageUrl}
                     alt={item.attributes.title}
-                    stylePicture={desktopStyle}
+                    stylePicture={appliedStyle}
                     zIndex="z-10"
                   />
                 </div>
