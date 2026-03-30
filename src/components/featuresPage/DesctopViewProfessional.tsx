@@ -2,9 +2,9 @@
 import Image from 'next/image';
 import { Separator } from '../ui/separator';
 import { TabsFeaturesProfessional } from './TabsFeturesPagw';
-import imageLeaf from '../../assets/images/features/business/LeafBusinessFeature.png';
-import imageLeafRight from '../../assets/images/features/business/LeafBusinessRight.png';
-import imageLeafLast from '../../assets/images/features/business/LeafBusinessBottom.png';
+import imageLeaf from '../../assets/images/features/business/LeafBusinessFeature.webp';
+import imageLeafRight from '../../assets/images/features/business/LeafBusinessRight.webp';
+import imageLeafLast from '../../assets/images/features/business/LeafBusinessBottom.webp';
 
 import { ColumnTabsDesctop } from './ColumnTabsDesctop';
 import { CategoryData, CategoryKey } from '@/app/[locale]/features/business/FeaturesBusinessClient';

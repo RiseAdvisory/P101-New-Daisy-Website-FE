@@ -39,7 +39,7 @@ export function PillarArticleSchema({
       url: 'https://www.jointhedaisy.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.jointhedaisy.com/images/logo.png',
+        url: 'https://www.jointhedaisy.com/images/logo.webp',
       },
     },
   };

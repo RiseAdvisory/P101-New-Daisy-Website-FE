@@ -23,7 +23,7 @@ export const featuresCustomerData: I18nContent<FeaturesCustomerPageContent> = {
             data: [
               {
                 attributes: {
-                  url: '/images/features/customer/phone-1.png',
+                  url: '/images/features/customer/phone-1.webp',
                 },
               },
             ],
@@ -50,7 +50,7 @@ export const featuresCustomerData: I18nContent<FeaturesCustomerPageContent> = {
             data: [
               {
                 attributes: {
-                  url: '/images/features/customer/phone-2.png',
+                  url: '/images/features/customer/phone-2.webp',
                 },
               },
             ],
@@ -83,7 +83,7 @@ export const featuresCustomerData: I18nContent<FeaturesCustomerPageContent> = {
             data: [
               {
                 attributes: {
-                  url: '/images/features/customer/phone-1.png',
+                  url: '/images/features/customer/phone-1.webp',
                 },
               },
             ],
@@ -110,7 +110,7 @@ export const featuresCustomerData: I18nContent<FeaturesCustomerPageContent> = {
             data: [
               {
                 attributes: {
-                  url: '/images/features/customer/phone-2.png',
+                  url: '/images/features/customer/phone-2.webp',
                 },
               },
             ],

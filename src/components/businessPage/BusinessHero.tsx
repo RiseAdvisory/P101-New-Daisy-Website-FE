@@ -2,9 +2,9 @@
 import { AppStoreButton } from '../buttonApp/AppStoreButton';
 import { PlayMarketButton } from '../buttonApp/PlayMarketButton';
 import Separator from '../separator/Separator';
-import leaf from '../../assets/images/leaf-background-decoration.png';
-import stars from '../../assets/images/Stars.png';
-import phone from '../../assets/images/mobile-phone-device.png';
+import leaf from '../../assets/images/leaf-background-decoration.webp';
+import stars from '../../assets/images/Stars.webp';
+import phone from '../../assets/images/mobile-phone-device.webp';
 import Image from 'next/image';
 
 export const BusinessHero = ({

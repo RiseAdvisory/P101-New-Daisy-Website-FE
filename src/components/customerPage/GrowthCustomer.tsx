@@ -3,8 +3,8 @@
 import Separator from '../separator/Separator';
 import { Button } from '../ui/button';
 import Image from 'next/image';
-import leaf from '../../assets/images/bgleafcustomer.png';
-import leafdown from '../../assets/images/bgcustomerdown.png';
+import leaf from '../../assets/images/bgleafcustomer.webp';
+import leafdown from '../../assets/images/bgcustomerdown.webp';
 import { useRouter } from 'next/navigation';
 
 export const GrowthSectionCustomer = ({

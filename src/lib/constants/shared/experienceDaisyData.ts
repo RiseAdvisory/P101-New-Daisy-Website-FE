@@ -1,7 +1,7 @@
 import { I18nContent } from '../i18n';
 import { StaticImageData } from 'next/image';
-import phoneMobile from '../../../assets/images/mobile-phone-device.png';
-import phoneDesktop from '../../../assets/images/PHONEallheight.png';
+import phoneMobile from '../../../assets/images/mobile-phone-device.webp';
+import phoneDesktop from '../../../assets/images/PHONEallheight.webp';
 
 export interface ExperienceDaisyContent {
   title: string;

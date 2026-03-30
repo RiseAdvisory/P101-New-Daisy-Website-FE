@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import stars from '../../assets/images/stars-background-decoration.png';
+import stars from '../../assets/images/stars-background-decoration.webp';
 import { cn } from '@/lib/utils';
 import { TogglePricing } from './TooglePricing';
 import { CalculatePricing } from './CalculatePricing';

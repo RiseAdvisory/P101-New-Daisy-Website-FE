@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Separator } from '../ui/separator';
 import { cn } from '@/lib/utils';
-import imageLeaf from '../../assets/images/features/feature-group-component.png';
+import imageLeaf from '../../assets/images/features/feature-group-component.webp';
 
 export const FeaturesCustomerItem = ({
   item,

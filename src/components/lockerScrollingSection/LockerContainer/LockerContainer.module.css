@@ -12,7 +12,7 @@
 
 .locker__image {
   position: relative;
-  grid-column: col-start 7 / col-end 12;
+  grid-column: col-start 7 / col-end 11;
 }
 /* .locker__image img {
   width: auto;
@@ -31,7 +31,8 @@
 }
 .locker__content {
   margin-top: 50px;
-  grid-column: center-start / col-start 7;
+  grid-column: col-start 2 / col-start 7;
+  /* center-start */
 }
 .locker__section {
   height: 600px;
