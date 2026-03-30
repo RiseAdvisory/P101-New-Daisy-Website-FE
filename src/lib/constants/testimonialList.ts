@@ -1,12 +1,12 @@
-import Bonnie from '../../assets/images/Bonnie.webp';
-import Roberta from '../../assets/images/Roberta.webp';
-import Neil from '../../assets/images/Neil.webp';
-import Micheal from '../../assets/images/Michael.webp';
-import Thomas from '../../assets/images/Thomas.webp';
-import Robert from '../../assets/images/testimonial-robert-headshot.webp';
-import Joseph from '../../assets/images/Joseph.webp';
-import Helene from '../../assets/images/testimonial-helene-headshot.webp';
-import Karen from '../../assets/images/testimonial-karen-headshot.webp';
+import Bonnie from '../../assets/images/Bonnie.png';
+import Roberta from '../../assets/images/Roberta.png';
+import Neil from '../../assets/images/Neil.png';
+import Micheal from '../../assets/images/Michael.png';
+import Thomas from '../../assets/images/Thomas.png';
+import Robert from '../../assets/images/testimonial-robert-headshot.png';
+import Joseph from '../../assets/images/Joseph.png';
+import Helene from '../../assets/images/testimonial-helene-headshot.png';
+import Karen from '../../assets/images/testimonial-karen-headshot.png';
 
 export const testimonialsList = [
   {

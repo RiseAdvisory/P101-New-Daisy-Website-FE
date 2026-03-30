@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import stars from '../../assets/images/stars-background-decoration.webp';
+import stars from '../../assets/images/stars-background-decoration.png';
 import { ArrowSectionDown } from '@/assets/icons/arrowSectionDown/arrowSectionDown';
 import { cn } from '@/lib/utils';
 import { HomeIcon } from '@/assets/icons/homeIcon/HomeIcon';

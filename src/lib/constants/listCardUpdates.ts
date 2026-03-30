@@ -1,8 +1,8 @@
-import DoublePhone from '../../assets/images/update/double-feature-update.webp';
-import Points from '../../assets/images/update/loyalty-points-update.webp';
-import Inside from '../../assets/images/update/insider-update-announcement.webp';
-import SelfUp from '../../assets/images/update/self-care-feature-update.webp';
-import iconOwn from '../../assets/images/Jasica.webp';
+import DoublePhone from '../../assets/images/update/double-feature-update.png';
+import Points from '../../assets/images/update/loyalty-points-update.png';
+import Inside from '../../assets/images/update/insider-update-announcement.png';
+import SelfUp from '../../assets/images/update/self-care-feature-update.png';
+import iconOwn from '../../assets/images/Jasica.png';
 
 export const ListUpdatesResources = [
   {

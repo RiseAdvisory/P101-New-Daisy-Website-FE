@@ -1,10 +1,10 @@
-import Jesica from '../../assets/images/WellnessTrends.webp';
-import Spotlight from '../../assets/images/spotlight-feature-highlight.webp';
-import Incorporatinf from '../../assets/images/business-incorporation-illustration.webp';
-import SelfCare from '../../assets/images/self-care-wellness.webp';
-import Benefits from '../../assets/images/Benefits.webp';
-import StressFree from '../../assets/images/StressFree.webp';
-import iconOwn from '../../assets/images/Jasica.webp';
+import Jesica from '../../assets/images/WellnessTrends.png';
+import Spotlight from '../../assets/images/spotlight-feature-highlight.png';
+import Incorporatinf from '../../assets/images/business-incorporation-illustration.png';
+import SelfCare from '../../assets/images/self-care-wellness.png';
+import Benefits from '../../assets/images/Benefits.png';
+import StressFree from '../../assets/images/StressFree.png';
+import iconOwn from '../../assets/images/Jasica.png';
 
 export const ListBlogPosts = [
   {
