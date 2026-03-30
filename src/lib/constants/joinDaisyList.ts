@@ -1,6 +1,6 @@
-import Customers from '../../assets/images/join-customer-experience.png';
-import Vendors from '../../assets/images/join-vendor-partners.png';
-import Colleagues from '../../assets/images/join-colleagues-team.png';
+import Customers from '../../assets/images/join-customer-experience.webp';
+import Vendors from '../../assets/images/join-vendor-partners.webp';
+import Colleagues from '../../assets/images/join-colleagues-team.webp';
 
 export const joinDaisyList = [
   {

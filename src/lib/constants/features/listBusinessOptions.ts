@@ -1,6 +1,6 @@
-import phoneFirst from '../../../assets/images/features/business/PhoneFirst.png';
-import Ipad from '../../../assets/images/features/business/ipad-tablet-dashboard-mockup.png';
-import lastPhone from '../../../assets/images/features/business/PhoneLast.png';
+import phoneFirst from '../../../assets/images/features/business/PhoneFirst.webp';
+import Ipad from '../../../assets/images/features/business/ipad-tablet-dashboard-mockup.webp';
+import lastPhone from '../../../assets/images/features/business/PhoneLast.webp';
 
 export const listBusinessOptions = ['Marketing', 'Payments', 'Reports'];
 

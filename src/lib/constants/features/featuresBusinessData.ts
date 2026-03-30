@@ -219,7 +219,7 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
           '/images/features/business/google-sync.webp',
           { padding: '32px 24px 0px 24px', objectFit: 'cover', objectPosition: 'bottom' },
           '/images/features/business/google-sync.webp',
-          { padding: '32px 24px 0px 24px', objectFit: 'cover', objectPosition: 'bottom' },
+          { padding: '32px 14px 0px 14px', objectFit: 'cover', objectPosition: 'bottom' },
         ),
         item(
           3,
@@ -234,7 +234,7 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
           '/images/features/business/smart-calendar.webp',
           { padding: '24px 24px 24px 24px', objectFit: 'cover', objectPosition: 'bottom' },
           '/images/features/business/smart-calendar-mobile.webp',
-          { padding: '90px 24px 0px 24px', objectFit: 'cover', objectPosition: 'bottom' },
+          { padding: '90px 14px 0px 14px', objectFit: 'cover', objectPosition: 'bottom' },
         ),
       ],
       communication: [

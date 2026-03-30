@@ -1,4 +1,4 @@
-import imageOne from '../../assets/images/ImageTutorials.png';
+import imageOne from '../../assets/images/ImageTutorials.webp';
 
 export const dataLocker = [
   {

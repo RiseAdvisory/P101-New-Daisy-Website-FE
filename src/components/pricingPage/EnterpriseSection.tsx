@@ -1,7 +1,7 @@
 'use client';
-import stars from '../../assets/images/PricingStars.png';
+import stars from '../../assets/images/PricingStars.webp';
 import Image from 'next/image';
-import ArrowSpiral from '../../assets/images/ArrowSpiral.png';
+import ArrowSpiral from '../../assets/images/ArrowSpiral.webp';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
 
