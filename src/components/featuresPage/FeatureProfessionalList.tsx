@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Separator } from '../ui/separator';
-import leaf from '../../assets/images/features/professional/professional-features-group.webp';
+import leaf from '../../assets/images/features/professional/professional-features-group.png';
 import { ImageWrapper } from './ImageWrapper';
 
 export const FeatureProfessionalList = ({

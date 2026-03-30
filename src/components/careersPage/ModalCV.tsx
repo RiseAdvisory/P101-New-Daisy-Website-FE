@@ -9,7 +9,7 @@ import { Dispatch, SetStateAction, useState } from 'react';
 import { FormCV } from './FormCV';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
-import imageSucces from '../../assets/images/accesDownload.webp';
+import imageSucces from '../../assets/images/accesDownload.png';
 
 export const ModalCV = ({
   openCV,
