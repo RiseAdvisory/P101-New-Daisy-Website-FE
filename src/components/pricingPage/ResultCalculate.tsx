@@ -310,17 +310,9 @@ export const ResultCalculate = ({
                 >
                   <p className="ltr:font-montserrat font-semibold text-[20px] leading-[30px]">
                     ${monthlyPrice}
-                    <span className="ltr:font-montserrat text-[#455150] font-normal  md:text-[16px] md:leading-[18px] ml-2">
-                      <span className="hidden md:inline">
-                        {dataPricing?.resetCalculation?.per}
-                      </span>
-                      <span className="md:hidden">/</span>{' '}
-                      {dataPricing?.resetCalculation?.month}
-                    </span>
                   </p>
-                  <p className=" ltr:font-montserrat text-[10px] leading-[15px] md:flex  md:text-[16px] md:leading-[18px] font-normal text-[#455150]">
-                    <span className="hidden md:inline mx-1">/</span>
-                    {dataPricing?.resetCalculation?.billed}
+                  <p className="ltr:font-montserrat text-[10px] leading-[15px] md:text-[14px] md:leading-[18px] font-normal text-[#455150]">
+                    /{dataPricing?.resetCalculation?.billedMonthly}
                   </p>
                 </div>
 
@@ -336,17 +328,9 @@ export const ResultCalculate = ({
                 >
                   <p className="ltr:font-montserrat font-semibold text-[20px] leading-[30px]">
                     ${annualPrice}
-                    <span className="ltr:font-montserrat text-[#455150] font-normal  md:text-[16px] md:leading-[18px] ml-2">
-                      <span className="hidden md:inline">
-                        {dataPricing?.resetCalculation?.per}
-                      </span>
-                      <span className="md:hidden">/</span>{' '}
-                      {dataPricing?.resetCalculation?.year}
-                    </span>
                   </p>
-                  <p className=" ltr:font-montserrat text-[10px] leading-[15px] md:flex  md:text-[16px] md:leading-[18px] font-normal text-[#455150]">
-                    <span className="hidden md:inline mx-1">/</span>
-                    {dataPricing?.resetCalculation?.billed}
+                  <p className="ltr:font-montserrat text-[10px] leading-[15px] md:text-[14px] md:leading-[18px] font-normal text-[#455150]">
+                    /{dataPricing?.resetCalculation?.billedYearly}
                   </p>
                 </div>
               </div>

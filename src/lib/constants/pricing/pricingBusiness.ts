@@ -1,7 +1,7 @@
 export const pricingBusinessCard = [
   {
     title: 'Basic',
-    subTitle: '14-day free trial',
+    subTitle: '14-day free trial, no credit card required',
     description:
       'Just starting out but want to build a solid customer base & brand and while growing their presence as a professional service provider',
     price: '50',
@@ -29,7 +29,7 @@ export const pricingBusinessCard = [
   },
   {
     title: 'Growth',
-    subTitle: '14-day free trial',
+    subTitle: '14-day free trial, no credit card required',
     description:
       'Ideal for Solo Experienced Professionals that want to provide an exceptional experience to their customers',
     price: '150',
@@ -52,7 +52,7 @@ export const pricingBusinessCard = [
   },
   {
     title: 'Business',
-    subTitle: '14-day free trial',
+    subTitle: '14-day free trial, no credit card required',
     description:
       'Businesses with multiple workspaces or locations that are excellence oriented in service and customer service',
     price: '250',

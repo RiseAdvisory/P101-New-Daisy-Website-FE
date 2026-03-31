@@ -58,6 +58,8 @@ export const PricingClient = () => {
         setIsRecommended={setIsRecommended}
         activePricingPage={activePricingPage}
         dataPricing={dataPricing}
+        checkedAnnual={checkedMonth}
+        setCheckedAnnual={setCheckedMonth}
       />
       <div className="px-4 md:px-20 bg-primary">
         <Separator />

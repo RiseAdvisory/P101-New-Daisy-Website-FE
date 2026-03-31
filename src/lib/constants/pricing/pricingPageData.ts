@@ -38,6 +38,8 @@ export interface ResetCalculation {
   month: string;
   year: string;
   billed: string;
+  billedMonthly: string;
+  billedYearly: string;
   textStart: string;
 }
 
@@ -169,7 +171,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       pricingCard: [
         {
           title: 'Basic',
-          subTitle: '14-day free trial',
+          subTitle: '14-day free trial, no credit card required',
           description:
             'Just starting out but want to build a solid customer base & brand and while growing their presence as a professional service provider',
           price: '50',
@@ -197,7 +199,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'Growth',
-          subTitle: '14-day free trial',
+          subTitle: '14-day free trial, no credit card required',
           description:
             'Ideal for Solo Experienced Professionals that want to provide an exceptional experience to their customers',
           price: '150',
@@ -220,7 +222,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'Business',
-          subTitle: '14-day free trial',
+          subTitle: '14-day free trial, no credit card required',
           description:
             'Businesses with multiple workspaces or locations that are excellence oriented in service and customer service',
           price: '250',
@@ -383,6 +385,8 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       month: 'month',
       year: 'year',
       billed: 'Billed',
+      billedMonthly: 'Billed Monthly',
+      billedYearly: 'Billed Yearly',
       textStart: 'Get Started',
     },
   },
@@ -450,7 +454,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       pricingCard: [
         {
           title: 'أساسي',
-          subTitle: 'تجربة مجانية 14 يوم',
+          subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
             'بدأت للتو ولكن تريد بناء قاعدة عملاء قوية وعلامة تجارية مع تنمية حضورك كمقدم خدمة محترف',
           price: '50',
@@ -478,7 +482,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'نمو',
-          subTitle: 'تجربة مجانية 14 يوم',
+          subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
             'مثالي للمحترفين ذوي الخبرة الذين يرغبون في تقديم تجربة استثنائية لعملائهم',
           price: '150',
@@ -501,7 +505,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'عمل',
-          subTitle: 'تجربة مجانية 14 يوم',
+          subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
             'للشركات ذات المساحات أو المواقع المتعددة التي تسعى للتميز في الخدمة وخدمة العملاء',
           price: '250',
@@ -662,6 +666,8 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       month: 'شهر',
       year: 'سنة',
       billed: 'يُحاسب',
+      billedMonthly: 'يُحاسب شهريًا',
+      billedYearly: 'يُحاسب سنويًا',
       textStart: 'ابدأ الآن',
     },
   },
