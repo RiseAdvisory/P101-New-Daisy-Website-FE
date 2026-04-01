@@ -47,7 +47,7 @@ export function IntegrationSection({
                 <p className="text-sm leading-relaxed text-[#455150]">
                   {point.benefit}
                 </p>
-                <span className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-primary opacity-0 transition-opacity group-hover:opacity-100">
+                <span className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-primary opacity-70 transition-opacity group-hover:opacity-100">
                   Explore <ArrowRight className="h-3.5 w-3.5" />
                 </span>
               </div>
