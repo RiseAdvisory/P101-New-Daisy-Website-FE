@@ -1208,7 +1208,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.webp',
+                    url: '/images/features/professional/smart-calender.webp',
                   },
                 },
               ],
@@ -1240,7 +1240,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/integrations.webp',
+                    url: '/images/features/professional/smart-calender.webp',
                   },
                 },
               ],
@@ -1272,7 +1272,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/schedule-page.webp',
+                    url: '/images/features/professional/google-sync.webp',
                   },
                 },
               ],
@@ -1280,8 +1280,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 0px 24px 0px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1304,7 +1305,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/integrations.webp',
+                    url: '/images/features/professional/meta-integration.webp',
                   },
                 },
               ],
@@ -1312,8 +1313,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1336,7 +1338,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/schedule.webp',
+                    url: '/images/features/professional/meta-integration.webp',
                   },
                 },
               ],
@@ -1344,8 +1346,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1368,7 +1371,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.webp',
+                    url: '/images/features/professional/meta-integration.webp',
                   },
                 },
               ],
@@ -1376,8 +1379,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1400,7 +1404,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/schedule.webp',
+                    url: '/images/features/professional/push-email-alerts.webp',
                   },
                 },
               ],
@@ -1408,8 +1412,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1432,7 +1437,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.webp',
+                    url: '/images/features/professional/contact-sync.webp',
                   },
                 },
               ],
@@ -1440,8 +1445,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1464,7 +1470,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.webp',
+                    url: '/images/features/professional/service-portfolio.webp',
                   },
                 },
               ],
@@ -1472,8 +1478,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '0px 24px 24px 24px',
               objectFit: 'contain',
+              objectPosition: 'top',
             },
             mobilePicture: {
               data: null,
@@ -1496,7 +1503,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/experiences.webp',
+                    url: '/images/features/professional/service-portfolio.webp',
                   },
                 },
               ],
@@ -1504,8 +1511,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '0px 24px 24px 24px',
               objectFit: 'contain',
+              objectPosition: 'top',
             },
             mobilePicture: {
               data: null,
@@ -1528,7 +1536,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/analytics.webp',
+                    url: '/images/features/professional/marketplace.webp',
                   },
                 },
               ],
@@ -1536,8 +1544,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '105px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1560,7 +1569,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/rating.webp',
+                    url: '/images/features/professional/cashback-promotions.webp',
                   },
                 },
               ],
@@ -1568,8 +1577,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1592,7 +1602,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/integrations.webp',
+                    url: '/images/features/professional/client-insights.webp',
                   },
                 },
               ],
@@ -1600,8 +1610,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1624,7 +1635,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/schedule-page.webp',
+                    url: '/images/features/professional/client-insights.webp',
                   },
                 },
               ],
@@ -1632,8 +1643,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1656,7 +1668,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/home-screen.webp',
+                    url: '/images/features/professional/earnings-tracking.webp',
                   },
                 },
               ],
@@ -1664,8 +1676,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1688,7 +1701,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/analytics-alt.webp',
+                    url: '/images/features/professional/invoice-management.webp',
                   },
                 },
               ],
@@ -1696,8 +1709,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1720,7 +1734,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.webp',
+                    url: '/images/features/professional/client-database.webp',
                   },
                 },
               ],
@@ -1728,8 +1742,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1752,7 +1767,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/experiences.webp',
+                    url: '/images/features/professional/reputation-building.webp',
                   },
                 },
               ],
@@ -1760,8 +1775,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1784,7 +1800,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.webp',
+                    url: '/images/features/professional/social-media-link.webp',
                   },
                 },
               ],
@@ -1792,8 +1808,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '0px 24px 24px 24px',
               objectFit: 'contain',
+              objectPosition: 'top',
             },
             mobilePicture: {
               data: null,
@@ -1816,7 +1833,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.webp',
+                    url: '/images/features/professional/multi-workspace.webp',
                   },
                 },
               ],
@@ -1824,8 +1841,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1848,7 +1866,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.webp',
+                    url: '/images/features/professional/service-management.webp',
                   },
                 },
               ],
@@ -1856,8 +1874,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1880,7 +1899,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/vendor-intro-alt.webp',
+                    url: '/images/features/professional/schedule-control.webp',
                   },
                 },
               ],
@@ -1888,8 +1907,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1912,7 +1932,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/customer/scroll/rating.webp',
+                    url: '/images/features/professional/cancellation-policy.webp',
                   },
                 },
               ],
@@ -1920,8 +1940,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1944,7 +1965,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.webp',
+                    url: '/images/features/professional/client-insights.webp',
                   },
                 },
               ],
@@ -1952,8 +1973,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -1976,7 +1998,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/analytics.webp',
+                    url: '/images/features/professional/earnings-reports.webp',
                   },
                 },
               ],
@@ -1984,8 +2006,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -2008,7 +2031,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/analytics-alt.webp',
+                    url: '/images/features/professional/booking-analysis.webp',
                   },
                 },
               ],
@@ -2016,8 +2039,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -2040,7 +2064,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.webp',
+                    url: '/images/features/professional/client-insights.webp',
                   },
                 },
               ],
@@ -2048,8 +2072,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -2072,7 +2097,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/analytics-alt.webp',
+                    url: '/images/features/professional/downloadable-reports.webp',
                   },
                 },
               ],
