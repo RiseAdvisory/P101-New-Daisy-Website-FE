@@ -15,6 +15,8 @@ export const PricingHero = ({
   setIsRecommended,
   activePricingPage,
   dataPricing,
+  checkedAnnual,
+  setCheckedAnnual,
 }: {
   description: string;
   heightScreen: boolean;
@@ -24,6 +26,8 @@ export const PricingHero = ({
   setIsRecommended: any;
   activePricingPage: string;
   dataPricing: any;
+  checkedAnnual: boolean;
+  setCheckedAnnual: Dispatch<SetStateAction<boolean>>;
 }) => {
   const toogleName = dataPricing?.toggleBusinessProfessional;
 
@@ -57,6 +61,8 @@ export const PricingHero = ({
           setIsRecommended={setIsRecommended}
           activePricingPage={activePricingPage}
           dataPricing={dataPricing}
+          checkedAnnual={checkedAnnual}
+          setCheckedAnnual={setCheckedAnnual}
         />
       </div>
     </div>

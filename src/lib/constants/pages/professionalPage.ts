@@ -43,6 +43,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       { value: '10+', context: 'languages supported' },
     ],
     howItWorks: {
+      title: 'How It Works',
       steps: [
         { title: 'Sign up and tell us about yourself', description: 'Takes 5 minutes. Set your services, availability, and pricing.' },
         { title: 'Our team helps you get set up', description: 'We configure your profile, set up your AI assistant, and walk you through everything.' },
@@ -313,6 +314,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       { value: '+10', context: 'لغة مدعومة' },
     ],
     howItWorks: {
+      title: 'كيف يعمل',
       steps: [
         { title: 'سجّل وأخبرنا عن نفسك', description: 'يستغرق 5 دقائق. حدد خدماتك وتوافرك وأسعارك.' },
         { title: 'فريقنا يساعدك في الإعداد', description: 'نُعدّ ملفك الشخصي ونُجهّز مساعدك الذكي ونشرح لك كل شيء.' },

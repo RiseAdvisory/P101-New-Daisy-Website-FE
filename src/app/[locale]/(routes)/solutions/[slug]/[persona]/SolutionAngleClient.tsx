@@ -84,7 +84,7 @@ export const SolutionAngleClient = ({
         <SocialProofBar stats={pageData.socialProofStats} />
       )}
       {pageData.howItWorks && (
-        <HowItWorks steps={pageData.howItWorks.steps} />
+        <HowItWorks title={pageData.howItWorks.title} steps={pageData.howItWorks.steps} />
       )}
       {pageData.pricingHook && (
         <PricingHook

@@ -43,6 +43,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       { value: '10+', context: 'languages supported' },
     ],
     howItWorks: {
+      title: 'How It Works',
       steps: [
         { title: 'Sign up and tell us about your business', description: 'Takes 5 minutes. Tell us your services, staff, and hours.' },
         { title: 'Our team helps you get set up', description: 'We migrate your data, configure your AI receptionist, and test everything with you.' },
@@ -317,6 +318,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       { value: '+10', context: 'لغة مدعومة' },
     ],
     howItWorks: {
+      title: 'كيف يعمل',
       steps: [
         { title: 'سجّل وأخبرنا عن عملك', description: 'يستغرق 5 دقائق. أخبرنا عن خدماتك وموظفيك وساعات عملك.' },
         { title: 'فريقنا يساعدك في الإعداد', description: 'ننقل بياناتك ونُعدّ موظف الاستقبال الذكي ونختبر كل شيء معك.' },

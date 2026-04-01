@@ -58,6 +58,8 @@ export const PricingClient = () => {
         setIsRecommended={setIsRecommended}
         activePricingPage={activePricingPage}
         dataPricing={dataPricing}
+        checkedAnnual={checkedMonth}
+        setCheckedAnnual={setCheckedMonth}
       />
       <div className="px-4 md:px-20 bg-primary">
         <Separator />
@@ -75,7 +77,7 @@ export const PricingClient = () => {
             {pay?.monthly}
           </p>
           <Switch
-            defaultChecked={checkedMonth}
+            checked={checkedMonth}
             className="mx-4 data-[state=checked]:bg-[#A67F6B] my-auto bg-[#aab4b3]"
             onCheckedChange={() => setCheckedMonth(!checkedMonth)}
           />

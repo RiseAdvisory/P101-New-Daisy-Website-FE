@@ -16,6 +16,8 @@ interface CalculatePricingProps {
   dataPricing: any;
   onScrollToGrid: () => void;
   setIsRecommended: React.Dispatch<React.SetStateAction<boolean>>;
+  checkedAnnual: boolean;
+  setCheckedAnnual: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export const CalculatePricing = ({
@@ -23,12 +25,13 @@ export const CalculatePricing = ({
   dataPricing,
   onScrollToGrid,
   setIsRecommended,
+  checkedAnnual,
+  setCheckedAnnual,
 }: CalculatePricingProps) => {
   const [homeService, setHomeService] = useState(false);
   const [onboarding, setOnboarding] = useState(false);
   const [conciergeService, setConciergeService] = useState(false);
   const [onCalculates, setOnCalculates] = useState(true);
-  const [onCheckedYear, setCheckedYear] = useState(false);
 
   const calculationFormRef = useRef<HTMLDivElement>(null);
 
@@ -102,8 +105,8 @@ export const CalculatePricing = ({
         ) : (
           <ResultCalculate
             calculationFormRef={calculationFormRef}
-            onCheckedYear={onCheckedYear}
-            setCheckedYear={setCheckedYear}
+            onCheckedYear={checkedAnnual}
+            setCheckedYear={setCheckedAnnual}
             onScrollToGrid={onScrollToGrid}
             dataPricing={dataPricing}
             activePricingPage={activePricingPage}

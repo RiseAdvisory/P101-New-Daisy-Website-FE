@@ -60,7 +60,7 @@ export const BusinessClient = ({ lang }: { lang: string }) => {
         <SocialProofBar stats={pageData.socialProofStats} />
       )}
       {pageData.howItWorks && (
-        <HowItWorks steps={pageData.howItWorks.steps} />
+        <HowItWorks title={pageData.howItWorks.title} steps={pageData.howItWorks.steps} />
       )}
       {pageData.pricingHook && (
         <PricingHook
