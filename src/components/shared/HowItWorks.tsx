@@ -1,13 +1,14 @@
 interface HowItWorksProps {
+  title?: string;
   steps: Array<{ title: string; description: string }>;
 }
 
-export const HowItWorks = ({ steps }: HowItWorksProps) => {
+export const HowItWorks = ({ title, steps }: HowItWorksProps) => {
   return (
     <section className="w-full bg-white py-16 md:py-24 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-[#172524] text-3xl md:text-4xl font-bold text-center mb-12">
-          How It Works
+          {title || 'How It Works'}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, index) => (

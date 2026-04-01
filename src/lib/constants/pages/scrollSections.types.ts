@@ -65,6 +65,7 @@ export interface HowItWorksStep {
 }
 
 export interface HowItWorksData {
+  title?: string;
   steps: HowItWorksStep[];
 }
 

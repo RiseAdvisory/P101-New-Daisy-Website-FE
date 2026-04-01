@@ -90,7 +90,8 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         { value: '8', context: 'tools replaced' },
       ],
       howItWorks: {
-        steps: [
+        title: 'How It Works',
+      steps: [
           { title: 'Sign up and tell us about your business', description: 'Takes 5 minutes. Tell us your services, staff, and hours.' },
           { title: 'Our team helps you get set up', description: 'We migrate your data, configure your AI receptionist, and test everything with you.' },
           { title: 'Go live. Your AI receptionist takes over.', description: 'Customers get instant responses. You get control.' },
@@ -172,7 +173,8 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         { value: '8', context: 'أدوات تم استبدالها' },
       ],
       howItWorks: {
-        steps: [
+        title: 'كيف يعمل',
+      steps: [
           { title: 'سجّل وأخبرنا عن عملك', description: 'يستغرق 5 دقائق. أخبرنا عن خدماتك وموظفيك وساعات عملك.' },
           { title: 'فريقنا يساعدك في الإعداد', description: 'ننقل بياناتك ونُعدّ موظف الاستقبال الذكي ونختبر كل شيء معك.' },
           { title: 'ابدأ العمل. موظف الاستقبال الذكي يتولى المهمة.', description: 'العملاء يحصلون على ردود فورية. أنت تحصل على التحكم.' },
@@ -256,7 +258,8 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         { value: '0%', context: 'commission on existing clients' },
       ],
       howItWorks: {
-        steps: [
+        title: 'How It Works',
+      steps: [
           { title: 'Sign up and tell us about yourself', description: 'Takes 5 minutes. Set your services, availability, and pricing.' },
           { title: 'Our team helps you get set up', description: 'We configure your profile, set up your AI assistant, and walk you through everything.' },
           { title: 'Go live. Focus on your clients.', description: 'Daisy handles your bookings. You handle your craft.' },
@@ -338,7 +341,8 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         { value: '0%', context: 'عمولة على العملاء الحاليين' },
       ],
       howItWorks: {
-        steps: [
+        title: 'كيف يعمل',
+      steps: [
           { title: 'سجّل وأخبرنا عن نفسك', description: 'يستغرق 5 دقائق. حدد خدماتك وتوافرك وأسعارك.' },
           { title: 'فريقنا يساعدك في الإعداد', description: 'نُعدّ ملفك الشخصي ونُجهّز مساعدك الذكي ونشرح لك كل شيء.' },
           { title: 'ابدأ العمل. ركّز على عملائك.', description: 'ديزي تتولى حجوزاتك. أنت تتولى إبداعك.' },

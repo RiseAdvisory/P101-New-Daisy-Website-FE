@@ -153,7 +153,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.webp',
+                    url: '/images/features/professional/smart-calender.webp',
                   },
                 },
               ],
@@ -185,7 +185,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/integrations.webp',
+                    url: '/images/features/professional/smart-calender.webp',
                   },
                 },
               ],
@@ -250,7 +250,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/integrations.webp',
+                    url: '/images/features/professional/meta-integration.webp',
                   },
                 },
               ],
@@ -258,8 +258,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -282,7 +283,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/schedule.webp',
+                    url: '/images/features/professional/meta-integration.webp',
                   },
                 },
               ],
@@ -290,8 +291,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -322,7 +324,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px 0px 0px 0px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },
@@ -355,7 +357,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '45px 0px 0px 0px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },
@@ -380,7 +382,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.webp',
+                    url: '/images/features/professional/contact-sync.webp',
                   },
                 },
               ],
@@ -388,8 +390,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -412,7 +415,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.webp',
+                    url: '/images/features/professional/service-portfolio.webp',
                   },
                 },
               ],
@@ -420,8 +423,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '0px 24px 24px 24px',
               objectFit: 'contain',
+              objectPosition: 'top',
             },
             mobilePicture: {
               data: null,
@@ -543,7 +547,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/integrations.webp',
+                    url: '/images/features/professional/client-insights.webp',
                   },
                 },
               ],
@@ -551,8 +555,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -575,7 +580,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/schedule-page.webp',
+                    url: '/images/features/professional/client-insights.webp',
                   },
                 },
               ],
@@ -583,8 +588,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -615,8 +621,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -647,8 +654,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -679,8 +687,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -711,8 +720,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -735,7 +745,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.webp',
+                    url: '/images/features/professional/social-media-link.webp',
                   },
                 },
               ],
@@ -743,8 +753,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '0px 24px 24px 24px',
               objectFit: 'contain',
+              objectPosition: 'top',
             },
             mobilePicture: {
               data: null,
@@ -767,7 +778,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.webp',
+                    url: '/images/features/professional/multi-workspace.webp',
                   },
                 },
               ],
@@ -775,8 +786,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -799,7 +811,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/business/scroll/vendor-intro.webp',
+                    url: '/images/features/professional/service-management.webp',
                   },
                 },
               ],
@@ -807,8 +819,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -839,8 +852,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -871,8 +885,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -895,7 +910,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/pages/professional/scroll/staff-details.webp',
+                    url: '/images/features/professional/client-insights.webp',
                   },
                 },
               ],
@@ -903,8 +918,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -935,8 +951,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -967,8 +984,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -999,8 +1017,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
