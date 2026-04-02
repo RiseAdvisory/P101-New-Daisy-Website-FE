@@ -23,6 +23,7 @@ export const TutorialCard = ({ article, locale }: TutorialCardProps) => {
           className="w-full object-cover h-[230px] md:h-[240px]"
           width={1000}
           height={1000}
+          loading="lazy"
         />
       </div>
       <div className="px-6 py-4 mt-6">

@@ -24,7 +24,7 @@ const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) =>
           },
           item?.attributes.styleFirstBg,
         )}
-        style={styleFirstBg}
+        style={{ height: 'auto', ...styleFirstBg }}
         src={firstBg}
         alt=""
         width={953}

@@ -318,7 +318,8 @@ export const ResultCalculate = ({
 
                 <Switch
                   checked={onCheckedYear}
-                  className="data-[state=checked]:bg-[#A67F6B] bg-[#aab4b3] md:mx-4"
+                  aria-label={onCheckedYear ? dataPricing?.resetCalculation?.billedYearly || 'Switch to monthly billing' : dataPricing?.resetCalculation?.billedMonthly || 'Switch to annual billing'}
+                  className="data-[state=checked]:bg-[#8B6554] bg-[#aab4b3] md:mx-4"
                   onCheckedChange={() => setCheckedYear(!onCheckedYear)}
                 />
 

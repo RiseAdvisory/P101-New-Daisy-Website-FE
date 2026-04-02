@@ -78,7 +78,8 @@ export const PricingClient = () => {
           </p>
           <Switch
             checked={checkedMonth}
-            className="mx-4 data-[state=checked]:bg-[#A67F6B] my-auto bg-[#aab4b3]"
+            aria-label={checkedMonth ? pay?.monthly || 'Switch to monthly billing' : pay?.annually || 'Switch to annual billing'}
+            className="mx-4 data-[state=checked]:bg-[#8B6554] my-auto bg-[#aab4b3]"
             onCheckedChange={() => setCheckedMonth(!checkedMonth)}
           />
           <p
