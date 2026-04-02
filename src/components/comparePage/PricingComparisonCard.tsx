@@ -148,13 +148,13 @@ export const PricingComparisonCard: FC<PricingComparisonCardProps> = ({
               {/* Hidden Costs */}
               {competitor.pricing.hiddenCosts.length > 0 && (
                 <div className="mt-6 space-y-3">
-                  <p className="flex items-center gap-1.5 text-sm font-semibold text-[#A67F6B] uppercase tracking-wider">
+                  <p className="flex items-center gap-1.5 text-sm font-semibold text-[#8B6554] uppercase tracking-wider">
                     <AlertTriangle className="h-3.5 w-3.5" />
                     Hidden costs to watch
                   </p>
                   {competitor.pricing.hiddenCosts.map((cost) => (
                     <div key={cost} className="flex items-start gap-2">
-                      <AlertTriangle className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#A67F6B]" />
+                      <AlertTriangle className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#8B6554]" />
                       <span className="text-sm text-[#455150]">{cost}</span>
                     </div>
                   ))}
@@ -165,16 +165,16 @@ export const PricingComparisonCard: FC<PricingComparisonCardProps> = ({
               {(competitor.pricing.transactionFees ||
                 competitor.pricing.commissionOnMarketplace) && (
                 <div className="mt-6 rounded-lg border border-[#A67F6B]/30 bg-[#A67F6B]/10 p-4">
-                  <p className="text-xs font-semibold text-[#A67F6B] uppercase">
+                  <p className="text-xs font-semibold text-[#8B6554] uppercase">
                     Additional Fees
                   </p>
                   {competitor.pricing.transactionFees && (
-                    <p className="mt-1 text-sm text-[#A67F6B]">
+                    <p className="mt-1 text-sm text-[#8B6554]">
                       Transaction fee: {competitor.pricing.transactionFees}
                     </p>
                   )}
                   {competitor.pricing.commissionOnMarketplace && (
-                    <p className="mt-1 text-sm text-[#A67F6B]">
+                    <p className="mt-1 text-sm text-[#8B6554]">
                       Marketplace commission:{' '}
                       {competitor.pricing.commissionOnMarketplace}
                     </p>

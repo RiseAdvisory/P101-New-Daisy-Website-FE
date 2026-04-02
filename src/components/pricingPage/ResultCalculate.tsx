@@ -176,7 +176,7 @@ export const ResultCalculate = ({
               {hasAdditionalResources && (
                 <li className="flex items-center">
                   <CheckIconPricing style="w-[14px] h-[14px]" />
-                  <span className="text-[#A67F6B] ltr:font-montserrat font-medium ml-2">
+                  <span className="text-[#8B6554] ltr:font-montserrat font-medium ml-2">
                     {dataPricing?.resetCalculation?.additionalLabel ||
                       'Additional'}{' '}
                     +${totalAdditionalCost}/
@@ -191,7 +191,7 @@ export const ResultCalculate = ({
             {/* Additional Resources Section - Only show if there are extras */}
             {hasAdditionalResources && (
               <>
-                <h4 className="text-[#A67F6B] ltr:font-montserrat text-sm font-semibold mb-2">
+                <h4 className="text-[#8B6554] ltr:font-montserrat text-sm font-semibold mb-2">
                   {dataPricing?.resetCalculation?.additionalResources ||
                     'Additional Resources'}
                 </h4>
@@ -201,7 +201,7 @@ export const ResultCalculate = ({
                       +{additionalStaff}{' '}
                       {dataPricing?.resetCalculation?.staffLabel || 'Staff'}:
                     </h3>
-                    <p className="text-[#A67F6B] text-[14px] leading-5 ltr:font-montserrat font-medium ">
+                    <p className="text-[#8B6554] text-[14px] leading-5 ltr:font-montserrat font-medium ">
                       +${additionalStaffCost}/
                       {dataPricing?.resetCalculation?.monthShort || 'mo'}
                     </p>
@@ -215,7 +215,7 @@ export const ResultCalculate = ({
                         'Workspaces'}
                       :
                     </h3>
-                    <p className="text-[#A67F6B] text-[14px] leading-5 ltr:font-montserrat font-medium ">
+                    <p className="text-[#8B6554] text-[14px] leading-5 ltr:font-montserrat font-medium ">
                       +${additionalWorkspacesCost}/
                       {dataPricing?.resetCalculation?.monthShort || 'mo'}
                     </p>
@@ -229,7 +229,7 @@ export const ResultCalculate = ({
                         'Countries'}
                       :
                     </h3>
-                    <p className="text-[#A67F6B] text-[14px] leading-5 ltr:font-montserrat font-medium ">
+                    <p className="text-[#8B6554] text-[14px] leading-5 ltr:font-montserrat font-medium ">
                       +${additionalCountriesCost}/
                       {dataPricing?.resetCalculation?.monthShort || 'mo'}
                     </p>
@@ -241,7 +241,7 @@ export const ResultCalculate = ({
                       'Additional Total'}
                     :
                   </h3>
-                  <p className="text-[#A67F6B] text-[14px] leading-5 ltr:font-montserrat font-semibold ">
+                  <p className="text-[#8B6554] text-[14px] leading-5 ltr:font-montserrat font-semibold ">
                     +${totalAdditionalCost}/
                     {dataPricing?.resetCalculation?.monthShort || 'mo'}
                   </p>

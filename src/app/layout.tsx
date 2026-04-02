@@ -109,7 +109,7 @@ export default function RootLayout({
       >
         <WebVitals />
         <ServiceWorkerRegistration />
-        {children}
+        <main>{children}</main>
         <Analytics />
         <SpeedInsights />
       </body>

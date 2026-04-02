@@ -94,7 +94,7 @@ export const Footer = () => {
         <div className="flex flex-col gap-12 md:flex-row md:justify-between">
           {/* Logo & App Buttons */}
           <div className="flex flex-col items-center md:items-start">
-            <Link href={localePath('/', locale)} className="mb-6 opacity-60">
+            <Link href={localePath('/', locale)} className="mb-6 opacity-60" aria-label="The Daisy - Home">
               <LogoIconsS />
             </Link>
             {!isVisibleAppBtn && (
@@ -134,27 +134,27 @@ export const Footer = () => {
 
         {/* Social Links */}
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <p className="text-xs text-white/40 ltr:font-montserrat">
+          <p className="text-xs text-white/60 ltr:font-montserrat">
             &copy; {new Date().getFullYear()} The Daisy. All rights reserved.
           </p>
           <ul className="flex items-center gap-x-6">
             <li>
-              <Link href={socialLinks.facebook_url} target="_blank" rel="noopener noreferrer">
+              <Link href={socialLinks.facebook_url} target="_blank" rel="noopener noreferrer" aria-label="The Daisy on Facebook">
                 <FacebookIcons />
               </Link>
             </li>
             <li>
-              <Link href={socialLinks.twitter_url} target="_blank" rel="noopener noreferrer">
+              <Link href={socialLinks.twitter_url} target="_blank" rel="noopener noreferrer" aria-label="The Daisy on Twitter">
                 <TwitterIcons />
               </Link>
             </li>
             <li>
-              <Link href={socialLinks.linkedin_url} target="_blank" rel="noopener noreferrer">
+              <Link href={socialLinks.linkedin_url} target="_blank" rel="noopener noreferrer" aria-label="The Daisy on LinkedIn">
                 <LinkedInIcons />
               </Link>
             </li>
             <li>
-              <Link href={socialLinks.instagram_url} target="_blank" rel="noopener noreferrer">
+              <Link href={socialLinks.instagram_url} target="_blank" rel="noopener noreferrer" aria-label="The Daisy on Instagram">
                 <InstagramIcons />
               </Link>
             </li>

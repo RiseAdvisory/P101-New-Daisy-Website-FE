@@ -90,7 +90,7 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
           </div>
           {avgRating !== null && (
             <div className="flex items-center gap-1 rounded-lg bg-[#F8F5F3] px-2.5 py-1.5">
-              <Star className="h-4 w-4 fill-[#A67F6B] text-[#A67F6B]" />
+              <Star className="h-4 w-4 fill-[#A67F6B] text-[#8B6554]" />
               <span className="text-sm font-bold text-[#455150]">
                 {avgRating}
               </span>

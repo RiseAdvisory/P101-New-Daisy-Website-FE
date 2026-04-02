@@ -24,6 +24,7 @@ interface NoScrollingAnimationBusinessProps {
   styleFirstBgJSON?: Record<string, string | number>;
   styleSecondBgJSON?: Record<string, string | number>;
   styleBgMobileSecond?: Record<string, string | number>;
+  priority?: boolean;
 }
 
 export const NoScrollingAnimationBusiness = ({
@@ -44,6 +45,7 @@ export const NoScrollingAnimationBusiness = ({
   styleFirstBgJSON,
   styleSecondBgJSON,
   styleBgMobileSecond,
+  priority = false,
 }: NoScrollingAnimationBusinessProps) => {
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -74,8 +76,9 @@ export const NoScrollingAnimationBusiness = ({
             style={styleFirstBgJSON}
             alt="Decorative leaf background"
             className={imageClassNameBg}
-            width={1000}
-            height={1000}
+            width={953}
+            height={922}
+            priority={priority}
           />
         )}
         {imageBgTwo && !imageBgTwo.includes('undefined') && (
@@ -84,8 +87,9 @@ export const NoScrollingAnimationBusiness = ({
             style={styleBgMobileSecond}
             alt="Decorative stars background"
             className={imageClassNameBgSecond}
-            width={1000}
-            height={1000}
+            width={404}
+            height={430}
+            priority={priority}
           />
         )}
         {image && !image.includes('undefined') && (
@@ -96,12 +100,13 @@ export const NoScrollingAnimationBusiness = ({
             width={imageWidth || 1000}
             height={imageHeight || 1000}
             style={sizeImage}
+            priority={priority}
           />
         )}
       </div>
-      <h5 className="text-[#F2DAD4] pt-8 text-base leading-6 uppercase">
+      <p className="text-[#F2DAD4] pt-8 text-base leading-6 uppercase">
         {subtitle}
-      </h5>
+      </p>
       <h2 className="pt-2 text-white leading-10 text-3xl capitalize">
         {title}
       </h2>

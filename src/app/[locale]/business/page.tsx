@@ -59,6 +59,13 @@ export default function BusinessPage({ params }: { params: { locale: string } })
 
   return (
     <>
+      {/* Preload first scroll section hero image to improve mobile LCP */}
+      <link
+        rel="preload"
+        href="/images/pages/business/scroll/device-mockups.webp"
+        as="image"
+        type="image/webp"
+      />
       <WebPageSchema
         title="Salon & Spa Business Solutions | The Daisy"
         description="AI-powered beauty business platform. Manage bookings, customer acquisition, staff scheduling, payments, and marketing, all in one."
