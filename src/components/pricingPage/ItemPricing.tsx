@@ -266,7 +266,7 @@ export const ItemCardPricing = ({
       >
         {isRecommended && isRescomennded && (
           <p
-            className="absolute top-0 left-0 right-0 text-center text-white bg-[#A67F6B] py-1 font-medium"
+            className="absolute top-0 left-0 right-0 text-center text-white bg-[#8B6554] py-1 font-medium"
             ref={refGridCardRef}
           >
             {textRecomended?.textRecomended}
@@ -322,17 +322,17 @@ export const ItemCardPricing = ({
         <ul className="flex flex-col bg-[#F8F5F3] pt-10 md:py-10 space-y-4 w-full px-4 -mx-6 rounded-b-[16px]">
           {optionPlus !== '' && (
             <>
-              <div className="flex justify-center items-center py-3 border bg-white rounded-[8px]">
+              <li className="list-none flex justify-center items-center py-3 border bg-white rounded-[8px]">
                 <div className="flex justify-center items-center">
                   <OptionPricing />
                   <span className="ltr:ml-2 rtl:mr-2 ltr:font-montserrat font-semibold">
                     {defaulText?.everything} &quot;{optionPlus}&quot;
                   </span>
                 </div>
-              </div>
-              <span className="flex justify-center mx-auto p-[18px] rounded-full bg-white w-fit border">
-                <PlusIcon />
-              </span>
+              </li>
+              <li className="list-none flex justify-center mx-auto p-[18px] rounded-full bg-white w-fit border">
+                <PlusIcon aria-hidden="true" />
+              </li>
             </>
           )}
           <OtherOptionPricing showAll={showAll} options={options} />

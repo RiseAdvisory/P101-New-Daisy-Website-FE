@@ -39,12 +39,12 @@ export const DropDownMobileHeaderLang = ({
   return (
     <DropdownMenu open={open} onOpenChange={setOpen} modal={false}>
       <DropdownMenuTrigger
-        aria-label="Select language"
         className={cn(
           'min-w-[45px] mr-2 bg-customWhite border text-white px-4 py-2 border-primaryBtn inline-flex text-center items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group md:hover:bg-white md:hover:text-primary',
           classNames,
         )}
       >
+        <span className="sr-only">Language: </span>
         <p className="mr-2 rtl:mr-0 ">{state}</p>
         <ArrowDownIcon className=" stroke-white group-hover:stroke-primary rtl:!mr-[10px]" />
       </DropdownMenuTrigger>

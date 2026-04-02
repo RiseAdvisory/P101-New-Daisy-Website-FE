@@ -47,6 +47,7 @@ export const TogglePricing = ({
             onClickCapture={() => setActive(option.path)}
             key={option.path}
             onClick={() => setActive(option.path)}
+            aria-pressed={active === option.path}
             className={clsx(
               'px-6 py-1 rounded-lg font-semibold cursor-pointer w-[150px]',
               {
