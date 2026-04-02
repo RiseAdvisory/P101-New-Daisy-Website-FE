@@ -44,6 +44,7 @@ export const DropDownMobileHeaderLang = ({
           classNames,
         )}
       >
+        <span className="sr-only">Language: </span>
         <p className="mr-2 rtl:mr-0 ">{state}</p>
         <ArrowDownIcon className=" stroke-white group-hover:stroke-primary rtl:!mr-[10px]" />
       </DropdownMenuTrigger>

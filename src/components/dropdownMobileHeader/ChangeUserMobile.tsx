@@ -148,6 +148,7 @@ export const ChangeUserTypeMobile = ({
           classNames,
         )}
       >
+        <span className="sr-only">User type: </span>
         <p className="mr-2 rtl:mr-0 rtl:">{currentPage}</p>
         <ArrowDownIcon className=" stroke-white group-hover:stroke-primary rtl:mr-2" />
       </DropdownMenuTrigger>
