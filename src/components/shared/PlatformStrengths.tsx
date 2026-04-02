@@ -98,7 +98,7 @@ export function PlatformStrengths({
               key={cap.label}
               className="p-6 rounded-xl bg-[#F9FBFB] border border-[#E8E9E9]"
             >
-              <div className="text-[#A67F6B] mb-3">
+              <div className="text-[#8B6554] mb-3">
                 {iconMap[cap.label] ?? <Box className="w-6 h-6" />}
               </div>
               <h3 className="text-[#172524] font-semibold text-lg mb-2">

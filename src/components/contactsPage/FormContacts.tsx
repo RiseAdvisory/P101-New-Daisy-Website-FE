@@ -137,14 +137,14 @@ export const FormContacts = ({ style }: { style?: string }) => {
               <FormItem className="md:w-full mt-6">
                 <FormLabel
                   className={`ltr:font-montserrat font-semibold text-base ${
-                    activeField === 'firstname' ? 'text-[#A67F6B]' : ''
+                    activeField === 'firstname' ? 'text-[#8B6554]' : ''
                   }`}
                 >
                   {formText?.name}
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
+                    className="focus:text-[#8B6554] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                     placeholder={formTextPlaceholder?.name}
                     {...field}
                     onFocus={() => handleFocus('firstname')}
@@ -162,14 +162,14 @@ export const FormContacts = ({ style }: { style?: string }) => {
               <FormItem className="md:w-full md:ml-4 rtl:md:mr-4 mt-6">
                 <FormLabel
                   className={`ltr:font-montserrat font-semibold text-base ${
-                    activeField === 'lastname' ? 'text-[#A67F6B]' : ''
+                    activeField === 'lastname' ? 'text-[#8B6554]' : ''
                   }`}
                 >
                   {formText?.lastName}
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
+                    className="focus:text-[#8B6554] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                     placeholder={formTextPlaceholder?.lastName}
                     {...field}
                     onFocus={() => handleFocus('lastname')}
@@ -189,7 +189,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
               <FormItem className="md:w-full mt-6">
                 <FormLabel
                   className={`ltr:font-montserrat font-semibold text-base ${
-                    activeField === 'email' ? 'text-[#A67F6B]' : ''
+                    activeField === 'email' ? 'text-[#8B6554]' : ''
                   }`}
                 >
                   {formText?.email}
@@ -197,7 +197,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
                 <FormControl>
                   <Input
                     type="email"
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
+                    className="focus:text-[#8B6554] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                     placeholder={formTextPlaceholder?.email}
                     {...field}
                     onFocus={() => handleFocus('email')}
@@ -216,7 +216,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
               <FormItem className="md:w-full mt-6 ltr:md:ml-4 rtl:md:mr-4">
                 <FormLabel
                   className={`ltr:font-montserrat font-semibold text-base ${
-                    activeField === 'mobile' ? 'text-[#A67F6B]' : ''
+                    activeField === 'mobile' ? 'text-[#8B6554]' : ''
                   }`}
                 >
                   {formText?.phone}
@@ -265,7 +265,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
                   </FormControl>
                   <FormControl>
                     <Input
-                      className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
+                      className="focus:text-[#8B6554] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                       type="number"
                       placeholder="00000000"
                       value={mobile}
@@ -287,14 +287,14 @@ export const FormContacts = ({ style }: { style?: string }) => {
             <FormItem className="md:w-full mt-6">
               <FormLabel
                 className={`ltr:font-montserrat font-semibold text-base ${
-                  activeField === 'content' ? 'text-[#A67F6B]' : ''
+                  activeField === 'content' ? 'text-[#8B6554]' : ''
                 }`}
               >
                 {formText?.content}
               </FormLabel>
               <FormControl>
                 <Textarea
-                  className="focus:text-[#A67F6B] border focus:border-[#A67F6B] h-[155px] resize-none border-[#E8E9E9] bg-[#F9FBFB]"
+                  className="focus:text-[#8B6554] border focus:border-[#A67F6B] h-[155px] resize-none border-[#E8E9E9] bg-[#F9FBFB]"
                   {...field}
                   onFocus={() => handleFocus('content')}
                   onBlur={handleBlur}

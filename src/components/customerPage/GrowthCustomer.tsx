@@ -42,9 +42,9 @@ export const GrowthSectionCustomer = ({
             alt="bgleaf"
           />
           <div className="md:w-[50%] md:px-20 md:ml-[100px] md:pb-[150px] md:pt-[150px]">
-            <h5 className="text-[#A67F6B] pt-20 text-base leading-6">
+            <p className="text-[#8B6554] pt-20 text-base leading-6">
               {subtitle}
-            </h5>
+            </p>
             <h2 className="pt-2 text-[#172524] leading-10 text-3xl md:text-[40px] md:leading-[50px] md:font-bold">
               {title}
             </h2>

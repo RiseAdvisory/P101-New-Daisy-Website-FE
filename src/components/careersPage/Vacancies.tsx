@@ -27,13 +27,13 @@ export const Vacansies = ({
       ref={blockRef}
     >
       <div className="bg-white p-8 border rounded-[12px] md:mr-6 md:h-fit rtl:md:mr-0 rtl:md:ml-6">
-        <p className="uppercase text-[#A67F6B] font-bold">
+        <p className="uppercase text-[#8B6554] font-bold">
           {dataCareers?.getInTouch}
         </p>
         <p className="ltr:font-montserrat font text-[#2E3B3A] mt-2">
           {dataCareers?.fillSpeak}
         </p>
-        <span className="text-[#A67F6B] ltr:font-montserrat">
+        <span className="text-[#8B6554] ltr:font-montserrat">
           {dataCareers?.email}
         </span>
         <Button

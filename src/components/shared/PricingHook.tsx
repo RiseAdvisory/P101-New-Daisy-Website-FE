@@ -35,7 +35,7 @@ export const PricingHook = ({
         <div>
           <Link
             href={pricingLinkHref}
-            className="text-[#A67F6B] text-sm hover:underline"
+            className="text-[#8B6554] text-sm hover:underline"
           >
             {pricingLinkText}
           </Link>

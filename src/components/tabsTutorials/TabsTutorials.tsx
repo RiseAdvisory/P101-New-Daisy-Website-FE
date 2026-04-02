@@ -51,7 +51,7 @@ export const TabsTutorials = ({
       className="flex bg-[#F8F5F3] rtl:flex-row-reverse"
     >
       <TabsList className="flex flex-col py-6  mr-6 ml-16 bg-white px-6 h-fit">
-        <p className=" font-semibold text-base text-[#A67F6B] pt-6 uppercase w-full ">
+        <p className=" font-semibold text-base text-[#8B6554] pt-6 uppercase w-full ">
           {infoTutorials?.title}
         </p>
         <ul className=" flex flex-col text-start bg-white pb-6 rounded-xl  w-[310px]">

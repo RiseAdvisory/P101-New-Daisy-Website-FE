@@ -52,6 +52,7 @@ export const MobileScrollSection = ({
                   dataScroll[1]?.attributes?.mainImage?.data?.[0]?.attributes
                     ?.formats?.small?.height
                 }
+                priority={index === 0}
               />
               <div className="px-4 bg-primary">
                 <Separator className="bg-[#586968]" />

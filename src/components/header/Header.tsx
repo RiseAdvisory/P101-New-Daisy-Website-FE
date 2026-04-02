@@ -92,7 +92,7 @@ export const Header = () => {
 
   return (
     <header className="w-full rtl:md:  bg-primary p-4 flex justify-between md:justify-start border-b border-primaryBtn md:px-16 fixed z-40">
-      <Link href={localePath('/business', locale)}>
+      <Link href={localePath('/business', locale)} aria-label="The Daisy - Home">
         <LogoIconsS />
       </Link>
       <nav className="flex justify-end items-center self-center md:justify-between w-full">

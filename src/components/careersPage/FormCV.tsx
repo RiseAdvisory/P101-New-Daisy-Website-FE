@@ -93,14 +93,14 @@ export const FormCV = ({
               <FormItem className="md:w-full mt-6">
                 <FormLabel
                   className={`ltr:font-montserrat font-semibold text-base ${
-                    activeField === 'firstname' ? 'text-[#A67F6B]' : ''
+                    activeField === 'firstname' ? 'text-[#8B6554]' : ''
                   }`}
                 >
                   {dataCareers?.formField?.firstName}
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B]"
+                    className="focus:text-[#8B6554] border focus:border-[#A67F6B]"
                     placeholder={dataCareers?.formDescription?.firstName}
                     {...field}
                     onFocus={() => handleFocus('firstname')}
@@ -118,14 +118,14 @@ export const FormCV = ({
               <FormItem className="md:w-full md:ml-4 mt-6">
                 <FormLabel
                   className={`ltr:font-montserrat font-semibold text-base ${
-                    activeField === 'lastname' ? 'text-[#A67F6B]' : ''
+                    activeField === 'lastname' ? 'text-[#8B6554]' : ''
                   }`}
                 >
                   {dataCareers?.formField?.lastName}
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B]"
+                    className="focus:text-[#8B6554] border focus:border-[#A67F6B]"
                     placeholder={dataCareers?.formDescription?.lastName}
                     {...field}
                     onFocus={() => handleFocus('lastname')}
@@ -145,7 +145,7 @@ export const FormCV = ({
               <FormItem className="md:w-full mt-6">
                 <FormLabel
                   className={`ltr:font-montserrat font-semibold text-base ${
-                    activeField === 'email' ? 'text-[#A67F6B]' : ''
+                    activeField === 'email' ? 'text-[#8B6554]' : ''
                   }`}
                 >
                   {dataCareers?.formField?.email}
@@ -153,7 +153,7 @@ export const FormCV = ({
                 <FormControl>
                   <Input
                     type="email"
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B]"
+                    className="focus:text-[#8B6554] border focus:border-[#A67F6B]"
                     placeholder={dataCareers?.formDescription?.email}
                     {...field}
                     onFocus={() => handleFocus('email')}

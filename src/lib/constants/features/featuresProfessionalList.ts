@@ -415,7 +415,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/service-portfolio.webp',
+                    url: '/images/features/professional/branded-booking-site.png',
                   },
                 },
               ],
@@ -423,7 +423,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '0px 24px 24px 24px',
+              padding: '0px 24px 74px 24px',
               objectFit: 'contain',
               objectPosition: 'top',
             },
@@ -448,7 +448,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/service-portfolio.webp',
+                    url: '/images/features/professional/service-portfolio.png',
                   },
                 },
               ],
@@ -456,7 +456,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '0px 24px 24px 24px',
+              padding: '0px 24px 94px 24px',
               objectFit: 'contain',
               objectPosition: 'top',
             },
@@ -489,7 +489,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '105px 24px 0px 24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },
@@ -621,7 +621,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px 24px 0px 24px',
+              padding: '44px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },
@@ -654,7 +654,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px 24px 0px 24px',
+              padding: '44px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },
@@ -910,7 +910,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/client-insights.webp',
+                    url: '/images/features/professional/earnings-reports.webp',
                   },
                 },
               ],
@@ -918,7 +918,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px 24px 0px 24px',
+              padding: '45px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },

@@ -26,9 +26,9 @@ export const GrowthSection = ({
       <div className=" px-4 md:flex md:bg-[#F8F5F3] bg-white">
         <div className="md:flex md:justify-between md:bg-white md:mx-[64px] md:my-[164px] rounded-[16px]">
           <div className="md:w-[50%] md:px-20 md:ml-[100px] md:pb-[200px]">
-            <h5 className="text-[#A67F6B] pt-20 text-base leading-6 uppercase">
+            <p className="text-[#8B6554] pt-20 text-base leading-6 uppercase">
               {subtitle}
-            </h5>
+            </p>
             <h2 className="pt-2 text-[#172524] leading-10 text-3xl md:text-[40px] md:leading-[50px] md:font-bold capitalize">
               {title}
             </h2>

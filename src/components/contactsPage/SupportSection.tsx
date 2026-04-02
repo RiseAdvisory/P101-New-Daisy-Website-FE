@@ -34,7 +34,7 @@ export const SupportSection = ({ contacts = [] }: { contacts: any }) => {
           <p className="mt-1 ltr:font-montserrat text-[#455150] md:px-14">
             {contacts[0]?.subtitle}
           </p>
-          <p className="text-[#A67F6B] mt-1 font-semibold leading-6">
+          <p className="text-[#8B6554] mt-1 font-semibold leading-6">
             {contacts[0]?.contact}
           </p>
         </li>
@@ -47,7 +47,7 @@ export const SupportSection = ({ contacts = [] }: { contacts: any }) => {
             {contacts[1]?.subtitle}
           </p>
 
-          <p className="text-[#A67F6B] mt-1 font-semibold leading-6">
+          <p className="text-[#8B6554] mt-1 font-semibold leading-6">
             {contacts[1]?.contact}
           </p>
         </li>

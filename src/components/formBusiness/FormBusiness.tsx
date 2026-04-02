@@ -220,14 +220,14 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
               <FormItem className="md:w-full mt-6">
                 <FormLabel
                   className={`ltr:font-montserrat font-semibold text-base ${
-                    activeField === 'name' ? 'text-[#A67F6B]' : ''
+                    activeField === 'name' ? 'text-[#8B6554]' : ''
                   }`}
                 >
                   {textForm?.name}
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
+                    className="focus:text-[#8B6554] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                     placeholder={descriptionForm?.name}
                     {...field}
                     onFocus={() => handleFocus('name')}
@@ -245,7 +245,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
               <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4">
                 <FormLabel
                   className={`ltr:font-montserrat font-semibold text-base ${
-                    activeField === 'email' ? 'text-[#A67F6B]' : ''
+                    activeField === 'email' ? 'text-[#8B6554]' : ''
                   }`}
                 >
                   {textForm?.email}
@@ -253,7 +253,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                 <FormControl>
                   <Input
                     type="email"
-                    className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
+                    className="focus:text-[#8B6554] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                     placeholder={descriptionForm?.email}
                     {...field}
                     onFocus={() => handleFocus('email')}
@@ -289,14 +289,14 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                 <FormItem className="md:w-full mt-6 ">
                   <FormLabel
                     className={`ltr:font-montserrat font-semibold text-base ${
-                      activeField === ' business_name' ? 'text-[#A67F6B]' : ''
+                      activeField === ' business_name' ? 'text-[#8B6554]' : ''
                     }`}
                   >
                     {textForm?.businessName}
                   </FormLabel>
                   <FormControl>
                     <Input
-                      className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
+                      className="focus:text-[#8B6554] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                       placeholder={descriptionForm?.businessName}
                       {...field}
                       onFocus={() => handleFocus('business_name')}
@@ -314,7 +314,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                 <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4">
                   <FormLabel
                     className={`ltr:font-montserrat font-semibold text-base ${
-                      activeField === 'business_type' ? 'text-[#A67F6B]' : ''
+                      activeField === 'business_type' ? 'text-[#8B6554]' : ''
                     }`}
                   >
                     {textForm?.businessType}
@@ -351,7 +351,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                   <FormItem className="mt-6">
                     <FormLabel
                       className={`ltr:font-montserrat font-semibold text-base ${
-                        activeField === 'country_code' ? 'text-[#A67F6B]' : ''
+                        activeField === 'country_code' ? 'text-[#8B6554]' : ''
                       }`}
                     >
                       {textForm?.countryCode || 'Code'}
@@ -397,14 +397,14 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                   <FormItem className="md:w-full mt-6">
                     <FormLabel
                       className={`ltr:font-montserrat font-semibold text-base ${
-                        activeField === 'mobile' ? 'text-[#A67F6B]' : ''
+                        activeField === 'mobile' ? 'text-[#8B6554]' : ''
                       }`}
                     >
                       {textForm?.phoneNumber}
                     </FormLabel>
                     <FormControl>
                       <Input
-                        className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
+                        className="focus:text-[#8B6554] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                         type="number"
                         placeholder=""
                         {...field}
@@ -426,14 +426,14 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                 <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4">
                   <FormLabel
                     className={`ltr:font-montserrat font-semibold text-base ${
-                      activeField === 'social_media' ? 'text-[#A67F6B]' : ''
+                      activeField === 'social_media' ? 'text-[#8B6554]' : ''
                     }`}
                   >
                     {textForm?.socialMediaAccount}{' '}
                   </FormLabel>
                   <FormControl>
                     <Input
-                      className="focus:text-[#A67F6B] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
+                      className="focus:text-[#8B6554] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
                       placeholder={descriptionForm?.socialMediaAccount}
                       {...field}
                       onFocus={() => handleFocus('social_media')}
@@ -455,7 +455,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                 <FormItem className="md:w-full mt-6">
                   <FormLabel
                     className={`ltr:font-montserrat font-semibold text-base ${
-                      activeField === 'location_count' ? 'text-[#A67F6B]' : ''
+                      activeField === 'location_count' ? 'text-[#8B6554]' : ''
                     }`}
                   >
                     {textForm?.numberofLocations}{' '}
@@ -498,7 +498,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                 <FormItem className="md:w-full md:ml-4 mt-6 rtl:md:ml-0 rtl:md:mr-4 ">
                   <FormLabel
                     className={`ltr:font-montserrat font-semibold text-base ${
-                      activeField === 'staff_count' ? 'text-[#A67F6B]' : ''
+                      activeField === 'staff_count' ? 'text-[#8B6554]' : ''
                     }`}
                   >
                     {textForm?.numberofStaff}{' '}
@@ -536,7 +536,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
           <p className="text-[#172524] ltr:font-montserrat font-semibold mb-2">
             {textForm?.homeServiceVisits}{' '}
             {textForm?.optionalLabel && (
-              <span className="text-[#aab4b3] font-normal">
+              <span className="text-[#7A8786] font-normal">
                 {textForm.optionalLabel}
               </span>
             )}
