@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Open_Sans, Montserrat, Inter, Cairo } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import { OrganizationSchema } from '@/components/seo/OrganizationSchema';
 import { SoftwareApplicationSchema } from '@/components/seo/SoftwareApplicationSchema';
@@ -8,6 +9,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { WebVitals } from '@/components/performance/WebVitals';
 import { ServiceWorkerRegistration } from '@/components/performance/ServiceWorkerRegistration';
+import { DaisyWidgetStyles } from '@/components/supportWidget/DaisyWidgetStyles';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -101,6 +103,13 @@ export default function RootLayout({
         <OrganizationSchema />
         <SoftwareApplicationSchema />
         <WebSiteSchema />
+        <Script
+          id="daisy-support-config"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.DaisySupportConfig = { apiUrl: '${process.env.NEXT_PUBLIC_SUPPORT_WIDGET_URL || 'https://devapp.trythedaisy.com'}' };`,
+          }}
+        />
       </head>
       <body
         className={`${openSans.variable} ${montserrat.variable} ${inter.variable} ${cairo.variable} font-openSans rtl:font-cairo`}
@@ -112,6 +121,12 @@ export default function RootLayout({
         <main>{children}</main>
         <Analytics />
         <SpeedInsights />
+        <DaisyWidgetStyles />
+        <Script
+          id="daisy-support-widget-js"
+          src={`${process.env.NEXT_PUBLIC_SUPPORT_WIDGET_URL || 'https://devapp.trythedaisy.com'}/js/daisy-support-widget.js`}
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
