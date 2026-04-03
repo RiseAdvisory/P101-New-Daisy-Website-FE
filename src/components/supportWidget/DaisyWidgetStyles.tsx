@@ -458,7 +458,7 @@ export function DaisyWidgetStyles() {
         if (!launcher) return;
 
         // Don't replace if chat window is open — let the widget show its X icon
-        const chatWindow = widget.shadowRoot?.querySelector('.dsw-window');
+        const chatWindow = widget.shadowRoot?.querySelector('.dsw-window') as HTMLElement | null;
         const isOpen = chatWindow && chatWindow.offsetHeight > 0 && chatWindow.style.display !== 'none';
         if (isOpen) return;
 
