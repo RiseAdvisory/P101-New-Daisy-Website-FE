@@ -7,7 +7,7 @@ let capturedProps: Record<string, any> = {};
 jest.mock('next/script', () => {
   return function MockScript(props: any) {
     capturedProps = props;
-    return <script data-testid={props.id} src={props.src} />;
+    return <div data-testid={props.id} data-src={props.src} />;
   };
 });
 
@@ -22,7 +22,7 @@ describe('DaisySupportWidget', () => {
     const script = getByTestId('daisy-support-widget-js');
     expect(script).toBeInTheDocument();
     expect(script).toHaveAttribute(
-      'src',
+      'data-src',
       'https://devapp.trythedaisy.com/js/daisy-support-widget.js',
     );
   });
