@@ -1,7 +1,6 @@
 'use client';
 import { LogoIconsS } from '@/assets/icons/logo/LogoIconsS';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { PlayMarketButton } from '../buttonApp/PlayMarketButton';
 import { AppStoreButton } from '../buttonApp/AppStoreButton';
 import { FacebookIcons } from '@/assets/icons/socialLinksIcons/FacebookIcons';
@@ -9,19 +8,12 @@ import { TwitterIcons } from '@/assets/icons/socialLinksIcons/TwitterIcons';
 import { LinkedInIcons } from '@/assets/icons/socialLinksIcons/LinkedInIcons';
 import { InstagramIcons } from '@/assets/icons/socialLinksIcons/InstagramIcons';
 import { usePathname } from 'next/navigation';
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { footerData } from '@/lib/constants/shared/footerData';
 import { t } from '@/lib/constants/i18n';
 import { getLocaleFromPathname, localePath } from '@/lib/utils/locale';
 
-// Lazy load FreshChat widget - only load after user interaction
-const FreshChatLoader = dynamic(
-  () => import('@/components/freshChatWidget/FreshChatWidget'),
-  { ssr: false },
-);
-
 export const Footer = () => {
-  const [shouldLoadChat, setShouldLoadChat] = useState(false);
   const fullPath = usePathname();
   const locale = useMemo(() => getLocaleFromPathname(fullPath), [fullPath]);
   const path = fullPath;
@@ -31,64 +23,8 @@ export const Footer = () => {
 
   const isVisibleAppBtn = path.includes('get-the-app');
 
-  // Defer FreshChat loading until user scrolls/interacts OR after timeout
-  useEffect(() => {
-    let timeoutId: NodeJS.Timeout;
-    let listenersAdded = false;
-
-    const loadChat = () => {
-      if (!shouldLoadChat) {
-        setShouldLoadChat(true);
-      }
-      if (listenersAdded) {
-        window.removeEventListener('scroll', loadChat);
-        window.removeEventListener('click', loadChat);
-        window.removeEventListener('touchstart', loadChat);
-      }
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-    };
-
-    const scheduleLoad = () => {
-      const setupListeners = () => {
-        listenersAdded = true;
-        window.addEventListener('scroll', loadChat, {
-          once: true,
-          passive: true,
-        });
-        window.addEventListener('click', loadChat, { once: true });
-        window.addEventListener('touchstart', loadChat, {
-          once: true,
-          passive: true,
-        });
-        timeoutId = setTimeout(loadChat, 2000);
-      };
-
-      if ('requestIdleCallback' in window) {
-        window.requestIdleCallback(setupListeners);
-      } else {
-        setTimeout(setupListeners, 100);
-      }
-    };
-
-    scheduleLoad();
-
-    return () => {
-      if (listenersAdded) {
-        window.removeEventListener('scroll', loadChat);
-        window.removeEventListener('click', loadChat);
-        window.removeEventListener('touchstart', loadChat);
-      }
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-    };
-  }, [shouldLoadChat]);
-
   return (
     <footer className="w-full bg-primary px-4 py-16 md:py-14">
-      {shouldLoadChat && <FreshChatLoader lang={locale} />}
       <div className="mx-auto max-w-6xl">
         {/* Logo + Columns */}
         <div className="flex flex-col gap-12 md:flex-row md:justify-between">
