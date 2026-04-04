@@ -45,7 +45,8 @@ export const QAAccordion = ({
         <Separator className="hidden group-data-[state=open]:block data-[state=open]:bg-white group-data-[state=open]:my-4 group-data-[state=open]:mb-10" />
         <AccordionContent className="md:text-base  text-[#EAECEC] ltr:font-montserrat md:font-normal pb-6">
           <div
-            className={cn('', { 'text-primaryBtn': sectionFQ })}
+            className={cn('faq-answer', { 'text-primaryBtn': sectionFQ })}
+            data-geo-answer="true"
             dangerouslySetInnerHTML={{
               __html: item?.answer
                 ? typeof window !== 'undefined'

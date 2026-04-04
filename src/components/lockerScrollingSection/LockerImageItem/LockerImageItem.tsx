@@ -27,6 +27,7 @@ const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) =>
         style={{ height: 'auto', ...styleFirstBg }}
         src={firstBg}
         alt=""
+        role="presentation"
         width={953}
         height={922}
         priority={priority}
@@ -42,6 +43,7 @@ const LockerImageItem = ({ isActive, imageUrl, item, priority = false }: any) =>
           src={secondBg}
           style={styleSecondBg}
           alt=""
+          role="presentation"
           width={404}
           height={430}
         />

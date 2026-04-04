@@ -55,6 +55,7 @@ export default function GetTheAppPage() {
         title="Download The Daisy App | Beauty Booking for iOS & Android"
         description="Download The Daisy beauty booking app for iOS and Android. Find salons near you, book appointments, earn cashback."
         url="https://www.jointhedaisy.com/get-the-app"
+        dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
         items={[{ name: 'Get the App', url: 'https://www.jointhedaisy.com/get-the-app' }]}

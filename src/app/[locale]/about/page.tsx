@@ -52,6 +52,7 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
         title="About Us | The Daisy - Beauty & Wellness Marketplace"
         description="Learn about The Daisy, the beauty and wellness marketplace connecting customers with salons, spas, and beauty professionals."
         url="https://www.jointhedaisy.com/about"
+        dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
         items={[{ name: 'About Us', url: 'https://www.jointhedaisy.com/about' }]}

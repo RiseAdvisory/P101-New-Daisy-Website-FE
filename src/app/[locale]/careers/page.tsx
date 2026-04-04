@@ -56,6 +56,7 @@ export default function CareersPage() {
         title="Careers | The Daisy - Beauty Tech Jobs"
         description="Join The Daisy team and help build the future of beauty and wellness booking. Explore open positions."
         url="https://www.jointhedaisy.com/careers"
+        dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
         items={[{ name: 'Careers', url: 'https://www.jointhedaisy.com/careers' }]}

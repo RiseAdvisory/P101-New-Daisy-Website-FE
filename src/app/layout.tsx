@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Open_Sans, Montserrat, Inter, Cairo } from 'next/font/google';
 import Script from 'next/script';
+import { headers } from 'next/headers';
 import './globals.css';
 import { OrganizationSchema } from '@/components/seo/OrganizationSchema';
 import { SoftwareApplicationSchema } from '@/components/seo/SoftwareApplicationSchema';
@@ -90,8 +91,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Read locale from middleware request header for correct server-rendered lang/dir
+  const headersList = headers();
+  const locale = headersList.get('x-locale') || 'en';
+  const dir = locale === 'ar' ? 'rtl' : 'ltr';
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} dir={dir} suppressHydrationWarning>
       <head>
         {/* Preconnect to Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -113,7 +119,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${openSans.variable} ${montserrat.variable} ${inter.variable} ${cairo.variable} font-openSans rtl:font-cairo`}
-        dir="ltr"
+        dir={dir}
         suppressHydrationWarning
       >
         <WebVitals />

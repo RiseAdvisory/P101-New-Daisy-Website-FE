@@ -145,10 +145,14 @@ export async function middleware(request: NextRequest) {
       );
     }
 
-    return setGeoCookie(
-      setLocaleCookie(NextResponse.next(), urlLocale),
-      request,
-    );
+    // Pass locale to server components via request header
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set('x-locale', urlLocale);
+    const response = NextResponse.next({
+      request: { headers: requestHeaders },
+    });
+    response.headers.set('Content-Language', urlLocale);
+    return setGeoCookie(setLocaleCookie(response, urlLocale), request);
   }
 
   // URL does NOT have locale prefix - 301 redirect to add it

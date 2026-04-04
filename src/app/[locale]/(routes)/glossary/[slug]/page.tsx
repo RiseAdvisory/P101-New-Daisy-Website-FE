@@ -6,6 +6,7 @@ import {
   getAllGlossarySlugs,
 } from '@/lib/constants/glossary/glossaryData';
 import { GlossaryPageClient } from './GlossaryPageClient';
+import { SpeakableSchema } from '@/components/seo/SpeakableSchema';
 
 export const dynamicParams = false;
 
@@ -50,5 +51,14 @@ export default function GlossaryPage({
   const entry = getGlossaryEntry(params.slug);
   if (!entry) notFound();
 
-  return <GlossaryPageClient slug={params.slug} />;
+  return (
+    <>
+      <SpeakableSchema
+        title={entry.metaTitle}
+        url={`https://www.jointhedaisy.com/${params.locale}/glossary/${params.slug}`}
+        cssSelectors={['[data-geo-answer]', 'dfn', 'article > p:first-of-type']}
+      />
+      <GlossaryPageClient slug={params.slug} />
+    </>
+  );
 }

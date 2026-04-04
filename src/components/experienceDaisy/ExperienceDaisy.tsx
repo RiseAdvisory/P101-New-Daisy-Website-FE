@@ -36,11 +36,13 @@ export const ExperienceDaisy = ({ pageType = 'customer', ctaLink, ctaText }: Exp
             className="absolute bottom-0 left-0"
             width={200}
             alt=""
+            role="presentation"
             src={leaf}
           />
           <Image
             className="absolute top-0 right-0 -z-1"
             alt=""
+            role="presentation"
             src={stars}
             width={100}
           />

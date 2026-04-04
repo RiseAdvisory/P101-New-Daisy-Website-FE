@@ -52,6 +52,7 @@ export default function ContactPage({ params }: { params: { locale: string } }) 
         title="Contact Us | The Daisy - Beauty Booking Platform"
         description="Get in touch with The Daisy team. Questions about our beauty booking platform, salon partnerships, or customer support?"
         url="https://www.jointhedaisy.com/contact"
+        dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
         items={[{ name: 'Contact', url: 'https://www.jointhedaisy.com/contact' }]}

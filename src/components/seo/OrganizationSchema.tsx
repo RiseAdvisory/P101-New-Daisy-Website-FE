@@ -6,7 +6,13 @@ export function OrganizationSchema() {
     url: 'https://www.jointhedaisy.com',
     logo: 'https://www.jointhedaisy.com/icon-512.png',
     description:
-      'The Daisy is a platform connecting businesses, professionals, and customers for exceptional service experiences.',
+      'The Daisy is an AI-powered beauty and wellness platform connecting businesses, professionals, and customers. Features AI receptionist, smart booking, customer acquisition, payments, and marketing tools for salons, spas, and clinics.',
+    slogan: 'Grow Your Beauty Business with AI',
+    brand: {
+      '@type': 'Brand',
+      name: 'The Daisy',
+      logo: 'https://www.jointhedaisy.com/icon-512.png',
+    },
     sameAs: [
       'https://www.threads.net/@thedaisy.app',
       'https://twitter.com/thedaisy_app',
@@ -21,12 +27,22 @@ export function OrganizationSchema() {
       { '@type': 'Country', name: 'Oman' },
       { '@type': 'Country', name: 'Qatar' },
     ],
-    contactPoint: {
-      '@type': 'ContactPoint',
-      contactType: 'customer service',
-      url: 'https://www.jointhedaisy.com/contact',
-      email: 'hello@jointhedaisy.com',
-    },
+    knowsLanguage: ['en', 'ar'],
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        contactType: 'customer service',
+        url: 'https://www.jointhedaisy.com/contact',
+        email: 'hello@jointhedaisy.com',
+        availableLanguage: ['English', 'Arabic'],
+      },
+      {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        url: 'https://www.jointhedaisy.com/en/start-free-trial/business',
+        availableLanguage: ['English', 'Arabic'],
+      },
+    ],
   };
 
   return (

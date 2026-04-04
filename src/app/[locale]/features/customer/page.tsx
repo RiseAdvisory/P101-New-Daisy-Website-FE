@@ -56,6 +56,7 @@ export default function FeaturesCustomerPage({ params }: { params: { locale: str
         title="Customer Features - Salon Booking & Cashback | The Daisy"
         description="Explore The Daisy customer features: find salons near you, book beauty services, earn cashback rewards, manage appointments."
         url="https://www.jointhedaisy.com/features/customer"
+        dateModified="2026-03-17T00:00:00.000Z"
       />
       <FeaturesCustomerClient lang={params.locale} />
     </>

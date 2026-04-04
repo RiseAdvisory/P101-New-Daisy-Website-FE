@@ -405,3 +405,35 @@ Topics covered: AI intelligence, booking management, communication tools, market
 ### Legal Pages
 - https://www.jointhedaisy.com/en/privacy-policy
 - https://www.jointhedaisy.com/en/terms-conditions
+
+## Frequently Asked Questions
+
+Q: What is The Daisy?
+A: The Daisy is an AI-powered beauty and wellness platform that helps salons, spas, clinics, and freelance professionals grow their business through smart booking, an AI receptionist, 360-degree customer acquisition, and full white-label brand control. Available in English and Arabic.
+
+Q: How much does The Daisy cost?
+A: Business plans start at $50/month ($42/month billed annually) for the Basic plan, $150/month for Growth, and $250/month for the full Business plan. Professionals can start free with the Starter plan. All paid plans include a 14-day free trial. Flat pricing with no per-staff fees.
+
+Q: What makes The Daisy different from other salon software?
+A: Six key differentiators: (1) AI receptionist for 24/7 customer service, (2) 360-degree customer acquisition combining marketplace, cashback, and marketing, (3) full white-label brand control, (4) network effects that improve with more data, (5) all-in-one platform replacing 5+ tools across 8 categories, and (6) bilingual Arabic/English with native GCC support.
+
+Q: Does The Daisy have an AI receptionist?
+A: Yes. The Daisy includes a built-in AI receptionist that handles customer inquiries, appointment booking, and payments 24/7 via voice call and chat, so businesses never miss a booking even outside working hours.
+
+Q: What countries does The Daisy support?
+A: The Daisy serves the GCC region (UAE, Saudi Arabia, Kuwait, Bahrain, Oman, Qatar) and global markets. The platform is fully bilingual in English and Arabic with native RTL support.
+
+Q: Can I switch to The Daisy from Fresha or other salon software?
+A: Yes. The Daisy offers free data migration and assisted onboarding on all Growth and Business plans. See the step-by-step migration guide at https://www.jointhedaisy.com/en/guides/switch-from-fresha
+
+Q: Does The Daisy offer a free trial?
+A: Yes. All paid plans include a 14-day free trial with full access to all features. Professionals can also use the free Starter plan indefinitely for their first 100 bookings.
+
+Q: What types of businesses use The Daisy?
+A: Salons, spas, barbershops, nail salons, med spas, clinics, and freelance beauty professionals. The platform serves business owners who want to grow (not just manage) their beauty business.
+
+Q: Does The Daisy charge per-staff or per-booking fees?
+A: No. The Daisy uses flat monthly pricing with no per-staff surcharges and no per-booking transaction fees. Plans include a set number of user seats (5, 10, or 15) and workspaces.
+
+Q: What features does The Daisy include?
+A: Eight core feature categories: (1) Online Booking & Scheduling, (2) POS & Payments, (3) Client Management/CRM, (4) Staff Management, (5) Marketing & Cashback, (6) Inventory Management, (7) Reporting & Analytics, and (8) AI Capabilities including voice receptionist and predictive analytics.

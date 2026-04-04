@@ -95,6 +95,7 @@ export const TabsFeaturesProfessional: React.FC<
                     <Image
                       src={bgImage}
                       alt=""
+                      role="presentation"
                       className={`${styleLeaf} z-10`}
                     />
                   </div>

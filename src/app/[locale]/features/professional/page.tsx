@@ -56,6 +56,7 @@ export default function FeaturesProfessionalPage({ params }: { params: { locale:
         title="Beauty Professional Features | The Daisy"
         description="Features for beauty professionals: appointment scheduling, client management, earnings tracking, and tools to grow your career."
         url="https://www.jointhedaisy.com/features/professional"
+        dateModified="2026-03-17T00:00:00.000Z"
       />
       <FeaturesProfessionalClient lang={params.locale} />
       <FeatureDeepDiveLinks userType="professional" />

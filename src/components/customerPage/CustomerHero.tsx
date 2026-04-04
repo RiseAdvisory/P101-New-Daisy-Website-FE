@@ -56,18 +56,20 @@ export const CustomerHero = ({
               className="absolute bottom-0 left-0 w-1/2 max-w-[300px]"
               src={leaf}
               alt=""
+              role="presentation"
               width={300}
             />
             <Image
               className="absolute top-[40px] md:top-[60px] right-[30px] md:right-[50px] w-[80px] md:w-[100px]"
               src={stars}
-              alt="stars"
+              alt=""
+              role="presentation"
               width={100}
             />
             <Image
               className="absolute bottom-0 right-[50%] translate-x-1/2 w-1/2 max-w-[300px]"
               src={phone}
-              alt="stars"
+              alt="The Daisy customer app showing service booking"
               width={300}
             />
           </div>

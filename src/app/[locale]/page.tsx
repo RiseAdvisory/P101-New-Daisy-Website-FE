@@ -62,6 +62,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
         title="AI Salon & Spa Management Platform | The Daisy"
         description="AI-powered beauty business platform. Manage bookings, customer acquisition, staff scheduling, payments, and marketing, all in one."
         url="https://www.jointhedaisy.com"
+        dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
         items={[{ name: 'Home', url: 'https://www.jointhedaisy.com' }]}

@@ -10,7 +10,7 @@ export const CardItem = ({ srcImage, title, description }: IPropsCardItem) => {
   return (
     <li className="flex flex-col">
       <div>
-        <Image src={srcImage} alt="" />
+        <Image src={srcImage} alt={title} />
       </div>
       <div>
         <h3>{title}</h3>

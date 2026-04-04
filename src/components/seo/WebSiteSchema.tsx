@@ -6,6 +6,21 @@ export function WebSiteSchema() {
     url: 'https://www.jointhedaisy.com',
     description:
       'AI-powered beauty and wellness platform connecting businesses, professionals, and customers.',
+    inLanguage: ['en', 'ar'],
+    publisher: {
+      '@type': 'Organization',
+      name: 'The Daisy',
+      url: 'https://www.jointhedaisy.com',
+    },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate:
+          'https://www.jointhedaisy.com/en/glossary?q={search_term_string}',
+      },
+      'query-input': 'required name=search_term_string',
+    },
   };
 
   return (

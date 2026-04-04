@@ -43,6 +43,7 @@ export const FeatureProfessionalList = ({
                   <Image
                     src={leaf}
                     alt=""
+                    role="presentation"
                     className="absolute bottom-0 left-0 -z-1"
                     width={150}
                     height={240}

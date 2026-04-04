@@ -55,6 +55,7 @@ export default function TermsConditionsPage() {
         title="Terms & Conditions | The Daisy"
         description="Review The Daisy terms and conditions governing the use of our beauty booking platform."
         url="https://www.jointhedaisy.com/terms-conditions"
+        dateModified="2026-01-01T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
         items={[{ name: 'Terms & Conditions', url: 'https://www.jointhedaisy.com/terms-conditions' }]}
