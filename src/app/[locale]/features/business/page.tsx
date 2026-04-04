@@ -61,6 +61,7 @@ export default function FeaturesBusinessPage({ params }: { params: { locale: str
         title="AI-Powered Salon Business Features | The Daisy"
         description="AI-powered features for salon & spa businesses: smart scheduling, booking, marketing, payments, and team management."
         url="https://www.jointhedaisy.com/features/business"
+        dateModified="2026-03-17T00:00:00.000Z"
       />
       <FeaturesBusinessClient lang={params.locale} />
       <FeatureDeepDiveLinks userType="business" />

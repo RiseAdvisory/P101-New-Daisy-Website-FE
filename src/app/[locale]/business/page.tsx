@@ -70,6 +70,7 @@ export default function BusinessPage({ params }: { params: { locale: string } })
         title="Salon & Spa Business Solutions | The Daisy"
         description="AI-powered beauty business platform. Manage bookings, customer acquisition, staff scheduling, payments, and marketing, all in one."
         url="https://www.jointhedaisy.com/business"
+        dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
         items={[{ name: 'For Business', url: 'https://www.jointhedaisy.com/business' }]}

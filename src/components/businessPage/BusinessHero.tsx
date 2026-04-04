@@ -47,7 +47,7 @@ export const BusinessHero = ({
                 width={2000}
                 height={2000}
                 src={qrCode}
-                alt="qrCode"
+                alt="QR code to download The Daisy business app"
                 className="p-4  w-[180px] h-[150px]"
               />
             </div>
@@ -63,6 +63,7 @@ export const BusinessHero = ({
               className="absolute bottom-0 left-0 w-1/2 max-w-[300px]"
               src={leaf}
               alt=""
+              role="presentation"
               width={300}
               height={300}
               priority
@@ -70,7 +71,8 @@ export const BusinessHero = ({
             <Image
               className="absolute top-[40px] md:top-[60px] right-[30px] md:right-[50px] w-[80px] md:w-[100px]"
               src={stars}
-              alt="stars"
+              alt=""
+              role="presentation"
               width={100}
               height={100}
               priority
@@ -78,7 +80,7 @@ export const BusinessHero = ({
             <Image
               className="absolute bottom-0 right-[50%] translate-x-1/2 w-1/2 max-w-[300px]"
               src={phone}
-              alt="phone"
+              alt="The Daisy business management app on mobile"
               width={300}
               height={500}
               priority

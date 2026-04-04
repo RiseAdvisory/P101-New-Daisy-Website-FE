@@ -91,6 +91,7 @@ export default function StartFreeTrialPage({
         title={metadataByType[trialType].en.title}
         description={metadataByType[trialType].en.description}
         url={`https://www.jointhedaisy.com/start-free-trial/${trialType}`}
+        dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
         items={[

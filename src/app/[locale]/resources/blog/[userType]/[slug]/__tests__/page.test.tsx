@@ -184,6 +184,12 @@ describe('Blog Post Page', () => {
           languages: {
             en: 'https://www.jointhedaisy.com/en/resources/blog/customer/test-blog-post',
             ar: 'https://www.jointhedaisy.com/ar/resources/blog/customer/test-blog-post',
+            'ar-AE': 'https://www.jointhedaisy.com/ar/resources/blog/customer/test-blog-post',
+            'ar-SA': 'https://www.jointhedaisy.com/ar/resources/blog/customer/test-blog-post',
+            'ar-KW': 'https://www.jointhedaisy.com/ar/resources/blog/customer/test-blog-post',
+            'ar-BH': 'https://www.jointhedaisy.com/ar/resources/blog/customer/test-blog-post',
+            'ar-OM': 'https://www.jointhedaisy.com/ar/resources/blog/customer/test-blog-post',
+            'ar-QA': 'https://www.jointhedaisy.com/ar/resources/blog/customer/test-blog-post',
             'x-default': 'https://www.jointhedaisy.com/en/resources/blog/customer/test-blog-post',
           },
         },

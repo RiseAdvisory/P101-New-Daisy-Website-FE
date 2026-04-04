@@ -8,6 +8,7 @@ import {
 } from '@/lib/api/blog';
 import BlogPostContent from './BlogPostContent';
 import BlogPostJsonLd from './BlogPostJsonLd';
+import { SpeakableSchema } from '@/components/seo/SpeakableSchema';
 
 interface PageProps {
   params: {
@@ -86,7 +87,7 @@ export async function generateMetadata({
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
-  const { userType, slug } = params;
+  const { locale, userType, slug } = params;
 
   // Validate userType
   if (!['customer', 'business', 'professional'].includes(userType)) {
@@ -99,10 +100,17 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
+  const metaTitle = post.attributes.metaTitle || post.attributes.title;
+
   return (
     <>
       {/* JSON-LD Structured Data */}
       <BlogPostJsonLd post={post} userType={userType as UserType} />
+      <SpeakableSchema
+        title={metaTitle}
+        url={`https://www.jointhedaisy.com/${locale}/resources/blog/${userType}/${slug}`}
+        cssSelectors={['[data-geo-answer]', 'article > p:first-of-type']}
+      />
 
       {/* Blog Post Content */}
       <BlogPostContent post={post} userType={userType as UserType} />

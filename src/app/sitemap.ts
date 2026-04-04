@@ -13,6 +13,7 @@ const LOCALES = ['en', 'ar'];
 
 /**
  * Helper: for a given path (without locale), generate sitemap entries for all locales.
+ * Includes hreflang cross-references so Google understands locale relationships.
  */
 function localizedEntries(
   path: string,
@@ -27,6 +28,11 @@ function localizedEntries(
     lastModified: opts.lastModified,
     changeFrequency: opts.changeFrequency,
     priority: opts.priority,
+    alternates: {
+      languages: Object.fromEntries(
+        LOCALES.map((l) => [l, `${BASE_URL}/${l}${path}`]),
+      ),
+    },
   }));
 }
 

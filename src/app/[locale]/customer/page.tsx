@@ -58,6 +58,7 @@ export default function CustomerPage() {
         title="Book Beauty & Salon Services | The Daisy"
         description="Book beauty, wellness & salon services with The Daisy. Discover salons near you, earn cashback rewards, manage appointments, and enjoy exclusive promotions."
         url="https://www.jointhedaisy.com/customer"
+        dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
         items={[{ name: 'For Customers', url: 'https://www.jointhedaisy.com/customer' }]}

@@ -54,6 +54,7 @@ export default function PrivacyPolicyPage() {
         title="Privacy Policy | The Daisy"
         description="Read The Daisy privacy policy to understand how we collect, use, and protect your personal information."
         url="https://www.jointhedaisy.com/privacy-policy"
+        dateModified="2026-01-01T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
         items={[{ name: 'Privacy Policy', url: 'https://www.jointhedaisy.com/privacy-policy' }]}

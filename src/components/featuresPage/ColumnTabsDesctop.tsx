@@ -92,6 +92,7 @@ export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
                     <Image
                       src={bgImage}
                       alt=""
+                      role="presentation"
                       className={`${styleLeaf} z-10`}
                     />
                   </div>

@@ -11,11 +11,12 @@ import { usePathname } from 'next/navigation';
 import { useMemo } from 'react';
 import { footerData } from '@/lib/constants/shared/footerData';
 import { t } from '@/lib/constants/i18n';
-import { getLocaleFromPathname, localePath } from '@/lib/utils/locale';
+import { getLocaleFromPathname, localePath, stripLocaleFromPathname } from '@/lib/utils/locale';
 
 export const Footer = () => {
   const fullPath = usePathname();
   const locale = useMemo(() => getLocaleFromPathname(fullPath), [fullPath]);
+  const pathWithoutLocale = useMemo(() => stripLocaleFromPathname(fullPath), [fullPath]);
   const path = fullPath;
   const data = t(footerData, locale);
   const socialLinks = data.socialLinks;
@@ -68,11 +69,31 @@ export const Footer = () => {
         {/* Divider */}
         <div className="my-10 h-px bg-white/10" />
 
-        {/* Social Links */}
+        {/* Language Switcher + Social Links */}
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <p className="text-xs text-white/60 ltr:font-montserrat">
-            &copy; {new Date().getFullYear()} The Daisy. All rights reserved.
-          </p>
+          <div className="flex items-center gap-4">
+            <p className="text-xs text-white/60 ltr:font-montserrat">
+              &copy; {new Date().getFullYear()} The Daisy. All rights reserved.
+            </p>
+            <span className="hidden h-3 w-px bg-white/20 sm:block" />
+            <nav aria-label="Language" className="flex items-center gap-2 text-xs">
+              <Link
+                href={localePath(pathWithoutLocale, 'en')}
+                hrefLang="en"
+                className={`transition-colors hover:text-white ${locale === 'en' ? 'font-semibold text-white' : 'text-white/60'}`}
+              >
+                English
+              </Link>
+              <span className="text-white/30">|</span>
+              <Link
+                href={localePath(pathWithoutLocale, 'ar')}
+                hrefLang="ar"
+                className={`transition-colors hover:text-white ${locale === 'ar' ? 'font-semibold text-white' : 'text-white/60'}`}
+              >
+                العربية
+              </Link>
+            </nav>
+          </div>
           <ul className="flex items-center gap-x-6">
             <li>
               <Link href={socialLinks.facebook_url} target="_blank" rel="noopener noreferrer" aria-label="The Daisy on Facebook">

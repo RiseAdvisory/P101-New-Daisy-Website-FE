@@ -3,6 +3,7 @@ import { localeAlternates } from '@/lib/utils/metadata';
 import { FaqClient } from './FaqClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
+import { SpeakableSchema } from '@/components/seo/SpeakableSchema';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
@@ -52,10 +53,16 @@ export default function FaqPage({ params }: { params: { locale: string } }) {
       <WebPageSchema
         title="FAQ - Beauty Booking Questions | The Daisy"
         description="Find answers to common questions about The Daisy beauty booking platform."
-        url="https://www.jointhedaisy.com/faq"
+        url={`https://www.jointhedaisy.com/${params.locale}/faq`}
+        dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
         items={[{ name: 'FAQ', url: 'https://www.jointhedaisy.com/faq' }]}
+      />
+      <SpeakableSchema
+        title="FAQ - Beauty Booking Questions | The Daisy"
+        url={`https://www.jointhedaisy.com/${params.locale}/faq`}
+        cssSelectors={['[data-geo-answer]', '.faq-answer']}
       />
       <FaqClient />
     </>
