@@ -1,32 +1,36 @@
+const BASE_URL = 'https://www.jointhedaisy.com';
+
 export function FeaturesBreadcrumbSchema({
   pageName,
   pageSlug,
   categoryName,
   categorySlug,
+  locale = 'en',
 }: {
   pageName: string;
   pageSlug: string;
   categoryName?: string;
   categorySlug?: string;
+  locale?: string;
 }) {
   const items = [
     {
       '@type': 'ListItem' as const,
       position: 1,
       name: 'Home',
-      item: 'https://www.jointhedaisy.com',
+      item: `${BASE_URL}/${locale}`,
     },
     {
       '@type': 'ListItem' as const,
       position: 2,
       name: 'Features',
-      item: 'https://www.jointhedaisy.com/features',
+      item: `${BASE_URL}/${locale}/features`,
     },
     {
       '@type': 'ListItem' as const,
       position: 3,
       name: pageName,
-      item: `https://www.jointhedaisy.com/features/${pageSlug}`,
+      item: `${BASE_URL}/${locale}/features/${pageSlug}`,
     },
   ];
 
@@ -35,7 +39,7 @@ export function FeaturesBreadcrumbSchema({
       '@type': 'ListItem' as const,
       position: 4,
       name: categoryName,
-      item: `https://www.jointhedaisy.com/features/${pageSlug}/${categorySlug}`,
+      item: `${BASE_URL}/${locale}/features/${pageSlug}/${categorySlug}`,
     });
   }
 

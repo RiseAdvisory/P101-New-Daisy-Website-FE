@@ -37,7 +37,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function SolutionsIndexPage() {
+export default function SolutionsIndexPage({ params }: { params: { locale: string } }) {
   return (
     <main className="min-h-screen">
       <WebPageSchema
@@ -46,6 +46,7 @@ export default function SolutionsIndexPage() {
         url="https://www.jointhedaisy.com/solutions"
       />
       <PageBreadcrumbSchema
+        locale={params.locale}
         items={[{ name: 'Solutions', url: 'https://www.jointhedaisy.com/solutions' }]}
       />
       {/* Hero */}

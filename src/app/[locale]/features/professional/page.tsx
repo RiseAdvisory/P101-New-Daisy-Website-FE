@@ -51,7 +51,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
 export default function FeaturesProfessionalPage({ params }: { params: { locale: string } }) {
   return (
     <>
-      <FeaturesBreadcrumbSchema pageName="Professional" pageSlug="professional" />
+      <FeaturesBreadcrumbSchema pageName="Professional" pageSlug="professional" locale={params.locale} />
       <WebPageSchema
         title="Beauty Professional Features | The Daisy"
         description="Features for beauty professionals: appointment scheduling, client management, earnings tracking, and tools to grow your career."

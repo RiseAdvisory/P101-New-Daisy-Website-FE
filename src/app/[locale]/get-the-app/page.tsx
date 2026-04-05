@@ -58,6 +58,7 @@ export default function GetTheAppPage() {
         dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
+        locale={locale}
         items={[{ name: 'Get the App', url: 'https://www.jointhedaisy.com/get-the-app' }]}
       />
       <GetTheAppClient lang={locale} />

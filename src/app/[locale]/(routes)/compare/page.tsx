@@ -41,7 +41,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function CompareIndexPage() {
+export default function CompareIndexPage({ params }: { params: { locale: string } }) {
   return (
     <main className="min-h-screen">
       <WebPageSchema
@@ -50,6 +50,7 @@ export default function CompareIndexPage() {
         url="https://www.jointhedaisy.com/compare"
       />
       <PageBreadcrumbSchema
+        locale={params.locale}
         items={[{ name: 'Compare', url: 'https://www.jointhedaisy.com/compare' }]}
       />
       {/* Hero */}

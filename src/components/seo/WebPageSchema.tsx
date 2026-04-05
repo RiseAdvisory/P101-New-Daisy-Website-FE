@@ -3,6 +3,7 @@ interface WebPageSchemaProps {
   description: string;
   url: string;
   dateModified?: string;
+  primaryImage?: string;
 }
 
 export function WebPageSchema({
@@ -10,6 +11,7 @@ export function WebPageSchema({
   description,
   url,
   dateModified,
+  primaryImage,
 }: WebPageSchemaProps) {
   const webPageSchema = {
     '@context': 'https://schema.org',
@@ -18,6 +20,12 @@ export function WebPageSchema({
     description,
     url,
     ...(dateModified && { dateModified }),
+    ...(primaryImage && {
+      primaryImageOfPage: {
+        '@type': 'ImageObject',
+        url: primaryImage,
+      },
+    }),
     isPartOf: {
       '@type': 'WebSite',
       name: 'The Daisy',

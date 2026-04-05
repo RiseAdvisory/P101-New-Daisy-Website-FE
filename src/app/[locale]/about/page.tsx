@@ -3,6 +3,7 @@ import { localeAlternates } from '@/lib/utils/metadata';
 import { AboutClient } from './AboutClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
+import { ProfilePageSchema } from '@/components/seo/ProfilePageSchema';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
@@ -55,8 +56,10 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
         dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
+        locale={params.locale}
         items={[{ name: 'About Us', url: 'https://www.jointhedaisy.com/about' }]}
       />
+      <ProfilePageSchema url={`https://www.jointhedaisy.com/${params.locale}/about`} />
       <AboutClient lang={params.locale} />
     </>
   );

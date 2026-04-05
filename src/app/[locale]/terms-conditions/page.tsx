@@ -58,6 +58,7 @@ export default function TermsConditionsPage() {
         dateModified="2026-01-01T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
+        locale={locale}
         items={[{ name: 'Terms & Conditions', url: 'https://www.jointhedaisy.com/terms-conditions' }]}
       />
       <TermsConditionsClient lang={locale} />

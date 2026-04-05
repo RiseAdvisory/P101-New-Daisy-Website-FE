@@ -38,7 +38,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function InsightsPage() {
+export default function InsightsPage({ params }: { params: { locale: string } }) {
   return (
     <>
       <WebPageSchema
@@ -47,6 +47,7 @@ export default function InsightsPage() {
         url="https://www.jointhedaisy.com/insights"
       />
       <PageBreadcrumbSchema
+        locale={params.locale}
         items={[{ name: 'Insights', url: 'https://www.jointhedaisy.com/insights' }]}
       />
       <InsightsPageClient />

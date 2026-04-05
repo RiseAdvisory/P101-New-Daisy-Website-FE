@@ -51,7 +51,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
 export default function FeaturesCustomerPage({ params }: { params: { locale: string } }) {
   return (
     <>
-      <FeaturesBreadcrumbSchema pageName="Customer" pageSlug="customer" />
+      <FeaturesBreadcrumbSchema pageName="Customer" pageSlug="customer" locale={params.locale} />
       <WebPageSchema
         title="Customer Features - Salon Booking & Cashback | The Daisy"
         description="Explore The Daisy customer features: find salons near you, book beauty services, earn cashback rewards, manage appointments."

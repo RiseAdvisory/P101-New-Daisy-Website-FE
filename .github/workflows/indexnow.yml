@@ -1,0 +1,47 @@
+name: IndexNow Submit
+
+on:
+  # Auto-trigger when content merges to main
+  push:
+    branches: [main]
+    paths:
+      - 'src/lib/constants/**'
+      - 'src/app/sitemap.ts'
+      - 'public/llms*.txt'
+
+  # Manual trigger from GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Vercel deploy to complete
+        run: sleep 300
+
+      - name: Submit URLs to IndexNow
+        run: |
+          SITE_URL="https://www.jointhedaisy.com"
+          KEY="7373a4dbaf3346aa8debb273d62d4187"
+
+          echo "Fetching sitemap..."
+          URLS=$(curl -s "$SITE_URL/sitemap.xml" | grep -oP '<loc>\K[^<]+')
+          COUNT=$(echo "$URLS" | wc -l)
+          echo "Found $COUNT URLs"
+
+          # Build JSON array of URLs
+          URL_JSON=$(echo "$URLS" | jq -R -s 'split("\n") | map(select(length > 0))')
+
+          echo "Submitting to IndexNow..."
+          RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" \
+            -X POST "https://api.indexnow.org/IndexNow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"www.jointhedaisy.com\",\"key\":\"$KEY\",\"keyLocation\":\"$SITE_URL/$KEY.txt\",\"urlList\":$URL_JSON}")
+
+          echo "IndexNow response: $RESPONSE"
+          if [ "$RESPONSE" = "200" ] || [ "$RESPONSE" = "202" ]; then
+            echo "Successfully submitted $COUNT URLs"
+          else
+            echo "Submission failed with status $RESPONSE"
+            exit 1
+          fi

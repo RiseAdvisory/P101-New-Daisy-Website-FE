@@ -75,6 +75,7 @@ export default function SolutionAnglePage({
         url={`${baseUrl}/${params.locale}/solutions/${params.slug}/${params.persona}`}
       />
       <PageBreadcrumbSchema
+        locale={params.locale}
         items={[
           { name: 'Solutions', url: `${baseUrl}/solutions` },
           { name: pageData.hero?.headline || params.slug, url: `${baseUrl}/solutions/${params.slug}` },
