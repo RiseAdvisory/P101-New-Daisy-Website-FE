@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Wait for Vercel deploy to complete
-        run: sleep 300
+        run: sleep 180
 
       - name: Submit URLs to IndexNow
         env:
