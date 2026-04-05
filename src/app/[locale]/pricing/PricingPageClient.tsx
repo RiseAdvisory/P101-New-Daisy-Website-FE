@@ -95,12 +95,12 @@ export const PricingPageClient = ({ persona, lang }: PricingPageClientProps) => 
       {/* Pricing Cards Grid */}
       <div ref={gridCardRef} className="md:scroll-mt-[150px]">
         <GridPricingCard
-          refGridCardRef={gridCardRef}
-          isRescomennded={isRecommended}
+          gridCardRef={gridCardRef}
+          isRecommended={isRecommended}
           activePricingPage={persona}
-          chechedAnnualy={checkedMonth}
-          dataPricing={(currentPricing as never) ?? []}
-          listChangePricing={dataPricing as never}
+          checkedAnnually={checkedMonth}
+          dataPricing={currentPricing ?? []}
+          listChangePricing={dataPricing}
         />
       </div>
 

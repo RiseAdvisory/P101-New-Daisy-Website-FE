@@ -7,6 +7,7 @@ import { OtherOptionPricing } from './OtherOptionPricing';
 import { cn } from '@/lib/utils';
 import { useCalculate } from '@/store/calculateResult';
 import { useCurrentPlan } from '@/store/storeCurrentPlan';
+import { PricingPageContent } from '@/lib/constants/pricing/pricingPageData';
 
 // Navigation path for the "Get started" button
 // Using window.location.href intentionally for full page navigation to Contact page
@@ -139,31 +140,31 @@ export const ItemCardPricing = ({
   price,
   options,
   optionPlus,
-  chechedAnnualy,
+  checkedAnnually,
   priceYear,
   activePricingPage,
-  isRescomennded,
+  showRecommendation,
   textRecomended,
   titlePricing,
   currentPrices,
   currentPricesYear,
-  refGridCardRef,
+  gridCardRef,
 }: {
   title: string;
   subtitle: string;
   description: string;
   price: string;
-  options: any;
+  options: string[];
   optionPlus: string;
-  chechedAnnualy: boolean;
+  checkedAnnually: boolean;
   priceYear: string;
   activePricingPage: string;
-  isRescomennded: boolean;
-  textRecomended: any;
+  showRecommendation: boolean;
+  textRecomended: PricingPageContent | undefined;
   titlePricing: string[];
   currentPrices: string[];
   currentPricesYear: string[];
-  refGridCardRef: any;
+  gridCardRef: React.RefObject<HTMLDivElement>;
 }) => {
   const [showAll, setShowAll] = useState(false);
   const [currentPlanBus, setCurrentPlanBus] = useState('');
@@ -177,7 +178,7 @@ export const ItemCardPricing = ({
     toggles,
     getMinimumRequiredTierIndex,
   } = useCalculate();
-  const currentPrice = !chechedAnnualy ? price : priceYear;
+  const currentPrice = !checkedAnnually ? price : priceYear;
   const isRecommended =
     activePricingPage === 'business'
       ? title === currentPlanBus
@@ -255,19 +256,19 @@ export const ItemCardPricing = ({
   return (
     <>
       <li
-        // ref={isRecommended && isRescomennded ? refGridCardRef : null}
+        // ref={isRecommended && showRecommendation ? gridCardRef : null}
         className={cn(
           'flex bg-white flex-col justify-center items-center text-center first:mt-0 mt-10 md:mt-0 pt-10 md:pt-10 border rounded-[16px] relative overflow-hidden',
           {
             'border-[2px] border-[#A67F6B] shadow-lg shadow-[#A67F6B]/20 scroll-mt-[1000px]':
-              isRecommended && isRescomennded,
+              isRecommended && showRecommendation,
           },
         )}
       >
-        {isRecommended && isRescomennded && (
+        {isRecommended && showRecommendation && (
           <p
             className="absolute top-0 left-0 right-0 text-center text-white bg-[#8B6554] py-1 font-medium"
-            ref={refGridCardRef}
+            ref={gridCardRef}
           >
             {textRecomended?.textRecomended}
           </p>
@@ -292,7 +293,7 @@ export const ItemCardPricing = ({
                   : 'Free'}
                 {currentPrice && currentPrice !== 'Free' && (
                   <span className="text-[14px] font-normal text-[#455150]">
-                    {defaulText?.perPeriod}{chechedAnnualy ? defaulText?.annualy : defaulText?.monthly}
+                    {defaulText?.perPeriod}{checkedAnnually ? defaulText?.annualy : defaulText?.monthly}
                   </span>
                 )}
               </h2>
@@ -301,7 +302,7 @@ export const ItemCardPricing = ({
                   className={cn(
                     'bg-[#E9ECF7] text-[#2543AD] rounded-[16px] px-[7px] py-[3px] hidden text-[12px] leading-[12px] ltr:font-inter font-medium w-fit ml-1 text-nowrap',
                     {
-                      inline: chechedAnnualy,
+                      inline: checkedAnnually,
                     },
                   )}
                 >

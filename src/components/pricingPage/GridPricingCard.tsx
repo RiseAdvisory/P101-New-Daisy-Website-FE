@@ -1,6 +1,9 @@
 'use client';
+import { RefObject } from 'react';
 import { useEffect, useState } from 'react';
 import { ItemCardPricing } from './ItemPricing';
+import { PricingPageContent } from '@/lib/constants/pricing/pricingPageData';
+
 interface PricingData {
   title: string;
   description: string;
@@ -12,21 +15,21 @@ interface PricingData {
 }
 
 interface GridPricingCardProps {
-  listChangePricing?: string[];
-  chechedAnnualy: boolean;
+  listChangePricing?: PricingPageContent;
+  checkedAnnually: boolean;
   activePricingPage: string;
-  isRescomennded: boolean;
+  isRecommended: boolean;
   dataPricing: PricingData[];
-  refGridCardRef: any;
+  gridCardRef: RefObject<HTMLDivElement>;
 }
 
 export const GridPricingCard = ({
   listChangePricing,
-  chechedAnnualy,
+  checkedAnnually,
   activePricingPage,
-  isRescomennded,
+  isRecommended,
   dataPricing = [],
-  refGridCardRef,
+  gridCardRef,
 }: GridPricingCardProps) => {
   const [titlePricing, setTitlePricing] = useState<string[]>([]);
   const [price, setPrice] = useState<string[]>([]);
@@ -48,9 +51,9 @@ export const GridPricingCard = ({
           dataPricing.map((item: any, index: number) => {
             return (
               <ItemCardPricing
-                refGridCardRef={refGridCardRef}
+                gridCardRef={gridCardRef}
                 activePricingPage={activePricingPage}
-                chechedAnnualy={chechedAnnualy}
+                checkedAnnually={checkedAnnually}
                 key={index}
                 description={item.description}
                 price={item.price}
@@ -60,7 +63,7 @@ export const GridPricingCard = ({
                 optionPlus={item.optionPlus}
                 priceYear={item.priceYear}
                 textRecomended={listChangePricing}
-                isRescomennded={isRescomennded}
+                showRecommendation={isRecommended}
                 titlePricing={titlePricing}
                 currentPrices={price}
                 currentPricesYear={priceYearList}
