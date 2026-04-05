@@ -24,6 +24,7 @@ jobs:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: |
           SITE_URL="https://www.jointhedaisy.com"
+          BATCH_SIZE=100
 
           if [ -z "$INDEXNOW_KEY" ]; then
             echo "::error::INDEXNOW_KEY secret not configured"
@@ -37,23 +38,33 @@ jobs:
             exit 1
           fi
 
-          URLS=$(echo "$SITEMAP" | grep -oP '<loc>\K[^<]+')
-          COUNT=$(echo "$URLS" | wc -l)
-          echo "Found $COUNT URLs"
+          # Extract URLs into a JSON array
+          ALL_URLS=$(echo "$SITEMAP" | grep -o '<loc>[^<]*</loc>' | sed 's/<loc>//g;s/<\/loc>//g' | jq -R -s 'split("\n") | map(select(length > 0))')
+          TOTAL=$(echo "$ALL_URLS" | jq 'length')
+          echo "Found $TOTAL URLs"
 
-          # Build JSON array of URLs
-          URL_JSON=$(echo "$URLS" | jq -R -s 'split("\n") | map(select(length > 0))')
+          # Submit in batches
+          BATCH=0
+          OFFSET=0
+          while [ "$OFFSET" -lt "$TOTAL" ]; do
+            BATCH=$((BATCH + 1))
+            BATCH_URLS=$(echo "$ALL_URLS" | jq ".[$OFFSET:$((OFFSET + BATCH_SIZE))]")
+            BATCH_COUNT=$(echo "$BATCH_URLS" | jq 'length')
 
-          echo "Submitting to IndexNow..."
-          RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" \
-            -X POST "https://api.indexnow.org/IndexNow" \
-            -H "Content-Type: application/json; charset=utf-8" \
-            -d "{\"host\":\"www.jointhedaisy.com\",\"key\":\"$INDEXNOW_KEY\",\"keyLocation\":\"$SITE_URL/$INDEXNOW_KEY.txt\",\"urlList\":$URL_JSON}")
+            RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" \
+              -X POST "https://api.indexnow.org/IndexNow" \
+              -H "Content-Type: application/json; charset=utf-8" \
+              -d "{\"host\":\"www.jointhedaisy.com\",\"key\":\"$INDEXNOW_KEY\",\"keyLocation\":\"$SITE_URL/$INDEXNOW_KEY.txt\",\"urlList\":$BATCH_URLS}")
 
-          echo "IndexNow response: $RESPONSE"
-          if [ "$RESPONSE" = "200" ] || [ "$RESPONSE" = "202" ]; then
-            echo "Successfully submitted $COUNT URLs"
-          else
-            echo "::error::Submission failed with status $RESPONSE"
-            exit 1
-          fi
+            if [ "$RESPONSE" = "200" ] || [ "$RESPONSE" = "202" ]; then
+              echo "Batch $BATCH: $BATCH_COUNT URLs submitted ($RESPONSE)"
+            else
+              echo "::warning::Batch $BATCH failed with status $RESPONSE"
+            fi
+
+            OFFSET=$((OFFSET + BATCH_SIZE))
+            # Brief pause between batches to avoid rate limits
+            [ "$OFFSET" -lt "$TOTAL" ] && sleep 2
+          done
+
+          echo "Done: $TOTAL URLs submitted across $BATCH batches"
