@@ -4,45 +4,7 @@
 import { NextRequest } from 'next/server';
 import { GET, POST } from '../route';
 
-// Mock all content slug imports
-jest.mock('@/lib/api/blog', () => ({
-  getAllBlogSlugs: jest.fn().mockResolvedValue([
-    { userType: 'business', slug: 'test-post', publishedAt: '2026-01-01' },
-  ]),
-}));
-
-jest.mock('@/lib/constants/competitors/comparisonPages', () => ({
-  getAllCompareSlugs: jest.fn().mockReturnValue(['daisy-vs-fresha']),
-  getAllAlternativeSlugs: jest.fn().mockReturnValue(['fresha']),
-}));
-
-jest.mock('@/lib/constants/solutions', () => ({
-  getAllSolutionSlugs: jest.fn().mockReturnValue(['salon-management-software']),
-}));
-
-jest.mock('@/lib/constants/glossary/glossaryData', () => ({
-  getAllGlossarySlugs: jest.fn().mockReturnValue(['salon-management-software']),
-}));
-
-jest.mock('@/lib/constants/guides/guideData', () => ({
-  getAllGuideSlugs: jest.fn().mockReturnValue(['reduce-salon-no-shows']),
-}));
-
-jest.mock('@/lib/constants/features/featureDeepDive', () => ({
-  getAllFeatureDeepDiveSlugs: jest.fn().mockReturnValue(['ai-salon-management']),
-}));
-
-jest.mock('@/lib/constants/pillars', () => ({
-  getAllPillarSlugs: jest.fn().mockReturnValue(['salon-management-software']),
-}));
-
-jest.mock('@/lib/constants/solutions/angles', () => ({
-  getAllAngleParams: jest
-    .fn()
-    .mockReturnValue([{ slug: 'ai-receptionist', persona: 'business' }]),
-}));
-
-// Mock global fetch for IndexNow API calls
+// Mock global fetch
 const mockFetch = jest.fn();
 global.fetch = mockFetch;
 
@@ -65,13 +27,39 @@ function makeRequest(
   return new NextRequest(url, init);
 }
 
+const MOCK_SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.jointhedaisy.com/en/business</loc></url>
+  <url><loc>https://www.jointhedaisy.com/en/pricing</loc></url>
+  <url><loc>https://www.jointhedaisy.com/ar/business</loc></url>
+</urlset>`;
+
 describe('/api/indexnow', () => {
   const originalEnv = process.env;
 
   beforeEach(() => {
     jest.clearAllMocks();
-    process.env = { ...originalEnv, INDEXNOW_SECRET: 'test-secret-123' };
-    mockFetch.mockResolvedValue({ status: 200, ok: true, text: () => Promise.resolve('') });
+    process.env = {
+      ...originalEnv,
+      INDEXNOW_SECRET: 'test-secret-123',
+      INDEXNOW_KEY: 'test-key-abc',
+    };
+    // Default: sitemap fetch succeeds, IndexNow API succeeds
+    mockFetch.mockImplementation((url: string) => {
+      if (url.includes('sitemap.xml')) {
+        return Promise.resolve({
+          ok: true,
+          status: 200,
+          text: () => Promise.resolve(MOCK_SITEMAP),
+        });
+      }
+      // IndexNow API
+      return Promise.resolve({
+        ok: true,
+        status: 200,
+        text: () => Promise.resolve(''),
+      });
+    });
   });
 
   afterAll(() => {
@@ -98,6 +86,15 @@ describe('/api/indexnow', () => {
       expect(response.status).toBe(503);
     });
 
+    it('returns 503 if INDEXNOW_KEY is not set', async () => {
+      delete process.env.INDEXNOW_KEY;
+      const req = makeRequest('POST', undefined, {
+        authorization: 'Bearer test-secret-123',
+      });
+      const response = await POST(req);
+      expect(response.status).toBe(503);
+    });
+
     it('returns 401 without auth header', async () => {
       const req = makeRequest('POST');
       const response = await POST(req);
@@ -112,7 +109,7 @@ describe('/api/indexnow', () => {
       expect(response.status).toBe(401);
     });
 
-    it('submits all URLs with valid auth', async () => {
+    it('fetches sitemap and submits all URLs with valid auth', async () => {
       const req = makeRequest('POST', undefined, {
         authorization: 'Bearer test-secret-123',
       });
@@ -121,7 +118,15 @@ describe('/api/indexnow', () => {
 
       expect(response.status).toBe(200);
       expect(data.success).toBe(true);
-      expect(data.submitted).toBeGreaterThan(0);
+      expect(data.submitted).toBe(3);
+
+      // Verify sitemap was fetched
+      expect(mockFetch).toHaveBeenCalledWith(
+        expect.stringContaining('sitemap.xml'),
+        expect.anything(),
+      );
+
+      // Verify IndexNow was called
       expect(mockFetch).toHaveBeenCalledWith(
         'https://api.indexnow.org/IndexNow',
         expect.objectContaining({ method: 'POST' }),
@@ -164,8 +169,9 @@ describe('/api/indexnow', () => {
     });
 
     it('rejects too many URLs', async () => {
-      const urls = Array.from({ length: 10001 }, (_, i) =>
-        `https://www.jointhedaisy.com/en/page-${i}`,
+      const urls = Array.from(
+        { length: 10001 },
+        (_, i) => `https://www.jointhedaisy.com/en/page-${i}`,
       );
       const req = makeRequest(
         'POST',
@@ -196,6 +202,35 @@ describe('/api/indexnow', () => {
 
       expect(response.status).toBe(200);
       expect(data.submitted).toBe(2);
+    });
+
+    it('passes INDEXNOW_KEY to IndexNow API', async () => {
+      const req = makeRequest('POST', undefined, {
+        authorization: 'Bearer test-secret-123',
+      });
+      await POST(req);
+
+      const indexNowCall = mockFetch.mock.calls.find(
+        (call: string[]) => call[0] === 'https://api.indexnow.org/IndexNow',
+      );
+      expect(indexNowCall).toBeDefined();
+      const body = JSON.parse(indexNowCall[1].body);
+      expect(body.key).toBe('test-key-abc');
+    });
+
+    it('handles sitemap fetch failure gracefully', async () => {
+      mockFetch.mockImplementation((url: string) => {
+        if (url.includes('sitemap.xml')) {
+          return Promise.resolve({ ok: false, status: 500 });
+        }
+        return Promise.resolve({ ok: true, status: 200 });
+      });
+
+      const req = makeRequest('POST', undefined, {
+        authorization: 'Bearer test-secret-123',
+      });
+      const response = await POST(req);
+      expect(response.status).toBe(500);
     });
   });
 });

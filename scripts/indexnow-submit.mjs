@@ -4,18 +4,23 @@
  * IndexNow Post-Deploy Script
  *
  * Submits all site URLs to IndexNow after a Vercel deployment.
- * Run manually or add to Vercel project settings as a post-deploy command.
+ * Fetches the live sitemap.xml to get URLs dynamically.
  *
  * Usage:
- *   node scripts/indexnow-submit.mjs
+ *   INDEXNOW_KEY=your-key node scripts/indexnow-submit.mjs
  *
  * Environment:
- *   SITE_URL — Deployed site URL (defaults to https://www.jointhedaisy.com)
- *   INDEXNOW_KEY — API key (defaults to the key in this file)
+ *   INDEXNOW_KEY — Required. IndexNow API key.
+ *   SITE_URL    — Deployed site URL (defaults to https://www.jointhedaisy.com)
  */
 
-const INDEXNOW_KEY = '7373a4dbaf3346aa8debb273d62d4187';
+const INDEXNOW_KEY = process.env.INDEXNOW_KEY;
 const SITE_URL = process.env.SITE_URL || 'https://www.jointhedaisy.com';
+
+if (!INDEXNOW_KEY) {
+  console.error('[IndexNow] INDEXNOW_KEY environment variable is required.');
+  process.exit(1);
+}
 
 async function main() {
   console.log('[IndexNow] Fetching sitemap...');
@@ -46,11 +51,12 @@ async function main() {
     const batch = urls.slice(i, i + batchSize);
     const batchNum = Math.floor(i / batchSize) + 1;
 
+    const host = new URL(SITE_URL).hostname;
     const response = await fetch('https://api.indexnow.org/IndexNow', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json; charset=utf-8' },
       body: JSON.stringify({
-        host: 'www.jointhedaisy.com',
+        host,
         key: INDEXNOW_KEY,
         keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
         urlList: batch,

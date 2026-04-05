@@ -20,12 +20,24 @@ jobs:
         run: sleep 300
 
       - name: Submit URLs to IndexNow
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: |
           SITE_URL="https://www.jointhedaisy.com"
-          KEY="7373a4dbaf3346aa8debb273d62d4187"
+
+          if [ -z "$INDEXNOW_KEY" ]; then
+            echo "::error::INDEXNOW_KEY secret not configured"
+            exit 1
+          fi
 
           echo "Fetching sitemap..."
-          URLS=$(curl -s "$SITE_URL/sitemap.xml" | grep -oP '<loc>\K[^<]+')
+          SITEMAP=$(curl -sf "$SITE_URL/sitemap.xml")
+          if [ $? -ne 0 ]; then
+            echo "::error::Failed to fetch sitemap"
+            exit 1
+          fi
+
+          URLS=$(echo "$SITEMAP" | grep -oP '<loc>\K[^<]+')
           COUNT=$(echo "$URLS" | wc -l)
           echo "Found $COUNT URLs"
 
@@ -36,12 +48,12 @@ jobs:
           RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" \
             -X POST "https://api.indexnow.org/IndexNow" \
             -H "Content-Type: application/json; charset=utf-8" \
-            -d "{\"host\":\"www.jointhedaisy.com\",\"key\":\"$KEY\",\"keyLocation\":\"$SITE_URL/$KEY.txt\",\"urlList\":$URL_JSON}")
+            -d "{\"host\":\"www.jointhedaisy.com\",\"key\":\"$INDEXNOW_KEY\",\"keyLocation\":\"$SITE_URL/$INDEXNOW_KEY.txt\",\"urlList\":$URL_JSON}")
 
           echo "IndexNow response: $RESPONSE"
           if [ "$RESPONSE" = "200" ] || [ "$RESPONSE" = "202" ]; then
             echo "Successfully submitted $COUNT URLs"
           else
-            echo "Submission failed with status $RESPONSE"
+            echo "::error::Submission failed with status $RESPONSE"
             exit 1
           fi
