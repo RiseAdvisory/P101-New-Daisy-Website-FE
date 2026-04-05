@@ -2,6 +2,7 @@ interface Props {
   pageName: string;
   pageSlug: string;
   section: 'compare' | 'alternative' | 'solutions' | 'glossary' | 'guides';
+  locale?: string;
 }
 
 const sectionConfig: Record<
@@ -15,10 +16,13 @@ const sectionConfig: Record<
   guides: { label: 'Guides', path: 'guides' },
 };
 
+const BASE_URL = 'https://www.jointhedaisy.com';
+
 export function ComparisonBreadcrumbSchema({
   pageName,
   pageSlug,
   section,
+  locale = 'en',
 }: Props) {
   const { label, path } = sectionConfig[section];
 
@@ -30,19 +34,19 @@ export function ComparisonBreadcrumbSchema({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://www.jointhedaisy.com',
+        item: `${BASE_URL}/${locale}`,
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: label,
-        item: `https://www.jointhedaisy.com/${path}`,
+        item: `${BASE_URL}/${locale}/${path}`,
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: pageName,
-        item: `https://www.jointhedaisy.com/${path}/${pageSlug}`,
+        item: `${BASE_URL}/${locale}/${path}/${pageSlug}`,
       },
     ],
   };

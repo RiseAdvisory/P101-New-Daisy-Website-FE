@@ -3,6 +3,7 @@ export function WebSiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'The Daisy',
+    alternateName: ['Daisy', 'jointhedaisy', 'jointhedaisy.com'],
     url: 'https://www.jointhedaisy.com',
     description:
       'AI-powered beauty and wellness platform connecting businesses, professionals, and customers.',

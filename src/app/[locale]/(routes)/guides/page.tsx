@@ -37,7 +37,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function GuidesIndex() {
+export default function GuidesIndex({ params }: { params: { locale: string } }) {
   return (
     <main className="min-h-screen bg-white">
       <WebPageSchema
@@ -46,6 +46,7 @@ export default function GuidesIndex() {
         url="https://www.jointhedaisy.com/guides"
       />
       <PageBreadcrumbSchema
+        locale={params.locale}
         items={[{ name: 'Guides', url: 'https://www.jointhedaisy.com/guides' }]}
       />
       <section className="bg-[#F8F5F3] px-4 py-16 md:py-24">

@@ -190,30 +190,19 @@ const WIDGET_CSS = `
   flex: 1;
 }
 
-/* Message base */
+/* Message base — layout container only, no visual styling */
 .dsw-message {
-  padding: 12px 16px;
   max-width: 80%;
-  font-size: 14px;
-  line-height: 1.5;
-  word-wrap: break-word;
   margin-bottom: 4px;
 }
 
-/* Agent message */
+/* Agent message — layout only */
 .dsw-message--agent {
-  background: #FFFFFF;
-  border: 1px solid #E8E9E9;
-  border-radius: 12px 12px 12px 4px;
-  color: #172524;
   align-self: flex-start;
 }
 
-/* User message */
+/* User message — layout only */
 .dsw-message--user {
-  background: #2E4342;
-  color: #FFFFFF;
-  border-radius: 12px 12px 4px 12px;
   align-self: flex-end;
 }
 

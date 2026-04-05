@@ -57,6 +57,7 @@ export default function PrivacyPolicyPage() {
         dateModified="2026-01-01T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
+        locale={locale}
         items={[{ name: 'Privacy Policy', url: 'https://www.jointhedaisy.com/privacy-policy' }]}
       />
       <PrivacyPolicyClient lang={locale} />

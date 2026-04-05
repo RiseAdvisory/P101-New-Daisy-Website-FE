@@ -57,6 +57,7 @@ export default function FaqPage({ params }: { params: { locale: string } }) {
         dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
+        locale={params.locale}
         items={[{ name: 'FAQ', url: 'https://www.jointhedaisy.com/faq' }]}
       />
       <SpeakableSchema

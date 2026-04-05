@@ -65,6 +65,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
         dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
+        locale={locale}
         items={[{ name: 'Home', url: 'https://www.jointhedaisy.com' }]}
       />
       {pageData.hero && (

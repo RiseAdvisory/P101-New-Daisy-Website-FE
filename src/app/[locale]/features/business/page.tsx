@@ -56,7 +56,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
 export default function FeaturesBusinessPage({ params }: { params: { locale: string } }) {
   return (
     <>
-      <FeaturesBreadcrumbSchema pageName="Business" pageSlug="business" />
+      <FeaturesBreadcrumbSchema pageName="Business" pageSlug="business" locale={params.locale} />
       <WebPageSchema
         title="AI-Powered Salon Business Features | The Daisy"
         description="AI-powered features for salon & spa businesses: smart scheduling, booking, marketing, payments, and team management."

@@ -60,8 +60,10 @@ export default function ProfessionalPage({ params }: { params: { locale: string 
         description="Join The Daisy as a beauty professional. Manage your appointments, build your client base, track earnings, and grow your career."
         url="https://www.jointhedaisy.com/professional"
         dateModified="2026-03-17T00:00:00.000Z"
+        primaryImage="/images/og/og-default.jpg"
       />
       <PageBreadcrumbSchema
+        locale={params.locale}
         items={[{ name: 'For Professionals', url: 'https://www.jointhedaisy.com/professional' }]}
       />
       {pageData.hero && (

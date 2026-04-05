@@ -61,6 +61,7 @@ export default function CustomerPage() {
         dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
+        locale={locale}
         items={[{ name: 'For Customers', url: 'https://www.jointhedaisy.com/customer' }]}
       />
       <CustomerClient lang={locale} />

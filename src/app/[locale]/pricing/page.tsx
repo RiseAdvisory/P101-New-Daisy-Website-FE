@@ -54,8 +54,10 @@ export default function PricingPage({ params }: { params: { locale: string } }) 
         description="Flexible pricing plans for salons, spas, and beauty professionals. Choose monthly or annual billing."
         url="https://www.jointhedaisy.com/pricing"
         dateModified="2026-03-17T00:00:00.000Z"
+        primaryImage="/images/og/og-default.jpg"
       />
       <PageBreadcrumbSchema
+        locale={params.locale}
         items={[{ name: 'Pricing', url: 'https://www.jointhedaisy.com/pricing' }]}
       />
       <PricingClient />

@@ -57,7 +57,7 @@ describe('ComparisonBreadcrumbSchema', () => {
     });
     expect(schema.itemListElement[0].name).toBe('Home');
     expect(schema.itemListElement[0].item).toBe(
-      'https://www.jointhedaisy.com'
+      'https://www.jointhedaisy.com/en'
     );
     expect(schema.itemListElement[0].position).toBe(1);
   });
@@ -77,7 +77,7 @@ describe('ComparisonBreadcrumbSchema', () => {
       const secondItem = schema.itemListElement[1];
       expect(secondItem.name).toBe(expectedLabel);
       expect(secondItem.item).toBe(
-        `https://www.jointhedaisy.com${expectedPath}`
+        `https://www.jointhedaisy.com/en${expectedPath}`
       );
       expect(secondItem.position).toBe(2);
     }
@@ -92,7 +92,7 @@ describe('ComparisonBreadcrumbSchema', () => {
     const thirdItem = schema.itemListElement[2];
     expect(thirdItem.name).toBe('Daisy vs Fresha');
     expect(thirdItem.item).toBe(
-      'https://www.jointhedaisy.com/compare/daisy-vs-fresha'
+      'https://www.jointhedaisy.com/en/compare/daisy-vs-fresha'
     );
     expect(thirdItem.position).toBe(3);
   });

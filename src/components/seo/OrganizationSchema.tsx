@@ -1,8 +1,9 @@
 export function OrganizationSchema() {
   const organizationSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': 'OnlineBusiness',
     name: 'The Daisy',
+    alternateName: ['Daisy', 'jointhedaisy'],
     url: 'https://www.jointhedaisy.com',
     logo: 'https://www.jointhedaisy.com/icon-512.png',
     description:
@@ -27,6 +28,7 @@ export function OrganizationSchema() {
       { '@type': 'Country', name: 'Oman' },
       { '@type': 'Country', name: 'Qatar' },
     ],
+    foundingDate: '2024',
     knowsLanguage: ['en', 'ar'],
     contactPoint: [
       {

@@ -37,7 +37,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function GlossaryIndex() {
+export default function GlossaryIndex({ params }: { params: { locale: string } }) {
   return (
     <main className="min-h-screen bg-white">
       <WebPageSchema
@@ -46,6 +46,7 @@ export default function GlossaryIndex() {
         url="https://www.jointhedaisy.com/glossary"
       />
       <PageBreadcrumbSchema
+        locale={params.locale}
         items={[{ name: 'Glossary', url: 'https://www.jointhedaisy.com/glossary' }]}
       />
       <section className="bg-[#F8F5F3] px-4 py-16 md:py-24">
