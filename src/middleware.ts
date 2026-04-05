@@ -133,6 +133,7 @@ export async function middleware(request: NextRequest) {
     const convenienceRedirects: Record<string, string> = {
       '/features': '/features/business',
       '/features/customer': '/features/business',
+      '/pricing': '/pricing/business',
     };
 
     const redirectTo = convenienceRedirects[pathWithoutLocale];

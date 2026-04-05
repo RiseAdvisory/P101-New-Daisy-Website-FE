@@ -156,7 +156,7 @@ describe('Header', () => {
       render(<Header />);
 
       const pricingLink = screen.getByText('Pricing').closest('a');
-      expect(pricingLink).toHaveAttribute('href', '/en/pricing');
+      expect(pricingLink).toHaveAttribute('href', '/en/pricing/business');
 
       const aboutLink = screen.getByText('About Us').closest('a');
       expect(aboutLink).toHaveAttribute('href', '/en/about');
