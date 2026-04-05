@@ -193,7 +193,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           title: 'Basic',
           subTitle: '14-day free trial, no credit card required',
           description:
-            'Just starting out but want to build a solid customer base & brand and while growing their presence as a professional service provider',
+            'For salons and spas just getting started with online booking, client management, and building their brand presence',
           price: '50',
           priceYear: '42',
           optionPlus: '',
@@ -221,7 +221,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           title: 'Growth',
           subTitle: '14-day free trial, no credit card required',
           description:
-            'Ideal for Solo Experienced Professionals that want to provide an exceptional experience to their customers',
+            'For growing businesses ready to accept online payments, automate reminders, and get discovered on the marketplace',
           price: '150',
           priceYear: '128',
           optionPlus: 'Basic',
@@ -244,7 +244,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           title: 'Business',
           subTitle: '14-day free trial, no credit card required',
           description:
-            'Businesses with multiple workspaces or locations that are excellence oriented in service and customer service',
+            'For established businesses with multiple locations needing advanced analytics, data migration, and dedicated onboarding',
           price: '250',
           priceYear: '208',
           optionPlus: 'Growth',
@@ -298,7 +298,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           title: 'Starter',
           subTitle: '14-day free trial, no credit card required',
           description:
-            'Just starting out but want to build a solid customer base & brand and while growing their presence as a professional service provider',
+            'For beauty professionals just starting out who want to manage bookings and build their client base',
           price: '25',
           priceYear: '21',
           optionPlus: '',
@@ -327,7 +327,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           title: 'Professional',
           subTitle: '14-day free trial, no credit card required',
           description:
-            'Ideal for Solo Experienced Professionals that want to provide an exceptional experience to their customers',
+            'For experienced solo professionals who want unlimited bookings, online payments, and marketplace visibility',
           price: '50',
           priceYear: '42',
           optionPlus: 'Starter',
@@ -353,7 +353,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           title: 'Elite',
           subTitle: '14-day free trial, no credit card required',
           description:
-            'Ideal for Solo Experienced Professionals that want to provide an exceptional experience to their customers',
+            'For professionals working across multiple locations or countries who need the full platform with priority support',
           price: '100',
           priceYear: '83',
           optionPlus: 'Professional',
@@ -503,7 +503,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           title: 'أساسي',
           subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
-            'بدأت للتو ولكن تريد بناء قاعدة عملاء قوية وعلامة تجارية مع تنمية حضورك كمقدم خدمة محترف',
+            'للصالونات والمنتجعات التي بدأت للتو في الحجز الإلكتروني وإدارة العملاء وبناء حضور علامتها التجارية',
           price: '50',
           priceYear: '42',
           optionPlus: '',
@@ -531,7 +531,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           title: 'نمو',
           subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
-            'مثالي للمحترفين ذوي الخبرة الذين يرغبون في تقديم تجربة استثنائية لعملائهم',
+            'للأعمال المتنامية المستعدة لقبول المدفوعات الإلكترونية وأتمتة التذكيرات والظهور في السوق',
           price: '150',
           priceYear: '128',
           optionPlus: 'أساسي',
@@ -554,7 +554,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           title: 'عمل',
           subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
-            'للشركات ذات المساحات أو المواقع المتعددة التي تسعى للتميز في الخدمة وخدمة العملاء',
+            'للشركات الراسخة ذات الفروع المتعددة التي تحتاج تحليلات متقدمة ونقل بيانات وإعداد مخصص',
           price: '250',
           priceYear: '208',
           optionPlus: 'نمو',
@@ -606,7 +606,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           title: 'مبتدئ',
           subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
-            'بدأت للتو ولكن تريد بناء قاعدة عملاء قوية وعلامة تجارية مع تنمية حضورك كمقدم خدمة محترف',
+            'لمحترفي التجميل الذين بدأوا للتو ويرغبون في إدارة الحجوزات وبناء قاعدة عملائهم',
           price: '25',
           priceYear: '21',
           optionPlus: '',
@@ -635,7 +635,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           title: 'محترف',
           subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
-            'مثالي للمحترفين ذوي الخبرة الذين يرغبون في تقديم تجربة استثنائية لعملائهم',
+            'للمحترفين ذوي الخبرة الذين يريدون حجوزات غير محدودة ومدفوعات إلكترونية وظهور في السوق',
           price: '50',
           priceYear: '42',
           optionPlus: 'مبتدئ',
@@ -661,7 +661,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           title: 'النخبة',
           subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
-            'مثالي للمحترفين ذوي الخبرة الذين يرغبون في تقديم تجربة استثنائية لعملائهم',
+            'للمحترفين الذين يعملون في مواقع أو دول متعددة ويحتاجون المنصة الكاملة مع دعم ذي أولوية',
           price: '100',
           priceYear: '83',
           optionPlus: 'محترف',
