@@ -139,18 +139,38 @@ async function submitToIndexNow(urls: string[]): Promise<{ status: number; submi
   return { status: lastStatus, submitted: urls.length };
 }
 
+const MAX_CUSTOM_URLS = 10000;
+const ALLOWED_HOST = 'www.jointhedaisy.com';
+
+/**
+ * Validate that a URL belongs to our domain and uses HTTPS.
+ */
+function isValidUrl(url: string): boolean {
+  try {
+    const parsed = new URL(url);
+    return parsed.protocol === 'https:' && parsed.hostname === ALLOWED_HOST;
+  } catch {
+    return false;
+  }
+}
+
 /**
  * POST /api/indexnow — Submit all site URLs to IndexNow.
  * Accepts optional JSON body with { urls: string[] } to submit specific URLs.
  * If no body provided, submits all site URLs.
  *
- * Protected by a simple secret key in the Authorization header.
+ * Requires INDEXNOW_SECRET env var for authentication.
  */
 export async function POST(request: NextRequest) {
-  // Simple auth check — use INDEXNOW_SECRET env var or the API key itself
-  const authHeader = request.headers.get('authorization');
-  const expectedSecret = process.env.INDEXNOW_SECRET || INDEXNOW_KEY;
+  const expectedSecret = process.env.INDEXNOW_SECRET;
+  if (!expectedSecret) {
+    return NextResponse.json(
+      { error: 'INDEXNOW_SECRET not configured' },
+      { status: 503 }
+    );
+  }
 
+  const authHeader = request.headers.get('authorization');
   if (authHeader !== `Bearer ${expectedSecret}`) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
@@ -158,10 +178,24 @@ export async function POST(request: NextRequest) {
   try {
     let urls: string[];
 
-    // Check if specific URLs were provided
     const body = await request.json().catch(() => null);
     if (body?.urls && Array.isArray(body.urls) && body.urls.length > 0) {
-      urls = body.urls;
+      if (body.urls.length > MAX_CUSTOM_URLS) {
+        return NextResponse.json(
+          { error: `Maximum ${MAX_CUSTOM_URLS} URLs per request` },
+          { status: 400 }
+        );
+      }
+      const validUrls = body.urls.filter(
+        (u: unknown): u is string => typeof u === 'string' && isValidUrl(u)
+      );
+      if (validUrls.length === 0) {
+        return NextResponse.json(
+          { error: 'No valid URLs provided. URLs must be HTTPS and belong to www.jointhedaisy.com' },
+          { status: 400 }
+        );
+      }
+      urls = validUrls;
     } else {
       urls = await getAllUrls();
     }
@@ -184,13 +218,8 @@ export async function POST(request: NextRequest) {
 }
 
 /**
- * GET /api/indexnow — Health check / info endpoint.
+ * GET /api/indexnow — Health check endpoint.
  */
 export async function GET() {
-  return NextResponse.json({
-    service: 'IndexNow',
-    key: INDEXNOW_KEY,
-    keyLocation: `${BASE_URL}/${INDEXNOW_KEY}.txt`,
-    endpoint: 'POST /api/indexnow with Authorization: Bearer <secret>',
-  });
+  return NextResponse.json({ service: 'IndexNow', status: 'ready' });
 }
