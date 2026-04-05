@@ -35,10 +35,10 @@ describe('ItemPricing - Navigation to Contact page', () => {
     price: '50',
     options: ['Feature 1', 'Feature 2'],
     optionPlus: '',
-    chechedAnnualy: false,
+    checkedAnnually: false,
     priceYear: '42',
     activePricingPage: 'business',
-    isRescomennded: false,
+    showRecommendation: false,
     textRecomended: {
       textRecomended: 'Recommended',
       textItemPricing: {
@@ -55,7 +55,7 @@ describe('ItemPricing - Navigation to Contact page', () => {
     titlePricing: ['Basic', 'Growth', 'Business'],
     currentPrices: ['50', '150', '250'],
     currentPricesYear: ['42', '128', '208'],
-    refGridCardRef: { current: null },
+    gridCardRef: { current: null },
   };
 
   beforeEach(() => {

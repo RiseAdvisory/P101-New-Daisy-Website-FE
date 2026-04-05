@@ -34,11 +34,15 @@ const ToggleButton = ({ className }: { className?: string }) => {
         localStorage.setItem('activePage', '/business');
       }
 
-      if (pathname.includes('business') && !pathname.includes('features'))
+      if (pathname.includes('business') && !pathname.includes('features') && !pathname.includes('pricing'))
         setActive('/business');
       // Skip customer path check since we're hiding it
-      if (pathname.includes('professional') && !pathname.includes('features'))
+      if (pathname.includes('professional') && !pathname.includes('features') && !pathname.includes('pricing'))
         setActive('/professional');
+
+      // Set active based on pricing sub-page
+      if (pathname.includes('/pricing/business')) setActive('/business');
+      if (pathname.includes('/pricing/professional')) setActive('/professional');
 
       if (pathname.startsWith('/features') && storedPath) {
         const cleanPath = storedPath.replace('/', '');
@@ -54,11 +58,13 @@ const ToggleButton = ({ className }: { className?: string }) => {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      // Detect persona from persona-aware pages and sync toggle
       let currentPath: string | undefined;
-      if (pathname.startsWith('/business')) currentPath = '/business';
-      if (pathname.startsWith('/customer')) currentPath = '/customer';
-      if (pathname.startsWith('/professional')) currentPath = '/professional';
+      if (pathname.includes('professional')) currentPath = '/professional';
+      else if (pathname.includes('business')) currentPath = '/business';
+      else if (pathname.startsWith('/customer')) currentPath = '/business';
 
+      // Only update localStorage on pages that are clearly persona-specific
       if (currentPath) {
         localStorage.setItem('activePage', currentPath);
       }
@@ -80,7 +86,10 @@ const ToggleButton = ({ className }: { className?: string }) => {
     if (typeof window !== 'undefined') {
       localStorage.setItem('activePage', path);
     }
-    if (pathname.includes('/start-free-trial')) {
+    if (pathname.includes('/pricing')) {
+      const persona = path === '/business' ? 'business' : 'professional';
+      router.push(localePath(`/pricing/${persona}`, locale));
+    } else if (pathname.includes('/start-free-trial')) {
       const persona = path === '/business' ? 'business' : 'professional';
       router.push(localePath(`/start-free-trial/${persona}`, locale));
     } else if (pathname.includes('/solutions/')) {

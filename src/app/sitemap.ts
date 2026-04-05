@@ -59,7 +59,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Information pages
   const infoPages = [
     ...localizedEntries('/about', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'monthly', priority: 0.7 }),
-    ...localizedEntries('/pricing', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'weekly', priority: 0.9 }),
+    ...localizedEntries('/pricing/business', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'weekly', priority: 0.9 }),
+    ...localizedEntries('/pricing/professional', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'weekly', priority: 0.9 }),
     ...localizedEntries('/contact', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'monthly', priority: 0.7 }),
     ...localizedEntries('/faq', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'monthly', priority: 0.6 }),
     ...localizedEntries('/careers', { lastModified: STATIC_CONTENT_DATE, changeFrequency: 'monthly', priority: 0.5 }),

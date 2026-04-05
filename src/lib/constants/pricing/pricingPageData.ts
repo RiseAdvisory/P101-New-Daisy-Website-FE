@@ -86,6 +86,11 @@ export interface BtnTextCalculate {
   no: string;
 }
 
+export interface PricingFaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface PricingPageContent {
   title: string;
   switchAnnually: {
@@ -103,6 +108,21 @@ export interface PricingPageContent {
   professional: PricingTypeData;
   enterprise: EnterpriseData;
   resetCalculation: ResetCalculation;
+  crossLinks: {
+    business: { text: string; linkText: string };
+    professional: { text: string; linkText: string };
+  };
+  calculatorSectionTitle: string;
+  calculatorSectionSubtitle: string;
+  faqSectionTitle: string;
+  finalCta: {
+    business: { title: string; button: string };
+    professional: { title: string; button: string };
+  };
+  pricingFaqs: {
+    business: PricingFaqItem[];
+    professional: PricingFaqItem[];
+  };
 }
 
 export const pricingPageData: I18nContent<PricingPageContent> = {
@@ -360,7 +380,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
     enterprise: {
       title: 'Enterprise',
       description:
-        'Multi national businesses that are looking to integrate their systems with a system that overlook all their entities globally',
+        'For multi-location businesses needing custom integrations, dedicated account management, volume discounts, and enterprise SLAs. Let\u2019s build a plan that fits your scale.',
       textButton: 'Contact Us',
     },
     resetCalculation: {
@@ -388,6 +408,33 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       billedMonthly: 'Billed Monthly',
       billedYearly: 'Billed Yearly',
       textStart: 'Get Started',
+    },
+    crossLinks: {
+      business: { text: 'Looking for individual plans?', linkText: 'See Professional pricing \u2192' },
+      professional: { text: 'Looking for team plans?', linkText: 'See Business pricing \u2192' },
+    },
+    calculatorSectionTitle: 'Not sure which plan is right?',
+    calculatorSectionSubtitle: 'Answer a few questions and we\'ll recommend the best plan for you.',
+    faqSectionTitle: 'Pricing Questions',
+    finalCta: {
+      business: { title: 'Ready to grow your salon?', button: 'Start Your 14-Day Free Trial' },
+      professional: { title: 'Ready to grow your career?', button: 'Start Your Free Trial' },
+    },
+    pricingFaqs: {
+      business: [
+        { question: 'What happens after the 14-day free trial?', answer: 'Your account continues on the plan you selected. If you haven\'t added payment details, your account pauses until you do. No surprise charges.' },
+        { question: 'Can I switch plans later?', answer: 'Yes, you can upgrade or downgrade at any time. Changes take effect on your next billing cycle. When upgrading, you get immediate access to the new features.' },
+        { question: 'Are there any setup fees or hidden costs?', answer: 'No setup fees, no hidden costs. The price you see is the price you pay. Additional staff, workspaces, and countries are clearly priced at $10, $25, and $50/month respectively.' },
+        { question: 'What payment methods do you accept?', answer: 'We accept all major credit cards (Visa, Mastercard, American Express) and bank transfers for annual plans. All payments are processed securely through Stripe.' },
+        { question: 'Do you offer discounts for annual billing?', answer: 'Yes, save up to 17% when you switch to annual billing. For example, the Growth plan drops from $150/month to $128/month when billed annually.' },
+      ],
+      professional: [
+        { question: 'Is the Starter plan really free?', answer: 'Yes, the Starter plan is completely free for your first 100 bookings. No credit card required. Once you reach 100 bookings, you can upgrade to the Professional plan to continue with unlimited bookings.' },
+        { question: 'Can I switch plans later?', answer: 'Yes, you can upgrade at any time. Changes take effect immediately and you get instant access to all new features. Downgrading takes effect on your next billing cycle.' },
+        { question: 'What\'s included in assisted onboarding?', answer: 'Our team helps you set up your entire services menu, configure your availability, import your existing client data, and optimise your profile for the marketplace. It\'s like having a personal setup assistant.' },
+        { question: 'Why would I need 2 workspaces?', answer: 'If you work from multiple locations (e.g., a salon chair rental and home visits, or two different salon locations), each location counts as a workspace. The Elite plan supports 2 workspaces and 2 countries.' },
+        { question: 'Do you charge per booking or per transaction?', answer: 'No. Daisy uses flat monthly pricing with no per-booking fees and no transaction fees on payments. Your costs are predictable every month.' },
+      ],
     },
   },
 
@@ -641,7 +688,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
     enterprise: {
       title: 'المؤسسات',
       description:
-        'للشركات الكبيرة ذات المتطلبات الفريدة. أسعار مخصصة ودعم مخصص وحلول مصممة لمؤسستك.',
+        'للشركات متعددة الفروع التي تحتاج تكاملات مخصصة، إدارة حساب مخصصة، خصومات على الحجم، واتفاقيات مستوى خدمة للمؤسسات. دعنا نبني خطة تناسب حجم أعمالك.',
       textButton: 'اتصل بنا',
     },
     resetCalculation: {
@@ -669,6 +716,33 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       billedMonthly: 'يُحاسب شهريًا',
       billedYearly: 'يُحاسب سنويًا',
       textStart: 'ابدأ الآن',
+    },
+    crossLinks: {
+      business: { text: 'تبحث عن خطط فردية؟', linkText: 'عرض أسعار المحترفين \u2190' },
+      professional: { text: 'تبحث عن خطط الفرق؟', linkText: 'عرض أسعار الأعمال \u2190' },
+    },
+    calculatorSectionTitle: 'غير متأكد من الخطة المناسبة؟',
+    calculatorSectionSubtitle: 'أجب عن بعض الأسئلة وسنوصي بأفضل خطة لك.',
+    faqSectionTitle: 'أسئلة عن التسعير',
+    finalCta: {
+      business: { title: 'مستعد لتنمية صالونك؟', button: 'ابدأ تجربتك المجانية لمدة 14 يومًا' },
+      professional: { title: 'مستعد لتنمية مسيرتك المهنية؟', button: 'ابدأ تجربتك المجانية' },
+    },
+    pricingFaqs: {
+      business: [
+        { question: 'ماذا يحدث بعد التجربة المجانية لمدة 14 يومًا؟', answer: 'يستمر حسابك على الخطة التي اخترتها. إذا لم تضف تفاصيل الدفع، يتوقف حسابك مؤقتًا حتى تفعل ذلك. لا رسوم مفاجئة.' },
+        { question: 'هل يمكنني تغيير الخطة لاحقًا؟', answer: 'نعم، يمكنك الترقية أو التخفيض في أي وقت. تسري التغييرات في دورة الفوترة التالية. عند الترقية، تحصل على وصول فوري إلى الميزات الجديدة.' },
+        { question: 'هل هناك رسوم إعداد أو تكاليف مخفية؟', answer: 'لا رسوم إعداد ولا تكاليف مخفية. السعر الذي تراه هو السعر الذي تدفعه. الموظفون الإضافيون ومساحات العمل والدول مسعرة بوضوح بـ 10$ و25$ و50$/شهر على التوالي.' },
+        { question: 'ما طرق الدفع المقبولة؟', answer: 'نقبل جميع بطاقات الائتمان الرئيسية (فيزا، ماستركارد، أمريكان إكسبرس) والتحويلات البنكية للخطط السنوية. تتم جميع المدفوعات بأمان عبر Stripe.' },
+        { question: 'هل تقدمون خصومات على الفوترة السنوية؟', answer: 'نعم، وفر حتى 17% عند التحويل إلى الفوترة السنوية. على سبيل المثال، خطة النمو تنخفض من 150$/شهر إلى 128$/شهر عند الفوترة السنوية.' },
+      ],
+      professional: [
+        { question: 'هل خطة المبتدئ مجانية حقًا؟', answer: 'نعم، خطة المبتدئ مجانية تمامًا لأول 100 حجز. لا حاجة لبطاقة ائتمان. بمجرد وصولك إلى 100 حجز، يمكنك الترقية إلى خطة المحترف للاستمرار بحجوزات غير محدودة.' },
+        { question: 'هل يمكنني تغيير الخطة لاحقًا؟', answer: 'نعم، يمكنك الترقية في أي وقت. تسري التغييرات فورًا وتحصل على وصول فوري لجميع الميزات الجديدة. يسري التخفيض في دورة الفوترة التالية.' },
+        { question: 'ماذا يتضمن الإعداد المُساعد؟', answer: 'يساعدك فريقنا في إعداد قائمة خدماتك بالكامل، وتكوين توفرك، واستيراد بيانات عملائك الحاليين، وتحسين ملفك الشخصي للسوق. إنه مثل وجود مساعد إعداد شخصي.' },
+        { question: 'لماذا أحتاج مساحتي عمل؟', answer: 'إذا كنت تعمل من مواقع متعددة (مثل استئجار كرسي في صالون وزيارات منزلية، أو موقعي صالون مختلفين)، يُحسب كل موقع كمساحة عمل. خطة النخبة تدعم مساحتي عمل ودولتين.' },
+        { question: 'هل تفرضون رسومًا لكل حجز أو لكل معاملة؟', answer: 'لا. تستخدم ديزي تسعيرًا شهريًا ثابتًا بدون رسوم لكل حجز وبدون رسوم معاملات على المدفوعات. تكاليفك متوقعة كل شهر.' },
+      ],
     },
   },
 };

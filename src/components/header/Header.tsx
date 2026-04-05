@@ -57,6 +57,7 @@ export const Header = () => {
   useEffect(() => {
     if (path.includes('resources')) return setActive('/resources');
     if (path.includes('features')) return setActive('/features');
+    if (path.includes('pricing')) return setActive('/pricing');
     const currentPath = headerNavigationList.find((item) => {
       if (
         path === '/customer' ||
@@ -125,13 +126,21 @@ export const Header = () => {
             listHeader.map(
               (item: { title: string; nav: string }, index: number) => {
                 let href = item.nav;
+                const activePersna = currentActivePage?.includes('professional') ? 'professional' : 'business';
 
                 if (shouldHideMenuItem(item.nav, currentActivePage)) {
                   return;
                 }
 
+                // Persona-aware nav links: use the toggle state, not the current URL
                 if (item.title === listHeader?.[0].title) {
-                  href = currentActivePage || '/business';
+                  href = `/${activePersna}`;
+                }
+                if (item.nav === '/pricing') {
+                  href = `/pricing/${activePersna}`;
+                }
+                if (item.nav === '/features') {
+                  href = `/features/${activePersna}`;
                 }
                 if (item.title === listHeader?.[3].title) {
                   return (

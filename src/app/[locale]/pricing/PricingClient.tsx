@@ -93,12 +93,12 @@ export const PricingClient = () => {
       </div>
       <div ref={gridCardRef} className="md:scroll-mt-[150px]">
         <GridPricingCard
-          refGridCardRef={gridCardRef}
-          isRescomennded={isRecommended}
+          gridCardRef={gridCardRef}
+          isRecommended={isRecommended}
           activePricingPage={activePricingPage}
-          chechedAnnualy={checkedMonth}
-          dataPricing={(currentPricing as never) ?? []}
-          listChangePricing={dataPricing as never}
+          checkedAnnually={checkedMonth}
+          dataPricing={currentPricing ?? []}
+          listChangePricing={dataPricing}
         />
       </div>
       {activePricingPage === 'business' && (
