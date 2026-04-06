@@ -109,7 +109,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
         throw new Error('Form submission failed');
       }
 
-      toast.success('Sent successfully!');
+      toast.success(formText?.successMessage || 'Sent successfully!');
       setPhoneNumber('');
       form.reset({
         firstname: '',
@@ -121,7 +121,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
         country_code: '+1',
       });
     } catch {
-      toast.error('Error!');
+      toast.error(formText?.errorMessage || 'Error!');
     } finally {
       setIsSubmit(false);
     }
@@ -353,7 +353,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
           disabled={!acceptConditions || isSubmit}
           className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary ltr:font-montserrat font-semibold hover:text-white md:py-4 md:h-auto"
         >
-          {isSubmit ? 'Sending...' : `${formText?.textButton}`}
+          {isSubmit ? (formText?.loadingText || 'Sending...') : `${formText?.textButton}`}
         </Button>
       </form>
       <ToastContainer />
