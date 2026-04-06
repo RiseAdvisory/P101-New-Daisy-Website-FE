@@ -35,11 +35,13 @@ import { usePathname } from 'next/navigation';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 const formSchema = z.object({
-  firstname: z.string(),
-  lastname: z.string(),
+  firstname: z.string().min(1, 'First name is required.'),
+  lastname: z.string().min(1, 'Last name is required.'),
   email: z.string().email('This is not a valid email.'),
-  content: z.string(),
-  acceptconditions: z.boolean().default(false).optional(),
+  content: z.string().min(1, 'Message is required.'),
+  acceptconditions: z.boolean().refine((value) => value === true, {
+    message: 'Please accept the terms to continue.',
+  }),
 });
 
 export const FormContacts = ({ style }: { style?: string }) => {
@@ -70,40 +72,56 @@ export const FormContacts = ({ style }: { style?: string }) => {
     },
   });
 
+  const acceptConditions = form.watch('acceptconditions');
+
   const onSubmit = async (data: any) => {
-    const completePhoneNumber = country_code + mobile;
+    const completePhoneNumber = `${country_code}${mobile}`;
+    const searchParams =
+      typeof window !== 'undefined'
+        ? new URLSearchParams(window.location.search)
+        : new URLSearchParams();
+
     const formData = {
       ...data,
       mobile: completePhoneNumber,
       country_code,
       type: 'enquiry',
+      source: typeof window !== 'undefined' ? window.location.pathname : '',
+      locale,
+      submittedAt: new Date().toISOString(),
+      utmSource: searchParams.get('utm_source') || '',
+      utmMedium: searchParams.get('utm_medium') || '',
+      utmCampaign: searchParams.get('utm_campaign') || '',
     };
 
     try {
       setIsSubmit(true);
       delete formData.acceptconditions;
-      const response = await fetch(
-        `https://devapp.trythedaisy.com/api/v1/vendor/demo/enquiry`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
+      const response = await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-      );
+        body: JSON.stringify(formData),
+      });
 
       if (!response.ok) {
         throw new Error('Form submission failed');
       }
 
-      const data = await response.json();
-      toast.success('Sent Succesfully!');
-      setPhoneNumber('00000000');
-      form.reset();
+      toast.success(formText?.successMessage || 'Sent successfully!');
+      setPhoneNumber('');
+      form.reset({
+        firstname: '',
+        lastname: '',
+        email: '',
+        content: '',
+        acceptconditions: false,
+        mobile: '',
+        country_code: '+1',
+      });
     } catch {
-      setIsSubmit(false);
-      toast.error('Error!');
+      toast.error(formText?.errorMessage || 'Error!');
     } finally {
       setIsSubmit(false);
     }
@@ -332,10 +350,10 @@ export const FormContacts = ({ style }: { style?: string }) => {
         <Separator className="bg-[#E8E9E9] mt-6 " />
         <Button
           type="submit"
-          disabled={!form.getValues().acceptconditions}
+          disabled={!acceptConditions || isSubmit}
           className="bg-white text-primary border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-primary ltr:font-montserrat font-semibold hover:text-white md:py-4 md:h-auto"
         >
-          {isSubmit ? 'Sending...' : `${formText?.textButton}`}
+          {isSubmit ? (formText?.loadingText || 'Sending...') : `${formText?.textButton}`}
         </Button>
       </form>
       <ToastContainer />

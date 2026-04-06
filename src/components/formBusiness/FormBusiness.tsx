@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import { useEffect, useState, useMemo } from 'react';
-import { Constants } from '@/helpers/oldApi';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -163,20 +162,11 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
     try {
       setIsSubmit(true);
 
-      // Send to both endpoints in parallel
-      const [response] = await Promise.all([
-        fetch(`${Constants.BASE_URL}vendor/demo/enquiry`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData),
-        }),
-        // n8n webhook — fire and forget, don't block on failure
-        fetch('https://ra7eme.app.n8n.cloud/webhook/lead-capture', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(enrichedData),
-        }).catch(() => {}),
-      ]);
+      const response = await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(enrichedData),
+      });
 
       if (!response.ok) {
         throw new Error('Form submission failed');

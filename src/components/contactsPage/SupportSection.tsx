@@ -1,5 +1,6 @@
 'use client';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 import { MessageIcons } from '../../assets/icons/messageIcons/MessageIcons';
 import { PhoneIcon } from '../../assets/icons/phoneIcon/PhoneIcon';
 import { SupportIcon } from '../../assets/icons/supportIcon/SupportIcon';
@@ -20,12 +21,35 @@ const FormContacts = dynamic(
   },
 );
 
-export const SupportSection = ({ contacts = [] }: { contacts: any }) => {
+export const SupportSection = ({
+  contacts = [],
+  locale = 'en',
+}: {
+  contacts: any;
+  locale?: string;
+}) => {
+  const helperTitle =
+    locale === 'ar'
+      ? 'هل تريد عرضًا أو تفاصيل أسعار أو مساعدة في اختيار الخطة المناسبة؟'
+      : 'Want a demo, pricing details, or help choosing the right setup?';
+  const helperDescription =
+    locale === 'ar'
+      ? 'املأ النموذج وسيتواصل معك فريقنا عادة خلال 24 ساعة.'
+      : 'Fill out the form and our team will usually get back to you within 24 hours.';
+  const faqLabel = locale === 'ar' ? 'الأسئلة الشائعة' : 'FAQs';
+  const guidesLabel = locale === 'ar' ? 'الأدلة' : 'Guides';
+
   return (
     <div className="bg-[#F8F5F3] pb-20 ">
       <div className="w-full h-[300px] md:h-[236px] bg-primary " />
-      <FormContacts style="md:-translate-y-[235px] -translate-y-[299px] " />
-      <ul className="flex flex-col justify-center items-center mx-auto px-4 gap-8  md:grid md:grid-cols-3 md:items-start md:-mt-[120px] -mt-[220px]">
+      <div className="mx-4 rounded-xl border border-[#E8E9E9] bg-white p-6 text-center md:mx-auto md:w-[860px] md:-translate-y-[80px] -translate-y-[120px]">
+        <h2 className="text-2xl font-semibold text-[#172524] ltr:font-montserrat">
+          {helperTitle}
+        </h2>
+        <p className="mt-2 text-[#455150]">{helperDescription}</p>
+      </div>
+      <FormContacts style="md:-translate-y-[130px] -translate-y-[170px] " />
+      <ul className="flex flex-col justify-center items-center mx-auto px-4 gap-8 md:grid md:grid-cols-3 md:items-start md:-mt-[20px] -mt-[90px]">
         <li className="flex flex-col justify-center items-center text-center">
           <MessageIcons />
           <h3 className="mt-5 ltr:font-montserrat font-medium text-xl">
@@ -34,9 +58,14 @@ export const SupportSection = ({ contacts = [] }: { contacts: any }) => {
           <p className="mt-1 ltr:font-montserrat text-[#455150] md:px-14">
             {contacts[0]?.subtitle}
           </p>
-          <p className="text-[#8B6554] mt-1 font-semibold leading-6">
-            {contacts[0]?.contact}
-          </p>
+          {contacts[0]?.contact && (
+            <a
+              href={`mailto:${contacts[0].contact}`}
+              className="text-[#8B6554] mt-1 font-semibold leading-6 underline-offset-4 hover:underline"
+            >
+              {contacts[0].contact}
+            </a>
+          )}
         </li>
         <li className="flex flex-col justify-center items-center text-center">
           <PhoneIcon />
@@ -47,9 +76,14 @@ export const SupportSection = ({ contacts = [] }: { contacts: any }) => {
             {contacts[1]?.subtitle}
           </p>
 
-          <p className="text-[#8B6554] mt-1 font-semibold leading-6">
-            {contacts[1]?.contact}
-          </p>
+          {contacts[1]?.contact && (
+            <a
+              href={`tel:${contacts[1].contact.replace(/[^+\d]/g, '')}`}
+              className="text-[#8B6554] mt-1 font-semibold leading-6 underline-offset-4 hover:underline"
+            >
+              {contacts[1].contact}
+            </a>
+          )}
         </li>
         <li className="flex flex-col justify-center items-center text-center">
           <SupportIcon />
@@ -59,6 +93,20 @@ export const SupportSection = ({ contacts = [] }: { contacts: any }) => {
           <p className="mt-1 ltr:font-montserrat text-[#455150] md:px-14">
             {contacts[2]?.subtitle}
           </p>
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+            <Link
+              href={`/${locale}/faq`}
+              className="rounded-lg border border-primary px-4 py-2 text-sm font-semibold text-primary transition hover:bg-primary hover:text-white"
+            >
+              {faqLabel}
+            </Link>
+            <Link
+              href={`/${locale}/guides`}
+              className="rounded-lg border border-primary px-4 py-2 text-sm font-semibold text-primary transition hover:bg-primary hover:text-white"
+            >
+              {guidesLabel}
+            </Link>
+          </div>
         </li>
       </ul>
     </div>
