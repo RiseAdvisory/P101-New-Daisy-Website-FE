@@ -25,6 +25,8 @@
 
 6. **Multilingual (Arabic/English & More)**: Native Arabic support with equal priority -- not a translation layer. Designed for GCC markets with local payment methods, compliance, and support. Additional languages are on the roadmap.
 
+7. **Official Meta Tech Provider**: Daisy is a certified Meta Technology Provider with native WhatsApp Business API and Instagram Messaging API integration. Customer conversations through WhatsApp and Instagram are handled through Meta's official infrastructure, not third-party workarounds.
+
 ## Pricing Plans (Flat Pricing, No Per-Staff Fees)
 
 ### Basic Plan -- $50/month

@@ -32,14 +32,22 @@ export interface AboutPageContent {
   ourValues: string;
   aboutValues: AboutValue[];
   lastBottomBlock: LastBottomBlock;
+
+  // Partnerships
+  partnershipsTitle: string;
+  partnershipsDescription: string;
+
+  // CTA
+  ctaTitle: string;
+  ctaButton: string;
 }
 
 export const aboutPageData: I18nContent<AboutPageContent> = {
   en: {
-    heroTitle: 'WHERE EXCELLENCE MEETS OPPORTUNITY',
+    heroTitle: 'Built by Beauty Industry Insiders to Help You Grow',
     heroSubtitle:
-      'Empowering Premium Service Providers And Giving Customers Unparalleled Beauty & Wellness Experiences',
-    titleScroll: 'Don\'t believe us? Keep reading...',
+      'We know how hard it is to run a salon. The Daisy gives you the AI-powered tools to handle booking, payments, marketing, and customer service in one place.',
+    titleScroll: 'Here\'s what drives us...',
 
     missingTitle: 'Our Mission',
     missingDescription:
@@ -80,13 +88,18 @@ export const aboutPageData: I18nContent<AboutPageContent> = {
       subtitle:
         'We are committed to doing the right thing, always. Integrity guides every decision we make and every relationship we build.',
     },
+    partnershipsTitle: 'Partnerships',
+    partnershipsDescription:
+      'The Daisy is an Official Meta Technology Provider, with native WhatsApp Business API and Instagram Messaging API integration built on Meta\'s verified infrastructure.',
+    ctaTitle: 'Ready to see Daisy in action?',
+    ctaButton: 'Start Your 14-Day Free Trial',
   },
 
   ar: {
-    heroTitle: 'حيث يلتقي التميز بالفرص',
+    heroTitle: 'صُنع بأيدي خبراء صناعة التجميل لمساعدتك على النمو',
     heroSubtitle:
-      'تمكين مقدمي الخدمات المتميزة وتقديم تجارب جمال ورفاهية لا مثيل لها للعملاء',
-    titleScroll: 'لا تصدقنا؟ واصل القراءة...',
+      'نعرف مدى صعوبة إدارة صالون. ذا ديزي تمنحك أدوات ذكية لإدارة الحجوزات والمدفوعات والتسويق وخدمة العملاء في مكان واحد.',
+    titleScroll: 'إليك ما يحركنا...',
 
     missingTitle: 'مهمتنا',
     missingDescription:
@@ -127,5 +140,10 @@ export const aboutPageData: I18nContent<AboutPageContent> = {
       subtitle:
         'نحن ملتزمون بفعل الصواب دائماً. النزاهة توجه كل قرار نتخذه وكل علاقة نبنيها.',
     },
+    partnershipsTitle: 'الشراكات',
+    partnershipsDescription:
+      'ذا ديزي هي مزود تقنية Meta رسمي، مع تكامل أصلي مع واجهات WhatsApp Business API و Instagram Messaging API المبنية على البنية التحتية المعتمدة من Meta.',
+    ctaTitle: 'هل أنت مستعد لتجربة ديزي؟',
+    ctaButton: 'ابدأ تجربتك المجانية لمدة 14 يوم',
   },
 };

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { AnswerBlock } from '@/components/geo/AnswerBlock';
+import { MetaTechBadge } from '@/components/shared/MetaTechBadge';
 
 interface LandingHeroProps {
   categoryLabel: string;
@@ -8,6 +9,8 @@ interface LandingHeroProps {
   ctaText: string;
   ctaLink: string;
   trustLine?: string;
+  showMetaBadge?: boolean;
+  locale?: string;
   answerBlock?: {
     question: string;
     answer: string;
@@ -21,6 +24,8 @@ export const LandingHero = ({
   ctaText,
   ctaLink,
   trustLine,
+  showMetaBadge,
+  locale,
   answerBlock,
 }: LandingHeroProps) => {
   return (
@@ -43,6 +48,11 @@ export const LandingHero = ({
         </Link>
         {trustLine && (
           <p className="text-white/80 text-base mt-4">{trustLine}</p>
+        )}
+        {showMetaBadge && (
+          <div className="mt-6">
+            <MetaTechBadge locale={locale} />
+          </div>
         )}
         {answerBlock && (
           <div
