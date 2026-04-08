@@ -18,7 +18,7 @@ export const ContactClient = ({ lang }: { lang: string }) => {
         styleSection="pb-[100px]"
         secondDescription={data.heroDescription}
       />
-      <SupportSection contacts={data.listContact} />
+      <SupportSection contacts={data.listContact} locale={lang} />
     </div>
   );
 };

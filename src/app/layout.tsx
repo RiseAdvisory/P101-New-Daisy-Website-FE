@@ -32,6 +32,7 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.jointhedaisy.com'),
   title: 'The Daisy - Beauty & Wellness Booking App',
   description:
     'Book beauty, wellness & salon services with cashback rewards. Find salons near you, manage appointments, and enjoy exclusive promotions on hair, nails & spa services.',

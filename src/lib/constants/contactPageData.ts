@@ -14,6 +14,9 @@ export interface ContactFormText {
   content: string;
   submit: string;
   textButton: string;
+  successMessage: string;
+  errorMessage: string;
+  loadingText: string;
 }
 
 export interface ContactFormPlaceholder {
@@ -35,9 +38,9 @@ export interface ContactPageContent {
 export const contactPageData: I18nContent<ContactPageContent> = {
   en: {
     heroTitle: 'CONTACT US',
-    heroSubtitle: 'Get In Touch',
+    heroSubtitle: 'Book a Demo or Get Answers Fast',
     heroDescription:
-      'Got a question or technical issue? Want to send feedback about a feature? Need details about our pricing & plans? Let us know',
+      'Want pricing details, a product walkthrough, or help deciding whether Daisy fits your salon, spa, clinic, or solo business? Send us a message and our team will get back to you.',
     listContact: [
       {
         title: 'Email us:',
@@ -52,8 +55,8 @@ export const contactPageData: I18nContent<ContactPageContent> = {
         contact: '+1 (646) 647-8895',
       },
       {
-        title: 'Support',
-        subtitle: 'Check out helpful resources, FAQs and detailed Guides.',
+        title: 'Self-serve help',
+        subtitle: 'Browse FAQs and guides if you want answers before speaking with us.',
       },
     ],
     textContactForm: {
@@ -65,6 +68,9 @@ export const contactPageData: I18nContent<ContactPageContent> = {
       submit:
         'By submitting this form, you confirm that you have read and agree to The Daisy\'s Terms of Service and Privacy Statement',
       textButton: 'Send Message',
+      successMessage: 'Message sent successfully!',
+      errorMessage: 'Something went wrong. Please try again.',
+      loadingText: 'Sending...',
     },
     placeholderContactForm: {
       name: 'Your First Name here',
@@ -76,9 +82,9 @@ export const contactPageData: I18nContent<ContactPageContent> = {
 
   ar: {
     heroTitle: 'تواصل معنا',
-    heroSubtitle: 'ابقى على تواصل',
+    heroSubtitle: 'احجز عرضًا أو احصل على إجابات بسرعة',
     heroDescription:
-      'هل لديك استفسار أو مشكلة فنية؟ هل تريد إرسال تعليقات حول إحدى المميزات؟ هل تحتاج إلى تفاصيل للاشتراكات والأسعار؟',
+      'هل تريد تفاصيل الأسعار، أو جولة على المنتج، أو مساعدة لتحديد ما إذا كانت ديزي مناسبة لصالونك أو السبا أو العيادة أو نشاطك الفردي؟ أرسل لنا رسالة وسيرد عليك فريقنا.',
     listContact: [
       {
         title: 'راسلنا:',
@@ -93,8 +99,8 @@ export const contactPageData: I18nContent<ContactPageContent> = {
         contact: '+1 (646) 647-8895',
       },
       {
-        title: 'الدعم',
-        subtitle: 'تحقق من الموارد المفيدة والأسئلة الشائعة والأدلة التفصيلية.',
+        title: 'مساعدة ذاتية',
+        subtitle: 'تصفح الأسئلة الشائعة والأدلة إذا أردت إجابات قبل التحدث معنا.',
       },
     ],
     textContactForm: {
@@ -106,6 +112,9 @@ export const contactPageData: I18nContent<ContactPageContent> = {
       submit:
         'أوافق على معالجة البيانات الشخصية وفقاً لسياسة الخصوصية.',
       textButton: 'إرسال الرسالة',
+      successMessage: 'تم إرسال رسالتك بنجاح!',
+      errorMessage: 'حدث خطأ ما. حاول مرة أخرى.',
+      loadingText: 'جارٍ الإرسال...',
     },
     placeholderContactForm: {
       name: 'الاسم الأول هنا',
