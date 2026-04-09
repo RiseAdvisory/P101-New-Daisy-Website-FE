@@ -30,6 +30,15 @@ export function OrganizationSchema() {
     ],
     foundingDate: '2024',
     knowsLanguage: ['en', 'ar'],
+    memberOf: {
+      '@type': 'ProgramMembership',
+      programName: 'Meta Technology Provider Program',
+      hostingOrganization: {
+        '@type': 'Organization',
+        name: 'Meta',
+        url: 'https://www.meta.com',
+      },
+    },
     contactPoint: [
       {
         '@type': 'ContactPoint',

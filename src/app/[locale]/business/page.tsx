@@ -97,6 +97,8 @@ export default function BusinessPage({ params }: { params: { locale: string } })
           ctaText={pageData.hero.ctaText}
           ctaLink={pageData.hero.ctaLink}
           trustLine={pageData.hero.trustLine}
+          showMetaBadge
+          locale={params.locale}
         />
       )}
       <BusinessClient lang={params.locale} />

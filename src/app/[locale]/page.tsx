@@ -76,6 +76,8 @@ export default function Home({ params: { locale } }: { params: { locale: string 
           ctaText={pageData.hero.ctaText}
           ctaLink={pageData.hero.ctaLink}
           trustLine={pageData.hero.trustLine}
+          showMetaBadge
+          locale={locale}
         />
       )}
       <BusinessClient lang={locale} />

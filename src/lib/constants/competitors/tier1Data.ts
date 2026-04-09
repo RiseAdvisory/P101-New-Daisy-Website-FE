@@ -208,6 +208,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     daisyAdvantages: [
       '24/7 AI receptionist vs no AI. Daisy handles calls, bookings, and payments automatically',
+      'Official Meta Tech Provider with native WhatsApp Business API and Instagram integration vs no messaging automation',
       '360° customer acquisition (marketplace + cashback + AI marketing) vs marketplace-only discovery',
       'Native Arabic UI with equal Arabic/English priority vs English-only platform',
       'Full brand control and white-labeling vs Fresha-branded experience',
@@ -498,6 +499,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     daisyAdvantages: [
       'Full AI ecosystem (receptionist + chatbot + smart scheduling + marketing) vs single "Digital Doorman" feature',
+      'Official Meta Tech Provider with native WhatsApp and Instagram messaging vs no messaging platform integration',
       'Native multilingual support (Arabic/English and more) vs English-only platform',
       'Customer acquisition engine with cashback rewards vs basic marketplace listing',
       'Full brand control with white-labeling vs Booksy-branded experience',
@@ -787,6 +789,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     daisyAdvantages: [
       '24/7 AI receptionist that books appointments and processes payments vs basic chatbot that can\'t book',
+      'Official Meta Tech Provider with native WhatsApp and Instagram APIs vs basic SMS notifications',
       'AI-powered customer acquisition engine vs passive marketplace listing',
       'Native Arabic/English support vs English-only',
       'Full white-label brand control vs Vagaro-branded experience',
