@@ -158,7 +158,7 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/choose-salon-management-software.webp',
+          url: '/images/blog/how-to-choose-salon-management-software.webp',
           alternativeText: 'How to choose salon management software',
         },
       },
@@ -167,8 +167,8 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/choose-salon-management-software.webp',
-            formats: { large: { url: '/images/blog/choose-salon-management-software.webp' } },
+            url: '/images/blog/how-to-choose-salon-management-software.webp',
+            formats: { large: { url: '/images/blog/how-to-choose-salon-management-software.webp' } },
           },
         },
       ],
@@ -465,7 +465,7 @@ const switchingSalonSoftwareArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/switching-salon-software.webp',
+          url: '/images/blog/switching-salon-software-migration-guide.webp',
           alternativeText: 'Complete guide to switching salon management software',
         },
       },
@@ -474,8 +474,8 @@ const switchingSalonSoftwareArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/switching-salon-software.webp',
-            formats: { large: { url: '/images/blog/switching-salon-software.webp' } },
+            url: '/images/blog/switching-salon-software-migration-guide.webp',
+            formats: { large: { url: '/images/blog/switching-salon-software-migration-guide.webp' } },
           },
         },
       ],

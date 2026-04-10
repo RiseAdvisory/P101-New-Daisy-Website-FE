@@ -176,7 +176,7 @@ const salonPosSystemsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-pos-systems-guide.webp',
+          url: '/images/blog/salon-pos-systems-2026-guide.webp',
           alternativeText: 'Salon POS system guide for beauty businesses',
         },
       },
@@ -185,8 +185,8 @@ const salonPosSystemsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-pos-systems-guide.webp',
-            formats: { large: { url: '/images/blog/salon-pos-systems-guide.webp' } },
+            url: '/images/blog/salon-pos-systems-2026-guide.webp',
+            formats: { large: { url: '/images/blog/salon-pos-systems-2026-guide.webp' } },
           },
         },
       ],
@@ -356,7 +356,7 @@ const tippingBestPracticesArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/tipping-best-practices-beauty.webp',
+          url: '/images/blog/tipping-best-practices-beauty-businesses.webp',
           alternativeText: 'Tipping best practices for beauty businesses',
         },
       },
@@ -365,8 +365,8 @@ const tippingBestPracticesArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/tipping-best-practices-beauty.webp',
-            formats: { large: { url: '/images/blog/tipping-best-practices-beauty.webp' } },
+            url: '/images/blog/tipping-best-practices-beauty-businesses.webp',
+            formats: { large: { url: '/images/blog/tipping-best-practices-beauty-businesses.webp' } },
           },
         },
       ],

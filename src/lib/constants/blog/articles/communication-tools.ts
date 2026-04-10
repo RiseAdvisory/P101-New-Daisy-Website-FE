@@ -173,7 +173,7 @@ const automatedRemindersArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/automated-reminders-no-shows.webp',
+          url: '/images/blog/automated-reminders-reduce-no-shows.webp',
           alternativeText: 'Automated appointment reminders reducing no-shows for salons',
         },
       },
@@ -182,8 +182,8 @@ const automatedRemindersArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/automated-reminders-no-shows.webp',
-            formats: { large: { url: '/images/blog/automated-reminders-no-shows.webp' } },
+            url: '/images/blog/automated-reminders-reduce-no-shows.webp',
+            formats: { large: { url: '/images/blog/automated-reminders-reduce-no-shows.webp' } },
           },
         },
       ],
@@ -370,7 +370,7 @@ const clientCommunicationTemplatesArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/client-communication-templates.webp',
+          url: '/images/blog/client-communication-templates-beauty.webp',
           alternativeText: 'Client communication templates for beauty businesses',
         },
       },
@@ -379,8 +379,8 @@ const clientCommunicationTemplatesArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/client-communication-templates.webp',
-            formats: { large: { url: '/images/blog/client-communication-templates.webp' } },
+            url: '/images/blog/client-communication-templates-beauty.webp',
+            formats: { large: { url: '/images/blog/client-communication-templates-beauty.webp' } },
           },
         },
       ],

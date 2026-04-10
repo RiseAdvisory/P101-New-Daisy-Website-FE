@@ -211,7 +211,7 @@ const staffSchedulingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-staff-scheduling.webp',
+          url: '/images/blog/salon-staff-scheduling-best-practices.webp',
           alternativeText: 'Salon staff scheduling best practices and templates',
         },
       },
@@ -220,8 +220,8 @@ const staffSchedulingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-staff-scheduling.webp',
-            formats: { large: { url: '/images/blog/salon-staff-scheduling.webp' } },
+            url: '/images/blog/salon-staff-scheduling-best-practices.webp',
+            formats: { large: { url: '/images/blog/salon-staff-scheduling-best-practices.webp' } },
           },
         },
       ],
@@ -471,7 +471,7 @@ const commissionStructuresArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-commission-structures.webp',
+          url: '/images/blog/salon-commission-structures-guide.webp',
           alternativeText: 'Salon commission structure comparison and guide',
         },
       },
@@ -480,8 +480,8 @@ const commissionStructuresArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-commission-structures.webp',
-            formats: { large: { url: '/images/blog/salon-commission-structures.webp' } },
+            url: '/images/blog/salon-commission-structures-guide.webp',
+            formats: { large: { url: '/images/blog/salon-commission-structures-guide.webp' } },
           },
         },
       ],

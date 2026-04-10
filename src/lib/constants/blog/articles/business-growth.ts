@@ -178,7 +178,7 @@ const scalingBeautyBusinessArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/scaling-beauty-business.webp',
+          url: '/images/blog/scaling-beauty-business-multiple-locations.webp',
           alternativeText: 'Scaling a beauty business to multiple salon locations',
         },
       },
@@ -187,8 +187,8 @@ const scalingBeautyBusinessArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/scaling-beauty-business.webp',
-            formats: { large: { url: '/images/blog/scaling-beauty-business.webp' } },
+            url: '/images/blog/scaling-beauty-business-multiple-locations.webp',
+            formats: { large: { url: '/images/blog/scaling-beauty-business-multiple-locations.webp' } },
           },
         },
       ],
@@ -355,7 +355,7 @@ const multiChannelAcquisitionArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/multi-channel-acquisition.webp',
+          url: '/images/blog/multi-channel-acquisition-beauty-business-growth.webp',
           alternativeText: 'Multi-channel client acquisition for beauty business growth',
         },
       },
@@ -364,8 +364,8 @@ const multiChannelAcquisitionArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/multi-channel-acquisition.webp',
-            formats: { large: { url: '/images/blog/multi-channel-acquisition.webp' } },
+            url: '/images/blog/multi-channel-acquisition-beauty-business-growth.webp',
+            formats: { large: { url: '/images/blog/multi-channel-acquisition-beauty-business-growth.webp' } },
           },
         },
       ],

@@ -175,7 +175,7 @@ const salonMetricsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-metrics-weekly-tracking.webp',
+          url: '/images/blog/7-salon-metrics-track-weekly.webp',
           alternativeText: '7 key salon metrics to track every week',
         },
       },
@@ -184,8 +184,8 @@ const salonMetricsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-metrics-weekly-tracking.webp',
-            formats: { large: { url: '/images/blog/salon-metrics-weekly-tracking.webp' } },
+            url: '/images/blog/7-salon-metrics-track-weekly.webp',
+            formats: { large: { url: '/images/blog/7-salon-metrics-track-weekly.webp' } },
           },
         },
       ],
@@ -337,7 +337,7 @@ const clientRetentionReportingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/client-retention-reporting.webp',
+          url: '/images/blog/client-retention-reporting-know-your-numbers.webp',
           alternativeText: 'Client retention reporting dashboard for salons',
         },
       },
@@ -346,8 +346,8 @@ const clientRetentionReportingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/client-retention-reporting.webp',
-            formats: { large: { url: '/images/blog/client-retention-reporting.webp' } },
+            url: '/images/blog/client-retention-reporting-know-your-numbers.webp',
+            formats: { large: { url: '/images/blog/client-retention-reporting-know-your-numbers.webp' } },
           },
         },
       ],
@@ -505,7 +505,7 @@ const revenueForecastingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/revenue-forecasting-beauty-business.webp',
+          url: '/images/blog/revenue-forecasting-beauty-businesses.webp',
           alternativeText: 'Revenue forecasting for beauty businesses',
         },
       },
@@ -514,8 +514,8 @@ const revenueForecastingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/revenue-forecasting-beauty-business.webp',
-            formats: { large: { url: '/images/blog/revenue-forecasting-beauty-business.webp' } },
+            url: '/images/blog/revenue-forecasting-beauty-businesses.webp',
+            formats: { large: { url: '/images/blog/revenue-forecasting-beauty-businesses.webp' } },
           },
         },
       ],
@@ -876,7 +876,7 @@ const dataDrivenSalonsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/data-driven-salons-competition.webp',
+          url: '/images/blog/data-driven-salons-outperform-competition.webp',
           alternativeText: 'How data-driven salons outperform competition',
         },
       },
@@ -885,8 +885,8 @@ const dataDrivenSalonsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/data-driven-salons-competition.webp',
-            formats: { large: { url: '/images/blog/data-driven-salons-competition.webp' } },
+            url: '/images/blog/data-driven-salons-outperform-competition.webp',
+            formats: { large: { url: '/images/blog/data-driven-salons-outperform-competition.webp' } },
           },
         },
       ],

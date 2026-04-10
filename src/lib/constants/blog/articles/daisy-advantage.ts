@@ -136,7 +136,7 @@ const aiReceptionistArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/ai-receptionist-salon.webp',
+          url: '/images/blog/ai-receptionist-salon-customer-service.webp',
           alternativeText: 'AI receptionist handling salon customer service',
         },
       },
@@ -145,8 +145,8 @@ const aiReceptionistArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/ai-receptionist-salon.webp',
-            formats: { large: { url: '/images/blog/ai-receptionist-salon.webp' } },
+            url: '/images/blog/ai-receptionist-salon-customer-service.webp',
+            formats: { large: { url: '/images/blog/ai-receptionist-salon-customer-service.webp' } },
           },
         },
       ],
@@ -270,7 +270,7 @@ const allInOnePlatformArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/all-in-one-salon-platform.webp',
+          url: '/images/blog/all-in-one-salon-platform-vs-point-solutions.webp',
           alternativeText: 'All-in-one salon platform replacing multiple software tools',
         },
       },
@@ -279,8 +279,8 @@ const allInOnePlatformArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/all-in-one-salon-platform.webp',
-            formats: { large: { url: '/images/blog/all-in-one-salon-platform.webp' } },
+            url: '/images/blog/all-in-one-salon-platform-vs-point-solutions.webp',
+            formats: { large: { url: '/images/blog/all-in-one-salon-platform-vs-point-solutions.webp' } },
           },
         },
       ],

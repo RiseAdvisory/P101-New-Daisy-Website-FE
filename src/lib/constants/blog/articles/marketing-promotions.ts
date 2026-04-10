@@ -178,7 +178,7 @@ const salonLoyaltyProgramsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-loyalty-programs.webp',
+          url: '/images/blog/complete-guide-salon-loyalty-programs.webp',
           alternativeText: 'Complete guide to salon loyalty programs',
         },
       },
@@ -187,8 +187,8 @@ const salonLoyaltyProgramsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-loyalty-programs.webp',
-            formats: { large: { url: '/images/blog/salon-loyalty-programs.webp' } },
+            url: '/images/blog/complete-guide-salon-loyalty-programs.webp',
+            formats: { large: { url: '/images/blog/complete-guide-salon-loyalty-programs.webp' } },
           },
         },
       ],
@@ -361,7 +361,7 @@ const salonReferralProgramsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-referral-programs.webp',
+          url: '/images/blog/salon-referral-programs-that-work.webp',
           alternativeText: 'Salon referral programs that actually work',
         },
       },
@@ -370,8 +370,8 @@ const salonReferralProgramsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-referral-programs.webp',
-            formats: { large: { url: '/images/blog/salon-referral-programs.webp' } },
+            url: '/images/blog/salon-referral-programs-that-work.webp',
+            formats: { large: { url: '/images/blog/salon-referral-programs-that-work.webp' } },
           },
         },
       ],

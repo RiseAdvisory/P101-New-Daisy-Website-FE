@@ -135,7 +135,7 @@ const aiSchedulingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/ai-salon-management.webp',
+          url: '/images/blog/ai-scheduling-saves-salon-owners-time.webp',
           alternativeText: 'AI scheduling saving salon owners time',
         },
       },
@@ -144,8 +144,8 @@ const aiSchedulingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/ai-salon-management.webp',
-            formats: { large: { url: '/images/blog/ai-salon-management.webp' } },
+            url: '/images/blog/ai-scheduling-saves-salon-owners-time.webp',
+            formats: { large: { url: '/images/blog/ai-scheduling-saves-salon-owners-time.webp' } },
           },
         },
       ],
@@ -257,7 +257,7 @@ const predictiveAnalyticsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/ai-salon-management.webp',
+          url: '/images/blog/predictive-analytics-salons-beginners-guide.webp',
           alternativeText: 'Predictive analytics for salon management',
         },
       },
@@ -266,8 +266,8 @@ const predictiveAnalyticsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/ai-salon-management.webp',
-            formats: { large: { url: '/images/blog/ai-salon-management.webp' } },
+            url: '/images/blog/predictive-analytics-salons-beginners-guide.webp',
+            formats: { large: { url: '/images/blog/predictive-analytics-salons-beginners-guide.webp' } },
           },
         },
       ],
@@ -484,7 +484,7 @@ const aiToolsProfessionalArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/ai-salon-management.webp',
+          url: '/images/blog/ai-tools-independent-beauty-professional.webp',
           alternativeText: 'AI tools for independent beauty professionals',
         },
       },
@@ -493,8 +493,8 @@ const aiToolsProfessionalArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/ai-salon-management.webp',
-            formats: { large: { url: '/images/blog/ai-salon-management.webp' } },
+            url: '/images/blog/ai-tools-independent-beauty-professional.webp',
+            formats: { large: { url: '/images/blog/ai-tools-independent-beauty-professional.webp' } },
           },
         },
       ],

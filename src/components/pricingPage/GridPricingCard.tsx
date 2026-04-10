@@ -62,6 +62,7 @@ export const GridPricingCard = ({
                 options={item.options}
                 optionPlus={item.optionPlus}
                 priceYear={item.priceYear}
+                badge={item.badge}
                 textRecomended={listChangePricing}
                 showRecommendation={isRecommended}
                 titlePricing={titlePricing}
