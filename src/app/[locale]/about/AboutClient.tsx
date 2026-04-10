@@ -29,18 +29,15 @@ export const AboutClient = ({ lang }: { lang: string }) => {
       <OurValue heroAbout={data} />
 
       {/* Partnerships Section */}
-      <div className="bg-[#F8F5F3] px-4 py-16">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-[#172524] font-semibold text-[28px] md:text-[36px] leading-tight mb-4">
+      <div className="px-4 py-16">
+        <div className="max-w-3xl mx-auto text-center bg-primary rounded-[16px] px-6 py-12 md:px-12">
+          <h2 className="text-white font-semibold text-[28px] md:text-[36px] leading-tight mb-4">
             {data.partnershipsTitle}
           </h2>
-          <p className="text-[#455150] text-lg leading-relaxed ltr:font-montserrat mb-6">
+          <p className="text-[#D5D9D9] text-lg leading-relaxed ltr:font-montserrat mb-6">
             {data.partnershipsDescription}
           </p>
-          <MetaTechBadge
-            locale={lang}
-            className="border-[#2E4342]/20 bg-[#2E4342]/5 text-[#2E4342]"
-          />
+          <MetaTechBadge locale={lang} />
         </div>
       </div>
 

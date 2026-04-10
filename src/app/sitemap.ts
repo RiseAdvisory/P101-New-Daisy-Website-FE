@@ -79,7 +79,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const legalPages = [
     ...localizedEntries('/privacy-policy', { lastModified: LEGAL_DATE, changeFrequency: 'yearly', priority: 0.3 }),
     ...localizedEntries('/terms-conditions', { lastModified: LEGAL_DATE, changeFrequency: 'yearly', priority: 0.3 }),
-    ...localizedEntries('/resources/legal', { lastModified: LEGAL_DATE, changeFrequency: 'yearly', priority: 0.3 }),
+    // /resources/legal excluded — redirects (307) and wastes crawl budget
   ];
 
   // Dynamically fetch blog posts

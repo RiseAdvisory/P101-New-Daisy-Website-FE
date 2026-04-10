@@ -74,6 +74,8 @@ export default function ProfessionalPage({ params }: { params: { locale: string 
           ctaText={pageData.hero.ctaText}
           ctaLink={pageData.hero.ctaLink}
           trustLine={pageData.hero.trustLine}
+          showMetaBadge
+          locale={params.locale}
         />
       )}
       <ProfessionalClient lang={params.locale} />
