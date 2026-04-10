@@ -134,6 +134,9 @@ export async function middleware(request: NextRequest) {
       '/features': '/features/business',
       '/features/customer': '/features/business',
       '/pricing': '/pricing/business',
+      '/customer': '/business',
+      '/resources': '/resources/blog-post',
+      '/resources/blog': '/resources/blog-post',
     };
 
     const redirectTo = convenienceRedirects[pathWithoutLocale];
@@ -160,7 +163,18 @@ export async function middleware(request: NextRequest) {
   const locale = getPreferredLocale(request);
   const newUrl = request.nextUrl.clone();
 
-  newUrl.pathname = `/${locale}${pathname}`;
+  // Apply convenience redirects for non-locale paths to avoid multi-hop chains
+  // e.g. /pricing → /en/pricing/business (1 hop instead of /en/pricing → /en/pricing/business)
+  const shortcutRedirects: Record<string, string> = {
+    '/pricing': '/pricing/business',
+    '/features': '/features/business',
+    '/features/customer': '/features/business',
+    '/customer': '/business',
+    '/resources': '/resources/blog-post',
+    '/resources/blog': '/resources/blog-post',
+  };
+  const shortcut = shortcutRedirects[pathname];
+  newUrl.pathname = `/${locale}${shortcut || pathname}`;
 
   return setGeoCookie(
     setLocaleCookie(NextResponse.redirect(newUrl, 301), locale),
