@@ -111,7 +111,7 @@ const getTogglesArray = (calculate: any): ToggleItem[] => {
   return legacyToggles;
 };
 
-export const Calculater = ({
+export const Calculator = ({
   homeService,
   setHomeService,
   onboarding,

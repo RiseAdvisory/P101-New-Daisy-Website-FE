@@ -33,7 +33,7 @@ jest.mock('@/components/experienceDaisy/ExperienceDaisy', () => ({
   ExperienceDaisy: () => <div data-testid="experience-daisy">Experience</div>,
 }));
 
-jest.mock('@/components/joinTheDaysi/JoinTheDaysi', () => ({
+jest.mock('@/components/joinTheDaisy/JoinTheDaisy', () => ({
   JoinTheDaisy: () => <div data-testid="join-daisy">Join</div>,
 }));
 

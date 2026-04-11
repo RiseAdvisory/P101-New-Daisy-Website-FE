@@ -2,7 +2,7 @@
 import { ArrowUp } from 'lucide-react';
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
 
-export const PrivacyPoliceList = ({
+export const PrivacyPolicyList = ({
   setScroll,
   dataSection,
 }: {

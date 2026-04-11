@@ -30,7 +30,7 @@ const ExperienceDaisy = dynamic(
 );
 const JoinTheDaisy = dynamic(
   () =>
-    import('@/components/joinTheDaysi/JoinTheDaysi').then(
+    import('@/components/joinTheDaisy/JoinTheDaisy').then(
       (mod) => mod.JoinTheDaisy,
     ),
 );

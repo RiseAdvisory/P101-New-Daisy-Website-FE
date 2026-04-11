@@ -1,6 +1,6 @@
 import Jesica from '../../assets/images/WellnessTrends.png';
 import Spotlight from '../../assets/images/spotlight-feature-highlight.png';
-import Incorporatinf from '../../assets/images/business-incorporation-illustration.png';
+import Incorporating from '../../assets/images/business-incorporation-illustration.png';
 import SelfCare from '../../assets/images/self-care-wellness.png';
 import Benefits from '../../assets/images/Benefits.png';
 import StressFree from '../../assets/images/StressFree.png';
@@ -32,7 +32,7 @@ export const ListBlogPosts = [
     iconOwner: iconOwn,
   },
   {
-    image: Incorporatinf,
+    image: Incorporating,
     tags: {
       wellness: 'Wellness',
       hair: 'Hair',

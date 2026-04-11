@@ -1,7 +1,7 @@
 import Bonnie from '../../assets/images/Bonnie.png';
 import Roberta from '../../assets/images/Roberta.png';
 import Neil from '../../assets/images/Neil.png';
-import Micheal from '../../assets/images/Michael.png';
+import Michael from '../../assets/images/Michael.png';
 import Thomas from '../../assets/images/Thomas.png';
 import Robert from '../../assets/images/testimonial-robert-headshot.png';
 import Joseph from '../../assets/images/Joseph.png';
@@ -26,7 +26,7 @@ export const testimonialsList = [
       "I recently got my hands on Flowbite Pro, and holy crap, I'm speechless with how easy this was to integrate within my application. Most templates are a pain, code is scattered, and near impossible to theme.",
   },
   {
-    text: 'Hudge workflow and variants',
+    text: 'Huge workflow and variants',
     author: 'Neil Sims',
     role: 'Web developer @themesberg',
     image: Neil,
@@ -35,9 +35,9 @@ export const testimonialsList = [
   },
   {
     text: 'Advanced features for designers',
-    author: 'Micheal Gough',
+    author: 'Michael Gough',
     role: 'Web developer @themesberg',
-    image: Micheal,
+    image: Michael,
     description:
       'FlowBite provides a robust set of design tokens and components based on the popular Tailwind CSS framework. From the most used UI components like forms and navigation bars to the whole app screens designed both for desktop and mobile, this UI kit provides a solid foundation for any project.',
   },

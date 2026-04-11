@@ -8,11 +8,11 @@ import { useChangePage } from '@/store/currentPage';
 export const TogglePricing = ({
   className,
   setCurrentPricing,
-  toogleName,
+  toggleName,
 }: {
   className?: string;
   setCurrentPricing: any;
-  toogleName: any;
+  toggleName: any;
 }) => {
   const { page } = useChangePage();
 
@@ -40,8 +40,8 @@ export const TogglePricing = ({
         className,
       )}
     >
-      {toogleName &&
-        toogleName.map((option: any) => (
+      {toggleName &&
+        toggleName.map((option: any) => (
           <button
             // href={`${option.path.toLowerCase()}`}
             onClickCapture={() => setActive(option.path)}

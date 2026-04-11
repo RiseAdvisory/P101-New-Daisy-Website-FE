@@ -1,9 +1,9 @@
 'use client';
 import { useMemo } from 'react';
-import { AboutPosts } from '@/components/blogPage/blogPosts/AbouPosts';
+import { AboutPosts } from '@/components/blogPage/blogPosts/AboutPosts';
 import { CreatePerfect } from '@/components/blogPage/blogPosts/CreatePerfect';
 import { HeroBlogPage } from '@/components/blogPage/blogPosts/HeroBlogId';
-import { SimiliarTopick } from '@/components/blogPage/blogPosts/SimiliarTopics';
+import { SimilarTopics } from '@/components/blogPage/blogPosts/SimilarTopics';
 import { usePostStore } from '@/store/post';
 import { redirect, usePathname } from 'next/navigation';
 import { blogCTAData } from '@/lib/constants/blog/blogData';
@@ -31,7 +31,7 @@ export const LegalClient = () => {
         textDownload={ctaData.textDownload}
         textCreate={ctaData.textCreate}
       />
-      <SimiliarTopick titleSimilar={ctaData.titleSimilar} />
+      <SimilarTopics titleSimilar={ctaData.titleSimilar} />
     </div>
   );
 };

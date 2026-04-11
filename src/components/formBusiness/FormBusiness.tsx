@@ -22,7 +22,7 @@ import {
   SelectItem,
 } from '@/components/ui/select';
 import Separator from '../separator/Separator';
-import { ToggleButtonForm } from './ToogleForm';
+import { ToggleButtonForm } from './ToggleForm';
 import { countries } from 'country-data';
 import { staticCountryCodes } from '@/lib/constants/shared/countryCodes';
 import { useLoadingStore } from '@/store/loading';

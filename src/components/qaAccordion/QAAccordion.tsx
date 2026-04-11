@@ -18,7 +18,7 @@ interface QAItem {
 interface QAAccordionProps {
   value: string | number;
   item: QAItem;
-  stylesAcoordion?: string;
+  stylesAccordion?: string;
   stylesAccordionItem?: string;
   sectionFQ?: boolean;
 }
@@ -26,14 +26,14 @@ interface QAAccordionProps {
 export const QAAccordion = ({
   value,
   item,
-  stylesAcoordion,
+  stylesAccordion,
   stylesAccordionItem,
   sectionFQ,
 }: QAAccordionProps) => {
   return (
     <Accordion
       type="multiple"
-      className={`w-full bg-white rounded-[16px] space-x-4 mt-4 border ${stylesAcoordion} `}
+      className={`w-full bg-white rounded-[16px] space-x-4 mt-4 border ${stylesAccordion} `}
     >
       <AccordionItem
         value={`item-${value}`}

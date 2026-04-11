@@ -81,7 +81,7 @@ jest.mock('@/components/mobileMenu/mobileMenu', () => ({
   MobileMenu: () => <div data-testid="mobile-menu">Mobile Menu</div>,
 }));
 
-jest.mock('@/components/toogleHeader/ToogleHeader', () => ({
+jest.mock('@/components/toggleHeader/ToggleHeader', () => ({
   __esModule: true,
   default: () => <div data-testid="toggle-header">Toggle</div>,
 }));

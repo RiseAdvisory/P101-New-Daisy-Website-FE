@@ -14,8 +14,8 @@ export interface ToggleOption {
 export interface HeaderData {
   getTheApp: string;
   headerNavList: NavItem[];
-  optionsToogle: ToggleOption[];
-  optionsTooglseFeatures: ToggleOption[];
+  optionsToggle: ToggleOption[];
+  optionsToggleFeatures: ToggleOption[];
   listLanguage: ToggleOption[];
   mobileNavList: NavItem[];
   bredCrumbTitle: string;
@@ -33,12 +33,12 @@ export const headerData: I18nContent<HeaderData> = {
       { title: 'About Us', nav: '/about' },
       { title: 'Contact', nav: '/contact' },
     ],
-    optionsToogle: [
+    optionsToggle: [
       { label: 'Customer', path: '/customer' },
       { label: 'Business', path: '/business' },
       { label: 'Professional', path: '/professional' },
     ],
-    optionsTooglseFeatures: [
+    optionsToggleFeatures: [
       { label: 'Customer', path: '/features/customer' },
       { label: 'Business', path: '/features/business' },
       { label: 'Professional', path: '/features/professional' },
@@ -94,12 +94,12 @@ export const headerData: I18nContent<HeaderData> = {
       { title: 'نبذه عنا', nav: '/about' },
       { title: 'تواصل', nav: '/contact' },
     ],
-    optionsToogle: [
+    optionsToggle: [
       { label: 'عميل', path: '/customer' },
       { label: 'شركة', path: '/business' },
       { label: 'محترف', path: '/professional' },
     ],
-    optionsTooglseFeatures: [
+    optionsToggleFeatures: [
       { label: 'عميل', path: '/features/customer' },
       { label: 'شركة', path: '/features/business' },
       { label: 'محترف', path: '/features/professional' },

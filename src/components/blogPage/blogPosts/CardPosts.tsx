@@ -79,10 +79,10 @@ export const CardPosts = ({
                 <div className="px-6 py-4 mt-6">
                   <div className="flex justify-start gap-2 text-sm">
                     <span className="px-3 py-1 text-[#2543AD] bg-[#E9ECF7] rounded-sm">
-                      {item.attributes.tags?.wellness}
+                      {item.attributes.tags?.category}
                     </span>
                     <span className="px-3 py-1 text-[#14736F] bg-[#E7F1F1] rounded-sm">
-                      {item.attributes.tags?.hair}
+                      {item.attributes.tags?.topic}
                     </span>
                   </div>
                   <h3 className="mt-2 text-lg ltr:font-montserrat font-semibold">

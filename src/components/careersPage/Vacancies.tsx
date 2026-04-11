@@ -1,7 +1,7 @@
 'use client';
 import { DoteIcon } from '@/assets/icons/doteIcon/DoteIcon';
 import { Button } from '../ui/button';
-import { AccordionVacancies } from './Acoordion';
+import { AccordionVacancies } from './Accordion';
 import { ModalCV } from './ModalCV';
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';

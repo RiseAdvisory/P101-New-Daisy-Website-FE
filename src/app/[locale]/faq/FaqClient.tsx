@@ -78,7 +78,7 @@ export const FaqClient = () => {
       <QASection
         pageType={capitalizeFirstLetter(currentPage)}
         styles="!bg-primary !pt-10"
-        stylesAcoordion="!bg-primaryBtn text-white border-none"
+        stylesAccordion="!bg-primaryBtn text-white border-none"
         titleHidden={true}
         blockTop="!mt-0"
         stylesAccordionItem="data-[state=open]:bg-white data-[state=open]:text-primary"

@@ -11,6 +11,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { WebVitals } from '@/components/performance/WebVitals';
 import { ServiceWorkerRegistration } from '@/components/performance/ServiceWorkerRegistration';
 import { DaisyWidgetStyles } from '@/components/supportWidget/DaisyWidgetStyles';
+import { ClarityProvider } from '@/components/clarity/ClarityProvider';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -128,6 +129,9 @@ export default function RootLayout({
         <main>{children}</main>
         <Analytics />
         <SpeedInsights />
+        {process.env.NEXT_PUBLIC_CLARITY_ID && (
+          <ClarityProvider clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />
+        )}
         <DaisyWidgetStyles />
         <Script
           id="daisy-support-widget-js"

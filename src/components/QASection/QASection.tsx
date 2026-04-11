@@ -14,7 +14,7 @@ interface FallbackFaq {
 export const QASection = ({
   pageType = 'Customer',
   styles,
-  stylesAcoordion,
+  stylesAccordion,
   stylesAccordionItem,
   titleHidden,
   blockTop,
@@ -24,7 +24,7 @@ export const QASection = ({
 }: {
   pageType: any;
   styles?: string;
-  stylesAcoordion?: string;
+  stylesAccordion?: string;
   stylesAccordionItem?: string;
   titleHidden?: boolean;
   blockTop?: string;
@@ -55,7 +55,7 @@ export const QASection = ({
               key={index}
               value={index}
               item={item}
-              stylesAcoordion={stylesAcoordion}
+              stylesAccordion={stylesAccordion}
               stylesAccordionItem={stylesAccordionItem}
               sectionFQ={sectionFQ}
             />

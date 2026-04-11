@@ -5,9 +5,9 @@ import { BlogPost, UserType } from '@/lib/api/blog';
 import { usePostStore } from '@/store/post';
 import { useChoosePath } from '@/store/currentPath';
 import { HeroBlogPage } from '@/components/blogPage/blogPosts/HeroBlogId';
-import { AboutPosts } from '@/components/blogPage/blogPosts/AbouPosts';
+import { AboutPosts } from '@/components/blogPage/blogPosts/AboutPosts';
 import { CreatePerfect } from '@/components/blogPage/blogPosts/CreatePerfect';
-import { SimiliarTopick } from '@/components/blogPage/blogPosts/SimiliarTopics';
+import { SimilarTopics } from '@/components/blogPage/blogPosts/SimilarTopics';
 import { blogCTAData } from '@/lib/constants/blog/blogData';
 import { t } from '@/lib/constants/i18n';
 import { usePathname } from 'next/navigation';
@@ -57,7 +57,7 @@ export default function BlogPostContent({
         textDownload={ctaData.textDownload}
         textCreate={ctaData.textCreate}
       />
-      <SimiliarTopick
+      <SimilarTopics
         titleSimilar={ctaData.titleSimilar}
       />
     </div>

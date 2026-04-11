@@ -98,6 +98,8 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           bottom: '0',
           left: '0',
           width: '50%',
+          objectFit: 'contain',
+          objectPosition: 'bottom',
           maxWidth: '300px',
         },
         styleSecondBgJSON: {
@@ -153,6 +155,8 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           bottom: '0',
           left: '0',
           width: '50%',
+          objectFit: 'contain',
+          objectPosition: 'bottom',
           maxWidth: '300px',
         },
         styleImageMobile: {
@@ -195,6 +199,8 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           bottom: '0',
           left: '0',
           width: '50%',
+          objectFit: 'contain',
+          objectPosition: 'bottom',
           maxWidth: '300px',
         },
         styleSecondBgJSON: {
@@ -250,6 +256,8 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           bottom: '0',
           left: '0',
           width: '50%',
+          objectFit: 'contain',
+          objectPosition: 'bottom',
           maxWidth: '300px',
         },
         styleImageMobile: {
@@ -373,6 +381,8 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           bottom: '0',
           left: '0',
           width: '50%',
+          objectFit: 'contain',
+          objectPosition: 'bottom',
           maxWidth: '300px',
         },
         styleSecondBgJSON: {
@@ -428,6 +438,8 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           bottom: '0',
           left: '0',
           width: '50%',
+          objectFit: 'contain',
+          objectPosition: 'bottom',
           maxWidth: '300px',
         },
         styleImageMobile: {
@@ -470,6 +482,8 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           bottom: '0',
           left: '0',
           width: '50%',
+          objectFit: 'contain',
+          objectPosition: 'bottom',
           maxWidth: '300px',
         },
         styleSecondBgJSON: {
@@ -525,6 +539,8 @@ export const businessPageData: I18nContent<LandingPageContent> = {
           bottom: '0',
           left: '0',
           width: '50%',
+          objectFit: 'contain',
+          objectPosition: 'bottom',
           maxWidth: '300px',
         },
         styleImageMobile: {

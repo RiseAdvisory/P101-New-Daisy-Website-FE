@@ -29,9 +29,9 @@ function blogPostToTutorialArticle(
     slug: post.attributes.slug,
     description: post.attributes.description,
     image:
-      post.attributes.image?.data?.[0]?.attributes?.url ??
       post.attributes.picture?.data?.attributes?.url ??
-      '/images/blog/grow-salon.webp',
+      post.attributes.image?.data?.[0]?.attributes?.url ??
+      `/images/blog/${post.attributes.slug}.webp`,
     author:
       post.attributes.user?.data?.attributes?.name ??
       'The Daisy Team',
@@ -52,7 +52,7 @@ function guideToTutorialArticle(slug: string): TutorialArticle | null {
     title: guide.title,
     slug: guide.slug,
     description: guide.answer.slice(0, 200) + (guide.answer.length > 200 ? '...' : ''),
-    image: '/images/blog/grow-salon.webp',
+    image: `/images/guides/${guide.slug}.webp`,
     author: 'The Daisy Team',
     date: '',
     readTime: '5 min.',
