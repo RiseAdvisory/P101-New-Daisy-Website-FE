@@ -183,7 +183,7 @@ const onlineBookingSetupArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/online-booking-setup.webp',
+          url: '/images/blog/online-booking-for-salons-setup-guide.webp',
           alternativeText: 'Online booking setup guide for salons',
         },
       },
@@ -192,8 +192,8 @@ const onlineBookingSetupArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/online-booking-setup.webp',
-            formats: { large: { url: '/images/blog/online-booking-setup.webp' } },
+            url: '/images/blog/online-booking-for-salons-setup-guide.webp',
+            formats: { large: { url: '/images/blog/online-booking-for-salons-setup-guide.webp' } },
           },
         },
       ],
@@ -340,7 +340,7 @@ const reduceNoShowsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/reduce-no-shows-guide.webp',
+          url: '/images/blog/reduce-salon-no-shows.webp',
           alternativeText: 'Reducing salon no-shows by 60 percent',
         },
       },
@@ -349,8 +349,8 @@ const reduceNoShowsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/reduce-no-shows-guide.webp',
-            formats: { large: { url: '/images/blog/reduce-no-shows-guide.webp' } },
+            url: '/images/blog/reduce-salon-no-shows.webp',
+            formats: { large: { url: '/images/blog/reduce-salon-no-shows.webp' } },
           },
         },
       ],
@@ -493,7 +493,7 @@ const waitlistManagementArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/waitlist-management.webp',
+          url: '/images/blog/salon-waitlist-management.webp',
           alternativeText: 'Salon waitlist management system',
         },
       },
@@ -502,8 +502,8 @@ const waitlistManagementArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/waitlist-management.webp',
-            formats: { large: { url: '/images/blog/waitlist-management.webp' } },
+            url: '/images/blog/salon-waitlist-management.webp',
+            formats: { large: { url: '/images/blog/salon-waitlist-management.webp' } },
           },
         },
       ],
@@ -647,7 +647,7 @@ const groupBookingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/group-booking-packages.webp',
+          url: '/images/blog/group-booking-packages-salon.webp',
           alternativeText: 'Salon group booking and service packages',
         },
       },
@@ -656,8 +656,8 @@ const groupBookingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/group-booking-packages.webp',
-            formats: { large: { url: '/images/blog/group-booking-packages.webp' } },
+            url: '/images/blog/group-booking-packages-salon.webp',
+            formats: { large: { url: '/images/blog/group-booking-packages-salon.webp' } },
           },
         },
       ],
@@ -807,7 +807,7 @@ const mobileBookingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/mobile-booking-salon.webp',
+          url: '/images/blog/mobile-booking-beauty-salon.webp',
           alternativeText: 'Mobile booking for beauty salons',
         },
       },
@@ -816,8 +816,8 @@ const mobileBookingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/mobile-booking-salon.webp',
-            formats: { large: { url: '/images/blog/mobile-booking-salon.webp' } },
+            url: '/images/blog/mobile-booking-beauty-salon.webp',
+            formats: { large: { url: '/images/blog/mobile-booking-beauty-salon.webp' } },
           },
         },
       ],
@@ -964,7 +964,7 @@ const recurringAppointmentArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/recurring-appointment-scheduling.webp',
+          url: '/images/blog/recurring-appointment-scheduling-salon.webp',
           alternativeText: 'Recurring appointment scheduling for salons',
         },
       },
@@ -973,8 +973,8 @@ const recurringAppointmentArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/recurring-appointment-scheduling.webp',
-            formats: { large: { url: '/images/blog/recurring-appointment-scheduling.webp' } },
+            url: '/images/blog/recurring-appointment-scheduling-salon.webp',
+            formats: { large: { url: '/images/blog/recurring-appointment-scheduling-salon.webp' } },
           },
         },
       ],

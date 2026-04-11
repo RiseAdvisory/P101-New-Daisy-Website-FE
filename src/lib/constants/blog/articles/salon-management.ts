@@ -158,7 +158,7 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/choose-salon-management-software.webp',
+          url: '/images/blog/how-to-choose-salon-management-software.webp',
           alternativeText: 'How to choose salon management software',
         },
       },
@@ -167,8 +167,8 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/choose-salon-management-software.webp',
-            formats: { large: { url: '/images/blog/choose-salon-management-software.webp' } },
+            url: '/images/blog/how-to-choose-salon-management-software.webp',
+            formats: { large: { url: '/images/blog/how-to-choose-salon-management-software.webp' } },
           },
         },
       ],
@@ -465,7 +465,7 @@ const switchingSalonSoftwareArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/switching-salon-software.webp',
+          url: '/images/blog/switching-salon-software-migration-guide.webp',
           alternativeText: 'Complete guide to switching salon management software',
         },
       },
@@ -474,8 +474,8 @@ const switchingSalonSoftwareArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/switching-salon-software.webp',
-            formats: { large: { url: '/images/blog/switching-salon-software.webp' } },
+            url: '/images/blog/switching-salon-software-migration-guide.webp',
+            formats: { large: { url: '/images/blog/switching-salon-software-migration-guide.webp' } },
           },
         },
       ],
@@ -713,7 +713,7 @@ const smallSalonSoftwareArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/small-salon-software.webp',
+          url: '/images/blog/small-salon-software-options.webp',
           alternativeText: 'Salon software for small teams of one to five staff',
         },
       },
@@ -722,8 +722,8 @@ const smallSalonSoftwareArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/small-salon-software.webp',
-            formats: { large: { url: '/images/blog/small-salon-software.webp' } },
+            url: '/images/blog/small-salon-software-options.webp',
+            formats: { large: { url: '/images/blog/small-salon-software-options.webp' } },
           },
         },
       ],
@@ -1006,7 +1006,7 @@ const salonSoftwareROIArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-software-roi.webp',
+          url: '/images/blog/salon-software-roi-calculator.webp',
           alternativeText: 'Calculating salon software return on investment',
         },
       },
@@ -1015,8 +1015,8 @@ const salonSoftwareROIArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-software-roi.webp',
-            formats: { large: { url: '/images/blog/salon-software-roi.webp' } },
+            url: '/images/blog/salon-software-roi-calculator.webp',
+            formats: { large: { url: '/images/blog/salon-software-roi-calculator.webp' } },
           },
         },
       ],

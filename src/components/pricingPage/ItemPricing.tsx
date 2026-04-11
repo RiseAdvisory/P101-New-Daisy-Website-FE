@@ -149,6 +149,7 @@ export const ItemCardPricing = ({
   currentPrices,
   currentPricesYear,
   gridCardRef,
+  badge,
 }: {
   title: string;
   subtitle: string;
@@ -165,6 +166,7 @@ export const ItemCardPricing = ({
   currentPrices: string[];
   currentPricesYear: string[];
   gridCardRef: React.RefObject<HTMLDivElement>;
+  badge?: string;
 }) => {
   const [showAll, setShowAll] = useState(false);
   const [currentPlanBus, setCurrentPlanBus] = useState('');
@@ -262,6 +264,7 @@ export const ItemCardPricing = ({
           {
             'border-[2px] border-[#A67F6B] shadow-lg shadow-[#A67F6B]/20 scroll-mt-[1000px]':
               isRecommended && showRecommendation,
+            'border-[2px] border-[#A67F6B]': badge && !(isRecommended && showRecommendation),
           },
         )}
       >
@@ -271,6 +274,11 @@ export const ItemCardPricing = ({
             ref={gridCardRef}
           >
             {textRecomended?.textRecomended}
+          </p>
+        )}
+        {badge && !(isRecommended && showRecommendation) && (
+          <p className="absolute top-0 left-0 right-0 text-center text-white bg-[#8B6554] py-1 font-medium">
+            {badge}
           </p>
         )}
         <div className="relative bg-primary -top-[81px] w-full max-w-full">

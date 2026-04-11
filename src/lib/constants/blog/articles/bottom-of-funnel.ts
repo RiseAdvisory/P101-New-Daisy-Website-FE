@@ -232,7 +232,7 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-software-switching.webp',
+          url: '/images/blog/salon-software-switching-checklist-migration.webp',
           alternativeText: 'Salon software switching checklist and migration plan',
         },
       },
@@ -241,8 +241,8 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-software-switching.webp',
-            formats: { large: { url: '/images/blog/salon-software-switching.webp' } },
+            url: '/images/blog/salon-software-switching-checklist-migration.webp',
+            formats: { large: { url: '/images/blog/salon-software-switching-checklist-migration.webp' } },
           },
         },
       ],
@@ -417,7 +417,7 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/first-month-salon-platform.webp',
+          url: '/images/blog/first-month-new-salon-platform.webp',
           alternativeText: 'First month on a new salon management platform',
         },
       },
@@ -426,8 +426,8 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/first-month-salon-platform.webp',
-            formats: { large: { url: '/images/blog/first-month-salon-platform.webp' } },
+            url: '/images/blog/first-month-new-salon-platform.webp',
+            formats: { large: { url: '/images/blog/first-month-new-salon-platform.webp' } },
           },
         },
       ],
@@ -625,7 +625,7 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/calculate-roi-salon-software.webp',
+          url: '/images/blog/calculate-roi-switching-salon-software.webp',
           alternativeText: 'Calculating ROI of switching salon software',
         },
       },
@@ -634,8 +634,8 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/calculate-roi-salon-software.webp',
-            formats: { large: { url: '/images/blog/calculate-roi-salon-software.webp' } },
+            url: '/images/blog/calculate-roi-switching-salon-software.webp',
+            formats: { large: { url: '/images/blog/calculate-roi-switching-salon-software.webp' } },
           },
         },
       ],

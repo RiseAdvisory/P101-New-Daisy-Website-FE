@@ -13,7 +13,9 @@
     "test:coverage": "jest --coverage",
     "prepare": "husky",
     "analyze": "ANALYZE=true next build",
-    "indexnow": "node scripts/indexnow-submit.mjs"
+    "indexnow": "node scripts/indexnow-submit.mjs",
+    "generate-images": "node scripts/generate-article-images.mjs",
+    "generate-images:dry": "node scripts/generate-article-images.mjs --dry-run"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.4.2",

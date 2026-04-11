@@ -211,7 +211,7 @@ const staffSchedulingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-staff-scheduling.webp',
+          url: '/images/blog/salon-staff-scheduling-best-practices.webp',
           alternativeText: 'Salon staff scheduling best practices and templates',
         },
       },
@@ -220,8 +220,8 @@ const staffSchedulingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-staff-scheduling.webp',
-            formats: { large: { url: '/images/blog/salon-staff-scheduling.webp' } },
+            url: '/images/blog/salon-staff-scheduling-best-practices.webp',
+            formats: { large: { url: '/images/blog/salon-staff-scheduling-best-practices.webp' } },
           },
         },
       ],
@@ -471,7 +471,7 @@ const commissionStructuresArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-commission-structures.webp',
+          url: '/images/blog/salon-commission-structures-guide.webp',
           alternativeText: 'Salon commission structure comparison and guide',
         },
       },
@@ -480,8 +480,8 @@ const commissionStructuresArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-commission-structures.webp',
-            formats: { large: { url: '/images/blog/salon-commission-structures.webp' } },
+            url: '/images/blog/salon-commission-structures-guide.webp',
+            formats: { large: { url: '/images/blog/salon-commission-structures-guide.webp' } },
           },
         },
       ],
@@ -653,7 +653,7 @@ const hiringSalonStaffArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/hiring-salon-staff.webp',
+          url: '/images/blog/hiring-salon-staff-interview-guide.webp',
           alternativeText: 'Salon owner interviewing a candidate for a stylist position',
         },
       },
@@ -662,8 +662,8 @@ const hiringSalonStaffArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/hiring-salon-staff.webp',
-            formats: { large: { url: '/images/blog/hiring-salon-staff.webp' } },
+            url: '/images/blog/hiring-salon-staff-interview-guide.webp',
+            formats: { large: { url: '/images/blog/hiring-salon-staff-interview-guide.webp' } },
           },
         },
       ],
@@ -829,7 +829,7 @@ const employeeRetentionArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-employee-retention.webp',
+          url: '/images/blog/salon-employee-retention-strategies.webp',
           alternativeText: 'Salon team retention strategies for beauty businesses',
         },
       },
@@ -838,8 +838,8 @@ const employeeRetentionArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-employee-retention.webp',
-            formats: { large: { url: '/images/blog/salon-employee-retention.webp' } },
+            url: '/images/blog/salon-employee-retention-strategies.webp',
+            formats: { large: { url: '/images/blog/salon-employee-retention-strategies.webp' } },
           },
         },
       ],
@@ -980,7 +980,7 @@ const freelanceBeautyScheduleArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/freelance-beauty-schedule.webp',
+          url: '/images/blog/managing-freelance-beauty-schedule.webp',
           alternativeText: 'Freelance beauty professional managing schedule on tablet',
         },
       },
@@ -989,8 +989,8 @@ const freelanceBeautyScheduleArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/freelance-beauty-schedule.webp',
-            formats: { large: { url: '/images/blog/freelance-beauty-schedule.webp' } },
+            url: '/images/blog/managing-freelance-beauty-schedule.webp',
+            formats: { large: { url: '/images/blog/managing-freelance-beauty-schedule.webp' } },
           },
         },
       ],
@@ -1178,7 +1178,7 @@ const performanceReviewsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-performance-reviews.webp',
+          url: '/images/blog/salon-staff-performance-reviews.webp',
           alternativeText: 'Salon manager conducting a staff performance review',
         },
       },
@@ -1187,8 +1187,8 @@ const performanceReviewsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-performance-reviews.webp',
-            formats: { large: { url: '/images/blog/salon-performance-reviews.webp' } },
+            url: '/images/blog/salon-staff-performance-reviews.webp',
+            formats: { large: { url: '/images/blog/salon-staff-performance-reviews.webp' } },
           },
         },
       ],

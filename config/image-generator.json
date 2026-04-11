@@ -1,0 +1,28 @@
+{
+  "articlesGlob": "src/lib/constants/blog/articles/*.ts",
+  "imageOutputDir": "public/images/blog",
+  "imageFormat": "webp",
+  "aspectRatio": "3:2",
+  "quality": "high",
+  "outputCompression": 85,
+  "dimensions": {
+    "width": 1440,
+    "height": 810
+  },
+  "style": {
+    "base": "Clean modern editorial photography, soft natural lighting, shallow depth of field, professional and approachable aesthetic. Warm neutral tones with subtle gradients. No text, no watermarks, no logos, no words, no letters.",
+    "beauty": "Beauty and wellness industry context, salon or spa environment, elegant and inviting atmosphere.",
+    "tech": "Modern technology interface elements, clean minimalist design, soft glowing accents.",
+    "business": "Professional business setting, growth and success imagery, confident and aspirational mood."
+  },
+  "replicate": {
+    "model": "openai/gpt-image-1.5",
+    "maxConcurrent": 2,
+    "retryAttempts": 3,
+    "retryDelayMs": 5000,
+    "pollIntervalMs": 2000
+  },
+  "env": {
+    "replicateApiKey": "REPLICATE_API_TOKEN"
+  }
+}

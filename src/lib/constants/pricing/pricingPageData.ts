@@ -8,6 +8,7 @@ export interface PricingCardItem {
   priceYear: string;
   optionPlus: string;
   options: string[];
+  badge?: string;
 }
 
 export interface EnterpriseData {
@@ -219,6 +220,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'Growth',
+          badge: 'Most Popular',
           subTitle: '14-day free trial, no credit card required',
           description:
             'For growing businesses ready to accept online payments, automate reminders, and get discovered on the marketplace',
@@ -325,6 +327,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'Professional',
+          badge: 'Most Popular',
           subTitle: '14-day free trial, no credit card required',
           description:
             'For experienced solo professionals who want unlimited bookings, online payments, and marketplace visibility',
@@ -529,6 +532,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'نمو',
+          badge: 'الأكثر شعبية',
           subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
             'للأعمال المتنامية المستعدة لقبول المدفوعات الإلكترونية وأتمتة التذكيرات والظهور في السوق',
@@ -633,6 +637,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'محترف',
+          badge: 'الأكثر شعبية',
           subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
           description:
             'للمحترفين ذوي الخبرة الذين يريدون حجوزات غير محدودة ومدفوعات إلكترونية وظهور في السوق',

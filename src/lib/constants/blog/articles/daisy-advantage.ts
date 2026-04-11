@@ -136,7 +136,7 @@ const aiReceptionistArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/ai-receptionist-salon.webp',
+          url: '/images/blog/ai-receptionist-salon-customer-service.webp',
           alternativeText: 'AI receptionist handling salon customer service',
         },
       },
@@ -145,8 +145,8 @@ const aiReceptionistArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/ai-receptionist-salon.webp',
-            formats: { large: { url: '/images/blog/ai-receptionist-salon.webp' } },
+            url: '/images/blog/ai-receptionist-salon-customer-service.webp',
+            formats: { large: { url: '/images/blog/ai-receptionist-salon-customer-service.webp' } },
           },
         },
       ],
@@ -270,7 +270,7 @@ const allInOnePlatformArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/all-in-one-salon-platform.webp',
+          url: '/images/blog/all-in-one-salon-platform-vs-point-solutions.webp',
           alternativeText: 'All-in-one salon platform replacing multiple software tools',
         },
       },
@@ -279,8 +279,8 @@ const allInOnePlatformArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/all-in-one-salon-platform.webp',
-            formats: { large: { url: '/images/blog/all-in-one-salon-platform.webp' } },
+            url: '/images/blog/all-in-one-salon-platform-vs-point-solutions.webp',
+            formats: { large: { url: '/images/blog/all-in-one-salon-platform-vs-point-solutions.webp' } },
           },
         },
       ],
@@ -395,7 +395,7 @@ const customerAcquisitionArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/360-customer-acquisition-salon.webp',
+          url: '/images/blog/360-degree-customer-acquisition-salons.webp',
           alternativeText: '360-degree customer acquisition strategy for salons',
         },
       },
@@ -404,8 +404,8 @@ const customerAcquisitionArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/360-customer-acquisition-salon.webp',
-            formats: { large: { url: '/images/blog/360-customer-acquisition-salon.webp' } },
+            url: '/images/blog/360-degree-customer-acquisition-salons.webp',
+            formats: { large: { url: '/images/blog/360-degree-customer-acquisition-salons.webp' } },
           },
         },
       ],
@@ -670,7 +670,7 @@ const multilingualBusinessArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/multilingual-beauty-business.webp',
+          url: '/images/blog/multilingual-beauty-business-tools.webp',
           alternativeText: 'Multilingual beauty business tools for Arabic English and more',
         },
       },
@@ -679,8 +679,8 @@ const multilingualBusinessArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/multilingual-beauty-business.webp',
-            formats: { large: { url: '/images/blog/multilingual-beauty-business.webp' } },
+            url: '/images/blog/multilingual-beauty-business-tools.webp',
+            formats: { large: { url: '/images/blog/multilingual-beauty-business-tools.webp' } },
           },
         },
       ],
@@ -923,7 +923,7 @@ const modernSalonsAiArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/ai-platform-vs-software-salon.webp',
+          url: '/images/blog/modern-salons-ai-platform-not-software.webp',
           alternativeText: 'AI platform vs traditional salon software comparison',
         },
       },
@@ -932,8 +932,8 @@ const modernSalonsAiArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/ai-platform-vs-software-salon.webp',
-            formats: { large: { url: '/images/blog/ai-platform-vs-software-salon.webp' } },
+            url: '/images/blog/modern-salons-ai-platform-not-software.webp',
+            formats: { large: { url: '/images/blog/modern-salons-ai-platform-not-software.webp' } },
           },
         },
       ],
@@ -1040,7 +1040,7 @@ const softwareWarningSignsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-software-warning-signs.webp',
+          url: '/images/blog/salon-software-holding-you-back-warning-signs.webp',
           alternativeText: 'Warning signs your salon software is holding you back',
         },
       },
@@ -1049,8 +1049,8 @@ const softwareWarningSignsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-software-warning-signs.webp',
-            formats: { large: { url: '/images/blog/salon-software-warning-signs.webp' } },
+            url: '/images/blog/salon-software-holding-you-back-warning-signs.webp',
+            formats: { large: { url: '/images/blog/salon-software-holding-you-back-warning-signs.webp' } },
           },
         },
       ],

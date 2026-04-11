@@ -167,7 +167,7 @@ const staffSchedulingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/staff-scheduling-salon-guide.webp',
+          url: '/images/blog/staff-scheduling-salon-owners-guide.webp',
           alternativeText: 'Salon owner reviewing staff schedule on tablet',
         },
       },
@@ -176,8 +176,8 @@ const staffSchedulingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/staff-scheduling-salon-guide.webp',
-            formats: { large: { url: '/images/blog/staff-scheduling-salon-guide.webp' } },
+            url: '/images/blog/staff-scheduling-salon-owners-guide.webp',
+            formats: { large: { url: '/images/blog/staff-scheduling-salon-owners-guide.webp' } },
           },
         },
       ],
@@ -369,7 +369,7 @@ const commissionStructuresArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/commission-structures-salon-talent.webp',
+          url: '/images/blog/commission-structures-keep-top-talent.webp',
           alternativeText: 'Salon team discussing commission and compensation',
         },
       },
@@ -378,8 +378,8 @@ const commissionStructuresArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/commission-structures-salon-talent.webp',
-            formats: { large: { url: '/images/blog/commission-structures-salon-talent.webp' } },
+            url: '/images/blog/commission-structures-keep-top-talent.webp',
+            formats: { large: { url: '/images/blog/commission-structures-keep-top-talent.webp' } },
           },
         },
       ],
@@ -534,7 +534,7 @@ const managingPermissionsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/managing-permissions-salon-access.webp',
+          url: '/images/blog/managing-permissions-salon-access-control.webp',
           alternativeText: 'Salon manager configuring team permissions on screen',
         },
       },
@@ -543,8 +543,8 @@ const managingPermissionsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/managing-permissions-salon-access.webp',
-            formats: { large: { url: '/images/blog/managing-permissions-salon-access.webp' } },
+            url: '/images/blog/managing-permissions-salon-access-control.webp',
+            formats: { large: { url: '/images/blog/managing-permissions-salon-access-control.webp' } },
           },
         },
       ],
@@ -704,7 +704,7 @@ const timeManagementArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/time-management-beauty-professionals.webp',
+          url: '/images/blog/time-management-independent-beauty-professionals.webp',
           alternativeText: 'Independent beauty professional managing schedule on phone',
         },
       },
@@ -713,8 +713,8 @@ const timeManagementArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/time-management-beauty-professionals.webp',
-            formats: { large: { url: '/images/blog/time-management-beauty-professionals.webp' } },
+            url: '/images/blog/time-management-independent-beauty-professionals.webp',
+            formats: { large: { url: '/images/blog/time-management-independent-beauty-professionals.webp' } },
           },
         },
       ],

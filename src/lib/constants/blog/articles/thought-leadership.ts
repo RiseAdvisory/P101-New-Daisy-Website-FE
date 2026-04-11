@@ -164,7 +164,7 @@ const deathOfSalonSoftwareArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/death-of-salon-software.webp',
+          url: '/images/blog/death-of-salon-software-platform-ecosystems.webp',
           alternativeText: 'The death of traditional salon software and rise of platform ecosystems',
         },
       },
@@ -173,8 +173,8 @@ const deathOfSalonSoftwareArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/death-of-salon-software.webp',
-            formats: { large: { url: '/images/blog/death-of-salon-software.webp' } },
+            url: '/images/blog/death-of-salon-software-platform-ecosystems.webp',
+            formats: { large: { url: '/images/blog/death-of-salon-software-platform-ecosystems.webp' } },
           },
         },
       ],
@@ -302,7 +302,7 @@ const adoptAiOrLeftBehindArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/ai-adoption-beauty-business.webp',
+          url: '/images/blog/beauty-businesses-adopt-ai-or-left-behind.webp',
           alternativeText: 'Beauty businesses must adopt AI or be left behind by 2028',
         },
       },
@@ -311,8 +311,8 @@ const adoptAiOrLeftBehindArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/ai-adoption-beauty-business.webp',
-            formats: { large: { url: '/images/blog/ai-adoption-beauty-business.webp' } },
+            url: '/images/blog/beauty-businesses-adopt-ai-or-left-behind.webp',
+            formats: { large: { url: '/images/blog/beauty-businesses-adopt-ai-or-left-behind.webp' } },
           },
         },
       ],
@@ -465,7 +465,7 @@ const operationsToGrowthMindsetArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/operations-to-growth-mindset.webp',
+          url: '/images/blog/operations-to-growth-mindset-shift-salon.webp',
           alternativeText: 'Salon owner shifting from operations mindset to growth leadership',
         },
       },
@@ -474,8 +474,8 @@ const operationsToGrowthMindsetArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/operations-to-growth-mindset.webp',
-            formats: { large: { url: '/images/blog/operations-to-growth-mindset.webp' } },
+            url: '/images/blog/operations-to-growth-mindset-shift-salon.webp',
+            formats: { large: { url: '/images/blog/operations-to-growth-mindset-shift-salon.webp' } },
           },
         },
       ],
@@ -651,7 +651,7 @@ const fiveAppsHowToFixArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-five-apps-consolidation.webp',
+          url: '/images/blog/salon-five-apps-how-to-fix.webp',
           alternativeText: 'Consolidating five salon apps into one platform',
         },
       },
@@ -660,8 +660,8 @@ const fiveAppsHowToFixArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-five-apps-consolidation.webp',
-            formats: { large: { url: '/images/blog/salon-five-apps-consolidation.webp' } },
+            url: '/images/blog/salon-five-apps-how-to-fix.webp',
+            formats: { large: { url: '/images/blog/salon-five-apps-how-to-fix.webp' } },
           },
         },
       ],

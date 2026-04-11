@@ -176,7 +176,7 @@ const salonPosSystemsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-pos-systems-guide.webp',
+          url: '/images/blog/salon-pos-systems-2026-guide.webp',
           alternativeText: 'Salon POS system guide for beauty businesses',
         },
       },
@@ -185,8 +185,8 @@ const salonPosSystemsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-pos-systems-guide.webp',
-            formats: { large: { url: '/images/blog/salon-pos-systems-guide.webp' } },
+            url: '/images/blog/salon-pos-systems-2026-guide.webp',
+            formats: { large: { url: '/images/blog/salon-pos-systems-2026-guide.webp' } },
           },
         },
       ],
@@ -356,7 +356,7 @@ const tippingBestPracticesArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/tipping-best-practices-beauty.webp',
+          url: '/images/blog/tipping-best-practices-beauty-businesses.webp',
           alternativeText: 'Tipping best practices for beauty businesses',
         },
       },
@@ -365,8 +365,8 @@ const tippingBestPracticesArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/tipping-best-practices-beauty.webp',
-            formats: { large: { url: '/images/blog/tipping-best-practices-beauty.webp' } },
+            url: '/images/blog/tipping-best-practices-beauty-businesses.webp',
+            formats: { large: { url: '/images/blog/tipping-best-practices-beauty-businesses.webp' } },
           },
         },
       ],
@@ -546,7 +546,7 @@ const gettingPaidFasterArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/freelance-beauty-invoicing.webp',
+          url: '/images/blog/getting-paid-faster-freelance-beauty-invoicing.webp',
           alternativeText: 'Invoicing guide for freelance beauty professionals',
         },
       },
@@ -555,8 +555,8 @@ const gettingPaidFasterArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/freelance-beauty-invoicing.webp',
-            formats: { large: { url: '/images/blog/freelance-beauty-invoicing.webp' } },
+            url: '/images/blog/getting-paid-faster-freelance-beauty-invoicing.webp',
+            formats: { large: { url: '/images/blog/getting-paid-faster-freelance-beauty-invoicing.webp' } },
           },
         },
       ],
@@ -767,7 +767,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/payment-fees-compared.webp',
+          url: '/images/blog/payment-processing-fees-compared-daisy.webp',
           alternativeText: 'Payment processing fees comparison for beauty businesses',
         },
       },
@@ -776,8 +776,8 @@ const paymentFeesComparedArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/payment-fees-compared.webp',
-            formats: { large: { url: '/images/blog/payment-fees-compared.webp' } },
+            url: '/images/blog/payment-processing-fees-compared-daisy.webp',
+            formats: { large: { url: '/images/blog/payment-processing-fees-compared-daisy.webp' } },
           },
         },
       ],

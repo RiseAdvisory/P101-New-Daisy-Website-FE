@@ -207,7 +207,7 @@ const salonPosBuyersGuideArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-pos-buyers-guide.webp',
+          url: '/images/blog/salon-pos-system-buyers-guide.webp',
           alternativeText: 'Salon POS system buyer\'s guide for beauty businesses',
         },
       },
@@ -216,8 +216,8 @@ const salonPosBuyersGuideArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-pos-buyers-guide.webp',
-            formats: { large: { url: '/images/blog/salon-pos-buyers-guide.webp' } },
+            url: '/images/blog/salon-pos-system-buyers-guide.webp',
+            formats: { large: { url: '/images/blog/salon-pos-system-buyers-guide.webp' } },
           },
         },
       ],
@@ -376,7 +376,7 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-tipping-policies.webp',
+          url: '/images/blog/salon-tipping-policies-digital.webp',
           alternativeText: 'Salon tipping etiquette and digital tipping solutions',
         },
       },
@@ -385,8 +385,8 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-tipping-policies.webp',
-            formats: { large: { url: '/images/blog/salon-tipping-policies.webp' } },
+            url: '/images/blog/salon-tipping-policies-digital.webp',
+            formats: { large: { url: '/images/blog/salon-tipping-policies-digital.webp' } },
           },
         },
       ],
@@ -554,7 +554,7 @@ const contactlessPaymentsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/contactless-payments-salon.webp',
+          url: '/images/blog/contactless-payments-salon-setup.webp',
           alternativeText: 'Contactless payment terminal setup in a salon',
         },
       },
@@ -563,8 +563,8 @@ const contactlessPaymentsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/contactless-payments-salon.webp',
-            formats: { large: { url: '/images/blog/contactless-payments-salon.webp' } },
+            url: '/images/blog/contactless-payments-salon-setup.webp',
+            formats: { large: { url: '/images/blog/contactless-payments-salon-setup.webp' } },
           },
         },
       ],
@@ -714,7 +714,7 @@ const salonInvoicingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-invoicing-guide.webp',
+          url: '/images/blog/salon-invoicing-billing-guide.webp',
           alternativeText: 'Professional salon invoicing and billing workflow',
         },
       },
@@ -723,8 +723,8 @@ const salonInvoicingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-invoicing-guide.webp',
-            formats: { large: { url: '/images/blog/salon-invoicing-guide.webp' } },
+            url: '/images/blog/salon-invoicing-billing-guide.webp',
+            formats: { large: { url: '/images/blog/salon-invoicing-billing-guide.webp' } },
           },
         },
       ],

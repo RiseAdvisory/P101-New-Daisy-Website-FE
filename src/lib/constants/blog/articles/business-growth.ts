@@ -178,7 +178,7 @@ const scalingBeautyBusinessArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/scaling-beauty-business.webp',
+          url: '/images/blog/scaling-beauty-business-multiple-locations.webp',
           alternativeText: 'Scaling a beauty business to multiple salon locations',
         },
       },
@@ -187,8 +187,8 @@ const scalingBeautyBusinessArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/scaling-beauty-business.webp',
-            formats: { large: { url: '/images/blog/scaling-beauty-business.webp' } },
+            url: '/images/blog/scaling-beauty-business-multiple-locations.webp',
+            formats: { large: { url: '/images/blog/scaling-beauty-business-multiple-locations.webp' } },
           },
         },
       ],
@@ -355,7 +355,7 @@ const multiChannelAcquisitionArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/multi-channel-acquisition.webp',
+          url: '/images/blog/multi-channel-acquisition-beauty-business-growth.webp',
           alternativeText: 'Multi-channel client acquisition for beauty business growth',
         },
       },
@@ -364,8 +364,8 @@ const multiChannelAcquisitionArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/multi-channel-acquisition.webp',
-            formats: { large: { url: '/images/blog/multi-channel-acquisition.webp' } },
+            url: '/images/blog/multi-channel-acquisition-beauty-business-growth.webp',
+            formats: { large: { url: '/images/blog/multi-channel-acquisition-beauty-business-growth.webp' } },
           },
         },
       ],
@@ -537,7 +537,7 @@ const daisyMarketingSuiteArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/daisy-marketing-suite.webp',
+          url: '/images/blog/daisy-marketing-suite-attracts-new-clients.webp',
           alternativeText: 'Daisy marketing suite attracting new salon clients',
         },
       },
@@ -546,8 +546,8 @@ const daisyMarketingSuiteArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/daisy-marketing-suite.webp',
-            formats: { large: { url: '/images/blog/daisy-marketing-suite.webp' } },
+            url: '/images/blog/daisy-marketing-suite-attracts-new-clients.webp',
+            formats: { large: { url: '/images/blog/daisy-marketing-suite-attracts-new-clients.webp' } },
           },
         },
       ],
@@ -697,7 +697,7 @@ const buildingPersonalBrandArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/personal-brand-beauty-professional.webp',
+          url: '/images/blog/building-personal-brand-beauty-professional-guide.webp',
           alternativeText: 'Building a personal brand as a beauty professional',
         },
       },
@@ -706,8 +706,8 @@ const buildingPersonalBrandArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/personal-brand-beauty-professional.webp',
-            formats: { large: { url: '/images/blog/personal-brand-beauty-professional.webp' } },
+            url: '/images/blog/building-personal-brand-beauty-professional-guide.webp',
+            formats: { large: { url: '/images/blog/building-personal-brand-beauty-professional-guide.webp' } },
           },
         },
       ],
@@ -869,7 +869,7 @@ const salonRevenueGrowthArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-revenue-growth-strategies.webp',
+          url: '/images/blog/salon-revenue-growth-strategies-2026.webp',
           alternativeText: 'Salon revenue growth strategies for 2026',
         },
       },
@@ -878,8 +878,8 @@ const salonRevenueGrowthArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-revenue-growth-strategies.webp',
-            formats: { large: { url: '/images/blog/salon-revenue-growth-strategies.webp' } },
+            url: '/images/blog/salon-revenue-growth-strategies-2026.webp',
+            formats: { large: { url: '/images/blog/salon-revenue-growth-strategies-2026.webp' } },
           },
         },
       ],

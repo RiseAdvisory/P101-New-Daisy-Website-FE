@@ -173,7 +173,7 @@ const automatedRemindersArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/automated-reminders-no-shows.webp',
+          url: '/images/blog/automated-reminders-reduce-no-shows.webp',
           alternativeText: 'Automated appointment reminders reducing no-shows for salons',
         },
       },
@@ -182,8 +182,8 @@ const automatedRemindersArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/automated-reminders-no-shows.webp',
-            formats: { large: { url: '/images/blog/automated-reminders-no-shows.webp' } },
+            url: '/images/blog/automated-reminders-reduce-no-shows.webp',
+            formats: { large: { url: '/images/blog/automated-reminders-reduce-no-shows.webp' } },
           },
         },
       ],
@@ -370,7 +370,7 @@ const clientCommunicationTemplatesArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/client-communication-templates.webp',
+          url: '/images/blog/client-communication-templates-beauty.webp',
           alternativeText: 'Client communication templates for beauty businesses',
         },
       },
@@ -379,8 +379,8 @@ const clientCommunicationTemplatesArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/client-communication-templates.webp',
-            formats: { large: { url: '/images/blog/client-communication-templates.webp' } },
+            url: '/images/blog/client-communication-templates-beauty.webp',
+            formats: { large: { url: '/images/blog/client-communication-templates-beauty.webp' } },
           },
         },
       ],
@@ -538,7 +538,7 @@ const smsMarketingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/sms-marketing-salon-chairs.webp',
+          url: '/images/blog/sms-marketing-fill-salon-chairs.webp',
           alternativeText: 'SMS marketing strategy to fill empty salon chairs',
         },
       },
@@ -547,8 +547,8 @@ const smsMarketingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/sms-marketing-salon-chairs.webp',
-            formats: { large: { url: '/images/blog/sms-marketing-salon-chairs.webp' } },
+            url: '/images/blog/sms-marketing-fill-salon-chairs.webp',
+            formats: { large: { url: '/images/blog/sms-marketing-fill-salon-chairs.webp' } },
           },
         },
       ],
@@ -731,7 +731,7 @@ const buildingClientRelationshipsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/building-client-relationships.webp',
+          url: '/images/blog/building-client-relationships-beauty-pros.webp',
           alternativeText: 'Beauty professional building client relationships through communication',
         },
       },
@@ -740,8 +740,8 @@ const buildingClientRelationshipsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/building-client-relationships.webp',
-            formats: { large: { url: '/images/blog/building-client-relationships.webp' } },
+            url: '/images/blog/building-client-relationships-beauty-pros.webp',
+            formats: { large: { url: '/images/blog/building-client-relationships-beauty-pros.webp' } },
           },
         },
       ],
@@ -924,7 +924,7 @@ const reviewRequestAutomationArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/review-request-automation.webp',
+          url: '/images/blog/review-request-automation-5-star-reviews.webp',
           alternativeText: 'Automated review requests generating 5-star reviews for salons',
         },
       },
@@ -933,8 +933,8 @@ const reviewRequestAutomationArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/review-request-automation.webp',
-            formats: { large: { url: '/images/blog/review-request-automation.webp' } },
+            url: '/images/blog/review-request-automation-5-star-reviews.webp',
+            formats: { large: { url: '/images/blog/review-request-automation-5-star-reviews.webp' } },
           },
         },
       ],
