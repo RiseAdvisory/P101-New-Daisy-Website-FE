@@ -58,7 +58,7 @@ export const salonManagementSoftware: PillarPageData = {
     <tr>
       <td>Appointment booking</td>
       <td>Paper diary, phone calls, WhatsApp messages</td>
-      <td>Online booking with real-time calendar sync</td>
+      <td><a href="/en/glossary/salon-booking-software">Online booking</a> with real-time calendar sync</td>
     </tr>
     <tr>
       <td>Client records</td>
@@ -78,7 +78,7 @@ export const salonManagementSoftware: PillarPageData = {
     <tr>
       <td>Marketing</td>
       <td>Manual social posts, bulk SMS services</td>
-      <td>Automated campaigns, loyalty programs, cashback</td>
+      <td>Automated campaigns, loyalty programs, <a href="/en/glossary/cashback-beauty-booking">cashback</a></td>
     </tr>
     <tr>
       <td>Reporting</td>
@@ -140,7 +140,7 @@ export const salonManagementSoftware: PillarPageData = {
 <p>Total: $9,000-$15,000 per month in lost revenue and opportunity cost, far exceeding the $100-$400 monthly cost of comprehensive salon software. The question is not whether you can afford software; it is whether you can afford to operate without it.</p>`,
       callout: {
         type: 'warning',
-        text: 'Salons that miss 30-40% of inbound calls due to staff being busy with clients lose thousands in potential bookings every month. An AI receptionist captures every inquiry 24/7, even outside business hours.',
+        text: 'Salons that miss 30-40% of inbound calls due to staff being busy with clients lose thousands in potential bookings every month. An <a href="/en/glossary/ai-receptionist-for-salons">AI receptionist</a> captures every inquiry 24/7, even outside business hours.',
       },
       relatedLinks: [
         {
@@ -174,7 +174,7 @@ export const salonManagementSoftware: PillarPageData = {
 <p>Integrated point-of-sale, online payments, deposit collection, split payments, tipping, invoicing, and refund management. Payment data should flow directly into your reports without manual reconciliation. Look for platforms that support the payment methods your clients prefer, card, Apple Pay, Google Pay, and cash.</p>
 
 <h3>6. Business Growth Tools</h3>
-<p>Features that help you expand: multi-branch management, franchise support, white-label branding, marketplace listing, review management, and client acquisition analytics. Growth tools separate platforms designed for long-term success from those that only handle day-to-day operations.</p>
+<p>Features that help you expand: multi-branch management, franchise support, <a href="/en/glossary/white-label-salon-software">white-label</a> branding, marketplace listing, review management, and client acquisition analytics. Growth tools separate platforms designed for long-term success from those that only handle day-to-day operations.</p>
 
 <h3>7. Team Management</h3>
 <p><a href="/en/features/business/team-management">Staff scheduling</a>, performance tracking, commission calculation, payroll integration, skill-based booking assignment, and individual staff calendars. Good team management features reduce scheduling conflicts, improve staff utilization rates, and give team members visibility into their own performance.</p>
