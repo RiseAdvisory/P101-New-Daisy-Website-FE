@@ -153,7 +153,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/smart-calender.webp',
+                    url: '/images/features/professional/smart-calendar.webp',
                   },
                 },
               ],
@@ -185,7 +185,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/smart-calender.webp',
+                    url: '/images/features/professional/smart-calendar.webp',
                   },
                 },
               ],
@@ -1208,7 +1208,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/smart-calender.webp',
+                    url: '/images/features/professional/smart-calendar.webp',
                   },
                 },
               ],
@@ -1240,7 +1240,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/smart-calender.webp',
+                    url: '/images/features/professional/smart-calendar.webp',
                   },
                 },
               ],

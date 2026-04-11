@@ -43,7 +43,7 @@ export const ChangeUserTypeMobile = ({
 
   const hData = t(headerData, locale);
   // Filter out customer option
-  const dataList = hData.optionsToogle.filter(
+  const dataList = hData.optionsToggle.filter(
     (option) => !option.path.includes('customer'),
   );
 

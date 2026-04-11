@@ -12,12 +12,12 @@ export const tutorialsList = [
 ];
 
 export const tutorialsListOne = [
-  { title: 'Acceptance of Policy', compone: TutorialComponents },
-  { title: 'Collection Of Data', compone: TutorialComponents },
-  { title: 'Use And Handling Of Data', compone: TutorialComponents },
-  { title: 'Dissemination of data', compone: TutorialComponents },
-  { title: 'Consent and opting-out', compone: TutorialComponents },
-  { title: 'information requests', compone: TutorialComponents },
-  { title: 'cookies', compone: TutorialComponents },
-  { title: 'Modification of Privacy policy', compone: TutorialComponents },
+  { title: 'Acceptance of Policy', component: TutorialComponents },
+  { title: 'Collection Of Data', component: TutorialComponents },
+  { title: 'Use And Handling Of Data', component: TutorialComponents },
+  { title: 'Dissemination of data', component: TutorialComponents },
+  { title: 'Consent and opting-out', component: TutorialComponents },
+  { title: 'information requests', component: TutorialComponents },
+  { title: 'cookies', component: TutorialComponents },
+  { title: 'Modification of Privacy policy', component: TutorialComponents },
 ];

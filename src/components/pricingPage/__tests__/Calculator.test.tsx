@@ -1,9 +1,9 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import {
-  Calculater,
+  Calculator,
   sanitizeNumberInput,
   handleNumericKeyDown,
-} from '../Calculater';
+} from '../Calculator';
 
 // Mock dependencies
 jest.mock('@/store/calculateResult', () => ({
@@ -152,7 +152,7 @@ describe('handleNumericKeyDown', () => {
   });
 });
 
-describe('Calculater Component - Input Validation', () => {
+describe('Calculator Component - Input Validation', () => {
   const mockSetCalculate = jest.fn();
 
   beforeEach(() => {
@@ -182,7 +182,7 @@ describe('Calculater Component - Input Validation', () => {
 
   it('should render all three numeric inputs', () => {
     const { container } = render(
-      <Calculater
+      <Calculator
         homeService={false}
         setHomeService={jest.fn()}
         onboarding={false}
@@ -203,7 +203,7 @@ describe('Calculater Component - Input Validation', () => {
 
   it('should sanitize pasted content in staff input', () => {
     const { container } = render(
-      <Calculater
+      <Calculator
         homeService={false}
         setHomeService={jest.fn()}
         onboarding={false}
@@ -230,7 +230,7 @@ describe('Calculater Component - Input Validation', () => {
 
   it('should handle onChange with Arabic numerals in workspace input', () => {
     const { container } = render(
-      <Calculater
+      <Calculator
         homeService={false}
         setHomeService={jest.fn()}
         onboarding={false}
@@ -257,7 +257,7 @@ describe('Calculater Component - Input Validation', () => {
 
   it('should prevent non-numeric key presses in country input', () => {
     const { container } = render(
-      <Calculater
+      <Calculator
         homeService={false}
         setHomeService={jest.fn()}
         onboarding={false}
@@ -287,7 +287,7 @@ describe('Calculater Component - Input Validation', () => {
 
   it('should allow numeric key presses', () => {
     const { container } = render(
-      <Calculater
+      <Calculator
         homeService={false}
         setHomeService={jest.fn()}
         onboarding={false}
@@ -317,7 +317,7 @@ describe('Calculater Component - Input Validation', () => {
 
   it('should have correct input attributes for mobile', () => {
     const { container } = render(
-      <Calculater
+      <Calculator
         homeService={false}
         setHomeService={jest.fn()}
         onboarding={false}

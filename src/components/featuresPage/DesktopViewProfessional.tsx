@@ -1,12 +1,12 @@
 'use client';
 import Image from 'next/image';
 import { Separator } from '../ui/separator';
-import { TabsFeaturesProfessional } from './TabsFeturesPagw';
+import { TabsFeaturesProfessional } from './TabsFeaturesPage';
 import imageLeaf from '../../assets/images/features/business/LeafBusinessFeature.png';
 import imageLeafRight from '../../assets/images/features/business/LeafBusinessRight.png';
 import imageLeafLast from '../../assets/images/features/business/LeafBusinessBottom.png';
 
-import { ColumnTabsDesctop } from './ColumnTabsDesctop';
+import { ColumnTabsDesktop } from './ColumnTabsDesktop';
 import { CategoryData, CategoryKey } from '@/app/[locale]/features/business/FeaturesBusinessClient';
 
 interface SectionConfig {
@@ -86,7 +86,7 @@ const SECTIONS: SectionConfig[] = [
   },
 ];
 
-export const DesctopViewProfessional = ({
+export const DesktopViewProfessional = ({
   dataBusiness,
   categoryData,
 }: {
@@ -102,7 +102,7 @@ export const DesctopViewProfessional = ({
         const sectionData = dataBusiness?.[section.titleField];
         const Component =
           section.layout === 'horizontal'
-            ? ColumnTabsDesctop
+            ? ColumnTabsDesktop
             : TabsFeaturesProfessional;
 
         return (

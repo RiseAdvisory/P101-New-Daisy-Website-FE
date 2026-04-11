@@ -1,5 +1,5 @@
 import { render, screen, waitFor } from '@testing-library/react';
-import { AboutPosts } from '../AbouPosts';
+import { AboutPosts } from '../AboutPosts';
 import DOMPurify from 'dompurify';
 
 // Mock dependencies

@@ -1,7 +1,7 @@
 'use client';
 import { TestimonialsCustomerList } from '@/components/blogPage/testimonialsPage/ListTestimonials';
 import { HeroPage } from '@/components/heroSection/HeroSection';
-import { OurPartnersSection } from '@/components/ourPartnters/OurPartnersSection';
+import { OurPartnersSection } from '@/components/ourPartners/OurPartnersSection';
 import Separator from '@/components/separator/Separator';
 import { useEffect, useMemo, useState } from 'react';
 import { useMyContext } from '@/app/MyContext';

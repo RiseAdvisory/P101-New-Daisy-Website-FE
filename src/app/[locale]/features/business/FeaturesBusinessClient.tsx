@@ -1,5 +1,5 @@
 'use client';
-import { DesctopViewProfessional } from '@/components/featuresPage/DesctopViewProfessional';
+import { DesktopViewProfessional } from '@/components/featuresPage/DesktopViewProfessional';
 import { MobileViewProfessional } from '@/components/featuresPage/MobileSectionProfessional';
 import { SectionBusiness } from '@/components/featuresPage/SectionBusiness';
 import { SignUpBlog } from '@/components/featuresPage/SignUpBlog';
@@ -40,7 +40,7 @@ export const FeaturesBusinessClient = ({ lang }: { lang: string }) => {
         dataFeatures={data}
         categoryData={categoryData}
       />
-      <DesctopViewProfessional dataBusiness={data} categoryData={categoryData} />
+      <DesktopViewProfessional dataBusiness={data} categoryData={categoryData} />
       <SignUpBlog style="-mx-4" />
     </div>
   );

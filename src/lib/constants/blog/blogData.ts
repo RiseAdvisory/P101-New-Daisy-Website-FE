@@ -79,9 +79,8 @@ export interface LocalBlogPost {
     locale: string;
     sortId?: number;
     tags?: {
-      wellness?: string;
-      hair?: string;
-      digital?: string;
+      category?: string;
+      topic?: string;
       [key: string]: string | undefined;
     };
     user?: {

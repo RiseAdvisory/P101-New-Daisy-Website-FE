@@ -20,7 +20,7 @@ const ToggleButton = ({ className }: { className?: string }) => {
 
   const data = t(headerData, locale);
   // Filter out customer option
-  const dataList = data.optionsToogle.filter(
+  const dataList = data.optionsToggle.filter(
     (option) => !option.path.includes('customer'),
   );
 

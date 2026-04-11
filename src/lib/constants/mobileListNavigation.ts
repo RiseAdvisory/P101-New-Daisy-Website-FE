@@ -1,6 +1,6 @@
 export const mobileListNavigation = [
   { title: 'Home', nav: '/' },
-  { title: 'Fetures', nav: '/features' },
+  { title: 'Features', nav: '/features' },
   { title: 'Pricing', nav: '/pricing' },
   {
     title: 'Resources',

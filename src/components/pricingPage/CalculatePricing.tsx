@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '../ui/button';
-import { Calculater } from './Calculater';
+import { Calculator } from './Calculator';
 import { ResultCalculate } from './ResultCalculate';
 import { cn } from '@/lib/utils';
 import { useCalculate } from '@/store/calculateResult';
@@ -91,7 +91,7 @@ export const CalculatePricing = ({
         </div>
         <Separator className="mt-6 bg-[#E8E9E9] -mx-4 w-full max-w-full" />
         {onCalculates ? (
-          <Calculater
+          <Calculator
             calculationFormRef={calculationFormRef}
             homeService={homeService}
             setHomeService={setHomeService}

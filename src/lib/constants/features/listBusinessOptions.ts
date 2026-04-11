@@ -10,7 +10,7 @@ export const listImageBusiness = [
   { src: lastPhone, style: 'w-[220px] h-[350px]' },
 ];
 
-export const listImageBusinessDesctop = [
+export const listImageBusinessDesktop = [
   { src: phoneFirst, style: 'w-[220px] h-[350px]' },
   { src: Ipad, style: 'w-[515px] h-[350px]' },
   { src: lastPhone, style: 'w-[220px] h-[350px]' },

@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
 import { ImageWrapper } from './ImageWrapper';
 
-interface ColumnTabsDesctopProps {
+interface ColumnTabsDesktopProps {
   itemsList: any;
   styleLeaf: any;
   bgImage: any;
@@ -18,7 +18,7 @@ interface ColumnTabsDesctopProps {
   idFeatures: any;
 }
 
-export const ColumnTabsDesctop: React.FC<ColumnTabsDesctopProps> = ({
+export const ColumnTabsDesktop: React.FC<ColumnTabsDesktopProps> = ({
   itemsList,
   styleLeaf,
   bgImage,

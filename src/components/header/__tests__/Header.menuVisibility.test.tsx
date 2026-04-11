@@ -52,7 +52,7 @@ jest.mock('../../buttonApp/GetAppButton', () => ({
   GetAppButton: () => <div>Get App Button</div>,
 }));
 
-jest.mock('../../toogleHeader/ToogleHeader', () => ({
+jest.mock('../../toggleHeader/ToggleHeader', () => ({
   __esModule: true,
   default: () => <div>Toggle Button</div>,
 }));

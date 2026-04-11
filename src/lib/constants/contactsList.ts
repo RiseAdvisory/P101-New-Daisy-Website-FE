@@ -2,7 +2,7 @@ import { MessageIcons } from '../../assets/icons/messageIcons/MessageIcons';
 import { PhoneIcon } from '../../assets/icons/phoneIcon/PhoneIcon';
 import { SupportIcon } from '../../assets/icons/supportIcon/SupportIcon';
 
-export const constactsList = [
+export const contactsList = [
   {
     icon: MessageIcons,
     title: 'Email us:',

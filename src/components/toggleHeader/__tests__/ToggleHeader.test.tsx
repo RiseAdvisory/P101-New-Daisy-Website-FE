@@ -1,5 +1,5 @@
 import { render, screen, fireEvent, cleanup } from '@testing-library/react';
-import ToggleButton from '../ToogleHeader';
+import ToggleButton from '../ToggleHeader';
 
 // Mock next/navigation
 const mockPush = jest.fn();
@@ -35,21 +35,21 @@ jest.mock('@/lib/constants/shared/headerData', () => ({
   headerData: {
     en: {
       headerNavList: [],
-      optionsToogle: [
+      optionsToggle: [
         { label: 'Business', path: '/business' },
         { label: 'Professional', path: '/professional' },
       ],
-      optionsTooglseFeatures: [],
+      optionsToggleFeatures: [],
       getTheApp: 'Start Free Trial',
       listLanguage: [],
     },
     ar: {
       headerNavList: [],
-      optionsToogle: [
+      optionsToggle: [
         { label: 'Business', path: '/business' },
         { label: 'Professional', path: '/professional' },
       ],
-      optionsTooglseFeatures: [],
+      optionsToggleFeatures: [],
       getTheApp: 'Start Free Trial',
       listLanguage: [],
     },

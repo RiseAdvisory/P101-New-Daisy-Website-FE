@@ -1,6 +1,6 @@
 'use client';
 import { HeroPage } from '@/components/heroSection/HeroSection';
-import { PrivacyPoliceList } from '@/components/privacyPolice/PrivacyPolicyList';
+import { PrivacyPolicyList } from '@/components/privacyPolicy/PrivacyPolicyList';
 import { privacyPolicyPageData } from '@/lib/constants/privacyPolicyData';
 import { t } from '@/lib/constants/i18n';
 import { useState } from 'react';
@@ -24,7 +24,7 @@ export const PrivacyPolicyClient = ({ lang }: { lang: string }) => {
         styleSection="pb-[100px] pt-6 px-[16px] h-screen"
         secondDescription={data.descriptionHero}
       />
-      <PrivacyPoliceList setScroll={setScroll} dataSection={data} />
+      <PrivacyPolicyList setScroll={setScroll} dataSection={data} />
     </>
   );
 };

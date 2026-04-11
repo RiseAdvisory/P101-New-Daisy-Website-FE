@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import stars from '../../assets/images/stars-background-decoration.png';
 import { cn } from '@/lib/utils';
-import { TogglePricing } from './TooglePricing';
+import { TogglePricing } from './TogglePricing';
 import { CalculatePricing } from './CalculatePricing';
 import { Dispatch, SetStateAction } from 'react';
 
@@ -29,7 +29,7 @@ export const PricingHero = ({
   checkedAnnual: boolean;
   setCheckedAnnual: Dispatch<SetStateAction<boolean>>;
 }) => {
-  const toogleName = dataPricing?.toggleBusinessProfessional;
+  const toggleName = dataPricing?.toggleBusinessProfessional;
 
   return (
     <div
@@ -50,7 +50,7 @@ export const PricingHero = ({
 
       <div>
         <TogglePricing
-          toogleName={toogleName}
+          toggleName={toggleName}
           setCurrentPricing={setActivePricingPage}
           className="mt-[46px]"
         />

@@ -31,8 +31,8 @@ jest.mock('@/components/featuresPage/SectionBusiness', () => ({
   ),
 }));
 
-jest.mock('@/components/featuresPage/DesctopViewProfessional', () => ({
-  DesctopViewProfessional: ({
+jest.mock('@/components/featuresPage/DesktopViewProfessional', () => ({
+  DesktopViewProfessional: ({
     categoryData,
   }: {
     dataBusiness: any;

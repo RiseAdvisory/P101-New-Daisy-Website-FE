@@ -1,4 +1,4 @@
-import { MissionIcon } from '../../assets/icons/missioIcon/MissionIcon';
+import { MissionIcon } from '../../assets/icons/missionIcon/MissionIcon';
 import { StarsIcons } from '../../assets/icons/starsIcon/StarIcons';
 import { StrategyIcons } from '../../assets/icons/strategyIcon/StrategyIcon';
 export const daisyMission = [

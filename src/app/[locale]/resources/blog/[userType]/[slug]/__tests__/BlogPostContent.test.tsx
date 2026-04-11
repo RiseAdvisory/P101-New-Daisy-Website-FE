@@ -27,7 +27,7 @@ jest.mock('@/components/blogPage/blogPosts/HeroBlogId', () => ({
   HeroBlogPage: () => <div data-testid="hero-blog-page">Hero</div>,
 }));
 
-jest.mock('@/components/blogPage/blogPosts/AbouPosts', () => ({
+jest.mock('@/components/blogPage/blogPosts/AboutPosts', () => ({
   AboutPosts: () => <div data-testid="about-posts">About Posts</div>,
 }));
 
@@ -40,8 +40,8 @@ jest.mock('@/components/blogPage/blogPosts/CreatePerfect', () => ({
   ),
 }));
 
-jest.mock('@/components/blogPage/blogPosts/SimiliarTopics', () => ({
-  SimiliarTopick: ({ titleSimilar }: any) => (
+jest.mock('@/components/blogPage/blogPosts/SimilarTopics', () => ({
+  SimilarTopics: ({ titleSimilar }: any) => (
     <div data-testid="similar-topics">
       <span data-testid="title-similar">{titleSimilar}</span>
     </div>

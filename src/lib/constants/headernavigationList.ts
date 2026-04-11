@@ -6,12 +6,12 @@ export const headerNavigationList = [
   { title: 'About', nav: '/about' },
   { title: 'Contact', nav: '/contact' },
 ];
-export const optionsToogle = [
+export const optionsToggle = [
   { label: 'Business', path: '/business' },
   { label: 'Customer', path: '/customer' },
   { label: 'Professional', path: '/professional' },
 ];
-export const optionsToogleFeatures = [
+export const optionsToggleFeatures = [
   { label: 'Business', path: '/features/business' },
   { label: 'Customer', path: '/features/customer' },
   { label: 'Professional', path: '/features/professional' },
@@ -22,7 +22,7 @@ export const changeLanguage = [
   { label: 'Ar', path: 'ar' },
 ];
 
-export const optionsTooglePricing = [
+export const optionsTogglePricing = [
   { label: 'Business', path: 'business' },
   { label: 'Professional', path: 'professional' },
 ];

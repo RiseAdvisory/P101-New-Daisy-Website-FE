@@ -8,7 +8,7 @@ import { DropDownMobileHeader } from '../dropdownMobileHeader/DropdownMobileHead
 import { usePathname } from 'next/navigation';
 import { DropdownResources } from '../blogPage/DropDownResources';
 import { MobileMenu } from '../mobileMenu/mobileMenu';
-import ToggleButton from '../toogleHeader/ToogleHeader';
+import ToggleButton from '../toggleHeader/ToggleHeader';
 import { DropDownMobileHeaderLang } from '../dropdownMobileHeader/DropDownMobileHeaderLang';
 import { useChangeLanguage } from '@/store/language';
 import { useChangePage } from '@/store/currentPage';
@@ -39,8 +39,8 @@ export const Header = () => {
 
   const data = t(headerData, locale);
   const listHeader = data.headerNavList;
-  const optionsToogle = data.optionsToogle;
-  const optionsToogleFeature = data.optionsTooglseFeatures;
+  const optionsToggle = data.optionsToggle;
+  const optionsToggleFeature = data.optionsToggleFeatures;
   const getTheApp = data.getTheApp;
   const listLanguage = data.listLanguage;
 
@@ -78,8 +78,8 @@ export const Header = () => {
   };
 
   const navListFeatures = path.includes('features')
-    ? optionsToogleFeature
-    : optionsToogle;
+    ? optionsToggleFeature
+    : optionsToggle;
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
