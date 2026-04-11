@@ -427,7 +427,7 @@ const whiteLabelBookingArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>What Is White-Label Booking?</h2>
 <p>White-label booking is a booking system that operates entirely under your salon&rsquo;s brand. Your logo, your colours, your domain, your messaging - with zero visibility of the underlying software provider. When a client books an appointment, they interact exclusively with your brand from the first click to the confirmation message.</p>
-<p>Most salon software forces you to send clients to a booking page plastered with the software company&rsquo;s logo and branding. Every time a client books, they see another company&rsquo;s name - not yours. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy take a fundamentally different approach: your brand is the only brand your clients ever see throughout the entire booking experience, confirmations, reminders, and follow-ups.</p>
+<p>Most <a href="/en/glossary/salon-management-software">salon software</a> forces you to send clients to a booking page plastered with the software company&rsquo;s logo and branding. Every time a client books, they see another company&rsquo;s name - not yours. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy take a fundamentally different approach: your brand is the only brand your clients ever see throughout the entire booking experience, confirmations, reminders, and follow-ups.</p>
 
 <h2>Why Your Brand Experience Matters in the Booking Flow</h2>
 <p>The booking moment is one of the most critical touchpoints in your client relationship. It is the moment when a potential client commits to spending money with you. The experience at this moment shapes their perception of your salon before they ever walk through the door.</p>
@@ -836,7 +836,7 @@ const modernSalonsAiArticle: LocalBlogPost = {
 <p>This distinction sounds subtle, but the operational impact is enormous. Software is a passive tool. An AI platform is an active business partner. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy represent a fundamental shift from tools that wait for instructions to systems that anticipate needs, optimise operations, and drive growth autonomously.</p>
 
 <h2>Where Traditional Salon Software Falls Short</h2>
-<p>Traditional salon software has served the industry for two decades. It solved real problems: replacing paper appointment books with digital calendars, enabling online booking, and automating basic reminders. But in a market that is becoming increasingly competitive and client expectations are rising, the limitations of traditional software are becoming clear.</p>
+<p>Traditional <a href="/en/salon-management-software">salon software</a> has served the industry for two decades. It solved real problems: replacing paper appointment books with digital calendars, enabling online booking, and automating basic reminders. But in a market that is becoming increasingly competitive and client expectations are rising, the limitations of traditional software are becoming clear.</p>
 
 <h3>Reactive, Not Proactive</h3>
 <p>Traditional software waits for you to take action. A client cancels? The software shows an empty slot. It is up to you to notice, contact waitlisted clients, and fill the gap. A slow week ahead? The software shows a sparse calendar. It is up to you to create a promotion, draft a message, and send it out.</p>

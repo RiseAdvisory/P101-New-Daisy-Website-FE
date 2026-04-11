@@ -73,7 +73,7 @@ const salonPosSystemsArticle: LocalBlogPost = {
 <p>Cons: Depends on device battery and performance, may feel less professional than a dedicated terminal for some clients.</p>
 
 <h3>The Best Approach for Most Salons</h3>
-<p>Most salons in 2026 benefit from a hybrid approach: a software-based POS on a tablet at the front desk (which also handles check-in, appointment management, and retail sales) combined with a compact card reader for payment processing. Platforms like <a href="/en/features/business/payment-processing">The Daisy</a> integrate payment processing directly into the salon management workflow, so checkout is a natural extension of the appointment rather than a separate step.</p>
+<p>Most salons in 2026 benefit from a hybrid approach: a software-based POS on a tablet at the front desk (which also handles check-in, appointment management, and retail sales) combined with a compact card reader for payment processing. Platforms like <a href="/en/features/business/payment-processing">The Daisy</a> integrate payment processing directly into the <a href="/en/glossary/salon-management-software">salon management</a> workflow, so checkout is a natural extension of the appointment rather than a separate step.</p>
 
 <h2>The 8 Features That Matter Most</h2>
 <p>When evaluating salon POS systems, these are the features that separate adequate tools from excellent ones:</p>
@@ -147,7 +147,7 @@ const salonPosSystemsArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How much does a salon POS system cost?</h3>
-<p>Costs vary by provider and setup. Hardware terminals range from $200-$600 one-time. Software subscriptions range from $30-$150 per month depending on features. Processing fees are typically 2.5-2.9% per transaction. The Daisy integrates POS into its salon management platform, so you get payment processing alongside booking, scheduling, and client management without paying for separate systems.</p>
+<p>Costs vary by provider and setup. Hardware terminals range from $200-$600 one-time. Software subscriptions range from $30-$150 per month depending on features. Processing fees are typically 2.5-2.9% per transaction. The Daisy integrates POS into its <a href="/en/salon-management-software">salon management platform</a>, so you get payment processing alongside booking, scheduling, and client management without paying for separate systems.</p>
 
 <h3>Can I keep my current payment processor with a new POS?</h3>
 <p>It depends on the POS provider. Some systems are processor-agnostic and connect to your existing merchant account. Others, like integrated platforms, use their own built-in processing. Integrated processing is generally simpler to manage and provides better data connectivity between payments and your salon management tools.</p>

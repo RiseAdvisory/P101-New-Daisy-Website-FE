@@ -468,7 +468,7 @@ const revenueForecastingArticle: LocalBlogPost = {
 <p>You do not need expensive financial software to start forecasting. Here are your options from simplest to most sophisticated:</p>
 <ul>
 <li><strong>Spreadsheet templates:</strong> A basic Excel or Google Sheets template with historical revenue, seasonal indices, and growth rate formulas covers the essentials. This works for salons just starting with forecasting but requires manual data entry.</li>
-<li><strong>Salon management software:</strong> Most modern salon platforms include basic reporting that can support forecasting. Look for platforms that export data cleanly and provide historical trend views.</li>
+<li><strong><a href="/en/glossary/salon-management-software">Salon management software</a>:</strong> Most modern salon platforms include basic reporting that can support forecasting. Look for platforms that export data cleanly and provide historical trend views.</li>
 <li><strong>Integrated analytics platforms:</strong> <a href="/en/features/business/analytics-reports">The Daisy&rsquo;s analytics and reporting suite</a> builds revenue forecasting directly into the salon management workflow. Forecasts update automatically as booking and revenue data flows in, eliminating manual calculation entirely.</li>
 </ul>
 <p>Regardless of the tool you choose, the most important factor is consistency. A simple forecast reviewed weekly produces better decisions than a sophisticated model reviewed quarterly.</p>
@@ -817,7 +817,7 @@ const dataDrivenSalonsArticle: LocalBlogPost = {
 <li><strong>Staff data:</strong> Individual utilisation rates, revenue generated, retention rates for their clients, service mix, and rebooking rates.</li>
 <li><strong>Marketing data:</strong> Acquisition channel for new clients, campaign costs, conversion rates from inquiry to booking, and client lifetime value by channel.</li>
 </ul>
-<p>The key principle: capture data as a byproduct of normal operations, not as an additional task. When data collection requires extra work, it stops happening. When it is automatic - as with integrated salon management platforms - it accumulates effortlessly and becomes increasingly valuable over time.</p>
+<p>The key principle: capture data as a byproduct of normal operations, not as an additional task. When data collection requires extra work, it stops happening. When it is automatic - as with integrated <a href="/en/salon-management-software">salon management platforms</a> - it accumulates effortlessly and becomes increasingly valuable over time.</p>
 
 <h2>Overcoming Common Objections to Data-Driven Management</h2>
 <p>Salon owners often resist data-driven approaches for understandable reasons. Here are the most common objections and honest responses:</p>

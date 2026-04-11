@@ -112,7 +112,7 @@ const howToStartBeautyBusinessArticle: LocalBlogPost = {
 <li><strong>Salon management platform:</strong> Booking, client management, payment processing, staff scheduling, and analytics in one system. <a href="/en/features/business/booking-management">The Daisy</a> is built specifically for beauty businesses, providing all of these capabilities with AI-powered features that automate routine tasks.</li>
 <li><strong>Payment processing:</strong> Accept cards, contactless payments, and digital wallets. Integrated payment processing through your salon platform eliminates the need for a separate POS terminal.</li>
 <li><strong>Marketing tools:</strong> Email/SMS campaign capability, review management, and social media scheduling. <a href="/en/features/business/marketing-promotions">The Daisy's marketing tools</a> are included in the platform.</li>
-<li><strong>Accounting software:</strong> Track revenue, expenses, payroll, and tax obligations from day one. Integrate with your salon management platform for automatic revenue tracking.</li>
+<li><strong>Accounting software:</strong> Track revenue, expenses, payroll, and tax obligations from day one. Integrate with your <a href="/en/glossary/salon-management-software">salon management platform</a> for automatic revenue tracking.</li>
 </ul>
 
 <h2>Step 6: Build Your Team</h2>
@@ -498,7 +498,7 @@ const expandingSalonLocationsArticle: LocalBlogPost = {
 <ul>
 <li><strong>Documented systems:</strong> Can your salon run for two weeks without your daily involvement? If not, you need to systemise before expanding.</li>
 <li><strong>Strong management:</strong> You need a trusted manager at your existing location who can maintain standards while your attention is divided.</li>
-<li><strong>Technology infrastructure:</strong> Your salon management platform must support multi-location operations. <a href="/en/features/business/business-growth">The Daisy</a> is designed for multi-branch beauty businesses, providing centralised management across all locations.</li>
+<li><strong>Technology infrastructure:</strong> Your <a href="/en/salon-management-software">salon management platform</a> must support multi-location operations. <a href="/en/features/business/business-growth">The Daisy</a> is designed for multi-branch beauty businesses, providing centralised management across all locations.</li>
 </ul>
 
 <h3>Market Readiness</h3>
