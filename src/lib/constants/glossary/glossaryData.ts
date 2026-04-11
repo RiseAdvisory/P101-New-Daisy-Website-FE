@@ -19,7 +19,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     definition:
       'is a digital platform that helps salon owners manage daily operations including appointment scheduling, client records, staff management, payments, and marketing from a single system.',
     extendedDescription:
-      'Salon management software replaces manual booking systems, paper records, and disconnected tools with one integrated platform. Modern solutions like Daisy go beyond basic operations to include AI-powered features such as automated customer acquisition, voice receptionists, and predictive analytics. The global salon software market is projected to reach $712 million by 2028, driven by increasing demand for automation and customer experience tools.',
+      'Salon management software replaces manual booking systems, paper records, and disconnected tools with one integrated platform. Modern solutions like Daisy go beyond basic operations to include AI-powered features such as automated customer acquisition, voice receptionists, and predictive analytics. The global salon software market is projected to reach $712 million by 2028, driven by increasing demand for automation and customer experience tools. For a comprehensive evaluation framework, read the <a href="/en/salon-management-software">complete salon management software guide</a>.',
     keyFeatures: [
       { label: 'Online Booking', daisy: 'AI-powered 24/7', typical: 'Basic web form' },
       { label: 'Payment Processing', daisy: 'No transaction fees', typical: '2-3% per transaction' },
@@ -72,7 +72,7 @@ export const glossaryEntries: GlossaryEntry[] = [
           'Daisy offers native iOS and Android apps plus a progressive web app, so you can manage your salon from any device. Staff can view schedules, check in clients, and process payments directly from their phones.',
       },
     ],
-    relatedTerms: ['salon-booking-software', 'ai-receptionist-for-salons', 'white-label-salon-software'],
+    relatedTerms: ['salon-booking-software', 'ai-receptionist-for-salons', 'white-label-salon-software', 'salon-management-system', 'salon-employee-management-software', 'salon-customer-management'],
     metaTitle: 'What is Salon Management Software? | Definition & Features Guide',
     metaDescription:
       'Learn what salon management software is, key features to look for, and how AI-powered platforms like Daisy help salons grow with automated booking, payments, and marketing.',
@@ -84,7 +84,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     definition:
       'is an artificial intelligence system that handles phone calls, chat messages, and booking inquiries for beauty businesses 24/7, automatically scheduling appointments, answering questions, and processing payments without human intervention.',
     extendedDescription:
-      'An AI receptionist uses natural language processing and voice synthesis to interact with customers just like a human receptionist would. It can answer calls during and after business hours, handle multiple conversations simultaneously, and convert inquiries into bookings. Research indicates that beauty businesses miss up to 35% of inbound calls outside business hours -- revenue that an AI receptionist can recapture.',
+      'An AI receptionist uses natural language processing and voice synthesis to interact with customers just like a human receptionist would. It can answer calls during and after business hours, handle multiple conversations simultaneously, and convert inquiries into bookings. Research indicates that beauty businesses miss up to 35% of inbound calls outside business hours -- revenue that an AI receptionist can recapture. Learn how AI receptionist capabilities fit into a <a href="/en/salon-management-software">complete salon management platform</a>.',
     keyFeatures: [
       { label: '24/7 Availability', daisy: 'Always on', typical: 'Business hours only' },
       { label: 'Language Support', daisy: 'Arabic & English', typical: 'English only' },
@@ -149,7 +149,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     definition:
       'is a customer loyalty mechanism where beauty service platforms return a percentage of each booking value to the customer, incentivizing repeat visits and new customer acquisition through a rewards-based marketplace.',
     extendedDescription:
-      'Cashback in beauty booking works differently from traditional discount-based loyalty programs. Instead of devaluing services with percentage-off deals, cashback rewards customers with credits for future visits. This approach increases customer lifetime value by an estimated 20-30% while maintaining full service pricing. The model has been proven in retail and fintech and is now transforming beauty industry customer acquisition.',
+      'Cashback in beauty booking works differently from traditional discount-based loyalty programs. Instead of devaluing services with percentage-off deals, cashback rewards customers with credits for future visits. This approach increases customer lifetime value by an estimated 20-30% while maintaining full service pricing. The model has been proven in retail and fintech and is now transforming beauty industry customer acquisition. See how cashback integrates with <a href="/en/glossary/salon-customer-management">salon customer management</a> to maximize client lifetime value.',
     keyFeatures: [
       { label: 'Reward Type', daisy: 'Cashback credits', typical: 'Points or discounts' },
       { label: 'Impact on Pricing', daisy: 'Full price maintained', typical: 'Discounted services' },
@@ -214,7 +214,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     definition:
       'is a salon management platform that can be fully rebranded with your business\'s logo, colors, domain, and identity -- so every customer touchpoint (booking page, app, receipts, communications) shows your brand, not the software provider\'s.',
     extendedDescription:
-      'White-label salon software solves a critical branding problem: most salon platforms force businesses to use the provider\'s branding, which dilutes brand identity and creates customer confusion. With white-label solutions, your booking page looks like YOUR website, confirmation emails come from YOUR brand, and the customer experience is seamlessly branded. This is particularly important for premium salons and multi-location businesses building brand equity.',
+      'White-label salon software solves a critical branding problem: most salon platforms force businesses to use the provider\'s branding, which dilutes brand identity and creates customer confusion. With white-label solutions, your booking page looks like YOUR website, confirmation emails come from YOUR brand, and the customer experience is seamlessly branded. This is particularly important for premium salons and multi-location businesses building brand equity. Explore how white-label capabilities work alongside other features in a <a href="/en/salon-management-software">modern salon management system</a>.',
     keyFeatures: [
       { label: 'Booking Page', daisy: 'Fully branded', typical: 'Provider branded' },
       { label: 'Customer Communications', daisy: 'Your brand', typical: 'Software brand' },
@@ -279,7 +279,7 @@ export const glossaryEntries: GlossaryEntry[] = [
     definition:
       'is a digital tool that enables beauty businesses to accept, manage, and optimize appointment bookings online -- allowing customers to self-schedule 24/7 and reducing no-shows through automated reminders.',
     extendedDescription:
-      'Salon booking software has evolved from simple online calendars to sophisticated platforms with AI-driven scheduling, waitlist management, and multi-channel booking (website, app, social media, Google). Studies show that salons offering online booking see up to 40% more appointments, while automated reminders reduce no-shows by 30-40%. The best booking systems integrate with payments, CRM, and marketing tools.',
+      'Salon booking software has evolved from simple online calendars to sophisticated platforms with AI-driven scheduling, waitlist management, and multi-channel booking (website, app, social media, Google). Studies show that salons offering online booking see up to 40% more appointments, while automated reminders reduce no-shows by 30-40%. The best booking systems integrate with payments, CRM, and marketing tools. Booking software is a core component of any <a href="/en/glossary/salon-management-system">salon management system</a>.',
     keyFeatures: [
       { label: '24/7 Online Booking', daisy: 'AI-powered', typical: 'Basic web widget' },
       { label: 'Automated Reminders', daisy: 'SMS + Email + WhatsApp', typical: 'Email only' },
