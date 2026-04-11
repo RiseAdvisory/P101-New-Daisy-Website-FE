@@ -42,7 +42,7 @@ const onlineBookingSetupArticle: LocalBlogPost = {
       'A step-by-step guide to setting up online booking for your salon. Learn how to choose the right system, configure services, and start accepting appointments online within a day.',
     aboutPosts: `
 <h2>Why Every Salon Needs Online Booking in 2026</h2>
-<p>The data is clear: 72% of beauty service bookings now originate from a mobile device, and 67% of customers say they prefer booking online over calling. Salons without an online booking system are losing clients to competitors who make it easy to book with a few taps.</p>
+<p>The data is clear: 72% of beauty service bookings now originate from a mobile device, and 67% of customers say they prefer booking online over calling. Salons without an online <a href="/en/glossary/salon-management-software">booking system</a> are losing clients to competitors who make it easy to book with a few taps.</p>
 <p>Online booking is no longer a nice-to-have - it is the primary way customers expect to interact with your business. This guide walks you through setting up a complete online booking system for your salon, from choosing the right platform to going live.</p>
 
 <h2>What an Online Booking System Actually Does</h2>
@@ -56,7 +56,7 @@ const onlineBookingSetupArticle: LocalBlogPost = {
 </ul>
 
 <h2>Step 1: Choose the Right Booking Platform</h2>
-<p>Not all booking systems are equal. The right platform for your salon depends on your size, services, and growth plans. Here is what to evaluate:</p>
+<p>Not all booking systems are equal. The <a href="/en/salon-management-software">right platform for your salon</a> depends on your size, services, and growth plans. Here is what to evaluate:</p>
 
 <h3>Must-Have Features</h3>
 <ul>

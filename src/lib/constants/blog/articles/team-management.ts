@@ -400,7 +400,7 @@ const managingPermissionsArticle: LocalBlogPost = {
       'A practical guide to setting up role-based access control in your salon software. Learn how to define permissions for owners, managers, senior stylists, and junior staff to protect sensitive data while empowering your team.',
     aboutPosts: `
 <h2>Why Access Control Matters More Than You Think</h2>
-<p>Most salon owners set up their management software, give everyone full access, and never think about permissions again - until something goes wrong. A junior stylist accidentally discounts a high-value service. A receptionist exports the entire client database before leaving for a competitor. A team member sees what everyone else earns and morale craters.</p>
+<p>Most salon owners set up their <a href="/en/salon-management-software">management software</a>, give everyone full access, and never think about permissions again - until something goes wrong. A junior stylist accidentally discounts a high-value service. A receptionist exports the entire client database before leaving for a competitor. A team member sees what everyone else earns and morale craters.</p>
 <p>These are not hypothetical scenarios. A 2025 study by the Salon Business Advisors Network found that 34% of salon owners reported a data misuse incident in the previous 12 months, and 62% of those incidents were caused by staff with access permissions that were too broad. The solution is not restricting everything - it is giving each team member access to exactly what they need to do their job, and nothing more.</p>
 <p>This principle is called &ldquo;least privilege&rdquo; in security, and it is the foundation of effective permission management. This guide shows you how to implement it in your salon using role-based access control.</p>
 
@@ -408,7 +408,7 @@ const managingPermissionsArticle: LocalBlogPost = {
 <p>Role-based access control assigns permissions to roles, not to individuals. Instead of configuring access for each person one by one, you define what each role can see and do, then assign team members to the appropriate role. When someone changes positions or leaves, you simply change their role assignment.</p>
 <p>For a typical salon, these roles cover the majority of scenarios:</p>
 <ul>
-<li><strong>Owner / Administrator:</strong> Full access to everything - financials, reports, client data, settings, staff management, and system configuration.</li>
+<li><strong>Owner / Administrator:</strong> Full access to everything - financials, reports, client data, settings, <a href="/en/glossary/salon-employee-management-software">staff management</a>, and system configuration.</li>
 <li><strong>Salon Manager:</strong> Access to daily operations, staff schedules, client records, booking management, and basic reporting. Typically restricted from changing business settings, subscription details, and detailed financial data like profit margins.</li>
 <li><strong>Senior Stylist / Team Lead:</strong> Access to their own schedule, their assigned clients, service notes, and performance metrics. May have limited access to team schedules for coordination purposes.</li>
 <li><strong>Stylist / Technician:</strong> Access to their own schedule, appointment details for their upcoming clients, and the ability to add service notes. No access to other team members' data, financials, or business reports.</li>
@@ -447,7 +447,7 @@ const managingPermissionsArticle: LocalBlogPost = {
 <p>Follow this process to implement role-based permissions in your salon:</p>
 
 <h3>Step 1: Audit Current Access</h3>
-<p>Before changing anything, document who currently has access to what. Log into your salon management software and review each team member's current permission level. You will likely find that everyone has the same broad access - which is exactly the problem to fix.</p>
+<p>Before changing anything, document who currently has access to what. Log into your <a href="/en/glossary/salon-management-software">salon management software</a> and review each team member's current permission level. You will likely find that everyone has the same broad access - which is exactly the problem to fix.</p>
 
 <h3>Step 2: Define Your Roles</h3>
 <p>Based on the role descriptions above, define the specific roles that apply to your salon. A 4-person salon may only need Owner and Stylist roles. A 20-person salon with managers, receptionists, and apprentices will need all six. Do not create more roles than necessary - complexity increases the chance of misconfiguration.</p>

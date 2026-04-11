@@ -99,7 +99,7 @@ const clientRetentionRateArticle: LocalBlogPost = {
 <p>Identify your top 20% of clients by annual spend and create a differentiated experience for them: priority booking, exclusive promotions, first access to new services, a birthday gift, or a complimentary annual consultation. These clients generate a disproportionate share of your revenue and are worth investing in. A simple VIP text message - "As one of our most valued clients, we'd love to offer you first access to our new keratin treatment before we open bookings to everyone" - costs nothing but makes a powerful impression.</p>
 
 <h2>Tracking Retention with Technology</h2>
-<p>Manual retention tracking using spreadsheets is error-prone and time-consuming. Modern salon platforms calculate retention automatically and provide actionable insights:</p>
+<p>Manual retention tracking using spreadsheets is error-prone and time-consuming. Modern <a href="/en/glossary/salon-management-software">salon platforms</a> calculate retention automatically and provide actionable insights:</p>
 <ul>
 <li><strong>Automated retention rate calculation</strong> across client segments, stylists, and time periods.</li>
 <li><strong>At-risk client alerts</strong> that notify you when a regular client is approaching their lapse window, giving you time to intervene.</li>
@@ -133,7 +133,7 @@ const clientRetentionRateArticle: LocalBlogPost = {
 <p>Discounting is generally a poor retention strategy because it attracts price-sensitive clients who leave when the discount ends and trains existing clients to wait for deals. Instead, add value: complimentary add-on services, product samples, loyalty rewards, or a VIP experience. These approaches build genuine loyalty rather than temporary price-based compliance.</p>
 
 <h3>How can technology help improve my salon's retention rate?</h3>
-<p>Technology improves retention by automating the tasks that humans forget or deprioritise: sending rebooking reminders, identifying at-risk clients, tracking individual stylist retention rates, and delivering personalised communication at scale. <a href="/en/features/business/analytics-reports">The Daisy</a> combines analytics, automated messaging, and client management in a single platform, making it possible for a small salon to deliver the personalised, proactive experience that keeps clients returning.</p>
+<p>Technology improves retention by automating the tasks that humans forget or deprioritise: sending rebooking reminders, identifying at-risk clients, tracking individual stylist retention rates, and delivering personalised communication at scale. <a href="/en/features/business/analytics-reports">The Daisy</a> combines analytics, automated messaging, and <a href="/en/glossary/salon-customer-management">client management</a> in a single platform, making it possible for a small salon to deliver the personalised, proactive experience that keeps clients returning.</p>
 
 <h3>What is the difference between client retention and client satisfaction?</h3>
 <p>Satisfaction measures how clients feel about a specific visit; retention measures whether they come back. A client can be satisfied but still not return because they forgot, moved, found a more convenient option, or were never prompted to rebook. High satisfaction is necessary but not sufficient for high retention. You need both a great experience and a proactive system to convert that satisfaction into repeat visits.</p>
@@ -950,7 +950,7 @@ const independentClientLoyaltyArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How do I build loyalty when I am just starting out as an independent professional?</h3>
-<p>Start with exceptional service and reliability. Your first 20-30 clients are the foundation of your business - treat every one as a VIP. Collect their contact information, send personalised follow-ups, and ask for referrals. Build your client management system from day one rather than trying to retrofit it later. Even a simple spreadsheet with client names, services, and notes is better than relying on memory.</p>
+<p>Start with exceptional service and reliability. Your first 20-30 clients are the foundation of your business - treat every one as a VIP. Collect their contact information, send personalised follow-ups, and ask for referrals. Build your <a href="/en/salon-management-software">client management system</a> from day one rather than trying to retrofit it later. Even a simple spreadsheet with client names, services, and notes is better than relying on memory.</p>
 
 <h3>How do I compete with salon loyalty programmes as an independent?</h3>
 <p>You compete by offering what salons cannot: a deeply personal, consistent, one-on-one relationship. Salon loyalty programmes are transactional (earn points, get rewards). Your loyalty advantage is relational (genuine connection, personalised service, flexibility). A client who feels genuinely known and valued by their beauty professional will not switch to a salon for a 10% discount.</p>

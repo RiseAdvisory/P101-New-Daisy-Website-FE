@@ -302,7 +302,7 @@ const managingInstagramDmsArticle: LocalBlogPost = {
 </ul>
 
 <h3>Platform-Integrated Automation</h3>
-<p>Connecting Instagram DMs to your salon management platform unlocks more powerful automation:</p>
+<p>Connecting Instagram DMs to your <a href="/en/glossary/salon-management-software">salon management platform</a> unlocks more powerful automation:</p>
 <ul>
 <li><strong>AI-powered responses:</strong> An <a href="/en/features/business/ai-salon-management">AI receptionist</a> can read the DM, understand the intent, check real-time availability, and respond with personalised booking options - all automatically, 24/7.</li>
 <li><strong>Unified inbox:</strong> See all client messages (DMs, WhatsApp, phone, web chat) in one <a href="/en/features/business/communication-tools">communication dashboard</a> instead of checking multiple apps.</li>
@@ -494,7 +494,7 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 <li><strong>Cross-channel journeys:</strong> How often do clients use more than one channel before booking? If cross-channel journeys are common, the quality of your channel integration directly affects conversion.</li>
 <li><strong>Channel preference by segment:</strong> Do your younger clients prefer DMs while older clients prefer phone? Use this data to personalise communication channel selection.</li>
 </ul>
-<p><a href="/en/features/business/analytics-reports">Analytics dashboards</a> that aggregate data across all channels provide these insights automatically. Explore <a href="/en/pricing">The Daisy's pricing</a> to see how unified communication fits into a complete salon management solution.</p>
+<p><a href="/en/features/business/analytics-reports">Analytics dashboards</a> that aggregate data across all channels provide these insights automatically. Explore <a href="/en/pricing">The Daisy's pricing</a> to see how unified communication fits into a <a href="/en/salon-management-software">complete salon management solution</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 

@@ -113,7 +113,7 @@ const staffSchedulingArticle: LocalBlogPost = {
 <li>Maintaining a list of team members willing to pick up extra shifts on short notice</li>
 <li>Cross-training staff so multiple people can handle each service type</li>
 <li>Having a relationship with 1&ndash;2 freelance professionals who can fill in during emergencies</li>
-<li>Using your salon management platform&rsquo;s notification system to alert available staff when a shift needs covering</li>
+<li>Using your <a href="/en/glossary/salon-management-software">salon management platform</a>&rsquo;s notification system to alert available staff when a shift needs covering</li>
 </ul>
 
 <h2>Workload Balancing: Preventing Burnout and Idle Time</h2>
@@ -152,7 +152,7 @@ const staffSchedulingArticle: LocalBlogPost = {
 </ul>
 
 <h3>Choosing a Scheduling Tool</h3>
-<p>Standalone scheduling tools (Deputy, Sling, Homebase) work but create a disconnected workflow. The most efficient approach is a salon management platform with built-in scheduling that connects staff schedules to the booking calendar, so appointment availability automatically reflects who is working. The Daisy&rsquo;s <a href="/en/features/business/team-management">team management tools</a> integrate scheduling, booking, and performance tracking in one system.</p>
+<p>Standalone scheduling tools (Deputy, Sling, Homebase) work but create a disconnected workflow. The most efficient approach is a <a href="/en/salon-management-software">salon management platform</a> with built-in scheduling that connects staff schedules to the booking calendar, so appointment availability automatically reflects who is working. The Daisy&rsquo;s <a href="/en/features/business/team-management">team management tools</a> integrate scheduling, booking, and performance tracking in one system.</p>
 
 <h2>Common Scheduling Mistakes and How to Avoid Them</h2>
 
@@ -731,7 +731,7 @@ const employeeRetentionArticle: LocalBlogPost = {
 <li><strong>Stylist:</strong> Independently serving clients, developing specialisations, meeting revenue targets. 1&ndash;3 years.</li>
 <li><strong>Senior Stylist:</strong> High client demand, mentoring juniors, contributing to training programs, higher commission rate. 3&ndash;5 years.</li>
 <li><strong>Master Stylist / Creative Director:</strong> Leading trends, training the team, representing the salon brand, potential revenue-sharing or partnership. 5+ years.</li>
-<li><strong>Salon Manager / Director:</strong> Operational leadership, business development, team management. For staff who want to grow beyond the chair.</li>
+<li><strong>Salon Manager / Director:</strong> Operational leadership, business development, <a href="/en/glossary/salon-employee-management-software">team management</a>. For staff who want to grow beyond the chair.</li>
 </ul>
 
 <h3>Promotion Criteria</h3>

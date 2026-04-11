@@ -167,7 +167,7 @@ const predictiveAnalyticsArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>What Is Predictive Analytics for Salons?</h2>
 <p>Predictive analytics is the use of historical data, statistical algorithms, and machine learning to forecast future outcomes. For salons, this means using your existing booking, revenue, and client data to predict what will happen next - and make better business decisions as a result.</p>
-<p>Instead of guessing which services will be popular next month, when you will need extra staff, or which clients are at risk of leaving, predictive analytics gives you evidence-based answers. Platforms like <a href="/en/features/business/ai-salon-management">The Daisy</a> build this intelligence directly into the salon management workflow.</p>
+<p>Instead of guessing which services will be popular next month, when you will need extra staff, or which clients are at risk of leaving, predictive analytics gives you evidence-based answers. Platforms like <a href="/en/features/business/ai-salon-management">The Daisy</a> build this intelligence directly into the <a href="/en/glossary/salon-management-software">salon management</a> workflow.</p>
 
 <h2>Why Should Salon Owners Care About Predictive Analytics?</h2>
 <p>Most salon owners make decisions based on experience and intuition. While experience is valuable, it has limits:</p>
@@ -515,7 +515,7 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
       'How does The Daisy\'s AI-powered scheduling compare to traditional salon software? A detailed comparison of AI capabilities, booking management, pricing, and language support across leading platforms.',
     aboutPosts: `
 <h2>Why Compare AI Scheduling Platforms?</h2>
-<p>Choosing salon management software is one of the most consequential decisions a beauty business owner makes. The platform you select affects how clients book with you, how efficiently your calendar operates, and ultimately how much revenue you generate each day.</p>
+<p>Choosing <a href="/en/salon-management-software">salon management software</a> is one of the most consequential decisions a beauty business owner makes. The platform you select affects how clients book with you, how efficiently your calendar operates, and ultimately how much revenue you generate each day.</p>
 <p>Traditional salon booking software handles the basics: an online calendar, appointment reminders, and a client database. AI-powered platforms like <a href="/en/features/business/ai-salon-management">The Daisy</a> go significantly further, using artificial intelligence to actively manage, optimise, and grow your business.</p>
 <p>This comparison examines the key differences between AI-powered salon scheduling and traditional booking tools across the capabilities that matter most to salon owners.</p>
 
