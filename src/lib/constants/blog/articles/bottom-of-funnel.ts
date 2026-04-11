@@ -625,7 +625,7 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/calculate-roi-salon-software.webp',
+          url: '/images/blog/calculate-roi-switching-salon-software.webp',
           alternativeText: 'Calculating ROI of switching salon software',
         },
       },
@@ -634,8 +634,8 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/calculate-roi-salon-software.webp',
-            formats: { large: { url: '/images/blog/calculate-roi-salon-software.webp' } },
+            url: '/images/blog/calculate-roi-switching-salon-software.webp',
+            formats: { large: { url: '/images/blog/calculate-roi-switching-salon-software.webp' } },
           },
         },
       ],

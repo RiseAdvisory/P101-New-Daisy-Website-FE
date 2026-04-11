@@ -530,7 +530,7 @@ const emailMarketingSalonsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/email-marketing-salons.webp',
+          url: '/images/blog/email-marketing-salons-templates.webp',
           alternativeText: 'Email marketing templates and best practices for salons',
         },
       },
@@ -539,8 +539,8 @@ const emailMarketingSalonsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/email-marketing-salons.webp',
-            formats: { large: { url: '/images/blog/email-marketing-salons.webp' } },
+            url: '/images/blog/email-marketing-salons-templates.webp',
+            formats: { large: { url: '/images/blog/email-marketing-salons-templates.webp' } },
           },
         },
       ],
@@ -709,7 +709,7 @@ const socialMediaMarketingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/social-media-beauty-professionals.webp',
+          url: '/images/blog/social-media-marketing-beauty-professionals.webp',
           alternativeText: 'Social media marketing guide for beauty professionals',
         },
       },
@@ -718,8 +718,8 @@ const socialMediaMarketingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/social-media-beauty-professionals.webp',
-            formats: { large: { url: '/images/blog/social-media-beauty-professionals.webp' } },
+            url: '/images/blog/social-media-marketing-beauty-professionals.webp',
+            formats: { large: { url: '/images/blog/social-media-marketing-beauty-professionals.webp' } },
           },
         },
       ],
@@ -898,7 +898,7 @@ const daisyCashbackArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/daisy-cashback-loyalty.webp',
+          url: '/images/blog/daisy-cashback-system-customer-loyalty.webp',
           alternativeText: 'Daisy cashback system driving customer loyalty',
         },
       },
@@ -907,8 +907,8 @@ const daisyCashbackArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/daisy-cashback-loyalty.webp',
-            formats: { large: { url: '/images/blog/daisy-cashback-loyalty.webp' } },
+            url: '/images/blog/daisy-cashback-system-customer-loyalty.webp',
+            formats: { large: { url: '/images/blog/daisy-cashback-system-customer-loyalty.webp' } },
           },
         },
       ],

@@ -807,7 +807,7 @@ const mobileBookingArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/mobile-booking-salon.webp',
+          url: '/images/blog/mobile-booking-beauty-salon.webp',
           alternativeText: 'Mobile booking for beauty salons',
         },
       },
@@ -816,8 +816,8 @@ const mobileBookingArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/mobile-booking-salon.webp',
-            formats: { large: { url: '/images/blog/mobile-booking-salon.webp' } },
+            url: '/images/blog/mobile-booking-beauty-salon.webp',
+            formats: { large: { url: '/images/blog/mobile-booking-beauty-salon.webp' } },
           },
         },
       ],
@@ -964,7 +964,7 @@ const recurringAppointmentArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/recurring-appointment-scheduling.webp',
+          url: '/images/blog/recurring-appointment-scheduling-salon.webp',
           alternativeText: 'Recurring appointment scheduling for salons',
         },
       },
@@ -973,8 +973,8 @@ const recurringAppointmentArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/recurring-appointment-scheduling.webp',
-            formats: { large: { url: '/images/blog/recurring-appointment-scheduling.webp' } },
+            url: '/images/blog/recurring-appointment-scheduling-salon.webp',
+            formats: { large: { url: '/images/blog/recurring-appointment-scheduling-salon.webp' } },
           },
         },
       ],

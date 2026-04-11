@@ -713,7 +713,7 @@ const smallSalonSoftwareArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/small-salon-software.webp',
+          url: '/images/blog/small-salon-software-options.webp',
           alternativeText: 'Salon software for small teams of one to five staff',
         },
       },
@@ -722,8 +722,8 @@ const smallSalonSoftwareArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/small-salon-software.webp',
-            formats: { large: { url: '/images/blog/small-salon-software.webp' } },
+            url: '/images/blog/small-salon-software-options.webp',
+            formats: { large: { url: '/images/blog/small-salon-software-options.webp' } },
           },
         },
       ],
@@ -1006,7 +1006,7 @@ const salonSoftwareROIArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/salon-software-roi.webp',
+          url: '/images/blog/salon-software-roi-calculator.webp',
           alternativeText: 'Calculating salon software return on investment',
         },
       },
@@ -1015,8 +1015,8 @@ const salonSoftwareROIArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/salon-software-roi.webp',
-            formats: { large: { url: '/images/blog/salon-software-roi.webp' } },
+            url: '/images/blog/salon-software-roi-calculator.webp',
+            formats: { large: { url: '/images/blog/salon-software-roi-calculator.webp' } },
           },
         },
       ],

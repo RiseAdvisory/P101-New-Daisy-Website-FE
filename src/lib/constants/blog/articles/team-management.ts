@@ -704,7 +704,7 @@ const timeManagementArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/time-management-beauty-professionals.webp',
+          url: '/images/blog/time-management-independent-beauty-professionals.webp',
           alternativeText: 'Independent beauty professional managing schedule on phone',
         },
       },
@@ -713,8 +713,8 @@ const timeManagementArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/time-management-beauty-professionals.webp',
-            formats: { large: { url: '/images/blog/time-management-beauty-professionals.webp' } },
+            url: '/images/blog/time-management-independent-beauty-professionals.webp',
+            formats: { large: { url: '/images/blog/time-management-independent-beauty-professionals.webp' } },
           },
         },
       ],

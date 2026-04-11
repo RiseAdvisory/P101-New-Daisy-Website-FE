@@ -365,7 +365,7 @@ const fiveWaysAiArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/ai-salon-management.webp',
+          url: '/images/blog/5-ways-ai-transform-beauty-business-2026.webp',
           alternativeText: 'AI transforming beauty business operations',
         },
       },
@@ -374,8 +374,8 @@ const fiveWaysAiArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/ai-salon-management.webp',
-            formats: { large: { url: '/images/blog/ai-salon-management.webp' } },
+            url: '/images/blog/5-ways-ai-transform-beauty-business-2026.webp',
+            formats: { large: { url: '/images/blog/5-ways-ai-transform-beauty-business-2026.webp' } },
           },
         },
       ],
@@ -605,7 +605,7 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
     picture: {
       data: {
         attributes: {
-          url: '/images/blog/ai-salon-management.webp',
+          url: '/images/blog/daisy-ai-vs-competitors-scheduling-comparison.webp',
           alternativeText: 'AI salon software comparison',
         },
       },
@@ -614,8 +614,8 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
       data: [
         {
           attributes: {
-            url: '/images/blog/ai-salon-management.webp',
-            formats: { large: { url: '/images/blog/ai-salon-management.webp' } },
+            url: '/images/blog/daisy-ai-vs-competitors-scheduling-comparison.webp',
+            formats: { large: { url: '/images/blog/daisy-ai-vs-competitors-scheduling-comparison.webp' } },
           },
         },
       ],
