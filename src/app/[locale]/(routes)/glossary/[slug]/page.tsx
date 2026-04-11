@@ -31,13 +31,13 @@ export function generateMetadata({
       description: entry.metaDescription,
       url: `https://www.jointhedaisy.com/${params.locale}/glossary/${params.slug}`,
       type: 'article',
-      images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
+      images: [{ url: `/images/glossary/${params.slug}.webp`, width: 1200, height: 630, alt: entry.metaTitle }],
     },
     twitter: {
       card: 'summary_large_image',
       title: entry.metaTitle,
       description: entry.metaDescription,
-      images: ['/images/og/og-default.jpg'],
+      images: [`/images/glossary/${params.slug}.webp`],
     },
     alternates: localeAlternates(`/glossary/${params.slug}`, params.locale),
   };

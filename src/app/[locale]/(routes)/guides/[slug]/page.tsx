@@ -27,13 +27,13 @@ export function generateMetadata({
       description: guide.metaDescription,
       url: `https://www.jointhedaisy.com/${params.locale}/guides/${params.slug}`,
       type: 'article',
-      images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
+      images: [{ url: `/images/guides/${params.slug}.webp`, width: 1200, height: 630, alt: guide.metaTitle }],
     },
     twitter: {
       card: 'summary_large_image',
       title: guide.metaTitle,
       description: guide.metaDescription,
-      images: ['/images/og/og-default.jpg'],
+      images: [`/images/guides/${params.slug}.webp`],
     },
     alternates: localeAlternates(`/guides/${params.slug}`, params.locale),
   };

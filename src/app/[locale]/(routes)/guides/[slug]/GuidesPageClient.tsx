@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getGuide } from '@/lib/constants/guides/guideData';
 import { FaqSchema } from '@/components/seo/FaqSchema';
 import { HowToSchema } from '@/components/seo/HowToSchema';
@@ -51,6 +52,16 @@ export function GuidesPageClient({ slug }: Props) {
           >
             {guide.answer}
           </p>
+          <div className="mt-8 overflow-hidden rounded-2xl">
+            <Image
+              src={`/images/guides/${slug}.webp`}
+              alt={guide.title}
+              width={1440}
+              height={810}
+              className="w-full object-cover"
+              priority
+            />
+          </div>
         </div>
       </section>
 
