@@ -24,7 +24,7 @@ export const guideEntries: GuideData[] = [
     answer:
       'Reduce no-shows by implementing automated reminders (SMS + email), requiring deposits for high-value services, and using AI prediction to identify at-risk bookings. Salons using these strategies see a 30-40% reduction in no-shows.',
     problemExplained:
-      'No-shows cost the average salon $67,000 per year in lost revenue (industry estimates). Each empty appointment slot represents not just lost service revenue, but also wasted staff time and a missed opportunity to serve another client. The problem is especially acute for salons relying on manual reminder calls or no confirmation system at all. Research shows that 23% of appointments are missed when no reminder is sent, dropping to 5-10% with automated multi-channel reminders.',
+      'No-shows cost the average salon $67,000 per year in lost revenue (industry estimates). Each empty appointment slot represents not just lost service revenue, but also wasted staff time and a missed opportunity to serve another client. The problem is especially acute for salons relying on manual reminder calls or no confirmation system at all. Modern <a href="/en/glossary/salon-management-software">salon management software</a> solves this with automation. Research shows that 23% of appointments are missed when no reminder is sent, dropping to 5-10% with automated multi-channel reminders.',
     steps: [
       {
         name: 'Set up automated appointment reminders',
@@ -52,7 +52,7 @@ export const guideEntries: GuideData[] = [
       },
     ],
     howDaisyHelps:
-      'Daisy automates all of these no-show prevention strategies out of the box. Automated multi-channel reminders (SMS, email, WhatsApp), customizable deposit requirements, AI prediction for at-risk bookings, easy online rescheduling, and a smart waitlist that fills cancellations automatically. Salons using Daisy\'s full prevention suite report no-show rates under 5%.',
+      'Daisy automates all of these no-show prevention strategies out of the box. As a complete <a href="/en/salon-management-software">salon management platform</a>, it includes automated multi-channel reminders (SMS, email, WhatsApp), customizable deposit requirements, AI prediction for at-risk bookings, easy online rescheduling, and a smart waitlist that fills cancellations automatically. Salons using Daisy\'s full prevention suite report no-show rates under 5%.',
     faqs: [
       {
         question: 'What is the average no-show rate for salons?',
@@ -107,7 +107,7 @@ export const guideEntries: GuideData[] = [
     answer:
       'Grow your salon client base through a combination of online marketplace visibility, cashback loyalty programs, automated marketing campaigns, Google Business optimization, and AI-powered customer acquisition tools.',
     problemExplained:
-      'The beauty industry is highly competitive, with the average salon competing against 8-12 nearby businesses for the same customer base. Traditional marketing (flyers, word-of-mouth) has limited reach, while digital marketing requires expertise most salon owners lack. The cost of acquiring a new salon client averages $25-50 through paid advertising. Salon owners need scalable, automated acquisition channels that work while they focus on delivering great service.',
+      'The beauty industry is highly competitive, with the average salon competing against 8-12 nearby businesses for the same customer base. Traditional marketing (flyers, word-of-mouth) has limited reach, while digital marketing requires expertise most salon owners lack. The cost of acquiring a new salon client averages $25-50 through paid advertising. The right <a href="/en/glossary/salon-management-software">salon management software</a> gives owners scalable, automated acquisition channels that work while they focus on delivering great service.',
     steps: [
       {
         name: 'Optimize your Google Business Profile',
@@ -119,7 +119,7 @@ export const guideEntries: GuideData[] = [
       },
       {
         name: 'Launch a cashback loyalty program',
-        text: 'Offer cashback rewards on bookings to incentivize first-time visits and repeat business. Cashback programs increase customer lifetime value by 20-30% compared to traditional loyalty cards.',
+        text: 'Offer <a href="/en/glossary/cashback-beauty-booking">cashback rewards on bookings</a> to incentivize first-time visits and repeat business. Cashback programs increase customer lifetime value by 20-30% compared to traditional loyalty cards.',
       },
       {
         name: 'Set up automated marketing campaigns',
@@ -135,7 +135,7 @@ export const guideEntries: GuideData[] = [
       },
     ],
     howDaisyHelps:
-      'Daisy provides 360-degree customer acquisition: marketplace discovery brings new clients, cashback keeps them coming back, AI marketing automates promotions, and the AI receptionist ensures you never miss a lead. All channels work together to grow your client base automatically.',
+      'Daisy provides 360-degree customer acquisition as a complete <a href="/en/salon-management-software">salon management platform</a>: marketplace discovery brings new clients, cashback keeps them coming back, AI marketing automates promotions, and the AI receptionist ensures you never miss a lead. All channels work together to grow your client base automatically.',
     faqs: [
       {
         question: 'How do salons get new clients in 2026?',
@@ -180,7 +180,7 @@ export const guideEntries: GuideData[] = [
     answer:
       'Evaluate salon software based on core features (booking, POS, CRM), growth tools (marketing, AI, cashback), pricing transparency (watch for per-staff fees and commissions), GCC/Arabic support if needed, and data migration support.',
     problemExplained:
-      'With over 50 salon software options on the market, choosing the right one is overwhelming. Many platforms advertise low starting prices but add per-staff fees, transaction charges, and marketplace commissions that significantly increase the real cost. Switching costs are high once your data is locked in, so the initial decision matters. The best approach is to evaluate based on total cost of ownership, growth capabilities (not just operations), and long-term flexibility.',
+      'With over 50 <a href="/en/glossary/salon-management-software">salon software</a> options on the market, choosing the right one is overwhelming. Many platforms advertise low starting prices but add per-staff fees, transaction charges, and marketplace commissions that significantly increase the real cost. Switching costs are high once your data is locked in, so the initial decision matters. The best approach is to evaluate based on total cost of ownership, growth capabilities (not just operations), and long-term flexibility.',
     steps: [
       {
         name: 'List your must-have features',
@@ -208,7 +208,7 @@ export const guideEntries: GuideData[] = [
       },
     ],
     howDaisyHelps:
-      'Daisy checks every box: comprehensive features, transparent flat pricing (no per-staff or transaction fees), AI-powered growth tools, native Arabic/English support, and free data migration on the Business plan. Start with a 14-day free trial to experience it yourself.',
+      'Daisy checks every box: comprehensive features, transparent flat pricing (no per-staff or transaction fees), AI-powered growth tools, native Arabic/English support, and free data migration on the Business plan. See our full <a href="/en/salon-management-software">salon management software guide</a> for a detailed breakdown, or start with a 14-day free trial to experience it yourself.',
     faqs: [
       {
         question: 'What is the best salon software in 2026?',
@@ -263,7 +263,7 @@ export const guideEntries: GuideData[] = [
     answer:
       'Switch from Fresha by exporting your client data, choosing a platform with migration support (like Daisy\'s free migration), setting up your new system in parallel, and transitioning clients with clear communication.',
     problemExplained:
-      'Fresha\'s recent pricing changes -- introducing paid features and new fees to a platform that was previously free -- have prompted many salon owners to explore alternatives. However, switching feels risky because of client data, booking history, and the learning curve. The key is planning: export your data first, set up the new platform alongside Fresha, and make a clean switch once everything is tested.',
+      'Fresha\'s recent pricing changes -- introducing paid features and new fees to a platform that was previously free -- have prompted many salon owners to explore alternative <a href="/en/glossary/salon-management-software">salon management software</a>. However, switching feels risky because of client data, booking history, and the learning curve. The key is planning: export your data first, set up the new platform alongside Fresha, and make a clean switch once everything is tested.',
     steps: [
       {
         name: 'Export your data from Fresha',
@@ -271,7 +271,7 @@ export const guideEntries: GuideData[] = [
       },
       {
         name: 'Choose your new platform',
-        text: 'Evaluate alternatives based on features, pricing, and migration support. Key factors: does it offer AI features Fresha lacks? Is pricing transparent? Does it support your market (Arabic, GCC)?',
+        text: 'Evaluate alternatives based on features, pricing, and migration support. Our <a href="/en/salon-management-software">salon management software guide</a> covers the key factors: does it offer AI features Fresha lacks? Is pricing transparent? Does it support your market (Arabic, GCC)?',
       },
       {
         name: 'Set up the new platform in parallel',
@@ -340,7 +340,7 @@ export const guideEntries: GuideData[] = [
     steps: [
       {
         name: 'Choose salon booking software',
-        text: 'Select a platform that includes online booking, calendar management, and automated reminders. Daisy offers AI-powered booking with no transaction fees starting at $50/month.',
+        text: 'Select <a href="/en/glossary/salon-booking-software">salon booking software</a> that includes online booking, calendar management, and automated reminders. Daisy offers AI-powered booking with no transaction fees starting at $50/month.',
       },
       {
         name: 'Configure your services and pricing',
@@ -364,7 +364,7 @@ export const guideEntries: GuideData[] = [
       },
     ],
     howDaisyHelps:
-      'Daisy makes online booking setup effortless: configure your services and staff, customize your booking page with your branding, and go live in under a day. AI-powered scheduling optimizes appointments, automated reminders reduce no-shows, and the 24/7 AI receptionist handles inquiries even when you\'re busy.',
+      'Daisy makes online booking setup effortless: configure your services and staff, customize your booking page with your branding, and go live in under a day. As a full <a href="/en/salon-management-software">salon management platform</a>, it includes AI-powered scheduling that optimizes appointments, automated reminders that reduce no-shows, and a 24/7 AI receptionist that handles inquiries even when you\'re busy.',
     faqs: [
       {
         question: 'How long does it take to set up online booking?',
