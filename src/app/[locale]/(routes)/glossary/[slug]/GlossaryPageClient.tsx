@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getGlossaryEntry } from '@/lib/constants/glossary/glossaryData';
 import { FaqSchema } from '@/components/seo/FaqSchema';
 import { ComparisonBreadcrumbSchema } from '@/components/seo/ComparisonBreadcrumbSchema';
@@ -45,6 +46,16 @@ export function GlossaryPageClient({ slug }: Props) {
             </dfn>{' '}
             {entry.definition}
           </p>
+          <div className="mt-8 overflow-hidden rounded-2xl">
+            <Image
+              src={`/images/glossary/${slug}.webp`}
+              alt={`${entry.term} illustration`}
+              width={1440}
+              height={810}
+              className="w-full object-cover"
+              priority
+            />
+          </div>
         </div>
       </section>
 
