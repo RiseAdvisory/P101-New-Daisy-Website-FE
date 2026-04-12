@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '18 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -130,8 +130,33 @@ const aiReceptionistArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 41,
     tags: { category: 'Platform', topic: 'CustomerService' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '22 April 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 22, attributes: { name: 'Daisy Platform' } } },
     picture: {
       data: {
@@ -258,14 +283,39 @@ const allInOnePlatformArticle: LocalBlogPost = {
     metaTitle: 'All-in-One Salon Platform vs Point Solutions | The Daisy',
     metaDescription:
       'Discover why all-in-one salon platforms outperform point solutions on cost, efficiency, and growth. Stop paying the integration tax on disconnected tools.',
-    createdAt: '2026-03-18T08:30:00.000Z',
-    updatedAt: '2026-03-18T08:30:00.000Z',
-    publishedAt: '2026-03-18T08:30:00.000Z',
+    createdAt: '2025-04-22T05:00:00.000Z',
+    updatedAt: '2025-04-22T05:00:00.000Z',
+    publishedAt: '2025-04-22T05:00:00.000Z',
     locale: 'en',
     sortId: 42,
     tags: { category: 'Platform', topic: 'Operations' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 1,
+        attributes: {
+          name: 'The Daisy Team',
+          jobTitle: 'Content Team',
+          date: '9 April 2026',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-daisy-team.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-daisy-team.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 22, attributes: { name: 'Daisy Platform' } } },
     picture: {
       data: {
@@ -383,14 +433,39 @@ const customerAcquisitionArticle: LocalBlogPost = {
     metaTitle: '360-Degree Customer Acquisition for Salons | The Daisy',
     metaDescription:
       'Build a 360-degree salon customer acquisition strategy with marketplace presence, cashback incentives, automated marketing, referrals, and digital discovery.',
-    createdAt: '2026-03-18T09:00:00.000Z',
-    updatedAt: '2026-03-18T09:00:00.000Z',
-    publishedAt: '2026-03-18T09:00:00.000Z',
+    createdAt: '2026-04-09T05:00:00.000Z',
+    updatedAt: '2026-04-09T05:00:00.000Z',
+    publishedAt: '2026-04-09T05:00:00.000Z',
     locale: 'en',
     sortId: 43,
     tags: { category: 'Platform', topic: 'Marketing' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '27 August 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 22, attributes: { name: 'Daisy Platform' } } },
     picture: {
       data: {
@@ -529,14 +604,39 @@ const whiteLabelBookingArticle: LocalBlogPost = {
     metaTitle: 'White-Label Salon Booking Systems | The Daisy',
     metaDescription:
       'White-label booking puts your brand first in every client interaction. Build trust, increase conversions, and own your client relationships completely.',
-    createdAt: '2026-03-18T09:30:00.000Z',
-    updatedAt: '2026-03-18T09:30:00.000Z',
-    publishedAt: '2026-03-18T09:30:00.000Z',
+    createdAt: '2025-08-27T05:00:00.000Z',
+    updatedAt: '2025-08-27T05:00:00.000Z',
+    publishedAt: '2025-08-27T05:00:00.000Z',
     locale: 'en',
     sortId: 44,
     tags: { category: 'Platform', topic: 'Branding' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '17 March 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 22, attributes: { name: 'Daisy Platform' } } },
     picture: {
       data: {
@@ -658,14 +758,39 @@ const multilingualBusinessArticle: LocalBlogPost = {
     metaTitle: 'Multilingual Beauty Business Tools & Tips | The Daisy',
     metaDescription:
       'Run a multilingual beauty business with tools built for multiple languages. AI, booking, marketing, and client communication that work natively in Arabic, English, and more.',
-    createdAt: '2026-03-18T10:00:00.000Z',
-    updatedAt: '2026-03-18T10:00:00.000Z',
-    publishedAt: '2026-03-18T10:00:00.000Z',
+    createdAt: '2025-03-17T05:00:00.000Z',
+    updatedAt: '2025-03-17T05:00:00.000Z',
+    publishedAt: '2025-03-17T05:00:00.000Z',
     locale: 'en',
     sortId: 45,
     tags: { category: 'Platform', topic: 'Localisation' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '12 December 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 22, attributes: { name: 'Daisy Platform' } } },
     picture: {
       data: {
@@ -789,14 +914,39 @@ const dataDrivenPlatformArticle: LocalBlogPost = {
     metaTitle: 'Data-Driven Beauty Platform Advantages | The Daisy',
     metaDescription:
       'Discover how data-driven beauty platforms create competitive moats through network effects, AI intelligence, and market insights that grow stronger over time.',
-    createdAt: '2026-03-18T10:30:00.000Z',
-    updatedAt: '2026-03-18T10:30:00.000Z',
-    publishedAt: '2026-03-18T10:30:00.000Z',
+    createdAt: '2025-12-12T05:00:00.000Z',
+    updatedAt: '2025-12-12T05:00:00.000Z',
+    publishedAt: '2025-12-12T05:00:00.000Z',
     locale: 'en',
     sortId: 46,
     tags: { category: 'Platform', topic: 'Analytics' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 4,
+        attributes: {
+          name: 'Ethan Cole',
+          jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist',
+          date: '25 April 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-ethan-cole.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-ethan-cole.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 22, attributes: { name: 'Daisy Platform' } } },
     picture: {
       data: {
@@ -911,14 +1061,39 @@ const modernSalonsAiArticle: LocalBlogPost = {
     metaTitle: 'AI Salon Platform vs Traditional Software | The Daisy',
     metaDescription:
       'Learn why modern salons need an AI platform, not just software. Discover how AI-powered systems learn, adapt, and grow your business autonomously over time.',
-    createdAt: '2026-03-18T11:00:00.000Z',
-    updatedAt: '2026-03-18T11:00:00.000Z',
-    publishedAt: '2026-03-18T11:00:00.000Z',
+    createdAt: '2025-04-25T05:00:00.000Z',
+    updatedAt: '2025-04-25T05:00:00.000Z',
+    publishedAt: '2025-04-25T05:00:00.000Z',
     locale: 'en',
     sortId: 47,
     tags: { category: 'Platform', topic: 'Innovation' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 1,
+        attributes: {
+          name: 'The Daisy Team',
+          jobTitle: 'Content Team',
+          date: '20 February 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-daisy-team.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-daisy-team.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 22, attributes: { name: 'Daisy Platform' } } },
     picture: {
       data: {
@@ -1028,14 +1203,39 @@ const softwareWarningSignsArticle: LocalBlogPost = {
     metaTitle: '10 Signs Your Salon Software Is Outdated | The Daisy',
     metaDescription:
       'Spot the 10 warning signs that your current salon software is limiting your growth. Learn what modern AI-powered platforms offer that outdated tools cannot.',
-    createdAt: '2026-03-18T11:30:00.000Z',
-    updatedAt: '2026-03-18T11:30:00.000Z',
-    publishedAt: '2026-03-18T11:30:00.000Z',
+    createdAt: '2025-02-20T05:00:00.000Z',
+    updatedAt: '2025-02-20T05:00:00.000Z',
+    publishedAt: '2025-02-20T05:00:00.000Z',
     locale: 'en',
     sortId: 48,
     tags: { category: 'Platform', topic: 'Strategy' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 1,
+        attributes: {
+          name: 'The Daisy Team',
+          jobTitle: 'Content Team',
+          date: '17 September 2026',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-daisy-team.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-daisy-team.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 22, attributes: { name: 'Daisy Platform' } } },
     picture: {
       data: {

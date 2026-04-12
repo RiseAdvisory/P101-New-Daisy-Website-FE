@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '18 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -165,8 +165,33 @@ const howToStartBeautyBusinessArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 73,
     tags: { category: 'Beauty Business Growth', topic: 'Startup' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '21 February 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 15, attributes: { name: 'Beauty Business Growth' } } },
     picture: {
       data: {
@@ -311,14 +336,39 @@ const salonPricingStrategyArticle: LocalBlogPost = {
     metaTitle: 'Salon Pricing Strategy Guide | The Daisy',
     metaDescription:
       'Master salon pricing strategy to maximise revenue. Covers cost analysis, value-based pricing, menu engineering, tiered pricing, and price increase implementation.',
-    createdAt: '2026-03-18T08:30:00.000Z',
-    updatedAt: '2026-03-18T08:30:00.000Z',
-    publishedAt: '2026-03-18T08:30:00.000Z',
+    createdAt: '2025-02-21T05:00:00.000Z',
+    updatedAt: '2025-02-21T05:00:00.000Z',
+    publishedAt: '2025-02-21T05:00:00.000Z',
     locale: 'en',
     sortId: 74,
     tags: { category: 'Beauty Business Growth', topic: 'Pricing' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '11 May 2025',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 15, attributes: { name: 'Beauty Business Growth' } } },
     picture: {
       data: {
@@ -438,14 +488,39 @@ const increaseSalonRevenueArticle: LocalBlogPost = {
     metaTitle: 'Increase Salon Revenue: 10 Strategies | The Daisy',
     metaDescription:
       'Discover 10 proven strategies to increase salon revenue without adding clients. Covers pricing, upselling, no-show reduction, memberships, and team utilisation.',
-    createdAt: '2026-03-18T09:00:00.000Z',
-    updatedAt: '2026-03-18T09:00:00.000Z',
-    publishedAt: '2026-03-18T09:00:00.000Z',
+    createdAt: '2025-05-11T05:00:00.000Z',
+    updatedAt: '2025-05-11T05:00:00.000Z',
+    publishedAt: '2025-05-11T05:00:00.000Z',
     locale: 'en',
     sortId: 75,
     tags: { category: 'Beauty Business Growth', topic: 'Revenue' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '6 May 2025',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 15, attributes: { name: 'Beauty Business Growth' } } },
     picture: {
       data: {
@@ -573,14 +648,39 @@ const expandingSalonLocationsArticle: LocalBlogPost = {
     metaTitle: 'Expanding Your Salon: Adding Locations | The Daisy',
     metaDescription:
       'Strategic guide to opening a second salon location. Covers readiness assessment, site selection, operations, staffing, and multi-branch management systems.',
-    createdAt: '2026-03-18T09:30:00.000Z',
-    updatedAt: '2026-03-18T09:30:00.000Z',
-    publishedAt: '2026-03-18T09:30:00.000Z',
+    createdAt: '2025-05-06T05:00:00.000Z',
+    updatedAt: '2025-05-06T05:00:00.000Z',
+    publishedAt: '2025-05-06T05:00:00.000Z',
     locale: 'en',
     sortId: 76,
     tags: { category: 'Beauty Business Growth', topic: 'Expansion' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '16 January 2026',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 15, attributes: { name: 'Beauty Business Growth' } } },
     picture: {
       data: {
@@ -719,14 +819,39 @@ const salonMembershipModelsArticle: LocalBlogPost = {
     metaTitle: 'Salon Membership & Subscription Models | The Daisy',
     metaDescription:
       'Design a salon membership programme for predictable recurring revenue. Covers tiered models, pricing, launch strategy, retention, and financial impact measurement.',
-    createdAt: '2026-03-18T10:00:00.000Z',
-    updatedAt: '2026-03-18T10:00:00.000Z',
-    publishedAt: '2026-03-18T10:00:00.000Z',
+    createdAt: '2026-01-16T05:00:00.000Z',
+    updatedAt: '2026-01-16T05:00:00.000Z',
+    publishedAt: '2026-01-16T05:00:00.000Z',
     locale: 'en',
     sortId: 77,
     tags: { category: 'Beauty Business Growth', topic: 'Memberships' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '17 June 2025',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 15, attributes: { name: 'Beauty Business Growth' } } },
     picture: {
       data: {
@@ -877,14 +1002,39 @@ const buildingFreelanceBeautyBusinessArticle: LocalBlogPost = {
     metaTitle: 'Build a Freelance Beauty Business | The Daisy',
     metaDescription:
       'Complete guide to building a freelance beauty business from scratch. Covers setup, pricing, client acquisition, finances, and growth strategies for independents.',
-    createdAt: '2026-03-18T10:30:00.000Z',
-    updatedAt: '2026-03-18T10:30:00.000Z',
-    publishedAt: '2026-03-18T10:30:00.000Z',
+    createdAt: '2025-06-17T05:00:00.000Z',
+    updatedAt: '2025-06-17T05:00:00.000Z',
+    publishedAt: '2025-06-17T05:00:00.000Z',
     locale: 'en',
     sortId: 78,
     tags: { category: 'Beauty Business Growth', topic: 'Freelance' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 6,
+        attributes: {
+          name: 'Amara Nasser',
+          jobTitle: 'Independent Beauty Professional & Freelance Career Mentor',
+          date: '25 June 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-amara-nasser.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-amara-nasser.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 15, attributes: { name: 'Beauty Business Growth' } } },
     picture: {
       data: {
@@ -1051,14 +1201,39 @@ const salonBusinessPlanArticle: LocalBlogPost = {
     metaTitle: 'Salon Business Plan Template | The Daisy',
     metaDescription:
       'Write a salon business plan with this step-by-step template. Covers market analysis, financial projections, operations, marketing strategy, and funding preparation.',
-    createdAt: '2026-03-18T11:00:00.000Z',
-    updatedAt: '2026-03-18T11:00:00.000Z',
-    publishedAt: '2026-03-18T11:00:00.000Z',
+    createdAt: '2025-06-25T05:00:00.000Z',
+    updatedAt: '2025-06-25T05:00:00.000Z',
+    publishedAt: '2025-06-25T05:00:00.000Z',
     locale: 'en',
     sortId: 79,
     tags: { category: 'Beauty Business Growth', topic: 'Business Planning' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '10 January 2026',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 15, attributes: { name: 'Beauty Business Growth' } } },
     picture: {
       data: {

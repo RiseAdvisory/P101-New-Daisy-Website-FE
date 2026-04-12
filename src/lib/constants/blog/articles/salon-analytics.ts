@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '18 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -145,8 +145,33 @@ const salonKpisToTrackArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 114,
     tags: { category: 'Salon Analytics', topic: 'KPIs' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '1 April 2026',
+          time: '11 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 21, attributes: { name: 'Salon Analytics' } } },
     picture: {
       data: {
@@ -286,14 +311,39 @@ const salonClientLifetimeValueArticle: LocalBlogPost = {
     metaTitle: 'Salon Client Lifetime Value Explained | The Daisy',
     metaDescription:
       'Learn how to calculate and improve salon Client Lifetime Value. Covers the CLV formula, three growth levers, segmentation, and retention strategy.',
-    createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
-    publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2026-04-01T05:00:00.000Z',
+    updatedAt: '2026-04-01T05:00:00.000Z',
+    publishedAt: '2026-04-01T05:00:00.000Z',
     locale: 'en',
     sortId: 115,
     tags: { category: 'Salon Analytics', topic: 'ClientValue' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '5 March 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 21, attributes: { name: 'Salon Analytics' } } },
     picture: {
       data: {
@@ -471,14 +521,39 @@ const salonRevenueReportingArticle: LocalBlogPost = {
     metaTitle: 'Salon Revenue Reporting Guide | The Daisy',
     metaDescription:
       'Complete guide to salon revenue reporting: metrics to track, report structures, common mistakes, and how to turn revenue data into better decisions.',
-    createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
-    publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2025-03-05T05:00:00.000Z',
+    updatedAt: '2025-03-05T05:00:00.000Z',
+    publishedAt: '2025-03-05T05:00:00.000Z',
     locale: 'en',
     sortId: 116,
     tags: { category: 'Salon Analytics', topic: 'Revenue' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '9 April 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 21, attributes: { name: 'Salon Analytics' } } },
     picture: {
       data: {
@@ -635,14 +710,39 @@ const dataDrivenSalonManagementArticle: LocalBlogPost = {
     metaTitle: 'Data-Driven Salon Management Guide | The Daisy',
     metaDescription:
       'Start using data to run your salon better. Beginner-friendly guide covering 5 key numbers, a 30-day plan, team culture, and when to upgrade tools.',
-    createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
-    publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2025-04-09T05:00:00.000Z',
+    updatedAt: '2025-04-09T05:00:00.000Z',
+    publishedAt: '2025-04-09T05:00:00.000Z',
     locale: 'en',
     sortId: 117,
     tags: { category: 'Salon Analytics', topic: 'DataDriven' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '11 August 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 21, attributes: { name: 'Salon Analytics' } } },
     picture: {
       data: {

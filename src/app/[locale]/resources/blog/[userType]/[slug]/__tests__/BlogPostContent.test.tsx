@@ -31,6 +31,10 @@ jest.mock('@/components/blogPage/blogPosts/AboutPosts', () => ({
   AboutPosts: () => <div data-testid="about-posts">About Posts</div>,
 }));
 
+jest.mock('@/components/blogPage/blogPosts/AboutAuthor', () => ({
+  AboutAuthor: () => <div data-testid="about-author">About Author</div>,
+}));
+
 jest.mock('@/components/blogPage/blogPosts/CreatePerfect', () => ({
   CreatePerfect: ({ textDownload, textCreate }: any) => (
     <div data-testid="create-perfect">
@@ -72,6 +76,7 @@ describe('BlogPostContent', () => {
 
     expect(getByTestId('hero-blog-page')).toBeInTheDocument();
     expect(getByTestId('about-posts')).toBeInTheDocument();
+    expect(getByTestId('about-author')).toBeInTheDocument();
     expect(getByTestId('create-perfect')).toBeInTheDocument();
     expect(getByTestId('similar-topics')).toBeInTheDocument();
   });
@@ -81,9 +86,9 @@ describe('BlogPostContent', () => {
       <BlogPostContent post={mockPost} userType="customer" />
     );
 
-    expect(getByTestId('text-download')).toHaveTextContent('Download now!');
+    expect(getByTestId('text-download')).toHaveTextContent('Download the app and start your free trial today.');
     expect(getByTestId('text-create')).toHaveTextContent(
-      'Create Your Own Perfect Wellness Ritual With The Daisy Packages'
+      'Try The Daisy Free for 14 Days. No Commitment, No Card Required'
     );
     expect(getByTestId('title-similar')).toHaveTextContent(
       'Other Topics That May Interest You'

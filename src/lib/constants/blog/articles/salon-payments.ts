@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '18 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -201,8 +201,33 @@ const salonPosBuyersGuideArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 80,
     tags: { category: 'Payments', topic: 'Technology' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '15 February 2026',
+          time: '11 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 16, attributes: { name: 'Salon Payments' } } },
     picture: {
       data: {
@@ -364,14 +389,39 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
     metaTitle: 'Salon Tipping: Policies & Digital Tips | The Daisy',
     metaDescription:
       'Build a clear salon tipping policy. Cover etiquette standards, digital tipping setup, tip distribution models, and staff management. Complete guide for owners.',
-    createdAt: '2026-03-18T08:30:00.000Z',
-    updatedAt: '2026-03-18T08:30:00.000Z',
-    publishedAt: '2026-03-18T08:30:00.000Z',
+    createdAt: '2026-02-15T05:00:00.000Z',
+    updatedAt: '2026-02-15T05:00:00.000Z',
+    publishedAt: '2026-02-15T05:00:00.000Z',
     locale: 'en',
     sortId: 81,
     tags: { category: 'Payments', topic: 'Tipping' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '23 June 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 16, attributes: { name: 'Salon Payments' } } },
     picture: {
       data: {
@@ -542,14 +592,39 @@ const contactlessPaymentsArticle: LocalBlogPost = {
     metaTitle: 'Contactless Payments for Salons | The Daisy',
     metaDescription:
       'Set up contactless payments in your salon. Step-by-step guide covering NFC terminals, mobile wallets, QR codes, tap-to-pay, and staff training tips.',
-    createdAt: '2026-03-18T09:00:00.000Z',
-    updatedAt: '2026-03-18T09:00:00.000Z',
-    publishedAt: '2026-03-18T09:00:00.000Z',
+    createdAt: '2025-06-23T05:00:00.000Z',
+    updatedAt: '2025-06-23T05:00:00.000Z',
+    publishedAt: '2025-06-23T05:00:00.000Z',
     locale: 'en',
     sortId: 82,
     tags: { category: 'Payments', topic: 'Technology' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '10 February 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 16, attributes: { name: 'Salon Payments' } } },
     picture: {
       data: {
@@ -702,14 +777,39 @@ const salonInvoicingArticle: LocalBlogPost = {
     metaTitle: 'Salon Invoicing: Billing Made Easy | The Daisy',
     metaDescription:
       'Set up professional invoicing for your salon. Cover deposits, packages, memberships, corporate billing, and automated payment reminders. Templates included.',
-    createdAt: '2026-03-18T09:30:00.000Z',
-    updatedAt: '2026-03-18T09:30:00.000Z',
-    publishedAt: '2026-03-18T09:30:00.000Z',
+    createdAt: '2025-02-10T05:00:00.000Z',
+    updatedAt: '2025-02-10T05:00:00.000Z',
+    publishedAt: '2025-02-10T05:00:00.000Z',
     locale: 'en',
     sortId: 83,
     tags: { category: 'Payments', topic: 'Invoicing' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '25 September 2025',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 16, attributes: { name: 'Salon Payments' } } },
     picture: {
       data: {
@@ -981,14 +1081,39 @@ const freelanceStylistPaymentArticle: LocalBlogPost = {
     metaTitle: 'Freelance Stylist Payment Methods | The Daisy',
     metaDescription:
       'Compare every payment method for freelance stylists. Card readers, tap-to-pay, bank transfers, payment links, and platform payments with cost breakdowns.',
-    createdAt: '2026-03-18T10:00:00.000Z',
-    updatedAt: '2026-03-18T10:00:00.000Z',
-    publishedAt: '2026-03-18T10:00:00.000Z',
+    createdAt: '2025-09-25T05:00:00.000Z',
+    updatedAt: '2025-09-25T05:00:00.000Z',
+    publishedAt: '2025-09-25T05:00:00.000Z',
     locale: 'en',
     sortId: 84,
     tags: { category: 'Payments', topic: 'Freelance' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '8 October 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 16, attributes: { name: 'Salon Payments' } } },
     picture: {
       data: {
@@ -1205,14 +1330,39 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
     metaTitle: 'Salon Payment Processing Fees | The Daisy',
     metaDescription:
       'Understand what your salon really pays in payment processing fees. Covers flat-rate, interchange-plus, and commission models with real cost calculations.',
-    createdAt: '2026-03-18T10:30:00.000Z',
-    updatedAt: '2026-03-18T10:30:00.000Z',
-    publishedAt: '2026-03-18T10:30:00.000Z',
+    createdAt: '2025-10-08T05:00:00.000Z',
+    updatedAt: '2025-10-08T05:00:00.000Z',
+    publishedAt: '2025-10-08T05:00:00.000Z',
     locale: 'en',
     sortId: 85,
     tags: { category: 'Payments', topic: 'Fees' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '18 December 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 16, attributes: { name: 'Salon Payments' } } },
     picture: {
       data: {

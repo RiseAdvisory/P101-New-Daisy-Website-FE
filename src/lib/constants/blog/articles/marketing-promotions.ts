@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '17 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -172,8 +172,33 @@ const salonLoyaltyProgramsArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 18,
     tags: { category: 'Marketing', topic: 'Loyalty' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '15 July 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 8, attributes: { name: 'Marketing & Promotions' } } },
     picture: {
       data: {
@@ -349,14 +374,39 @@ const salonReferralProgramsArticle: LocalBlogPost = {
     metaTitle: 'Salon Referral Programs That Work | The Daisy',
     metaDescription:
       'Build a salon referral program that turns clients into your best marketing channel. Covers incentives, tracking, promotion tactics, and proven structures.',
-    createdAt: '2026-03-17T09:00:00.000Z',
-    updatedAt: '2026-03-17T09:00:00.000Z',
-    publishedAt: '2026-03-17T09:00:00.000Z',
+    createdAt: '2025-07-15T05:00:00.000Z',
+    updatedAt: '2025-07-15T05:00:00.000Z',
+    publishedAt: '2025-07-15T05:00:00.000Z',
     locale: 'en',
     sortId: 19,
     tags: { category: 'Marketing', topic: 'Referrals' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '6 August 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 8, attributes: { name: 'Marketing & Promotions' } } },
     picture: {
       data: {
@@ -518,14 +568,39 @@ const emailMarketingSalonsArticle: LocalBlogPost = {
     metaTitle: 'Email Marketing for Salons: Templates | The Daisy',
     metaDescription:
       'Master salon email marketing with ready-to-use templates and automation strategies. Covers welcome sequences, rebooking campaigns, and re-engagement emails.',
-    createdAt: '2026-03-17T10:00:00.000Z',
-    updatedAt: '2026-03-17T10:00:00.000Z',
-    publishedAt: '2026-03-17T10:00:00.000Z',
+    createdAt: '2025-08-06T05:00:00.000Z',
+    updatedAt: '2025-08-06T05:00:00.000Z',
+    publishedAt: '2025-08-06T05:00:00.000Z',
     locale: 'en',
     sortId: 20,
     tags: { category: 'Marketing', topic: 'Email' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '17 March 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 8, attributes: { name: 'Marketing & Promotions' } } },
     picture: {
       data: {
@@ -697,14 +772,39 @@ const socialMediaMarketingArticle: LocalBlogPost = {
     metaTitle: 'Social Media Marketing for Beauty Pros | The Daisy',
     metaDescription:
       'Practical social media guide for independent beauty professionals. Covers content strategy, posting schedules, and converting followers into clients.',
-    createdAt: '2026-03-17T11:00:00.000Z',
-    updatedAt: '2026-03-17T11:00:00.000Z',
-    publishedAt: '2026-03-17T11:00:00.000Z',
+    createdAt: '2025-03-17T05:00:00.000Z',
+    updatedAt: '2025-03-17T05:00:00.000Z',
+    publishedAt: '2025-03-17T05:00:00.000Z',
     locale: 'en',
     sortId: 21,
     tags: { category: 'Marketing', topic: 'Social Media' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '1 May 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 8, attributes: { name: 'Marketing & Promotions' } } },
     picture: {
       data: {
@@ -886,14 +986,39 @@ const daisyCashbackArticle: LocalBlogPost = {
     metaTitle: 'Daisy Cashback: How It Drives Loyalty | The Daisy',
     metaDescription:
       'Learn how The Daisy\'s built-in cashback system creates automatic customer loyalty for salons. Covers setup, psychology, ROI tracking, and real results.',
-    createdAt: '2026-03-17T12:00:00.000Z',
-    updatedAt: '2026-03-17T12:00:00.000Z',
-    publishedAt: '2026-03-17T12:00:00.000Z',
+    createdAt: '2025-05-01T05:00:00.000Z',
+    updatedAt: '2025-05-01T05:00:00.000Z',
+    publishedAt: '2025-05-01T05:00:00.000Z',
     locale: 'en',
     sortId: 22,
     tags: { category: 'Marketing', topic: 'Cashback' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 1,
+        attributes: {
+          name: 'The Daisy Team',
+          jobTitle: 'Content Team',
+          date: '24 July 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-daisy-team.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-daisy-team.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 8, attributes: { name: 'Marketing & Promotions' } } },
     picture: {
       data: {

@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '18 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -158,8 +158,33 @@ const deathOfSalonSoftwareArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 52,
     tags: { category: 'Thought Leadership', topic: 'Platform' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 4,
+        attributes: {
+          name: 'Ethan Cole',
+          jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist',
+          date: '3 May 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-ethan-cole.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-ethan-cole.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 25, attributes: { name: 'Thought Leadership' } } },
     picture: {
       data: {
@@ -290,14 +315,39 @@ const adoptAiOrLeftBehindArticle: LocalBlogPost = {
     metaTitle: 'Salons Must Adopt AI by 2028 | The Daisy',
     metaDescription:
       'Beauty businesses that delay AI adoption will face a widening gap by 2028. Learn what AI does for salons today and why the adoption window is closing.',
-    createdAt: '2026-03-18T09:00:00.000Z',
-    updatedAt: '2026-03-18T09:00:00.000Z',
-    publishedAt: '2026-03-18T09:00:00.000Z',
+    createdAt: '2025-05-03T05:00:00.000Z',
+    updatedAt: '2025-05-03T05:00:00.000Z',
+    publishedAt: '2025-05-03T05:00:00.000Z',
     locale: 'en',
     sortId: 53,
     tags: { category: 'Thought Leadership', topic: 'AI Adoption' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 4,
+        attributes: {
+          name: 'Ethan Cole',
+          jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist',
+          date: '17 August 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-ethan-cole.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-ethan-cole.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 25, attributes: { name: 'Thought Leadership' } } },
     picture: {
       data: {
@@ -453,14 +503,39 @@ const operationsToGrowthMindsetArticle: LocalBlogPost = {
     metaTitle: 'Operations to Growth Mindset for Salons | The Daisy',
     metaDescription:
       'Escape the operator trap. Learn the mindset shift from managing daily salon operations to leading business growth with AI automation and smart delegation.',
-    createdAt: '2026-03-18T10:00:00.000Z',
-    updatedAt: '2026-03-18T10:00:00.000Z',
-    publishedAt: '2026-03-18T10:00:00.000Z',
+    createdAt: '2025-08-17T05:00:00.000Z',
+    updatedAt: '2025-08-17T05:00:00.000Z',
+    publishedAt: '2025-08-17T05:00:00.000Z',
     locale: 'en',
     sortId: 54,
     tags: { category: 'Thought Leadership', topic: 'Growth Mindset' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '26 January 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 25, attributes: { name: 'Thought Leadership' } } },
     picture: {
       data: {
@@ -639,14 +714,39 @@ const fiveAppsHowToFixArticle: LocalBlogPost = {
     metaTitle: 'Salon Uses 5 Apps? How to Fix It | The Daisy',
     metaDescription:
       'Most salons use 5+ disconnected apps for booking, payments, and marketing. Learn the true cost of fragmentation and how to consolidate to one platform.',
-    createdAt: '2026-03-18T11:00:00.000Z',
-    updatedAt: '2026-03-18T11:00:00.000Z',
-    publishedAt: '2026-03-18T11:00:00.000Z',
+    createdAt: '2025-01-26T05:00:00.000Z',
+    updatedAt: '2025-01-26T05:00:00.000Z',
+    publishedAt: '2025-01-26T05:00:00.000Z',
     locale: 'en',
     sortId: 55,
     tags: { category: 'Thought Leadership', topic: 'Consolidation' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 4,
+        attributes: {
+          name: 'Ethan Cole',
+          jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist',
+          date: '6 May 2026',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-ethan-cole.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-ethan-cole.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 25, attributes: { name: 'Thought Leadership' } } },
     picture: {
       data: {

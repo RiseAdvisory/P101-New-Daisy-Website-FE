@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '17 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -172,8 +172,33 @@ const scalingBeautyBusinessArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 27,
     tags: { category: 'Growth', topic: 'Scaling' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '8 May 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 10, attributes: { name: 'Business Growth' } } },
     picture: {
       data: {
@@ -343,14 +368,39 @@ const multiChannelAcquisitionArticle: LocalBlogPost = {
     metaTitle: 'Multi-Channel Client Acquisition | The Daisy',
     metaDescription:
       'Multi-channel client acquisition drives beauty business growth. Covers marketplace, cashback, social media, SEO, referrals, and re-engagement strategies.',
-    createdAt: '2026-03-17T09:00:00.000Z',
-    updatedAt: '2026-03-17T09:00:00.000Z',
-    publishedAt: '2026-03-17T09:00:00.000Z',
+    createdAt: '2025-05-08T05:00:00.000Z',
+    updatedAt: '2025-05-08T05:00:00.000Z',
+    publishedAt: '2025-05-08T05:00:00.000Z',
     locale: 'en',
     sortId: 28,
     tags: { category: 'Growth', topic: 'Acquisition' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '3 November 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 10, attributes: { name: 'Business Growth' } } },
     picture: {
       data: {
@@ -525,14 +575,39 @@ const daisyMarketingSuiteArticle: LocalBlogPost = {
     metaTitle: "Daisy's Marketing Suite for Salons | The Daisy",
     metaDescription:
       "Learn how The Daisy's built-in marketing suite helps salons attract new clients through automated campaigns, reviews, referrals, and social media integration.",
-    createdAt: '2026-03-17T10:00:00.000Z',
-    updatedAt: '2026-03-17T10:00:00.000Z',
-    publishedAt: '2026-03-17T10:00:00.000Z',
+    createdAt: '2025-11-03T05:00:00.000Z',
+    updatedAt: '2025-11-03T05:00:00.000Z',
+    publishedAt: '2025-11-03T05:00:00.000Z',
     locale: 'en',
     sortId: 29,
     tags: { category: 'Growth', topic: 'Marketing' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 1,
+        attributes: {
+          name: 'The Daisy Team',
+          jobTitle: 'Content Team',
+          date: '14 June 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-daisy-team.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-daisy-team.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 10, attributes: { name: 'Business Growth' } } },
     picture: {
       data: {
@@ -685,14 +760,39 @@ const buildingPersonalBrandArticle: LocalBlogPost = {
     metaTitle: 'Personal Branding for Beauty Pros | The Daisy',
     metaDescription:
       'Build a strong personal brand as a beauty professional. Learn how to define your niche, create content, attract premium clients, and grow your reputation.',
-    createdAt: '2026-03-17T11:00:00.000Z',
-    updatedAt: '2026-03-17T11:00:00.000Z',
-    publishedAt: '2026-03-17T11:00:00.000Z',
+    createdAt: '2025-06-14T05:00:00.000Z',
+    updatedAt: '2025-06-14T05:00:00.000Z',
+    publishedAt: '2025-06-14T05:00:00.000Z',
     locale: 'en',
     sortId: 30,
     tags: { category: 'Growth', topic: 'Branding' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '23 February 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 10, attributes: { name: 'Business Growth' } } },
     picture: {
       data: {
@@ -857,14 +957,39 @@ const salonRevenueGrowthArticle: LocalBlogPost = {
     metaTitle: 'Salon Revenue Growth Strategies 2026 | The Daisy',
     metaDescription:
       'Proven salon revenue growth strategies for 2026: pricing optimization, menu engineering, client retention, upselling, and technology-driven efficiency tactics.',
-    createdAt: '2026-03-17T12:00:00.000Z',
-    updatedAt: '2026-03-17T12:00:00.000Z',
-    publishedAt: '2026-03-17T12:00:00.000Z',
+    createdAt: '2025-02-23T05:00:00.000Z',
+    updatedAt: '2025-02-23T05:00:00.000Z',
+    publishedAt: '2025-02-23T05:00:00.000Z',
     locale: 'en',
     sortId: 31,
     tags: { category: 'Growth', topic: 'Revenue' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '18 August 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 10, attributes: { name: 'Business Growth' } } },
     picture: {
       data: {

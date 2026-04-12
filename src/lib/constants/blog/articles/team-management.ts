@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '17 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -161,8 +161,33 @@ const staffSchedulingArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 32,
     tags: { category: 'Team', topic: 'Scheduling' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '11 August 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 11, attributes: { name: 'Team Management' } } },
     picture: {
       data: {
@@ -357,14 +382,39 @@ const commissionStructuresArticle: LocalBlogPost = {
     metaTitle: 'Salon Commission Structures | The Daisy',
     metaDescription:
       'Compare flat-rate, tiered, hybrid, and team-based salon commission models. Design a compensation plan that retains top stylists and protects profitability.',
-    createdAt: '2026-03-17T09:00:00.000Z',
-    updatedAt: '2026-03-17T09:00:00.000Z',
-    publishedAt: '2026-03-17T09:00:00.000Z',
+    createdAt: '2025-08-11T05:00:00.000Z',
+    updatedAt: '2025-08-11T05:00:00.000Z',
+    publishedAt: '2025-08-11T05:00:00.000Z',
     locale: 'en',
     sortId: 33,
     tags: { category: 'Team', topic: 'Compensation' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '8 May 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 11, attributes: { name: 'Team Management' } } },
     picture: {
       data: {
@@ -522,14 +572,39 @@ const managingPermissionsArticle: LocalBlogPost = {
     metaTitle: 'Salon Permissions: Who Sees What | The Daisy',
     metaDescription:
       'Set up role-based access control in your salon software. Define permissions for owners, managers, and stylists to protect data and empower your team.',
-    createdAt: '2026-03-17T10:00:00.000Z',
-    updatedAt: '2026-03-17T10:00:00.000Z',
-    publishedAt: '2026-03-17T10:00:00.000Z',
+    createdAt: '2025-05-08T05:00:00.000Z',
+    updatedAt: '2025-05-08T05:00:00.000Z',
+    publishedAt: '2025-05-08T05:00:00.000Z',
     locale: 'en',
     sortId: 34,
     tags: { category: 'Team', topic: 'Security' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '25 November 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 11, attributes: { name: 'Team Management' } } },
     picture: {
       data: {
@@ -692,14 +767,39 @@ const timeManagementArticle: LocalBlogPost = {
     metaTitle: 'Time Management for Beauty Pros | The Daisy',
     metaDescription:
       'Proven time management strategies for independent beauty professionals. Minimise dead time, automate admin, set boundaries, and maximise your income.',
-    createdAt: '2026-03-17T11:00:00.000Z',
-    updatedAt: '2026-03-17T11:00:00.000Z',
-    publishedAt: '2026-03-17T11:00:00.000Z',
+    createdAt: '2025-11-25T05:00:00.000Z',
+    updatedAt: '2025-11-25T05:00:00.000Z',
+    publishedAt: '2025-11-25T05:00:00.000Z',
     locale: 'en',
     sortId: 35,
     tags: { category: 'Team', topic: 'Productivity' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '10 December 2025',
+          time: '11 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 11, attributes: { name: 'Team Management' } } },
     picture: {
       data: {
