@@ -36,4 +36,10 @@ export const authorBios: Record<string, AuthorBio> = {
     bio: 'Amara Nasser is a London-based freelance stylist and career mentor who helps beauty professionals build sustainable independent practices. Having navigated the leap from salon employment to a thriving freelance career herself, she shares the practical lessons — pricing, taxes, client acquisition, and everything in between — that no one taught her.',
     image: '/images/blog/author-amara-nasser.webp',
   },
+  'The Daisy Team': {
+    name: 'The Daisy Team',
+    jobTitle: 'Content Team',
+    bio: 'The Daisy Team covers platform updates, product comparisons, and industry insights to help beauty businesses make informed technology decisions.',
+    image: '/images/blog/author-daisy-team.webp',
+  },
 };
