@@ -156,7 +156,8 @@ describe('comparisonPages helpers', () => {
       if (result?.type === 'best-alternatives') {
         expect(result.data.competitorSlug).toBeTruthy();
         expect(result.data.intro).toBeTruthy();
-        expect(result.data.verdict).toBeTruthy();
+        expect(Object.keys(result.data.bestFor).length).toBeGreaterThan(0);
+        expect(result.data.daisyEdge).toBeTruthy();
         expect(result.data.alternatives.length).toBeGreaterThan(0);
       }
     });

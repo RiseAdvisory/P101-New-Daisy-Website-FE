@@ -46,8 +46,9 @@ export interface BestAlternativesPageData {
   heroTitle: string;
   heroSubtitle: string;
   intro: string;
-  alternatives: string[]; // ordered slugs, Daisy always first
-  verdict: string;
+  alternatives: string[]; // competitor slugs (unordered — no ranking)
+  bestFor: Record<string, string>; // competitorSlug → short "Best for X" label
+  daisyEdge: string; // what Daisy uniquely offers beyond these alternatives
 }
 
 export interface CompetitorVsPageData {
@@ -1005,9 +1006,17 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best fresha alternatives', 'fresha alternatives', 'fresha competitors', 'salon software like fresha'],
     heroTitle: '7 Best Fresha Alternatives in 2026',
     heroSubtitle: 'Fresha\'s subscription fees plus hidden transaction costs are getting expensive. Here are the best alternatives for growing beauty businesses.',
-    intro: 'Fresha is the world\'s largest beauty marketplace, but monthly subscriptions stacked on top of transaction fees, 20% marketplace commissions, and no AI features are pushing businesses to look elsewhere. We\'ve compared the top alternatives based on features, pricing, AI capabilities, and international support.',
+    intro: 'Fresha is the world\'s largest beauty marketplace, but monthly subscriptions stacked on top of transaction fees, 20% marketplace commissions, and no AI features are pushing businesses to look elsewhere. Here are the top alternatives compared by features, pricing, AI capabilities, and international support.',
     alternatives: ['booksy', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
-    verdict: 'For beauty businesses wanting AI-powered growth with transparent pricing and Arabic support, Daisy is the top choice. For budget-conscious US solopreneurs, GlossGenius or Booksy are solid options.',
+    bestFor: {
+      'booksy': 'Best for mobile-first solopreneurs',
+      'vagaro': 'Best for US salons wanting comprehensive features at a low price',
+      'glossgenius': 'Best for independent stylists wanting beautiful, simple software',
+      'boulevard': 'Best for premium salons with high-touch client experiences',
+      'mangomint': 'Best for operations-focused salons wanting clean UX',
+      'square-appointments': 'Best for businesses already using Square for payments',
+    },
+    daisyEdge: 'None of these alternatives include an AI receptionist that books appointments 24/7, a cashback-powered customer acquisition marketplace, or native Arabic support. Daisy combines all three with white-label branding and flat pricing — growth tools, not just operations.',
   },
   {
     slug: 'best-booksy-alternatives',
@@ -1017,9 +1026,17 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best booksy alternatives', 'booksy alternatives', 'booksy competitors'],
     heroTitle: '7 Best Booksy Alternatives in 2026',
     heroSubtitle: 'Per-provider pricing and basic AI not cutting it? Here are better options for growing teams.',
-    intro: 'Booksy is a popular mobile-first booking app, but per-provider pricing gets expensive for teams, Digital Doorman AI is limited to call routing, and there\'s no GCC support. We\'ve ranked the best alternatives for different business needs.',
+    intro: 'Booksy is a popular mobile-first booking app, but per-provider pricing gets expensive for teams, Digital Doorman AI is limited to call routing, and there\'s no GCC support. Here are the top alternatives for different business needs.',
     alternatives: ['fresha', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
-    verdict: 'Daisy leads with comprehensive AI and flat pricing. Vagaro is the best feature-rich alternative for US businesses. GlossGenius wins for solo beauty professionals on a budget.',
+    bestFor: {
+      'fresha': 'Best for marketplace-driven client discovery',
+      'vagaro': 'Best for feature-rich salon management on a budget',
+      'glossgenius': 'Best for solo beauty pros wanting simplicity',
+      'boulevard': 'Best for upscale salons and med spas',
+      'mangomint': 'Best for salons prioritizing clean operations',
+      'square-appointments': 'Best for businesses needing strong POS integration',
+    },
+    daisyEdge: 'These alternatives handle operations well, but none offer AI-powered customer acquisition, a 24/7 voice receptionist, or cashback rewards that actively bring new clients through the door. Daisy adds the growth layer that booking platforms miss.',
   },
   {
     slug: 'best-vagaro-alternatives',
@@ -1029,9 +1046,17 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best vagaro alternatives', 'vagaro alternatives', 'vagaro competitors'],
     heroTitle: '7 Best Vagaro Alternatives in 2026',
     heroSubtitle: 'Vagaro manages well but doesn\'t grow your business. These alternatives add AI-powered acquisition.',
-    intro: 'Vagaro is a comprehensive US salon platform, but it lacks AI capabilities, charges per-staff calendar fees, and has no international support. If you need AI, Arabic, or customer acquisition tools, here are the best alternatives.',
+    intro: 'Vagaro is a comprehensive US salon platform, but it lacks AI capabilities, charges per-staff calendar fees, and has no international support. Here are the strongest alternatives depending on your priorities.',
     alternatives: ['fresha', 'booksy', 'glossgenius', 'boulevard', 'mindbody', 'mangomint'],
-    verdict: 'Daisy is the top pick for businesses wanting AI-driven growth and GCC support. Boulevard suits premium US salons. Booksy is better for mobile-first solopreneurs.',
+    bestFor: {
+      'fresha': 'Best for salons wanting free marketplace exposure',
+      'booksy': 'Best for mobile-first independent professionals',
+      'glossgenius': 'Best for solo stylists who value design and simplicity',
+      'boulevard': 'Best for premium multi-service salons',
+      'mindbody': 'Best for fitness and wellness businesses',
+      'mangomint': 'Best for operationally complex salons',
+    },
+    daisyEdge: 'Vagaro alternatives manage your business, but none acquire new customers for you. Daisy adds an AI receptionist, cashback marketplace, and Arabic/English support — turning your salon software into a growth engine.',
   },
   {
     slug: 'best-glossgenius-alternatives',
@@ -1041,9 +1066,17 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best glossgenius alternatives', 'glossgenius alternatives', 'glossgenius competitors'],
     heroTitle: '7 Best GlossGenius Alternatives in 2026',
     heroSubtitle: 'Beautiful for solos, but team management at $148/mo and no marketplace limit growth.',
-    intro: 'GlossGenius is loved for its design and simplicity, but team features require Platinum ($148/mo), AI is limited to analytics, and there\'s no marketplace. For growing businesses, here are better options.',
+    intro: 'GlossGenius is loved for its design and simplicity, but team features require Platinum ($148/mo), AI is limited to analytics, and there\'s no marketplace. Here are the strongest options for growing teams.',
     alternatives: ['fresha', 'booksy', 'vagaro', 'boulevard', 'mangomint', 'square-appointments'],
-    verdict: 'Daisy is best for teams wanting AI and marketplace at accessible pricing. Vagaro offers the most features per dollar for US businesses. Boulevard suits premium brands.',
+    bestFor: {
+      'fresha': 'Best for marketplace-led client acquisition',
+      'booksy': 'Best for affordable mobile booking',
+      'vagaro': 'Best for maximum features per dollar',
+      'boulevard': 'Best for premium salon brands',
+      'mangomint': 'Best for team-heavy salons wanting clean automation',
+      'square-appointments': 'Best for payment-first businesses',
+    },
+    daisyEdge: 'GlossGenius alternatives solve the team management gap, but none include AI that answers calls, books appointments, and acquires new customers around the clock. Daisy delivers these growth capabilities with flat pricing and no per-staff fees.',
   },
   // P3
   {
@@ -1056,7 +1089,15 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     heroSubtitle: 'Legacy pricing and dated UX pushing you to look elsewhere? These modern platforms deliver more.',
     intro: 'Mindbody dominated wellness software for years, but high prices ($139-699/mo), marketplace commissions, and a dated interface are driving businesses to modern alternatives with AI and transparent pricing.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'boulevard', 'glossgenius', 'mangomint'],
-    verdict: 'Daisy offers the most modern experience with AI and Arabic support. Vagaro is the best feature-for-feature Mindbody replacement at a lower price.',
+    bestFor: {
+      'fresha': 'Best for salons wanting a free starting tier',
+      'vagaro': 'Best for comprehensive features at a fraction of Mindbody pricing',
+      'booksy': 'Best for mobile-first barbers and beauty pros',
+      'boulevard': 'Best for premium client experiences',
+      'glossgenius': 'Best for independent professionals wanting modern UX',
+      'mangomint': 'Best for highest-rated salon operations',
+    },
+    daisyEdge: 'Modern Mindbody alternatives fix the UX and pricing issues, but none combine AI automation, cashback-driven acquisition, and Arabic support in one platform. Daisy provides the modern experience with growth tools built in.',
   },
   {
     slug: 'best-boulevard-alternatives',
@@ -1068,7 +1109,13 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     heroSubtitle: 'Premium design at $158+/mo with AI locked behind $295. These alternatives include more for less.',
     intro: 'Boulevard is a beautifully designed platform, but premium pricing and AI locked behind the Premier tier push businesses to seek better value. Here are the top alternatives.',
     alternatives: ['vagaro', 'mangomint', 'glossgenius', 'booksy'],
-    verdict: 'Daisy offers full AI and marketplace at accessible pricing. Mangomint matches Boulevard\'s clean design. Vagaro is the best value for comprehensive features.',
+    bestFor: {
+      'vagaro': 'Best for comprehensive features at a lower price point',
+      'mangomint': 'Best for matching Boulevard\'s clean design aesthetic',
+      'glossgenius': 'Best for solo professionals wanting premium simplicity',
+      'booksy': 'Best for mobile-first beauty professionals',
+    },
+    daisyEdge: 'Boulevard alternatives offer premium salon management, but none include a 24/7 AI receptionist, cashback rewards marketplace, or native Arabic support. Daisy delivers premium quality with growth tools included at every pricing tier.',
   },
   // P4
   {
@@ -1081,7 +1128,13 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     heroSubtitle: 'Clean operations at $165+/mo, but where\'s the AI and customer acquisition?',
     intro: 'Mangomint has the highest Capterra rating (4.9/5), but its premium pricing, no AI, and no marketplace leave room for alternatives that add growth capabilities.',
     alternatives: ['boulevard', 'vagaro', 'glossgenius', 'booksy'],
-    verdict: 'Daisy adds AI and marketplace to premium salon management. Boulevard matches design quality. Vagaro offers the best all-round value.',
+    bestFor: {
+      'boulevard': 'Best for premium salons wanting enterprise polish',
+      'vagaro': 'Best for all-round value with comprehensive features',
+      'glossgenius': 'Best for design-conscious solo professionals',
+      'booksy': 'Best for affordable mobile-first booking',
+    },
+    daisyEdge: 'Mangomint alternatives handle operations beautifully, but none add AI-powered customer acquisition, cashback loyalty, or Arabic support. Daisy brings growth capabilities on top of premium salon management.',
   },
   {
     slug: 'best-square-appointments-alternatives',
@@ -1093,7 +1146,15 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     heroSubtitle: 'Great for payments, but beauty businesses need purpose-built tools.',
     intro: 'Square Appointments is a solid free scheduling tool with great POS, but it\'s not built for beauty businesses. These alternatives offer industry-specific features, AI, and marketplace capabilities.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'glossgenius', 'boulevard', 'mangomint'],
-    verdict: 'Daisy is the best upgrade path for beauty businesses outgrowing Square. Fresha offers free marketplace. Vagaro is the most feature-complete.',
+    bestFor: {
+      'fresha': 'Best for free marketplace-powered booking',
+      'vagaro': 'Best for the most complete feature set',
+      'booksy': 'Best for beauty professionals wanting industry-specific tools',
+      'glossgenius': 'Best for independent stylists upgrading from generic tools',
+      'boulevard': 'Best for premium salon experiences',
+      'mangomint': 'Best for operations-focused salon management',
+    },
+    daisyEdge: 'Beauty-specific alternatives solve what Square lacks for salons, but none include AI that handles calls and bookings 24/7 or a cashback marketplace that acquires new clients. Daisy is built for beauty businesses that want to grow, not just schedule.',
   },
   // P5
   {
@@ -1104,9 +1165,17 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best zenoti alternatives', 'zenoti alternatives', 'zenoti competitors', 'salon software like zenoti'],
     heroTitle: '7 Best Zenoti Alternatives in 2026',
     heroSubtitle: 'Enterprise pricing starting at $225+/mo per location with annual contracts and complex implementation. These alternatives deliver AI without the overhead.',
-    intro: 'Zenoti is a powerful enterprise platform with 6 AI agents, but $225+/month per location, mandatory annual contracts, and complex implementation timelines push many businesses to seek alternatives. Despite GCC offices, there\'s still no Arabic UI. We\'ve compared the top alternatives based on AI capabilities, pricing, and ease of deployment.',
+    intro: 'Zenoti is a powerful enterprise platform with 6 AI agents, but $225+/month per location, mandatory annual contracts, and complex implementation timelines push many businesses to seek alternatives. Despite GCC offices, there\'s still no Arabic UI. Here are the top alternatives compared by AI capabilities, pricing, and ease of deployment.',
     alternatives: ['boulevard', 'mangomint', 'mindbody', 'fresha', 'vagaro', 'phorest'],
-    verdict: 'For multi-location beauty businesses wanting enterprise AI without enterprise complexity, Daisy is the top choice with full Arabic support. Boulevard and Mangomint offer premium experiences at lower price points. Mindbody is the closest enterprise alternative.',
+    bestFor: {
+      'boulevard': 'Best for premium multi-location salons',
+      'mangomint': 'Best for clean operations without enterprise complexity',
+      'mindbody': 'Best for fitness and wellness crossover businesses',
+      'fresha': 'Best for cost-conscious salons wanting marketplace exposure',
+      'vagaro': 'Best for comprehensive features at mid-market pricing',
+      'phorest': 'Best for UK/Ireland salons with strong CRM needs',
+    },
+    daisyEdge: 'Enterprise alternatives simplify Zenoti\'s complexity, but none offer a fully integrated AI receptionist, cashback acquisition engine, and native Arabic UI without per-location surcharges. Daisy delivers enterprise AI without enterprise overhead.',
   },
   {
     slug: 'best-acuity-alternatives',
@@ -1118,7 +1187,15 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     heroSubtitle: 'Acuity is great for generic scheduling, but beauty businesses need POS, CRM, inventory, and AI, not just a calendar.',
     intro: 'Acuity Scheduling by Squarespace has excellent reviews (4.8/5, 5600+ reviews) for general appointment booking, but it\'s not built for beauty businesses. No POS, no CRM, no inventory management, no AI, and no Arabic support mean growing salons quickly outgrow it. Here are the best beauty-specific alternatives.',
     alternatives: ['fresha', 'booksy', 'vagaro', 'glossgenius', 'setmore', 'simplybook-me'],
-    verdict: 'Daisy is the best upgrade from Acuity for beauty businesses, offering AI, marketplace, and full Arabic support. Fresha provides a free marketplace option. Booksy is excellent for solopreneurs wanting beauty-specific features.',
+    bestFor: {
+      'fresha': 'Best for free beauty-specific booking with marketplace',
+      'booksy': 'Best for mobile-first beauty professionals',
+      'vagaro': 'Best for full-featured salon management',
+      'glossgenius': 'Best for independent stylists wanting beautiful software',
+      'setmore': 'Best for budget-friendly basic scheduling',
+      'simplybook-me': 'Best for businesses wanting modular customisation',
+    },
+    daisyEdge: 'These beauty-specific alternatives solve what Acuity lacks for salons — POS, CRM, inventory. But none add AI that answers your phone 24/7, a cashback marketplace that brings in new clients, or native Arabic support. Daisy is the complete upgrade path.',
   },
   {
     slug: 'best-phorest-alternatives',
@@ -1130,7 +1207,13 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     heroSubtitle: 'Excellent CRM and loyalty at ~$99/mo, but limited to UK/Ireland with no AI, no marketplace, and no Arabic support.',
     intro: 'Phorest has built a loyal following in the UK and Ireland with excellent CRM, loyalty programs, and a strong 4.8 rating. But no AI features, no customer marketplace, and no Arabic or GCC support limit its appeal for businesses wanting to grow beyond their current market. Here are the top alternatives.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'boulevard'],
-    verdict: 'Daisy matches Phorest\'s CRM strength while adding AI-powered growth, marketplace, and Arabic support. Fresha offers a global marketplace. Vagaro provides the most comprehensive feature set at competitive pricing.',
+    bestFor: {
+      'fresha': 'Best for global marketplace reach',
+      'vagaro': 'Best for comprehensive features at competitive pricing',
+      'booksy': 'Best for mobile-first professionals',
+      'boulevard': 'Best for premium salon brands',
+    },
+    daisyEdge: 'Phorest alternatives extend beyond UK/Ireland, but none combine CRM-level client management with AI-powered acquisition, cashback loyalty, and native Arabic support. Daisy matches Phorest\'s client focus while adding the growth tools it lacks.',
   },
   {
     slug: 'best-timely-alternatives',
@@ -1142,7 +1225,13 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     heroSubtitle: 'Clean UI at $30/mo base, but $9-15/staff adds up fast, and there\'s no AI, no marketplace, and no Arabic support.',
     intro: 'Timely has a clean interface and a solid 4.7 rating in New Zealand, Australia, and the UK. But per-staff pricing ($9-15/staff on top of $30/mo base) scales badly for growing teams, and the lack of AI, marketplace, and Arabic support limits growth potential. Here are better alternatives for scaling beauty businesses.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'glossgenius'],
-    verdict: 'Daisy eliminates per-staff pricing surprises with transparent plans, full AI, and marketplace. Fresha offers a free tier with marketplace. Vagaro provides the best all-round value for growing teams.',
+    bestFor: {
+      'fresha': 'Best for free marketplace-driven booking',
+      'vagaro': 'Best for growing teams wanting flat-rate value',
+      'booksy': 'Best for affordable mobile booking',
+      'glossgenius': 'Best for design-focused solo professionals',
+    },
+    daisyEdge: 'Timely alternatives eliminate per-staff pricing surprises, but none include a 24/7 AI receptionist, cashback customer acquisition, or native Arabic support. Daisy provides transparent flat pricing with growth tools built into every plan.',
   },
   {
     slug: 'best-setmore-alternatives',
@@ -1154,7 +1243,15 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     heroSubtitle: 'Free scheduling is nice, but beauty businesses need POS, CRM, inventory, AI, and a marketplace to actually grow.',
     intro: 'Setmore offers free basic scheduling at $5-12/user/month for paid tiers, but it\'s a generic tool with no beauty-specific features, no POS, no CRM, no AI, and no Arabic support. When your business is ready to grow beyond a simple calendar, these purpose-built alternatives deliver far more value.',
     alternatives: ['fresha', 'booksy', 'vagaro', 'glossgenius', 'acuity-scheduling', 'simplybook-me'],
-    verdict: 'Daisy is the best growth platform for beauty businesses graduating from free tools, with AI, marketplace, and Arabic support. Fresha offers a free marketplace tier. Booksy is an affordable beauty-specific step up.',
+    bestFor: {
+      'fresha': 'Best for free beauty-specific marketplace booking',
+      'booksy': 'Best for affordable beauty-specific step up',
+      'vagaro': 'Best for the most features per dollar',
+      'glossgenius': 'Best for solo stylists wanting premium simplicity',
+      'acuity-scheduling': 'Best for advanced scheduling customisation',
+      'simplybook-me': 'Best for businesses wanting modular add-on flexibility',
+    },
+    daisyEdge: 'Setmore alternatives add beauty-specific features that generic scheduling lacks, but none include AI-powered acquisition, cashback rewards, or Arabic support. Daisy is the growth platform for businesses ready to graduate from free tools.',
   },
   {
     slug: 'best-simplybookme-alternatives',
@@ -1166,7 +1263,15 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     heroSubtitle: 'Modular pricing with 70+ add-ons sounds flexible, until you\'re paying for 15 features that should be included.',
     intro: 'SimplyBook.me offers generic booking with a modular add-on system (free to $59.90/mo), but the complexity of managing 70+ add-ons, translated (not native) Arabic, no AI, and no marketplace make it frustrating for beauty businesses that want things to just work. Here are the best all-in-one alternatives.',
     alternatives: ['fresha', 'booksy', 'vagaro', 'glossgenius', 'acuity-scheduling', 'setmore'],
-    verdict: 'Daisy replaces SimplyBook.me\'s add-on complexity with an all-in-one platform featuring native Arabic, AI, and marketplace. Fresha provides free marketplace access. Vagaro is the most feature-complete affordable option.',
+    bestFor: {
+      'fresha': 'Best for free all-in-one marketplace booking',
+      'booksy': 'Best for mobile-first beauty professionals',
+      'vagaro': 'Best for comprehensive features without add-on complexity',
+      'glossgenius': 'Best for clean design and simplicity',
+      'acuity-scheduling': 'Best for advanced scheduling customisation',
+      'setmore': 'Best for free basic scheduling',
+    },
+    daisyEdge: 'SimplyBook.me alternatives replace add-on complexity with all-in-one platforms, but none include AI that handles calls and bookings 24/7 or a cashback marketplace for client acquisition. Daisy replaces the complexity with a single platform that grows your business.',
   },
 ];
 
