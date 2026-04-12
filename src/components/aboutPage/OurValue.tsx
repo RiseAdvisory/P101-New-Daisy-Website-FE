@@ -3,7 +3,7 @@ import { AboutPageContent } from '@/lib/constants/pages/aboutPageData';
 
 export const OurValue = ({ heroAbout }: { heroAbout: AboutPageContent }) => {
   return (
-    <div className=" px-6 py-[112px] bg-[#F8F5F3]">
+    <div className="px-6 py-16 md:py-[112px] bg-[#F8F5F3]">
       <div className="flex flex-col mx-auto text-center">
         <h1 className="text-center text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
           {heroAbout.ourValues}

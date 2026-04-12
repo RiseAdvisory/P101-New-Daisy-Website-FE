@@ -20,26 +20,26 @@ export const OurMissing = ({
   const imageAbout = heroAbout.heroImage;
 
   return (
-    <div className="bg-white px-4 pt-[80px] pb-[140px]" ref={blockRef}>
+    <div className="bg-white px-4 pt-[80px] pb-16 md:pb-[140px]" ref={blockRef}>
       <div className="flex flex-col mx-auto text-center ">
         <h1 className="text-center text-[32px] leading-10 md:text-[40px] md:leading-[50px] md:font-bold">
           {heroAbout.missingTitle}
         </h1>
-        <p className="text-center text-[#455150] mt-3 ltr:font-montserrat text-base font-normal md:px-[440px]">
+        <p className="text-center text-[#455150] mt-3 ltr:font-montserrat text-base font-normal px-4 md:px-[440px]">
           {heroAbout.missingDescription}
         </p>
       </div>
       <Separator className="bg-[#E8E9E9] mt-12 md:hidden" />
       <div className="md:px-16 md:flex md:mt-[48px]">
         <div className="md:flex md:justify-between md:bg-white rounded-[16px]">
-          <div className="md:w-[40%] md:my-auto md:pt-[0px]">
+          <div className="md:w-[40%] md:my-auto md:pt-[0px] text-center md:text-start">
             <p className="text-[#8B6554] pt-20 md:pt-0 text-base leading-6">
               {heroAbout.personalizedPath.title}
             </p>
             <h2 className="pt-2 text-[#172524] leading-10 text-4xl md:text-[40px] md:leading-[50px] font-bold">
               {heroAbout.personalizedPath.subtitle}
             </h2>
-            <p className="ltr:font-montserrat font-medium text-base pt-3 leading-8 text-primaryBtn md:text-[16px] md:leading-6 md:font-normal ">
+            <p className="ltr:font-montserrat font-medium text-base pt-3 leading-8 text-primaryBtn md:text-[16px] md:leading-6 md:font-normal">
               {heroAbout.personalizedPath.description}
             </p>
           </div>

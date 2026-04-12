@@ -70,7 +70,7 @@ export const HeroPage = ({
         priority
       />
       {title !== '' && (
-        <p className="mt-11 font-semibold text-base text-[#F2DAD4] uppercase">
+        <p className="mt-11 font-semibold text-base text-[#F2DAD4] uppercase text-center">
           {title}
         </p>
       )}
