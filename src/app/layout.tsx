@@ -115,7 +115,7 @@ export default function RootLayout({
           id="daisy-support-config"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html: `window.DaisySupportConfig = { apiUrl: '${process.env.NEXT_PUBLIC_SUPPORT_WIDGET_URL || 'https://devapp.trythedaisy.com'}/api/v1', lang: '${locale}' };`,
+            __html: `window.DaisySupportConfig = { apiUrl: '${process.env.NEXT_PUBLIC_SUPPORT_WIDGET_URL || 'https://devapp.trythedaisy.com'}/api/v1', lang: '${locale}', debugWebsocket: true };`,
           }}
         />
       </head>
