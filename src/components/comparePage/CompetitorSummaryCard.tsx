@@ -8,6 +8,7 @@ interface CompetitorSummaryCardProps {
   competitorSlug: string;
   rank?: number;
   recommended?: boolean;
+  bestFor?: string;
 }
 
 const featureLabels: { key: string; label: string }[] = [
@@ -42,6 +43,7 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
   competitorSlug,
   rank,
   recommended,
+  bestFor,
 }) => {
   const competitor = getCompetitor(competitorSlug);
   if (!competitor) return null;
@@ -101,6 +103,13 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
         <p className="mt-3 text-sm leading-relaxed text-[#455150] line-clamp-2">
           {competitor.description}
         </p>
+
+        {/* Best For Badge */}
+        {bestFor && (
+          <p className="mt-3 text-sm font-medium text-primary">
+            {bestFor}
+          </p>
+        )}
 
         {/* Feature Ratings Grid */}
         <div className="mt-5 grid grid-cols-3 gap-x-4 gap-y-2">

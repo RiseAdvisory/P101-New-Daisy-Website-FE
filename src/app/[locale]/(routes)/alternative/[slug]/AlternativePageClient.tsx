@@ -225,66 +225,30 @@ function BestAlternativesPage({
         <p className="text-lg text-gray-600" data-geo-answer="true">{data.intro}</p>
       </section>
 
-      {/* #1: Daisy */}
-      <section className="mx-auto max-w-5xl px-4 py-8">
-        <div className="rounded-lg border-2 border-green-300 bg-green-50 p-6">
-          <div className="mb-2 flex items-center gap-3">
-            <span className="rounded-full bg-green-600 px-3 py-1 text-sm font-bold text-white">
-              #1 Our Pick
-            </span>
-            <h2 className="text-2xl font-bold text-gray-900">Daisy</h2>
-          </div>
-          <p className="mb-4 text-gray-700">
-            AI-powered beauty business platform with 24/7 receptionist, cashback
-            rewards, marketplace, and native Arabic/English support. The only
-            platform that combines operations management with proactive customer
-            acquisition.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {[
-              'AI Receptionist',
-              'Cashback Rewards',
-              'Arabic + English',
-              'White-Label',
-              'Marketplace',
-              'Flat Pricing',
-            ].map((tag) => (
-              <span
-                key={tag}
-                className="rounded-full bg-green-100 px-3 py-1 text-sm text-green-800"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Alternatives List */}
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-5xl px-4">
           <h2 className="mb-6 text-2xl font-bold text-gray-900">
-            Other Top Alternatives
+            Top Alternatives to {competitor.name}
           </h2>
           <div className="space-y-4">
-            {data.alternatives.map((altSlug, i) => (
+            {data.alternatives.map((altSlug) => (
               <CompetitorSummaryCard
                 key={altSlug}
                 competitorSlug={altSlug}
-                rank={i + 2}
+                bestFor={data.bestFor[altSlug]}
               />
             ))}
           </div>
         </div>
       </section>
 
-      {/* Verdict */}
-      <section className="mx-auto max-w-4xl px-4 py-12">
-        <div className="rounded-lg border border-blue-200 bg-blue-50 p-6">
-          <h2 className="mb-2 text-xl font-bold text-blue-900">Our Verdict</h2>
-          <p className="text-blue-800">{data.verdict}</p>
-        </div>
+      {/* Daisy Edge — contextual intro + specific differentiators */}
+      <section className="mx-auto max-w-4xl px-4 pt-12 pb-4">
+        <p className="text-lg text-gray-600" data-geo-answer="true">{data.daisyEdge}</p>
       </section>
+
+      <DaisyDifferentiators />
 
       {/* CTA */}
       <SwitchingCTA competitorName={competitor.name} />

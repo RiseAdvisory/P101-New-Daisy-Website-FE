@@ -92,14 +92,14 @@ describe('AlternativePageClient', () => {
       expect(hero.getAttribute('data-variant')).toBe('best-alternatives');
     });
 
-    it('renders "#1 Our Pick" badge for Daisy', () => {
+    it('does not render a biased Daisy #1 card', () => {
       render(<AlternativePageClient slug="best-fresha-alternatives" />);
-      expect(screen.getByText('#1 Our Pick')).toBeInTheDocument();
+      expect(screen.queryByText('#1 Our Pick')).not.toBeInTheDocument();
     });
 
-    it('renders "Our Verdict" section', () => {
+    it('renders Daisy differentiators section', () => {
       render(<AlternativePageClient slug="best-fresha-alternatives" />);
-      expect(screen.getByText('Our Verdict')).toBeInTheDocument();
+      expect(screen.getByTestId('daisy-differentiators')).toBeInTheDocument();
     });
 
     it('renders alternative cards', () => {
