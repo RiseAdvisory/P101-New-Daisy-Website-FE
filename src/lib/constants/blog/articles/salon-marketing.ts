@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '18 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -132,8 +132,33 @@ const salonMarketingIdeas2026Article: LocalBlogPost = {
     locale: 'en',
     sortId: 65,
     tags: { category: 'Salon Marketing', topic: 'Marketing Ideas' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '1 March 2026',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 14, attributes: { name: 'Salon Marketing' } } },
     picture: {
       data: {
@@ -264,14 +289,39 @@ const salonSocialMediaMarketingArticle: LocalBlogPost = {
     metaTitle: 'Salon Social Media Marketing Guide | The Daisy',
     metaDescription:
       'Master salon social media marketing across Instagram, TikTok, and Facebook. Learn content strategies, posting schedules, and tactics that convert followers to clients.',
-    createdAt: '2026-03-18T08:30:00.000Z',
-    updatedAt: '2026-03-18T08:30:00.000Z',
-    publishedAt: '2026-03-18T08:30:00.000Z',
+    createdAt: '2026-03-01T05:00:00.000Z',
+    updatedAt: '2026-03-01T05:00:00.000Z',
+    publishedAt: '2026-03-01T05:00:00.000Z',
     locale: 'en',
     sortId: 66,
     tags: { category: 'Salon Marketing', topic: 'Social Media' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '15 March 2025',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 14, attributes: { name: 'Salon Marketing' } } },
     picture: {
       data: {
@@ -400,14 +450,39 @@ const salonEmailMarketingArticle: LocalBlogPost = {
     metaTitle: 'Salon Email Marketing Templates | The Daisy',
     metaDescription:
       'Build high-converting salon email campaigns with ready-to-use templates. Covers welcome series, rebooking reminders, seasonal promos, and win-back automations.',
-    createdAt: '2026-03-18T09:00:00.000Z',
-    updatedAt: '2026-03-18T09:00:00.000Z',
-    publishedAt: '2026-03-18T09:00:00.000Z',
+    createdAt: '2025-03-15T05:00:00.000Z',
+    updatedAt: '2025-03-15T05:00:00.000Z',
+    publishedAt: '2025-03-15T05:00:00.000Z',
     locale: 'en',
     sortId: 67,
     tags: { category: 'Salon Marketing', topic: 'Email Marketing' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '20 January 2025',
+          time: '6 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 14, attributes: { name: 'Salon Marketing' } } },
     picture: {
       data: {
@@ -547,14 +622,39 @@ const salonLoyaltyProgramGuideArticle: LocalBlogPost = {
     metaTitle: 'Create a Salon Loyalty Program | The Daisy',
     metaDescription:
       'Step-by-step guide to creating a salon loyalty program that retains clients. Covers cashback, points, tiered models, launch strategies, and success metrics.',
-    createdAt: '2026-03-18T09:30:00.000Z',
-    updatedAt: '2026-03-18T09:30:00.000Z',
-    publishedAt: '2026-03-18T09:30:00.000Z',
+    createdAt: '2025-01-20T05:00:00.000Z',
+    updatedAt: '2025-01-20T05:00:00.000Z',
+    publishedAt: '2025-01-20T05:00:00.000Z',
     locale: 'en',
     sortId: 68,
     tags: { category: 'Salon Marketing', topic: 'Loyalty Programs' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '25 April 2025',
+          time: '6 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 14, attributes: { name: 'Salon Marketing' } } },
     picture: {
       data: {
@@ -682,14 +782,39 @@ const salonReferralProgramGuideArticle: LocalBlogPost = {
     metaTitle: 'Salon Referral Programs Guide | The Daisy',
     metaDescription:
       'Design a salon referral program that turns clients into ambassadors. Covers two-sided incentives, automation, tracking, and strategies for maximising referrals.',
-    createdAt: '2026-03-18T10:00:00.000Z',
-    updatedAt: '2026-03-18T10:00:00.000Z',
-    publishedAt: '2026-03-18T10:00:00.000Z',
+    createdAt: '2025-04-25T05:00:00.000Z',
+    updatedAt: '2025-04-25T05:00:00.000Z',
+    publishedAt: '2025-04-25T05:00:00.000Z',
     locale: 'en',
     sortId: 69,
     tags: { category: 'Salon Marketing', topic: 'Referrals' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '7 August 2025',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 14, attributes: { name: 'Salon Marketing' } } },
     picture: {
       data: {
@@ -828,14 +953,39 @@ const googleMyBusinessSalonArticle: LocalBlogPost = {
     metaTitle: 'Google My Business for Salons | The Daisy',
     metaDescription:
       'Optimise your salon Google Business Profile for local search dominance. Covers categories, photos, reviews, posts, and advanced tactics for maximum visibility.',
-    createdAt: '2026-03-18T10:30:00.000Z',
-    updatedAt: '2026-03-18T10:30:00.000Z',
-    publishedAt: '2026-03-18T10:30:00.000Z',
+    createdAt: '2025-08-07T05:00:00.000Z',
+    updatedAt: '2025-08-07T05:00:00.000Z',
+    publishedAt: '2025-08-07T05:00:00.000Z',
     locale: 'en',
     sortId: 70,
     tags: { category: 'Salon Marketing', topic: 'Google Business' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '23 March 2026',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 14, attributes: { name: 'Salon Marketing' } } },
     picture: {
       data: {
@@ -993,14 +1143,39 @@ const salonSeoLocalSearchArticle: LocalBlogPost = {
     metaTitle: 'Salon SEO: Local Search Guide | The Daisy',
     metaDescription:
       'Master salon local SEO to rank in Google search and Maps. Covers on-page optimisation, citations, link building, content strategy, and technical SEO for salons.',
-    createdAt: '2026-03-18T11:00:00.000Z',
-    updatedAt: '2026-03-18T11:00:00.000Z',
-    publishedAt: '2026-03-18T11:00:00.000Z',
+    createdAt: '2026-03-23T05:00:00.000Z',
+    updatedAt: '2026-03-23T05:00:00.000Z',
+    publishedAt: '2026-03-23T05:00:00.000Z',
     locale: 'en',
     sortId: 71,
     tags: { category: 'Salon Marketing', topic: 'SEO' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '21 September 2025',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 14, attributes: { name: 'Salon Marketing' } } },
     picture: {
       data: {
@@ -1137,14 +1312,39 @@ const independentBeautyProfessionalMarketingArticle: LocalBlogPost = {
     metaTitle: 'Marketing for Independent Beauty Pros | The Daisy',
     metaDescription:
       'Complete marketing guide for independent beauty professionals. Covers personal branding, social media, client acquisition, pricing, and building a loyal client base.',
-    createdAt: '2026-03-18T11:30:00.000Z',
-    updatedAt: '2026-03-18T11:30:00.000Z',
-    publishedAt: '2026-03-18T11:30:00.000Z',
+    createdAt: '2025-09-21T05:00:00.000Z',
+    updatedAt: '2025-09-21T05:00:00.000Z',
+    publishedAt: '2025-09-21T05:00:00.000Z',
     locale: 'en',
     sortId: 72,
     tags: { category: 'Salon Marketing', topic: 'Independent Professional' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '24 February 2026',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 14, attributes: { name: 'Salon Marketing' } } },
     picture: {
       data: {

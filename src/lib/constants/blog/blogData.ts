@@ -240,13 +240,13 @@ export const blogCTAData: I18nContent<{
   titleSimilar: string;
 }> = {
   en: {
-    textCreate: 'Create Your Own Perfect Wellness Ritual With The Daisy Packages',
-    textDownload: 'Download now!',
+    textCreate: 'Try The Daisy Free for 14 Days. No Commitment, No Card Required',
+    textDownload: 'Download the app and start your free trial today.',
     titleSimilar: 'Other Topics That May Interest You',
   },
   ar: {
-    textCreate: 'أنشئ طقوس العافية المثالية مع باقات ديزي',
-    textDownload: 'حمّل الآن!',
+    textCreate: 'جرّب ديزي مجاناً لمدة 14 يوماً — بدون التزام، بدون بطاقة',
+    textDownload: 'حمّل التطبيق وابدأ تجربتك المجانية اليوم.',
     titleSimilar: 'مواضيع أخرى قد تهمك',
   },
 };

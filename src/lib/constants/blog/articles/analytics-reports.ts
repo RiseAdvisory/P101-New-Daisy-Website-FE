@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '17 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -169,8 +169,33 @@ const salonMetricsArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 36,
     tags: { category: 'Analytics', topic: 'SalonManagement' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '27 September 2025',
+          time: '12 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 12, attributes: { name: 'Analytics & Reports' } } },
     picture: {
       data: {
@@ -325,14 +350,39 @@ const clientRetentionReportingArticle: LocalBlogPost = {
     metaTitle: 'Client Retention Reporting for Salons | The Daisy',
     metaDescription:
       'Learn how to measure and report client retention for your salon. Build retention reports that reveal churn patterns and drive profitable growth strategies.',
-    createdAt: '2026-03-17T09:00:00.000Z',
-    updatedAt: '2026-03-17T09:00:00.000Z',
-    publishedAt: '2026-03-17T09:00:00.000Z',
+    createdAt: '2025-09-27T05:00:00.000Z',
+    updatedAt: '2025-09-27T05:00:00.000Z',
+    publishedAt: '2025-09-27T05:00:00.000Z',
     locale: 'en',
     sortId: 37,
     tags: { category: 'Analytics', topic: 'ClientRetention' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '16 December 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 12, attributes: { name: 'Analytics & Reports' } } },
     picture: {
       data: {
@@ -493,14 +543,39 @@ const revenueForecastingArticle: LocalBlogPost = {
     metaTitle: 'Revenue Forecasting for Beauty Businesses | The Daisy',
     metaDescription:
       'Learn three proven methods to forecast salon revenue. Build accurate financial projections, account for seasonality, and make smarter growth decisions.',
-    createdAt: '2026-03-17T10:00:00.000Z',
-    updatedAt: '2026-03-17T10:00:00.000Z',
-    publishedAt: '2026-03-17T10:00:00.000Z',
+    createdAt: '2025-12-16T05:00:00.000Z',
+    updatedAt: '2025-12-16T05:00:00.000Z',
+    publishedAt: '2025-12-16T05:00:00.000Z',
     locale: 'en',
     sortId: 38,
     tags: { category: 'Analytics', topic: 'RevenueGrowth' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '26 January 2026',
+          time: '11 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 12, attributes: { name: 'Analytics & Reports' } } },
     picture: {
       data: {
@@ -687,14 +762,39 @@ const trackingFreelanceIncomeArticle: LocalBlogPost = {
     metaTitle: 'Track Freelance Beauty Income Effectively | The Daisy',
     metaDescription:
       'A step-by-step guide to tracking freelance beauty income. Calculate your true hourly rate, manage taxes, and build financial clarity as an independent pro.',
-    createdAt: '2026-03-17T11:00:00.000Z',
-    updatedAt: '2026-03-17T11:00:00.000Z',
-    publishedAt: '2026-03-17T11:00:00.000Z',
+    createdAt: '2026-01-26T05:00:00.000Z',
+    updatedAt: '2026-01-26T05:00:00.000Z',
+    publishedAt: '2026-01-26T05:00:00.000Z',
     locale: 'en',
     sortId: 39,
     tags: { category: 'Analytics', topic: 'FreelanceIncome' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 6,
+        attributes: {
+          name: 'Amara Nasser',
+          jobTitle: 'Independent Beauty Professional & Freelance Career Mentor',
+          date: '7 January 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-amara-nasser.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-amara-nasser.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 12, attributes: { name: 'Analytics & Reports' } } },
     picture: {
       data: {
@@ -864,14 +964,39 @@ const dataDrivenSalonsArticle: LocalBlogPost = {
     metaTitle: 'Data-Driven Salons Outperform Competition | The Daisy',
     metaDescription:
       'Learn how data-driven salons gain competitive advantages in pricing, retention, staffing, and marketing. A practical guide to salon analytics that works.',
-    createdAt: '2026-03-17T12:00:00.000Z',
-    updatedAt: '2026-03-17T12:00:00.000Z',
-    publishedAt: '2026-03-17T12:00:00.000Z',
+    createdAt: '2025-01-07T05:00:00.000Z',
+    updatedAt: '2025-01-07T05:00:00.000Z',
+    publishedAt: '2025-01-07T05:00:00.000Z',
     locale: 'en',
     sortId: 40,
     tags: { category: 'Analytics', topic: 'CompetitiveStrategy' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '3 June 2026',
+          time: '12 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 12, attributes: { name: 'Analytics & Reports' } } },
     picture: {
       data: {

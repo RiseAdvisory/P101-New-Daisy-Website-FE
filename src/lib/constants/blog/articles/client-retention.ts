@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '18 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -147,8 +147,33 @@ const clientRetentionRateArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 92,
     tags: { category: 'Retention', topic: 'RetentionRate' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '14 July 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 18, attributes: { name: 'Client Retention' } } },
     picture: {
       data: {
@@ -283,14 +308,39 @@ const rebookingStrategiesArticle: LocalBlogPost = {
     metaTitle: 'Salon Rebooking Strategies | The Daisy',
     metaDescription:
       'Proven salon rebooking strategies that increase return visit rates by 30-50%. Front-desk scripts, automated reminders, and incentives that drive repeat visits.',
-    createdAt: '2026-03-18T08:30:00.000Z',
-    updatedAt: '2026-03-18T08:30:00.000Z',
-    publishedAt: '2026-03-18T08:30:00.000Z',
+    createdAt: '2025-07-14T05:00:00.000Z',
+    updatedAt: '2025-07-14T05:00:00.000Z',
+    publishedAt: '2025-07-14T05:00:00.000Z',
     locale: 'en',
     sortId: 93,
     tags: { category: 'Retention', topic: 'Rebooking' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '6 March 2026',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 18, attributes: { name: 'Client Retention' } } },
     picture: {
       data: {
@@ -415,14 +465,39 @@ const clientExperienceArticle: LocalBlogPost = {
     metaTitle: 'Salon Client Experience Guide | The Daisy',
     metaDescription:
       'Design your salon client experience from first visit to loyal regular. Covers every touchpoint: booking, arrival, service, checkout, and post-visit follow-up.',
-    createdAt: '2026-03-18T09:00:00.000Z',
-    updatedAt: '2026-03-18T09:00:00.000Z',
-    publishedAt: '2026-03-18T09:00:00.000Z',
+    createdAt: '2026-03-06T05:00:00.000Z',
+    updatedAt: '2026-03-06T05:00:00.000Z',
+    publishedAt: '2026-03-06T05:00:00.000Z',
     locale: 'en',
     sortId: 94,
     tags: { category: 'Retention', topic: 'ClientExperience' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '4 July 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 18, attributes: { name: 'Client Retention' } } },
     picture: {
       data: {
@@ -542,14 +617,39 @@ const clientPersonalizationArticle: LocalBlogPost = {
     metaTitle: 'Salon Client Personalisation Tips | The Daisy',
     metaDescription:
       'Deliver personalised salon experiences at scale. Capture client preferences, build detailed profiles, and use technology to keep every client feeling valued.',
-    createdAt: '2026-03-18T09:30:00.000Z',
-    updatedAt: '2026-03-18T09:30:00.000Z',
-    publishedAt: '2026-03-18T09:30:00.000Z',
+    createdAt: '2025-07-04T05:00:00.000Z',
+    updatedAt: '2025-07-04T05:00:00.000Z',
+    publishedAt: '2025-07-04T05:00:00.000Z',
     locale: 'en',
     sortId: 95,
     tags: { category: 'Retention', topic: 'Personalisation' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '12 March 2026',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 18, attributes: { name: 'Client Retention' } } },
     picture: {
       data: {
@@ -672,14 +772,39 @@ const winBackCampaignsArticle: LocalBlogPost = {
     metaTitle: 'Salon Win-Back Campaigns Guide | The Daisy',
     metaDescription:
       'Design win-back campaigns that re-engage lapsed salon clients. Covers segmentation, messaging sequences, value-based incentives, and recovery rate metrics.',
-    createdAt: '2026-03-18T10:00:00.000Z',
-    updatedAt: '2026-03-18T10:00:00.000Z',
-    publishedAt: '2026-03-18T10:00:00.000Z',
+    createdAt: '2026-03-12T05:00:00.000Z',
+    updatedAt: '2026-03-12T05:00:00.000Z',
+    publishedAt: '2026-03-12T05:00:00.000Z',
     locale: 'en',
     sortId: 96,
     tags: { category: 'Retention', topic: 'WinBack' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '27 November 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 18, attributes: { name: 'Client Retention' } } },
     picture: {
       data: {
@@ -813,14 +938,39 @@ const customerFeedbackArticle: LocalBlogPost = {
     metaTitle: 'Salon Customer Feedback Guide | The Daisy',
     metaDescription:
       'Collect, analyse, and act on salon customer feedback effectively. Covers survey design, response protocols, and turning complaints into retention wins.',
-    createdAt: '2026-03-18T10:30:00.000Z',
-    updatedAt: '2026-03-18T10:30:00.000Z',
-    publishedAt: '2026-03-18T10:30:00.000Z',
+    createdAt: '2025-11-27T05:00:00.000Z',
+    updatedAt: '2025-11-27T05:00:00.000Z',
+    publishedAt: '2025-11-27T05:00:00.000Z',
     locale: 'en',
     sortId: 97,
     tags: { category: 'Retention', topic: 'Feedback' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '16 March 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 18, attributes: { name: 'Client Retention' } } },
     picture: {
       data: {
@@ -964,14 +1114,39 @@ const independentClientLoyaltyArticle: LocalBlogPost = {
     metaTitle: 'Client Loyalty for Beauty Pros | The Daisy',
     metaDescription:
       'Build deep client loyalty as an independent beauty professional. Covers personal branding, relationship management, and solo loyalty programme strategies.',
-    createdAt: '2026-03-18T11:00:00.000Z',
-    updatedAt: '2026-03-18T11:00:00.000Z',
-    publishedAt: '2026-03-18T11:00:00.000Z',
+    createdAt: '2025-03-16T05:00:00.000Z',
+    updatedAt: '2025-03-16T05:00:00.000Z',
+    publishedAt: '2025-03-16T05:00:00.000Z',
     locale: 'en',
     sortId: 98,
     tags: { category: 'Retention', topic: 'ClientLoyalty' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '16 March 2026',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 18, attributes: { name: 'Client Retention' } } },
     picture: {
       data: {

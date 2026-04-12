@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '18 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -145,8 +145,33 @@ const beautyIndustryStatistics2026Article: LocalBlogPost = {
     locale: 'en',
     sortId: 108,
     tags: { category: 'Industry Trends', topic: 'MarketData' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 4,
+        attributes: {
+          name: 'Ethan Cole',
+          jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist',
+          date: '11 April 2026',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-ethan-cole.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-ethan-cole.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 20, attributes: { name: 'Industry Trends' } } },
     picture: {
       data: {
@@ -269,14 +294,39 @@ const aiBeautyIndustryApplicationsArticle: LocalBlogPost = {
     metaTitle: 'AI in the Beauty Industry: Applications | The Daisy',
     metaDescription:
       'Practical AI applications for salons and spas in 2026: AI receptionists, smart scheduling, predictive analytics, and automated marketing explained.',
-    createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
-    publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2026-04-11T05:00:00.000Z',
+    updatedAt: '2026-04-11T05:00:00.000Z',
+    publishedAt: '2026-04-11T05:00:00.000Z',
     locale: 'en',
     sortId: 109,
     tags: { category: 'Industry Trends', topic: 'AI' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 4,
+        attributes: {
+          name: 'Ethan Cole',
+          jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist',
+          date: '15 April 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-ethan-cole.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-ethan-cole.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 20, attributes: { name: 'Industry Trends' } } },
     picture: {
       data: {
@@ -404,14 +454,39 @@ const sustainabilityBeautySalonsArticle: LocalBlogPost = {
     metaTitle: 'Sustainability in Beauty Salons Guide | The Daisy',
     metaDescription:
       'Practical sustainability guide for salons: reduce water and energy costs, cut waste, attract eco-conscious clients, and improve your bottom line.',
-    createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
-    publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2025-04-15T05:00:00.000Z',
+    updatedAt: '2025-04-15T05:00:00.000Z',
+    publishedAt: '2025-04-15T05:00:00.000Z',
     locale: 'en',
     sortId: 110,
     tags: { category: 'Industry Trends', topic: 'Sustainability' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '12 February 2026',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 20, attributes: { name: 'Industry Trends' } } },
     picture: {
       data: {
@@ -536,14 +611,39 @@ const beautyMarketplacesImpactArticle: LocalBlogPost = {
     metaTitle: 'Beauty Marketplaces Impact on Salons | The Daisy',
     metaDescription:
       'How beauty marketplaces are changing salon client discovery. Learn the risks, opportunities, and strategies for using marketplaces to grow your business.',
-    createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
-    publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2026-02-12T05:00:00.000Z',
+    updatedAt: '2026-02-12T05:00:00.000Z',
+    publishedAt: '2026-02-12T05:00:00.000Z',
     locale: 'en',
     sortId: 111,
     tags: { category: 'Industry Trends', topic: 'Marketplaces' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 4,
+        attributes: {
+          name: 'Ethan Cole',
+          jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist',
+          date: '28 September 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-ethan-cole.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-ethan-cole.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 20, attributes: { name: 'Industry Trends' } } },
     picture: {
       data: {
@@ -664,14 +764,39 @@ const wellnessBeautyIntegrationArticle: LocalBlogPost = {
     metaTitle: 'Wellness Meets Beauty: Integration Trend | The Daisy',
     metaDescription:
       'How the wellness-beauty convergence creates new career opportunities for professionals. Explore services, earnings potential, and a practical roadmap.',
-    createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
-    publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2025-09-28T05:00:00.000Z',
+    updatedAt: '2025-09-28T05:00:00.000Z',
+    publishedAt: '2025-09-28T05:00:00.000Z',
     locale: 'en',
     sortId: 112,
     tags: { category: 'Industry Trends', topic: 'WellnessIntegration' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '5 January 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 20, attributes: { name: 'Industry Trends' } } },
     picture: {
       data: {
@@ -808,14 +933,39 @@ const beautyIndustryPredictions2027Article: LocalBlogPost = {
     metaTitle: 'Beauty Industry Predictions 2027 | The Daisy',
     metaDescription:
       'Data-backed beauty industry predictions for 2027: AI reaching critical mass, marketplace consolidation, subscription models, and workforce transformation.',
-    createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
-    publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2025-01-05T05:00:00.000Z',
+    updatedAt: '2025-01-05T05:00:00.000Z',
+    publishedAt: '2025-01-05T05:00:00.000Z',
     locale: 'en',
     sortId: 113,
     tags: { category: 'Industry Trends', topic: 'Predictions' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 4,
+        attributes: {
+          name: 'Ethan Cole',
+          jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist',
+          date: '12 August 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-ethan-cole.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-ethan-cole.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 20, attributes: { name: 'Industry Trends' } } },
     picture: {
       data: {

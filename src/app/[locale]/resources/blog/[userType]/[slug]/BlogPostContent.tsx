@@ -6,6 +6,7 @@ import { usePostStore } from '@/store/post';
 import { useChoosePath } from '@/store/currentPath';
 import { HeroBlogPage } from '@/components/blogPage/blogPosts/HeroBlogId';
 import { AboutPosts } from '@/components/blogPage/blogPosts/AboutPosts';
+import { AboutAuthor } from '@/components/blogPage/blogPosts/AboutAuthor';
 import { CreatePerfect } from '@/components/blogPage/blogPosts/CreatePerfect';
 import { SimilarTopics } from '@/components/blogPage/blogPosts/SimilarTopics';
 import { blogCTAData } from '@/lib/constants/blog/blogData';
@@ -53,6 +54,7 @@ export default function BlogPostContent({
     <div className="w-full">
       <HeroBlogPage />
       <AboutPosts />
+      <AboutAuthor />
       <CreatePerfect
         textDownload={ctaData.textDownload}
         textCreate={ctaData.textCreate}

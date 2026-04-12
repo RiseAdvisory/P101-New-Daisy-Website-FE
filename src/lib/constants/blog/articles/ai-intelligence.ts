@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '17 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -129,8 +129,33 @@ const aiSchedulingArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 4,
     tags: { category: 'AI', topic: 'Scheduling' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '11 August 2025',
+          time: '5 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 5, attributes: { name: 'AI Intelligence' } } },
     picture: {
       data: {
@@ -245,14 +270,39 @@ const predictiveAnalyticsArticle: LocalBlogPost = {
     metaTitle: 'Predictive Analytics for Salons | The Daisy',
     metaDescription:
       'Learn how predictive analytics helps salons forecast demand, prevent client churn, and optimize staffing. A beginner-friendly guide to data-driven management.',
-    createdAt: '2026-03-17T09:00:00.000Z',
-    updatedAt: '2026-03-17T09:00:00.000Z',
-    publishedAt: '2026-03-17T09:00:00.000Z',
+    createdAt: '2025-08-11T05:00:00.000Z',
+    updatedAt: '2025-08-11T05:00:00.000Z',
+    publishedAt: '2025-08-11T05:00:00.000Z',
     locale: 'en',
     sortId: 5,
     tags: { category: 'Analytics', topic: 'Business' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 4,
+        attributes: {
+          name: 'Ethan Cole',
+          jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist',
+          date: '28 April 2025',
+          time: '5 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-ethan-cole.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-ethan-cole.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 5, attributes: { name: 'AI Intelligence' } } },
     picture: {
       data: {
@@ -353,14 +403,39 @@ const fiveWaysAiArticle: LocalBlogPost = {
     metaTitle: '5 Ways AI Transforms Your Beauty Business | The Daisy',
     metaDescription:
       'Five ways AI transforms beauty businesses: 24/7 receptionists, smart scheduling, predictive insights, automated communication, and intelligent upselling.',
-    createdAt: '2026-03-17T10:00:00.000Z',
-    updatedAt: '2026-03-17T10:00:00.000Z',
-    publishedAt: '2026-03-17T10:00:00.000Z',
+    createdAt: '2025-04-28T05:00:00.000Z',
+    updatedAt: '2025-04-28T05:00:00.000Z',
+    publishedAt: '2025-04-28T05:00:00.000Z',
     locale: 'en',
     sortId: 6,
     tags: { category: 'AI', topic: 'Growth' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '5 July 2025',
+          time: '5 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 5, attributes: { name: 'AI Intelligence' } } },
     picture: {
       data: {
@@ -472,14 +547,39 @@ const aiToolsProfessionalArticle: LocalBlogPost = {
     metaTitle: 'AI Tools for Independent Beauty Pros | The Daisy',
     metaDescription:
       'Essential AI tools for freelance stylists and beauty professionals: automated booking, smart scheduling, client insights, and more. No tech skills needed.',
-    createdAt: '2026-03-17T11:00:00.000Z',
-    updatedAt: '2026-03-17T11:00:00.000Z',
-    publishedAt: '2026-03-17T11:00:00.000Z',
+    createdAt: '2025-07-05T05:00:00.000Z',
+    updatedAt: '2025-07-05T05:00:00.000Z',
+    publishedAt: '2025-07-05T05:00:00.000Z',
     locale: 'en',
     sortId: 41,
     tags: { category: 'AI', topic: 'Professional' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '1 December 2025',
+          time: '4 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 5, attributes: { name: 'AI Intelligence' } } },
     picture: {
       data: {
@@ -593,14 +693,39 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
     metaTitle: 'Daisy AI vs Competitors: Scheduling | The Daisy',
     metaDescription:
       'Compare Daisy AI salon scheduling with traditional booking software. Key differences in booking capture, calendar optimization, language support, and pricing.',
-    createdAt: '2026-03-17T12:00:00.000Z',
-    updatedAt: '2026-03-17T12:00:00.000Z',
-    publishedAt: '2026-03-17T12:00:00.000Z',
+    createdAt: '2025-12-01T05:00:00.000Z',
+    updatedAt: '2025-12-01T05:00:00.000Z',
+    publishedAt: '2025-12-01T05:00:00.000Z',
     locale: 'en',
     sortId: 7,
     tags: { category: 'AI', topic: 'Comparison' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 1,
+        attributes: {
+          name: 'The Daisy Team',
+          jobTitle: 'Content Team',
+          date: '7 January 2026',
+          time: '5 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-daisy-team.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-daisy-team.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 5, attributes: { name: 'AI Intelligence' } } },
     picture: {
       data: {

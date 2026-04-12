@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '18 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -226,8 +226,33 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 49,
     tags: { category: 'Decision Stage', topic: 'Migration' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '15 March 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 24, attributes: { name: 'Decision Stage' } } },
     picture: {
       data: {
@@ -405,14 +430,39 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
     metaTitle: 'First Month on New Salon Software | The Daisy',
     metaDescription:
       'A week-by-week guide to your first month on a new salon platform. Know what to expect, hit key milestones, and start seeing results within 30 days.',
-    createdAt: '2026-03-18T09:00:00.000Z',
-    updatedAt: '2026-03-18T09:00:00.000Z',
-    publishedAt: '2026-03-18T09:00:00.000Z',
+    createdAt: '2025-03-15T05:00:00.000Z',
+    updatedAt: '2025-03-15T05:00:00.000Z',
+    publishedAt: '2025-03-15T05:00:00.000Z',
     locale: 'en',
     sortId: 50,
     tags: { category: 'Decision Stage', topic: 'Onboarding' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '26 May 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 24, attributes: { name: 'Decision Stage' } } },
     picture: {
       data: {
@@ -613,14 +663,39 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
     metaTitle: 'Calculate ROI of Switching Salon Software | The Daisy',
     metaDescription:
       'Learn how to calculate the ROI of switching salon software. Covers revenue gains, cost savings, time savings, and a step-by-step formula for your business.',
-    createdAt: '2026-03-18T10:00:00.000Z',
-    updatedAt: '2026-03-18T10:00:00.000Z',
-    publishedAt: '2026-03-18T10:00:00.000Z',
+    createdAt: '2025-05-26T05:00:00.000Z',
+    updatedAt: '2025-05-26T05:00:00.000Z',
+    publishedAt: '2025-05-26T05:00:00.000Z',
     locale: 'en',
     sortId: 51,
     tags: { category: 'Decision Stage', topic: 'ROI' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '3 May 2026',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 24, attributes: { name: 'Decision Stage' } } },
     picture: {
       data: {

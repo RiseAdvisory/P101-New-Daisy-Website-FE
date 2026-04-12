@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '18 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -152,8 +152,33 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 56,
     tags: { category: 'Management', topic: 'Salon Management' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '14 February 2026',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 13, attributes: { name: 'Salon Management' } } },
     picture: {
       data: {
@@ -299,14 +324,39 @@ const salonSoftwareChecklistArticle: LocalBlogPost = {
     metaTitle: 'Salon Software Features: 25 Must-Haves | The Daisy',
     metaDescription:
       'Checklist of 25 essential salon software features across booking, payments, marketing, and AI. Score any platform to find gaps before you commit.',
-    createdAt: '2026-03-18T08:30:00.000Z',
-    updatedAt: '2026-03-18T08:30:00.000Z',
-    publishedAt: '2026-03-18T08:30:00.000Z',
+    createdAt: '2026-02-14T05:00:00.000Z',
+    updatedAt: '2026-02-14T05:00:00.000Z',
+    publishedAt: '2026-02-14T05:00:00.000Z',
     locale: 'en',
     sortId: 57,
     tags: { category: 'Management', topic: 'Salon Management' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '14 May 2025',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 13, attributes: { name: 'Salon Management' } } },
     picture: {
       data: {
@@ -453,14 +503,39 @@ const switchingSalonSoftwareArticle: LocalBlogPost = {
     metaTitle: 'Switching Salon Software: Migration Guide | The Daisy',
     metaDescription:
       'Complete guide to switching salon software without losing data or clients. Covers evaluation, migration, training, and optimisation for a seamless transition.',
-    createdAt: '2026-03-18T09:00:00.000Z',
-    updatedAt: '2026-03-18T09:00:00.000Z',
-    publishedAt: '2026-03-18T09:00:00.000Z',
+    createdAt: '2025-05-14T05:00:00.000Z',
+    updatedAt: '2025-05-14T05:00:00.000Z',
+    publishedAt: '2025-05-14T05:00:00.000Z',
     locale: 'en',
     sortId: 58,
     tags: { category: 'Management', topic: 'Salon Management' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '7 July 2025',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 13, attributes: { name: 'Salon Management' } } },
     picture: {
       data: {
@@ -575,14 +650,39 @@ const cloudVsDesktopArticle: LocalBlogPost = {
     metaTitle: 'Cloud vs Desktop Salon Software Compared | The Daisy',
     metaDescription:
       'Cloud vs desktop salon software: compare cost, accessibility, security, and scalability. Learn why cloud wins for most salons and when desktop still fits.',
-    createdAt: '2026-03-18T09:30:00.000Z',
-    updatedAt: '2026-03-18T09:30:00.000Z',
-    publishedAt: '2026-03-18T09:30:00.000Z',
+    createdAt: '2025-07-07T05:00:00.000Z',
+    updatedAt: '2025-07-07T05:00:00.000Z',
+    publishedAt: '2025-07-07T05:00:00.000Z',
     locale: 'en',
     sortId: 59,
     tags: { category: 'Management', topic: 'Salon Management' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '23 February 2026',
+          time: '6 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 13, attributes: { name: 'Salon Management' } } },
     picture: {
       data: {
@@ -701,14 +801,39 @@ const smallSalonSoftwareArticle: LocalBlogPost = {
     metaTitle: 'Small Salon Software for 1-5 Staff | The Daisy',
     metaDescription:
       'Best salon software for small teams of 1-5 staff. Learn which features matter, avoid pricing traps, and choose a platform that scales with your business.',
-    createdAt: '2026-03-18T10:00:00.000Z',
-    updatedAt: '2026-03-18T10:00:00.000Z',
-    publishedAt: '2026-03-18T10:00:00.000Z',
+    createdAt: '2026-02-23T05:00:00.000Z',
+    updatedAt: '2026-02-23T05:00:00.000Z',
+    publishedAt: '2026-02-23T05:00:00.000Z',
     locale: 'en',
     sortId: 60,
     tags: { category: 'Management', topic: 'Salon Management' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '2 December 2025',
+          time: '6 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 13, attributes: { name: 'Salon Management' } } },
     picture: {
       data: {
@@ -852,14 +977,39 @@ const multiLocationSalonArticle: LocalBlogPost = {
     metaTitle: 'Multi-Location Salon Software Guide | The Daisy',
     metaDescription:
       'Manage multiple salon branches from one platform. Learn about centralised reporting, unified clients, cross-location booking, and scalable operations.',
-    createdAt: '2026-03-18T10:30:00.000Z',
-    updatedAt: '2026-03-18T10:30:00.000Z',
-    publishedAt: '2026-03-18T10:30:00.000Z',
+    createdAt: '2025-12-02T05:00:00.000Z',
+    updatedAt: '2025-12-02T05:00:00.000Z',
+    publishedAt: '2025-12-02T05:00:00.000Z',
     locale: 'en',
     sortId: 61,
     tags: { category: 'Management', topic: 'Salon Management' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '20 May 2025',
+          time: '5 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 13, attributes: { name: 'Salon Management' } } },
     picture: {
       data: {
@@ -994,14 +1144,39 @@ const salonSoftwareROIArticle: LocalBlogPost = {
     metaTitle: 'Salon Software ROI: Calculate Your Return | The Daisy',
     metaDescription:
       'Calculate the ROI of salon management software. See revenue gains, cost savings, and time recovered that turn your subscription into a growth investment.',
-    createdAt: '2026-03-18T11:00:00.000Z',
-    updatedAt: '2026-03-18T11:00:00.000Z',
-    publishedAt: '2026-03-18T11:00:00.000Z',
+    createdAt: '2025-05-20T05:00:00.000Z',
+    updatedAt: '2025-05-20T05:00:00.000Z',
+    publishedAt: '2025-05-20T05:00:00.000Z',
     locale: 'en',
     sortId: 62,
     tags: { category: 'Management', topic: 'Salon Management' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '3 February 2025',
+          time: '5 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 13, attributes: { name: 'Salon Management' } } },
     picture: {
       data: {
@@ -1154,14 +1329,39 @@ const freeVsPaidSalonSoftwareArticle: LocalBlogPost = {
     metaTitle: 'Free vs Paid Salon Software: True Cost | The Daisy',
     metaDescription:
       'Compare free and paid salon software beyond the price tag. See hidden costs, feature gaps, and real total cost to find the best value for your salon.',
-    createdAt: '2026-03-18T11:30:00.000Z',
-    updatedAt: '2026-03-18T11:30:00.000Z',
-    publishedAt: '2026-03-18T11:30:00.000Z',
+    createdAt: '2025-02-03T05:00:00.000Z',
+    updatedAt: '2025-02-03T05:00:00.000Z',
+    publishedAt: '2025-02-03T05:00:00.000Z',
     locale: 'en',
     sortId: 63,
     tags: { category: 'Management', topic: 'Salon Management' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '16 February 2025',
+          time: '6 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 13, attributes: { name: 'Salon Management' } } },
     picture: {
       data: {

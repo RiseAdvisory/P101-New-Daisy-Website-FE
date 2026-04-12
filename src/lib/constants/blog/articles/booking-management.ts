@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '17 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -177,8 +177,33 @@ const onlineBookingSetupArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 8,
     tags: { category: 'Booking', topic: 'Setup' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '24 January 2026',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 6, attributes: { name: 'Booking Management' } } },
     picture: {
       data: {
@@ -328,14 +353,39 @@ const reduceNoShowsArticle: LocalBlogPost = {
     metaTitle: 'How to Reduce Salon No-Shows by 60% | The Daisy',
     metaDescription:
       'Proven strategies to cut salon no-shows by 60%. Automated reminders, deposit policies, waitlist management, and booking rules that protect your revenue.',
-    createdAt: '2026-03-17T09:30:00.000Z',
-    updatedAt: '2026-03-17T09:30:00.000Z',
-    publishedAt: '2026-03-17T09:30:00.000Z',
+    createdAt: '2026-01-24T05:00:00.000Z',
+    updatedAt: '2026-01-24T05:00:00.000Z',
+    publishedAt: '2026-01-24T05:00:00.000Z',
     locale: 'en',
     sortId: 9,
     tags: { category: 'Booking', topic: 'No-Shows' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '10 February 2026',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 6, attributes: { name: 'Booking Management' } } },
     picture: {
       data: {
@@ -481,14 +531,39 @@ const waitlistManagementArticle: LocalBlogPost = {
     metaTitle: 'Salon Waitlist Management: Never Lose a Client | The Daisy',
     metaDescription:
       'Automated salon waitlist management fills cancelled appointment slots in minutes, captures overflow demand, and recovers thousands in lost revenue monthly.',
-    createdAt: '2026-03-17T10:00:00.000Z',
-    updatedAt: '2026-03-17T10:00:00.000Z',
-    publishedAt: '2026-03-17T10:00:00.000Z',
+    createdAt: '2026-02-10T05:00:00.000Z',
+    updatedAt: '2026-02-10T05:00:00.000Z',
+    publishedAt: '2026-02-10T05:00:00.000Z',
     locale: 'en',
     sortId: 10,
     tags: { category: 'Booking', topic: 'Waitlist' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '14 January 2025',
+          time: '6 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 6, attributes: { name: 'Booking Management' } } },
     picture: {
       data: {
@@ -635,14 +710,39 @@ const groupBookingArticle: LocalBlogPost = {
     metaTitle: 'Group Booking & Packages: Maximize Revenue | The Daisy',
     metaDescription:
       'Group bookings and service packages increase salon revenue per visit by 40-60%. Create packages, manage group appointments, and drive higher ticket values.',
-    createdAt: '2026-03-17T10:30:00.000Z',
-    updatedAt: '2026-03-17T10:30:00.000Z',
-    publishedAt: '2026-03-17T10:30:00.000Z',
+    createdAt: '2025-01-14T05:00:00.000Z',
+    updatedAt: '2025-01-14T05:00:00.000Z',
+    publishedAt: '2025-01-14T05:00:00.000Z',
     locale: 'en',
     sortId: 11,
     tags: { category: 'Booking', topic: 'Revenue' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '9 August 2025',
+          time: '6 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 6, attributes: { name: 'Booking Management' } } },
     picture: {
       data: {
@@ -795,14 +895,39 @@ const mobileBookingArticle: LocalBlogPost = {
     metaTitle: 'Mobile Booking: Why 70% of Clients Book by Phone | The Daisy',
     metaDescription:
       'Seventy percent of salon bookings happen on mobile. Learn why mobile-first booking matters, how to optimize the experience, and capture more clients.',
-    createdAt: '2026-03-17T11:00:00.000Z',
-    updatedAt: '2026-03-17T11:00:00.000Z',
-    publishedAt: '2026-03-17T11:00:00.000Z',
+    createdAt: '2025-08-09T05:00:00.000Z',
+    updatedAt: '2025-08-09T05:00:00.000Z',
+    publishedAt: '2025-08-09T05:00:00.000Z',
     locale: 'en',
     sortId: 12,
     tags: { category: 'Booking', topic: 'Mobile' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 4,
+        attributes: {
+          name: 'Ethan Cole',
+          jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist',
+          date: '1 April 2026',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-ethan-cole.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-ethan-cole.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 6, attributes: { name: 'Booking Management' } } },
     picture: {
       data: {
@@ -952,14 +1077,39 @@ const recurringAppointmentArticle: LocalBlogPost = {
     metaTitle: 'Recurring Appointment Scheduling for Salons | The Daisy',
     metaDescription:
       'Set up recurring appointment scheduling for your salon. Boost retention, stabilise revenue, and reduce rebooking admin with standing appointments.',
-    createdAt: '2026-03-18T12:00:00.000Z',
-    updatedAt: '2026-03-18T12:00:00.000Z',
-    publishedAt: '2026-03-18T12:00:00.000Z',
+    createdAt: '2026-04-01T05:00:00.000Z',
+    updatedAt: '2026-04-01T05:00:00.000Z',
+    publishedAt: '2026-04-01T05:00:00.000Z',
     locale: 'en',
     sortId: 64,
     tags: { category: 'Booking', topic: 'Scheduling' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '9 November 2026',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 6, attributes: { name: 'Booking Management' } } },
     picture: {
       data: {

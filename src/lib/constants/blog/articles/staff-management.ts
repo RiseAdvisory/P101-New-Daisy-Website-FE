@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '18 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -205,8 +205,33 @@ const staffSchedulingArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 86,
     tags: { category: 'Staff', topic: 'Scheduling' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '12 November 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 17, attributes: { name: 'Staff Management' } } },
     picture: {
       data: {
@@ -459,14 +484,39 @@ const commissionStructuresArticle: LocalBlogPost = {
     metaTitle: 'Salon Commission Structures Guide | The Daisy',
     metaDescription:
       'Find the right salon commission structure. Compare straight, tiered, hybrid, booth rental, and team models with real calculations and implementation guidance.',
-    createdAt: '2026-03-18T11:30:00.000Z',
-    updatedAt: '2026-03-18T11:30:00.000Z',
-    publishedAt: '2026-03-18T11:30:00.000Z',
+    createdAt: '2025-11-12T05:00:00.000Z',
+    updatedAt: '2025-11-12T05:00:00.000Z',
+    publishedAt: '2025-11-12T05:00:00.000Z',
     locale: 'en',
     sortId: 87,
     tags: { category: 'Staff', topic: 'Commission' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '17 November 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 17, attributes: { name: 'Staff Management' } } },
     picture: {
       data: {
@@ -641,14 +691,39 @@ const hiringSalonStaffArticle: LocalBlogPost = {
     metaTitle: 'Hiring Salon Staff: Interview Guide | The Daisy',
     metaDescription:
       'Hire the right salon staff with structured interview questions, red flag checklists, trial shift best practices, and onboarding frameworks for beauty businesses.',
-    createdAt: '2026-03-18T12:00:00.000Z',
-    updatedAt: '2026-03-18T12:00:00.000Z',
-    publishedAt: '2026-03-18T12:00:00.000Z',
+    createdAt: '2025-11-17T05:00:00.000Z',
+    updatedAt: '2025-11-17T05:00:00.000Z',
+    publishedAt: '2025-11-17T05:00:00.000Z',
     locale: 'en',
     sortId: 88,
     tags: { category: 'Staff', topic: 'Hiring' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '24 June 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 17, attributes: { name: 'Staff Management' } } },
     picture: {
       data: {
@@ -817,14 +892,39 @@ const employeeRetentionArticle: LocalBlogPost = {
     metaTitle: 'Salon Employee Retention Strategies | The Daisy',
     metaDescription:
       'Reduce salon staff turnover with proven retention strategies. Cover compensation, career development, work-life balance, and culture for beauty businesses.',
-    createdAt: '2026-03-18T12:30:00.000Z',
-    updatedAt: '2026-03-18T12:30:00.000Z',
-    publishedAt: '2026-03-18T12:30:00.000Z',
+    createdAt: '2025-06-24T05:00:00.000Z',
+    updatedAt: '2025-06-24T05:00:00.000Z',
+    publishedAt: '2025-06-24T05:00:00.000Z',
     locale: 'en',
     sortId: 89,
     tags: { category: 'Staff', topic: 'Retention' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '12 November 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 17, attributes: { name: 'Staff Management' } } },
     picture: {
       data: {
@@ -968,14 +1068,39 @@ const freelanceBeautyScheduleArticle: LocalBlogPost = {
     metaTitle: 'Freelance Beauty Schedule Management | The Daisy',
     metaDescription:
       'Manage your freelance beauty schedule effectively. Time blocking, booking policies, travel management, and burnout prevention for independent professionals.',
-    createdAt: '2026-03-18T13:00:00.000Z',
-    updatedAt: '2026-03-18T13:00:00.000Z',
-    publishedAt: '2026-03-18T13:00:00.000Z',
+    createdAt: '2025-11-12T05:00:00.000Z',
+    updatedAt: '2025-11-12T05:00:00.000Z',
+    publishedAt: '2025-11-12T05:00:00.000Z',
     locale: 'en',
     sortId: 90,
     tags: { category: 'Staff', topic: 'Freelance' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '21 June 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 17, attributes: { name: 'Staff Management' } } },
     picture: {
       data: {
@@ -1166,14 +1291,39 @@ const performanceReviewsArticle: LocalBlogPost = {
     metaTitle: 'Salon Performance Review Template | The Daisy',
     metaDescription:
       'Ready-to-use salon staff performance review template. Evaluation criteria, conversation framework, goal-setting, and difficult conversation scripts for owners.',
-    createdAt: '2026-03-18T13:30:00.000Z',
-    updatedAt: '2026-03-18T13:30:00.000Z',
-    publishedAt: '2026-03-18T13:30:00.000Z',
+    createdAt: '2025-06-21T05:00:00.000Z',
+    updatedAt: '2025-06-21T05:00:00.000Z',
+    publishedAt: '2025-06-21T05:00:00.000Z',
     locale: 'en',
     sortId: 91,
     tags: { category: 'Staff', topic: 'Performance' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '11 November 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 17, attributes: { name: 'Staff Management' } } },
     picture: {
       data: {

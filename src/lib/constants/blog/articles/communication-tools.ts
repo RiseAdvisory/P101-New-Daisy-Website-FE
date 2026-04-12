@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '17 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -167,8 +167,33 @@ const automatedRemindersArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 13,
     tags: { category: 'Communication', topic: 'Retention' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '6 July 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 7, attributes: { name: 'Communication Tools' } } },
     picture: {
       data: {
@@ -358,14 +383,39 @@ const clientCommunicationTemplatesArticle: LocalBlogPost = {
     metaTitle: 'Communication Templates for Beauty Businesses | The Daisy',
     metaDescription:
       'Ready-to-use communication templates for beauty businesses. Booking confirmations, reminders, follow-ups, re-engagement, and promotions you can use today.',
-    createdAt: '2026-03-17T09:00:00.000Z',
-    updatedAt: '2026-03-17T09:00:00.000Z',
-    publishedAt: '2026-03-17T09:00:00.000Z',
+    createdAt: '2025-07-06T05:00:00.000Z',
+    updatedAt: '2025-07-06T05:00:00.000Z',
+    publishedAt: '2025-07-06T05:00:00.000Z',
     locale: 'en',
     sortId: 14,
     tags: { category: 'Communication', topic: 'Templates' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '23 April 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 7, attributes: { name: 'Communication Tools' } } },
     picture: {
       data: {
@@ -526,14 +576,39 @@ const smsMarketingArticle: LocalBlogPost = {
     metaTitle: 'SMS Marketing to Fill Salon Chairs | The Daisy',
     metaDescription:
       'SMS marketing with 98% open rates fills empty salon chairs fast. Six proven campaign types, copy templates, compliance rules, and ROI tracking for salons.',
-    createdAt: '2026-03-17T10:00:00.000Z',
-    updatedAt: '2026-03-17T10:00:00.000Z',
-    publishedAt: '2026-03-17T10:00:00.000Z',
+    createdAt: '2025-04-23T05:00:00.000Z',
+    updatedAt: '2025-04-23T05:00:00.000Z',
+    publishedAt: '2025-04-23T05:00:00.000Z',
     locale: 'en',
     sortId: 15,
     tags: { category: 'Communication', topic: 'Marketing' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '10 January 2026',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 7, attributes: { name: 'Communication Tools' } } },
     picture: {
       data: {
@@ -719,14 +794,39 @@ const buildingClientRelationshipsArticle: LocalBlogPost = {
     metaTitle: 'Client Communication Tips for Beauty Pros | The Daisy',
     metaDescription:
       'Communication strategies for beauty professionals to build client loyalty, increase rebookings, and grow your personal client base through every interaction.',
-    createdAt: '2026-03-17T11:00:00.000Z',
-    updatedAt: '2026-03-17T11:00:00.000Z',
-    publishedAt: '2026-03-17T11:00:00.000Z',
+    createdAt: '2026-01-10T05:00:00.000Z',
+    updatedAt: '2026-01-10T05:00:00.000Z',
+    publishedAt: '2026-01-10T05:00:00.000Z',
     locale: 'en',
     sortId: 16,
     tags: { category: 'Communication', topic: 'Relationships' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '2 February 2025',
+          time: '12 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 7, attributes: { name: 'Communication Tools' } } },
     picture: {
       data: {
@@ -912,14 +1012,39 @@ const reviewRequestAutomationArticle: LocalBlogPost = {
     metaTitle: 'Review Request Automation for Salons | The Daisy',
     metaDescription:
       'Automate review requests to get more 5-star reviews for your salon. Learn the best timing, messaging templates, and platform strategies for beauty businesses.',
-    createdAt: '2026-03-17T12:00:00.000Z',
-    updatedAt: '2026-03-17T12:00:00.000Z',
-    publishedAt: '2026-03-17T12:00:00.000Z',
+    createdAt: '2025-02-02T05:00:00.000Z',
+    updatedAt: '2025-02-02T05:00:00.000Z',
+    publishedAt: '2025-02-02T05:00:00.000Z',
     locale: 'en',
     sortId: 17,
     tags: { category: 'Communication', topic: 'Reputation' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '21 February 2025',
+          time: '11 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 7, attributes: { name: 'Communication Tools' } } },
     picture: {
       data: {

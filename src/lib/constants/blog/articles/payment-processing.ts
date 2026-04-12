@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '17 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -170,8 +170,33 @@ const salonPosSystemsArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 23,
     tags: { category: 'Payments', topic: 'Technology' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '16 August 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 9, attributes: { name: 'Payment Processing' } } },
     picture: {
       data: {
@@ -344,14 +369,39 @@ const tippingBestPracticesArticle: LocalBlogPost = {
     metaTitle: 'Tipping Best Practices for Salons | The Daisy',
     metaDescription:
       'Increase salon tip revenue with digital tipping, smart prompts, and fair distribution policies. A complete guide to tipping for beauty businesses.',
-    createdAt: '2026-03-17T09:00:00.000Z',
-    updatedAt: '2026-03-17T09:00:00.000Z',
-    publishedAt: '2026-03-17T09:00:00.000Z',
+    createdAt: '2025-08-16T05:00:00.000Z',
+    updatedAt: '2025-08-16T05:00:00.000Z',
+    publishedAt: '2025-08-16T05:00:00.000Z',
     locale: 'en',
     sortId: 24,
     tags: { category: 'Payments', topic: 'Compensation' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '24 March 2026',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 9, attributes: { name: 'Payment Processing' } } },
     picture: {
       data: {
@@ -534,14 +584,39 @@ const gettingPaidFasterArticle: LocalBlogPost = {
     metaTitle: 'Invoicing for Freelance Beauty Pros | The Daisy',
     metaDescription:
       'Get paid faster as a freelance beauty pro. Learn invoicing best practices, payment collection, and how to eliminate late payments from your business.',
-    createdAt: '2026-03-17T10:00:00.000Z',
-    updatedAt: '2026-03-17T10:00:00.000Z',
-    publishedAt: '2026-03-17T10:00:00.000Z',
+    createdAt: '2026-03-24T05:00:00.000Z',
+    updatedAt: '2026-03-24T05:00:00.000Z',
+    publishedAt: '2026-03-24T05:00:00.000Z',
     locale: 'en',
     sortId: 25,
     tags: { category: 'Payments', topic: 'Freelance' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 6,
+        attributes: {
+          name: 'Amara Nasser',
+          jobTitle: 'Independent Beauty Professional & Freelance Career Mentor',
+          date: '14 August 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-amara-nasser.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-amara-nasser.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 9, attributes: { name: 'Payment Processing' } } },
     picture: {
       data: {
@@ -755,14 +830,39 @@ const paymentFeesComparedArticle: LocalBlogPost = {
     metaTitle: 'Payment Fees: Daisy vs Alternatives | The Daisy',
     metaDescription:
       'Compare salon payment processing fees across The Daisy, Square, Fresha, Stripe, and SumUp. See real cost breakdowns including hidden fees and commissions.',
-    createdAt: '2026-03-17T11:00:00.000Z',
-    updatedAt: '2026-03-17T11:00:00.000Z',
-    publishedAt: '2026-03-17T11:00:00.000Z',
+    createdAt: '2025-08-14T05:00:00.000Z',
+    updatedAt: '2025-08-14T05:00:00.000Z',
+    publishedAt: '2025-08-14T05:00:00.000Z',
     locale: 'en',
     sortId: 26,
     tags: { category: 'Payments', topic: 'Comparison' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 1,
+        attributes: {
+          name: 'The Daisy Team',
+          jobTitle: 'Content Team',
+          date: '13 November 2026',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-daisy-team.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-daisy-team.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 9, attributes: { name: 'Payment Processing' } } },
     picture: {
       data: {

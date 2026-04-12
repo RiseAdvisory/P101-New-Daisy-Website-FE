@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '18 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -144,8 +144,33 @@ const freelanceStylistSchedulingArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 99,
     tags: { category: 'Freelance', topic: 'Scheduling' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 6,
+        attributes: {
+          name: 'Amara Nasser',
+          jobTitle: 'Independent Beauty Professional & Freelance Career Mentor',
+          date: '10 July 2025',
+          time: '9 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-amara-nasser.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-amara-nasser.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 19, attributes: { name: 'Freelance Beauty' } } },
     picture: {
       data: {
@@ -263,14 +288,39 @@ const goingFreelanceArticle: LocalBlogPost = {
     metaTitle: 'Going Freelance in Beauty: Pros & Cons | The Daisy',
     metaDescription:
       'Honest analysis of going freelance as a beauty professional. Covers income potential, freedom, risks, and how to decide if independent work suits your career.',
-    createdAt: '2026-03-18T08:30:00.000Z',
-    updatedAt: '2026-03-18T08:30:00.000Z',
-    publishedAt: '2026-03-18T08:30:00.000Z',
+    createdAt: '2025-07-10T05:00:00.000Z',
+    updatedAt: '2025-07-10T05:00:00.000Z',
+    publishedAt: '2025-07-10T05:00:00.000Z',
     locale: 'en',
     sortId: 100,
     tags: { category: 'Freelance', topic: 'CareerDecision' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 6,
+        attributes: {
+          name: 'Amara Nasser',
+          jobTitle: 'Independent Beauty Professional & Freelance Career Mentor',
+          date: '23 December 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-amara-nasser.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-amara-nasser.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 19, attributes: { name: 'Freelance Beauty' } } },
     picture: {
       data: {
@@ -377,14 +427,39 @@ const freelanceBusinessSetupArticle: LocalBlogPost = {
     metaTitle: 'Freelance Hairstylist Business Setup | The Daisy',
     metaDescription:
       'Set up your freelance hairstylist business legally and financially. Covers licences, insurance, banking, accounting, and compliance requirements step by step.',
-    createdAt: '2026-03-18T09:00:00.000Z',
-    updatedAt: '2026-03-18T09:00:00.000Z',
-    publishedAt: '2026-03-18T09:00:00.000Z',
+    createdAt: '2025-12-23T05:00:00.000Z',
+    updatedAt: '2025-12-23T05:00:00.000Z',
+    publishedAt: '2025-12-23T05:00:00.000Z',
     locale: 'en',
     sortId: 101,
     tags: { category: 'Freelance', topic: 'BusinessSetup' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 6,
+        attributes: {
+          name: 'Amara Nasser',
+          jobTitle: 'Independent Beauty Professional & Freelance Career Mentor',
+          date: '20 June 2025',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-amara-nasser.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-amara-nasser.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 19, attributes: { name: 'Freelance Beauty' } } },
     picture: {
       data: {
@@ -498,14 +573,39 @@ const settingPricesArticle: LocalBlogPost = {
     metaTitle: 'Pricing for Beauty Professionals | The Daisy',
     metaDescription:
       'Set your prices as an independent beauty professional. Calculate true costs, research market rates, handle objections, and raise prices without losing clients.',
-    createdAt: '2026-03-18T09:30:00.000Z',
-    updatedAt: '2026-03-18T09:30:00.000Z',
-    publishedAt: '2026-03-18T09:30:00.000Z',
+    createdAt: '2025-06-20T05:00:00.000Z',
+    updatedAt: '2025-06-20T05:00:00.000Z',
+    publishedAt: '2025-06-20T05:00:00.000Z',
     locale: 'en',
     sortId: 102,
     tags: { category: 'Freelance', topic: 'Pricing' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 6,
+        attributes: {
+          name: 'Amara Nasser',
+          jobTitle: 'Independent Beauty Professional & Freelance Career Mentor',
+          date: '21 September 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-amara-nasser.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-amara-nasser.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 19, attributes: { name: 'Freelance Beauty' } } },
     picture: {
       data: {
@@ -624,14 +724,39 @@ const personalBrandArticle: LocalBlogPost = {
     metaTitle: 'Personal Brand in Beauty Industry | The Daisy',
     metaDescription:
       'Build a powerful personal brand as a beauty professional. Covers brand identity, social media strategy, portfolio development, and client attraction tactics.',
-    createdAt: '2026-03-18T10:00:00.000Z',
-    updatedAt: '2026-03-18T10:00:00.000Z',
-    publishedAt: '2026-03-18T10:00:00.000Z',
+    createdAt: '2025-09-21T05:00:00.000Z',
+    updatedAt: '2025-09-21T05:00:00.000Z',
+    publishedAt: '2025-09-21T05:00:00.000Z',
     locale: 'en',
     sortId: 103,
     tags: { category: 'Freelance', topic: 'PersonalBrand' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '25 June 2025',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 19, attributes: { name: 'Freelance Beauty' } } },
     picture: {
       data: {
@@ -753,14 +878,39 @@ const findingClientsArticle: LocalBlogPost = {
     metaTitle: 'Finding Clients as a Freelancer | The Daisy',
     metaDescription:
       'Proven strategies for freelance beauty professionals to find clients. Social media, referrals, networking, and platform listings to build a full schedule.',
-    createdAt: '2026-03-18T10:30:00.000Z',
-    updatedAt: '2026-03-18T10:30:00.000Z',
-    publishedAt: '2026-03-18T10:30:00.000Z',
+    createdAt: '2025-06-25T05:00:00.000Z',
+    updatedAt: '2025-06-25T05:00:00.000Z',
+    publishedAt: '2025-06-25T05:00:00.000Z',
     locale: 'en',
     sortId: 104,
     tags: { category: 'Freelance', topic: 'ClientAcquisition' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '23 December 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 19, attributes: { name: 'Freelance Beauty' } } },
     picture: {
       data: {
@@ -881,14 +1031,39 @@ const insuranceGuideArticle: LocalBlogPost = {
     metaTitle: 'Freelance Beauty Insurance Guide | The Daisy',
     metaDescription:
       'Complete insurance guide for freelance beauty professionals. Covers professional liability, public liability, equipment insurance, and choosing the right policy.',
-    createdAt: '2026-03-18T11:00:00.000Z',
-    updatedAt: '2026-03-18T11:00:00.000Z',
-    publishedAt: '2026-03-18T11:00:00.000Z',
+    createdAt: '2025-12-23T05:00:00.000Z',
+    updatedAt: '2025-12-23T05:00:00.000Z',
+    publishedAt: '2025-12-23T05:00:00.000Z',
     locale: 'en',
     sortId: 105,
     tags: { category: 'Freelance', topic: 'Insurance' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 6,
+        attributes: {
+          name: 'Amara Nasser',
+          jobTitle: 'Independent Beauty Professional & Freelance Career Mentor',
+          date: '9 February 2025',
+          time: '7 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-amara-nasser.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-amara-nasser.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 19, attributes: { name: 'Freelance Beauty' } } },
     picture: {
       data: {
@@ -1018,14 +1193,39 @@ const taxGuideArticle: LocalBlogPost = {
     metaTitle: 'Tax Guide for Freelance Beauty Pros | The Daisy',
     metaDescription:
       'Practical tax guide for freelance beauty professionals. Covers income tracking, deductible expenses, VAT obligations, and record-keeping best practices.',
-    createdAt: '2026-03-18T11:30:00.000Z',
-    updatedAt: '2026-03-18T11:30:00.000Z',
-    publishedAt: '2026-03-18T11:30:00.000Z',
+    createdAt: '2025-02-09T05:00:00.000Z',
+    updatedAt: '2025-02-09T05:00:00.000Z',
+    publishedAt: '2025-02-09T05:00:00.000Z',
     locale: 'en',
     sortId: 106,
     tags: { category: 'Freelance', topic: 'Tax' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 6,
+        attributes: {
+          name: 'Amara Nasser',
+          jobTitle: 'Independent Beauty Professional & Freelance Career Mentor',
+          date: '26 March 2025',
+          time: '8 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-amara-nasser.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-amara-nasser.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 19, attributes: { name: 'Freelance Beauty' } } },
     picture: {
       data: {
@@ -1158,14 +1358,39 @@ const scalingFreelancerArticle: LocalBlogPost = {
     metaTitle: 'Scaling Freelancer to Business Owner | The Daisy',
     metaDescription:
       'Scale from solo freelancer to beauty business owner. Covers hiring, business models, financial planning, and the mindset shift from technician to entrepreneur.',
-    createdAt: '2026-03-18T12:00:00.000Z',
-    updatedAt: '2026-03-18T12:00:00.000Z',
-    publishedAt: '2026-03-18T12:00:00.000Z',
+    createdAt: '2025-03-26T05:00:00.000Z',
+    updatedAt: '2025-03-26T05:00:00.000Z',
+    publishedAt: '2025-03-26T05:00:00.000Z',
     locale: 'en',
     sortId: 107,
     tags: { category: 'Freelance', topic: 'Scaling' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 2,
+        attributes: {
+          name: 'Dr. Elara Voss',
+          jobTitle: 'Beauty Business Strategist & Growth Architect',
+          date: '6 December 2026',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-elara-voss.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-elara-voss.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 19, attributes: { name: 'Freelance Beauty' } } },
     picture: {
       data: {

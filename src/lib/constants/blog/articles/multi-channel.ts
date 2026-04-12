@@ -6,7 +6,7 @@ const defaultAuthor = {
     attributes: {
       name: 'The Daisy Team',
       jobTitle: 'Content Team',
-      date: '18 March 2026',
+      date: '1 January 2026',
       time: '8 min.',
       picture: {
         data: {
@@ -186,8 +186,33 @@ const whatsappMarketingSalonsArticle: LocalBlogPost = {
     locale: 'en',
     sortId: 118,
     tags: { category: 'Multi-Channel', topic: 'WhatsApp' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '19 June 2025',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 23, attributes: { name: 'Multi-Channel' } } },
     picture: {
       data: {
@@ -350,14 +375,39 @@ const managingInstagramDmsArticle: LocalBlogPost = {
     metaTitle: 'Managing Instagram DMs for Salons | The Daisy',
     metaDescription:
       'Turn Instagram DMs into salon bookings. Learn how to organise, respond to, and convert DM inquiries with templates, automation, and best practices.',
-    createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
-    publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2025-06-19T05:00:00.000Z',
+    updatedAt: '2025-06-19T05:00:00.000Z',
+    publishedAt: '2025-06-19T05:00:00.000Z',
     locale: 'en',
     sortId: 119,
     tags: { category: 'Multi-Channel', topic: 'Instagram' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '1 April 2026',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 23, attributes: { name: 'Multi-Channel' } } },
     picture: {
       data: {
@@ -516,14 +566,39 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
     metaTitle: 'Omnichannel Salon Communication Guide | The Daisy',
     metaDescription:
       'Build omnichannel communication for your salon. Unify WhatsApp, Instagram, phone, and web into one system that never misses a booking inquiry.',
-    createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
-    publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2026-04-01T05:00:00.000Z',
+    updatedAt: '2026-04-01T05:00:00.000Z',
+    publishedAt: '2026-04-01T05:00:00.000Z',
     locale: 'en',
     sortId: 120,
     tags: { category: 'Multi-Channel', topic: 'Omnichannel' },
-    user: defaultAuthor,
-    iconOwner: defaultIconOwner,
+    user: {
+      data: {
+        id: 3,
+        attributes: {
+          name: 'Julian Moreau',
+          jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist',
+          date: '27 December 2026',
+          time: '10 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-julian-moreau.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-julian-moreau.webp',
+          },
+        },
+      ],
+    },
     category: { data: { id: 23, attributes: { name: 'Multi-Channel' } } },
     picture: {
       data: {

@@ -40,14 +40,14 @@ export const HeroBlogPage = () => {
       <h1 className="text-3xl font-bold text-white mt-8">{post?.title}</h1>
       <div className="flex justify-start text-[#ECEEED] text-sm mt-4 flex-col md:flex-row">
         <div className="flex">
-          <div className="flex ltr:border-r ltr:pr-[10px] rtl:pl-[10px]">
+          <div className="flex items-center ltr:border-r ltr:pr-[10px] rtl:pl-[10px]">
             {iconImg && (
               <Image
                 src={iconImg}
                 alt="people"
                 className="ltr:mr-[10px] rtl:ml-[10px] rounded-full"
-                width={18}
-                height={18}
+                width={27}
+                height={27}
               />
             )}
             <span className="text-sm">{post?.user?.data?.attributes?.name || post?.user?.name || 'Author'}</span>
