@@ -12,30 +12,54 @@ interface QuickComparisonTableProps {
   entries: QuickComparisonEntry[];
   competitorName: string;
   heading?: string;
+  locale?: string;
 }
+
+const uiStrings = {
+  en: {
+    howCompare: (name: string) => `How Does Daisy Compare to ${name}?`,
+    stackUp: (name: string) =>
+      `How Daisy and ${name} stack up at a glance`,
+    caption: (name: string) =>
+      `Daisy vs ${name} Quick Comparison ${new Date().getFullYear()}`,
+    feature: 'Feature',
+  },
+  ar: {
+    howCompare: (name: string) => `كيف تتفوق ديزي مقارنة بـ ${name}؟`,
+    stackUp: (name: string) =>
+      `كيف تقارن ديزي و${name} في لمحة سريعة`,
+    caption: (name: string) =>
+      `مقارنة سريعة بين ديزي و${name} ${new Date().getFullYear()}`,
+    feature: 'الميزة',
+  },
+};
 
 export const QuickComparisonTable: FC<QuickComparisonTableProps> = ({
   entries,
   competitorName,
   heading,
+  locale = 'en',
 }) => {
+  const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
+  const isRtl = locale === 'ar';
+
   return (
-    <section className="py-16 px-4">
+    <section className="py-16 px-4" dir={isRtl ? 'rtl' : 'ltr'}>
       <div className="mx-auto max-w-3xl">
         <h2 className="mb-2 text-center text-3xl font-bold text-[#172524]">
-          {heading || `How Does Daisy Compare to ${competitorName}?`}
+          {heading || t.howCompare(competitorName)}
         </h2>
         <p
           className="mb-10 text-center text-[#455150]"
           data-geo-answer="true"
         >
-          How Daisy and {competitorName} stack up at a glance
+          {t.stackUp(competitorName)}
         </p>
 
         <div className="overflow-x-auto">
           <table className="w-full border-collapse overflow-hidden rounded-xl border border-[#E8E9E9] bg-white shadow-sm">
             <caption className="sr-only">
-              Daisy vs {competitorName} Quick Comparison {new Date().getFullYear()}
+              {t.caption(competitorName)}
             </caption>
             <thead>
               <tr className="border-b border-[#E8E9E9] bg-[#F8F5F3]">
@@ -43,7 +67,7 @@ export const QuickComparisonTable: FC<QuickComparisonTableProps> = ({
                   scope="col"
                   className="px-6 py-4 text-left text-sm font-semibold text-[#586968] uppercase tracking-wider"
                 >
-                  Feature
+                  {t.feature}
                 </th>
                 <th
                   scope="col"

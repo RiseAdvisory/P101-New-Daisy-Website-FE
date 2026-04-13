@@ -19,7 +19,21 @@ interface Feature {
 interface IndustryFeaturesProps {
   features: Feature[];
   heading?: string;
+  locale?: string;
 }
+
+const uiStrings = {
+  en: {
+    defaultHeading: 'How Does Daisy Solve These Challenges?',
+    subtitle:
+      'Purpose-built tools designed to help your business grow, not just operate.',
+  },
+  ar: {
+    defaultHeading: 'كيف تحل ديزي هذه التحديات؟',
+    subtitle:
+      'أدوات مصممة خصيصًا لمساعدة عملك على النمو، وليس فقط التشغيل.',
+  },
+};
 
 const iconMap: Record<string, LucideIcon> = {
   star: Star,
@@ -32,20 +46,22 @@ const iconMap: Record<string, LucideIcon> = {
   sparkles: Sparkles,
 };
 
-export function IndustryFeatures({ features, heading }: IndustryFeaturesProps) {
+export function IndustryFeatures({ features, heading, locale = 'en' }: IndustryFeaturesProps) {
   if (!features || features.length === 0) {
     return null;
   }
 
+  const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
+  const isRtl = locale === 'ar';
+
   return (
-    <section className="w-full bg-white px-4 py-16 md:py-24">
+    <section className="w-full bg-white px-4 py-16 md:py-24" dir={isRtl ? 'rtl' : 'ltr'}>
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-4 text-center text-[28px] font-semibold leading-9 text-gray-900 md:text-[36px] md:leading-[44px]">
-          {heading || 'How Does Daisy Solve These Challenges?'}
+          {heading || t.defaultHeading}
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-base text-gray-600">
-          Purpose-built tools designed to help your business grow, not just
-          operate.
+          {t.subtitle}
         </p>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
