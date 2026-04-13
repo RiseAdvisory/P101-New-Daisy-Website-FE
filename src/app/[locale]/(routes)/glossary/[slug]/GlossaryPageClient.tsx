@@ -1,17 +1,17 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getGlossaryEntry } from '@/lib/constants/glossary/glossaryData';
+import { GlossaryEntry } from '@/lib/constants/glossary/glossaryData';
 import { FaqSchema } from '@/components/seo/FaqSchema';
 import { ComparisonBreadcrumbSchema } from '@/components/seo/ComparisonBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 
 interface Props {
+  entry: GlossaryEntry;
   slug: string;
+  locale: string;
 }
 
-export function GlossaryPageClient({ slug }: Props) {
-  const entry = getGlossaryEntry(slug);
-  if (!entry) return null;
+export function GlossaryPageClient({ entry, slug, locale }: Props) {
 
   return (
     <main className="min-h-screen bg-white">
@@ -23,7 +23,7 @@ export function GlossaryPageClient({ slug }: Props) {
       <WebPageSchema
         title={entry.metaTitle}
         description={entry.metaDescription}
-        url={`https://www.jointhedaisy.com/glossary/${slug}`}
+        url={`https://www.jointhedaisy.com/${locale}/glossary/${slug}`}
       />
       {entry.faqs.length > 0 && <FaqSchema faqs={entry.faqs} />}
 

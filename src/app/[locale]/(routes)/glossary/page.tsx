@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import { localeAlternates } from '@/lib/utils/metadata';
 import Link from 'next/link';
-import { glossaryEntries } from '@/lib/constants/glossary/glossaryData';
+import { glossaryData } from '@/lib/constants/glossary/glossaryData';
+import { t } from '@/lib/constants/i18n';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
@@ -38,6 +39,9 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
 }
 
 export default function GlossaryIndex({ params }: { params: { locale: string } }) {
+  const { locale } = params;
+  const entries = t(glossaryData, locale);
+
   return (
     <main className="min-h-screen bg-white">
       <WebPageSchema
@@ -46,7 +50,7 @@ export default function GlossaryIndex({ params }: { params: { locale: string } }
         url="https://www.jointhedaisy.com/glossary"
       />
       <PageBreadcrumbSchema
-        locale={params.locale}
+        locale={locale}
         items={[{ name: 'Glossary', url: 'https://www.jointhedaisy.com/glossary' }]}
       />
       <section className="bg-[#F8F5F3] px-4 py-16 md:py-24">
@@ -63,7 +67,7 @@ export default function GlossaryIndex({ params }: { params: { locale: string } }
 
       <section className="mx-auto max-w-4xl px-4 py-12">
         <div className="grid gap-6 md:grid-cols-2">
-          {glossaryEntries.map((entry) => (
+          {entries.map((entry) => (
             <Link
               key={entry.slug}
               href={`/glossary/${entry.slug}`}
