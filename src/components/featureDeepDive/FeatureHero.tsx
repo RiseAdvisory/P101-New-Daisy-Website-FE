@@ -20,7 +20,7 @@ export function FeatureHero({ title, subtitle, stat }: FeatureHeroProps) {
       <div className="relative mx-auto max-w-4xl text-center">
         {stat && (
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm">
-            <span className="text-lg font-bold text-primaryBtn">
+            <span className="text-lg font-bold text-white">
               {stat.value}
             </span>
             <span className="text-white/80">{stat.label}</span>
