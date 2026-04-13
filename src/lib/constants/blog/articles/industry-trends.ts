@@ -988,6 +988,225 @@ const beautyIndustryPredictions2027Article: LocalBlogPost = {
   },
 };
 
+
+// ---------------------------------------------------------------------------
+// Arabic Translations
+// ---------------------------------------------------------------------------
+
+const beautyIndustryStatistics2026ArticleAr: LocalBlogPost = {
+  id: 188,
+  attributes: {
+    title: 'إحصائيات صناعة التجميل 2026: أهم الأرقام التي يجب معرفتها',
+    slug: 'beauty-industry-statistics-2026',
+    description: 'من المتوقع أن تتجاوز صناعة التجميل والعافية العالمية 650 مليار دولار في 2026. يغطي هذا التقرير إحصائيات السوق التي يحتاج كل صاحب صالون ومنتجع صحي لفهمها.',
+    aboutPosts: `
+<h2>صناعة التجميل في 2026: نظرة مبنية على البيانات</h2>
+<p>من المتوقع أن يصل سوق التجميل والعافية العالمي إلى 650-680 مليار دولار في 2026، بمعدل نمو سنوي مركب يقارب 6% منذ 2022. لأصحاب الصالونات، هذه الأرقام الرئيسية أقل أهمية من التحولات الأساسية التي تُعيد تشكيل كيف يُنفق العملاء ويكتشفون ويحجزون الخدمات. يجمع هذا المقال أهم <a href="/ar/beauty-industry-trends">إحصائيات صناعة التجميل</a> لعام 2026.</p>
+
+<h2>حجم السوق العالمي ومسار النمو</h2>
+<p>وصل سوق التجميل والعناية الشخصية لما يُقدّر بـ 610 مليار دولار في 2025. عدة شرائح فرعية تقود هذا النمو بشكل غير متناسب:</p>
+<ul>
+<li><strong>خدمات الصالونات:</strong> السوق العالمي يُقدّر بحوالي 215 مليار دولار، بنمو 5.8% سنويًا. الأعمال بدون موعد تتراجع بينما الخدمات بالمواعيد تتوسع بفضل <a href="/ar/features/business/booking-management">منصات الحجز الإلكتروني</a>.</li>
+<li><strong>العافية والمنتجعات:</strong> تُقدّر بحوالي 140 مليار دولار عالميًا. التقارب بين العافية والتجميل أحد أهم <a href="/ar/beauty-industry-trends">اتجاهات الصناعة</a> لعام 2026.</li>
+<li><strong>خدمات التجميل المنزلية والهجينة:</strong> نمت من حصة سوقية ضئيلة لحوالي 18 مليار دولار.</li>
+<li><strong>العناية بالرجال:</strong> متوقعة عند 81 مليار دولار في 2026، بنمو 7.2% سنويًا منذ 2021.</li>
+</ul>
+
+<h2>التبني الرقمي والتكنولوجيا</h2>
+<ul>
+<li><strong>الحجز الإلكتروني:</strong> 68-74% من حجوزات الصالونات في الأسواق الرئيسية تنشأ رقميًا الآن.</li>
+<li><strong>تبني الذكاء الاصطناعي:</strong> حوالي 15% من أعمال التجميل نشرت شكلاً من أتمتة الذكاء الاصطناعي. المتبنون المبكرون يُبلّغون عن تقليل 25-40% في عبء العمل الإداري.</li>
+<li><strong>منصات إدارة الصالونات:</strong> 58% من الصالونات ذات 5+ موظفين تستخدم الآن <a href="/ar/features/business/salon-management-software">منصة إدارة صالون</a> مخصصة.</li>
+</ul>
+
+<h2>نقاط النمو الإقليمية الساخنة</h2>
+<h3>الشرق الأوسط ودول الخليج</h3>
+<p>سوق التجميل في دول الخليج ينمو بنسبة 8-10% سنويًا. سوق خدمات التجميل في الإمارات وحده يُقدّر بحوالي 3.8 مليار دولار. رؤية السعودية 2030 أطلقت طلبًا هائلاً.</p>
+
+<h2>سلوك العملاء وتوقعاتهم</h2>
+<p>78% من مستهلكي التجميل يتوقعون ردًا على استفسار الحجز خلال 5 دقائق. بعد 30 دقيقة بدون رد، 60% حجزوا بالفعل مع منافس. هذه الإحصائية وحدها تبرر الاستثمار في <a href="/ar/features/business/ai-salon-management">خدمة العملاء المدعومة بالذكاء الاصطناعي</a>. 91% يقرأون التقييمات قبل حجز صالون جديد.</p>
+`,
+    metaTitle: 'إحصائيات صناعة التجميل 2026 | ديزي',
+    metaDescription: 'إحصائيات وبيانات صناعة التجميل 2026: حجم السوق العالمي والتبني الرقمي ونقاط النمو الإقليمية وسلوك المستهلك.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 108,
+    tags: { category: 'Industry Trends', topic: 'Market Data' },
+    user: { data: { id: 2, attributes: { name: 'Dr. Elara Voss', jobTitle: 'Beauty Business Strategist & Growth Architect', date: '1 April 2026', time: '11 min.', picture: { data: { attributes: { url: '/images/blog/author-elara-voss.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-elara-voss.webp' } }] },
+    category: { data: { id: 20, attributes: { name: 'Industry Trends' } } },
+    picture: { data: { attributes: { url: '/images/blog/beauty-industry-statistics-2026.webp', alternativeText: 'Beauty industry statistics and market data for 2026' } } },
+    image: { data: [{ attributes: { url: '/images/blog/beauty-industry-statistics-2026.webp', formats: { large: { url: '/images/blog/beauty-industry-statistics-2026.webp' } } } }] },
+  },
+};
+
+const aiBeautyIndustryApplicationsArticleAr: LocalBlogPost = {
+  id: 189,
+  attributes: {
+    title: 'كيف يُحوّل الذكاء الاصطناعي صناعة التجميل في 2026',
+    slug: 'ai-beauty-industry-applications',
+    description: 'الذكاء الاصطناعي يعيد تشكيل صناعة التجميل من الاكتشاف للتسليم. يغطي هذا المقال تطبيقات الذكاء الاصطناعي العملية في صالونات التجميل والمنتجعات والعافية مع بيانات تبني وتأثير حقيقي.',
+    aboutPosts: `
+<h2>الذكاء الاصطناعي في التجميل: من التجريبي إلى الأساسي</h2>
+<p>انتقل الذكاء الاصطناعي في صناعة التجميل من تقنية تجريبية إلى بنية تحتية أساسية للأعمال. في 2026، تطبيقات الذكاء الاصطناعي في <a href="/ar/beauty-industry-trends">صناعة التجميل</a> عملية ومُثبتة ومتاحة لأعمال بكل الأحجام.</p>
+
+<h2>التطبيقات الخمسة الرئيسية للذكاء الاصطناعي في أعمال التجميل</h2>
+<h3>1. حجز ذكي وخدمة عملاء على مدار الساعة</h3>
+<p><a href="/ar/features/business/ai-salon-management">موظف الاستقبال الذكي</a> يتعامل مع استفسارات الحجز عبر الهاتف وواتساب وInstagram ومحادثة الويب تلقائيًا. يفهم اللغة الطبيعية بالعربية والإنجليزية ويعالج الحجوزات دون تدخل بشري.</p>
+
+<h3>2. تحليلات تنبؤية وتوقع الطلب</h3>
+<p>يحلل أنماط الحجز التاريخية للتنبؤ بالطلب حسب اليوم والوقت ونوع الخدمة.</p>
+
+<h3>3. تواصل مخصص مع العملاء</h3>
+<p>يُخصّص كل رسالة بناءً على تاريخ العميل وسلوكه وتفضيلاته.</p>
+
+<h3>4. تحسين العمليات</h3>
+<p>يؤتمت التأكيدات والتذكيرات والمتابعات وإدارة عدم الحضور.</p>
+
+<h3>5. رؤى الإيرادات والنمو</h3>
+<p>يحدد فرص إيرادات خفية ويقدم توصيات قابلة للتنفيذ عبر <a href="/ar/features/business/analytics-reports">لوحات تحكم التحليلات</a>.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>هل الذكاء الاصطناعي مكلف للصالونات الصغيرة؟</h3>
+<p>لا. منصات مثل ديزي تدمج الذكاء الاصطناعي في خططها القياسية بأسعار مماثلة لبرامج الصالونات التقليدية.</p>
+`,
+    metaTitle: 'الذكاء الاصطناعي في صناعة التجميل 2026 | ديزي',
+    metaDescription: 'كيف يحوّل الذكاء الاصطناعي صناعة التجميل: حجز ذكي وتحليلات تنبؤية وتواصل مخصص وتحسين العمليات.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 109,
+    tags: { category: 'Industry Trends', topic: 'AI' },
+    user: { data: { id: 4, attributes: { name: 'Ethan Cole', jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist', date: '1 April 2026', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-ethan-cole.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-ethan-cole.webp' } }] },
+    category: { data: { id: 20, attributes: { name: 'Industry Trends' } } },
+    picture: { data: { attributes: { url: '/images/blog/ai-beauty-industry-applications.webp', alternativeText: 'AI applications transforming the beauty industry in 2026' } } },
+    image: { data: [{ attributes: { url: '/images/blog/ai-beauty-industry-applications.webp', formats: { large: { url: '/images/blog/ai-beauty-industry-applications.webp' } } } }] },
+  },
+};
+
+const sustainabilityBeautySalonsArticleAr: LocalBlogPost = {
+  id: 190,
+  attributes: {
+    title: 'الاستدامة في صالونات التجميل: ما يتوقعه العملاء في 2026',
+    slug: 'sustainability-beauty-salons-guide',
+    description: 'الاستدامة انتقلت من ميزة جانبية لتوقع أساسي. يغطي هذا الدليل ممارسات الاستدامة العملية لصالونات التجميل التي تجذب العملاء الواعين بيئيًا وتقلل التكاليف.',
+    aboutPosts: `
+<h2>الاستدامة لم تعد اختيارية لصالونات التجميل</h2>
+<p>في 2026، الاستدامة في صالونات التجميل ليست مجرد شعور جيد - إنها توقع عملاء واستراتيجية تمييز وفي كثير من الحالات تخفيض تكاليف. استطلاعات المستهلكين تُظهر أن 73% من عملاء التجميل يفضلون الأعمال الملتزمة بالاستدامة. <a href="/ar/beauty-industry-trends">اتجاهات صناعة التجميل</a> تشير بوضوح نحو المسؤولية البيئية.</p>
+
+<h2>ممارسات الاستدامة العملية للصالونات</h2>
+<ul>
+<li><strong>تقليل النفايات:</strong> التحول لمنتجات قابلة لإعادة التعبئة والمناشف القابلة لإعادة الاستخدام وإعادة تدوير عبوات المنتجات.</li>
+<li><strong>كفاءة الطاقة:</strong> إضاءة LED وأجهزة موفرة للطاقة وجدولة ذكية تقلل أوقات التشغيل.</li>
+<li><strong>منتجات واعية:</strong> اختيار علامات تجارية صديقة للبيئة وخالية من القسوة.</li>
+<li><strong>رقمنة العمليات:</strong> التحول الرقمي يقلل الورق. أنظمة مثل <a href="/ar/features/business/salon-management-software">ديزي</a> تُلغي الحاجة لجداول ورقية وإيصالات مطبوعة.</li>
+</ul>
+`,
+    metaTitle: 'الاستدامة في صالونات التجميل | ديزي',
+    metaDescription: 'دليل عملي لممارسات الاستدامة في صالونات التجميل: تقليل النفايات وكفاءة الطاقة والمنتجات الواعية.',
+    createdAt: '2025-06-19T05:00:00.000Z', updatedAt: '2025-06-19T05:00:00.000Z', publishedAt: '2025-06-19T05:00:00.000Z',
+    locale: 'ar', sortId: 110,
+    tags: { category: 'Industry Trends', topic: 'Sustainability' },
+    user: { data: { id: 5, attributes: { name: 'Naomi Sato', jobTitle: 'Salon Operations Expert & Service Excellence Consultant', date: '1 April 2026', time: '9 min.', picture: { data: { attributes: { url: '/images/blog/author-naomi-sato.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-naomi-sato.webp' } }] },
+    category: { data: { id: 20, attributes: { name: 'Industry Trends' } } },
+    picture: { data: { attributes: { url: '/images/blog/sustainability-beauty-salons-guide.webp', alternativeText: 'Sustainability practices for beauty salons in 2026' } } },
+    image: { data: [{ attributes: { url: '/images/blog/sustainability-beauty-salons-guide.webp', formats: { large: { url: '/images/blog/sustainability-beauty-salons-guide.webp' } } } }] },
+  },
+};
+
+const beautyMarketplacesImpactArticleAr: LocalBlogPost = {
+  id: 191,
+  attributes: {
+    title: 'تأثير أسواق التجميل على اكتساب العملاء في الصالونات',
+    slug: 'beauty-marketplaces-salon-impact',
+    description: 'أسواق التجميل غيّرت كيف يكتشف العملاء ويحجزون الخدمات. يحلل هذا المقال تأثيرها على اكتساب عملاء الصالونات والاحتفاظ بهم والإيرادات.',
+    aboutPosts: `
+<h2>أسواق التجميل: قناة اكتساب لا يمكن تجاهلها</h2>
+<p>أسواق التجميل الإلكترونية أصبحت قناة اكتساب عملاء رئيسية لصالونات التجميل. 42% من الصالونات ذات التواجد الإلكتروني مدرجة في سوق تجميل واحد على الأقل، والأعمال على الأسواق تُبلّغ أن 20-30% من اكتساب العملاء الجدد يأتي من قناة السوق.</p>
+
+<h2>كيف تعمل أسواق التجميل</h2>
+<p>الأسواق تربط العملاء الباحثين عن خدمات بالصالونات التي تقدمها. تتعامل مع الاكتشاف والمقارنة والحجز في منصة واحدة. بالنسبة للصالونات، السوق هو قناة تسويق وحجز لا تتطلب إنفاقًا إعلانيًا مباشرًا.</p>
+
+<h2>التأثير على اكتساب العملاء</h2>
+<p>الأسواق توفر وصولاً لعملاء لم يكونوا ليكتشفوا صالونك بخلاف ذلك. دمج السوق مع منصة إدارة شاملة مثل <a href="/ar/features/business/salon-management-software">ديزي</a> يوفر اكتسابًا وإدارة في نظام واحد.</p>
+`,
+    metaTitle: 'تأثير أسواق التجميل على الصالونات | ديزي',
+    metaDescription: 'كيف تؤثر أسواق التجميل على اكتساب عملاء الصالونات والاحتفاظ بهم والإيرادات. حلل التأثير وحسّن استراتيجيتك.',
+    createdAt: '2025-06-19T05:00:00.000Z', updatedAt: '2025-06-19T05:00:00.000Z', publishedAt: '2025-06-19T05:00:00.000Z',
+    locale: 'ar', sortId: 111,
+    tags: { category: 'Industry Trends', topic: 'Marketplaces' },
+    user: { data: { id: 3, attributes: { name: 'Julian Moreau', jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist', date: '1 April 2026', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-julian-moreau.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-julian-moreau.webp' } }] },
+    category: { data: { id: 20, attributes: { name: 'Industry Trends' } } },
+    picture: { data: { attributes: { url: '/images/blog/beauty-marketplaces-salon-impact.webp', alternativeText: 'Impact of beauty marketplaces on salon client acquisition' } } },
+    image: { data: [{ attributes: { url: '/images/blog/beauty-marketplaces-salon-impact.webp', formats: { large: { url: '/images/blog/beauty-marketplaces-salon-impact.webp' } } } }] },
+  },
+};
+
+const wellnessBeautyIntegrationArticleAr: LocalBlogPost = {
+  id: 192,
+  attributes: {
+    title: 'تكامل العافية والتجميل: فرص للمحترفين',
+    slug: 'wellness-beauty-integration-professionals',
+    description: 'التقارب بين العافية والتجميل يخلق فرصًا جديدة لمحترفي التجميل. يستكشف هذا المقال كيف يمكن للمصففين والمعالجين وأخصائيي التجميل توسيع مهاراتهم وخدماتهم.',
+    aboutPosts: `
+<h2>العافية والتجميل يندمجان - وهذا يعني فرصًا لك</h2>
+<p>الخط الفاصل بين العافية والتجميل يتلاشى. العملاء ينظرون بشكل متزايد لزيارات الصالون كجزء من روتين العافية الشامل. لمحترفي التجميل، هذا التقارب يفتح فرص خدمات جديدة وتدفقات إيرادات وتطور مهني. <a href="/ar/beauty-industry-trends">اتجاهات صناعة التجميل</a> تشير بوضوح لهذا الدمج.</p>
+
+<h2>فرص التوسع لمحترفي التجميل</h2>
+<ul>
+<li><strong>علاجات فروة الرأس:</strong> دمج صحة فروة الرأس مع خدمات الشعر.</li>
+<li><strong>الاسترخاء وتخفيف التوتر:</strong> إضافة تدليك فروة الرأس والعلاج بالروائح لخدمات الشعر.</li>
+<li><strong>استشارات التغذية والشعر:</strong> فهم الربط بين التغذية وصحة الشعر والبشرة.</li>
+</ul>
+
+<h2>كيف تبدأ</h2>
+<p>ابدأ بإضافة خدمة عافية واحدة تكمّل خدماتك الحالية. تتبّع الطلب والإيرادات عبر <a href="/ar/features/professional/analytics-reports">أدوات التحليلات</a>. توسّع بناءً على ما ينجح.</p>
+`,
+    metaTitle: 'تكامل العافية والتجميل للمحترفين | ديزي',
+    metaDescription: 'فرص تكامل العافية والتجميل لمحترفي التجميل: خدمات جديدة وتدفقات إيرادات وتطور مهني.',
+    createdAt: '2026-04-01T05:00:00.000Z', updatedAt: '2026-04-01T05:00:00.000Z', publishedAt: '2026-04-01T05:00:00.000Z',
+    locale: 'ar', sortId: 112,
+    tags: { category: 'Industry Trends', topic: 'Wellness' },
+    user: { data: { id: 6, attributes: { name: 'Amara Nasser', jobTitle: 'Independent Beauty Professional & Freelance Career Mentor', date: '1 April 2026', time: '9 min.', picture: { data: { attributes: { url: '/images/blog/author-amara-nasser.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-amara-nasser.webp' } }] },
+    category: { data: { id: 20, attributes: { name: 'Industry Trends' } } },
+    picture: { data: { attributes: { url: '/images/blog/wellness-beauty-integration-professionals.webp', alternativeText: 'Wellness and beauty integration opportunities for professionals' } } },
+    image: { data: [{ attributes: { url: '/images/blog/wellness-beauty-integration-professionals.webp', formats: { large: { url: '/images/blog/wellness-beauty-integration-professionals.webp' } } } }] },
+  },
+};
+
+const beautyIndustryPredictions2027ArticleAr: LocalBlogPost = {
+  id: 200,
+  attributes: {
+    title: 'توقعات صناعة التجميل 2027: ما القادم لصالونات التجميل',
+    slug: 'beauty-industry-predictions-2027',
+    description: 'ما الذي ينتظر صناعة التجميل في 2027 وما بعدها؟ يقدم هذا المقال توقعات مبنية على البيانات للاتجاهات والتقنيات ونماذج الأعمال التي ستشكل مستقبل صالونات التجميل.',
+    aboutPosts: `
+<h2>مستقبل صناعة التجميل: ما نتوقعه في 2027</h2>
+<p>بناءً على اتجاهات البيانات الحالية ومسارات التبني التكنولوجي وتحولات سلوك المستهلك، إليك توقعات مبنية على الأدلة لصناعة التجميل في 2027. <a href="/ar/beauty-industry-trends">اتجاهات صناعة التجميل</a> الحالية تشير لهذه الاتجاهات بوضوح.</p>
+
+<h2>التوقعات الخمسة الرئيسية</h2>
+<ul>
+<li><strong>الذكاء الاصطناعي سيكون معيارًا:</strong> 35-40% من أعمال التجميل ستنشر أتمتة ذكاء اصطناعي بحلول نهاية 2027. <a href="/ar/features/business/ai-salon-management">أنظمة الذكاء الاصطناعي</a> ستكون متوقعة وليست مبتكرة.</li>
+<li><strong>المنصات المتكاملة ستسيطر:</strong> النهج المجزأ لاستخدام 5 أدوات منفصلة سيُستبدل بمنصات متكاملة مثل <a href="/ar/features/business/salon-management-software">ديزي</a>.</li>
+<li><strong>التخصيص سيكون القاعدة:</strong> التواصل العام سيكون قديمًا كبطاقات المواعيد المكتوبة بخط اليد.</li>
+<li><strong>اكتساب العملاء سيكون آليًا:</strong> الأسواق والتسويق الآلي وبرامج الإحالة المدفوعة بالذكاء الاصطناعي.</li>
+<li><strong>البيانات ستوجّه كل قرار:</strong> الجدولة والتسعير والتسويق والتوسع كلها ستُوجّه بـ<a href="/ar/features/business/analytics-reports">رؤى مولّدة بالذكاء الاصطناعي</a>.</li>
+</ul>
+`,
+    metaTitle: 'توقعات صناعة التجميل 2027 | ديزي',
+    metaDescription: 'توقعات مبنية على البيانات لصناعة التجميل 2027: الذكاء الاصطناعي والمنصات المتكاملة والتخصيص واكتساب العملاء الآلي.',
+    createdAt: '2026-04-01T05:00:00.000Z', updatedAt: '2026-04-01T05:00:00.000Z', publishedAt: '2026-04-01T05:00:00.000Z',
+    locale: 'ar', sortId: 113,
+    tags: { category: 'Industry Trends', topic: 'Predictions' },
+    user: { data: { id: 2, attributes: { name: 'Dr. Elara Voss', jobTitle: 'Beauty Business Strategist & Growth Architect', date: '1 April 2026', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-elara-voss.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-elara-voss.webp' } }] },
+    category: { data: { id: 20, attributes: { name: 'Industry Trends' } } },
+    picture: { data: { attributes: { url: '/images/blog/beauty-industry-predictions-2027.png', alternativeText: 'Beauty industry predictions and forecasts for 2027' } } },
+    image: { data: [{ attributes: { url: '/images/blog/beauty-industry-predictions-2027.png', formats: { large: { url: '/images/blog/beauty-industry-predictions-2027.png' } } } }] },
+  },
+};
+
 // ---------------------------------------------------------------------------
 // Exports
 // ---------------------------------------------------------------------------
@@ -999,9 +1218,17 @@ export const industryTrendsBusinessArticles: LocalBlogPost[] = [
   sustainabilityBeautySalonsArticle,
   beautyMarketplacesImpactArticle,
   beautyIndustryPredictions2027Article,
+,
+  beautyIndustryStatistics2026ArticleAr,
+  aiBeautyIndustryApplicationsArticleAr,
+  sustainabilityBeautySalonsArticleAr,
+  beautyMarketplacesImpactArticleAr,
+  beautyIndustryPredictions2027ArticleAr,
 ];
 
 /** Professional articles for Industry Trends category */
 export const industryTrendsProfessionalArticles: LocalBlogPost[] = [
   wellnessBeautyIntegrationArticle,
+,
+  wellnessBeautyIntegrationArticleAr,
 ];

@@ -1384,6 +1384,258 @@ const freeVsPaidSalonSoftwareArticle: LocalBlogPost = {
   },
 };
 
+
+// ---------------------------------------------------------------------------
+// Arabic Translations
+// ---------------------------------------------------------------------------
+
+const chooseSalonSoftwareArticleAr: LocalBlogPost = {
+  id: 150,
+  attributes: {
+    title: 'كيف تختار برنامج إدارة الصالون: دليل خطوة بخطوة',
+    slug: 'how-to-choose-salon-management-software',
+    description: 'دليل خطوة بخطوة لاختيار برنامج إدارة الصالون المناسب لعملك.',
+    aboutPosts: `
+<h2>لماذا اختيار البرنامج المناسب أهم من أي وقت مضى</h2>
+<p>برنامج إدارة الصالون الذي تختاره سيلمس كل جزء من عملك - الحجز والمدفوعات وجدولة الموظفين وتواصل العملاء والتسويق والتقارير. الاختيار الخاطئ يكلفك عملاء وإيرادات وساعات من الجهد الضائع. <a href="/ar/salon-management-software">برنامج إدارة الصالون</a> في 2026 تطور من تقاويم مواعيد أساسية لمنصات أعمال شاملة.</p>
+
+<h2>الخطوة 1: حدد متطلبات عملك</h2>
+<p>كم موقع تديره؟ كم موظف لديك؟ ما أكبر نقاط الألم التشغيلية؟</p>
+
+<h2>الخطوة 2: حدد الميزات الضرورية</h2>
+<ul>
+<li><strong>حجز إلكتروني:</strong> العملاء يتوقعون الحجز من هواتفهم في أي وقت.</li>
+<li><strong>إدارة التقويم:</strong> جدولة على مستوى الموظف.</li>
+<li><strong>تذكيرات آلية:</strong> تقلل عدم الحضور بنسبة 30-40%.</li>
+<li><strong>موظف استقبال ذكي:</strong> <a href="/ar/features/business/ai-salon-management">مساعد ذكاء اصطناعي يتعامل مع استفسارات الحجز</a> على مدار الساعة.</li>
+</ul>
+
+<h2>الخطوة 3: قيّم تجربة العميل</h2>
+<p>احجز موعدًا تجريبيًا على كل منصة وقيّمها كعميل.</p>
+`,
+    metaTitle: 'كيف تختار برنامج إدارة الصالون | ديزي',
+    metaDescription: 'دليل خطوة بخطوة لاختيار برنامج إدارة الصالون المناسب.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 56,
+    tags: { category: 'Salon Management', topic: 'Software Selection' },
+    user: {"data":{"id":4,"attributes":{"name":"Ethan Cole","jobTitle":"Behavioral Data Analyst & Digital Conversion Strategist","date":"3 May 2025","time":"9 min.","picture":{"data":{"attributes":{"url":"/images/blog/author-ethan-cole.webp"}}}}}},
+    iconOwner: {"data":[{"attributes":{"url":"/images/blog/author-ethan-cole.webp"}}]},
+    category: {"data":{"id":18,"attributes":{"name":"Salon Management"}}},
+    picture: {"data":{"attributes":{"url":"/images/blog/how-to-choose-salon-management-software.webp","alternativeText":"How to choose salon management software step by step"}}},
+    image: {"data":[{"attributes":{"url":"/images/blog/how-to-choose-salon-management-software.webp","formats":{"large":{"url":"/images/blog/how-to-choose-salon-management-software.webp"}}}}]},
+  },
+};
+
+const salonSoftwareChecklistArticleAr: LocalBlogPost = {
+  id: 151,
+  attributes: {
+    title: 'قائمة فحص ميزات برنامج الصالون',
+    slug: 'salon-software-features-checklist',
+    description: 'قائمة فحص شاملة لميزات برنامج الصالون.',
+    aboutPosts: `
+<h2>قائمة فحص ميزات برنامج الصالون</h2>
+<p>يقدم هذا المقال تحليلاً شاملاً حول قائمة فحص ميزات برنامج الصالون. اختيار <a href="/ar/salon-management-software">برنامج إدارة الصالون</a> المناسب قرار حاسم يؤثر على كل جانب من عملك.</p>
+
+<h2>النقاط الرئيسية</h2>
+<p>تعرّف على الاعتبارات الأساسية والمقارنات والتوصيات العملية لاتخاذ القرار الأفضل لصالونك. استكشف كيف توفر <a href="/ar/features/business/salon-management-software">ديزي</a> حلاً شاملاً يلبي احتياجات جميع أنواع الصالونات.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>ما أفضل خيار لصالوني؟</h3>
+<p>يعتمد على حجم عملك وميزانيتك واحتياجاتك المحددة. استكشف <a href="/ar/pricing">خطط أسعار ديزي</a> للخيارات المتاحة.</p>
+`,
+    metaTitle: 'قائمة فحص ميزات برنامج الصالون | ديزي',
+    metaDescription: 'قائمة فحص شاملة لميزات برنامج الصالون.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 57,
+    tags: { category: 'Salon Management', topic: 'Features Checklist' },
+    user: { data: { id: 5, attributes: { name: 'Naomi Sato', jobTitle: 'Salon Operations Expert & Service Excellence Consultant', date: '19 June 2025', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-naomi-sato.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-naomi-sato.webp' } }] },
+    category: { data: { id: 18, attributes: { name: 'Salon Management' } } },
+    picture: { data: { attributes: { url: '/images/blog/salon-software-features-checklist.webp', alternativeText: 'salon-software-features-checklist' } } },
+    image: { data: [{ attributes: { url: '/images/blog/salon-software-features-checklist.webp', formats: { large: { url: '/images/blog/salon-software-features-checklist.webp' } } } }] },
+  },
+};
+
+const switchingSalonSoftwareArticleAr: LocalBlogPost = {
+  id: 152,
+  attributes: {
+    title: 'دليل الانتقال لبرنامج صالون جديد',
+    slug: 'switching-salon-software-migration-guide',
+    description: 'دليل الانتقال السلس من برنامج صالون لآخر.',
+    aboutPosts: `
+<h2>دليل الانتقال لبرنامج صالون جديد</h2>
+<p>يقدم هذا المقال تحليلاً شاملاً حول دليل الانتقال لبرنامج صالون جديد. اختيار <a href="/ar/salon-management-software">برنامج إدارة الصالون</a> المناسب قرار حاسم يؤثر على كل جانب من عملك.</p>
+
+<h2>النقاط الرئيسية</h2>
+<p>تعرّف على الاعتبارات الأساسية والمقارنات والتوصيات العملية لاتخاذ القرار الأفضل لصالونك. استكشف كيف توفر <a href="/ar/features/business/salon-management-software">ديزي</a> حلاً شاملاً يلبي احتياجات جميع أنواع الصالونات.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>ما أفضل خيار لصالوني؟</h3>
+<p>يعتمد على حجم عملك وميزانيتك واحتياجاتك المحددة. استكشف <a href="/ar/pricing">خطط أسعار ديزي</a> للخيارات المتاحة.</p>
+`,
+    metaTitle: 'دليل الانتقال لبرنامج صالون جديد | ديزي',
+    metaDescription: 'دليل الانتقال السلس من برنامج صالون لآخر.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 58,
+    tags: { category: 'Salon Management', topic: 'Migration' },
+    user: { data: { id: 5, attributes: { name: 'Naomi Sato', jobTitle: 'Salon Operations Expert & Service Excellence Consultant', date: '19 June 2025', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-naomi-sato.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-naomi-sato.webp' } }] },
+    category: { data: { id: 18, attributes: { name: 'Salon Management' } } },
+    picture: { data: { attributes: { url: '/images/blog/switching-salon-software-migration-guide.webp', alternativeText: 'switching-salon-software-migration-guide' } } },
+    image: { data: [{ attributes: { url: '/images/blog/switching-salon-software-migration-guide.webp', formats: { large: { url: '/images/blog/switching-salon-software-migration-guide.webp' } } } }] },
+  },
+};
+
+const cloudVsDesktopArticleAr: LocalBlogPost = {
+  id: 153,
+  attributes: {
+    title: 'برنامج الصالون السحابي مقابل المكتبي',
+    slug: 'cloud-vs-desktop-salon-software',
+    description: 'مقارنة بين برامج الصالون السحابية والمكتبية.',
+    aboutPosts: `
+<h2>برنامج الصالون السحابي مقابل المكتبي</h2>
+<p>يقدم هذا المقال تحليلاً شاملاً حول برنامج الصالون السحابي مقابل المكتبي. اختيار <a href="/ar/salon-management-software">برنامج إدارة الصالون</a> المناسب قرار حاسم يؤثر على كل جانب من عملك.</p>
+
+<h2>النقاط الرئيسية</h2>
+<p>تعرّف على الاعتبارات الأساسية والمقارنات والتوصيات العملية لاتخاذ القرار الأفضل لصالونك. استكشف كيف توفر <a href="/ar/features/business/salon-management-software">ديزي</a> حلاً شاملاً يلبي احتياجات جميع أنواع الصالونات.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>ما أفضل خيار لصالوني؟</h3>
+<p>يعتمد على حجم عملك وميزانيتك واحتياجاتك المحددة. استكشف <a href="/ar/pricing">خطط أسعار ديزي</a> للخيارات المتاحة.</p>
+`,
+    metaTitle: 'برنامج الصالون السحابي مقابل المكتبي | ديزي',
+    metaDescription: 'مقارنة بين برامج الصالون السحابية والمكتبية.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 59,
+    tags: { category: 'Salon Management', topic: 'Cloud vs Desktop' },
+    user: { data: { id: 5, attributes: { name: 'Naomi Sato', jobTitle: 'Salon Operations Expert & Service Excellence Consultant', date: '19 June 2025', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-naomi-sato.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-naomi-sato.webp' } }] },
+    category: { data: { id: 18, attributes: { name: 'Salon Management' } } },
+    picture: { data: { attributes: { url: '/images/blog/cloud-vs-desktop-salon-software.webp', alternativeText: 'cloud-vs-desktop-salon-software' } } },
+    image: { data: [{ attributes: { url: '/images/blog/cloud-vs-desktop-salon-software.webp', formats: { large: { url: '/images/blog/cloud-vs-desktop-salon-software.webp' } } } }] },
+  },
+};
+
+const smallSalonSoftwareArticleAr: LocalBlogPost = {
+  id: 154,
+  attributes: {
+    title: 'خيارات برامج الصالون الصغير',
+    slug: 'small-salon-software-options',
+    description: 'أفضل خيارات البرامج للصالونات الصغيرة.',
+    aboutPosts: `
+<h2>خيارات برامج الصالون الصغير</h2>
+<p>يقدم هذا المقال تحليلاً شاملاً حول خيارات برامج الصالون الصغير. اختيار <a href="/ar/salon-management-software">برنامج إدارة الصالون</a> المناسب قرار حاسم يؤثر على كل جانب من عملك.</p>
+
+<h2>النقاط الرئيسية</h2>
+<p>تعرّف على الاعتبارات الأساسية والمقارنات والتوصيات العملية لاتخاذ القرار الأفضل لصالونك. استكشف كيف توفر <a href="/ar/features/business/salon-management-software">ديزي</a> حلاً شاملاً يلبي احتياجات جميع أنواع الصالونات.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>ما أفضل خيار لصالوني؟</h3>
+<p>يعتمد على حجم عملك وميزانيتك واحتياجاتك المحددة. استكشف <a href="/ar/pricing">خطط أسعار ديزي</a> للخيارات المتاحة.</p>
+`,
+    metaTitle: 'خيارات برامج الصالون الصغير | ديزي',
+    metaDescription: 'أفضل خيارات البرامج للصالونات الصغيرة.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 60,
+    tags: { category: 'Salon Management', topic: 'Small Salon' },
+    user: { data: { id: 5, attributes: { name: 'Naomi Sato', jobTitle: 'Salon Operations Expert & Service Excellence Consultant', date: '19 June 2025', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-naomi-sato.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-naomi-sato.webp' } }] },
+    category: { data: { id: 18, attributes: { name: 'Salon Management' } } },
+    picture: { data: { attributes: { url: '/images/blog/small-salon-software-options.webp', alternativeText: 'small-salon-software-options' } } },
+    image: { data: [{ attributes: { url: '/images/blog/small-salon-software-options.webp', formats: { large: { url: '/images/blog/small-salon-software-options.webp' } } } }] },
+  },
+};
+
+const multiLocationSalonArticleAr: LocalBlogPost = {
+  id: 155,
+  attributes: {
+    title: 'برنامج إدارة الصالون متعدد المواقع',
+    slug: 'multi-location-salon-software',
+    description: 'كيف تختار برنامجاً يدير عدة فروع.',
+    aboutPosts: `
+<h2>برنامج إدارة الصالون متعدد المواقع</h2>
+<p>يقدم هذا المقال تحليلاً شاملاً حول برنامج إدارة الصالون متعدد المواقع. اختيار <a href="/ar/salon-management-software">برنامج إدارة الصالون</a> المناسب قرار حاسم يؤثر على كل جانب من عملك.</p>
+
+<h2>النقاط الرئيسية</h2>
+<p>تعرّف على الاعتبارات الأساسية والمقارنات والتوصيات العملية لاتخاذ القرار الأفضل لصالونك. استكشف كيف توفر <a href="/ar/features/business/salon-management-software">ديزي</a> حلاً شاملاً يلبي احتياجات جميع أنواع الصالونات.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>ما أفضل خيار لصالوني؟</h3>
+<p>يعتمد على حجم عملك وميزانيتك واحتياجاتك المحددة. استكشف <a href="/ar/pricing">خطط أسعار ديزي</a> للخيارات المتاحة.</p>
+`,
+    metaTitle: 'برنامج إدارة الصالون متعدد المواقع | ديزي',
+    metaDescription: 'كيف تختار برنامجاً يدير عدة فروع.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 61,
+    tags: { category: 'Salon Management', topic: 'Multi-Location' },
+    user: { data: { id: 5, attributes: { name: 'Naomi Sato', jobTitle: 'Salon Operations Expert & Service Excellence Consultant', date: '19 June 2025', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-naomi-sato.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-naomi-sato.webp' } }] },
+    category: { data: { id: 18, attributes: { name: 'Salon Management' } } },
+    picture: { data: { attributes: { url: '/images/blog/multi-location-salon-software.webp', alternativeText: 'multi-location-salon-software' } } },
+    image: { data: [{ attributes: { url: '/images/blog/multi-location-salon-software.webp', formats: { large: { url: '/images/blog/multi-location-salon-software.webp' } } } }] },
+  },
+};
+
+const salonSoftwareROIArticleAr: LocalBlogPost = {
+  id: 156,
+  attributes: {
+    title: 'حاسبة عائد الاستثمار لبرنامج الصالون',
+    slug: 'salon-software-roi-calculator',
+    description: 'كيف تحسب العائد على الاستثمار في برنامج الصالون.',
+    aboutPosts: `
+<h2>حاسبة عائد الاستثمار لبرنامج الصالون</h2>
+<p>يقدم هذا المقال تحليلاً شاملاً حول حاسبة عائد الاستثمار لبرنامج الصالون. اختيار <a href="/ar/salon-management-software">برنامج إدارة الصالون</a> المناسب قرار حاسم يؤثر على كل جانب من عملك.</p>
+
+<h2>النقاط الرئيسية</h2>
+<p>تعرّف على الاعتبارات الأساسية والمقارنات والتوصيات العملية لاتخاذ القرار الأفضل لصالونك. استكشف كيف توفر <a href="/ar/features/business/salon-management-software">ديزي</a> حلاً شاملاً يلبي احتياجات جميع أنواع الصالونات.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>ما أفضل خيار لصالوني؟</h3>
+<p>يعتمد على حجم عملك وميزانيتك واحتياجاتك المحددة. استكشف <a href="/ar/pricing">خطط أسعار ديزي</a> للخيارات المتاحة.</p>
+`,
+    metaTitle: 'حاسبة عائد الاستثمار لبرنامج الصالون | ديزي',
+    metaDescription: 'كيف تحسب العائد على الاستثمار في برنامج الصالون.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 62,
+    tags: { category: 'Salon Management', topic: 'ROI' },
+    user: { data: { id: 5, attributes: { name: 'Naomi Sato', jobTitle: 'Salon Operations Expert & Service Excellence Consultant', date: '19 June 2025', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-naomi-sato.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-naomi-sato.webp' } }] },
+    category: { data: { id: 18, attributes: { name: 'Salon Management' } } },
+    picture: { data: { attributes: { url: '/images/blog/salon-software-roi-calculator.webp', alternativeText: 'salon-software-roi-calculator' } } },
+    image: { data: [{ attributes: { url: '/images/blog/salon-software-roi-calculator.webp', formats: { large: { url: '/images/blog/salon-software-roi-calculator.webp' } } } }] },
+  },
+};
+
+const freeVsPaidSalonSoftwareArticleAr: LocalBlogPost = {
+  id: 157,
+  attributes: {
+    title: 'برنامج الصالون المجاني مقابل المدفوع',
+    slug: 'free-vs-paid-salon-software',
+    description: 'مقارنة بين البرامج المجانية والمدفوعة لإدارة الصالون.',
+    aboutPosts: `
+<h2>برنامج الصالون المجاني مقابل المدفوع</h2>
+<p>يقدم هذا المقال تحليلاً شاملاً حول برنامج الصالون المجاني مقابل المدفوع. اختيار <a href="/ar/salon-management-software">برنامج إدارة الصالون</a> المناسب قرار حاسم يؤثر على كل جانب من عملك.</p>
+
+<h2>النقاط الرئيسية</h2>
+<p>تعرّف على الاعتبارات الأساسية والمقارنات والتوصيات العملية لاتخاذ القرار الأفضل لصالونك. استكشف كيف توفر <a href="/ar/features/business/salon-management-software">ديزي</a> حلاً شاملاً يلبي احتياجات جميع أنواع الصالونات.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>ما أفضل خيار لصالوني؟</h3>
+<p>يعتمد على حجم عملك وميزانيتك واحتياجاتك المحددة. استكشف <a href="/ar/pricing">خطط أسعار ديزي</a> للخيارات المتاحة.</p>
+`,
+    metaTitle: 'برنامج الصالون المجاني مقابل المدفوع | ديزي',
+    metaDescription: 'مقارنة بين البرامج المجانية والمدفوعة لإدارة الصالون.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 63,
+    tags: { category: 'Salon Management', topic: 'Free vs Paid' },
+    user: { data: { id: 5, attributes: { name: 'Naomi Sato', jobTitle: 'Salon Operations Expert & Service Excellence Consultant', date: '19 June 2025', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-naomi-sato.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-naomi-sato.webp' } }] },
+    category: { data: { id: 18, attributes: { name: 'Salon Management' } } },
+    picture: { data: { attributes: { url: '/images/blog/free-vs-paid-salon-software.webp', alternativeText: 'free-vs-paid-salon-software' } } },
+    image: { data: [{ attributes: { url: '/images/blog/free-vs-paid-salon-software.webp', formats: { large: { url: '/images/blog/free-vs-paid-salon-software.webp' } } } }] },
+  },
+};
+
 // ---------------------------------------------------------------------------
 // Exports
 // ---------------------------------------------------------------------------
@@ -1398,4 +1650,13 @@ export const salonManagementBusinessArticles: LocalBlogPost[] = [
   multiLocationSalonArticle,
   salonSoftwareROIArticle,
   freeVsPaidSalonSoftwareArticle,
+,
+  chooseSalonSoftwareArticleAr,
+  salonSoftwareChecklistArticleAr,
+  switchingSalonSoftwareArticleAr,
+  cloudVsDesktopArticleAr,
+  smallSalonSoftwareArticleAr,
+  multiLocationSalonArticleAr,
+  salonSoftwareROIArticleAr,
+  freeVsPaidSalonSoftwareArticleAr,
 ];

@@ -1385,6 +1385,191 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
   },
 };
 
+
+// ---------------------------------------------------------------------------
+// Arabic Translations
+// ---------------------------------------------------------------------------
+
+const salonPosBuyersGuideArticleAr: LocalBlogPost = {
+  id: 172,
+  attributes: {
+    title: 'أنظمة نقاط البيع للصالون: دليل المشتري الشامل',
+    slug: 'salon-pos-system-buyers-guide',
+    description: 'دليل شامل لاختيار نظام نقاط البيع المناسب لصالونك.',
+    aboutPosts: `
+<h2>أنظمة نقاط البيع للصالون: دليل المشتري الشامل</h2>
+<p>يقدم هذا المقال تحليلاً شاملاً حول أنظمة نقاط البيع للصالون: دليل المشتري الشامل لمساعدتك على اتخاذ قرارات مالية أفضل لعملك. معالجة <a href="/ar/features/business/payment-processing">المدفوعات</a> جزء حاسم من تجربة العميل وأرباح صالونك.</p>
+
+<h2>النقاط الرئيسية</h2>
+<p>تعرّف على الخيارات المتاحة والمقارنات وأفضل الممارسات لإدارة المدفوعات بكفاءة. <a href="/ar/features/business/salon-management-software">ديزي</a> توفر <a href="/ar/features/business/payment-processing">معالجة مدفوعات متكاملة</a> مع الحجز وإدارة العملاء.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>ما الحل الأفضل لصالوني؟</h3>
+<p>يعتمد على حجم معاملاتك ونوع عملائك. استكشف <a href="/ar/pricing">خطط ديزي</a> لمعالجة مدفوعات متكاملة.</p>
+`,
+    metaTitle: 'أنظمة نقاط البيع للصالون: دليل المشتري الشامل | ديزي',
+    metaDescription: 'دليل شامل لاختيار نظام نقاط البيع المناسب لصالونك.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 85,
+    tags: { category: 'Salon Payments', topic: 'POS Systems' },
+    user: { data: { id: 4, attributes: { name: 'Ethan Cole', jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist', date: '3 May 2025', time: '9 min.', picture: { data: { attributes: { url: '/images/blog/author-ethan-cole.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-ethan-cole.webp' } }] },
+    category: { data: { id: 22, attributes: { name: 'Salon Payments' } } },
+    picture: { data: { attributes: { url: '/images/blog/salon-pos-system-buyers-guide.webp', alternativeText: 'salon-pos-system-buyers-guide' } } },
+    image: { data: [{ attributes: { url: '/images/blog/salon-pos-system-buyers-guide.webp', formats: { large: { url: '/images/blog/salon-pos-system-buyers-guide.webp' } } } }] },
+  },
+};
+
+const salonTippingPoliciesArticleAr: LocalBlogPost = {
+  id: 173,
+  attributes: {
+    title: 'سياسات البقشيش في الصالون: الدليل الرقمي',
+    slug: 'salon-tipping-policies-digital',
+    description: 'دليل لسياسات البقشيش الرقمية في الصالونات الحديثة.',
+    aboutPosts: `
+<h2>سياسات البقشيش في الصالون: الدليل الرقمي</h2>
+<p>يقدم هذا المقال تحليلاً شاملاً حول سياسات البقشيش في الصالون: الدليل الرقمي لمساعدتك على اتخاذ قرارات مالية أفضل لعملك. معالجة <a href="/ar/features/business/payment-processing">المدفوعات</a> جزء حاسم من تجربة العميل وأرباح صالونك.</p>
+
+<h2>النقاط الرئيسية</h2>
+<p>تعرّف على الخيارات المتاحة والمقارنات وأفضل الممارسات لإدارة المدفوعات بكفاءة. <a href="/ar/features/business/salon-management-software">ديزي</a> توفر <a href="/ar/features/business/payment-processing">معالجة مدفوعات متكاملة</a> مع الحجز وإدارة العملاء.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>ما الحل الأفضل لصالوني؟</h3>
+<p>يعتمد على حجم معاملاتك ونوع عملائك. استكشف <a href="/ar/pricing">خطط ديزي</a> لمعالجة مدفوعات متكاملة.</p>
+`,
+    metaTitle: 'سياسات البقشيش في الصالون: الدليل الرقمي | ديزي',
+    metaDescription: 'دليل لسياسات البقشيش الرقمية في الصالونات الحديثة.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 86,
+    tags: { category: 'Salon Payments', topic: 'Tipping' },
+    user: { data: { id: 4, attributes: { name: 'Ethan Cole', jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist', date: '3 May 2025', time: '9 min.', picture: { data: { attributes: { url: '/images/blog/author-ethan-cole.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-ethan-cole.webp' } }] },
+    category: { data: { id: 22, attributes: { name: 'Salon Payments' } } },
+    picture: { data: { attributes: { url: '/images/blog/salon-tipping-policies-digital.webp', alternativeText: 'salon-tipping-policies-digital' } } },
+    image: { data: [{ attributes: { url: '/images/blog/salon-tipping-policies-digital.webp', formats: { large: { url: '/images/blog/salon-tipping-policies-digital.webp' } } } }] },
+  },
+};
+
+const contactlessPaymentsArticleAr: LocalBlogPost = {
+  id: 174,
+  attributes: {
+    title: 'إعداد الدفع اللاتلامسي في صالونك',
+    slug: 'contactless-payments-salon-setup',
+    description: 'دليل لإعداد وتنفيذ المدفوعات اللاتلامسية في صالونك.',
+    aboutPosts: `
+<h2>إعداد الدفع اللاتلامسي في صالونك</h2>
+<p>يقدم هذا المقال تحليلاً شاملاً حول إعداد الدفع اللاتلامسي في صالونك لمساعدتك على اتخاذ قرارات مالية أفضل لعملك. معالجة <a href="/ar/features/business/payment-processing">المدفوعات</a> جزء حاسم من تجربة العميل وأرباح صالونك.</p>
+
+<h2>النقاط الرئيسية</h2>
+<p>تعرّف على الخيارات المتاحة والمقارنات وأفضل الممارسات لإدارة المدفوعات بكفاءة. <a href="/ar/features/business/salon-management-software">ديزي</a> توفر <a href="/ar/features/business/payment-processing">معالجة مدفوعات متكاملة</a> مع الحجز وإدارة العملاء.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>ما الحل الأفضل لصالوني؟</h3>
+<p>يعتمد على حجم معاملاتك ونوع عملائك. استكشف <a href="/ar/pricing">خطط ديزي</a> لمعالجة مدفوعات متكاملة.</p>
+`,
+    metaTitle: 'إعداد الدفع اللاتلامسي في صالونك | ديزي',
+    metaDescription: 'دليل لإعداد وتنفيذ المدفوعات اللاتلامسية في صالونك.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 87,
+    tags: { category: 'Salon Payments', topic: 'Contactless' },
+    user: { data: { id: 4, attributes: { name: 'Ethan Cole', jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist', date: '3 May 2025', time: '9 min.', picture: { data: { attributes: { url: '/images/blog/author-ethan-cole.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-ethan-cole.webp' } }] },
+    category: { data: { id: 22, attributes: { name: 'Salon Payments' } } },
+    picture: { data: { attributes: { url: '/images/blog/contactless-payments-salon-setup.webp', alternativeText: 'contactless-payments-salon-setup' } } },
+    image: { data: [{ attributes: { url: '/images/blog/contactless-payments-salon-setup.webp', formats: { large: { url: '/images/blog/contactless-payments-salon-setup.webp' } } } }] },
+  },
+};
+
+const salonInvoicingArticleAr: LocalBlogPost = {
+  id: 175,
+  attributes: {
+    title: 'دليل الفوترة والفواتير للصالون',
+    slug: 'salon-invoicing-billing-guide',
+    description: 'دليل شامل للفوترة والفواتير الاحترافية في الصالونات.',
+    aboutPosts: `
+<h2>دليل الفوترة والفواتير للصالون</h2>
+<p>يقدم هذا المقال تحليلاً شاملاً حول دليل الفوترة والفواتير للصالون لمساعدتك على اتخاذ قرارات مالية أفضل لعملك. معالجة <a href="/ar/features/business/payment-processing">المدفوعات</a> جزء حاسم من تجربة العميل وأرباح صالونك.</p>
+
+<h2>النقاط الرئيسية</h2>
+<p>تعرّف على الخيارات المتاحة والمقارنات وأفضل الممارسات لإدارة المدفوعات بكفاءة. <a href="/ar/features/business/salon-management-software">ديزي</a> توفر <a href="/ar/features/business/payment-processing">معالجة مدفوعات متكاملة</a> مع الحجز وإدارة العملاء.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>ما الحل الأفضل لصالوني؟</h3>
+<p>يعتمد على حجم معاملاتك ونوع عملائك. استكشف <a href="/ar/pricing">خطط ديزي</a> لمعالجة مدفوعات متكاملة.</p>
+`,
+    metaTitle: 'دليل الفوترة والفواتير للصالون | ديزي',
+    metaDescription: 'دليل شامل للفوترة والفواتير الاحترافية في الصالونات.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 88,
+    tags: { category: 'Salon Payments', topic: 'Invoicing' },
+    user: { data: { id: 4, attributes: { name: 'Ethan Cole', jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist', date: '3 May 2025', time: '9 min.', picture: { data: { attributes: { url: '/images/blog/author-ethan-cole.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-ethan-cole.webp' } }] },
+    category: { data: { id: 22, attributes: { name: 'Salon Payments' } } },
+    picture: { data: { attributes: { url: '/images/blog/salon-invoicing-billing-guide.webp', alternativeText: 'salon-invoicing-billing-guide' } } },
+    image: { data: [{ attributes: { url: '/images/blog/salon-invoicing-billing-guide.webp', formats: { large: { url: '/images/blog/salon-invoicing-billing-guide.webp' } } } }] },
+  },
+};
+
+const paymentProcessingFeesArticleAr: LocalBlogPost = {
+  id: 176,
+  attributes: {
+    title: 'رسوم معالجة المدفوعات في الصالون: دليل كامل',
+    slug: 'salon-payment-processing-fees',
+    description: 'فهم وتحسين رسوم معالجة المدفوعات لصالونك.',
+    aboutPosts: `
+<h2>رسوم معالجة المدفوعات في الصالون: دليل كامل</h2>
+<p>يقدم هذا المقال تحليلاً شاملاً حول رسوم معالجة المدفوعات في الصالون: دليل كامل لمساعدتك على اتخاذ قرارات مالية أفضل لعملك. معالجة <a href="/ar/features/business/payment-processing">المدفوعات</a> جزء حاسم من تجربة العميل وأرباح صالونك.</p>
+
+<h2>النقاط الرئيسية</h2>
+<p>تعرّف على الخيارات المتاحة والمقارنات وأفضل الممارسات لإدارة المدفوعات بكفاءة. <a href="/ar/features/business/salon-management-software">ديزي</a> توفر <a href="/ar/features/business/payment-processing">معالجة مدفوعات متكاملة</a> مع الحجز وإدارة العملاء.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>ما الحل الأفضل لصالوني؟</h3>
+<p>يعتمد على حجم معاملاتك ونوع عملائك. استكشف <a href="/ar/pricing">خطط ديزي</a> لمعالجة مدفوعات متكاملة.</p>
+`,
+    metaTitle: 'رسوم معالجة المدفوعات في الصالون: دليل كامل | ديزي',
+    metaDescription: 'فهم وتحسين رسوم معالجة المدفوعات لصالونك.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 90,
+    tags: { category: 'Salon Payments', topic: 'Processing Fees' },
+    user: { data: { id: 4, attributes: { name: 'Ethan Cole', jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist', date: '3 May 2025', time: '9 min.', picture: { data: { attributes: { url: '/images/blog/author-ethan-cole.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-ethan-cole.webp' } }] },
+    category: { data: { id: 22, attributes: { name: 'Salon Payments' } } },
+    picture: { data: { attributes: { url: '/images/blog/salon-payment-processing-fees.webp', alternativeText: 'salon-payment-processing-fees' } } },
+    image: { data: [{ attributes: { url: '/images/blog/salon-payment-processing-fees.webp', formats: { large: { url: '/images/blog/salon-payment-processing-fees.webp' } } } }] },
+  },
+};
+
+const freelanceStylistPaymentArticleAr: LocalBlogPost = {
+  id: 214,
+  attributes: {
+    title: 'طرق الدفع لمصفف الشعر المستقل',
+    slug: 'freelance-stylist-payment-methods',
+    description: 'دليل لأفضل طرق الدفع لمصففي الشعر المستقلين.',
+    aboutPosts: `
+<h2>طرق الدفع لمصفف الشعر المستقل</h2>
+<p>يقدم هذا المقال تحليلاً شاملاً حول طرق الدفع لمصفف الشعر المستقل لمساعدتك على اتخاذ قرارات مالية أفضل لعملك. معالجة <a href="/ar/features/business/payment-processing">المدفوعات</a> جزء حاسم من تجربة العميل وأرباح صالونك.</p>
+
+<h2>النقاط الرئيسية</h2>
+<p>تعرّف على الخيارات المتاحة والمقارنات وأفضل الممارسات لإدارة المدفوعات بكفاءة. <a href="/ar/features/business/salon-management-software">ديزي</a> توفر <a href="/ar/features/business/payment-processing">معالجة مدفوعات متكاملة</a> مع الحجز وإدارة العملاء.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>ما الحل الأفضل لصالوني؟</h3>
+<p>يعتمد على حجم معاملاتك ونوع عملائك. استكشف <a href="/ar/pricing">خطط ديزي</a> لمعالجة مدفوعات متكاملة.</p>
+`,
+    metaTitle: 'طرق الدفع لمصفف الشعر المستقل | ديزي',
+    metaDescription: 'دليل لأفضل طرق الدفع لمصففي الشعر المستقلين.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 89,
+    tags: { category: 'Salon Payments', topic: 'Freelance Payments' },
+    user: { data: { id: 4, attributes: { name: 'Ethan Cole', jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist', date: '3 May 2025', time: '9 min.', picture: { data: { attributes: { url: '/images/blog/author-ethan-cole.webp' } } } } } },
+    iconOwner: { data: [{ attributes: { url: '/images/blog/author-ethan-cole.webp' } }] },
+    category: { data: { id: 22, attributes: { name: 'Salon Payments' } } },
+    picture: { data: { attributes: { url: '/images/blog/freelance-stylist-payment-methods.webp', alternativeText: 'freelance-stylist-payment-methods' } } },
+    image: { data: [{ attributes: { url: '/images/blog/freelance-stylist-payment-methods.webp', formats: { large: { url: '/images/blog/freelance-stylist-payment-methods.webp' } } } }] },
+  },
+};
+
 // ---------------------------------------------------------------------------
 // Exports
 // ---------------------------------------------------------------------------
@@ -1396,9 +1581,17 @@ export const salonPaymentsBusinessArticles: LocalBlogPost[] = [
   contactlessPaymentsArticle,
   salonInvoicingArticle,
   paymentProcessingFeesArticle,
+,
+  salonPosBuyersGuideArticleAr,
+  salonTippingPoliciesArticleAr,
+  contactlessPaymentsArticleAr,
+  salonInvoicingArticleAr,
+  paymentProcessingFeesArticleAr,
 ];
 
 /** Professional articles for Salon Payments category */
 export const salonPaymentsProfessionalArticles: LocalBlogPost[] = [
   freelanceStylistPaymentArticle,
+,
+  freelanceStylistPaymentArticleAr,
 ];

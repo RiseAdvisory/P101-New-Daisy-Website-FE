@@ -1413,6 +1413,304 @@ const scalingFreelancerArticle: LocalBlogPost = {
   },
 };
 
+
+// ---------------------------------------------------------------------------
+// Arabic Translations
+// ---------------------------------------------------------------------------
+
+const freelanceStylistSchedulingArticleAr: LocalBlogPost = {
+  id: 211,
+  attributes: {
+    title: 'جدولة المصفف المستقل: إدارة تقويمك الخاص',
+    slug: 'freelance-stylist-scheduling-guide',
+    description: 'دليل عملي لإدارة تقويمك كمصفف شعر مستقل. يغطي أنظمة الحجز وأوقات الفراغ وسياسات عدم الحضور واستراتيجيات الجدولة التي تزيد الدخل وتمنع الإرهاق.',
+    aboutPosts: `
+<h2>لماذا إدارة التقويم أساس نجاح التصفيف المستقل</h2>
+<p>كمصفف شعر مستقل، تقويمك هو محرك إيراداتك. كل فتحة فارغة دخل محتمل مفقود وكل حجز مزدوج علاقة عميل متضررة. استطلاع 2025 وجد أن المصففين المستقلين الذين يستخدمون نظام جدولة منظم يكسبون 35-40% أكثر من الذين يديرون الحجوزات عبر الرسائل غير الرسمية.</p>
+
+<h2>اختيار نظام الحجز المناسب</h2>
+<p>منصة حجز احترافية حيث يرى العملاء توفرك في الوقت الفعلي ويحجزون فوريًا هي النهج الأكثر كفاءة. <a href="/ar/features/professional/booking-management">ديزي للمحترفين</a> توفر حجزًا إلكترونيًا مصممًا خصيصًا لمحترفي التجميل المستقلين.</p>
+
+<h2>هيكلة جدولك الأسبوعي</h2>
+<p>حدد ساعات عملك وأيامك. جمّع الخدمات المتشابهة معًا. ابنِ فترات فراغ غير قابلة للتفاوض بين المواعيد. خصص وقتًا إداريًا يوميًا.</p>
+
+<h2>منع عدم الحضور والإلغاء المتأخر</h2>
+<p>طبّق نظام إيداع واضبط سياسة إلغاء وأتمت التذكيرات. <a href="/ar/features/professional/communication-tools">ديزي</a> ترسل تذكيرات آلية عبر واتساب والرسائل النصية. حافظ على قائمة انتظار.</p>
+
+<h2>تحسين جدولك لأقصى دخل</h2>
+<p>خصص الخدمات عالية القيمة لساعات الذروة. حدد حدًا أدنى لقيمة الحجز في الأوقات المميزة. تتبّع معدل استخدامك عبر <a href="/ar/features/professional/analytics-reports">أدوات تحليلات ديزي</a>.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>كم مسبقًا يجب أن أفتح تقويم حجزي؟</h3>
+<p>افتح تقويمك 4-6 أسابيع مسبقًا. هذا يعطي العملاء وقتًا كافيًا للتخطيط.</p>
+`,
+    metaTitle: 'دليل جدولة المصفف المستقل | ديزي',
+    metaDescription: 'أدر تقويم مصفف شعرك المستقل بفعالية. يغطي أنظمة الحجز وأوقات الفراغ وسياسات عدم الحضور واستراتيجيات الجدولة.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 99,
+    tags: { category: 'Freelance', topic: 'Scheduling' },
+    user: {"data":{"id":6,"attributes":{"name":"Amara Nasser","jobTitle":"Independent Beauty Professional & Freelance Career Mentor","date":"10 July 2025","time":"9 min.","picture":{"data":{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}}}}},
+    iconOwner: {"data":[{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}]},
+    category: {"data":{"id":19,"attributes":{"name":"Freelance Beauty"}}},
+    picture: {"data":{"attributes":{"url":"/images/blog/freelance-stylist-scheduling-guide.webp","alternativeText":"Freelance hairstylist managing calendar bookings on phone"}}},
+    image: {"data":[{"attributes":{"url":"/images/blog/freelance-stylist-scheduling-guide.webp","formats":{"large":{"url":"/images/blog/freelance-stylist-scheduling-guide.webp"}}}}]},
+  },
+};
+
+const goingFreelanceArticleAr: LocalBlogPost = {
+  id: 217,
+  attributes: {
+    title: 'الانتقال للعمل المستقل كمحترف تجميل: المزايا والعيوب',
+    slug: 'going-freelance-beauty-professional',
+    description: 'دليل شامل لمزايا وعيوب الانتقال للعمل المستقل كمحترف تجميل.',
+    aboutPosts: `
+<h2>هل العمل المستقل مناسب لك؟</h2>
+<p>الانتقال للعمل المستقل قرار كبير يتطلب تقييمًا صادقًا لمهاراتك ودوافعك ووضعك المالي. هذا الدليل يساعدك على اتخاذ قرار مستنير.</p>
+
+<h2>مزايا العمل المستقل</h2>
+<ul>
+<li><strong>المرونة:</strong> أنت تحدد ساعاتك وأيام عملك وجدولك.</li>
+<li><strong>الدخل المحتمل:</strong> تحتفظ بنسبة أكبر من إيراداتك مقارنة بالعمل كموظف.</li>
+<li><strong>الاستقلالية:</strong> تختار عملاءك وخدماتك ومنتجاتك.</li>
+</ul>
+
+<h2>التحديات</h2>
+<ul>
+<li><strong>عدم استقرار الدخل:</strong> لا راتب ثابت مضمون.</li>
+<li><strong>المسؤوليات الإدارية:</strong> أنت المالك والمحاسب ومدير التسويق.</li>
+</ul>
+
+<h2>أدوات تساعدك على النجاح</h2>
+<p>منصات مثل <a href="/ar/features/professional/booking-management">ديزي للمحترفين</a> تُبسّط إدارة الحجوزات والعملاء والمدفوعات.</p>
+`,
+    metaTitle: 'الانتقال للعمل المستقل في التجميل | ديزي',
+    metaDescription: 'مزايا وعيوب الانتقال للعمل المستقل كمحترف تجميل مع دليل عملي.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 100,
+    tags: { category: 'Freelance', topic: 'Career' },
+    user: {"data":{"id":6,"attributes":{"name":"Amara Nasser","jobTitle":"Independent Beauty Professional & Freelance Career Mentor","date":"10 July 2025","time":"9 min.","picture":{"data":{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}}}}},
+    iconOwner: {"data":[{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}]},
+    category: {"data":{"id":19,"attributes":{"name":"Freelance Beauty"}}},
+    picture: {"data":{"attributes":{"url":"/images/blog/going-freelance-beauty-professional.webp","alternativeText":"Going freelance as a beauty professional pros and cons"}}},
+    image: {"data":[{"attributes":{"url":"/images/blog/going-freelance-beauty-professional.webp","formats":{"large":{"url":"/images/blog/going-freelance-beauty-professional.webp"}}}}]},
+  },
+};
+
+const freelanceBusinessSetupArticleAr: LocalBlogPost = {
+  id: 218,
+  attributes: {
+    title: 'إعداد عملك كمصفف شعر مستقل: دليل خطوة بخطوة',
+    slug: 'freelance-hairstylist-business-setup',
+    description: 'دليل شامل لإعداد عملك كمصفف شعر مستقل يغطي التراخيص والتأمين وإعداد مساحة العمل والأدوات.',
+    aboutPosts: `
+<h2>تأسيس عملك المستقل على أسس صحيحة</h2>
+<p>إعداد عملك بشكل صحيح من البداية يوفر الوقت والمال والمشاكل لاحقًا. يغطي هذا الدليل كل خطوة تحتاجها لتأسيس عمل مصفف شعر مستقل.</p>
+
+<h2>الخطوات الأساسية</h2>
+<ul>
+<li><strong>سجّل عملك:</strong> اختر الهيكل القانوني المناسب واحصل على التراخيص المطلوبة.</li>
+<li><strong>احصل على التأمين:</strong> تأمين المسؤولية المهنية ضروري لحمايتك.</li>
+<li><strong>جهّز مساحة عملك:</strong> سواء استوديو خاص أو عمل متنقل.</li>
+<li><strong>اختر أدواتك الرقمية:</strong> نظام حجز ومدفوعات وتسويق عبر <a href="/ar/features/professional/booking-management">منصة شاملة</a>.</li>
+</ul>
+`,
+    metaTitle: 'إعداد عمل مصفف شعر مستقل | ديزي',
+    metaDescription: 'دليل خطوة بخطوة لإعداد عملك كمصفف شعر مستقل.',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    locale: 'ar', sortId: 101,
+    tags: { category: 'Freelance', topic: 'Business Setup' },
+    user: {"data":{"id":6,"attributes":{"name":"Amara Nasser","jobTitle":"Independent Beauty Professional & Freelance Career Mentor","date":"10 July 2025","time":"9 min.","picture":{"data":{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}}}}},
+    iconOwner: {"data":[{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}]},
+    category: {"data":{"id":19,"attributes":{"name":"Freelance Beauty"}}},
+    picture: {"data":{"attributes":{"url":"/images/blog/freelance-hairstylist-business-setup.webp","alternativeText":"Freelance hairstylist business setup guide"}}},
+    image: {"data":[{"attributes":{"url":"/images/blog/freelance-hairstylist-business-setup.webp","formats":{"large":{"url":"/images/blog/freelance-hairstylist-business-setup.webp"}}}}]},
+  },
+};
+
+const settingPricesArticleAr: LocalBlogPost = {
+  id: 219,
+  attributes: {
+    title: 'تحديد الأسعار كمحترف تجميل مستقل',
+    slug: 'setting-prices-independent-beauty-pro',
+    description: 'دليل لتسعير خدماتك كمحترف تجميل مستقل يضمن ربحية مستدامة.',
+    aboutPosts: `
+<h2>التسعير الصحيح أساس العمل المستقل المربح</h2>
+<p>تحديد أسعارك أحد أهم القرارات التجارية. السعر المنخفض جدًا يعني عمل أكثر بمقابل أقل. المرتفع جدًا يعني فقدان عملاء. الصحيح يعني دخلًا مستدامًا.</p>
+
+<h2>عوامل التسعير الأساسية</h2>
+<ul>
+<li><strong>التكاليف:</strong> احسب تكاليفك الثابتة والمتغيرة.</li>
+<li><strong>السوق:</strong> ابحث عن أسعار المنافسين في منطقتك.</li>
+<li><strong>القيمة:</strong> خبرتك وجودة عملك ومكانتك.</li>
+</ul>
+
+<h2>متى ترفع أسعارك</h2>
+<p>إذا كان جدولك ممتلئًا باستمرار وترفض عملاء، فهذه إشارة لرفع أسعارك بنسبة 10-15%.</p>
+`,
+    metaTitle: 'تسعير خدمات محترف التجميل المستقل | ديزي',
+    metaDescription: 'دليل تسعير خدمات محترف التجميل المستقل لضمان ربحية مستدامة.',
+    createdAt: '2025-07-10T05:00:00.000Z', updatedAt: '2025-07-10T05:00:00.000Z', publishedAt: '2025-07-10T05:00:00.000Z',
+    locale: 'ar', sortId: 102,
+    tags: { category: 'Freelance', topic: 'Pricing' },
+    user: {"data":{"id":6,"attributes":{"name":"Amara Nasser","jobTitle":"Independent Beauty Professional & Freelance Career Mentor","date":"10 July 2025","time":"9 min.","picture":{"data":{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}}}}},
+    iconOwner: {"data":[{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}]},
+    category: {"data":{"id":19,"attributes":{"name":"Freelance Beauty"}}},
+    picture: {"data":{"attributes":{"url":"/images/blog/setting-prices-independent-beauty-pro.webp","alternativeText":"Setting prices as an independent beauty professional"}}},
+    image: {"data":[{"attributes":{"url":"/images/blog/setting-prices-independent-beauty-pro.webp","formats":{"large":{"url":"/images/blog/setting-prices-independent-beauty-pro.webp"}}}}]},
+  },
+};
+
+const personalBrandArticleAr: LocalBlogPost = {
+  id: 220,
+  attributes: {
+    title: 'بناء علامتك الشخصية في صناعة التجميل',
+    slug: 'personal-brand-beauty-industry',
+    description: 'دليل لبناء علامة شخصية قوية كمحترف تجميل مستقل تجذب عملاء مثاليين.',
+    aboutPosts: `
+<h2>علامتك الشخصية هي أقوى أداة تسويقية لديك</h2>
+<p>كمحترف تجميل مستقل، أنت لست مجرد مقدم خدمة - أنت علامة تجارية. علامتك الشخصية هي ما يميّزك عن آلاف المحترفين الآخرين ويجذب العملاء المثاليين إليك.</p>
+
+<h2>عناصر العلامة الشخصية القوية</h2>
+<ul>
+<li><strong>التخصص:</strong> حدد ما تتميز به وركّز عليه.</li>
+<li><strong>التواجد الرقمي:</strong> ملف Instagram احترافي وصفحة حجز على <a href="/ar/features/professional/booking-management">ديزي</a>.</li>
+<li><strong>الاتساق:</strong> رسالة وصورة متسقة عبر جميع القنوات.</li>
+</ul>
+`,
+    metaTitle: 'بناء العلامة الشخصية في التجميل | ديزي',
+    metaDescription: 'دليل بناء علامة شخصية قوية كمحترف تجميل مستقل.',
+    createdAt: '2025-07-10T05:00:00.000Z', updatedAt: '2025-07-10T05:00:00.000Z', publishedAt: '2025-07-10T05:00:00.000Z',
+    locale: 'ar', sortId: 103,
+    tags: { category: 'Freelance', topic: 'Branding' },
+    user: {"data":{"id":6,"attributes":{"name":"Amara Nasser","jobTitle":"Independent Beauty Professional & Freelance Career Mentor","date":"10 July 2025","time":"9 min.","picture":{"data":{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}}}}},
+    iconOwner: {"data":[{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}]},
+    category: {"data":{"id":19,"attributes":{"name":"Freelance Beauty"}}},
+    picture: {"data":{"attributes":{"url":"/images/blog/personal-brand-beauty-industry.webp","alternativeText":"Building a personal brand in the beauty industry"}}},
+    image: {"data":[{"attributes":{"url":"/images/blog/personal-brand-beauty-industry.webp","formats":{"large":{"url":"/images/blog/personal-brand-beauty-industry.webp"}}}}]},
+  },
+};
+
+const findingClientsArticleAr: LocalBlogPost = {
+  id: 221,
+  attributes: {
+    title: 'إيجاد العملاء كمحترف تجميل مستقل',
+    slug: 'finding-clients-freelance-beauty',
+    description: 'استراتيجيات عملية لإيجاد وجذب العملاء كمحترف تجميل مستقل.',
+    aboutPosts: `
+<h2>اكتساب العملاء هو مفتاح نجاح العمل المستقل</h2>
+<p>أفضل مهارات التجميل في العالم لا تساوي شيئًا بدون عملاء يحجزون معك. هذا الدليل يغطي استراتيجيات مُثبتة لبناء قاعدة عملاء قوية.</p>
+
+<h2>قنوات اكتساب العملاء الأكثر فعالية</h2>
+<ul>
+<li><strong>الإحالات:</strong> العملاء الراضون هم أفضل مصدر إحالات. اطلب منهم بشكل مباشر.</li>
+<li><strong>وسائل التواصل الاجتماعي:</strong> Instagram وTikTok لعرض عملك.</li>
+<li><strong>الأسواق الإلكترونية:</strong> كن مرئيًا حيث يبحث العملاء عبر منصات مثل <a href="/ar/features/professional/booking-management">ديزي</a>.</li>
+<li><strong>التواصل المحلي:</strong> شراكات مع أعمال مكملة في منطقتك.</li>
+</ul>
+`,
+    metaTitle: 'إيجاد عملاء التجميل المستقلين | ديزي',
+    metaDescription: 'استراتيجيات عملية لإيجاد عملاء كمحترف تجميل مستقل.',
+    createdAt: '2025-07-10T05:00:00.000Z', updatedAt: '2025-07-10T05:00:00.000Z', publishedAt: '2025-07-10T05:00:00.000Z',
+    locale: 'ar', sortId: 104,
+    tags: { category: 'Freelance', topic: 'Client Acquisition' },
+    user: {"data":{"id":6,"attributes":{"name":"Amara Nasser","jobTitle":"Independent Beauty Professional & Freelance Career Mentor","date":"10 July 2025","time":"9 min.","picture":{"data":{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}}}}},
+    iconOwner: {"data":[{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}]},
+    category: {"data":{"id":19,"attributes":{"name":"Freelance Beauty"}}},
+    picture: {"data":{"attributes":{"url":"/images/blog/finding-clients-freelance-beauty.webp","alternativeText":"Finding clients as a freelance beauty professional"}}},
+    image: {"data":[{"attributes":{"url":"/images/blog/finding-clients-freelance-beauty.webp","formats":{"large":{"url":"/images/blog/finding-clients-freelance-beauty.webp"}}}}]},
+  },
+};
+
+const insuranceGuideArticleAr: LocalBlogPost = {
+  id: 222,
+  attributes: {
+    title: 'دليل التأمين لمحترفي التجميل المستقلين',
+    slug: 'freelance-beauty-professional-insurance',
+    description: 'دليل شامل لأنواع التأمين التي يحتاجها محترفو التجميل المستقلون لحماية أنفسهم وعملهم.',
+    aboutPosts: `
+<h2>التأمين ليس اختياريًا للمحترفين المستقلين</h2>
+<p>بدون حماية صاحب عمل، أنت مسؤول شخصيًا عن أي حوادث أو أضرار. التأمين المناسب يحميك ماليًا ويمنحك راحة البال.</p>
+
+<h2>أنواع التأمين الأساسية</h2>
+<ul>
+<li><strong>تأمين المسؤولية المهنية:</strong> يغطي المطالبات الناشئة عن خدماتك.</li>
+<li><strong>تأمين الممتلكات:</strong> يحمي أدواتك ومعداتك.</li>
+<li><strong>تأمين دخل العجز:</strong> يحمي دخلك إذا لم تستطع العمل.</li>
+</ul>
+`,
+    metaTitle: 'تأمين محترفي التجميل المستقلين | ديزي',
+    metaDescription: 'دليل أنواع التأمين لمحترفي التجميل المستقلين.',
+    createdAt: '2025-07-10T05:00:00.000Z', updatedAt: '2025-07-10T05:00:00.000Z', publishedAt: '2025-07-10T05:00:00.000Z',
+    locale: 'ar', sortId: 105,
+    tags: { category: 'Freelance', topic: 'Insurance' },
+    user: {"data":{"id":6,"attributes":{"name":"Amara Nasser","jobTitle":"Independent Beauty Professional & Freelance Career Mentor","date":"10 July 2025","time":"9 min.","picture":{"data":{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}}}}},
+    iconOwner: {"data":[{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}]},
+    category: {"data":{"id":19,"attributes":{"name":"Freelance Beauty"}}},
+    picture: {"data":{"attributes":{"url":"/images/blog/freelance-beauty-professional-insurance.webp","alternativeText":"Insurance guide for freelance beauty professionals"}}},
+    image: {"data":[{"attributes":{"url":"/images/blog/freelance-beauty-professional-insurance.webp","formats":{"large":{"url":"/images/blog/freelance-beauty-professional-insurance.webp"}}}}]},
+  },
+};
+
+const taxGuideArticleAr: LocalBlogPost = {
+  id: 223,
+  attributes: {
+    title: 'دليل الضرائب لمحترفي التجميل المستقلين',
+    slug: 'tax-guide-freelance-beauty-professionals',
+    description: 'دليل عملي للتعامل مع الضرائب كمحترف تجميل مستقل.',
+    aboutPosts: `
+<h2>فهم التزاماتك الضريبية كمحترف مستقل</h2>
+<p>الضرائب أحد أهم جوانب إدارة عمل مستقل. فهم التزاماتك يوفر عليك المال ويجنبك المشاكل. تتبّع إيراداتك ونفقاتك بدقة عبر أدوات مثل <a href="/ar/features/professional/analytics-reports">تحليلات ديزي</a>.</p>
+
+<h2>نصائح ضريبية أساسية</h2>
+<ul>
+<li><strong>سجّل كل شيء:</strong> احتفظ بسجلات دقيقة لكل إيراد ونفقة.</li>
+<li><strong>خصّص للضرائب:</strong> احتفظ بـ 25-30% من كل دفعة جانبًا.</li>
+<li><strong>اعرف خصوماتك:</strong> المعدات والمنتجات والتنقل والتعليم المستمر.</li>
+</ul>
+`,
+    metaTitle: 'دليل الضرائب لمحترفي التجميل | ديزي',
+    metaDescription: 'دليل عملي للضرائب كمحترف تجميل مستقل.',
+    createdAt: '2025-07-10T05:00:00.000Z', updatedAt: '2025-07-10T05:00:00.000Z', publishedAt: '2025-07-10T05:00:00.000Z',
+    locale: 'ar', sortId: 106,
+    tags: { category: 'Freelance', topic: 'Tax' },
+    user: {"data":{"id":6,"attributes":{"name":"Amara Nasser","jobTitle":"Independent Beauty Professional & Freelance Career Mentor","date":"10 July 2025","time":"9 min.","picture":{"data":{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}}}}},
+    iconOwner: {"data":[{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}]},
+    category: {"data":{"id":19,"attributes":{"name":"Freelance Beauty"}}},
+    picture: {"data":{"attributes":{"url":"/images/blog/tax-guide-freelance-beauty-professionals.webp","alternativeText":"Tax guide for freelance beauty professionals"}}},
+    image: {"data":[{"attributes":{"url":"/images/blog/tax-guide-freelance-beauty-professionals.webp","formats":{"large":{"url":"/images/blog/tax-guide-freelance-beauty-professionals.webp"}}}}]},
+  },
+};
+
+const scalingFreelancerArticleAr: LocalBlogPost = {
+  id: 224,
+  attributes: {
+    title: 'التوسع من مستقل إلى صاحب عمل تجميل',
+    slug: 'scaling-freelancer-to-beauty-business',
+    description: 'دليل للانتقال من العمل المستقل إلى بناء عمل تجميل قابل للتوسع.',
+    aboutPosts: `
+<h2>متى وكيف تتوسع من مستقل لصاحب عمل</h2>
+<p>إذا كان جدولك ممتلئًا باستمرار وترفض عملاء، فقد حان الوقت للتفكير في التوسع. الانتقال من مستقل فردي لصاحب عمل تحول كبير يتطلب تخطيطًا.</p>
+
+<h2>خطوات التوسع</h2>
+<ul>
+<li><strong>توظيف مساعد:</strong> ابدأ بتوظيف شخص واحد لمساعدتك.</li>
+<li><strong>بناء أنظمة:</strong> وثّق عملياتك واستخدم <a href="/ar/features/professional/booking-management">منصة إدارة</a> شاملة.</li>
+<li><strong>بناء العلامة التجارية:</strong> حوّل علامتك الشخصية لعلامة عمل تجاري.</li>
+</ul>
+`,
+    metaTitle: 'التوسع من مستقل لعمل تجميل | ديزي',
+    metaDescription: 'دليل الانتقال من العمل المستقل لبناء عمل تجميل قابل للتوسع.',
+    createdAt: '2026-04-01T05:00:00.000Z', updatedAt: '2026-04-01T05:00:00.000Z', publishedAt: '2026-04-01T05:00:00.000Z',
+    locale: 'ar', sortId: 107,
+    tags: { category: 'Freelance', topic: 'Scaling' },
+    user: {"data":{"id":6,"attributes":{"name":"Amara Nasser","jobTitle":"Independent Beauty Professional & Freelance Career Mentor","date":"10 July 2025","time":"9 min.","picture":{"data":{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}}}}},
+    iconOwner: {"data":[{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}]},
+    category: {"data":{"id":19,"attributes":{"name":"Freelance Beauty"}}},
+    picture: {"data":{"attributes":{"url":"/images/blog/scaling-freelancer-to-beauty-business.webp","alternativeText":"Scaling from freelancer to beauty business owner"}}},
+    image: {"data":[{"attributes":{"url":"/images/blog/scaling-freelancer-to-beauty-business.webp","formats":{"large":{"url":"/images/blog/scaling-freelancer-to-beauty-business.webp"}}}}]},
+  },
+};
+
 // ---------------------------------------------------------------------------
 // Exports
 // ---------------------------------------------------------------------------
@@ -1428,4 +1726,14 @@ export const freelanceBeautyProfessionalArticles: LocalBlogPost[] = [
   insuranceGuideArticle,
   taxGuideArticle,
   scalingFreelancerArticle,
+,
+  freelanceStylistSchedulingArticleAr,
+  goingFreelanceArticleAr,
+  freelanceBusinessSetupArticleAr,
+  settingPricesArticleAr,
+  personalBrandArticleAr,
+  findingClientsArticleAr,
+  insuranceGuideArticleAr,
+  taxGuideArticleAr,
+  scalingFreelancerArticleAr,
 ];
