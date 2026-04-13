@@ -82,7 +82,7 @@ export function GlossaryPageClient({ entry, slug, locale }: Props) {
           <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">
             {t.whatIs} {entry.term}{t.questionMark}
           </h1>
-          <p className="text-lg leading-relaxed text-[#455150]" data-geo-answer="true">
+          <p className="text-lg leading-relaxed text-[#455150] [&_a]:text-primary [&_a]:underline [&_a]:hover:text-primary/80" data-geo-answer="true">
             <dfn className="not-italic font-semibold text-[#172524]">
               {entry.term}
             </dfn>{' '}
@@ -104,7 +104,7 @@ export function GlossaryPageClient({ entry, slug, locale }: Props) {
       {/* Extended Description */}
       <section className="mx-auto max-w-4xl px-4 py-12">
         <p
-          className="text-lg leading-relaxed text-[#455150]"
+          className="text-lg leading-relaxed text-[#455150] [&_a]:text-primary [&_a]:underline [&_a]:hover:text-primary/80"
           dangerouslySetInnerHTML={{ __html: sanitize(entry.extendedDescription) }}
         />
       </section>
@@ -177,7 +177,7 @@ export function GlossaryPageClient({ entry, slug, locale }: Props) {
           {t.howImplement} {entry.term}{t.questionMark}
         </h2>
         <p
-          className="text-lg leading-relaxed text-[#455150]"
+          className="text-lg leading-relaxed text-[#455150] [&_a]:text-primary [&_a]:underline [&_a]:hover:text-primary/80"
           dangerouslySetInnerHTML={{ __html: sanitize(entry.howDaisyImplements) }}
         />
       </section>
