@@ -51,16 +51,17 @@ export default function GlossaryIndex({ params }: { params: { locale: string } }
       />
       <PageBreadcrumbSchema
         locale={locale}
-        items={[{ name: 'Glossary', url: 'https://www.jointhedaisy.com/glossary' }]}
+        items={[{ name: locale === 'ar' ? 'مسرد المصطلحات' : 'Glossary', url: 'https://www.jointhedaisy.com/glossary' }]}
       />
       <section className="bg-[#F8F5F3] px-4 py-16 md:py-24">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">
-            Salon Software Glossary
+            {locale === 'ar' ? 'مسرد مصطلحات برامج الصالونات' : 'Salon Software Glossary'}
           </h1>
           <p className="text-lg text-[#455150]" data-geo-answer="true">
-            Key terms and definitions for beauty business technology, explained
-            in plain language.
+            {locale === 'ar'
+              ? 'المصطلحات والتعريفات الرئيسية لتقنيات أعمال التجميل، مشروحة بلغة بسيطة.'
+              : 'Key terms and definitions for beauty business technology, explained in plain language.'}
           </p>
         </div>
       </section>
@@ -74,7 +75,7 @@ export default function GlossaryIndex({ params }: { params: { locale: string } }
               className="group rounded-2xl border border-[#E8E9E9] bg-white p-6 shadow-sm transition-all hover:border-primary/20 hover:shadow-md"
             >
               <h2 className="mb-2 text-xl font-bold text-[#172524] group-hover:text-primary">
-                What is {entry.term}?
+                {locale === 'ar' ? `ما هو ${entry.term}؟` : `What is ${entry.term}?`}
               </h2>
               <p className="text-sm leading-relaxed text-[#455150]">
                 <dfn className="not-italic font-medium text-[#172524]">

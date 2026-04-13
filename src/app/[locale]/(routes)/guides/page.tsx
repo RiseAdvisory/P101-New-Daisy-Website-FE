@@ -51,16 +51,17 @@ export default function GuidesIndex({ params }: { params: { locale: string } }) 
       />
       <PageBreadcrumbSchema
         locale={locale}
-        items={[{ name: 'Guides', url: 'https://www.jointhedaisy.com/guides' }]}
+        items={[{ name: locale === 'ar' ? 'أدلة' : 'Guides', url: 'https://www.jointhedaisy.com/guides' }]}
       />
       <section className="bg-[#F8F5F3] px-4 py-16 md:py-24">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">
-            Salon Business Guides
+            {locale === 'ar' ? 'أدلة أعمال الصالونات' : 'Salon Business Guides'}
           </h1>
           <p className="text-lg text-[#455150]" data-geo-answer="true">
-            Step-by-step guides to help you grow your beauty business, reduce
-            costs, and make smarter decisions.
+            {locale === 'ar'
+              ? 'أدلة خطوة بخطوة لمساعدتك في تنمية أعمال التجميل الخاصة بك، وتقليل التكاليف، واتخاذ قرارات أذكى.'
+              : 'Step-by-step guides to help you grow your beauty business, reduce costs, and make smarter decisions.'}
           </p>
         </div>
       </section>
@@ -80,7 +81,9 @@ export default function GuidesIndex({ params }: { params: { locale: string } }) 
                 {guide.answer}
               </p>
               <div className="text-sm font-medium text-primary">
-                Read full guide ({guide.steps.length} steps) &rarr;
+                {locale === 'ar'
+                  ? `اقرأ الدليل الكامل (${guide.steps.length} خطوات) \u2190`
+                  : `Read full guide (${guide.steps.length} steps) \u2192`}
               </div>
             </Link>
           ))}
