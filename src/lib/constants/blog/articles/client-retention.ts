@@ -1182,102 +1182,102 @@ const clientRetentionRateArticleAr: LocalBlogPost = {
     description:
       'تعلم كيف تحسب معدل احتفاظ عملاء صالونك بدقة وافهم معايير الصناعة ونفّذ استراتيجيات مثبتة تحول الزوار لأول مرة إلى عملاء منتظمين مخلصين يعيدون الحجز باستمرار.',
     aboutPosts: `
-<h2>What Is احتفاظ العملاء Rate and Why It Determines Salon Profitability</h2>
-<p>احتفاظ العملاء rate is the percentage of existing clients who return to your salon within a defined period, typically 90 days. It is the single most important metric for salon profitability because acquiring a new client costs five to seven times more than keeping an existing one. A salon with a 30% retention rate must constantly spend on marketing to fill chairs, while a salon with a 70% retention rate builds predictable, compounding revenue month after month.</p>
-<p>According to a 2025 study by the Professional Beauty Association, the average salon retains just 41% of first-time visitors for a second appointment. Top-performing salons achieve 65-80%. That gap represents tens of thousands in lost revenue annually for a typical salon. The good news is that retention is a skill, not luck - and every percentage point improvement flows directly to your bottom line.</p>
-<p>This guide gives you the exact formula to calculate your retention rate, shows you where the industry benchmarks sit, and walks through the highest-impact strategies to move your number upward.</p>
+<h2>ما هو معدل احتفاظ العملاء ولماذا يحدد ربحية الصالون</h2>
+<p>معدل احتفاظ العملاء هو نسبة العملاء الحاليين الذين يعودون لصالونك خلال فترة محددة، عادةً 90 يوماً. إنه أهم مقياس لربحية الصالون لأن اكتساب عميل جديد يكلف خمسة إلى سبعة أضعاف تكلفة الاحتفاظ بعميل حالي. صالون بمعدل احتفاظ 30% يجب أن ينفق باستمرار على التسويق لملء الكراسي، بينما صالون بمعدل احتفاظ 70% يبني إيرادات متوقعة ومتراكمة شهراً بعد شهر.</p>
+<p>وفقاً لدراسة 2025 من جمعية التجميل المهنية، يحتفظ الصالون المتوسط بـ 41% فقط من الزوار لأول مرة لموعد ثانٍ. الصالونات الأعلى أداءً تحقق 65-80%. تلك الفجوة تمثل عشرات الآلاف في الإيرادات المفقودة سنوياً لصالون نموذجي. الخبر السار أن الاحتفاظ مهارة وليس حظاً - وكل نقطة مئوية تحسين تتدفق مباشرة لصافي أرباحك.</p>
+<p>يمنحك هذا الدليل الصيغة الدقيقة لحساب معدل احتفاظك، ويوضح أين تقف معايير الصناعة، ويتناول الاستراتيجيات الأعلى تأثيراً لتحريك رقمك للأعلى.</p>
 
-<h2>How to Calculate Your Salon احتفاظ العملاء Rate</h2>
-<p>The retention rate formula is straightforward, but precision matters. Here is the standard calculation used by salon business consultants:</p>
-<p><strong>Retention Rate = ((Clients at End of Period &minus; New Clients During Period) &divide; Clients at Start of Period) &times; 100</strong></p>
-<p>For example, if you started the quarter with 200 active clients, gained 60 new clients, and ended with 210 active clients: ((210 &minus; 60) &divide; 200) &times; 100 = 75% retention rate.</p>
+<h2>كيف تحسب معدل احتفاظ عملاء صالونك</h2>
+<p>صيغة معدل الاحتفاظ واضحة لكن الدقة مهمة. إليك الحساب القياسي المستخدم من استشاريي أعمال الصالونات:</p>
+<p><strong>معدل الاحتفاظ = ((العملاء في نهاية الفترة &minus; العملاء الجدد خلال الفترة) &divide; العملاء في بداية الفترة) &times; 100</strong></p>
+<p>مثال: إذا بدأت الربع بـ 200 عميل نشط واكتسبت 60 عميلاً جديداً وانتهيت بـ 210 عملاء نشطين: ((210 &minus; 60) &divide; 200) &times; 100 = 75% معدل احتفاظ.</p>
 
-<h3>Defining "Active Client"</h3>
-<p>Before calculating, you need a clear definition of an active client. The industry standard is any client who has visited at least once in the last 90 days. Clients who last visited 91+ days ago are considered lapsed. Some salons with longer service cycles (quarterly colour appointments, for example) extend this window to 120 days. Choose one definition and apply it consistently.</p>
+<h3>تعريف "العميل النشط"</h3>
+<p>قبل الحساب، تحتاج تعريفاً واضحاً للعميل النشط. المعيار الصناعي هو أي عميل زار مرة واحدة على الأقل في آخر 90 يوماً. العملاء الذين زاروا آخر مرة قبل 91+ يوماً يُعتبرون منقطعين. بعض الصالونات ذات دورات خدمة أطول (مواعيد صبغة ربع سنوية مثلاً) تمدد هذه النافذة إلى 120 يوماً. اختر تعريفاً واحداً وطبقه باتساق.</p>
 
-<h3>Calculating by Time Period</h3>
-<p>Calculate retention monthly and quarterly. Monthly tracking shows you trends quickly enough to react. Quarterly calculations smooth out seasonal fluctuations and give a more accurate picture. Compare the same quarter year-over-year to identify growth or decline patterns.</p>
+<h3>الحساب حسب الفترة الزمنية</h3>
+<p>احسب الاحتفاظ شهرياً وربع سنوياً. التتبع الشهري يُظهر الاتجاهات بسرعة كافية للتفاعل. الحسابات الربع سنوية تنعم التقلبات الموسمية وتعطي صورة أدق. قارن نفس الربع سنة بسنة لتحديد أنماط النمو أو الانخفاض.</p>
 
-<h3>Segment Your Retention Data</h3>
-<p>Your overall retention rate masks important differences. Break it down by service type (colour clients typically retain better than cut-only clients), stylist (individual retention rates reveal coaching opportunities), acquisition source (referral clients retain at 2-3x the rate of deal-site clients), and price tier (premium clients often retain better because they are less price-sensitive).</p>
-<p>Platforms like <a href="/ar/features/business/analytics-reports">أدوات ديزي analytics dashboard</a> calculate retention rates automatically across all these segments, saving hours of manual spreadsheet work and surfacing insights you would otherwise miss.</p>
+<h3>قسّم بيانات احتفاظك</h3>
+<p>معدل احتفاظك الإجمالي يخفي فروقات مهمة. قسّمه حسب نوع الخدمة (عملاء الصبغة عادةً يُحتفظ بهم أفضل من عملاء القص فقط)، والمصفف (معدلات الاحتفاظ الفردية تكشف فرص التدريب)، ومصدر الاكتساب (عملاء الإحالة يُحتفظ بهم بنسبة 2-3 أضعاف عملاء مواقع العروض)، والفئة السعرية (العملاء المتميزون غالباً يُحتفظ بهم أفضل لأنهم أقل حساسية للسعر).</p>
+<p>منصات مثل <a href="/ar/features/business/analytics-reports">لوحة تحليلات ديزي</a> تحسب معدلات الاحتفاظ تلقائياً عبر جميع هذه الشرائح، موفرةً ساعات من العمل اليدوي على جداول البيانات ومظهرةً رؤى كنت ستفوتها لولا ذلك.</p>
 
-<h2>Industry Benchmarks: Where Does Your Salon Stand?</h2>
-<p>Knowing your retention rate is meaningless without context. Here are the benchmarks based on aggregated salon industry data from 2024-2025:</p>
+<h2>معايير الصناعة: أين يقف صالونك؟</h2>
+<p>معرفة معدل احتفاظك بلا معنى بدون سياق. إليك المعايير بناءً على بيانات صناعة الصالونات المجمعة من 2024-2025:</p>
 <ul>
-<li><strong>Below 30%:</strong> Critical - your salon is essentially a revolving door. Urgent intervention needed in service quality, تجربة العميل, or rebooking processes.</li>
-<li><strong>30-45%:</strong> Below average - typical of salons that rely heavily on new-client promotions and discount platforms. Revenue is unpredictable.</li>
-<li><strong>45-60%:</strong> Average - you are retaining a reasonable base but leaving significant revenue on the table. Targeted improvements can move you into the high-performance range.</li>
-<li><strong>60-75%:</strong> Above average - your salon delivers a good experience and has some reنظام الحجزs in place. Fine-tuning will yield outsized returns.</li>
-<li><strong>75%+:</strong> Top-performing - your clients are loyal, your revenue is predictable, and your marketing costs are low relative to competitors. Focus on maintaining this level while growing average ticket value.</li>
+<li><strong>أقل من 30%:</strong> حرج - صالونك هو أساساً باب دوار. تدخل عاجل مطلوب في جودة الخدمة أو تجربة العميل أو عمليات إعادة الحجز.</li>
+<li><strong>30-45%:</strong> أقل من المتوسط - نموذجي للصالونات التي تعتمد بشدة على عروض العملاء الجدد ومنصات الخصومات. الإيرادات غير متوقعة.</li>
+<li><strong>45-60%:</strong> متوسط - أنت تحتفظ بقاعدة معقولة لكن تترك إيرادات كبيرة. تحسينات مستهدفة يمكن أن تنقلك لنطاق الأداء العالي.</li>
+<li><strong>60-75%:</strong> فوق المتوسط - صالونك يقدم تجربة جيدة ولديه بعض أنظمة إعادة الحجز. الضبط الدقيق سيحقق عوائد كبيرة.</li>
+<li><strong>75%+:</strong> أداء متميز - عملاؤك مخلصون وإيراداتك يمكن التنبؤ بها وتكاليف تسويقك منخفضة نسبةً للمنافسين. ركز على الحفاظ على هذا المستوى مع زيادة متوسط قيمة الفاتورة.</li>
 </ul>
 
-<h2>The Revenue Impact of Retention Improvements</h2>
-<p>Small retention improvements create large revenue gains because of the compounding effect. Consider a salon with 500 active clients, an average ticket of AED 250, and clients who visit every 6 weeks.</p>
-<p>At 40% retention, you retain 200 clients generating approximately AED 433,000 annually from repeat business. At 55% retention, you retain 275 clients generating approximately AED 596,000 - an increase of AED 163,000 from a 15-point retention improvement. That additional revenue requires zero extra marketing spend because these are clients who already know and like your salon.</p>
+<h2>الأثر على الإيرادات من تحسينات الاحتفاظ</h2>
+<p>تحسينات الاحتفاظ الصغيرة تخلق مكاسب إيرادات كبيرة بسبب التأثير المركب. فكر في صالون بـ 500 عميل نشط ومتوسط فاتورة 250 درهماً وعملاء يزورون كل 6 أسابيع.</p>
+<p>بمعدل احتفاظ 40%، تحتفظ بـ 200 عميل يولدون حوالي 433,000 درهم سنوياً من الأعمال المتكررة. بمعدل احتفاظ 55%، تحتفظ بـ 275 عميلاً يولدون حوالي 596,000 درهم - زيادة قدرها 163,000 درهم من تحسين الاحتفاظ بـ 15 نقطة. تلك الإيرادات الإضافية لا تتطلب أي إنفاق تسويقي إضافي لأن هؤلاء عملاء يعرفون صالونك ويحبونه بالفعل.</p>
 
-<h2>Seven Strategies to Improve Salon احتفاظ العملاء</h2>
+<h2>سبع استراتيجيات لتحسين احتفاظ عملاء الصالون</h2>
 
-<h3>Strategy 1: Rebook Before They Leave the Chair</h3>
-<p>The single highest-impact retention tactic is rebooking clients before they walk out the door. When a client is sitting in your chair with fresh results they love, the emotional motivation to rebook is at its peak. Every hour that passes after they leave reduces the likelihood of rebooking by approximately 10%. Train your team to make rebooking a natural part of the checkout conversation, not a pushy add-on. A simple "Your colour will look best if we refresh it in 6 weeks - shall I book you in for the 15th or the 22nd?" converts at 60-70% compared to less than 20% for follow-up messages sent days later.</p>
+<h3>الاستراتيجية 1: أعد الحجز قبل مغادرتهم الكرسي</h3>
+<p>أعلى تكتيك احتفاظ تأثيراً هو إعادة حجز العملاء قبل خروجهم من الباب. عندما يجلس العميل في كرسيك بنتائج جديدة يحبها، الدافع العاطفي لإعادة الحجز في ذروته. كل ساعة تمر بعد مغادرته تقلل احتمال إعادة الحجز بحوالي 10%. درب فريقك على جعل إعادة الحجز جزءاً طبيعياً من محادثة الدفع وليس إضافة مزعجة. عبارة بسيطة "لونك سيبدو أفضل إذا جددناه خلال 6 أسابيع - هل أحجز لك يوم 15 أم 22؟" تحول بنسبة 60-70% مقارنة بأقل من 20% لرسائل المتابعة المرسلة بعد أيام.</p>
 
-<h3>Strategy 2: Automate Your Follow-Up Sequence</h3>
-<p>For clients who do leave without rebooking, an automated follow-up sequence catches them before they drift to a competitor. The optimal sequence is: a thank-you message within 2 hours of their visit, a rebooking reminder at 3 weeks (for 6-week service cycles), and a "we miss you" message with a small incentive at 8 weeks. <a href="/ar/features/business/communication-tools">أدوات ديزي automated messaging</a> handles this entire sequence across WhatsApp, SMS, and email without any manual effort from your team.</p>
+<h3>الاستراتيجية 2: أتمت تسلسل المتابعة</h3>
+<p>للعملاء الذين يغادرون بدون إعادة حجز، تسلسل متابعة آلي يلتقطهم قبل انجرافهم لمنافس. التسلسل الأمثل: رسالة شكر خلال ساعتين من زيارتهم، وتذكير إعادة حجز عند 3 أسابيع (لدورات خدمة 6 أسابيع)، ورسالة "نفتقدك" مع حافز صغير عند 8 أسابيع. تتولى <a href="/ar/features/business/communication-tools">رسائل ديزي الآلية</a> هذا التسلسل بالكامل عبر واتساب والرسائل النصية والبريد الإلكتروني دون أي جهد يدوي من فريقك.</p>
 
-<h3>Strategy 3: Deliver Consistently Exceptional Service</h3>
-<p>No marketing tactic compensates for mediocre service. The fundamentals matter most: start on time, deliver the agreed result, maintain a clean and welcoming environment, remember personal details, and make every client feel valued. Consistency is key - one great visit followed by one average visit creates doubt. Clients return to salons where the experience is reliably excellent, not occasionally spectacular.</p>
+<h3>الاستراتيجية 3: قدم خدمة استثنائية باتساق</h3>
+<p>لا يوجد تكتيك تسويقي يعوض عن خدمة متوسطة. الأساسيات هي الأهم: ابدأ في الوقت المحدد، وقدم النتيجة المتفق عليها، وحافظ على بيئة نظيفة ومرحبة، وتذكر التفاصيل الشخصية، واجعل كل عميل يشعر بالتقدير. الاتساق هو المفتاح - زيارة رائعة تليها زيارة متوسطة تخلق شكاً. العملاء يعودون للصالونات حيث التجربة ممتازة بشكل موثوق، وليس رائعة أحياناً.</p>
 
-<h3>Strategy 4: Build Personal Connections Through Client Records</h3>
-<p>Clients stay loyal when they feel known. Maintain detailed client records that go beyond service history: preferred beverages, children's names, upcoming holidays, sensitivities, and product preferences. When a client returns and you remember that she is training for a marathon or that her daughter just started university, you create an emotional bond that no competitor can replicate. Digital client profiles in platforms like <a href="/ar/features/business/booking-management">ديزي</a> make this information accessible to every team member, so the personal touch is consistent even when clients see different stylists.</p>
+<h3>الاستراتيجية 4: ابنِ روابط شخصية عبر سجلات العملاء</h3>
+<p>العملاء يبقون مخلصين عندما يشعرون بالمعرفة. حافظ على سجلات عملاء مفصلة تتجاوز تاريخ الخدمة: المشروبات المفضلة وأسماء الأطفال والإجازات القادمة والحساسيات وتفضيلات المنتجات. عندما يعود عميل وتتذكر أنها تتدرب لماراثون أو أن ابنتها بدأت الجامعة للتو، تخلق رابطاً عاطفياً لا يمكن لأي منافس تقليده. ملفات العملاء الرقمية في منصات مثل <a href="/ar/features/business/booking-management">ديزي</a> تجعل هذه المعلومات متاحة لكل عضو فريق، فاللمسة الشخصية متسقة حتى عندما يرى العملاء مصففين مختلفين.</p>
 
-<h3>Strategy 5: Implement a برنامج الولاءme That Rewards Frequency</h3>
-<p>برنامج الولاءmes work when they reward the behaviour you want - frequent visits. Points-per-visit programmes are effective because they create a tangible incentive to return rather than try a competitor. Structure your programme so clients earn meaningful rewards (a free treatment, a product) after 5-8 visits. Avoid percentage discounts as rewards because they train clients to expect lower prices. Instead, offer value-adds: a free conditioning treatment, an upgrade to premium products, or priority booking during peak times.</p>
+<h3>الاستراتيجية 5: طبق برنامج ولاء يكافئ التكرار</h3>
+<p>برامج الولاء تعمل عندما تكافئ السلوك الذي تريده - الزيارات المتكررة. برامج النقاط لكل زيارة فعالة لأنها تخلق حافزاً ملموساً للعودة بدلاً من تجربة منافس. هيكل برنامجك بحيث يكسب العملاء مكافآت ذات معنى (علاج مجاني، منتج) بعد 5-8 زيارات. تجنب خصومات النسبة المئوية كمكافآت لأنها تدرب العملاء على توقع أسعار أقل. بدلاً من ذلك، قدم قيمة مضافة: علاج ترطيب مجاني أو ترقية لمنتجات متميزة أو أولوية حجز خلال أوقات الذروة.</p>
 
-<h3>Strategy 6: Act on Feedback Immediately</h3>
-<p>Send a brief satisfaction survey 24 hours after each visit. Clients who rate their experience below expectations should receive a personal call from the manager within 24 hours. This intervention alone recovers 40-50% of clients who would otherwise never return. The key is speed and sincerity - acknowledging the issue, apologising without excuses, and offering a concrete resolution. Clients who have a problem resolved effectively are actually more loyal than clients who never experienced a problem.</p>
+<h3>الاستراتيجية 6: تصرف بناءً على الملاحظات فوراً</h3>
+<p>أرسل استبيان رضا موجز بعد 24 ساعة من كل زيارة. العملاء الذين يقيمون تجربتهم دون التوقعات يجب أن يتلقوا مكالمة شخصية من المدير خلال 24 ساعة. هذا التدخل وحده يستعيد 40-50% من العملاء الذين لن يعودوا أبداً لولا ذلك. المفتاح هو السرعة والصدق - الاعتراف بالمشكلة والاعتذار بدون أعذار وتقديم حل ملموس. العملاء الذين تُحل مشكلتهم بفعالية هم فعلياً أكثر ولاءً من العملاء الذين لم يواجهوا مشكلة أبداً.</p>
 
-<h3>Strategy 7: Create a VIP Experience for High-Value Clients</h3>
-<p>Identify your top 20% of clients by annual spend and create a differentiated experience for them: priority booking, exclusive promotions, first access to new services, a birthday gift, or a complimentary annual consultation. These clients generate a disproportionate share of your revenue and are worth investing in. A simple VIP text message - "As one of our most valued clients, we'd love to offer you first access to our new keratin treatment before we open bookings to everyone" - costs nothing but makes a powerful impression.</p>
+<h3>الاستراتيجية 7: أنشئ تجربة كبار شخصيات للعملاء ذوي القيمة العالية</h3>
+<p>حدد أفضل 20% من عملائك حسب الإنفاق السنوي وأنشئ تجربة مميزة لهم: أولوية حجز وعروض حصرية ووصول أولي للخدمات الجديدة وهدية عيد ميلاد أو استشارة سنوية مجانية. هؤلاء العملاء يولدون حصة غير متناسبة من إيراداتك ويستحقون الاستثمار فيهم. رسالة نصية بسيطة لكبار الشخصيات - "كأحد أعز عملائنا، نود أن نقدم لك أول وصول لعلاج الكيراتين الجديد قبل فتح الحجوزات للجميع" - لا تكلف شيئاً لكن تترك انطباعاً قوياً.</p>
 
-<h2>Tracking Retention with Technology</h2>
-<p>Manual retention tracking using spreadsheets is error-prone and time-consuming. Modern <a href="/ar/glossary/salon-management-software">salon platforms</a> calculate retention automatically and provide actionable insights:</p>
+<h2>تتبع الاحتفاظ بالتكنولوجيا</h2>
+<p>التتبع اليدوي للاحتفاظ باستخدام جداول البيانات عرضة للأخطاء ويستهلك الوقت. <a href="/ar/glossary/salon-management-software">منصات الصالون</a> الحديثة تحسب الاحتفاظ تلقائياً وتوفر رؤى قابلة للتنفيذ:</p>
 <ul>
-<li><strong>Automated retention rate calculation</strong> across client segments, stylists, and time periods.</li>
-<li><strong>At-risk client alerts</strong> that notify you when a regular client is approaching their lapse window, giving you time to intervene.</li>
-<li><strong>Stylist-level retention comparison</strong> that identifies which team members excel at keeping clients and whose clients tend to drop off.</li>
-<li><strong>Cohort analysis</strong> showing how clients acquired in a specific month retain over time, revealing whether your onboarding experience is improving.</li>
+<li><strong>حساب آلي لمعدل الاحتفاظ</strong> عبر شرائح العملاء والمصففين والفترات الزمنية.</li>
+<li><strong>تنبيهات العملاء المعرضين للخطر</strong> التي تشعرك عندما يقترب عميل منتظم من نافذة الانقطاع، مما يمنحك وقتاً للتدخل.</li>
+<li><strong>مقارنة الاحتفاظ على مستوى المصفف</strong> التي تحدد أي أعضاء الفريق يتفوقون في الاحتفاظ بالعملاء وعملاء من ينخفضون.</li>
+<li><strong>تحليل الأفواج</strong> يُظهر كيف يُحتفظ بالعملاء المكتسبين في شهر معين بمرور الوقت، مما يكشف ما إذا كانت تجربة الاستقبال تتحسن.</li>
 </ul>
-<p><a href="/ar/features/business/analytics-reports">أدوات ديزي analytics suite</a> provides all of these insights in a single dashboard. Combined with <a href="/ar/features/business/communication-tools">automated communication tools</a>, you can identify at-risk clients and trigger personalised outreach automatically - turning data into retained revenue without adding to your workload.</p>
+<p>توفر <a href="/ar/features/business/analytics-reports">مجموعة تحليلات ديزي</a> جميع هذه الرؤى في لوحة تحكم واحدة. مع <a href="/ar/features/business/communication-tools">أدوات التواصل الآلية</a>، يمكنك تحديد العملاء المعرضين للخطر وتفعيل تواصل مخصص تلقائياً - محولاً البيانات إلى إيرادات محتفظ بها دون إضافة لعبء عملك.</p>
 
-<h2>Common Retention Mistakes Salons Make</h2>
+<h2>أخطاء الاحتفاظ الشائعة التي ترتكبها الصالونات</h2>
 <ul>
-<li><strong>Focusing on new استقطاب العملاء over retention:</strong> Marketing budgets heavily weighted toward new clients while existing clients receive no proactive communication. Rebalance your spend: for every AED 1 spent on acquisition, invest AED 0.50 in retention.</li>
-<li><strong>Inconsistent service quality across stylists:</strong> If your best stylist retains 75% of clients but your newest team member retains 30%, you have a training gap, not a marketing problem.</li>
-<li><strong>No rebooking process:</strong> Leaving rebooking entirely to the client's initiative means relying on them to remember, find time, and take action. Make rebooking effortless and proactive.</li>
-<li><strong>Discounting to retain:</strong> Offering discounts to lapsed clients teaches them to leave and wait for a deal. Instead, add value - a complimentary add-on service or a product sample - which costs you less and does not erode your pricing.</li>
-<li><strong>Ignoring negative feedback:</strong> A dissatisfied client who receives no response is a lost client. A dissatisfied client who receives a personal, prompt resolution is often your most loyal advocate.</li>
+<li><strong>التركيز على اكتساب العملاء الجدد فوق الاحتفاظ:</strong> ميزانيات التسويق مثقلة بشدة نحو العملاء الجدد بينما العملاء الحاليون لا يتلقون تواصلاً استباقياً. أعد توازن إنفاقك: لكل درهم ينفق على الاكتساب، استثمر 0.50 درهم في الاحتفاظ.</li>
+<li><strong>جودة خدمة غير متسقة عبر المصففين:</strong> إذا كان أفضل مصفف لديك يحتفظ بـ 75% من العملاء لكن أحدث عضو فريق يحتفظ بـ 30%، لديك فجوة تدريب وليس مشكلة تسويق.</li>
+<li><strong>لا عملية لإعادة الحجز:</strong> ترك إعادة الحجز كلياً لمبادرة العميل يعني الاعتماد عليه للتذكر وإيجاد الوقت واتخاذ إجراء. اجعل إعادة الحجز سهلة واستباقية.</li>
+<li><strong>الخصم للاحتفاظ:</strong> تقديم خصومات للعملاء المنقطعين يعلمهم المغادرة وانتظار صفقة. بدلاً من ذلك، أضف قيمة - خدمة إضافية مجانية أو عينة منتج - التي تكلفك أقل ولا تآكل تسعيرك.</li>
+<li><strong>تجاهل الملاحظات السلبية:</strong> العميل غير الراضي الذي لا يتلقى رداً هو عميل مفقود. العميل غير الراضي الذي يتلقى حلاً شخصياً وسريعاً غالباً يصبح أكثر مؤيديك ولاءً.</li>
 </ul>
 
-<h2>Building a Retention-First Culture in Your Salon</h2>
-<p>Retention is not a marketing initiative - it is a culture. Every team member from the receptionist to the senior stylist plays a role. Build retention into your salon culture by making retention rates visible (share them weekly with the team), rewarding high retention (bonus structures that incentivise rebooking and client satisfaction), training on relationship skills (not just technical skills), and celebrating returning clients (a genuine "Welcome back, Sarah!" goes further than any برنامج الولاءme).</p>
-<p>When your entire team understands that keeping existing clients is more valuable than chasing new ones, every interaction becomes an opportunity to strengthen loyalty. Explore how <a href="/ar/features/business/team-management">أدوات ديزي team management tools</a> help you track individual retention performance and build accountability across your team.</p>
+<h2>بناء ثقافة الاحتفاظ أولاً في صالونك</h2>
+<p>الاحتفاظ ليس مبادرة تسويقية - إنه ثقافة. كل عضو فريق من موظف الاستقبال للمصفف الأول يلعب دوراً. ابنِ الاحتفاظ في ثقافة صالونك بجعل معدلات الاحتفاظ مرئية (شاركها أسبوعياً مع الفريق)، ومكافأة الاحتفاظ العالي (هياكل مكافآت تحفز إعادة الحجز ورضا العملاء)، والتدريب على مهارات العلاقات (ليس فقط المهارات الفنية)، والاحتفاء بالعملاء العائدين (عبارة "مرحباً بعودتك سارة!" الصادقة تذهب أبعد من أي برنامج ولاء).</p>
+<p>عندما يفهم فريقك بالكامل أن الاحتفاظ بالعملاء الحاليين أكثر قيمة من ملاحقة الجدد، كل تفاعل يصبح فرصة لتعزيز الولاء. استكشف كيف تساعدك <a href="/ar/features/business/team-management">أدوات إدارة الفريق من ديزي</a> على تتبع أداء الاحتفاظ الفردي وبناء المساءلة عبر فريقك.</p>
 
-<h2>Frequently Asked Questions</h2>
+<h2>الأسئلة الشائعة</h2>
 
-<h3>What is a good احتفاظ العملاء rate for a salon?</h3>
-<p>A good salon احتفاظ العملاء rate is 60% or higher, meaning six out of ten clients return within your defined active window (typically 90 days). Top-performing salons achieve 75-80%. The industry average sits around 41% for first-time visitors returning for a second appointment. If your rate is below 50%, focus on the fundamentals: service quality, rebooking at checkout, and automated follow-up communication.</p>
+<h3>ما هو معدل احتفاظ العملاء الجيد للصالون؟</h3>
+<p>معدل احتفاظ العملاء الجيد للصالون هو 60% أو أعلى، أي أن ستة من كل عشرة عملاء يعودون ضمن نافذتك النشطة المحددة (عادةً 90 يوماً). الصالونات الأعلى أداءً تحقق 75-80%. متوسط الصناعة يبلغ حوالي 41% لزوار المرة الأولى العائدين لموعد ثانٍ. إذا كان معدلك أقل من 50%، ركز على الأساسيات: جودة الخدمة وإعادة الحجز عند الدفع والتواصل الآلي للمتابعة.</p>
 
-<h3>How often should I measure my salon's retention rate?</h3>
-<p>Calculate retention monthly for trend visibility and quarterly for strategic planning. Monthly tracking lets you spot problems early - a sudden drop might indicate a staff change, service issue, or competitive threat. Quarterly calculations smooth out noise and give you a reliable number for benchmarking and goal-setting. Compare year-over-year to account for seasonal patterns.</p>
+<h3>كم مرة يجب أن أقيس معدل احتفاظ صالوني؟</h3>
+<p>احسب الاحتفاظ شهرياً لرؤية الاتجاهات وربع سنوياً للتخطيط الاستراتيجي. التتبع الشهري يتيح لك رصد المشاكل مبكراً - انخفاض مفاجئ قد يشير لتغيير في الموظفين أو مشكلة خدمة أو تهديد تنافسي. الحسابات الربع سنوية تنعم الضوضاء وتعطيك رقماً موثوقاً للمقارنة والأهداف. قارن سنة بسنة لمراعاة الأنماط الموسمية.</p>
 
-<h3>Does offering discounts help with احتفاظ العملاء?</h3>
-<p>Discounting is generally a poor retention strategy because it attracts price-sensitive clients who leave when the discount ends and trains existing clients to wait for deals. Instead, add value: complimentary add-on services, product samples, loyalty rewards, or a VIP experience. These approaches build genuine loyalty rather than temporary price-based compliance.</p>
+<h3>هل تقديم الخصومات يساعد في احتفاظ العملاء؟</h3>
+<p>الخصم عموماً استراتيجية احتفاظ ضعيفة لأنه يجذب عملاء حساسين للسعر يغادرون عند انتهاء الخصم ويدرب العملاء الحاليين على انتظار الصفقات. بدلاً من ذلك، أضف قيمة: خدمات إضافية مجانية أو عينات منتجات أو مكافآت ولاء أو تجربة كبار شخصيات. هذه الأساليب تبني ولاءً حقيقياً بدلاً من امتثال مؤقت مبني على السعر.</p>
 
-<h3>How can technology help improve my salon's retention rate?</h3>
-<p>Technology improves retention by automating the tasks that humans forget or deprioritise: sending rebooking reminders, identifying at-risk clients, tracking individual stylist retention rates, and delivering personalised communication at scale. <a href="/ar/features/business/analytics-reports">ديزي</a> combines analytics, automated messaging, and <a href="/ar/glossary/salon-customer-management">client management</a> in a single platform, making it possible for a small salon to deliver the personalised, proactive experience that keeps clients returning.</p>
+<h3>كيف يمكن للتكنولوجيا تحسين معدل احتفاظ صالوني؟</h3>
+<p>التكنولوجيا تحسن الاحتفاظ بأتمتة المهام التي ينساها البشر أو يقللون أولويتها: إرسال تذكيرات إعادة الحجز وتحديد العملاء المعرضين للخطر وتتبع معدلات احتفاظ كل مصفف وتقديم تواصل مخصص على نطاق واسع. تجمع <a href="/ar/features/business/analytics-reports">ديزي</a> التحليلات والرسائل الآلية و<a href="/ar/glossary/salon-customer-management">إدارة العملاء</a> في منصة واحدة، مما يتيح لصالون صغير تقديم التجربة المخصصة والاستباقية التي تبقي العملاء يعودون.</p>
 
-<h3>What is the difference between احتفاظ العملاء and client satisfaction?</h3>
-<p>Satisfaction measures how clients feel about a specific visit; retention measures whether they come back. A client can be satisfied but still not return because they forgot, moved, found a more convenient option, or were never prompted to rebook. High satisfaction is necessary but not sufficient for high retention. You need both a great experience and a proactive system to convert that satisfaction into repeat visits.</p>
+<h3>ما الفرق بين احتفاظ العملاء ورضا العملاء؟</h3>
+<p>الرضا يقيس كيف يشعر العملاء حول زيارة محددة؛ الاحتفاظ يقيس ما إذا كانوا يعودون. يمكن للعميل أن يكون راضياً لكن لا يعود لأنه نسي أو انتقل أو وجد خياراً أكثر ملاءمة أو لم يُطلب منه إعادة الحجز أبداً. الرضا العالي ضروري لكنه غير كافٍ للاحتفاظ العالي. تحتاج كلاً من تجربة رائعة ونظام استباقي لتحويل ذلك الرضا إلى زيارات متكررة.</p>
 `,
     metaTitle: 'معدل احتفاظ عملاء الصالون | ديزي',
     metaDescription:
