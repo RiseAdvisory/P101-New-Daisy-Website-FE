@@ -1,9 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import DOMPurify from 'dompurify';
 import { GlossaryEntry } from '@/lib/constants/glossary/glossaryData';
 import { FaqSchema } from '@/components/seo/FaqSchema';
 import { ComparisonBreadcrumbSchema } from '@/components/seo/ComparisonBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
+
+function sanitize(html: string): string {
+  return typeof window !== 'undefined' ? DOMPurify.sanitize(html) : html;
+}
 
 const uiStrings = {
   en: {
@@ -81,7 +86,7 @@ export function GlossaryPageClient({ entry, slug, locale }: Props) {
             <dfn className="not-italic font-semibold text-[#172524]">
               {entry.term}
             </dfn>{' '}
-            {entry.definition}
+            <span dangerouslySetInnerHTML={{ __html: sanitize(entry.definition) }} />
           </p>
           <div className="mt-8 overflow-hidden rounded-2xl">
             <Image
@@ -98,9 +103,10 @@ export function GlossaryPageClient({ entry, slug, locale }: Props) {
 
       {/* Extended Description */}
       <section className="mx-auto max-w-4xl px-4 py-12">
-        <p className="text-lg leading-relaxed text-[#455150]">
-          {entry.extendedDescription}
-        </p>
+        <p
+          className="text-lg leading-relaxed text-[#455150]"
+          dangerouslySetInnerHTML={{ __html: sanitize(entry.extendedDescription) }}
+        />
       </section>
 
       {/* Key Features Comparison Table */}
@@ -170,9 +176,10 @@ export function GlossaryPageClient({ entry, slug, locale }: Props) {
         <h2 className="mb-4 text-2xl font-bold text-[#172524]">
           {t.howImplement} {entry.term}{t.questionMark}
         </h2>
-        <p className="text-lg leading-relaxed text-[#455150]">
-          {entry.howDaisyImplements}
-        </p>
+        <p
+          className="text-lg leading-relaxed text-[#455150]"
+          dangerouslySetInnerHTML={{ __html: sanitize(entry.howDaisyImplements) }}
+        />
       </section>
 
       {/* FAQ */}
