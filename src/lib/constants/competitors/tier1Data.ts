@@ -4,6 +4,7 @@
 // =============================================================================
 
 import type { CompetitorData } from './competitorData';
+import type { I18nContent } from '../i18n';
 
 export const tier1Competitors: Record<string, CompetitorData> = {
   // ---------------------------------------------------------------------------
@@ -1507,3 +1508,13 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'Most direct competitor on AI capabilities. Key differentiation for Daisy: Arabic support (Zenoti has none despite GCC offices), transparent pricing, no contracts, SMB accessibility, and consumer marketplace/cashback for acquisition.',
   },
 };
+
+// ---------------------------------------------------------------------------
+// I18n-wrapped export — lazily resolved to avoid circular import
+// ---------------------------------------------------------------------------
+
+export function getTier1CompetitorsI18n(): I18nContent<Record<string, CompetitorData>> {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const { tier1CompetitorsAr } = require('./tier1Data.ar') as { tier1CompetitorsAr: Record<string, CompetitorData> };
+  return { en: tier1Competitors, ar: tier1CompetitorsAr };
+}

@@ -4,6 +4,7 @@
 // =============================================================================
 
 import type { CompetitorData } from './competitorData';
+import type { I18nContent } from '../i18n';
 
 export const tier3Competitors: Record<string, CompetitorData> = {
   // ---------------------------------------------------------------------------
@@ -1036,3 +1037,13 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     lastResearched: '2026-03-13',
   },
 };
+
+// ---------------------------------------------------------------------------
+// I18n-wrapped export — lazily resolved to avoid circular import
+// ---------------------------------------------------------------------------
+
+export function getTier3CompetitorsI18n(): I18nContent<Record<string, CompetitorData>> {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const { tier3CompetitorsAr } = require('./tier3Data.ar') as { tier3CompetitorsAr: Record<string, CompetitorData> };
+  return { en: tier3Competitors, ar: tier3CompetitorsAr };
+}
