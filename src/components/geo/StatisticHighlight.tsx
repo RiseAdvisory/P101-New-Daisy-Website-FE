@@ -13,7 +13,7 @@ export const StatisticHighlight: FC<StatisticHighlightProps> = ({
 }) => {
   return (
     <span className="inline">
-      <data value={value} className="font-semibold text-primary">
+      <data value={value} className="font-bold text-[#172524]">
         {value}
       </data>{' '}
       {context}
