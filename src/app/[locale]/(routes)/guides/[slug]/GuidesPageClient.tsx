@@ -1,18 +1,18 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getGuide } from '@/lib/constants/guides/guideData';
+import { GuideData } from '@/lib/constants/guides/guideData';
 import { FaqSchema } from '@/components/seo/FaqSchema';
 import { HowToSchema } from '@/components/seo/HowToSchema';
 import { ComparisonBreadcrumbSchema } from '@/components/seo/ComparisonBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 
 interface Props {
-  slug: string;
+  guide: GuideData;
+  locale: string;
 }
 
-export function GuidesPageClient({ slug }: Props) {
-  const guide = getGuide(slug);
-  if (!guide) return null;
+export function GuidesPageClient({ guide, locale }: Props) {
+  const slug = guide.slug;
 
   return (
     <main className="min-h-screen bg-white">
@@ -37,7 +37,7 @@ export function GuidesPageClient({ slug }: Props) {
       <section className="bg-[#F8F5F3] px-4 py-16 md:py-24">
         <div className="mx-auto max-w-4xl">
           <nav className="mb-6 text-sm text-[#586968]">
-            <Link href="/guides" className="hover:text-primary">
+            <Link href={`/${locale}/guides`} className="hover:text-primary">
               Guides
             </Link>
             <span className="mx-2">/</span>
@@ -150,7 +150,7 @@ export function GuidesPageClient({ slug }: Props) {
             {guide.relatedGuides.map((relatedSlug) => (
               <Link
                 key={relatedSlug}
-                href={`/guides/${relatedSlug}`}
+                href={`/${locale}/guides/${relatedSlug}`}
                 className="rounded-full border border-[#E8E9E9] px-4 py-2 text-sm font-medium text-[#455150] transition-colors hover:border-primary/20 hover:bg-primary/5 hover:text-primary"
               >
                 {relatedSlug
@@ -172,7 +172,7 @@ export function GuidesPageClient({ slug }: Props) {
             Try Daisy free for 14 days. No credit card required.
           </p>
           <Link
-            href="/get-the-app"
+            href={`/${locale}/get-the-app`}
             className="inline-block rounded-full bg-white px-8 py-3 font-semibold text-primary transition-colors hover:bg-white/90"
           >
             Start Free Trial

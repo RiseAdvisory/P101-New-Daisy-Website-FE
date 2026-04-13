@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import { localeAlternates } from '@/lib/utils/metadata';
 import Link from 'next/link';
-import { guideEntries } from '@/lib/constants/guides/guideData';
+import { guideData } from '@/lib/constants/guides/guideData';
+import { t } from '@/lib/constants/i18n';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
@@ -38,6 +39,9 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
 }
 
 export default function GuidesIndex({ params }: { params: { locale: string } }) {
+  const { locale } = params;
+  const entries = t(guideData, locale);
+
   return (
     <main className="min-h-screen bg-white">
       <WebPageSchema
@@ -46,7 +50,7 @@ export default function GuidesIndex({ params }: { params: { locale: string } }) 
         url="https://www.jointhedaisy.com/guides"
       />
       <PageBreadcrumbSchema
-        locale={params.locale}
+        locale={locale}
         items={[{ name: 'Guides', url: 'https://www.jointhedaisy.com/guides' }]}
       />
       <section className="bg-[#F8F5F3] px-4 py-16 md:py-24">
@@ -63,10 +67,10 @@ export default function GuidesIndex({ params }: { params: { locale: string } }) 
 
       <section className="mx-auto max-w-4xl px-4 py-12">
         <div className="space-y-6">
-          {guideEntries.map((guide) => (
+          {entries.map((guide) => (
             <Link
               key={guide.slug}
-              href={`/guides/${guide.slug}`}
+              href={`/${locale}/guides/${guide.slug}`}
               className="group block rounded-2xl border border-[#E8E9E9] bg-white p-6 shadow-sm transition-all hover:border-primary/20 hover:shadow-md md:p-8"
             >
               <h2 className="mb-3 text-2xl font-bold text-[#172524] group-hover:text-primary">
