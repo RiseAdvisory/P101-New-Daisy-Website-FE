@@ -20,6 +20,7 @@ const uiStrings = {
     readyToExperience: 'Ready to Experience',
     ctaDescription: 'Start your 14-day free trial and see how Daisy transforms your beauty business.',
     ctaButton: 'Start Free Trial',
+    questionMark: '?',
   },
   ar: {
     glossary: 'المصطلحات',
@@ -35,6 +36,7 @@ const uiStrings = {
     readyToExperience: 'هل أنت مستعد لتجربة',
     ctaDescription: 'ابدأ تجربتك المجانية لمدة 14 يوماً واكتشف كيف تحوّل ديزي أعمال التجميل الخاصة بك.',
     ctaButton: 'ابدأ التجربة المجانية',
+    questionMark: '؟',
   },
 };
 
@@ -73,7 +75,7 @@ export function GlossaryPageClient({ entry, slug, locale }: Props) {
             <span className="text-[#172524]">{entry.term}</span>
           </nav>
           <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">
-            {t.whatIs} {entry.term}?
+            {t.whatIs} {entry.term}{t.questionMark}
           </h1>
           <p className="text-lg leading-relaxed text-[#455150]" data-geo-answer="true">
             <dfn className="not-italic font-semibold text-[#172524]">
@@ -106,7 +108,7 @@ export function GlossaryPageClient({ entry, slug, locale }: Props) {
         <section className="bg-[#F8F5F3] px-4 py-12">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-8 text-2xl font-bold text-[#172524]">
-              {t.howCompare} {entry.term}?
+              {t.howCompare} {entry.term}{t.questionMark}
             </h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse overflow-hidden rounded-xl border border-[#E8E9E9] bg-white shadow-sm">
@@ -166,7 +168,7 @@ export function GlossaryPageClient({ entry, slug, locale }: Props) {
       {/* How Daisy Implements */}
       <section className="mx-auto max-w-4xl px-4 py-12">
         <h2 className="mb-4 text-2xl font-bold text-[#172524]">
-          {t.howImplement} {entry.term}?
+          {t.howImplement} {entry.term}{t.questionMark}
         </h2>
         <p className="text-lg leading-relaxed text-[#455150]">
           {entry.howDaisyImplements}
@@ -223,7 +225,7 @@ export function GlossaryPageClient({ entry, slug, locale }: Props) {
       <section className="bg-primary px-4 py-12">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="mb-4 text-2xl font-bold text-white">
-            {t.readyToExperience} {entry.term}?
+            {t.readyToExperience} {entry.term}{t.questionMark}
           </h2>
           <p className="mb-6 text-white/80">
             {t.ctaDescription}
