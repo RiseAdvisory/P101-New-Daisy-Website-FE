@@ -29,11 +29,21 @@ const BecomeFormPartner = dynamic(
   () => import('@/components/businessPage/BecomeFormPartner').then((mod) => mod.BecomeFormPartner),
 );
 
+const uiStrings = {
+  en: {
+    formTitle: 'Get Listed on The Daisy. Free',
+    formSubtitle: 'Tell us about yourself and our team will help you get set up.',
+  },
+  ar: {
+    formTitle: 'سجّل في ديزي. مجاناً',
+    formSubtitle: 'أخبرنا عن نفسك وسيساعدك فريقنا على البدء.',
+  },
+} as const;
+
 export const ProfessionalClient = ({ lang }: { lang: string }) => {
   const pageData = t(professionalPageData, lang);
   const dataScroll = toScrollSectionItems(pageData.scrollSections);
-  const formTitle = lang === 'ar' ? 'سجّل في ذا ديزي ,  مجانًا' : 'Get Listed on The Daisy. Free';
-  const formSubtitle = lang === 'ar' ? 'أخبرنا عن نفسك وسيساعدك فريقنا في الإعداد.' : 'Tell us about yourself and our team will help you get set up.';
+  const ui = uiStrings[lang as keyof typeof uiStrings] || uiStrings.en;
 
   return (
     <div className="w-full bg-primary md:-mt-[100px]">
@@ -93,8 +103,8 @@ export const ProfessionalClient = ({ lang }: { lang: string }) => {
       <QASection pageType="Professional" titleFraque={pageData.titleFraque} fallbackFaqs={pageData.fallbackFaqs} />
       <BecomeFormPartner
         defaultType="professional"
-        title={formTitle}
-        subtitle={formSubtitle}
+        title={ui.formTitle}
+        subtitle={ui.formSubtitle}
       />
     </div>
   );
