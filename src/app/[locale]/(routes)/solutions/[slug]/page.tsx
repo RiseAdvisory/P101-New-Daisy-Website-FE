@@ -15,7 +15,7 @@ export function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Metadata {
-  const data = getSolution(params.slug);
+  const data = getSolution(params.slug, params.locale);
   if (!data) return { title: 'Not Found' };
 
   return {
@@ -44,8 +44,8 @@ export default function SolutionsPage({
 }: {
   params: { locale: string; slug: string };
 }) {
-  const data = getSolution(params.slug);
+  const data = getSolution(params.slug, params.locale);
   if (!data) notFound();
 
-  return <SolutionsPageClient slug={params.slug} />;
+  return <SolutionsPageClient slug={params.slug} locale={params.locale} />;
 }

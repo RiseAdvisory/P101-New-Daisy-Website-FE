@@ -11,31 +11,35 @@ import { WebPageSchema } from '@/components/seo/WebPageSchema';
 
 interface Props {
   slug: string;
+  locale?: string;
 }
 
-export function SolutionsPageClient({ slug }: Props) {
-  const data = getSolution(slug);
+export function SolutionsPageClient({ slug, locale = 'en' }: Props) {
+  const data = getSolution(slug, locale);
   if (!data) return null;
 
-  const relatedSolutions = getRelatedSolutions(slug);
+  const relatedSolutions = getRelatedSolutions(slug, locale);
+  const isAr = locale === 'ar';
 
   const relatedLinks = [
     ...relatedSolutions.map((s) => ({
       title: s.heroTitle,
-      url: `/solutions/${s.slug}`,
+      url: `/${locale}/solutions/${s.slug}`,
       description: s.metaDescription.slice(0, 120) + '...',
     })),
-    ...data.relatedComparisons.map((slug) => ({
-      title: slug
+    ...data.relatedComparisons.map((compSlug) => ({
+      title: compSlug
         .replace(/-/g, ' ')
         .replace(/\b\w/g, (c) => c.toUpperCase()),
-      url: `/compare/${slug}`,
-      description: `See how Daisy compares in our detailed comparison.`,
+      url: `/${locale}/compare/${compSlug}`,
+      description: isAr
+        ? 'اطلع على مقارنتنا التفصيلية لمعرفة كيف تتفوق ديزي.'
+        : 'See how Daisy compares in our detailed comparison.',
     })),
   ];
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen" dir={isAr ? 'rtl' : 'ltr'}>
       <ComparisonBreadcrumbSchema
         pageName={data.heroTitle}
         pageSlug={slug}
@@ -54,7 +58,9 @@ export function SolutionsPageClient({ slug }: Props) {
       {data.definition && (
         <section className="mx-auto max-w-4xl px-4 py-10">
           <h2 className="mb-3 text-2xl font-bold text-gray-900">
-            What Is {data.heroTitle.replace(/That .+|Powered .+|Built .+|Automated .+|Designed .+|for the .+|with .+|,.*/, '').trim()}?
+            {isAr
+              ? `ما هو ${data.heroTitle.replace(/الذي .+|المدعوم .+|المصمم .+|مع .+|,.*/, '').trim()}؟`
+              : `What Is ${data.heroTitle.replace(/That .+|Powered .+|Built .+|Automated .+|Designed .+|for the .+|with .+|,.*/, '').trim()}?`}
           </h2>
           <p
             className="text-lg leading-relaxed text-gray-600"
@@ -87,7 +93,9 @@ export function SolutionsPageClient({ slug }: Props) {
       {data.faqs.length > 0 && (
         <section className="mx-auto max-w-4xl px-4 py-12">
           <h2 className="mb-6 text-2xl font-bold text-gray-900">
-            Frequently Asked Questions About {data.heroTitle}
+            {isAr
+              ? `الأسئلة الشائعة حول ${data.heroTitle}`
+              : `Frequently Asked Questions About ${data.heroTitle}`}
           </h2>
           <div className="space-y-4">
             {data.faqs.map((faq, i) => (
