@@ -52,5 +52,5 @@ export default function AlternativePage({
   const result = getAlternativePageData(params.slug);
   if (!result) notFound();
 
-  return <AlternativePageClient slug={params.slug} />;
+  return <AlternativePageClient slug={params.slug} locale={params.locale} />;
 }

@@ -101,7 +101,7 @@ export function SolutionsPageClient({ slug, locale = 'en' }: Props) {
       {/* Differentiators */}
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-5xl px-4">
-          <DaisyDifferentiators />
+          <DaisyDifferentiators locale={locale} />
         </div>
       </section>
 
