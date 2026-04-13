@@ -109,6 +109,10 @@ export const ChangeUserTypeMobile = ({
     if (typeof window !== 'undefined') {
       localStorage.setItem('activePage', path);
     }
+    if (pathname.includes('/faq')) {
+      const persona = path === '/business' ? 'business' : path === '/professional' ? 'professional' : 'customer';
+      router.push(localePath(`/faq/${persona}`, locale));
+    }
     if (pathname.includes('/features')) {
       router.push(localePath(`/features${path}`, locale));
     }

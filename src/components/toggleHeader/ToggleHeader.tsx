@@ -98,6 +98,9 @@ const ToggleButton = ({ className }: { className?: string }) => {
       if (slug) {
         router.push(localePath(`/solutions/${slug}/${persona}`, locale));
       }
+    } else if (pathname.includes('/faq')) {
+      const persona = path === '/business' ? 'business' : path === '/professional' ? 'professional' : 'customer';
+      router.push(localePath(`/faq/${persona}`, locale));
     } else if (pathname.includes('/features')) {
       router.push(localePath(`/features${path}`, locale));
     } else if (pathname.startsWith('/business')) {
