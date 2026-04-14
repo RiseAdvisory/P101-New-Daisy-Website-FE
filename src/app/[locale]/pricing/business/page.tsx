@@ -6,10 +6,14 @@ import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
+  const isAr = locale === 'ar';
   return {
-    title: 'Salon & Spa Pricing Plans | The Daisy',
-    description:
-      'Compare The Daisy pricing plans for salons, spas, and clinics. Basic $50/mo, Growth $150/mo, Business $250/mo. Start with a free 14-day trial. No hidden fees.',
+    title: isAr
+      ? 'باقات أسعار الصالونات والمنتجعات | ديزي'
+      : 'Salon & Spa Pricing Plans | The Daisy',
+    description: isAr
+      ? 'باقات أسعار شفافة لصالونات ومنتجعات التجميل. ابدأ تجربة مجانية لمدة 14 يوماً. بدون بطاقة ائتمان.'
+      : 'Compare The Daisy pricing plans for salons, spas, and clinics. Basic $50/mo, Growth $150/mo, Business $250/mo. Start with a free 14-day trial. No hidden fees.',
     keywords: [
       'salon software pricing',
       'spa booking system cost',
@@ -21,9 +25,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
       'salon subscription plans',
     ],
     openGraph: {
-      title: 'Salon & Spa Pricing Plans | The Daisy',
-      description:
-        'Flexible pricing plans for salons, spas, and clinics. Basic $50, Growth $150, Business $250 per month. 14-day free trial included.',
+      title: isAr
+        ? 'باقات أسعار الصالونات والمنتجعات | ديزي'
+        : 'Salon & Spa Pricing Plans | The Daisy',
+      description: isAr
+        ? 'باقات أسعار شفافة لصالونات ومنتجعات التجميل. ابدأ تجربة مجانية لمدة 14 يوماً. بدون بطاقة ائتمان.'
+        : 'Flexible pricing plans for salons, spas, and clinics. Basic $50, Growth $150, Business $250 per month. 14-day free trial included.',
       url: `https://www.jointhedaisy.com/${locale}/pricing/business`,
       type: 'website',
       images: [
@@ -37,9 +44,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Salon & Spa Pricing Plans | The Daisy',
-      description:
-        'Flexible pricing plans for salons, spas, and clinics. Start with a 14-day free trial.',
+      title: isAr
+        ? 'باقات أسعار الصالونات والمنتجعات | ديزي'
+        : 'Salon & Spa Pricing Plans | The Daisy',
+      description: isAr
+        ? 'باقات أسعار شفافة لصالونات ومنتجعات التجميل. ابدأ تجربة مجانية لمدة 14 يوماً. بدون بطاقة ائتمان.'
+        : 'Flexible pricing plans for salons, spas, and clinics. Start with a 14-day free trial.',
       images: ['/images/og/og-default.jpg'],
     },
     alternates: localeAlternates('/pricing/business', locale),

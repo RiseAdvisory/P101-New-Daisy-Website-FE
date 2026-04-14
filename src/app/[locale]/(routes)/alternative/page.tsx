@@ -11,31 +11,41 @@ import { getCompetitor } from '@/lib/constants/competitors';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
+  const isAr = locale === 'ar';
   return {
-  title: 'Salon Software Alternatives. Compare & Switch | The Daisy',
-  description:
-    'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives with AI features, pricing, and Arabic support.',
-  keywords: [
-    'fresha alternative',
-    'booksy alternative',
-    'vagaro alternative',
-    'salon software alternatives',
-  ],
-  openGraph: {
-    title: 'Salon Software Alternatives. Compare & Switch | The Daisy',
-    description:
-      'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives with AI features, pricing, and Arabic support.',
-    url: `https://www.jointhedaisy.com/${locale}/alternative`,
-    type: 'website',
-    images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Salon Software Alternatives. Compare & Switch | The Daisy',
-    description:
-      'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives.',
-    images: ['/images/og/og-default.jpg'],
-  },
+    title: isAr
+      ? 'بدائل برامج الصالونات. قارن وانتقل | ديزي'
+      : 'Salon Software Alternatives. Compare & Switch | The Daisy',
+    description: isAr
+      ? 'قارن بدائل برامج إدارة الصالونات. اكتشف لماذا تنتقل مشاريع التجميل إلى ديزي من Fresha وBooksy وVagaro وغيرها.'
+      : 'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives with AI features, pricing, and Arabic support.',
+    keywords: [
+      'fresha alternative',
+      'booksy alternative',
+      'vagaro alternative',
+      'salon software alternatives',
+    ],
+    openGraph: {
+      title: isAr
+        ? 'بدائل برامج الصالونات. قارن وانتقل | ديزي'
+        : 'Salon Software Alternatives. Compare & Switch | The Daisy',
+      description: isAr
+        ? 'قارن بدائل برامج إدارة الصالونات. اكتشف لماذا تنتقل مشاريع التجميل إلى ديزي من Fresha وBooksy وVagaro وغيرها.'
+        : 'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives with AI features, pricing, and Arabic support.',
+      url: `https://www.jointhedaisy.com/${locale}/alternative`,
+      type: 'website',
+      images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: isAr
+        ? 'بدائل برامج الصالونات. قارن وانتقل | ديزي'
+        : 'Salon Software Alternatives. Compare & Switch | The Daisy',
+      description: isAr
+        ? 'قارن بدائل برامج إدارة الصالونات. اكتشف لماذا تنتقل مشاريع التجميل إلى ديزي من Fresha وBooksy وVagaro وغيرها.'
+        : 'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives.',
+      images: ['/images/og/og-default.jpg'],
+    },
     alternates: localeAlternates('/alternative', locale),
   };
 }

@@ -6,10 +6,14 @@ import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
+  const isAr = locale === 'ar';
   return {
-    title: 'Freelance Beauty Professional Pricing | The Daisy',
-    description:
-      'Pricing plans for freelance beauty professionals. Starter $25/mo, Professional $50/mo, Elite $100/mo. Start with a free 14-day trial. No hidden fees.',
+    title: isAr
+      ? 'أسعار المتخصصين المستقلين في التجميل | ديزي'
+      : 'Freelance Beauty Professional Pricing | The Daisy',
+    description: isAr
+      ? 'أسعار مرنة للمتخصصين المستقلين في التجميل. انضم مجاناً، ادفع عمولة فقط على العملاء الجدد من السوق.'
+      : 'Pricing plans for freelance beauty professionals. Starter $25/mo, Professional $50/mo, Elite $100/mo. Start with a free 14-day trial. No hidden fees.',
     keywords: [
       'freelance beauty pricing',
       'professional beauty subscription',
@@ -21,9 +25,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
       'beauty career platform pricing',
     ],
     openGraph: {
-      title: 'Freelance Beauty Professional Pricing | The Daisy',
-      description:
-        'Pricing plans for freelance beauty professionals. Starter $25, Professional $50, Elite $100 per month. 14-day free trial included.',
+      title: isAr
+        ? 'أسعار المتخصصين المستقلين في التجميل | ديزي'
+        : 'Freelance Beauty Professional Pricing | The Daisy',
+      description: isAr
+        ? 'أسعار مرنة للمتخصصين المستقلين في التجميل. انضم مجاناً، ادفع عمولة فقط على العملاء الجدد من السوق.'
+        : 'Pricing plans for freelance beauty professionals. Starter $25, Professional $50, Elite $100 per month. 14-day free trial included.',
       url: `https://www.jointhedaisy.com/${locale}/pricing/professional`,
       type: 'website',
       images: [
@@ -37,9 +44,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Freelance Beauty Professional Pricing | The Daisy',
-      description:
-        'Pricing plans for freelance beauty professionals. Start with a 14-day free trial.',
+      title: isAr
+        ? 'أسعار المتخصصين المستقلين في التجميل | ديزي'
+        : 'Freelance Beauty Professional Pricing | The Daisy',
+      description: isAr
+        ? 'أسعار مرنة للمتخصصين المستقلين في التجميل. انضم مجاناً، ادفع عمولة فقط على العملاء الجدد من السوق.'
+        : 'Pricing plans for freelance beauty professionals. Start with a 14-day free trial.',
       images: ['/images/og/og-default.jpg'],
     },
     alternates: localeAlternates('/pricing/professional', locale),
