@@ -66,12 +66,8 @@ export const HeroBlogPage = ({ breadcrumbTitle, breadcrumbDescription, breadcrum
         className="flex justify-start text-[#ECEEED] text-sm mt-4 flex-col md:flex-row"
         dir={isRtl ? 'rtl' : 'ltr'}
       >
-        <div
-          className={`flex flex-wrap items-center ${
-            isRtl ? 'divide-x-reverse' : ''
-          } divide-x divide-white/25`}
-        >
-          <span className="flex items-center px-3 first:pl-0 last:pr-0">
+        <div className="flex flex-wrap items-center gap-3">
+          <span className="flex items-center">
             {iconImg && (
               <Image
                 src={iconImg}
@@ -91,14 +87,16 @@ export const HeroBlogPage = ({ breadcrumbTitle, breadcrumbDescription, breadcrum
                 'Author'}
             </span>
           </span>
-          <span className="flex items-center px-3 first:pl-0 last:pr-0">
+          <span className="text-white/60 font-bold">|</span>
+          <span className="flex items-center">
             <CalendarIcon
               className="ltr:mr-[10px] rtl:ml-[10px]"
               fill="#ECEEED"
             />
             {dateText}
           </span>
-          <span className="flex items-center px-3 first:pl-0 last:pr-0">
+          <span className="text-white/60 font-bold">|</span>
+          <span className="flex items-center">
             <ClockIcon className="ltr:mr-2 rtl:ml-2" fill="#ECEEED" />
             {timeText}
           </span>

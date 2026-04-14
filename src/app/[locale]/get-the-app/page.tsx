@@ -7,10 +7,14 @@ import { getLocale } from '@/lib/locale';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
+  const isAr = locale === 'ar';
   return {
-  title: 'Download The Daisy App | Beauty Booking for iOS & Android',
-  description:
-    'Download The Daisy beauty booking app for iOS and Android. Find salons near you, book appointments, earn cashback, and manage your beauty services on the go.',
+  title: isAr
+    ? 'حمّل تطبيق ديزي | حجز التجميل لـ iOS و Android'
+    : 'Download The Daisy App | Beauty Booking for iOS & Android',
+  description: isAr
+    ? 'حمّل تطبيق ديزي مجاناً على iOS و Android. احجز خدمات التجميل، اكسب كاشباك، وأدر مواعيدك من هاتفك.'
+    : 'Download The Daisy beauty booking app for iOS and Android. Find salons near you, book appointments, earn cashback, and manage your beauty services on the go.',
   keywords: [
     'beauty booking app download',
     'salon app iOS',
@@ -22,9 +26,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'spa app download',
   ],
   openGraph: {
-    title: 'Download The Daisy App | Beauty Booking for iOS & Android',
-    description:
-      'Download The Daisy beauty booking app. Find salons, book appointments, and earn cashback.',
+    title: isAr
+      ? 'حمّل تطبيق ديزي | حجز التجميل لـ iOS و Android'
+      : 'Download The Daisy App | Beauty Booking for iOS & Android',
+    description: isAr
+      ? 'حمّل تطبيق ديزي مجاناً على iOS و Android. احجز خدمات التجميل، اكسب كاشباك، وأدر مواعيدك من هاتفك.'
+      : 'Download The Daisy beauty booking app. Find salons, book appointments, and earn cashback.',
     url: `https://www.jointhedaisy.com/${locale}/get-the-app`,
     type: 'website',
     images: [
@@ -38,8 +45,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Download The Daisy App | Beauty Booking for iOS & Android',
-    description: 'Download The Daisy beauty booking app for iOS and Android.',
+    title: isAr
+      ? 'حمّل تطبيق ديزي | حجز التجميل لـ iOS و Android'
+      : 'Download The Daisy App | Beauty Booking for iOS & Android',
+    description: isAr
+      ? 'حمّل تطبيق ديزي مجاناً على iOS و Android. احجز خدمات التجميل، اكسب كاشباك، وأدر مواعيدك من هاتفك.'
+      : 'Download The Daisy beauty booking app for iOS and Android.',
     images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/get-the-app', locale),

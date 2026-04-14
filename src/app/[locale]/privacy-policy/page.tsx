@@ -7,10 +7,14 @@ import { getLocale } from '@/lib/locale';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
+  const isAr = locale === 'ar';
   return {
-  title: 'Privacy Policy | The Daisy - Beauty Booking Platform',
-  description:
-    'Read The Daisy privacy policy to understand how we collect, use, and protect your personal information when using our beauty booking platform.',
+  title: isAr
+    ? 'سياسة الخصوصية | ديزي - منصة حجز التجميل'
+    : 'Privacy Policy | The Daisy - Beauty Booking Platform',
+  description: isAr
+    ? 'اقرأ سياسة خصوصية ديزي. تعرّف على كيفية حماية بياناتك الشخصية واستخدامها.'
+    : 'Read The Daisy privacy policy to understand how we collect, use, and protect your personal information when using our beauty booking platform.',
   keywords: [
     'privacy policy',
     'data protection',
@@ -21,9 +25,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'The Daisy privacy',
   ],
   openGraph: {
-    title: 'Privacy Policy | The Daisy - Beauty Booking Platform',
-    description:
-      'Read The Daisy privacy policy to understand how we protect your personal information.',
+    title: isAr
+      ? 'سياسة الخصوصية | ديزي - منصة حجز التجميل'
+      : 'Privacy Policy | The Daisy - Beauty Booking Platform',
+    description: isAr
+      ? 'اقرأ سياسة خصوصية ديزي. تعرّف على كيفية حماية بياناتك الشخصية واستخدامها.'
+      : 'Read The Daisy privacy policy to understand how we protect your personal information.',
     url: `https://www.jointhedaisy.com/${locale}/privacy-policy`,
     type: 'website',
     images: [
@@ -37,8 +44,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Privacy Policy | The Daisy - Beauty Booking Platform',
-    description: 'Read The Daisy privacy policy and data protection practices.',
+    title: isAr
+      ? 'سياسة الخصوصية | ديزي - منصة حجز التجميل'
+      : 'Privacy Policy | The Daisy - Beauty Booking Platform',
+    description: isAr
+      ? 'اقرأ سياسة خصوصية ديزي. تعرّف على كيفية حماية بياناتك الشخصية واستخدامها.'
+      : 'Read The Daisy privacy policy and data protection practices.',
     images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/privacy-policy', locale),

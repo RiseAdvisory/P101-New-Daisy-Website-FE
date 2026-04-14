@@ -11,32 +11,42 @@ import { getCompetitor } from '@/lib/constants/competitors';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
+  const isAr = locale === 'ar';
   return {
-  title: 'Daisy Comparisons. See How We Stack Up | The Daisy',
-  description:
-    'Compare The Daisy vs Fresha, Booksy, Vagaro, GlossGenius, and more. Side-by-side features, pricing, and honest verdicts to find the best salon software.',
-  keywords: [
-    'salon software comparison',
-    'beauty booking comparison',
-    'daisy vs fresha',
-    'daisy vs booksy',
-    'salon software reviews',
-  ],
-  openGraph: {
-    title: 'Daisy Comparisons. See How We Stack Up | The Daisy',
-    description:
-      'Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis, pricing breakdowns, and honest verdicts.',
-    url: `https://www.jointhedaisy.com/${locale}/compare`,
-    type: 'website',
-    images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Daisy Comparisons. See How We Stack Up | The Daisy',
-    description:
-      'Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis and pricing breakdowns.',
-    images: ['/images/og/og-default.jpg'],
-  },
+    title: isAr
+      ? 'مقارنات ديزي. اكتشف كيف نتفوق | ديزي'
+      : 'Daisy Comparisons. See How We Stack Up | The Daisy',
+    description: isAr
+      ? 'قارن ديزي مع أفضل برامج إدارة الصالونات. مقارنات مفصلة بالميزات والأسعار والقدرات.'
+      : 'Compare The Daisy vs Fresha, Booksy, Vagaro, GlossGenius, and more. Side-by-side features, pricing, and honest verdicts to find the best salon software.',
+    keywords: [
+      'salon software comparison',
+      'beauty booking comparison',
+      'daisy vs fresha',
+      'daisy vs booksy',
+      'salon software reviews',
+    ],
+    openGraph: {
+      title: isAr
+        ? 'مقارنات ديزي. اكتشف كيف نتفوق | ديزي'
+        : 'Daisy Comparisons. See How We Stack Up | The Daisy',
+      description: isAr
+        ? 'قارن ديزي مع أفضل برامج إدارة الصالونات. مقارنات مفصلة بالميزات والأسعار والقدرات.'
+        : 'Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis, pricing breakdowns, and honest verdicts.',
+      url: `https://www.jointhedaisy.com/${locale}/compare`,
+      type: 'website',
+      images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: isAr
+        ? 'مقارنات ديزي. اكتشف كيف نتفوق | ديزي'
+        : 'Daisy Comparisons. See How We Stack Up | The Daisy',
+      description: isAr
+        ? 'قارن ديزي مع أفضل برامج إدارة الصالونات. مقارنات مفصلة بالميزات والأسعار والقدرات.'
+        : 'Compare Daisy against Fresha, Booksy, Vagaro, GlossGenius, and more. Feature-by-feature analysis and pricing breakdowns.',
+      images: ['/images/og/og-default.jpg'],
+    },
     alternates: localeAlternates('/compare', locale),
   };
 }
