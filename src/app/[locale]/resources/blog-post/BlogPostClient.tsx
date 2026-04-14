@@ -4,32 +4,11 @@ import { HeroPage } from '@/components/heroSection/HeroSection';
 import { useChoosePath } from '@/store/currentPath';
 import { useEffect, useMemo, useState } from 'react';
 import { useMyContext } from '@/app/MyContext';
-import { blogHeroData, blogPostsByUserType } from '@/lib/constants/blog/blogData';
+import { blogHeroData } from '@/lib/constants/blog/blogData';
 import { t } from '@/lib/constants/i18n';
 import { usePathname } from 'next/navigation';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
-
-function pickPostsForLocale(posts: any[], locale: string) {
-  const bySlug = new Map<string, any>();
-  for (const post of posts) {
-    const slug = post?.attributes?.slug;
-    if (!slug) continue;
-
-    const existing = bySlug.get(slug);
-    if (!existing) {
-      bySlug.set(slug, post);
-      continue;
-    }
-
-    // Prefer the current locale when it exists, otherwise keep the existing entry.
-    const postLocale = post?.attributes?.locale;
-    const existingLocale = existing?.attributes?.locale;
-    if (postLocale === locale && existingLocale !== locale) {
-      bySlug.set(slug, post);
-    }
-  }
-  return Array.from(bySlug.values());
-}
+import { getAllBlogPosts, UserType } from '@/lib/api/blog';
 
 export const BlogPostClient = () => {
   const [listCard, setListCards] = useState<any[] | null>(null);
@@ -49,7 +28,8 @@ export const BlogPostClient = () => {
     if (currentPage === '/professional') type = 'professional';
 
     setUserType(type);
-    setListCards(pickPostsForLocale(blogPostsByUserType[type] || [], locale));
+    // Uses the blog API which merges EN media into AR posts so imagery matches across locales.
+    getAllBlogPosts(type as UserType, locale).then(setListCards);
     chooseBreadcrumb(hero.breadcrumbs ?? '');
     choosePathStrapi(`/resources/blog/${type}`);
   }, [locale, currentPage, hero, chooseBreadcrumb, choosePathStrapi]);

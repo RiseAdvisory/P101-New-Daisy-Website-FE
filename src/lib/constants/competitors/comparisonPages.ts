@@ -1763,7 +1763,6 @@ interface ComparisonPagesBundle {
 }
 
 export function getComparisonPagesI18n(): I18nContent<ComparisonPagesBundle> {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
   const ar = require('./comparisonPages.ar') as ComparisonPagesBundle;
   return {
     en: { daisyVsPages, alternativePages, bestAlternativesPages, competitorVsPages },

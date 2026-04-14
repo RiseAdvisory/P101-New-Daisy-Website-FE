@@ -1043,7 +1043,6 @@ export const tier3Competitors: Record<string, CompetitorData> = {
 // ---------------------------------------------------------------------------
 
 export function getTier3CompetitorsI18n(): I18nContent<Record<string, CompetitorData>> {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
   const { tier3CompetitorsAr } = require('./tier3Data.ar') as { tier3CompetitorsAr: Record<string, CompetitorData> };
   return { en: tier3Competitors, ar: tier3CompetitorsAr };
 }

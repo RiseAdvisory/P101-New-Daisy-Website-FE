@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { formatReadingTime } from '@/lib/utils/blogFormat';
 
 interface PillarHeroProps {
   title: string;
@@ -6,6 +7,7 @@ interface PillarHeroProps {
   readingTime: string;
   lastUpdated: string;
   breadcrumbTitle: string;
+  locale: string;
 }
 
 export function PillarHero({
@@ -14,19 +16,30 @@ export function PillarHero({
   readingTime,
   lastUpdated,
   breadcrumbTitle,
+  locale,
 }: PillarHeroProps) {
-  const formattedDate = new Date(lastUpdated).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+  const isRtl = locale === 'ar';
+  const ui = isRtl
+    ? { home: 'الرئيسية', updated: 'آخر تحديث' }
+    : { home: 'Home', updated: 'Updated' };
+
+  const updatedAt = new Date(lastUpdated);
+  const formattedDate = Number.isNaN(updatedAt.getTime())
+    ? lastUpdated
+    : new Intl.DateTimeFormat(isRtl ? 'ar-KW' : 'en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      }).format(updatedAt);
+
+  const readingTimeText = formatReadingTime(readingTime, locale);
 
   return (
-    <section className="bg-[#F8F5F3] px-4 py-16 md:py-24">
+    <section className="bg-[#F8F5F3] px-4 py-16 md:py-24" dir={isRtl ? 'rtl' : 'ltr'}>
       <div className="mx-auto max-w-5xl">
         <nav className="mb-6 text-sm text-[#586968]">
-          <Link href="/" className="hover:text-primary">
-            Home
+          <Link href={`/${locale}`} className="hover:text-primary">
+            {ui.home}
           </Link>
           <span className="mx-2">/</span>
           <span className="text-[#172524]">{breadcrumbTitle}</span>
@@ -38,9 +51,11 @@ export function PillarHero({
           {subtitle}
         </p>
         <div className="flex items-center gap-4 text-sm text-[#586968]">
-          <span>{readingTime}</span>
+          <span>{readingTimeText}</span>
           <span className="h-1 w-1 rounded-full bg-[#586968]" />
-          <span>Updated {formattedDate}</span>
+          <span>
+            {ui.updated} {formattedDate}
+          </span>
         </div>
       </div>
     </section>

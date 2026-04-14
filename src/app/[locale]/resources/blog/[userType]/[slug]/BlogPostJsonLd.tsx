@@ -3,11 +3,13 @@ import { BlogPost, UserType } from '@/lib/api/blog';
 interface BlogPostJsonLdProps {
   post: BlogPost;
   userType: UserType;
+  locale: string;
 }
 
 export default function BlogPostJsonLd({
   post,
   userType,
+  locale,
 }: BlogPostJsonLdProps) {
   const { attributes } = post;
 
@@ -46,7 +48,7 @@ export default function BlogPostJsonLd({
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://www.jointhedaisy.com/resources/blog/${userType}/${attributes.slug}`,
+      '@id': `https://www.jointhedaisy.com/${locale}/resources/blog/${userType}/${attributes.slug}`,
     },
     articleSection: attributes.category?.data?.attributes?.name || undefined,
     inLanguage: attributes.locale === 'ar' ? 'ar' : 'en',
@@ -61,25 +63,25 @@ export default function BlogPostJsonLd({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://www.jointhedaisy.com',
+        item: `https://www.jointhedaisy.com/${locale}`,
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Resources',
-        item: 'https://www.jointhedaisy.com/resources',
+        item: `https://www.jointhedaisy.com/${locale}/resources`,
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Blog',
-        item: 'https://www.jointhedaisy.com/resources/blog',
+        item: `https://www.jointhedaisy.com/${locale}/resources/blog-post`,
       },
       {
         '@type': 'ListItem',
         position: 4,
         name: attributes.title,
-        item: `https://www.jointhedaisy.com/resources/blog/${userType}/${attributes.slug}`,
+        item: `https://www.jointhedaisy.com/${locale}/resources/blog/${userType}/${attributes.slug}`,
       },
     ],
   };

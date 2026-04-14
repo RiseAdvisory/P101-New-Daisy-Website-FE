@@ -54,6 +54,7 @@ export function PillarPageTemplate({ data, locale }: PillarPageTemplateProps) {
         readingTime={data.readingTime}
         lastUpdated={data.lastUpdated}
         breadcrumbTitle={data.title}
+        locale={locale}
       />
 
       {/* Key Takeaways (GEO answer block) */}

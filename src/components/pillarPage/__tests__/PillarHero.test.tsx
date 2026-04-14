@@ -15,6 +15,7 @@ describe('PillarHero', () => {
     readingTime: '18 min read',
     lastUpdated: '2026-03-18T00:00:00.000Z',
     breadcrumbTitle: 'Salon Management Software',
+    locale: 'en',
   };
 
   it('renders title as h1', () => {
@@ -44,7 +45,7 @@ describe('PillarHero', () => {
   it('renders breadcrumb with Home link', () => {
     render(<PillarHero {...defaultProps} />);
     const homeLink = screen.getByText('Home');
-    expect(homeLink.closest('a')).toHaveAttribute('href', '/');
+    expect(homeLink.closest('a')).toHaveAttribute('href', '/en');
   });
 
   it('renders breadcrumb title', () => {

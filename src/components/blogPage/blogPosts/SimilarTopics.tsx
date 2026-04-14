@@ -6,11 +6,11 @@ import { useEffect, useMemo, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { usePostStore } from '@/store/post';
 import { useMyContext } from '@/app/MyContext';
-import { blogPostsByUserType } from '@/lib/constants/blog/blogData';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
 import { formatBlogDate, formatReadTime } from '@/lib/utils/blogFormat';
 import { getAuthorBio } from '@/lib/constants/blog/authorData';
 import { translateTag } from '@/lib/constants/blog/tagTranslations';
+import { getAllBlogPosts, UserType } from '@/lib/api/blog';
 
 export const SimilarTopics = ({ titleSimilar }: { titleSimilar: string }) => {
   const [listCard, setListCards] = useState<any>();
@@ -35,13 +35,8 @@ export const SimilarTopics = ({ titleSimilar }: { titleSimilar: string }) => {
       type = 'professional';
     }
 
-    // Load from local data, filtered by current locale
-    const allPosts = blogPostsByUserType[type] || [];
-    const localePosts = allPosts.filter(
-      (p: any) => (p.attributes.locale || 'en') === locale
-    );
-    // Fall back to English if no posts for this locale
-    setListCards(localePosts.length > 0 ? localePosts : allPosts.filter((p: any) => (p.attributes.locale || 'en') === 'en'));
+    // Use the blog API to ensure AR translations inherit EN media (images) for each slug.
+    getAllBlogPosts(type as UserType, locale).then(setListCards);
   }, [currentPage, locale]);
 
   return (
