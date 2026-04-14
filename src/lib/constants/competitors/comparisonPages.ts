@@ -4,7 +4,7 @@
 
 import type { CompetitorData } from './competitorData';
 import { competitors, daisyData } from './competitorData';
-import type { I18nContent } from '../i18n';
+import { t, type I18nContent } from '../i18n';
 
 // -----------------------------------------------------------------------------
 // Types
@@ -1668,19 +1668,19 @@ export const competitorVsPages: CompetitorVsPageData[] = [
 // -----------------------------------------------------------------------------
 
 export function getDaisyVsPage(slug: string): DaisyVsPageData | undefined {
-  return daisyVsPages.find((p) => p.slug === slug);
+  return getDaisyVsPageI18n(slug, 'en');
 }
 
 export function getAlternativePage(slug: string): AlternativePageData | undefined {
-  return alternativePages.find((p) => p.slug === slug);
+  return getAlternativePageI18n(slug, 'en');
 }
 
 export function getBestAlternativesPage(slug: string): BestAlternativesPageData | undefined {
-  return bestAlternativesPages.find((p) => p.slug === slug);
+  return getBestAlternativesPageI18n(slug, 'en');
 }
 
 export function getCompetitorVsPage(slug: string): CompetitorVsPageData | undefined {
-  return competitorVsPages.find((p) => p.combinedSlug === slug);
+  return getCompetitorVsPageI18n(slug, 'en');
 }
 
 /** Get all slugs for the /compare/[slug] route */
@@ -1698,34 +1698,57 @@ export function getAllAlternativeSlugs(): string[] {
 }
 
 /** Resolve a compare page slug to its data (either DaisyVs or CompetitorVs) */
-export function getComparePageData(slug: string): { type: 'daisy-vs'; data: DaisyVsPageData } | { type: 'competitor-vs'; data: CompetitorVsPageData } | undefined {
-  const daisyVs = getDaisyVsPage(slug);
+export function getComparePageData(
+  slug: string,
+  locale: string = 'en',
+):
+  | { type: 'daisy-vs'; data: DaisyVsPageData }
+  | { type: 'competitor-vs'; data: CompetitorVsPageData }
+  | undefined {
+  const daisyVs = getDaisyVsPageI18n(slug, locale);
   if (daisyVs) return { type: 'daisy-vs', data: daisyVs };
-  const competitorVs = getCompetitorVsPage(slug);
+  const competitorVs = getCompetitorVsPageI18n(slug, locale);
   if (competitorVs) return { type: 'competitor-vs', data: competitorVs };
   return undefined;
 }
 
 /** Resolve an alternative page slug to its data (either Alternative or BestAlternatives) */
-export function getAlternativePageData(slug: string): { type: 'alternative'; data: AlternativePageData } | { type: 'best-alternatives'; data: BestAlternativesPageData } | undefined {
-  const alt = getAlternativePage(slug);
+export function getAlternativePageData(
+  slug: string,
+  locale: string = 'en',
+):
+  | { type: 'alternative'; data: AlternativePageData }
+  | { type: 'best-alternatives'; data: BestAlternativesPageData }
+  | undefined {
+  const alt = getAlternativePageI18n(slug, locale);
   if (alt) return { type: 'alternative', data: alt };
-  const bestAlt = getBestAlternativesPage(slug);
+  const bestAlt = getBestAlternativesPageI18n(slug, locale);
   if (bestAlt) return { type: 'best-alternatives', data: bestAlt };
   return undefined;
 }
 
 /** Get related comparison pages for internal linking */
-export function getRelatedComparePages(currentSlug: string, limit: number = 4): { title: string; url: string; description: string }[] {
+export function getRelatedComparePages(
+  currentSlug: string,
+  limit: number = 4,
+  locale?: string,
+): { title: string; url: string; description: string }[] {
   const related: { title: string; url: string; description: string }[] = [];
 
-  for (const page of daisyVsPages) {
+  const effectiveLocale = locale ?? 'en';
+  const bundle = t(getComparisonPagesI18n(), effectiveLocale);
+  const prefix = locale ? `/${locale}` : '';
+
+  for (const page of bundle.daisyVsPages) {
     if (page.slug === currentSlug || related.length >= limit) continue;
     const competitor = competitors[page.competitorSlug];
     if (competitor) {
       related.push({
-        title: `Daisy vs ${competitor.name}`,
-        url: `/compare/${page.slug}`,
+        title:
+          effectiveLocale === 'ar'
+            ? `ديزي مقابل ${competitor.name}`
+            : `Daisy vs ${competitor.name}`,
+        url: `${prefix}/compare/${page.slug}`,
         description: page.metaDescription.slice(0, 120) + '...',
       });
     }
@@ -1734,16 +1757,27 @@ export function getRelatedComparePages(currentSlug: string, limit: number = 4): 
 }
 
 /** Get related alternative pages for internal linking */
-export function getRelatedAlternativePages(currentSlug: string, limit: number = 4): { title: string; url: string; description: string }[] {
+export function getRelatedAlternativePages(
+  currentSlug: string,
+  limit: number = 4,
+  locale?: string,
+): { title: string; url: string; description: string }[] {
   const related: { title: string; url: string; description: string }[] = [];
 
-  for (const page of alternativePages) {
+  const effectiveLocale = locale ?? 'en';
+  const bundle = t(getComparisonPagesI18n(), effectiveLocale);
+  const prefix = locale ? `/${locale}` : '';
+
+  for (const page of bundle.alternativePages) {
     if (page.slug === currentSlug || related.length >= limit) continue;
     const competitor = competitors[page.competitorSlug];
     if (competitor) {
       related.push({
-        title: `${competitor.name} Alternative`,
-        url: `/alternative/${page.slug}`,
+        title:
+          effectiveLocale === 'ar'
+            ? `بديل ${competitor.name}`
+            : `${competitor.name} Alternative`,
+        url: `${prefix}/alternative/${page.slug}`,
         description: page.metaDescription.slice(0, 120) + '...',
       });
     }
@@ -1760,6 +1794,34 @@ interface ComparisonPagesBundle {
   alternativePages: AlternativePageData[];
   bestAlternativesPages: BestAlternativesPageData[];
   competitorVsPages: CompetitorVsPageData[];
+}
+
+function getDaisyVsPageI18n(slug: string, locale: string): DaisyVsPageData | undefined {
+  const bundle = t(getComparisonPagesI18n(), locale);
+  const hit = bundle.daisyVsPages.find((p) => p.slug === slug);
+  if (!hit && locale === 'ar') return daisyVsPages.find((p) => p.slug === slug);
+  return hit;
+}
+
+function getAlternativePageI18n(slug: string, locale: string): AlternativePageData | undefined {
+  const bundle = t(getComparisonPagesI18n(), locale);
+  const hit = bundle.alternativePages.find((p) => p.slug === slug);
+  if (!hit && locale === 'ar') return alternativePages.find((p) => p.slug === slug);
+  return hit;
+}
+
+function getBestAlternativesPageI18n(slug: string, locale: string): BestAlternativesPageData | undefined {
+  const bundle = t(getComparisonPagesI18n(), locale);
+  const hit = bundle.bestAlternativesPages.find((p) => p.slug === slug);
+  if (!hit && locale === 'ar') return bestAlternativesPages.find((p) => p.slug === slug);
+  return hit;
+}
+
+function getCompetitorVsPageI18n(slug: string, locale: string): CompetitorVsPageData | undefined {
+  const bundle = t(getComparisonPagesI18n(), locale);
+  const hit = bundle.competitorVsPages.find((p) => p.combinedSlug === slug);
+  if (!hit && locale === 'ar') return competitorVsPages.find((p) => p.combinedSlug === slug);
+  return hit;
 }
 
 export function getComparisonPagesI18n(): I18nContent<ComparisonPagesBundle> {

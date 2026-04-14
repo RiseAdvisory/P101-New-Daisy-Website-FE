@@ -20,7 +20,7 @@ export function generateMetadata({
 }: {
   params: { locale: string; category: string };
 }): Metadata {
-  const data = getFeatureDeepDive('business', params.category);
+  const data = getFeatureDeepDive('business', params.category, params.locale);
   if (!data) return { title: 'Not Found' };
 
   return {
@@ -47,7 +47,7 @@ export default function FeatureBusinessDeepDivePage({
 }: {
   params: { locale: string; category: string };
 }) {
-  const data = getFeatureDeepDive('business', params.category);
+  const data = getFeatureDeepDive('business', params.category, params.locale);
   if (!data) notFound();
 
   return <FeatureDeepDiveClient userType="business" slug={params.category} locale={params.locale} />;

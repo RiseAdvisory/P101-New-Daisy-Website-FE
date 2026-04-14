@@ -126,7 +126,7 @@ export function PillarPageTemplate({ data, locale }: PillarPageTemplateProps) {
       <ClusterArticleGrid articles={data.clusterArticles} />
 
       {/* Related Pillars */}
-      <RelatedPillars slugs={data.relatedPillarSlugs} />
+      <RelatedPillars slugs={data.relatedPillarSlugs} locale={locale} />
 
       {/* Bottom CTA */}
       <PillarCTA />

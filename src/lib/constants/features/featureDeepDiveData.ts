@@ -755,11 +755,12 @@ export const featureDeepDives: FeatureDeepDive[] = [
       'Communication is the invisible thread that holds your client relationships together. A missed reminder leads to a no-show. A forgotten follow-up means a lapsed client. A review never requested is social proof never gained. Yet most beauty businesses are stuck with fragmented communication, a personal WhatsApp here, a text message there, an email that goes unopened. Daisy\'s Communication Tools unify every client interaction into a single, automated system that works across WhatsApp, SMS, email, and Instagram DMs. Appointment reminders go out at precisely the right intervals on the client\'s preferred channel. Post-visit follow-ups request reviews and suggest rebooking. Birthday messages, loyalty milestones, and special offers are triggered automatically based on client data. Broadcast campaigns reach your entire client base or targeted segments with a few clicks. And every conversation, whether started by you or the client, is tracked in a central inbox, so no message falls through the cracks. The system does not just send messages; it sends the right message, to the right person, at the right time, on the right channel. This is how modern beauty businesses build relationships that last.',
 
     keyCapabilities: [
-      'In-person POS with automatic cashback and discount application',
-      'Online deposit collection at booking time',
-      'Split payments between multiple clients',
-      'Integrated tipping with per-staff tracking',
-      'Invoicing and subscription billing for memberships',
+      'Multi-channel messaging across WhatsApp, SMS, email, and Instagram DMs',
+      'Automated appointment confirmations and tiered reminders to reduce no-shows',
+      'Automated post-visit follow-ups, rebooking nudges, and lifecycle messaging',
+      'Review collection engine with direct links and sentiment routing',
+      'Broadcast campaigns with segmentation and performance tracking',
+      'Unified inbox with full client conversation history across channels',
     ],
 
     painPoints: [

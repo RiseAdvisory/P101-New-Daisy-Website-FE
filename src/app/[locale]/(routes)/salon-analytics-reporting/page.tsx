@@ -11,7 +11,7 @@ export function generateMetadata({
 }: {
   params: { locale: string };
 }): Metadata {
-  const data = getPillarPage(SLUG);
+  const data = getPillarPage(SLUG, params.locale);
   if (!data) return { title: 'Not Found' };
 
   return {
@@ -40,7 +40,7 @@ export default function Page({
 }: {
   params: { locale: string };
 }) {
-  const data = getPillarPage(SLUG);
+  const data = getPillarPage(SLUG, params.locale);
   if (!data) notFound();
 
   return <PillarPageTemplate data={data} locale={params.locale} />;

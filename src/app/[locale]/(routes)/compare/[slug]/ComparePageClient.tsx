@@ -24,7 +24,7 @@ interface Props {
 }
 
 export function ComparePageClient({ slug, locale = 'en' }: Props) {
-  const result = getComparePageData(slug);
+  const result = getComparePageData(slug, locale);
   if (!result) return null;
 
   if (result.type === 'daisy-vs') {
@@ -46,7 +46,7 @@ function DaisyVsPage({
   const competitor = getCompetitor(data.competitorSlug);
   if (!competitor) return null;
 
-  const relatedPages = getRelatedComparePages(slug);
+  const relatedPages = getRelatedComparePages(slug, 4, locale);
 
   // Build quick comparison entries
   const quickEntries = [
@@ -103,7 +103,7 @@ function DaisyVsPage({
       <WebPageSchema
         title={data.metaTitle}
         description={data.metaDescription}
-        url={`https://www.jointhedaisy.com/compare/${slug}`}
+        url={`https://www.jointhedaisy.com/${locale}/compare/${slug}`}
       />
       {competitor.faq.length > 0 && <FaqSchema faqs={competitor.faq} />}
       <ProductComparisonSchema
@@ -292,7 +292,7 @@ function CompetitorVsPage({
   const competitorB = getCompetitor(data.slugB);
   if (!competitorA || !competitorB) return null;
 
-  const relatedPages = getRelatedComparePages(slug);
+  const relatedPages = getRelatedComparePages(slug, 4, locale);
 
   return (
     <main className="min-h-screen">
@@ -304,7 +304,7 @@ function CompetitorVsPage({
       <WebPageSchema
         title={data.metaTitle}
         description={data.metaDescription}
-        url={`https://www.jointhedaisy.com/compare/${slug}`}
+        url={`https://www.jointhedaisy.com/${locale}/compare/${slug}`}
       />
 
       <ComparisonHero

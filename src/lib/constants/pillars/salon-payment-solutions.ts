@@ -169,7 +169,7 @@ export const salonPaymentSolutions: PillarPageData = {
       relatedLinks: [
         {
           title: 'Salon POS Systems, 2026 Guide',
-          url: '/en/resources/blog/businesses/salon-pos-systems-2026-guide',
+          url: '/en/resources/blog/business/salon-pos-systems-2026-guide',
         },
         {
           title: 'Salon Management Software Guide',
@@ -267,7 +267,7 @@ export const salonPaymentSolutions: PillarPageData = {
       relatedLinks: [
         {
           title: 'Tipping Best Practices for Beauty Businesses',
-          url: '/en/resources/blog/businesses/tipping-best-practices-beauty-businesses',
+          url: '/en/resources/blog/business/tipping-best-practices-beauty-businesses',
         },
       ],
     },
@@ -392,7 +392,7 @@ export const salonPaymentSolutions: PillarPageData = {
       relatedLinks: [
         {
           title: 'Payment Processing Fees Compared',
-          url: '/en/resources/blog/businesses/payment-processing-fees-compared-daisy',
+          url: '/en/resources/blog/business/payment-processing-fees-compared-daisy',
         },
       ],
     },

@@ -44,7 +44,7 @@ const salonPosBuyersGuideArticle: LocalBlogPost = {
       'A definitive buyer\'s guide to salon POS systems covering hardware selection, essential features, integration requirements, and total cost of ownership. Includes a decision framework for single-location and multi-branch salons.',
     aboutPosts: `
 <h2>What a POS System Really Does for a Modern Salon</h2>
-<p>A salon point-of-sale system is the transactional backbone of every client interaction - and in 2026, it determines far more than how you accept payments. The right POS connects your <a href="/en/resources/blog/businesses/salon-payment-solutions">payment workflow</a> to appointments, inventory, staff commissions, client profiles, and financial reporting in a single integrated loop. The wrong system fragments these processes, creating manual workarounds that cost you hours every week and money every month.</p>
+<p>A salon point-of-sale system is the transactional backbone of every client interaction - and in 2026, it determines far more than how you accept payments. The right POS connects your <a href="/en/resources/blog/business/salon-payment-solutions">payment workflow</a> to appointments, inventory, staff commissions, client profiles, and financial reporting in a single integrated loop. The wrong system fragments these processes, creating manual workarounds that cost you hours every week and money every month.</p>
 <p>According to a 2025 National Retail Federation report, businesses that upgraded to integrated POS systems saw a 23% reduction in checkout time and a 12% increase in average transaction value within the first six months. For salons specifically, where the checkout experience is the last impression before a client leaves, these numbers translate directly into retention and revenue.</p>
 <p>This buyer&rsquo;s guide walks through every decision you need to make when selecting a salon POS - from hardware form factors and payment method support to integration depth and long-term cost of ownership. Whether you are opening your first location or upgrading an existing multi-branch operation, this guide gives you the framework to evaluate and choose with confidence.</p>
 
@@ -265,7 +265,7 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
       'A comprehensive guide to salon tipping covering etiquette standards, how to set a clear tipping policy for your business, digital tipping solutions that increase gratuities, and tip distribution models that keep your team happy.',
     aboutPosts: `
 <h2>Tipping in the Beauty Industry: The Current Landscape</h2>
-<p>Tipping accounts for 15&ndash;25% of a beauty professional&rsquo;s total compensation in most markets. Yet most salons have no formal tipping policy - leaving clients confused about expectations, staff uncertain about their income, and owners caught in the middle of disputes over tip distribution. A well-designed tipping framework within your <a href="/en/resources/blog/businesses/salon-payment-solutions">salon payment workflow</a> eliminates this ambiguity for everyone involved.</p>
+<p>Tipping accounts for 15&ndash;25% of a beauty professional&rsquo;s total compensation in most markets. Yet most salons have no formal tipping policy - leaving clients confused about expectations, staff uncertain about their income, and owners caught in the middle of disputes over tip distribution. A well-designed tipping framework within your <a href="/en/resources/blog/business/salon-payment-solutions">salon payment workflow</a> eliminates this ambiguity for everyone involved.</p>
 <p>The shift to digital payments has fundamentally changed tipping dynamics. Cash tips are declining as fewer clients carry physical currency. A 2025 Square report found that digital tip prompts increase average gratuity by 18% compared to cash-only tipping - but only when the tipping interface is well-designed and naturally integrated into the checkout experience. Salons that ignore this shift are effectively reducing their team&rsquo;s income.</p>
 <p>This guide covers everything you need to build a clear, fair, and modern tipping system for your salon.</p>
 
@@ -457,7 +457,7 @@ const contactlessPaymentsArticle: LocalBlogPost = {
       'A step-by-step guide to setting up contactless payments in your salon. Covers NFC terminals, mobile wallets, QR code payments, tap-to-pay on phone, and how to train your team for a seamless client checkout experience.',
     aboutPosts: `
 <h2>Why Contactless Payments Are Now the Default</h2>
-<p>Contactless payments - where a client taps a card, phone, or wearable device against a reader to pay - have become the dominant checkout method in beauty businesses worldwide. In the GCC region, contactless transactions accounted for 78% of in-person card payments in 2025, up from 54% in 2022, according to Visa&rsquo;s Middle East Payments Report. Your <a href="/en/resources/blog/businesses/salon-payment-solutions">salon payment infrastructure</a> needs to meet this demand seamlessly.</p>
+<p>Contactless payments - where a client taps a card, phone, or wearable device against a reader to pay - have become the dominant checkout method in beauty businesses worldwide. In the GCC region, contactless transactions accounted for 78% of in-person card payments in 2025, up from 54% in 2022, according to Visa&rsquo;s Middle East Payments Report. Your <a href="/en/resources/blog/business/salon-payment-solutions">salon payment infrastructure</a> needs to meet this demand seamlessly.</p>
 <p>For salons specifically, contactless checkout offers three tangible advantages: faster transaction times (under 5 seconds vs 15&ndash;30 seconds for chip-and-PIN), a more hygienic experience (no shared PIN pads), and higher client satisfaction scores. A 2025 Mastercard beauty industry study found that salons offering contactless payments had 14% higher client satisfaction at checkout compared to those limited to chip-and-PIN or cash.</p>
 <p>This guide walks you through everything you need to enable contactless payments in your salon, from hardware selection to staff training.</p>
 
@@ -660,7 +660,7 @@ const salonInvoicingArticle: LocalBlogPost = {
       'A practical guide to salon invoicing covering invoice design, automated billing workflows, handling deposits and packages, recurring membership billing, and reducing overdue payments. Includes templates and automation tips.',
     aboutPosts: `
 <h2>Why Professional Invoicing Matters for Salons</h2>
-<p>Most salons collect payment at the point of service and never think about invoicing. But as your business grows into packages, memberships, corporate accounts, bridal bookings, and multi-visit treatments, professional invoicing becomes essential. A structured invoicing workflow within your <a href="/en/resources/blog/businesses/salon-payment-solutions">salon payment system</a> reduces overdue payments, professionalises your brand, creates clean financial records, and eliminates the awkward &ldquo;you still owe us&rdquo; conversations.</p>
+<p>Most salons collect payment at the point of service and never think about invoicing. But as your business grows into packages, memberships, corporate accounts, bridal bookings, and multi-visit treatments, professional invoicing becomes essential. A structured invoicing workflow within your <a href="/en/resources/blog/business/salon-payment-solutions">salon payment system</a> reduces overdue payments, professionalises your brand, creates clean financial records, and eliminates the awkward &ldquo;you still owe us&rdquo; conversations.</p>
 <p>Salons that implement professional invoicing reduce overdue payments by 40&ndash;60% compared to those relying on verbal agreements and informal follow-ups, according to a 2025 Intuit small business payments study. The reason is simple: a formal invoice creates a clear record with a stated amount, due date, and payment method - removing ambiguity from the transaction.</p>
 <p>This guide shows you how to set up professional invoicing for every billing scenario your salon encounters.</p>
 
@@ -1150,7 +1150,7 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>The True Cost of Processing Payments in Your Salon</h2>
 <p>Every time a client taps their card at your checkout, you pay a fee. At 2&ndash;3% per transaction, these fees seem minor. But across thousands of transactions per year, payment processing becomes one of your largest operating costs after rent and payroll. A salon processing 100,000 AED in monthly card payments at a 2.75% effective rate pays 33,000 AED annually in processing fees alone - enough to fund a part-time employee or a significant marketing campaign.</p>
-<p>The challenge is that payment processing pricing is deliberately complex. Processors use different fee structures, bundle costs differently, and bury charges in fine print. Most salon owners know their &ldquo;headline rate&rdquo; but not their effective rate - the actual total percentage they pay after all fees are counted. This guide dissects your <a href="/en/resources/blog/businesses/salon-payment-solutions">salon payment costs</a> so you understand exactly what you are paying and where you can save.</p>
+<p>The challenge is that payment processing pricing is deliberately complex. Processors use different fee structures, bundle costs differently, and bury charges in fine print. Most salon owners know their &ldquo;headline rate&rdquo; but not their effective rate - the actual total percentage they pay after all fees are counted. This guide dissects your <a href="/en/resources/blog/business/salon-payment-solutions">salon payment costs</a> so you understand exactly what you are paying and where you can save.</p>
 
 <h2>Understanding Fee Structures: The Three Models</h2>
 <p>Payment processors use one of three fee structures. Understanding which model your processor uses is the first step to controlling costs.</p>
@@ -1398,7 +1398,7 @@ const salonPosBuyersGuideArticleAr: LocalBlogPost = {
     description:
       'دليل مشتري شامل لأنظمة نقاط البيع للصالونات يغطي اختيار الأجهزة والميزات الأساسية ومتطلبات التكامل وتكلفة الملكية الإجمالية. يتضمن إطار قرار للصالونات ذات الموقع الواحد والصالونات متعددة الفروع.',
     aboutPosts: `<h2>ما يفعله نظام نقاط البيع حقًا لصالون حديث</h2>
-<p> يعد نظام نقاط البيع في الصالون بمثابة العمود الفقري للمعاملات لكل تفاعل مع العميل - وفي عام 2026، سيحدد ما هو أكثر بكثير من كيفية قبول المدفوعات. تعمل نقطة البيع الصحيحة على ربط <a href="/ar/resources/blog/businesses/salon-payment-solutions">سير عمل الدفع</a> بالمواعيد والمخزون وعمولات الموظفين وملفات تعريف العملاء والتقارير المالية في حلقة واحدة متكاملة. يؤدي النظام الخاطئ إلى تجزئة هذه العمليات، مما يؤدي إلى إنشاء حلول يدوية تكلفك ساعات كل أسبوع وأموالًا كل شهر.</p>
+<p> يعد نظام نقاط البيع في الصالون بمثابة العمود الفقري للمعاملات لكل تفاعل مع العميل - وفي عام 2026، سيحدد ما هو أكثر بكثير من كيفية قبول المدفوعات. تعمل نقطة البيع الصحيحة على ربط <a href="/ar/resources/blog/business/salon-payment-solutions">سير عمل الدفع</a> بالمواعيد والمخزون وعمولات الموظفين وملفات تعريف العملاء والتقارير المالية في حلقة واحدة متكاملة. يؤدي النظام الخاطئ إلى تجزئة هذه العمليات، مما يؤدي إلى إنشاء حلول يدوية تكلفك ساعات كل أسبوع وأموالًا كل شهر.</p>
 <p> وفقًا لتقرير الاتحاد الوطني للبيع بالتجزئة لعام 2025، شهدت الشركات التي قامت بالترقية إلى أنظمة نقاط البيع المتكاملة انخفاضًا بنسبة 23% في وقت الخروج وزيادة بنسبة 12% في متوسط قيمة المعاملة خلال الأشهر الستة الأولى. بالنسبة للصالونات على وجه التحديد، حيث تكون تجربة الدفع هي الانطباع الأخير قبل مغادرة العميل، تُترجم هذه الأرقام مباشرةً إلى الاحتفاظ بالإيرادات والإيرادات.</p>
 <p> يشرح دليل المشتري هذا كل قرار يتعين عليك اتخاذه عند اختيار نقطة البيع للصالون - بدءًا من عوامل شكل الأجهزة ودعم طريقة الدفع وحتى عمق التكامل وتكلفة الملكية على المدى الطويل. سواء كنت تفتح موقعك الأول أو تقوم بترقية عملية حالية متعددة الفروع، فإن هذا الدليل يمنحك إطار العمل للتقييم والاختيار بثقة.</p>
 
@@ -1412,7 +1412,7 @@ const salonPosBuyersGuideArticleAr: LocalBlogPost = {
 
 <h3>نقاط البيع المعتمدة على الأجهزة اللوحية</h3>
 <p>جهاز iPad أو جهاز لوحي يعمل بنظام Android يعمل ببرنامج نقطة البيع مع قارئ بطاقة متصل أو Bluetooth. هذا هو التكوين الأكثر شيوعًا لشركات التجميل لأن الجهاز اللوحي يعمل أيضًا كمحطة حجز وشاشة تسجيل وصول العميل وشاشة عرض للبيع بالتجزئة عند عدم معالجة المدفوعات.</p>
-<p><strong>الأفضل لـ:</strong> الصالونات ذات الموقع الواحد واستوديوهات البوتيك التي تحتاج إلى جهاز مكتب أمامي متعدد الاستخدامات. تعمل الأنظمة الأساسية مثل <a href="/ar/features/business/payment-processing">The Daisy</a> أصلاً على الأجهزة اللوحية، وتجمع بين نقاط البيع والحجز وإدارة العملاء في واجهة واحدة.</p>
+<p><strong>الأفضل لـ:</strong> الصالونات ذات الموقع الواحد واستوديوهات البوتيك التي تحتاج إلى جهاز مكتب أمامي متعدد الاستخدامات. تعمل الأنظمة الأساسية مثل <a href="/ar/features/business/payment-processing">ديزي</a> أصلاً على الأجهزة اللوحية، وتجمع بين نقاط البيع والحجز وإدارة العملاء في واجهة واحدة.</p>
 <p><strong>التكلفة النموذجية:</strong> 1,200-2,500 درهم إماراتي للكمبيوتر اللوحي بالإضافة إلى قارئ البطاقات. تتراوح اشتراكات البرامج الشهرية بين 100-500 درهم حسب النظام الأساسي.</p>
 
 <h3>قارئات بطاقات الهاتف المحمول</h3>
@@ -1432,7 +1432,7 @@ const salonPosBuyersGuideArticleAr: LocalBlogPost = {
 <p> عندما يقوم العميل بتسجيل المغادرة، يجب أن تقوم نقطة البيع تلقائيًا بسحب الخدمات المحجوزة والموظف الذي قام بها وأي منتجات مستخدمة والإجمالي المتوقع. يعد الإدخال اليدوي للخدمات عند الخروج علامة على انقطاع النظام. يؤدي تسجيل الخروج المرتبط بالموعد إلى تقليل متوسط وقت الخروج من 3 إلى 5 دقائق إلى أقل من 60 ثانية ويزيل أخطاء التسعير.</p>
 
 <h3>دعم طرق الدفع المتعددة</h3>
-<p> يجب أن يتعامل نظامك مع بطاقات الائتمان، وبطاقات الخصم، وApple Pay، وGoogle Pay، وSamsung Pay، والنقد، والتحويلات المصرفية، وأرصدة المحفظة الرقمية، وبطاقات الهدايا، واسترداد الطرود، والمدفوعات المقسمة عبر طرق متعددة. في سوق دول مجلس التعاون الخليجي، حيث تحمل نسبة كبيرة من العملاء بطاقات دولية أو يفضلون محافظ الهاتف المحمول، فإن خيارات الدفع المحدودة تكلفك الإيرادات بشكل مباشر. وجدت دراسة أجرتها Worldpay عام 2025 أن 42% من عملاء التجميل قد تخلوا عن المعاملة لأن طريقة الدفع المفضلة لديهم لم تكن متاحة.</p>
+<p> يجب أن يتعامل نظامك مع بطاقات الائتمان، وبطاقات الخصم، وApple Pay، وجوجل Pay، وSamsung Pay، والنقد، والتحويلات المصرفية، وأرصدة المحفظة الرقمية، وبطاقات الهدايا، واسترداد الطرود، والمدفوعات المقسمة عبر طرق متعددة. في سوق دول مجلس التعاون الخليجي، حيث تحمل نسبة كبيرة من العملاء بطاقات دولية أو يفضلون محافظ الهاتف المحمول، فإن خيارات الدفع المحدودة تكلفك الإيرادات بشكل مباشر. وجدت دراسة أجرتها Worldpay عام 2025 أن 42% من عملاء التجميل قد تخلوا عن المعاملة لأن طريقة الدفع المفضلة لديهم لم تكن متاحة.</p>
 
 <h3> البقشيش المتكامل</h3>
 <p> تؤدي مطالبات البقشيش الرقمية على شاشة الدفع إلى زيادة متوسط مبالغ البقشيش بنسبة 15-20% مقارنة بالبقشيش النقدي فقط. يجب أن تقدم نقطة البيع الخاصة بك نسبًا مئوية مقترحة قابلة للتكوين (15%، 20%، 25% هي النسبة القياسية)، وتسمح بمبالغ مخصصة، وتقسيم معلومات الدعم عبر العديد من الموظفين الذين ساهموا في الخدمة.</p>
@@ -1465,7 +1465,7 @@ const salonPosBuyersGuideArticleAr: LocalBlogPost = {
 
 <h3> التكامل العميق (نقطة بيع النظام الأساسي الأصلي)</h3>
 <p> تم دمج نقطة البيع في نفس النظام الأساسي الذي يتعامل مع الحجز وإدارة العملاء وجدولة الموظفين والاتصالات. لا توجد مزامنة لأنه لا يوجد فصل - يتم ربط الدفع تلقائيًا بالموعد والعميل والموظف والعمولة والتقرير المالي.</p>
-<p><strong>مثال:</strong> <a href="/ar/features/business/payment-processing">يقوم نظام الدفع المتكامل الخاص بـ Daisy</a> بمعالجة الدفع، وتحديث الملف التعريفي للعميل، وحساب عمولة الموظفين، وضبط مخزون المنتجات المستخدمة، وتشغيل إيصال رقمي عبر WhatsApp، وتسجيل المعاملة في لوحة المعلومات المالية - كل ذلك في جهاز واحد الخطوة.</p>
+<p><strong>مثال:</strong> <a href="/ar/features/business/payment-processing">يقوم نظام الدفع المتكامل الخاص بـ ديزي</a> بمعالجة الدفع، وتحديث الملف التعريفي للعميل، وحساب عمولة الموظفين، وضبط مخزون المنتجات المستخدمة، وتشغيل إيصال رقمي عبر واتساب، وتسجيل المعاملة في لوحة المعلومات المالية - كل ذلك في جهاز واحد الخطوة.</p>
 <p>بالنسبة لمعظم الصالونات، يوفر التكامل العميق من 5 إلى 10 ساعات أسبوعيًا في العمل الإداري مقارنة بالتكامل السطحي، ويزيل تناقضات البيانات التي تؤدي إلى نزاعات بشأن العمولة وتقارير غير دقيقة.</p>
 
 <h2>التكلفة الإجمالية للملكية: تتجاوز معدل المعالجة</h2>
@@ -1509,7 +1509,7 @@ const salonPosBuyersGuideArticleAr: LocalBlogPost = {
 <li><strong>الموثوقية (الوزن: 3):</strong> سجل وقت التشغيل، والقدرة على عدم الاتصال بالإنترنت، واستجابة دعم العملاء؟</li>
 <li><strong>قابلية التوسع (الوزن: 2):</strong> هل يمكن للنظام أن ينمو معك من موقع واحد إلى فروع متعددة؟</li>
 </ul>
-<p> يجب حذف أي نظام يسجل أقل من 3.5 من المتوسط المرجح من الاعتبار. تسجل خطط إدارة صالون <a href="/ar/pricing">salon</a> الخاصة بـ Daisy أعلى المستويات باستمرار في عمق التكامل نظرًا لأن معالجة الدفع أصلية في النظام الأساسي وليست مثبتة.</p>
+<p> يجب حذف أي نظام يسجل أقل من 3.5 من المتوسط المرجح من الاعتبار. تسجل خطط <a href="/ar/pricing">ديزي</a> لإدارة الصالون أعلى المستويات باستمرار في عمق التكامل لأن معالجة الدفع أصلية داخل المنصة وليست إضافة مثبتة.</p>
 
 <h2> اعتبارات الموقع الواحد مقابل اعتبارات الفروع المتعددة</h2>
 
@@ -1527,12 +1527,12 @@ const salonPosBuyersGuideArticleAr: LocalBlogPost = {
 <li><strong>الأسبوع الثالث:</strong> ابدأ العمل بالنظام الجديد مع الاحتفاظ بالنظام القديم متاحًا كنسخة احتياطية. معالجة جميع المعاملات الحقيقية من خلال نقطة البيع الجديدة.</li>
 <li><strong>الأسبوع الرابع:</strong> قم بإلغاء تنشيط النظام القديم بمجرد التحقق من الدقة، وتلقي جميع العوائد المعلقة، والتأكد من أن فريقك مرتاح لسير العمل الجديد.</li>
 </ol>
-<p>يوفر فريق الإعداد في Daisy دعمًا مخصصًا للترحيل، بما في ذلك نقل قاعدة بيانات العملاء الخاصة بك وسجل الدفعات وسجلات المواعيد حتى تبدأ بصورة تشغيلية كاملة من اليوم الأول.</p>
+<p>يوفر فريق الإعداد في ديزي دعمًا مخصصًا للترحيل، بما في ذلك نقل قاعدة بيانات العملاء الخاصة بك وسجل الدفعات وسجلات المواعيد حتى تبدأ بصورة تشغيلية كاملة من اليوم الأول.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
 <h3>ما هي الميزانية التي يجب أن أخصصها لنظام نقاط البيع في الصالون؟</h3>
-<p>للصالون ذو الموقع الواحد، الميزانية 1500-3000 درهم إماراتي للأجهزة الأولية و200-500 درهم شهريًا للبرامج. رسوم المعالجة التي تتراوح من 2.5 إلى 2.9% لكل معاملة إضافية. تتضمن المنصات المتكاملة مثل The Daisy نقاط البيع كجزء من اشتراك إدارة الصالون، لذلك لا تدفع مقابل نظام نقاط البيع المنفصل بالإضافة إلى أدوات الإدارة الخاصة بك.</p>
+<p>للصالون ذو الموقع الواحد، الميزانية 1500-3000 درهم إماراتي للأجهزة الأولية و200-500 درهم شهريًا للبرامج. رسوم المعالجة التي تتراوح من 2.5 إلى 2.9% لكل معاملة إضافية. تتضمن المنصات المتكاملة مثل ديزي نقاط البيع كجزء من اشتراك إدارة الصالون، لذلك لا تدفع مقابل نظام نقاط البيع المنفصل بالإضافة إلى أدوات الإدارة الخاصة بك.</p>
 
 <h3>هل يمكنني استخدام قارئ البطاقات الموجود لدي مع نظام نقاط البيع الجديد؟</h3>
 <p> يعتمد ذلك على الأجهزة والنظام الأساسي. بعض الأنظمة الأساسية لا تعتمد على الأجهزة وتدعم أجهزة قراءة بطاقات Bluetooth القياسية. ويتطلب البعض الآخر أجهزة معتمدة محددة. تحقق من التوافق قبل الشراء. إذا كنت بحاجة إلى أجهزة جديدة، فغالبًا ما تكون التكلفة لمرة واحدة أقل من 500 درهم إماراتي.</p>
@@ -1544,7 +1544,7 @@ const salonPosBuyersGuideArticleAr: LocalBlogPost = {
 <p> تتطلب أنظمة نقاط البيع الحديثة وجود إنترنت للحصول على ترخيص البطاقة في الوقت الفعلي. ومع ذلك، توفر الأنظمة الجيدة وضعًا غير متصل بالشبكة يقوم بوضع المعاملات في قائمة الانتظار أثناء انقطاعات قصيرة ومعالجتها عند عودة الاتصال. بالنسبة للمواقع التي لا يمكن الاعتماد على الإنترنت فيها، يضمن الاتصال الاحتياطي الخلوي (نقطة اتصال محمولة) إمكانية معالجة الدفعات دائمًا.</p>
 
 <h3>كيف أتعامل مع امتثال PCI لنظام نقطة البيع؟</h3>
-<p> يتعامل موفرو نقاط البيع ذوو السمعة الطيبة مع امتثال PCI DSS نيابةً عنك. يتم تشفير بيانات البطاقة في الجهاز ولا يتم تخزينها أبدًا على أنظمتك المحلية. تحافظ الأنظمة الأساسية المستندة إلى السحابة مثل The Daisy على امتثال PCI DSS المستوى 1، وهو أعلى معايير الأمان، لذلك لا تحتاج إلى إدارة الامتثال بنفسك أو دفع رسوم امتثال منفصلة.</p>`,
+<p> يتعامل موفرو نقاط البيع ذوو السمعة الطيبة مع امتثال PCI DSS نيابةً عنك. يتم تشفير بيانات البطاقة في الجهاز ولا يتم تخزينها أبدًا على أنظمتك المحلية. تحافظ الأنظمة الأساسية المستندة إلى السحابة مثل ديزي على امتثال PCI DSS المستوى 1، وهو أعلى معايير الأمان، لذلك لا تحتاج إلى إدارة الامتثال بنفسك أو دفع رسوم امتثال منفصلة.</p>`,
     metaTitle: 'أنظمة نقاط البيع للصالون: دليل المشتري الشامل | ديزي',
     metaDescription: 'دليل شامل لاختيار نظام نقاط البيع المناسب لصالونك.',
     createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
@@ -1565,7 +1565,7 @@ const salonTippingPoliciesArticleAr: LocalBlogPost = {
     slug: 'salon-tipping-policies-digital',
     description: 'دليل شامل لإكراميات الصالونات يغطي معايير آداب السلوك، وكيفية وضع سياسة واضحة لإكراميات عملك، وحلول البقشيش الرقمية التي تزيد من الإكراميات، ونماذج توزيع الإكراميات التي تجعل فريقك سعيدًا.',
     aboutPosts: `<h2> البقشيش في صناعة التجميل: المشهد الحالي</h2>
-<p> تمثل الإكراميات ما بين 15 إلى 25% من إجمالي تعويضات محترفي التجميل في معظم الأسواق. ومع ذلك، فإن معظم الصالونات ليس لديها سياسة رسمية لإكراميات البقشيش، مما يترك العملاء في حيرة من أمرهم بشأن التوقعات، والموظفين غير متأكدين من دخلهم، ويقع أصحابها في وسط نزاعات حول توزيع البقشيش. يعمل إطار عمل البقشيش المصمم جيدًا ضمن <a href="/ar/resources/blog/businesses/salon-payment-solutions">سير عمل الدفع في الصالون</a> على إزالة هذا الغموض بالنسبة لجميع المشاركين.</p>
+<p> تمثل الإكراميات ما بين 15 إلى 25% من إجمالي تعويضات محترفي التجميل في معظم الأسواق. ومع ذلك، فإن معظم الصالونات ليس لديها سياسة رسمية لإكراميات البقشيش، مما يترك العملاء في حيرة من أمرهم بشأن التوقعات، والموظفين غير متأكدين من دخلهم، ويقع أصحابها في وسط نزاعات حول توزيع البقشيش. يعمل إطار عمل البقشيش المصمم جيدًا ضمن <a href="/ar/resources/blog/business/salon-payment-solutions">سير عمل الدفع في الصالون</a> على إزالة هذا الغموض بالنسبة لجميع المشاركين.</p>
 <p> لقد أدى التحول إلى المدفوعات الرقمية إلى تغيير جذري في ديناميكيات البقشيش. تتناقص الإكراميات النقدية نظرًا لأن عددًا أقل من العملاء يحملون العملة المادية. وجد تقرير 2025 Square أن مطالبات الإكراميات الرقمية تزيد متوسط ​​المكافأة بنسبة 18% مقارنةً بالإكراميات النقدية فقط - ولكن فقط عندما تكون واجهة البقشيش مصممة جيدًا ومدمجة بشكل طبيعي في تجربة الدفع. الصالونات التي تتجاهل هذا التحول تعمل بشكل فعال على تقليل دخل فريقها.</p>
 <p>يغطي هذا الدليل كل ما تحتاجه لبناء نظام إكراميات واضح وعادل وحديث لصالونك.</p>
 
@@ -1617,7 +1617,7 @@ const salonTippingPoliciesArticleAr: LocalBlogPost = {
 <li><strong>إظهار المبالغ بالدولار:</strong> عرض كل من النسبة المئوية والمبلغ المحسوب ("20% - 60 درهم"). يقوم العملاء بمعالجة الأرقام المحددة بشكل أسرع من النسب المئوية، خاصة بالنسبة للخدمات ذات القيمة العالية.</li>
 <li><strong> قم بتضمين خيار عدم الإكرامية:</strong> قم دائمًا بتضمين زر "لا إكرامية" أو "تخطي" واضح. إخفاء هذا الخيار يخلق الاستياء والمراجعات السلبية. إن جعله مرئيًا ولكن أقل بروزًا قليلاً من خيارات الطرف هو التوازن الصحيح.</li>
 </ul>
-<p>يتضمن <a href="/ar/features/business/payment-processing">نظام الدفع المتكامل التابع لشركة Daisy</a> مطالبات إكرامية قابلة للتكوين بالكامل والتي يمكن لأصحاب الصالونات تخصيصها حسب نوع الخدمة ومستوى السعر وتفضيلات الموظفين.</p>
+<p>يتضمن <a href="/ar/features/business/payment-processing">نظام الدفع المتكامل التابع لشركة ديزي</a> مطالبات إكرامية قابلة للتكوين بالكامل والتي يمكن لأصحاب الصالونات تخصيصها حسب نوع الخدمة ومستوى السعر وتفضيلات الموظفين.</p>
 
 <h3>متى يتم تقديم المطالبة بالنصيحة</h3>
 <p> يؤثر التوقيت على النتائج. يجب أن تظهر المطالبة بالتلميح:</p>
@@ -1705,7 +1705,7 @@ const contactlessPaymentsArticleAr: LocalBlogPost = {
     slug: 'contactless-payments-salon-setup',
     description: 'دليل خطوة بخطوة لإعداد طرق الدفع اللاتلامسية في صالونك. يغطي محطات NFC، ومحافظ الهاتف المحمول، ومدفوعات رمز الاستجابة السريعة، والنقر للدفع على الهاتف، وكيفية تدريب فريقك للحصول على تجربة دفع سلسة للعميل.',
     aboutPosts: `<h2>لماذا أصبحت الدفعات اللاتلامسية هي الطريقة الافتراضية الآن</h2>
-<p> أصبحت عمليات الدفع بدون تلامس - حيث ينقر العميل على البطاقة أو الهاتف أو الجهاز القابل للارتداء على القارئ للدفع - هي طريقة الدفع السائدة في شركات التجميل في جميع أنحاء العالم. وفي منطقة دول مجلس التعاون الخليجي، شكلت المعاملات اللاتلامسية 78% من مدفوعات البطاقات الشخصية في عام 2025، ارتفاعًا من 54% في عام 2022، وفقًا لتقرير المدفوعات في الشرق الأوسط الصادر عن Visa. يجب أن تلبي البنية التحتية للدفع في <a href="/ar/resources/blog/businesses/salon-payment-solutions">salon</a> هذا الطلب بسلاسة.</p>
+<p> أصبحت عمليات الدفع بدون تلامس, حيث ينقر العميل على البطاقة أو الهاتف أو الجهاز القابل للارتداء على القارئ للدفع, هي طريقة الدفع السائدة في شركات التجميل في جميع أنحاء العالم. وفي منطقة دول مجلس التعاون الخليجي، شكلت المعاملات اللاتلامسية 78% من مدفوعات البطاقات الشخصية في عام 2025، ارتفاعًا من 54% في عام 2022، وفقًا لتقرير المدفوعات في الشرق الأوسط الصادر عن فيزا. يجب أن تلبي البنية التحتية لمدفوعات الصالون هذا الطلب بسلاسة, راجع <a href="/ar/resources/blog/business/salon-payment-solutions">دليل حلول مدفوعات الصالون</a>.</p>
 <p>بالنسبة للصالونات على وجه التحديد، يوفر الدفع بدون تلامس ثلاث مزايا ملموسة: أوقات أسرع للمعاملات (أقل من 5 ثوانٍ مقابل 15-30 ثانية للرقاقة ورقم التعريف الشخصي)، وتجربة أكثر نظافة (لا توجد لوحات PIN مشتركة)، ودرجات أعلى لرضا العملاء. وجدت دراسة أجرتها شركة Mastercard في مجال التجميل في عام 2025 أن الصالونات التي تقدم خدمات الدفع بدون تلامس حققت رضا عملاء أعلى بنسبة 14% عند الدفع مقارنة بتلك التي تقتصر على استخدام الشريحة ورقم التعريف الشخصي أو النقد.</p>
 <p>يرشدك هذا الدليل إلى كل ما تحتاجه لتمكين الدفع بدون تلامس في صالونك، بدءًا من اختيار الأجهزة وحتى تدريب الموظفين.</p>
 
@@ -1715,17 +1715,17 @@ const contactlessPaymentsArticleAr: LocalBlogPost = {
 <h3> اضغط على بطاقة NFC</h3>
 <p> يتيح الاتصال قريب المدى (NFC) لبطاقات الائتمان والخصم المزودة بشريحة لا تلامسية التواصل مع محطة الدفع الخاصة بك عند حملها في نطاق 4 سنتيمترات. تتم المصادقة على المعاملة من خلال شريحة البطاقة المدمجة ولا تتطلب رقم تعريف شخصي للمبالغ التي تقل عن حد الدفع اللاتلامسي المعمول به في الولاية القضائية (عادةً 300-500 درهم إماراتي في دول مجلس التعاون الخليجي). بالنسبة للمبالغ التي تزيد عن الحد، يقوم العميل بالنقر ثم يقوم بإدخال رقم التعريف الشخصي.</p>
 
-<h3>محافظ الهاتف المحمول (Apple Pay، Google Pay، Samsung Pay)</h3>
+<h3>محافظ الهاتف المحمول (Apple Pay، جوجل Pay، Samsung Pay)</h3>
 <p> يقوم العملاء بتخزين تفاصيل بطاقتهم في المحفظة الرقمية لهواتفهم الذكية. يقومون بالمصادقة باستخدام Face ID أو بصمة الإصبع أو رمز مرور الجهاز ثم يضعون هواتفهم بالقرب من قارئ NFC. ليس لمعاملات محفظة الهاتف المحمول حد أعلى لأن المصادقة البيومترية تحل محل متطلبات رقم التعريف الشخصي.</p>
 
 <h3>المدفوعات القابلة للارتداء</h3>
-<p> تستخدم الساعات الذكية (Apple Watch وSamsung Galaxy Watch وGarmin Pay) نفس تقنية NFC المستخدمة في الهواتف. ينقر العميل نقرًا مزدوجًا على زر الساعة ويضع معصمه بالقرب من القارئ. وهذا ينمو بين العملاء الذين يركزون على اللياقة البدنية والعافية.</p>
+<p> تستخدم الساعات الذكية (مثل ساعة آبل وساعة سامسونج وخدمات الدفع على الساعة) نفس تقنية NFC المستخدمة في الهواتف. ينقر العميل نقرًا مزدوجًا على زر الساعة ويضع معصمه بالقرب من القارئ. وهذا ينمو بين العملاء الذين يركزون على اللياقة البدنية والعافية.</p>
 
 <h3>المدفوعات باستخدام رمز الاستجابة السريعة</h3>
 <p> تعرض الشاشة الطرفية أو شاشة الدفع رمز الاستجابة السريعة الذي يقوم العميل بمسحه ضوئيًا باستخدام كاميرا هاتفه أو التطبيق المصرفي. يتم إتمام الدفع في تطبيق العميل. تحظى مدفوعات QR بشعبية في الأسواق التي تكون فيها البنية التحتية لتقنية NFC أقل انتشارًا، وتعمل بدون أجهزة متخصصة - أي شاشة تعرض رمز QR تكفي.</p>
 
 <h3>انقر للدفع على الهاتف</h3>
-<p> يستخدم موظفوك هاتف iPhone أو Android كمحطة دفع بحد ذاتها - ولا يلزم وجود أجهزة منفصلة. يقوم العميل بالضغط على بطاقته أو هاتفه على جهاز الموظف. تعمل Apple Tap to Pay، وGoogle Tap to Pay for Business، وStripe Tap to Pay على تمكين ذلك. إنه مثالي للمحترفين المتنقلين والصالونات الصغيرة التي ترغب في تجنب تكاليف الأجهزة.</p>
+<p> يستخدم موظفوك هاتف آيفون أو أندرويد كمحطة دفع بحد ذاتها دون الحاجة إلى أجهزة منفصلة. يقوم العميل بالنقر ببطاقته أو هاتفه على جهاز الموظف. تدعم ذلك ميزات "الدفع بالنقر" المتاحة من آبل وجوجل، وكذلك بعض مزودي الدفع مثل سترايب. هذا خيار ممتاز للمحترفين المتنقلين والصالونات الصغيرة التي ترغب في تقليل تكاليف الأجهزة.</p>
 
 <h2>متطلبات الأجهزة لكل طريقة</h2>
 
@@ -1733,9 +1733,9 @@ const contactlessPaymentsArticleAr: LocalBlogPost = {
 <p> أنت بحاجة إلى محطة دفع تدعم تقنية NFC. تتضمن معظم المحطات الطرفية الحديثة المصنعة بعد عام 2020 تقنية NFC. إذا كان جهازك الطرفي قديمًا، فمن المحتمل أنه لا يدعم الدفع بدون تلامس.</p>
 <p><strong>الأجهزة الموصى بها:</strong></p>
 <ul>
-<li>Stripe Terminal BBPOS WisePOS E - سطح العمل، شاشة ملونة تعمل باللمس، الكل في واحد</li>
+<li>جهاز طرفي مكتبي بشاشة تعمل باللمس (مناسب لنقطة دفع ثابتة)</li>
 <li>محطة طرفية مربعة - سطح عمل مزود بطابعة إيصالات مدمجة وشاشة قلب</li>
-<li>SumUp Air - قارئ بلوتوث محمول، مقترن بالهاتف</li>
+<li>قارئ بلوتوث محمول (مقترن بالهاتف، مناسب للدفع المتنقل)</li>
 <li> أجهزة قراءة مدمجة في النظام الأساسي - الأجهزة التي توفرها منصة إدارة الصالون الخاصة بك لإجراء عملية دفع سلسة</li>
 </ul>
 
@@ -1743,7 +1743,7 @@ const contactlessPaymentsArticleAr: LocalBlogPost = {
 <p> لا حاجة إلى أجهزة مخصصة. يقوم برنامج نقطة البيع الخاص بك بإنشاء رمز QR يتم عرضه على جهازك اللوحي أو الشاشة الطرفية أو الحامل المطبوع. يقوم العميل بمسحها ضوئيًا باستخدام هاتفه.</p>
 
 <h3>للنقر للدفع على الهاتف</h3>
-<p> هاتف iPhone XS أو إصدار أحدث (لنظام Apple Tap to Pay) أو هاتف Android مزود بتقنية NFC ويعمل بنظام التشغيل Android 9+. يتيح تطبيق الدفع (Stripe أو Square أو منصة الصالون الخاصة بك) لشريحة NFC الخاصة بالهاتف تلقي المدفوعات. ليست هناك حاجة إلى أجهزة إضافية.</p>
+<p> هاتف آيفون XS أو إصدار أحدث (لدعم الدفع بالنقر) أو هاتف أندرويد مزود بتقنية NFC ويعمل بإصدار أندرويد 9 أو أحدث. يتيح تطبيق الدفع (مثل سترايب أو سكوير أو منصة الصالون الخاصة بك) لشريحة NFC في الهاتف تلقي المدفوعات. ليست هناك حاجة إلى أجهزة إضافية.</p>
 
 <h2>دليل الإعداد خطوة بخطوة</h2>
 
@@ -1751,32 +1751,32 @@ const contactlessPaymentsArticleAr: LocalBlogPost = {
 <p>تحقق مما إذا كان جهازك الحالي يدعم تقنية NFC/التلامسية. ابحث عن رمز عدم التلامس (أربعة خطوط منحنية) على الجهاز أو تحقق من مواصفات الشركة المصنعة. إذا كان جهازك الطرفي مزودًا بالشريحة ورقم التعريف الشخصي فقط، فستحتاج إلى قارئ بديل أو إضافي.</p>
 
 <h3>الخطوة الثانية: اختر معالج الدفع الخاص بك</h3>
-<p> يجب أن يدعم معالج الدفع الخاص بك المعاملات اللاتلامسية. تقوم جميع المعالجات الحديثة الرئيسية بذلك (Stripe وSquare وAdyen وSumUp والمعالجات المدمجة في النظام الأساسي مثل <a href="/ar/features/business/payment-processing">The Daisy</a>). إذا كنت تستخدم معالجًا أقدم أو إقليميًا، فتأكد من دعم الدفع بدون تلامس قبل المتابعة.</p>
+<p> يجب أن يدعم معالج الدفع الخاص بك المعاملات اللاتلامسية. تقوم معظم المعالجات الحديثة الرئيسية بذلك (مثل سترايب، سكوير، أدين، سوم أب، أو المعالجات المدمجة في المنصات مثل <a href="/ar/features/business/payment-processing">ديزي</a>). إذا كنت تستخدم معالجًا أقدم أو إقليميًا، فتأكد من دعم الدفع بدون تلامس قبل المتابعة.</p>
 
 <h3>الخطوة 3: تكوين إعدادات الدفع بدون تلامس</h3>
 <p>في إعدادات الجهاز الطرفي أو برنامج نقطة البيع:</p>
 <ul>
 <li>تمكين قبول NFC/بدون تلامس</li>
 <li>قم بتعيين حد الدفع بدون تلامس (أو اتبع الإعداد الافتراضي لولايتك القضائية)</li>
-<li>تمكين قبول محفظة الهاتف المحمول (Apple Pay، Google Pay، Samsung Pay)</li>
+<li>تمكين قبول محافظ الهاتف المحمول (آبل باي، جوجل باي، سامسونج باي)</li>
 <li> قم بتكوين تدفق البقشيش ليظهر بعد النقر بدون تلامس</li>
-<li>قم بإعداد الإيصالات الرقمية (البريد الإلكتروني أو الرسائل القصيرة أو WhatsApp) باعتبارها طريقة التسليم الافتراضية للدفع اللاحق</li>
+<li>قم بإعداد الإيصالات الرقمية (البريد الإلكتروني أو الرسائل القصيرة أو واتساب) باعتبارها طريقة التسليم الافتراضية للدفع اللاحق</li>
 </ul>
 
 <h3>الخطوة 4: اختبار كل طريقة دفع</h3>
 <p>قبل بدء البث المباشر مع العملاء، اختبر كل طريقة بدون تلامس تخطط لقبولها:</p>
 <ul>
 <li>النقر الفعلي على البطاقة بدون تلامس (سواء أسفل أو أعلى من حد رقم التعريف الشخصي)</li>
-<li>Apple Pay (iPhone وApple Watch)</li>
-<li>Google Pay (هاتف Android)</li>
-<li>Samsung Pay</li>
+<li>آبل باي (آيفون وساعة آبل)</li>
+<li>جوجل باي (هاتف أندرويد)</li>
+<li>سامسونج باي</li>
 <li> الدفع برمز الاستجابة السريعة (إذا كان متاحًا)</li>
 <li>الدفع عبر الهاتف (في حالة استخدام هذه الطريقة)</li>
 </ul>
 <p>تحقق من أن النصائح والإيصالات وتحديثات الملف الشخصي للعميل تعمل بشكل صحيح لكل طريقة.</p>
 
 <h3>الخطوة 5: تحديث الإعداد الفعلي</h3>
-<p> ضع رمز الدفع اللاتلامسي في مكان بارز في منطقة الدفع الخاصة بك. ضع الجهاز بزاوية وارتفاع حيث يمكن للعملاء النقر بشكل مريح دون الميل أو الوصول. بالنسبة لمحافظ الهاتف المحمول، هناك لافتة صغيرة تقول "نحن نقبل Apple Pay وGoogle Pay" تطمئن العملاء بأن طريقتهم المفضلة مدعومة.</p>
+<p> ضع رمز الدفع اللاتلامسي في مكان بارز في منطقة الدفع الخاصة بك. ضع الجهاز بزاوية وارتفاع حيث يمكن للعملاء النقر بشكل مريح دون الميل أو الوصول. بالنسبة لمحافظ الهاتف المحمول، فإن لافتة صغيرة تقول "نحن نقبل آبل باي وجوجل باي" تطمئن العملاء بأن طريقتهم المفضلة مدعومة.</p>
 
 <h3>الخطوة 6: تدريب فريقك</h3>
 <p> يجب على كل موظف يتفاعل مع العملاء عند الدفع أن يعرف:</p>
@@ -1792,13 +1792,13 @@ const contactlessPaymentsArticleAr: LocalBlogPost = {
 <p> يعد إعداد الجهاز نصف المهمة فقط. إن تحسين عملية الدفع يحدد ما إذا كانت تقنية الدفع التلامسي ستوفر السرعة الكاملة ومزايا الرضا.</p>
 
 <h3>حساب الإجمالي مسبقًا</h3>
-<p> اجعل الإجمالي جاهزًا على الشاشة الطرفية قبل أن يقترب العميل من المكتب. في نظام متكامل مثل The Daisy، يقوم الموعد تلقائيًا بملء إجمالي الخروج. في الأنظمة غير المتصلة، يجب على موظف الاستقبال إدخال المبلغ يدويًا - وهذا هو المكان الذي يتم فيه فقدان الثواني (وصبر العميل).</p>
+<p> اجعل الإجمالي جاهزًا على الشاشة الطرفية قبل أن يقترب العميل من المكتب. في نظام متكامل مثل ديزي، يقوم الموعد تلقائيًا بملء إجمالي الخروج. في الأنظمة غير المتصلة، يجب على موظف الاستقبال إدخال المبلغ يدويًا - وهذا هو المكان الذي يتم فيه فقدان الثواني (وصبر العميل).</p>
 
 <h3>تقديم البقشيش قبل الصنبور</h3>
 <p> يجب أن تظهر مطالبة البقشيش قبل أن ينقر العميل، وليس بعده. بمجرد قيام العميل بالنقر ومعالجة المعاملة، يبدو التفاعل مكتملاً. إن إدراج شاشة إكرامية بعد النقر يبدو وكأنه فكرة لاحقة ويقلل معدلات الإكرامية بنسبة تصل إلى 30% مقارنة بالمطالبات السابقة للنقر.</p>
 
 <h3>الافتراضي للإيصالات الرقمية</h3>
-<p> بعد الدفع بدون تلامس، اسأل "هل يجب أن أرسل الإيصال إلى بريدك الإلكتروني أو واتساب؟" بدلاً من "هل ترغب في الحصول على إيصال؟". تفترض الصياغة الأولى أن الإيصال مطلوب (عادةً ما يكون كذلك) وتوفر خيار التسليم المناسب. تقوم Daisy بإرسال إيصالات تلقائية بعد الزيارة من خلال قناة الاتصال المفضلة للعميل.</p>
+<p> بعد الدفع بدون تلامس، اسأل "هل يجب أن أرسل الإيصال إلى بريدك الإلكتروني أو واتساب؟" بدلاً من "هل ترغب في الحصول على إيصال؟". تفترض الصياغة الأولى أن الإيصال مطلوب (عادةً ما يكون كذلك) وتوفر خيار التسليم المناسب. تقوم ديزي بإرسال إيصالات تلقائية بعد الزيارة من خلال قناة الاتصال المفضلة للعميل.</p>
 
 <h3>التعامل مع حالات الفشل بلطف</h3>
 <p> تفشل أحيانًا المعاملات غير التلامسية بسبب تحديد موضع البطاقة أو تداخل NFC أو مشكلات الاتصال. تدريب الموظفين على الاستجابة بهدوء: "دعونا نحاول مرة أخرى - ضع بطاقتك بشكل مسطح أمام القارئ للحظة". إذا فشلت المحاولة الثانية، فانتقل إلى الشريحة ورقم التعريف الشخصي دون أن يشعر العميل بأنه ارتكب خطأ ما.</p>
@@ -1826,16 +1826,16 @@ const contactlessPaymentsArticleAr: LocalBlogPost = {
 <h2>الأسئلة الشائعة</h2>
 
 <h3>هل الدفع بدون تلامس آمن لخدمات الصالون عالية القيمة؟</h3>
-<p>نعم. ليس لمدفوعات المحفظة المحمولة (Apple Pay وGoogle Pay) حد أعلى لأنها تستخدم المصادقة البيومترية. تتطلب المعاملات غير التلامسية بالبطاقة الفعلية التي تتجاوز حدود الولاية القضائية إدخال رقم تعريف شخصي كتحقق إضافي. تعتبر البنية الأمنية للدفعات اللاتلامسية أقوى في الواقع من مدفوعات البطاقات التقليدية بسبب إنشاء التشفير الديناميكي.</p>
+<p>نعم. ليس لمدفوعات المحفظة المحمولة (Apple Pay وجوجل Pay) حد أعلى لأنها تستخدم المصادقة البيومترية. تتطلب المعاملات غير التلامسية بالبطاقة الفعلية التي تتجاوز حدود الولاية القضائية إدخال رقم تعريف شخصي كتحقق إضافي. تعتبر البنية الأمنية للدفعات اللاتلامسية أقوى في الواقع من مدفوعات البطاقات التقليدية بسبب إنشاء التشفير الديناميكي.</p>
 
 <h3>ماذا لو انقطع الإنترنت أثناء إجراء معاملة بدون تلامس؟</h3>
 <p> تقوم معظم المحطات الطرفية الحديثة بوضع المعاملة في قائمة الانتظار ومعالجتها بمجرد استعادة الاتصال. يمكن لبعض المحطات الموافقة على المعاملات اللاتلامسية ذات القيمة المنخفضة دون الاتصال بالإنترنت باستخدام معلمات المخاطر المخزنة. للحصول على الموثوقية، فكر في عمل نسخة احتياطية خلوية (نقطة اتصال محمولة) لمنطقة الدفع الخاصة بك.</p>
 
 <h3>هل يمكنني قبول الدفع بدون تلامس باستخدام هاتفي فقط؟</h3>
-<p>نعم. تتيح لك Apple Tap to Pay (iPhone XS أو الأحدث) وGoogle Tap to Pay for Business (هواتف Android التي تدعم تقنية NFC) قبول الدفع بالبطاقة غير التلامسية ومحفظة الهاتف المحمول مباشرةً على هاتفك. يعد هذا مثاليًا للمحترفين المتنقلين أو الأحداث المنبثقة أو كوسيلة دفع احتياطية.</p>
+<p>نعم. تتيح لك ميزات "الدفع بالنقر" على الهاتف (مثل الدفع بالنقر من آبل على أجهزة آيفون XS أو الأحدث، والدفع بالنقر للأعمال من جوجل على هواتف أندرويد الداعمة لتقنية NFC) قبول الدفع غير التلامسي بالبطاقة ومحافظ الهاتف المحمول مباشرة على هاتفك. يعد هذا مثاليًا للمحترفين المتنقلين أو الأحداث المنبثقة أو كوسيلة دفع احتياطية.</p>
 
-<h3> هل أحتاج إلى أجهزة مختلفة لخدمة Apple Pay مقابل Google Pay؟</h3>
-<p>لا. تقبل أي محطة دفع تدعم تقنية NFC جميع الطرق غير التلامسية - البطاقات الفعلية وApple Pay وGoogle Pay وSamsung Pay والمدفوعات القابلة للارتداء. جميعهم يستخدمون نفس بروتوكول NFC. محطة واحدة تتعامل مع كل شيء.</p>`,
+<h3> هل أحتاج إلى أجهزة مختلفة لخدمة Apple Pay مقابل جوجل Pay؟</h3>
+<p>لا. تقبل أي محطة دفع تدعم تقنية NFC جميع الطرق غير التلامسية - البطاقات الفعلية وApple Pay وجوجل Pay وSamsung Pay والمدفوعات القابلة للارتداء. جميعهم يستخدمون نفس بروتوكول NFC. محطة واحدة تتعامل مع كل شيء.</p>`,
     metaTitle: 'إعداد الدفع اللاتلامسي في صالونك | ديزي',
     metaDescription: 'دليل لإعداد وتنفيذ المدفوعات اللاتلامسية في صالونك.',
     createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
@@ -1856,7 +1856,7 @@ const salonInvoicingArticleAr: LocalBlogPost = {
     slug: 'salon-invoicing-billing-guide',
     description: 'دليل عملي لفواتير الصالون يغطي تصميم الفواتير، وسير عمل الفواتير الآلية، والتعامل مع الودائع والطرود، وفواتير العضوية المتكررة، وتقليل المدفوعات المتأخرة. يتضمن القوالب ونصائح الأتمتة.',
     aboutPosts: `<h2>ما أهمية إعداد الفواتير الاحترافية للصالونات</h2>
-<p> تقوم معظم الصالونات بتحصيل المدفوعات عند نقطة الخدمة ولا تفكر أبدًا في إصدار الفواتير. ولكن مع نمو أعمالك إلى باقات وعضويات وحسابات شركات وحجوزات زفاف وعلاجات متعددة الزيارات، يصبح إعداد الفواتير الاحترافية أمرًا ضروريًا. يؤدي سير عمل الفواتير المنظم ضمن <a href="/ar/resources/blog/businesses/salon-payment-solutions">نظام الدفع للصالون</a> إلى تقليل المدفوعات المتأخرة، وإضفاء طابع احترافي على علامتك التجارية، وإنشاء سجلات مالية نظيفة، وإزالة المحادثات المحرجة "ما زلت مدينًا لنا".</p>
+<p> تقوم معظم الصالونات بتحصيل المدفوعات عند نقطة الخدمة ولا تفكر أبدًا في إصدار الفواتير. ولكن مع نمو أعمالك إلى باقات وعضويات وحسابات شركات وحجوزات زفاف وعلاجات متعددة الزيارات، يصبح إعداد الفواتير الاحترافية أمرًا ضروريًا. يؤدي سير عمل الفواتير المنظم ضمن <a href="/ar/resources/blog/business/salon-payment-solutions">نظام الدفع للصالون</a> إلى تقليل المدفوعات المتأخرة، وإضفاء طابع احترافي على علامتك التجارية، وإنشاء سجلات مالية نظيفة، وإزالة المحادثات المحرجة "ما زلت مدينًا لنا".</p>
 <p> تعمل الصالونات التي تطبق الفواتير المهنية على تقليل المدفوعات المتأخرة بنسبة 40-60% مقارنة بتلك التي تعتمد على الاتفاقيات الشفهية والمتابعات غير الرسمية، وفقًا لدراسة مدفوعات الشركات الصغيرة التي أجرتها شركة Intuit عام 2025. السبب بسيط: الفاتورة الرسمية تنشئ سجلاً واضحًا يتضمن المبلغ المحدد وتاريخ الاستحقاق وطريقة الدفع - مما يزيل الغموض عن المعاملة.</p>
 <p> يوضح لك هذا الدليل كيفية إعداد فواتير احترافية لكل سيناريو فوترة يواجهه صالونك.</p>
 
@@ -1897,7 +1897,7 @@ const salonInvoicingArticleAr: LocalBlogPost = {
 <p> إنشاء الفاتورة يدويًا لكل معاملة غير قابل للتوسع. فيما يلي كيفية تشغيل كل سيناريو فوترة تلقائيًا:</p>
 
 <h3>فواتير نقطة الخدمة</h3>
-<p> يجب أن تقوم منصة إدارة الصالون الخاصة بك بإنشاء فاتورة تلقائيًا عند الدفع. عندما يكمل العميل الدفع، يقوم النظام بإنشاء فاتورة/إيصال مفصل ويسلمه عبر البريد الإلكتروني أو الرسائل النصية القصيرة أو الواتساب. <a href="/ar/features/business/payment-processing">يتعامل Daisy</a> مع هذا تلقائيًا - كل موعد مكتمل يُنشئ فاتورة تحمل علامة تجارية يتم إرسالها إلى قناة الاتصال المفضلة للعميل.</p>
+<p> يجب أن تقوم منصة إدارة الصالون الخاصة بك بإنشاء فاتورة تلقائيًا عند الدفع. عندما يكمل العميل الدفع، يقوم النظام بإنشاء فاتورة/إيصال مفصل ويسلمه عبر البريد الإلكتروني أو الرسائل النصية القصيرة أو الواتساب. <a href="/ar/features/business/payment-processing">يتعامل ديزي</a> مع هذا تلقائيًا - كل موعد مكتمل يُنشئ فاتورة تحمل علامة تجارية يتم إرسالها إلى قناة الاتصال المفضلة للعميل.</p>
 
 <h3>فواتير الإيداع</h3>
 <p> عندما يحجز العميل خدمة تتطلب إيداعًا، يجب على النظام تلقائيًا إنشاء وإرسال فاتورة إيداع تتضمن المبلغ وتاريخ الاستحقاق ورابط الدفع. قم بتكوين هذا كمشغل حجز: "للحجوزات التي تزيد عن 500 درهم، أرسل فاتورة إيداع بنسبة 30% خلال ساعة واحدة من تأكيد الحجز."</p>
@@ -1945,7 +1945,7 @@ const salonInvoicingArticleAr: LocalBlogPost = {
 <li><strong>قابل للبحث</strong> حسب اسم العميل أو التاريخ أو المبلغ أو الحالة.</li>
 <li><strong>قابل للتصدير</strong> للمحاسب الخاص بك بتنسيق CSV أو PDF.</li>
 </ul>
-<p> تحتفظ منصات مثل The Daisy بسجل كامل للفواتير مع تتبع الحالة تلقائيًا، مما يلغي الحاجة إلى جداول بيانات منفصلة لمسك الدفاتر. راجع <a href="/ar/pricing">خطط التسعير</a> للحصول على تفاصيل حول ميزات الإدارة المالية.</p>
+<p> تحتفظ منصات مثل ديزي بسجل كامل للفواتير مع تتبع الحالة تلقائيًا، مما يلغي الحاجة إلى جداول بيانات منفصلة لمسك الدفاتر. راجع <a href="/ar/pricing">خطط التسعير</a> للحصول على تفاصيل حول ميزات الإدارة المالية.</p>
 
 <h2>التعامل مع المبالغ المستردة وإشعارات الائتمان</h2>
 <p>عندما تحتاج إلى استرداد دفعة أو تقديم رصيد لزيارة مستقبلية:</p>
@@ -1959,7 +1959,7 @@ const salonInvoicingArticleAr: LocalBlogPost = {
 <h2>الأسئلة الشائعة</h2>
 
 <h3>هل أحتاج إلى برنامج فواتير منفصل عن منصة إدارة الصالون الخاصة بي؟</h3>
-<p>من الناحية المثالية، لا. تعمل المنصة المتكاملة التي تجمع بين الحجز والخروج وإعداد الفواتير على إنشاء سير العمل الأكثر سلاسة. تعمل برامج الفوترة المنفصلة (QuickBooks وXero وFreshBooks) ولكنها تتطلب نقلًا يدويًا للبيانات أو تكامل واجهة برمجة التطبيقات (API)، مما يؤدي إلى تأخيرات وأخطاء محتملة. تتضمن The Daisy الفواتير كجزء من منصة إدارة الصالون الخاصة بها.</p>
+<p>من الناحية المثالية، لا. تعمل المنصة المتكاملة التي تجمع بين الحجز والخروج وإعداد الفواتير على إنشاء سير العمل الأكثر سلاسة. تعمل برامج الفوترة المنفصلة (QuickBooks وXero وFreshBooks) ولكنها تتطلب نقلًا يدويًا للبيانات أو تكامل واجهة برمجة التطبيقات (API)، مما يؤدي إلى تأخيرات وأخطاء محتملة. تتضمن ديزي الفواتير كجزء من منصة إدارة الصالون الخاصة بها.</p>
 
 <h3>كيف أقوم بإصدار فاتورة لحزمة تمتد لعدة زيارات؟</h3>
 <p>إصدار فاتورة واحدة بقيمة الباقة كاملة عند الشراء. أثناء قيام العميل باسترداد الجلسات، يقوم نظامك بتتبع الاستخدام مقابل الحزمة دون إنشاء فواتير إضافية. إذا قام العميل بإلغاء الباقة المتوسطة وكان له الحق في استرداد أموال متناسبة، فقم بإصدار إشعار دائن للجزء غير المستخدم.</p>
@@ -1990,7 +1990,7 @@ const paymentProcessingFeesArticleAr: LocalBlogPost = {
     description: 'تفصيل شفاف لكل الرسوم التي تدفعها الصالونات مقابل معالجة الدفع. يغطي نماذج المعدل الثابت والتبادل الإضافي والعمولة مع حسابات حقيقية توضح تأثير التكلفة السنوية. يتضمن رسومًا مخفية يفتقدها معظم المالكين.',
     aboutPosts: `<h2>التكلفة الحقيقية لمعالجة المدفوعات في الصالون الخاص بك</h2>
 <p> في كل مرة ينقر فيها العميل على بطاقته عند الدفع، فإنك تدفع رسومًا. عند نسبة 2-3% لكل معاملة، تبدو هذه الرسوم بسيطة. ولكن عبر آلاف المعاملات سنويًا، تصبح معالجة الدفع واحدة من أكبر تكاليف التشغيل لديك بعد الإيجار وكشوف المرتبات. يقوم الصالون بمعالجة 100,000 درهم إماراتي من دفعات البطاقة الشهرية بمعدل فعال 2.75% ويدفع 33,000 درهم إماراتي سنويًا كرسوم المعالجة وحدها - وهو ما يكفي لتمويل موظف بدوام جزئي أو حملة تسويقية كبيرة.</p>
-<p> يتمثل التحدي في أن تسعير معالجة الدفع معقد بشكل متعمد. يستخدم المعالجون هياكل رسوم مختلفة، وتكاليف الحزمة بشكل مختلف، ويدفنون الرسوم بأحرف صغيرة. يعرف معظم أصحاب الصالونات "السعر الرئيسي" الخاص بهم ولكن ليس السعر الفعلي - النسبة المئوية الإجمالية الفعلية التي يدفعونها بعد احتساب جميع الرسوم. يشرح هذا الدليل تكاليف دفع <a href="/ar/resources/blog/businesses/salon-payment-solutions">الصالون</a> حتى تفهم بالضبط ما تدفعه وأين يمكنك التوفير.</p>
+<p> يتمثل التحدي في أن تسعير معالجة الدفع معقد بشكل متعمد. يستخدم المعالجون هياكل رسوم مختلفة، وتكاليف الحزمة بشكل مختلف، ويدفنون الرسوم بأحرف صغيرة. يعرف معظم أصحاب الصالونات "السعر الرئيسي" الخاص بهم ولكن ليس السعر الفعلي - النسبة المئوية الإجمالية الفعلية التي يدفعونها بعد احتساب جميع الرسوم. يشرح هذا الدليل تكاليف دفع <a href="/ar/resources/blog/business/salon-payment-solutions">الصالون</a> حتى تفهم بالضبط ما تدفعه وأين يمكنك التوفير.</p>
 
 <h2>فهم هياكل الرسوم: النماذج الثلاثة</h2>
 <p> تستخدم معالجات الدفع إحدى هياكل الرسوم الثلاثة. إن فهم النموذج الذي يستخدمه المعالج الخاص بك هو الخطوة الأولى للتحكم في التكاليف.</p>
@@ -2000,11 +2000,11 @@ const paymentProcessingFeesArticleAr: LocalBlogPost = {
 <p><strong>كيفية العمل:</strong> يكلفك الدفع ببطاقة بقيمة 300 درهم 7.90 درهم (300 × 0.026 + 0.10). دفعة 1000 درهم تكلف 26.10 درهم. السعر لا يتغير أبدًا.</p>
 <p><strong>الإيجابيات:</strong> بسيط، ويمكن التنبؤ به، وسهل الميزانية. أنت تعرف دائمًا التكلفة الدقيقة لكل معاملة.</p>
 <p><strong>السلبيات:</strong> أنت تدفع نفس السعر للمعاملات الرخيصة المعالجة (بطاقات الخصم المحلية عند تبادل بنسبة 0.5% تقريبًا) كما هو الحال بالنسبة للمعاملات الباهظة الثمن (بطاقات الائتمان الدولية المتميزة عند تبادل بنسبة 2.0% تقريبًا). يربح المعالج أكثر على البطاقات الأرخص وأقل على البطاقات باهظة الثمن، ولكنك تدفع نفس السعر بغض النظر.</p>
-<p><strong>من يستخدم هذا النموذج:</strong> معالجات الدفع Square وStripe وSumUp وThe Daisy ومعظم معالجات الدفع الحديثة.</p>
+<p><strong>من يستخدم هذا النموذج:</strong> معالجات الدفع Square وStripe وSumUp وديزي ومعظم معالجات الدفع الحديثة.</p>
 <p><strong>الأفضل لـ:</strong> معظم الصالونات. إن البساطة والقدرة على التنبؤ تفوق الوفورات الهامشية المتاحة من خلال نماذج أكثر تعقيدًا.</p>
 
 <h3>تسعير التبادل الزائد</h3>
-<p> أنت تدفع رسوم التبادل الفعلية التي تحددها شبكة البطاقات (Visa وMastercard وAMEX) بالإضافة إلى رسم ثابت من المعالج. على سبيل المثال: تقاطع + 0.30% + 0.10 درهم.</p>
+<p> أنت تدفع رسوم التبادل الفعلية التي تحددها شبكة البطاقات (فيزا وMastercard وAMEX) بالإضافة إلى رسم ثابت من المعالج. على سبيل المثال: تقاطع + 0.30% + 0.10 درهم.</p>
 <p><strong>كيفية العمل:</strong> قد تبلغ تكلفة الدفع ببطاقة الخصم المحلية بقيمة 300 درهم 300 × (0.5% + 0.30%) + 0.10 = 2.50 درهم. قد تبلغ تكلفة بطاقة الائتمان الدولية المميزة بقيمة 300 درهم إماراتي 300 × (2.0% + 0.30%) + 0.10 = 7.00 درهم إماراتي. تختلف التكلفة حسب نوع البطاقة.</p>
 <p><strong>الإيجابيات:</strong> من المحتمل أن تكون أرخص إذا كانت معظم معاملاتك عبارة عن بطاقات خصم محلية ذات أسعار صرف منخفضة. المزيد من الشفافية حول أين تذهب الرسوم.</p>
 <p><strong>السلبيات:</strong> البيانات الشهرية معقدة ويصعب قراءتها. التكاليف تتقلب بشكل غير متوقع. تقوم شبكات البطاقات بتغيير أسعار التبادل بشكل دوري. إعداد الميزانية أصعب.</p>
@@ -2026,7 +2026,7 @@ const paymentProcessingFeesArticleAr: LocalBlogPost = {
 <p> يتم الدفع للبنك الذي أصدر بطاقة العميل. هذه هي التكلفة الأساسية التي لا يمكن لأي معالج تجنبها. تختلف الأسعار: بطاقات الخصم المحلية (~0.3–0.8%)، وبطاقات الائتمان المحلية (~1.0–1.8%)، والبطاقات الدولية (~1.5–2.2%)، والبطاقات المميزة/المكافآت (~1.8–2.5%).</p>
 
 <h3>رسوم شبكة البطاقة (رسوم النظام)</h3>
-<p> يتم الدفع إلى Visa أو Mastercard أو AMEX مقابل استخدام شبكتهم. عادة 0.10-0.15% لكل معاملة. صغير لكن لا مفر منه.</p>
+<p> يتم الدفع إلى فيزا أو Mastercard أو AMEX مقابل استخدام شبكتهم. عادة 0.10-0.15% لكل معاملة. صغير لكن لا مفر منه.</p>
 
 <h3>توصيف المعالج</h3>
 <p>هامش ربح معالج الدفع. هذا هو المكون الوحيد الذي يختلف بين المعالجات وهو قابل للتفاوض بالنسبة للشركات ذات الحجم الكبير. في التسعير بالسعر الثابت، يتم تضمين الترميز في السعر الرئيسي. في تبادل زائد، يتم ذكره بشكل منفصل.</p>
@@ -2069,7 +2069,7 @@ const paymentProcessingFeesArticleAr: LocalBlogPost = {
 <p> عندما يعترض العميل على أحد الرسوم مع البنك الذي يتعامل معه، فإن المعالج يفرض عليك رسومًا (عادةً ما بين 50 إلى 100 درهم إماراتي) بغض النظر عن النتيجة. مرتين شهريًا بقيمة 75 درهمًا إماراتيًا لكل منهما بتكلفة 1800 درهمًا سنويًا.</p>
 
 <h3> الرسوم الإضافية للامتثال لـPCI</h3>
-<p> تتقاضى المعالجات القديمة ما بين 300 إلى 500 درهم إماراتي سنويًا مقابل "الامتثال لـ PCI." تتضمن المعالجات الحديثة المستندة إلى السحابة (Stripe وSquare وThe Daisy) توافق PCI في أسعارها القياسية. إذا كنت تدفع رسوم PCI منفصلة، فأنت تدفع مبالغ زائدة.</p>
+<p> تتقاضى المعالجات القديمة ما بين 300 إلى 500 درهم إماراتي سنويًا مقابل "الامتثال لـ PCI." تتضمن المعالجات الحديثة المستندة إلى السحابة (Stripe وSquare وديزي) توافق PCI في أسعارها القياسية. إذا كنت تدفع رسوم PCI منفصلة، فأنت تدفع مبالغ زائدة.</p>
 
 <h3>الحد الأدنى لرسوم المعالجة الشهرية</h3>
 <p>تتطلب بعض المعالجات حدًا أدنى للحجم الشهري (على سبيل المثال، 5000 درهم إماراتي) أو تفرض رسومًا إذا قلت عن هذا الحد. يمكن أن تتفاجأ الصالونات الجديدة ذات الحجم الأولي المنخفض بهذه الرسوم في الأشهر الأولى.</p>
@@ -2120,7 +2120,7 @@ const paymentProcessingFeesArticleAr: LocalBlogPost = {
 <p>قبل إجراء التغييرات، تعرف على التكلفة الفعلية. اطلب تفاصيل الرسوم من المعالج الخاص بك واحسب المعدل الفعلي الخاص بك باستخدام الصيغة أعلاه.</p>
 
 <h3>2. إلغاء الرسوم المخفية</h3>
-<p> قم بالتبديل إلى معالج بسعر شفاف وشامل. <a href="/ar/features/business/payment-processing">تتضمن Daisy</a> والمعالجات الحديثة الأخرى التوافق مع PCI، ولا تفرض رسومًا على كشف الحساب، وليس لديها حد أدنى لمتطلبات الحجم. يمكن أن يؤدي إلغاء الرسوم المخفية وحدها إلى توفير ما بين 2000 إلى 5000 درهم إماراتي سنويًا.</p>
+<p> قم بالتبديل إلى معالج بسعر شفاف وشامل. <a href="/ar/features/business/payment-processing">تتضمن ديزي</a> والمعالجات الحديثة الأخرى التوافق مع PCI، ولا تفرض رسومًا على كشف الحساب، وليس لديها حد أدنى لمتطلبات الحجم. يمكن أن يؤدي إلغاء الرسوم المخفية وحدها إلى توفير ما بين 2000 إلى 5000 درهم إماراتي سنويًا.</p>
 
 <h3>3. التفاوض على الخصومات الكبيرة</h3>
 <p>إذا كنت تقوم بمعالجة أكثر من 100,000 درهم شهريًا، فاسأل المعالج الخاص بك عن تخفيضات الأسعار على أساس الحجم. لدى معظم المعالجات أسعار متدرجة لا تعلن عنها - يجب أن تسأل.</p>
@@ -2151,7 +2151,7 @@ const paymentProcessingFeesArticleAr: LocalBlogPost = {
 <li>هل يتم تحصيل عمولات على الحجوزات (منفصلة عن رسوم المعالجة)؟</li>
 <li>هل يمكنك تقديم نموذج لكشف الحساب الشهري حتى أتمكن من حساب المعدل الفعلي؟</li>
 </ol>
-<p>أي معالج لا يستطيع الإجابة على هذه الأسئلة بشكل واضح وكتابي يجب استبعاده من الاعتبار. قم بزيارة <a href="/ar/pricing">صفحة التسعير</a> لشركة Daisy للحصول على تفاصيل شفافة لتكاليف المعالجة.</p>
+<p>أي معالج لا يستطيع الإجابة على هذه الأسئلة بشكل واضح وكتابي يجب استبعاده من الاعتبار. قم بزيارة <a href="/ar/pricing">صفحة التسعير</a> لشركة ديزي للحصول على تفاصيل شفافة لتكاليف المعالجة.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -2208,7 +2208,7 @@ const freelanceStylistPaymentArticleAr: LocalBlogPost = {
 <h3>الإيجابيات</h3>
 <ul>
 <li>المظهر الاحترافي - يتوقع العملاء قبول البطاقة</li>
-<li>يقبل جميع البطاقات الرئيسية بالإضافة إلى Apple Pay وGoogle Pay وSamsung Pay</li>
+<li>يقبل جميع البطاقات الرئيسية بالإضافة إلى Apple Pay وجوجل Pay وSamsung Pay</li>
 <li>الإيصالات الرقمية التلقائية</li>
 <li>سجلات المعاملات الخاصة بمسك الدفاتر والضرائب</li>
 <li>محمولة - تناسب حقيبة أدواتك</li>
@@ -2285,10 +2285,10 @@ const freelanceStylistPaymentArticleAr: LocalBlogPost = {
 </ul>
 
 <h2>طريقة الدفع الرابعة: روابط الدفع</h2>
-<p> تقوم بإرسال عنوان URL للعميل عبر WhatsApp أو الرسائل القصيرة أو البريد الإلكتروني. ينقرون على الرابط، ويدخلون تفاصيل بطاقتهم، ويدفعون على صفحة دفع آمنة.</p>
+<p> تقوم بإرسال عنوان URL للعميل عبر واتساب أو الرسائل القصيرة أو البريد الإلكتروني. ينقرون على الرابط، ويدخلون تفاصيل بطاقتهم، ويدفعون على صفحة دفع آمنة.</p>
 
 <h3>كيفية العمل</h3>
-<p> يقوم مزود الدفع أو منصة الصالون بإنشاء رابط دفع فريد للمبلغ المحدد. يمكنك مشاركتها من خلال أي قناة المراسلة. يقوم العميل بالنقر والدفع وستتلقى تأكيدًا على الفور. تعمل الأنظمة الأساسية مثل <a href="/ar/features/professional/payment-processing">The Daisy</a> على إنشاء روابط دفع بنقرة واحدة مدمجة مع سجلات الخدمة الخاصة بك.</p>
+<p> يقوم مزود الدفع أو منصة الصالون بإنشاء رابط دفع فريد للمبلغ المحدد. يمكنك مشاركتها من خلال أي قناة المراسلة. يقوم العميل بالنقر والدفع وستتلقى تأكيدًا على الفور. تعمل الأنظمة الأساسية مثل <a href="/ar/features/professional/payment-processing">ديزي</a> على إنشاء روابط دفع بنقرة واحدة مدمجة مع سجلات الخدمة الخاصة بك.</p>
 
 <h3>التكاليف</h3>
 <ul>
@@ -2302,7 +2302,7 @@ const freelanceStylistPaymentArticleAr: LocalBlogPost = {
 
 <h3>الإيجابيات</h3>
 <ul>
-<li>يعمل عبر أي قناة مراسلة (WhatsApp، البريد الإلكتروني، الرسائل القصيرة)</li>
+<li>يعمل عبر أي قناة مراسلة (واتساب، البريد الإلكتروني، الرسائل القصيرة)</li>
 <li>يدفع العميل حسب راحته</li>
 <li>الاستلام والتسجيل التلقائي</li>
 <li>المظهر الاحترافي</li>
@@ -2330,7 +2330,7 @@ const freelanceStylistPaymentArticleAr: LocalBlogPost = {
 </ul>
 
 <h3>الأفضل لـ</h3>
-<p> المستقلون الذين يريدون نظام عمل كاملاً - الحجز والمدفوعات وإدارة العملاء والتواصل في مكان واحد. تم تصميم <a href="/ar/features/professional/payment-processing">أدوات الدفع الاحترافية</a> من Daisy خصيصًا لمحترفي التجميل المستقلين.</p>
+<p> المستقلون الذين يريدون نظام عمل كاملاً - الحجز والمدفوعات وإدارة العملاء والتواصل في مكان واحد. تم تصميم <a href="/ar/features/professional/payment-processing">أدوات الدفع الاحترافية</a> من ديزي خصيصًا لمحترفي التجميل المستقلين.</p>
 
 <h3>الإيجابيات</h3>
 <ul>
@@ -2408,7 +2408,7 @@ const freelanceStylistPaymentArticleAr: LocalBlogPost = {
 <h2>الأسئلة الشائعة</h2>
 
 <h3>ما هي أرخص طريقة لقبول مدفوعات البطاقة كموظف مستقل؟</h3>
-<p> لا تتطلب ميزة النقر للدفع على هاتفك (Apple Tap to Pay أو Google Tap to Pay) أي تكلفة للأجهزة ورسوم معالجة قياسية تبلغ 2.6-2.75%. تقدم SumUp Air واحدة من أقل الأسعار لكل معاملة بنسبة 1.69% مع تكلفة قارئ لمرة واحدة تبلغ حوالي 100 درهم إماراتي. يعتمد الخيار الأرخص لكل معاملة على حجم المعاملة ومتوسط حجم المعاملة.</p>
+<p> لا تتطلب ميزة النقر للدفع على هاتفك (Apple Tap to Pay أو جوجل Tap to Pay) أي تكلفة للأجهزة ورسوم معالجة قياسية تبلغ 2.6-2.75%. تقدم SumUp Air واحدة من أقل الأسعار لكل معاملة بنسبة 1.69% مع تكلفة قارئ لمرة واحدة تبلغ حوالي 100 درهم إماراتي. يعتمد الخيار الأرخص لكل معاملة على حجم المعاملة ومتوسط حجم المعاملة.</p>
 
 <h3> هل يجب أن أقوم بتمرير رسوم المعالجة إلى العملاء؟</h3>
 <p> بشكل عام، لا. في صناعة مستحضرات التجميل، تؤدي إضافة رسوم إضافية على مدفوعات البطاقات إلى خلق تجربة سلبية وتشير إلى أن عملك ليس مؤسسًا بما يكفي لاستيعاب تكاليف التشغيل القياسية. بدلاً من ذلك، أضف رسوم المعالجة إلى أسعار خدمتك.</p>
@@ -2417,7 +2417,7 @@ const freelanceStylistPaymentArticleAr: LocalBlogPost = {
 <p>لا تسمح بذلك. يجب دائمًا تحصيل الدفع عند نقطة الخدمة أو قبل ذلك (عن طريق الإيداع). إذا أصر العميل على الدفع لاحقًا، أرسل رابط الدفع فورًا وقم بالمتابعة خلال 24 ساعة. إن إنشاء سياسة ثابتة للدفع عند الخدمة منذ اليوم الأول يمنع هذا من أن يصبح نمطًا.</p>
 
 <h3>هل يستحق الدفع مقابل منصة الصالون فقط من أجل معالجة الدفع؟</h3>
-<p>قد لا تبرر معالجة الدفع وحدها الاشتراك في النظام الأساسي. ولكن عندما تأخذ في الاعتبار الحجز الآلي، وإدارة العملاء، والفواتير، والإكراميات، والتقارير المالية، فإن توفير الوقت يتجاوز عادةً تكلفة الاشتراك خلال الشهر الأول. توفر منصة مثل The Daisy على الموظف المستقل متوسط ​​6-8 ساعات أسبوعيًا في العمل الإداري.</p>`,
+<p>قد لا تبرر معالجة الدفع وحدها الاشتراك في النظام الأساسي. ولكن عندما تأخذ في الاعتبار الحجز الآلي، وإدارة العملاء، والفواتير، والإكراميات، والتقارير المالية، فإن توفير الوقت يتجاوز عادةً تكلفة الاشتراك خلال الشهر الأول. توفر منصة مثل ديزي على الموظف المستقل متوسط ​​6-8 ساعات أسبوعيًا في العمل الإداري.</p>`,
     metaTitle: 'طرق الدفع لمصفف الشعر المستقل | ديزي',
     metaDescription: 'دليل لأفضل طرق الدفع لمصففي الشعر المستقلين.',
     createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',

@@ -102,7 +102,7 @@ export const salonManagementSoftware: PillarPageData = {
         },
         {
           title: 'Online Booking for Salons: Setup Guide',
-          url: '/en/resources/blog/businesses/online-booking-for-salons-setup-guide',
+          url: '/en/resources/blog/business/online-booking-for-salons-setup-guide',
         },
       ],
     },
@@ -145,7 +145,7 @@ export const salonManagementSoftware: PillarPageData = {
       relatedLinks: [
         {
           title: 'How to Reduce Salon No-Shows',
-          url: '/en/resources/blog/businesses/reduce-salon-no-shows',
+          url: '/en/resources/blog/business/reduce-salon-no-shows',
         },
       ],
     },
@@ -198,7 +198,7 @@ export const salonManagementSoftware: PillarPageData = {
         },
         {
           title: '7 Salon Metrics to Track Weekly',
-          url: '/en/resources/blog/businesses/7-salon-metrics-track-weekly',
+          url: '/en/resources/blog/business/7-salon-metrics-track-weekly',
         },
       ],
     },
@@ -383,7 +383,7 @@ export const salonManagementSoftware: PillarPageData = {
       relatedLinks: [
         {
           title: 'Staff Scheduling: Salon Owner\'s Guide',
-          url: '/en/resources/blog/businesses/staff-scheduling-salon-owners-guide',
+          url: '/en/resources/blog/business/staff-scheduling-salon-owners-guide',
         },
       ],
     },
@@ -428,7 +428,7 @@ export const salonManagementSoftware: PillarPageData = {
       relatedLinks: [
         {
           title: 'How AI Scheduling Saves Salon Owners 10+ Hours Per Week',
-          url: '/en/resources/blog/businesses/ai-scheduling-saves-salon-owners-time',
+          url: '/en/resources/blog/business/ai-scheduling-saves-salon-owners-time',
         },
         {
           title: 'Daisy AI Salon Management',
@@ -546,7 +546,7 @@ export const salonManagementSoftware: PillarPageData = {
   <li><strong>ROI: 5,240%</strong></li>
 </ul>
 <p>Even conservative estimates, halving every number above, produce an ROI exceeding 2,000%. This is why the ROI question for salon software is never "if" but "how quickly." Most salons report positive ROI within the first 30 days of implementation, with the full impact becoming clear within 90 days as automated rebooking and marketing features ramp up.</p>
-<p>Track your <a href="/en/resources/blog/businesses/7-salon-metrics-track-weekly">key salon metrics weekly</a> to see exactly where your returns are coming from and which features are delivering the most value.</p>`,
+<p>Track your <a href="/en/resources/blog/business/7-salon-metrics-track-weekly">key salon metrics weekly</a> to see exactly where your returns are coming from and which features are delivering the most value.</p>`,
       callout: {
         type: 'tip',
         text: 'Track your baseline metrics for at least one month before switching to new software. Without a clear "before" picture, you cannot accurately measure the "after", and you want to see those numbers to justify your investment.',
@@ -554,7 +554,7 @@ export const salonManagementSoftware: PillarPageData = {
       relatedLinks: [
         {
           title: 'How Data-Driven Salons Outperform the Competition',
-          url: '/en/resources/blog/businesses/data-driven-salons-outperform-competition',
+          url: '/en/resources/blog/business/data-driven-salons-outperform-competition',
         },
         {
           title: 'Daisy Pricing Plans',

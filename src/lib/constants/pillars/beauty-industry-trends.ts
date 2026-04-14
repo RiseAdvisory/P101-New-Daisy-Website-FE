@@ -107,7 +107,7 @@ export const beautyIndustryTrends: PillarPageData = {
       relatedLinks: [
         {
           title: 'Salon Revenue Growth Strategies for 2026',
-          url: '/en/resources/blog/businesses/salon-revenue-growth-strategies-2026',
+          url: '/en/resources/blog/business/salon-revenue-growth-strategies-2026',
         },
         {
           title: 'Daisy Business Growth Features',
@@ -153,7 +153,7 @@ export const beautyIndustryTrends: PillarPageData = {
       relatedLinks: [
         {
           title: '5 Ways AI Is Transforming Beauty Businesses in 2026',
-          url: '/en/resources/blog/businesses/5-ways-ai-transform-beauty-business-2026',
+          url: '/en/resources/blog/business/5-ways-ai-transform-beauty-business-2026',
         },
         {
           title: 'Daisy AI Salon Management',
@@ -545,7 +545,7 @@ export const beautyIndustryTrends: PillarPageData = {
       relatedLinks: [
         {
           title: 'Data-Driven Salons Outperform the Competition',
-          url: '/en/resources/blog/businesses/data-driven-salons-outperform-competition',
+          url: '/en/resources/blog/business/data-driven-salons-outperform-competition',
         },
         {
           title: 'Daisy Analytics & Reports',

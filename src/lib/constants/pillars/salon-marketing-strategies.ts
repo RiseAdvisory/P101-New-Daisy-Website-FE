@@ -176,7 +176,7 @@ export const salonMarketingStrategies: PillarPageData = {
 <p>Aim for a list growth rate of 5-10% per month. A salon with 500 active clients should be adding 25-50 new email addresses monthly.</p>
 
 <h3>Essential Email Campaigns</h3>
-<p>You do not need to send weekly newsletters. Focus on these <a href="/en/resources/blog/businesses/email-marketing-salons-templates">high-impact automated campaigns</a> that run themselves once configured:</p>
+<p>You do not need to send weekly newsletters. Focus on these <a href="/en/resources/blog/business/email-marketing-salons-templates">high-impact automated campaigns</a> that run themselves once configured:</p>
 <ul>
   <li><strong>Welcome sequence:</strong> A 3-email series sent to new clients: thank you + what to expect (Day 1), service tips + product recommendations (Day 3), rebooking prompt + loyalty program invitation (Day 7).</li>
   <li><strong>Rebooking reminder:</strong> Triggered based on each client's typical visit frequency. A client who visits every 6 weeks gets a personalized rebooking email at week 5 with a one-click booking link.</li>
@@ -198,7 +198,7 @@ export const salonMarketingStrategies: PillarPageData = {
       relatedLinks: [
         {
           title: 'Email Marketing for Salons: Templates That Work',
-          url: '/en/resources/blog/businesses/email-marketing-salons-templates',
+          url: '/en/resources/blog/business/email-marketing-salons-templates',
         },
         {
           title: 'Daisy Communication Tools',
@@ -216,13 +216,13 @@ export const salonMarketingStrategies: PillarPageData = {
       content: `<p>Loyalty and referral programs are the highest-return marketing investments a salon can make. They cost a fraction of paid advertising, target your most valuable audience (existing clients), and create self-sustaining growth loops where happy clients become your most effective marketing channel.</p>
 
 <h3>Loyalty Program Design</h3>
-<p>An effective <a href="/en/resources/blog/businesses/complete-guide-salon-loyalty-programs">salon loyalty program</a> rewards repeat visits in a way that encourages higher frequency and increased spending. The best programs are simple, transparent, and feel genuinely rewarding, not like a gimmick.</p>
+<p>An effective <a href="/en/resources/blog/business/complete-guide-salon-loyalty-programs">salon loyalty program</a> rewards repeat visits in a way that encourages higher frequency and increased spending. The best programs are simple, transparent, and feel genuinely rewarding, not like a gimmick.</p>
 <p>Common loyalty models for salons:</p>
 <ul>
   <li><strong>Points-based:</strong> Clients earn points for every dollar spent, redeemable for free services or discounts. Simple to understand, flexible to implement. Works best when the earning and redemption thresholds are clearly communicated.</li>
   <li><strong>Visit-based:</strong> "Every 10th visit free" or "Book 5 sessions, get the 6th at 50% off." Easy to track, creates a visible milestone clients work toward.</li>
   <li><strong>Tiered:</strong> Bronze, Silver, Gold membership levels with increasing benefits. Tiers create aspiration and make clients feel recognized. Higher tiers might include priority booking, complimentary add-ons, or exclusive access to new services.</li>
-  <li><strong>Cashback:</strong> Clients earn a percentage of their spend back as credit toward future services. This is particularly effective because it drives rebooking (clients return to use their credit) without devaluing your services through discounts. <a href="/en/resources/blog/businesses/daisy-cashback-system-customer-loyalty">Daisy's cashback system</a> automates this entirely.</li>
+  <li><strong>Cashback:</strong> Clients earn a percentage of their spend back as credit toward future services. This is particularly effective because it drives rebooking (clients return to use their credit) without devaluing your services through discounts. <a href="/en/resources/blog/business/daisy-cashback-system-customer-loyalty">Daisy's cashback system</a> automates this entirely.</li>
 </ul>
 
 <h3>Why Cashback Outperforms Discounts</h3>
@@ -236,7 +236,7 @@ export const salonMarketingStrategies: PillarPageData = {
 <p>Salons using cashback loyalty programs report 20-35% higher client retention rates compared to no-loyalty-program benchmarks, and 10-15% higher average visit frequency.</p>
 
 <h3>Referral Program Design</h3>
-<p>A <a href="/en/resources/blog/businesses/salon-referral-programs-that-work">referral program</a> turns your existing clients into a client acquisition channel. The best referral programs reward both the referrer and the new client, creating a win-win that clients are motivated to participate in:</p>
+<p>A <a href="/en/resources/blog/business/salon-referral-programs-that-work">referral program</a> turns your existing clients into a client acquisition channel. The best referral programs reward both the referrer and the new client, creating a win-win that clients are motivated to participate in:</p>
 <ul>
   <li><strong>Reward structure:</strong> The most effective structure gives the referrer a meaningful reward (e.g., $20 credit or free add-on service) and the new client a first-visit incentive (e.g., 15% off their first booking). Both rewards should be delivered automatically.</li>
   <li><strong>Easy sharing:</strong> Each client should have a unique referral link or code that they can share via text, social media, or in person. The fewer steps between "share" and "reward," the more referrals you will get.</li>
@@ -250,11 +250,11 @@ export const salonMarketingStrategies: PillarPageData = {
       relatedLinks: [
         {
           title: 'Complete Guide to Salon Loyalty Programs',
-          url: '/en/resources/blog/businesses/complete-guide-salon-loyalty-programs',
+          url: '/en/resources/blog/business/complete-guide-salon-loyalty-programs',
         },
         {
           title: 'Referral Programs That Work for Salons',
-          url: '/en/resources/blog/businesses/salon-referral-programs-that-work',
+          url: '/en/resources/blog/business/salon-referral-programs-that-work',
         },
       ],
     },
@@ -377,7 +377,7 @@ export const salonMarketingStrategies: PillarPageData = {
 
 <h3>How Cashback Works for Salons</h3>
 <p>With a cashback model, clients receive a percentage of their spending back as credit toward future services. For example, a 5% cashback rate means a client who spends $100 on services earns $5 in credit. This credit accumulates over time and can be applied to future bookings, creating a continuous incentive to return.</p>
-<p>The <a href="/en/resources/blog/businesses/daisy-cashback-system-customer-loyalty">Daisy cashback system</a> automates this entirely, cashback is calculated, credited, and redeemable within the platform, requiring zero manual effort from salon owners.</p>
+<p>The <a href="/en/resources/blog/business/daisy-cashback-system-customer-loyalty">Daisy cashback system</a> automates this entirely, cashback is calculated, credited, and redeemable within the platform, requiring zero manual effort from salon owners.</p>
 
 <h3>Why Cashback Outperforms Discounts</h3>
 <p>Traditional discounting has three problems for salons:</p>
@@ -418,7 +418,7 @@ export const salonMarketingStrategies: PillarPageData = {
       relatedLinks: [
         {
           title: 'How Daisy Cashback Drives Salon Loyalty',
-          url: '/en/resources/blog/businesses/daisy-cashback-system-customer-loyalty',
+          url: '/en/resources/blog/business/daisy-cashback-system-customer-loyalty',
         },
         {
           title: 'Daisy Marketing and Promotions',
@@ -515,7 +515,7 @@ export const salonMarketingStrategies: PillarPageData = {
       content: `<p>Once your foundational marketing. Google Business Profile, social media, email automation, loyalty program, and local SEO, is performing consistently, these advanced strategies can accelerate your growth beyond what conventional approaches achieve alone.</p>
 
 <h3>SMS Marketing</h3>
-<p><a href="/en/resources/blog/businesses/sms-marketing-fill-salon-chairs">SMS marketing</a> delivers open rates above 95%, higher than any other channel. Use it strategically, not indiscriminately:</p>
+<p><a href="/en/resources/blog/business/sms-marketing-fill-salon-chairs">SMS marketing</a> delivers open rates above 95%, higher than any other channel. Use it strategically, not indiscriminately:</p>
 <ul>
   <li><strong>Last-minute availability:</strong> When a cancellation opens a slot, a targeted SMS to clients near your salon who are overdue for a visit can fill the gap within hours.</li>
   <li><strong>Flash promotions:</strong> Time-limited offers (24-48 hours) for specific services during slow periods. SMS urgency drives faster action than email.</li>
@@ -554,7 +554,7 @@ export const salonMarketingStrategies: PillarPageData = {
       relatedLinks: [
         {
           title: 'SMS Marketing to Fill Empty Salon Chairs',
-          url: '/en/resources/blog/businesses/sms-marketing-fill-salon-chairs',
+          url: '/en/resources/blog/business/sms-marketing-fill-salon-chairs',
         },
         {
           title: 'Daisy Marketing and Promotions',

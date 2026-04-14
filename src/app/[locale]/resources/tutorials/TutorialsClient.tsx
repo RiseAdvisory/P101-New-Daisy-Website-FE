@@ -53,7 +53,7 @@ export const TutorialsClient = () => {
     }
 
     // Load tutorial articles
-    setCategories(getTutorialArticles(persona));
+    setCategories(getTutorialArticles(persona, locale));
     // Reset expanded state when persona changes
     setExpandedCategories(new Set());
   }, [locale, currentPage]);

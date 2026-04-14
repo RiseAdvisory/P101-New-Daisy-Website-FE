@@ -20,7 +20,7 @@ export function generateMetadata({
 }: {
   params: { locale: string; category: string };
 }): Metadata {
-  const data = getFeatureDeepDive('professional', params.category);
+  const data = getFeatureDeepDive('professional', params.category, params.locale);
   if (!data) return { title: 'Not Found' };
 
   return {
@@ -47,7 +47,7 @@ export default function FeatureProfessionalDeepDivePage({
 }: {
   params: { locale: string; category: string };
 }) {
-  const data = getFeatureDeepDive('professional', params.category);
+  const data = getFeatureDeepDive('professional', params.category, params.locale);
   if (!data) notFound();
 
   return (

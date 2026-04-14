@@ -103,7 +103,7 @@ export const aiSalonSoftware: PillarPageData = {
         },
         {
           title: '5 Ways AI Will Transform Your Beauty Business in 2026',
-          url: '/en/resources/blog/businesses/5-ways-ai-transform-beauty-business-2026',
+          url: '/en/resources/blog/business/5-ways-ai-transform-beauty-business-2026',
         },
       ],
     },
@@ -148,7 +148,7 @@ export const aiSalonSoftware: PillarPageData = {
       relatedLinks: [
         {
           title: 'How AI Scheduling Saves Salon Owners 10+ Hours Per Week',
-          url: '/en/resources/blog/businesses/ai-scheduling-saves-salon-owners-time',
+          url: '/en/resources/blog/business/ai-scheduling-saves-salon-owners-time',
         },
       ],
     },
@@ -204,7 +204,7 @@ export const aiSalonSoftware: PillarPageData = {
     {
       id: 'predictive-analytics',
       title: 'Predictive Analytics for Salon Growth',
-      content: `<p>Predictive analytics is where AI moves from operational efficiency to strategic business growth. Instead of telling you what happened last month, <a href="/en/resources/blog/businesses/predictive-analytics-salons-beginners-guide">predictive analytics</a> tells you what is likely to happen next, and what you should do about it.</p>
+      content: `<p>Predictive analytics is where AI moves from operational efficiency to strategic business growth. Instead of telling you what happened last month, <a href="/en/resources/blog/business/predictive-analytics-salons-beginners-guide">predictive analytics</a> tells you what is likely to happen next, and what you should do about it.</p>
 
 <h3>Demand Forecasting</h3>
 <p>AI analyses your historical booking data, seasonal patterns, local events, and market trends to predict future demand with remarkable accuracy:</p>
@@ -240,7 +240,7 @@ export const aiSalonSoftware: PillarPageData = {
       relatedLinks: [
         {
           title: 'Predictive Analytics for Salons: A Beginner\'s Guide',
-          url: '/en/resources/blog/businesses/predictive-analytics-salons-beginners-guide',
+          url: '/en/resources/blog/business/predictive-analytics-salons-beginners-guide',
         },
         {
           title: 'Daisy Analytics and Reports',
@@ -461,7 +461,7 @@ export const aiSalonSoftware: PillarPageData = {
       relatedLinks: [
         {
           title: 'Daisy AI vs Competitors: Scheduling Comparison',
-          url: '/en/resources/blog/businesses/daisy-ai-vs-competitors-scheduling-comparison',
+          url: '/en/resources/blog/business/daisy-ai-vs-competitors-scheduling-comparison',
         },
         {
           title: 'Daisy Pricing Plans',
@@ -561,7 +561,7 @@ export const aiSalonSoftware: PillarPageData = {
       relatedLinks: [
         {
           title: 'AI Tools for Independent Beauty Professionals',
-          url: '/en/resources/blog/professionals/ai-tools-independent-beauty-professional',
+          url: '/en/resources/blog/professional/ai-tools-independent-beauty-professional',
         },
         {
           title: 'Daisy AI Salon Management',

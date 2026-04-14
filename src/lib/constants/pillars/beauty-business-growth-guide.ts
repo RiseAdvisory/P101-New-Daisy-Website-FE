@@ -214,7 +214,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
       relatedLinks: [
         {
           title: 'Multi-Channel Acquisition for Beauty Businesses',
-          url: '/en/resources/blog/businesses/multi-channel-acquisition-beauty-business-growth',
+          url: '/en/resources/blog/business/multi-channel-acquisition-beauty-business-growth',
         },
         {
           title: 'Daisy Marketing Suite',
@@ -400,7 +400,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
       relatedLinks: [
         {
           title: 'Scaling to Multiple Locations',
-          url: '/en/resources/blog/businesses/scaling-beauty-business-multiple-locations',
+          url: '/en/resources/blog/business/scaling-beauty-business-multiple-locations',
         },
       ],
     },
@@ -617,7 +617,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
       relatedLinks: [
         {
           title: 'Revenue Growth Strategies for Salons',
-          url: '/en/resources/blog/businesses/salon-revenue-growth-strategies-2026',
+          url: '/en/resources/blog/business/salon-revenue-growth-strategies-2026',
         },
       ],
     },

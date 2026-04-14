@@ -44,7 +44,7 @@ const staffSchedulingArticle: LocalBlogPost = {
       'A comprehensive guide to salon staff scheduling with ready-to-use templates, shift planning strategies, time-off management, and workload balancing techniques. Includes automation tips and common scheduling mistakes to avoid.',
     aboutPosts: `
 <h2>Why Staff Scheduling Is the Foundation of Salon Operations</h2>
-<p>Staff scheduling determines almost everything in a salon: client capacity, revenue potential, staff satisfaction, and service quality. A well-built schedule maximises your <a href="/en/resources/blog/businesses/salon-staff-management">staff management workflow</a> by ensuring the right people are available at the right times, while a poorly managed schedule leads to overstaffing during slow periods, understaffing during peak hours, and a team that feels overworked or undervalued.</p>
+<p>Staff scheduling determines almost everything in a salon: client capacity, revenue potential, staff satisfaction, and service quality. A well-built schedule maximises your <a href="/en/resources/blog/business/salon-staff-management">staff management workflow</a> by ensuring the right people are available at the right times, while a poorly managed schedule leads to overstaffing during slow periods, understaffing during peak hours, and a team that feels overworked or undervalued.</p>
 <p>According to a 2025 Homebase workforce study, beauty businesses that optimised their scheduling reduced labour costs by 12% while simultaneously increasing staff satisfaction scores by 18%. The key is not working your team harder - it is scheduling smarter. This guide provides the frameworks, templates, and best practices to build a scheduling system that works for your salon, your team, and your clients.</p>
 
 <h2>Understanding Your Salon's Scheduling Patterns</h2>
@@ -123,7 +123,7 @@ const staffSchedulingArticle: LocalBlogPost = {
 <p>Track each stylist&rsquo;s daily appointment count and total service hours. Watch for imbalances where one stylist is consistently booked solid while another has gaps. Causes include:</p>
 <ul>
 <li><strong>Client preference:</strong> Popular stylists fill up faster. Redistribute new clients or walk-ins to less-booked team members.</li>
-<li><strong>Scheduling position:</strong> The first available slot is often auto-assigned to the same person. Rotate the &ldquo;first available&rdquo; position.</li>
+<li><strong>Scheduling position:</strong> The first available slot is often auto-assigned to the same person. Rotate the "first available" position.</li>
 <li><strong>Service type mismatch:</strong> A colourist scheduled during a morning full of blowout requests sits idle. Align specialists&rsquo; schedules with demand for their specific services.</li>
 </ul>
 
@@ -269,7 +269,7 @@ const commissionStructuresArticle: LocalBlogPost = {
       'An in-depth guide to salon commission structures covering flat commission, tiered models, hybrid salary-plus-commission, booth rental, and team-based pay. Includes real calculations, pros and cons of each, and guidance on choosing the right model for your business.',
     aboutPosts: `
 <h2>Why Your Commission Structure Defines Your Salon Culture</h2>
-<p>Your commission structure is not just a payroll mechanism - it is the single most powerful lever you have for shaping staff behaviour, retention, and salon culture. The way you pay your team directly influences whether they upsell, whether they prioritise quality, whether they stay through busy seasons, and whether your best talent walks across the street to a competitor. Your <a href="/en/resources/blog/businesses/salon-staff-management">staff management approach</a> succeeds or fails based on how you structure compensation.</p>
+<p>Your commission structure is not just a payroll mechanism - it is the single most powerful lever you have for shaping staff behaviour, retention, and salon culture. The way you pay your team directly influences whether they upsell, whether they prioritise quality, whether they stay through busy seasons, and whether your best talent walks across the street to a competitor. Your <a href="/en/resources/blog/business/salon-staff-management">staff management approach</a> succeeds or fails based on how you structure compensation.</p>
 <p>According to a 2025 Professional Beauty Industry survey, commission structure was the #2 reason beauty professionals cited for leaving a salon (after work-life balance). Getting compensation right does not just affect your payroll - it determines whether you can attract and retain the talent that drives your business forward.</p>
 <p>This guide walks through every major commission model with real calculations so you can choose the structure that aligns your team&rsquo;s incentives with your business goals.</p>
 
@@ -355,7 +355,7 @@ const commissionStructuresArticle: LocalBlogPost = {
 <p>The stylist receives a fixed base salary plus a commission percentage on revenue above a threshold.</p>
 
 <h3>How It Works</h3>
-<p>Example: 4,000 AED base salary + 30% commission on revenue above 12,000 AED (the &ldquo;commission floor&rdquo;).</p>
+<p>Example: 4,000 AED base salary + 30% commission on revenue above 12,000 AED (the "commission floor").</p>
 <p>The commission floor is set at the revenue level that covers the base salary cost to the salon, so the salon only pays commission on truly incremental revenue.</p>
 
 <h3>Real Calculation</h3>
@@ -436,7 +436,7 @@ const commissionStructuresArticle: LocalBlogPost = {
 <li>Encourages teamwork and collaboration</li>
 <li>Staff help each other because collective success benefits everyone</li>
 <li>Reduces internal competition for clients</li>
-<li>New staff earn a fair share from day one (reducing the &ldquo;starving new hire&rdquo; problem)</li>
+<li>New staff earn a fair share from day one (reducing the "starving new hire" problem)</li>
 </ul>
 
 <h3>Cons</h3>
@@ -470,7 +470,7 @@ const commissionStructuresArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>What is the most common commission rate for salons?</h3>
-<p>The most common model globally is 40&ndash;50% commission for mid-level to senior stylists. However, the &ldquo;right&rdquo; rate depends on what the salon provides (supplies, marketing, reception, booking system) versus what the stylist provides (tools, clients, skills). The more the salon provides, the lower the commission rate; the more the stylist brings, the higher it should be.</p>
+<p>The most common model globally is 40&ndash;50% commission for mid-level to senior stylists. However, the "right" rate depends on what the salon provides (supplies, marketing, reception, booking system) versus what the stylist provides (tools, clients, skills). The more the salon provides, the lower the commission rate; the more the stylist brings, the higher it should be.</p>
 
 <h3>Should I pay commission on retail product sales?</h3>
 <p>Yes. Retail commissions of 10&ndash;20% incentivise product recommendations that benefit clients (better home care results) and the salon (additional revenue). Without retail commission, most staff will not proactively recommend products, leaving significant revenue on the table.</p>
@@ -554,7 +554,7 @@ const hiringSalonStaffArticle: LocalBlogPost = {
 <h2>Why Hiring Is the Highest-Leverage Activity in Your Salon</h2>
 <p>Every hire either strengthens or weakens your salon. A great stylist brings clients, lifts team morale, and contributes to your reputation. A poor hire drives clients away, creates team friction, and costs you months of wasted training and management energy. In a service business where the team IS the product, hiring well is not just an HR function - it is the most important business decision you make repeatedly.</p>
 <p>The beauty industry faces chronic hiring challenges. A 2025 NHBF (National Hair and Beauty Federation) report found that 67% of salon owners cited recruitment as their biggest operational challenge, ahead of marketing, pricing, and technology. The talent pool is competitive, and the best professionals have options. Your hiring process needs to attract them and accurately identify who will thrive in your environment.</p>
-<p>This guide gives you a structured approach to finding, evaluating, and onboarding salon staff that fits your culture and delivers results. Use it alongside your <a href="/en/resources/blog/businesses/salon-staff-management">broader staff management strategy</a> for best results.</p>
+<p>This guide gives you a structured approach to finding, evaluating, and onboarding salon staff that fits your culture and delivers results. Use it alongside your <a href="/en/resources/blog/business/salon-staff-management">broader staff management strategy</a> for best results.</p>
 
 <h2>Where to Find Salon Candidates</h2>
 <p>Before you can interview, you need a pipeline of qualified candidates. The best hires rarely come from a single source.</p>
@@ -597,34 +597,34 @@ const hiringSalonStaffArticle: LocalBlogPost = {
 
 <h3>For Hair Stylists</h3>
 <ul>
-<li>&ldquo;Walk me through your consultation process for a new client who wants a major change - say, going from long to a pixie cut.&rdquo; (Reveals: consultation skills, client management, managing expectations)</li>
-<li>&ldquo;A client comes in with colour-damaged hair wanting another colour treatment. What do you do?&rdquo; (Reveals: ethical judgment, technical knowledge, ability to say no when needed)</li>
-<li>&ldquo;What colour lines and products are you most experienced with? What would you want to learn?&rdquo; (Reveals: product knowledge, willingness to learn your salon&rsquo;s preferred brands)</li>
-<li>&ldquo;How do you handle a situation where the client is unhappy with the result?&rdquo; (Reveals: problem-solving, emotional maturity, client retention instinct)</li>
+<li>"Walk me through your consultation process for a new client who wants a major change - say, going from long to a pixie cut." (Reveals: consultation skills, client management, managing expectations)</li>
+<li>"A client comes in with colour-damaged hair wanting another colour treatment. What do you do?" (Reveals: ethical judgment, technical knowledge, ability to say no when needed)</li>
+<li>"What colour lines and products are you most experienced with? What would you want to learn?" (Reveals: product knowledge, willingness to learn your salon&rsquo;s preferred brands)</li>
+<li>"How do you handle a situation where the client is unhappy with the result?" (Reveals: problem-solving, emotional maturity, client retention instinct)</li>
 </ul>
 
 <h3>For Spa Therapists and Estheticians</h3>
 <ul>
-<li>&ldquo;How do you customise a facial treatment based on the client&rsquo;s skin assessment?&rdquo; (Reveals: diagnostic skills, treatment knowledge, personalisation ability)</li>
-<li>&ldquo;Describe your approach to client comfort during a 90-minute treatment.&rdquo; (Reveals: attention to the full experience, not just the technical procedure)</li>
-<li>&ldquo;What continuing education have you pursued in the last year?&rdquo; (Reveals: professional development commitment)</li>
+<li>"How do you customise a facial treatment based on the client&rsquo;s skin assessment?" (Reveals: diagnostic skills, treatment knowledge, personalisation ability)</li>
+<li>"Describe your approach to client comfort during a 90-minute treatment." (Reveals: attention to the full experience, not just the technical procedure)</li>
+<li>"What continuing education have you pursued in the last year?" (Reveals: professional development commitment)</li>
 </ul>
 
 <h3>For Nail Technicians</h3>
 <ul>
-<li>&ldquo;How do you ensure sanitation standards between clients?&rdquo; (Reveals: hygiene awareness, professionalism, attention to health standards)</li>
-<li>&ldquo;A client wants nail art that you think will not suit the nail shape they have. How do you handle that?&rdquo; (Reveals: consultation skill, artistic judgment, diplomacy)</li>
+<li>"How do you ensure sanitation standards between clients?" (Reveals: hygiene awareness, professionalism, attention to health standards)</li>
+<li>"A client wants nail art that you think will not suit the nail shape they have. How do you handle that?" (Reveals: consultation skill, artistic judgment, diplomacy)</li>
 </ul>
 
 <h2>Interview Questions: Cultural Fit</h2>
 <p>Technical skill without cultural fit produces staff who are talented but toxic. These questions reveal whether the candidate will enhance or disrupt your team:</p>
 <ul>
-<li>&ldquo;Describe the best team you have worked on. What made it great?&rdquo; (Reveals: what they value in a workplace, collaboration style)</li>
-<li>&ldquo;Tell me about a conflict with a colleague and how you handled it.&rdquo; (Reveals: conflict resolution maturity, self-awareness)</li>
-<li>&ldquo;What does an ideal workday look like for you?&rdquo; (Reveals: work style preferences, energy levels, schedule alignment)</li>
-<li>&ldquo;Why are you leaving your current position?&rdquo; (Reveals: motivations, potential red flags, whether they are running from something or toward something)</li>
-<li>&ldquo;How do you feel about retail product recommendations to clients?&rdquo; (Reveals: sales comfort level, alignment with your revenue expectations)</li>
-<li>&ldquo;Where do you want to be professionally in 2&ndash;3 years?&rdquo; (Reveals: ambition level, whether your salon can provide the growth they are seeking)</li>
+<li>"Describe the best team you have worked on. What made it great?" (Reveals: what they value in a workplace, collaboration style)</li>
+<li>"Tell me about a conflict with a colleague and how you handled it." (Reveals: conflict resolution maturity, self-awareness)</li>
+<li>"What does an ideal workday look like for you?" (Reveals: work style preferences, energy levels, schedule alignment)</li>
+<li>"Why are you leaving your current position?" (Reveals: motivations, potential red flags, whether they are running from something or toward something)</li>
+<li>"How do you feel about retail product recommendations to clients?" (Reveals: sales comfort level, alignment with your revenue expectations)</li>
+<li>"Where do you want to be professionally in 2&ndash;3 years?" (Reveals: ambition level, whether your salon can provide the growth they are seeking)</li>
 </ul>
 
 <h2>Red Flags to Watch For</h2>
@@ -640,10 +640,10 @@ const hiringSalonStaffArticle: LocalBlogPost = {
 <h3>During Interview</h3>
 <ul>
 <li><strong>Badmouthing previous employers:</strong> Regardless of how bad the previous salon was, a professional candidate discusses past experiences constructively. Consistent negativity about past workplaces signals an attitude problem.</li>
-<li><strong>Unwillingness to discuss weaknesses:</strong> &ldquo;I do not have any weaknesses&rdquo; is itself a red flag. Self-aware professionals know where they are growing.</li>
+<li><strong>Unwillingness to discuss weaknesses:</strong> "I do not have any weaknesses" is itself a red flag. Self-aware professionals know where they are growing.</li>
 <li><strong>Fixation on money without interest in the role:</strong> Compensation questions are legitimate, but a candidate who only asks about money and never about the work, team, or clients is transaction-focused rather than career-focused.</li>
 <li><strong>Late arrival:</strong> If they are late to the interview without a genuine reason and proactive communication, they will be late to shifts.</li>
-<li><strong>Resistance to your salon&rsquo;s approach:</strong> &ldquo;That is not how I do it&rdquo; or &ldquo;At my last salon, we did it differently&rdquo; without willingness to adapt suggests inflexibility.</li>
+<li><strong>Resistance to your salon&rsquo;s approach:</strong> "That is not how I do it" or "At my last salon, we did it differently" without willingness to adapt suggests inflexibility.</li>
 </ul>
 
 <h3>During Trial Shift</h3>
@@ -760,7 +760,7 @@ const employeeRetentionArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>The Cost of Losing a Stylist Is Higher Than You Think</h2>
 <p>When a talented stylist leaves your salon, the financial impact goes far beyond replacing one employee. The true cost of turnover includes lost clients who follow the departing stylist (typically 30&ndash;50% of their book), recruitment costs (job posting, interviewing, trial shifts), training investment for the replacement (3&ndash;6 months to reach full productivity), team morale impact (remaining staff question their own tenure), and revenue gap during the transition (empty chair for 4&ndash;8 weeks minimum).</p>
-<p>Industry research puts the total cost of replacing a mid-level stylist at 1.5&ndash;2x their annual compensation. For a stylist earning 8,000 AED/month, that is 144,000&ndash;192,000 AED in direct and indirect costs. Yet most salon owners spend far more time and money on client acquisition than on <a href="/en/resources/blog/businesses/salon-staff-management">retaining the staff</a> who serve those clients.</p>
+<p>Industry research puts the total cost of replacing a mid-level stylist at 1.5&ndash;2x their annual compensation. For a stylist earning 8,000 AED/month, that is 144,000&ndash;192,000 AED in direct and indirect costs. Yet most salon owners spend far more time and money on client acquisition than on <a href="/en/resources/blog/business/salon-staff-management">retaining the staff</a> who serve those clients.</p>
 <p>This guide focuses on the strategies that actually reduce turnover - based on industry data and the real reasons beauty professionals leave.</p>
 
 <h2>Why Beauty Professionals Actually Leave</h2>
@@ -843,7 +843,7 @@ const employeeRetentionArticle: LocalBlogPost = {
 <h3>Regular Recognition</h3>
 <ul>
 <li><strong>Weekly shout-outs:</strong> Publicly recognise achievements in team meetings - highest rebooking rate, best client review, most product sales.</li>
-<li><strong>Monthly awards:</strong> &ldquo;Stylist of the Month&rdquo; with a small reward (gift card, extra half-day off, product bundle).</li>
+<li><strong>Monthly awards:</strong> "Stylist of the Month" with a small reward (gift card, extra half-day off, product bundle).</li>
 <li><strong>Client feedback sharing:</strong> Share positive client reviews with the specific team member they mention. This is free, takes 30 seconds, and is one of the most powerful recognition tools available.</li>
 </ul>
 
@@ -989,7 +989,7 @@ const freelanceBeautyScheduleArticle: LocalBlogPost = {
 <p>Define clear terms: cancellations within 24 hours forfeit the deposit or incur a fee (50% of service cost is standard). No-shows are charged the full service amount. Enforce this consistently - one exception sets the precedent that the policy does not apply.</p>
 
 <h3>Late Arrival Policy</h3>
-<p>If a client arrives more than 15 minutes late, you have the right to shorten the service to fit the remaining time or reschedule. Communicate this upfront: &ldquo;If you arrive more than 15 minutes late, I may need to adjust the service to stay on schedule for my other clients.&rdquo;</p>
+<p>If a client arrives more than 15 minutes late, you have the right to shorten the service to fit the remaining time or reschedule. Communicate this upfront: "If you arrive more than 15 minutes late, I may need to adjust the service to stay on schedule for my other clients."</p>
 
 <h3>Deposit Requirement</h3>
 <p>Require a deposit (30&ndash;50% of the service cost) at booking for services over a certain value (e.g., 300+ AED). Deposits dramatically reduce no-shows and cancellations because clients have skin in the game. Payment links sent at the time of booking make deposit collection effortless.</p>
@@ -1004,7 +1004,7 @@ const freelanceBeautyScheduleArticle: LocalBlogPost = {
 <p>Schedule clients in the same area back-to-back. If you have a morning client in Dubai Marina and an afternoon client in Jumeirah, do not accept a midday appointment in Abu Dhabi. The travel time would consume your profitable hours.</p>
 
 <h3>Account for Real Travel Time</h3>
-<p>Be honest about travel duration including traffic, parking, and setup. A &ldquo;30-minute drive&rdquo; during rush hour is 60 minutes. Add 15 minutes for parking and setup, 15 minutes for breakdown and departure. That is 2.5 hours of your day for a 1-hour service. Price accordingly.</p>
+<p>Be honest about travel duration including traffic, parking, and setup. A "30-minute drive" during rush hour is 60 minutes. Add 15 minutes for parking and setup, 15 minutes for breakdown and departure. That is 2.5 hours of your day for a 1-hour service. Price accordingly.</p>
 
 <h3>Consider Travel Surcharges</h3>
 <p>Charge a flat travel fee (50&ndash;150 AED) or per-kilometre surcharge for appointments outside your core area. This ensures travel does not erode your hourly rate and naturally encourages clients to come to a central location if you offer one.</p>
@@ -1136,7 +1136,7 @@ const performanceReviewsArticle: LocalBlogPost = {
       'A ready-to-use performance review template for salon staff. Covers review frequency, evaluation criteria, goal-setting frameworks, difficult conversation scripts, and how to use reviews to drive development rather than just assess past performance.',
     aboutPosts: `
 <h2>Why Performance Reviews Are Essential for Salon Teams</h2>
-<p>Performance reviews in salons are either dreaded, skipped, or done so informally that they have no impact. Yet structured reviews are the most effective tool you have for developing your team, identifying issues before they become crises, and demonstrating that you invest in your people&rsquo;s growth. When embedded into your <a href="/en/resources/blog/businesses/salon-staff-management">staff management system</a>, reviews transform from an annual chore into a continuous development engine.</p>
+<p>Performance reviews in salons are either dreaded, skipped, or done so informally that they have no impact. Yet structured reviews are the most effective tool you have for developing your team, identifying issues before they become crises, and demonstrating that you invest in your people&rsquo;s growth. When embedded into your <a href="/en/resources/blog/business/salon-staff-management">staff management system</a>, reviews transform from an annual chore into a continuous development engine.</p>
 <p>A 2025 Gallup workplace study found that employees who receive regular, structured feedback are 3.6x more likely to feel engaged at work compared to those who receive no feedback. In the beauty industry, where staff engagement directly impacts client experience and retention, this difference translates to measurable business outcomes: higher rebooking rates, better reviews, and lower turnover.</p>
 <p>This guide provides a complete performance review framework tailored to beauty businesses, including templates, evaluation criteria, and conversation guides.</p>
 
@@ -1237,40 +1237,40 @@ const performanceReviewsArticle: LocalBlogPost = {
 <p>Start positive. Acknowledge something specific the team member has done well since the last review. This sets a constructive tone and signals that you notice their contributions.</p>
 
 <h3>Self-Assessment (10 Minutes)</h3>
-<p>Ask the team member to share their own assessment first: &ldquo;How do you feel about your performance this quarter? What are you most proud of, and where do you think you have room to improve?&rdquo; This reveals their self-awareness and often surfaces the same points you planned to raise, making feedback feel collaborative rather than top-down.</p>
+<p>Ask the team member to share their own assessment first: "How do you feel about your performance this quarter? What are you most proud of, and where do you think you have room to improve?" This reveals their self-awareness and often surfaces the same points you planned to raise, making feedback feel collaborative rather than top-down.</p>
 
 <h3>Manager Assessment (15 Minutes)</h3>
-<p>Walk through each evaluation dimension with your ratings and specific examples. Start with strengths, then address development areas. Use evidence and data, not opinions: &ldquo;Your rebooking rate was 72%, which is above our 65% target - that shows your clients value what you do&rdquo; is more effective than &ldquo;I think you are good with clients.&rdquo;</p>
+<p>Walk through each evaluation dimension with your ratings and specific examples. Start with strengths, then address development areas. Use evidence and data, not opinions: "Your rebooking rate was 72%, which is above our 65% target - that shows your clients value what you do" is more effective than "I think you are good with clients."</p>
 
 <h3>Goal Setting (10 Minutes)</h3>
 <p>Collaborate on 2&ndash;3 specific, measurable goals for the next quarter. Goals should be achievable but stretching. Examples:</p>
 <ul>
-<li>&ldquo;Increase average ticket value from 280 AED to 320 AED by adding one product recommendation per client visit.&rdquo;</li>
-<li>&ldquo;Complete the advanced balayage certification by end of next quarter.&rdquo;</li>
-<li>&ldquo;Bring rebooking rate from 65% to 72% by implementing a rebooking prompt at the end of each appointment.&rdquo;</li>
+<li>"Increase average ticket value from 280 AED to 320 AED by adding one product recommendation per client visit."</li>
+<li>"Complete the advanced balayage certification by end of next quarter."</li>
+<li>"Bring rebooking rate from 65% to 72% by implementing a rebooking prompt at the end of each appointment."</li>
 </ul>
 
 <h3>Closing (5 Minutes)</h3>
-<p>Summarise the key points, confirm the goals, and schedule the next check-in. End by asking: &ldquo;Is there anything you need from me or the salon to support you in reaching these goals?&rdquo;</p>
+<p>Summarise the key points, confirm the goals, and schedule the next check-in. End by asking: "Is there anything you need from me or the salon to support you in reaching these goals?"</p>
 
 <h2>Handling Difficult Review Conversations</h2>
 <p>Not every review is positive. Here is how to handle common challenging situations:</p>
 
 <h3>Underperformance</h3>
-<p>Be direct but empathetic: &ldquo;Your revenue for the last quarter was 12,000 AED against a target of 18,000 AED. I want to understand what is contributing to this gap and work with you on a plan to close it.&rdquo; Focus on the gap between expectation and reality, not on the person&rsquo;s character.</p>
+<p>Be direct but empathetic: "Your revenue for the last quarter was 12,000 AED against a target of 18,000 AED. I want to understand what is contributing to this gap and work with you on a plan to close it." Focus on the gap between expectation and reality, not on the person&rsquo;s character.</p>
 
 <h3>Attitude or Behavioural Issues</h3>
-<p>Use specific examples: &ldquo;On [date], a client mentioned that their interaction with you felt rushed and impersonal. This is the third similar piece of feedback this quarter. Let us talk about what is happening and how we can address it.&rdquo; Avoid vague generalisations like &ldquo;your attitude needs to improve.&rdquo;</p>
+<p>Use specific examples: "On [date], a client mentioned that their interaction with you felt rushed and impersonal. This is the third similar piece of feedback this quarter. Let us talk about what is happening and how we can address it." Avoid vague generalisations like "your attitude needs to improve."</p>
 
 <h3>When a Staff Member Disagrees With Your Assessment</h3>
-<p>Listen fully before responding. Ask: &ldquo;Help me understand your perspective.&rdquo; If they present valid evidence you did not consider, adjust your assessment. If they are defensive without evidence, acknowledge their feelings but maintain your position: &ldquo;I understand you see it differently. The data shows [specific evidence], and I need to be honest about what I am observing.&rdquo;</p>
+<p>Listen fully before responding. Ask: "Help me understand your perspective." If they present valid evidence you did not consider, adjust your assessment. If they are defensive without evidence, acknowledge their feelings but maintain your position: "I understand you see it differently. The data shows [specific evidence], and I need to be honest about what I am observing."</p>
 
 <h2>Using Reviews to Drive Development, Not Just Assessment</h2>
 <p>The most common mistake is treating reviews as a report card. The real purpose is development - helping each team member become better, earn more, and advance their career.</p>
 <ul>
 <li><strong>Link reviews to training:</strong> If a review identifies a technical gap, schedule specific training to address it.</li>
 <li><strong>Link reviews to compensation:</strong> Annual reviews should directly inform commission rate adjustments, bonuses, and promotions. Staff who see a clear connection between review performance and financial reward take reviews seriously.</li>
-<li><strong>Follow up between reviews:</strong> Do not set goals in the review and forget about them. Reference goals in weekly check-ins: &ldquo;How is the balayage certification progressing?&rdquo; This shows you care about their development beyond the review meeting.</li>
+<li><strong>Follow up between reviews:</strong> Do not set goals in the review and forget about them. Reference goals in weekly check-ins: "How is the balayage certification progressing?" This shows you care about their development beyond the review meeting.</li>
 </ul>
 <p>The Daisy&rsquo;s <a href="/en/features/business/team-management">team management platform</a> tracks individual performance metrics in real time, so review conversations are grounded in data rather than memory. See <a href="/en/pricing">pricing plans</a> for team analytics features.</p>
 
@@ -1283,7 +1283,7 @@ const performanceReviewsArticle: LocalBlogPost = {
 <p>Scores provide a clear, objective framework that reduces ambiguity. Use a 1&ndash;5 scale for each dimension (1: below expectations, 2: partially meeting, 3: meeting expectations, 4: exceeding, 5: exceptional) with specific examples justifying each score. The overall weighted score gives both you and the staff member a clear picture of where they stand.</p>
 
 <h3>How do I handle a review for a top performer?</h3>
-<p>Top performers need reviews too - but the focus shifts from development areas to growth opportunities. Ask: &ldquo;Where do you want to go next?&rdquo; and discuss senior roles, specialisation opportunities, mentoring responsibilities, or compensation increases. Neglecting top performers because they are &ldquo;doing fine&rdquo; is a common path to losing them.</p>
+<p>Top performers need reviews too - but the focus shifts from development areas to growth opportunities. Ask: "Where do you want to go next?" and discuss senior roles, specialisation opportunities, mentoring responsibilities, or compensation increases. Neglecting top performers because they are "doing fine" is a common path to losing them.</p>
 
 <h3>What documentation should I keep from reviews?</h3>
 <p>Keep a written record of every formal review (monthly and quarterly) including: the evaluation scores, specific examples discussed, goals set, and any commitments made by either party. Both the manager and the staff member should sign the record. This documentation protects you legally and provides continuity if management changes.</p>
@@ -1360,7 +1360,7 @@ const staffSchedulingArticleAr: LocalBlogPost = {
       'دليل شامل لجدولة موظفي الصالون مع قوالب جاهزة للاستخدام واستراتيجيات تخطيط الورديات وإدارة الإجازات وتقنيات توازن عبء العمل. يتضمن نصائح الأتمتة وأخطاء الجدولة الشائعة التي يجب تجنبها.',
     aboutPosts: `
 <h2>لماذا جدولة الموظفين هي أساس عمليات الصالون</h2>
-<p>تحدد جدولة الموظفين تقريباً كل شيء في الصالون: سعة العملاء وإمكانات الإيرادات ورضا الموظفين وجودة الخدمة. الجدول المبني جيداً يعظّم <a href="/ar/resources/blog/businesses/salon-staff-management">سير عمل إدارة الموظفين</a> من خلال ضمان توفر الأشخاص المناسبين في الأوقات المناسبة، بينما الجدول المُدار بشكل سيئ يؤدي إلى زيادة الموظفين خلال الفترات البطيئة ونقصهم خلال ساعات الذروة وفريق يشعر بالإرهاق أو عدم التقدير.</p>
+<p>تحدد جدولة الموظفين تقريباً كل شيء في الصالون: سعة العملاء وإمكانات الإيرادات ورضا الموظفين وجودة الخدمة. الجدول المبني جيداً يعظّم <a href="/ar/resources/blog/business/salon-staff-management">سير عمل إدارة الموظفين</a> من خلال ضمان توفر الأشخاص المناسبين في الأوقات المناسبة، بينما الجدول المُدار بشكل سيئ يؤدي إلى زيادة الموظفين خلال الفترات البطيئة ونقصهم خلال ساعات الذروة وفريق يشعر بالإرهاق أو عدم التقدير.</p>
 <p>وفقاً لدراسة القوى العاملة من Homebase لعام 2025، فإن أعمال التجميل التي حسّنت جدولتها خفضت تكاليف العمالة بنسبة 12% مع زيادة درجات رضا الموظفين بنسبة 18% في الوقت ذاته. المفتاح ليس إرهاق فريقك أكثر - بل الجدولة بذكاء أكبر. يقدم هذا الدليل الأطر والقوالب وأفضل الممارسات لبناء نظام جدولة يعمل لصالونك وفريقك وعملائك.</p>
 
 <h2>فهم أنماط الجدولة في صالونك</h2>
@@ -1439,7 +1439,7 @@ const staffSchedulingArticleAr: LocalBlogPost = {
 <p>تتبع عدد مواعيد كل مصفف يومياً وإجمالي ساعات الخدمة. راقب الاختلالات حيث يكون مصفف محجوزاً بالكامل باستمرار بينما آخر لديه فجوات. الأسباب تشمل:</p>
 <ul>
 <li><strong>تفضيل العملاء:</strong> المصففون الشائعون يمتلئون أسرع. أعد توزيع العملاء الجدد أو بدون موعد للأعضاء الأقل حجزاً.</li>
-<li><strong>موقع الجدولة:</strong> الفترة المتاحة الأولى غالباً ما تُعيّن تلقائياً لنفس الشخص. دوّر موقع &ldquo;أول متاح&rdquo;.</li>
+<li><strong>موقع الجدولة:</strong> الفترة المتاحة الأولى غالباً ما تُعيّن تلقائياً لنفس الشخص. دوّر موقع "أول متاح".</li>
 <li><strong>عدم تطابق نوع الخدمة:</strong> خبير تلوين مجدول خلال صباح مليء بطلبات السشوار يجلس خاملاً. وائم جداول المتخصصين مع الطلب على خدماتهم المحددة.</li>
 </ul>
 
@@ -1579,7 +1579,7 @@ const commissionStructuresArticleAr: LocalBlogPost = {
       'دليل شامل لهياكل عمولات الصالون. قارن بين العمولة المباشرة والمتدرجة واستئجار الكرسي والنماذج الهجينة لإيجاد هيكل التعويض الذي يجذب ويحتفظ بأفضل المواهب مع الحفاظ على ربحية الصالون.',
     aboutPosts: `
 <h2>لماذا يحدد هيكل العمولات ثقافة صالونك</h2>
-<p>هيكل العمولات ليس مجرد آلية رواتب - إنه أقوى أداة لديك لتشكيل سلوك الموظفين والاحتفاظ بهم وثقافة الصالون. طريقة دفعك لفريقك تؤثر مباشرة على ما إذا كانوا يبيعون خدمات إضافية، وما إذا كانوا يعطون الأولوية للجودة، وما إذا كانوا يبقون خلال المواسم المزدحمة، وما إذا كانت أفضل مواهبك تنتقل للمنافس عبر الشارع. نهج <a href="/ar/resources/blog/businesses/salon-staff-management">إدارة الموظفين</a> ينجح أو يفشل بناءً على كيفية هيكلة التعويضات.</p>
+<p>هيكل العمولات ليس مجرد آلية رواتب - إنه أقوى أداة لديك لتشكيل سلوك الموظفين والاحتفاظ بهم وثقافة الصالون. طريقة دفعك لفريقك تؤثر مباشرة على ما إذا كانوا يبيعون خدمات إضافية، وما إذا كانوا يعطون الأولوية للجودة، وما إذا كانوا يبقون خلال المواسم المزدحمة، وما إذا كانت أفضل مواهبك تنتقل للمنافس عبر الشارع. نهج <a href="/ar/resources/blog/business/salon-staff-management">إدارة الموظفين</a> ينجح أو يفشل بناءً على كيفية هيكلة التعويضات.</p>
 <p>وفقاً لاستطلاع صناعة التجميل المهنية لعام 2025، كان هيكل العمولات السبب رقم 2 الذي ذكره محترفو التجميل لمغادرة صالون (بعد التوازن بين العمل والحياة). ضبط التعويضات بشكل صحيح لا يؤثر فقط على الرواتب - بل يحدد ما إذا كنت تستطيع جذب والاحتفاظ بالمواهب التي تدفع عملك للأمام.</p>
 <p>يتناول هذا الدليل كل نموذج عمولات رئيسي مع حسابات حقيقية حتى تتمكن من اختيار الهيكل الذي يوائم حوافز فريقك مع أهداف عملك.</p>
 
@@ -1665,7 +1665,7 @@ const commissionStructuresArticleAr: LocalBlogPost = {
 <p>يحصل المصفف على راتب أساسي ثابت بالإضافة إلى نسبة عمولة على الإيرادات فوق عتبة.</p>
 
 <h3>كيف يعمل</h3>
-<p>مثال: راتب أساسي 4,000 درهم + عمولة 30% على الإيرادات فوق 12,000 درهم (&ldquo;أرضية العمولة&rdquo;).</p>
+<p>مثال: راتب أساسي 4,000 درهم + عمولة 30% على الإيرادات فوق 12,000 درهم ("أرضية العمولة").</p>
 <p>أرضية العمولة تُحدد عند مستوى الإيرادات الذي يغطي تكلفة الراتب الأساسي للصالون، فالصالون يدفع عمولة فقط على الإيرادات الإضافية حقاً.</p>
 
 <h3>حساب حقيقي</h3>
@@ -1746,7 +1746,7 @@ const commissionStructuresArticleAr: LocalBlogPost = {
 <li>يشجع العمل الجماعي والتعاون</li>
 <li>الموظفون يساعدون بعضهم لأن النجاح الجماعي يفيد الجميع</li>
 <li>يقلل المنافسة الداخلية على العملاء</li>
-<li>الموظفون الجدد يكسبون حصة عادلة من اليوم الأول (يقلل مشكلة &ldquo;الموظف الجديد الجائع&rdquo;)</li>
+<li>الموظفون الجدد يكسبون حصة عادلة من اليوم الأول (يقلل مشكلة "الموظف الجديد الجائع")</li>
 </ul>
 
 <h3>العيوب</h3>
@@ -1780,7 +1780,7 @@ const commissionStructuresArticleAr: LocalBlogPost = {
 <h2>الأسئلة المتكررة</h2>
 
 <h3>ما أكثر نسبة عمولة شيوعاً للصالونات؟</h3>
-<p>النموذج الأكثر شيوعاً عالمياً هو 40-50% عمولة للمصففين متوسطي وكبار المستوى. لكن النسبة &ldquo;الصحيحة&rdquo; تعتمد على ما يوفره الصالون (مستلزمات، تسويق، استقبال، نظام حجز) مقابل ما يجلبه المصفف (أدوات، عملاء، مهارات). كلما وفر الصالون أكثر، انخفضت نسبة العمولة؛ كلما جلب المصفف أكثر، يجب أن ترتفع.</p>
+<p>النموذج الأكثر شيوعاً عالمياً هو 40-50% عمولة للمصففين متوسطي وكبار المستوى. لكن النسبة "الصحيحة" تعتمد على ما يوفره الصالون (مستلزمات، تسويق، استقبال، نظام حجز) مقابل ما يجلبه المصفف (أدوات، عملاء، مهارات). كلما وفر الصالون أكثر، انخفضت نسبة العمولة؛ كلما جلب المصفف أكثر، يجب أن ترتفع.</p>
 
 <h3>هل يجب دفع عمولة على مبيعات المنتجات بالتجزئة؟</h3>
 <p>نعم. عمولات التجزئة 10-20% تحفز توصيات المنتجات التي تفيد العملاء (نتائج عناية منزلية أفضل) والصالون (إيرادات إضافية). بدون عمولة التجزئة، معظم الموظفين لن يوصوا بالمنتجات بشكل استباقي، تاركين إيرادات كبيرة على الطاولة.</p>
@@ -1859,14 +1859,14 @@ const hiringSalonStaffArticleAr: LocalBlogPost = {
     aboutPosts: `
 <h2>لماذا التوظيف هو النشاط الأعلى تأثيراً في صالونك</h2>
 <p>كل توظيف إما يقوّي أو يُضعف صالونك. مصفف رائع يجلب عملاء ويرفع معنويات الفريق ويساهم في سمعتك. توظيف سيئ يطرد العملاء ويخلق احتكاكاً في الفريق ويكلفك أشهراً من التدريب وطاقة الإدارة المهدرة. في عمل خدمي حيث الفريق هو المنتج، التوظيف الجيد ليس مجرد وظيفة موارد بشرية - إنه أهم قرار عمل تتخذه بشكل متكرر.</p>
-<p>تواجه صناعة التجميل تحديات توظيف مزمنة. وجد تقرير الاتحاد الوطني للشعر والتجميل (NHBF) لعام 2025 أن 67% من أصحاب الصالونات ذكروا التوظيف كأكبر تحدٍ تشغيلي، متقدماً على التسويق والتسعير والتقنية. مجمع المواهب تنافسي، وأفضل المحترفين لديهم خيارات. عملية التوظيف لديك تحتاج لجذبهم وتحديد من سيزدهر في بيئتك بدقة.</p>
-<p>يمنحك هذا الدليل نهجاً منظماً لإيجاد وتقييم وتأهيل موظفي الصالون الذين يناسبون ثقافتك ويحققون النتائج. استخدمه جنباً إلى جنب مع <a href="/ar/resources/blog/businesses/salon-staff-management">استراتيجية إدارة الموظفين الأوسع</a> لأفضل النتائج.</p>
+<p>تواجه صناعة التجميل تحديات توظيف مزمنة. وجد تقرير مهني لعام 2025 أن 67% من أصحاب الصالونات ذكروا التوظيف كأكبر تحدٍ تشغيلي، متقدماً على التسويق والتسعير والتقنية. مجمع المواهب تنافسي، وأفضل المحترفين لديهم خيارات. عملية التوظيف لديك تحتاج لجذبهم وتحديد من سيزدهر في بيئتك بدقة.</p>
+<p>يمنحك هذا الدليل نهجاً منظماً لإيجاد وتقييم وتأهيل موظفي الصالون الذين يناسبون ثقافتك ويحققون النتائج. استخدمه جنباً إلى جنب مع <a href="/ar/resources/blog/business/salon-staff-management">استراتيجية إدارة الموظفين الأوسع</a> لأفضل النتائج.</p>
 
 <h2>أين تجد مرشحي الصالون</h2>
 <p>قبل أن تتمكن من إجراء المقابلات، تحتاج خط أنابيب من المرشحين المؤهلين. أفضل التوظيفات نادراً ما تأتي من مصدر واحد.</p>
 
 <h3>منصات متخصصة في الصناعة</h3>
-<p>لوحات وظائف صناعة التجميل (SalonEmployment، StyleSeat، Indeed مفلترة للتجميل/العافية) تصل للمرشحين الذين يبحثون بنشاط. انشر إعلانات مفصلة تصف ثقافة صالونك وهيكل التعويض وفرص النمو - وليس فقط متطلبات الوظيفة.</p>
+<p>لوحات وظائف متخصصة في صناعة التجميل تصل للمرشحين الذين يبحثون بنشاط. انشر إعلانات مفصلة تصف ثقافة صالونك وهيكل التعويض وفرص النمو، وليس فقط متطلبات الوظيفة.</p>
 
 <h3>التوظيف عبر وسائل التواصل الاجتماعي</h3>
 <p>إنستغرام هو منصة الملفات المهنية الأساسية لصناعة التجميل. نشر إعلانات توظيف على إنستغرام صالونك يصل للمرشحين الذين يعرفون ويعجبون بعملك بالفعل. البحث عن هاشتاقات التجميل في منطقتك (#مصففدبي، #فنانشعرالرياض) يتيح لك تحديد المحترفين الموهوبين مباشرة.</p>
@@ -1903,34 +1903,34 @@ const hiringSalonStaffArticleAr: LocalBlogPost = {
 
 <h3>لمصففي الشعر</h3>
 <ul>
-<li>&ldquo;اشرح لي عملية استشارتك لعميل جديد يريد تغييراً كبيراً - مثلاً، من شعر طويل إلى قصة بيكسي.&rdquo; (يكشف: مهارات الاستشارة، إدارة العملاء، إدارة التوقعات)</li>
-<li>&ldquo;عميلة تأتي بشعر متضرر من الصبغة وتريد علاج تلوين آخر. ماذا تفعل؟&rdquo; (يكشف: الحكم الأخلاقي، المعرفة التقنية، القدرة على قول لا عند الحاجة)</li>
-<li>&ldquo;ما خطوط الألوان والمنتجات التي لديك أكبر خبرة بها؟ ماذا تريد تعلمه؟&rdquo; (يكشف: معرفة المنتجات، الاستعداد لتعلم العلامات المفضلة لصالونك)</li>
-<li>&ldquo;كيف تتعامل مع موقف حيث العميل غير سعيد بالنتيجة؟&rdquo; (يكشف: حل المشكلات، النضج العاطفي، غريزة الاحتفاظ بالعملاء)</li>
+<li>"اشرح لي عملية استشارتك لعميل جديد يريد تغييراً كبيراً - مثلاً، من شعر طويل إلى قصة بيكسي." (يكشف: مهارات الاستشارة، إدارة العملاء، إدارة التوقعات)</li>
+<li>"عميلة تأتي بشعر متضرر من الصبغة وتريد علاج تلوين آخر. ماذا تفعل؟" (يكشف: الحكم الأخلاقي، المعرفة التقنية، القدرة على قول لا عند الحاجة)</li>
+<li>"ما خطوط الألوان والمنتجات التي لديك أكبر خبرة بها؟ ماذا تريد تعلمه؟" (يكشف: معرفة المنتجات، الاستعداد لتعلم العلامات المفضلة لصالونك)</li>
+<li>"كيف تتعامل مع موقف حيث العميل غير سعيد بالنتيجة؟" (يكشف: حل المشكلات، النضج العاطفي، غريزة الاحتفاظ بالعملاء)</li>
 </ul>
 
 <h3>لمعالجي السبا وأخصائيي التجميل</h3>
 <ul>
-<li>&ldquo;كيف تخصص علاج الوجه بناءً على تقييم بشرة العميل؟&rdquo; (يكشف: مهارات التشخيص، معرفة العلاج، القدرة على التخصيص)</li>
-<li>&ldquo;صف نهجك لراحة العميل خلال علاج 90 دقيقة.&rdquo; (يكشف: الاهتمام بالتجربة الكاملة، وليس فقط الإجراء التقني)</li>
-<li>&ldquo;ما التعليم المستمر الذي سعيت إليه في العام الماضي؟&rdquo; (يكشف: الالتزام بالتطوير المهني)</li>
+<li>"كيف تخصص علاج الوجه بناءً على تقييم بشرة العميل؟" (يكشف: مهارات التشخيص، معرفة العلاج، القدرة على التخصيص)</li>
+<li>"صف نهجك لراحة العميل خلال علاج 90 دقيقة." (يكشف: الاهتمام بالتجربة الكاملة، وليس فقط الإجراء التقني)</li>
+<li>"ما التعليم المستمر الذي سعيت إليه في العام الماضي؟" (يكشف: الالتزام بالتطوير المهني)</li>
 </ul>
 
 <h3>لفنيي الأظافر</h3>
 <ul>
-<li>&ldquo;كيف تضمن معايير النظافة بين العملاء؟&rdquo; (يكشف: الوعي بالنظافة، المهنية، الاهتمام بالمعايير الصحية)</li>
-<li>&ldquo;عميلة تريد فن أظافر تعتقد أنه لن يناسب شكل أظافرها. كيف تتعامل مع ذلك؟&rdquo; (يكشف: مهارة الاستشارة، الحكم الفني، الدبلوماسية)</li>
+<li>"كيف تضمن معايير النظافة بين العملاء؟" (يكشف: الوعي بالنظافة، المهنية، الاهتمام بالمعايير الصحية)</li>
+<li>"عميلة تريد فن أظافر تعتقد أنه لن يناسب شكل أظافرها. كيف تتعامل مع ذلك؟" (يكشف: مهارة الاستشارة، الحكم الفني، الدبلوماسية)</li>
 </ul>
 
 <h2>أسئلة المقابلة: الملاءمة الثقافية</h2>
 <p>المهارة التقنية بدون ملاءمة ثقافية تنتج موظفين موهوبين لكن سامين. هذه الأسئلة تكشف ما إذا كان المرشح سيعزز أو يعطل فريقك:</p>
 <ul>
-<li>&ldquo;صف أفضل فريق عملت فيه. ما الذي جعله رائعاً؟&rdquo; (يكشف: ما يقدّرونه في بيئة العمل، أسلوب التعاون)</li>
-<li>&ldquo;أخبرني عن صراع مع زميل وكيف تعاملت معه.&rdquo; (يكشف: نضج حل النزاعات، الوعي الذاتي)</li>
-<li>&ldquo;كيف يبدو يوم العمل المثالي بالنسبة لك؟&rdquo; (يكشف: تفضيلات أسلوب العمل، مستويات الطاقة، توافق الجدول)</li>
-<li>&ldquo;لماذا تترك منصبك الحالي؟&rdquo; (يكشف: الدوافع، علامات تحذيرية محتملة، هل يهرب من شيء أم يسعى نحو شيء)</li>
-<li>&ldquo;ما شعورك تجاه توصية منتجات التجزئة للعملاء؟&rdquo; (يكشف: مستوى راحة المبيعات، التوافق مع توقعات إيراداتك)</li>
-<li>&ldquo;أين تريد أن تكون مهنياً خلال 2-3 سنوات؟&rdquo; (يكشف: مستوى الطموح، هل يمكن لصالونك توفير النمو الذي يسعون إليه)</li>
+<li>"صف أفضل فريق عملت فيه. ما الذي جعله رائعاً؟" (يكشف: ما يقدّرونه في بيئة العمل، أسلوب التعاون)</li>
+<li>"أخبرني عن صراع مع زميل وكيف تعاملت معه." (يكشف: نضج حل النزاعات، الوعي الذاتي)</li>
+<li>"كيف يبدو يوم العمل المثالي بالنسبة لك؟" (يكشف: تفضيلات أسلوب العمل، مستويات الطاقة، توافق الجدول)</li>
+<li>"لماذا تترك منصبك الحالي؟" (يكشف: الدوافع، علامات تحذيرية محتملة، هل يهرب من شيء أم يسعى نحو شيء)</li>
+<li>"ما شعورك تجاه توصية منتجات التجزئة للعملاء؟" (يكشف: مستوى راحة المبيعات، التوافق مع توقعات إيراداتك)</li>
+<li>"أين تريد أن تكون مهنياً خلال 2-3 سنوات؟" (يكشف: مستوى الطموح، هل يمكن لصالونك توفير النمو الذي يسعون إليه)</li>
 </ul>
 
 <h2>العلامات التحذيرية التي يجب مراقبتها</h2>
@@ -1946,10 +1946,10 @@ const hiringSalonStaffArticleAr: LocalBlogPost = {
 <h3>خلال المقابلة</h3>
 <ul>
 <li><strong>انتقاد أصحاب العمل السابقين:</strong> بغض النظر عن مدى سوء الصالون السابق، المرشح المحترف يناقش التجارب السابقة بشكل بنّاء. السلبية المستمرة عن أماكن العمل السابقة تشير لمشكلة في الموقف.</li>
-<li><strong>عدم الاستعداد لمناقشة نقاط الضعف:</strong> &ldquo;ليس لدي نقاط ضعف&rdquo; هي بذاتها علامة تحذيرية. المحترفون الواعون يعرفون أين ينمون.</li>
+<li><strong>عدم الاستعداد لمناقشة نقاط الضعف:</strong> "ليس لدي نقاط ضعف" هي بذاتها علامة تحذيرية. المحترفون الواعون يعرفون أين ينمون.</li>
 <li><strong>التركيز على المال دون اهتمام بالدور:</strong> أسئلة التعويض مشروعة، لكن المرشح الذي يسأل فقط عن المال ولا يسأل أبداً عن العمل أو الفريق أو العملاء يركز على المعاملات بدلاً من المسيرة المهنية.</li>
 <li><strong>الوصول متأخراً:</strong> إذا تأخر عن المقابلة دون سبب حقيقي وتواصل استباقي، سيتأخر عن الورديات.</li>
-<li><strong>مقاومة نهج صالونك:</strong> &ldquo;هذه ليست طريقتي&rdquo; أو &ldquo;في صالوني السابق، كنا نفعلها بشكل مختلف&rdquo; دون استعداد للتكيف تشير لعدم مرونة.</li>
+<li><strong>مقاومة نهج صالونك:</strong> "هذه ليست طريقتي" أو "في صالوني السابق، كنا نفعلها بشكل مختلف" دون استعداد للتكيف تشير لعدم مرونة.</li>
 </ul>
 
 <h3>خلال الوردية التجريبية</h3>
@@ -2062,7 +2062,7 @@ const employeeRetentionArticleAr: LocalBlogPost = {
     aboutPosts: `
 <h2>تكلفة خسارة مصفف أعلى مما تظن</h2>
 <p>عندما يغادر مصفف موهوب صالونك، التأثير المالي يتجاوز بكثير استبدال موظف واحد. التكلفة الحقيقية للدوران الوظيفي تشمل العملاء المفقودين الذين يتبعون المصفف المغادر (عادة 30-50% من قائمتهم)، وتكاليف التوظيف (إعلان الوظيفة والمقابلات والورديات التجريبية)، واستثمار التدريب للبديل (3-6 أشهر للوصول للإنتاجية الكاملة)، وتأثير معنويات الفريق (الموظفون المتبقون يتساءلون عن بقائهم)، وفجوة الإيرادات خلال الانتقال (كرسي فارغ لمدة 4-8 أسابيع كحد أدنى).</p>
-<p>تضع أبحاث الصناعة التكلفة الإجمالية لاستبدال مصفف متوسط المستوى بـ1.5-2 ضعف تعويضه السنوي. لمصفف يكسب 8,000 درهم شهرياً، هذا 144,000-192,000 درهم في تكاليف مباشرة وغير مباشرة. مع ذلك، معظم أصحاب الصالونات يقضون وقتاً وأموالاً أكثر بكثير على اكتساب العملاء من <a href="/ar/resources/blog/businesses/salon-staff-management">الاحتفاظ بالموظفين</a> الذين يخدمون هؤلاء العملاء.</p>
+<p>تضع أبحاث الصناعة التكلفة الإجمالية لاستبدال مصفف متوسط المستوى بـ1.5-2 ضعف تعويضه السنوي. لمصفف يكسب 8,000 درهم شهرياً، هذا 144,000-192,000 درهم في تكاليف مباشرة وغير مباشرة. مع ذلك، معظم أصحاب الصالونات يقضون وقتاً وأموالاً أكثر بكثير على اكتساب العملاء من <a href="/ar/resources/blog/business/salon-staff-management">الاحتفاظ بالموظفين</a> الذين يخدمون هؤلاء العملاء.</p>
 <p>يركز هذا الدليل على الاستراتيجيات التي تقلل الدوران فعلاً - بناءً على بيانات الصناعة والأسباب الحقيقية لمغادرة محترفي التجميل.</p>
 
 <h2>لماذا يغادر محترفو التجميل فعلاً</h2>
@@ -2145,7 +2145,7 @@ const employeeRetentionArticleAr: LocalBlogPost = {
 <h3>التقدير المنتظم</h3>
 <ul>
 <li><strong>إشادات أسبوعية:</strong> اعترف علنياً بالإنجازات في اجتماعات الفريق - أعلى معدل إعادة حجز، أفضل تقييم عميل، أعلى مبيعات منتجات.</li>
-<li><strong>جوائز شهرية:</strong> &ldquo;مصفف الشهر&rdquo; مع مكافأة صغيرة (بطاقة هدايا، نصف يوم إجازة إضافي، حزمة منتجات).</li>
+<li><strong>جوائز شهرية:</strong> "مصفف الشهر" مع مكافأة صغيرة (بطاقة هدايا، نصف يوم إجازة إضافي، حزمة منتجات).</li>
 <li><strong>مشاركة ملاحظات العملاء:</strong> شارك تقييمات العملاء الإيجابية مع عضو الفريق المذكور بالاسم. هذا مجاني ويستغرق 30 ثانية وهو من أقوى أدوات التقدير المتاحة.</li>
 </ul>
 
@@ -2274,7 +2274,7 @@ const freelanceBeautyScheduleArticleAr: LocalBlogPost = {
 </ol>
 
 <h3>الإبلاغ عن مدى توفرك</h3>
-<p> شارك الفترات الزمنية المتاحة لديك (وليس جدولك الزمني بالكامل) مع العملاء من خلال منصة الحجز الخاصة بك. <a href="/ar/features/professional/payment-processing">The Daisy للمحترفين</a> يتيح لك تحديد مدى توفرك، ويتيح لك العملاء الحجز من المواعيد المفتوحة - لن تحتاج أبدًا إلى التفاوض بشأن مواعيد المواعيد عبر رسائل WhatsApp.</p>
+<p> شارك الفترات الزمنية المتاحة لديك (وليس جدولك الزمني بالكامل) مع العملاء من خلال منصة الحجز الخاصة بك. <a href="/ar/features/professional/payment-processing">ديزي للمحترفين</a> يتيح لك تحديد مدى توفرك، ويتيح لك العملاء الحجز من المواعيد المفتوحة - لن تحتاج أبدًا إلى التفاوض بشأن مواعيد المواعيد عبر رسائل واتساب.</p>
 
 <h2>سياسات حجز العميل التي تحمي جدولك</h2>
 <p> تمنع سياسات الحجز الواضحة فوضى الجدولة التي يعاني منها معظم المستقلين. ضع هذه السياسات منذ اليوم الأول وأبلغها لكل عميل:</p>
@@ -2322,16 +2322,16 @@ const freelanceBeautyScheduleArticleAr: LocalBlogPost = {
 <p> خطة 1-2 أسابيع من الراحة الكاملة لكل ربع سنة. أعلن عن مواعيد الإجازة للعملاء قبل 4 أسابيع حتى يتمكنوا من الحجز في فترة غيابك. ستعود منتعشًا، ولن يغادر العملاء - بل سيقومون ببساطة بإعادة جدولة مواعيدهم.</p>
 
 <h2>أدوات الجدولة للمحترفين المستقلين</h2>
-<p> لا تتجاوز الجدولة اليدوية عبر رسائل WhatsApp والملاحظات الذهنية ما بين 10 إلى 15 عميلًا منتظمًا. إليك ما يجب أن تتضمنه حزمة الجدولة الخاصة بك:</p>
+<p> لا تتجاوز الجدولة اليدوية عبر رسائل واتساب والملاحظات الذهنية ما بين 10 إلى 15 عميلًا منتظمًا. إليك ما يجب أن تتضمنه حزمة الجدولة الخاصة بك:</p>
 
 <h3>نظام الحجز الإلكتروني</h3>
-<p> صفحة حجز حيث يقوم العملاء بعرض الخانات المتاحة لديك والحجز مباشرة بدون إرسال رسائل ذهابًا وإيابًا. وهذا وحده يوفر من 3 إلى 5 ساعات أسبوعيًا في إدارة الجدولة. توفر The Daisy <a href="/ar/features/professional/payment-processing">منصة احترافية للحجز والدفع</a> مصممة خصيصًا لمحترفي التجميل المستقلين.</p>
+<p> صفحة حجز حيث يقوم العملاء بعرض الخانات المتاحة لديك والحجز مباشرة بدون إرسال رسائل ذهابًا وإيابًا. وهذا وحده يوفر من 3 إلى 5 ساعات أسبوعيًا في إدارة الجدولة. توفر ديزي <a href="/ar/features/professional/payment-processing">منصة احترافية للحجز والدفع</a> مصممة خصيصًا لمحترفي التجميل المستقلين.</p>
 
 <h3>تكامل التقويم</h3>
-<p> يجب أن يتزامن نظام الحجز الخاص بك مع تقويم Google أو تقويم Apple أو Outlook حتى تكون جميع التزاماتك (الشخصية والمهنية) مرئية في مكان واحد. تحدث الحجوزات المزدوجة عندما لا يرى تقويم عملك التزاماتك الشخصية.</p>
+<p> يجب أن يتزامن نظام الحجز الخاص بك مع تقويم جوجل أو تقويم Apple أو Outlook حتى تكون جميع التزاماتك (الشخصية والمهنية) مرئية في مكان واحد. تحدث الحجوزات المزدوجة عندما لا يرى تقويم عملك التزاماتك الشخصية.</p>
 
 <h3>التذكيرات التلقائية</h3>
-<p> رسائل التذكير التلقائية بالمواعيد التي يتم إرسالها قبل 24 ساعة وساعة واحدة من الموعد تقلل من حالات عدم الحضور بنسبة 30-50%. يجب إرسالها عبر WhatsApp أو الرسائل القصيرة أو البريد الإلكتروني تلقائيًا - ولن تحتاج أبدًا إلى تذكير العميل يدويًا.</p>
+<p> رسائل التذكير التلقائية بالمواعيد التي يتم إرسالها قبل 24 ساعة وساعة واحدة من الموعد تقلل من حالات عدم الحضور بنسبة 30-50%. يجب إرسالها عبر واتساب أو الرسائل القصيرة أو البريد الإلكتروني تلقائيًا - ولن تحتاج أبدًا إلى تذكير العميل يدويًا.</p>
 
 <h3>إدارة قائمة الانتظار</h3>
 <p>عندما يكون جدولك ممتلئًا، تتيح قائمة الانتظار للعملاء المهتمين الانضمام إلى قائمة الانتظار. إذا أدى الإلغاء إلى فتح فترة زمنية، فسيتم إخطار قائمة الانتظار تلقائيًا، مما يملأ الفجوة دون أن تحرك إصبعك.</p>
@@ -2428,7 +2428,7 @@ const performanceReviewsArticleAr: LocalBlogPost = {
       'قالب واضح وقابل للتنفيذ لمراجعات أداء موظفي الصالون. يغطي أطر التقييم وأمثلة المحادثات وتحديد الأهداف والجدولة ومعالجة الأداء الضعيف وربط المراجعات بنمو الفريق.',
     aboutPosts: `
 <h2>لماذا مراجعات الأداء ضرورية لفرق الصالون</h2>
-<p>مراجعات الأداء في الصالونات إما مخيفة أو تُتجاوز أو تُجرى بشكل غير رسمي لدرجة أنها بلا تأثير. مع ذلك، المراجعات المنظمة هي أكثر أداة فعّالة لديك لتطوير فريقك وتحديد المشاكل قبل أن تصبح أزمات وإثبات أنك تستثمر في نمو أفرادك. عند دمجها في <a href="/ar/resources/blog/businesses/salon-staff-management">نظام إدارة الموظفين</a>، تتحول المراجعات من عبء سنوي إلى محرك تطوير مستمر.</p>
+<p>مراجعات الأداء في الصالونات إما مخيفة أو تُتجاوز أو تُجرى بشكل غير رسمي لدرجة أنها بلا تأثير. مع ذلك، المراجعات المنظمة هي أكثر أداة فعّالة لديك لتطوير فريقك وتحديد المشاكل قبل أن تصبح أزمات وإثبات أنك تستثمر في نمو أفرادك. عند دمجها في <a href="/ar/resources/blog/business/salon-staff-management">نظام إدارة الموظفين</a>، تتحول المراجعات من عبء سنوي إلى محرك تطوير مستمر.</p>
 <p>وجدت دراسة غالوب لبيئة العمل في 2025 أن الموظفين الذين يتلقون ملاحظات منتظمة ومنظمة أكثر احتمالاً بـ3.6 مرات للشعور بالانخراط في العمل مقارنة بمن لا يتلقون ملاحظات. في صناعة التجميل حيث انخراط الموظفين يؤثر مباشرة على تجربة العميل والاحتفاظ، هذا الفرق يترجم لنتائج عمل قابلة للقياس: معدلات إعادة حجز أعلى وتقييمات أفضل ودوران وظيفي أقل.</p>
 <p>يقدم هذا الدليل إطار مراجعة أداء كاملاً مصمماً لأعمال التجميل، يشمل القوالب ومعايير التقييم وأدلة المحادثة.</p>
 
@@ -2529,40 +2529,40 @@ const performanceReviewsArticleAr: LocalBlogPost = {
 <p>ابدأ بإيجابية. اعترف بشيء محدد قام به عضو الفريق جيداً منذ آخر مراجعة. هذا يضع نبرة بنّاءة ويشير إلى أنك تلاحظ مساهماتهم.</p>
 
 <h3>التقييم الذاتي (10 دقائق)</h3>
-<p>اطلب من عضو الفريق مشاركة تقييمه أولاً: &ldquo;كيف تشعر تجاه أدائك هذا الربع؟ ما الذي تفخر به أكثر، وأين تعتقد أن لديك مجالاً للتحسين؟&rdquo; هذا يكشف وعيهم الذاتي وغالباً يطرح نفس النقاط التي خططت لإثارتها، مما يجعل الملاحظات تبدو تعاونية بدلاً من فوقية.</p>
+<p>اطلب من عضو الفريق مشاركة تقييمه أولاً: "كيف تشعر تجاه أدائك هذا الربع؟ ما الذي تفخر به أكثر، وأين تعتقد أن لديك مجالاً للتحسين؟" هذا يكشف وعيهم الذاتي وغالباً يطرح نفس النقاط التي خططت لإثارتها، مما يجعل الملاحظات تبدو تعاونية بدلاً من فوقية.</p>
 
 <h3>تقييم المدير (15 دقيقة)</h3>
-<p>امشِ عبر كل بُعد تقييمي مع تقييماتك وأمثلة محددة. ابدأ بنقاط القوة ثم عالج مجالات التطوير. استخدم الأدلة والبيانات وليس الآراء: &ldquo;معدل إعادة حجزك كان 72%، وهو فوق هدفنا 65% - هذا يُظهر أن عملاءك يقدّرون ما تقدمه&rdquo; أكثر فعالية من &ldquo;أعتقد أنك جيد مع العملاء.&rdquo;</p>
+<p>امشِ عبر كل بُعد تقييمي مع تقييماتك وأمثلة محددة. ابدأ بنقاط القوة ثم عالج مجالات التطوير. استخدم الأدلة والبيانات وليس الآراء: "معدل إعادة حجزك كان 72%، وهو فوق هدفنا 65% - هذا يُظهر أن عملاءك يقدّرون ما تقدمه" أكثر فعالية من "أعتقد أنك جيد مع العملاء."</p>
 
 <h3>تحديد الأهداف (10 دقائق)</h3>
 <p>تعاون على 2-3 أهداف محددة وقابلة للقياس للربع القادم. يجب أن تكون الأهداف قابلة للتحقيق لكن طموحة. أمثلة:</p>
 <ul>
-<li>&ldquo;زيادة متوسط قيمة الفاتورة من 280 درهم إلى 320 درهم بإضافة توصية منتج واحدة لكل زيارة عميل.&rdquo;</li>
-<li>&ldquo;إكمال شهادة البالاياج المتقدمة بنهاية الربع القادم.&rdquo;</li>
-<li>&ldquo;رفع معدل إعادة الحجز من 65% إلى 72% بتطبيق مطالبة إعادة حجز في نهاية كل موعد.&rdquo;</li>
+<li>"زيادة متوسط قيمة الفاتورة من 280 درهم إلى 320 درهم بإضافة توصية منتج واحدة لكل زيارة عميل."</li>
+<li>"إكمال شهادة البالاياج المتقدمة بنهاية الربع القادم."</li>
+<li>"رفع معدل إعادة الحجز من 65% إلى 72% بتطبيق مطالبة إعادة حجز في نهاية كل موعد."</li>
 </ul>
 
 <h3>الختام (5 دقائق)</h3>
-<p>لخّص النقاط الرئيسية وأكد الأهداف وجدوِل المراجعة التالية. اختم بسؤال: &ldquo;هل هناك شيء تحتاجه مني أو من الصالون لدعمك في الوصول لهذه الأهداف؟&rdquo;</p>
+<p>لخّص النقاط الرئيسية وأكد الأهداف وجدوِل المراجعة التالية. اختم بسؤال: "هل هناك شيء تحتاجه مني أو من الصالون لدعمك في الوصول لهذه الأهداف؟"</p>
 
 <h2>التعامل مع محادثات المراجعة الصعبة</h2>
 <p>ليست كل مراجعة إيجابية. إليك كيف تتعامل مع المواقف الصعبة الشائعة:</p>
 
 <h3>ضعف الأداء</h3>
-<p>كن مباشراً لكن متعاطفاً: &ldquo;إيراداتك للربع الماضي كانت 12,000 درهم مقابل هدف 18,000 درهم. أريد فهم ما يساهم في هذه الفجوة والعمل معك على خطة لسدها.&rdquo; ركز على الفجوة بين التوقع والواقع وليس على شخصية الفرد.</p>
+<p>كن مباشراً لكن متعاطفاً: "إيراداتك للربع الماضي كانت 12,000 درهم مقابل هدف 18,000 درهم. أريد فهم ما يساهم في هذه الفجوة والعمل معك على خطة لسدها." ركز على الفجوة بين التوقع والواقع وليس على شخصية الفرد.</p>
 
 <h3>مشاكل الموقف أو السلوك</h3>
-<p>استخدم أمثلة محددة: &ldquo;في [التاريخ]، ذكر عميل أن تعامله معك بدا مستعجلاً وغير شخصي. هذه ثالث ملاحظة مماثلة هذا الربع. دعنا نتحدث عما يحدث وكيف يمكننا معالجته.&rdquo; تجنب التعميمات الغامضة مثل &ldquo;موقفك يحتاج تحسيناً.&rdquo;</p>
+<p>استخدم أمثلة محددة: "في [التاريخ]، ذكر عميل أن تعامله معك بدا مستعجلاً وغير شخصي. هذه ثالث ملاحظة مماثلة هذا الربع. دعنا نتحدث عما يحدث وكيف يمكننا معالجته." تجنب التعميمات الغامضة مثل "موقفك يحتاج تحسيناً."</p>
 
 <h3>عندما يختلف عضو الفريق مع تقييمك</h3>
-<p>استمع بالكامل قبل الرد. اسأل: &ldquo;ساعدني في فهم وجهة نظرك.&rdquo; إذا قدموا أدلة صحيحة لم تأخذها في الاعتبار، عدّل تقييمك. إذا كانوا دفاعيين دون أدلة، اعترف بمشاعرهم لكن حافظ على موقفك: &ldquo;أفهم أنك ترى الأمر بشكل مختلف. البيانات تُظهر [أدلة محددة]، وأحتاج أن أكون صادقاً بشأن ما ألاحظه.&rdquo;</p>
+<p>استمع بالكامل قبل الرد. اسأل: "ساعدني في فهم وجهة نظرك." إذا قدموا أدلة صحيحة لم تأخذها في الاعتبار، عدّل تقييمك. إذا كانوا دفاعيين دون أدلة، اعترف بمشاعرهم لكن حافظ على موقفك: "أفهم أنك ترى الأمر بشكل مختلف. البيانات تُظهر [أدلة محددة]، وأحتاج أن أكون صادقاً بشأن ما ألاحظه."</p>
 
 <h2>استخدام المراجعات لدفع التطوير وليس فقط التقييم</h2>
 <p>الخطأ الأكثر شيوعاً هو معاملة المراجعات كبطاقة تقرير. الغرض الحقيقي هو التطوير - مساعدة كل عضو فريق ليصبح أفضل ويكسب أكثر ويتقدم في مسيرته المهنية.</p>
 <ul>
 <li><strong>اربط المراجعات بالتدريب:</strong> إذا حددت المراجعة فجوة تقنية، جدوِل تدريباً محدداً لمعالجتها.</li>
 <li><strong>اربط المراجعات بالتعويض:</strong> المراجعات السنوية يجب أن تُعلم مباشرة تعديلات نسب العمولات والمكافآت والترقيات. الموظفون الذين يرون رابطاً واضحاً بين أداء المراجعة والمكافأة المالية يأخذون المراجعات بجدية.</li>
-<li><strong>تابع بين المراجعات:</strong> لا تحدد أهدافاً في المراجعة وتنساها. أشر للأهداف في المراجعات الأسبوعية: &ldquo;كيف يتقدم شهادة البالاياج؟&rdquo; هذا يُظهر اهتمامك بتطويرهم ما وراء اجتماع المراجعة.</li>
+<li><strong>تابع بين المراجعات:</strong> لا تحدد أهدافاً في المراجعة وتنساها. أشر للأهداف في المراجعات الأسبوعية: "كيف يتقدم شهادة البالاياج؟" هذا يُظهر اهتمامك بتطويرهم ما وراء اجتماع المراجعة.</li>
 </ul>
 <p>تتبع <a href="/ar/features/business/team-management">منصة إدارة الفريق من ديزي</a> مقاييس الأداء الفردي في الوقت الحقيقي، فتكون محادثات المراجعة مبنية على البيانات وليس الذاكرة. راجع <a href="/ar/pricing">خطط الأسعار</a> لميزات تحليلات الفريق.</p>
 
@@ -2575,7 +2575,7 @@ const performanceReviewsArticleAr: LocalBlogPost = {
 <p>الدرجات توفر إطاراً واضحاً وموضوعياً يقلل الغموض. استخدم مقياس 1-5 لكل بُعد (1: دون التوقعات، 2: يلبي جزئياً، 3: يلبي التوقعات، 4: يتجاوز، 5: استثنائي) مع أمثلة محددة تبرر كل درجة. الدرجة الإجمالية المرجحة تعطي كلاك أنت وعضو الفريق صورة واضحة عن موقعهم.</p>
 
 <h3>كيف أتعامل مع مراجعة لمتفوق؟</h3>
-<p>المتفوقون يحتاجون مراجعات أيضاً - لكن التركيز يتحول من مجالات التطوير إلى فرص النمو. اسأل: &ldquo;إلى أين تريد أن تذهب تالياً؟&rdquo; وناقش الأدوار الكبيرة وفرص التخصص ومسؤوليات التوجيه أو زيادات التعويض. إهمال المتفوقين لأنهم &ldquo;بخير&rdquo; هو مسار شائع لخسارتهم.</p>
+<p>المتفوقون يحتاجون مراجعات أيضاً - لكن التركيز يتحول من مجالات التطوير إلى فرص النمو. اسأل: "إلى أين تريد أن تذهب تالياً؟" وناقش الأدوار الكبيرة وفرص التخصص ومسؤوليات التوجيه أو زيادات التعويض. إهمال المتفوقين لأنهم "بخير" هو مسار شائع لخسارتهم.</p>
 
 <h3>ما التوثيق الذي يجب الاحتفاظ به من المراجعات؟</h3>
 <p>احتفظ بسجل مكتوب لكل مراجعة رسمية (شهرية وربع سنوية) يتضمن: درجات التقييم والأمثلة المحددة المناقشة والأهداف المحددة وأي التزامات من أي طرف. يجب أن يوقع المدير وعضو الفريق على السجل. هذا التوثيق يحميك قانونياً ويوفر استمرارية إذا تغيرت الإدارة.</p>

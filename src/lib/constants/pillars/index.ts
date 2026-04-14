@@ -56,6 +56,8 @@ export interface PillarPageData {
 // ---------------------------------------------------------------------------
 // Registry, import each pillar data file
 // ---------------------------------------------------------------------------
+import type { I18nContent } from '@/lib/constants/i18n';
+import { t } from '@/lib/constants/i18n';
 import { salonManagementSoftware } from './salon-management-software';
 import { freelanceBeautyProfessionalGuide } from './freelance-beauty-professional-guide';
 import { beautyIndustryTrends } from './beauty-industry-trends';
@@ -86,14 +88,34 @@ const allPillarPages: PillarPageData[] = [
 // Helpers
 // ---------------------------------------------------------------------------
 
-export function getPillarPage(slug: string): PillarPageData | undefined {
-  return allPillarPages.find((p) => p.slug === slug);
+interface PillarsBundle {
+  allPillarPages: PillarPageData[];
+}
+
+function getPillarsI18n(): I18nContent<PillarsBundle> {
+  // Lazy require avoids any circular import headaches and keeps the EN dataset
+  // as the single source of truth for slugs and structure.
+  // eslint-disable-next-line
+  const ar = require('./pillars.ar') as PillarsBundle;
+  return {
+    en: { allPillarPages },
+    ar,
+  };
+}
+
+export function getPillarPage(slug: string, locale: string = 'en'): PillarPageData | undefined {
+  const bundle = t(getPillarsI18n(), locale);
+  const hit = bundle.allPillarPages.find((p) => p.slug === slug);
+  if (!hit && locale === 'ar') {
+    return allPillarPages.find((p) => p.slug === slug);
+  }
+  return hit;
 }
 
 export function getAllPillarSlugs(): string[] {
   return allPillarPages.map((p) => p.slug);
 }
 
-export function getAllPillarPages(): PillarPageData[] {
-  return allPillarPages;
+export function getAllPillarPages(locale: string = 'en'): PillarPageData[] {
+  return t(getPillarsI18n(), locale).allPillarPages;
 }
