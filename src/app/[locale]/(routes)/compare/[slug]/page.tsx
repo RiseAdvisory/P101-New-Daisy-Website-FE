@@ -18,7 +18,7 @@ export function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Metadata {
-  const result = getComparePageData(params.slug);
+  const result = getComparePageData(params.slug, params.locale);
   if (!result) return { title: 'Not Found' };
 
   const metaTitle =
@@ -56,7 +56,7 @@ export default function ComparePage({
 }: {
   params: { locale: string; slug: string };
 }) {
-  const result = getComparePageData(params.slug);
+  const result = getComparePageData(params.slug, params.locale);
   if (!result) notFound();
 
   return <ComparePageClient slug={params.slug} locale={params.locale} />;

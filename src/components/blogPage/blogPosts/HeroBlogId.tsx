@@ -66,8 +66,12 @@ export const HeroBlogPage = ({ breadcrumbTitle, breadcrumbDescription, breadcrum
         className="flex justify-start text-[#ECEEED] text-sm mt-4 flex-col md:flex-row"
         dir={isRtl ? 'rtl' : 'ltr'}
       >
-        <div className="flex">
-          <div className="flex items-center ltr:border-r ltr:pr-[10px] rtl:border-l rtl:pl-[10px]">
+        <div
+          className={`flex flex-wrap items-center ${
+            isRtl ? 'divide-x-reverse' : ''
+          } divide-x divide-white/25`}
+        >
+          <span className="flex items-center px-3 first:pl-0 last:pr-0">
             {iconImg && (
               <Image
                 src={iconImg}
@@ -77,20 +81,28 @@ export const HeroBlogPage = ({ breadcrumbTitle, breadcrumbDescription, breadcrum
                 height={27}
               />
             )}
-            <span className="text-sm">{getAuthorBio(post?.user?.data?.attributes?.name || post?.user?.name || '', locale)?.name || post?.user?.data?.attributes?.name || post?.user?.name || 'Author'}</span>
-          </div>
-          <span className="flex items-center ltr:border-r rtl:border-l px-[10px]">
+            <span className="text-sm">
+              {getAuthorBio(
+                post?.user?.data?.attributes?.name || post?.user?.name || '',
+                locale,
+              )?.name ||
+                post?.user?.data?.attributes?.name ||
+                post?.user?.name ||
+                'Author'}
+            </span>
+          </span>
+          <span className="flex items-center px-3 first:pl-0 last:pr-0">
             <CalendarIcon
               className="ltr:mr-[10px] rtl:ml-[10px]"
               fill="#ECEEED"
             />
             {dateText}
           </span>
+          <span className="flex items-center px-3 first:pl-0 last:pr-0">
+            <ClockIcon className="ltr:mr-2 rtl:ml-2" fill="#ECEEED" />
+            {timeText}
+          </span>
         </div>
-        <span className="flex items-center mt-2 md:mt-0 ltr:md:ml-2 rtl:md:mr-2 rtl:pr-2">
-          <ClockIcon className="ltr:mr-2 rtl:ml-2" fill="#ECEEED" />
-          {timeText}
-        </span>
       </div>
     </div>
   );

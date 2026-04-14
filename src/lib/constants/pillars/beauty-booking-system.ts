@@ -75,7 +75,7 @@ export const beautyBookingSystem: PillarPageData = {
         },
         {
           title: 'Online Booking for Salons: Setup Guide',
-          url: '/en/resources/blog/businesses/online-booking-for-salons-setup-guide',
+          url: '/en/resources/blog/business/online-booking-for-salons-setup-guide',
         },
       ],
     },
@@ -205,7 +205,7 @@ export const beautyBookingSystem: PillarPageData = {
 <p>For high-value services or clients with a history of no-shows, the ability to collect a deposit or full prepayment at the time of booking is essential. This dramatically reduces no-shows for premium services and guarantees revenue even if the client cancels late. The booking system should make this seamless, no redirecting clients to a separate payment page.</p>
 
 <h3>Waitlist Management</h3>
-<p>When your preferred time slots are fully booked, a <a href="/en/resources/blog/businesses/salon-waitlist-management">waitlist feature</a> captures demand that would otherwise be lost. Clients join the waitlist for their desired time, and when a cancellation opens a slot, the system automatically notifies waitlisted clients. This converts cancellations into bookings instead of leaving gaps in your calendar.</p>
+<p>When your preferred time slots are fully booked, a <a href="/en/resources/blog/business/salon-waitlist-management">waitlist feature</a> captures demand that would otherwise be lost. Clients join the waitlist for their desired time, and when a cancellation opens a slot, the system automatically notifies waitlisted clients. This converts cancellations into bookings instead of leaving gaps in your calendar.</p>
 
 <h3>Reporting and Analytics</h3>
 <p>Your booking system should tell you more than just what is on the calendar. Look for reports on booking volume trends, peak and off-peak times, most-requested services, no-show rates, and average lead time (how far in advance clients book). This data informs staffing decisions, marketing timing, and pricing strategy.</p>
@@ -214,7 +214,7 @@ export const beautyBookingSystem: PillarPageData = {
       relatedLinks: [
         {
           title: 'Salon Waitlist Management',
-          url: '/en/resources/blog/businesses/salon-waitlist-management',
+          url: '/en/resources/blog/business/salon-waitlist-management',
         },
         {
           title: 'Daisy Booking Management',
@@ -297,7 +297,7 @@ export const beautyBookingSystem: PillarPageData = {
       content: `<p>Mobile-first booking is not a nice-to-have. It is where the majority of your bookings originate. Over 70% of beauty service appointments are now made from a mobile device, and that number continues to climb every year. If your booking experience is not optimized for smartphones, you are creating friction at the exact moment a client decides to book.</p>
 
 <h3>What Mobile-Optimized Booking Looks Like</h3>
-<p>A truly mobile-optimized <a href="/en/resources/blog/businesses/mobile-booking-beauty-salon">booking experience</a> goes beyond a responsive layout. It means:</p>
+<p>A truly mobile-optimized <a href="/en/resources/blog/business/mobile-booking-beauty-salon">booking experience</a> goes beyond a responsive layout. It means:</p>
 <ul>
   <li><strong>Thumb-friendly navigation:</strong> Large tap targets, minimal scrolling, and no pinch-to-zoom required. Service selection, time slot picking, and confirmation should each require no more than two to three taps.</li>
   <li><strong>Fast loading:</strong> The booking page must load within two seconds on a mobile connection. Every additional second of load time drops conversion rates by approximately 20%.</li>
@@ -317,7 +317,7 @@ export const beautyBookingSystem: PillarPageData = {
       relatedLinks: [
         {
           title: 'Mobile Booking for Beauty Salons',
-          url: '/en/resources/blog/businesses/mobile-booking-beauty-salon',
+          url: '/en/resources/blog/business/mobile-booking-beauty-salon',
         },
       ],
     },
@@ -334,7 +334,7 @@ export const beautyBookingSystem: PillarPageData = {
 <p>The most effective approach combines multiple prevention layers, each addressing a different reason clients fail to show:</p>
 
 <h3>Layer 1: Automated Reminders</h3>
-<p>The foundation of no-show prevention. <a href="/en/resources/blog/businesses/reduce-salon-no-shows">Automated reminder sequences</a> sent at strategic intervals dramatically reduce forgotten appointments:</p>
+<p>The foundation of no-show prevention. <a href="/en/resources/blog/business/reduce-salon-no-shows">Automated reminder sequences</a> sent at strategic intervals dramatically reduce forgotten appointments:</p>
 <ul>
   <li><strong>48-hour reminder:</strong> Gives clients enough time to reschedule if their plans have changed, opening the slot for someone else.</li>
   <li><strong>24-hour reminder:</strong> The primary reminder that clients confirm against. Include a one-tap confirm, reschedule, or cancel option.</li>
@@ -363,11 +363,11 @@ export const beautyBookingSystem: PillarPageData = {
       relatedLinks: [
         {
           title: 'How to Reduce Salon No-Shows',
-          url: '/en/resources/blog/businesses/reduce-salon-no-shows',
+          url: '/en/resources/blog/business/reduce-salon-no-shows',
         },
         {
           title: 'Salon Waitlist Management',
-          url: '/en/resources/blog/businesses/salon-waitlist-management',
+          url: '/en/resources/blog/business/salon-waitlist-management',
         },
       ],
     },
@@ -381,7 +381,7 @@ export const beautyBookingSystem: PillarPageData = {
       content: `<p>Group bookings and service packages represent significant revenue opportunities that many booking systems handle poorly or not at all. Salons that master these booking types consistently report higher average ticket values and stronger client retention.</p>
 
 <h3>Group Booking Capabilities</h3>
-<p><a href="/en/resources/blog/businesses/group-booking-packages-salon">Group bookings</a>, bridal parties, birthday celebrations, corporate wellness events, mother-daughter packages, require your booking system to coordinate multiple simultaneous services across multiple providers. The system needs to:</p>
+<p><a href="/en/resources/blog/business/group-booking-packages-salon">Group bookings</a>, bridal parties, birthday celebrations, corporate wellness events, mother-daughter packages, require your booking system to coordinate multiple simultaneous services across multiple providers. The system needs to:</p>
 <ul>
   <li><strong>Reserve multiple time slots simultaneously:</strong> A bridal party of six needs six concurrent or staggered appointments. The system must block all required slots in a single transaction, not force the organizer to book each person separately.</li>
   <li><strong>Coordinate across providers:</strong> Different group members may need different services from different team members. The system should display combined availability that accounts for all required providers and services.</li>
@@ -403,7 +403,7 @@ export const beautyBookingSystem: PillarPageData = {
       relatedLinks: [
         {
           title: 'Group Booking and Packages for Salons',
-          url: '/en/resources/blog/businesses/group-booking-packages-salon',
+          url: '/en/resources/blog/business/group-booking-packages-salon',
         },
       ],
     },
@@ -483,7 +483,7 @@ export const beautyBookingSystem: PillarPageData = {
       relatedLinks: [
         {
           title: 'How AI Scheduling Saves Salon Owners 10+ Hours Per Week',
-          url: '/en/resources/blog/businesses/ai-scheduling-saves-salon-owners-time',
+          url: '/en/resources/blog/business/ai-scheduling-saves-salon-owners-time',
         },
         {
           title: 'Daisy AI Salon Management',

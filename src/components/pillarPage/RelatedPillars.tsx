@@ -4,13 +4,14 @@ import { getPillarPage } from '@/lib/constants/pillars';
 
 interface RelatedPillarsProps {
   slugs: string[];
+  locale?: string;
 }
 
-export function RelatedPillars({ slugs }: RelatedPillarsProps) {
+export function RelatedPillars({ slugs, locale = 'en' }: RelatedPillarsProps) {
   if (!slugs || slugs.length === 0) return null;
 
   const pillars = slugs
-    .map((slug) => getPillarPage(slug))
+    .map((slug) => getPillarPage(slug, locale))
     .filter(Boolean);
 
   if (pillars.length === 0) return null;
@@ -26,7 +27,7 @@ export function RelatedPillars({ slugs }: RelatedPillarsProps) {
             pillar ? (
               <Link
                 key={pillar.slug}
-                href={`/${pillar.slug}`}
+                href={`/${locale}/${pillar.slug}`}
                 className="group flex flex-col rounded-xl border border-[#E8E9E9] bg-white p-6 transition-all hover:border-primaryBtn/30 hover:shadow-md"
               >
                 <h3 className="text-base font-bold text-[#172524] transition-colors group-hover:text-primary">

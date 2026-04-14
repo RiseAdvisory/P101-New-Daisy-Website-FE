@@ -259,7 +259,7 @@ export const salonClientRetention: PillarPageData = {
         },
         {
           title: 'Automated Reminders Reduce No-Shows',
-          url: '/en/resources/blog/businesses/automated-reminders-reduce-no-shows',
+          url: '/en/resources/blog/business/automated-reminders-reduce-no-shows',
         },
       ],
     },
@@ -338,7 +338,7 @@ export const salonClientRetention: PillarPageData = {
         },
         {
           title: 'Complete Guide to Salon Loyalty Programs',
-          url: '/en/resources/blog/businesses/complete-guide-salon-loyalty-programs',
+          url: '/en/resources/blog/business/complete-guide-salon-loyalty-programs',
         },
       ],
     },
@@ -393,7 +393,7 @@ export const salonClientRetention: PillarPageData = {
       relatedLinks: [
         {
           title: 'Daisy Cashback System and Customer Loyalty',
-          url: '/en/resources/blog/businesses/daisy-cashback-system-customer-loyalty',
+          url: '/en/resources/blog/business/daisy-cashback-system-customer-loyalty',
         },
         {
           title: 'Pricing Plans',

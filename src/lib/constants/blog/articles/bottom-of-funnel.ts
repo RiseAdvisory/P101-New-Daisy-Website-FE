@@ -45,7 +45,7 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
 <h2>Why Switching Salon Software Feels Harder Than It Is</h2>
 <p>Switching salon software is not as risky as most owners believe. The real risk is staying on a platform that limits your growth, charges rising fees, or lacks the features your business needs in 2026. Modern migration tools, cloud-based architectures, and dedicated onboarding support mean that a well-planned switch can be completed in 30 days with zero downtime and no lost bookings.</p>
 <p>This checklist gives you a day-by-day migration plan so you know exactly what to do, when to do it, and what to watch for. Whether you are leaving Fresha, Vagaro, Booksy, or any legacy system, the process follows the same proven structure.</p>
-<p>For a comprehensive migration guide covering every edge case, see our <a href="/en/resources/blog/businesses/complete-salon-software-switching-guide">complete salon software switching guide</a>.</p>
+<p>For a comprehensive migration guide covering every edge case, see our <a href="/en/resources/blog/business/complete-salon-software-switching-guide">complete salon software switching guide</a>.</p>
 
 <h2>Week 1 (Days 1-7): Assessment and Setup</h2>
 <p>The first week is about laying the groundwork. You are not making any changes your clients or staff will see yet - this is pure preparation.</p>
@@ -628,7 +628,7 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
 <p>Define "fine." If your software manages your existing operations, that is baseline functionality. The question is whether it is growing your business. Compare your year-over-year growth rate to the industry average. If you are growing slower than the market, your tools may be the bottleneck.</p>
 
 <h3>"Switching is too disruptive"</h3>
-<p>A well-planned switch (see our <a href="/en/resources/blog/businesses/salon-software-switching-checklist-migration">30-day migration checklist</a>) involves zero downtime and minimal disruption. The temporary learning curve is measured in days, not weeks. Compare that to the ongoing cost of staying on a platform that limits your growth for months or years.</p>
+<p>A well-planned switch (see our <a href="/en/resources/blog/business/salon-software-switching-checklist-migration">30-day migration checklist</a>) involves zero downtime and minimal disruption. The temporary learning curve is measured in days, not weeks. Compare that to the ongoing cost of staying on a platform that limits your growth for months or years.</p>
 
 <h3>"What if the new platform doesn't deliver?"</h3>
 <p>Look for platforms with transparent pricing, no long-term contracts, and clear performance metrics. <a href="/en/pricing">The Daisy</a> offers flexible plans that you can evaluate month-to-month. Track the ROI metrics outlined in this guide and you will know within 60 days whether the platform is delivering.</p>
@@ -736,7 +736,7 @@ const salonSwitchingChecklistArticleAr: LocalBlogPost = {
 <h2>لماذا يبدو تبديل برنامج الصالون أصعب مما هو عليه</h2>
 <p>تبديل برنامج إدارة الصالون ليس بالمخاطرة التي يعتقدها معظم أصحاب الصالونات. المخاطرة الحقيقية هي البقاء على منصة تحد من نموك أو تفرض رسومًا متزايدة أو تفتقر إلى الميزات التي يحتاجها عملك في 2026. أدوات النقل الحديثة والبنية السحابية ودعم التأهيل المخصص تعني أن عملية انتقال مخططة جيدًا يمكن إتمامها خلال 30 يومًا بدون أي توقف وبدون حجوزات مفقودة.</p>
 <p>تمنحك قائمة التحقق هذه خطة انتقال يومية حتى تعرف بالضبط ما يجب فعله ومتى وما يجب مراقبته. سواء كنت تنتقل من Fresha أو Vagaro أو Booksy أو أي نظام قديم، فإن العملية تتبع نفس الهيكل المُثبت.</p>
-<p>للاطلاع على دليل انتقال شامل يغطي جميع الحالات، راجع <a href="/ar/resources/blog/businesses/complete-salon-software-switching-guide">دليل تبديل برنامج الصالون الكامل</a>.</p>
+<p>للاطلاع على دليل انتقال شامل يغطي جميع الحالات، راجع <a href="/ar/resources/blog/business/complete-salon-software-switching-guide">دليل تبديل برنامج الصالون الكامل</a>.</p>
 
 <h2>الأسبوع الأول (الأيام 1-7): التقييم والإعداد</h2>
 <p>الأسبوع الأول مخصص لوضع الأساس. لن تقوم بأي تغييرات يراها عملاؤك أو موظفوك - هذا تحضير محض.</p>
@@ -748,7 +748,7 @@ const salonSwitchingChecklistArticleAr: LocalBlogPost = {
 <li><strong>عمق سجل الحجوزات:</strong> إلى أي مدى يمتد سجل مواعيدك؟ معظم المنصات تسمح بالتصدير الكامل. قرر مقدار السجل المهم - 12 شهرًا عادة ما يكون كافيًا للاستمرارية.</li>
 <li><strong>تعقيد قائمة الخدمات:</strong> أحصِ خدماتك والاختلافات والإضافات والباقات. لاحظ مستويات التسعير وإعدادات المدة وتعيينات الموظفين لكل خدمة.</li>
 <li><strong>تكوين الموظفين:</strong> أدرج جميع أعضاء الفريق مع جداولهم وصلاحيات الخدمة وهياكل العمولة وإعدادات التقويم.</li>
-<li><strong>التكاملات:</strong> حدد كل أداة خارجية متصلة بنظامك الحالي - معالج الدفع ومزامنة تقويم Google وروابط الحجز عبر وسائل التواصل الاجتماعي وودجات الموقع وأدوات التسويق.</li>
+<li><strong>التكاملات:</strong> حدد كل أداة خارجية متصلة بنظامك الحالي - معالج الدفع ومزامنة تقويم جوجل وروابط الحجز عبر وسائل التواصل الاجتماعي وودجات الموقع وأدوات التسويق.</li>
 <li><strong>البيانات المالية:</strong> حدد السجلات والتقارير المالية التي تحتاج لتصديرها لأغراض الضرائب والمحاسبة.</li>
 </ul>
 
@@ -822,7 +822,7 @@ const salonSwitchingChecklistArticleAr: LocalBlogPost = {
 <p>أعد توجيه كل رابط حجز يواجه العملاء إلى نظامك الجديد:</p>
 <ul>
 <li><strong>الموقع الإلكتروني:</strong> حدّث أزرار الحجز والودجات المضمنة.</li>
-<li><strong>ملف Google Business:</strong> حدّث رابط الحجز في قائمة Google الخاصة بك.</li>
+<li><strong>ملف النشاط التجاري على جوجل:</strong> حدّث رابط الحجز في قائمة جوجل الخاصة بك.</li>
 <li><strong>وسائل التواصل الاجتماعي:</strong> حدّث روابط السيرة الذاتية على إنستغرام وفيسبوك وتيك توك.</li>
 <li><strong>توقيعات البريد الإلكتروني:</strong> حدّث روابط الحجز في توقيعات البريد الإلكتروني للموظفين.</li>
 <li><strong>المواد المطبوعة:</strong> اطلب بطاقات عمل جديدة أو ملصقات رمز QR إذا لزم الأمر.</li>
@@ -1074,7 +1074,7 @@ const firstMonthNewPlatformArticleAr: LocalBlogPost = {
 <p>إذا كانت أرقام شهرك الأول ثابتة بدلاً من التحسن، تحقق من هذه الأسباب الشائعة:</p>
 <ul>
 <li><strong>الميزات غير مفعلة:</strong> أكبر سبب للنتائج المخيبة هو أن ميزات النمو متاحة لكنها غير مُشغّلة. راجع قائمة ميزات منصتك وفعّل كل شيء ذي صلة.</li>
-<li><strong>روابط الحجز غير محدثة في كل مكان:</strong> إذا كانت روابط الحجز القديمة لا تزال تشير إلى نظامك السابق، فأنت تقسم حركة المرور. دقق في كل نقطة اتصال: الموقع وGoogle ووسائل التواصل الاجتماعي وتوقيعات البريد الإلكتروني والمواد المطبوعة.</li>
+<li><strong>روابط الحجز غير محدثة في كل مكان:</strong> إذا كانت روابط الحجز القديمة لا تزال تشير إلى نظامك السابق، فأنت تقسم حركة المرور. دقق في كل نقطة اتصال: الموقع وجوجل ووسائل التواصل الاجتماعي وتوقيعات البريد الإلكتروني والمواد المطبوعة.</li>
 <li><strong>الموظفون يتجاوزون النظام:</strong> إذا كان أعضاء الفريق يأخذون حجوزات يدويًا بدلاً من عبر المنصة، تخسر فوائد الأتمتة وجودة البيانات. عزز توقع أن جميع الحجوزات تمر عبر النظام.</li>
 <li><strong>تشجيع غير كافٍ للحجز عبر الإنترنت:</strong> العملاء يلجأون للاتصال إذا لم تروج بنشاط للحجز عبر الإنترنت. أضف روابط الحجز لكل رسالة ومنشور ونقطة اتصال.</li>
 </ul>
@@ -1315,7 +1315,7 @@ const calculateRoiSwitchingArticleAr: LocalBlogPost = {
 <p>حدد معنى "جيد". إذا كان برنامجك يدير عملياتك الحالية، فهذه وظائف أساسية. السؤال هو هل ينمّي عملك. قارن معدل نموك السنوي بمتوسط الصناعة. إذا كنت تنمو أبطأ من السوق، قد تكون أدواتك هي العائق.</p>
 
 <h3>"التبديل مزعج جدًا"</h3>
-<p>تبديل مخطط جيدًا (راجع <a href="/ar/resources/blog/businesses/salon-software-switching-checklist-migration">قائمة التحقق للانتقال خلال 30 يومًا</a>) لا يتضمن أي توقف وحد أدنى من الاضطراب. منحنى التعلم المؤقت يُقاس بالأيام وليس الأسابيع. قارن ذلك بالتكلفة المستمرة للبقاء على منصة تحد نموك لأشهر أو سنوات.</p>
+<p>تبديل مخطط جيدًا (راجع <a href="/ar/resources/blog/business/salon-software-switching-checklist-migration">قائمة التحقق للانتقال خلال 30 يومًا</a>) لا يتضمن أي توقف وحد أدنى من الاضطراب. منحنى التعلم المؤقت يُقاس بالأيام وليس الأسابيع. قارن ذلك بالتكلفة المستمرة للبقاء على منصة تحد نموك لأشهر أو سنوات.</p>
 
 <h3>"ماذا لو لم تحقق المنصة الجديدة النتائج؟"</h3>
 <p>ابحث عن منصات بتسعير شفاف وبدون عقود طويلة الأمد ومقاييس أداء واضحة. <a href="/ar/pricing">ديزي</a> توفر خططًا مرنة يمكنك تقييمها شهريًا. تتبع مقاييس العائد على الاستثمار المذكورة في هذا الدليل وستعرف خلال 60 يومًا ما إذا كانت المنصة تحقق النتائج.</p>

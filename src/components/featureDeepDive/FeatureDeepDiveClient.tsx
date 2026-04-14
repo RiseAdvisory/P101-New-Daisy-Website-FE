@@ -81,16 +81,16 @@ interface Props {
 }
 
 export function FeatureDeepDiveClient({ userType, slug, locale = 'en' }: Props) {
-  const data = getFeatureDeepDive(userType, slug);
+  const data = getFeatureDeepDive(userType, slug, locale);
   if (!data) return null;
 
   const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
-  const related = getRelatedFeatureDeepDives(userType, slug);
+  const related = getRelatedFeatureDeepDives(userType, slug, locale);
   const userLabel = userType === 'business' ? t.business : t.professional;
 
   const relatedLinks = related.map((r) => ({
     title: r.categoryName,
-    url: `/features/${userType}/${r.slug}`,
+    url: `/${locale}/features/${userType}/${r.slug}`,
     description: r.metaDescription.slice(0, 120) + '...',
   }));
 
@@ -106,24 +106,24 @@ export function FeatureDeepDiveClient({ userType, slug, locale = 'en' }: Props) 
       <WebPageSchema
         title={data.metaTitle}
         description={data.metaDescription}
-        url={`https://www.jointhedaisy.com/features/${userType}/${slug}`}
+        url={`https://www.jointhedaisy.com/${locale}/features/${userType}/${slug}`}
       />
       {data.faqs.length > 0 && <FaqSchema faqs={data.faqs} />}
       <SoftwareApplicationSchema
         name={data.categoryName}
         description={data.metaDescription}
-        url={`https://www.jointhedaisy.com/features/${userType}/${slug}`}
+        url={`https://www.jointhedaisy.com/${locale}/features/${userType}/${slug}`}
       />
 
       {/* Visual Breadcrumb */}
       <div className="bg-gradient-to-br from-primary via-primary to-[#1a3a3a] px-4 pt-28 md:pt-32">
         <nav className="mx-auto max-w-4xl text-sm text-white/60">
-          <Link href="/features" className="hover:text-white/80">
+          <Link href={`/${locale}/features`} className="hover:text-white/80">
             {t.features}
           </Link>
           <span className="mx-2">/</span>
           <Link
-            href={`/features/${userType}`}
+            href={`/${locale}/features/${userType}`}
             className="hover:text-white/80"
           >
             {userLabel}

@@ -63,10 +63,10 @@ export const SimilarTopics = ({ titleSimilar }: { titleSimilar: string }) => {
 
                   // Navigate to blog post using slug
                   if (item.attributes.slug) {
-                    router.push(`/resources/blog/${userType}/${item.attributes.slug}`);
+                    router.push(`/${locale}/resources/blog/${userType}/${item.attributes.slug}`);
                   } else {
                     // Fallback to old route if slug doesn't exist yet
-                    router.push('/resources/legal');
+                    router.push(`/${locale}/resources/legal`);
                   }
                 }}
                 key={index}
@@ -94,8 +94,13 @@ export const SimilarTopics = ({ titleSimilar }: { titleSimilar: string }) => {
                     {item.attributes.title}
                   </h3>
 
-                  <div className="flex justify-start gap-2 text-gray-500 text-sm mt-4" dir={isRtl ? 'rtl' : 'ltr'}>
-                    <div className=" hidden md:flex ltr:border-r ltr:pr-[10px] rtl:border-l rtl:pl-[10px]">
+                  <div
+                    className={`flex flex-wrap items-center text-gray-500 text-sm mt-4 ${
+                      isRtl ? 'divide-x-reverse' : ''
+                    } divide-x divide-gray-300/70`}
+                    dir={isRtl ? 'rtl' : 'ltr'}
+                  >
+                    <div className="hidden md:flex items-center px-2 first:pl-0 last:pr-0">
                       <Image
                         src={ownerSrc}
                         alt="people"
@@ -107,7 +112,7 @@ export const SimilarTopics = ({ titleSimilar }: { titleSimilar: string }) => {
                         {getAuthorBio(item.attributes.user?.data?.attributes?.name ?? item.attributes.user?.name ?? '', locale)?.name ?? item.attributes.user?.data?.attributes?.name ?? item.attributes.user?.name}
                       </span>
                     </div>
-                    <span className="flex items-center ltr:border-r ltr:pr-[10px] rtl:border-l rtl:pl-[10px]">
+                    <span className="flex items-center px-2 first:pl-0 last:pr-0">
                       <CalendarIcon className="ltr:mr-[10px] rtl:ml-[10px]" />
                       {formatBlogDate(
                         item.attributes.user?.data?.attributes?.date
@@ -117,7 +122,7 @@ export const SimilarTopics = ({ titleSimilar }: { titleSimilar: string }) => {
                         item.attributes.user?.data?.attributes?.date ?? item.attributes.user?.date ?? ''
                       )}
                     </span>
-                    <span className="flex items-center rtl:pr-2">
+                    <span className="flex items-center px-2 first:pl-0 last:pr-0">
                       <ClockIcon className="ltr:mr-[10px] rtl:ml-[10px]" />
                       {formatReadTime(
                         item.attributes.user?.data?.attributes?.time ?? item.attributes.user?.time,

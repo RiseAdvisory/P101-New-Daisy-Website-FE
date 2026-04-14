@@ -43,7 +43,7 @@ const howToStartBeautyBusinessArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Starting a Beauty Business Is More Accessible Than Ever</h2>
 <p>The global beauty services market is projected to reach $580 billion by 2027, growing at 5.5% annually. Within this growth, independent salons, studios, and specialty beauty businesses are capturing an increasing share as consumers shift toward personalised, high-quality experiences over mass-market alternatives. If you have been considering launching a beauty business, the market conditions have never been more favourable.</p>
-<p>But a growing market does not guarantee individual success. The difference between beauty businesses that thrive and those that close within two years comes down to planning, execution, and the operational systems you put in place from day one. This guide walks you through every step of the <a href="/en/resources/blog/businesses/beauty-business-growth-guide">beauty business growth journey</a>, from initial concept to a fully operational salon or studio.</p>
+<p>But a growing market does not guarantee individual success. The difference between beauty businesses that thrive and those that close within two years comes down to planning, execution, and the operational systems you put in place from day one. This guide walks you through every step of the <a href="/en/resources/blog/business/beauty-business-growth-guide">beauty business growth journey</a>, from initial concept to a fully operational salon or studio.</p>
 
 <h2>Step 1: Define Your Business Concept</h2>
 <p>Before anything else, get crystal clear on what kind of beauty business you are building and who you are building it for.</p>
@@ -65,7 +65,7 @@ const howToStartBeautyBusinessArticle: LocalBlogPost = {
 <p>What will make clients choose you over existing options? Common differentiators include: specialisation in an underserved niche, superior client experience, convenient location, innovative services or techniques, technology-forward operations, or competitive pricing in a premium market. Your competitive advantage should be defensible - something competitors cannot easily replicate.</p>
 
 <h2>Step 2: Create a Business Plan</h2>
-<p>A business plan is not just for investors - it is your operational roadmap. For a detailed template, see our <a href="/en/resources/blog/businesses/salon-business-plan-template">salon business plan guide</a>.</p>
+<p>A business plan is not just for investors - it is your operational roadmap. For a detailed template, see our <a href="/en/resources/blog/business/salon-business-plan-template">salon business plan guide</a>.</p>
 
 <h3>Financial Projections</h3>
 <p>Map out your finances for the first 24 months:</p>
@@ -130,7 +130,7 @@ const howToStartBeautyBusinessArticle: LocalBlogPost = {
 <li><strong>Pre-launch:</strong> Claim your Google Business Profile, create social media profiles, launch a "coming soon" website, and start posting behind-the-scenes content of your build-out and team.</li>
 <li><strong>Soft opening:</strong> Invite friends, family, and local influencers for a soft opening week. Offer discounted services in exchange for honest reviews and social media coverage.</li>
 <li><strong>Grand opening:</strong> Host an event with promotions for first-time bookings. Capture email addresses and social media follows from every attendee.</li>
-<li><strong>Ongoing:</strong> Implement the full marketing strategy outlined in our <a href="/en/resources/blog/businesses/salon-marketing-strategies">salon marketing guide</a>.</li>
+<li><strong>Ongoing:</strong> Implement the full marketing strategy outlined in our <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing guide</a>.</li>
 </ul>
 
 <h2>Common Startup Mistakes to Avoid</h2>
@@ -228,7 +228,7 @@ const salonPricingStrategyArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Pricing Is the Most Powerful Revenue Lever in Your Salon</h2>
 <p>A 10% increase in your average service price has a larger impact on profitability than a 10% increase in client volume. Yet most salon owners set prices by copying competitors or using a gut-feeling markup, leaving significant revenue on the table. Strategic pricing is the single fastest way to improve your salon's financial health without adding a single new client.</p>
-<p>This guide provides a data-driven approach to salon pricing as part of your <a href="/en/resources/blog/businesses/beauty-business-growth-guide">beauty business growth strategy</a>. Whether you are launching a new salon or optimising an established business, these frameworks will help you price with confidence.</p>
+<p>This guide provides a data-driven approach to salon pricing as part of your <a href="/en/resources/blog/business/beauty-business-growth-guide">beauty business growth strategy</a>. Whether you are launching a new salon or optimising an established business, these frameworks will help you price with confidence.</p>
 
 <h2>Understanding Your True Costs</h2>
 <p>Before you can price strategically, you need to know exactly what each service costs you to deliver. Many salon owners underestimate their costs, leading to prices that feel profitable but are not.</p>
@@ -405,10 +405,10 @@ const increaseSalonRevenueArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Revenue Growth Does Not Always Require More Clients</h2>
 <p>Most salon owners focus on attracting new clients when they want to grow revenue. But the fastest, most cost-effective revenue improvements come from optimising what you already have: your existing clients, your service menu, your team's capacity, and your operational efficiency. A salon generating $30,000 per month can often reach $40,000-$45,000 without adding a single new client.</p>
-<p>This guide provides 10 strategies that increase revenue from your current operations. Each strategy includes implementation steps, expected impact, and how to measure results. These are core components of a sustainable <a href="/en/resources/blog/businesses/beauty-business-growth-guide">beauty business growth plan</a>.</p>
+<p>This guide provides 10 strategies that increase revenue from your current operations. Each strategy includes implementation steps, expected impact, and how to measure results. These are core components of a sustainable <a href="/en/resources/blog/business/beauty-business-growth-guide">beauty business growth plan</a>.</p>
 
 <h2>1. Optimise Your Service Pricing</h2>
-<p>The single fastest way to increase revenue is pricing. If your prices have not increased in the past 12 months, you are effectively earning less than you were a year ago due to cost inflation. Review our <a href="/en/resources/blog/businesses/salon-pricing-strategy-guide">salon pricing strategy guide</a> for a complete framework.</p>
+<p>The single fastest way to increase revenue is pricing. If your prices have not increased in the past 12 months, you are effectively earning less than you were a year ago due to cost inflation. Review our <a href="/en/resources/blog/business/salon-pricing-strategy-guide">salon pricing strategy guide</a> for a complete framework.</p>
 <p>Quick action: raise prices 5-10% on your most popular services. Announce the increase 4 weeks in advance. Expected impact: 5-10% revenue increase with minimal client loss (typically less than 5% of clients leave after a moderate price increase).</p>
 
 <h2>2. Increase Average Ticket Through Add-Ons</h2>
@@ -438,7 +438,7 @@ const increaseSalonRevenueArticle: LocalBlogPost = {
 
 <h2>5. Launch a Membership or Subscription Programme</h2>
 <p>Memberships create predictable recurring revenue - the holy grail of financial planning. A "Blowout Club" at $99/month for two blowouts plus 15% off all other services guarantees revenue regardless of seasonal fluctuations.</p>
-<p>See our detailed <a href="/en/resources/blog/businesses/salon-membership-subscription-models">membership and subscription models guide</a> for programme design, pricing, and launch strategies.</p>
+<p>See our detailed <a href="/en/resources/blog/business/salon-membership-subscription-models">membership and subscription models guide</a> for programme design, pricing, and launch strategies.</p>
 
 <h2>6. Build a Retail Revenue Stream</h2>
 <p>Professional hair and beauty products carry 40-50% profit margins and generate revenue with zero additional chair time. Yet most salons capture less than 10% of the retail potential from their client base.</p>
@@ -557,7 +557,7 @@ const expandingSalonLocationsArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Expansion Is the Natural Next Step for Successful Salons</h2>
 <p>When your salon is consistently profitable, your team is strong, and client demand exceeds your capacity, opening a second location becomes a logical growth strategy. Multi-location beauty businesses benefit from brand leverage, operational efficiency, and diversified revenue. But the transition from single to multi-location is the most critical inflection point in a salon's lifecycle - get it right and you build an enterprise; get it wrong and you risk both locations.</p>
-<p>This guide provides the strategic framework for adding locations as part of your <a href="/en/resources/blog/businesses/beauty-business-growth-guide">beauty business growth plan</a>. It covers every stage from readiness assessment to managing a multi-branch operation.</p>
+<p>This guide provides the strategic framework for adding locations as part of your <a href="/en/resources/blog/business/beauty-business-growth-guide">beauty business growth plan</a>. It covers every stage from readiness assessment to managing a multi-branch operation.</p>
 
 <h2>Assessing Expansion Readiness</h2>
 <p>Not every successful salon is ready to expand. Evaluate these criteria honestly before committing to a second location.</p>
@@ -716,7 +716,7 @@ const salonMembershipModelsArticle: LocalBlogPost = {
       'Design and launch a salon membership or subscription programme that generates predictable recurring revenue. Covers membership models, pricing strategies, programme design, member retention, and financial planning for beauty businesses.',
     aboutPosts: `
 <h2>Recurring Revenue Transforms Salon Financial Stability</h2>
-<p>The traditional salon revenue model is inherently unpredictable: income depends entirely on how many clients walk through the door each month. A membership or subscription programme creates a recurring revenue base that provides financial stability, improves cash flow forecasting, and increases client lifetime value. It is one of the most impactful changes you can make to your salon's <a href="/en/resources/blog/businesses/beauty-business-growth-guide">business growth trajectory</a>.</p>
+<p>The traditional salon revenue model is inherently unpredictable: income depends entirely on how many clients walk through the door each month. A membership or subscription programme creates a recurring revenue base that provides financial stability, improves cash flow forecasting, and increases client lifetime value. It is one of the most impactful changes you can make to your salon's <a href="/en/resources/blog/business/beauty-business-growth-guide">business growth trajectory</a>.</p>
 <p>Industry data shows that salon members visit 40-60% more frequently, spend 25-35% more per visit (including non-membership services and retail), and have retention rates 2-3x higher than non-members. The model works because membership creates commitment: clients who have already paid feel invested and are more likely to return than those making individual booking decisions each time.</p>
 
 <h2>Membership vs. Subscription: Understanding the Difference</h2>
@@ -888,7 +888,7 @@ const buildingFreelanceBeautyBusinessArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>The Freelance Beauty Economy Is Booming</h2>
 <p>The shift toward independent beauty work is accelerating. More professionals than ever are leaving traditional employment to build their own beauty businesses - as chair renters, home studio operators, or mobile service providers. The appeal is clear: control over your schedule, your clients, your pricing, and your income. But freelance success requires more than technical skill; it demands business acumen that cosmetology school does not teach.</p>
-<p>This guide provides the complete <a href="/en/resources/blog/businesses/beauty-business-growth-guide">business growth roadmap</a> for beauty professionals who want to go independent. Whether you are just starting to consider freelance work or you are ready to launch this week, these are the steps that separate thriving independents from those who return to employment within a year.</p>
+<p>This guide provides the complete <a href="/en/resources/blog/business/beauty-business-growth-guide">business growth roadmap</a> for beauty professionals who want to go independent. Whether you are just starting to consider freelance work or you are ready to launch this week, these are the steps that separate thriving independents from those who return to employment within a year.</p>
 
 <h2>Step 1: Choose Your Business Model</h2>
 <p>Freelance beauty professionals operate under several models, each with different cost structures, client access, and growth potential.</p>
@@ -1071,7 +1071,7 @@ const salonBusinessPlanArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>A Business Plan Is Your Salon's Strategic Foundation</h2>
 <p>A salon business plan is not just a document for investors or loan officers - it is the strategic blueprint that guides every major decision in your beauty business. Salon owners who operate with a written business plan are significantly more likely to achieve their revenue targets, manage cash flow effectively, and make confident growth decisions compared to those who operate without one.</p>
-<p>This guide walks you through writing each section of a professional salon business plan as part of your <a href="/en/resources/blog/businesses/beauty-business-growth-guide">beauty business growth strategy</a>. Whether you are launching a new salon, seeking funding for expansion, or simply want to professionalise your existing business, this template provides the structure you need.</p>
+<p>This guide walks you through writing each section of a professional salon business plan as part of your <a href="/en/resources/blog/business/beauty-business-growth-guide">beauty business growth strategy</a>. Whether you are launching a new salon, seeking funding for expansion, or simply want to professionalise your existing business, this template provides the structure you need.</p>
 
 <h2>Section 1: Executive Summary</h2>
 <p>The executive summary is a one-page overview of your entire business plan. Write it last (after all other sections) but place it first. It should cover:</p>
@@ -1125,7 +1125,7 @@ const salonBusinessPlanArticle: LocalBlogPost = {
 <p>Detail your complete service menu and any retail products:</p>
 <ul>
 <li><strong>Service categories:</strong> Hair, nails, skin, makeup, treatments, etc.</li>
-<li><strong>Pricing strategy:</strong> How are your prices set? How do they compare to the market? Reference our <a href="/en/resources/blog/businesses/salon-pricing-strategy-guide">pricing strategy guide</a> for frameworks.</li>
+<li><strong>Pricing strategy:</strong> How are your prices set? How do they compare to the market? Reference our <a href="/en/resources/blog/business/salon-pricing-strategy-guide">pricing strategy guide</a> for frameworks.</li>
 <li><strong>Signature services:</strong> Any unique offerings that differentiate your menu.</li>
 <li><strong>Retail products:</strong> Product lines carried, expected retail revenue, and margin targets.</li>
 <li><strong>Service evolution:</strong> Planned additions or modifications to your menu over the next 12-24 months.</li>
@@ -1140,7 +1140,7 @@ const salonBusinessPlanArticle: LocalBlogPost = {
 <li><strong>Retention strategy:</strong> Loyalty programmes, membership models, re-engagement campaigns, and client experience standards.</li>
 <li><strong>Marketing budget:</strong> Monthly and annual marketing spend, broken down by channel.</li>
 </ul>
-<p>Reference specific strategies from our <a href="/en/resources/blog/businesses/salon-marketing-strategies">salon marketing guide</a> for detailed tactical plans.</p>
+<p>Reference specific strategies from our <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing guide</a> for detailed tactical plans.</p>
 
 <h2>Section 6: Operations Plan</h2>
 <p>Describe how your salon operates day-to-day:</p>
@@ -1271,7 +1271,7 @@ const howToStartBeautyBusinessArticleAr: LocalBlogPost = {
     aboutPosts: `
 <h2>بدء مشروع تجميل أصبح أسهل من أي وقت مضى</h2>
 <p>من المتوقع أن يصل سوق خدمات التجميل العالمي إلى 580 مليار دولار بحلول عام 2027، بمعدل نمو سنوي يبلغ 5.5%. ضمن هذا النمو، تستحوذ الصالونات المستقلة والاستوديوهات ومشاريع التجميل المتخصصة على حصة متزايدة مع تحول المستهلكين نحو التجارب الشخصية عالية الجودة بدلاً من البدائل العامة. إذا كنت تفكر في إطلاق مشروع تجميل، فإن ظروف السوق لم تكن أفضل من ذلك أبداً.</p>
-<p>لكن السوق المتنامي لا يضمن النجاح الفردي. الفرق بين مشاريع التجميل التي تزدهر وتلك التي تغلق خلال عامين يعود إلى التخطيط والتنفيذ والأنظمة التشغيلية التي تضعها من اليوم الأول. يرشدك هذا الدليل خلال كل خطوة من <a href="/ar/resources/blog/businesses/beauty-business-growth-guide">رحلة نمو مشروع التجميل</a>، من المفهوم الأولي إلى صالون أو استوديو يعمل بكامل طاقته.</p>
+<p>لكن السوق المتنامي لا يضمن النجاح الفردي. الفرق بين مشاريع التجميل التي تزدهر وتلك التي تغلق خلال عامين يعود إلى التخطيط والتنفيذ والأنظمة التشغيلية التي تضعها من اليوم الأول. يرشدك هذا الدليل خلال كل خطوة من <a href="/ar/resources/blog/business/beauty-business-growth-guide">رحلة نمو مشروع التجميل</a>، من المفهوم الأولي إلى صالون أو استوديو يعمل بكامل طاقته.</p>
 
 <h2>الخطوة 1: حدد مفهوم مشروعك</h2>
 <p>قبل أي شيء آخر، كن واضحاً تماماً حول نوع مشروع التجميل الذي تبنيه ولمن تبنيه.</p>
@@ -1293,7 +1293,7 @@ const howToStartBeautyBusinessArticleAr: LocalBlogPost = {
 <p>ما الذي سيجعل العملاء يختارونك بدلاً من الخيارات الحالية؟ تشمل العوامل المميزة الشائعة: التخصص في مجال غير مخدوم بشكل كافٍ، تجربة عميل متفوقة، موقع مريح، خدمات أو تقنيات مبتكرة، عمليات قائمة على التكنولوجيا، أو تسعير تنافسي في سوق متميز. يجب أن تكون ميزتك التنافسية قابلة للدفاع عنها - شيء لا يمكن للمنافسين تقليده بسهولة.</p>
 
 <h2>الخطوة 2: أنشئ خطة عمل</h2>
-<p>خطة العمل ليست فقط للمستثمرين - إنها خارطة طريقك التشغيلية. للحصول على قالب مفصل، راجع <a href="/ar/resources/blog/businesses/salon-business-plan-template">دليل خطة عمل الصالون</a>.</p>
+<p>خطة العمل ليست فقط للمستثمرين - إنها خارطة طريقك التشغيلية. للحصول على قالب مفصل، راجع <a href="/ar/resources/blog/business/salon-business-plan-template">دليل خطة عمل الصالون</a>.</p>
 
 <h3>التوقعات المالية</h3>
 <p>ارسم خريطة لأموالك لأول 24 شهراً:</p>
@@ -1355,10 +1355,10 @@ const howToStartBeautyBusinessArticleAr: LocalBlogPost = {
 <h2>الخطوة 7: أطلق تسويقك</h2>
 <p>ابدأ التسويق قبل 4-6 أسابيع من يوم الافتتاح لبناء الترقب وملء جدول مواعيدك من الأسبوع الأول.</p>
 <ul>
-<li><strong>ما قبل الإطلاق:</strong> أنشئ ملفك التجاري على Google، وأنشئ حسابات وسائل التواصل الاجتماعي، وأطلق موقع "قريباً"، وابدأ بنشر محتوى من وراء الكواليس عن التجهيز وفريقك.</li>
+<li><strong>ما قبل الإطلاق:</strong> أنشئ ملفك التجاري على جوجل، وأنشئ حسابات وسائل التواصل الاجتماعي، وأطلق موقع "قريباً"، وابدأ بنشر محتوى من وراء الكواليس عن التجهيز وفريقك.</li>
 <li><strong>الافتتاح التجريبي:</strong> ادعُ الأصدقاء والعائلة والمؤثرين المحليين لأسبوع افتتاح تجريبي. قدم خدمات بأسعار مخفضة مقابل تقييمات صادقة وتغطية على وسائل التواصل الاجتماعي.</li>
 <li><strong>الافتتاح الكبير:</strong> أقم حدثاً مع عروض ترويجية للحجوزات الأولى. اجمع عناوين البريد الإلكتروني ومتابعات وسائل التواصل الاجتماعي من كل حاضر.</li>
-<li><strong>مستمر:</strong> طبق استراتيجية التسويق الكاملة الموضحة في <a href="/ar/resources/blog/businesses/salon-marketing-strategies">دليل تسويق الصالون</a>.</li>
+<li><strong>مستمر:</strong> طبق استراتيجية التسويق الكاملة الموضحة في <a href="/ar/resources/blog/business/salon-marketing-strategies">دليل تسويق الصالون</a>.</li>
 </ul>
 
 <h2>أخطاء البدء الشائعة التي يجب تجنبها</h2>
@@ -1367,7 +1367,7 @@ const howToStartBeautyBusinessArticleAr: LocalBlogPost = {
 <li><strong>تخطي خطة العمل:</strong> بدون توقعات مالية واستراتيجية واضحة، أنت تعمل بناءً على الأمل بدلاً من البيانات.</li>
 <li><strong>الإفراط في الاستثمار في المظهر والتقليل في الأنظمة:</strong> صالون جميل مع نظام حجز معطل وبدون أتمتة تسويق وإدارة عملاء يدوية سيعاني. وازن بين الاستثمار في التصميم والتكنولوجيا التشغيلية.</li>
 <li><strong>التوظيف بسرعة كبيرة:</strong> ابدأ بفريق صغير. من الأفضل أن يكون لديك نقص طفيف في الموظفين مع انشغال بدلاً من فائض في الموظفين مع نزيف نقدي. أضف أعضاء الفريق عندما يثبت الطلب استمراريته.</li>
-<li><strong>إهمال الحضور الرقمي:</strong> يركز الكثير من أصحاب الصالونات الجدد بالكامل على التجهيز المادي وينسون بناء حضورهم الرقمي في الوقت نفسه. بحلول يوم الافتتاح، يجب أن يكون لديك ملف تجاري محسن على Google، ووسائل تواصل اجتماعي نشطة، ونظام حجز إلكتروني يعمل.</li>
+<li><strong>إهمال الحضور الرقمي:</strong> يركز الكثير من أصحاب الصالونات الجدد بالكامل على التجهيز المادي وينسون بناء حضورهم الرقمي في الوقت نفسه. بحلول يوم الافتتاح، يجب أن يكون لديك ملف تجاري محسن على جوجل، ووسائل تواصل اجتماعي نشطة، ونظام حجز إلكتروني يعمل.</li>
 </ul>
 
 <h2>الأسئلة الشائعة</h2>
@@ -1452,7 +1452,7 @@ const salonPricingStrategyArticleAr: LocalBlogPost = {
     aboutPosts: `
 <h2>التسعير هو أقوى رافعة للإيرادات في صالونك</h2>
 <p>زيادة بنسبة 10% في متوسط سعر خدمتك لها تأثير أكبر على الربحية من زيادة بنسبة 10% في حجم العملاء. ومع ذلك، يحدد معظم أصحاب الصالونات أسعارهم بتقليد المنافسين أو استخدام هامش ربح حدسي، مما يترك إيرادات كبيرة على الطاولة. التسعير الاستراتيجي هو أسرع طريقة لتحسين الصحة المالية لصالونك دون إضافة عميل جديد واحد.</p>
-<p>يقدم هذا الدليل نهجاً قائماً على البيانات لتسعير الصالون كجزء من <a href="/ar/resources/blog/businesses/beauty-business-growth-guide">استراتيجية نمو مشروع التجميل</a>. سواء كنت تطلق صالوناً جديداً أو تحسن مشروعاً قائماً، ستساعدك هذه الأطر على التسعير بثقة.</p>
+<p>يقدم هذا الدليل نهجاً قائماً على البيانات لتسعير الصالون كجزء من <a href="/ar/resources/blog/business/beauty-business-growth-guide">استراتيجية نمو مشروع التجميل</a>. سواء كنت تطلق صالوناً جديداً أو تحسن مشروعاً قائماً، ستساعدك هذه الأطر على التسعير بثقة.</p>
 
 <h2>فهم تكاليفك الحقيقية</h2>
 <p>قبل أن تتمكن من التسعير بشكل استراتيجي، تحتاج لمعرفة بالضبط ما تكلفك كل خدمة لتقديمها. يقلل العديد من أصحاب الصالونات من تقدير تكاليفهم، مما يؤدي إلى أسعار تبدو مربحة لكنها ليست كذلك.</p>
@@ -1625,10 +1625,10 @@ const increaseSalonRevenueArticleAr: LocalBlogPost = {
     aboutPosts: `
 <h2>نمو الإيرادات لا يتطلب دائماً المزيد من العملاء</h2>
 <p>يركز معظم أصحاب الصالونات على جذب عملاء جدد عندما يريدون زيادة الإيرادات. لكن أسرع وأكثر التحسينات فعالية من حيث التكلفة تأتي من تحسين ما لديك بالفعل: عملاؤك الحاليون وقائمة خدماتك وقدرة فريقك وكفاءتك التشغيلية. يمكن لصالون يحقق 30,000 دولار شهرياً أن يصل غالباً إلى 40,000-45,000 دولار دون إضافة عميل جديد واحد.</p>
-<p>يقدم هذا الدليل 10 استراتيجيات تزيد الإيرادات من عملياتك الحالية. تتضمن كل استراتيجية خطوات التنفيذ والأثر المتوقع وكيفية قياس النتائج. هذه مكونات أساسية لـ <a href="/ar/resources/blog/businesses/beauty-business-growth-guide">خطة نمو مستدامة لمشروع التجميل</a>.</p>
+<p>يقدم هذا الدليل 10 استراتيجيات تزيد الإيرادات من عملياتك الحالية. تتضمن كل استراتيجية خطوات التنفيذ والأثر المتوقع وكيفية قياس النتائج. هذه مكونات أساسية لـ <a href="/ar/resources/blog/business/beauty-business-growth-guide">خطة نمو مستدامة لمشروع التجميل</a>.</p>
 
 <h2>1. حسّن تسعير خدماتك</h2>
-<p>أسرع طريقة لزيادة الإيرادات هي التسعير. إذا لم ترتفع أسعارك في الـ 12 شهراً الماضية، فأنت فعلياً تكسب أقل مما كنت تكسبه قبل عام بسبب تضخم التكاليف. راجع <a href="/ar/resources/blog/businesses/salon-pricing-strategy-guide">دليل استراتيجية تسعير الصالون</a> لإطار عمل كامل.</p>
+<p>أسرع طريقة لزيادة الإيرادات هي التسعير. إذا لم ترتفع أسعارك في الـ 12 شهراً الماضية، فأنت فعلياً تكسب أقل مما كنت تكسبه قبل عام بسبب تضخم التكاليف. راجع <a href="/ar/resources/blog/business/salon-pricing-strategy-guide">دليل استراتيجية تسعير الصالون</a> لإطار عمل كامل.</p>
 <p>إجراء سريع: ارفع الأسعار 5-10% على خدماتك الأكثر شعبية. أعلن عن الزيادة قبل 4 أسابيع. الأثر المتوقع: زيادة إيرادات 5-10% مع خسارة عملاء ضئيلة (عادةً أقل من 5% من العملاء يغادرون بعد زيادة سعرية معتدلة).</p>
 
 <h2>2. زيادة متوسط الفاتورة من خلال الإضافات</h2>
@@ -1658,7 +1658,7 @@ const increaseSalonRevenueArticleAr: LocalBlogPost = {
 
 <h2>5. أطلق برنامج عضوية أو اشتراك</h2>
 <p>العضويات تخلق إيرادات متكررة يمكن التنبؤ بها - الكأس المقدسة للتخطيط المالي. "نادي التجفيف" بـ 99 دولاراً/الشهر لتجفيفتين مع خصم 15% على جميع الخدمات الأخرى يضمن إيرادات بغض النظر عن التقلبات الموسمية.</p>
-<p>راجع <a href="/ar/resources/blog/businesses/salon-membership-subscription-models">دليل نماذج العضوية والاشتراك</a> المفصل لتصميم البرنامج والتسعير واستراتيجيات الإطلاق.</p>
+<p>راجع <a href="/ar/resources/blog/business/salon-membership-subscription-models">دليل نماذج العضوية والاشتراك</a> المفصل لتصميم البرنامج والتسعير واستراتيجيات الإطلاق.</p>
 
 <h2>6. ابنِ مصدر إيرادات من البيع بالتجزئة</h2>
 <p>منتجات الشعر والتجميل المهنية تحمل هوامش ربح 40-50% وتولد إيرادات دون أي وقت كرسي إضافي. ومع ذلك، معظم الصالونات تستحوذ على أقل من 10% من الإمكانية التجزئية لقاعدة عملائها.</p>
@@ -1773,7 +1773,7 @@ const expandingSalonLocationsArticleAr: LocalBlogPost = {
     aboutPosts: `
 <h2>التوسع هو الخطوة التالية الطبيعية للصالونات الناجحة</h2>
 <p>عندما يكون صالونك مربحاً باستمرار وفريقك قوي وطلب العملاء يتجاوز طاقتك، يصبح فتح موقع ثانٍ استراتيجية نمو منطقية. تستفيد مشاريع التجميل متعددة المواقع من قوة العلامة التجارية والكفاءة التشغيلية والإيرادات المتنوعة. لكن الانتقال من موقع واحد إلى مواقع متعددة هو أهم نقطة تحول في دورة حياة الصالون - أنجح فيها وستبني مؤسسة؛ أخطئ فيها وستخاطر بكلا الموقعين.</p>
-<p>يقدم هذا الدليل الإطار الاستراتيجي لإضافة مواقع كجزء من <a href="/ar/resources/blog/businesses/beauty-business-growth-guide">خطة نمو مشروع التجميل</a>. يغطي كل مرحلة من تقييم الجاهزية إلى إدارة عملية متعددة الفروع.</p>
+<p>يقدم هذا الدليل الإطار الاستراتيجي لإضافة مواقع كجزء من <a href="/ar/resources/blog/business/beauty-business-growth-guide">خطة نمو مشروع التجميل</a>. يغطي كل مرحلة من تقييم الجاهزية إلى إدارة عملية متعددة الفروع.</p>
 
 <h2>تقييم جاهزية التوسع</h2>
 <p>ليس كل صالون ناجح جاهز للتوسع. قيم هذه المعايير بصدق قبل الالتزام بموقع ثانٍ.</p>
@@ -1841,7 +1841,7 @@ const expandingSalonLocationsArticleAr: LocalBlogPost = {
 <h2>تسويق علامة تجارية متعددة المواقع</h2>
 <p>تتطور استراتيجيتك التسويقية من الترويج لصالون واحد إلى بناء علامة تجارية يثق بها العملاء في أي موقع.</p>
 <ul>
-<li><strong>ملفات Google التجارية منفصلة:</strong> يحتاج كل موقع لملفه التجاري المحسن على Google مع صور وتقييمات ومعلومات فريق خاصة بالموقع.</li>
+<li><strong>ملفات جوجل التجارية منفصلة:</strong> يحتاج كل موقع لملفه التجاري المحسن على جوجل مع صور وتقييمات ومعلومات فريق خاصة بالموقع.</li>
 <li><strong>وسائل تواصل اجتماعي موحدة:</strong> حافظ على حضور واحد على وسائل التواصل الاجتماعي للعلامة التجارية، مع تسليط الضوء على محتوى من كلا الموقعين. هذا يبني التعرف على العلامة التجارية بدلاً من تقسيم جمهورك.</li>
 <li><strong>عروض عبر المواقع:</strong> عرف عملاء فرع على الآخر من خلال عروض مستهدفة: "هل تعلم أننا الآن في [الحي]؟ احجز زيارتك الأولى هناك واحصل على 20 دولاراً رصيد ولاء."</li>
 <li><strong>تحسين محركات بحث محلي خاص بالموقع:</strong> أنشئ صفحات موقع فردية على موقعك الإلكتروني محسنة لمصطلحات البحث المحلية لكل منطقة.</li>
@@ -1928,7 +1928,7 @@ const salonMembershipModelsArticleAr: LocalBlogPost = {
       'دليل لنماذج عضوية واشتراك الصالون التي تولد إيرادات متكررة قابلة للتنبؤ. يغطي هياكل الأسعار وتخطيط المزايا والإطلاق والإدارة والمقاييس لأعمال التجميل.',
     aboutPosts: `
 <h2>الإيرادات المتكررة تحول الاستقرار المالي للصالون</h2>
-<p>نموذج إيرادات الصالون التقليدي غير قابل للتنبؤ بطبيعته: يعتمد الدخل كلياً على عدد العملاء الذين يدخلون كل شهر. يخلق برنامج العضوية أو الاشتراك قاعدة إيرادات متكررة توفر الاستقرار المالي وتحسن التنبؤ بالتدفق النقدي وتزيد القيمة الدائمة للعميل. إنه أحد أكثر التغييرات تأثيراً التي يمكنك إجراؤها على <a href="/ar/resources/blog/businesses/beauty-business-growth-guide">مسار نمو أعمال صالونك</a>.</p>
+<p>نموذج إيرادات الصالون التقليدي غير قابل للتنبؤ بطبيعته: يعتمد الدخل كلياً على عدد العملاء الذين يدخلون كل شهر. يخلق برنامج العضوية أو الاشتراك قاعدة إيرادات متكررة توفر الاستقرار المالي وتحسن التنبؤ بالتدفق النقدي وتزيد القيمة الدائمة للعميل. إنه أحد أكثر التغييرات تأثيراً التي يمكنك إجراؤها على <a href="/ar/resources/blog/business/beauty-business-growth-guide">مسار نمو أعمال صالونك</a>.</p>
 <p>تُظهر بيانات الصناعة أن أعضاء الصالون يزورون بنسبة 40-60% أكثر تكراراً، وينفقون 25-35% أكثر لكل زيارة (بما في ذلك الخدمات غير العضوية والتجزئة)، ولديهم معدلات احتفاظ أعلى 2-3 مرات من غير الأعضاء. يعمل النموذج لأن العضوية تخلق التزاماً: العملاء الذين دفعوا بالفعل يشعرون بالاستثمار ويكونون أكثر احتمالاً للعودة من أولئك الذين يتخذون قرارات حجز فردية في كل مرة.</p>
 
 <h2>العضوية مقابل الاشتراك: فهم الفرق</h2>
@@ -2096,7 +2096,7 @@ const buildingFreelanceBeautyBusinessArticleAr: LocalBlogPost = {
     aboutPosts: `
 <h2>اقتصاد التجميل الحر يزدهر</h2>
 <p>التحول نحو العمل المستقل في التجميل يتسارع. أكثر من أي وقت مضى، يترك المحترفون التوظيف التقليدي لبناء مشاريع تجميلهم الخاصة - كمستأجري كراسي أو مشغلي استوديوهات منزلية أو مقدمي خدمات متنقلة. الجاذبية واضحة: السيطرة على جدولك وعملائك وتسعيرك ودخلك. لكن النجاح كمستقل يتطلب أكثر من المهارة الفنية؛ إنه يتطلب فطنة تجارية لا تعلمها مدرسة التجميل.</p>
-<p>يقدم هذا الدليل <a href="/ar/resources/blog/businesses/beauty-business-growth-guide">خارطة طريق نمو الأعمال</a> الكاملة لمحترفي التجميل الذين يريدون الاستقلال. سواء كنت بدأت للتو في التفكير بالعمل الحر أو أنت مستعد للإطلاق هذا الأسبوع، هذه هي الخطوات التي تفصل المستقلين المزدهرين عن أولئك الذين يعودون للتوظيف خلال عام.</p>
+<p>يقدم هذا الدليل <a href="/ar/resources/blog/business/beauty-business-growth-guide">خارطة طريق نمو الأعمال</a> الكاملة لمحترفي التجميل الذين يريدون الاستقلال. سواء كنت بدأت للتو في التفكير بالعمل الحر أو أنت مستعد للإطلاق هذا الأسبوع، هذه هي الخطوات التي تفصل المستقلين المزدهرين عن أولئك الذين يعودون للتوظيف خلال عام.</p>
 
 <h2>الخطوة 1: اختر نموذج عملك</h2>
 <p>يعمل محترفو التجميل المستقلون بعدة نماذج، لكل منها هياكل تكلفة مختلفة ووصول للعملاء وإمكانية نمو.</p>
@@ -2155,7 +2155,7 @@ const buildingFreelanceBeautyBusinessArticleAr: LocalBlogPost = {
 <p>أنشئ ملفات احترافية على كل منصة حيث يبحث العملاء المحتملون عن خدمات التجميل:</p>
 <ul>
 <li><strong>إنستغرام:</strong> معرض أعمالك البصري. انشر صور التحولات ومقاطع فيديو العمليات والنصائح 4-5 مرات أسبوعياً.</li>
-<li><strong>ملف Google التجاري:</strong> أساسي لظهور البحث المحلي إذا كان لديك موقع ثابت.</li>
+<li><strong>ملف جوجل التجاري:</strong> أساسي لظهور البحث المحلي إذا كان لديك موقع ثابت.</li>
 <li><strong>منصات الحجز المهنية:</strong> يربطك <a href="/ar/features/professional/booking-management">الملف المهني في ديزي</a> بعملاء يبحثون عن خدمات محددة في منطقتك. أكمل ملفك بصور عالية الجودة ووصف الخدمات والأسعار والتوفر.</li>
 </ul>
 
@@ -2275,7 +2275,7 @@ const salonBusinessPlanArticleAr: LocalBlogPost = {
     aboutPosts: `
 <h2>خطة العمل هي الأساس الاستراتيجي لصالونك</h2>
 <p>خطة عمل الصالون ليست مجرد وثيقة للمستثمرين أو مسؤولي القروض - إنها المخطط الاستراتيجي الذي يوجه كل قرار رئيسي في مشروع التجميل. أصحاب الصالونات الذين يعملون بخطة عمل مكتوبة أكثر احتمالاً بشكل كبير لتحقيق أهداف إيراداتهم وإدارة التدفق النقدي بفعالية واتخاذ قرارات نمو واثقة مقارنة بأولئك الذين يعملون بدونها.</p>
-<p>يرشدك هذا الدليل خلال كتابة كل قسم من خطة عمل صالون احترافية كجزء من <a href="/ar/resources/blog/businesses/beauty-business-growth-guide">استراتيجية نمو مشروع التجميل</a>. سواء كنت تطلق صالوناً جديداً أو تسعى لتمويل للتوسع أو تريد ببساطة إضفاء طابع احترافي على عملك الحالي، يوفر هذا القالب الهيكل الذي تحتاجه.</p>
+<p>يرشدك هذا الدليل خلال كتابة كل قسم من خطة عمل صالون احترافية كجزء من <a href="/ar/resources/blog/business/beauty-business-growth-guide">استراتيجية نمو مشروع التجميل</a>. سواء كنت تطلق صالوناً جديداً أو تسعى لتمويل للتوسع أو تريد ببساطة إضفاء طابع احترافي على عملك الحالي، يوفر هذا القالب الهيكل الذي تحتاجه.</p>
 
 <h2>القسم 1: الملخص التنفيذي</h2>
 <p>الملخص التنفيذي هو نظرة عامة من صفحة واحدة على خطة عملك بالكامل. اكتبه أخيراً (بعد جميع الأقسام الأخرى) لكن ضعه أولاً. يجب أن يغطي:</p>
@@ -2329,7 +2329,7 @@ const salonBusinessPlanArticleAr: LocalBlogPost = {
 <p>فصّل قائمة خدماتك الكاملة وأي منتجات تجزئة:</p>
 <ul>
 <li><strong>فئات الخدمة:</strong> شعر، أظافر، بشرة، مكياج، علاجات، إلخ.</li>
-<li><strong>استراتيجية التسعير:</strong> كيف تُحدد أسعارك؟ كيف تقارن بالسوق؟ راجع <a href="/ar/resources/blog/businesses/salon-pricing-strategy-guide">دليل استراتيجية التسعير</a> لأطر العمل.</li>
+<li><strong>استراتيجية التسعير:</strong> كيف تُحدد أسعارك؟ كيف تقارن بالسوق؟ راجع <a href="/ar/resources/blog/business/salon-pricing-strategy-guide">دليل استراتيجية التسعير</a> لأطر العمل.</li>
 <li><strong>الخدمات المميزة:</strong> أي عروض فريدة تميز قائمتك.</li>
 <li><strong>منتجات التجزئة:</strong> خطوط المنتجات المتوفرة والإيرادات التجزئية المتوقعة وأهداف الهامش.</li>
 <li><strong>تطور الخدمة:</strong> الإضافات أو التعديلات المخططة لقائمتك خلال 12-24 شهراً القادمة.</li>
@@ -2339,12 +2339,12 @@ const salonBusinessPlanArticleAr: LocalBlogPost = {
 <p>حدد كيف ستجذب وتحتفظ بالعملاء. غطِّ:</p>
 <ul>
 <li><strong>تموضع العلامة التجارية:</strong> كيف تريد أن يرى العملاء عملك مقارنة بالمنافسين.</li>
-<li><strong>قنوات التسويق:</strong> ملف Google التجاري، وسائل التواصل الاجتماعي (إنستغرام، تيك توك)، تحسين محركات البحث المحلي، التسويق بالبريد الإلكتروني، برامج الإحالة، والشراكات.</li>
+<li><strong>قنوات التسويق:</strong> ملف جوجل التجاري، وسائل التواصل الاجتماعي (إنستغرام، تيك توك)، تحسين محركات البحث المحلي، التسويق بالبريد الإلكتروني، برامج الإحالة، والشراكات.</li>
 <li><strong>هدف تكلفة اكتساب العميل:</strong> كم تخطط لإنفاقه لاكتساب كل عميل جديد، ومن خلال أي قنوات.</li>
 <li><strong>استراتيجية الاحتفاظ:</strong> برامج الولاء ونماذج العضوية وحملات إعادة التفاعل ومعايير تجربة العميل.</li>
 <li><strong>ميزانية التسويق:</strong> الإنفاق التسويقي الشهري والسنوي مقسماً حسب القناة.</li>
 </ul>
-<p>ارجع إلى استراتيجيات محددة من <a href="/ar/resources/blog/businesses/salon-marketing-strategies">دليل تسويق الصالون</a> لخطط تكتيكية مفصلة.</p>
+<p>ارجع إلى استراتيجيات محددة من <a href="/ar/resources/blog/business/salon-marketing-strategies">دليل تسويق الصالون</a> لخطط تكتيكية مفصلة.</p>
 
 <h2>القسم 6: خطة العمليات</h2>
 <p>صف كيف يعمل صالونك يومياً:</p>

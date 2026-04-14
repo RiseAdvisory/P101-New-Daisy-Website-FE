@@ -19,7 +19,7 @@ interface Props {
 }
 
 export function AlternativePageClient({ slug, locale = 'en' }: Props) {
-  const result = getAlternativePageData(slug);
+  const result = getAlternativePageData(slug, locale);
   if (!result) return null;
 
   if (result.type === 'alternative') {
@@ -41,12 +41,18 @@ function AlternativeSinglePage({
   const competitor = getCompetitor(data.competitorSlug);
   if (!competitor) return null;
 
-  const relatedPages = getRelatedAlternativePages(slug);
+  const relatedPages = getRelatedAlternativePages(slug, 4, locale);
   // Add cross-link to the compare page
   const compareLink = {
-    title: `Daisy vs ${competitor.name}. Full Comparison`,
-    url: `/compare/daisy-vs-${data.competitorSlug}`,
-    description: `Detailed feature-by-feature comparison of Daisy and ${competitor.name}.`,
+    title:
+      locale === 'ar'
+        ? `ديزي مقابل ${competitor.name}: مقارنة كاملة`
+        : `Daisy vs ${competitor.name}. Full Comparison`,
+    url: `/${locale}/compare/daisy-vs-${data.competitorSlug}`,
+    description:
+      locale === 'ar'
+        ? `مقارنة تفصيلية ميزة بميزة بين ديزي و${competitor.name}.`
+        : `Detailed feature-by-feature comparison of Daisy and ${competitor.name}.`,
   };
   const allRelatedPages = [compareLink, ...relatedPages];
 
@@ -60,7 +66,7 @@ function AlternativeSinglePage({
       <WebPageSchema
         title={data.metaTitle}
         description={data.metaDescription}
-        url={`https://www.jointhedaisy.com/alternative/${slug}`}
+        url={`https://www.jointhedaisy.com/${locale}/alternative/${slug}`}
       />
       {competitor.faq.length > 0 && <FaqSchema faqs={competitor.faq} />}
 

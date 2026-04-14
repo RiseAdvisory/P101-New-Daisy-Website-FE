@@ -68,6 +68,7 @@ export interface TutorialCategoryWithArticles {
 
 export function getTutorialArticles(
   persona: 'business' | 'professional',
+  locale: string = 'en',
 ): TutorialCategoryWithArticles[] {
   const categories = tutorialCatalog[persona];
 
@@ -75,9 +76,10 @@ export function getTutorialArticles(
     .map((category) => {
       const blogArticles = category.articleSlugs
         .map((slug) => {
-          const post = allBlogPosts.find(
-            (p) => p.attributes.slug === slug,
-          );
+          const post =
+            allBlogPosts.find((p) => p.attributes.slug === slug && p.attributes.locale === locale) ??
+            allBlogPosts.find((p) => p.attributes.slug === slug && p.attributes.locale === 'en') ??
+            allBlogPosts.find((p) => p.attributes.slug === slug);
           if (!post) return null;
           return blogPostToTutorialArticle(post);
         })

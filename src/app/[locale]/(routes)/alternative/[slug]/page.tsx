@@ -18,7 +18,7 @@ export function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Metadata {
-  const result = getAlternativePageData(params.slug);
+  const result = getAlternativePageData(params.slug, params.locale);
   if (!result) return { title: 'Not Found' };
 
   const { metaTitle, metaDescription, keywords } = result.data;
@@ -49,7 +49,7 @@ export default function AlternativePage({
 }: {
   params: { locale: string; slug: string };
 }) {
-  const result = getAlternativePageData(params.slug);
+  const result = getAlternativePageData(params.slug, params.locale);
   if (!result) notFound();
 
   return <AlternativePageClient slug={params.slug} locale={params.locale} />;

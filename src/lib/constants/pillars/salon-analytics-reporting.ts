@@ -75,11 +75,11 @@ export const salonAnalyticsReporting: PillarPageData = {
       relatedLinks: [
         {
           title: '7 Salon Metrics to Track Weekly',
-          url: '/en/resources/blog/businesses/7-salon-metrics-track-weekly',
+          url: '/en/resources/blog/business/7-salon-metrics-track-weekly',
         },
         {
           title: 'Data-Driven Salons Outperform the Competition',
-          url: '/en/resources/blog/businesses/data-driven-salons-outperform-competition',
+          url: '/en/resources/blog/business/data-driven-salons-outperform-competition',
         },
       ],
     },
@@ -158,7 +158,7 @@ export const salonAnalyticsReporting: PillarPageData = {
       relatedLinks: [
         {
           title: '7 Salon Metrics to Track Weekly',
-          url: '/en/resources/blog/businesses/7-salon-metrics-track-weekly',
+          url: '/en/resources/blog/business/7-salon-metrics-track-weekly',
         },
         {
           title: 'Daisy Analytics & Reports',
@@ -237,7 +237,7 @@ export const salonAnalyticsReporting: PillarPageData = {
       relatedLinks: [
         {
           title: 'Revenue Forecasting for Beauty Businesses',
-          url: '/en/resources/blog/businesses/revenue-forecasting-beauty-businesses',
+          url: '/en/resources/blog/business/revenue-forecasting-beauty-businesses',
         },
       ],
     },
@@ -296,7 +296,7 @@ export const salonAnalyticsReporting: PillarPageData = {
       relatedLinks: [
         {
           title: 'Client Retention Reporting: Know Your Numbers',
-          url: '/en/resources/blog/businesses/client-retention-reporting-know-your-numbers',
+          url: '/en/resources/blog/business/client-retention-reporting-know-your-numbers',
         },
         {
           title: 'Daisy AI Salon Management',
@@ -541,7 +541,7 @@ export const salonAnalyticsReporting: PillarPageData = {
       relatedLinks: [
         {
           title: 'Revenue Forecasting for Beauty Businesses',
-          url: '/en/resources/blog/businesses/revenue-forecasting-beauty-businesses',
+          url: '/en/resources/blog/business/revenue-forecasting-beauty-businesses',
         },
         {
           title: 'Daisy AI Salon Management',
@@ -642,7 +642,7 @@ export const salonAnalyticsReporting: PillarPageData = {
       relatedLinks: [
         {
           title: 'Data-Driven Salons Outperform the Competition',
-          url: '/en/resources/blog/businesses/data-driven-salons-outperform-competition',
+          url: '/en/resources/blog/business/data-driven-salons-outperform-competition',
         },
         {
           title: 'Daisy Analytics & Reports',

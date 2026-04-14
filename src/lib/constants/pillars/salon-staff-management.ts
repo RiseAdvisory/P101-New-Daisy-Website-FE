@@ -237,7 +237,7 @@ export const salonStaffManagement: PillarPageData = {
       relatedLinks: [
         {
           title: 'Staff Scheduling for Salon Owners',
-          url: '/en/resources/blog/businesses/staff-scheduling-salon-owners-guide',
+          url: '/en/resources/blog/business/staff-scheduling-salon-owners-guide',
         },
         {
           title: 'Daisy Team Management',
@@ -309,7 +309,7 @@ export const salonStaffManagement: PillarPageData = {
       relatedLinks: [
         {
           title: 'Commission Structures That Keep Top Talent',
-          url: '/en/resources/blog/businesses/commission-structures-keep-top-talent',
+          url: '/en/resources/blog/business/commission-structures-keep-top-talent',
         },
       ],
     },
@@ -473,7 +473,7 @@ export const salonStaffManagement: PillarPageData = {
       relatedLinks: [
         {
           title: 'Managing Permissions and Access Control',
-          url: '/en/resources/blog/businesses/managing-permissions-salon-access-control',
+          url: '/en/resources/blog/business/managing-permissions-salon-access-control',
         },
       ],
     },
@@ -622,7 +622,7 @@ export const salonStaffManagement: PillarPageData = {
         },
         {
           title: 'Time Management for Independent Professionals',
-          url: '/en/resources/blog/professionals/time-management-independent-beauty-professionals',
+          url: '/en/resources/blog/professional/time-management-independent-beauty-professionals',
         },
       ],
     },

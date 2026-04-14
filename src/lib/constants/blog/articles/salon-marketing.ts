@@ -43,19 +43,19 @@ const salonMarketingIdeas2026Article: LocalBlogPost = {
     aboutPosts: `
 <h2>Why Salon Marketing Has Changed - and What Works Now</h2>
 <p>Salon marketing in 2026 is not what it was five years ago. Generic discount flyers, one-size-fits-all social posts, and relying on walk-in traffic are no longer enough to sustain a growing beauty business. Today's clients discover salons through search engines, social media, online reviews, and AI-powered recommendations. The salons that thrive are those that meet clients where they are - online, on their phones, and expecting personalised experiences.</p>
-<p>This guide gives you 15 actionable <a href="/en/resources/blog/businesses/salon-marketing-strategies">salon marketing strategies</a> that work right now. Each idea includes implementation steps, expected outcomes, and how to measure success. Whether you are a single-location salon or managing multiple branches, these strategies scale to fit your business.</p>
+<p>This guide gives you 15 actionable <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing strategies</a> that work right now. Each idea includes implementation steps, expected outcomes, and how to measure success. Whether you are a single-location salon or managing multiple branches, these strategies scale to fit your business.</p>
 
 <h2>1. Optimise Your Google Business Profile</h2>
 <p>Your Google Business Profile is the single most important free marketing asset your salon owns. When a potential client searches "hair salon near me" or "best salon in [city]," Google Business Profile listings dominate the results. A fully optimised profile with accurate hours, services, photos, and reviews consistently outranks paid ads for local beauty searches.</p>
-<p>Action steps: Claim and verify your profile, add every service you offer with descriptions and price ranges, upload 10+ high-quality photos of your space and work, and respond to every review within 24 hours. For a complete walkthrough, see our <a href="/en/resources/blog/businesses/google-my-business-salon-optimization">Google My Business optimisation guide</a>.</p>
+<p>Action steps: Claim and verify your profile, add every service you offer with descriptions and price ranges, upload 10+ high-quality photos of your space and work, and respond to every review within 24 hours. For a complete walkthrough, see our <a href="/en/resources/blog/business/google-my-business-salon-optimization">Google My Business optimisation guide</a>.</p>
 
 <h2>2. Launch a Referral Program With Automatic Rewards</h2>
 <p>Word-of-mouth remains the most trusted form of marketing. A structured referral program converts informal recommendations into a reliable acquisition channel. The key is making referral rewards automatic rather than relying on staff to remember to apply them.</p>
-<p>Offer a clear incentive for both the referrer and the new client - for example, $20 credit for each when the new client completes their first booking. Platforms like <a href="/en/features/business/marketing-promotions">The Daisy</a> automate referral tracking and reward distribution so your team never has to manage it manually. Learn more in our <a href="/en/resources/blog/businesses/salon-referral-program-guide">salon referral program guide</a>.</p>
+<p>Offer a clear incentive for both the referrer and the new client - for example, $20 credit for each when the new client completes their first booking. Platforms like <a href="/en/features/business/marketing-promotions">The Daisy</a> automate referral tracking and reward distribution so your team never has to manage it manually. Learn more in our <a href="/en/resources/blog/business/salon-referral-program-guide">salon referral program guide</a>.</p>
 
 <h2>3. Build a Loyalty Program With Cashback</h2>
 <p>Acquiring a new client costs five to seven times more than retaining an existing one. A loyalty program with cashback creates a financial incentive for clients to return rather than trying a competitor. The psychology is powerful: clients with an accumulated balance feel they are "losing money" by going elsewhere.</p>
-<p>The Daisy's built-in cashback system calculates and credits rewards automatically at checkout, requiring zero effort from your team. Explore our <a href="/en/resources/blog/businesses/salon-loyalty-program-guide">loyalty program guide</a> for detailed setup instructions.</p>
+<p>The Daisy's built-in cashback system calculates and credits rewards automatically at checkout, requiring zero effort from your team. Explore our <a href="/en/resources/blog/business/salon-loyalty-program-guide">loyalty program guide</a> for detailed setup instructions.</p>
 
 <h2>4. Create Short-Form Video Content</h2>
 <p>Short-form video on Instagram Reels and TikTok is the most effective organic reach channel for beauty businesses in 2026. Transformation videos, styling tutorials, and behind-the-scenes content consistently outperform static images in engagement, reach, and conversion.</p>
@@ -63,11 +63,11 @@ const salonMarketingIdeas2026Article: LocalBlogPost = {
 
 <h2>5. Invest in Local SEO</h2>
 <p>Local SEO is the practice of optimising your online presence so your salon appears when potential clients search for beauty services in your area. Unlike paid ads, local SEO delivers compounding returns - the work you do today continues generating visibility for months and years.</p>
-<p>Key tactics include creating location-specific pages on your website, earning backlinks from local directories and blogs, and ensuring your NAP (name, address, phone) is consistent across every online listing. Our <a href="/en/resources/blog/businesses/salon-seo-local-search-guide">salon SEO guide</a> covers the complete process.</p>
+<p>Key tactics include creating location-specific pages on your website, earning backlinks from local directories and blogs, and ensuring your NAP (name, address, phone) is consistent across every online listing. Our <a href="/en/resources/blog/business/salon-seo-local-search-guide">salon SEO guide</a> covers the complete process.</p>
 
 <h2>6. Send Targeted Email Campaigns</h2>
 <p>Email marketing delivers the highest ROI of any digital marketing channel - an average of $36 for every $1 spent. For salons, email is especially powerful because you already have your clients' contact information from bookings.</p>
-<p>Segment your email list by visit frequency, services booked, and spending level. Send personalised campaigns: rebooking reminders for clients approaching their typical visit interval, birthday offers, seasonal service promotions, and new service announcements. See our <a href="/en/resources/blog/businesses/salon-email-marketing-templates">email marketing templates guide</a> for ready-to-use sequences.</p>
+<p>Segment your email list by visit frequency, services booked, and spending level. Send personalised campaigns: rebooking reminders for clients approaching their typical visit interval, birthday offers, seasonal service promotions, and new service announcements. See our <a href="/en/resources/blog/business/salon-email-marketing-templates">email marketing templates guide</a> for ready-to-use sequences.</p>
 
 <h2>7. Partner With Local Businesses</h2>
 <p>Cross-promotion with complementary local businesses puts your salon in front of pre-qualified audiences. Partner with fitness studios, bridal shops, boutiques, spas, and wellness centres to create referral exchanges, joint promotions, and bundled experiences.</p>
@@ -195,7 +195,7 @@ const salonSocialMediaMarketingArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Social Media Is the New Shopfront for Salons</h2>
 <p>Social media is the primary discovery channel for beauty businesses in 2026. More potential clients find their next salon through Instagram and TikTok than through any other channel - including Google search, word-of-mouth, and walk-ins combined. For salons, social media is not optional marketing; it is your digital shopfront.</p>
-<p>This guide covers platform-specific strategies for every major social network relevant to beauty businesses. Whether you are building from scratch or optimising an existing presence, these are the <a href="/en/resources/blog/businesses/salon-marketing-strategies">salon marketing strategies</a> that generate real bookings, not just vanity metrics.</p>
+<p>This guide covers platform-specific strategies for every major social network relevant to beauty businesses. Whether you are building from scratch or optimising an existing presence, these are the <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing strategies</a> that generate real bookings, not just vanity metrics.</p>
 
 <h2>Instagram: Your Visual Portfolio and Booking Engine</h2>
 <p>Instagram remains the dominant platform for beauty businesses. Its visual format is perfectly suited to showcasing transformations, techniques, and salon culture. But success on Instagram in 2026 requires more than posting pretty photos.</p>
@@ -359,7 +359,7 @@ const salonEmailMarketingArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Email Marketing Is the Highest-ROI Channel for Salons</h2>
 <p>Email marketing delivers an average return of $36 for every $1 spent, making it the highest-ROI digital marketing channel available to salons. Unlike social media, where algorithms control who sees your content, email lands directly in your client's inbox. You own the relationship, not a platform.</p>
-<p>For beauty businesses, email is especially powerful because you already possess the most valuable asset: your client's contact information from bookings. This guide provides the complete <a href="/en/resources/blog/businesses/salon-marketing-strategies">salon marketing framework</a> for email, including templates, automation sequences, and measurement strategies. For Daisy-specific email campaign setup, see our <a href="/en/resources/blog/businesses/email-marketing-salons-templates">email marketing platform guide</a>.</p>
+<p>For beauty businesses, email is especially powerful because you already possess the most valuable asset: your client's contact information from bookings. This guide provides the complete <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing framework</a> for email, including templates, automation sequences, and measurement strategies. For Daisy-specific email campaign setup, see our <a href="/en/resources/blog/business/email-marketing-salons-templates">email marketing platform guide</a>.</p>
 
 <h2>Building Your Salon Email List</h2>
 <p>Your email list is only as valuable as its quality. A list of 500 engaged clients who open your emails outperforms a list of 5,000 unengaged contacts every time.</p>
@@ -520,7 +520,7 @@ const salonLoyaltyProgramGuideArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Client Retention Is the Most Profitable Growth Strategy</h2>
 <p>A 5% increase in client retention produces a 25-95% increase in profits, according to research from Harvard Business School. For salons, where repeat clients form the backbone of revenue, a loyalty program is not a nice-to-have - it is a profit multiplier. Yet many beauty businesses either lack a formal loyalty program or run one so poorly that clients forget it exists.</p>
-<p>This guide takes you from concept to launch with a <a href="/en/resources/blog/businesses/salon-marketing-strategies">salon marketing approach</a> specifically designed for retention. For platform-specific loyalty setup using The Daisy, see our detailed <a href="/en/resources/blog/businesses/complete-guide-salon-loyalty-programs">loyalty program implementation guide</a>.</p>
+<p>This guide takes you from concept to launch with a <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing approach</a> specifically designed for retention. For platform-specific loyalty setup using The Daisy, see our detailed <a href="/en/resources/blog/business/complete-guide-salon-loyalty-programs">loyalty program implementation guide</a>.</p>
 
 <h2>Why Generic Loyalty Programs Fail in Salons</h2>
 <p>Most salon loyalty programs underperform because they copy retail models that do not fit the beauty industry's dynamics. A coffee shop punch card works because the product is identical every visit. Salon visits vary in service, price, and provider - a loyalty program must account for this complexity.</p>
@@ -692,7 +692,7 @@ const salonReferralProgramGuideArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Referrals Are the Highest-Quality Client Acquisition Channel</h2>
 <p>Referred clients are more profitable than clients acquired through any other channel. Industry data shows that referred salon clients have a 37% higher retention rate, a 25% higher lifetime value, and a 16% higher average transaction value compared to clients who find you through advertising. The reason is simple: a referral comes with built-in trust from someone the new client already knows and respects.</p>
-<p>Yet most salons leave referrals to chance, hoping satisfied clients will naturally tell their friends. A structured referral program transforms this passive hope into an active, measurable acquisition channel. This guide provides the <a href="/en/resources/blog/businesses/salon-marketing-strategies">salon marketing blueprint</a> for building a referral engine that runs on autopilot. For Daisy-specific referral campaign setup, see our <a href="/en/resources/blog/businesses/salon-referral-programs-that-work">referral program implementation guide</a>.</p>
+<p>Yet most salons leave referrals to chance, hoping satisfied clients will naturally tell their friends. A structured referral program transforms this passive hope into an active, measurable acquisition channel. This guide provides the <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing blueprint</a> for building a referral engine that runs on autopilot. For Daisy-specific referral campaign setup, see our <a href="/en/resources/blog/business/salon-referral-programs-that-work">referral program implementation guide</a>.</p>
 
 <h2>Why Most Salon Referral Programs Underperform</h2>
 <p>If your salon has a referral program but it rarely generates new clients, one or more of these issues is likely the cause:</p>
@@ -851,7 +851,7 @@ const googleMyBusinessSalonArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Your Google Business Profile Is Your Most Valuable Free Marketing Asset</h2>
 <p>When a potential client searches "salon near me" or "best hair salon in [city]," Google Business Profile listings dominate the results page. These listings appear above organic search results, above paid ads on mobile, and include photos, reviews, hours, and a direct booking link. For salons, an optimised Google Business Profile consistently generates more new client enquiries than any other single marketing channel.</p>
-<p>Google reports that businesses with complete profiles receive 7x more clicks than those with incomplete information. For beauty businesses, where local search intent is extremely high (clients are actively looking for a salon to book), this visibility gap translates directly into revenue. This guide is part of our complete <a href="/en/resources/blog/businesses/salon-marketing-strategies">salon marketing strategy</a> series.</p>
+<p>Google reports that businesses with complete profiles receive 7x more clicks than those with incomplete information. For beauty businesses, where local search intent is extremely high (clients are actively looking for a salon to book), this visibility gap translates directly into revenue. This guide is part of our complete <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing strategy</a> series.</p>
 
 <h2>Step 1: Claim and Verify Your Profile</h2>
 <p>If you have not already claimed your Google Business Profile, do this immediately. Search for your business on Google Maps. If a listing exists, click "Claim this business" and follow the verification process (usually a postcard, phone call, or email verification). If no listing exists, create one at business.google.com.</p>
@@ -1022,7 +1022,7 @@ const salonSeoLocalSearchArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Local SEO Is the Most Cost-Effective Client Acquisition Channel for Salons</h2>
 <p>Local SEO is the practice of optimising your online presence so your salon appears prominently when potential clients search for beauty services in your area. Unlike paid advertising, which stops generating leads the moment you stop paying, local SEO delivers compounding returns - the work you invest today continues driving visibility and bookings for months and years.</p>
-<p>For beauty businesses, local search intent is extraordinarily high. When someone searches "hair salon near me" or "balayage specialist [city]," they are actively looking to book, not casually browsing. Capturing this intent is the most direct path from search to appointment. This guide is part of our complete <a href="/en/resources/blog/businesses/salon-marketing-strategies">salon marketing strategy</a> series and covers every aspect of local SEO for salons.</p>
+<p>For beauty businesses, local search intent is extraordinarily high. When someone searches "hair salon near me" or "balayage specialist [city]," they are actively looking to book, not casually browsing. Capturing this intent is the most direct path from search to appointment. This guide is part of our complete <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing strategy</a> series and covers every aspect of local SEO for salons.</p>
 
 <h2>Understanding How Local Search Works for Salons</h2>
 <p>Google uses three primary factors to rank local businesses: relevance, distance, and prominence. Understanding these factors helps you optimise strategically.</p>
@@ -1212,7 +1212,7 @@ const independentBeautyProfessionalMarketingArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Independent Beauty Professionals Need a Different Marketing Approach</h2>
 <p>Marketing as an independent beauty professional is fundamentally different from marketing a salon. You do not have a brand, a team, or a marketing budget behind you - you are the brand. Every marketing decision reflects directly on you, and every new client relationship starts with your personal reputation.</p>
-<p>The good news: independent professionals have advantages that salons do not. You can build deeper personal connections, move faster on trends, and create an authentic brand that clients feel personally connected to. This guide provides a complete <a href="/en/resources/blog/businesses/salon-marketing-strategies">marketing framework</a> tailored specifically for freelance beauty professionals, whether you rent a chair, run a home studio, or offer mobile services.</p>
+<p>The good news: independent professionals have advantages that salons do not. You can build deeper personal connections, move faster on trends, and create an authentic brand that clients feel personally connected to. This guide provides a complete <a href="/en/resources/blog/business/salon-marketing-strategies">marketing framework</a> tailored specifically for freelance beauty professionals, whether you rent a chair, run a home studio, or offer mobile services.</p>
 
 <h2>Building Your Personal Brand Foundation</h2>
 <p>Your personal brand is the single most important marketing asset you own. It determines whether a potential client chooses you over the hundreds of other professionals offering similar services in your area.</p>
@@ -1257,7 +1257,7 @@ const independentBeautyProfessionalMarketingArticle: LocalBlogPost = {
 <p>Professional booking platforms provide built-in discovery for clients searching by service and location. <a href="/en/features/professional/marketing-promotions">The Daisy's professional profile</a> is optimised for client discovery, with your portfolio, services, reviews, and direct booking in one place. Complete your profile thoroughly - professionals with complete profiles receive 3-4x more booking enquiries than those with partial profiles.</p>
 
 <h3>Google Business Profile</h3>
-<p>If you have a fixed location (rented chair, studio, or home salon), claim a Google Business Profile. This captures the highest-intent clients - people actively searching for your services in your area. Follow the same optimisation principles from our <a href="/en/resources/blog/businesses/google-my-business-salon-optimization">Google Business Profile guide</a>, adapted for your individual practice.</p>
+<p>If you have a fixed location (rented chair, studio, or home salon), claim a Google Business Profile. This captures the highest-intent clients - people actively searching for your services in your area. Follow the same optimisation principles from our <a href="/en/resources/blog/business/google-my-business-salon-optimization">Google Business Profile guide</a>, adapted for your individual practice.</p>
 
 <h3>Referral Network</h3>
 <p>Build a referral network with complementary professionals: makeup artists, photographers, wedding planners, personal stylists, and other beauty professionals who serve your target clients but do not compete with you. Formalise the relationship: "I refer clients to you for nails, you refer clients to me for colour." Track referrals so you can recognise and reward your best referral partners.</p>
@@ -1381,31 +1381,31 @@ const salonMarketingIdeas2026ArticleAr: LocalBlogPost = {
       'اكتشف 15 فكرة تسويقية مثبتة للصالونات لعام 2026 والتي تؤدي إلى اكتساب عملاء جدد وتكرار الحجوزات. يغطي الاستراتيجيات الرقمية والتواصل المحلي والشراكات والحملات المدعومة بالتكنولوجيا والتي تحقق نتائج قابلة للقياس.',
     aboutPosts: `<h2>لماذا تغير تسويق الصالونات - وما الذي ينجح الآن</h2>
 <p> تسويق الصالونات في عام 2026 لم يعد كما كان قبل خمس سنوات. لم تعد منشورات الخصم العامة والمشاركات الاجتماعية ذات الحجم الواحد الذي يناسب الجميع والاعتماد على حركة المرور كافية للحفاظ على أعمال التجميل المتنامية. يكتشف عملاء اليوم الصالونات من خلال محركات البحث ووسائل التواصل الاجتماعي والمراجعات عبر الإنترنت والتوصيات المدعومة بالذكاء الاصطناعي. الصالونات التي تزدهر هي تلك التي تلتقي بالعملاء أينما كانوا - عبر الإنترنت، وعلى هواتفهم، وتتوقع تجارب شخصية.</p>
-<p>يقدم لك هذا الدليل 15 <a href="/ar/resources/blog/businesses/salon-marketing-strategies">إستراتيجيات تسويق صالونات</a> قابلة للتنفيذ والتي تعمل الآن. تتضمن كل فكرة خطوات التنفيذ والنتائج المتوقعة وكيفية قياس النجاح. سواء كنت صالونًا في موقع واحد أو تدير عدة فروع، فإن هذه الاستراتيجيات تتناسب مع عملك.</p>
+<p>يقدم لك هذا الدليل 15 <a href="/ar/resources/blog/business/salon-marketing-strategies">إستراتيجيات تسويق صالونات</a> قابلة للتنفيذ والتي تعمل الآن. تتضمن كل فكرة خطوات التنفيذ والنتائج المتوقعة وكيفية قياس النجاح. سواء كنت صالونًا في موقع واحد أو تدير عدة فروع، فإن هذه الاستراتيجيات تتناسب مع عملك.</p>
 
-<h2>1. تحسين ملفك التجاري على Google</h2>
-<p> يعد ملفك التجاري على Google أهم الأصول التسويقية المجانية التي يمتلكها صالونك. عندما يبحث عميل محتمل عن "صالون تصفيف الشعر بالقرب مني" أو "أفضل صالون في [المدينة]"، تهيمن قوائم الملفات التجارية على Google على النتائج. ملف شخصي محسّن بالكامل يحتوي على ساعات وخدمات وصور ومراجعات دقيقة يتفوق باستمرار على الإعلانات المدفوعة لعمليات البحث المحلية عن الجمال.</p>
-<p>خطوات العمل: المطالبة بملفك الشخصي والتحقق منه، وإضافة كل خدمة تقدمها مع الأوصاف ونطاقات الأسعار، وتحميل أكثر من 10 صور عالية الجودة لمساحتك وعملك، والرد على كل مراجعة في غضون 24 ساعة. للحصول على إرشادات كاملة، راجع <a href="/ar/resources/blog/businesses/google-my-business-salon-optimization">دليل تحسين نشاطي التجاري على Google</a>.</p>
+<h2>1. تحسين ملفك التجاري على جوجل</h2>
+<p> يعد ملفك التجاري على جوجل أهم الأصول التسويقية المجانية التي يمتلكها صالونك. عندما يبحث عميل محتمل عن "صالون تصفيف الشعر بالقرب مني" أو "أفضل صالون في [المدينة]"، تهيمن قوائم الملفات التجارية على جوجل على النتائج. ملف شخصي محسّن بالكامل يحتوي على ساعات وخدمات وصور ومراجعات دقيقة يتفوق باستمرار على الإعلانات المدفوعة لعمليات البحث المحلية عن الجمال.</p>
+<p>خطوات العمل: المطالبة بملفك الشخصي والتحقق منه، وإضافة كل خدمة تقدمها مع الأوصاف ونطاقات الأسعار، وتحميل أكثر من 10 صور عالية الجودة لمساحتك وعملك، والرد على كل مراجعة في غضون 24 ساعة. للحصول على إرشادات كاملة، راجع <a href="/ar/resources/blog/business/google-my-business-salon-optimization">دليل تحسين نشاطي التجاري على جوجل</a>.</p>
 
 <h2>2. إطلاق برنامج إحالة بمكافآت تلقائية</h2>
 <p> تظل الكلمات الشفهية هي الشكل الأكثر ثقة للتسويق. يقوم برنامج الإحالة المنظم بتحويل التوصيات غير الرسمية إلى قناة اكتساب موثوقة. المفتاح هو جعل مكافآت الإحالة تلقائية بدلاً من الاعتماد على الموظفين لتذكر تطبيقها.</p>
-<p>قدم حافزًا واضحًا لكل من المُحيل والعميل الجديد - على سبيل المثال، رصيد بقيمة 20 دولارًا لكل منهما عندما يكمل العميل الجديد حجزه الأول. تقوم الأنظمة الأساسية مثل <a href="/ar/features/business/marketing-promotions">The Daisy</a> بأتمتة تتبع الإحالات وتوزيع المكافآت حتى لا يضطر فريقك أبدًا إلى إدارتها يدويًا. تعرف على المزيد في <a href="/ar/resources/blog/businesses/salon-referral-program-guide">دليل برنامج الإحالة للصالون</a>.</p>
+<p>قدم حافزًا واضحًا لكل من المُحيل والعميل الجديد - على سبيل المثال، رصيد بقيمة 20 دولارًا لكل منهما عندما يكمل العميل الجديد حجزه الأول. تقوم الأنظمة الأساسية مثل <a href="/ar/features/business/marketing-promotions">ديزي</a> بأتمتة تتبع الإحالات وتوزيع المكافآت حتى لا يضطر فريقك أبدًا إلى إدارتها يدويًا. تعرف على المزيد في <a href="/ar/resources/blog/business/salon-referral-program-guide">دليل برنامج الإحالة للصالون</a>.</p>
 
 <h2>3. إنشاء برنامج ولاء مع الاسترداد النقدي</h2>
 <p> إن الحصول على عميل جديد يكلف من خمس إلى سبع مرات أكثر من الاحتفاظ بالعميل الحالي. يخلق برنامج الولاء مع الاسترداد النقدي حافزًا ماليًا للعملاء للعودة بدلاً من تجربة منافس. علم النفس قوي: العملاء الذين لديهم رصيد متراكم يشعرون أنهم "يخسرون المال" بالذهاب إلى مكان آخر.</p>
-<p> يقوم نظام الاسترداد النقدي المدمج في Daisy باحتساب المكافآت وإضافتها تلقائيًا عند الدفع، مما لا يتطلب أي جهد من فريقك. استكشف <a href="/ar/resources/blog/businesses/salon-loyalty-program-guide">دليل برنامج الولاء</a> للحصول على تعليمات الإعداد التفصيلية.</p>
+<p> يقوم نظام الاسترداد النقدي المدمج في ديزي باحتساب المكافآت وإضافتها تلقائيًا عند الدفع، مما لا يتطلب أي جهد من فريقك. استكشف <a href="/ar/resources/blog/business/salon-loyalty-program-guide">دليل برنامج الولاء</a> للحصول على تعليمات الإعداد التفصيلية.</p>
 
 <h2>4. إنشاء محتوى فيديو قصير</h2>
-<p> يعد الفيديو القصير على Instagram Reels وTikTok قناة الوصول العضوية الأكثر فعالية لشركات التجميل في عام 2026. تتفوق مقاطع الفيديو التحويلية والبرامج التعليمية للتصميم والمحتوى من وراء الكواليس باستمرار على الصور الثابتة في المشاركة والوصول والتحويل.</p>
+<p> يعد الفيديو القصير على إنستغرام Reels وTikTok قناة الوصول العضوية الأكثر فعالية لشركات التجميل في عام 2026. تتفوق مقاطع الفيديو التحويلية والبرامج التعليمية للتصميم والمحتوى من وراء الكواليس باستمرار على الصور الثابتة في المشاركة والوصول والتحويل.</p>
 <p> لا تحتاج إلى معدات احترافية. يكفي وجود هاتف ذكي وإضاءة طبيعية وخلفية نظيفة. انشر 3-5 مقاطع فيديو قصيرة أسبوعيًا، مع التركيز على: التحولات قبل وبعد (40%)، نصائح سريعة للتصميم (30%)، شخصية الفريق وثقافته (20%)، وشهادات العملاء بإذن (10%).</p>
 
 <h2>5. استثمر في تحسين محركات البحث المحلية</h2>
 <p> إن تحسين محركات البحث المحلية هو ممارسة لتحسين تواجدك عبر الإنترنت بحيث يظهر صالونك عندما يبحث العملاء المحتملون عن خدمات التجميل في منطقتك. على عكس الإعلانات المدفوعة، يحقق تحسين محركات البحث المحلي عوائد مركبة - فالعمل الذي تقوم به اليوم يستمر في توليد رؤية لأشهر وسنوات.</p>
-<p> تتضمن التكتيكات الأساسية إنشاء صفحات خاصة بالموقع على موقع الويب الخاص بك، والحصول على روابط خلفية من الدلائل والمدونات المحلية، والتأكد من اتساق NAP (الاسم والعنوان والهاتف) عبر كل قائمة عبر الإنترنت. يغطي <a href="/ar/resources/blog/businesses/salon-seo-local-search-guide">salon دليل SEO</a> العملية الكاملة.</p>
+<p> تتضمن التكتيكات الأساسية إنشاء صفحات خاصة بالموقع على موقع الويب الخاص بك، والحصول على روابط خلفية من الدلائل والمدونات المحلية، والتأكد من اتساق NAP (الاسم والعنوان والهاتف) عبر كل قائمة عبر الإنترنت. يغطي <a href="/ar/resources/blog/business/salon-seo-local-search-guide">salon دليل SEO</a> العملية الكاملة.</p>
 
 <h2>6. إرسال حملات بريد إلكتروني مستهدفة</h2>
 <p> يقدم التسويق عبر البريد الإلكتروني أعلى عائد على الاستثمار مقارنة بأي قناة تسويق رقمية - بمتوسط 36 دولارًا لكل دولار يتم إنفاقه. بالنسبة للصالونات، يعتبر البريد الإلكتروني فعالا بشكل خاص لأنك تمتلك بالفعل معلومات الاتصال الخاصة بعملائك من الحجوزات.</p>
-<p>قم بتقسيم قائمة بريدك الإلكتروني حسب تكرار الزيارة والخدمات المحجوزة ومستوى الإنفاق. إرسال حملات مخصصة: تذكيرات إعادة الحجز للعملاء الذين يقتربون من فترة الزيارة النموذجية، وعروض أعياد الميلاد، والعروض الترويجية للخدمات الموسمية، وإعلانات الخدمة الجديدة. راجع <a href="/ar/resources/blog/businesses/salon-email-marketing-templates">دليل نماذج التسويق عبر البريد الإلكتروني</a> للحصول على تسلسلات جاهزة للاستخدام.</p>
+<p>قم بتقسيم قائمة بريدك الإلكتروني حسب تكرار الزيارة والخدمات المحجوزة ومستوى الإنفاق. إرسال حملات مخصصة: تذكيرات إعادة الحجز للعملاء الذين يقتربون من فترة الزيارة النموذجية، وعروض أعياد الميلاد، والعروض الترويجية للخدمات الموسمية، وإعلانات الخدمة الجديدة. راجع <a href="/ar/resources/blog/business/salon-البريد الإلكتروني-marketing-templates">دليل نماذج التسويق عبر البريد الإلكتروني</a> للحصول على تسلسلات جاهزة للاستخدام.</p>
 
 <h2>7. الشراكة مع الشركات المحلية</h2>
 <p> يؤدي الترويج المتبادل مع الأنشطة التجارية المحلية التكميلية إلى وضع صالونك أمام الجماهير المؤهلة مسبقًا. شارك مع استوديوهات اللياقة البدنية، ومحلات الزفاف، والبوتيكات، والمنتجعات الصحية، ومراكز العافية لإنشاء عمليات تبادل الإحالة، والعروض الترويجية المشتركة، والتجارب المجمعة.</p>
@@ -1413,15 +1413,15 @@ const salonMarketingIdeas2026ArticleAr: LocalBlogPost = {
 
 <h2>8. تشغيل العروض الترويجية الموسمية والمستندة إلى الأحداث</h2>
 <p> اربط تقويمك التسويقي بالأحداث الموسمية والعطلات والمناسبات المحلية. يعد موسم الحفلات الراقصة، وموسم الزفاف، والعودة إلى المدرسة، والتحضير لحفلات الأعياد بمثابة زيادات متوقعة في الطلب، ويمكنك التخطيط لحملاتها قبل أشهر تقريبًا.</p>
-<p>إنشاء باقات ذات طابع خاص: باقات "Bridal Season Prep" أو باقات "Holiday Glow" أو علاجات "Summer Hair Rescue". قم بتحديد توقيت عروضك الترويجية للوصول إلى العملاء قبل 2-3 أسابيع من الحدث حتى يتمكنوا من الحجز خلال الفترات المتاحة لك. <a href="/ar/features/business/marketing-promotions">تتيح لك أدوات حملة Daisy</a> جدولة هذه العروض الترويجية وأتمتتها عبر البريد الإلكتروني والرسائل النصية القصيرة والإشعارات داخل التطبيق.</p>
+<p>إنشاء باقات ذات طابع خاص: باقات "تهيئة موسم الأعراس" أو باقات "إشراقة العيد" أو علاجات "إنقاذ الشعر في الصيف". قم بتحديد توقيت عروضك الترويجية للوصول إلى العملاء قبل 2-3 أسابيع من الحدث حتى يتمكنوا من الحجز خلال الفترات المتاحة لك. <a href="/ar/features/business/marketing-promotions">تتيح لك أدوات حملة ديزي</a> جدولة هذه العروض الترويجية وأتمتتها عبر البريد الإلكتروني والرسائل النصية القصيرة والإشعارات داخل التطبيق.</p>
 
 <h2>9. جمع وعرض مراجعات العملاء</h2>
 <p> المراجعات عبر الإنترنت هي المعادل الحديث للأحاديث الشفهية. يقرأ 93% من المستهلكين المراجعات عبر الإنترنت قبل اختيار شركة محلية، كما أن الصالونات التي تحتوي على أكثر من 50 تعليقًا وتقييم 4.5+ نجوم تجتذب عددًا أكبر بكثير من العملاء الجدد مقارنة بتلك التي ليس لديها.</p>
-<p> اجعل عملية جمع المراجعة منهجية: أرسل طلب مراجعة آليًا بعد 24 ساعة من كل موعد. قم بتضمين رابط مباشر إلى صفحة مراجعة الملف التجاري على Google. قم بالرد على كل مراجعة - إيجابية وسلبية - برد شخصي ومهني. اعرض أفضل تقييماتك على موقع الويب الخاص بك، ووسائل التواصل الاجتماعي، وشاشات العرض داخل الصالون.</p>
+<p> اجعل عملية جمع المراجعة منهجية: أرسل طلب مراجعة آليًا بعد 24 ساعة من كل موعد. قم بتضمين رابط مباشر إلى صفحة مراجعة الملف التجاري على جوجل. قم بالرد على كل مراجعة - إيجابية وسلبية - برد شخصي ومهني. اعرض أفضل تقييماتك على موقع الويب الخاص بك، ووسائل التواصل الاجتماعي، وشاشات العرض داخل الصالون.</p>
 
 <h2>10. تقديم تجربة الحجز عبر الإنترنت</h2>
 <p> إذا اضطر عميل محتمل إلى الاتصال بصالونك لحجز موعد، فأنت تخسر الحجوزات. تظهر بيانات الصناعة أن 40-60% من حجوزات الصالونات تتم الآن خارج ساعات العمل، وأن 30-40% من المكالمات الهاتفية للصالونات لا يتم الرد عليها. يؤدي الحجز عبر الإنترنت إلى تحويل هذه الفرص الضائعة إلى مواعيد مؤكدة.</p>
-<p> يجب أن تكون تجربة الحجز الخاصة بك على الهاتف المحمول أولاً، ويتم تحميلها في أقل من 3 ثوانٍ، وتسمح للعملاء باختيار المصمم والخدمة والفترة الزمنية المفضلة لديهم بثلاث نقرات أو أقل. <a href="/ar/features/business/booking-management">منصة حجز Daisy</a> مصممة خصيصًا لشركات التجميل، مع جدولة ذكية تتجنب الحجوزات المزدوجة وتعظيم الاستفادة من فريقك.</p>
+<p> يجب أن تكون تجربة الحجز الخاصة بك على الهاتف المحمول أولاً، ويتم تحميلها في أقل من 3 ثوانٍ، وتسمح للعملاء باختيار المصمم والخدمة والفترة الزمنية المفضلة لديهم بثلاث نقرات أو أقل. <a href="/ar/features/business/booking-management">منصة حجز ديزي</a> مصممة خصيصًا لشركات التجميل، مع جدولة ذكية تتجنب الحجوزات المزدوجة وتعظيم الاستفادة من فريقك.</p>
 
 <h2>11. استخدم التسويق عبر الرسائل النصية القصيرة لتحقيق تأثير فوري</h2>
 <p> تبلغ نسبة فتح الرسائل النصية القصيرة 98% ويتم قراءة معظمها خلال 3 دقائق. بالنسبة للعروض الحساسة للوقت - التوفر في اللحظة الأخيرة، أو مبيعات الفلاش، أو تذكيرات المواعيد - تتفوق الرسائل النصية القصيرة (SMS) على جميع القنوات الأخرى.</p>
@@ -1441,25 +1441,25 @@ const salonMarketingIdeas2026ArticleAr: LocalBlogPost = {
 
 <h2>15. تتبع كل شيء وضاعف ما ينجح</h2>
 <p> الفرق بين الصالونات التي تنمو باستمرار وتلك التي تستقر هو القياس. تتبع مصدر كل عميل جديد، ومعدل التحويل لكل حملة، ومعدل الاحتفاظ بالعملاء المكتسبين من خلال كل قناة. ثم قم بتخصيص المزيد من الميزانية والطاقة للقنوات التي تقدم أفضل عائد على الاستثمار.</p>
-<p> المقاييس الأساسية التي يجب تتبعها شهريًا: تفاصيل مصدر العميل الجديد، وتكلفة الاكتساب حسب القناة، والقيمة الدائمة للعميل حسب مصدر الاكتساب، ومعدلات استجابة الحملة، ومعدل تحويل الحجز عبر الإنترنت. <a href="/ar/features/business/analytics-reports"> تعمل لوحة التحكم التحليلية في Daisy</a> على تشغيل هذا التتبع تلقائيًا، مما يمنحك رؤية واضحة حول الاستثمارات التسويقية التي تؤتي ثمارها.</p>
+<p> المقاييس الأساسية التي يجب تتبعها شهريًا: تفاصيل مصدر العميل الجديد، وتكلفة الاكتساب حسب القناة، والقيمة الدائمة للعميل حسب مصدر الاكتساب، ومعدلات استجابة الحملة، ومعدل تحويل الحجز عبر الإنترنت. <a href="/ar/features/business/analytics-reports"> تعمل لوحة التحكم التحليلية في ديزي</a> على تشغيل هذا التتبع تلقائيًا، مما يمنحك رؤية واضحة حول الاستثمارات التسويقية التي تؤتي ثمارها.</p>
 
 <h2>كيف تدعم ديزي إستراتيجيتك التسويقية</h2>
-<p> إن تنفيذ 15 استراتيجية تسويقية يدويًا من شأنه أن يطغى على معظم فرق الصالون. يدمج Daisy الأدوات التي تحتاجها في منصة واحدة: تتبع الإحالة الآلي، وولاء استرداد النقود المدمج، وأدوات حملات البريد الإلكتروني والرسائل النصية القصيرة، والحجز عبر الإنترنت، وإدارة المراجعة، ولوحات المعلومات التحليلية. بدلاً من استخدام خمس أدوات منفصلة، يقوم فريقك بتنفيذ الحملات من واجهة واحدة.</p>
-<p> استكشف <a href="/ar/features/business/marketing-promotions"> ميزات التسويق والعروض الترويجية الخاصة بـ Daisy</a> لترى كيف يحول النظام الأساسي هذه الأفكار إلى سير عمل آلي. اعرض <a href="/ar/pricing">خطط الأسعار</a> للعثور على التصميم المناسب لصالونك.</p>
+<p> إن تنفيذ 15 استراتيجية تسويقية يدويًا من شأنه أن يطغى على معظم فرق الصالون. يدمج ديزي الأدوات التي تحتاجها في منصة واحدة: تتبع الإحالة الآلي، وولاء استرداد النقود المدمج، وأدوات حملات البريد الإلكتروني والرسائل النصية القصيرة، والحجز عبر الإنترنت، وإدارة المراجعة، ولوحات المعلومات التحليلية. بدلاً من استخدام خمس أدوات منفصلة، يقوم فريقك بتنفيذ الحملات من واجهة واحدة.</p>
+<p> استكشف <a href="/ar/features/business/marketing-promotions"> ميزات التسويق والعروض الترويجية الخاصة بـ ديزي</a> لترى كيف يحول النظام الأساسي هذه الأفكار إلى سير عمل آلي. اعرض <a href="/ar/pricing">خطط الأسعار</a> للعثور على التصميم المناسب لصالونك.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
 <h3>ما المبلغ الذي يجب أن ينفقه الصالون على التسويق؟</h3>
-<p>تقترح معايير الصناعة تخصيص 5-10% من إجمالي الإيرادات للتسويق. بالنسبة لصالون يدر 30 ألف دولار شهريًا، فهذا يعني 1500 دولار - 3000 دولار. ومع ذلك، فإن التخصيص أهم من الإجمالي. إعطاء الأولوية للقنوات ذات عائد استثمار قابل للقياس: تحسين الملف التجاري على Google وتحسين محركات البحث المحلية (مجاني ولكن يستغرق وقتًا طويلاً)، وحملات البريد الإلكتروني/الرسائل النصية القصيرة (تكلفة منخفضة، وعائد مرتفع)، وبرامج الإحالة/الولاء (التمويل الذاتي من خلال زيادة الاحتفاظ). قلل الإنفاق على القنوات التي لا يمكنك تتبع النتائج فيها.</p>
+<p>تقترح معايير الصناعة تخصيص 5-10% من إجمالي الإيرادات للتسويق. بالنسبة لصالون يدر 30 ألف دولار شهريًا، فهذا يعني 1500 دولار - 3000 دولار. ومع ذلك، فإن التخصيص أهم من الإجمالي. إعطاء الأولوية للقنوات ذات عائد استثمار قابل للقياس: تحسين الملف التجاري على جوجل وتحسين محركات البحث المحلية (مجاني ولكن يستغرق وقتًا طويلاً)، وحملات البريد الإلكتروني/الرسائل النصية القصيرة (تكلفة منخفضة، وعائد مرتفع)، وبرامج الإحالة/الولاء (التمويل الذاتي من خلال زيادة الاحتفاظ). قلل الإنفاق على القنوات التي لا يمكنك تتبع النتائج فيها.</p>
 
 <h3>ما هي أفضل قناة تسويقية لصالون جديد؟</h3>
-<p> بالنسبة إلى صالون جديد، يعد الملف التجاري على Google وInstagram أكثر نقاط البداية تأثيرًا. يلتقط الملف التجاري على Google العملاء الذين يبحثون بنشاط عن الخدمات في منطقتك (نية عالية). يبني Instagram المصداقية المرئية ويجذب عملاء مرحلة الاكتشاف. اجمعها مع برنامج الإحالة من اليوم الأول لتحويل العملاء الأوائل إلى سفراء. أثناء قيامك ببناء قاعدة عملاء، أضف برامج التسويق والولاء عبر البريد الإلكتروني لتحقيق أقصى قدر من الاحتفاظ.</p>
+<p> بالنسبة إلى صالون جديد، يعد الملف التجاري على جوجل وإنستغرام أكثر نقاط البداية تأثيرًا. يلتقط الملف التجاري على جوجل العملاء الذين يبحثون بنشاط عن الخدمات في منطقتك (نية عالية). يبني إنستغرام المصداقية المرئية ويجذب عملاء مرحلة الاكتشاف. اجمعها مع برنامج الإحالة من اليوم الأول لتحويل العملاء الأوائل إلى سفراء. أثناء قيامك ببناء قاعدة عملاء، أضف برامج التسويق والولاء عبر البريد الإلكتروني لتحقيق أقصى قدر من الاحتفاظ.</p>
 
 <h3>كيف أقوم بتسويق صالوني بميزانية صغيرة؟</h3>
-<p> العديد من الاستراتيجيات ذات التأثير الأعلى لا تكلف شيئًا سوى الوقت: تحسين الملف التجاري على Google، ومحتوى الوسائط الاجتماعية العضوي، وجمع المراجعات، والشراكات التجارية المحلية. تعد برامج الإحالة ذاتية التمويل بشكل فعال لأنك لا تدفع المكافآت إلا عندما يقوم عميل جديد بالحجز بالفعل. ركز على هذه الاستراتيجيات ذات التكلفة الصفرية والمنخفضة التكلفة أولاً، ثم أعد استثمار مكاسب الإيرادات في القنوات المدفوعة مثل الإعلانات الاجتماعية المستهدفة أو منصات التسويق عبر البريد الإلكتروني.</p>
+<p> العديد من الاستراتيجيات ذات التأثير الأعلى لا تكلف شيئًا سوى الوقت: تحسين الملف التجاري على جوجل، ومحتوى الوسائط الاجتماعية العضوي، وجمع المراجعات، والشراكات التجارية المحلية. تعد برامج الإحالة ذاتية التمويل بشكل فعال لأنك لا تدفع المكافآت إلا عندما يقوم عميل جديد بالحجز بالفعل. ركز على هذه الاستراتيجيات ذات التكلفة الصفرية والمنخفضة التكلفة أولاً، ثم أعد استثمار مكاسب الإيرادات في القنوات المدفوعة مثل الإعلانات الاجتماعية المستهدفة أو منصات التسويق عبر البريد الإلكتروني.</p>
 
 <h3>كم من الوقت قبل أن تظهر جهود التسويق في الصالونات نتائج؟</h3>
-<p>تختلف النتائج حسب القناة. عادةً ما تعرض مجموعة تحسين الملف الشخصي للأعمال على Google والمراجعة النتائج في غضون 4 إلى 8 أسابيع مع تحسن تصنيف البحث المحلي لديك. يبني محتوى الوسائط الاجتماعية الجمهور على مدار 2-3 أشهر. يمكن لبرامج التسويق والإحالة عبر البريد الإلكتروني إنشاء حجوزات خلال الأسبوع الأول من إطلاقها. يعد تحسين محركات البحث المحلي (SEO) هو أطول عملية تشغيل، وغالبًا ما يستغرق من 3 إلى 6 أشهر لإدخال تحسينات كبيرة في التصنيف، ولكنه يحقق النتائج الأكثر استدامة على المدى الطويل. تتبع شهريًا لتحديد القنوات التي تكتسب قوة جذب.</p>`,
+<p>تختلف النتائج حسب القناة. عادةً ما تعرض مجموعة تحسين الملف الشخصي للأعمال على جوجل والمراجعة النتائج في غضون 4 إلى 8 أسابيع مع تحسن تصنيف البحث المحلي لديك. يبني محتوى الوسائط الاجتماعية الجمهور على مدار 2-3 أشهر. يمكن لبرامج التسويق والإحالة عبر البريد الإلكتروني إنشاء حجوزات خلال الأسبوع الأول من إطلاقها. يعد تحسين محركات البحث المحلي (SEO) هو أطول عملية تشغيل، وغالبًا ما يستغرق من 3 إلى 6 أشهر لإدخال تحسينات كبيرة في التصنيف، ولكنه يحقق النتائج الأكثر استدامة على المدى الطويل. تتبع شهريًا لتحديد القنوات التي تكتسب قوة جذب.</p>`,
     metaTitle: '15 فكرة تسويقية للصالونات 2026 | ديزي',
     metaDescription:
       'اكتشف 15 فكرة تسويقية مثبتة للصالونات في 2026 تجذب عملاء جدد وتكرر الحجوزات. تغطي الاستراتيجيات الرقمية والمحلية واستراتيجيات الولاء مع عائد قابل للقياس.',
@@ -1526,17 +1526,17 @@ const salonSocialMediaMarketingArticleAr: LocalBlogPost = {
     description:
       'أتقن التسويق عبر وسائل التواصل الاجتماعي لصالونك عبر Instagram وTikTok وFacebook والمنصات الناشئة. تعرف على إستراتيجيات المحتوى وجداول النشر وأساليب المشاركة وأساليب التحويل التي تحول المتابعين إلى عملاء محجوزين.',
     aboutPosts: `<h2>وسائل التواصل الاجتماعي هي الواجهة الجديدة للصالونات</h2>
-<p> تعد وسائل التواصل الاجتماعي قناة الاكتشاف الأساسية لشركات التجميل في عام 2026. يعثر عدد أكبر من العملاء المحتملين على صالونهم التالي من خلال Instagram وTikTok أكثر من أي قناة أخرى - بما في ذلك بحث Google، والكلمات الشفهية، والزيارات المباشرة مجتمعة. بالنسبة للصالونات، وسائل التواصل الاجتماعي ليست تسويقًا اختياريًا؛ إنها واجهة متجرك الرقمي.</p>
-<p> يغطي هذا الدليل الاستراتيجيات الخاصة بالمنصة لكل شبكة اجتماعية رئيسية ذات صلة بأعمال التجميل. سواء كنت تقوم بالبناء من الصفر أو تحسين وجود حالي، فهذه هي <a href="/ar/resources/blog/businesses/salon-marketing-strategies">استراتيجيات تسويق الصالون</a> التي تنشئ حجوزات حقيقية، وليس مجرد مقاييس مخصصة.</p>
+<p> تعد وسائل التواصل الاجتماعي قناة الاكتشاف الأساسية لشركات التجميل في عام 2026. يعثر عدد أكبر من العملاء المحتملين على صالونهم التالي من خلال إنستغرام وTikTok أكثر من أي قناة أخرى - بما في ذلك بحث جوجل، والكلمات الشفهية، والزيارات المباشرة مجتمعة. بالنسبة للصالونات، وسائل التواصل الاجتماعي ليست تسويقًا اختياريًا؛ إنها واجهة متجرك الرقمي.</p>
+<p> يغطي هذا الدليل الاستراتيجيات الخاصة بالمنصة لكل شبكة اجتماعية رئيسية ذات صلة بأعمال التجميل. سواء كنت تقوم بالبناء من الصفر أو تحسين وجود حالي، فهذه هي <a href="/ar/resources/blog/business/salon-marketing-strategies">استراتيجيات تسويق الصالون</a> التي تنشئ حجوزات حقيقية، وليس مجرد مقاييس مخصصة.</p>
 
-<h2>Instagram: محفظتك المرئية ومحرك الحجز</h2>
-<p> يظل Instagram هو المنصة المهيمنة لشركات التجميل. إن شكله المرئي مناسب تمامًا لعرض التحولات والتقنيات وثقافة الصالون. لكن النجاح على Instagram في عام 2026 يتطلب أكثر من مجرد نشر صور جميلة.</p>
+<h2>إنستغرام: محفظتك المرئية ومحرك الحجز</h2>
+<p> يظل إنستغرام هو المنصة المهيمنة لشركات التجميل. إن شكله المرئي مناسب تمامًا لعرض التحولات والتقنيات وثقافة الصالون. لكن النجاح على إنستغرام في عام 2026 يتطلب أكثر من مجرد نشر صور جميلة.</p>
 
 <h3>تحسين الملف الشخصي</h3>
-<p> يحتوي ملفك الشخصي على Instagram على 150 حرفًا و5 ثوانٍ لإقناع الزائر بالمتابعة أو الحجز. تحسين كل عنصر:</p>
+<p> يحتوي ملفك الشخصي على إنستغرام على 150 حرفًا و5 ثوانٍ لإقناع الزائر بالمتابعة أو الحجز. تحسين كل عنصر:</p>
 <ul>
 <li><strong>السيرة الذاتية:</strong> اذكر ما تفعله، وأين تتواجد، وكيفية الحجز. مثال: "صالون حائز على جوائز | متخصصون في الألوان والتصميم | [المدينة] | احجز أدناه ↓"</li>
-<li><strong>الرابط في السيرة الذاتية:</strong> استخدم رابط الحجز عبر الإنترنت، وليس صفحتك الرئيسية. يجب أن تؤدي كل نقرة إلى موعد. <a href="/ar/features/business/booking-management"> توفر Daisy</a> رابط حجز مباشر يمكنك وضعه في سيرتك الذاتية.</li>
+<li><strong>الرابط في السيرة الذاتية:</strong> استخدم رابط الحجز عبر الإنترنت، وليس صفحتك الرئيسية. يجب أن تؤدي كل نقرة إلى موعد. <a href="/ar/features/business/booking-management"> توفر ديزي</a> رابط حجز مباشر يمكنك وضعه في سيرتك الذاتية.</li>
 <li><strong>أبرز الأحداث:</strong> تنظيم أبرز أحداث القصة حسب الفئة: التحولات والمراجعات والخدمات والفريق وجولة الصالون. وهذه بمثابة محفظة دائمة الخضرة للزوار الجدد.</li>
 <li><strong>زر الاتصال:</strong> قم بتمكين زر الإجراء "احجز الآن" المرتبط بنظام الحجز عبر الإنترنت الخاص بك.</li>
 </ul>
@@ -1551,10 +1551,10 @@ const salonSocialMediaMarketingArticleAr: LocalBlogPost = {
 </ul>
 
 <h3>استراتيجية البكرات</h3>
-<p> توفر Instagram Reels مدى وصول أكبر بمقدار 3 إلى 5 مرات من المنشورات الثابتة. بالنسبة للصالونات، تتضمن تنسيقات Reel عالية الأداء ما يلي: تحويلات بفواصل زمنية (15-30 ثانية)، ومقاطع من يوم في الحياة، وصوت شائع مع محتوى الجمال، وبرامج تعليمية سريعة للتصميم. انشر البكرات 3-5 مرات أسبوعيًا للحصول على أقصى استفادة من الخوارزمية.</p>
+<p> توفر إنستغرام Reels مدى وصول أكبر بمقدار 3 إلى 5 مرات من المنشورات الثابتة. بالنسبة للصالونات، تتضمن تنسيقات Reel عالية الأداء ما يلي: تحويلات بفواصل زمنية (15-30 ثانية)، ومقاطع من يوم في الحياة، وصوت شائع مع محتوى الجمال، وبرامج تعليمية سريعة للتصميم. انشر البكرات 3-5 مرات أسبوعيًا للحصول على أقصى استفادة من الخوارزمية.</p>
 
 <h2>TikTok: الوصول إلى جيل جديد من العملاء</h2>
-<p> ينحرف جمهور TikTok في سن أصغر من Instagram، لكنه يتوسع بسرعة عبر جميع الفئات السكانية. تعني خوارزمية اكتشاف النظام الأساسي أنه حتى الحساب الجديد تمامًا يمكنه الوصول إلى عشرات الآلاف من المشاهدين بالمحتوى المناسب.</p>
+<p> ينحرف جمهور TikTok في سن أصغر من إنستغرام، لكنه يتوسع بسرعة عبر جميع الفئات السكانية. تعني خوارزمية اكتشاف النظام الأساسي أنه حتى الحساب الجديد تمامًا يمكنه الوصول إلى عشرات الآلاف من المشاهدين بالمحتوى المناسب.</p>
 
 <h3>ما الذي يعمل على TikTok للصالونات</h3>
 <ul>
@@ -1577,7 +1577,7 @@ const salonSocialMediaMarketingArticleAr: LocalBlogPost = {
 <p> تسمح منصة إعلانات Meta بحملات محلية شديدة الاستهداف. بالنسبة للصالونات، فإن تنسيقات الإعلانات الأكثر فعالية هي: الإعلانات الدائرية التي تعرض تحولات متعددة، وإعلانات الفيديو التي تعرض 15 ثانية قبل وبعد، وإعلانات جذب العملاء المحتملين التي تقدم ترويجًا محددًا للعملاء لأول مرة. الاستهداف حسب الموقع (دائرة نصف قطرها 5-15 كم)، والعمر، والجنس، والاهتمامات المتعلقة بالجمال والعافية.</p>
 
 <h2>Pinterest: اكتشاف مرئي طويل الأمد</h2>
-<p> يعمل Pinterest كمحرك بحث مرئي، وليس كشبكة اجتماعية. يبلغ متوسط ​​عمر المحتوى على Pinterest 4 أشهر مقارنة بـ 24 ساعة على Instagram. بالنسبة للصالونات، تعمل Pinterest على جذب الاكتشاف من العملاء الذين يبحثون بنشاط عن إلهام تصفيفة الشعر وأفكار الألوان واتجاهات الجمال.</p>
+<p> يعمل Pinterest كمحرك بحث مرئي، وليس كشبكة اجتماعية. يبلغ متوسط ​​عمر المحتوى على Pinterest 4 أشهر مقارنة بـ 24 ساعة على إنستغرام. بالنسبة للصالونات، تعمل Pinterest على جذب الاكتشاف من العملاء الذين يبحثون بنشاط عن إلهام تصفيفة الشعر وأفكار الألوان واتجاهات الجمال.</p>
 <p>إنشاء لوحات منظمة حسب نوع الخدمة: "إلهام Balayage"، "تحولات الشعر القصير"، "أنماط الزفاف". قم بتثبيت أفضل أعمالك باستخدام الأوصاف الغنية بالكلمات الرئيسية. يرتبط كل دبوس مرة أخرى بصفحة الحجز الخاصة بك، مما يؤدي إلى إنشاء قناة مرور طويلة المدى تتراكم بمرور الوقت.</p>
 
 <h2>سير عمل إنشاء المحتوى لفرق الصالون المزدحمة</h2>
@@ -1594,23 +1594,23 @@ const salonSocialMediaMarketingArticleAr: LocalBlogPost = {
 <ul>
 <li><strong>زيارات الملف الشخصي لنقرات الحجز:</strong> كم عدد الأشخاص الذين يزورون ملفك الشخصي وينقرون للحجز؟</li>
 <li><strong> معدل التحويل من رسالة مباشرة إلى حجز:</strong> ما هي النسبة المئوية لاستفسارات الرسالة المباشرة التي تتحول إلى مواعيد؟</li>
-<li><strong>تتبع مصدر العميل الجديد:</strong> اسأل كل عميل جديد كيف وجدك. تتبع "Instagram" و"TikTok" و"وسائل التواصل الاجتماعي" كمصادر مميزة.</li>
+<li><strong>تتبع مصدر العميل الجديد:</strong> اسأل كل عميل جديد كيف وجدك. تتبع "إنستغرام" و"TikTok" و"وسائل التواصل الاجتماعي" كمصادر مميزة.</li>
 <li><strong>إحالة المحتوى إلى الحجز:</strong> ما هي المنشورات أو مقاطع الفيديو المحددة التي أدت إلى أكبر عدد من الاستفسارات عن الحجز؟</li>
 <li><strong>تكلفة الاكتساب (للإعلانات):</strong> إجمالي الإنفاق الإعلاني مقسومًا على عدد العملاء الجدد المكتسبين من خلال الإعلانات.</li>
 </ul>
-<p><a href="/ar/features/business/analytics-reports">تتكامل أدوات التحليلات الخاصة بـ Daisy</a> مع بيانات الحجز الخاصة بك لإظهار القنوات التسويقية التي تحدد المواعيد بالضبط، مما يمنحك توضيحًا بشأن مكان استثمار وقتك وميزانيتك.</p>
+<p><a href="/ar/features/business/analytics-reports">تتكامل أدوات التحليلات الخاصة بـ ديزي</a> مع بيانات الحجز الخاصة بك لإظهار القنوات التسويقية التي تحدد المواعيد بالضبط، مما يمنحك توضيحًا بشأن مكان استثمار وقتك وميزانيتك.</p>
 
-<h2>كيف تدعم شركة Daisy إستراتيجية وسائل التواصل الاجتماعي الخاصة بك</h2>
-<p> يربط Daisy جهودك على وسائل التواصل الاجتماعي بتدفق الحجز الخاص بك. يعمل رابط الحجز القابل للمشاركة في أي سيرة ذاتية أو منشور. تقوم المتابعات الآلية بتحويل استفسارات وسائل التواصل الاجتماعي إلى مواعيد مؤكدة. وتظهر لك تحليلات الحملة المنصات التي تجذب أكبر عدد من الحجوزات.</p>
-<p> استكشف <a href="/ar/features/business/marketing-promotions"> ميزات Daisy التسويقية</a> لترى كيف تعمل المنصة على سد الفجوة بين التفاعل عبر وسائل التواصل الاجتماعي والإيرادات الفعلية. تحقق من <a href="/ar/pricing">خطط التسعير</a> لمعرفة حجم صالونك.</p>
+<h2>كيف تدعم شركة ديزي إستراتيجية وسائل التواصل الاجتماعي الخاصة بك</h2>
+<p> يربط ديزي جهودك على وسائل التواصل الاجتماعي بتدفق الحجز الخاص بك. يعمل رابط الحجز القابل للمشاركة في أي سيرة ذاتية أو منشور. تقوم المتابعات الآلية بتحويل استفسارات وسائل التواصل الاجتماعي إلى مواعيد مؤكدة. وتظهر لك تحليلات الحملة المنصات التي تجذب أكبر عدد من الحجوزات.</p>
+<p> استكشف <a href="/ar/features/business/marketing-promotions"> ميزات ديزي التسويقية</a> لترى كيف تعمل المنصة على سد الفجوة بين التفاعل عبر وسائل التواصل الاجتماعي والإيرادات الفعلية. تحقق من <a href="/ar/pricing">خطط التسعير</a> لمعرفة حجم صالونك.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
 <h3>كم مرة يجب أن ينشر الصالون على وسائل التواصل الاجتماعي؟</h3>
-<p>بالنسبة إلى Instagram، استهدف نشر 4-5 منشورات موجزة أسبوعيًا بالإضافة إلى القصص اليومية. بالنسبة لـ TikTok، 4-7 منشورات في الأسبوع. بالنسبة للفيسبوك، 2-3 منشورات في الأسبوع. الجودة أهم من الكمية، ولكن الاتساق هو الأهم. يقوم جدول النشر المتوقع بتدريب كل من الخوارزمية وجمهورك على توقع المحتوى منك. إذا كان بإمكانك إدارة منصة واحدة فقط بشكل جيد، فاختر Instagram أولاً - فهو يوفر أفضل توازن بين الوصول والمشاركة وتحويل الحجز لشركات التجميل.</p>
+<p>بالنسبة إلى إنستغرام، استهدف نشر 4-5 منشورات موجزة أسبوعيًا بالإضافة إلى القصص اليومية. بالنسبة لـ TikTok، 4-7 منشورات في الأسبوع. بالنسبة للفيسبوك، 2-3 منشورات في الأسبوع. الجودة أهم من الكمية، ولكن الاتساق هو الأهم. يقوم جدول النشر المتوقع بتدريب كل من الخوارزمية وجمهورك على توقع المحتوى منك. إذا كان بإمكانك إدارة منصة واحدة فقط بشكل جيد، فاختر إنستغرام أولاً - فهو يوفر أفضل توازن بين الوصول والمشاركة وتحويل الحجز لشركات التجميل.</p>
 
 <h3>ما هو الوقت الذي يجب أن تنشر فيه الصالونات على وسائل التواصل الاجتماعي؟</h3>
-<p> بالنسبة لشركات التجميل، أعلى نوافذ للمشاركة هي: من الثلاثاء إلى الجمعة، من 11 صباحًا إلى 1 مساءً (تصفح استراحة الغداء) ومن 7 مساءً إلى 9 مساءً (التمرير المسائي). يكون أداء صباح يوم السبت (من 9 صباحًا إلى 11 صباحًا) جيدًا أيضًا حيث يخطط الأشخاص لأنشطتهم في عطلة نهاية الأسبوع. ومع ذلك، قد يختلف جمهورك المحدد. استخدم Instagram Insights وTikTok Analytics لتحديد الأوقات التي يكون فيها متابعوك أكثر نشاطًا، وجدولة المنشورات وفقًا لذلك.</p>
+<p> بالنسبة لشركات التجميل، أعلى نوافذ للمشاركة هي: من الثلاثاء إلى الجمعة، من 11 صباحًا إلى 1 مساءً (تصفح استراحة الغداء) ومن 7 مساءً إلى 9 مساءً (التمرير المسائي). يكون أداء صباح يوم السبت (من 9 صباحًا إلى 11 صباحًا) جيدًا أيضًا حيث يخطط الأشخاص لأنشطتهم في عطلة نهاية الأسبوع. ومع ذلك، قد يختلف جمهورك المحدد. استخدم إنستغرام Insights وTikTok Analytics لتحديد الأوقات التي يكون فيها متابعوك أكثر نشاطًا، وجدولة المنشورات وفقًا لذلك.</p>
 
 <h3> هل يجب أن أقوم بتعيين مدير لوسائل التواصل الاجتماعي لصالوني؟</h3>
 <p>فكر في التوظيف عندما: تكون غير قادر باستمرار على النشر أكثر من 4 مرات في الأسبوع، أو يفتقر فريقك إلى مهارات التصوير الفوتوغرافي أو الفيديو، أو إذا كنت ترغب في تشغيل حملات إعلانية مدفوعة. تبدأ العديد من الصالونات بنهج داخلي (يحصل عضو الفريق الذي يتمتع بمهارات اجتماعية قوية على وقت مخصص لإنشاء المحتوى) قبل الانتقال إلى مدير وسائط اجتماعية مستقل براتب يتراوح بين 500 إلى 1500 دولار شهريًا. يدفع الاستثمار تكاليفه إذا أدى إلى إنشاء 5-10 حجوزات إضافية شهريًا.</p>
@@ -1684,14 +1684,14 @@ const salonEmailMarketingArticleAr: LocalBlogPost = {
       'أنشئ حملات تسويق عبر البريد الإلكتروني عالية التحويل لصالونك باستخدام قوالب جاهزة للاستخدام وتسلسلات تلقائية. يغطي سلسلة الترحيب، وتذكيرات إعادة الحجز، والعروض الترويجية الموسمية، وحملات الاسترداد التي تحقق إيرادات قابلة للقياس.',
     aboutPosts: `<h2>التسويق عبر البريد الإلكتروني هو القناة ذات أعلى عائد استثمار للصالونات</h2>
 <p> يحقق التسويق عبر البريد الإلكتروني عائدًا متوسطًا قدره 36 دولارًا لكل دولار يتم إنفاقه، مما يجعله قناة التسويق الرقمي الأعلى عائدًا على الاستثمار المتاحة للصالونات. على عكس وسائل التواصل الاجتماعي، حيث تتحكم الخوارزميات في من يرى المحتوى الخاص بك، يصل البريد الإلكتروني مباشرة إلى صندوق الوارد الخاص بعميلك. أنت تملك العلاقة، وليس المنصة.</p>
-<p> بالنسبة لشركات التجميل، يعد البريد الإلكتروني قويًا بشكل خاص لأنك تمتلك بالفعل الأصول الأكثر قيمة: معلومات الاتصال بعميلك من الحجوزات. يوفر هذا الدليل الإطار التسويقي الكامل <a href="/ar/resources/blog/businesses/salon-marketing-strategies">salon</a> للبريد الإلكتروني، بما في ذلك القوالب وتسلسلات التشغيل الآلي واستراتيجيات القياس. لإعداد حملة البريد الإلكتروني الخاصة بـ Daisy، راجع <a href="/ar/resources/blog/businesses/email-marketing-salons-templates">دليل منصة التسويق عبر البريد الإلكتروني</a>.</p>
+<p> بالنسبة لشركات التجميل، يعد البريد الإلكتروني قويًا بشكل خاص لأنك تمتلك بالفعل الأصول الأكثر قيمة: معلومات الاتصال بعميلك من الحجوزات. يوفر هذا الدليل إطار <a href="/ar/resources/blog/business/salon-marketing-strategies">تسويق الصالون</a> الكامل للبريد الإلكتروني، بما في ذلك القوالب وتسلسلات التشغيل الآلي واستراتيجيات القياس. لإعداد حملة البريد الإلكتروني الخاصة بـ ديزي، راجع <a href="/ar/resources/blog/business/البريد الإلكتروني-marketing-salons-templates">دليل منصة التسويق عبر البريد الإلكتروني</a>.</p>
 
 <h2>إنشاء قائمة البريد الإلكتروني لصالونك</h2>
 <p> لا تقل قيمة قائمة بريدك الإلكتروني عن جودتها. إن القائمة التي تضم 500 عميل مشارك يفتحون رسائل البريد الإلكتروني الخاصة بك تتفوق على قائمة تضم 5000 جهة اتصال غير مشاركة في كل مرة.</p>
 
 <h3>طرق التجميع الناجحة</h3>
 <ul>
-<li><strong>تأكيد الحجز:</strong> اجمع البريد الإلكتروني عند نقطة الحجز. هذه هي نقطة التجميع الأكثر طبيعية والأعلى تحويلًا. <a href="/ar/features/business/booking-management">يقوم نظام الحجز الخاص بـ Daisy</a> بالتقاط البريد الإلكتروني تلقائيًا كجزء من تدفق الحجز.</li>
+<li><strong>تأكيد الحجز:</strong> اجمع البريد الإلكتروني عند نقطة الحجز. هذه هي نقطة التجميع الأكثر طبيعية والأعلى تحويلًا. <a href="/ar/features/business/booking-management">يقوم نظام الحجز الخاص بـ ديزي</a> بالتقاط البريد الإلكتروني تلقائيًا كجزء من تدفق الحجز.</li>
 <li><strong>التسجيل داخل الصالون:</strong> ضع جهازًا لوحيًا في مكتب الاستقبال أو قم بتضمين رمز الاستجابة السريعة على محطات المرآة الخاصة بك المرتبطة بنموذج تسجيل بسيط. قدم حافزًا: "انضم إلى قائمة البريد الإلكتروني لدينا للحصول على خصم 10% على زيارتك القادمة."</li>
 <li><strong>نافذة منبثقة لموقع الويب:</strong> نافذة منبثقة في الوقت المناسب على موقع الويب الخاص بك تقدم خصمًا على الزيارة الأولى أو استشارة مجانية تلتقط الزائرين غير المستعدين بعد للحجز.</li>
 <li><strong>الترويج عبر وسائل التواصل الاجتماعي:</strong> قم بالترويج بشكل دوري لقائمة بريدك الإلكتروني على القنوات الاجتماعية مع عرض حصري متاح فقط للمشتركين.</li>
@@ -1754,9 +1754,9 @@ const salonEmailMarketingArticleAr: LocalBlogPost = {
 <li><strong>العائد لكل بريد إلكتروني:</strong> إجمالي الإيرادات الناتجة عن الحجوزات المنسوبة إلى البريد الإلكتروني، مقسومًا على عدد رسائل البريد الإلكتروني المرسلة. هذا هو مقياس عائد الاستثمار الحقيقي.</li>
 </ul>
 
-<h2>كيف تقوم شركة Daisy بأتمتة التسويق عبر البريد الإلكتروني للصالونات</h2>
-<p> تقوم أدوات الاتصال الخاصة بـ Daisy بدمج التسويق عبر البريد الإلكتروني مباشرة في سير عمل إدارة الصالون الخاص بك. تعمل بيانات العميل من الحجوزات على تغذية التجزئة تلقائيًا، وتشغيل تسلسلات تلقائية استنادًا إلى سجل الزيارة، وتتبع رسائل البريد الإلكتروني التي تنشئ المواعيد - كل ذلك من لوحة تحكم واحدة.</p>
-<p> استكشف <a href="/ar/features/business/communication-tools"> ميزات الاتصال في Daisy</a> لمعرفة كيفية عمل حملات البريد الإلكتروني الآلية جنبًا إلى جنب مع الرسائل القصيرة والإشعارات والرسائل داخل التطبيق. راجع <a href="/ar/pricing">pricing</a> للتعرف على الخطط التي تتضمن أتمتة التسويق.</p>
+<h2>كيف تقوم شركة ديزي بأتمتة التسويق عبر البريد الإلكتروني للصالونات</h2>
+<p> تقوم أدوات الاتصال الخاصة بـ ديزي بدمج التسويق عبر البريد الإلكتروني مباشرة في سير عمل إدارة الصالون الخاص بك. تعمل بيانات العميل من الحجوزات على تغذية التجزئة تلقائيًا، وتشغيل تسلسلات تلقائية استنادًا إلى سجل الزيارة، وتتبع رسائل البريد الإلكتروني التي تنشئ المواعيد - كل ذلك من لوحة تحكم واحدة.</p>
+<p> استكشف <a href="/ar/features/business/communication-tools"> ميزات الاتصال في ديزي</a> لمعرفة كيفية عمل حملات البريد الإلكتروني الآلية جنبًا إلى جنب مع الرسائل القصيرة والإشعارات والرسائل داخل التطبيق. راجع <a href="/ar/pricing">pricing</a> للتعرف على الخطط التي تتضمن أتمتة التسويق.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1764,7 +1764,7 @@ const salonEmailMarketingArticleAr: LocalBlogPost = {
 <p>بالنسبة لمعظم الصالونات، من الأمثل إرسال 2-4 رسائل بريد إلكتروني شهريًا. يتضمن هذا عادةً عرضًا ترويجيًا واحدًا، وقطعة تعليمية أو ملهمة واحدة، و1-2 رسائل بريد إلكتروني متسلسلة تلقائيًا (تذكيرات إعادة الحجز، وما إلى ذلك). تجنب إرسال البريد الإلكتروني أكثر من مرة واحدة في الأسبوع ما لم يكن لديك قوائم مجزأة للغاية بمحتوى مميز لكل شريحة. راقب معدل إلغاء الاشتراك - إذا ارتفع فوق 0.5% لكل إرسال، فهذا يعني أنك ترسل بريدًا إلكترونيًا بشكل متكرر.</p>
 
 <h3>ما هي منصة البريد الإلكتروني الأفضل للصالونات؟</h3>
-<p> تعتبر الأنظمة الأساسية الخاصة بالصالونات مثل The Daisy مثالية لأنها تدمج البريد الإلكتروني مع بيانات الحجز والعملاء والدفع الخاصة بك - مما يتيح التجزئة التلقائية والأتمتة القائمة على المشغلات دون تصدير البيانات يدويًا. تعمل منصات البريد الإلكتروني المستقلة (Mailchimp وKlaviyo) ولكنها تتطلب إدارة قائمة يدوية وتفتقر إلى تكامل نظام الحجز. نادرًا ما يبرر جهد الإعداد الإضافي المرونة المتاحة للصالونات الصغيرة والمتوسطة الحجم.</p>
+<p> تعتبر الأنظمة الأساسية الخاصة بالصالونات مثل ديزي مثالية لأنها تدمج البريد الإلكتروني مع بيانات الحجز والعملاء والدفع الخاصة بك - مما يتيح التجزئة التلقائية والأتمتة القائمة على المشغلات دون تصدير البيانات يدويًا. تعمل منصات البريد الإلكتروني المستقلة (Mailchimp وKlaviyo) ولكنها تتطلب إدارة قائمة يدوية وتفتقر إلى تكامل نظام الحجز. نادرًا ما يبرر جهد الإعداد الإضافي المرونة المتاحة للصالونات الصغيرة والمتوسطة الحجم.</p>
 
 <h3>كيف أكتب سطور موضوع البريد الإلكتروني التي يتم فتحها؟</h3>
 <p> تنسيقات سطر الموضوع الأعلى أداءً للصالونات هي: التذكيرات الشخصية ("سارة، تحديث الألوان الخاص بك جاهز")، الأسئلة التي تثير الفضول ("هل تريد تجربة اتجاه الألوان الذي يطلبه الجميع؟")، والعروض الحصرية ("VIP فقط: خصم 20% في نهاية هذا الأسبوع")، والمطالبات المستندة إلى الاستعجال ("متبقي 3 أماكن ليوم السبت - احجز الآن"). اختبار A/B سطرين للموضوع في كل حملة، وإرسال كل إصدار إلى 20% من قائمتك والفائز إلى الـ 60% المتبقية.</p>
@@ -1838,7 +1838,7 @@ const salonLoyaltyProgramGuideArticleAr: LocalBlogPost = {
       'دليل خطوة بخطوة لإنشاء برنامج ولاء للصالون يزيد من الاحتفاظ بالعملاء والقيمة مدى الحياة. يغطي أنواع البرامج وهياكل المكافآت واستراتيجيات الإطلاق وأطر القياس المصممة لشركات التجميل.',
     aboutPosts: `<h2>الاحتفاظ بالعملاء هو استراتيجية النمو الأكثر ربحية</h2>
 <p> تؤدي زيادة الاحتفاظ بالعملاء بنسبة 5% إلى زيادة في الأرباح بنسبة 25-95%، وفقًا لبحث أجرته كلية هارفارد للأعمال. بالنسبة للصالونات، حيث يشكل العملاء المتكررون العمود الفقري للإيرادات، فإن برنامج الولاء ليس أمرًا لطيفًا - بل هو مضاعف للربح. ومع ذلك، تفتقر العديد من شركات التجميل إلى برنامج ولاء رسمي أو تديره بشكل سيء للغاية لدرجة أن العملاء ينسون وجوده.</p>
-<p> يأخذك هذا الدليل من المفهوم إلى الإطلاق باستخدام <a href="/ar/resources/blog/businesses/salon-marketing-strategies">نهج تسويق الصالون</a> المصمم خصيصًا للاحتفاظ. لإعداد الولاء الخاص بالمنصة باستخدام The Daisy، راجع <a href="/ar/resources/blog/businesses/complete-guide-salon-loyalty-programs">دليل تنفيذ برنامج الولاء التفصيلي</a>.</p>
+<p> يأخذك هذا الدليل من المفهوم إلى الإطلاق باستخدام <a href="/ar/resources/blog/business/salon-marketing-strategies">نهج تسويق الصالون</a> المصمم خصيصًا للاحتفاظ. لإعداد الولاء الخاص بالمنصة باستخدام ديزي، راجع <a href="/ar/resources/blog/business/complete-guide-salon-loyalty-programs">دليل تنفيذ برنامج الولاء التفصيلي</a>.</p>
 
 <h2>لماذا تفشل برامج الولاء العامة في الصالونات</h2>
 <p> أداء معظم برامج الولاء للصالونات ضعيف لأنها تنسخ نماذج البيع بالتجزئة التي لا تتناسب مع ديناميكيات صناعة التجميل. تعمل بطاقة المقهى لأن المنتج متطابق في كل زيارة. تختلف زيارات الصالون من حيث الخدمة والسعر ومقدم الخدمة - يجب أن يأخذ برنامج الولاء في الاعتبار هذا التعقيد.</p>
@@ -1855,7 +1855,7 @@ const salonLoyaltyProgramGuideArticleAr: LocalBlogPost = {
 
 <h3>نموذج الاسترداد النقدي</h3>
 <p>يحصل العملاء على نسبة مئوية من كل عملية شراء كرصيد. على سبيل المثال: استرداد نقدي بنسبة 5% على كل خدمة، يتم إضافته تلقائيًا إلى حسابه. هذا هو أبسط نموذج يمكن شرحه وأكثر سهولة في فهمه للعملاء.</p>
-<p><strong>الأفضل لـ:</strong> الصالونات التي تريد آلية ولاء سلسة ومفهومة عالميًا. <a href="/ar/features/business/marketing-promotions">يقوم نظام الاسترداد النقدي المدمج في Daisy</a> بأتمتة الحساب والائتمان والاسترداد بالكامل.</p>
+<p><strong>الأفضل لـ:</strong> الصالونات التي تريد آلية ولاء سلسة ومفهومة عالميًا. <a href="/ar/features/business/marketing-promotions">يقوم نظام الاسترداد النقدي المدمج في ديزي</a> بأتمتة الحساب والائتمان والاسترداد بالكامل.</p>
 
 <h3>النموذج القائم على النقاط</h3>
 <p>يكسب العملاء نقاطًا مقابل كل دولار يتم إنفاقه، ويمكن استبدالها بمكافآت. مثال: نقطة واحدة لكل 1 دولار، مع 100 نقطة = خصم 10 دولارات. تسمح النقاط بهياكل مكافآت إبداعية: أحداث النقاط الإضافية، والنقاط المضاعفة في الأيام البطيئة، وخيارات الاسترداد المتدرجة.</p>
@@ -1921,12 +1921,12 @@ const salonLoyaltyProgramGuideArticleAr: LocalBlogPost = {
 <li><strong>معدل الاحتفاظ بالعملاء:</strong> النسبة المئوية للعملاء الذين يعودون خلال 6 و12 شهرًا. الهدف الأساسي لبرنامج الولاء هو تحسين هذا المقياس.</li>
 <li><strong>عائد استثمار البرنامج:</strong> الإيرادات الإضافية الناتجة عن البرنامج مطروحًا منها إجمالي المكافآت الموزعة.</li>
 </ul>
-<p><a href="/ar/features/business/analytics-reports">تقوم لوحة معلومات التحليلات في Daisy</a> بتتبع كل هذه المقاييس تلقائيًا، ومقارنة شرائح العملاء المسجلين وغير المسجلين في الوقت الفعلي.</p>
+<p><a href="/ar/features/business/analytics-reports">تقوم لوحة معلومات التحليلات في ديزي</a> بتتبع كل هذه المقاييس تلقائيًا، ومقارنة شرائح العملاء المسجلين وغير المسجلين في الوقت الفعلي.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
 <h3>ما هي تكلفة تشغيل برنامج ولاء الصالون؟</h3>
-<p> تعتمد التكلفة على هيكل المكافآت الخاص بك. تبلغ تكلفة برنامج الاسترداد النقدي بنسبة 5% في صالون يدر 30 ألف دولار شهريًا حوالي 1500 دولار من المكافآت. ومع ذلك، فإن الزيادة النموذجية بنسبة 20-30% في تكرار الزيارة تولد إيرادات شهرية إضافية تتراوح بين 6000 و9000 دولار، مما يؤدي إلى تحقيق عائد يتراوح بين 4 إلى 6 أضعاف. تتضمن المنصات الرقمية مثل The Daisy إدارة الولاء في اشتراكاتها، مما يلغي تكاليف البرامج المنفصلة. إن التكلفة الصافية لبرنامج جيد الإدارة هي تكلفة سلبية فعليًا - فهي تحقق إيرادات أكثر من تكلفتها.</p>
+<p> تعتمد التكلفة على هيكل المكافآت الخاص بك. تبلغ تكلفة برنامج الاسترداد النقدي بنسبة 5% في صالون يدر 30 ألف دولار شهريًا حوالي 1500 دولار من المكافآت. ومع ذلك، فإن الزيادة النموذجية بنسبة 20-30% في تكرار الزيارة تولد إيرادات شهرية إضافية تتراوح بين 6000 و9000 دولار، مما يؤدي إلى تحقيق عائد يتراوح بين 4 إلى 6 أضعاف. تتضمن المنصات الرقمية مثل ديزي إدارة الولاء في اشتراكاتها، مما يلغي تكاليف البرامج المنفصلة. إن التكلفة الصافية لبرنامج جيد الإدارة هي تكلفة سلبية فعليًا - فهي تحقق إيرادات أكثر من تكلفتها.</p>
 
 <h3> هل يجب أن أطلب من العملاء الاشتراك أو التسجيل التلقائي للجميع؟</h3>
 <p> يؤدي التسجيل التلقائي مع خيار إلغاء الاشتراك إلى معدلات مشاركة أعلى بشكل كبير (80-90%) مقارنة بنماذج الاشتراك (30-40%). عندما تقوم بتسجيل العملاء تلقائيًا، فإنهم يرون على الفور المكافآت تتراكم، مما يؤدي إلى التفاعل. تواصل دائمًا بوضوح: "لقد قمنا بتسجيلك في برنامج الولاء الخاص بنا - لقد كسبت بالفعل X دولارًا أمريكيًا من زيارة اليوم. يمكنك إلغاء الاشتراك في أي وقت."</p>
@@ -2003,7 +2003,7 @@ const salonReferralProgramGuideArticleAr: LocalBlogPost = {
       'قم بتصميم وإطلاق برنامج إحالة صالون يحول أسعد عملائك إلى سفراء نشطين. يغطي هياكل الحوافز، والأتمتة، والتتبع، والاستراتيجيات المثبتة لزيادة حجم الإحالة ومعدلات التحويل.',
     aboutPosts: `<h2>الإحالات هي قناة اكتساب العملاء الأعلى جودة</h2>
 <p> العملاء المحالون أكثر ربحية من العملاء الذين يتم الحصول عليهم من خلال أي قناة أخرى. تظهر بيانات الصناعة أن عملاء الصالونات المحالين لديهم معدل احتفاظ أعلى بنسبة 37%، وقيمة عمر أعلى بنسبة 25%، ومتوسط ​​قيمة معاملات أعلى بنسبة 16% مقارنة بالعملاء الذين يعثرون عليك من خلال الإعلانات. السبب بسيط: تأتي الإحالة مصحوبة بثقة مدمجة من شخص يعرفه العميل الجديد ويحترمه بالفعل.</p>
-<p> ومع ذلك، فإن معظم الصالونات تترك الإحالات للصدفة، على أمل أن يخبر العملاء الراضون أصدقاءهم بشكل طبيعي. يقوم برنامج الإحالة المنظم بتحويل هذا الأمل السلبي إلى قناة اكتساب نشطة وقابلة للقياس. يوفر هذا الدليل <a href="/ar/resources/blog/businesses/salon-marketing-strategies">مخطط التسويق للصالون</a> لبناء محرك إحالة يعمل على الطيار الآلي. لإعداد حملة الإحالة الخاصة بـ Daisy، راجع <a href="/ar/resources/blog/businesses/salon-referral-programs-that-work">دليل تنفيذ برنامج الإحالة</a>.</p>
+<p> ومع ذلك، فإن معظم الصالونات تترك الإحالات للصدفة، على أمل أن يخبر العملاء الراضون أصدقاءهم بشكل طبيعي. يقوم برنامج الإحالة المنظم بتحويل هذا الأمل السلبي إلى قناة اكتساب نشطة وقابلة للقياس. يوفر هذا الدليل <a href="/ar/resources/blog/business/salon-marketing-strategies">مخطط التسويق للصالون</a> لبناء محرك إحالة يعمل على الطيار الآلي. لإعداد حملة الإحالة الخاصة بـ ديزي، راجع <a href="/ar/resources/blog/business/salon-referral-programs-that-work">دليل تنفيذ برنامج الإحالة</a>.</p>
 
 <h2>لماذا يكون أداء معظم برامج الإحالة إلى الصالونات ضعيفًا</h2>
 <p>إذا كان لدى صالونك برنامج إحالة ولكنه نادرًا ما يجذب عملاء جدد، فمن المحتمل أن تكون واحدة أو أكثر من هذه المشكلات هي السبب:</p>
@@ -2027,7 +2027,7 @@ const salonReferralProgramGuideArticleAr: LocalBlogPost = {
 </ul>
 
 <h3>تحديد قيمة المكافأة المناسبة</h3>
-<p> يجب أن تكون مكافأة الإحالة الخاصة بك كبيرة بما يكفي لتحفيز العمل ولكنها مستدامة على نطاق واسع. صيغة مفيدة: حدد مكافأة الإحالة بنسبة 30-50% من التكلفة لاكتساب عميل جديد من خلال الإعلانات المدفوعة. إذا كان العميل الجديد يكلف 60 دولارًا لاكتسابه من خلال إعلانات Instagram، فإن مكافأة الإحالة التي تتراوح بين 20 إلى 30 دولارًا تعد صفقة أفضل لك بينما تشعر بالسخاء تجاه العميل.</p>
+<p> يجب أن تكون مكافأة الإحالة الخاصة بك كبيرة بما يكفي لتحفيز العمل ولكنها مستدامة على نطاق واسع. صيغة مفيدة: حدد مكافأة الإحالة بنسبة 30-50% من التكلفة لاكتساب عميل جديد من خلال الإعلانات المدفوعة. إذا كان العميل الجديد يكلف 60 دولارًا لاكتسابه من خلال إعلانات إنستغرام، فإن مكافأة الإحالة التي تتراوح بين 20 إلى 30 دولارًا تعد صفقة أفضل لك بينما تشعر بالسخاء تجاه العميل.</p>
 
 <h3>المستويات الإضافية للمُحيلين النشطين</h3>
 <p> بعض العملاء هم موصلون طبيعيون يقومون بإحالة العديد من الأصدقاء. قم بمكافأة هذا السلوك بمكافآت متصاعدة: 3 إحالات تحصل على معاملة إضافية، و5 إحالات تحصل على حالة VIP، و10 إحالات تحصل على مكافأة كبيرة (على سبيل المثال، خدمة كاملة مجانية). يحافظ عنصر اللعب هذا على مشاركة أفضل سفرائك.</p>
@@ -2036,7 +2036,7 @@ const salonReferralProgramGuideArticleAr: LocalBlogPost = {
 <p> العامل الأول في المشاركة في برنامج الإحالة هو السهولة. كل خطوة إضافية بين "أريد إحالة صديق" وحجز الصديق تقلل التحويل بشكل كبير.</p>
 
 <h3>روابط الإحالة الفريدة</h3>
-<p> امنح كل عميل رابط إحالة فريدًا يمكنه مشاركته عبر الرسائل النصية أو البريد الإلكتروني أو وسائل التواصل الاجتماعي. عندما ينقر الصديق على الرابط ويقوم بالحجز، يتم تتبع الإحالة تلقائيًا ويتم إضافة الفضل إلى كلا الطرفين. <a href="/ar/features/business/marketing-promotions">يُنشئ Daisy</a> روابط إحالة فريدة لكل عميل، ويتعامل مع التتبع، ويطبق المكافآت دون أي تدخل من الموظفين.</p>
+<p> امنح كل عميل رابط إحالة فريدًا يمكنه مشاركته عبر الرسائل النصية أو البريد الإلكتروني أو وسائل التواصل الاجتماعي. عندما ينقر الصديق على الرابط ويقوم بالحجز، يتم تتبع الإحالة تلقائيًا ويتم إضافة الفضل إلى كلا الطرفين. <a href="/ar/features/business/marketing-promotions">يُنشئ ديزي</a> روابط إحالة فريدة لكل عميل، ويتعامل مع التتبع، ويطبق المكافآت دون أي تدخل من الموظفين.</p>
 
 <h3>الإشعارات التلقائية</h3>
 <p>إبقاء الطرفين على اطلاع طوال العملية:</p>
@@ -2048,7 +2048,7 @@ const salonReferralProgramGuideArticleAr: LocalBlogPost = {
 </ul>
 
 <h3>المشاركة داخل التطبيق</h3>
-<p>إذا كان صالونك يستخدم تطبيق الحجز، فقم بتضمين زر "إحالة صديق" البارز على الشاشة الرئيسية. يجب أن تؤدي نقرة واحدة إلى فتح واجهة مشاركة مع الرابط الفريد الخاص بالعميل المحمل مسبقًا، والجاهز للإرسال عبر WhatsApp أو iMessage أو البريد الإلكتروني أو وسائل التواصل الاجتماعي.</p>
+<p>إذا كان صالونك يستخدم تطبيق الحجز، فقم بتضمين زر "إحالة صديق" البارز على الشاشة الرئيسية. يجب أن تؤدي نقرة واحدة إلى فتح واجهة مشاركة مع الرابط الفريد الخاص بالعميل المحمل مسبقًا، والجاهز للإرسال عبر واتساب أو iMessage أو البريد الإلكتروني أو وسائل التواصل الاجتماعي.</p>
 
 <h2>الترويج لبرنامج الإحالة الخاص بك</h2>
 <p> برنامج الإحالة الذي لا يتحدث عنه أحد هو برنامج إحالة لا ينتج عنه أي إحالات. يجب أن يكون الترويج مستمرًا، وليس إعلان إطلاق لمرة واحدة.</p>
@@ -2074,7 +2074,7 @@ const salonReferralProgramGuideArticleAr: LocalBlogPost = {
 <li><strong>تكلفة الاكتساب المُحال:</strong> إجمالي المكافآت المدفوعة مقسومة على عدد العملاء الجدد المكتسبين. قارن ذلك بتكلفة الاكتساب من القنوات الأخرى.</li>
 <li><strong>أهم المراجعين:</strong> حدد السفراء الأكثر نشاطًا لديك وعزز هذه العلاقات مع المزيد من التقدير والمكافآت.</li>
 </ul>
-<p><a href="/ar/features/business/analytics-reports">تقوم لوحة معلومات التحليلات في Daisy</a> بتتبع مقاييس الإحالة تلقائيًا، مما يوضح لك بالضبط كيفية أداء برنامجك جنبًا إلى جنب مع قنوات الاكتساب الأخرى.</p>
+<p><a href="/ar/features/business/analytics-reports">تقوم لوحة معلومات التحليلات في ديزي</a> بتتبع مقاييس الإحالة تلقائيًا، مما يوضح لك بالضبط كيفية أداء برنامجك جنبًا إلى جنب مع قنوات الاكتساب الأخرى.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -2082,7 +2082,7 @@ const salonReferralProgramGuideArticleAr: LocalBlogPost = {
 <p> أطلق برنامج إحالة بمجرد أن يكون لديك أكثر من 50 عميلًا نشطًا راضين عن خدماتك. أنت بحاجة إلى قاعدة من العملاء السعداء لإنشاء الإحالات الأولية. إذا قمت بإطلاق البرنامج في وقت مبكر جدًا بقاعدة عملاء صغيرة غير مثبتة، فلن يكتسب البرنامج قوة جذب. إذا انتظرت طويلاً، فستفقد أشهرًا من النمو العضوي المحتمل. تستفيد معظم الصالونات من تنفيذ برنامج الإحالة خلال أول 6 إلى 12 شهرًا من التشغيل.</p>
 
 <h3>كيف أمنع احتيال الإحالة؟</h3>
-<p>يعمل تتبع الإحالة الرقمي على القضاء فعليًا على عمليات الاحتيال. تضمن روابط الإحالة الفريدة المرتبطة بحسابات العملاء إمكانية تتبع الإحالات وشرعيتها. تشمل الضمانات الإضافية مطالبة العميل المُحال بإكمال ودفع موعده الأول قبل إضافة المكافآت، وقصر المكافآت على العملاء الجدد فقط (وليس العملاء الحاليين الذين يقومون بإعادة التسجيل)، ووضع حد أقصى لعدد مكافآت الإحالة لكل عميل شهريًا إذا لزم الأمر. يتضمن نظام الإحالة الخاص بـ Daisy كل هذه الضمانات تلقائيًا.</p>
+<p>يعمل تتبع الإحالة الرقمي على القضاء فعليًا على عمليات الاحتيال. تضمن روابط الإحالة الفريدة المرتبطة بحسابات العملاء إمكانية تتبع الإحالات وشرعيتها. تشمل الضمانات الإضافية مطالبة العميل المُحال بإكمال ودفع موعده الأول قبل إضافة المكافآت، وقصر المكافآت على العملاء الجدد فقط (وليس العملاء الحاليين الذين يقومون بإعادة التسجيل)، ووضع حد أقصى لعدد مكافآت الإحالة لكل عميل شهريًا إذا لزم الأمر. يتضمن نظام الإحالة الخاص بـ ديزي كل هذه الضمانات تلقائيًا.</p>
 
 <h3> هل يجب أن أقدم مكافآت الإحالة للعملاء الجدد؟</h3>
 <p>بالتأكيد. كل عميل راضٍ هو مُحيل محتمل، بغض النظر عن كيفية اكتشافه لك. بعد الموعد الأول للعميل، قم بدعوته للانضمام إلى برنامج الإحالة الخاص بك كجزء من عملية الخروج. تمثل شبكتهم من الأصدقاء والعائلة إمكانات غير مستغلة. المفتاح هو التقاط معلومات الاتصال الخاصة بهم وتوفير رابط الإحالة الفريد الخاص بهم قبل مغادرتهم.</p>
@@ -2154,37 +2154,37 @@ const googleMyBusinessSalonArticleAr: LocalBlogPost = {
     slug: 'google-my-business-salon-optimization',
     description:
       'قم بتحسين الملف التجاري على Google لصالونك بالكامل للسيطرة على نتائج البحث المحلية. يغطي المطالبة والتحقق واختيار الفئة واستراتيجية الصور وإدارة المراجعة والمشاركات والتكتيكات المتقدمة لتحقيق أقصى قدر من الرؤية المحلية.',
-    aboutPosts: `<h2>ملفك التجاري على Google هو الأصول التسويقية المجانية الأكثر قيمة</h2>
-<p> عندما يبحث عميل محتمل عن "صالون بالقرب مني" أو "أفضل صالون لتصفيف الشعر في [المدينة]"، تهيمن قوائم الملف التجاري على Google على صفحة النتائج. تظهر هذه القوائم أعلى نتائج البحث العضوية، وفوق الإعلانات المدفوعة على الهاتف المحمول، وتتضمن الصور والتعليقات وساعات العمل ورابط الحجز المباشر. بالنسبة إلى الصالونات، يؤدي الملف التجاري المحسّن على Google إلى توليد المزيد من الاستفسارات للعملاء الجدد باستمرار أكثر من أي قناة تسويق فردية أخرى.</p>
-<p>تشير Google إلى أن الأنشطة التجارية التي لديها ملفات شخصية كاملة تتلقى نقرات أكثر بمقدار 7 أضعاف من تلك التي لديها معلومات غير كاملة. بالنسبة لشركات التجميل، حيث تكون نية البحث المحلية مرتفعة للغاية (يبحث العملاء بنشاط عن صالون للحجز)، فإن فجوة الرؤية هذه تترجم مباشرة إلى إيرادات. يعد هذا الدليل جزءًا من سلسلة <a href="/ar/resources/blog/businesses/salon-marketing-strategies">التسويق للصالون</a> الكاملة.</p>
+    aboutPosts: `<h2>ملفك التجاري على جوجل هو الأصول التسويقية المجانية الأكثر قيمة</h2>
+<p> عندما يبحث عميل محتمل عن "صالون بالقرب مني" أو "أفضل صالون لتصفيف الشعر في [المدينة]"، تهيمن قوائم الملف التجاري على جوجل على صفحة النتائج. تظهر هذه القوائم أعلى نتائج البحث العضوية، وفوق الإعلانات المدفوعة على الهاتف المحمول، وتتضمن الصور والتعليقات وساعات العمل ورابط الحجز المباشر. بالنسبة إلى الصالونات، يؤدي الملف التجاري المحسّن على جوجل إلى توليد المزيد من الاستفسارات للعملاء الجدد باستمرار أكثر من أي قناة تسويق فردية أخرى.</p>
+<p>تشير جوجل إلى أن الأنشطة التجارية التي لديها ملفات شخصية كاملة تتلقى نقرات أكثر بمقدار 7 أضعاف من تلك التي لديها معلومات غير كاملة. بالنسبة لشركات التجميل، حيث تكون نية البحث المحلية مرتفعة للغاية (يبحث العملاء بنشاط عن صالون للحجز)، فإن فجوة الرؤية هذه تترجم مباشرة إلى إيرادات. يعد هذا الدليل جزءًا من سلسلة <a href="/ar/resources/blog/business/salon-marketing-strategies">التسويق للصالون</a> الكاملة.</p>
 
 <h2>الخطوة 1: المطالبة بملفك الشخصي والتحقق منه</h2>
-<p>إذا لم تكن قد طالبت بملفك التجاري على Google بالفعل، فقم بذلك على الفور. ابحث عن عملك على خرائط جوجل. في حالة وجود بطاقة بيانات، انقر فوق "المطالبة بهذا النشاط التجاري" واتبع عملية التحقق (عادةً ما تكون بطاقة بريدية أو مكالمة هاتفية أو التحقق من البريد الإلكتروني). في حالة عدم وجود بطاقة بيانات، أنشئ واحدة على Business.google.com.</p>
+<p>إذا لم تكن قد طالبت بملفك التجاري على جوجل بالفعل، فقم بذلك على الفور. ابحث عن عملك على خرائط جوجل. في حالة وجود بطاقة بيانات، انقر فوق "المطالبة بهذا النشاط التجاري" واتبع عملية التحقق (عادةً ما تكون بطاقة بريدية أو مكالمة هاتفية أو التحقق من البريد الإلكتروني). في حالة عدم وجود بطاقة بيانات، أنشئ واحدة على Business.google.com.</p>
 <p>التحقق ضروري. لا يمكن للملفات الشخصية التي لم يتم التحقق منها الاستجابة للمراجعات أو نشر التحديثات أو الوصول إلى الرؤى. تستغرق عملية التحقق عادةً من 5 إلى 14 يومًا للتحقق من البطاقة البريدية.</p>
 
 <h2>الخطوة 2: أكمل كل حقل في الملف الشخصي</h2>
-<p>Google تكافئ الملفات الشخصية الكاملة برؤية أعلى. املأ كل حقل متاح:</p>
+<p>جوجل تكافئ الملفات الشخصية الكاملة برؤية أعلى. املأ كل حقل متاح:</p>
 
 <h3>اسم النشاط التجاري</h3>
-<p> استخدم اسم عملك المسجل بالضبط. لا تضيف كلمات رئيسية إلى اسم نشاطك التجاري (على سبيل المثال، "صالون سارة - أفضل لون شعر في دبي" ينتهك إرشادات Google ويخاطر بالتعليق). اسم نشاطك التجاري الحقيقي فقط.</p>
+<p> استخدم اسم عملك المسجل بالضبط. لا تضيف كلمات رئيسية إلى اسم نشاطك التجاري (على سبيل المثال، "صالون سارة - أفضل لون شعر في دبي" ينتهك إرشادات جوجل ويخاطر بالتعليق). اسم نشاطك التجاري الحقيقي فقط.</p>
 
 <h3>الفئات الأساسية والثانوية</h3>
 <p> يؤثر اختيار الفئة بشكل مباشر على عمليات البحث التي يظهر بها ملفك الشخصي. قم بتعيين فئتك الأساسية على الخيار الأكثر تحديدًا الذي يصف نشاطك التجاري (على سبيل المثال، "صالون تصفيف الشعر" بدلاً من "صالون التجميل" إذا كان الشعر هو خدمتك الأساسية). أضف فئات ثانوية لكل نوع خدمة تقدمها: "صالون الأظافر"، و"المنتجع الصحي النهاري"، و"خدمة إزالة الشعر بالشمع"، و"فنان مكياج"، وما إلى ذلك. ويمكنك إضافة ما يصل إلى 10 فئات.</p>
 
 <h3>وصف الأعمال</h3>
-<p>اكتب وصفًا مكونًا من 750 حرفًا يتضمن خدماتك الرئيسية وموقعك وتخصصاتك ونقاط البيع الفريدة. قم بتضمين الكلمات الرئيسية ذات الصلة بشكل طبيعي: "صالون شعر متكامل الخدمات في [الحي] متخصص في البلياج، وتصحيح الألوان، وتصميم حفلات الزفاف. نرحب بالزيارة. الحجز عبر الإنترنت متاح." لا تحشو الكلمات الرئيسية أو تستخدم لغة ترويجية مثل "أفضل صالون" - قد ترفض Google الأوصاف التي تحتوي على صيغ التفضيل المطلقة.</p>
+<p>اكتب وصفًا مكونًا من 750 حرفًا يتضمن خدماتك الرئيسية وموقعك وتخصصاتك ونقاط البيع الفريدة. قم بتضمين الكلمات الرئيسية ذات الصلة بشكل طبيعي: "صالون شعر متكامل الخدمات في [الحي] متخصص في البلياج، وتصحيح الألوان، وتصميم حفلات الزفاف. نرحب بالزيارة. الحجز عبر الإنترنت متاح." لا تحشو الكلمات الرئيسية أو تستخدم لغة ترويجية مثل "أفضل صالون" - قد ترفض جوجل الأوصاف التي تحتوي على صيغ التفضيل المطلقة.</p>
 
 <h3>الخدمات والقائمة</h3>
-<p> أضف كل خدمة تقدمها مع الوصف ونطاقات الأسعار. تظهر هذه المعلومات عندما يشاهد العملاء المحتملون ملفك الشخصي وتساعد Google في مطابقة قائمتك مع عمليات بحث خدمة معينة (على سبيل المثال، "علاج الكيراتين بالقرب مني"). تحديث الأسعار ربع سنوي للحفاظ على الدقة.</p>
+<p> أضف كل خدمة تقدمها مع الوصف ونطاقات الأسعار. تظهر هذه المعلومات عندما يشاهد العملاء المحتملون ملفك الشخصي وتساعد جوجل في مطابقة قائمتك مع عمليات بحث خدمة معينة (على سبيل المثال، "علاج الكيراتين بالقرب مني"). تحديث الأسعار ربع سنوي للحفاظ على الدقة.</p>
 
 <h3>ساعات العمل</h3>
 <p> قم بتعيين ساعات منتظمة دقيقة وتحديث ساعات العطلات مقدمًا. ساعات العمل غير الصحيحة تحبط العملاء المحتملين وتضر بالثقة. قم بتمكين "ساعات إضافية" لخدمات معينة إن أمكن (على سبيل المثال، "ساعات المواعيد" مقابل "ساعات الحضور").</p>
 
 <h3>معلومات الاتصال ورابط الحجز</h3>
-<p> قم بتضمين رقم هاتفك وموقعك الإلكتروني ورابط الحجز المباشر. يعد رابط الحجز أمرًا بالغ الأهمية: يجب أن يتمكن العملاء من الانتقال من ملفك الشخصي في Google إلى موعد مؤكد في أقل من 60 ثانية. <a href="/ar/features/business/booking-management"> توفر منصة الحجز لدى Daisy</a> عنوان URL للحجز المباشر المُحسّن لتكامل الملف التجاري على Google.</p>
+<p> قم بتضمين رقم هاتفك وموقعك الإلكتروني ورابط الحجز المباشر. يعد رابط الحجز أمرًا بالغ الأهمية: يجب أن يتمكن العملاء من الانتقال من ملفك الشخصي في جوجل إلى موعد مؤكد في أقل من 60 ثانية. <a href="/ar/features/business/booking-management"> توفر منصة الحجز لدى ديزي</a> عنوان URL للحجز المباشر المُحسّن لتكامل الملف التجاري على جوجل.</p>
 
 <h2>الخطوة 3: بناء إستراتيجية صور جذابة</h2>
-<p> تتلقى الأنشطة التجارية التي تحتوي على صور طلبات توجيه أكثر بنسبة 42% ونقرات أكثر على مواقع الويب بنسبة 35%، وفقًا لـ Google. بالنسبة للصالونات، تعد الصور ذات أهمية خاصة لأن العملاء يريدون رؤية جودة عملك وأجواء مساحتك قبل الحجز.</p>
+<p> تتلقى الأنشطة التجارية التي تحتوي على صور طلبات توجيه أكثر بنسبة 42% ونقرات أكثر على مواقع الويب بنسبة 35%، وفقًا لـ جوجل. بالنسبة للصالونات، تعد الصور ذات أهمية خاصة لأن العملاء يريدون رؤية جودة عملك وأجواء مساحتك قبل الحجز.</p>
 
 <h3>الصور الأساسية التي يجب تضمينها</h3>
 <ul>
@@ -2196,7 +2196,7 @@ const googleMyBusinessSalonArticleAr: LocalBlogPost = {
 </ul>
 
 <h3>معايير جودة الصور</h3>
-<p> استخدم صورًا جيدة الإضاءة وعالية الدقة. الإضاءة الطبيعية مثالية. تجنب المرشحات الثقيلة التي تشوه عملك أو مساحتك. قم بتحميل الصور في الاتجاه الأفقي للحصول على أفضل عرض. أضف صورًا جديدة أسبوعيًا للإشارة إلى Google بأن ملفك الشخصي يتم صيانته بشكل نشط - وتحظى الملفات الشخصية النشطة بمزيد من الرؤية.</p>
+<p> استخدم صورًا جيدة الإضاءة وعالية الدقة. الإضاءة الطبيعية مثالية. تجنب المرشحات الثقيلة التي تشوه عملك أو مساحتك. قم بتحميل الصور في الاتجاه الأفقي للحصول على أفضل عرض. أضف صورًا جديدة أسبوعيًا للإشارة إلى جوجل بأن ملفك الشخصي يتم صيانته بشكل نشط - وتحظى الملفات الشخصية النشطة بمزيد من الرؤية.</p>
 
 <h2>الخطوة 4: إدارة المراجعة الرئيسية</h2>
 <p>المراجعات هي العامل الوحيد الأكثر تأثيرًا في قرار العميل المحتمل بالحجز. تجتذب الصالونات التي تحتوي على أكثر من 50 تعليقًا وتقييم 4.5+ نجوم نقرات أكثر بمقدار 3 إلى 4 أضعاف من تلك التي تحتوي على عدد أقل من التعليقات أو التقييمات الأقل.</p>
@@ -2204,17 +2204,17 @@ const googleMyBusinessSalonArticleAr: LocalBlogPost = {
 <h3>إنشاء التقييمات بشكل منهجي</h3>
 <p>لا تترك التقييمات للصدفة. تنفيذ عملية جمع المراجعة المنهجية:</p>
 <ol>
-<li>أرسل طلب مراجعة تلقائي بعد 24 ساعة من كل موعد مع رابط مباشر إلى صفحة المراجعة الخاصة بك على Google.</li>
+<li>أرسل طلب مراجعة تلقائي بعد 24 ساعة من كل موعد مع رابط مباشر إلى صفحة المراجعة الخاصة بك على جوجل.</li>
 <li> قم بتضمين طلب مراجعة في رسالة نصية قصيرة بعد التعيين: "شكرًا لزيارتك! نود الحصول على تعليقاتك - [رابط المراجعة المباشر]."</li>
-<li>درب فريقك على طلب التقييمات عند الدفع: "إذا استمتعت بتجربتك اليوم، فإن مراجعة Google ستعني العالم بالنسبة لنا."</li>
+<li>درب فريقك على طلب التقييمات عند الدفع: "إذا استمتعت بتجربتك اليوم، فإن مراجعة جوجل ستعني العالم بالنسبة لنا."</li>
 <li>عرض رمز الاستجابة السريعة في محطات المرآة المرتبطة بصفحة المراجعة الخاصة بك.</li>
 </ol>
 
 <h3>الرد على كل مراجعة</h3>
 <p> قم بالرد على كل مراجعة خلال 24-48 ساعة. للحصول على تقييمات إيجابية، اشكر العميل بالاسم، وأشر إلى خدمته المحددة، ثم قم بدعوته مرة أخرى. بالنسبة للمراجعات السلبية، قم بالرد بشكل احترافي: اعترف بخبرتهم، واعتذر، واعرض عليهم حل المشكلة على انفراد. لا ترد بشكل دفاعي أبدًا. يقرأ العملاء المحتملون ردودك بعناية مثل التقييمات نفسها.</p>
 
-<h2>الخطوة 5: استخدام مشاركات Google للمشاركة المستمرة</h2>
-<p>مشاركات Google هي تحديثات صغيرة تظهر مباشرة في ملفك التجاري. لا يتم استغلالها بشكل كافٍ من قبل معظم الشركات، مما يعني أنها توفر ميزة تنافسية للصالونات التي تستخدمها باستمرار.</p>
+<h2>الخطوة 5: استخدام مشاركات جوجل للمشاركة المستمرة</h2>
+<p>مشاركات جوجل هي تحديثات صغيرة تظهر مباشرة في ملفك التجاري. لا يتم استغلالها بشكل كافٍ من قبل معظم الشركات، مما يعني أنها توفر ميزة تنافسية للصالونات التي تستخدمها باستمرار.</p>
 <p>أنواع المشاركات المراد استخدامها:</p>
 <ul>
 <li><strong>المشاركات الجديدة:</strong> خدمات جديدة، إضافات الفريق، عروض موسمية.</li>
@@ -2223,17 +2223,17 @@ const googleMyBusinessSalonArticleAr: LocalBlogPost = {
 </ul>
 <p>انشر 1-2 مرات في الأسبوع. تكون كل مشاركة مرئية لمدة 7 أيام، لذا فإن النشر المتسق يحافظ على ملف شخصي جديد ونشط. قم بتضمين صور عالية الجودة وعبارة واضحة تحث المستخدم على اتخاذ إجراء في كل مشاركة.</p>
 
-<h2>الخطوة 6: تتبع الأداء باستخدام Google Insights</h2>
-<p>توضح لك إحصاءات الملف التجاري على Google كيفية عثور العملاء على ملفك الشخصي والتفاعل معه. المقاييس الرئيسية التي يجب مراقبتها شهريًا:</p>
+<h2>الخطوة 6: تتبع الأداء باستخدام جوجل Insights</h2>
+<p>توضح لك إحصاءات الملف التجاري على جوجل كيفية عثور العملاء على ملفك الشخصي والتفاعل معه. المقاييس الرئيسية التي يجب مراقبتها شهريًا:</p>
 <ul>
 <li><strong>استعلامات البحث:</strong> ما المصطلحات التي يستخدمها الأشخاص للعثور على ملفك الشخصي؟ يؤدي هذا إلى الكشف عن فرص الكلمات الرئيسية.</li>
 <li><strong>مشاهدات الملف الشخصي:</strong> كم عدد الأشخاص الذين يشاهدون قائمتك؟ تتبع النمو على أساس شهري.</li>
 <li><strong>الإجراءات المتخذة:</strong> المكالمات وطلبات التوجيه وزيارات موقع الويب ونقرات الحجز. هذه هي مقاييس التحويل الخاصة بك.</li>
-<li><strong>مشاهدات الصور:</strong> ما هو معدل مشاهدة صورك مقارنة بالمنافسين؟ يعرض لك Google المعايير.</li>
+<li><strong>مشاهدات الصور:</strong> ما هو معدل مشاهدة صورك مقارنة بالمنافسين؟ يعرض لك جوجل المعايير.</li>
 </ul>
-<p> استخدم هذه الرؤى جنبًا إلى جنب مع <a href="/ar/features/business/analytics-reports">تحليلات Daisy</a> لفهم رحلة العميل الكاملة بدءًا من بحث Google وحتى الموعد المحجوز.</p>
+<p> استخدم هذه الرؤى جنبًا إلى جنب مع <a href="/ar/features/business/analytics-reports">تحليلات ديزي</a> لفهم رحلة العميل الكاملة بدءًا من بحث جوجل وحتى الموعد المحجوز.</p>
 
-<h2>التكتيكات المتقدمة للملفات التجارية على Google</h2>
+<h2>التكتيكات المتقدمة للملفات التجارية على جوجل</h2>
 <ul>
 <li><strong> قسم الأسئلة والأجوبة:</strong> أضف أسئلة وإجابات بشكل استباقي إلى قسم الأسئلة والأجوبة في ملفك الشخصي. معالجة الاستفسارات الشائعة: توفر مواقف السيارات، وسياسة الدخول، ونطاقات الأسعار، والتخصصات. يؤدي ذلك إلى إضافة محتوى غني بالكلمات الرئيسية إلى ملفك الشخصي وتقليل الاحتكاك بالاستعلام.</li>
 <li><strong>قسم المنتجات:</strong> إذا كنت تبيع منتجات بالتجزئة، فأضفها إلى قسم المنتجات مع الصور والأوصاف والأسعار. يمكن أن يؤدي هذا إلى التقاط عمليات بحث خاصة بالمنتج.</li>
@@ -2243,17 +2243,17 @@ const googleMyBusinessSalonArticleAr: LocalBlogPost = {
 
 <h2>الأسئلة الشائعة</h2>
 
-<h3>ما المدة التي يستغرقها تحسين الملف التجاري على Google لإظهار النتائج؟</h3>
-<p> تشهد معظم الصالونات تحسينات قابلة للقياس خلال 4-8 أسابيع من استكمال التحسين الكامل. تُظهر تحسينات اكتمال الملف الشخصي النتائج بشكل أسرع (مزيد من مرات الظهور في البحث خلال أيام). يستغرق تراكم المراجعة وقتًا أطول ولكن له التأثير الأكثر أهمية - حيث تعمل كل مراجعة على تحسين تصنيفك بشكل تدريجي. تشير التحديثات الأسبوعية المتسقة (الصور والمشاركات والردود على المراجعة) إلى نشاط Google وتعمل على تحسين موضعك تدريجيًا في نتائج البحث المحلية على مدار شهرين إلى ثلاثة أشهر.</p>
+<h3>ما المدة التي يستغرقها تحسين الملف التجاري على جوجل لإظهار النتائج؟</h3>
+<p> تشهد معظم الصالونات تحسينات قابلة للقياس خلال 4-8 أسابيع من استكمال التحسين الكامل. تُظهر تحسينات اكتمال الملف الشخصي النتائج بشكل أسرع (مزيد من مرات الظهور في البحث خلال أيام). يستغرق تراكم المراجعة وقتًا أطول ولكن له التأثير الأكثر أهمية - حيث تعمل كل مراجعة على تحسين تصنيفك بشكل تدريجي. تشير التحديثات الأسبوعية المتسقة (الصور والمشاركات والردود على المراجعة) إلى نشاط جوجل وتعمل على تحسين موضعك تدريجيًا في نتائج البحث المحلية على مدار شهرين إلى ثلاثة أشهر.</p>
 
-<h3>كم عدد مراجعات Google التي يحتاجها صالوني؟</h3>
+<h3>كم عدد مراجعات جوجل التي يحتاجها صالوني؟</h3>
 <p> لا يوجد رقم سحري، لكن الأبحاث تظهر أن التصنيف الهادف ومزايا الثقة تبدأ عند أكثر من 20 مراجعة، مع ميزة تنافسية كبيرة عند أكثر من 50 مراجعة. الأهم من العدد الإجمالي هو الحداثة والاتساق. الصالون الذي حصل على 30 تقييمًا في الأشهر الستة الماضية يحتل مرتبة أعلى من الصالون الذي حصل على 100 تقييم ولكن لا شيء في العام الماضي. ركز على إنشاء 2-4 مراجعات جديدة أسبوعيًا من خلال نظام طلب المراجعة الآلي الخاص بك.</p>
 
-<h3>هل يمكنني إزالة مراجعة Google المزيفة أو غير العادلة؟</h3>
-<p>يمكنك الإبلاغ عن المراجعات التي تنتهك سياسات Google (المراجعات الزائفة، والبريد العشوائي، والخارجة عن الموضوع، وتضارب المصالح). ستقوم Google بمراجعة العلم وإزالة المراجعة إذا كانت تنتهك إرشاداتها. ومع ذلك، لن تقوم Google بإزالة التقييمات السلبية لمجرد عدم موافقتك عليها. إذا كانت المراجعة السلبية مشروعة، فاستجيب بشكل احترافي وركز على إنشاء مراجعات إيجابية جديدة لتخفيف تأثيرها. يعد التدفق المستمر للمراجعات الإيجابية الأخيرة أفضل دفاع ضد المراجعات السلبية العرضية.</p>
+<h3>هل يمكنني إزالة مراجعة جوجل المزيفة أو غير العادلة؟</h3>
+<p>يمكنك الإبلاغ عن المراجعات التي تنتهك سياسات جوجل (المراجعات الزائفة، والبريد العشوائي، والخارجة عن الموضوع، وتضارب المصالح). ستقوم جوجل بمراجعة العلم وإزالة المراجعة إذا كانت تنتهك إرشاداتها. ومع ذلك، لن تقوم جوجل بإزالة التقييمات السلبية لمجرد عدم موافقتك عليها. إذا كانت المراجعة السلبية مشروعة، فاستجيب بشكل احترافي وركز على إنشاء مراجعات إيجابية جديدة لتخفيف تأثيرها. يعد التدفق المستمر للمراجعات الإيجابية الأخيرة أفضل دفاع ضد المراجعات السلبية العرضية.</p>
 
-<h3> هل يجب أن أستخدم إعلانات Google بجانب ملفي التجاري؟</h3>
-<p>يمكن لإعلانات Google (على وجه التحديد إعلانات الخدمات المحلية والإعلانات على شبكة البحث) تسريع مستوى الرؤية أثناء سريان مفعول تحسين ملفك الشخصي. بالنسبة للصالونات، فإن تنسيق الإعلان الأكثر فعالية من حيث التكلفة هو إعلانات الخدمات المحلية من Google، والتي تظهر في أعلى نتائج البحث مع شارة "مضمون من Google". يتم فرض رسوم على هذه الإعلانات لكل عميل محتمل بدلاً من كل نقرة، مما يجعلها أكثر قابلية للتنبؤ بها بالنسبة للميزانية. ابدأ بميزانية يومية متواضعة (10 إلى 20 دولارًا أمريكيًا) وقم بالقياس بناءً على تكلفة كل عميل جديد يتم اكتسابه مقابل هدفك.</p>`,
+<h3> هل يجب أن أستخدم إعلانات جوجل بجانب ملفي التجاري؟</h3>
+<p>يمكن لإعلانات جوجل (على وجه التحديد إعلانات الخدمات المحلية والإعلانات على شبكة البحث) تسريع مستوى الرؤية أثناء سريان مفعول تحسين ملفك الشخصي. بالنسبة للصالونات، فإن تنسيق الإعلان الأكثر فعالية من حيث التكلفة هو إعلانات الخدمات المحلية من جوجل، والتي تظهر في أعلى نتائج البحث مع شارة "مضمون من جوجل". يتم فرض رسوم على هذه الإعلانات لكل عميل محتمل بدلاً من كل نقرة، مما يجعلها أكثر قابلية للتنبؤ بها بالنسبة للميزانية. ابدأ بميزانية يومية متواضعة (10 إلى 20 دولارًا أمريكيًا) وقم بالقياس بناءً على تكلفة كل عميل جديد يتم اكتسابه مقابل هدفك.</p>`,
     metaTitle: 'Google My Business للصالونات | ديزي',
     metaDescription:
       'حسّن ملف Google Business لصالونك للسيطرة على البحث المحلي. يغطي الفئات والصور والمراجعات والمنشورات والتكتيكات المتقدمة لأقصى رؤية.',
@@ -2321,13 +2321,13 @@ const salonSeoLocalSearchArticleAr: LocalBlogPost = {
       'أتقن تحسين محركات البحث المحلية لصالونك حتى يتم تصنيفه في نتائج بحث Google والخرائط. يغطي التحسين على الصفحة، والاستشهادات المحلية، وبناء الروابط، واستراتيجية المحتوى، وتحسين محركات البحث الفنية المصممة خصيصًا لشركات التجميل.',
     aboutPosts: `<h2>تحسين محركات البحث المحلية هي قناة جذب العملاء الأكثر فعالية من حيث التكلفة للصالونات</h2>
 <p> إن تحسين محركات البحث المحلية هو ممارسة تهدف إلى تحسين تواجدك عبر الإنترنت بحيث يظهر صالونك بشكل بارز عندما يبحث العملاء المحتملون عن خدمات التجميل في منطقتك. على عكس الإعلانات المدفوعة، التي تتوقف عن جذب العملاء المحتملين في اللحظة التي تتوقف فيها عن الدفع، فإن مُحسّنات محرّكات البحث المحلية تحقق عوائد مضاعفة - فالعمل الذي تستثمره اليوم يستمر في زيادة الظهور والحجوزات لعدة أشهر وسنوات.</p>
-<p> بالنسبة للأنشطة التجارية المتعلقة بالجمال، تكون نية البحث المحلية مرتفعة للغاية. عندما يبحث أحد الأشخاص عن "صالون تصفيف الشعر بالقرب مني" أو "متخصص في balayage [مدينة]"، فهو يبحث بنشاط عن الحجز، وليس التصفح بشكل عرضي. إن التقاط هذه النية هو المسار الأكثر مباشرة من البحث إلى التعيين. يعد هذا الدليل جزءًا من سلسلة <a href="/ar/resources/blog/businesses/salon-marketing-strategies">salon إستراتيجيتنا التسويقية الكاملة</a> ويغطي كل جانب من جوانب تحسين محركات البحث المحلية للصالونات.</p>
+<p> بالنسبة للأنشطة التجارية المتعلقة بالجمال، تكون نية البحث المحلية مرتفعة للغاية. عندما يبحث أحد الأشخاص عن "صالون تصفيف الشعر بالقرب مني" أو "متخصص في balayage [مدينة]"، فهو يبحث بنشاط عن الحجز، وليس التصفح بشكل عرضي. إن التقاط هذه النية هو المسار الأكثر مباشرة من البحث إلى التعيين. يعد هذا الدليل جزءًا من سلسلة <a href="/ar/resources/blog/business/salon-marketing-strategies">salon إستراتيجيتنا التسويقية الكاملة</a> ويغطي كل جانب من جوانب تحسين محركات البحث المحلية للصالونات.</p>
 
 <h2>فهم آلية عمل البحث المحلي للصالونات</h2>
-<p>تستخدم Google ثلاثة عوامل أساسية لتصنيف الأنشطة التجارية المحلية: مدى الصلة بالموضوع، والمسافة، والشهرة. يساعدك فهم هذه العوامل على التحسين بشكل استراتيجي.</p>
+<p>تستخدم جوجل ثلاثة عوامل أساسية لتصنيف الأنشطة التجارية المحلية: مدى الصلة بالموضوع، والمسافة، والشهرة. يساعدك فهم هذه العوامل على التحسين بشكل استراتيجي.</p>
 <ul>
-<li><strong>الملاءمة:</strong> مدى توافق نشاطك التجاري مع نية الباحث. يتم تحديد ذلك من خلال فئات ملفك التجاري على Google، والخدمات المدرجة، ومحتوى موقع الويب، والمراجعات التي تشير إلى خدمات معينة.</li>
-<li><strong>المسافة:</strong> مدى قرب صالونك من الباحث. لا يمكنك تغيير موقعك، ولكن يمكنك التأثير على النطاق الذي تعتبره Google ذا صلة بنشاطك التجاري من خلال اتساق الاقتباسات واستهداف المحتوى.</li>
+<li><strong>الملاءمة:</strong> مدى توافق نشاطك التجاري مع نية الباحث. يتم تحديد ذلك من خلال فئات ملفك التجاري على جوجل، والخدمات المدرجة، ومحتوى موقع الويب، والمراجعات التي تشير إلى خدمات معينة.</li>
+<li><strong>المسافة:</strong> مدى قرب صالونك من الباحث. لا يمكنك تغيير موقعك، ولكن يمكنك التأثير على النطاق الذي تعتبره جوجل ذا صلة بنشاطك التجاري من خلال اتساق الاقتباسات واستهداف المحتوى.</li>
 <li><strong>الأهمية:</strong> مدى شهرة نشاطك التجاري وموثوقيته عبر الإنترنت. يتم تحديده من خلال حجم المراجعة وجودتها، والروابط الخلفية، وسلطة موقع الويب، وإشارات العلامة التجارية عبر الويب.</li>
 </ul>
 
@@ -2340,7 +2340,7 @@ const salonSeoLocalSearchArticleAr: LocalBlogPost = {
 <li><strong>علامة العنوان:</strong> قم بتضمين كلمتك الرئيسية وموقعك. مثال: "صالون تصفيف الشعر في [المدينة] | اللون والقص والتصفيف | [اسم الصالون]"</li>
 <li><strong>الوصف التعريفي:</strong> 150-160 حرفًا بما في ذلك الخدمات والموقع والحث على اتخاذ إجراء. مثال: "صالون شعر حائز على جوائز في [الحي]. متخصص في البلياج وتصحيح الألوان والتقطيع الدقيق. احجز عبر الإنترنت اليوم."</li>
 <li><strong>H1 عنوان:</strong> واحد لكل صفحة، يتضمن بشكل طبيعي كلمتك الرئيسية وموقعك.</li>
-<li><strong>ترميز المخطط المحلي:</strong> أضف بيانات LocalBusiness المنظمة (JSON-LD) إلى صفحتك الرئيسية. يساعد هذا Google في فهم نوع نشاطك التجاري وموقعك وساعات العمل والخدمات.</li>
+<li><strong>ترميز المخطط المحلي:</strong> أضف بيانات LocalBusiness المنظمة (JSON-LD) إلى صفحتك الرئيسية. يساعد هذا جوجل في فهم نوع نشاطك التجاري وموقعك وساعات العمل والخدمات.</li>
 </ul>
 
 <h3>صفحات الخدمة</h3>
@@ -2348,20 +2348,20 @@ const salonSeoLocalSearchArticleAr: LocalBlogPost = {
 <ul>
 <li>علامة عنوان فريدة تحتوي على اسم الخدمة وموقعها.</li>
 <li> وصف تفصيلي للخدمة (أكثر من 300 كلمة) يغطي ما تتضمنه الخدمة، ومن تستهدفها، والنتائج المتوقعة.</li>
-<li>معلومات التسعير (تفضل Google التسعير الشفاف).</li>
+<li>معلومات التسعير (تفضل جوجل التسعير الشفاف).</li>
 <li>صور ما قبل وبعد مع نص بديل وصفي.</li>
 <li> عبارة تحث المستخدم على اتخاذ إجراء مرتبطة بنظام الحجز عبر الإنترنت الخاص بك.</li>
 </ul>
 
 <h3>صفحات الموقع</h3>
-<p>إذا كنت تدير فروعًا متعددة، فإن كل موقع يحتاج إلى صفحة مخصصة خاصة به ذات محتوى فريد. قم بتضمين العنوان المحدد، وأعضاء الفريق في ذلك الموقع، والخدمات المتاحة، ومراجعات العملاء الخاصة بهذا الفرع، وعنوان ووصف تعريفي فريد. تجنب تكرار المحتوى عبر صفحات الموقع - يعاقب Google المحتوى المكرر.</p>
+<p>إذا كنت تدير فروعًا متعددة، فإن كل موقع يحتاج إلى صفحة مخصصة خاصة به ذات محتوى فريد. قم بتضمين العنوان المحدد، وأعضاء الفريق في ذلك الموقع، والخدمات المتاحة، ومراجعات العملاء الخاصة بهذا الفرع، وعنوان ووصف تعريفي فريد. تجنب تكرار المحتوى عبر صفحات الموقع - يعاقب جوجل المحتوى المكرر.</p>
 
 <h2>إنشاء الاستشهادات المحلية</h2>
 <p> الاقتباس المحلي هو أي ذكر عبر الإنترنت لاسم صالونك وعنوانه ورقم هاتفه (NAP). تشير الاستشهادات المتسقة عبر الويب إلى الشرعية وتحسن تصنيفات البحث المحلي.</p>
 
 <h3>مصادر الاقتباس ذات الأولوية</h3>
 <ol>
-<li><strong>الملف التجاري على Google</strong> (الأهم)</li>
+<li><strong>الملف التجاري على جوجل</strong> (الأهم)</li>
 <li><strong>Yelp</strong></li>
 <li><strong>صفحة الأعمال على الفيسبوك</strong></li>
 <li><strong>خرائط أبل</strong></li>
@@ -2374,7 +2374,7 @@ const salonSeoLocalSearchArticleAr: LocalBlogPost = {
 <p> يجب أن يكون اسم نشاطك التجاري وعنوانك ورقم هاتفك متطابقين في كل بطاقة بيانات. حتى التناقضات البسيطة (على سبيل المثال، "Suite 4" مقابل "Ste 4" أو "Street" مقابل "St.") يمكن أن تربك محركات البحث وتضعف تصنيفك. قم بمراجعة استشهاداتك كل ثلاثة أشهر باستخدام أداة مثل BrightLocal أو Moz Local، وقم بتصحيح أي تناقضات على الفور.</p>
 
 <h2>إستراتيجية المحتوى لتحسين محركات البحث المحلية</h2>
-<p>يشير المحتوى العادي ذو الصلة محليًا إلى Google بأن موقع الويب الخاص بك نشط وموثوق لعمليات البحث عن الجمال في منطقتك.</p>
+<p>يشير المحتوى العادي ذو الصلة محليًا إلى جوجل بأن موقع الويب الخاص بك نشط وموثوق لعمليات البحث عن الجمال في منطقتك.</p>
 
 <h3>محتوى المدونة</h3>
 <p>نشر 2-4 منشورات مدونة شهريًا تستهدف الكلمات الرئيسية المحلية والخاصة بالخدمة. مواضيع فعالة لصالون SEO :</p>
@@ -2387,7 +2387,7 @@ const salonSeoLocalSearchArticleAr: LocalBlogPost = {
 </ul>
 
 <h3>إشارات المحتوى المحلي</h3>
-<p> قم بدمج المراجع المحلية بشكل طبيعي في جميع أنحاء المحتوى الخاص بك: اذكر الحي الذي تسكن فيه والمعالم القريبة والأحداث المحلية والمجتمع الذي تخدمه. وهذا يساعد Google على ربط نشاطك التجاري بمناطق جغرافية محددة.</p>
+<p> قم بدمج المراجع المحلية بشكل طبيعي في جميع أنحاء المحتوى الخاص بك: اذكر الحي الذي تسكن فيه والمعالم القريبة والأحداث المحلية والمجتمع الذي تخدمه. وهذا يساعد جوجل على ربط نشاطك التجاري بمناطق جغرافية محددة.</p>
 
 <h2>مبنى الرابط للصالون SEO</h2>
 <p> تعد الروابط الخلفية من مواقع الويب الأخرى إلى موقعك من أقوى إشارات التصنيف. بالنسبة للأنشطة التجارية المحلية، تأتي الروابط الأكثر قيمة من مصادر محلية وذات صلة وموثوقة.</p>
@@ -2405,39 +2405,39 @@ const salonSeoLocalSearchArticleAr: LocalBlogPost = {
 <p> يمكن أن تؤدي المشكلات الفنية إلى تقويض أفضل محتوى وجهود بناء الروابط. تأكد من صلابة هذه الأساسيات:</p>
 <ul>
 <li><strong>تصميم الجوال أولاً:</strong> أكثر من 70% من عمليات البحث المحلية تتم على أجهزة الجوال. يجب أن يتم تحميل موقع الويب الخاص بك بسرعة، وأن يتم عرضه بشكل صحيح، وأن يكون من السهل التنقل فيه على الهواتف الذكية.</li>
-<li><strong>سرعة الصفحة:</strong> استهدف وقت تحميل أقل من 3 ثوانٍ. ضغط الصور وتقليل التعليمات البرمجية واستخدام CDN. توفر أداة PageSpeed Insights من Google توصيات محددة.</li>
+<li><strong>سرعة الصفحة:</strong> استهدف وقت تحميل أقل من 3 ثوانٍ. ضغط الصور وتقليل التعليمات البرمجية واستخدام CDN. توفر أداة PageSpeed Insights من جوجل توصيات محددة.</li>
 <li><strong>شهادة SSL:</strong> يجب أن يستخدم موقع الويب الخاص بك HTTPS. جوجل تعاقب المواقع غير الآمنة في التصنيف.</li>
-<li><strong>ترميز المخطط:</strong> تنفيذ الأعمال المحلية والخدمة ومراجعة البيانات المنظمة لمساعدة Google في فهم المحتوى الخاص بك.</li>
-<li><strong>خريطة موقع XML:</strong> أرسل خريطة موقع محدثة إلى Google Search Console لضمان فهرسة جميع الصفحات.</li>
+<li><strong>ترميز المخطط:</strong> تنفيذ الأعمال المحلية والخدمة ومراجعة البيانات المنظمة لمساعدة جوجل في فهم المحتوى الخاص بك.</li>
+<li><strong>خريطة موقع XML:</strong> أرسل خريطة موقع محدثة إلى جوجل Search Console لضمان فهرسة جميع الصفحات.</li>
 </ul>
 
 <h2>قياس مدى نجاح تحسين محركات البحث المحلية</h2>
 <p>تتبع هذه المقاييس شهريًا لتقييم تقدم تحسين محركات البحث المحلي لديك:</p>
 <ul>
-<li><strong>مرات ظهور الملف التجاري على Google:</strong> عدد مرات ظهور ملفك الشخصي في نتائج البحث. تتبع الاتجاه بمرور الوقت.</li>
+<li><strong>مرات ظهور الملف التجاري على جوجل:</strong> عدد مرات ظهور ملفك الشخصي في نتائج البحث. تتبع الاتجاه بمرور الوقت.</li>
 <li><strong>البحث في مواضع التصنيف:</strong> راقب تصنيفك لعدد 10-15 كلمة رئيسية مستهدفة (مجموعات الخدمة + الموقع).</li>
-<li><strong>حركة المرور العضوية على موقع الويب:</strong> الزيارات الواردة من محركات البحث، والتي تمت تصفيتها حسب الموقع. استخدم Google Analytics لمعرفة الصفحات التي تجذب أكبر عدد من الزيارات المحلية.</li>
-<li><strong>حجز التحويلات من البحث المجاني:</strong> كم عدد العملاء الذين عثروا عليك من خلال البحث والذين حجزوا بالفعل؟ <a href="/ar/features/business/analytics-reports"> تحليلات Daisy</a> تتتبع الرحلة الكاملة من البحث إلى الموعد.</li>
+<li><strong>حركة المرور العضوية على موقع الويب:</strong> الزيارات الواردة من محركات البحث، والتي تمت تصفيتها حسب الموقع. استخدم جوجل Analytics لمعرفة الصفحات التي تجذب أكبر عدد من الزيارات المحلية.</li>
+<li><strong>حجز التحويلات من البحث المجاني:</strong> كم عدد العملاء الذين عثروا عليك من خلال البحث والذين حجزوا بالفعل؟ <a href="/ar/features/business/analytics-reports"> تحليلات ديزي</a> تتتبع الرحلة الكاملة من البحث إلى الموعد.</li>
 <li><strong>سرعة المراجعة:</strong> المعدل الذي تقوم به بتجميع المراجعات الجديدة. النمو المستمر أكثر أهمية من العدد الإجمالي.</li>
 </ul>
 
-<h2>كيف تدعم Daisy تحسين محركات البحث المحلية لديك</h2>
-<p> توفر منصة الحجز الخاصة بـ Daisy تجربة حجز سريعة ومُحسَّنة للجوال تعمل على تحويل زوار البحث إلى عملاء. تعمل روابط الحجز المباشرة لملفك التجاري على Google، وأتمتة طلبات المراجعة، وتتبع التحليلات على إنشاء اتصال سلس بين جهود تحسين محركات البحث (SEO) والحجوزات الفعلية.</p>
-<p> استكشف <a href="/ar/features/business/marketing-promotions"> أدوات التسويق الخاصة بشركة Daisy</a> وشاهد كيف تتكامل مع إستراتيجية تحسين محركات البحث المحلية لديك. عرض <a href="/ar/pricing">خطط التسعير</a> للتعرف على ميزات تسويق الصالون.</p>
+<h2>كيف تدعم ديزي تحسين محركات البحث المحلية لديك</h2>
+<p> توفر منصة الحجز الخاصة بـ ديزي تجربة حجز سريعة ومُحسَّنة للجوال تعمل على تحويل زوار البحث إلى عملاء. تعمل روابط الحجز المباشرة لملفك التجاري على جوجل، وأتمتة طلبات المراجعة، وتتبع التحليلات على إنشاء اتصال سلس بين جهود تحسين محركات البحث (SEO) والحجوزات الفعلية.</p>
+<p> استكشف <a href="/ar/features/business/marketing-promotions"> أدوات التسويق الخاصة بشركة ديزي</a> وشاهد كيف تتكامل مع إستراتيجية تحسين محركات البحث المحلية لديك. عرض <a href="/ar/pricing">خطط التسعير</a> للتعرف على ميزات تسويق الصالون.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
 <h3>ما هي المدة التي يستغرقها تحسين محركات البحث في الصالون للحصول على النتائج؟</h3>
-<p> يُعد تحسين محركات البحث المحلي استثمارًا متوسطًا إلى طويل الأجل. عادةً، ستشاهد تحسينات أولية خلال 4 إلى 8 أسابيع (خاصة من تحسين الملف التجاري على Google وبناء الاقتباسات). تستغرق تحسينات التصنيف المهمة للكلمات الرئيسية التنافسية ما بين 3 إلى 6 أشهر من الجهد المتواصل. النضج الكامل - حيث يظهر صالونك باستمرار في أفضل 3 نتائج محلية لكلماتك الرئيسية المستهدفة - عادة ما يستغرق من 6 إلى 12 شهرًا. إن الطبيعة المركبة لتحسين محركات البحث تعني تسارع النتائج بمرور الوقت مع بناء سلطتك.</p>
+<p> يُعد تحسين محركات البحث المحلي استثمارًا متوسطًا إلى طويل الأجل. عادةً، ستشاهد تحسينات أولية خلال 4 إلى 8 أسابيع (خاصة من تحسين الملف التجاري على جوجل وبناء الاقتباسات). تستغرق تحسينات التصنيف المهمة للكلمات الرئيسية التنافسية ما بين 3 إلى 6 أشهر من الجهد المتواصل. النضج الكامل - حيث يظهر صالونك باستمرار في أفضل 3 نتائج محلية لكلماتك الرئيسية المستهدفة - عادة ما يستغرق من 6 إلى 12 شهرًا. إن الطبيعة المركبة لتحسين محركات البحث تعني تسارع النتائج بمرور الوقت مع بناء سلطتك.</p>
 
 <h3> هل يجب عليّ الاستعانة بوكالة تحسين محركات البحث (SEO) أم القيام بذلك بنفسي؟</h3>
-<p> ابدأ بالتعامل مع الأساسيات بنفسك: تحسين الملف التجاري على Google، وإدارة المراجعة، وتحسين محركات البحث الأساسية على الصفحة. تحقق هذه الإجراءات أعلى عائد على الاستثمار ولا تتطلب خبرة فنية. فكر في الاستعانة بوكالة عندما تريد متابعة استراتيجيات أكثر تقدمًا (بناء الروابط، والتدقيق الفني لتحسين محركات البحث، وإستراتيجية المحتوى على نطاق واسع) أو عندما يكون وقتك أكثر قيمة في عمليات الصالون. عادةً ما تكلف وكالة تحسين محركات البحث المحلية الجيدة لصالون ذو موقع واحد ما بين 500 إلى 1500 دولار شهريًا.</p>
+<p> ابدأ بالتعامل مع الأساسيات بنفسك: تحسين الملف التجاري على جوجل، وإدارة المراجعة، وتحسين محركات البحث الأساسية على الصفحة. تحقق هذه الإجراءات أعلى عائد على الاستثمار ولا تتطلب خبرة فنية. فكر في الاستعانة بوكالة عندما تريد متابعة استراتيجيات أكثر تقدمًا (بناء الروابط، والتدقيق الفني لتحسين محركات البحث، وإستراتيجية المحتوى على نطاق واسع) أو عندما يكون وقتك أكثر قيمة في عمليات الصالون. عادةً ما تكلف وكالة تحسين محركات البحث المحلية الجيدة لصالون ذو موقع واحد ما بين 500 إلى 1500 دولار شهريًا.</p>
 
 <h3> هل أحتاج إلى مدونة على موقع الصالون الخاص بي لتحسين محركات البحث؟</h3>
-<p> المدونة ليست مطلوبة بشكل صارم، ولكنها تعمل على تسريع نتائج تحسين محركات البحث (SEO) بشكل ملحوظ. يستهدف محتوى المدونة الكلمات الرئيسية الطويلة التي لا تستطيع صفحات الخدمة الخاصة بك تغطيتها، ويوضح الخبرة لكل من Google والعملاء المحتملين، ويوفر محتوى جديدًا يشير إلى موقع ويب نشط. حتى نشر مقالتين شهريًا يمكن أن يؤدي إلى تحسين ظهور بحثك بشكل ملموس خلال 3-6 أشهر. ركز على المواضيع التي تجمع بين الخبرة في مجال التجميل والأهمية المحلية.</p>
+<p> المدونة ليست مطلوبة بشكل صارم، ولكنها تعمل على تسريع نتائج تحسين محركات البحث (SEO) بشكل ملحوظ. يستهدف محتوى المدونة الكلمات الرئيسية الطويلة التي لا تستطيع صفحات الخدمة الخاصة بك تغطيتها، ويوضح الخبرة لكل من جوجل والعملاء المحتملين، ويوفر محتوى جديدًا يشير إلى موقع ويب نشط. حتى نشر مقالتين شهريًا يمكن أن يؤدي إلى تحسين ظهور بحثك بشكل ملموس خلال 3-6 أشهر. ركز على المواضيع التي تجمع بين الخبرة في مجال التجميل والأهمية المحلية.</p>
 
 <h3> ما مدى أهمية التقييمات عبر الإنترنت لتحسين محركات البحث في الصالونات؟</h3>
-<p> تعد المراجعات أحد أهم ثلاثة عوامل للتصنيف المحلي. تستخدم Google كمية المراجعة وجودتها وحداثتها ووجود الكلمات الرئيسية في المراجعات لتحديد التصنيفات المحلية. تتفوق الصالونات التي تتمتع بمراجعات أحدث وعالية التقييم باستمرار على المنافسين الذين لديهم مراجعات أقل أو أقدم. بالإضافة إلى التصنيف، تؤثر المراجعات بشكل مباشر على معدلات النقر إلى الظهور وتحويل الحجز - صالون من فئة 4.8 نجوم مع 100 تعليق يحول الزائرين إلى حجوزات بمعدل ضعف تقريبًا صالون من فئة 4.2 نجوم مع 20 تعليقًا.</p>`,
+<p> تعد المراجعات أحد أهم ثلاثة عوامل للتصنيف المحلي. تستخدم جوجل كمية المراجعة وجودتها وحداثتها ووجود الكلمات الرئيسية في المراجعات لتحديد التصنيفات المحلية. تتفوق الصالونات التي تتمتع بمراجعات أحدث وعالية التقييم باستمرار على المنافسين الذين لديهم مراجعات أقل أو أقدم. بالإضافة إلى التصنيف، تؤثر المراجعات بشكل مباشر على معدلات النقر إلى الظهور وتحويل الحجز - صالون من فئة 4.8 نجوم مع 100 تعليق يحول الزائرين إلى حجوزات بمعدل ضعف تقريبًا صالون من فئة 4.2 نجوم مع 20 تعليقًا.</p>`,
     metaTitle: 'تحسين محركات البحث للصالونات: دليل البحث المحلي | ديزي',
     metaDescription:
       'أتقن تحسين محركات البحث المحلية للصالون للترتيب في بحث Google والخرائط. يغطي التحسين على الصفحة والاستشهادات وبناء الروابط واستراتيجية المحتوى وتحسين محركات البحث التقنية.',
@@ -2505,7 +2505,7 @@ const independentBeautyProfessionalMarketingArticleAr: LocalBlogPost = {
       'دليل تسويقي شامل لمحترفي التجميل المستقلين والمستقلين. يغطي العلامات التجارية الشخصية، وإستراتيجية وسائل التواصل الاجتماعي، واكتساب العملاء، والتواصل بشأن التسعير، وبناء قاعدة عملاء مستدامة دون وجود فريق صالون خلفك.',
     aboutPosts: `<h2>يحتاج محترفو التجميل المستقلون إلى نهج تسويقي مختلف</h2>
 <p> التسويق كمحترف تجميل مستقل يختلف جوهريًا عن تسويق الصالون. ليس لديك علامة تجارية أو فريق أو ميزانية تسويق خلفك، بل أنت العلامة التجارية. ينعكس كل قرار تسويقي عليك بشكل مباشر، وكل علاقة جديدة مع العميل تبدأ بسمعتك الشخصية.</p>
-<p> الخبر السار: يتمتع المحترفون المستقلون بمزايا لا تتمتع بها الصالونات. يمكنك بناء اتصالات شخصية أعمق، والتحرك بشكل أسرع في الاتجاهات، وإنشاء علامة تجارية أصلية يشعر العملاء بارتباطهم الشخصي بها. يوفر هذا الدليل <a href="/ar/resources/blog/businesses/salon-marketing-strategies">إطار عمل تسويقي</a> مصممًا خصيصًا لمحترفي التجميل المستقلين، سواء كنت تستأجر كرسيًا، أو تدير استوديوًا منزليًا، أو تقدم خدمات الهاتف المحمول.</p>
+<p> الخبر السار: يتمتع المحترفون المستقلون بمزايا لا تتمتع بها الصالونات. يمكنك بناء اتصالات شخصية أعمق، والتحرك بشكل أسرع في الاتجاهات، وإنشاء علامة تجارية أصلية يشعر العملاء بارتباطهم الشخصي بها. يوفر هذا الدليل <a href="/ar/resources/blog/business/salon-marketing-strategies">إطار عمل تسويقي</a> مصممًا خصيصًا لمحترفي التجميل المستقلين، سواء كنت تستأجر كرسيًا، أو تدير استوديوًا منزليًا، أو تقدم خدمات الهاتف المحمول.</p>
 
 <h2>أساس بناء علامتك التجارية الشخصية</h2>
 <p> علامتك التجارية الشخصية هي أهم الأصول التسويقية التي تمتلكها. فهو يحدد ما إذا كان العميل المحتمل سيختارك من بين مئات المحترفين الآخرين الذين يقدمون خدمات مماثلة في منطقتك.</p>
@@ -2523,7 +2523,7 @@ const independentBeautyProfessionalMarketingArticleAr: LocalBlogPost = {
 <p> وسائل التواصل الاجتماعي هي أقوى قناة تسويقية لديك. إنه مجاني ومرئي ويصل إلى العملاء المحتملين حيث يقضون وقتهم بالضبط.</p>
 
 <h3>استراتيجية الانستقرام</h3>
-<p> Instagram هو النظام الأساسي الأساسي لمحترفي التجميل. قم بتحسين ملفك الشخصي كمحفظة وأداة للحجز:</p>
+<p> إنستغرام هو النظام الأساسي الأساسي لمحترفي التجميل. قم بتحسين ملفك الشخصي كمحفظة وأداة للحجز:</p>
 <ul>
 <li><strong>السيرة الذاتية:</strong> التخصص + الموقع + رابط الحجز. مثال: "أخصائي الشعر المجعد | [المدينة] | احجز أدناه ↓"</li>
 <li><strong>مزيج المحتوى:</strong> التحولات (40%)، النصائح التعليمية (25%)، الشخصية/خلف الكواليس (20%)، وشهادات العملاء (15%).</li>
@@ -2547,10 +2547,10 @@ const independentBeautyProfessionalMarketingArticleAr: LocalBlogPost = {
 <p>بعيدًا عن وسائل التواصل الاجتماعي، يمكن للمحترفين المستقلين الاستفادة من العديد من قنوات الاكتساب عالية التأثير.</p>
 
 <h3>ملفات تعريف النظام الأساسي</h3>
-<p> توفر منصات الحجز الاحترافية اكتشافًا مدمجًا للعملاء الذين يبحثون حسب الخدمة والموقع. <a href="/ar/features/professional/marketing-promotions">تم تحسين الملف الشخصي الاحترافي لـ Daisy</a> لاكتشاف العملاء، من خلال محفظتك وخدماتك ومراجعاتك وحجزك المباشر في مكان واحد. أكمل ملفك الشخصي بالكامل - يتلقى المحترفون الذين لديهم ملفات شخصية كاملة استفسارات حجز أكثر بمقدار 3-4 مرات من أولئك الذين لديهم ملفات شخصية جزئية.</p>
+<p> توفر منصات الحجز الاحترافية اكتشافًا مدمجًا للعملاء الذين يبحثون حسب الخدمة والموقع. <a href="/ar/features/professional/marketing-promotions">تم تحسين الملف الشخصي الاحترافي لـ ديزي</a> لاكتشاف العملاء، من خلال محفظتك وخدماتك ومراجعاتك وحجزك المباشر في مكان واحد. أكمل ملفك الشخصي بالكامل - يتلقى المحترفون الذين لديهم ملفات شخصية كاملة استفسارات حجز أكثر بمقدار 3-4 مرات من أولئك الذين لديهم ملفات شخصية جزئية.</p>
 
-<h3>الملف التجاري على Google</h3>
-<p>إذا كان لديك موقع ثابت (كرسي مستأجر، أو استوديو، أو صالون منزلي)، فاطلب ملفًا تجاريًا على Google. يلتقط هذا العملاء ذوي الاهتمام الأكبر - الأشخاص الذين يبحثون بنشاط عن خدماتك في منطقتك. اتبع نفس مبادئ التحسين الواردة في <a href="/ar/resources/blog/businesses/google-my-business-salon-optimization">دليل الملفات التجارية على Google</a>، والذي تم تكييفه ليناسب ممارستك الفردية.</p>
+<h3>الملف التجاري على جوجل</h3>
+<p>إذا كان لديك موقع ثابت (كرسي مستأجر، أو استوديو، أو صالون منزلي)، فاطلب ملفًا تجاريًا على جوجل. يلتقط هذا العملاء ذوي الاهتمام الأكبر - الأشخاص الذين يبحثون بنشاط عن خدماتك في منطقتك. اتبع نفس مبادئ التحسين الواردة في <a href="/ar/resources/blog/business/google-my-business-salon-optimization">دليل الملفات التجارية على جوجل</a>، والذي تم تكييفه ليناسب ممارستك الفردية.</p>
 
 <h3>شبكة الإحالة</h3>
 <p> قم ببناء شبكة إحالة مع محترفين تكميليين: فناني الماكياج، والمصورين، ومخططي حفلات الزفاف، ومصممي الأزياء الشخصية، وغيرهم من محترفي التجميل الذين يخدمون عملائك المستهدفين ولكن لا يتنافسون معك. قم بإضفاء الطابع الرسمي على العلاقة: "أحيل العملاء إليك للحصول على الأظافر، وأنت تحيل العملاء إلي للحصول على اللون." تتبع الإحالات حتى تتمكن من التعرف على أفضل شركاء الإحالة لديك ومكافأتهم.</p>
@@ -2574,7 +2574,7 @@ const independentBeautyProfessionalMarketingArticleAr: LocalBlogPost = {
 <p> يعد الاحتفاظ بالأعضاء أكثر أهمية بالنسبة للمحترفين المستقلين منه بالنسبة للصالونات. خسارة عميل منتظم واحد يمثل نسبة أكبر من دخلك.</p>
 <ul>
 <li><strong> إعادة الحجز عند الدفع:</strong> اعرض دائمًا تحديد الموعد التالي قبل مغادرة العميل. العملاء الذين يعيدون الحجز فورًا يحصلون على معدل عرض يزيد عن 90% مقابل 60% لأولئك الذين "سيحجزون لاحقًا".</li>
-<li><strong>متابعة مخصصة:</strong> رسالة مختصرة بعد 24-48 ساعة من الموعد للتحقق من تجربتهم. <a href="/ar/features/professional/communication-tools"> تقوم أدوات الاتصال الخاصة بـ Daisy</a> بأتمتة هذا الأمر مع الحفاظ على الشعور الشخصي.</li>
+<li><strong>متابعة مخصصة:</strong> رسالة مختصرة بعد 24-48 ساعة من الموعد للتحقق من تجربتهم. <a href="/ar/features/professional/communication-tools"> تقوم أدوات الاتصال الخاصة بـ ديزي</a> بأتمتة هذا الأمر مع الحفاظ على الشعور الشخصي.</li>
 <li><strong>تقدير الولاء:</strong> الاعتراف بالزيارات المهمة (الموعد العاشر، الذكرى السنوية الأولى) بلفتة صغيرة - ترقية مجانية، أو ملاحظة شخصية، أو هدية صغيرة.</li>
 <li><strong>تجربة متسقة:</strong> قم بتطوير اللمسات المميزة التي تجعل كل زيارة لا تُنسى ويمكن التنبؤ بها. يعود العملاء إلى المحترفين الذين يقدمون خدماتهم باستمرار، وليس فقط في بعض الأحيان.</li>
 </ul>
@@ -2582,16 +2582,16 @@ const independentBeautyProfessionalMarketingArticleAr: LocalBlogPost = {
 <h2>إدارة سمعتك على الإنترنت</h2>
 <p> كمحترف مستقل، سمعتك هي عملك. تشكل كل مراجعة وتعليق على وسائل التواصل الاجتماعي وتفاعل العميل تصورات العملاء المحتملين.</p>
 <ul>
-<li><strong>اطلب التقييمات بشكل منهجي:</strong> اطلب من كل عميل راضٍ إجراء مراجعة على Google ومنصة الحجز الخاصة بك. قم بتوفير رابط مباشر لتسهيل الأمر.</li>
+<li><strong>اطلب التقييمات بشكل منهجي:</strong> اطلب من كل عميل راضٍ إجراء مراجعة على جوجل ومنصة الحجز الخاصة بك. قم بتوفير رابط مباشر لتسهيل الأمر.</li>
 <li><strong>الرد على جميع التعليقات:</strong> شكرًا للمراجعين الإيجابيين على وجه التحديد. تعامل مع المراجعات السلبية بشكل احترافي واعرض حل المشكلات.</li>
 <li><strong>شهادات العرض:</strong> قم بإبراز تعليقات العملاء بشكل بارز على وسائل التواصل الاجتماعي وصفحة الحجز وأي مواد تسويقية.</li>
 </ul>
-<p>تتبع مقاييسك المهنية - معدل إعادة الحجز، ورضا العملاء، واتجاهات الإيرادات - باستخدام <a href="/ar/features/professional/analytics-reports">التحليلات المهنية لشركة Daisy</a> لتحديد ما ينجح وأين يجب تحسينه.</p>
+<p>تتبع مقاييسك المهنية - معدل إعادة الحجز، ورضا العملاء، واتجاهات الإيرادات - باستخدام <a href="/ar/features/professional/analytics-reports">التحليلات المهنية لشركة ديزي</a> لتحديد ما ينجح وأين يجب تحسينه.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
 <h3>ما المبلغ الذي يجب أن ينفقه محترف التجميل المستقل على التسويق؟</h3>
-<p> ابدأ بالوقت، وليس بالمال. الأنشطة التسويقية ذات أعلى عائد على الاستثمار مجانية للمستقلين: إنشاء محتوى الوسائط الاجتماعية، وتحسين الملف التجاري على Google، وبناء شبكة الإحالة، وجمع المراجعات. مع نمو دخلك، خصص 5-10% من الإيرادات للتسويق. بالنسبة لمحترف يكسب 5000 دولار شهريًا، أي ما بين 250 إلى 500 دولار - وهو ما يكفي للاشتراك في منصة الحجز، والمنشورات التي يتم الترويج لها من حين لآخر، والتصوير الفوتوغرافي الاحترافي كل ثلاثة أشهر. لا تنفق أبدًا على التسويق قبل أن يكون لديك محفظة قوية وتجربة عملاء متسقة لدعمها.</p>
+<p> ابدأ بالوقت، وليس بالمال. الأنشطة التسويقية ذات أعلى عائد على الاستثمار مجانية للمستقلين: إنشاء محتوى الوسائط الاجتماعية، وتحسين الملف التجاري على جوجل، وبناء شبكة الإحالة، وجمع المراجعات. مع نمو دخلك، خصص 5-10% من الإيرادات للتسويق. بالنسبة لمحترف يكسب 5000 دولار شهريًا، أي ما بين 250 إلى 500 دولار - وهو ما يكفي للاشتراك في منصة الحجز، والمنشورات التي يتم الترويج لها من حين لآخر، والتصوير الفوتوغرافي الاحترافي كل ثلاثة أشهر. لا تنفق أبدًا على التسويق قبل أن يكون لديك محفظة قوية وتجربة عملاء متسقة لدعمها.</p>
 
 <h3>هل يجب علي إنشاء اسم تجاري أو سوق باسمي؟</h3>
 <p> بالنسبة لمعظم محترفي التجميل المستقلين، يعد التسويق باسمك أكثر فعالية. يحجز العملاء مع الأشخاص، وليس مع العلامات التجارية، في مجال صناعة التجميل. اسمك يبني سمعة تتبعك بغض النظر عن مكان عملك. يمكن أن يخلق اسم النشاط التجاري مسافة غير ضرورية بينك وبين عملائك. الاستثناء هو إذا كنت تخطط في النهاية لبناء فريق أو فتح استوديو - في هذه الحالة، يوفر اسم النشاط التجاري أساسًا للتوسع بما يتجاوز عملك الشخصي.</p>
@@ -2600,7 +2600,7 @@ const independentBeautyProfessionalMarketingArticleAr: LocalBlogPost = {
 <p> أنت تتنافس من خلال كونك ما لا يستطيع الصالون تحقيقه: شخصية، وأصيلة، ومتصلة بعمق بكل عميل. توفر الصالونات الاتساق والراحة؛ أنت تقدم علاقة شخصية ورؤية إبداعية فريدة من نوعها. يجب أن يؤكد تسويقك على ما يجعلك مختلفًا: خبرتك المحددة، ونهجك الشخصي، ومدى توفرك لإجراء مشاورات أطول، والتجربة الفردية الحصرية. العملاء الذين يفضلون الاتصال الشخصي على الأسماء التجارية هم جمهورك المستهدف، وهم على استعداد لدفع أسعار مرتفعة مقابل ذلك.</p>
 
 <h3>متى يجب أن أستثمر في موقع ويب بدلاً من مجرد استخدام وسائل التواصل الاجتماعي ومنصة الحجز؟</h3>
-<p> يصبح موقع الويب المخصص ذا قيمة عندما تريد: الحصول على تصنيف في بحث Google المحلي (تحتل ملفات تعريف الوسائط الاجتماعية مرتبة أقل فعالية)، أو تقديم محفظة شاملة تتجاوز تنسيق التمرير الخاص بوسائل التواصل الاجتماعي، أو إنشاء قائمة بريد إلكتروني للتسويق المباشر، أو تقديم نفسك كمحترف متميز. إذا كنت بدأت للتو، فإن الملف الشخصي القوي على Instagram بالإضافة إلى منصة الحجز مثل <a href="/ar/features/professional/marketing-promotions">The Daisy</a> يكفي. قم بإضافة موقع ويب بمجرد استقرار دخلك ورغبتك في الاستثمار في ظهور البحث على المدى الطويل.</p>`,
+<p> يصبح موقع الويب المخصص ذا قيمة عندما تريد: الحصول على تصنيف في بحث جوجل المحلي (تحتل ملفات تعريف الوسائط الاجتماعية مرتبة أقل فعالية)، أو تقديم محفظة شاملة تتجاوز تنسيق التمرير الخاص بوسائل التواصل الاجتماعي، أو إنشاء قائمة بريد إلكتروني للتسويق المباشر، أو تقديم نفسك كمحترف متميز. إذا كنت بدأت للتو، فإن الملف الشخصي القوي على إنستغرام بالإضافة إلى منصة الحجز مثل <a href="/ar/features/professional/marketing-promotions">ديزي</a> يكفي. قم بإضافة موقع ويب بمجرد استقرار دخلك ورغبتك في الاستثمار في ظهور البحث على المدى الطويل.</p>`,
     metaTitle: 'التسويق لمحترفي التجميل المستقلين | ديزي',
     metaDescription:
       'دليل تسويقي شامل لمحترفي التجميل المستقلين. يغطي العلامة التجارية الشخصية ووسائل التواصل واستقطاب العملاء والتسعير وبناء قاعدة عملاء مخلصة.',
