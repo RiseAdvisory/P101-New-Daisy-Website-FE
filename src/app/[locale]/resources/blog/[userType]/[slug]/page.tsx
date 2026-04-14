@@ -9,6 +9,8 @@ import {
 import BlogPostContent from './BlogPostContent';
 import BlogPostJsonLd from './BlogPostJsonLd';
 import { SpeakableSchema } from '@/components/seo/SpeakableSchema';
+import { ProfilePageSchema } from '@/components/seo/ProfilePageSchema';
+import { authorBios } from '@/lib/constants/blog/authorData';
 
 interface PageProps {
   params: {
@@ -101,11 +103,24 @@ export default async function BlogPostPage({ params }: PageProps) {
   }
 
   const metaTitle = post.attributes.metaTitle || post.attributes.title;
+  const authorName = post.attributes.user?.data?.attributes?.name || '';
+  const author = authorBios[authorName];
 
   return (
     <>
       {/* JSON-LD Structured Data */}
       <BlogPostJsonLd post={post} userType={userType as UserType} />
+      {author && author.name !== 'The Daisy Team' && (
+        <ProfilePageSchema
+          url={`https://www.jointhedaisy.com/${locale}/resources/blog/${userType}/${slug}`}
+          type="Person"
+          name={author.name}
+          description={author.bio}
+          image={author.image}
+          jobTitle={author.jobTitle}
+          worksFor="The Daisy"
+        />
+      )}
       <SpeakableSchema
         title={metaTitle}
         url={`https://www.jointhedaisy.com/${locale}/resources/blog/${userType}/${slug}`}
