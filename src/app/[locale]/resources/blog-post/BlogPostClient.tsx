@@ -9,6 +9,28 @@ import { t } from '@/lib/constants/i18n';
 import { usePathname } from 'next/navigation';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
 
+function pickPostsForLocale(posts: any[], locale: string) {
+  const bySlug = new Map<string, any>();
+  for (const post of posts) {
+    const slug = post?.attributes?.slug;
+    if (!slug) continue;
+
+    const existing = bySlug.get(slug);
+    if (!existing) {
+      bySlug.set(slug, post);
+      continue;
+    }
+
+    // Prefer the current locale when it exists, otherwise keep the existing entry.
+    const postLocale = post?.attributes?.locale;
+    const existingLocale = existing?.attributes?.locale;
+    if (postLocale === locale && existingLocale !== locale) {
+      bySlug.set(slug, post);
+    }
+  }
+  return Array.from(bySlug.values());
+}
+
 export const BlogPostClient = () => {
   const [listCard, setListCards] = useState<any[] | null>(null);
   const [userType, setUserType] = useState<string>('customer');
@@ -27,7 +49,7 @@ export const BlogPostClient = () => {
     if (currentPage === '/professional') type = 'professional';
 
     setUserType(type);
-    setListCards(blogPostsByUserType[type] || []);
+    setListCards(pickPostsForLocale(blogPostsByUserType[type] || [], locale));
     chooseBreadcrumb(hero.breadcrumbs ?? '');
     choosePathStrapi(`/resources/blog/${type}`);
   }, [locale, currentPage, hero, chooseBreadcrumb, choosePathStrapi]);
@@ -35,8 +57,8 @@ export const BlogPostClient = () => {
   return (
     <div className="w-full">
       <HeroPage
-        bredCrumbDesription={'Resources'}
-        bredCrumbTitle={'Blog Posts'}
+        bredCrumbDesription={locale === 'ar' ? 'الموارد' : 'Resources'}
+        bredCrumbTitle={locale === 'ar' ? 'المقالات' : 'Blog Posts'}
         isVisibleBreadCrumbs={true}
         hiddenArrow={true}
         visibleDescriiton={false}
