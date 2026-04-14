@@ -49,9 +49,10 @@ interface Props {
   entry: GlossaryEntry;
   slug: string;
   locale: string;
+  termMap?: Record<string, string>;
 }
 
-export function GlossaryPageClient({ entry, slug, locale }: Props) {
+export function GlossaryPageClient({ entry, slug, locale, termMap }: Props) {
   const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
   const isRtl = locale === 'ar';
 
@@ -221,7 +222,7 @@ export function GlossaryPageClient({ entry, slug, locale }: Props) {
                 href={`/${locale}/glossary/${termSlug}`}
                 className="rounded-full border border-[#E8E9E9] px-4 py-2 text-sm font-medium text-[#455150] transition-colors hover:border-primary/20 hover:bg-primary/5 hover:text-primary"
               >
-                {termSlug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())}
+                {termMap?.[termSlug] || termSlug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())}
               </Link>
             ))}
           </div>

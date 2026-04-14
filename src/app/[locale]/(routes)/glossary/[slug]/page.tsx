@@ -61,7 +61,12 @@ export default function GlossaryPage({
         url={`https://www.jointhedaisy.com/${params.locale}/glossary/${params.slug}`}
         cssSelectors={['[data-geo-answer]', 'dfn', 'article > p:first-of-type']}
       />
-      <GlossaryPageClient entry={entry} slug={params.slug} locale={params.locale} />
+      <GlossaryPageClient
+        entry={entry}
+        slug={params.slug}
+        locale={params.locale}
+        termMap={Object.fromEntries(entries.map((e) => [e.slug, e.term]))}
+      />
     </>
   );
 }
