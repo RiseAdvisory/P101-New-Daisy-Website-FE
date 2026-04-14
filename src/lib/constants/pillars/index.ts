@@ -95,7 +95,7 @@ interface PillarsBundle {
 function getPillarsI18n(): I18nContent<PillarsBundle> {
   // Lazy require avoids any circular import headaches and keeps the EN dataset
   // as the single source of truth for slugs and structure.
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  // eslint-disable-next-line
   const ar = require('./pillars.ar') as PillarsBundle;
   return {
     en: { allPillarPages },
