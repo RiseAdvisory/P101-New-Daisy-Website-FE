@@ -7,10 +7,14 @@ import { ProfilePageSchema } from '@/components/seo/ProfilePageSchema';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
+  const isAr = locale === 'ar';
   return {
-  title: 'About Us | The Daisy - Beauty & Wellness Marketplace',
-  description:
-    'The Daisy is an AI-powered beauty platform helping salons, spas, and clinics grow through smart booking, marketing, and a 24/7 AI receptionist. Learn our story.',
+  title: isAr
+    ? 'من نحن | ديزي - سوق التجميل والعافية'
+    : 'About Us | The Daisy - Beauty & Wellness Marketplace',
+  description: isAr
+    ? 'تعرّف على ديزي، المنصة المدعومة بالذكاء الاصطناعي التي تساعد مشاريع التجميل على النمو من خلال الحجز الذكي وموظف الاستقبال الذكي واستقطاب العملاء.'
+    : 'The Daisy is an AI-powered beauty platform helping salons, spas, and clinics grow through smart booking, marketing, and a 24/7 AI receptionist. Learn our story.',
   keywords: [
     'about The Daisy',
     'beauty marketplace',
@@ -22,9 +26,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'wellness technology',
   ],
   openGraph: {
-    title: 'About Us | The Daisy - Beauty & Wellness Marketplace',
-    description:
-      'Learn about The Daisy, the beauty and wellness marketplace connecting customers with salons and beauty professionals.',
+    title: isAr
+      ? 'من نحن | ديزي - سوق التجميل والعافية'
+      : 'About Us | The Daisy - Beauty & Wellness Marketplace',
+    description: isAr
+      ? 'تعرّف على ديزي، المنصة المدعومة بالذكاء الاصطناعي التي تساعد مشاريع التجميل على النمو من خلال الحجز الذكي وموظف الاستقبال الذكي واستقطاب العملاء.'
+      : 'Learn about The Daisy, the beauty and wellness marketplace connecting customers with salons and beauty professionals.',
     url: `https://www.jointhedaisy.com/${locale}/about`,
     type: 'website',
     images: [
@@ -38,8 +45,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Us | The Daisy - Beauty & Wellness Marketplace',
-    description: 'Learn about The Daisy beauty and wellness marketplace.',
+    title: isAr
+      ? 'من نحن | ديزي - سوق التجميل والعافية'
+      : 'About Us | The Daisy - Beauty & Wellness Marketplace',
+    description: isAr
+      ? 'تعرّف على ديزي، المنصة المدعومة بالذكاء الاصطناعي التي تساعد مشاريع التجميل على النمو من خلال الحجز الذكي وموظف الاستقبال الذكي واستقطاب العملاء.'
+      : 'Learn about The Daisy beauty and wellness marketplace.',
     images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/about', locale),

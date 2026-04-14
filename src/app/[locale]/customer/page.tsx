@@ -7,10 +7,14 @@ import { getLocale } from '@/lib/locale';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
+  const isAr = locale === 'ar';
   return {
-  title: 'Book Beauty & Salon Services | The Daisy',
-  description:
-    'Book beauty, wellness & salon services with The Daisy. Discover salons near you, earn cashback rewards, manage appointments, and enjoy exclusive promotions on hair, nails & spa services.',
+  title: isAr
+    ? 'احجز خدمات التجميل والصالونات | ديزي'
+    : 'Book Beauty & Salon Services | The Daisy',
+  description: isAr
+    ? 'اكتشف واحجز خدمات التجميل مع ديزي. اكسب كاشباك على كل حجز. ابحث عن صالونات ومنتجعات وعيادات قريبة منك.'
+    : 'Book beauty, wellness & salon services with The Daisy. Discover salons near you, earn cashback rewards, manage appointments, and enjoy exclusive promotions on hair, nails & spa services.',
   keywords: [
     'beauty booking app',
     'salon near me',
@@ -24,9 +28,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'home beauty services',
   ],
   openGraph: {
-    title: 'Book Beauty & Salon Services | The Daisy',
-    description:
-      'Discover salons near you, earn cashback rewards, and book beauty services with exclusive promotions.',
+    title: isAr
+      ? 'احجز خدمات التجميل والصالونات | ديزي'
+      : 'Book Beauty & Salon Services | The Daisy',
+    description: isAr
+      ? 'اكتشف واحجز خدمات التجميل مع ديزي. اكسب كاشباك على كل حجز. ابحث عن صالونات ومنتجعات وعيادات قريبة منك.'
+      : 'Discover salons near you, earn cashback rewards, and book beauty services with exclusive promotions.',
     url: `https://www.jointhedaisy.com/${locale}/customer`,
     type: 'website',
     images: [
@@ -40,9 +47,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Book Beauty & Salon Services | The Daisy',
-    description:
-      'Discover salons near you, earn cashback rewards, and book beauty services.',
+    title: isAr
+      ? 'احجز خدمات التجميل والصالونات | ديزي'
+      : 'Book Beauty & Salon Services | The Daisy',
+    description: isAr
+      ? 'اكتشف واحجز خدمات التجميل مع ديزي. اكسب كاشباك على كل حجز. ابحث عن صالونات ومنتجعات وعيادات قريبة منك.'
+      : 'Discover salons near you, earn cashback rewards, and book beauty services.',
     images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/customer', locale),

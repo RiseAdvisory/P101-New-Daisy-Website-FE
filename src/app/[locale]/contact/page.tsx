@@ -6,10 +6,14 @@ import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
+  const isAr = locale === 'ar';
   return {
-  title: 'Contact Us | The Daisy - Beauty Booking Platform',
-  description:
-    'Get in touch with The Daisy team. Questions about our beauty booking platform, salon partnerships, or customer support? We are here to help.',
+  title: isAr
+    ? 'تواصل معنا | ديزي - منصة حجز التجميل'
+    : 'Contact Us | The Daisy - Beauty Booking Platform',
+  description: isAr
+    ? 'تواصل مع فريق ديزي. نحن هنا لمساعدتك في البدء أو الإجابة على أسئلتك حول منصتنا لأعمال التجميل.'
+    : 'Get in touch with The Daisy team. Questions about our beauty booking platform, salon partnerships, or customer support? We are here to help.',
   keywords: [
     'contact The Daisy',
     'beauty platform support',
@@ -21,9 +25,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'beauty marketplace contact',
   ],
   openGraph: {
-    title: 'Contact Us | The Daisy - Beauty Booking Platform',
-    description:
-      'Get in touch with The Daisy team for beauty platform questions and support.',
+    title: isAr
+      ? 'تواصل معنا | ديزي - منصة حجز التجميل'
+      : 'Contact Us | The Daisy - Beauty Booking Platform',
+    description: isAr
+      ? 'تواصل مع فريق ديزي. نحن هنا لمساعدتك في البدء أو الإجابة على أسئلتك حول منصتنا لأعمال التجميل.'
+      : 'Get in touch with The Daisy team for beauty platform questions and support.',
     url: `https://www.jointhedaisy.com/${locale}/contact`,
     type: 'website',
     images: [
@@ -37,8 +44,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Us | The Daisy - Beauty Booking Platform',
-    description: 'Get in touch with The Daisy team for questions and support.',
+    title: isAr
+      ? 'تواصل معنا | ديزي - منصة حجز التجميل'
+      : 'Contact Us | The Daisy - Beauty Booking Platform',
+    description: isAr
+      ? 'تواصل مع فريق ديزي. نحن هنا لمساعدتك في البدء أو الإجابة على أسئلتك حول منصتنا لأعمال التجميل.'
+      : 'Get in touch with The Daisy team for questions and support.',
     images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/contact', locale),

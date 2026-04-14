@@ -7,10 +7,14 @@ import { getLocale } from '@/lib/locale';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
+  const isAr = locale === 'ar';
   return {
-  title: 'Terms & Conditions | The Daisy - Beauty Booking Platform',
-  description:
-    'Review The Daisy terms and conditions governing the use of our beauty booking platform, services, and your rights and responsibilities as a customer or vendor.',
+  title: isAr
+    ? 'الشروط والأحكام | ديزي - منصة حجز التجميل'
+    : 'Terms & Conditions | The Daisy - Beauty Booking Platform',
+  description: isAr
+    ? 'اقرأ شروط وأحكام استخدام منصة ديزي لحجز خدمات التجميل.'
+    : 'Review The Daisy terms and conditions governing the use of our beauty booking platform, services, and your rights and responsibilities as a customer or vendor.',
   keywords: [
     'terms and conditions',
     'terms of service',
@@ -21,9 +25,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'The Daisy terms',
   ],
   openGraph: {
-    title: 'Terms & Conditions | The Daisy - Beauty Booking Platform',
-    description:
-      'Review The Daisy terms and conditions governing the use of our beauty booking platform.',
+    title: isAr
+      ? 'الشروط والأحكام | ديزي - منصة حجز التجميل'
+      : 'Terms & Conditions | The Daisy - Beauty Booking Platform',
+    description: isAr
+      ? 'اقرأ شروط وأحكام استخدام منصة ديزي لحجز خدمات التجميل.'
+      : 'Review The Daisy terms and conditions governing the use of our beauty booking platform.',
     url: `https://www.jointhedaisy.com/${locale}/terms-conditions`,
     type: 'website',
     images: [
@@ -37,9 +44,12 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Terms & Conditions | The Daisy - Beauty Booking Platform',
-    description:
-      'Review The Daisy terms and conditions for using our platform.',
+    title: isAr
+      ? 'الشروط والأحكام | ديزي - منصة حجز التجميل'
+      : 'Terms & Conditions | The Daisy - Beauty Booking Platform',
+    description: isAr
+      ? 'اقرأ شروط وأحكام استخدام منصة ديزي لحجز خدمات التجميل.'
+      : 'Review The Daisy terms and conditions for using our platform.',
     images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/terms-conditions', locale),
