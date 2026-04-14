@@ -120,20 +120,20 @@ describe('FeaturesBusinessClient', () => {
       'AI Receptionist',
     );
     expect(screen.getByTestId('category-ai')).toHaveTextContent(
-      'Smart Scheduling',
+      'AI Appointment Booking',
     );
   });
 
   it('renders marketing category items', () => {
     render(<FeaturesBusinessClient lang="en" />);
     expect(screen.getByTestId('category-marketing')).toHaveTextContent(
-      'Cashback Campaigns',
+      'Flash Cashback Offers',
     );
     expect(screen.getByTestId('category-marketing')).toHaveTextContent(
-      'Referral Program',
+      'Promotion Scheduling',
     );
     expect(screen.getByTestId('category-marketing')).toHaveTextContent(
-      'Social Media Tools',
+      'Marketplace Discovery',
     );
   });
 

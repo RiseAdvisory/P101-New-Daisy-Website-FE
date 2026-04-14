@@ -304,9 +304,88 @@ export const daisyData: {
 import { tier1Competitors } from './tier1Data';
 import { tier2Competitors } from './tier2Data';
 import { tier3Competitors } from './tier3Data';
+import type { I18nContent } from '../i18n';
 
 export const competitors: Record<string, CompetitorData> = {
   ...tier1Competitors,
   ...tier2Competitors,
   ...tier3Competitors,
+};
+
+// ---------------------------------------------------------------------------
+// Daisy Data — Arabic translation
+// ---------------------------------------------------------------------------
+
+export const daisyDataAr: typeof daisyData = {
+  features: daisyData.features,
+  pricing: {
+    ...daisyData.pricing,
+    startingPrice: 'من $50/شهرياً',
+    tiers: [
+      {
+        name: 'أساسي',
+        price: '$50/شهرياً',
+        priceNumeric: 50,
+        billingCycle: 'monthly',
+        features: [
+          '5 مستخدمين / تقويم',
+          'موقع/فرع واحد',
+          'حجوزات غير محدودة',
+          'إدارة المبيعات (نقاط البيع)',
+          'إدارة العملاء',
+          'تطبيق جوال وسطح مكتب',
+        ],
+      },
+      {
+        name: 'نمو',
+        price: '$150/شهرياً',
+        priceNumeric: 150,
+        billingCycle: 'monthly',
+        features: [
+          '10 مستخدمين / تقويم',
+          'موقعان/فرعان',
+          'مدفوعات إلكترونية',
+          'تذكيرات تلقائية',
+          'ظهور في السوق',
+          'دعم أولوية',
+        ],
+      },
+      {
+        name: 'أعمال',
+        price: '$250/شهرياً',
+        priceNumeric: 250,
+        billingCycle: 'monthly',
+        features: [
+          '15 مستخدم / تقويم',
+          '4 مواقع/فروع',
+          'تحليلات متقدمة',
+          'ترحيل بيانات مجاني',
+          'تأهيل مُرافق',
+          'جميع الميزات مضمنة',
+        ],
+      },
+    ],
+    hiddenCosts: [],
+    pricingModel: 'flat',
+    lastVerified: '2026-03-14',
+  },
+  gccPresence: daisyData.gccPresence,
+  aiCapabilities: {
+    ...daisyData.aiCapabilities,
+    aiDescription:
+      'موظف استقبال ذكي يعمل على مدار الساعة يتعامل مع الحجوزات والمدفوعات وخدمة العملاء بالعربية والإنجليزية. توصيات تسويقية وتحليلات مدعومة بالذكاء الاصطناعي.',
+  },
+  keyDifferentiators: [
+    'موظف استقبال ذكي (خدمة عملاء 24/7، مواعيد، مدفوعات)',
+    'محرك استقطاب العملاء (سوق + كاشباك + تسويق)',
+    'تحكم كامل بالعلامة التجارية (وايت ليبل لكل شيء)',
+    'تأثيرات الشبكة (الذكاء الاصطناعي يتحسن مع مزيد من البيانات)',
+    'الكل في واحد (8 فئات تحل محل 5+ أدوات)',
+    'متعدد اللغات (عربي/إنجليزي بأولوية متساوية، لغات إضافية قادمة، الخليج + عالمي)',
+  ],
+};
+
+export const daisyDataI18n: I18nContent<typeof daisyData> = {
+  en: daisyData,
+  ar: daisyDataAr,
 };

@@ -73,7 +73,7 @@ export const Footer = () => {
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <div className="flex items-center gap-4">
             <p className="text-xs text-white/60 ltr:font-montserrat">
-              &copy; {new Date().getFullYear()} The Daisy. All rights reserved.
+              &copy; {new Date().getFullYear()} {locale === 'ar' ? 'ديزي. جميع الحقوق محفوظة.' : 'The Daisy. All rights reserved.'}
             </p>
             <span className="hidden h-3 w-px bg-white/20 sm:block" />
             <nav aria-label="Language" className="flex items-center gap-2 text-xs">

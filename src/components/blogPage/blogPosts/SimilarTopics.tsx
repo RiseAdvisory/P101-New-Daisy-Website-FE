@@ -2,18 +2,26 @@
 import Image from 'next/image';
 import { CalendarIcon } from '@/assets/icons/calendarIcon/CalendarIcon';
 import { ClockIcon } from '@/assets/icons/clockIcon/ClockIcon';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useEffect, useMemo, useState } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 import { usePostStore } from '@/store/post';
 import { useMyContext } from '@/app/MyContext';
-import { blogPostsByUserType } from '@/lib/constants/blog/blogData';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
+import { formatBlogDate, formatReadTime } from '@/lib/utils/blogFormat';
+import { getAuthorBio } from '@/lib/constants/blog/authorData';
+import { translateTag } from '@/lib/constants/blog/tagTranslations';
+import { getAllBlogPosts, UserType } from '@/lib/api/blog';
 
 export const SimilarTopics = ({ titleSimilar }: { titleSimilar: string }) => {
   const [listCard, setListCards] = useState<any>();
 
   const router = useRouter();
   const { handlePost } = usePostStore();
-  const { userChange: currentPage, setUserChange } = useMyContext();
+  const { userChange: currentPage } = useMyContext();
+
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const isRtl = locale === 'ar';
 
   useEffect(() => {
     let type = 'customer';
@@ -27,10 +35,9 @@ export const SimilarTopics = ({ titleSimilar }: { titleSimilar: string }) => {
       type = 'professional';
     }
 
-    // Load from local data
-    const posts = blogPostsByUserType[type] || [];
-    setListCards(posts);
-  }, [currentPage]);
+    // Use the blog API to ensure AR translations inherit EN media (images) for each slug.
+    getAllBlogPosts(type as UserType, locale).then(setListCards);
+  }, [currentPage, locale]);
 
   return (
     <div className="flex flex-col justify-center items-center ">
@@ -77,18 +84,18 @@ export const SimilarTopics = ({ titleSimilar }: { titleSimilar: string }) => {
                 <div className="px-6 py-4 mt-6">
                   <div className="flex justify-start gap-2 text-sm">
                     <span className="px-3 py-1 text-[#2543AD] bg-[#E9ECF7] rounded-sm ">
-                      {item.attributes.tags?.category}
+                      {translateTag(item.attributes.tags?.category || '', 'category', locale)}
                     </span>
                     <span className="px-3 py-1 text-[#14736F] bg-[#E7F1F1] rounded-sm">
-                      {item.attributes.tags?.topic}
+                      {translateTag(item.attributes.tags?.topic || '', 'topic', locale)}
                     </span>
                   </div>
                   <h3 className="mt-2 text-lg ltr:font-montserrat font-semibold">
                     {item.attributes.title}
                   </h3>
 
-                  <div className="flex justify-start gap-2 text-gray-500 text-sm mt-4">
-                    <div className=" hidden md:flex ltr:border-r ltr:pr-[10px] rtl:pl-[10px]">
+                  <div className="flex justify-start gap-2 text-gray-500 text-sm mt-4" dir={isRtl ? 'rtl' : 'ltr'}>
+                    <div className=" hidden md:flex ltr:border-r ltr:pr-[10px] rtl:border-l rtl:pl-[10px]">
                       <Image
                         src={ownerSrc}
                         alt="people"
@@ -97,16 +104,25 @@ export const SimilarTopics = ({ titleSimilar }: { titleSimilar: string }) => {
                         height={18}
                       />
                       <span className=" text-gray-500 text-sm">
-                        {item.attributes.user?.data?.attributes?.name ?? item.attributes.user?.name}
+                        {getAuthorBio(item.attributes.user?.data?.attributes?.name ?? item.attributes.user?.name ?? '', locale)?.name ?? item.attributes.user?.data?.attributes?.name ?? item.attributes.user?.name}
                       </span>
                     </div>
-                    <span className="flex items-center border-r pr-[10px]">
+                    <span className="flex items-center ltr:border-r ltr:pr-[10px] rtl:border-l rtl:pl-[10px]">
                       <CalendarIcon className="ltr:mr-[10px] rtl:ml-[10px]" />
-                      {item.attributes.user?.data?.attributes?.date ?? item.attributes.user?.date}
+                      {formatBlogDate(
+                        item.attributes.user?.data?.attributes?.date
+                          ?? item.attributes.user?.date
+                          ?? item.attributes.publishedAt,
+                        locale,
+                        item.attributes.user?.data?.attributes?.date ?? item.attributes.user?.date ?? ''
+                      )}
                     </span>
-                    <span className="flex items-center rtl:pr-2 rtl:border-r">
+                    <span className="flex items-center rtl:pr-2">
                       <ClockIcon className="ltr:mr-[10px] rtl:ml-[10px]" />
-                      {item.attributes.user?.data?.attributes?.time ?? item.attributes.user?.time}
+                      {formatReadTime(
+                        item.attributes.user?.data?.attributes?.time ?? item.attributes.user?.time,
+                        locale
+                      )}
                     </span>
                   </div>
                   <p className="mt-2 text-[#455150] text-sm ltr:font-montserrat">

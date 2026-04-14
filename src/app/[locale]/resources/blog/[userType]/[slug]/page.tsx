@@ -9,6 +9,8 @@ import {
 import BlogPostContent from './BlogPostContent';
 import BlogPostJsonLd from './BlogPostJsonLd';
 import { SpeakableSchema } from '@/components/seo/SpeakableSchema';
+import { ProfilePageSchema } from '@/components/seo/ProfilePageSchema';
+import { getAuthorBio } from '@/lib/constants/blog/authorData';
 
 interface PageProps {
   params: {
@@ -44,7 +46,7 @@ export async function generateMetadata({
     };
   }
 
-  const post = await getBlogPostBySlug(userType as UserType, slug);
+  const post = await getBlogPostBySlug(userType as UserType, slug, locale);
 
   if (!post) {
     return {
@@ -94,18 +96,31 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
-  const post = await getBlogPostBySlug(userType as UserType, slug);
+  const post = await getBlogPostBySlug(userType as UserType, slug, locale);
 
   if (!post) {
     notFound();
   }
 
   const metaTitle = post.attributes.metaTitle || post.attributes.title;
+  const authorName = post.attributes.user?.data?.attributes?.name || '';
+  const author = getAuthorBio(authorName, locale);
 
   return (
     <>
       {/* JSON-LD Structured Data */}
-      <BlogPostJsonLd post={post} userType={userType as UserType} />
+      <BlogPostJsonLd post={post} userType={userType as UserType} locale={locale} />
+      {author && author.name !== 'The Daisy Team' && author.name !== 'فريق ديزي' && (
+        <ProfilePageSchema
+          url={`https://www.jointhedaisy.com/${locale}/resources/blog/${userType}/${slug}`}
+          type="Person"
+          name={author.name}
+          description={author.bio}
+          image={author.image}
+          jobTitle={author.jobTitle}
+          worksFor={locale === 'ar' ? 'ديزي' : 'The Daisy'}
+        />
+      )}
       <SpeakableSchema
         title={metaTitle}
         url={`https://www.jointhedaisy.com/${locale}/resources/blog/${userType}/${slug}`}

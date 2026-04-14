@@ -53,17 +53,40 @@ import { AiEnhancementSection } from './AiEnhancementSection';
 import { NetworkEffectsSection } from './NetworkEffectsSection';
 import { DemoPlaceholder } from './DemoPlaceholder';
 
+const uiStrings = {
+  en: {
+    features: 'Features',
+    faq: 'Frequently Asked Questions',
+    readyToExperience: (name: string) => `Ready to Experience ${name}?`,
+    ctaSubtext: (name: string, userType: string) =>
+      `See how Daisy's ${name} features can transform your ${userType === 'business' ? 'business' : 'career'}. Start your free trial today.`,
+    business: 'Business',
+    professional: 'Professional',
+  },
+  ar: {
+    features: 'المميزات',
+    faq: 'الأسئلة الشائعة',
+    readyToExperience: (name: string) => `هل أنت مستعد لتجربة ${name}؟`,
+    ctaSubtext: (name: string, userType: string) =>
+      `اكتشف كيف يمكن لميزات ${name} من ديزي أن تحوّل ${userType === 'business' ? 'عملك' : 'مسيرتك المهنية'}. ابدأ تجربتك المجانية اليوم.`,
+    business: 'الأعمال',
+    professional: 'المحترفين',
+  },
+};
+
 interface Props {
   userType: 'business' | 'professional';
   slug: string;
+  locale?: string;
 }
 
-export function FeatureDeepDiveClient({ userType, slug }: Props) {
+export function FeatureDeepDiveClient({ userType, slug, locale = 'en' }: Props) {
   const data = getFeatureDeepDive(userType, slug);
   if (!data) return null;
 
+  const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
   const related = getRelatedFeatureDeepDives(userType, slug);
-  const userLabel = userType === 'business' ? 'Business' : 'Professional';
+  const userLabel = userType === 'business' ? t.business : t.professional;
 
   const relatedLinks = related.map((r) => ({
     title: r.categoryName,
@@ -96,7 +119,7 @@ export function FeatureDeepDiveClient({ userType, slug }: Props) {
       <div className="bg-gradient-to-br from-primary via-primary to-[#1a3a3a] px-4 pt-28 md:pt-32">
         <nav className="mx-auto max-w-4xl text-sm text-white/60">
           <Link href="/features" className="hover:text-white/80">
-            Features
+            {t.features}
           </Link>
           <span className="mx-2">/</span>
           <Link
@@ -172,7 +195,7 @@ export function FeatureDeepDiveClient({ userType, slug }: Props) {
         <section className="w-full bg-[#F8F5F3] px-4 py-16 md:py-24">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-8 text-center text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
-              Frequently Asked Questions
+              {t.faq}
             </h2>
             <div className="space-y-4">
               {data.faqs.map((faq, i) => (
@@ -195,8 +218,8 @@ export function FeatureDeepDiveClient({ userType, slug }: Props) {
 
       {/* CTA */}
       <SolutionCTA
-        headline={`Ready to Experience ${data.categoryName}?`}
-        subtext={`See how Daisy's ${data.categoryName} features can transform your ${userType === 'business' ? 'business' : 'career'}. Start your free trial today.`}
+        headline={t.readyToExperience(data.categoryName)}
+        subtext={t.ctaSubtext(data.categoryName, userType)}
       />
 
       {/* Related */}

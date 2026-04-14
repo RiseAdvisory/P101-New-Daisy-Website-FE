@@ -43,16 +43,23 @@ export default function BlogPostContent({
     // Set path name for breadcrumb link - points to /resources/blog-post
     choosePatnName('blog-post');
 
-    // Set breadcrumb structure: title = "Resources", description = "Blog Posts"
+    // Set breadcrumb structure
     chooseBreadcrumb({
-      title: 'Resources',
-      description: 'Blog Posts',
+      title: locale === 'ar' ? 'الموارد' : 'Resources',
+      description: locale === 'ar' ? 'المقالات' : 'Blog Posts',
     });
   }, [post, userType, handlePost, setHandleId, choosePathStrapi, chooseBreadcrumb, choosePatnName]);
 
+  const breadcrumbTitle = locale === 'ar' ? 'الموارد' : 'Resources';
+  const breadcrumbDescription = locale === 'ar' ? 'المقالات' : 'Blog Posts';
+
   return (
     <div className="w-full">
-      <HeroBlogPage />
+      <HeroBlogPage
+        breadcrumbTitle={breadcrumbTitle}
+        breadcrumbDescription={breadcrumbDescription}
+        breadcrumbHref={`/${locale}/resources/blog/${userType}`}
+      />
       <AboutPosts />
       <AboutAuthor />
       <CreatePerfect

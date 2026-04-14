@@ -4,24 +4,64 @@ import { getCompetitor, getAverageRating } from '@/lib/constants/competitors';
 import type { FeatureRating } from '@/lib/constants/competitors/competitorData';
 import { Star, ExternalLink } from 'lucide-react';
 
+const uiStrings = {
+  en: {
+    featureLabels: {
+      onlineBooking: 'Booking',
+      posAndPayments: 'Payments',
+      clientManagement: 'Clients',
+      staffManagement: 'Staff',
+      marketingAndCrm: 'Marketing',
+      inventoryManagement: 'Inventory',
+      reportingAndAnalytics: 'Analytics',
+      marketplaceAndDiscovery: 'Marketplace',
+      aiCapabilities: 'AI',
+    },
+    recommended: 'Recommended',
+    founded: 'Founded',
+    startingAt: 'Starting at',
+    freePlan: 'Free plan',
+    visit: (name: string) => `Visit ${name}`,
+  },
+  ar: {
+    featureLabels: {
+      onlineBooking: 'الحجز',
+      posAndPayments: 'المدفوعات',
+      clientManagement: 'العملاء',
+      staffManagement: 'الموظفون',
+      marketingAndCrm: 'التسويق',
+      inventoryManagement: 'المخزون',
+      reportingAndAnalytics: 'التحليلات',
+      marketplaceAndDiscovery: 'السوق',
+      aiCapabilities: 'الذكاء الاصطناعي',
+    },
+    recommended: 'موصى به',
+    founded: 'تأسست',
+    startingAt: 'يبدأ من',
+    freePlan: 'باقة مجانية',
+    visit: (name: string) => `زيارة ${name}`,
+  },
+};
+
+const featureKeys = [
+  'onlineBooking',
+  'posAndPayments',
+  'clientManagement',
+  'staffManagement',
+  'marketingAndCrm',
+  'inventoryManagement',
+  'reportingAndAnalytics',
+  'marketplaceAndDiscovery',
+  'aiCapabilities',
+] as const;
+
 interface CompetitorSummaryCardProps {
   competitorSlug: string;
   rank?: number;
   recommended?: boolean;
   bestFor?: string;
+  locale?: string;
 }
-
-const featureLabels: { key: string; label: string }[] = [
-  { key: 'onlineBooking', label: 'Booking' },
-  { key: 'posAndPayments', label: 'Payments' },
-  { key: 'clientManagement', label: 'Clients' },
-  { key: 'staffManagement', label: 'Staff' },
-  { key: 'marketingAndCrm', label: 'Marketing' },
-  { key: 'inventoryManagement', label: 'Inventory' },
-  { key: 'reportingAndAnalytics', label: 'Analytics' },
-  { key: 'marketplaceAndDiscovery', label: 'Marketplace' },
-  { key: 'aiCapabilities', label: 'AI' },
-];
 
 function MiniRating({ rating }: { rating: FeatureRating }) {
   return (
@@ -44,7 +84,9 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
   rank,
   recommended,
   bestFor,
+  locale = 'en',
 }) => {
+  const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
   const competitor = getCompetitor(competitorSlug);
   if (!competitor) return null;
 
@@ -71,7 +113,7 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
       {recommended && (
         <div className="absolute right-4 top-4">
           <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary uppercase">
-            Recommended
+            {t.recommended}
           </span>
         </div>
       )}
@@ -85,7 +127,7 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
             </h3>
             {competitor.founded && (
               <p className="mt-0.5 text-xs text-[#D5D9D9]">
-                Founded {competitor.founded}
+                {t.founded} {competitor.founded}
                 {competitor.headquarters && ` - ${competitor.headquarters}`}
               </p>
             )}
@@ -113,9 +155,11 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
 
         {/* Feature Ratings Grid */}
         <div className="mt-5 grid grid-cols-3 gap-x-4 gap-y-2">
-          {featureLabels.map(({ key, label }) => (
+          {featureKeys.map((key) => (
             <div key={key} className="flex items-center justify-between gap-1">
-              <span className="text-xs text-[#586968] truncate">{label}</span>
+              <span className="text-xs text-[#586968] truncate">
+                {t.featureLabels[key]}
+              </span>
               <MiniRating
                 rating={features[key as keyof typeof features] as FeatureRating}
               />
@@ -126,14 +170,14 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
         {/* Pricing */}
         <div className="mt-5 flex items-center justify-between rounded-lg bg-[#F8F5F3] px-4 py-3">
           <div>
-            <p className="text-xs text-[#586968]">Starting at</p>
+            <p className="text-xs text-[#586968]">{t.startingAt}</p>
             <p className="text-sm font-bold text-[#172524]">
               {competitor.pricing.startingPrice}
             </p>
           </div>
           {competitor.pricing.hasFreePlan && (
             <span className="rounded-full bg-primary/5 px-2.5 py-1 text-xs font-medium text-primary">
-              Free plan
+              {t.freePlan}
             </span>
           )}
         </div>
@@ -145,7 +189,7 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
           rel="noopener noreferrer nofollow"
           className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[#586968] transition-colors hover:text-[#455150]"
         >
-          Visit {competitor.name}
+          {t.visit(competitor.name)}
           <ExternalLink className="h-3.5 w-3.5" />
         </a>
       </div>

@@ -65,12 +65,12 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
   const getFormSchema = (isBusiness: boolean) =>
     z
       .object({
-        name: z.string().min(1, textForm?.errorRequired || 'Required'),
+        name: z.string().min(1, textForm?.errorRequired || (locale === 'ar' ? 'مطلوب' : 'Required')),
         business_type: z.string(),
         email: z.string().email(descriptionForm?.errorEmail),
         social_media: z.string(),
         country_code: z.string(),
-        mobile: z.string().min(1, textForm?.errorRequired || 'Required'),
+        mobile: z.string().min(1, textForm?.errorRequired || (locale === 'ar' ? 'مطلوب' : 'Required')),
         location_count: z.string(),
         staff_count: z.string(),
         business_name: z.string(),
@@ -81,14 +81,14 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
             ctx.addIssue({
               code: 'custom',
               path: ['business_type'],
-              message: textForm?.errorRequired || 'Required',
+              message: textForm?.errorRequired || (locale === 'ar' ? 'مطلوب' : 'Required'),
             });
           }
           if (!data.business_name) {
             ctx.addIssue({
               code: 'custom',
               path: ['business_name'],
-              message: textForm?.errorRequired || 'Required',
+              message: textForm?.errorRequired || (locale === 'ar' ? 'مطلوب' : 'Required'),
             });
           }
         }
@@ -177,7 +177,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
       onSuccess?.();
     } catch {
       setIsSubmit(false);
-      toast.error(descriptionForm?.errorSubmit || 'Error!');
+      toast.error(descriptionForm?.errorSubmit || (locale === 'ar' ? 'خطأ!' : 'Error!'));
     } finally {
       setIsSubmit(false);
     }
@@ -547,7 +547,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
           disabled={isSubmit}
           className="bg-primary text-white border border-primary w-full px-4 rounded-lg text-base mt-6 hover:bg-white hover:text-primary ltr:font-montserrat font-semibold md:h-auto"
         >
-          {isSubmit ? (textForm?.buttonLoading || 'Sending...') : buttonText || `${textForm?.buttonText}`}
+          {isSubmit ? (textForm?.buttonLoading || (locale === 'ar' ? 'جارٍ الإرسال...' : 'Sending...')) : buttonText || `${textForm?.buttonText}`}
         </Button>
       </form>
       <ToastContainer />

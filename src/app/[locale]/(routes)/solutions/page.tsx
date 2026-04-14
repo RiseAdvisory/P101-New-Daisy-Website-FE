@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import { localeAlternates } from '@/lib/utils/metadata';
 import Link from 'next/link';
-import { solutions } from '@/lib/constants/solutions';
+import { solutionData } from '@/lib/constants/solutions';
+import { t } from '@/lib/constants/i18n';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
@@ -38,25 +39,30 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
 }
 
 export default function SolutionsIndexPage({ params }: { params: { locale: string } }) {
+  const { locale } = params;
+  const solutions = t(solutionData, locale);
+  const isAr = locale === 'ar';
+
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen" dir={isAr ? 'rtl' : 'ltr'}>
       <WebPageSchema
         title="Beauty Business Solutions. AI-Powered Software | The Daisy"
         description="Explore Daisy's solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing."
         url="https://www.jointhedaisy.com/solutions"
       />
       <PageBreadcrumbSchema
-        locale={params.locale}
-        items={[{ name: 'Solutions', url: 'https://www.jointhedaisy.com/solutions' }]}
+        locale={locale}
+        items={[{ name: isAr ? 'الحلول' : 'Solutions', url: 'https://www.jointhedaisy.com/solutions' }]}
       />
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#F8F5F3] to-white px-4 py-16 text-center">
         <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">
-          Solutions for Every Beauty Business
+          {isAr ? 'حلول لكل أعمال التجميل' : 'Solutions for Every Beauty Business'}
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-[#455150]">
-          Whether you run a salon, spa, barbershop, or med spa. Daisy has
-          AI-powered tools built specifically for your business type.
+          {isAr
+            ? 'سواء كنت تدير صالون تجميل أو سبا أو صالون حلاقة أو عيادة تجميل — لدى ديزي أدوات مدعومة بالذكاء الاصطناعي مصممة خصيصاً لنوع عملك.'
+            : 'Whether you run a salon, spa, barbershop, or med spa. Daisy has AI-powered tools built specifically for your business type.'}
         </p>
       </section>
 
@@ -66,7 +72,7 @@ export default function SolutionsIndexPage({ params }: { params: { locale: strin
           {solutions.map((solution) => (
             <Link
               key={solution.slug}
-              href={`/solutions/${solution.slug}`}
+              href={`/${locale}/solutions/${solution.slug}`}
               className="group rounded-lg border border-[#E8E9E9] p-6 transition-all hover:border-primaryBtn/40 hover:shadow-md"
             >
               <h2 className="mb-2 text-xl font-semibold text-[#172524] group-hover:text-primary">
@@ -93,24 +99,25 @@ export default function SolutionsIndexPage({ params }: { params: { locale: strin
       {/* CTA */}
       <section className="bg-[#F8F5F3] px-4 py-16 text-center">
         <h2 className="mb-4 text-2xl font-bold text-[#172524]">
-          Not sure which solution fits?
+          {isAr ? 'غير متأكد أي حل يناسبك؟' : 'Not sure which solution fits?'}
         </h2>
         <p className="mb-6 text-[#455150]">
-          Talk to our team and get a personalized recommendation for your beauty
-          business.
+          {isAr
+            ? 'تحدث مع فريقنا واحصل على توصية مخصصة لأعمال التجميل الخاصة بك.'
+            : 'Talk to our team and get a personalized recommendation for your beauty business.'}
         </p>
         <div className="flex justify-center gap-4">
           <Link
-            href="/get-the-app"
+            href={`/${locale}/get-the-app`}
             className="inline-block rounded-lg bg-primaryBtn px-8 py-3 font-semibold text-white transition-colors hover:bg-primary"
           >
-            Get Started Free
+            {isAr ? 'ابدأ مجاناً' : 'Get Started Free'}
           </Link>
           <Link
-            href="/contact"
+            href={`/${locale}/contact`}
             className="inline-block rounded-lg border border-[#E8E9E9] px-8 py-3 font-semibold text-[#455150] transition-colors hover:bg-[#F8F5F3]"
           >
-            Contact Us
+            {isAr ? 'تواصل معنا' : 'Contact Us'}
           </Link>
         </div>
       </section>

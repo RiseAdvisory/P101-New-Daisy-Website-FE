@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { localeAlternates } from '@/lib/utils/metadata';
-import { getGuide, getAllGuideSlugs } from '@/lib/constants/guides/guideData';
+import { guideData, getAllGuideSlugs } from '@/lib/constants/guides/guideData';
+import { t } from '@/lib/constants/i18n';
 import { GuidesPageClient } from './GuidesPageClient';
 
 export const dynamicParams = false;
@@ -15,7 +16,8 @@ export function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Metadata {
-  const guide = getGuide(params.slug);
+  const entries = t(guideData, params.locale);
+  const guide = entries.find((g) => g.slug === params.slug);
   if (!guide) return { title: 'Not Found' };
 
   return {
@@ -44,8 +46,9 @@ export default function GuidePage({
 }: {
   params: { locale: string; slug: string };
 }) {
-  const guide = getGuide(params.slug);
+  const entries = t(guideData, params.locale);
+  const guide = entries.find((g) => g.slug === params.slug);
   if (!guide) notFound();
 
-  return <GuidesPageClient slug={params.slug} />;
+  return <GuidesPageClient guide={guide} locale={params.locale} />;
 }

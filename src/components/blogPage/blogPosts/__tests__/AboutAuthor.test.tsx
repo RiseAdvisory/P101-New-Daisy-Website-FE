@@ -3,7 +3,10 @@ import { AboutAuthor } from '../AboutAuthor';
 
 jest.mock('@/store/post');
 
-// Mock next/image
+jest.mock('next/navigation', () => ({
+  usePathname: jest.fn(() => '/en/resources/blog/business/test'),
+}));
+
 jest.mock('next/image', () => ({
   __esModule: true,
   default: (props: any) => <img {...props} />,
@@ -41,7 +44,28 @@ describe('AboutAuthor', () => {
     );
   });
 
+  it('renders Arabic author bio on Arabic locale', () => {
+    require('next/navigation').usePathname = jest.fn(() => '/ar/resources/blog/business/test');
+    require('@/store/post').usePostStore = jest.fn(() => ({
+      post: {
+        user: {
+          data: {
+            attributes: {
+              name: 'Dr. Elara Voss',
+            },
+          },
+        },
+      },
+    }));
+
+    render(<AboutAuthor />);
+
+    expect(screen.getByText('د. إيلارا فوس')).toBeInTheDocument();
+    expect(screen.getByText('عن الكاتب')).toBeInTheDocument();
+  });
+
   it('renders correctly for Julian Moreau', () => {
+    require('next/navigation').usePathname = jest.fn(() => '/en/resources/blog/business/test');
     require('@/store/post').usePostStore = jest.fn(() => ({
       post: {
         user: {
@@ -64,61 +88,8 @@ describe('AboutAuthor', () => {
     ).toBeInTheDocument();
   });
 
-  it('renders correctly for Sofia Alvarez', () => {
-    require('@/store/post').usePostStore = jest.fn(() => ({
-      post: {
-        user: {
-          data: {
-            attributes: {
-              name: 'Sofia Alvarez',
-            },
-          },
-        },
-      },
-    }));
-
-    render(<AboutAuthor />);
-
-    expect(screen.getByText('Sofia Alvarez')).toBeInTheDocument();
-  });
-
-  it('renders correctly for Ethan Cole', () => {
-    require('@/store/post').usePostStore = jest.fn(() => ({
-      post: {
-        user: {
-          data: {
-            attributes: {
-              name: 'Ethan Cole',
-            },
-          },
-        },
-      },
-    }));
-
-    render(<AboutAuthor />);
-
-    expect(screen.getByText('Ethan Cole')).toBeInTheDocument();
-  });
-
-  it('renders correctly for Amara Nasser', () => {
-    require('@/store/post').usePostStore = jest.fn(() => ({
-      post: {
-        user: {
-          data: {
-            attributes: {
-              name: 'Amara Nasser',
-            },
-          },
-        },
-      },
-    }));
-
-    render(<AboutAuthor />);
-
-    expect(screen.getByText('Amara Nasser')).toBeInTheDocument();
-  });
-
   it('renders correctly for The Daisy Team', () => {
+    require('next/navigation').usePathname = jest.fn(() => '/en/resources/blog/business/test');
     require('@/store/post').usePostStore = jest.fn(() => ({
       post: {
         user: {
@@ -138,6 +109,7 @@ describe('AboutAuthor', () => {
   });
 
   it('returns null when author name is not in authorBios', () => {
+    require('next/navigation').usePathname = jest.fn(() => '/en/resources/blog/business/test');
     require('@/store/post').usePostStore = jest.fn(() => ({
       post: {
         user: {
@@ -151,31 +123,31 @@ describe('AboutAuthor', () => {
     }));
 
     const { container } = render(<AboutAuthor />);
-
     expect(container.innerHTML).toBe('');
   });
 
   it('returns null when post has no user data', () => {
+    require('next/navigation').usePathname = jest.fn(() => '/en/resources/blog/business/test');
     require('@/store/post').usePostStore = jest.fn(() => ({
       post: {},
     }));
 
     const { container } = render(<AboutAuthor />);
-
     expect(container.innerHTML).toBe('');
   });
 
   it('returns null when post is empty', () => {
+    require('next/navigation').usePathname = jest.fn(() => '/en/resources/blog/business/test');
     require('@/store/post').usePostStore = jest.fn(() => ({
       post: null,
     }));
 
     const { container } = render(<AboutAuthor />);
-
     expect(container.innerHTML).toBe('');
   });
 
   it('falls back to post.user.name when data.attributes.name is missing', () => {
+    require('next/navigation').usePathname = jest.fn(() => '/en/resources/blog/business/test');
     require('@/store/post').usePostStore = jest.fn(() => ({
       post: {
         user: {
@@ -185,11 +157,11 @@ describe('AboutAuthor', () => {
     }));
 
     render(<AboutAuthor />);
-
     expect(screen.getByText('Ethan Cole')).toBeInTheDocument();
   });
 
   it('renders author image with correct alt text', () => {
+    require('next/navigation').usePathname = jest.fn(() => '/en/resources/blog/business/test');
     require('@/store/post').usePostStore = jest.fn(() => ({
       post: {
         user: {

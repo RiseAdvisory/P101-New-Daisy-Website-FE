@@ -45,7 +45,7 @@ const mockArticle: TutorialArticle = {
   description: 'A step-by-step guide to setting up online booking for your salon business.',
   image: '/images/blog/online-booking.webp',
   author: 'The Daisy Team',
-  date: 'Jan 15, 2026',
+  date: '15 January 2026',
   readTime: '6 min.',
   linkPath: '/resources/blog/businesses/online-booking-for-salons-setup-guide',
   source: 'blog',
@@ -77,7 +77,7 @@ describe('TutorialCard', () => {
 
   it('renders the date when provided', () => {
     render(<TutorialCard article={mockArticle} locale="en" />);
-    expect(screen.getByText('Jan 15, 2026')).toBeInTheDocument();
+    expect(screen.getByText('15 January 2026')).toBeInTheDocument();
   });
 
   it('renders the readTime when provided', () => {

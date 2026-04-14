@@ -4,10 +4,11 @@ import { HeroPage } from '@/components/heroSection/HeroSection';
 import { useChoosePath } from '@/store/currentPath';
 import { useEffect, useMemo, useState } from 'react';
 import { useMyContext } from '@/app/MyContext';
-import { blogHeroData, blogPostsByUserType } from '@/lib/constants/blog/blogData';
+import { blogHeroData } from '@/lib/constants/blog/blogData';
 import { t } from '@/lib/constants/i18n';
 import { usePathname } from 'next/navigation';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
+import { getAllBlogPosts, UserType } from '@/lib/api/blog';
 
 export const BlogPostClient = () => {
   const [listCard, setListCards] = useState<any[] | null>(null);
@@ -27,7 +28,8 @@ export const BlogPostClient = () => {
     if (currentPage === '/professional') type = 'professional';
 
     setUserType(type);
-    setListCards(blogPostsByUserType[type] || []);
+    // Uses the blog API which merges EN media into AR posts so imagery matches across locales.
+    getAllBlogPosts(type as UserType, locale).then(setListCards);
     chooseBreadcrumb(hero.breadcrumbs ?? '');
     choosePathStrapi(`/resources/blog/${type}`);
   }, [locale, currentPage, hero, chooseBreadcrumb, choosePathStrapi]);
@@ -35,8 +37,8 @@ export const BlogPostClient = () => {
   return (
     <div className="w-full">
       <HeroPage
-        bredCrumbDesription={'Resources'}
-        bredCrumbTitle={'Blog Posts'}
+        bredCrumbDesription={locale === 'ar' ? 'الموارد' : 'Resources'}
+        bredCrumbTitle={locale === 'ar' ? 'المقالات' : 'Blog Posts'}
         isVisibleBreadCrumbs={true}
         hiddenArrow={true}
         visibleDescriiton={false}

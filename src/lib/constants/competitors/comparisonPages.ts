@@ -4,6 +4,7 @@
 
 import type { CompetitorData } from './competitorData';
 import { competitors, daisyData } from './competitorData';
+import type { I18nContent } from '../i18n';
 
 // -----------------------------------------------------------------------------
 // Types
@@ -1748,4 +1749,23 @@ export function getRelatedAlternativePages(currentSlug: string, limit: number = 
     }
   }
   return related;
+}
+
+// ---------------------------------------------------------------------------
+// I18n-wrapped exports — lazily resolved to avoid circular import
+// ---------------------------------------------------------------------------
+
+interface ComparisonPagesBundle {
+  daisyVsPages: DaisyVsPageData[];
+  alternativePages: AlternativePageData[];
+  bestAlternativesPages: BestAlternativesPageData[];
+  competitorVsPages: CompetitorVsPageData[];
+}
+
+export function getComparisonPagesI18n(): I18nContent<ComparisonPagesBundle> {
+  const ar = require('./comparisonPages.ar') as ComparisonPagesBundle;
+  return {
+    en: { daisyVsPages, alternativePages, bestAlternativesPages, competitorVsPages },
+    ar,
+  };
 }

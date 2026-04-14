@@ -27,8 +27,8 @@ export const Header = () => {
   const path = useMemo(() => stripLocaleFromPathname(fullPath), [fullPath]);
   const [active, setActive] = useState('');
   const [openMenu, setOpenMenu] = useState(false);
-  const [changePage, setChangePage] = useState(locale === 'ar' ? 'شركة' : 'Business');
-  const [changeLang, setChangeLang] = useState(locale === 'ar' ? 'ع' : 'En');
+  const [changePage, setChangePage] = useState(locale === 'ar' ? 'أعمال' : 'Business');
+  const [changeLang, setChangeLang] = useState(locale === 'ar' ? 'عر' : 'En');
   const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState(false);
   const [activePages, setActivePages] = useState<any>();
   const [currentActivePage, setCurrentActivePage] = useState<string | null>(
@@ -46,8 +46,8 @@ export const Header = () => {
 
   useEffect(() => {
     if (locale === 'ar') {
-      setChangeLang('ع');
-      setChangePage('شركة');
+      setChangeLang('عر');
+      setChangePage('أعمال');
     } else {
       setChangeLang('En');
       setChangePage('Business');

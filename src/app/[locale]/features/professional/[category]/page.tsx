@@ -51,6 +51,6 @@ export default function FeatureProfessionalDeepDivePage({
   if (!data) notFound();
 
   return (
-    <FeatureDeepDiveClient userType="professional" slug={params.category} />
+    <FeatureDeepDiveClient userType="professional" slug={params.category} locale={params.locale} />
   );
 }

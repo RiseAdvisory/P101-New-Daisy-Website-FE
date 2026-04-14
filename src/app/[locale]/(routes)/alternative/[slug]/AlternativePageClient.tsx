@@ -15,25 +15,28 @@ import { Check, X } from 'lucide-react';
 
 interface Props {
   slug: string;
+  locale?: string;
 }
 
-export function AlternativePageClient({ slug }: Props) {
+export function AlternativePageClient({ slug, locale = 'en' }: Props) {
   const result = getAlternativePageData(slug);
   if (!result) return null;
 
   if (result.type === 'alternative') {
-    return <AlternativeSinglePage data={result.data} slug={slug} />;
+    return <AlternativeSinglePage data={result.data} slug={slug} locale={locale} />;
   }
 
-  return <BestAlternativesPage data={result.data} slug={slug} />;
+  return <BestAlternativesPage data={result.data} slug={slug} locale={locale} />;
 }
 
 function AlternativeSinglePage({
   data,
   slug,
+  locale = 'en',
 }: {
   data: NonNullable<ReturnType<typeof getAlternativePageData> & { type: 'alternative' }>['data'];
   slug: string;
+  locale?: string;
 }) {
   const competitor = getCompetitor(data.competitorSlug);
   if (!competitor) return null;
@@ -132,7 +135,7 @@ function AlternativeSinglePage({
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {data.topAlternatives.map((altSlug) => (
-                <CompetitorSummaryCard key={altSlug} competitorSlug={altSlug} />
+                <CompetitorSummaryCard key={altSlug} competitorSlug={altSlug} locale={locale} />
               ))}
             </div>
           </div>
@@ -141,7 +144,7 @@ function AlternativeSinglePage({
 
       {/* Differentiators */}
       <section className="mx-auto max-w-5xl px-4 py-12">
-        <DaisyDifferentiators />
+        <DaisyDifferentiators locale={locale} />
       </section>
 
       {/* FAQ */}
@@ -194,9 +197,11 @@ function AlternativeSinglePage({
 function BestAlternativesPage({
   data,
   slug,
+  locale = 'en',
 }: {
   data: NonNullable<ReturnType<typeof getAlternativePageData> & { type: 'best-alternatives' }>['data'];
   slug: string;
+  locale?: string;
 }) {
   const competitor = getCompetitor(data.competitorSlug);
   if (!competitor) return null;
@@ -237,6 +242,7 @@ function BestAlternativesPage({
                 key={altSlug}
                 competitorSlug={altSlug}
                 bestFor={data.bestFor[altSlug]}
+                locale={locale}
               />
             ))}
           </div>
@@ -248,7 +254,7 @@ function BestAlternativesPage({
         <p className="text-lg text-gray-600" data-geo-answer="true">{data.daisyEdge}</p>
       </section>
 
-      <DaisyDifferentiators />
+      <DaisyDifferentiators locale={locale} />
 
       {/* CTA */}
       <SwitchingCTA competitorName={competitor.name} />

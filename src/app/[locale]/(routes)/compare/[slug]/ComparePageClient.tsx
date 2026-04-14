@@ -20,25 +20,28 @@ import { daisyData } from '@/lib/constants/competitors/competitorData';
 
 interface Props {
   slug: string;
+  locale?: string;
 }
 
-export function ComparePageClient({ slug }: Props) {
+export function ComparePageClient({ slug, locale = 'en' }: Props) {
   const result = getComparePageData(slug);
   if (!result) return null;
 
   if (result.type === 'daisy-vs') {
-    return <DaisyVsPage data={result.data} slug={slug} />;
+    return <DaisyVsPage data={result.data} slug={slug} locale={locale} />;
   }
 
-  return <CompetitorVsPage data={result.data} slug={slug} />;
+  return <CompetitorVsPage data={result.data} slug={slug} locale={locale} />;
 }
 
 function DaisyVsPage({
   data,
   slug,
+  locale = 'en',
 }: {
   data: NonNullable<ReturnType<typeof getComparePageData> & { type: 'daisy-vs' }>['data'];
   slug: string;
+  locale?: string;
 }) {
   const competitor = getCompetitor(data.competitorSlug);
   if (!competitor) return null;
@@ -171,6 +174,7 @@ function DaisyVsPage({
       <PricingComparisonCard
         competitorSlug={data.competitorSlug}
         competitorName={competitor.name}
+        locale={locale}
       />
 
       {/* Pros & Cons */}
@@ -225,7 +229,7 @@ function DaisyVsPage({
 
       {/* Differentiators */}
       <section className="mx-auto max-w-5xl px-4 py-12">
-        <DaisyDifferentiators />
+        <DaisyDifferentiators locale={locale} />
       </section>
 
       {/* FAQ */}
@@ -278,9 +282,11 @@ function DaisyVsPage({
 function CompetitorVsPage({
   data,
   slug,
+  locale = 'en',
 }: {
   data: NonNullable<ReturnType<typeof getComparePageData> & { type: 'competitor-vs' }>['data'];
   slug: string;
+  locale?: string;
 }) {
   const competitorA = getCompetitor(data.slugA);
   const competitorB = getCompetitor(data.slugB);
@@ -340,7 +346,7 @@ function CompetitorVsPage({
       {/* Differentiators */}
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-5xl px-4">
-          <DaisyDifferentiators />
+          <DaisyDifferentiators locale={locale} />
         </div>
       </section>
 

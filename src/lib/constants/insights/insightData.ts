@@ -1,3 +1,5 @@
+import { I18nContent } from '../i18n';
+
 export interface StatCategory {
   category: string;
   stats: {
@@ -185,6 +187,199 @@ export const industryStats: StatCategory[] = [
   },
 ];
 
+const industryStatsAr: StatCategory[] = [
+  {
+    category: 'حجم السوق والنمو',
+    stats: [
+      {
+        value: '$712M',
+        description: 'الحجم المتوقع لسوق برمجيات الصالونات عالمياً بحلول 2028',
+        source: 'Grand View Research',
+      },
+      {
+        value: '12.5%',
+        description: 'معدل النمو السنوي المركّب لقطاع تكنولوجيا التجميل',
+        source: 'Allied Market Research',
+      },
+      {
+        value: '$532B',
+        description: 'قيمة سوق التجميل والعناية الشخصية عالمياً في 2025',
+        source: 'Statista',
+      },
+      {
+        value: '87%',
+        description: 'من أصحاب الصالونات يؤكدون أن التكنولوجيا ضرورية لنمو أعمالهم',
+        source: 'Salon Today survey',
+      },
+    ],
+  },
+  {
+    category: 'الحجز والجدولة',
+    stats: [
+      {
+        value: '67%',
+        description: 'من عملاء التجميل يفضلون الحجز عبر الإنترنت بدلاً من الاتصال الهاتفي',
+        source: 'GetApp survey',
+      },
+      {
+        value: '40%',
+        description: 'زيادة في المواعيد عند توفير خدمة الحجز الإلكتروني على مدار الساعة',
+        source: 'Salon booking platform data',
+      },
+      {
+        value: '46%',
+        description: 'من عمليات البحث على Google ذات طابع محلي (مهم لاكتشاف الصالونات)',
+        source: 'Google',
+      },
+      {
+        value: '35%',
+        description: 'من مكالمات الصالونات لا يُرد عليها خلال أوقات الذروة وخارج ساعات العمل',
+        source: 'Industry research estimates',
+      },
+    ],
+  },
+  {
+    category: 'حالات عدم الحضور والإلغاء',
+    stats: [
+      {
+        value: '20-30%',
+        description: 'متوسط معدل عدم الحضور في الصالونات التي لا تتخذ إجراءات وقائية',
+        source: 'Industry average estimates',
+      },
+      {
+        value: '30-40%',
+        description: 'انخفاض في حالات عدم الحضور عند استخدام تذكيرات آلية عبر الرسائل النصية والبريد الإلكتروني',
+        source: 'Salon software platform data',
+      },
+      {
+        value: '$67,000',
+        description: 'الإيرادات السنوية المقدّرة التي يخسرها كل صالون بسبب عدم حضور العملاء',
+        source: 'Industry calculations',
+      },
+      {
+        value: '95%',
+        description: 'معدل فتح تذكيرات المواعيد عبر الرسائل النصية (مقابل 20% للبريد الإلكتروني)',
+        source: 'SMS marketing benchmarks',
+      },
+    ],
+  },
+  {
+    category: 'استقطاب العملاء والاحتفاظ بهم',
+    stats: [
+      {
+        value: '$25-50',
+        description: 'متوسط تكلفة استقطاب عميل جديد للصالون عبر الإعلانات المدفوعة',
+        source: 'Digital marketing benchmarks',
+      },
+      {
+        value: '5x',
+        description: 'تكلفة استقطاب عميل جديد تبلغ 5 أضعاف تكلفة الاحتفاظ بعميل حالي',
+        source: 'Harvard Business Review',
+      },
+      {
+        value: '20-30%',
+        description: 'زيادة في القيمة الدائمة للعميل مع برامج الولاء والاسترداد النقدي',
+        source: 'Loyalty program research',
+      },
+      {
+        value: '3x',
+        description: 'حجوزات جديدة أكثر للصالونات التي تمتلك أكثر من 50 تقييماً بمعدل 4.5+ نجوم',
+        source: 'BrightLocal consumer survey',
+      },
+    ],
+  },
+  {
+    category: 'الذكاء الاصطناعي والأتمتة في قطاع التجميل',
+    stats: [
+      {
+        value: '73%',
+        description: 'من شركات الخدمات تخطط لزيادة استثماراتها في الذكاء الاصطناعي بحلول 2027',
+        source: 'McKinsey Global Survey',
+      },
+      {
+        value: '+10 ساعات',
+        description: 'يوفرها أصحاب الصالونات أسبوعياً باستخدام الجدولة والأتمتة بالذكاء الاصطناعي',
+        source: 'Salon software user surveys',
+      },
+      {
+        value: '24/7',
+        description: 'موظفو الاستقبال الافتراضيون يعملون على مدار الساعة لاستقطاب إيرادات خارج أوقات العمل',
+        source: 'AI receptionist platform data',
+      },
+      {
+        value: '70-80%',
+        description: 'من المكالمات الروتينية للصالونات يمكن التعامل معها بالذكاء الاصطناعي دون تدخل بشري',
+        source: 'AI customer service benchmarks',
+      },
+    ],
+  },
+  {
+    category: 'سوق التجميل في دول مجلس التعاون الخليجي',
+    stats: [
+      {
+        value: '$28B',
+        description: 'قيمة سوق التجميل والعناية الشخصية في دول مجلس التعاون الخليجي',
+        source: 'Euromonitor International',
+      },
+      {
+        value: '+15%',
+        description: 'معدل النمو السنوي لخدمات التجميل في الإمارات والمملكة العربية السعودية',
+        source: 'Regional market reports',
+      },
+      {
+        value: '+70%',
+        description: 'من مستهلكي التجميل في دول الخليج يستخدمون تطبيقات الجوال لحجز الخدمات',
+        source: 'Regional consumer surveys',
+      },
+      {
+        value: '2',
+        description: 'لغتان (العربية + الإنجليزية) مطلوبتان لتغطية سوق دول الخليج بالكامل',
+        source: 'GCC demographics',
+      },
+    ],
+  },
+  {
+    category: 'المدفوعات والإيرادات',
+    stats: [
+      {
+        value: '2-3%',
+        description: 'رسوم المعاملات التي تفرضها معالجات الدفع عادةً (ديزي تفرض 0%)',
+        source: 'Payment industry standard',
+      },
+      {
+        value: '20-30%',
+        description: 'عمولة السوق التي تفرضها بعض منصات الحجز "المجانية"',
+        source: 'Platform pricing analysis',
+      },
+      {
+        value: '15-20%',
+        description: 'زيادة في الإيرادات أبلغت عنها الصالونات التي تستخدم أنظمة نقاط بيع متكاملة',
+        source: 'POS adoption studies',
+      },
+      {
+        value: '68%',
+        description: 'من العملاء يفضلون خيارات الدفع الإلكتروني في الصالونات',
+        source: 'Consumer payment surveys',
+      },
+    ],
+  },
+];
+
 export const insightsMetaTitle = 'Salon Industry Statistics 2026 | Beauty Business Data & Trends';
 export const insightsMetaDescription =
   'Comprehensive salon industry statistics for 2026. Market size, booking trends, no-show rates, AI adoption, GCC beauty market data, and customer acquisition benchmarks.';
+
+export const insightsData: I18nContent<StatCategory[]> = {
+  en: industryStats,
+  ar: industryStatsAr,
+};
+
+export const insightsMetaTitleI18n: I18nContent<string> = {
+  en: insightsMetaTitle,
+  ar: 'إحصائيات قطاع الصالونات 2026 | بيانات واتجاهات أعمال التجميل',
+};
+
+export const insightsMetaDescriptionI18n: I18nContent<string> = {
+  en: insightsMetaDescription,
+  ar: 'إحصائيات شاملة لقطاع الصالونات لعام 2026. حجم السوق، اتجاهات الحجز، معدلات عدم الحضور، تبني الذكاء الاصطناعي، بيانات سوق التجميل الخليجي، ومعايير استقطاب العملاء.',
+};

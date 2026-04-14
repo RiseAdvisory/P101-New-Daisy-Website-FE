@@ -4,6 +4,8 @@
 
 export {
   daisyData,
+  daisyDataAr,
+  daisyDataI18n,
   competitors,
   type CompetitorData,
   type CompetitorTier,
@@ -23,7 +25,12 @@ export {
   type FaqEntry,
 } from './competitorData';
 
-export { aiTools } from './aiTools';
+export { aiTools, aiToolsI18n } from './aiTools';
+
+// Tier data I18n helpers
+export { getTier1CompetitorsI18n } from './tier1Data';
+export { getTier2CompetitorsI18n } from './tier2Data';
+export { getTier3CompetitorsI18n } from './tier3Data';
 
 // WS2: Comparison page data & helpers
 export {
@@ -45,6 +52,7 @@ export {
   getAlternativePageData,
   getRelatedComparePages,
   getRelatedAlternativePages,
+  getComparisonPagesI18n,
 } from './comparisonPages';
 
 import { competitors, daisyData, type CompetitorData, type CompetitorTier, type FeatureRating } from './competitorData';

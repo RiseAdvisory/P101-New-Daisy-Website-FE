@@ -1,4 +1,5 @@
 export {
+  solutionData,
   solutions,
   getSolution,
   getAllSolutionSlugs,

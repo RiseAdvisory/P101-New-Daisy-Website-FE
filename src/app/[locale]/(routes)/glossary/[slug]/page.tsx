@@ -2,9 +2,10 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { localeAlternates } from '@/lib/utils/metadata';
 import {
-  getGlossaryEntry,
+  glossaryData,
   getAllGlossarySlugs,
 } from '@/lib/constants/glossary/glossaryData';
+import { t } from '@/lib/constants/i18n';
 import { GlossaryPageClient } from './GlossaryPageClient';
 import { SpeakableSchema } from '@/components/seo/SpeakableSchema';
 
@@ -19,7 +20,8 @@ export function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Metadata {
-  const entry = getGlossaryEntry(params.slug);
+  const entries = t(glossaryData, params.locale);
+  const entry = entries.find((e) => e.slug === params.slug);
   if (!entry) return { title: 'Not Found' };
 
   return {
@@ -48,7 +50,8 @@ export default function GlossaryPage({
 }: {
   params: { locale: string; slug: string };
 }) {
-  const entry = getGlossaryEntry(params.slug);
+  const entries = t(glossaryData, params.locale);
+  const entry = entries.find((e) => e.slug === params.slug);
   if (!entry) notFound();
 
   return (
@@ -58,7 +61,12 @@ export default function GlossaryPage({
         url={`https://www.jointhedaisy.com/${params.locale}/glossary/${params.slug}`}
         cssSelectors={['[data-geo-answer]', 'dfn', 'article > p:first-of-type']}
       />
-      <GlossaryPageClient slug={params.slug} />
+      <GlossaryPageClient
+        entry={entry}
+        slug={params.slug}
+        locale={params.locale}
+        termMap={Object.fromEntries(entries.map((e) => [e.slug, e.term]))}
+      />
     </>
   );
 }

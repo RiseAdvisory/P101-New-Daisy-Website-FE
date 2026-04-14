@@ -148,7 +148,8 @@ describe('Blog Post Page', () => {
       expect(metadata).toEqual({ title: 'Blog Post Not Found' });
       expect(mockedGetBlogPostBySlug).toHaveBeenCalledWith(
         'customer',
-        'non-existent'
+        'non-existent',
+        'en',
       );
     });
 
@@ -313,7 +314,8 @@ describe('Blog Post Page', () => {
       await expect(BlogPostPage(params)).rejects.toThrow('Not Found');
       expect(mockedGetBlogPostBySlug).toHaveBeenCalledWith(
         'customer',
-        'non-existent'
+        'non-existent',
+        'en',
       );
       expect(mockedNotFound).toHaveBeenCalledTimes(1);
     });
@@ -329,7 +331,8 @@ describe('Blog Post Page', () => {
 
       expect(mockedGetBlogPostBySlug).toHaveBeenCalledWith(
         'customer',
-        'test-blog-post'
+        'test-blog-post',
+        'en',
       );
       expect(mockedNotFound).not.toHaveBeenCalled();
 
@@ -348,7 +351,8 @@ describe('Blog Post Page', () => {
 
       expect(mockedGetBlogPostBySlug).toHaveBeenCalledWith(
         'business',
-        'test-blog-post'
+        'test-blog-post',
+        'en',
       );
     });
   });

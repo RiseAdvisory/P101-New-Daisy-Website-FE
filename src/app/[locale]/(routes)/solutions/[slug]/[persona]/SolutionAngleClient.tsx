@@ -32,6 +32,29 @@ interface SolutionAngleClientProps {
   persona: string;
 }
 
+const uiStrings = {
+  business: {
+    en: {
+      formTitle: 'Ready to Take Control? Tell Us About Your Business.',
+      formSubtitle: 'Our team will reach out within 24 hours to help you get started.',
+    },
+    ar: {
+      formTitle: 'هل أنت مستعد للسيطرة؟ أخبرنا عن عملك.',
+      formSubtitle: 'سيتواصل فريقنا معك خلال 24 ساعة لمساعدتك على البدء.',
+    },
+  },
+  professional: {
+    en: {
+      formTitle: 'Get Listed on The Daisy. Free',
+      formSubtitle: 'Tell us about yourself and our team will help you get set up.',
+    },
+    ar: {
+      formTitle: 'سجّل في ديزي. مجاناً',
+      formSubtitle: 'أخبرنا عن نفسك وسيساعدك فريقنا على البدء.',
+    },
+  },
+} as const;
+
 export const SolutionAngleClient = ({
   lang,
   pageData,
@@ -40,24 +63,8 @@ export const SolutionAngleClient = ({
   const dataScroll = toScrollSectionItems(pageData.scrollSections);
   const defaultType = persona === 'business' ? 'business' : 'professional';
   const pageType = persona === 'business' ? 'Business' : 'Professional';
-
-  const formTitle =
-    persona === 'business'
-      ? lang === 'ar'
-        ? 'مستعد للسيطرة؟ أخبرنا عن عملك.'
-        : 'Ready to Take Control? Tell Us About Your Business.'
-      : lang === 'ar'
-        ? 'سجّل في ذا ديزي - مجانًا'
-        : 'Get Listed on The Daisy for Free';
-
-  const formSubtitle =
-    persona === 'business'
-      ? lang === 'ar'
-        ? 'سيتواصل فريقنا معك خلال 24 ساعة لمساعدتك على البدء.'
-        : 'Our team will reach out within 24 hours to help you get started.'
-      : lang === 'ar'
-        ? 'أخبرنا عن نفسك وسيساعدك فريقنا في الإعداد.'
-        : 'Tell us about yourself and our team will help you get set up.';
+  const personaKey = persona === 'business' ? 'business' : 'professional';
+  const ui = uiStrings[personaKey][lang as 'en' | 'ar'] || uiStrings[personaKey].en;
 
   return (
     <div className="w-full bg-primary md:-mt-[100px]">
@@ -121,8 +128,8 @@ export const SolutionAngleClient = ({
       />
       <BecomeFormPartner
         defaultType={defaultType as 'business' | 'professional'}
-        title={formTitle}
-        subtitle={formSubtitle}
+        title={ui.formTitle}
+        subtitle={ui.formSubtitle}
       />
     </div>
   );

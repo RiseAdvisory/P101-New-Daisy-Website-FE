@@ -59,5 +59,5 @@ export default function ComparePage({
   const result = getComparePageData(params.slug);
   if (!result) notFound();
 
-  return <ComparePageClient slug={params.slug} />;
+  return <ComparePageClient slug={params.slug} locale={params.locale} />;
 }

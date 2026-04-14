@@ -50,5 +50,5 @@ export default function FeatureBusinessDeepDivePage({
   const data = getFeatureDeepDive('business', params.category);
   if (!data) notFound();
 
-  return <FeatureDeepDiveClient userType="business" slug={params.category} />;
+  return <FeatureDeepDiveClient userType="business" slug={params.category} locale={params.locale} />;
 }

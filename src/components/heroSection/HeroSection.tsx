@@ -82,6 +82,7 @@ export const HeroPage = ({
           'text-base ltr:font-montserrat font-normal text-[#D5D9D9] mt-2 text-center md:px-16 lg:px-32 xl:px-48',
           {
             hidden: visibleDescriiton,
+            'pb-16': hiddenArrow,
           },
         )}
       >

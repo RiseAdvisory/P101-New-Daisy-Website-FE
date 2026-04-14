@@ -4,6 +4,7 @@ import { TutorialArticle } from '@/lib/constants/tutorials/getTutorialArticles';
 import { localePath } from '@/lib/utils/locale';
 import { CalendarIcon } from '@/assets/icons/calendarIcon/CalendarIcon';
 import { ClockIcon } from '@/assets/icons/clockIcon/ClockIcon';
+import { formatBlogDate, formatReadTime } from '@/lib/utils/blogFormat';
 
 interface TutorialCardProps {
   article: TutorialArticle;
@@ -11,6 +12,10 @@ interface TutorialCardProps {
 }
 
 export const TutorialCard = ({ article, locale }: TutorialCardProps) => {
+  const isRtl = locale === 'ar';
+  const dateText = formatBlogDate(article.date, locale, article.date);
+  const timeText = formatReadTime(article.readTime, locale);
+
   return (
     <Link
       href={localePath(article.linkPath, locale)}
@@ -30,17 +35,17 @@ export const TutorialCard = ({ article, locale }: TutorialCardProps) => {
         <h3 className="text-lg ltr:font-montserrat font-semibold line-clamp-2">
           {article.title}
         </h3>
-        <div className="flex justify-start gap-2 text-gray-500 text-sm mt-4">
-          {article.date && (
-            <span className="flex items-center border-r pr-[10px]">
+        <div className="flex justify-start gap-2 text-gray-500 text-sm mt-4" dir={isRtl ? 'rtl' : 'ltr'}>
+          {dateText && (
+            <span className="flex items-center ltr:border-r ltr:pr-[10px] rtl:border-l rtl:pl-[10px]">
               <CalendarIcon className="ltr:mr-[10px] rtl:ml-[10px]" />
-              {article.date}
+              {dateText}
             </span>
           )}
-          {article.readTime && (
-            <span className="flex items-center rtl:border-r rtl:pr-2">
+          {timeText && (
+            <span className="flex items-center rtl:pr-2">
               <ClockIcon className="ltr:mr-2 rtl:ml-2" />
-              {article.readTime}
+              {timeText}
             </span>
           )}
         </div>

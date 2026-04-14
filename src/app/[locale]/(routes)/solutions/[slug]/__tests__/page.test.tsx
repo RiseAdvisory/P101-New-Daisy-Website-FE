@@ -9,8 +9,8 @@ jest.mock('next/navigation', () => ({
 }));
 
 jest.mock('../SolutionsPageClient', () => ({
-  SolutionsPageClient: ({ slug }: { slug: string }) => (
-    <div data-testid="solutions-page-client">{slug}</div>
+  SolutionsPageClient: ({ slug, locale }: { slug: string; locale?: string }) => (
+    <div data-testid="solutions-page-client">{slug} {locale}</div>
   ),
 }));
 
@@ -47,7 +47,7 @@ describe('Solutions [slug] page', () => {
   describe('generateMetadata', () => {
     it('returns correct metadata for valid slug', () => {
       const meta = generateMetadata({
-        params: { slug: 'salon-management-software' },
+        params: { locale: 'en', slug: 'salon-management-software' },
       });
       expect(meta.title).toBeTruthy();
       expect(meta.description).toBeTruthy();
@@ -57,7 +57,7 @@ describe('Solutions [slug] page', () => {
     });
 
     it('returns "Not Found" for invalid slug', () => {
-      const meta = generateMetadata({ params: { slug: 'nonexistent' } });
+      const meta = generateMetadata({ params: { locale: 'en', slug: 'nonexistent' } });
       expect(meta.title).toBe('Not Found');
     });
   });
@@ -67,13 +67,13 @@ describe('Solutions [slug] page', () => {
   // ---------------------------------------------------------------------------
   describe('SolutionsPage component', () => {
     it('calls notFound() for invalid slug', () => {
-      SolutionsPage({ params: { slug: 'nonexistent-slug' } });
+      SolutionsPage({ params: { locale: 'en', slug: 'nonexistent-slug' } });
       expect(notFound).toHaveBeenCalled();
     });
 
     it('renders SolutionsPageClient for valid slug', () => {
       const result = SolutionsPage({
-        params: { slug: 'salon-management-software' },
+        params: { locale: 'en', slug: 'salon-management-software' },
       });
       expect(result).toBeTruthy();
     });

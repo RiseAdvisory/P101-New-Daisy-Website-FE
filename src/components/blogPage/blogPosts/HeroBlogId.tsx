@@ -6,11 +6,30 @@ import { CalendarIcon } from '@/assets/icons/calendarIcon/CalendarIcon';
 import { ClockIcon } from '@/assets/icons/clockIcon/ClockIcon';
 import { usePostStore } from '@/store/post';
 import { useChoosePath } from '@/store/currentPath';
+import { useMemo } from 'react';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
+import { formatBlogDate, formatReadTime } from '@/lib/utils/blogFormat';
+import { getAuthorBio } from '@/lib/constants/blog/authorData';
 
-export const HeroBlogPage = () => {
+interface HeroBlogPageProps {
+  breadcrumbTitle?: string;
+  breadcrumbDescription?: string;
+  breadcrumbHref?: string;
+}
+
+export const HeroBlogPage = ({ breadcrumbTitle, breadcrumbDescription, breadcrumbHref }: HeroBlogPageProps = {}) => {
   const { post } = usePostStore();
+  const fullPathname = usePathname();
+  const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
+  const isRtl = locale === 'ar';
 
   const { patnName, bredcrumb } = useChoosePath();
+
+  // Prefer props over store (avoids flash of stale store values)
+  const finalBreadcrumbTitle = breadcrumbDescription || bredcrumb?.description;
+  const finalBreadcrumbDesc = breadcrumbTitle || bredcrumb?.title;
+  const finalBreadcrumbHref = breadcrumbHref || `/resources/${patnName}`;
 
   // Handle missing image data gracefully - now uses local paths directly
   const bgImage = post?.image?.data?.[0]?.attributes?.url
@@ -20,6 +39,11 @@ export const HeroBlogPage = () => {
   const iconImg = post?.iconOwner?.data?.[0]?.attributes?.url
     ?? post?.user?.data?.attributes?.picture?.data?.attributes?.url
     ?? '';
+
+  const rawDate = post?.user?.data?.attributes?.date || post?.user?.date || '';
+  const dateText = formatBlogDate(rawDate || post?.publishedAt, locale, rawDate);
+  const rawTime = post?.user?.data?.attributes?.time || post?.user?.time || '';
+  const timeText = formatReadTime(rawTime, locale);
 
   return (
     <div
@@ -32,15 +56,18 @@ export const HeroBlogPage = () => {
       <div className="flex pt-6">
         <HomeIcon className="ltr:mr-2 rtl:ml-2" />
         <BreadcrumbWithCustomSeparator
-          bredCrumbTitle={bredcrumb?.description}
-          bredCrumbDesription={bredcrumb?.title}
-          bredCrumbHref={`/resources/${patnName}`}
+          bredCrumbTitle={finalBreadcrumbTitle}
+          bredCrumbDesription={finalBreadcrumbDesc}
+          bredCrumbHref={finalBreadcrumbHref}
         />
       </div>
       <h1 className="text-3xl font-bold text-white mt-8">{post?.title}</h1>
-      <div className="flex justify-start text-[#ECEEED] text-sm mt-4 flex-col md:flex-row">
+      <div
+        className="flex justify-start text-[#ECEEED] text-sm mt-4 flex-col md:flex-row"
+        dir={isRtl ? 'rtl' : 'ltr'}
+      >
         <div className="flex">
-          <div className="flex items-center ltr:border-r ltr:pr-[10px] rtl:pl-[10px]">
+          <div className="flex items-center ltr:border-r ltr:pr-[10px] rtl:border-l rtl:pl-[10px]">
             {iconImg && (
               <Image
                 src={iconImg}
@@ -50,19 +77,19 @@ export const HeroBlogPage = () => {
                 height={27}
               />
             )}
-            <span className="text-sm">{post?.user?.data?.attributes?.name || post?.user?.name || 'Author'}</span>
+            <span className="text-sm">{getAuthorBio(post?.user?.data?.attributes?.name || post?.user?.name || '', locale)?.name || post?.user?.data?.attributes?.name || post?.user?.name || 'Author'}</span>
           </div>
-          <span className="flex items-center border-r px-[10px]">
+          <span className="flex items-center ltr:border-r rtl:border-l px-[10px]">
             <CalendarIcon
               className="ltr:mr-[10px] rtl:ml-[10px]"
               fill="#ECEEED"
             />
-            {post?.user?.data?.attributes?.date || post?.user?.date || ''}
+            {dateText}
           </span>
         </div>
-        <span className="flex items-center mt-2 md:mt-0 md:ml-2 rtl:border-r rtl:pr-2">
+        <span className="flex items-center mt-2 md:mt-0 ltr:md:ml-2 rtl:md:mr-2 rtl:pr-2">
           <ClockIcon className="ltr:mr-2 rtl:ml-2" fill="#ECEEED" />
-          {post?.user?.data?.attributes?.time || post?.user?.time || ''}
+          {timeText}
         </span>
       </div>
     </div>

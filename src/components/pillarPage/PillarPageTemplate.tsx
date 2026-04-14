@@ -10,12 +10,22 @@ import { FaqSchema } from '@/components/seo/FaqSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import { PillarArticleSchema } from '@/components/seo/PillarArticleSchema';
 
+const uiStrings = {
+  en: {
+    faq: 'Frequently Asked Questions',
+  },
+  ar: {
+    faq: 'الأسئلة الشائعة',
+  },
+};
+
 interface PillarPageTemplateProps {
   data: PillarPageData;
   locale: string;
 }
 
 export function PillarPageTemplate({ data, locale }: PillarPageTemplateProps) {
+  const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
   // Content is static TypeScript data (not user input), safe to render directly
   const introHtml = data.introduction;
   const tocSections = data.sections.map((s) => ({ id: s.id, title: s.title }));
@@ -44,6 +54,7 @@ export function PillarPageTemplate({ data, locale }: PillarPageTemplateProps) {
         readingTime={data.readingTime}
         lastUpdated={data.lastUpdated}
         breadcrumbTitle={data.title}
+        locale={locale}
       />
 
       {/* Key Takeaways (GEO answer block) */}
@@ -83,7 +94,7 @@ export function PillarPageTemplate({ data, locale }: PillarPageTemplateProps) {
             {data.faqs.length > 0 && (
               <section id="faq" className="scroll-mt-24 py-8">
                 <h2 className="mb-6 text-2xl font-bold text-[#172524] md:text-3xl">
-                  Frequently Asked Questions
+                  {t.faq}
                 </h2>
                 <div className="space-y-4">
                   {data.faqs.map((faq, i) => (

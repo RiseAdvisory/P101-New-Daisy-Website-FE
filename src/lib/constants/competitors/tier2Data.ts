@@ -4,6 +4,7 @@
 // =============================================================================
 
 import type { CompetitorData } from './competitorData';
+import type { I18nContent } from '../i18n';
 
 export const tier2Competitors: Record<string, CompetitorData> = {
   // ---------------------------------------------------------------------------
@@ -1405,3 +1406,12 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       'France market leader with impressive scale (10M+ bookings/mo). Commission-free model is compelling. But zero AI, zero Arabic, zero GCC presence makes this a non-threat in Daisy\'s primary market. Interesting model to watch for marketplace strategy insights.',
   },
 };
+
+// ---------------------------------------------------------------------------
+// I18n-wrapped export — lazily resolved to avoid circular import
+// ---------------------------------------------------------------------------
+
+export function getTier2CompetitorsI18n(): I18nContent<Record<string, CompetitorData>> {
+  const { tier2CompetitorsAr } = require('./tier2Data.ar') as { tier2CompetitorsAr: Record<string, CompetitorData> };
+  return { en: tier2Competitors, ar: tier2CompetitorsAr };
+}
