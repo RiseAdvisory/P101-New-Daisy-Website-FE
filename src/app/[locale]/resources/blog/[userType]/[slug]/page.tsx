@@ -10,7 +10,7 @@ import BlogPostContent from './BlogPostContent';
 import BlogPostJsonLd from './BlogPostJsonLd';
 import { SpeakableSchema } from '@/components/seo/SpeakableSchema';
 import { ProfilePageSchema } from '@/components/seo/ProfilePageSchema';
-import { authorBios } from '@/lib/constants/blog/authorData';
+import { getAuthorBio } from '@/lib/constants/blog/authorData';
 
 interface PageProps {
   params: {
@@ -46,7 +46,7 @@ export async function generateMetadata({
     };
   }
 
-  const post = await getBlogPostBySlug(userType as UserType, slug);
+  const post = await getBlogPostBySlug(userType as UserType, slug, locale);
 
   if (!post) {
     return {
@@ -96,7 +96,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
-  const post = await getBlogPostBySlug(userType as UserType, slug);
+  const post = await getBlogPostBySlug(userType as UserType, slug, locale);
 
   if (!post) {
     notFound();
@@ -104,13 +104,13 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   const metaTitle = post.attributes.metaTitle || post.attributes.title;
   const authorName = post.attributes.user?.data?.attributes?.name || '';
-  const author = authorBios[authorName];
+  const author = getAuthorBio(authorName, locale);
 
   return (
     <>
       {/* JSON-LD Structured Data */}
-      <BlogPostJsonLd post={post} userType={userType as UserType} />
-      {author && author.name !== 'The Daisy Team' && (
+      <BlogPostJsonLd post={post} userType={userType as UserType} locale={locale} />
+      {author && author.name !== 'The Daisy Team' && author.name !== 'فريق ديزي' && (
         <ProfilePageSchema
           url={`https://www.jointhedaisy.com/${locale}/resources/blog/${userType}/${slug}`}
           type="Person"
@@ -118,7 +118,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           description={author.bio}
           image={author.image}
           jobTitle={author.jobTitle}
-          worksFor="The Daisy"
+          worksFor={locale === 'ar' ? 'ديزي' : 'The Daisy'}
         />
       )}
       <SpeakableSchema
