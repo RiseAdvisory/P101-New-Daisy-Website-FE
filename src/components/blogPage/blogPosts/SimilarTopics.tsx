@@ -10,6 +10,7 @@ import { blogPostsByUserType } from '@/lib/constants/blog/blogData';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
 import { formatBlogDate, formatReadTime } from '@/lib/utils/blogFormat';
 import { getAuthorBio } from '@/lib/constants/blog/authorData';
+import { translateTag } from '@/lib/constants/blog/tagTranslations';
 
 export const SimilarTopics = ({ titleSimilar }: { titleSimilar: string }) => {
   const [listCard, setListCards] = useState<any>();
@@ -88,10 +89,10 @@ export const SimilarTopics = ({ titleSimilar }: { titleSimilar: string }) => {
                 <div className="px-6 py-4 mt-6">
                   <div className="flex justify-start gap-2 text-sm">
                     <span className="px-3 py-1 text-[#2543AD] bg-[#E9ECF7] rounded-sm ">
-                      {item.attributes.tags?.category}
+                      {translateTag(item.attributes.tags?.category || '', 'category', locale)}
                     </span>
                     <span className="px-3 py-1 text-[#14736F] bg-[#E7F1F1] rounded-sm">
-                      {item.attributes.tags?.topic}
+                      {translateTag(item.attributes.tags?.topic || '', 'topic', locale)}
                     </span>
                   </div>
                   <h3 className="mt-2 text-lg ltr:font-montserrat font-semibold">
