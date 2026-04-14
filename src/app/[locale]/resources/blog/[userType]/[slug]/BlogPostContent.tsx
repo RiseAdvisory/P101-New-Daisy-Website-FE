@@ -50,9 +50,16 @@ export default function BlogPostContent({
     });
   }, [post, userType, handlePost, setHandleId, choosePathStrapi, chooseBreadcrumb, choosePatnName]);
 
+  const breadcrumbTitle = locale === 'ar' ? 'الموارد' : 'Resources';
+  const breadcrumbDescription = locale === 'ar' ? 'المقالات' : 'Blog Posts';
+
   return (
     <div className="w-full">
-      <HeroBlogPage />
+      <HeroBlogPage
+        breadcrumbTitle={breadcrumbTitle}
+        breadcrumbDescription={breadcrumbDescription}
+        breadcrumbHref={`/${locale}/resources/blog/${userType}`}
+      />
       <AboutPosts />
       <AboutAuthor />
       <CreatePerfect

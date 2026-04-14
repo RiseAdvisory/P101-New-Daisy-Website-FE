@@ -12,13 +12,24 @@ import { getLocaleFromPathname } from '@/lib/utils/locale';
 import { formatBlogDate, formatReadTime } from '@/lib/utils/blogFormat';
 import { getAuthorBio } from '@/lib/constants/blog/authorData';
 
-export const HeroBlogPage = () => {
+interface HeroBlogPageProps {
+  breadcrumbTitle?: string;
+  breadcrumbDescription?: string;
+  breadcrumbHref?: string;
+}
+
+export const HeroBlogPage = ({ breadcrumbTitle, breadcrumbDescription, breadcrumbHref }: HeroBlogPageProps = {}) => {
   const { post } = usePostStore();
   const fullPathname = usePathname();
   const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const isRtl = locale === 'ar';
 
   const { patnName, bredcrumb } = useChoosePath();
+
+  // Prefer props over store (avoids flash of stale store values)
+  const finalBreadcrumbTitle = breadcrumbDescription || bredcrumb?.description;
+  const finalBreadcrumbDesc = breadcrumbTitle || bredcrumb?.title;
+  const finalBreadcrumbHref = breadcrumbHref || `/resources/${patnName}`;
 
   // Handle missing image data gracefully - now uses local paths directly
   const bgImage = post?.image?.data?.[0]?.attributes?.url
@@ -45,9 +56,9 @@ export const HeroBlogPage = () => {
       <div className="flex pt-6">
         <HomeIcon className="ltr:mr-2 rtl:ml-2" />
         <BreadcrumbWithCustomSeparator
-          bredCrumbTitle={bredcrumb?.description}
-          bredCrumbDesription={bredcrumb?.title}
-          bredCrumbHref={`/resources/${patnName}`}
+          bredCrumbTitle={finalBreadcrumbTitle}
+          bredCrumbDesription={finalBreadcrumbDesc}
+          bredCrumbHref={finalBreadcrumbHref}
         />
       </div>
       <h1 className="text-3xl font-bold text-white mt-8">{post?.title}</h1>
@@ -56,7 +67,7 @@ export const HeroBlogPage = () => {
         dir={isRtl ? 'rtl' : 'ltr'}
       >
         <div className="flex">
-          <div className="flex items-center ltr:border-r ltr:pr-[10px] rtl:pl-[10px]">
+          <div className="flex items-center ltr:border-r ltr:pr-[10px] rtl:border-l rtl:pl-[10px]">
             {iconImg && (
               <Image
                 src={iconImg}
@@ -76,7 +87,7 @@ export const HeroBlogPage = () => {
             {dateText}
           </span>
         </div>
-        <span className="flex items-center mt-2 md:mt-0 ltr:md:ml-2 rtl:md:mr-2 rtl:border-r rtl:pr-2">
+        <span className="flex items-center mt-2 md:mt-0 ltr:md:ml-2 rtl:md:mr-2 rtl:pr-2">
           <ClockIcon className="ltr:mr-2 rtl:ml-2" fill="#ECEEED" />
           {timeText}
         </span>
