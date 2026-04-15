@@ -56,7 +56,7 @@ export default function InsightsPage({ params }: { params: { locale: string } })
       />
       <PageBreadcrumbSchema
         locale={locale}
-        items={[{ name: locale === 'ar' ? 'رؤى وإحصائيات' : 'Insights', url: `https://www.jointhedaisy.com/${locale}/insights` }]}
+        items={[{ name: locale === 'ar' ? 'رؤى وإحصائيات' : 'Insights', url: '/insights' }]}
       />
       <InsightsPageClient stats={stats} locale={locale} />
     </>

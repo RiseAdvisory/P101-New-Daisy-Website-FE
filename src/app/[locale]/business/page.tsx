@@ -85,7 +85,7 @@ export default function BusinessPage({ params }: { params: { locale: string } })
         items={[
           {
             name: params.locale === 'ar' ? 'للأعمال' : 'For Business',
-            url: `https://www.jointhedaisy.com/${params.locale}/business`,
+            url: '/business',
           },
         ]}
       />
