@@ -108,11 +108,11 @@ export default function FaqPersonaPage({
         items={[
           {
             name: 'FAQ',
-            url: `https://www.jointhedaisy.com/${locale}/faq`,
+            url: '/faq',
           },
           {
             name: persona.charAt(0).toUpperCase() + persona.slice(1),
-            url: `https://www.jointhedaisy.com/${locale}/faq/${persona}`,
+            url: `/faq/${persona}`,
           },
         ]}
       />
