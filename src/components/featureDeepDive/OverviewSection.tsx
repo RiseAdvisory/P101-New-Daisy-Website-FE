@@ -2,26 +2,31 @@
 import { AlertCircle, TrendingUp } from 'lucide-react';
 
 interface OverviewSectionProps {
-  categoryName: string;
   overview: string;
   painPoints: string[];
   growthOutcome: string;
   keyCapabilities: string[];
+  labels: {
+    whatIsTitle: string;
+    keyCapabilitiesLabel: string;
+    whyNeedTitle: string;
+    businessImpactLabel: string;
+  };
 }
 
 export function OverviewSection({
-  categoryName,
   overview,
   painPoints,
   growthOutcome,
   keyCapabilities,
+  labels,
 }: OverviewSectionProps) {
   return (
     <>
       {/* GEO Answer Block, first screen, definition + key capabilities */}
       <section className="mx-auto max-w-4xl px-4 py-12 md:py-16">
         <h2 className="mb-6 text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
-          What Is {categoryName} for Beauty Businesses?
+          {labels.whatIsTitle}
         </h2>
         <p className="mb-6 text-lg leading-relaxed text-[#455150]" data-geo-answer="true">
           {overview}
@@ -30,7 +35,7 @@ export function OverviewSection({
         {keyCapabilities.length > 0 && (
           <div className="rounded-2xl border border-[#E8E9E9] bg-[#F8F5F3] p-6">
             <h3 className="mb-4 text-lg font-semibold text-[#172524]">
-              Key capabilities:
+              {labels.keyCapabilitiesLabel}
             </h3>
             <ul className="space-y-2">
               {keyCapabilities.map((cap, index) => (
@@ -51,7 +56,7 @@ export function OverviewSection({
       <section className="w-full bg-[#F8F5F3] px-4 py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-12 text-center text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
-            Why Do Beauty Businesses Need {categoryName}?
+            {labels.whyNeedTitle}
           </h2>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -79,7 +84,7 @@ export function OverviewSection({
             <TrendingUp className="h-6 w-6 text-primary" />
           </div>
           <h3 className="mb-2 text-lg font-semibold text-[#172524]">
-            The Business Impact
+            {labels.businessImpactLabel}
           </h3>
           <p className="text-base leading-relaxed text-[#455150]">
             {growthOutcome}

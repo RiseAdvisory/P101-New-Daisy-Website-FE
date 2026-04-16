@@ -12,12 +12,17 @@ interface SubFeature {
 
 interface SubFeaturesSectionProps {
   subFeatures: SubFeature[];
-  categoryName: string;
+  labels: {
+    title: string;
+    subtitle: string;
+    keyBenefitLabel: string;
+    howItWorks: string;
+  };
 }
 
 export function SubFeaturesSection({
   subFeatures,
-  categoryName,
+  labels,
 }: SubFeaturesSectionProps) {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
@@ -25,11 +30,10 @@ export function SubFeaturesSection({
     <section className="w-full bg-white px-4 py-16 md:py-24">
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-4 text-center text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
-          How Does The Daisy&apos;s {categoryName} Work?
+          {labels.title}
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-base leading-relaxed text-[#455150]">
-          Every tool is designed to save beauty businesses time and grow
-          revenue.
+          {labels.subtitle}
         </p>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -55,7 +59,7 @@ export function SubFeaturesSection({
                 {/* Key Benefit */}
                 <div className="mb-4 rounded-lg bg-primary/5 px-4 py-3">
                   <p className="text-sm font-medium text-primary">
-                    Key benefit: {feature.keyBenefit}
+                    {labels.keyBenefitLabel} {feature.keyBenefit}
                   </p>
                 </div>
 
@@ -68,7 +72,7 @@ export function SubFeaturesSection({
                       }
                       className="flex items-center gap-1 text-sm font-medium text-primary hover:underline"
                     >
-                      How it works
+                      {labels.howItWorks}
                       <ChevronDown
                         className={`h-4 w-4 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
                       />

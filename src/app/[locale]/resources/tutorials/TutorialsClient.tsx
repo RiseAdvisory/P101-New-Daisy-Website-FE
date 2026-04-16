@@ -13,6 +13,14 @@ import { t } from '@/lib/constants/i18n';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 const INITIAL_CARDS_PER_CATEGORY = 3;
+const tutorialStrings = {
+  en: {
+    showAllArticles: (count: number) => `Show all ${count} articles`,
+  },
+  ar: {
+    showAllArticles: (count: number) => `عرض جميع ${count} المقالات`,
+  },
+} as const;
 
 export const TutorialsClient = () => {
   const fullPathname = usePathname();
@@ -97,17 +105,19 @@ export const TutorialsClient = () => {
                 ))}
               </div>
               {hasMore && (
-                <button
-                  onClick={() =>
-                    setExpandedCategories(
-                      (prev) => new Set(prev).add(cat.category.slug),
-                    )
-                  }
-                  className="mt-4 mx-auto block text-primary font-semibold text-sm hover:underline"
-                >
-                  Show all {cat.articles.length} articles
-                </button>
-              )}
+                  <button
+                    onClick={() =>
+                      setExpandedCategories(
+                        (prev) => new Set(prev).add(cat.category.slug),
+                      )
+                    }
+                    className="mt-4 mx-auto block text-primary font-semibold text-sm hover:underline"
+                  >
+                    {tutorialStrings[
+                      locale === 'ar' ? 'ar' : 'en'
+                    ].showAllArticles(cat.articles.length)}
+                  </button>
+                )}
             </section>
           );
         })}

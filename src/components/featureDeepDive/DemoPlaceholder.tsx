@@ -2,10 +2,13 @@
 import { Play } from 'lucide-react';
 
 interface DemoPlaceholderProps {
-  categoryName: string;
+  labels: {
+    heading: string;
+    paragraph: string;
+  };
 }
 
-export function DemoPlaceholder({ categoryName }: DemoPlaceholderProps) {
+export function DemoPlaceholder({ labels }: DemoPlaceholderProps) {
   return (
     <section className="w-full bg-white px-4 py-16 md:py-24">
       <div className="mx-auto max-w-4xl text-center">
@@ -14,11 +17,10 @@ export function DemoPlaceholder({ categoryName }: DemoPlaceholderProps) {
             <Play className="h-8 w-8 text-primary" />
           </div>
           <h2 className="mb-2 text-xl font-semibold text-[#172524]">
-            See {categoryName} in Action
+            {labels.heading}
           </h2>
           <p className="mx-auto max-w-md text-sm leading-relaxed text-[#455150]">
-            Interactive demo coming soon. In the meantime, start your free trial
-            to experience {categoryName} first-hand.
+            {labels.paragraph}
           </p>
         </div>
       </div>

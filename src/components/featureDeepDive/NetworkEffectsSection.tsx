@@ -2,11 +2,16 @@
 import { Network, CheckCircle2 } from 'lucide-react';
 
 interface NetworkEffectsSectionProps {
+  labels: {
+    badge: string;
+    heading: string;
+  };
   description: string;
   benefits: string[];
 }
 
 export function NetworkEffectsSection({
+  labels,
   description,
   benefits,
 }: NetworkEffectsSectionProps) {
@@ -16,10 +21,10 @@ export function NetworkEffectsSection({
         <div className="mb-8 text-center">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
             <Network className="h-4 w-4" />
-            Compounding Advantage
+            {labels.badge}
           </div>
           <h2 className="text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
-            The Network Effect
+            {labels.heading}
           </h2>
         </div>
 
