@@ -7,18 +7,21 @@ interface WorkflowStep {
 
 interface WorkflowSectionProps {
   workflow: WorkflowStep[];
+  labels: {
+    heading: string;
+    subtitle: string;
+  };
 }
 
-export function WorkflowSection({ workflow }: WorkflowSectionProps) {
+export function WorkflowSection({ workflow, labels }: WorkflowSectionProps) {
   return (
     <section className="w-full bg-[#F8F5F3] px-4 py-16 md:py-24">
       <div className="mx-auto max-w-4xl">
         <h2 className="mb-4 text-center text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
-          How Do You Get Started?
+          {labels.heading}
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-base leading-relaxed text-[#455150]">
-          Getting started is straightforward. Here is the process from setup to
-          results.
+          {labels.subtitle}
         </p>
 
         <ol className="space-y-6">

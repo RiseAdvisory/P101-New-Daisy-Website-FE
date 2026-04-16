@@ -9,19 +9,27 @@ interface ComparisonRow {
 
 interface ComparisonHighlightProps {
   comparisons: ComparisonRow[];
+  labels: {
+    heading: string;
+    subtitle: string;
+    areaLabel: string;
+    daisyLabel: string;
+    typicalLabel: string;
+  };
 }
 
 export function ComparisonHighlight({
   comparisons,
+  labels,
 }: ComparisonHighlightProps) {
   return (
     <section className="w-full bg-white px-4 py-16 md:py-24">
       <div className="mx-auto max-w-5xl">
         <h2 className="mb-4 text-center text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
-          Daisy vs. Typical Solutions
+          {labels.heading}
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-base leading-relaxed text-[#455150]">
-          See how Daisy&apos;s approach compares to what most platforms offer.
+          {labels.subtitle}
         </p>
 
         {/* Desktop Table */}
@@ -30,16 +38,16 @@ export function ComparisonHighlight({
             <thead>
               <tr className="bg-[#F8F5F3]">
                 <th className="px-6 py-4 text-left text-sm font-semibold text-[#172524]">
-                  Area
+                  {labels.areaLabel}
                 </th>
                 <th className="px-6 py-4 text-left text-sm font-semibold text-primary">
                   <span className="flex items-center gap-2">
-                    <Check className="h-4 w-4" /> Daisy
+                    <Check className="h-4 w-4" /> {labels.daisyLabel}
                   </span>
                 </th>
                 <th className="px-6 py-4 text-left text-sm font-semibold text-[#455150]">
                   <span className="flex items-center gap-2">
-                    <X className="h-4 w-4 text-red-400" /> Typical Software
+                    <X className="h-4 w-4 text-red-400" /> {labels.typicalLabel}
                   </span>
                 </th>
               </tr>
@@ -77,12 +85,14 @@ export function ComparisonHighlight({
               </h3>
               <div className="space-y-2">
                 <div className="rounded-lg bg-primary/5 p-3">
-                  <p className="text-xs font-medium text-primary">Daisy</p>
+                  <p className="text-xs font-medium text-primary">
+                    {labels.daisyLabel}
+                  </p>
                   <p className="mt-1 text-sm text-[#455150]">{row.daisy}</p>
                 </div>
                 <div className="rounded-lg bg-red-50 p-3">
                   <p className="text-xs font-medium text-red-500">
-                    Typical Software
+                    {labels.typicalLabel}
                   </p>
                   <p className="mt-1 text-sm text-[#455150]">{row.typical}</p>
                 </div>
