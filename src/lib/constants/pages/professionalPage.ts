@@ -82,7 +82,8 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
     scrollSections: [
       {
         sortId: 1,
-        mainImage: '/images/pages/professional/scroll/staff-details.webp',
+        mainImage: '/images/pages/professional/scroll/ai-responds-while-you-work.webp',
+        mainImageMobile: '/images/pages/professional/scroll/ai-responds-while-you-work-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
@@ -139,8 +140,8 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 2,
-        mainImage: '/images/pages/business/scroll/smart-scheduling.webp',
-        mainImageMobile: '/images/pages/business/scroll/smart-scheduling-mobile.webp',
+        mainImage: '/images/pages/professional/scroll/inbox-and-notifications.webp',
+        mainImageMobile: '/images/pages/professional/scroll/inbox-and-notifications-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
@@ -182,8 +183,8 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 3,
-        mainImage: '/images/pages/business/scroll/booking-confirmed.webp',
-        mainImageMobile: '/images/pages/business/scroll/booking-confirmed-mobile.webp',
+        mainImage: '/images/pages/professional/scroll/deposit-collection.webp',
+        mainImageMobile: '/images/pages/professional/scroll/deposit-collection-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
@@ -240,8 +241,8 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 4,
-        mainImage: '/images/pages/business/scroll/ai-receptionist-chat.webp',
-        mainImageMobile: '/images/pages/business/scroll/ai-receptionist-chat-mobile.webp',
+        mainImage: '/images/pages/professional/scroll/calendar-synced.webp',
+        mainImageMobile: '/images/pages/professional/scroll/calendar-synced-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
@@ -364,7 +365,8 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
     scrollSections: [
       {
         sortId: 1,
-        mainImage: '/images/pages/professional/scroll/staff-details.webp',
+        mainImage: '/images/pages/professional/scroll/ai-responds-while-you-work.webp',
+        mainImageMobile: '/images/pages/professional/scroll/ai-responds-while-you-work-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
@@ -421,8 +423,8 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 2,
-        mainImage: '/images/pages/business/scroll/smart-scheduling.webp',
-        mainImageMobile: '/images/pages/business/scroll/smart-scheduling-mobile.webp',
+        mainImage: '/images/pages/professional/scroll/inbox-and-notifications.webp',
+        mainImageMobile: '/images/pages/professional/scroll/inbox-and-notifications-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
@@ -464,8 +466,8 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 3,
-        mainImage: '/images/pages/business/scroll/booking-confirmed.webp',
-        mainImageMobile: '/images/pages/business/scroll/booking-confirmed-mobile.webp',
+        mainImage: '/images/pages/professional/scroll/deposit-collection.webp',
+        mainImageMobile: '/images/pages/professional/scroll/deposit-collection-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
@@ -522,8 +524,8 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 4,
-        mainImage: '/images/pages/business/scroll/ai-receptionist-chat.webp',
-        mainImageMobile: '/images/pages/business/scroll/ai-receptionist-chat-mobile.webp',
+        mainImage: '/images/pages/professional/scroll/calendar-synced.webp',
+        mainImageMobile: '/images/pages/professional/scroll/calendar-synced-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
