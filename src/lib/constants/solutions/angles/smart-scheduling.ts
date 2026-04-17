@@ -49,6 +49,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
       scrollSections: [
         {
           sortId: 1, mainImage: '/images/pages/business/scroll/ai-receptionist-chat.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', secondBg: '/images/pages/business/scroll/stars.webp', ...scrollStyles.panel1, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/ai-receptionist-chat-mobile.webp',
           infoScroll: {
             title: 'Customer Requests a Time',
             text: 'AI Checks All Staff Availability',
@@ -58,6 +59,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         },
         {
           sortId: 2, mainImage: '/images/pages/business/scroll/smart-scheduling.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', ...scrollStyles.panel2, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/smart-scheduling-mobile.webp',
           infoScroll: {
             title: 'Best Slot Suggested Automatically',
             text: 'Right Person. Right Time. Zero Conflicts.',
@@ -67,6 +69,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         },
         {
           sortId: 3, mainImage: '/images/pages/business/scroll/payment-collection.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', secondBg: '/images/pages/business/scroll/stars.webp', ...scrollStyles.panel3, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/payment-collection-mobile.webp',
           infoScroll: {
             title: 'Confirmed Without Double-Booking',
             text: 'Instant Confirmation. Zero Overlap.',
@@ -76,6 +79,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         },
         {
           sortId: 4, mainImage: '/images/pages/business/scroll/booking-confirmed.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', ...scrollStyles.panel4, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/booking-confirmed-mobile.webp',
           infoScroll: {
             title: 'Your Calendar Stays Full and Organized',
             text: "You Didn't Touch a Thing",
@@ -152,18 +156,22 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
       scrollSections: [
         {
           sortId: 1, mainImage: '/images/pages/business/scroll/ai-receptionist-chat.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', secondBg: '/images/pages/business/scroll/stars.webp', ...scrollStyles.panel1, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/ai-receptionist-chat-mobile.webp',
           infoScroll: { title: 'عميل يطلب وقتًا', text: 'الذكاء الاصطناعي يتحقق من توافر جميع الموظفين', description: 'عميل يراسل يطلب موعد بالاياج يوم السبت. الذكاء الاصطناعي يتحقق فورًا من التوافر عبر جميع المصممين ويجد أفضل الخيارات.', listSub: ['يتحقق من جميع تقويمات الموظفين في الوقت الفعلي', 'يأخذ بالاعتبار مدة الخدمة والاستراحات', 'يرد خلال ثوانٍ'] },
         },
         {
           sortId: 2, mainImage: '/images/pages/business/scroll/smart-scheduling.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', ...scrollStyles.panel2, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/smart-scheduling-mobile.webp',
           infoScroll: { title: 'أفضل موعد يُقترح تلقائيًا', text: 'الشخص المناسب. الوقت المناسب. بدون تعارضات.', description: 'الذكاء الاصطناعي يقترح أفضل موعد متاح مع المصمم المناسب للخدمة. يأخذ بالاعتبار الخبرة والتوافر وتفضيلات العميل لتحقيق المطابقة المثالية.', listSub: ['يطابق خبرة المصمم مع الخدمة', 'يتجنب تعارض المواعيد', 'يحسّن استخدام التقويم'] },
         },
         {
           sortId: 3, mainImage: '/images/pages/business/scroll/payment-collection.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', secondBg: '/images/pages/business/scroll/stars.webp', ...scrollStyles.panel3, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/payment-collection-mobile.webp',
           infoScroll: { title: 'مؤكد بدون حجز مزدوج', text: 'تأكيد فوري. بدون تداخل.', description: 'الحجز يُؤكد فورًا. الذكاء الاصطناعي يضمن عدم حجز عميلين لنفس المصمم في نفس الوقت. تقويمات الموظفين تتحدث في الوقت الفعلي.', listSub: ['ضمان عدم الحجوزات المزدوجة', 'تأكيد فوري للعميل', 'الموظفون يُبلَّغون فورًا'] },
         },
         {
           sortId: 4, mainImage: '/images/pages/business/scroll/booking-confirmed.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', ...scrollStyles.panel4, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/booking-confirmed-mobile.webp',
           infoScroll: { title: 'تقويمك يبقى ممتلئًا ومنظمًا', text: 'لم تلمس شيئًا', description: 'تقويم عملك يمتلئ بكفاءة. بدون فجوات بين المواعيد، بدون وقت ضائع للموظفين. الذكاء الاصطناعي يحسّن كل فترة حتى يبقى فريقك منتجًا.', listSub: ['تقويم محسّن بأقل فجوات', 'استخدام الموظفين مُعظّم', 'الإيرادات اليومية تزداد'] },
         },
       ],
@@ -241,14 +249,17 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         },
         {
           sortId: 2, mainImage: '/images/pages/business/scroll/smart-scheduling.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', ...scrollStyles.panel2, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/smart-scheduling-mobile.webp',
           infoScroll: { title: 'Client Requests a Time', text: 'AI Finds the Perfect Slot', description: 'A client messages on WhatsApp asking for a haircut tomorrow. The AI checks your availability and suggests the next open slot that works for both of you.', listSub: ['Real-time availability check', 'Considers your preferences', 'Instant response to client'] },
         },
         {
           sortId: 3, mainImage: '/images/pages/business/scroll/booking-confirmed.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', secondBg: '/images/pages/business/scroll/stars.webp', ...scrollStyles.panel3, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/booking-confirmed-mobile.webp',
           infoScroll: { title: 'Confirmed Without Interrupting You', text: 'No Back-and-Forth. No Double-Bookings.', description: "The AI confirms the booking, processes payment, and adds it to your calendar. You're mid-appointment and don't even notice until you check between clients.", listSub: ['Zero interruption to your work', 'Payment processed automatically', 'Calendar updated in real-time'] },
         },
         {
           sortId: 4, mainImage: '/images/pages/business/scroll/ai-receptionist-chat.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', ...scrollStyles.panel4, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/ai-receptionist-chat-mobile.webp',
           infoScroll: { title: 'Your Calendar Fills Itself', text: 'More Clients. Less Admin.', description: 'Between appointments you check your phone. Your schedule is filling up for the week. New clients confirmed, existing clients rebooked. All without you doing a thing.', listSub: ['Schedule fills automatically', 'Gaps optimized between appointments', 'Your earnings grow without extra effort'] },
         },
       ],
@@ -324,14 +335,17 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         },
         {
           sortId: 2, mainImage: '/images/pages/business/scroll/smart-scheduling.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', ...scrollStyles.panel2, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/smart-scheduling-mobile.webp',
           infoScroll: { title: 'عميل يطلب وقتًا', text: 'الذكاء الاصطناعي يجد الموعد المثالي', description: 'عميل يراسل على واتساب يطلب قصة شعر غدًا. الذكاء الاصطناعي يتحقق من توافرك ويقترح أقرب موعد يناسبكما.', listSub: ['تحقق من التوافر في الوقت الفعلي', 'يأخذ بالاعتبار تفضيلاتك', 'رد فوري للعميل'] },
         },
         {
           sortId: 3, mainImage: '/images/pages/business/scroll/booking-confirmed.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', secondBg: '/images/pages/business/scroll/stars.webp', ...scrollStyles.panel3, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/booking-confirmed-mobile.webp',
           infoScroll: { title: 'مؤكد بدون مقاطعتك', text: 'بدون تراسل متكرر. بدون حجوزات مزدوجة.', description: 'الذكاء الاصطناعي يؤكد الحجز ويعالج الدفع ويضيفه إلى تقويمك. أنت في منتصف موعد ولا تلاحظ حتى تتفقد بين العملاء.', listSub: ['بدون مقاطعة لعملك', 'الدفع يُعالج تلقائيًا', 'التقويم يتحدث في الوقت الفعلي'] },
         },
         {
           sortId: 4, mainImage: '/images/pages/business/scroll/ai-receptionist-chat.webp', firstBg: '/images/pages/business/scroll/leaf-bg.webp', ...scrollStyles.panel4, mainImageWidth: 300, mainImageHeight: 500,
+        mainImageMobile: '/images/pages/business/scroll/ai-receptionist-chat-mobile.webp',
           infoScroll: { title: 'تقويمك يمتلئ بنفسه', text: 'عملاء أكثر. إدارة أقل.', description: 'بين المواعيد تتفقد هاتفك. جدولك يمتلئ للأسبوع. عملاء جدد مؤكدون وعملاء حاليون أعادوا الحجز. كل ذلك بدون أن تفعل شيئًا.', listSub: ['الجدول يمتلئ تلقائيًا', 'الفجوات محسّنة بين المواعيد', 'أرباحك تنمو بدون جهد إضافي'] },
         },
       ],

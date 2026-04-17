@@ -53,6 +53,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 1,
           mainImage: '/images/pages/business/scroll/ai-receptionist-chat.webp',
+        mainImageMobile: '/images/pages/business/scroll/ai-receptionist-chat-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           secondBg: '/images/pages/business/scroll/stars.webp',
           ...scrollStyles.panel1,
@@ -73,6 +74,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 2,
           mainImage: '/images/pages/business/scroll/smart-scheduling.webp',
+        mainImageMobile: '/images/pages/business/scroll/smart-scheduling-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           ...scrollStyles.panel2,
           mainImageWidth: 300,
@@ -92,6 +94,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 3,
           mainImage: '/images/pages/business/scroll/payment-collection.webp',
+        mainImageMobile: '/images/pages/business/scroll/payment-collection-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           secondBg: '/images/pages/business/scroll/stars.webp',
           ...scrollStyles.panel3,
@@ -112,6 +115,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 4,
           mainImage: '/images/pages/business/scroll/booking-confirmed.webp',
+        mainImageMobile: '/images/pages/business/scroll/booking-confirmed-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           ...scrollStyles.panel4,
           mainImageWidth: 300,
@@ -211,6 +215,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 1,
           mainImage: '/images/pages/business/scroll/ai-receptionist-chat.webp',
+        mainImageMobile: '/images/pages/business/scroll/ai-receptionist-chat-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           secondBg: '/images/pages/business/scroll/stars.webp',
           ...scrollStyles.panel1,
@@ -231,6 +236,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 2,
           mainImage: '/images/pages/business/scroll/smart-scheduling.webp',
+        mainImageMobile: '/images/pages/business/scroll/smart-scheduling-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           ...scrollStyles.panel2,
           mainImageWidth: 300,
@@ -250,6 +256,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 3,
           mainImage: '/images/pages/business/scroll/payment-collection.webp',
+        mainImageMobile: '/images/pages/business/scroll/payment-collection-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           secondBg: '/images/pages/business/scroll/stars.webp',
           ...scrollStyles.panel3,
@@ -270,6 +277,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 4,
           mainImage: '/images/pages/business/scroll/booking-confirmed.webp',
+        mainImageMobile: '/images/pages/business/scroll/booking-confirmed-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           ...scrollStyles.panel4,
           mainImageWidth: 300,
@@ -390,6 +398,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 2,
           mainImage: '/images/pages/business/scroll/smart-scheduling.webp',
+        mainImageMobile: '/images/pages/business/scroll/smart-scheduling-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           ...scrollStyles.panel2,
           mainImageWidth: 300,
@@ -409,6 +418,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 3,
           mainImage: '/images/pages/business/scroll/booking-confirmed.webp',
+        mainImageMobile: '/images/pages/business/scroll/booking-confirmed-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           secondBg: '/images/pages/business/scroll/stars.webp',
           ...scrollStyles.panel3,
@@ -429,6 +439,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 4,
           mainImage: '/images/pages/business/scroll/ai-receptionist-chat.webp',
+        mainImageMobile: '/images/pages/business/scroll/ai-receptionist-chat-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           ...scrollStyles.panel4,
           mainImageWidth: 300,
@@ -547,6 +558,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 2,
           mainImage: '/images/pages/business/scroll/smart-scheduling.webp',
+        mainImageMobile: '/images/pages/business/scroll/smart-scheduling-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           ...scrollStyles.panel2,
           mainImageWidth: 300,
@@ -566,6 +578,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 3,
           mainImage: '/images/pages/business/scroll/booking-confirmed.webp',
+        mainImageMobile: '/images/pages/business/scroll/booking-confirmed-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           secondBg: '/images/pages/business/scroll/stars.webp',
           ...scrollStyles.panel3,
@@ -586,6 +599,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         {
           sortId: 4,
           mainImage: '/images/pages/business/scroll/ai-receptionist-chat.webp',
+        mainImageMobile: '/images/pages/business/scroll/ai-receptionist-chat-mobile.webp',
           firstBg: '/images/pages/business/scroll/leaf-bg.webp',
           ...scrollStyles.panel4,
           mainImageWidth: 300,
