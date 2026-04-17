@@ -82,15 +82,17 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
     scrollSections: [
       {
         sortId: 1,
-        mainImage: '/images/pages/professional/scroll/staff-details.webp',
+        mainImage: '/images/pages/professional/scroll/ai-responds-while-you-work.webp',
+        mainImageMobile: '/images/pages/professional/scroll/ai-responds-while-you-work-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 24px 24px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'center',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -139,14 +141,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 2,
-        mainImage: '/images/pages/business/scroll/schedule.webp',
+        mainImage: '/images/pages/professional/scroll/inbox-and-notifications.webp',
+        mainImageMobile: '/images/pages/professional/scroll/inbox-and-notifications-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 24px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'bottom',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -159,11 +163,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         },
         styleImageMobile: {
           position: 'absolute',
-          padding: '24px 24px 24px 24px',
+          padding: '24px 24px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
-          objectPosition: 'center',
+          objectPosition: 'bottom',
         },
         mainImageWidth: 300,
         mainImageHeight: 500,
@@ -181,15 +185,17 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 3,
-        mainImage: '/images/pages/business/scroll/analytics.webp',
+        mainImage: '/images/pages/professional/scroll/deposit-collection.webp',
+        mainImageMobile: '/images/pages/professional/scroll/deposit-collection-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 24px 24px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'center',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -238,14 +244,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 4,
-        mainImage: '/images/pages/business/scroll/device-mockups.webp',
+        mainImage: '/images/pages/professional/scroll/calendar-synced.webp',
+        mainImageMobile: '/images/pages/professional/scroll/calendar-synced-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 0px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'bottom',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -258,11 +266,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         },
         styleImageMobile: {
           position: 'absolute',
-          padding: '24px 24px 24px 24px',
+          padding: '24px 24px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
-          objectPosition: 'center',
+          objectPosition: 'bottom',
         },
         mainImageWidth: 300,
         mainImageHeight: 500,
@@ -361,15 +369,17 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
     scrollSections: [
       {
         sortId: 1,
-        mainImage: '/images/pages/professional/scroll/staff-details.webp',
+        mainImage: '/images/pages/professional/scroll/ai-responds-while-you-work.webp',
+        mainImageMobile: '/images/pages/professional/scroll/ai-responds-while-you-work-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 24px 24px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'center',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -418,14 +428,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 2,
-        mainImage: '/images/pages/business/scroll/schedule.webp',
+        mainImage: '/images/pages/professional/scroll/inbox-and-notifications.webp',
+        mainImageMobile: '/images/pages/professional/scroll/inbox-and-notifications-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 24px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'bottom',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -438,11 +450,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         },
         styleImageMobile: {
           position: 'absolute',
-          padding: '24px 24px 24px 24px',
+          padding: '24px 24px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
-          objectPosition: 'center',
+          objectPosition: 'bottom',
         },
         mainImageWidth: 300,
         mainImageHeight: 500,
@@ -460,15 +472,17 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 3,
-        mainImage: '/images/pages/business/scroll/analytics.webp',
+        mainImage: '/images/pages/professional/scroll/deposit-collection.webp',
+        mainImageMobile: '/images/pages/professional/scroll/deposit-collection-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 24px 24px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'center',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -517,14 +531,16 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 4,
-        mainImage: '/images/pages/business/scroll/device-mockups.webp',
+        mainImage: '/images/pages/professional/scroll/calendar-synced.webp',
+        mainImageMobile: '/images/pages/professional/scroll/calendar-synced-mobile.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 0px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'bottom',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -537,11 +553,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         },
         styleImageMobile: {
           position: 'absolute',
-          padding: '24px 24px 24px 24px',
+          padding: '24px 24px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
-          objectPosition: 'center',
+          objectPosition: 'bottom',
         },
         mainImageWidth: 300,
         mainImageHeight: 500,

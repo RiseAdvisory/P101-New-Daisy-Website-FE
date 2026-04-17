@@ -13,6 +13,7 @@ export interface LocalScrollSection {
   styleSecondBgJSON?: Record<string, string | number>;
   styleBgMobileSecond?: Record<string, string | number>;
   styleImageMobile?: Record<string, string | number>;
+  mainImageMobile?: string;
   mainImageWidth?: number;
   mainImageHeight?: number;
   infoScroll: {
@@ -150,10 +151,11 @@ export function toScrollSectionItems(sections: LocalScrollSection[]) {
             id: index + 1,
             attributes: {
               url: section.mainImage,
+              mobileUrl: section.mainImageMobile || section.mainImage,
               formats: {
                 large: { url: section.mainImage },
                 small: {
-                  url: section.mainImage,
+                  url: section.mainImageMobile || section.mainImage,
                   width: section.mainImageWidth ?? 300,
                   height: section.mainImageHeight ?? 500,
                 },

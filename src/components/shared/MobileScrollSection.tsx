@@ -32,8 +32,9 @@ export const MobileScrollSection = ({
                 }
                 imageClassNameBg="absolute -bottom-[40px] left-0 w-[300px] h-[300px]"
                 image={
-                  attributes.mainImage?.data?.[0]?.attributes?.formats?.large
-                    ?.url ?? ''
+                  attributes.mainImage?.data?.[0]?.attributes?.mobileUrl
+                    ?? attributes.mainImage?.data?.[0]?.attributes?.formats?.large?.url
+                    ?? ''
                 }
                 className="absolute w-full h-full bottom-0 left-10"
                 imageBgTwo={
