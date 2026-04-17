@@ -88,10 +88,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 24px 24px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'center',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -145,10 +146,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 24px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'bottom',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -161,11 +163,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         },
         styleImageMobile: {
           position: 'absolute',
-          padding: '24px 24px 24px 24px',
+          padding: '24px 24px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
-          objectPosition: 'center',
+          objectPosition: 'bottom',
         },
         mainImageWidth: 300,
         mainImageHeight: 500,
@@ -189,10 +191,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 24px 24px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'center',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -246,10 +249,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 0px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'bottom',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -262,11 +266,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         },
         styleImageMobile: {
           position: 'absolute',
-          padding: '24px 24px 24px 24px',
+          padding: '24px 24px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
-          objectPosition: 'center',
+          objectPosition: 'bottom',
         },
         mainImageWidth: 300,
         mainImageHeight: 500,
@@ -371,10 +375,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 24px 24px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'center',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -428,10 +433,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 24px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'bottom',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -444,11 +450,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         },
         styleImageMobile: {
           position: 'absolute',
-          padding: '24px 24px 24px 24px',
+          padding: '24px 24px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
-          objectPosition: 'center',
+          objectPosition: 'bottom',
         },
         mainImageWidth: 300,
         mainImageHeight: 500,
@@ -472,10 +478,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 24px 24px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'center',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -529,10 +536,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
-          padding: '24px',
+          padding: '24px 0px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
+          objectPosition: 'bottom',
         },
         styleFirstBgJSON: {
           position: 'absolute',
@@ -545,11 +553,11 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         },
         styleImageMobile: {
           position: 'absolute',
-          padding: '24px 24px 24px 24px',
+          padding: '24px 24px 0px 24px',
           width: '100%',
           height: '100%',
           objectFit: 'contain',
-          objectPosition: 'center',
+          objectPosition: 'bottom',
         },
         mainImageWidth: 300,
         mainImageHeight: 500,
