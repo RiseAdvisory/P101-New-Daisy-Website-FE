@@ -82,7 +82,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     scrollSections: [
       {
         sortId: 1,
-        mainImage: '/images/pages/business/scroll/device-mockups.webp',
+        mainImage: '/images/pages/business/scroll/ai-receptionist-chat.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
@@ -140,7 +140,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 2,
-        mainImage: '/images/pages/business/scroll/schedule.webp',
+        mainImage: '/images/pages/business/scroll/smart-scheduling.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
@@ -183,7 +183,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 3,
-        mainImage: '/images/pages/business/scroll/integrations.webp',
+        mainImage: '/images/pages/business/scroll/payment-collection.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
@@ -241,7 +241,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 4,
-        mainImage: '/images/pages/business/scroll/analytics.webp',
+        mainImage: '/images/pages/business/scroll/booking-confirmed.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
@@ -365,7 +365,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     scrollSections: [
       {
         sortId: 1,
-        mainImage: '/images/pages/business/scroll/device-mockups.webp',
+        mainImage: '/images/pages/business/scroll/ai-receptionist-chat.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
@@ -423,7 +423,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 2,
-        mainImage: '/images/pages/business/scroll/schedule.webp',
+        mainImage: '/images/pages/business/scroll/smart-scheduling.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',
@@ -466,7 +466,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 3,
-        mainImage: '/images/pages/business/scroll/integrations.webp',
+        mainImage: '/images/pages/business/scroll/payment-collection.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         secondBg: '/images/pages/business/scroll/stars.webp',
         styleMainPictureJSON: {
@@ -524,7 +524,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       },
       {
         sortId: 4,
-        mainImage: '/images/pages/business/scroll/analytics.webp',
+        mainImage: '/images/pages/business/scroll/booking-confirmed.webp',
         firstBg: '/images/pages/business/scroll/leaf-bg.webp',
         styleMainPictureJSON: {
           position: 'absolute',

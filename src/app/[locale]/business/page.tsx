@@ -69,7 +69,7 @@ export default function BusinessPage({ params }: { params: { locale: string } })
       {/* Preload first scroll section hero image to improve mobile LCP */}
       <link
         rel="preload"
-        href="/images/pages/business/scroll/device-mockups.webp"
+        href="/images/pages/business/scroll/ai-receptionist-chat.webp"
         as="image"
         type="image/webp"
       />
