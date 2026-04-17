@@ -15,15 +15,18 @@ jest.mock('@/components/noAnimationBusiness/NoAnimationBusiness', () => ({
     title,
     subtitle,
     description,
+    image,
   }: {
     title: string;
     subtitle: string;
     description: string;
+    image: string;
   }) => (
     <div data-testid="no-scrolling-animation">
       <span data-testid="title">{title}</span>
       <span data-testid="subtitle">{subtitle}</span>
       <span data-testid="description">{description}</span>
+      <span data-testid="image-url">{image}</span>
     </div>
   ),
 }));
@@ -162,5 +165,72 @@ describe('MobileScrollSection', () => {
 
     const wrapper = container.firstChild;
     expect(wrapper).toHaveClass('md:hidden');
+  });
+
+  it('prefers mobileUrl over formats.large.url when available', () => {
+    const dataWithMobileUrl = [
+      {
+        id: 1,
+        attributes: {
+          sortId: 1,
+          firstBg: { data: [{ attributes: { url: '/images/bg.jpg' } }] },
+          secondBg: { data: null },
+          mainImage: {
+            data: [
+              {
+                attributes: {
+                  mobileUrl: '/images/mobile-specific.webp',
+                  formats: {
+                    large: { url: '/images/desktop.webp' },
+                    small: { url: '/images/mobile-specific.webp', width: 400, height: 300 },
+                  },
+                },
+              },
+            ],
+          },
+          infoScroll: {
+            description: 'Test',
+            text: 'Title',
+            title: 'Subtitle',
+          },
+        },
+      },
+    ];
+
+    render(<MobileScrollSection dataScroll={dataWithMobileUrl} />);
+    expect(screen.getByTestId('image-url')).toHaveTextContent('/images/mobile-specific.webp');
+  });
+
+  it('falls back to formats.large.url when mobileUrl is absent', () => {
+    const dataWithoutMobileUrl = [
+      {
+        id: 1,
+        attributes: {
+          sortId: 1,
+          firstBg: { data: [{ attributes: { url: '/images/bg.jpg' } }] },
+          secondBg: { data: null },
+          mainImage: {
+            data: [
+              {
+                attributes: {
+                  formats: {
+                    large: { url: '/images/desktop-fallback.webp' },
+                    small: { url: '/images/desktop-fallback.webp', width: 400, height: 300 },
+                  },
+                },
+              },
+            ],
+          },
+          infoScroll: {
+            description: 'Test',
+            text: 'Title',
+            title: 'Subtitle',
+          },
+        },
+      },
+    ];
+
+    render(<MobileScrollSection dataScroll={dataWithoutMobileUrl} />);
+    expect(screen.getByTestId('image-url')).toHaveTextContent('/images/desktop-fallback.webp');
   });
 });
