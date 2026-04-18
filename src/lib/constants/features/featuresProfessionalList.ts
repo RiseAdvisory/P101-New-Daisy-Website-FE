@@ -324,7 +324,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px 24px 0px 24px',
+              padding: '32px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },
@@ -357,7 +357,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px 24px 0px 24px',
+              padding: '28px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },
@@ -547,7 +547,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/client-insights.webp',
+                    url: '/images/features/professional/online-payments.webp',
                   },
                 },
               ],
@@ -555,7 +555,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px 24px 0px 24px',
+              padding: '72px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },
@@ -687,7 +687,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px 24px 0px 24px',
+              padding: '28px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },
@@ -753,7 +753,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '0px 24px 24px 24px',
+              padding: '0px 24px 80px 24px',
               objectFit: 'contain',
               objectPosition: 'top',
             },
@@ -819,7 +819,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px 24px 0px 24px',
+              padding: '26px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },
@@ -852,7 +852,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px 24px 0px 24px',
+              padding: '26px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },
@@ -910,7 +910,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/earnings-reports.webp',
+                    url: '/images/features/professional/client-blacklisting.webp',
                   },
                 },
               ],
@@ -984,7 +984,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px 24px 0px 24px',
+              padding: '28px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },
