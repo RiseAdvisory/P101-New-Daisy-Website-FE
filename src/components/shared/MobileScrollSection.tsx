@@ -22,6 +22,9 @@ export const MobileScrollSection = ({
           const { attributes } = item;
           return (
             <li key={item.id || index}>
+              <div className="px-4 bg-primary">
+                <Separator className="bg-[#586968]" />
+              </div>
               <NoScrollingAnimationBusiness
                 styleBgMobileSecond={attributes.styleBgMobileSecond}
                 sizeImage={attributes.styleImageMobile}
@@ -55,9 +58,6 @@ export const MobileScrollSection = ({
                 }
                 priority={index === 0}
               />
-              <div className="px-4 bg-primary">
-                <Separator className="bg-[#586968]" />
-              </div>
             </li>
           );
         })}
