@@ -43,5 +43,6 @@ tmpclaude-*
 # docs
 /docs
 !/docs/daisy-authors/
+!/docs/daisy-authors/**
 .superpowers/
 trial-success-page.png
