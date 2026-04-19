@@ -60,8 +60,12 @@ const ToggleButton = ({ className }: { className?: string }) => {
     if (typeof window !== 'undefined') {
       // Detect persona from persona-aware pages and sync toggle
       let currentPath: string | undefined;
-      if (pathname.includes('professional')) currentPath = '/professional';
-      else if (pathname.includes('business')) currentPath = '/business';
+      const isFeaturePage = pathname.startsWith('/features');
+
+      if (!isFeaturePage && pathname.includes('professional'))
+        currentPath = '/professional';
+      else if (!isFeaturePage && pathname.includes('business'))
+        currentPath = '/business';
       else if (pathname.startsWith('/customer')) currentPath = '/business';
 
       // Only update localStorage on pages that are clearly persona-specific
