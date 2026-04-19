@@ -85,9 +85,11 @@ export const ChangeUserTypeMobile = ({
   useEffect(() => {
     if (typeof window !== 'undefined') {
       let currentPath: string | undefined;
-      if (pathname.startsWith('/business')) currentPath = '/business';
+      const isFeaturePage = pathname.startsWith('/features');
+
+      if (!isFeaturePage && pathname.startsWith('/business')) currentPath = '/business';
       if (pathname.startsWith('/customer')) currentPath = '/customer';
-      if (pathname.startsWith('/professional')) currentPath = '/professional';
+      if (!isFeaturePage && pathname.startsWith('/professional')) currentPath = '/professional';
 
       if (currentPath) {
         localStorage.setItem('activePage', currentPath);

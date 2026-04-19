@@ -8,21 +8,54 @@ import { TwitterIcons } from '@/assets/icons/socialLinksIcons/TwitterIcons';
 import { LinkedInIcons } from '@/assets/icons/socialLinksIcons/LinkedInIcons';
 import { InstagramIcons } from '@/assets/icons/socialLinksIcons/InstagramIcons';
 import { usePathname } from 'next/navigation';
-import { useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { footerData } from '@/lib/constants/shared/footerData';
 import { t } from '@/lib/constants/i18n';
 import { getLocaleFromPathname, localePath, stripLocaleFromPathname } from '@/lib/utils/locale';
+
+type Persona = 'business' | 'professional';
 
 export const Footer = () => {
   const fullPath = usePathname();
   const locale = useMemo(() => getLocaleFromPathname(fullPath), [fullPath]);
   const pathWithoutLocale = useMemo(() => stripLocaleFromPathname(fullPath), [fullPath]);
-  const path = fullPath;
+  const path = pathWithoutLocale;
   const data = t(footerData, locale);
   const socialLinks = data.socialLinks;
   const columns = data.footerColumns;
+  const [activePersona, setActivePersona] = useState<Persona>('business');
 
   const isVisibleAppBtn = path.includes('get-the-app');
+
+  const getPersonaFromPath = (targetPath: string): Persona | null => {
+    if (targetPath.includes('/professional')) return 'professional';
+    if (targetPath.includes('/business')) return 'business';
+    return null;
+  };
+
+  const getPersonaFromStorage = (storagePath: string | null): Persona => {
+    return storagePath?.includes('professional') ? 'professional' : 'business';
+  };
+
+  useEffect(() => {
+    const pathPersona = getPersonaFromPath(path);
+    if (pathPersona) {
+      setActivePersona(pathPersona);
+      return;
+    }
+
+    if (typeof window !== 'undefined') {
+      const storedPersona = getPersonaFromStorage(localStorage.getItem('activePage'));
+      setActivePersona(storedPersona);
+    }
+  }, [path]);
+
+  const getFooterLink = (nav: string) => {
+    if (nav.startsWith('/features')) return `/features/${activePersona}`;
+    if (nav.startsWith('/pricing')) return `/pricing/${activePersona}`;
+    if (nav.startsWith('/faq')) return `/faq/${activePersona}`;
+    return nav;
+  };
 
   return (
     <footer className="w-full bg-primary px-4 py-16 md:py-14">
@@ -51,9 +84,9 @@ export const Footer = () => {
                 </h3>
                 <ul className="space-y-3">
                   {column.links.map((item) => (
-                    <li key={item.nav}>
+                  <li key={item.nav}>
                       <Link
-                        href={localePath(item.nav, locale)}
+                        href={localePath(getFooterLink(item.nav), locale)}
                         className="text-sm text-white/80 transition-colors hover:text-white ltr:font-montserrat"
                       >
                         {item.name}

@@ -332,8 +332,8 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
           </div>
         )}
         <div className="md:flex md:justify-between">
-          <div className="w-[100%] flex flex-grow-2">
-            <div className="w-1/3 md:w-1/4 flex-grow-1">
+          <div className="w-full flex flex-grow-2 gap-3">
+            <div className="w-1/3 md:w-1/4 flex-grow-1 shrink-0">
               <FormField
                 control={form.control}
                 name="country_code"
@@ -353,7 +353,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                           field.onChange(value); // Update form's country_code field
                         }}
                       >
-                        <SelectTrigger className="w-auto flex border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
+                        <SelectTrigger className="w-full flex border-[#E8E9E9] bg-[#F9FBFB] rtl:flex-row-reverse">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
@@ -379,7 +379,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                 )}
               />
             </div>
-            <div className="w-2/3 md:w-3/4">
+            <div className="w-2/3 md:w-3/4 min-w-0 flex-1">
               <FormField
                 control={form.control}
                 name="mobile"
@@ -393,9 +393,11 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
                       {textForm?.phoneNumber}
                     </FormLabel>
                     <FormControl>
-                      <Input
-                        className="focus:text-[#8B6554] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
-                        type="number"
+                    <Input
+                      className="focus:text-[#8B6554] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB] w-full"
+                        type="tel"
+                        inputMode="numeric"
+                        autoComplete="tel"
                         placeholder=""
                         {...field}
                         onFocus={() => handleFocus('mobile')}

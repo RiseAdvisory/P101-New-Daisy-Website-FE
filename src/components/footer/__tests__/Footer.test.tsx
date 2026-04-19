@@ -129,4 +129,45 @@ describe('Footer', () => {
     });
   });
 
+  describe('persona-aware footer links', () => {
+    it('links features to /business when on a business page', () => {
+      const { usePathname } = require('next/navigation');
+      usePathname.mockReturnValue('/en/business');
+
+      render(<Footer />);
+
+      const links = screen.getAllByRole('link');
+      const featuresLink = links.find((l) => l.getAttribute('href')?.includes('/features/'));
+      if (featuresLink) {
+        expect(featuresLink.getAttribute('href')).toContain('/features/business');
+      }
+    });
+
+    it('links features to /professional when on a professional page', () => {
+      const { usePathname } = require('next/navigation');
+      usePathname.mockReturnValue('/en/professional');
+
+      render(<Footer />);
+
+      const links = screen.getAllByRole('link');
+      const featuresLink = links.find((l) => l.getAttribute('href')?.includes('/features/'));
+      if (featuresLink) {
+        expect(featuresLink.getAttribute('href')).toContain('/features/professional');
+      }
+    });
+
+    it('defaults to business persona on unrelated pages', () => {
+      const { usePathname } = require('next/navigation');
+      usePathname.mockReturnValue('/en/about');
+
+      render(<Footer />);
+
+      const links = screen.getAllByRole('link');
+      const featuresLink = links.find((l) => l.getAttribute('href')?.includes('/features/'));
+      if (featuresLink) {
+        expect(featuresLink.getAttribute('href')).toContain('/features/business');
+      }
+    });
+  });
+
 });
