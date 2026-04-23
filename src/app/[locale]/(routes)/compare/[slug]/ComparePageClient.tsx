@@ -17,6 +17,7 @@ import { ComparisonBreadcrumbSchema } from '@/components/seo/ComparisonBreadcrum
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { ProductComparisonSchema } from '@/components/seo/ProductComparisonSchema';
 import { daisyData } from '@/lib/constants/competitors/competitorData';
+import { renderSafeHtml } from '@/lib/utils/htmlContent';
 
 interface Props {
   slug: string;
@@ -136,7 +137,7 @@ function DaisyVsPage({
       <section className="mx-auto max-w-4xl px-4 py-8">
         <div className="rounded-lg border border-blue-200 bg-blue-50 p-6">
           <h2 className="mb-2 text-lg font-semibold text-blue-900">TL;DR</h2>
-          <p className="text-blue-800">{data.tldr}</p>
+          <p className="text-blue-800" dangerouslySetInnerHTML={{ __html: renderSafeHtml(data.tldr) }} />
         </div>
       </section>
 
@@ -162,7 +163,10 @@ function DaisyVsPage({
                   <h3 className="mb-2 text-lg font-semibold capitalize text-gray-900">
                     {category.replace(/([A-Z])/g, ' $1').trim()}
                   </h3>
-                  <p className="text-gray-600">{commentary}</p>
+                  <p
+                    className="text-gray-600"
+                    dangerouslySetInnerHTML={{ __html: renderSafeHtml(commentary) }}
+                  />
                 </div>
               )
             )}
@@ -248,9 +252,10 @@ function DaisyVsPage({
                   <summary className="cursor-pointer p-4 font-medium text-gray-900">
                     {faq.question}
                   </summary>
-                  <p className="border-t border-gray-100 p-4 text-gray-600">
-                    {faq.answer}
-                  </p>
+                  <div
+                    className="border-t border-gray-100 p-4 text-gray-600"
+                    dangerouslySetInnerHTML={{ __html: renderSafeHtml(faq.answer) }}
+                  />
                 </details>
               ))}
             </div>
@@ -339,7 +344,10 @@ function CompetitorVsPage({
           <h2 className="mb-4 text-2xl font-bold text-green-900">
             Why Choose Daisy Over Both?
           </h2>
-          <p className="text-lg text-green-800">{data.daisyPitch}</p>
+          <p
+            className="text-lg text-green-800"
+            dangerouslySetInnerHTML={{ __html: renderSafeHtml(data.daisyPitch) }}
+          />
         </div>
       </section>
 

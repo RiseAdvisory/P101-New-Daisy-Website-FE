@@ -1,4 +1,5 @@
 import { FC, ReactNode } from 'react';
+import { renderSafeHtml } from '@/lib/utils/htmlContent';
 
 interface AnswerBlockProps {
   question: string;
@@ -22,7 +23,11 @@ export const AnswerBlock: FC<AnswerBlockProps> = ({
         className="mb-6 text-lg leading-relaxed text-[#455150] text-center"
         data-geo-answer="true"
       >
-        {answer}
+        <span
+          dangerouslySetInnerHTML={{
+            __html: renderSafeHtml(answer),
+          }}
+        />
       </p>
       {children}
     </div>

@@ -1,5 +1,6 @@
 import { CalloutBox } from './CalloutBox';
 import Link from 'next/link';
+import { renderSafeHtml } from '@/lib/utils/htmlContent';
 
 interface PillarSectionProps {
   id: string;
@@ -30,7 +31,7 @@ export function PillarSection({
       </h2>
       <div
         className="blog-content prose-pillar text-[#455150]"
-        dangerouslySetInnerHTML={{ __html: content }}
+        dangerouslySetInnerHTML={{ __html: renderSafeHtml(content) }}
       />
       {callout && <CalloutBox type={callout.type} text={callout.text} />}
       {relatedLinks && relatedLinks.length > 0 && (

@@ -9,6 +9,7 @@ import { PillarCTA } from './PillarCTA';
 import { FaqSchema } from '@/components/seo/FaqSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import { PillarArticleSchema } from '@/components/seo/PillarArticleSchema';
+import { renderSafeHtml } from '@/lib/utils/htmlContent';
 
 const uiStrings = {
   en: {
@@ -27,7 +28,7 @@ interface PillarPageTemplateProps {
 export function PillarPageTemplate({ data, locale }: PillarPageTemplateProps) {
   const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
   // Content is static TypeScript data (not user input), safe to render directly
-  const introHtml = data.introduction;
+  const introHtml = renderSafeHtml(data.introduction);
   const tocSections = data.sections.map((s) => ({ id: s.id, title: s.title }));
   const baseUrl = `https://www.jointhedaisy.com/${locale}/${data.slug}`;
 
@@ -105,9 +106,12 @@ export function PillarPageTemplate({ data, locale }: PillarPageTemplateProps) {
                       <summary className="cursor-pointer p-4 font-medium text-[#172524]">
                         {faq.question}
                       </summary>
-                      <p className="border-t border-[#E8E9E9] p-4 text-[#455150]">
-                        {faq.answer}
-                      </p>
+                      <div
+                        className="border-t border-[#E8E9E9] p-4 text-[#455150]"
+                        dangerouslySetInnerHTML={{
+                          __html: renderSafeHtml(faq.answer),
+                        }}
+                      />
                     </details>
                   ))}
                 </div>

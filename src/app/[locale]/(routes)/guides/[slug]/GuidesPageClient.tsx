@@ -5,6 +5,7 @@ import { FaqSchema } from '@/components/seo/FaqSchema';
 import { HowToSchema } from '@/components/seo/HowToSchema';
 import { ComparisonBreadcrumbSchema } from '@/components/seo/ComparisonBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { renderSafeHtml } from '@/lib/utils/htmlContent';
 
 interface Props {
   guide: GuideData;
@@ -46,12 +47,11 @@ export function GuidesPageClient({ guide, locale }: Props) {
           <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">
             {guide.title}
           </h1>
-          <p
+          <div
             className="text-lg leading-relaxed text-[#455150]"
             data-geo-answer="true"
-          >
-            {guide.answer}
-          </p>
+            dangerouslySetInnerHTML={{ __html: renderSafeHtml(guide.answer) }}
+          />
           <div className="mt-8 overflow-hidden rounded-2xl">
             <Image
               src={`/images/guides/${slug}.webp`}
@@ -71,7 +71,9 @@ export function GuidesPageClient({ guide, locale }: Props) {
           Why This Matters
         </h2>
         <p className="text-lg leading-relaxed text-[#455150]">
-          {guide.problemExplained}
+          <span
+            dangerouslySetInnerHTML={{ __html: renderSafeHtml(guide.problemExplained) }}
+          />
         </p>
       </section>
 
@@ -95,7 +97,10 @@ export function GuidesPageClient({ guide, locale }: Props) {
                     {step.name}
                   </h3>
                 </div>
-                <p className="ml-12 text-[#455150]">{step.text}</p>
+                <div
+                  className="ml-12 text-[#455150]"
+                  dangerouslySetInnerHTML={{ __html: renderSafeHtml(step.text) }}
+                />
               </li>
             ))}
           </ol>
@@ -108,9 +113,10 @@ export function GuidesPageClient({ guide, locale }: Props) {
           How Does Daisy Help?
         </h2>
         <div className="rounded-2xl border border-primaryBtn/30 bg-primary/5 p-6 md:p-8">
-          <p className="text-lg leading-relaxed text-[#455150]">
-            {guide.howDaisyHelps}
-          </p>
+          <p
+            className="text-lg leading-relaxed text-[#455150]"
+            dangerouslySetInnerHTML={{ __html: renderSafeHtml(guide.howDaisyHelps) }}
+          />
         </div>
       </section>
 
@@ -130,9 +136,10 @@ export function GuidesPageClient({ guide, locale }: Props) {
                   <summary className="cursor-pointer p-4 font-medium text-[#172524]">
                     {faq.question}
                   </summary>
-                  <p className="border-t border-[#E8E9E9] p-4 text-[#455150]">
-                    {faq.answer}
-                  </p>
+                  <div
+                    className="border-t border-[#E8E9E9] p-4 text-[#455150]"
+                    dangerouslySetInnerHTML={{ __html: renderSafeHtml(faq.answer) }}
+                  />
                 </details>
               ))}
             </div>

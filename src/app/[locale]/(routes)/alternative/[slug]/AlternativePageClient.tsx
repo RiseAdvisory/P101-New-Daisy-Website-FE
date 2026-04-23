@@ -11,6 +11,7 @@ import { RelatedPages } from '@/components/comparePage/RelatedPages';
 import { FaqSchema } from '@/components/seo/FaqSchema';
 import { ComparisonBreadcrumbSchema } from '@/components/seo/ComparisonBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { renderSafeHtml } from '@/lib/utils/htmlContent';
 import { Check, X } from 'lucide-react';
 
 interface Props {
@@ -78,9 +79,15 @@ function AlternativeSinglePage({
 
       {/* Answer block for AI extraction */}
       <section className="mx-auto max-w-4xl px-4 py-8">
-        <p className="text-lg leading-relaxed text-gray-600" data-geo-answer="true">
-          The Daisy is the leading alternative to {competitor.name}, offering AI-powered salon management with 24/7 receptionist, cashback customer acquisition, and native Arabic/English support that {competitor.name} lacks.
-        </p>
+        <div
+          className="text-lg leading-relaxed text-gray-600"
+          data-geo-answer="true"
+          dangerouslySetInnerHTML={{
+            __html: renderSafeHtml(
+              `The Daisy is the leading alternative to ${competitor.name}, offering AI-powered salon management with 24/7 receptionist, cashback customer acquisition, and native Arabic/English support that ${competitor.name} lacks.`,
+            ),
+          }}
+        />
       </section>
 
       {/* Pain Points */}
@@ -95,7 +102,10 @@ function AlternativeSinglePage({
               className="flex items-start gap-3 rounded-lg border border-red-100 bg-red-50 p-4"
             >
               <X className="mt-0.5 h-5 w-5 shrink-0 text-red-500" />
-              <p className="text-gray-800">{point}</p>
+            <div
+              className="text-gray-800"
+              dangerouslySetInnerHTML={{ __html: renderSafeHtml(point) }}
+            />
             </div>
           ))}
         </div>
@@ -126,7 +136,10 @@ function AlternativeSinglePage({
               className="flex items-start gap-3 rounded-lg border border-green-100 bg-green-50 p-4"
             >
               <Check className="mt-0.5 h-5 w-5 shrink-0 text-green-600" />
-              <p className="text-gray-800">{reason}</p>
+              <div
+                className="text-gray-800"
+                dangerouslySetInnerHTML={{ __html: renderSafeHtml(reason) }}
+              />
             </div>
           ))}
         </div>
@@ -169,9 +182,10 @@ function AlternativeSinglePage({
                   <summary className="cursor-pointer p-4 font-medium text-gray-900">
                     {faq.question}
                   </summary>
-                  <p className="border-t border-gray-100 p-4 text-gray-600">
-                    {faq.answer}
-                  </p>
+                  <div
+                    className="border-t border-gray-100 p-4 text-gray-600"
+                    dangerouslySetInnerHTML={{ __html: renderSafeHtml(faq.answer) }}
+                  />
                 </details>
               ))}
             </div>
@@ -233,7 +247,11 @@ function BestAlternativesPage({
 
       {/* Intro */}
       <section className="mx-auto max-w-4xl px-4 py-8">
-        <p className="text-lg text-gray-600" data-geo-answer="true">{data.intro}</p>
+        <div
+          className="text-lg text-gray-600"
+          data-geo-answer="true"
+          dangerouslySetInnerHTML={{ __html: renderSafeHtml(data.intro) }}
+        />
       </section>
 
       {/* Alternatives List */}
@@ -257,7 +275,11 @@ function BestAlternativesPage({
 
       {/* Daisy Edge — contextual intro + specific differentiators */}
       <section className="mx-auto max-w-4xl px-4 pt-12 pb-4">
-        <p className="text-lg text-gray-600" data-geo-answer="true">{data.daisyEdge}</p>
+        <div
+          className="text-lg text-gray-600"
+          data-geo-answer="true"
+          dangerouslySetInnerHTML={{ __html: renderSafeHtml(data.daisyEdge) }}
+        />
       </section>
 
       <DaisyDifferentiators locale={locale} />

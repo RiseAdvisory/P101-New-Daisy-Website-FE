@@ -5,6 +5,7 @@ import { glossaryData } from '@/lib/constants/glossary/glossaryData';
 import { t } from '@/lib/constants/i18n';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
+import { stripHtml } from '@/lib/utils/htmlContent';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
@@ -41,6 +42,11 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
 export default function GlossaryIndex({ params }: { params: { locale: string } }) {
   const { locale } = params;
   const entries = t(glossaryData, locale);
+  const makeSnippet = (value: string) => {
+    const plainText = stripHtml(value).replace(/--/g, '-').trim();
+    const limit = 150;
+    return plainText.length > limit ? `${plainText.slice(0, limit)}...` : plainText;
+  };
 
   return (
     <main className="min-h-screen bg-white">
@@ -81,7 +87,7 @@ export default function GlossaryIndex({ params }: { params: { locale: string } }
                 <dfn className="not-italic font-medium text-[#172524]">
                   {entry.term}
                 </dfn>{' '}
-                {entry.definition.slice(0, 150)}...
+                {makeSnippet(entry.definition)}
               </p>
             </Link>
           ))}
