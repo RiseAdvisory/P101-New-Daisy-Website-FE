@@ -239,13 +239,13 @@ export const FormContacts = ({ style }: { style?: string }) => {
                 >
                   {formText?.phone}
                 </FormLabel>
-                <div className="flex gap-2">
-                  <FormControl className="w-32 shrink-0">
+                <div className="flex space-x-2 ">
+                  <FormControl>
                     <Select
                       value={country_code}
                       onValueChange={(value) => setCountryCode(value)}
                     >
-                      <SelectTrigger className="w-full flex border-[#E8E9E9] bg-[#F9FBFB]">
+                      <SelectTrigger className="w-32 flex border-[#E8E9E9] bg-[#F9FBFB]">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -281,12 +281,10 @@ export const FormContacts = ({ style }: { style?: string }) => {
                       </SelectContent>
                     </Select>
                   </FormControl>
-                  <FormControl className="min-w-0 flex-1">
+                  <FormControl>
                     <Input
-                      className="focus:text-[#8B6554] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB] w-full"
-                      type="tel"
-                      inputMode="numeric"
-                      autoComplete="tel"
+                      className="focus:text-[#8B6554] border focus:border-[#A67F6B] border-[#E8E9E9] bg-[#F9FBFB]"
+                      type="number"
                       placeholder="00000000"
                       value={mobile}
                       onChange={(e) => setPhoneNumber(e.target.value)}

@@ -42,14 +42,14 @@ export const SupportSection = ({
   return (
     <div className="bg-[#F8F5F3] pb-20 ">
       <div className="w-full h-[300px] md:h-[236px] bg-primary " />
-      <div className="mx-4 rounded-xl border border-[#E8E9E9] bg-white p-6 text-center md:mx-auto md:w-[860px] md:-translate-y-[80px] -translate-y-[120px]">
+      <div className="mx-4 rounded-xl border border-[#E8E9E9] bg-white p-6 text-center md:mx-auto md:w-[860px] md:-translate-y-[236px] -translate-y-[300px]">
         <h2 className="text-2xl font-semibold text-[#172524] ltr:font-montserrat">
           {helperTitle}
         </h2>
         <p className="mt-2 text-[#455150]">{helperDescription}</p>
       </div>
-      <FormContacts style="md:-translate-y-[130px] -translate-y-[170px] " />
-      <ul className="flex flex-col justify-center items-center mx-auto px-4 gap-8 md:grid md:grid-cols-3 md:items-start md:-mt-[20px] -mt-[90px]">
+      <FormContacts style="md:-translate-y-[286px] -translate-y-[350px] " />
+      <ul className="flex flex-col justify-center items-center mx-auto px-4 gap-8 md:grid md:grid-cols-3 md:items-start md:-mt-[176px] -mt-[270px]">
         <li className="flex flex-col justify-center items-center text-center">
           <MessageIcons />
           <h3 className="mt-5 ltr:font-montserrat font-medium text-xl">
