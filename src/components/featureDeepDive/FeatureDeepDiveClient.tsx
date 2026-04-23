@@ -6,6 +6,7 @@ import {
 import { FeaturesBreadcrumbSchema } from '@/components/seo/FeaturesBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { FaqSchema } from '@/components/seo/FaqSchema';
+import { renderSafeHtml } from '@/lib/utils/htmlContent';
 
 function SoftwareApplicationSchema({
   name,
@@ -419,9 +420,10 @@ export function FeatureDeepDiveClient({ userType, slug, locale = 'en' }: Props) 
                   <summary className="cursor-pointer p-4 font-medium text-[#172524]">
                     {faq.question}
                   </summary>
-                  <p className="border-t border-[#E8E9E9] p-4 text-[#455150]">
-                    {faq.answer}
-                  </p>
+                  <div
+                    className="border-t border-[#E8E9E9] p-4 text-[#455150]"
+                    dangerouslySetInnerHTML={{ __html: renderSafeHtml(faq.answer) }}
+                  />
                 </details>
               ))}
             </div>

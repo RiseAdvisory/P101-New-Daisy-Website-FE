@@ -1,14 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import DOMPurify from 'dompurify';
 import { GlossaryEntry } from '@/lib/constants/glossary/glossaryData';
 import { FaqSchema } from '@/components/seo/FaqSchema';
 import { ComparisonBreadcrumbSchema } from '@/components/seo/ComparisonBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
-
-function sanitize(html: string): string {
-  return typeof window !== 'undefined' ? DOMPurify.sanitize(html) : html;
-}
+import { renderSafeHtml } from '@/lib/utils/htmlContent';
 
 const uiStrings = {
   en: {
@@ -87,7 +83,7 @@ export function GlossaryPageClient({ entry, slug, locale, termMap }: Props) {
             <dfn className="not-italic font-semibold text-[#172524]">
               {entry.term}
             </dfn>{' '}
-            <span dangerouslySetInnerHTML={{ __html: sanitize(entry.definition) }} />
+            <span dangerouslySetInnerHTML={{ __html: renderSafeHtml(entry.definition) }} />
           </p>
           <div className="mt-8 overflow-hidden rounded-2xl">
             <Image
@@ -106,7 +102,9 @@ export function GlossaryPageClient({ entry, slug, locale, termMap }: Props) {
       <section className="mx-auto max-w-4xl px-4 py-12">
         <p
           className="text-lg leading-relaxed text-[#455150] [&_a]:text-primary [&_a]:underline [&_a]:hover:text-primary/80"
-          dangerouslySetInnerHTML={{ __html: sanitize(entry.extendedDescription) }}
+          dangerouslySetInnerHTML={{
+            __html: renderSafeHtml(entry.extendedDescription),
+          }}
         />
       </section>
 
@@ -179,7 +177,9 @@ export function GlossaryPageClient({ entry, slug, locale, termMap }: Props) {
         </h2>
         <p
           className="text-lg leading-relaxed text-[#455150] [&_a]:text-primary [&_a]:underline [&_a]:hover:text-primary/80"
-          dangerouslySetInnerHTML={{ __html: sanitize(entry.howDaisyImplements) }}
+          dangerouslySetInnerHTML={{
+            __html: renderSafeHtml(entry.howDaisyImplements),
+          }}
         />
       </section>
 
@@ -199,9 +199,10 @@ export function GlossaryPageClient({ entry, slug, locale, termMap }: Props) {
                   <summary className="cursor-pointer p-4 font-medium text-[#172524]">
                     {faq.question}
                   </summary>
-                  <p className="border-t border-[#E8E9E9] p-4 text-[#455150]">
-                    {faq.answer}
-                  </p>
+                  <div
+                    className="border-t border-[#E8E9E9] p-4 text-[#455150]"
+                    dangerouslySetInnerHTML={{ __html: renderSafeHtml(faq.answer) }}
+                  />
                 </details>
               ))}
             </div>

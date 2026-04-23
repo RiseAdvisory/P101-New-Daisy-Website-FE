@@ -103,7 +103,11 @@ export const CardPosts = ({
                     } divide-x divide-gray-300/70`}
                     dir={isRtl ? 'rtl' : 'ltr'}
                   >
-                    <div className="hidden md:flex items-center px-2 first:pl-0 last:pr-0">
+                    <div
+                      className={`hidden md:flex items-center px-2 ${
+                        isRtl ? 'first:pr-0 last:pl-0' : 'first:pl-0 last:pr-0'
+                      }`}
+                    >
                       <Image
                         src={ownerSrc}
                         alt="people"
@@ -115,7 +119,11 @@ export const CardPosts = ({
                         {getAuthorBio(item.attributes.user?.data?.attributes?.name ?? item.attributes.user?.name ?? '', locale)?.name ?? item.attributes.user?.data?.attributes?.name ?? item.attributes.user?.name}
                       </span>
                     </div>
-                    <span className="flex items-center px-2 first:pl-0 last:pr-0">
+                    <span
+                      className={`flex items-center px-2 ${
+                        isRtl ? 'first:pr-0 last:pl-0' : 'first:pl-0 last:pr-0'
+                      }`}
+                    >
                       <CalendarIcon className="ltr:mr-[10px] rtl:ml-[10px]" />
                       {formatBlogDate(
                         item.attributes.user?.data?.attributes?.date ?? item.attributes.user?.date ?? item.attributes.publishedAt,
@@ -123,7 +131,11 @@ export const CardPosts = ({
                         item.attributes.user?.data?.attributes?.date ?? item.attributes.user?.date ?? ''
                       )}
                     </span>
-                    <span className="flex items-center px-2 first:pl-0 last:pr-0">
+                    <span
+                      className={`flex items-center px-2 ${
+                        isRtl ? 'first:pr-0 last:pl-0' : 'first:pl-0 last:pr-0'
+                      }`}
+                    >
                       <ClockIcon className="ltr:mr-2 rtl:ml-2" />
                       {formatReadTime(
                         item.attributes.user?.data?.attributes?.time ?? item.attributes.user?.time,

@@ -1,6 +1,7 @@
 interface KeyTakeawaysProps {
   takeaways: string[];
 }
+import { renderSafeHtml } from '@/lib/utils/htmlContent';
 
 export function KeyTakeaways({ takeaways }: KeyTakeawaysProps) {
   if (!takeaways || takeaways.length === 0) return null;
@@ -18,7 +19,9 @@ export function KeyTakeaways({ takeaways }: KeyTakeawaysProps) {
           {takeaways.map((item, i) => (
             <li key={i} className="flex items-start gap-3 text-[#455150]">
               <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-primary" />
-              <span>{item}</span>
+              <span
+                dangerouslySetInnerHTML={{ __html: renderSafeHtml(item) }}
+              />
             </li>
           ))}
         </ul>

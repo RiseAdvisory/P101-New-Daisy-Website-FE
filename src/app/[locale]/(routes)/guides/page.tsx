@@ -5,6 +5,7 @@ import { guideData } from '@/lib/constants/guides/guideData';
 import { t } from '@/lib/constants/i18n';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
+import { renderSafeHtml } from '@/lib/utils/htmlContent';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
@@ -58,11 +59,17 @@ export default function GuidesIndex({ params }: { params: { locale: string } }) 
           <h1 className="mb-4 text-4xl font-bold text-[#172524] md:text-5xl">
             {locale === 'ar' ? 'أدلة أعمال الصالونات' : 'Salon Business Guides'}
           </h1>
-          <p className="text-lg text-[#455150]" data-geo-answer="true">
-            {locale === 'ar'
-              ? 'أدلة خطوة بخطوة لمساعدتك في تنمية أعمال التجميل الخاصة بك، وتقليل التكاليف، واتخاذ قرارات أذكى.'
-              : 'Step-by-step guides to help you grow your beauty business, reduce costs, and make smarter decisions.'}
-          </p>
+          <div
+            className="text-lg text-[#455150]"
+            data-geo-answer="true"
+            dangerouslySetInnerHTML={{
+              __html: renderSafeHtml(
+                locale === 'ar'
+                  ? 'أدلة خطوة بخطوة لمساعدتك في تنمية أعمال التجميل الخاصة بك، وتقليل التكاليف، واتخاذ قرارات أذكى.'
+                  : 'Step-by-step guides to help you grow your beauty business, reduce costs, and make smarter decisions.',
+              ),
+            }}
+          />
         </div>
       </section>
 
@@ -77,9 +84,11 @@ export default function GuidesIndex({ params }: { params: { locale: string } }) 
               <h2 className="mb-3 text-2xl font-bold text-[#172524] group-hover:text-primary">
                 {guide.title}
               </h2>
-              <p className="mb-4 text-[#455150]" data-geo-answer="true">
-                {guide.answer}
-              </p>
+              <p
+                className="mb-4 text-[#455150]"
+                data-geo-answer="true"
+                dangerouslySetInnerHTML={{ __html: renderSafeHtml(guide.answer) }}
+              />
               <div className="text-sm font-medium text-primary">
                 {locale === 'ar'
                   ? `اقرأ الدليل الكامل (${guide.steps.length} خطوات) \u2190`

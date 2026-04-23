@@ -8,6 +8,7 @@ import { RelatedPages } from '@/components/comparePage/RelatedPages';
 import { FaqSchema } from '@/components/seo/FaqSchema';
 import { ComparisonBreadcrumbSchema } from '@/components/seo/ComparisonBreadcrumbSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import { renderSafeHtml } from '@/lib/utils/htmlContent';
 
 const uiStrings = {
   en: {
@@ -82,14 +83,17 @@ export function SolutionsPageClient({ slug, locale = 'en' }: Props) {
             className="text-lg leading-relaxed text-gray-600"
             data-geo-answer="true"
           >
-            {data.definition}
+            <span dangerouslySetInnerHTML={{ __html: renderSafeHtml(data.definition) }} />
           </p>
         </section>
       )}
 
       {/* Intro */}
       <section className="mx-auto max-w-4xl px-4 py-8">
-        <p className="text-lg leading-relaxed text-gray-600">{data.intro}</p>
+        <div
+          className="text-lg leading-relaxed text-gray-600"
+          dangerouslySetInnerHTML={{ __html: renderSafeHtml(data.intro) }}
+        />
       </section>
 
       {/* Challenges */}
@@ -117,14 +121,15 @@ export function SolutionsPageClient({ slug, locale = 'en' }: Props) {
                 key={i}
                 className="rounded-lg border border-gray-200 bg-white"
               >
-                <summary className="cursor-pointer p-4 font-medium text-gray-900">
-                  {faq.question}
-                </summary>
-                <p className="border-t border-gray-100 p-4 text-gray-600">
-                  {faq.answer}
-                </p>
-              </details>
-            ))}
+                  <summary className="cursor-pointer p-4 font-medium text-gray-900">
+                    {faq.question}
+                  </summary>
+                  <div
+                    className="border-t border-gray-100 p-4 text-gray-600"
+                    dangerouslySetInnerHTML={{ __html: renderSafeHtml(faq.answer) }}
+                  />
+                </details>
+              ))}
           </div>
         </section>
       )}

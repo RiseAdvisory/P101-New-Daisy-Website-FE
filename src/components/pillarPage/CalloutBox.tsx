@@ -1,3 +1,5 @@
+import { renderSafeHtml } from '@/lib/utils/htmlContent';
+
 interface CalloutBoxProps {
   type: 'tip' | 'warning' | 'info';
   text: string;
@@ -28,10 +30,14 @@ export function CalloutBox({ type, text }: CalloutBoxProps) {
       className={`my-6 rounded-xl border-l-4 ${s.border} ${s.bg} p-5`}
       role="note"
     >
-      <p className="text-[#455150]">
+      <div className="text-[#455150]">
         <span className="mr-2">{s.icon}</span>
-        {text}
-      </p>
+        <span
+          dangerouslySetInnerHTML={{
+            __html: renderSafeHtml(text),
+          }}
+        />
+      </div>
     </div>
   );
 }
