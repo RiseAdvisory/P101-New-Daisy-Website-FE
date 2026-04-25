@@ -153,7 +153,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/smart-calendar.webp',
+                    url: '/images/features/professional/online-booking-page.webp',
                   },
                 },
               ],
@@ -161,8 +161,9 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px',
+              padding: '24px 24px 0px 24px',
               objectFit: 'contain',
+              objectPosition: 'bottom',
             },
             mobilePicture: {
               data: null,
@@ -250,7 +251,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/meta-integration.webp',
+                    url: '/images/features/professional/automated-reminders.webp',
                   },
                 },
               ],
@@ -283,7 +284,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/meta-integration.webp',
+                    url: '/images/features/professional/whatsapp-notifications.webp',
                   },
                 },
               ],
@@ -580,7 +581,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
               data: [
                 {
                   attributes: {
-                    url: '/images/features/professional/client-insights.webp',
+                    url: '/images/features/professional/in-person-checkout.webp',
                   },
                 },
               ],
@@ -588,7 +589,7 @@ export const featuresProfessionalData: I18nContent<FeaturesProfessionalPageConte
             stylePicture: {
               width: '100%',
               height: '100%',
-              padding: '24px 24px 0px 24px',
+              padding: '60px 24px 0px 24px',
               objectFit: 'contain',
               objectPosition: 'bottom',
             },
