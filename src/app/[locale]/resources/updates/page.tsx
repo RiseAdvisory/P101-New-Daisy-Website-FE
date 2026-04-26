@@ -7,10 +7,10 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   const isAr = locale === 'ar';
   return {
     title: isAr
-      ? 'تحديثات المنصة | أخبار ديزي لحجز التجميل'
+      ? 'تحديثات المنصة | آخر أخبار ديزي'
       : 'Platform Updates | The Daisy Beauty Booking News',
     description: isAr
-      ? 'ابقَ على اطلاع بآخر تحديثات منصة ديزي. ميزات جديدة وتحسينات وأخبار الصناعة.'
+      ? 'ابقَ على اطلاع بآخر تحديثات منصة ديزي، والميزات الجديدة، والتحسينات، وأخبار القطاع.'
       : 'Stay informed with the latest updates, new features, and announcements from The Daisy beauty booking platform. See what is new for salons, spas, and customers.',
     keywords: [
       'beauty app updates',
@@ -24,10 +24,10 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     ],
     openGraph: {
       title: isAr
-        ? 'تحديثات المنصة | أخبار ديزي لحجز التجميل'
+        ? 'تحديثات المنصة | آخر أخبار ديزي'
         : 'Platform Updates | The Daisy Beauty Booking News',
       description: isAr
-        ? 'ابقَ على اطلاع بآخر تحديثات منصة ديزي. ميزات جديدة وتحسينات وأخبار الصناعة.'
+        ? 'ابقَ على اطلاع بآخر تحديثات منصة ديزي، والميزات الجديدة، والتحسينات، وأخبار القطاع.'
         : 'Stay informed with the latest updates and features from The Daisy beauty booking platform.',
       url: `https://www.jointhedaisy.com/${locale}/resources/updates`,
       type: 'website',
@@ -43,10 +43,10 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     twitter: {
       card: 'summary_large_image',
       title: isAr
-        ? 'تحديثات المنصة | أخبار ديزي لحجز التجميل'
+        ? 'تحديثات المنصة | آخر أخبار ديزي'
         : 'Platform Updates | The Daisy Beauty Booking News',
       description: isAr
-        ? 'ابقَ على اطلاع بآخر تحديثات منصة ديزي. ميزات جديدة وتحسينات وأخبار الصناعة.'
+        ? 'ابقَ على اطلاع بآخر تحديثات منصة ديزي، والميزات الجديدة، والتحسينات، وأخبار القطاع.'
         : 'Stay informed with the latest updates from The Daisy beauty platform.',
       images: ['/images/og/og-default.jpg'],
     },

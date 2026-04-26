@@ -453,7 +453,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
     ],
     textCalculate: 'احسب',
     textReset: 'إعادة تعيين الحساب',
-    textFreeTrial: 'ابدأ النسخة التجريبية المجانية',
+    textFreeTrial: 'ابدأ التجربة المجانية',
     textRecomended: 'موصى به',
     textItemPricing: {
       perPeriod: '/ ',
@@ -496,7 +496,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           minimumTierIndex: 2,
         },
         toggleThird: {
-          title: 'هل تحتاج دعم مخصص؟',
+          title: 'هل تحتاج إلى دعم مخصص؟',
           description: 'دعم مخصص على مدار الساعة لعملك',
           minimumTierIndex: 1,
         },
@@ -504,7 +504,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       pricingCard: [
         {
           title: 'أساسي',
-          subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
+          subTitle: 'تجربة مجانية لمدة 14 يومًا، من دون بطاقة ائتمان',
           description:
             'للصالونات والمنتجعات التي بدأت للتو في الحجز الإلكتروني وإدارة العملاء وبناء حضور علامتها التجارية',
           price: '50',
@@ -533,7 +533,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         {
           title: 'نمو',
           badge: 'الأكثر شعبية',
-          subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
+          subTitle: 'تجربة مجانية لمدة 14 يومًا، من دون بطاقة ائتمان',
           description:
             'للأعمال المتنامية المستعدة لقبول المدفوعات الإلكترونية وأتمتة التذكيرات والظهور في السوق',
           price: '150',
@@ -555,8 +555,8 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           ],
         },
         {
-          title: 'عمل',
-          subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
+          title: 'أعمال',
+          subTitle: 'تجربة مجانية لمدة 14 يومًا، من دون بطاقة ائتمان',
           description:
             'للشركات الراسخة ذات الفروع المتعددة التي تحتاج تحليلات متقدمة ونقل بيانات وإعداد مخصص',
           price: '250',
@@ -600,7 +600,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           minimumTierIndex: 2,
         },
         toggleThird: {
-          title: 'هل تحتاج دعم مخصص؟',
+          title: 'هل تحتاج إلى دعم مخصص؟',
           description: 'دعم مخصص على مدار الساعة لممارستك',
           minimumTierIndex: 1,
         },
@@ -608,7 +608,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
       pricingCard: [
         {
           title: 'مبتدئ',
-          subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
+          subTitle: 'تجربة مجانية لمدة 14 يومًا، من دون بطاقة ائتمان',
           description:
             'لمحترفي التجميل الذين بدأوا للتو ويرغبون في إدارة الحجوزات وبناء قاعدة عملائهم',
           price: '25',
@@ -638,7 +638,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         {
           title: 'محترف',
           badge: 'الأكثر شعبية',
-          subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
+          subTitle: 'تجربة مجانية لمدة 14 يومًا، من دون بطاقة ائتمان',
           description:
             'للمحترفين ذوي الخبرة الذين يريدون حجوزات غير محدودة ومدفوعات إلكترونية وظهور في السوق',
           price: '50',
@@ -664,7 +664,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
         },
         {
           title: 'النخبة',
-          subTitle: 'تجربة مجانية 14 يوم، بدون بطاقة ائتمان',
+          subTitle: 'تجربة مجانية لمدة 14 يومًا، من دون بطاقة ائتمان',
           description:
             'للمحترفين الذين يعملون في مواقع أو دول متعددة ويحتاجون المنصة الكاملة مع دعم ذي أولوية',
           price: '100',
@@ -673,7 +673,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
           options: [
             '1 مستخدم / تقويم',
             '2 مساحة عمل/موقع',
-            '2 دول',
+            'دولتان',
             'حجوزات غير محدودة',
             'تذكيرات تلقائية لتقليل عدم الحضور وتشجيع إعادة الحجز المبكر',
             'باقات الاشتراك',
@@ -698,7 +698,7 @@ export const pricingPageData: I18nContent<PricingPageContent> = {
     },
     resetCalculation: {
       weRecommend: 'نوصي بـ:',
-      tryPeriod: 'تجربة مجانية 14 يوم',
+      tryPeriod: 'تجربة مجانية لمدة 14 يومًا',
       details: 'تفاصيل الخطة',
       includedInPlan: 'مشمول في الخطة:',
       staffLabel: 'الموظفين',

@@ -49,7 +49,7 @@ export const resourcesDropdownData: ResourcesDropdownData = {
       ],
     },
     ar: {
-      title: 'عميل',
+      title: 'العملاء',
       itemResources: [
         {
           nav: '/resources/blog-post',
@@ -58,18 +58,18 @@ export const resourcesDropdownData: ResourcesDropdownData = {
         },
         {
           nav: '/resources/tutorials',
-          title: 'الدروس التعليمية والأدلة',
-          description: 'نص تجريبي لأغراض العرض فقط',
+          title: 'الدروس والأدلة',
+          description: 'أدلة خطوة بخطوة للاستفادة القصوى من ديزي',
         },
         {
           nav: '/resources/testimonials',
-          title: 'آراء العملاء',
-          description: 'نص تجريبي لأغراض العرض فقط',
+          title: 'شهادات العملاء',
+          description: 'قصص حقيقية من عملاء سعداء',
         },
         {
           nav: '/resources/updates',
           title: 'التحديثات',
-          description: 'نص تجريبي لأغراض العرض فقط',
+          description: 'أحدث الميزات والتحسينات',
         },
       ],
     },
@@ -102,7 +102,7 @@ export const resourcesDropdownData: ResourcesDropdownData = {
       ],
     },
     ar: {
-      title: 'شركة',
+      title: 'الأعمال',
       itemResources: [
         {
           nav: '/resources/blog-post',
@@ -111,18 +111,18 @@ export const resourcesDropdownData: ResourcesDropdownData = {
         },
         {
           nav: '/resources/tutorials',
-          title: 'الدروس التعليمية والأدلة',
-          description: 'نص تجريبي لأغراض العرض فقط',
+          title: 'الدروس والأدلة',
+          description: 'أدلة خطوة بخطوة للاستفادة القصوى من ديزي',
         },
         {
           nav: '/resources/testimonials',
-          title: 'آراء العملاء',
-          description: 'نص تجريبي لأغراض العرض فقط',
+          title: 'شهادات العملاء',
+          description: 'قصص حقيقية من عملاء سعداء',
         },
         {
           nav: '/resources/updates',
           title: 'التحديثات',
-          description: 'نص تجريبي لأغراض العرض فقط',
+          description: 'أحدث الميزات والتحسينات',
         },
       ],
     },
@@ -155,27 +155,27 @@ export const resourcesDropdownData: ResourcesDropdownData = {
       ],
     },
     ar: {
-      title: 'محترف',
+      title: 'المحترفون',
       itemResources: [
         {
           nav: '/resources/blog-post',
           title: 'مقالات المدونة',
-          description: 'نصائح مهنية لمتخصصي التجميل',
+          description: 'اكتشف قصصًا وأفكارًا مميزة',
         },
         {
           nav: '/resources/testimonials',
-          title: 'آراء العملاء',
-          description: 'نص تجريبي لأغراض العرض فقط',
+          title: 'شهادات العملاء',
+          description: 'قصص حقيقية من عملاء سعداء',
         },
         {
           nav: '/resources/tutorials',
-          title: 'الدروس التعليمية والأدلة',
-          description: 'نص تجريبي لأغراض العرض فقط',
+          title: 'الدروس والأدلة',
+          description: 'أدلة خطوة بخطوة للاستفادة القصوى من ديزي',
         },
         {
           nav: '/resources/updates',
           title: 'التحديثات',
-          description: 'نص تجريبي لأغراض العرض فقط',
+          description: 'أحدث الميزات والتحسينات',
         },
       ],
     },

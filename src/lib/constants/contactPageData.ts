@@ -84,7 +84,7 @@ export const contactPageData: I18nContent<ContactPageContent> = {
     heroTitle: 'تواصل معنا',
     heroSubtitle: 'احجز عرضًا أو احصل على إجابات بسرعة',
     heroDescription:
-      'هل تريد تفاصيل الأسعار، أو جولة على المنتج، أو مساعدة لتحديد ما إذا كانت ديزي مناسبة لصالونك أو السبا أو العيادة أو نشاطك الفردي؟ أرسل لنا رسالة وسيرد عليك فريقنا.',
+      'هل تريد تفاصيل الأسعار، أو جولة في المنتج، أو مساعدة في تحديد ما إذا كانت ديزي مناسبة لصالونك أو السبا أو العيادة أو نشاطك المستقل؟ أرسل لنا رسالة وسيرد عليك فريقنا.',
     listContact: [
       {
         title: 'راسلنا:',
@@ -95,7 +95,7 @@ export const contactPageData: I18nContent<ContactPageContent> = {
       {
         title: 'اتصل بنا:',
         subtitle:
-          'اتصل بنا للتحدث مع أحد أعضاء فريقنا. يسعدنا دائماً مساعدتك.',
+          'اتصل بنا للتحدث مع أحد أعضاء فريقنا. يسعدنا دائمًا مساعدتك.',
         contact: '+1 (646) 647-8895',
       },
       {
@@ -106,11 +106,11 @@ export const contactPageData: I18nContent<ContactPageContent> = {
     textContactForm: {
       name: 'الاسم الأول',
       lastName: 'اسم العائلة',
-      email: 'بريد إلكتروني',
-      phone: 'رقم التليفون',
-      content: 'المحتوى الخاص بك',
+      email: 'البريد الإلكتروني',
+      phone: 'رقم الهاتف',
+      content: 'رسالتك',
       submit:
-        'أوافق على معالجة البيانات الشخصية وفقاً لسياسة الخصوصية.',
+        'من خلال إرسال هذا النموذج، فإنك تؤكد أنك قرأت وتوافق على شروط خدمة ديزي وبيان الخصوصية الخاص بها.',
       textButton: 'إرسال الرسالة',
       successMessage: 'تم إرسال رسالتك بنجاح!',
       errorMessage: 'حدث خطأ ما. حاول مرة أخرى.',
@@ -120,7 +120,7 @@ export const contactPageData: I18nContent<ContactPageContent> = {
       name: 'الاسم الأول هنا',
       lastName: 'اسم العائلة هنا',
       email: 'example@example.com',
-      content: 'اكتب المحتوى الخاص بك هنا.',
+      content: 'اكتب رسالتك هنا.',
     },
   },
 };

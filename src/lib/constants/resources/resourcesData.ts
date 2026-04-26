@@ -250,7 +250,7 @@ export const updatesHeroData: Record<string, I18nContent<{
     ar: {
       title: 'تحديثات الأعمال',
       subtitle: 'أدوات وميزات جديدة لعملك',
-      description: 'اطلع على الجديد لأصحاب الأعمال على منصة ديزي.',
+      description: 'اطلع على جديد منصة ديزي لأصحاب الأعمال.',
       bredCrumbDesription: 'الموارد',
       bredCrumbTitle: 'التحديثات',
       breadcrumbs: 'الموارد > التحديثات',
@@ -266,9 +266,9 @@ export const updatesHeroData: Record<string, I18nContent<{
       breadcrumbs: 'Resources > Updates',
     },
     ar: {
-      title: 'تحديثات المهنيين',
+      title: 'تحديثات المحترفين',
       subtitle: 'أدوات وميزات لتعزيز حياتك المهنية',
-      description: 'اكتشف الجديد للمهنيين على منصة ديزي.',
+      description: 'اكتشف جديد منصة ديزي للمحترفين.',
       bredCrumbDesription: 'الموارد',
       bredCrumbTitle: 'التحديثات',
       breadcrumbs: 'الموارد > التحديثات',
@@ -311,7 +311,7 @@ export const testimonialsHeroData: Record<string, I18nContent<{
       title: 'ماذا يقول عملاؤنا',
       description: 'قصص حقيقية من عملاء حقيقيين يحبون استخدام ديزي',
       secondDescription: 'اكتشف كيف تحوّل ديزي طريقة حجز خدمات الجمال والاستمتاع بها.',
-      textMoreList: 'تحميل المزيد',
+      textMoreList: 'عرض المزيد',
     },
   },
   business: {
@@ -327,9 +327,9 @@ export const testimonialsHeroData: Record<string, I18nContent<{
       bredCrumbTitle: 'الشهادات',
       bredCrumbDesription: 'الموارد',
       title: 'ماذا يقول أصحاب الأعمال',
-      description: 'اسمع من أصحاب الصالونات والمنتجعات الذين نمّوا أعمالهم مع ديزي',
+      description: 'استمع إلى أصحاب الصالونات والمنتجعات الذين نمّوا أعمالهم مع ديزي',
       secondDescription: 'شاهد كيف تساعد ديزي الأعمال في جذب المزيد من العملاء وزيادة الإيرادات.',
-      textMoreList: 'تحميل المزيد',
+      textMoreList: 'عرض المزيد',
     },
   },
   professional: {
@@ -344,10 +344,10 @@ export const testimonialsHeroData: Record<string, I18nContent<{
     ar: {
       bredCrumbTitle: 'الشهادات',
       bredCrumbDesription: 'الموارد',
-      title: 'ماذا يقول المهنيون',
-      description: 'قصص من محترفي الجمال الذين طوروا حياتهم المهنية مع ديزي',
-      secondDescription: 'تعلم كيف تمكّن ديزي المهنيين بجدولة مرنة والمزيد من العملاء.',
-      textMoreList: 'تحميل المزيد',
+      title: 'ماذا يقول المحترفون',
+      description: 'قصص من محترفي الجمال الذين طوّروا مسيرتهم المهنية مع ديزي',
+      secondDescription: 'تعرّف على كيف تساعد ديزي المحترفين من خلال جدولة مرنة والوصول إلى المزيد من العملاء.',
+      textMoreList: 'عرض المزيد',
     },
   },
 };
