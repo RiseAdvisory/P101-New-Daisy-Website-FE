@@ -434,7 +434,7 @@ export const alternativePages: AlternativePageData[] = [
       'التسعير لكل مقدم خدمة يصبح مكلفاً مع نمو الفريق',
       'AI قد يكون محدوداً في بعض السيناريوهات',
       'غياب واجهة عربية/RTL في كثير من الخيارات',
-      'أدوات احتفاظ/ولاء ليست دائماً جزءاً أساسياً',
+      'أدوات احتفاظ/ولاء ليست دائمًا جزءاً أساسياً',
     ],
     switchingReasons: [
       'AI عملي: استقبال + تذكير + متابعة + جدولة',
@@ -525,7 +525,7 @@ export const alternativePages: AlternativePageData[] = [
       'تجربة Premium قد تأتي بسعر Premium، بينما يمكن الحصول على AI ونمو بقيمة أفضل.',
     painPoints: [
       'تسعير مرتفع لبعض الفرق',
-      'أدوات اكتساب/احتفاظ ليست دائماً جزءاً أساسياً',
+      'أدوات اكتساب/احتفاظ ليست دائمًا جزءاً أساسياً',
       'دعم الخليج/العربية قد يكون محدوداً',
     ],
     switchingReasons: [
@@ -659,7 +659,7 @@ export const alternativePages: AlternativePageData[] = [
     painPoints: [
       'تعقيد مؤسسي وإعداد طويل',
       'تسعير غير واضح/عقود',
-      'تجربة عربية/RTL ليست دائماً متاحة كما تتوقع',
+      'تجربة عربية/RTL ليست دائمًا متاحة كما تتوقع',
       'غياب سوق اكتشاف وكاشباك في كثير من الحلول',
     ],
     switchingReasons: [
@@ -854,7 +854,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['بدائل boulevard'],
     heroTitle: 'أفضل بدائل Boulevard في 2026',
     heroSubtitle:
-      'Premium ليس دائماً يعني أفضل قيمة. هذه البدائل تضيف AI ونمو.',
+      'Premium ليس دائمًا يعني أفضل قيمة. هذه البدائل تضيف AI ونمو.',
     intro:
       'Boulevard قوي لتجارب Premium، لكن كثيراً من الأعمال تريد قيمة أعلى وأدوات نمو وAI ودعماً عربياً. هذه بدائل شائعة.',
     alternatives: ['vagaro', 'mangomint', 'glossgenius', 'booksy'],

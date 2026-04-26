@@ -9,10 +9,10 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   const isAr = locale === 'ar';
   return {
     title: isAr
-      ? 'أسعار المتخصصين المستقلين في التجميل | ديزي'
+      ? 'أسعار محترفي التجميل المستقلين | ديزي'
       : 'Freelance Beauty Professional Pricing | The Daisy',
     description: isAr
-      ? 'أسعار مرنة للمتخصصين المستقلين في التجميل. انضم مجاناً، ادفع عمولة فقط على العملاء الجدد من السوق.'
+      ? 'خطط أسعار مرنة لمحترفي التجميل المستقلين. انضم مجانًا وادفع عمولة فقط على العملاء الجدد القادمين من السوق.'
       : 'Pricing plans for freelance beauty professionals. Starter $25/mo, Professional $50/mo, Elite $100/mo. Start with a free 14-day trial. No hidden fees.',
     keywords: [
       'freelance beauty pricing',
@@ -26,10 +26,10 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     ],
     openGraph: {
       title: isAr
-        ? 'أسعار المتخصصين المستقلين في التجميل | ديزي'
+        ? 'أسعار محترفي التجميل المستقلين | ديزي'
         : 'Freelance Beauty Professional Pricing | The Daisy',
       description: isAr
-        ? 'أسعار مرنة للمتخصصين المستقلين في التجميل. انضم مجاناً، ادفع عمولة فقط على العملاء الجدد من السوق.'
+        ? 'خطط أسعار مرنة لمحترفي التجميل المستقلين. انضم مجانًا وادفع عمولة فقط على العملاء الجدد القادمين من السوق.'
         : 'Pricing plans for freelance beauty professionals. Starter $25, Professional $50, Elite $100 per month. 14-day free trial included.',
       url: `https://www.jointhedaisy.com/${locale}/pricing/professional`,
       type: 'website',
@@ -45,10 +45,10 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     twitter: {
       card: 'summary_large_image',
       title: isAr
-        ? 'أسعار المتخصصين المستقلين في التجميل | ديزي'
+        ? 'أسعار محترفي التجميل المستقلين | ديزي'
         : 'Freelance Beauty Professional Pricing | The Daisy',
       description: isAr
-        ? 'أسعار مرنة للمتخصصين المستقلين في التجميل. انضم مجاناً، ادفع عمولة فقط على العملاء الجدد من السوق.'
+        ? 'خطط أسعار مرنة لمحترفي التجميل المستقلين. انضم مجانًا وادفع عمولة فقط على العملاء الجدد القادمين من السوق.'
         : 'Pricing plans for freelance beauty professionals. Start with a 14-day free trial.',
       images: ['/images/og/og-default.jpg'],
     },

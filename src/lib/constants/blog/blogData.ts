@@ -245,7 +245,7 @@ export const blogCTAData: I18nContent<{
     titleSimilar: 'Other Topics That May Interest You',
   },
   ar: {
-    textCreate: 'جرّب ديزي مجاناً لمدة 14 يوماً — بدون التزام، بدون بطاقة',
+    textCreate: 'جرّب ديزي مجانًا لمدة 14 يومًا. من دون التزام أو بطاقة.',
     textDownload: 'حمّل التطبيق وابدأ تجربتك المجانية اليوم.',
     titleSimilar: 'مواضيع أخرى قد تهمك',
   },
