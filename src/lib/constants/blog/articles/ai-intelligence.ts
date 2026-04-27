@@ -615,7 +615,7 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
       'How does The Daisy\'s AI-powered scheduling compare to traditional salon software? A detailed comparison of AI capabilities, booking management, pricing, and language support across leading platforms.',
     aboutPosts: `
 <h2>Why Compare AI Scheduling Platforms?</h2>
-<p>Choosing <a href="/en/salon-management-software">salon management software</a> is one of the most consequential decisions a beauty business owner makes. The platform you select affects how clients book with you, how efficiently your calendar operates, and ultimately how much revenue you generate each day.</p>
+<p>Choosing salon management software is one of the most consequential decisions a beauty business owner makes. The platform you select affects how clients book with you, how efficiently your calendar operates, and ultimately how much revenue you generate each day.</p>
 <p>Traditional salon booking software handles the basics: an online calendar, appointment reminders, and a client database. AI-powered platforms like <a href="/en/features/business/ai-salon-management">The Daisy</a> go significantly further, using artificial intelligence to actively manage, optimise, and grow your business.</p>
 <p>This comparison examines the key differences between AI-powered salon scheduling and traditional booking tools across the capabilities that matter most to salon owners.</p>
 
@@ -1333,7 +1333,7 @@ const daisyVsCompetitorsArticleAr: LocalBlogPost = {
       'كيف تقارن الجدولة المدعومة بالذكاء الاصطناعي في ديزي مع برامج الصالونات التقليدية؟ مقارنة مفصلة لقدرات الذكاء الاصطناعي وإدارة الحجوزات والأسعار ودعم اللغات عبر المنصات الرائدة.',
     aboutPosts: `
 <h2>لماذا نقارن منصات الجدولة الذكية؟</h2>
-<p>اختيار <a href="/ar/salon-management-software">برنامج إدارة الصالون</a> هو أحد أكثر القرارات تأثيراً التي يتخذها صاحب أعمال التجميل. المنصة التي تختارها تؤثر على كيفية حجز العملاء لديك، ومدى كفاءة تقويمك، وفي النهاية حجم الإيرادات التي تحققها يومياً.</p>
+<p>اختيار برنامج إدارة الصالون هو أحد أكثر القرارات تأثيراً التي يتخذها صاحب أعمال التجميل. المنصة التي تختارها تؤثر على كيفية حجز العملاء لديك، ومدى كفاءة تقويمك، وفي النهاية حجم الإيرادات التي تحققها يومياً.</p>
 <p>تتعامل برامج حجز الصالونات التقليدية مع الأساسيات: تقويم إلكتروني وتذكيرات بالمواعيد وقاعدة بيانات عملاء. تذهب المنصات المدعومة بالذكاء الاصطناعي مثل <a href="/ar/features/business/ai-salon-management">ديزي</a> أبعد بكثير، باستخدام الذكاء الاصطناعي لإدارة وتحسين وتنمية عملك بشكل فعّال.</p>
 <p>تفحص هذه المقارنة الاختلافات الرئيسية بين الجدولة المدعومة بالذكاء الاصطناعي وأدوات الحجز التقليدية عبر القدرات الأكثر أهمية لأصحاب الصالونات.</p>
 

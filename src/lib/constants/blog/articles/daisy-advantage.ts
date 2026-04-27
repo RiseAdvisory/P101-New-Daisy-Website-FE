@@ -986,7 +986,7 @@ const modernSalonsAiArticle: LocalBlogPost = {
 <p>This distinction sounds subtle, but the operational impact is enormous. Software is a passive tool. An AI platform is an active business partner. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy represent a fundamental shift from tools that wait for instructions to systems that anticipate needs, optimise operations, and drive growth autonomously.</p>
 
 <h2>Where Traditional Salon Software Falls Short</h2>
-<p>Traditional <a href="/en/salon-management-software">salon software</a> has served the industry for two decades. It solved real problems: replacing paper appointment books with digital calendars, enabling online booking, and automating basic reminders. But in a market that is becoming increasingly competitive and client expectations are rising, the limitations of traditional software are becoming clear.</p>
+<p>Traditional salon software has served the industry for two decades. It solved real problems: replacing paper appointment books with digital calendars, enabling online booking, and automating basic reminders. But in a market that is becoming increasingly competitive and client expectations are rising, the limitations of traditional software are becoming clear.</p>
 
 <h3>Reactive, Not Proactive</h3>
 <p>Traditional software waits for you to take action. A client cancels? The software shows an empty slot. It is up to you to notice, contact waitlisted clients, and fill the gap. A slow week ahead? The software shows a sparse calendar. It is up to you to create a promotion, draft a message, and send it out.</p>

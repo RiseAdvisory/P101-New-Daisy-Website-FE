@@ -1100,7 +1100,7 @@ const independentClientLoyaltyArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How do I build loyalty when I am just starting out as an independent professional?</h3>
-<p>Start with exceptional service and reliability. Your first 20-30 clients are the foundation of your business - treat every one as a VIP. Collect their contact information, send personalised follow-ups, and ask for referrals. Build your <a href="/en/salon-management-software">client management system</a> from day one rather than trying to retrofit it later. Even a simple spreadsheet with client names, services, and notes is better than relying on memory.</p>
+<p>Start with exceptional service and reliability. Your first 20-30 clients are the foundation of your business - treat every one as a VIP. Collect their contact information, send personalised follow-ups, and ask for referrals. Build your client management system from day one rather than trying to retrofit it later. Even a simple spreadsheet with client names, services, and notes is better than relying on memory.</p>
 
 <h3>How do I compete with salon loyalty programmes as an independent?</h3>
 <p>You compete by offering what salons cannot: a deeply personal, consistent, one-on-one relationship. Salon loyalty programmes are transactional (earn points, get rewards). Your loyalty advantage is relational (genuine connection, personalised service, flexibility). A client who feels genuinely known and valued by their beauty professional will not switch to a salon for a 10% discount.</p>
@@ -2206,7 +2206,7 @@ const independentClientLoyaltyArticleAr: LocalBlogPost = {
 <h2>الأسئلة الشائعة</h2>
 
 <h3>كيف يمكنني بناء الولاء عندما أبدأ للتو كمحترف مستقل؟</h3>
-<p> ابدأ بخدمة وموثوقية استثنائية. إن أول 20 إلى 30 عميلاً لديك هم أساس عملك - تعامل مع كل واحد منهم باعتباره أحد كبار الشخصيات. اجمع معلومات الاتصال الخاصة بهم، وأرسل متابعات شخصية، واطلب الإحالات. أنشئ <a href="/ar/salon-management-software">نظام إدارة العملاء</a> من اليوم الأول بدلاً من محاولة تعديله لاحقًا. حتى جدول البيانات البسيط الذي يحتوي على أسماء العملاء والخدمات والملاحظات أفضل من الاعتماد على الذاكرة.</p>
+<p> ابدأ بخدمة وموثوقية استثنائية. إن أول 20 إلى 30 عميلاً لديك هم أساس عملك - تعامل مع كل واحد منهم باعتباره أحد كبار الشخصيات. اجمع معلومات الاتصال الخاصة بهم، وأرسل متابعات شخصية، واطلب الإحالات. أنشئ نظام إدارة العملاء من اليوم الأول بدلاً من محاولة تعديله لاحقًا. حتى جدول البيانات البسيط الذي يحتوي على أسماء العملاء والخدمات والملاحظات أفضل من الاعتماد على الذاكرة.</p>
 
 <h3>كيف أتنافس مع برامج الولاء للصالونات كمستقل؟</h3>
 <p> أنت تتنافس من خلال تقديم ما لا تستطيع الصالونات تقديمه: علاقة شخصية عميقة ومتسقة بين شخصين. برامج ولاء الصالون عبارة عن معاملات (اكسب النقاط واحصل على المكافآت). ميزة الولاء الخاصة بك هي العلائقية (الاتصال الحقيقي، الخدمة الشخصية، المرونة). العميل الذي يشعر بأنه معروف حقًا ويقدره متخصص التجميل الخاص به لن يتحول إلى صالون للحصول على خصم 10%.</p>

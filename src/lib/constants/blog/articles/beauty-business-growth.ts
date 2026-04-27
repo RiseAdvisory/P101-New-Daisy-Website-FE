@@ -573,7 +573,7 @@ const expandingSalonLocationsArticle: LocalBlogPost = {
 <ul>
 <li><strong>Documented systems:</strong> Can your salon run for two weeks without your daily involvement? If not, you need to systemise before expanding.</li>
 <li><strong>Strong management:</strong> You need a trusted manager at your existing location who can maintain standards while your attention is divided.</li>
-<li><strong>Technology infrastructure:</strong> Your <a href="/en/salon-management-software">salon management platform</a> must support multi-location operations. <a href="/en/features/business/business-growth">The Daisy</a> is designed for multi-branch beauty businesses, providing centralised management across all locations.</li>
+<li><strong>Technology infrastructure:</strong> Your salon management platform must support multi-location operations. <a href="/en/features/business/business-growth">The Daisy</a> is designed for multi-branch beauty businesses, providing centralised management across all locations.</li>
 </ul>
 
 <h3>Market Readiness</h3>
@@ -1789,7 +1789,7 @@ const expandingSalonLocationsArticleAr: LocalBlogPost = {
 <ul>
 <li><strong>أنظمة موثقة:</strong> هل يمكن لصالونك العمل لمدة أسبوعين دون تدخلك اليومي؟ إذا لا، تحتاج لتنظيم الأنظمة قبل التوسع.</li>
 <li><strong>إدارة قوية:</strong> تحتاج مديراً موثوقاً في موقعك الحالي يمكنه الحفاظ على المعايير بينما ينقسم انتباهك.</li>
-<li><strong>بنية تكنولوجية:</strong> يجب أن تدعم <a href="/ar/salon-management-software">منصة إدارة الصالون</a> عمليات متعددة المواقع. <a href="/ar/features/business/business-growth">ديزي</a> مصممة لمشاريع التجميل متعددة الفروع، وتوفر إدارة مركزية عبر جميع المواقع.</li>
+<li><strong>بنية تكنولوجية:</strong> يجب أن تدعم منصة إدارة الصالون عمليات متعددة المواقع. <a href="/ar/features/business/business-growth">ديزي</a> مصممة لمشاريع التجميل متعددة الفروع، وتوفر إدارة مركزية عبر جميع المواقع.</li>
 </ul>
 
 <h3>جاهزية السوق</h3>

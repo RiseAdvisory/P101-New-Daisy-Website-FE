@@ -917,7 +917,7 @@ const dataDrivenSalonsArticle: LocalBlogPost = {
 <li><strong>Staff data:</strong> Individual utilisation rates, revenue generated, retention rates for their clients, service mix, and rebooking rates.</li>
 <li><strong>Marketing data:</strong> Acquisition channel for new clients, campaign costs, conversion rates from inquiry to booking, and client lifetime value by channel.</li>
 </ul>
-<p>The key principle: capture data as a byproduct of normal operations, not as an additional task. When data collection requires extra work, it stops happening. When it is automatic - as with integrated <a href="/en/salon-management-software">salon management platforms</a> - it accumulates effortlessly and becomes increasingly valuable over time.</p>
+<p>The key principle: capture data as a byproduct of normal operations, not as an additional task. When data collection requires extra work, it stops happening. When it is automatic - as with integrated salon management platforms - it accumulates effortlessly and becomes increasingly valuable over time.</p>
 
 <h2>Overcoming Common Objections to Data-Driven Management</h2>
 <p>Salon owners often resist data-driven approaches for understandable reasons. Here are the most common objections and honest responses:</p>
@@ -1920,7 +1920,7 @@ const dataDrivenSalonsArticleAr: LocalBlogPost = {
 <li><strong>بيانات الموظفين:</strong> معدلات الاستخدام الفردي، والإيرادات الناتجة، ومعدلات الاحتفاظ بعملائهم، ومزيج الخدمات، ومعدلات إعادة الحجز.</li>
 <li><strong>بيانات التسويق:</strong> قناة اكتساب العملاء الجدد، وتكاليف الحملة، ومعدلات التحويل من الاستفسار إلى الحجز، والقيمة الدائمة للعميل حسب القناة.</li>
 </ul>
-<p> المبدأ الأساسي: التقاط البيانات كنتيجة ثانوية للعمليات العادية، وليس كمهمة إضافية. عندما يتطلب جمع البيانات عملاً إضافيًا، يتوقف ذلك عن الحدوث. عندما يكون ذلك تلقائيًا - كما هو الحال مع <a href="/ar/salon-management-software">منصات إدارة الصالون المدمجة</a> - فإنه يتراكم دون عناء ويصبح ذو قيمة متزايدة بمرور الوقت.</p>
+<p> المبدأ الأساسي: التقاط البيانات كنتيجة ثانوية للعمليات العادية، وليس كمهمة إضافية. عندما يتطلب جمع البيانات عملاً إضافيًا، يتوقف ذلك عن الحدوث. عندما يكون ذلك تلقائيًا - كما هو الحال مع منصات إدارة الصالون المدمجة - فإنه يتراكم دون عناء ويصبح ذو قيمة متزايدة بمرور الوقت.</p>
 
 <h2>التغلب على الاعتراضات الشائعة على الإدارة المستندة إلى البيانات</h2>
 <p> غالبًا ما يقاوم أصحاب الصالونات الأساليب القائمة على البيانات لأسباب مفهومة. فيما يلي الاعتراضات الأكثر شيوعًا والردود الصادقة:</p>

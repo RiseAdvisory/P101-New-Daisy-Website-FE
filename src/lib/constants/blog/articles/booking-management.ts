@@ -56,7 +56,7 @@ const onlineBookingSetupArticle: LocalBlogPost = {
 </ul>
 
 <h2>Step 1: Choose the Right Booking Platform</h2>
-<p>Not all booking systems are equal. The <a href="/en/salon-management-software">right platform for your salon</a> depends on your size, services, and growth plans. Here is what to evaluate:</p>
+<p>Not all booking systems are equal. The right platform for your salon depends on your size, services, and growth plans. Here is what to evaluate:</p>
 
 <h3>Must-Have Features</h3>
 <ul>
@@ -1160,7 +1160,7 @@ const onlineBookingSetupArticleAr: LocalBlogPost = {
 </ul>
 
 <h2>الخطوة 1: اختر منصة الحجز المناسبة</h2>
-<p>ليست جميع أنظمة الحجز متساوية. تعتمد <a href="/ar/salon-management-software">المنصة المناسبة لصالونك</a> على حجمك وخدماتك وخطط نموك. إليك ما يجب تقييمه:</p>
+<p>ليست جميع أنظمة الحجز متساوية. تعتمد المنصة المناسبة لصالونك على حجمك وخدماتك وخطط نموك. إليك ما يجب تقييمه:</p>
 
 <h3>ميزات ضرورية</h3>
 <ul>

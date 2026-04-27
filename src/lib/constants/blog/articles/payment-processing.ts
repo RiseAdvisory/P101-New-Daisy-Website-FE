@@ -147,7 +147,7 @@ const salonPosSystemsArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>How much does a salon POS system cost?</h3>
-<p>Costs vary by provider and setup. Hardware terminals range from $200-$600 one-time. Software subscriptions range from $30-$150 per month depending on features. Processing fees are typically 2.5-2.9% per transaction. The Daisy integrates POS into its <a href="/en/salon-management-software">salon management platform</a>, so you get payment processing alongside booking, scheduling, and client management without paying for separate systems.</p>
+<p>Costs vary by provider and setup. Hardware terminals range from $200-$600 one-time. Software subscriptions range from $30-$150 per month depending on features. Processing fees are typically 2.5-2.9% per transaction. The Daisy integrates POS into its salon management platform, so you get payment processing alongside booking, scheduling, and client management without paying for separate systems.</p>
 
 <h3>Can I keep my current payment processor with a new POS?</h3>
 <p>It depends on the POS provider. Some systems are processor-agnostic and connect to your existing merchant account. Others, like integrated platforms, use their own built-in processing. Integrated processing is generally simpler to manage and provides better data connectivity between payments and your salon management tools.</p>
@@ -1006,7 +1006,7 @@ const salonPosSystemsArticleAr: LocalBlogPost = {
 <h2>الأسئلة الشائعة</h2>
 
 <h3>ما هي تكلفة نظام نقاط البيع في الصالون؟</h3>
-<p> تختلف التكاليف حسب الموفر والإعداد. تتراوح محطات الأجهزة من 200 إلى 600 دولار لمرة واحدة. تتراوح اشتراكات البرامج من 30 دولارًا إلى 150 دولارًا شهريًا حسب الميزات. تبلغ رسوم المعالجة عادةً 2.5-2.9% لكل معاملة. تقوم ديزي بدمج نقطة البيع في <a href="/ar/salon-management-software">منصة إدارة الصالون</a>، بحيث تحصل على معالجة الدفع إلى جانب الحجز والجدولة وإدارة العملاء دون الدفع مقابل أنظمة منفصلة.</p>
+<p> تختلف التكاليف حسب الموفر والإعداد. تتراوح محطات الأجهزة من 200 إلى 600 دولار لمرة واحدة. تتراوح اشتراكات البرامج من 30 دولارًا إلى 150 دولارًا شهريًا حسب الميزات. تبلغ رسوم المعالجة عادةً 2.5-2.9% لكل معاملة. تقوم ديزي بدمج نقطة البيع في منصة إدارة الصالون، بحيث تحصل على معالجة الدفع إلى جانب الحجز والجدولة وإدارة العملاء دون الدفع مقابل أنظمة منفصلة.</p>
 
 <h3>هل يمكنني الاحتفاظ بمعالج الدفع الحالي الخاص بي باستخدام نقطة بيع جديدة؟</h3>
 <p> يعتمد ذلك على مزود نقطة البيع. بعض الأنظمة لا تعتمد على المعالج وتتصل بحساب التاجر الحالي الخاص بك. البعض الآخر، مثل المنصات المتكاملة، يستخدم المعالجة المضمنة الخاصة به. تعد المعالجة المتكاملة بشكل عام أسهل في الإدارة وتوفر اتصالاً أفضل للبيانات بين المدفوعات وأدوات إدارة الصالون الخاصة بك.</p>
