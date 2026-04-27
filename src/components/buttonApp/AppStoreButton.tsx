@@ -2,10 +2,11 @@
 import { useMemo } from 'react';
 import { Button } from '../ui/button';
 import { AppStoreIcons } from '@/assets/icons/appMarket/AppStoreIcons';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { buttonAppData } from '@/lib/constants/shared/buttonAppData';
 import { t } from '@/lib/constants/i18n';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
+import { appendAttributionToAppStoreUrl } from '@/lib/attribution';
 
 export const AppStoreButton = ({
   className,
@@ -16,15 +17,22 @@ export const AppStoreButton = ({
   hoverText?: string;
   fillHover?: string;
 }) => {
-  const router = useRouter();
   const fullPathname = usePathname();
   const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const dataButton = t(buttonAppData, locale).appStore;
 
+  const handleClick = () => {
+    if (typeof window === 'undefined' || !dataButton?.link) return;
+    window.location.href = appendAttributionToAppStoreUrl(
+      dataButton.link,
+      'apple-app-store',
+    );
+  };
+
   return (
     <>
       <Button
-        onClick={() => router.push(dataButton?.link)}
+        onClick={handleClick}
         variant="navigation"
         className={`w-full mr-0 h-full felx items-center justify-center rounded-xl py-4 group hover:bg-white hover:text-primary ${className}`}
       >

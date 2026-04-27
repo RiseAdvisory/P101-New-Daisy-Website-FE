@@ -32,6 +32,7 @@ import { t } from '@/lib/constants/i18n';
 import { formBusinessData } from '@/lib/constants/shared/formBusinessData';
 import { usePathname } from 'next/navigation';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
+import { buildFormAttributionPayload } from '@/lib/attribution';
 import { getCountryFromCookie, getDialCode } from '@/helpers/countryDialCodes';
 
 interface ProfileFormProps {
@@ -154,9 +155,7 @@ export const ProfileForm = ({ defaultType, buttonText, onSuccess }: ProfileFormP
       locale: locale,
       detectedCountry: detectedCountry || '',
       submittedAt: new Date().toISOString(),
-      utmSource: typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('utm_source') || '' : '',
-      utmMedium: typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('utm_medium') || '' : '',
-      utmCampaign: typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('utm_campaign') || '' : '',
+      ...buildFormAttributionPayload(),
     };
 
     try {
