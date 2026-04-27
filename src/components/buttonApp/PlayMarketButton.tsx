@@ -2,10 +2,11 @@
 import { useMemo } from 'react';
 import { GooglePlayIcons } from '@/assets/icons/appMarket/GooglePlayIcons';
 import { Button } from '../ui/button';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { buttonAppData } from '@/lib/constants/shared/buttonAppData';
 import { t } from '@/lib/constants/i18n';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
+import { appendAttributionToAppStoreUrl } from '@/lib/attribution';
 
 export const PlayMarketButton = ({
   className,
@@ -16,15 +17,22 @@ export const PlayMarketButton = ({
   hoverText?: string;
   fillHover?: string;
 }) => {
-  const router = useRouter();
   const fullPathname = usePathname();
   const locale = useMemo(() => getLocaleFromPathname(fullPathname), [fullPathname]);
   const dataButton = t(buttonAppData, locale).googlePlay;
 
+  const handleClick = () => {
+    if (typeof window === 'undefined' || !dataButton?.link) return;
+    window.location.href = appendAttributionToAppStoreUrl(
+      dataButton.link,
+      'google-play',
+    );
+  };
+
   return (
     <>
       <Button
-        onClick={() => router.push(dataButton?.link)}
+        onClick={handleClick}
         variant="navigation"
         className={`w-full group hover:bg-white hover:text-primary mr-0 h-full flex items-center justify-center rounded-xl py-4 ${className}`}
       >

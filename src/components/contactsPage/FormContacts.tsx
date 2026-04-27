@@ -33,6 +33,7 @@ import { contactPageData } from '@/lib/constants/contactPageData';
 import { t } from '@/lib/constants/i18n';
 import { usePathname } from 'next/navigation';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
+import { buildFormAttributionPayload } from '@/lib/attribution';
 
 const formSchema = z.object({
   firstname: z.string().min(1, 'First name is required.'),
@@ -76,10 +77,6 @@ export const FormContacts = ({ style }: { style?: string }) => {
 
   const onSubmit = async (data: any) => {
     const completePhoneNumber = `${country_code}${mobile}`;
-    const searchParams =
-      typeof window !== 'undefined'
-        ? new URLSearchParams(window.location.search)
-        : new URLSearchParams();
 
     const formData = {
       ...data,
@@ -89,9 +86,7 @@ export const FormContacts = ({ style }: { style?: string }) => {
       source: typeof window !== 'undefined' ? window.location.pathname : '',
       locale,
       submittedAt: new Date().toISOString(),
-      utmSource: searchParams.get('utm_source') || '',
-      utmMedium: searchParams.get('utm_medium') || '',
-      utmCampaign: searchParams.get('utm_campaign') || '',
+      ...buildFormAttributionPayload(),
     };
 
     try {
