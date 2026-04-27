@@ -450,7 +450,7 @@ const managingPermissionsArticle: LocalBlogPost = {
       'A practical guide to setting up role-based access control in your salon software. Learn how to define permissions for owners, managers, senior stylists, and junior staff to protect sensitive data while empowering your team.',
     aboutPosts: `
 <h2>Why Access Control Matters More Than You Think</h2>
-<p>Most salon owners set up their <a href="/en/salon-management-software">management software</a>, give everyone full access, and never think about permissions again - until something goes wrong. A junior stylist accidentally discounts a high-value service. A receptionist exports the entire client database before leaving for a competitor. A team member sees what everyone else earns and morale craters.</p>
+<p>Most salon owners set up their management software, give everyone full access, and never think about permissions again - until something goes wrong. A junior stylist accidentally discounts a high-value service. A receptionist exports the entire client database before leaving for a competitor. A team member sees what everyone else earns and morale craters.</p>
 <p>These are not hypothetical scenarios. A 2025 study by the Salon Business Advisors Network found that 34% of salon owners reported a data misuse incident in the previous 12 months, and 62% of those incidents were caused by staff with access permissions that were too broad. The solution is not restricting everything - it is giving each team member access to exactly what they need to do their job, and nothing more.</p>
 <p>This principle is called &ldquo;least privilege&rdquo; in security, and it is the foundation of effective permission management. This guide shows you how to implement it in your salon using role-based access control.</p>
 
@@ -1253,7 +1253,7 @@ const managingPermissionsArticleAr: LocalBlogPost = {
       'إدارة الصلاحيات بشكل صحيح تحمي بيانات عملك وعملائك. تعلّم كيفية إعداد مستويات وصول مناسبة لكل عضو في الفريق.',
     aboutPosts: `
 <h2>لماذا التحكم في الوصول أهم مما تظن</h2>
-<p>معظم أصحاب الصالونات يُعدّون <a href="/ar/salon-management-software">برنامج الإدارة</a> ويمنحون الجميع وصولاً كاملاً ولا يفكرون في الصلاحيات مجدداً - حتى يحدث خطأ. مصفف مبتدئ يخصم بالخطأ خدمة عالية القيمة. موظفة استقبال تصدّر قاعدة بيانات العملاء بأكملها قبل الانتقال لمنافس. عضو فريق يرى ما يكسبه الجميع وتنهار الروح المعنوية.</p>
+<p>معظم أصحاب الصالونات يُعدّون برنامج الإدارة ويمنحون الجميع وصولاً كاملاً ولا يفكرون في الصلاحيات مجدداً - حتى يحدث خطأ. مصفف مبتدئ يخصم بالخطأ خدمة عالية القيمة. موظفة استقبال تصدّر قاعدة بيانات العملاء بأكملها قبل الانتقال لمنافس. عضو فريق يرى ما يكسبه الجميع وتنهار الروح المعنوية.</p>
 <p>هذه ليست سيناريوهات افتراضية. وجدت دراسة أجرتها شبكة مستشاري أعمال الصالونات في 2025 أن 34% من أصحاب الصالونات أبلغوا عن حادثة سوء استخدام بيانات في الـ12 شهراً السابقة، و62% من تلك الحوادث سببها موظفون بصلاحيات وصول واسعة جداً. الحل ليس تقييد كل شيء - بل منح كل عضو فريق الوصول إلى ما يحتاجه بالضبط لأداء عمله، لا أكثر.</p>
 <p>يُسمى هذا المبدأ &ldquo;أقل امتياز&rdquo; في مجال الأمان، وهو أساس إدارة الصلاحيات الفعّالة. يوضح هذا الدليل كيفية تطبيقه في صالونك باستخدام التحكم في الوصول المبني على الأدوار.</p>
 

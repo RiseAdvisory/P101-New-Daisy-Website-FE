@@ -437,7 +437,7 @@ const daisyMarketingSuiteArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Why Beauty Businesses Need a Built-In Marketing Suite</h2>
 <p>Most salon owners know they need to market their business, but few have the time, budget, or expertise to run effective campaigns. The result is inconsistent marketing - a burst of Instagram posts when things are slow, a discount flyer when bookings drop, or a referral programme that launches with enthusiasm and fades within weeks.</p>
-<p>A built-in marketing suite solves this by embedding marketing tools directly into your <a href="/en/salon-management-software">salon management platform</a>. Instead of juggling separate tools for email marketing, social media scheduling, review management, and promotions, everything lives in one place and runs automatically based on your client data.</p>
+<p>A built-in marketing suite solves this by embedding marketing tools directly into your salon management platform. Instead of juggling separate tools for email marketing, social media scheduling, review management, and promotions, everything lives in one place and runs automatically based on your client data.</p>
 <p>The Daisy's marketing suite is designed specifically for beauty and wellness businesses. It understands your industry, speaks your clients' language (literally - Arabic and English), and automates the marketing activities that drive new client acquisition and retention. Here is how each component works and how to set it up for maximum impact.</p>
 
 <h2>Automated Campaign Builder: Set It and Watch It Work</h2>
@@ -1408,7 +1408,7 @@ const daisyMarketingSuiteArticleAr: LocalBlogPost = {
       'تساعد مجموعة التسويق المدمجة من ديزي أعمال التجميل على جذب عملاء جدد عبر حملات آلية، وعروض موجهة، وإدارة المراجعات، وتكامل وسائل التواصل الاجتماعي. تعلّم كيفية إعداد كل أداة وتحسينها لتحقيق أفضل النتائج.',
     aboutPosts: `<h2>لماذا تحتاج شركات التجميل إلى مجموعة تسويق مدمجة</h2>
 <p> يعرف معظم أصحاب الصالونات أنهم بحاجة إلى تسويق أعمالهم، لكن القليل منهم لديهم الوقت أو الميزانية أو الخبرة لإدارة حملات فعالة. والنتيجة هي تسويق غير متسق - موجة من منشورات إنستغرام عندما تكون الأمور بطيئة، أو منشور خصم عند انخفاض الحجوزات، أو برنامج إحالة يتم إطلاقه بحماس ويتلاشى في غضون أسابيع.</p>
-<p> مجموعة التسويق المضمنة تحل هذه المشكلة عن طريق دمج أدوات التسويق مباشرة في <a href="/ar/salon-management-software">منصة إدارة الصالون</a>. بدلاً من استخدام أدوات منفصلة للتسويق عبر البريد الإلكتروني، وجدولة وسائل التواصل الاجتماعي، وإدارة المراجعة، والعروض الترويجية، كل شيء موجود في مكان واحد ويتم تشغيله تلقائيًا بناءً على بيانات عميلك.</p>
+<p> مجموعة التسويق المضمنة تحل هذه المشكلة عن طريق دمج أدوات التسويق مباشرة في منصة إدارة الصالون. بدلاً من استخدام أدوات منفصلة للتسويق عبر البريد الإلكتروني، وجدولة وسائل التواصل الاجتماعي، وإدارة المراجعة، والعروض الترويجية، كل شيء موجود في مكان واحد ويتم تشغيله تلقائيًا بناءً على بيانات عميلك.</p>
 <p> تم تصميم مجموعة تسويق ديزي خصيصًا لشركات التجميل والعافية. فهو يفهم مجال عملك، ويتحدث لغة عملائك (حرفيًا - العربية والإنجليزية)، ويقوم بأتمتة الأنشطة التسويقية التي تؤدي إلى اكتساب عملاء جدد والاحتفاظ بهم. إليك كيفية عمل كل مكون وكيفية إعداده لتحقيق أقصى قدر من التأثير.</p>
 
 <h2>أداة إنشاء الحملة الآلية: قم بإعدادها وشاهدها وهي تعمل</h2>

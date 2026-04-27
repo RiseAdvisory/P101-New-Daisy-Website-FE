@@ -57,7 +57,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'Daisy automates all of these no-show prevention strategies out of the box. As a complete <a href="/en/salon-management-software">salon management platform</a>, it includes automated multi-channel reminders (SMS, email, WhatsApp), customizable deposit requirements, AI prediction for at-risk bookings, easy online rescheduling, and a smart waitlist that fills cancellations automatically. Salons using Daisy\'s full prevention suite report no-show rates under 5%.',
+        'Daisy automates all of these no-show prevention strategies out of the box. As a complete salon management platform, it includes automated multi-channel reminders (SMS, email, WhatsApp), customizable deposit requirements, AI prediction for at-risk bookings, easy online rescheduling, and a smart waitlist that fills cancellations automatically. Salons using Daisy\'s full prevention suite report no-show rates under 5%.',
       faqs: [
         {
           question: 'What is the average no-show rate for salons?',
@@ -140,7 +140,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'Daisy provides 360-degree customer acquisition as a complete <a href="/en/salon-management-software">salon management platform</a>: marketplace discovery brings new clients, cashback keeps them coming back, AI marketing automates promotions, and the AI receptionist ensures you never miss a lead. All channels work together to grow your client base automatically.',
+        'Daisy provides 360-degree customer acquisition as a complete salon management platform: marketplace discovery brings new clients, cashback keeps them coming back, AI marketing automates promotions, and the AI receptionist ensures you never miss a lead. All channels work together to grow your client base automatically.',
       faqs: [
         {
           question: 'How do salons get new clients in 2026?',
@@ -213,7 +213,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'Daisy checks every box: comprehensive features, transparent flat pricing (no per-staff or transaction fees), AI-powered growth tools, native Arabic/English support, and free data migration on the Business plan. See our full <a href="/en/salon-management-software">salon management software guide</a> for a detailed breakdown, or start with a 14-day free trial to experience it yourself.',
+        'Daisy checks every box: comprehensive features, transparent flat pricing (no per-staff or transaction fees), AI-powered growth tools, native Arabic/English support, and free data migration on the Business plan. See our full salon management software guide for a detailed breakdown, or start with a 14-day free trial to experience it yourself.',
       faqs: [
         {
           question: 'What is the best salon software in 2026?',
@@ -276,7 +276,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
         {
           name: 'Choose your new platform',
-          text: 'Evaluate alternatives based on features, pricing, and migration support. Our <a href="/en/salon-management-software">salon management software guide</a> covers the key factors: does it offer AI features Fresha lacks? Is pricing transparent? Does it support your market (Arabic, GCC)?',
+          text: 'Evaluate alternatives based on features, pricing, and migration support. Our salon management software guide covers the key factors: does it offer AI features Fresha lacks? Is pricing transparent? Does it support your market (Arabic, GCC)?',
         },
         {
           name: 'Set up the new platform in parallel',
@@ -369,7 +369,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'Daisy makes online booking setup effortless: configure your services and staff, customize your booking page with your branding, and go live in under a day. As a full <a href="/en/salon-management-software">salon management platform</a>, it includes AI-powered scheduling that optimizes appointments, automated reminders that reduce no-shows, and a 24/7 AI receptionist that handles inquiries even when you\'re busy.',
+        'Daisy makes online booking setup effortless: configure your services and staff, customize your booking page with your branding, and go live in under a day. As a full salon management platform, it includes AI-powered scheduling that optimizes appointments, automated reminders that reduce no-shows, and a 24/7 AI receptionist that handles inquiries even when you\'re busy.',
       faqs: [
         {
           question: 'How long does it take to set up online booking?',
@@ -444,7 +444,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'تؤتمت ديزي جميع استراتيجيات منع عدم الحضور تلقائياً. بصفتها <a href="/ar/salon-management-software">منصة إدارة صالونات</a> متكاملة، تشمل تذكيرات تلقائية متعددة القنوات (رسائل نصية، بريد إلكتروني، واتساب)، ومتطلبات عربون قابلة للتخصيص، وتنبؤ بالذكاء الاصطناعي للحجوزات المعرّضة للخطر، وإعادة جدولة سهلة عبر الإنترنت، وقائمة انتظار ذكية تملأ الإلغاءات تلقائياً. الصالونات التي تستخدم مجموعة ديزي الكاملة للوقاية تسجّل معدلات عدم حضور أقل من 5%.',
+        'تؤتمت ديزي جميع استراتيجيات منع عدم الحضور تلقائياً. بصفتها منصة إدارة صالونات متكاملة، تشمل تذكيرات تلقائية متعددة القنوات (رسائل نصية، بريد إلكتروني، واتساب)، ومتطلبات عربون قابلة للتخصيص، وتنبؤ بالذكاء الاصطناعي للحجوزات المعرّضة للخطر، وإعادة جدولة سهلة عبر الإنترنت، وقائمة انتظار ذكية تملأ الإلغاءات تلقائياً. الصالونات التي تستخدم مجموعة ديزي الكاملة للوقاية تسجّل معدلات عدم حضور أقل من 5%.',
       faqs: [
         {
           question: 'ما هو متوسط معدل عدم الحضور في الصالونات؟',
@@ -527,7 +527,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'توفر ديزي منظومة متكاملة لاكتساب العملاء بصفتها <a href="/ar/salon-management-software">منصة إدارة صالونات</a> متكاملة: اكتشاف السوق يجلب عملاء جدداً، والكاشباك يضمن عودتهم، والتسويق بالذكاء الاصطناعي يؤتمت العروض، وموظف الاستقبال الذكي يضمن عدم تفويت أي فرصة. جميع القنوات تعمل معاً لتنمية قاعدة عملائك تلقائيًا.',
+        'توفر ديزي منظومة متكاملة لاكتساب العملاء بصفتها منصة إدارة صالونات متكاملة: اكتشاف السوق يجلب عملاء جدداً، والكاشباك يضمن عودتهم، والتسويق بالذكاء الاصطناعي يؤتمت العروض، وموظف الاستقبال الذكي يضمن عدم تفويت أي فرصة. جميع القنوات تعمل معاً لتنمية قاعدة عملائك تلقائيًا.',
       faqs: [
         {
           question: 'كيف تحصل الصالونات على عملاء جدد في 2026؟',
@@ -600,7 +600,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'تحقق ديزي كل المعايير: ميزات شاملة، وتسعير ثابت شفاف (بدون رسوم لكل موظف أو رسوم معاملات)، وأدوات نمو مدعومة بالذكاء الاصطناعي، ودعم أصلي بالعربية والإنجليزية، وترحيل بيانات مجاني في خطة الأعمال. اطلع على <a href="/ar/salon-management-software">دليل برامج إدارة الصالونات</a> الكامل للاطلاع على شرح مفصّل، أو ابدأ بتجربة مجانية لمدة 14 يومًا لتجربتها بنفسك.',
+        'تحقق ديزي كل المعايير: ميزات شاملة، وتسعير ثابت شفاف (بدون رسوم لكل موظف أو رسوم معاملات)، وأدوات نمو مدعومة بالذكاء الاصطناعي، ودعم أصلي بالعربية والإنجليزية، وترحيل بيانات مجاني في خطة الأعمال. اطلع على دليل برامج إدارة الصالونات الكامل للاطلاع على شرح مفصّل، أو ابدأ بتجربة مجانية لمدة 14 يومًا لتجربتها بنفسك.',
       faqs: [
         {
           question: 'ما أفضل برنامج لإدارة الصالونات في 2026؟',
@@ -663,7 +663,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
         {
           name: 'اختيار منصتك الجديدة',
-          text: 'قيّم البدائل بناءً على الميزات والتسعير ودعم الترحيل. يغطي <a href="/ar/salon-management-software">دليل برامج إدارة الصالونات</a> لدينا العوامل الرئيسية: هل تقدم ميزات ذكاء اصطناعي لا يوفرها Fresha؟ هل التسعير شفاف؟ هل تدعم سوقك (العربية، الخليج)؟',
+          text: 'قيّم البدائل بناءً على الميزات والتسعير ودعم الترحيل. يغطي دليل برامج إدارة الصالونات لدينا العوامل الرئيسية: هل تقدم ميزات ذكاء اصطناعي لا يوفرها Fresha؟ هل التسعير شفاف؟ هل تدعم سوقك (العربية، الخليج)؟',
         },
         {
           name: 'إعداد المنصة الجديدة بالتوازي',
@@ -756,7 +756,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'تجعل ديزي إعداد الحجز عبر الإنترنت سهلاً: اضبط خدماتك وموظفيك، وخصّص صفحة الحجز بعلامتك التجارية، وانطلق في أقل من يوم. بصفتها <a href="/ar/salon-management-software">منصة إدارة صالونات</a> متكاملة، تشمل جدولة مدعومة بالذكاء الاصطناعي تُحسّن المواعيد، وتذكيرات تلقائية تقلّل عدم الحضور، وموظف استقبال ذكي يعمل على مدار الساعة يتعامل مع الاستفسارات حتى عندما تكون مشغولاً.',
+        'تجعل ديزي إعداد الحجز عبر الإنترنت سهلاً: اضبط خدماتك وموظفيك، وخصّص صفحة الحجز بعلامتك التجارية، وانطلق في أقل من يوم. بصفتها منصة إدارة صالونات متكاملة، تشمل جدولة مدعومة بالذكاء الاصطناعي تُحسّن المواعيد، وتذكيرات تلقائية تقلّل عدم الحضور، وموظف استقبال ذكي يعمل على مدار الساعة يتعامل مع الاستفسارات حتى عندما تكون مشغولاً.',
       faqs: [
         {
           question: 'كم من الوقت يستغرق إعداد الحجز عبر الإنترنت؟',

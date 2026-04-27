@@ -544,7 +544,7 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 <li><strong>Cross-channel journeys:</strong> How often do clients use more than one channel before booking? If cross-channel journeys are common, the quality of your channel integration directly affects conversion.</li>
 <li><strong>Channel preference by segment:</strong> Do your younger clients prefer DMs while older clients prefer phone? Use this data to personalise communication channel selection.</li>
 </ul>
-<p><a href="/en/features/business/analytics-reports">Analytics dashboards</a> that aggregate data across all channels provide these insights automatically. Explore <a href="/en/pricing">The Daisy's pricing</a> to see how unified communication fits into a <a href="/en/salon-management-software">complete salon management solution</a>.</p>
+<p><a href="/en/features/business/analytics-reports">Analytics dashboards</a> that aggregate data across all channels provide these insights automatically. Explore <a href="/en/pricing">The Daisy's pricing</a> to see how unified communication fits into a complete salon management solution.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1125,7 +1125,7 @@ const omnichannelCommunicationArticleAr: LocalBlogPost = {
 <li><strong>الرحلات عبر القنوات:</strong> كم مرة يستخدم العملاء أكثر من قناة قبل الحجز؟ إذا كانت الرحلات عبر القنوات شائعة، فإن جودة تكامل قنواتك تؤثر مباشرة على التحويل.</li>
 <li><strong>تفضيل القناة حسب الشريحة:</strong> هل يفضل عملاؤك الأصغر الرسائل المباشرة بينما يفضل الأكبر الهاتف؟ استخدم هذه البيانات لتخصيص اختيار قناة التواصل.</li>
 </ul>
-<p><a href="/ar/features/business/analytics-reports">لوحات تحكم التحليلات</a> التي تجمع البيانات عبر جميع القنوات توفر هذه الرؤى تلقائيًا. استكشف <a href="/ar/pricing">أسعار ديزي</a> لترى كيف يندمج التواصل الموحد في <a href="/ar/salon-management-software">حل إدارة صالون شامل</a>.</p>
+<p><a href="/ar/features/business/analytics-reports">لوحات تحكم التحليلات</a> التي تجمع البيانات عبر جميع القنوات توفر هذه الرؤى تلقائيًا. استكشف <a href="/ar/pricing">أسعار ديزي</a> لترى كيف يندمج التواصل الموحد في حل إدارة صالون شامل.</p>
 
 <h2>الأسئلة الشائعة</h2>
 

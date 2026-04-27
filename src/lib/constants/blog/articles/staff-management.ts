@@ -152,7 +152,7 @@ const staffSchedulingArticle: LocalBlogPost = {
 </ul>
 
 <h3>Choosing a Scheduling Tool</h3>
-<p>Standalone scheduling tools (Deputy, Sling, Homebase) work but create a disconnected workflow. The most efficient approach is a <a href="/en/salon-management-software">salon management platform</a> with built-in scheduling that connects staff schedules to the booking calendar, so appointment availability automatically reflects who is working. The Daisy&rsquo;s <a href="/en/features/business/team-management">team management tools</a> integrate scheduling, booking, and performance tracking in one system.</p>
+<p>Standalone scheduling tools (Deputy, Sling, Homebase) work but create a disconnected workflow. The most efficient approach is a salon management platform with built-in scheduling that connects staff schedules to the booking calendar, so appointment availability automatically reflects who is working. The Daisy&rsquo;s <a href="/en/features/business/team-management">team management tools</a> integrate scheduling, booking, and performance tracking in one system.</p>
 
 <h2>Common Scheduling Mistakes and How to Avoid Them</h2>
 
@@ -1468,7 +1468,7 @@ const staffSchedulingArticleAr: LocalBlogPost = {
 </ul>
 
 <h3>اختيار أداة الجدولة</h3>
-<p>أدوات الجدولة المستقلة (Deputy، Sling، Homebase) تعمل لكنها تخلق سير عمل منفصل. النهج الأكثر كفاءة هو <a href="/ar/salon-management-software">منصة إدارة صالون</a> مع جدولة مدمجة تربط جداول الموظفين بتقويم الحجوزات، بحيث يعكس توفر المواعيد تلقائياً من يعمل. تدمج <a href="/ar/features/business/team-management">أدوات إدارة الفريق من ديزي</a> الجدولة والحجز وتتبع الأداء في نظام واحد.</p>
+<p>أدوات الجدولة المستقلة (Deputy، Sling، Homebase) تعمل لكنها تخلق سير عمل منفصل. النهج الأكثر كفاءة هو منصة إدارة صالون مع جدولة مدمجة تربط جداول الموظفين بتقويم الحجوزات، بحيث يعكس توفر المواعيد تلقائياً من يعمل. تدمج <a href="/ar/features/business/team-management">أدوات إدارة الفريق من ديزي</a> الجدولة والحجز وتتبع الأداء في نظام واحد.</p>
 
 <h2>أخطاء الجدولة الشائعة وكيفية تجنبها</h2>
 

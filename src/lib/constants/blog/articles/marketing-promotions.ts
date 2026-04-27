@@ -557,7 +557,7 @@ const emailMarketingSalonsArticle: LocalBlogPost = {
 <p>Beauty industry data shows that Tuesday through Thursday mornings (9-11am) and Sunday evenings (7-9pm) generate the highest open rates. Sunday evening is particularly effective for rebooking emails because clients are planning their week ahead. Test different send times with your specific audience and let the data guide you.</p>
 
 <h3>Do I need a separate email marketing tool?</h3>
-<p>If your <a href="/en/salon-management-software">salon management platform</a> includes email marketing capabilities, you can avoid the cost and complexity of a separate tool. The Daisy integrates client communication across email, SMS, and WhatsApp so you manage everything from one platform. If your booking system does not include email marketing, tools like Mailchimp, Klaviyo, or Brevo are popular standalone options.</p>
+<p>If your salon management platform includes email marketing capabilities, you can avoid the cost and complexity of a separate tool. The Daisy integrates client communication across email, SMS, and WhatsApp so you manage everything from one platform. If your booking system does not include email marketing, tools like Mailchimp, Klaviyo, or Brevo are popular standalone options.</p>
 
 <h3>How do I avoid my emails going to spam?</h3>
 <p>Use a verified business domain for sending (not a free Gmail or Yahoo address). Include a clear unsubscribe link in every email. Do not use spam-trigger words like "FREE!!!" or "ACT NOW." Maintain a clean list by removing hard bounces and inactive subscribers quarterly. Authenticate your domain with SPF, DKIM, and DMARC records.</p>
@@ -1574,7 +1574,7 @@ const emailMarketingSalonsArticleAr: LocalBlogPost = {
 <p> تظهر بيانات صناعة التجميل أن صباح الثلاثاء إلى الخميس (9-11 صباحًا) وأمسيات الأحد (7-9 مساءً) يحقق أعلى معدلات الفتح. مساء الأحد فعال بشكل خاص لإعادة حجز رسائل البريد الإلكتروني لأن العملاء يخططون لأسبوعهم المقبل. اختبر أوقات إرسال مختلفة مع جمهورك المحدد ودع البيانات ترشدك.</p>
 
 <h3> هل أحتاج إلى أداة تسويق منفصلة عبر البريد الإلكتروني؟</h3>
-<p>إذا كانت <a href="/ar/salon-management-software">منصة إدارة الصالون</a> تتضمن إمكانات التسويق عبر البريد الإلكتروني، فيمكنك تجنب تكلفة وتعقيد أداة منفصلة. يدمج ديزي اتصالات العملاء عبر البريد الإلكتروني والرسائل النصية القصيرة وواتساب حتى تتمكن من إدارة كل شيء من منصة واحدة. إذا كان نظام الحجز الخاص بك لا يتضمن التسويق عبر البريد الإلكتروني، فإن أدوات مثل Mailchimp أو Klaviyo أو Brevo تعد من الخيارات المستقلة الشائعة.</p>
+<p>إذا كانت منصة إدارة الصالون تتضمن إمكانات التسويق عبر البريد الإلكتروني، فيمكنك تجنب تكلفة وتعقيد أداة منفصلة. يدمج ديزي اتصالات العملاء عبر البريد الإلكتروني والرسائل النصية القصيرة وواتساب حتى تتمكن من إدارة كل شيء من منصة واحدة. إذا كان نظام الحجز الخاص بك لا يتضمن التسويق عبر البريد الإلكتروني، فإن أدوات مثل Mailchimp أو Klaviyo أو Brevo تعد من الخيارات المستقلة الشائعة.</p>
 
 <h3>كيف أتجنب وصول رسائل البريد الإلكتروني إلى البريد العشوائي؟</h3>
 <p> استخدم نطاق عمل تم التحقق منه للإرسال (وليس عنوان Gmail أو Yahoo مجاني). قم بتضمين رابط واضح لإلغاء الاشتراك في كل بريد إلكتروني. لا تستخدم كلمات تثير البريد العشوائي مثل "مجانًا!!!" أو "تصرف الآن". حافظ على قائمة نظيفة عن طريق إزالة الارتدادات القوية والمشتركين غير النشطين كل ثلاثة أشهر. قم بمصادقة نطاقك باستخدام سجلات SPF وDKIM وDMARC.</p>
