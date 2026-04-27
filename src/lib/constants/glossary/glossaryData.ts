@@ -12,12 +12,15 @@ export interface GlossaryEntry {
   metaTitle: string;
   metaDescription: string;
   keywords: string[];
+  /** ISO date — bump when the entry's content changes; surfaces in sitemap lastmod. */
+  lastUpdated?: string;
 }
 
 export const glossaryData: I18nContent<GlossaryEntry[]> = {
   en: [
     {
       slug: 'salon-management-software',
+      lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'Salon Management Software',
       definition:
         'is a digital platform that helps salon owners manage daily operations including appointment scheduling, client records, staff management, payments, and marketing from a single system.',
@@ -83,6 +86,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'ai-receptionist-for-salons',
+      lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'AI Receptionist for Salons',
       definition:
         'is an artificial intelligence system that handles phone calls, chat messages, and booking inquiries for beauty businesses 24/7, automatically scheduling appointments, answering questions, and processing payments without human intervention.',
@@ -148,6 +152,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'cashback-beauty-booking',
+      lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'Cashback in Beauty Booking',
       definition:
         'is a customer loyalty mechanism where beauty service platforms return a percentage of each booking value to the customer, incentivizing repeat visits and new customer acquisition through a rewards-based marketplace.',
@@ -343,6 +348,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-management-system',
+      lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'Salon Management System',
       definition:
         'is the complete operational infrastructure — software, hardware, workflows, and integrations — that a beauty business uses to run daily operations, from appointment booking and point-of-sale terminals to staff coordination and customer communications.',
@@ -408,6 +414,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-employee-management-software',
+      lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'Salon Employee Management Software',
       definition:
         'is specialized functionality within <a href="/en/glossary/salon-management-software">salon management software</a> that handles staff scheduling, commission tracking, performance analytics, team permissions, and workforce coordination for beauty businesses.',
@@ -473,6 +480,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-customer-management',
+      lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'Salon Customer Management',
       definition:
         'is the practice of collecting, organizing, and leveraging client data — visit history, service preferences, spending patterns, and communication records — to deliver personalized experiences, increase retention, and grow lifetime value in a beauty business.',
@@ -540,6 +548,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
   ar: [
     {
       slug: 'salon-management-software',
+      lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'برنامج إدارة الصالونات',
       definition:
         'هو منصة رقمية تساعد أصحاب الصالونات على إدارة العمليات اليومية بما في ذلك جدولة المواعيد، وسجلات العملاء، وإدارة الموظفين، والمدفوعات، والتسويق من نظام واحد.',
@@ -605,6 +614,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'ai-receptionist-for-salons',
+      lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'موظف الاستقبال الذكي للصالونات',
       definition:
         'هو نظام ذكاء اصطناعي يتولى المكالمات الهاتفية والرسائل النصية واستفسارات الحجز لمشاريع التجميل على مدار الساعة، حيث يقوم بجدولة المواعيد والإجابة على الأسئلة ومعالجة المدفوعات تلقائياً دون تدخل بشري.',
@@ -670,6 +680,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'cashback-beauty-booking',
+      lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'الكاشباك في حجز التجميل',
       definition:
         'هو آلية ولاء للعملاء تقوم فيها منصات خدمات التجميل بإرجاع نسبة من قيمة كل حجز إلى العميل، مما يحفز الزيارات المتكررة واكتساب عملاء جدد من خلال سوق قائم على المكافآت.',
@@ -865,6 +876,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-management-system',
+      lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'نظام إدارة الصالونات',
       definition:
         'هو البنية التحتية التشغيلية الكاملة — البرمجيات والأجهزة وسير العمل والتكاملات — التي يستخدمها مشروع التجميل لتشغيل العمليات اليومية، من حجز المواعيد وأجهزة نقاط البيع إلى تنسيق الموظفين والتواصل مع العملاء.',
@@ -930,6 +942,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-employee-management-software',
+      lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'برنامج إدارة موظفي الصالون',
       definition:
         'هو وظائف متخصصة ضمن <a href="/ar/glossary/salon-management-software">برنامج إدارة الصالونات</a> تتولى جدولة الموظفين وتتبع العمولات وتحليلات الأداء وصلاحيات الفريق وتنسيق القوى العاملة لمشاريع التجميل.',
@@ -995,6 +1008,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-customer-management',
+      lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'إدارة عملاء الصالون',
       definition:
         'هي ممارسة جمع وتنظيم والاستفادة من بيانات العملاء — سجل الزيارات وتفضيلات الخدمات وأنماط الإنفاق وسجلات التواصل — لتقديم تجارب مخصصة وزيادة الاحتفاظ وتنمية القيمة الدائمة في مشروع التجميل.',
@@ -1070,4 +1084,9 @@ export function getGlossaryEntry(slug: string): GlossaryEntry | undefined {
 
 export function getAllGlossarySlugs(): string[] {
   return glossaryEntries.map((entry) => entry.slug);
+}
+
+/** Sitemap-friendly view: slug + optional per-entry lastUpdated. */
+export function getGlossarySitemapData(): { slug: string; lastUpdated?: string }[] {
+  return glossaryEntries.map(({ slug, lastUpdated }) => ({ slug, lastUpdated }));
 }

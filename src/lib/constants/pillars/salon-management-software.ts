@@ -19,7 +19,7 @@ export const salonManagementSoftware: PillarPageData = {
   heroSubtitle:
     'How modern salon owners use technology to save time, grow revenue, and deliver better client experiences, without adding complexity.',
   readingTime: '18 min read',
-  lastUpdated: '2026-03-18T00:00:00.000Z',
+  lastUpdated: '2026-04-27T00:00:00.000Z',
 
   keyTakeaways: [
     'Salon management software replaces 5+ separate tools with one platform covering booking, payments, marketing, team management, and analytics.',
