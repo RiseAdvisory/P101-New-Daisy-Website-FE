@@ -132,8 +132,8 @@ export default function RootLayout({
         <SpeedInsights />
         {process.env.NEXT_PUBLIC_CLARITY_ID && (
           <ClarityProvider clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />
-          <AttributionCapture />
         )}
+        <AttributionCapture />
         <DaisyWidgetStyles />
         <Script
           id="daisy-support-widget-js"
