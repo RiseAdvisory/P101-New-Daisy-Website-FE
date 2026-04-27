@@ -107,7 +107,7 @@ const salonMarketingIdeas2026Article: LocalBlogPost = {
 
 <h2>How The Daisy Powers Your Marketing Strategy</h2>
 <p>Implementing 15 marketing strategies manually would overwhelm most salon teams. The Daisy integrates the tools you need into a single platform: automated referral tracking, built-in cashback loyalty, email and SMS campaign tools, online booking, review management, and analytics dashboards. Instead of juggling five separate tools, your team executes campaigns from one interface.</p>
-<p>Explore <a href="/en/features/business/marketing-promotions">The Daisy's marketing and promotions features</a> to see how the platform turns these ideas into automated workflows. View <a href="/en/pricing">pricing plans</a> to find the right fit for your salon.</p>
+<p>Explore <a href="/en/features/business/marketing-promotions">The Daisy's marketing and promotions features</a> to see how the platform turns these ideas into automated workflows. View <a href="/en/pricing/business">pricing plans</a> to find the right fit for your salon.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -270,7 +270,7 @@ const salonSocialMediaMarketingArticle: LocalBlogPost = {
 
 <h2>How The Daisy Supports Your Social Media Strategy</h2>
 <p>The Daisy connects your social media efforts to your booking flow. A shareable booking link works in any bio or post. Automated follow-ups convert social media enquiries into confirmed appointments. And campaign analytics show you which platforms are driving the most bookings.</p>
-<p>Explore <a href="/en/features/business/marketing-promotions">The Daisy's marketing features</a> to see how the platform bridges the gap between social media engagement and actual revenue. Check <a href="/en/pricing">pricing plans</a> for your salon size.</p>
+<p>Explore <a href="/en/features/business/marketing-promotions">The Daisy's marketing features</a> to see how the platform bridges the gap between social media engagement and actual revenue. Check <a href="/en/pricing/business">pricing plans</a> for your salon size.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -431,7 +431,7 @@ const salonEmailMarketingArticle: LocalBlogPost = {
 
 <h2>How The Daisy Automates Salon Email Marketing</h2>
 <p>The Daisy's communication tools integrate email marketing directly into your salon management workflow. Client data from bookings automatically feeds segmentation, triggers automated sequences based on visit history, and tracks which emails generate appointments - all from one dashboard.</p>
-<p>Explore <a href="/en/features/business/communication-tools">The Daisy's communication features</a> to see how automated email campaigns work alongside SMS, push notifications, and in-app messaging. See <a href="/en/pricing">pricing</a> for plans that include marketing automation.</p>
+<p>Explore <a href="/en/features/business/communication-tools">The Daisy's communication features</a> to see how automated email campaigns work alongside SMS, push notifications, and in-app messaging. See <a href="/en/pricing/business">pricing</a> for plans that include marketing automation.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1124,7 +1124,7 @@ const salonSeoLocalSearchArticle: LocalBlogPost = {
 
 <h2>How The Daisy Supports Your Local SEO</h2>
 <p>The Daisy's booking platform provides a fast, mobile-optimised booking experience that converts search visitors into clients. Direct booking links for your Google Business Profile, review request automation, and analytics tracking create a seamless connection between your SEO efforts and actual bookings.</p>
-<p>Explore <a href="/en/features/business/marketing-promotions">The Daisy's marketing tools</a> and see how they integrate with your local SEO strategy. View <a href="/en/pricing">pricing plans</a> for salon marketing features.</p>
+<p>Explore <a href="/en/features/business/marketing-promotions">The Daisy's marketing tools</a> and see how they integrate with your local SEO strategy. View <a href="/en/pricing/business">pricing plans</a> for salon marketing features.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1445,7 +1445,7 @@ const salonMarketingIdeas2026ArticleAr: LocalBlogPost = {
 
 <h2>كيف تدعم ديزي إستراتيجيتك التسويقية</h2>
 <p> إن تنفيذ 15 استراتيجية تسويقية يدويًا من شأنه أن يطغى على معظم فرق الصالون. يدمج ديزي الأدوات التي تحتاجها في منصة واحدة: تتبع الإحالة الآلي، وولاء الكاشباك المدمج، وأدوات حملات البريد الإلكتروني والرسائل النصية القصيرة، والحجز عبر الإنترنت، وإدارة المراجعة، ولوحات المعلومات التحليلية. بدلاً من استخدام خمس أدوات منفصلة، يقوم فريقك بتنفيذ الحملات من واجهة واحدة.</p>
-<p> استكشف <a href="/ar/features/business/marketing-promotions"> ميزات التسويق والعروض الترويجية الخاصة بـ ديزي</a> لترى كيف يحول النظام الأساسي هذه الأفكار إلى سير عمل آلي. اعرض <a href="/ar/pricing">خطط الأسعار</a> للعثور على التصميم المناسب لصالونك.</p>
+<p> استكشف <a href="/ar/features/business/marketing-promotions"> ميزات التسويق والعروض الترويجية الخاصة بـ ديزي</a> لترى كيف يحول النظام الأساسي هذه الأفكار إلى سير عمل آلي. اعرض <a href="/ar/pricing/business">خطط الأسعار</a> للعثور على التصميم المناسب لصالونك.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1602,7 +1602,7 @@ const salonSocialMediaMarketingArticleAr: LocalBlogPost = {
 
 <h2>كيف تدعم شركة ديزي إستراتيجية وسائل التواصل الاجتماعي الخاصة بك</h2>
 <p> يربط ديزي جهودك على وسائل التواصل الاجتماعي بتدفق الحجز الخاص بك. يعمل رابط الحجز القابل للمشاركة في أي سيرة ذاتية أو منشور. تقوم المتابعات الآلية بتحويل استفسارات وسائل التواصل الاجتماعي إلى مواعيد مؤكدة. وتظهر لك تحليلات الحملة المنصات التي تجذب أكبر عدد من الحجوزات.</p>
-<p> استكشف <a href="/ar/features/business/marketing-promotions"> ميزات ديزي التسويقية</a> لترى كيف تعمل المنصة على سد الفجوة بين التفاعل عبر وسائل التواصل الاجتماعي والإيرادات الفعلية. تحقق من <a href="/ar/pricing">خطط التسعير</a> لمعرفة حجم صالونك.</p>
+<p> استكشف <a href="/ar/features/business/marketing-promotions"> ميزات ديزي التسويقية</a> لترى كيف تعمل المنصة على سد الفجوة بين التفاعل عبر وسائل التواصل الاجتماعي والإيرادات الفعلية. تحقق من <a href="/ar/pricing/business">خطط التسعير</a> لمعرفة حجم صالونك.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1756,7 +1756,7 @@ const salonEmailMarketingArticleAr: LocalBlogPost = {
 
 <h2>كيف تقوم شركة ديزي بأتمتة التسويق عبر البريد الإلكتروني للصالونات</h2>
 <p> تقوم أدوات الاتصال الخاصة بـ ديزي بدمج التسويق عبر البريد الإلكتروني مباشرة في سير عمل إدارة الصالون الخاص بك. تعمل بيانات العميل من الحجوزات على تغذية التجزئة تلقائيًا، وتشغيل تسلسلات تلقائية استنادًا إلى سجل الزيارة، وتتبع رسائل البريد الإلكتروني التي تنشئ المواعيد - كل ذلك من لوحة تحكم واحدة.</p>
-<p> استكشف <a href="/ar/features/business/communication-tools"> ميزات الاتصال في ديزي</a> لمعرفة كيفية عمل حملات البريد الإلكتروني الآلية جنبًا إلى جنب مع الرسائل القصيرة والإشعارات والرسائل داخل التطبيق. راجع <a href="/ar/pricing">pricing</a> للتعرف على الخطط التي تتضمن أتمتة التسويق.</p>
+<p> استكشف <a href="/ar/features/business/communication-tools"> ميزات الاتصال في ديزي</a> لمعرفة كيفية عمل حملات البريد الإلكتروني الآلية جنبًا إلى جنب مع الرسائل القصيرة والإشعارات والرسائل داخل التطبيق. راجع <a href="/ar/pricing/business">pricing</a> للتعرف على الخطط التي تتضمن أتمتة التسويق.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -2423,7 +2423,7 @@ const salonSeoLocalSearchArticleAr: LocalBlogPost = {
 
 <h2>كيف تدعم ديزي تحسين محركات البحث المحلية لديك</h2>
 <p> توفر منصة الحجز الخاصة بـ ديزي تجربة حجز سريعة ومُحسَّنة للجوال تعمل على تحويل زوار البحث إلى عملاء. تعمل روابط الحجز المباشرة لملفك التجاري على جوجل، وأتمتة طلبات المراجعة، وتتبع التحليلات على إنشاء اتصال سلس بين جهود تحسين محركات البحث (SEO) والحجوزات الفعلية.</p>
-<p> استكشف <a href="/ar/features/business/marketing-promotions"> أدوات التسويق الخاصة بشركة ديزي</a> وشاهد كيف تتكامل مع إستراتيجية تحسين محركات البحث المحلية لديك. عرض <a href="/ar/pricing">خطط التسعير</a> للتعرف على ميزات تسويق الصالون.</p>
+<p> استكشف <a href="/ar/features/business/marketing-promotions"> أدوات التسويق الخاصة بشركة ديزي</a> وشاهد كيف تتكامل مع إستراتيجية تحسين محركات البحث المحلية لديك. عرض <a href="/ar/pricing/business">خطط التسعير</a> للتعرف على ميزات تسويق الصالون.</p>
 
 <h2>الأسئلة الشائعة</h2>
 

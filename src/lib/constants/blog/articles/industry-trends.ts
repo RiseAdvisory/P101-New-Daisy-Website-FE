@@ -117,7 +117,7 @@ const beautyIndustryStatistics2026Article: LocalBlogPost = {
 <li><strong>Your team is your scarcest resource.</strong> Invest in tools that reduce burnout, improve scheduling flexibility, and make your salon a more attractive place to work. The cost of losing and replacing a skilled stylist exceeds $15,000 in most markets.</li>
 <li><strong>Data-driven decisions separate winners from survivors.</strong> Use <a href="/en/features/business/analytics-reports">analytics and reporting tools</a> to track performance weekly, not monthly. The businesses that outperform the industry averages cited in this article are universally the ones that measure, adjust, and optimise consistently.</li>
 </ol>
-<p>Explore <a href="/en/pricing">The Daisy's pricing plans</a> to see how a modern platform can help you capitalise on these industry trends.</p>
+<p>Explore <a href="/en/pricing/business">The Daisy's pricing plans</a> to see how a modern platform can help you capitalise on these industry trends.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -272,7 +272,7 @@ const aiBeautyIndustryApplicationsArticle: LocalBlogPost = {
 <li><strong>If client retention is declining:</strong> Deploy automated client communication with AI-powered personalisation. Rebooking prompts and re-engagement messages are proven retention tools.</li>
 <li><strong>If you do not know your numbers:</strong> Start with an AI-powered analytics platform. You cannot improve what you do not measure, and AI analytics reveal insights you would never find in manual spreadsheets.</li>
 </ol>
-<p>The Daisy integrates all of these AI applications into a <a href="/en/features/business/salon-management-software">single platform</a>, so you can start with one and activate others as your confidence grows. Explore <a href="/en/pricing">pricing options</a> to find the right plan for your business.</p>
+<p>The Daisy integrates all of these AI applications into a <a href="/en/features/business/salon-management-software">single platform</a>, so you can start with one and activate others as your confidence grows. Explore <a href="/en/pricing/business">pricing options</a> to find the right plan for your business.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -432,7 +432,7 @@ const sustainabilityBeautySalonsArticle: LocalBlogPost = {
 <li><strong>Total annual savings: $3,400&ndash;$8,200</strong></li>
 </ul>
 <p>These savings are conservative and do not account for the revenue uplift from attracting eco-conscious clients. Businesses that combine sustainability practices with effective <a href="/en/features/business/salon-management-software">salon management platforms</a> see the benefits compound: reduced paper use from digital systems, optimised scheduling that reduces wasted energy from idle equipment, and data-driven insights that minimise overstock and product waste.</p>
-<p>See <a href="/en/pricing">The Daisy's pricing</a> to explore how a digital-first platform supports your sustainability goals.</p>
+<p>See <a href="/en/pricing/business">The Daisy's pricing</a> to explore how a digital-first platform supports your sustainability goals.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -580,7 +580,7 @@ const beautyMarketplacesImpactArticle: LocalBlogPost = {
 <h2>The Platform Ecosystem Alternative</h2>
 <p>Some platforms combine marketplace visibility with full business management, creating an integrated ecosystem where marketplace acquisition feeds directly into your own booking system, CRM, and marketing tools. This model eliminates the tension between marketplace-sourced clients and direct clients because the same platform handles both.</p>
 <p><a href="/en/features/business/salon-management-software">The Daisy</a> operates on this model. Clients who discover your salon through The Daisy marketplace book directly into your management system. Their data, preferences, and booking history are immediately available for personalised follow-up, loyalty programmes, and targeted marketing. There is no "leakage" back to a separate marketplace where competitors are visible.</p>
-<p>This integrated approach solves the core marketplace dilemma: you get the acquisition benefit without the ongoing commission burden on repeat visits, and without the risk of client loyalty belonging to a third party. See <a href="/en/pricing">pricing</a> for specifics on how this works.</p>
+<p>This integrated approach solves the core marketplace dilemma: you get the acquisition benefit without the ongoing commission burden on repeat visits, and without the risk of client loyalty belonging to a third party. See <a href="/en/pricing/business">pricing</a> for specifics on how this works.</p>
 
 <h2>The Future of Beauty Marketplaces</h2>
 <p>Several trends will shape how marketplaces evolve over the next 2&ndash;3 years:</p>
@@ -734,7 +734,7 @@ const wellnessBeautyIntegrationArticle: LocalBlogPost = {
 <li><strong>Month 3&ndash;4 - Pilot with existing clients.</strong> Offer complimentary wellness add-ons to 10&ndash;15 regular clients. Gather feedback on the experience, willingness to pay, and service flow. Use this data to set pricing and refine your approach.</li>
 <li><strong>Month 4 onward - Launch and market.</strong> Add wellness services to your menu, update your profile on your salon's <a href="/en/features/professional/booking-calendar">booking platform</a>, and communicate the new offerings through social media and client conversations. Track revenue per service to measure impact.</li>
 </ol>
-<p>Manage your schedule and client communications efficiently through a platform that supports flexible service menus. Explore <a href="/en/pricing">The Daisy's plans</a> to see how integrated tools help you grow your wellness-enhanced practice.</p>
+<p>Manage your schedule and client communications efficiently through a platform that supports flexible service menus. Explore <a href="/en/pricing/business">The Daisy's plans</a> to see how integrated tools help you grow your wellness-enhanced practice.</p>
 
 <h2>Challenges and How to Overcome Them</h2>
 <ul>
@@ -911,7 +911,7 @@ const beautyIndustryPredictions2027Article: LocalBlogPost = {
 <li><strong>Invest in your team.</strong> Support wellness certification, technology training, and professional development. Your team's skill breadth is a competitive asset.</li>
 <li><strong>Start collecting and using data.</strong> Every interaction with a client is a data point. Ensure your systems capture, organise, and activate this data for personalisation and analytics.</li>
 </ol>
-<p>See <a href="/en/pricing">The Daisy's pricing</a> to understand the investment required to position your business ahead of these shifts.</p>
+<p>See <a href="/en/pricing/business">The Daisy's pricing</a> to understand the investment required to position your business ahead of these shifts.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1074,7 +1074,7 @@ const beautyIndustryStatistics2026ArticleAr: LocalBlogPost = {
 <li><strong>فريقك هو أندر الموارد لديك.</strong> استثمر في الأدوات التي تقلل من الإرهاق، وتحسن مرونة الجدولة، وتجعل صالونك مكانًا أكثر جاذبية للعمل. تكلفة فقدان واستبدال مصفف شعر ماهر تتجاوز 15000 دولار في معظم الأسواق.</li>
 <li><strong>القرارات المستندة إلى البيانات تفصل بين الفائزين والناجين.</strong> استخدم <a href="/ar/features/business/analytics-reports">أدوات التحليل وإعداد التقارير</a> لتتبع الأداء أسبوعيًا، وليس شهريًا. الشركات التي تتفوق في الأداء على متوسطات الصناعة المذكورة في هذه المقالة هي عالميًا تلك التي تقوم بالقياس والتعديل والتحسين بشكل متسق.</li>
 </ol>
-<p>استكشف <a href="/ar/pricing">خطط تسعير ديزي</a> لترى كيف يمكن للمنصة الحديثة أن تساعدك في الاستفادة من اتجاهات الصناعة هذه.</p>
+<p>استكشف <a href="/ar/pricing/business">خطط تسعير ديزي</a> لترى كيف يمكن للمنصة الحديثة أن تساعدك في الاستفادة من اتجاهات الصناعة هذه.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1176,7 +1176,7 @@ const aiBeautyIndustryApplicationsArticleAr: LocalBlogPost = {
 <li><strong>إذا كان الاحتفاظ بالعملاء آخذًا في الانخفاض:</strong> فعّل التواصل الآلي مع العميل من خلال التخصيص المدعوم بالذكاء الاصطناعي. إن تذكيرات إعادة الحجز ورسائل إعادة المشاركة أدوات احتفاظ مثبتة.</li>
 <li><strong>إذا كنت لا تعرف أرقامك:</strong> ابدأ بمنصة تحليلية مدعومة بالذكاء الاصطناعي. لا يمكنك تحسين ما لا يمكنك قياسه، وتكشف تحليلات الذكاء الاصطناعي عن رؤى لن تجدها أبدًا في جداول البيانات اليدوية.</li>
 </ol>
-<p>يدمج ديزي كل تطبيقات الذكاء الاصطناعي هذه في <a href="/ar/features/business/salon-management-software">منصة واحدة</a>، حتى تتمكن من البدء بأحدها وتفعيل التطبيقات الأخرى مع نمو ثقتك بنفسك. استكشف <a href="/ar/pricing">خيارات التسعير</a> للعثور على الخطة المناسبة لنشاطك التجاري.</p>
+<p>يدمج ديزي كل تطبيقات الذكاء الاصطناعي هذه في <a href="/ar/features/business/salon-management-software">منصة واحدة</a>، حتى تتمكن من البدء بأحدها وتفعيل التطبيقات الأخرى مع نمو ثقتك بنفسك. استكشف <a href="/ar/pricing/business">خيارات التسعير</a> للعثور على الخطة المناسبة لنشاطك التجاري.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1283,7 +1283,7 @@ const sustainabilityBeautySalonsArticleAr: LocalBlogPost = {
 <li><strong>إجمالي المدخرات السنوية: 3400 دولار - 8200 دولار</strong></li>
 </ul>
 <p> تعتبر هذه المدخرات متحفظة ولا تأخذ في الاعتبار زيادة الإيرادات الناتجة عن جذب العملاء المهتمين بالبيئة. الشركات التي تجمع بين ممارسات الاستدامة و<a href="/ar/features/business/salon-management-software">منصات إدارة الصالونات الفعالة</a> ترى الفوائد المركبة: تقليل استخدام الورق من الأنظمة الرقمية، والجدولة المحسنة التي تقلل من إهدار الطاقة الناتجة عن المعدات الخاملة، والرؤى المستندة إلى البيانات التي تقلل من المخزون الزائد وهدر المنتج.</p>
-<p>راجع <a href="/ar/pricing">سعر ديزي</a> لاستكشاف كيف تدعم المنصة الرقمية أولاً أهداف الاستدامة الخاصة بك.</p>
+<p>راجع <a href="/ar/pricing/business">سعر ديزي</a> لاستكشاف كيف تدعم المنصة الرقمية أولاً أهداف الاستدامة الخاصة بك.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1379,7 +1379,7 @@ const beautyMarketplacesImpactArticleAr: LocalBlogPost = {
 <h2>النظام البيئي البديل للمنصة</h2>
 <p> تجمع بعض الأنظمة الأساسية بين رؤية السوق والإدارة الكاملة للأعمال، مما يؤدي إلى إنشاء نظام بيئي متكامل حيث يتغذى الاستحواذ على السوق مباشرة في نظام الحجز الخاص بك وإدارة علاقات العملاء وأدوات التسويق. يزيل هذا النموذج التوتر بين العملاء من مصادر السوق والعملاء المباشرين لأن نفس النظام الأساسي يتعامل مع كليهما.</p>
 <p><a href="/ar/features/business/salon-management-software">يعمل ديزي</a> على هذا الطراز. العملاء الذين يكتشفون صالونك من خلال سوق ديزي يحجزون مباشرة في نظام الإدارة الخاص بك. تتوفر بياناتهم وتفضيلاتهم وسجل الحجز على الفور للمتابعة الشخصية وبرامج الولاء والتسويق المستهدف. لا يوجد "تسرب" مرة أخرى إلى سوق منفصل حيث يكون المنافسون مرئيين.</p>
-<p> يحل هذا النهج المتكامل معضلة السوق الأساسية: يمكنك الحصول على ميزة الاستحواذ دون تحمل عبء العمولة المستمر على الزيارات المتكررة، ودون المخاطرة بانتماء ولاء العميل إلى طرف ثالث. راجع <a href="/ar/pricing">pricing</a> للحصول على تفاصيل حول كيفية عمل ذلك.</p>
+<p> يحل هذا النهج المتكامل معضلة السوق الأساسية: يمكنك الحصول على ميزة الاستحواذ دون تحمل عبء العمولة المستمر على الزيارات المتكررة، ودون المخاطرة بانتماء ولاء العميل إلى طرف ثالث. راجع <a href="/ar/pricing/business">pricing</a> للحصول على تفاصيل حول كيفية عمل ذلك.</p>
 
 <h2>مستقبل أسواق التجميل</h2>
 <p>ستشكل العديد من الاتجاهات كيفية تطور الأسواق على مدار السنتين أو الثلاث سنوات القادمة:</p>
@@ -1481,7 +1481,7 @@ const wellnessBeautyIntegrationArticleAr: LocalBlogPost = {
 <li><strong>الشهر 3-4 - تجربة تجريبية مع العملاء الحاليين.</strong> تقديم إضافات صحية مجانية لعدد 10-15 عميلًا منتظمًا. اجمع التعليقات حول الخبرة والاستعداد للدفع وتدفق الخدمة. استخدم هذه البيانات لتعيين الأسعار وتحسين النهج الذي تتبعه.</li>
 <li><strong>الشهر الرابع فصاعدًا - الإطلاق والتسويق.</strong> أضف خدمات الصحة إلى القائمة الخاصة بك، وقم بتحديث ملفك الشخصي على <a href="/ar/features/professional/booking-calendar">منصة الحجز</a> الخاصة بصالونك، وشارك العروض الجديدة من خلال وسائل التواصل الاجتماعي ومحادثات العملاء. تتبع الإيرادات لكل خدمة لقياس التأثير.</li>
 </ol>
-<p> قم بإدارة جدولك الزمني واتصالات العملاء بكفاءة من خلال منصة تدعم قوائم الخدمة المرنة. استكشف <a href="/ar/pricing">خطط ديزي</a> لمعرفة كيف تساعدك الأدوات المتكاملة في تنمية ممارساتك المعززة للصحة.</p>
+<p> قم بإدارة جدولك الزمني واتصالات العملاء بكفاءة من خلال منصة تدعم قوائم الخدمة المرنة. استكشف <a href="/ar/pricing/business">خطط ديزي</a> لمعرفة كيف تساعدك الأدوات المتكاملة في تنمية ممارساتك المعززة للصحة.</p>
 
 <h2>التحديات وكيفية التغلب عليها</h2>
 <ul>
@@ -1605,7 +1605,7 @@ const beautyIndustryPredictions2027ArticleAr: LocalBlogPost = {
 <li><strong>استثمر في فريقك.</strong> دعم شهادة الصحة والتدريب التكنولوجي والتطوير المهني. يعد اتساع مهارات فريقك أحد الأصول التنافسية.</li>
 <li><strong>ابدأ في جمع البيانات واستخدامها.</strong> كل تفاعل مع العميل هو نقطة بيانات. تأكد من قيام أنظمتك بالتقاط هذه البيانات وتنظيمها وتنشيطها للتخصيص والتحليلات.</li>
 </ol>
-<p>راجع <a href="/ar/pricing">تسعير ديزي</a> لفهم الاستثمار المطلوب لوضع عملك في صدارة هذه التحولات.</p>
+<p>راجع <a href="/ar/pricing/business">تسعير ديزي</a> لفهم الاستثمار المطلوب لوضع عملك في صدارة هذه التحولات.</p>
 
 <h2>الأسئلة الشائعة</h2>
 

@@ -195,7 +195,7 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
 <li><strong>Scalability:</strong> If you plan to expand, your platform should support <a href="/en/features/business/business-growth">multi-location management</a> from a single dashboard.</li>
 <li><strong>Modern client experience:</strong> Your clients expect the same quality of digital experience they get from ride-sharing and food delivery apps. If your booking process feels dated, you lose clients before they ever visit.</li>
 </ul>
-<p>Explore <a href="/en/pricing">The Daisy's pricing plans</a> to see how switching can actually reduce your total software costs while gaining significantly more capability.</p>
+<p>Explore <a href="/en/pricing/business">The Daisy's pricing plans</a> to see how switching can actually reduce your total software costs while gaining significantly more capability.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -408,7 +408,7 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
 <li><strong>Automation:</strong> Traditional software automates simple reminders. Modern platforms automate the entire communication lifecycle from first inquiry to post-visit follow-up.</li>
 <li><strong>Growth levers:</strong> Traditional software has no growth features. Modern platforms include tools specifically designed to increase revenue, retention, and client acquisition.</li>
 </ul>
-<p>See how <a href="/en/pricing">The Daisy's plans</a> compare to what you are currently paying for less capability.</p>
+<p>See how <a href="/en/pricing/business">The Daisy's plans</a> compare to what you are currently paying for less capability.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -631,7 +631,7 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
 <p>A well-planned switch (see our <a href="/en/resources/blog/business/salon-software-switching-checklist-migration">30-day migration checklist</a>) involves zero downtime and minimal disruption. The temporary learning curve is measured in days, not weeks. Compare that to the ongoing cost of staying on a platform that limits your growth for months or years.</p>
 
 <h3>"What if the new platform doesn't deliver?"</h3>
-<p>Look for platforms with transparent pricing, no long-term contracts, and clear performance metrics. <a href="/en/pricing">The Daisy</a> offers flexible plans that you can evaluate month-to-month. Track the ROI metrics outlined in this guide and you will know within 60 days whether the platform is delivering.</p>
+<p>Look for platforms with transparent pricing, no long-term contracts, and clear performance metrics. <a href="/en/pricing/business">The Daisy</a> offers flexible plans that you can evaluate month-to-month. Track the ROI metrics outlined in this guide and you will know within 60 days whether the platform is delivering.</p>
 
 <h2>How to Build Your Business Case</h2>
 <p>If you need to justify the switch to a business partner, investor, or your own analytical side, follow this structure:</p>
@@ -886,7 +886,7 @@ const salonSwitchingChecklistArticleAr: LocalBlogPost = {
 <li><strong>قابلية التوسع:</strong> إذا كنت تخطط للتوسع، يجب أن تدعم منصتك <a href="/ar/features/business/business-growth">إدارة المواقع المتعددة</a> من لوحة تحكم واحدة.</li>
 <li><strong>تجربة عميل حديثة:</strong> يتوقع عملاؤك نفس جودة التجربة الرقمية التي يحصلون عليها من تطبيقات النقل وتوصيل الطعام. إذا بدت عملية حجزك قديمة، ستفقد العملاء قبل أن يزوروك.</li>
 </ul>
-<p>استكشف <a href="/ar/pricing">خطط أسعار ديزي</a> لترى كيف يمكن للتبديل تقليل تكاليف البرامج الإجمالية مع اكتساب قدرات أكبر بكثير.</p>
+<p>استكشف <a href="/ar/pricing/business">خطط أسعار ديزي</a> لترى كيف يمكن للتبديل تقليل تكاليف البرامج الإجمالية مع اكتساب قدرات أكبر بكثير.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1097,7 +1097,7 @@ const firstMonthNewPlatformArticleAr: LocalBlogPost = {
 <li><strong>الأتمتة:</strong> البرامج التقليدية تؤتمت تذكيرات بسيطة. المنصات الحديثة تؤتمت دورة التواصل بأكملها من الاستفسار الأول إلى المتابعة بعد الزيارة.</li>
 <li><strong>رافعات النمو:</strong> البرامج التقليدية ليس لديها ميزات نمو. المنصات الحديثة تتضمن أدوات مصممة خصيصًا لزيادة الإيرادات والاحتفاظ واستقطاب العملاء.</li>
 </ul>
-<p>انظر كيف تقارن <a href="/ar/pricing">خطط ديزي</a> بما تدفعه حاليًا مقابل قدرات أقل.</p>
+<p>انظر كيف تقارن <a href="/ar/pricing/business">خطط ديزي</a> بما تدفعه حاليًا مقابل قدرات أقل.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1318,7 +1318,7 @@ const calculateRoiSwitchingArticleAr: LocalBlogPost = {
 <p>تبديل مخطط جيدًا (راجع <a href="/ar/resources/blog/business/salon-software-switching-checklist-migration">قائمة التحقق للانتقال خلال 30 يومًا</a>) لا يتضمن أي توقف وحد أدنى من الاضطراب. منحنى التعلم المؤقت يُقاس بالأيام وليس الأسابيع. قارن ذلك بالتكلفة المستمرة للبقاء على منصة تحد نموك لأشهر أو سنوات.</p>
 
 <h3>"ماذا لو لم تحقق المنصة الجديدة النتائج؟"</h3>
-<p>ابحث عن منصات بتسعير شفاف وبدون عقود طويلة الأمد ومقاييس أداء واضحة. <a href="/ar/pricing">ديزي</a> توفر خططًا مرنة يمكنك تقييمها شهريًا. تتبع مقاييس العائد على الاستثمار المذكورة في هذا الدليل وستعرف خلال 60 يومًا ما إذا كانت المنصة تحقق النتائج.</p>
+<p>ابحث عن منصات بتسعير شفاف وبدون عقود طويلة الأمد ومقاييس أداء واضحة. <a href="/ar/pricing/business">ديزي</a> توفر خططًا مرنة يمكنك تقييمها شهريًا. تتبع مقاييس العائد على الاستثمار المذكورة في هذا الدليل وستعرف خلال 60 يومًا ما إذا كانت المنصة تحقق النتائج.</p>
 
 <h2>كيفية بناء حالة عملك</h2>
 <p>إذا كنت بحاجة لتبرير التبديل لشريك تجاري أو مستثمر أو جانبك التحليلي، اتبع هذا الهيكل:</p>

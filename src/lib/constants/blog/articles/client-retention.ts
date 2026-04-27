@@ -1085,7 +1085,7 @@ const independentClientLoyaltyArticle: LocalBlogPost = {
 <li><strong>Automated communication sequences:</strong> Post-visit thank-yous, rebooking reminders, and birthday messages sent automatically while feeling personal.</li>
 <li><strong>Earnings and schedule tracking:</strong> Visibility into your revenue, client frequency, and schedule utilisation helps you make data-informed decisions about pricing and availability.</li>
 </ul>
-<p><a href="/en/features/professional/booking-management">The Daisy for Professionals</a> is built specifically for independent beauty professionals, providing all of these tools in a single platform. It gives you the operational infrastructure of a professional salon while preserving the personal, independent experience your clients love. Explore the full feature set and see how it supports your business growth alongside our <a href="/en/pricing">pricing plans</a>.</p>
+<p><a href="/en/features/professional/booking-management">The Daisy for Professionals</a> is built specifically for independent beauty professionals, providing all of these tools in a single platform. It gives you the operational infrastructure of a professional salon while preserving the personal, independent experience your clients love. Explore the full feature set and see how it supports your business growth alongside our <a href="/en/pricing/business">pricing plans</a>.</p>
 
 <h2>Measuring Your Loyalty Success</h2>
 <p>Track these metrics monthly to gauge the health of your client relationships:</p>
@@ -2191,7 +2191,7 @@ const independentClientLoyaltyArticleAr: LocalBlogPost = {
 <li><strong>تسلسلات الاتصال الآلي:</strong> رسائل الشكر بعد الزيارة، وتذكيرات إعادة الحجز، ورسائل عيد الميلاد التي يتم إرسالها تلقائيًا مع الشعور بالشخصية.</li>
 <li><strong>تتبع الأرباح والجدول الزمني:</strong> تساعدك رؤية إيراداتك وتكرار زيارات العملاء واستغلال الجدول على اتخاذ قرارات قائمة على البيانات بشأن التسعير والتوفر.</li>
 </ul>
-<p><a href="/ar/features/professional/booking-management">تم تصميم ديزي للمحترفين</a> خصيصًا لمحترفي التجميل المستقلين، حيث توفر كل هذه الأدوات في منصة واحدة. فهي تمنحك البنية التحتية التشغيلية لصالون احترافي مع الحفاظ على التجربة الشخصية المستقلة التي يحبها عملاؤك. استكشف مجموعة الميزات الكاملة وشاهد كيف تدعم نمو أعمالك جنبًا إلى جنب مع <a href="/ar/pricing">خطط التسعير</a>.</p>
+<p><a href="/ar/features/professional/booking-management">تم تصميم ديزي للمحترفين</a> خصيصًا لمحترفي التجميل المستقلين، حيث توفر كل هذه الأدوات في منصة واحدة. فهي تمنحك البنية التحتية التشغيلية لصالون احترافي مع الحفاظ على التجربة الشخصية المستقلة التي يحبها عملاؤك. استكشف مجموعة الميزات الكاملة وشاهد كيف تدعم نمو أعمالك جنبًا إلى جنب مع <a href="/ar/pricing/business">خطط التسعير</a>.</p>
 
 <h2>قياس نجاح الولاء</h2>
 <p>تتبع هذه المقاييس شهريًا لقياس مدى صحة علاقاتك مع العملاء:</p>

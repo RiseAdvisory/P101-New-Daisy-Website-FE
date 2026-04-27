@@ -155,7 +155,7 @@ const salonPosBuyersGuideArticle: LocalBlogPost = {
 <li><strong>Reliability (weight: 3):</strong> Uptime history, offline capability, customer support responsiveness?</li>
 <li><strong>Scalability (weight: 2):</strong> Can the system grow with you from one location to multiple branches?</li>
 </ul>
-<p>Any system scoring below 3.5 weighted average should be eliminated from consideration. The Daisy&rsquo;s <a href="/en/pricing">salon management plans</a> consistently score highest on integration depth because payment processing is native to the platform rather than bolted on.</p>
+<p>Any system scoring below 3.5 weighted average should be eliminated from consideration. The Daisy&rsquo;s <a href="/en/pricing/business">salon management plans</a> consistently score highest on integration depth because payment processing is native to the platform rather than bolted on.</p>
 
 <h2>Single-Location vs Multi-Branch Considerations</h2>
 
@@ -749,7 +749,7 @@ const salonInvoicingArticle: LocalBlogPost = {
 <li><strong>Searchable</strong> by client name, date, amount, or status.</li>
 <li><strong>Exportable</strong> for your accountant in CSV or PDF format.</li>
 </ul>
-<p>Platforms like The Daisy maintain a complete invoice history with automatic status tracking, eliminating the need for separate bookkeeping spreadsheets. See <a href="/en/pricing">pricing plans</a> for details on financial management features.</p>
+<p>Platforms like The Daisy maintain a complete invoice history with automatic status tracking, eliminating the need for separate bookkeeping spreadsheets. See <a href="/en/pricing/business">pricing plans</a> for details on financial management features.</p>
 
 <h2>Handling Refunds and Credit Notes</h2>
 <p>When you need to refund a payment or provide credit for a future visit:</p>
@@ -1311,7 +1311,7 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
 <li>Do you charge commissions on bookings (separate from processing fees)?</li>
 <li>Can you provide a sample monthly statement so I can calculate the effective rate?</li>
 </ol>
-<p>Any processor that cannot answer these questions clearly and in writing should be eliminated from consideration. Visit The Daisy&rsquo;s <a href="/en/pricing">pricing page</a> for a transparent breakdown of processing costs.</p>
+<p>Any processor that cannot answer these questions clearly and in writing should be eliminated from consideration. Visit The Daisy&rsquo;s <a href="/en/pricing/business">pricing page</a> for a transparent breakdown of processing costs.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1509,7 +1509,7 @@ const salonPosBuyersGuideArticleAr: LocalBlogPost = {
 <li><strong>الموثوقية (الوزن: 3):</strong> سجل وقت التشغيل، والقدرة على عدم الاتصال بالإنترنت، واستجابة دعم العملاء؟</li>
 <li><strong>قابلية التوسع (الوزن: 2):</strong> هل يمكن للنظام أن ينمو معك من موقع واحد إلى فروع متعددة؟</li>
 </ul>
-<p> يجب حذف أي نظام يسجل أقل من 3.5 من المتوسط المرجح من الاعتبار. تسجل خطط <a href="/ar/pricing">ديزي</a> لإدارة الصالون أعلى المستويات باستمرار في عمق التكامل لأن معالجة الدفع أصلية داخل المنصة وليست إضافة مثبتة.</p>
+<p> يجب حذف أي نظام يسجل أقل من 3.5 من المتوسط المرجح من الاعتبار. تسجل خطط <a href="/ar/pricing/business">ديزي</a> لإدارة الصالون أعلى المستويات باستمرار في عمق التكامل لأن معالجة الدفع أصلية داخل المنصة وليست إضافة مثبتة.</p>
 
 <h2> اعتبارات الموقع الواحد مقابل اعتبارات الفروع المتعددة</h2>
 
@@ -1945,7 +1945,7 @@ const salonInvoicingArticleAr: LocalBlogPost = {
 <li><strong>قابل للبحث</strong> حسب اسم العميل أو التاريخ أو المبلغ أو الحالة.</li>
 <li><strong>قابل للتصدير</strong> للمحاسب الخاص بك بتنسيق CSV أو PDF.</li>
 </ul>
-<p> تحتفظ منصات مثل ديزي بسجل كامل للفواتير مع تتبع الحالة تلقائيًا، مما يلغي الحاجة إلى جداول بيانات منفصلة لمسك الدفاتر. راجع <a href="/ar/pricing">خطط التسعير</a> للحصول على تفاصيل حول ميزات الإدارة المالية.</p>
+<p> تحتفظ منصات مثل ديزي بسجل كامل للفواتير مع تتبع الحالة تلقائيًا، مما يلغي الحاجة إلى جداول بيانات منفصلة لمسك الدفاتر. راجع <a href="/ar/pricing/business">خطط التسعير</a> للحصول على تفاصيل حول ميزات الإدارة المالية.</p>
 
 <h2>التعامل مع المبالغ المستردة وإشعارات الائتمان</h2>
 <p>عندما تحتاج إلى استرداد دفعة أو تقديم رصيد لزيارة مستقبلية:</p>
@@ -2151,7 +2151,7 @@ const paymentProcessingFeesArticleAr: LocalBlogPost = {
 <li>هل يتم تحصيل عمولات على الحجوزات (منفصلة عن رسوم المعالجة)؟</li>
 <li>هل يمكنك تقديم نموذج لكشف الحساب الشهري حتى أتمكن من حساب المعدل الفعلي؟</li>
 </ol>
-<p>أي معالج لا يستطيع الإجابة على هذه الأسئلة بشكل واضح وكتابي يجب استبعاده من الاعتبار. قم بزيارة <a href="/ar/pricing">صفحة التسعير</a> لشركة ديزي للحصول على تفاصيل شفافة لتكاليف المعالجة.</p>
+<p>أي معالج لا يستطيع الإجابة على هذه الأسئلة بشكل واضح وكتابي يجب استبعاده من الاعتبار. قم بزيارة <a href="/ar/pricing/business">صفحة التسعير</a> لشركة ديزي للحصول على تفاصيل شفافة لتكاليف المعالجة.</p>
 
 <h2>الأسئلة الشائعة</h2>
 

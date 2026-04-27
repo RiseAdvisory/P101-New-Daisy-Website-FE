@@ -1055,7 +1055,7 @@ const recurringAppointmentArticle: LocalBlogPost = {
 <li><strong>Reduced front desk workload</strong> from fewer rebooking calls and messages</li>
 <li><strong>Higher average lifetime value per client</strong> because retained clients spend more over time</li>
 </ul>
-<p>Explore <a href="/en/pricing">The Daisy's pricing plans</a> for a platform with built-in recurring scheduling, automated reminders, and intelligent calendar management.</p>
+<p>Explore <a href="/en/pricing/business">The Daisy's pricing plans</a> for a platform with built-in recurring scheduling, automated reminders, and intelligent calendar management.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -2138,7 +2138,7 @@ const recurringAppointmentArticleAr: LocalBlogPost = {
 <li><strong>تقليل عبء عمل مكتب الاستقبال</strong> من مكالمات ورسائل إعادة حجز أقل</li>
 <li><strong>قيمة عمرية متوسطة أعلى لكل عميل</strong> لأن العملاء المحتفظ بهم ينفقون أكثر بمرور الوقت</li>
 </ul>
-<p>استكشف <a href="/ar/pricing">خطط أسعار ديزي</a> لمنصة بجدولة متكررة مدمجة وتذكيرات آلية وإدارة تقويم ذكية.</p>
+<p>استكشف <a href="/ar/pricing/business">خطط أسعار ديزي</a> لمنصة بجدولة متكررة مدمجة وتذكيرات آلية وإدارة تقويم ذكية.</p>
 
 <h2>الأسئلة الشائعة</h2>
 

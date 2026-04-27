@@ -395,7 +395,7 @@ const fiveWaysAiArticle: LocalBlogPost = {
 <p>AI scheduling and automation is particularly valuable for small salons where the owner handles both clients and administration. A solo stylist who cannot answer the phone during appointments benefits more from an AI receptionist than a 20-chair salon with dedicated reception staff.</p>
 
 <h3>How much does AI salon software cost?</h3>
-<p>The Daisy offers AI-powered salon management with zero commission on bookings. Visit the <a href="/en/pricing">pricing page</a> for current plan details. Most salons find that the revenue captured from previously missed bookings alone covers the subscription cost.</p>
+<p>The Daisy offers AI-powered salon management with zero commission on bookings. Visit the <a href="/en/pricing/business">pricing page</a> for current plan details. Most salons find that the revenue captured from previously missed bookings alone covers the subscription cost.</p>
 
 <h3>Does AI work in Arabic?</h3>
 <p>The Daisy's AI operates natively in both Arabic and English with full cultural context understanding. It is not a translation layer - it genuinely comprehends and responds in both languages, including GCC dialects and beauty industry terminology.</p>
@@ -648,7 +648,7 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
 
 <h3>Pricing Model</h3>
 <p><strong>Traditional platforms:</strong> Models vary widely. Some charge per booking (commission-based), some charge per team member, and some have flat monthly fees with feature tiers. Commission-based models can become expensive as your business grows.</p>
-<p><strong>The Daisy:</strong> Subscription-based with zero commission on bookings. Your growth does not increase your platform costs proportionally. See the <a href="/en/pricing">pricing page</a> for current plans.</p>
+<p><strong>The Daisy:</strong> Subscription-based with zero commission on bookings. Your growth does not increase your platform costs proportionally. See the <a href="/en/pricing/business">pricing page</a> for current plans.</p>
 <p><strong>Why it matters:</strong> Commission-based pricing penalises success. As you book more appointments, your software costs increase. Flat-rate pricing means your margins improve as you grow.</p>
 
 <h2>Summary Comparison Table</h2>
@@ -677,7 +677,7 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
 <li>Grow without proportionally increasing operational costs</li>
 </ul>
 <p>Whether you operate a single chair or manage multiple locations, the AI scales to match your business needs.</p>
-<p>Learn more about The Daisy's full AI capabilities on our <a href="/en/features/business/ai-salon-management">AI-Powered Intelligence</a> page, or explore the <a href="/en/pricing">pricing plans</a> to find the right fit for your business.</p>
+<p>Learn more about The Daisy's full AI capabilities on our <a href="/en/features/business/ai-salon-management">AI-Powered Intelligence</a> page, or explore the <a href="/en/pricing/business">pricing plans</a> to find the right fit for your business.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1115,7 +1115,7 @@ const fiveWaysAiArticleAr: LocalBlogPost = {
 <p>الجدولة الذكية والأتمتة ذات قيمة خاصة للصالونات الصغيرة حيث يتعامل المالك مع العملاء والإدارة معاً. المصمم المستقل الذي لا يستطيع الرد على الهاتف أثناء المواعيد يستفيد أكثر من موظف الاستقبال الذكي مقارنة بصالون كبير يضم 20 كرسياً مع طاقم استقبال مخصص.</p>
 
 <h3>كم تكلفة برنامج صالون الذكاء الاصطناعي؟</h3>
-<p>تقدم ديزي إدارة صالونات مدعومة بالذكاء الاصطناعي بدون عمولة على الحجوزات. قم بزيارة <a href="/ar/pricing">صفحة الأسعار</a> لمعرفة تفاصيل الخطط الحالية. تجد معظم الصالونات أن الإيرادات المُلتقطة من الحجوزات التي كانت تُفقد سابقاً وحدها تغطي تكلفة الاشتراك.</p>
+<p>تقدم ديزي إدارة صالونات مدعومة بالذكاء الاصطناعي بدون عمولة على الحجوزات. قم بزيارة <a href="/ar/pricing/business">صفحة الأسعار</a> لمعرفة تفاصيل الخطط الحالية. تجد معظم الصالونات أن الإيرادات المُلتقطة من الحجوزات التي كانت تُفقد سابقاً وحدها تغطي تكلفة الاشتراك.</p>
 
 <h3>هل يعمل الذكاء الاصطناعي باللغة العربية؟</h3>
 <p>يعمل الذكاء الاصطناعي في ديزي أصلاً بالعربية والإنجليزية مع فهم كامل للسياق الثقافي. إنه ليس طبقة ترجمة - بل يفهم ويستجيب حقاً بكلتا اللغتين، بما في ذلك لهجات دول مجلس التعاون الخليجي ومصطلحات صناعة التجميل.</p>
@@ -1366,7 +1366,7 @@ const daisyVsCompetitorsArticleAr: LocalBlogPost = {
 
 <h3>نموذج التسعير</h3>
 <p><strong>المنصات التقليدية:</strong> تتنوع النماذج بشكل كبير. بعضها يفرض رسوماً لكل حجز (عمولة)، وبعضها لكل عضو في الفريق، وبعضها رسوم شهرية ثابتة مع مستويات ميزات. نماذج العمولة يمكن أن تصبح مكلفة مع نمو عملك.</p>
-<p><strong>ديزي:</strong> اشتراك بدون عمولة على الحجوزات. نموك لا يزيد تكاليف المنصة بشكل متناسب. انظر <a href="/ar/pricing">صفحة الأسعار</a> للخطط الحالية.</p>
+<p><strong>ديزي:</strong> اشتراك بدون عمولة على الحجوزات. نموك لا يزيد تكاليف المنصة بشكل متناسب. انظر <a href="/ar/pricing/business">صفحة الأسعار</a> للخطط الحالية.</p>
 <p><strong>لماذا يهم:</strong> التسعير القائم على العمولة يعاقب النجاح. كلما حجزت مواعيد أكثر، زادت تكاليف البرنامج. التسعير الثابت يعني تحسن هوامش ربحك مع النمو.</p>
 
 <h2>جدول المقارنة الملخص</h2>
@@ -1395,7 +1395,7 @@ const daisyVsCompetitorsArticleAr: LocalBlogPost = {
 <li>النمو دون زيادة التكاليف التشغيلية بشكل متناسب</li>
 </ul>
 <p>سواء كنت تدير كرسياً واحداً أو مواقع متعددة، يتكيف الذكاء الاصطناعي ليتناسب مع احتياجات عملك.</p>
-<p>تعرّف على المزيد حول قدرات ديزي الكاملة في الذكاء الاصطناعي في صفحة <a href="/ar/features/business/ai-salon-management">الذكاء الاصطناعي</a>، أو استكشف <a href="/ar/pricing">خطط الأسعار</a> للعثور على الأنسب لعملك.</p>
+<p>تعرّف على المزيد حول قدرات ديزي الكاملة في الذكاء الاصطناعي في صفحة <a href="/ar/features/business/ai-salon-management">الذكاء الاصطناعي</a>، أو استكشف <a href="/ar/pricing/business">خطط الأسعار</a> للعثور على الأنسب لعملك.</p>
 
 <h2>الأسئلة الشائعة</h2>
 

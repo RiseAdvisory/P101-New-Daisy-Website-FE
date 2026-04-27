@@ -158,7 +158,7 @@ const whatsappMarketingSalonsArticle: LocalBlogPost = {
 <li><strong>Unsubscribe rate:</strong> Percentage who opt out after a broadcast. If this exceeds 2% per campaign, your messaging frequency or relevance needs adjustment.</li>
 </ul>
 <p>Platforms with integrated <a href="/en/features/business/analytics-reports">analytics</a> and WhatsApp connectivity track these metrics automatically, connecting WhatsApp conversations to actual bookings and revenue.</p>
-<p>See <a href="/en/pricing">The Daisy's pricing plans</a> for integrated WhatsApp marketing and booking automation.</p>
+<p>See <a href="/en/pricing/business">The Daisy's pricing plans</a> for integrated WhatsApp marketing and booking automation.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -353,7 +353,7 @@ const managingInstagramDmsArticle: LocalBlogPost = {
 <li><strong>Revenue attributed to Instagram:</strong> Total revenue from clients whose first interaction was an Instagram DM. Use <a href="/en/features/business/analytics-reports">attribution analytics</a> to track this.</li>
 <li><strong>Follow-up success rate:</strong> Percentage of follow-up messages that result in a booking. This tells you whether your follow-up messaging is effective.</li>
 </ul>
-<p>Explore <a href="/en/pricing">The Daisy's pricing plans</a> for integrated Instagram DM management with AI-powered responses and booking automation.</p>
+<p>Explore <a href="/en/pricing/business">The Daisy's pricing plans</a> for integrated Instagram DM management with AI-powered responses and booking automation.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -544,7 +544,7 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 <li><strong>Cross-channel journeys:</strong> How often do clients use more than one channel before booking? If cross-channel journeys are common, the quality of your channel integration directly affects conversion.</li>
 <li><strong>Channel preference by segment:</strong> Do your younger clients prefer DMs while older clients prefer phone? Use this data to personalise communication channel selection.</li>
 </ul>
-<p><a href="/en/features/business/analytics-reports">Analytics dashboards</a> that aggregate data across all channels provide these insights automatically. Explore <a href="/en/pricing">The Daisy's pricing</a> to see how unified communication fits into a complete salon management solution.</p>
+<p><a href="/en/features/business/analytics-reports">Analytics dashboards</a> that aggregate data across all channels provide these insights automatically. Explore <a href="/en/pricing/business">The Daisy's pricing</a> to see how unified communication fits into a complete salon management solution.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -749,7 +749,7 @@ const whatsappMarketingSalonsArticleAr: LocalBlogPost = {
 <li><strong>معدل إلغاء الاشتراك:</strong> نسبة من يلغون اشتراكهم بعد بث. إذا تجاوز 2% لكل حملة، فإن تكرار رسائلك أو مدى ملاءمتها يحتاج لتعديل.</li>
 </ul>
 <p>المنصات ذات <a href="/ar/features/business/analytics-reports">التحليلات</a> المتكاملة واتصال واتساب تتتبع هذه المقاييس تلقائيًا، رابطةً محادثات واتساب بالحجوزات والإيرادات الفعلية.</p>
-<p>اطّلع على <a href="/ar/pricing">خطط أسعار ديزي</a> للتسويق عبر واتساب المتكامل وأتمتة الحجز.</p>
+<p>اطّلع على <a href="/ar/pricing/business">خطط أسعار ديزي</a> للتسويق عبر واتساب المتكامل وأتمتة الحجز.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -939,7 +939,7 @@ const managingInstagramDmsArticleAr: LocalBlogPost = {
 <li><strong>الإيرادات المنسوبة لـ إنستغرام:</strong> إجمالي الإيرادات من العملاء الذين كان أول تفاعل لهم رسالة مباشرة على إنستغرام. استخدم <a href="/ar/features/business/analytics-reports">تحليلات الإسناد</a> لتتبع ذلك.</li>
 <li><strong>معدل نجاح المتابعة:</strong> نسبة رسائل المتابعة التي تؤدي إلى حجز. هذا يخبرك ما إذا كانت رسائل المتابعة فعّالة.</li>
 </ul>
-<p>استكشف <a href="/ar/pricing">خطط أسعار ديزي</a> لإدارة رسائل إنستغرام المباشرة المتكاملة مع ردود مدعومة بالذكاء الاصطناعي وأتمتة الحجز.</p>
+<p>استكشف <a href="/ar/pricing/business">خطط أسعار ديزي</a> لإدارة رسائل إنستغرام المباشرة المتكاملة مع ردود مدعومة بالذكاء الاصطناعي وأتمتة الحجز.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1125,7 +1125,7 @@ const omnichannelCommunicationArticleAr: LocalBlogPost = {
 <li><strong>الرحلات عبر القنوات:</strong> كم مرة يستخدم العملاء أكثر من قناة قبل الحجز؟ إذا كانت الرحلات عبر القنوات شائعة، فإن جودة تكامل قنواتك تؤثر مباشرة على التحويل.</li>
 <li><strong>تفضيل القناة حسب الشريحة:</strong> هل يفضل عملاؤك الأصغر الرسائل المباشرة بينما يفضل الأكبر الهاتف؟ استخدم هذه البيانات لتخصيص اختيار قناة التواصل.</li>
 </ul>
-<p><a href="/ar/features/business/analytics-reports">لوحات تحكم التحليلات</a> التي تجمع البيانات عبر جميع القنوات توفر هذه الرؤى تلقائيًا. استكشف <a href="/ar/pricing">أسعار ديزي</a> لترى كيف يندمج التواصل الموحد في حل إدارة صالون شامل.</p>
+<p><a href="/ar/features/business/analytics-reports">لوحات تحكم التحليلات</a> التي تجمع البيانات عبر جميع القنوات توفر هذه الرؤى تلقائيًا. استكشف <a href="/ar/pricing/business">أسعار ديزي</a> لترى كيف يندمج التواصل الموحد في حل إدارة صالون شامل.</p>
 
 <h2>الأسئلة الشائعة</h2>
 

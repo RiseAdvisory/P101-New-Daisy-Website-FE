@@ -180,7 +180,7 @@ const staffSchedulingArticle: LocalBlogPost = {
 <p>Plan for seasonal peaks 4&ndash;6 weeks in advance. Increase shift lengths, add extra shifts, and consider temporary staff or freelance fill-ins. Communicate extended hours to clients via email and social media.</p>
 
 <h3>Multi-Branch Scheduling</h3>
-<p>If you operate multiple locations, consider flexible scheduling where staff can work at different branches based on demand. This requires a centralised scheduling system that shows availability across all locations. See <a href="/en/pricing">pricing plans</a> for multi-location features.</p>
+<p>If you operate multiple locations, consider flexible scheduling where staff can work at different branches based on demand. This requires a centralised scheduling system that shows availability across all locations. See <a href="/en/pricing/business">pricing plans</a> for multi-location features.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -887,7 +887,7 @@ const employeeRetentionArticle: LocalBlogPost = {
 <p>Some staff will eventually want to work for themselves. You cannot prevent this, but you can delay it and part on good terms by: offering booth rental or hybrid arrangements within your salon, creating senior roles with significant autonomy, and maintaining a relationship that makes them a referral partner rather than a competitor.</p>
 
 <h3>Is high turnover normal in the beauty industry?</h3>
-<p>Common, yes. Normal or acceptable, no. The industry average of 30&ndash;40% annual turnover is driven by salons that underinvest in their teams. Salons that implement structured retention strategies consistently achieve below 15% annual turnover, which translates directly into stronger client relationships, higher revenue per stylist, and lower operating costs. See The Daisy&rsquo;s <a href="/en/pricing">pricing plans</a> for tools that support staff retention.</p>
+<p>Common, yes. Normal or acceptable, no. The industry average of 30&ndash;40% annual turnover is driven by salons that underinvest in their teams. Salons that implement structured retention strategies consistently achieve below 15% annual turnover, which translates directly into stronger client relationships, higher revenue per stylist, and lower operating costs. See The Daisy&rsquo;s <a href="/en/pricing/business">pricing plans</a> for tools that support staff retention.</p>
 `,
     metaTitle: 'Salon Employee Retention Strategies | The Daisy',
     metaDescription:
@@ -1272,7 +1272,7 @@ const performanceReviewsArticle: LocalBlogPost = {
 <li><strong>Link reviews to compensation:</strong> Annual reviews should directly inform commission rate adjustments, bonuses, and promotions. Staff who see a clear connection between review performance and financial reward take reviews seriously.</li>
 <li><strong>Follow up between reviews:</strong> Do not set goals in the review and forget about them. Reference goals in weekly check-ins: "How is the balayage certification progressing?" This shows you care about their development beyond the review meeting.</li>
 </ul>
-<p>The Daisy&rsquo;s <a href="/en/features/business/team-management">team management platform</a> tracks individual performance metrics in real time, so review conversations are grounded in data rather than memory. See <a href="/en/pricing">pricing plans</a> for team analytics features.</p>
+<p>The Daisy&rsquo;s <a href="/en/features/business/team-management">team management platform</a> tracks individual performance metrics in real time, so review conversations are grounded in data rather than memory. See <a href="/en/pricing/business">pricing plans</a> for team analytics features.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1496,7 +1496,7 @@ const staffSchedulingArticleAr: LocalBlogPost = {
 <p>خطط لذروات الموسم قبل 4-6 أسابيع. زد أطوال الورديات وأضف ورديات إضافية وفكر في موظفين مؤقتين أو مستقلين. أبلغ عن الساعات الممتدة للعملاء عبر البريد الإلكتروني ووسائل التواصل الاجتماعي.</p>
 
 <h3>الجدولة متعددة الفروع</h3>
-<p>إذا كنت تشغّل فروعاً متعددة، فكر في جدولة مرنة حيث يمكن للموظفين العمل في فروع مختلفة بناءً على الطلب. هذا يتطلب نظام جدولة مركزياً يعرض التوفر عبر جميع المواقع. راجع <a href="/ar/pricing">خطط الأسعار</a> لميزات المواقع المتعددة.</p>
+<p>إذا كنت تشغّل فروعاً متعددة، فكر في جدولة مرنة حيث يمكن للموظفين العمل في فروع مختلفة بناءً على الطلب. هذا يتطلب نظام جدولة مركزياً يعرض التوفر عبر جميع المواقع. راجع <a href="/ar/pricing/business">خطط الأسعار</a> لميزات المواقع المتعددة.</p>
 
 <h2>الأسئلة المتكررة</h2>
 
@@ -2189,7 +2189,7 @@ const employeeRetentionArticleAr: LocalBlogPost = {
 <p>بعض الموظفين سيريدون في النهاية العمل لأنفسهم. لا يمكنك منع هذا، لكنك تستطيع تأخيره والانفصال بشكل جيد عبر: تقديم ترتيبات استئجار كرسي أو هجينة داخل صالونك، وإنشاء أدوار كبيرة باستقلالية كبيرة، والحفاظ على علاقة تجعلهم شريك إحالة بدلاً من منافس.</p>
 
 <h3>هل الدوران الوظيفي العالي طبيعي في صناعة التجميل؟</h3>
-<p>شائع، نعم. طبيعي أو مقبول، لا. يتراوح متوسط دوران الموظفين السنوي في القطاع بين 30% و40%، ويقوده أداء الصالونات التي لا تستثمر في فرقها. أما الصالونات التي تطبق استراتيجيات احتفاظ منظمة فتسجل باستمرار أقل من 15% سنويًا، مما يترجم مباشرة إلى علاقات عملاء أقوى وإيرادات أعلى لكل مصفف وتكاليف تشغيل أقل. راجع <a href="/ar/pricing">خطط أسعار ديزي</a> للأدوات التي تدعم الاحتفاظ بالموظفين.</p>
+<p>شائع، نعم. طبيعي أو مقبول، لا. يتراوح متوسط دوران الموظفين السنوي في القطاع بين 30% و40%، ويقوده أداء الصالونات التي لا تستثمر في فرقها. أما الصالونات التي تطبق استراتيجيات احتفاظ منظمة فتسجل باستمرار أقل من 15% سنويًا، مما يترجم مباشرة إلى علاقات عملاء أقوى وإيرادات أعلى لكل مصفف وتكاليف تشغيل أقل. راجع <a href="/ar/pricing/business">خطط أسعار ديزي</a> للأدوات التي تدعم الاحتفاظ بالموظفين.</p>
 `,
     metaTitle: 'الاحتفاظ بموظفي الصالون | ديزي',
     metaDescription:
@@ -2564,7 +2564,7 @@ const performanceReviewsArticleAr: LocalBlogPost = {
 <li><strong>اربط المراجعات بالتعويض:</strong> المراجعات السنوية يجب أن تُعلم مباشرة تعديلات نسب العمولات والمكافآت والترقيات. الموظفون الذين يرون رابطاً واضحاً بين أداء المراجعة والمكافأة المالية يأخذون المراجعات بجدية.</li>
 <li><strong>تابع بين المراجعات:</strong> لا تحدد أهدافاً في المراجعة وتنساها. أشر للأهداف في المراجعات الأسبوعية: "كيف يتقدم شهادة البالاياج؟" هذا يُظهر اهتمامك بتطويرهم ما وراء اجتماع المراجعة.</li>
 </ul>
-<p>تتبع <a href="/ar/features/business/team-management">منصة إدارة الفريق من ديزي</a> مقاييس الأداء الفردي في الوقت الحقيقي، فتكون محادثات المراجعة مبنية على البيانات وليس الذاكرة. راجع <a href="/ar/pricing">خطط الأسعار</a> لميزات تحليلات الفريق.</p>
+<p>تتبع <a href="/ar/features/business/team-management">منصة إدارة الفريق من ديزي</a> مقاييس الأداء الفردي في الوقت الحقيقي، فتكون محادثات المراجعة مبنية على البيانات وليس الذاكرة. راجع <a href="/ar/pricing/business">خطط الأسعار</a> لميزات تحليلات الفريق.</p>
 
 <h2>الأسئلة المتكررة</h2>
 

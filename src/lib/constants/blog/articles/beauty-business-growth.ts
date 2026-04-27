@@ -317,7 +317,7 @@ const salonPricingStrategyArticle: LocalBlogPost = {
 
 <h2>How The Daisy Supports Pricing Strategy</h2>
 <p>The Daisy provides the data you need to price strategically: per-service profitability analysis, utilisation rates by stylist level, average ticket value trends, and revenue-per-hour metrics. The platform's <a href="/en/features/business/analytics-reports">analytics dashboard</a> makes it easy to identify which services are stars, which are dogs, and where pricing adjustments will have the greatest impact.</p>
-<p>Explore <a href="/en/features/business/business-growth">The Daisy's business growth tools</a> to see how data-driven pricing fits into your overall revenue strategy. View <a href="/en/pricing">pricing plans</a> for your salon.</p>
+<p>Explore <a href="/en/features/business/business-growth">The Daisy's business growth tools</a> to see how data-driven pricing fits into your overall revenue strategy. View <a href="/en/pricing/business">pricing plans</a> for your salon.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -469,7 +469,7 @@ const increaseSalonRevenueArticle: LocalBlogPost = {
 
 <h2>How The Daisy Supports Revenue Growth</h2>
 <p>The Daisy integrates booking, marketing, loyalty, and analytics into a single platform that systematically drives each of these revenue strategies. Automated reminders reduce no-shows. Built-in cashback increases retention. Analytics identify pricing and utilisation opportunities. And online booking captures revenue 24/7.</p>
-<p>Explore <a href="/en/features/business/business-growth">The Daisy's business growth features</a> to see how the platform turns these strategies into automated revenue drivers. Check <a href="/en/pricing">pricing plans</a> for your salon size.</p>
+<p>Explore <a href="/en/features/business/business-growth">The Daisy's business growth features</a> to see how the platform turns these strategies into automated revenue drivers. Check <a href="/en/pricing/business">pricing plans</a> for your salon size.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1541,7 +1541,7 @@ const salonPricingStrategyArticleAr: LocalBlogPost = {
 
 <h2>كيف تدعم ديزي استراتيجية التسعير</h2>
 <p>توفر ديزي البيانات التي تحتاجها للتسعير بشكل استراتيجي: تحليل ربحية كل خدمة، ومعدلات الاستخدام حسب مستوى المصفف، واتجاهات متوسط قيمة الفاتورة، ومقاييس الإيرادات بالساعة. <a href="/ar/features/business/analytics-reports">لوحة التحليلات</a> في المنصة تسهل تحديد الخدمات النجمية والخدمات الضعيفة وأين ستحقق تعديلات التسعير أكبر تأثير.</p>
-<p>استكشف <a href="/ar/features/business/business-growth">أدوات نمو الأعمال من ديزي</a> لترى كيف يتناسب التسعير القائم على البيانات مع استراتيجية إيراداتك الشاملة. اطلع على <a href="/ar/pricing">خطط الأسعار</a> لصالونك.</p>
+<p>استكشف <a href="/ar/features/business/business-growth">أدوات نمو الأعمال من ديزي</a> لترى كيف يتناسب التسعير القائم على البيانات مع استراتيجية إيراداتك الشاملة. اطلع على <a href="/ar/pricing/business">خطط الأسعار</a> لصالونك.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1689,7 +1689,7 @@ const increaseSalonRevenueArticleAr: LocalBlogPost = {
 
 <h2>كيف تدعم ديزي نمو الإيرادات</h2>
 <p>تدمج ديزي الحجز والتسويق والولاء والتحليلات في منصة واحدة تقود بشكل منهجي كل استراتيجية من استراتيجيات الإيرادات هذه. التذكيرات الآلية تقلل عدم الحضور. نظام الكاشباك المدمج يزيد الاحتفاظ. التحليلات تحدد فرص التسعير والاستخدام. والحجز الإلكتروني يلتقط الإيرادات على مدار الساعة.</p>
-<p>استكشف <a href="/ar/features/business/business-growth">ميزات نمو الأعمال من ديزي</a> لترى كيف تحول المنصة هذه الاستراتيجيات إلى محركات إيرادات آلية. اطلع على <a href="/ar/pricing">خطط الأسعار</a> لحجم صالونك.</p>
+<p>استكشف <a href="/ar/features/business/business-growth">ميزات نمو الأعمال من ديزي</a> لترى كيف تحول المنصة هذه الاستراتيجيات إلى محركات إيرادات آلية. اطلع على <a href="/ar/pricing/business">خطط الأسعار</a> لحجم صالونك.</p>
 
 <h2>الأسئلة الشائعة</h2>
 

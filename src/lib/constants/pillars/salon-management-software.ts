@@ -313,7 +313,7 @@ export const salonManagementSoftware: PillarPageData = {
   <li><strong>Commission-based:</strong> Low or zero monthly fee, but the platform takes 1-5% of each transaction. Expensive at scale.</li>
   <li><strong>Freemium:</strong> Free basic features, paid upgrades. Often limited enough that you will need to upgrade within weeks.</li>
 </ul>
-<p>Always calculate total annual cost including all the features you actually need. A "cheap" base plan that requires paid add-ons for essential features often costs more than a comprehensive platform with transparent <a href="/en/pricing">pricing</a>.</p>
+<p>Always calculate total annual cost including all the features you actually need. A "cheap" base plan that requires paid add-ons for essential features often costs more than a comprehensive platform with transparent <a href="/en/pricing/business">pricing</a>.</p>
 
 <h3>Step 4: Test Before You Commit</h3>
 <p>Never sign an annual contract without a trial period. During your trial:</p>
