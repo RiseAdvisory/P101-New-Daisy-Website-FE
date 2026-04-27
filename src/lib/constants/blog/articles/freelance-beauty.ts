@@ -1141,7 +1141,7 @@ const taxGuideArticle: LocalBlogPost = {
 <p>Professional liability, public liability, and equipment insurance premiums are fully deductible business expenses.</p>
 
 <h3>Marketing and Advertising</h3>
-<p>Social media advertising, website hosting, business cards, printed materials, booking platform subscriptions, and any other marketing expenditure. This includes <a href="/en/pricing">The Daisy subscription</a> and any other software you use for client management, booking, and communication.</p>
+<p>Social media advertising, website hosting, business cards, printed materials, booking platform subscriptions, and any other marketing expenditure. This includes <a href="/en/pricing/business">The Daisy subscription</a> and any other software you use for client management, booking, and communication.</p>
 
 <h3>Education and Training</h3>
 <p>Courses, workshops, certifications, conferences, and educational materials related to your profession. This includes travel costs to attend training events. Continuing education is both a career investment and a tax deduction.</p>
@@ -2158,7 +2158,7 @@ const taxGuideArticleAr: LocalBlogPost = {
 <p> أقساط التأمين على المسؤولية المهنية والمسؤولية العامة والمعدات هي نفقات تجارية قابلة للخصم بالكامل.</p>
 
 <h3>التسويق والإعلان</h3>
-<p> إعلانات وسائل التواصل الاجتماعي، واستضافة مواقع الويب، وبطاقات العمل، والمواد المطبوعة، وحجز اشتراكات المنصة، وأي نفقات تسويقية أخرى. يتضمن ذلك <a href="/ar/pricing">اشتراك ديزي</a> وأي برنامج آخر تستخدمه لإدارة العملاء والحجز والتواصل.</p>
+<p> إعلانات وسائل التواصل الاجتماعي، واستضافة مواقع الويب، وبطاقات العمل، والمواد المطبوعة، وحجز اشتراكات المنصة، وأي نفقات تسويقية أخرى. يتضمن ذلك <a href="/ar/pricing/business">اشتراك ديزي</a> وأي برنامج آخر تستخدمه لإدارة العملاء والحجز والتواصل.</p>
 
 <h3>التعليم والتدريب</h3>
 <p>الدورات وورش العمل والشهادات والمؤتمرات والمواد التعليمية المتعلقة بمهنتك. وهذا يشمل تكاليف السفر لحضور الأحداث التدريبية. يعد التعليم المستمر بمثابة استثمار وظيفي وخصم ضريبي.</p>

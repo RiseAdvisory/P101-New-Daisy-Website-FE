@@ -607,7 +607,7 @@ export const beautyBookingSystem: PillarPageData = {
 <p>Before signing anything, confirm that you own your client data and can export it in a standard format (CSV, JSON) at any time. A booking system that holds your data hostage creates dangerous vendor lock-in. Your client database is your most valuable business asset, never hand control of it to a vendor.</p>
 
 <p>The booking system you choose will shape your client experience, your operational efficiency, and your revenue potential for years. Invest the time to evaluate properly, a few days of thorough research prevents years of frustration.</p>
-<p>Ready to see what an AI-native booking system can do for your salon? <a href="/en/pricing">Explore Daisy's plans</a> and discover how intelligent booking fills more chairs with less effort.</p>`,
+<p>Ready to see what an AI-native booking system can do for your salon? <a href="/en/pricing/business">Explore Daisy's plans</a> and discover how intelligent booking fills more chairs with less effort.</p>`,
       relatedLinks: [
         {
           title: 'Daisy Pricing Plans',

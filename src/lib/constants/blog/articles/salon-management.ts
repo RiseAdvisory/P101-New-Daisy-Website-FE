@@ -106,7 +106,7 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
 <li><strong>Consider the cost of switching:</strong> Cheap software that lacks features will cost you more when you have to migrate again in 12 months.</li>
 <li><strong>Evaluate value, not just price:</strong> A platform that costs $50 more per month but brings in 10 additional bookings is generating far more revenue than it costs.</li>
 </ul>
-<p>For transparent pricing with no hidden fees, see <a href="/en/pricing">The Daisy's pricing plans</a>.</p>
+<p>For transparent pricing with no hidden fees, see <a href="/en/pricing/business">The Daisy's pricing plans</a>.</p>
 
 <h2>Step 6: Test Before You Commit</h2>
 <p>Never choose salon software without a hands-on trial. During your trial period:</p>
@@ -305,7 +305,7 @@ const salonSoftwareChecklistArticle: LocalBlogPost = {
 
 <h2>How to Use This Checklist</h2>
 <p>Score each platform you are evaluating against these 25 features. Give 2 points for features fully supported, 1 point for partial support, and 0 for missing. A platform scoring below 35 out of 50 likely has significant gaps that will limit your business. The strongest platforms in 2026 score 40 or higher.</p>
-<p>For transparent pricing that includes all of these features, explore <a href="/en/pricing">The Daisy's plans</a>.</p>
+<p>For transparent pricing that includes all of these features, explore <a href="/en/pricing/business">The Daisy's plans</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -472,7 +472,7 @@ const switchingSalonSoftwareArticle: LocalBlogPost = {
 <li><strong>Explore advanced features:</strong> Once basic operations are smooth, start using features your old platform lacked - marketing campaigns, AI receptionist, loyalty programmes, and advanced analytics.</li>
 <li><strong>Measure ROI:</strong> Compare monthly revenue, booking volume, and client acquisition costs before and after the switch.</li>
 </ul>
-<p>View <a href="/en/pricing">The Daisy's pricing</a> to understand the total cost of ownership for a modern, fully-featured platform.</p>
+<p>View <a href="/en/pricing/business">The Daisy's pricing</a> to understand the total cost of ownership for a modern, fully-featured platform.</p>
 
 <h2>Common Migration Mistakes to Avoid</h2>
 <ul>
@@ -631,7 +631,7 @@ const cloudVsDesktopArticle: LocalBlogPost = {
 <li><strong>Train your team:</strong> Cloud interfaces are generally more intuitive than desktop software, so training is usually quick.</li>
 <li><strong>Go live:</strong> Switch over during a quiet period and enjoy the freedom of accessing your salon from anywhere.</li>
 </ol>
-<p>Explore <a href="/en/pricing">The Daisy's pricing plans</a> for a fully-featured cloud platform designed for modern salons.</p>
+<p>Explore <a href="/en/pricing/business">The Daisy's pricing plans</a> for a fully-featured cloud platform designed for modern salons.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -782,7 +782,7 @@ const smallSalonSoftwareArticle: LocalBlogPost = {
 <li><strong>Multi-location readiness:</strong> Even if you have one location now, confirm the platform supports multiple branches. Switching software during expansion is painful and avoidable.</li>
 <li><strong>Advanced features you can unlock later:</strong> Marketing automation, loyalty programmes, and advanced analytics should be available when you are ready, without requiring a platform change.</li>
 </ul>
-<p>See <a href="/en/pricing">The Daisy's pricing</a> for plans that scale from solo operator to multi-location without penalising growth.</p>
+<p>See <a href="/en/pricing/business">The Daisy's pricing</a> for plans that scale from solo operator to multi-location without penalising growth.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -958,7 +958,7 @@ const multiLocationSalonArticle: LocalBlogPost = {
 <h3>Challenge: Comparing Branch Performance Fairly</h3>
 <p><strong>Solution:</strong> Account for factors like branch age, location demographics, and team size when comparing metrics. A new branch should not be measured against an established one using the same benchmarks. Track growth rate and trajectory rather than absolute numbers for newer locations.</p>
 
-<p>Explore <a href="/en/pricing">The Daisy's multi-location pricing</a> for transparent per-branch costs with no hidden fees.</p>
+<p>Explore <a href="/en/pricing/business">The Daisy's multi-location pricing</a> for transparent per-branch costs with no hidden fees.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1125,7 +1125,7 @@ const salonSoftwareROIArticle: LocalBlogPost = {
 <li><strong>Decision quality:</strong> Real-time data helps you make better decisions about pricing, services, staffing, and marketing - each decision compounding in value over time.</li>
 <li><strong>Scalability:</strong> Software infrastructure makes opening a second location dramatically easier. The operational foundation is already in place.</li>
 </ul>
-<p>Explore <a href="/en/pricing">The Daisy's pricing</a> and run your own ROI calculation against the plans available.</p>
+<p>Explore <a href="/en/pricing/business">The Daisy's pricing</a> and run your own ROI calculation against the plans available.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1300,7 +1300,7 @@ const freeVsPaidSalonSoftwareArticle: LocalBlogPost = {
 <li><strong>Evaluate total cost of ownership:</strong> Subscription + any per-user fees + any transaction fees + any add-on costs = your real monthly expense.</li>
 <li><strong>Consider the revenue it generates:</strong> The cheapest paid plan is not the best value if it lacks features that drive bookings. The most expensive plan is not overpriced if it generates significantly more revenue than it costs.</li>
 </ul>
-<p>See <a href="/en/pricing">The Daisy's transparent pricing</a> for all-inclusive plans with no hidden fees or transaction charges.</p>
+<p>See <a href="/en/pricing/business">The Daisy's transparent pricing</a> for all-inclusive plans with no hidden fees or transaction charges.</p>
 
 <h2>Making the Switch from Free to Paid</h2>
 <p>If you are currently on a free platform and ready to upgrade:</p>
@@ -1459,7 +1459,7 @@ const chooseSalonSoftwareArticleAr: LocalBlogPost = {
 <li><strong>ضع في اعتبارك تكلفة التبديل:</strong> البرامج الرخيصة التي تفتقر إلى الميزات ستكلفك أكثر عندما يتعين عليك الترحيل مرة أخرى خلال 12 شهرًا.</li>
 <li><strong>تقييم القيمة، وليس السعر فقط:</strong> النظام الأساسي الذي يكلف 50 دولارًا إضافيًا شهريًا ولكنه يجلب 10 حجوزات إضافية يحقق إيرادات أكثر بكثير من تكلفته.</li>
 </ul>
-<p>للحصول على أسعار شفافة بدون رسوم مخفية، راجع <a href="/ar/pricing">خطط تسعير ديزي</a>.</p>
+<p>للحصول على أسعار شفافة بدون رسوم مخفية، راجع <a href="/ar/pricing/business">خطط تسعير ديزي</a>.</p>
 
 <h2>الخطوة 6: الاختبار قبل الالتزام</h2>
 <p> لا تختار أبدًا برنامج الصالون دون تجربة عملية. أثناء الفترة التجريبية:</p>
@@ -1605,7 +1605,7 @@ const salonSoftwareChecklistArticleAr: LocalBlogPost = {
 
 <h2>كيفية استخدام قائمة المراجعة هذه</h2>
 <p> سجل كل منصة تقوم بتقييمها مقابل هذه الميزات الـ 25. امنح نقطتين للميزات المدعومة بالكامل، ونقطة واحدة للدعم الجزئي، و0 للميزات المفقودة. من المحتمل أن يكون لدى النظام الأساسي الذي يسجل أقل من 35 من أصل 50 فجوات كبيرة من شأنها أن تحد من عملك. أقوى المنصات في 2026 تحصل على 40 نقطة أو أعلى.</p>
-<p>للحصول على أسعار شفافة تتضمن كل هذه الميزات، استكشف <a href="/ar/pricing">خطط ديزي</a>.</p>
+<p>للحصول على أسعار شفافة تتضمن كل هذه الميزات، استكشف <a href="/ar/pricing/business">خطط ديزي</a>.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1720,7 +1720,7 @@ const switchingSalonSoftwareArticleAr: LocalBlogPost = {
 <li><strong>استكشف الميزات المتقدمة:</strong> بمجرد أن تصبح العمليات الأساسية سلسة، ابدأ في استخدام الميزات التي كانت تفتقر إليها منصتك القديمة - الحملات التسويقية، وموظف استقبال الذكاء الاصطناعي، وبرامج الولاء، والتحليلات المتقدمة.</li>
 <li><strong>قياس عائد الاستثمار:</strong> قارن الإيرادات الشهرية وحجم الحجز وتكاليف اكتساب العميل قبل التبديل وبعده.</li>
 </ul>
-<p> شاهد <a href="/ar/pricing"> تسعير ديزي</a> لفهم التكلفة الإجمالية للملكية لمنصة حديثة كاملة الميزات.</p>
+<p> شاهد <a href="/ar/pricing/business"> تسعير ديزي</a> لفهم التكلفة الإجمالية للملكية لمنصة حديثة كاملة الميزات.</p>
 
 <h2>أخطاء الترحيل الشائعة التي يجب تجنبها</h2>
 <ul>
@@ -1827,7 +1827,7 @@ const cloudVsDesktopArticleAr: LocalBlogPost = {
 <li><strong>تدريب فريقك:</strong> تعد الواجهات السحابية بشكل عام أكثر سهولة من برامج سطح المكتب، لذلك عادة ما يكون التدريب سريعًا.</li>
 <li><strong>البث المباشر:</strong> قم بالتبديل خلال فترة هادئة واستمتع بحرية الوصول إلى صالونك من أي مكان.</li>
 </ol>
-<p>استكشف <a href="/ar/pricing">خطط تسعير ديزي</a> لمنصة سحابية كاملة الميزات مصممة للصالونات الحديثة.</p>
+<p>استكشف <a href="/ar/pricing/business">خطط تسعير ديزي</a> لمنصة سحابية كاملة الميزات مصممة للصالونات الحديثة.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1925,7 +1925,7 @@ const smallSalonSoftwareArticleAr: LocalBlogPost = {
 <li><strong>جاهزية متعددة المواقع:</strong> حتى لو كان لديك موقع واحد الآن، تأكد من أن المنصة تدعم فروعًا متعددة. يعد تبديل البرامج أثناء التوسيع أمرًا مؤلمًا ويمكن تجنبه.</li>
 <li><strong>ميزات متقدمة يمكنك فتحها لاحقًا:</strong> يجب أن تكون أتمتة التسويق، وبرامج الولاء، والتحليلات المتقدمة متاحة عندما تكون مستعدًا، دون الحاجة إلى تغيير النظام الأساسي.</li>
 </ul>
-<p>راجع <a href="/ar/pricing">تسعير ديزي</a> للتعرف على الخطط التي تتراوح من المشغل الفردي إلى المواقع المتعددة دون معاقبة النمو.</p>
+<p>راجع <a href="/ar/pricing/business">تسعير ديزي</a> للتعرف على الخطط التي تتراوح من المشغل الفردي إلى المواقع المتعددة دون معاقبة النمو.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -2048,7 +2048,7 @@ const multiLocationSalonArticleAr: LocalBlogPost = {
 <h3>التحدي: مقارنة أداء الفرع بشكل عادل</h3>
 <p><strong>الحل:</strong> ضع في اعتبارك عوامل مثل عمر الفرع، والمعلومات السكانية للموقع، وحجم الفريق عند مقارنة المقاييس. ولا ينبغي قياس فرع جديد مقابل فرع قائم يستخدم نفس المعايير. تتبع معدل النمو والمسار بدلاً من الأرقام المطلقة للمواقع الأحدث.</p>
 
-<p>استكشف <a href="/ar/pricing">أسعار ديزي للمواقع المتعددة</a> للتكاليف الشفافة لكل فرع دون أي رسوم مخفية.</p>
+<p>استكشف <a href="/ar/pricing/business">أسعار ديزي للمواقع المتعددة</a> للتكاليف الشفافة لكل فرع دون أي رسوم مخفية.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -2162,7 +2162,7 @@ const salonSoftwareROIArticleAr: LocalBlogPost = {
 <li><strong>جودة القرار:</strong> تساعدك البيانات في الوقت الفعلي على اتخاذ قرارات أفضل بشأن التسعير والخدمات والتوظيف والتسويق - حيث تتضاعف قيمة كل قرار بمرور الوقت.</li>
 <li><strong>قابلية التوسع:</strong> البنية التحتية للبرمجيات تجعل فتح موقع ثان أسهل بشكل كبير. الأساس التشغيلي موجود بالفعل.</li>
 </ul>
-<p>استكشف <a href="/ar/pricing">أسعار ديزي</a> وقم بإجراء حساب عائد الاستثمار الخاص بك مقابل الخطط المتاحة.</p>
+<p>استكشف <a href="/ar/pricing/business">أسعار ديزي</a> وقم بإجراء حساب عائد الاستثمار الخاص بك مقابل الخطط المتاحة.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -2284,7 +2284,7 @@ const freeVsPaidSalonSoftwareArticleAr: LocalBlogPost = {
 <li><strong>تقييم التكلفة الإجمالية للملكية:</strong> الاشتراك + أي رسوم لكل مستخدم + أي رسوم معاملات + أي تكاليف إضافية = مصاريفك الشهرية الحقيقية.</li>
 <li><strong>ضع في اعتبارك الإيرادات التي تحققها:</strong> أرخص خطة مدفوعة ليست هي الأفضل قيمة إذا كانت تفتقر إلى الميزات التي تؤدي إلى الحجوزات. لا تكون الخطة الأكثر تكلفة باهظة الثمن إذا كانت تحقق إيرادات أكبر بكثير من تكلفتها.</li>
 </ul>
-<p>راجع <a href="/ar/pricing">أسعار ديزي الشفافة</a> للتعرف على الخطط الشاملة بدون رسوم مخفية أو رسوم معاملات.</p>
+<p>راجع <a href="/ar/pricing/business">أسعار ديزي الشفافة</a> للتعرف على الخطط الشاملة بدون رسوم مخفية أو رسوم معاملات.</p>
 
 <h2>التحويل من مجاني إلى مدفوع</h2>
 <p>إذا كنت حاليًا تستخدم نظامًا أساسيًا مجانيًا وجاهزًا للترقية:</p>

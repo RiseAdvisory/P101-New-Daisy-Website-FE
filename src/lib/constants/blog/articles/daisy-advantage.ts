@@ -81,7 +81,7 @@ const aiReceptionistArticle: LocalBlogPost = {
 <p>When your team no longer handles booking calls, their focus stays on the clients in their chairs. Stylists report fewer interruptions, better service quality, and higher client satisfaction scores. Salon owners report that eliminating phone-answering duties improves overall team morale because nobody enjoys the constant interruption of ringing phones during client sessions.</p>
 
 <h3>Operational Costs Decrease</h3>
-<p>The Daisy&rsquo;s AI receptionist costs a fraction of a human receptionist&rsquo;s salary. There are no benefits, no sick days, no training periods, and no turnover costs. For multi-location salons, the savings multiply because one AI handles all branches simultaneously. Explore <a href="/en/pricing">The Daisy&rsquo;s pricing plans</a> to compare the cost against your current reception expenses.</p>
+<p>The Daisy&rsquo;s AI receptionist costs a fraction of a human receptionist&rsquo;s salary. There are no benefits, no sick days, no training periods, and no turnover costs. For multi-location salons, the savings multiply because one AI handles all branches simultaneously. Explore <a href="/en/pricing/business">The Daisy&rsquo;s pricing plans</a> to compare the cost against your current reception expenses.</p>
 
 <h2>What Makes The Daisy&rsquo;s AI Receptionist Different</h2>
 <p>Not all AI receptionists are created equal. The Daisy&rsquo;s AI is purpose-built for the beauty and wellness industry, which creates critical advantages over generic AI assistants or basic chatbot tools.</p>
@@ -242,7 +242,7 @@ const allInOnePlatformArticle: LocalBlogPost = {
 <li><strong>Analytics and reporting:</strong> Revenue dashboards, client retention metrics, service popularity, staff productivity, and trend forecasting.</li>
 <li><strong>AI-powered intelligence:</strong> AI receptionist, predictive analytics, smart recommendations, automated client engagement, and natural language customer service.</li>
 </ol>
-<p>The Daisy covers all eight categories in a single platform. Check <a href="/en/pricing">pricing plans</a> to see which features are included at each tier.</p>
+<p>The Daisy covers all eight categories in a single platform. Check <a href="/en/pricing/business">pricing plans</a> to see which features are included at each tier.</p>
 
 <h2>When Does It Make Sense to Switch?</h2>
 <p>You should consider migrating to an all-in-one platform if any of these situations apply to your business:</p>
@@ -407,7 +407,7 @@ const customerAcquisitionArticle: LocalBlogPost = {
 <li><strong>Referral conversion rate:</strong> Measures the effectiveness of your referral programme.</li>
 <li><strong>Rebooking rate by segment:</strong> Tracks how well loyalty incentives drive repeat business.</li>
 </ul>
-<p>Review your acquisition metrics monthly and adjust your strategy based on what the data shows. <a href="/en/pricing">The Daisy&rsquo;s plans</a> include these analytics at every tier.</p>
+<p>Review your acquisition metrics monthly and adjust your strategy based on what the data shows. <a href="/en/pricing/business">The Daisy&rsquo;s plans</a> include these analytics at every tier.</p>
 
 <h2>The Cost of Single-Channel Acquisition vs. 360-Degree Strategy</h2>
 <p>To put the difference into perspective, consider the economics. A salon relying solely on Instagram for acquisition typically pays $15&ndash;$40 per new client through boosted posts and paid ads, with conversion rates that fluctuate based on algorithm changes. If Instagram reach drops (which it regularly does), your cost per acquisition spikes and your pipeline dries up simultaneously.</p>
@@ -555,7 +555,7 @@ const whiteLabelBookingArticle: LocalBlogPost = {
 <li><strong>Configure AI personality:</strong> Define the tone, language, and greeting style for your AI receptionist.</li>
 <li><strong>Preview and publish:</strong> Review every client-facing touchpoint before going live.</li>
 </ol>
-<p>Visit <a href="/en/pricing">pricing</a> to see which plans include full white-label capabilities.</p>
+<p>Visit <a href="/en/pricing/business">pricing</a> to see which plans include full white-label capabilities.</p>
 
 <h2>The Revenue Impact of Branded Booking Experiences</h2>
 <p>White-label booking is not just an aesthetic preference - it has measurable business impact that directly affects your revenue and client retention.</p>
@@ -599,7 +599,7 @@ const whiteLabelBookingArticle: LocalBlogPost = {
 <p>Updating your brand assets takes minutes. Upload your new logo and colour palette, and the changes propagate across every client-facing touchpoint - booking page, communications, AI interactions, and client portal - immediately.</p>
 
 <h3>Is there a cost difference between white-label and standard branding?</h3>
-<p>White-label capabilities are included in The Daisy&rsquo;s professional and enterprise plans. There is no additional per-feature charge. Check the <a href="/en/pricing">pricing page</a> for full plan comparisons.</p>
+<p>White-label capabilities are included in The Daisy&rsquo;s professional and enterprise plans. There is no additional per-feature charge. Check the <a href="/en/pricing/business">pricing page</a> for full plan comparisons.</p>
 `,
     metaTitle: 'White-Label Salon Booking Systems | The Daisy',
     metaDescription:
@@ -736,7 +736,7 @@ const multilingualBusinessArticle: LocalBlogPost = {
 <li><strong>AI conversation completion rate by language:</strong> Confirms that the AI receptionist performs equally well in Arabic and English.</li>
 </ul>
 <p>If you notice a significant gap in any metric between language groups, it signals an opportunity to improve service for the underperforming segment - whether that means adjusting marketing creative, retraining staff, or refining the AI&rsquo;s responses in that language.</p>
-<p>Review <a href="/en/pricing">The Daisy&rsquo;s pricing plans</a> to see multilingual features included at every tier - because we believe language support is a necessity, not a premium add-on.</p>
+<p>Review <a href="/en/pricing/business">The Daisy&rsquo;s pricing plans</a> to see multilingual features included at every tier - because we believe language support is a necessity, not a premium add-on.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -872,7 +872,7 @@ const dataDrivenPlatformArticle: LocalBlogPost = {
 
 <h3>Competitive Benchmarking</h3>
 <p>The Daisy&rsquo;s analytics dashboard includes anonymised benchmarks so you can see how your key metrics - rebooking rate, average transaction value, client retention, chair utilisation - compare to similar salons in your market. This is not information you can obtain from standalone software or by analysing your own data in isolation.</p>
-<p>Explore all analytics features across <a href="/en/pricing">The Daisy&rsquo;s pricing plans</a>.</p>
+<p>Explore all analytics features across <a href="/en/pricing/business">The Daisy&rsquo;s pricing plans</a>.</p>
 
 <h2>Why Data Moats Are Difficult to Replicate</h2>
 <p>A competitor cannot simply decide to build a data moat. Data moats require three things that take years to establish:</p>
@@ -1034,7 +1034,7 @@ const modernSalonsAiArticle: LocalBlogPost = {
 <li>Are you losing clients to competitors who respond faster?</li>
 <li>Do you want to scale your business but feel constrained by operational overhead?</li>
 </ul>
-<p>The Daisy&rsquo;s AI platform is designed for beauty businesses of every size. Explore the <a href="/en/features/business/ai-salon-management">AI salon management features</a> or review <a href="/en/pricing">pricing plans</a> to find the right fit for your salon.</p>
+<p>The Daisy&rsquo;s AI platform is designed for beauty businesses of every size. Explore the <a href="/en/features/business/ai-salon-management">AI salon management features</a> or review <a href="/en/pricing/business">pricing plans</a> to find the right fit for your salon.</p>
 
 <h2>Making the Transition from Software to AI Platform</h2>
 <p>Switching from traditional software to an AI platform is simpler than most salon owners expect. The Daisy&rsquo;s onboarding process migrates your client data, booking history, and business configuration in hours, not weeks. The AI begins learning your business patterns immediately and delivers value from day one - while getting smarter every day afterward.</p>
@@ -1181,7 +1181,7 @@ const softwareWarningSignsArticle: LocalBlogPost = {
 <li><strong>Test before you commit:</strong> Most modern platforms offer trials or demonstrations. See the difference firsthand before making a decision.</li>
 <li><strong>Plan your migration:</strong> Modern platforms handle data migration as part of onboarding. The switch is simpler than most salon owners expect.</li>
 </ol>
-<p>Review <a href="/en/pricing">The Daisy&rsquo;s pricing plans</a> to see how an all-in-one AI platform compares to your current stack on both cost and capability.</p>
+<p>Review <a href="/en/pricing/business">The Daisy&rsquo;s pricing plans</a> to see how an all-in-one AI platform compares to your current stack on both cost and capability.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1313,7 +1313,7 @@ const aiReceptionistArticleAr: LocalBlogPost = {
 <p> عندما يتوقف فريقك عن التعامل مع مكالمات الحجز، يظل تركيزهم على العملاء الجالسين في كراسيهم. يُبلغ المصممون عن انقطاعات أقل وجودة خدمة أفضل ودرجات أعلى لرضا العملاء. أفاد أصحاب الصالونات أن إلغاء واجبات الرد على الهاتف يؤدي إلى تحسين معنويات الفريق بشكل عام لأنه لا أحد يستمتع بالمقاطعة المستمرة لرنين الهواتف أثناء جلسات العميل.</p>
 
 <h3>انخفاض التكاليف التشغيلية</h3>
-<p> يتكلف موظف الاستقبال الذي يعمل بالذكاء الاصطناعي في ديزي جزءًا صغيرًا من راتب موظف الاستقبال البشري. لا توجد فوائد، ولا أيام مرضية، ولا فترات تدريب، ولا تكاليف دوران. بالنسبة للصالونات متعددة المواقع، تتضاعف التوفيرات لأن الذكاء الاصطناعي الواحد يتعامل مع جميع الفروع في وقت واحد. استكشف <a href="/ar/pricing">خطط تسعير ديزي</a> لمقارنة التكلفة بنفقات الاستقبال الحالية.</p>
+<p> يتكلف موظف الاستقبال الذي يعمل بالذكاء الاصطناعي في ديزي جزءًا صغيرًا من راتب موظف الاستقبال البشري. لا توجد فوائد، ولا أيام مرضية، ولا فترات تدريب، ولا تكاليف دوران. بالنسبة للصالونات متعددة المواقع، تتضاعف التوفيرات لأن الذكاء الاصطناعي الواحد يتعامل مع جميع الفروع في وقت واحد. استكشف <a href="/ar/pricing/business">خطط تسعير ديزي</a> لمقارنة التكلفة بنفقات الاستقبال الحالية.</p>
 
 <h2>ما الذي يجعل موظف الاستقبال الذي يعمل بالذكاء الاصطناعي لدى ديزي مختلفًا</h2>
 <p> لم يتم إنشاء جميع موظفي الاستقبال الذين يعملون بالذكاء الاصطناعي على قدم المساواة. تم تصميم الذكاء الاصطناعي الخاص بـ ديزي خصيصًا لصناعة التجميل والعافية، مما يخلق مزايا مهمة مقارنة بمساعدي الذكاء الاصطناعي العامين أو أدوات الدردشة الآلية الأساسية.</p>
@@ -1475,7 +1475,7 @@ const allInOnePlatformArticleAr: LocalBlogPost = {
 <li><strong>التحليلات وإعداد التقارير:</strong> لوحات معلومات الإيرادات، ومقاييس الاحتفاظ بالعملاء، وشعبية الخدمة، وإنتاجية الموظفين، والتنبؤ بالاتجاهات.</li>
 <li><strong>الذكاء المدعوم بالذكاء الاصطناعي:</strong> موظف استقبال يعمل بالذكاء الاصطناعي، والتحليلات التنبؤية، والتوصيات الذكية، ومشاركة العملاء الآلية، وخدمة العملاء باللغة الطبيعية.</li>
 </ol>
-<p> تغطي ديزي جميع الفئات الثمانية في منصة واحدة. تحقق من <a href="/ar/pricing">خطط التسعير</a> لمعرفة الميزات المضمنة في كل مستوى.</p>
+<p> تغطي ديزي جميع الفئات الثمانية في منصة واحدة. تحقق من <a href="/ar/pricing/business">خطط التسعير</a> لمعرفة الميزات المضمنة في كل مستوى.</p>
 
 <h2>متى يكون التبديل منطقيًا؟</h2>
 <p>يجب عليك التفكير في الانتقال إلى نظام أساسي شامل إذا كان أي من هذه المواقف ينطبق على عملك:</p>
@@ -1641,7 +1641,7 @@ const customerAcquisitionArticleAr: LocalBlogPost = {
 <li><strong>معدل تحويل الإحالة:</strong> يقيس مدى فعالية برنامج الإحالة الخاص بك.</li>
 <li><strong>معدل إعادة الحجز حسب القطاع:</strong> يتتبع مدى فعالية حوافز الولاء في تحفيز الأعمال المتكررة.</li>
 </ul>
-<p> راجع مقاييس الاستحواذ لديك شهريًا واضبط إستراتيجيتك بناءً على ما تظهره البيانات. <a href="/ar/pricing">تتضمن خطط ديزي</a> هذه التحليلات في كل مستوى.</p>
+<p> راجع مقاييس الاستحواذ لديك شهريًا واضبط إستراتيجيتك بناءً على ما تظهره البيانات. <a href="/ar/pricing/business">تتضمن خطط ديزي</a> هذه التحليلات في كل مستوى.</p>
 
 <h2>تكلفة الاستحواذ على قناة واحدة مقابل إستراتيجية 360 درجة</h2>
 <p> لوضع الفرق في منظوره الصحيح، فكر في الاقتصاد. عادةً ما يدفع الصالون الذي يعتمد فقط على إنستغرام للاكتساب ما بين 15 إلى 40 دولارًا لكل عميل جديد من خلال المنشورات المعززة والإعلانات المدفوعة، مع معدلات تحويل تتقلب بناءً على تغييرات الخوارزمية. إذا انخفض معدل الوصول إلى إنستغرام (وهو ما يحدث بانتظام)، فسترتفع تكلفة الاكتساب لديك وينضب خط الأنابيب الخاص بك في نفس الوقت.</p>
@@ -1790,7 +1790,7 @@ const whiteLabelBookingArticleAr: LocalBlogPost = {
 <li><strong>تكوين شخصية الذكاء الاصطناعي:</strong> حدد النغمة واللغة وأسلوب الترحيب لموظف الاستقبال الذي يعمل بتقنية الذكاء الاصطناعي.</li>
 <li><strong>المعاينة والنشر:</strong> قم بمراجعة كل نقطة اتصال تواجه العميل قبل بدء البث المباشر.</li>
 </ol>
-<p>تفضل بزيارة <a href="/ar/pricing">pricing</a> لمعرفة الخطط التي تشتمل على إمكانات العلامة البيضاء الكاملة.</p>
+<p>تفضل بزيارة <a href="/ar/pricing/business">pricing</a> لمعرفة الخطط التي تشتمل على إمكانات العلامة البيضاء الكاملة.</p>
 
 <h2>تأثير إيرادات تجارب الحجز ذات العلامات التجارية</h2>
 <p>الحجز ذو العلامة البيضاء ليس مجرد تفضيل جمالي - بل له تأثير تجاري قابل للقياس يؤثر بشكل مباشر على إيراداتك والاحتفاظ بالعملاء.</p>
@@ -1834,7 +1834,7 @@ const whiteLabelBookingArticleAr: LocalBlogPost = {
 <p> يستغرق تحديث أصول علامتك التجارية دقائق. قم بتحميل شعارك الجديد ولوحة الألوان الجديدة، وسيتم نشر التغييرات عبر كل نقطة اتصال تواجه العميل - صفحة الحجز، والاتصالات، وتفاعلات الذكاء الاصطناعي، وبوابة العميل - على الفور.</p>
 
 <h3>هل هناك فرق في التكلفة بين العلامة التجارية البيضاء والعلامة التجارية القياسية؟</h3>
-<p> تم تضمين إمكانات العلامة البيضاء في الخطط المهنية والمؤسسية لشركة ديزي. لا توجد رسوم إضافية لكل ميزة. راجع <a href="/ar/pricing">صفحة التسعير</a> للحصول على مقارنات كاملة للخطط.</p>`,
+<p> تم تضمين إمكانات العلامة البيضاء في الخطط المهنية والمؤسسية لشركة ديزي. لا توجد رسوم إضافية لكل ميزة. راجع <a href="/ar/pricing/business">صفحة التسعير</a> للحصول على مقارنات كاملة للخطط.</p>`,
     metaTitle: 'الحجز بالعلامة البيضاء للصالونات | ديزي',
     metaDescription:
       'احصل على نظام حجز بعلامتك التجارية الخاصة. تحكم كامل بالهوية البصرية وتجربة العميل مع منصة ديزي.',
@@ -1972,7 +1972,7 @@ const multilingualBusinessArticleAr: LocalBlogPost = {
 <li><strong>معدل إكمال محادثة الذكاء الاصطناعي حسب اللغة:</strong> يؤكد أن أداء موظف الاستقبال الذي يعمل بتقنية الذكاء الاصطناعي جيد على قدم المساواة في اللغتين العربية والإنجليزية.</li>
 </ul>
 <p>إذا لاحظت وجود فجوة كبيرة في أي مقياس بين مجموعات اللغات، فهذا يشير إلى فرصة لتحسين الخدمة للقطاع ذي الأداء الضعيف - سواء كان ذلك يعني تعديل التصميم الإبداعي للتسويق، أو إعادة تدريب الموظفين، أو تحسين استجابات الذكاء الاصطناعي بتلك اللغة.</p>
-<p>راجع <a href="/ar/pricing">خطط تسعير ديزي</a> لرؤية الميزات متعددة اللغات المضمنة في كل مستوى - لأننا نؤمن بأن دعم اللغة أمر ضروري، وليس وظيفة إضافية مميزة.</p>
+<p>راجع <a href="/ar/pricing/business">خطط تسعير ديزي</a> لرؤية الميزات متعددة اللغات المضمنة في كل مستوى - لأننا نؤمن بأن دعم اللغة أمر ضروري، وليس وظيفة إضافية مميزة.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -2109,7 +2109,7 @@ const dataDrivenPlatformArticleAr: LocalBlogPost = {
 
 <h3>القياس التنافسي</h3>
 <p> تتضمن لوحة تحليلات ديزي معايير مجهولة المصدر حتى تتمكن من معرفة كيفية مقارنة مقاييسك الرئيسية، مثل معدل إعادة الحجز، ومتوسط قيمة المعاملة، والاحتفاظ بالعملاء، واستخدام الكراسي، بالصالونات المماثلة في سوقك. وهذه ليست معلومات يمكنك الحصول عليها من برنامج منفصل أو من خلال تحليل بياناتك الخاصة بمعزل عن بقية أدواتك.</p>
-<p>استكشف جميع ميزات التحليلات عبر <a href="/ar/pricing">خطط تسعير ديزي</a>.</p>
+<p>استكشف جميع ميزات التحليلات عبر <a href="/ar/pricing/business">خطط تسعير ديزي</a>.</p>
 
 <h2>لماذا يصعب نسخ خنادق البيانات</h2>
 <p> لا يمكن للمنافس أن يقرر ببساطة بناء خندق بيانات. تتطلب خنادق البيانات ثلاثة أشياء يستغرق إنشاؤها سنوات:</p>
@@ -2272,7 +2272,7 @@ const modernSalonsAiArticleAr: LocalBlogPost = {
 <li>هل تخسر عملاءك لصالح المنافسين الذين يستجيبون بشكل أسرع؟</li>
 <li>هل ترغب في توسيع نطاق عملك ولكنك تشعر بأنك مقيد بالنفقات التشغيلية؟</li>
 </ul>
-<p> تم تصميم منصة ديزي المدعومة بالذكاء الاصطناعي لشركات التجميل بجميع أحجامها. استكشف <a href="/ar/features/business/ai-salon-management">ميزات إدارة الصالون بالذكاء الاصطناعي</a> أو راجع <a href="/ar/pricing">خطط التسعير</a> للعثور على الخيار المناسب لصالونك.</p>
+<p> تم تصميم منصة ديزي المدعومة بالذكاء الاصطناعي لشركات التجميل بجميع أحجامها. استكشف <a href="/ar/features/business/ai-salon-management">ميزات إدارة الصالون بالذكاء الاصطناعي</a> أو راجع <a href="/ar/pricing/business">خطط التسعير</a> للعثور على الخيار المناسب لصالونك.</p>
 
 <h2>الانتقال من البرمجيات إلى منصة الذكاء الاصطناعي</h2>
 <p> يعد التحول من البرامج التقليدية إلى منصة الذكاء الاصطناعي أبسط مما يتوقعه معظم أصحاب الصالونات. تعمل عملية الإعداد في ديزي على ترحيل بيانات العميل وسجل الحجز وتكوين الأعمال خلال ساعات، وليس أسابيع. يبدأ الذكاء الاصطناعي في تعلم أنماط أعمالك على الفور ويقدم قيمة من اليوم الأول - بينما يصبح أكثر ذكاءً كل يوم بعد ذلك.</p>
@@ -2420,7 +2420,7 @@ const softwareWarningSignsArticleAr: LocalBlogPost = {
 <li><strong>اختبر قبل الالتزام:</strong> تقدم معظم المنصات الحديثة تجارب أو عروض توضيحية. شاهد الفرق مباشرة قبل اتخاذ القرار.</li>
 <li><strong>التخطيط للترحيل:</strong> تتعامل الأنظمة الأساسية الحديثة مع ترحيل البيانات كجزء من عملية الإعداد. يعد التبديل أبسط مما يتوقعه معظم أصحاب الصالونات.</li>
 </ol>
-<p> راجع <a href="/ar/pricing"> خطط تسعير ديزي</a> لترى كيف يمكن مقارنة منصة الذكاء الاصطناعي الكل في واحد مع مجموعتك الحالية من حيث التكلفة والقدرة.</p>
+<p> راجع <a href="/ar/pricing/business"> خطط تسعير ديزي</a> لترى كيف يمكن مقارنة منصة الذكاء الاصطناعي الكل في واحد مع مجموعتك الحالية من حيث التكلفة والقدرة.</p>
 
 <h2>الأسئلة الشائعة</h2>
 

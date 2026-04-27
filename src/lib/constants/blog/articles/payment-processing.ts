@@ -681,7 +681,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <p><a href="/en/features/business/payment-processing">The Daisy's payment processing</a> is built specifically for beauty and wellness businesses, integrated directly into the salon management platform.</p>
 <ul>
 <li><strong>Processing model:</strong> Flat-rate</li>
-<li><strong>Card-present rate:</strong> Competitive flat rate (see <a href="/en/pricing">pricing page</a> for current rates)</li>
+<li><strong>Card-present rate:</strong> Competitive flat rate (see <a href="/en/pricing/business">pricing page</a> for current rates)</li>
 <li><strong>Online/card-not-present rate:</strong> Slightly higher flat rate for online payments and payment links</li>
 <li><strong>Commission on bookings:</strong> Zero - no commission on any booking, regardless of how the client found you</li>
 <li><strong>Monthly platform fee:</strong> Included in salon management subscription</li>
@@ -1543,7 +1543,7 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <p><a href="/ar/features/business/payment-processing">تم تصميم عملية الدفع في ديزي</a> خصيصًا لشركات التجميل والعافية، وتم دمجها مباشرة في منصة إدارة الصالونات.</p>
 <ul>
 <li><strong>نموذج المعالجة:</strong> المعدل الثابت</li>
-<li><strong>سعر وجود البطاقة:</strong> سعر ثابت تنافسي (راجع <a href="/ar/pricing">صفحة التسعير</a> لمعرفة الأسعار الحالية)</li>
+<li><strong>سعر وجود البطاقة:</strong> سعر ثابت تنافسي (راجع <a href="/ar/pricing/business">صفحة التسعير</a> لمعرفة الأسعار الحالية)</li>
 <li><strong>سعر عدم وجود البطاقة على الإنترنت/البطاقة:</strong> سعر ثابت أعلى قليلاً للمدفوعات عبر الإنترنت وروابط الدفع</li>
 <li><strong>العمولة على الحجوزات:</strong> صفر - لا توجد عمولة على أي حجز، بغض النظر عن كيفية عثور العميل عليك</li>
 <li><strong>رسوم المنصة الشهرية:</strong> متضمنة في اشتراك إدارة الصالون</li>

@@ -108,7 +108,7 @@ const salonKpisToTrackArticle: LocalBlogPost = {
 <li><strong>Include benchmarks:</strong> Display your KPIs alongside industry benchmarks and your own targets. Colour coding (green for on track, amber for attention needed, red for action required) makes status instantly visible.</li>
 <li><strong>Be accessible to your team:</strong> Relevant KPIs should be visible to staff who can influence them. Stylists should see their personal utilisation and productivity. Front desk should see no-show rates and booking conversion. Managers should see all seven.</li>
 </ul>
-<p>Review your dashboard weekly. Monthly is too slow to catch problems early. Daily is too noisy for strategic thinking. Weekly reviews give you the right balance of timeliness and perspective. Explore <a href="/en/pricing">The Daisy's plans</a> to see real-time dashboards that automate this entire process.</p>
+<p>Review your dashboard weekly. Monthly is too slow to catch problems early. Daily is too noisy for strategic thinking. Weekly reviews give you the right balance of timeliness and perspective. Explore <a href="/en/pricing/business">The Daisy's plans</a> to see real-time dashboards that automate this entire process.</p>
 
 <h2>Common KPI Mistakes to Avoid</h2>
 <ul>
@@ -289,7 +289,7 @@ const salonClientLifetimeValueArticle: LocalBlogPost = {
 <li><strong>Declining CLV:</strong> A serious warning signal. Diagnose which lever is weakening - are clients spending less, visiting less often, or leaving sooner? The answer determines the response.</li>
 </ul>
 <p>Compare CLV trends across segments to identify which client groups are growing in value and which are declining. This intelligence is essential for strategic planning and resource allocation.</p>
-<p>Explore <a href="/en/pricing">The Daisy's pricing plans</a> to see how integrated analytics make CLV tracking automatic and actionable.</p>
+<p>Explore <a href="/en/pricing/business">The Daisy's pricing plans</a> to see how integrated analytics make CLV tracking automatic and actionable.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -499,7 +499,7 @@ const salonRevenueReportingArticle: LocalBlogPost = {
 <li>Trend analysis, benchmarking, and forecasting are built in.</li>
 <li>Custom reports can be generated for specific questions without spreadsheet expertise.</li>
 </ul>
-<p>The time saved on manual reporting can be redirected to actually analysing and acting on the data. Explore <a href="/en/pricing">The Daisy's pricing plans</a> to see how automated reporting fits into a complete salon management solution.</p>
+<p>The time saved on manual reporting can be redirected to actually analysing and acting on the data. Explore <a href="/en/pricing/business">The Daisy's pricing plans</a> to see how automated reporting fits into a complete salon management solution.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -688,7 +688,7 @@ const dataDrivenSalonManagementArticle: LocalBlogPost = {
 <li>You want automated alerts (e.g., "Client X is overdue for a visit" or "No-show rate increased 50% this week").</li>
 <li>You have more than 3 staff members and individual performance tracking becomes unwieldy in a spreadsheet.</li>
 </ul>
-<p>Modern platforms like The Daisy integrate booking, payments, client management, and analytics into one system, so every action automatically generates data that populates your dashboard. No manual entry, no spreadsheet formulas, no data reconciliation. Explore <a href="/en/pricing">pricing options</a> to find the right level of analytics for your business.</p>
+<p>Modern platforms like The Daisy integrate booking, payments, client management, and analytics into one system, so every action automatically generates data that populates your dashboard. No manual entry, no spreadsheet formulas, no data reconciliation. Explore <a href="/en/pricing/business">pricing options</a> to find the right level of analytics for your business.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -839,7 +839,7 @@ const salonKpisToTrackArticleAr: LocalBlogPost = {
 <li><strong>تضمين المعايير:</strong> اعرض مؤشرات الأداء الرئيسية الخاصة بك جنبًا إلى جنب مع معايير الصناعة وأهدافك الخاصة. الترميز اللوني (الأخضر للإشارة إلى المسار الصحيح، والعنبري للإشارة إلى الحاجة إلى الاهتمام، والأحمر للإشارة إلى الإجراء المطلوب) يجعل الحالة مرئية على الفور.</li>
 <li><strong>كن في متناول فريقك:</strong> يجب أن تكون مؤشرات الأداء الرئيسية ذات الصلة مرئية للموظفين الذين يمكنهم التأثير عليها. يجب أن يرى المصممون استخدامهم الشخصي وإنتاجيتهم. يجب أن يرى مكتب الاستقبال أسعار عدم الحضور وتحويل الحجز. يجب على المديرين رؤية جميع العناصر السبعة.</li>
 </ul>
-<p> قم بمراجعة لوحة التحكم الخاصة بك أسبوعيًا. الشهرية بطيئة جدًا بحيث لا يمكن اكتشاف المشكلات مبكرًا. الحياة اليومية صاخبة جدًا بالنسبة للتفكير الاستراتيجي. تمنحك المراجعات الأسبوعية التوازن الصحيح بين التوقيت المناسب والمنظور. استكشف <a href="/ar/pricing"> خطط ديزي</a> للاطلاع على لوحات المعلومات في الوقت الفعلي التي تعمل على أتمتة هذه العملية بأكملها.</p>
+<p> قم بمراجعة لوحة التحكم الخاصة بك أسبوعيًا. الشهرية بطيئة جدًا بحيث لا يمكن اكتشاف المشكلات مبكرًا. الحياة اليومية صاخبة جدًا بالنسبة للتفكير الاستراتيجي. تمنحك المراجعات الأسبوعية التوازن الصحيح بين التوقيت المناسب والمنظور. استكشف <a href="/ar/pricing/business"> خطط ديزي</a> للاطلاع على لوحات المعلومات في الوقت الفعلي التي تعمل على أتمتة هذه العملية بأكملها.</p>
 
 <h2>أخطاء مؤشرات الأداء الرئيسية الشائعة التي يجب تجنبها</h2>
 <ul>
@@ -967,7 +967,7 @@ const salonClientLifetimeValueArticleAr: LocalBlogPost = {
 <li><strong>انخفاض CLV:</strong> إشارة تحذير خطيرة. قم بتشخيص الرافعة التي تضعف - هل ينفق العملاء أقل، أو يزورون أقل في كثير من الأحيان، أو يغادرون عاجلاً؟ الجواب هو الذي يحدد الرد.</li>
 </ul>
 <p> قارن اتجاهات CLV عبر القطاعات لتحديد مجموعات العملاء التي تتزايد قيمتها وتلك التي تتراجع. تعتبر هذه المعلومات ضرورية للتخطيط الاستراتيجي وتخصيص الموارد.</p>
-<p>استكشف <a href="/ar/pricing">خطط تسعير ديزي</a> لترى كيف تجعل التحليلات المتكاملة تتبع CLV تلقائيًا وقابلاً للتنفيذ.</p>
+<p>استكشف <a href="/ar/pricing/business">خطط تسعير ديزي</a> لترى كيف تجعل التحليلات المتكاملة تتبع CLV تلقائيًا وقابلاً للتنفيذ.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1124,7 +1124,7 @@ const salonRevenueReportingArticleAr: LocalBlogPost = {
 <li> تم تضمين تحليل الاتجاهات وقياس الأداء والتنبؤ.</li>
 <li>يمكن إنشاء تقارير مخصصة لأسئلة محددة دون خبرة في جداول البيانات.</li>
 </ul>
-<p> يمكن إعادة توجيه الوقت الموفر في التقارير اليدوية إلى تحليل البيانات والتصرف بناءً عليها. استكشف <a href="/ar/pricing"> خطط تسعير ديزي</a> لترى كيف تتناسب التقارير الآلية مع الحل الكامل لإدارة الصالون.</p>
+<p> يمكن إعادة توجيه الوقت الموفر في التقارير اليدوية إلى تحليل البيانات والتصرف بناءً عليها. استكشف <a href="/ar/pricing/business"> خطط تسعير ديزي</a> لترى كيف تتناسب التقارير الآلية مع الحل الكامل لإدارة الصالون.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1257,7 +1257,7 @@ const dataDrivenSalonManagementArticleAr: LocalBlogPost = {
 <li>تريد تنبيهات تلقائية (على سبيل المثال، "العميل X متأخر عن الزيارة" أو "زاد معدل عدم الحضور بنسبة 50% هذا الأسبوع").</li>
 <li>لديك أكثر من 3 موظفين ويصبح تتبع الأداء الفردي غير عملي في جدول البيانات.</li>
 </ul>
-<p> تعمل الأنظمة الأساسية الحديثة مثل ديزي على دمج الحجز والمدفوعات وإدارة العملاء والتحليلات في نظام واحد، بحيث يؤدي كل إجراء تلقائيًا إلى إنشاء بيانات تملأ لوحة المعلومات الخاصة بك. لا يوجد إدخال يدوي، ولا صيغ لجداول البيانات، ولا تسوية للبيانات. استكشف <a href="/ar/pricing">خيارات التسعير</a> للعثور على المستوى المناسب من التحليلات لنشاطك التجاري.</p>
+<p> تعمل الأنظمة الأساسية الحديثة مثل ديزي على دمج الحجز والمدفوعات وإدارة العملاء والتحليلات في نظام واحد، بحيث يؤدي كل إجراء تلقائيًا إلى إنشاء بيانات تملأ لوحة المعلومات الخاصة بك. لا يوجد إدخال يدوي، ولا صيغ لجداول البيانات، ولا تسوية للبيانات. استكشف <a href="/ar/pricing/business">خيارات التسعير</a> للعثور على المستوى المناسب من التحليلات لنشاطك التجاري.</p>
 
 <h2>الأسئلة الشائعة</h2>
 

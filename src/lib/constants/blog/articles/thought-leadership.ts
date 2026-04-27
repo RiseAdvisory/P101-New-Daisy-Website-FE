@@ -118,7 +118,7 @@ const deathOfSalonSoftwareArticle: LocalBlogPost = {
 <li><strong>Cashback programme</strong> incentivises retention, feeding lifetime value data back to analytics.</li>
 </ul>
 <p>Every component makes every other component more effective. This is fundamentally different from stitching together separate tools with integrations that break, sync slowly, and create data gaps.</p>
-<p>Explore <a href="/en/pricing">pricing</a> that reflects platform value, not just software features.</p>
+<p>Explore <a href="/en/pricing/business">pricing</a> that reflects platform value, not just software features.</p>
 
 <h2>How to Evaluate Whether You Are on Software or a Platform</h2>
 <p>Ask these questions about your current solution:</p>
@@ -144,7 +144,7 @@ const deathOfSalonSoftwareArticle: LocalBlogPost = {
 <p>Integrations connect separate tools that were designed independently. Data syncs are delayed, formats are inconsistent, and when one tool updates, integrations break. A platform ecosystem is built as one system where every feature shares the same database, the same AI engine, and the same client profiles in real time. The result is seamless, reliable, and intelligent in ways that integrations cannot replicate.</p>
 
 <h3>What does the transition from salon software to a platform cost?</h3>
-<p>Most modern platforms, including The Daisy, charge a monthly subscription comparable to what you currently pay for salon software alone. Since the platform replaces multiple separate tools (booking, marketing, CRM, communication), the total cost often decreases while capability dramatically increases. See our <a href="/en/pricing">pricing page</a> for specific plans.</p>
+<p>Most modern platforms, including The Daisy, charge a monthly subscription comparable to what you currently pay for salon software alone. Since the platform replaces multiple separate tools (booking, marketing, CRM, communication), the total cost often decreases while capability dramatically increases. See our <a href="/en/pricing/business">pricing page</a> for specific plans.</p>
 
 <h3>How long does it take to see results after switching to a platform?</h3>
 <p>Operational improvements (automated booking, reduced no-shows, time savings) are visible within the first week. Revenue growth from new client acquisition and retention features typically materialises within 30-60 days. The full compounding effect of AI learning, data accumulation, and ecosystem synergies builds over the first 3-6 months.</p>
@@ -689,7 +689,7 @@ const fiveAppsHowToFixArticle: LocalBlogPost = {
 <li><strong>Consolidated platform:</strong> $100-300/month for a single platform with AI automation, marketplace visibility, cashback programme, marketing tools, analytics, and growth features your old stack could not provide.</li>
 <li><strong>Net savings:</strong> $100-500/month in direct costs, plus 20-40 hours/month in recovered time, plus revenue growth from features your old tools did not offer.</li>
 </ul>
-<p>Calculate your specific savings using our <a href="/en/resources/blog/business/calculate-roi-switching-salon-software">ROI calculation framework</a>, or explore <a href="/en/pricing">The Daisy's pricing</a> to compare against your current total software spend.</p>
+<p>Calculate your specific savings using our <a href="/en/resources/blog/business/calculate-roi-switching-salon-software">ROI calculation framework</a>, or explore <a href="/en/pricing/business">The Daisy's pricing</a> to compare against your current total software spend.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -856,7 +856,7 @@ const deathOfSalonSoftwareArticleAr: LocalBlogPost = {
 <li><strong>برنامج الكاشباك</strong> يحفّز الاحتفاظ ويغذي بيانات القيمة العمرية للعميل إلى التحليلات.</li>
 </ul>
 <p>كل مكوّن يجعل كل مكوّن آخر أكثر فعالية. هذا مختلف جذريًا عن ربط أدوات منفصلة بتكاملات تنقطع وتتأخر في المزامنة وتخلق فجوات بيانات.</p>
-<p>استكشف <a href="/ar/pricing">الأسعار</a> التي تعكس قيمة المنصة وليس فقط ميزات البرنامج.</p>
+<p>استكشف <a href="/ar/pricing/business">الأسعار</a> التي تعكس قيمة المنصة وليس فقط ميزات البرنامج.</p>
 
 <h2>كيف تقيّم هل أنت على برنامج أم منصة</h2>
 <p>اطرح هذه الأسئلة حول حلك الحالي:</p>
@@ -882,7 +882,7 @@ const deathOfSalonSoftwareArticleAr: LocalBlogPost = {
 <p>التكاملات تربط أدوات منفصلة صُممت بشكل مستقل. مزامنة البيانات متأخرة والتنسيقات غير متسقة وعندما تُحدّث أداة واجهتها البرمجية، تنقطع التكاملات. منظومة المنصة بُنيت كنظام واحد حيث تتشارك كل ميزة نفس قاعدة البيانات ونفس محرك الذكاء الاصطناعي ونفس ملفات العملاء في الوقت الفعلي. النتيجة سلسة وموثوقة وذكية بطرق لا يمكن للتكاملات تكرارها.</p>
 
 <h3>ما تكلفة الانتقال من برامج الصالونات لمنصة؟</h3>
-<p>معظم المنصات الحديثة، بما فيها ديزي، تفرض اشتراكًا شهريًا مماثلاً لما تدفعه حاليًا لبرامج الصالونات وحدها. بما أن المنصة تستبدل عدة أدوات منفصلة (حجز وتسويق وCRM وتواصل)، غالبًا ما تنخفض التكلفة الإجمالية بينما تزيد القدرات بشكل كبير. اطّلع على <a href="/ar/pricing">صفحة الأسعار</a> للخطط المحددة.</p>
+<p>معظم المنصات الحديثة، بما فيها ديزي، تفرض اشتراكًا شهريًا مماثلاً لما تدفعه حاليًا لبرامج الصالونات وحدها. بما أن المنصة تستبدل عدة أدوات منفصلة (حجز وتسويق وCRM وتواصل)، غالبًا ما تنخفض التكلفة الإجمالية بينما تزيد القدرات بشكل كبير. اطّلع على <a href="/ar/pricing/business">صفحة الأسعار</a> للخطط المحددة.</p>
 
 <h3>كم يستغرق رؤية النتائج بعد التحول لمنصة؟</h3>
 <p>التحسينات التشغيلية (حجز آلي وتقليل عدم الحضور وتوفير الوقت) تظهر خلال الأسبوع الأول. نمو الإيرادات من اكتساب عملاء جدد وميزات الاحتفاظ يتحقق عادةً خلال 30-60 يومًا. التأثير التراكمي الكامل لتعلم الذكاء الاصطناعي وتراكم البيانات وتآزر المنظومة يُبنى على مدى أول 3-6 أشهر.</p>
@@ -1282,7 +1282,7 @@ const fiveAppsHowToFixArticleAr: LocalBlogPost = {
 <li><strong>النظام الأساسي الموحد:</strong> 100-300 دولار شهريًا لمنصة واحدة مع أتمتة الذكاء الاصطناعي، ورؤية السوق، وبرنامج الكاشباك، وأدوات التسويق، والتحليلات، وميزات النمو التي لا يمكن أن توفرها مجموعتك القديمة.</li>
 <li><strong>صافي التوفير:</strong> 100-500 دولار أمريكي شهريًا في التكاليف المباشرة، بالإضافة إلى 20-40 ساعة شهريًا في وقت الاسترداد، بالإضافة إلى نمو الإيرادات من الميزات التي لم توفرها أدواتك القديمة.</li>
 </ul>
-<p>احسب مدخراتك المحددة باستخدام <a href="/ar/resources/blog/business/calculate-roi-switching-salon-software">إطار حساب عائد الاستثمار</a>، أو استكشف <a href="/ar/pricing">تسعير ديزي</a> للمقارنة بإجمالي إنفاقك الحالي على البرامج.</p>
+<p>احسب مدخراتك المحددة باستخدام <a href="/ar/resources/blog/business/calculate-roi-switching-salon-software">إطار حساب عائد الاستثمار</a>، أو استكشف <a href="/ar/pricing/business">تسعير ديزي</a> للمقارنة بإجمالي إنفاقك الحالي على البرامج.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
