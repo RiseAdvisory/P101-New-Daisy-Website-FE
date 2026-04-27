@@ -2,10 +2,10 @@ import { MetadataRoute } from 'next';
 import { getAllBlogSlugs } from '@/lib/api/blog';
 import { getAllCompareSlugs, getAllAlternativeSlugs } from '@/lib/constants/competitors/comparisonPages';
 import { getAllSolutionSlugs } from '@/lib/constants/solutions';
-import { getAllGlossarySlugs } from '@/lib/constants/glossary/glossaryData';
-import { getAllGuideSlugs } from '@/lib/constants/guides/guideData';
+import { getGlossarySitemapData } from '@/lib/constants/glossary/glossaryData';
+import { getGuideSitemapData } from '@/lib/constants/guides/guideData';
 import { getAllFeatureDeepDiveSlugs } from '@/lib/constants/features/featureDeepDive';
-import { getAllPillarSlugs } from '@/lib/constants/pillars';
+import { getPillarSitemapData } from '@/lib/constants/pillars';
 import { getAllAngleParams } from '@/lib/constants/solutions/angles';
 
 const BASE_URL = 'https://www.jointhedaisy.com';
@@ -118,12 +118,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...localizedEntries('/insights', { lastModified: SEO_CONTENT_DATE, changeFrequency: 'monthly', priority: 0.7 }),
   ];
 
-  const glossaryPages = getAllGlossarySlugs().flatMap((slug) =>
-    localizedEntries(`/glossary/${slug}`, { lastModified: SEO_CONTENT_DATE, changeFrequency: 'monthly', priority: 0.7 })
+  const glossaryPages = getGlossarySitemapData().flatMap(({ slug, lastUpdated }) =>
+    localizedEntries(`/glossary/${slug}`, {
+      lastModified: lastUpdated || SEO_CONTENT_DATE,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    })
   );
 
-  const guidePages = getAllGuideSlugs().flatMap((slug) =>
-    localizedEntries(`/guides/${slug}`, { lastModified: SEO_CONTENT_DATE, changeFrequency: 'monthly', priority: 0.7 })
+  const guidePages = getGuideSitemapData().flatMap(({ slug, lastUpdated }) =>
+    localizedEntries(`/guides/${slug}`, {
+      lastModified: lastUpdated || SEO_CONTENT_DATE,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    })
   );
 
   // Feature deep-dive pages (WS3)
@@ -145,9 +153,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   );
 
   // Pillar pages, top-level authority pages (highest SEO priority after homepage)
-  const pillarPages = getAllPillarSlugs().flatMap((slug) =>
+  const pillarPages = getPillarSitemapData().flatMap(({ slug, lastUpdated }) =>
     localizedEntries(`/${slug}`, {
-      lastModified: SEO_CONTENT_DATE,
+      lastModified: lastUpdated,
       changeFrequency: 'monthly',
       priority: 0.9,
     })

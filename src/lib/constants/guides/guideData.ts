@@ -6,6 +6,8 @@ export interface GuideStep {
 }
 
 export interface GuideData {
+  /** ISO date — bump when the entry's content changes; surfaces in sitemap lastmod. */
+  lastUpdated?: string;
   slug: string;
   title: string;
   answer: string;
@@ -805,4 +807,9 @@ export function getGuide(slug: string): GuideData | undefined {
 
 export function getAllGuideSlugs(): string[] {
   return guideData.en.map((entry) => entry.slug);
+}
+
+/** Sitemap-friendly view: slug + optional per-entry lastUpdated. */
+export function getGuideSitemapData(): { slug: string; lastUpdated?: string }[] {
+  return guideData.en.map(({ slug, lastUpdated }) => ({ slug, lastUpdated }));
 }

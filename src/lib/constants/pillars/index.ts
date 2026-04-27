@@ -116,6 +116,11 @@ export function getAllPillarSlugs(): string[] {
   return allPillarPages.map((p) => p.slug);
 }
 
+/** Sitemap-friendly view: slug + per-pillar lastUpdated (always present on pillars). */
+export function getPillarSitemapData(): { slug: string; lastUpdated: string }[] {
+  return allPillarPages.map(({ slug, lastUpdated }) => ({ slug, lastUpdated }));
+}
+
 export function getAllPillarPages(locale: string = 'en'): PillarPageData[] {
   return t(getPillarsI18n(), locale).allPillarPages;
 }
