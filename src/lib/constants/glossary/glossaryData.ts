@@ -25,7 +25,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'is a digital platform that helps salon owners manage daily operations including appointment scheduling, client records, staff management, payments, and marketing from a single system.',
       extendedDescription:
-        'Salon management software replaces manual booking systems, paper records, and disconnected tools with one integrated platform. Modern solutions like Daisy go beyond basic operations to include AI-powered features such as automated customer acquisition, voice receptionists, and predictive analytics. The global salon software market is projected to reach $712 million by 2028, driven by increasing demand for automation and customer experience tools. For a comprehensive evaluation framework, read the <a href="/en/salon-management-software">complete salon management software guide</a>.',
+        'Salon management software replaces manual booking systems, paper records, and disconnected tools with one integrated platform. Modern solutions like Daisy go beyond basic operations to include AI-powered features such as automated customer acquisition, voice receptionists, and predictive analytics. The global salon software market is projected to reach $712 million by 2028, driven by increasing demand for automation and customer experience tools.',
       keyFeatures: [
         { label: 'Online Booking', daisy: 'AI-powered 24/7', typical: 'Basic web form' },
         { label: 'Payment Processing', daisy: 'No transaction fees', typical: '2-3% per transaction' },
@@ -91,7 +91,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'is an artificial intelligence system that handles phone calls, chat messages, and booking inquiries for beauty businesses 24/7, automatically scheduling appointments, answering questions, and processing payments without human intervention.',
       extendedDescription:
-        'An AI receptionist uses natural language processing and voice synthesis to interact with customers just like a human receptionist would. It can answer calls during and after business hours, handle multiple conversations simultaneously, and convert inquiries into bookings. Research indicates that beauty businesses miss up to 35% of inbound calls outside business hours -- revenue that an AI receptionist can recapture. Learn how AI receptionist capabilities fit into a <a href="/en/salon-management-software">complete salon management platform</a>.',
+        'An AI receptionist uses natural language processing and voice synthesis to interact with customers just like a human receptionist would. It can answer calls during and after business hours, handle multiple conversations simultaneously, and convert inquiries into bookings. Research indicates that beauty businesses miss up to 35% of inbound calls outside business hours -- revenue that an AI receptionist can recapture.',
       keyFeatures: [
         { label: '24/7 Availability', daisy: 'Always on', typical: 'Business hours only' },
         { label: 'Language Support', daisy: 'Arabic & English', typical: 'English only' },
@@ -157,7 +157,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'is a customer loyalty mechanism where beauty service platforms return a percentage of each booking value to the customer, incentivizing repeat visits and new customer acquisition through a rewards-based marketplace.',
       extendedDescription:
-        'Cashback in beauty booking works differently from traditional discount-based loyalty programs. Instead of devaluing services with percentage-off deals, cashback rewards customers with credits for future visits. This approach increases customer lifetime value by an estimated 20-30% while maintaining full service pricing. The model has been proven in retail and fintech and is now transforming beauty industry customer acquisition. See how cashback integrates with <a href="/en/glossary/salon-customer-management">salon customer management</a> to maximize client lifetime value.',
+        'Cashback in beauty booking works differently from traditional discount-based loyalty programs. Instead of devaluing services with percentage-off deals, cashback rewards customers with credits for future visits. This approach increases customer lifetime value by an estimated 20-30% while maintaining full service pricing. The model has been proven in retail and fintech and is now transforming beauty industry customer acquisition.',
       keyFeatures: [
         { label: 'Reward Type', daisy: 'Cashback credits', typical: 'Points or discounts' },
         { label: 'Impact on Pricing', daisy: 'Full price maintained', typical: 'Discounted services' },
@@ -222,7 +222,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'is a salon management platform that can be fully rebranded with your business\'s logo, colors, domain, and identity -- so every customer touchpoint (booking page, app, receipts, communications) shows your brand, not the software provider\'s.',
       extendedDescription:
-        'White-label salon software solves a critical branding problem: most salon platforms force businesses to use the provider\'s branding, which dilutes brand identity and creates customer confusion. With white-label solutions, your booking page looks like YOUR website, confirmation emails come from YOUR brand, and the customer experience is seamlessly branded. This is particularly important for premium salons and multi-location businesses building brand equity. Explore how white-label capabilities work alongside other features in a <a href="/en/salon-management-software">modern salon management system</a>.',
+        'White-label salon software solves a critical branding problem: most salon platforms force businesses to use the provider\'s branding, which dilutes brand identity and creates customer confusion. With white-label solutions, your booking page looks like YOUR website, confirmation emails come from YOUR brand, and the customer experience is seamlessly branded. This is particularly important for premium salons and multi-location businesses building brand equity.',
       keyFeatures: [
         { label: 'Booking Page', daisy: 'Fully branded', typical: 'Provider branded' },
         { label: 'Customer Communications', daisy: 'Your brand', typical: 'Software brand' },
@@ -353,7 +353,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'is the complete operational infrastructure — software, hardware, workflows, and integrations — that a beauty business uses to run daily operations, from appointment booking and point-of-sale terminals to staff coordination and customer communications.',
       extendedDescription:
-        'A salon management system goes beyond software alone. It encompasses the <a href="/en/glossary/salon-management-software">salon management software</a> platform, POS hardware, payment terminals, scheduling workflows, and the integrations that connect them into a unified operation. While "software" refers to the digital tool, "system" describes how everything works together — including team processes and customer touchpoints. Salons that implement a complete management system rather than bolting together separate tools report 25-35% higher operational efficiency and significantly fewer errors from manual data re-entry. The trend toward all-in-one systems is accelerating as salon owners recognize that disconnected tools create data silos, duplicated work, and missed opportunities. Read the <a href="/en/salon-management-software">complete salon management guide</a> for a deeper look at how modern systems transform beauty businesses.',
+        'A salon management system goes beyond software alone. It encompasses the <a href="/en/glossary/salon-management-software">salon management software</a> platform, POS hardware, payment terminals, scheduling workflows, and the integrations that connect them into a unified operation. While "software" refers to the digital tool, "system" describes how everything works together — including team processes and customer touchpoints. Salons that implement a complete management system rather than bolting together separate tools report 25-35% higher operational efficiency and significantly fewer errors from manual data re-entry. The trend toward all-in-one systems is accelerating as salon owners recognize that disconnected tools create data silos, duplicated work, and missed opportunities.',
       keyFeatures: [
         { label: 'Software Platform', daisy: 'All-in-one cloud', typical: 'Separate tools' },
         { label: 'POS Integration', daisy: 'Built-in, zero fees', typical: 'Third-party terminal' },
@@ -419,7 +419,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'is specialized functionality within <a href="/en/glossary/salon-management-software">salon management software</a> that handles staff scheduling, commission tracking, performance analytics, team permissions, and workforce coordination for beauty businesses.',
       extendedDescription:
-        'Managing salon employees involves unique challenges that generic HR tools cannot address: commission-based pay structures, chair rental arrangements, skill-based appointment routing, rotating schedules, and per-stylist performance metrics. Salon employee management software solves these by integrating staff scheduling directly with the booking calendar, automatically calculating commissions based on service revenue, and providing per-employee analytics. Salons with 5+ staff members typically save 3-5 hours per week on scheduling and payroll tasks alone. For a broader view of how staff management fits into the complete platform, see the <a href="/en/salon-management-software">salon management software guide</a>.',
+        'Managing salon employees involves unique challenges that generic HR tools cannot address: commission-based pay structures, chair rental arrangements, skill-based appointment routing, rotating schedules, and per-stylist performance metrics. Salon employee management software solves these by integrating staff scheduling directly with the booking calendar, automatically calculating commissions based on service revenue, and providing per-employee analytics. Salons with 5+ staff members typically save 3-5 hours per week on scheduling and payroll tasks alone.',
       keyFeatures: [
         { label: 'Shift Scheduling', daisy: 'AI-optimized rosters', typical: 'Manual spreadsheet' },
         { label: 'Commission Tracking', daisy: 'Automatic per-service', typical: 'Manual calculation' },
@@ -485,7 +485,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'is the practice of collecting, organizing, and leveraging client data — visit history, service preferences, spending patterns, and communication records — to deliver personalized experiences, increase retention, and grow lifetime value in a beauty business.',
       extendedDescription:
-        'Salon customer management (often called salon CRM) transforms a business from reactive service delivery to proactive client relationship building. Instead of treating every visit as a standalone transaction, customer management tools create a 360-degree profile of each client — their preferred stylist, product sensitivities, color formulas, visit frequency, and spending habits. Research shows that increasing client retention by just 5% can boost profits by 25-95%, making customer management the highest-ROI function in most salons. Platforms like <a href="/en/glossary/salon-management-software">salon management software</a> integrate CRM directly with booking and payments so data flows automatically — no manual entry required. For the full picture, see the <a href="/en/salon-management-software">complete salon management guide</a>.',
+        'Salon customer management (often called salon CRM) transforms a business from reactive service delivery to proactive client relationship building. Instead of treating every visit as a standalone transaction, customer management tools create a 360-degree profile of each client — their preferred stylist, product sensitivities, color formulas, visit frequency, and spending habits. Research shows that increasing client retention by just 5% can boost profits by 25-95%, making customer management the highest-ROI function in most salons. Platforms like <a href="/en/glossary/salon-management-software">salon management software</a> integrate CRM directly with booking and payments so data flows automatically — no manual entry required.',
       keyFeatures: [
         { label: 'Client Profiles', daisy: 'AI-enriched 360-degree', typical: 'Basic contact card' },
         { label: 'Visit History', daisy: 'Full service + product + notes', typical: 'Appointment dates only' },
@@ -553,7 +553,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'هو منصة رقمية تساعد أصحاب الصالونات على إدارة العمليات اليومية بما في ذلك جدولة المواعيد، وسجلات العملاء، وإدارة الموظفين، والمدفوعات، والتسويق من نظام واحد.',
       extendedDescription:
-        'يستبدل برنامج إدارة الصالونات أنظمة الحجز اليدوية والسجلات الورقية والأدوات المنفصلة بمنصة متكاملة واحدة. تتجاوز الحلول الحديثة مثل ديزي العمليات الأساسية لتشمل ميزات مدعومة بالذكاء الاصطناعي مثل اكتساب العملاء الآلي وموظف الاستقبال الذكي والتحليلات التنبؤية. من المتوقع أن يصل سوق برامج الصالونات العالمي إلى 712 مليون دولار بحلول عام 2028، مدفوعاً بالطلب المتزايد على أدوات الأتمتة وتجربة العملاء. لإطار تقييم شامل، اقرأ <a href="/ar/salon-management-software">الدليل الكامل لبرامج إدارة الصالونات</a>.',
+        'يستبدل برنامج إدارة الصالونات أنظمة الحجز اليدوية والسجلات الورقية والأدوات المنفصلة بمنصة متكاملة واحدة. تتجاوز الحلول الحديثة مثل ديزي العمليات الأساسية لتشمل ميزات مدعومة بالذكاء الاصطناعي مثل اكتساب العملاء الآلي وموظف الاستقبال الذكي والتحليلات التنبؤية. من المتوقع أن يصل سوق برامج الصالونات العالمي إلى 712 مليون دولار بحلول عام 2028، مدفوعاً بالطلب المتزايد على أدوات الأتمتة وتجربة العملاء.',
       keyFeatures: [
         { label: 'الحجز الإلكتروني', daisy: 'مدعوم بالذكاء الاصطناعي على مدار الساعة', typical: 'نموذج ويب بسيط' },
         { label: 'معالجة المدفوعات', daisy: 'بدون رسوم معاملات', typical: '2-3% لكل معاملة' },
@@ -619,7 +619,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'هو نظام ذكاء اصطناعي يتولى المكالمات الهاتفية والرسائل النصية واستفسارات الحجز لمشاريع التجميل على مدار الساعة، حيث يقوم بجدولة المواعيد والإجابة على الأسئلة ومعالجة المدفوعات تلقائياً دون تدخل بشري.',
       extendedDescription:
-        'يستخدم موظف الاستقبال الذكي معالجة اللغة الطبيعية وتركيب الصوت للتفاعل مع العملاء تمامًا كما يفعل موظف الاستقبال البشري. يمكنه الرد على المكالمات أثناء وبعد ساعات العمل، والتعامل مع محادثات متعددة في وقت واحد، وتحويل الاستفسارات إلى حجوزات. تشير الأبحاث إلى أن مشاريع التجميل تفقد ما يصل إلى 35% من المكالمات الواردة خارج ساعات العمل، وهي إيرادات يمكن لموظف الاستقبال الذكي استعادتها. تعرّف على كيفية تكامل قدرات موظف الاستقبال الذكي مع <a href="/ar/salon-management-software">منصة إدارة الصالونات الشاملة</a>.',
+        'يستخدم موظف الاستقبال الذكي معالجة اللغة الطبيعية وتركيب الصوت للتفاعل مع العملاء تمامًا كما يفعل موظف الاستقبال البشري. يمكنه الرد على المكالمات أثناء وبعد ساعات العمل، والتعامل مع محادثات متعددة في وقت واحد، وتحويل الاستفسارات إلى حجوزات. تشير الأبحاث إلى أن مشاريع التجميل تفقد ما يصل إلى 35% من المكالمات الواردة خارج ساعات العمل، وهي إيرادات يمكن لموظف الاستقبال الذكي استعادتها.',
       keyFeatures: [
         { label: 'التوفر على مدار الساعة', daisy: 'يعمل دائمًا', typical: 'ساعات العمل فقط' },
         { label: 'دعم اللغات', daisy: 'العربية والإنجليزية', typical: 'الإنجليزية فقط' },
@@ -685,7 +685,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'هو آلية ولاء للعملاء تقوم فيها منصات خدمات التجميل بإرجاع نسبة من قيمة كل حجز إلى العميل، مما يحفز الزيارات المتكررة واكتساب عملاء جدد من خلال سوق قائم على المكافآت.',
       extendedDescription:
-        'يعمل الكاشباك في حجز التجميل بشكل مختلف عن برامج الولاء التقليدية القائمة على الخصومات. بدلاً من تخفيض قيمة الخدمات بعروض نسب الخصم، يكافئ الكاشباك العملاء برصيد للزيارات المستقبلية. يزيد هذا النهج من القيمة الدائمة للعميل بنسبة تقدر بـ 20-30% مع الحفاظ على الأسعار الكاملة للخدمات. تم إثبات فعالية هذا النموذج في قطاعي التجزئة والتقنية المالية وهو يُحدث الآن تحولاً في اكتساب عملاء صناعة التجميل. اطلع على كيفية تكامل الكاشباك مع <a href="/ar/glossary/salon-customer-management">إدارة عملاء الصالون</a> لتعظيم القيمة الدائمة للعميل.',
+        'يعمل الكاشباك في حجز التجميل بشكل مختلف عن برامج الولاء التقليدية القائمة على الخصومات. بدلاً من تخفيض قيمة الخدمات بعروض نسب الخصم، يكافئ الكاشباك العملاء برصيد للزيارات المستقبلية. يزيد هذا النهج من القيمة الدائمة للعميل بنسبة تقدر بـ 20-30% مع الحفاظ على الأسعار الكاملة للخدمات. تم إثبات فعالية هذا النموذج في قطاعي التجزئة والتقنية المالية وهو يُحدث الآن تحولاً في اكتساب عملاء صناعة التجميل.',
       keyFeatures: [
         { label: 'نوع المكافأة', daisy: 'رصيد كاشباك', typical: 'نقاط أو خصومات' },
         { label: 'التأثير على التسعير', daisy: 'الحفاظ على السعر الكامل', typical: 'خدمات مخفضة' },
@@ -750,7 +750,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'هي منصة إدارة صالونات يمكن إعادة تسميتها بالكامل بشعار عملك وألوانه ونطاقه وهويته، بحيث تعرض كل نقطة تواصل مع العميل (صفحة الحجز، والتطبيق، والإيصالات، والاتصالات) علامتك التجارية لا العلامة التجارية لمزوّد البرنامج.',
       extendedDescription:
-        'يحل برنامج الصالون ذو العلامة التجارية البيضاء مشكلة حرجة في الهوية التجارية: معظم منصات الصالونات تجبر المشاريع على استخدام العلامة التجارية للمزوّد، مما يُضعف هوية المشروع ويسبب ارتباك العملاء. مع حلول العلامة التجارية البيضاء، تبدو صفحة الحجز الخاصة بك كامتداد لموقعك الإلكتروني، وتصل رسائل التأكيد باسم علامتك التجارية، وتظهر تجربة العميل بهوية متسقة وسلسة. هذا مهم بشكل خاص للصالونات الراقية والمشاريع متعددة الفروع التي تبني قيمة علامتها التجارية. استكشف كيف تعمل قدرات العلامة التجارية البيضاء جنبًا إلى جنب مع الميزات الأخرى في <a href="/ar/salon-management-software">نظام إدارة الصالونات الحديث</a>.',
+        'يحل برنامج الصالون ذو العلامة التجارية البيضاء مشكلة حرجة في الهوية التجارية: معظم منصات الصالونات تجبر المشاريع على استخدام العلامة التجارية للمزوّد، مما يُضعف هوية المشروع ويسبب ارتباك العملاء. مع حلول العلامة التجارية البيضاء، تبدو صفحة الحجز الخاصة بك كامتداد لموقعك الإلكتروني، وتصل رسائل التأكيد باسم علامتك التجارية، وتظهر تجربة العميل بهوية متسقة وسلسة. هذا مهم بشكل خاص للصالونات الراقية والمشاريع متعددة الفروع التي تبني قيمة علامتها التجارية.',
       keyFeatures: [
         { label: 'صفحة الحجز', daisy: 'بعلامتك التجارية بالكامل', typical: 'بعلامة المزود' },
         { label: 'اتصالات العملاء', daisy: 'علامتك التجارية', typical: 'علامة البرنامج' },
@@ -881,7 +881,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'هو البنية التحتية التشغيلية الكاملة — البرمجيات والأجهزة وسير العمل والتكاملات — التي يستخدمها مشروع التجميل لتشغيل العمليات اليومية، من حجز المواعيد وأجهزة نقاط البيع إلى تنسيق الموظفين والتواصل مع العملاء.',
       extendedDescription:
-        'يتجاوز نظام إدارة الصالونات البرمجيات وحدها. فهو يشمل منصة <a href="/ar/glossary/salon-management-software">برنامج إدارة الصالونات</a> وأجهزة نقاط البيع وأجهزة الدفع وسير عمل الجدولة والتكاملات التي تربطها في عملية موحدة. بينما تشير "البرمجيات" إلى الأداة الرقمية، يصف "النظام" كيف يعمل كل شيء معاً — بما في ذلك عمليات الفريق ونقاط تواصل العملاء. تُبلغ الصالونات التي تطبق نظام إدارة كامل بدلاً من تجميع أدوات منفصلة عن كفاءة تشغيلية أعلى بنسبة 25-35% وأخطاء أقل بشكل ملحوظ من إعادة الإدخال اليدوي للبيانات. يتسارع الاتجاه نحو الأنظمة المتكاملة مع إدراك أصحاب الصالونات أن الأدوات المنفصلة تخلق صوامع بيانات وعملاً مكرراً وفرصاً ضائعة. اقرأ <a href="/ar/salon-management-software">الدليل الكامل لإدارة الصالونات</a> لنظرة أعمق على كيفية تحويل الأنظمة الحديثة لمشاريع التجميل.',
+        'يتجاوز نظام إدارة الصالونات البرمجيات وحدها. فهو يشمل منصة <a href="/ar/glossary/salon-management-software">برنامج إدارة الصالونات</a> وأجهزة نقاط البيع وأجهزة الدفع وسير عمل الجدولة والتكاملات التي تربطها في عملية موحدة. بينما تشير "البرمجيات" إلى الأداة الرقمية، يصف "النظام" كيف يعمل كل شيء معاً — بما في ذلك عمليات الفريق ونقاط تواصل العملاء. تُبلغ الصالونات التي تطبق نظام إدارة كامل بدلاً من تجميع أدوات منفصلة عن كفاءة تشغيلية أعلى بنسبة 25-35% وأخطاء أقل بشكل ملحوظ من إعادة الإدخال اليدوي للبيانات. يتسارع الاتجاه نحو الأنظمة المتكاملة مع إدراك أصحاب الصالونات أن الأدوات المنفصلة تخلق صوامع بيانات وعملاً مكرراً وفرصاً ضائعة.',
       keyFeatures: [
         { label: 'المنصة البرمجية', daisy: 'سحابية متكاملة', typical: 'أدوات منفصلة' },
         { label: 'تكامل نقاط البيع', daisy: 'مدمج بدون رسوم', typical: 'جهاز طرف ثالث' },
@@ -947,7 +947,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'هو وظائف متخصصة ضمن <a href="/ar/glossary/salon-management-software">برنامج إدارة الصالونات</a> تتولى جدولة الموظفين وتتبع العمولات وتحليلات الأداء وصلاحيات الفريق وتنسيق القوى العاملة لمشاريع التجميل.',
       extendedDescription:
-        'تنطوي إدارة موظفي الصالون على تحديات فريدة لا تستطيع أدوات الموارد البشرية العامة معالجتها: هياكل الأجور القائمة على العمولة وترتيبات تأجير الكراسي وتوجيه المواعيد حسب المهارات والجداول المتناوبة ومقاييس أداء كل مصفف. يحل برنامج إدارة موظفي الصالون هذه التحديات من خلال دمج جدولة الموظفين مباشرة مع تقويم الحجز وحساب العمولات تلقائياً بناءً على إيرادات الخدمات وتوفير تحليلات لكل موظف. توفر الصالونات التي تضم 5 موظفين أو أكثر عادةً 3-5 ساعات أسبوعياً في مهام الجدولة والرواتب وحدها. للاطلاع على رؤية أشمل لكيفية تكامل إدارة الموظفين مع المنصة الكاملة، راجع <a href="/ar/salon-management-software">دليل برنامج إدارة الصالونات</a>.',
+        'تنطوي إدارة موظفي الصالون على تحديات فريدة لا تستطيع أدوات الموارد البشرية العامة معالجتها: هياكل الأجور القائمة على العمولة وترتيبات تأجير الكراسي وتوجيه المواعيد حسب المهارات والجداول المتناوبة ومقاييس أداء كل مصفف. يحل برنامج إدارة موظفي الصالون هذه التحديات من خلال دمج جدولة الموظفين مباشرة مع تقويم الحجز وحساب العمولات تلقائياً بناءً على إيرادات الخدمات وتوفير تحليلات لكل موظف. توفر الصالونات التي تضم 5 موظفين أو أكثر عادةً 3-5 ساعات أسبوعياً في مهام الجدولة والرواتب وحدها.',
       keyFeatures: [
         { label: 'جدولة الورديات', daisy: 'جداول محسّنة بالذكاء الاصطناعي', typical: 'جدول بيانات يدوي' },
         { label: 'تتبع العمولات', daisy: 'آلي لكل خدمة', typical: 'حساب يدوي' },
@@ -1013,7 +1013,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'هي ممارسة جمع وتنظيم والاستفادة من بيانات العملاء — سجل الزيارات وتفضيلات الخدمات وأنماط الإنفاق وسجلات التواصل — لتقديم تجارب مخصصة وزيادة الاحتفاظ وتنمية القيمة الدائمة في مشروع التجميل.',
       extendedDescription:
-        'تحوّل إدارة عملاء الصالون (المعروفة أيضاً بنظام CRM للصالون) المشروع من تقديم خدمات تفاعلي إلى بناء علاقات عملاء استباقي. بدلاً من التعامل مع كل زيارة كمعاملة مستقلة، تنشئ أدوات إدارة العملاء ملفًا شاملاً لكل عميل — المصفف المفضل، وحساسيات المنتجات، وصيغ الألوان، وتكرار الزيارات، وعادات الإنفاق. تُظهر الأبحاث أن زيادة الاحتفاظ بالعملاء بنسبة 5% فقط يمكن أن تعزز الأرباح بنسبة 25-95%، مما يجعل إدارة العملاء الوظيفة ذات أعلى عائد على الاستثمار في معظم الصالونات. تدمج منصات مثل <a href="/ar/glossary/salon-management-software">برامج إدارة الصالونات</a> نظام CRM مباشرة مع الحجز والمدفوعات بحيث تتدفق البيانات تلقائيًا، من دون إدخال يدوي. وللصورة الكاملة، راجع <a href="/ar/salon-management-software">الدليل الكامل لإدارة الصالونات</a>.',
+        'تحوّل إدارة عملاء الصالون (المعروفة أيضاً بنظام CRM للصالون) المشروع من تقديم خدمات تفاعلي إلى بناء علاقات عملاء استباقي. بدلاً من التعامل مع كل زيارة كمعاملة مستقلة، تنشئ أدوات إدارة العملاء ملفًا شاملاً لكل عميل — المصفف المفضل، وحساسيات المنتجات، وصيغ الألوان، وتكرار الزيارات، وعادات الإنفاق. تُظهر الأبحاث أن زيادة الاحتفاظ بالعملاء بنسبة 5% فقط يمكن أن تعزز الأرباح بنسبة 25-95%، مما يجعل إدارة العملاء الوظيفة ذات أعلى عائد على الاستثمار في معظم الصالونات. تدمج منصات مثل <a href="/ar/glossary/salon-management-software">برامج إدارة الصالونات</a> نظام CRM مباشرة مع الحجز والمدفوعات بحيث تتدفق البيانات تلقائيًا، من دون إدخال يدوي.',
       keyFeatures: [
         { label: 'ملفات العملاء', daisy: 'شاملة ومعززة بالذكاء الاصطناعي', typical: 'بطاقة جهات اتصال بسيطة' },
         { label: 'سجل الزيارات', daisy: 'خدمات + منتجات + ملاحظات كاملة', typical: 'تواريخ المواعيد فقط' },
