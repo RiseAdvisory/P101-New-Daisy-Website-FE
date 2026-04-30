@@ -76,8 +76,11 @@ export const ChangeUserTypeMobile = ({
   }, [pathname, router, locale]);
 
   useEffect(() => {
+    // Don't overwrite the default with an empty string before the
+    // localStorage-mount effect has had a chance to hydrate `active`.
+    if (!active) return;
     setUserChange(active);
-    if (typeof window !== 'undefined' && active) {
+    if (typeof window !== 'undefined') {
       localStorage.setItem('activePage', active);
     }
   }, [active]); //UserType
@@ -132,13 +135,20 @@ export const ChangeUserTypeMobile = ({
     if (typeof window !== 'undefined') {
       let currentPath = localStorage.getItem('activePage');
 
-      // Redirect customer to business
-      if (currentPath === '/customer' || currentPath === 'customer') {
+      // Default to business on first visit, and redirect deprecated customer
+      // value. Keeping these together ensures the dropdown trigger always has
+      // a label even on a brand-new mobile visitor whose URL isn't
+      // persona-specific (e.g. /contact, /glossary/<slug>, etc.).
+      if (
+        !currentPath ||
+        currentPath === '/customer' ||
+        currentPath === 'customer'
+      ) {
         currentPath = '/business';
         localStorage.setItem('activePage', '/business');
       }
 
-      if (currentPath) setActive(currentPath);
+      setActive(currentPath);
       // Update indices since we filtered out customer (now business is [0], professional is [1])
       if (currentPath === '/business') setCurrentPage(dataList?.[0]?.label);
       if (currentPath === '/professional') setCurrentPage(dataList?.[1]?.label);
