@@ -76,8 +76,11 @@ const ToggleButton = ({ className }: { className?: string }) => {
   }, [pathname]);
 
   useEffect(() => {
+    // Don't overwrite the default with an empty string before the
+    // localStorage-mount effect has had a chance to hydrate `active`.
+    if (!active) return;
     setUserChange(active);
-    if (typeof window !== 'undefined' && active) {
+    if (typeof window !== 'undefined') {
       localStorage.setItem('activePage', active);
     }
   }, [active]); //UserType
@@ -119,13 +122,19 @@ const ToggleButton = ({ className }: { className?: string }) => {
     if (typeof window !== 'undefined') {
       let currentPath = localStorage.getItem('activePage');
 
-      // Redirect customer to business
-      if (currentPath === '/customer' || currentPath === 'customer') {
+      // Default to business on first visit, and redirect deprecated customer
+      // value. Without the empty-localStorage default the toggle stays
+      // un-highlighted on first load when the URL isn't persona-specific.
+      if (
+        !currentPath ||
+        currentPath === '/customer' ||
+        currentPath === 'customer'
+      ) {
         currentPath = '/business';
         localStorage.setItem('activePage', '/business');
       }
 
-      if (currentPath) setActive(currentPath);
+      setActive(currentPath);
     }
   }, []);
   const { changePage } = useChangePage();
