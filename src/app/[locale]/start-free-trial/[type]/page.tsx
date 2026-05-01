@@ -9,12 +9,20 @@ import { t } from '@/lib/constants/i18n';
 
 const VALID_TYPES: TrialType[] = ['business', 'professional'];
 
-const metadataByType: Record<TrialType, { en: { title: string; description: string } }> = {
+const metadataByType: Record<
+  TrialType,
+  { en: { title: string; description: string }; ar: { title: string; description: string } }
+> = {
   business: {
     en: {
       title: 'Start Your Free Trial — Salon & Spa | The Daisy',
       description:
         'Set up your beauty business on The Daisy in minutes. 14-day free trial with full access to AI receptionist, booking, payments, marketing, and staff management. No credit card required.',
+    },
+    ar: {
+      title: 'ابدأ تجربتك المجانية — للصالونات والمنتجعات | ديزي',
+      description:
+        'أنشئ مشروعك للتجميل على ديزي في دقائق. تجربة مجانية لمدة 14 يوماً مع وصول كامل لموظف الاستقبال الذكي والحجز والمدفوعات والتسويق وإدارة الموظفين. بدون بطاقة ائتمان.',
     },
   },
   professional: {
@@ -22,6 +30,11 @@ const metadataByType: Record<TrialType, { en: { title: string; description: stri
       title: 'Start Free Trial — Professionals | The Daisy',
       description:
         'Create your professional profile on The Daisy and start accepting bookings. Free to join with flexible scheduling and 24/7 AI support.',
+    },
+    ar: {
+      title: 'ابدأ تجربتك المجانية — للمحترفين | ديزي',
+      description:
+        'أنشئ ملفك الشخصي كمحترف على ديزي وابدأ باستقبال الحجوزات. الانضمام مجاني مع جدولة مرنة ودعم ذكاء اصطناعي على مدار الساعة.',
     },
   },
 };
@@ -41,7 +54,8 @@ export function generateMetadata({
   const trialType = VALID_TYPES.includes(type as TrialType)
     ? (type as TrialType)
     : 'business';
-  const meta = metadataByType[trialType].en;
+  const isAr = locale === 'ar';
+  const meta = isAr ? metadataByType[trialType].ar : metadataByType[trialType].en;
 
   return {
     title: meta.title,
@@ -56,9 +70,11 @@ export function generateMetadata({
           url: '/images/og/og-default.jpg',
           width: 1200,
           height: 630,
-          alt: 'The Daisy - Start Free Trial',
+          alt: isAr ? 'ديزي - ابدأ تجربتك المجانية' : 'The Daisy - Start Free Trial',
         },
       ],
+      locale: isAr ? 'ar_KW' : 'en_US',
+      alternateLocale: isAr ? ['en_US'] : ['ar_KW'],
     },
     twitter: {
       card: 'summary_large_image',
@@ -84,24 +100,32 @@ export default function StartFreeTrialPage({
   const trialType = type as TrialType;
   const data = t(startFreeTrialData[trialType], locale);
   const defaultType = trialType === 'business' ? 'business' : 'professional';
+  const isAr = locale === 'ar';
+  const schemaMeta = isAr ? metadataByType[trialType].ar : metadataByType[trialType].en;
 
   return (
     <>
       <WebPageSchema
-        title={metadataByType[trialType].en.title}
-        description={metadataByType[trialType].en.description}
-        url={`https://www.jointhedaisy.com/start-free-trial/${trialType}`}
+        title={schemaMeta.title}
+        description={schemaMeta.description}
+        url={`https://www.jointhedaisy.com/${locale}/start-free-trial/${trialType}`}
         dateModified="2026-03-17T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
         locale={locale}
         items={[
           {
-            name: trialType === 'business' ? 'For Business' : 'For Professionals',
+            name: isAr
+              ? trialType === 'business'
+                ? 'للأعمال'
+                : 'للمحترفين'
+              : trialType === 'business'
+                ? 'For Business'
+                : 'For Professionals',
             url: `https://www.jointhedaisy.com/${trialType}`,
           },
           {
-            name: 'Start Free Trial',
+            name: isAr ? 'ابدأ تجربتك المجانية' : 'Start Free Trial',
             url: `https://www.jointhedaisy.com/start-free-trial/${trialType}`,
           },
         ]}
