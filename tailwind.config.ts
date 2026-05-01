@@ -12,7 +12,11 @@ const config = {
   theme: {
     screens: {
       sm: '640px',
-      md: '768px',
+      // `md` shifted from 768 → 1024 so iPad portrait (768–834 px) and
+      // iPad Mini portrait (768 px) inherit the mobile layout instead of
+      // being forced into a desktop layout designed for ≥1300 px laptops.
+      // Landscape iPads (≥1024 px) still get the desktop layout.
+      md: '1024px',
       lg: '1024px',
       xl: '1300px',
       '2xl': '1536px',
@@ -22,7 +26,7 @@ const config = {
       padding: '2rem',
       screens: {
         sm: '640px',
-        md: '768px',
+        md: '1024px',
         lg: '1024px',
         xl: '1300px',
         '2xl': '1536px',
