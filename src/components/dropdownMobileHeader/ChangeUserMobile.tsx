@@ -118,6 +118,14 @@ export const ChangeUserTypeMobile = ({
       const persona = path === '/business' ? 'business' : path === '/professional' ? 'professional' : 'customer';
       router.push(localePath(`/faq/${persona}`, locale));
     }
+    if (pathname.includes('/resources/blog-post')) {
+      const persona = path === '/business' ? 'business' : path === '/professional' ? 'professional' : 'customer';
+      router.push(localePath(`/resources/blog-post/${persona}`, locale));
+    }
+    if (pathname.includes('/resources/tutorials')) {
+      const persona = path === '/professional' ? 'professional' : 'business';
+      router.push(localePath(`/resources/tutorials/${persona}`, locale));
+    }
     if (pathname.includes('/features')) {
       router.push(localePath(`/features${path}`, locale));
     }

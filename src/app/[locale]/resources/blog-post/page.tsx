@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { localeAlternates } from '@/lib/utils/metadata';
-import { BlogPostClient } from './BlogPostClient';
+import { BlogPostList } from './BlogPostList';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
@@ -65,6 +65,10 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function BlogPostPage() {
-  return <BlogPostClient />;
+export default async function BlogPostPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  return <BlogPostList locale={params.locale} />;
 }

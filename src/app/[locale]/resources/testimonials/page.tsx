@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { localeAlternates } from '@/lib/utils/metadata';
-import { TestimonialsClient } from './TestimonialsClient';
+import { TestimonialsList } from './TestimonialsList';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
@@ -54,6 +54,10 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function TestimonialsPage() {
-  return <TestimonialsClient />;
+export default function TestimonialsPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  return <TestimonialsList locale={params.locale} />;
 }
