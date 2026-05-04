@@ -94,10 +94,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...localizedEntries('/get-the-app', { lastModified: lastModFor('/get-the-app', STATIC_CONTENT_DATE), changeFrequency: 'monthly', priority: 0.6 }),
   ];
 
-  // Resource pages
+  // Resource pages — bare hub URLs serve all personas; per-persona variants
+  // are individually indexable so the locale + persona combination is the
+  // canonical SEO target the persona toggle navigates to.
   const resourcePages = [
     ...localizedEntries('/resources/blog-post', { lastModified: lastModFor('/resources/blog-post', SEO_CONTENT_DATE), changeFrequency: 'daily', priority: 0.7 }),
+    ...localizedEntries('/resources/blog-post/business', { lastModified: lastModFor('/resources/blog-post/business', SEO_CONTENT_DATE), changeFrequency: 'daily', priority: 0.7 }),
+    ...localizedEntries('/resources/blog-post/professional', { lastModified: lastModFor('/resources/blog-post/professional', SEO_CONTENT_DATE), changeFrequency: 'daily', priority: 0.7 }),
+    ...localizedEntries('/resources/blog-post/customer', { lastModified: lastModFor('/resources/blog-post/customer', SEO_CONTENT_DATE), changeFrequency: 'daily', priority: 0.7 }),
     ...localizedEntries('/resources/tutorials', { lastModified: lastModFor('/resources/tutorials', STATIC_CONTENT_DATE), changeFrequency: 'weekly', priority: 0.6 }),
+    ...localizedEntries('/resources/tutorials/business', { lastModified: lastModFor('/resources/tutorials/business', STATIC_CONTENT_DATE), changeFrequency: 'weekly', priority: 0.6 }),
+    ...localizedEntries('/resources/tutorials/professional', { lastModified: lastModFor('/resources/tutorials/professional', STATIC_CONTENT_DATE), changeFrequency: 'weekly', priority: 0.6 }),
     ...localizedEntries('/resources/testimonials', { lastModified: lastModFor('/resources/testimonials', STATIC_CONTENT_DATE), changeFrequency: 'weekly', priority: 0.5 }),
     ...localizedEntries('/resources/updates', { lastModified: lastModFor('/resources/updates', STATIC_CONTENT_DATE), changeFrequency: 'weekly', priority: 0.6 }),
   ];

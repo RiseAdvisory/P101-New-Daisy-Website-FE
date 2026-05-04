@@ -6,24 +6,33 @@ import {
 import { tutorialsHeroData } from '@/lib/constants/resources/resourcesData';
 import { t } from '@/lib/constants/i18n';
 
+export const TUTORIAL_PERSONAS = ['business', 'professional'] as const;
+export type TutorialPersona = (typeof TUTORIAL_PERSONAS)[number];
+
 interface TutorialsListProps {
   locale: string;
+  /**
+   * Optional persona filter. When set, only that persona's tutorials
+   * render (used by /resources/tutorials/[persona]). When omitted the
+   * hub view dedupes across both personas — the SSR fallback for the
+   * bare /resources/tutorials URL.
+   */
+  persona?: TutorialPersona;
 }
 
-const PERSONAS = ['business', 'professional'] as const;
-
-export function TutorialsList({ locale }: TutorialsListProps) {
+export function TutorialsList({ locale, persona }: TutorialsListProps) {
   const isRtl = locale === 'ar';
-  const businessHero = t(tutorialsHeroData.business, locale);
+  const heroPersona: TutorialPersona = persona ?? 'business';
+  const businessHero = t(tutorialsHeroData[heroPersona], locale);
 
-  // Server-render every tutorial in the SSR HTML so each article URL is
-  // discoverable from the link graph instead of only via the sitemap.
-  // Dedupe by slug across personas so an article tagged for both personas
-  // doesn't appear twice.
+  const personasToRender: readonly TutorialPersona[] = persona
+    ? [persona]
+    : TUTORIAL_PERSONAS;
+
   const seen = new Set<string>();
   const allCategories: { category: TutorialCategoryWithArticles['category']; articles: TutorialCategoryWithArticles['articles'] }[] = [];
-  for (const persona of PERSONAS) {
-    const categories = getTutorialArticles(persona, locale);
+  for (const p of personasToRender) {
+    const categories = getTutorialArticles(p, locale);
     for (const cat of categories) {
       const dedupedArticles = cat.articles.filter((a) => {
         if (seen.has(a.slug)) return false;

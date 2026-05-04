@@ -108,6 +108,13 @@ const ToggleButton = ({ className }: { className?: string }) => {
     } else if (pathname.includes('/faq')) {
       const persona = path === '/business' ? 'business' : path === '/professional' ? 'professional' : 'customer';
       router.push(localePath(`/faq/${persona}`, locale));
+    } else if (pathname.includes('/resources/blog-post')) {
+      const persona = path === '/business' ? 'business' : path === '/professional' ? 'professional' : 'customer';
+      router.push(localePath(`/resources/blog-post/${persona}`, locale));
+    } else if (pathname.includes('/resources/tutorials')) {
+      // Tutorials only support business + professional today.
+      const persona = path === '/professional' ? 'professional' : 'business';
+      router.push(localePath(`/resources/tutorials/${persona}`, locale));
     } else if (pathname.includes('/features')) {
       router.push(localePath(`/features${path}`, locale));
     } else if (pathname.startsWith('/business')) {

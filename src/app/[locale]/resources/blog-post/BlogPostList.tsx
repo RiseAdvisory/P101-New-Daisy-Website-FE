@@ -9,24 +9,31 @@ import { getAuthorBio } from '@/lib/constants/blog/authorData';
 import { translateTag } from '@/lib/constants/blog/tagTranslations';
 import { getAllBlogPosts, type UserType, type BlogPost } from '@/lib/api/blog';
 
-const PERSONAS: UserType[] = ['business', 'professional', 'customer'];
+export const PERSONAS: UserType[] = ['business', 'professional', 'customer'];
 
 interface BlogPostListProps {
   locale: string;
+  /**
+   * Optional persona filter. When set, only that persona's posts are
+   * rendered (used by the per-persona /resources/blog-post/[persona]
+   * routes). When omitted, posts from every persona are rendered (the
+   * /resources/blog-post hub view) — this is the SSR fallback that
+   * keeps the bare hub URL useful and discoverable.
+   */
+  persona?: UserType;
 }
 
-export async function BlogPostList({ locale }: BlogPostListProps) {
+export async function BlogPostList({ locale, persona }: BlogPostListProps) {
   const isRtl = locale === 'ar';
   const hero = t(blogHeroData, locale);
 
-  // Fetch posts for every persona so all post URLs end up in the SSR HTML;
-  // discoverability used to be blocked because the whole page was a client
-  // component and no <a href> tags appeared in the initial response.
+  const personasToFetch: UserType[] = persona ? [persona] : PERSONAS;
+
   const grouped = await Promise.all(
-    PERSONAS.map(async (persona) => {
-      const posts = await getAllBlogPosts(persona, locale);
+    personasToFetch.map(async (p) => {
+      const posts = await getAllBlogPosts(p, locale);
       return {
-        persona,
+        persona: p,
         posts: (posts || []).slice().sort(
           (a: BlogPost, b: BlogPost) =>
             ((b.attributes?.sortId as number) ?? 0) - ((a.attributes?.sortId as number) ?? 0),
