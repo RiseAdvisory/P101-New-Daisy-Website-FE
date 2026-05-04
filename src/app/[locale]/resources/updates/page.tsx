@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { localeAlternates } from '@/lib/utils/metadata';
-import { UpdatesClient } from './UpdatesClient';
+import { UpdatesList } from './UpdatesList';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
@@ -54,6 +54,10 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function UpdatesPage() {
-  return <UpdatesClient />;
+export default function UpdatesPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  return <UpdatesList locale={params.locale} />;
 }
