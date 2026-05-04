@@ -153,8 +153,10 @@ export const Header = () => {
                       }
                     >
                       <Link
-                        href="#"
+                        href={localePath('/resources/blog-post', locale)}
                         onClick={handleResourcesClick}
+                        aria-haspopup="true"
+                        aria-expanded={isResourcesDropdownOpen}
                         className={cn(
                           ' font-normal text-[#D5D9D9] leading-6 hover:text-white cursor-pointer',
                           {

@@ -38,6 +38,9 @@ export const footerData: I18nContent<FooterData> = {
         title: 'Learn',
         links: [
           { name: 'Blog', nav: '/resources/blog-post' },
+          { name: 'Tutorials', nav: '/resources/tutorials' },
+          { name: 'Testimonials', nav: '/resources/testimonials' },
+          { name: 'Updates', nav: '/resources/updates' },
           { name: 'Guides', nav: '/guides' },
           { name: 'Glossary', nav: '/glossary' },
           { name: 'Comparisons', nav: '/compare' },
@@ -85,6 +88,9 @@ export const footerData: I18nContent<FooterData> = {
         title: 'تعلّم',
         links: [
           { name: 'المدونة', nav: '/resources/blog-post' },
+          { name: 'الدروس', nav: '/resources/tutorials' },
+          { name: 'شهادات العملاء', nav: '/resources/testimonials' },
+          { name: 'التحديثات', nav: '/resources/updates' },
           { name: 'الأدلة', nav: '/guides' },
           { name: 'المصطلحات', nav: '/glossary' },
           { name: 'المقارنات', nav: '/compare' },

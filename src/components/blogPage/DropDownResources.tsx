@@ -13,6 +13,7 @@ import {
   ResourcesDropdownPageType,
 } from '@/lib/constants/shared/resourcesDropdownData';
 import { getLocaleFromPathname, localePath } from '@/lib/utils/locale';
+import { cn } from '@/lib/utils';
 
 interface IPropsResources {
   openBlog: boolean;
@@ -67,7 +68,10 @@ export const DropdownResources = ({
     };
   }, [openBlog, setOpenBlog, setActive, path]);
 
-  if (!openBlog) return null;
+  // The dropdown markup is intentionally rendered even when closed so that
+  // crawlers see the resource sub-page links in the SSR HTML. Visibility is
+  // controlled via opacity + pointer-events below; previously we returned
+  // null when closed which made every link inside invisible to bots.
 
   const imageElement = (
     <div className="w-full max-w-[420px] h-[290px] border relative bg-[#E8E9E9] rounded-lg ltr:mr-6 rtl:ml-6 flex-shrink-0 overflow-hidden">
@@ -114,7 +118,13 @@ export const DropdownResources = ({
   return (
     <div
       ref={dropdownRef}
-      className="w-screen max-w-screen-2xl fixed left-0 rtl:left-auto rtl:right-0 top-[100px] hidden md:block py-10 px-4 md:px-8 lg:px-16 border-t border-primaryBtn bg-white z-50 shadow-md"
+      aria-hidden={!openBlog}
+      className={cn(
+        'w-screen max-w-screen-2xl fixed left-0 rtl:left-auto rtl:right-0 top-[100px] hidden md:block py-10 px-4 md:px-8 lg:px-16 border-t border-primaryBtn bg-white z-50 shadow-md transition-opacity duration-150',
+        openBlog
+          ? 'md:opacity-100 md:pointer-events-auto'
+          : 'md:opacity-0 md:pointer-events-none',
+      )}
     >
       <div className="flex ltr:flex-row rtl:flex-row-reverse">
         {locale === 'ar' ? (
