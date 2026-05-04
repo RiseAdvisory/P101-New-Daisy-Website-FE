@@ -88,8 +88,8 @@ describe('DropdownResources', () => {
       expect(screen.getByText('BUSINESS')).toBeInTheDocument();
     });
 
-    it('should not render dropdown when openBlog is false', () => {
-      render(
+    it('keeps the dropdown markup in the DOM when closed (visually hidden, but link graph intact)', () => {
+      const { container } = render(
         <DropdownResources
           openBlog={false}
           setOpenBlog={mockSetOpenBlog}
@@ -97,7 +97,29 @@ describe('DropdownResources', () => {
         />
       );
 
-      expect(screen.queryByText('BUSINESS')).not.toBeInTheDocument();
+      // Dropdown content is still rendered so crawlers see all the
+      // /resources/* links even when the menu hasn't been opened.
+      expect(screen.getByText('BUSINESS')).toBeInTheDocument();
+
+      // Visibility is gated by CSS + ARIA, not by conditional rendering.
+      const wrapper = container.firstElementChild as HTMLElement;
+      expect(wrapper.getAttribute('aria-hidden')).toBe('true');
+      expect(wrapper.className).toContain('md:opacity-0');
+      expect(wrapper.className).toContain('md:pointer-events-none');
+    });
+
+    it('marks the dropdown wrapper as visible+interactive when openBlog is true', () => {
+      const { container } = render(
+        <DropdownResources
+          openBlog={true}
+          setOpenBlog={mockSetOpenBlog}
+          setActive={mockSetActive}
+        />
+      );
+      const wrapper = container.firstElementChild as HTMLElement;
+      expect(wrapper.getAttribute('aria-hidden')).toBe('false');
+      expect(wrapper.className).toContain('md:opacity-100');
+      expect(wrapper.className).toContain('md:pointer-events-auto');
     });
 
     it('should display all menu items with correct text alignment', () => {
