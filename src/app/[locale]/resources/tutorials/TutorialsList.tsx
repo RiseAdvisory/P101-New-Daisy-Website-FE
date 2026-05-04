@@ -5,6 +5,7 @@ import {
 } from '@/lib/constants/tutorials/getTutorialArticles';
 import { tutorialsHeroData } from '@/lib/constants/resources/resourcesData';
 import { t } from '@/lib/constants/i18n';
+import { ResourceListingHero } from '@/components/resources/ResourceListingHero';
 
 export const TUTORIAL_PERSONAS = ['business', 'professional'] as const;
 export type TutorialPersona = (typeof TUTORIAL_PERSONAS)[number];
@@ -51,26 +52,16 @@ export function TutorialsList({ locale, persona }: TutorialsListProps) {
 
   return (
     <div className="w-full" dir={isRtl ? 'rtl' : 'ltr'}>
-      <section className="w-full bg-primary px-4 pt-32 pb-12 md:pt-40 md:pb-16">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-3 text-sm font-medium uppercase tracking-wider text-[#D5D9D9]">
-            {businessHero?.bredCrumbDesription ?? (isRtl ? 'الموارد / الدروس' : 'Resources / Tutorials')}
-          </p>
-          <h1 className="text-white text-[32px] leading-10 font-semibold md:text-[48px] md:leading-[60px]">
-            {businessHero?.title ?? ''}
-          </h1>
-          {businessHero?.subtitle && (
-            <p className="mt-4 text-lg text-[#D5D9D9] md:text-xl ltr:font-montserrat">
-              {businessHero.subtitle}
-            </p>
-          )}
-          {businessHero?.description && (
-            <p className="mt-2 text-base text-[#A8B0AF] ltr:font-montserrat">
-              {businessHero.description}
-            </p>
-          )}
-        </div>
-      </section>
+      <ResourceListingHero
+        locale={locale}
+        eyebrow={
+          businessHero?.bredCrumbDesription ??
+          (isRtl ? 'الموارد / الدروس' : 'Resources / Tutorials')
+        }
+        title={businessHero?.title ?? ''}
+        description={businessHero?.subtitle ?? ''}
+        secondaryDescription={businessHero?.description}
+      />
 
       <div className="bg-[#F8F5F3] px-4 pb-20 md:px-16">
         {allCategories.map((cat) => (

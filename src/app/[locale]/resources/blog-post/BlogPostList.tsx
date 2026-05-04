@@ -8,6 +8,7 @@ import { formatBlogDate, formatReadTime } from '@/lib/utils/blogFormat';
 import { getAuthorBio } from '@/lib/constants/blog/authorData';
 import { translateTag } from '@/lib/constants/blog/tagTranslations';
 import { getAllBlogPosts, type UserType, type BlogPost } from '@/lib/api/blog';
+import { ResourceListingHero } from '@/components/resources/ResourceListingHero';
 
 export const PERSONAS: UserType[] = ['business', 'professional', 'customer'];
 
@@ -48,43 +49,22 @@ export async function BlogPostList({ locale, persona }: BlogPostListProps) {
 
   return (
     <div className="w-full" dir={isRtl ? 'rtl' : 'ltr'}>
-      {/* Hero — server-rendered */}
-      <section className="w-full bg-primary px-4 pt-32 pb-12 md:pt-40 md:pb-16">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-3 text-sm font-medium uppercase tracking-wider text-[#D5D9D9]">
-            {hero.breadcrumbs ?? (isRtl ? 'الموارد / المقالات' : 'Resources / Blog Posts')}
-          </p>
-          <h1 className="text-white text-[32px] leading-10 font-semibold md:text-[48px] md:leading-[60px]">
-            {hero.title ?? ''}
-          </h1>
-          {hero.subtitle && (
-            <p className="mt-4 text-lg text-[#D5D9D9] md:text-xl ltr:font-montserrat">
-              {hero.subtitle}
-            </p>
-          )}
-          {hero.description && (
-            <p className="mt-2 text-base text-[#A8B0AF] ltr:font-montserrat">
-              {hero.description}
-            </p>
-          )}
-        </div>
-      </section>
+      <ResourceListingHero
+        locale={locale}
+        eyebrow={
+          hero.breadcrumbs ?? (isRtl ? 'الموارد / المقالات' : 'Resources / Blog Posts')
+        }
+        title={hero.title ?? ''}
+        description={hero.subtitle ?? ''}
+        secondaryDescription={hero.description}
+      />
 
       {/* Post grid — server-rendered <a href> per card */}
       <section className="bg-[#F8F5F3] px-4 pb-[140px]">
-        <ul className="mx-auto -mt-12 grid max-w-6xl gap-6 md:grid-cols-3">
+        <ul className="mx-auto grid max-w-6xl gap-6 pt-4 md:grid-cols-3">
           {allPosts.map((item) => {
-            const persona = (item as typeof item & { _persona: UserType })._persona;
-            const a = item.attributes as Record<string, unknown> & {
-              slug?: string;
-              title?: string;
-              description?: string;
-              tags?: { category?: string; topic?: string };
-              image?: { data?: Array<{ attributes?: { url?: string; formats?: { large?: { url?: string } } } }> };
-              iconOwner?: { data?: Array<{ attributes?: { url?: string } }> };
-              user?: { data?: { attributes?: { name?: string; date?: string; time?: string } }; name?: string; date?: string; time?: string };
-              publishedAt?: string;
-            };
+            const persona = item._persona;
+            const a = item.attributes;
             const imageData = a.image?.data?.[0];
             const imageSrc =
               imageData?.attributes?.formats?.large?.url ??
@@ -93,20 +73,13 @@ export async function BlogPostList({ locale, persona }: BlogPostListProps) {
             const ownerSrc =
               a.iconOwner?.data?.[0]?.attributes?.url ??
               '/images/blog/author-daisy-team.webp';
+            const userAttrs = a.user?.data?.attributes;
             const authorName =
-              getAuthorBio(
-                a.user?.data?.attributes?.name ?? a.user?.name ?? '',
-                locale,
-              )?.name ??
-              a.user?.data?.attributes?.name ??
-              a.user?.name ??
+              getAuthorBio(userAttrs?.name ?? '', locale)?.name ??
+              userAttrs?.name ??
               '';
-            const dateRaw =
-              a.user?.data?.attributes?.date ??
-              a.user?.date ??
-              a.publishedAt ??
-              '';
-            const timeRaw = a.user?.data?.attributes?.time ?? a.user?.time;
+            const dateRaw = userAttrs?.date ?? a.publishedAt ?? '';
+            const timeRaw = userAttrs?.time;
             const href = a.slug
               ? `/${locale}/resources/blog/${persona}/${a.slug}`
               : `/${locale}/resources/blog-post`;
