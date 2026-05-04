@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { localeAlternates } from '@/lib/utils/metadata';
-import { TutorialsClient } from './TutorialsClient';
+import { TutorialsList } from './TutorialsList';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
@@ -61,6 +61,10 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-export default function TutorialsPage() {
-  return <TutorialsClient />;
+export default function TutorialsPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  return <TutorialsList locale={params.locale} />;
 }
