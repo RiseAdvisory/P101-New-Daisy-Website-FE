@@ -131,6 +131,7 @@ export async function middleware(request: NextRequest) {
 
     // Convenience redirects (replaces old next.config.mjs redirects)
     const convenienceRedirects: Record<string, string> = {
+      '/': '/business',
       '/features': '/features/business',
       '/features/customer': '/features/business',
       '/pricing': '/pricing/business',
@@ -166,6 +167,7 @@ export async function middleware(request: NextRequest) {
   // Apply convenience redirects for non-locale paths to avoid multi-hop chains
   // e.g. /pricing → /en/pricing/business (1 hop instead of /en/pricing → /en/pricing/business)
   const shortcutRedirects: Record<string, string> = {
+    '/': '/business',
     '/pricing': '/pricing/business',
     '/features': '/features/business',
     '/features/customer': '/features/business',
