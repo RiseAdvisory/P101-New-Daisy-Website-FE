@@ -25,4 +25,16 @@ describe('MetaTechBadge', () => {
     expect(svg).toBeInTheDocument();
     expect(svg).toHaveAttribute('aria-hidden', 'true');
   });
+
+  it('renders all three platform logos with inherited (currentColor) fills', () => {
+    // Guards against accidentally re-introducing hardcoded brand colors
+    // (Meta blue, WhatsApp green, Instagram gradient) on the dark hero bg.
+    const { container } = render(<MetaTechBadge />);
+    const svgs = container.querySelectorAll('svg');
+    expect(svgs).toHaveLength(3);
+    svgs.forEach((svg) => {
+      const path = svg.querySelector('path');
+      expect(path).toHaveAttribute('fill', 'currentColor');
+    });
+  });
 });
