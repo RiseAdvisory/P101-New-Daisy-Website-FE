@@ -138,6 +138,9 @@ export async function middleware(request: NextRequest) {
       '/customer': '/business',
       '/resources': '/resources/blog-post',
       '/resources/blog': '/resources/blog-post',
+      '/start-free-trial': '/get-the-app',
+      '/start-free-trial/business': '/get-the-app',
+      '/start-free-trial/professional': '/get-the-app',
     };
 
     const redirectTo = convenienceRedirects[pathWithoutLocale];
@@ -174,6 +177,9 @@ export async function middleware(request: NextRequest) {
     '/customer': '/business',
     '/resources': '/resources/blog-post',
     '/resources/blog': '/resources/blog-post',
+    '/start-free-trial': '/get-the-app',
+    '/start-free-trial/business': '/get-the-app',
+    '/start-free-trial/professional': '/get-the-app',
   };
   const shortcut = shortcutRedirects[pathname];
   newUrl.pathname = `/${locale}${shortcut || pathname}`;

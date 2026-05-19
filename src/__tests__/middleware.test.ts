@@ -171,6 +171,56 @@ describe('middleware', () => {
     expect(response.headers.get('location')).toMatch(/\/en$/);
   });
 
+  it('should redirect /en/start-free-trial/business to /en/get-the-app', async () => {
+    // Trial form was retired in favor of direct app download; form code is
+    // kept for revertability but all trial-intent URLs collapse to /get-the-app.
+    const request = new NextRequest(
+      'https://example.com/en/start-free-trial/business',
+      { headers: { 'user-agent': 'Mozilla/5.0' } },
+    );
+
+    const response = await middleware(request);
+
+    expect(response.status).toBe(301);
+    expect(response.headers.get('location')).toMatch(/\/en\/get-the-app$/);
+  });
+
+  it('should redirect /en/start-free-trial/professional to /en/get-the-app', async () => {
+    const request = new NextRequest(
+      'https://example.com/en/start-free-trial/professional',
+      { headers: { 'user-agent': 'Mozilla/5.0' } },
+    );
+
+    const response = await middleware(request);
+
+    expect(response.status).toBe(301);
+    expect(response.headers.get('location')).toMatch(/\/en\/get-the-app$/);
+  });
+
+  it('should redirect /ar/start-free-trial/business to /ar/get-the-app', async () => {
+    const request = new NextRequest(
+      'https://example.com/ar/start-free-trial/business',
+      { headers: { 'user-agent': 'Mozilla/5.0' } },
+    );
+
+    const response = await middleware(request);
+
+    expect(response.status).toBe(301);
+    expect(response.headers.get('location')).toMatch(/\/ar\/get-the-app$/);
+  });
+
+  it('should redirect /start-free-trial/business (no locale) to /en/get-the-app in one hop', async () => {
+    const request = new NextRequest(
+      'https://example.com/start-free-trial/business',
+      { headers: { 'user-agent': 'Mozilla/5.0' } },
+    );
+
+    const response = await middleware(request);
+
+    expect(response.status).toBe(301);
+    expect(response.headers.get('location')).toMatch(/\/en\/get-the-app$/);
+  });
+
   it('should not redirect /en/about (valid page)', async () => {
     const request = new NextRequest('https://example.com/en/about', {
       headers: { 'user-agent': 'Mozilla/5.0' },
