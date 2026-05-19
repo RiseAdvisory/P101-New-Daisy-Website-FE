@@ -38,7 +38,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         subHeadline:
           'AI handles availability checks, conflict detection, and staff scheduling. Customers book the right person at the right time. You never touch the calendar.',
         ctaText: 'Start Your 14-Day Free Trial',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         trustLine: 'No credit card required. Our team helps you set up.',
         answerBlock: {
           question: 'How does AI smart scheduling work for beauty businesses?',
@@ -101,7 +101,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         headline: 'Free to Start. Grow at Your Own Pace.',
         body: "14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.",
         ctaText: 'Start Your 14-Day Free Trial',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
         pricingLinkHref: '/pricing',
       },
@@ -125,8 +125,8 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         ],
       },
       inlineCtas: {
-        afterScroll: { headline: 'Ready to fill your calendar automatically?', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/start-free-trial/business' },
-        afterFeatures: { headline: 'Start Your 14-Day Free Trial', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/start-free-trial/business', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/business' },
+        afterScroll: { headline: 'Ready to fill your calendar automatically?', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app' },
+        afterFeatures: { headline: 'Start Your 14-Day Free Trial', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/business' },
       },
       titleFraque: 'Frequently Asked Questions',
       fallbackFaqs: [
@@ -142,7 +142,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         headline: 'جدولة تملأ تقويمك.\nليس وقتك.',
         subHeadline: 'الذكاء الاصطناعي يتحقق من التوافر ويكشف التعارضات ويدير جدولة الموظفين. العملاء يحجزون مع الشخص المناسب في الوقت المناسب. أنت لا تلمس التقويم.',
         ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         trustLine: 'لا حاجة لبطاقة ائتمان. فريقنا يساعدك في الإعداد.',
         answerBlock: {
           question: 'كيف تعمل الجدولة الذكية بالذكاء الاصطناعي لأعمال التجميل؟',
@@ -184,7 +184,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         headline: 'ابدأ مجانًا. انمُ بالسرعة التي تناسبك.',
         body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولار/شهريًا. موظف الاستقبال الذكي لا يتولى الرسائل فحسب. بل يتعلم تفضيلات عملائك بمرور الوقت، ويُخصّص كل تفاعل ويحوّل الزوار الجدد إلى عملاء أوفياء. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، عملاؤك الحاليون، بدون أي عمولة.',
         ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190',
         pricingLinkHref: '/pricing',
       },
@@ -208,8 +208,8 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         ],
       },
       inlineCtas: {
-        afterScroll: { headline: 'مستعد لملء تقويمك تلقائيًا؟', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/start-free-trial/business' },
-        afterFeatures: { headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/start-free-trial/business', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/business' },
+        afterScroll: { headline: 'مستعد لملء تقويمك تلقائيًا؟', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app' },
+        afterFeatures: { headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/business' },
       },
       titleFraque: 'أسئلة شائعة',
       fallbackFaqs: [
@@ -227,7 +227,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         headline: 'Your Schedule. Your Rules.\nZero Admin.',
         subHeadline: "Set your hours, block personal time, work across multiple locations. Daisy's AI fills your calendar without you lifting a finger.",
         ctaText: 'Start Your Free Trial',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         trustLine: 'Free to join. No credit card required.',
         answerBlock: {
           question: 'How does smart scheduling work for beauty professionals?',
@@ -269,7 +269,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         headline: 'Free to Join. Zero Risk.',
         body: "Create your profile and start accepting bookings at no cost. Premium features available through affordable plans. Daisy doesn't just manage your schedule. It learns your clients' preferences, personalizes their booking experience, and makes sure you never miss an inquiry. Commission only on new clients who find you through the Daisy marketplace, your existing clients always pay zero commission.",
         ctaText: 'Get Listed for Free',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
         pricingLinkHref: '/pricing',
       },
@@ -293,8 +293,8 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         ],
       },
       inlineCtas: {
-        afterScroll: { headline: 'Ready to stop managing your calendar manually?', ctaText: 'Start Your Free Trial', ctaLink: '/start-free-trial/professional' },
-        afterFeatures: { headline: 'Start Your Free Trial', ctaText: 'Start Your Free Trial', ctaLink: '/start-free-trial/professional', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/professional' },
+        afterScroll: { headline: 'Ready to stop managing your calendar manually?', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app' },
+        afterFeatures: { headline: 'Start Your Free Trial', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/professional' },
       },
       titleFraque: 'Frequently Asked Questions',
       fallbackFaqs: [
@@ -310,7 +310,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         headline: 'جدولك. قواعدك.\nبدون إدارة.',
         subHeadline: 'حدد ساعاتك، احظر الوقت الشخصي، اعمل عبر مواقع متعددة. الذكاء الاصطناعي في ديزي يملأ تقويمك دون أن تحرك ساكنًا.',
         ctaText: 'ابدأ تجربتك المجانية',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         trustLine: 'الانضمام مجاني. لا حاجة لبطاقة ائتمان.',
         answerBlock: {
           question: 'كيف تعمل الجدولة الذكية لمتخصصي التجميل؟',
@@ -352,7 +352,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         headline: 'الانضمام مجاني. بدون أي مخاطر.',
         body: 'أنشئ ملفك الشخصي وابدأ بقبول الحجوزات بدون تكلفة. الميزات المتقدمة متاحة من خلال باقات بأسعار معقولة. ديزي لا تدير جدولك فحسب. بل تتعلم تفضيلات عملائك، وتُخصّص تجربة حجزهم، وتتأكد من عدم تفويت أي استفسار. العمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي، عملاؤك الحاليون، بدون أي عمولة دائمًا.',
         ctaText: 'سجّل مجانًا',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190',
         pricingLinkHref: '/pricing',
       },
@@ -376,8 +376,8 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         ],
       },
       inlineCtas: {
-        afterScroll: { headline: 'مستعد للتوقف عن إدارة تقويمك يدويًا؟', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/start-free-trial/professional' },
-        afterFeatures: { headline: 'ابدأ تجربتك المجانية', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/start-free-trial/professional', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/professional' },
+        afterScroll: { headline: 'مستعد للتوقف عن إدارة تقويمك يدويًا؟', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app' },
+        afterFeatures: { headline: 'ابدأ تجربتك المجانية', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/professional' },
       },
       titleFraque: 'أسئلة شائعة',
       fallbackFaqs: [

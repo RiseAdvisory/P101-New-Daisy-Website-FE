@@ -54,8 +54,8 @@ const ROUTE_LAST_UPDATED: Record<string, string> = {
   // Tier 1 Arabic metadata pass (PR #278) + professional mobile scroll fix (PR #279)
   '/business': '2026-05-04T00:00:00.000Z',
   '/professional': '2026-05-04T00:00:00.000Z',
-  '/start-free-trial/business': '2026-05-04T00:00:00.000Z',
-  '/start-free-trial/professional': '2026-05-04T00:00:00.000Z',
+  // Trial flow now redirects to /get-the-app (see middleware.ts)
+  '/get-the-app': '2026-05-19T00:00:00.000Z',
 };
 
 function lastModFor(routeKey: string, fallback: string): string {
@@ -73,8 +73,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const mainPages = [
     ...localizedEntries('/business', { lastModified: lastModFor('/business', STATIC_CONTENT_DATE), changeFrequency: 'weekly', priority: 1 }),
     ...localizedEntries('/professional', { lastModified: lastModFor('/professional', STATIC_CONTENT_DATE), changeFrequency: 'weekly', priority: 0.9 }),
-    ...localizedEntries('/start-free-trial/business', { lastModified: lastModFor('/start-free-trial/business', STATIC_CONTENT_DATE), changeFrequency: 'monthly', priority: 0.9 }),
-    ...localizedEntries('/start-free-trial/professional', { lastModified: lastModFor('/start-free-trial/professional', STATIC_CONTENT_DATE), changeFrequency: 'monthly', priority: 0.9 }),
   ];
 
   // Feature pages
@@ -91,7 +89,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...localizedEntries('/contact', { lastModified: lastModFor('/contact', STATIC_CONTENT_DATE), changeFrequency: 'monthly', priority: 0.7 }),
     ...localizedEntries('/faq', { lastModified: lastModFor('/faq', STATIC_CONTENT_DATE), changeFrequency: 'monthly', priority: 0.6 }),
     ...localizedEntries('/careers', { lastModified: lastModFor('/careers', STATIC_CONTENT_DATE), changeFrequency: 'monthly', priority: 0.5 }),
-    ...localizedEntries('/get-the-app', { lastModified: lastModFor('/get-the-app', STATIC_CONTENT_DATE), changeFrequency: 'monthly', priority: 0.6 }),
+    ...localizedEntries('/get-the-app', { lastModified: lastModFor('/get-the-app', STATIC_CONTENT_DATE), changeFrequency: 'monthly', priority: 0.9 }),
   ];
 
   // Resource pages — bare hub URLs serve all personas; per-persona variants

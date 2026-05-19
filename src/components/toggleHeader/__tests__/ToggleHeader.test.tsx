@@ -130,16 +130,4 @@ describe('ToggleButton — solutions routing', () => {
 
     expect(mockPush).toHaveBeenCalledWith('/en/features/professional');
   });
-
-  it('navigates to start-free-trial/professional when on a start-free-trial page and Professional is clicked', () => {
-    const { usePathname } = require('next/navigation');
-    usePathname.mockReturnValue('/start-free-trial/business');
-
-    render(<ToggleButton />);
-
-    const professionalBtn = screen.getByText('Professional');
-    fireEvent.click(professionalBtn);
-
-    expect(mockPush).toHaveBeenCalledWith('/en/start-free-trial/professional');
-  });
 });

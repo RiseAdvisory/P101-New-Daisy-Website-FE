@@ -65,8 +65,7 @@ describe('sitemap() — ROUTE_LAST_UPDATED per-route overrides', () => {
   it.each([
     '/business',
     '/professional',
-    '/start-free-trial/business',
-    '/start-free-trial/professional',
+    '/get-the-app',
   ])(
     '%s emits the per-route override date instead of the bucket fallback',
     async (route) => {

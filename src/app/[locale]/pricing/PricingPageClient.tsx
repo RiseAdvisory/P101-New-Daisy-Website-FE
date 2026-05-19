@@ -163,7 +163,7 @@ export const PricingPageClient = ({ persona, lang }: PricingPageClientProps) => 
         <h2 className="text-white font-semibold text-[28px] md:text-[36px] leading-tight text-center">
           {finalCta.title}
         </h2>
-        <Link href={localePath(`/start-free-trial/${persona}`, lang)}>
+        <Link href={localePath('/get-the-app', lang)}>
           <Button className="mt-8 py-[14px] px-[40px] md:px-[60px] bg-white text-primary hover:bg-[#F8F5F3] font-semibold text-lg rounded-[8px]">
             {finalCta.button}
           </Button>

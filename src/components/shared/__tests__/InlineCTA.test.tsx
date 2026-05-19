@@ -5,7 +5,7 @@ describe('InlineCTA', () => {
   const defaultProps = {
     headline: 'Ready to get started?',
     ctaText: 'Start Free Trial',
-    ctaLink: '/start-free-trial',
+    ctaLink: '/get-the-app',
   };
 
   it('renders the headline', () => {
@@ -16,7 +16,7 @@ describe('InlineCTA', () => {
   it('renders the CTA link with correct href', () => {
     render(<InlineCTA {...defaultProps} />);
     const link = screen.getByRole('link', { name: /start free trial/i });
-    expect(link).toHaveAttribute('href', '/start-free-trial');
+    expect(link).toHaveAttribute('href', '/get-the-app');
   });
 
   it('renders the CTA text', () => {

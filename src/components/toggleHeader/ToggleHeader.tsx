@@ -96,9 +96,6 @@ const ToggleButton = ({ className }: { className?: string }) => {
     if (pathname.includes('/pricing')) {
       const persona = path === '/business' ? 'business' : 'professional';
       router.push(localePath(`/pricing/${persona}`, locale));
-    } else if (pathname.includes('/start-free-trial')) {
-      const persona = path === '/business' ? 'business' : 'professional';
-      router.push(localePath(`/start-free-trial/${persona}`, locale));
     } else if (pathname.includes('/solutions/')) {
       const persona = path === '/business' ? 'business' : 'professional';
       const slug = pathname.split('/solutions/')[1]?.split('/')[0];

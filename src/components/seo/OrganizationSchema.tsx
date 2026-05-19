@@ -50,7 +50,7 @@ export function OrganizationSchema() {
       {
         '@type': 'ContactPoint',
         contactType: 'sales',
-        url: 'https://www.jointhedaisy.com/en/start-free-trial/business',
+        url: 'https://www.jointhedaisy.com/en/get-the-app',
         availableLanguage: ['English', 'Arabic'],
       },
     ],

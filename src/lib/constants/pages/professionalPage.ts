@@ -9,7 +9,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       subHeadline:
         "Stop being your own receptionist. Daisy's AI handles your WhatsApp and Instagram messages, books appointments, and processes payments, while you focus on what you do best.",
       ctaText: 'Start Your Free Trial',
-      ctaLink: '/start-free-trial/professional',
+      ctaLink: '/get-the-app',
       trustLine: 'Free to join. No credit card required.',
       answerBlock: {
         question: 'What is The Daisy for beauty professionals?',
@@ -54,7 +54,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       headline: 'Free to Join. Zero Risk.',
       body: "Create your profile and start accepting bookings at no cost. Premium features available through affordable plans. Daisy doesn't just manage your schedule. It learns your clients' preferences, personalizes their booking experience, and makes sure you never miss an inquiry. Commission only on new clients who find you through the Daisy marketplace, your existing clients always pay zero commission.",
       ctaText: 'Get Listed for Free',
-      ctaLink: '/start-free-trial/professional',
+      ctaLink: '/get-the-app',
       pricingLinkText: 'See full pricing details →',
       pricingLinkHref: '/pricing',
     },
@@ -62,12 +62,12 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       afterScroll: {
         headline: 'Ready to stop being your own receptionist?',
         ctaText: 'Start Your Free Trial',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
       },
       afterFeatures: {
         headline: 'Start Your Free Trial',
         ctaText: 'Start Your Free Trial',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         secondaryLinkText: 'Explore all features →',
         secondaryLinkHref: '/features/professional',
       },
@@ -296,7 +296,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       subHeadline:
         'توقف عن القيام بدور موظف الاستقبال بنفسك. يتولى الذكاء الاصطناعي في ديزي رسائل واتساب وإنستغرام، ويحجز المواعيد، ويعالج المدفوعات، بينما تركز أنت على ما تتقنه.',
       ctaText: 'ابدأ تجربتك المجانية',
-      ctaLink: '/start-free-trial/professional',
+      ctaLink: '/get-the-app',
       trustLine: 'الانضمام مجاني. لا حاجة لبطاقة ائتمان.',
       answerBlock: {
         question: 'ما هي منصة ديزي لمتخصصي التجميل؟',
@@ -341,7 +341,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       headline: 'الانضمام مجاني. بدون أي مخاطر.',
       body: 'أنشئ ملفك الشخصي وابدأ بقبول الحجوزات من دون تكلفة. الميزات المتقدمة متاحة من خلال باقات بأسعار معقولة. ديزي لا تدير جدولك فحسب، بل تتعلم تفضيلات عملائك، وتخصص تجربة حجزهم، وتتأكد من عدم تفويت أي استفسار. تُفرض العمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي، أما عملاؤك الحاليون فلا تُفرض عليهم أي عمولة.',
       ctaText: 'سجّل مجانًا',
-      ctaLink: '/start-free-trial/professional',
+      ctaLink: '/get-the-app',
       pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة ←',
       pricingLinkHref: '/pricing',
     },
@@ -349,12 +349,12 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       afterScroll: {
         headline: 'مستعد للتوقف عن القيام بدور موظف الاستقبال بنفسك؟',
         ctaText: 'ابدأ تجربتك المجانية',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
       },
       afterFeatures: {
         headline: 'ابدأ تجربتك المجانية',
         ctaText: 'ابدأ تجربتك المجانية',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         secondaryLinkText: 'استكشف جميع الميزات →',
         secondaryLinkHref: '/features/professional',
       },

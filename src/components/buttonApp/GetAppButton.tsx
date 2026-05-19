@@ -4,7 +4,6 @@ import { Button } from '../ui/button';
 import { GooglePlayIcons } from '@/assets/icons/appMarket/GooglePlayIcons';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
-import { useMyContext } from '@/app/MyContext';
 
 export const GetAppButton = ({
   className,
@@ -19,9 +18,7 @@ export const GetAppButton = ({
   textGetApp: string;
   homePage?: boolean;
 }) => {
-  const { userChange } = useMyContext();
-  const persona = userChange === '/professional' ? 'professional' : 'business';
-  const trialPath = `/start-free-trial/${persona}`;
+  const trialPath = '/get-the-app';
 
   return (
     <Button
