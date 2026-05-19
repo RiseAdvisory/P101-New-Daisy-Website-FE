@@ -57,16 +57,26 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
+// Mobile visitors get punted to the thedaisy.link smartlink (which device-
+// detects and forwards to the App Store / Play Store). Desktop visitors see
+// the full page below. Runs before paint so there's no flash of /get-the-app
+// content on phones.
+const MOBILE_REDIRECT_SCRIPT = `(function(){try{if(window.matchMedia&&window.matchMedia('(max-width: 767px)').matches){window.location.replace('https://thedaisy.link/install-app');}}catch(e){}})();`;
+
 export default function GetTheAppPage() {
   const locale = getLocale();
 
   return (
     <>
+      <script
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: MOBILE_REDIRECT_SCRIPT }}
+      />
       <WebPageSchema
         title="Download The Daisy App | Beauty Booking for iOS & Android"
         description="Download The Daisy beauty booking app for iOS and Android. Find salons near you, book appointments, earn cashback."
         url="https://www.jointhedaisy.com/get-the-app"
-        dateModified="2026-03-17T00:00:00.000Z"
+        dateModified="2026-05-19T00:00:00.000Z"
       />
       <PageBreadcrumbSchema
         locale={locale}

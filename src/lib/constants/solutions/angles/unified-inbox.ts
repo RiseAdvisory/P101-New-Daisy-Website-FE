@@ -142,7 +142,7 @@ const unifiedInboxAngle: Record<
         subHeadline:
           'WhatsApp, Instagram, and more. All your customer messages in one place. No more switching between apps or missing messages buried in different platforms.',
         ctaText: 'Start Your 14-Day Free Trial',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         trustLine: 'No credit card required. Our team helps you set up.',
         answerBlock: {
           question: 'What is a unified inbox for beauty businesses?',
@@ -247,7 +247,7 @@ const unifiedInboxAngle: Record<
         headline: 'Free to Start. Grow at Your Own Pace.',
         body: "14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.",
         ctaText: 'Start Your 14-Day Free Trial',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
         pricingLinkHref: '/pricing',
       },
@@ -275,12 +275,12 @@ const unifiedInboxAngle: Record<
         afterScroll: {
           headline: 'Ready to unify your customer conversations?',
           ctaText: 'Start Your 14-Day Free Trial',
-          ctaLink: '/start-free-trial/business',
+          ctaLink: '/get-the-app',
         },
         afterFeatures: {
           headline: 'Start Your 14-Day Free Trial',
           ctaText: 'Start Your 14-Day Free Trial',
-          ctaLink: '/start-free-trial/business',
+          ctaLink: '/get-the-app',
           secondaryLinkText: 'Explore all features \u2192',
           secondaryLinkHref: '/features/business',
         },
@@ -300,7 +300,7 @@ const unifiedInboxAngle: Record<
         subHeadline:
           'واتساب وإنستغرام والمزيد. كل رسائل عملائك في مكان واحد. لا مزيد من التنقل بين التطبيقات أو فقدان الرسائل المدفونة في منصات مختلفة.',
         ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         trustLine: 'لا حاجة لبطاقة ائتمان. فريقنا يساعدك في الإعداد.',
         answerBlock: {
           question: 'ما هو صندوق الوارد الموحد لأعمال التجميل؟',
@@ -405,7 +405,7 @@ const unifiedInboxAngle: Record<
         headline: 'ابدأ مجانًا. انمُ بالسرعة التي تناسبك.',
         body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولار/شهريًا. موظف الاستقبال الذكي لا يتولى الرسائل فحسب. بل يتعلم تفضيلات عملائك بمرور الوقت، ويُخصّص كل تفاعل ويحوّل الزوار الجدد إلى عملاء أوفياء. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، عملاؤك الحاليون، بدون أي عمولة.',
         ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190',
         pricingLinkHref: '/pricing',
       },
@@ -433,12 +433,12 @@ const unifiedInboxAngle: Record<
         afterScroll: {
           headline: 'مستعد لتوحيد محادثات عملائك؟',
           ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
-          ctaLink: '/start-free-trial/business',
+          ctaLink: '/get-the-app',
         },
         afterFeatures: {
           headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
           ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
-          ctaLink: '/start-free-trial/business',
+          ctaLink: '/get-the-app',
           secondaryLinkText: 'استكشف جميع الميزات \u2192',
           secondaryLinkHref: '/features/business',
         },
@@ -460,7 +460,7 @@ const unifiedInboxAngle: Record<
         subHeadline:
           'Clients message you on WhatsApp, Instagram, and more. Stop checking 5 apps. See every conversation in one clean inbox.',
         ctaText: 'Start Your Free Trial',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         trustLine: 'Free to join. No credit card required.',
         answerBlock: {
           question: 'What is a unified inbox for beauty professionals?',
@@ -565,7 +565,7 @@ const unifiedInboxAngle: Record<
         headline: 'Free to Join. Zero Risk.',
         body: "Create your profile and start accepting bookings at no cost. Premium features available through affordable plans. Daisy doesn't just manage your schedule. It learns your clients' preferences, personalizes their booking experience, and makes sure you never miss an inquiry. Commission only on new clients who find you through the Daisy marketplace, your existing clients always pay zero commission.",
         ctaText: 'Get Listed for Free',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
         pricingLinkHref: '/pricing',
       },
@@ -593,12 +593,12 @@ const unifiedInboxAngle: Record<
         afterScroll: {
           headline: 'Ready to see all your messages in one place?',
           ctaText: 'Start Your Free Trial',
-          ctaLink: '/start-free-trial/professional',
+          ctaLink: '/get-the-app',
         },
         afterFeatures: {
           headline: 'Start Your Free Trial',
           ctaText: 'Start Your Free Trial',
-          ctaLink: '/start-free-trial/professional',
+          ctaLink: '/get-the-app',
           secondaryLinkText: 'Explore all features \u2192',
           secondaryLinkHref: '/features/professional',
         },
@@ -618,7 +618,7 @@ const unifiedInboxAngle: Record<
         subHeadline:
           'العملاء يراسلونك على واتساب وإنستغرام والمزيد. توقف عن التحقق من 5 تطبيقات. اعرض كل المحادثات في صندوق وارد واحد نظيف.',
         ctaText: 'ابدأ تجربتك المجانية',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         trustLine: 'الانضمام مجاني. لا حاجة لبطاقة ائتمان.',
         answerBlock: {
           question: 'ما هو صندوق الوارد الموحد لمتخصصي التجميل؟',
@@ -723,7 +723,7 @@ const unifiedInboxAngle: Record<
         headline: 'الانضمام مجاني. بدون أي مخاطر.',
         body: 'أنشئ ملفك الشخصي وابدأ بقبول الحجوزات بدون تكلفة. الميزات المتقدمة متاحة من خلال باقات بأسعار معقولة. ديزي لا تدير جدولك فحسب. بل تتعلم تفضيلات عملائك، وتُخصّص تجربة حجزهم، وتتأكد من عدم تفويت أي استفسار. العمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي، عملاؤك الحاليون، بدون أي عمولة دائمًا.',
         ctaText: 'سجّل مجانًا',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190',
         pricingLinkHref: '/pricing',
       },
@@ -751,12 +751,12 @@ const unifiedInboxAngle: Record<
         afterScroll: {
           headline: 'مستعد لرؤية كل رسائلك في مكان واحد؟',
           ctaText: 'ابدأ تجربتك المجانية',
-          ctaLink: '/start-free-trial/professional',
+          ctaLink: '/get-the-app',
         },
         afterFeatures: {
           headline: 'ابدأ تجربتك المجانية',
           ctaText: 'ابدأ تجربتك المجانية',
-          ctaLink: '/start-free-trial/professional',
+          ctaLink: '/get-the-app',
           secondaryLinkText: 'استكشف جميع الميزات \u2192',
           secondaryLinkHref: '/features/professional',
         },

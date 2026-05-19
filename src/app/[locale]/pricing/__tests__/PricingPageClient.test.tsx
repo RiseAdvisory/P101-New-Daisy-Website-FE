@@ -85,15 +85,12 @@ describe('PricingPageClient', () => {
       );
     });
 
-    it('renders final CTA linking to business free trial', () => {
+    it('renders final CTA linking to /get-the-app', () => {
       render(<PricingPageClient persona="business" lang="en" />);
       const ctaLink = screen
         .getByText(/start your 14-day free trial/i)
         .closest('a');
-      expect(ctaLink).toHaveAttribute(
-        'href',
-        '/en/start-free-trial/business',
-      );
+      expect(ctaLink).toHaveAttribute('href', '/en/get-the-app');
     });
 
     it('renders billing toggle', () => {
@@ -136,15 +133,12 @@ describe('PricingPageClient', () => {
       expect(faqItems.length).toBeGreaterThan(0);
     });
 
-    it('renders final CTA linking to professional free trial', () => {
+    it('renders final CTA linking to /get-the-app', () => {
       render(<PricingPageClient persona="professional" lang="en" />);
       const ctaLink = screen
         .getByText(/start your free trial/i)
         .closest('a');
-      expect(ctaLink).toHaveAttribute(
-        'href',
-        '/en/start-free-trial/professional',
-      );
+      expect(ctaLink).toHaveAttribute('href', '/en/get-the-app');
     });
   });
 });

@@ -23,7 +23,7 @@ const aiReceptionistAngle: Record<
         subHeadline:
           "Daisy's AI receptionist handles every WhatsApp and Instagram inquiry, books appointments, and processes payments, 24/7. One platform replaces your entire front desk.",
         ctaText: 'Start Your 14-Day Free Trial',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         trustLine: 'No credit card required. Our team helps you set up.',
         answerBlock: {
           question: 'How does the Daisy AI receptionist work for beauty businesses?',
@@ -40,7 +40,7 @@ const aiReceptionistAngle: Record<
         subHeadline:
           'موظف الاستقبال الذكي من ديزي يتولى كل استفسار على واتساب وإنستغرام، يحجز المواعيد، ويعالج المدفوعات، على مدار الساعة. منصة واحدة تحل محل مكتب الاستقبال بالكامل.',
         ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         trustLine: 'لا حاجة لبطاقة ائتمان. فريقنا يساعدك في الإعداد.',
         answerBlock: {
           question: 'كيف يعمل موظف الاستقبال الذكي من ديزي لأعمال التجميل؟',
@@ -59,7 +59,7 @@ const aiReceptionistAngle: Record<
         subHeadline:
           "Stop being your own receptionist. Daisy's AI handles your WhatsApp and Instagram messages, books appointments, and processes payments, while you focus on what you do best.",
         ctaText: 'Start Your Free Trial',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         trustLine: 'Free to join. No credit card required.',
         answerBlock: {
           question: 'How does the Daisy AI receptionist help beauty professionals?',
@@ -76,7 +76,7 @@ const aiReceptionistAngle: Record<
         subHeadline:
           'توقف عن كونك موظف استقبال نفسك. الذكاء الاصطناعي في ديزي يتولى رسائل واتساب وإنستغرام، يحجز المواعيد، ويعالج المدفوعات، بينما تركز على ما تتقنه.',
         ctaText: 'ابدأ تجربتك المجانية',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         trustLine: 'الانضمام مجاني. لا حاجة لبطاقة ائتمان.',
         answerBlock: {
           question: 'كيف يساعد موظف الاستقبال الذكي من ديزي متخصصي التجميل؟',

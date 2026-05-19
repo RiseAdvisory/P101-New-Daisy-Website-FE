@@ -6,7 +6,7 @@ describe('PricingHook', () => {
     headline: 'Free to Start',
     body: '14-day free trial with full access.',
     ctaText: 'Start Free Trial',
-    ctaLink: '/start-free-trial',
+    ctaLink: '/get-the-app',
     pricingLinkText: 'See full pricing details',
     pricingLinkHref: '/pricing',
   };
@@ -24,7 +24,7 @@ describe('PricingHook', () => {
   it('renders the CTA link with correct href', () => {
     render(<PricingHook {...defaultProps} />);
     const ctaLink = screen.getByRole('link', { name: /start free trial/i });
-    expect(ctaLink).toHaveAttribute('href', '/start-free-trial');
+    expect(ctaLink).toHaveAttribute('href', '/get-the-app');
   });
 
   it('renders the pricing details link', () => {

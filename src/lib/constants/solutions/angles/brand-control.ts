@@ -41,7 +41,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         subHeadline:
           'Your logo, your colors, your domain. Customers see your brand from booking to confirmation. No "Powered by" badges. No co-branding.',
         ctaText: 'Start Your 14-Day Free Trial',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         trustLine: 'No credit card required. Our team helps you set up.',
         answerBlock: {
           question: 'What is white-label brand control for beauty businesses?',
@@ -146,7 +146,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         headline: 'Free to Start. Grow at Your Own Pace.',
         body: "14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.",
         ctaText: 'Start Your 14-Day Free Trial',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
         pricingLinkHref: '/pricing',
       },
@@ -174,12 +174,12 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         afterScroll: {
           headline: 'Ready to put your brand on every customer touchpoint?',
           ctaText: 'Start Your 14-Day Free Trial',
-          ctaLink: '/start-free-trial/business',
+          ctaLink: '/get-the-app',
         },
         afterFeatures: {
           headline: 'Start Your 14-Day Free Trial',
           ctaText: 'Start Your 14-Day Free Trial',
-          ctaLink: '/start-free-trial/business',
+          ctaLink: '/get-the-app',
           secondaryLinkText: 'Explore all features \u2192',
           secondaryLinkHref: '/features/business',
         },
@@ -199,7 +199,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         subHeadline:
           'شعارك، ألوانك، نطاقك. العملاء يرون علامتك التجارية من الحجز إلى التأكيد. بدون شارات "مدعوم من". بدون علامات مشتركة.',
         ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         trustLine: 'لا حاجة لبطاقة ائتمان. فريقنا يساعدك في الإعداد.',
         answerBlock: {
           question: 'ما هو التحكم بالعلامة التجارية البيضاء لأعمال التجميل؟',
@@ -304,7 +304,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         headline: 'ابدأ مجانًا. انمُ بالسرعة التي تناسبك.',
         body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولار/شهريًا. موظف الاستقبال الذكي لا يتولى الرسائل فحسب. بل يتعلم تفضيلات عملائك بمرور الوقت، ويُخصّص كل تفاعل ويحوّل الزوار الجدد إلى عملاء أوفياء. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، عملاؤك الحاليون، بدون أي عمولة.',
         ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
-        ctaLink: '/start-free-trial/business',
+        ctaLink: '/get-the-app',
         pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190',
         pricingLinkHref: '/pricing',
       },
@@ -331,12 +331,12 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         afterScroll: {
           headline: 'مستعد لوضع علامتك التجارية على كل نقطة تواصل؟',
           ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
-          ctaLink: '/start-free-trial/business',
+          ctaLink: '/get-the-app',
         },
         afterFeatures: {
           headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
           ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
-          ctaLink: '/start-free-trial/business',
+          ctaLink: '/get-the-app',
           secondaryLinkText: 'استكشف جميع الميزات \u2192',
           secondaryLinkHref: '/features/business',
         },
@@ -358,7 +358,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         subHeadline:
           'Stand out with a branded profile that showcases your work. Clients book through your page, not a generic platform.',
         ctaText: 'Start Your Free Trial',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         trustLine: 'Free to join. No credit card required.',
         answerBlock: {
           question: 'How does brand control work for beauty professionals?',
@@ -463,7 +463,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         headline: 'Free to Join. Zero Risk.',
         body: "Create your profile and start accepting bookings at no cost. Premium features available through affordable plans. Daisy doesn't just manage your schedule. It learns your clients' preferences, personalizes their booking experience, and makes sure you never miss an inquiry. Commission only on new clients who find you through the Daisy marketplace, your existing clients always pay zero commission.",
         ctaText: 'Get Listed for Free',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
         pricingLinkHref: '/pricing',
       },
@@ -490,12 +490,12 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         afterScroll: {
           headline: 'Ready to build your professional brand online?',
           ctaText: 'Start Your Free Trial',
-          ctaLink: '/start-free-trial/professional',
+          ctaLink: '/get-the-app',
         },
         afterFeatures: {
           headline: 'Start Your Free Trial',
           ctaText: 'Start Your Free Trial',
-          ctaLink: '/start-free-trial/professional',
+          ctaLink: '/get-the-app',
           secondaryLinkText: 'Explore all features \u2192',
           secondaryLinkHref: '/features/professional',
         },
@@ -515,7 +515,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         subHeadline:
           'تميّز بملف شخصي يحمل علامتك التجارية ويعرض أعمالك. العملاء يحجزون عبر صفحتك، ليس عبر منصة عامة.',
         ctaText: 'ابدأ تجربتك المجانية',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         trustLine: 'الانضمام مجاني. لا حاجة لبطاقة ائتمان.',
         answerBlock: {
           question: 'كيف يعمل التحكم بالعلامة التجارية لمتخصصي التجميل؟',
@@ -620,7 +620,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         headline: 'الانضمام مجاني. بدون أي مخاطر.',
         body: 'أنشئ ملفك الشخصي وابدأ بقبول الحجوزات بدون تكلفة. الميزات المتقدمة متاحة من خلال باقات بأسعار معقولة. ديزي لا تدير جدولك فحسب. بل تتعلم تفضيلات عملائك، وتُخصّص تجربة حجزهم، وتتأكد من عدم تفويت أي استفسار. العمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي، عملاؤك الحاليون، بدون أي عمولة دائمًا.',
         ctaText: 'سجّل مجانًا',
-        ctaLink: '/start-free-trial/professional',
+        ctaLink: '/get-the-app',
         pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190',
         pricingLinkHref: '/pricing',
       },
@@ -647,12 +647,12 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         afterScroll: {
           headline: 'مستعد لبناء علامتك المهنية عبر الإنترنت؟',
           ctaText: 'ابدأ تجربتك المجانية',
-          ctaLink: '/start-free-trial/professional',
+          ctaLink: '/get-the-app',
         },
         afterFeatures: {
           headline: 'ابدأ تجربتك المجانية',
           ctaText: 'ابدأ تجربتك المجانية',
-          ctaLink: '/start-free-trial/professional',
+          ctaLink: '/get-the-app',
           secondaryLinkText: 'استكشف جميع الميزات \u2192',
           secondaryLinkHref: '/features/professional',
         },

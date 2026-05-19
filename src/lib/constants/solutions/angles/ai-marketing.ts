@@ -16,7 +16,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         categoryLabel: 'AI MARKETING FOR BUSINESS',
         headline: 'Marketing That Knows Your Customers.',
         subHeadline: 'AI analyzes customer preferences, visit history, and behavior. It sends the right offer to the right person at the right time. No marketing degree required.',
-        ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/start-free-trial/business',
+        ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app',
         trustLine: 'No credit card required. Our team helps you set up.',
         answerBlock: { question: 'How does AI marketing work for beauty businesses?', answer: 'AI marketing analyzes each customer\'s visit history, service preferences, and booking patterns. It automatically sends personalized offers, rebooking reminders, and promotions via WhatsApp at the optimal time. You get higher retention without manual effort.' },
       },
@@ -36,7 +36,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { title: 'Our team helps you get set up', description: 'We migrate your data, configure your AI receptionist, and test everything with you.' },
         { title: 'Go live. Your AI receptionist takes over.', description: 'Customers get instant responses. You get control.' },
       ] },
-      pricingHook: { headline: 'Free to Start. Grow at Your Own Pace.', body: "14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.", ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/start-free-trial/business', pricingLinkText: 'See full pricing details \u2192', pricingLinkHref: '/pricing' },
+      pricingHook: { headline: 'Free to Start. Grow at Your Own Pace.', body: "14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.", ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app', pricingLinkText: 'See full pricing details \u2192', pricingLinkHref: '/pricing' },
       platformStrengths: { headline: 'Everything You Need to Run Your Business', subHeadline: 'Stop paying for 8 separate tools. Daisy combines everything you need to run and grow your beauty business.', capabilities: [
         { label: 'Marketing Engine', description: 'Promotions, campaigns, and customer retention' },
         { label: 'AI Receptionist', description: '24/7 WhatsApp and Instagram messaging, booking, and payments' },
@@ -48,8 +48,8 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { label: 'Brand Control', description: 'White-label everything with your brand' },
       ], stats: [{ value: '24/7', context: 'AI marketing' }, { value: '8', context: 'tools in one platform' }, { value: '10+', context: 'languages supported' }] },
       inlineCtas: {
-        afterScroll: { headline: 'Ready to let AI handle your marketing?', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/start-free-trial/business' },
-        afterFeatures: { headline: 'Start Your 14-Day Free Trial', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/start-free-trial/business', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/business' },
+        afterScroll: { headline: 'Ready to let AI handle your marketing?', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app' },
+        afterFeatures: { headline: 'Start Your 14-Day Free Trial', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/business' },
       },
       titleFraque: 'Frequently Asked Questions',
       fallbackFaqs: [
@@ -64,7 +64,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         categoryLabel: 'تسويق الذكاء الاصطناعي للأعمال',
         headline: 'تسويق يعرف عملاءك.',
         subHeadline: 'الذكاء الاصطناعي يحلل تفضيلات العملاء وسجل الزيارات والسلوك. يرسل العرض المناسب للشخص المناسب في الوقت المناسب. لا حاجة لشهادة في التسويق.',
-        ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/start-free-trial/business',
+        ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app',
         trustLine: 'لا حاجة لبطاقة ائتمان. فريقنا يساعدك في الإعداد.',
         answerBlock: { question: 'كيف يعمل تسويق الذكاء الاصطناعي لأعمال التجميل؟', answer: 'تسويق الذكاء الاصطناعي يحلل سجل زيارات كل عميل وتفضيلات الخدمات وأنماط الحجز. يرسل تلقائيًا عروضًا مخصصة وتذكيرات إعادة الحجز والعروض الترويجية عبر واتساب في الوقت الأمثل. تحصل على احتفاظ أعلى بدون جهد يدوي.' },
       },
@@ -84,7 +84,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { title: 'فريقنا يساعدك في الإعداد', description: 'ننقل بياناتك ونُعدّ موظف الاستقبال الذكي ونختبر كل شيء معك.' },
         { title: 'ابدأ العمل. موظف الاستقبال الذكي يتولى المهمة.', description: 'العملاء يحصلون على ردود فورية. أنت تحصل على التحكم.' },
       ] },
-      pricingHook: { headline: 'ابدأ مجانًا. انمُ بالسرعة التي تناسبك.', body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولار/شهريًا. موظف الاستقبال الذكي لا يتولى الرسائل فحسب. بل يتعلم تفضيلات عملائك بمرور الوقت، ويُخصّص كل تفاعل ويحوّل الزوار الجدد إلى عملاء أوفياء. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، عملاؤك الحاليون، بدون أي عمولة.', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/start-free-trial/business', pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190', pricingLinkHref: '/pricing' },
+      pricingHook: { headline: 'ابدأ مجانًا. انمُ بالسرعة التي تناسبك.', body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولار/شهريًا. موظف الاستقبال الذكي لا يتولى الرسائل فحسب. بل يتعلم تفضيلات عملائك بمرور الوقت، ويُخصّص كل تفاعل ويحوّل الزوار الجدد إلى عملاء أوفياء. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، عملاؤك الحاليون، بدون أي عمولة.', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app', pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190', pricingLinkHref: '/pricing' },
       platformStrengths: { headline: 'كل ما تحتاجه لإدارة عملك', subHeadline: 'توقف عن الدفع لـ 8 أدوات منفصلة. ديزي تجمع كل ما تحتاجه لإدارة وتنمية أعمالك في مجال التجميل.', capabilities: [
         { label: 'محرك التسويق', description: 'عروض وحملات والاحتفاظ بالعملاء' },
         { label: 'موظف استقبال ذكي', description: 'رسائل واتساب وإنستغرام وحجوزات ومدفوعات على مدار الساعة' },
@@ -96,8 +96,8 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { label: 'التحكم بالعلامة التجارية', description: 'كل شيء بعلامتك التجارية الخاصة' },
       ], stats: [{ value: '24/7', context: 'تسويق ذكي' }, { value: '8', context: 'أدوات في منصة واحدة' }, { value: '+10', context: 'لغة مدعومة' }] },
       inlineCtas: {
-        afterScroll: { headline: 'مستعد لترك الذكاء الاصطناعي يدير تسويقك؟', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/start-free-trial/business' },
-        afterFeatures: { headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/start-free-trial/business', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/business' },
+        afterScroll: { headline: 'مستعد لترك الذكاء الاصطناعي يدير تسويقك؟', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app' },
+        afterFeatures: { headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/business' },
       },
       titleFraque: 'أسئلة شائعة',
       fallbackFaqs: [
@@ -114,7 +114,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         categoryLabel: 'AI MARKETING FOR PROFESSIONALS',
         headline: 'Grow Your Client Base Without\nthe Marketing Hustle.',
         subHeadline: "Daisy's AI learns your clients' preferences and sends personalized rebooking reminders. You get repeat clients without chasing them.",
-        ctaText: 'Start Your Free Trial', ctaLink: '/start-free-trial/professional',
+        ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app',
         trustLine: 'Free to join. No credit card required.',
         answerBlock: { question: 'How does AI marketing help beauty professionals grow?', answer: "Daisy's AI tracks client preferences and visit patterns, then automatically sends personalized rebooking reminders via WhatsApp. You get repeat clients and grow your base without spending time on marketing or follow-ups." },
       },
@@ -134,7 +134,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { title: 'Our team helps you get set up', description: 'We configure your profile, set up your AI assistant, and walk you through everything.' },
         { title: 'Go live. Focus on your clients.', description: 'Daisy handles your bookings. You handle your craft.' },
       ] },
-      pricingHook: { headline: 'Free to Join. Zero Risk.', body: "Create your profile and start accepting bookings at no cost. Premium features available through affordable plans. Daisy doesn't just manage your schedule. It learns your clients' preferences, personalizes their booking experience, and makes sure you never miss an inquiry. Commission only on new clients who find you through the Daisy marketplace, your existing clients always pay zero commission.", ctaText: 'Get Listed for Free', ctaLink: '/start-free-trial/professional', pricingLinkText: 'See full pricing details \u2192', pricingLinkHref: '/pricing' },
+      pricingHook: { headline: 'Free to Join. Zero Risk.', body: "Create your profile and start accepting bookings at no cost. Premium features available through affordable plans. Daisy doesn't just manage your schedule. It learns your clients' preferences, personalizes their booking experience, and makes sure you never miss an inquiry. Commission only on new clients who find you through the Daisy marketplace, your existing clients always pay zero commission.", ctaText: 'Get Listed for Free', ctaLink: '/get-the-app', pricingLinkText: 'See full pricing details \u2192', pricingLinkHref: '/pricing' },
       platformStrengths: { headline: 'Everything You Need in One App', subHeadline: 'No more juggling between scheduling apps, payment tools, and messaging clients. Daisy brings it all together.', capabilities: [
         { label: 'Smart Notifications', description: 'Appointment reminders that reduce no-shows' },
         { label: 'AI Booking Assistant', description: 'Handles bookings and payments while you work' },
@@ -146,8 +146,8 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { label: 'Marketplace Visibility', description: 'Customers find you when searching nearby' },
       ], stats: [{ value: '0', context: 'marketing hours' }, { value: '24/7', context: 'AI retention' }, { value: '10+', context: 'languages supported' }] },
       inlineCtas: {
-        afterScroll: { headline: 'Ready to grow your client base on autopilot?', ctaText: 'Start Your Free Trial', ctaLink: '/start-free-trial/professional' },
-        afterFeatures: { headline: 'Start Your Free Trial', ctaText: 'Start Your Free Trial', ctaLink: '/start-free-trial/professional', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/professional' },
+        afterScroll: { headline: 'Ready to grow your client base on autopilot?', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app' },
+        afterFeatures: { headline: 'Start Your Free Trial', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/professional' },
       },
       titleFraque: 'Frequently Asked Questions',
       fallbackFaqs: [
@@ -162,7 +162,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         categoryLabel: 'تسويق الذكاء الاصطناعي للمتخصصين',
         headline: 'نمّ قاعدة عملائك بدون\nعناء التسويق.',
         subHeadline: 'الذكاء الاصطناعي في ديزي يتعلم تفضيلات عملائك ويرسل تذكيرات إعادة حجز مخصصة. تحصل على عملاء متكررين دون ملاحقتهم.',
-        ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/start-free-trial/professional',
+        ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app',
         trustLine: 'الانضمام مجاني. لا حاجة لبطاقة ائتمان.',
         answerBlock: { question: 'كيف يساعد تسويق الذكاء الاصطناعي متخصصي التجميل على النمو؟', answer: 'الذكاء الاصطناعي في ديزي يتتبع تفضيلات العملاء وأنماط الزيارات، ثم يرسل تلقائيًا تذكيرات إعادة حجز مخصصة عبر واتساب. تحصل على عملاء متكررين وتنمي قاعدتك دون قضاء وقت في التسويق أو المتابعات.' },
       },
@@ -182,7 +182,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { title: 'فريقنا يساعدك في الإعداد', description: 'نُعدّ ملفك الشخصي ونُجهّز مساعدك الذكي ونشرح لك كل شيء.' },
         { title: 'ابدأ العمل. ركّز على عملائك.', description: 'ديزي تتولى حجوزاتك. أنت تتولى إبداعك.' },
       ] },
-      pricingHook: { headline: 'الانضمام مجاني. بدون أي مخاطر.', body: 'أنشئ ملفك الشخصي وابدأ بقبول الحجوزات بدون تكلفة. الميزات المتقدمة متاحة من خلال باقات بأسعار معقولة. ديزي لا تدير جدولك فحسب. بل تتعلم تفضيلات عملائك، وتُخصّص تجربة حجزهم، وتتأكد من عدم تفويت أي استفسار. العمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي، عملاؤك الحاليون، بدون أي عمولة دائمًا.', ctaText: 'سجّل مجانًا', ctaLink: '/start-free-trial/professional', pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190', pricingLinkHref: '/pricing' },
+      pricingHook: { headline: 'الانضمام مجاني. بدون أي مخاطر.', body: 'أنشئ ملفك الشخصي وابدأ بقبول الحجوزات بدون تكلفة. الميزات المتقدمة متاحة من خلال باقات بأسعار معقولة. ديزي لا تدير جدولك فحسب. بل تتعلم تفضيلات عملائك، وتُخصّص تجربة حجزهم، وتتأكد من عدم تفويت أي استفسار. العمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي، عملاؤك الحاليون، بدون أي عمولة دائمًا.', ctaText: 'سجّل مجانًا', ctaLink: '/get-the-app', pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190', pricingLinkHref: '/pricing' },
       platformStrengths: { headline: 'كل ما تحتاجه في تطبيق واحد', subHeadline: 'لا مزيد من التنقل بين تطبيقات الجدولة وأدوات الدفع ومراسلة العملاء. ديزي تجمع كل شيء معًا.', capabilities: [
         { label: 'إشعارات ذكية', description: 'تذكيرات بالمواعيد تقلل حالات عدم الحضور' },
         { label: 'مساعد الحجز الذكي', description: 'يتولى الحجوزات والمدفوعات أثناء عملك' },
@@ -194,8 +194,8 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { label: 'ظهور في السوق', description: 'العملاء يجدونك عند البحث بالقرب منهم' },
       ], stats: [{ value: '0', context: 'ساعات تسويق' }, { value: '24/7', context: 'احتفاظ ذكي' }, { value: '+10', context: 'لغة مدعومة' }] },
       inlineCtas: {
-        afterScroll: { headline: 'مستعد لتنمية قاعدة عملائك على الطيار الآلي؟', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/start-free-trial/professional' },
-        afterFeatures: { headline: 'ابدأ تجربتك المجانية', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/start-free-trial/professional', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/professional' },
+        afterScroll: { headline: 'مستعد لتنمية قاعدة عملائك على الطيار الآلي؟', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app' },
+        afterFeatures: { headline: 'ابدأ تجربتك المجانية', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/professional' },
       },
       titleFraque: 'أسئلة شائعة',
       fallbackFaqs: [
