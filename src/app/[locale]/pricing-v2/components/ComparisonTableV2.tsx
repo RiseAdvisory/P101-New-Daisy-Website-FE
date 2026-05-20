@@ -14,7 +14,7 @@ const renderValue = (value: FeatureCategoryRow['values'][number]) => {
   if (value === true) {
     return (
       <Check
-        className="mx-auto h-5 w-5 text-[#8B6554]"
+        className="mx-auto h-5 w-5 text-[#CAB2A6]"
         strokeWidth={2.5}
         aria-label="Included"
       />
@@ -23,13 +23,13 @@ const renderValue = (value: FeatureCategoryRow['values'][number]) => {
   if (value === undefined || value === false) {
     return (
       <Minus
-        className="mx-auto h-5 w-5 text-[#ABB4B3]"
+        className="mx-auto h-5 w-5 text-white/30"
         aria-label="Not included"
       />
     );
   }
   return (
-    <span className="text-sm font-semibold text-[#172524]">{value}</span>
+    <span className="text-sm font-semibold text-white">{value}</span>
   );
 };
 
@@ -41,13 +41,13 @@ const renderValue = (value: FeatureCategoryRow['values'][number]) => {
  */
 export const ComparisonTableV2 = ({ categories, tiers }: Props) => {
   return (
-    <section className="bg-white px-4 py-16 md:px-16">
+    <section className="bg-primary px-4 py-16 md:px-16">
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 text-center">
-          <h2 className="text-3xl font-bold text-[#172524] md:text-4xl">
+          <h2 className="text-3xl font-bold text-white md:text-4xl">
             Compare every feature
           </h2>
-          <p className="mt-3 text-base text-[#455150]">
+          <p className="mt-3 text-base text-white/65">
             Click a category to expand or collapse it.
           </p>
         </div>
@@ -56,13 +56,13 @@ export const ComparisonTableV2 = ({ categories, tiers }: Props) => {
           <table className="w-full min-w-[640px] border-separate border-spacing-0">
             <thead>
               <tr>
-                <th className="sticky left-0 z-10 bg-white py-4 pl-4 pr-6 text-left text-sm font-semibold uppercase tracking-wide text-[#455150]">
+                <th className="sticky left-0 z-10 bg-primary py-4 pl-4 pr-6 text-left text-sm font-semibold uppercase tracking-wide text-white/55">
                   Feature
                 </th>
                 {tiers.map((tier) => (
                   <th
                     key={tier.id}
-                    className="px-4 py-4 text-center text-sm font-semibold uppercase tracking-wide text-[#455150]"
+                    className="px-4 py-4 text-center text-sm font-semibold uppercase tracking-wide text-white/55"
                     style={{ minWidth: '140px' }}
                   >
                     {tier.title}
@@ -98,27 +98,27 @@ const CategoryGroup = ({
       <tr>
         <td colSpan={tiersCount + 1} className="px-0 pt-8">
           <details open className="group">
-            <summary className="flex cursor-pointer items-center justify-between border-b border-[#E8E9E9] bg-[#F8F5F3] px-4 py-3 text-base font-semibold text-[#172524] [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer items-center justify-between border-b border-white/10 bg-white/[0.07] px-4 py-3 text-base font-semibold text-white [&::-webkit-details-marker]:hidden">
               <span>{category.title}</span>
               <span
                 aria-hidden="true"
-                className="text-[#8B6554] transition-transform group-open:rotate-90"
+                className="text-[#CAB2A6] transition-transform group-open:rotate-90"
               >
                 ›
               </span>
             </summary>
-            <div className="border-l border-r border-b border-[#E8E9E9]">
+            <div className="border-l border-r border-b border-white/10">
               <table className="w-full border-separate border-spacing-0">
                 <tbody>
                   {category.rows.map((row, i) => (
                     <tr
                       key={row.name}
-                      className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFBFB]'}
+                      className={i % 2 === 0 ? 'bg-transparent' : 'bg-white/[0.03]'}
                     >
-                      <td className="py-3 pl-4 pr-6 text-sm text-[#172524]">
+                      <td className="py-3 pl-4 pr-6 text-sm text-white">
                         <div className="font-medium">{row.name}</div>
                         {row.note && (
-                          <div className="mt-1 text-xs text-[#455150]">
+                          <div className="mt-1 text-xs text-white/55">
                             {row.note}
                           </div>
                         )}

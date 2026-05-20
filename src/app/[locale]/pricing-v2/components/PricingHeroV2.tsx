@@ -29,13 +29,13 @@ export const PricingHeroV2 = ({
   };
 
   return (
-    <section className="bg-[#F8F5F3] px-4 pb-16 pt-12 md:px-16 md:pt-16">
+    <section className="bg-primary px-4 pb-16 pt-12 md:px-16 md:pt-16">
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 text-center">
-          <h1 className="text-4xl font-bold leading-tight text-[#172524] md:text-5xl">
+          <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl">
             Pricing that grows with your business
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-[#455150]">
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-white/75">
             Pick the plan that matches your scale today. Move up — or stay — as
             you grow. Every plan starts with 1,000 free AI credits and a 14-day
             free trial.
@@ -43,7 +43,7 @@ export const PricingHeroV2 = ({
         </div>
 
         {/* Persona selector */}
-        <div className="mx-auto mb-8 flex w-fit gap-1 rounded-xl border border-[#E8E9E9] bg-white p-1">
+        <div className="mx-auto mb-8 flex w-fit gap-1 rounded-xl border border-white/15 bg-white/5 p-1 backdrop-blur-sm">
           {(
             [
               { id: 'business' as const, label: 'For Business (with a team)' },
@@ -58,8 +58,8 @@ export const PricingHeroV2 = ({
               className={cn(
                 'rounded-lg px-4 py-2 text-sm font-semibold transition-colors',
                 persona === option.id
-                  ? 'bg-[#172524] text-white'
-                  : 'text-[#455150] hover:bg-[#F8F5F3]',
+                  ? 'bg-white text-[#172524]'
+                  : 'text-white/70 hover:bg-white/10 hover:text-white',
               )}
             >
               {option.label}
@@ -75,8 +75,8 @@ export const PricingHeroV2 = ({
             className={cn(
               'rounded-lg px-3 py-1.5 text-sm font-semibold transition-colors',
               billingPeriod === 'monthly'
-                ? 'bg-[#172524] text-white'
-                : 'text-[#455150] hover:text-[#172524]',
+                ? 'bg-white text-[#172524]'
+                : 'text-white/60 hover:text-white',
             )}
           >
             Monthly
@@ -87,8 +87,8 @@ export const PricingHeroV2 = ({
             className={cn(
               'flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm font-semibold transition-colors',
               billingPeriod === 'annual'
-                ? 'bg-[#172524] text-white'
-                : 'text-[#455150] hover:text-[#172524]',
+                ? 'bg-white text-[#172524]'
+                : 'text-white/60 hover:text-white',
             )}
           >
             Annual
@@ -96,7 +96,7 @@ export const PricingHeroV2 = ({
               className={cn(
                 'rounded-full px-2 py-0.5 text-xs font-bold',
                 billingPeriod === 'annual'
-                  ? 'bg-white text-[#172524]'
+                  ? 'bg-[#8B6554] text-white'
                   : 'bg-[#8B6554] text-white',
               )}
             >
@@ -117,7 +117,7 @@ export const PricingHeroV2 = ({
           ))}
         </div>
 
-        <p className="mt-6 text-center text-xs text-[#455150]">
+        <p className="mt-6 text-center text-xs text-white/50">
           * Marketplace visibility and cashback promotions require a
           service-quality review.
         </p>

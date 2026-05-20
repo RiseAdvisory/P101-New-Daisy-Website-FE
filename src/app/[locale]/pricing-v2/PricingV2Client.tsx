@@ -58,11 +58,11 @@ export const PricingV2Client = ({ persona, locale }: Props) => {
       <ComparisonTableV2 categories={categories} tiers={tiers} />
 
       {/* Cross-link to other persona */}
-      <section className="bg-white px-4 py-12 md:px-16">
+      <section className="bg-primary px-4 py-12 md:px-16">
         <div className="mx-auto max-w-3xl text-center">
           <Link
             href={localePath(`/pricing-v2/${otherPersona}`, locale)}
-            className="text-base font-semibold text-[#8B6554] hover:underline"
+            className="text-base font-semibold text-[#CAB2A6] hover:text-white hover:underline"
           >
             {otherLabel} →
           </Link>
@@ -74,8 +74,8 @@ export const PricingV2Client = ({ persona, locale }: Props) => {
       <PricingFAQV2 />
 
       {/* Final CTA */}
-      <section className="bg-[#F8F5F3] px-4 pb-20 md:px-16">
-        <div className="mx-auto max-w-3xl rounded-2xl bg-[#172524] px-8 py-12 text-center md:px-16 md:py-16">
+      <section className="bg-primary px-4 pb-20 md:px-16">
+        <div className="mx-auto max-w-3xl rounded-2xl bg-gradient-to-br from-[#8B6554]/25 via-white/[0.05] to-white/[0.04] px-8 py-12 text-center ring-1 ring-white/10 md:px-16 md:py-16">
           <h2 className="text-3xl font-bold leading-tight text-white md:text-4xl">
             Ready to grow with The Daisy?
           </h2>
@@ -85,7 +85,7 @@ export const PricingV2Client = ({ persona, locale }: Props) => {
           </p>
           <Link
             href={localePath('/get-the-app', locale)}
-            className="mt-8 inline-block rounded-lg bg-white px-10 py-3.5 text-base font-semibold text-[#172524] transition-colors hover:bg-[#F8F5F3]"
+            className="mt-8 inline-block rounded-lg bg-white px-10 py-3.5 text-base font-semibold text-[#172524] transition-colors hover:bg-white/90"
           >
             Start free trial
           </Link>
