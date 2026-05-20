@@ -2,9 +2,9 @@ import { COMMISSION_CALLOUT } from '@/lib/constants/pricing/v2/pricingV2Shared';
 
 export const CommissionCallout = () => {
   return (
-    <section className="bg-[#F8F5F3] px-4 py-16 md:px-16">
+    <section className="bg-primary px-4 py-16 md:px-16">
       <div className="mx-auto max-w-5xl">
-        <div className="rounded-2xl bg-[#172524] p-8 text-white md:p-12">
+        <div className="rounded-2xl bg-gradient-to-br from-[#8B6554]/20 via-white/[0.04] to-white/[0.04] p-8 text-white ring-1 ring-white/10 md:p-12">
           <div className="grid gap-8 md:grid-cols-[1fr_2fr] md:items-center md:gap-12">
             <div>
               <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#CAB2A6]">
