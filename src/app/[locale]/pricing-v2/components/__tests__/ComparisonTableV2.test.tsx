@@ -114,40 +114,47 @@ describe('ComparisonTableV2', () => {
     expect(screen.getByText('Advanced AI Customization')).toBeInTheDocument();
   });
 
-  it('renders categories inside a <details> element so they collapse without JS', () => {
+  it('uses a single <table> (not nested) so columns stay aligned', () => {
     const { container } = render(
       <ComparisonTableV2 categories={categories} tiers={tiers} />,
     );
-    const detailsElements = container.querySelectorAll('details');
-    expect(detailsElements.length).toBe(categories.length);
-    // Each <details> should be open by default per the design.
-    detailsElements.forEach((el) => {
-      expect(el).toHaveAttribute('open');
-    });
+    // The whole comparison is one table with category-header rows inside.
+    const tables = container.querySelectorAll('table');
+    expect(tables.length).toBe(1);
   });
 
-  it('each category contains a <summary> with the category title', () => {
+  it('renders a <colgroup> so all column widths are locked at the table level', () => {
+    const { container } = render(
+      <ComparisonTableV2 categories={categories} tiers={tiers} />,
+    );
+    const colgroup = container.querySelector('colgroup');
+    expect(colgroup).not.toBeNull();
+    // One col for the feature column + one per tier.
+    const cols = colgroup?.querySelectorAll('col');
+    expect(cols?.length).toBe(tiers.length + 1);
+  });
+
+  it('renders each category title as a full-width header row', () => {
     render(<ComparisonTableV2 categories={categories} tiers={tiers} />);
-    const summaries = screen.getAllByText(/Scale & seats|AI features/);
-    // At least one for each category title (could be more if title text repeats elsewhere)
-    expect(summaries.length).toBeGreaterThanOrEqual(2);
+    for (const category of categories) {
+      const headerCell = screen.getByText(category.title);
+      expect(headerCell.tagName.toLowerCase()).toBe('td');
+      // colSpan covers all columns (feature + tiers).
+      expect(headerCell).toHaveAttribute('colspan', String(tiers.length + 1));
+    }
   });
 
-  // Sanity check that the within() helper would catch a regression where a
-  // tier's column gets misaligned.
-  it('placeholder coverage on row-cell alignment', () => {
+  it('keeps the row-to-cell layout aligned for every feature row', () => {
     const { container } = render(
       <ComparisonTableV2 categories={categories} tiers={tiers} />,
     );
-    // Find the "Team members / calendars" row.
     const row = screen.getByText('Team members / calendars').closest('tr');
     expect(row).not.toBeNull();
     if (row) {
       const cells = within(row).getAllByRole('cell');
-      // 1 name cell + 3 value cells = 4 total
-      expect(cells.length).toBe(4);
+      // 1 name cell + 1 per tier = 4 total
+      expect(cells.length).toBe(tiers.length + 1);
     }
-    // container is used to ensure JSDOM is producing a real document
     expect(container).toBeTruthy();
   });
 });
