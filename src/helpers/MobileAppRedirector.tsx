@@ -64,13 +64,21 @@ const MobileAppRedirector = () => {
       if (!storeUrl) return;
 
       e.preventDefault();
+      // Next.js <Link> attaches its own click handler on the <a> element that
+      // calls router.push() for client-side navigation. Listening in the
+      // capture phase + stopImmediatePropagation prevents that handler from
+      // running, so we don't get a double navigation (external store URL +
+      // client-side nav to /get-the-app at the same time).
+      e.stopImmediatePropagation();
       // assign() instead of `.href = …` so the navigation is mockable in tests
       // and adds a history entry (user can back-button to our marketing site).
       window.location.assign(storeUrl);
     }
 
-    document.addEventListener('click', handleClick);
-    return () => document.removeEventListener('click', handleClick);
+    // Capture phase: fire BEFORE the target element's own listeners (i.e.,
+    // before Next.js Link's click handler).
+    document.addEventListener('click', handleClick, true);
+    return () => document.removeEventListener('click', handleClick, true);
   }, []);
 
   return null;
