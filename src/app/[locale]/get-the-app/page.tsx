@@ -4,6 +4,7 @@ import { GetTheAppClient } from './GetTheAppClient';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import { getLocale } from '@/lib/locale';
+import { buttonAppData } from '@/lib/constants/shared/buttonAppData';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
@@ -57,11 +58,14 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   };
 }
 
-// Mobile visitors get punted to the thedaisy.link smartlink (which device-
-// detects and forwards to the App Store / Play Store). Desktop visitors see
-// the full page below. Runs before paint so there's no flash of /get-the-app
-// content on phones.
-const MOBILE_REDIRECT_SCRIPT = `(function(){try{if(window.matchMedia&&window.matchMedia('(max-width: 767px)').matches){window.location.replace('https://thedaisy.link/install-app');}}catch(e){}})();`;
+// Mobile visitors are routed straight to the App Store or Play Store based on
+// their device OS. Desktop and tablet visitors see the full page below. Runs
+// before paint so there's no flash of /get-the-app content on phones. This
+// covers hard navigations (direct URL, refresh, external links); CTA clicks
+// from inside the app are intercepted by MobileAppRedirector in the layout.
+const IOS_URL = buttonAppData.en.appStore.link;
+const ANDROID_URL = buttonAppData.en.googlePlay.link;
+const MOBILE_REDIRECT_SCRIPT = `(function(){try{var ua=navigator.userAgent||'';if(window.matchMedia&&window.matchMedia('(max-width: 767px)').matches){if(/iPad|iPhone|iPod/.test(ua)&&!window.MSStream){window.location.replace(${JSON.stringify(IOS_URL)});}else if(/android/i.test(ua)){window.location.replace(${JSON.stringify(ANDROID_URL)});}}}catch(e){}})();`;
 
 export default function GetTheAppPage() {
   const locale = getLocale();

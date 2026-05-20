@@ -5,17 +5,24 @@ import { HeroPage } from '@/components/heroSection/HeroSection';
 import Separator from '@/components/separator/Separator';
 import { t } from '@/lib/constants/i18n';
 import { getTheAppPageData } from '@/lib/constants/pages/getTheAppPageData';
+import { buttonAppData } from '@/lib/constants/shared/buttonAppData';
 
 export const GetTheAppClient = ({ lang }: { lang: string }) => {
 
-  // Mirrors the pre-paint inline script in page.tsx. The inline script catches
-  // hard navigations (direct URL, refresh, external links), but Next.js soft
-  // navigations from internal <Link> clicks don't re-execute it — this effect
-  // covers that path so mobile visitors get punted to the smartlink either way.
+  // Soft-nav fallback for visitors who reach /get-the-app via some path that
+  // skipped MobileAppRedirector (programmatic nav, internal links not picked
+  // up by the document-level handler, etc.). On phone viewports, routes to
+  // the App Store or Play Store based on device OS. Unknown UAs stay on the
+  // on-site page, which shows both store buttons.
   useEffect(() => {
     try {
-      if (window.matchMedia('(max-width: 767px)').matches) {
-        window.location.replace('https://thedaisy.link/install-app');
+      if (!window.matchMedia('(max-width: 767px)').matches) return;
+      const ua = navigator.userAgent || '';
+      const win = window as unknown as { MSStream?: unknown };
+      if (/iPad|iPhone|iPod/.test(ua) && !win.MSStream) {
+        window.location.replace(buttonAppData.en.appStore.link);
+      } else if (/android/i.test(ua)) {
+        window.location.replace(buttonAppData.en.googlePlay.link);
       }
     } catch {
       // matchMedia missing / unusual UA — fall through to the on-site page.
