@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { Check, Minus } from 'lucide-react';
 import {
   FeatureCategory,
@@ -14,7 +15,7 @@ const renderValue = (value: FeatureCategoryRow['values'][number]) => {
   if (value === true) {
     return (
       <Check
-        className="mx-auto h-5 w-5 text-[#CAB2A6]"
+        className="mx-auto h-5 w-5 text-[#8B6554]"
         strokeWidth={2.5}
         aria-label="Included"
       />
@@ -23,47 +24,60 @@ const renderValue = (value: FeatureCategoryRow['values'][number]) => {
   if (value === undefined || value === false) {
     return (
       <Minus
-        className="mx-auto h-5 w-5 text-white/30"
+        className="mx-auto h-5 w-5 text-[#ABB4B3]"
         aria-label="Not included"
       />
     );
   }
-  return (
-    <span className="text-sm font-semibold text-white">{value}</span>
-  );
+  return <span className="text-sm font-semibold text-[#172524]">{value}</span>;
 };
 
 /**
- * Categorized comparison table. Uses native <details> elements so categories
- * collapse/expand without JS — server-renderable, accessible, crawler-friendly.
- * Each category is open by default so visitors see the full structure;
- * mobile-conscious users can collapse what they don't care about.
+ * Single <table> with <colgroup> so every section uses identical column
+ * widths — categories used to be nested sub-tables which let each section
+ * compute its own column widths, making the columns "dance" vertically as
+ * you scrolled. One table, one set of <col>s, columns stay locked.
+ *
+ * Category headers are full-width <tr colspan> rows rather than <details>
+ * wrappers (<details> can't legally contain <tr> rows in HTML, which is
+ * what caused the nested-table workaround in the first place).
+ *
+ * The first column ("Feature") is sticky so feature names stay visible
+ * while the tier columns scroll horizontally on narrow viewports.
  */
 export const ComparisonTableV2 = ({ categories, tiers }: Props) => {
   return (
-    <section className="bg-primary px-4 py-16 md:px-16">
+    <section className="bg-white px-4 py-16 md:px-16">
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 text-center">
-          <h2 className="text-3xl font-bold text-white md:text-4xl">
+          <h2 className="text-3xl font-bold text-[#172524] md:text-4xl">
             Compare every feature
           </h2>
-          <p className="mt-3 text-base text-white/65">
-            Click a category to expand or collapse it.
+          <p className="mt-3 text-base text-[#455150]">
+            Every feature, every tier, side by side.
           </p>
         </div>
 
-        <div className="overflow-x-auto">
-          <table className="w-full min-w-[640px] border-separate border-spacing-0">
+        <div className="overflow-x-auto rounded-2xl border border-[#E8E9E9]">
+          <table className="w-full min-w-[600px] border-collapse">
+            <colgroup>
+              <col style={{ width: '34%' }} />
+              {tiers.map((tier) => (
+                <col
+                  key={tier.id}
+                  style={{ width: `${66 / tiers.length}%` }}
+                />
+              ))}
+            </colgroup>
             <thead>
-              <tr>
-                <th className="sticky left-0 z-10 bg-primary py-4 pl-4 pr-6 text-left text-sm font-semibold uppercase tracking-wide text-white/55">
+              <tr className="border-b border-[#E8E9E9] bg-white">
+                <th className="sticky left-0 z-10 bg-white py-4 pl-5 pr-4 text-left text-xs font-semibold uppercase tracking-wider text-[#455150]">
                   Feature
                 </th>
                 {tiers.map((tier) => (
                   <th
                     key={tier.id}
-                    className="px-4 py-4 text-center text-sm font-semibold uppercase tracking-wide text-white/55"
-                    style={{ minWidth: '140px' }}
+                    className="px-3 py-4 text-center text-xs font-semibold uppercase tracking-wider text-[#455150]"
                   >
                     {tier.title}
                   </th>
@@ -72,53 +86,26 @@ export const ComparisonTableV2 = ({ categories, tiers }: Props) => {
             </thead>
             <tbody>
               {categories.map((category) => (
-                <CategoryGroup
-                  key={category.title}
-                  category={category}
-                  tiersCount={tiers.length}
-                />
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-const CategoryGroup = ({
-  category,
-  tiersCount,
-}: {
-  category: FeatureCategory;
-  tiersCount: number;
-}) => {
-  return (
-    <>
-      <tr>
-        <td colSpan={tiersCount + 1} className="px-0 pt-8">
-          <details open className="group">
-            <summary className="flex cursor-pointer items-center justify-between border-b border-white/10 bg-white/[0.07] px-4 py-3 text-base font-semibold text-white [&::-webkit-details-marker]:hidden">
-              <span>{category.title}</span>
-              <span
-                aria-hidden="true"
-                className="text-[#CAB2A6] transition-transform group-open:rotate-90"
-              >
-                ›
-              </span>
-            </summary>
-            <div className="border-l border-r border-b border-white/10">
-              <table className="w-full border-separate border-spacing-0">
-                <tbody>
-                  {category.rows.map((row, i) => (
+                <Fragment key={category.title}>
+                  <tr className="border-y border-[#E8E9E9] bg-[#F8F5F3]">
+                    <td
+                      colSpan={tiers.length + 1}
+                      className="px-5 py-3 text-sm font-semibold uppercase tracking-wider text-[#172524]"
+                    >
+                      {category.title}
+                    </td>
+                  </tr>
+                  {category.rows.map((row) => (
                     <tr
                       key={row.name}
-                      className={i % 2 === 0 ? 'bg-transparent' : 'bg-white/[0.03]'}
+                      className="border-b border-[#E8E9E9] bg-white last:border-b-0"
                     >
-                      <td className="py-3 pl-4 pr-6 text-sm text-white">
-                        <div className="font-medium">{row.name}</div>
+                      <td className="sticky left-0 z-10 bg-white py-3 pl-5 pr-4 text-sm align-top">
+                        <div className="font-medium text-[#172524]">
+                          {row.name}
+                        </div>
                         {row.note && (
-                          <div className="mt-1 text-xs text-white/55">
+                          <div className="mt-1 text-xs text-[#455150]">
                             {row.note}
                           </div>
                         )}
@@ -126,20 +113,25 @@ const CategoryGroup = ({
                       {row.values.map((value, j) => (
                         <td
                           key={j}
-                          className="px-4 py-3 text-center"
-                          style={{ minWidth: '140px' }}
+                          className="px-3 py-3 text-center align-top"
                         >
                           {renderValue(value)}
                         </td>
                       ))}
                     </tr>
                   ))}
-                </tbody>
-              </table>
-            </div>
-          </details>
-        </td>
-      </tr>
-    </>
+                </Fragment>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Mobile hint: with a 6-tier-wide table the horizontal scroll isn't
+            obvious. Only render on mobile-width viewports. */}
+        <p className="mt-3 text-center text-xs text-[#586968] md:hidden">
+          Swipe to compare tiers →
+        </p>
+      </div>
+    </section>
   );
 };
