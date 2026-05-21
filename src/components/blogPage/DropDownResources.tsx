@@ -39,14 +39,26 @@ export const DropdownResources = ({
 
   const path = usePathname();
   const locale = useMemo(() => getLocaleFromPathname(path), [path]);
-  const currentPage = typeof window !== 'undefined' ? localStorage.getItem('activePage') : null;
 
-  let pageType: ResourcesDropdownPageType = 'business';
-  if (currentPage === '/customer') {
-    pageType = 'customer';
-  } else if (currentPage === '/professional') {
-    pageType = 'professional';
-  }
+  // Defer the localStorage read to after mount. Reading during render
+  // produces different output server-side (where `window` is undefined,
+  // so we fall back to 'business') versus client-side (where the saved
+  // persona might be 'professional'), which triggers a React hydration
+  // mismatch on the dropdown's H2.
+  const [pageType, setPageType] =
+    useState<ResourcesDropdownPageType>('business');
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const currentPage = window.localStorage.getItem('activePage');
+    if (currentPage === '/customer') {
+      setPageType('customer');
+    } else if (currentPage === '/professional') {
+      setPageType('professional');
+    } else {
+      setPageType('business');
+    }
+  }, [path]);
 
   const listResources = t(resourcesDropdownData[pageType], locale);
 
