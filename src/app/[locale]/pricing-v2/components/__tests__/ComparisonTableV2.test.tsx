@@ -4,6 +4,7 @@ import type {
   FeatureCategory,
 } from '@/lib/constants/pricing/v2/pricingV2Shared';
 import type { PricingTierV2 } from '@/lib/constants/pricing/v2/pricingV2Business';
+import { UI_STRINGS } from '@/lib/constants/pricing/v2/pricingV2Shared';
 
 const tiers: PricingTierV2[] = [
   {
@@ -15,7 +16,6 @@ const tiers: PricingTierV2[] = [
     annualPerMonth: 42,
     annualSavingsLine: 'Save $100',
     cardHighlights: [],
-    ctaLabel: 'Start',
   },
   {
     id: 'growth',
@@ -26,7 +26,6 @@ const tiers: PricingTierV2[] = [
     annualPerMonth: 125,
     annualSavingsLine: 'Save $300',
     cardHighlights: [],
-    ctaLabel: 'Start',
   },
   {
     id: 'business',
@@ -37,7 +36,6 @@ const tiers: PricingTierV2[] = [
     annualPerMonth: 208,
     annualSavingsLine: 'Save $500',
     cardHighlights: [],
-    ctaLabel: 'Start',
   },
 ];
 
@@ -65,20 +63,20 @@ const categories: FeatureCategory[] = [
 
 describe('ComparisonTableV2', () => {
   it('renders the tier names in the header', () => {
-    render(<ComparisonTableV2 categories={categories} tiers={tiers} />);
+    render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
     expect(screen.getByRole('columnheader', { name: 'Basic' })).toBeInTheDocument();
     expect(screen.getByRole('columnheader', { name: 'Growth' })).toBeInTheDocument();
     expect(screen.getByRole('columnheader', { name: 'Business' })).toBeInTheDocument();
   });
 
   it('renders every category title', () => {
-    render(<ComparisonTableV2 categories={categories} tiers={tiers} />);
+    render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
     expect(screen.getByText('Scale & seats')).toBeInTheDocument();
     expect(screen.getByText('AI features')).toBeInTheDocument();
   });
 
   it('renders string values as visible text in the matching cell', () => {
-    render(<ComparisonTableV2 categories={categories} tiers={tiers} />);
+    render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
     expect(screen.getByText('5')).toBeInTheDocument();
     expect(screen.getByText('10')).toBeInTheDocument();
     expect(screen.getByText('15')).toBeInTheDocument();
@@ -87,7 +85,7 @@ describe('ComparisonTableV2', () => {
   });
 
   it('renders a checkmark for boolean true values', () => {
-    render(<ComparisonTableV2 categories={categories} tiers={tiers} />);
+    render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
     // AI Receptionist row: 3 true values → 3 checkmarks for that row.
     // We can't easily isolate per row, but we can assert checkmark icons exist.
     const checks = screen.getAllByLabelText('Included');
@@ -95,7 +93,7 @@ describe('ComparisonTableV2', () => {
   });
 
   it('renders a dash (Not included icon) for undefined and false values', () => {
-    render(<ComparisonTableV2 categories={categories} tiers={tiers} />);
+    render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
     // Advanced AI Customization row has 2 undefined values
     // "Booleans should also render" row has 1 false value
     const dashes = screen.getAllByLabelText('Not included');
@@ -103,12 +101,12 @@ describe('ComparisonTableV2', () => {
   });
 
   it('shows the feature note text when provided', () => {
-    render(<ComparisonTableV2 categories={categories} tiers={tiers} />);
+    render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
     expect(screen.getByText('1,000 free credits at signup')).toBeInTheDocument();
   });
 
   it('feature row names are visible inside their category', () => {
-    render(<ComparisonTableV2 categories={categories} tiers={tiers} />);
+    render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
     expect(screen.getByText('Team members / calendars')).toBeInTheDocument();
     expect(screen.getByText('AI Receptionist')).toBeInTheDocument();
     expect(screen.getByText('Advanced AI Customization')).toBeInTheDocument();
@@ -116,7 +114,7 @@ describe('ComparisonTableV2', () => {
 
   it('uses a single <table> (not nested) so columns stay aligned', () => {
     const { container } = render(
-      <ComparisonTableV2 categories={categories} tiers={tiers} />,
+      <ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />,
     );
     // The whole comparison is one table with category-header rows inside.
     const tables = container.querySelectorAll('table');
@@ -125,7 +123,7 @@ describe('ComparisonTableV2', () => {
 
   it('renders a <colgroup> so all column widths are locked at the table level', () => {
     const { container } = render(
-      <ComparisonTableV2 categories={categories} tiers={tiers} />,
+      <ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />,
     );
     const colgroup = container.querySelector('colgroup');
     expect(colgroup).not.toBeNull();
@@ -135,18 +133,21 @@ describe('ComparisonTableV2', () => {
   });
 
   it('renders each category title as a full-width header row', () => {
-    render(<ComparisonTableV2 categories={categories} tiers={tiers} />);
+    render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
     for (const category of categories) {
-      const headerCell = screen.getByText(category.title);
-      expect(headerCell.tagName.toLowerCase()).toBe('td');
-      // colSpan covers all columns (feature + tiers).
-      expect(headerCell).toHaveAttribute('colspan', String(tiers.length + 1));
+      // The title text now lives inside a sticky <span> so it stays
+      // anchored during horizontal scroll. Walk up to the <td> ancestor
+      // to assert the row-level layout.
+      const titleText = screen.getByText(category.title);
+      const cell = titleText.closest('td');
+      expect(cell).not.toBeNull();
+      expect(cell).toHaveAttribute('colspan', String(tiers.length + 1));
     }
   });
 
   it('keeps the row-to-cell layout aligned for every feature row', () => {
     const { container } = render(
-      <ComparisonTableV2 categories={categories} tiers={tiers} />,
+      <ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />,
     );
     const row = screen.getByText('Team members / calendars').closest('tr');
     expect(row).not.toBeNull();
@@ -156,5 +157,26 @@ describe('ComparisonTableV2', () => {
       expect(cells.length).toBe(tiers.length + 1);
     }
     expect(container).toBeTruthy();
+  });
+
+  it('makes the category title sticky so it stays visible during horizontal scroll', () => {
+    render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
+    for (const category of categories) {
+      const titleText = screen.getByText(category.title);
+      // The title wrapper span should carry sticky positioning so the
+      // label stays anchored to the visible edge when the user scrolls
+      // the table sideways on mobile.
+      expect(titleText.tagName.toLowerCase()).toBe('span');
+      expect(titleText.className).toMatch(/sticky/);
+    }
+  });
+
+  it('renders the Arabic UI strings when given the Arabic bundle', () => {
+    render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.ar} />);
+    expect(screen.getByText(UI_STRINGS.ar.compareHeading)).toBeInTheDocument();
+    expect(screen.getByText(UI_STRINGS.ar.compareSubheading)).toBeInTheDocument();
+    expect(
+      screen.getByText(UI_STRINGS.ar.compareFeatureHeader),
+    ).toBeInTheDocument();
   });
 });

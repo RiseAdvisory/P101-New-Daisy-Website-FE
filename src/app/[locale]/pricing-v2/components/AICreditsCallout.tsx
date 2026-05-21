@@ -1,7 +1,14 @@
 import { Sparkles } from 'lucide-react';
+import { t } from '@/lib/constants/i18n';
 import { AI_CREDITS_CALLOUT } from '@/lib/constants/pricing/v2/pricingV2Shared';
 
-export const AICreditsCallout = () => {
+interface Props {
+  locale: string;
+}
+
+export const AICreditsCallout = ({ locale }: Props) => {
+  const content = t(AI_CREDITS_CALLOUT, locale);
+
   return (
     <section className="bg-white px-4 py-16 md:px-16">
       <div className="mx-auto max-w-5xl rounded-2xl bg-[#F8F5F3] p-8 ring-1 ring-[#E8E9E9] md:p-12">
@@ -13,16 +20,16 @@ export const AICreditsCallout = () => {
           </div>
           <div className="flex-1">
             <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#8B6554]">
-              {AI_CREDITS_CALLOUT.eyebrow}
+              {content.eyebrow}
             </div>
             <h2 className="mb-3 text-2xl font-bold leading-tight text-[#172524] md:text-3xl">
-              {AI_CREDITS_CALLOUT.headline}
+              {content.headline}
             </h2>
-            <p className="mb-5 text-base leading-relaxed text-[#455150]">
-              {AI_CREDITS_CALLOUT.body}
+            <p className="mb-5 text-base leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">
+              {content.body}
             </p>
             <ul className="flex flex-wrap gap-2">
-              {AI_CREDITS_CALLOUT.badges.map((badge) => (
+              {content.badges.map((badge) => (
                 <li
                   key={badge}
                   className="rounded-full bg-white px-3 py-1 text-xs font-medium text-[#172524] ring-1 ring-[#E8E9E9]"

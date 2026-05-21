@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 import { PricingV2Client } from '../PricingV2Client';
 
-// WIP redesign — keep this out of Google's index until promoted to /pricing.
+// WIP redesign; keep this out of Google's index until promoted to /pricing.
 export const metadata: Metadata = {
-  title: 'Pricing (v2 preview) — Business | The Daisy',
+  title: 'Pricing (v2 preview): Business | The Daisy',
   description:
     'Internal preview of the redesigned pricing page for salons, spas, and clinics with teams.',
   robots: { index: false, follow: false },
