@@ -59,9 +59,15 @@ export interface UIStrings {
   twoMonthsFreeBadge: string;
   mostPopularBadge: string;
   cardCtaLabel: string;
-  cardBilledMonthly: string;
-  // {0} = annual total, {1} = savings line
-  cardBilledAnnually: (annualTotal: number, savings: string) => string;
+  // Billing copy is split into two separate lines (each rendered on its
+  // own row) so the card height stays constant when toggling monthly /
+  // annual — the previous single-string version had different lengths
+  // and word-wrapped to different heights between modes, causing the
+  // cards to expand and contract.
+  cardBilledMonthlyLine1: string;
+  cardBilledMonthlyLine2: string;
+  cardBilledAnnuallyLine1: (annualTotal: number) => string;
+  // Line 2 in annual mode comes from `tier.annualSavingsLine` directly.
   cardPerMonth: string;
   marketplaceFootnote: string;
   compareHeading: string;
@@ -91,9 +97,9 @@ export const UI_STRINGS: I18nContent<UIStrings> = {
     twoMonthsFreeBadge: '2 Months Free',
     mostPopularBadge: 'Most Popular',
     cardCtaLabel: 'Start Free Trial',
-    cardBilledMonthly: 'Billed monthly. Cancel anytime.',
-    cardBilledAnnually: (annualTotal, savings) =>
-      `Billed annually at $${annualTotal}. ${savings}.`,
+    cardBilledMonthlyLine1: 'Billed monthly.',
+    cardBilledMonthlyLine2: 'Cancel anytime.',
+    cardBilledAnnuallyLine1: (annualTotal) => `Billed annually at $${annualTotal}.`,
     cardPerMonth: '/ month',
     marketplaceFootnote:
       '* Marketplace visibility and cashback promotions require a service-quality review.',
@@ -123,9 +129,10 @@ export const UI_STRINGS: I18nContent<UIStrings> = {
     twoMonthsFreeBadge: 'شهران مجاناً',
     mostPopularBadge: 'الأكثر شعبية',
     cardCtaLabel: 'ابدأ تجربتك المجانية',
-    cardBilledMonthly: 'فوترة شهرية. ألغِ في أي وقت.',
-    cardBilledAnnually: (annualTotal, savings) =>
-      `فوترة سنوية بقيمة $${annualTotal}. ${savings}.`,
+    cardBilledMonthlyLine1: 'فوترة شهرية.',
+    cardBilledMonthlyLine2: 'ألغِ في أي وقت.',
+    cardBilledAnnuallyLine1: (annualTotal) =>
+      `فوترة سنوية بقيمة $${annualTotal}.`,
     cardPerMonth: '/ شهرياً',
     marketplaceFootnote:
       '* يتطلب الظهور في السوق وعروض الكاشباك مراجعة لجودة الخدمة.',
@@ -222,6 +229,11 @@ export const PRICING_FAQ: I18nContent<FAQItem[]> = {
       answer:
         'Business plans are for salons, spas, and clinics with a team: multiple staff calendars, multiple workspaces, team-aware booking. Professional plans are for solo providers: one calendar, one workspace, marketplace-discoverable. Same underlying engine, different fit.',
     },
+    {
+      question: 'Does Daisy Support Mobile and On-Location Services?',
+      answer:
+        'Yes. The platform works equally well for fixed-location businesses (salons, spas, clinics) and providers who travel to clients (mobile stylists, on-location nail techs, home wellness visits). Smart scheduling factors travel time between appointments into your calendar, and your branded booking site lets clients book service-area visits the same way they would book a studio appointment. Vendors who do both modes can manage everything in one calendar.',
+    },
   ],
   ar: [
     {
@@ -253,6 +265,11 @@ export const PRICING_FAQ: I18nContent<FAQItem[]> = {
       question: 'ما الفرق بين باقات الأعمال والمحترفين؟',
       answer:
         'باقات الأعمال للصالونات والمنتجعات والعيادات التي لديها فريق: تقاويم متعددة للموظفين، مساحات عمل متعددة، حجوزات مدركة للفريق. باقات المحترفين لمقدمي الخدمات المستقلين: تقويم واحد، مساحة عمل واحدة، قابلة للاكتشاف في السوق. نفس المحرك الأساسي، ملاءمة مختلفة.',
+    },
+    {
+      question: 'هل تدعم ديزي الخدمات المتنقلة وخدمات الموقع؟',
+      answer:
+        'نعم. المنصة تعمل بنفس الكفاءة للأعمال ذات المواقع الثابتة (صالونات، منتجعات، عيادات) ومقدمي الخدمات الذين يتنقلون إلى العملاء (مصففو الشعر المتنقلون، فنيو الأظافر بزيارة الموقع، زيارات العافية المنزلية). الجدولة الذكية تأخذ في الاعتبار وقت التنقل بين المواعيد، وموقع الحجز الموسوم بعلامتك يتيح للعملاء حجز زيارات منطقة الخدمة بنفس طريقة حجز موعد في الاستوديو. المزودون الذين يعملون بالنمطين يمكنهم إدارة كل شيء في تقويم واحد.',
     },
   ],
 };

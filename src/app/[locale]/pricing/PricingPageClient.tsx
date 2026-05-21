@@ -1,9 +1,7 @@
 'use client';
 
 import { useRef, useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
-import stars from '@/assets/images/stars-background-decoration.png';
 import { GridPricingCard } from '@/components/pricingPage/GridPricingCard';
 import { EnterPrise } from '@/components/pricingPage/EnterpriseSection';
 import { CalculatePricing } from '@/components/pricingPage/CalculatePricing';
@@ -45,12 +43,7 @@ export const PricingPageClient = ({ persona, lang }: PricingPageClientProps) => 
     <div className="bg-[#F8F5F3] pb-[180px]">
       {/* Hero Section */}
       <div className="w-full bg-primary pt-[100px] flex flex-col justify-start items-center px-4 pb-[100px]">
-        <Image
-          src={stars}
-          alt="stars"
-          className="mx-auto w-[60px] h-[60px]"
-        />
-        <h1 className="text-center capitalize mt-[46px] font-semibold text-[32px] leading-10 text-white md:px-[400px] md:text-[48px] md:leading-[60px]">
+        <h1 className="text-center capitalize font-semibold text-[32px] leading-10 text-white md:px-[400px] md:text-[48px] md:leading-[60px]">
           {dataPricing.title}
         </h1>
       </div>

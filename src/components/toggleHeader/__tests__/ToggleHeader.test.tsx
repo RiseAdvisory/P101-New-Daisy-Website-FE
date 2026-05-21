@@ -130,4 +130,45 @@ describe('ToggleButton — solutions routing', () => {
 
     expect(mockPush).toHaveBeenCalledWith('/en/features/professional');
   });
+
+  it('navigates within /pricing-v2 (not the live /pricing) when on the v2 preview', () => {
+    // /pricing-v2 contains the substring "/pricing", so the generic
+    // pricing check would otherwise route off the v2 preview to the
+    // live page. The v2 branch must come first.
+    const { usePathname } = require('next/navigation');
+    usePathname.mockReturnValue('/pricing-v2/business');
+
+    render(<ToggleButton />);
+
+    const professionalBtn = screen.getByText('Professional');
+    fireEvent.click(professionalBtn);
+
+    expect(mockPush).toHaveBeenCalledWith('/en/pricing-v2/professional');
+  });
+
+  it('navigates within /pricing-v2 from professional back to business', () => {
+    const { usePathname } = require('next/navigation');
+    usePathname.mockReturnValue('/pricing-v2/professional');
+
+    render(<ToggleButton />);
+
+    const businessBtn = screen.getByText('Business');
+    fireEvent.click(businessBtn);
+
+    expect(mockPush).toHaveBeenCalledWith('/en/pricing-v2/business');
+  });
+
+  it('still routes within live /pricing when on /pricing/business', () => {
+    // Regression guard: the v2 branch must not consume normal /pricing
+    // navigation. /pricing/business → /pricing/professional.
+    const { usePathname } = require('next/navigation');
+    usePathname.mockReturnValue('/pricing/business');
+
+    render(<ToggleButton />);
+
+    const professionalBtn = screen.getByText('Professional');
+    fireEvent.click(professionalBtn);
+
+    expect(mockPush).toHaveBeenCalledWith('/en/pricing/professional');
+  });
 });

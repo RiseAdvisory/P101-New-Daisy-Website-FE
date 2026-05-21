@@ -16,7 +16,7 @@ export const AddOnsTableV2 = ({ locale, ui }: Props) => {
     <section className="bg-white px-4 py-20 md:px-16 md:py-24">
       <div className="mx-auto max-w-5xl">
         <div className="mb-10 text-center">
-          <h2 className="text-2xl font-bold text-[#172524] ltr:font-montserrat rtl:font-cairo md:text-3xl">
+          <h2 className="text-[24px] font-semibold leading-[30px] text-[#172524] md:text-[32px] md:leading-10">
             {ui.addOnsHeading}
           </h2>
           <p className="mt-4 text-base text-[#455150] ltr:font-montserrat rtl:font-cairo">
