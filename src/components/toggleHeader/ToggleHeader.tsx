@@ -47,6 +47,8 @@ const ToggleButton = ({ className }: { className?: string }) => {
       if (pathname.includes('/pricing/professional')) setActive('/professional');
       if (pathname.includes('/pricing-v2/business')) setActive('/business');
       if (pathname.includes('/pricing-v2/professional')) setActive('/professional');
+      if (pathname.includes('/pricing-v3/business')) setActive('/business');
+      if (pathname.includes('/pricing-v3/professional')) setActive('/professional');
 
       if (pathname.startsWith('/features') && storedPath) {
         const cleanPath = storedPath.replace('/', '');
@@ -97,7 +99,12 @@ const ToggleButton = ({ className }: { className?: string }) => {
     if (typeof window !== 'undefined') {
       localStorage.setItem('activePage', path);
     }
-    if (pathname.includes('/pricing-v2')) {
+    if (pathname.includes('/pricing-v3')) {
+      // Same substring-overlap concern as /pricing-v2: /pricing-v3
+      // contains "/pricing" so it must be checked first.
+      const persona = path === '/business' ? 'business' : 'professional';
+      router.push(localePath(`/pricing-v3/${persona}`, locale));
+    } else if (pathname.includes('/pricing-v2')) {
       // Must come BEFORE the generic /pricing check because /pricing-v2
       // contains the substring /pricing — without this, clicking the
       // header toggle on the v2 preview routes off to the live page.

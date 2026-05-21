@@ -115,8 +115,13 @@ export const ChangeUserTypeMobile = ({
       localStorage.setItem('activePage', path);
     }
     // Pricing routes — early-return so we don't fall through to another
-    // branch and double-navigate. /pricing-v2 must be checked first because
-    // its path contains the substring "/pricing".
+    // branch and double-navigate. /pricing-v3 and /pricing-v2 both contain
+    // the substring "/pricing", so they must be checked first.
+    if (pathname.includes('/pricing-v3')) {
+      const persona = path === '/business' ? 'business' : 'professional';
+      router.push(localePath(`/pricing-v3/${persona}`, locale));
+      return;
+    }
     if (pathname.includes('/pricing-v2')) {
       const persona = path === '/business' ? 'business' : 'professional';
       router.push(localePath(`/pricing-v2/${persona}`, locale));

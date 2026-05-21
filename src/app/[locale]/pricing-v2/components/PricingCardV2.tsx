@@ -36,6 +36,14 @@ export const PricingCardV2 = ({ tier, billingPeriod, locale, ui }: Props) => {
         {tier.title}
       </div>
 
+      {/* Trial pill — every tier carries the same offer, so the badge
+          is consistent across all three cards. Matches the original
+          /pricing page's subTitle chip pattern (small rounded-full
+          chip in brand-accent colors). */}
+      <p className="mb-4 inline-block w-fit rounded-full bg-[#8B6554]/10 px-3 py-1 text-xs font-medium text-[#8B6554] ltr:font-montserrat rtl:font-cairo">
+        {ui.trialBadge}
+      </p>
+
       {/* Each oneLiner is intentionally written to ~50–65 chars so all
           three wrap to the same number of lines (2 at typical desktop
           card widths). min-h-[50px] is a safety cap — if a longer

@@ -58,6 +58,10 @@ export interface UIStrings {
   billingAnnual: string;
   twoMonthsFreeBadge: string;
   mostPopularBadge: string;
+  // Small pill-style label rendered on every tier card highlighting
+  // the trial offer (matches the original /pricing page's subTitle
+  // chip).
+  trialBadge: string;
   cardCtaLabel: string;
   // Billing copy is split into two separate lines (each rendered on its
   // own row) so the card height stays constant when toggling monthly /
@@ -96,6 +100,7 @@ export const UI_STRINGS: I18nContent<UIStrings> = {
     billingAnnual: 'Annual',
     twoMonthsFreeBadge: '2 Months Free',
     mostPopularBadge: 'Most Popular',
+    trialBadge: '14-day free trial · No credit card required',
     cardCtaLabel: 'Start Free Trial',
     cardBilledMonthlyLine1: 'Billed monthly.',
     cardBilledMonthlyLine2: 'Cancel anytime.',
@@ -128,6 +133,7 @@ export const UI_STRINGS: I18nContent<UIStrings> = {
     billingAnnual: 'سنوي',
     twoMonthsFreeBadge: 'شهران مجاناً',
     mostPopularBadge: 'الأكثر شعبية',
+    trialBadge: 'تجربة مجانية 14 يوماً · بدون بطاقة ائتمان',
     cardCtaLabel: 'ابدأ تجربتك المجانية',
     cardBilledMonthlyLine1: 'فوترة شهرية.',
     cardBilledMonthlyLine2: 'ألغِ في أي وقت.',
