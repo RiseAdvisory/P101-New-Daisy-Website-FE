@@ -17,7 +17,7 @@ export const CommissionCallout = ({ locale }: Props) => {
               <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#CAB2A6] ltr:font-montserrat rtl:font-cairo">
                 {content.eyebrow}
               </div>
-              <h2 className="text-3xl font-bold leading-tight text-white ltr:font-montserrat rtl:font-cairo md:text-4xl">
+              <h2 className="text-[28px] font-semibold leading-9 text-white md:text-[36px] md:leading-[44px]">
                 {content.headline}
               </h2>
             </div>

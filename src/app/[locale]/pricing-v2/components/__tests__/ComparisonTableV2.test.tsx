@@ -179,13 +179,16 @@ describe('ComparisonTableV2', () => {
       ).toBeInTheDocument();
     });
 
-    it('positions the swipe hint sticky to the viewport on mobile (top-[100px] z-30)', () => {
-      // The hint pins below the fixed 100px site header while the user
-      // scrolls vertically through the table content.
+    it('positions the swipe hint sticky to the viewport on mobile (top-[110px] z-30)', () => {
+      // The hint pins 10px below the fixed 100px site header so the
+      // label's TOP BORDER (not the inner text) is the visible freeze
+      // edge — at exact top-[100px] the 1px border overlaps with the
+      // header's bottom border and the user perceives the text as the
+      // freeze line.
       render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
       const hint = screen.getByText(UI_STRINGS.en.compareSwipeHint);
       expect(hint.className).toMatch(/sticky/);
-      expect(hint.className).toMatch(/top-\[100px\]/);
+      expect(hint.className).toMatch(/top-\[110px\]/);
       // z-index high enough to sit above table rows during scroll
       expect(hint.className).toMatch(/z-30/);
     });

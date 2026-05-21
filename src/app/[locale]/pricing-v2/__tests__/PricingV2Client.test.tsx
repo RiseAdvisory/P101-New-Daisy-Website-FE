@@ -124,4 +124,39 @@ describe('PricingV2Client', () => {
       }
     });
   });
+
+  describe('billing period persistence', () => {
+    beforeEach(() => {
+      window.localStorage.clear();
+    });
+
+    it('persists the chosen billing period to localStorage', () => {
+      render(<PricingV2Client persona="business" locale="en" />);
+      fireEvent.click(screen.getByRole('button', { name: /^Monthly$/ }));
+      expect(window.localStorage.getItem('pricingV2BillingPeriod')).toBe(
+        'monthly',
+      );
+    });
+
+    it('hydrates from localStorage on mount so a persona switch keeps the user on their chosen period', () => {
+      // Simulate the user previously selecting Monthly, then a remount
+      // from clicking the persona toggle (which navigates to the other
+      // persona's page and re-mounts PricingV2Client from scratch).
+      window.localStorage.setItem('pricingV2BillingPeriod', 'monthly');
+      render(<PricingV2Client persona="professional" locale="en" />);
+      // Monthly Professional prices: $25 / $50 / $100
+      expect(screen.getByText('$25')).toBeInTheDocument();
+      expect(screen.getByText('$50')).toBeInTheDocument();
+      expect(screen.getByText('$100')).toBeInTheDocument();
+    });
+
+    it('still defaults to annual when no value is stored', () => {
+      // localStorage cleared in beforeEach
+      render(<PricingV2Client persona="business" locale="en" />);
+      // Annual Business per-month: $42 / $125 / $208
+      expect(screen.getByText('$42')).toBeInTheDocument();
+      expect(screen.getByText('$125')).toBeInTheDocument();
+      expect(screen.getByText('$208')).toBeInTheDocument();
+    });
+  });
 });

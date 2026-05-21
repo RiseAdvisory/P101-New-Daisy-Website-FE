@@ -1,6 +1,4 @@
 'use client';
-import Image from 'next/image';
-import stars from '../../assets/images/stars-background-decoration.png';
 import { ArrowSectionDown } from '@/assets/icons/arrowSectionDown/arrowSectionDown';
 import { cn } from '@/lib/utils';
 import { HomeIcon } from '@/assets/icons/homeIcon/HomeIcon';
@@ -61,16 +59,8 @@ export const HeroPage = ({
           />
         </div>
       )}
-      <Image
-        src={stars}
-        alt="stars"
-        className="mx-auto w-[60px] h-[60px] "
-        width={60}
-        height={60}
-        priority
-      />
       {title !== '' && (
-        <p className="mt-11 font-semibold text-base text-[#F2DAD4] uppercase text-center">
+        <p className="font-semibold text-base text-[#F2DAD4] uppercase text-center">
           {title}
         </p>
       )}

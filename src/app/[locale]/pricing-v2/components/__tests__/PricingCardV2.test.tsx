@@ -52,9 +52,10 @@ describe('PricingCardV2', () => {
     );
     expect(screen.getByText('$150')).toBeInTheDocument();
     expect(screen.queryByText('$125')).not.toBeInTheDocument();
-    expect(
-      screen.getByText(/Billed monthly\. Cancel anytime\./i),
-    ).toBeInTheDocument();
+    // Two-line layout: line 1 + line 2 render in separate <p>s so the
+    // card height stays constant across monthly / annual toggling.
+    expect(screen.getByText('Billed monthly.')).toBeInTheDocument();
+    expect(screen.getByText('Cancel anytime.')).toBeInTheDocument();
   });
 
   it('shows the annual-per-month price + savings line when billingPeriod=annual', () => {
@@ -68,10 +69,9 @@ describe('PricingCardV2', () => {
     );
     expect(screen.getByText('$125')).toBeInTheDocument();
     expect(screen.queryByText('$150')).not.toBeInTheDocument();
-    // The cardBilledAnnually() builder produces "Billed annually at $1500. Save $300 (2 Months Free)."
-    expect(
-      screen.getByText(/Billed annually at \$1500/i),
-    ).toBeInTheDocument();
+    // Two-line layout: "Billed annually at $1500." on line 1, the
+    // savings string on line 2.
+    expect(screen.getByText('Billed annually at $1500.')).toBeInTheDocument();
     expect(
       screen.getByText(/Save \$300 \(2 Months Free\)/i),
     ).toBeInTheDocument();

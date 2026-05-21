@@ -30,7 +30,7 @@ export const BUSINESS_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'basic',
       title: 'Basic',
       oneLiner:
-        'Just starting out and building a solid customer base while growing your presence as a professional service business.',
+        'Just starting out, building your customer base and brand.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -47,7 +47,7 @@ export const BUSINESS_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'growth',
       title: 'Growth',
       oneLiner:
-        'An experienced business owner ready to deliver exceptional customer experiences and grow your client base online.',
+        'Experienced, ready to deliver exceptional service online.',
       monthlyPrice: 150,
       annualTotal: 1500,
       annualPerMonth: 125,
@@ -66,7 +66,7 @@ export const BUSINESS_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'business',
       title: 'Business',
       oneLiner:
-        'Businesses with multiple workspaces or locations, excellence-oriented in service and customer experience.',
+        'Multi-location, excellence-oriented at every touchpoint.',
       monthlyPrice: 250,
       annualTotal: 2500,
       annualPerMonth: 208,
@@ -86,7 +86,7 @@ export const BUSINESS_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'basic',
       title: 'الأساسية',
       oneLiner:
-        'في بداية الطريق، تبني قاعدة عملاء قوية وتنمّي حضورك كمشروع خدمات احترافي.',
+        'في بداية الطريق، تبني قاعدة عملاء وعلامتك التجارية.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -103,7 +103,7 @@ export const BUSINESS_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'growth',
       title: 'النمو',
       oneLiner:
-        'صاحب أعمال خبير جاهز لتقديم تجارب استثنائية للعملاء وتنمية قاعدة عملائك أونلاين.',
+        'ذو خبرة، جاهز لتقديم تجارب استثنائية للعملاء.',
       monthlyPrice: 150,
       annualTotal: 1500,
       annualPerMonth: 125,
@@ -122,7 +122,7 @@ export const BUSINESS_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'business',
       title: 'الأعمال',
       oneLiner:
-        'أعمال بمساحات عمل أو فروع متعددة، تتبنى التميّز في الخدمة وتجربة العملاء.',
+        'متعدد المواقع، يتبنى التميّز في كل نقطة تواصل.',
       monthlyPrice: 250,
       annualTotal: 2500,
       annualPerMonth: 208,

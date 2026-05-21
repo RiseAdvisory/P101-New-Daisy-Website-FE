@@ -22,7 +22,7 @@ export const AICreditsCallout = ({ locale }: Props) => {
             <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#8B6554] ltr:font-montserrat rtl:font-cairo">
               {content.eyebrow}
             </div>
-            <h2 className="mb-4 text-2xl font-bold leading-tight text-[#172524] ltr:font-montserrat rtl:font-cairo md:text-3xl">
+            <h2 className="mb-4 text-[24px] font-semibold leading-[30px] text-[#172524] md:text-[32px] md:leading-10">
               {content.headline}
             </h2>
             <p className="mb-6 text-base leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">

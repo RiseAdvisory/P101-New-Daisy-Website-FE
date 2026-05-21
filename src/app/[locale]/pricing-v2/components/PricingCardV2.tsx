@@ -36,12 +36,17 @@ export const PricingCardV2 = ({ tier, billingPeriod, locale, ui }: Props) => {
         {tier.title}
       </div>
 
-      <p className="mb-8 min-h-[5rem] text-sm leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">
+      {/* Each oneLiner is intentionally written to ~50–65 chars so all
+          three wrap to the same number of lines (2 at typical desktop
+          card widths). min-h-[50px] is a safety cap — if a longer
+          description ever lands here, the wasted space is bounded at
+          50px so the cards still feel balanced. */}
+      <p className="mb-8 min-h-[50px] text-sm leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">
         {tier.oneLiner}
       </p>
 
       <div className="mb-1 flex items-baseline gap-2">
-        <span className="text-5xl font-bold text-[#172524] ltr:font-montserrat rtl:font-cairo">
+        <span className="text-[44px] font-semibold leading-none text-[#172524] md:text-5xl">
           ${displayPrice}
         </span>
         <span className="text-base text-[#455150] ltr:font-montserrat rtl:font-cairo">
@@ -49,18 +54,28 @@ export const PricingCardV2 = ({ tier, billingPeriod, locale, ui }: Props) => {
         </span>
       </div>
 
-      <p className="mb-7 text-xs text-[#455150] ltr:font-montserrat rtl:font-cairo">
-        {showAnnual
-          ? ui.cardBilledAnnually(tier.annualTotal, tier.annualSavingsLine)
-          : ui.cardBilledMonthly}
-      </p>
+      {/* Always renders two lines so the card height stays constant when
+          the user toggles monthly / annual. Mode-specific copy fills both
+          lines either way. */}
+      <div className="mb-7 text-xs text-[#455150] ltr:font-montserrat rtl:font-cairo">
+        <p>
+          {showAnnual
+            ? ui.cardBilledAnnuallyLine1(tier.annualTotal)
+            : ui.cardBilledMonthlyLine1}
+        </p>
+        <p>
+          {showAnnual
+            ? `${tier.annualSavingsLine}.`
+            : ui.cardBilledMonthlyLine2}
+        </p>
+      </div>
 
       <Link
         href={localePath('/get-the-app', locale)}
         className={cn(
           'mb-8 block rounded-lg py-3 text-center text-sm font-semibold transition-colors ltr:font-montserrat rtl:font-cairo',
           popular
-            ? 'bg-[#172524] text-white hover:bg-[#2a3937]'
+            ? 'bg-primary text-white hover:bg-primary/90'
             : 'border border-[#172524] text-[#172524] hover:bg-[#F8F5F3]',
         )}
       >

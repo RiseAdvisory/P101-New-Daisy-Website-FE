@@ -15,7 +15,7 @@ export const PricingFAQV2 = ({ locale, ui }: Props) => {
   return (
     <section className="bg-[#F8F5F3] px-4 py-20 md:px-16 md:py-24">
       <div className="mx-auto max-w-3xl">
-        <h2 className="mb-12 text-center text-3xl font-bold text-[#172524] ltr:font-montserrat rtl:font-cairo md:text-4xl">
+        <h2 className="mb-12 text-center text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
           {ui.faqHeading}
         </h2>
         <div className="space-y-4">

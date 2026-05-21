@@ -53,7 +53,7 @@ export const ComparisonTableV2 = ({ categories, tiers, ui }: Props) => {
     <section className="bg-white px-4 py-20 md:px-16 md:py-24">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold text-[#172524] ltr:font-montserrat rtl:font-cairo md:text-4xl">
+          <h2 className="text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
             {ui.compareHeading}
           </h2>
           <p className="mt-4 text-base text-[#455150] ltr:font-montserrat rtl:font-cairo">
@@ -61,11 +61,15 @@ export const ComparisonTableV2 = ({ categories, tiers, ui }: Props) => {
           </p>
         </div>
 
-        {/* Mobile-only sticky swipe hint above the table. Pins below the
-            fixed header (top-[100px]) while scrolling vertically through
-            the table content. Hidden on md+ where horizontal scroll isn't
-            needed. */}
-        <div className="sticky top-[100px] z-30 -mx-4 mb-4 border-y border-[#E8E9E9] bg-white/95 px-4 py-2.5 text-center text-xs font-medium text-[#586968] backdrop-blur ltr:font-montserrat rtl:font-cairo md:hidden">
+        {/* Mobile-only sticky swipe hint above the table. Pins 10px below
+            the fixed 100px header while scrolling vertically through the
+            table content. The 10px gap ensures the label's TOP BORDER
+            (not the text inside it) is the visible freeze edge — at
+            exactly top-[100px] the 1px top border slides under the
+            header's bottom border and the user perceives the text as the
+            freeze line instead. Hidden on md+ (no horizontal scroll
+            needed there). */}
+        <div className="sticky top-[110px] z-30 -mx-4 mb-4 border-y border-[#E8E9E9] bg-white/95 px-4 py-2.5 text-center text-xs font-medium text-[#586968] backdrop-blur ltr:font-montserrat rtl:font-cairo md:hidden">
           {ui.compareSwipeHint}
         </div>
 
