@@ -3,14 +3,16 @@ import { Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { localePath } from '@/lib/utils/locale';
 import type { PricingTierV2 } from '@/lib/constants/pricing/v2/pricingV2Business';
+import type { UIStrings } from '@/lib/constants/pricing/v2/pricingV2Shared';
 
 interface Props {
   tier: PricingTierV2;
   billingPeriod: 'monthly' | 'annual';
   locale: string;
+  ui: UIStrings;
 }
 
-export const PricingCardV2 = ({ tier, billingPeriod, locale }: Props) => {
+export const PricingCardV2 = ({ tier, billingPeriod, locale, ui }: Props) => {
   const showAnnual = billingPeriod === 'annual';
   const displayPrice = showAnnual ? tier.annualPerMonth : tier.monthlyPrice;
   const popular = !!tier.isMostPopular;
@@ -26,7 +28,7 @@ export const PricingCardV2 = ({ tier, billingPeriod, locale }: Props) => {
     >
       {popular && (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#8B6554] px-4 py-1 text-xs font-semibold uppercase tracking-wide text-white">
-          Most popular
+          {ui.mostPopularBadge}
         </div>
       )}
 
@@ -34,7 +36,7 @@ export const PricingCardV2 = ({ tier, billingPeriod, locale }: Props) => {
         {tier.title}
       </div>
 
-      <p className="mb-6 min-h-[3.5rem] text-sm leading-relaxed text-[#455150]">
+      <p className="mb-6 min-h-[3.5rem] text-sm leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">
         {tier.oneLiner}
       </p>
 
@@ -42,20 +44,13 @@ export const PricingCardV2 = ({ tier, billingPeriod, locale }: Props) => {
         <span className="text-5xl font-bold text-[#172524]">
           ${displayPrice}
         </span>
-        <span className="text-base text-[#455150]">/ month</span>
+        <span className="text-base text-[#455150]">{ui.cardPerMonth}</span>
       </div>
 
-      <p className="mb-6 text-xs text-[#455150]">
-        {showAnnual ? (
-          <>
-            Billed annually at <strong>${tier.annualTotal}</strong> ·{' '}
-            <span className="text-[#8B6554] font-semibold">
-              {tier.annualSavingsLine}
-            </span>
-          </>
-        ) : (
-          'Billed monthly · Cancel anytime'
-        )}
+      <p className="mb-6 text-xs text-[#455150] ltr:font-montserrat rtl:font-cairo">
+        {showAnnual
+          ? ui.cardBilledAnnually(tier.annualTotal, tier.annualSavingsLine)
+          : ui.cardBilledMonthly}
       </p>
 
       <Link
@@ -67,12 +62,15 @@ export const PricingCardV2 = ({ tier, billingPeriod, locale }: Props) => {
             : 'border border-[#172524] text-[#172524] hover:bg-[#F8F5F3]',
         )}
       >
-        {tier.ctaLabel}
+        {ui.cardCtaLabel}
       </Link>
 
       <ul className="space-y-3">
         {tier.cardHighlights.map((feature, i) => (
-          <li key={i} className="flex items-start gap-3 text-sm text-[#172524]">
+          <li
+            key={i}
+            className="flex items-start gap-3 text-sm text-[#172524] ltr:font-montserrat rtl:font-cairo"
+          >
             <Check
               className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#8B6554]"
               strokeWidth={2.5}

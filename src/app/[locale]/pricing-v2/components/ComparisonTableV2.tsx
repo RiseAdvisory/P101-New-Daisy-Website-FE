@@ -3,12 +3,14 @@ import { Check, Minus } from 'lucide-react';
 import {
   FeatureCategory,
   FeatureCategoryRow,
+  UIStrings,
 } from '@/lib/constants/pricing/v2/pricingV2Shared';
 import type { PricingTierV2 } from '@/lib/constants/pricing/v2/pricingV2Business';
 
 interface Props {
   categories: FeatureCategory[];
   tiers: PricingTierV2[];
+  ui: UIStrings;
 }
 
 const renderValue = (value: FeatureCategoryRow['values'][number]) => {
@@ -34,27 +36,22 @@ const renderValue = (value: FeatureCategoryRow['values'][number]) => {
 
 /**
  * Single <table> with <colgroup> so every section uses identical column
- * widths — categories used to be nested sub-tables which let each section
- * compute its own column widths, making the columns "dance" vertically as
- * you scrolled. One table, one set of <col>s, columns stay locked.
- *
- * Category headers are full-width <tr colspan> rows rather than <details>
- * wrappers (<details> can't legally contain <tr> rows in HTML, which is
- * what caused the nested-table workaround in the first place).
- *
- * The first column ("Feature") is sticky so feature names stay visible
- * while the tier columns scroll horizontally on narrow viewports.
+ * widths. Category title cells inside the table use a sticky inner <span>
+ * so the category label stays anchored to the visible edge of the scroll
+ * container even as the table scrolls horizontally on narrow viewports.
+ * RTL: the sticky side flips (rtl:left-auto rtl:right-0) so the feature
+ * column anchors to the right of the visible viewport in Arabic.
  */
-export const ComparisonTableV2 = ({ categories, tiers }: Props) => {
+export const ComparisonTableV2 = ({ categories, tiers, ui }: Props) => {
   return (
     <section className="bg-white px-4 py-16 md:px-16">
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 text-center">
           <h2 className="text-3xl font-bold text-[#172524] md:text-4xl">
-            Compare every feature
+            {ui.compareHeading}
           </h2>
-          <p className="mt-3 text-base text-[#455150]">
-            Every feature, every tier, side by side.
+          <p className="mt-3 text-base text-[#455150] ltr:font-montserrat rtl:font-cairo">
+            {ui.compareSubheading}
           </p>
         </div>
 
@@ -71,8 +68,8 @@ export const ComparisonTableV2 = ({ categories, tiers }: Props) => {
             </colgroup>
             <thead>
               <tr className="border-b border-[#E8E9E9] bg-white">
-                <th className="sticky left-0 z-10 bg-white py-4 pl-5 pr-4 text-left text-xs font-semibold uppercase tracking-wider text-[#455150]">
-                  Feature
+                <th className="sticky left-0 z-10 bg-white py-4 pl-5 pr-4 text-left text-xs font-semibold uppercase tracking-wider text-[#455150] rtl:left-auto rtl:right-0 rtl:text-right">
+                  {ui.compareFeatureHeader}
                 </th>
                 {tiers.map((tier) => (
                   <th
@@ -90,9 +87,13 @@ export const ComparisonTableV2 = ({ categories, tiers }: Props) => {
                   <tr className="border-y border-[#E8E9E9] bg-[#F8F5F3]">
                     <td
                       colSpan={tiers.length + 1}
-                      className="px-5 py-3 text-sm font-semibold uppercase tracking-wider text-[#172524]"
+                      className="py-3 text-sm font-semibold uppercase tracking-wider text-[#172524]"
                     >
-                      {category.title}
+                      {/* Inner sticky span keeps the category title pinned
+                          to the visible edge during horizontal scroll. */}
+                      <span className="sticky left-5 inline-block rtl:left-auto rtl:right-5">
+                        {category.title}
+                      </span>
                     </td>
                   </tr>
                   {category.rows.map((row) => (
@@ -100,12 +101,12 @@ export const ComparisonTableV2 = ({ categories, tiers }: Props) => {
                       key={row.name}
                       className="border-b border-[#E8E9E9] bg-white last:border-b-0"
                     >
-                      <td className="sticky left-0 z-10 bg-white py-3 pl-5 pr-4 text-sm align-top">
-                        <div className="font-medium text-[#172524]">
+                      <td className="sticky left-0 z-10 bg-white py-3 pl-5 pr-4 align-top text-sm rtl:left-auto rtl:right-0 rtl:pl-4 rtl:pr-5 rtl:text-right">
+                        <div className="font-medium text-[#172524] ltr:font-montserrat rtl:font-cairo">
                           {row.name}
                         </div>
                         {row.note && (
-                          <div className="mt-1 text-xs text-[#455150]">
+                          <div className="mt-1 text-xs text-[#455150] ltr:font-montserrat rtl:font-cairo">
                             {row.note}
                           </div>
                         )}
@@ -126,10 +127,8 @@ export const ComparisonTableV2 = ({ categories, tiers }: Props) => {
           </table>
         </div>
 
-        {/* Mobile hint: with a 6-tier-wide table the horizontal scroll isn't
-            obvious. Only render on mobile-width viewports. */}
-        <p className="mt-3 text-center text-xs text-[#586968] md:hidden">
-          Swipe to compare tiers →
+        <p className="mt-3 text-center text-xs text-[#586968] ltr:font-montserrat rtl:font-cairo md:hidden">
+          {ui.compareSwipeHint}
         </p>
       </div>
     </section>

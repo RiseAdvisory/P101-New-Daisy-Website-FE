@@ -1,21 +1,28 @@
-import { PRICING_FAQ } from '@/lib/constants/pricing/v2/pricingV2Shared';
+import { t } from '@/lib/constants/i18n';
+import {
+  PRICING_FAQ,
+  UIStrings,
+} from '@/lib/constants/pricing/v2/pricingV2Shared';
 
-/**
- * Native <details> accordion — server-renderable, no client JS, accessible by
- * default. Visitors can expand multiple questions at once if they want.
- */
-export const PricingFAQV2 = () => {
+interface Props {
+  locale: string;
+  ui: UIStrings;
+}
+
+export const PricingFAQV2 = ({ locale, ui }: Props) => {
+  const faqs = t(PRICING_FAQ, locale);
+
   return (
     <section className="bg-[#F8F5F3] px-4 py-16 md:px-16">
       <div className="mx-auto max-w-3xl">
         <h2 className="mb-10 text-center text-3xl font-bold text-[#172524] md:text-4xl">
-          Frequently asked questions
+          {ui.faqHeading}
         </h2>
         <div className="space-y-3">
-          {PRICING_FAQ.map((item) => (
+          {faqs.map((item) => (
             <details
               key={item.question}
-              className="group rounded-xl border border-[#E8E9E9] bg-white open:bg-white"
+              className="group rounded-xl border border-[#E8E9E9] bg-white"
             >
               <summary className="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-base font-semibold text-[#172524] [&::-webkit-details-marker]:hidden">
                 <span>{item.question}</span>
@@ -26,7 +33,7 @@ export const PricingFAQV2 = () => {
                   +
                 </span>
               </summary>
-              <p className="px-5 pb-5 text-sm leading-relaxed text-[#455150]">
+              <p className="px-5 pb-5 text-sm leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">
                 {item.answer}
               </p>
             </details>

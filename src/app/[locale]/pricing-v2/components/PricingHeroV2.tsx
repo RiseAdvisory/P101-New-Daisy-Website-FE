@@ -4,7 +4,10 @@ import { Dispatch, SetStateAction } from 'react';
 import { cn } from '@/lib/utils';
 import { localePath } from '@/lib/utils/locale';
 import { PricingCardV2 } from './PricingCardV2';
-import type { Persona } from '@/lib/constants/pricing/v2/pricingV2Shared';
+import type {
+  Persona,
+  UIStrings,
+} from '@/lib/constants/pricing/v2/pricingV2Shared';
 import type { PricingTierV2 } from '@/lib/constants/pricing/v2/pricingV2Business';
 
 interface Props {
@@ -13,6 +16,7 @@ interface Props {
   billingPeriod: 'monthly' | 'annual';
   setBillingPeriod: Dispatch<SetStateAction<'monthly' | 'annual'>>;
   locale: string;
+  ui: UIStrings;
 }
 
 export const PricingHeroV2 = ({
@@ -21,6 +25,7 @@ export const PricingHeroV2 = ({
   billingPeriod,
   setBillingPeriod,
   locale,
+  ui,
 }: Props) => {
   const router = useRouter();
 
@@ -33,12 +38,10 @@ export const PricingHeroV2 = ({
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 text-center">
           <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl">
-            Pricing that grows with your business
+            {ui.heroHeadline}
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-white/75">
-            Pick the plan that matches your scale today. Move up — or stay — as
-            you grow. Every plan starts with 1,000 free AI credits and a 14-day
-            free trial.
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-white/75 ltr:font-montserrat rtl:font-cairo">
+            {ui.heroSubtitle}
           </p>
         </div>
 
@@ -46,8 +49,11 @@ export const PricingHeroV2 = ({
         <div className="mx-auto mb-8 flex w-fit gap-1 rounded-xl border border-white/15 bg-white/5 p-1 backdrop-blur-sm">
           {(
             [
-              { id: 'business' as const, label: 'For Business (with a team)' },
-              { id: 'professional' as const, label: 'For Solo Professional' },
+              { id: 'business' as const, label: ui.personaToggleBusiness },
+              {
+                id: 'professional' as const,
+                label: ui.personaToggleProfessional,
+              },
             ]
           ).map((option) => (
             <button
@@ -79,7 +85,7 @@ export const PricingHeroV2 = ({
                 : 'text-white/60 hover:text-white',
             )}
           >
-            Monthly
+            {ui.billingMonthly}
           </button>
           <button
             type="button"
@@ -91,16 +97,9 @@ export const PricingHeroV2 = ({
                 : 'text-white/60 hover:text-white',
             )}
           >
-            Annual
-            <span
-              className={cn(
-                'rounded-full px-2 py-0.5 text-xs font-bold',
-                billingPeriod === 'annual'
-                  ? 'bg-[#8B6554] text-white'
-                  : 'bg-[#8B6554] text-white',
-              )}
-            >
-              2 months free
+            {ui.billingAnnual}
+            <span className="rounded-full bg-[#8B6554] px-2 py-0.5 text-xs font-bold text-white">
+              {ui.twoMonthsFreeBadge}
             </span>
           </button>
         </div>
@@ -113,13 +112,13 @@ export const PricingHeroV2 = ({
               tier={tier}
               billingPeriod={billingPeriod}
               locale={locale}
+              ui={ui}
             />
           ))}
         </div>
 
-        <p className="mt-6 text-center text-xs text-white/50">
-          * Marketplace visibility and cashback promotions require a
-          service-quality review.
+        <p className="mt-6 text-center text-xs text-white/50 ltr:font-montserrat rtl:font-cairo">
+          {ui.marketplaceFootnote}
         </p>
       </div>
     </section>
