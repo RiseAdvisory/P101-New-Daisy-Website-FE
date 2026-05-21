@@ -9,15 +9,15 @@ export const CommissionCallout = ({ locale }: Props) => {
   const content = t(COMMISSION_CALLOUT, locale);
 
   return (
-    <section className="bg-[#F8F5F3] px-4 py-16 md:px-16">
+    <section className="bg-[#F8F5F3] px-4 py-20 md:px-16 md:py-24">
       <div className="mx-auto max-w-5xl">
-        <div className="rounded-2xl bg-primary p-8 text-white md:p-12">
-          <div className="grid gap-8 md:grid-cols-[1fr_2fr] md:items-center md:gap-12">
+        <div className="rounded-2xl bg-primary p-10 text-white md:p-14">
+          <div className="grid gap-10 md:grid-cols-[1fr_2fr] md:items-center md:gap-14">
             <div>
-              <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#CAB2A6]">
+              <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#CAB2A6] ltr:font-montserrat rtl:font-cairo">
                 {content.eyebrow}
               </div>
-              <h2 className="text-3xl font-bold leading-tight text-white md:text-4xl">
+              <h2 className="text-3xl font-bold leading-tight text-white ltr:font-montserrat rtl:font-cairo md:text-4xl">
                 {content.headline}
               </h2>
             </div>
@@ -25,7 +25,7 @@ export const CommissionCallout = ({ locale }: Props) => {
               <p className="text-base leading-relaxed text-white/80 ltr:font-montserrat rtl:font-cairo md:text-lg">
                 {content.body}
               </p>
-              <p className="mt-4 text-xs text-white/55 ltr:font-montserrat rtl:font-cairo">
+              <p className="mt-5 text-xs text-white/55 ltr:font-montserrat rtl:font-cairo">
                 {content.fineprint}
               </p>
             </div>

@@ -34,13 +34,13 @@ export const PricingHeroV2 = ({
   };
 
   return (
-    <section className="bg-primary px-4 pb-16 pt-12 md:px-16 md:pt-16">
+    <section className="bg-primary px-4 pb-20 pt-16 md:px-16 md:pb-24 md:pt-20">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-10 text-center">
-          <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl">
+        <div className="mb-12 text-center">
+          <h1 className="text-4xl font-bold leading-tight text-white ltr:font-montserrat rtl:font-cairo md:text-5xl">
             {ui.heroHeadline}
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-white/75 ltr:font-montserrat rtl:font-cairo">
+          <p className="mx-auto mt-5 max-w-2xl text-lg text-white/75 ltr:font-montserrat rtl:font-cairo">
             {ui.heroSubtitle}
           </p>
         </div>
@@ -62,7 +62,7 @@ export const PricingHeroV2 = ({
               onClick={() => switchPersona(option.id)}
               aria-pressed={persona === option.id}
               className={cn(
-                'rounded-lg px-4 py-2 text-sm font-semibold transition-colors',
+                'rounded-lg px-4 py-2 text-sm font-semibold transition-colors ltr:font-montserrat rtl:font-cairo',
                 persona === option.id
                   ? 'bg-white text-[#172524]'
                   : 'text-white/70 hover:bg-white/10 hover:text-white',
@@ -74,12 +74,12 @@ export const PricingHeroV2 = ({
         </div>
 
         {/* Billing toggle */}
-        <div className="mx-auto mb-12 flex w-fit items-center gap-4">
+        <div className="mx-auto mb-14 flex w-fit items-center gap-4">
           <button
             type="button"
             onClick={() => setBillingPeriod('monthly')}
             className={cn(
-              'rounded-lg px-3 py-1.5 text-sm font-semibold transition-colors',
+              'rounded-lg px-3 py-1.5 text-sm font-semibold transition-colors ltr:font-montserrat rtl:font-cairo',
               billingPeriod === 'monthly'
                 ? 'bg-white text-[#172524]'
                 : 'text-white/60 hover:text-white',
@@ -91,21 +91,21 @@ export const PricingHeroV2 = ({
             type="button"
             onClick={() => setBillingPeriod('annual')}
             className={cn(
-              'flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm font-semibold transition-colors',
+              'flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm font-semibold transition-colors ltr:font-montserrat rtl:font-cairo',
               billingPeriod === 'annual'
                 ? 'bg-white text-[#172524]'
                 : 'text-white/60 hover:text-white',
             )}
           >
             {ui.billingAnnual}
-            <span className="rounded-full bg-[#8B6554] px-2 py-0.5 text-xs font-bold text-white">
+            <span className="rounded-full bg-[#8B6554] px-2 py-0.5 text-xs font-bold text-white ltr:font-montserrat rtl:font-cairo">
               {ui.twoMonthsFreeBadge}
             </span>
           </button>
         </div>
 
         {/* Cards */}
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-3">
           {tiers.map((tier) => (
             <PricingCardV2
               key={tier.id}
@@ -117,7 +117,7 @@ export const PricingHeroV2 = ({
           ))}
         </div>
 
-        <p className="mt-6 text-center text-xs text-white/50 ltr:font-montserrat rtl:font-cairo">
+        <p className="mt-8 text-center text-xs text-white/50 ltr:font-montserrat rtl:font-cairo">
           {ui.marketplaceFootnote}
         </p>
       </div>

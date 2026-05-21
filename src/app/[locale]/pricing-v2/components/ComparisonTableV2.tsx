@@ -31,7 +31,11 @@ const renderValue = (value: FeatureCategoryRow['values'][number]) => {
       />
     );
   }
-  return <span className="text-sm font-semibold text-[#172524]">{value}</span>;
+  return (
+    <span className="text-sm font-semibold text-[#172524] ltr:font-montserrat rtl:font-cairo">
+      {value}
+    </span>
+  );
 };
 
 /**
@@ -39,20 +43,30 @@ const renderValue = (value: FeatureCategoryRow['values'][number]) => {
  * widths. Category title cells inside the table use a sticky inner <span>
  * so the category label stays anchored to the visible edge of the scroll
  * container even as the table scrolls horizontally on narrow viewports.
- * RTL: the sticky side flips (rtl:left-auto rtl:right-0) so the feature
- * column anchors to the right of the visible viewport in Arabic.
+ *
+ * Mobile swipe hint: rendered above the table with `sticky top-[100px]`
+ * (the fixed-header offset) so it pins to the viewport while the user
+ * scrolls the page vertically through the table content.
  */
 export const ComparisonTableV2 = ({ categories, tiers, ui }: Props) => {
   return (
-    <section className="bg-white px-4 py-16 md:px-16">
+    <section className="bg-white px-4 py-20 md:px-16 md:py-24">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-10 text-center">
-          <h2 className="text-3xl font-bold text-[#172524] md:text-4xl">
+        <div className="mb-12 text-center">
+          <h2 className="text-3xl font-bold text-[#172524] ltr:font-montserrat rtl:font-cairo md:text-4xl">
             {ui.compareHeading}
           </h2>
-          <p className="mt-3 text-base text-[#455150] ltr:font-montserrat rtl:font-cairo">
+          <p className="mt-4 text-base text-[#455150] ltr:font-montserrat rtl:font-cairo">
             {ui.compareSubheading}
           </p>
+        </div>
+
+        {/* Mobile-only sticky swipe hint above the table. Pins below the
+            fixed header (top-[100px]) while scrolling vertically through
+            the table content. Hidden on md+ where horizontal scroll isn't
+            needed. */}
+        <div className="sticky top-[100px] z-30 -mx-4 mb-4 border-y border-[#E8E9E9] bg-white/95 px-4 py-2.5 text-center text-xs font-medium text-[#586968] backdrop-blur ltr:font-montserrat rtl:font-cairo md:hidden">
+          {ui.compareSwipeHint}
         </div>
 
         <div className="overflow-x-auto rounded-2xl border border-[#E8E9E9]">
@@ -68,13 +82,13 @@ export const ComparisonTableV2 = ({ categories, tiers, ui }: Props) => {
             </colgroup>
             <thead>
               <tr className="border-b border-[#E8E9E9] bg-white">
-                <th className="sticky left-0 z-10 bg-white py-4 pl-5 pr-4 text-left text-xs font-semibold uppercase tracking-wider text-[#455150] rtl:left-auto rtl:right-0 rtl:text-right">
+                <th className="sticky left-0 z-10 bg-white py-5 pl-5 pr-4 text-left text-xs font-semibold uppercase tracking-wider text-[#455150] ltr:font-montserrat rtl:font-cairo rtl:left-auto rtl:right-0 rtl:text-right">
                   {ui.compareFeatureHeader}
                 </th>
                 {tiers.map((tier) => (
                   <th
                     key={tier.id}
-                    className="px-3 py-4 text-center text-xs font-semibold uppercase tracking-wider text-[#455150]"
+                    className="px-3 py-5 text-center text-xs font-semibold uppercase tracking-wider text-[#455150] ltr:font-montserrat rtl:font-cairo"
                   >
                     {tier.title}
                   </th>
@@ -87,7 +101,7 @@ export const ComparisonTableV2 = ({ categories, tiers, ui }: Props) => {
                   <tr className="border-y border-[#E8E9E9] bg-[#F8F5F3]">
                     <td
                       colSpan={tiers.length + 1}
-                      className="py-3 text-sm font-semibold uppercase tracking-wider text-[#172524]"
+                      className="py-4 text-sm font-semibold uppercase tracking-wider text-[#172524] ltr:font-montserrat rtl:font-cairo"
                     >
                       {/* Inner sticky span keeps the category title pinned
                           to the visible edge during horizontal scroll. */}
@@ -101,12 +115,12 @@ export const ComparisonTableV2 = ({ categories, tiers, ui }: Props) => {
                       key={row.name}
                       className="border-b border-[#E8E9E9] bg-white last:border-b-0"
                     >
-                      <td className="sticky left-0 z-10 bg-white py-3 pl-5 pr-4 align-top text-sm rtl:left-auto rtl:right-0 rtl:pl-4 rtl:pr-5 rtl:text-right">
+                      <td className="sticky left-0 z-10 bg-white py-4 pl-5 pr-4 align-top text-sm rtl:left-auto rtl:right-0 rtl:pl-4 rtl:pr-5 rtl:text-right">
                         <div className="font-medium text-[#172524] ltr:font-montserrat rtl:font-cairo">
                           {row.name}
                         </div>
                         {row.note && (
-                          <div className="mt-1 text-xs text-[#455150] ltr:font-montserrat rtl:font-cairo">
+                          <div className="mt-1.5 text-xs text-[#455150] ltr:font-montserrat rtl:font-cairo">
                             {row.note}
                           </div>
                         )}
@@ -114,7 +128,7 @@ export const ComparisonTableV2 = ({ categories, tiers, ui }: Props) => {
                       {row.values.map((value, j) => (
                         <td
                           key={j}
-                          className="px-3 py-3 text-center align-top"
+                          className="px-3 py-4 text-center align-top"
                         >
                           {renderValue(value)}
                         </td>
@@ -126,10 +140,6 @@ export const ComparisonTableV2 = ({ categories, tiers, ui }: Props) => {
             </tbody>
           </table>
         </div>
-
-        <p className="mt-3 text-center text-xs text-[#586968] ltr:font-montserrat rtl:font-cairo md:hidden">
-          {ui.compareSwipeHint}
-        </p>
       </div>
     </section>
   );

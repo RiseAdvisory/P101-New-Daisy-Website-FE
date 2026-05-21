@@ -13,13 +13,13 @@ export const AddOnsTableV2 = ({ locale, ui }: Props) => {
   const addOns = t(ADD_ONS, locale);
 
   return (
-    <section className="bg-white px-4 py-16 md:px-16">
+    <section className="bg-white px-4 py-20 md:px-16 md:py-24">
       <div className="mx-auto max-w-5xl">
-        <div className="mb-8 text-center">
-          <h2 className="text-2xl font-bold text-[#172524] md:text-3xl">
+        <div className="mb-10 text-center">
+          <h2 className="text-2xl font-bold text-[#172524] ltr:font-montserrat rtl:font-cairo md:text-3xl">
             {ui.addOnsHeading}
           </h2>
-          <p className="mt-3 text-base text-[#455150] ltr:font-montserrat rtl:font-cairo">
+          <p className="mt-4 text-base text-[#455150] ltr:font-montserrat rtl:font-cairo">
             {ui.addOnsSubheading}
           </p>
         </div>
@@ -28,11 +28,13 @@ export const AddOnsTableV2 = ({ locale, ui }: Props) => {
           {addOns.map((addon, i) => (
             <div
               key={addon.name}
-              className={`grid gap-4 px-6 py-4 md:grid-cols-[1.2fr_2fr] md:items-center md:gap-8 ${
+              className={`grid gap-4 px-7 py-5 md:grid-cols-[1.2fr_2fr] md:items-center md:gap-10 ${
                 i !== addOns.length - 1 ? 'border-b border-[#E8E9E9]' : ''
               }`}
             >
-              <div className="font-semibold text-[#172524]">{addon.name}</div>
+              <div className="font-semibold text-[#172524] ltr:font-montserrat rtl:font-cairo">
+                {addon.name}
+              </div>
               <div className="text-sm text-[#455150] ltr:font-montserrat rtl:font-cairo">
                 {addon.price}
               </div>
