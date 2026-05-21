@@ -1,12 +1,13 @@
 /**
- * Business tier data for /pricing-v3.
- * Display names are renamed for buyer clarity per the v3 spec:
- * Basic → Starter Business, Growth → Growing Team, Business → Multi-Location.
- * Each tier carries a "best for" tagline, a "choose this if" decision aid,
- * and bullets are reordered with the most valuable buyer-facing benefits
- * first.
+ * Business tier data for /pricing-v3 (EN + AR).
+ * Display names: Starter Business / Growing Team / Multi-Location.
+ * Each tier carries a "best for" tagline and an outcome-driven description
+ * sentence — what the buyer gets, not how to decide. Marketplace-related
+ * bullets go in `conditionalHighlights` so the card can visually separate
+ * them as "available after quality review".
  */
 
+import { I18nContent } from '../../i18n';
 import { FeatureCategory } from './pricingV3Types';
 
 export interface PricingTierV3 {
@@ -15,209 +16,399 @@ export interface PricingTierV3 {
   displayName: string;
   // Short tagline rendered under the tier name as a "best for" badge.
   bestFor: string;
-  // Single-sentence decision aid: "Choose this if ..."
-  chooseThisIf: string;
+  // Outcome-driven plan description — one sentence that says what the
+  // buyer GETS, not how to decide.
+  description: string;
   monthlyPrice: number;
   annualTotal: number;
   annualPerMonth: number;
   annualSavingsLine: string;
-  // Reordered: most valuable buyer-facing benefits first.
-  // Marketplace-related items go in `conditionalHighlights` so they can be
-  // visually separated as "available after quality review".
   cardHighlights: string[];
   conditionalHighlights: string[];
   isMostPopular?: boolean;
 }
 
-export const BUSINESS_TIERS_V3: PricingTierV3[] = [
-  {
-    id: 'basic',
-    displayName: 'Starter Business',
-    bestFor: 'Best for small teams',
-    chooseThisIf:
-      'Choose this if you have one location and need a professional booking system for a small team.',
-    monthlyPrice: 50,
-    annualTotal: 500,
-    annualPerMonth: 42,
-    annualSavingsLine: 'Save $100 (2 Months Free)',
-    cardHighlights: [
-      '5 team members, 1 location',
-      'Branded booking site',
-      'WhatsApp + Instagram booking',
-      'Staff calendars & scheduling',
-      'POS, payments, client records',
-      'AI receptionist trial conversations',
-    ],
-    conditionalHighlights: ['Marketplace visibility *'],
-  },
-  {
-    id: 'growth',
-    displayName: 'Growing Team',
-    bestFor: 'Best for active salons and spas',
-    chooseThisIf:
-      'Choose this if your business needs stronger booking, payment, reminder, and customer follow-up tools.',
-    monthlyPrice: 150,
-    annualTotal: 1500,
-    annualPerMonth: 125,
-    annualSavingsLine: 'Save $300 (2 Months Free)',
-    isMostPopular: true,
-    cardHighlights: [
-      '10 team members, 2 locations',
-      'Everything in Starter Business',
-      'Online payments + cancellation policy',
-      'Automated reminders & subscription packages',
-      'Detailed reviews & feedback',
-      'AI receptionist trial conversations',
-      'Priority customer support',
-    ],
-    conditionalHighlights: [
-      'Marketplace visibility *',
-      'Cashback promotions *',
-    ],
-  },
-  {
-    id: 'business',
-    displayName: 'Multi-Location',
-    bestFor: 'Best for growing businesses',
-    chooseThisIf:
-      'Choose this if you manage several branches, a larger team, or more advanced operations.',
-    monthlyPrice: 250,
-    annualTotal: 2500,
-    annualPerMonth: 208,
-    annualSavingsLine: 'Save $500 (2 Months Free)',
-    cardHighlights: [
-      '15 team members, 4 locations',
-      'Everything in Growing Team',
-      'Advanced AI Customization (tone, training, A/B)',
-      'Email + WhatsApp template customization',
-      'Advanced analytics & trends',
-      'Free data migration + assisted onboarding',
-    ],
-    conditionalHighlights: [
-      'Marketplace visibility *',
-      'Cashback promotions *',
-      'Featured placement *',
-    ],
-  },
-];
+export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
+  en: [
+    {
+      id: 'basic',
+      displayName: 'Starter Business',
+      bestFor: 'Best for small teams',
+      description:
+        'Get your business online with a branded booking site, team calendar, payments, and customer messaging in one system.',
+      monthlyPrice: 50,
+      annualTotal: 500,
+      annualPerMonth: 42,
+      annualSavingsLine: 'Save $100 (2 Months Free)',
+      cardHighlights: [
+        '5 team members, 1 location',
+        'Branded booking site',
+        'WhatsApp + Instagram booking',
+        'Staff calendars & scheduling',
+        'POS, payments, client records',
+        'Around 50 AI receptionist conversations included',
+      ],
+      conditionalHighlights: ['Marketplace visibility *'],
+    },
+    {
+      id: 'growth',
+      displayName: 'Growing Team',
+      bestFor: 'Best for active salons and spas',
+      description:
+        'Run daily operations with stronger booking, payments, reminders, reviews, and customer follow-up tools.',
+      monthlyPrice: 150,
+      annualTotal: 1500,
+      annualPerMonth: 125,
+      annualSavingsLine: 'Save $300 (2 Months Free)',
+      isMostPopular: true,
+      cardHighlights: [
+        '10 team members, 2 locations',
+        'Everything in Starter Business',
+        'Online payments + cancellation policy',
+        'Automated reminders & prepaid service packages',
+        'Detailed reviews & feedback',
+        'Around 50 AI receptionist conversations included',
+        'Priority customer support',
+      ],
+      conditionalHighlights: [
+        'Marketplace visibility *',
+        'Cashback promotions *',
+      ],
+    },
+    {
+      id: 'business',
+      displayName: 'Multi-Location',
+      bestFor: 'Best for growing businesses',
+      description:
+        'Manage multiple branches with advanced analytics, AI customization, data migration, and assisted onboarding.',
+      monthlyPrice: 250,
+      annualTotal: 2500,
+      annualPerMonth: 208,
+      annualSavingsLine: 'Save $500 (2 Months Free)',
+      cardHighlights: [
+        '15 team members, 4 locations',
+        'Everything in Growing Team',
+        'Advanced AI receptionist customization, including tone, business rules, and response style',
+        'Email + WhatsApp template customization',
+        'Advanced analytics & trends',
+        'Free data migration + assisted onboarding',
+      ],
+      conditionalHighlights: [
+        'Marketplace visibility *',
+        'Cashback promotions *',
+        'Featured placement *',
+      ],
+    },
+  ],
+  ar: [
+    {
+      id: 'basic',
+      displayName: 'بداية الأعمال',
+      bestFor: 'الأنسب للفرق الصغيرة',
+      description:
+        'ابدأ نشاطك على الإنترنت بموقع حجوزات بعلامتك التجارية، وتقويم للفريق، ومدفوعات، ومراسلات العملاء — كل ذلك في نظام واحد.',
+      monthlyPrice: 50,
+      annualTotal: 500,
+      annualPerMonth: 42,
+      annualSavingsLine: 'وفّر 100 دولار (شهران مجاناً)',
+      cardHighlights: [
+        '5 أعضاء فريق، موقع واحد',
+        'موقع حجوزات بعلامتك التجارية',
+        'حجز عبر واتساب وإنستغرام',
+        'تقاويم وجدولة للموظفين',
+        'نقاط بيع، مدفوعات، سجلات عملاء',
+        'حوالي 50 محادثة لموظف الاستقبال الذكي مشمولة',
+      ],
+      conditionalHighlights: ['الظهور في السوق *'],
+    },
+    {
+      id: 'growth',
+      displayName: 'الفريق النامي',
+      bestFor: 'الأنسب للصالونات والمنتجعات النشطة',
+      description:
+        'أدر عملياتك اليومية بأدوات أقوى للحجز والدفع والتذكيرات والتقييمات ومتابعة العملاء.',
+      monthlyPrice: 150,
+      annualTotal: 1500,
+      annualPerMonth: 125,
+      annualSavingsLine: 'وفّر 300 دولار (شهران مجاناً)',
+      isMostPopular: true,
+      cardHighlights: [
+        '10 أعضاء فريق، موقعان',
+        'كل ما في خطة بداية الأعمال',
+        'مدفوعات أونلاين + سياسة إلغاء',
+        'تذكيرات آلية وباقات خدمات مدفوعة مسبقاً',
+        'تقييمات وملاحظات تفصيلية',
+        'حوالي 50 محادثة لموظف الاستقبال الذكي مشمولة',
+        'دعم عملاء بأولوية',
+      ],
+      conditionalHighlights: [
+        'الظهور في السوق *',
+        'عروض الكاشباك *',
+      ],
+    },
+    {
+      id: 'business',
+      displayName: 'متعدد المواقع',
+      bestFor: 'الأنسب للأعمال النامية',
+      description:
+        'أدر فروعك المتعددة بتحليلات متقدمة، وتخصيص للذكاء الاصطناعي، ونقل بيانات، وإعداد بمساعدة الفريق.',
+      monthlyPrice: 250,
+      annualTotal: 2500,
+      annualPerMonth: 208,
+      annualSavingsLine: 'وفّر 500 دولار (شهران مجاناً)',
+      cardHighlights: [
+        '15 عضو فريق، 4 مواقع',
+        'كل ما في خطة الفريق النامي',
+        'تخصيص متقدم لموظف الاستقبال الذكي، يشمل النبرة وقواعد العمل وأسلوب الرد',
+        'تخصيص قوالب البريد وواتساب',
+        'تحليلات واتجاهات متقدمة',
+        'نقل بيانات وإعداد بمساعدة الفريق مجاناً',
+      ],
+      conditionalHighlights: [
+        'الظهور في السوق *',
+        'عروض الكاشباك *',
+        'موضع مميّز *',
+      ],
+    },
+  ],
+};
 
 /**
  * Default comparison table shows only the headline rows. The full matrix
  * is mounted behind a "View All Features" toggle.
  */
-export const BUSINESS_COMPARISON_DEFAULT_V3: FeatureCategory[] = [
-  {
-    title: 'Headline Comparison',
-    rows: [
-      { name: 'Team Members / Calendars', values: ['5', '10', '15'] },
-      { name: 'Locations', values: ['1', '2', '4'] },
-      { name: 'Branded Booking Site', values: [true, true, true] },
-      { name: 'WhatsApp + Instagram Booking', values: [true, true, true] },
-      { name: 'Payments / POS', values: [true, true, true] },
-      {
-        name: 'AI Receptionist Trial Conversations',
-        values: [true, true, true],
-      },
-      { name: 'Reviews', values: [true, true, true] },
-      {
-        name: 'Marketplace Eligibility',
-        note: 'Subject to service-quality review',
-        values: ['After review', 'After review', 'After review'],
-      },
-      {
-        name: 'Support Level',
-        values: ['Basic', 'Priority', 'Priority / Assisted'],
-      },
-    ],
-  },
-];
+export const BUSINESS_COMPARISON_DEFAULT_V3: I18nContent<FeatureCategory[]> = {
+  en: [
+    {
+      title: 'Headline Comparison',
+      rows: [
+        { name: 'Team Members / Calendars', values: ['5', '10', '15'] },
+        { name: 'Locations', values: ['1', '2', '4'] },
+        { name: 'Branded Booking Site', values: [true, true, true] },
+        { name: 'WhatsApp + Instagram Booking', values: [true, true, true] },
+        { name: 'Payments / POS', values: [true, true, true] },
+        {
+          name: 'AI Receptionist Conversations (~50 included)',
+          values: [true, true, true],
+        },
+        { name: 'Reviews', values: [true, true, true] },
+        {
+          name: 'Marketplace Eligibility',
+          note: 'Subject to service-quality review',
+          values: ['After review', 'After review', 'After review'],
+        },
+        {
+          name: 'Support Level',
+          values: ['Basic', 'Priority', 'Priority / Assisted'],
+        },
+      ],
+    },
+  ],
+  ar: [
+    {
+      title: 'مقارنة عناوين رئيسية',
+      rows: [
+        { name: 'أعضاء الفريق / التقاويم', values: ['5', '10', '15'] },
+        { name: 'المواقع', values: ['1', '2', '4'] },
+        { name: 'موقع حجوزات بعلامتك', values: [true, true, true] },
+        { name: 'حجز عبر واتساب وإنستغرام', values: [true, true, true] },
+        { name: 'مدفوعات / نقاط بيع', values: [true, true, true] },
+        {
+          name: 'محادثات موظف الاستقبال الذكي (حوالي 50 مشمولة)',
+          values: [true, true, true],
+        },
+        { name: 'التقييمات', values: [true, true, true] },
+        {
+          name: 'أهلية السوق',
+          note: 'يخضع لمراجعة جودة الخدمة',
+          values: ['بعد المراجعة', 'بعد المراجعة', 'بعد المراجعة'],
+        },
+        {
+          name: 'مستوى الدعم',
+          values: ['أساسي', 'أولوية', 'أولوية / بمساعدة'],
+        },
+      ],
+    },
+  ],
+};
 
-export const BUSINESS_COMPARISON_FULL_V3: FeatureCategory[] = [
-  {
-    title: 'Scale & Seats',
-    rows: [
-      { name: 'Team Members / Calendars', values: ['5', '10', '15'] },
-      { name: 'Workspaces / Locations', values: ['1', '2', '4'] },
-      { name: 'Countries', values: ['1', '1', '1'] },
-      { name: 'Bookings per Month', values: ['Unlimited', 'Unlimited', 'Unlimited'] },
-    ],
-  },
-  {
-    title: 'Bookings & Schedule',
-    rows: [
-      { name: 'Schedule Management', values: [true, true, true] },
-      { name: 'Sales Management (POS)', values: [true, true, true] },
-      { name: 'Client Management', values: [true, true, true] },
-      { name: 'Mobile & Desktop App', values: [true, true, true] },
-      { name: 'Phone Contacts Syncing', values: [true, true, true] },
-      { name: 'Google Calendar Syncing', values: [true, true, true] },
-      { name: 'Automated Reminders', values: [undefined, true, true] },
-      { name: 'Subscription Packages', values: [undefined, true, true] },
-      { name: 'Online Payment Processing', values: [undefined, true, true] },
-      { name: 'Cancellation Policy Enforcement', values: [undefined, true, true] },
-    ],
-  },
-  {
-    title: 'AI Receptionist & Communication',
-    rows: [
-      {
-        name: 'AI Receptionist Trial Conversations',
-        note: 'About 50 included, then pay-as-you-go',
-        values: [true, true, true],
-      },
-      { name: 'WhatsApp Business Chat Integration', values: [true, true, true] },
-      { name: 'Instagram Direct Message Integration', values: [true, true, true] },
-      { name: 'In-App & Email Notifications', values: [true, true, true] },
-      { name: 'WhatsApp Notifications', values: [true, true, true] },
-      { name: 'Email Template Customization', values: [undefined, undefined, true] },
-      { name: 'WhatsApp Template Customization', values: [undefined, undefined, true] },
-      {
-        name: 'Advanced AI Customization',
-        note: 'Tone & voice training, fine-tuning, multi-language, A/B testing',
-        values: [undefined, undefined, true],
-      },
-    ],
-  },
-  {
-    title: 'Marketing & Marketplace',
-    rows: [
-      {
-        name: 'Marketplace App Visibility',
-        note: 'Subject to service-quality review',
-        values: ['After review', 'After review', 'After review'],
-      },
-      { name: 'App Search Visibility (Elastic)', values: [undefined, true, true] },
-      {
-        name: 'Cashback Promotions',
-        note: 'Subject to service-quality review',
-        values: [undefined, 'After review', 'After review'],
-      },
-      { name: 'Customer Reviews Management & Reply', values: [true, true, true] },
-      { name: 'Detailed Customer Feedback', values: [undefined, true, true] },
-    ],
-  },
-  {
-    title: 'Branding & Content',
-    rows: [
-      {
-        name: 'Branded Booking Site',
-        values: ['Default Template', 'Default + Premium', 'Default + Premium'],
-      },
-      {
-        name: 'Media Portfolio of Services',
-        values: ['3 Posts', '50 Posts', 'Unlimited'],
-      },
-      { name: 'Social Media Daisy Link', values: [true, true, true] },
-    ],
-  },
-  {
-    title: 'Support & Onboarding',
-    rows: [
-      { name: 'General Reports', values: [true, true, true] },
-      { name: 'Advanced Analytics & Trends', values: [undefined, undefined, true] },
-      { name: 'Customer Support', values: ['Basic', 'Priority', 'Priority / Assisted'] },
-      { name: 'Free Data Migration', values: [undefined, undefined, true] },
-      { name: 'Free Assisted Onboarding', values: [undefined, undefined, true] },
-    ],
-  },
-];
+export const BUSINESS_COMPARISON_FULL_V3: I18nContent<FeatureCategory[]> = {
+  en: [
+    {
+      title: 'Scale & Seats',
+      rows: [
+        { name: 'Team Members / Calendars', values: ['5', '10', '15'] },
+        { name: 'Workspaces / Locations', values: ['1', '2', '4'] },
+        { name: 'Countries', values: ['1', '1', '1'] },
+        { name: 'Bookings per Month', values: ['Unlimited', 'Unlimited', 'Unlimited'] },
+      ],
+    },
+    {
+      title: 'Bookings & Schedule',
+      rows: [
+        { name: 'Schedule Management', values: [true, true, true] },
+        { name: 'Sales Management (POS)', values: [true, true, true] },
+        { name: 'Client Management', values: [true, true, true] },
+        { name: 'Mobile & Desktop App', values: [true, true, true] },
+        { name: 'Phone Contacts Syncing', values: [true, true, true] },
+        { name: 'Google Calendar Syncing', values: [true, true, true] },
+        { name: 'Automated Reminders', values: [undefined, true, true] },
+        { name: 'Prepaid Service Packages', values: [undefined, true, true] },
+        { name: 'Online Payment Processing', values: [undefined, true, true] },
+        { name: 'Cancellation Policy Enforcement', values: [undefined, true, true] },
+      ],
+    },
+    {
+      title: 'AI Receptionist & Communication',
+      rows: [
+        {
+          name: 'AI Receptionist Conversations',
+          note: 'About 50 included, then pay-as-you-go',
+          values: [true, true, true],
+        },
+        { name: 'WhatsApp Business Chat Integration', values: [true, true, true] },
+        { name: 'Instagram Direct Message Integration', values: [true, true, true] },
+        { name: 'In-App & Email Notifications', values: [true, true, true] },
+        { name: 'WhatsApp Notifications', values: [true, true, true] },
+        { name: 'Email Template Customization', values: [undefined, undefined, true] },
+        { name: 'WhatsApp Template Customization', values: [undefined, undefined, true] },
+        {
+          name: 'Advanced AI Receptionist Customization',
+          note: 'Tone, business rules, response style, multi-language',
+          values: [undefined, undefined, true],
+        },
+      ],
+    },
+    {
+      title: 'Marketing & Marketplace',
+      rows: [
+        {
+          name: 'Marketplace App Visibility',
+          note: 'Subject to service-quality review',
+          values: ['After review', 'After review', 'After review'],
+        },
+        { name: 'App Search Visibility (Elastic)', values: [undefined, true, true] },
+        {
+          name: 'Cashback Promotions',
+          note: 'Subject to service-quality review',
+          values: [undefined, 'After review', 'After review'],
+        },
+        { name: 'Customer Reviews Management & Reply', values: [true, true, true] },
+        { name: 'Detailed Customer Feedback', values: [undefined, true, true] },
+      ],
+    },
+    {
+      title: 'Branding & Content',
+      rows: [
+        {
+          name: 'Branded Booking Site',
+          values: ['Default Template', 'Default + Premium', 'Default + Premium'],
+        },
+        {
+          name: 'Media Portfolio of Services',
+          values: ['3 Posts', '50 Posts', 'Unlimited'],
+        },
+        { name: 'Social Media Daisy Link', values: [true, true, true] },
+      ],
+    },
+    {
+      title: 'Support & Onboarding',
+      rows: [
+        { name: 'General Reports', values: [true, true, true] },
+        { name: 'Advanced Analytics & Trends', values: [undefined, undefined, true] },
+        { name: 'Customer Support', values: ['Basic', 'Priority', 'Priority / Assisted'] },
+        { name: 'Free Data Migration', values: [undefined, undefined, true] },
+        { name: 'Free Assisted Onboarding', values: [undefined, undefined, true] },
+      ],
+    },
+  ],
+  ar: [
+    {
+      title: 'الحجم والمقاعد',
+      rows: [
+        { name: 'أعضاء الفريق / التقاويم', values: ['5', '10', '15'] },
+        { name: 'مساحات العمل / المواقع', values: ['1', '2', '4'] },
+        { name: 'الدول', values: ['1', '1', '1'] },
+        { name: 'الحجوزات شهرياً', values: ['غير محدودة', 'غير محدودة', 'غير محدودة'] },
+      ],
+    },
+    {
+      title: 'الحجوزات والجدولة',
+      rows: [
+        { name: 'إدارة الجدول', values: [true, true, true] },
+        { name: 'إدارة المبيعات (نقاط البيع)', values: [true, true, true] },
+        { name: 'إدارة العملاء', values: [true, true, true] },
+        { name: 'تطبيق الهاتف والكمبيوتر', values: [true, true, true] },
+        { name: 'مزامنة جهات اتصال الهاتف', values: [true, true, true] },
+        { name: 'مزامنة Google Calendar', values: [true, true, true] },
+        { name: 'تذكيرات آلية', values: [undefined, true, true] },
+        { name: 'باقات خدمات مدفوعة مسبقاً', values: [undefined, true, true] },
+        { name: 'معالجة المدفوعات أونلاين', values: [undefined, true, true] },
+        { name: 'فرض سياسة الإلغاء', values: [undefined, true, true] },
+      ],
+    },
+    {
+      title: 'موظف الاستقبال الذكي والتواصل',
+      rows: [
+        {
+          name: 'محادثات موظف الاستقبال الذكي',
+          note: 'حوالي 50 مشمولة، ثم ادفع حسب الاستخدام',
+          values: [true, true, true],
+        },
+        { name: 'تكامل دردشة واتساب للأعمال', values: [true, true, true] },
+        { name: 'تكامل الرسائل المباشرة على إنستغرام', values: [true, true, true] },
+        { name: 'إشعارات داخل التطبيق والبريد', values: [true, true, true] },
+        { name: 'إشعارات واتساب', values: [true, true, true] },
+        { name: 'تخصيص قوالب البريد الإلكتروني', values: [undefined, undefined, true] },
+        { name: 'تخصيص قوالب رسائل واتساب', values: [undefined, undefined, true] },
+        {
+          name: 'تخصيص متقدم لموظف الاستقبال الذكي',
+          note: 'النبرة، قواعد العمل، أسلوب الرد، تعدد اللغات',
+          values: [undefined, undefined, true],
+        },
+      ],
+    },
+    {
+      title: 'التسويق والسوق',
+      rows: [
+        {
+          name: 'الظهور في تطبيق السوق',
+          note: 'يخضع لمراجعة جودة الخدمة',
+          values: ['بعد المراجعة', 'بعد المراجعة', 'بعد المراجعة'],
+        },
+        { name: 'الظهور في بحث التطبيق (Elastic)', values: [undefined, true, true] },
+        {
+          name: 'عروض الكاشباك',
+          note: 'يخضع لمراجعة جودة الخدمة',
+          values: [undefined, 'بعد المراجعة', 'بعد المراجعة'],
+        },
+        { name: 'إدارة تقييمات العملاء والرد', values: [true, true, true] },
+        { name: 'ملاحظات تفصيلية للعملاء', values: [undefined, true, true] },
+      ],
+    },
+    {
+      title: 'العلامة التجارية والمحتوى',
+      rows: [
+        {
+          name: 'موقع حجوزات بعلامتك',
+          values: ['القالب الافتراضي', 'افتراضي + بريميوم', 'افتراضي + بريميوم'],
+        },
+        {
+          name: 'محفظة وسائط الخدمات',
+          values: ['3 منشورات', '50 منشوراً', 'غير محدود'],
+        },
+        { name: 'رابط ديزي لوسائل التواصل', values: [true, true, true] },
+      ],
+    },
+    {
+      title: 'الدعم والإعداد',
+      rows: [
+        { name: 'التقارير العامة', values: [true, true, true] },
+        { name: 'تحليلات واتجاهات متقدمة', values: [undefined, undefined, true] },
+        { name: 'دعم العملاء', values: ['أساسي', 'أولوية', 'أولوية / بمساعدة'] },
+        { name: 'نقل بيانات مجاني', values: [undefined, undefined, true] },
+        { name: 'إعداد مجاني بمساعدة الفريق', values: [undefined, undefined, true] },
+      ],
+    },
+  ],
+};

@@ -1,11 +1,15 @@
 import { Sparkles } from 'lucide-react';
-import type { PersonaCopy } from '@/lib/constants/pricing/v3/pricingV3Shared';
+import type {
+  PersonaCopy,
+  SharedCopy,
+} from '@/lib/constants/pricing/v3/pricingV3Shared';
 
 interface Props {
   personaCopy: PersonaCopy;
+  shared: SharedCopy;
 }
 
-export const AIConversationsCalloutV3 = ({ personaCopy }: Props) => {
+export const AIConversationsCalloutV3 = ({ personaCopy, shared }: Props) => {
   return (
     <section className="bg-white px-4 py-16 md:px-16 md:py-20">
       <div className="mx-auto max-w-5xl rounded-2xl bg-[#F8F5F3] p-10 ring-1 ring-[#E8E9E9] md:p-14">
@@ -21,6 +25,12 @@ export const AIConversationsCalloutV3 = ({ personaCopy }: Props) => {
             </h2>
             <p className="mb-3 text-base leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">
               {personaCopy.aiConversationsBody}
+            </p>
+            {/* One-line reassurance instead of a full AI pricing table —
+                we don't want to commit to specific top-up prices on the
+                page until they're final. */}
+            <p className="mb-3 text-sm text-[#455150] ltr:font-montserrat rtl:font-cairo">
+              {shared.aiTopUpReassurance}
             </p>
             <p className="text-xs italic text-[#586968] ltr:font-montserrat rtl:font-cairo">
               {personaCopy.aiCreditsFineprint}

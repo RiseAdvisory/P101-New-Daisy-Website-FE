@@ -37,6 +37,15 @@ describe('PricingV3Client', () => {
       ).toBeInTheDocument();
     });
 
+    it('renders the "Pricing for:" persona-selector label', () => {
+      render(<PricingV3Client persona="business" locale="en" />);
+      expect(screen.getByText(/Pricing for:/i)).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: 'Businesses' })).toBeInTheDocument();
+      expect(
+        screen.getByRole('button', { name: 'Solo Professionals' }),
+      ).toBeInTheDocument();
+    });
+
     it('renders renamed tier display names (Starter Business / Growing Team / Multi-Location)', () => {
       render(<PricingV3Client persona="business" locale="en" />);
       expect(screen.getAllByText('Starter Business').length).toBeGreaterThan(0);
@@ -44,11 +53,30 @@ describe('PricingV3Client', () => {
       expect(screen.getAllByText('Multi-Location').length).toBeGreaterThan(0);
     });
 
-    it('renders the "0% Commission on Your Existing Clients" callout', () => {
+    it('renders outcome-driven plan descriptions instead of "Choose this if"', () => {
       render(<PricingV3Client persona="business" locale="en" />);
       expect(
-        screen.getByText(/0% Commission on Your Existing Clients/i),
+        screen.getByText(
+          /Get your business online with a branded booking site, team calendar/i,
+        ),
       ).toBeInTheDocument();
+      expect(screen.queryByText(/^Choose this if:/i)).not.toBeInTheDocument();
+    });
+
+    it('renders the updated trial pill copy', () => {
+      render(<PricingV3Client persona="business" locale="en" />);
+      expect(
+        screen.getAllByText(/No card required to start/i).length,
+      ).toBeGreaterThan(0);
+    });
+
+    it('renders the "0% Commission on Your Existing Clients" callout', () => {
+      render(<PricingV3Client persona="business" locale="en" />);
+      // The phrase appears in the commission callout heading AND in the
+      // HowItWorks card 3 body — assert that AT LEAST one match exists.
+      expect(
+        screen.getAllByText(/0% Commission on Your Existing Clients/i).length,
+      ).toBeGreaterThan(0);
     });
 
     it('renders the "How Daisy Pricing Works" section', () => {
@@ -58,24 +86,24 @@ describe('PricingV3Client', () => {
       ).toBeInTheDocument();
     });
 
-    it('renders the "AI Conversations" callout (not "credits" first)', () => {
+    it('renders the "AI Conversations" callout with the pay-as-you-go reassurance line', () => {
       render(<PricingV3Client persona="business" locale="en" />);
+      // "Around 50 AI receptionist conversations" appears on the cards
+      // too, so use getAllByText for the headline phrase.
       expect(
-        screen.getByText(/Around 50 AI Receptionist Conversations/i),
+        screen.getAllByText(/Around 50 AI Receptionist Conversations/i).length,
+      ).toBeGreaterThan(0);
+      expect(
+        screen.getByText(
+          /Additional AI usage is available through pay-as-you-go top-ups/i,
+        ),
       ).toBeInTheDocument();
     });
 
-    it('renders the business-only sales CTA', () => {
+    it('renders the persona-aware final CTA headline', () => {
       render(<PricingV3Client persona="business" locale="en" />);
       expect(
-        screen.getByText(/Need More Locations, Staff, or Custom AI Workflows/i),
-      ).toBeInTheDocument();
-    });
-
-    it('renders the business reassurance section', () => {
-      render(<PricingV3Client persona="business" locale="en" />);
-      expect(
-        screen.getByText('Built for Owners, Managers, and Reception Teams'),
+        screen.getByText('Ready to Run Your Business With Daisy?'),
       ).toBeInTheDocument();
     });
 
@@ -106,6 +134,15 @@ describe('PricingV3Client', () => {
       expect(screen.getAllByText('Pro Plus').length).toBeGreaterThan(0);
     });
 
+    it('renders the solo outcome description', () => {
+      render(<PricingV3Client persona="professional" locale="en" />);
+      expect(
+        screen.getByText(
+          /Create a professional booking site and manage appointments/i,
+        ),
+      ).toBeInTheDocument();
+    });
+
     it('renders the "0% Commission on Your Own Clients" variant for solo', () => {
       render(<PricingV3Client persona="professional" locale="en" />);
       expect(
@@ -113,17 +150,10 @@ describe('PricingV3Client', () => {
       ).toBeInTheDocument();
     });
 
-    it('does NOT render the business-only sales CTA', () => {
+    it('renders the persona-aware final CTA headline', () => {
       render(<PricingV3Client persona="professional" locale="en" />);
       expect(
-        screen.queryByText(/Need More Locations, Staff, or Custom AI Workflows/i),
-      ).not.toBeInTheDocument();
-    });
-
-    it('renders the solo reassurance section', () => {
-      render(<PricingV3Client persona="professional" locale="en" />);
-      expect(
-        screen.getByText('Look Professional Even If You Work Independently'),
+        screen.getByText('Ready to Get Booked With Daisy?'),
       ).toBeInTheDocument();
     });
 
@@ -136,15 +166,10 @@ describe('PricingV3Client', () => {
   });
 
   describe('shared behavior', () => {
-    it('renders the "Why Daisy is different" comparison table', () => {
-      render(<PricingV3Client persona="business" locale="en" />);
-      expect(screen.getByText('More Than Booking Software')).toBeInTheDocument();
-    });
-
-    it('renders the AI usage example section', () => {
+    it('renders the payment-processing-fees FAQ', () => {
       render(<PricingV3Client persona="business" locale="en" />);
       expect(
-        screen.getByText(/What Happens After the Included AI Conversations/i),
+        screen.getByText(/Are Payment Processing Fees Included\?/i),
       ).toBeInTheDocument();
     });
 
@@ -164,6 +189,19 @@ describe('PricingV3Client', () => {
       expect(screen.getByText('AI Receptionist')).toBeInTheDocument();
       expect(screen.getByText('Growth')).toBeInTheDocument();
       expect(screen.getByText('Setup')).toBeInTheDocument();
+    });
+
+    it('does NOT render the removed standalone "Why Daisy" or reassurance sections', () => {
+      render(<PricingV3Client persona="business" locale="en" />);
+      expect(
+        screen.queryByText('More Than Booking Software'),
+      ).not.toBeInTheDocument();
+      expect(
+        screen.queryByText('Built for Owners, Managers, and Reception Teams'),
+      ).not.toBeInTheDocument();
+      expect(
+        screen.queryByText(/Need More Locations, Staff, or Custom AI Workflows/i),
+      ).not.toBeInTheDocument();
     });
 
     it('persists the billing period choice across remounts via localStorage', () => {
