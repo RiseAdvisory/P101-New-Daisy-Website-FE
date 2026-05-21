@@ -30,7 +30,7 @@ export const BUSINESS_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'basic',
       title: 'Basic',
       oneLiner:
-        'Just opened or running solo with a couple of assistants. 1 to 5 chairs.',
+        'Just starting out and building a solid customer base while growing your presence as a professional service business.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -47,7 +47,7 @@ export const BUSINESS_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'growth',
       title: 'Growth',
       oneLiner:
-        '6 to 10 chairs across 1 or 2 branches, ready to grow bookings online and accept payments.',
+        'An experienced business owner ready to deliver exceptional customer experiences and grow your client base online.',
       monthlyPrice: 150,
       annualTotal: 1500,
       annualPerMonth: 125,
@@ -66,7 +66,7 @@ export const BUSINESS_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'business',
       title: 'Business',
       oneLiner:
-        '11+ chairs or 3+ branches that want AI to run the front desk and refine the brand voice.',
+        'Businesses with multiple workspaces or locations, excellence-oriented in service and customer experience.',
       monthlyPrice: 250,
       annualTotal: 2500,
       annualPerMonth: 208,
@@ -86,7 +86,7 @@ export const BUSINESS_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'basic',
       title: 'الأساسية',
       oneLiner:
-        'افتتحت حديثاً أو تعمل بمفردك مع مساعدَين. من 1 إلى 5 كراسٍ.',
+        'في بداية الطريق، تبني قاعدة عملاء قوية وتنمّي حضورك كمشروع خدمات احترافي.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -103,7 +103,7 @@ export const BUSINESS_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'growth',
       title: 'النمو',
       oneLiner:
-        'من 6 إلى 10 كراسٍ عبر فرع أو فرعين، جاهز لزيادة الحجوزات أونلاين وقبول المدفوعات.',
+        'صاحب أعمال خبير جاهز لتقديم تجارب استثنائية للعملاء وتنمية قاعدة عملائك أونلاين.',
       monthlyPrice: 150,
       annualTotal: 1500,
       annualPerMonth: 125,
@@ -122,7 +122,7 @@ export const BUSINESS_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'business',
       title: 'الأعمال',
       oneLiner:
-        '11 كرسياً أو أكثر أو 3 فروع أو أكثر تريد ذكاءً اصطناعياً يدير الاستقبال ويصقل صوت العلامة.',
+        'أعمال بمساحات عمل أو فروع متعددة، تتبنى التميّز في الخدمة وتجربة العملاء.',
       monthlyPrice: 250,
       annualTotal: 2500,
       annualPerMonth: 208,

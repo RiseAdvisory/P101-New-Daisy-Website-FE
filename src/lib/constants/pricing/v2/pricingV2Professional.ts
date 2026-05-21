@@ -13,7 +13,7 @@ export const PROFESSIONAL_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'basic',
       title: 'Starter',
       oneLiner:
-        'Just starting out, building your personal brand and client base as a solo provider.',
+        'Just starting out and building a solid client base while growing your personal brand as a professional service provider.',
       monthlyPrice: 25,
       annualTotal: 250,
       annualPerMonth: 21,
@@ -30,7 +30,7 @@ export const PROFESSIONAL_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'growth',
       title: 'Professional',
       oneLiner:
-        'Experienced solo professional ready to accept online payments and grow with marketplace visibility.',
+        'An experienced solo professional ready to deliver exceptional client experiences and grow with marketplace visibility.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -49,7 +49,7 @@ export const PROFESSIONAL_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'business',
       title: 'Elite',
       oneLiner:
-        'Solo professional operating across 2 workspaces or countries, with AI fine-tuned to your voice.',
+        'An established solo professional operating across multiple workspaces or countries, excellence-oriented at every client touchpoint.',
       monthlyPrice: 100,
       annualTotal: 1000,
       annualPerMonth: 84,
@@ -69,7 +69,7 @@ export const PROFESSIONAL_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'basic',
       title: 'المبتدئ',
       oneLiner:
-        'بدأت للتو، تبني علامتك الشخصية وقاعدة عملائك كمقدم خدمات مستقل.',
+        'في بداية الطريق، تبني قاعدة عملاء قوية وتنمّي علامتك الشخصية كمقدم خدمات احترافي.',
       monthlyPrice: 25,
       annualTotal: 250,
       annualPerMonth: 21,
@@ -86,7 +86,7 @@ export const PROFESSIONAL_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'growth',
       title: 'المحترف',
       oneLiner:
-        'محترف مستقل ذو خبرة جاهز لقبول المدفوعات أونلاين والنمو مع الظهور في السوق.',
+        'محترف مستقل ذو خبرة جاهز لتقديم تجارب استثنائية للعملاء والنمو مع الظهور في السوق.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -105,7 +105,7 @@ export const PROFESSIONAL_TIERS: I18nContent<PricingTierV2[]> = {
       id: 'business',
       title: 'النخبة',
       oneLiner:
-        'محترف مستقل يعمل عبر مساحتي عمل أو دولتين، مع ذكاء اصطناعي مُصقل ليناسب صوتك.',
+        'محترف مستقل راسخ يعمل عبر مساحات عمل أو دول متعددة، يتبنى التميّز في كل نقطة تواصل مع عملائه.',
       monthlyPrice: 100,
       annualTotal: 1000,
       annualPerMonth: 84,

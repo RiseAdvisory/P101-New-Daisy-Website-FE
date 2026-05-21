@@ -20,34 +20,36 @@ export const PricingCardV2 = ({ tier, billingPeriod, locale, ui }: Props) => {
   return (
     <div
       className={cn(
-        'relative flex flex-col rounded-2xl border bg-white p-8 transition-shadow',
+        'relative flex flex-col rounded-2xl border bg-white p-10 transition-shadow',
         popular
           ? 'border-[#8B6554] shadow-lg ring-1 ring-[#8B6554]/30'
           : 'border-[#E8E9E9] shadow-sm hover:shadow-md',
       )}
     >
       {popular && (
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#8B6554] px-4 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#8B6554] px-4 py-1 text-xs font-semibold uppercase tracking-wide text-white ltr:font-montserrat rtl:font-cairo">
           {ui.mostPopularBadge}
         </div>
       )}
 
-      <div className="mb-2 text-sm font-semibold uppercase tracking-wide text-[#8B6554]">
+      <div className="mb-3 text-sm font-semibold uppercase tracking-wide text-[#8B6554] ltr:font-montserrat rtl:font-cairo">
         {tier.title}
       </div>
 
-      <p className="mb-6 min-h-[3.5rem] text-sm leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">
+      <p className="mb-8 min-h-[5rem] text-sm leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">
         {tier.oneLiner}
       </p>
 
       <div className="mb-1 flex items-baseline gap-2">
-        <span className="text-5xl font-bold text-[#172524]">
+        <span className="text-5xl font-bold text-[#172524] ltr:font-montserrat rtl:font-cairo">
           ${displayPrice}
         </span>
-        <span className="text-base text-[#455150]">{ui.cardPerMonth}</span>
+        <span className="text-base text-[#455150] ltr:font-montserrat rtl:font-cairo">
+          {ui.cardPerMonth}
+        </span>
       </div>
 
-      <p className="mb-6 text-xs text-[#455150] ltr:font-montserrat rtl:font-cairo">
+      <p className="mb-7 text-xs text-[#455150] ltr:font-montserrat rtl:font-cairo">
         {showAnnual
           ? ui.cardBilledAnnually(tier.annualTotal, tier.annualSavingsLine)
           : ui.cardBilledMonthly}
@@ -56,7 +58,7 @@ export const PricingCardV2 = ({ tier, billingPeriod, locale, ui }: Props) => {
       <Link
         href={localePath('/get-the-app', locale)}
         className={cn(
-          'mb-6 block rounded-lg py-3 text-center text-sm font-semibold transition-colors',
+          'mb-8 block rounded-lg py-3 text-center text-sm font-semibold transition-colors ltr:font-montserrat rtl:font-cairo',
           popular
             ? 'bg-[#172524] text-white hover:bg-[#2a3937]'
             : 'border border-[#172524] text-[#172524] hover:bg-[#F8F5F3]',
@@ -65,7 +67,7 @@ export const PricingCardV2 = ({ tier, billingPeriod, locale, ui }: Props) => {
         {ui.cardCtaLabel}
       </Link>
 
-      <ul className="space-y-3">
+      <ul className="space-y-4">
         {tier.cardHighlights.map((feature, i) => (
           <li
             key={i}

@@ -69,7 +69,7 @@ export const PricingV2Client = ({ persona, locale }: Props) => {
       <ComparisonTableV2 categories={categories} tiers={tiers} ui={ui} />
 
       {/* Cross-link to other persona */}
-      <section className="bg-white px-4 py-12 md:px-16">
+      <section className="bg-white px-4 py-16 md:px-16 md:py-20">
         <div className="mx-auto max-w-3xl text-center">
           <Link
             href={localePath(`/pricing-v2/${otherPersona}`, locale)}
@@ -85,17 +85,17 @@ export const PricingV2Client = ({ persona, locale }: Props) => {
       <PricingFAQV2 locale={locale} ui={ui} />
 
       {/* Final CTA */}
-      <section className="bg-white px-4 pb-20 md:px-16">
-        <div className="mx-auto max-w-3xl rounded-2xl bg-primary px-8 py-12 text-center md:px-16 md:py-16">
-          <h2 className="text-3xl font-bold leading-tight text-white md:text-4xl">
+      <section className="bg-white px-4 pb-24 md:px-16">
+        <div className="mx-auto max-w-3xl rounded-2xl bg-primary px-10 py-16 text-center md:px-16 md:py-20">
+          <h2 className="text-3xl font-bold leading-tight text-white ltr:font-montserrat rtl:font-cairo md:text-4xl">
             {ui.finalCtaHeadline}
           </h2>
-          <p className="mt-4 text-base text-white/80 ltr:font-montserrat rtl:font-cairo">
+          <p className="mx-auto mt-5 max-w-xl text-base text-white/80 ltr:font-montserrat rtl:font-cairo">
             {ui.finalCtaBody}
           </p>
           <Link
             href={localePath('/get-the-app', locale)}
-            className="mt-8 inline-block rounded-lg bg-white px-10 py-3.5 text-base font-semibold text-[#172524] transition-colors hover:bg-[#F8F5F3]"
+            className="mt-10 inline-block rounded-lg bg-white px-10 py-3.5 text-base font-semibold text-[#172524] transition-colors hover:bg-[#F8F5F3] ltr:font-montserrat rtl:font-cairo"
           >
             {ui.finalCtaButton}
           </Link>
