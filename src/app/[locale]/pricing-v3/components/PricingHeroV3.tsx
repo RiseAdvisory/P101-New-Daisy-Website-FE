@@ -50,32 +50,46 @@ export const PricingHeroV3 = ({
           </p>
         </div>
 
-        {/* Persona selector */}
-        <div className="mx-auto mb-8 flex w-fit gap-1 rounded-xl border border-white/15 bg-white/5 p-1 backdrop-blur-sm">
-          {(
-            [
-              { id: 'business' as const, label: shared.personaToggleBusiness },
-              {
-                id: 'professional' as const,
-                label: shared.personaToggleProfessional,
-              },
-            ]
-          ).map((option) => (
-            <button
-              key={option.id}
-              type="button"
-              onClick={() => switchPersona(option.id)}
-              aria-pressed={persona === option.id}
-              className={cn(
-                'rounded-lg px-4 py-2 text-sm font-semibold transition-colors ltr:font-montserrat rtl:font-cairo',
-                persona === option.id
-                  ? 'bg-white text-[#172524]'
-                  : 'text-white/70 hover:bg-white/10 hover:text-white',
-              )}
-            >
-              {option.label}
-            </button>
-          ))}
+        {/* Persona selector — preceded by an explicit "Pricing for:" label
+            so the two buttons read as a choice rather than the confusing
+            phrase "Business Professional". */}
+        <div className="mx-auto mb-8 flex w-fit flex-col items-center gap-2 sm:flex-row sm:gap-4">
+          <span
+            id="persona-selector-label"
+            className="text-sm font-medium text-white/70 ltr:font-montserrat rtl:font-cairo"
+          >
+            {shared.personaSelectorLabel}:
+          </span>
+          <div
+            role="group"
+            aria-labelledby="persona-selector-label"
+            className="flex w-fit gap-1 rounded-xl border border-white/15 bg-white/5 p-1 backdrop-blur-sm"
+          >
+            {(
+              [
+                { id: 'business' as const, label: shared.personaToggleBusiness },
+                {
+                  id: 'professional' as const,
+                  label: shared.personaToggleProfessional,
+                },
+              ]
+            ).map((option) => (
+              <button
+                key={option.id}
+                type="button"
+                onClick={() => switchPersona(option.id)}
+                aria-pressed={persona === option.id}
+                className={cn(
+                  'rounded-lg px-4 py-2 text-sm font-semibold transition-colors ltr:font-montserrat rtl:font-cairo',
+                  persona === option.id
+                    ? 'bg-white text-[#172524]'
+                    : 'text-white/70 hover:bg-white/10 hover:text-white',
+                )}
+              >
+                {option.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Billing toggle */}

@@ -54,10 +54,7 @@ export const PricingCardV3 = ({
       </p>
 
       <p className="mb-6 min-h-[50px] text-sm leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">
-        <span className="font-semibold text-[#172524]">
-          {shared.cardChooseThisIfLabel}:
-        </span>{' '}
-        {tier.chooseThisIf.replace(/^Choose this if /i, '')}
+        {tier.description}
       </p>
 
       <div className="mb-1 flex items-baseline gap-2">
