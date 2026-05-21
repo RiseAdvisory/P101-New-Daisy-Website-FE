@@ -171,6 +171,49 @@ describe('ComparisonTableV2', () => {
     }
   });
 
+  describe('mobile swipe hint', () => {
+    it('renders the swipe hint text', () => {
+      render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
+      expect(
+        screen.getByText(UI_STRINGS.en.compareSwipeHint),
+      ).toBeInTheDocument();
+    });
+
+    it('positions the swipe hint sticky to the viewport on mobile (top-[100px] z-30)', () => {
+      // The hint pins below the fixed 100px site header while the user
+      // scrolls vertically through the table content.
+      render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
+      const hint = screen.getByText(UI_STRINGS.en.compareSwipeHint);
+      expect(hint.className).toMatch(/sticky/);
+      expect(hint.className).toMatch(/top-\[100px\]/);
+      // z-index high enough to sit above table rows during scroll
+      expect(hint.className).toMatch(/z-30/);
+    });
+
+    it('hides the swipe hint on md+ viewports', () => {
+      // No horizontal scroll is needed on desktop, so the hint is mobile-only.
+      render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
+      const hint = screen.getByText(UI_STRINGS.en.compareSwipeHint);
+      expect(hint.className).toMatch(/md:hidden/);
+    });
+
+    it('uses an opaque-enough background so the hint is legible when pinned over table rows', () => {
+      render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.en} />);
+      const hint = screen.getByText(UI_STRINGS.en.compareSwipeHint);
+      // bg-white/95 + backdrop-blur — the hint must remain readable as
+      // table rows scroll behind it.
+      expect(hint.className).toMatch(/bg-white\/95/);
+      expect(hint.className).toMatch(/backdrop-blur/);
+    });
+
+    it('renders the Arabic swipe hint copy when the Arabic UI bundle is passed', () => {
+      render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.ar} />);
+      expect(
+        screen.getByText(UI_STRINGS.ar.compareSwipeHint),
+      ).toBeInTheDocument();
+    });
+  });
+
   it('renders the Arabic UI strings when given the Arabic bundle', () => {
     render(<ComparisonTableV2 categories={categories} tiers={tiers} ui={UI_STRINGS.ar} />);
     expect(screen.getByText(UI_STRINGS.ar.compareHeading)).toBeInTheDocument();
