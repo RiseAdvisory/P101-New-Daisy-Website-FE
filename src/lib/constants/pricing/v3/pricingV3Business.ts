@@ -32,7 +32,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'Basic',
       bestFor: 'Best for small teams',
       description:
-        'Get your business online with a branded booking site, team calendar, payments, and customer messaging in one system.',
+        'Get your business online with a branded booking site, team calendar, payments, and customer messaging in one system so you can start accepting bookings today without piecing together separate tools.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -51,7 +51,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'Growth',
       bestFor: 'Best for active salons and spas',
       description:
-        'Run daily operations with stronger booking, payments, reminders, reviews, and customer follow-up tools.',
+        'Run daily operations with stronger booking, payments, reminders, reviews, and customer follow-up tools that help your salon retain regulars and serve more clients each week with less manual effort.',
       monthlyPrice: 150,
       annualTotal: 1500,
       annualPerMonth: 125,
@@ -63,7 +63,6 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
         'Online payments + cancellation policy',
         'Automated reminders & prepaid service packages',
         'Detailed reviews & feedback',
-        'Includes 50 AI receptionist conversations',
         'Priority customer support',
       ],
     },
@@ -72,7 +71,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'Business',
       bestFor: 'Best for growing businesses',
       description:
-        'Manage multiple branches with advanced analytics, AI customization, data migration, and assisted onboarding.',
+        'Manage multiple branches with advanced analytics, AI customization, data migration, and assisted onboarding built for owners running larger teams across several locations who need automation that scales with them.',
       monthlyPrice: 250,
       annualTotal: 2500,
       annualPerMonth: 208,
@@ -93,7 +92,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'الأساسية',
       bestFor: 'الأنسب للفرق الصغيرة',
       description:
-        'ابدأ نشاطك على الإنترنت بموقع حجوزات بعلامتك التجارية، وتقويم للفريق، ومدفوعات، ومراسلات العملاء، كل ذلك في نظام واحد.',
+        'ابدأ نشاطك على الإنترنت بموقع حجوزات بعلامتك التجارية، وتقويم للفريق، ومدفوعات، ومراسلات العملاء في نظام واحد، لتتمكن من قبول الحجوزات اليوم دون الحاجة لربط أدوات متفرقة.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -112,7 +111,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'النمو',
       bestFor: 'الأنسب للصالونات والمنتجعات النشطة',
       description:
-        'أدر عملياتك اليومية بأدوات أقوى للحجز والدفع والتذكيرات والتقييمات ومتابعة العملاء.',
+        'أدر عملياتك اليومية بأدوات أقوى للحجز والدفع والتذكيرات والتقييمات ومتابعة العملاء، تساعدك على الاحتفاظ بعملائك الدائمين وخدمة المزيد منهم كل أسبوع بجهد أقل.',
       monthlyPrice: 150,
       annualTotal: 1500,
       annualPerMonth: 125,
@@ -124,7 +123,6 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
         'مدفوعات أونلاين + سياسة إلغاء',
         'تذكيرات آلية وباقات خدمات مدفوعة مسبقاً',
         'تقييمات وملاحظات تفصيلية',
-        'يشمل 50 محادثة لموظف الاستقبال الذكي',
         'دعم عملاء بأولوية',
       ],
     },
@@ -133,7 +131,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'الأعمال',
       bestFor: 'الأنسب للأعمال النامية',
       description:
-        'أدر فروعك المتعددة بتحليلات متقدمة، وتخصيص للذكاء الاصطناعي، ونقل بيانات، وإعداد بمساعدة الفريق.',
+        'أدر فروعك المتعددة بتحليلات متقدمة، وتخصيص للذكاء الاصطناعي، ونقل بيانات، وإعداد بمساعدة الفريق، صُمم لأصحاب الفرق الأكبر العاملة في مواقع متعددة الذين يحتاجون إلى أتمتة تنمو معهم.',
       monthlyPrice: 250,
       annualTotal: 2500,
       annualPerMonth: 208,

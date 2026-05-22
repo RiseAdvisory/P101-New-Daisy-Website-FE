@@ -62,6 +62,11 @@ export interface SharedCopy {
   addOnsHeading: string;
   addOnsSubheading: string;
   faqHeading: string;
+  // Enterprise / "talk to sales" callout shown after the cards on the
+  // business persona only. Brings back the v1 Enterprise section.
+  enterpriseTitle: string;
+  enterpriseBody: string;
+  enterpriseButton: string;
 }
 
 export const SHARED_COPY: I18nContent<SharedCopy> = {
@@ -93,6 +98,10 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
     addOnsSubheading:
       'Extra capacity and services, billed alongside your subscription.',
     faqHeading: 'Frequently Asked Questions',
+    enterpriseTitle: 'Enterprise',
+    enterpriseBody:
+      'For multi-location businesses needing custom integrations, dedicated account management, volume discounts, and enterprise SLAs. Let us build a plan that fits your scale.',
+    enterpriseButton: 'Contact Us',
   },
   ar: {
     personaSelectorLabel: 'الأسعار لـ',
@@ -121,6 +130,10 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
     addOnsHeading: 'الإضافات',
     addOnsSubheading: 'سعة وخدمات إضافية، تُحتسب مع اشتراكك.',
     faqHeading: 'الأسئلة الشائعة',
+    enterpriseTitle: 'المؤسسات',
+    enterpriseBody:
+      'للشركات متعددة الفروع التي تحتاج تكاملات مخصصة، وإدارة حساب مخصصة، وخصومات على الحجم، واتفاقيات مستوى خدمة للمؤسسات. دعنا نبني خطة تناسب حجم أعمالك.',
+    enterpriseButton: 'اتصل بنا',
   },
 };
 
@@ -129,7 +142,7 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
 export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
   business: {
     en: {
-      heroHeadline: 'Plans for Booking, Payments, and AI Front Desk Support',
+      heroHeadline: 'Plans for Booking, Payments, and AI Receptionist Support',
       heroSubheadline:
         'Manage your team, bookings, payments, reviews, and customer messages in one platform, with an AI receptionist for WhatsApp, Instagram, and your booking site.',
       howItWorksTitle: 'How Daisy Pricing Works',
@@ -163,7 +176,7 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
         'Start your 14-day trial without a card, or book a demo if you want help choosing the right plan.',
     },
     ar: {
-      heroHeadline: 'خطط للحجوزات والمدفوعات ودعم الاستقبال الذكي',
+      heroHeadline: 'خطط للحجوزات والمدفوعات ودعم موظف الاستقبال الذكي',
       heroSubheadline:
         'أدر فريقك وحجوزاتك ومدفوعاتك وتقييماتك ورسائل عملائك في منصة واحدة، مع موظف استقبال ذكي لواتساب وإنستغرام وموقع حجوزاتك.',
       howItWorksTitle: 'كيف تعمل أسعار ديزي',

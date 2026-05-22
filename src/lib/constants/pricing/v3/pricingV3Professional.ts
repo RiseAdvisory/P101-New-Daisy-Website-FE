@@ -14,7 +14,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'Starter',
       bestFor: 'Best for getting started',
       description:
-        'Create a professional booking site and manage appointments from one place.',
+        'Create a professional booking site, manage appointments, accept payments, and present your services to clients from one place so you can stop juggling separate tools as you build your independent business.',
       monthlyPrice: 25,
       annualTotal: 250,
       annualPerMonth: 21,
@@ -35,7 +35,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'Professional',
       bestFor: 'Best for client growth',
       description:
-        'Add payments, reminders, reviews, and stronger client follow-up as your client base grows.',
+        'Add payments, reminders, reviews, and stronger client follow-up tools as your client base grows, so you spend more time delivering services and less time on admin work between appointments.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -45,7 +45,6 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
         'Online payments + cancellation policy',
         'Automated reminders & prepaid service packages',
         'Detailed reviews & feedback',
-        'Includes 50 AI receptionist conversations',
         'Priority customer support',
       ],
     },
@@ -54,7 +53,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'Elite',
       bestFor: 'Best for high-volume professionals',
       description:
-        'Use advanced tools, AI support, and growth features for higher booking volume.',
+        'Use advanced tools, AI support, and growth features built for high-volume professionals who handle many bookings each week and need automation, analytics, and a polished client experience that scales with them.',
       monthlyPrice: 100,
       annualTotal: 1000,
       annualPerMonth: 84,
@@ -74,7 +73,8 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       id: 'basic',
       displayName: 'المبتدئ',
       bestFor: 'الأنسب للبدء',
-      description: 'أنشئ موقع حجوزات احترافي وأدر مواعيدك من مكان واحد.',
+      description:
+        'أنشئ موقع حجوزات احترافي، وأدر مواعيدك، واقبل المدفوعات، واعرض خدماتك لعملائك من مكان واحد، حتى تتوقف عن استخدام أدوات متفرقة وأنت تبني نشاطك المستقل.',
       monthlyPrice: 25,
       annualTotal: 250,
       annualPerMonth: 21,
@@ -95,7 +95,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'المحترف',
       bestFor: 'الأنسب لنمو العملاء',
       description:
-        'أضف المدفوعات والتذكيرات والتقييمات ومتابعة أقوى للعملاء مع نمو قاعدة عملائك.',
+        'أضف المدفوعات والتذكيرات والتقييمات وأدوات متابعة أقوى للعملاء مع نمو قاعدة عملائك، لتقضي وقتاً أكبر في تقديم الخدمات ووقتاً أقل في المهام الإدارية بين المواعيد.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -105,7 +105,6 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
         'مدفوعات أونلاين + سياسة إلغاء',
         'تذكيرات آلية وباقات خدمات مدفوعة مسبقاً',
         'تقييمات وملاحظات تفصيلية',
-        'يشمل 50 محادثة لموظف الاستقبال الذكي',
         'دعم عملاء بأولوية',
       ],
     },
@@ -114,7 +113,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'النخبة',
       bestFor: 'الأنسب للمحترفين بحجم حجوزات عالٍ',
       description:
-        'استخدم أدوات متقدمة ودعم الذكاء الاصطناعي وميزات النمو لزيادة حجم الحجوزات.',
+        'استخدم أدوات متقدمة ودعم الذكاء الاصطناعي وميزات نمو صُممت للمحترفين الذين يتعاملون مع حجم حجوزات كبير كل أسبوع، ويحتاجون إلى أتمتة وتحليلات وتجربة عملاء راقية تنمو معهم.',
       monthlyPrice: 100,
       annualTotal: 1000,
       annualPerMonth: 84,
