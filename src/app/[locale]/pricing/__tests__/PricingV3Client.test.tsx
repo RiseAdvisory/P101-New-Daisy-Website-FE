@@ -68,9 +68,8 @@ describe('PricingV3Client', () => {
           /Get your business online with a branded booking site, team calendar/i,
         ),
       ).toBeInTheDocument();
-      // Growth description should mention retaining regulars (proves 3-line copy lands).
       expect(
-        screen.getByText(/help your salon retain regulars/i),
+        screen.getByText(/Run daily operations with stronger booking/i),
       ).toBeInTheDocument();
       expect(screen.queryByText(/^Choose this if:/i)).not.toBeInTheDocument();
     });

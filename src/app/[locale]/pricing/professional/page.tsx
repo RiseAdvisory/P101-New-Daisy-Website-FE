@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { localeAlternates } from '@/lib/utils/metadata';
-import { PricingPageClient } from '../PricingPageClient';
+import { PricingV3Client } from '../PricingV3Client';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
@@ -73,7 +73,7 @@ export default function PricingProfessionalPage({ params }: { params: { locale: 
           { name: 'Professional', url: '/pricing/professional' },
         ]}
       />
-      <PricingPageClient persona="professional" lang={params.locale} />
+      <PricingV3Client persona="professional" locale={params.locale} />
     </>
   );
 }

@@ -1,5 +1,5 @@
 /**
- * Shared types for the /pricing-v3 comparison table.
+ * Shared types for the /pricing comparison table.
  */
 
 export interface FeatureCategoryRow {

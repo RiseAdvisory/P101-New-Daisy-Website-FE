@@ -1,5 +1,5 @@
 /**
- * Business tier data for /pricing-v3 (EN + AR).
+ * Business tier data for /pricing (EN + AR).
  * Tier names match the live /pricing page: Basic / Growth / Business.
  * Each tier carries a "best for" tagline and an outcome-driven description
  * sentence (what the buyer gets, not how to decide).
@@ -32,7 +32,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'Basic',
       bestFor: 'Best for small teams',
       description:
-        'Get your business online with a branded booking site, team calendar, payments, and customer messaging in one system so you can start accepting bookings today without piecing together separate tools.',
+        'Get your business online with a branded booking site, team calendar, payments, and customer messaging in one system.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -51,7 +51,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'Growth',
       bestFor: 'Best for active salons and spas',
       description:
-        'Run daily operations with stronger booking, payments, reminders, reviews, and customer follow-up tools that help your salon retain regulars and serve more clients each week with less manual effort.',
+        'Run daily operations with stronger booking, payments, reminders, reviews, and customer follow-up tools for active salons.',
       monthlyPrice: 150,
       annualTotal: 1500,
       annualPerMonth: 125,
@@ -71,7 +71,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'Business',
       bestFor: 'Best for growing businesses',
       description:
-        'Manage multiple branches with advanced analytics, AI customization, data migration, and assisted onboarding built for owners running larger teams across several locations who need automation that scales with them.',
+        'Manage multiple branches with advanced analytics, AI customization, data migration, and assisted onboarding for larger teams.',
       monthlyPrice: 250,
       annualTotal: 2500,
       annualPerMonth: 208,
@@ -92,7 +92,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'الأساسية',
       bestFor: 'الأنسب للفرق الصغيرة',
       description:
-        'ابدأ نشاطك على الإنترنت بموقع حجوزات بعلامتك التجارية، وتقويم للفريق، ومدفوعات، ومراسلات العملاء في نظام واحد، لتتمكن من قبول الحجوزات اليوم دون الحاجة لربط أدوات متفرقة.',
+        'ابدأ نشاطك على الإنترنت بموقع حجوزات بعلامتك التجارية، وتقويم للفريق، ومدفوعات، ومراسلات العملاء في نظام واحد.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -111,7 +111,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'النمو',
       bestFor: 'الأنسب للصالونات والمنتجعات النشطة',
       description:
-        'أدر عملياتك اليومية بأدوات أقوى للحجز والدفع والتذكيرات والتقييمات ومتابعة العملاء، تساعدك على الاحتفاظ بعملائك الدائمين وخدمة المزيد منهم كل أسبوع بجهد أقل.',
+        'أدر عملياتك اليومية بأدوات أقوى للحجز والدفع والتذكيرات والتقييمات ومتابعة العملاء، مصممة للصالونات النشطة.',
       monthlyPrice: 150,
       annualTotal: 1500,
       annualPerMonth: 125,
@@ -131,7 +131,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'الأعمال',
       bestFor: 'الأنسب للأعمال النامية',
       description:
-        'أدر فروعك المتعددة بتحليلات متقدمة، وتخصيص للذكاء الاصطناعي، ونقل بيانات، وإعداد بمساعدة الفريق، صُمم لأصحاب الفرق الأكبر العاملة في مواقع متعددة الذين يحتاجون إلى أتمتة تنمو معهم.',
+        'أدر فروعك المتعددة بتحليلات متقدمة، وتخصيص للذكاء الاصطناعي، ونقل بيانات، وإعداد بمساعدة الفريق للفرق الأكبر.',
       monthlyPrice: 250,
       annualTotal: 2500,
       annualPerMonth: 208,
