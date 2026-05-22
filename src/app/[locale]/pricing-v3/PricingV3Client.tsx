@@ -10,6 +10,7 @@ import { AIConversationsCalloutV3 } from './components/AIConversationsCalloutV3'
 import { ComparisonTableV3 } from './components/ComparisonTableV3';
 import { AddOnsTableV3 } from './components/AddOnsTableV3';
 import { PricingFAQV3 } from './components/PricingFAQV3';
+import { EnterpriseSectionV3 } from './components/EnterpriseSectionV3';
 import {
   BUSINESS_TIERS_V3,
   BUSINESS_COMPARISON_DEFAULT_V3,
@@ -85,6 +86,12 @@ export const PricingV3Client = ({ persona, locale }: Props) => {
         shared={shared}
         personaCopy={personaCopy}
       />
+
+      {/* Enterprise / talk-to-sales is business-only, sits right under
+          the hero just like the live /pricing page. */}
+      {persona === 'business' && (
+        <EnterpriseSectionV3 locale={locale} shared={shared} />
+      )}
 
       <HowItWorksV3 personaCopy={personaCopy} />
 

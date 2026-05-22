@@ -40,7 +40,10 @@ export const PricingHeroV3 = ({
 
   return (
     <section className="bg-primary px-4 pb-24 pt-20 md:px-16 md:pb-28 md:pt-[100px]">
-      <div className="mx-auto max-w-6xl">
+      {/* No max-width here. Matches the live /pricing layout which lets
+          the three cards breathe across the full container instead of
+          being constrained to a narrower band. */}
+      <div className="mx-auto w-full">
         <div className="mb-12 text-center">
           <h1 className="text-[32px] font-semibold leading-10 text-white md:text-[48px] md:leading-[60px]">
             {personaCopy.heroHeadline}

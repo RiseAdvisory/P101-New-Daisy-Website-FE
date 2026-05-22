@@ -30,11 +30,17 @@ describe('PricingV3Client', () => {
   });
 
   describe('business persona', () => {
-    it('renders the pricing-specific hero headline', () => {
+    it('renders the pricing-specific hero headline using consistent "AI Receptionist" terminology', () => {
       render(<PricingV3Client persona="business" locale="en" />);
       expect(
-        screen.getByText(/Plans for Booking, Payments, and AI Front Desk Support/i),
+        screen.getByText(
+          /Plans for Booking, Payments, and AI Receptionist Support/i,
+        ),
       ).toBeInTheDocument();
+      // Should NOT use the old "AI Front Desk Support" wording.
+      expect(
+        screen.queryByText(/AI Front Desk Support/i),
+      ).not.toBeInTheDocument();
     });
 
     it('renders the "Pricing for:" persona-selector label', () => {
@@ -62,6 +68,10 @@ describe('PricingV3Client', () => {
           /Get your business online with a branded booking site, team calendar/i,
         ),
       ).toBeInTheDocument();
+      // Growth description should mention retaining regulars (proves 3-line copy lands).
+      expect(
+        screen.getByText(/help your salon retain regulars/i),
+      ).toBeInTheDocument();
       expect(screen.queryByText(/^Choose this if:/i)).not.toBeInTheDocument();
     });
 
@@ -72,11 +82,19 @@ describe('PricingV3Client', () => {
       ).toBeGreaterThan(0);
     });
 
-    it('renders "Includes 50 AI receptionist conversations" on the cards', () => {
+    it('renders "Includes 50 AI receptionist conversations" only on the Basic tier (no duplication on Growth)', () => {
       render(<PricingV3Client persona="business" locale="en" />);
-      expect(
-        screen.getAllByText(/Includes 50 AI receptionist conversations/i).length,
-      ).toBeGreaterThan(0);
+      // Two expected hits: 1 on the Basic card bullet, 1 in the AI
+      // Conversations callout title ("Every Plan Includes 50 AI
+      // Receptionist Conversations"). Growth inherits via "Everything
+      // in Basic" so the bullet is intentionally dropped from it; if it
+      // came back, this count would be 3.
+      const matches = screen.getAllByText(
+        /Includes 50 AI receptionist conversations/i,
+      );
+      expect(matches.length).toBe(2);
+      // Growth card shows "Everything in Basic" instead.
+      expect(screen.getByText('Everything in Basic')).toBeInTheDocument();
     });
 
     it('does NOT render the "Available after quality review" card section', () => {
@@ -119,6 +137,19 @@ describe('PricingV3Client', () => {
       ).toBeInTheDocument();
     });
 
+    it('renders the business-only Enterprise / Contact Us section', () => {
+      render(<PricingV3Client persona="business" locale="en" />);
+      expect(
+        screen.getByRole('heading', { name: /^Enterprise$/i }),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByText(
+          /For multi-location businesses needing custom integrations/i,
+        ),
+      ).toBeInTheDocument();
+      expect(screen.getByText('Contact Us')).toBeInTheDocument();
+    });
+
     it('uses the dynamic "Start Business Trial" CTA', () => {
       render(<PricingV3Client persona="business" locale="en" />);
       expect(
@@ -137,6 +168,13 @@ describe('PricingV3Client', () => {
       ).toBeInTheDocument();
     });
 
+    it('does NOT render the business-only Enterprise section', () => {
+      render(<PricingV3Client persona="professional" locale="en" />);
+      expect(
+        screen.queryByRole('heading', { name: /^Enterprise$/i }),
+      ).not.toBeInTheDocument();
+    });
+
     it('renders v2-aligned tier display names (Starter / Professional / Elite)', () => {
       render(<PricingV3Client persona="professional" locale="en" />);
       expect(screen.getAllByText('Starter').length).toBeGreaterThan(0);
@@ -150,7 +188,7 @@ describe('PricingV3Client', () => {
       render(<PricingV3Client persona="professional" locale="en" />);
       expect(
         screen.getByText(
-          /Create a professional booking site and manage appointments/i,
+          /Create a professional booking site, manage appointments, accept payments/i,
         ),
       ).toBeInTheDocument();
     });
