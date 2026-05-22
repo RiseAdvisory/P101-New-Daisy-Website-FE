@@ -51,9 +51,7 @@ export interface SharedCopy {
   cardBilledAnnuallyLine1: (annualTotal: number) => string;
   cardBestForLabel: string;
   cardIncludedHeader: string;
-  cardConditionalHeader: string;
-  cardConditionalNote: string;
-  // Single reassurance line that replaces the verbose AI usage table in v3.
+  // Single reassurance line that replaces the verbose AI usage table.
   aiTopUpReassurance: string;
   compareHeading: string;
   compareSubheading: string;
@@ -64,7 +62,6 @@ export interface SharedCopy {
   addOnsHeading: string;
   addOnsSubheading: string;
   faqHeading: string;
-  marketplaceFootnote: string;
 }
 
 export const SHARED_COPY: I18nContent<SharedCopy> = {
@@ -84,9 +81,6 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
       `Billed annually at $${annualTotal}.`,
     cardBestForLabel: 'Best for',
     cardIncludedHeader: 'Included with your plan',
-    cardConditionalHeader: 'Available after quality review',
-    cardConditionalNote:
-      'Marketplace visibility, featured placement, and cashback promotions become available after a service-quality review.',
     aiTopUpReassurance:
       'Additional AI usage is available through pay-as-you-go top-ups, and pricing is shown before purchase.',
     compareHeading: 'Compare Every Feature',
@@ -99,8 +93,6 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
     addOnsSubheading:
       'Extra capacity and services, billed alongside your subscription.',
     faqHeading: 'Frequently Asked Questions',
-    marketplaceFootnote:
-      '* Marketplace visibility, cashback promotions, and featured placement require a service-quality review.',
   },
   ar: {
     personaSelectorLabel: 'الأسعار لـ',
@@ -118,9 +110,6 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
       `فوترة سنوية بمبلغ ${annualTotal} دولاراً.`,
     cardBestForLabel: 'الأنسب لـ',
     cardIncludedHeader: 'مشمول مع خطتك',
-    cardConditionalHeader: 'متاح بعد مراجعة الجودة',
-    cardConditionalNote:
-      'يصبح الظهور في السوق، والموضع المميّز، وعروض الكاشباك متاحة بعد مراجعة جودة الخدمة.',
     aiTopUpReassurance:
       'الاستخدام الإضافي للذكاء الاصطناعي متاح عبر الشحن حسب الاستخدام، ويتم عرض السعر قبل الشراء.',
     compareHeading: 'قارن كل الميزات',
@@ -132,8 +121,6 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
     addOnsHeading: 'الإضافات',
     addOnsSubheading: 'سعة وخدمات إضافية، تُحتسب مع اشتراكك.',
     faqHeading: 'الأسئلة الشائعة',
-    marketplaceFootnote:
-      '* الظهور في السوق، وعروض الكاشباك، والموضع المميّز تتطلب مراجعة جودة الخدمة.',
   },
 };
 
@@ -142,8 +129,7 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
 export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
   business: {
     en: {
-      heroHeadline:
-        'Run Your Salon, Spa, or Clinic With Booking, Payments, and AI Front Desk Support',
+      heroHeadline: 'Plans for Booking, Payments, and AI Front Desk Support',
       heroSubheadline:
         'Manage your team, bookings, payments, reviews, and customer messages in one platform, with an AI receptionist for WhatsApp, Instagram, and your booking site.',
       howItWorksTitle: 'How Daisy Pricing Works',
@@ -165,9 +151,9 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
       commissionBody2:
         'Commission only applies when Daisy brings you a new customer through the marketplace.',
       aiConversationsTitle:
-        'Every Plan Includes Around 50 AI Receptionist Conversations',
+        'Every Plan Includes 50 AI Receptionist Conversations',
       aiConversationsBody:
-        'Test the AI receptionist with around 50 customer conversations included. Use it to handle common booking questions, availability requests, service inquiries, and follow-ups.',
+        'Test the AI receptionist with 50 customer conversations included. Use it to handle common booking questions, availability requests, service inquiries, and follow-ups.',
       aiCreditsFineprint:
         'Powered by 1,000 included AI credits. After that, continue with pay-as-you-go top-ups.',
       ctaPrimary: 'Start Business Trial',
@@ -177,8 +163,7 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
         'Start your 14-day trial without a card, or book a demo if you want help choosing the right plan.',
     },
     ar: {
-      heroHeadline:
-        'أدر صالونك أو منتجعك أو عيادتك بالحجوزات والمدفوعات ودعم استقبال ذكي',
+      heroHeadline: 'خطط للحجوزات والمدفوعات ودعم الاستقبال الذكي',
       heroSubheadline:
         'أدر فريقك وحجوزاتك ومدفوعاتك وتقييماتك ورسائل عملائك في منصة واحدة، مع موظف استقبال ذكي لواتساب وإنستغرام وموقع حجوزاتك.',
       howItWorksTitle: 'كيف تعمل أسعار ديزي',
@@ -199,10 +184,9 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
         'عملاؤك يبقون لك. إذا حجز عميل عبر موقعك على ديزي بعلامتك التجارية، أو إنستغرام، أو واتساب، أو رابط الحجز المباشر، أو رمز QR، تأخذ ديزي 0% عمولة.',
       commissionBody2:
         'تُطبَّق العمولة فقط عندما تجلب لك ديزي عميلاً جديداً عبر السوق.',
-      aiConversationsTitle:
-        'كل خطة تشمل حوالي 50 محادثة لموظف الاستقبال الذكي',
+      aiConversationsTitle: 'كل خطة تشمل 50 محادثة لموظف الاستقبال الذكي',
       aiConversationsBody:
-        'اختبر موظف الاستقبال الذكي مع حوالي 50 محادثة عملاء مشمولة. استخدمه للتعامل مع أسئلة الحجز الشائعة، وطلبات التوفر، واستفسارات الخدمات، والمتابعات.',
+        'اختبر موظف الاستقبال الذكي مع 50 محادثة عملاء مشمولة. استخدمه للتعامل مع أسئلة الحجز الشائعة، وطلبات التوفر، واستفسارات الخدمات، والمتابعات.',
       aiCreditsFineprint:
         'مدعوم بـ 1000 رصيد ذكاء اصطناعي مشمول. بعدها، تابع باستخدام الشحن حسب الاستخدام.',
       ctaPrimary: 'ابدأ تجربة الأعمال',
@@ -214,8 +198,7 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
   },
   professional: {
     en: {
-      heroHeadline:
-        'Get Booked, Look Professional, and Let AI Help With Customer Messages',
+      heroHeadline: 'Plans for Booking, Payments, and AI Receptionist Support',
       heroSubheadline:
         'Create your branded booking site, manage appointments, accept payments, and respond faster to customers through WhatsApp, Instagram, and AI receptionist support.',
       howItWorksTitle: 'How Daisy Pricing Works',
@@ -237,9 +220,9 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
       commissionBody2:
         'Commission only applies when Daisy brings you a new customer through the marketplace.',
       aiConversationsTitle:
-        'Every Plan Includes Around 50 AI Receptionist Conversations',
+        'Every Plan Includes 50 AI Receptionist Conversations',
       aiConversationsBody:
-        'Test the AI receptionist with around 50 customer conversations included. Use it to help answer booking questions, service inquiries, availability requests, and follow-ups while you are busy serving clients.',
+        'Test the AI receptionist with 50 customer conversations included. Use it to help answer booking questions, service inquiries, availability requests, and follow-ups while you are busy serving clients.',
       aiCreditsFineprint:
         'Powered by 1,000 included AI credits. After that, continue with pay-as-you-go top-ups.',
       ctaPrimary: 'Start Solo Trial',
@@ -249,8 +232,7 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
         'Start your 14-day trial and create your professional booking site.',
     },
     ar: {
-      heroHeadline:
-        'احصل على حجوزات، اظهر بمظهر احترافي، ودع الذكاء الاصطناعي يساعدك في رسائل العملاء',
+      heroHeadline: 'خطط للحجوزات والمدفوعات ودعم موظف الاستقبال الذكي',
       heroSubheadline:
         'أنشئ موقع حجوزاتك بعلامتك التجارية، وأدر مواعيدك، واقبل المدفوعات، وردّ على عملائك بشكل أسرع عبر واتساب وإنستغرام ودعم موظف الاستقبال الذكي.',
       howItWorksTitle: 'كيف تعمل أسعار ديزي',
@@ -271,10 +253,9 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
         'علاقاتك مع عملائك تبقى لك. إذا حجز عميل عبر موقعك على ديزي بعلامتك التجارية، أو إنستغرام، أو واتساب، أو رابط الحجز المباشر، أو رمز QR، تأخذ ديزي 0% عمولة.',
       commissionBody2:
         'تُطبَّق العمولة فقط عندما تجلب لك ديزي عميلاً جديداً عبر السوق.',
-      aiConversationsTitle:
-        'كل خطة تشمل حوالي 50 محادثة لموظف الاستقبال الذكي',
+      aiConversationsTitle: 'كل خطة تشمل 50 محادثة لموظف الاستقبال الذكي',
       aiConversationsBody:
-        'اختبر موظف الاستقبال الذكي مع حوالي 50 محادثة عملاء مشمولة. استخدمه للمساعدة في الإجابة عن أسئلة الحجز، واستفسارات الخدمات، وطلبات التوفر، والمتابعات أثناء انشغالك بخدمة عملائك.',
+        'اختبر موظف الاستقبال الذكي مع 50 محادثة عملاء مشمولة. استخدمه للمساعدة في الإجابة عن أسئلة الحجز، واستفسارات الخدمات، وطلبات التوفر، والمتابعات أثناء انشغالك بخدمة عملائك.',
       aiCreditsFineprint:
         'مدعوم بـ 1000 رصيد ذكاء اصطناعي مشمول. بعدها، تابع باستخدام الشحن حسب الاستخدام.',
       ctaPrimary: 'ابدأ التجربة الفردية',
@@ -320,15 +301,15 @@ export const ADD_ONS: Record<Persona, I18nContent<AddOnCategory[]>> = {
         title: 'Growth',
         rows: [
           { name: 'Featured Promotion', price: 'Pay per campaign, priced at setup' },
-          { name: 'Cashback Campaign', price: 'Pay per campaign — boost repeat visits' },
-          { name: 'Marketplace Campaign', price: 'Pay per campaign — increased visibility inside the Daisy marketplace' },
+          { name: 'Cashback Campaign', price: 'Pay per campaign to boost repeat visits' },
+          { name: 'Marketplace Campaign', price: 'Pay per campaign for increased visibility inside the Daisy marketplace' },
         ],
       },
       {
         title: 'Setup',
         rows: [
           { name: 'Assisted Onboarding', price: '$100 one-time (included on top tier)' },
-          { name: 'Data Migration', price: 'Free on Multi-Location, available on lower tiers' },
+          { name: 'Data Migration', price: 'Free on top tier, available on lower tiers' },
           { name: 'Multi-Location Setup', price: 'White-glove configuration for 3+ locations' },
         ],
       },
@@ -353,15 +334,15 @@ export const ADD_ONS: Record<Persona, I18nContent<AddOnCategory[]>> = {
         title: 'النمو',
         rows: [
           { name: 'إعلان مميّز', price: 'دفع لكل حملة، يُحدَّد السعر عند الإعداد' },
-          { name: 'حملة كاشباك', price: 'دفع لكل حملة — تعزيز الزيارات المتكررة' },
-          { name: 'حملة في السوق', price: 'دفع لكل حملة — ظهور أعلى داخل سوق ديزي' },
+          { name: 'حملة كاشباك', price: 'دفع لكل حملة لتعزيز الزيارات المتكررة' },
+          { name: 'حملة في السوق', price: 'دفع لكل حملة للظهور أعلى داخل سوق ديزي' },
         ],
       },
       {
         title: 'الإعداد',
         rows: [
           { name: 'إعداد بمساعدة الفريق', price: '100 دولار مرة واحدة (مشمول في الخطة العليا)' },
-          { name: 'نقل البيانات', price: 'مجاني على متعدد المواقع، متاح على الخطط الأدنى' },
+          { name: 'نقل البيانات', price: 'مجاني على الخطة العليا، متاح على الخطط الأدنى' },
           { name: 'إعداد متعدد المواقع', price: 'إعداد شامل لـ 3 مواقع أو أكثر' },
         ],
       },
@@ -387,8 +368,8 @@ export const ADD_ONS: Record<Persona, I18nContent<AddOnCategory[]>> = {
         title: 'Growth',
         rows: [
           { name: 'Featured Promotion', price: 'Pay per campaign, priced at setup' },
-          { name: 'Cashback Campaign', price: 'Pay per campaign — boost repeat visits' },
-          { name: 'Marketplace Campaign', price: 'Pay per campaign — increased visibility inside the Daisy marketplace' },
+          { name: 'Cashback Campaign', price: 'Pay per campaign to boost repeat visits' },
+          { name: 'Marketplace Campaign', price: 'Pay per campaign for increased visibility inside the Daisy marketplace' },
         ],
       },
       {
@@ -418,8 +399,8 @@ export const ADD_ONS: Record<Persona, I18nContent<AddOnCategory[]>> = {
         title: 'النمو',
         rows: [
           { name: 'إعلان مميّز', price: 'دفع لكل حملة، يُحدَّد السعر عند الإعداد' },
-          { name: 'حملة كاشباك', price: 'دفع لكل حملة — تعزيز الزيارات المتكررة' },
-          { name: 'حملة في السوق', price: 'دفع لكل حملة — ظهور أعلى داخل سوق ديزي' },
+          { name: 'حملة كاشباك', price: 'دفع لكل حملة لتعزيز الزيارات المتكررة' },
+          { name: 'حملة في السوق', price: 'دفع لكل حملة للظهور أعلى داخل سوق ديزي' },
         ],
       },
       {
@@ -433,7 +414,7 @@ export const ADD_ONS: Record<Persona, I18nContent<AddOnCategory[]>> = {
   },
 };
 
-// ----- FAQ — shared list with one persona-specific item appended -----
+// ----- FAQ -----
 
 export interface FAQItem {
   question: string;

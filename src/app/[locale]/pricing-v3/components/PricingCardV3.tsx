@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Check, AlertCircle } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { localePath } from '@/lib/utils/locale';
 import type { PricingTierV3 } from '@/lib/constants/pricing/v3/pricingV3Business';
@@ -49,7 +49,8 @@ export const PricingCardV3 = ({
         {tier.bestFor}
       </p>
 
-      <p className="mb-4 inline-block w-fit rounded-full bg-[#8B6554]/10 px-3 py-1 text-xs font-medium text-[#8B6554] ltr:font-montserrat rtl:font-cairo">
+      {/* Trial pill: blue palette matching the live /pricing page. */}
+      <p className="mb-4 inline-block w-fit rounded-full bg-[#E9ECF7] px-3 py-1 text-xs font-medium text-[#2543AD] ltr:font-montserrat rtl:font-cairo">
         {shared.trialBadge}
       </p>
 
@@ -91,7 +92,7 @@ export const PricingCardV3 = ({
         {persona.ctaPrimary}
       </Link>
 
-      <div className="mb-5">
+      <div>
         <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#586968] ltr:font-montserrat rtl:font-cairo">
           {shared.cardIncludedHeader}
         </p>
@@ -111,28 +112,6 @@ export const PricingCardV3 = ({
           ))}
         </ul>
       </div>
-
-      {tier.conditionalHighlights.length > 0 && (
-        <div className="border-t border-[#E8E9E9] pt-5">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#586968] ltr:font-montserrat rtl:font-cairo">
-            {shared.cardConditionalHeader}
-          </p>
-          <ul className="space-y-3">
-            {tier.conditionalHighlights.map((feature, i) => (
-              <li
-                key={i}
-                className="flex items-start gap-3 text-sm text-[#455150] ltr:font-montserrat rtl:font-cairo"
-              >
-                <AlertCircle
-                  className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#ABB4B3]"
-                  aria-hidden="true"
-                />
-                <span>{feature}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
     </div>
   );
 };

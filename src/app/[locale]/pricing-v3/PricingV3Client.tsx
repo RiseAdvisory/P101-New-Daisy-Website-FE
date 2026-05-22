@@ -103,7 +103,7 @@ export const PricingV3Client = ({ persona, locale }: Props) => {
 
       <PricingFAQV3 persona={persona} locale={locale} shared={shared} />
 
-      {/* Final CTA — persona-aware headline + body */}
+      {/* Final CTA: persona-aware headline + body */}
       <section className="bg-white px-4 pb-24 md:px-16">
         <div className="mx-auto max-w-3xl rounded-2xl bg-primary px-10 py-16 text-center md:px-16 md:py-20">
           <h2 className="text-[28px] font-semibold leading-9 text-white md:text-[36px] md:leading-[44px]">

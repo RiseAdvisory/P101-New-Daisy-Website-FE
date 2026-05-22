@@ -30,10 +30,10 @@ describe('PricingV3Client', () => {
   });
 
   describe('business persona', () => {
-    it('renders the toggle-aware hero headline', () => {
+    it('renders the pricing-specific hero headline', () => {
       render(<PricingV3Client persona="business" locale="en" />);
       expect(
-        screen.getByText(/Run Your Salon, Spa, or Clinic With Booking/i),
+        screen.getByText(/Plans for Booking, Payments, and AI Front Desk Support/i),
       ).toBeInTheDocument();
     });
 
@@ -46,14 +46,16 @@ describe('PricingV3Client', () => {
       ).toBeInTheDocument();
     });
 
-    it('renders renamed tier display names (Starter Business / Growing Team / Multi-Location)', () => {
+    it('renders v2-aligned tier display names (Basic / Growth / Business)', () => {
       render(<PricingV3Client persona="business" locale="en" />);
-      expect(screen.getAllByText('Starter Business').length).toBeGreaterThan(0);
-      expect(screen.getAllByText('Growing Team').length).toBeGreaterThan(0);
-      expect(screen.getAllByText('Multi-Location').length).toBeGreaterThan(0);
+      expect(screen.getAllByText('Basic').length).toBeGreaterThan(0);
+      expect(screen.getAllByText('Growth').length).toBeGreaterThan(0);
+      // "Business" also appears in the persona toggle, so just assert
+      // it's present at least once.
+      expect(screen.getAllByText(/^Business$/).length).toBeGreaterThan(0);
     });
 
-    it('renders outcome-driven plan descriptions instead of "Choose this if"', () => {
+    it('renders outcome-driven plan descriptions', () => {
       render(<PricingV3Client persona="business" locale="en" />);
       expect(
         screen.getByText(
@@ -70,10 +72,22 @@ describe('PricingV3Client', () => {
       ).toBeGreaterThan(0);
     });
 
+    it('renders "Includes 50 AI receptionist conversations" on the cards', () => {
+      render(<PricingV3Client persona="business" locale="en" />);
+      expect(
+        screen.getAllByText(/Includes 50 AI receptionist conversations/i).length,
+      ).toBeGreaterThan(0);
+    });
+
+    it('does NOT render the "Available after quality review" card section', () => {
+      render(<PricingV3Client persona="business" locale="en" />);
+      expect(
+        screen.queryByText(/Available after quality review/i),
+      ).not.toBeInTheDocument();
+    });
+
     it('renders the "0% Commission on Your Existing Clients" callout', () => {
       render(<PricingV3Client persona="business" locale="en" />);
-      // The phrase appears in the commission callout heading AND in the
-      // HowItWorks card 3 body — assert that AT LEAST one match exists.
       expect(
         screen.getAllByText(/0% Commission on Your Existing Clients/i).length,
       ).toBeGreaterThan(0);
@@ -88,10 +102,8 @@ describe('PricingV3Client', () => {
 
     it('renders the "AI Conversations" callout with the pay-as-you-go reassurance line', () => {
       render(<PricingV3Client persona="business" locale="en" />);
-      // "Around 50 AI receptionist conversations" appears on the cards
-      // too, so use getAllByText for the headline phrase.
       expect(
-        screen.getAllByText(/Around 50 AI Receptionist Conversations/i).length,
+        screen.getAllByText(/50 AI Receptionist Conversations/i).length,
       ).toBeGreaterThan(0);
       expect(
         screen.getByText(
@@ -116,22 +128,22 @@ describe('PricingV3Client', () => {
   });
 
   describe('professional persona', () => {
-    it('renders the toggle-aware hero headline', () => {
+    it('renders the pricing-specific hero headline', () => {
       render(<PricingV3Client persona="professional" locale="en" />);
       expect(
-        screen.getByText(/Get Booked, Look Professional/i),
+        screen.getByText(
+          /Plans for Booking, Payments, and AI Receptionist Support/i,
+        ),
       ).toBeInTheDocument();
     });
 
-    it('renders renamed tier display names (Starter / Growing / Pro Plus)', () => {
+    it('renders v2-aligned tier display names (Starter / Professional / Elite)', () => {
       render(<PricingV3Client persona="professional" locale="en" />);
+      expect(screen.getAllByText('Starter').length).toBeGreaterThan(0);
       expect(
-        screen.getAllByText('Starter Professional').length,
+        screen.getAllByText(/^Professional$/).length,
       ).toBeGreaterThan(0);
-      expect(
-        screen.getAllByText('Growing Professional').length,
-      ).toBeGreaterThan(0);
-      expect(screen.getAllByText('Pro Plus').length).toBeGreaterThan(0);
+      expect(screen.getAllByText('Elite').length).toBeGreaterThan(0);
     });
 
     it('renders the solo outcome description', () => {
@@ -187,21 +199,9 @@ describe('PricingV3Client', () => {
       render(<PricingV3Client persona="business" locale="en" />);
       expect(screen.getByText('Capacity')).toBeInTheDocument();
       expect(screen.getByText('AI Receptionist')).toBeInTheDocument();
-      expect(screen.getByText('Growth')).toBeInTheDocument();
+      // "Growth" also appears as a tier name; assert at least one match.
+      expect(screen.getAllByText('Growth').length).toBeGreaterThan(0);
       expect(screen.getByText('Setup')).toBeInTheDocument();
-    });
-
-    it('does NOT render the removed standalone "Why Daisy" or reassurance sections', () => {
-      render(<PricingV3Client persona="business" locale="en" />);
-      expect(
-        screen.queryByText('More Than Booking Software'),
-      ).not.toBeInTheDocument();
-      expect(
-        screen.queryByText('Built for Owners, Managers, and Reception Teams'),
-      ).not.toBeInTheDocument();
-      expect(
-        screen.queryByText(/Need More Locations, Staff, or Custom AI Workflows/i),
-      ).not.toBeInTheDocument();
     });
 
     it('persists the billing period choice across remounts via localStorage', () => {

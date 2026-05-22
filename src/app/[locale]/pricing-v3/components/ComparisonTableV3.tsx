@@ -97,7 +97,7 @@ export const ComparisonTableV3 = ({
               {categories.map((category) => (
                 <Fragment key={category.title}>
                   {/* Only show the section header band when there's more than
-                      one category — for the default headline view there's
+                      one category. For the default headline view there's
                       just one block so the header would be noise. */}
                   {categories.length > 1 && (
                     <tr className="border-y border-[#E8E9E9] bg-[#F8F5F3]">
