@@ -35,7 +35,7 @@ export const PricingHeroV3 = ({
   const router = useRouter();
 
   const switchPersona = (next: Persona) => {
-    router.push(localePath(`/pricing-v3/${next}`, locale));
+    router.push(localePath(`/pricing/${next}`, locale));
   };
 
   return (

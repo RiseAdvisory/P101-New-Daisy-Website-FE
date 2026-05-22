@@ -1,5 +1,5 @@
 /**
- * Solo Professional tier data for /pricing-v3 (EN + AR).
+ * Solo Professional tier data for /pricing (EN + AR).
  * Tier names match the live /pricing page: Starter / Professional / Elite.
  */
 
@@ -14,7 +14,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'Starter',
       bestFor: 'Best for getting started',
       description:
-        'Create a professional booking site, manage appointments, accept payments, and present your services to clients from one place so you can stop juggling separate tools as you build your independent business.',
+        'Create a professional booking site, manage appointments, accept payments, and present your services from one place.',
       monthlyPrice: 25,
       annualTotal: 250,
       annualPerMonth: 21,
@@ -35,7 +35,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'Professional',
       bestFor: 'Best for client growth',
       description:
-        'Add payments, reminders, reviews, and stronger client follow-up tools as your client base grows, so you spend more time delivering services and less time on admin work between appointments.',
+        'Add payments, reminders, reviews, and stronger client follow-up tools so you keep serving clients as your bookings grow.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -53,7 +53,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'Elite',
       bestFor: 'Best for high-volume professionals',
       description:
-        'Use advanced tools, AI support, and growth features built for high-volume professionals who handle many bookings each week and need automation, analytics, and a polished client experience that scales with them.',
+        'Use advanced tools, AI support, and growth features built for high-volume professionals with many weekly bookings.',
       monthlyPrice: 100,
       annualTotal: 1000,
       annualPerMonth: 84,
@@ -74,7 +74,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'المبتدئ',
       bestFor: 'الأنسب للبدء',
       description:
-        'أنشئ موقع حجوزات احترافي، وأدر مواعيدك، واقبل المدفوعات، واعرض خدماتك لعملائك من مكان واحد، حتى تتوقف عن استخدام أدوات متفرقة وأنت تبني نشاطك المستقل.',
+        'أنشئ موقع حجوزات احترافي، وأدر مواعيدك، واقبل المدفوعات، واعرض خدماتك من مكان واحد.',
       monthlyPrice: 25,
       annualTotal: 250,
       annualPerMonth: 21,
@@ -95,7 +95,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'المحترف',
       bestFor: 'الأنسب لنمو العملاء',
       description:
-        'أضف المدفوعات والتذكيرات والتقييمات وأدوات متابعة أقوى للعملاء مع نمو قاعدة عملائك، لتقضي وقتاً أكبر في تقديم الخدمات ووقتاً أقل في المهام الإدارية بين المواعيد.',
+        'أضف المدفوعات والتذكيرات والتقييمات وأدوات متابعة أقوى للعملاء لتواصل خدمة عملائك مع نمو حجوزاتك.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -113,7 +113,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       displayName: 'النخبة',
       bestFor: 'الأنسب للمحترفين بحجم حجوزات عالٍ',
       description:
-        'استخدم أدوات متقدمة ودعم الذكاء الاصطناعي وميزات نمو صُممت للمحترفين الذين يتعاملون مع حجم حجوزات كبير كل أسبوع، ويحتاجون إلى أتمتة وتحليلات وتجربة عملاء راقية تنمو معهم.',
+        'استخدم أدوات متقدمة ودعم الذكاء الاصطناعي وميزات النمو للمحترفين بحجم حجوزات أسبوعي كبير.',
       monthlyPrice: 100,
       annualTotal: 1000,
       annualPerMonth: 84,

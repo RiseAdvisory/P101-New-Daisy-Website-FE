@@ -1,5 +1,5 @@
 /**
- * Shared content for the /pricing-v3 preview.
+ * Shared content for the /pricing page.
  *
  * The v3 page leads with the hero, then walks through pricing logic
  * (how it works, commission, AI receptionist), the feature comparison,
