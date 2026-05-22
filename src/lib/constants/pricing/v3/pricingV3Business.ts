@@ -1,10 +1,8 @@
 /**
  * Business tier data for /pricing-v3 (EN + AR).
- * Display names: Starter Business / Growing Team / Multi-Location.
+ * Tier names match the live /pricing page: Basic / Growth / Business.
  * Each tier carries a "best for" tagline and an outcome-driven description
- * sentence — what the buyer gets, not how to decide. Marketplace-related
- * bullets go in `conditionalHighlights` so the card can visually separate
- * them as "available after quality review".
+ * sentence (what the buyer gets, not how to decide).
  */
 
 import { I18nContent } from '../../i18n';
@@ -16,15 +14,14 @@ export interface PricingTierV3 {
   displayName: string;
   // Short tagline rendered under the tier name as a "best for" badge.
   bestFor: string;
-  // Outcome-driven plan description — one sentence that says what the
-  // buyer GETS, not how to decide.
+  // Outcome-driven plan description: one sentence saying what the buyer
+  // gets.
   description: string;
   monthlyPrice: number;
   annualTotal: number;
   annualPerMonth: number;
   annualSavingsLine: string;
   cardHighlights: string[];
-  conditionalHighlights: string[];
   isMostPopular?: boolean;
 }
 
@@ -32,7 +29,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
   en: [
     {
       id: 'basic',
-      displayName: 'Starter Business',
+      displayName: 'Basic',
       bestFor: 'Best for small teams',
       description:
         'Get your business online with a branded booking site, team calendar, payments, and customer messaging in one system.',
@@ -46,13 +43,12 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
         'WhatsApp + Instagram booking',
         'Staff calendars & scheduling',
         'POS, payments, client records',
-        'Around 50 AI receptionist conversations included',
+        'Includes 50 AI receptionist conversations',
       ],
-      conditionalHighlights: ['Marketplace visibility *'],
     },
     {
       id: 'growth',
-      displayName: 'Growing Team',
+      displayName: 'Growth',
       bestFor: 'Best for active salons and spas',
       description:
         'Run daily operations with stronger booking, payments, reminders, reviews, and customer follow-up tools.',
@@ -63,21 +59,17 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       isMostPopular: true,
       cardHighlights: [
         '10 team members, 2 locations',
-        'Everything in Starter Business',
+        'Everything in Basic',
         'Online payments + cancellation policy',
         'Automated reminders & prepaid service packages',
         'Detailed reviews & feedback',
-        'Around 50 AI receptionist conversations included',
+        'Includes 50 AI receptionist conversations',
         'Priority customer support',
-      ],
-      conditionalHighlights: [
-        'Marketplace visibility *',
-        'Cashback promotions *',
       ],
     },
     {
       id: 'business',
-      displayName: 'Multi-Location',
+      displayName: 'Business',
       bestFor: 'Best for growing businesses',
       description:
         'Manage multiple branches with advanced analytics, AI customization, data migration, and assisted onboarding.',
@@ -87,26 +79,21 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualSavingsLine: 'Save $500 (2 Months Free)',
       cardHighlights: [
         '15 team members, 4 locations',
-        'Everything in Growing Team',
+        'Everything in Growth',
         'Advanced AI receptionist customization, including tone, business rules, and response style',
         'Email + WhatsApp template customization',
         'Advanced analytics & trends',
         'Free data migration + assisted onboarding',
-      ],
-      conditionalHighlights: [
-        'Marketplace visibility *',
-        'Cashback promotions *',
-        'Featured placement *',
       ],
     },
   ],
   ar: [
     {
       id: 'basic',
-      displayName: 'بداية الأعمال',
+      displayName: 'الأساسية',
       bestFor: 'الأنسب للفرق الصغيرة',
       description:
-        'ابدأ نشاطك على الإنترنت بموقع حجوزات بعلامتك التجارية، وتقويم للفريق، ومدفوعات، ومراسلات العملاء — كل ذلك في نظام واحد.',
+        'ابدأ نشاطك على الإنترنت بموقع حجوزات بعلامتك التجارية، وتقويم للفريق، ومدفوعات، ومراسلات العملاء، كل ذلك في نظام واحد.',
       monthlyPrice: 50,
       annualTotal: 500,
       annualPerMonth: 42,
@@ -117,13 +104,12 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
         'حجز عبر واتساب وإنستغرام',
         'تقاويم وجدولة للموظفين',
         'نقاط بيع، مدفوعات، سجلات عملاء',
-        'حوالي 50 محادثة لموظف الاستقبال الذكي مشمولة',
+        'يشمل 50 محادثة لموظف الاستقبال الذكي',
       ],
-      conditionalHighlights: ['الظهور في السوق *'],
     },
     {
       id: 'growth',
-      displayName: 'الفريق النامي',
+      displayName: 'النمو',
       bestFor: 'الأنسب للصالونات والمنتجعات النشطة',
       description:
         'أدر عملياتك اليومية بأدوات أقوى للحجز والدفع والتذكيرات والتقييمات ومتابعة العملاء.',
@@ -134,21 +120,17 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       isMostPopular: true,
       cardHighlights: [
         '10 أعضاء فريق، موقعان',
-        'كل ما في خطة بداية الأعمال',
+        'كل ما في خطة الأساسية',
         'مدفوعات أونلاين + سياسة إلغاء',
         'تذكيرات آلية وباقات خدمات مدفوعة مسبقاً',
         'تقييمات وملاحظات تفصيلية',
-        'حوالي 50 محادثة لموظف الاستقبال الذكي مشمولة',
+        'يشمل 50 محادثة لموظف الاستقبال الذكي',
         'دعم عملاء بأولوية',
-      ],
-      conditionalHighlights: [
-        'الظهور في السوق *',
-        'عروض الكاشباك *',
       ],
     },
     {
       id: 'business',
-      displayName: 'متعدد المواقع',
+      displayName: 'الأعمال',
       bestFor: 'الأنسب للأعمال النامية',
       description:
         'أدر فروعك المتعددة بتحليلات متقدمة، وتخصيص للذكاء الاصطناعي، ونقل بيانات، وإعداد بمساعدة الفريق.',
@@ -158,16 +140,11 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualSavingsLine: 'وفّر 500 دولار (شهران مجاناً)',
       cardHighlights: [
         '15 عضو فريق، 4 مواقع',
-        'كل ما في خطة الفريق النامي',
+        'كل ما في خطة النمو',
         'تخصيص متقدم لموظف الاستقبال الذكي، يشمل النبرة وقواعد العمل وأسلوب الرد',
         'تخصيص قوالب البريد وواتساب',
         'تحليلات واتجاهات متقدمة',
         'نقل بيانات وإعداد بمساعدة الفريق مجاناً',
-      ],
-      conditionalHighlights: [
-        'الظهور في السوق *',
-        'عروض الكاشباك *',
-        'موضع مميّز *',
       ],
     },
   ],
@@ -188,7 +165,7 @@ export const BUSINESS_COMPARISON_DEFAULT_V3: I18nContent<FeatureCategory[]> = {
         { name: 'WhatsApp + Instagram Booking', values: [true, true, true] },
         { name: 'Payments / POS', values: [true, true, true] },
         {
-          name: 'AI Receptionist Conversations (~50 included)',
+          name: 'AI Receptionist Conversations (50 included)',
           values: [true, true, true],
         },
         { name: 'Reviews', values: [true, true, true] },
@@ -214,7 +191,7 @@ export const BUSINESS_COMPARISON_DEFAULT_V3: I18nContent<FeatureCategory[]> = {
         { name: 'حجز عبر واتساب وإنستغرام', values: [true, true, true] },
         { name: 'مدفوعات / نقاط بيع', values: [true, true, true] },
         {
-          name: 'محادثات موظف الاستقبال الذكي (حوالي 50 مشمولة)',
+          name: 'محادثات موظف الاستقبال الذكي (50 مشمولة)',
           values: [true, true, true],
         },
         { name: 'التقييمات', values: [true, true, true] },
@@ -263,7 +240,7 @@ export const BUSINESS_COMPARISON_FULL_V3: I18nContent<FeatureCategory[]> = {
       rows: [
         {
           name: 'AI Receptionist Conversations',
-          note: 'About 50 included, then pay-as-you-go',
+          note: '50 included, then pay-as-you-go',
           values: [true, true, true],
         },
         { name: 'WhatsApp Business Chat Integration', values: [true, true, true] },
@@ -352,7 +329,7 @@ export const BUSINESS_COMPARISON_FULL_V3: I18nContent<FeatureCategory[]> = {
       rows: [
         {
           name: 'محادثات موظف الاستقبال الذكي',
-          note: 'حوالي 50 مشمولة، ثم ادفع حسب الاستخدام',
+          note: '50 مشمولة، ثم ادفع حسب الاستخدام',
           values: [true, true, true],
         },
         { name: 'تكامل دردشة واتساب للأعمال', values: [true, true, true] },

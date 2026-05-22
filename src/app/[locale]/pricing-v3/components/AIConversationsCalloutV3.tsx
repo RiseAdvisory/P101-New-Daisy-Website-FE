@@ -26,8 +26,8 @@ export const AIConversationsCalloutV3 = ({ personaCopy, shared }: Props) => {
             <p className="mb-3 text-base leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">
               {personaCopy.aiConversationsBody}
             </p>
-            {/* One-line reassurance instead of a full AI pricing table —
-                we don't want to commit to specific top-up prices on the
+            {/* One-line reassurance instead of a full AI pricing table.
+                We don't want to commit to specific top-up prices on the
                 page until they're final. */}
             <p className="mb-3 text-sm text-[#455150] ltr:font-montserrat rtl:font-cairo">
               {shared.aiTopUpReassurance}

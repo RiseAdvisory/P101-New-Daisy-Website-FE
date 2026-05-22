@@ -1,6 +1,6 @@
 /**
  * Solo Professional tier data for /pricing-v3 (EN + AR).
- * Display names: Starter Professional / Growing Professional / Pro Plus.
+ * Tier names match the live /pricing page: Starter / Professional / Elite.
  */
 
 import { I18nContent } from '../../i18n';
@@ -11,7 +11,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
   en: [
     {
       id: 'basic',
-      displayName: 'Starter Professional',
+      displayName: 'Starter',
       bestFor: 'Best for getting started',
       description:
         'Create a professional booking site and manage appointments from one place.',
@@ -27,13 +27,12 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
         'Appointment scheduling',
         'Payments',
         'Reviews & client records',
-        'Around 50 AI receptionist conversations included',
+        'Includes 50 AI receptionist conversations',
       ],
-      conditionalHighlights: ['Marketplace visibility *'],
     },
     {
       id: 'growth',
-      displayName: 'Growing Professional',
+      displayName: 'Professional',
       bestFor: 'Best for client growth',
       description:
         'Add payments, reminders, reviews, and stronger client follow-up as your client base grows.',
@@ -42,21 +41,17 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualPerMonth: 42,
       annualSavingsLine: 'Save $100 (2 Months Free)',
       cardHighlights: [
-        'Everything in Starter Professional',
+        'Everything in Starter',
         'Online payments + cancellation policy',
         'Automated reminders & prepaid service packages',
         'Detailed reviews & feedback',
-        'Around 50 AI receptionist conversations included',
+        'Includes 50 AI receptionist conversations',
         'Priority customer support',
-      ],
-      conditionalHighlights: [
-        'Marketplace visibility *',
-        'Cashback promotions *',
       ],
     },
     {
       id: 'business',
-      displayName: 'Pro Plus',
+      displayName: 'Elite',
       bestFor: 'Best for high-volume professionals',
       description:
         'Use advanced tools, AI support, and growth features for higher booking volume.',
@@ -65,24 +60,19 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualPerMonth: 84,
       annualSavingsLine: 'Save $200 (2 Months Free)',
       cardHighlights: [
-        'Everything in Growing Professional',
+        'Everything in Professional',
         '2 workspaces, 2 countries',
         'Advanced AI receptionist customization, including tone, business rules, and response style',
         'Email + WhatsApp template customization',
         'Advanced analytics & trends',
         'Free data migration + assisted onboarding',
       ],
-      conditionalHighlights: [
-        'Marketplace visibility *',
-        'Cashback promotions *',
-        'Featured placement *',
-      ],
     },
   ],
   ar: [
     {
       id: 'basic',
-      displayName: 'المحترف المبتدئ',
+      displayName: 'المبتدئ',
       bestFor: 'الأنسب للبدء',
       description: 'أنشئ موقع حجوزات احترافي وأدر مواعيدك من مكان واحد.',
       monthlyPrice: 25,
@@ -97,13 +87,12 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
         'جدولة المواعيد',
         'مدفوعات',
         'تقييمات وسجلات عملاء',
-        'حوالي 50 محادثة لموظف الاستقبال الذكي مشمولة',
+        'يشمل 50 محادثة لموظف الاستقبال الذكي',
       ],
-      conditionalHighlights: ['الظهور في السوق *'],
     },
     {
       id: 'growth',
-      displayName: 'المحترف النامي',
+      displayName: 'المحترف',
       bestFor: 'الأنسب لنمو العملاء',
       description:
         'أضف المدفوعات والتذكيرات والتقييمات ومتابعة أقوى للعملاء مع نمو قاعدة عملائك.',
@@ -112,21 +101,17 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualPerMonth: 42,
       annualSavingsLine: 'وفّر 100 دولار (شهران مجاناً)',
       cardHighlights: [
-        'كل ما في خطة المحترف المبتدئ',
+        'كل ما في خطة المبتدئ',
         'مدفوعات أونلاين + سياسة إلغاء',
         'تذكيرات آلية وباقات خدمات مدفوعة مسبقاً',
         'تقييمات وملاحظات تفصيلية',
-        'حوالي 50 محادثة لموظف الاستقبال الذكي مشمولة',
+        'يشمل 50 محادثة لموظف الاستقبال الذكي',
         'دعم عملاء بأولوية',
-      ],
-      conditionalHighlights: [
-        'الظهور في السوق *',
-        'عروض الكاشباك *',
       ],
     },
     {
       id: 'business',
-      displayName: 'برو بلس',
+      displayName: 'النخبة',
       bestFor: 'الأنسب للمحترفين بحجم حجوزات عالٍ',
       description:
         'استخدم أدوات متقدمة ودعم الذكاء الاصطناعي وميزات النمو لزيادة حجم الحجوزات.',
@@ -135,17 +120,12 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualPerMonth: 84,
       annualSavingsLine: 'وفّر 200 دولار (شهران مجاناً)',
       cardHighlights: [
-        'كل ما في خطة المحترف النامي',
+        'كل ما في خطة المحترف',
         'مساحتا عمل، دولتان',
         'تخصيص متقدم لموظف الاستقبال الذكي، يشمل النبرة وقواعد العمل وأسلوب الرد',
         'تخصيص قوالب البريد وواتساب',
         'تحليلات واتجاهات متقدمة',
         'نقل بيانات وإعداد بمساعدة الفريق مجاناً',
-      ],
-      conditionalHighlights: [
-        'الظهور في السوق *',
-        'عروض الكاشباك *',
-        'موضع مميّز *',
       ],
     },
   ],
@@ -162,7 +142,7 @@ export const PROFESSIONAL_COMPARISON_DEFAULT_V3: I18nContent<FeatureCategory[]> 
         { name: 'WhatsApp + Instagram Booking', values: [true, true, true] },
         { name: 'Payments', values: [undefined, true, true] },
         {
-          name: 'AI Receptionist Conversations (~50 included)',
+          name: 'AI Receptionist Conversations (50 included)',
           values: [true, true, true],
         },
         { name: 'Reviews', values: [true, true, true] },
@@ -188,7 +168,7 @@ export const PROFESSIONAL_COMPARISON_DEFAULT_V3: I18nContent<FeatureCategory[]> 
         { name: 'حجز عبر واتساب وإنستغرام', values: [true, true, true] },
         { name: 'مدفوعات', values: [undefined, true, true] },
         {
-          name: 'محادثات موظف الاستقبال الذكي (حوالي 50 مشمولة)',
+          name: 'محادثات موظف الاستقبال الذكي (50 مشمولة)',
           values: [true, true, true],
         },
         { name: 'التقييمات', values: [true, true, true] },
@@ -237,7 +217,7 @@ export const PROFESSIONAL_COMPARISON_FULL_V3: I18nContent<FeatureCategory[]> = {
       rows: [
         {
           name: 'AI Receptionist Conversations',
-          note: 'About 50 included, then pay-as-you-go',
+          note: '50 included, then pay-as-you-go',
           values: [true, true, true],
         },
         { name: 'WhatsApp Business Chat Integration', values: [true, true, true] },
@@ -326,7 +306,7 @@ export const PROFESSIONAL_COMPARISON_FULL_V3: I18nContent<FeatureCategory[]> = {
       rows: [
         {
           name: 'محادثات موظف الاستقبال الذكي',
-          note: 'حوالي 50 مشمولة، ثم ادفع حسب الاستخدام',
+          note: '50 مشمولة، ثم ادفع حسب الاستخدام',
           values: [true, true, true],
         },
         { name: 'تكامل دردشة واتساب للأعمال', values: [true, true, true] },

@@ -50,10 +50,9 @@ export const PricingHeroV3 = ({
           </p>
         </div>
 
-        {/* Persona selector — preceded by an explicit "Pricing for:" label
-            so the two buttons read as a choice rather than the confusing
-            phrase "Business Professional". */}
-        <div className="mx-auto mb-8 flex w-fit flex-col items-center gap-2 sm:flex-row sm:gap-4">
+        {/* Persona selector. The "Pricing for:" label sits above the two
+            buttons (not inline) so the toggle stays visually centered. */}
+        <div className="mx-auto mb-8 flex w-fit flex-col items-center gap-2">
           <span
             id="persona-selector-label"
             className="text-sm font-medium text-white/70 ltr:font-montserrat rtl:font-cairo"
@@ -168,9 +167,6 @@ export const PricingHeroV3 = ({
           </Link>
         </div>
 
-        <p className="mt-6 text-center text-xs text-white/50 ltr:font-montserrat rtl:font-cairo">
-          {shared.marketplaceFootnote}
-        </p>
       </div>
     </section>
   );
