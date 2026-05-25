@@ -20,6 +20,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualPerMonth: 21,
       annualSavingsLine: 'Save $50 (2 Months Free)',
       isMostPopular: true,
+      showLowRiskStart: true,
       cardHighlights: [
         'Branded booking site',
         'Personal service menu',
@@ -80,6 +81,7 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualPerMonth: 21,
       annualSavingsLine: 'وفّر 50 دولاراً (شهران مجاناً)',
       isMostPopular: true,
+      showLowRiskStart: true,
       cardHighlights: [
         'موقع حجوزات بعلامتك التجارية',
         'قائمة خدمات شخصية',

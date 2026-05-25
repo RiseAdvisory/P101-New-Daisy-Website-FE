@@ -149,6 +149,32 @@ describe('PricingV3Client', () => {
       expect(screen.getByText('Contact Us')).toBeInTheDocument();
     });
 
+    it('renders the "Low-risk start" treatment on the Basic tier only', () => {
+      render(<PricingV3Client persona="business" locale="en" />);
+      // Badge, under-price note, and under-CTA note each render exactly
+      // once (only on the Basic card — not on Growth or Business).
+      expect(screen.getAllByText('Low-risk start').length).toBe(1);
+      expect(
+        screen.getAllByText(/Subscription starts after 5 appointments\/month/i)
+          .length,
+      ).toBe(1);
+      expect(
+        screen.getAllByText(
+          /No subscription charge until you pass 5 appointments in a month/i,
+        ).length,
+      ).toBe(1);
+    });
+
+    it('does not describe the entry tier as "free"', () => {
+      render(<PricingV3Client persona="business" locale="en" />);
+      // Guardrail: the entry-tier copy must not slip into "free" framing.
+      // The trial pill "14-day free trial" is allowed; "free until 5
+      // appointments" is not.
+      expect(
+        screen.queryByText(/free until 5 appointments/i),
+      ).not.toBeInTheDocument();
+    });
+
     it('uses the dynamic "Start Business Trial" CTA', () => {
       render(<PricingV3Client persona="business" locale="en" />);
       expect(
@@ -206,6 +232,20 @@ describe('PricingV3Client', () => {
       ).toBeInTheDocument();
     });
 
+    it('renders the "Low-risk start" treatment on the Starter tier only', () => {
+      render(<PricingV3Client persona="professional" locale="en" />);
+      expect(screen.getAllByText('Low-risk start').length).toBe(1);
+      expect(
+        screen.getAllByText(/Subscription starts after 5 appointments\/month/i)
+          .length,
+      ).toBe(1);
+      expect(
+        screen.getAllByText(
+          /No subscription charge until you pass 5 appointments in a month/i,
+        ).length,
+      ).toBe(1);
+    });
+
     it('uses the dynamic "Start Solo Trial" CTA', () => {
       render(<PricingV3Client persona="professional" locale="en" />);
       expect(
@@ -219,6 +259,16 @@ describe('PricingV3Client', () => {
       render(<PricingV3Client persona="business" locale="en" />);
       expect(
         screen.getByText(/Are Payment Processing Fees Included\?/i),
+      ).toBeInTheDocument();
+    });
+
+    it('renders the first-tier-billing FAQ', () => {
+      render(<PricingV3Client persona="business" locale="en" />);
+      expect(
+        screen.getByText(/When Does the First-Tier Subscription Get Charged/i),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByText(/until your account passes 5 appointments/i),
       ).toBeInTheDocument();
     });
 
