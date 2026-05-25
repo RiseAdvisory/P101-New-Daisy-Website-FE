@@ -89,7 +89,7 @@ export const ComparisonTableV3 = ({
                 context; sticky targets the document. */}
             <thead className="sticky top-[113px] z-20 md:top-[110px]">
               <tr className="border-b border-[#E8E9E9] bg-white">
-                <th className="bg-white px-3 py-4 text-left text-[10px] font-semibold uppercase tracking-wider text-[#455150] ltr:font-montserrat rtl:font-cairo md:px-5 md:py-5 md:text-xs">
+                <th className="bg-white px-3 py-4 text-start text-[10px] font-semibold uppercase tracking-wider text-[#455150] ltr:font-montserrat rtl:font-cairo md:px-5 md:py-5 md:text-xs">
                   {shared.compareFeatureHeader}
                 </th>
                 {tiers.map((tier) => (
