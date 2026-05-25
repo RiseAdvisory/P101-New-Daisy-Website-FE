@@ -44,7 +44,20 @@ export interface SharedCopy {
   billingAnnual: string;
   twoMonthsFreeBadge: string;
   mostPopularBadge: string;
-  trialBadge: string;
+  // Trial messaging is split into two side-by-side pills on the card so
+  // the duration and the no-card promise read as distinct claims.
+  trialBadgeDuration: string;
+  trialBadgeNoCard: string;
+  // First-tier "Low-risk start" messaging. Three strings sit on the
+  // entry tier (Basic for business, Starter for solo) only:
+  //   - a small badge alongside the trial pills
+  //   - a one-liner directly under the price
+  //   - a one-liner directly under the CTA button
+  // We deliberately don't use the word "free" — billing genuinely
+  // starts once the account passes 5 appointments in a calendar month.
+  lowRiskBadge: string;
+  subscriptionStartsNote: string;
+  noChargeUnderCta: string;
   cardPerMonth: string;
   cardBilledMonthlyLine1: string;
   cardBilledMonthlyLine2: string;
@@ -78,7 +91,12 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
     billingAnnual: 'Annual',
     twoMonthsFreeBadge: '2 Months Free',
     mostPopularBadge: 'Most Popular',
-    trialBadge: '14-day free trial · No card required to start',
+    trialBadgeDuration: '14-day free trial',
+    trialBadgeNoCard: 'No card required to start',
+    lowRiskBadge: 'Low-risk start',
+    subscriptionStartsNote: 'Subscription starts after 5 appointments/month.',
+    noChargeUnderCta:
+      'No subscription charge until you pass 5 appointments in a month.',
     cardPerMonth: '/ month',
     cardBilledMonthlyLine1: 'Billed monthly.',
     cardBilledMonthlyLine2: 'Cancel anytime.',
@@ -111,7 +129,12 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
     billingAnnual: 'سنوي',
     twoMonthsFreeBadge: 'شهران مجاناً',
     mostPopularBadge: 'الأكثر شعبية',
-    trialBadge: 'تجربة مجانية 14 يوماً · بدون بطاقة للبدء',
+    trialBadgeDuration: 'تجربة مجانية 14 يوماً',
+    trialBadgeNoCard: 'بدون بطاقة للبدء',
+    lowRiskBadge: 'بداية بدون مخاطر',
+    subscriptionStartsNote: 'يبدأ الاشتراك بعد 5 مواعيد/شهر.',
+    noChargeUnderCta:
+      'لا يُحتسب الاشتراك حتى تتجاوز 5 مواعيد في الشهر.',
     cardPerMonth: '/ شهر',
     cardBilledMonthlyLine1: 'فوترة شهرية.',
     cardBilledMonthlyLine2: 'ألغِ في أي وقت.',
@@ -466,6 +489,11 @@ export const SHARED_FAQ: I18nContent<FAQItem[]> = {
       answer:
         'Payment processing fees are separate from your Daisy subscription and depend on the payment provider used for your account. Applicable fees are shown before payments are activated.',
     },
+    {
+      question: 'When Does the First-Tier Subscription Get Charged?',
+      answer:
+        'The first-tier subscription is not charged until your account passes 5 appointments in a calendar month. After that, the first-tier subscription fee applies based on the plan and billing cycle you selected.',
+    },
   ],
   ar: [
     {
@@ -497,6 +525,11 @@ export const SHARED_FAQ: I18nContent<FAQItem[]> = {
       question: 'هل رسوم معالجة المدفوعات مشمولة؟',
       answer:
         'رسوم معالجة المدفوعات منفصلة عن اشتراك ديزي وتعتمد على مزود الدفع المستخدم لحسابك. تُعرض الرسوم المطبّقة قبل تفعيل المدفوعات.',
+    },
+    {
+      question: 'متى يُحتسب اشتراك الخطة الأولى؟',
+      answer:
+        'لا يُحتسب اشتراك الخطة الأولى حتى يتجاوز حسابك 5 مواعيد في الشهر التقويمي. بعد ذلك، تنطبق رسوم اشتراك الخطة الأولى وفقاً للخطة ودورة الفوترة التي اخترتها.',
     },
   ],
 };

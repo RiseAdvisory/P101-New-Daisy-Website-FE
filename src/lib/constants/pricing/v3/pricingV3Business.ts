@@ -23,6 +23,10 @@ export interface PricingTierV3 {
   annualSavingsLine: string;
   cardHighlights: string[];
   isMostPopular?: boolean;
+  // Flag the entry tier (Basic for business, Starter for solo) so the
+  // card surfaces the "Low-risk start" badge + the under-price and
+  // under-CTA notes about billing only starting after 5 appointments.
+  showLowRiskStart?: boolean;
 }
 
 export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
@@ -37,6 +41,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualTotal: 500,
       annualPerMonth: 42,
       annualSavingsLine: 'Save $100 (2 Months Free)',
+      showLowRiskStart: true,
       cardHighlights: [
         '5 team members, 1 location',
         'Branded booking site',
@@ -97,6 +102,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualTotal: 500,
       annualPerMonth: 42,
       annualSavingsLine: 'وفّر 100 دولار (شهران مجاناً)',
+      showLowRiskStart: true,
       cardHighlights: [
         '5 أعضاء فريق، موقع واحد',
         'موقع حجوزات بعلامتك التجارية',

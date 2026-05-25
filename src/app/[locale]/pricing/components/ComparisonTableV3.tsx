@@ -36,7 +36,7 @@ const renderValue = (value: FeatureCategoryRow['values'][number]) => {
     );
   }
   return (
-    <span className="text-sm font-semibold text-[#172524] ltr:font-montserrat rtl:font-cairo">
+    <span className="text-xs font-semibold text-[#172524] ltr:font-montserrat rtl:font-cairo md:text-sm">
       {value}
     </span>
   );
@@ -63,30 +63,39 @@ export const ComparisonTableV3 = ({
           </p>
         </div>
 
-        <div className="sticky top-[110px] z-30 -mx-4 mb-4 border-y border-[#E8E9E9] bg-white/95 px-4 py-2.5 text-center text-xs font-medium text-[#586968] backdrop-blur ltr:font-montserrat rtl:font-cairo md:hidden">
-          {shared.compareSwipeHint}
-        </div>
-
-        <div className="overflow-x-auto rounded-2xl border border-[#E8E9E9]">
-          <table className="w-full min-w-[600px] border-collapse">
+        {/* Wrapper has NO overflow-x-auto. Per CSS spec, an `overflow-x`
+            scroll context implicitly forces `overflow-y` to `auto` as
+            well, which made our sticky `<thead>` target a wrapper that
+            never scrolls vertically. The browser then degraded sticky to
+            relative positioning and applied `top: 150px` as a static
+            offset (the symptom: header row visually shifted below the
+            first body row). Removing the overflow wrapper lets the
+            sticky thead target the document scroll, where it actually
+            works. The table is now fully responsive instead of
+            horizontally scrollable. */}
+        <div className="rounded-2xl border border-[#E8E9E9]">
+          <table className="w-full border-collapse">
             <colgroup>
-              <col style={{ width: '34%' }} />
+              <col style={{ width: '40%' }} />
               {tiers.map((tier) => (
                 <col
                   key={tier.id}
-                  style={{ width: `${66 / tiers.length}%` }}
+                  style={{ width: `${60 / tiers.length}%` }}
                 />
               ))}
             </colgroup>
-            <thead>
+            {/* Sticky thead pinned just below the global header. Works
+                because the wrapper above no longer creates a scroll
+                context; sticky targets the document. */}
+            <thead className="sticky top-[113px] z-20 md:top-[110px]">
               <tr className="border-b border-[#E8E9E9] bg-white">
-                <th className="sticky left-0 z-10 bg-white py-5 pl-5 pr-4 text-left text-xs font-semibold uppercase tracking-wider text-[#455150] ltr:font-montserrat rtl:font-cairo">
+                <th className="bg-white px-3 py-4 text-left text-[10px] font-semibold uppercase tracking-wider text-[#455150] ltr:font-montserrat rtl:font-cairo md:px-5 md:py-5 md:text-xs">
                   {shared.compareFeatureHeader}
                 </th>
                 {tiers.map((tier) => (
                   <th
                     key={tier.id}
-                    className="px-3 py-5 text-center text-xs font-semibold uppercase tracking-wider text-[#455150] ltr:font-montserrat rtl:font-cairo"
+                    className="bg-white px-2 py-4 text-center text-[10px] font-semibold uppercase tracking-wider text-[#455150] ltr:font-montserrat rtl:font-cairo md:px-3 md:py-5 md:text-xs"
                   >
                     {tier.displayName}
                   </th>
@@ -103,11 +112,9 @@ export const ComparisonTableV3 = ({
                     <tr className="border-y border-[#E8E9E9] bg-[#F8F5F3]">
                       <td
                         colSpan={tiers.length + 1}
-                        className="py-4 text-sm font-semibold uppercase tracking-wider text-[#172524] ltr:font-montserrat rtl:font-cairo"
+                        className="px-3 py-3 text-xs font-semibold uppercase tracking-wider text-[#172524] ltr:font-montserrat rtl:font-cairo md:px-5 md:py-4 md:text-sm"
                       >
-                        <span className="sticky left-5 inline-block">
-                          {category.title}
-                        </span>
+                        {category.title}
                       </td>
                     </tr>
                   )}
@@ -116,12 +123,12 @@ export const ComparisonTableV3 = ({
                       key={row.name}
                       className="border-b border-[#E8E9E9] bg-white last:border-b-0"
                     >
-                      <td className="sticky left-0 z-10 bg-white py-4 pl-5 pr-4 align-top text-sm">
+                      <td className="px-3 py-3 align-top text-xs md:px-5 md:py-4 md:text-sm">
                         <div className="font-medium text-[#172524] ltr:font-montserrat rtl:font-cairo">
                           {row.name}
                         </div>
                         {row.note && (
-                          <div className="mt-1.5 text-xs text-[#455150] ltr:font-montserrat rtl:font-cairo">
+                          <div className="mt-1 text-[10px] text-[#455150] ltr:font-montserrat rtl:font-cairo md:mt-1.5 md:text-xs">
                             {row.note}
                           </div>
                         )}
@@ -129,7 +136,7 @@ export const ComparisonTableV3 = ({
                       {row.values.map((value, j) => (
                         <td
                           key={j}
-                          className="px-3 py-4 text-center align-top"
+                          className="px-2 py-3 text-center align-top md:px-3 md:py-4"
                         >
                           {renderValue(value)}
                         </td>
