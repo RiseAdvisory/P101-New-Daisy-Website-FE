@@ -73,7 +73,7 @@ export const ComparisonTableV3 = ({
             sticky thead target the document scroll, where it actually
             works. The table is now fully responsive instead of
             horizontally scrollable. */}
-        <div className="rounded-2xl border border-[#E8E9E9]">
+        <div className="rounded-2xl md:border md:border-[#E8E9E9]">
           <table className="w-full border-collapse">
             <colgroup>
               <col style={{ width: '40%' }} />
