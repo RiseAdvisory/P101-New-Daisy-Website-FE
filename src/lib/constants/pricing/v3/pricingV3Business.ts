@@ -24,7 +24,7 @@ export interface PricingTierV3 {
   cardHighlights: string[];
   isMostPopular?: boolean;
   // Flag the entry tier (Basic for business, Starter for solo) so the
-  // card surfaces the "Low-risk start" badge + the under-price and
+  // card surfaces the "No-risk start" badge + the under-price and
   // under-CTA notes about billing only starting after 5 appointments.
   showLowRiskStart?: boolean;
 }
@@ -43,7 +43,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualSavingsLine: 'Save $100 (2 Months Free)',
       showLowRiskStart: true,
       cardHighlights: [
-        '5 team members, 1 location',
+        '5 team members, 1 workspace',
         'Branded booking site',
         'WhatsApp + Instagram booking',
         'Staff calendars & scheduling',
@@ -63,7 +63,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualSavingsLine: 'Save $300 (2 Months Free)',
       isMostPopular: true,
       cardHighlights: [
-        '10 team members, 2 locations',
+        '10 team members, 2 workspaces',
         'Everything in Basic',
         'Online payments + cancellation policy',
         'Automated reminders & prepaid service packages',
@@ -82,7 +82,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualPerMonth: 208,
       annualSavingsLine: 'Save $500 (2 Months Free)',
       cardHighlights: [
-        '15 team members, 4 locations',
+        '15 team members, 4 workspaces',
         'Everything in Growth',
         'Advanced AI receptionist customization, including tone, business rules, and response style',
         'Email + WhatsApp template customization',
@@ -104,7 +104,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualSavingsLine: 'وفّر 100 دولار (شهران مجاناً)',
       showLowRiskStart: true,
       cardHighlights: [
-        '5 أعضاء فريق، موقع واحد',
+        '5 أعضاء فريق، مساحة عمل واحدة',
         'موقع حجوزات بعلامتك التجارية',
         'حجز عبر واتساب وإنستغرام',
         'تقاويم وجدولة للموظفين',
@@ -124,7 +124,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualSavingsLine: 'وفّر 300 دولار (شهران مجاناً)',
       isMostPopular: true,
       cardHighlights: [
-        '10 أعضاء فريق، موقعان',
+        '10 أعضاء فريق، مساحتا عمل',
         'كل ما في خطة الأساسية',
         'مدفوعات أونلاين + سياسة إلغاء',
         'تذكيرات آلية وباقات خدمات مدفوعة مسبقاً',
@@ -143,7 +143,7 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       annualPerMonth: 208,
       annualSavingsLine: 'وفّر 500 دولار (شهران مجاناً)',
       cardHighlights: [
-        '15 عضو فريق، 4 مواقع',
+        '15 عضو فريق، 4 مساحات عمل',
         'كل ما في خطة النمو',
         'تخصيص متقدم لموظف الاستقبال الذكي، يشمل النبرة وقواعد العمل وأسلوب الرد',
         'تخصيص قوالب البريد وواتساب',
@@ -164,7 +164,7 @@ export const BUSINESS_COMPARISON_DEFAULT_V3: I18nContent<FeatureCategory[]> = {
       title: 'Headline Comparison',
       rows: [
         { name: 'Team Members / Calendars', values: ['5', '10', '15'] },
-        { name: 'Locations', values: ['1', '2', '4'] },
+        { name: 'Workspaces', values: ['1', '2', '4'] },
         { name: 'Branded Booking Site', values: [true, true, true] },
         { name: 'WhatsApp + Instagram Booking', values: [true, true, true] },
         { name: 'Payments / POS', values: [true, true, true] },
@@ -190,7 +190,7 @@ export const BUSINESS_COMPARISON_DEFAULT_V3: I18nContent<FeatureCategory[]> = {
       title: 'مقارنة عناوين رئيسية',
       rows: [
         { name: 'أعضاء الفريق / التقاويم', values: ['5', '10', '15'] },
-        { name: 'المواقع', values: ['1', '2', '4'] },
+        { name: 'مساحات العمل', values: ['1', '2', '4'] },
         { name: 'موقع حجوزات بعلامتك', values: [true, true, true] },
         { name: 'حجز عبر واتساب وإنستغرام', values: [true, true, true] },
         { name: 'مدفوعات / نقاط بيع', values: [true, true, true] },
@@ -219,7 +219,7 @@ export const BUSINESS_COMPARISON_FULL_V3: I18nContent<FeatureCategory[]> = {
       title: 'Scale & Seats',
       rows: [
         { name: 'Team Members / Calendars', values: ['5', '10', '15'] },
-        { name: 'Workspaces / Locations', values: ['1', '2', '4'] },
+        { name: 'Workspaces', values: ['1', '2', '4'] },
         { name: 'Countries', values: ['1', '1', '1'] },
         { name: 'Bookings per Month', values: ['Unlimited', 'Unlimited', 'Unlimited'] },
       ],
@@ -308,7 +308,7 @@ export const BUSINESS_COMPARISON_FULL_V3: I18nContent<FeatureCategory[]> = {
       title: 'الحجم والمقاعد',
       rows: [
         { name: 'أعضاء الفريق / التقاويم', values: ['5', '10', '15'] },
-        { name: 'مساحات العمل / المواقع', values: ['1', '2', '4'] },
+        { name: 'مساحات العمل', values: ['1', '2', '4'] },
         { name: 'الدول', values: ['1', '1', '1'] },
         { name: 'الحجوزات شهرياً', values: ['غير محدودة', 'غير محدودة', 'غير محدودة'] },
       ],

@@ -48,16 +48,14 @@ export interface SharedCopy {
   // the duration and the no-card promise read as distinct claims.
   trialBadgeDuration: string;
   trialBadgeNoCard: string;
-  // First-tier "Low-risk start" messaging. Three strings sit on the
-  // entry tier (Basic for business, Starter for solo) only:
-  //   - a small badge alongside the trial pills
-  //   - a one-liner directly under the price
-  //   - a one-liner directly under the CTA button
+  // First-tier "No-risk start" messaging. Two strings sit on the entry
+  // tier (Basic for business, Starter for solo) only:
+  //   - a small badge alongside the tier name
+  //   - the filled teal banner shown directly under the CTA button
   // We deliberately don't use the word "free" — billing genuinely
   // starts once the account passes 5 appointments in a calendar month.
   lowRiskBadge: string;
   subscriptionStartsNote: string;
-  noChargeUnderCta: string;
   cardPerMonth: string;
   cardBilledMonthlyLine1: string;
   cardBilledMonthlyLine2: string;
@@ -93,10 +91,8 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
     mostPopularBadge: 'Most Popular',
     trialBadgeDuration: '14-day free trial',
     trialBadgeNoCard: 'No card required to start',
-    lowRiskBadge: 'Low-risk start',
+    lowRiskBadge: 'No-risk start',
     subscriptionStartsNote: 'Subscription starts after 5 appointments/month.',
-    noChargeUnderCta:
-      'No subscription charge until you pass 5 appointments in a month.',
     cardPerMonth: '/ month',
     cardBilledMonthlyLine1: 'Billed monthly.',
     cardBilledMonthlyLine2: 'Cancel anytime.',
@@ -133,8 +129,6 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
     trialBadgeNoCard: 'بدون بطاقة للبدء',
     lowRiskBadge: 'بداية بدون مخاطر',
     subscriptionStartsNote: 'يبدأ الاشتراك بعد 5 مواعيد/شهر.',
-    noChargeUnderCta:
-      'لا يُحتسب الاشتراك حتى تتجاوز 5 مواعيد في الشهر.',
     cardPerMonth: '/ شهر',
     cardBilledMonthlyLine1: 'فوترة شهرية.',
     cardBilledMonthlyLine2: 'ألغِ في أي وقت.',

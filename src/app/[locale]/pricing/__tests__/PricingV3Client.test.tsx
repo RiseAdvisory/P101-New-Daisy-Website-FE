@@ -149,19 +149,19 @@ describe('PricingV3Client', () => {
       expect(screen.getByText('Contact Us')).toBeInTheDocument();
     });
 
-    it('renders the "Low-risk start" treatment on the Basic tier only', () => {
+    it('renders the "No-risk start" treatment on the Basic tier only', () => {
       render(<PricingV3Client persona="business" locale="en" />);
-      // Badge, under-price note, and under-CTA note each render exactly
-      // once (only on the Basic card — not on Growth or Business).
-      expect(screen.getAllByText('Low-risk start').length).toBe(1);
+      // The "No-risk start" badge renders exactly once (only on the Basic
+      // card — not on Growth or Business).
+      expect(screen.getAllByText('No-risk start').length).toBe(1);
+      // The subscription-starts banner is laid out on every card (under the
+      // CTA) to keep the "Included with your plan" sections aligned, but
+      // hidden (.invisible) on all but the entry tier — so it should be
+      // VISIBLE exactly once.
       expect(
-        screen.getAllByText(/Subscription starts after 5 appointments\/month/i)
-          .length,
-      ).toBe(1);
-      expect(
-        screen.getAllByText(
-          /No subscription charge until you pass 5 appointments in a month/i,
-        ).length,
+        screen
+          .getAllByText(/Subscription starts after 5 appointments\/month/i)
+          .filter((el) => !el.closest('.invisible')).length,
       ).toBe(1);
     });
 
@@ -232,17 +232,15 @@ describe('PricingV3Client', () => {
       ).toBeInTheDocument();
     });
 
-    it('renders the "Low-risk start" treatment on the Starter tier only', () => {
+    it('renders the "No-risk start" treatment on the Starter tier only', () => {
       render(<PricingV3Client persona="professional" locale="en" />);
-      expect(screen.getAllByText('Low-risk start').length).toBe(1);
+      expect(screen.getAllByText('No-risk start').length).toBe(1);
+      // Banner is laid out on every card for alignment but visible only on
+      // the entry (Starter) tier.
       expect(
-        screen.getAllByText(/Subscription starts after 5 appointments\/month/i)
-          .length,
-      ).toBe(1);
-      expect(
-        screen.getAllByText(
-          /No subscription charge until you pass 5 appointments in a month/i,
-        ).length,
+        screen
+          .getAllByText(/Subscription starts after 5 appointments\/month/i)
+          .filter((el) => !el.closest('.invisible')).length,
       ).toBe(1);
     });
 
