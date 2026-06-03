@@ -42,10 +42,9 @@ export const PricingCardV3 = ({
         </div>
       )}
 
-      {/* Title block. Reserves min-h so the entry tier's extra
-          "Subscription starts..." caption doesn't push its CTA lower
-          than the other cards' CTAs. */}
-      <div className="mb-3 min-h-[4rem]">
+      {/* Title block. min-h keeps the name/best-for rows the same height
+          across tiers so the trial pills below line up. */}
+      <div className="mb-4 min-h-[2.5rem]">
         <div className="mb-1 flex flex-wrap items-center gap-2">
           <span className="text-sm font-semibold uppercase tracking-wide text-[#8B6554] ltr:font-montserrat rtl:font-cairo">
             {tier.displayName}
@@ -59,11 +58,6 @@ export const PricingCardV3 = ({
         <p className="text-xs font-medium text-[#586968] ltr:font-montserrat rtl:font-cairo">
           {tier.bestFor}
         </p>
-        {tier.showLowRiskStart && (
-          <p className="mt-1 text-xs font-medium text-[#14736F] ltr:font-montserrat rtl:font-cairo">
-            {shared.subscriptionStartsNote}
-          </p>
-        )}
       </div>
 
       {/* Trial pills: blue palette matching the live /pricing page. The
@@ -105,8 +99,7 @@ export const PricingCardV3 = ({
       <Link
         href={localePath('/get-the-app', locale)}
         className={cn(
-          'block rounded-lg py-3 text-center text-sm font-semibold transition-colors ltr:font-montserrat rtl:font-cairo',
-          tier.showLowRiskStart ? 'mb-3' : 'mb-8',
+          'mb-4 block rounded-lg py-3 text-center text-sm font-semibold transition-colors ltr:font-montserrat rtl:font-cairo',
           popular
             ? 'bg-primary text-white hover:bg-primary/90'
             : 'border border-[#172524] text-[#172524] hover:bg-[#F8F5F3]',
@@ -115,11 +108,28 @@ export const PricingCardV3 = ({
         {persona.ctaPrimary}
       </Link>
 
-      {tier.showLowRiskStart && (
-        <p className="mb-6 text-center text-xs text-[#586968] ltr:font-montserrat rtl:font-cairo">
-          {shared.noChargeUnderCta}
-        </p>
-      )}
+      {/* Subscription-starts banner. The entry tier's strongest selling point,
+          kept as a single filled teal banner (the duplicate under-CTA line was
+          removed) and placed directly under the CTA. Rendered on every tier
+          but hidden (visibility:hidden, which preserves layout) on the others
+          so the "Included with your plan" sections stay aligned across all
+          three cards. */}
+      <div
+        className={cn(
+          'mb-6 flex w-full items-center gap-2 rounded-lg bg-[#14736F] px-3 py-2 ltr:font-montserrat rtl:font-cairo',
+          !tier.showLowRiskStart && 'invisible',
+        )}
+        aria-hidden={tier.showLowRiskStart ? undefined : true}
+      >
+        <Check
+          className="h-4 w-4 flex-shrink-0 text-white"
+          strokeWidth={2.5}
+          aria-hidden="true"
+        />
+        <span className="text-xs font-semibold leading-snug text-white">
+          {shared.subscriptionStartsNote}
+        </span>
+      </div>
 
       <div>
         <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#586968] ltr:font-montserrat rtl:font-cairo">
