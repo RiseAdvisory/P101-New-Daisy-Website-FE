@@ -170,4 +170,38 @@ describe('Footer', () => {
     });
   });
 
+  describe('persona landing links (crawlable, anti-orphan)', () => {
+    // These direct links exist so /business and /professional are reachable by
+    // crawlers — the persona toggle navigates via router.push, which Googlebot
+    // cannot follow, leaving the landing pages orphaned. See SEO blast-radius
+    // review (June 2026).
+    it('renders a direct crawlable link to the /professional landing page', () => {
+      const { usePathname } = require('next/navigation');
+      usePathname.mockReturnValue('/en/about');
+
+      render(<Footer />);
+
+      const links = screen.getAllByRole('link');
+      const proLink = links.find(
+        (l) => l.getAttribute('href') === '/en/professional',
+      );
+      expect(proLink).toBeDefined();
+      expect(proLink).toHaveTextContent(/For Professionals/i);
+    });
+
+    it('renders a direct crawlable link to the /business landing page', () => {
+      const { usePathname } = require('next/navigation');
+      usePathname.mockReturnValue('/en/about');
+
+      render(<Footer />);
+
+      const links = screen.getAllByRole('link');
+      const bizLink = links.find(
+        (l) => l.getAttribute('href') === '/en/business',
+      );
+      expect(bizLink).toBeDefined();
+      expect(bizLink).toHaveTextContent(/For Business/i);
+    });
+  });
+
 });

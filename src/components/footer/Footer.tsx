@@ -99,6 +99,31 @@ export const Footer = () => {
           </nav>
         </div>
 
+        {/* Persona landing links — direct crawlable links so these key pages
+            aren't orphaned (the persona toggle navigates via JS, which crawlers
+            can't follow). localePath() points straight at the canonical
+            /{locale}/... URL, avoiding a redirect hop. */}
+        <nav
+          aria-label={locale === 'ar' ? 'استكشف ديزي' : 'Explore Daisy'}
+          className="mt-12 flex flex-wrap items-center gap-x-6 gap-y-2"
+        >
+          <span className="text-sm font-semibold uppercase tracking-wider text-white/60 ltr:font-montserrat">
+            {locale === 'ar' ? 'استكشف' : 'Explore'}
+          </span>
+          <Link
+            href={localePath('/business', locale)}
+            className="text-sm text-white/80 transition-colors hover:text-white ltr:font-montserrat"
+          >
+            {locale === 'ar' ? 'للأعمال' : 'For Business'}
+          </Link>
+          <Link
+            href={localePath('/professional', locale)}
+            className="text-sm text-white/80 transition-colors hover:text-white ltr:font-montserrat"
+          >
+            {locale === 'ar' ? 'للمحترفين' : 'For Professionals'}
+          </Link>
+        </nav>
+
         {/* Divider */}
         <div className="my-10 h-px bg-white/10" />
 
