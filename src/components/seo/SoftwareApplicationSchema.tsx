@@ -9,21 +9,31 @@ export function SoftwareApplicationSchema() {
     url: 'https://www.jointhedaisy.com',
     description:
       'Beauty and wellness booking management software for salons, spas, and freelance service providers. Features online booking, appointment management, client management, payment processing, and cashback rewards.',
+    // Prices mirror the live /pricing page (monthly billing only — annual
+    // billing is currently hidden). Keep in sync with
+    // src/lib/constants/pricing/v3/pricingV3Business.ts and
+    // pricingV3Professional.ts when tiers change.
     offers: {
       '@type': 'AggregateOffer',
       priceCurrency: 'USD',
-      lowPrice: '0',
+      lowPrice: '25',
       highPrice: '250',
       offerCount: '6',
       offers: [
-        // Professional Plans (for freelancers/solo professionals)
+        // Solo Professional Plans (freelancers/solo professionals)
         {
           '@type': 'Offer',
-          name: 'Starter Plan (Professional)',
-          price: '0',
+          name: 'Starter Plan (Solo Professional)',
+          price: '25',
           priceCurrency: 'USD',
+          priceSpecification: {
+            '@type': 'UnitPriceSpecification',
+            price: '25',
+            priceCurrency: 'USD',
+            billingDuration: 'P1M',
+          },
           description:
-            'Free plan for professionals starting out. First 100 bookings free, 1 user/calendar, 1 workspace, themed profile site, schedule management, POS, client management, WhatsApp notifications, and basic support.',
+            'For solo professionals getting started. 14-day free trial, no card required; subscription starts after 5 appointments per month. Branded booking site, personal service menu, WhatsApp and Instagram booking, appointment scheduling, payments, reviews and client records, and 50 AI receptionist conversations.',
         },
         {
           '@type': 'Offer',
@@ -35,18 +45,13 @@ export function SoftwareApplicationSchema() {
             price: '50',
             priceCurrency: 'USD',
             billingDuration: 'P1M',
-            referenceQuantity: {
-              '@type': 'QuantitativeValue',
-              value: '500',
-              unitText: 'annual',
-            },
           },
           description:
-            'For solo experienced professionals. 1 user/calendar, 1 workspace, unlimited bookings, online payments, automated reminders, subscription packages, marketplace visibility, advanced analytics, free data migration, and priority support.',
+            'For solo professionals growing their client base. Everything in Starter plus online payments with cancellation policy, automated reminders, prepaid service packages, detailed reviews and feedback, and priority support.',
         },
         {
           '@type': 'Offer',
-          name: 'Elite Plan (Professional)',
+          name: 'Elite Plan (Solo Professional)',
           price: '100',
           priceCurrency: 'USD',
           priceSpecification: {
@@ -54,16 +59,11 @@ export function SoftwareApplicationSchema() {
             price: '100',
             priceCurrency: 'USD',
             billingDuration: 'P1M',
-            referenceQuantity: {
-              '@type': 'QuantitativeValue',
-              value: '1000',
-              unitText: 'annual',
-            },
           },
           description:
-            'For solo experienced professionals needing multi-location support. 1 user/calendar, 2 workspaces, 2 countries, unlimited bookings, online payments, automated reminders, advanced analytics, free data migration, and priority support.',
+            'For high-volume solo professionals. Everything in Professional plus 2 workspaces across 2 countries, advanced AI receptionist customization, email and WhatsApp template customization, advanced analytics, and free data migration with assisted onboarding.',
         },
-        // Business Plans (for salons/spas with teams)
+        // Business Plans (salons/spas with teams)
         {
           '@type': 'Offer',
           name: 'Basic Plan (Business)',
@@ -74,14 +74,9 @@ export function SoftwareApplicationSchema() {
             price: '50',
             priceCurrency: 'USD',
             billingDuration: 'P1M',
-            referenceQuantity: {
-              '@type': 'QuantitativeValue',
-              value: '42',
-              unitText: 'monthly when billed annually',
-            },
           },
           description:
-            'For businesses starting out. 14-day trial, 5 users/calendars, 1 workspace, unlimited bookings, POS, client management, WhatsApp notifications, themed profile site, and basic support.',
+            'For small teams getting online. 14-day free trial, no card required; subscription starts after 5 appointments per month. 5 team members, 1 workspace, branded booking site, team calendar, payments, customer messaging, and 50 AI receptionist conversations.',
         },
         {
           '@type': 'Offer',
@@ -93,14 +88,9 @@ export function SoftwareApplicationSchema() {
             price: '150',
             priceCurrency: 'USD',
             billingDuration: 'P1M',
-            referenceQuantity: {
-              '@type': 'QuantitativeValue',
-              value: '128',
-              unitText: 'monthly when billed annually',
-            },
           },
           description:
-            'For growing businesses. 14-day trial, 10 users/calendars, 2 workspaces, unlimited bookings, online payments, automated reminders, subscription packages, marketplace visibility, and priority support.',
+            'For active salons and spas. Everything in Basic plus 10 team members, 2 workspaces, online payments, automated reminders, reviews, customer follow-up tools, and priority support.',
         },
         {
           '@type': 'Offer',
@@ -112,14 +102,9 @@ export function SoftwareApplicationSchema() {
             price: '250',
             priceCurrency: 'USD',
             billingDuration: 'P1M',
-            referenceQuantity: {
-              '@type': 'QuantitativeValue',
-              value: '208',
-              unitText: 'monthly when billed annually',
-            },
           },
           description:
-            'For established businesses with multiple locations. 14-day trial, 15 users/calendars, 4 workspaces, unlimited bookings, advanced analytics, free data migration, free assisted onboarding, and all Growth plan features.',
+            'For growing businesses with multiple branches. Everything in Growth plus 15 team members, 4 workspaces, advanced analytics, AI customization, free data migration, and assisted onboarding.',
         },
       ],
     },

@@ -57,15 +57,21 @@ describe('SoftwareApplicationSchema', () => {
       >;
     });
 
-    it('contains Starter Plan with correct pricing (Free)', () => {
+    it('contains Starter Plan with correct pricing ($25/month, not free)', () => {
       const starterPlan = offers.find((o) =>
         (o.name as string).includes('Starter')
       );
 
       expect(starterPlan).toBeDefined();
-      expect(starterPlan?.price).toBe('0');
+      expect(starterPlan?.price).toBe('25');
       expect(starterPlan?.priceCurrency).toBe('USD');
-      expect((starterPlan?.description as string)).toContain('First 100 bookings free');
+      // Guardrail: the entry tier must not be described as "free" —
+      // it's a 14-day trial with subscription starting after 5
+      // appointments/month.
+      expect((starterPlan?.description as string)).not.toMatch(/free plan/i);
+      expect((starterPlan?.description as string)).toContain(
+        'subscription starts after 5 appointments per month',
+      );
     });
 
     it('contains Professional Plan with correct pricing ($50/month)', () => {
@@ -116,8 +122,8 @@ describe('SoftwareApplicationSchema', () => {
 
       expect(basicPlan).toBeDefined();
       expect(basicPlan?.price).toBe('50');
-      expect((basicPlan?.description as string)).toContain('5 users/calendars');
-      expect((basicPlan?.description as string)).toContain('14-day trial');
+      expect((basicPlan?.description as string)).toContain('5 team members');
+      expect((basicPlan?.description as string)).toContain('14-day free trial');
     });
 
     it('contains Growth Business Plan with correct pricing ($150/month)', () => {
@@ -127,7 +133,7 @@ describe('SoftwareApplicationSchema', () => {
 
       expect(growthPlan).toBeDefined();
       expect(growthPlan?.price).toBe('150');
-      expect((growthPlan?.description as string)).toContain('10 users/calendars');
+      expect((growthPlan?.description as string)).toContain('10 team members');
       expect((growthPlan?.description as string)).toContain('2 workspaces');
     });
 
@@ -136,7 +142,7 @@ describe('SoftwareApplicationSchema', () => {
 
       expect(businessPlan).toBeDefined();
       expect(businessPlan?.price).toBe('250');
-      expect((businessPlan?.description as string)).toContain('15 users/calendars');
+      expect((businessPlan?.description as string)).toContain('15 team members');
       expect((businessPlan?.description as string)).toContain('4 workspaces');
     });
   });
@@ -158,7 +164,7 @@ describe('SoftwareApplicationSchema', () => {
     const scriptTag = container.querySelector('script[type="application/ld+json"]');
     const schema = JSON.parse(scriptTag?.innerHTML || '');
 
-    expect(schema.offers.lowPrice).toBe('0');
+    expect(schema.offers.lowPrice).toBe('25');
     expect(schema.offers.highPrice).toBe('250');
     expect(schema.offers.priceCurrency).toBe('USD');
   });
