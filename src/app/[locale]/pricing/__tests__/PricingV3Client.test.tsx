@@ -289,13 +289,33 @@ describe('PricingV3Client', () => {
       expect(screen.getByText('Setup')).toBeInTheDocument();
     });
 
-    it('persists the billing period choice across remounts via localStorage', () => {
-      window.localStorage.setItem('pricingV3BillingPeriod', 'monthly');
+    it('shows monthly prices by default while the billing toggle is hidden', () => {
       render(<PricingV3Client persona="business" locale="en" />);
       // Monthly Business prices: $50 / $150 / $250
       expect(screen.getByText('$50')).toBeInTheDocument();
       expect(screen.getByText('$150')).toBeInTheDocument();
       expect(screen.getByText('$250')).toBeInTheDocument();
+    });
+
+    it('does NOT render the Monthly/Annual billing toggle (annual pricing hidden for now)', () => {
+      render(<PricingV3Client persona="business" locale="en" />);
+      expect(screen.queryByText('Annual')).not.toBeInTheDocument();
+      expect(screen.queryByText('2 Months Free')).not.toBeInTheDocument();
+      expect(
+        screen.queryByRole('switch', { name: /Switch to/i }),
+      ).not.toBeInTheDocument();
+    });
+
+    it('ignores a previously saved "annual" preference and still shows monthly prices', () => {
+      // Visitors who picked Annual before it was hidden must not be
+      // locked into annual prices with no visible toggle to escape.
+      window.localStorage.setItem('pricingV3BillingPeriod', 'annual');
+      render(<PricingV3Client persona="business" locale="en" />);
+      expect(screen.getByText('$50')).toBeInTheDocument();
+      expect(screen.getByText('$150')).toBeInTheDocument();
+      expect(screen.getByText('$250')).toBeInTheDocument();
+      // Annual per-month prices must not appear.
+      expect(screen.queryByText('$42')).not.toBeInTheDocument();
     });
   });
 });

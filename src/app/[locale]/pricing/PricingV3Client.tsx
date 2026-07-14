@@ -34,12 +34,20 @@ interface Props {
 
 const BILLING_STORAGE_KEY = 'pricingV3BillingPeriod';
 
+// Annual billing is temporarily hidden — monthly pricing only for now.
+// Flip to true to bring back the Monthly/Annual toggle (all annual data,
+// copy, and card logic is kept intact behind this flag). While false we
+// also ignore/skip localStorage so visitors who previously picked
+// "annual" aren't locked into annual prices with no visible toggle.
+const SHOW_BILLING_TOGGLE = false;
+
 export const PricingV3Client = ({ persona, locale }: Props) => {
   const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'annual'>(
-    'annual',
+    SHOW_BILLING_TOGGLE ? 'annual' : 'monthly',
   );
 
   useEffect(() => {
+    if (!SHOW_BILLING_TOGGLE) return;
     if (typeof window === 'undefined') return;
     const saved = window.localStorage.getItem(BILLING_STORAGE_KEY);
     if (saved === 'monthly' || saved === 'annual') {
@@ -48,6 +56,7 @@ export const PricingV3Client = ({ persona, locale }: Props) => {
   }, []);
 
   useEffect(() => {
+    if (!SHOW_BILLING_TOGGLE) return;
     if (typeof window === 'undefined') return;
     window.localStorage.setItem(BILLING_STORAGE_KEY, billingPeriod);
   }, [billingPeriod]);
@@ -82,6 +91,7 @@ export const PricingV3Client = ({ persona, locale }: Props) => {
         tiers={tiers}
         billingPeriod={billingPeriod}
         setBillingPeriod={setBillingPeriod}
+        showBillingToggle={SHOW_BILLING_TOGGLE}
         locale={locale}
         shared={shared}
         personaCopy={personaCopy}
