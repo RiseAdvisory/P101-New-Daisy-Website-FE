@@ -18,6 +18,9 @@ interface Props {
   tiers: PricingTierV3[];
   billingPeriod: 'monthly' | 'annual';
   setBillingPeriod: Dispatch<SetStateAction<'monthly' | 'annual'>>;
+  /** When false, the Monthly/Annual toggle (and its "2 Months Free"
+      badge) is not rendered — monthly pricing only. */
+  showBillingToggle: boolean;
   locale: string;
   shared: SharedCopy;
   personaCopy: PersonaCopy;
@@ -28,6 +31,7 @@ export const PricingHeroV3 = ({
   tiers,
   billingPeriod,
   setBillingPeriod,
+  showBillingToggle,
   locale,
   shared,
   personaCopy,
@@ -54,8 +58,15 @@ export const PricingHeroV3 = ({
         </div>
 
         {/* Persona selector. The "Pricing for:" label sits above the two
-            buttons (not inline) so the toggle stays visually centered. */}
-        <div className="mx-auto mb-8 flex w-fit flex-col items-center gap-2">
+            buttons (not inline) so the toggle stays visually centered.
+            When the billing toggle is hidden, this block takes over its
+            bottom margin so the cards keep the same breathing room. */}
+        <div
+          className={cn(
+            'mx-auto flex w-fit flex-col items-center gap-2',
+            showBillingToggle ? 'mb-8' : 'mb-14',
+          )}
+        >
           <span
             id="persona-selector-label"
             className="text-sm font-medium text-white/70 ltr:font-montserrat rtl:font-cairo"
@@ -94,7 +105,8 @@ export const PricingHeroV3 = ({
           </div>
         </div>
 
-        {/* Billing toggle */}
+        {/* Billing toggle (hidden while annual pricing is off) */}
+        {showBillingToggle && (
         <div className="mx-auto mb-14 flex w-fit flex-col items-center gap-2">
           <div className="flex items-center gap-4">
             <button
@@ -139,6 +151,7 @@ export const PricingHeroV3 = ({
             {shared.twoMonthsFreeBadge}
           </span>
         </div>
+        )}
 
         {/* Cards */}
         <div className="grid gap-8 md:grid-cols-3">
