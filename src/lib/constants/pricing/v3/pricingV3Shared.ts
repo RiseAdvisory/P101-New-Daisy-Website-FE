@@ -18,6 +18,12 @@ export type Persona = 'business' | 'professional';
 export interface PersonaCopy {
   heroHeadline: string;
   heroSubheadline: string;
+  // Teal banner under the entry-tier CTA. Lives in PersonaCopy (not
+  // SharedCopy) because the plan add-on differs: +$50/month on Business
+  // Basic, +$25/month on Solo Starter. The entry tier itself is billed
+  // at a $1/month base; the add-on applies only in calendar months
+  // where the account passes 5 appointments.
+  subscriptionStartsNote: string;
   howItWorksTitle: string;
   howItWorksCard1: { title: string; body: string };
   howItWorksCard2: { title: string; body: string };
@@ -48,14 +54,12 @@ export interface SharedCopy {
   // the duration and the no-card promise read as distinct claims.
   trialBadgeDuration: string;
   trialBadgeNoCard: string;
-  // First-tier "No-risk start" messaging. Two strings sit on the entry
-  // tier (Basic for business, Starter for solo) only:
-  //   - a small badge alongside the tier name
-  //   - the filled teal banner shown directly under the CTA button
-  // We deliberately don't use the word "free" — billing genuinely
-  // starts once the account passes 5 appointments in a calendar month.
+  // First-tier "No-risk start" badge shown alongside the entry tier's
+  // name (Basic for business, Starter for solo). The matching teal
+  // banner under the CTA lives in PersonaCopy.subscriptionStartsNote
+  // because the plan add-on amount differs per persona. We deliberately
+  // don't use the word "free" — the entry tier bills a $1/month base.
   lowRiskBadge: string;
-  subscriptionStartsNote: string;
   cardPerMonth: string;
   cardBilledMonthlyLine1: string;
   cardBilledMonthlyLine2: string;
@@ -92,7 +96,6 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
     trialBadgeDuration: '14-day free trial',
     trialBadgeNoCard: 'No card required to start',
     lowRiskBadge: 'No-risk start',
-    subscriptionStartsNote: 'Subscription starts after 5 appointments/month.',
     cardPerMonth: '/ month',
     cardBilledMonthlyLine1: 'Billed monthly.',
     cardBilledMonthlyLine2: 'Cancel anytime.',
@@ -128,7 +131,6 @@ export const SHARED_COPY: I18nContent<SharedCopy> = {
     trialBadgeDuration: 'تجربة مجانية 14 يوماً',
     trialBadgeNoCard: 'بدون بطاقة للبدء',
     lowRiskBadge: 'بداية بدون مخاطر',
-    subscriptionStartsNote: 'يبدأ الاشتراك بعد 5 مواعيد/شهر.',
     cardPerMonth: '/ شهر',
     cardBilledMonthlyLine1: 'فوترة شهرية.',
     cardBilledMonthlyLine2: 'ألغِ في أي وقت.',
@@ -162,6 +164,8 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
       heroHeadline: 'Plans for Booking, Payments, and AI Receptionist Support',
       heroSubheadline:
         'Manage your team, bookings, payments, reviews, and customer messages in one platform, with an AI receptionist for WhatsApp, Instagram, and your booking site.',
+      subscriptionStartsNote:
+        '+$50/month once you pass 5 appointments in a month.',
       howItWorksTitle: 'How Daisy Pricing Works',
       howItWorksCard1: {
         title: 'Subscription = Business Tools',
@@ -196,6 +200,8 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
       heroHeadline: 'خطط للحجوزات والمدفوعات ودعم موظف الاستقبال الذكي',
       heroSubheadline:
         'أدر فريقك وحجوزاتك ومدفوعاتك وتقييماتك ورسائل عملائك في منصة واحدة، مع موظف استقبال ذكي لواتساب وإنستغرام وموقع حجوزاتك.',
+      subscriptionStartsNote:
+        '+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر.',
       howItWorksTitle: 'كيف تعمل أسعار ديزي',
       howItWorksCard1: {
         title: 'الاشتراك = أدوات الأعمال',
@@ -231,6 +237,8 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
       heroHeadline: 'Plans for Booking, Payments, and AI Receptionist Support',
       heroSubheadline:
         'Create your branded booking site, manage appointments, accept payments, and respond faster to customers through WhatsApp, Instagram, and AI receptionist support.',
+      subscriptionStartsNote:
+        '+$25/month once you pass 5 appointments in a month.',
       howItWorksTitle: 'How Daisy Pricing Works',
       howItWorksCard1: {
         title: 'Subscription = Your Tools',
@@ -265,6 +273,8 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
       heroHeadline: 'خطط للحجوزات والمدفوعات ودعم موظف الاستقبال الذكي',
       heroSubheadline:
         'أنشئ موقع حجوزاتك بعلامتك التجارية، وأدر مواعيدك، واقبل المدفوعات، وردّ على عملائك بشكل أسرع عبر واتساب وإنستغرام ودعم موظف الاستقبال الذكي.',
+      subscriptionStartsNote:
+        '+25 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر.',
       howItWorksTitle: 'كيف تعمل أسعار ديزي',
       howItWorksCard1: {
         title: 'الاشتراك = أدواتك',
@@ -484,9 +494,9 @@ export const SHARED_FAQ: I18nContent<FAQItem[]> = {
         'Payment processing fees are separate from your Daisy subscription and depend on the payment provider used for your account. Applicable fees are shown before payments are activated.',
     },
     {
-      question: 'When Does the First-Tier Subscription Get Charged?',
+      question: 'How Does the $1/Month Entry Tier Work?',
       answer:
-        'The first-tier subscription is not charged until your account passes 5 appointments in a calendar month. After that, the first-tier subscription fee applies based on the plan and billing cycle you selected.',
+        'The entry tier (Basic for businesses, Starter for solo professionals) costs $1 per month and keeps your full workspace active. In any calendar month where your account passes 5 appointments, the plan price is added on top: +$50/month on Basic and +$25/month on Starter. In quieter months, you only pay the $1 base.',
     },
   ],
   ar: [
@@ -521,9 +531,9 @@ export const SHARED_FAQ: I18nContent<FAQItem[]> = {
         'رسوم معالجة المدفوعات منفصلة عن اشتراك ديزي وتعتمد على مزود الدفع المستخدم لحسابك. تُعرض الرسوم المطبّقة قبل تفعيل المدفوعات.',
     },
     {
-      question: 'متى يُحتسب اشتراك الخطة الأولى؟',
+      question: 'كيف تعمل خطة الدخول بدولار واحد شهرياً؟',
       answer:
-        'لا يُحتسب اشتراك الخطة الأولى حتى يتجاوز حسابك 5 مواعيد في الشهر التقويمي. بعد ذلك، تنطبق رسوم اشتراك الخطة الأولى وفقاً للخطة ودورة الفوترة التي اخترتها.',
+        'تكلف خطة الدخول (الأساسية للأعمال، والمبتدئ للمحترفين المستقلين) دولاراً واحداً شهرياً وتُبقي مساحة عملك الكاملة نشطة. في أي شهر تقويمي يتجاوز فيه حسابك 5 مواعيد، يُضاف سعر الخطة: +50 دولاراً شهرياً على الأساسية و+25 دولاراً شهرياً على المبتدئ. في الأشهر الأهدأ، تدفع الدولار الواحد فقط.',
     },
   ],
 };

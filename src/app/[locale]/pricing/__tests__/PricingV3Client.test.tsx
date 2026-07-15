@@ -154,15 +154,25 @@ describe('PricingV3Client', () => {
       // The "No-risk start" badge renders exactly once (only on the Basic
       // card — not on Growth or Business).
       expect(screen.getAllByText('No-risk start').length).toBe(1);
-      // The subscription-starts banner is laid out on every card (under the
-      // CTA) to keep the "Included with your plan" sections aligned, but
+      // The plan add-on banner is laid out on every card (under the CTA)
+      // to keep the "Included with your plan" sections aligned, but
       // hidden (.invisible) on all but the entry tier — so it should be
-      // VISIBLE exactly once.
+      // VISIBLE exactly once. Business Basic adds +$50/month past 5
+      // appointments on top of its $1/month base.
       expect(
         screen
-          .getAllByText(/Subscription starts after 5 appointments\/month/i)
+          .getAllByText(/\+\$50\/month once you pass 5 appointments/i)
           .filter((el) => !el.closest('.invisible')).length,
       ).toBe(1);
+    });
+
+    it('advertises the entry tier at its real $1/month base price', () => {
+      render(<PricingV3Client persona="business" locale="en" />);
+      // The Basic card headline price is the actual Stripe base charge —
+      // $1/month — not the old $50 plan price (which now appears only as
+      // the +$50 add-on in the teal banner).
+      expect(screen.getByText('$1')).toBeInTheDocument();
+      expect(screen.queryByText('$50')).not.toBeInTheDocument();
     });
 
     it('does not describe the entry tier as "free"', () => {
@@ -236,12 +246,21 @@ describe('PricingV3Client', () => {
       render(<PricingV3Client persona="professional" locale="en" />);
       expect(screen.getAllByText('No-risk start').length).toBe(1);
       // Banner is laid out on every card for alignment but visible only on
-      // the entry (Starter) tier.
+      // the entry (Starter) tier. Solo Starter adds +$25/month past 5
+      // appointments on top of its $1/month base.
       expect(
         screen
-          .getAllByText(/Subscription starts after 5 appointments\/month/i)
+          .getAllByText(/\+\$25\/month once you pass 5 appointments/i)
           .filter((el) => !el.closest('.invisible')).length,
       ).toBe(1);
+    });
+
+    it('advertises the Starter tier at its real $1/month base price', () => {
+      render(<PricingV3Client persona="professional" locale="en" />);
+      expect(screen.getByText('$1')).toBeInTheDocument();
+      // $25 must not appear as a headline price — only inside the
+      // +$25 add-on banner text.
+      expect(screen.queryByText('$25')).not.toBeInTheDocument();
     });
 
     it('uses the dynamic "Start Solo Trial" CTA', () => {
@@ -260,13 +279,17 @@ describe('PricingV3Client', () => {
       ).toBeInTheDocument();
     });
 
-    it('renders the first-tier-billing FAQ', () => {
+    it('renders the $1 entry-tier billing FAQ with both add-on amounts', () => {
       render(<PricingV3Client persona="business" locale="en" />);
       expect(
-        screen.getByText(/When Does the First-Tier Subscription Get Charged/i),
+        screen.getByText(/How Does the \$1\/Month Entry Tier Work/i),
       ).toBeInTheDocument();
+      // The answer must spell out the real mechanics: $1 base + per-tier
+      // add-on in months past 5 appointments.
       expect(
-        screen.getByText(/until your account passes 5 appointments/i),
+        screen.getByText(
+          /\+\$50\/month on Basic and \+\$25\/month on Starter/i,
+        ),
       ).toBeInTheDocument();
     });
 
@@ -291,8 +314,8 @@ describe('PricingV3Client', () => {
 
     it('shows monthly prices by default while the billing toggle is hidden', () => {
       render(<PricingV3Client persona="business" locale="en" />);
-      // Monthly Business prices: $50 / $150 / $250
-      expect(screen.getByText('$50')).toBeInTheDocument();
+      // Monthly Business prices: $1 (entry base) / $150 / $250
+      expect(screen.getByText('$1')).toBeInTheDocument();
       expect(screen.getByText('$150')).toBeInTheDocument();
       expect(screen.getByText('$250')).toBeInTheDocument();
     });
@@ -311,7 +334,7 @@ describe('PricingV3Client', () => {
       // locked into annual prices with no visible toggle to escape.
       window.localStorage.setItem('pricingV3BillingPeriod', 'annual');
       render(<PricingV3Client persona="business" locale="en" />);
-      expect(screen.getByText('$50')).toBeInTheDocument();
+      expect(screen.getByText('$1')).toBeInTheDocument();
       expect(screen.getByText('$150')).toBeInTheDocument();
       expect(screen.getByText('$250')).toBeInTheDocument();
       // Annual per-month prices must not appear.

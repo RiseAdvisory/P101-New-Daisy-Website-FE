@@ -37,7 +37,11 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       bestFor: 'Best for small teams',
       description:
         'Get your business online with a branded booking site, team calendar, payments, and customer messaging in one system.',
-      monthlyPrice: 50,
+      // Entry tier bills a $1/month base; +$50/month applies only in
+      // months the account passes 5 appointments (see the teal banner /
+      // subscriptionStartsNote). The annual fields below predate the $1
+      // base and MUST be revisited before re-enabling the billing toggle.
+      monthlyPrice: 1,
       annualTotal: 500,
       annualPerMonth: 42,
       annualSavingsLine: 'Save $100 (2 Months Free)',
@@ -98,7 +102,8 @@ export const BUSINESS_TIERS_V3: I18nContent<PricingTierV3[]> = {
       bestFor: 'الأنسب للفرق الصغيرة',
       description:
         'ابدأ نشاطك على الإنترنت بموقع حجوزات بعلامتك التجارية، وتقويم للفريق، ومدفوعات، ومراسلات العملاء في نظام واحد.',
-      monthlyPrice: 50,
+      // $1/month base; +$50/month applies past 5 appointments/month.
+      monthlyPrice: 1,
       annualTotal: 500,
       annualPerMonth: 42,
       annualSavingsLine: 'وفّر 100 دولار (شهران مجاناً)',
