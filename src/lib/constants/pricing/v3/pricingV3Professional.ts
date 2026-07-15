@@ -15,7 +15,11 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       bestFor: 'Best for getting started',
       description:
         'Create a professional booking site, manage appointments, accept payments, and present your services from one place.',
-      monthlyPrice: 25,
+      // Entry tier bills a $1/month base; +$25/month applies only in
+      // months the account passes 5 appointments (see the teal banner /
+      // subscriptionStartsNote). The annual fields below predate the $1
+      // base and MUST be revisited before re-enabling the billing toggle.
+      monthlyPrice: 1,
       annualTotal: 250,
       annualPerMonth: 21,
       annualSavingsLine: 'Save $50 (2 Months Free)',
@@ -76,7 +80,8 @@ export const PROFESSIONAL_TIERS_V3: I18nContent<PricingTierV3[]> = {
       bestFor: 'الأنسب للبدء',
       description:
         'أنشئ موقع حجوزات احترافي، وأدر مواعيدك، واقبل المدفوعات، واعرض خدماتك من مكان واحد.',
-      monthlyPrice: 25,
+      // $1/month base; +$25/month applies past 5 appointments/month.
+      monthlyPrice: 1,
       annualTotal: 250,
       annualPerMonth: 21,
       annualSavingsLine: 'وفّر 50 دولاراً (شهران مجاناً)',

@@ -108,12 +108,13 @@ export const PricingCardV3 = ({
         {persona.ctaPrimary}
       </Link>
 
-      {/* Subscription-starts banner. The entry tier's strongest selling point,
-          kept as a single filled teal banner (the duplicate under-CTA line was
-          removed) and placed directly under the CTA. Rendered on every tier
-          but hidden (visibility:hidden, which preserves layout) on the others
-          so the "Included with your plan" sections stay aligned across all
-          three cards. */}
+      {/* Plan add-on banner. The entry tier advertises its real $1/month
+          base price, and this teal banner states the add-on that applies
+          once the account passes 5 appointments in a month (+$50 business,
+          +$25 solo — hence PersonaCopy, not SharedCopy). Rendered on every
+          tier but hidden (visibility:hidden, which preserves layout) on the
+          others so the "Included with your plan" sections stay aligned
+          across all three cards. */}
       <div
         className={cn(
           'mb-6 flex w-full items-center gap-2 rounded-lg bg-[#14736F] px-3 py-2 ltr:font-montserrat rtl:font-cairo',
@@ -127,7 +128,7 @@ export const PricingCardV3 = ({
           aria-hidden="true"
         />
         <span className="text-xs font-semibold leading-snug text-white">
-          {shared.subscriptionStartsNote}
+          {persona.subscriptionStartsNote}
         </span>
       </div>
 

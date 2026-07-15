@@ -16,7 +16,7 @@ export function SoftwareApplicationSchema() {
     offers: {
       '@type': 'AggregateOffer',
       priceCurrency: 'USD',
-      lowPrice: '25',
+      lowPrice: '1',
       highPrice: '250',
       offerCount: '6',
       offers: [
@@ -24,16 +24,16 @@ export function SoftwareApplicationSchema() {
         {
           '@type': 'Offer',
           name: 'Starter Plan (Solo Professional)',
-          price: '25',
+          price: '1',
           priceCurrency: 'USD',
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
-            price: '25',
+            price: '1',
             priceCurrency: 'USD',
             billingDuration: 'P1M',
           },
           description:
-            'For solo professionals getting started. 14-day free trial, no card required; subscription starts after 5 appointments per month. Branded booking site, personal service menu, WhatsApp and Instagram booking, appointment scheduling, payments, reviews and client records, and 50 AI receptionist conversations.',
+            'For solo professionals getting started. 14-day free trial, no card required. $1 per month keeps the workspace active; an additional $25 per month applies in any calendar month with more than 5 appointments. Branded booking site, personal service menu, WhatsApp and Instagram booking, appointment scheduling, payments, reviews and client records, and 50 AI receptionist conversations.',
         },
         {
           '@type': 'Offer',
@@ -67,16 +67,16 @@ export function SoftwareApplicationSchema() {
         {
           '@type': 'Offer',
           name: 'Basic Plan (Business)',
-          price: '50',
+          price: '1',
           priceCurrency: 'USD',
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
-            price: '50',
+            price: '1',
             priceCurrency: 'USD',
             billingDuration: 'P1M',
           },
           description:
-            'For small teams getting online. 14-day free trial, no card required; subscription starts after 5 appointments per month. 5 team members, 1 workspace, branded booking site, team calendar, payments, customer messaging, and 50 AI receptionist conversations.',
+            'For small teams getting online. 14-day free trial, no card required. $1 per month keeps the workspace active; an additional $50 per month applies in any calendar month with more than 5 appointments. 5 team members, 1 workspace, branded booking site, team calendar, payments, customer messaging, and 50 AI receptionist conversations.',
         },
         {
           '@type': 'Offer',

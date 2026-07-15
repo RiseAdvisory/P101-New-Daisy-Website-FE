@@ -49,19 +49,19 @@ exports[`SoftwareApplicationSchema matches snapshot for JSON-LD schema structure
   "offers": {
     "@type": "AggregateOffer",
     "highPrice": "250",
-    "lowPrice": "25",
+    "lowPrice": "1",
     "offerCount": "6",
     "offers": [
       {
         "@type": "Offer",
-        "description": "For solo professionals getting started. 14-day free trial, no card required; subscription starts after 5 appointments per month. Branded booking site, personal service menu, WhatsApp and Instagram booking, appointment scheduling, payments, reviews and client records, and 50 AI receptionist conversations.",
+        "description": "For solo professionals getting started. 14-day free trial, no card required. $1 per month keeps the workspace active; an additional $25 per month applies in any calendar month with more than 5 appointments. Branded booking site, personal service menu, WhatsApp and Instagram booking, appointment scheduling, payments, reviews and client records, and 50 AI receptionist conversations.",
         "name": "Starter Plan (Solo Professional)",
-        "price": "25",
+        "price": "1",
         "priceCurrency": "USD",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
           "billingDuration": "P1M",
-          "price": "25",
+          "price": "1",
           "priceCurrency": "USD",
         },
       },
@@ -93,14 +93,14 @@ exports[`SoftwareApplicationSchema matches snapshot for JSON-LD schema structure
       },
       {
         "@type": "Offer",
-        "description": "For small teams getting online. 14-day free trial, no card required; subscription starts after 5 appointments per month. 5 team members, 1 workspace, branded booking site, team calendar, payments, customer messaging, and 50 AI receptionist conversations.",
+        "description": "For small teams getting online. 14-day free trial, no card required. $1 per month keeps the workspace active; an additional $50 per month applies in any calendar month with more than 5 appointments. 5 team members, 1 workspace, branded booking site, team calendar, payments, customer messaging, and 50 AI receptionist conversations.",
         "name": "Basic Plan (Business)",
-        "price": "50",
+        "price": "1",
         "priceCurrency": "USD",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
           "billingDuration": "P1M",
-          "price": "50",
+          "price": "1",
           "priceCurrency": "USD",
         },
       },

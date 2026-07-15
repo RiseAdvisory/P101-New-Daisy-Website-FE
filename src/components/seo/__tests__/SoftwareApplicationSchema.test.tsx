@@ -57,20 +57,23 @@ describe('SoftwareApplicationSchema', () => {
       >;
     });
 
-    it('contains Starter Plan with correct pricing ($25/month, not free)', () => {
+    it('contains Starter Plan with correct pricing ($1/month base, not free)', () => {
       const starterPlan = offers.find((o) =>
         (o.name as string).includes('Starter')
       );
 
       expect(starterPlan).toBeDefined();
-      expect(starterPlan?.price).toBe('25');
+      expect(starterPlan?.price).toBe('1');
       expect(starterPlan?.priceCurrency).toBe('USD');
       // Guardrail: the entry tier must not be described as "free" —
-      // it's a 14-day trial with subscription starting after 5
-      // appointments/month.
+      // it bills a real $1/month base, with +$25/month applying in
+      // months past 5 appointments.
       expect((starterPlan?.description as string)).not.toMatch(/free plan/i);
       expect((starterPlan?.description as string)).toContain(
-        'subscription starts after 5 appointments per month',
+        '$1 per month keeps the workspace active',
+      );
+      expect((starterPlan?.description as string)).toContain(
+        'additional $25 per month',
       );
     });
 
@@ -115,13 +118,16 @@ describe('SoftwareApplicationSchema', () => {
       >;
     });
 
-    it('contains Basic Business Plan with correct pricing ($50/month)', () => {
+    it('contains Basic Business Plan with correct pricing ($1/month base)', () => {
       const basicPlan = offers.find((o) =>
         (o.name as string).includes('Basic')
       );
 
       expect(basicPlan).toBeDefined();
-      expect(basicPlan?.price).toBe('50');
+      expect(basicPlan?.price).toBe('1');
+      expect((basicPlan?.description as string)).toContain(
+        'additional $50 per month',
+      );
       expect((basicPlan?.description as string)).toContain('5 team members');
       expect((basicPlan?.description as string)).toContain('14-day free trial');
     });
@@ -164,7 +170,7 @@ describe('SoftwareApplicationSchema', () => {
     const scriptTag = container.querySelector('script[type="application/ld+json"]');
     const schema = JSON.parse(scriptTag?.innerHTML || '');
 
-    expect(schema.offers.lowPrice).toBe('25');
+    expect(schema.offers.lowPrice).toBe('1');
     expect(schema.offers.highPrice).toBe('250');
     expect(schema.offers.priceCurrency).toBe('USD');
   });
