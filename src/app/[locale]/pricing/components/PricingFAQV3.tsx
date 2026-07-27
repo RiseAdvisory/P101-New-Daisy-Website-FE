@@ -16,9 +16,9 @@ interface Props {
 export const PricingFAQV3 = ({ persona, locale, shared }: Props) => {
   const faqs = [...t(SHARED_FAQ, locale)];
   faqs.push(
-    persona === 'business'
+    ...(persona === 'business'
       ? t(BUSINESS_ONLY_FAQ, locale)
-      : t(PROFESSIONAL_ONLY_FAQ, locale),
+      : t(PROFESSIONAL_ONLY_FAQ, locale)),
   );
 
   return (
