@@ -393,7 +393,15 @@ export const ADD_ONS: Record<Persona, I18nContent<AddOnCategory[]>> = {
       {
         title: 'Capacity',
         rows: [
-          { name: 'Extra Calendar', price: '$10 / additional calendar / month' },
+          // Solo plans are hard-limited to ONE bookable calendar (the
+          // provider). Non-bookable staff accounts (receptionist, manager)
+          // can be added without limit; more bookable staff requires a
+          // Business plan. Do NOT reintroduce an "Extra Calendar" add-on
+          // here — it contradicts that policy.
+          {
+            name: 'Non-Bookable Staff Account',
+            price: '$10 / user / month (receptionist, manager, and similar roles)',
+          },
           { name: 'Extra Workspace', price: '$25 / additional workspace / month' },
         ],
       },
@@ -424,7 +432,12 @@ export const ADD_ONS: Record<Persona, I18nContent<AddOnCategory[]>> = {
       {
         title: 'السعة',
         rows: [
-          { name: 'تقويم إضافي', price: '10 دولارات / تقويم إضافي / شهر' },
+          // Mirrors the EN capacity note: one bookable calendar per solo
+          // plan; non-bookable staff accounts are unlimited add-ons.
+          {
+            name: 'حساب موظف غير قابل للحجز',
+            price: '10 دولارات / مستخدم / شهر (أدوار مثل موظف الاستقبال أو المدير)',
+          },
           { name: 'مساحة عمل إضافية', price: '25 دولاراً / مساحة عمل إضافية / شهر' },
         ],
       },
@@ -538,28 +551,46 @@ export const SHARED_FAQ: I18nContent<FAQItem[]> = {
   ],
 };
 
-export const BUSINESS_ONLY_FAQ: I18nContent<FAQItem> = {
-  en: {
-    question: 'Can I Add More Team Members or Locations?',
-    answer:
-      'Yes. You can add extra users, calendars, workspaces, or locations depending on your plan. Larger businesses can contact Daisy for a custom setup.',
-  },
-  ar: {
-    question: 'هل يمكنني إضافة المزيد من أعضاء الفريق أو المواقع؟',
-    answer:
-      'نعم. يمكنك إضافة مستخدمين، أو تقاويم، أو مساحات عمل، أو مواقع إضافية وفقاً لخطتك. يمكن للأعمال الأكبر التواصل مع ديزي لإعداد مخصّص.',
-  },
+export const BUSINESS_ONLY_FAQ: I18nContent<FAQItem[]> = {
+  en: [
+    {
+      question: 'Can I Add More Team Members or Locations?',
+      answer:
+        'Yes. You can add extra users, calendars, workspaces, or locations depending on your plan. Larger businesses can contact Daisy for a custom setup.',
+    },
+  ],
+  ar: [
+    {
+      question: 'هل يمكنني إضافة المزيد من أعضاء الفريق أو المواقع؟',
+      answer:
+        'نعم. يمكنك إضافة مستخدمين، أو تقاويم، أو مساحات عمل، أو مواقع إضافية وفقاً لخطتك. يمكن للأعمال الأكبر التواصل مع ديزي لإعداد مخصّص.',
+    },
+  ],
 };
 
-export const PROFESSIONAL_ONLY_FAQ: I18nContent<FAQItem> = {
-  en: {
-    question: 'Is Daisy Suitable If I Work Alone?',
-    answer:
-      'Yes. Daisy is designed for solo professionals who want a professional booking site, easier appointment management, customer messaging, payments, reviews, and growth tools.',
-  },
-  ar: {
-    question: 'هل ديزي مناسبة إذا كنت أعمل بمفردي؟',
-    answer:
-      'نعم. صُممت ديزي للمحترفين المستقلين الذين يريدون موقع حجوزات احترافي، وإدارة مواعيد أسهل، ومراسلات للعملاء، ومدفوعات، وتقييمات، وأدوات نمو.',
-  },
+export const PROFESSIONAL_ONLY_FAQ: I18nContent<FAQItem[]> = {
+  en: [
+    {
+      question: 'Is Daisy Suitable If I Work Alone?',
+      answer:
+        'Yes. Daisy is designed for solo professionals who want a professional booking site, easier appointment management, customer messaging, payments, reviews, and growth tools.',
+    },
+    {
+      question: 'Can I Add Staff to a Solo Plan?',
+      answer:
+        'Solo plans include one bookable calendar: yours. You can add as many non-bookable staff accounts as you need, like a receptionist or a manager, for $10 per user per month. When you are ready to take bookings for more than one provider, upgrade to a Business plan and your data moves with you.',
+    },
+  ],
+  ar: [
+    {
+      question: 'هل ديزي مناسبة إذا كنت أعمل بمفردي؟',
+      answer:
+        'نعم. صُممت ديزي للمحترفين المستقلين الذين يريدون موقع حجوزات احترافي، وإدارة مواعيد أسهل، ومراسلات للعملاء، ومدفوعات، وتقييمات، وأدوات نمو.',
+    },
+    {
+      question: 'هل يمكنني إضافة موظفين إلى الخطة الفردية؟',
+      answer:
+        'تشمل الخطط الفردية تقويماً واحداً قابلاً للحجز: تقويمك أنت. يمكنك إضافة أي عدد من حسابات الموظفين غير القابلة للحجز، مثل موظف استقبال أو مدير، مقابل 10 دولارات لكل مستخدم شهرياً. وعندما تصبح جاهزاً لاستقبال حجوزات لأكثر من مقدم خدمة واحد، انتقل إلى خطة الأعمال وستنتقل بياناتك معك.',
+    },
+  ],
 };

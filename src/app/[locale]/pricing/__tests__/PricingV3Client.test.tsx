@@ -263,6 +263,32 @@ describe('PricingV3Client', () => {
       expect(screen.queryByText('$25')).not.toBeInTheDocument();
     });
 
+    it('communicates the 1-bookable-staff limit and the Business upgrade path', () => {
+      render(<PricingV3Client persona="professional" locale="en" />);
+      // Comparison table names the limit explicitly.
+      expect(
+        screen.getAllByText('Bookable Staff / Calendars').length,
+      ).toBeGreaterThan(0);
+      // Solo-only FAQ spells out the policy: 1 bookable calendar,
+      // unlimited non-bookable staff at $10/user/month, upgrade to
+      // Business for more bookable staff.
+      expect(
+        screen.getByText(/Can I Add Staff to a Solo Plan\?/i),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByText(/one bookable calendar: yours/i),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByText(/\$10 per user per month/i),
+      ).toBeInTheDocument();
+      // The misleading "Extra Calendar" add-on must not come back —
+      // it contradicted the 1-bookable-staff policy.
+      expect(screen.queryByText('Extra Calendar')).not.toBeInTheDocument();
+      expect(
+        screen.getByText('Non-Bookable Staff Account'),
+      ).toBeInTheDocument();
+    });
+
     it('uses the dynamic "Start Solo Trial" CTA', () => {
       render(<PricingV3Client persona="professional" locale="en" />);
       expect(

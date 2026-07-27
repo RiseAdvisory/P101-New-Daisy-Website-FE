@@ -142,7 +142,11 @@ export const PROFESSIONAL_COMPARISON_DEFAULT_V3: I18nContent<FeatureCategory[]> 
     {
       title: 'Headline Comparison',
       rows: [
-        { name: 'Team Members / Calendars', values: ['1', '1', '1'] },
+        {
+          name: 'Bookable Staff / Calendars',
+          note: 'Solo plans cover one provider. Need more bookable staff? See Business plans.',
+          values: ['1', '1', '1'],
+        },
         { name: 'Workspaces', values: ['1', '1', '2'] },
         { name: 'Branded Booking Site', values: [true, true, true] },
         { name: 'WhatsApp + Instagram Booking', values: [true, true, true] },
@@ -168,7 +172,11 @@ export const PROFESSIONAL_COMPARISON_DEFAULT_V3: I18nContent<FeatureCategory[]> 
     {
       title: 'مقارنة عناوين رئيسية',
       rows: [
-        { name: 'أعضاء الفريق / التقاويم', values: ['1', '1', '1'] },
+        {
+          name: 'الموظفون القابلون للحجز / التقاويم',
+          note: 'الخطط الفردية تغطي مقدم خدمة واحداً. تحتاج المزيد من الموظفين القابلين للحجز؟ اطّلع على خطط الأعمال.',
+          values: ['1', '1', '1'],
+        },
         { name: 'مساحات العمل', values: ['1', '1', '2'] },
         { name: 'موقع حجوزات بعلامتك', values: [true, true, true] },
         { name: 'حجز عبر واتساب وإنستغرام', values: [true, true, true] },
@@ -197,7 +205,11 @@ export const PROFESSIONAL_COMPARISON_FULL_V3: I18nContent<FeatureCategory[]> = {
     {
       title: 'Scale & Seats',
       rows: [
-        { name: 'Team Members / Calendars', values: ['1', '1', '1'] },
+        {
+          name: 'Bookable Staff / Calendars',
+          note: 'Solo plans cover one provider. Need more bookable staff? See Business plans.',
+          values: ['1', '1', '1'],
+        },
         { name: 'Workspaces', values: ['1', '1', '2'] },
         { name: 'Countries', values: ['1', '1', '2'] },
         { name: 'Bookings per Month', values: ['Unlimited', 'Unlimited', 'Unlimited'] },
@@ -286,7 +298,11 @@ export const PROFESSIONAL_COMPARISON_FULL_V3: I18nContent<FeatureCategory[]> = {
     {
       title: 'الحجم والمقاعد',
       rows: [
-        { name: 'أعضاء الفريق / التقاويم', values: ['1', '1', '1'] },
+        {
+          name: 'الموظفون القابلون للحجز / التقاويم',
+          note: 'الخطط الفردية تغطي مقدم خدمة واحداً. تحتاج المزيد من الموظفين القابلين للحجز؟ اطّلع على خطط الأعمال.',
+          values: ['1', '1', '1'],
+        },
         { name: 'مساحات العمل', values: ['1', '1', '2'] },
         { name: 'الدول', values: ['1', '1', '2'] },
         { name: 'الحجوزات شهرياً', values: ['غير محدودة', 'غير محدودة', 'غير محدودة'] },
