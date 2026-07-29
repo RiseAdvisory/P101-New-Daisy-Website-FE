@@ -1,0 +1,77 @@
+[
+  {
+    "version": "solo-staffing-clarity",
+    "date": "2026-07-27",
+    "platforms": ["web"],
+    "title": {
+      "en": "Clearer staffing on solo plans",
+      "ar": "توضيح أوضح للموظفين في الخطط الفردية"
+    },
+    "summary": {
+      "en": "Solo plans cover one bookable calendar: yours. The pricing page now spells out how to add non-bookable staff, like a receptionist or a manager, and when to move up to a Business plan.",
+      "ar": "الخطط الفردية تغطي تقويماً واحداً قابلاً للحجز: تقويمك أنت. تعرض صفحة الأسعار الآن كيف تضيف موظفين غير قابلين للحجز، مثل موظف الاستقبال أو المدير، ومتى تنتقل إلى خطة الأعمال."
+    },
+    "highlights": {
+      "en": [
+        "The plan comparison names the one-bookable-calendar limit directly",
+        "Non-bookable staff accounts cost $10 per user per month",
+        "A new FAQ covers the upgrade path to Business plans, with your data moving with you"
+      ],
+      "ar": [
+        "مقارنة الخطط تسمي حد التقويم الواحد القابل للحجز مباشرة",
+        "حسابات الموظفين غير القابلة للحجز تكلف 10 دولارات لكل مستخدم شهرياً",
+        "سؤال شائع جديد يشرح مسار الترقية إلى خطط الأعمال مع انتقال بياناتك معك"
+      ]
+    }
+  },
+  {
+    "version": "pricing-1-dollar-entry",
+    "date": "2026-07-15",
+    "platforms": ["web"],
+    "title": {
+      "en": "Start for $1 a month",
+      "ar": "ابدأ بدولار واحد شهرياً"
+    },
+    "summary": {
+      "en": "Entry plans now show the price you actually pay: $1 a month keeps your full workspace active, and the plan price is added only in months where you pass 5 appointments.",
+      "ar": "خطط الدخول تعرض الآن السعر الذي تدفعه فعلاً: دولار واحد شهرياً يُبقي مساحة عملك الكاملة نشطة، ويُضاف سعر الخطة فقط في الأشهر التي تتجاوز فيها 5 مواعيد."
+    },
+    "highlights": {
+      "en": [
+        "Basic and Starter tiers advertise the $1/month base price",
+        "The plan add-on (+$50 on Basic, +$25 on Starter) applies only past 5 appointments in a month",
+        "The pricing FAQ walks through the full billing mechanics"
+      ],
+      "ar": [
+        "خطتا الأساسية والمبتدئ تعرضان السعر الأساسي: دولار واحد شهرياً",
+        "إضافة الخطة (+50 دولاراً على الأساسية، +25 دولاراً على المبتدئ) تنطبق فقط بعد تجاوز 5 مواعيد في الشهر",
+        "الأسئلة الشائعة في صفحة الأسعار تشرح آلية الفوترة كاملة"
+      ]
+    }
+  },
+  {
+    "version": "pricing-page-relaunch",
+    "date": "2026-05-22",
+    "platforms": ["web"],
+    "title": {
+      "en": "A rebuilt pricing page",
+      "ar": "صفحة أسعار معاد بناؤها"
+    },
+    "summary": {
+      "en": "The pricing page was rebuilt around the two people who use it: businesses and solo professionals. Each gets its own plan view, a categorized feature comparison, and rewritten add-ons and FAQ sections.",
+      "ar": "أُعيد بناء صفحة الأسعار حول من يستخدمها فعلاً: الأعمال والمحترفون المستقلون. لكلٍ منهما عرض خطط خاص، ومقارنة ميزات مصنّفة، وأقسام إضافات وأسئلة شائعة معاد كتابتها."
+    },
+    "highlights": {
+      "en": [
+        "Separate plan views for businesses and solo professionals",
+        "Categorized feature comparison with a view-all toggle",
+        "Consistent AI receptionist naming across every plan"
+      ],
+      "ar": [
+        "عروض خطط منفصلة للأعمال والمحترفين المستقلين",
+        "مقارنة ميزات مصنّفة مع زر لعرض الكل",
+        "تسمية موحّدة لموظف الاستقبال الذكي في كل الخطط"
+      ]
+    }
+  }
+]
