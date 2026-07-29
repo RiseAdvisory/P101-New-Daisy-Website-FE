@@ -1,32 +1,36 @@
-import {
-  updatesHeroData,
-  updatesPostsByUserType,
-} from '@/lib/constants/resources/resourcesData';
+import { updatesHeroData } from '@/lib/constants/resources/resourcesData';
 import { t } from '@/lib/constants/i18n';
+import {
+  RELEASE_NOTES,
+  type ReleasePlatform,
+} from '@/lib/constants/updates/releaseNotes';
 import { ResourceListingHero } from '@/components/resources/ResourceListingHero';
 
 interface UpdatesListProps {
   locale: string;
 }
 
-const PERSONAS = ['business', 'professional', 'customer'] as const;
+const PLATFORM_LABELS: Record<ReleasePlatform, { en: string; ar: string }> = {
+  ios: { en: 'iOS', ar: 'iOS' },
+  android: { en: 'Android', ar: 'أندرويد' },
+  web: { en: 'Web', ar: 'الويب' },
+};
+
+// The calendar is pinned to Gregorian so the rendered date always matches
+// the ISO value in the <time datetime> attribute, whatever the runtime's
+// ICU defaults are. Note ar-SA would resolve to the Islamic calendar and
+// print a Hijri date (١٣ صفر ١٤٤٨) for a 2026-07-27 entry, so it is not
+// used here.
+function formatDate(iso: string, locale: string): string {
+  return new Date(`${iso}T00:00:00Z`).toLocaleDateString(
+    locale === 'ar' ? 'ar-u-ca-gregory' : 'en-US-u-ca-gregory',
+    { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' },
+  );
+}
 
 export function UpdatesList({ locale }: UpdatesListProps) {
   const isRtl = locale === 'ar';
   const hero = t(updatesHeroData.business, locale);
-
-  const seen = new Set<string>();
-  const allUpdates = PERSONAS.flatMap((persona) => {
-    const list: Array<Record<string, unknown>> = updatesPostsByUserType[persona] ?? [];
-    return list
-      .map((item) => ({ ...item, _persona: persona }))
-      .filter((item) => {
-        const slug = (item as { attributes?: { slug?: string } }).attributes?.slug;
-        if (!slug || seen.has(slug)) return false;
-        seen.add(slug);
-        return true;
-      });
-  });
 
   return (
     <div className="w-full" dir={isRtl ? 'rtl' : 'ltr'}>
@@ -42,45 +46,77 @@ export function UpdatesList({ locale }: UpdatesListProps) {
       />
 
       <section className="bg-[#F8F5F3] px-4 pb-[140px]">
-        {allUpdates.length === 0 ? (
-          <div className="mx-auto max-w-3xl pt-16 text-center text-[#586968]">
-            <p className="text-lg ltr:font-montserrat">
-              {isRtl
-                ? 'لا توجد تحديثات حالياً. تابعنا لمعرفة الجديد قريباً.'
-                : 'No updates yet — check back soon for what we’re shipping next.'}
-            </p>
-          </div>
-        ) : (
-          <ul className="mx-auto grid max-w-6xl gap-6 pt-4 md:grid-cols-3">
-            {allUpdates.map((item, idx) => {
-              const a = (item as { attributes?: Record<string, unknown> })
-                .attributes as Record<string, unknown> | undefined;
-              const slug = a?.slug as string | undefined;
-              const title = (a?.title as string | undefined) ?? '';
-              const description = (a?.description as string | undefined) ?? '';
-              const href = slug
-                ? `/${locale}/resources/blog/updates/${slug}`
-                : `/${locale}/resources/updates`;
-              return (
-                <li
-                  key={slug ?? idx}
-                  className="overflow-hidden rounded-xl border bg-white transition hover:shadow-2xl"
-                >
-                  <a href={href} className="block px-6 py-4">
-                    <h3 className="text-lg font-semibold ltr:font-montserrat">
-                      {title}
-                    </h3>
-                    {description && (
-                      <p className="mt-2 text-sm text-[#455150] ltr:font-montserrat">
-                        {description}
-                      </p>
-                    )}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        )}
+        <ol className="mx-auto flex max-w-3xl flex-col gap-6 pt-4">
+          {RELEASE_NOTES.map((note) => {
+            const title = t(note.title, locale);
+            const summary = t(note.summary, locale);
+            const highlights = t(note.highlights, locale);
+            return (
+              <li
+                key={note.version}
+                className="rounded-xl border border-[#E8E9E9] bg-white p-6 md:p-8"
+              >
+                <div className="mb-3 flex flex-wrap items-center gap-2">
+                  <time
+                    dateTime={note.date}
+                    className="text-xs font-medium text-[#586968] ltr:font-montserrat rtl:font-cairo"
+                  >
+                    {formatDate(note.date, locale)}
+                  </time>
+                  {note.platforms.map((p) => (
+                    <span
+                      key={p}
+                      className="rounded-full bg-[#E7F1F1] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#14736F] ltr:font-montserrat rtl:font-cairo"
+                    >
+                      {PLATFORM_LABELS[p][isRtl ? 'ar' : 'en']}
+                    </span>
+                  ))}
+                  {/* Semver versions (app releases) shown as a chip; web
+                      slugs are internal identifiers and stay hidden. */}
+                  {/^\d+\.\d+\.\d+$/.test(note.version) && (
+                    <span className="rounded-full bg-[#F8F5F3] px-2 py-0.5 text-[10px] font-semibold text-[#586968] ltr:font-montserrat rtl:font-cairo">
+                      v{note.version}
+                    </span>
+                  )}
+                </div>
+
+                <h2 className="text-xl font-semibold text-[#172524] md:text-2xl">
+                  {title}
+                </h2>
+                <p className="mt-2 text-sm leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">
+                  {summary}
+                </p>
+
+                {/* Native <details> keeps the full content in the SSR HTML
+                    for crawlers and AI engines without any client JS. */}
+                <details className="group mt-4">
+                  <summary className="cursor-pointer text-sm font-semibold text-[#8B6554] ltr:font-montserrat rtl:font-cairo [&::-webkit-details-marker]:hidden">
+                    <span className="group-open:hidden">
+                      {isRtl ? 'عرض التفاصيل' : 'See details'}
+                    </span>
+                    <span className="hidden group-open:inline">
+                      {isRtl ? 'إخفاء التفاصيل' : 'Hide details'}
+                    </span>
+                  </summary>
+                  <ul className="mt-3 space-y-2">
+                    {highlights.map((h, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-2 text-sm text-[#172524] ltr:font-montserrat rtl:font-cairo"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#8B6554]"
+                        />
+                        <span>{h}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              </li>
+            );
+          })}
+        </ol>
       </section>
     </div>
   );
