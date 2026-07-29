@@ -82,3 +82,78 @@ describe('release notes data', () => {
     }
   });
 });
+
+// The live data is web-only right now, so the app-release rules above never
+// fire against it. These fixtures exercise that path directly rather than
+// putting a fabricated app release into the data that the public updates
+// page renders.
+describe('app-release validation rules (fixtures)', () => {
+  const validAppEntry: ReleaseNote = {
+    version: '9.9.9',
+    date: '2026-01-01',
+    platforms: ['ios', 'android'],
+    title: { en: 'Title', ar: 'عنوان' },
+    summary: { en: 'Summary', ar: 'ملخص' },
+    highlights: { en: ['One'], ar: ['واحد'] },
+    storeNotes: { en: 'Real note about what changed.', ar: 'ملاحظة عن التغييرات.' },
+  };
+
+  /** Mirrors the rules the store-push script enforces before sending. */
+  function validateAppEntry(note: ReleaseNote): string[] {
+    const errors: string[] = [];
+    const isApp = note.platforms.some((p) => p === 'ios' || p === 'android');
+    if (!isApp) return errors;
+    if (!note.storeNotes) {
+      errors.push('missing storeNotes');
+      return errors;
+    }
+    for (const locale of ['en', 'ar'] as const) {
+      const text = note.storeNotes[locale];
+      if (!text) errors.push(`missing storeNotes.${locale}`);
+      else if (text.length > STORE_NOTES_MAX_CHARS)
+        errors.push(`storeNotes.${locale} over ${STORE_NOTES_MAX_CHARS} chars`);
+    }
+    if (!/^\d+\.\d+\.\d+$/.test(note.version))
+      errors.push('app version must be semver');
+    return errors;
+  }
+
+  it('accepts a well-formed app release', () => {
+    expect(validateAppEntry(validAppEntry)).toEqual([]);
+  });
+
+  it('rejects an app release with no storeNotes', () => {
+    const { storeNotes, ...withoutNotes } = validAppEntry;
+    expect(validateAppEntry(withoutNotes as ReleaseNote)).toContain(
+      'missing storeNotes',
+    );
+  });
+
+  it('rejects storeNotes longer than the Play cap', () => {
+    const tooLong: ReleaseNote = {
+      ...validAppEntry,
+      storeNotes: {
+        en: 'x'.repeat(STORE_NOTES_MAX_CHARS + 1),
+        ar: validAppEntry.storeNotes!.ar,
+      },
+    };
+    expect(validateAppEntry(tooLong)).toContain(
+      `storeNotes.en over ${STORE_NOTES_MAX_CHARS} chars`,
+    );
+  });
+
+  it('rejects a slug version on an app release', () => {
+    const slugVersion: ReleaseNote = { ...validAppEntry, version: 'some-slug' };
+    expect(validateAppEntry(slugVersion)).toContain('app version must be semver');
+  });
+
+  it('ignores web-only entries', () => {
+    const webOnly: ReleaseNote = {
+      ...validAppEntry,
+      version: 'web-thing',
+      platforms: ['web'],
+      storeNotes: undefined,
+    };
+    expect(validateAppEntry(webOnly)).toEqual([]);
+  });
+});
