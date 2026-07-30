@@ -13,23 +13,42 @@ describe('/resources/updates route', () => {
     expect(() => render(<UpdatesPage params={{ locale: 'en' }} />)).not.toThrow();
   });
 
-  it('renders every release note entry', () => {
-    render(<UpdatesPage params={{ locale: 'en' }} />);
+  it('renders one entry per release note', () => {
+    const { container } = render(<UpdatesPage params={{ locale: 'en' }} />);
+    expect(container.querySelectorAll('ol > li').length).toBe(
+      RELEASE_NOTES.length,
+    );
     for (const note of RELEASE_NOTES) {
       expect(screen.getByText(note.title.en)).toBeInTheDocument();
       expect(screen.getByText(note.summary.en)).toBeInTheDocument();
     }
   });
 
+  it('tells visitors what to expect when no releases are listed yet', () => {
+    // The list is empty between deployments, so the page must still say
+    // something useful rather than rendering a bare heading.
+    if (RELEASE_NOTES.length > 0) {
+      const { container } = render(<UpdatesPage params={{ locale: 'en' }} />);
+      expect(container.querySelectorAll('ol > li').length).toBeGreaterThan(0);
+      return;
+    }
+    render(<UpdatesPage params={{ locale: 'en' }} />);
+    expect(
+      screen.getByText(/New business features and tools are posted here/i),
+    ).toBeInTheDocument();
+  });
+
   it('renders highlights inside an expandable details element', () => {
     const { container } = render(<UpdatesPage params={{ locale: 'en' }} />);
-    const details = container.querySelectorAll('details');
-    expect(details.length).toBe(RELEASE_NOTES.length);
+    expect(container.querySelectorAll('details').length).toBe(
+      RELEASE_NOTES.length,
+    );
     // Highlights live in the SSR HTML even while collapsed, which is what
     // makes them readable by crawlers and AI engines.
-    const first = RELEASE_NOTES[0];
-    for (const highlight of first.highlights.en) {
-      expect(screen.getByText(highlight)).toBeInTheDocument();
+    for (const note of RELEASE_NOTES) {
+      for (const highlight of note.highlights.en) {
+        expect(screen.getByText(highlight)).toBeInTheDocument();
+      }
     }
   });
 
@@ -45,31 +64,34 @@ describe('/resources/updates route', () => {
     // Guards the calendar pinning in formatDate. ar-SA would resolve to the
     // Islamic calendar and print 2026-07-27 as "١٣ صفر ١٤٤٨", contradicting
     // the ISO value in the <time datetime> attribute.
-    const note = RELEASE_NOTES[0];
-    const year = note.date.slice(0, 4);
+    for (const note of RELEASE_NOTES) {
+      const year = note.date.slice(0, 4);
 
-    const en = render(<UpdatesPage params={{ locale: 'en' }} />);
-    const enTime = en.container.querySelector(`time[datetime="${note.date}"]`);
-    expect(enTime).toBeTruthy();
-    expect(enTime!.textContent).toContain(year);
-    en.unmount();
+      const en = render(<UpdatesPage params={{ locale: 'en' }} />);
+      const enTime = en.container.querySelector(`time[datetime="${note.date}"]`);
+      expect(enTime).toBeTruthy();
+      expect(enTime!.textContent).toContain(year);
+      en.unmount();
 
-    const ar = render(<UpdatesPage params={{ locale: 'ar' }} />);
-    const arTime = ar.container.querySelector(`time[datetime="${note.date}"]`);
-    expect(arTime).toBeTruthy();
-    // Arabic-Indic digits for the same Gregorian year (٢٠٢٦ for 2026).
-    const arabicYear = year.replace(/\d/g, (d) =>
-      String.fromCharCode(0x0660 + Number(d)),
-    );
-    expect(arTime!.textContent).toContain(arabicYear);
-    // The Hijri era marker must not appear.
-    expect(arTime!.textContent).not.toContain('هـ');
+      const ar = render(<UpdatesPage params={{ locale: 'ar' }} />);
+      const arTime = ar.container.querySelector(`time[datetime="${note.date}"]`);
+      expect(arTime).toBeTruthy();
+      // Arabic-Indic digits for the same Gregorian year (٢٠٢٦ for 2026).
+      const arabicYear = year.replace(/\d/g, (d) =>
+        String.fromCharCode(0x0660 + Number(d)),
+      );
+      expect(arTime!.textContent).toContain(arabicYear);
+      // The Hijri era marker must not appear.
+      expect(arTime!.textContent).not.toContain('هـ');
+      ar.unmount();
+    }
   });
 
   it('exposes a machine-readable date on every entry', () => {
     const { container } = render(<UpdatesPage params={{ locale: 'en' }} />);
-    const times = container.querySelectorAll('time[datetime]');
-    expect(times.length).toBe(RELEASE_NOTES.length);
+    expect(container.querySelectorAll('time[datetime]').length).toBe(
+      RELEASE_NOTES.length,
+    );
     for (const note of RELEASE_NOTES) {
       expect(
         container.querySelector(`time[datetime="${note.date}"]`),
@@ -83,7 +105,6 @@ describe('/resources/updates route', () => {
     // highlight <li>s, so an unscoped 'li' query would not line up with
     // RELEASE_NOTES by index.
     const items = container.querySelectorAll('ol > li');
-    expect(items.length).toBe(RELEASE_NOTES.length);
     RELEASE_NOTES.forEach((note, i) => {
       const item = items[i] as HTMLElement;
       if (note.platforms.includes('web')) {
