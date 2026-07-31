@@ -78,6 +78,30 @@ describe('resolveStoreUrl', () => {
     // its UA string. With the guard, we correctly skip it.
     expect(resolveStoreUrl(LEGACY_IE_UA, /* hasMSStream */ true)).toBeNull();
   });
+
+  describe('iOS in-app browsers', () => {
+    // Instagram's iOS webview blocks App Store navigation, so sending the
+    // visitor there is a dead end. Returning null lets the click fall through
+    // to /get-the-app, which offers the Safari hand-off and manual steps.
+    const INSTAGRAM_IOS_UA =
+      'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 302.0.0.23.109 (iPhone14,3; iOS 17_0; en_US)';
+    const FACEBOOK_IOS_UA =
+      'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone13,2]';
+    const INSTAGRAM_ANDROID_UA =
+      'Mozilla/5.0 (Linux; Android 13; SM-S908B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36 Instagram 302.0.0.23.109 Android';
+
+    it('returns null inside the Instagram iOS browser instead of the App Store', () => {
+      expect(resolveStoreUrl(INSTAGRAM_IOS_UA)).toBeNull();
+    });
+
+    it('returns null inside the Facebook iOS browser', () => {
+      expect(resolveStoreUrl(FACEBOOK_IOS_UA)).toBeNull();
+    });
+
+    it('still routes Instagram on Android straight to Play, which works', () => {
+      expect(resolveStoreUrl(INSTAGRAM_ANDROID_UA)).toBe(ANDROID_URL);
+    });
+  });
 });
 
 describe('GET_THE_APP_PATH_RE', () => {

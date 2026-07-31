@@ -6,6 +6,8 @@ import Separator from '@/components/separator/Separator';
 import { t } from '@/lib/constants/i18n';
 import { getTheAppPageData } from '@/lib/constants/pages/getTheAppPageData';
 import { buttonAppData } from '@/lib/constants/shared/buttonAppData';
+import { needsAppStoreEscape } from '@/lib/utils/inAppBrowser';
+import { InAppBrowserNotice } from '@/components/getTheApp/InAppBrowserNotice';
 
 export const GetTheAppClient = ({ lang }: { lang: string }) => {
 
@@ -16,9 +18,13 @@ export const GetTheAppClient = ({ lang }: { lang: string }) => {
   // on-site page, which shows both store buttons.
   useEffect(() => {
     try {
-      if (!window.matchMedia('(max-width: 767px)').matches) return;
       const ua = navigator.userAgent || '';
       const win = window as unknown as { MSStream?: unknown };
+      // Inside an iOS in-app browser the App Store navigation would dead-end,
+      // so stay put and let InAppBrowserNotice offer the Safari hand-off and
+      // the manual steps instead.
+      if (needsAppStoreEscape(ua, Boolean(win.MSStream))) return;
+      if (!window.matchMedia('(max-width: 767px)').matches) return;
       if (/iPad|iPhone|iPod/.test(ua) && !win.MSStream) {
         window.location.replace(buttonAppData.en.appStore.link);
       } else if (/android/i.test(ua)) {
@@ -45,6 +51,11 @@ export const GetTheAppClient = ({ lang }: { lang: string }) => {
         styleSection="pb-0 pt-6 px-[16px]"
         secondDescription={data.subtitle}
       />
+      {/* Renders itself only inside an iOS in-app browser. Sits above the
+          store buttons so the visitor sees why tapping them would fail. */}
+      <div className="bg-white px-4 pt-8">
+        <InAppBrowserNotice locale={lang} />
+      </div>
       <div className="px-4 bg-primary py-[46px] md:px-[400px]">
         <Separator className="bg-[#586968] " />
       </div>

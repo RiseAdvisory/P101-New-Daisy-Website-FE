@@ -46,6 +46,16 @@ export function UpdatesList({ locale }: UpdatesListProps) {
       />
 
       <section className="bg-[#F8F5F3] px-4 pb-[140px]">
+        {RELEASE_NOTES.length === 0 && (
+          <div className="mx-auto max-w-3xl pt-16 text-center">
+            <p className="text-lg text-[#455150] ltr:font-montserrat rtl:font-cairo">
+              {isRtl
+                ? 'ميزات وأدوات الأعمال الجديدة تُنشر هنا مع كل إصدار. تابعنا لمعرفة الجديد قريباً.'
+                : 'New business features and tools are posted here with each release. Check back soon.'}
+            </p>
+          </div>
+        )}
+
         <ol className="mx-auto flex max-w-3xl flex-col gap-6 pt-4">
           {RELEASE_NOTES.map((note) => {
             const title = t(note.title, locale);
