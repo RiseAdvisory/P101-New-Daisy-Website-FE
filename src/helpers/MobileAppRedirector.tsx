@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import { buttonAppData } from '@/lib/constants/shared/buttonAppData';
+import { needsAppStoreEscape } from '@/lib/utils/inAppBrowser';
 
 /**
  * Document-level click interceptor: on mobile viewports, any click on a link
@@ -28,6 +29,11 @@ export function resolveStoreUrl(
   ua: string,
   hasMSStream = false,
 ): string | null {
+  // Inside an iOS in-app browser (Instagram and friends) an App Store
+  // navigation silently dead-ends, so return null and let the click fall
+  // through to /get-the-app, which runs the escape flow and shows manual
+  // instructions. Android in-app browsers open Play Store links fine.
+  if (needsAppStoreEscape(ua, hasMSStream)) return null;
   if (/iPad|iPhone|iPod/.test(ua) && !hasMSStream) return IOS_URL;
   if (/android/i.test(ua)) return ANDROID_URL;
   return null;

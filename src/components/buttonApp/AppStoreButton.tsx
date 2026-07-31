@@ -7,6 +7,8 @@ import { buttonAppData } from '@/lib/constants/shared/buttonAppData';
 import { t } from '@/lib/constants/i18n';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
 import { appendAttributionToAppStoreUrl } from '@/lib/attribution';
+import { needsAppStoreEscape } from '@/lib/utils/inAppBrowser';
+import { localePath } from '@/lib/utils/locale';
 
 export const AppStoreButton = ({
   className,
@@ -23,6 +25,17 @@ export const AppStoreButton = ({
 
   const handleClick = () => {
     if (typeof window === 'undefined' || !dataButton?.link) return;
+    const ua = navigator.userAgent || '';
+    const hasMSStream = Boolean(
+      (window as unknown as { MSStream?: unknown }).MSStream,
+    );
+    // An App Store link tapped inside an iOS in-app browser goes nowhere, so
+    // send the visitor to /get-the-app instead, where InAppBrowserNotice
+    // offers the Safari hand-off and the manual steps.
+    if (needsAppStoreEscape(ua, hasMSStream)) {
+      window.location.href = localePath('/get-the-app', locale);
+      return;
+    }
     window.location.href = appendAttributionToAppStoreUrl(
       dataButton.link,
       'apple-app-store',

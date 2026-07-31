@@ -65,7 +65,13 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
 // from inside the app are intercepted by MobileAppRedirector in the layout.
 const IOS_URL = buttonAppData.en.appStore.link;
 const ANDROID_URL = buttonAppData.en.googlePlay.link;
-const MOBILE_REDIRECT_SCRIPT = `(function(){try{var ua=navigator.userAgent||'';if(window.matchMedia&&window.matchMedia('(max-width: 767px)').matches){if(/iPad|iPhone|iPod/.test(ua)&&!window.MSStream){window.location.replace(${JSON.stringify(IOS_URL)});}else if(/android/i.test(ua)){window.location.replace(${JSON.stringify(ANDROID_URL)});}}}catch(e){}})();`;
+// The in-app-browser test is duplicated here rather than imported because
+// this runs as an inline pre-paint script. Keep it in step with
+// detectInAppBrowser() in src/lib/utils/inAppBrowser.ts; a shared test
+// asserts the two stay aligned.
+const IN_APP_UA_RE =
+  /Instagram|FBAN|FBAV|FB_IAB|FBIOS|BytedanceWebview|musical_ly|TikTok|Snapchat|LinkedInApp/i;
+const MOBILE_REDIRECT_SCRIPT = `(function(){try{var ua=navigator.userAgent||'';var iOS=/iPad|iPhone|iPod/.test(ua)&&!window.MSStream;var inApp=${IN_APP_UA_RE.toString()}.test(ua);if(iOS&&inApp){return;}if(window.matchMedia&&window.matchMedia('(max-width: 767px)').matches){if(iOS){window.location.replace(${JSON.stringify(IOS_URL)});}else if(/android/i.test(ua)){window.location.replace(${JSON.stringify(ANDROID_URL)});}}}catch(e){}})();`;
 
 export default function GetTheAppPage() {
   const locale = getLocale();
