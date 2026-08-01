@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   buildSafariEscapeUrl,
   detectInAppBrowser,
@@ -10,42 +10,51 @@ import {
 /**
  * Shown only inside an iOS in-app browser, where App Store links dead-end.
  *
- * The Safari hand-off is deliberately behind a button rather than fired on
- * mount: iOS commonly blocks custom-scheme navigation that is not tied to a
- * user gesture, so a tap has a much better chance of working than an
- * automatic redirect. It is still best effort, which is why the manual
- * instructions and the copy-link fallback are always visible rather than
- * being revealed only after a failure we cannot reliably detect.
+ * The two manual steps are the primary path, not a fallback. Instagram was
+ * confirmed on a real device to ignore the x-safari scheme, so an automatic
+ * hand-off cannot be relied on. The scheme link is kept as a secondary
+ * option because other webviews (TikTok, Snapchat, LinkedIn) may still honour
+ * it, but it sits below the steps and reports its own failure rather than
+ * leaving the visitor staring at a button that did nothing.
+ *
+ * The component renders its own outer spacing. An earlier version was wrapped
+ * in a styled div by the caller, which left an empty white band on every
+ * ordinary browser, where this returns null.
  */
+
+/** How long to wait before deciding the scheme hand-off did not fire. */
+const ESCAPE_TIMEOUT_MS = 1500;
 
 const COPY = {
   en: {
-    heading: 'Open in Safari to download',
-    body: 'Instagram blocks App Store links inside its own browser. Open this page in Safari and the download will work.',
+    heading: 'Open this page in Safari',
+    body: 'Instagram blocks App Store links inside its own browser, so the download buttons below will not work here.',
     bodyGeneric:
-      'This app blocks App Store links inside its own browser. Open this page in Safari and the download will work.',
-    openButton: 'Open in Safari',
-    manualIntro: 'If nothing happens, open it yourself:',
-    manualSteps: [
-      'Tap the ••• menu in the corner of this window',
-      'Choose "Open in browser" or "Open in Safari"',
+      'This app blocks App Store links inside its own browser, so the download buttons below will not work here.',
+    stepsIntro: 'Two taps to fix it:',
+    steps: [
+      'Tap the ••• menu at the top of this window',
+      'Choose "Open in browser"',
     ],
     copyButton: 'Copy link',
     copied: 'Link copied',
+    autoTry: 'Or try opening Safari automatically',
+    autoFailed: 'That did not work. Use the two steps above.',
   },
   ar: {
-    heading: 'افتح الصفحة في سفاري للتحميل',
-    body: 'يمنع إنستغرام روابط App Store داخل متصفحه. افتح هذه الصفحة في سفاري وسيعمل التحميل.',
+    heading: 'افتح هذه الصفحة في سفاري',
+    body: 'يمنع إنستغرام روابط App Store داخل متصفحه، لذلك لن تعمل أزرار التحميل هنا.',
     bodyGeneric:
-      'يمنع هذا التطبيق روابط App Store داخل متصفحه. افتح هذه الصفحة في سفاري وسيعمل التحميل.',
-    openButton: 'افتح في سفاري',
-    manualIntro: 'إذا لم يحدث شيء، افتحها بنفسك:',
-    manualSteps: [
-      'اضغط على قائمة ••• في زاوية هذه النافذة',
-      'اختر "فتح في المتصفح" أو "فتح في سفاري"',
+      'يمنع هذا التطبيق روابط App Store داخل متصفحه، لذلك لن تعمل أزرار التحميل هنا.',
+    stepsIntro: 'ضغطتان لحل المشكلة:',
+    steps: [
+      'اضغط على قائمة ••• في أعلى هذه النافذة',
+      'اختر "فتح في المتصفح"',
     ],
     copyButton: 'انسخ الرابط',
     copied: 'تم نسخ الرابط',
+    autoTry: 'أو جرّب فتح سفاري تلقائياً',
+    autoFailed: 'لم ينجح ذلك. استخدم الخطوتين أعلاه.',
   },
 };
 
@@ -53,6 +62,8 @@ export const InAppBrowserNotice = ({ locale }: { locale: string }) => {
   const [browser, setBrowser] = useState<InAppBrowser | null>(null);
   const [escapeUrl, setEscapeUrl] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+  const [autoFailed, setAutoFailed] = useState(false);
+  const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
   const isRtl = locale === 'ar';
   const copy = isRtl ? COPY.ar : COPY.en;
 
@@ -63,11 +74,14 @@ export const InAppBrowserNotice = ({ locale }: { locale: string }) => {
     );
     if (needsAppStoreEscape(ua, hasMSStream)) {
       setBrowser(detectInAppBrowser(ua));
-      // Both values are derived after mount because they depend on the
-      // browser environment, so the server renders nothing.
+      // Derived after mount because it depends on the browser environment,
+      // so the server renders nothing.
       setEscapeUrl(buildSafariEscapeUrl(window.location.href));
     }
   }, []);
+
+  const pending = timers.current;
+  useEffect(() => () => pending.forEach(clearTimeout), [pending]);
 
   if (!browser) return null;
 
@@ -75,59 +89,87 @@ export const InAppBrowserNotice = ({ locale }: { locale: string }) => {
     try {
       await navigator.clipboard.writeText(window.location.href);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2500);
+      timers.current.push(setTimeout(() => setCopied(false), 2500));
     } catch {
-      // Clipboard permission denied or unavailable: the manual steps above
-      // still get the visitor there, so fail quietly.
+      // Clipboard permission denied or unavailable: the steps above still
+      // get the visitor there, so fail quietly.
     }
   };
 
+  const handleAutoTry = () => {
+    // If the hand-off works the page is backgrounded, so a still-visible
+    // document after the timeout means the scheme was ignored.
+    timers.current.push(
+      setTimeout(() => {
+        if (document.visibilityState === 'visible') setAutoFailed(true);
+      }, ESCAPE_TIMEOUT_MS),
+    );
+  };
+
   return (
-    <div
-      className="mx-auto mb-8 max-w-2xl rounded-2xl border border-[#8B6554]/30 bg-[#F8F5F3] p-6"
-      dir={isRtl ? 'rtl' : 'ltr'}
-    >
-      <h2 className="text-lg font-semibold text-[#172524] ltr:font-montserrat rtl:font-cairo">
-        {copy.heading}
-      </h2>
-      <p className="mt-2 text-sm leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">
-        {browser === 'instagram' ? copy.body : copy.bodyGeneric}
-      </p>
+    <div className="px-4 pt-8">
+      <div
+        className="mx-auto max-w-2xl rounded-2xl border border-[#8B6554]/30 bg-[#F8F5F3] p-6"
+        dir={isRtl ? 'rtl' : 'ltr'}
+      >
+        <h2 className="text-lg font-semibold text-[#172524] ltr:font-montserrat rtl:font-cairo">
+          {copy.heading}
+        </h2>
+        <p className="mt-2 text-sm leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo">
+          {browser === 'instagram' ? copy.body : copy.bodyGeneric}
+        </p>
 
-      <div className="mt-5 flex flex-wrap gap-3">
-        {/* A real anchor rather than a scripted navigation: it is the correct
-            semantics for going somewhere, and it still works if the webview
-            restricts JS-driven navigation to custom schemes. */}
-        {escapeUrl && (
-          <a
-            href={escapeUrl}
-            className="rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary/90 ltr:font-montserrat rtl:font-cairo"
+        <p className="mt-5 text-sm font-semibold text-[#172524] ltr:font-montserrat rtl:font-cairo">
+          {copy.stepsIntro}
+        </p>
+        <ol className="mt-3 space-y-3">
+          {copy.steps.map((step, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <span
+                aria-hidden="true"
+                className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#8B6554] text-xs font-bold text-white"
+              >
+                {i + 1}
+              </span>
+              <span className="text-sm leading-6 text-[#172524] ltr:font-montserrat rtl:font-cairo">
+                {step}
+              </span>
+            </li>
+          ))}
+        </ol>
+
+        <div className="mt-6 flex flex-wrap items-center gap-4">
+          {/* min-w keeps the button the same size when the label switches to
+              the confirmation, which otherwise resized it and bumped it onto
+              its own line. */}
+          <button
+            type="button"
+            onClick={copyLink}
+            className="min-w-[150px] rounded-lg border border-[#172524] px-6 py-3 text-center text-sm font-semibold text-[#172524] transition-colors hover:bg-white ltr:font-montserrat rtl:font-cairo"
           >
-            {copy.openButton}
-          </a>
+            {copied ? copy.copied : copy.copyButton}
+          </button>
+
+          {escapeUrl && (
+            <a
+              href={escapeUrl}
+              onClick={handleAutoTry}
+              className="text-sm font-semibold text-[#8B6554] underline ltr:font-montserrat rtl:font-cairo"
+            >
+              {copy.autoTry}
+            </a>
+          )}
+        </div>
+
+        {autoFailed && (
+          <p
+            role="status"
+            className="mt-3 text-xs text-[#586968] ltr:font-montserrat rtl:font-cairo"
+          >
+            {copy.autoFailed}
+          </p>
         )}
-        <button
-          type="button"
-          onClick={copyLink}
-          className="rounded-lg border border-[#172524] px-6 py-3 text-sm font-semibold text-[#172524] transition-colors hover:bg-white ltr:font-montserrat rtl:font-cairo"
-        >
-          {copied ? copy.copied : copy.copyButton}
-        </button>
       </div>
-
-      <p className="mt-5 text-xs font-semibold text-[#586968] ltr:font-montserrat rtl:font-cairo">
-        {copy.manualIntro}
-      </p>
-      <ol className="mt-2 space-y-1">
-        {copy.manualSteps.map((step, i) => (
-          <li
-            key={i}
-            className="text-xs leading-relaxed text-[#455150] ltr:font-montserrat rtl:font-cairo"
-          >
-            {i + 1}. {step}
-          </li>
-        ))}
-      </ol>
     </div>
   );
 };
