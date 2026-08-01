@@ -41,8 +41,16 @@ next-env.d.ts
 tmpclaude-*
 
 # docs
-/docs
+# /docs/* rather than /docs: git will not descend into an excluded directory,
+# so the negations below only take effect if the directory itself stays
+# includable. Everything under docs/ is still ignored by default.
+/docs/*
 !/docs/daisy-authors/
 !/docs/daisy-authors/**
+# Channel alignment: store listing copy, screenshot asset locations, audit log.
+# Deliberately tracked so the store source of truth is versioned. Credentials
+# stay in ~/.daisy and must never be referenced here by id or account email.
+!/docs/channel-alignment/
+!/docs/channel-alignment/**
 .superpowers/
 trial-success-page.png
