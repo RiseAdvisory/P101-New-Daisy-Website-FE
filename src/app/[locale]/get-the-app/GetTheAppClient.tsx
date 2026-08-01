@@ -51,11 +51,10 @@ export const GetTheAppClient = ({ lang }: { lang: string }) => {
         styleSection="pb-0 pt-6 px-[16px]"
         secondDescription={data.subtitle}
       />
-      {/* Renders itself only inside an iOS in-app browser. Sits above the
-          store buttons so the visitor sees why tapping them would fail. */}
-      <div className="bg-white px-4 pt-8">
-        <InAppBrowserNotice locale={lang} />
-      </div>
+      {/* Renders itself only inside an iOS in-app browser, and brings its own
+          spacing. Do not wrap it in a styled container: this returns null in
+          ordinary browsers, and a wrapper left an empty white band there. */}
+      <InAppBrowserNotice locale={lang} />
       <div className="px-4 bg-primary py-[46px] md:px-[400px]">
         <Separator className="bg-[#586968] " />
       </div>

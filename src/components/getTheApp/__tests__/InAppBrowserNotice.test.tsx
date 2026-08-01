@@ -48,25 +48,103 @@ describe('InAppBrowserNotice', () => {
     expect(screen.queryByText(/Instagram blocks/i)).not.toBeInTheDocument();
   });
 
-  it('always shows the manual steps, since the Safari hand-off can fail silently', () => {
+  it('leads with the manual steps, which are the path that actually works', () => {
     setUserAgent(INSTAGRAM_IOS);
     render(<InAppBrowserNotice locale="en" />);
-    // These are the reliable path. They must never be hidden behind a
-    // failure we cannot detect.
-    expect(screen.getByText(/If nothing happens, open it yourself/i)).toBeInTheDocument();
+    // Instagram ignores the x-safari scheme on a real device, so these steps
+    // are the product, not a fallback. They must never be hidden.
+    expect(screen.getByText(/Two taps to fix it/i)).toBeInTheDocument();
     expect(screen.getByText(/Tap the ••• menu/i)).toBeInTheDocument();
+    expect(screen.getByText(/Choose "Open in browser"/i)).toBeInTheDocument();
+  });
+
+  it('renders nothing at all in ordinary browsers, not even a spacer', () => {
+    // A caller-side wrapper once left an empty white band on every page.
+    // The component owns its spacing so that cannot happen again.
+    setUserAgent(SAFARI_IOS);
+    const { container } = render(<InAppBrowserNotice locale="en" />);
+    expect(container.innerHTML).toBe('');
   });
 
   it('points the hand-off link at the x-safari scheme with the escape marker', () => {
     setUserAgent(INSTAGRAM_IOS);
     render(<InAppBrowserNotice locale="en" />);
 
-    const link = screen.getByRole('link', { name: 'Open in Safari' });
+    const link = screen.getByRole('link', {
+      name: /try opening Safari automatically/i,
+    });
     // jsdom serves from http://localhost/, production from https, and the
     // prefix keeps whichever scheme the page was loaded with. Assert the
     // shape rather than a hard-coded origin.
     expect(link.getAttribute('href')).toMatch(/^x-safari-https?:\/\//);
     expect(link.getAttribute('href')).toContain(`${ESCAPE_PARAM}=1`);
+  });
+
+  it('admits the automatic attempt failed instead of leaving a dead button', () => {
+    jest.useFakeTimers();
+    try {
+      setUserAgent(INSTAGRAM_IOS);
+      render(<InAppBrowserNotice locale="en" />);
+
+      expect(screen.queryByText(/That did not work/i)).not.toBeInTheDocument();
+
+      fireEvent.click(
+        screen.getByRole('link', { name: /try opening Safari automatically/i }),
+      );
+      // Still visible after the timeout means the scheme was ignored, which
+      // is exactly what Instagram does.
+      act(() => {
+        jest.advanceTimersByTime(2000);
+      });
+
+      expect(screen.getByText(/That did not work/i)).toBeInTheDocument();
+    } finally {
+      jest.useRealTimers();
+    }
+  });
+
+  it('stays quiet when the hand-off works and the page is backgrounded', () => {
+    jest.useFakeTimers();
+    const visibility = jest
+      .spyOn(document, 'visibilityState', 'get')
+      .mockReturnValue('hidden');
+    try {
+      setUserAgent(INSTAGRAM_IOS);
+      render(<InAppBrowserNotice locale="en" />);
+      fireEvent.click(
+        screen.getByRole('link', { name: /try opening Safari automatically/i }),
+      );
+      act(() => {
+        jest.advanceTimersByTime(2000);
+      });
+      expect(screen.queryByText(/That did not work/i)).not.toBeInTheDocument();
+    } finally {
+      visibility.mockRestore();
+      jest.useRealTimers();
+    }
+  });
+
+  it('keeps the copy button the same width when its label changes', async () => {
+    // The label swap resized the button, which bumped it onto its own line
+    // inside the flex-wrap row.
+    setUserAgent(INSTAGRAM_IOS);
+    Object.defineProperty(navigator, 'clipboard', {
+      value: { writeText: jest.fn().mockResolvedValue(undefined) },
+      configurable: true,
+    });
+
+    render(<InAppBrowserNotice locale="en" />);
+    const button = screen.getByRole('button', { name: 'Copy link' });
+    const widthClass = [...button.classList].find((c) => c.startsWith('min-w-'));
+    expect(widthClass).toBeDefined();
+
+    await act(async () => {
+      fireEvent.click(button);
+    });
+
+    expect(
+      screen.getByRole('button', { name: 'Link copied' }).className,
+    ).toContain(widthClass!);
   });
 
   it('copies the page URL and confirms it', async () => {
@@ -107,6 +185,9 @@ describe('InAppBrowserNotice', () => {
     const { container } = render(<InAppBrowserNotice locale="ar" />);
     expect(container.querySelector('[dir="rtl"]')).toBeTruthy();
     expect(screen.getByText(/يمنع إنستغرام روابط App Store/)).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'افتح في سفاري' })).toBeInTheDocument();
+    expect(screen.getByText('ضغطتان لحل المشكلة:')).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: 'أو جرّب فتح سفاري تلقائياً' }),
+    ).toBeInTheDocument();
   });
 });
