@@ -56,6 +56,19 @@ export interface ReleaseNote {
   highlights: I18nContent<string[]>;
   /** Store-facing "What's New" text. Required for ios/android entries. */
   storeNotes?: I18nContent<string>;
+  /**
+   * Marks a release with nothing vendor-facing to announce: fixes and
+   * internal work only.
+   *
+   * Two consequences, both deliberate. The entry is allowed to carry the
+   * generic "bug fixes and performance improvements" store text that the
+   * validation test otherwise rejects, so boilerplate stays a conscious
+   * choice rather than something that creeps back in by default. And the
+   * entry is hidden from the website updates page, which promises "new
+   * tools and features for your business" and would be undermined by a
+   * maintenance note.
+   */
+  maintenanceOnly?: boolean;
 }
 
 export const RELEASE_NOTES = data as ReleaseNote[];

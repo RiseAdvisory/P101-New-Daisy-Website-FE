@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "version": "1.5.4",
+    "date": "2026-08-01",
+    "platforms": ["ios", "android"],
+    "maintenanceOnly": true,
+    "title": {
+      "en": "Maintenance release",
+      "ar": "إصدار صيانة"
+    },
+    "summary": {
+      "en": "Fixes and performance work. Hidden from the updates page because there is nothing vendor-facing to announce.",
+      "ar": "إصلاحات وتحسينات في الأداء. مخفي عن صفحة التحديثات لعدم وجود جديد يخص مقدّمي الخدمة."
+    },
+    "highlights": {
+      "en": ["Bug fixes", "Performance improvements"],
+      "ar": ["إصلاح الأخطاء", "تحسينات في الأداء"]
+    },
+    "storeNotes": {
+      "en": "This release includes bug fixes and performance improvements.",
+      "ar": "يتضمن هذا الإصدار إصلاحات للأخطاء وتحسينات في الأداء."
+    }
+  }
+]

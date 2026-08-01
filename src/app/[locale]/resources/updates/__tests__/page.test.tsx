@@ -2,6 +2,10 @@ import { render, screen, within } from '@testing-library/react';
 import UpdatesPage from '../page';
 import { RELEASE_NOTES } from '@/lib/constants/updates/releaseNotes';
 
+// Maintenance-only releases feed the app stores but are deliberately absent
+// from this page, so the expected render count is the filtered set.
+const VISIBLE = RELEASE_NOTES.filter((n) => !n.maintenanceOnly);
+
 // Route-level smoke tests. Rendering the real page.tsx (rather than the
 // UpdatesList component in isolation) is deliberate: if the route still
 // imported a component that no longer exists, the import below would throw
@@ -16,9 +20,9 @@ describe('/resources/updates route', () => {
   it('renders one entry per release note', () => {
     const { container } = render(<UpdatesPage params={{ locale: 'en' }} />);
     expect(container.querySelectorAll('ol > li').length).toBe(
-      RELEASE_NOTES.length,
+      VISIBLE.length,
     );
-    for (const note of RELEASE_NOTES) {
+    for (const note of VISIBLE) {
       expect(screen.getByText(note.title.en)).toBeInTheDocument();
       expect(screen.getByText(note.summary.en)).toBeInTheDocument();
     }
@@ -27,7 +31,7 @@ describe('/resources/updates route', () => {
   it('tells visitors what to expect when no releases are listed yet', () => {
     // The list is empty between deployments, so the page must still say
     // something useful rather than rendering a bare heading.
-    if (RELEASE_NOTES.length > 0) {
+    if (VISIBLE.length > 0) {
       const { container } = render(<UpdatesPage params={{ locale: 'en' }} />);
       expect(container.querySelectorAll('ol > li').length).toBeGreaterThan(0);
       return;
@@ -38,14 +42,30 @@ describe('/resources/updates route', () => {
     ).toBeInTheDocument();
   });
 
+  it('keeps maintenance releases off the page', () => {
+    // They still ship store notes, but this page promises new tools and
+    // features, so "bug fixes and performance improvements" does not belong.
+    const maintenance = RELEASE_NOTES.filter((n) => n.maintenanceOnly);
+    if (maintenance.length === 0) return;
+
+    render(<UpdatesPage params={{ locale: 'en' }} />);
+    for (const note of maintenance) {
+      expect(screen.queryByText(note.title.en)).not.toBeInTheDocument();
+      expect(screen.queryByText(`v${note.version}`)).not.toBeInTheDocument();
+    }
+    expect(
+      screen.queryByText(/bug fixes and performance improvements/i),
+    ).not.toBeInTheDocument();
+  });
+
   it('renders highlights inside an expandable details element', () => {
     const { container } = render(<UpdatesPage params={{ locale: 'en' }} />);
     expect(container.querySelectorAll('details').length).toBe(
-      RELEASE_NOTES.length,
+      VISIBLE.length,
     );
     // Highlights live in the SSR HTML even while collapsed, which is what
     // makes them readable by crawlers and AI engines.
-    for (const note of RELEASE_NOTES) {
+    for (const note of VISIBLE) {
       for (const highlight of note.highlights.en) {
         expect(screen.getByText(highlight)).toBeInTheDocument();
       }
@@ -55,7 +75,7 @@ describe('/resources/updates route', () => {
   it('renders Arabic copy and RTL direction for the ar locale', () => {
     const { container } = render(<UpdatesPage params={{ locale: 'ar' }} />);
     expect(container.querySelector('[dir="rtl"]')).toBeTruthy();
-    for (const note of RELEASE_NOTES) {
+    for (const note of VISIBLE) {
       expect(screen.getByText(note.title.ar)).toBeInTheDocument();
     }
   });
@@ -64,7 +84,7 @@ describe('/resources/updates route', () => {
     // Guards the calendar pinning in formatDate. ar-SA would resolve to the
     // Islamic calendar and print 2026-07-27 as "١٣ صفر ١٤٤٨", contradicting
     // the ISO value in the <time datetime> attribute.
-    for (const note of RELEASE_NOTES) {
+    for (const note of VISIBLE) {
       const year = note.date.slice(0, 4);
 
       const en = render(<UpdatesPage params={{ locale: 'en' }} />);
@@ -90,9 +110,9 @@ describe('/resources/updates route', () => {
   it('exposes a machine-readable date on every entry', () => {
     const { container } = render(<UpdatesPage params={{ locale: 'en' }} />);
     expect(container.querySelectorAll('time[datetime]').length).toBe(
-      RELEASE_NOTES.length,
+      VISIBLE.length,
     );
-    for (const note of RELEASE_NOTES) {
+    for (const note of VISIBLE) {
       expect(
         container.querySelector(`time[datetime="${note.date}"]`),
       ).toBeTruthy();
@@ -103,9 +123,9 @@ describe('/resources/updates route', () => {
     const { container } = render(<UpdatesPage params={{ locale: 'en' }} />);
     // Direct children only: each entry also contains an inner <ul> of
     // highlight <li>s, so an unscoped 'li' query would not line up with
-    // RELEASE_NOTES by index.
+    // VISIBLE by index.
     const items = container.querySelectorAll('ol > li');
-    RELEASE_NOTES.forEach((note, i) => {
+    VISIBLE.forEach((note, i) => {
       const item = items[i] as HTMLElement;
       if (note.platforms.includes('web')) {
         expect(within(item).getByText('Web')).toBeInTheDocument();
