@@ -76,12 +76,27 @@ describe('release notes data', () => {
     }
   });
 
-  it('no store-notes text falls back to the meaningless generic line', () => {
+  it('only a release flagged maintenanceOnly may use the generic line', () => {
+    // The generic text is allowed, but only as a recorded decision. Without
+    // the flag it is the default-boilerplate problem this data file exists
+    // to prevent.
     for (const note of RELEASE_NOTES) {
       if (!note.storeNotes) continue;
-      expect(note.storeNotes.en.toLowerCase()).not.toContain(
-        'bug fixes and performance improvements',
-      );
+      const isGeneric = note.storeNotes.en
+        .toLowerCase()
+        .includes('bug fixes and performance improvements');
+      if (isGeneric) {
+        expect(note.maintenanceOnly).toBe(true);
+      }
+    }
+  });
+
+  it('a maintenanceOnly release still provides store notes', () => {
+    // The flag suppresses the website entry, not the store requirement.
+    for (const note of RELEASE_NOTES) {
+      if (!note.maintenanceOnly) continue;
+      expect(note.storeNotes?.en?.length).toBeGreaterThan(0);
+      expect(note.storeNotes?.ar?.length).toBeGreaterThan(0);
     }
   });
 });

@@ -32,6 +32,10 @@ export function UpdatesList({ locale }: UpdatesListProps) {
   const isRtl = locale === 'ar';
   const hero = t(updatesHeroData.business, locale);
 
+  // Maintenance releases feed the app stores but not this page, which
+  // promises new tools and features for the business.
+  const entries = RELEASE_NOTES.filter((note) => !note.maintenanceOnly);
+
   return (
     <div className="w-full" dir={isRtl ? 'rtl' : 'ltr'}>
       <ResourceListingHero
@@ -46,7 +50,7 @@ export function UpdatesList({ locale }: UpdatesListProps) {
       />
 
       <section className="bg-[#F8F5F3] px-4 pb-[140px]">
-        {RELEASE_NOTES.length === 0 && (
+        {entries.length === 0 && (
           <div className="mx-auto max-w-3xl pt-16 text-center">
             <p className="text-lg text-[#455150] ltr:font-montserrat rtl:font-cairo">
               {isRtl
@@ -57,7 +61,7 @@ export function UpdatesList({ locale }: UpdatesListProps) {
         )}
 
         <ol className="mx-auto flex max-w-3xl flex-col gap-6 pt-4">
-          {RELEASE_NOTES.map((note) => {
+          {entries.map((note) => {
             const title = t(note.title, locale);
             const summary = t(note.summary, locale);
             const highlights = t(note.highlights, locale);
