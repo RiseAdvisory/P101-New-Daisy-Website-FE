@@ -106,8 +106,10 @@ export const InAppBrowserNotice = ({ locale }: { locale: string }) => {
     );
   };
 
+  // py-8, not pt-8: without the bottom half the card butts straight into
+  // the store-buttons section below it.
   return (
-    <div className="px-4 pt-8">
+    <div className="px-4 py-8">
       <div
         className="mx-auto max-w-2xl rounded-2xl border border-[#8B6554]/30 bg-[#F8F5F3] p-6"
         dir={isRtl ? 'rtl' : 'ltr'}

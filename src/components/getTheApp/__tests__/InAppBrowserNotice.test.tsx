@@ -66,6 +66,19 @@ describe('InAppBrowserNotice', () => {
     expect(container.innerHTML).toBe('');
   });
 
+  it('spaces itself on both sides, not just the top', () => {
+    // Because it owns its spacing, a top-only pad left the card butting
+    // into the section below it.
+    setUserAgent(INSTAGRAM_IOS);
+    const { container } = render(<InAppBrowserNotice locale="en" />);
+    const outer = container.firstElementChild as HTMLElement;
+    const classes = [...outer.classList];
+    const hasTop = classes.some((c) => /^(py|pt|my|mt)-/.test(c));
+    const hasBottom = classes.some((c) => /^(py|pb|my|mb)-/.test(c));
+    expect(hasTop).toBe(true);
+    expect(hasBottom).toBe(true);
+  });
+
   it('points the hand-off link at the x-safari scheme with the escape marker', () => {
     setUserAgent(INSTAGRAM_IOS);
     render(<InAppBrowserNotice locale="en" />);
