@@ -24,7 +24,12 @@ export interface HeaderData {
 
 export const headerData: I18nContent<HeaderData> = {
   en: {
-    getTheApp: 'Start Free Trial',
+    // Labelled by destination, like the paired CTAs in the page body. This
+    // button sits next to the Apple and Play icons and goes to the stores,
+    // so the old "Start Free Trial" described the offer rather than where it
+    // leads. Softer than the body's "Download the app" because it stands
+    // alone here, with no signup button beside it to contrast against.
+    getTheApp: 'Get the App',
     headerNavList: [
       { title: 'Home', nav: '/' },
       { title: 'Features', nav: '/features' },
@@ -85,7 +90,7 @@ export const headerData: I18nContent<HeaderData> = {
   },
 
   ar: {
-    getTheApp: 'ابدأ تجربتك المجانية',
+    getTheApp: 'حمّل التطبيق',
     headerNavList: [
       { title: 'الرئيسية', nav: '/' },
       { title: 'المميزات', nav: '/features' },
