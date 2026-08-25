@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { localePath } from '@/lib/utils/locale';
 import { Switch } from '@/components/ui/switch';
+import { GetStartedButton } from '@/components/shared/GetStartedButton';
 import { PricingCardV3 } from './PricingCardV3';
 import type {
   Persona,
@@ -169,9 +170,12 @@ export const PricingHeroV3 = ({
 
         {/* Dual CTAs below cards */}
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          {/* Web signup sits first: on pricing the visitor is choosing a plan,
+              not looking for a download. */}
+          <GetStartedButton className="rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-[#172524] transition-colors hover:bg-[#F8F5F3] ltr:font-montserrat rtl:font-cairo" />
           <Link
             href={localePath('/get-the-app', locale)}
-            className="rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-[#172524] transition-colors hover:bg-[#F8F5F3] ltr:font-montserrat rtl:font-cairo"
+            className="rounded-lg border border-white/40 px-8 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-white/10 ltr:font-montserrat rtl:font-cairo"
           >
             {personaCopy.ctaPrimary}
           </Link>
