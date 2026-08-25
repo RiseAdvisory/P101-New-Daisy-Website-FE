@@ -187,11 +187,14 @@ describe('PricingV3Client', () => {
       ).not.toBeInTheDocument();
     });
 
-    it('uses the dynamic "Start Business Trial" CTA', () => {
+    it('labels the signup and download CTAs by destination, not by offer', () => {
+      // "Get started" next to "Start Business Trial" read as two names for
+      // the same action. The labels now say where each one goes.
       render(<PricingV3Client persona="business" locale="en" />);
-      expect(
-        screen.getAllByText('Start Business Trial').length,
-      ).toBeGreaterThan(0);
+      expect(screen.getAllByText('Download the app').length).toBeGreaterThan(0);
+      expect(screen.getAllByText('Start free trial').length).toBeGreaterThan(0);
+      // The old trial-flavoured store label must not come back.
+      expect(screen.queryByText('Start Business Trial')).not.toBeInTheDocument();
     });
   });
 
@@ -291,11 +294,11 @@ describe('PricingV3Client', () => {
       ).toBeInTheDocument();
     });
 
-    it('uses the dynamic "Start Solo Trial" CTA', () => {
+    it('labels the signup and download CTAs by destination, not by offer', () => {
       render(<PricingV3Client persona="professional" locale="en" />);
-      expect(
-        screen.getAllByText('Start Solo Trial').length,
-      ).toBeGreaterThan(0);
+      expect(screen.getAllByText('Download the app').length).toBeGreaterThan(0);
+      expect(screen.getAllByText('Start free trial').length).toBeGreaterThan(0);
+      expect(screen.queryByText('Start Solo Trial')).not.toBeInTheDocument();
     });
   });
 

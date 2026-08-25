@@ -23,9 +23,15 @@ import { getLocaleFromPathname } from '@/lib/utils/locale';
  * replacement.
  */
 
+/**
+ * Labelled by destination, not by offer. This button and the app-store
+ * button used to both promise "start your free trial", which is true of
+ * both and therefore told the visitor nothing about which to pick. The
+ * trial promise now lives in shared subtext under the pair.
+ */
 const LABELS = {
-  en: 'Get started',
-  ar: 'ابدأ الآن',
+  en: 'Start free trial',
+  ar: 'ابدأ التجربة المجانية',
 };
 
 interface Props {

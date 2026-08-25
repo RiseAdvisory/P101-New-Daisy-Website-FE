@@ -8,7 +8,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       headline: 'Every Customer Message Answered. Instantly.',
       subHeadline:
         "Daisy's AI receptionist handles every WhatsApp and Instagram inquiry, books appointments, and processes payments, 24/7. One platform replaces your entire front desk.",
-      ctaText: 'Start Your 14-Day Free Trial',
+      ctaText: 'Download the app',
       ctaLink: '/get-the-app',
       trustLine: 'No credit card required. Our team helps you set up.',
       answerBlock: {
@@ -53,7 +53,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     pricingHook: {
       headline: 'Free to Start. Grow at Your Own Pace.',
       body: "14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.",
-      ctaText: 'Start Your 14-Day Free Trial',
+      ctaText: 'Download the app',
       ctaLink: '/get-the-app',
       pricingLinkText: 'See full pricing details →',
       pricingLinkHref: '/pricing',
@@ -61,12 +61,12 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     inlineCtas: {
       afterScroll: {
         headline: 'Ready to put your reception on autopilot?',
-        ctaText: 'Start Your 14-Day Free Trial',
+        ctaText: 'Download the app',
         ctaLink: '/get-the-app',
       },
       afterFeatures: {
         headline: 'Start Your 14-Day Free Trial',
-        ctaText: 'Start Your 14-Day Free Trial',
+        ctaText: 'Download the app',
         ctaLink: '/get-the-app',
         secondaryLinkText: 'Explore all features →',
         secondaryLinkHref: '/features/business',
@@ -295,7 +295,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       headline: 'كل رسالة عميل تُجاب. فورًا.',
       subHeadline:
         'موظف الاستقبال الذكي من ديزي يتولى كل استفسار على واتساب وإنستغرام، يحجز المواعيد، ويعالج المدفوعات، على مدار الساعة. منصة واحدة تحل محل مكتب الاستقبال بالكامل.',
-      ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
+      ctaText: 'حمّل التطبيق',
       ctaLink: '/get-the-app',
       trustLine: 'لا حاجة لبطاقة ائتمان. فريقنا يساعدك في الإعداد.',
       answerBlock: {
@@ -340,7 +340,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     pricingHook: {
       headline: 'ابدأ مجانًا. انمُ بالسرعة التي تناسبك.',
       body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل إلى جميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولارًا شهريًا. موظف الاستقبال الذكي لا يتولى الرسائل فحسب، بل يتعلم تفضيلات عملائك بمرور الوقت، ويخصص كل تفاعل، ويحوّل الزوار الجدد إلى عملاء أوفياء. تُفرض العمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، أما عملاؤك الحاليون فلا تُفرض عليهم أي عمولة.',
-      ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
+      ctaText: 'حمّل التطبيق',
       ctaLink: '/get-the-app',
       pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة ←',
       pricingLinkHref: '/pricing',
@@ -348,12 +348,12 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     inlineCtas: {
       afterScroll: {
         headline: 'مستعد لوضع استقبالك على الطيار الآلي؟',
-        ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
+        ctaText: 'حمّل التطبيق',
         ctaLink: '/get-the-app',
       },
       afterFeatures: {
         headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
-        ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
+        ctaText: 'حمّل التطبيق',
         ctaLink: '/get-the-app',
         secondaryLinkText: 'استكشف جميع الميزات →',
         secondaryLinkHref: '/features/business',

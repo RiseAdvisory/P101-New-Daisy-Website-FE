@@ -8,7 +8,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       headline: 'Focus on Your Craft.\nDaisy Handles the Rest.',
       subHeadline:
         "Stop being your own receptionist. Daisy's AI handles your WhatsApp and Instagram messages, books appointments, and processes payments, while you focus on what you do best.",
-      ctaText: 'Start Your Free Trial',
+      ctaText: 'Download the app',
       ctaLink: '/get-the-app',
       trustLine: 'Free to join. No credit card required.',
       answerBlock: {
@@ -61,12 +61,12 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
     inlineCtas: {
       afterScroll: {
         headline: 'Ready to stop being your own receptionist?',
-        ctaText: 'Start Your Free Trial',
+        ctaText: 'Download the app',
         ctaLink: '/get-the-app',
       },
       afterFeatures: {
         headline: 'Start Your Free Trial',
-        ctaText: 'Start Your Free Trial',
+        ctaText: 'Download the app',
         ctaLink: '/get-the-app',
         secondaryLinkText: 'Explore all features →',
         secondaryLinkHref: '/features/professional',
@@ -295,7 +295,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       headline: 'ركّز على إبداعك.\nديزي تتولى الباقي.',
       subHeadline:
         'توقف عن القيام بدور موظف الاستقبال بنفسك. يتولى الذكاء الاصطناعي في ديزي رسائل واتساب وإنستغرام، ويحجز المواعيد، ويعالج المدفوعات، بينما تركز أنت على ما تتقنه.',
-      ctaText: 'ابدأ تجربتك المجانية',
+      ctaText: 'حمّل التطبيق',
       ctaLink: '/get-the-app',
       trustLine: 'الانضمام مجاني. لا حاجة لبطاقة ائتمان.',
       answerBlock: {
@@ -348,12 +348,12 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
     inlineCtas: {
       afterScroll: {
         headline: 'مستعد للتوقف عن القيام بدور موظف الاستقبال بنفسك؟',
-        ctaText: 'ابدأ تجربتك المجانية',
+        ctaText: 'حمّل التطبيق',
         ctaLink: '/get-the-app',
       },
       afterFeatures: {
         headline: 'ابدأ تجربتك المجانية',
-        ctaText: 'ابدأ تجربتك المجانية',
+        ctaText: 'حمّل التطبيق',
         ctaLink: '/get-the-app',
         secondaryLinkText: 'استكشف جميع الميزات →',
         secondaryLinkHref: '/features/professional',
