@@ -190,7 +190,7 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
         'Test the AI receptionist with 50 customer conversations included. Use it to handle common booking questions, availability requests, service inquiries, and follow-ups.',
       aiCreditsFineprint:
         'Powered by 1,000 included AI credits. After that, continue with pay-as-you-go top-ups.',
-      ctaPrimary: 'Start Business Trial',
+      ctaPrimary: 'Download the app',
       ctaSecondary: 'Book a Demo',
       finalCtaHeadline: 'Ready to Run Your Business With Daisy?',
       finalCtaBody:
@@ -225,7 +225,7 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
         'اختبر موظف الاستقبال الذكي مع 50 محادثة عملاء مشمولة. استخدمه للتعامل مع أسئلة الحجز الشائعة، وطلبات التوفر، واستفسارات الخدمات، والمتابعات.',
       aiCreditsFineprint:
         'مدعوم بـ 1000 رصيد ذكاء اصطناعي مشمول. بعدها، تابع باستخدام الشحن حسب الاستخدام.',
-      ctaPrimary: 'ابدأ تجربة الأعمال',
+      ctaPrimary: 'حمّل التطبيق',
       ctaSecondary: 'احجز عرضاً توضيحياً',
       finalCtaHeadline: 'هل أنت مستعد لإدارة أعمالك مع ديزي؟',
       finalCtaBody:
@@ -263,7 +263,7 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
         'Test the AI receptionist with 50 customer conversations included. Use it to help answer booking questions, service inquiries, availability requests, and follow-ups while you are busy serving clients.',
       aiCreditsFineprint:
         'Powered by 1,000 included AI credits. After that, continue with pay-as-you-go top-ups.',
-      ctaPrimary: 'Start Solo Trial',
+      ctaPrimary: 'Download the app',
       ctaSecondary: 'Create Your Booking Site',
       finalCtaHeadline: 'Ready to Get Booked With Daisy?',
       finalCtaBody:
@@ -298,7 +298,7 @@ export const PERSONA_COPY: Record<Persona, I18nContent<PersonaCopy>> = {
         'اختبر موظف الاستقبال الذكي مع 50 محادثة عملاء مشمولة. استخدمه للمساعدة في الإجابة عن أسئلة الحجز، واستفسارات الخدمات، وطلبات التوفر، والمتابعات أثناء انشغالك بخدمة عملائك.',
       aiCreditsFineprint:
         'مدعوم بـ 1000 رصيد ذكاء اصطناعي مشمول. بعدها، تابع باستخدام الشحن حسب الاستخدام.',
-      ctaPrimary: 'ابدأ التجربة الفردية',
+      ctaPrimary: 'حمّل التطبيق',
       ctaSecondary: 'أنشئ موقع حجوزاتك',
       finalCtaHeadline: 'هل أنت مستعد للحصول على حجوزات مع ديزي؟',
       finalCtaBody:
