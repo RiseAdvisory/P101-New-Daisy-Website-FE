@@ -302,6 +302,99 @@ export function appendAttributionToAppStoreUrl(
   return out.toString();
 }
 
+/** Where the "Get started" CTAs send visitors: the web app. */
+export const SIGNUP_URL = 'https://trythedaisy.com';
+
+/** Params the STAMP branch writes when a visitor arrived without attribution. */
+export const CTA_STAMP = {
+  utm_source: 'website',
+  utm_medium: 'cta',
+} as const;
+
+/**
+ * Turn a pathname into the campaign slug used when stamping.
+ * `/en/features/business/booking-management` → `features-business-booking-management`
+ * The locale is dropped so the same page reports as one campaign in EN and AR.
+ */
+export function campaignSlugFromPath(pathname: string): string {
+  const withoutLocale = pathname.replace(/^\/(en|ar)(?=\/|$)/, '');
+  const slug = withoutLocale.replace(/^\/+|\/+$/g, '').replace(/\//g, '-');
+  return slug || 'home';
+}
+
+/**
+ * Build the signup URL for a "Get started" CTA, with attribution attached.
+ *
+ * Two behaviours, and which one applies is decided by the visitor's FIRST
+ * touch, not the current URL:
+ *
+ *   FORWARD — the visitor arrived carrying utm_* or an ad click id. Those
+ *             values are passed through unchanged and nothing is re-stamped.
+ *   STAMP   — the visitor arrived clean. Set utm_source=website,
+ *             utm_medium=cta and utm_campaign=<page slug>.
+ *
+ * Reading first touch rather than the current URL is deliberate. A visitor
+ * who lands on /business from an ad and then browses to /pricing before
+ * clicking has no utm_* on the current URL, so a current-URL check would
+ * stamp that click as organic and quietly relabel paid traffic. First touch
+ * is already captured for exactly this reason.
+ *
+ * SSR-safe: with no stored record (server render, or a visitor whose first
+ * page this is) the STAMP branch applies, which is the correct default.
+ */
+export function buildSignupUrl(pageSlug: string, baseUrl: string = SIGNUP_URL): string {
+  const record = readRecord();
+
+  // Precedence, and the reason for each step:
+  //
+  //   1. First touch, when it carries attribution. Between two real sources
+  //      the first one keeps the credit, which is what "first touch wins"
+  //      means here.
+  //   2. Otherwise last touch, when it carries attribution. This is the
+  //      visitor who found the site organically weeks ago and has now
+  //      arrived from an ad. Their first touch is clean, so step 1 does not
+  //      fire, and stamping utm_source=website would record a paid click as
+  //      organic: exactly the mislabeling this is meant to prevent.
+  //   3. Otherwise stamp.
+  //
+  // Steps 1 and 2 together mean the STAMP branch can only ever apply to a
+  // visitor with no attribution anywhere, so real attribution is never
+  // overwritten.
+  const source =
+    record && hasAttributionData(record.firstTouch)
+      ? record.firstTouch
+      : record && hasAttributionData(record.lastTouch)
+        ? record.lastTouch
+        : null;
+
+  if (source) {
+    // Forward everything captured, including ad click ids: those are what
+    // let the ad platforms close the loop on a conversion.
+    return appendTouchToUrl(baseUrl, source);
+  }
+
+  const out = new URL(baseUrl);
+  out.searchParams.set('utm_source', CTA_STAMP.utm_source);
+  out.searchParams.set('utm_medium', CTA_STAMP.utm_medium);
+  out.searchParams.set('utm_campaign', pageSlug);
+  return out.toString();
+}
+
+/** Append one touch's attribution params to a URL, leaving existing ones alone. */
+function appendTouchToUrl(url: string, touch: AttributionTouch): string {
+  const out = new URL(url);
+  for (const [paramName, fieldName] of Object.entries(URL_TO_FIELD)) {
+    const value = touch[fieldName];
+    if (value && !out.searchParams.has(paramName)) {
+      out.searchParams.set(paramName, String(value));
+    }
+  }
+  if (touch.landingPage && !out.searchParams.has('landing_page')) {
+    out.searchParams.set('landing_page', touch.landingPage);
+  }
+  return out.toString();
+}
+
 /** Test-only — clear stored attribution. */
 export function clearAttribution(): void {
   const storage = safeGetStorage();

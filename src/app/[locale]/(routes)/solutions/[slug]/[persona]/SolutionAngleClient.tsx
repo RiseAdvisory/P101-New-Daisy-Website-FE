@@ -82,6 +82,7 @@ export const SolutionAngleClient = ({
       )}
       {pageData.inlineCtas?.afterScroll && (
         <InlineCTA
+          showGetStarted
           headline={pageData.inlineCtas.afterScroll.headline}
           ctaText={pageData.inlineCtas.afterScroll.ctaText}
           ctaLink={pageData.inlineCtas.afterScroll.ctaLink}
@@ -114,6 +115,7 @@ export const SolutionAngleClient = ({
       )}
       {pageData.inlineCtas?.afterFeatures && (
         <InlineCTA
+          showGetStarted
           headline={pageData.inlineCtas.afterFeatures.headline}
           ctaText={pageData.inlineCtas.afterFeatures.ctaText}
           ctaLink={pageData.inlineCtas.afterFeatures.ctaLink}

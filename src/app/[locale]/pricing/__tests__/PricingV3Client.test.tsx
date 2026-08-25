@@ -21,6 +21,8 @@ jest.mock('next/link', () => ({
 const mockPush = jest.fn();
 jest.mock('next/navigation', () => ({
   useRouter: () => ({ push: mockPush, replace: jest.fn() }),
+  // GetStartedButton derives its utm_campaign slug from the pathname.
+  usePathname: () => '/en/pricing/business',
 }));
 
 describe('PricingV3Client', () => {
