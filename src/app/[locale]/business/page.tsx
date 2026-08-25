@@ -124,6 +124,7 @@ export default function BusinessPage({ params }: { params: { locale: string } })
       {pageData.hero && (
         <LandingHero
           categoryLabel={pageData.hero.categoryLabel}
+          ctaToSignup
           headline={pageData.hero.headline}
           subHeadline={pageData.hero.subHeadline}
           ctaText={pageData.hero.ctaText}

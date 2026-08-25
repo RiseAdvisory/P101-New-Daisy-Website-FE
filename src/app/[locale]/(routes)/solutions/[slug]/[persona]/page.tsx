@@ -86,6 +86,7 @@ export default function SolutionAnglePage({
       {pageData.hero && (
         <LandingHero
           categoryLabel={pageData.hero.categoryLabel}
+          ctaToSignup
           headline={pageData.hero.headline}
           subHeadline={pageData.hero.subHeadline}
           ctaText={pageData.hero.ctaText}

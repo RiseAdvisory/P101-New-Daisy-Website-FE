@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { AnswerBlock } from '@/components/geo/AnswerBlock';
 import { MetaTechBadge } from '@/components/shared/MetaTechBadge';
+import { GetStartedButton } from '@/components/shared/GetStartedButton';
 
 interface LandingHeroProps {
   categoryLabel: string;
@@ -11,11 +12,25 @@ interface LandingHeroProps {
   trustLine?: string;
   showMetaBadge?: boolean;
   locale?: string;
+  /**
+   * Send the hero CTA to web signup with attribution attached, instead of
+   * to ctaLink.
+   *
+   * The hero is a single button, so it does not need the destination
+   * labelling the paired CTAs lower down the page use to tell each other
+   * apart. It is also the most valuable slot on the page, and pointing it
+   * at the app stores both drops the trial offer and routes past the
+   * signup funnel, where store redirects destroy attribution.
+   */
+  ctaToSignup?: boolean;
   answerBlock?: {
     question: string;
     answer: string;
   };
 }
+
+const CTA_CLASS =
+  'inline-block bg-white text-primary font-semibold px-[50px] py-[14px] rounded-[9px] text-base hover:bg-primary hover:text-white hover:border hover:border-white transition-colors border border-transparent';
 
 export const LandingHero = ({
   categoryLabel,
@@ -26,6 +41,7 @@ export const LandingHero = ({
   trustLine,
   showMetaBadge,
   locale,
+  ctaToSignup,
   answerBlock,
 }: LandingHeroProps) => {
   return (
@@ -40,12 +56,13 @@ export const LandingHero = ({
         <p className="text-[#D5D9D9] ltr:font-montserrat text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto">
           {subHeadline}
         </p>
-        <Link
-          href={ctaLink}
-          className="inline-block bg-white text-primary font-semibold px-[50px] py-[14px] rounded-[9px] text-base hover:bg-primary hover:text-white hover:border hover:border-white transition-colors border border-transparent"
-        >
-          {ctaText}
-        </Link>
+        {ctaToSignup ? (
+          <GetStartedButton className={CTA_CLASS} label={ctaText} />
+        ) : (
+          <Link href={ctaLink} className={CTA_CLASS}>
+            {ctaText}
+          </Link>
+        )}
         {trustLine && (
           <p className="text-white/80 text-base mt-4">{trustLine}</p>
         )}

@@ -8,7 +8,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       headline: 'Focus on Your Craft.\nDaisy Handles the Rest.',
       subHeadline:
         "Stop being your own receptionist. Daisy's AI handles your WhatsApp and Instagram messages, books appointments, and processes payments, while you focus on what you do best.",
-      ctaText: 'Download the app',
+      ctaText: 'Start Your Free Trial',
       ctaLink: '/get-the-app',
       trustLine: 'Free to join. No credit card required.',
       answerBlock: {
@@ -295,7 +295,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       headline: 'ركّز على إبداعك.\nديزي تتولى الباقي.',
       subHeadline:
         'توقف عن القيام بدور موظف الاستقبال بنفسك. يتولى الذكاء الاصطناعي في ديزي رسائل واتساب وإنستغرام، ويحجز المواعيد، ويعالج المدفوعات، بينما تركز أنت على ما تتقنه.',
-      ctaText: 'حمّل التطبيق',
+      ctaText: 'ابدأ تجربتك المجانية',
       ctaLink: '/get-the-app',
       trustLine: 'الانضمام مجاني. لا حاجة لبطاقة ائتمان.',
       answerBlock: {
