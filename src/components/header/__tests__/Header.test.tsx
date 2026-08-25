@@ -144,11 +144,13 @@ describe('Header', () => {
       expect(screen.getByText('Contact')).toBeInTheDocument();
     });
 
-    it('renders the "Get the App" button text from constants', () => {
+    it('labels the header store button by destination, not by offer', () => {
+      // It sits beside the Apple and Play icons and goes to the stores, so
+      // a trial label described the offer rather than where it leads.
       render(<Header />);
 
       expect(screen.getByTestId('get-app-btn')).toHaveTextContent(
-        'Start Free Trial',
+        'Get the App',
       );
     });
 
