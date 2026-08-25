@@ -8,7 +8,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       headline: 'Every Customer Message Answered. Instantly.',
       subHeadline:
         "Daisy's AI receptionist handles every WhatsApp and Instagram inquiry, books appointments, and processes payments, 24/7. One platform replaces your entire front desk.",
-      ctaText: 'Download the app',
+      ctaText: 'Start Your 14-Day Free Trial',
       ctaLink: '/get-the-app',
       trustLine: 'No credit card required. Our team helps you set up.',
       answerBlock: {
@@ -295,7 +295,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       headline: 'كل رسالة عميل تُجاب. فورًا.',
       subHeadline:
         'موظف الاستقبال الذكي من ديزي يتولى كل استفسار على واتساب وإنستغرام، يحجز المواعيد، ويعالج المدفوعات، على مدار الساعة. منصة واحدة تحل محل مكتب الاستقبال بالكامل.',
-      ctaText: 'حمّل التطبيق',
+      ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
       ctaLink: '/get-the-app',
       trustLine: 'لا حاجة لبطاقة ائتمان. فريقنا يساعدك في الإعداد.',
       answerBlock: {
