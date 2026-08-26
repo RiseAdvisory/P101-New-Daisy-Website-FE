@@ -159,7 +159,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Is Glamera available outside Saudi Arabia?',
         answer:
-          'Glamera is expanding to UAE and Egypt but is primarily Saudi-focused. Daisy serves all 6 GCC countries with equal Arabic/English support, local payment methods, and compliance, plus global scalability.',
+          'Glamera is expanding to UAE and Egypt but is primarily Saudi-focused. Daisy is built for the GCC — native Arabic/English UI and local payment methods — live in Kuwait today and expanding across the Gulf.',
       },
       {
         question: 'What are the hidden costs when using Glamera?',
@@ -362,7 +362,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does DINGG work in the GCC?',
         answer:
-          'DINGG is expanding to UAE with native Arabic UI and local payment support, but hasn\'t yet reached KSA, Kuwait, Bahrain, Oman, or Qatar. Daisy operates across all 6 GCC countries with full local compliance.',
+          'DINGG is expanding to UAE with native Arabic UI and local payment support, but hasn\'t yet reached KSA, Kuwait, Bahrain, Oman, or Qatar. Daisy is built for the GCC — native Arabic/English UI and local payment methods — live in Kuwait today and expanding across the Gulf.',
       },
       {
         question: 'How much does DINGG really cost with all the add-ons?',
@@ -382,7 +382,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Is DINGG\'s Arabic support as good as Daisy\'s for GCC businesses?',
         answer:
-          'DINGG has native Arabic UI quality and is building GCC presence, but currently only operates in UAE. Daisy provides native Arabic support across all 6 GCC countries with local payment methods, regulatory compliance, and local customer support, a much broader and more established GCC footprint.',
+          'DINGG has native Arabic UI quality and is building GCC presence, but currently only operates in UAE. Daisy provides native Arabic support with local payment methods, built for the Gulf and live in Kuwait today.',
       },
       {
         question: 'How good is DINGG\'s mobile app for day-to-day salon management?',
@@ -959,7 +959,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does RepeatMD work for beauty businesses in the Middle East?',
         answer:
-          'No. RepeatMD is focused exclusively on the US and Canadian med spa market with English-only support. It has no Arabic UI, no GCC compliance, and no local payment methods. Daisy serves the entire GCC region with native Arabic support, local payment integrations, and regional regulatory compliance.',
+          'No. RepeatMD is focused exclusively on the US and Canadian med spa market with English-only support. It has no Arabic UI, no GCC compliance, and no local payment methods. Daisy is built for the GCC — native Arabic/English UI and local payment methods — live in Kuwait today and expanding across the Gulf.',
       },
       {
         question: 'How do RepeatMD\'s AI agents compare to Daisy\'s AI receptionist?',
@@ -1169,7 +1169,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Is Boulevard available in the Middle East?',
         answer:
-          'No. Boulevard is US-only with no Arabic support, GCC compliance, or local payment methods. For Middle East beauty businesses, Daisy provides native Arabic UI, local payment integration, and compliance across all 6 GCC countries.',
+          'No. Boulevard is US-only with no Arabic support, GCC compliance, or local payment methods. For Middle East beauty businesses, Daisy provides native Arabic UI, local payment integration, and support built for the Gulf, live in Kuwait today.',
       },
       {
         question: 'What does Boulevard actually cost when you include transaction fees?',

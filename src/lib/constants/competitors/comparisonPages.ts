@@ -411,7 +411,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     keywords: ['daisy vs glamera', 'glamera alternative', 'arabic salon software', 'gcc beauty platform'],
     heroTitle: 'Daisy vs Glamera',
     heroSubtitle: 'Both speak Arabic. Only one has AI, full business management, and 6-country GCC coverage.',
-    tldr: 'Glamera is a Saudi-focused marketplace with basic features and a free tier. Daisy is a complete AI-powered platform with all 6 GCC countries, full business management, and growth tools. Both support Arabic natively.',
+    tldr: 'Glamera is a Saudi-focused marketplace with basic features and a free tier. Daisy is a complete AI-powered platform built for the GCC (live in Kuwait today) with full business management and growth tools. Both support Arabic natively.',
     verdict: 'Glamera is fine for Saudi businesses wanting free marketplace listing. For anything beyond basic booking. AI, POS, marketing, multi-country GCC coverage. Daisy is the clear winner.',
     featureCommentary: {
       onlineBooking: 'Glamera offers basic booking with marketplace. Daisy adds AI-powered self-service booking.',
@@ -445,7 +445,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'Compare Daisy and DINGG for AI-powered salon management. Both offer AI features, but which AI ecosystem is more complete for GCC businesses?',
     keywords: ['daisy vs dingg', 'dingg alternative', 'ai salon software', 'gcc salon management'],
     heroTitle: 'Daisy vs DINGG',
-    heroSubtitle: 'Both offer AI and Arabic support, but Daisy covers all 6 GCC countries with a complete growth ecosystem.',
+    heroSubtitle: 'Both offer AI and Arabic support, but Daisy is built for the GCC — live in Kuwait today — with a complete growth ecosystem.',
     tldr: 'DINGG offers a competitive AI suite at $49-79/mo with UAE expansion. Daisy provides broader GCC coverage (6 countries vs 1), consumer marketplace, cashback, and white-labeling that DINGG lacks.',
     verdict: 'DINGG is a credible AI competitor at an affordable price point. But it\'s early in GCC expansion (UAE only), has no marketplace or cashback, and limited funding. Daisy offers more comprehensive AI, broader GCC presence, and stronger growth tools.',
     featureCommentary: {
@@ -457,7 +457,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       inventoryManagement: 'DINGG has basic inventory. Daisy offers comparable tracking.',
       reportingAndAnalytics: 'DINGG offers standard reporting. Daisy adds AI-powered recommendations and forecasting.',
       marketplaceAndDiscovery: 'DINGG has no consumer marketplace. Daisy provides marketplace + cashback for customer acquisition.',
-      aiCapabilities: 'DINGG has AI receptionist, chatbot, and scheduling in Professional tier ($79/mo). Daisy\'s AI handles payments in the booking flow, offers white-labeled experiences, and works across all 6 GCC countries.',
+      aiCapabilities: 'DINGG has AI receptionist, chatbot, and scheduling in Professional tier ($79/mo). Daisy\'s AI handles payments in the booking flow, offers white-labeled experiences, and is built for the GCC (live in Kuwait today).',
     },
     whoShouldChooseDaisy: [
       'You need GCC coverage beyond just UAE',
@@ -516,7 +516,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     keywords: ['daisy vs planity', 'planity alternative', 'beauty marketplace comparison'],
     heroTitle: 'Daisy vs Planity',
     heroSubtitle: 'AI-powered global platform versus France\'s commission-free marketplace, different markets, different approaches.',
-    tldr: 'Planity dominates France with 10M+ monthly bookings and commission-free pricing. Daisy serves GCC and global markets with AI, Arabic support, and growth tools Planity doesn\'t offer.',
+    tldr: 'Planity dominates France with 10M+ monthly bookings and commission-free pricing. Daisy is built for the GCC — native Arabic/English UI and local payment methods — live in Kuwait today and expanding across the Gulf.',
     verdict: 'Planity is the clear leader in France. For any market outside France, especially GCC. Daisy is the obvious choice with AI, Arabic, and comprehensive business management.',
     featureCommentary: {
       onlineBooking: 'Planity excels in French market booking (10M+ monthly). Daisy provides AI-powered booking for GCC markets.',
