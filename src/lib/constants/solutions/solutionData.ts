@@ -131,7 +131,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'Does Daisy work for salons in the Middle East?',
         answer:
-          'Daisy is built for the GCC with native Arabic UI (not translated), local payment methods (Mada, Apple Pay, etc.), and full VAT compliance across UAE, KSA, Kuwait, Bahrain, Oman, and Qatar.',
+          'Daisy is built for the GCC with native Arabic UI (not translated) and local payment methods, and is live in Kuwait today with more Gulf markets on the way.',
       },
       {
         question: 'What is the best salon management software in 2026?',

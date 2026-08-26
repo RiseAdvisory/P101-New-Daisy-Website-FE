@@ -265,7 +265,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Fresha work in the Middle East?',
         answer:
-          'Fresha has some presence in the UAE but doesn\'t offer Arabic language support, local payment methods, or GCC-specific compliance features. Daisy is built for the GCC market with native Arabic UI, local payment integration, and full VAT compliance across all six GCC countries.',
+          'Fresha has some presence in the UAE but doesn\'t offer Arabic language support, local payment methods, or GCC-specific compliance features. Daisy is built for the GCC market with native Arabic UI and local payment integration, live in Kuwait today.',
       },
       {
         question: 'Is Fresha really free to use?',
@@ -566,7 +566,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Booksy support Arabic or work well in the Gulf region?',
         answer:
-          'Booksy has zero presence in the GCC, no Arabic language support, no local payment integration, and no regional compliance features. If you operate in the UAE, Saudi Arabia, Kuwait, or any Gulf country, Daisy is purpose-built with native Arabic UI, local payment methods, and full VAT compliance across all six GCC markets.',
+          'Booksy has zero presence in the GCC, no Arabic language support, no local payment integration, and no regional compliance features. Daisy is purpose-built for the Gulf with native Arabic UI and local payment methods, live in Kuwait today.',
       },
       {
         question: 'How does Booksy\'s AI compare to Daisy\'s AI receptionist?',
@@ -857,7 +857,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Vagaro work for salons in Dubai or Saudi Arabia?',
         answer:
-          'Vagaro is US-focused with no Arabic language support, no GCC payment methods, and no regional compliance features. It doesn\'t support VAT calculations for Gulf countries. Daisy is built for the GCC market with native Arabic/English UI, local payment integration, and full VAT compliance across UAE, KSA, Kuwait, Bahrain, Oman, and Qatar.',
+          'Vagaro is US-focused with no Arabic language support, no GCC payment methods, and no regional compliance features. Daisy is built for the GCC market with native Arabic/English UI and local payment integration, live in Kuwait today.',
       },
       {
         question: 'Does Vagaro have real AI features?',
@@ -1181,7 +1181,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Mindbody support Arabic or work well in the Gulf?',
         answer:
-          'Mindbody\'s platform is primarily English-focused with limited localization. It doesn\'t offer Arabic language UI, GCC-specific payment methods, or regional VAT compliance. For salons and spas operating in the Gulf, Daisy provides native Arabic/English support, local payment integration, and full compliance across all six GCC countries.',
+          'Mindbody\'s platform is primarily English-focused with limited localization. It doesn\'t offer Arabic language UI, GCC-specific payment methods, or regional VAT compliance. For salons and spas operating in the Gulf, Daisy provides native Arabic/English support, local payment integration, and support built for the Gulf, live in Kuwait today.',
       },
       {
         question: 'Does Mindbody have real AI or is it just marketing?',
