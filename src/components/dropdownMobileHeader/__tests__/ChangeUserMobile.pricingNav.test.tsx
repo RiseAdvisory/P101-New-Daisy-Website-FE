@@ -127,27 +127,11 @@ describe('ChangeUserTypeMobile — pricing route navigation', () => {
     expect(mockPush).toHaveBeenCalledWith('/en/pricing/business');
   });
 
-  it('navigates within /pricing-v2 (not the live /pricing) when on the v2 preview', async () => {
-    // /pricing-v2 contains the substring "/pricing"; the v2 branch must
-    // be checked first AND early-return so we don't double-navigate.
+  it('only calls router.push once on pricing (no double navigation)', async () => {
+    // The pricing branch early-returns so it cannot fall through to another
+    // branch and navigate twice.
     const { usePathname } = require('next/navigation');
-    usePathname.mockReturnValue('/pricing-v2/business');
-
-    await act(async () => {
-      render(<ChangeUserTypeMobile {...defaultProps} />);
-    });
-
-    const professionalBtn = screen.getByRole('button', { name: 'Professional' });
-    fireEvent.click(professionalBtn);
-
-    expect(mockPush).toHaveBeenCalledWith('/en/pricing-v2/professional');
-    // Must NOT have also pushed to live /pricing
-    expect(mockPush).not.toHaveBeenCalledWith('/en/pricing/professional');
-  });
-
-  it('only calls router.push once on the v2 preview (no double navigation)', async () => {
-    const { usePathname } = require('next/navigation');
-    usePathname.mockReturnValue('/pricing-v2/professional');
+    usePathname.mockReturnValue('/pricing/professional');
 
     await act(async () => {
       render(<ChangeUserTypeMobile {...defaultProps} />);
@@ -157,6 +141,6 @@ describe('ChangeUserTypeMobile — pricing route navigation', () => {
     fireEvent.click(businessBtn);
 
     expect(mockPush).toHaveBeenCalledTimes(1);
-    expect(mockPush).toHaveBeenCalledWith('/en/pricing-v2/business');
+    expect(mockPush).toHaveBeenCalledWith('/en/pricing/business');
   });
 });
