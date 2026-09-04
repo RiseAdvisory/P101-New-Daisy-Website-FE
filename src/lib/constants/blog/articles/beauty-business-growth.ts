@@ -886,118 +886,118 @@ const buildingFreelanceBeautyBusinessArticle: LocalBlogPost = {
     description:
       'A complete guide to building a freelance beauty business from zero. Covers business setup, financial planning, client acquisition, pricing, legal requirements, workspace options, and growth strategies for independent beauty professionals.',
     aboutPosts: `
-<h2>The Freelance Beauty Economy Is Booming</h2>
-<p>The shift toward independent beauty work is accelerating. More professionals than ever are leaving traditional employment to build their own beauty businesses - as chair renters, home studio operators, or mobile service providers. The appeal is clear: control over your schedule, your clients, your pricing, and your income. But freelance success requires more than technical skill; it demands business acumen that cosmetology school does not teach.</p>
-<p>This guide provides the complete <a href="/en/resources/blog/business/beauty-business-growth-guide">business growth roadmap</a> for beauty professionals who want to go independent. Whether you are just starting to consider freelance work or you are ready to launch this week, these are the steps that separate thriving independents from those who return to employment within a year.</p>
+<h2>The freelance beauty economy is booming</h2>
+<p>More professionals are going independent every year, leaving employment to rent a chair, run a home studio, or take the work mobile. The draw is obvious: your schedule, your clients, your prices, your income. What it also demands is the business side, and cosmetology school teaches none of that.</p>
+<p>Below is the full <a href="/en/resources/blog/business/beauty-business-growth-guide">business growth roadmap</a> for going independent. It works whether you are still weighing it up or launching next week, and it covers what separates the independents who thrive from the ones back in employment within the year.</p>
 
-<h2>Step 1: Choose Your Business Model</h2>
-<p>Freelance beauty professionals operate under several models, each with different cost structures, client access, and growth potential.</p>
+<h2>Step 1: choose your business model</h2>
+<p>Independents work under several models, each with its own costs, client access, and ceiling.</p>
 
-<h3>Chair Rental / Suite Rental</h3>
-<p>You rent a chair or private suite within an existing salon. You set your own prices, choose your own products, and manage your own clients. Rent is typically $200-$800/week depending on location and amenities.</p>
-<p><strong>Pros:</strong> Established location with foot traffic, shared overhead (reception, utilities, WiFi), and professional environment. Lower startup cost than opening your own space.</p>
-<p><strong>Cons:</strong> Rent is a fixed cost regardless of how busy you are. Limited control over the space, branding, and atmosphere.</p>
+<h3>Chair rental / suite rental</h3>
+<p>You rent a chair or a private suite inside an existing salon, set your own prices, pick your own products, and keep your own clients. Rent usually runs $200-$800/week depending on location and what comes with it.</p>
+<p><strong>Pros:</strong> an established location with foot traffic, shared overhead covering reception, utilities and WiFi, and a professional setting. Cheaper to start than your own space.</p>
+<p><strong>Cons:</strong> the rent is due whether you are busy or not, and you control little of the space, the branding, or the atmosphere.</p>
 
-<h3>Home Studio</h3>
-<p>A dedicated, professionally equipped space in your home. Startup cost: $3,000-$15,000 depending on required renovations and equipment.</p>
-<p><strong>Pros:</strong> No rent payments, maximum schedule flexibility, zero commute, and complete control over your environment.</p>
-<p><strong>Cons:</strong> Requires local zoning approval, limited by residential regulations, no foot traffic, and requires strong marketing to drive clients to a non-commercial location.</p>
+<h3>Home studio</h3>
+<p>A dedicated, properly equipped room at home. Startup cost: $3,000-$15,000 depending on the renovation and equipment you need.</p>
+<p><strong>Pros:</strong> no rent, total schedule flexibility, no commute, and complete control over the environment.</p>
+<p><strong>Cons:</strong> you need local zoning approval, residential rules limit what you can do, nobody walks past, and marketing has to work hard to bring clients to a house.</p>
 
-<h3>Mobile / On-Location Services</h3>
-<p>You travel to clients' homes, offices, or event locations. Startup cost: $2,000-$8,000 for portable equipment and a vehicle.</p>
-<p><strong>Pros:</strong> No rent, unique convenience proposition, access to clients who cannot or prefer not to visit a salon, and strong demand for bridal, event, and corporate services.</p>
-<p><strong>Cons:</strong> Travel time reduces your hourly earning potential, equipment limitations, and unpredictable working conditions.</p>
+<h3>Mobile / on-location services</h3>
+<p>You travel to clients at home, at work, or at events. Startup cost: $2,000-$8,000 for portable equipment and a vehicle.</p>
+<p><strong>Pros:</strong> no rent, convenience nobody else offers, access to clients who cannot get to a salon or would rather not, and steady demand from bridal, event, and corporate work.</p>
+<p><strong>Cons:</strong> travel eats into what you earn per hour, your kit limits what you can do, and conditions vary from job to job.</p>
 
-<h2>Step 2: Handle the Business Fundamentals</h2>
-<p>Before serving your first client as a freelancer, set up the business infrastructure that protects you legally and financially.</p>
+<h2>Step 2: handle the business fundamentals</h2>
+<p>Before your first client as a freelancer, put the infrastructure in that protects you legally and financially.</p>
 
-<h3>Business Registration</h3>
-<p>Register your business as an LLC or sole proprietorship. An LLC provides personal liability protection: if a client sues your business, your personal assets are protected. Registration costs vary by jurisdiction but typically range from $50-$500.</p>
+<h3>Business registration</h3>
+<p>Register as an LLC or a sole proprietorship. An LLC shields you personally, so a client suing the business cannot reach your own assets. Registration costs vary by jurisdiction, usually $50-$500.</p>
 
-<h3>Licences and Insurance</h3>
+<h3>Licences and insurance</h3>
 <ul>
-<li><strong>Individual cosmetology licence:</strong> You must hold a current, valid licence in your jurisdiction. Ensure it covers the specific services you plan to offer.</li>
-<li><strong>Business licence:</strong> Required in most jurisdictions for any commercial activity.</li>
-<li><strong>Professional liability insurance:</strong> Protects you against claims of injury, allergic reactions, or dissatisfaction. Costs $200-$500/year for most beauty professionals.</li>
-<li><strong>General liability insurance:</strong> Covers accidents in your workspace (a client tripping, property damage). Essential if clients visit your space.</li>
+<li><strong>Individual cosmetology licence:</strong> current and valid in your jurisdiction, and covering the specific services you intend to offer.</li>
+<li><strong>Business licence:</strong> required in most jurisdictions for any commercial activity.</li>
+<li><strong>Professional liability insurance:</strong> covers claims of injury, allergic reaction, or dissatisfaction, at $200-$500/year for most beauty professionals.</li>
+<li><strong>General liability insurance:</strong> covers accidents in your workspace, whether a client trips or something gets damaged. Essential once clients come to you.</li>
 </ul>
 
-<h3>Separate Business Finances</h3>
-<p>Open a dedicated business bank account and business credit card. Never mix personal and business finances. This simplifies accounting, makes tax preparation straightforward, and maintains the liability protection of your LLC.</p>
+<h3>Separate business finances</h3>
+<p>Open a business bank account and a business credit card, and never let personal and business money mix. It simplifies your accounting, makes tax straightforward, and keeps the liability protection your LLC gives you intact.</p>
 
-<h2>Step 3: Set Your Pricing</h2>
-<p>Many new freelancers underprice because they lack confidence or try to compete on price. This is a mistake that is difficult to reverse once clients expect low rates.</p>
+<h2>Step 3: set your pricing</h2>
+<p>New freelancers underprice constantly, from nerves or from trying to compete on cost. Once clients expect the low rate, it is very hard to undo.</p>
 
-<h3>Calculate Your Costs</h3>
-<p>Add up all business expenses: rent (or vehicle costs for mobile), products, insurance, technology subscriptions, marketing, continuing education, and taxes (set aside 25-30% of income for self-employment taxes). This is your break-even number. Your pricing must cover these costs before generating any income.</p>
+<h3>Calculate your costs</h3>
+<p>Add up everything: rent (or vehicle costs if you are mobile), products, insurance, software, marketing, continuing education, and tax, setting aside 25-30% of income for self-employment. That total is your break-even. Your prices have to clear it before you have earned anything at all.</p>
 
-<h3>Set Your Target Income</h3>
-<p>Determine the annual income you want to earn, add your annual business expenses, and divide by the number of service hours you plan to work per year. This gives you your required hourly rate. Be realistic about billable hours - a 40-hour work week typically includes only 25-30 hours of actual client services after accounting for marketing, admin, travel, and breaks.</p>
+<h3>Set your target income</h3>
+<p>Take the annual income you want, add your annual business expenses, and divide by the service hours you plan to work in a year. That gives you the hourly rate you need. Be honest about billable hours, because a 40-hour week usually holds only 25-30 hours of actual client work once marketing, admin, travel, and breaks are counted.</p>
 
-<h3>Research Market Rates</h3>
-<p>Research what other independents and salons charge in your area for comparable services and experience levels. Price yourself within the competitive range, leaning toward the higher end if your skills and experience justify it. Underpricing does not attract more clients - it attracts the wrong clients and devalues your work.</p>
+<h3>Research market rates</h3>
+<p>Find out what other independents and salons in your area charge for comparable work at comparable experience. Sit inside that range, toward the top of it if your skill justifies the position. Underpricing does not bring more clients, it brings the wrong ones and tells everyone your work is worth less.</p>
 
-<h2>Step 4: Build Your Client Base</h2>
-<p>Client acquisition is the make-or-break challenge for freelance beauty professionals. You do not have a salon's brand, location, or walk-in traffic working for you. Every client must be earned through your personal marketing efforts.</p>
+<h2>Step 4: build your client base</h2>
+<p>Client acquisition is what makes or breaks an independent. No salon brand, no prime location, and no walk-in traffic is working on your behalf. Every client comes from marketing you did yourself.</p>
 
-<h3>Leverage Your Existing Network</h3>
-<p>If you are transitioning from salon employment, your existing clients are your launch pad. Communicate your transition professionally: notify clients you are going independent, share your new booking information, and make the transition seamless. Most professionals retain 40-70% of their existing clients when going freelance.</p>
+<h3>Use your existing network</h3>
+<p>Coming out of salon employment, your current clients are the launch pad. Handle it professionally: tell them you are going independent, give them your new booking details, and make the switch easy. Most professionals keep 40-70% of their clients through the move.</p>
 
-<h3>Build Your Online Presence</h3>
-<p>Create professional profiles on every platform where potential clients search for beauty services:</p>
+<h3>Build your online presence</h3>
+<p>Set up professional profiles everywhere potential clients look:</p>
 <ul>
-<li><strong>Instagram:</strong> Your visual portfolio. Post transformation photos, process videos, and tips 4-5 times per week.</li>
-<li><strong>Google Business Profile:</strong> Essential for local search visibility if you have a fixed location.</li>
-<li><strong>Professional booking platforms:</strong> <a href="/en/features/professional/booking-management">The Daisy's professional profile</a> connects you with clients searching for specific services in your area. Complete your profile with high-quality photos, service descriptions, pricing, and availability.</li>
+<li><strong>Instagram:</strong> your visual portfolio. Post transformations, process videos, and tips 4-5 times a week.</li>
+<li><strong>Google Business Profile:</strong> essential for local search if you work from a fixed location.</li>
+<li><strong>Professional booking platforms:</strong> <a href="/en/features/professional/booking-management">The Daisy's professional profile</a> puts you in front of clients searching for your services in your area. Fill it out properly, with good photos, service descriptions, pricing, and real availability.</li>
 </ul>
 
-<h3>Referral Programme</h3>
-<p>Offer existing clients an incentive (e.g., $20 credit) for every new client they refer. Word-of-mouth is the most powerful acquisition channel for independent professionals because the personal recommendation carries your reputation directly to the new client.</p>
+<h3>Referral programme</h3>
+<p>Give existing clients something, a $20 credit for instance, for every new client they send. Word of mouth outperforms every other channel for independents, because a personal recommendation carries your reputation straight to someone who already trusts the source.</p>
 
-<h2>Step 5: Manage Your Business Operations</h2>
-<p>As a freelancer, you are the stylist, receptionist, marketer, accountant, and manager. Simplify operations with the right systems.</p>
+<h2>Step 5: manage your business operations</h2>
+<p>On your own you are the stylist, the receptionist, the marketer, the accountant, and the manager. The right systems keep that manageable.</p>
 
-<h3>Booking and Scheduling</h3>
-<p>Use a professional booking platform - not WhatsApp messages and mental notes. <a href="/en/features/professional/booking-management">The Daisy</a> provides online booking, automated reminders, client management, and payment processing in one system designed for independent beauty professionals. Automated reminders alone reduce no-shows by 30-40%, directly protecting your income.</p>
+<h3>Booking and scheduling</h3>
+<p>Use a proper booking platform rather than WhatsApp threads and things you are trying to remember. <a href="/en/features/professional/booking-management">The Daisy</a> handles online booking, automated reminders, client records, and payments in one system built for independent beauty professionals. The reminders alone cut no-shows by 30-40%, which lands directly on your income.</p>
 
-<h3>Financial Tracking</h3>
-<p>Track every expense and every dollar of income from day one. Use accounting software or, at minimum, a spreadsheet that categorises expenses by type (product, rent, marketing, insurance, etc.). Review your finances monthly. <a href="/en/features/professional/analytics-reports">The Daisy's professional analytics</a> track income automatically from platform bookings and provide earnings reports without manual entry.</p>
+<h3>Financial tracking</h3>
+<p>Record every expense and every dollar in from day one. Use accounting software, or at minimum a spreadsheet that sorts expenses by type: product, rent, marketing, insurance, and so on. Review it monthly. <a href="/en/features/professional/analytics-reports">The Daisy's professional analytics</a> tracks income from platform bookings and produces earnings reports without you entering anything.</p>
 
-<h3>Tax Planning</h3>
-<p>As a self-employed beauty professional, you are responsible for your own taxes, including self-employment tax (Social Security and Medicare in the US). Set aside 25-30% of every payment in a separate savings account for taxes. Make quarterly estimated tax payments to avoid penalties. Consult a tax professional familiar with self-employment in the beauty industry.</p>
+<h3>Tax planning</h3>
+<p>Self-employed means your taxes are yours to handle, including self-employment tax, which in the US covers Social Security and Medicare. Put 25-30% of every payment into a separate savings account, and make quarterly estimated payments so you avoid penalties. Find a tax professional who understands self-employment in this industry.</p>
 
-<h2>Step 6: Grow Sustainably</h2>
-<p>Once your freelance business is stable, focus on growth levers that increase income without proportionally increasing hours worked.</p>
+<h2>Step 6: grow sustainably</h2>
+<p>Once the business is steady, look for growth that raises income without adding the same proportion of hours.</p>
 <ul>
-<li><strong>Raise prices annually:</strong> Increase prices 10-15% each year as your skills, reputation, and demand grow. The clients who leave create space for higher-value clients.</li>
-<li><strong>Specialise:</strong> Develop expertise in a niche (colour correction, textured hair, bridal, etc.) that commands premium pricing. Specialists earn 20-40% more than generalists.</li>
-<li><strong>Add passive income:</strong> Sell retail products, offer online tutorials, or create educational content that generates income beyond your chair time.</li>
-<li><strong>Teach or mentor:</strong> Offering training workshops or mentoring junior professionals creates additional income streams and strengthens your professional reputation.</li>
-<li><strong>Consider scaling:</strong> When your individual capacity is maxed, consider renting additional chairs and bringing on other professionals. This is the transition from freelancer to business owner.</li>
+<li><strong>Raise prices annually:</strong> 10-15% a year as your skill, reputation, and demand build. Whoever leaves makes room for clients worth more.</li>
+<li><strong>Specialise:</strong> build real expertise in a niche, whether colour correction, textured hair, or bridal, and charge accordingly. Specialists earn 20-40% more than generalists.</li>
+<li><strong>Add passive income:</strong> sell retail, run online tutorials, or make educational content that earns outside your chair hours.</li>
+<li><strong>Teach or mentor:</strong> workshops and mentoring bring in money and build your standing in the profession at the same time.</li>
+<li><strong>Consider scaling:</strong> once your own capacity is full, renting extra chairs and bringing other professionals in is the step from freelancer to owner.</li>
 </ul>
 
-<h2>Common Freelance Mistakes to Avoid</h2>
+<h2>Common freelance mistakes to avoid</h2>
 <ul>
-<li><strong>Underpricing to fill your calendar:</strong> A full calendar at unsustainable prices leads to burnout and financial stress. Price for profitability from day one.</li>
-<li><strong>Neglecting the business side:</strong> Great technical skills do not compensate for poor financial management, inconsistent marketing, or neglected legal requirements.</li>
-<li><strong>Not saving for taxes:</strong> The self-employment tax surprise is one of the top reasons new freelancers struggle financially in their first year.</li>
-<li><strong>Inconsistent marketing:</strong> Marketing is not something you do when you are slow - it is something you do consistently so you never become slow.</li>
-<li><strong>Ignoring professional development:</strong> Continuing education in both technical skills and business skills is essential for sustained growth and competitiveness.</li>
+<li><strong>Underpricing to fill your calendar:</strong> a full book at unsustainable prices ends in burnout and money worries. Price for profit from day one.</li>
+<li><strong>Neglecting the business side:</strong> technical skill will not rescue you from bad bookkeeping, patchy marketing, or legal requirements you skipped.</li>
+<li><strong>Not saving for taxes:</strong> the self-employment tax bill is among the main reasons new freelancers hit trouble in year one.</li>
+<li><strong>Inconsistent marketing:</strong> marketing done only when you are quiet keeps you quiet. Done consistently, it stops the quiet arriving.</li>
+<li><strong>Ignoring professional development:</strong> keep learning on both the technical and the business side, or you stop being competitive.</li>
 </ul>
 
-<h2>Frequently Asked Questions</h2>
+<h2>Frequently asked questions</h2>
 
 <h3>How much money do I need to start a freelance beauty business?</h3>
-<p>Startup costs depend on your model: mobile services require $2,000-$8,000 for portable equipment and marketing. Chair rental requires first and last month's rent ($400-$1,600) plus equipment and product inventory ($1,000-$3,000). A home studio requires $3,000-$15,000 for build-out and equipment. In all cases, add 3 months of personal living expenses as a reserve while you build your client base. Total startup investment typically ranges from $5,000-$20,000.</p>
+<p>It depends on the model. Mobile needs $2,000-$8,000 for portable equipment and marketing. Chair rental needs first and last month's rent ($400-$1,600) plus equipment and product stock ($1,000-$3,000). A home studio needs $3,000-$15,000 for build-out and equipment. Whichever you pick, add 3 months of personal living expenses as a cushion while the client base builds. Total startup investment usually lands between $5,000-$20,000.</p>
 
 <h3>How long does it take to build a full client base as a freelancer?</h3>
-<p>If you are transitioning from salon employment with an existing clientele, you can be 60-80% booked within the first month. If starting from scratch, expect 3-6 months to reach a sustainable booking level (60%+ utilisation) with consistent marketing effort. Full capacity (80%+ booked) typically takes 6-12 months. Professionals who invest heavily in social media, platform profiles, and referral programmes build their client base faster than those relying on organic growth alone.</p>
+<p>Coming across from salon employment with clients already, you can be 60-80% booked inside the first month. From scratch, give it 3-6 months to reach a sustainable level of 60%+ utilisation with consistent marketing, and 6-12 months to fill up at 80%+. The people who push hard on social media, platform profiles, and referrals get there faster than those waiting for it to happen organically.</p>
 
 <h3>Should I leave my salon job before building a freelance client base?</h3>
-<p>The ideal transition involves building your freelance foundation while still employed: set up your business registration, insurance, and online profiles, build savings, and begin accepting freelance clients on your days off or after hours (check your employment agreement for non-compete clauses first). When your freelance income reaches 50-60% of your employed income, the transition becomes financially viable. A gradual transition is lower risk than a sudden leap.</p>
+<p>Build the foundation while you are still employed: register the business, sort insurance, set up your profiles, save money, and start taking freelance clients on days off or after hours, having checked your employment agreement for non-compete clauses first. Once freelance income reaches 50-60% of what you earn employed, the move becomes financially sound. Going gradually beats jumping.</p>
 
 <h3>How do I handle clients who try to negotiate my prices?</h3>
-<p>Respond with confidence and clarity: "My prices reflect the quality of products I use, my training and experience, and the personalised service I provide. I am confident you will find the value matches the investment." Do not apologise for your prices. If a potential client is focused primarily on price, they are likely not your ideal client. Attracting clients who value quality over price is fundamental to building a profitable freelance beauty business.</p>
+<p>Answer with confidence: "My prices reflect the quality of products I use, my training and experience, and the personalised service I provide. I am confident you will find the value matches the investment." Never apologise for your rates. Someone whose main concern is price is usually not your client anyway, and building a profitable freelance business depends on attracting the ones who care about the work.</p>
 `,
     metaTitle: 'Build a Freelance Beauty Business | The Daisy',
     metaDescription:
@@ -1069,49 +1069,49 @@ const salonBusinessPlanArticle: LocalBlogPost = {
     description:
       'Write a comprehensive salon business plan with this step-by-step template. Covers executive summary, market analysis, service offerings, marketing strategy, operations plan, financial projections, and funding preparation for beauty businesses.',
     aboutPosts: `
-<h2>A Business Plan Is Your Salon's Strategic Foundation</h2>
-<p>A salon business plan is not just a document for investors or loan officers - it is the strategic blueprint that guides every major decision in your beauty business. Salon owners who operate with a written business plan are significantly more likely to achieve their revenue targets, manage cash flow effectively, and make confident growth decisions compared to those who operate without one.</p>
-<p>This guide walks you through writing each section of a professional salon business plan as part of your <a href="/en/resources/blog/business/beauty-business-growth-guide">beauty business growth strategy</a>. Whether you are launching a new salon, seeking funding for expansion, or simply want to professionalise your existing business, this template provides the structure you need.</p>
+<h2>A business plan is your salon's strategic foundation</h2>
+<p>A salon business plan earns its keep as the blueprint behind every major decision you make, long before any investor or loan officer reads it. Owners working from a written plan hit their revenue targets more often, handle cash flow better, and make growth decisions with more confidence than those running on instinct.</p>
+<p>What follows is how to write each section, as part of your <a href="/en/resources/blog/business/beauty-business-growth-guide">beauty business growth strategy</a>. The template holds whether you are opening, raising money to expand, or finally putting structure around a business you already run.</p>
 
-<h2>Section 1: Executive Summary</h2>
-<p>The executive summary is a one-page overview of your entire business plan. Write it last (after all other sections) but place it first. It should cover:</p>
+<h2>Section 1: executive summary</h2>
+<p>One page covering the whole plan. Write it last, once everything else exists, and put it first. Cover:</p>
 <ul>
-<li><strong>Business concept:</strong> What type of beauty business are you operating? (Full-service salon, specialty studio, mobile service, etc.)</li>
-<li><strong>Mission statement:</strong> One sentence describing your purpose and the value you provide.</li>
-<li><strong>Target market:</strong> Who are your ideal clients?</li>
-<li><strong>Competitive advantage:</strong> What makes you different from existing options?</li>
-<li><strong>Financial highlights:</strong> Projected revenue, break-even timeline, and funding requirements.</li>
-<li><strong>Team:</strong> Key team members and their qualifications.</li>
+<li><strong>Business concept:</strong> what kind of beauty business is this? Full-service salon, specialty studio, mobile service, something else.</li>
+<li><strong>Mission statement:</strong> one sentence on your purpose and the value you provide.</li>
+<li><strong>Target market:</strong> who your ideal clients are.</li>
+<li><strong>Competitive advantage:</strong> what separates you from what already exists.</li>
+<li><strong>Financial highlights:</strong> projected revenue, break-even timeline, funding required.</li>
+<li><strong>Team:</strong> key people and what qualifies them.</li>
 </ul>
-<p>Keep the executive summary concise and compelling. A reader should understand your business concept and its viability within two minutes.</p>
+<p>Keep it tight. Two minutes should be enough for a reader to grasp the concept and judge whether it works.</p>
 
-<h2>Section 2: Company Description</h2>
-<p>Provide detailed background on your business:</p>
+<h2>Section 2: company description</h2>
+<p>The background on your business:</p>
 <ul>
 <li><strong>Legal structure:</strong> LLC, sole proprietorship, partnership, or corporation.</li>
-<li><strong>Business history:</strong> When was the business founded? Key milestones achieved.</li>
-<li><strong>Location:</strong> Current or planned location(s) with details on the physical space.</li>
-<li><strong>Vision:</strong> Where do you see the business in 3, 5, and 10 years?</li>
-<li><strong>Values:</strong> Core principles that guide your business decisions and client interactions.</li>
+<li><strong>Business history:</strong> when it was founded and what it has achieved since.</li>
+<li><strong>Location:</strong> current or planned sites, with detail on the space itself.</li>
+<li><strong>Vision:</strong> where the business stands in 3, 5, and 10 years.</li>
+<li><strong>Values:</strong> the principles behind your decisions and how you treat clients.</li>
 </ul>
 
-<h2>Section 3: Market Analysis</h2>
-<p>Demonstrate that you understand your market, your competition, and the opportunity.</p>
+<h2>Section 3: market analysis</h2>
+<p>Show that you understand the market, the competition, and the opening.</p>
 
-<h3>Industry Overview</h3>
-<p>Summarise the beauty services industry in your market: size, growth rate, trends, and outlook. Reference specific data: "The beauty services market in [city/region] generates $X billion annually, growing at Y% per year." Include relevant trends: shift toward personalisation, growth of wellness services, technology adoption, and sustainability demands.</p>
+<h3>Industry overview</h3>
+<p>Summarise beauty services in your market: size, growth rate, trends, outlook. Use real figures. "The beauty services market in [city/region] generates $X billion annually, growing at Y% per year." Cover the trends that matter, including the move toward personalisation, growth in wellness services, technology adoption, and demand for sustainability.</p>
 
-<h3>Target Market Analysis</h3>
-<p>Define your target client in detail:</p>
+<h3>Target market analysis</h3>
+<p>Define the client properly:</p>
 <ul>
-<li><strong>Demographics:</strong> Age, gender, income, education, occupation.</li>
-<li><strong>Psychographics:</strong> Values, lifestyle, beauty priorities, spending habits.</li>
-<li><strong>Market size:</strong> How many potential clients match your target profile within your service area?</li>
-<li><strong>Spending patterns:</strong> How much does your target client spend on beauty services annually? How often do they visit?</li>
+<li><strong>Demographics:</strong> age, gender, income, education, occupation.</li>
+<li><strong>Psychographics:</strong> values, lifestyle, beauty priorities, spending habits.</li>
+<li><strong>Market size:</strong> how many people in your service area match that profile.</li>
+<li><strong>Spending patterns:</strong> what they spend on beauty in a year, and how often they visit.</li>
 </ul>
 
-<h3>Competitive Analysis</h3>
-<p>Identify your top 5-10 competitors. For each, document:</p>
+<h3>Competitive analysis</h3>
+<p>Take your top 5-10 competitors and document, for each:</p>
 <ul>
 <li>Services offered and pricing</li>
 <li>Online reviews and reputation</li>
@@ -1119,84 +1119,84 @@ const salonBusinessPlanArticle: LocalBlogPost = {
 <li>Market positioning (premium, mid-market, value)</li>
 <li>Technology adoption (online booking, app, social presence)</li>
 </ul>
-<p>Clearly articulate the gap your business fills that competitors do not address.</p>
+<p>Then say plainly which gap you fill that none of them do.</p>
 
-<h2>Section 4: Services and Products</h2>
-<p>Detail your complete service menu and any retail products:</p>
+<h2>Section 4: services and products</h2>
+<p>Your full menu and any retail:</p>
 <ul>
-<li><strong>Service categories:</strong> Hair, nails, skin, makeup, treatments, etc.</li>
-<li><strong>Pricing strategy:</strong> How are your prices set? How do they compare to the market? Reference our <a href="/en/resources/blog/business/salon-pricing-strategy-guide">pricing strategy guide</a> for frameworks.</li>
-<li><strong>Signature services:</strong> Any unique offerings that differentiate your menu.</li>
-<li><strong>Retail products:</strong> Product lines carried, expected retail revenue, and margin targets.</li>
-<li><strong>Service evolution:</strong> Planned additions or modifications to your menu over the next 12-24 months.</li>
+<li><strong>Service categories:</strong> hair, nails, skin, makeup, treatments, and so on.</li>
+<li><strong>Pricing strategy:</strong> how you set prices and how they sit against the market. Our <a href="/en/resources/blog/business/salon-pricing-strategy-guide">pricing strategy guide</a> has the frameworks.</li>
+<li><strong>Signature services:</strong> anything on the menu nobody else offers.</li>
+<li><strong>Retail products:</strong> which lines you carry, expected revenue, and margin targets.</li>
+<li><strong>Service evolution:</strong> what you plan to add or change over the next 12-24 months.</li>
 </ul>
 
-<h2>Section 5: Marketing Strategy</h2>
-<p>Outline how you will attract and retain clients. Cover:</p>
+<h2>Section 5: marketing strategy</h2>
+<p>How you will win clients and keep them:</p>
 <ul>
-<li><strong>Brand positioning:</strong> How you want clients to perceive your business relative to competitors.</li>
-<li><strong>Marketing channels:</strong> Google Business Profile, social media (Instagram, TikTok), local SEO, email marketing, referral programmes, and partnerships.</li>
-<li><strong>Client acquisition cost target:</strong> How much you plan to spend acquiring each new client, and through which channels.</li>
-<li><strong>Retention strategy:</strong> Loyalty programmes, membership models, re-engagement campaigns, and client experience standards.</li>
-<li><strong>Marketing budget:</strong> Monthly and annual marketing spend, broken down by channel.</li>
+<li><strong>Brand positioning:</strong> how you want clients to see you relative to everyone else.</li>
+<li><strong>Marketing channels:</strong> Google Business Profile, social media including Instagram and TikTok, local SEO, email, referrals, and partnerships.</li>
+<li><strong>Client acquisition cost target:</strong> what you will spend to win each client, and where.</li>
+<li><strong>Retention strategy:</strong> loyalty programmes, memberships, re-engagement campaigns, and the standard of experience you hold to.</li>
+<li><strong>Marketing budget:</strong> monthly and annual spend, split by channel.</li>
 </ul>
-<p>Reference specific strategies from our <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing guide</a> for detailed tactical plans.</p>
+<p>Our <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing guide</a> has the tactical detail behind each of these.</p>
 
-<h2>Section 6: Operations Plan</h2>
-<p>Describe how your salon operates day-to-day:</p>
+<h2>Section 6: operations plan</h2>
+<p>How the salon actually runs day to day:</p>
 <ul>
-<li><strong>Hours of operation:</strong> Days and hours, including any extended or seasonal hours.</li>
-<li><strong>Staffing plan:</strong> Number of team members by role, hiring timeline, and compensation structure.</li>
-<li><strong>Technology systems:</strong> Salon management platform (<a href="/en/features/business/booking-management">The Daisy</a> or equivalent), payment processing, accounting, and marketing tools.</li>
-<li><strong>Supply chain:</strong> Product suppliers, ordering frequency, and inventory management approach.</li>
-<li><strong>Quality standards:</strong> Service protocols, training requirements, and client satisfaction measurement.</li>
-<li><strong>Regulatory compliance:</strong> Licences, permits, health regulations, and insurance requirements.</li>
-</ul>
-
-<h2>Section 7: Financial Projections</h2>
-<p>The financial section is the most scrutinised part of your business plan, especially if seeking funding. Include:</p>
-
-<h3>Startup Costs (for New Businesses)</h3>
-<p>Itemise every startup expense: lease deposit, build-out, equipment, furniture, initial inventory, technology setup, licences, insurance, marketing launch, and working capital reserve.</p>
-
-<h3>Monthly Operating Budget</h3>
-<p>Project monthly expenses for the first 24 months: rent, utilities, payroll, product costs, marketing, technology, insurance, and miscellaneous. Be thorough - underestimating operating costs is the most common financial planning mistake for new salons.</p>
-
-<h3>Revenue Projections</h3>
-<p>Project monthly revenue for 24 months based on: number of service stations, average service price, projected utilisation rate (start conservative at 40-50% and ramp to 70-80%), and retail revenue. Show three scenarios: conservative, moderate, and optimistic.</p>
-
-<h3>Break-Even Analysis</h3>
-<p>Calculate the monthly revenue needed to cover all costs. Identify how many appointments per week are required at your average ticket price. This is the most critical number in your entire plan - it tells you exactly what success looks like in measurable terms.</p>
-
-<h3>Cash Flow Projections</h3>
-<p>Map cash inflows and outflows monthly for 24 months. Identify months where cash flow will be negative and ensure your reserves or credit lines cover those gaps. Many profitable businesses fail because they run out of cash before profitability is reached.</p>
-
-<h3>Profit and Loss Forecast</h3>
-<p>Monthly P&L for years 1 and 2, quarterly for years 3-5. Show revenue, cost of goods sold, gross margin, operating expenses, and net profit. Target a net profit margin of 10-15% by year 2 and 15-20% by year 3.</p>
-
-<h2>Section 8: Funding Request (If Applicable)</h2>
-<p>If you are seeking funding, clearly state:</p>
-<ul>
-<li><strong>Amount requested:</strong> Specific dollar amount with a breakdown of how funds will be used.</li>
-<li><strong>Use of funds:</strong> Itemise exactly where every dollar will be allocated.</li>
-<li><strong>Repayment plan:</strong> How and when you will repay the loan or deliver returns to investors.</li>
-<li><strong>Collateral:</strong> What assets secure the loan.</li>
-<li><strong>Exit strategy:</strong> For investor funding, how will investors realise their return?</li>
+<li><strong>Hours of operation:</strong> days and hours, including anything extended or seasonal.</li>
+<li><strong>Staffing plan:</strong> team members by role, when you hire them, and how they are paid.</li>
+<li><strong>Technology systems:</strong> your salon management platform (<a href="/en/features/business/booking-management">The Daisy</a> or equivalent), payments, accounting, and marketing tools.</li>
+<li><strong>Supply chain:</strong> suppliers, how often you order, and how inventory is managed.</li>
+<li><strong>Quality standards:</strong> service protocols, training requirements, and how you measure satisfaction.</li>
+<li><strong>Regulatory compliance:</strong> licences, permits, health regulations, and insurance.</li>
 </ul>
 
-<h2>Frequently Asked Questions</h2>
+<h2>Section 7: financial projections</h2>
+<p>This is the section people read hardest, particularly anyone deciding whether to fund you. Include:</p>
+
+<h3>Startup costs (for new businesses)</h3>
+<p>Itemise every startup expense: lease deposit, build-out, equipment, furniture, opening inventory, technology, licences, insurance, launch marketing, and a working capital reserve.</p>
+
+<h3>Monthly operating budget</h3>
+<p>Project monthly expenses across the first 24 months: rent, utilities, payroll, product, marketing, technology, insurance, and the rest. Go through it properly, because underestimating operating costs is where new salons most often get their planning wrong.</p>
+
+<h3>Revenue projections</h3>
+<p>Project 24 months of monthly revenue from your station count, average service price, projected utilisation (start conservative at 40-50% and ramp toward 70-80%), and retail. Run three versions: conservative, moderate, optimistic.</p>
+
+<h3>Break-even analysis</h3>
+<p>Work out the monthly revenue that covers every cost, then how many appointments a week that takes at your average ticket. No other number in the plan matters as much, because this one defines success in terms you can actually measure.</p>
+
+<h3>Cash flow projections</h3>
+<p>Map money in and money out, monthly, for 24 months. Find the months that go negative and make sure reserves or a credit line covers them. Plenty of profitable businesses die because the cash ran out before the profit arrived.</p>
+
+<h3>Profit and loss forecast</h3>
+<p>Monthly P&L for years 1 and 2, quarterly for years 3-5, showing revenue, cost of goods sold, gross margin, operating expenses, and net profit. Aim for a net margin of 10-15% by year 2 and 15-20% by year 3.</p>
+
+<h2>Section 8: funding request (if applicable)</h2>
+<p>If you are asking for money, state it plainly:</p>
+<ul>
+<li><strong>Amount requested:</strong> the specific figure, with a breakdown of where it goes.</li>
+<li><strong>Use of funds:</strong> every dollar accounted for.</li>
+<li><strong>Repayment plan:</strong> how and when you repay the loan or return money to investors.</li>
+<li><strong>Collateral:</strong> which assets secure the loan.</li>
+<li><strong>Exit strategy:</strong> for investors, how they eventually realise their return.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
 
 <h3>How long should a salon business plan be?</h3>
-<p>A complete salon business plan typically runs 15-30 pages. The executive summary should be 1 page. Market analysis 3-5 pages. Services and marketing 2-3 pages each. Operations 2-3 pages. Financial projections 5-10 pages including tables and charts. If you are writing the plan for internal use (not seeking funding), a leaner 10-15 page version covering the essential sections is sufficient. The quality of analysis matters more than the page count.</p>
+<p>A complete one usually runs 15-30 pages: 1 page of executive summary, 3-5 on market analysis, 2-3 each on services and marketing, 2-3 on operations, and 5-10 on financial projections once you include tables and charts. Writing it for yourself rather than a lender? A leaner 10-15 pages covering the essentials does the job. How well you have thought it through matters more than how long it runs.</p>
 
 <h3>Do I need a business plan if I am not seeking funding?</h3>
-<p>Yes. A business plan is a strategic tool, not just a funding document. It forces you to think through every aspect of your business systematically: your market position, financial viability, operational requirements, and growth strategy. Salon owners who operate with a written plan make better decisions, identify risks earlier, and achieve their goals more consistently. Even a simplified one-page business plan that captures your key assumptions and targets is better than no plan at all.</p>
+<p>Yes, because it is a strategic tool before it is a funding document. Writing it forces you through every part of the business in order: market position, financial viability, what operations require, how you intend to grow. Owners working from a written plan decide better, spot risks sooner, and hit their goals more reliably. Even a one-page version capturing your assumptions and targets beats nothing.</p>
 
 <h3>How often should I update my salon business plan?</h3>
-<p>Review and update your business plan annually at minimum. Update the financial projections quarterly based on actual performance. Revise the strategy sections whenever there is a significant market change, competitive development, or shift in your business direction. The plan should be a living document that evolves with your business, not a one-time exercise that gathers dust in a drawer.</p>
+<p>Annually at minimum, with the financial projections updated quarterly against actual performance. Revisit the strategy sections whenever the market shifts, a competitor does something significant, or your own direction changes. Treat it as a document that moves with the business rather than a one-off exercise you file and forget.</p>
 
 <h3>What is the biggest mistake salon owners make in their business plans?</h3>
-<p>Overestimating revenue and underestimating costs. New salon owners tend to project optimistic utilisation rates from month one and forget to account for the ramp-up period where you are building your client base. Be conservative in your revenue projections and generous in your expense estimates. If your plan is profitable under conservative assumptions, you can be confident in your business's viability. If it only works under optimistic scenarios, you need to revisit your cost structure or pricing strategy.</p>
+<p>Overestimating revenue and underestimating costs. New owners project optimistic utilisation from month one and forget the ramp-up period while the client base is still being built. Keep revenue projections conservative and expense estimates generous. A plan that works on conservative assumptions tells you the business is viable. A plan that only works on optimistic ones is telling you to revisit your costs or your pricing.</p>
 `,
     metaTitle: 'Salon Business Plan Template | The Daisy',
     metaDescription:

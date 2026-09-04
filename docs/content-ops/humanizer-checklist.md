@@ -73,18 +73,18 @@ smallest and the most constrained, so they are cheap to leave until last.
       `expanding-salon-adding-locations`
 - [x] Salon Membership & Subscription Models  
       `salon-membership-subscription-models`
-- [ ] Building a Freelance Beauty Business from Scratch  
+- [x] Building a Freelance Beauty Business from Scratch  
       `building-freelance-beauty-business`
-- [ ] Salon Business Plan: Template & Writing Guide  
+- [x] Salon Business Plan: Template & Writing Guide  
       `salon-business-plan-template`
 
 ### `booking-management.ts` (6)
 
-- [ ] Online Booking for Salons: Complete Setup Guide  
+- [x] Online Booking for Salons: Complete Setup Guide  
       `online-booking-for-salons-setup-guide`
-- [ ] How to Reduce Salon No-Shows by 60%  
+- [x] How to Reduce Salon No-Shows by 60%  
       `reduce-salon-no-shows`
-- [ ] Salon Waitlist Management: Never Lose a Client Again  
+- [x] Salon Waitlist Management: Never Lose a Client Again  
       `salon-waitlist-management`
 - [ ] Group Booking & Packages: Maximizing Revenue Per Visit  
       `group-booking-packages-salon`
@@ -661,7 +661,7 @@ separately. Tick both.
 
 `src/lib/constants/guides/guideData.ts` · renders at `/guides/[slug]`
 
-- [ ] How Do I Reduce No-Shows at My Salon?  
+- [x] How Do I Reduce No-Shows at My Salon?  
       `reduce-salon-no-shows`
 - [ ] How Do I Get More Clients for My Salon?  
       `get-more-salon-clients`
