@@ -97,18 +97,18 @@ smallest and the most constrained, so they are cheap to leave until last.
       `reduce-salon-no-shows`
 - [x] Salon Waitlist Management: Never Lose a Client Again  
       `salon-waitlist-management`
-- [ ] Group Booking & Packages: Maximizing Revenue Per Visit  
+- [x] Group Booking & Packages: Maximizing Revenue Per Visit  
       `group-booking-packages-salon`
-- [ ] Mobile Booking: Why 70% of Clients Book on Their Phone  
+- [x] Mobile Booking: Why 70% of Clients Book on Their Phone  
       `mobile-booking-beauty-salon`
-- [ ] Recurring Appointment Scheduling for Salons  
+- [x] Recurring Appointment Scheduling for Salons  
       `recurring-appointment-scheduling-salon`
 
 ### `bottom-of-funnel.ts` (3)
 
-- [ ] Salon Software Switching Checklist: Your 30-Day Migration Plan  
+- [x] Salon Software Switching Checklist: Your 30-Day Migration Plan  
       `salon-software-switching-checklist-migration`
-- [ ] What to Expect in Your First Month With a New Salon Platform  
+- [x] What to Expect in Your First Month With a New Salon Platform  
       `first-month-new-salon-platform`
 - [ ] How to Calculate the ROI of Switching Salon Software  
       `calculate-roi-switching-salon-software`
