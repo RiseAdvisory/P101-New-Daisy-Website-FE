@@ -63,15 +63,15 @@ smallest and the most constrained, so they are cheap to leave until last.
 
 ### `beauty-business-growth.ts` (7)
 
-- [ ] How to Start a Beauty Business: Complete Startup Guide  
+- [x] How to Start a Beauty Business: Complete Startup Guide  
       `how-to-start-beauty-business`
-- [ ] Salon Pricing Strategy: How to Price Your Services  
+- [x] Salon Pricing Strategy: How to Price Your Services  
       `salon-pricing-strategy-guide`
-- [ ] Increasing Salon Revenue: 10 Proven Strategies  
+- [x] Increasing Salon Revenue: 10 Proven Strategies  
       `increase-salon-revenue-strategies`
-- [ ] Expanding Your Salon: When and How to Add Locations  
+- [x] Expanding Your Salon: When and How to Add Locations  
       `expanding-salon-adding-locations`
-- [ ] Salon Membership & Subscription Models  
+- [x] Salon Membership & Subscription Models  
       `salon-membership-subscription-models`
 - [ ] Building a Freelance Beauty Business from Scratch  
       `building-freelance-beauty-business`
