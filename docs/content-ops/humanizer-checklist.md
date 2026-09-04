@@ -162,15 +162,15 @@ smallest and the most constrained, so they are cheap to leave until last.
       `ai-receptionist-salon-customer-service`
 - [x] Why All-in-One Salon Platforms Beat Point Solutions  
       `all-in-one-salon-platform-vs-point-solutions`
-- [ ] 360-Degree Customer Acquisition: The New Standard for Salons  
+- [x] 360-Degree Customer Acquisition: The New Standard for Salons  
       `360-degree-customer-acquisition-salons`
-- [ ] White-Label Booking: Why Your Brand Matters More Than Your Software's  
+- [x] White-Label Booking: Why Your Brand Matters More Than Your Software's  
       `white-label-salon-booking`
-- [ ] Running a Multilingual Beauty Business: Tools and Tips  
+- [x] Running a Multilingual Beauty Business: Tools and Tips  
       `multilingual-beauty-business-tools`
-- [ ] How Data-Driven Beauty Platforms Create Competitive Moats  
+- [x] How Data-Driven Beauty Platforms Create Competitive Moats  
       `data-driven-beauty-platform`
-- [ ] Why Modern Salons Need an AI Platform (Not Just Software)  
+- [x] Why Modern Salons Need an AI Platform (Not Just Software)  
       `modern-salons-ai-platform-not-software`
 - [ ] Is Your Current Salon Software Holding You Back? 10 Warning Signs  
       `salon-software-holding-you-back-warning-signs`
