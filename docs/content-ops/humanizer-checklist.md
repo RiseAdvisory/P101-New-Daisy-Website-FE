@@ -172,18 +172,18 @@ smallest and the most constrained, so they are cheap to leave until last.
       `data-driven-beauty-platform`
 - [x] Why Modern Salons Need an AI Platform (Not Just Software)  
       `modern-salons-ai-platform-not-software`
-- [ ] Is Your Current Salon Software Holding You Back? 10 Warning Signs  
+- [x] Is Your Current Salon Software Holding You Back? 10 Warning Signs  
       `salon-software-holding-you-back-warning-signs`
 
 ### `freelance-beauty.ts` (9)
 
-- [ ] Freelance Stylist Scheduling: Managing Your Own Calendar  
+- [x] Freelance Stylist Scheduling: Managing Your Own Calendar  
       `freelance-stylist-scheduling-guide`
-- [ ] Going Freelance as a Beauty Professional: Pros & Cons  
+- [x] Going Freelance as a Beauty Professional: Pros & Cons  
       `going-freelance-beauty-professional`
-- [ ] Freelance Hairstylist Business Setup: Legal & Financial Guide  
+- [x] Freelance Hairstylist Business Setup: Legal & Financial Guide  
       `freelance-hairstylist-business-setup`
-- [ ] Setting Your Prices as an Independent Beauty Professional  
+- [x] Setting Your Prices as an Independent Beauty Professional  
       `setting-prices-independent-beauty-pro`
 - [ ] Building a Personal Brand in the Beauty Industry  
       `personal-brand-beauty-industry`
