@@ -198,15 +198,15 @@ smallest and the most constrained, so they are cheap to leave until last.
 
 ### `industry-trends.ts` (6)
 
-- [ ] Beauty Industry Statistics 2026: Key Numbers to Know  
+- [x] Beauty Industry Statistics 2026: Key Numbers to Know  
       `beauty-industry-statistics-2026`
-- [ ] AI in the Beauty Industry: Practical Applications  
+- [x] AI in the Beauty Industry: Practical Applications  
       `ai-beauty-industry-applications`
-- [ ] Sustainability in Beauty Salons: A Practical Guide  
+- [x] Sustainability in Beauty Salons: A Practical Guide  
       `sustainability-beauty-salons`
-- [ ] The Rise of Beauty Marketplaces: What It Means for Salons  
+- [x] The Rise of Beauty Marketplaces: What It Means for Salons  
       `beauty-marketplaces-impact-salons`
-- [ ] Wellness Meets Beauty: The Integration Trend  
+- [x] Wellness Meets Beauty: The Integration Trend  
       `wellness-beauty-integration-trend`
 - [ ] Beauty Industry Predictions: What's Coming in 2027  
       `beauty-industry-predictions-2027`
