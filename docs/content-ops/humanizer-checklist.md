@@ -110,18 +110,18 @@ smallest and the most constrained, so they are cheap to leave until last.
       `salon-software-switching-checklist-migration`
 - [x] What to Expect in Your First Month With a New Salon Platform  
       `first-month-new-salon-platform`
-- [ ] How to Calculate the ROI of Switching Salon Software  
+- [x] How to Calculate the ROI of Switching Salon Software  
       `calculate-roi-switching-salon-software`
 
 ### `business-growth.ts` (5)
 
-- [ ] From One Location to Many: Scaling Your Beauty Business  
+- [x] From One Location to Many: Scaling Your Beauty Business  
       `scaling-beauty-business-multiple-locations`
-- [ ] How Multi-Channel Acquisition Drives Beauty Business Growth  
+- [x] How Multi-Channel Acquisition Drives Beauty Business Growth  
       `multi-channel-acquisition-beauty-business-growth`
-- [ ] daisy-marketing-suite-attracts-new-clients  
+- [x] daisy-marketing-suite-attracts-new-clients  
       `daisy-marketing-suite-attracts-new-clients`
-- [ ] Building Your Personal Brand as a Beauty Professional  
+- [x] Building Your Personal Brand as a Beauty Professional  
       `building-personal-brand-beauty-professional-guide`
 - [ ] Salon Revenue Growth Strategies for 2026  
       `salon-revenue-growth-strategies-2026`
