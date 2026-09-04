@@ -52,5 +52,9 @@ tmpclaude-*
 # stay in ~/.daisy and must never be referenced here by id or account email.
 !/docs/channel-alignment/
 !/docs/channel-alignment/**
+# Content ops: the humanizer pass checklist. Tracked because the exercise runs
+# across many sessions and the tick state is the only record of what is done.
+!/docs/content-ops/
+!/docs/content-ops/**
 .superpowers/
 trial-success-page.png
