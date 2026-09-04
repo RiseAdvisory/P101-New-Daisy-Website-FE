@@ -185,15 +185,15 @@ smallest and the most constrained, so they are cheap to leave until last.
       `freelance-hairstylist-business-setup`
 - [x] Setting Your Prices as an Independent Beauty Professional  
       `setting-prices-independent-beauty-pro`
-- [ ] Building a Personal Brand in the Beauty Industry  
+- [x] Building a Personal Brand in the Beauty Industry  
       `personal-brand-beauty-industry`
-- [ ] Finding Clients as a Freelance Beauty Professional  
+- [x] Finding Clients as a Freelance Beauty Professional  
       `finding-clients-freelance-beauty`
-- [ ] Freelance Beauty Professional Insurance Guide  
+- [x] Freelance Beauty Professional Insurance Guide  
       `freelance-beauty-professional-insurance`
-- [ ] Tax Guide for Freelance Beauty Professionals  
+- [x] Tax Guide for Freelance Beauty Professionals  
       `tax-guide-freelance-beauty-professionals`
-- [ ] Scaling Up: From Solo Freelancer to Beauty Business Owner  
+- [x] Scaling Up: From Solo Freelancer to Beauty Business Owner  
       `scaling-freelancer-to-beauty-business`
 
 ### `industry-trends.ts` (6)
