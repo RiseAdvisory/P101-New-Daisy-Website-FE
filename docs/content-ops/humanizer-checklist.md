@@ -208,20 +208,20 @@ smallest and the most constrained, so they are cheap to leave until last.
       `beauty-marketplaces-impact-salons`
 - [x] Wellness Meets Beauty: The Integration Trend  
       `wellness-beauty-integration-trend`
-- [ ] Beauty Industry Predictions: What's Coming in 2027  
+- [x] Beauty Industry Predictions: What's Coming in 2027  
       `beauty-industry-predictions-2027`
 
 ### `marketing-promotions.ts` (5)
 
-- [ ] Complete Guide to Salon Loyalty Programs  
+- [x] Complete Guide to Salon Loyalty Programs  
       `complete-guide-salon-loyalty-programs`
-- [ ] Salon Referral Programs That Actually Work  
+- [x] Salon Referral Programs That Actually Work  
       `salon-referral-programs-that-work`
-- [ ] Email Marketing for Salons: Templates & Best Practices  
+- [x] Email Marketing for Salons: Templates & Best Practices  
       `email-marketing-salons-templates`
-- [ ] Social Media Marketing for Independent Beauty Professionals  
+- [x] Social Media Marketing for Independent Beauty Professionals  
       `social-media-marketing-beauty-professionals`
-- [ ] How Daisy's Cashback System Drives Customer Loyalty  
+- [x] How Daisy's Cashback System Drives Customer Loyalty  
       `daisy-cashback-system-customer-loyalty`
 
 ### `multi-channel.ts` (3)
