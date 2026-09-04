@@ -50,15 +50,15 @@ smallest and the most constrained, so they are cheap to leave until last.
 
 ### `analytics-reports.ts` (5)
 
-- [ ] 7 Salon Metrics You Should Track Weekly  
+- [x] 7 Salon Metrics You Should Track Weekly  
       `7-salon-metrics-track-weekly`
-- [ ] Client Retention Reporting: Know Your Numbers  
+- [x] Client Retention Reporting: Know Your Numbers  
       `client-retention-reporting-know-your-numbers`
-- [ ] Revenue Forecasting for Beauty Businesses  
+- [x] Revenue Forecasting for Beauty Businesses  
       `revenue-forecasting-beauty-businesses`
-- [ ] Tracking Your Freelance Beauty Income Effectively  
+- [x] Tracking Your Freelance Beauty Income Effectively  
       `tracking-freelance-beauty-income`
-- [ ] How Data-Driven Salons Outperform Competition  
+- [x] How Data-Driven Salons Outperform Competition  
       `data-driven-salons-outperform-competition`
 
 ### `beauty-business-growth.ts` (7)
