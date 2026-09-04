@@ -149,18 +149,18 @@ smallest and the most constrained, so they are cheap to leave until last.
       `automated-reminders-reduce-no-shows`
 - [x] Client Communication Templates for Beauty Businesses  
       `client-communication-templates-beauty`
-- [ ] How to Use SMS Marketing to Fill Empty Salon Chairs  
+- [x] How to Use SMS Marketing to Fill Empty Salon Chairs  
       `sms-marketing-fill-salon-chairs`
-- [ ] Building Client Relationships: Communication Tips for Beauty Pros  
+- [x] Building Client Relationships: Communication Tips for Beauty Pros  
       `building-client-relationships-beauty-pros`
-- [ ] Review Request Automation: Get More 5-Star Reviews  
+- [x] Review Request Automation: Get More 5-Star Reviews  
       `review-request-automation-5-star-reviews`
 
 ### `daisy-advantage.ts` (8)
 
-- [ ] How AI Receptionists Are Transforming Salon Customer Service  
+- [x] How AI Receptionists Are Transforming Salon Customer Service  
       `ai-receptionist-salon-customer-service`
-- [ ] Why All-in-One Salon Platforms Beat Point Solutions  
+- [x] Why All-in-One Salon Platforms Beat Point Solutions  
       `all-in-one-salon-platform-vs-point-solutions`
 - [ ] 360-Degree Customer Acquisition: The New Standard for Salons  
       `360-degree-customer-acquisition-salons`
