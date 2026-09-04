@@ -136,18 +136,18 @@ smallest and the most constrained, so they are cheap to leave until last.
       `salon-client-experience-guide`
 - [x] salon-client-personalization-tips  
       `salon-client-personalization-tips`
-- [ ] Win-Back Campaigns: Re-Engaging Lost Salon Clients  
+- [x] Win-Back Campaigns: Re-Engaging Lost Salon Clients  
       `salon-win-back-campaigns`
-- [ ] Customer Feedback for Salons: Collection & Action Guide  
+- [x] Customer Feedback for Salons: Collection & Action Guide  
       `salon-customer-feedback-guide`
-- [ ] Building Client Loyalty as an Independent Beauty Pro  
+- [x] Building Client Loyalty as an Independent Beauty Pro  
       `independent-beauty-pro-client-loyalty`
 
 ### `communication-tools.ts` (5)
 
-- [ ] Automated Reminders That Actually Reduce No-Shows  
+- [x] Automated Reminders That Actually Reduce No-Shows  
       `automated-reminders-reduce-no-shows`
-- [ ] Client Communication Templates for Beauty Businesses  
+- [x] Client Communication Templates for Beauty Businesses  
       `client-communication-templates-beauty`
 - [ ] How to Use SMS Marketing to Fill Empty Salon Chairs  
       `sms-marketing-fill-salon-chairs`
