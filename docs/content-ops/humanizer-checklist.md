@@ -226,18 +226,18 @@ smallest and the most constrained, so they are cheap to leave until last.
 
 ### `multi-channel.ts` (3)
 
-- [ ] WhatsApp Marketing for Salons: Complete Guide  
+- [x] WhatsApp Marketing for Salons: Complete Guide  
       `whatsapp-marketing-salons-guide`
-- [ ] Managing Instagram DMs for Your Beauty Business  
+- [x] Managing Instagram DMs for Your Beauty Business  
       `managing-instagram-dms-beauty-business`
-- [ ] Omnichannel Communication: Reaching Salon Clients Where They Are  
+- [x] Omnichannel Communication: Reaching Salon Clients Where They Are  
       `omnichannel-communication-salon-clients`
 
 ### `payment-processing.ts` (4)
 
-- [ ] Salon POS Systems: What to Look For in 2026  
+- [x] Salon POS Systems: What to Look For in 2026  
       `salon-pos-systems-2026-guide`
-- [ ] Tipping Best Practices for Beauty Businesses  
+- [x] Tipping Best Practices for Beauty Businesses  
       `tipping-best-practices-beauty-businesses`
 - [ ] Getting Paid Faster: Invoicing for Freelance Beauty Pros  
       `getting-paid-faster-freelance-beauty-invoicing`
