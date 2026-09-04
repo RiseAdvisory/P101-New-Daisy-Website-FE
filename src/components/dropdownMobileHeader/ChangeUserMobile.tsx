@@ -115,13 +115,7 @@ export const ChangeUserTypeMobile = ({
       localStorage.setItem('activePage', path);
     }
     // Pricing routes — early-return so we don't fall through to another
-    // branch and double-navigate. /pricing-v2 contains the substring
-    // "/pricing", so it must be checked first.
-    if (pathname.includes('/pricing-v2')) {
-      const persona = path === '/business' ? 'business' : 'professional';
-      router.push(localePath(`/pricing-v2/${persona}`, locale));
-      return;
-    }
+    // branch and double-navigate.
     if (pathname.includes('/pricing')) {
       const persona = path === '/business' ? 'business' : 'professional';
       router.push(localePath(`/pricing/${persona}`, locale));

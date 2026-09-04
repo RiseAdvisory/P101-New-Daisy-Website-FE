@@ -1,7 +1,6 @@
-import Link from 'next/link';
 import { Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { localePath } from '@/lib/utils/locale';
+import { GetStartedButton } from '@/components/shared/GetStartedButton';
 import type { PricingTierV3 } from '@/lib/constants/pricing/v3/pricingV3Business';
 import type {
   SharedCopy,
@@ -96,17 +95,19 @@ export const PricingCardV3 = ({
           : `${shared.cardBilledMonthlyLine1} ${shared.cardBilledMonthlyLine2}`}
       </p>
 
-      <Link
-        href={localePath('/get-the-app', locale)}
+      {/* Choosing a plan and then being sent to an app store is the same
+          funnel leak the hero had: the card CTA goes to web signup, where
+          the plan choice can actually be acted on and attribution survives.
+          GetStartedButton's default label is already the localised
+          "Start free trial", so it is not overridden here. */}
+      <GetStartedButton
         className={cn(
           'mb-4 block rounded-lg py-3 text-center text-sm font-semibold transition-colors ltr:font-montserrat rtl:font-cairo',
           popular
             ? 'bg-primary text-white hover:bg-primary/90'
             : 'border border-[#172524] text-[#172524] hover:bg-[#F8F5F3]',
         )}
-      >
-        {persona.ctaPrimary}
-      </Link>
+      />
 
       {/* Plan add-on banner. The entry tier advertises its real $1/month
           base price, and this teal banner states the add-on that applies

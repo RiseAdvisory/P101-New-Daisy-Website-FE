@@ -196,6 +196,22 @@ describe('PricingV3Client', () => {
       // The old trial-flavoured store label must not come back.
       expect(screen.queryByText('Start Business Trial')).not.toBeInTheDocument();
     });
+
+    it('sends every plan card to signup, not to the app stores', () => {
+      // Picking a plan and landing in an app store is a funnel leak: the
+      // plan choice cannot be acted on there and store redirects destroy
+      // attribution.
+      const { container } = render(
+        <PricingV3Client persona="business" locale="en" />,
+      );
+      const cardCtas = [...container.querySelectorAll('[data-testid="get-started-cta"]')];
+      // One per tier, plus the CTA row and final section.
+      expect(cardCtas.length).toBeGreaterThanOrEqual(3);
+      for (const cta of cardCtas) {
+        expect(cta.getAttribute('href')).toContain('trythedaisy.com');
+        expect(cta.getAttribute('href')).not.toContain('get-the-app');
+      }
+    });
   });
 
   describe('professional persona', () => {

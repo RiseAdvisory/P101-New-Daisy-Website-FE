@@ -40,13 +40,9 @@ const ToggleButton = ({ className }: { className?: string }) => {
       if (pathname.includes('professional') && !pathname.includes('features') && !pathname.includes('pricing'))
         setActive('/professional');
 
-      // Set active based on pricing sub-page (both live /pricing and the
-      // /pricing-v2 preview route — /pricing/X substring doesn't catch
-      // /pricing-v2/X, so they're checked explicitly).
+      // Set active based on pricing sub-page.
       if (pathname.includes('/pricing/business')) setActive('/business');
       if (pathname.includes('/pricing/professional')) setActive('/professional');
-      if (pathname.includes('/pricing-v2/business')) setActive('/business');
-      if (pathname.includes('/pricing-v2/professional')) setActive('/professional');
 
       if (pathname.startsWith('/features') && storedPath) {
         const cleanPath = storedPath.replace('/', '');
@@ -97,13 +93,7 @@ const ToggleButton = ({ className }: { className?: string }) => {
     if (typeof window !== 'undefined') {
       localStorage.setItem('activePage', path);
     }
-    if (pathname.includes('/pricing-v2')) {
-      // Must come BEFORE the generic /pricing check because /pricing-v2
-      // contains the substring /pricing — without this, clicking the
-      // header toggle on the v2 preview routes off to the live page.
-      const persona = path === '/business' ? 'business' : 'professional';
-      router.push(localePath(`/pricing-v2/${persona}`, locale));
-    } else if (pathname.includes('/pricing')) {
+    if (pathname.includes('/pricing')) {
       const persona = path === '/business' ? 'business' : 'professional';
       router.push(localePath(`/pricing/${persona}`, locale));
     } else if (pathname.includes('/solutions/')) {
