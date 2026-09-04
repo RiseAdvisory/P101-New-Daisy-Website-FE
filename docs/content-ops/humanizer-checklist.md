@@ -123,18 +123,18 @@ smallest and the most constrained, so they are cheap to leave until last.
       `daisy-marketing-suite-attracts-new-clients`
 - [x] Building Your Personal Brand as a Beauty Professional  
       `building-personal-brand-beauty-professional-guide`
-- [ ] Salon Revenue Growth Strategies for 2026  
+- [x] Salon Revenue Growth Strategies for 2026  
       `salon-revenue-growth-strategies-2026`
 
 ### `client-retention.ts` (7)
 
-- [ ] Salon Client Retention Rate: How to Calculate & Improve It  
+- [x] Salon Client Retention Rate: How to Calculate & Improve It  
       `salon-client-retention-rate-guide`
-- [ ] Salon Rebooking Strategies: Getting Clients to Come Back  
+- [x] Salon Rebooking Strategies: Getting Clients to Come Back  
       `salon-rebooking-strategies`
-- [ ] Salon Client Experience: From First Visit to Loyal Regular  
+- [x] Salon Client Experience: From First Visit to Loyal Regular  
       `salon-client-experience-guide`
-- [ ] salon-client-personalization-tips  
+- [x] salon-client-personalization-tips  
       `salon-client-personalization-tips`
 - [ ] Win-Back Campaigns: Re-Engaging Lost Salon Clients  
       `salon-win-back-campaigns`
