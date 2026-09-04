@@ -16,6 +16,17 @@ both already enforced by the repo's PostToolUse hook on `*/lib/constants/*`:
   layout, field structure and the JSON-LD that mirrors them all stay exactly as they are.
 - **Never touch the numbers.** Pricing, billing terms and sourced statistics stay word for word.
 
+### Ticking boxes: slugs are not unique
+
+43 slugs appear more than once in this file, so **never tick by slug alone.** Match on the
+line number, or on the slug within one section, or you will silently mark work as done that
+nobody has looked at.
+
+The collisions are concentrated in section 2, where the same competitor legitimately has an
+entry in several files (`fresha` appears 3 times, `daisy-vs-fresha` twice, and so on). There
+is one collision across sections: `reduce-salon-no-shows` is both a blog article and a guide,
+and they are different files with different prose.
+
 
 Every entry below exists in **English and Arabic** under the same slug. The humanizer skill
 is built around English patterns, so tick the box for the English prose. Arabic needs a
@@ -661,7 +672,7 @@ separately. Tick both.
 
 `src/lib/constants/guides/guideData.ts` · renders at `/guides/[slug]`
 
-- [x] How Do I Reduce No-Shows at My Salon?  
+- [ ] How Do I Reduce No-Shows at My Salon?  
       `reduce-salon-no-shows`
 - [ ] How Do I Get More Clients for My Salon?  
       `get-more-salon-clients`
