@@ -605,9 +605,9 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
       `sparkalz`
 - [x] squire  
       `squire`
-- [ ] salonist  
+- [x] salonist  
       `salonist`
-- [ ] pabau  
+- [x] pabau  
       `pabau`
 
 ---
@@ -620,7 +620,7 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
 Each file holds one pillar plus a set of cross-links to blog slugs. Humanize the pillar's
 own prose only. The cross-links are references to section 1, not separate content.
 
-- [ ] AI for Beauty & Salon Businesses  
+- [x] AI for Beauty & Salon Businesses  
       `ai-salon-software.ts` → `ai-salon-software`
 - [ ] Beauty Booking System: Everything You Need to Know  
       `beauty-booking-system.ts` → `beauty-booking-system`

@@ -919,7 +919,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'Salonist',
     website: 'https://www.salonist.io',
     tier: 3,
-    description: 'Budget-friendly salon management from India. Basic features at low cost. Some GCC/international presence.',
+    description: 'Budget salon management out of India, offering basic features cheaply, with some GCC and international presence.',
     founded: '2017',
     headquarters: 'New Delhi, India',
 
@@ -960,15 +960,15 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['Basic features only', 'No AI', 'No Arabic', 'No marketplace', 'Limited GCC support', 'Small company'],
 
     faq: [
-      { question: 'How does Salonist compare to Daisy?', answer: 'Salonist is a budget salon tool at $25/mo with basic features. Daisy provides AI receptionist, marketplace, cashback, native Arabic, and comprehensive management, justifying the investment in business growth.' },
-      { question: 'Is Salonist really as affordable as it looks at $25 a month?', answer: 'Salonist\'s $25/mo price is genuinely low, but you get basic features only. There are no advanced analytics, no AI, no marketplace, and limited marketing. Many businesses end up needing additional tools, which erodes the cost advantage. Daisy includes everything in one platform.' },
-      { question: 'Can I migrate my data from Salonist to Daisy?', answer: 'Yes. Daisy provides data migration support for Salonist users, transferring client records, appointment history, and inventory data. Our onboarding team ensures a smooth transition with no data loss.' },
-      { question: 'Does Salonist support Arabic for my salon?', answer: 'No. Despite having some GCC presence (UAE), Salonist does not offer an Arabic interface. Daisy provides native Arabic with equal priority to English, full RTL layout support, and culturally relevant content throughout the platform.' },
-      { question: 'Does Salonist have any AI features?', answer: 'No. Salonist has no AI capabilities, no AI receptionist, no chatbot, no smart scheduling, and no AI-powered marketing. Daisy\'s 24/7 AI receptionist handles bookings, answers customer questions, and processes payments in both Arabic and English.' },
-      { question: 'Is Salonist reliable enough for a growing beauty business?', answer: 'Salonist is a smaller company from India with a limited review base. As your business grows, you may outgrow its basic feature set and limited support. Daisy is built to scale with your business, offering advanced AI, marketplace, and comprehensive management tools.' },
-      { question: 'Does Salonist have a marketplace or customer acquisition tools?', answer: 'No. Salonist has no marketplace, no cashback program, and no customer discovery features. It\'s purely an operations tool. Daisy combines operations with customer acquisition through its marketplace, cashback rewards, and AI-powered marketing.' },
-      { question: 'How does Salonist\'s mobile app compare to Daisy?', answer: 'Salonist offers a basic mobile app for appointment and client management. Daisy\'s mobile app provides full salon management, AI receptionist access, marketplace visibility, cashback tracking, real-time analytics, and native Arabic/English support.' },
-      { question: 'What customer support does Salonist offer?', answer: 'Salonist provides basic email support, primarily during Indian business hours. There\'s no dedicated beauty industry expertise or local GCC support. Daisy offers multi-channel support with Arabic-speaking representatives, dedicated onboarding, and local GCC support teams.' },
+      { question: 'How does Salonist compare to Daisy?', answer: 'Salonist is a budget tool at $25/mo with basic features. Daisy adds an AI receptionist, a marketplace, cashback, native Arabic and management deep enough to grow a business on.' },
+      { question: 'Is Salonist really as affordable as it looks at $25 a month?', answer: 'The $25/mo price is genuinely low, and what it buys is basic. No advanced analytics, no AI, no marketplace and thin marketing. Most businesses end up buying other tools, which is where the saving goes. Daisy holds all of it in one platform.' },
+      { question: 'Can I migrate my data from Salonist to Daisy?', answer: 'Yes. Daisy moves client records, appointment history and inventory data across, with the onboarding team making sure nothing is lost.' },
+      { question: 'Does Salonist support Arabic for my salon?', answer: 'No. Salonist has some GCC presence in the UAE and still no Arabic interface. Daisy treats Arabic as equal to English, supports right-to-left layout properly, and reads as though it was written for the region.' },
+      { question: 'Does Salonist have any AI features?', answer: 'No. There is no AI receptionist, no chatbot, no smart scheduling and no AI marketing. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments in Arabic and English.' },
+      { question: 'Is Salonist reliable enough for a growing beauty business?', answer: 'Salonist is a smaller Indian company with few reviews to judge it by. A growing business tends to run past both the feature set and the support. Daisy is built to scale, with AI, a marketplace and management tools that keep up.' },
+      { question: 'Does Salonist have a marketplace or customer acquisition tools?', answer: 'No. There is no marketplace, no cashback and nowhere for a client to discover you. It runs your operations, nothing more. Daisy pairs the operations with acquisition, through the marketplace, cashback rewards and AI-powered marketing.' },
+      { question: 'How does Salonist\'s mobile app compare to Daisy?', answer: 'Salonist\'s app handles appointments and client management. Daisy\'s covers the whole salon, with the AI receptionist, marketplace visibility, cashback tracking, live analytics and native Arabic and English.' },
+      { question: 'What customer support does Salonist offer?', answer: 'Support is basic email, mostly on Indian business hours, with no beauty industry expertise and nothing local to the GCC. Daisy provides multi-channel support with Arabic-speaking representatives, dedicated onboarding and local GCC teams.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -982,7 +982,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'Pabau',
     website: 'https://www.pabau.com',
     tier: 3,
-    description: 'Med spa and clinical-focused practice management from the UK. Strong client records and forms. Growing AI features for clinical workflows.',
+    description: 'UK practice management built for med spas and clinical work, strong on client records and forms, with AI features for clinical workflows starting to appear.',
     founded: '2012',
     headquarters: 'London, UK',
 
@@ -1014,7 +1014,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     aiCapabilities: {
       hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'Basic automation for clinical workflows. No true AI receptionist, chatbot, or smart scheduling.',
+      aiDescription: 'Basic automation across clinical workflows. No real AI receptionist, chatbot or smart scheduling.',
     },
 
     daisyAdvantages: ['Full AI ecosystem vs basic automation', 'Arabic/GCC support', 'Marketplace + cashback', 'Flat pricing vs per-user', 'Broader beauty/wellness vs clinical-only'],
@@ -1023,15 +1023,15 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['UK-focused', 'Per-user pricing', 'No AI', 'No marketplace', 'No Arabic/GCC', 'Clinical-focused not beauty-broad'],
 
     faq: [
-      { question: 'How does Pabau compare to Daisy?', answer: 'Pabau excels at clinical/med spa records and consent forms in the UK market. Daisy offers AI receptionist, marketplace, cashback, Arabic support, and GCC compliance across the broader beauty and wellness industry.' },
-      { question: 'How expensive does Pabau get with per-user pricing?', answer: 'Pabau charges approximately $49/mo per user. A med spa with 10 practitioners would pay around $490/mo, plus payment processing fees. Daisy offers flat pricing that doesn\'t scale with your team size, making costs predictable as your business grows.' },
-      { question: 'Can I migrate my clinic data from Pabau to Daisy?', answer: 'Yes. Daisy provides comprehensive data migration support from Pabau, including client records, treatment history, consent forms, and appointment data. Our onboarding team ensures a smooth transition for clinical and beauty businesses.' },
-      { question: 'Does Pabau support Arabic or work in the Middle East?', answer: 'No. Pabau is UK-focused with no Arabic interface, no GCC compliance, and no Middle Eastern payment methods. Daisy provides native Arabic/English support with support built for the Gulf, live in Kuwait today, including support for local clinical and beauty regulations.' },
-      { question: 'Does Pabau have AI features like an AI receptionist?', answer: 'Pabau has basic workflow automation for clinical tasks but no true AI, no AI receptionist, no chatbot, and no smart scheduling. Daisy\'s 24/7 AI receptionist handles bookings, answers patient and client questions, and processes payments automatically.' },
-      { question: 'Is Pabau only for med spas or can salons use it too?', answer: 'Pabau is designed primarily for clinical and med spa environments, its strength is consent forms, treatment records, and clinical workflows. Regular salons and spas may find it overly clinical and missing beauty-specific features. Daisy serves the full spectrum from salons to spas to clinics.' },
-      { question: 'Does Pabau have a marketplace to help attract new clients?', answer: 'No. Pabau has no consumer marketplace, no customer discovery features, and no cashback program. Daisy includes a consumer marketplace, cashback rewards, and AI-powered marketing to actively drive new patients and clients to your business.' },
-      { question: 'How does Pabau\'s mobile app compare to Daisy?', answer: 'Pabau\'s mobile app is focused on clinical record management and consent forms. Daisy\'s mobile app provides full business management, AI receptionist access, marketplace visibility, cashback tracking, real-time analytics, and multilingual Arabic/English support.' },
-      { question: 'What customer support does Pabau offer compared to Daisy?', answer: 'Pabau provides UK-based support with clinical workflow expertise during UK business hours. Daisy offers multi-channel support with both beauty and clinical expertise, Arabic-speaking representatives, and dedicated GCC support teams for Middle Eastern businesses.' },
+      { question: 'How does Pabau compare to Daisy?', answer: 'In the UK market, Pabau is very good at clinical and med spa records and consent forms. Daisy brings an AI receptionist, a marketplace, cashback, Arabic support and GCC compliance, across the wider beauty and wellness industry.' },
+      { question: 'How expensive does Pabau get with per-user pricing?', answer: 'Pabau charges roughly $49/mo per user, so a med spa with 10 practitioners pays around $490/mo, before payment processing fees. Daisy charges flat regardless of team size, which keeps the bill predictable as you grow.' },
+      { question: 'Can I migrate my clinic data from Pabau to Daisy?', answer: 'Yes. Daisy moves client records, treatment history, consent forms and appointment data across from Pabau, with the onboarding team handling it for clinical and beauty businesses alike.' },
+      { question: 'Does Pabau support Arabic or work in the Middle East?', answer: 'No. Pabau serves the UK, with no Arabic interface, no GCC compliance and no Middle Eastern payment methods. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today, including local clinical and beauty regulations.' },
+      { question: 'Does Pabau have AI features like an AI receptionist?', answer: 'Pabau automates clinical workflows, and none of it is really AI: no receptionist, no chatbot, no smart scheduling. Daisy\'s 24/7 AI receptionist takes bookings, answers patient and client questions, and processes payments on its own.' },
+      { question: 'Is Pabau only for med spas or can salons use it too?', answer: 'Pabau was designed for clinical and med spa environments, and consent forms, treatment records and clinical workflows are where it is strongest. A regular salon or spa will find it clinical in tone and short on beauty-specific features. Daisy covers the full spectrum, salons through spas to clinics.' },
+      { question: 'Does Pabau have a marketplace to help attract new clients?', answer: 'No. There is no consumer marketplace, nothing for discovery and no cashback. Daisy includes a consumer marketplace, cashback rewards and AI-powered marketing to bring new patients and clients in.' },
+      { question: 'How does Pabau\'s mobile app compare to Daisy?', answer: 'Pabau\'s app centres on clinical records and consent forms. Daisy\'s covers the whole business, with the AI receptionist, marketplace visibility, cashback tracking, live analytics and Arabic and English throughout.' },
+      { question: 'What customer support does Pabau offer compared to Daisy?', answer: 'Pabau supports you from the UK, on UK business hours, from people who understand clinical workflows. Daisy provides multi-channel support covering both beauty and clinical work, with Arabic-speaking representatives and dedicated GCC teams.' },
     ],
 
     lastResearched: '2026-03-13',
