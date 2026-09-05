@@ -595,15 +595,15 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
       `acuity-scheduling`
 - [x] simplybook-me  
       `simplybook-me`
-- [ ] setmore  
+- [x] setmore  
       `setmore`
-- [ ] bookb  
+- [x] bookb  
       `bookb`
-- [ ] belliata  
+- [x] belliata  
       `belliata`
-- [ ] sparkalz  
+- [x] sparkalz  
       `sparkalz`
-- [ ] squire  
+- [x] squire  
       `squire`
 - [ ] salonist  
       `salonist`
