@@ -265,13 +265,13 @@ smallest and the most constrained, so they are cheap to leave until last.
       `switching-salon-software-migration-guide`
 - [x] Cloud vs Desktop Salon Software: Which Is Better?  
       `cloud-vs-desktop-salon-software`
-- [ ] Small Salon Software: Best Options for 1-5 Staff  
+- [x] Small Salon Software: Best Options for 1-5 Staff  
       `small-salon-software-options`
-- [ ] Multi-Location Salon Software: Managing Multiple Branches  
+- [x] Multi-Location Salon Software: Managing Multiple Branches  
       `multi-location-salon-software`
-- [ ] Salon Software ROI: Calculating Your Return on Investment  
+- [x] Salon Software ROI: Calculating Your Return on Investment  
       `salon-software-roi-calculator`
-- [ ] Free vs Paid Salon Software: The True Cost Comparison  
+- [x] Free vs Paid Salon Software: The True Cost Comparison  
       `free-vs-paid-salon-software`
 
 ### `salon-marketing.ts` (8)
