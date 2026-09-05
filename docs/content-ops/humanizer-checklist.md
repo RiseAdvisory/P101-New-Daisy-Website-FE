@@ -506,15 +506,15 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
       `mangomint`
 - [x] Great POS, but generic scheduling doesn't cut it for serious beauty businesses.  
       `square-appointments`
-- [ ] Excellent CRM and loyalty, but the world has moved to AI, and Phorest hasn't.  
+- [x] Excellent CRM and loyalty, but the world has moved to AI, and Phorest hasn't.  
       `phorest`
-- [ ] Great for appointments, but your beauty business needs POS, CRM, AI, and a marketplace too.  
+- [x] Great for appointments, but your beauty business needs POS, CRM, AI, and a marketplace too.  
       `acuity-scheduling`
-- [ ] Clean interface but per-staff pricing and zero AI are holding back growing teams.  
+- [x] Clean interface but per-staff pricing and zero AI are holding back growing teams.  
       `timely`
-- [ ] Impressive AI suite, but enterprise contracts, opaque pricing, and no Arabic UI make it overkill for growing salons.  
+- [x] Impressive AI suite, but enterprise contracts, opaque pricing, and no Arabic UI make it overkill for growing salons.  
       `zenoti`
-- [ ] Free scheduling is nice, but your beauty business deserves AI, POS, CRM, and a marketplace that brings clients to you.  
+- [x] Free scheduling is nice, but your beauty business deserves AI, POS, CRM, and a marketplace that brings clients to you.  
       `setmore`
 - [ ] 70+ add-on modules sound flexible, until you realize you're paying extra for everything your beauty business actually needs.  
       `simplybook-me`
