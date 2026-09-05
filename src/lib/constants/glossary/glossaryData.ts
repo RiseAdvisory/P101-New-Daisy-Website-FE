@@ -25,7 +25,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'is a digital platform that helps salon owners manage daily operations including appointment scheduling, client records, staff management, payments, and marketing from a single system.',
       extendedDescription:
-        'Salon management software replaces manual booking systems, paper records, and disconnected tools with one integrated platform. Modern solutions like Daisy go beyond basic operations to include AI-powered features such as automated customer acquisition, voice receptionists, and predictive analytics. The global salon software market is projected to reach $712 million by 2028, driven by increasing demand for automation and customer experience tools.',
+        'Salon management software replaces manual booking, paper records and disconnected tools with a single platform. Newer systems such as Daisy add AI features on top of the operational basics, including automated customer acquisition, voice receptionists and predictive analytics. The global salon software market is projected to reach $712 million by 2028, on rising demand for automation and customer experience tools.',
       keyFeatures: [
         { label: 'Online Booking', daisy: 'AI-powered 24/7', typical: 'Basic web form' },
         { label: 'Payment Processing', daisy: 'No transaction fees', typical: '2-3% per transaction' },
@@ -35,47 +35,47 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'AI Features', daisy: 'Voice receptionist + chatbot', typical: 'None or basic' },
       ],
       howDaisyImplements:
-        'Daisy combines all salon management functions into one AI-powered platform with a 24/7 voice receptionist, cashback customer acquisition, and white-label branding. Starting at $50/month with flat pricing and no per-staff fees, Daisy is designed for growth -- not just operations.',
+        'Daisy brings the salon management functions into one AI-powered platform, with a 24/7 voice receptionist, cashback customer acquisition and white-label branding. Pricing is flat from $50/month with no per-staff fees, and the platform is built for growth rather than operations alone.',
       faqs: [
         {
           question: 'What is the best salon management software in 2026?',
           answer:
-            'The best salon management software in 2026 combines AI capabilities, customer acquisition tools, and comprehensive business management. Daisy leads with its AI receptionist, cashback loyalty system, and white-label branding -- all for flat monthly pricing starting at $50/month.',
+            'The strongest options in 2026 combine AI, customer acquisition tools and full business management. Daisy offers an AI receptionist, a cashback loyalty system and white-label branding, on flat monthly pricing from $50/month.',
         },
         {
           question: 'How much does salon management software typically cost?',
           answer:
-            'Salon management software ranges from free (with limitations and commissions) to $300+/month for premium solutions. Daisy offers three plans: Basic ($50/mo), Growth ($150/mo), and Business ($250/mo) with transparent flat pricing and no per-staff fees.',
+            'Prices run from free, usually with limitations and commissions, up to $300+/month for premium systems. Daisy has three plans: Basic at $50/mo, Growth at $150/mo and Business at $250/mo, all flat and without per-staff fees.',
         },
         {
           question: 'Do I need salon management software for a small salon?',
           answer:
-            'Yes. Even small salons benefit significantly from management software. Research shows that salons using software see a 30-40% reduction in no-shows through automated reminders and can recapture up to 35% of missed after-hours calls with AI tools.',
+            'Yes. Small salons gain as much as larger ones. Salons running management software report a 30-40% reduction in no-shows from automated reminders, and AI tools recover up to 35% of missed after-hours calls.',
         },
         {
           question: 'Can salon management software help me get more clients?',
           answer:
-            'Most salon software only manages existing clients. Daisy is different -- it actively acquires new customers through marketplace discovery, cashback rewards, and AI-powered marketing automation, providing 360-degree customer acquisition.',
+            'Most salon software only manages the clients you already have. Daisy also acquires new ones, through marketplace discovery, cashback rewards and AI-powered marketing automation, which is what 360-degree customer acquisition means in practice.',
         },
         {
           question: 'What features should I look for in salon software?',
           answer:
-            'Essential features include online booking, POS/payments, client management, staff scheduling, and reporting. Advanced features to look for include AI receptionist, customer acquisition tools, cashback loyalty, marketing automation, and Arabic language support.',
+            'The essentials are online booking, POS and payments, client management, staff scheduling and reporting. Beyond those, look for an AI receptionist, customer acquisition tools, cashback loyalty, marketing automation and Arabic language support.',
         },
         {
           question: 'Is salon management software hard to set up?',
           answer:
-            'Modern cloud-based salon software like Daisy requires no hardware installation. Most salons are operational within 1-2 days. Daisy\'s Business plan includes free data migration and assisted onboarding.',
+            'Cloud-based software such as Daisy needs no hardware. Most salons are running within 1-2 days, and the Business plan includes free data migration and assisted onboarding.',
         },
         {
           question: 'Can I switch from my current salon software to Daisy?',
           answer:
-            'Yes. Daisy supports data migration from all major platforms including Fresha, Booksy, Vagaro, and others. The Business plan includes free migration assistance to transfer your client data, appointment history, and business information.',
+            'Yes. Daisy migrates data from the major platforms, including Fresha, Booksy and Vagaro. The Business plan covers the migration itself, moving client data, appointment history and business information.',
         },
         {
           question: 'Does salon management software work on mobile?',
           answer:
-            'Daisy offers native iOS and Android apps plus a progressive web app, so you can manage your salon from any device. Staff can view schedules, check in clients, and process payments directly from their phones.',
+            'Daisy has native iOS and Android apps and a progressive web app, so the salon can be managed from any device. Staff check schedules, check clients in and take payments from their phones.',
         },
       ],
       relatedTerms: ['salon-booking-software', 'ai-receptionist-for-salons', 'white-label-salon-software', 'salon-management-system', 'salon-employee-management-software', 'salon-customer-management'],
@@ -91,7 +91,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'is an artificial intelligence system that handles phone calls, chat messages, and booking inquiries for beauty businesses 24/7, automatically scheduling appointments, answering questions, and processing payments without human intervention.',
       extendedDescription:
-        'An AI receptionist uses natural language processing and voice synthesis to interact with customers just like a human receptionist would. It can answer calls during and after business hours, handle multiple conversations simultaneously, and convert inquiries into bookings. Research indicates that beauty businesses miss up to 35% of inbound calls outside business hours -- revenue that an AI receptionist can recapture.',
+        'An AI receptionist uses natural language processing and voice synthesis to speak with customers much as a human receptionist would. It answers calls during and after business hours, holds several conversations at once, and turns inquiries into bookings. Beauty businesses miss up to 35% of inbound calls outside business hours, and that is the revenue an AI receptionist recovers.',
       keyFeatures: [
         { label: '24/7 Availability', daisy: 'Always on', typical: 'Business hours only' },
         { label: 'Language Support', daisy: 'Arabic & English', typical: 'English only' },
@@ -101,12 +101,12 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'Integration', daisy: 'Full CRM + calendar sync', typical: 'Standalone system' },
       ],
       howDaisyImplements:
-        'Daisy\'s AI receptionist handles voice calls and chat messages in both Arabic and English, 24/7. It books appointments directly into your calendar, answers service and pricing questions, processes payments, and learns from every interaction to improve over time. Included in all Daisy plans at no extra cost.',
+        'Daisy\'s AI receptionist takes voice calls and chat messages in Arabic and English, 24/7. It books directly into your calendar, answers questions on services and pricing, processes payments, and improves as it handles more conversations. It is included in every plan at no extra cost.',
       faqs: [
         {
           question: 'What is an AI receptionist for salons?',
           answer:
-            'An AI receptionist for salons is an automated system that answers phone calls and messages, books appointments, answers questions about services and pricing, and processes payments -- all without human intervention, 24 hours a day.',
+            'An automated system that answers calls and messages, books appointments, handles questions about services and pricing, and processes payments, without human involvement, 24 hours a day.',
         },
         {
           question: 'How much does an AI receptionist for a salon cost?',
@@ -116,32 +116,32 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'Can an AI receptionist really replace a human receptionist?',
           answer:
-            'An AI receptionist handles routine tasks like booking, rescheduling, and FAQs -- which account for 70-80% of salon calls. For complex issues, it can escalate to staff. Many salons use AI to supplement rather than replace human staff.',
+            'It handles the routine work of booking, rescheduling and common questions, which is 70-80% of salon calls, and passes anything complicated to a person. Most salons use it alongside their staff rather than instead of them.',
         },
         {
           question: 'Does Daisy\'s AI receptionist work in Arabic?',
           answer:
-            'Yes. Daisy\'s AI receptionist supports full multilingual operation in Arabic, English, and more, making it ideal for GCC markets. It can switch languages naturally within conversations.',
+            'Yes. It works in Arabic, English and other languages, which suits GCC markets, and it can change language mid-conversation.',
         },
         {
           question: 'How does an AI receptionist handle salon bookings?',
           answer:
-            'The AI receptionist checks real-time staff availability, suggests optimal appointment slots, confirms the booking with the customer, sends reminders, and syncs everything to your salon calendar -- all automatically.',
+            'It checks live staff availability, offers suitable slots, confirms with the customer, sends the reminders and syncs everything to the salon calendar without being asked.',
         },
         {
           question: 'Will customers know they\'re talking to an AI?',
           answer:
-            'Modern AI receptionists like Daisy\'s use natural language processing for human-like conversations. While transparency is important, most customers appreciate the instant response and 24/7 availability.',
+            'Systems like Daisy\'s use natural language processing, so the conversation reads naturally. Transparency still matters, and most customers value the instant reply and the 24/7 availability.',
         },
         {
           question: 'How many calls can an AI receptionist handle at once?',
           answer:
-            'Unlike human receptionists, an AI receptionist can handle unlimited simultaneous calls and chat conversations. During peak hours, this means zero missed calls and zero hold times.',
+            'An AI receptionist takes any number of calls and chats at once, which a person cannot. At peak hours that means nothing missed and nobody on hold.',
         },
         {
           question: 'Do I need special equipment for an AI receptionist?',
           answer:
-            'No. Daisy\'s AI receptionist works with your existing phone number. Calls are routed through the cloud -- no hardware, no installation, no IT setup required.',
+            'No. It works with your existing phone number, routing calls through the cloud. There is no hardware, no installation and no IT setup.',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'white-label-salon-software'],
@@ -157,7 +157,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'is a customer loyalty mechanism where beauty service platforms return a percentage of each booking value to the customer, incentivizing repeat visits and new customer acquisition through a rewards-based marketplace.',
       extendedDescription:
-        'Cashback in beauty booking works differently from traditional discount-based loyalty programs. Instead of devaluing services with percentage-off deals, cashback rewards customers with credits for future visits. This approach increases customer lifetime value by an estimated 20-30% while maintaining full service pricing. The model has been proven in retail and fintech and is now transforming beauty industry customer acquisition.',
+        'Cashback behaves differently from a discount-based loyalty program. Rather than cutting the price and with it the perceived value, it gives customers credit against future visits. Full pricing holds, and lifetime value rises by an estimated 20-30%. The model is well established in retail and fintech and is now being applied to beauty.',
       keyFeatures: [
         { label: 'Reward Type', daisy: 'Cashback credits', typical: 'Points or discounts' },
         { label: 'Impact on Pricing', daisy: 'Full price maintained', typical: 'Discounted services' },
@@ -167,47 +167,47 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'Flexibility', daisy: 'Customizable rates', typical: 'Fixed program' },
       ],
       howDaisyImplements:
-        'Daisy\'s cashback system rewards customers with credits on every booking, funded at the platform level -- not from your margins. This means customers pay full price for services while earning rewards that bring them back. Businesses can customize cashback rates and run targeted campaigns to attract specific customer segments.',
+        'Daisy credits customers on every booking, and the platform funds it rather than your margin. Customers pay full price and still earn something that brings them back. Rates are yours to set, and you can run campaigns aimed at particular segments.',
       faqs: [
         {
           question: 'What is cashback in beauty booking?',
           answer:
-            'Cashback in beauty booking is a loyalty system where customers receive a percentage of their booking value back as credits. Unlike discounts, cashback maintains full service pricing while incentivizing repeat visits.',
+            'A loyalty system that returns a percentage of the booking value to the customer as credit. Unlike a discount, it keeps service pricing intact while still encouraging a return visit.',
         },
         {
           question: 'How does salon cashback differ from loyalty points?',
           answer:
-            'Cashback gives customers real monetary value (credits redeemable on future services) rather than abstract points. It\'s simpler to understand, more motivating, and increases customer lifetime value by 20-30%.',
+            'Cashback gives customers money back as credit against future services, rather than points that mean nothing to them. It is easier to understand, it motivates more, and it raises customer lifetime value by 20-30%.',
         },
         {
           question: 'Does cashback reduce my salon\'s revenue?',
           answer:
-            'No. With Daisy, cashback is funded at the platform level, not from your service margins. You charge full price while customers earn rewards -- creating a win-win that increases visit frequency.',
+            'No. Daisy funds the cashback at platform level rather than taking it from your service margins, so you charge full price and the customer still earns, which lifts how often they come in.',
         },
         {
           question: 'How effective is cashback for getting new salon clients?',
           answer:
-            'Cashback-based beauty marketplaces show significantly higher customer acquisition rates than traditional directories. The tangible reward lowers the barrier for first-time bookings at new salons.',
+            'Cashback marketplaces acquire customers at a noticeably higher rate than traditional directories, because a reward the customer can count makes a first booking at an unfamiliar salon easier to risk.',
         },
         {
           question: 'Can I customize cashback rates for my salon?',
           answer:
-            'Yes. Daisy allows businesses to set custom cashback rates and run targeted campaigns for different services, customer segments, or time periods to optimize customer acquisition and retention.',
+            'Yes. You set your own cashback rates and can run campaigns by service, customer segment or time period.',
         },
         {
           question: 'How do customers redeem their cashback?',
           answer:
-            'Customers accumulate cashback credits in their Daisy wallet and can apply them to future bookings at any participating salon. The seamless wallet experience keeps customers within the Daisy ecosystem.',
+            'Credits build up in the customer\'s Daisy wallet and can be spent on future bookings at any participating salon, which keeps them booking within Daisy.',
         },
         {
           question: 'Is cashback better than offering discounts?',
           answer:
-            'For beauty businesses, cashback is generally more effective than discounts. Discounts devalue your services and attract price-sensitive clients. Cashback maintains perceived value while building long-term loyalty.',
+            'For a beauty business, cashback usually works better. Discounts lower what your work appears to be worth and attract people shopping on price. Cashback holds the value and builds loyalty over time.',
         },
         {
           question: 'Which salon software offers cashback for customers?',
           answer:
-            'Daisy is one of the few salon platforms that includes a built-in cashback system. RepeatMD offers a similar concept for med spas at $700/month, while Daisy includes it in all plans starting at $50/month.',
+            'Few salon platforms build cashback in. RepeatMD offers something comparable for med spas at $700/month; Daisy includes it in every plan from $50/month.',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'ai-receptionist-for-salons'],
@@ -220,9 +220,9 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       slug: 'white-label-salon-software',
       term: 'White-Label Salon Software',
       definition:
-        'is a salon management platform that can be fully rebranded with your business\'s logo, colors, domain, and identity -- so every customer touchpoint (booking page, app, receipts, communications) shows your brand, not the software provider\'s.',
+        'is a salon management platform that can be rebranded with your business\'s logo, colors, domain and identity, so every customer touchpoint, from the booking page and app to receipts and communications, shows your brand rather than the software provider\'s.',
       extendedDescription:
-        'White-label salon software solves a critical branding problem: most salon platforms force businesses to use the provider\'s branding, which dilutes brand identity and creates customer confusion. With white-label solutions, your booking page looks like YOUR website, confirmation emails come from YOUR brand, and the customer experience is seamlessly branded. This is particularly important for premium salons and multi-location businesses building brand equity.',
+        'Most salon platforms put their own branding in front of your customers, which weakens your identity and confuses people about who they are dealing with. White-label software removes that: the booking page looks like your website, confirmation emails come from your brand, and the experience holds together throughout. It matters most to premium salons and to multi-location businesses building brand equity.',
       keyFeatures: [
         { label: 'Booking Page', daisy: 'Fully branded', typical: 'Provider branded' },
         { label: 'Customer Communications', daisy: 'Your brand', typical: 'Software brand' },
@@ -232,47 +232,47 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'Cost', daisy: 'Included in plan', typical: 'Premium add-on ($100+/mo)' },
       ],
       howDaisyImplements:
-        'Daisy includes full white-label capabilities in all plans at no extra cost. Customize your booking page, customer app, email templates, receipts, and all customer communications with your logo, colors, and brand identity. Your customers interact with your brand, not Daisy\'s.',
+        'Daisy includes white-label in every plan at no extra cost. The booking page, customer app, email templates, receipts and every message carry your logo, colours and identity, so customers deal with your brand rather than Daisy\'s.',
       faqs: [
         {
           question: 'What is white-label salon software?',
           answer:
-            'White-label salon software is a platform you can rebrand as your own. Your customers see your logo, colors, and brand on the booking page, app, and all communications -- they never see the software provider\'s branding.',
+            'A platform you rebrand as your own. Your logo, colours and brand appear on the booking page, the app and every message, and the software provider\'s branding never surfaces.',
         },
         {
           question: 'Why does white-label branding matter for salons?',
           answer:
-            'Brand consistency builds trust and professionalism. When customers book through a page with YOUR branding (not Fresha\'s or Booksy\'s), it strengthens your brand identity and increases perceived value.',
+            'Consistent branding reads as trustworthy and professional. A booking page carrying your brand rather than Fresha\'s or Booksy\'s strengthens your identity and raises what customers think the service is worth.',
         },
         {
           question: 'Which salon software offers white-label features?',
           answer:
-            'Daisy includes full white-label branding in all plans. Boulevard and Mangomint offer some customization. Most platforms like Fresha, Booksy, and Vagaro prominently display their own branding.',
+            'Daisy includes it in all plans. Boulevard and Mangomint allow some customisation. Fresha, Booksy and Vagaro display their own branding prominently.',
         },
         {
           question: 'How much does white-label salon software cost?',
           answer:
-            'Standalone white-label solutions can cost $200-500/month on top of regular software fees. Daisy includes complete white-label capabilities in all plans starting at $50/month.',
+            'Bought separately, white-label runs $200-500/month on top of the software itself. Daisy includes it in every plan from $50/month.',
         },
         {
           question: 'Can I use my own domain with salon booking software?',
           answer:
-            'With Daisy, yes -- you can use your own domain for your booking page. Many competitors force you to use their subdomain (e.g., yoursalon.booksy.com), which dilutes your brand.',
+            'With Daisy, yes. Your booking page sits on your own domain. Many competitors put you on a subdomain of theirs, such as yoursalon.booksy.com, which weakens your brand.',
         },
         {
           question: 'Does white-label affect the booking experience?',
           answer:
-            'White-label software provides the same features and functionality but under your brand. Customers get a seamless experience that feels like your own custom platform.',
+            'The features are the same; the branding is yours. To a customer it reads as software you had built.',
         },
         {
           question: 'Is white-label software good for multi-location salons?',
           answer:
-            'Absolutely. Multi-location businesses benefit most from white-label because it maintains consistent branding across all locations while using one centralized management system.',
+            'Yes, and multi-location businesses gain the most from it, since the branding stays consistent across every site while the management stays centralised.',
         },
         {
           question: 'Can I white-label the salon mobile app?',
           answer:
-            'Daisy allows you to customize the customer-facing app with your branding. This creates a premium, professional experience that sets you apart from competitors using generic booking apps.',
+            'The customer-facing app carries your branding, which reads as more considered than the generic booking apps most competitors hand their clients.',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'ai-receptionist-for-salons'],
@@ -285,9 +285,9 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       slug: 'salon-booking-software',
       term: 'Salon Booking Software',
       definition:
-        'is a digital tool that enables beauty businesses to accept, manage, and optimize appointment bookings online -- allowing customers to self-schedule 24/7 and reducing no-shows through automated reminders.',
+        'is a digital tool that lets beauty businesses accept and manage appointment bookings online, so customers can schedule themselves 24/7 and automated reminders can cut no-shows.',
       extendedDescription:
-        'Salon booking software has evolved from simple online calendars to sophisticated platforms with AI-driven scheduling, waitlist management, and multi-channel booking (website, app, social media, Google). Studies show that salons offering online booking see up to 40% more appointments, while automated reminders reduce no-shows by 30-40%. The best booking systems integrate with payments, CRM, and marketing tools. Booking software is a core component of any <a href="/en/glossary/salon-management-system">salon management system</a>.',
+        'Salon booking software has moved on from the online calendar to platforms with AI-driven scheduling, waitlist management and booking across website, app, social media and Google. Salons offering online booking take up to 40% more appointments, and automated reminders cut no-shows by 30-40%. The better systems connect to payments, CRM and marketing tools. Booking is a core part of any <a href="/en/glossary/salon-management-system">salon management system</a>.',
       keyFeatures: [
         { label: '24/7 Online Booking', daisy: 'AI-powered', typical: 'Basic web widget' },
         { label: 'Automated Reminders', daisy: 'SMS + Email + WhatsApp', typical: 'Email only' },
@@ -297,47 +297,47 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'Smart Scheduling', daisy: 'Gap-filling AI', typical: 'First-available only' },
       ],
       howDaisyImplements:
-        'Daisy\'s booking system uses AI to optimize schedules, fill gaps, reduce no-shows, and maximize staff utilization. Customers can book through your website, app, Google, or social media 24/7. Automated reminders via SMS, email, and WhatsApp reduce no-shows by up to 40%.',
+        'Daisy uses AI to arrange the schedule, close gaps, cut no-shows and keep staff occupied. Customers book through your website, the app, Google or social media 24/7, and automated reminders by SMS, email and WhatsApp reduce no-shows by up to 40%.',
       faqs: [
         {
           question: 'What is salon booking software?',
           answer:
-            'Salon booking software lets customers schedule appointments online 24/7 while helping salon owners manage calendars, reduce no-shows, and optimize staff schedules automatically.',
+            'It lets customers book online 24/7, and lets the owner manage calendars, reduce no-shows and arrange staff schedules without doing it by hand.',
         },
         {
           question: 'How does online booking increase salon revenue?',
           answer:
-            'Salons offering 24/7 online booking see up to 40% more appointments because customers can book at any time. AI scheduling also fills calendar gaps and reduces idle time between appointments.',
+            'Salons with 24/7 online booking take up to 40% more appointments, simply because people can book whenever it occurs to them. AI scheduling then closes the gaps and cuts the idle time between appointments.',
         },
         {
           question: 'What\'s the best way to reduce salon no-shows?',
           answer:
-            'Automated reminders via SMS and email reduce no-shows by 30-40%. Daisy adds AI prediction to identify high-risk bookings and optional deposit requirements for added protection.',
+            'Automated SMS and email reminders cut no-shows by 30-40%. Daisy adds AI to flag the bookings most at risk, and deposits if you want them.',
         },
         {
           question: 'Can customers book from Google Search?',
           answer:
-            'Yes. Daisy supports Reserve with Google, allowing customers to book directly from your Google Business Profile search results -- meeting customers where they\'re already searching.',
+            'Yes. Reserve with Google lets customers book straight from your Google Business Profile in the search results, which is where they were already looking.',
         },
         {
           question: 'What is the difference between booking software and scheduling software?',
           answer:
-            'Booking software is customer-facing (clients self-schedule). Scheduling software is staff-facing (managing employee shifts). Daisy combines both -- customers book online while the system optimizes staff calendars.',
+            'Booking software faces the customer, who schedules themselves. Scheduling software faces the staff and manages shifts. Daisy does both: customers book online while the system arranges the staff calendars.',
         },
         {
           question: 'How does AI improve salon scheduling?',
           answer:
-            'AI scheduling analyzes booking patterns, staff skills, service durations, and customer preferences to suggest optimal appointment times, fill schedule gaps, and maximize daily revenue per staff member.',
+            'It reads booking patterns, staff skills, service durations and customer preferences, then suggests times that suit, fills the gaps and raises daily revenue per staff member.',
         },
         {
           question: 'Can I accept deposits through salon booking software?',
           answer:
-            'Yes. Daisy supports upfront deposits and full prepayment when booking, reducing no-shows and improving cash flow. No transaction fees are charged on payments processed through Daisy.',
+            'Yes. Daisy takes deposits or full prepayment at booking, which reduces no-shows and steadies cash flow. Payments processed through Daisy carry no transaction fee.',
         },
         {
           question: 'Does salon booking software work for walk-in clients?',
           answer:
-            'Daisy handles both online bookings and walk-in clients. Walk-ins can be added to the schedule in real-time, and the system adjusts availability instantly for all booking channels.',
+            'Daisy handles both. A walk-in goes onto the schedule immediately and availability updates across every booking channel at once.',
         },
       ],
       relatedTerms: ['salon-management-software', 'ai-receptionist-for-salons', 'cashback-beauty-booking'],
