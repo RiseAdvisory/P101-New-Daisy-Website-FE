@@ -676,15 +676,15 @@ separately. Tick both.
 
 `src/lib/constants/guides/guideData.ts` · renders at `/guides/[slug]`
 
-- [ ] How Do I Reduce No-Shows at My Salon?  
+- [x] How Do I Reduce No-Shows at My Salon?  
       `reduce-salon-no-shows`
-- [ ] How Do I Get More Clients for My Salon?  
+- [x] How Do I Get More Clients for My Salon?  
       `get-more-salon-clients`
-- [ ] How Do I Choose the Best Salon Software?  
+- [x] How Do I Choose the Best Salon Software?  
       `choose-best-salon-software`
-- [ ] How Do I Switch from Fresha to Another Platform?  
+- [x] How Do I Switch from Fresha to Another Platform?  
       `switch-from-fresha`
-- [ ] How Do I Set Up Online Booking for My Salon?  
+- [x] How Do I Set Up Online Booking for My Salon?  
       `set-up-online-booking-salon`
 
 ---
