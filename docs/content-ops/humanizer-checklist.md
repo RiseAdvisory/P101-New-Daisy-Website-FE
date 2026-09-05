@@ -775,11 +775,11 @@ are the entire reason an AI engine will quote this page, so a rewrite that drift
 description away from what its source actually says damages the asset rather than improving
 it. Several categories may need no change at all.
 
-- [ ] Market Size & Growth — descriptions only
-- [ ] Booking & Scheduling — descriptions only
-- [ ] No-Shows & Cancellations — descriptions only
-- [ ] Customer Acquisition & Retention — descriptions only
-- [ ] AI & Automation in Beauty — descriptions only
+- [x] Market Size & Growth — descriptions only
+- [x] Booking & Scheduling — descriptions only
+- [x] No-Shows & Cancellations — descriptions only
+- [x] Customer Acquisition & Retention — descriptions only
+- [x] AI & Automation in Beauty — descriptions only
 - [ ] GCC Beauty Market — descriptions only
 - [ ] Payment & Revenue — descriptions only
 - [ ] حجم السوق والنمو — descriptions only
