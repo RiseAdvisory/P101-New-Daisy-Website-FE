@@ -1002,7 +1002,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     website: 'https://www.joinblvd.com',
     tier: 2,
     description:
-      'Premium, design-forward salon and spa management platform with AI scheduling and dual AI assistant (Duo). Heavily funded ($188M) with focus on premium/luxury market segment.',
+      'A premium, design-led salon and spa management platform with AI scheduling and the Duo AI assistant. It has raised $188M and aims squarely at the luxury end of the market.',
     founded: '2016',
     headquarters: 'Los Angeles, CA, USA',
     employeeCount: '200-400',
@@ -1100,19 +1100,19 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'Precision Scheduling AI optimizes appointment slot allocation. Duo is an AI assistant for business insights and task automation. Available in Premier tier ($295/mo) and above only.',
+        'Precision Scheduling AI arranges appointment slots, and Duo is an AI assistant for business insights and task automation. Both appear only in the Premier tier at $295/mo and above.',
     },
 
     targetMarket:
-      'Premium, design-conscious salons and spas in the US market. Multi-location businesses and luxury brands. Not targeting budget-conscious or international markets.',
+      'Premium, design-conscious salons and spas in the US, along with multi-location businesses and luxury brands. Budget-conscious and international markets are not the target.',
 
     messaging: {
       tagline: 'Client experience management for salons and spas',
       primaryValueProp:
         'Premium, beautifully designed platform with AI scheduling for luxury salons and spas',
       targetAudience:
-        'Premium salon and spa owners who value design and are willing to pay for quality',
-      toneAndVoice: 'Premium, sophisticated, design-forward',
+        'Premium salon and spa owners who care about design and will pay for it',
+      toneAndVoice: 'Premium and sophisticated, with design doing most of the talking',
       keyMessages: [
         'Precision Scheduling AI',
         'Built for premium brands',
@@ -1164,58 +1164,58 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Boulevard compare to Daisy?',
         answer:
-          'Boulevard is a premium US-focused platform ($158-410/mo) with AI scheduling and beautiful design. Daisy offers a complete growth platform with AI receptionist, marketplace, cashback, and Arabic support at more accessible pricing. Boulevard\'s AI features require the $295/mo Premier tier, while Daisy includes AI in its base platform.',
+          'Boulevard is a premium US platform at $158-410/mo, with AI scheduling and a beautiful interface. Daisy is a complete growth platform, adding an AI receptionist, marketplace, cashback and Arabic support at a lower price. Boulevard\'s AI needs the $295/mo Premier tier; Daisy includes it in the base platform.',
       },
       {
         question: 'Is Boulevard available in the Middle East?',
         answer:
-          'No. Boulevard is US-only with no Arabic support, GCC compliance, or local payment methods. For Middle East beauty businesses, Daisy provides native Arabic UI, local payment integration, and support built for the Gulf, live in Kuwait today.',
+          'No. Boulevard runs in the US only, with no Arabic, no GCC compliance and no local payment methods. For a Middle East beauty business, Daisy offers a native Arabic interface, local payment integration and support built for the Gulf, live in Kuwait today.',
       },
       {
         question: 'What does Boulevard actually cost when you include transaction fees?',
         answer:
-          'Boulevard charges $158-410/mo in subscription fees plus 2.6% + $0.10 per transaction on every payment. A salon processing $20,000/mo in payments would pay an additional $520+ in processing fees alone. AI features require the $295/mo Premier tier. Daisy provides more accessible pricing with AI included in the core platform and without per-transaction fees eroding your margins.',
+          'The subscription runs $158-410/mo, and every payment carries 2.6% + $0.10 on top. A salon processing $20,000/mo pays $520+ in processing fees alone, and the AI still requires the $295/mo Premier tier. Daisy costs less, includes the AI in the core platform, and does not take a slice of each transaction.',
       },
       {
         question: 'How difficult is it to switch from Boulevard to Daisy?',
         answer:
-          'Boulevard has a comprehensive data structure, so migration requires transferring client profiles, appointment history, staff records, POS data, and product inventory. Daisy\'s onboarding team provides dedicated migration support to ensure all your data transfers accurately and your team gets up to speed quickly without disrupting daily operations.',
+          'Boulevard holds a lot of structured data, so the migration covers client profiles, appointment history, staff records, POS data and product inventory. Daisy\'s onboarding team handles it, checks the data landed correctly and gets your staff comfortable without stopping the business.',
       },
       {
         question: 'How does Boulevard\'s Precision Scheduling AI compare to Daisy\'s AI?',
         answer:
-          'Boulevard\'s Precision Scheduling AI optimizes appointment slot allocation, and its Duo assistant provides business insights, both only available at $295/mo. Daisy\'s AI goes further with a 24/7 voice and chat receptionist that handles bookings and payments autonomously, plus AI-powered marketing and analytics, all included in the core platform.',
+          'Precision Scheduling AI arranges slots and Duo produces business insights, and both need the $295/mo tier. Daisy goes further: a 24/7 voice and chat receptionist that books and takes payment on its own, plus AI marketing and analytics, all in the core platform.',
       },
       {
         question: 'Does Boulevard support Arabic-speaking staff and clients?',
         answer:
-          'No. Boulevard is English-only with no Arabic interface, no RTL layout support, and no Middle Eastern localization. Daisy offers fully native Arabic and English support with multilingual staff interfaces, client communications, and booking pages, purpose-built for the GCC market.',
+          'No. Boulevard is English-only, with no Arabic interface, no right-to-left layout and no Middle Eastern localization. Daisy is natively Arabic and English throughout, across staff interfaces, client messages and booking pages, built for the GCC.',
       },
       {
         question: 'How good is Boulevard\'s mobile app for daily salon management?',
         answer:
-          'Boulevard has solid reviews (4.6 on Capterra, 4.5 on G2) and a well-designed mobile experience consistent with its premium brand. The app handles bookings, client check-in, and POS well. However, its premium pricing puts it out of reach for many businesses. Daisy offers comparable mobile quality with broader features including AI and marketplace at more accessible pricing.',
+          'Reviews are solid at 4.6 on Capterra and 4.5 on G2, and the mobile experience matches the premium brand. Bookings, client check-in and POS all work well. The price puts it beyond a lot of businesses. Daisy matches the mobile quality, adds AI and a marketplace, and costs less.',
       },
       {
         question: 'Can Boulevard support franchise or multi-location salon businesses?',
         answer:
-          'Yes. Boulevard offers franchise management in its Prestige tier ($410/mo) with custom integrations, API access, and a dedicated success manager. However, the high price point makes it expensive for growing chains. Daisy provides multi-branch management, centralized reporting, and cross-location tools at more accessible pricing tiers.',
+          'Yes. Franchise management sits in the Prestige tier at $410/mo, with custom integrations, API access and a dedicated success manager. For a chain still growing, that is a lot to carry. Daisy offers multi-branch management, centralized reporting and cross-location tools at prices lower down the range.',
       },
       {
         question: 'What customer support does Boulevard provide?',
         answer:
-          'Boulevard provides support based on your tier level, with dedicated success managers only available in the Prestige plan ($410/mo). All support is in English only. Daisy offers multi-channel support in both Arabic and English, with onboarding assistance included regardless of plan, ensuring businesses in the GCC receive the same quality of support.',
+          'Support depends on your tier, and a dedicated success manager only comes with Prestige at $410/mo. All of it is in English. Daisy provides multi-channel support in Arabic and English, with onboarding included on every plan, so a GCC business gets the same service as anyone else.',
       },
       {
         question: 'Does Boulevard help attract new customers or just manage existing ones?',
         answer:
-          'Boulevard focuses on operations and client experience management, it does not have a consumer marketplace, cashback program, or active customer acquisition tools. Daisy combines full operations management with a consumer marketplace, cashback rewards, and AI-driven marketing to both manage existing clients and actively bring new ones through your door.',
+          'Boulevard is about operations and the client experience. There is no consumer marketplace, no cashback and nothing that actively goes looking for customers. Daisy runs the operations and adds a consumer marketplace, cashback rewards and AI-driven marketing, so it keeps the clients you have and brings new ones in.',
       },
     ],
 
     lastResearched: '2026-03-13',
     notes:
-      'Premium positioning and strong design make this a notable competitor in the US luxury segment. Precision Scheduling AI is innovative. Key gap: US-only, no marketplace, high pricing. Not a direct GCC threat.',
+      'The positioning and the design make this a serious competitor in the US luxury segment, and Precision Scheduling AI is genuinely innovative. The gaps are US-only reach, no marketplace and high pricing. Not a direct threat in the GCC.',
   },
 
   // ---------------------------------------------------------------------------
@@ -1227,7 +1227,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     website: 'https://www.planity.com',
     tier: 2,
     description:
-      'France\'s #1 beauty booking platform with 10M+ monthly bookings. Commission-free SaaS model differentiates from marketplace competitors. Expanding in Europe with $50M+ Series C funding.',
+      'France\'s #1 beauty booking platform, handling 10M+ monthly bookings. The commission-free SaaS model is what sets it apart from marketplace rivals, and a $50M+ Series C is funding expansion across Europe.',
     founded: '2017',
     headquarters: 'Paris, France',
     employeeCount: '200-300',
@@ -1294,19 +1294,19 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       hasAiMarketing: false,
       hasAiAnalytics: false,
       hasAiPricing: false,
-      aiDescription: 'No AI capabilities. Basic automated booking confirmations and reminders.',
+      aiDescription: 'No AI. Automated booking confirmations and reminders are the extent of it.',
     },
 
     targetMarket:
-      'French beauty salons and hairdressers. Expanding to other European markets. Commission-free model appeals to businesses frustrated by marketplace fees.',
+      'French beauty salons and hairdressers, now moving into other European markets. The commission-free model lands well with businesses tired of marketplace fees.',
 
     messaging: {
       tagline: 'La plateforme de réservation beauté #1 en France',
       primaryValueProp:
         'France\'s largest beauty marketplace with zero commission. SaaS-only pricing',
       targetAudience:
-        'French hairdressers and beauty professionals who want marketplace exposure without commission fees',
-      toneAndVoice: 'Local, professional, anti-commission messaging',
+        'French hairdressers and beauty professionals who want the marketplace exposure without paying commission for it',
+      toneAndVoice: 'Local and professional, built on an anti-commission message',
       keyMessages: [
         '10M+ monthly bookings',
         'Zero commission, flat monthly fee',
@@ -1357,53 +1357,53 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Planity compare to Daisy?',
         answer:
-          'Planity dominates France with 10M+ monthly bookings and commission-free pricing, but is limited to European markets with no AI capabilities. Daisy provides a complete AI-powered growth platform with Arabic/English support, cashback rewards, and GCC compliance, designed for a global audience.',
+          'Planity dominates France on 10M+ monthly bookings and commission-free pricing, and it stops at Europe, with no AI. Daisy is a complete AI-powered growth platform with Arabic and English support, cashback rewards and GCC compliance, built for a wider audience.',
       },
       {
         question: 'Does Planity charge commission on bookings like other marketplaces?',
         answer:
-          'No. Planity\'s key differentiator is its commission-free SaaS model at approximately 59 euros per month. You pay a flat subscription fee with no per-booking commissions. Daisy also avoids per-booking commissions and includes AI, cashback, and full business management features that Planity lacks, offering more value for the subscription cost.',
+          'No, and that is the whole pitch. The commission-free SaaS model runs at roughly 59 euros per month, a flat subscription with nothing taken per booking. Daisy also takes no per-booking commission, and adds AI, cashback and full business management on top.',
       },
       {
         question: 'Does Planity work outside of France or support Arabic?',
         answer:
-          'Planity is expanding within Europe but remains France-focused with no Arabic support, no GCC compliance, and no Middle Eastern payment methods. Daisy is built for global markets with native Arabic and English support, coverage across all 6 GCC countries, and local payment integrations.',
+          'Planity is expanding across Europe and remains France-centred, with no Arabic, no GCC compliance and no Middle Eastern payment methods. Daisy works across markets, with native Arabic and English, coverage of all 6 GCC countries and local payment integrations.',
       },
       {
         question: 'Does Planity have any AI features?',
         answer:
-          'No. Planity has zero AI capabilities, only basic automated booking confirmations and reminders. There is no AI receptionist, chatbot, smart scheduling, or AI-powered marketing. Daisy provides a comprehensive AI ecosystem that handles calls, bookings, payments, marketing, and analytics autonomously.',
+          'No. There is no AI at all, only automated booking confirmations and reminders. No receptionist, no chatbot, no smart scheduling, no AI marketing. Daisy runs a full AI ecosystem covering calls, bookings, payments, marketing and analytics on its own.',
       },
       {
         question: 'How difficult is it to migrate from Planity to Daisy?',
         answer:
-          'Migrating from Planity is straightforward since its feature set focuses on booking and basic client management. Daisy\'s onboarding team assists with transferring client databases, appointment history, and business profiles. The transition is especially relevant for businesses expanding from European to Middle Eastern markets.',
+          'Planity concentrates on booking and basic client management, so there is less to move and the migration is straightforward. Daisy\'s onboarding team transfers client databases, appointment history and business profiles. It matters most for a business moving from European into Middle Eastern markets.',
       },
       {
         question: 'How good is Planity\'s mobile app compared to Daisy?',
         answer:
-          'Planity has excellent app ratings (4.8 on App Store with 180,000+ reviews) driven by its massive French consumer base. However, the business management side is basic. Daisy\'s app provides both a consumer-facing marketplace and a comprehensive business management suite with AI, POS, inventory, and marketing tools.',
+          'The app rates 4.8 on the App Store across 180,000+ reviews, which its enormous French consumer base explains. The business management side is basic. Daisy\'s app carries both the consumer marketplace and a full business management suite, with AI, POS, inventory and marketing.',
       },
       {
         question: 'Can Planity support a multi-location beauty business?',
         answer:
-          'Planity offers multi-location listing capabilities on its marketplace, but its business management tools are basic compared to dedicated enterprise solutions. Daisy provides centralized multi-branch dashboards, cross-location staff scheduling, unified inventory, and consolidated reporting designed for growing salon chains.',
+          'You can list multiple locations on the marketplace, though the management tools behind that are basic next to platforms built for it. Daisy provides centralized multi-branch dashboards, staff scheduling across locations, one inventory and consolidated reporting, aimed at a growing chain.',
       },
       {
         question: 'What customer support does Planity offer and is it available in English?',
         answer:
-          'Planity\'s support is primarily in French, reflecting its market focus. English support is limited, and Arabic support is nonexistent. Daisy provides fully multilingual Arabic and English customer support with dedicated onboarding assistance, making it the clear choice for businesses in the GCC or those operating in multilingual environments.',
+          'Support is mostly in French, which follows from where Planity sells. English is limited and Arabic does not exist. Daisy supports customers in Arabic and English with dedicated onboarding, which matters in the GCC and anywhere else running in more than one language.',
       },
       {
         question: 'Does Planity integrate with other business tools and payment systems?',
         answer:
-          'Planity integrates with European payment systems and basic salon management tools, but its ecosystem is designed for the French market. It does not support GCC payment gateways like mada, Benefit, or KNET. Daisy integrates with local GCC payment methods, Google Calendar, marketing tools, and provides a built-in marketplace, offering a much broader integration ecosystem for international businesses.',
+          'It connects to European payment systems and basic salon management tools, all built around the French market. GCC payment gateways such as mada, Benefit and KNET are not supported. Daisy connects to local GCC payment methods, Google Calendar and marketing tools, and includes a marketplace, which gives an international business considerably more to work with.',
       },
     ],
 
     lastResearched: '2026-03-13',
     notes:
-      'France market leader with impressive scale (10M+ bookings/mo). Commission-free model is compelling. But zero AI, zero Arabic, zero GCC presence makes this a non-threat in Daisy\'s primary market. Interesting model to watch for marketplace strategy insights.',
+      'The market leader in France, at genuine scale with 10M+ bookings/mo, and the commission-free model is compelling. With no AI, no Arabic and no GCC presence, it is not a threat in Daisy\'s primary market. Still worth watching for what it says about marketplace strategy.',
   },
 };
 

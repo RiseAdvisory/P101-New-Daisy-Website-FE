@@ -572,18 +572,18 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
       `zylu`
 - [x] repeatmd  
       `repeatmd`
-- [ ] boulevard  
+- [x] boulevard  
       `boulevard`
-- [ ] planity  
+- [x] planity  
       `planity`
 
 ### `tier3Data.ts` (15)
 
-- [ ] square-appointments  
+- [x] square-appointments  
       `square-appointments`
-- [ ] mangomint  
+- [x] mangomint  
       `mangomint`
-- [ ] phorest  
+- [x] phorest  
       `phorest`
 - [ ] timely  
       `timely`
