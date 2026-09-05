@@ -549,15 +549,15 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
 
 ### `tier1Data.ts` (5)
 
-- [ ] fresha  
+- [x] fresha  
       `fresha`
-- [ ] booksy  
+- [x] booksy  
       `booksy`
-- [ ] vagaro  
+- [x] vagaro  
       `vagaro`
-- [ ] mindbody  
+- [x] mindbody  
       `mindbody`
-- [ ] zenoti  
+- [x] zenoti  
       `zenoti`
 
 ### `tier2Data.ts` (7)
