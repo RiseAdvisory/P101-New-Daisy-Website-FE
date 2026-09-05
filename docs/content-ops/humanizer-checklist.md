@@ -632,9 +632,9 @@ own prose only. The cross-links are references to section 1, not separate conten
       `freelance-beauty-professional-guide.ts` → `freelance-beauty-professional-guide`
 - [-] الذكاء الاصطناعي لأعمال التجميل والصالونات  
       `pillars.ar.ts` → `ai-salon-software`  (Arabic: skipped, needs a native-speaker pass)
-- [ ] Salon Analytics & Reporting: Data-Driven Growth  
+- [x] Salon Analytics & Reporting: Data-Driven Growth  
       `salon-analytics-reporting.ts` → `salon-analytics-reporting`
-- [ ] Salon Client Retention: Strategies That Work  
+- [x] Salon Client Retention: Strategies That Work  
       `salon-client-retention.ts` → `salon-client-retention`
 - [ ] The Complete Guide to Salon Management Software  
       `salon-management-software.ts` → `salon-management-software`
