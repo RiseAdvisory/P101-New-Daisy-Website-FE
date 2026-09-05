@@ -19,7 +19,7 @@ export const aiTools: AiToolData[] = [
     name: 'Anolla',
     website: 'https://www.anolla.com',
     description:
-      'AI beauty assistant specializing in multi-language chat-based booking and customer service. Supports 25 languages. Chat-only platform, no voice capabilities.',
+      'AI beauty assistant built around chat-based booking and customer service across 25 languages. The platform is chat only and has no voice capabilities.',
     aiCapabilities: {
       voiceReceptionist: false,
       chatBooking: true,

@@ -336,13 +336,13 @@ smallest and the most constrained, so they are cheap to leave until last.
 
 ### `thought-leadership.ts` (4)
 
-- [ ] The Death of 'Salon Software': Why the Future Belongs to Platform Ecosystems  
+- [x] The Death of 'Salon Software': Why the Future Belongs to Platform Ecosystems  
       `death-of-salon-software-platform-ecosystems`
-- [ ] Why Beauty Businesses That Don't Adopt AI Will Be Left Behind by 2028  
+- [x] Why Beauty Businesses That Don't Adopt AI Will Be Left Behind by 2028  
       `beauty-businesses-adopt-ai-or-left-behind`
-- [ ] From Operations to Growth: The Mindset Shift Every Salon Owner Needs  
+- [x] From Operations to Growth: The Mindset Shift Every Salon Owner Needs  
       `operations-to-growth-mindset-shift-salon`
-- [ ] Why Your Salon Uses 5 Different Apps (And How to Fix It)  
+- [x] Why Your Salon Uses 5 Different Apps (And How to Fix It)  
       `salon-five-apps-how-to-fix`
 
 ---
@@ -358,7 +358,7 @@ only. Do not soften or sharpen a claim while rewriting it.
 
 ### `aiTools.ts` (3)
 
-- [ ] anolla  
+- [x] anolla  
       `anolla`
 - [ ] bookingbee-ai  
       `bookingbee-ai`
