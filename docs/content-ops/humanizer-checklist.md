@@ -239,18 +239,18 @@ smallest and the most constrained, so they are cheap to leave until last.
       `salon-pos-systems-2026-guide`
 - [x] Tipping Best Practices for Beauty Businesses  
       `tipping-best-practices-beauty-businesses`
-- [ ] Getting Paid Faster: Invoicing for Freelance Beauty Pros  
+- [x] Getting Paid Faster: Invoicing for Freelance Beauty Pros  
       `getting-paid-faster-freelance-beauty-invoicing`
-- [ ] Payment Processing Fees Compared: Daisy vs Alternatives  
+- [x] Payment Processing Fees Compared: Daisy vs Alternatives  
       `payment-processing-fees-compared-daisy`
 
 ### `salon-analytics.ts` (4)
 
-- [ ] 7 Salon KPIs Every Owner Should Track  
+- [x] 7 Salon KPIs Every Owner Should Track  
       `salon-kpis-to-track`
-- [ ] Understanding Salon Client Lifetime Value  
+- [x] Understanding Salon Client Lifetime Value  
       `salon-client-lifetime-value`
-- [ ] Salon Revenue Reporting: What to Measure & Why  
+- [x] Salon Revenue Reporting: What to Measure & Why  
       `salon-revenue-reporting-guide`
 - [ ] Data-Driven Salon Management: Beginner's Guide  
       `data-driven-salon-management`

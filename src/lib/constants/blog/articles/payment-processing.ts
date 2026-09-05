@@ -436,150 +436,150 @@ const gettingPaidFasterArticle: LocalBlogPost = {
     description:
       'A practical guide to invoicing and payment collection for freelance beauty professionals. Learn how to create professional invoices, accept multiple payment methods, and eliminate late payments from your business.',
     aboutPosts: `
-<h2>Why Invoicing Is a Freelance Beauty Professional's Biggest Headache</h2>
-<p>As a freelance stylist, mobile makeup artist, independent esthetician, or solo nail technician, getting paid should be the easiest part of your job. You deliver the service, you collect the payment, you move on to the next client. In reality, payment collection is one of the most frustrating and time-consuming aspects of running an independent beauty business.</p>
-<p>A 2025 survey by the Freelancers Union found that 71% of freelancers across all industries have experienced late payments, with an average delay of 14 days past due. In the beauty industry specifically, the problem is compounded by a culture of informality - verbal price agreements, cash-only transactions, and the absence of formal invoicing.</p>
-<p>This guide shows you how to professionalise your payment process, get paid faster, and eliminate the awkward conversations about money that drain your energy and hurt your client relationships.</p>
+<h2>Why invoicing is a freelance beauty professional's biggest headache</h2>
+<p>Getting paid ought to be the simple bit. Do the work, take the money, move to the next client. For a freelance stylist, mobile makeup artist, esthetician, or nail technician, it is instead one of the most maddening parts of the week.</p>
+<p>A 2025 survey by the Freelancers Union found that 71% of freelancers across all industries have experienced late payments, with an average delay of 14 days past due. Beauty makes it worse, because so much of it runs on informality: prices agreed out loud, cash changing hands, and no invoice anywhere.</p>
+<p>What follows tightens up how you get paid, shortens the wait, and removes the awkward money conversations that wear you down and sour good relationships.</p>
 
-<h2>The Real Cost of Disorganised Payments</h2>
-<p>Before diving into solutions, consider what informal payment practices actually cost you:</p>
+<h2>The real cost of disorganised payments</h2>
+<p>Before the fixes, count what the informal version costs:</p>
 <ul>
-<li><strong>Cash leakage:</strong> Without a record of every transaction, it is easy to undercount your income. Freelancers who switch from cash-only to digital payments consistently discover they were underreporting income by 10-15% - not from dishonesty, but from simple human error.</li>
-<li><strong>Unpaid invoices:</strong> When you send a WhatsApp message saying "That will be 250 AED" and the client responds "I'll transfer you later," you have no formal payment request, no due date, and no leverage. Studies show that informal payment requests take 3x longer to collect than formal invoices.</li>
-<li><strong>Tax season stress:</strong> Without clean transaction records, preparing your tax filings becomes a week-long exercise in reconstructing your income from bank statements, memory, and half-kept notes.</li>
-<li><strong>Perceived professionalism:</strong> Clients take you more seriously when you present a clean invoice than when you verbally state a price. A professional payment process signals that you are a legitimate business, not a hobbyist.</li>
-<li><strong>Time wasted on follow-ups:</strong> The average freelance beauty professional spends 3-5 hours per month chasing late payments. At your hourly rate, that is real income lost to administration.</li>
+<li><strong>Cash leakage:</strong> with no record of every transaction, income goes uncounted. Freelancers who switch from cash-only to digital payments consistently discover they were underreporting income by 10-15%, not through dishonesty but through ordinary forgetfulness.</li>
+<li><strong>Unpaid invoices:</strong> a WhatsApp message saying "That will be 250 AED" answered with "I'll transfer you later" leaves you with no request, no due date, and nothing to point at. Studies show that informal payment requests take 3x longer to collect than formal invoices.</li>
+<li><strong>Tax season stress:</strong> without clean records, filing turns into a week of rebuilding your income from bank statements, memory, and notes you half kept.</li>
+<li><strong>Perceived professionalism:</strong> a clean invoice is treated differently from a price said out loud. It tells the client this is a business rather than a hobby.</li>
+<li><strong>Time wasted on follow-ups:</strong> the average freelance beauty professional spends 3-5 hours per month chasing late payments. Price those hours at your own rate and see what chasing costs.</li>
 </ul>
 
-<h2>Setting Up Professional Invoicing</h2>
-<p>You do not need accounting software or a business degree to invoice professionally. Here is what every invoice should include:</p>
+<h2>Setting up professional invoicing</h2>
+<p>Accounting software and a business degree are both optional. Every invoice needs:</p>
 
-<h3>Essential Invoice Elements</h3>
+<h3>Essential invoice elements</h3>
 <ol>
-<li><strong>Your business name and contact information</strong> - even if you operate under your personal name, present it consistently.</li>
-<li><strong>Invoice number</strong> - a sequential number (e.g., INV-001, INV-002) that makes each invoice unique and trackable.</li>
-<li><strong>Client name and contact details</strong> - personalise every invoice. "Client" is not a name.</li>
-<li><strong>Date of service</strong> - when the service was performed.</li>
-<li><strong>Itemised services</strong> - list each service with its individual price. "Bridal makeup package" is clearer than "makeup services."</li>
-<li><strong>Products used or sold</strong> - if you applied premium products or sold retail items, list them separately.</li>
-<li><strong>Subtotal, tax, and total</strong> - break down the math so clients understand exactly what they are paying for.</li>
-<li><strong>Payment methods accepted</strong> - list every way you accept payment: bank transfer, card, mobile wallet, cash.</li>
-<li><strong>Payment due date</strong> - "Due upon receipt" or a specific date. Never leave this blank.</li>
-<li><strong>Your bank or payment details</strong> - make it effortless for the client to pay by including your bank account number, IBAN, or a payment link.</li>
+<li><strong>Your business name and contact information</strong>, presented the same way every time even if that name is your own.</li>
+<li><strong>Invoice number</strong>, running in sequence such as INV-001 and INV-002, so each one is unique and traceable.</li>
+<li><strong>Client name and contact details</strong>, because "Client" is not a name.</li>
+<li><strong>Date of service</strong>, meaning the day the work happened.</li>
+<li><strong>Itemised services</strong>, each with its own price, since "Bridal makeup package" tells the client more than "makeup services."</li>
+<li><strong>Products used or sold</strong>, listed separately where you applied something premium or sold retail.</li>
+<li><strong>Subtotal, tax, and total</strong>, broken down so there is no guessing about what the number covers.</li>
+<li><strong>Payment methods accepted</strong>, meaning every one of them: bank transfer, card, mobile wallet, cash.</li>
+<li><strong>Payment due date</strong>, whether "Due upon receipt" or a date. Never leave it blank.</li>
+<li><strong>Your bank or payment details</strong>, meaning the account number, IBAN, or a payment link, so paying takes no effort.</li>
 </ol>
 
-<h3>How to Create Invoices Without Accounting Software</h3>
-<p>You have several options depending on your volume and preferences:</p>
+<h3>How to create invoices without accounting software</h3>
+<p>Three routes, depending on your volume:</p>
 <ul>
-<li><strong>Platform-generated invoices:</strong> Platforms like <a href="/en/features/professional/payment-processing">The Daisy</a> generate professional invoices automatically when a service is completed. The invoice is sent to the client's email or WhatsApp with a payment link - no manual creation required.</li>
-<li><strong>Template-based invoicing:</strong> Create a branded invoice template in Google Docs, Canva, or a free invoicing tool like Wave or Invoice Ninja. Fill in the details for each client and send as a PDF.</li>
-<li><strong>Mobile invoicing apps:</strong> Apps like Square Invoices or PayPal Business let you create and send invoices from your phone in under a minute.</li>
+<li><strong>Platform-generated invoices:</strong> platforms like <a href="/en/features/professional/payment-processing">The Daisy</a> produce the invoice the moment a service is completed and send it to the client by email or WhatsApp with a payment link attached, with nothing for you to write.</li>
+<li><strong>Template-based invoicing:</strong> build a branded template in Google Docs, Canva, or a free tool such as Wave or Invoice Ninja, fill it in, and send a PDF.</li>
+<li><strong>Mobile invoicing apps:</strong> Square Invoices and PayPal Business both let you write and send one from your phone inside a minute.</li>
 </ul>
-<p>The key is consistency. Choose one method and use it for every single transaction, no matter how small.</p>
+<p>Pick one and use it for every transaction, however small. That is the part that matters.</p>
 
-<h2>Getting Paid at the Point of Service</h2>
-<p>The fastest way to get paid is to collect payment immediately after the service. Here is how to make point-of-service payment seamless:</p>
+<h2>Getting paid at the point of service</h2>
+<p>Nothing beats collecting the money before the client leaves. To make that painless:</p>
 
-<h3>Accept Multiple Payment Methods</h3>
-<p>The more ways you can accept payment, the fewer excuses clients have for delaying. At minimum, you should accept:</p>
+<h3>Accept multiple payment methods</h3>
+<p>Every method you take removes a reason to pay you later. The minimum:</p>
 <ul>
-<li><strong>Card payments:</strong> A mobile card reader (Square, SumUp, or through your salon platform) lets you accept credit and debit cards on the spot.</li>
-<li><strong>Mobile wallets:</strong> Apple Pay, Google Pay, and Samsung Pay are increasingly preferred, especially by younger clients.</li>
-<li><strong>Bank transfer:</strong> Have your IBAN and bank details ready to share instantly via a QR code or text.</li>
-<li><strong>Payment links:</strong> Send a clickable link via WhatsApp or SMS that takes the client directly to a payment page. The Daisy's <a href="/en/features/professional/payment-processing">payment tools for professionals</a> generate instant payment links that clients can tap to pay.</li>
-<li><strong>Cash:</strong> Always accept cash as a fallback, but position digital as your preferred method.</li>
+<li><strong>Card payments:</strong> a mobile reader from Square, SumUp, or your salon platform takes credit and debit cards on the spot.</li>
+<li><strong>Mobile wallets:</strong> Apple Pay, Google Pay, and Samsung Pay, which younger clients increasingly reach for first.</li>
+<li><strong>Bank transfer:</strong> keep your IBAN and bank details ready to send as a QR code or a text.</li>
+<li><strong>Payment links:</strong> a link by WhatsApp or SMS that opens straight onto a payment page. The Daisy's <a href="/en/features/professional/payment-processing">payment tools for professionals</a> generate those instantly, and the client taps once.</li>
+<li><strong>Cash:</strong> always take it, and let digital be what you offer first.</li>
 </ul>
 
-<h3>Present the Bill Naturally</h3>
-<p>The moment of payment does not need to be awkward. Here is a natural flow:</p>
+<h3>Present the bill naturally</h3>
+<p>Paying does not have to be an awkward moment:</p>
 <ol>
-<li>As you finish the service, mention the total naturally: "Your balayage and treatment today comes to 400 AED."</li>
-<li>Immediately offer the payment method: "Would you like to pay by card, transfer, or cash?"</li>
-<li>Have your card reader ready or your payment link prepared before the service ends so there is no fumbling.</li>
-<li>Send the receipt and booking link for next time: "I have sent your receipt to your WhatsApp. Would you like to book your next appointment now?"</li>
+<li>As you finish, say the total in passing: "Your balayage and treatment today comes to 400 AED."</li>
+<li>Offer the method straight after: "Would you like to pay by card, transfer, or cash?"</li>
+<li>Have the reader out or the link ready before you finish, so there is no rummaging.</li>
+<li>Send the receipt with the next booking link: "I have sent your receipt to your WhatsApp. Would you like to book your next appointment now?"</li>
 </ol>
 
-<h3>Require Deposits for High-Value Services</h3>
-<p>For bridal work, full-day bookings, and services over a certain amount (e.g., 500+ AED), require a deposit at the time of booking. A deposit of 30-50% of the total serves multiple purposes:</p>
+<h3>Require deposits for high-value services</h3>
+<p>Bridal work, full-day bookings, and anything over a threshold such as 500+ AED should carry a deposit taken at booking. A deposit of 30-50% of the total does four jobs at once:</p>
 <ul>
-<li>Confirms the client's commitment and reduces no-shows</li>
-<li>Covers your preparation costs if the client cancels</li>
-<li>Reduces the amount collected at the point of service</li>
-<li>Signals professionalism and establishes clear financial terms</li>
+<li>It confirms they mean it and cuts no-shows</li>
+<li>It covers your preparation if they cancel</li>
+<li>It leaves less to collect on the day</li>
+<li>It sets the financial terms early and clearly</li>
 </ul>
 
-<h2>Handling Late Payments</h2>
-<p>Even with the best systems, some payments will be delayed. Here is a structured approach to follow-up:</p>
+<h2>Handling late payments</h2>
+<p>Some will be late whatever you do. Follow this sequence:</p>
 
-<h3>Day 1 (Due Date): Automated Reminder</h3>
-<p>Set up an automatic reminder that triggers on the due date. A simple message: "Hi [Name], a friendly reminder that your invoice #INV-042 for 350 AED is due today. You can pay securely here: [payment link]." Automated reminders through your platform are impersonal enough that they do not strain the relationship.</p>
+<h3>Day 1 (due date): automated reminder</h3>
+<p>Have something fire on the due date. "Hi [Name], a friendly reminder that your invoice #INV-042 for 350 AED is due today. You can pay securely here: [payment link]." Coming from the platform rather than from you, it costs the relationship nothing.</p>
 
-<h3>Day 3: Personal Follow-Up</h3>
-<p>If the automatic reminder has not resulted in payment, send a personal message: "Hi [Name], I hope you enjoyed your session! I noticed the payment for your [service] on [date] is still outstanding. Happy to help if you have any questions about the invoice." Keep it warm and professional.</p>
+<h3>Day 3: personal follow-up</h3>
+<p>Nothing yet, so write yourself: "Hi [Name], I hope you enjoyed your session! I noticed the payment for your [service] on [date] is still outstanding. Happy to help if you have any questions about the invoice." Warm, and still professional.</p>
 
-<h3>Day 7: Direct Communication</h3>
-<p>At this point, be direct: "Hi [Name], I wanted to follow up on invoice #INV-042 for 350 AED, which was due on [date]. Could you let me know when I can expect payment? I have included the payment link for your convenience: [link]."</p>
+<h3>Day 7: direct communication</h3>
+<p>Now say it plainly: "Hi [Name], I wanted to follow up on invoice #INV-042 for 350 AED, which was due on [date]. Could you let me know when I can expect payment? I have included the payment link for your convenience: [link]."</p>
 
-<h3>Day 14+: Formal Notice</h3>
-<p>If payment is still outstanding after two weeks, send a formal written notice via email (not just WhatsApp) stating the amount owed, the original due date, and a final deadline. Mention that you will need to pause future bookings until the balance is cleared. This is rarely needed but establishes that you have boundaries.</p>
+<h3>Day 14+: formal notice</h3>
+<p>Two weeks out, put it in writing by email rather than WhatsApp: the amount owed, the original due date, and a final deadline. Say that future bookings pause until the balance clears. You will rarely need this, and having it tells people where the line is.</p>
 
-<h3>Prevention Is Better Than Collection</h3>
-<p>The best late payment strategy is preventing them in the first place. These practices significantly reduce overdue invoices:</p>
+<h3>Prevention is better than collection</h3>
+<p>Better still, stop them happening. Five habits that cut overdue invoices sharply:</p>
 <ul>
-<li><strong>Collect at point of service</strong> whenever possible.</li>
-<li><strong>Require deposits for all bookings</strong> above a threshold.</li>
-<li><strong>Send invoices immediately</strong> - not the next day, not at the end of the week.</li>
-<li><strong>Make payment effortless</strong> with one-tap payment links.</li>
-<li><strong>Set clear terms before the service</strong> - "Payment is due at the end of today's session via card or transfer."</li>
+<li><strong>Collect at point of service</strong> wherever you can.</li>
+<li><strong>Require deposits for all bookings</strong> over a set amount.</li>
+<li><strong>Send invoices immediately</strong>, not tomorrow and not on Friday.</li>
+<li><strong>Make payment effortless</strong> with a one-tap link.</li>
+<li><strong>Set clear terms before the service</strong>: "Payment is due at the end of today's session via card or transfer."</li>
 </ul>
 
-<h2>Tracking Your Income and Expenses</h2>
-<p>Every freelance beauty professional needs a simple system for tracking income and expenses. This does not require complex accounting - it requires consistency.</p>
+<h2>Tracking your income and expenses</h2>
+<p>You need a system for this, and it needs to be simple. Complexity is not the requirement. Doing it every time is.</p>
 
-<h3>Income Tracking</h3>
-<p>Record every payment received with the date, client name, service(s), amount, and payment method. If you use a platform like The Daisy, this is done automatically. If not, a simple spreadsheet with these columns works.</p>
+<h3>Income tracking</h3>
+<p>Log every payment with the date, client name, services, amount, and method. A platform like The Daisy does that on its own. Without one, a spreadsheet with those columns is enough.</p>
 
-<h3>Expense Tracking</h3>
-<p>Track your business expenses in the same system or a separate sheet: products, tools, transport, insurance, platform subscriptions, continuing education. Photographing receipts with your phone and storing them in a dedicated folder takes 10 seconds per purchase and saves hours at tax time.</p>
+<h3>Expense tracking</h3>
+<p>Same system or a second sheet: products, tools, transport, insurance, platform subscriptions, training. Photographing each receipt into one folder takes 10 seconds and saves hours in January.</p>
 
-<h3>Separate Business and Personal Finances</h3>
-<p>Open a separate bank account for your beauty business, even if you are a sole proprietor. All business income goes into this account, all business expenses come out of it. This single step eliminates 80% of the bookkeeping confusion that freelancers face.</p>
+<h3>Separate business and personal finances</h3>
+<p>Open a business bank account even as a sole proprietor. Income in, expenses out, nothing else touching it. That one move eliminates 80% of the bookkeeping confusion that freelancers face.</p>
 
-<h2>Pricing Your Services for Profitability</h2>
-<p>Invoicing and getting paid is only half the equation. You also need to ensure your prices cover your costs and generate a sustainable income.</p>
+<h2>Pricing your services for profitability</h2>
+<p>Collecting the money is half of it. The other half is charging enough that the money is worth collecting.</p>
 <ul>
-<li><strong>Calculate your true hourly cost:</strong> Add up all your monthly expenses (products, transport, insurance, platform fees, continuing education, equipment) and divide by your billable hours. This is your cost per hour before you earn a single dirham of profit.</li>
-<li><strong>Factor in non-billable time:</strong> For every hour you spend with a client, you likely spend 20-30 minutes on preparation, cleanup, travel, and admin. Your pricing must account for this time.</li>
-<li><strong>Research your market:</strong> Know what other professionals at your skill level charge in your area. Price competitively but do not undervalue your expertise.</li>
-<li><strong>Review prices quarterly:</strong> Product costs, platform fees, and market rates change. Review and adjust your pricing every three months to maintain profitability.</li>
+<li><strong>Calculate your true hourly cost:</strong> total your monthly expenses across products, transport, insurance, platform fees, training, and equipment, then divide by billable hours. That is what an hour costs you before any profit exists.</li>
+<li><strong>Factor in non-billable time:</strong> every hour with a client comes with roughly 20-30 minutes of preparation, cleanup, travel, and admin, and your prices have to carry it.</li>
+<li><strong>Research your market:</strong> find out what people at your level charge nearby, then price against that without going under what you are worth.</li>
+<li><strong>Review prices quarterly:</strong> product costs, platform fees, and market rates all move, so revisit yours every three months.</li>
 </ul>
 
-<h2>Tools That Simplify Payment for Freelance Pros</h2>
-<p>Here is what you need in your payment toolkit:</p>
+<h2>Tools that simplify payment for freelance pros</h2>
+<p>Five things in the kit:</p>
 <ul>
-<li><strong>A mobile card reader:</strong> Square Reader, SumUp Air, or your platform's integrated reader. Cost: $0-50.</li>
-<li><strong>An invoicing tool:</strong> Built into your platform (The Daisy generates automatic invoices) or a standalone tool like Wave (free) or Square Invoices (free).</li>
-<li><strong>A payment link generator:</strong> Create instant payment links to send via WhatsApp or SMS. The Daisy provides one-tap <a href="/en/features/professional/payment-processing">payment links for professionals</a>.</li>
-<li><strong>A business bank account:</strong> Separate from personal banking for clean record-keeping.</li>
-<li><strong>A receipt organiser:</strong> A phone app like Expensify or simply a dedicated photo album for receipts.</li>
+<li><strong>A mobile card reader:</strong> Square Reader, SumUp Air, or whatever your platform integrates with. Cost: $0-50.</li>
+<li><strong>An invoicing tool:</strong> built into your platform, since The Daisy generates invoices automatically, or standalone through Wave or Square Invoices, both free.</li>
+<li><strong>A payment link generator:</strong> instant links to send by WhatsApp or SMS. The Daisy provides one-tap <a href="/en/features/professional/payment-processing">payment links for professionals</a>.</li>
+<li><strong>A business bank account:</strong> apart from your personal one, so the records stay clean.</li>
+<li><strong>A receipt organiser:</strong> an app such as Expensify, or a photo album on your phone used for nothing else.</li>
 </ul>
 
-<h2>Frequently Asked Questions</h2>
+<h2>Frequently asked questions</h2>
 
 <h3>Should I charge a late payment fee?</h3>
-<p>You can, but in the beauty industry it often creates more friction than it resolves. A better approach is to prevent late payments through deposits, point-of-service collection, and clear terms. If you do implement late fees, state them clearly in your terms before the service and on every invoice (e.g., "A 5% late fee applies to invoices unpaid after 7 days").</p>
+<p>You can, though in beauty it usually causes more friction than it saves. Deposits, collecting on the day, and clear terms prevent more than a fee recovers. If you do use one, put it in your terms before the service and on every invoice, along the lines of "A 5% late fee applies to invoices unpaid after 7 days".</p>
 
 <h3>How do I handle clients who ask for a discount at checkout?</h3>
-<p>Have a clear, confident response: "My prices reflect the quality of products and expertise I bring to every session. I'd be happy to tell you about any current promotions or packages that might offer better value." Do not negotiate prices after the service is delivered. If you offer discounts, make them structured (e.g., package deals, referral credits) rather than ad hoc.</p>
+<p>Have the answer ready: "My prices reflect the quality of products and expertise I bring to every session. I'd be happy to tell you about any current promotions or packages that might offer better value." Never negotiate after the work is done. Where you do discount, structure it as package deals or referral credits rather than deciding at the till.</p>
 
 <h3>What is the best way to collect payment for bridal work?</h3>
-<p>Bridal work is high-value and high-effort. The standard approach is: 30-50% deposit at booking (non-refundable if cancelled within 2 weeks), remaining balance due on the day of service before you begin makeup or styling, plus a clear contract outlining services included, timing, and travel arrangements. Never start bridal work without the deposit secured.</p>
+<p>It is expensive to deliver and expensive to lose. The standard arrangement is a 30-50% deposit at booking, non-refundable if cancelled within 2 weeks, the balance on the day before you start makeup or styling, and a contract covering what is included, the timings, and the travel. Never begin without the deposit.</p>
 
 <h3>How do I handle a client who disputes a charge?</h3>
-<p>Itemised invoices are your best protection. If a client disputes a charge, refer to the invoice showing the services agreed upon and performed. If there is a genuine issue (e.g., the client was charged for a service not rendered), resolve it promptly with a partial refund. If the dispute is about pricing that was communicated in advance, stand firm but remain professional: "The pricing was confirmed before our session and is reflected on your invoice."</p>
+<p>An itemised invoice is what protects you. Point at it, showing what was agreed and what was done. Where something genuinely went wrong, such as a charge for a service never performed, refund that part quickly. Where the price was communicated beforehand, hold your position politely: "The pricing was confirmed before our session and is reflected on your invoice."</p>
 
 <h3>Should I offer payment plans for expensive services?</h3>
-<p>Payment plans can work for very high-value packages (bridal packages over 2,000 AED, multi-session treatments). Structure them clearly: 50% at booking, 25% before the first session, 25% before the final session. Use your invoicing system to schedule and track each payment. Never begin work without the first payment secured.</p>
+<p>They suit genuinely large packages, meaning bridal work over 2,000 AED or multi-session treatments. Structure it plainly: 50% at booking, 25% before the first session, 25% before the final session. Schedule and track each instalment in your invoicing system, and never start before the first one arrives.</p>
 `,
     metaTitle: 'Invoicing for Freelance Beauty Pros | The Daisy',
     metaDescription:
@@ -651,47 +651,47 @@ const paymentFeesComparedArticle: LocalBlogPost = {
     description:
       'A transparent comparison of payment processing fees for beauty businesses. See how The Daisy stacks up against Square, Fresha, Stripe, and other popular salon payment processors on rates, features, and total cost.',
     aboutPosts: `
-<h2>Why Payment Processing Fees Matter for Your Beauty Business</h2>
-<p>Every card transaction your salon processes comes with a fee. At 2-3% per transaction, these fees might seem small individually. But across hundreds or thousands of transactions per month, they add up to one of your largest operating expenses after rent and payroll.</p>
-<p>A salon processing 50,000 AED in monthly card payments at a 2.9% rate pays 1,450 AED per month - 17,400 AED per year - in processing fees alone. A salon processing 150,000 AED monthly pays over 52,000 AED annually. Small differences in processing rates translate into significant real money.</p>
-<p>Yet most beauty business owners never compare processing fees because the pricing structures are deliberately confusing. Different processors use different models, bundle fees differently, and bury costs in fine print. This guide breaks down what you actually pay with each major option so you can make an informed decision.</p>
+<h2>Why payment processing fees matter for your beauty business</h2>
+<p>Every card payment costs you something. At 2-3% per transaction it looks trivial. Multiply it by hundreds or thousands of transactions a month and it becomes one of your biggest costs after rent and wages.</p>
+<p>A salon processing 50,000 AED in monthly card payments at a 2.9% rate pays 1,450 AED per month, or 17,400 AED per year, in processing fees alone. At 150,000 AED monthly it is over 52,000 AED annually. A fraction of a percent is not a rounding error at that scale.</p>
+<p>Almost nobody compares them, because the pricing is hard to compare on purpose. Every processor uses a different model, bundles the fees differently, and keeps some of the cost in the small print. What follows sets out what each major option actually costs you.</p>
 
-<h2>Understanding Payment Processing Fee Structures</h2>
-<p>Before comparing specific providers, you need to understand the three main fee structures:</p>
+<h2>Understanding payment processing fee structures</h2>
+<p>Three structures cover the field, and you need all three before any comparison makes sense:</p>
 
-<h3>Flat-Rate Processing</h3>
-<p>You pay a fixed percentage on every transaction, regardless of the card type or payment method. For example, 2.6% + $0.10 per transaction. The rate is the same whether the client pays with a basic debit card or a premium rewards credit card.</p>
-<p><strong>Pros:</strong> Simple, predictable, easy to budget. You always know exactly what you will pay.</p>
-<p><strong>Cons:</strong> You pay the same rate for cheap-to-process transactions (debit cards, domestic cards) as for expensive ones (international credit cards, premium rewards cards).</p>
+<h3>Flat-rate processing</h3>
+<p>One percentage on everything, whatever the card or the method, such as 2.6% + $0.10 per transaction. A basic debit card and a premium rewards credit card cost you exactly the same.</p>
+<p><strong>Pros:</strong> simple, predictable, and easy to budget against, since you always know the number.</p>
+<p><strong>Cons:</strong> the cheap transactions such as debit and domestic cards cost you the same as the expensive ones such as international and premium rewards cards.</p>
 
-<h3>Interchange-Plus Processing</h3>
-<p>You pay the actual interchange fee set by the card network (Visa, Mastercard) plus a fixed markup from the processor. For example, interchange + 0.3% + $0.10. The interchange rate varies by card type - debit cards cost less than premium credit cards.</p>
-<p><strong>Pros:</strong> Often cheaper for businesses with a high proportion of debit card transactions. More transparent about where costs come from.</p>
-<p><strong>Cons:</strong> Monthly statements are harder to read, costs fluctuate, and card networks change interchange rates periodically.</p>
+<h3>Interchange-plus processing</h3>
+<p>You pay the interchange fee the card network sets, whether Visa or Mastercard, plus the processor's fixed markup, for example interchange + 0.3% + $0.10. Interchange varies by card, so debit costs less than a premium credit card.</p>
+<p><strong>Pros:</strong> often cheaper where most clients pay by debit, and you can see where the cost actually comes from.</p>
+<p><strong>Cons:</strong> the statements take work to read, the total moves month to month, and the networks change interchange rates from time to time.</p>
 
-<h3>Commission-Based Processing</h3>
-<p>Some salon platforms take a percentage of each booking as a commission rather than (or in addition to) a standard processing fee. For example, 20% of every booking's value. This model is common among marketplace platforms that also provide client acquisition.</p>
-<p><strong>Pros:</strong> Often no upfront fees or monthly subscription - you only pay when you earn.</p>
-<p><strong>Cons:</strong> Extremely expensive at scale. A 20% commission on a 300 AED service is 60 AED - compared to roughly 8 AED for a standard processing fee. The more your business grows, the more you pay.</p>
+<h3>Commission-based processing</h3>
+<p>Some salon platforms take a share of each booking as commission instead of, or on top of, a processing fee, for example 20% of every booking's value. Marketplace platforms that also bring you clients commonly work this way.</p>
+<p><strong>Pros:</strong> usually nothing upfront and no monthly subscription, so you pay only when you earn.</p>
+<p><strong>Cons:</strong> it gets expensive fast. A 20% commission on a 300 AED service is 60 AED, against roughly 8 AED for a standard processing fee, and the bill rises with everything you build.</p>
 
-<h2>Provider-by-Provider Comparison</h2>
-<p>Here is how the major payment options for beauty businesses compare on fees, features, and total cost:</p>
+<h2>Provider-by-provider comparison</h2>
+<p>How the main options compare on fees, features, and what they cost in total:</p>
 
 <h3>The Daisy</h3>
-<p><a href="/en/features/business/payment-processing">The Daisy's payment processing</a> is built specifically for beauty and wellness businesses, integrated directly into the salon management platform.</p>
+<p><a href="/en/features/business/payment-processing">The Daisy's payment processing</a> was built for beauty and wellness businesses and sits inside the salon management platform.</p>
 <ul>
 <li><strong>Processing model:</strong> Flat-rate</li>
 <li><strong>Card-present rate:</strong> Competitive flat rate (see <a href="/en/pricing/business">pricing page</a> for current rates)</li>
 <li><strong>Online/card-not-present rate:</strong> Slightly higher flat rate for online payments and payment links</li>
-<li><strong>Commission on bookings:</strong> Zero - no commission on any booking, regardless of how the client found you</li>
+<li><strong>Commission on bookings:</strong> zero, with no commission on any booking regardless of how the client found you</li>
 <li><strong>Monthly platform fee:</strong> Included in salon management subscription</li>
 <li><strong>Payout speed:</strong> Next-business-day deposits standard</li>
 <li><strong>Hardware:</strong> Compatible with standard card readers; no proprietary hardware required</li>
-<li><strong>Key differentiator:</strong> Zero booking commission means your processing costs do not scale with your revenue the way commission-based platforms do. Payment is fully integrated with appointments, client profiles, tip management, and reporting.</li>
+<li><strong>Key differentiator:</strong> with no booking commission, your processing costs do not climb with your revenue the way they do on commission-based platforms. Payment connects to appointments, client profiles, tip management, and reporting.</li>
 </ul>
 
 <h3>Square</h3>
-<p>Square is a general-purpose payment platform used by many small businesses including salons.</p>
+<p>Square is a general-purpose payment platform used across small business, salons included.</p>
 <ul>
 <li><strong>Processing model:</strong> Flat-rate</li>
 <li><strong>Card-present rate:</strong> 2.6% + $0.10 per transaction</li>
@@ -699,22 +699,22 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <li><strong>Commission on bookings:</strong> None through Square itself, but Square Appointments charges a monthly fee</li>
 <li><strong>Monthly fee:</strong> Free basic plan; Plus plan at $29/month per location; Premium at $69/month</li>
 <li><strong>Payout speed:</strong> 1-2 business days (instant transfer available for additional fee)</li>
-<li><strong>Key consideration:</strong> Square is a solid general-purpose POS but lacks beauty-specific features like AI booking, integrated WhatsApp communication, and multilingual Arabic/English support. You may need additional tools to fill the gaps.</li>
+<li><strong>Key consideration:</strong> a solid general-purpose POS, without the beauty-specific pieces such as AI booking, integrated WhatsApp communication, and multilingual Arabic and English support. Filling those gaps may mean more tools.</li>
 </ul>
 
 <h3>Fresha</h3>
-<p>Fresha is a beauty-specific booking platform with integrated payment processing.</p>
+<p>Fresha is a beauty-specific booking platform with payment processing built in.</p>
 <ul>
 <li><strong>Processing model:</strong> Flat-rate plus commission on new clients</li>
 <li><strong>Card-present rate:</strong> 2.19% + $0.20 per transaction</li>
 <li><strong>Online rate:</strong> 2.19% + $0.20 per transaction</li>
 <li><strong>Commission on new client bookings:</strong> 20% commission on the first booking from new clients acquired through the Fresha marketplace</li>
 <li><strong>Monthly platform fee:</strong> Free base plan (with limited features); paid add-ons for marketing, reporting, and advanced tools</li>
-<li><strong>Key consideration:</strong> Fresha's headline processing rate is competitive, but the 20% new client commission is the hidden cost. If 30% of your monthly bookings come from new Fresha marketplace clients, your effective processing cost is substantially higher than the stated rate. A salon doing 100 bookings per month averaging 250 AED, where 30 are new marketplace clients, pays roughly 1,500 AED in commissions alone - on top of processing fees.</li>
+<li><strong>Key consideration:</strong> the headline processing rate is competitive, and the 20% new client commission is where the cost sits. If 30% of your monthly bookings come from new Fresha marketplace clients, what you actually pay is well above the stated rate. A salon doing 100 bookings per month averaging 250 AED, where 30 are new marketplace clients, pays roughly 1,500 AED in commissions alone, before any processing fees.</li>
 </ul>
 
-<h3>Stripe (Direct Integration)</h3>
-<p>Stripe is a developer-focused payment processor that some salons use through custom or third-party integrations.</p>
+<h3>Stripe (direct integration)</h3>
+<p>Stripe is aimed at developers, and some salons reach it through custom or third-party integrations.</p>
 <ul>
 <li><strong>Processing model:</strong> Flat-rate</li>
 <li><strong>Card-present rate:</strong> 2.7% + $0.05 per transaction (via Stripe Terminal)</li>
@@ -722,11 +722,11 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <li><strong>Commission:</strong> None</li>
 <li><strong>Monthly fee:</strong> None for standard processing; Stripe billing tools have additional pricing</li>
 <li><strong>Payout speed:</strong> 2 business days standard</li>
-<li><strong>Key consideration:</strong> Stripe is a powerful processor but requires technical integration. It is not a salon management platform - you need separate software for booking, client management, and reporting. Best suited for salons with developer resources or when used as the payment backend for a salon platform.</li>
+<li><strong>Key consideration:</strong> a powerful processor that has to be integrated technically. It is not a salon management platform, so booking, client management, and reporting all need separate software. It suits salons with developer help, or sits behind a salon platform as the payment layer.</li>
 </ul>
 
 <h3>SumUp</h3>
-<p>SumUp offers simple, low-cost card readers popular with small businesses and mobile professionals.</p>
+<p>SumUp sells simple, inexpensive card readers, popular with small businesses and mobile professionals.</p>
 <ul>
 <li><strong>Processing model:</strong> Flat-rate</li>
 <li><strong>Card-present rate:</strong> 1.69% per transaction (rates vary by region)</li>
@@ -735,11 +735,11 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <li><strong>Monthly fee:</strong> None for basic processing; SumUp One business account has a monthly fee</li>
 <li><strong>Hardware:</strong> Card readers from $39-$139</li>
 <li><strong>Payout speed:</strong> 1-3 business days</li>
-<li><strong>Key consideration:</strong> Excellent card-present rates, but no salon-specific features. You need separate software for everything else - booking, client management, communication, and reporting. Best as a payment-only solution when paired with a separate management platform.</li>
+<li><strong>Key consideration:</strong> the card-present rates are excellent and there is nothing salon-specific attached. Booking, client management, communication, and reporting all need separate software, so this works as payment only, alongside a management platform.</li>
 </ul>
 
-<h2>Total Cost Comparison: A Real-World Scenario</h2>
-<p>Fees per transaction only tell part of the story. Let us model the total monthly cost for a salon processing 80,000 AED in payments across 400 transactions, with 25% of bookings from new clients:</p>
+<h2>Total cost comparison: a real-world scenario</h2>
+<p>Per-transaction fees are only part of the bill. Take a salon processing 80,000 AED in payments across 400 transactions, with 25% of bookings from new clients:</p>
 
 <table>
 <thead>
@@ -754,78 +754,78 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 </tbody>
 </table>
 
-<p>The critical insight is that Fresha's low processing rate is overwhelmed by the 20% new client commission. A salon that acquires a significant portion of clients through the marketplace pays substantially more in total than it would with a flat-rate processor that charges no commission.</p>
+<p>What the table shows is that Fresha's low processing rate is outweighed by the 20% new client commission. A salon getting a large share of its clients through the marketplace pays considerably more overall than it would with a flat-rate processor charging no commission.</p>
 
-<h2>Hidden Costs to Watch For</h2>
-<p>Beyond the headline rates, these costs catch many salon owners by surprise:</p>
+<h2>Hidden costs to watch for</h2>
+<p>Six costs that surprise people who only read the headline rate:</p>
 <ul>
-<li><strong>Chargeback fees:</strong> When a client disputes a charge with their bank, the processor charges a fee (typically $15-$25) regardless of the outcome. Platforms with good client communication and clear receipts reduce chargeback frequency.</li>
-<li><strong>International card surcharges:</strong> Some processors charge an additional 1-1.5% for cards issued outside your country. In the GCC, where a significant percentage of clients may hold international cards, this adds up quickly.</li>
-<li><strong>Instant payout fees:</strong> Standard payouts take 1-3 business days. If you need same-day access to your funds, most processors charge 1-1.5% for instant deposits.</li>
-<li><strong>Hardware costs:</strong> Card readers wear out and need replacement. Factor in $50-$150 every 2-3 years for hardware refreshes.</li>
-<li><strong>Minimum monthly fees:</strong> Some processors require a minimum monthly processing volume or charge a fee if you fall below it. Check the fine print.</li>
-<li><strong>PCI compliance fees:</strong> Some legacy processors charge $79-$129 annually for "PCI compliance" - a cost that modern cloud-based processors absorb into their standard rates.</li>
+<li><strong>Chargeback fees:</strong> a client disputing a charge with their bank costs you a fee of typically $15-$25 whether you win or lose. Clear receipts and good communication mean fewer disputes.</li>
+<li><strong>International card surcharges:</strong> some processors add 1-1.5% for cards issued abroad. In the GCC, where plenty of clients carry international cards, that mounts up.</li>
+<li><strong>Instant payout fees:</strong> standard payouts take 1-3 business days, and same-day access usually costs 1-1.5%.</li>
+<li><strong>Hardware costs:</strong> readers wear out, so budget $50-$150 every 2-3 years to replace them.</li>
+<li><strong>Minimum monthly fees:</strong> some processors set a minimum monthly volume and charge you for falling under it. Read the small print.</li>
+<li><strong>PCI compliance fees:</strong> some legacy processors bill $79-$129 annually for "PCI compliance", which modern cloud-based processors include in their standard rates.</li>
 </ul>
 
-<h2>How to Choose the Right Processor for Your Salon</h2>
-<p>Use this decision framework to select the best payment processor for your specific situation:</p>
+<h2>How to choose the right processor for your salon</h2>
+<p>Work through this to find the one that suits your situation:</p>
 
-<h3>Choose an Integrated Salon Platform (Like The Daisy) If:</h3>
+<h3>Choose an integrated salon platform (like The Daisy) if:</h3>
 <ul>
 <li>You want payment processing, booking, client management, and communication in one system</li>
-<li>You need multilingual support (Arabic, English, and more) for clients and staff</li>
-<li>You want zero commission on bookings - your growth should not increase your platform costs disproportionately</li>
-<li>You value AI-powered features like automated booking, smart scheduling, and predictive analytics alongside payment processing</li>
-<li>You want next-business-day payouts without extra fees</li>
+<li>You need Arabic, English, and more for both clients and staff</li>
+<li>You want no commission on bookings, so growing does not cost you more and more</li>
+<li>You want automated booking, smart scheduling, and predictive analytics sitting alongside the payments</li>
+<li>You want next-business-day payouts and no fee for them</li>
 </ul>
 
-<h3>Choose a General-Purpose Processor (Square, SumUp) If:</h3>
+<h3>Choose a general-purpose processor (Square, SumUp) if:</h3>
 <ul>
-<li>You already have a salon management system you are happy with and just need a card reader</li>
-<li>You have very low transaction volume and want to avoid monthly subscription fees</li>
-<li>You primarily accept in-person payments and do not need advanced online payment or invoicing features</li>
+<li>You already have a salon management system you like and only need a card reader</li>
+<li>Your transaction volume is low enough that a monthly subscription is not worth it</li>
+<li>Almost everything is paid in person and you have no need for online payment or invoicing features</li>
 </ul>
 
-<h3>Avoid Commission-Based Platforms If:</h3>
+<h3>Avoid commission-based platforms if:</h3>
 <ul>
-<li>You have an established client base and do not rely on marketplace discovery for new clients</li>
-<li>Your new-client volume from the platform is significant - commissions will be your largest payment-related cost</li>
-<li>You plan to grow aggressively - commission models penalise success by increasing costs as revenue grows</li>
+<li>Your client base is established and marketplace discovery is not where new clients come from</li>
+<li>A large share of your new clients does come through the platform, since commission will then be your biggest payment cost</li>
+<li>You intend to grow quickly, because commission models charge you more the better you do</li>
 </ul>
 
-<h2>Negotiating Better Rates</h2>
-<p>If you process high volumes, you may be able to negotiate better processing rates:</p>
+<h2>Negotiating better rates</h2>
+<p>High volume gives you room to negotiate:</p>
 <ul>
-<li><strong>Volume thresholds:</strong> Many processors offer reduced rates at 50,000, 100,000, and 250,000 AED monthly volume.</li>
-<li><strong>Annual commitment:</strong> Some processors discount rates for annual vs monthly billing.</li>
-<li><strong>Multi-location deals:</strong> If you operate multiple branches, negotiate a single contract with volume-based pricing across all locations.</li>
-<li><strong>Competitive quotes:</strong> Get written quotes from 2-3 processors and use them as leverage in negotiations. Processors regularly match competitor rates to win or retain business.</li>
+<li><strong>Volume thresholds:</strong> many processors reduce rates at 50,000, 100,000, and 250,000 AED monthly volume.</li>
+<li><strong>Annual commitment:</strong> some discount for annual billing over monthly.</li>
+<li><strong>Multi-location deals:</strong> with several branches, negotiate one contract priced on your combined volume.</li>
+<li><strong>Competitive quotes:</strong> get written quotes from 2-3 processors and put them on the table. Processors regularly match a rival's rate to win or keep an account.</li>
 </ul>
 
-<h2>Making the Switch</h2>
-<p>Switching payment processors is less disruptive than most salon owners expect. Here is what the transition looks like:</p>
+<h2>Making the switch</h2>
+<p>Changing processors disrupts far less than people expect:</p>
 <ol>
-<li><strong>Sign up with the new processor</strong> and complete identity verification (typically 1-3 business days).</li>
-<li><strong>Receive and configure hardware</strong> (if applicable) - set up your card reader, configure tipping, and test transactions.</li>
-<li><strong>Run parallel</strong> for 1-2 weeks - process transactions through the new system while keeping the old one available as backup.</li>
-<li><strong>Redirect online payments</strong> to the new processor - update payment links, invoicing, and online booking checkout.</li>
-<li><strong>Deactivate the old processor</strong> once you are confident the new system is working smoothly. Cancel the old account only after verifying all pending payouts have been received.</li>
+<li><strong>Sign up with the new processor</strong> and get through identity verification, typically 1-3 business days.</li>
+<li><strong>Receive and configure hardware</strong> where there is any, meaning set up the reader, configure tipping, and run test transactions.</li>
+<li><strong>Run parallel</strong> for 1-2 weeks, putting transactions through the new system with the old one still there as a fallback.</li>
+<li><strong>Redirect online payments</strong> by updating your payment links, invoicing, and booking checkout.</li>
+<li><strong>Deactivate the old processor</strong> once the new one is clearly working, and close the account only after every pending payout has landed.</li>
 </ol>
-<p>The Daisy's onboarding team handles migration support, including transferring your client database and payment history so you start with a complete picture from day one.</p>
+<p>The Daisy's onboarding team supports the migration, moving your client database and payment history across so nothing starts from scratch.</p>
 
-<h2>Frequently Asked Questions</h2>
+<h2>Frequently asked questions</h2>
 
 <h3>Can I pass processing fees on to clients?</h3>
-<p>In some jurisdictions, merchants are allowed to add a surcharge for card payments. However, in the beauty industry, surcharging is generally discouraged because it creates a negative client experience and may push clients toward competitors who absorb the cost. Most successful salons treat processing fees as a cost of doing business and factor them into their service pricing.</p>
+<p>Some jurisdictions permit a card surcharge. In beauty it is generally discouraged, because it sours the experience and sends people to competitors who swallow the cost. Most salons that do well treat processing as a cost of trading and build it into their prices.</p>
 
 <h3>What is the cheapest way to accept payments as a salon?</h3>
-<p>If minimising per-transaction fees is your only goal, a standalone card reader like SumUp offers some of the lowest card-present rates. However, the cheapest rate per transaction is not always the lowest total cost. When you factor in the time spent on manual administration, separate software subscriptions, and missed features (like automated invoicing and AI booking), an integrated platform often delivers better value even with a slightly higher processing rate.</p>
+<p>Judged purely on per-transaction fees, a standalone reader such as SumUp has some of the lowest card-present rates going. The cheapest rate and the lowest total cost are not the same thing, though. Count the hours lost to manual admin, the separate software subscriptions, and what you go without, such as automated invoicing and AI booking, and an integrated platform often works out better even at a slightly higher rate.</p>
 
 <h3>How do I calculate my effective processing rate?</h3>
-<p>Divide your total monthly processing costs (all fees, commissions, and platform charges related to payments) by your total monthly card revenue. For example, if you paid 3,200 AED in total fees on 100,000 AED in card revenue, your effective rate is 3.2%. Compare this number across providers to make an apples-to-apples evaluation.</p>
+<p>Take every payment-related cost for the month, meaning fees, commissions, and platform charges, and divide by your card revenue. Pay 3,200 AED in total fees on 100,000 AED in card revenue and your effective rate is 3.2%. That single number is what makes providers comparable.</p>
 
 <h3>Do I need a merchant account or can I use a payment facilitator?</h3>
-<p>Modern salon payment solutions (The Daisy, Square, Stripe) are payment facilitators - you do not need a separate merchant account. You sign up, verify your identity, and start processing. Traditional merchant accounts involve longer setup times, credit checks, and monthly statements. For most beauty businesses, a payment facilitator is simpler and faster to start with.</p>
+<p>The Daisy, Square, and Stripe are all payment facilitators, so no separate merchant account is needed. Sign up, verify who you are, start taking payments. A traditional merchant account means a longer setup, credit checks, and monthly statements. For most beauty businesses the facilitator route is simpler and quicker.</p>
 `,
     metaTitle: 'Payment Fees: Daisy vs Alternatives | The Daisy',
     metaDescription:
