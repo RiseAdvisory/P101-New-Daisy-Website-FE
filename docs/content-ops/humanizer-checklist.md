@@ -562,15 +562,15 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
 
 ### `tier2Data.ts` (7)
 
-- [ ] glamera  
+- [x] glamera  
       `glamera`
-- [ ] dingg  
+- [x] dingg  
       `dingg`
-- [ ] glossgenius  
+- [x] glossgenius  
       `glossgenius`
-- [ ] zylu  
+- [x] zylu  
       `zylu`
-- [ ] repeatmd  
+- [x] repeatmd  
       `repeatmd`
 - [ ] boulevard  
       `boulevard`
