@@ -1185,8 +1185,8 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     metaDescription: 'Need more than basic scheduling? These beauty-specific alternatives to Acuity offer AI, POS, CRM, and marketplace features.',
     keywords: ['best acuity scheduling alternatives', 'acuity scheduling alternatives', 'acuity alternatives', 'scheduling software like acuity'],
     heroTitle: '7 Best Acuity Scheduling Alternatives in 2026',
-    heroSubtitle: 'Acuity is great for generic scheduling, but beauty businesses need POS, CRM, inventory, and AI, not just a calendar.',
-    intro: 'Acuity Scheduling by Squarespace has excellent reviews (4.8/5, 5600+ reviews) for general appointment booking, but it\'s not built for beauty businesses. No POS, no CRM, no inventory management, no AI, and no Arabic support mean growing salons quickly outgrow it. Here are the best beauty-specific alternatives.',
+    heroSubtitle: 'Acuity is great at generic scheduling. A beauty business needs POS, CRM, inventory and AI, not only a calendar.',
+    intro: 'Acuity Scheduling by Squarespace reviews extremely well for general appointment booking, at 4.8/5 across 5600+ reviews. It was not built for beauty. With no POS, no CRM, no inventory management, no AI and no Arabic support, a growing salon leaves it behind fast. Here are the best beauty-specific alternatives.',
     alternatives: ['fresha', 'booksy', 'vagaro', 'glossgenius', 'setmore', 'simplybook-me'],
     bestFor: {
       'fresha': 'Best for free beauty-specific booking with marketplace',
@@ -1196,7 +1196,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'setmore': 'Best for budget-friendly basic scheduling',
       'simplybook-me': 'Best for businesses wanting modular customisation',
     },
-    daisyEdge: 'These beauty-specific alternatives solve what Acuity lacks for salons — POS, CRM, inventory. But none add AI that answers your phone 24/7, a cashback marketplace that brings in new clients, or native Arabic support. Daisy is the complete upgrade path.',
+    daisyEdge: 'These beauty-specific alternatives cover what Acuity leaves out for salons: POS, CRM and inventory. None of them adds AI that answers your phone 24/7, a cashback marketplace that brings new clients in, or native Arabic support. Daisy is the complete upgrade path.',
   },
   {
     slug: 'best-phorest-alternatives',
@@ -1205,8 +1205,8 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     metaDescription: 'Love Phorest\'s CRM but need AI, marketplace, and Arabic support? These alternatives offer more growth tools for beauty businesses.',
     keywords: ['best phorest alternatives', 'phorest alternatives', 'phorest competitors', 'salon software like phorest'],
     heroTitle: '5 Best Phorest Alternatives in 2026',
-    heroSubtitle: 'Excellent CRM and loyalty at ~$99/mo, but limited to UK/Ireland with no AI, no marketplace, and no Arabic support.',
-    intro: 'Phorest has built a loyal following in the UK and Ireland with excellent CRM, loyalty programs, and a strong 4.8 rating. But no AI features, no customer marketplace, and no Arabic or GCC support limit its appeal for businesses wanting to grow beyond their current market. Here are the top alternatives.',
+    heroSubtitle: 'Excellent CRM and loyalty at ~$99/mo, confined to the UK and Ireland, with no AI, no marketplace and no Arabic support.',
+    intro: 'Phorest has a loyal following across the UK and Ireland, built on excellent CRM, strong loyalty programs and a 4.8 rating. No AI, no customer marketplace and no Arabic or GCC support all cap its appeal once a business wants to grow past its current market. Here are the top alternatives.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'boulevard'],
     bestFor: {
       'fresha': 'Best for global marketplace reach',
@@ -1214,7 +1214,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'booksy': 'Best for mobile-first professionals',
       'boulevard': 'Best for premium salon brands',
     },
-    daisyEdge: 'Phorest alternatives extend beyond UK/Ireland, but none combine CRM-level client management with AI-powered acquisition, cashback loyalty, and native Arabic support. Daisy matches Phorest\'s client focus while adding the growth tools it lacks.',
+    daisyEdge: 'These alternatives reach beyond the UK and Ireland. None of them combines CRM-level client management with AI-powered acquisition, cashback loyalty and native Arabic support. Daisy matches what Phorest does with clients and adds the growth tools it never had.',
   },
   {
     slug: 'best-timely-alternatives',
@@ -1223,8 +1223,8 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     metaDescription: 'Timely\'s per-staff pricing scales badly for growing teams. These alternatives offer flat-rate or better pricing with AI and marketplace.',
     keywords: ['best timely alternatives', 'timely alternatives', 'timely competitors', 'salon software like timely'],
     heroTitle: '5 Best Timely Alternatives in 2026',
-    heroSubtitle: 'Clean UI at $30/mo base, but $9-15/staff adds up fast, and there\'s no AI, no marketplace, and no Arabic support.',
-    intro: 'Timely has a clean interface and a solid 4.7 rating in New Zealand, Australia, and the UK. But per-staff pricing ($9-15/staff on top of $30/mo base) scales badly for growing teams, and the lack of AI, marketplace, and Arabic support limits growth potential. Here are better alternatives for scaling beauty businesses.',
+    heroSubtitle: 'A clean interface on a $30/mo base, then $9-15/staff that mounts up fast, with no AI, no marketplace and no Arabic support.',
+    intro: 'Timely has a clean interface and a solid 4.7 rating across New Zealand, Australia and the UK. Per-staff pricing, at $9-15/staff on top of the $30/mo base, scales badly once a team grows, and there is no AI, no marketplace and no Arabic support to grow into. Here are better alternatives for a scaling beauty business.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'glossgenius'],
     bestFor: {
       'fresha': 'Best for free marketplace-driven booking',
@@ -1232,7 +1232,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'booksy': 'Best for affordable mobile booking',
       'glossgenius': 'Best for design-focused solo professionals',
     },
-    daisyEdge: 'Timely alternatives eliminate per-staff pricing surprises, but none include a 24/7 AI receptionist, cashback customer acquisition, or native Arabic support. Daisy provides transparent flat pricing with growth tools built into every plan.',
+    daisyEdge: 'These alternatives take the per-staff surprises out of the bill. None includes a 24/7 AI receptionist, cashback acquisition or native Arabic support. Daisy charges a flat, transparent rate and builds the growth tools into every plan.',
   },
   {
     slug: 'best-setmore-alternatives',
@@ -1241,8 +1241,8 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     metaDescription: 'Outgrowing Setmore\'s basic scheduling? These beauty-specific platforms offer AI, POS, CRM, marketplace, and Arabic support.',
     keywords: ['best setmore alternatives', 'setmore alternatives', 'setmore competitors', 'scheduling software like setmore'],
     heroTitle: '7 Best Setmore Alternatives in 2026',
-    heroSubtitle: 'Free scheduling is nice, but beauty businesses need POS, CRM, inventory, AI, and a marketplace to actually grow.',
-    intro: 'Setmore offers free basic scheduling at $5-12/user/month for paid tiers, but it\'s a generic tool with no beauty-specific features, no POS, no CRM, no AI, and no Arabic support. When your business is ready to grow beyond a simple calendar, these purpose-built alternatives deliver far more value.',
+    heroSubtitle: 'Free scheduling is pleasant enough. Growing a beauty business takes POS, CRM, inventory, AI and a marketplace.',
+    intro: 'Setmore gives you free basic scheduling, with paid tiers at $5-12/user/month. It is a generic tool: nothing specific to beauty, no POS, no CRM, no AI, no Arabic support. Once the business needs more than a calendar, the purpose-built alternatives below are worth far more.',
     alternatives: ['fresha', 'booksy', 'vagaro', 'glossgenius', 'acuity-scheduling', 'simplybook-me'],
     bestFor: {
       'fresha': 'Best for free beauty-specific marketplace booking',
@@ -1252,7 +1252,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'acuity-scheduling': 'Best for advanced scheduling customisation',
       'simplybook-me': 'Best for businesses wanting modular add-on flexibility',
     },
-    daisyEdge: 'Setmore alternatives add beauty-specific features that generic scheduling lacks, but none include AI-powered acquisition, cashback rewards, or Arabic support. Daisy is the growth platform for businesses ready to graduate from free tools.',
+    daisyEdge: 'These alternatives add the beauty-specific features generic scheduling never had. None includes AI-powered acquisition, cashback rewards or Arabic support. Daisy is where a business goes when it has outgrown free tools.',
   },
   {
     slug: 'best-simplybookme-alternatives',
@@ -1261,8 +1261,8 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     metaDescription: 'Tired of managing 70+ add-ons? These beauty-specific SimplyBook.me alternatives offer all-in-one platforms with AI and marketplace.',
     keywords: ['best simplybookme alternatives', 'simplybook.me alternatives', 'simplybook alternatives', 'booking software like simplybookme'],
     heroTitle: '7 Best SimplyBook.me Alternatives in 2026',
-    heroSubtitle: 'Modular pricing with 70+ add-ons sounds flexible, until you\'re paying for 15 features that should be included.',
-    intro: 'SimplyBook.me offers generic booking with a modular add-on system (free to $59.90/mo), but the complexity of managing 70+ add-ons, translated (not native) Arabic, no AI, and no marketplace make it frustrating for beauty businesses that want things to just work. Here are the best all-in-one alternatives.',
+    heroSubtitle: 'Modular pricing across 70+ add-ons sounds flexible until you are paying for 15 features that should have come in the box.',
+    intro: 'SimplyBook.me offers generic booking on a modular add-on system, running from free to $59.90/mo. Managing 70+ add-ons, Arabic that is translated rather than native, no AI and no marketplace make it a frustrating fit for a beauty business that wants things to work without assembly. Here are the best all-in-one alternatives.',
     alternatives: ['fresha', 'booksy', 'vagaro', 'glossgenius', 'acuity-scheduling', 'setmore'],
     bestFor: {
       'fresha': 'Best for free all-in-one marketplace booking',
@@ -1272,7 +1272,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'acuity-scheduling': 'Best for advanced scheduling customisation',
       'setmore': 'Best for free basic scheduling',
     },
-    daisyEdge: 'SimplyBook.me alternatives replace add-on complexity with all-in-one platforms, but none include AI that handles calls and bookings 24/7 or a cashback marketplace for client acquisition. Daisy replaces the complexity with a single platform that grows your business.',
+    daisyEdge: 'These alternatives swap the add-on complexity for all-in-one platforms. None includes AI that takes calls and bookings 24/7, or a cashback marketplace that acquires clients. Daisy replaces the complexity with one platform that also grows the business.',
   },
 ];
 

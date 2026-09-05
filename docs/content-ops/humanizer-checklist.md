@@ -536,15 +536,15 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
       `best-square-appointments-alternatives`
 - [x] best-zenoti-alternatives  
       `best-zenoti-alternatives`
-- [ ] best-acuity-alternatives  
+- [x] best-acuity-alternatives  
       `best-acuity-alternatives`
-- [ ] Excellent CRM and loyalty at ~$99/mo, but limited to UK/Ireland with no AI, no marketplace, and no Arabic support.  
+- [x] Excellent CRM and loyalty at ~$99/mo, but limited to UK/Ireland with no AI, no marketplace, and no Arabic support.  
       `best-phorest-alternatives`
-- [ ] Clean UI at $30/mo base, but $9-15/staff adds up fast, and there's no AI, no marketplace, and no Arabic support.  
+- [x] Clean UI at $30/mo base, but $9-15/staff adds up fast, and there's no AI, no marketplace, and no Arabic support.  
       `best-timely-alternatives`
-- [ ] Free scheduling is nice, but beauty businesses need POS, CRM, inventory, AI, and a marketplace to actually grow.  
+- [x] Free scheduling is nice, but beauty businesses need POS, CRM, inventory, AI, and a marketplace to actually grow.  
       `best-setmore-alternatives`
-- [ ] best-simplybookme-alternatives  
+- [x] best-simplybookme-alternatives  
       `best-simplybookme-alternatives`
 
 ### `tier1Data.ts` (5)
