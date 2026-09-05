@@ -1135,158 +1135,158 @@ const performanceReviewsArticle: LocalBlogPost = {
     description:
       'A ready-to-use performance review template for salon staff. Covers review frequency, evaluation criteria, goal-setting frameworks, difficult conversation scripts, and how to use reviews to drive development rather than just assess past performance.',
     aboutPosts: `
-<h2>Why Performance Reviews Are Essential for Salon Teams</h2>
-<p>Performance reviews in salons are either dreaded, skipped, or done so informally that they have no impact. Yet structured reviews are the most effective tool you have for developing your team, identifying issues before they become crises, and demonstrating that you invest in your people&rsquo;s growth. When embedded into your <a href="/en/resources/blog/business/salon-staff-management">staff management system</a>, reviews transform from an annual chore into a continuous development engine.</p>
-<p>A 2025 Gallup workplace study found that employees who receive regular, structured feedback are 3.6x more likely to feel engaged at work compared to those who receive no feedback. In the beauty industry, where staff engagement directly impacts client experience and retention, this difference translates to measurable business outcomes: higher rebooking rates, better reviews, and lower turnover.</p>
-<p>This guide provides a complete performance review framework tailored to beauty businesses, including templates, evaluation criteria, and conversation guides.</p>
+<h2>Why performance reviews are essential for salon teams</h2>
+<p>In most salons these are dreaded, skipped, or done so casually that nothing changes afterwards. Done properly they are the best tool you have for developing people, catching problems while they are still small, and showing your team that their growth matters to you. Built into your <a href="/en/resources/blog/business/salon-staff-management">staff management system</a>, they stop being an annual chore and start being how people improve.</p>
+<p>A 2025 Gallup workplace study found that employees who receive regular, structured feedback are 3.6x more likely to feel engaged at work compared to those who receive no feedback. In beauty, where how engaged your team feels reaches the client within minutes, that shows up as higher rebooking rates, better reviews, and fewer people leaving.</p>
+<p>What follows is a complete review framework for a beauty business: the templates, the criteria, and how to hold the conversation.</p>
 
-<h2>Review Frequency: How Often Is Enough?</h2>
-<p>Annual reviews are insufficient for fast-paced salon environments. By the time you address an issue at the annual review, it has been affecting your business for months. Instead, use a layered review schedule:</p>
+<h2>Review frequency: how often is enough?</h2>
+<p>Once a year is not enough for a salon. Anything you raise in an annual review has been costing you since roughly February. Layer it instead:</p>
 
-<h3>Weekly Check-Ins (5&ndash;10 Minutes)</h3>
-<p>A brief, informal conversation - at the start of a shift or during a quiet moment - covering:</p>
+<h3>Weekly check-ins (5&ndash;10 minutes)</h3>
+<p>Two minutes at the start of a shift or in a quiet half hour:</p>
 <ul>
-<li>How was last week? Anything you are proud of or concerned about?</li>
-<li>Any client situations you want to discuss?</li>
-<li>Anything you need from me to do your best work this week?</li>
+<li>How was last week, and is there anything you are pleased or worried about?</li>
+<li>Anything happening with a client that you want to talk through?</li>
+<li>Is there anything you need from me this week?</li>
 </ul>
-<p>These are not formal reviews. They are relationship touchpoints that prevent small issues from becoming big problems.</p>
+<p>None of that is a review. It is the conversation that stops a small problem becoming a resignation.</p>
 
-<h3>Monthly Performance Conversations (20&ndash;30 Minutes)</h3>
-<p>A structured one-on-one reviewing key metrics and discussing development. Use the metric review template below. These should happen at the same time each month so both parties can prepare.</p>
+<h3>Monthly performance conversations (20&ndash;30 minutes)</h3>
+<p>A proper one-to-one going through the numbers and where they are heading, using the template below. Hold it at the same time each month so both of you arrive ready.</p>
 
-<h3>Quarterly Comprehensive Reviews (45&ndash;60 Minutes)</h3>
-<p>The formal review covering the full evaluation template, goal progress, career development, and compensation discussion if applicable. This is the review most salons should anchor their performance management system around.</p>
+<h3>Quarterly comprehensive reviews (45&ndash;60 minutes)</h3>
+<p>The formal one, covering the whole evaluation, progress against goals, where their career is going, and pay where that applies. This is the review most salons should build everything else around.</p>
 
-<h3>Annual Career Planning (60&ndash;90 Minutes)</h3>
-<p>A big-picture conversation about the team member&rsquo;s career trajectory, aspirations, and how the salon can support their long-term goals. This is where promotions, role changes, and major development plans are discussed.</p>
+<h3>Annual career planning (60&ndash;90 minutes)</h3>
+<p>The long view: where they are going, what they actually want, and what you can do about it. Promotions, changes of role, and serious development plans belong here.</p>
 
-<h2>Performance Review Template: The Evaluation Criteria</h2>
-<p>Evaluate each team member across these six dimensions. Rate each on a 1&ndash;5 scale with specific examples supporting the rating:</p>
+<h2>Performance review template: the evaluation criteria</h2>
+<p>Six dimensions, each rated 1&ndash;5, and every rating backed by an actual example:</p>
 
-<h3>1. Technical Skill and Service Quality (Weight: 30%)</h3>
-<p>Evaluates the quality of the professional&rsquo;s technical work - the core of what clients pay for.</p>
+<h3>1. Technical skill and service quality (weight: 30%)</h3>
+<p>The work itself, which is what clients are paying for.</p>
 <ul>
-<li>Consistency of service quality across different clients and services</li>
-<li>Accuracy in delivering what the client requested during consultation</li>
-<li>Proficiency with the salon&rsquo;s product lines and techniques</li>
-<li>Cleanliness and organisation of workstation</li>
-<li>Adherence to health and safety protocols</li>
+<li>Whether the quality holds across different clients and different services</li>
+<li>Whether the client got what they asked for in the consultation</li>
+<li>How well they know your product lines and techniques</li>
+<li>The state of their station</li>
+<li>Whether health and safety is followed or assumed</li>
 </ul>
-<p><strong>Evidence sources:</strong> Client reviews and ratings, repeat booking rates, before/after portfolio quality, manager observation, peer feedback.</p>
+<p><strong>Evidence sources:</strong> reviews and ratings, repeat booking rates, the quality of their before and after work, what you have seen yourself, and what colleagues say.</p>
 
-<h3>2. Client Relationship and Retention (Weight: 25%)</h3>
-<p>Evaluates how well the professional builds and maintains client relationships.</p>
+<h3>2. Client relationship and retention (weight: 25%)</h3>
+<p>Whether people come back to them, and why.</p>
 <ul>
-<li>Rebooking rate (percentage of clients who book again within their expected cycle)</li>
-<li>Client satisfaction scores and review ratings</li>
-<li>Consultation quality (listening, understanding needs, managing expectations)</li>
-<li>Complaint frequency and resolution quality</li>
-<li>Client portfolio growth (net gain or loss of regular clients over the period)</li>
+<li>Rebooking rate, meaning who books again inside their usual cycle</li>
+<li>Satisfaction scores and review ratings</li>
+<li>The consultation itself, covering listening, understanding, and managing what people expect</li>
+<li>How often complaints happen and how well they are resolved</li>
+<li>Whether their book of regulars grew or shrank over the period</li>
 </ul>
-<p><strong>Evidence sources:</strong> Platform analytics (rebooking rate, review scores), client feedback, complaint log.</p>
+<p><strong>Evidence sources:</strong> platform analytics for rebooking rate and review scores, client feedback, and the complaint log.</p>
 
-<h3>3. Revenue Performance (Weight: 20%)</h3>
-<p>Evaluates the financial contribution of the professional.</p>
+<h3>3. Revenue performance (weight: 20%)</h3>
+<p>What they contribute financially.</p>
 <ul>
-<li>Total service revenue generated vs target</li>
-<li>Average ticket value (revenue per client visit)</li>
-<li>Retail product sales vs target</li>
-<li>Upselling and add-on service rate</li>
-<li>Revenue growth trend (month-over-month, quarter-over-quarter)</li>
+<li>Total service revenue against target</li>
+<li>Average ticket, meaning revenue per visit</li>
+<li>Retail sales against target</li>
+<li>How often they add something to a booking</li>
+<li>The direction of travel, month on month and quarter on quarter</li>
 </ul>
-<p><strong>Evidence sources:</strong> The Daisy&rsquo;s <a href="/en/features/business/analytics-reporting">analytics dashboard</a>, financial reports, POS data.</p>
+<p><strong>Evidence sources:</strong> The Daisy&rsquo;s <a href="/en/features/business/analytics-reporting">analytics dashboard</a>, your financial reports, and the POS.</p>
 
-<h3>4. Team Contribution (Weight: 10%)</h3>
-<p>Evaluates how the professional contributes to team dynamics and salon culture.</p>
+<h3>4. Team contribution (weight: 10%)</h3>
+<p>What they add to the room.</p>
 <ul>
-<li>Willingness to help colleagues (covering shifts, assisting with complex services)</li>
-<li>Mentoring contribution (for senior staff)</li>
-<li>Positive attitude and team morale impact</li>
-<li>Communication quality with team members</li>
-<li>Participation in team meetings and training</li>
+<li>Whether they help, covering a shift or lending a hand on something complicated</li>
+<li>Mentoring, for the senior members</li>
+<li>What their mood does to everyone else's</li>
+<li>How they talk to colleagues</li>
+<li>Whether they turn up to meetings and training</li>
 </ul>
-<p><strong>Evidence sources:</strong> Peer feedback, manager observation, attendance records.</p>
+<p><strong>Evidence sources:</strong> what colleagues say, what you have seen, and the attendance records.</p>
 
-<h3>5. Professional Development (Weight: 10%)</h3>
-<p>Evaluates the professional&rsquo;s investment in their own growth.</p>
+<h3>5. Professional development (weight: 10%)</h3>
+<p>What they are putting into their own growth.</p>
 <ul>
-<li>Completion of training and certifications</li>
-<li>Learning new techniques or services</li>
-<li>Keeping current with industry trends</li>
-<li>Receptiveness to feedback and coaching</li>
-<li>Progress on development goals set in previous reviews</li>
+<li>Training and certifications completed</li>
+<li>New techniques or services learned</li>
+<li>Whether they know what is happening in the industry</li>
+<li>How they take feedback and coaching</li>
+<li>Progress against the goals set last time</li>
 </ul>
-<p><strong>Evidence sources:</strong> Training records, certification completions, development goal tracking.</p>
+<p><strong>Evidence sources:</strong> training records, certifications, and your goal tracking.</p>
 
-<h3>6. Reliability and Professionalism (Weight: 5%)</h3>
-<p>Evaluates the basics that every professional should meet consistently.</p>
+<h3>6. Reliability and professionalism (weight: 5%)</h3>
+<p>The basics, which everybody is expected to meet every time.</p>
 <ul>
-<li>Punctuality (arriving on time for shifts and appointments)</li>
-<li>Attendance record (unexcused absences, pattern of sick days)</li>
-<li>Dress code and personal presentation</li>
-<li>Adherence to salon policies and procedures</li>
-<li>Phone and social media discipline during working hours</li>
+<li>Punctuality, for shifts and for appointments</li>
+<li>Attendance, including unexplained absences and any pattern in the sick days</li>
+<li>Dress code and how they present themselves</li>
+<li>Whether they follow your policies</li>
+<li>What the phone is doing during working hours</li>
 </ul>
-<p><strong>Evidence sources:</strong> Clock-in records, attendance log, manager observation.</p>
+<p><strong>Evidence sources:</strong> clock-in records, the attendance log, and what you have seen.</p>
 
-<h2>Conducting the Review Conversation</h2>
-<p>The conversation structure matters as much as the content. Use this framework:</p>
+<h2>Conducting the review conversation</h2>
+<p>How you run it matters as much as what is in it:</p>
 
-<h3>Opening (5 Minutes)</h3>
-<p>Start positive. Acknowledge something specific the team member has done well since the last review. This sets a constructive tone and signals that you notice their contributions.</p>
+<h3>Opening (5 minutes)</h3>
+<p>Begin with something specific they have done well since you last spoke. It sets the tone and proves you have been paying attention.</p>
 
-<h3>Self-Assessment (10 Minutes)</h3>
-<p>Ask the team member to share their own assessment first: "How do you feel about your performance this quarter? What are you most proud of, and where do you think you have room to improve?" This reveals their self-awareness and often surfaces the same points you planned to raise, making feedback feel collaborative rather than top-down.</p>
+<h3>Self-assessment (10 minutes)</h3>
+<p>Let them go first: "How do you feel about your performance this quarter? What are you most proud of, and where do you think you have room to improve?" You learn how self-aware they are, and they usually raise the things you were going to raise, which changes the whole feel of the conversation.</p>
 
-<h3>Manager Assessment (15 Minutes)</h3>
-<p>Walk through each evaluation dimension with your ratings and specific examples. Start with strengths, then address development areas. Use evidence and data, not opinions: "Your rebooking rate was 72%, which is above our 65% target - that shows your clients value what you do" is more effective than "I think you are good with clients."</p>
+<h3>Manager assessment (15 minutes)</h3>
+<p>Go through each dimension with your rating and an example. Strengths first, then what needs work. Use evidence rather than impressions: "Your rebooking rate was 72%, which is above our 65% target, and that tells us your clients value what you do" does far more than "I think you are good with clients."</p>
 
-<h3>Goal Setting (10 Minutes)</h3>
-<p>Collaborate on 2&ndash;3 specific, measurable goals for the next quarter. Goals should be achievable but stretching. Examples:</p>
+<h3>Goal setting (10 minutes)</h3>
+<p>Agree 2&ndash;3 measurable goals for next quarter together, each reachable but not comfortable. For example:</p>
 <ul>
 <li>"Increase average ticket value from 280 AED to 320 AED by adding one product recommendation per client visit."</li>
 <li>"Complete the advanced balayage certification by end of next quarter."</li>
 <li>"Bring rebooking rate from 65% to 72% by implementing a rebooking prompt at the end of each appointment."</li>
 </ul>
 
-<h3>Closing (5 Minutes)</h3>
-<p>Summarise the key points, confirm the goals, and schedule the next check-in. End by asking: "Is there anything you need from me or the salon to support you in reaching these goals?"</p>
+<h3>Closing (5 minutes)</h3>
+<p>Recap what was said, confirm the goals, and put the next check-in in the diary. Finish with the question: "Is there anything you need from me or the salon to support you in reaching these goals?"</p>
 
-<h2>Handling Difficult Review Conversations</h2>
-<p>Not every review is positive. Here is how to handle common challenging situations:</p>
+<h2>Handling difficult review conversations</h2>
+<p>Some of these are hard. Three that come up repeatedly:</p>
 
 <h3>Underperformance</h3>
-<p>Be direct but empathetic: "Your revenue for the last quarter was 12,000 AED against a target of 18,000 AED. I want to understand what is contributing to this gap and work with you on a plan to close it." Focus on the gap between expectation and reality, not on the person&rsquo;s character.</p>
+<p>Direct, and kind with it: "Your revenue for the last quarter was 12,000 AED against a target of 18,000 AED. I want to understand what is contributing to this gap and work with you on a plan to close it." Talk about the gap, never about who they are.</p>
 
-<h3>Attitude or Behavioural Issues</h3>
-<p>Use specific examples: "On [date], a client mentioned that their interaction with you felt rushed and impersonal. This is the third similar piece of feedback this quarter. Let us talk about what is happening and how we can address it." Avoid vague generalisations like "your attitude needs to improve."</p>
+<h3>Attitude or behavioural issues</h3>
+<p>Bring the examples: "On [date], a client mentioned that their interaction with you felt rushed and impersonal. This is the third similar piece of feedback this quarter. Let us talk about what is happening and how we can address it." Never reach for "your attitude needs to improve", which tells nobody anything.</p>
 
-<h3>When a Staff Member Disagrees With Your Assessment</h3>
-<p>Listen fully before responding. Ask: "Help me understand your perspective." If they present valid evidence you did not consider, adjust your assessment. If they are defensive without evidence, acknowledge their feelings but maintain your position: "I understand you see it differently. The data shows [specific evidence], and I need to be honest about what I am observing."</p>
+<h3>When a staff member disagrees with your assessment</h3>
+<p>Hear all of it before you answer. Ask them to "Help me understand your perspective." Where they produce evidence you had not considered, change your assessment. Where it is defensiveness without evidence, acknowledge how they feel and hold your ground: "I understand you see it differently. The data shows [specific evidence], and I need to be honest about what I am observing."</p>
 
-<h2>Using Reviews to Drive Development, Not Just Assessment</h2>
-<p>The most common mistake is treating reviews as a report card. The real purpose is development - helping each team member become better, earn more, and advance their career.</p>
+<h2>Using reviews to drive development, not just assessment</h2>
+<p>Most owners treat these as a school report. They exist to make people better, richer, and further along than they were.</p>
 <ul>
-<li><strong>Link reviews to training:</strong> If a review identifies a technical gap, schedule specific training to address it.</li>
-<li><strong>Link reviews to compensation:</strong> Annual reviews should directly inform commission rate adjustments, bonuses, and promotions. Staff who see a clear connection between review performance and financial reward take reviews seriously.</li>
-<li><strong>Follow up between reviews:</strong> Do not set goals in the review and forget about them. Reference goals in weekly check-ins: "How is the balayage certification progressing?" This shows you care about their development beyond the review meeting.</li>
+<li><strong>Link reviews to training:</strong> a technical gap identified in the review gets specific training booked against it.</li>
+<li><strong>Link reviews to compensation:</strong> the annual review should decide commission adjustments, bonuses, and promotions. People take reviews seriously exactly when they can see the money attached.</li>
+<li><strong>Follow up between reviews:</strong> goals set in a review and never mentioned again teach everyone the review meant nothing. Ask in the weekly check-in: "How is the balayage certification progressing?"</li>
 </ul>
-<p>The Daisy&rsquo;s <a href="/en/features/business/team-management">team management platform</a> tracks individual performance metrics in real time, so review conversations are grounded in data rather than memory. See <a href="/en/pricing/business">pricing plans</a> for team analytics features.</p>
+<p>The Daisy&rsquo;s <a href="/en/features/business/team-management">team management platform</a> tracks all of this live, so the conversation rests on data rather than on what either of you happens to remember. The <a href="/en/pricing/business">pricing plans</a> cover the team analytics.</p>
 
-<h2>Frequently Asked Questions</h2>
+<h2>Frequently asked questions</h2>
 
 <h3>What if I do not have enough data to do a proper review?</h3>
-<p>Start collecting data now. Begin tracking rebooking rates, revenue per stylist, client ratings, and attendance from today. After one quarter of data collection, you will have enough for a meaningful review. In the meantime, base reviews on observable behaviours and client feedback even if you lack quantitative metrics.</p>
+<p>Start collecting it today. Rebooking rates, revenue per stylist, client ratings, attendance. One quarter gives you enough for a review worth having. Until then, work from what you can observe and what clients have told you.</p>
 
 <h3>Should reviews include a rating or score?</h3>
-<p>Scores provide a clear, objective framework that reduces ambiguity. Use a 1&ndash;5 scale for each dimension (1: below expectations, 2: partially meeting, 3: meeting expectations, 4: exceeding, 5: exceptional) with specific examples justifying each score. The overall weighted score gives both you and the staff member a clear picture of where they stand.</p>
+<p>Yes, because a number removes the ambiguity. Use 1&ndash;5 on each dimension, where 1 is below expectations, 2 is partially meeting, 3 is meeting expectations, 4 is exceeding, and 5 is exceptional, with an example behind each score. The weighted total tells both of you exactly where they stand.</p>
 
 <h3>How do I handle a review for a top performer?</h3>
-<p>Top performers need reviews too - but the focus shifts from development areas to growth opportunities. Ask: "Where do you want to go next?" and discuss senior roles, specialisation opportunities, mentoring responsibilities, or compensation increases. Neglecting top performers because they are "doing fine" is a common path to losing them.</p>
+<p>They still need one, with the focus moved from what to fix to where to go. Ask "Where do you want to go next?" and talk about senior roles, specialising, mentoring, or more money. Skipping these people because they are "doing fine" is how salons lose them.</p>
 
 <h3>What documentation should I keep from reviews?</h3>
-<p>Keep a written record of every formal review (monthly and quarterly) including: the evaluation scores, specific examples discussed, goals set, and any commitments made by either party. Both the manager and the staff member should sign the record. This documentation protects you legally and provides continuity if management changes.</p>
+<p>Write up every formal review, monthly and quarterly, with the scores, the examples you discussed, the goals set, and anything either of you promised. Both of you sign it. That record protects you legally and survives a change of manager.</p>
 `,
     metaTitle: 'Salon Performance Review Template | The Daisy',
     metaDescription:

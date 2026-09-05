@@ -320,18 +320,18 @@ smallest and the most constrained, so they are cheap to leave until last.
       `salon-employee-retention-strategies`
 - [x] Managing a Freelance Beauty Schedule Effectively  
       `managing-freelance-beauty-schedule`
-- [ ] Salon Staff Performance Reviews: A Template  
+- [x] Salon Staff Performance Reviews: A Template  
       `salon-staff-performance-reviews`
 
 ### `team-management.ts` (4)
 
-- [ ] Staff Scheduling Made Simple: A Salon Owner's Guide  
+- [x] Staff Scheduling Made Simple: A Salon Owner's Guide  
       `staff-scheduling-salon-owners-guide`
-- [ ] Commission Structures That Keep Top Talent  
+- [x] Commission Structures That Keep Top Talent  
       `commission-structures-keep-top-talent`
-- [ ] Managing Permissions: Who Sees What in Your Salon  
+- [x] Managing Permissions: Who Sees What in Your Salon  
       `managing-permissions-salon-access-control`
-- [ ] Time Management Tips for Independent Beauty Professionals  
+- [x] Time Management Tips for Independent Beauty Professionals  
       `time-management-independent-beauty-professionals`
 
 ### `thought-leadership.ts` (4)
