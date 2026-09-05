@@ -516,15 +516,15 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
       `zenoti`
 - [x] Free scheduling is nice, but your beauty business deserves AI, POS, CRM, and a marketplace that brings clients to you.  
       `setmore`
-- [ ] 70+ add-on modules sound flexible, until you realize you're paying extra for everything your beauty business actually needs.  
+- [x] 70+ add-on modules sound flexible, until you realize you're paying extra for everything your beauty business actually needs.  
       `simplybook-me`
-- [ ] Fresha's subscription fees plus hidden transaction costs are getting expensive. Here are the best alternatives for growing beauty businesses.  
+- [x] Fresha's subscription fees plus hidden transaction costs are getting expensive. Here are the best alternatives for growing beauty businesses.  
       `best-fresha-alternatives`
-- [ ] Per-provider pricing and basic AI not cutting it? Here are better options for growing teams.  
+- [x] Per-provider pricing and basic AI not cutting it? Here are better options for growing teams.  
       `best-booksy-alternatives`
-- [ ] Vagaro manages well but doesn't grow your business. These alternatives add AI-powered acquisition.  
+- [x] Vagaro manages well but doesn't grow your business. These alternatives add AI-powered acquisition.  
       `best-vagaro-alternatives`
-- [ ] Beautiful for solos, but team management at $148/mo and no marketplace limit growth.  
+- [x] Beautiful for solos, but team management at $148/mo and no marketplace limit growth.  
       `best-glossgenius-alternatives`
 - [ ] Legacy pricing and dated UX pushing you to look elsewhere? These modern platforms deliver more.  
       `best-mindbody-alternatives`
