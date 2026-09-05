@@ -780,15 +780,15 @@ it. Several categories may need no change at all.
 - [x] No-Shows & Cancellations — descriptions only
 - [x] Customer Acquisition & Retention — descriptions only
 - [x] AI & Automation in Beauty — descriptions only
-- [ ] GCC Beauty Market — descriptions only
-- [ ] Payment & Revenue — descriptions only
-- [ ] حجم السوق والنمو — descriptions only
-- [ ] الحجز والجدولة — descriptions only
-- [ ] حالات عدم الحضور والإلغاء — descriptions only
-- [ ] استقطاب العملاء والاحتفاظ بهم — descriptions only
-- [ ] الذكاء الاصطناعي والأتمتة في قطاع التجميل — descriptions only
-- [ ] سوق التجميل في دول مجلس التعاون الخليجي — descriptions only
-- [ ] المدفوعات والإيرادات — descriptions only
+- [x] GCC Beauty Market — descriptions only
+- [x] Payment & Revenue — descriptions only
+- [-] حجم السوق والنمو — descriptions only  (Arabic: skipped, needs a native-speaker pass)
+- [-] الحجز والجدولة — descriptions only  (Arabic: skipped, needs a native-speaker pass)
+- [-] حالات عدم الحضور والإلغاء — descriptions only  (Arabic: skipped, needs a native-speaker pass)
+- [-] استقطاب العملاء والاحتفاظ بهم — descriptions only  (Arabic: skipped, needs a native-speaker pass)
+- [-] الذكاء الاصطناعي والأتمتة في قطاع التجميل — descriptions only  (Arabic: skipped, needs a native-speaker pass)
+- [-] سوق التجميل في دول مجلس التعاون الخليجي — descriptions only  (Arabic: skipped, needs a native-speaker pass)
+- [-] المدفوعات والإيرادات — descriptions only  (Arabic: skipped, needs a native-speaker pass)
 
 ---
 
