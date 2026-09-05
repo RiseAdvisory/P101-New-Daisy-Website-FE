@@ -849,106 +849,106 @@ const googleMyBusinessSalonArticle: LocalBlogPost = {
     description:
       'Fully optimise your salon Google Business Profile to dominate local search results. Covers claiming, verification, category selection, photo strategy, review management, posts, and advanced tactics for maximum local visibility.',
     aboutPosts: `
-<h2>Your Google Business Profile Is Your Most Valuable Free Marketing Asset</h2>
-<p>When a potential client searches "salon near me" or "best hair salon in [city]," Google Business Profile listings dominate the results page. These listings appear above organic search results, above paid ads on mobile, and include photos, reviews, hours, and a direct booking link. For salons, an optimised Google Business Profile consistently generates more new client enquiries than any other single marketing channel.</p>
-<p>Google reports that businesses with complete profiles receive 7x more clicks than those with incomplete information. For beauty businesses, where local search intent is extremely high (clients are actively looking for a salon to book), this visibility gap translates directly into revenue. This guide is part of our complete <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing strategy</a> series.</p>
+<h2>Your Google Business Profile is your most valuable free marketing asset</h2>
+<p>Someone searching "salon near me" or "best hair salon in [city]" sees Business Profile listings before anything else. They sit above the organic results, above the paid ads on a phone, and carry photos, reviews, hours, and a booking link. Optimised properly, this brings salons more new client enquiries than any other single channel.</p>
+<p>Google reports that businesses with complete profiles receive 7x more clicks than those with incomplete information. In beauty, where anybody searching is usually looking to book something, that gap in visibility is a gap in revenue. This sits inside our wider <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing strategy</a> series.</p>
 
-<h2>Step 1: Claim and Verify Your Profile</h2>
-<p>If you have not already claimed your Google Business Profile, do this immediately. Search for your business on Google Maps. If a listing exists, click "Claim this business" and follow the verification process (usually a postcard, phone call, or email verification). If no listing exists, create one at business.google.com.</p>
-<p>Verification is essential. Unverified profiles cannot respond to reviews, post updates, or access insights. The verification process typically takes 5-14 days for postcard verification.</p>
+<h2>Step 1: claim and verify your profile</h2>
+<p>Do this today if it is not done. Search for yourself on Google Maps, and where a listing already exists, click "Claim this business" and work through the verification, which is usually a postcard, a phone call, or an email. Where nothing exists, create it at business.google.com.</p>
+<p>You cannot skip verification. Unverified, you cannot answer reviews, post updates, or see any of the data. Postcard verification typically takes 5-14 days.</p>
 
-<h2>Step 2: Complete Every Profile Field</h2>
-<p>Google rewards complete profiles with higher visibility. Fill in every available field:</p>
+<h2>Step 2: complete every profile field</h2>
+<p>Google shows complete profiles more often. Fill in all of it:</p>
 
-<h3>Business Name</h3>
-<p>Use your exact registered business name. Do not stuff keywords into your business name (e.g., "Sarah's Salon - Best Hair Colour in Dubai" violates Google's guidelines and risks suspension). Your real business name only.</p>
+<h3>Business name</h3>
+<p>Exactly what you are registered as, and nothing else. Padding it with keywords, along the lines of "Sarah's Salon, Best Hair Colour in Dubai", breaks Google's guidelines and can get you suspended.</p>
 
-<h3>Primary and Secondary Categories</h3>
-<p>Category selection directly impacts which searches your profile appears for. Set your primary category to the most specific option that describes your business (e.g., "Hair Salon" rather than "Beauty Salon" if hair is your primary service). Add secondary categories for every service type you offer: "Nail Salon," "Day Spa," "Waxing Service," "Makeup Artist," etc. You can add up to 10 categories.</p>
+<h3>Primary and secondary categories</h3>
+<p>Categories decide which searches you turn up in. Make the primary one as specific as it can honestly be, so "Hair Salon" rather than "Beauty Salon" if hair is what you mostly do. Then add a secondary category for everything else you offer: "Nail Salon," "Day Spa," "Waxing Service," "Makeup Artist," and so on, up to 10 in total.</p>
 
-<h3>Business Description</h3>
-<p>Write a 750-character description that includes your key services, location, specialisations, and unique selling points. Include relevant keywords naturally: "Full-service hair salon in [neighbourhood] specialising in balayage, colour correction, and bridal styling. Walk-ins welcome. Online booking available." Do not stuff keywords or use promotional language like "best salon" - Google may reject descriptions with superlatives.</p>
+<h3>Business description</h3>
+<p>You have 750 characters for your services, your location, what you specialise in, and why you rather than anyone else. Work the keywords in so they read as English: "Full-service hair salon in [neighbourhood] specialising in balayage, colour correction, and bridal styling. Walk-ins welcome. Online booking available." Avoid keyword stuffing and superlatives such as "best salon", which Google may reject outright.</p>
 
-<h3>Services and Menu</h3>
-<p>Add every service you offer with descriptions and price ranges. This information appears when potential clients view your profile and helps Google match your listing to specific service searches (e.g., "keratin treatment near me"). Update prices quarterly to maintain accuracy.</p>
+<h3>Services and menu</h3>
+<p>List everything with a description and a price range. Clients see it on your profile, and it lets Google match you to specific searches such as "keratin treatment near me". Refresh the prices quarterly.</p>
 
-<h3>Hours of Operation</h3>
-<p>Set accurate regular hours and update holiday hours in advance. Incorrect hours frustrate potential clients and damage trust. Enable "More hours" for specific services if applicable (e.g., "Appointment hours" vs. "Walk-in hours").</p>
+<h3>Hours of operation</h3>
+<p>Keep the regular hours right and set the holidays before they arrive. Wrong hours send people to a locked door, and they remember. Use "More hours" where it applies, separating "Appointment hours" from "Walk-in hours".</p>
 
-<h3>Contact Information and Booking Link</h3>
-<p>Include your phone number, website, and a direct booking link. The booking link is critical: clients should be able to go from your Google profile to a confirmed appointment in under 60 seconds. <a href="/en/features/business/booking-management">The Daisy's booking platform</a> provides a direct booking URL optimised for Google Business Profile integration.</p>
+<h3>Contact information and booking link</h3>
+<p>Phone number, website, and a booking link. The last one matters most, since someone should get from your profile to a confirmed appointment in under 60 seconds. <a href="/en/features/business/booking-management">The Daisy's booking platform</a> gives you a direct URL built for this.</p>
 
-<h2>Step 3: Build a Compelling Photo Strategy</h2>
-<p>Businesses with photos receive 42% more direction requests and 35% more website clicks, according to Google. For salons, photos are especially important because clients want to see the quality of your work and the atmosphere of your space before booking.</p>
+<h2>Step 3: build a compelling photo strategy</h2>
+<p>Businesses with photos receive 42% more direction requests and 35% more website clicks, according to Google. In beauty they matter more still, because nobody books a salon without seeing the work and the room first.</p>
 
-<h3>Essential Photos to Include</h3>
+<h3>Essential photos to include</h3>
 <ul>
-<li><strong>Exterior shots:</strong> 2-3 photos of your salon's exterior from different angles and at different times of day. These help clients find your location.</li>
-<li><strong>Interior shots:</strong> 5-10 photos showcasing your salon's atmosphere, styling stations, waiting area, and any special features. Cleanliness and ambience sell.</li>
-<li><strong>Team photos:</strong> Individual and group photos of your team. Clients want to see the people who will serve them.</li>
-<li><strong>Service photos:</strong> 10-20 photos of your best work. Before-and-after transformations, colour work, styling results, nail art, and treatment outcomes.</li>
-<li><strong>Product displays:</strong> If you retail products, show your displays. This can attract product-specific searches.</li>
+<li><strong>Exterior shots:</strong> 2-3 from different angles and at different times of day, so people can find the door.</li>
+<li><strong>Interior shots:</strong> 5-10 covering the atmosphere, the stations, where people wait, and anything unusual about the place. Clean and inviting is what sells.</li>
+<li><strong>Team photos:</strong> individually and together, because clients want to see who they will be sitting with.</li>
+<li><strong>Service photos:</strong> 10-20 of your best work, covering before-and-after transformations, colour, styling, nail art, and treatment results.</li>
+<li><strong>Product displays:</strong> photograph the shelves if you sell retail, since it picks up product searches.</li>
 </ul>
 
-<h3>Photo Quality Standards</h3>
-<p>Use well-lit, high-resolution photos. Natural lighting is ideal. Avoid heavy filters that misrepresent your work or space. Upload photos in landscape orientation for best display. Add new photos weekly to signal to Google that your profile is actively maintained - active profiles receive more visibility.</p>
+<h3>Photo quality standards</h3>
+<p>Well lit, high resolution, and daylight wherever possible. Heavy filters that flatter the room or the work will disappoint someone when they arrive. Upload landscape for the best display. Add something new weekly, since Google favours profiles that somebody is clearly maintaining.</p>
 
-<h2>Step 4: Master Review Management</h2>
-<p>Reviews are the single most influential factor in a potential client's decision to book. Salons with 50+ reviews and a 4.5+ star rating attract 3-4x more clicks than those with fewer reviews or lower ratings.</p>
+<h2>Step 4: master review management</h2>
+<p>Nothing else influences the decision to book as much. Salons with 50+ reviews and a 4.5+ star rating attract 3-4x more clicks than those with fewer reviews or lower ratings.</p>
 
-<h3>Generating Reviews Systematically</h3>
-<p>Do not leave reviews to chance. Implement a systematic review collection process:</p>
+<h3>Generating reviews systematically</h3>
+<p>Leave this to luck and it does not happen. Build a process:</p>
 <ol>
-<li>Send an automated review request 24 hours after every appointment with a direct link to your Google review page.</li>
-<li>Include a review request in post-appointment SMS: "Thank you for visiting! We'd love your feedback - [direct review link]."</li>
-<li>Train your team to ask for reviews at checkout: "If you enjoyed your experience today, a Google review would mean the world to us."</li>
-<li>Display a QR code at your mirror stations linking to your review page.</li>
+<li>An automated request 24 hours after every appointment, linking straight to your Google review page.</li>
+<li>A line in the post-appointment SMS: "Thank you for visiting! We'd love your feedback: [direct review link]."</li>
+<li>Your team asking at the till: "If you enjoyed your experience today, a Google review would mean the world to us."</li>
+<li>A QR code at the mirrors pointing at the same page.</li>
 </ol>
 
-<h3>Responding to Every Review</h3>
-<p>Respond to every review within 24-48 hours. For positive reviews, thank the client by name, reference their specific service, and invite them back. For negative reviews, respond professionally: acknowledge their experience, apologise, and offer to resolve the issue privately. Never respond defensively. Potential clients read your responses as carefully as the reviews themselves.</p>
+<h3>Responding to every review</h3>
+<p>Answer all of them within 24-48 hours. On the good ones, use the client's name, mention what they actually had done, and ask them back. On the bad ones, acknowledge what happened, apologise, and move it to a private conversation. Never get defensive, because potential clients read your replies as closely as they read the review.</p>
 
-<h2>Step 5: Use Google Posts for Ongoing Engagement</h2>
-<p>Google Posts are mini-updates that appear directly on your Business Profile. They are underutilised by most businesses, which means they offer a competitive advantage for salons that use them consistently.</p>
-<p>Post types to use:</p>
+<h2>Step 5: use Google Posts for ongoing engagement</h2>
+<p>Posts are short updates that appear on your profile. Almost nobody uses them, which is precisely why they are worth using.</p>
+<p>Three types to work with:</p>
 <ul>
-<li><strong>What's New posts:</strong> New services, team additions, seasonal offerings.</li>
-<li><strong>Offer posts:</strong> Time-limited promotions with a clear CTA.</li>
-<li><strong>Event posts:</strong> Salon events, workshops, or special occasions.</li>
+<li><strong>What's New posts:</strong> new services, new people, seasonal offerings.</li>
+<li><strong>Offer posts:</strong> promotions with a deadline and something to click.</li>
+<li><strong>Event posts:</strong> anything you are hosting, whether a workshop or an occasion.</li>
 </ul>
-<p>Post 1-2 times per week. Each post is visible for 7 days, so consistent posting maintains a fresh, active profile. Include high-quality images and a clear call-to-action in every post.</p>
+<p>Post 1-2 times per week. Each one stays visible for 7 days, so a steady rhythm keeps the profile looking alive. Put a good image and a clear call-to-action in every one.</p>
 
-<h2>Step 6: Track Performance With Google Insights</h2>
-<p>Google Business Profile Insights shows you how clients find and interact with your profile. Key metrics to monitor monthly:</p>
+<h2>Step 6: track performance with Google Insights</h2>
+<p>Insights tells you how people found you and what they did next. Monthly, watch:</p>
 <ul>
-<li><strong>Search queries:</strong> What terms are people using to find your profile? This reveals keyword opportunities.</li>
-<li><strong>Profile views:</strong> How many people see your listing? Track month-over-month growth.</li>
-<li><strong>Actions taken:</strong> Calls, direction requests, website visits, and booking clicks. These are your conversion metrics.</li>
-<li><strong>Photo views:</strong> How often are your photos viewed compared to competitors? Google shows you benchmarks.</li>
+<li><strong>Search queries:</strong> the words people actually typed, which is where your next keywords come from.</li>
+<li><strong>Profile views:</strong> how many saw the listing, tracked month over month.</li>
+<li><strong>Actions taken:</strong> calls, directions, website visits, and booking clicks, which is where the conversions live.</li>
+<li><strong>Photo views:</strong> how yours compare with nearby businesses, which Google benchmarks for you.</li>
 </ul>
-<p>Use these insights alongside <a href="/en/features/business/analytics-reports">The Daisy's analytics</a> to understand the full client journey from Google search to booked appointment.</p>
+<p>Read those next to <a href="/en/features/business/analytics-reports">The Daisy's analytics</a> and you can follow someone from the search all the way to the appointment.</p>
 
-<h2>Advanced Google Business Profile Tactics</h2>
+<h2>Advanced Google Business Profile tactics</h2>
 <ul>
-<li><strong>Q&A section:</strong> Proactively add questions and answers to your profile's Q&A section. Address common queries: parking availability, walk-in policy, price ranges, and specialisations. This adds keyword-rich content to your profile and reduces enquiry friction.</li>
-<li><strong>Products section:</strong> If you sell retail products, add them to the Products section with photos, descriptions, and prices. This can capture product-specific searches.</li>
-<li><strong>Booking integration:</strong> Enable the "Book" button through a supported booking partner. Reducing the steps from discovery to booking maximises conversion.</li>
-<li><strong>Multi-location management:</strong> If you operate multiple branches, each needs its own optimised profile. Maintain consistent branding while highlighting location-specific details (team, specialities, parking).</li>
+<li><strong>Q&A section:</strong> write the questions and answer them yourself. Parking, whether you take walk-ins, price ranges, what you specialise in. It adds searchable text to the profile and saves people asking.</li>
+<li><strong>Products section:</strong> selling retail means listing it here with photos, descriptions, and prices, which catches product searches.</li>
+<li><strong>Booking integration:</strong> turn on the "Book" button through a supported partner. Fewer steps between finding you and booking you means more of both.</li>
+<li><strong>Multi-location management:</strong> every branch needs its own profile, done properly. Keep the branding identical and let the local details differ, meaning the team, the specialities, and the parking.</li>
 </ul>
 
-<h2>Frequently Asked Questions</h2>
+<h2>Frequently asked questions</h2>
 
 <h3>How long does it take for Google Business Profile optimisation to show results?</h3>
-<p>Most salons see measurable improvements within 4-8 weeks of completing a full optimisation. Profile completeness improvements show results fastest (more search appearances within days). Review accumulation takes longer but has the most significant impact - each review incrementally improves your ranking. Consistent weekly updates (photos, posts, review responses) signal activity to Google and gradually improve your position in local search results over 2-3 months.</p>
+<p>Most salons see measurable improvement within 4-8 weeks of finishing the work. Completing the profile pays off fastest, with more search appearances inside days. Reviews take longer and matter most, since each one nudges the ranking up. Weekly photos, posts, and review responses tell Google somebody is there, and the position improves over 2-3 months.</p>
 
 <h3>How many Google reviews does my salon need?</h3>
-<p>There is no magic number, but research shows meaningful ranking and trust benefits begin at 20+ reviews, with significant competitive advantage at 50+. More important than total count is recency and consistency. A salon with 30 reviews in the last 6 months ranks higher than one with 100 reviews but none in the past year. Focus on generating 2-4 new reviews per week through your automated review request system.</p>
+<p>No single number, though research puts the first real ranking and trust benefits at 20+ reviews and a serious advantage at 50+. When they arrived matters more than how many. A salon with 30 reviews in the last 6 months ranks higher than one with 100 reviews and nothing in the past year. Aim for 2-4 new ones a week from your automated requests.</p>
 
 <h3>Can I remove a fake or unfair Google review?</h3>
-<p>You can flag reviews that violate Google's policies (fake reviews, spam, off-topic, conflicts of interest). Google will review the flag and remove the review if it violates their guidelines. However, Google will not remove negative reviews simply because you disagree with them. If a negative review is legitimate, respond professionally and focus on generating new positive reviews to dilute its impact. A steady stream of recent positive reviews is the best defence against occasional negative ones.</p>
+<p>You can flag anything that breaks Google's policies, meaning fakes, spam, off-topic posts, and conflicts of interest, and they will remove it if it does. They will not remove a review because you disagree with it. Where the criticism is fair, reply professionally and go and earn new ones, since a steady flow of recent positive reviews handles the occasional bad one better than anything else.</p>
 
 <h3>Should I use Google Ads alongside my Business Profile?</h3>
-<p>Google Ads (specifically Local Services Ads and Search Ads) can accelerate visibility while your organic profile optimisation takes effect. For salons, the most cost-effective ad format is Google Local Services Ads, which appear at the very top of search results with a "Google Guaranteed" badge. These ads charge per lead rather than per click, making them more predictable for budgeting. Start with a modest daily budget ($10-$20) and scale based on the cost per new client acquired versus your target.</p>
+<p>Local Services Ads and Search Ads buy you visibility while the organic work takes hold. For salons, Local Services Ads are the most cost-effective, appearing at the very top of results with a "Google Guaranteed" badge and charging per lead rather than per click, which makes the budgeting predictable. Start at $10-$20 a day and scale according to what each new client costs against your target.</p>
 `,
     metaTitle: 'Google My Business for Salons | The Daisy',
     metaDescription:
@@ -1020,125 +1020,125 @@ const salonSeoLocalSearchArticle: LocalBlogPost = {
     description:
       'Master local SEO for your salon to rank in Google search and Maps results. Covers on-page optimisation, local citations, link building, content strategy, and technical SEO specifically tailored for beauty businesses.',
     aboutPosts: `
-<h2>Local SEO Is the Most Cost-Effective Client Acquisition Channel for Salons</h2>
-<p>Local SEO is the practice of optimising your online presence so your salon appears prominently when potential clients search for beauty services in your area. Unlike paid advertising, which stops generating leads the moment you stop paying, local SEO delivers compounding returns - the work you invest today continues driving visibility and bookings for months and years.</p>
-<p>For beauty businesses, local search intent is extraordinarily high. When someone searches "hair salon near me" or "balayage specialist [city]," they are actively looking to book, not casually browsing. Capturing this intent is the most direct path from search to appointment. This guide is part of our complete <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing strategy</a> series and covers every aspect of local SEO for salons.</p>
+<h2>Local SEO is the most cost-effective client acquisition channel for salons</h2>
+<p>Local SEO is the work that puts you near the top when someone nearby searches for what you do. Paid advertising stops producing the day you stop paying. This compounds instead, and what you do today keeps bringing visibility and bookings for months and years.</p>
+<p>Intent in this industry is unusually strong. Anyone typing "hair salon near me" or "balayage specialist [city]" wants an appointment rather than a browse. Catching them there is the shortest route from a search to a booking. This sits inside our <a href="/en/resources/blog/business/salon-marketing-strategies">salon marketing strategy</a> series and covers local SEO for salons end to end.</p>
 
-<h2>Understanding How Local Search Works for Salons</h2>
-<p>Google uses three primary factors to rank local businesses: relevance, distance, and prominence. Understanding these factors helps you optimise strategically.</p>
+<h2>Understanding how local search works for salons</h2>
+<p>Google ranks local businesses on three things: relevance, distance, and prominence. Knowing which is which tells you where the effort goes.</p>
 <ul>
-<li><strong>Relevance:</strong> How well your business matches the searcher's intent. Determined by your Google Business Profile categories, services listed, website content, and reviews mentioning specific services.</li>
-<li><strong>Distance:</strong> How close your salon is to the searcher. You cannot change your location, but you can influence the radius Google considers relevant to your business through citation consistency and content targeting.</li>
-<li><strong>Prominence:</strong> How well-known and trusted your business is online. Determined by review volume and quality, backlinks, website authority, and brand mentions across the web.</li>
+<li><strong>Relevance:</strong> how well you match what they wanted, judged on your Google Business Profile categories, the services you list, your website content, and reviews that name specific services.</li>
+<li><strong>Distance:</strong> how near you are to whoever is searching. Your address is fixed, and the radius Google treats as relevant is not, since consistent citations and locally targeted content both widen it.</li>
+<li><strong>Prominence:</strong> how known and trusted you are, built from review volume and quality, backlinks, the authority of your site, and mentions of your name elsewhere.</li>
 </ul>
 
-<h2>On-Page SEO for Your Salon Website</h2>
-<p>Your website is the foundation of your local SEO strategy. Every page should be optimised for both search engines and potential clients.</p>
+<h2>On-page SEO for your salon website</h2>
+<p>Everything else rests on the website, and every page has to work for a search engine and a human at the same time.</p>
 
-<h3>Homepage Optimisation</h3>
-<p>Your homepage should clearly communicate what you do, where you are, and why clients should choose you. Essential elements:</p>
+<h3>Homepage optimisation</h3>
+<p>Say what you do, where you are, and why you. Four things must be right:</p>
 <ul>
-<li><strong>Title tag:</strong> Include your primary keyword and location. Example: "Hair Salon in [City] | Colour, Cuts &amp; Styling | [Salon Name]"</li>
-<li><strong>Meta description:</strong> 150-160 characters including services, location, and a call-to-action. Example: "Award-winning hair salon in [neighbourhood]. Specialising in balayage, colour correction, and precision cuts. Book online today."</li>
-<li><strong>H1 heading:</strong> One per page, naturally incorporating your primary keyword and location.</li>
-<li><strong>Local schema markup:</strong> Add LocalBusiness structured data (JSON-LD) to your homepage. This helps Google understand your business type, location, hours, and services.</li>
+<li><strong>Title tag:</strong> your main keyword and your location, for example "Hair Salon in [City] | Colour, Cuts &amp; Styling | [Salon Name]"</li>
+<li><strong>Meta description:</strong> 150-160 characters carrying your services, your location, and something to do. For example: "Award-winning hair salon in [neighbourhood]. Specialising in balayage, colour correction, and precision cuts. Book online today."</li>
+<li><strong>H1 heading:</strong> one per page, with your main keyword and location worked into it rather than bolted on.</li>
+<li><strong>Local schema markup:</strong> put LocalBusiness structured data in JSON-LD on the homepage, which tells Google your business type, location, hours, and services outright.</li>
 </ul>
 
-<h3>Service Pages</h3>
-<p>Create individual pages for each major service category (hair colouring, cuts, treatments, nail services, etc.). Each service page should have:</p>
+<h3>Service pages</h3>
+<p>Give each major category its own page, covering hair colouring, cuts, treatments, nails, and anything else. Each needs:</p>
 <ul>
-<li>A unique title tag with the service name and location.</li>
-<li>Detailed service descriptions (300+ words) covering what the service involves, who it is for, and expected results.</li>
-<li>Pricing information (Google favours transparent pricing).</li>
-<li>Before-and-after photos with descriptive alt text.</li>
-<li>A booking call-to-action linked to your online booking system.</li>
+<li>Its own title tag naming the service and the location.</li>
+<li>A description of 300+ words covering what happens, who it suits, and what they will walk out with.</li>
+<li>Prices, which Google favours seeing.</li>
+<li>Before-and-after photos with alt text that describes them.</li>
+<li>A booking call-to-action wired to your booking system.</li>
 </ul>
 
-<h3>Location Pages</h3>
-<p>If you operate multiple branches, each location needs its own dedicated page with unique content. Include the specific address, team members at that location, services available, client reviews specific to that branch, and a unique meta title and description. Avoid duplicating content across location pages - Google penalises duplicate content.</p>
+<h3>Location pages</h3>
+<p>Every branch needs a page of its own, written from scratch. Put the address on it, the people who work there, what that branch offers, reviews from its own clients, and its own meta title and description. Do not copy between them, because Google penalises duplicate content.</p>
 
-<h2>Building Local Citations</h2>
-<p>A local citation is any online mention of your salon's name, address, and phone number (NAP). Consistent citations across the web signal legitimacy and improve local search rankings.</p>
+<h2>Building local citations</h2>
+<p>A citation is any mention online of your name, address, and phone number, which SEO people call your NAP. The more consistently those appear across the web, the more legitimate you look and the better you rank locally.</p>
 
-<h3>Priority Citation Sources</h3>
+<h3>Priority citation sources</h3>
 <ol>
 <li><strong>Google Business Profile</strong> (most important)</li>
 <li><strong>Yelp</strong></li>
 <li><strong>Facebook Business Page</strong></li>
 <li><strong>Apple Maps</strong></li>
 <li><strong>Bing Places</strong></li>
-<li><strong>Industry directories:</strong> StyleSeat, Booksy, Fresha, Vagaro (even if you do not use them for booking, claim your profile)</li>
-<li><strong>Local directories:</strong> Chamber of commerce, local business associations, city-specific directories</li>
+<li><strong>Industry directories:</strong> StyleSeat, Booksy, Fresha, Vagaro, and claim the profile even where you never take a booking through it</li>
+<li><strong>Local directories:</strong> the chamber of commerce, local business associations, and anything specific to your city</li>
 </ol>
 
-<h3>NAP Consistency</h3>
-<p>Your business name, address, and phone number must be identical across every listing. Even minor inconsistencies (e.g., "Suite 4" vs. "Ste 4" or "Street" vs. "St.") can confuse search engines and dilute your ranking. Audit your citations quarterly using a tool like BrightLocal or Moz Local, and correct any inconsistencies immediately.</p>
+<h3>NAP consistency</h3>
+<p>These three must match everywhere, character for character. Small differences such as "Suite 4" against "Ste 4", or "Street" against "St.", are enough to confuse a search engine and dilute your ranking. Audit quarterly with BrightLocal or Moz Local and fix whatever has drifted.</p>
 
-<h2>Content Strategy for Local SEO</h2>
-<p>Regular, locally relevant content signals to Google that your website is active and authoritative for beauty searches in your area.</p>
+<h2>Content strategy for local SEO</h2>
+<p>Publishing regularly about your own area tells Google the site is alive and that it knows something about beauty near you.</p>
 
-<h3>Blog Content</h3>
-<p>Publish 2-4 blog posts per month targeting local and service-specific keywords. Effective topics for salon SEO:</p>
+<h3>Blog content</h3>
+<p>2-4 posts a month, aimed at local and service-specific keywords. What works:</p>
 <ul>
 <li>"Best [service] in [city/neighbourhood]" guides</li>
 <li>Seasonal hair and beauty trend roundups</li>
-<li>Client transformation stories (with permission)</li>
-<li>Professional tips and how-to guides</li>
-<li>Local event participation and community involvement</li>
+<li>Client transformation stories, with permission</li>
+<li>Tips and how-to guides from behind the chair</li>
+<li>What you did at local events and in the community</li>
 </ul>
 
-<h3>Local Content Signals</h3>
-<p>Incorporate local references naturally throughout your content: mention your neighbourhood, nearby landmarks, local events, and the community you serve. This helps Google associate your business with specific geographic areas.</p>
+<h3>Local content signals</h3>
+<p>Let your area into the writing: the neighbourhood, the landmarks people navigate by, what happens locally, who you serve. That is how Google learns which map pin you belong to.</p>
 
-<h2>Link Building for Salon SEO</h2>
-<p>Backlinks from other websites to yours are one of the strongest ranking signals. For local businesses, the most valuable links come from local, relevant, and authoritative sources.</p>
+<h2>Link building for salon SEO</h2>
+<p>Links pointing at you remain among the strongest signals there are. For a local business the ones worth having are local, relevant, and from somewhere with a reputation.</p>
 
-<h3>Effective Link Building Tactics for Salons</h3>
+<h3>Effective link building tactics for salons</h3>
 <ul>
-<li><strong>Local press:</strong> Pitch story ideas to local publications. "Expert tips for summer hair care" or a comment on a trending beauty topic positions you as a local expert.</li>
-<li><strong>Local business partnerships:</strong> Exchange links with complementary local businesses (fitness studios, boutiques, wedding venues).</li>
-<li><strong>Sponsorships:</strong> Sponsor local events, charities, or sports teams. Sponsorship pages typically include a link to your website.</li>
-<li><strong>Guest blogging:</strong> Write guest posts for local lifestyle or wedding blogs that link back to your salon.</li>
-<li><strong>Supplier features:</strong> If you use premium product brands, get listed on their salon locator or featured stylist pages.</li>
+<li><strong>Local press:</strong> pitch them something. "Expert tips for summer hair care", or a quote on whatever beauty story is running, makes you the local expert they call next time.</li>
+<li><strong>Local business partnerships:</strong> swap links with businesses that serve the same people, meaning fitness studios, boutiques, and wedding venues.</li>
+<li><strong>Sponsorships:</strong> local events, charities, and sports teams nearly always list their sponsors with a link.</li>
+<li><strong>Guest blogging:</strong> write for local lifestyle and wedding blogs, and link back to yourself.</li>
+<li><strong>Supplier features:</strong> premium product brands run salon locators and featured stylist pages, so get onto them.</li>
 </ul>
 
-<h2>Technical SEO Essentials</h2>
-<p>Technical issues can undermine even the best content and link building efforts. Ensure these fundamentals are solid:</p>
+<h2>Technical SEO essentials</h2>
+<p>Technical problems will undo the best content and the best links. Get these right first:</p>
 <ul>
-<li><strong>Mobile-first design:</strong> Over 70% of local searches happen on mobile devices. Your website must load quickly, display correctly, and be easy to navigate on smartphones.</li>
-<li><strong>Page speed:</strong> Target a load time under 3 seconds. Compress images, minimise code, and use a CDN. Google's PageSpeed Insights tool provides specific recommendations.</li>
-<li><strong>SSL certificate:</strong> Your website must use HTTPS. Google penalises non-secure sites in rankings.</li>
-<li><strong>Schema markup:</strong> Implement LocalBusiness, Service, and Review structured data to help Google understand your content.</li>
-<li><strong>XML sitemap:</strong> Submit an updated sitemap to Google Search Console to ensure all pages are indexed.</li>
+<li><strong>Mobile-first design:</strong> over 70% of local searches happen on mobile devices, so the site has to load fast, display properly, and be navigable with a thumb.</li>
+<li><strong>Page speed:</strong> under 3 seconds. Compress the images, cut the code, use a CDN. Google's PageSpeed Insights will tell you exactly what is slow.</li>
+<li><strong>SSL certificate:</strong> HTTPS, without exception, since Google penalises sites without it.</li>
+<li><strong>Schema markup:</strong> LocalBusiness, Service, and Review structured data, so Google is not guessing at what your pages are.</li>
+<li><strong>XML sitemap:</strong> keep one current in Google Search Console so nothing goes unindexed.</li>
 </ul>
 
-<h2>Measuring Local SEO Success</h2>
-<p>Track these metrics monthly to evaluate your local SEO progress:</p>
+<h2>Measuring local SEO success</h2>
+<p>Five things to watch monthly:</p>
 <ul>
-<li><strong>Google Business Profile impressions:</strong> How many times your profile appears in search results. Track the trend over time.</li>
-<li><strong>Search ranking positions:</strong> Monitor your ranking for 10-15 target keywords (service + location combinations).</li>
-<li><strong>Organic website traffic:</strong> Visits from search engines, filtered by location. Use Google Analytics to see which pages drive the most local traffic.</li>
-<li><strong>Booking conversions from organic search:</strong> How many clients who found you through search actually booked? <a href="/en/features/business/analytics-reports">The Daisy's analytics</a> tracks the full journey from search to appointment.</li>
-<li><strong>Review velocity:</strong> The rate at which you are accumulating new reviews. Consistent growth is more important than total count.</li>
+<li><strong>Google Business Profile impressions:</strong> how often the profile appears at all, watched as a trend rather than a number.</li>
+<li><strong>Search ranking positions:</strong> track 10-15 target keywords, each pairing a service with a location.</li>
+<li><strong>Organic website traffic:</strong> search visits filtered by location, with Google Analytics showing which pages pull the local audience.</li>
+<li><strong>Booking conversions from organic search:</strong> how many of the people search sent you actually booked. <a href="/en/features/business/analytics-reports">The Daisy's analytics</a> follows that from the search to the appointment.</li>
+<li><strong>Review velocity:</strong> how fast new reviews arrive, which matters more than how many you have.</li>
 </ul>
 
-<h2>How The Daisy Supports Your Local SEO</h2>
-<p>The Daisy's booking platform provides a fast, mobile-optimised booking experience that converts search visitors into clients. Direct booking links for your Google Business Profile, review request automation, and analytics tracking create a seamless connection between your SEO efforts and actual bookings.</p>
-<p>Explore <a href="/en/features/business/marketing-promotions">The Daisy's marketing tools</a> and see how they integrate with your local SEO strategy. View <a href="/en/pricing/business">pricing plans</a> for salon marketing features.</p>
+<h2>How The Daisy supports your local SEO</h2>
+<p>The booking platform is fast and built for phones, which is what turns a search visitor into a client. Direct booking links for your Google Business Profile, automated review requests, and the analytics behind them connect the SEO work to the appointments it produced.</p>
+<p><a href="/en/features/business/marketing-promotions">The Daisy's marketing tools</a> show how this fits alongside your local SEO, and the <a href="/en/pricing/business">pricing plans</a> list what each level includes.</p>
 
-<h2>Frequently Asked Questions</h2>
+<h2>Frequently asked questions</h2>
 
 <h3>How long does salon SEO take to produce results?</h3>
-<p>Local SEO is a medium to long-term investment. Typically, you will see initial improvements in 4-8 weeks (particularly from Google Business Profile optimisation and citation building). Meaningful ranking improvements for competitive keywords take 3-6 months of consistent effort. Full maturity - where your salon consistently appears in the top 3 local results for your target keywords - usually takes 6-12 months. The compounding nature of SEO means results accelerate over time as your authority builds.</p>
+<p>This is a medium to long game. The first movement comes in 4-8 weeks, mostly from your Google Business Profile and citation work. Real ranking gains on competitive keywords take 3-6 months of steady effort. Appearing consistently in the top 3 local results for your targets usually takes 6-12 months. Because it compounds, the pace picks up as your authority grows.</p>
 
 <h3>Should I hire an SEO agency or do it myself?</h3>
-<p>Start by handling the fundamentals yourself: Google Business Profile optimisation, review management, and basic on-page SEO. These actions deliver the highest ROI and do not require technical expertise. Consider hiring an agency when you want to pursue more advanced strategies (link building, technical SEO audits, content strategy at scale) or when your time is more valuable spent on salon operations. A good local SEO agency for a single-location salon typically costs $500-$1,500 per month.</p>
+<p>Do the basics yourself: the Google Business Profile, review management, and simple on-page work. They return the most and need no technical background. Bring in an agency when you want link building, a technical audit, or content at scale, or when your hours are worth more spent running the salon. A good local agency for a single location typically costs $500-$1,500 per month.</p>
 
 <h3>Do I need a blog on my salon website for SEO?</h3>
-<p>A blog is not strictly required, but it significantly accelerates your SEO results. Blog content targets long-tail keywords that your service pages cannot cover, demonstrates expertise to both Google and potential clients, and provides fresh content that signals an active website. Even publishing 2 articles per month can meaningfully improve your search visibility within 3-6 months. Focus on topics that combine beauty expertise with local relevance.</p>
+<p>Not strictly, though it makes everything happen faster. A blog reaches the long-tail keywords your service pages cannot, proves to Google and to clients that you know the subject, and keeps the site looking maintained. Even 2 articles a month moves your visibility inside 3-6 months. Write where your expertise and your area overlap.</p>
 
 <h3>How important are online reviews for salon SEO?</h3>
-<p>Reviews are one of the top three local ranking factors. Google uses review quantity, quality, recency, and the presence of keywords in reviews to determine local rankings. Salons with more recent, high-rated reviews consistently outrank competitors with fewer or older reviews. Beyond ranking, reviews directly influence click-through rates and booking conversion - a 4.8-star salon with 100 reviews converts visitors to bookings at roughly twice the rate of a 4.2-star salon with 20 reviews.</p>
+<p>They sit in the top three local ranking factors. Google weighs how many you have, how good they are, how recent, and which words appear in them. Salons with recent, well-rated reviews outrank those with fewer or older ones consistently. Ranking aside, reviews decide click-through and conversion, and a 4.8-star salon with 100 reviews converts visitors to bookings at roughly twice the rate of a 4.2-star salon with 20 reviews.</p>
 `,
     metaTitle: 'Salon SEO: Local Search Guide | The Daisy',
     metaDescription:
@@ -1210,104 +1210,104 @@ const independentBeautyProfessionalMarketingArticle: LocalBlogPost = {
     description:
       'A comprehensive marketing guide for freelance and independent beauty professionals. Covers personal branding, social media strategy, client acquisition, pricing communication, and building a sustainable client base without a salon team behind you.',
     aboutPosts: `
-<h2>Independent Beauty Professionals Need a Different Marketing Approach</h2>
-<p>Marketing as an independent beauty professional is fundamentally different from marketing a salon. You do not have a brand, a team, or a marketing budget behind you - you are the brand. Every marketing decision reflects directly on you, and every new client relationship starts with your personal reputation.</p>
-<p>The good news: independent professionals have advantages that salons do not. You can build deeper personal connections, move faster on trends, and create an authentic brand that clients feel personally connected to. This guide provides a complete <a href="/en/resources/blog/business/salon-marketing-strategies">marketing framework</a> tailored specifically for freelance beauty professionals, whether you rent a chair, run a home studio, or offer mobile services.</p>
+<h2>Independent beauty professionals need a different marketing approach</h2>
+<p>This is not salon marketing at a smaller scale. There is no brand, no team, and no budget standing behind you, because you are the brand. Every decision lands on you personally, and every new client starts from your reputation rather than anyone else's.</p>
+<p>You also hold advantages no salon can match. The relationships go deeper, you can turn on a trend in an afternoon, and the brand is genuinely yours. What follows is a <a href="/en/resources/blog/business/salon-marketing-strategies">marketing framework</a> written for freelancers, whether you rent a chair, work from home, or travel to clients.</p>
 
-<h2>Building Your Personal Brand Foundation</h2>
-<p>Your personal brand is the single most important marketing asset you own. It determines whether a potential client chooses you over the hundreds of other professionals offering similar services in your area.</p>
+<h2>Building your personal brand foundation</h2>
+<p>Nothing else you own works as hard. It is what decides whether someone picks you out of the hundreds nearby offering roughly the same thing.</p>
 
-<h3>Define Your Niche</h3>
-<p>Trying to appeal to everyone makes you memorable to no one. Identify the intersection of what you do best, what you enjoy most, and what is underserved in your market. A professional who specialises in "lived-in colour for busy professionals" has a clearer, more referable brand than one who offers "all hair services."</p>
+<h3>Define your niche</h3>
+<p>Appealing to everybody makes you memorable to nobody. Find where your best work, your favourite work, and an unmet need in your area overlap. "Lived-in colour for busy professionals" is something a client can repeat to a friend. "All hair services" is not.</p>
 
-<h3>Craft Your Value Proposition</h3>
-<p>Summarise what you offer in one sentence that a client could repeat to a friend: "She specialises in curly hair transformations and makes you feel completely understood" or "He does the best fades in the city and the vibe is always relaxed." Your value proposition combines your technical specialisation with the experience you create.</p>
+<h3>Craft your value proposition</h3>
+<p>Get it into one sentence somebody else would say out loud: "She specialises in curly hair transformations and makes you feel completely understood" or "He does the best fades in the city and the vibe is always relaxed." That sentence carries both what you are good at and how it feels to sit with you.</p>
 
-<h3>Visual Identity Consistency</h3>
-<p>Develop a consistent visual identity across all touchpoints: your social media profiles, booking page, business cards, and any physical space. This does not require a designer - choose 2-3 colours, one font, and a consistent photo style. Consistency builds recognition and professionalism.</p>
+<h3>Visual identity consistency</h3>
+<p>Make everything look like it came from the same person: your social profiles, your booking page, your cards, and the space itself. No designer required. Pick 2-3 colours, one font, and a way of shooting photos, then stay with them.</p>
 
-<h2>Social Media Marketing for Independent Professionals</h2>
-<p>Social media is your most powerful marketing channel. It is free, visual, and reaches potential clients exactly where they spend their time.</p>
+<h2>Social media marketing for independent professionals</h2>
+<p>This is your strongest channel by some distance. It costs nothing, it suits the work, and it reaches people where they already are.</p>
 
-<h3>Instagram Strategy</h3>
-<p>Instagram is the primary platform for beauty professionals. Optimise your profile as a portfolio and booking tool:</p>
+<h3>Instagram strategy</h3>
+<p>Instagram comes first for beauty. Treat the profile as a portfolio and a booking page at once:</p>
 <ul>
-<li><strong>Bio:</strong> Specialisation + location + booking link. Example: "Curly Hair Specialist | [City] | Book below &darr;"</li>
-<li><strong>Content mix:</strong> Transformations (40%), educational tips (25%), personality/behind-the-scenes (20%), and client testimonials (15%).</li>
-<li><strong>Reels:</strong> Post 3-5 Reels per week. Process videos and transformations consistently generate the most reach and booking enquiries for beauty professionals.</li>
-<li><strong>Stories:</strong> Use daily Stories for same-day availability, polls, Q&As, and casual engagement. Stories build the personal connection that converts followers into clients.</li>
+<li><strong>Bio:</strong> what you specialise in, where you are, and the booking link. For example: "Curly Hair Specialist | [City] | Book below &darr;"</li>
+<li><strong>Content mix:</strong> transformations (40%), tips (25%), you and what happens behind the scenes (20%), and testimonials (15%).</li>
+<li><strong>Reels:</strong> 3-5 a week. Process videos and transformations bring beauty professionals more reach and more enquiries than anything else.</li>
+<li><strong>Stories:</strong> daily, for same-day availability, polls, Q&As, and ordinary chat. This is where a follower turns into a client.</li>
 </ul>
 
-<h3>TikTok Strategy</h3>
-<p>TikTok offers unmatched organic reach for new accounts. The algorithm surfaces content based on quality, not follower count, meaning a first-time poster can reach 100,000+ viewers. Focus on dramatic transformations, satisfying process videos, and educational content that showcases your expertise.</p>
+<h3>TikTok strategy</h3>
+<p>No platform gives a new account reach like this. The algorithm judges the video rather than the follower count, so a first post can reach 100,000+ viewers. Lead with dramatic transformations, satisfying process videos, and anything that teaches while showing what you can do.</p>
 
-<h3>Content Creation Without a Team</h3>
-<p>As an independent professional, you do not have a content team. Simplify your workflow:</p>
+<h3>Content creation without a team</h3>
+<p>Nobody is filming this for you, so make it simple:</p>
 <ol>
-<li>Set up a phone tripod at your station with consistent lighting.</li>
-<li>Record a 30-second clip of every service (with client permission).</li>
-<li>Batch-edit and caption content once per week (60-90 minutes).</li>
-<li>Schedule posts using a free tool (Later, Buffer, or the platform's native scheduler).</li>
+<li>Leave a phone tripod at your station with the lighting already sorted.</li>
+<li>Take a 30-second clip of every service, with the client's permission.</li>
+<li>Edit and caption the lot once a week, in 60-90 minutes.</li>
+<li>Queue it with a free tool such as Later, Buffer, or whatever the platform provides.</li>
 </ol>
 
-<h2>Client Acquisition Strategies for Independents</h2>
-<p>Beyond social media, independent professionals can leverage several high-impact acquisition channels.</p>
+<h2>Client acquisition strategies for independents</h2>
+<p>Four more channels are worth your time beyond social media.</p>
 
-<h3>Platform Profiles</h3>
-<p>Professional booking platforms provide built-in discovery for clients searching by service and location. <a href="/en/features/professional/marketing-promotions">The Daisy's professional profile</a> is optimised for client discovery, with your portfolio, services, reviews, and direct booking in one place. Complete your profile thoroughly - professionals with complete profiles receive 3-4x more booking enquiries than those with partial profiles.</p>
+<h3>Platform profiles</h3>
+<p>Booking platforms put you in front of people searching by service and location. <a href="/en/features/professional/marketing-promotions">The Daisy's professional profile</a> is built for being found, holding your portfolio, services, reviews, and booking together. Fill every field, because professionals with complete profiles receive 3-4x more booking enquiries than those with partial profiles.</p>
 
 <h3>Google Business Profile</h3>
-<p>If you have a fixed location (rented chair, studio, or home salon), claim a Google Business Profile. This captures the highest-intent clients - people actively searching for your services in your area. Follow the same optimisation principles from our <a href="/en/resources/blog/business/google-my-business-salon-optimization">Google Business Profile guide</a>, adapted for your individual practice.</p>
+<p>Working from a fixed address, whether a rented chair, a studio, or a room at home, means claiming one of these. It catches people already searching for your service nearby, which is as ready to book as anyone gets. Apply the same principles from our <a href="/en/resources/blog/business/google-my-business-salon-optimization">Google Business Profile guide</a>, scaled to one person.</p>
 
-<h3>Referral Network</h3>
-<p>Build a referral network with complementary professionals: makeup artists, photographers, wedding planners, personal stylists, and other beauty professionals who serve your target clients but do not compete with you. Formalise the relationship: "I refer clients to you for nails, you refer clients to me for colour." Track referrals so you can recognise and reward your best referral partners.</p>
+<h3>Referral network</h3>
+<p>Find the people serving your clients without competing for them: makeup artists, photographers, wedding planners, personal stylists, other beauty professionals. Make the arrangement explicit: "I refer clients to you for nails, you refer clients to me for colour." Keep count, so you know who to thank.</p>
 
-<h3>Local Community Engagement</h3>
-<p>Participate in local events, markets, and community activities. Offer styling at charity events. Partner with local businesses for cross-promotions. Community presence builds trust and word-of-mouth in ways that digital marketing cannot replicate.</p>
+<h3>Local community engagement</h3>
+<p>Turn up to local events, markets, and whatever else is happening. Style at charity events. Run something jointly with a business nearby. Being present locally builds trust and word of mouth that no amount of posting will produce.</p>
 
-<h2>Pricing Communication for Independent Professionals</h2>
-<p>Many independent professionals undercharge because they lack confidence in communicating their value. Your pricing is a reflection of your expertise, experience, and the quality of experience you deliver.</p>
+<h2>Pricing communication for independent professionals</h2>
+<p>Most independents undercharge because saying the number out loud is uncomfortable. The price reflects your skill, your experience, and the hour someone spends with you.</p>
 
-<h3>Transparent Pricing</h3>
-<p>Display your prices publicly on your booking page and social media. Hidden pricing creates friction and attracts price-sensitive enquiries. Transparent pricing filters for clients who value your work at your stated rate.</p>
+<h3>Transparent pricing</h3>
+<p>Publish them on your booking page and your social media. Hiding prices creates work for both of you and attracts exactly the people hunting for the cheapest option. Publishing them filters for clients who think you are worth it.</p>
 
-<h3>Value-Based Framing</h3>
-<p>Frame your pricing around the outcome and experience, not the time spent. "Signature balayage including consultation, treatment, and styling - $250" communicates value better than "$250/3 hours." Clients pay for the transformation, not the clock.</p>
+<h3>Value-based framing</h3>
+<p>Price the result rather than the hours. "Signature balayage including consultation, treatment, and styling, $250" says more than "$250/3 hours". Nobody is buying your time. They are buying how they will look.</p>
 
-<h3>Raising Prices</h3>
-<p>If your calendar is consistently 80%+ booked two weeks in advance, your prices should increase. Raise prices 10-15% annually. Communicate increases to existing clients with 4-6 weeks notice, framing it as an investment in quality: "To continue delivering the exceptional experience you deserve, our prices will be updated on [date]."</p>
+<h3>Raising prices</h3>
+<p>A calendar consistently 80%+ booked two weeks ahead is telling you something. Raise prices 10-15% annually and give existing clients 4-6 weeks notice, explaining what it buys: "To continue delivering the exceptional experience you deserve, our prices will be updated on [date]."</p>
 
-<h2>Building Client Retention as an Independent</h2>
-<p>Retention is even more critical for independent professionals than for salons. Losing one regular client represents a larger percentage of your income.</p>
+<h2>Building client retention as an independent</h2>
+<p>This matters more to you than to any salon, because one regular leaving takes a bigger share of your income with them.</p>
 <ul>
-<li><strong>Rebooking at checkout:</strong> Always offer to schedule the next appointment before the client leaves. Clients who rebook immediately have a 90%+ show rate versus 60% for those who "will book later."</li>
-<li><strong>Personalised follow-up:</strong> A brief message 24-48 hours after the appointment checking in on their experience. <a href="/en/features/professional/communication-tools">The Daisy's communication tools</a> automate this while maintaining a personal feel.</li>
-<li><strong>Loyalty recognition:</strong> Acknowledge milestone visits (10th appointment, one-year anniversary) with a small gesture - a complimentary upgrade, a personalised note, or a small gift.</li>
-<li><strong>Consistent experience:</strong> Develop signature touches that make every visit memorable and predictable. Clients return to professionals who deliver consistently, not just occasionally.</li>
+<li><strong>Rebooking at checkout:</strong> ask for the next appointment before they are out of the chair. Clients who rebook immediately have a 90%+ show rate versus 60% for those who "will book later."</li>
+<li><strong>Personalised follow-up:</strong> a short message 24-48 hours later asking how it went. <a href="/en/features/professional/communication-tools">The Daisy's communication tools</a> send it for you without it reading like a robot.</li>
+<li><strong>Loyalty recognition:</strong> mark the 10th appointment or the one-year anniversary with something, whether a free upgrade, a note you wrote yourself, or a small gift.</li>
+<li><strong>Consistent experience:</strong> build in touches that happen every single time. People come back to whoever is reliably good rather than occasionally brilliant.</li>
 </ul>
 
-<h2>Managing Your Online Reputation</h2>
-<p>As an independent professional, your reputation is your business. Every review, social media comment, and client interaction shapes potential clients' perceptions.</p>
+<h2>Managing your online reputation</h2>
+<p>Your reputation is the business. Every review, comment, and conversation adds to what a stranger decides about you.</p>
 <ul>
-<li><strong>Request reviews systematically:</strong> Ask every satisfied client for a review on Google and your booking platform. Provide a direct link to make it easy.</li>
-<li><strong>Respond to all feedback:</strong> Thank positive reviewers specifically. Address negative reviews professionally and offer to resolve issues.</li>
-<li><strong>Showcase testimonials:</strong> Feature client feedback prominently on your social media, booking page, and any marketing materials.</li>
+<li><strong>Request reviews systematically:</strong> ask every happy client for one on Google and on your booking platform, and send the link so it takes seconds.</li>
+<li><strong>Respond to all feedback:</strong> thank the good ones by name and for what they mentioned. Answer the bad ones professionally and offer to put it right.</li>
+<li><strong>Showcase testimonials:</strong> put what clients said on your social media, your booking page, and anything else you produce.</li>
 </ul>
-<p>Track your professional metrics - rebooking rate, client satisfaction, and revenue trends - with <a href="/en/features/professional/analytics-reports">The Daisy's professional analytics</a> to identify what is working and where to improve.</p>
+<p>Watch your rebooking rate, client satisfaction, and where the revenue is going with <a href="/en/features/professional/analytics-reports">The Daisy's professional analytics</a>, which is how you find out what is working.</p>
 
-<h2>Frequently Asked Questions</h2>
+<h2>Frequently asked questions</h2>
 
 <h3>How much should an independent beauty professional spend on marketing?</h3>
-<p>Start with time, not money. The highest-ROI marketing activities for independents are free: social media content creation, Google Business Profile optimisation, referral network building, and review collection. As your income grows, allocate 5-10% of revenue to marketing. For a professional earning $5,000/month, that is $250-$500 - enough for a booking platform subscription, occasional promoted posts, and professional photography quarterly. Never spend on marketing before you have a strong portfolio and consistent client experience to back it up.</p>
+<p>Spend time before money. Everything that returns most for an independent is free: making content, sorting your Google Business Profile, building a referral network, collecting reviews. As the income grows, put 5-10% of revenue behind it. At $5,000/month that is $250-$500, which covers a booking platform, the occasional promoted post, and professional photography once a quarter. Never spend on marketing until the portfolio and the experience are worth pointing people at.</p>
 
 <h3>Should I create a business name or market under my own name?</h3>
-<p>For most independent beauty professionals, marketing under your own name is more effective. Clients book with people, not brands, in the beauty industry. Your name builds a reputation that follows you regardless of where you work. A business name can create unnecessary distance between you and your clients. The exception is if you plan to eventually build a team or open a studio - in that case, a business name provides a foundation for scaling beyond your personal labour.</p>
+<p>Your own name, usually. People book people here, not brands, and a name builds a reputation that travels with you wherever you work. A business name puts something between you and the client. The exception is planning to hire or open a studio one day, where a business name gives you something that can outgrow one pair of hands.</p>
 
 <h3>How do I compete with salons that have bigger marketing budgets?</h3>
-<p>You compete by being what a salon cannot: personal, authentic, and deeply connected to each client. Salons offer consistency and convenience; you offer a personalised relationship and a unique creative vision. Your marketing should emphasise what makes you different: your specific expertise, your personal approach, your availability for longer consultations, and the exclusivity of a one-on-one experience. Clients who value personal connection over brand names are your target audience, and they are willing to pay premium prices for it.</p>
+<p>By being what they structurally cannot: personal, genuine, and properly invested in each client. They sell consistency and convenience. You sell a relationship and a point of view. So market the difference: what you specialise in, how you work, the fact you have time for a real consultation, and that nobody else is in the room. The clients who want that are yours, and they pay more for it.</p>
 
 <h3>When should I invest in a website versus just using social media and a booking platform?</h3>
-<p>A dedicated website becomes valuable when you want to: rank in Google local search (social media profiles rank less effectively), present a comprehensive portfolio beyond social media's scrolling format, build an email list for direct marketing, or present yourself as a premium professional. If you are just starting out, a strong Instagram profile plus a booking platform like <a href="/en/features/professional/marketing-promotions">The Daisy</a> is sufficient. Add a website once your income is stable and you want to invest in long-term search visibility.</p>
+<p>A website earns its keep once you want to rank in Google local search, which social profiles do poorly, or to show a portfolio that is not an endless scroll, or to build an email list, or simply to read as premium. Starting out, a good Instagram profile plus a booking platform like <a href="/en/features/professional/marketing-promotions">The Daisy</a> is enough. Add the site when the income is steady and you want the long-term search visibility.</p>
 `,
     metaTitle: 'Marketing for Independent Beauty Pros | The Daisy',
     metaDescription:

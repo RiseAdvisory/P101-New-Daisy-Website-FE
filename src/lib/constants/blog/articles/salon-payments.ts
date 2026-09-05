@@ -43,154 +43,154 @@ const salonPosBuyersGuideArticle: LocalBlogPost = {
     description:
       'A definitive buyer\'s guide to salon POS systems covering hardware selection, essential features, integration requirements, and total cost of ownership. Includes a decision framework for single-location and multi-branch salons.',
     aboutPosts: `
-<h2>What a POS System Really Does for a Modern Salon</h2>
-<p>A salon point-of-sale system is the transactional backbone of every client interaction - and in 2026, it determines far more than how you accept payments. The right POS connects your <a href="/en/resources/blog/business/salon-payment-solutions">payment workflow</a> to appointments, inventory, staff commissions, client profiles, and financial reporting in a single integrated loop. The wrong system fragments these processes, creating manual workarounds that cost you hours every week and money every month.</p>
-<p>According to a 2025 National Retail Federation report, businesses that upgraded to integrated POS systems saw a 23% reduction in checkout time and a 12% increase in average transaction value within the first six months. For salons specifically, where the checkout experience is the last impression before a client leaves, these numbers translate directly into retention and revenue.</p>
-<p>This buyer&rsquo;s guide walks through every decision you need to make when selecting a salon POS - from hardware form factors and payment method support to integration depth and long-term cost of ownership. Whether you are opening your first location or upgrading an existing multi-branch operation, this guide gives you the framework to evaluate and choose with confidence.</p>
+<h2>What a POS system really does for a modern salon</h2>
+<p>Every client interaction ends at the POS, and in 2026 it decides a great deal more than how the money moves. The right one joins your <a href="/en/resources/blog/business/salon-payment-solutions">payment workflow</a> to appointments, inventory, staff commissions, client profiles, and your financial reporting in a single loop. The wrong one breaks those apart and leaves you with workarounds that cost hours every week and money every month.</p>
+<p>According to a 2025 National Retail Federation report, businesses that upgraded to integrated POS systems saw a 23% reduction in checkout time and a 12% increase in average transaction value within the first six months. In a salon, where checkout is the last thing anyone experiences before walking out, those numbers land as retention and revenue.</p>
+<p>What follows covers every decision involved in choosing one, from hardware and payment methods through to how deeply it integrates and what it costs to own. It applies equally to a first location and to replacing something across several branches.</p>
 
-<h2>Hardware: Terminal Types and What Each Suits Best</h2>
-<p>Your first decision is physical: what hardware sits at your front desk and, increasingly, in the hands of your stylists? There are four main form factors, and most salons benefit from a combination.</p>
+<h2>Hardware: terminal types and what each suits best</h2>
+<p>Start with the physical question of what sits on the desk and, more and more often, in your stylists' hands. Four form factors exist, and most salons end up with more than one.</p>
 
-<h3>Countertop Terminals</h3>
-<p>Dedicated hardware units that sit at a fixed checkout location. Modern countertop terminals accept chip, contactless tap (NFC), magnetic stripe, and mobile wallets. They are purpose-built for payment processing, which makes them fast and reliable. Leading options include Stripe Terminal, Verifone, and Ingenico devices.</p>
-<p><strong>Best for:</strong> High-traffic salons with a dedicated reception desk. The professional appearance and speed of a countertop terminal create a polished checkout experience that clients associate with established businesses.</p>
-<p><strong>Typical cost:</strong> 600&ndash;1,500 AED one-time purchase. Avoid leasing agreements, which cost 3&ndash;5x the purchase price over the contract term.</p>
+<h3>Countertop terminals</h3>
+<p>Fixed units that live at one checkout point. Current ones take chip, contactless tap over NFC, magnetic stripe, and mobile wallets. Built for one job, which is why they are quick and rarely fail. Stripe Terminal, Verifone, and Ingenico are the usual choices.</p>
+<p><strong>Best for:</strong> busy salons with a proper reception desk. They look serious and they move fast, which is what clients read as an established business.</p>
+<p><strong>Typical cost:</strong> 600&ndash;1,500 AED one-time purchase. Do not lease, since leasing costs 3&ndash;5x the purchase price across the contract.</p>
 
-<h3>Tablet-Based POS</h3>
-<p>An iPad or Android tablet running POS software with an attached or Bluetooth card reader. This is the most popular configuration for beauty businesses because the tablet doubles as a booking terminal, client check-in screen, and retail display when not processing payments.</p>
-<p><strong>Best for:</strong> Single-location salons and boutique studios that want a versatile front-desk device. Platforms like <a href="/en/features/business/payment-processing">The Daisy</a> run natively on tablets, combining POS, booking, and client management in one interface.</p>
+<h3>Tablet-based POS</h3>
+<p>An iPad or Android tablet running the software, with a card reader attached or paired over Bluetooth. Beauty businesses choose this more than anything else, because between payments the tablet is your booking terminal, your check-in screen, and your retail display.</p>
+<p><strong>Best for:</strong> single locations and small studios wanting one device that does several jobs. Platforms like <a href="/en/features/business/payment-processing">The Daisy</a> run natively on tablets, putting POS, booking, and client management behind one interface.</p>
 <p><strong>Typical cost:</strong> 1,200&ndash;2,500 AED for a tablet plus card reader. Monthly software subscriptions range from 100&ndash;500 AED depending on the platform.</p>
 
-<h3>Mobile Card Readers</h3>
-<p>Compact, pocket-sized devices that pair with a smartphone via Bluetooth. They accept chip and contactless payments and are designed for portability.</p>
-<p><strong>Best for:</strong> Mobile professionals, freelance stylists working at client locations, and salons that want a backup payment device. Square Reader, SumUp Air, and iZettle are popular options.</p>
-<p><strong>Typical cost:</strong> 100&ndash;250 AED for the reader itself. Processing fees apply per transaction.</p>
+<h3>Mobile card readers</h3>
+<p>Pocket-sized units paired to a phone over Bluetooth, taking chip and contactless payments and built to be carried.</p>
+<p><strong>Best for:</strong> anyone working at client locations, and any salon that wants a spare. Square Reader, SumUp Air, and iZettle are the common ones.</p>
+<p><strong>Typical cost:</strong> 100&ndash;250 AED for the reader itself, with processing fees on top of every transaction.</p>
 
-<h3>Self-Service Kiosks</h3>
-<p>Touchscreen stations where clients check in, select add-on services, and pay without staff assistance. Still emerging in beauty, but gaining traction in high-volume salons and barbershops.</p>
-<p><strong>Best for:</strong> High-volume locations processing 40+ clients per day where front-desk bottlenecks during peak hours slow down operations.</p>
-<p><strong>Typical cost:</strong> 3,000&ndash;8,000 AED per kiosk including hardware and software setup.</p>
+<h3>Self-service kiosks</h3>
+<p>Touchscreens where clients check themselves in, add services, and pay with nobody serving them. Still new in beauty, and appearing in high-volume salons and barbershops.</p>
+<p><strong>Best for:</strong> locations handling 40+ clients per day where a queue at the desk holds up everything else at peak times.</p>
+<p><strong>Typical cost:</strong> 3,000&ndash;8,000 AED per kiosk, hardware and setup included.</p>
 
-<h2>Essential Software Features for Salon POS</h2>
-<p>Hardware processes the payment. Software determines whether that payment integrates smoothly into your business operations or creates a disconnected data silo. Here are the non-negotiable software features:</p>
+<h2>Essential software features for salon POS</h2>
+<p>The hardware takes the money. The software decides whether that payment joins the rest of your business or sits in a corner by itself. These are not optional:</p>
 
-<h3>Appointment-Linked Checkout</h3>
-<p>When a client checks out, the POS should automatically pull up the services booked, the staff member who performed them, any products used, and the expected total. Manual entry of services at checkout is a sign of a disconnected system. Appointment-linked checkout reduces average checkout time from 3&ndash;5 minutes to under 60 seconds and eliminates pricing errors.</p>
+<h3>Appointment-linked checkout</h3>
+<p>By the time someone reaches the desk, the POS should already know the services booked, who performed them, what products went on, and the total. Typing services in at checkout means the two halves are not talking. Linking them reduces average checkout time from 3&ndash;5 minutes to under 60 seconds and removes the pricing mistakes entirely.</p>
 
-<h3>Multi-Payment-Method Support</h3>
-<p>Your system must handle credit cards, debit cards, Apple Pay, Google Pay, Samsung Pay, cash, bank transfers, digital wallet balances, gift cards, package redemptions, and split payments across multiple methods. In the GCC market, where a large percentage of clients carry international cards or prefer mobile wallets, limited payment options directly cost you revenue. A 2025 Worldpay study found 42% of beauty clients have abandoned a transaction because their preferred payment method was unavailable.</p>
+<h3>Multi-payment-method support</h3>
+<p>Credit and debit cards, Apple Pay, Google Pay, Samsung Pay, cash, bank transfers, wallet balances, gift cards, package redemptions, and a bill split across several of those. In the GCC, where plenty of clients carry international cards or live in a mobile wallet, a short list of accepted methods costs you money directly. A 2025 Worldpay study found 42% of beauty clients have abandoned a transaction because their preferred payment method was unavailable.</p>
 
-<h3>Integrated Tipping</h3>
-<p>Digital tipping prompts on the payment screen increase average tip amounts by 15&ndash;20% compared to cash-only tipping. Your POS should present configurable suggested percentages (15%, 20%, 25% is standard), allow custom amounts, and support tip splitting across multiple staff members who contributed to a service.</p>
+<h3>Integrated tipping</h3>
+<p>Digital tipping prompts on the payment screen increase average tip amounts by 15&ndash;20% compared to cash-only tipping. The POS should show percentages you choose, where 15%, 20%, 25% is standard, take a custom amount, and split a tip between everyone who worked on that client.</p>
 
-<h3>Client Profile Integration</h3>
-<p>Every transaction should enrich the client&rsquo;s profile with spending history, preferred payment methods, product purchases, and visit frequency. This data powers personalised marketing, loyalty programs, and client lifetime value analysis. A POS that does not connect to client profiles is a standalone cash register - not a business tool.</p>
+<h3>Client profile integration</h3>
+<p>Every transaction should add to what the profile knows: what they spend, how they pay, what they buy, how often they come. That is what personalised marketing, loyalty, and lifetime value calculations run on. A POS with no connection to client profiles is a cash register with a screen.</p>
 
-<h3>Staff-Level Reporting</h3>
-<p>Revenue, average ticket value, product sales, tips, and service mix broken down by individual staff member. This data is essential for commission calculations, performance reviews, scheduling optimisation, and identifying training opportunities.</p>
+<h3>Staff-level reporting</h3>
+<p>Revenue, average ticket, product sales, tips, and service mix, per person. Commission, reviews, who you roster when, and who needs training all come out of it.</p>
 
-<h3>Package, Membership, and Subscription Billing</h3>
-<p>If you offer prepaid service bundles, monthly memberships, or recurring subscriptions, your POS must track redemptions, manage expiration dates, handle recurring charges, and alert staff when a package is nearing depletion. Manual tracking of packages leads to revenue leakage and client disputes that damage relationships.</p>
+<h3>Package, membership, and subscription billing</h3>
+<p>Selling prepaid bundles, memberships, or subscriptions means the POS has to count redemptions, watch expiry dates, take recurring charges, and warn your team when someone is nearly out. Tracking packages by hand loses money and starts arguments you cannot win.</p>
 
-<h3>Refund and Void Processing</h3>
-<p>Clean handling of partial refunds, full refunds, and voided transactions with automatic adjustment of staff commissions, inventory levels, and financial reports. A clear audit trail protects you during disputes and simplifies bookkeeping.</p>
+<h3>Refund and void processing</h3>
+<p>Partial refunds, full refunds, and voids handled cleanly, with commissions, stock, and the financial reports adjusting themselves. The audit trail is what protects you in a dispute and what makes the bookkeeping simple.</p>
 
-<h3>Offline Functionality</h3>
-<p>Internet outages should not halt your business. The POS should queue transactions during connectivity issues and process them when the connection restores. This is critical for mobile professionals and any location where internet reliability is inconsistent.</p>
+<h3>Offline functionality</h3>
+<p>Losing the internet should not stop you trading. The POS holds transactions while the connection is down and puts them through when it returns, which matters most for mobile work and anywhere the line is unreliable.</p>
 
-<h2>Integration Depth: The Make-or-Break Factor</h2>
-<p>The most important evaluation criterion for a salon POS is not the payment processing rate - it is how deeply the POS integrates with the rest of your business tools.</p>
+<h2>Integration depth: the make-or-break factor</h2>
+<p>The processing rate is not what should decide this. How deeply the POS connects to everything else you run is.</p>
 
-<h3>Shallow Integration (Standalone POS)</h3>
-<p>A standalone POS processes payments but does not connect to your booking system, client database, or inventory. You export data manually or use third-party connectors. This creates data silos, duplicate entry, and reconciliation headaches.</p>
-<p><strong>Example:</strong> You use Booksy for appointments and a separate Square terminal for payments. At month-end, you manually match payments to appointments in a spreadsheet to calculate commissions.</p>
+<h3>Shallow integration (standalone POS)</h3>
+<p>It takes payments and knows nothing about your booking system, your client database, or your stock. You export data by hand or bolt on a third-party connector, and end up with silos, duplicate entry, and a reconciliation problem every month.</p>
+<p><strong>Example:</strong> appointments live in Booksy and payments go through a separate Square terminal. At month end somebody matches the two in a spreadsheet to work out commission.</p>
 
-<h3>Medium Integration (API-Connected)</h3>
-<p>The POS connects to your booking and management software through an API or integration plugin. Data flows between systems, but there may be sync delays, occasional mismatches, and limitations in what data transfers.</p>
-<p><strong>Example:</strong> You use a salon management platform that integrates with Stripe. Payments sync to client profiles within a few minutes, but tip allocation and commission calculations may require manual steps.</p>
+<h3>Medium integration (API-connected)</h3>
+<p>An API or plugin joins the POS to your booking and management software. Data does move between them, with sync delays, the occasional mismatch, and limits on what actually crosses.</p>
+<p><strong>Example:</strong> your salon management platform integrates with Stripe. Payments reach client profiles within minutes, and tip allocation and commission may still need somebody to finish them.</p>
 
-<h3>Deep Integration (Native Platform POS)</h3>
-<p>The POS is built into the same platform that handles booking, client management, staff scheduling, and communication. There is no sync because there is no separation - a payment is automatically connected to the appointment, the client, the staff member, the commission, and the financial report.</p>
-<p><strong>Example:</strong> <a href="/en/features/business/payment-processing">The Daisy&rsquo;s integrated payment system</a> processes the payment, updates the client profile, calculates the staff commission, adjusts inventory for products used, triggers a digital receipt via WhatsApp, and records the transaction in your financial dashboard - all in one step.</p>
-<p>For most salons, deep integration saves 5&ndash;10 hours per week in administrative work compared to shallow integration, and eliminates the data discrepancies that lead to commission disputes and inaccurate reporting.</p>
+<h3>Deep integration (native platform POS)</h3>
+<p>The POS lives inside the same platform as booking, client management, scheduling, and communication. Nothing syncs because nothing is separate, so a payment already belongs to the appointment, the client, the staff member, the commission, and the report.</p>
+<p><strong>Example:</strong> <a href="/en/features/business/payment-processing">The Daisy&rsquo;s integrated payment system</a> takes the payment, updates the client profile, calculates the commission, adjusts stock for what was used, sends a receipt over WhatsApp, and records the transaction in your financial dashboard, in one action.</p>
+<p>Against a shallow setup, that saves most salons 5&ndash;10 hours per week of administration and removes the discrepancies that cause commission disputes and unreliable reporting.</p>
 
-<h2>Total Cost of Ownership: Beyond the Processing Rate</h2>
-<p>The headline processing rate (typically 2.5&ndash;2.9% per transaction) is only one component of what your POS actually costs. A complete cost analysis includes:</p>
+<h2>Total cost of ownership: beyond the processing rate</h2>
+<p>The headline rate, typically 2.5&ndash;2.9% per transaction, is one line among several. The full picture:</p>
 
-<h3>Direct Costs</h3>
+<h3>Direct costs</h3>
 <ul>
-<li><strong>Hardware purchase:</strong> One-time cost for terminals, readers, tablets, stands, and accessories. Budget 1,000&ndash;3,000 AED per location for a typical setup.</li>
-<li><strong>Processing fees:</strong> Per-transaction percentage plus a fixed fee. At 80,000 AED monthly card revenue, expect 2,000&ndash;2,400 AED in processing fees.</li>
-<li><strong>Software subscription:</strong> Monthly platform fee ranging from 100&ndash;800 AED depending on features and provider.</li>
-<li><strong>Hardware replacement:</strong> Card readers last 2&ndash;3 years. Budget 200&ndash;500 AED every 2&ndash;3 years for replacement.</li>
+<li><strong>Hardware purchase:</strong> terminals, readers, tablets, stands, and the bits that hold them together. Budget 1,000&ndash;3,000 AED per location for a typical setup.</li>
+<li><strong>Processing fees:</strong> a percentage per transaction plus a fixed amount. At 80,000 AED monthly card revenue, expect 2,000&ndash;2,400 AED in processing fees.</li>
+<li><strong>Software subscription:</strong> 100&ndash;800 AED monthly, depending on the features and who you buy from.</li>
+<li><strong>Hardware replacement:</strong> card readers last 2&ndash;3 years, so put aside 200&ndash;500 AED every 2&ndash;3 years.</li>
 </ul>
 
-<h3>Indirect Costs</h3>
+<h3>Indirect costs</h3>
 <ul>
-<li><strong>Administration time:</strong> A disconnected POS costs 5&ndash;10 hours per week in manual reconciliation, commission calculation, and data entry. At a manager&rsquo;s hourly rate, this is 1,500&ndash;3,000 AED per month in labour.</li>
-<li><strong>Commission errors:</strong> Manual commission tracking leads to 2&ndash;5% error rates that either overpay or underpay staff, costing money or damaging trust.</li>
-<li><strong>Missed upsell revenue:</strong> A POS that does not prompt add-on services or product recommendations at checkout leaves 8&ndash;15% of potential revenue on the table.</li>
-<li><strong>Client friction:</strong> Slow checkout, limited payment options, and paper receipts create a negative final impression that affects rebooking rates.</li>
+<li><strong>Administration time:</strong> a disconnected POS costs 5&ndash;10 hours per week in reconciliation, commission calculation, and typing things in. At a manager&rsquo;s hourly rate, that is 1,500&ndash;3,000 AED per month in labour.</li>
+<li><strong>Commission errors:</strong> tracking commission by hand produces 2&ndash;5% error rates, which either costs you money or costs you your team's trust.</li>
+<li><strong>Missed upsell revenue:</strong> a POS that never suggests an add-on or a product at checkout leaves 8&ndash;15% of potential revenue behind.</li>
+<li><strong>Client friction:</strong> a slow till, few payment options, and a paper receipt are the last thing anyone experiences, and it shows in your rebooking rate.</li>
 </ul>
 
-<h3>Hidden Fees to Investigate</h3>
+<h3>Hidden fees to investigate</h3>
 <ul>
-<li>Equipment lease fees (never lease - always buy outright)</li>
-<li>PCI compliance surcharges (reputable providers include this)</li>
-<li>Early termination penalties (avoid long-term contracts)</li>
-<li>Chargeback fees (typically 50&ndash;100 AED per dispute)</li>
-<li>International card surcharges (1&ndash;1.5% extra per transaction)</li>
-<li>Instant payout fees (1&ndash;1.5% for same-day access to funds)</li>
+<li>Equipment lease fees, and never lease when you can buy outright</li>
+<li>PCI compliance surcharges, which reputable providers include anyway</li>
+<li>Early termination penalties, and avoid long contracts entirely</li>
+<li>Chargeback fees, typically 50&ndash;100 AED per dispute</li>
+<li>International card surcharges at 1&ndash;1.5% extra per transaction</li>
+<li>Instant payout fees of 1&ndash;1.5% for same-day access to your money</li>
 <li>Minimum monthly processing requirements</li>
 </ul>
 
-<h2>Evaluation Framework: Scoring Your Options</h2>
-<p>Use this weighted scoring framework when comparing POS systems. Rate each criterion 1&ndash;5 and multiply by the weight:</p>
+<h2>Evaluation framework: scoring your options</h2>
+<p>Score each option properly rather than going on impressions. Rate every criterion 1&ndash;5 and multiply by the weight:</p>
 <ul>
-<li><strong>Integration depth (weight: 5):</strong> How deeply does the POS connect to booking, clients, staff, and reporting?</li>
-<li><strong>Payment method support (weight: 4):</strong> Cards, mobile wallets, cash, split payments, packages, gift cards?</li>
-<li><strong>Reporting quality (weight: 4):</strong> Real-time dashboards, staff-level breakdown, exportable data?</li>
-<li><strong>Ease of use (weight: 3):</strong> How quickly can your team learn the system? How many clicks to process a standard checkout?</li>
-<li><strong>Total cost (weight: 3):</strong> All-in monthly cost including processing, subscription, and hidden fees?</li>
-<li><strong>Reliability (weight: 3):</strong> Uptime history, offline capability, customer support responsiveness?</li>
-<li><strong>Scalability (weight: 2):</strong> Can the system grow with you from one location to multiple branches?</li>
+<li><strong>Integration depth (weight: 5):</strong> how far into booking, clients, staff, and reporting does it actually reach?</li>
+<li><strong>Payment method support (weight: 4):</strong> cards, mobile wallets, cash, split payments, packages, gift cards?</li>
+<li><strong>Reporting quality (weight: 4):</strong> live dashboards, a breakdown per person, data you can export?</li>
+<li><strong>Ease of use (weight: 3):</strong> how fast will your team learn it, and how many taps does an ordinary checkout take?</li>
+<li><strong>Total cost (weight: 3):</strong> everything monthly, meaning processing, subscription, and whatever is in the small print?</li>
+<li><strong>Reliability (weight: 3):</strong> uptime history, offline capability, and whether support answers?</li>
+<li><strong>Scalability (weight: 2):</strong> will it follow you from one location to several?</li>
 </ul>
-<p>Any system scoring below 3.5 weighted average should be eliminated from consideration. The Daisy&rsquo;s <a href="/en/pricing/business">salon management plans</a> consistently score highest on integration depth because payment processing is native to the platform rather than bolted on.</p>
+<p>Anything below a 3.5 weighted average comes off the list. The Daisy&rsquo;s <a href="/en/pricing/business">salon management plans</a> score highest on integration depth, because the payment processing was built into the platform rather than attached to it.</p>
 
-<h2>Single-Location vs Multi-Branch Considerations</h2>
+<h2>Single-location vs multi-branch considerations</h2>
 
-<h3>Single-Location Salons</h3>
-<p>Focus on simplicity and integration. A tablet-based POS running your salon management platform with an attached card reader is the most cost-effective and functional setup. Avoid over-investing in enterprise hardware you do not need.</p>
+<h3>Single-location salons</h3>
+<p>Keep it simple and keep it joined up. A tablet running your salon management platform with a card reader attached does everything you need for the least money. Do not buy enterprise hardware for a business that does not need it.</p>
 
-<h3>Multi-Branch Operations</h3>
-<p>Centralised reporting across all locations is critical. Your POS must aggregate revenue, staff performance, and client data across branches into a single dashboard. Look for systems that support location-level permissions (branch managers see their location, owners see all locations), consolidated financial reporting, and cross-location client profiles so a client who visits your Downtown branch has their full history visible when they walk into your Marina location.</p>
+<h3>Multi-branch operations</h3>
+<p>Everything has to come together in one place. Revenue, staff performance, and client data from every branch on one dashboard. Look for location-level permissions, so branch managers see their branch and owners see all of them, consolidated financial reporting, and client profiles that cross locations, so someone who normally visits your Downtown branch arrives at Marina with their history already there.</p>
 
-<h2>Migration: Switching From Your Current System</h2>
-<p>Switching POS systems is less disruptive than most owners expect. Here is the typical timeline:</p>
+<h2>Migration: switching from your current system</h2>
+<p>This disrupts far less than owners expect. The usual timeline:</p>
 <ol>
-<li><strong>Week 1:</strong> Sign up and configure the new system. Import your service menu, pricing, staff profiles, and client database. Most modern platforms handle data migration with onboarding support.</li>
-<li><strong>Week 2:</strong> Train your team on the new checkout flow. Run test transactions with every payment method you accept.</li>
-<li><strong>Week 3:</strong> Go live with the new system while keeping the old one available as a backup. Process all real transactions through the new POS.</li>
-<li><strong>Week 4:</strong> Deactivate the old system once you have verified accuracy, received all pending payouts, and confirmed that your team is comfortable with the new workflow.</li>
+<li><strong>Week 1:</strong> sign up and configure it. Import the service menu, the prices, staff profiles, and the client database, which most platforms will help you do.</li>
+<li><strong>Week 2:</strong> train the team on the new checkout and run a test transaction through every payment method you take.</li>
+<li><strong>Week 3:</strong> go live, keeping the old system there as a fallback, and put every real transaction through the new one.</li>
+<li><strong>Week 4:</strong> turn the old one off once the numbers check out, every pending payout has arrived, and your team is no longer asking questions.</li>
 </ol>
-<p>The Daisy&rsquo;s onboarding team provides dedicated migration support, including transferring your client database, payment history, and appointment records so you start with a complete operational picture from day one.</p>
+<p>The Daisy&rsquo;s onboarding team runs the migration with you, moving the client database, payment history, and appointment records so nothing starts empty.</p>
 
-<h2>Frequently Asked Questions</h2>
+<h2>Frequently asked questions</h2>
 
 <h3>How much should I budget for a salon POS system?</h3>
-<p>For a single-location salon, budget 1,500&ndash;3,000 AED for initial hardware and 200&ndash;500 AED per month for software. Processing fees of 2.5&ndash;2.9% per transaction are additional. Integrated platforms like The Daisy include POS as part of the salon management subscription, so you do not pay for a separate POS system on top of your management tools.</p>
+<p>For one location, 1,500&ndash;3,000 AED for the hardware and 200&ndash;500 AED per month for software, with processing fees of 2.5&ndash;2.9% per transaction on top. Integrated platforms like The Daisy include the POS in the salon management subscription, so there is no second bill for it.</p>
 
 <h3>Can I use my existing card reader with a new POS platform?</h3>
-<p>It depends on the hardware and platform. Some platforms are hardware-agnostic and support standard Bluetooth card readers. Others require specific certified devices. Check compatibility before purchasing. If you need new hardware, it is often a one-time cost under 500 AED.</p>
+<p>Sometimes. Some platforms take any standard Bluetooth reader and others insist on specific certified devices, so check before you commit. Replacing it is usually a one-time cost under 500 AED.</p>
 
 <h3>What is the difference between a salon POS and a generic retail POS?</h3>
-<p>A salon POS understands appointments, service-based billing, tip management, staff commissions, and package redemptions. A generic retail POS is built for product inventory and item-based scanning. Using a generic POS in a salon forces workarounds for tip splitting, commission tracking, and appointment-linked checkout that waste time and introduce errors.</p>
+<p>A salon POS knows what an appointment is, how service billing works, and how to handle tips, commission, and package redemptions. A retail POS was built to scan products off a shelf. Use one in a salon and you will spend your life working around tip splitting, commission, and checkout that has no idea what was booked.</p>
 
 <h3>Do I need internet to process payments?</h3>
-<p>Modern POS systems require internet for real-time card authorisation. However, good systems offer offline mode that queues transactions during brief outages and processes them when connectivity returns. For locations with unreliable internet, a cellular backup connection (a mobile hotspot) ensures you can always process payments.</p>
+<p>Card authorisation happens in real time, so yes. Good systems hold transactions through a short outage and process them when the line comes back. Where the internet is unreliable, keep a mobile hotspot as a backup and you will never be unable to take money.</p>
 
 <h3>How do I handle PCI compliance with a POS system?</h3>
-<p>Reputable POS providers handle PCI DSS compliance on your behalf. Card data is encrypted at the terminal and never stored on your local systems. Cloud-based platforms like The Daisy maintain PCI DSS Level 1 compliance, the highest security standard, so you do not need to manage compliance yourself or pay separate compliance fees.</p>
+<p>A reputable provider carries it for you. Card data is encrypted at the terminal and never touches your own systems. Cloud platforms like The Daisy maintain PCI DSS Level 1 compliance, the highest security standard, so compliance is neither your job nor a separate fee.</p>
 `,
     metaTitle: 'Salon POS Systems: Buyer\'s Guide | The Daisy',
     metaDescription:
@@ -264,127 +264,127 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
     description:
       'A comprehensive guide to salon tipping covering etiquette standards, how to set a clear tipping policy for your business, digital tipping solutions that increase gratuities, and tip distribution models that keep your team happy.',
     aboutPosts: `
-<h2>Tipping in the Beauty Industry: The Current Landscape</h2>
-<p>Tipping accounts for 15&ndash;25% of a beauty professional&rsquo;s total compensation in most markets. Yet most salons have no formal tipping policy - leaving clients confused about expectations, staff uncertain about their income, and owners caught in the middle of disputes over tip distribution. A well-designed tipping framework within your <a href="/en/resources/blog/business/salon-payment-solutions">salon payment workflow</a> eliminates this ambiguity for everyone involved.</p>
-<p>The shift to digital payments has fundamentally changed tipping dynamics. Cash tips are declining as fewer clients carry physical currency. A 2025 Square report found that digital tip prompts increase average gratuity by 18% compared to cash-only tipping - but only when the tipping interface is well-designed and naturally integrated into the checkout experience. Salons that ignore this shift are effectively reducing their team&rsquo;s income.</p>
-<p>This guide covers everything you need to build a clear, fair, and modern tipping system for your salon.</p>
+<h2>Tipping in the beauty industry: the current landscape</h2>
+<p>Tipping accounts for 15&ndash;25% of a beauty professional&rsquo;s total compensation in most markets, and almost no salon has written a policy for it. Clients guess at what is expected, staff cannot predict their income, and the owner ends up arbitrating arguments about who gets what. A proper framework inside your <a href="/en/resources/blog/business/salon-payment-solutions">salon payment workflow</a> ends the guessing for everyone.</p>
+<p>Digital payment changed all of this. Cash tips are falling away because fewer people carry any. A 2025 Square report found that digital tip prompts increase average gratuity by 18% compared to cash-only tipping, though only where the interface is well designed and belongs to the checkout rather than interrupting it. Ignoring that shift quietly cuts your team&rsquo;s income.</p>
+<p>What follows is how to build a tipping system that is clear, fair, and of this decade.</p>
 
-<h2>Tipping Etiquette: What Clients Actually Expect</h2>
-<p>Client expectations around tipping vary by market, service type, and generation. Understanding these expectations helps you design a system that feels natural rather than pushy.</p>
+<h2>Tipping etiquette: what clients actually expect</h2>
+<p>Expectations shift by market, by service, and by age. Knowing where yours sit is what keeps the system feeling natural rather than grasping.</p>
 
-<h3>Standard Tipping Rates by Service</h3>
+<h3>Standard tipping rates by service</h3>
 <ul>
-<li><strong>Haircut and styling:</strong> 15&ndash;20% is standard in most markets. Clients who receive exceptional service or complex work often tip 25%+.</li>
-<li><strong>Colour treatments:</strong> 15&ndash;20% of the total service cost, including products. For high-value colour corrections (1,000+ AED), 15% is considered generous.</li>
-<li><strong>Nail services:</strong> 15&ndash;20% is standard. Quick services like basic manicures may see flat-amount tips (20&ndash;30 AED) rather than percentage-based.</li>
-<li><strong>Spa treatments and facials:</strong> 15&ndash;20%. Longer treatments (90+ minutes) tend to receive higher percentage tips because the therapist&rsquo;s time investment is more visible.</li>
-<li><strong>Bridal and event styling:</strong> 20&ndash;25% is common for bridal work due to the complexity, early hours, and emotional significance. Some clients provide flat bonuses (200&ndash;500 AED) instead of percentage-based tips.</li>
-<li><strong>Assistants and shampooing:</strong> 20&ndash;50 AED flat tip is customary when an assistant contributes to the service but is not the primary provider.</li>
+<li><strong>Haircut and styling:</strong> 15&ndash;20% is standard in most markets, and anyone who got something exceptional or genuinely difficult often tips 25%+.</li>
+<li><strong>Colour treatments:</strong> 15&ndash;20% of the total including products. On a high-value colour correction over 1,000 AED, 15% already reads as generous.</li>
+<li><strong>Nail services:</strong> 15&ndash;20% is standard, though a quick basic manicure often gets a flat 20&ndash;30 AED instead of a percentage.</li>
+<li><strong>Spa treatments and facials:</strong> 15&ndash;20%. Anything over 90 minutes tends to attract a higher percentage, because the therapist&rsquo;s time is impossible to miss.</li>
+<li><strong>Bridal and event styling:</strong> 20&ndash;25% is common, given the complexity, the early start, and what the day means. Some clients hand over a flat 200&ndash;500 AED instead.</li>
+<li><strong>Assistants and shampooing:</strong> a flat 20&ndash;50 AED is customary where someone helped without being the main provider.</li>
 </ul>
 
-<h3>Regional Variations</h3>
-<p>In the GCC, tipping culture is less standardised than in the US or Europe. Many clients from certain cultural backgrounds are not accustomed to tipping for personal services. Digital prompts help normalise tipping in these contexts by presenting it as a natural part of the checkout flow rather than an awkward social negotiation.</p>
+<h3>Regional variations</h3>
+<p>Tipping in the GCC is far less settled than in the US or Europe, and plenty of clients simply did not grow up tipping for personal services. A digital prompt makes it ordinary rather than a negotiation, which is exactly what those clients need.</p>
 
-<h2>Building Your Salon Tipping Policy</h2>
-<p>A formal tipping policy protects your team, sets client expectations, and prevents disputes. Here is what your policy should address:</p>
+<h2>Building your salon tipping policy</h2>
+<p>Writing it down protects your team, tells clients where they stand, and stops the arguments. Cover four things:</p>
 
-<h3>Tip Acceptance</h3>
-<p>State clearly that your salon accepts tips and that they are appreciated but never expected. This language should appear on your booking confirmation, at checkout, and on your website. Phrasing matters: &ldquo;Gratuities are welcomed and go directly to your service provider&rdquo; is better than &ldquo;Please tip your stylist.&rdquo;</p>
+<h3>Tip acceptance</h3>
+<p>Say that you accept tips, that they are appreciated, and that nobody is expected to leave one. Put it on the booking confirmation, at checkout, and on your website. The wording matters: &ldquo;Gratuities are welcomed and go directly to your service provider&rdquo; is better than &ldquo;Please tip your stylist.&rdquo;</p>
 
-<h3>Tip Distribution Model</h3>
-<p>Choose one of these models and communicate it transparently to your team:</p>
+<h3>Tip distribution model</h3>
+<p>Pick one of these and tell your team exactly how it works:</p>
 <ul>
-<li><strong>Individual tips (most common):</strong> Each professional keeps the tips they personally receive. Simple and directly incentivises individual service quality.</li>
-<li><strong>Tip pooling:</strong> All tips are collected and distributed equally (or by hours worked) across the team. Creates team cohesion but may demotivate top performers who generate higher individual tips.</li>
-<li><strong>Hybrid model:</strong> Primary service providers keep 80% of their individual tips, with 20% pooled for support staff (assistants, receptionists). Balances individual motivation with team fairness.</li>
-<li><strong>Role-based distribution:</strong> Different roles receive different pool percentages. For example, stylists keep 100% of direct tips, while spa therapists pool 50% for reception and cleaning staff who support the experience.</li>
+<li><strong>Individual tips (most common):</strong> everyone keeps what they were given. Simple, and it rewards the person who earned it.</li>
+<li><strong>Tip pooling:</strong> everything goes into one pot and comes out evenly, or by hours worked. It holds a team together and can flatten your best earners.</li>
+<li><strong>Hybrid model:</strong> the service provider keeps 80% and 20% goes into a pool for assistants and reception. Keeps the individual motivated and pays the people who made it possible.</li>
+<li><strong>Role-based distribution:</strong> the percentage varies by role. Stylists might keep 100% of direct tips while spa therapists pool 50% for the reception and cleaning staff who make that experience work.</li>
 </ul>
 
-<h3>Tip Payment Timing</h3>
-<p>Digital tips processed through your POS should be included in the next regular payroll cycle. Cash tips are typically taken home the same day. Be clear about this timing so staff understand when to expect digital tip payments.</p>
+<h3>Tip payment timing</h3>
+<p>Digital tips go through the POS and into the next payroll run. Cash goes home that evening. Say which is which, so nobody is waiting for money they did not know was delayed.</p>
 
-<h3>Tax Implications</h3>
-<p>In most jurisdictions, tips are taxable income for the recipient. Your policy should note that staff are responsible for reporting tip income according to local tax regulations. As the business owner, you may have reporting obligations as well - consult your accountant for jurisdiction-specific requirements.</p>
+<h3>Tax implications</h3>
+<p>In most jurisdictions, tips are taxable income for whoever receives them, and your policy should say that reporting it is their responsibility under local regulations. You may have obligations of your own, so ask your accountant what applies where you are.</p>
 
-<h2>Digital Tipping: Setup and Optimisation</h2>
-<p>Digital tipping through your POS or salon management platform is the single most impactful change you can make to your team&rsquo;s tip income. Here is how to implement and optimise it.</p>
+<h2>Digital tipping: setup and optimisation</h2>
+<p>Nothing else you can do will move your team&rsquo;s tip income as much. How to set it up properly:</p>
 
-<h3>Configuring Tip Prompts</h3>
-<p>The design of your tipping screen significantly affects tip amounts. Best practices include:</p>
+<h3>Configuring tip prompts</h3>
+<p>How the screen looks changes what people leave. Four rules:</p>
 <ul>
-<li><strong>Three preset percentages plus custom:</strong> Display three suggested percentages (e.g., 15%, 20%, 25%) and a &ldquo;Custom Amount&rdquo; option. Three choices avoid decision paralysis; four or more slow down the checkout.</li>
-<li><strong>Default highlight:</strong> Visually highlight the middle option (20%) without pre-selecting it. This uses the anchoring effect to nudge clients toward a reasonable amount without feeling manipulative.</li>
-<li><strong>Show dollar amounts:</strong> Display both the percentage and the calculated amount (&ldquo;20% - 60 AED&rdquo;). Clients process concrete numbers faster than percentages, especially for high-value services.</li>
-<li><strong>Include a no-tip option:</strong> Always include a clear &ldquo;No Tip&rdquo; or &ldquo;Skip&rdquo; button. Hiding this option creates resentment and negative reviews. Making it visible but slightly less prominent than the tip options is the right balance.</li>
+<li><strong>Three preset percentages plus custom:</strong> three suggestions such as 15%, 20%, 25%, plus a &ldquo;Custom Amount&rdquo; option. Three is enough to choose from quickly, and four or more slows the whole checkout.</li>
+<li><strong>Default highlight:</strong> make the middle option at 20% stand out without pre-selecting it. That anchors people to a sensible number without anyone feeling worked on.</li>
+<li><strong>Show dollar amounts:</strong> put the percentage and the actual figure together, as in &ldquo;20% - 60 AED&rdquo;. People read a number faster than a percentage, particularly on an expensive service.</li>
+<li><strong>Include a no-tip option:</strong> always show a clear &ldquo;No Tip&rdquo; or &ldquo;Skip&rdquo; button. Hiding it earns you resentment and reviews saying so. Visible but slightly quieter than the tip options is the balance.</li>
 </ul>
-<p>The Daisy&rsquo;s <a href="/en/features/business/payment-processing">integrated payment system</a> includes fully configurable tipping prompts that salon owners can customise by service type, price tier, and staff member preferences.</p>
+<p>The Daisy&rsquo;s <a href="/en/features/business/payment-processing">integrated payment system</a> lets you configure the prompts by service type, price tier, and what individual staff prefer.</p>
 
-<h3>When to Present the Tip Prompt</h3>
-<p>Timing affects outcomes. The tip prompt should appear:</p>
+<h3>When to present the tip prompt</h3>
+<p>Timing changes the result. It should appear:</p>
 <ul>
-<li><strong>After the total is displayed</strong> but before the final payment confirmation.</li>
-<li><strong>On the client-facing screen</strong> (not the staff-facing screen), so the client makes their choice privately.</li>
-<li><strong>After the card or phone is tapped</strong> for contactless payments, as part of the payment confirmation flow.</li>
+<li><strong>After the total is displayed</strong> and before the payment is confirmed.</li>
+<li><strong>On the client-facing screen</strong> rather than the staff one, so the decision is private.</li>
+<li><strong>After the card or phone is tapped</strong> on contactless payments, inside the confirmation flow.</li>
 </ul>
-<p>Never present the tip screen while the service provider is watching or standing beside the client. Privacy during the tip decision is essential for the client&rsquo;s comfort and honesty.</p>
+<p>Never put the tip screen up while the stylist is standing there. Anyone choosing under supervision is not really choosing, and the client&rsquo;s comfort depends on it.</p>
 
-<h3>Tipping for Multiple Service Providers</h3>
-<p>When a client receives services from multiple staff (colourist + stylist, or nail tech + spa therapist), your system should allow tipping each provider individually. A single tip prompt that asks the client to split a tip amount manually creates confusion and often results in a smaller total tip.</p>
+<h3>Tipping for multiple service providers</h3>
+<p>Where two people worked on someone, whether a colourist and a stylist or a nail tech and a spa therapist, the system should let the client tip each of them. Asking somebody to divide one amount themselves confuses them, and the total usually comes out smaller.</p>
 
-<h2>Managing Tip-Related Staff Dynamics</h2>
-<p>Tipping creates inherent inequality among staff. Some stylists consistently earn higher tips due to seniority, client relationships, or service type. Here is how to manage the dynamics:</p>
+<h2>Managing tip-related staff dynamics</h2>
+<p>Tips are never distributed evenly. Seniority, relationships, and the kind of work someone does all push certain stylists ahead. Managing that:</p>
 
 <h3>Transparency</h3>
-<p>Publish your tip distribution policy in your employee handbook and review it during onboarding. Staff should never learn about tip policies through gossip or surprise payroll calculations.</p>
+<p>Put the distribution policy in the handbook and walk through it when someone joins. Nobody should learn how tips work from gossip or from a payslip that surprised them.</p>
 
-<h3>Addressing Tip Disparity</h3>
-<p>If tip pooling is not your model, significant disparities between team members may indicate coaching opportunities. A stylist consistently receiving below-average tips may benefit from service quality feedback, upselling training, or client communication coaching rather than a change in tip structure.</p>
+<h3>Addressing tip disparity</h3>
+<p>Without pooling, a large gap between people is usually information rather than injustice. Someone consistently below average may need feedback on the work itself, training on upselling, or help with how they talk to clients, none of which is solved by changing the tip structure.</p>
 
-<h3>Preventing Tip Solicitation</h3>
-<p>Your policy should prohibit staff from directly asking clients for tips or commenting on tip amounts. The digital prompt handles the ask professionally. Staff who pressure clients for tips create an uncomfortable experience that drives clients away - costing more in lost revenue than any individual tip is worth.</p>
+<h3>Preventing tip solicitation</h3>
+<p>Nobody asks a client for a tip or remarks on the size of one. The prompt does the asking, politely and without a face attached. Anyone applying pressure makes the room uncomfortable and loses you more in departed clients than the tip was ever worth.</p>
 
-<h2>Cash Tips vs Digital Tips: A Practical Comparison</h2>
-<p>Both coexist in most salons. Here is how they compare:</p>
+<h2>Cash tips vs digital tips: a practical comparison</h2>
+<p>Most salons have both. Side by side:</p>
 <ul>
-<li><strong>Tracking:</strong> Digital tips are automatically recorded and attributed. Cash tips rely on self-reporting, which is inconsistent and difficult to audit.</li>
-<li><strong>Frequency:</strong> As fewer clients carry cash, digital prompts ensure tips are offered on every transaction. Cash-only tipping means no prompt, no tip on most transactions.</li>
-<li><strong>Amount:</strong> Digital tips average 18% higher than cash tips according to Square&rsquo;s 2025 data, because preset amounts anchor expectations upward.</li>
-<li><strong>Payroll integration:</strong> Digital tips flow directly into payroll calculations. Cash tips require manual reporting and reconciliation.</li>
-<li><strong>Tax compliance:</strong> Digital tips create automatic records for tax purposes. Cash tips require trust-based reporting.</li>
+<li><strong>Tracking:</strong> digital tips record and attribute themselves. Cash relies on people telling you, which is inconsistent and impossible to check.</li>
+<li><strong>Frequency:</strong> with fewer people carrying notes, a digital prompt means the question gets asked every time. Cash-only means it mostly does not get asked at all.</li>
+<li><strong>Amount:</strong> digital tips average 18% higher than cash tips according to Square&rsquo;s 2025 data, because the preset amounts pull expectations up.</li>
+<li><strong>Payroll integration:</strong> digital tips arrive in payroll on their own. Cash needs reporting and reconciling by hand.</li>
+<li><strong>Tax compliance:</strong> digital tips leave a record. Cash tips leave whatever someone chose to write down.</li>
 </ul>
-<p>The practical recommendation: encourage digital payments (and therefore digital tipping) as your default, while always accepting cash as a secondary option.</p>
+<p>So make digital the default, and therefore digital tipping, while always taking cash without a word.</p>
 
-<h2>Communicating Your Tipping Policy to Clients</h2>
-<p>Clients appreciate clarity. Communicate your policy through:</p>
+<h2>Communicating your tipping policy to clients</h2>
+<p>People want to know where they stand. Tell them in four places:</p>
 <ul>
-<li><strong>Booking confirmation:</strong> A brief note such as &ldquo;Tips are appreciated and go directly to your service provider. Digital tipping is available at checkout.&rdquo;</li>
-<li><strong>Website FAQ:</strong> Address tipping etiquette in your FAQ section so clients can review expectations before visiting.</li>
-<li><strong>Checkout experience:</strong> The digital tip prompt itself communicates the policy. A well-designed prompt normalises tipping without verbal awkwardness.</li>
-<li><strong>New client welcome:</strong> Mention tipping naturally during the new client welcome: &ldquo;We accept all payment methods, and tipping is available digitally at checkout if you would like to show your appreciation.&rdquo;</li>
-</ul>
-
-<h2>Measuring Tipping Performance</h2>
-<p>Track these metrics monthly to understand and improve your salon&rsquo;s tipping culture:</p>
-<ul>
-<li><strong>Tip rate:</strong> Percentage of transactions that include a tip. Target: 60%+ for digital-prompt-enabled salons.</li>
-<li><strong>Average tip percentage:</strong> Mean tip as a percentage of service total. Benchmark: 17&ndash;20%.</li>
-<li><strong>Digital vs cash tip ratio:</strong> Percentage of tips received digitally. Moving target, but 70%+ digital indicates healthy adoption.</li>
-<li><strong>Tip per staff member:</strong> Individual tip performance for coaching and recognition purposes.</li>
+<li><strong>Booking confirmation:</strong> one line, along the lines of &ldquo;Tips are appreciated and go directly to your service provider. Digital tipping is available at checkout.&rdquo;</li>
+<li><strong>Website FAQ:</strong> answer it there, so anyone who wants to know beforehand can find out beforehand.</li>
+<li><strong>Checkout experience:</strong> the prompt is the policy. Designed well, it makes tipping ordinary without anyone having to say anything.</li>
+<li><strong>New client welcome:</strong> work it into the welcome: &ldquo;We accept all payment methods, and tipping is available digitally at checkout if you would like to show your appreciation.&rdquo;</li>
 </ul>
 
-<h2>Frequently Asked Questions</h2>
+<h2>Measuring tipping performance</h2>
+<p>Four numbers, monthly, to see what your salon&rsquo;s tipping culture actually is:</p>
+<ul>
+<li><strong>Tip rate:</strong> what share of transactions include one. With digital prompts running, target 60%+.</li>
+<li><strong>Average tip percentage:</strong> the mean against the service total, benchmarked at 17&ndash;20%.</li>
+<li><strong>Digital vs cash tip ratio:</strong> how much comes in digitally. The target keeps moving, and 70%+ digital is healthy.</li>
+<li><strong>Tip per staff member:</strong> individual performance, for coaching and for saying well done.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
 
 <h3>Should I add a mandatory service charge instead of relying on tips?</h3>
-<p>Mandatory service charges (10&ndash;15%) are common in some markets and eliminate tipping ambiguity. However, in beauty services, they can feel impersonal and reduce client-staff bonding. Most successful salons keep tipping voluntary but make digital prompts seamless so the opt-in rate is high.</p>
+<p>Mandatory service charges of 10&ndash;15% are normal in some markets and they do end the ambiguity. In beauty they can read as impersonal and take something out of the relationship between client and stylist. Most salons that do well keep tipping voluntary and make the prompt so easy that most people say yes.</p>
 
 <h3>How do I handle a client who wants to tip cash when I prefer digital?</h3>
-<p>Always accept cash graciously. Never make a client feel their tip is inconvenient. You can mention digital tipping as an option (&ldquo;We also accept tips digitally at checkout if that is easier next time&rdquo;) but never refuse or redirect a cash tip in the moment.</p>
+<p>Take it, warmly. Nobody should ever feel their generosity was awkward. Mention the alternative if you like, along the lines of &ldquo;We also accept tips digitally at checkout if that is easier next time&rdquo;, and never refuse or redirect cash in the moment.</p>
 
 <h3>Can I require tip pooling for all staff?</h3>
-<p>Legally, this depends on your jurisdiction. In many regions, employers can mandate tip pooling among eligible staff but cannot include management or owners in the pool. Consult local labour regulations before implementing a pooling model.</p>
+<p>That depends where you are. In many regions an employer can require pooling among eligible staff and cannot put management or owners into the pool. Check your local labour regulations before you set one up.</p>
 
 <h3>What percentage of my staff's income should come from tips?</h3>
-<p>Tips should supplement a fair base wage, not replace it. If tips represent more than 25&ndash;30% of a team member&rsquo;s total compensation, your base wages may be too low. Staff who depend heavily on tips experience income volatility that increases turnover.</p>
+<p>Tips sit on top of a fair wage rather than standing in for one. Once they pass 25&ndash;30% of a team member&rsquo;s total compensation, look at your base rates. People living on tips live with unpredictable months, and unpredictable months are why people leave.</p>
 `,
     metaTitle: 'Salon Tipping: Policies & Digital Tips | The Daisy',
     metaDescription:

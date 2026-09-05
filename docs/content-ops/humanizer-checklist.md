@@ -286,18 +286,18 @@ smallest and the most constrained, so they are cheap to leave until last.
       `salon-loyalty-program-guide`
 - [x] Salon Referral Programs: Turn Clients Into Ambassadors  
       `salon-referral-program-guide`
-- [ ] Google My Business for Salons: Complete Optimization Guide  
+- [x] Google My Business for Salons: Complete Optimization Guide  
       `google-my-business-salon-optimization`
-- [ ] Salon SEO: Ranking Your Business in Local Search  
+- [x] Salon SEO: Ranking Your Business in Local Search  
       `salon-seo-local-search-guide`
-- [ ] Marketing Yourself as an Independent Beauty Professional  
+- [x] Marketing Yourself as an Independent Beauty Professional  
       `independent-beauty-professional-marketing`
 
 ### `salon-payments.ts` (6)
 
-- [ ] Salon POS Systems: Complete Buyer's Guide  
+- [x] Salon POS Systems: Complete Buyer's Guide  
       `salon-pos-system-buyers-guide`
-- [ ] Salon Tipping: Etiquette, Policies & Digital Solutions  
+- [x] Salon Tipping: Etiquette, Policies & Digital Solutions  
       `salon-tipping-policies-digital`
 - [ ] Contactless Payments for Salons: Setup Guide  
       `contactless-payments-salon-setup`
