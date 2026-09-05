@@ -360,107 +360,111 @@ only. Do not soften or sharpen a claim while rewriting it.
 
 - [x] anolla  
       `anolla`
-- [ ] bookingbee-ai  
+- [x] bookingbee-ai  
       `bookingbee-ai`
-- [ ] sharpai  
+- [x] sharpai  
       `sharpai`
 
-### `comparisonPages.ar.ts` (43)
+### `comparisonPages.ar.ts` (43): OUT OF SCOPE
 
-- [ ] daisy-vs-fresha  
+This file is Arabic copy. The humanizer pass covers English prose only; the
+Arabic mirrors need a native-speaker pass instead. These 43 entries duplicate the
+slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
+
+- [-] daisy-vs-fresha  
       `daisy-vs-fresha`
-- [ ] daisy-vs-booksy  
+- [-] daisy-vs-booksy  
       `daisy-vs-booksy`
-- [ ] daisy-vs-vagaro  
+- [-] daisy-vs-vagaro  
       `daisy-vs-vagaro`
-- [ ] daisy-vs-glossgenius  
+- [-] daisy-vs-glossgenius  
       `daisy-vs-glossgenius`
-- [ ] daisy-vs-mindbody  
+- [-] daisy-vs-mindbody  
       `daisy-vs-mindbody`
-- [ ] daisy-vs-toast  
+- [-] daisy-vs-toast  
       `daisy-vs-toast`
-- [ ] daisy-vs-boulevard  
+- [-] daisy-vs-boulevard  
       `daisy-vs-boulevard`
-- [ ] daisy-vs-glamera  
+- [-] daisy-vs-glamera  
       `daisy-vs-glamera`
-- [ ] daisy-vs-dingg  
+- [-] daisy-vs-dingg  
       `daisy-vs-dingg`
-- [ ] daisy-vs-repeatmd  
+- [-] daisy-vs-repeatmd  
       `daisy-vs-repeatmd`
-- [ ] daisy-vs-planity  
+- [-] daisy-vs-planity  
       `daisy-vs-planity`
-- [ ] daisy-vs-mangomint  
+- [-] daisy-vs-mangomint  
       `daisy-vs-mangomint`
-- [ ] daisy-vs-square-appointments  
+- [-] daisy-vs-square-appointments  
       `daisy-vs-square-appointments`
-- [ ] daisy-vs-phorest  
+- [-] daisy-vs-phorest  
       `daisy-vs-phorest`
-- [ ] daisy-vs-acuity-scheduling  
+- [-] daisy-vs-acuity-scheduling  
       `daisy-vs-acuity-scheduling`
-- [ ] fresha  
+- [-] fresha  
       `fresha`
-- [ ] booksy  
+- [-] booksy  
       `booksy`
-- [ ] vagaro  
+- [-] vagaro  
       `vagaro`
-- [ ] glossgenius  
+- [-] glossgenius  
       `glossgenius`
-- [ ] mindbody  
+- [-] mindbody  
       `mindbody`
-- [ ] boulevard  
+- [-] boulevard  
       `boulevard`
-- [ ] mangomint  
+- [-] mangomint  
       `mangomint`
-- [ ] square-appointments  
+- [-] square-appointments  
       `square-appointments`
-- [ ] phorest  
+- [-] phorest  
       `phorest`
-- [ ] acuity-scheduling  
+- [-] acuity-scheduling  
       `acuity-scheduling`
-- [ ] timely  
+- [-] timely  
       `timely`
-- [ ] zenoti  
+- [-] zenoti  
       `zenoti`
-- [ ] setmore  
+- [-] setmore  
       `setmore`
-- [ ] simplybook-me  
+- [-] simplybook-me  
       `simplybook-me`
-- [ ] best-fresha-alternatives  
+- [-] best-fresha-alternatives  
       `best-fresha-alternatives`
-- [ ] best-booksy-alternatives  
+- [-] best-booksy-alternatives  
       `best-booksy-alternatives`
-- [ ] best-vagaro-alternatives  
+- [-] best-vagaro-alternatives  
       `best-vagaro-alternatives`
-- [ ] best-glossgenius-alternatives  
+- [-] best-glossgenius-alternatives  
       `best-glossgenius-alternatives`
-- [ ] best-mindbody-alternatives  
+- [-] best-mindbody-alternatives  
       `best-mindbody-alternatives`
-- [ ] best-boulevard-alternatives  
+- [-] best-boulevard-alternatives  
       `best-boulevard-alternatives`
-- [ ] best-mangomint-alternatives  
+- [-] best-mangomint-alternatives  
       `best-mangomint-alternatives`
-- [ ] best-square-appointments-alternatives  
+- [-] best-square-appointments-alternatives  
       `best-square-appointments-alternatives`
-- [ ] best-zenoti-alternatives  
+- [-] best-zenoti-alternatives  
       `best-zenoti-alternatives`
-- [ ] best-acuity-alternatives  
+- [-] best-acuity-alternatives  
       `best-acuity-alternatives`
-- [ ] best-phorest-alternatives  
+- [-] best-phorest-alternatives  
       `best-phorest-alternatives`
-- [ ] best-timely-alternatives  
+- [-] best-timely-alternatives  
       `best-timely-alternatives`
-- [ ] best-setmore-alternatives  
+- [-] best-setmore-alternatives  
       `best-setmore-alternatives`
-- [ ] best-simplybook-me-alternatives  
+- [-] best-simplybook-me-alternatives  
       `best-simplybook-me-alternatives`
 
 ### `comparisonPages.ts` (43)
 
-- [ ] daisy-vs-fresha  
+- [x] daisy-vs-fresha  
       `daisy-vs-fresha`
-- [ ] daisy-vs-booksy  
+- [x] daisy-vs-booksy  
       `daisy-vs-booksy`
-- [ ] daisy-vs-vagaro  
+- [x] daisy-vs-vagaro  
       `daisy-vs-vagaro`
 - [ ] daisy-vs-glossgenius  
       `daisy-vs-glossgenius`

@@ -91,43 +91,43 @@ export const daisyVsPages: DaisyVsPageData[] = [
     ],
     heroTitle: 'Daisy vs Fresha',
     heroSubtitle:
-      'How does an AI-powered growth platform compare to the world\'s largest beauty marketplace?',
-    tldr: 'Fresha is a marketplace with subscription fees plus hidden transaction costs. Daisy is a complete growth platform with AI receptionist, cashback rewards, and Arabic support. Choose Fresha for marketplace exposure; choose Daisy to actively grow your business.',
+      'How does an AI-powered growth platform stack up against the world\'s largest beauty marketplace?',
+    tldr: 'Fresha is a marketplace charging subscription fees plus hidden transaction costs. Daisy is a complete growth platform with an AI receptionist, cashback rewards and Arabic support. Pick Fresha for marketplace exposure, Daisy to actively grow the business.',
     verdict:
-      'Fresha offers marketplace reach but now charges monthly subscriptions on top of transaction fees and commissions, and it lacks AI, Arabic support, and customer acquisition tools. Daisy is the better choice for businesses serious about growth, especially in the GCC market.',
+      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and commissions, and it has no AI, no Arabic support and no customer acquisition tools. For businesses serious about growth, particularly in the GCC, Daisy is the better choice.',
     featureCommentary: {
       onlineBooking:
-        'Both platforms offer excellent online booking. Fresha\'s strength is its massive consumer marketplace with 25M+ users. Daisy matches this with AI-powered booking that handles the entire flow, including payments and customer service, 24/7 without human intervention.',
+        'Both do online booking well. Fresha\'s strength is the size of its consumer marketplace, with 25M+ users. Daisy answers that with AI booking that carries the whole flow, payments and customer service included, 24/7 and without anyone stepping in.',
       posAndPayments:
-        'Fresha charges 2.19% + $0.20 on every card transaction, plus 20% commission on marketplace bookings. Over a year, a busy salon can pay thousands in hidden fees. Daisy offers transparent flat pricing with no per-transaction surprises.',
+        'Fresha takes 2.19% + $0.20 on every card transaction and 20% commission on marketplace bookings. Across a year, a busy salon can pay thousands in hidden fees. Daisy charges a transparent flat rate with nothing added per transaction.',
       clientManagement:
-        'Fresha provides basic client profiles and history. Daisy adds AI-driven insights, predicting no-shows, identifying VIP clients, and suggesting personalized offers based on booking patterns.',
+        'Fresha gives you basic client profiles and history. Daisy layers AI on top, predicting no-shows, flagging VIP clients and suggesting personalized offers from booking patterns.',
       staffManagement:
-        'Both handle scheduling and staff calendars. Daisy\'s AI scheduling optimizes appointment slots to maximize revenue, reducing gaps and double-bookings automatically.',
+        'Both handle scheduling and staff calendars. Daisy\'s AI scheduling arranges appointment slots around revenue, closing gaps and preventing double-bookings on its own.',
       marketingAndCrm:
-        'Fresha\'s marketing is pay-per-message blast campaigns. Daisy provides AI-powered marketing automation, targeted campaigns, cashback incentives, and personalized engagement that runs on autopilot.',
+        'Fresha\'s marketing is pay-per-message blast campaigns. Daisy runs AI-powered marketing automation, targeted campaigns, cashback incentives and personalized engagement that keeps going without you.',
       inventoryManagement:
-        'Both offer basic inventory tracking. This is a functional tie, neither platform specializes in deep inventory management.',
+        'Both offer basic inventory tracking. Call it a tie, since neither platform specializes in deep inventory management.',
       reportingAndAnalytics:
-        'Fresha offers standard reports. Daisy leverages AI to provide actionable recommendations, not just dashboards, spotting trends, suggesting pricing changes, and forecasting demand.',
+        'Fresha offers standard reports. Daisy uses AI to recommend actions rather than only draw dashboards, spotting trends, suggesting pricing changes and forecasting demand.',
       marketplaceAndDiscovery:
-        'Fresha\'s biggest strength: 25M+ consumers browsing the marketplace. Daisy takes a different approach with 360° customer acquisition, marketplace + cashback rewards + AI marketing working together to bring in and retain customers.',
+        'Fresha\'s biggest strength is the 25M+ consumers browsing its marketplace. Daisy comes at it differently, with 360° customer acquisition where marketplace, cashback rewards and AI marketing work together to bring customers in and keep them.',
       aiCapabilities:
-        'This is the biggest gap. Fresha has announced AI features for 2026 but hasn\'t shipped them. Daisy\'s AI receptionist is live today, handling calls, bookings, payments, and customer service in Arabic and English 24/7.',
+        'The gap is widest here. Fresha has announced AI features for 2026 but hasn\'t shipped them. Daisy\'s AI receptionist is live today, taking calls, bookings, payments and customer service in Arabic and English 24/7.',
     },
     whoShouldChooseDaisy: [
-      'You want an AI receptionist handling bookings and customer service 24/7',
-      'You need Arabic language support for GCC clients',
-      'You want transparent pricing without hidden transaction fees',
-      'You want to build your own brand, not Fresha\'s',
-      'You want proactive customer acquisition, not just a marketplace listing',
+      'You want an AI receptionist covering bookings and customer service 24/7',
+      'Your GCC clients need Arabic',
+      'You want pricing you can predict, with no hidden transaction fees',
+      'You want to build your brand rather than Fresha\'s',
+      'You want acquisition that works for you, not just a marketplace listing',
       'You operate in the GCC and need local compliance and payment methods',
     ],
     whoShouldChooseCompetitor: [
-      'You need a low-cost starting point ($9.95/mo base plan)',
-      'You rely heavily on marketplace discovery for new clients',
-      'You\'re a solo practitioner with minimal transaction volume',
-      'You only operate in English-speaking Western markets',
+      'You need to start cheaply, at the $9.95/mo base plan',
+      'Marketplace discovery is where most of your new clients come from',
+      'You work alone and process few transactions',
+      'You operate only in English-speaking Western markets',
     ],
   },
   {
@@ -145,43 +145,43 @@ export const daisyVsPages: DaisyVsPageData[] = [
     ],
     heroTitle: 'Daisy vs Booksy',
     heroSubtitle:
-      'A mobile-first booking app versus a full AI-powered growth platform, which one helps your business grow?',
-    tldr: 'Booksy is a solid mobile-first booking app with a basic AI voice receptionist ("Digital Doorman"). Daisy offers a complete AI ecosystem, Arabic support, cashback-driven customer acquisition, and flat pricing that doesn\'t scale per-provider.',
+      'A mobile-first booking app against a full AI-powered growth platform, which one actually grows your business?',
+    tldr: 'Booksy is a solid mobile-first booking app with a basic AI voice receptionist called "Digital Doorman". Daisy brings a complete AI ecosystem, Arabic support, cashback-driven customer acquisition and flat pricing that doesn\'t rise with every provider you add.',
     verdict:
-      'Booksy is great for independent barbers and beauty pros who want simple mobile booking with marketplace exposure. But its per-provider pricing gets expensive for teams, it has zero GCC presence, and its AI is limited to call routing. Daisy is the clear winner for growing businesses, especially in Arabic-speaking markets.',
+      'Booksy suits independent barbers and beauty pros who want simple mobile booking with marketplace exposure. For teams, though, the per-provider pricing gets expensive, there is no GCC presence, and the AI does nothing beyond routing calls. For growing businesses, particularly in Arabic-speaking markets, Daisy wins clearly.',
     featureCommentary: {
       onlineBooking:
-        'Both offer strong online booking with consumer-facing marketplaces. Booksy has an edge in mobile app design, it\'s built mobile-first. Daisy matches booking functionality while adding AI-powered self-service that handles the full customer journey.',
+        'Both offer strong online booking with consumer-facing marketplaces. Booksy has the edge on mobile app design, having been built mobile-first. Daisy matches the booking functionality and adds AI-powered self-service across the full customer journey.',
       posAndPayments:
-        'Booksy charges 2.49% + $0.15 per transaction with per-provider pricing ($29.99-$49.99/provider/month). A 5-person team could pay $150-250/month before transaction fees. Daisy offers flat pricing regardless of team size.',
+        'Booksy charges 2.49% + $0.15 per transaction and prices per provider, at $29.99-$49.99/provider/month. A 5-person team could be paying $150-250/month before a single transaction fee. Daisy charges flat whatever the team size.',
       clientManagement:
-        'Both platforms handle client profiles and history. Daisy adds AI-driven client intelligence, automatically identifying churn risks and recommending retention strategies.',
+        'Both platforms handle client profiles and history. Daisy adds AI client intelligence that spots churn risks by itself and recommends how to hold on to those clients.',
       staffManagement:
-        'Comparable features for scheduling. Booksy\'s per-provider pricing means every new team member increases cost. Daisy includes unlimited staff at flat pricing.',
+        'Scheduling is comparable. With Booksy, every new team member adds to the bill, because pricing is per provider. Daisy includes unlimited staff at flat pricing.',
       marketingAndCrm:
-        'Booksy offers basic marketing tools in the Biz+ tier. Daisy provides AI-powered marketing automation with cashback rewards, a proven customer acquisition and retention engine.',
+        'Booksy puts basic marketing tools in the Biz+ tier. Daisy provides AI-powered marketing automation with cashback rewards, a proven engine for acquiring and keeping customers.',
       inventoryManagement:
-        'Booksy has basic inventory in Biz+. Daisy offers comparable tracking. Neither is an inventory management specialist.',
+        'Booksy has basic inventory in Biz+ and Daisy offers comparable tracking. Neither is an inventory management specialist.',
       reportingAndAnalytics:
-        'Booksy offers standard business reports. Daisy adds AI-powered insights that proactively recommend actions, not just show data.',
+        'Booksy offers standard business reports. Daisy adds AI insights that recommend what to do rather than only showing you the data.',
       marketplaceAndDiscovery:
-        'Booksy has a strong consumer marketplace, particularly popular with barbershops. Daisy offers marketplace + cashback rewards + AI marketing, three acquisition channels instead of one.',
+        'Booksy has a strong consumer marketplace, especially popular with barbershops. Daisy runs marketplace, cashback rewards and AI marketing together, so three acquisition channels rather than one.',
       aiCapabilities:
-        'Booksy\'s "Digital Doorman" handles inbound calls and routes to booking, it\'s a single-purpose AI feature. Daisy\'s AI ecosystem covers receptionist (voice + chat), smart scheduling, marketing automation, and analytics, all working together.',
+        'Booksy\'s "Digital Doorman" answers inbound calls and passes them to booking, which makes it a single-purpose AI feature. Daisy\'s AI ecosystem covers the receptionist on voice and chat, smart scheduling, marketing automation and analytics, all working together.',
     },
     whoShouldChooseDaisy: [
-      'You want comprehensive AI, not just call routing',
-      'You need Arabic language support',
-      'Your team is growing and per-provider pricing is getting expensive',
-      'You want cashback rewards to drive customer loyalty',
-      'You operate in the GCC market',
-      'You want to build your own brand with white-labeling',
+      'You want AI across the business, not just call routing',
+      'You need Arabic',
+      'Your team is growing and per-provider pricing is starting to hurt',
+      'You want cashback rewards driving customer loyalty',
+      'You operate in the GCC',
+      'You want white-labeling so the brand stays yours',
     ],
     whoShouldChooseCompetitor: [
-      'You\'re a solo barber or independent beauty professional',
-      'You prioritize mobile-first experience above all else',
-      'You operate only in the US or Europe',
-      'You value Booksy\'s specific barbershop community',
+      'You are a solo barber or independent beauty professional',
+      'A mobile-first experience matters to you above everything else',
+      'You work only in the US or Europe',
+      'You value the barbershop community Booksy has built',
     ],
   },
   {
@@ -199,43 +199,43 @@ export const daisyVsPages: DaisyVsPageData[] = [
     ],
     heroTitle: 'Daisy vs Vagaro',
     heroSubtitle:
-      'A feature-rich operations platform versus an AI-powered growth engine, which suits your salon better?',
-    tldr: 'Vagaro is a comprehensive US-focused operations platform with strong features and an affordable starting price. Daisy adds what Vagaro lacks: AI receptionist, cashback-driven acquisition, Arabic support, and true customer growth tools. Vagaro runs your business; Daisy grows it.',
+      'A feature-rich operations platform against an AI-powered growth engine, which suits your salon better?',
+    tldr: 'Vagaro is a comprehensive US-focused operations platform, strong on features and affordable to start. Daisy adds what Vagaro lacks: an AI receptionist, cashback-driven acquisition, Arabic support and real customer growth tools. Vagaro runs your business, Daisy grows it.',
     verdict:
-      'Vagaro is a solid all-rounder for US-based salons that want comprehensive features at a good price. But it\'s fundamentally an operations tool, it helps you manage, not grow. Daisy\'s AI capabilities, customer acquisition engine, and GCC support make it the better investment for growth-oriented businesses.',
+      'Vagaro is a solid all-rounder for US-based salons wanting comprehensive features at a good price. It remains an operations tool, though, built to help you manage rather than grow. For a growth-oriented business, Daisy\'s AI, acquisition engine and GCC support make it the better investment.',
     featureCommentary: {
       onlineBooking:
-        'Vagaro offers excellent booking with a consumer marketplace (220K+ businesses). Daisy matches the booking quality while adding AI-powered self-service that can handle the entire booking flow, including upsells and payments, without human intervention.',
+        'Vagaro offers excellent booking backed by a consumer marketplace of 220K+ businesses. Daisy matches the booking quality and adds AI-powered self-service that can run the entire booking flow, upsells and payments included, without anyone stepping in.',
       posAndPayments:
-        'Vagaro has best-in-class POS with hardware options and 2.75% transaction fees. The $10/month per additional staff calendar adds up. Daisy\'s flat pricing removes the per-staff surcharge while offering comparable payment processing.',
+        'Vagaro has an excellent POS with hardware options and 2.75% transaction fees, though the $10/month for each additional staff calendar adds up. Daisy drops the per-staff surcharge with flat pricing and offers comparable payment processing.',
       clientManagement:
-        'Vagaro provides solid client profiles. Daisy enhances this with AI-driven intelligence that predicts behavior and automates personalized outreach.',
+        'Vagaro provides solid client profiles. Daisy builds on that with AI that predicts behavior and sends personalized outreach automatically.',
       staffManagement:
-        'Both handle staff scheduling well. Vagaro charges $10/month per additional calendar, which can make larger teams expensive. Daisy includes all staff in its flat pricing.',
+        'Both handle staff scheduling well. Vagaro charges $10/month per additional calendar, which gets expensive for larger teams. Daisy includes every member of staff in its flat pricing.',
       marketingAndCrm:
-        'Vagaro offers good marketing tools as add-ons (email, text campaigns). Daisy includes AI-powered marketing automation with cashback rewards as a core feature, not an add-on.',
+        'Vagaro sells good marketing tools as add-ons, covering email and text campaigns. Daisy treats AI-powered marketing automation with cashback rewards as a core feature rather than an extra.',
       inventoryManagement:
-        'Vagaro has good inventory tracking and product management. Daisy offers basic inventory. For inventory-heavy businesses, Vagaro has a slight edge here.',
+        'Vagaro has good inventory tracking and product management, while Daisy offers basic inventory. For inventory-heavy businesses, Vagaro has the slight edge.',
       reportingAndAnalytics:
-        'Both offer solid reporting. Daisy adds AI-powered actionable insights, recommending specific actions based on your data, not just displaying metrics.',
+        'Both offer solid reporting. Daisy adds AI insights that recommend specific actions from your data instead of only displaying metrics.',
       marketplaceAndDiscovery:
-        'Vagaro has a consumer marketplace with 220K+ businesses listed. Daisy offers marketplace + cashback + AI marketing, a more comprehensive acquisition strategy.',
+        'Vagaro has a consumer marketplace listing 220K+ businesses. Daisy combines marketplace, cashback and AI marketing into a broader acquisition strategy.',
       aiCapabilities:
-        'Vagaro has minimal AI, basic automated reminders. Daisy provides 24/7 AI receptionist, chatbot, smart scheduling, and AI marketing. This is the largest gap between the two platforms.',
+        'Vagaro\'s AI amounts to basic automated reminders. Daisy provides a 24/7 AI receptionist, a chatbot, smart scheduling and AI marketing. This is the largest gap between the two platforms.',
     },
     whoShouldChooseDaisy: [
-      'You want AI to handle bookings, calls, and customer service 24/7',
-      'You need Arabic support for GCC clients',
-      'You want customer acquisition tools, not just operations management',
-      'You want flat pricing without per-staff add-ons',
-      'You want cashback rewards to drive loyalty and repeat bookings',
-      'You\'re looking to actively grow, not just manage your business',
+      'You want AI covering bookings, calls and customer service 24/7',
+      'Your GCC clients need Arabic support',
+      'You want acquisition tools, not only operations management',
+      'You want flat pricing with no per-staff add-ons',
+      'You want cashback rewards driving loyalty and repeat bookings',
+      'You are trying to grow the business, not just keep it running',
     ],
     whoShouldChooseCompetitor: [
-      'You need best-in-class POS with physical hardware integration',
-      'You prioritize a 30-day free trial before committing',
-      'You\'re a US-based salon wanting a proven, feature-rich operations platform',
-      'Deep inventory management is critical to your business',
+      'You need a top-tier POS with physical hardware integration',
+      'You want a 30-day free trial before committing',
+      'You are a US-based salon wanting a proven, feature-rich operations platform',
+      'Deep inventory management is critical for you',
     ],
   },
   {

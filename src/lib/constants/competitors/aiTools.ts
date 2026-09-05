@@ -70,7 +70,7 @@ export const aiTools: AiToolData[] = [
     name: 'BookingBee.ai',
     website: 'https://www.bookingbee.ai',
     description:
-      'AI voice receptionist add-on for beauty and wellness businesses. Handles inbound phone calls and routes to booking. Requires existing salon software for actual appointment management.',
+      'AI voice receptionist add-on for beauty and wellness businesses. It answers inbound phone calls and passes them through to booking, so it needs existing salon software to manage the appointments themselves.',
     aiCapabilities: {
       voiceReceptionist: true,
       chatBooking: false,
@@ -123,7 +123,7 @@ export const aiTools: AiToolData[] = [
     name: 'SharpAI',
     website: 'https://www.sharpai.co',
     description:
-      'UK-based CRM and client management tool for salons with basic automation features. Positioned as AI-powered but primarily offers rule-based automation rather than true AI capabilities.',
+      'UK-based CRM and client management tool for salons, with basic automation. It is marketed as AI-powered, but what it offers is mostly rule-based automation rather than true AI.',
     aiCapabilities: {
       voiceReceptionist: false,
       chatBooking: false,
