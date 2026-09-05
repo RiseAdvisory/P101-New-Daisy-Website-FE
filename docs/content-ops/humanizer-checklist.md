@@ -299,13 +299,13 @@ smallest and the most constrained, so they are cheap to leave until last.
       `salon-pos-system-buyers-guide`
 - [x] Salon Tipping: Etiquette, Policies & Digital Solutions  
       `salon-tipping-policies-digital`
-- [ ] Contactless Payments for Salons: Setup Guide  
+- [x] Contactless Payments for Salons: Setup Guide  
       `contactless-payments-salon-setup`
-- [ ] Salon Invoicing: Professional Billing Made Easy  
+- [x] Salon Invoicing: Professional Billing Made Easy  
       `salon-invoicing-billing-guide`
-- [ ] Getting Paid as a Freelance Stylist: Payment Methods Compared  
+- [x] Getting Paid as a Freelance Stylist: Payment Methods Compared  
       `freelance-stylist-payment-methods`
-- [ ] Payment Processing Fees for Salons: What You're Really Paying  
+- [x] Payment Processing Fees for Salons: What You're Really Paying  
       `salon-payment-processing-fees`
 
 ### `staff-management.ts` (6)
