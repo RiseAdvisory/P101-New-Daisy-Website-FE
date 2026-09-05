@@ -744,15 +744,15 @@ batch that ticked these boxes.
 Definitional text. The humanizer keeps a neutral plain voice for encyclopedic content, so
 expect light edits here and no injected personality or first person.
 
-- [ ] Salon Management Software  
+- [x] Salon Management Software  
       `salon-management-software`
-- [ ] AI Receptionist for Salons  
+- [x] AI Receptionist for Salons  
       `ai-receptionist-for-salons`
-- [ ] Cashback in Beauty Booking  
+- [x] Cashback in Beauty Booking  
       `cashback-beauty-booking`
-- [ ] White-Label Salon Software  
+- [x] White-Label Salon Software  
       `white-label-salon-software`
-- [ ] Salon Booking Software  
+- [x] Salon Booking Software  
       `salon-booking-software`
 - [ ] Salon Management System  
       `salon-management-system`
