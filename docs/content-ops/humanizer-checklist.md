@@ -496,15 +496,15 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
       `booksy`
 - [x] Vagaro manages your business well, but it doesn't help you grow it.  
       `vagaro`
-- [ ] Beautiful design and great for solo pros, but what happens when you want to grow?  
+- [x] Beautiful design and great for solo pros, but what happens when you want to grow?  
       `glossgenius`
-- [ ] An industry giant, but the dated interface, high prices, and marketplace commissions are pushing businesses away.  
+- [x] An industry giant, but the dated interface, high prices, and marketplace commissions are pushing businesses away.  
       `mindbody`
-- [ ] Premium design and smart scheduling, but $158-410/mo and no marketplace is hard to justify.  
+- [x] Premium design and smart scheduling, but $158-410/mo and no marketplace is hard to justify.  
       `boulevard`
-- [ ] Beautiful operations tool, but no AI, no marketplace, and no customer acquisition.  
+- [x] Beautiful operations tool, but no AI, no marketplace, and no customer acquisition.  
       `mangomint`
-- [ ] Great POS, but generic scheduling doesn't cut it for serious beauty businesses.  
+- [x] Great POS, but generic scheduling doesn't cut it for serious beauty businesses.  
       `square-appointments`
 - [ ] Excellent CRM and loyalty, but the world has moved to AI, and Phorest hasn't.  
       `phorest`
