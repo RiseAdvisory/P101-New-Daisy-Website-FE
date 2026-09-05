@@ -43,7 +43,7 @@ const aiReceptionistArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>What is an AI receptionist for salons?</h2>
 <p>An AI receptionist handles every inbound interaction your salon receives, across phone calls, WhatsApp, Instagram DMs, website chat, and SMS, with nobody stepping in. A basic chatbot follows a script. This understands natural language, remembers who it is talking to, and makes genuine decisions about scheduling, pricing, and what to recommend.</p>
-<p>Missed calls and slow replies cost this industry billions a year. Research consistently shows that salons miss 30&ndash;40% of inbound calls during busy hours, and over 80% of after-hours inquiries go unanswered until the next business day. Each one is a booking that goes to whoever picks up first. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy fix it at the source, answering every interaction immediately, 24 hours a day, every day of the year.</p>
+<p>Missed calls and slow replies cost this industry billions a year. Research consistently shows that salons miss 30&ndash;40% of inbound calls during busy hours, and over 80% of after-hours inquiries go unanswered until the next business day. Each one is a booking that goes to whoever picks up first. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy fix it at the source, answering every interaction immediately, 24 hours a day, 7 days a week, 365 days a year.</p>
 
 <h2>Why traditional reception models fail modern salons</h2>
 <p>The traditional reception desk was built for a simpler business. Now it fails in several ways, each of which costs you revenue and loyalty.</p>

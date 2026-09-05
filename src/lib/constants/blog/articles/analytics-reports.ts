@@ -73,7 +73,7 @@ const salonMetricsArticle: LocalBlogPost = {
 
 <h2>Metric 3: chair or room utilisation rate</h2>
 <p>Utilisation rate is the percentage of available appointment slots that get booked and completed. Think of it as your operational efficiency score.</p>
-<p>For most salons the practical ceiling is 85-90%. You need buffer time between appointments for cleanup, setup, and the occasional overrun, and a salon running above 95% is probably rushing the handover and the client feels it.</p>
+<p>For most salons the practical ceiling is 85-90%. You need buffer time between appointments for cleanup, setup, and the occasional overrun, and a salon running above 95% is probably rushing the handover and the client feels it. A salon running at 95%+ utilisation is almost certainly rushing the transitions between services, and clients feel it.</p>
 <p>To calculate it, divide total booked hours by total available hours for the week and multiply by 100. A salon with 3 chairs running 8 hours each over 6 days has 144 available hours. Book and complete 108 of them and utilisation is 75%.</p>
 <p>Benchmarks for salon utilisation:</p>
 <ul>
@@ -336,7 +336,7 @@ const clientRetentionReportingArticle: LocalBlogPost = {
 <h2>Frequently asked questions</h2>
 
 <h3>What is a good client retention rate for a salon?</h3>
-<p>Between 65% and 80% over a 90-day window is healthy, and the best salons pass 80%. Below 60% it becomes your first priority, because at that point acquisition is likely costing you more than the clients you are losing were worth.</p>
+<p>Between 65% and 80% over a 90-day window is healthy, and the best salons achieve 80%+ retention. Below 60% it becomes your first priority, because at that point acquisition is likely costing you more than the clients you are losing were worth.</p>
 
 <h3>How often should I review retention reports?</h3>
 <p>Weekly for the trend, monthly for a deeper look at segments. Weekly catches problems early, monthly shows longer patterns and whether the changes you made did anything. <a href="/en/features/business/analytics-reports">The Daisy</a> handles both cadences with automated dashboards and reports.</p>

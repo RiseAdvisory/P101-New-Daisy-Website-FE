@@ -277,7 +277,7 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
 <li><strong>Haircut and styling:</strong> 15&ndash;20% is standard in most markets, and anyone who got something exceptional or genuinely difficult often tips 25%+.</li>
 <li><strong>Colour treatments:</strong> 15&ndash;20% of the total including products. On a high-value colour correction over 1,000 AED, 15% already reads as generous.</li>
 <li><strong>Nail services:</strong> 15&ndash;20% is standard, though a quick basic manicure often gets a flat 20&ndash;30 AED instead of a percentage.</li>
-<li><strong>Spa treatments and facials:</strong> 15&ndash;20%. Anything over 90 minutes tends to attract a higher percentage, because the therapist&rsquo;s time is impossible to miss.</li>
+<li><strong>Spa treatments and facials:</strong> 15&ndash;20%. Anything over 90 minutes tends to attract a higher percentage, because the therapist&rsquo;s time is impossible to miss. Longer treatments of 90+ minutes tend to attract a higher percentage, because the therapist's time investment is more visible.</li>
 <li><strong>Bridal and event styling:</strong> 20&ndash;25% is common, given the complexity, the early start, and what the day means. Some clients hand over a flat 200&ndash;500 AED instead.</li>
 <li><strong>Assistants and shampooing:</strong> a flat 20&ndash;50 AED is customary where someone helped without being the main provider.</li>
 </ul>
