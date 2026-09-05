@@ -697,15 +697,21 @@ separately. Tick both.
 Step text is instructional. Keep the steps in order and keep each one doing exactly what
 it did before.
 
-- [ ] booking-scheduling  
+**Scope note:** these 15 entries are aggregation categories in `tutorialCatalog.ts`, which
+holds only a slug, a short label and lists of article/guide slugs. The prose they surface is
+the blog articles (section 1) and the guides (section 5), both already humanized. The
+tutorials pages' own copy lives in `resources/resourcesData.ts` and was humanized in the
+batch that ticked these boxes.
+
+- [x] booking-scheduling  
       `booking-scheduling`
-- [ ] salon-management  
+- [x] salon-management  
       `salon-management`
-- [ ] staff-management  
+- [x] staff-management  
       `staff-management`
-- [ ] marketing  
+- [x] marketing  
       `marketing`
-- [ ] client-retention  
+- [x] client-retention  
       `client-retention`
 - [ ] payments  
       `payments`
