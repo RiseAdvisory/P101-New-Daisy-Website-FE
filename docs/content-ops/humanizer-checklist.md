@@ -276,15 +276,15 @@ smallest and the most constrained, so they are cheap to leave until last.
 
 ### `salon-marketing.ts` (8)
 
-- [ ] 15 Salon Marketing Ideas That Work in 2026  
+- [x] 15 Salon Marketing Ideas That Work in 2026  
       `salon-marketing-ideas-2026`
-- [ ] Salon Social Media Marketing: Instagram, TikTok & Beyond  
+- [x] Salon Social Media Marketing: Instagram, TikTok & Beyond  
       `salon-social-media-marketing`
-- [ ] Salon Email Marketing: Templates & Automation Guide  
+- [x] Salon Email Marketing: Templates & Automation Guide  
       `salon-email-marketing-templates`
-- [ ] How to Create a Salon Loyalty Program That Retains Clients  
+- [x] How to Create a Salon Loyalty Program That Retains Clients  
       `salon-loyalty-program-guide`
-- [ ] Salon Referral Programs: Turn Clients Into Ambassadors  
+- [x] Salon Referral Programs: Turn Clients Into Ambassadors  
       `salon-referral-program-guide`
 - [ ] Google My Business for Salons: Complete Optimization Guide  
       `google-my-business-salon-optimization`
