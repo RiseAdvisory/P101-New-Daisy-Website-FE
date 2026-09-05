@@ -640,9 +640,9 @@ own prose only. The cross-links are references to section 1, not separate conten
       `salon-management-software.ts` → `salon-management-software`
 - [x] Salon Marketing Strategies That Drive Growth  
       `salon-marketing-strategies.ts` → `salon-marketing-strategies`
-- [ ] Salon Payment Solutions: The Complete Guide  
+- [x] Salon Payment Solutions: The Complete Guide  
       `salon-payment-solutions.ts` → `salon-payment-solutions`
-- [ ] Salon Staff Management: Build & Retain a Great Team  
+- [x] Salon Staff Management: Build & Retain a Great Team  
       `salon-staff-management.ts` → `salon-staff-management`
 
 ---
