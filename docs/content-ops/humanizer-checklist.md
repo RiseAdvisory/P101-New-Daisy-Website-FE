@@ -713,15 +713,15 @@ batch that ticked these boxes.
       `marketing`
 - [x] client-retention  
       `client-retention`
-- [ ] payments  
+- [x] payments  
       `payments`
-- [ ] communication  
+- [x] communication  
       `communication`
-- [ ] ai-technology  
+- [x] ai-technology  
       `ai-technology`
-- [ ] analytics  
+- [x] analytics  
       `analytics`
-- [ ] business-growth  
+- [x] business-growth  
       `business-growth`
 - [ ] freelance-business  
       `freelance-business`
