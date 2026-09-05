@@ -466,15 +466,15 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
       `daisy-vs-booksy`
 - [x] daisy-vs-vagaro  
       `daisy-vs-vagaro`
-- [ ] daisy-vs-glossgenius  
+- [x] daisy-vs-glossgenius  
       `daisy-vs-glossgenius`
-- [ ] A modern AI-native platform versus the legacy giant of wellness software, is it time to upgrade?  
+- [x] A modern AI-native platform versus the legacy giant of wellness software, is it time to upgrade?  
       `daisy-vs-mindbody`
-- [ ] Purpose-built beauty AI platform versus restaurant POS technology adapting to services.  
+- [x] Purpose-built beauty AI platform versus restaurant POS technology adapting to services.  
       `daisy-vs-toast`
-- [ ] Two premium platforms, but only one includes AI receptionist and customer acquisition at base pricing.  
+- [x] Two premium platforms, but only one includes AI receptionist and customer acquisition at base pricing.  
       `daisy-vs-boulevard`
-- [ ] Both speak Arabic. Only one has AI, full business management, and 6-country GCC coverage.  
+- [x] Both speak Arabic. Only one has AI, full business management, and 6-country GCC coverage.  
       `daisy-vs-glamera`
 - [ ] Both offer AI and Arabic support, but Daisy is built for the GCC — live in Kuwait today — with a complete growth ecosystem.  
       `daisy-vs-dingg`
