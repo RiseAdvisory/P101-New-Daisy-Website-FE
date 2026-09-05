@@ -754,11 +754,11 @@ expect light edits here and no injected personality or first person.
       `white-label-salon-software`
 - [x] Salon Booking Software  
       `salon-booking-software`
-- [ ] Salon Management System  
+- [x] Salon Management System  
       `salon-management-system`
-- [ ] Salon Employee Management Software  
+- [x] Salon Employee Management Software  
       `salon-employee-management-software`
-- [ ] Salon Customer Management  
+- [x] Salon Customer Management  
       `salon-customer-management`
 
 ---

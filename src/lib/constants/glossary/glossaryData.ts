@@ -351,9 +351,9 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'Salon Management System',
       definition:
-        'is the complete operational infrastructure — software, hardware, workflows, and integrations — that a beauty business uses to run daily operations, from appointment booking and point-of-sale terminals to staff coordination and customer communications.',
+        'is the complete operational infrastructure a beauty business runs on, covering software, hardware, workflows and integrations, from appointment booking and point-of-sale terminals through to staff coordination and customer communications.',
       extendedDescription:
-        'A salon management system goes beyond software alone. It encompasses the <a href="/en/glossary/salon-management-software">salon management software</a> platform, POS hardware, payment terminals, scheduling workflows, and the integrations that connect them into a unified operation. While "software" refers to the digital tool, "system" describes how everything works together — including team processes and customer touchpoints. Salons that implement a complete management system rather than bolting together separate tools report 25-35% higher operational efficiency and significantly fewer errors from manual data re-entry. The trend toward all-in-one systems is accelerating as salon owners recognize that disconnected tools create data silos, duplicated work, and missed opportunities.',
+        'A salon management system is more than the software. It takes in the <a href="/en/glossary/salon-management-software">salon management software</a> platform, the POS hardware, the payment terminals, the scheduling workflows and the integrations that join them up. "Software" is the digital tool; "system" is how all of it works together, team processes and customer touchpoints included. Salons that build a complete system rather than bolting separate tools together report 25-35% higher operational efficiency and far fewer errors from re-entering data by hand. The shift towards all-in-one systems continues as owners find that disconnected tools produce data silos, duplicated work and missed opportunities.',
       keyFeatures: [
         { label: 'Software Platform', daisy: 'All-in-one cloud', typical: 'Separate tools' },
         { label: 'POS Integration', daisy: 'Built-in, zero fees', typical: 'Third-party terminal' },
@@ -363,47 +363,47 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'Hardware Required', daisy: 'None (cloud + any device)', typical: 'Dedicated terminals' },
       ],
       howDaisyImplements:
-        'Daisy replaces the entire patchwork of salon tools with one cloud-based system. Booking, payments, CRM, staff scheduling, marketing, and AI receptionist all share a single data layer — so a client booking flows automatically into the calendar, triggers reminders, updates the CRM, and feeds analytics without any manual steps. No dedicated hardware required; works on any phone, tablet, or computer.',
+        'Daisy replaces the patchwork with one cloud-based system. Booking, payments, CRM, staff scheduling, marketing and the AI receptionist share a single data layer, so a booking lands in the calendar, sets the reminders going, updates the CRM and feeds the analytics without anyone touching it. No dedicated hardware is needed, and it runs on any phone, tablet or computer.',
       faqs: [
         {
           question: 'What is a salon management system?',
           answer:
-            'A salon management system is the complete operational setup a salon uses to run its business — combining software, hardware (POS, payment terminals), workflows, and integrations into one coordinated infrastructure. It is broader than software alone.',
+            'The complete operational setup a salon runs on, combining software, hardware such as POS and payment terminals, workflows and integrations into one coordinated infrastructure. It is broader than the software by itself.',
         },
         {
           question: 'What is the difference between a salon management system and salon management software?',
           answer:
-            'Salon management software is the digital platform (the app you log into). A salon management system includes the software plus the hardware, workflows, and integrations that make it all work together. Daisy provides the complete system — no additional hardware or tools needed.',
+            'The software is the platform you log into. The system is that plus the hardware, workflows and integrations that make it work as a whole. Daisy provides the complete system, with no additional hardware or tools needed.',
         },
         {
           question: 'What should a salon management system include?',
           answer:
-            'A complete system should include online booking, POS and payment processing, client CRM, staff scheduling, marketing automation, reporting, and ideally AI tools like an automated receptionist. All components should share data without manual re-entry.',
+            'Online booking, POS and payment processing, a client CRM, staff scheduling, marketing automation, reporting, and ideally AI tools such as an automated receptionist. Every component should share data without anyone re-entering it.',
         },
         {
           question: 'How much does a salon management system cost?',
           answer:
-            'Costs range from $50-500/month for the software platform, plus $0-2,000 for hardware if required. Daisy eliminates hardware costs entirely — the complete system runs on your existing devices starting at $50/month.',
+            'The software platform runs $50-500/month, with a further $0-2,000 for hardware where it is needed. Daisy removes the hardware cost entirely, since the system runs on devices you already own, from $50/month.',
         },
         {
           question: 'Can a small salon benefit from a management system?',
           answer:
-            'Absolutely. Small salons often benefit most because the owner is handling multiple roles. A unified system automates admin tasks, captures missed calls via AI, and reduces the manual workload that keeps small salon owners working evenings and weekends.',
+            'Yes, and often more than large ones, because the owner is doing several jobs at once. A unified system automates the admin, catches the missed calls and takes back the evenings and weekends that manual work eats.',
         },
         {
           question: 'How do I switch to a new salon management system?',
           answer:
-            'A well-planned migration takes 2-4 weeks. Key steps: export client data from your current system, import into the new platform, configure services and staff, test thoroughly, then go live. Daisy offers free migration assistance on the Business plan.',
+            'Planned properly, 2-4 weeks. Export the client data, import it, configure services and staff, test it thoroughly, then go live. Daisy includes migration assistance on the Business plan.',
         },
         {
           question: 'Do I need separate hardware for a salon management system?',
           answer:
-            'Not with modern cloud-based systems like Daisy. Traditional systems required dedicated POS terminals and servers. Daisy runs on any device with a browser — phone, tablet, laptop — with no special hardware purchases.',
+            'Not with a cloud-based system. Traditional setups needed dedicated POS terminals and servers, whereas Daisy runs in a browser on any phone, tablet or laptop, with nothing to buy.',
         },
         {
           question: 'What is the best salon management system in 2026?',
           answer:
-            'The best system in 2026 combines comprehensive software with AI capabilities and requires no additional hardware. Daisy leads with its all-in-one approach: AI receptionist, cashback customer acquisition, white-label branding, and zero-hardware cloud platform starting at $50/month.',
+            'The strongest option in 2026 combines full software with AI and asks for no additional hardware. Daisy offers an AI receptionist, cashback customer acquisition, white-label branding and a cloud platform needing no hardware, from $50/month.',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'salon-employee-management-software'],
@@ -419,7 +419,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       definition:
         'is specialized functionality within <a href="/en/glossary/salon-management-software">salon management software</a> that handles staff scheduling, commission tracking, performance analytics, team permissions, and workforce coordination for beauty businesses.',
       extendedDescription:
-        'Managing salon employees involves unique challenges that generic HR tools cannot address: commission-based pay structures, chair rental arrangements, skill-based appointment routing, rotating schedules, and per-stylist performance metrics. Salon employee management software solves these by integrating staff scheduling directly with the booking calendar, automatically calculating commissions based on service revenue, and providing per-employee analytics. Salons with 5+ staff members typically save 3-5 hours per week on scheduling and payroll tasks alone.',
+        'Salon staffing raises problems generic HR tools were never built for: commission-based pay, chair rental arrangements, routing appointments by skill, rotating schedules and per-stylist performance. Salon employee management software handles them by tying staff scheduling to the booking calendar, calculating commission from service revenue and reporting on each employee. Salons with 5+ staff save 3-5 hours per week on scheduling and payroll alone.',
       keyFeatures: [
         { label: 'Shift Scheduling', daisy: 'AI-optimized rosters', typical: 'Manual spreadsheet' },
         { label: 'Commission Tracking', daisy: 'Automatic per-service', typical: 'Manual calculation' },
@@ -429,22 +429,22 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'Payroll Integration', daisy: 'Export-ready reports', typical: 'Separate system' },
       ],
       howDaisyImplements:
-        'Daisy handles the full employee lifecycle: AI-optimized scheduling that accounts for skills and availability, automatic commission calculation per service, individual performance dashboards, role-based access controls, and payroll-ready reports. Staff can view their schedules, track earnings, and manage availability from the mobile app.',
+        'Daisy covers the whole employee lifecycle: AI scheduling that accounts for skills and availability, commission calculated per service, individual performance dashboards, role-based access and payroll-ready reports. Staff check their schedules, follow their earnings and set their availability from the mobile app.',
       faqs: [
         {
           question: 'What is salon employee management software?',
           answer:
-            'Salon employee management software is a set of tools within a salon platform that handles staff scheduling, commission tracking, performance analytics, and team coordination — designed specifically for the unique needs of beauty businesses.',
+            'A set of tools inside a salon platform covering staff scheduling, commission tracking, performance analytics and team coordination, built around how a beauty business actually operates.',
         },
         {
           question: 'How does salon staff scheduling software work?',
           answer:
-            'It integrates staff availability, skills, and the booking calendar to create optimized schedules. When a client books a balayage, the system only shows stylists qualified for that service. Daisy uses AI to balance workload and minimize scheduling gaps.',
+            'It reads staff availability, skills and the booking calendar together. A client booking a balayage only sees stylists qualified to do one. Daisy then uses AI to spread the workload and close the gaps.',
         },
         {
           question: 'Can salon software calculate commissions automatically?',
           answer:
-            'Yes. Daisy automatically calculates commissions based on customizable rules — percentage of service revenue, product sales, or flat rates per service. Staff can see their earnings in real-time through the app.',
+            'Yes. Commission is calculated from rules you set, whether a percentage of service revenue, product sales or a flat rate per service, and staff watch their earnings build in the app.',
         },
         {
           question: 'What salon software has built-in staff management features?',
@@ -454,22 +454,22 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'How do I track salon employee performance?',
           answer:
-            'Daisy provides per-stylist dashboards showing revenue generated, average ticket size, rebooking rate, client retention, product sales, and utilization rate. Owners can identify top performers and coaching opportunities at a glance.',
+            'Each stylist gets a dashboard covering revenue, average ticket, rebooking rate, client retention, product sales and utilization, which makes both the strong performers and the coaching opportunities obvious.',
         },
         {
           question: 'Can staff manage their own schedules?',
           answer:
-            'With Daisy, staff can view schedules, request time off, swap shifts (with manager approval), and set availability preferences — all from the mobile app. This reduces scheduling admin for salon owners.',
+            'In the mobile app, staff view their schedules, request time off, swap shifts subject to manager approval and set their availability, which takes most of the scheduling admin off the owner.',
         },
         {
           question: 'Does salon employee software handle chair rental arrangements?',
           answer:
-            'Yes. Daisy supports both employee and chair-rental models. For chair renters, you can set fixed rental fees, track their bookings separately, and provide independent schedule management while maintaining overall salon visibility.',
+            'Yes. Daisy supports employees and chair renters alike. Renters get fixed fees, bookings tracked separately and their own schedule management, while you keep sight of the salon as a whole.',
         },
         {
           question: 'How many staff can salon management software handle?',
           answer:
-            'Daisy scales from solo practitioners to 100+ staff across multiple locations. All plans include unlimited staff members with no per-seat fees — a key differentiator from platforms that charge per employee.',
+            'Daisy runs from a solo practitioner to 100+ staff across several locations. Every plan includes unlimited staff with no per-seat fee, unlike platforms that charge by employee.',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-management-system', 'salon-booking-software'],
@@ -483,9 +483,9 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       lastUpdated: '2026-04-27T00:00:00.000Z',
       term: 'Salon Customer Management',
       definition:
-        'is the practice of collecting, organizing, and leveraging client data — visit history, service preferences, spending patterns, and communication records — to deliver personalized experiences, increase retention, and grow lifetime value in a beauty business.',
+        'is the practice of collecting and using client data, covering visit history, service preferences, spending patterns and communication records, to personalise the experience, hold on to clients and grow their lifetime value.',
       extendedDescription:
-        'Salon customer management (often called salon CRM) transforms a business from reactive service delivery to proactive client relationship building. Instead of treating every visit as a standalone transaction, customer management tools create a 360-degree profile of each client — their preferred stylist, product sensitivities, color formulas, visit frequency, and spending habits. Research shows that increasing client retention by just 5% can boost profits by 25-95%, making customer management the highest-ROI function in most salons. Platforms like <a href="/en/glossary/salon-management-software">salon management software</a> integrate CRM directly with booking and payments so data flows automatically — no manual entry required.',
+        'Salon customer management, often called salon CRM, moves a business from reacting to each visit towards building the relationship deliberately. Rather than treating every appointment as a separate transaction, it builds a 360-degree profile of each client: preferred stylist, product sensitivities, colour formulas, how often they come and what they spend. Raising retention by 5% can lift profits by 25-95%, which makes this the highest-return function in most salons. Platforms such as <a href="/en/glossary/salon-management-software">salon management software</a> wire the CRM into booking and payments, so the data arrives without anyone entering it.',
       keyFeatures: [
         { label: 'Client Profiles', daisy: 'AI-enriched 360-degree', typical: 'Basic contact card' },
         { label: 'Visit History', daisy: 'Full service + product + notes', typical: 'Appointment dates only' },
@@ -495,47 +495,47 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'Reactivation', daisy: 'AI identifies lapsed clients', typical: 'Owner manually checks' },
       ],
       howDaisyImplements:
-        'Daisy builds rich client profiles automatically from every interaction — bookings, payments, messages, reviews. The AI identifies clients at risk of churning, suggests rebooking reminders, and powers the <a href="/en/glossary/cashback-beauty-booking">cashback loyalty system</a> that keeps clients returning. Segmentation tools let you target campaigns by spending level, visit frequency, preferred services, and more.',
+        'Daisy builds each client profile from the interactions themselves: bookings, payments, messages and reviews. The AI flags who is drifting away, suggests when to prompt a rebooking, and runs the <a href="/en/glossary/cashback-beauty-booking">cashback loyalty system</a> that brings people back. Campaigns can be targeted by spending level, visit frequency, preferred service and more.',
       faqs: [
         {
           question: 'What is salon customer management?',
           answer:
-            'Salon customer management is the practice of tracking client data (visits, preferences, spending) and using it to personalize service, increase retention, and grow each client\'s lifetime value. Modern salon CRM tools automate most of this work.',
+            'Tracking client data, meaning visits, preferences and spending, then using it to personalise the service, keep people longer and grow what each is worth over time. Modern salon CRM tools do most of the work for you.',
         },
         {
           question: 'Why is client management important for salons?',
           answer:
-            'Retaining an existing client costs 5-7x less than acquiring a new one, and a 5% increase in retention can boost profits by 25-95%. Client management helps you keep more clients, increase their visit frequency, and grow their average spend.',
+            'Keeping a client costs 5-7x less than finding a new one, and a 5% rise in retention can lift profits by 25-95%. Client management is how you keep more of them, see them more often and raise what they spend.',
         },
         {
           question: 'What is salon CRM software?',
           answer:
-            'Salon CRM (Customer Relationship Management) software tracks client interactions, preferences, and history to help you build stronger relationships. Daisy includes CRM as part of its all-in-one platform rather than requiring a separate tool.',
+            'CRM software tracks client interactions, preferences and history so you can build a real relationship rather than a transaction record. Daisy includes it in the platform rather than making you buy a separate tool.',
         },
         {
           question: 'How do I track client preferences in a salon?',
           answer:
-            'Daisy automatically records service history, product purchases, stylist preferences, and appointment notes. Staff can add color formulas, allergy information, and personal notes that appear automatically at the next visit.',
+            'Daisy records service history, product purchases, stylist preferences and appointment notes by itself. Staff add colour formulas, allergy information and personal notes, and those surface again at the next visit.',
         },
         {
           question: 'Can salon software help win back lost clients?',
           answer:
-            'Yes. Daisy\'s AI identifies clients who haven\'t visited within their normal cycle and triggers automated win-back campaigns — personalized messages with incentives to rebook. This recovers 10-20% of at-risk clients.',
+            'Yes. The AI notices when someone has missed their usual cycle and starts a win-back campaign, sending a personal message with a reason to rebook. That recovers 10-20% of at-risk clients.',
         },
         {
           question: 'What is the best way to build a salon client database?',
           answer:
-            'Use an integrated salon platform like Daisy that captures client data automatically from every booking, payment, and interaction. This builds your database passively without requiring staff to manually enter information.',
+            'Use an integrated platform that captures the data from every booking, payment and interaction. The database then builds itself, with nobody typing anything in.',
         },
         {
           question: 'How does cashback help with customer retention?',
           answer:
-            'Cashback rewards give clients a tangible reason to return — they have credits waiting to be used. Daisy\'s cashback system increases visit frequency by 20-30% compared to salons without loyalty programs.',
+            'Cashback gives a client something concrete to come back for, since the credit is sitting there waiting. Daisy\'s system raises visit frequency by 20-30% against salons with no loyalty program.',
         },
         {
           question: 'Can I segment my salon clients for targeted marketing?',
           answer:
-            'Yes. Daisy lets you segment clients by spending level, visit frequency, preferred services, location, and custom tags. This powers targeted campaigns — like a VIP offer to your top 20% spenders.',
+            'Yes. Segment by spending level, visit frequency, preferred service, location or your own tags, which is what makes a campaign like a VIP offer to your top 20% spenders possible.',
         },
       ],
       relatedTerms: ['salon-management-software', 'cashback-beauty-booking', 'salon-management-system'],
