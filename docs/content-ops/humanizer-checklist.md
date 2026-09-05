@@ -622,16 +622,16 @@ own prose only. The cross-links are references to section 1, not separate conten
 
 - [x] AI for Beauty & Salon Businesses  
       `ai-salon-software.ts` → `ai-salon-software`
-- [ ] Beauty Booking System: Everything You Need to Know  
+- [x] Beauty Booking System: Everything You Need to Know  
       `beauty-booking-system.ts` → `beauty-booking-system`
-- [ ] Beauty Business Growth Guide: From Startup to Scale  
+- [x] Beauty Business Growth Guide: From Startup to Scale  
       `beauty-business-growth-guide.ts` → `beauty-business-growth-guide`
 - [ ] Beauty Industry Trends 2026: What's Next  
       `beauty-industry-trends.ts` → `beauty-industry-trends`
 - [ ] The Freelance Beauty Professional Guide  
       `freelance-beauty-professional-guide.ts` → `freelance-beauty-professional-guide`
-- [ ] الذكاء الاصطناعي لأعمال التجميل والصالونات  
-      `pillars.ar.ts` → `ai-salon-software`
+- [-] الذكاء الاصطناعي لأعمال التجميل والصالونات  
+      `pillars.ar.ts` → `ai-salon-software`  (Arabic: skipped, needs a native-speaker pass)
 - [ ] Salon Analytics & Reporting: Data-Driven Growth  
       `salon-analytics-reporting.ts` → `salon-analytics-reporting`
 - [ ] Salon Client Retention: Strategies That Work  
