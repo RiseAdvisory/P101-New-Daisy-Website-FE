@@ -655,11 +655,11 @@ own prose only. The cross-links are references to section 1, not separate conten
 Each file carries a `business` and a `professional` variant of the same solution, written
 separately. Tick both.
 
-- [ ] `ai-marketing.ts` — business
-- [ ] `ai-marketing.ts` — professional
-- [ ] `ai-receptionist.ts` — business
-- [ ] `ai-receptionist.ts` — professional
-- [ ] `all-in-one.ts` — business
+- [x] `ai-marketing.ts` — business
+- [x] `ai-marketing.ts` — professional
+- [x] `ai-receptionist.ts` — business
+- [x] `ai-receptionist.ts` — professional
+- [x] `all-in-one.ts` — business
 - [ ] `all-in-one.ts` — professional
 - [ ] `brand-control.ts` — business
 - [ ] `brand-control.ts` — professional
