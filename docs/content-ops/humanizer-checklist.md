@@ -310,15 +310,15 @@ smallest and the most constrained, so they are cheap to leave until last.
 
 ### `staff-management.ts` (6)
 
-- [ ] Salon Staff Scheduling: Best Practices & Templates  
+- [x] Salon Staff Scheduling: Best Practices & Templates  
       `salon-staff-scheduling-best-practices`
-- [ ] Salon Commission Structures: Find the Right Model  
+- [x] Salon Commission Structures: Find the Right Model  
       `salon-commission-structures-guide`
-- [ ] Hiring Salon Staff: Interview Questions & Red Flags  
+- [x] Hiring Salon Staff: Interview Questions & Red Flags  
       `hiring-salon-staff-interview-guide`
-- [ ] Salon Employee Retention: Keeping Your Best Stylists  
+- [x] Salon Employee Retention: Keeping Your Best Stylists  
       `salon-employee-retention-strategies`
-- [ ] Managing a Freelance Beauty Schedule Effectively  
+- [x] Managing a Freelance Beauty Schedule Effectively  
       `managing-freelance-beauty-schedule`
 - [ ] Salon Staff Performance Reviews: A Template  
       `salon-staff-performance-reviews`
