@@ -476,15 +476,15 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
       `daisy-vs-boulevard`
 - [x] Both speak Arabic. Only one has AI, full business management, and 6-country GCC coverage.  
       `daisy-vs-glamera`
-- [ ] Both offer AI and Arabic support, but Daisy is built for the GCC — live in Kuwait today — with a complete growth ecosystem.  
+- [x] Both offer AI and Arabic support, but Daisy is built for the GCC — live in Kuwait today — with a complete growth ecosystem.  
       `daisy-vs-dingg`
-- [ ] A complete platform with cashback built-in versus a $700/mo marketing-only tool.  
+- [x] A complete platform with cashback built-in versus a $700/mo marketing-only tool.  
       `daisy-vs-repeatmd`
-- [ ] AI-powered global platform versus France's commission-free marketplace, different markets, different approaches.  
+- [x] AI-powered global platform versus France's commission-free marketplace, different markets, different approaches.  
       `daisy-vs-planity`
-- [ ] Mangomint runs a beautiful salon. Daisy grows a successful business.  
+- [x] Mangomint runs a beautiful salon. Daisy grows a successful business.  
       `daisy-vs-mangomint`
-- [ ] Purpose-built beauty AI versus a generic scheduling add-on to a payment processor.  
+- [x] Purpose-built beauty AI versus a generic scheduling add-on to a payment processor.  
       `daisy-vs-square-appointments`
 - [ ] Modern AI-powered growth versus established loyalty-focused CRM, which approach wins?  
       `daisy-vs-phorest`
