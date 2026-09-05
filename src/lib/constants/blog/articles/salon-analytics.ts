@@ -593,119 +593,119 @@ const dataDrivenSalonManagementArticle: LocalBlogPost = {
     description:
       'Data-driven salon management means making decisions based on evidence rather than guesswork. This beginner\'s guide explains how to start using data in your salon, which numbers to focus on first, how to build a data culture in your team, and what tools make the process simple.',
     aboutPosts: `
-<h2>What Data-Driven Management Actually Means</h2>
-<p>Data-driven salon management is the practice of making business decisions based on measured evidence rather than intuition, habit, or guesswork. It does not mean you need to become a data scientist or spend hours in spreadsheets. It means asking "what do the numbers say?" before making important decisions about staffing, pricing, marketing, service offerings, and operations.</p>
-<p>The difference between a data-driven salon and a gut-feeling salon is not intelligence - it is information. The owner who checks retention data before redesigning the loyalty programme makes a better decision than the owner who guesses what clients want. The manager who reviews hourly revenue data before adjusting staff schedules makes a better decision than the one who schedules based on "what we've always done." For a deeper look at the analytics that power data-driven management, see our <a href="/en/salon-analytics-reporting">salon analytics pillar guide</a>.</p>
-<p>This guide is for salon owners who know they should be using data but are not sure where to start. It covers the foundations, the first steps, and the mindset shift that turns data from an intimidating concept into a daily advantage.</p>
+<h2>What data-driven management actually means</h2>
+<p>This is deciding things on measured evidence rather than instinct, habit, or hope. Nobody is asking you to become a data scientist or live in a spreadsheet. It means asking "what do the numbers say?" before you settle staffing, pricing, marketing, your menu, or how the place runs.</p>
+<p>What separates a data-driven salon from a gut-feeling one is information, not intelligence. An owner who reads the retention figures before redesigning the loyalty programme decides better than one guessing at what clients want. A manager who checks hourly revenue before moving the rota decides better than one scheduling by "what we've always done." Our <a href="/en/salon-analytics-reporting">salon analytics pillar guide</a> goes deeper into the analytics behind all of this.</p>
+<p>This is for owners who know they ought to be doing this and have no idea where to begin. It covers the foundations, the first moves, and the change of attitude that turns data from something intimidating into something you use every day.</p>
 
-<h2>Why Salon Owners Avoid Data (and Why That Is Changing)</h2>
-<p>Most salon owners started their businesses because they love beauty, not because they love numbers. The common objections to data-driven management are understandable:</p>
+<h2>Why salon owners avoid data (and why that is changing)</h2>
+<p>Almost nobody opens a salon because they enjoy arithmetic. The usual objections make perfect sense:</p>
 <ul>
-<li><strong>"I do not have time."</strong> True if you are tracking data manually. False if you use a platform that collects and presents data automatically. The time investment for data-driven decisions is 15&ndash;30 minutes per week - less time than a single colour appointment.</li>
-<li><strong>"I do not understand analytics."</strong> You do not need to understand analytics in an academic sense. You need to understand what 5 specific numbers mean for your business. This article will teach you that in 10 minutes.</li>
-<li><strong>"My business is too small for data."</strong> Even a solo stylist generates data worth analysing. Your appointment book, client list, and revenue records contain insights about which services are most profitable, which days are busiest, and which clients are your most valuable. Size does not determine whether data is useful - it determines how much data you have.</li>
-<li><strong>"I trust my instincts."</strong> Good instincts are an asset. Data-informed instincts are a superpower. The best salon owners use data to confirm or challenge their instincts, not to replace them.</li>
+<li><strong>"I do not have time."</strong> True while you are doing it by hand, and false once a platform collects and presents it for you. The real cost is 15&ndash;30 minutes per week, which is less than one colour appointment.</li>
+<li><strong>"I do not understand analytics."</strong> Nobody is asking you to. You need to know what 5 specific numbers mean for your business, which takes about 10 minutes to learn.</li>
+<li><strong>"My business is too small for data."</strong> A solo stylist produces plenty worth reading. Your appointment book, client list, and revenue records already say which services pay best, which days are busiest, and which clients matter most. Size decides how much data you have, not whether it is useful.</li>
+<li><strong>"I trust my instincts."</strong> Good instincts are worth having, and better still when the numbers back them. The best owners use data to test what they already suspect rather than to replace it.</li>
 </ul>
 
-<h2>The Five Numbers to Start With</h2>
-<p>If you have never tracked salon data systematically, start with these five numbers. They are easy to measure, immediately actionable, and cover the most important aspects of your business.</p>
+<h2>The five numbers to start with</h2>
+<p>Never tracked anything systematically? Start here. All five are easy to measure, you can act on each of them tomorrow, and between them they cover most of what matters.</p>
 
-<h3>Number 1: How Many Clients Came Back?</h3>
-<p>Your client retention rate tells you whether your service and experience are good enough to bring people back. If 100 clients visited last quarter and 68 returned, your retention rate is 68%. That is your starting point. Every decision you make about service quality, follow-up communication, and loyalty programmes should aim to increase this number.</p>
-<p>If you do not know this number, start by counting repeat clients this month compared to last month. Even an approximate figure is infinitely more useful than not knowing at all.</p>
+<h3>Number 1: how many clients came back?</h3>
+<p>Retention rate tells you whether the work and the experience are good enough to bring people back. 100 clients last quarter with 68 returning gives you 68%. That is where you start, and every decision about service quality, follow-up, and loyalty should be trying to move it up.</p>
+<p>Not knowing it yet, count repeat clients this month against last month. A rough figure beats no figure by a mile.</p>
 
-<h3>Number 2: How Much Does Each Visit Generate?</h3>
-<p>Average Revenue Per Visit (ARPV) is your total revenue divided by total client visits. This number tells you whether you are maximising the value of each client interaction. If your ARPV is $55 and your competitor's is $80, the gap is costing you thousands in revenue every month without serving a single fewer client.</p>
-<p>Track ARPV monthly. If it is flat or declining, look at upselling, add-on services, and retail opportunities.</p>
+<h3>Number 2: how much does each visit generate?</h3>
+<p>Average Revenue Per Visit is total revenue divided by total visits, and it tells you what each client interaction is actually worth. An ARPV of $55 against a competitor's $80 costs you thousands a month while you serve exactly the same number of people.</p>
+<p>Check it monthly. Flat or falling points you at upselling, add-ons, and retail.</p>
 
-<h3>Number 3: How Full Is Your Calendar?</h3>
-<p>Chair utilisation tells you how much of your available capacity is actually being used. If your stylists are available 8 hours per day but only booked for 5.5 hours, your utilisation is 69%. The 2.5 hours of empty time per stylist per day is lost revenue you can never recover.</p>
-<p>Use <a href="/en/features/business/booking-management">booking management tools</a> that show utilisation visually. You will immediately see where the gaps are and can take action to fill them.</p>
+<h3>Number 3: how full is your calendar?</h3>
+<p>Chair utilisation is how much of your capacity actually gets used. Stylists available 8 hours a day and booked for 5.5 gives you 69%. Those 2.5 empty hours per stylist per day are revenue nobody will ever get back.</p>
+<p>Use <a href="/en/features/business/booking-management">booking management tools</a> that draw it for you. The gaps become obvious the moment you can see them.</p>
 
-<h3>Number 4: How Many Appointments Were Missed?</h3>
-<p>No-show rate measures lost revenue from clients who booked but did not show up. Every no-show is time your staff was reserved but not paid for. If your no-show rate is above 5%, you have a measurable revenue leak.</p>
-<p>Automated reminders reduce no-shows by 30&ndash;50%. If you are not using automated confirmations and reminders, implementing them is the single highest-ROI data action you can take.</p>
+<h3>Number 4: how many appointments were missed?</h3>
+<p>No-show rate is the revenue lost to people who booked and never arrived. Each one is time your staff were held for and not paid for. Above 5% and you have a leak you can measure.</p>
+<p>Automated reminders reduce no-shows by 30&ndash;50%. If you have none running, switching them on returns more than anything else on this list.</p>
 
-<h3>Number 5: Where Are New Clients Coming From?</h3>
-<p>Knowing your acquisition channels tells you where to invest your marketing budget. If 40% of new clients find you through Instagram but you are spending most of your marketing budget on Google Ads, your allocation is misaligned.</p>
-<p>Ask every new client how they found you and record the answer. Even this simple practice, done consistently, provides strategic intelligence that most salons lack.</p>
+<h3>Number 5: where are new clients coming from?</h3>
+<p>Knowing your channels tells you where the marketing budget belongs. 40% of new clients arriving through Instagram while most of your spend goes to Google Ads means the money is in the wrong place.</p>
+<p>Ask everyone new how they found you and write it down. Done consistently, that one habit gives you something most salons never have.</p>
 
-<h2>How to Start: The 30-Day Data Foundation</h2>
-<p>You do not need to overhaul your business overnight. Follow this 30-day plan to build a data foundation that will serve you permanently.</p>
+<h2>How to start: the 30-day data foundation</h2>
+<p>Nothing here needs to happen overnight. This 30-day plan builds a foundation you will keep using.</p>
 
-<h3>Week 1: Set Up Tracking</h3>
+<h3>Week 1: set up tracking</h3>
 <ul>
-<li>If you are using a salon management platform, explore its reporting and analytics features. Most platforms track the five numbers above automatically - you just need to know where to find them.</li>
-<li>If you are not using a platform, create a simple spreadsheet with five columns: Date, Total Revenue, Number of Visits, Number of No-Shows, Number of New Clients. Fill it in at the end of each day. This takes 2 minutes.</li>
-<li>Review your client list and identify how many unique clients visited in the last 90 days versus how many are repeat visitors. This gives you your baseline retention rate.</li>
+<li>Already on a salon management platform? Go and find its reporting section. Most of them track all five of these already and nobody ever looks.</li>
+<li>Without one, make a spreadsheet with five columns: Date, Total Revenue, Number of Visits, Number of No-Shows, Number of New Clients. Fill it in as you close. It takes 2 minutes.</li>
+<li>Go through your client list and count how many unique clients came in over the last 90 days against how many were returning. That is your baseline retention rate.</li>
 </ul>
 
-<h3>Week 2: Establish Your Baseline</h3>
+<h3>Week 2: establish your baseline</h3>
 <ul>
-<li>After 7 days of tracking, calculate your first set of numbers: ARPV, daily utilisation, no-show rate.</li>
-<li>Write these numbers down. They are your baseline - the starting point from which all future improvements will be measured.</li>
-<li>Do not judge the numbers. There is no "wrong" starting point. The purpose is awareness, not self-criticism.</li>
+<li>After 7 days, work out your first set: ARPV, daily utilisation, no-show rate.</li>
+<li>Write them down somewhere permanent, because everything you do afterwards gets measured against them.</li>
+<li>Do not judge them. There is no "wrong" starting point, and the exercise is about knowing, not about feeling bad.</li>
 </ul>
 
-<h3>Week 3: Identify One Improvement</h3>
+<h3>Week 3: identify one improvement</h3>
 <ul>
-<li>Look at your five numbers and identify the one with the most improvement potential. Usually it is no-show rate (easiest to fix) or utilisation (biggest revenue impact).</li>
-<li>Implement one change to improve that number. If no-shows are high, turn on automated reminders. If utilisation is low, run a targeted promotion for your emptiest time slots.</li>
-<li>Continue tracking daily.</li>
+<li>Pick the number with the most room in it. Usually that is no-show rate, which is easiest to fix, or utilisation, which is worth the most.</li>
+<li>Make one change aimed at it. High no-shows means switching on automated reminders. Low utilisation means a promotion pointed at your emptiest hours.</li>
+<li>Keep tracking daily.</li>
 </ul>
 
-<h3>Week 4: Review and Commit</h3>
+<h3>Week 4: review and commit</h3>
 <ul>
-<li>Compare your week 3&ndash;4 numbers to your week 1&ndash;2 baseline. If you implemented a change in week 3, you may already see improvement.</li>
-<li>Schedule a recurring weekly 15-minute "data review" - the same time every week. This is your new management habit.</li>
-<li>Decide whether your current tracking method is sustainable. If the spreadsheet feels cumbersome, it is time to invest in an <a href="/en/features/business/analytics-reports">analytics-enabled salon platform</a> that automates the process.</li>
+<li>Put your week 3&ndash;4 numbers next to the week 1&ndash;2 baseline. A change made in week 3 may already be showing.</li>
+<li>Put a 15-minute "data review" in the diary at the same time every week. That is the habit you are actually building.</li>
+<li>Ask whether you can keep this up. A spreadsheet that already feels like a chore means it is time for an <a href="/en/features/business/analytics-reports">analytics-enabled salon platform</a> to do it instead.</li>
 </ul>
 
-<h2>Building a Data Culture in Your Team</h2>
-<p>Data-driven management is not a solo activity. Your team needs to understand and engage with the numbers that affect their work.</p>
+<h2>Building a data culture in your team</h2>
+<p>None of this works if only you can see it. Your team needs to understand the numbers that describe their own work.</p>
 <ul>
-<li><strong>Share relevant metrics weekly.</strong> At your weekly team meeting (even a 5-minute standup counts), share one or two numbers: "Our retention rate went up 3% this month" or "No-shows dropped to 4% thanks to the new reminder system." Celebrate improvements.</li>
-<li><strong>Make individual data visible.</strong> Each stylist should have access to their own utilisation rate, average ticket, and rebooking rate. This is not surveillance - it is empowerment. When people can see their numbers, they naturally work to improve them.</li>
-<li><strong>Connect data to decisions.</strong> When you make a change (adjusting the schedule, launching a promotion, changing a product line), explain the data that informed the decision. "We are adding Tuesday evening appointments because our data shows 15% of booking requests come in for times we are currently closed" is more compelling than "I think we should try evening hours."</li>
-<li><strong>Reward data-driven behaviour.</strong> When a team member notices a pattern, suggests a data-informed improvement, or asks "what do the numbers say?" - acknowledge and encourage it. The more your team sees data as helpful rather than threatening, the faster your culture shifts.</li>
+<li><strong>Share relevant metrics weekly.</strong> At the team meeting, and a 5-minute standup counts, give them one or two: "Our retention rate went up 3% this month" or "No-shows dropped to 4% thanks to the new reminder system." Mark the wins.</li>
+<li><strong>Make individual data visible.</strong> Every stylist should see their own utilisation, average ticket, and rebooking rate. This is not surveillance, it is information, and people who can see their numbers tend to move them.</li>
+<li><strong>Connect data to decisions.</strong> When you change the schedule, launch a promotion, or swap a product line, say what the numbers were. "We are adding Tuesday evening appointments because our data shows 15% of booking requests come in for times we are currently closed" carries a room that "I think we should try evening hours" does not.</li>
+<li><strong>Reward data-driven behaviour.</strong> Someone spots a pattern, suggests something the numbers support, or asks "what do the numbers say?" Say so out loud. The faster the team reads data as useful rather than threatening, the faster this becomes normal.</li>
 </ul>
 
-<h2>Common Beginner Mistakes</h2>
+<h2>Common beginner mistakes</h2>
 <ul>
-<li><strong>Tracking everything at once.</strong> Start with five numbers, not fifty. You can add more metrics as the five become habitual. Overwhelm is the enemy of adoption.</li>
-<li><strong>Tracking without acting.</strong> Data that does not lead to decisions is a waste of time. Every number should connect to a potential action. If you cannot articulate what you would do differently based on a metric, you do not need to track it yet.</li>
-<li><strong>Reacting to single data points.</strong> One bad week does not mean your business is failing. One great week does not mean your strategy is perfect. Look for trends over 4&ndash;8 weeks before making significant changes.</li>
-<li><strong>Blaming the data.</strong> If the numbers reveal something uncomfortable (low retention, declining ARPV, high no-shows), the data is not the problem. It is the messenger. Thank the messenger and fix the problem.</li>
-<li><strong>Perfectionism.</strong> Your data will never be perfectly clean. Approximate data that you use is infinitely more valuable than perfect data you never collect. Start messy, improve over time.</li>
+<li><strong>Tracking everything at once.</strong> Five numbers, not fifty. Add more once these are automatic. Nothing kills a new habit faster than too much of it.</li>
+<li><strong>Tracking without acting.</strong> A number that changes nothing is wasted effort. If you cannot say what you would do differently because of a metric, you do not need it yet.</li>
+<li><strong>Reacting to single data points.</strong> A bad week is not a failing business and a good one is not a proven strategy. Wait for 4&ndash;8 weeks of trend before you change anything significant.</li>
+<li><strong>Blaming the data.</strong> Low retention, falling ARPV, and high no-shows are uncomfortable to read and none of them are the fault of the report. Thank the messenger and go and fix it.</li>
+<li><strong>Perfectionism.</strong> Your data will never be clean. Rough numbers you actually use beat perfect ones you never collect. Start messy.</li>
 </ul>
 
-<h2>When to Upgrade to a Salon Analytics Platform</h2>
-<p>Manual tracking is a good starting point, but it has limits. You should consider upgrading to a dedicated <a href="/en/features/business/salon-management-software">salon management platform</a> with built-in analytics when:</p>
+<h2>When to upgrade to a salon analytics platform</h2>
+<p>Tracking by hand gets you started and then runs out of road. Move to a <a href="/en/features/business/salon-management-software">salon management platform</a> with analytics built in once:</p>
 <ul>
-<li>Your daily spreadsheet entry takes more than 5 minutes or you are skipping days.</li>
-<li>You want metrics that are difficult to calculate manually (CLV, revenue by channel, staff-level analytics).</li>
-<li>You want real-time data rather than end-of-day summaries.</li>
-<li>You want automated alerts (e.g., "Client X is overdue for a visit" or "No-show rate increased 50% this week").</li>
-<li>You have more than 3 staff members and individual performance tracking becomes unwieldy in a spreadsheet.</li>
+<li>The daily entry takes more than 5 minutes, or you have started skipping days.</li>
+<li>You want the metrics that are painful by hand, meaning CLV, revenue by channel, and staff-level analytics.</li>
+<li>You want the numbers live rather than at closing time.</li>
+<li>You want to be told things: "Client X is overdue for a visit" or "No-show rate increased 50% this week".</li>
+<li>You have more than 3 staff and tracking them individually in a spreadsheet has stopped being practical.</li>
 </ul>
-<p>Modern platforms like The Daisy integrate booking, payments, client management, and analytics into one system, so every action automatically generates data that populates your dashboard. No manual entry, no spreadsheet formulas, no data reconciliation. Explore <a href="/en/pricing/business">pricing options</a> to find the right level of analytics for your business.</p>
+<p>Platforms like The Daisy hold booking, payments, client management, and analytics together, so everything that happens feeds the dashboard by itself. Nothing to type, no formulas, nothing to reconcile. <a href="/en/pricing/business">Pricing options</a> are here.</p>
 
-<h2>Frequently Asked Questions</h2>
+<h2>Frequently asked questions</h2>
 
 <h3>Do I need to be good with numbers to use data in my salon?</h3>
-<p>No. Data-driven salon management requires understanding what five numbers mean and whether they are going up or down. If you can read a bank statement or compare this month's rent to last month's, you have all the numerical skill required. Modern salon analytics platforms present data visually (charts, colour coding, trend arrows) so you do not need to calculate anything manually.</p>
+<p>No. This asks you to know what five numbers mean and whether they are rising or falling. Anyone who can read a bank statement or compare this month's rent to last month's has enough. Modern platforms draw it all as charts, colours, and arrows, so there is nothing to calculate.</p>
 
 <h3>How much time does data-driven management take each week?</h3>
-<p>With a modern analytics platform: 15&ndash;30 minutes per week for your data review session. With manual spreadsheet tracking: 2&ndash;3 minutes per day for data entry plus 15&ndash;20 minutes per week for analysis. The total time investment is less than a single client appointment, and the return on that time investment is exponentially higher than any other 30 minutes you could spend.</p>
+<p>On a modern analytics platform, 15&ndash;30 minutes per week for the review. Doing it in a spreadsheet, 2&ndash;3 minutes per day entering it plus 15&ndash;20 minutes per week reading it. Either way it is less than one client appointment, and no other 30 minutes in your week returns as much.</p>
 
 <h3>What if my salon management software does not have good analytics?</h3>
-<p>If your current platform lacks analytics capabilities, you have two options: supplement with manual tracking (spreadsheets) or switch to a platform that includes analytics as a core feature. Given that modern platforms like The Daisy include analytics alongside booking, payments, and marketing at comparable pricing to analytics-free alternatives, switching often makes more financial sense than maintaining a limited tool plus a separate tracking system.</p>
+<p>Two options: keep a spreadsheet alongside it, or move to something that treats analytics as core. Since platforms like The Daisy include analytics with booking, payments, and marketing at prices comparable to tools without it, switching usually costs less than running a limited tool plus a separate tracking system.</p>
 
 <h3>Can data really help a salon with only 1-2 staff?</h3>
-<p>Absolutely. Small salons often see the fastest improvements from data because there are fewer variables and changes have immediate, visible effects. A solo stylist who discovers their no-show rate is 12% and implements automated reminders to cut it to 4% recovers multiple hours of productive time per week. A 2-person salon that identifies Tuesday as their slowest day and runs a targeted promotion sees results within days. Data works at every scale.</p>
+<p>Yes, and often faster, because there are fewer variables and any change shows immediately. A solo stylist who finds a 12% no-show rate and cuts it to 4% with automated reminders gets hours back every week. A 2-person salon that identifies Tuesday as its worst day and runs a promotion sees the result within days.</p>
 
 <h3>What is the single most important thing to track if I can only track one number?</h3>
-<p>If you can truly only track one number, track client retention rate. Retention drives every other metric: revenue stability, lifetime value, referral volume, and growth sustainability. A salon with strong retention can survive and grow even with limited marketing. A salon with weak retention needs constant expensive acquisition just to maintain revenue. Retention is the foundation on which everything else is built.</p>
+<p>Client retention rate. It sits under everything else: revenue stability, lifetime value, referrals, and whether growth lasts. A salon retaining well survives and grows on very little marketing. A salon retaining badly has to keep buying clients simply to stand still.</p>
 `,
     metaTitle: 'Data-Driven Salon Management Guide | The Daisy',
     metaDescription:

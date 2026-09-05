@@ -252,18 +252,18 @@ smallest and the most constrained, so they are cheap to leave until last.
       `salon-client-lifetime-value`
 - [x] Salon Revenue Reporting: What to Measure & Why  
       `salon-revenue-reporting-guide`
-- [ ] Data-Driven Salon Management: Beginner's Guide  
+- [x] Data-Driven Salon Management: Beginner's Guide  
       `data-driven-salon-management`
 
 ### `salon-management.ts` (8)
 
-- [ ] How to Choose Salon Management Software: A Step-by-Step Guide  
+- [x] How to Choose Salon Management Software: A Step-by-Step Guide  
       `how-to-choose-salon-management-software`
-- [ ] Salon Software Features Checklist: 25 Must-Haves  
+- [x] Salon Software Features Checklist: 25 Must-Haves  
       `salon-software-features-checklist`
-- [ ] Switching Salon Software: Complete Migration Guide  
+- [x] Switching Salon Software: Complete Migration Guide  
       `switching-salon-software-migration-guide`
-- [ ] Cloud vs Desktop Salon Software: Which Is Better?  
+- [x] Cloud vs Desktop Salon Software: Which Is Better?  
       `cloud-vs-desktop-salon-software`
 - [ ] Small Salon Software: Best Options for 1-5 Staff  
       `small-salon-software-options`
