@@ -665,10 +665,10 @@ separately. Tick both.
 - [x] `brand-control.ts` — professional
 - [x] `service-portfolio.ts` — business
 - [x] `service-portfolio.ts` — professional
-- [ ] `smart-scheduling.ts` — business
-- [ ] `smart-scheduling.ts` — professional
-- [ ] `unified-inbox.ts` — business
-- [ ] `unified-inbox.ts` — professional
+- [x] `smart-scheduling.ts` — business
+- [x] `smart-scheduling.ts` — professional
+- [x] `unified-inbox.ts` — business
+- [x] `unified-inbox.ts` — professional
 
 ---
 
