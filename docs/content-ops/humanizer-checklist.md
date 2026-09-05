@@ -585,15 +585,15 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
       `mangomint`
 - [x] phorest  
       `phorest`
-- [ ] timely  
+- [x] timely  
       `timely`
-- [ ] meevo  
+- [x] meevo  
       `meevo`
-- [ ] treatwell  
+- [x] treatwell  
       `treatwell`
-- [ ] acuity-scheduling  
+- [x] acuity-scheduling  
       `acuity-scheduling`
-- [ ] simplybook-me  
+- [x] simplybook-me  
       `simplybook-me`
 - [ ] setmore  
       `setmore`
