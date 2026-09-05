@@ -486,15 +486,15 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
       `daisy-vs-mangomint`
 - [x] Purpose-built beauty AI versus a generic scheduling add-on to a payment processor.  
       `daisy-vs-square-appointments`
-- [ ] Modern AI-powered growth versus established loyalty-focused CRM, which approach wins?  
+- [x] Modern AI-powered growth versus established loyalty-focused CRM, which approach wins?  
       `daisy-vs-phorest`
-- [ ] A generic scheduling tool at $16/mo versus a complete beauty business growth platform.  
+- [x] A generic scheduling tool at $16/mo versus a complete beauty business growth platform.  
       `daisy-vs-acuity-scheduling`
-- [ ] Subscription fees, transaction fees, and marketplace commissions, the costs keep adding up.  
+- [x] Subscription fees, transaction fees, and marketplace commissions, the costs keep adding up.  
       `fresha`
-- [ ] Great app, but per-provider pricing and limited AI are holding your business back.  
+- [x] Great app, but per-provider pricing and limited AI are holding your business back.  
       `booksy`
-- [ ] Vagaro manages your business well, but it doesn't help you grow it.  
+- [x] Vagaro manages your business well, but it doesn't help you grow it.  
       `vagaro`
 - [ ] Beautiful design and great for solo pros, but what happens when you want to grow?  
       `glossgenius`
