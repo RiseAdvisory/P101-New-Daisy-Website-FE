@@ -36,14 +36,14 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         categoryLabel: 'SMART SCHEDULING FOR BUSINESS',
         headline: 'Scheduling That Fills Your Calendar.\nNot Your Time.',
         subHeadline:
-          'AI handles availability checks, conflict detection, and staff scheduling. Customers book the right person at the right time. You never touch the calendar.',
+          'The AI checks availability, catches conflicts and handles staff scheduling, so customers land with the right person at the right time and you never open the calendar.',
         ctaText: 'Start Your 14-Day Free Trial',
         ctaLink: '/get-the-app',
         trustLine: 'No credit card required. Our team helps you set up.',
         answerBlock: {
           question: 'How does AI smart scheduling work for beauty businesses?',
           answer:
-            'AI smart scheduling checks real-time staff availability, detects conflicts, and suggests the best time slot for each customer. It handles multiple staff calendars simultaneously, prevents double-bookings, and accepts appointments 24/7 through WhatsApp and Instagram.',
+            'It reads live staff availability, spots conflicts and offers each customer the slot that works best. It holds several staff calendars at once, will not double-book anyone, and takes appointments 24/7 through WhatsApp and Instagram.',
         },
       },
       scrollSections: [
@@ -52,7 +52,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
           infoScroll: {
             title: 'Customer Requests a Time',
             text: 'AI Checks All Staff Availability',
-            description: 'A customer messages asking for a balayage appointment this Saturday. The AI instantly checks availability across all your stylists and finds the best options.',
+            description: 'Someone messages asking for a balayage on Saturday. The AI checks every stylist\'s availability and comes back with the best options.',
             listSub: ['Checks all staff calendars in real-time', 'Considers service duration and breaks', 'Responds within seconds'],
           },
         },
@@ -61,7 +61,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
           infoScroll: {
             title: 'Best Slot Suggested Automatically',
             text: 'Right Person. Right Time. Zero Conflicts.',
-            description: 'The AI suggests the best available slot with the right stylist for the service. It factors in expertise, availability, and customer preferences to make the perfect match.',
+            description: 'It offers the best slot with the right stylist for that service, weighing expertise, availability and what the customer has preferred before.',
             listSub: ['Matches stylist expertise to service', 'Avoids scheduling conflicts', 'Optimizes calendar utilization'],
           },
         },
@@ -70,7 +70,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
           infoScroll: {
             title: 'Confirmed Without Double-Booking',
             text: 'Instant Confirmation. Zero Overlap.',
-            description: 'The booking is confirmed instantly. The AI ensures no two customers are booked for the same stylist at the same time. Staff calendars update in real-time.',
+            description: 'The booking confirms straight away, no two customers ever land on the same stylist at once, and every staff calendar updates as it happens.',
             listSub: ['Zero double-bookings guaranteed', 'Instant confirmation to customer', 'Staff notified immediately'],
           },
         },
@@ -79,7 +79,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
           infoScroll: {
             title: 'Your Calendar Stays Full and Organized',
             text: "You Didn't Touch a Thing",
-            description: 'Your business calendar fills up efficiently. No gaps between appointments, no wasted staff time. The AI optimizes every slot so your team stays productive.',
+            description: 'The calendar fills tightly, with no dead gaps between appointments and no staff sitting idle. Every slot is arranged to keep the team working.',
             listSub: ['Optimized calendar with minimal gaps', 'Staff utilization maximized', 'Revenue per day increases'],
           },
         },
@@ -92,14 +92,14 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
       howItWorks: {
         title: 'How It Works',
       steps: [
-          { title: 'Sign up and tell us about your business', description: 'Takes 5 minutes. Tell us your services, staff, and hours.' },
-          { title: 'Our team helps you get set up', description: 'We migrate your data, configure your AI receptionist, and test everything with you.' },
-          { title: 'Go live. Your AI receptionist takes over.', description: 'Customers get instant responses. You get control.' },
+          { title: 'Sign up and tell us about your business', description: 'Takes 5 minutes. Your services, your staff, your hours.' },
+          { title: 'Our team helps you get set up', description: 'We move your data across, set up the AI receptionist and test it all with you.' },
+          { title: 'Go live. Your AI receptionist takes over.', description: 'Customers get an instant answer. You get the control.' },
         ],
       },
       pricingHook: {
         headline: 'Free to Start. Grow at Your Own Pace.',
-        body: "14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.",
+        body: "A 14-day free trial with every feature open, no credit card. After that, flexible plans from $50/month. Your AI receptionist does more than answer messages: it learns what your customers like and turns first-time visitors into regulars. Commission applies only to new customers the Daisy marketplace sends you. On your existing clients, zero.",
         ctaText: 'Start Your 14-Day Free Trial',
         ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
@@ -107,7 +107,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
       },
       platformStrengths: {
         headline: 'Everything You Need to Run Your Business',
-        subHeadline: 'Stop paying for 8 separate tools. Daisy combines everything you need to run and grow your beauty business.',
+        subHeadline: 'Stop paying for 8 separate tools. Daisy holds everything you need to run and grow the business in one place.',
         capabilities: [
           { label: 'Smart Booking', description: 'Intelligent scheduling that fills your calendar' },
           { label: 'AI Receptionist', description: '24/7 WhatsApp and Instagram messaging, booking, and payments' },
@@ -130,10 +130,10 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
       },
       titleFraque: 'Frequently Asked Questions',
       fallbackFaqs: [
-        { question: 'How does AI scheduling prevent conflicts?', answer: 'The AI checks all staff calendars in real-time before confirming any booking. It considers service duration, break times, and existing appointments to ensure zero overlap.' },
-        { question: 'Can it handle multiple staff members?', answer: 'Yes. The AI manages calendars for your entire team simultaneously, matching each customer to the right staff member based on expertise, availability, and preference.' },
-        { question: 'Does it work with my existing calendar?', answer: 'Yes. Daisy syncs with Google Calendar and other popular calendar tools. Changes in either system update in real-time.' },
-        { question: 'What happens if a customer needs to reschedule?', answer: 'The AI handles rescheduling requests automatically. It finds the next best available slot and confirms the change with both the customer and staff member.' },
+        { question: 'How does AI scheduling prevent conflicts?', answer: 'It reads every staff calendar before confirming anything, accounting for how long the service takes, when breaks fall and what is already booked, so nothing overlaps.' },
+        { question: 'Can it handle multiple staff members?', answer: 'Yes. It runs the whole team\'s calendars at once, putting each customer with the right person on expertise, availability and preference.' },
+        { question: 'Does it work with my existing calendar?', answer: 'Yes. Daisy syncs with Google Calendar and the other common tools, and a change in either place shows up in the other immediately.' },
+        { question: 'What happens if a customer needs to reschedule?', answer: 'The AI takes reschedule requests itself, finds the next slot that works and confirms the change with both the customer and the staff member.' },
       ],
     },
     ar: {
@@ -225,13 +225,13 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
       hero: {
         categoryLabel: 'SMART SCHEDULING FOR PROFESSIONALS',
         headline: 'Your Schedule. Your Rules.\nZero Admin.',
-        subHeadline: "Set your hours, block personal time, work across multiple locations. Daisy's AI fills your calendar without you lifting a finger.",
+        subHeadline: "Set your hours, block out personal time, work across as many locations as you like. Daisy's AI fills the calendar while you get on with the day.",
         ctaText: 'Start Your Free Trial',
         ctaLink: '/get-the-app',
         trustLine: 'Free to join. No credit card required.',
         answerBlock: {
           question: 'How does smart scheduling work for beauty professionals?',
-          answer: "Smart scheduling lets you set your own hours and availability across multiple locations. Daisy's AI fills your calendar by accepting booking requests 24/7, checking your schedule in real-time, and preventing double-bookings. You focus on clients while the AI handles scheduling admin.",
+          answer: "You set your own hours and availability, across as many locations as you work. Daisy's AI takes booking requests 24/7, reads your live schedule and will not double-book you. You stay with clients; it handles the scheduling.",
         },
       },
       scrollSections: [
@@ -260,14 +260,14 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
       howItWorks: {
         title: 'How It Works',
       steps: [
-          { title: 'Sign up and tell us about yourself', description: 'Takes 5 minutes. Set your services, availability, and pricing.' },
-          { title: 'Our team helps you get set up', description: 'We configure your profile, set up your AI assistant, and walk you through everything.' },
-          { title: 'Go live. Focus on your clients.', description: 'Daisy handles your bookings. You handle your craft.' },
+          { title: 'Sign up and tell us about yourself', description: 'Takes 5 minutes. Your services, your availability, your prices.' },
+          { title: 'Our team helps you get set up', description: 'We set up your profile and your AI assistant, and walk you through all of it.' },
+          { title: 'Go live. Focus on your clients.', description: 'Daisy takes the bookings. You do the work you trained for.' },
         ],
       },
       pricingHook: {
         headline: 'Free to Join. Zero Risk.',
-        body: "Create your profile and start accepting bookings at no cost. Premium features available through affordable plans. Daisy doesn't just manage your schedule. It learns your clients' preferences, personalizes their booking experience, and makes sure you never miss an inquiry. Commission only on new clients who find you through the Daisy marketplace, your existing clients always pay zero commission.",
+        body: "Create your profile and start taking bookings at no cost, with premium features on affordable plans. Daisy does more than hold your schedule: it learns what your clients prefer, shapes their booking experience around it, and makes sure nothing goes unanswered. Commission applies only to new clients who find you through the Daisy marketplace. Your existing clients always pay zero.",
         ctaText: 'Get Listed for Free',
         ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
@@ -275,7 +275,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
       },
       platformStrengths: {
         headline: 'Everything You Need in One App',
-        subHeadline: 'No more juggling between scheduling apps, payment tools, and messaging clients. Daisy brings it all together.',
+        subHeadline: 'No more moving between a scheduling app, a payment tool and a messaging thread. Daisy holds all of it together.',
         capabilities: [
           { label: 'Flexible Scheduling', description: 'Set your own hours across multiple locations' },
           { label: 'AI Booking Assistant', description: 'Handles bookings and payments while you work' },
@@ -298,10 +298,10 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
       },
       titleFraque: 'Frequently Asked Questions',
       fallbackFaqs: [
-        { question: 'Can I set my own working hours?', answer: 'Yes. You have full control over your schedule. Set different hours for different days, block personal time, and adjust availability whenever you need to.' },
-        { question: 'What if I work at multiple locations?', answer: 'Daisy supports multi-location scheduling. Set different hours and services for each location and the AI manages your availability across all of them.' },
-        { question: 'Can I block personal time?', answer: 'Absolutely. Block lunch breaks, personal appointments, holidays, or any time you need off. The AI will never book clients during blocked periods.' },
-        { question: 'How does AI avoid double-bookings?', answer: 'The AI checks your real-time calendar before confirming any booking. It accounts for service duration, buffer time between appointments, and your personal blocked time.' },
+        { question: 'Can I set my own working hours?', answer: 'Yes, the schedule is entirely yours. Different hours on different days, personal time blocked out, and availability you can change whenever you want.' },
+        { question: 'What if I work at multiple locations?', answer: 'Daisy handles multiple locations. Give each one its own hours and services, and the AI keeps your availability straight across all of them.' },
+        { question: 'Can I block personal time?', answer: 'Yes. Block lunch, personal appointments, holidays, anything. The AI will not put a client in a blocked period.' },
+        { question: 'How does AI avoid double-bookings?', answer: 'It reads your live calendar before confirming anything, allowing for how long the service takes, the buffer between appointments and whatever you have blocked out.' },
       ],
     },
     ar: {

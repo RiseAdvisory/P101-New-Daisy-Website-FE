@@ -21,14 +21,14 @@ const aiReceptionistAngle: Record<
         categoryLabel: 'AI RECEPTIONIST FOR BUSINESS',
         headline: 'Every Customer Message Answered. Instantly.',
         subHeadline:
-          "Daisy's AI receptionist handles every WhatsApp and Instagram inquiry, books appointments, and processes payments, 24/7. One platform replaces your entire front desk.",
+          "Daisy's AI receptionist takes every WhatsApp and Instagram inquiry, books the appointment and processes the payment, 24/7. One platform in place of your entire front desk.",
         ctaText: 'Start Your 14-Day Free Trial',
         ctaLink: '/get-the-app',
         trustLine: 'No credit card required. Our team helps you set up.',
         answerBlock: {
           question: 'How does the Daisy AI receptionist work for beauty businesses?',
           answer:
-            "The Daisy AI receptionist handles your WhatsApp and Instagram messages 24/7. It answers customer questions, checks staff availability, books appointments, and processes payments automatically. It learns your services, pricing, and preferences over time to provide personalized responses in 10+ languages.",
+            "It handles your WhatsApp and Instagram messages 24/7: answering questions, checking who is free, booking the appointment and taking payment. Over time it learns your services, your pricing and how you like things done, and replies personally in 10+ languages.",
         },
       },
     },
@@ -57,14 +57,14 @@ const aiReceptionistAngle: Record<
         categoryLabel: 'AI RECEPTIONIST FOR PROFESSIONALS',
         headline: 'Focus on Your Craft.\nDaisy Handles the Rest.',
         subHeadline:
-          "Stop being your own receptionist. Daisy's AI handles your WhatsApp and Instagram messages, books appointments, and processes payments, while you focus on what you do best.",
+          "Stop being your own receptionist. Daisy's AI takes your WhatsApp and Instagram messages, books the appointments and processes payments while you get on with the work.",
         ctaText: 'Start Your Free Trial',
         ctaLink: '/get-the-app',
         trustLine: 'Free to join. No credit card required.',
         answerBlock: {
           question: 'How does the Daisy AI receptionist help beauty professionals?',
           answer:
-            "The Daisy AI receptionist manages your WhatsApp and Instagram messages 24/7 while you focus on clients. It handles booking requests, answers service questions, and processes payments automatically. You set your hours and services, and Daisy fills your calendar without interrupting your work.",
+            "It runs your WhatsApp and Instagram messages 24/7 while you are with clients, taking booking requests, answering questions about services and processing payments. You set your hours and your services, and Daisy fills the calendar without interrupting you.",
         },
       },
     },

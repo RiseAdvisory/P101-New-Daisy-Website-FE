@@ -18,23 +18,23 @@ export const salonMarketingStrategies: PillarPageData = {
 
   heroTitle: 'Salon Marketing Strategies That Drive Growth',
   heroSubtitle:
-    'How successful salon owners attract new clients, keep them coming back, and build a brand that grows, using strategies that actually work in 2026.',
+    'How salon owners bring in new clients, keep them returning and build a brand that grows, with strategies that still work in 2026.',
   readingTime: '20 min read',
   lastUpdated: '2026-03-18T00:00:00.000Z',
 
   keyTakeaways: [
-    'The most effective salon marketing combines client acquisition (attracting new clients) with client retention (keeping them coming back), most salons under-invest in retention, where the ROI is 5-7x higher.',
-    'Social media marketing drives awareness, but it rarely drives bookings directly. A complete strategy connects social content to a booking system that converts followers into paying clients.',
-    'Loyalty and referral programs are the highest-ROI marketing channels for salons, a well-designed referral program can generate 20-30% of new clients at near-zero cost.',
-    'Cashback incentives outperform traditional discounts because they drive repeat visits without devaluing your services.',
-    'Local SEO is the most underutilized growth channel for salons, optimizing your Google Business Profile can increase discovery by 50-200% within three months.',
-    'Every marketing strategy should be measured by cost per new client and client lifetime value, not vanity metrics like follower counts or post likes.',
+    'Good salon marketing does two jobs, bringing clients in and keeping them. Most salons underspend badly on the second, where the return is 5-7x higher.',
+    'Social media builds awareness and rarely produces a booking on its own. What closes the gap is connecting the content to a booking system that turns a follower into a client.',
+    'Loyalty and referral programs return more than any other channel. A well-built referral scheme can bring in 20-30% of your new clients at close to no cost.',
+    'Cashback beats a discount, because it brings people back without teaching them your work is worth less.',
+    'Local SEO is the most neglected channel in the industry. Working on your Google Business Profile can raise discovery by 50-200% within three months.',
+    'Judge every strategy on cost per new client and lifetime value, not on follower counts or likes.',
   ],
 
-  introduction: `<p>Marketing is the growth engine of every successful salon, yet it remains the area where most beauty business owners feel least confident. You know how to deliver incredible services. You know how to build a loyal team. But consistently attracting new clients and turning first-time visitors into lifelong regulars? That requires a different skill set, one that most beauty professionals were never trained in.</p>
-<p>The good news: salon marketing in 2026 is more accessible, more measurable, and more effective than ever before. The tools available to a single-chair studio today would have been the envy of a marketing department a decade ago. The challenge is not a lack of options. It is knowing which strategies actually drive bookings and revenue versus those that simply consume time and money.</p>
-<p>This guide cuts through the noise. We cover every marketing channel relevant to beauty businesses, from <a href="/en/features/business/marketing-promotions">social media and email</a> to loyalty programs, local SEO, paid advertising, and cashback strategies, with specific, actionable tactics for each. You will learn not just what to do, but how to measure whether it is working and when to double down or pivot.</p>
-<p>Whether you are marketing a newly opened salon or looking to accelerate growth for an established business, the fundamentals are the same: attract the right clients, deliver an exceptional experience, and create systems that bring them back, repeatedly, automatically, and profitably.</p>`,
+  introduction: `<p>Marketing is what grows a salon, and it is where most owners feel least sure of themselves. You know how to do the work. You know how to build a team that stays. Bringing in new clients consistently and turning a first visit into a decade of them is a different skill, and almost nobody was taught it.</p>
+<p>Salon marketing in 2026 is more accessible and more measurable than it has ever been. What a single-chair studio can run today would have impressed a marketing department ten years ago. The difficulty is not finding options. It is telling apart the strategies that produce bookings from the ones that only consume time and money.</p>
+<p>What follows covers every channel worth a beauty business's attention, from <a href="/en/features/business/marketing-promotions">social media and email</a> through loyalty programs, local SEO, paid advertising and cashback, with specific tactics for each, plus how to tell whether any of it is working and when to change course.</p>
+<p>New salon or established one, the fundamentals hold: attract the right clients, give them an experience worth returning for, and build the systems that bring them back without you having to think about it.</p>`,
 
   sections: [
     // =========================================================================
@@ -42,13 +42,13 @@ export const salonMarketingStrategies: PillarPageData = {
     // =========================================================================
     {
       id: 'why-marketing-matters',
-      title: 'Why Marketing Matters More Than Ever for Salons',
+      title: 'Why marketing matters more than it used to',
       content: `<p>Marketing is the difference between a salon that survives and one that thrives. In a market where new beauty businesses open every week, the quality of your services alone is no longer enough to guarantee a full calendar, you need a systematic approach to ensuring the right clients know you exist, understand your value, and choose you over the competition.</p>
 
-<h3>The Competitive Landscape</h3>
+<h3>What you are competing against</h3>
 <p>The beauty industry is one of the most fragmented and competitive sectors in any local market. Within a five-kilometre radius of your salon, there are likely dozens of businesses offering similar services. Clients have more choices than ever, and their loyalty is earned, not assumed. The salons that grow are not necessarily the ones with the best stylists; they are the ones with the best systems for getting found, getting booked, and getting clients to return.</p>
 
-<h3>The Client Acquisition Challenge</h3>
+<h3>The acquisition problem</h3>
 <p>Acquiring a new client costs 5-7 times more than retaining an existing one, yet most salons spend the majority of their marketing effort (and budget) on new client acquisition while neglecting retention. The most profitable salon marketing strategies address both sides of the equation:</p>
 <ul>
   <li><strong>Acquisition:</strong> Getting your salon in front of people who do not know you yet, through search visibility, social media, marketplace listings, paid advertising, and referrals.</li>
@@ -56,7 +56,7 @@ export const salonMarketingStrategies: PillarPageData = {
 </ul>
 <p>The most successful salons achieve a 60-70% rebooking rate, meaning the majority of their clients book their next appointment before leaving the salon or within the first week after their visit. Reaching this benchmark requires intentional systems, not hope.</p>
 
-<h3>Marketing Is Not Just Advertising</h3>
+<h3>Marketing is not just advertising</h3>
 <p>Many salon owners think of marketing as posting on Instagram or running a discount promotion. While both can be components of a strategy, marketing encompasses everything that influences a potential or existing client's perception and decision:</p>
 <ul>
   <li>Your Google Business Profile and online reviews</li>
@@ -80,10 +80,10 @@ export const salonMarketingStrategies: PillarPageData = {
     // =========================================================================
     {
       id: 'digital-marketing-fundamentals',
-      title: 'Digital Marketing Fundamentals for Beauty Businesses',
+      title: 'The digital fundamentals',
       content: `<p>Digital marketing for salons is not about mastering every platform. It is about building a connected system where each channel plays a specific role in your client journey, from discovery to booking to rebooking.</p>
 
-<h3>The Salon Marketing Funnel</h3>
+<h3>The funnel</h3>
 <p>Every client moves through a predictable journey. Understanding this funnel helps you invest in the right channels at each stage:</p>
 <ol>
   <li><strong>Awareness:</strong> The client learns your salon exists. Channels: social media, Google search, marketplace listings, word of mouth, local advertising.</li>
@@ -95,7 +95,7 @@ export const salonMarketingStrategies: PillarPageData = {
 </ol>
 <p>Most salons over-invest in awareness (posting on Instagram) and under-invest in retention and advocacy (loyalty programs, referral systems), even though the lower stages of the funnel generate far higher ROI.</p>
 
-<h3>Your Digital Presence Checklist</h3>
+<h3>Your digital presence checklist</h3>
 <p>Before investing in any marketing channel, ensure your digital foundation is solid:</p>
 <ul>
   <li><strong>Google Business Profile:</strong> Complete, accurate, with photos, services, hours, and booking link. This is the single most important digital asset for local discovery.</li>
@@ -116,10 +116,10 @@ export const salonMarketingStrategies: PillarPageData = {
     // =========================================================================
     {
       id: 'social-media-strategy',
-      title: 'Social Media Marketing for Salons',
+      title: 'Social media',
       content: `<p>Social media is the most visible marketing channel for salons, but also the most misunderstood. A packed Instagram feed does not automatically translate into a full booking calendar. Effective social media marketing for beauty businesses requires a strategy that connects content creation to client acquisition and retention.</p>
 
-<h3>Platform Selection</h3>
+<h3>Which platforms</h3>
 <p>Not every platform deserves your time. Focus on where your target clients actually spend their attention:</p>
 <ul>
   <li><strong>Instagram:</strong> The primary platform for beauty businesses. Visual portfolio, stories for behind-the-scenes and promotions, Reels for discovery, and direct booking links. Non-negotiable for any salon.</li>
@@ -128,7 +128,7 @@ export const salonMarketingStrategies: PillarPageData = {
   <li><strong>Google Business Profile:</strong> Often overlooked as a social channel, but Google Posts appear in search results and can drive significant local traffic. Post weekly updates, offers, and portfolio images.</li>
 </ul>
 
-<h3>Content Strategy: The 3-3-3 Framework</h3>
+<h3>The 3-3-3 content framework</h3>
 <p>Use this framework to maintain a balanced content mix that serves all stages of your marketing funnel:</p>
 <ul>
   <li><strong>3 portfolio posts per week:</strong> Before/after transformations, finished looks, and technique showcases. These build credibility and demonstrate your team's skill. Use high-quality images with consistent editing.</li>
@@ -137,7 +137,7 @@ export const salonMarketingStrategies: PillarPageData = {
 </ul>
 <p>The most common mistake is posting only portfolio content. Beautiful photos get likes, but they do not get bookings without a clear path from the content to your calendar.</p>
 
-<h3>Converting Followers to Clients</h3>
+<h3>Turning followers into clients</h3>
 <p>The gap between "following your salon on Instagram" and "booking an appointment" is where most social media marketing fails. Bridge this gap with:</p>
 <ul>
   <li><strong>Booking link in bio:</strong> Always. Updated regularly. Not buried among multiple links, the booking link should be the primary destination.</li>
@@ -146,7 +146,7 @@ export const salonMarketingStrategies: PillarPageData = {
   <li><strong>DM automation:</strong> When a potential client messages your salon, instant automated responses with a booking link ensure you capture intent before it fades, especially outside business hours.</li>
 </ul>
 
-<h3>Measuring Social Media ROI</h3>
+<h3>Measuring what social returns</h3>
 <p>Track these metrics monthly, not vanity metrics like followers or likes:</p>
 <ul>
   <li><strong>Booking link clicks:</strong> How many people tapped through to your booking page from social media?</li>
@@ -162,10 +162,10 @@ export const salonMarketingStrategies: PillarPageData = {
     // =========================================================================
     {
       id: 'email-marketing',
-      title: 'Email Marketing for Salons',
+      title: 'Email',
       content: `<p>Email marketing remains one of the highest-ROI channels for salon businesses, delivering an average return of $36 for every $1 spent across industries. For salons specifically, email excels at one thing social media cannot: reaching clients who already know and trust you with personalized, timely messages that drive rebooking and retention.</p>
 
-<h3>Building Your Email List</h3>
+<h3>Building the list</h3>
 <p>Your email list is a business asset you own, unlike social media followers, which exist on a platform you do not control. Build it systematically:</p>
 <ul>
   <li><strong>Booking confirmation:</strong> Every client who books captures an email address automatically through your booking system.</li>
@@ -175,7 +175,7 @@ export const salonMarketingStrategies: PillarPageData = {
 </ul>
 <p>Aim for a list growth rate of 5-10% per month. A salon with 500 active clients should be adding 25-50 new email addresses monthly.</p>
 
-<h3>Essential Email Campaigns</h3>
+<h3>The campaigns worth running</h3>
 <p>You do not need to send weekly newsletters. Focus on these <a href="/en/resources/blog/business/email-marketing-salons-templates">high-impact automated campaigns</a> that run themselves once configured:</p>
 <ul>
   <li><strong>Welcome sequence:</strong> A 3-email series sent to new clients: thank you + what to expect (Day 1), service tips + product recommendations (Day 3), rebooking prompt + loyalty program invitation (Day 7).</li>
@@ -185,7 +185,7 @@ export const salonMarketingStrategies: PillarPageData = {
   <li><strong>Post-visit follow-up:</strong> Sent 24-48 hours after a visit, requesting a review and suggesting rebooking. Include a link to leave a Google review and a one-click rebooking link.</li>
 </ul>
 
-<h3>Email Best Practices for Salons</h3>
+<h3>What works in salon email</h3>
 <ul>
   <li><strong>Keep it short:</strong> Salon emails should be scannable in 30 seconds. One clear message, one clear call to action.</li>
   <li><strong>Personalize:</strong> Use the client's name, reference their last service, and tailor recommendations to their history.</li>
@@ -212,10 +212,10 @@ export const salonMarketingStrategies: PillarPageData = {
     // =========================================================================
     {
       id: 'loyalty-referral-programs',
-      title: 'Loyalty Programs and Referral Marketing',
+      title: 'Loyalty and referral programs',
       content: `<p>Loyalty and referral programs are the highest-return marketing investments a salon can make. They cost a fraction of paid advertising, target your most valuable audience (existing clients), and create self-sustaining growth loops where happy clients become your most effective marketing channel.</p>
 
-<h3>Loyalty Program Design</h3>
+<h3>Designing the loyalty program</h3>
 <p>An effective <a href="/en/resources/blog/business/complete-guide-salon-loyalty-programs">salon loyalty program</a> rewards repeat visits in a way that encourages higher frequency and increased spending. The best programs are simple, transparent, and feel genuinely rewarding, not like a gimmick.</p>
 <p>Common loyalty models for salons:</p>
 <ul>
@@ -230,12 +230,12 @@ export const salonMarketingStrategies: PillarPageData = {
 <ul>
   <li>Your per-visit revenue stays intact</li>
   <li>The client has a financial incentive to return (their credit expires if they do not)</li>
-  <li>The perceived value is higher ,  "earning money back" feels more rewarding than "getting a discount"</li>
+  <li>It feels worth more. "Earning money back" lands better than "getting a discount"</li>
   <li>You can track exactly how much your loyalty program costs and what it returns</li>
 </ul>
 <p>Salons using cashback loyalty programs report 20-35% higher client retention rates compared to no-loyalty-program benchmarks, and 10-15% higher average visit frequency.</p>
 
-<h3>Referral Program Design</h3>
+<h3>Designing the referral program</h3>
 <p>A <a href="/en/resources/blog/business/salon-referral-programs-that-work">referral program</a> turns your existing clients into a client acquisition channel. The best referral programs reward both the referrer and the new client, creating a win-win that clients are motivated to participate in:</p>
 <ul>
   <li><strong>Reward structure:</strong> The most effective structure gives the referrer a meaningful reward (e.g., $20 credit or free add-on service) and the new client a first-visit incentive (e.g., 15% off their first booking). Both rewards should be delivered automatically.</li>
@@ -264,10 +264,10 @@ export const salonMarketingStrategies: PillarPageData = {
     // =========================================================================
     {
       id: 'local-seo',
-      title: 'Local SEO: Getting Found When Clients Search',
+      title: 'Local SEO: getting found when people search',
       content: `<p>Local SEO is the most underutilized and highest-impact marketing channel for beauty businesses. When a potential client searches "hair salon near me" or "best spa in [your city]," your position in those results directly determines whether they find you or your competitor. Unlike social media, where you compete for attention, local search captures people with active intent to book.</p>
 
-<h3>Google Business Profile Optimization</h3>
+<h3>Working on your Google Business Profile</h3>
 <p>Your Google Business Profile (GBP) is the single most important asset in your local SEO strategy. When someone searches for beauty services in your area, Google displays a "local pack", the top three results with maps, reviews, and key business information. Getting into this top three dramatically increases your visibility.</p>
 <p>Optimize your GBP with these steps:</p>
 <ul>
@@ -278,7 +278,7 @@ export const salonMarketingStrategies: PillarPageData = {
   <li><strong>Add a booking link:</strong> Connect your booking system directly to your GBP so clients can book with one click from your Google listing, without visiting your website first.</li>
 </ul>
 
-<h3>Reviews: Your Most Powerful Local SEO Signal</h3>
+<h3>Reviews, the strongest local signal you have</h3>
 <p>Google reviews are the most influential factor in local search ranking and client decision-making. Here is how to systematically build your review presence:</p>
 <ul>
   <li><strong>Ask after every positive experience:</strong> Train your team to request reviews from satisfied clients. The moment of highest satisfaction, when the client sees their finished look, is the optimal time to ask.</li>
@@ -287,7 +287,7 @@ export const salonMarketingStrategies: PillarPageData = {
   <li><strong>Target 50+ reviews:</strong> Salons with 50+ Google reviews at 4.5+ rating consistently rank in the local top three for their area.</li>
 </ul>
 
-<h3>Local Keywords and Content</h3>
+<h3>Local keywords and content</h3>
 <p>Optimize your website content for local search terms that clients actually use:</p>
 <ul>
   <li>Include your city, neighbourhood, and nearby landmarks in page titles and headings</li>
@@ -304,10 +304,10 @@ export const salonMarketingStrategies: PillarPageData = {
     // =========================================================================
     {
       id: 'paid-advertising',
-      title: 'Paid Advertising for Salons',
+      title: 'Paid advertising',
       content: `<p>Paid advertising accelerates client acquisition when done strategically, but it wastes money rapidly when approached without clear targeting, tracking, and conversion infrastructure. For salons, paid ads are most effective as a complement to strong organic marketing, not a replacement for it.</p>
 
-<h3>Google Ads for Salons</h3>
+<h3>Google Ads</h3>
 <p>Google Search Ads capture high-intent traffic, people actively searching for beauty services in your area. This makes Google Ads one of the most direct paths from ad spend to booking:</p>
 <ul>
   <li><strong>Target service-specific keywords:</strong> "Hair colour appointment [city]," "microblading near me," "massage booking [neighbourhood]." These searches indicate immediate booking intent.</li>
@@ -316,7 +316,7 @@ export const salonMarketingStrategies: PillarPageData = {
   <li><strong>Track cost per booking:</strong> Set up conversion tracking so you know exactly how many bookings each ad generates. If an ad costs $200 and generates 8 bookings with an average service value of $80, your cost per acquisition is $25 and your return is $640, a strong ROI.</li>
 </ul>
 
-<h3>Social Media Ads</h3>
+<h3>Social ads</h3>
 <p>Instagram and Facebook ads are effective for building awareness and retargeting warm audiences, people who have already interacted with your brand:</p>
 <ul>
   <li><strong>Retargeting campaigns:</strong> Show ads to people who visited your website or booking page but did not complete a booking. These "warm" prospects convert at 3-5x the rate of cold audiences.</li>
@@ -325,7 +325,7 @@ export const salonMarketingStrategies: PillarPageData = {
   <li><strong>Promotional offers:</strong> First-visit discounts or limited-time packages create urgency. Always include a clear call to action and booking link.</li>
 </ul>
 
-<h3>Budget Guidelines</h3>
+<h3>What to budget</h3>
 <p>For most salons, here is a practical starting framework:</p>
 <table>
   <thead>
@@ -359,7 +359,7 @@ export const salonMarketingStrategies: PillarPageData = {
   </tbody>
 </table>
 
-<h3>The Most Important Rule</h3>
+<h3>The one rule that matters</h3>
 <p>Never run paid ads without conversion tracking. If you cannot measure how many bookings each ad generates, you are guessing, and guessing with ad spend is expensive. Set up tracking before launching any campaign, and review performance weekly. Cut ads that do not convert, and increase budget on ads that do. This simple discipline separates profitable salon advertising from wasted money.</p>`,
       callout: {
         type: 'warning',
@@ -372,10 +372,10 @@ export const salonMarketingStrategies: PillarPageData = {
     // =========================================================================
     {
       id: 'cashback-as-marketing',
-      title: 'Cashback: The Modern Salon Marketing Strategy',
+      title: 'Cashback as a marketing strategy',
       content: `<p>Cashback has emerged as one of the most effective client retention and acquisition tools in the beauty industry, outperforming traditional discounts, loyalty punch cards, and generic promotions. The reason is psychological: earning money back feels like a reward, while receiving a discount feels like a transaction.</p>
 
-<h3>How Cashback Works for Salons</h3>
+<h3>How it works in a salon</h3>
 <p>With a cashback model, clients receive a percentage of their spending back as credit toward future services. For example, a 5% cashback rate means a client who spends $100 on services earns $5 in credit. This credit accumulates over time and can be applied to future bookings, creating a continuous incentive to return.</p>
 <p>The <a href="/en/resources/blog/business/daisy-cashback-system-customer-loyalty">Daisy cashback system</a> automates this entirely, cashback is calculated, credited, and redeemable within the platform, requiring zero manual effort from salon owners.</p>
 
@@ -393,7 +393,7 @@ export const salonMarketingStrategies: PillarPageData = {
   <li>Cashback rewards loyalty, not price-shopping, the more a client spends, the more they earn back</li>
 </ul>
 
-<h3>The Retention Loop</h3>
+<h3>The loop it creates</h3>
 <p>Cashback creates a self-reinforcing retention loop:</p>
 <ol>
   <li>Client visits and pays full price</li>
@@ -404,10 +404,10 @@ export const salonMarketingStrategies: PillarPageData = {
 </ol>
 <p>This loop is particularly powerful in beauty, where clients typically visit every 4-8 weeks and have multiple competitor options. A cashback balance of even $20-$30 is often enough to tip the decision from "maybe I will try somewhere new" to "I will go back to my regular salon."</p>
 
-<h3>Cashback as a Marketplace Advantage</h3>
+<h3>Cashback on a marketplace</h3>
 <p>Platforms like Daisy amplify the cashback effect by combining it with marketplace visibility. Clients discover your salon through the platform, book services, and earn cashback, which incentivizes them to book through the platform again, increasing your visibility to other potential clients. This creates a virtuous cycle: more bookings lead to more reviews, higher ranking, and more discovery by new clients, all reinforced by the cashback incentive.</p>
 
-<h3>Measuring Cashback ROI</h3>
+<h3>Measuring what cashback returns</h3>
 <p>Track these metrics to measure your cashback program's impact:</p>
 <ul>
   <li><strong>Retention rate:</strong> Compare 90-day retention for clients in the cashback program vs. those not enrolled</li>
@@ -432,10 +432,10 @@ export const salonMarketingStrategies: PillarPageData = {
     // =========================================================================
     {
       id: 'measuring-marketing-roi',
-      title: 'Measuring Your Salon Marketing ROI',
+      title: 'Measuring what it returns',
       content: `<p>The most dangerous marketing mistake is not a bad campaign. It is not knowing whether your campaigns are working. Without measurement, you cannot distinguish strategies that generate $10 per booking from those that cost $100 per booking, and you end up making decisions based on feelings rather than data.</p>
 
-<h3>The Two Metrics That Matter Most</h3>
+<h3>The two numbers that matter</h3>
 <p>For salon marketing, everything ultimately reduces to two numbers:</p>
 <ol>
   <li><strong>Cost Per Acquisition (CPA):</strong> How much you spend to get one new client. Calculate by dividing your total marketing spend (including time) by the number of new clients acquired. A healthy CPA for most salons is $15-$50 per new client.</li>
@@ -443,7 +443,7 @@ export const salonMarketingStrategies: PillarPageData = {
 </ol>
 <p>The relationship between these two numbers determines your marketing profitability. If your CPA is $30 and your CLV is $1,200, every dollar spent on marketing returns $40 over the client relationship. If your CPA is $80 and your CLV is $200, you are barely breaking even.</p>
 
-<h3>Channel-by-Channel Tracking</h3>
+<h3>Tracking channel by channel</h3>
 <p>Track CPA for each marketing channel separately to understand where your budget works hardest:</p>
 <table>
   <thead>
@@ -492,7 +492,7 @@ export const salonMarketingStrategies: PillarPageData = {
   </tbody>
 </table>
 
-<h3>Monthly Marketing Review</h3>
+<h3>The monthly review</h3>
 <p>Set aside 30 minutes at the end of each month to review:</p>
 <ul>
   <li>Total new clients acquired and the source of each</li>
@@ -511,10 +511,10 @@ export const salonMarketingStrategies: PillarPageData = {
     // =========================================================================
     {
       id: 'advanced-marketing-strategies',
-      title: 'Advanced Salon Marketing Strategies for 2026',
+      title: 'Going further in 2026',
       content: `<p>Once your foundational marketing. Google Business Profile, social media, email automation, loyalty program, and local SEO, is performing consistently, these advanced strategies can accelerate your growth beyond what conventional approaches achieve alone.</p>
 
-<h3>SMS Marketing</h3>
+<h3>SMS</h3>
 <p><a href="/en/resources/blog/business/sms-marketing-fill-salon-chairs">SMS marketing</a> delivers open rates above 95%, higher than any other channel. Use it strategically, not indiscriminately:</p>
 <ul>
   <li><strong>Last-minute availability:</strong> When a cancellation opens a slot, a targeted SMS to clients near your salon who are overdue for a visit can fill the gap within hours.</li>
@@ -523,7 +523,7 @@ export const salonMarketingStrategies: PillarPageData = {
 </ul>
 <p>Keep SMS frequency to 2-4 messages per month. SMS is high-impact precisely because it feels personal and direct, overuse destroys that advantage.</p>
 
-<h3>Strategic Partnerships</h3>
+<h3>Partnerships</h3>
 <p>Partner with complementary local businesses to access their client base without competing:</p>
 <ul>
   <li><strong>Hotels and event venues:</strong> Bridal packages, event preparation services, and guest referrals</li>
@@ -532,15 +532,15 @@ export const salonMarketingStrategies: PillarPageData = {
   <li><strong>Photographers:</strong> Collaborations for editorial shoots that produce portfolio content for both businesses</li>
 </ul>
 
-<h3>Content Marketing and SEO</h3>
+<h3>Content and SEO</h3>
 <p>Creating helpful content positions your salon as an authority and drives long-term organic traffic:</p>
 <ul>
-  <li><strong>Blog posts:</strong> Answer the questions your clients ask most frequently ,  "How often should I get a haircut?", "What is the difference between balayage and highlights?", "How to maintain colour between visits." Each post targets a search query and brings potential clients to your website.</li>
+  <li><strong>Blog posts:</strong> answer the questions clients actually ask. "How often should I get a haircut?", "What is the difference between balayage and highlights?", "How to maintain colour between visits." Each one targets a real search and brings people to your site.</li>
   <li><strong>Video content:</strong> Tutorial videos, transformation timelapses, and "ask the stylist" content on YouTube and TikTok. Video content has longer shelf life than social media posts and continues to attract views for months or years.</li>
   <li><strong>User-generated content:</strong> Encourage clients to share their results on social media and tag your salon. Repost this content (with permission). It is more authentic than branded content and acts as social proof for potential clients.</li>
 </ul>
 
-<h3>AI-Powered Marketing</h3>
+<h3>AI-powered marketing</h3>
 <p>The newest frontier in salon marketing uses AI to personalize and automate at a level that would be impossible manually:</p>
 <ul>
   <li><strong>Predictive targeting:</strong> AI identifies which clients are most likely to respond to specific offers, targeting promotions to maximize conversion rather than blasting your entire database.</li>
@@ -578,7 +578,7 @@ export const salonMarketingStrategies: PillarPageData = {
     {
       question: 'How do I get more Google reviews for my salon?',
       answer:
-        'The most effective approach is a systematic, automated review request process. Send every client an automated post-visit message (via SMS or WhatsApp) containing a direct link to your Google review page. Time the message 2-4 hours after their visit, when satisfaction is highest. Train your team to verbally ask satisfied clients to leave a review ,  "We would love it if you could share your experience on Google." Respond to every review you receive (positive and negative) as this encourages others to review. Aim for 2-5 new reviews per week to steadily build your rating. Never offer incentives for reviews. Google penalizes this.',
+        'Make the review request automatic and systematic. Send every client a post-visit message by SMS or WhatsApp with a direct link to your Google review page, timed 2-4 hours after the visit while they are still pleased. Have your team ask out loud too: "We would love it if you could share your experience on Google." Reply to every review, good or bad, because that encourages more of them. Aim for 2-5 new reviews per week and the rating builds steadily. Never offer an incentive for a review, as Google penalises it.',
     },
     {
       question: 'Is social media marketing worth it for salons?',

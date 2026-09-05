@@ -19,22 +19,22 @@ export const salonPaymentSolutions: PillarPageData = {
 
   heroTitle: 'Salon Payment Solutions: The Complete Guide',
   heroSubtitle:
-    'How to choose, implement, and optimize payment systems that improve cash flow, reduce admin, and create a seamless checkout experience for your clients.',
+    'How to choose and set up payment systems that improve cash flow, cut admin and make checkout something clients barely notice.',
   readingTime: '20 min read',
   lastUpdated: '2026-03-18T00:00:00.000Z',
 
   keyTakeaways: [
-    'Integrated payment solutions that connect to your booking and management system save 3-5 hours per week in manual reconciliation.',
-    'Salons using contactless and digital payments see 15-20% higher average ticket values compared to cash-only businesses.',
-    'Payment processing fees typically range from 1.5-3.5% per transaction, choosing the right processor can save thousands annually.',
-    'Digital tipping increases gratuity rates by 20-30% compared to cash tipping because clients can select preset tip amounts effortlessly.',
-    'Requiring deposits at booking reduces no-show rates by up to 55% while improving cash flow predictability.',
+    'Payments wired into your booking and management system save 3-5 hours per week of manual reconciliation.',
+    'Salons taking contactless and digital payments run 15-20% higher average tickets than cash-only ones.',
+    'Processing fees run 1.5-3.5% per transaction, so the right processor is worth thousands a year.',
+    'Digital tipping raises gratuities 20-30% over cash, because tapping a preset amount takes no thought.',
+    'Taking a deposit at booking cuts no-shows by up to 55% and makes cash flow easier to predict.',
   ],
 
-  introduction: `<p>Payment processing is the financial backbone of every salon. It touches every transaction, every client interaction, and every line of your profit-and-loss statement. Yet most salon owners choose their payment solution based on whatever their bank offered or whichever terminal was cheapest, without understanding the true cost, the missed revenue, or the operational friction they are accepting.</p>
-<p>The landscape of salon payments has changed dramatically. Cash registers and standalone card terminals are giving way to integrated point-of-sale systems, contactless payments, digital wallets, and AI-powered financial management. Clients expect to pay with a tap, split bills between services, tip digitally, and receive instant digital receipts. Salons that cannot deliver this experience are losing clients to competitors who can.</p>
-<p>This guide covers every aspect of payment processing for beauty businesses. From selecting the right POS system and understanding processing fees to implementing digital tipping, managing deposits, and choosing between integrated and standalone solutions, you will have a complete framework for building a payment infrastructure that maximizes revenue and minimizes cost.</p>
-<p>Whether you are opening your first salon or upgrading outdated payment systems in an established business, the principles in this guide apply. Modern <a href="/en/features/business/payment-processing">payment platforms</a> do far more than process transactions, they are a strategic tool for growth, client experience, and financial visibility.</p>`,
+  introduction: `<p>Payment processing sits underneath everything a salon does. Every transaction, every client interaction, every line of the profit-and-loss statement runs through it. Most owners still pick a solution because the bank offered it or the terminal was cheap, without knowing what it really costs them in fees, lost revenue or daily friction.</p>
+<p>The ground has shifted. Cash registers and standalone card terminals are giving way to integrated point-of-sale systems, contactless payments, digital wallets and AI-driven financial management. Clients now expect to tap, split a bill across services, tip on screen and get a receipt on their phone. Salons that cannot do that lose clients to the ones that can.</p>
+<p>What follows covers payment processing for a beauty business end to end: choosing a POS, reading the fee structures, setting up digital tipping, handling deposits, and deciding between integrated and standalone systems.</p>
+<p>First salon or an established one running on ageing hardware, the principles hold. Modern <a href="/en/features/business/payment-processing">payment platforms</a> do considerably more than move money: they shape growth, the client experience and how clearly you can see your own finances.</p>`,
 
   sections: [
     // =========================================================================
@@ -42,10 +42,10 @@ export const salonPaymentSolutions: PillarPageData = {
     // =========================================================================
     {
       id: 'payment-landscape-for-salons',
-      title: 'The Payment Landscape for Salons in 2026',
+      title: 'Where salon payments stand in 2026',
       content: `<p>The salon payment landscape has undergone a fundamental shift. Cash transactions now represent less than 20% of salon revenue in most markets, down from over 50% a decade ago. Digital and contactless payments dominate, and client expectations for payment flexibility have never been higher.</p>
 
-<h3>How Clients Want to Pay</h3>
+<h3>How clients want to pay</h3>
 <p>Understanding client payment preferences is essential for maximizing revenue. Current data shows the following breakdown for beauty and wellness businesses:</p>
 <table>
   <thead>
@@ -90,7 +90,7 @@ export const salonPaymentSolutions: PillarPageData = {
 </table>
 <p>The pattern is clear: clients who pay digitally spend more per visit. This is not accidental. Digital payments reduce the psychological friction of spending, a tap feels lighter than handing over physical cash. For salon owners, this means every additional payment method you accept is a potential revenue increase.</p>
 
-<h3>The Cost of Limited Payment Options</h3>
+<h3>What limited options cost you</h3>
 <p>Salons that only accept cash and basic card payments are leaving money on the table in three ways:</p>
 <ul>
   <li><strong>Lost bookings:</strong> Clients who cannot pay their preferred way (deposits, online prepayment) may choose a competitor that offers more flexibility.</li>
@@ -98,7 +98,7 @@ export const salonPaymentSolutions: PillarPageData = {
   <li><strong>Operational inefficiency:</strong> Cash handling requires counting, bank deposits, reconciliation, and creates theft risk. Digital payments reconcile automatically.</li>
 </ul>
 
-<h3>The Regulatory Environment</h3>
+<h3>The regulatory side</h3>
 <p>Payment regulations vary by region but are generally becoming stricter around data security and consumer protection. Key considerations for salon owners:</p>
 <ul>
   <li><strong>PCI DSS compliance:</strong> Any business that accepts card payments must comply with Payment Card Industry Data Security Standards. Using a PCI-compliant payment processor (which all major providers are) handles this for you.</li>
@@ -119,13 +119,13 @@ export const salonPaymentSolutions: PillarPageData = {
     // =========================================================================
     {
       id: 'pos-systems-for-salons',
-      title: 'POS Systems for Salons. Choosing the Right Setup',
+      title: 'POS systems: choosing the right setup',
       content: `<p>A point-of-sale (POS) system is far more than a card reader. For salons, it is the operational hub where transactions, client data, inventory, and reporting converge. Choosing the right POS determines how smoothly your checkout runs, how accurately your finances are tracked, and how much admin time you waste on reconciliation.</p>
 
-<h3>Types of Salon POS Systems</h3>
+<h3>The kinds of POS available</h3>
 <p>There are three broad categories, each with distinct advantages:</p>
 
-<h3>1. Traditional Terminal-Based POS</h3>
+<h3>1. Traditional terminal-based POS</h3>
 <p>Standalone card machines (like those provided by banks) that process payments independently. They have no connection to your booking system, client database, or reporting tools.</p>
 <ul>
   <li><strong>Pros:</strong> Low upfront cost, simple setup, reliable for basic card processing</li>
@@ -133,7 +133,7 @@ export const salonPaymentSolutions: PillarPageData = {
   <li><strong>Best for:</strong> Very small salons with minimal transaction volume that do not use salon management software</li>
 </ul>
 
-<h3>2. Salon-Specific POS Software</h3>
+<h3>2. Salon-specific POS software</h3>
 <p>POS systems designed specifically for beauty businesses, often sold as standalone products or add-ons to booking software.</p>
 <ul>
   <li><strong>Pros:</strong> Beauty-industry features (tipping, split payments, service-based checkout), may integrate with select booking tools</li>
@@ -141,7 +141,7 @@ export const salonPaymentSolutions: PillarPageData = {
   <li><strong>Best for:</strong> Salons that need better payment features than a basic terminal but are locked into a booking system that lacks built-in POS</li>
 </ul>
 
-<h3>3. Integrated All-in-One Platform POS</h3>
+<h3>3. POS inside an all-in-one platform</h3>
 <p>POS built directly into a comprehensive salon management platform. When a client checks out, the system automatically updates their profile, records the transaction, calculates commissions, adjusts inventory, and feeds data into your analytics, all instantly.</p>
 <ul>
   <li><strong>Pros:</strong> Zero manual reconciliation, complete financial visibility, seamless client experience, automatic reporting</li>
@@ -149,7 +149,7 @@ export const salonPaymentSolutions: PillarPageData = {
   <li><strong>Best for:</strong> Any salon that values efficiency, data accuracy, and growth (the vast majority of modern salons)</li>
 </ul>
 
-<h3>What to Look for in a Salon POS</h3>
+<h3>What to look for</h3>
 <p>Regardless of category, your salon POS should support:</p>
 <ul>
   <li><strong>Service-based checkout:</strong> Automatically populate the bill based on the booked services, not manual entry</li>
@@ -183,10 +183,10 @@ export const salonPaymentSolutions: PillarPageData = {
     // =========================================================================
     {
       id: 'digital-contactless-payments',
-      title: 'Digital and Contactless Payments for Beauty Businesses',
+      title: 'Digital and contactless payments',
       content: `<p>Digital and contactless payments are no longer a convenience, they are an expectation. Over 70% of salon clients prefer tap-to-pay or digital wallet transactions, and that percentage is growing every year. Salons that embrace these technologies see measurable improvements in checkout speed, average ticket value, and client satisfaction.</p>
 
-<h3>Contactless Card Payments</h3>
+<h3>Contactless cards</h3>
 <p>Contactless (NFC) card payments are the most popular payment method in salons globally. Clients simply tap their card or phone on your terminal, and the transaction completes in under two seconds. The key benefits for salons:</p>
 <ul>
   <li><strong>Speed:</strong> Contactless transactions are 10x faster than chip-and-PIN, reducing checkout time from 30+ seconds to under 3 seconds</li>
@@ -195,7 +195,7 @@ export const salonPaymentSolutions: PillarPageData = {
 </ul>
 <p>Ensure your payment terminal supports NFC and that contactless limits in your market accommodate typical salon transaction values. In most regions, contactless limits have been raised to $100-$250, covering the majority of salon services.</p>
 
-<h3>Digital Wallets. Apple Pay, Google Pay, Samsung Pay</h3>
+<h3>Digital wallets: Apple Pay, Google Pay, Samsung Pay</h3>
 <p>Digital wallets go a step further than contactless cards. Clients pay using their smartphone, smartwatch, or even by scanning a QR code. The advantages for beauty businesses:</p>
 <ul>
   <li><strong>No card needed:</strong> Clients who forget their wallet can still pay, eliminating the awkward "I forgot my card" situation</li>
@@ -204,7 +204,7 @@ export const salonPaymentSolutions: PillarPageData = {
   <li><strong>Higher ticket value:</strong> Digital wallet users spend an average of 18% more than cash users, likely because the payment feels more abstract</li>
 </ul>
 
-<h3>Online and Pre-Visit Payments</h3>
+<h3>Paying before the visit</h3>
 <p>Accepting payments before the client arrives unlocks significant operational benefits:</p>
 <ul>
   <li><strong>Deposit collection:</strong> Requiring a 20-50% deposit at booking time reduces no-shows by up to 55%. The deposit is deducted at checkout, so clients pay the balance on arrival.</li>
@@ -213,7 +213,7 @@ export const salonPaymentSolutions: PillarPageData = {
 </ul>
 <p>Online payments require a payment gateway integrated with your booking system. Platforms with <a href="/en/features/business/booking-management">integrated booking and payments</a> handle this seamlessly, while standalone booking tools often require third-party payment integrations that add complexity and cost.</p>
 
-<h3>Buy Now, Pay Later (BNPL)</h3>
+<h3>Buy now, pay later</h3>
 <p>BNPL services like Afterpay, Klarna, and Tabby allow clients to split their payment into instalments, typically 4 interest-free payments. For salons offering higher-value services (hair extensions, aesthetic treatments, bridal packages), BNPL can increase average ticket value by 30-40% and convert clients who might otherwise decline premium services due to upfront cost.</p>
 <p>The trade-off is higher processing fees (typically 4-6%) and potential for delayed settlement. Evaluate whether the revenue increase from higher ticket values outweighs the additional cost for your specific service mix.</p>`,
       relatedLinks: [
@@ -229,10 +229,10 @@ export const salonPaymentSolutions: PillarPageData = {
     // =========================================================================
     {
       id: 'tipping-and-gratuities',
-      title: 'Tipping and Gratuities. Modernizing the Experience',
+      title: 'Tipping, brought up to date',
       content: `<p>Tipping represents a significant portion of income for beauty professionals, typically 15-25% of their total earnings. Yet many salons still handle tipping through cash envelopes or awkward verbal requests, leaving money on the table and creating discomfort for both clients and staff.</p>
 
-<h3>The Case for Digital Tipping</h3>
+<h3>Why digital tipping works</h3>
 <p>Digital tipping, where tip options are presented on the payment screen, transforms the tipping experience:</p>
 <ul>
   <li><strong>Higher tip rates:</strong> Digital tip prompts increase average gratuity by 20-30% compared to cash-only tipping. Preset percentages (15%, 20%, 25%) anchor expectations upward.</li>
@@ -241,7 +241,7 @@ export const salonPaymentSolutions: PillarPageData = {
   <li><strong>Transparency:</strong> Digital tips are automatically recorded, simplifying tax reporting and ensuring staff receive every dollar earned.</li>
 </ul>
 
-<h3>Implementing Effective Tip Prompts</h3>
+<h3>Getting the tip prompt right</h3>
 <p>The design of your tip screen significantly impacts results. Best practices from industry data:</p>
 <ol>
   <li><strong>Offer preset percentages:</strong> Display 15%, 20%, and 25% as one-tap options, with a custom amount option. Avoid starting below 15%, it anchors expectations too low.</li>
@@ -251,7 +251,7 @@ export const salonPaymentSolutions: PillarPageData = {
   <li><strong>Prompt before showing the total:</strong> Clients who see the tip prompt before the final total tend to tip higher than those who see the total first.</li>
 </ol>
 
-<h3>Tipping Policies and Distribution</h3>
+<h3>Policies and splitting tips</h3>
 <p>Clear tipping policies prevent disputes and ensure fairness:</p>
 <ul>
   <li><strong>Individual vs pooled tips:</strong> In most beauty businesses, individual tipping (where the stylist keeps their own tips) is the norm and preferred by staff. Tip pooling may be appropriate in team-service models.</li>
@@ -277,10 +277,10 @@ export const salonPaymentSolutions: PillarPageData = {
     // =========================================================================
     {
       id: 'invoicing-and-financial-documentation',
-      title: 'Invoicing and Financial Documentation',
+      title: 'Invoicing and the paperwork',
       content: `<p>Professional invoicing is not just an accounting requirement, it builds client trust, simplifies tax preparation, and creates a paper trail that protects your business. Yet many salons still provide handwritten receipts or no receipts at all, missing an opportunity to demonstrate professionalism.</p>
 
-<h3>Automated Invoicing</h3>
+<h3>Automated invoicing</h3>
 <p>Your payment system should generate invoices automatically for every transaction. A proper salon invoice includes:</p>
 <ul>
   <li>Business name, address, and tax identification number</li>
@@ -293,7 +293,7 @@ export const salonPaymentSolutions: PillarPageData = {
 </ul>
 <p>Digital invoices sent via email or SMS give clients a permanent record they can access anytime. This is especially important for clients who expense salon visits (corporate events, bridal parties, editorial work) or need records for insurance claims.</p>
 
-<h3>Deposit and Prepayment Invoicing</h3>
+<h3>Deposits and prepayments</h3>
 <p>When you collect deposits at booking or sell prepaid packages, your invoicing system needs to handle partial payments correctly:</p>
 <ol>
   <li><strong>Deposit collection:</strong> Generate a deposit receipt at booking time showing the amount paid and the remaining balance</li>
@@ -302,7 +302,7 @@ export const salonPaymentSolutions: PillarPageData = {
 </ol>
 <p>Integrated salon platforms handle this automatically. Standalone payment terminals require manual tracking, a process that breaks down as your business grows.</p>
 
-<h3>Freelance and Independent Professional Invoicing</h3>
+<h3>Invoicing as a freelancer</h3>
 <p>Independent beauty professionals, whether renting a chair, working mobile, or operating as a freelancer, have additional invoicing needs:</p>
 <ul>
   <li><strong>Self-employment invoicing:</strong> You need to issue professional invoices to every client for tax purposes, even if they pay cash</li>
@@ -311,7 +311,7 @@ export const salonPaymentSolutions: PillarPageData = {
 </ul>
 <p>Digital <a href="/en/features/business/payment-processing">payment platforms</a> that serve both salon owners and independent professionals provide invoicing, expense tracking, and tax-ready reports in one system.</p>
 
-<h3>Financial Reporting for Salon Owners</h3>
+<h3>The reporting you need</h3>
 <p>Beyond individual invoices, your payment data should feed into comprehensive financial reports:</p>
 <ul>
   <li><strong>Daily sales summary:</strong> Total revenue, breakdown by service vs product, payment methods used, tips collected</li>
@@ -326,10 +326,10 @@ export const salonPaymentSolutions: PillarPageData = {
     // =========================================================================
     {
       id: 'payment-processing-fees',
-      title: 'Payment Processing Fees. Understanding the True Cost',
+      title: 'Processing fees and what they really cost',
       content: `<p>Payment processing fees are an unavoidable cost of accepting digital payments, but they are not created equal. The difference between a competitive rate and an inflated one can cost a busy salon $3,000-$10,000+ annually. Understanding fee structures lets you negotiate better rates and choose processors wisely.</p>
 
-<h3>Fee Components</h3>
+<h3>What makes up a fee</h3>
 <p>Every card transaction involves multiple parties, each taking a fee:</p>
 <table>
   <thead>
@@ -364,7 +364,7 @@ export const salonPaymentSolutions: PillarPageData = {
 </table>
 <p>Interchange fees are fixed by the card networks and non-negotiable. The processor markup is where you have negotiating power.</p>
 
-<h3>Pricing Models</h3>
+<h3>The pricing models</h3>
 <p>Payment processors use several pricing models:</p>
 <ul>
   <li><strong>Flat rate:</strong> A single percentage on every transaction (e.g., 2.6% + $0.10). Simple to understand, but you pay the same rate whether the underlying interchange fee is 0.5% or 2.0%. Good for simplicity, less optimal for cost.</li>
@@ -373,7 +373,7 @@ export const salonPaymentSolutions: PillarPageData = {
   <li><strong>Subscription/membership:</strong> A flat monthly fee plus a small per-transaction fee (e.g., $99/month + 0.15% + $0.08). Best for high-volume businesses where the per-transaction savings outweigh the monthly subscription.</li>
 </ul>
 
-<h3>Reducing Your Processing Costs</h3>
+<h3>Bringing the cost down</h3>
 <p>Practical strategies to lower payment processing fees:</p>
 <ol>
   <li><strong>Negotiate your rate:</strong> If you process more than $10,000/month, you have leverage. Ask your processor for interchange-plus pricing or a lower markup. Many will negotiate rather than lose your account.</li>
@@ -383,7 +383,7 @@ export const salonPaymentSolutions: PillarPageData = {
   <li><strong>Review statements quarterly:</strong> Processing fees can creep upward through rate increases buried in notification letters. Audit your effective rate (total fees / total volume) every quarter.</li>
 </ol>
 
-<h3>The Hidden Cost of "Free" Processors</h3>
+<h3>What "free" processors actually cost</h3>
 <p>Some payment processors advertise no monthly fee, but charge higher per-transaction rates or include hidden costs. Always compare the total annual cost based on your actual transaction volume and average ticket size, not the headline rate.</p>`,
       callout: {
         type: 'warning',
@@ -402,20 +402,20 @@ export const salonPaymentSolutions: PillarPageData = {
     // =========================================================================
     {
       id: 'integrated-vs-standalone',
-      title: 'Integrated vs Standalone Payment Solutions',
+      title: 'Integrated against standalone',
       content: `<p>The most important payment decision for a salon owner is not which card reader to buy. It is whether your payment system talks to the rest of your business. Integrated and standalone solutions serve fundamentally different purposes.</p>
 
-<h3>Standalone Payment Solutions</h3>
+<h3>Standalone solutions</h3>
 <p>A standalone solution is a payment terminal or app that processes transactions independently of your other business tools. Your bank's card machine is the most common example.</p>
 <p><strong>How it works:</strong> Staff manually enter the transaction amount into the terminal. The client pays. The terminal records the payment. At the end of the day, someone reconciles terminal records with booking records and enters totals into accounting software.</p>
 <p><strong>The reality:</strong> This process takes 30-60 minutes daily for a busy salon. Errors are common, a transposed digit here, a missing transaction there. By month-end, reconciliation becomes a multi-hour exercise in detective work. Staff commissions based on revenue require manual calculation. Tax reporting requires pulling data from multiple disconnected systems.</p>
 
-<h3>Integrated Payment Solutions</h3>
+<h3>Integrated solutions</h3>
 <p>An integrated solution connects your payment processing directly to your booking system, client database, team management, and analytics. When a client checks out, the payment flows through the entire ecosystem automatically.</p>
 <p><strong>How it works:</strong> The client's booked services auto-populate the checkout screen. The client pays. The payment is automatically recorded against the correct booking, updates the client's payment history, calculates the staff member's commission, records product sales in inventory, and feeds the transaction into your revenue reports, all in real time, with zero manual entry.</p>
 <p><strong>The reality:</strong> No daily reconciliation. No manual commission calculations. No month-end accounting scramble. Everything matches automatically because there is a single source of truth.</p>
 
-<h3>Head-to-Head Comparison</h3>
+<h3>Side by side</h3>
 <table>
   <thead>
     <tr>
@@ -473,10 +473,10 @@ export const salonPaymentSolutions: PillarPageData = {
   </tbody>
 </table>
 
-<h3>When Standalone Makes Sense</h3>
+<h3>When standalone is the right call</h3>
 <p>Standalone terminals are appropriate only when you are a solo practitioner with very low transaction volume (under $5,000/month), you do not use any salon management software, and your business has no plans to grow beyond its current size. In every other scenario, the efficiency gains of integrated payments outweigh the slightly higher platform cost.</p>
 
-<h3>Migration Path</h3>
+<h3>How to migrate</h3>
 <p>If you are currently using a standalone terminal and want to move to integrated payments, the process is straightforward with most modern platforms:</p>
 <ol>
   <li>Choose an integrated platform that includes payment processing (like <a href="/en/features/business/payment-processing">Daisy</a>)</li>
@@ -493,10 +493,10 @@ export const salonPaymentSolutions: PillarPageData = {
     // =========================================================================
     {
       id: 'choosing-a-payment-solution',
-      title: 'Choosing the Right Payment Solution for Your Salon',
+      title: 'Choosing what suits your salon',
       content: `<p>Selecting a payment solution is a decision you will live with daily, so it is worth investing time to choose correctly. The right solution depends on your salon's size, growth plans, technology ecosystem, and client expectations.</p>
 
-<h3>Decision Framework</h3>
+<h3>A way to decide</h3>
 <p>Ask yourself these five questions to narrow your options:</p>
 <ol>
   <li><strong>Do you use (or plan to use) salon management software?</strong> If yes, choose a payment solution that integrates with it, or better, choose a platform that includes payments natively.</li>
@@ -506,7 +506,7 @@ export const salonPaymentSolutions: PillarPageData = {
   <li><strong>What payment methods do your clients expect?</strong> In some markets, Apple Pay and Google Pay are essential. In others, cash remains dominant. Your solution must match your client base.</li>
 </ol>
 
-<h3>Evaluation Checklist</h3>
+<h3>The checklist</h3>
 <p>Score each payment solution against these criteria:</p>
 <ul>
   <li><strong>Integration depth:</strong> Does it connect to your booking, client management, and reporting tools automatically?</li>
@@ -521,7 +521,7 @@ export const salonPaymentSolutions: PillarPageData = {
   <li><strong>Contract terms:</strong> Avoid long-term contracts. Month-to-month agreements give you flexibility to switch if the service underperforms.</li>
 </ul>
 
-<h3>Red Flags to Watch For</h3>
+<h3>Warning signs</h3>
 <p>Walk away from payment providers that exhibit these warning signs:</p>
 <ul>
   <li>Long-term contracts with early termination fees</li>
@@ -532,7 +532,7 @@ export const salonPaymentSolutions: PillarPageData = {
   <li>Equipment leases instead of purchases (leases almost always cost more over time)</li>
 </ul>
 
-<h3>The Best Payment Solution Is the One You Barely Notice</h3>
+<h3>The best system is the one nobody thinks about</h3>
 <p>The ultimate goal is a payment system so seamlessly integrated into your operations that you never think about it. Clients pay effortlessly. Transactions record automatically. Reports generate themselves. Tips attribute to the right staff member. Commissions calculate without spreadsheets. Tax season requires one export, not a week of reconciliation.</p>
 <p>That level of seamlessness comes from choosing an integrated platform where payments are a core feature, not an afterthought bolted on. Modern all-in-one platforms like Daisy are designed to make payments invisible: powerful under the hood, effortless for you and your clients.</p>`,
       callout: {

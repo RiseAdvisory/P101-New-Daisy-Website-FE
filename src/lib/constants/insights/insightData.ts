@@ -125,7 +125,7 @@ export const industryStats: StatCategory[] = [
       },
       {
         value: '24/7',
-        description: 'AI receptionists operate round-the-clock, capturing after-hours revenue',
+        description: 'AI receptionists run round-the-clock and capture after-hours revenue',
         source: 'AI receptionist platform data',
       },
       {

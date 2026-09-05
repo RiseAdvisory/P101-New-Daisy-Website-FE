@@ -16,6 +16,17 @@ both already enforced by the repo's PostToolUse hook on `*/lib/constants/*`:
   layout, field structure and the JSON-LD that mirrors them all stay exactly as they are.
 - **Never touch the numbers.** Pricing, billing terms and sourced statistics stay word for word.
 
+### Ticking boxes: slugs are not unique
+
+43 slugs appear more than once in this file, so **never tick by slug alone.** Match on the
+line number, or on the slug within one section, or you will silently mark work as done that
+nobody has looked at.
+
+The collisions are concentrated in section 2, where the same competitor legitimately has an
+entry in several files (`fresha` appears 3 times, `daisy-vs-fresha` twice, and so on). There
+is one collision across sections: `reduce-salon-no-shows` is both a blog article and a guide,
+and they are different files with different prose.
+
 
 Every entry below exists in **English and Arabic** under the same slug. The humanizer skill
 is built around English patterns, so tick the box for the English prose. Arabic needs a
@@ -50,288 +61,288 @@ smallest and the most constrained, so they are cheap to leave until last.
 
 ### `analytics-reports.ts` (5)
 
-- [ ] 7 Salon Metrics You Should Track Weekly  
+- [x] 7 Salon Metrics You Should Track Weekly  
       `7-salon-metrics-track-weekly`
-- [ ] Client Retention Reporting: Know Your Numbers  
+- [x] Client Retention Reporting: Know Your Numbers  
       `client-retention-reporting-know-your-numbers`
-- [ ] Revenue Forecasting for Beauty Businesses  
+- [x] Revenue Forecasting for Beauty Businesses  
       `revenue-forecasting-beauty-businesses`
-- [ ] Tracking Your Freelance Beauty Income Effectively  
+- [x] Tracking Your Freelance Beauty Income Effectively  
       `tracking-freelance-beauty-income`
-- [ ] How Data-Driven Salons Outperform Competition  
+- [x] How Data-Driven Salons Outperform Competition  
       `data-driven-salons-outperform-competition`
 
 ### `beauty-business-growth.ts` (7)
 
-- [ ] How to Start a Beauty Business: Complete Startup Guide  
+- [x] How to Start a Beauty Business: Complete Startup Guide  
       `how-to-start-beauty-business`
-- [ ] Salon Pricing Strategy: How to Price Your Services  
+- [x] Salon Pricing Strategy: How to Price Your Services  
       `salon-pricing-strategy-guide`
-- [ ] Increasing Salon Revenue: 10 Proven Strategies  
+- [x] Increasing Salon Revenue: 10 Proven Strategies  
       `increase-salon-revenue-strategies`
-- [ ] Expanding Your Salon: When and How to Add Locations  
+- [x] Expanding Your Salon: When and How to Add Locations  
       `expanding-salon-adding-locations`
-- [ ] Salon Membership & Subscription Models  
+- [x] Salon Membership & Subscription Models  
       `salon-membership-subscription-models`
-- [ ] Building a Freelance Beauty Business from Scratch  
+- [x] Building a Freelance Beauty Business from Scratch  
       `building-freelance-beauty-business`
-- [ ] Salon Business Plan: Template & Writing Guide  
+- [x] Salon Business Plan: Template & Writing Guide  
       `salon-business-plan-template`
 
 ### `booking-management.ts` (6)
 
-- [ ] Online Booking for Salons: Complete Setup Guide  
+- [x] Online Booking for Salons: Complete Setup Guide  
       `online-booking-for-salons-setup-guide`
-- [ ] How to Reduce Salon No-Shows by 60%  
+- [x] How to Reduce Salon No-Shows by 60%  
       `reduce-salon-no-shows`
-- [ ] Salon Waitlist Management: Never Lose a Client Again  
+- [x] Salon Waitlist Management: Never Lose a Client Again  
       `salon-waitlist-management`
-- [ ] Group Booking & Packages: Maximizing Revenue Per Visit  
+- [x] Group Booking & Packages: Maximizing Revenue Per Visit  
       `group-booking-packages-salon`
-- [ ] Mobile Booking: Why 70% of Clients Book on Their Phone  
+- [x] Mobile Booking: Why 70% of Clients Book on Their Phone  
       `mobile-booking-beauty-salon`
-- [ ] Recurring Appointment Scheduling for Salons  
+- [x] Recurring Appointment Scheduling for Salons  
       `recurring-appointment-scheduling-salon`
 
 ### `bottom-of-funnel.ts` (3)
 
-- [ ] Salon Software Switching Checklist: Your 30-Day Migration Plan  
+- [x] Salon Software Switching Checklist: Your 30-Day Migration Plan  
       `salon-software-switching-checklist-migration`
-- [ ] What to Expect in Your First Month With a New Salon Platform  
+- [x] What to Expect in Your First Month With a New Salon Platform  
       `first-month-new-salon-platform`
-- [ ] How to Calculate the ROI of Switching Salon Software  
+- [x] How to Calculate the ROI of Switching Salon Software  
       `calculate-roi-switching-salon-software`
 
 ### `business-growth.ts` (5)
 
-- [ ] From One Location to Many: Scaling Your Beauty Business  
+- [x] From One Location to Many: Scaling Your Beauty Business  
       `scaling-beauty-business-multiple-locations`
-- [ ] How Multi-Channel Acquisition Drives Beauty Business Growth  
+- [x] How Multi-Channel Acquisition Drives Beauty Business Growth  
       `multi-channel-acquisition-beauty-business-growth`
-- [ ] daisy-marketing-suite-attracts-new-clients  
+- [x] daisy-marketing-suite-attracts-new-clients  
       `daisy-marketing-suite-attracts-new-clients`
-- [ ] Building Your Personal Brand as a Beauty Professional  
+- [x] Building Your Personal Brand as a Beauty Professional  
       `building-personal-brand-beauty-professional-guide`
-- [ ] Salon Revenue Growth Strategies for 2026  
+- [x] Salon Revenue Growth Strategies for 2026  
       `salon-revenue-growth-strategies-2026`
 
 ### `client-retention.ts` (7)
 
-- [ ] Salon Client Retention Rate: How to Calculate & Improve It  
+- [x] Salon Client Retention Rate: How to Calculate & Improve It  
       `salon-client-retention-rate-guide`
-- [ ] Salon Rebooking Strategies: Getting Clients to Come Back  
+- [x] Salon Rebooking Strategies: Getting Clients to Come Back  
       `salon-rebooking-strategies`
-- [ ] Salon Client Experience: From First Visit to Loyal Regular  
+- [x] Salon Client Experience: From First Visit to Loyal Regular  
       `salon-client-experience-guide`
-- [ ] salon-client-personalization-tips  
+- [x] salon-client-personalization-tips  
       `salon-client-personalization-tips`
-- [ ] Win-Back Campaigns: Re-Engaging Lost Salon Clients  
+- [x] Win-Back Campaigns: Re-Engaging Lost Salon Clients  
       `salon-win-back-campaigns`
-- [ ] Customer Feedback for Salons: Collection & Action Guide  
+- [x] Customer Feedback for Salons: Collection & Action Guide  
       `salon-customer-feedback-guide`
-- [ ] Building Client Loyalty as an Independent Beauty Pro  
+- [x] Building Client Loyalty as an Independent Beauty Pro  
       `independent-beauty-pro-client-loyalty`
 
 ### `communication-tools.ts` (5)
 
-- [ ] Automated Reminders That Actually Reduce No-Shows  
+- [x] Automated Reminders That Actually Reduce No-Shows  
       `automated-reminders-reduce-no-shows`
-- [ ] Client Communication Templates for Beauty Businesses  
+- [x] Client Communication Templates for Beauty Businesses  
       `client-communication-templates-beauty`
-- [ ] How to Use SMS Marketing to Fill Empty Salon Chairs  
+- [x] How to Use SMS Marketing to Fill Empty Salon Chairs  
       `sms-marketing-fill-salon-chairs`
-- [ ] Building Client Relationships: Communication Tips for Beauty Pros  
+- [x] Building Client Relationships: Communication Tips for Beauty Pros  
       `building-client-relationships-beauty-pros`
-- [ ] Review Request Automation: Get More 5-Star Reviews  
+- [x] Review Request Automation: Get More 5-Star Reviews  
       `review-request-automation-5-star-reviews`
 
 ### `daisy-advantage.ts` (8)
 
-- [ ] How AI Receptionists Are Transforming Salon Customer Service  
+- [x] How AI Receptionists Are Transforming Salon Customer Service  
       `ai-receptionist-salon-customer-service`
-- [ ] Why All-in-One Salon Platforms Beat Point Solutions  
+- [x] Why All-in-One Salon Platforms Beat Point Solutions  
       `all-in-one-salon-platform-vs-point-solutions`
-- [ ] 360-Degree Customer Acquisition: The New Standard for Salons  
+- [x] 360-Degree Customer Acquisition: The New Standard for Salons  
       `360-degree-customer-acquisition-salons`
-- [ ] White-Label Booking: Why Your Brand Matters More Than Your Software's  
+- [x] White-Label Booking: Why Your Brand Matters More Than Your Software's  
       `white-label-salon-booking`
-- [ ] Running a Multilingual Beauty Business: Tools and Tips  
+- [x] Running a Multilingual Beauty Business: Tools and Tips  
       `multilingual-beauty-business-tools`
-- [ ] How Data-Driven Beauty Platforms Create Competitive Moats  
+- [x] How Data-Driven Beauty Platforms Create Competitive Moats  
       `data-driven-beauty-platform`
-- [ ] Why Modern Salons Need an AI Platform (Not Just Software)  
+- [x] Why Modern Salons Need an AI Platform (Not Just Software)  
       `modern-salons-ai-platform-not-software`
-- [ ] Is Your Current Salon Software Holding You Back? 10 Warning Signs  
+- [x] Is Your Current Salon Software Holding You Back? 10 Warning Signs  
       `salon-software-holding-you-back-warning-signs`
 
 ### `freelance-beauty.ts` (9)
 
-- [ ] Freelance Stylist Scheduling: Managing Your Own Calendar  
+- [x] Freelance Stylist Scheduling: Managing Your Own Calendar  
       `freelance-stylist-scheduling-guide`
-- [ ] Going Freelance as a Beauty Professional: Pros & Cons  
+- [x] Going Freelance as a Beauty Professional: Pros & Cons  
       `going-freelance-beauty-professional`
-- [ ] Freelance Hairstylist Business Setup: Legal & Financial Guide  
+- [x] Freelance Hairstylist Business Setup: Legal & Financial Guide  
       `freelance-hairstylist-business-setup`
-- [ ] Setting Your Prices as an Independent Beauty Professional  
+- [x] Setting Your Prices as an Independent Beauty Professional  
       `setting-prices-independent-beauty-pro`
-- [ ] Building a Personal Brand in the Beauty Industry  
+- [x] Building a Personal Brand in the Beauty Industry  
       `personal-brand-beauty-industry`
-- [ ] Finding Clients as a Freelance Beauty Professional  
+- [x] Finding Clients as a Freelance Beauty Professional  
       `finding-clients-freelance-beauty`
-- [ ] Freelance Beauty Professional Insurance Guide  
+- [x] Freelance Beauty Professional Insurance Guide  
       `freelance-beauty-professional-insurance`
-- [ ] Tax Guide for Freelance Beauty Professionals  
+- [x] Tax Guide for Freelance Beauty Professionals  
       `tax-guide-freelance-beauty-professionals`
-- [ ] Scaling Up: From Solo Freelancer to Beauty Business Owner  
+- [x] Scaling Up: From Solo Freelancer to Beauty Business Owner  
       `scaling-freelancer-to-beauty-business`
 
 ### `industry-trends.ts` (6)
 
-- [ ] Beauty Industry Statistics 2026: Key Numbers to Know  
+- [x] Beauty Industry Statistics 2026: Key Numbers to Know  
       `beauty-industry-statistics-2026`
-- [ ] AI in the Beauty Industry: Practical Applications  
+- [x] AI in the Beauty Industry: Practical Applications  
       `ai-beauty-industry-applications`
-- [ ] Sustainability in Beauty Salons: A Practical Guide  
+- [x] Sustainability in Beauty Salons: A Practical Guide  
       `sustainability-beauty-salons`
-- [ ] The Rise of Beauty Marketplaces: What It Means for Salons  
+- [x] The Rise of Beauty Marketplaces: What It Means for Salons  
       `beauty-marketplaces-impact-salons`
-- [ ] Wellness Meets Beauty: The Integration Trend  
+- [x] Wellness Meets Beauty: The Integration Trend  
       `wellness-beauty-integration-trend`
-- [ ] Beauty Industry Predictions: What's Coming in 2027  
+- [x] Beauty Industry Predictions: What's Coming in 2027  
       `beauty-industry-predictions-2027`
 
 ### `marketing-promotions.ts` (5)
 
-- [ ] Complete Guide to Salon Loyalty Programs  
+- [x] Complete Guide to Salon Loyalty Programs  
       `complete-guide-salon-loyalty-programs`
-- [ ] Salon Referral Programs That Actually Work  
+- [x] Salon Referral Programs That Actually Work  
       `salon-referral-programs-that-work`
-- [ ] Email Marketing for Salons: Templates & Best Practices  
+- [x] Email Marketing for Salons: Templates & Best Practices  
       `email-marketing-salons-templates`
-- [ ] Social Media Marketing for Independent Beauty Professionals  
+- [x] Social Media Marketing for Independent Beauty Professionals  
       `social-media-marketing-beauty-professionals`
-- [ ] How Daisy's Cashback System Drives Customer Loyalty  
+- [x] How Daisy's Cashback System Drives Customer Loyalty  
       `daisy-cashback-system-customer-loyalty`
 
 ### `multi-channel.ts` (3)
 
-- [ ] WhatsApp Marketing for Salons: Complete Guide  
+- [x] WhatsApp Marketing for Salons: Complete Guide  
       `whatsapp-marketing-salons-guide`
-- [ ] Managing Instagram DMs for Your Beauty Business  
+- [x] Managing Instagram DMs for Your Beauty Business  
       `managing-instagram-dms-beauty-business`
-- [ ] Omnichannel Communication: Reaching Salon Clients Where They Are  
+- [x] Omnichannel Communication: Reaching Salon Clients Where They Are  
       `omnichannel-communication-salon-clients`
 
 ### `payment-processing.ts` (4)
 
-- [ ] Salon POS Systems: What to Look For in 2026  
+- [x] Salon POS Systems: What to Look For in 2026  
       `salon-pos-systems-2026-guide`
-- [ ] Tipping Best Practices for Beauty Businesses  
+- [x] Tipping Best Practices for Beauty Businesses  
       `tipping-best-practices-beauty-businesses`
-- [ ] Getting Paid Faster: Invoicing for Freelance Beauty Pros  
+- [x] Getting Paid Faster: Invoicing for Freelance Beauty Pros  
       `getting-paid-faster-freelance-beauty-invoicing`
-- [ ] Payment Processing Fees Compared: Daisy vs Alternatives  
+- [x] Payment Processing Fees Compared: Daisy vs Alternatives  
       `payment-processing-fees-compared-daisy`
 
 ### `salon-analytics.ts` (4)
 
-- [ ] 7 Salon KPIs Every Owner Should Track  
+- [x] 7 Salon KPIs Every Owner Should Track  
       `salon-kpis-to-track`
-- [ ] Understanding Salon Client Lifetime Value  
+- [x] Understanding Salon Client Lifetime Value  
       `salon-client-lifetime-value`
-- [ ] Salon Revenue Reporting: What to Measure & Why  
+- [x] Salon Revenue Reporting: What to Measure & Why  
       `salon-revenue-reporting-guide`
-- [ ] Data-Driven Salon Management: Beginner's Guide  
+- [x] Data-Driven Salon Management: Beginner's Guide  
       `data-driven-salon-management`
 
 ### `salon-management.ts` (8)
 
-- [ ] How to Choose Salon Management Software: A Step-by-Step Guide  
+- [x] How to Choose Salon Management Software: A Step-by-Step Guide  
       `how-to-choose-salon-management-software`
-- [ ] Salon Software Features Checklist: 25 Must-Haves  
+- [x] Salon Software Features Checklist: 25 Must-Haves  
       `salon-software-features-checklist`
-- [ ] Switching Salon Software: Complete Migration Guide  
+- [x] Switching Salon Software: Complete Migration Guide  
       `switching-salon-software-migration-guide`
-- [ ] Cloud vs Desktop Salon Software: Which Is Better?  
+- [x] Cloud vs Desktop Salon Software: Which Is Better?  
       `cloud-vs-desktop-salon-software`
-- [ ] Small Salon Software: Best Options for 1-5 Staff  
+- [x] Small Salon Software: Best Options for 1-5 Staff  
       `small-salon-software-options`
-- [ ] Multi-Location Salon Software: Managing Multiple Branches  
+- [x] Multi-Location Salon Software: Managing Multiple Branches  
       `multi-location-salon-software`
-- [ ] Salon Software ROI: Calculating Your Return on Investment  
+- [x] Salon Software ROI: Calculating Your Return on Investment  
       `salon-software-roi-calculator`
-- [ ] Free vs Paid Salon Software: The True Cost Comparison  
+- [x] Free vs Paid Salon Software: The True Cost Comparison  
       `free-vs-paid-salon-software`
 
 ### `salon-marketing.ts` (8)
 
-- [ ] 15 Salon Marketing Ideas That Work in 2026  
+- [x] 15 Salon Marketing Ideas That Work in 2026  
       `salon-marketing-ideas-2026`
-- [ ] Salon Social Media Marketing: Instagram, TikTok & Beyond  
+- [x] Salon Social Media Marketing: Instagram, TikTok & Beyond  
       `salon-social-media-marketing`
-- [ ] Salon Email Marketing: Templates & Automation Guide  
+- [x] Salon Email Marketing: Templates & Automation Guide  
       `salon-email-marketing-templates`
-- [ ] How to Create a Salon Loyalty Program That Retains Clients  
+- [x] How to Create a Salon Loyalty Program That Retains Clients  
       `salon-loyalty-program-guide`
-- [ ] Salon Referral Programs: Turn Clients Into Ambassadors  
+- [x] Salon Referral Programs: Turn Clients Into Ambassadors  
       `salon-referral-program-guide`
-- [ ] Google My Business for Salons: Complete Optimization Guide  
+- [x] Google My Business for Salons: Complete Optimization Guide  
       `google-my-business-salon-optimization`
-- [ ] Salon SEO: Ranking Your Business in Local Search  
+- [x] Salon SEO: Ranking Your Business in Local Search  
       `salon-seo-local-search-guide`
-- [ ] Marketing Yourself as an Independent Beauty Professional  
+- [x] Marketing Yourself as an Independent Beauty Professional  
       `independent-beauty-professional-marketing`
 
 ### `salon-payments.ts` (6)
 
-- [ ] Salon POS Systems: Complete Buyer's Guide  
+- [x] Salon POS Systems: Complete Buyer's Guide  
       `salon-pos-system-buyers-guide`
-- [ ] Salon Tipping: Etiquette, Policies & Digital Solutions  
+- [x] Salon Tipping: Etiquette, Policies & Digital Solutions  
       `salon-tipping-policies-digital`
-- [ ] Contactless Payments for Salons: Setup Guide  
+- [x] Contactless Payments for Salons: Setup Guide  
       `contactless-payments-salon-setup`
-- [ ] Salon Invoicing: Professional Billing Made Easy  
+- [x] Salon Invoicing: Professional Billing Made Easy  
       `salon-invoicing-billing-guide`
-- [ ] Getting Paid as a Freelance Stylist: Payment Methods Compared  
+- [x] Getting Paid as a Freelance Stylist: Payment Methods Compared  
       `freelance-stylist-payment-methods`
-- [ ] Payment Processing Fees for Salons: What You're Really Paying  
+- [x] Payment Processing Fees for Salons: What You're Really Paying  
       `salon-payment-processing-fees`
 
 ### `staff-management.ts` (6)
 
-- [ ] Salon Staff Scheduling: Best Practices & Templates  
+- [x] Salon Staff Scheduling: Best Practices & Templates  
       `salon-staff-scheduling-best-practices`
-- [ ] Salon Commission Structures: Find the Right Model  
+- [x] Salon Commission Structures: Find the Right Model  
       `salon-commission-structures-guide`
-- [ ] Hiring Salon Staff: Interview Questions & Red Flags  
+- [x] Hiring Salon Staff: Interview Questions & Red Flags  
       `hiring-salon-staff-interview-guide`
-- [ ] Salon Employee Retention: Keeping Your Best Stylists  
+- [x] Salon Employee Retention: Keeping Your Best Stylists  
       `salon-employee-retention-strategies`
-- [ ] Managing a Freelance Beauty Schedule Effectively  
+- [x] Managing a Freelance Beauty Schedule Effectively  
       `managing-freelance-beauty-schedule`
-- [ ] Salon Staff Performance Reviews: A Template  
+- [x] Salon Staff Performance Reviews: A Template  
       `salon-staff-performance-reviews`
 
 ### `team-management.ts` (4)
 
-- [ ] Staff Scheduling Made Simple: A Salon Owner's Guide  
+- [x] Staff Scheduling Made Simple: A Salon Owner's Guide  
       `staff-scheduling-salon-owners-guide`
-- [ ] Commission Structures That Keep Top Talent  
+- [x] Commission Structures That Keep Top Talent  
       `commission-structures-keep-top-talent`
-- [ ] Managing Permissions: Who Sees What in Your Salon  
+- [x] Managing Permissions: Who Sees What in Your Salon  
       `managing-permissions-salon-access-control`
-- [ ] Time Management Tips for Independent Beauty Professionals  
+- [x] Time Management Tips for Independent Beauty Professionals  
       `time-management-independent-beauty-professionals`
 
 ### `thought-leadership.ts` (4)
 
-- [ ] The Death of 'Salon Software': Why the Future Belongs to Platform Ecosystems  
+- [x] The Death of 'Salon Software': Why the Future Belongs to Platform Ecosystems  
       `death-of-salon-software-platform-ecosystems`
-- [ ] Why Beauty Businesses That Don't Adopt AI Will Be Left Behind by 2028  
+- [x] Why Beauty Businesses That Don't Adopt AI Will Be Left Behind by 2028  
       `beauty-businesses-adopt-ai-or-left-behind`
-- [ ] From Operations to Growth: The Mindset Shift Every Salon Owner Needs  
+- [x] From Operations to Growth: The Mindset Shift Every Salon Owner Needs  
       `operations-to-growth-mindset-shift-salon`
-- [ ] Why Your Salon Uses 5 Different Apps (And How to Fix It)  
+- [x] Why Your Salon Uses 5 Different Apps (And How to Fix It)  
       `salon-five-apps-how-to-fix`
 
 ---
@@ -347,252 +358,256 @@ only. Do not soften or sharpen a claim while rewriting it.
 
 ### `aiTools.ts` (3)
 
-- [ ] anolla  
+- [x] anolla  
       `anolla`
-- [ ] bookingbee-ai  
+- [x] bookingbee-ai  
       `bookingbee-ai`
-- [ ] sharpai  
+- [x] sharpai  
       `sharpai`
 
-### `comparisonPages.ar.ts` (43)
+### `comparisonPages.ar.ts` (43): OUT OF SCOPE
 
-- [ ] daisy-vs-fresha  
+This file is Arabic copy. The humanizer pass covers English prose only; the
+Arabic mirrors need a native-speaker pass instead. These 43 entries duplicate the
+slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
+
+- [-] daisy-vs-fresha  
       `daisy-vs-fresha`
-- [ ] daisy-vs-booksy  
+- [-] daisy-vs-booksy  
       `daisy-vs-booksy`
-- [ ] daisy-vs-vagaro  
+- [-] daisy-vs-vagaro  
       `daisy-vs-vagaro`
-- [ ] daisy-vs-glossgenius  
+- [-] daisy-vs-glossgenius  
       `daisy-vs-glossgenius`
-- [ ] daisy-vs-mindbody  
+- [-] daisy-vs-mindbody  
       `daisy-vs-mindbody`
-- [ ] daisy-vs-toast  
+- [-] daisy-vs-toast  
       `daisy-vs-toast`
-- [ ] daisy-vs-boulevard  
+- [-] daisy-vs-boulevard  
       `daisy-vs-boulevard`
-- [ ] daisy-vs-glamera  
+- [-] daisy-vs-glamera  
       `daisy-vs-glamera`
-- [ ] daisy-vs-dingg  
+- [-] daisy-vs-dingg  
       `daisy-vs-dingg`
-- [ ] daisy-vs-repeatmd  
+- [-] daisy-vs-repeatmd  
       `daisy-vs-repeatmd`
-- [ ] daisy-vs-planity  
+- [-] daisy-vs-planity  
       `daisy-vs-planity`
-- [ ] daisy-vs-mangomint  
+- [-] daisy-vs-mangomint  
       `daisy-vs-mangomint`
-- [ ] daisy-vs-square-appointments  
+- [-] daisy-vs-square-appointments  
       `daisy-vs-square-appointments`
-- [ ] daisy-vs-phorest  
+- [-] daisy-vs-phorest  
       `daisy-vs-phorest`
-- [ ] daisy-vs-acuity-scheduling  
+- [-] daisy-vs-acuity-scheduling  
       `daisy-vs-acuity-scheduling`
-- [ ] fresha  
+- [-] fresha  
       `fresha`
-- [ ] booksy  
+- [-] booksy  
       `booksy`
-- [ ] vagaro  
+- [-] vagaro  
       `vagaro`
-- [ ] glossgenius  
+- [-] glossgenius  
       `glossgenius`
-- [ ] mindbody  
+- [-] mindbody  
       `mindbody`
-- [ ] boulevard  
+- [-] boulevard  
       `boulevard`
-- [ ] mangomint  
+- [-] mangomint  
       `mangomint`
-- [ ] square-appointments  
+- [-] square-appointments  
       `square-appointments`
-- [ ] phorest  
+- [-] phorest  
       `phorest`
-- [ ] acuity-scheduling  
+- [-] acuity-scheduling  
       `acuity-scheduling`
-- [ ] timely  
+- [-] timely  
       `timely`
-- [ ] zenoti  
+- [-] zenoti  
       `zenoti`
-- [ ] setmore  
+- [-] setmore  
       `setmore`
-- [ ] simplybook-me  
+- [-] simplybook-me  
       `simplybook-me`
-- [ ] best-fresha-alternatives  
+- [-] best-fresha-alternatives  
       `best-fresha-alternatives`
-- [ ] best-booksy-alternatives  
+- [-] best-booksy-alternatives  
       `best-booksy-alternatives`
-- [ ] best-vagaro-alternatives  
+- [-] best-vagaro-alternatives  
       `best-vagaro-alternatives`
-- [ ] best-glossgenius-alternatives  
+- [-] best-glossgenius-alternatives  
       `best-glossgenius-alternatives`
-- [ ] best-mindbody-alternatives  
+- [-] best-mindbody-alternatives  
       `best-mindbody-alternatives`
-- [ ] best-boulevard-alternatives  
+- [-] best-boulevard-alternatives  
       `best-boulevard-alternatives`
-- [ ] best-mangomint-alternatives  
+- [-] best-mangomint-alternatives  
       `best-mangomint-alternatives`
-- [ ] best-square-appointments-alternatives  
+- [-] best-square-appointments-alternatives  
       `best-square-appointments-alternatives`
-- [ ] best-zenoti-alternatives  
+- [-] best-zenoti-alternatives  
       `best-zenoti-alternatives`
-- [ ] best-acuity-alternatives  
+- [-] best-acuity-alternatives  
       `best-acuity-alternatives`
-- [ ] best-phorest-alternatives  
+- [-] best-phorest-alternatives  
       `best-phorest-alternatives`
-- [ ] best-timely-alternatives  
+- [-] best-timely-alternatives  
       `best-timely-alternatives`
-- [ ] best-setmore-alternatives  
+- [-] best-setmore-alternatives  
       `best-setmore-alternatives`
-- [ ] best-simplybook-me-alternatives  
+- [-] best-simplybook-me-alternatives  
       `best-simplybook-me-alternatives`
 
 ### `comparisonPages.ts` (43)
 
-- [ ] daisy-vs-fresha  
+- [x] daisy-vs-fresha  
       `daisy-vs-fresha`
-- [ ] daisy-vs-booksy  
+- [x] daisy-vs-booksy  
       `daisy-vs-booksy`
-- [ ] daisy-vs-vagaro  
+- [x] daisy-vs-vagaro  
       `daisy-vs-vagaro`
-- [ ] daisy-vs-glossgenius  
+- [x] daisy-vs-glossgenius  
       `daisy-vs-glossgenius`
-- [ ] A modern AI-native platform versus the legacy giant of wellness software, is it time to upgrade?  
+- [x] A modern AI-native platform versus the legacy giant of wellness software, is it time to upgrade?  
       `daisy-vs-mindbody`
-- [ ] Purpose-built beauty AI platform versus restaurant POS technology adapting to services.  
+- [x] Purpose-built beauty AI platform versus restaurant POS technology adapting to services.  
       `daisy-vs-toast`
-- [ ] Two premium platforms, but only one includes AI receptionist and customer acquisition at base pricing.  
+- [x] Two premium platforms, but only one includes AI receptionist and customer acquisition at base pricing.  
       `daisy-vs-boulevard`
-- [ ] Both speak Arabic. Only one has AI, full business management, and 6-country GCC coverage.  
+- [x] Both speak Arabic. Only one has AI, full business management, and 6-country GCC coverage.  
       `daisy-vs-glamera`
-- [ ] Both offer AI and Arabic support, but Daisy is built for the GCC — live in Kuwait today — with a complete growth ecosystem.  
+- [x] Both offer AI and Arabic support, but Daisy is built for the GCC — live in Kuwait today — with a complete growth ecosystem.  
       `daisy-vs-dingg`
-- [ ] A complete platform with cashback built-in versus a $700/mo marketing-only tool.  
+- [x] A complete platform with cashback built-in versus a $700/mo marketing-only tool.  
       `daisy-vs-repeatmd`
-- [ ] AI-powered global platform versus France's commission-free marketplace, different markets, different approaches.  
+- [x] AI-powered global platform versus France's commission-free marketplace, different markets, different approaches.  
       `daisy-vs-planity`
-- [ ] Mangomint runs a beautiful salon. Daisy grows a successful business.  
+- [x] Mangomint runs a beautiful salon. Daisy grows a successful business.  
       `daisy-vs-mangomint`
-- [ ] Purpose-built beauty AI versus a generic scheduling add-on to a payment processor.  
+- [x] Purpose-built beauty AI versus a generic scheduling add-on to a payment processor.  
       `daisy-vs-square-appointments`
-- [ ] Modern AI-powered growth versus established loyalty-focused CRM, which approach wins?  
+- [x] Modern AI-powered growth versus established loyalty-focused CRM, which approach wins?  
       `daisy-vs-phorest`
-- [ ] A generic scheduling tool at $16/mo versus a complete beauty business growth platform.  
+- [x] A generic scheduling tool at $16/mo versus a complete beauty business growth platform.  
       `daisy-vs-acuity-scheduling`
-- [ ] Subscription fees, transaction fees, and marketplace commissions, the costs keep adding up.  
+- [x] Subscription fees, transaction fees, and marketplace commissions, the costs keep adding up.  
       `fresha`
-- [ ] Great app, but per-provider pricing and limited AI are holding your business back.  
+- [x] Great app, but per-provider pricing and limited AI are holding your business back.  
       `booksy`
-- [ ] Vagaro manages your business well, but it doesn't help you grow it.  
+- [x] Vagaro manages your business well, but it doesn't help you grow it.  
       `vagaro`
-- [ ] Beautiful design and great for solo pros, but what happens when you want to grow?  
+- [x] Beautiful design and great for solo pros, but what happens when you want to grow?  
       `glossgenius`
-- [ ] An industry giant, but the dated interface, high prices, and marketplace commissions are pushing businesses away.  
+- [x] An industry giant, but the dated interface, high prices, and marketplace commissions are pushing businesses away.  
       `mindbody`
-- [ ] Premium design and smart scheduling, but $158-410/mo and no marketplace is hard to justify.  
+- [x] Premium design and smart scheduling, but $158-410/mo and no marketplace is hard to justify.  
       `boulevard`
-- [ ] Beautiful operations tool, but no AI, no marketplace, and no customer acquisition.  
+- [x] Beautiful operations tool, but no AI, no marketplace, and no customer acquisition.  
       `mangomint`
-- [ ] Great POS, but generic scheduling doesn't cut it for serious beauty businesses.  
+- [x] Great POS, but generic scheduling doesn't cut it for serious beauty businesses.  
       `square-appointments`
-- [ ] Excellent CRM and loyalty, but the world has moved to AI, and Phorest hasn't.  
+- [x] Excellent CRM and loyalty, but the world has moved to AI, and Phorest hasn't.  
       `phorest`
-- [ ] Great for appointments, but your beauty business needs POS, CRM, AI, and a marketplace too.  
+- [x] Great for appointments, but your beauty business needs POS, CRM, AI, and a marketplace too.  
       `acuity-scheduling`
-- [ ] Clean interface but per-staff pricing and zero AI are holding back growing teams.  
+- [x] Clean interface but per-staff pricing and zero AI are holding back growing teams.  
       `timely`
-- [ ] Impressive AI suite, but enterprise contracts, opaque pricing, and no Arabic UI make it overkill for growing salons.  
+- [x] Impressive AI suite, but enterprise contracts, opaque pricing, and no Arabic UI make it overkill for growing salons.  
       `zenoti`
-- [ ] Free scheduling is nice, but your beauty business deserves AI, POS, CRM, and a marketplace that brings clients to you.  
+- [x] Free scheduling is nice, but your beauty business deserves AI, POS, CRM, and a marketplace that brings clients to you.  
       `setmore`
-- [ ] 70+ add-on modules sound flexible, until you realize you're paying extra for everything your beauty business actually needs.  
+- [x] 70+ add-on modules sound flexible, until you realize you're paying extra for everything your beauty business actually needs.  
       `simplybook-me`
-- [ ] Fresha's subscription fees plus hidden transaction costs are getting expensive. Here are the best alternatives for growing beauty businesses.  
+- [x] Fresha's subscription fees plus hidden transaction costs are getting expensive. Here are the best alternatives for growing beauty businesses.  
       `best-fresha-alternatives`
-- [ ] Per-provider pricing and basic AI not cutting it? Here are better options for growing teams.  
+- [x] Per-provider pricing and basic AI not cutting it? Here are better options for growing teams.  
       `best-booksy-alternatives`
-- [ ] Vagaro manages well but doesn't grow your business. These alternatives add AI-powered acquisition.  
+- [x] Vagaro manages well but doesn't grow your business. These alternatives add AI-powered acquisition.  
       `best-vagaro-alternatives`
-- [ ] Beautiful for solos, but team management at $148/mo and no marketplace limit growth.  
+- [x] Beautiful for solos, but team management at $148/mo and no marketplace limit growth.  
       `best-glossgenius-alternatives`
-- [ ] Legacy pricing and dated UX pushing you to look elsewhere? These modern platforms deliver more.  
+- [x] Legacy pricing and dated UX pushing you to look elsewhere? These modern platforms deliver more.  
       `best-mindbody-alternatives`
-- [ ] Premium design at $158+/mo with AI locked behind $295. These alternatives include more for less.  
+- [x] Premium design at $158+/mo with AI locked behind $295. These alternatives include more for less.  
       `best-boulevard-alternatives`
-- [ ] Clean operations at $165+/mo, but where's the AI and customer acquisition?  
+- [x] Clean operations at $165+/mo, but where's the AI and customer acquisition?  
       `best-mangomint-alternatives`
-- [ ] Great for payments, but beauty businesses need purpose-built tools.  
+- [x] Great for payments, but beauty businesses need purpose-built tools.  
       `best-square-appointments-alternatives`
-- [ ] best-zenoti-alternatives  
+- [x] best-zenoti-alternatives  
       `best-zenoti-alternatives`
-- [ ] best-acuity-alternatives  
+- [x] best-acuity-alternatives  
       `best-acuity-alternatives`
-- [ ] Excellent CRM and loyalty at ~$99/mo, but limited to UK/Ireland with no AI, no marketplace, and no Arabic support.  
+- [x] Excellent CRM and loyalty at ~$99/mo, but limited to UK/Ireland with no AI, no marketplace, and no Arabic support.  
       `best-phorest-alternatives`
-- [ ] Clean UI at $30/mo base, but $9-15/staff adds up fast, and there's no AI, no marketplace, and no Arabic support.  
+- [x] Clean UI at $30/mo base, but $9-15/staff adds up fast, and there's no AI, no marketplace, and no Arabic support.  
       `best-timely-alternatives`
-- [ ] Free scheduling is nice, but beauty businesses need POS, CRM, inventory, AI, and a marketplace to actually grow.  
+- [x] Free scheduling is nice, but beauty businesses need POS, CRM, inventory, AI, and a marketplace to actually grow.  
       `best-setmore-alternatives`
-- [ ] best-simplybookme-alternatives  
+- [x] best-simplybookme-alternatives  
       `best-simplybookme-alternatives`
 
 ### `tier1Data.ts` (5)
 
-- [ ] fresha  
+- [x] fresha  
       `fresha`
-- [ ] booksy  
+- [x] booksy  
       `booksy`
-- [ ] vagaro  
+- [x] vagaro  
       `vagaro`
-- [ ] mindbody  
+- [x] mindbody  
       `mindbody`
-- [ ] zenoti  
+- [x] zenoti  
       `zenoti`
 
 ### `tier2Data.ts` (7)
 
-- [ ] glamera  
+- [x] glamera  
       `glamera`
-- [ ] dingg  
+- [x] dingg  
       `dingg`
-- [ ] glossgenius  
+- [x] glossgenius  
       `glossgenius`
-- [ ] zylu  
+- [x] zylu  
       `zylu`
-- [ ] repeatmd  
+- [x] repeatmd  
       `repeatmd`
-- [ ] boulevard  
+- [x] boulevard  
       `boulevard`
-- [ ] planity  
+- [x] planity  
       `planity`
 
 ### `tier3Data.ts` (15)
 
-- [ ] square-appointments  
+- [x] square-appointments  
       `square-appointments`
-- [ ] mangomint  
+- [x] mangomint  
       `mangomint`
-- [ ] phorest  
+- [x] phorest  
       `phorest`
-- [ ] timely  
+- [x] timely  
       `timely`
-- [ ] meevo  
+- [x] meevo  
       `meevo`
-- [ ] treatwell  
+- [x] treatwell  
       `treatwell`
-- [ ] acuity-scheduling  
+- [x] acuity-scheduling  
       `acuity-scheduling`
-- [ ] simplybook-me  
+- [x] simplybook-me  
       `simplybook-me`
-- [ ] setmore  
+- [x] setmore  
       `setmore`
-- [ ] bookb  
+- [x] bookb  
       `bookb`
-- [ ] belliata  
+- [x] belliata  
       `belliata`
-- [ ] sparkalz  
+- [x] sparkalz  
       `sparkalz`
-- [ ] squire  
+- [x] squire  
       `squire`
-- [ ] salonist  
+- [x] salonist  
       `salonist`
-- [ ] pabau  
+- [x] pabau  
       `pabau`
 
 ---
@@ -605,29 +620,29 @@ only. Do not soften or sharpen a claim while rewriting it.
 Each file holds one pillar plus a set of cross-links to blog slugs. Humanize the pillar's
 own prose only. The cross-links are references to section 1, not separate content.
 
-- [ ] AI for Beauty & Salon Businesses  
+- [x] AI for Beauty & Salon Businesses  
       `ai-salon-software.ts` → `ai-salon-software`
-- [ ] Beauty Booking System: Everything You Need to Know  
+- [x] Beauty Booking System: Everything You Need to Know  
       `beauty-booking-system.ts` → `beauty-booking-system`
-- [ ] Beauty Business Growth Guide: From Startup to Scale  
+- [x] Beauty Business Growth Guide: From Startup to Scale  
       `beauty-business-growth-guide.ts` → `beauty-business-growth-guide`
-- [ ] Beauty Industry Trends 2026: What's Next  
+- [x] Beauty Industry Trends 2026: What's Next  
       `beauty-industry-trends.ts` → `beauty-industry-trends`
-- [ ] The Freelance Beauty Professional Guide  
+- [x] The Freelance Beauty Professional Guide  
       `freelance-beauty-professional-guide.ts` → `freelance-beauty-professional-guide`
-- [ ] الذكاء الاصطناعي لأعمال التجميل والصالونات  
-      `pillars.ar.ts` → `ai-salon-software`
-- [ ] Salon Analytics & Reporting: Data-Driven Growth  
+- [-] الذكاء الاصطناعي لأعمال التجميل والصالونات  
+      `pillars.ar.ts` → `ai-salon-software`  (Arabic: skipped, needs a native-speaker pass)
+- [x] Salon Analytics & Reporting: Data-Driven Growth  
       `salon-analytics-reporting.ts` → `salon-analytics-reporting`
-- [ ] Salon Client Retention: Strategies That Work  
+- [x] Salon Client Retention: Strategies That Work  
       `salon-client-retention.ts` → `salon-client-retention`
-- [ ] The Complete Guide to Salon Management Software  
+- [x] The Complete Guide to Salon Management Software  
       `salon-management-software.ts` → `salon-management-software`
-- [ ] Salon Marketing Strategies That Drive Growth  
+- [x] Salon Marketing Strategies That Drive Growth  
       `salon-marketing-strategies.ts` → `salon-marketing-strategies`
-- [ ] Salon Payment Solutions: The Complete Guide  
+- [x] Salon Payment Solutions: The Complete Guide  
       `salon-payment-solutions.ts` → `salon-payment-solutions`
-- [ ] Salon Staff Management: Build & Retain a Great Team  
+- [x] Salon Staff Management: Build & Retain a Great Team  
       `salon-staff-management.ts` → `salon-staff-management`
 
 ---
@@ -640,20 +655,20 @@ own prose only. The cross-links are references to section 1, not separate conten
 Each file carries a `business` and a `professional` variant of the same solution, written
 separately. Tick both.
 
-- [ ] `ai-marketing.ts` — business
-- [ ] `ai-marketing.ts` — professional
-- [ ] `ai-receptionist.ts` — business
-- [ ] `ai-receptionist.ts` — professional
-- [ ] `all-in-one.ts` — business
-- [ ] `all-in-one.ts` — professional
-- [ ] `brand-control.ts` — business
-- [ ] `brand-control.ts` — professional
-- [ ] `service-portfolio.ts` — business
-- [ ] `service-portfolio.ts` — professional
-- [ ] `smart-scheduling.ts` — business
-- [ ] `smart-scheduling.ts` — professional
-- [ ] `unified-inbox.ts` — business
-- [ ] `unified-inbox.ts` — professional
+- [x] `ai-marketing.ts` — business
+- [x] `ai-marketing.ts` — professional
+- [x] `ai-receptionist.ts` — business
+- [x] `ai-receptionist.ts` — professional
+- [x] `all-in-one.ts` — business
+- [x] `all-in-one.ts` — professional
+- [x] `brand-control.ts` — business
+- [x] `brand-control.ts` — professional
+- [x] `service-portfolio.ts` — business
+- [x] `service-portfolio.ts` — professional
+- [x] `smart-scheduling.ts` — business
+- [x] `smart-scheduling.ts` — professional
+- [x] `unified-inbox.ts` — business
+- [x] `unified-inbox.ts` — professional
 
 ---
 
@@ -661,15 +676,15 @@ separately. Tick both.
 
 `src/lib/constants/guides/guideData.ts` · renders at `/guides/[slug]`
 
-- [ ] How Do I Reduce No-Shows at My Salon?  
+- [x] How Do I Reduce No-Shows at My Salon?  
       `reduce-salon-no-shows`
-- [ ] How Do I Get More Clients for My Salon?  
+- [x] How Do I Get More Clients for My Salon?  
       `get-more-salon-clients`
-- [ ] How Do I Choose the Best Salon Software?  
+- [x] How Do I Choose the Best Salon Software?  
       `choose-best-salon-software`
-- [ ] How Do I Switch from Fresha to Another Platform?  
+- [x] How Do I Switch from Fresha to Another Platform?  
       `switch-from-fresha`
-- [ ] How Do I Set Up Online Booking for My Salon?  
+- [x] How Do I Set Up Online Booking for My Salon?  
       `set-up-online-booking-salon`
 
 ---
@@ -682,35 +697,41 @@ separately. Tick both.
 Step text is instructional. Keep the steps in order and keep each one doing exactly what
 it did before.
 
-- [ ] booking-scheduling  
+**Scope note:** these 15 entries are aggregation categories in `tutorialCatalog.ts`, which
+holds only a slug, a short label and lists of article/guide slugs. The prose they surface is
+the blog articles (section 1) and the guides (section 5), both already humanized. The
+tutorials pages' own copy lives in `resources/resourcesData.ts` and was humanized in the
+batch that ticked these boxes.
+
+- [x] booking-scheduling  
       `booking-scheduling`
-- [ ] salon-management  
+- [x] salon-management  
       `salon-management`
-- [ ] staff-management  
+- [x] staff-management  
       `staff-management`
-- [ ] marketing  
+- [x] marketing  
       `marketing`
-- [ ] client-retention  
+- [x] client-retention  
       `client-retention`
-- [ ] payments  
+- [x] payments  
       `payments`
-- [ ] communication  
+- [x] communication  
       `communication`
-- [ ] ai-technology  
+- [x] ai-technology  
       `ai-technology`
-- [ ] analytics  
+- [x] analytics  
       `analytics`
-- [ ] business-growth  
+- [x] business-growth  
       `business-growth`
-- [ ] freelance-business  
+- [x] freelance-business  
       `freelance-business`
-- [ ] marketing-brand  
+- [x] marketing-brand  
       `marketing-brand`
-- [ ] payments-income  
+- [x] payments-income  
       `payments-income`
-- [ ] schedule-time  
+- [x] schedule-time  
       `schedule-time`
-- [ ] client-relationships  
+- [x] client-relationships  
       `client-relationships`
 
 ---
@@ -723,21 +744,21 @@ it did before.
 Definitional text. The humanizer keeps a neutral plain voice for encyclopedic content, so
 expect light edits here and no injected personality or first person.
 
-- [ ] Salon Management Software  
+- [x] Salon Management Software  
       `salon-management-software`
-- [ ] AI Receptionist for Salons  
+- [x] AI Receptionist for Salons  
       `ai-receptionist-for-salons`
-- [ ] Cashback in Beauty Booking  
+- [x] Cashback in Beauty Booking  
       `cashback-beauty-booking`
-- [ ] White-Label Salon Software  
+- [x] White-Label Salon Software  
       `white-label-salon-software`
-- [ ] Salon Booking Software  
+- [x] Salon Booking Software  
       `salon-booking-software`
-- [ ] Salon Management System  
+- [x] Salon Management System  
       `salon-management-system`
-- [ ] Salon Employee Management Software  
+- [x] Salon Employee Management Software  
       `salon-employee-management-software`
-- [ ] Salon Customer Management  
+- [x] Salon Customer Management  
       `salon-customer-management`
 
 ---
@@ -754,20 +775,20 @@ are the entire reason an AI engine will quote this page, so a rewrite that drift
 description away from what its source actually says damages the asset rather than improving
 it. Several categories may need no change at all.
 
-- [ ] Market Size & Growth — descriptions only
-- [ ] Booking & Scheduling — descriptions only
-- [ ] No-Shows & Cancellations — descriptions only
-- [ ] Customer Acquisition & Retention — descriptions only
-- [ ] AI & Automation in Beauty — descriptions only
-- [ ] GCC Beauty Market — descriptions only
-- [ ] Payment & Revenue — descriptions only
-- [ ] حجم السوق والنمو — descriptions only
-- [ ] الحجز والجدولة — descriptions only
-- [ ] حالات عدم الحضور والإلغاء — descriptions only
-- [ ] استقطاب العملاء والاحتفاظ بهم — descriptions only
-- [ ] الذكاء الاصطناعي والأتمتة في قطاع التجميل — descriptions only
-- [ ] سوق التجميل في دول مجلس التعاون الخليجي — descriptions only
-- [ ] المدفوعات والإيرادات — descriptions only
+- [x] Market Size & Growth — descriptions only
+- [x] Booking & Scheduling — descriptions only
+- [x] No-Shows & Cancellations — descriptions only
+- [x] Customer Acquisition & Retention — descriptions only
+- [x] AI & Automation in Beauty — descriptions only
+- [x] GCC Beauty Market — descriptions only
+- [x] Payment & Revenue — descriptions only
+- [-] حجم السوق والنمو — descriptions only  (Arabic: skipped, needs a native-speaker pass)
+- [-] الحجز والجدولة — descriptions only  (Arabic: skipped, needs a native-speaker pass)
+- [-] حالات عدم الحضور والإلغاء — descriptions only  (Arabic: skipped, needs a native-speaker pass)
+- [-] استقطاب العملاء والاحتفاظ بهم — descriptions only  (Arabic: skipped, needs a native-speaker pass)
+- [-] الذكاء الاصطناعي والأتمتة في قطاع التجميل — descriptions only  (Arabic: skipped, needs a native-speaker pass)
+- [-] سوق التجميل في دول مجلس التعاون الخليجي — descriptions only  (Arabic: skipped, needs a native-speaker pass)
+- [-] المدفوعات والإيرادات — descriptions only  (Arabic: skipped, needs a native-speaker pass)
 
 ---
 

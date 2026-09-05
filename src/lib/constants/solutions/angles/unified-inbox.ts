@@ -140,14 +140,14 @@ const unifiedInboxAngle: Record<
         categoryLabel: 'UNIFIED INBOX FOR BUSINESS',
         headline: 'One Inbox for Every Customer Conversation.',
         subHeadline:
-          'WhatsApp, Instagram, and more. All your customer messages in one place. No more switching between apps or missing messages buried in different platforms.',
+          'WhatsApp, Instagram and the rest, all in one place. No switching between apps, and nothing buried in a platform nobody checked.',
         ctaText: 'Start Your 14-Day Free Trial',
         ctaLink: '/get-the-app',
         trustLine: 'No credit card required. Our team helps you set up.',
         answerBlock: {
           question: 'What is a unified inbox for beauty businesses?',
           answer:
-            'A unified inbox consolidates all your customer messages from WhatsApp, Instagram, and other channels into a single dashboard. Your team sees every conversation in one place, the AI responds instantly when you cannot, and no message ever gets lost between platforms.',
+            'It pulls every customer message from WhatsApp, Instagram and your other channels into one dashboard. The team sees every conversation together, the AI answers when nobody can, and nothing falls between platforms.',
         },
       },
       scrollSections: [
@@ -163,7 +163,7 @@ const unifiedInboxAngle: Record<
             title: 'A WhatsApp Message Arrives',
             text: 'Instant Notification in Your Inbox',
             description:
-              'A customer sends a WhatsApp message asking about a hair coloring appointment. Instead of checking your phone, the message appears in your unified dashboard alongside every other conversation.',
+              'A customer asks about a colour appointment on WhatsApp. Rather than sitting on someone\'s phone, it lands in the dashboard beside every other conversation.',
             listSub: [
               'WhatsApp messages appear instantly',
               'Full conversation history visible',
@@ -182,7 +182,7 @@ const unifiedInboxAngle: Record<
             title: 'An Instagram DM Follows',
             text: 'Same Thread. Same Place.',
             description:
-              'Minutes later, another customer messages you on Instagram. Both conversations sit side by side in the same inbox. No switching apps, no missed notifications.',
+              'Minutes later another one arrives on Instagram, and the two sit side by side in the same inbox. Nothing to switch between and nothing missed.',
             listSub: [
               'Instagram DMs in the same view',
               'Conversations never get lost',
@@ -202,7 +202,7 @@ const unifiedInboxAngle: Record<
             title: 'Your Team Sees Everything',
             text: 'One Dashboard for All Channels',
             description:
-              'Every team member can view and respond to messages from a single dashboard. Assign conversations, leave internal notes, and ensure no customer waits too long for a reply.',
+              'Anyone on the team can read and reply from the same dashboard, assign a conversation to someone or leave an internal note, so nobody waits long for an answer.',
             listSub: [
               'Assign messages to team members',
               'Internal notes for collaboration',
@@ -221,7 +221,7 @@ const unifiedInboxAngle: Record<
             title: 'Customer Gets a Seamless Experience',
             text: "They Don't Know You're Using Multiple Channels",
             description:
-              "Whether a customer reaches out on WhatsApp or Instagram, they get the same fast, personalized response. Your brand voice stays consistent across every channel.",
+              "WhatsApp or Instagram, the reply is equally quick and equally personal, and your brand sounds the same on both.",
             listSub: [
               'Consistent brand voice everywhere',
               'Fast replies regardless of channel',
@@ -238,14 +238,14 @@ const unifiedInboxAngle: Record<
       howItWorks: {
         title: 'How It Works',
       steps: [
-          { title: 'Sign up and tell us about your business', description: 'Takes 5 minutes. Tell us your services, staff, and hours.' },
-          { title: 'Our team helps you get set up', description: 'We migrate your data, configure your AI receptionist, and test everything with you.' },
-          { title: 'Go live. Your AI receptionist takes over.', description: 'Customers get instant responses. You get control.' },
+          { title: 'Sign up and tell us about your business', description: 'Takes 5 minutes. Your services, your staff, your hours.' },
+          { title: 'Our team helps you get set up', description: 'We move your data across, set up the AI receptionist and test it all with you.' },
+          { title: 'Go live. Your AI receptionist takes over.', description: 'Customers get an instant answer. You get the control.' },
         ],
       },
       pricingHook: {
         headline: 'Free to Start. Grow at Your Own Pace.',
-        body: "14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.",
+        body: "A 14-day free trial with every feature open, no credit card. After that, flexible plans from $50/month. Your AI receptionist does more than answer messages: it learns what your customers like and turns first-time visitors into regulars. Commission applies only to new customers the Daisy marketplace sends you. On your existing clients, zero.",
         ctaText: 'Start Your 14-Day Free Trial',
         ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
@@ -254,7 +254,7 @@ const unifiedInboxAngle: Record<
       platformStrengths: {
         headline: 'Everything You Need to Run Your Business',
         subHeadline:
-          'Stop paying for 8 separate tools. Daisy combines everything you need to run and grow your beauty business.',
+          'Stop paying for 8 separate tools. Daisy holds everything you need to run and grow the business in one place.',
         capabilities: [
           { label: 'AI Receptionist', description: '24/7 WhatsApp and Instagram messaging, booking, and payments' },
           { label: 'Smart Booking', description: 'Intelligent scheduling that fills your calendar' },
@@ -287,10 +287,10 @@ const unifiedInboxAngle: Record<
       },
       titleFraque: 'Frequently Asked Questions',
       fallbackFaqs: [
-        { question: 'What channels does the unified inbox support?', answer: 'Currently WhatsApp and Instagram DMs, with more channels coming soon. All messages appear in a single dashboard so you never miss a conversation.' },
-        { question: 'Can multiple team members use it?', answer: 'Yes. Your entire team can view, assign, and respond to messages from the same inbox. Internal notes help with handoffs between staff members.' },
+        { question: 'What channels does the unified inbox support?', answer: 'WhatsApp and Instagram DMs today, with more channels on the way. Everything lands in one dashboard, so no conversation gets missed.' },
+        { question: 'Can multiple team members use it?', answer: 'Yes. The whole team can read, assign and reply from the same inbox, and internal notes make the handovers clean.' },
         { question: 'Does the AI respond across all channels?', answer: 'Yes. The AI receptionist monitors all connected channels 24/7 and responds instantly in the customer\'s preferred language, whether they message on WhatsApp or Instagram.' },
-        { question: 'How does it handle messages after hours?', answer: 'The AI receptionist is always on. After-hours messages get instant responses, appointments get booked, and payments get processed. You review everything in the morning.' },
+        { question: 'How does it handle messages after hours?', answer: 'The AI receptionist never goes off. Messages sent overnight get an instant reply, appointments get booked and payments get taken, and you read it all in the morning.' },
       ],
     },
     ar: {
@@ -458,14 +458,14 @@ const unifiedInboxAngle: Record<
         categoryLabel: 'UNIFIED INBOX FOR PROFESSIONALS',
         headline: 'All Your Client Messages in One Place.',
         subHeadline:
-          'Clients message you on WhatsApp, Instagram, and more. Stop checking 5 apps. See every conversation in one clean inbox.',
+          'Clients reach you on WhatsApp, Instagram and elsewhere. Stop checking 5 apps and read every conversation in one inbox.',
         ctaText: 'Start Your Free Trial',
         ctaLink: '/get-the-app',
         trustLine: 'Free to join. No credit card required.',
         answerBlock: {
           question: 'What is a unified inbox for beauty professionals?',
           answer:
-            'A unified inbox puts all your client messages from WhatsApp, Instagram, and other platforms into one clean view. The AI responds when you are mid-appointment, so clients get instant replies and you never miss a booking opportunity.',
+            'It puts every client message from WhatsApp, Instagram and anywhere else into a single view. When you are mid-appointment the AI answers, so clients hear back straight away and no booking slips past.',
         },
       },
       scrollSections: [
@@ -481,7 +481,7 @@ const unifiedInboxAngle: Record<
             title: 'A Client Messages on WhatsApp',
             text: "You're Busy. Daisy Catches It.",
             description:
-              "You're with a client when a new message arrives on WhatsApp asking about your availability. It goes straight into your unified inbox. Daisy replies instantly.",
+              "You are with a client when a WhatsApp message arrives asking what you have free. It drops into your inbox and Daisy answers it immediately.",
             listSub: [
               'WhatsApp messages captured automatically',
               'AI responds while you work',
@@ -500,7 +500,7 @@ const unifiedInboxAngle: Record<
             title: 'Another DMs on Instagram',
             text: 'Both Land in Your Inbox.',
             description:
-              'A different client sends an Instagram DM about pricing. It appears right next to the WhatsApp conversation. You see everything in one place when you are ready.',
+              'Another client sends an Instagram DM about prices, and it appears next to the WhatsApp thread. You look at both when you are free.',
             listSub: [
               'Instagram DMs alongside WhatsApp',
               'All conversations sorted by time',
@@ -520,7 +520,7 @@ const unifiedInboxAngle: Record<
             title: 'Both Handled Without You',
             text: 'AI Books and Confirms',
             description:
-              'While you finish your current appointment, the AI books the WhatsApp client and sends pricing info to the Instagram client. Both get personalized responses.',
+              'While you finish the appointment, the AI books the first client and sends the second your pricing. Both replies read as though you wrote them.',
             listSub: [
               'Bookings confirmed automatically',
               'Pricing and service info shared',
@@ -539,7 +539,7 @@ const unifiedInboxAngle: Record<
             title: 'You Check Between Clients',
             text: 'Everything Handled. Nothing Missed.',
             description:
-              "Between appointments you open your inbox. Two new bookings confirmed, payments processed, clients happy. You didn't type a single reply.",
+              "Between appointments you open the inbox: two bookings confirmed, payments taken, clients happy. You did not type a word.",
             listSub: [
               'Full summary of AI actions',
               'New bookings on your calendar',
@@ -556,14 +556,14 @@ const unifiedInboxAngle: Record<
       howItWorks: {
         title: 'How It Works',
       steps: [
-          { title: 'Sign up and tell us about yourself', description: 'Takes 5 minutes. Set your services, availability, and pricing.' },
-          { title: 'Our team helps you get set up', description: 'We configure your profile, set up your AI assistant, and walk you through everything.' },
-          { title: 'Go live. Focus on your clients.', description: 'Daisy handles your bookings. You handle your craft.' },
+          { title: 'Sign up and tell us about yourself', description: 'Takes 5 minutes. Your services, your availability, your prices.' },
+          { title: 'Our team helps you get set up', description: 'We set up your profile and your AI assistant, and walk you through all of it.' },
+          { title: 'Go live. Focus on your clients.', description: 'Daisy takes the bookings. You do the work you trained for.' },
         ],
       },
       pricingHook: {
         headline: 'Free to Join. Zero Risk.',
-        body: "Create your profile and start accepting bookings at no cost. Premium features available through affordable plans. Daisy doesn't just manage your schedule. It learns your clients' preferences, personalizes their booking experience, and makes sure you never miss an inquiry. Commission only on new clients who find you through the Daisy marketplace, your existing clients always pay zero commission.",
+        body: "Create your profile and start taking bookings at no cost, with premium features on affordable plans. Daisy does more than hold your schedule: it learns what your clients prefer, shapes their booking experience around it, and makes sure nothing goes unanswered. Commission applies only to new clients who find you through the Daisy marketplace. Your existing clients always pay zero.",
         ctaText: 'Get Listed for Free',
         ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
@@ -572,7 +572,7 @@ const unifiedInboxAngle: Record<
       platformStrengths: {
         headline: 'Everything You Need in One App',
         subHeadline:
-          'No more juggling between scheduling apps, payment tools, and messaging clients. Daisy brings it all together.',
+          'No more moving between a scheduling app, a payment tool and a messaging thread. Daisy holds all of it together.',
         capabilities: [
           { label: 'AI Booking Assistant', description: 'Handles bookings and payments while you work' },
           { label: 'Flexible Scheduling', description: 'Set your own hours across multiple locations' },
@@ -605,10 +605,10 @@ const unifiedInboxAngle: Record<
       },
       titleFraque: 'Frequently Asked Questions',
       fallbackFaqs: [
-        { question: 'What channels are supported?', answer: 'Currently WhatsApp and Instagram DMs, with more channels coming soon. All messages appear in a single view so you never need to check multiple apps.' },
-        { question: 'Can the AI auto-reply when I\'m busy?', answer: 'Yes. The AI monitors your inbox 24/7 and responds instantly to booking requests, service questions, and pricing inquiries while you focus on your current client.' },
-        { question: 'Do I need to check multiple apps?', answer: 'No. Every message from every channel appears in one unified inbox. You check one place and see everything.' },
-        { question: 'Is there a fee or commission?', answer: 'Joining is free. Commission is only charged on new clients who book you through the Daisy marketplace, your existing clients pay zero commission. Premium features available through affordable subscription tiers.' },
+        { question: 'What channels are supported?', answer: 'WhatsApp and Instagram DMs today, with more channels on the way. It all arrives in one view, so there is nothing else to check.' },
+        { question: 'Can the AI auto-reply when I\'m busy?', answer: 'Yes. It watches the inbox 24/7 and answers booking requests, service questions and pricing queries while you stay with whoever is in your chair.' },
+        { question: 'Do I need to check multiple apps?', answer: 'No. Every message from every channel arrives in the same inbox, so there is one place to look.' },
+        { question: 'Is there a fee or commission?', answer: 'Joining is free. Commission applies only to new clients who book you through the Daisy marketplace, and your existing clients pay none. Premium features sit on affordable subscription tiers.' },
       ],
     },
     ar: {
