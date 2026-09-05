@@ -526,15 +526,15 @@ slugs in `comparisonPages.ts` below and are marked `- [-]` (skipped, not done).
       `best-vagaro-alternatives`
 - [x] Beautiful for solos, but team management at $148/mo and no marketplace limit growth.  
       `best-glossgenius-alternatives`
-- [ ] Legacy pricing and dated UX pushing you to look elsewhere? These modern platforms deliver more.  
+- [x] Legacy pricing and dated UX pushing you to look elsewhere? These modern platforms deliver more.  
       `best-mindbody-alternatives`
-- [ ] Premium design at $158+/mo with AI locked behind $295. These alternatives include more for less.  
+- [x] Premium design at $158+/mo with AI locked behind $295. These alternatives include more for less.  
       `best-boulevard-alternatives`
-- [ ] Clean operations at $165+/mo, but where's the AI and customer acquisition?  
+- [x] Clean operations at $165+/mo, but where's the AI and customer acquisition?  
       `best-mangomint-alternatives`
-- [ ] Great for payments, but beauty businesses need purpose-built tools.  
+- [x] Great for payments, but beauty businesses need purpose-built tools.  
       `best-square-appointments-alternatives`
-- [ ] best-zenoti-alternatives  
+- [x] best-zenoti-alternatives  
       `best-zenoti-alternatives`
 - [ ] best-acuity-alternatives  
       `best-acuity-alternatives`

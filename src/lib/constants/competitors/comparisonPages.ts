@@ -1087,8 +1087,8 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     metaDescription: 'Top Mindbody alternatives compared. Modern platforms with better UI, AI features, and transparent pricing.',
     keywords: ['best mindbody alternatives', 'mindbody alternatives', 'mindbody competitors'],
     heroTitle: '7 Best Mindbody Alternatives in 2026',
-    heroSubtitle: 'Legacy pricing and dated UX pushing you to look elsewhere? These modern platforms deliver more.',
-    intro: 'Mindbody dominated wellness software for years, but high prices ($139-699/mo), marketplace commissions, and a dated interface are driving businesses to modern alternatives with AI and transparent pricing.',
+    heroSubtitle: 'Legacy pricing and a dated interface sending you looking? These modern platforms do more.',
+    intro: 'Mindbody dominated wellness software for years. Prices of $139-699/mo, marketplace commissions on top and an interface that has not aged well are now pushing businesses towards alternatives with AI and pricing they can read.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'boulevard', 'glossgenius', 'mangomint'],
     bestFor: {
       'fresha': 'Best for salons wanting a free starting tier',
@@ -1098,7 +1098,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'glossgenius': 'Best for independent professionals wanting modern UX',
       'mangomint': 'Best for highest-rated salon operations',
     },
-    daisyEdge: 'Modern Mindbody alternatives fix the UX and pricing issues, but none combine AI automation, cashback-driven acquisition, and Arabic support in one platform. Daisy provides the modern experience with growth tools built in.',
+    daisyEdge: 'The modern alternatives fix the interface and the pricing. Not one of them puts AI automation, cashback-driven acquisition and Arabic support in the same platform. Daisy gives you the modern experience with the growth tools already in it.',
   },
   {
     slug: 'best-boulevard-alternatives',
@@ -1107,8 +1107,8 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     metaDescription: 'Looking beyond Boulevard? Find platforms with AI, marketplace, and Arabic support at better pricing.',
     keywords: ['best boulevard alternatives', 'boulevard alternatives'],
     heroTitle: '5 Best Boulevard Alternatives in 2026',
-    heroSubtitle: 'Premium design at $158+/mo with AI locked behind $295. These alternatives include more for less.',
-    intro: 'Boulevard is a beautifully designed platform, but premium pricing and AI locked behind the Premier tier push businesses to seek better value. Here are the top alternatives.',
+    heroSubtitle: 'Premium design at $158+/mo, with the AI behind a $295 gate. These alternatives include more for less.',
+    intro: 'Boulevard is beautifully designed. Premium pricing and AI sitting behind the Premier tier are what send businesses looking for better value. Here are the strongest alternatives.',
     alternatives: ['vagaro', 'mangomint', 'glossgenius', 'booksy'],
     bestFor: {
       'vagaro': 'Best for comprehensive features at a lower price point',
@@ -1116,7 +1116,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'glossgenius': 'Best for solo professionals wanting premium simplicity',
       'booksy': 'Best for mobile-first beauty professionals',
     },
-    daisyEdge: 'Boulevard alternatives offer premium salon management, but none include a 24/7 AI receptionist, cashback rewards marketplace, or native Arabic support. Daisy delivers premium quality with growth tools included at every pricing tier.',
+    daisyEdge: 'These alternatives all offer premium salon management. None includes a 24/7 AI receptionist, a cashback rewards marketplace or native Arabic support. Daisy matches the quality and includes the growth tools at every tier.',
   },
   // P4
   {
@@ -1126,8 +1126,8 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     metaDescription: 'Want AI features with Mangomint-quality operations? These alternatives add growth tools to clean salon management.',
     keywords: ['best mangomint alternatives', 'mangomint alternatives'],
     heroTitle: '5 Best Mangomint Alternatives in 2026',
-    heroSubtitle: 'Clean operations at $165+/mo, but where\'s the AI and customer acquisition?',
-    intro: 'Mangomint has the highest Capterra rating (4.9/5), but its premium pricing, no AI, and no marketplace leave room for alternatives that add growth capabilities.',
+    heroSubtitle: 'Clean operations at $165+/mo. So where is the AI, and where are the new customers?',
+    intro: 'Mangomint holds the highest Capterra rating at 4.9/5. Premium pricing, no AI and no marketplace still leave room for alternatives that can actually grow a business.',
     alternatives: ['boulevard', 'vagaro', 'glossgenius', 'booksy'],
     bestFor: {
       'boulevard': 'Best for premium salons wanting enterprise polish',
@@ -1135,7 +1135,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'glossgenius': 'Best for design-conscious solo professionals',
       'booksy': 'Best for affordable mobile-first booking',
     },
-    daisyEdge: 'Mangomint alternatives handle operations beautifully, but none add AI-powered customer acquisition, cashback loyalty, or Arabic support. Daisy brings growth capabilities on top of premium salon management.',
+    daisyEdge: 'These alternatives handle operations beautifully. None of them adds AI-powered acquisition, cashback loyalty or Arabic support. Daisy puts those on top of premium salon management.',
   },
   {
     slug: 'best-square-appointments-alternatives',
@@ -1144,8 +1144,8 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     metaDescription: 'Need more than generic scheduling? These beauty-specific platforms offer AI, marketplace, and salon management.',
     keywords: ['best square appointments alternatives', 'square appointments alternatives'],
     heroTitle: '7 Best Square Appointments Alternatives in 2026',
-    heroSubtitle: 'Great for payments, but beauty businesses need purpose-built tools.',
-    intro: 'Square Appointments is a solid free scheduling tool with great POS, but it\'s not built for beauty businesses. These alternatives offer industry-specific features, AI, and marketplace capabilities.',
+    heroSubtitle: 'Great at payments. A beauty business needs tools built for it.',
+    intro: 'Square Appointments is a solid free scheduling tool attached to a great POS, and it was never built for beauty. The alternatives below bring industry-specific features, AI and a marketplace.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'glossgenius', 'boulevard', 'mangomint'],
     bestFor: {
       'fresha': 'Best for free marketplace-powered booking',
@@ -1155,7 +1155,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'boulevard': 'Best for premium salon experiences',
       'mangomint': 'Best for operations-focused salon management',
     },
-    daisyEdge: 'Beauty-specific alternatives solve what Square lacks for salons, but none include AI that handles calls and bookings 24/7 or a cashback marketplace that acquires new clients. Daisy is built for beauty businesses that want to grow, not just schedule.',
+    daisyEdge: 'The beauty-specific alternatives cover what Square leaves out. None includes AI that takes calls and bookings 24/7, or a cashback marketplace that brings new clients in. Daisy is built for a beauty business that wants to grow rather than only fill a calendar.',
   },
   // P5
   {
@@ -1165,8 +1165,8 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     metaDescription: 'Looking for Zenoti alternatives? Compare the top 7 platforms with better pricing, easier setup, and Arabic support for multi-location businesses.',
     keywords: ['best zenoti alternatives', 'zenoti alternatives', 'zenoti competitors', 'salon software like zenoti'],
     heroTitle: '7 Best Zenoti Alternatives in 2026',
-    heroSubtitle: 'Enterprise pricing starting at $225+/mo per location with annual contracts and complex implementation. These alternatives deliver AI without the overhead.',
-    intro: 'Zenoti is a powerful enterprise platform with 6 AI agents, but $225+/month per location, mandatory annual contracts, and complex implementation timelines push many businesses to seek alternatives. Despite GCC offices, there\'s still no Arabic UI. Here are the top alternatives compared by AI capabilities, pricing, and ease of deployment.',
+    heroSubtitle: 'Enterprise pricing from $225+/mo per location, on an annual contract, after a complicated implementation. These alternatives deliver AI without the overhead.',
+    intro: 'Zenoti is a powerful enterprise platform running 6 AI agents. At $225+/month per location, with mandatory annual contracts and a long implementation, plenty of businesses go looking elsewhere. It has GCC offices and still no Arabic UI. The alternatives below are compared on AI, pricing and how quickly you can deploy them.',
     alternatives: ['boulevard', 'mangomint', 'mindbody', 'fresha', 'vagaro', 'phorest'],
     bestFor: {
       'boulevard': 'Best for premium multi-location salons',
@@ -1176,7 +1176,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'vagaro': 'Best for comprehensive features at mid-market pricing',
       'phorest': 'Best for UK/Ireland salons with strong CRM needs',
     },
-    daisyEdge: 'Enterprise alternatives simplify Zenoti\'s complexity, but none offer a fully integrated AI receptionist, cashback acquisition engine, and native Arabic UI without per-location surcharges. Daisy delivers enterprise AI without enterprise overhead.',
+    daisyEdge: 'The enterprise alternatives cut Zenoti\'s complexity down. None offers a fully integrated AI receptionist, a cashback acquisition engine and a native Arabic UI with no per-location surcharge. Daisy delivers the enterprise AI without the enterprise overhead.',
   },
   {
     slug: 'best-acuity-alternatives',
