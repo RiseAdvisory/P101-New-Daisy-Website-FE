@@ -636,9 +636,9 @@ own prose only. The cross-links are references to section 1, not separate conten
       `salon-analytics-reporting.ts` → `salon-analytics-reporting`
 - [x] Salon Client Retention: Strategies That Work  
       `salon-client-retention.ts` → `salon-client-retention`
-- [ ] The Complete Guide to Salon Management Software  
+- [x] The Complete Guide to Salon Management Software  
       `salon-management-software.ts` → `salon-management-software`
-- [ ] Salon Marketing Strategies That Drive Growth  
+- [x] Salon Marketing Strategies That Drive Growth  
       `salon-marketing-strategies.ts` → `salon-marketing-strategies`
 - [ ] Salon Payment Solutions: The Complete Guide  
       `salon-payment-solutions.ts` → `salon-payment-solutions`
