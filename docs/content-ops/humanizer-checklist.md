@@ -723,15 +723,15 @@ batch that ticked these boxes.
       `analytics`
 - [x] business-growth  
       `business-growth`
-- [ ] freelance-business  
+- [x] freelance-business  
       `freelance-business`
-- [ ] marketing-brand  
+- [x] marketing-brand  
       `marketing-brand`
-- [ ] payments-income  
+- [x] payments-income  
       `payments-income`
-- [ ] schedule-time  
+- [x] schedule-time  
       `schedule-time`
-- [ ] client-relationships  
+- [x] client-relationships  
       `client-relationships`
 
 ---
