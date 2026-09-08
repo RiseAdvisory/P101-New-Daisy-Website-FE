@@ -1195,7 +1195,7 @@ const performanceReviewsArticle: LocalBlogPost = {
 <li>Upselling and add-on service rate</li>
 <li>Revenue growth trend (month-over-month, quarter-over-quarter)</li>
 </ul>
-<p><strong>Evidence sources:</strong> The Daisy&rsquo;s <a href="/en/features/business/analytics-reporting">analytics dashboard</a>, financial reports, POS data.</p>
+<p><strong>Evidence sources:</strong> The Daisy&rsquo;s <a href="/en/features/business/analytics-reports">analytics dashboard</a>, financial reports, POS data.</p>
 
 <h3>4. Team Contribution (Weight: 10%)</h3>
 <p>Evaluates how the professional contributes to team dynamics and salon culture.</p>
@@ -2487,7 +2487,7 @@ const performanceReviewsArticleAr: LocalBlogPost = {
 <li>معدل البيع الإضافي والخدمات المضافة</li>
 <li>اتجاه نمو الإيرادات (شهر بعد شهر، ربع بعد ربع)</li>
 </ul>
-<p><strong>مصادر الأدلة:</strong> <a href="/ar/features/business/analytics-reporting">لوحة التحليلات من ديزي</a>، التقارير المالية، بيانات نقاط البيع.</p>
+<p><strong>مصادر الأدلة:</strong> <a href="/ar/features/business/analytics-reports">لوحة التحليلات من ديزي</a>، التقارير المالية، بيانات نقاط البيع.</p>
 
 <h3>4. المساهمة في الفريق (الوزن: 10%)</h3>
 <p>تقيّم كيف يساهم المحترف في ديناميكيات الفريق وثقافة الصالون.</p>

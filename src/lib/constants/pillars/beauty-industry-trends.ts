@@ -498,7 +498,7 @@ export const beautyIndustryTrends: PillarPageData = {
 </ul>
 
 <h3>4. White-Label and Brand Control</h3>
-<p>Salon owners increasingly want technology that operates under their brand, not the platform's. White-label booking pages, branded client communication, and custom-branded apps let businesses maintain their identity while leveraging enterprise-grade technology. <a href="/en/features/business/brand-customization">Daisy's white-label capabilities</a> exemplify this trend, giving every salon owner full brand control.</p>
+<p>Salon owners increasingly want technology that operates under their brand, not the platform's. White-label booking pages, branded client communication, and custom-branded apps let businesses maintain their identity while leveraging enterprise-grade technology. <a href="/en/solutions/brand-control/business">Daisy's white-label capabilities</a> exemplify this trend, giving every salon owner full brand control.</p>
 
 <h3>5. Multi-Channel Revenue</h3>
 <p>The most profitable beauty businesses in 2026 operate across multiple revenue channels simultaneously:</p>
