@@ -90,7 +90,7 @@ const salonKpisToTrackArticle: LocalBlogPost = {
 <p><strong>Formula:</strong> Average Revenue Per Visit &times; Average Visits Per Year &times; Average Client Lifespan (in years)</p>
 <p><strong>Example:</strong> If your ARPC is $70, clients visit an average of 8 times per year, and the average client relationship lasts 3 years, your CLV is $70 &times; 8 &times; 3 = $1,680.</p>
 <p><strong>Benchmark:</strong> CLV benchmarks depend heavily on your service mix and market. For a mid-range salon, $800&ndash;$2,000 is typical. For premium salons with strong retention and high ticket services, $3,000&ndash;$8,000+ is achievable. The key insight is knowing your CLV so you can make informed decisions about how much to spend on acquisition and retention.</p>
-<p><strong>What to do if it is declining:</strong> CLV drops when visit frequency decreases, average spend drops, or client lifespan shortens. Diagnose which component is driving the decline. Cashback and loyalty programmes (like those built into <a href="/en/features/business/salon-management-software">The Daisy</a>) directly improve visit frequency and lifespan. Service bundling and premium add-ons improve average spend.</p>
+<p><strong>What to do if it is declining:</strong> CLV drops when visit frequency decreases, average spend drops, or client lifespan shortens. Diagnose which component is driving the decline. Cashback and loyalty programmes (like those built into <a href="/en/salon-management-software">The Daisy</a>) directly improve visit frequency and lifespan. Service bundling and premium add-ons improve average spend.</p>
 
 <h2>KPI 7: Staff Productivity</h2>
 <p>Staff productivity measures the revenue generated per staff member per unit of time. It reveals both individual performance and team efficiency, and it is essential for fair compensation, scheduling, and growth planning.</p>
@@ -279,7 +279,7 @@ const salonClientLifetimeValueArticle: LocalBlogPost = {
 <li>No response to rebooking prompts</li>
 <li>Negative feedback or unresolved complaints</li>
 </ul>
-<p><a href="/en/features/business/salon-management-software">Intelligent salon platforms</a> flag these signals automatically, enabling intervention while the client is still saveable.</p>
+<p><a href="/en/salon-management-software">Intelligent salon platforms</a> flag these signals automatically, enabling intervention while the client is still saveable.</p>
 
 <h2>Tracking CLV Over Time</h2>
 <p>CLV is not a number you calculate once. It should be tracked monthly and reviewed quarterly to identify trends.</p>
@@ -680,7 +680,7 @@ const dataDrivenSalonManagementArticle: LocalBlogPost = {
 </ul>
 
 <h2>When to Upgrade to a Salon Analytics Platform</h2>
-<p>Manual tracking is a good starting point, but it has limits. You should consider upgrading to a dedicated <a href="/en/features/business/salon-management-software">salon management platform</a> with built-in analytics when:</p>
+<p>Manual tracking is a good starting point, but it has limits. You should consider upgrading to a dedicated <a href="/en/salon-management-software">salon management platform</a> with built-in analytics when:</p>
 <ul>
 <li>Your daily spreadsheet entry takes more than 5 minutes or you are skipping days.</li>
 <li>You want metrics that are difficult to calculate manually (CLV, revenue by channel, staff-level analytics).</li>
@@ -821,7 +821,7 @@ const salonKpisToTrackArticleAr: LocalBlogPost = {
 <p><strong>الصيغة:</strong> متوسط الإيرادات لكل زيارة × متوسط الزيارات في السنة × متوسط عمر العميل (بالسنوات)</p>
 <p><strong>مثال:</strong> إذا كانت تكلفة ARPC الخاصة بك تبلغ 70 دولارًا أمريكيًا (أو ما يعادله بالعملة المحلية)، ويزور العملاء 8 مرات في المتوسط في السنة، ويستمر متوسط العلاقة مع العميل 3 سنوات، فإن القيمة CLV الخاصة بك هي 70 دولارًا أمريكيًا × 8 × 3 = 1,680 دولارًا أمريكيًا.</p>
 <p><strong>المعيار:</strong> تعتمد معايير CLV بشكل كبير على مزيج الخدمة والسوق. بالنسبة للصالون متوسط ​​المدى، فإن السعر النموذجي يتراوح بين 800 إلى 2000 دولار. بالنسبة للصالونات المتميزة التي تتمتع باحتفاظ قوي وخدمات تذاكر عالية، يمكن تحقيق ما يزيد عن 3000 دولار - 8000 دولار. تتمثل الفكرة الأساسية في معرفة CLV الخاص بك حتى تتمكن من اتخاذ قرارات مستنيرة بشأن المبلغ الذي يجب إنفاقه على الاكتساب والاحتفاظ.</p>
-<p><strong>ما يجب فعله إذا كان في انخفاض:</strong> ينخفض حجم القيمة الدائمة (CLV) عندما ينخفض تكرار الزيارة، أو ينخفض متوسط الإنفاق، أو يقصر عمر العميل. تشخيص العنصر الذي يؤدي إلى الانخفاض. تعمل برامج الكاشباك والولاء (مثل تلك المضمنة في <a href="/ar/features/business/salon-management-software">ديزي</a>) على تحسين تكرار الزيارة وعمرها بشكل مباشر. تعمل حزم الخدمات والإضافات المميزة على تحسين متوسط الإنفاق.</p>
+<p><strong>ما يجب فعله إذا كان في انخفاض:</strong> ينخفض حجم القيمة الدائمة (CLV) عندما ينخفض تكرار الزيارة، أو ينخفض متوسط الإنفاق، أو يقصر عمر العميل. تشخيص العنصر الذي يؤدي إلى الانخفاض. تعمل برامج الكاشباك والولاء (مثل تلك المضمنة في <a href="/ar/salon-management-software">ديزي</a>) على تحسين تكرار الزيارة وعمرها بشكل مباشر. تعمل حزم الخدمات والإضافات المميزة على تحسين متوسط الإنفاق.</p>
 
 <h2>مؤشر الأداء الرئيسي 7: إنتاجية الموظفين</h2>
 <p>تقيس إنتاجية الموظفين الإيرادات الناتجة لكل موظف لكل وحدة زمنية. إنه يكشف عن الأداء الفردي وكفاءة الفريق، وهو ضروري للتعويض العادل، والجدولة، وتخطيط النمو.</p>
@@ -957,7 +957,7 @@ const salonClientLifetimeValueArticleAr: LocalBlogPost = {
 <li>لا توجد استجابة لتذكيرات إعادة الحجز</li>
 <li>ملاحظات سلبية أو شكاوى لم يتم حلها</li>
 </ul>
-<p>تضع <a href="/ar/features/business/salon-management-software">منصات الصالون الذكية</a> علامة على هذه الإشارات تلقائيًا، مما يتيح التدخل بينما لا يزال العميل قابلاً للحفاظ عليه.</p>
+<p>تضع <a href="/ar/salon-management-software">منصات الصالون الذكية</a> علامة على هذه الإشارات تلقائيًا، مما يتيح التدخل بينما لا يزال العميل قابلاً للحفاظ عليه.</p>
 
 <h2>تتبع CLV بمرور الوقت</h2>
 <p>CLV ليس رقمًا تحسبه مرة واحدة، وينبغي تتبعه شهريًا ومراجعته كل ثلاثة أشهر لتحديد الاتجاهات.</p>
@@ -1249,7 +1249,7 @@ const dataDrivenSalonManagementArticleAr: LocalBlogPost = {
 </ul>
 
 <h2>متى يجب الترقية إلى منصة تحليلات الصالون</h2>
-<p> يعد التتبع اليدوي نقطة بداية جيدة، ولكن له حدود. يجب أن تفكر في الترقية إلى <a href="/ar/features/business/salon-management-software">منصة إدارة الصالون</a> المخصصة مع التحليلات المضمنة عندما:</p>
+<p> يعد التتبع اليدوي نقطة بداية جيدة، ولكن له حدود. يجب أن تفكر في الترقية إلى <a href="/ar/salon-management-software">منصة إدارة الصالون</a> المخصصة مع التحليلات المضمنة عندما:</p>
 <ul>
 <li>يستغرق إدخال جدول البيانات اليومي أكثر من 5 دقائق أو أنك تتخطى أيامًا.</li>
 <li>تريد مقاييس يصعب حسابها يدويًا (CLV، الإيرادات حسب القناة، التحليلات على مستوى الموظفين).</li>

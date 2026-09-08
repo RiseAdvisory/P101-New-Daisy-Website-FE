@@ -78,7 +78,7 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
 <li><strong>Business profile:</strong> Add your salon name, logo, location details, operating hours, and contact information.</li>
 <li><strong>Service menu:</strong> Recreate your services with accurate names, descriptions, durations, and pricing. This is also an opportunity to clean up - remove services you no longer offer and update descriptions.</li>
 <li><strong>Staff profiles:</strong> Add each team member with their schedule, service permissions, and commission structure.</li>
-<li><strong>Import client data:</strong> Upload your exported client database. Platforms like <a href="/en/features/business/salon-management-software">The Daisy</a> offer guided import tools that map your CSV columns to the correct fields automatically.</li>
+<li><strong>Import client data:</strong> Upload your exported client database. Platforms like <a href="/en/salon-management-software">The Daisy</a> offer guided import tools that map your CSV columns to the correct fields automatically.</li>
 <li><strong>Payment setup:</strong> Connect your payment processor. If switching processors, allow 2-3 business days for verification.</li>
 </ul>
 
@@ -290,7 +290,7 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>The First Month Sets the Tone for Everything After</h2>
 <p>Your first 30 days on a new salon platform determine whether your team embraces the change or quietly reverts to old habits. The good news: with a clear understanding of what each week looks like, you can set realistic expectations, celebrate real progress, and avoid the frustration that comes from not knowing what is normal.</p>
-<p>This guide walks you through the first month after going live on a new salon management platform. It is based on the actual onboarding experience of salons that have migrated to modern platforms like <a href="/en/features/business/salon-management-software">The Daisy</a>, and it covers the honest reality - including the challenges you should expect alongside the wins.</p>
+<p>This guide walks you through the first month after going live on a new salon management platform. It is based on the actual onboarding experience of salons that have migrated to modern platforms like <a href="/en/salon-management-software">The Daisy</a>, and it covers the honest reality - including the challenges you should expect alongside the wins.</p>
 
 <h2>Week 1: The Learning Curve Is Real (But Short)</h2>
 <p>The first week is the steepest part of the learning curve. Everything is new, and tasks that took seconds on your old system might take a minute or two as you find the right buttons. This is completely normal.</p>
@@ -356,7 +356,7 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
 
 <h3>Features to Activate</h3>
 <ul>
-<li><strong>Cashback programme:</strong> If you have not already, launch your client cashback incentives. Platforms like <a href="/en/features/business/salon-management-software">The Daisy</a> make this one-click activation.</li>
+<li><strong>Cashback programme:</strong> If you have not already, launch your client cashback incentives. Platforms like <a href="/en/salon-management-software">The Daisy</a> make this one-click activation.</li>
 <li><strong>Automated rebooking prompts:</strong> Set up messages that remind clients to rebook when their usual interval has passed.</li>
 <li><strong>Client segmentation:</strong> Start grouping clients by visit frequency, service preferences, or spend level. This enables targeted marketing that generic blasts cannot match.</li>
 <li><strong>Staff performance tracking:</strong> Review individual metrics like booking rate, average ticket value, and client retention. Share positive results with the team.</li>
@@ -507,7 +507,7 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
 <p>Salon software ROI comes from four distinct sources. Most owners only consider the first one and underestimate the total impact.</p>
 
 <h3>Pillar 1: Revenue Gains</h3>
-<p>Modern platforms like <a href="/en/features/business/salon-management-software">The Daisy</a> include features specifically designed to increase revenue. Here are the revenue levers and how to estimate their impact:</p>
+<p>Modern platforms like <a href="/en/salon-management-software">The Daisy</a> include features specifically designed to increase revenue. Here are the revenue levers and how to estimate their impact:</p>
 
 <h4>Recovered Missed Bookings</h4>
 <p>Salons miss 30-40% of inbound booking calls because staff are busy with clients. An AI receptionist that handles inquiries 24/7 across phone, WhatsApp, Instagram, and web chat captures bookings that would otherwise go to a competitor.</p>
@@ -769,7 +769,7 @@ const salonSwitchingChecklistArticleAr: LocalBlogPost = {
 <li><strong>ملف العمل:</strong> أضف اسم صالونك والشعار وتفاصيل الموقع وساعات العمل ومعلومات الاتصال.</li>
 <li><strong>قائمة الخدمات:</strong> أعد إنشاء خدماتك بأسماء ووصف ومدد وتسعير دقيق. هذه أيضًا فرصة للتنظيف - احذف الخدمات التي لم تعد تقدمها وحدّث الأوصاف.</li>
 <li><strong>ملفات الموظفين:</strong> أضف كل عضو فريق مع جدوله وصلاحيات الخدمة وهيكل العمولة.</li>
-<li><strong>استيراد بيانات العملاء:</strong> حمّل قاعدة بيانات العملاء المُصدّرة. منصات مثل <a href="/ar/features/business/salon-management-software">ديزي</a> توفر أدوات استيراد موجهة تربط أعمدة CSV بالحقول الصحيحة تلقائيًا.</li>
+<li><strong>استيراد بيانات العملاء:</strong> حمّل قاعدة بيانات العملاء المُصدّرة. منصات مثل <a href="/ar/salon-management-software">ديزي</a> توفر أدوات استيراد موجهة تربط أعمدة CSV بالحقول الصحيحة تلقائيًا.</li>
 <li><strong>إعداد الدفع:</strong> اربط معالج الدفع الخاص بك. إذا كنت تغير المعالجات، اسمح بـ 2-3 أيام عمل للتحقق.</li>
 </ul>
 
@@ -979,7 +979,7 @@ const firstMonthNewPlatformArticleAr: LocalBlogPost = {
     aboutPosts: `
 <h2>الشهر الأول يحدد نغمة كل ما بعده</h2>
 <p>أول 30 يومًا لك على منصة صالون جديدة تحدد ما إذا كان فريقك سيتبنى التغيير أم سيعود بهدوء إلى العادات القديمة. الخبر الجيد: مع فهم واضح لما يبدو عليه كل أسبوع، يمكنك وضع توقعات واقعية والاحتفال بالتقدم الحقيقي وتجنب الإحباط الناتج عن عدم معرفة ما هو طبيعي.</p>
-<p>يرشدك هذا الدليل خلال الشهر الأول بعد الإطلاق على منصة إدارة صالون جديدة. يستند إلى تجربة التأهيل الفعلية للصالونات التي انتقلت إلى منصات حديثة مثل <a href="/ar/features/business/salon-management-software">ديزي</a>، ويغطي الواقع بصدق - بما في ذلك التحديات التي يجب توقعها إلى جانب المكاسب.</p>
+<p>يرشدك هذا الدليل خلال الشهر الأول بعد الإطلاق على منصة إدارة صالون جديدة. يستند إلى تجربة التأهيل الفعلية للصالونات التي انتقلت إلى منصات حديثة مثل <a href="/ar/salon-management-software">ديزي</a>، ويغطي الواقع بصدق - بما في ذلك التحديات التي يجب توقعها إلى جانب المكاسب.</p>
 
 <h2>الأسبوع الأول: منحنى التعلم حقيقي (لكنه قصير)</h2>
 <p>الأسبوع الأول هو الجزء الأكثر حدة في منحنى التعلم. كل شيء جديد، والمهام التي كانت تستغرق ثوانٍ على نظامك القديم قد تستغرق دقيقة أو دقيقتين بينما تجد الأزرار الصحيحة. هذا طبيعي تمامًا.</p>
@@ -1045,7 +1045,7 @@ const firstMonthNewPlatformArticleAr: LocalBlogPost = {
 
 <h3>ميزات للتفعيل</h3>
 <ul>
-<li><strong>برنامج الكاشباك:</strong> إذا لم تكن قد فعلته بالفعل، فأطلق حوافز الكاشباك لعملائك. منصات مثل <a href="/ar/features/business/salon-management-software">ديزي</a> تجعل هذا تفعيلًا بنقرة واحدة.</li>
+<li><strong>برنامج الكاشباك:</strong> إذا لم تكن قد فعلته بالفعل، فأطلق حوافز الكاشباك لعملائك. منصات مثل <a href="/ar/salon-management-software">ديزي</a> تجعل هذا تفعيلًا بنقرة واحدة.</li>
 <li><strong>تذكيرات إعادة الحجز التلقائية:</strong> أعد رسائل تذكّر العملاء بإعادة الحجز عندما تمر فترتهم المعتادة.</li>
 <li><strong>تقسيم العملاء:</strong> ابدأ في تجميع العملاء حسب تكرار الزيارة أو تفضيلات الخدمة أو مستوى الإنفاق. هذا يمكّن التسويق المستهدف الذي لا تستطيع الرسائل العامة مطابقته.</li>
 <li><strong>تتبع أداء الموظفين:</strong> راجع المقاييس الفردية مثل معدل الحجز ومتوسط قيمة الفاتورة واحتفاظ العملاء. شارك النتائج الإيجابية مع الفريق.</li>
@@ -1194,7 +1194,7 @@ const calculateRoiSwitchingArticleAr: LocalBlogPost = {
 <p>عائد استثمار برنامج الصالون يأتي من أربعة مصادر مختلفة. معظم المالكين يأخذون الأول فقط بعين الاعتبار ويقللون من التأثير الإجمالي.</p>
 
 <h3>الركيزة الأولى: مكاسب الإيرادات</h3>
-<p>المنصات الحديثة مثل <a href="/ar/features/business/salon-management-software">ديزي</a> تتضمن ميزات مصممة خصيصًا لزيادة الإيرادات. إليك رافعات الإيرادات وكيفية تقدير تأثيرها:</p>
+<p>المنصات الحديثة مثل <a href="/ar/salon-management-software">ديزي</a> تتضمن ميزات مصممة خصيصًا لزيادة الإيرادات. إليك رافعات الإيرادات وكيفية تقدير تأثيرها:</p>
 
 <h4>الحجوزات الفائتة المستردة</h4>
 <p>الصالونات تفوّت 30-40% من مكالمات الحجز الواردة لأن الموظفين مشغولون مع العملاء. موظف استقبال ذكي يتعامل مع الاستفسارات على مدار الساعة عبر الهاتف وواتساب وإنستغرام والدردشة يلتقط حجوزات كانت ستذهب لمنافس.</p>

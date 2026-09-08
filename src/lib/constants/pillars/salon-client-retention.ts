@@ -397,7 +397,7 @@ export const salonClientRetention: PillarPageData = {
         },
         {
           title: 'Pricing Plans',
-          url: '/en/pricing',
+          url: '/en/pricing/business',
         },
       ],
     },
@@ -644,7 +644,7 @@ export const salonClientRetention: PillarPageData = {
         },
         {
           title: 'Pricing Plans',
-          url: '/en/pricing',
+          url: '/en/pricing/business',
         },
       ],
     },

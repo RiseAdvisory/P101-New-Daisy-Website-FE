@@ -108,7 +108,7 @@ const deathOfSalonSoftwareArticle: LocalBlogPost = {
 </ul>
 
 <h2>The Platform Ecosystem Model: How The Daisy Embodies This Shift</h2>
-<p><a href="/en/features/business/salon-management-software">The Daisy</a> was built from day one as a platform ecosystem, not retrofitted from legacy salon software. Every feature is designed to work together:</p>
+<p><a href="/en/salon-management-software">The Daisy</a> was built from day one as a platform ecosystem, not retrofitted from legacy salon software. Every feature is designed to work together:</p>
 <ul>
 <li><strong>AI receptionist</strong> handles inquiries and feeds bookings into the smart calendar.</li>
 <li><strong>Smart calendar</strong> optimises scheduling and feeds data to the analytics engine.</li>
@@ -288,7 +288,7 @@ const adoptAiOrLeftBehindArticle: LocalBlogPost = {
 <p>AI adoption does not require a technology overhaul or a six-month implementation project. Here is a realistic starting path:</p>
 <ol>
 <li><strong>Evaluate your current stack:</strong> List every software tool you use and what it costs. Identify the gaps - what you wish it could do but it cannot.</li>
-<li><strong>Explore modern platforms:</strong> Look at platforms like <a href="/en/features/business/salon-management-software">The Daisy</a> that are built on AI from the ground up. Compare capabilities, not just features lists.</li>
+<li><strong>Explore modern platforms:</strong> Look at platforms like <a href="/en/salon-management-software">The Daisy</a> that are built on AI from the ground up. Compare capabilities, not just features lists.</li>
 <li><strong>Calculate the ROI:</strong> Use our <a href="/en/resources/blog/business/calculate-roi-switching-salon-software">ROI calculation framework</a> to estimate the financial impact of switching.</li>
 <li><strong>Start with core AI features:</strong> Activate AI booking first - it delivers the fastest, most visible impact. Then layer in analytics, marketing automation, and growth features over the first 30-60 days.</li>
 <li><strong>Measure and expand:</strong> Track results weekly. As you see improvements, activate additional AI capabilities and let the compounding effect build.</li>
@@ -420,7 +420,7 @@ const operationsToGrowthMindsetArticle: LocalBlogPost = {
 <p>Many salon owners identify personally with every aspect of their business. "Nobody can do it like I do" is both a source of pride and a growth ceiling. When the owner is the best stylist, the best receptionist, and the best manager, delegating feels like accepting lower quality. Growth requires accepting that 80% done by a capable system or team member is better than 100% done by you - because it frees you to focus on the 20% of activities that only you can do.</p>
 
 <h3>Inadequate Technology</h3>
-<p>If your technology requires manual intervention for every booking, every reminder, and every report, you have no choice but to be operationally involved. Traditional salon software was designed for the operator era - it helps you manage, not lead. Modern platforms like <a href="/en/features/business/salon-management-software">The Daisy</a> are designed for the growth era - they automate operations so you can focus on strategy.</p>
+<p>If your technology requires manual intervention for every booking, every reminder, and every report, you have no choice but to be operationally involved. Traditional salon software was designed for the operator era - it helps you manage, not lead. Modern platforms like <a href="/en/salon-management-software">The Daisy</a> are designed for the growth era - they automate operations so you can focus on strategy.</p>
 
 <h3>Fear of Letting Go</h3>
 <p>Releasing control is uncomfortable. What if the AI miscommunicates with a client? What if a staff member makes a bad scheduling decision? What if something goes wrong when you are not watching? These fears are natural but disproportionate. The cost of occasional imperfection by a system or team member is far less than the cost of the owner being permanently consumed by operations.</p>
@@ -644,7 +644,7 @@ const fiveAppsHowToFixArticle: LocalBlogPost = {
 <p>The solution is not adding another tool. It is replacing your entire stack with a single platform that handles everything natively.</p>
 
 <h3>What a Consolidated Platform Provides</h3>
-<p>A platform ecosystem like <a href="/en/features/business/salon-management-software">The Daisy</a> replaces your fragmented stack with:</p>
+<p>A platform ecosystem like <a href="/en/salon-management-software">The Daisy</a> replaces your fragmented stack with:</p>
 <ul>
 <li><strong>Unified booking:</strong> <a href="/en/features/business/booking-management">Smart scheduling</a> with AI receptionist, online booking, multi-channel intake (WhatsApp, Instagram, phone, web), and calendar optimisation. Replaces your booking system.</li>
 <li><strong>Integrated payments:</strong> <a href="/en/features/business/payment-processing">Full payment processing</a>, POS, tips, gift cards, invoicing, and cashback management in one system. Replaces your payment processor.</li>
@@ -846,7 +846,7 @@ const deathOfSalonSoftwareArticleAr: LocalBlogPost = {
 </ul>
 
 <h2>نموذج منظومة المنصة: كيف تجسّد ديزي هذا التحول</h2>
-<p>بُنيت <a href="/ar/features/business/salon-management-software">ديزي</a> من اليوم الأول كمنظومة منصة، وليست مُعاد تجهيزها من برامج صالونات قديمة. كل ميزة مصممة للعمل معًا:</p>
+<p>بُنيت <a href="/ar/salon-management-software">ديزي</a> من اليوم الأول كمنظومة منصة، وليست مُعاد تجهيزها من برامج صالونات قديمة. كل ميزة مصممة للعمل معًا:</p>
 <ul>
 <li><strong>موظف الاستقبال الذكي</strong> يتعامل مع الاستفسارات ويغذي الحجوزات في التقويم الذكي.</li>
 <li><strong>التقويم الذكي</strong> يحسّن الجدولة ويغذي البيانات لمحرك التحليلات.</li>
@@ -978,7 +978,7 @@ const adoptAiOrLeftBehindArticleAr: LocalBlogPost = {
 <p> لا يتطلب اعتماد الذكاء الاصطناعي إصلاحًا تكنولوجيًا أو مشروع تنفيذ مدته ستة أشهر. إليك مسار بداية واقعي:</p>
 <ol>
 <li><strong>قم بتقييم مجموعتك الحالية:</strong> قم بإدراج كل أداة برمجية تستخدمها وتكاليفها. حدد الفجوات - ما الذي تتمنى أن يفعله لكنه لا يستطيع.</li>
-<li><strong>استكشف المنصات الحديثة:</strong> انظر إلى منصات مثل <a href="/ar/features/business/salon-management-software">ديزي</a> المبنية على الذكاء الاصطناعي من الألف إلى الياء. قارن الإمكانيات، وليس فقط قوائم الميزات.</li>
+<li><strong>استكشف المنصات الحديثة:</strong> انظر إلى منصات مثل <a href="/ar/salon-management-software">ديزي</a> المبنية على الذكاء الاصطناعي من الألف إلى الياء. قارن الإمكانيات، وليس فقط قوائم الميزات.</li>
 <li><strong>احسب عائد الاستثمار:</strong> استخدم <a href="/ar/resources/blog/business/calculate-roi-switching-salon-software">إطار عمل حساب عائد الاستثمار</a> لتقدير التأثير المالي للتبديل.</li>
 <li><strong>ابدأ بميزات الذكاء الاصطناعي الأساسية:</strong> قم بتنشيط حجز الذكاء الاصطناعي أولاً - فهو يوفر التأثير الأسرع والأكثر وضوحًا. ثم أضف التحليلات وأتمتة التسويق وميزات النمو خلال أول 30 إلى 60 يومًا.</li>
 <li><strong>القياس والتوسيع:</strong> تتبع النتائج أسبوعيًا. عندما ترى التحسينات، قم بتنشيط إمكانات الذكاء الاصطناعي الإضافية ودع التأثير المركب يتراكم.</li>
@@ -1061,7 +1061,7 @@ const operationsToGrowthMindsetArticleAr: LocalBlogPost = {
 <p> يتعرف العديد من أصحاب الصالونات شخصيًا على كل جانب من جوانب أعمالهم. "لا أحد يستطيع أن يفعل ذلك كما أفعل" هو مصدر فخر وسقف للنمو. عندما يكون المالك هو أفضل مصمم أزياء، وأفضل موظف استقبال، وأفضل مدير، فإن التفويض يبدو وكأنه قبول جودة أقل. يتطلب النمو قبول أن 80% من إنجاز نظام أو عضو فريق قادر هو أفضل من 100% من إنجازك - لأنه يحررك من التركيز على 20% من الأنشطة التي لا يستطيع أحد غيرك القيام بها.</p>
 
 <h3>تقنية غير كافية</h3>
-<p>إذا كانت التكنولوجيا الخاصة بك تتطلب تدخلاً يدويًا لكل حجز، وكل تذكير، وكل تقرير، فليس لديك خيار سوى المشاركة التشغيلية. تم تصميم برنامج الصالون التقليدي لعصر المشغلين - فهو يساعدك على الإدارة وليس القيادة. تم تصميم الأنظمة الأساسية الحديثة مثل <a href="/ar/features/business/salon-management-software">ديزي</a> لعصر النمو - فهي تعمل على أتمتة العمليات حتى تتمكن من التركيز على الإستراتيجية.</p>
+<p>إذا كانت التكنولوجيا الخاصة بك تتطلب تدخلاً يدويًا لكل حجز، وكل تذكير، وكل تقرير، فليس لديك خيار سوى المشاركة التشغيلية. تم تصميم برنامج الصالون التقليدي لعصر المشغلين - فهو يساعدك على الإدارة وليس القيادة. تم تصميم الأنظمة الأساسية الحديثة مثل <a href="/ar/salon-management-software">ديزي</a> لعصر النمو - فهي تعمل على أتمتة العمليات حتى تتمكن من التركيز على الإستراتيجية.</p>
 
 <h3>الخوف من الترك</h3>
 <p> تحرير التحكم غير مريح. ماذا لو أخطأ الذكاء الاصطناعي في التواصل مع العميل؟ ماذا لو اتخذ أحد الموظفين قرارًا سيئًا بشأن الجدولة؟ ماذا لو حدث خطأ ما عندما لا تشاهد؟ وهذه المخاوف طبيعية ولكنها غير متناسبة. إن تكلفة الخلل العرضي من قبل النظام أو أحد أعضاء الفريق أقل بكثير من تكلفة المالك الذي تستهلكه العمليات بشكل دائم.</p>
@@ -1237,7 +1237,7 @@ const fiveAppsHowToFixArticleAr: LocalBlogPost = {
 <p> الحل ليس إضافة أداة أخرى. إنه يستبدل مجموعتك بأكملها بمنصة واحدة تتعامل مع كل شيء محليًا.</p>
 
 <h3>ما توفره المنصة الموحدة</h3>
-<p>نظام أساسي مثل <a href="/ar/features/business/salon-management-software">ديزي</a> يستبدل مجموعتك المجزأة بـ:</p>
+<p>نظام أساسي مثل <a href="/ar/salon-management-software">ديزي</a> يستبدل مجموعتك المجزأة بـ:</p>
 <ul>
 <li><strong>الحجز الموحد:</strong> <a href="/ar/features/business/booking-management">جدولة ذكية</a> مع موظف استقبال يعمل بالذكاء الاصطناعي، والحجز عبر الإنترنت، واستقبال متعدد القنوات (واتساب، وإنستغرام، والهاتف، والويب)، وتحسين التقويم. يحل محل نظام الحجز الخاص بك.</li>
 <li><strong>المدفوعات المتكاملة:</strong> <a href="/ar/features/business/payment-processing">معالجة الدفع الكامل</a>، نقاط البيع، الإكراميات، بطاقات الهدايا، الفواتير، وإدارة الكاشباك في نظام واحد. يحل محل معالج الدفع الخاص بك.</li>

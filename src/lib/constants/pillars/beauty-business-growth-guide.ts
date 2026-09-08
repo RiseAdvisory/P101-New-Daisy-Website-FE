@@ -613,7 +613,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
   <li><strong>Marketing efficiency ratio:</strong> Revenue generated per marketing dollar spent. Track by channel to identify your highest-ROI investments.</li>
   <li><strong>Break-even timeline for new locations:</strong> A new salon location should break even within 6-12 months. Longer indicates structural issues with the market, pricing, or operations.</li>
 </ul>
-<p>Modern <a href="/en/features/business/analytics-reporting">salon analytics platforms</a> calculate most of these metrics automatically, giving you real-time visibility into your financial health without manual spreadsheet work.</p>`,
+<p>Modern <a href="/en/features/business/analytics-reports">salon analytics platforms</a> calculate most of these metrics automatically, giving you real-time visibility into your financial health without manual spreadsheet work.</p>`,
       relatedLinks: [
         {
           title: 'Revenue Growth Strategies for Salons',
@@ -685,7 +685,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 </ul>
 
 <h3>Using Technology for Growth Tracking</h3>
-<p>Manual tracking fails because it depends on consistency during your busiest periods, exactly when you are least likely to update a spreadsheet. Integrated <a href="/en/features/business/analytics-reporting">salon analytics platforms</a> track every metric automatically, alert you when KPIs move outside target ranges, and surface insights you would never discover manually.</p>
+<p>Manual tracking fails because it depends on consistency during your busiest periods, exactly when you are least likely to update a spreadsheet. Integrated <a href="/en/features/business/analytics-reports">salon analytics platforms</a> track every metric automatically, alert you when KPIs move outside target ranges, and surface insights you would never discover manually.</p>
 <p>The best platforms provide weekly automated reports that show your growth dashboard, highlight wins, flag concerns, and suggest specific actions. This turns data from an overwhelming wall of numbers into an actionable growth tool.</p>
 <p>Growth is not accidental. It is the result of clear strategy, disciplined execution, and consistent measurement. Build the systems described in this guide, measure relentlessly, and your beauty business will compound its success, from startup to scale.</p>`,
     },
