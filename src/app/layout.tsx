@@ -12,6 +12,7 @@ import { WebVitals } from '@/components/performance/WebVitals';
 import { ServiceWorkerRegistration } from '@/components/performance/ServiceWorkerRegistration';
 import { DaisyWidgetStyles } from '@/components/supportWidget/DaisyWidgetStyles';
 import { ClarityProvider } from '@/components/clarity/ClarityProvider';
+import { MetaPixelProvider } from '@/components/meta/MetaPixelProvider';
 import { AttributionCapture } from '@/components/attribution/AttributionCapture';
 
 const openSans = Open_Sans({
@@ -132,6 +133,9 @@ export default function RootLayout({
         <SpeedInsights />
         {process.env.NEXT_PUBLIC_CLARITY_ID && (
           <ClarityProvider clarityId={process.env.NEXT_PUBLIC_CLARITY_ID} />
+        )}
+        {process.env.NEXT_PUBLIC_META_PIXEL_ID && (
+          <MetaPixelProvider pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID} />
         )}
         <AttributionCapture />
         <DaisyWidgetStyles />

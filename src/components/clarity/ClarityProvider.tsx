@@ -3,36 +3,19 @@
 import { useEffect, useState } from 'react';
 import Script from 'next/script';
 import { ConsentBanner } from './ConsentBanner';
-
-const EU_COUNTRIES = new Set([
-  'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR',
-  'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL',
-  'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE',
-  // EEA + UK
-  'GB', 'NO', 'IS', 'LI',
-]);
-
-const CONSENT_COOKIE = 'clarity-consent';
-
-function getCookie(name: string): string | null {
-  const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`));
-  return match ? decodeURIComponent(match[1]) : null;
-}
-
-function setCookie(name: string, value: string, days: number) {
-  const expires = new Date(Date.now() + days * 864e5).toUTCString();
-  document.cookie = `${name}=${value}; expires=${expires}; path=/; SameSite=Lax`;
-}
+import {
+  CONSENT_COOKIE,
+  consentRequired,
+  getCookie,
+  setCookie,
+} from '@/lib/consent';
 
 export function ClarityProvider({ clarityId }: { clarityId: string }) {
   const [shouldLoad, setShouldLoad] = useState(false);
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
-    const country = getCookie('geo-country') || '';
-    const isEU = EU_COUNTRIES.has(country.toUpperCase());
-
-    if (!isEU) {
+    if (!consentRequired()) {
       setShouldLoad(true);
       return;
     }

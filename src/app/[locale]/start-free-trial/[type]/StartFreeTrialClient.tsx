@@ -4,6 +4,8 @@ import { ProfileForm } from '@/components/formBusiness/FormBusiness';
 import { PlayMarketButton } from '@/components/buttonApp/PlayMarketButton';
 import { AppStoreButton } from '@/components/buttonApp/AppStoreButton';
 import { StartFreeTrialContent } from '@/lib/constants/pages/startFreeTrialData';
+import { trackConversion } from '@/lib/meta/trackConversion';
+import { getCountry } from '@/lib/consent';
 
 interface StartFreeTrialClientProps {
   data: StartFreeTrialContent;
@@ -63,7 +65,18 @@ export const StartFreeTrialClient = ({
         <ProfileForm
           defaultType={defaultType}
           buttonText={data.form.buttonText}
-          onSuccess={() => setSubmitted(true)}
+          onSuccess={() => {
+            setSubmitted(true);
+            // Primary web conversion. Browser pixel + CAPI share one event ID
+            // so Meta counts it once. Errors are swallowed inside the helper.
+            void trackConversion('Lead', {
+              country: getCountry(),
+              customData: {
+                content_category: defaultType,
+                content_name: `start-free-trial:${defaultType}`,
+              },
+            });
+          }}
         />
       </div>
     </section>
