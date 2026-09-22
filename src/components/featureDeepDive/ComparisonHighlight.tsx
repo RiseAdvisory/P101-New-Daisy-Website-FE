@@ -37,15 +37,15 @@ export function ComparisonHighlight({
           <table className="w-full">
             <thead>
               <tr className="bg-[#F8F5F3]">
-                <th className="px-6 py-4 text-left text-sm font-semibold text-[#172524]">
+                <th className="px-6 py-4 text-start text-sm font-semibold text-[#172524]">
                   {labels.areaLabel}
                 </th>
-                <th className="px-6 py-4 text-left text-sm font-semibold text-primary">
+                <th className="px-6 py-4 text-start text-sm font-semibold text-primary">
                   <span className="flex items-center gap-2">
                     <Check className="h-4 w-4" /> {labels.daisyLabel}
                   </span>
                 </th>
-                <th className="px-6 py-4 text-left text-sm font-semibold text-[#455150]">
+                <th className="px-6 py-4 text-start text-sm font-semibold text-[#455150]">
                   <span className="flex items-center gap-2">
                     <X className="h-4 w-4 text-red-400" /> {labels.typicalLabel}
                   </span>

@@ -95,27 +95,27 @@ export const FeatureComparisonTable: FC<FeatureComparisonTableProps> = ({
               <tr className="border-b border-[#E8E9E9] bg-[#F8F5F3]">
                 <th
                   scope="col"
-                  className="px-6 py-4 text-left text-sm font-semibold text-[#586968] uppercase tracking-wider"
+                  className="px-6 py-4 text-start text-sm font-semibold text-[#586968] uppercase tracking-wider"
                   style={{ width: '35%' }}
                 >
                   Category
                 </th>
                 <th
                   scope="col"
-                  className="px-6 py-4 text-left text-sm font-bold text-primary uppercase tracking-wider"
+                  className="px-6 py-4 text-start text-sm font-bold text-primary uppercase tracking-wider"
                 >
                   Daisy
                 </th>
                 <th
                   scope="col"
-                  className="px-6 py-4 text-left text-sm font-semibold text-[#586968] uppercase tracking-wider"
+                  className="px-6 py-4 text-start text-sm font-semibold text-[#586968] uppercase tracking-wider"
                 >
                   {competitorName}
                 </th>
                 {secondCompetitor && (
                   <th
                     scope="col"
-                    className="px-6 py-4 text-left text-sm font-semibold text-[#586968] uppercase tracking-wider"
+                    className="px-6 py-4 text-start text-sm font-semibold text-[#586968] uppercase tracking-wider"
                   >
                     {secondCompetitor.name}
                   </th>
