@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
 import { useMyContext } from '@/app/MyContext';
 import { testimonialsListByUserType } from '@/lib/constants/resources/resourcesData';
+import { getInitials } from '@/helpers/getInitials';
 
 type Testimonial = {
   attributes: {
@@ -65,13 +66,7 @@ export const TestimonialsCustomerList = ({
     const infoUser = testimonial.attributes.listTestimonials;
     // These testimonials are anonymised (first name + initial), so there is no
     // portrait to show. Derive initials from the author name instead.
-    const initials = String(infoUser.author ?? '')
-      .split(/\s+/)
-      .filter(Boolean)
-      .slice(0, 2)
-      .map((word: string) => word[0])
-      .join('')
-      .toUpperCase();
+    const initials = getInitials(infoUser.author);
 
     return (
       <li key={index} className="bg-white h-fit p-6 rounded-lg shadow">
@@ -82,6 +77,11 @@ export const TestimonialsCustomerList = ({
           {infoUser.description}
         </p>
         <div className="flex items-center">
+          {/*
+            aria-hidden: the avatar is decorative. The author's full name sits
+            directly beside it in text, so announcing the initials as well
+            would just repeat the same information to screen readers.
+          */}
           <div
             aria-hidden="true"
             className="mr-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-semibold text-white ltr:font-montserrat rtl:mr-0 rtl:ml-4"
