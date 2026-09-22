@@ -25,23 +25,27 @@ export const CarouselCompany = ({ data }: { data: any }) => {
     >
       <CarouselContent>
         {data &&
-          data.map((item: any, index: number) => (
-            <CarouselItem
-              key={index}
-              className="basis-1/3 md:basis-1/6 items-center flex justify-center "
-            >
-              <div className="border border-[#E8E9E9] rounded-[16px]  w-[90px] h-[90px] md:w-[120px] md:h-[120px] overflow-hidden">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  className="h-full w-full"
-                  width={100}
-                  height={100}
-                  loading="eager"
-                />
-              </div>
-            </CarouselItem>
-          ))}
+          data
+            // Vendors can come back from the API with image: null, which makes
+            // next/image throw and takes the whole section down. Skip those.
+            .filter((item: any) => Boolean(item?.image))
+            .map((item: any, index: number) => (
+              <CarouselItem
+                key={index}
+                className="basis-1/3 md:basis-1/6 items-center flex justify-center "
+              >
+                <div className="border border-[#E8E9E9] rounded-[16px]  w-[90px] h-[90px] md:w-[120px] md:h-[120px] overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    className="h-full w-full"
+                    width={100}
+                    height={100}
+                    loading="eager"
+                  />
+                </div>
+              </CarouselItem>
+            ))}
       </CarouselContent>
     </Carousel>
   );
