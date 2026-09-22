@@ -622,6 +622,217 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 };
 
 // ---------------------------------------------------------------------------
+// Article 4: What WhatsApp Actually Costs a Salon in 2026
+// Type: Cost Explainer | User: Business | Category: Multi-Channel
+// Parent pillar: /salon-marketing-strategies
+// ---------------------------------------------------------------------------
+const whatsappPricingSalonCostsArticle: LocalBlogPost = {
+  id: 1217,
+  attributes: {
+    title: 'What WhatsApp Actually Costs a Salon in 2026: Per-Message Pricing Explained',
+    slug: 'whatsapp-business-pricing-salon-costs',
+    description:
+      'Meta bills WhatsApp Business messages one at a time, and on 1 October 2026 service messages stop being free while marketing rates rise in the UAE and Saudi Arabia. This guide breaks down every rate that applies to a salon, works through a real monthly bill, and shows which messages are worth paying for.',
+    aboutPosts: `
+<h2>What You Actually Pay For</h2>
+<p>On the WhatsApp Business Platform, Meta charges you per message delivered, and only for template messages. There are four categories. <strong>Marketing</strong> templates (promotions, offers, rebooking nudges) are charged every time. <strong>Utility</strong> templates (booking confirmations, appointment reminders, payment receipts) are charged when they land outside an open customer service window. <strong>Authentication</strong> templates (one-time passcodes) are charged. <strong>Service</strong> messages, meaning your ordinary replies to a client inside the 24-hour window their message opened, were free from November 2024 - and from 1 October 2026 they are billable too, with the first 1,000 per month free.</p>
+<p>Rates depend on the country code of the person receiving the message, not where your salon is. A UAE salon messaging a client on a Saudi number pays the Saudi rate.</p>
+<p>The practical consequence, which this guide works through with real numbers: for a typical salon, marketing templates are roughly a third of the messages sent and three quarters of the bill.</p>
+
+<h2>What Changes on 1 October 2026</h2>
+<p>Four changes land on the same day. Three of them raise costs for salons in the Gulf.</p>
+
+<h3>Service Messages Stop Being Free</h3>
+<p>This is the significant one. Meta's pricing documentation states it plainly: "Effective October 1, 2026 - Meta will charge on a per-message basis for service messages." Service messages are the replies you send inside an open 24-hour window, which is to say most of the actual conversation your salon has with clients.</p>
+<p>They bill at the same rate as utility and authentication messages in each market. Every business phone number gets 1,000 delivered service messages free per month. The tier does not roll over - 1,000 in October, 1,000 in November, whatever you do not use is gone. Both one-to-one replies and group sends draw on the same allowance, and a group send costs one unit per recipient who receives it.</p>
+<p>There is a trap here worth acting on before the date. If your WhatsApp Business account has no payment method on file, Meta will deliver your service messages up to the free tier and then stop delivering them. A salon that passes 1,000 replies mid-month without a card on file goes quiet, and the clients waiting on an answer will not be told why. Check your payment method in Billing Hub now rather than finding out in the middle of a busy week.</p>
+
+<h3>Marketing Rates Rise in the UAE and Saudi Arabia</h3>
+<p>Marketing templates to UAE numbers go from $0.0499 to $0.0576 per message, and to Saudi numbers from $0.0501 to $0.0576. Both are increases of roughly 15%. Meta's summary of the October changes lists increases for Kuwait, Mexico, Morocco, Saudi Arabia, the UAE, the Rest of Middle East region and the Rest of Asia Pacific region.</p>
+
+<h3>Kuwait and Oman Get Their Own Rate Cards</h3>
+<p>Until 30 September, Kuwait and Oman are billed at the "Rest of Middle East" rate. From 1 October they become standalone markets with their own pricing, and both go up sharply. Kuwait's marketing rate more than doubles, from $0.0341 to $0.0792, and its utility rate goes from $0.0091 to $0.0440 - close to five times higher. Oman's marketing rate is unchanged but its utility rate rises from $0.0091 to $0.0247.</p>
+<p>If you send to Kuwaiti or Omani numbers in any volume, your October bill will look very different from your September one.</p>
+
+<h3>New Authentication-International Rates</h3>
+<p>Kuwait and Oman also gain authentication-international rates, a more expensive tier covered further down. The UAE, Saudi Arabia and Egypt already have one.</p>
+
+<h2>How the Pricing Model Works</h2>
+<p>Meta moved from conversation-based pricing to per-message pricing on 1 July 2025. Under the old model you paid for a 24-hour conversation window and everything inside it was covered. Under the current model each template message delivered is a separate charge. If you are working from advice written before mid-2025, it is describing a system that no longer exists.</p>
+
+<h3>The 24-Hour Customer Service Window</h3>
+<p>This one mechanic determines most of what you pay. When a client messages you, a 24-hour window opens. It resets every time they message again. Inside that window you can reply freely, and utility templates you send are not charged. Outside it, reaching the client requires a template message, and that template is charged.</p>
+<p>From 1 October, the replies you send inside the window are charged too once you pass 1,000 in a month - but they remain the cheapest way to communicate, because they bill at the utility rate rather than the marketing rate.</p>
+
+<h3>Free Entry Point Conversations</h3>
+<p>When someone reaches you by tapping a Click-to-WhatsApp ad or a call-to-action button on your Facebook or Instagram page, a 72-hour free window opens once you reply. Any message inside it costs nothing. For salons running paid social, routing the ad to WhatsApp rather than to a landing page turns the follow-up conversation into a free one.</p>
+
+<h2>WhatsApp Rates for Gulf Markets</h2>
+<p>Per message in USD, taken from Meta's published rate cards. <strong>Rates as of 22 September 2026.</strong> The left figure applies until 30 September 2026, the right from 1 October 2026.</p>
+<table>
+<thead>
+<tr><th>Market</th><th>Marketing</th><th>Utility / Authentication</th><th>Service</th></tr>
+</thead>
+<tbody>
+<tr><td>United Arab Emirates</td><td>0.0499 &rarr; 0.0576</td><td>0.0157 (no change)</td><td>free &rarr; 0.0157</td></tr>
+<tr><td>Saudi Arabia</td><td>0.0501 &rarr; 0.0576</td><td>0.0107 (no change)</td><td>free &rarr; 0.0107</td></tr>
+<tr><td>Qatar</td><td>0.0341 (no change)</td><td>0.0120 (no change)</td><td>free &rarr; 0.0120</td></tr>
+<tr><td>Kuwait</td><td>0.0341 &rarr; 0.0792</td><td>0.0091 &rarr; 0.0440</td><td>free &rarr; 0.0440</td></tr>
+<tr><td>Oman</td><td>0.0341 (no change)</td><td>0.0091 &rarr; 0.0247</td><td>free &rarr; 0.0247</td></tr>
+<tr><td>Bahrain</td><td>0.0341 &rarr; 0.0392</td><td>0.0091 (no change)</td><td>free &rarr; 0.0091</td></tr>
+<tr><td>Egypt</td><td>0.0644 (no change)</td><td>0.0036 (no change)</td><td>free &rarr; 0.0036</td></tr>
+</tbody>
+</table>
+<p>Bahrain is billed under Meta's "Rest of Middle East" grouping rather than its own card, so its rates move when that region moves. Kuwait and Oman are in that grouping until 30 September and standalone after.</p>
+<p>Meta revises these cards roughly every quarter, so treat the numbers as current rather than permanent and check the rate card before budgeting a year ahead.</p>
+
+<h2>What a 400-Client Salon Actually Pays</h2>
+<p>Abstract rates are hard to reason about, so here is a realistic month. The salon has 400 active clients and handles around 320 appointments. It sends a booking confirmation and a reminder for each one, runs two promotional broadcasts to the full list, sends 120 rebooking nudges to clients who are overdue, and handles roughly 1,400 inbound replies. That is 2,960 messages.</p>
+<p>At UAE rates from 1 October:</p>
+<table>
+<thead>
+<tr><th>Message Type</th><th>Category</th><th>Volume</th><th>Monthly Cost</th></tr>
+</thead>
+<tbody>
+<tr><td>Booking confirmations</td><td>Utility</td><td>320</td><td>$5.02</td></tr>
+<tr><td>Appointment reminders</td><td>Utility</td><td>320</td><td>$5.02</td></tr>
+<tr><td>Promotional broadcasts</td><td>Marketing</td><td>800</td><td>$46.08</td></tr>
+<tr><td>Rebooking nudges</td><td>Marketing</td><td>120</td><td>$6.91</td></tr>
+<tr><td>Replies to clients</td><td>Service</td><td>1,400 (1,000 free)</td><td>$6.28</td></tr>
+<tr><td><strong>Total</strong></td><td></td><td><strong>2,960</strong></td><td><strong>$69.31</strong></td></tr>
+</tbody>
+</table>
+<p>The same salon paid about $55.96 in September, when service messages were free and marketing was $0.0499. The October bill is roughly 24% higher for identical activity.</p>
+<p>In Saudi Arabia the same month costs about $64.12, because utility and service rates there are lower. In Kuwait it costs about $118.62, against roughly $37.20 in September - an increase of over 200% for a salon that changed nothing about how it works.</p>
+
+<h2>Where the Money Actually Goes</h2>
+<p>Break that bill down by share and the picture is clearer than the totals suggest:</p>
+<ul>
+<li><strong>Marketing:</strong> 31% of messages sent, 76% of the bill.</li>
+<li><strong>Utility:</strong> 22% of messages sent, 14% of the bill.</li>
+<li><strong>Service:</strong> 47% of messages sent, 9% of the bill.</li>
+</ul>
+<p>Most salon owners assume appointment reminders are the expensive part, because reminders are the messages they think about most. Reminders are the cheap part. Two promotional broadcasts to a list of 400 cost more than every confirmation, reminder and client reply in the month combined.</p>
+<p>That asymmetry is the lever. Anything that reduces your dependence on broadcast marketing cuts the bill far more than anything that trims utility or service volume.</p>
+
+<h2>Five Ways to Cut the Bill</h2>
+
+<h3>1. Stop Broadcasting to Your Whole List</h3>
+<p>A broadcast to 400 clients costs the same whether 300 of them are interested or 30 are. Segment by service history and send the balayage promotion to clients who colour their hair. A 400-person broadcast at UAE rates costs $23.04; the same offer to the 120 clients it actually suits costs $6.91. Smaller, better-targeted sends usually convert better as well, so the saving is not the only gain.</p>
+
+<h3>2. Send Utility Templates Inside the Service Window</h3>
+<p>A utility template delivered while a service window is open is not charged. If a client has messaged you in the last 24 hours, the confirmation you send back is free. Batching your outbound utility messages to follow inbound conversations, rather than firing them on a fixed schedule, moves a portion of them into the free column.</p>
+
+<h3>3. Put Click-to-WhatsApp at the End of Your Ads</h3>
+<p>Paid social that lands on WhatsApp opens a 72-hour free entry point window. Every message in that window is free, including messages that would otherwise be charged as marketing. If you are already paying for the ad, routing it to WhatsApp instead of a booking page makes the follow-up conversation cost nothing.</p>
+
+<h3>4. Turn Outbound Marketing Into Inbound Conversation</h3>
+<p>Marketing templates cost several times what a service reply costs - roughly four times in the UAE, five in Saudi Arabia, and far more in Egypt. A client who messages you first opens a window in which your replies bill at the utility rate. Anything that gets clients to start the conversation - a WhatsApp link in your Instagram bio, a QR code at the front desk, a number on your Google Business Profile - shifts volume from the expensive category to the cheap one.</p>
+<p>This is where an always-on responder earns its place. A salon that answers inbound messages within seconds, at any hour, keeps more conversations inside the window where they are cheap. The <a href="/en/features/business/ai-salon-management">AI receptionist in The Daisy</a> handles that inbound flow, and the <a href="/en/features/business/communication-tools">communication tools</a> keep the conversation, the booking and the client record in one place.</p>
+<p>Two limits worth being straight about. From 1 October, those replies are only free for the first 1,000 a month, and a salon handling heavy inbound volume will pass that. And none of it makes marketing templates cheaper - if you need to reach a lapsed client who has not messaged you in three months, you are sending a marketing template and paying for it. The gain is in the proportion of your messaging that sits in the cheap category, not in eliminating the bill.</p>
+
+<h3>5. Check Your Free Tier Before You Need It</h3>
+<p>The 1,000 free service messages reset monthly and do not accumulate. If your salon handles 600 replies a month you will never see a service charge. If it handles 2,000 you will pay for half of them, and you need a payment method on file or the second half will not be delivered at all.</p>
+
+<h2>The Authentication-International Trap</h2>
+<p>If your salon sends one-time passcodes - for account login, booking verification, or payment confirmation - there is a rate most guides miss.</p>
+<p>Meta applies an authentication-international rate when an authentication message goes to a user in certain markets from a WhatsApp Business Account registered somewhere else. The UAE, Saudi Arabia and Egypt are on that list, and Kuwait and Oman join it on 1 October.</p>
+<p>The difference is substantial. A standard authentication message to a UAE number costs $0.0157. The international rate is $0.0510, more than three times higher. For Saudi Arabia it is $0.0598 against $0.0107, over five times. Kuwait's new international rate is $0.12.</p>
+<p>This matters if you use a messaging provider whose WhatsApp Business Account is registered outside the country you are messaging into. A GCC salon on an offshore provider can be paying the international rate on every passcode without ever seeing a line item that says so. If you send authentication messages in volume, ask your provider where the account is registered.</p>
+
+<h2>What Changed Since the Old Pricing Model</h2>
+<p>Three shifts in two years, which is why so much published advice is out of date:</p>
+<ul>
+<li><strong>November 2024:</strong> service conversations became free, and stayed free for nearly two years.</li>
+<li><strong>1 July 2025:</strong> conversation-based pricing ended and per-message pricing began. You stopped paying for a window and started paying for each template.</li>
+<li><strong>1 October 2026:</strong> service messages become billable with a 1,000-message monthly free tier, and several markets move to new rate cards.</li>
+</ul>
+<p>If you have a cost estimate for WhatsApp built before 1 July 2025, it is modelling a pricing system Meta has already retired. If it was built before this October, it assumes replies are free.</p>
+
+<h2>Is WhatsApp Still Worth It?</h2>
+<p>For most salons, comfortably. The worked example above comes to $69.31 a month to handle 2,960 messages with 400 clients - roughly seventeen cents per client per month on a channel with open rates above 90%. Measured against the cost of a single no-show, or a single client who does not rebook because nobody followed up, the arithmetic is not close.</p>
+<p>What has changed is that WhatsApp costs are no longer effectively zero for ordinary conversation, and they scale with how you use the channel rather than how many clients you have. A salon that broadcasts weekly to its whole list will pay several times what a salon of the same size pays by segmenting and answering inbound quickly. The cost is now a function of habits, and habits can be changed.</p>
+<p>See <a href="/en/pricing/business">The Daisy's pricing plans</a> for WhatsApp messaging, booking and client records in one place, or read our <a href="/en/resources/blog/business/whatsapp-marketing-salons-guide">complete guide to WhatsApp marketing for salons</a> for the campaign side of the channel.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How much does WhatsApp Business cost for a salon?</h3>
+<p>The WhatsApp Business app is free. The WhatsApp Business Platform, which you access through a provider, charges per template message delivered. A salon with 400 clients sending confirmations, reminders, two monthly broadcasts and handling normal inbound volume pays roughly $69 a month at UAE rates from October 2026, or about $64 at Saudi rates. Marketing templates account for most of that. Your provider may add its own fee on top of Meta's rates.</p>
+
+<h3>Are WhatsApp service messages still free?</h3>
+<p>Until 30 September 2026, yes. From 1 October 2026 Meta charges for service messages at the same rate as utility messages, with the first 1,000 delivered per business phone number each month free. The allowance does not roll over. Without a payment method on file, service messages stop being delivered once the free tier is used.</p>
+
+<h3>Why did my WhatsApp bill go up in October 2026?</h3>
+<p>Three possible reasons, and they stack. Service messages became billable after the first 1,000. Marketing rates rose about 15% for UAE and Saudi numbers. And if you message Kuwaiti or Omani numbers, those markets moved onto their own, higher rate cards - Kuwait's utility rate went up nearly fivefold.</p>
+
+<h3>Do I pay for messages clients send me?</h3>
+<p>No. You are never charged for inbound messages. You are charged for template messages you send, and from October 2026 for your replies inside the service window once you exceed 1,000 in a month.</p>
+
+<h3>Which country's rate applies if my salon is in Dubai but my client is Saudi?</h3>
+<p>The recipient's. Rates follow the country calling code of the number receiving the message, not the location of your business. A Dubai salon messaging a Saudi number pays the Saudi rate on that message.</p>
+
+<h3>How can I reduce what I spend on WhatsApp?</h3>
+<p>Segment your broadcasts instead of sending to the whole list, since marketing templates are the bulk of a typical bill. Send utility templates while a service window is open, where they are free. Route paid social to WhatsApp to open free entry point windows. And encourage clients to message you first, because conversations you reply to are billed at the utility rate rather than the marketing rate.</p>
+`,
+    metaTitle: 'WhatsApp Business Pricing for Salons 2026 | The Daisy',
+    metaDescription:
+      'What WhatsApp Business costs a salon in 2026: per-message rates for Gulf markets, the 1 October changes to service messages, and a worked monthly bill.',
+    createdAt: '2026-09-22T08:00:00.000Z',
+    updatedAt: '2026-09-22T08:00:00.000Z',
+    publishedAt: '2026-09-22T08:00:00.000Z',
+    locale: 'en',
+    sortId: 121,
+    tags: { category: 'Multi-Channel', topic: 'WhatsApp' },
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '22 September 2026',
+          time: '12 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
+    category: { data: { id: 23, attributes: { name: 'Multi-Channel' } } },
+    picture: {
+      data: {
+        attributes: {
+          url: '/images/blog/whatsapp-business-pricing-salon-costs.webp',
+          alternativeText: 'WhatsApp Business per-message pricing breakdown for salons',
+        },
+      },
+    },
+    image: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/whatsapp-business-pricing-salon-costs.webp',
+            formats: { large: { url: '/images/blog/whatsapp-business-pricing-salon-costs.webp' } },
+          },
+        },
+      ],
+    },
+  },
+};
+
+// ---------------------------------------------------------------------------
 // Arabic Translations
 // ---------------------------------------------------------------------------
 
@@ -1207,11 +1418,219 @@ const omnichannelCommunicationArticleAr: LocalBlogPost = {
 // ---------------------------------------------------------------------------
 
 /** Business articles for Multi-Channel category */
+const whatsappPricingSalonCostsArticleAr: LocalBlogPost = {
+  id: 1217,
+  attributes: {
+    title: 'كم يكلفك واتساب فعليًا في صالونك 2026: شرح التسعير لكل رسالة',
+    slug: 'whatsapp-business-pricing-salon-costs',
+    description:
+      'تحتسب ميتا رسائل واتساب للأعمال رسالة برسالة، وفي 1 أكتوبر 2026 تتوقف مجانية رسائل الخدمة وترتفع أسعار التسويق في الإمارات والسعودية. يشرح هذا الدليل كل سعر ينطبق على الصالونات، ويحسب فاتورة شهرية واقعية، ويوضح أي الرسائل تستحق ما تدفعه.',
+    aboutPosts: `
+<h2>ما الذي تدفع مقابله فعليًا</h2>
+<p>على منصة واتساب للأعمال، تحتسب ميتا التكلفة لكل رسالة يتم تسليمها، ولرسائل القوالب فقط. هناك أربع فئات. قوالب <strong>التسويق</strong> (العروض والترويج ورسائل إعادة الحجز) تُحتسب في كل مرة. قوالب <strong>المنفعة</strong> (تأكيدات الحجز وتذكيرات المواعيد وإيصالات الدفع) تُحتسب عندما تصل خارج نافذة خدمة عملاء مفتوحة. قوالب <strong>المصادقة</strong> (رموز التحقق لمرة واحدة) تُحتسب. أما رسائل <strong>الخدمة</strong>، أي ردودك المعتادة على العميل داخل نافذة الـ24 ساعة التي فتحتها رسالته، فكانت مجانية منذ نوفمبر 2024 - ومن 1 أكتوبر 2026 أصبحت محتسبة أيضًا، مع أول 1000 رسالة شهريًا مجانًا.</p>
+<p>تعتمد الأسعار على رمز الدولة للشخص المستلم للرسالة، لا على موقع صالونك. صالون في الإمارات يراسل عميلًا على رقم سعودي يدفع السعر السعودي.</p>
+<p>والنتيجة العملية، التي يحسبها هذا الدليل بأرقام حقيقية: في الصالون النموذجي، تشكّل قوالب التسويق نحو ثلث الرسائل المرسلة وثلاثة أرباع الفاتورة.</p>
+
+<h2>ما الذي يتغير في 1 أكتوبر 2026</h2>
+<p>أربعة تغييرات تبدأ في اليوم نفسه. ثلاثة منها ترفع التكاليف على صالونات الخليج.</p>
+
+<h3>رسائل الخدمة لم تعد مجانية</h3>
+<p>هذا هو التغيير الأهم. تنص وثائق تسعير ميتا صراحةً: "اعتبارًا من 1 أكتوبر 2026 - ستحتسب ميتا التكلفة لكل رسالة خدمة." ورسائل الخدمة هي الردود التي ترسلها داخل نافذة الـ24 ساعة المفتوحة، أي معظم المحادثة الفعلية بين صالونك وعملائه.</p>
+<p>تُحتسب بالسعر نفسه المطبّق على رسائل المنفعة والمصادقة في كل سوق. ويحصل كل رقم هاتف تجاري على 1000 رسالة خدمة مُسلّمة مجانًا شهريًا. ولا تُرحّل هذه الحصة - 1000 في أكتوبر، و1000 في نوفمبر، وما لا تستخدمه يسقط. وتُحتسب الردود الفردية والإرسال الجماعي من الحصة نفسها، ويستهلك الإرسال الجماعي وحدة واحدة عن كل مستلم يصله.</p>
+<p>وهناك مأزق هنا يستحق التصرف قبل الموعد. إذا لم تكن لدى حسابك على واتساب للأعمال وسيلة دفع مسجّلة، فستسلّم ميتا رسائل الخدمة حتى حدود الحصة المجانية ثم تتوقف عن تسليمها. الصالون الذي يتجاوز 1000 رد في منتصف الشهر دون بطاقة مسجّلة سيصمت، ولن يُبلَّغ العملاء المنتظرون للرد بالسبب. راجع وسيلة الدفع في مركز الفوترة الآن بدل اكتشاف الأمر في منتصف أسبوع مزدحم.</p>
+
+<h3>ارتفاع أسعار التسويق في الإمارات والسعودية</h3>
+<p>ترتفع قوالب التسويق إلى الأرقام الإماراتية من 0.0499 إلى 0.0576 دولار للرسالة، وإلى الأرقام السعودية من 0.0501 إلى 0.0576 دولار. وكلاهما ارتفاع بنحو 15%. ويشمل ملخص ميتا لتغييرات أكتوبر ارتفاعات في الكويت والمكسيك والمغرب والسعودية والإمارات ومنطقة "بقية الشرق الأوسط" ومنطقة "بقية آسيا والمحيط الهادئ".</p>
+
+<h3>الكويت وعُمان تحصلان على بطاقات أسعار مستقلة</h3>
+<p>حتى 30 سبتمبر، تُحتسب الكويت وعُمان بسعر "بقية الشرق الأوسط". ومن 1 أكتوبر تصبحان سوقين مستقلين بتسعير خاص، وكلاهما يرتفع بحدة. سعر التسويق في الكويت يتضاعف وأكثر، من 0.0341 إلى 0.0792 دولار، وسعر المنفعة من 0.0091 إلى 0.0440 دولار - أي قرابة خمسة أضعاف. أما عُمان فسعر التسويق فيها دون تغيير، لكن سعر المنفعة يرتفع من 0.0091 إلى 0.0247 دولار.</p>
+<p>إذا كنت ترسل إلى أرقام كويتية أو عُمانية بأي حجم، فستبدو فاتورة أكتوبر مختلفة تمامًا عن فاتورة سبتمبر.</p>
+
+<h3>أسعار مصادقة دولية جديدة</h3>
+<p>تحصل الكويت وعُمان أيضًا على سعر مصادقة دولي، وهو شريحة أعلى تكلفة نتناولها لاحقًا. أما الإمارات والسعودية ومصر فلديها هذا السعر بالفعل.</p>
+
+<h2>كيف يعمل نموذج التسعير</h2>
+<p>انتقلت ميتا من التسعير حسب المحادثة إلى التسعير لكل رسالة في 1 يوليو 2025. في النموذج القديم كنت تدفع مقابل نافذة مدتها 24 ساعة وكل ما بداخلها مشمول. أما في النموذج الحالي فكل رسالة قالب تُسلَّم تمثل رسمًا منفصلًا. وإذا كنت تعتمد على إرشادات كُتبت قبل منتصف 2025، فهي تصف نظامًا لم يعد قائمًا.</p>
+
+<h3>نافذة خدمة العملاء (24 ساعة)</h3>
+<p>هذه الآلية وحدها تحدد معظم ما تدفعه. حين يراسلك العميل، تُفتح نافذة مدتها 24 ساعة، وتُعاد ضبطها مع كل رسالة جديدة منه. داخل النافذة يمكنك الرد بحرية، ولا تُحتسب قوالب المنفعة التي ترسلها. وخارجها، يتطلب الوصول إلى العميل رسالة قالب، وتُحتسب تكلفتها.</p>
+<p>ومن 1 أكتوبر، تُحتسب أيضًا الردود التي ترسلها داخل النافذة بعد تجاوز 1000 رسالة شهريًا - لكنها تبقى الأرخص، لأنها تُحتسب بسعر المنفعة لا بسعر التسويق.</p>
+
+<h3>محادثات نقطة الدخول المجانية</h3>
+<p>حين يصل إليك شخص عبر النقر على إعلان "انقر للمراسلة على واتساب" أو زر حث على إجراء في صفحتك على فيسبوك أو إنستغرام، تُفتح نافذة مجانية مدتها 72 ساعة بمجرد ردّك. وأي رسالة داخلها لا تكلّف شيئًا. وللصالونات التي تدير إعلانات مدفوعة، فإن توجيه الإعلان إلى واتساب بدل صفحة هبوط يجعل محادثة المتابعة مجانية.</p>
+
+<h2>أسعار واتساب في أسواق الخليج</h2>
+<p>بالدولار الأمريكي لكل رسالة، منقولة من بطاقات الأسعار المنشورة من ميتا. <strong>الأسعار كما في 22 سبتمبر 2026.</strong> الرقم الأيسر يسري حتى 30 سبتمبر 2026، والأيمن من 1 أكتوبر 2026.</p>
+<table>
+<thead>
+<tr><th>السوق</th><th>تسويق</th><th>منفعة / مصادقة</th><th>خدمة</th></tr>
+</thead>
+<tbody>
+<tr><td>الإمارات العربية المتحدة</td><td>0.0499 &rarr; 0.0576</td><td>0.0157 (دون تغيير)</td><td>مجاني &rarr; 0.0157</td></tr>
+<tr><td>السعودية</td><td>0.0501 &rarr; 0.0576</td><td>0.0107 (دون تغيير)</td><td>مجاني &rarr; 0.0107</td></tr>
+<tr><td>قطر</td><td>0.0341 (دون تغيير)</td><td>0.0120 (دون تغيير)</td><td>مجاني &rarr; 0.0120</td></tr>
+<tr><td>الكويت</td><td>0.0341 &rarr; 0.0792</td><td>0.0091 &rarr; 0.0440</td><td>مجاني &rarr; 0.0440</td></tr>
+<tr><td>عُمان</td><td>0.0341 (دون تغيير)</td><td>0.0091 &rarr; 0.0247</td><td>مجاني &rarr; 0.0247</td></tr>
+<tr><td>البحرين</td><td>0.0341 &rarr; 0.0392</td><td>0.0091 (دون تغيير)</td><td>مجاني &rarr; 0.0091</td></tr>
+<tr><td>مصر</td><td>0.0644 (دون تغيير)</td><td>0.0036 (دون تغيير)</td><td>مجاني &rarr; 0.0036</td></tr>
+</tbody>
+</table>
+<p>تُحتسب البحرين ضمن تجميع "بقية الشرق الأوسط" لدى ميتا لا ببطاقة خاصة بها، لذا تتحرك أسعارها مع تحرك تلك المنطقة. والكويت وعُمان ضمن التجميع نفسه حتى 30 سبتمبر ومستقلتان بعده.</p>
+<p>تراجع ميتا هذه البطاقات كل ربع سنة تقريبًا، فتعامل مع الأرقام باعتبارها حالية لا دائمة، وراجع بطاقة الأسعار قبل وضع ميزانية لسنة كاملة.</p>
+
+<h2>ما يدفعه فعليًا صالون لديه 400 عميل</h2>
+<p>يصعب تصور الأسعار المجردة، وهذا شهر واقعي. الصالون لديه 400 عميل نشط ويتعامل مع نحو 320 موعدًا. يرسل تأكيد حجز وتذكيرًا لكل موعد، وينفّذ حملتي بث ترويجيتين للقائمة كاملة، ويرسل 120 رسالة إعادة حجز للعملاء المتأخرين، ويتعامل مع نحو 1400 رد وارد. أي 2960 رسالة.</p>
+<p>بأسعار الإمارات من 1 أكتوبر:</p>
+<table>
+<thead>
+<tr><th>نوع الرسالة</th><th>الفئة</th><th>العدد</th><th>التكلفة الشهرية</th></tr>
+</thead>
+<tbody>
+<tr><td>تأكيدات الحجز</td><td>منفعة</td><td>320</td><td>5.02 دولار</td></tr>
+<tr><td>تذكيرات المواعيد</td><td>منفعة</td><td>320</td><td>5.02 دولار</td></tr>
+<tr><td>حملات البث الترويجية</td><td>تسويق</td><td>800</td><td>46.08 دولار</td></tr>
+<tr><td>رسائل إعادة الحجز</td><td>تسويق</td><td>120</td><td>6.91 دولار</td></tr>
+<tr><td>الردود على العملاء</td><td>خدمة</td><td>1400 (1000 مجانًا)</td><td>6.28 دولار</td></tr>
+<tr><td><strong>الإجمالي</strong></td><td></td><td><strong>2960</strong></td><td><strong>69.31 دولار</strong></td></tr>
+</tbody>
+</table>
+<p>الصالون نفسه دفع نحو 55.96 دولار في سبتمبر، حين كانت رسائل الخدمة مجانية والتسويق بـ0.0499 دولار. أي أن فاتورة أكتوبر أعلى بنحو 24% مقابل النشاط نفسه.</p>
+<p>وفي السعودية يكلّف الشهر نفسه نحو 64.12 دولار، لأن أسعار المنفعة والخدمة هناك أقل. وفي الكويت يكلّف نحو 118.62 دولار، مقابل نحو 37.20 دولار في سبتمبر - أي ارتفاع يتجاوز 200% لصالون لم يغيّر شيئًا في طريقة عمله.</p>
+
+<h2>أين تذهب النقود فعليًا</h2>
+<p>بتفصيل الفاتورة حسب الحصة تتضح الصورة أكثر مما توحي به الإجماليات:</p>
+<ul>
+<li><strong>التسويق:</strong> 31% من الرسائل المرسلة، و76% من الفاتورة.</li>
+<li><strong>المنفعة:</strong> 22% من الرسائل المرسلة، و14% من الفاتورة.</li>
+<li><strong>الخدمة:</strong> 47% من الرسائل المرسلة، و9% من الفاتورة.</li>
+</ul>
+<p>يفترض معظم أصحاب الصالونات أن تذكيرات المواعيد هي الجزء المكلف، لأنها الرسائل التي يفكرون فيها أكثر. لكنها الجزء الرخيص. حملتا بث ترويجيتان لقائمة من 400 عميل تكلّفان أكثر من كل التأكيدات والتذكيرات وردود العملاء في الشهر مجتمعة.</p>
+<p>هذا التفاوت هو نقطة الرافعة. كل ما يقلّل اعتمادك على البث التسويقي يخفض الفاتورة أكثر بكثير من أي تقليص في رسائل المنفعة أو الخدمة.</p>
+
+<h2>خمس طرق لخفض الفاتورة</h2>
+
+<h3>1. توقف عن البث إلى قائمتك كاملة</h3>
+<p>البث إلى 400 عميل يكلّف المبلغ نفسه سواء كان المهتمون 300 أو 30. قسّم القائمة حسب سجل الخدمات وأرسل عرض البالياج إلى من يصبغن شعورهن. البث إلى 400 شخص بأسعار الإمارات يكلّف 23.04 دولار؛ والعرض نفسه إلى 120 عميلة يناسبهن فعلًا يكلّف 6.91 دولار. والإرسال الأصغر الأدق استهدافًا يحقق تحويلًا أفضل عادةً، فالتوفير ليس المكسب الوحيد.</p>
+
+<h3>2. أرسل قوالب المنفعة داخل نافذة الخدمة</h3>
+<p>قالب المنفعة الذي يُسلَّم أثناء وجود نافذة خدمة مفتوحة لا تُحتسب تكلفته. فإذا راسلك العميل خلال الـ24 ساعة الماضية، فالتأكيد الذي ترسله إليه مجاني. وتجميع رسائل المنفعة الصادرة لتتبع المحادثات الواردة، بدل إطلاقها وفق جدول ثابت، ينقل جزءًا منها إلى الخانة المجانية.</p>
+
+<h3>3. ضع "انقر للمراسلة على واتساب" في نهاية إعلاناتك</h3>
+<p>الإعلانات المدفوعة التي تنتهي إلى واتساب تفتح نافذة نقطة دخول مجانية مدتها 72 ساعة. وكل رسالة داخلها مجانية، بما فيها الرسائل التي كانت ستُحتسب تسويقًا. وما دمت تدفع ثمن الإعلان أصلًا، فتوجيهه إلى واتساب بدل صفحة حجز يجعل محادثة المتابعة بلا تكلفة.</p>
+
+<h3>4. حوّل التسويق الصادر إلى محادثة واردة</h3>
+<p>تكلّف قوالب التسويق أضعاف تكلفة رد الخدمة - نحو أربعة أضعاف في الإمارات، وخمسة في السعودية، وأكثر من ذلك بكثير في مصر. والعميل الذي يراسلك أولًا يفتح نافذة تُحتسب ردودك داخلها بسعر المنفعة. وكل ما يدفع العملاء لبدء المحادثة - رابط واتساب في نبذة إنستغرام، ورمز QR عند الاستقبال، ورقم في ملفك على Google Business - ينقل الحجم من الفئة الغالية إلى الرخيصة.</p>
+<p>وهنا يثبت المجيب الدائم جدواه. الصالون الذي يرد على الرسائل الواردة خلال ثوانٍ، في أي ساعة، يبقي محادثات أكثر داخل النافذة حيث تكون رخيصة. ويتولى <a href="/ar/features/business/ai-salon-management">موظف الاستقبال الذكي في ديزي</a> هذا التدفق الوارد، فيما تُبقي <a href="/ar/features/business/communication-tools">أدوات التواصل</a> المحادثة والحجز وسجل العميل في مكان واحد.</p>
+<p>وحدّان يستحقان الوضوح. من 1 أكتوبر، تكون تلك الردود مجانية فقط لأول 1000 رسالة شهريًا، والصالون ذو الحجم الوارد الكبير سيتجاوزها. كما أن شيئًا من ذلك لا يجعل قوالب التسويق أرخص - فإذا احتجت الوصول إلى عميلة منقطعة لم تراسلك منذ ثلاثة أشهر، فأنت ترسل قالب تسويق وتدفع ثمنه. المكسب في نسبة رسائلك التي تقع في الفئة الرخيصة، لا في إلغاء الفاتورة.</p>
+
+<h3>5. راجع حصتك المجانية قبل أن تحتاجها</h3>
+<p>تُعاد ضبط الـ1000 رسالة خدمة المجانية شهريًا ولا تتراكم. فإن كان صالونك يتعامل مع 600 رد شهريًا فلن ترى رسم خدمة أبدًا. وإن كان يتعامل مع 2000 فستدفع عن نصفها، وتحتاج وسيلة دفع مسجّلة وإلا فلن يُسلَّم النصف الثاني إطلاقًا.</p>
+
+<h2>مأزق المصادقة الدولية</h2>
+<p>إذا كان صالونك يرسل رموز تحقق لمرة واحدة - لتسجيل الدخول أو تأكيد الحجز أو تأكيد الدفع - فهناك سعر تغفله معظم الأدلة.</p>
+<p>تطبّق ميتا سعر مصادقة دوليًا حين تصل رسالة مصادقة إلى مستخدم في أسواق معيّنة من حساب واتساب للأعمال مسجّل في مكان آخر. والإمارات والسعودية ومصر على تلك القائمة، وتنضم إليها الكويت وعُمان في 1 أكتوبر.</p>
+<p>والفارق كبير. رسالة المصادقة المعتادة إلى رقم إماراتي تكلّف 0.0157 دولار، بينما السعر الدولي 0.0510 دولار، أي أكثر من ثلاثة أضعاف. وفي السعودية 0.0598 دولار مقابل 0.0107 دولار، أي أكثر من خمسة أضعاف. والسعر الدولي الجديد للكويت 0.12 دولار.</p>
+<p>وهذا مهم إن كنت تستخدم مزوّد مراسلة حسابه على واتساب للأعمال مسجّل خارج الدولة التي تراسلها. فالصالون الخليجي لدى مزوّد خارجي قد يدفع السعر الدولي على كل رمز تحقق دون أن يرى بندًا يوضح ذلك. وإذا كنت ترسل رسائل مصادقة بكثافة، فاسأل مزوّدك عن مكان تسجيل الحساب.</p>
+
+<h2>ما الذي تغيّر منذ نموذج التسعير القديم</h2>
+<p>ثلاثة تحولات خلال سنتين، ولهذا فكثير من النصائح المنشورة لم يعد صالحًا:</p>
+<ul>
+<li><strong>نوفمبر 2024:</strong> أصبحت محادثات الخدمة مجانية، وظلت كذلك قرابة سنتين.</li>
+<li><strong>1 يوليو 2025:</strong> انتهى التسعير حسب المحادثة وبدأ التسعير لكل رسالة. توقفت عن الدفع مقابل نافذة وبدأت الدفع عن كل قالب.</li>
+<li><strong>1 أكتوبر 2026:</strong> أصبحت رسائل الخدمة محتسبة مع حصة مجانية شهرية قدرها 1000 رسالة، وانتقلت أسواق عدة إلى بطاقات أسعار جديدة.</li>
+</ul>
+<p>إذا كان لديك تقدير لتكلفة واتساب وُضع قبل 1 يوليو 2025، فهو يحاكي نظام تسعير تخلّت عنه ميتا. وإن وُضع قبل أكتوبر الحالي، فهو يفترض أن الردود مجانية.</p>
+
+<h2>هل ما زال واتساب يستحق؟</h2>
+<p>لمعظم الصالونات، نعم بارتياح. المثال المحسوب أعلاه يبلغ 69.31 دولار شهريًا للتعامل مع 2960 رسالة و400 عميل - أي نحو سبعة عشر سنتًا لكل عميل شهريًا على قناة تتجاوز معدلات الفتح فيها 90%. وبمقارنته بتكلفة تخلّف واحد عن موعد، أو عميلة واحدة لا تعيد الحجز لأن أحدًا لم يتابعها، فالحساب ليس متقاربًا.</p>
+<p>ما تغيّر هو أن تكاليف واتساب لم تعد صفرًا فعليًا في المحادثة الاعتيادية، وأنها تتناسب مع طريقة استخدامك للقناة لا مع عدد عملائك. فالصالون الذي يبث أسبوعيًا لقائمته كاملة سيدفع أضعاف ما يدفعه صالون بالحجم نفسه يقسّم قوائمه ويرد على الوارد بسرعة. التكلفة الآن دالة على العادات، والعادات قابلة للتغيير.</p>
+<p>اطّلع على <a href="/ar/pricing/business">خطط أسعار ديزي</a> لمراسلات واتساب والحجز وسجلات العملاء في مكان واحد، أو اقرأ <a href="/ar/resources/blog/business/whatsapp-marketing-salons-guide">دليلنا الشامل للتسويق عبر واتساب للصالونات</a> للجانب الحملاتي من القناة.</p>
+
+<h2>الأسئلة الشائعة</h2>
+
+<h3>كم يكلّف واتساب للأعمال صالون تجميل؟</h3>
+<p>تطبيق واتساب للأعمال مجاني. أما منصة واتساب للأعمال، التي تصل إليها عبر مزوّد، فتحتسب التكلفة لكل رسالة قالب تُسلَّم. الصالون الذي لديه 400 عميل ويرسل تأكيدات وتذكيرات وحملتي بث شهريًا ويتعامل مع حجم وارد معتاد يدفع نحو 69 دولارًا شهريًا بأسعار الإمارات من أكتوبر 2026، أو نحو 64 دولارًا بالأسعار السعودية. وتشكّل قوالب التسويق معظم ذلك. وقد يضيف مزوّدك رسومه الخاصة فوق أسعار ميتا.</p>
+
+<h3>هل ما زالت رسائل الخدمة على واتساب مجانية؟</h3>
+<p>حتى 30 سبتمبر 2026، نعم. ومن 1 أكتوبر 2026 تحتسب ميتا تكلفة رسائل الخدمة بالسعر نفسه المطبّق على رسائل المنفعة، مع أول 1000 رسالة مُسلّمة لكل رقم هاتف تجاري شهريًا مجانًا. ولا تُرحّل الحصة. وبدون وسيلة دفع مسجّلة، تتوقف رسائل الخدمة عن التسليم بمجرد استنفاد الحصة المجانية.</p>
+
+<h3>لماذا ارتفعت فاتورة واتساب لدي في أكتوبر 2026؟</h3>
+<p>ثلاثة أسباب محتملة، وهي تتراكم. أصبحت رسائل الخدمة محتسبة بعد أول 1000 رسالة. وارتفعت أسعار التسويق نحو 15% للأرقام الإماراتية والسعودية. وإن كنت تراسل أرقامًا كويتية أو عُمانية، فقد انتقل هذان السوقان إلى بطاقتي أسعار خاصتين أعلى - وارتفع سعر المنفعة في الكويت قرابة خمسة أضعاف.</p>
+
+<h3>هل أدفع مقابل الرسائل التي يرسلها العملاء إليّ؟</h3>
+<p>لا. لا تُحتسب عليك الرسائل الواردة إطلاقًا. تُحتسب عليك رسائل القوالب التي ترسلها، ومن أكتوبر 2026 ردودك داخل نافذة الخدمة بعد تجاوز 1000 رسالة شهريًا.</p>
+
+<h3>أي سعر ينطبق إذا كان صالوني في دبي وعميلتي سعودية؟</h3>
+<p>سعر المستلم. تتبع الأسعار رمز الاتصال الدولي للرقم المستلم للرسالة، لا موقع نشاطك. فصالون في دبي يراسل رقمًا سعوديًا يدفع السعر السعودي على تلك الرسالة.</p>
+
+<h3>كيف أقلّل ما أنفقه على واتساب؟</h3>
+<p>قسّم حملات البث بدل الإرسال إلى القائمة كاملة، فقوالب التسويق هي الجزء الأكبر من الفاتورة النموذجية. وأرسل قوالب المنفعة أثناء فتح نافذة الخدمة حيث تكون مجانية. ووجّه الإعلانات المدفوعة إلى واتساب لفتح نوافذ نقطة دخول مجانية. وشجّع العملاء على مراسلتك أولًا، لأن المحادثات التي ترد عليها تُحتسب بسعر المنفعة لا بسعر التسويق.</p>
+`,
+    metaTitle: 'أسعار واتساب للأعمال للصالونات 2026 | ديزي',
+    metaDescription:
+      'كم يكلّف واتساب للأعمال صالونك في 2026: أسعار كل رسالة في أسواق الخليج، وتغييرات 1 أكتوبر على رسائل الخدمة، وفاتورة شهرية محسوبة.',
+    createdAt: '2026-09-22T08:00:00.000Z',
+    updatedAt: '2026-09-22T08:00:00.000Z',
+    publishedAt: '2026-09-22T08:00:00.000Z',
+    locale: 'ar',
+    sortId: 121,
+    tags: { category: 'Multi-Channel', topic: 'WhatsApp' },
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'صوفيا ألفاريز',
+          jobTitle: 'مستشارة عمليات الصالونات وخبيرة استراتيجيات تقنية التجميل',
+          date: '22 سبتمبر 2026',
+          time: '12 دقيقة',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
+    category: { data: { id: 23, attributes: { name: 'Multi-Channel' } } },
+    picture: {
+      data: {
+        attributes: {
+          url: '/images/blog/whatsapp-business-pricing-salon-costs.webp',
+          alternativeText: 'تفصيل أسعار واتساب للأعمال لكل رسالة للصالونات',
+        },
+      },
+    },
+    image: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/whatsapp-business-pricing-salon-costs.webp',
+            formats: { large: { url: '/images/blog/whatsapp-business-pricing-salon-costs.webp' } },
+          },
+        },
+      ],
+    },
+  },
+};
+
 export const multiChannelBusinessArticles: LocalBlogPost[] = [
   whatsappMarketingSalonsArticle,
   managingInstagramDmsArticle,
   omnichannelCommunicationArticle,
+  whatsappPricingSalonCostsArticle,
   whatsappMarketingSalonsArticleAr,
   managingInstagramDmsArticleAr,
   omnichannelCommunicationArticleAr,
+  whatsappPricingSalonCostsArticleAr,
 ];
