@@ -65,7 +65,7 @@ export const QuickComparisonTable: FC<QuickComparisonTableProps> = ({
               <tr className="border-b border-[#E8E9E9] bg-[#F8F5F3]">
                 <th
                   scope="col"
-                  className="px-6 py-4 text-left text-sm font-semibold text-[#586968] uppercase tracking-wider"
+                  className="px-6 py-4 text-start text-sm font-semibold text-[#586968] uppercase tracking-wider"
                 >
                   {t.feature}
                 </th>
