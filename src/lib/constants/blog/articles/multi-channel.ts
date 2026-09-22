@@ -629,7 +629,7 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 const whatsappPricingSalonCostsArticle: LocalBlogPost = {
   id: 1217,
   attributes: {
-    title: 'What WhatsApp Actually Costs a Salon in 2026: Per-Message Pricing Explained',
+    title: 'What WhatsApp Actually Costs a Salon in 2027: Per-Message Pricing Explained',
     slug: 'whatsapp-business-pricing-salon-costs',
     description:
       'Meta bills WhatsApp Business messages one at a time, and on 1 October 2026 service messages stop being free while marketing rates rise in the UAE and Saudi Arabia. This guide breaks down every rate that applies to a salon, works through a real monthly bill, and shows which messages are worth paying for.',
@@ -637,6 +637,7 @@ const whatsappPricingSalonCostsArticle: LocalBlogPost = {
 <h2>What You Actually Pay For</h2>
 <p>On the WhatsApp Business Platform, Meta charges you per message delivered, and only for template messages. There are four categories. <strong>Marketing</strong> templates (promotions, offers, rebooking nudges) are charged every time. <strong>Utility</strong> templates (booking confirmations, appointment reminders, payment receipts) are charged when they land outside an open customer service window. <strong>Authentication</strong> templates (one-time passcodes) are charged. <strong>Service</strong> messages, meaning your ordinary replies to a client inside the 24-hour window their message opened, were free from November 2024 - and from 1 October 2026 they are billable too, with the first 1,000 per month free.</p>
 <p>Rates depend on the country code of the person receiving the message, not where your salon is. A UAE salon messaging a client on a Saudi number pays the Saudi rate.</p>
+<p>The figures throughout this guide are the rates that take effect on 1 October 2026 - the ones your 2027 budget will be built on. What changed, and by how much, is the next section.</p>
 <p>The practical consequence, which this guide works through with real numbers: for a typical salon, marketing templates are roughly a third of the messages sent and three quarters of the bill.</p>
 
 <h2>What Changes on 1 October 2026</h2>
@@ -774,9 +775,9 @@ const whatsappPricingSalonCostsArticle: LocalBlogPost = {
 <h3>How can I reduce what I spend on WhatsApp?</h3>
 <p>Segment your broadcasts instead of sending to the whole list, since marketing templates are the bulk of a typical bill. Send utility templates while a service window is open, where they are free. Route paid social to WhatsApp to open free entry point windows. And encourage clients to message you first, because conversations you reply to are billed at the utility rate rather than the marketing rate.</p>
 `,
-    metaTitle: 'WhatsApp Business Pricing for Salons 2026 | The Daisy',
+    metaTitle: 'WhatsApp Business Pricing for Salons 2027 | The Daisy',
     metaDescription:
-      'What WhatsApp Business costs a salon in 2026: per-message rates for Gulf markets, the 1 October changes to service messages, and a worked monthly bill.',
+      'What WhatsApp Business costs a salon in 2027: per-message rates for Gulf markets, the 1 October 2026 changes to service messages, and a worked monthly bill.',
     createdAt: '2026-09-22T08:00:00.000Z',
     updatedAt: '2026-09-22T08:00:00.000Z',
     publishedAt: '2026-09-22T08:00:00.000Z',
@@ -1421,7 +1422,7 @@ const omnichannelCommunicationArticleAr: LocalBlogPost = {
 const whatsappPricingSalonCostsArticleAr: LocalBlogPost = {
   id: 1217,
   attributes: {
-    title: 'كم يكلفك واتساب فعليًا في صالونك 2026: شرح التسعير لكل رسالة',
+    title: 'كم يكلفك واتساب فعليًا في صالونك 2027: شرح التسعير لكل رسالة',
     slug: 'whatsapp-business-pricing-salon-costs',
     description:
       'تحتسب ميتا رسائل واتساب للأعمال رسالة برسالة، وفي 1 أكتوبر 2026 تتوقف مجانية رسائل الخدمة وترتفع أسعار التسويق في الإمارات والسعودية. يشرح هذا الدليل كل سعر ينطبق على الصالونات، ويحسب فاتورة شهرية واقعية، ويوضح أي الرسائل تستحق ما تدفعه.',
@@ -1429,6 +1430,7 @@ const whatsappPricingSalonCostsArticleAr: LocalBlogPost = {
 <h2>ما الذي تدفع مقابله فعليًا</h2>
 <p>على منصة واتساب للأعمال، تحتسب ميتا التكلفة لكل رسالة يتم تسليمها، ولرسائل القوالب فقط. هناك أربع فئات. قوالب <strong>التسويق</strong> (العروض والترويج ورسائل إعادة الحجز) تُحتسب في كل مرة. قوالب <strong>المنفعة</strong> (تأكيدات الحجز وتذكيرات المواعيد وإيصالات الدفع) تُحتسب عندما تصل خارج نافذة خدمة عملاء مفتوحة. قوالب <strong>المصادقة</strong> (رموز التحقق لمرة واحدة) تُحتسب. أما رسائل <strong>الخدمة</strong>، أي ردودك المعتادة على العميل داخل نافذة الـ24 ساعة التي فتحتها رسالته، فكانت مجانية منذ نوفمبر 2024 - ومن 1 أكتوبر 2026 أصبحت محتسبة أيضًا، مع أول 1000 رسالة شهريًا مجانًا.</p>
 <p>تعتمد الأسعار على رمز الدولة للشخص المستلم للرسالة، لا على موقع صالونك. صالون في الإمارات يراسل عميلًا على رقم سعودي يدفع السعر السعودي.</p>
+<p>الأرقام الواردة في هذا الدليل هي الأسعار التي تسري من 1 أكتوبر 2026 - وهي الأسعار التي ستُبنى عليها ميزانية صالونك لعام 2027. وما الذي تغيّر ومقداره فهو موضوع القسم التالي.</p>
 <p>والنتيجة العملية، التي يحسبها هذا الدليل بأرقام حقيقية: في الصالون النموذجي، تشكّل قوالب التسويق نحو ثلث الرسائل المرسلة وثلاثة أرباع الفاتورة.</p>
 
 <h2>ما الذي يتغير في 1 أكتوبر 2026</h2>
@@ -1566,9 +1568,9 @@ const whatsappPricingSalonCostsArticleAr: LocalBlogPost = {
 <h3>كيف أقلّل ما أنفقه على واتساب؟</h3>
 <p>قسّم حملات البث بدل الإرسال إلى القائمة كاملة، فقوالب التسويق هي الجزء الأكبر من الفاتورة النموذجية. وأرسل قوالب المنفعة أثناء فتح نافذة الخدمة حيث تكون مجانية. ووجّه الإعلانات المدفوعة إلى واتساب لفتح نوافذ نقطة دخول مجانية. وشجّع العملاء على مراسلتك أولًا، لأن المحادثات التي ترد عليها تُحتسب بسعر المنفعة لا بسعر التسويق.</p>
 `,
-    metaTitle: 'أسعار واتساب للأعمال للصالونات 2026 | ديزي',
+    metaTitle: 'أسعار واتساب للأعمال للصالونات 2027 | ديزي',
     metaDescription:
-      'كم يكلّف واتساب للأعمال صالونك في 2026: أسعار كل رسالة في أسواق الخليج، وتغييرات 1 أكتوبر على رسائل الخدمة، وفاتورة شهرية محسوبة.',
+      'كم يكلّف واتساب للأعمال صالونك في 2027: أسعار كل رسالة في أسواق الخليج، وتغييرات 1 أكتوبر 2026 على رسائل الخدمة، وفاتورة شهرية محسوبة.',
     createdAt: '2026-09-22T08:00:00.000Z',
     updatedAt: '2026-09-22T08:00:00.000Z',
     publishedAt: '2026-09-22T08:00:00.000Z',
