@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { useEffect, useMemo, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
@@ -63,9 +62,16 @@ export const TestimonialsCustomerList = ({
     distributeTestimonials(visibleTestimonials);
 
   const renderTestimonial = (testimonial: any, index: any) => {
-    const ownerData = testimonial.attributes.iconOwner?.data?.[0];
     const infoUser = testimonial.attributes.listTestimonials;
-    const iconOwner = ownerData?.attributes?.url ?? '/images/testimonials/default-avatar.webp';
+    // These testimonials are anonymised (first name + initial), so there is no
+    // portrait to show. Derive initials from the author name instead.
+    const initials = String(infoUser.author ?? '')
+      .split(/\s+/)
+      .filter(Boolean)
+      .slice(0, 2)
+      .map((word: string) => word[0])
+      .join('')
+      .toUpperCase();
 
     return (
       <li key={index} className="bg-white h-fit p-6 rounded-lg shadow">
@@ -76,13 +82,12 @@ export const TestimonialsCustomerList = ({
           {infoUser.description}
         </p>
         <div className="flex items-center">
-          <Image
-            src={iconOwner}
-            alt={infoUser.author}
-            className="mr-4 rtl:mr-0 rtl:ml-4 rounded-full"
-            width={40}
-            height={40}
-          />
+          <div
+            aria-hidden="true"
+            className="mr-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-semibold text-white ltr:font-montserrat rtl:mr-0 rtl:ml-4"
+          >
+            {initials}
+          </div>
           <div>
             <p className="text-sm ltr:font-montserrat font-semibold">
               {infoUser.author}
