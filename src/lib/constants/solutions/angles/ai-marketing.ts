@@ -45,7 +45,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { label: 'Payments & Invoicing', description: 'Seamless transactions and financial tracking' },
         { label: 'Staff Management', description: 'Scheduling, permissions, and performance' },
         { label: 'Analytics Dashboard', description: 'Revenue trends, insights, and reporting' },
-        { label: 'Brand Control', description: 'White-label everything with your brand' },
+        { label: 'Brand Control', description: 'Branded booking page with your logo and colours' },
       ], stats: [{ value: '24/7', context: 'AI marketing' }, { value: '8', context: 'tools in one platform' }, { value: '10+', context: 'languages supported' }] },
       inlineCtas: {
         afterScroll: { headline: 'Ready to let AI handle your marketing?', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app' },

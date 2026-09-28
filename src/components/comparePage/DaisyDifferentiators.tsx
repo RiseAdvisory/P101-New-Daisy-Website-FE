@@ -18,7 +18,7 @@ const uiStrings = {
     descriptions: [
       'Handles bookings, payments, and customer service in Arabic and English around the clock.',
       'Marketplace, cashback rewards, and AI marketing working together to fill your calendar.',
-      'White-label everything so clients see your brand, not ours.',
+      'A branded booking page, so clients see your brand, not ours.',
       'More businesses on the platform means smarter AI recommendations for everyone.',
       'Booking, payments, CRM, marketing, analytics, inventory, marketplace, and AI in one platform.',
       'Native Arabic and English with full RTL support, built for the GCC market and beyond.',

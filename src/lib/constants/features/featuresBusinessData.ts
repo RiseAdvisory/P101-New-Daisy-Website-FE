@@ -371,7 +371,7 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
       control: [
         item(
           1,
-          'White-Label Branding',
+          'Branded Booking Page',
           'Make Daisy look like your own. Customize colors, logos, and client-facing elements to match your brand.',
           '/images/features/business/white-label-branding.webp',
           { padding: '24px 24px 24px 24px', objectFit: 'cover', objectPosition: 'bottom' },

@@ -476,7 +476,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
   <li>All-in-one platform (booking, payments, marketing, team management, analytics)</li>
   <li>AI and automation capabilities</li>
   <li>Multi-location support built into the core product</li>
-  <li>White-label branding to maintain your identity</li>
+  <li>Branded booking pages to maintain your identity</li>
   <li>Open ecosystem (integrations with tools you already use)</li>
   <li>Mobile-first design (manage your business from anywhere)</li>
 </ul>`,

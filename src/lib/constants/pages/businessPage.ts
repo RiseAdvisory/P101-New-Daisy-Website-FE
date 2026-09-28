@@ -29,7 +29,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         { label: 'Staff Management', description: 'Scheduling, permissions, and performance' },
         { label: 'Marketing Engine', description: 'Promotions, campaigns, and customer retention' },
         { label: 'Analytics Dashboard', description: 'Revenue trends, insights, and reporting' },
-        { label: 'Brand Control', description: 'White-label everything with your brand' },
+        { label: 'Brand Control', description: 'Branded booking page with your logo and colours' },
       ],
       stats: [
         { value: '8', context: 'tools in one platform' },

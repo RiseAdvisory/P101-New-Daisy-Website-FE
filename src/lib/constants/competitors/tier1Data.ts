@@ -212,7 +212,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'Official Meta Tech Provider with native WhatsApp Business API and Instagram integration vs no messaging automation',
       '360° customer acquisition (marketplace + cashback + AI marketing) vs marketplace-only discovery',
       'Native Arabic UI with equal Arabic/English priority vs English-only platform',
-      'Full brand control and white-labeling vs Fresha-branded experience',
+      'Branded booking page with no Daisy branding vs Fresha-branded experience',
       'Predictable flat pricing vs subscription fees plus transaction fees and commissions',
       'AI-powered analytics and recommendations vs basic static reports',
       'Complete GCC compliance (VAT, local payment methods) vs limited UAE presence',
@@ -241,7 +241,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'No Arabic UI. English only',
       'Subscription fees plus transaction fees and marketplace commissions add up quickly',
       'Basic marketing tools (no AI, no CRM automation)',
-      'No white-labeling, all customer-facing pages are Fresha-branded',
+      'No branding control, all customer-facing pages are Fresha-branded',
       'Limited GCC presence, no local compliance, payment methods, or support',
       'Recent pricing changes causing partner dissatisfaction',
     ],
@@ -255,7 +255,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Daisy compare to Fresha for salon management?',
         answer:
-          'While Fresha focuses on basic operations with a marketplace, Daisy provides a complete growth platform. Daisy includes an AI receptionist that handles bookings 24/7, proactive customer acquisition through cashback and AI-powered marketing, full brand control with white-labeling, and native Arabic/English support, features Fresha doesn\'t offer.',
+          'While Fresha focuses on basic operations with a marketplace, Daisy provides a complete growth platform. Daisy includes an AI receptionist that handles bookings 24/7, proactive customer acquisition through cashback and AI-powered marketing, a branded booking page, and native Arabic/English support, features Fresha doesn\'t offer.',
       },
       {
         question: 'Can I switch from Fresha to Daisy?',
@@ -503,7 +503,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'Official Meta Tech Provider with native WhatsApp and Instagram messaging vs no messaging platform integration',
       'Native multilingual support (Arabic/English and more) vs English-only platform',
       'Customer acquisition engine with cashback rewards vs basic marketplace listing',
-      'Full brand control with white-labeling vs Booksy-branded experience',
+      'Branded booking page with no Daisy branding vs Booksy-branded experience',
       'Complete GCC market support vs zero GCC presence',
       'All-in-one flat pricing vs per-provider pricing that scales with team',
       'AI-powered marketing automation vs no marketing AI',
@@ -514,7 +514,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'Want comprehensive AI beyond just call handling',
       'Per-provider pricing getting expensive as team grows',
       'Need customer acquisition tools beyond marketplace',
-      'Want white-labeled booking experience for brand building',
+      'Want a branded booking experience for brand building',
       'Need GCC compliance and local payment methods',
     ],
 
@@ -531,7 +531,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'No Arabic support or GCC presence',
       'AI limited to call handling only',
       'Per-provider pricing expensive for larger teams',
-      'No white-labeling or brand control',
+      'No branding control on customer-facing pages',
       'Limited marketing and CRM tools',
       'Weak inventory management',
       'No cashback or loyalty program built in',
@@ -793,7 +793,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'Official Meta Tech Provider with native WhatsApp and Instagram APIs vs basic SMS notifications',
       'AI-powered customer acquisition engine vs passive marketplace listing',
       'Native Arabic/English support vs English-only',
-      'Full white-label brand control vs Vagaro-branded experience',
+      'Branded booking page with no Daisy branding vs Vagaro-branded experience',
       'Cashback reward system for customer retention vs no loyalty program',
       'Smart AI scheduling optimization vs manual calendar management',
       'GCC market compliance and local payments vs no international support',
@@ -804,7 +804,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'Per-calendar add-on pricing adds up with growing team',
       'No Arabic support for Middle East expansion',
       'Want AI-driven marketing, not just email/text blasts',
-      'Need white-labeling for brand consistency',
+      'Need a branded booking page for brand consistency',
       'Want cashback rewards to drive customer loyalty',
       'Marketplace alone isn\'t enough for customer acquisition',
     ],
@@ -822,7 +822,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'AI chatbot cannot book appointments or process payments',
       'No Arabic support or GCC presence',
       'Add-on pricing creates unpredictable costs',
-      'No white-labeling option',
+      'No branding control option',
       'Marketing tools are basic (no AI, no CRM automation)',
       'No cashback or loyalty system',
       'Interface can feel dated compared to newer platforms',
@@ -837,7 +837,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Daisy compare to Vagaro?',
         answer:
-          'Vagaro offers comprehensive operations features at a low price, but Daisy provides growth capabilities Vagaro lacks: a 24/7 AI receptionist, cashback-driven customer acquisition, white-label branding, and native Arabic support. While Vagaro\'s chatbot can answer questions, Daisy\'s AI actually books appointments and processes payments.',
+          'Vagaro offers comprehensive operations features at a low price, but Daisy provides growth capabilities Vagaro lacks: a 24/7 AI receptionist, cashback-driven customer acquisition, branded booking pages, and native Arabic support. While Vagaro\'s chatbot can answer questions, Daisy\'s AI actually books appointments and processes payments.',
       },
       {
         question: 'Can Vagaro\'s AI chatbot book appointments?',
@@ -1116,7 +1116,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'Native Arabic/English support vs English-only',
       'No contracts or lock-in vs annual contracts with termination fees',
       'Built for beauty/wellness vs fitness-first platform',
-      'Full white-label brand control vs Mindbody-branded marketplace',
+      'Branded booking page with no Daisy branding vs Mindbody-branded marketplace',
       'Customer acquisition engine vs marketplace-dependent growth',
       'GCC compliance and local payments vs no international support',
     ],
@@ -1161,7 +1161,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Daisy compare to Mindbody?',
         answer:
-          'Mindbody has the largest marketplace but charges premium prices with AI as a costly add-on. Daisy includes AI receptionist, marketing, and analytics in the base platform with no contracts. For beauty businesses, Daisy is purpose-built with Arabic support, white-labeling, and cashback rewards, features Mindbody doesn\'t offer.',
+          'Mindbody has the largest marketplace but charges premium prices with AI as a costly add-on. Daisy includes AI receptionist, marketing, and analytics in the base platform with no contracts. For beauty businesses, Daisy is purpose-built with Arabic support, branded booking pages, and cashback rewards, features Mindbody doesn\'t offer.',
       },
       {
         question: 'Is Mindbody good for beauty salons?',
@@ -1417,7 +1417,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'No contracts or lock-in vs annual enterprise agreements',
       'SMB-friendly from Day 1 vs enterprise-only focus',
       'Cashback and marketplace consumer acquisition vs no marketplace',
-      'Full white-label brand control vs Zenoti-branded experience',
+      'Branded booking page with no Daisy branding vs Zenoti-branded experience',
       'Faster onboarding (days, not weeks) vs complex enterprise implementation',
     ],
 
