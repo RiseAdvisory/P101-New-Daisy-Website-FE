@@ -13,7 +13,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
       : 'Salon & Spa Pricing Plans | The Daisy',
     description: isAr
       ? 'باقات أسعار شفافة لصالونات ومنتجعات التجميل. ابدأ تجربة مجانية لمدة 14 يوماً. بدون بطاقة ائتمان.'
-      : 'Compare The Daisy pricing plans for salons, spas, and clinics. Basic $50/mo, Growth $150/mo, Business $250/mo. Start with a free 14-day trial. No hidden fees.',
+      : 'Compare The Daisy pricing for salons, spas and clinics. Basic from $1/mo (+$50 past 5 appointments), Growth $150, Business $250. Free 14-day trial.',
     keywords: [
       'salon software pricing',
       'spa booking system cost',
@@ -30,7 +30,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
         : 'Salon & Spa Pricing Plans | The Daisy',
       description: isAr
         ? 'باقات أسعار شفافة لصالونات ومنتجعات التجميل. ابدأ تجربة مجانية لمدة 14 يوماً. بدون بطاقة ائتمان.'
-        : 'Flexible pricing plans for salons, spas, and clinics. Basic $50, Growth $150, Business $250 per month. 14-day free trial included.',
+        : 'Flexible pricing for salons, spas and clinics. Basic from $1/mo (+$50 past 5 appointments), Growth $150, Business $250. 14-day free trial included.',
       url: `https://www.jointhedaisy.com/${locale}/pricing/business`,
       type: 'website',
       images: [
@@ -61,7 +61,7 @@ export default function PricingBusinessPage({ params }: { params: { locale: stri
     <>
       <WebPageSchema
         title="Salon & Spa Pricing Plans | The Daisy"
-        description="Compare The Daisy pricing plans for salons, spas, and clinics. Basic $50/mo, Growth $150/mo, Business $250/mo. 14-day free trial."
+        description="Compare The Daisy pricing for salons, spas and clinics. Basic from $1/mo (+$50 past 5 appointments), Growth $150, Business $250. 14-day free trial."
         url="https://www.jointhedaisy.com/pricing/business"
         dateModified="2026-04-05T00:00:00.000Z"
         primaryImage="/images/og/og-default.jpg"

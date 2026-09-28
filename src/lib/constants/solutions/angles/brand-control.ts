@@ -144,7 +144,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       },
       pricingHook: {
         headline: 'Free to Start. Grow at Your Own Pace.',
-        body: "14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.",
+        body: "14-day free trial with full access to every feature. No credit card required. After that, plans start at $1/month, with +$50/month once you pass 5 appointments in a month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.",
         ctaText: 'Start Your 14-Day Free Trial',
         ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
@@ -302,7 +302,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       },
       pricingHook: {
         headline: 'ابدأ مجانًا. انمُ بالسرعة التي تناسبك.',
-        body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولار/شهريًا. موظف الاستقبال الذكي لا يتولى الرسائل فحسب. بل يتعلم تفضيلات عملائك بمرور الوقت، ويُخصّص كل تفاعل ويحوّل الزوار الجدد إلى عملاء أوفياء. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، عملاؤك الحاليون، بدون أي عمولة.',
+        body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، تبدأ الباقات من دولار واحد شهرياً، مع +50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر. موظف الاستقبال الذكي لا يتولى الرسائل فحسب. بل يتعلم تفضيلات عملائك بمرور الوقت، ويُخصّص كل تفاعل ويحوّل الزوار الجدد إلى عملاء أوفياء. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، عملاؤك الحاليون، بدون أي عمولة.',
         ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
         ctaLink: '/get-the-app',
         pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190',
