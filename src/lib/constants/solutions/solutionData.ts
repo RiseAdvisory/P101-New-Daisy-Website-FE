@@ -146,7 +146,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'What features should I look for in salon software?',
         answer:
-          'Key features include online booking, automated reminders, POS, client profiles, staff scheduling, marketing automation, and reporting. Advanced features to look for in 2026 include AI receptionist, cashback loyalty, multi-channel booking sync, and white-label branding.',
+          'Key features include online booking, automated reminders, POS, client profiles, staff scheduling, marketing automation, and reporting. Advanced features to look for in 2026 include AI receptionist, cashback loyalty, multi-channel booking sync, and branded booking pages.',
       },
       {
         question: 'Is Daisy suitable for a small salon with one stylist?',
@@ -221,7 +221,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'White-Label Booking Experience',
         description:
-          'Your brand, your booking page. Daisy provides fully customizable white-label booking that matches your spa\'s premium aesthetic.',
+          'Your brand, your booking page. Daisy gives you a branded booking page with your logo, name and brand colours to match your spa\'s premium aesthetic.',
       },
       {
         title: 'Cashback Guest Loyalty',
@@ -273,7 +273,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'Does Daisy work for day spas and resort spas?',
         answer:
-          'Yes. Daisy supports both day spas and resort/hotel spas with features like room management, multi-service scheduling, retail POS, and white-label branding that matches your property\'s aesthetic.',
+          'Yes. Daisy supports both day spas and resort/hotel spas with features like room management, multi-service scheduling, retail POS, and branded booking pages that matches your property\'s aesthetic.',
       },
       {
         question: 'How does Daisy help with spa guest retention?',
@@ -395,7 +395,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'What features should I look for in beauty salon software?',
         answer:
-          'Essential features: online booking, automated reminders, client profiles, POS, and staff scheduling. Growth features to prioritize: AI receptionist, cashback loyalty, marketing automation, marketplace visibility, and white-label branding.',
+          'Essential features: online booking, automated reminders, client profiles, POS, and staff scheduling. Growth features to prioritize: AI receptionist, cashback loyalty, marketing automation, marketplace visibility, and branded booking pages.',
       },
       {
         question: 'How does Daisy help beauty salons get new clients?',
@@ -789,7 +789,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       { question: 'Does the salon booking app work offline?', answer: 'Daisy\'s booking app works online from any device. For staff, the management app includes offline functionality for essential tasks like checking schedules and client profiles when connectivity is limited.' },
       { question: 'Can I switch from Booksy or Fresha\'s booking app to Daisy?', answer: 'Yes. Daisy provides migration support including client data, booking history, and staff profiles. Unlike Fresha, Daisy\'s booking page is fully white-label, no competitor branding or client poaching.' },
       { question: 'Does the booking app support Arabic?', answer: 'Yes. Daisy\'s booking app is fully native in Arabic with RTL layout. Clients can browse services, select staff, and complete bookings entirely in Arabic or English.' },
-      { question: 'How does Daisy\'s white-label booking work?', answer: 'Daisy removes all third-party branding from your booking experience. Your logo, your colors, your domain, clients see only your brand. No "Powered by" logos or links to competitor listings.' },
+      { question: 'How does Daisy\'s white-label booking work?', answer: 'Daisy removes all third-party branding from your booking experience. Your logo, your name, your colors, clients see only your brand. No "Powered by" logos or links to competitor listings.' },
       { question: 'Can clients pay when they book through the app?', answer: 'Yes. Daisy supports full payment or deposit collection at the time of booking. This reduces no-shows and secures revenue. Clients can pay via card, Apple Pay, Google Pay, or Mada (GCC).' },
       { question: 'Does the salon booking app send appointment reminders?', answer: 'Yes. Automated reminders are sent via SMS, WhatsApp, or email based on client preference. Reminders go out at configurable intervals (e.g., 24 hours and 1 hour before the appointment) to minimize no-shows.' },
     ],
@@ -1591,7 +1591,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       { question: 'هل يعمل تطبيق حجز الصالون بدون إنترنت؟', answer: 'تطبيق حجز ديزي يعمل إلكترونياً من أي جهاز. بالنسبة للموظفين، يتضمن تطبيق الإدارة وظائف دون اتصال للمهام الأساسية مثل التحقق من الجداول وملفات العملاء عندما يكون الاتصال محدوداً.' },
       { question: 'هل يمكنني الانتقال من تطبيق Booksy أو Fresha إلى ديزي؟', answer: 'نعم. يوفر ديزي دعم نقل يشمل بيانات العملاء وسجل الحجوزات وملفات الموظفين. على عكس Fresha، صفحة حجز ديزي بعلامتك التجارية بالكامل — بدون علامة منافسين أو سرقة عملاء.' },
       { question: 'هل يدعم تطبيق الحجز العربية؟', answer: 'نعم. تطبيق حجز ديزي أصيل بالكامل بالعربية مع تخطيط RTL. يمكن للعملاء تصفح الخدمات واختيار الموظفين وإتمام الحجوزات بالكامل بالعربية أو الإنجليزية.' },
-      { question: 'كيف يعمل الحجز بعلامتك التجارية من ديزي؟', answer: 'يزيل ديزي جميع العلامات التجارية للجهات الخارجية من تجربة حجزك. شعارك وألوانك ونطاقك — يرى العملاء علامتك التجارية فقط. بدون شعارات "Powered by" أو روابط لقوائم المنافسين.' },
+      { question: 'كيف يعمل الحجز بعلامتك التجارية من ديزي؟', answer: 'يزيل ديزي جميع العلامات التجارية للجهات الخارجية من تجربة حجزك. شعارك واسمك وألوانك — يرى العملاء علامتك التجارية فقط. بدون شعارات "Powered by" أو روابط لقوائم المنافسين.' },
       { question: 'هل يمكن للعملاء الدفع عند الحجز عبر التطبيق؟', answer: 'نعم. يدعم ديزي الدفع الكامل أو تحصيل العربون عند الحجز. هذا يقلل عدم الحضور ويؤمّن الإيرادات. يمكن للعملاء الدفع عبر البطاقة أو Apple Pay أو Google Pay أو مدى (الخليج).' },
       { question: 'هل يرسل تطبيق حجز الصالون تذكيرات بالمواعيد؟', answer: 'نعم. تُرسل التذكيرات التلقائية عبر الرسائل النصية أو واتساب أو البريد الإلكتروني حسب تفضيل العميل. تُرسل التذكيرات بفترات قابلة للتخصيص (مثلاً 24 ساعة وساعة واحدة قبل الموعد) لتقليل عدم الحضور.' },
     ],

@@ -1689,7 +1689,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
     metaTitle:
       'Salon Business Growth. Marketplace, Brand Building & Multi-Location | The Daisy',
     metaDescription:
-      'Scale your beauty business with Daisy. Marketplace visibility, customer acquisition, white-label branding, multi-location management, and franchise support, all from one platform.',
+      'Scale your beauty business with Daisy. Marketplace visibility, customer acquisition, branded booking pages, multi-location management, and franchise support, all from one platform.',
     keywords: [
       'salon business growth',
       'beauty business expansion',
@@ -1705,7 +1705,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
 
     heroTitle: 'Business Growth Tools That Scale With Your Ambition',
     heroSubtitle:
-      'From marketplace discovery to white-label branding, multi-location management to franchise support. Daisy gives you the infrastructure to grow your beauty business without growing your complexity.',
+      'From marketplace discovery to branded booking pages, multi-location management to franchise support. Daisy gives you the infrastructure to grow your beauty business without growing your complexity.',
     heroStat: {
       value: '360\u00b0',
       label: 'Customer acquisition coverage',
@@ -1717,7 +1717,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
     keyCapabilities: [
       'Commission-free marketplace listing for client discovery',
       '360-degree customer acquisition across multiple channels',
-      'White-label branding on booking pages, emails, and receipts',
+      'Branded booking pages on booking pages, emails, and receipts',
       'Multi-location management from a single dashboard',
       'Franchise support with centralised policies and local flexibility',
     ],
@@ -1751,11 +1751,11 @@ export const featureDeepDives: FeatureDeepDive[] = [
       {
         name: 'White-Label Brand Experience',
         description:
-          'Your clients should see your brand, not a generic software platform. Daisy\'s white-label capability lets you present the booking experience, client app, and communications under your own brand identity. Your logo, colours, fonts, and domain create a seamless brand experience from discovery to post-visit follow-up. Clients build loyalty to your salon, not to a third-party app.',
+          'Your clients should see your brand, not a generic software platform. Daisy\'s branded booking page lets you present the booking experience, client app, and communications under your own brand identity. Your logo and brand colours create a seamless brand experience from discovery to post-visit follow-up. Clients build loyalty to your salon, not to a third-party app.',
         howItWorks: [
           'Upload your logo, select your brand colours, and configure your visual identity in the brand settings.',
           'Your booking page, client communications, and app experience reflect your branding.',
-          'Optionally use a custom domain for your booking page (e.g., book.yoursalon.com).',
+          'Share a short booking link for your business (e.g., thedaisy.link/your-salon).',
           'All client-facing touchpoints, confirmations, reminders, receipts, carry your brand identity.',
         ],
         keyBenefit:
@@ -1810,7 +1810,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
         step: 1,
         title: 'Establish Your Brand Presence',
         description:
-          'Set up your white-label branding, complete your marketplace profile, and optimise your online booking page. This creates your digital foundation for growth.',
+          'Set up your branded booking pages, complete your marketplace profile, and optimise your online booking page. This creates your digital foundation for growth.',
       },
       {
         step: 2,
@@ -1840,7 +1840,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
       },
       {
         area: 'Brand Experience',
-        daisy: 'Full white-label with your logo, colours, domain, and brand voice',
+        daisy: 'Branded booking page with your logo, colours, and brand voice',
         typical: 'Generic platform branding that builds loyalty to the tool, not your business',
       },
       {
@@ -1937,7 +1937,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
       {
         question: 'What does white-label mean in practice?',
         answer:
-          'White-label means your clients see your brand, not Daisy\'s. Your booking page displays your logo, colours, and font. Communications (confirmations, reminders, receipts) carry your branding. You can use a custom domain for your booking page. The technology powers the experience, but the brand is entirely yours.',
+          'A branded booking page means your clients see your brand, not Daisy\'s. Your booking page displays your logo, your business name, and your brand colours, and no Daisy branding appears on it. Communications (confirmations, reminders, receipts) carry your branding. You share it as a short booking link, e.g. thedaisy.link/your-salon. The technology powers the experience, but the brand your clients see is yours.',
       },
       {
         question: 'How difficult is it to add a new location?',

@@ -175,7 +175,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'Your team is growing and per-provider pricing is getting expensive',
       'You want cashback rewards to drive customer loyalty',
       'You operate in the GCC market',
-      'You want to build your own brand with white-labeling',
+      'You want to build your own brand with a branded booking page',
     ],
     whoShouldChooseCompetitor: [
       'You\'re a solo barber or independent beauty professional',
@@ -446,7 +446,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     keywords: ['daisy vs dingg', 'dingg alternative', 'ai salon software', 'gcc salon management'],
     heroTitle: 'Daisy vs DINGG',
     heroSubtitle: 'Both offer AI and Arabic support, but Daisy is built for the GCC — live in Kuwait today — with a complete growth ecosystem.',
-    tldr: 'DINGG offers a competitive AI suite at $49-79/mo with UAE expansion. Daisy provides broader GCC coverage (6 countries vs 1), consumer marketplace, cashback, and white-labeling that DINGG lacks.',
+    tldr: 'DINGG offers a competitive AI suite at $49-79/mo with UAE expansion. Daisy provides broader GCC coverage (6 countries vs 1), consumer marketplace, cashback, and branded booking pages that DINGG lacks.',
     verdict: 'DINGG is a credible AI competitor at an affordable price point. But it\'s early in GCC expansion (UAE only), has no marketplace or cashback, and limited funding. Daisy offers more comprehensive AI, broader GCC presence, and stronger growth tools.',
     featureCommentary: {
       onlineBooking: 'Both offer good booking. DINGG has basic booking; Daisy adds AI-powered full-flow self-service.',
@@ -687,14 +687,14 @@ export const alternativePages: AlternativePageData[] = [
       'No Arabic language support, can\'t serve GCC clients',
       'No cashback or loyalty program to retain customers',
       'Booksy-branded experience, limited control over your brand',
-      'No white-labeling option for professional branding',
+      'No branding control for professional branding',
     ],
     switchingReasons: [
       'Flat pricing regardless of team size, save as you grow',
       'Full AI ecosystem: receptionist, chatbot, smart scheduling, marketing',
       'Native Arabic/English for GCC market expansion',
       'Cashback rewards drive customer retention automatically',
-      'White-label everything, your brand, your experience',
+      'Branded booking page: your logo, your name, your colours',
       'No contracts, easy migration support',
     ],
     topAlternatives: ['fresha', 'vagaro', 'glossgenius', 'boulevard'],
@@ -1017,7 +1017,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mangomint': 'Best for operations-focused salons wanting clean UX',
       'square-appointments': 'Best for businesses already using Square for payments',
     },
-    daisyEdge: 'None of these alternatives include an AI receptionist that books appointments 24/7, a cashback-powered customer acquisition marketplace, or native Arabic support. Daisy combines all three with white-label branding and flat pricing — growth tools, not just operations.',
+    daisyEdge: 'None of these alternatives include an AI receptionist that books appointments 24/7, a cashback-powered customer acquisition marketplace, or native Arabic support. Daisy combines all three with branded booking pages and flat pricing — growth tools, not just operations.',
   },
   {
     slug: 'best-booksy-alternatives',
@@ -1302,7 +1302,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'You want basic AI voice receptionist (Digital Doorman)',
       'You\'re an independent barber or beauty pro',
     ],
-    daisyPitch: 'Both Fresha and Booksy are operations tools with marketplace bolt-ons. Daisy is a growth platform with full AI ecosystem, Arabic support, cashback rewards, and white-labeling, capabilities neither competitor offers.',
+    daisyPitch: 'Both Fresha and Booksy are operations tools with marketplace bolt-ons. Daisy is a growth platform with full AI ecosystem, Arabic support, cashback rewards, and branded booking pages, capabilities neither competitor offers.',
   },
   {
     slugA: 'fresha',
@@ -1505,7 +1505,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'You want a free starting tier with no subscription',
       'You already use the Square ecosystem',
     ],
-    daisyPitch: 'Fresha offers marketplace reach; Square offers POS strength. Daisy combines both approaches with full AI receptionist, Arabic support, cashback-driven customer acquisition, and white-label branding.',
+    daisyPitch: 'Fresha offers marketplace reach; Square offers POS strength. Daisy combines both approaches with full AI receptionist, Arabic support, cashback-driven customer acquisition, and branded booking pages.',
   },
   {
     slugA: 'booksy',
@@ -1571,7 +1571,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'Square payment ecosystem is already in use',
       'Basic scheduling is all you need',
     ],
-    daisyPitch: 'Vagaro manages operations well; Square handles payments well. Daisy is a growth platform that does both and adds full AI receptionist, Arabic support, cashback-driven acquisition, and white-label branding.',
+    daisyPitch: 'Vagaro manages operations well; Square handles payments well. Daisy is a growth platform that does both and adds full AI receptionist, Arabic support, cashback-driven acquisition, and branded booking pages.',
   },
   {
     slugA: 'glossgenius',
