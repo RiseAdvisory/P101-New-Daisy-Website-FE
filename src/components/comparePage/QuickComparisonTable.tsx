@@ -6,6 +6,8 @@ interface QuickComparisonEntry {
   label: string;
   daisy: string;
   competitor: string;
+  /** Set by the caller when Daisy genuinely leads this row. */
+  daisyWins?: boolean;
 }
 
 interface QuickComparisonTableProps {
@@ -85,8 +87,10 @@ export const QuickComparisonTable: FC<QuickComparisonTableProps> = ({
             </thead>
             <tbody>
               {entries.map((entry, index) => {
-                const daisyWins =
-                  entry.daisy.toLowerCase() !== entry.competitor.toLowerCase();
+                // A differing string is not a win. This used to mark Daisy as
+                // winning the GCC row against a competitor listing the same six
+                // countries in a different order. Callers say explicitly.
+                const daisyWins = entry.daisyWins ?? false;
 
                 return (
                   <tr

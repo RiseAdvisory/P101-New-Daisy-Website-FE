@@ -248,7 +248,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'Is free salon software worth it?',
           answer:
-            'Free platforms make their money on marketplace commissions, transaction fees or features they hold back. Work out the total: a "free" platform taking 20% commission can cost more than a paid one on flat pricing.',
+            'Free platforms make their money on marketplace commissions, transaction fees or features they hold back. Work out the total: a low-priced platform taking a 20-50% commission on each new client can cost more than a paid one on flat pricing.',
         },
         {
           question: 'What salon software works best for multi-location businesses?',
@@ -268,7 +268,7 @@ export const guideData: I18nContent<GuideData[]> = {
       answer:
         'Export your client data, pick a platform that will help you import it, Daisy does this free, set the new system up alongside the old one, and tell your clients clearly what is changing.',
       problemExplained:
-        'Fresha has added paid features and new fees to a platform that used to be free, and a lot of salon owners have started looking at alternative <a href="/en/glossary/salon-management-software">salon management software</a> because of it. Switching still feels risky: there is client data at stake, years of booking history, and a new system to learn. Planning is what removes the risk. Export the data first, build the new platform alongside Fresha, and move across once you have tested everything.',
+        'Fresha now charges a monthly subscription for a platform that was previously free, alongside transaction and marketplace fees. If that changed your numbers, it is worth comparing the total against alternative <a href="/en/glossary/salon-management-software">salon management software</a> before you renew. Switching still feels risky: there is client data at stake, years of booking history, and a new system to learn. Planning is what removes the risk. Export the data first, build the new platform alongside Fresha, and move across once you have tested everything.',
       steps: [
         {
           name: 'Export your data from Fresha',
@@ -276,7 +276,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
         {
           name: 'Choose your new platform',
-          text: 'Compare alternatives on features, pricing and migration help. The questions that matter: does it have the AI Fresha does not, can you read the pricing without a call, and does it work in your market?',
+          text: 'Compare alternatives on features, pricing and migration help. The questions that matter: does the AI reach customers on the channels you actually use, WhatsApp and Instagram rather than the phone alone; is the full cost published, including transaction and marketplace fees; and does it support your market and language?',
         },
         {
           name: 'Set up the new platform in parallel',
@@ -296,7 +296,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'Daisy makes switching from Fresha seamless. Free data migration (Business plan) imports all your client records and history. You get features Fresha never offered: AI receptionist, cashback loyalty, branded booking pages, and Arabic support. Plus transparent flat pricing with no marketplace commissions.',
+        'Daisy makes switching from Fresha straightforward. Free data migration (Business plan) imports all your client records and history. Daisy adds what Fresha does not: an AI receptionist that works across WhatsApp and Instagram as well as the phone, cashback that brings new clients in, a fully white-label booking page, and flat pricing with nothing added per transaction and no marketplace commission.',
       faqs: [
         {
           question: 'Can I export my data from Fresha?',
@@ -306,7 +306,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What is the best Fresha alternative in 2026?',
           answer:
-            'For a salon that wants AI, cashback loyalty and pricing it can read, Daisy is the strongest option. Where Fresha\'s fee structure keeps moving, Daisy starts at $1/month, plus $50 once you pass 5 appointments in a month, with no commissions.',
+            'For a salon that wants AI across WhatsApp and Instagram, cashback loyalty and a single flat bill, Daisy is the strongest option. Fresha\'s total combines a subscription, a per-transaction fee and a one-time commission on each new marketplace client; Daisy is $1/month, plus $50 once you pass 5 appointments in a month, with no commissions.',
         },
         {
           question: 'Will I lose my clients if I switch from Fresha?',
@@ -321,12 +321,12 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'Is Fresha still free?',
           answer:
-            'Fresha has been adding paid features, transaction fees and premium tiers. A basic free plan may still exist, but most salons need what sits above it, which puts the real cost level with or above a flat-rate alternative like Daisy.',
+            'No. Fresha now sells subscription plans, priced per market: in the UAE that is AED 149.95 a month for the Independent plan, with Team plans quoted on request. On top of that sit transaction fees of 4.90% + AED 0.75 and a one-time 50% commission on each new marketplace client, minimum AED 20. Add those together before comparing against a flat-rate alternative like Daisy.',
         },
         {
           question: 'What features does Daisy have that Fresha doesn\'t?',
           answer:
-            'Several: an AI voice receptionist, cashback acquisition, a branded booking page, native Arabic, and flat published pricing with no transaction fees or marketplace commissions.',
+            'Daisy\'s AI handles WhatsApp and Instagram as well as phone calls, where Fresha\'s AI Concierge is phone-only. Daisy also adds cashback-funded acquisition, a fully white-label booking page with no third-party badge, and flat published pricing with nothing added per transaction and no marketplace commission.',
         },
       ],
       metaTitle: 'How to Switch from Fresha | Migration Guide 2026',
@@ -655,7 +655,7 @@ export const guideData: I18nContent<GuideData[]> = {
       answer:
         'انتقل من Fresha عن طريق تصدير بيانات عملائك، واختيار منصة تدعم الترحيل (مثل ترحيل ديزي المجاني)، وإعداد نظامك الجديد بالتوازي، وإبلاغ العملاء بالتغيير بتواصل واضح.',
       problemExplained:
-        'دفعت تغييرات أسعار Fresha الأخيرة، بعد إدخال ميزات مدفوعة ورسوم جديدة لمنصة كانت مجانية سابقًا، العديد من أصحاب الصالونات إلى استكشاف بدائل <a href="/ar/glossary/salon-management-software">برامج إدارة الصالونات</a>. لكن التبديل يبدو محفوفًا بالمخاطر بسبب بيانات العملاء وسجل الحجوزات ومنحنى التعلم. المفتاح هو التخطيط: صدّر بياناتك أولًا، وأعدّ المنصة الجديدة بجانب Fresha، وانتقل بسلاسة بمجرد اختبار كل شيء.',
+        'صارت Fresha تفرض اشتراكاً شهرياً على منصة كانت مجانية سابقاً، إلى جانب رسوم المعاملات وعمولة السوق. وإذا غيّر ذلك حساباتك، فمن المفيد مقارنة التكلفة الإجمالية ببدائل <a href="/ar/glossary/salon-management-software">برامج إدارة الصالونات</a>. لكن التبديل يبدو محفوفًا بالمخاطر بسبب بيانات العملاء وسجل الحجوزات ومنحنى التعلم. المفتاح هو التخطيط: صدّر بياناتك أولًا، وأعدّ المنصة الجديدة بجانب Fresha، وانتقل بسلاسة بمجرد اختبار كل شيء.',
       steps: [
         {
           name: 'تصدير بياناتك من Fresha',
@@ -663,7 +663,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
         {
           name: 'اختيار منصتك الجديدة',
-          text: 'قيّم البدائل بناءً على الميزات والتسعير ودعم الترحيل. يغطي دليل برامج إدارة الصالونات لدينا العوامل الرئيسية: هل تقدم ميزات ذكاء اصطناعي لا يوفرها Fresha؟ هل التسعير شفاف؟ هل تدعم سوقك (العربية، الخليج)؟',
+          text: 'قيّم البدائل بناءً على الميزات والتسعير ودعم الترحيل. العوامل الرئيسية: هل يعمل الذكاء الاصطناعي عبر واتساب وإنستغرام لا عبر الهاتف وحده؟ وهل التكلفة الكاملة مُعلنة بما فيها رسوم المعاملات وعمولة السوق؟ وهل يقدم كاشباك يجلب عملاء جدداً؟',
         },
         {
           name: 'إعداد المنصة الجديدة بالتوازي',
@@ -683,7 +683,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'تجعل ديزي الانتقال من Fresha سلساً. ترحيل البيانات المجاني (خطة الأعمال) يستورد جميع سجلات عملائك وتاريخهم. تحصل على ميزات لم يقدمها Fresha أبداً: موظف استقبال ذكي، وولاء الكاشباك، وعلامة تجارية مخصصة بالكامل، ودعم العربية. إضافة إلى تسعير ثابت شفاف بدون عمولات سوق.',
+        'تجعل ديزي الانتقال من Fresha مباشراً. ترحيل البيانات المجاني (خطة الأعمال) يستورد جميع سجلات عملائك وتاريخهم. وتضيف ديزي ما لا تقدمه Fresha: موظف استقبال ذكي يعمل عبر واتساب وإنستغرام إضافة إلى الهاتف، وكاشباك يجلب عملاء جدداً، وصفحة حجز بعلامتك التجارية بالكامل، وتسعير ثابت لا يضيف شيئاً على كل معاملة ولا عمولة سوق.',
       faqs: [
         {
           question: 'هل يمكنني تصدير بياناتي من Fresha؟',
@@ -693,7 +693,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'ما أفضل بديل لـ Fresha في 2026؟',
           answer:
-            'ديزي هي البديل الأفضل لـ Fresha للصالونات التي تريد ميزات الذكاء الاصطناعي وولاء الكاشباك وتسعيراً شفافاً. على عكس هيكل رسوم Fresha المتغير، تبدأ ديزي من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر) بدون عمولات.',
+            'ديزي هي البديل الأفضل لـ Fresha للصالونات التي تريد ذكاءً اصطناعياً عبر واتساب وإنستغرام وولاء الكاشباك وفاتورة واحدة ثابتة. فإجمالي Fresha يجمع اشتراكاً ورسوم معاملات وعمولة لمرة واحدة على كل عميل سوق جديد، بينما تبدأ ديزي من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر) بدون عمولات.',
         },
         {
           question: 'هل سأخسر عملائي إذا انتقلت من Fresha؟',
@@ -708,12 +708,12 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'هل لا يزال Fresha مجانياً؟',
           answer:
-            'بدأ Fresha بإدخال ميزات مدفوعة ورسوم معاملات ومستويات متقدمة. بينما قد تظل خطة مجانية أساسية موجودة، تحتاج معظم الصالونات لميزات مدفوعة، مما يجعل التكلفة الحقيقية مماثلة أو أعلى من بدائل ذات سعر ثابت مثل ديزي.',
+            'لا. تبيع Fresha الآن خطط اشتراك مُسعّرة حسب السوق: في الإمارات 149.95 درهماً شهرياً لخطة Independent، وخطط Team بأسعار عند الطلب. وفوق ذلك رسوم معاملات 4.90% + 0.75 درهم، وعمولة لمرة واحدة 50% على كل عميل سوق جديد بحد أدنى 20 درهماً. اجمع هذه البنود قبل المقارنة ببديل ثابت السعر مثل ديزي.',
         },
         {
           question: 'ما الميزات التي تمتلكها ديزي ولا يمتلكها Fresha؟',
           answer:
-            'تقدم ديزي عدة ميزات لا يوفرها Fresha: موظف الاستقبال الذكي، واكتساب عملاء بالكاشباك، وعلامة تجارية مخصصة بالكامل، ودعم عربي أصلي، وتسعير ثابت شفاف بدون رسوم معاملات أو عمولات سوق.',
+            'يعمل الذكاء الاصطناعي في ديزي عبر واتساب وإنستغرام إضافة إلى المكالمات، بينما تقتصر خدمة AI Concierge لدى Fresha على الهاتف. وتضيف ديزي استقطاب عملاء بالكاشباك، وصفحة حجز بعلامتك التجارية بالكامل دون شعار أي طرف ثالث، وتسعيراً ثابتاً معلناً لا يضيف شيئاً على كل معاملة ولا عمولة سوق.',
         },
       ],
       metaTitle: 'كيف تنتقل من Fresha | دليل الترحيل 2026',

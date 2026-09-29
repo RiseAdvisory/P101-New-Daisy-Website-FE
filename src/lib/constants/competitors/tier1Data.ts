@@ -104,13 +104,20 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       // listed five and omitted Bahrain; Fresha's own published Bahrain pricing
       // shows that was wrong.
       gccCountries: ['UAE', 'KSA', 'Qatar', 'Oman', 'Bahrain', 'Kuwait'],
+      // Not independently verified either way. We assert no local-compliance
+      // or local-rails equivalence, but we no longer claim their absence.
       localCompliance: false,
       localPaymentMethods: false,
-      localSupport: false,
+      // Fresha publishes teams in Dubai and Saudi Arabia.
+      localSupport: true,
     },
 
     aiCapabilities: {
-      hasAiReceptionist: false,
+      // Fresha's AI Concierge answers calls and books from them (verified
+      // 2026-09-29). This boolean is rendered directly as a table cell, so
+      // leaving it false published a bare "Not Available" - the exact claim
+      // in allegation 2(b). Chatbot stays false: the Concierge is phone-only.
+      hasAiReceptionist: true,
       hasAiChatbot: false,
       hasSmartScheduling: false,
       hasAiMarketing: false,
@@ -209,12 +216,12 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Basic reporting',
       ],
       assessment:
-        'An operations platform whose growth story is the marketplace. Marketing is a basic pay-per-use add-on, and there is no acquisition strategy beyond being listed.',
+        'An operations platform whose growth story is the marketplace. Marketing is a pay-per-use add-on, and acquisition leans on marketplace placement rather than tools that work your existing client list.',
     },
 
     daisyAdvantages: [
       'AI receptionist across calls, WhatsApp and Instagram, in Arabic and English, taking bookings and payments',
-      'Official Meta Tech Provider with native WhatsApp Business API and Instagram integration vs no messaging automation',
+      'Official Meta Tech Provider with native WhatsApp Business API and Instagram integration, vs email and SMS campaigns with no two-way WhatsApp or Instagram automation',
       '360° customer acquisition (marketplace + cashback + AI marketing) vs marketplace-only discovery',
       'Arabic and English treated as equals across the whole product, not a translated layer',
       'Branded booking page with no Daisy branding vs Fresha-branded experience',
@@ -225,12 +232,12 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     daisySwitchingReasons: [
       'Tired of paying a one-time 50% commission on new marketplace clients',
-      'Need Arabic language support for GCC clients',
+      'Want Arabic and English treated as equals across staff tools, client messages and booking pages, not a translated layer',
       'Want AI to handle after-hours calls and bookings',
       'Need more than basic marketing, want proactive customer acquisition',
       'Want full brand control instead of Fresha-branded booking pages',
       'Need local payment methods and VAT compliance for GCC',
-      'Frustrated by Fresha removing free features and adding fees',
+      'Pricing moved from free to paid subscriptions, which changed your numbers',
     ],
 
     competitorStrengths: [
@@ -260,7 +267,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Daisy compare to Fresha for salon management?',
         answer:
-          'Fresha covers basic operations and attaches a marketplace. Daisy is a growth platform: an AI receptionist taking bookings 24/7, customer acquisition through cashback and AI-powered marketing, white-labeling so the brand stays yours, and native Arabic and English. None of that exists in Fresha.',
+          'Fresha covers operations and attaches a marketplace, and it ships an AI Concierge for calls plus an Arabic interface. Daisy carries its AI receptionist across calls, WhatsApp and Instagram, treats Arabic and English as equals, and adds cashback acquisition and white-labeling, which Fresha does not offer.',
       },
       {
         question: 'Can I switch from Fresha to Daisy?',
@@ -306,7 +313,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     lastResearched: '2026-03-13',
     notes:
-      'No longer free. Monthly subscriptions now sit on top of transaction fees, which has drawn partner backlash. Fresha ships an AI Concierge for calls and is live in Arabic with GCC teams, so the old absence claims no longer hold. Main vulnerability: costs that compound across subscription, transaction fees and commissions.',
+      'No longer free. Monthly subscriptions now sit on top of transaction fees, which caught some partners out. Fresha ships an AI Concierge for calls and is live in Arabic with GCC teams, so the old absence claims no longer hold. Main vulnerability: costs that compound across subscription, transaction fees and commissions.',
   },
 
   // ---------------------------------------------------------------------------

@@ -589,7 +589,7 @@ const fiveAppsHowToFixArticle: LocalBlogPost = {
 <p>Some clients message on WhatsApp. Some call. Some DM on Instagram. The booking system sends its automated reminders while every real conversation happens somewhere else, so you are now running 3-4 channels, none of them connected to your booking data.</p>
 
 <h3>Stage 4: the marketing tools</h3>
-<p>You want newsletters, promotions and some control over social media. The booking system does that badly or not at all, so you sign up for Mailchimp, Later or something similar. Marketing data now sits apart from client data, which sits apart from booking data.</p>
+<p>You want newsletters, promotions and some control over social media. Most booking-first tools were not built as marketing platforms, so you sign up for Mailchimp, Later or something similar. Marketing data now sits apart from client data, which sits apart from booking data.</p>
 
 <h3>Stage 5: the reporting workaround</h3>
 <p>No single tool shows you how the business is doing. The booking system knows appointments, the payment tool knows revenue, the marketing tool knows campaigns. To see the whole thing you export it all into spreadsheets and assemble a report by hand. It takes hours, and by the time you are looking at it the numbers have moved.</p>

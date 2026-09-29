@@ -5,6 +5,8 @@ interface ProductItem {
   startingPrice?: string;
   features?: string[];
   rating?: number;
+  /** Required alongside `rating`; an aggregate with no count is omitted. */
+  ratingCount?: number;
 }
 
 interface ProductComparisonSchemaProps {
@@ -63,8 +65,19 @@ export function ProductComparisonSchema({
                           : /€|EUR/i.test(raw)
                             ? 'EUR'
                             : null;
-          const amount = raw.replace(/[^0-9.]/g, '');
-          if (!currency || !amount) return { };
+          // Take the FIRST monetary token only. Stripping every non-digit and
+          // concatenating what was left turned '$120/mo + $10 per user' into a
+          // published price of 12010, and 'up to 35%' into 35 - fabricated
+          // figures about named competitors, emitted into structured data.
+          const match = raw.match(/\d+(?:[.,]\d+)?/);
+          const amount = match ? match[0].replace(',', '.') : null;
+          // A percentage, a quote-only price, or more than one amount cannot be
+          // reduced to a single offer. Omit rather than guess.
+          const ambiguous =
+            /%/.test(raw) ||
+            /custom|quote|contact/i.test(raw) ||
+            (raw.match(/\d+(?:[.,]\d+)?/g) ?? []).length > 1;
+          if (!currency || !amount || ambiguous) return {};
           return {
             offers: {
               '@type': 'Offer',
@@ -74,13 +87,22 @@ export function ProductComparisonSchema({
             },
           };
         })(),
-        ...(product.rating && {
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: product.rating,
-            bestRating: 5,
-          },
-        }),
+        // An aggregateRating needs a count and a source to be meaningful. We
+        // were publishing a single cherry-picked platform score as though it
+        // were THE aggregate rating for a named competitor, with no
+        // ratingCount, so reordering the reviews array silently changed what
+        // search engines ingested about them. Omitted until it can be
+        // computed across sources with counts.
+        ...(product.rating && product.ratingCount
+          ? {
+              aggregateRating: {
+                '@type': 'AggregateRating',
+                ratingValue: product.rating,
+                ratingCount: product.ratingCount,
+                bestRating: 5,
+              },
+            }
+          : {}),
         ...(product.features && {
           featureList: product.features.join(', '),
         }),

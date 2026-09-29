@@ -448,7 +448,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'What salon software has built-in staff management features?',
           answer:
-            'Daisy, Boulevard, and Mangomint include comprehensive staff management. Fresha and Booksy offer basic scheduling but limited commission tracking and performance analytics. Daisy includes all staff features in every plan.',
+            'Daisy, Boulevard, and Mangomint include comprehensive staff management. Fresha and Booksy cover staff scheduling; commission and performance reporting depth varies by plan. Daisy includes all staff features in every plan.',
         },
         {
           question: 'How do I track salon employee performance?',
@@ -975,7 +975,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'أي برنامج صالونات يتضمن ميزات إدارة موظفين مدمجة؟',
           answer:
-            'تتضمن ديزي وBoulevard وMangomint إدارة موظفين شاملة. يقدم Fresha وBooksy جدولة أساسية لكن تتبع عمولات وتحليلات أداء محدودة. تتضمن ديزي جميع ميزات الموظفين في كل خطة.',
+            'تتضمن ديزي وBoulevard وMangomint إدارة موظفين شاملة. يغطي Fresha وBooksy جدولة الموظفين، ويتفاوت عمق تقارير العمولات والأداء حسب الباقة. تتضمن ديزي جميع ميزات الموظفين في كل خطة.',
         },
         {
           question: 'كيف أتتبع أداء موظفي الصالون؟',

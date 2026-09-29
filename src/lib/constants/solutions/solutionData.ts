@@ -370,7 +370,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'What is the best beauty salon software?',
         answer:
-          'The best beauty salon software depends on your needs. For growth-focused salons wanting AI, cashback, and Arabic support, Daisy leads. For budget solopreneurs, GlossGenius ($24/mo) is affordable. For marketplace exposure, Fresha (free with fees) has the largest consumer base.',
+          'The best beauty salon software depends on your needs. For growth-focused salons wanting AI, cashback, and Arabic support, Daisy leads. For budget solopreneurs, GlossGenius ($24/mo) is affordable. For marketplace exposure, Fresha has the largest consumer base, on published subscription plans plus per-transaction and new-client marketplace fees.',
       },
       {
         question: 'How much does beauty salon software cost?',
@@ -497,7 +497,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'What is the best salon appointment scheduling software?',
         answer:
-          'For AI-powered scheduling with Arabic support, Daisy is the top choice. For basic free scheduling, Square Appointments or Fresha work. For budget scheduling only, Acuity ($16/mo) is affordable but lacks salon-specific features.',
+          'For AI-powered scheduling with Arabic support, Daisy is the top choice. For straightforward scheduling on an entry plan, Square Appointments or Fresha work. For budget scheduling only, Acuity ($16/mo) is affordable but lacks salon-specific features.',
       },
       {
         question: 'How does AI scheduling work?',
@@ -608,8 +608,8 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'Can Daisy handle nail salon scheduling?', answer: 'Yes. Daisy supports varied service durations, multiple simultaneous techs, walk-in queues, and automatic rebooking for maintenance appointments.' },
-      { question: 'What is the best nail salon software in 2026?', answer: 'For nail salons wanting AI booking, automated rebooking, and cashback loyalty, Daisy is the top choice. GlossGenius is popular for solo nail techs on a budget. Fresha offers free basic booking but charges per transaction.' },
-      { question: 'How much does nail salon software cost?', answer: 'Nail salon software ranges from free (Fresha, with transaction fees) to $200+/mo for full platforms. Daisy offers flat pricing that includes AI, unlimited techs, rebooking automation, and all features.' },
+      { question: 'What is the best nail salon software in 2026?', answer: 'For nail salons wanting AI booking, automated rebooking, and cashback loyalty, Daisy is the top choice. GlossGenius is popular for solo nail techs on a budget. Fresha offers basic booking on a published entry plan, with per-transaction fees on top.' },
+      { question: 'How much does nail salon software cost?', answer: 'Nail salon software ranges from low published entry plans with transaction fees on top, such as Fresha, to $200+/mo for full platforms. Daisy offers flat pricing that includes AI, unlimited techs, rebooking automation, and all features.' },
       { question: 'How does Daisy help nail salons retain clients?', answer: 'Daisy sends automated rebooking reminders when it\'s time for fills or new sets, offers cashback rewards that build with each visit, and uses AI to send personalized offers based on client history and preferences.' },
       { question: 'Does Daisy work for independent nail technicians?', answer: 'Yes. Daisy scales from solo nail techs to multi-location nail bars. For independent techs, the AI receptionist is invaluable, handling calls and bookings while you focus on your client\'s nails.' },
       { question: 'Can nail salon clients book online with Daisy?', answer: 'Yes. Clients book 24/7 from your website, social media, or the Daisy marketplace. The AI handles service selection, duration, and payment, even at 2 AM.' },
@@ -774,7 +774,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
     challenges: [
       { title: 'Clients expect instant booking', description: '78% of consumers prefer booking online. If your salon doesn\'t offer it, competitors do.' },
       { title: 'Multiple booking channels cause chaos', description: 'Phone, Instagram DM, walk-in, website, without sync, you get double-bookings and missed appointments.' },
-      { title: 'Generic booking pages hurt your brand', description: 'A "Powered by Fresha" booking page doesn\'t reflect your salon\'s personality and sends clients to competitor listings.' },
+      { title: 'Generic booking pages hurt your brand', description: 'A booking page carrying another platform\'s badge doesn\'t reflect your salon\'s personality, and on marketplace models the new clients who arrive that way carry a commission.' },
     ],
     features: [
       { title: 'Instant Mobile Booking', description: 'Clients book in seconds from any device. Beautiful, fast, branded booking experience.' },
@@ -783,11 +783,11 @@ export const solutionData: I18nContent<SolutionData[]> = {
       { title: 'Cashback Incentives', description: 'Clients earn cashback for booking through the app, creating a habit loop.' },
     ],
     faqs: [
-      { question: 'What is the best salon booking app?', answer: 'For AI-powered booking with Arabic support and cashback, Daisy leads. For free marketplace-based booking, Fresha is popular. For mobile-first, Booksy has a great app.' },
-      { question: 'How much does a salon booking app cost?', answer: 'Salon booking apps range from free (Fresha, with per-transaction fees) to $200+/mo for premium platforms. Daisy offers flat pricing that includes the booking app, AI receptionist, cashback, and all features, no hidden fees.' },
+      { question: 'What is the best salon booking app?', answer: 'For AI-powered booking with Arabic support and cashback, Daisy leads. For marketplace-based booking reach, Fresha is popular. For mobile-first, Booksy has a great app.' },
+      { question: 'How much does a salon booking app cost?', answer: 'Salon booking apps range from low published entry plans with per-transaction fees on top, such as Fresha, to $200+/mo for premium platforms. Daisy offers flat pricing that includes the booking app, AI receptionist, cashback, and all features, with nothing added per transaction.' },
       { question: 'Can clients book appointments through my salon\'s website?', answer: 'Yes. Daisy provides an embeddable booking widget for your website, plus a standalone branded booking page. Clients book directly without leaving your site, and the experience matches your brand aesthetic.' },
       { question: 'Does the salon booking app work offline?', answer: 'Daisy\'s booking app works online from any device. For staff, the management app includes offline functionality for essential tasks like checking schedules and client profiles when connectivity is limited.' },
-      { question: 'Can I switch from Booksy or Fresha\'s booking app to Daisy?', answer: 'Yes. Daisy provides migration support including client data, booking history, and staff profiles. Unlike Fresha, Daisy\'s booking page is fully white-label, no competitor branding or client poaching.' },
+      { question: 'Can I switch from Booksy or Fresha\'s booking app to Daisy?', answer: 'Yes. Daisy provides migration support including client data, booking history, and staff profiles. Daisy\'s booking page is fully white-label, your brand only with no third-party badge, and Daisy charges no commission on bookings, new or returning.' },
       { question: 'Does the booking app support Arabic?', answer: 'Yes. Daisy\'s booking app is fully native in Arabic with RTL layout. Clients can browse services, select staff, and complete bookings entirely in Arabic or English.' },
       { question: 'How does Daisy\'s white-label booking work?', answer: 'Daisy removes all third-party branding from your booking experience. Your logo, your name, your colors, clients see only your brand. No "Powered by" logos or links to competitor listings.' },
       { question: 'Can clients pay when they book through the app?', answer: 'Yes. Daisy supports full payment or deposit collection at the time of booking. This reduces no-shows and secures revenue. Clients can pay via card, Apple Pay, Google Pay, or Mada (GCC).' },
@@ -923,7 +923,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'كم يكلف برنامج إدارة الصالونات؟',
         answer:
-          'تتراوح أسعار برامج الصالونات من المجاني (مع رسوم خفية مثل Fresha) إلى أكثر من 400 دولار شهرياً (Boulevard، Mangomint). يقدم ديزي سعراً ثابتاً يشمل الذكاء الاصطناعي وموظفين غير محدودين وجميع الميزات، بدون رسوم إضافية لكل موظف أو مستويات ميزات.',
+          'تتراوح أسعار برامج الصالونات من خطط أساسية منخفضة السعر تُضاف إليها رسوم معاملات وعمولات سوق — مثل Fresha — إلى أكثر من 400 دولار شهرياً (Boulevard، Mangomint). يقدم ديزي سعراً ثابتاً يشمل الذكاء الاصطناعي وموظفين غير محدودين وجميع الميزات، بدون رسوم إضافية لكل موظف أو مستويات ميزات.',
       },
       {
         question: 'هل يمكنني الانتقال من برنامج الصالون الحالي؟',
@@ -1172,12 +1172,12 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'ما هو أفضل برنامج صالون تجميل؟',
         answer:
-          'أفضل برنامج صالون تجميل يعتمد على احتياجاتك. للصالونات المركّزة على النمو التي تريد ذكاء اصطناعي وكاشباك ودعم عربي، ديزي في المقدمة. لأصحاب المشاريع بميزانية محدودة، GlossGenius (24 دولاراً شهرياً) ميسور. لعرض السوق، Fresha (مجاني مع رسوم) لديه أكبر قاعدة مستهلكين.',
+          'أفضل برنامج صالون تجميل يعتمد على احتياجاتك. للصالونات المركّزة على النمو التي تريد ذكاء اصطناعي وكاشباك ودعم عربي، ديزي في المقدمة. لأصحاب المشاريع بميزانية محدودة، GlossGenius (24 دولاراً شهرياً) ميسور. لعرض السوق، لدى Fresha أكبر قاعدة مستهلكين، عبر خطط اشتراك مُعلنة إضافة إلى رسوم معاملات وعمولة على العملاء الجدد.',
       },
       {
         question: 'كم يكلف برنامج صالون التجميل؟',
         answer:
-          'تتراوح أسعار برامج صالونات التجميل من المجاني (Fresha مع رسوم خفية) إلى أكثر من 400 دولار شهرياً (Mangomint، Boulevard). يقدم ديزي سعراً ثابتاً يشمل الذكاء الاصطناعي وموظفين غير محدودين وجميع الميزات بدون رسوم إضافية لكل موظف.',
+          'تتراوح أسعار برامج صالونات التجميل من خطط أساسية منخفضة السعر مع رسوم استخدام مُعلنة فوقها — مثل Fresha — إلى أكثر من 400 دولار شهرياً (Mangomint، Boulevard). يقدم ديزي سعراً ثابتاً يشمل الذكاء الاصطناعي وموظفين غير محدودين وجميع الميزات بدون رسوم إضافية لكل موظف.',
       },
       {
         question: 'هل ديزي جيد لصالونات الشعر؟',
@@ -1187,7 +1187,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'هل يمكنني الانتقال من Fresha إلى ديزي؟',
         answer:
-          'نعم. يوفر ديزي دعم نقل شامل لتحويل قاعدة بيانات العملاء وقائمة الخدمات وسجل الحجوزات وملفات الموظفين. معظم الصالونات تنتقل في أقل من أسبوع بدون توقف. على عكس Fresha، ديزي لا يفرض رسوم معاملات خفية.',
+          'نعم. يوفر ديزي دعم نقل شامل لتحويل قاعدة بيانات العملاء وقائمة الخدمات وسجل الحجوزات وملفات الموظفين. معظم الصالونات تنتقل في أقل من أسبوع بدون توقف. على عكس Fresha، لا يفرض ديزي أي رسوم على المعاملات ولا عمولة سوق.',
       },
       {
         question: 'هل يعمل ديزي بالعربية لصالونات التجميل؟',
@@ -1299,7 +1299,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'ما هو أفضل برنامج جدولة مواعيد صالون؟',
         answer:
-          'للجدولة المدعومة بالذكاء الاصطناعي مع دعم عربي، ديزي هو الخيار الأول. للجدولة المجانية الأساسية، Square Appointments أو Fresha تعمل. للجدولة الاقتصادية فقط، Acuity (16 دولاراً شهرياً) ميسور لكنه يفتقر لميزات الصالونات المتخصصة.',
+          'للجدولة المدعومة بالذكاء الاصطناعي مع دعم عربي، ديزي هو الخيار الأول. للجدولة الأساسية على خطة مبتدئة، Square Appointments أو Fresha تعمل. للجدولة الاقتصادية فقط، Acuity (16 دولاراً شهرياً) ميسور لكنه يفتقر لميزات الصالونات المتخصصة.',
       },
       {
         question: 'كيف تعمل الجدولة بالذكاء الاصطناعي؟',
@@ -1410,8 +1410,8 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'هل يمكن لديزي التعامل مع جدولة صالون الأظافر؟', answer: 'نعم. يدعم ديزي فترات الخدمة المتنوعة وفنيات متعددة في وقت واحد وطوابير الحضور المباشر وإعادة الحجز التلقائية لمواعيد الصيانة.' },
-      { question: 'ما هو أفضل برنامج صالون أظافر في 2026؟', answer: 'لصالونات الأظافر التي تريد حجزاً ذكياً وإعادة حجز تلقائية وولاء كاشباك، ديزي هو الخيار الأول. GlossGenius شائع لفنيات الأظافر المستقلات بميزانية محدودة. Fresha يقدم حجزاً أساسياً مجانياً لكنه يفرض رسوماً لكل معاملة.' },
-      { question: 'كم يكلف برنامج صالون الأظافر؟', answer: 'تتراوح أسعار برامج صالونات الأظافر من المجاني (Fresha مع رسوم معاملات) إلى أكثر من 200 دولار شهرياً للمنصات الكاملة. يقدم ديزي سعراً ثابتاً يشمل الذكاء الاصطناعي وفنيات غير محدودات وأتمتة إعادة الحجز وجميع الميزات.' },
+      { question: 'ما هو أفضل برنامج صالون أظافر في 2026؟', answer: 'لصالونات الأظافر التي تريد حجزاً ذكياً وإعادة حجز تلقائية وولاء كاشباك، ديزي هو الخيار الأول. GlossGenius شائع لفنيات الأظافر المستقلات بميزانية محدودة. يقدم Fresha حجزاً أساسياً ضمن خطة مُعلنة، مع رسوم لكل معاملة فوقها.' },
+      { question: 'كم يكلف برنامج صالون الأظافر؟', answer: 'تتراوح أسعار برامج صالونات الأظافر من خطط أساسية منخفضة السعر مع رسوم معاملات فوقها — مثل Fresha — إلى أكثر من 200 دولار شهرياً للمنصات الكاملة. يقدم ديزي سعراً ثابتاً يشمل الذكاء الاصطناعي وفنيات غير محدودات وأتمتة إعادة الحجز وجميع الميزات.' },
       { question: 'كيف يساعد ديزي صالونات الأظافر في الاحتفاظ بالعملاء؟', answer: 'يرسل ديزي تذكيرات إعادة حجز تلقائية عندما يحين وقت التعبئة أو المجموعات الجديدة، ويقدم مكافآت كاشباك تتراكم مع كل زيارة، ويستخدم الذكاء الاصطناعي لإرسال عروض مخصصة بناءً على سجل العملاء وتفضيلاتهم.' },
       { question: 'هل يعمل ديزي لفنيات الأظافر المستقلات؟', answer: 'نعم. يتوسع ديزي من فنيات الأظافر المستقلات إلى بارات الأظافر متعددة الفروع. للفنيات المستقلات، موظف الاستقبال الذكي لا يُقدّر بثمن — يتولى المكالمات والحجوزات بينما تركزين على أظافر عميلتك.' },
       { question: 'هل يمكن لعملاء صالون الأظافر الحجز إلكترونياً مع ديزي؟', answer: 'نعم. يحجز العملاء على مدار الساعة من موقعك أو وسائل التواصل أو سوق ديزي. يتعامل الذكاء الاصطناعي مع اختيار الخدمة والمدة والدفع، حتى في الثانية صباحاً.' },
@@ -1576,7 +1576,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
     challenges: [
       { title: 'العملاء يتوقعون حجزاً فورياً', description: '78% من المستهلكين يفضلون الحجز إلكترونياً. إذا لم يقدم صالونك ذلك، المنافسون يفعلون.' },
       { title: 'قنوات الحجز المتعددة تخلق فوضى', description: 'الهاتف ورسائل إنستغرام والحضور الشخصي والموقع — بدون مزامنة، تحصل على حجوزات مزدوجة ومواعيد فائتة.' },
-      { title: 'صفحات الحجز العامة تضر بعلامتك التجارية', description: 'صفحة حجز "Powered by Fresha" لا تعكس شخصية صالونك وتوجّه العملاء لقوائم المنافسين.' },
+      { title: 'صفحات الحجز العامة تضر بعلامتك التجارية', description: 'صفحة الحجز التي تحمل شعار منصة أخرى لا تعكس شخصية صالونك، وفي نماذج السوق يحمل العملاء الجدد القادمون عبرها عمولة.' },
     ],
     features: [
       { title: 'حجز فوري عبر الهاتف', description: 'يحجز العملاء في ثوانٍ من أي جهاز. تجربة حجز جميلة وسريعة وبعلامتك التجارية.' },
@@ -1585,11 +1585,11 @@ export const solutionData: I18nContent<SolutionData[]> = {
       { title: 'حوافز الكاشباك', description: 'يكسب العملاء كاشباك للحجز عبر التطبيق، مما يخلق حلقة عادات.' },
     ],
     faqs: [
-      { question: 'ما هو أفضل تطبيق حجز صالون؟', answer: 'للحجز المدعوم بالذكاء الاصطناعي مع دعم عربي وكاشباك، ديزي في المقدمة. للحجز المجاني عبر السوق، Fresha شائع. للتطبيق أولاً، Booksy لديه تطبيق ممتاز.' },
-      { question: 'كم يكلف تطبيق حجز الصالون؟', answer: 'تتراوح أسعار تطبيقات حجز الصالونات من المجاني (Fresha مع رسوم لكل معاملة) إلى أكثر من 200 دولار شهرياً للمنصات الفاخرة. يقدم ديزي سعراً ثابتاً يشمل تطبيق الحجز وموظف الاستقبال الذكي والكاشباك وجميع الميزات — بدون رسوم خفية.' },
+      { question: 'ما هو أفضل تطبيق حجز صالون؟', answer: 'للحجز المدعوم بالذكاء الاصطناعي مع دعم عربي وكاشباك، ديزي في المقدمة. للحجز عبر السوق، Fresha شائع. للتطبيق أولاً، Booksy لديه تطبيق ممتاز.' },
+      { question: 'كم يكلف تطبيق حجز الصالون؟', answer: 'تتراوح أسعار تطبيقات حجز الصالونات من خطط أساسية منخفضة السعر مع رسوم لكل معاملة فوقها — مثل Fresha — إلى أكثر من 200 دولار شهرياً للمنصات الفاخرة. يقدم ديزي سعراً ثابتاً يشمل تطبيق الحجز وموظف الاستقبال الذكي والكاشباك وجميع الميزات، دون أي إضافة على كل معاملة.' },
       { question: 'هل يمكن للعملاء حجز المواعيد من موقع صالوني؟', answer: 'نعم. يوفر ديزي أداة حجز قابلة للتضمين في موقعك، بالإضافة إلى صفحة حجز مستقلة بعلامتك التجارية. يحجز العملاء مباشرة دون مغادرة موقعك، والتجربة تتطابق مع جمالية علامتك التجارية.' },
       { question: 'هل يعمل تطبيق حجز الصالون بدون إنترنت؟', answer: 'تطبيق حجز ديزي يعمل إلكترونياً من أي جهاز. بالنسبة للموظفين، يتضمن تطبيق الإدارة وظائف دون اتصال للمهام الأساسية مثل التحقق من الجداول وملفات العملاء عندما يكون الاتصال محدوداً.' },
-      { question: 'هل يمكنني الانتقال من تطبيق Booksy أو Fresha إلى ديزي؟', answer: 'نعم. يوفر ديزي دعم نقل يشمل بيانات العملاء وسجل الحجوزات وملفات الموظفين. على عكس Fresha، صفحة حجز ديزي بعلامتك التجارية بالكامل — بدون علامة منافسين أو سرقة عملاء.' },
+      { question: 'هل يمكنني الانتقال من تطبيق Booksy أو Fresha إلى ديزي؟', answer: 'نعم. يوفر ديزي دعم نقل يشمل بيانات العملاء وسجل الحجوزات وملفات الموظفين. صفحة حجز ديزي بعلامتك التجارية بالكامل — دون شعار أي طرف ثالث — ولا يفرض ديزي أي عمولة على الحجوزات، جديدة كانت أو متكررة.' },
       { question: 'هل يدعم تطبيق الحجز العربية؟', answer: 'نعم. تطبيق حجز ديزي أصيل بالكامل بالعربية مع تخطيط RTL. يمكن للعملاء تصفح الخدمات واختيار الموظفين وإتمام الحجوزات بالكامل بالعربية أو الإنجليزية.' },
       { question: 'كيف يعمل الحجز بعلامتك التجارية من ديزي؟', answer: 'يزيل ديزي جميع العلامات التجارية للجهات الخارجية من تجربة حجزك. شعارك واسمك وألوانك — يرى العملاء علامتك التجارية فقط. بدون شعارات "Powered by" أو روابط لقوائم المنافسين.' },
       { question: 'هل يمكن للعملاء الدفع عند الحجز عبر التطبيق؟', answer: 'نعم. يدعم ديزي الدفع الكامل أو تحصيل العربون عند الحجز. هذا يقلل عدم الحضور ويؤمّن الإيرادات. يمكن للعملاء الدفع عبر البطاقة أو Apple Pay أو Google Pay أو مدى (الخليج).' },
