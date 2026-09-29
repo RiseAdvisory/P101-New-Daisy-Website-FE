@@ -16,8 +16,8 @@ export const tutorialsHeroData: Record<string, I18nContent<{
       bredCrumbDesription: 'Resources',
       bredCrumbTitle: 'Tutorials & Guides',
       title: 'Tutorials & Guides',
-      subtitle: 'Step-by-step guides to grow and manage your beauty business',
-      description: 'Practical how-to articles covering booking, marketing, staff management, payments, and more.',
+      subtitle: 'Step-by-step guides to running and growing a beauty business',
+      description: 'Practical articles on booking, marketing, staff management, payments and the rest of it.',
       titleScroll: 'Explore Our Tutorials',
     },
     ar: {
@@ -34,8 +34,8 @@ export const tutorialsHeroData: Record<string, I18nContent<{
       bredCrumbDesription: 'Resources',
       bredCrumbTitle: 'Tutorials & Guides',
       title: 'Tutorials & Guides',
-      subtitle: 'Step-by-step guides to grow and manage your beauty business',
-      description: 'Practical how-to articles covering booking, marketing, staff management, payments, and more.',
+      subtitle: 'Step-by-step guides to running and growing a beauty business',
+      description: 'Practical articles on booking, marketing, staff management, payments and the rest of it.',
       titleScroll: 'Explore Our Tutorials',
     },
     ar: {
@@ -52,8 +52,8 @@ export const tutorialsHeroData: Record<string, I18nContent<{
       bredCrumbDesription: 'Resources',
       bredCrumbTitle: 'Tutorials & Guides',
       title: 'Tutorials & Guides',
-      subtitle: 'Practical guides for independent beauty professionals',
-      description: 'Build your freelance business, find clients, manage your schedule, and grow your brand.',
+      subtitle: 'Practical guides for working independently',
+      description: 'Build the business, find the clients, hold the schedule together and grow your name.',
       titleScroll: 'Explore Our Tutorials',
     },
     ar: {
@@ -75,15 +75,15 @@ export const tutorialInfoData: Record<string, I18nContent<{
   description?: string;
 }>> = {
   customer: {
-    en: { title: 'Getting Started', description: 'Learn the basics of booking and earning cashback.' },
+    en: { title: 'Getting Started', description: 'The basics of booking and earning cashback.' },
     ar: { title: 'البدء', description: 'تعلم أساسيات الحجز وكسب الكاشباك.' },
   },
   business: {
-    en: { title: 'Getting Started', description: 'Learn how to set up and manage your business on Daisy.' },
+    en: { title: 'Getting Started', description: 'How to set up and run your business on Daisy.' },
     ar: { title: 'البدء', description: 'تعلم كيفية إعداد وإدارة عملك على ديزي.' },
   },
   professional: {
-    en: { title: 'Getting Started', description: 'Learn how to manage your schedule and grow your client base.' },
+    en: { title: 'Getting Started', description: 'How to manage your schedule and build a client base.' },
     ar: { title: 'البدء', description: 'تعلم كيفية إدارة جدولك وتنمية قاعدة عملائك.' },
   },
 };
@@ -106,7 +106,7 @@ export const tutorialTabsData: Record<string, I18nContent<Array<{
         attributes: {
           sortId: 3,
           titleListTab: 'Booking a Service',
-          fieldInfoTabs: '<h2>How to Book a Service</h2><p>Booking a service on Daisy is quick and easy. Browse available services, select your preferred time, and confirm your booking. You will receive a confirmation notification immediately.</p>',
+          fieldInfoTabs: '<h2>How to Book a Service</h2><p>Browse the available services, pick a time that suits you and confirm. The confirmation arrives straight away.</p>',
         },
       },
       {
@@ -114,7 +114,7 @@ export const tutorialTabsData: Record<string, I18nContent<Array<{
         attributes: {
           sortId: 2,
           titleListTab: 'Earning Cashback',
-          fieldInfoTabs: '<h2>How to Earn Cashback</h2><p>Every booking you make earns you cashback rewards. The cashback is automatically credited to your Daisy wallet and can be used towards future bookings.</p>',
+          fieldInfoTabs: '<h2>How to Earn Cashback</h2><p>Every booking earns cashback. It lands in your Daisy wallet by itself and comes off what you pay next time.</p>',
         },
       },
       {
@@ -122,7 +122,7 @@ export const tutorialTabsData: Record<string, I18nContent<Array<{
         attributes: {
           sortId: 1,
           titleListTab: 'Managing Your Profile',
-          fieldInfoTabs: '<h2>Managing Your Profile</h2><p>Keep your profile up to date to get the best recommendations. Add your preferences, update your contact information, and manage your payment methods.</p>',
+          fieldInfoTabs: '<h2>Managing Your Profile</h2><p>A current profile gets you better recommendations. Set your preferences, keep your contact details right and manage your payment methods here.</p>',
         },
       },
     ],
@@ -144,7 +144,7 @@ export const tutorialTabsData: Record<string, I18nContent<Array<{
         attributes: {
           sortId: 2,
           titleListTab: 'Setting Up Your Branch',
-          fieldInfoTabs: '<h2>Setting Up Your Branch</h2><p>Get your business visible on Daisy in minutes. Add your branch details, services, pricing, and working hours.</p>',
+          fieldInfoTabs: '<h2>Setting Up Your Branch</h2><p>Add your branch details, services, pricing and opening hours, and the business is visible on Daisy within minutes.</p>',
         },
       },
       {
@@ -152,7 +152,7 @@ export const tutorialTabsData: Record<string, I18nContent<Array<{
         attributes: {
           sortId: 1,
           titleListTab: 'Managing Staff',
-          fieldInfoTabs: '<h2>Managing Your Staff</h2><p>Add team members, set their schedules, and track their performance all from your Daisy dashboard.</p>',
+          fieldInfoTabs: '<h2>Managing Your Staff</h2><p>Add the team, set their schedules and follow how they are doing, all from the dashboard.</p>',
         },
       },
     ],
@@ -174,7 +174,7 @@ export const tutorialTabsData: Record<string, I18nContent<Array<{
         attributes: {
           sortId: 2,
           titleListTab: 'Managing Your Schedule',
-          fieldInfoTabs: '<h2>Managing Your Schedule</h2><p>Set your availability, block off personal time, and let Daisy handle the booking logistics.</p>',
+          fieldInfoTabs: '<h2>Managing Your Schedule</h2><p>Set your availability, block out personal time, and leave the booking logistics to Daisy.</p>',
         },
       },
       {
@@ -182,7 +182,7 @@ export const tutorialTabsData: Record<string, I18nContent<Array<{
         attributes: {
           sortId: 1,
           titleListTab: 'Building Your Portfolio',
-          fieldInfoTabs: '<h2>Building Your Portfolio</h2><p>Showcase your best work to attract new clients. Add photos, certifications, and specializations to your profile.</p>',
+          fieldInfoTabs: '<h2>Building Your Portfolio</h2><p>Your best work is what brings new clients in. Add photos, certifications and the things you specialise in.</p>',
         },
       },
     ],

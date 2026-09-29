@@ -18,23 +18,23 @@ export const salonClientRetention: PillarPageData = {
 
   heroTitle: 'Salon Client Retention: Strategies That Work',
   heroSubtitle:
-    'Retaining a salon client costs 5-7x less than acquiring a new one, and a 5% increase in retention can boost profits by 25-95%. This is the definitive guide to keeping your clients coming back.',
+    'Keeping a client costs 5-7x less than finding a new one, and a 5% lift in retention can raise profits by 25-95%. Here is how to keep them coming back.',
   readingTime: '20 min read',
   lastUpdated: '2026-03-18T00:00:00.000Z',
 
   keyTakeaways: [
-    'Retaining existing clients costs 5-7x less than acquiring new ones, making retention the highest-ROI investment a salon can make.',
-    'A 5% increase in client retention can boost salon profits by 25-95%, according to research by Bain & Company.',
-    'The key metrics every salon should track: retention rate, rebooking rate, client lifetime value (CLV), and churn rate, and each has a specific formula you can calculate today.',
-    'Loyalty programs built on cashback outperform discount-based programs because they reward without devaluing services and create a psychological "wallet" that ties clients to your salon.',
-    'Automated communication at the right intervals, post-visit follow-up, rebooking reminders, and birthday messages, prevents client churn before it starts.',
-    'Personalization is the top driver of loyalty: remembering preferences, noting product recommendations, and tailoring communication makes clients feel valued in ways competitors cannot replicate.',
+    'Keeping the clients you have costs 5-7x less than winning new ones, which makes retention the best return available to a salon.',
+    'Bain & Company put it at 25-95% more profit for a 5% increase in retention.',
+    'Four numbers to track: retention rate, rebooking rate, client lifetime value and churn rate. Each has a formula you can work out today.',
+    'Cashback beats discounting as a loyalty mechanism, because it rewards without cheapening the service and leaves the client holding a "wallet" tied to your salon.',
+    'Automated messages at the right moments, the post-visit follow-up, the rebooking reminder, the birthday note, stop churn before it starts.',
+    'Nothing drives loyalty like personalisation. Remembering preferences, noting what was recommended and writing to people individually is hard for a competitor to copy.',
   ],
 
-  introduction: `<p>Every salon owner knows the excitement of a new client walking through the door. But the real economics of a beauty business are built on what happens next, whether that client comes back a second time, a fifth time, a fiftieth time. Client retention is not a nice-to-have; it is the single most important lever for salon profitability, stability, and long-term growth.</p>
-<p>The numbers tell a clear story. Acquiring a new salon client costs 5-7 times more than retaining an existing one. A client who visits regularly for two years is worth 10-20 times more than a one-time visitor. And salons with a retention rate above 70% consistently outperform their competitors in revenue, profitability, and resilience during slow periods.</p>
-<p>Yet most salon owners focus the majority of their energy, and marketing budget, on attracting new clients, while treating retention as something that should happen naturally if the service is good enough. Good service is necessary, but it is not sufficient. In a market where clients have dozens of alternatives within a short drive, you need intentional, systematic retention strategies.</p>
-<p>This guide covers everything you need to build a retention engine for your salon: the metrics to track, the <a href="/en/features/business/communication-tools">communication systems</a> to implement, the loyalty programs that actually work, and the technology that makes it all manageable, even for a small team. Whether your retention rate is 30% or 70%, the strategies here will help you move it higher.</p>`,
+  introduction: `<p>Every owner knows the lift of a new client walking in. The economics of the business, though, sit in what happens next: whether they come back a second time, a fifth, a fiftieth. Retention is not a nice-to-have. It is the biggest lever you have on profitability and stability.</p>
+<p>The numbers are not subtle. A new client costs 5-7 times what keeping an existing one does. Someone visiting regularly for two years is worth 10-20 times a one-off. And salons holding retention above 70% consistently beat their competitors on revenue, on profit and on getting through the quiet months.</p>
+<p>Most owners still put the bulk of their energy and budget into attracting new clients, treating retention as something that follows automatically from good work. Good work is necessary and it is not enough. With dozens of alternatives a short drive away, retention has to be deliberate.</p>
+<p>What follows is how to build that: which metrics to track, which <a href="/en/features/business/communication-tools">communication systems</a> to put in, which loyalty programs actually work, and the technology that keeps it manageable for a small team. Whether you are at 30% retention or 70%, there is room to move it.</p>`,
 
   sections: [
     // =========================================================================
@@ -42,10 +42,10 @@ export const salonClientRetention: PillarPageData = {
     // =========================================================================
     {
       id: 'why-retention-matters',
-      title: 'The Economics of Client Retention vs. Acquisition',
+      title: 'The economics of keeping clients against finding them',
       content: `<p>Client retention is the most profitable growth strategy available to any salon, more profitable than marketing, more profitable than adding new services, and more profitable than expanding to a new location. Understanding the economics is the first step to making retention a priority.</p>
 
-<h3>The Cost Gap: Retention vs. Acquisition</h3>
+<h3>The cost gap</h3>
 <p>Every industry study confirms the same finding: acquiring a new client costs 5-7 times more than retaining an existing one. For salons, the math is even more stark when you consider the full cost of acquisition:</p>
 <ul>
   <li><strong>Marketing spend:</strong> Social media advertising, Google Ads, marketplace listing fees, print materials, and referral incentives, all to get a prospect to book their first visit.</li>
@@ -55,7 +55,7 @@ export const salonClientRetention: PillarPageData = {
 </ul>
 <p>Add these together and the average cost of acquiring a new salon client ranges from $30 to $100+, depending on your market and channels. The cost of retaining an existing client, a well-timed reminder or a loyalty reward, is typically $2-5 per visit.</p>
 
-<h3>The Profit Impact of Retention</h3>
+<h3>What retention does to profit</h3>
 <p>Research by Bain & Company demonstrates that a 5% increase in customer retention produces a 25-95% increase in profits. This is not a typo. The multiplier effect comes from three compounding factors:</p>
 <ol>
   <li><strong>Increased visit frequency:</strong> Retained clients visit more often over time as they develop a habit and relationship with your salon. A client who starts at six visits per year often increases to eight or ten as trust builds.</li>
@@ -63,13 +63,13 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Referral generation:</strong> Retained clients become your most effective marketing channel. A loyal client who refers two friends per year generates more value than any paid advertising campaign, and those referred clients arrive with built-in trust.</li>
 </ol>
 
-<h3>Client Lifetime Value: The Number That Matters Most</h3>
+<h3>Client lifetime value</h3>
 <p>Client Lifetime Value (CLV) is the total revenue a single client generates over the duration of their relationship with your salon. Here is a simple calculation:</p>
 <p><strong>CLV = Average Visit Value x Visits Per Year x Average Client Lifespan (in years)</strong></p>
 <p>For example: A client who spends an average of $80 per visit, visits 8 times per year, and stays with your salon for 3 years has a CLV of $1,920. If your retention strategies increase their lifespan from 3 to 5 years, their CLV jumps to $3,200, a 67% increase from the same client, with no additional acquisition cost.</p>
 <p>When you understand CLV, every retention decision becomes clearer. Spending $50 on a birthday gift for a client worth $3,200 is not an expense. It is an investment with a 64x return.</p>
 
-<h3>Industry Benchmarks</h3>
+<h3>Industry benchmarks</h3>
 <p>Where does your salon stand? Here are the benchmarks for salon client retention:</p>
 <ul>
   <li><strong>Below average:</strong> Less than 30% of first-time clients return for a second visit.</li>
@@ -95,10 +95,10 @@ export const salonClientRetention: PillarPageData = {
     // =========================================================================
     {
       id: 'measuring-retention',
-      title: 'Key Metrics: How to Measure Salon Client Retention',
+      title: 'How to measure retention',
       content: `<p>You cannot improve what you do not measure. Salon client retention requires tracking four core metrics, each one reveals a different aspect of your client relationships and points to specific actions you can take.</p>
 
-<h3>1. Client Retention Rate</h3>
+<h3>1. Client retention rate</h3>
 <p>Your retention rate is the percentage of clients who return to your salon within a defined period. The standard measurement period for salons is 12 months, since most beauty services have a 4-8 week cycle.</p>
 <p><strong>Formula:</strong> Retention Rate = (Clients who visited in both Period A and Period B) / (Total clients in Period A) x 100</p>
 <p>For example: If 400 unique clients visited your salon in 2025, and 240 of them also visited in 2026, your annual retention rate is 60%. Track this quarterly as well for faster feedback on whether your strategies are working.</p>
@@ -109,12 +109,12 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Stylist:</strong> Retention rates vary significantly between team members. This data is essential for coaching and identifying strengths to replicate.</li>
 </ul>
 
-<h3>2. Rebooking Rate</h3>
+<h3>2. Rebooking rate</h3>
 <p>Your rebooking rate measures the percentage of clients who book their next appointment before leaving the salon (or within 7 days of their visit). This is the most actionable metric because it directly reflects your front-desk and service-provider behaviour.</p>
 <p><strong>Formula:</strong> Rebooking Rate = (Clients who booked next appointment within 7 days) / (Total clients served) x 100</p>
 <p>Industry target: 60% or higher. Top-performing salons achieve 70-80% rebooking rates. Every percentage point improvement in rebooking translates directly to reduced client churn and more predictable revenue.</p>
 
-<h3>3. Client Lifetime Value (CLV)</h3>
+<h3>3. Client lifetime value</h3>
 <p>CLV represents the total revenue a single client generates over their entire relationship with your salon. This metric should guide every retention investment decision.</p>
 <p><strong>Formula:</strong> CLV = Average Spend Per Visit x Visits Per Year x Average Client Lifespan (years)</p>
 <p>Calculate CLV for different segments:</p>
@@ -124,7 +124,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>By loyalty status:</strong> Clients enrolled in a loyalty program have 20-40% higher CLV than non-enrolled clients.</li>
 </ul>
 
-<h3>4. Churn Rate</h3>
+<h3>4. Churn rate</h3>
 <p>Churn rate is the inverse of retention, the percentage of clients who stop visiting your salon within a given period. Understanding when and why clients leave is just as important as knowing how many stay.</p>
 <p><strong>Formula:</strong> Churn Rate = (Clients who did not return within their expected cycle + 30 days) / (Total active clients) x 100</p>
 <p>Track churn by timing:</p>
@@ -145,10 +145,10 @@ export const salonClientRetention: PillarPageData = {
     // =========================================================================
     {
       id: 'client-experience',
-      title: 'Building an Experience That Keeps Clients Coming Back',
+      title: 'Building an experience worth returning to',
       content: `<p>The foundation of client retention is an experience so consistently excellent that clients never feel the need to try a competitor. Service quality is the baseline, but the full experience includes every interaction from the moment a client discovers your salon to the follow-up after they leave.</p>
 
-<h3>The First Impression Window</h3>
+<h3>The first few minutes</h3>
 <p>A new client's decision about whether to return is largely made within the first five minutes of their visit and reinforced within the first 24 hours after they leave. This means your first-impression systems must be flawless:</p>
 <ul>
   <li><strong>Greeting:</strong> Acknowledge every client by name within 30 seconds of arrival. If you use a booking system with client photos or notes, your front desk can prepare for each arrival. Nothing makes a first-time client feel more welcome than hearing their name.</li>
@@ -156,7 +156,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Consultation:</strong> Before touching a client's hair or skin, conduct a genuine consultation. Ask about their goals, preferences, lifestyle, and any concerns. Document everything in their client profile for future visits. This shows you care about their individual needs, not just completing a service.</li>
 </ul>
 
-<h3>Service Consistency</h3>
+<h3>Being consistent</h3>
 <p>The number one reason clients leave a salon is inconsistency, they loved their first visit but the second felt different. Consistency requires systems:</p>
 <ul>
   <li><strong>Client notes:</strong> Detailed records of every service, products used, formulas applied, techniques preferred, conversation topics, personal details mentioned. When a client returns and you remember their daughter's name or their preferred colour formula, trust deepens instantly.</li>
@@ -164,7 +164,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Quality control:</strong> Regular check-ins during service ("How is the temperature?" "Is the pressure comfortable?") and a final approval step before the client leaves the chair. These checkpoints catch issues before they become complaints.</li>
 </ul>
 
-<h3>The Departure Experience</h3>
+<h3>How they leave</h3>
 <p>How a visit ends is what clients remember most, the recency effect in psychology means the last interaction disproportionately shapes their overall impression:</p>
 <ul>
   <li><strong>Service recap:</strong> Briefly review what was done and any home care recommendations. This reinforces the value of the service and positions you as an expert, not just a service provider.</li>
@@ -173,7 +173,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Warm farewell:</strong> Walk the client to the front desk. Thank them by name. Express genuine appreciation for their visit.</li>
 </ul>
 
-<h3>Ambiance and Environment</h3>
+<h3>The room itself</h3>
 <p>The physical environment communicates your brand before a single word is spoken. Retention-focused salons invest in:</p>
 <ul>
   <li><strong>Cleanliness:</strong> Non-negotiable. Every surface, tool, and station must be immaculate at all times, not just when you expect an inspector.</li>
@@ -192,10 +192,10 @@ export const salonClientRetention: PillarPageData = {
     // =========================================================================
     {
       id: 'communication-strategy',
-      title: 'Automated Communication That Prevents Client Churn',
+      title: 'Automated messages that stop churn',
       content: `<p>The right message at the right time is the most effective retention tool a salon can deploy. Automated communication fills the gap between visits, the period when clients are most vulnerable to forgetting you, trying a competitor, or simply losing the habit of regular appointments.</p>
 
-<h3>The Communication Timeline</h3>
+<h3>The timeline</h3>
 <p>Every client interaction should trigger a sequence of automated messages designed to strengthen the relationship and drive rebooking. Here is the optimal timeline:</p>
 
 <h4>Within 2-4 hours after the visit</h4>
@@ -224,7 +224,7 @@ export const salonClientRetention: PillarPageData = {
 <h4>At 120% of their typical visit interval (overdue)</h4>
 <p>The client is now past their usual booking cycle. This is the critical window, if they do not book within the next 2-3 weeks, the probability of churn increases dramatically. Send a personalised message acknowledging the gap and offering to help them get back on schedule.</p>
 
-<h3>Channel Selection</h3>
+<h3>Choosing the channel</h3>
 <p>Not all communication channels are equally effective for salon retention:</p>
 <ul>
   <li><strong>SMS / WhatsApp:</strong> Highest open rates (90%+) and fastest response times. Best for rebooking reminders, appointment confirmations, and time-sensitive offers. Keep messages under 160 characters for maximum impact.</li>
@@ -233,7 +233,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>In-app messages:</strong> For clients who use your booking platform, in-app messages appear when they are already engaged with your salon, making them highly contextual and effective.</li>
 </ul>
 
-<h3>Personalisation That Matters</h3>
+<h3>Personalisation that lands</h3>
 <p>Generic messages ("We miss you! Come back!") are ignored. Personalised messages get action:</p>
 <ul>
   <li>Use the client's first name, always.</li>
@@ -242,7 +242,7 @@ export const salonClientRetention: PillarPageData = {
   <li>Adjust messaging tone based on how long they have been a client, a first-visit follow-up should feel different from a message to a client of three years.</li>
 </ul>
 
-<h3>Birthday and Anniversary Messages</h3>
+<h3>Birthdays and anniversaries</h3>
 <p>Birthday messages have one of the highest engagement rates of any automated communication, because they feel personal even when automated. Effective birthday campaigns include:</p>
 <ul>
   <li>A genuine happy birthday message (sent on the actual birthday, not days before)</li>
@@ -269,10 +269,10 @@ export const salonClientRetention: PillarPageData = {
     // =========================================================================
     {
       id: 'loyalty-programs',
-      title: 'Loyalty Programs That Actually Drive Repeat Visits',
+      title: 'Loyalty programs that actually work',
       content: `<p>A well-designed loyalty program is the most powerful retention tool a salon can implement, clients enrolled in loyalty programs visit 20-40% more frequently and spend 15-25% more per visit than non-enrolled clients. But not all loyalty programs are created equal.</p>
 
-<h3>Types of Salon Loyalty Programs</h3>
+<h3>The kinds of loyalty program</h3>
 <p>There are four primary models, each with different strengths:</p>
 
 <h4>1. Points-Based Programs</h4>
@@ -307,7 +307,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Best for:</strong> Very small, cash-based businesses without digital systems. Not recommended for most salons.</li>
 </ul>
 
-<h3>Designing a Program That Works</h3>
+<h3>Designing one that works</h3>
 <p>Regardless of the model you choose, effective loyalty programs share these characteristics:</p>
 <ul>
   <li><strong>Automatic enrolment:</strong> Every client should be enrolled by default. Requiring opt-in reduces participation by 60-80%. Make it frictionless, if a client books and pays, they are in the program.</li>
@@ -317,7 +317,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>No expiration (or generous expiration):</strong> Point or credit expiration is the fastest way to create negative loyalty experiences. If you must have expiration, set it at 12 months minimum with a warning message 30 days before.</li>
 </ul>
 
-<h3>Measuring Loyalty Program ROI</h3>
+<h3>Measuring what it returns</h3>
 <p>Track these metrics to ensure your program drives results:</p>
 <ul>
   <li><strong>Participation rate:</strong> Percentage of active clients enrolled. Target: 80%+ with automatic enrolment.</li>
@@ -348,10 +348,10 @@ export const salonClientRetention: PillarPageData = {
     // =========================================================================
     {
       id: 'cashback-as-retention',
-      title: 'Why Cashback Outperforms Discounts for Client Retention',
+      title: 'Why cashback beats discounting',
       content: `<p>Cashback is the most effective loyalty mechanic for salon client retention because it rewards clients without devaluing your services, a critical distinction that separates growing salons from those trapped in a discounting cycle.</p>
 
-<h3>The Psychology of Cashback vs. Discounts</h3>
+<h3>The psychology behind it</h3>
 <p>Discounts and cashback both reduce the effective price a client pays, but they do so in psychologically different ways, with dramatically different impacts on your business:</p>
 
 <h4>Discounts: The Devaluation Trap</h4>
@@ -360,16 +360,16 @@ export const salonClientRetention: PillarPageData = {
 <h4>Cashback: The Value Addition</h4>
 <p>When a client pays $100 and earns $5 in cashback, they perceive the service as worth $100, they paid the full price and were rewarded for their loyalty. The $5 sits in their account as a balance, creating a psychological "switching cost." Walking away from your salon means walking away from money they have already earned. This is the endowment effect in action: people value things more once they own them.</p>
 
-<h3>The Retention Mechanics of Cashback</h3>
+<h3>How cashback holds people</h3>
 <p>Cashback drives retention through four interconnected mechanisms:</p>
 <ol>
   <li><strong>Balance accumulation:</strong> Each visit adds to a running balance. A client with $45 in their cashback wallet is unlikely to try a competitor because they would be "leaving money on the table." The higher the balance, the stronger the retention.</li>
-  <li><strong>Redemption anticipation:</strong> Clients plan visits partially around redeeming their cashback ,  "I have $30 in credit, so my next colour appointment will effectively cost me $30 less." This planning is itself a retention mechanism because it involves your salon in their future thinking.</li>
+  <li><strong>Redemption anticipation:</strong> clients start planning visits around the credit they are holding. "I have $30 in credit, so my next colour appointment will effectively cost me $30 less." That planning is itself retention, because it puts your salon into how they think about the months ahead.</li>
   <li><strong>Incremental spend:</strong> When clients redeem cashback, they often spend more than the cashback amount. A client redeeming $20 in cashback on an $80 service still pays $60, and frequently adds a treatment or product because the perceived cost of the visit is lower.</li>
   <li><strong>Habitual behaviour:</strong> Over time, the cashback system creates a habit loop: visit, earn, accumulate, redeem, repeat. This automatic cycle is far more durable than any one-time discount or promotion.</li>
 </ol>
 
-<h3>Cashback Rate Strategy</h3>
+<h3>Setting the rate</h3>
 <p>The cashback percentage you offer must balance client motivation with financial sustainability:</p>
 <ul>
   <li><strong>3-5% cashback:</strong> The sweet spot for most salons. At 5% on an $80 average ticket, a client earns $4 per visit, enough to feel meaningful when accumulated over several visits, but well within your margin. On 8 visits per year, the client earns $32 in cashback, costing your salon $32 but retaining a client worth $640+ annually.</li>
@@ -377,7 +377,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Tiered cashback:</strong> Increase the rate based on loyalty status. New clients earn 3%, clients with 10+ visits earn 5%, clients with 25+ visits earn 7%. This rewards your most loyal clients while keeping costs manageable for new ones.</li>
 </ul>
 
-<h3>How Daisy's Cashback System Works</h3>
+<h3>How Daisy handles it</h3>
 <p>Daisy builds cashback directly into the booking and payment flow, making it effortless for both the salon and the client:</p>
 <ul>
   <li><strong>Automatic earning:</strong> Cashback is calculated and credited instantly after every completed appointment, no manual tracking, no stamp cards, no "did I earn points for that?" questions.</li>
@@ -407,10 +407,10 @@ export const salonClientRetention: PillarPageData = {
     // =========================================================================
     {
       id: 'rebooking-strategies',
-      title: 'Rebooking Strategies: Locking In the Next Appointment',
+      title: 'Rebooking: securing the next appointment',
       content: `<p>Rebooking, securing a client's next appointment before or shortly after they leave the salon, is the single most impactful retention tactic available to any salon. A client who rebooks is 80% less likely to churn than one who leaves without a future appointment.</p>
 
-<h3>At-Checkout Rebooking</h3>
+<h3>Rebooking at checkout</h3>
 <p>The most effective rebooking happens at the chair, before the client reaches the front desk. When the stylist or therapist recommends rebooking as part of the service conversation, it feels like professional advice rather than a sales pitch:</p>
 <ul>
   <li><strong>Frame it as expertise:</strong> "Your roots will start showing at about the four-week mark. If we get you in at week five, we can do a quick refresh that takes half the time of a full colour. Want me to book that now?"</li>
@@ -418,7 +418,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Remove friction:</strong> If your booking system allows, the stylist should be able to book the next appointment right from their station, a tablet at each chair or a mobile app eliminates the need for the client to wait at the front desk.</li>
 </ul>
 
-<h3>Front Desk Rebooking Protocol</h3>
+<h3>What the front desk should say</h3>
 <p>For clients who reach the front desk without rebooking, a consistent protocol ensures the opportunity is not missed:</p>
 <ol>
   <li>Ask: "Sarah mentioned you would be great for a refresh in about six weeks. Shall I book that for you now?"</li>
@@ -428,16 +428,16 @@ export const salonClientRetention: PillarPageData = {
 </ol>
 <p>The key is to make rebooking the default expectation, not an optional add-on. When every client is asked, rebooking rates climb steadily.</p>
 
-<h3>Automated Rebooking Prompts</h3>
+<h3>Automated prompts</h3>
 <p>For the 40-50% of clients who leave without rebooking, automated prompts are your safety net:</p>
 <ul>
   <li><strong>Day 7:</strong> "Hi [Name], we hope you are loving your [service]. [Stylist] recommended booking your next [service] around [date]. Here is a link to grab your preferred time: [link]"</li>
   <li><strong>Week 3 (for a 6-week cycle):</strong> "Your [service] refresh window opens in about three weeks. The best times tend to fill up fast, here is a link to secure your spot: [link]"</li>
-  <li><strong>Week 5 (approaching due date):</strong> "Just a reminder ,  [Stylist] recommended a [service] refresh this week. We have availability on [dates]. Book here: [link]"</li>
+  <li><strong>Week 5 (approaching due date):</strong> "Just a reminder that [Stylist] recommended a [service] refresh this week. We have availability on [dates]. Book here: [link]"</li>
   <li><strong>Week 7 (overdue):</strong> "We noticed you are past your usual [service] window. No worries, here is a link to book whenever works for you: [link]. We would love to see you soon."</li>
 </ul>
 
-<h3>Recurring Appointments</h3>
+<h3>Standing appointments</h3>
 <p>The highest-retention model is recurring appointments, where clients book a standing appointment on the same day and time on a regular cycle. This works especially well for:</p>
 <ul>
   <li>Colour maintenance (every 4-6 weeks)</li>
@@ -447,7 +447,7 @@ export const salonClientRetention: PillarPageData = {
 </ul>
 <p>To encourage recurring bookings, position them as a VIP benefit: "As a regular client, we can reserve your preferred time slot every six weeks, same day, same stylist, same time. You will never have to compete for weekend slots again." The exclusivity framing makes recurring bookings feel like a privilege, not a commitment.</p>
 
-<h3>Optimal Rebooking Timing by Service</h3>
+<h3>Timing by service</h3>
 <p>Match your rebooking recommendations to the natural maintenance cycle of each service:</p>
 <ul>
   <li><strong>Root touch-up / colour refresh:</strong> 4-6 weeks</li>
@@ -468,10 +468,10 @@ export const salonClientRetention: PillarPageData = {
     // =========================================================================
     {
       id: 'win-back-campaigns',
-      title: 'Win-Back Campaigns: Re-Engaging Lapsed Clients',
+      title: 'Win-back campaigns for clients who drifted',
       content: `<p>A lapsed client, one who has not visited in more than 1.5x their normal cycle, is not a lost cause. Win-back campaigns can recover 10-20% of lapsed clients, and since these clients already know your salon, re-engaging them costs a fraction of acquiring a new client.</p>
 
-<h3>Identifying Lapsed Clients</h3>
+<h3>Spotting who has lapsed</h3>
 <p>Your salon software should automatically flag clients as "at risk" or "lapsed" based on their individual visit patterns:</p>
 <ul>
   <li><strong>At risk:</strong> Client has not booked within 1.2x their typical visit interval. For a client who normally visits every 6 weeks, this means 7+ weeks with no booking.</li>
@@ -481,7 +481,7 @@ export const salonClientRetention: PillarPageData = {
 </ul>
 <p>Segment your lapsed clients by their history, a client who visited 20 times before lapsing deserves a different approach than one who came once and never returned.</p>
 
-<h3>Win-Back Messaging Strategy</h3>
+<h3>What to say</h3>
 <p>The tone and offer should escalate based on how long the client has been away:</p>
 
 <h4>Stage 1: Gentle Reminder (1-2 months overdue)</h4>
@@ -496,7 +496,7 @@ export const salonClientRetention: PillarPageData = {
 <h4>Stage 4: Final Outreach (6-12 months overdue)</h4>
 <p>Tone: Honest, acknowledging the gap. Message: "Hi [Name], it has been a while and we wanted to check in. If there is anything we could have done better, we would love to hear about it. If you would like to return, here is a [special offer] to welcome you back: [link]."</p>
 
-<h3>Win-Back Offers That Work</h3>
+<h3>Offers that bring people back</h3>
 <p>Not all win-back incentives are equally effective. Ranked by performance:</p>
 <ol>
   <li><strong>Complimentary add-on service:</strong> "Free deep conditioning treatment with your next colour appointment." High perceived value, low cost to deliver, and brings the client in for their primary service at full price.</li>
@@ -505,7 +505,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Percentage discount on next visit:</strong> Less effective than the above because it triggers discount-seeking behaviour, but can work for dormant clients who need a stronger incentive to re-engage.</li>
 </ol>
 
-<h3>Understanding Why Clients Leave</h3>
+<h3>Why they left in the first place</h3>
 <p>The most valuable outcome of a win-back campaign is not always getting the client back. It is understanding why they left. Include a brief "How can we improve?" prompt in your outreach. Common reasons clients leave salons:</p>
 <ul>
   <li><strong>Inconsistent results</strong> (38%). They received different quality across visits or stylists.</li>
@@ -526,10 +526,10 @@ export const salonClientRetention: PillarPageData = {
     // =========================================================================
     {
       id: 'personalization',
-      title: 'Personalization: The Retention Strategy Competitors Cannot Copy',
+      title: 'Personalisation, the part competitors cannot copy',
       content: `<p>Personalization is the most durable retention strategy because it compounds over time, every visit adds to your knowledge of a client, making the next visit better, making it harder for a competitor to match your service. A new salon down the street can match your prices or even your decor, but they cannot replicate three years of detailed client history.</p>
 
-<h3>Client Profile Data That Drives Retention</h3>
+<h3>What to record about each client</h3>
 <p>Effective personalisation starts with comprehensive client profiles. Every visit should add to a growing record that makes each future interaction more tailored:</p>
 <ul>
   <li><strong>Service history:</strong> Every service received, products used, formulas applied (including exact colour ratios, processing times, and techniques). A stylist who can say "Last time we used a 6N with 20-volume for 35 minutes, shall we repeat that or go half a shade lighter?" demonstrates mastery that builds deep trust.</li>
@@ -539,7 +539,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Feedback history:</strong> Any complaints, compliments, or suggestions. Tracking feedback and demonstrating that you acted on it ("You mentioned last time that the waiting area was cold, we have added a heater") is one of the most powerful trust-building actions.</li>
 </ul>
 
-<h3>Personalised Service Delivery</h3>
+<h3>Personalising the service itself</h3>
 <p>Once you have data, put it to work at every touchpoint:</p>
 <ul>
   <li><strong>Pre-visit preparation:</strong> Review the client's profile before their appointment. Have their preferred beverage ready, pull up their formula, and brief the stylist on any personal updates from the last conversation.</li>
@@ -548,7 +548,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Follow-up:</strong> Personalised post-visit messages that reference the specific service: "Your new balayage is going to look amazing in the sun this weekend! Remember to use a UV protectant spray when you are outside."</li>
 </ul>
 
-<h3>Personalised Marketing Communication</h3>
+<h3>Personalising the messages</h3>
 <p>Move beyond "Dear Valued Client" mass emails to segmented, personalised outreach:</p>
 <ul>
   <li><strong>Service-based targeting:</strong> Send colour-maintenance tips to colour clients, styling tutorials to cut clients, and skincare routines to facial clients. Irrelevant messages train clients to ignore your communication.</li>
@@ -557,7 +557,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Seasonal targeting:</strong> Adjust recommendations based on season and the client's specific needs, humidity-resistant treatments before summer for clients with frizz-prone hair, hydrating treatments before winter for clients who mentioned dry skin.</li>
 </ul>
 
-<h3>Building a Personalisation Culture</h3>
+<h3>Making it a habit across the team</h3>
 <p>Personalisation is not a software feature. It is a team behaviour. Train your entire team to:</p>
 <ul>
   <li><strong>Listen and record:</strong> After every appointment, stylists spend 60 seconds updating client notes with anything relevant from the conversation.</li>
@@ -576,10 +576,10 @@ export const salonClientRetention: PillarPageData = {
     // =========================================================================
     {
       id: 'technology-for-retention',
-      title: 'How Salon Software Automates Retention',
+      title: 'How the software carries the load',
       content: `<p>Every retention strategy in this guide can be executed manually, but manual execution breaks down as your salon grows. The difference between a salon with 50% retention and one with 70% retention is almost always the presence of automated systems that ensure nothing falls through the cracks.</p>
 
-<h3>What Retention-Focused Salon Software Does</h3>
+<h3>What the software should do</h3>
 <p>Modern salon platforms like Daisy integrate retention into every workflow, rather than treating it as a separate function:</p>
 
 <h4>Automated Communication Sequences</h4>
@@ -600,10 +600,10 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Campaign effectiveness:</strong> Which messages, offers, and channels work best for which client segments, enabling continuous improvement of your retention communication.</li>
 </ul>
 
-<h3>Integrated Loyalty and Cashback</h3>
+<h3>Loyalty and cashback built in</h3>
 <p>Retention works best when loyalty is built into the booking and payment flow rather than managed as a separate system. When a client books, visits, pays, and earns cashback in a single seamless experience, every transaction reinforces the retention loop. Separate loyalty apps or punch cards create friction that reduces participation.</p>
 
-<h3>Online Booking as a Retention Tool</h3>
+<h3>Online booking as retention</h3>
 <p>An often-overlooked retention feature is the online booking system itself. Clients who book online rebook 30-40% more frequently than phone-only clients because:</p>
 <ul>
   <li>They can book at any hour, not just during business hours when they might be at work.</li>
@@ -612,7 +612,7 @@ export const salonClientRetention: PillarPageData = {
   <li>The booking confirmation email or SMS serves as a touchpoint that reinforces the salon relationship.</li>
 </ul>
 
-<h3>AI-Powered Retention with Daisy</h3>
+<h3>AI-powered retention with Daisy</h3>
 <p>Daisy's AI receptionist and retention engine work together to ensure no client falls through the cracks:</p>
 <ul>
   <li><strong>24/7 booking:</strong> Clients can book, reschedule, or enquire at any hour via AI-powered chat, no missed bookings because the salon was closed when the client was ready to commit.</li>
@@ -622,7 +622,7 @@ export const salonClientRetention: PillarPageData = {
   <li><strong>Client profiles:</strong> Comprehensive digital profiles that any team member can access before an appointment, ensuring personalised service even when a client sees a different stylist.</li>
 </ul>
 
-<h3>Choosing the Right Technology</h3>
+<h3>Choosing the right platform</h3>
 <p>When evaluating salon software for retention capabilities, prioritise these features:</p>
 <ul>
   <li><strong>Automated communication sequences</strong> that trigger based on individual client behaviour, not just bulk sends.</li>
@@ -669,7 +669,7 @@ export const salonClientRetention: PillarPageData = {
     {
       question: 'How do I get clients to rebook before they leave the salon?',
       answer:
-        'Train your service providers to recommend the next appointment timing as part of the service conversation ,  "Your colour will look best with a refresh at about the five-week mark. Shall I book that for you now?", rather than relying on the front desk alone. Provide specific date suggestions rather than vague "come back soon" statements. Make rebooking frictionless by allowing stylists to book from tablets at their station. The industry target is a 60%+ at-checkout rebooking rate. Salons that consistently ask every client see their rate climb by 15-25 percentage points within three months.',
+        'Train your providers to raise the next appointment during the service itself, rather than leaving it to the front desk. "Your colour will look best with a refresh at about the five-week mark. Shall I book that for you now?" Suggest specific dates rather than a vague "come back soon", and let stylists book from a tablet at their station so nothing gets in the way. The industry target is a 60%+ at-checkout rebooking rate, and salons that ask every single client see theirs climb 15-25 percentage points within three months.',
     },
     {
       question: 'How can I win back lapsed salon clients?',

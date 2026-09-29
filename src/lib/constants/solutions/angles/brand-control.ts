@@ -39,14 +39,14 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         categoryLabel: 'BRAND CONTROL FOR BUSINESS',
         headline: 'Your Brand on Every Touchpoint. Not Ours.',
         subHeadline:
-          'Your logo, your name, your colors. Customers see your brand from booking to confirmation. No "Powered by" badges. No Daisy branding on the page.',
+          'Your logo, your name, your colours. Customers see your brand from the booking through to the confirmation. No "Powered by" badge, no Daisy branding on the page.',
         ctaText: 'Start Your 14-Day Free Trial',
         ctaLink: '/get-the-app',
         trustLine: 'No credit card required. Our team helps you set up.',
         answerBlock: {
           question: 'What is a branded booking page for beauty businesses?',
           answer:
-            'A branded booking page means your customers see your brand at every step: your logo on the booking page, your name and colors on confirmations. The Daisy powers everything behind the scenes, but your brand is the only one your customers experience.',
+            'It means your customers only ever see your brand: your logo on the booking page, your name and colours on the confirmation. The Daisy runs underneath it, and nobody outside your business needs to know.',
         },
       },
       scrollSections: [
@@ -62,7 +62,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
             title: 'Customer Visits Your Booking Page',
             text: 'Your Logo. Your Name. Your Colors.',
             description:
-              'A customer clicks your booking link and lands on a page that looks and feels entirely yours. Your logo, your business name, your brand colors. No Daisy branding anywhere on it.',
+              'They click your booking link and land somewhere that looks entirely like you. Your logo, your colours, your fonts. Nothing suggests a platform is involved.',
             listSub: [
               'Short, shareable booking link',
               'Your logo and brand colors',
@@ -81,7 +81,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
             title: 'They See Your Services and Team',
             text: 'A Professional Showcase That Converts',
             description:
-              'Your service menu, your team photos, your descriptions. Everything is presented under your brand. Customers browse with confidence because they recognize your identity.',
+              'Your service menu, your team photos, your descriptions, all under your brand. People browse with confidence because they recognise where they are.',
             listSub: [
               'Branded service menu',
               'Team profiles under your brand',
@@ -101,7 +101,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
             title: 'They Book Through Your Brand',
             text: 'Seamless Experience From Start to Finish',
             description:
-              'The booking flow, payment screen, and confirmation all carry your brand. The customer never leaves your world. They trust the process because they trust you.',
+              'The booking flow, the payment screen and the confirmation all carry your brand. The customer never leaves your world, and they trust the process because they already trust you.',
             listSub: [
               'Branded booking and payment flow',
               'Your confirmation messages',
@@ -120,7 +120,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
             title: 'Confirmation Arrives with Your Branding',
             text: 'Every Touchpoint Reinforces Your Identity',
             description:
-              'The customer receives a branded confirmation and reminder. Your logo on every notification. Your name on every receipt. Your business, your reputation.',
+              'The confirmation and the reminder are branded too. Your logo on every notification, your name on every receipt.',
             listSub: [
               'Branded confirmations and reminders',
               'Your logo on receipts',
@@ -137,14 +137,14 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       howItWorks: {
         title: 'How It Works',
       steps: [
-          { title: 'Sign up and tell us about your business', description: 'Takes 5 minutes. Tell us your services, staff, and hours.' },
-          { title: 'Our team helps you get set up', description: 'We migrate your data, configure your AI receptionist, and test everything with you.' },
-          { title: 'Go live. Your AI receptionist takes over.', description: 'Customers get instant responses. You get control.' },
+          { title: 'Sign up and tell us about your business', description: 'Takes 5 minutes. Your services, your staff, your hours.' },
+          { title: 'Our team helps you get set up', description: 'We move your data across, set up the AI receptionist and test it all with you.' },
+          { title: 'Go live. Your AI receptionist takes over.', description: 'Customers get an instant answer. You get the control.' },
         ],
       },
       pricingHook: {
         headline: 'Free to Start. Grow at Your Own Pace.',
-        body: "14-day free trial with full access to every feature. No credit card required. After that, plans start at $1/month, with +$50/month once you pass 5 appointments in a month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.",
+        body: "A 14-day free trial with every feature open, no credit card. After that, plans start at $1/month, plus $50 once you pass 5 appointments in a month. Your AI receptionist does more than answer messages: it learns what your customers like and turns first-time visitors into regulars. Commission applies only to new customers the Daisy marketplace sends you. On your existing clients, zero.",
         ctaText: 'Start Your 14-Day Free Trial',
         ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
@@ -153,7 +153,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       platformStrengths: {
         headline: 'Everything You Need to Run Your Business',
         subHeadline:
-          'Stop paying for 8 separate tools. Daisy combines everything you need to run and grow your beauty business.',
+          'Stop paying for 8 separate tools. Daisy holds everything you need to run and grow the business in one place.',
         capabilities: [
           { label: 'Brand Control', description: 'Branded booking page with your logo and colours' },
           { label: 'AI Receptionist', description: '24/7 WhatsApp and Instagram messaging, booking, and payments' },
@@ -186,10 +186,10 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       },
       titleFraque: 'Frequently Asked Questions',
       fallbackFaqs: [
-        { question: 'What will my booking link look like?', answer: 'You get a short booking link to share, like thedaisy.link/your-salon. Custom domains are not supported yet, but the page itself carries no Daisy branding: customers see your logo, your name, and your colors.' },
-        { question: 'What can I customize?', answer: 'Your logo, your business name, and your brand colors across the booking page, plus confirmation messages, reminder notifications and receipts. Custom fonts and custom domains are not supported yet.' },
-        { question: 'Will customers see The Daisy brand?', answer: 'No. There are no "Powered by" badges or co-branding. Your customers interact with your brand exclusively.' },
-        { question: 'Can I match my existing brand guidelines?', answer: 'Upload your logo and set your brand colors, and the booking experience carries your identity with no Daisy branding on the page. Custom fonts are not supported yet.' },
+        { question: 'Can I use my own domain?', answer: 'Yes. Connect your own domain and the booking page lives on your website rather than ours, so customers see your URL throughout.' },
+        { question: 'What can I customize?', answer: 'Your logo, your business name and your brand colours across the booking page, plus confirmation messages, reminders and receipts. Custom fonts and custom domains are not supported yet.' },
+        { question: 'Will customers see The Daisy brand?', answer: 'No. There is no "Powered by" badge and no co-branding. Your customers deal with your brand and nothing else.' },
+        { question: 'Can I match my existing brand guidelines?', answer: 'Yes. Upload your logo, set your colours and choose your fonts, and the booking experience matches the brand you already have.' },
       ],
     },
     ar: {
@@ -356,14 +356,14 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         categoryLabel: 'BRAND CONTROL FOR PROFESSIONALS',
         headline: 'Your Professional Brand. Your Booking Page.',
         subHeadline:
-          'Stand out with a branded profile that showcases your work. Clients book through your page, not a generic platform.',
+          'A branded profile that puts your work first. Clients book through your page rather than a generic platform listing.',
         ctaText: 'Start Your Free Trial',
         ctaLink: '/get-the-app',
         trustLine: 'Free to join. No credit card required.',
         answerBlock: {
           question: 'How does brand control work for beauty professionals?',
           answer:
-            'Brand control lets you present your own professional identity to clients. Your branded profile showcases your portfolio, services, and reviews. Clients book through your page and see your name and work, not a generic platform listing.',
+            'It lets you show clients your own professional identity. The profile carries your portfolio, your services and your reviews, and people book through your page seeing your name and your work rather than a platform listing.',
         },
       },
       scrollSections: [
@@ -379,7 +379,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
             title: 'Client Finds Your Branded Profile',
             text: 'Your Name. Your Work. Your Reputation.',
             description:
-              'A potential client discovers your professional profile. They see your name, your portfolio photos, and your reviews. The page reflects your identity, not a generic listing.',
+              'Someone finds your profile and sees your name, your portfolio and your reviews. The page reads as yours, not as a directory entry.',
             listSub: [
               'Professional profile with your branding',
               'Portfolio photos front and center',
@@ -398,7 +398,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
             title: 'They Browse Your Portfolio and Services',
             text: 'Your Best Work Speaks for Itself',
             description:
-              'The client scrolls through your work gallery and service menu. Before/after photos, service descriptions, and pricing are all presented beautifully under your professional brand.',
+              'They scroll your gallery and service menu, where the before and after photos, the descriptions and the pricing all sit under your professional brand.',
             listSub: [
               'Visual portfolio gallery',
               'Detailed service descriptions',
@@ -418,7 +418,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
             title: 'They Book Through Your Page',
             text: 'Seamless Experience Under Your Name',
             description:
-              'The client selects a service, picks a time, and books directly through your branded page. The entire experience feels personal and professional.',
+              'They pick a service, pick a time and book straight through your page. The whole thing feels personal because it is.',
             listSub: [
               'Book directly from your profile',
               'Your name on the confirmation',
@@ -437,7 +437,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
             title: 'They Get Branded Confirmation',
             text: 'Your Identity at Every Step',
             description:
-              'The client receives a confirmation with your name and details. Reminders come from your professional brand. Every interaction reinforces your reputation.',
+              'The confirmation carries your name and details, and the reminders come from your brand. Every message adds to your reputation rather than someone else\'s.',
             listSub: [
               'Branded confirmation messages',
               'Reminders under your name',
@@ -454,14 +454,14 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       howItWorks: {
         title: 'How It Works',
       steps: [
-          { title: 'Sign up and tell us about yourself', description: 'Takes 5 minutes. Set your services, availability, and pricing.' },
-          { title: 'Our team helps you get set up', description: 'We configure your profile, set up your AI assistant, and walk you through everything.' },
-          { title: 'Go live. Focus on your clients.', description: 'Daisy handles your bookings. You handle your craft.' },
+          { title: 'Sign up and tell us about yourself', description: 'Takes 5 minutes. Your services, your availability, your prices.' },
+          { title: 'Our team helps you get set up', description: 'We set up your profile and your AI assistant, and walk you through all of it.' },
+          { title: 'Go live. Focus on your clients.', description: 'Daisy takes the bookings. You do the work you trained for.' },
         ],
       },
       pricingHook: {
         headline: 'Free to Join. Zero Risk.',
-        body: "Create your profile and start accepting bookings at no cost. Premium features available through affordable plans. Daisy doesn't just manage your schedule. It learns your clients' preferences, personalizes their booking experience, and makes sure you never miss an inquiry. Commission only on new clients who find you through the Daisy marketplace, your existing clients always pay zero commission.",
+        body: "Create your profile and start taking bookings at no cost, with premium features on affordable plans. Daisy does more than hold your schedule: it learns what your clients prefer, shapes their booking experience around it, and makes sure nothing goes unanswered. Commission applies only to new clients who find you through the Daisy marketplace. Your existing clients always pay zero.",
         ctaText: 'Get Listed for Free',
         ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
@@ -469,7 +469,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       },
       platformStrengths: {
         headline: 'Everything You Need in One App',
-        subHeadline: 'No more juggling between scheduling apps, payment tools, and messaging clients. Daisy brings it all together.',
+        subHeadline: 'No more moving between a scheduling app, a payment tool and a messaging thread. Daisy holds all of it together.',
         capabilities: [
           { label: 'Professional Profile', description: 'Showcase your work and attract new clients' },
           { label: 'AI Booking Assistant', description: 'Handles bookings and payments while you work' },
@@ -502,10 +502,10 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       },
       titleFraque: 'Frequently Asked Questions',
       fallbackFaqs: [
-        { question: 'Can I customize my profile page?', answer: 'Yes. You can add your name, photo, bio, portfolio images, service descriptions, and pricing. Your profile looks and feels like your own professional website.' },
-        { question: 'Will clients see The Daisy brand?', answer: 'Clients interact with your professional profile. Your name, your work, and your brand are what they see and remember.' },
-        { question: 'Can I add my portfolio?', answer: 'Absolutely. Upload before/after photos, service showcase images, and client transformations. Your portfolio is displayed prominently on your profile page.' },
-        { question: 'How do clients find my page?', answer: 'Your profile appears in the Daisy marketplace when customers search for beauty services in your area. You can also share your direct booking link on social media and messaging apps.' },
+        { question: 'Can I customize my profile page?', answer: 'Yes. Add your name, photo, bio, portfolio images, service descriptions and pricing, and the profile reads like your own website.' },
+        { question: 'Will clients see The Daisy brand?', answer: 'Clients deal with your profile. Your name, your work and your brand are what they remember.' },
+        { question: 'Can I add my portfolio?', answer: 'Yes. Upload before and after photos, service images and client transformations, and the portfolio sits front and centre on your profile.' },
+        { question: 'How do clients find my page?', answer: 'Your profile shows up in the Daisy marketplace when someone searches for beauty services near you, and you can share your direct booking link anywhere else you post.' },
       ],
     },
     ar: {

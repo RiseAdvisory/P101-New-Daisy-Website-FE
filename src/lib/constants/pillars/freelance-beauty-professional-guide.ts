@@ -19,23 +19,23 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
 
   heroTitle: 'The Freelance Beauty Professional Guide',
   heroSubtitle:
-    'How to launch, manage, and scale your independent beauty career, from setting your first prices to building a business that works on your terms.',
+    'How to start, run and grow an independent beauty career, from setting your first prices to building something that works on your terms.',
   readingTime: '20 min read',
   lastUpdated: '2026-03-18T00:00:00.000Z',
 
   keyTakeaways: [
-    'Freelance beauty professionals earn 30-60% more per service than employed stylists, but must account for self-employment costs, taxes, and business overheads.',
-    'Building a personal brand, including a signature style, consistent social presence, and client testimonials, is the single most effective client acquisition strategy for independents.',
-    'Smart scheduling with buffer times, travel allowances, and peak-hour pricing can increase your effective hourly rate by 25% without adding more clients.',
-    'A clear pricing strategy based on value (not just time) prevents undercharging, which is the most common financial mistake freelance professionals make.',
-    'Technology platforms like Daisy handle booking, payments, marketing, and client management, letting you focus on the creative work you love.',
-    'Transitioning from solo freelancer to business owner (with a team or studio) is achievable within 2-3 years when you systematize operations from day one.',
+    'Freelancers earn 30-60% more per service than employed stylists, before self-employment costs, taxes and overheads come out.',
+    'Nothing brings independents more clients than a personal brand: a signature style, a consistent social presence and testimonials from real clients.',
+    'Buffers, travel allowances and peak-hour pricing can lift your effective hourly rate by 25% without seeing a single extra client.',
+    'Pricing on value rather than time is what stops you undercharging, which is the financial mistake freelancers make most.',
+    'Platforms like Daisy take booking, payments, marketing and client management off your hands, which leaves you the actual craft.',
+    'Going from solo freelancer to business owner, with a team or a studio, is realistic inside 2-3 years if you systemise from day one.',
   ],
 
-  introduction: `<p>Going freelance is one of the most exciting, and consequential, decisions a beauty professional can make. You gain full control over your schedule, your income, your creative direction, and the clients you serve. You also take on every responsibility that used to belong to your employer: finding clients, managing money, handling admin, and building a reputation that stands on its own.</p>
-<p>The beauty industry is uniquely suited to freelance work. Clients follow talent, not brands. Your skills are portable. The barriers to entry are low compared to most industries. And the earning potential, when you get it right, dramatically exceeds what most employed positions offer.</p>
-<p>But freedom without structure leads to burnout, undercharging, and inconsistent income, the three reasons most freelance beauty careers stall within the first two years. This guide exists to make sure yours does not.</p>
-<p>Whether you are considering the leap from employment to freelance, already working independently and want to level up, or planning to scale from a solo operation into a full business, this guide covers every stage. From <a href="/en/features/professional/booking-management">managing your bookings</a> to building a brand that attracts premium clients, you will find actionable frameworks, not vague advice, for every challenge you will face.</p>`,
+  introduction: `<p>Going freelance is one of the biggest decisions a beauty professional makes. You take control of your schedule, your income, your creative direction and who sits in your chair. You also inherit everything your employer used to carry: finding clients, managing money, handling admin, and building a reputation that stands on its own.</p>
+<p>Beauty suits freelance work better than most industries. Clients follow talent rather than brands, your skills travel with you, and the barriers to starting are low. Get it right and the earnings leave most employed positions well behind.</p>
+<p>Freedom without structure produces burnout, undercharging and income that swings month to month, which is why most freelance beauty careers stall inside two years. This guide is about avoiding that.</p>
+<p>Whether you are weighing the jump from employment, already independent and wanting more from it, or planning to grow a solo operation into a business, there is something here for the stage you are at. From <a href="/en/features/professional/booking-management">managing your bookings</a> to building a brand that attracts premium clients, these are frameworks you can act on rather than general advice.</p>`,
 
   sections: [
     // =========================================================================
@@ -43,10 +43,10 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'going-freelance-pros-cons',
-      title: 'Going Freelance: Pros, Cons, and Readiness',
+      title: 'Going freelance: the case for and against',
       content: `<p>Going freelance means trading the security of a salary for the freedom, and responsibility, of running your own business. It is not for everyone, but for the right professional at the right stage, it is transformational.</p>
 
-<h3>The Advantages of Freelance Beauty Work</h3>
+<h3>What you gain</h3>
 <p>The benefits of going independent are significant and well-documented across the beauty industry:</p>
 <ul>
   <li><strong>Higher earning potential:</strong> Freelance beauty professionals typically earn 30-60% more per service than their employed counterparts. Without a salon taking 40-60% commission, every dollar of revenue above your costs goes directly into your pocket.</li>
@@ -56,7 +56,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Location flexibility:</strong> Work from a rented chair, a home studio, mobile setups, or a combination. Many freelancers serve clients across multiple locations, expanding their reach without the overhead of a fixed salon.</li>
 </ul>
 
-<h3>The Realities to Prepare For</h3>
+<h3>What you take on</h3>
 <p>Honest assessment of the challenges prevents the most common reasons freelance careers fail:</p>
 <ul>
   <li><strong>Income variability:</strong> Your first 3-6 months will likely have inconsistent income. Without a financial cushion (3-6 months of living expenses), this period can force you back into employment prematurely.</li>
@@ -66,7 +66,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Benefits gap:</strong> No employer-provided health insurance, pension contributions, or paid leave. You must build these into your pricing and financial planning.</li>
 </ul>
 
-<h3>The Readiness Checklist</h3>
+<h3>Are you ready?</h3>
 <p>Before making the leap, assess yourself honestly against these criteria:</p>
 <ol>
   <li><strong>Client base:</strong> Do you have at least 15-20 regular clients who have indicated they would follow you? Starting with a base is dramatically easier than starting from zero.</li>
@@ -93,10 +93,10 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'legal-financial-setup',
-      title: 'Legal and Financial Setup for Freelance Beauty Professionals',
+      title: 'Setting up legally and financially',
       content: `<p>Proper legal and financial foundations protect your income, keep you compliant, and set you up for sustainable growth from day one. Skipping this step is the most expensive mistake new freelancers make.</p>
 
-<h3>Choosing Your Business Structure</h3>
+<h3>Choosing a business structure</h3>
 <p>Your business structure affects your taxes, liability, and administrative requirements. The most common options for freelance beauty professionals are:</p>
 <table>
   <thead>
@@ -126,7 +126,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
 </table>
 <p>For most freelance beauty professionals, starting as a sole proprietor and upgrading to an LLC once revenue exceeds $50,000 annually is the most practical path. In the GCC, check local regulations, many emirates and cities now offer affordable freelancer licenses specifically for beauty and wellness professionals.</p>
 
-<h3>Licenses and Insurance</h3>
+<h3>Licences and insurance</h3>
 <p>Requirements vary by location, but every freelance beauty professional should have:</p>
 <ul>
   <li><strong>Professional license or trade license:</strong> Required in most jurisdictions to legally offer beauty services. Check your local municipality or free zone authority for specific requirements.</li>
@@ -135,7 +135,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Health and safety certifications:</strong> Many jurisdictions require specific hygiene and safety training certifications for beauty professionals.</li>
 </ul>
 
-<h3>Setting Up Your Finances</h3>
+<h3>Setting up the finances</h3>
 <p>Financial organization from day one saves hours of stress at tax time and gives you accurate data for pricing decisions:</p>
 <ol>
   <li><strong>Separate business bank account:</strong> Never mix personal and business finances. Open a dedicated business account and route all business income and expenses through it.</li>
@@ -145,7 +145,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Receipt tracking:</strong> Photograph and categorize every business receipt immediately. Deductible expenses, products, tools, travel, education, software subscriptions, directly reduce your tax bill.</li>
 </ol>
 
-<h3>Common Tax Deductions for Beauty Freelancers</h3>
+<h3>Deductions worth knowing about</h3>
 <p>Maximize your deductions to keep more of what you earn:</p>
 <ul>
   <li>Professional products and supplies</li>
@@ -180,14 +180,14 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'pricing-your-services',
-      title: 'Pricing Your Services: Value-Based Strategies That Work',
+      title: 'Pricing your services on value',
       content: `<p>Your pricing determines your income, your client type, and your career trajectory. Underpricing is the single most common, and most damaging, mistake freelance beauty professionals make.</p>
 
-<h3>Why Cost-Plus Pricing Fails</h3>
+<h3>Why cost-plus pricing fails</h3>
 <p>Many freelancers set prices by calculating their costs and adding a margin. While this ensures you cover expenses, it ignores the most important factor: the value you deliver. A balayage that transforms someone's confidence is worth far more than the sum of product costs plus time.</p>
 <p>Cost-plus pricing also anchors you to a ceiling. As your skills improve and your reputation grows, your costs remain roughly the same, but your value to clients increases dramatically. Value-based pricing captures that difference.</p>
 
-<h3>The Value-Based Pricing Framework</h3>
+<h3>Pricing on value instead</h3>
 <p>Build your prices using this four-step framework:</p>
 <ol>
   <li><strong>Research your market:</strong> Survey 10-15 competitors in your area and specialty. Note their prices, experience levels, and positioning. This establishes the range clients expect to pay.</li>
@@ -196,7 +196,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Set your target rate:</strong> Position yourself within the top 30% of your market range. Premium pricing attracts clients who value quality and are less likely to cancel, haggle, or switch providers for a small discount.</li>
 </ol>
 
-<h3>Service Pricing Structures</h3>
+<h3>Ways to structure your prices</h3>
 <p>Different pricing structures work for different service types:</p>
 <table>
   <thead>
@@ -235,7 +235,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   </tbody>
 </table>
 
-<h3>When and How to Raise Your Prices</h3>
+<h3>When and how to raise them</h3>
 <p>You should raise prices when any of these conditions are true:</p>
 <ul>
   <li>Your calendar is consistently 80%+ booked for three consecutive months</li>
@@ -246,7 +246,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
 </ul>
 <p>Communicate increases with confidence. Give 30 days notice, explain the value behind the change (new skills, premium products, enhanced service), and never apologize. Clients who value your work will stay. Clients who leave over a reasonable increase were not your ideal clients anyway.</p>
 
-<h3>The Deposit and Cancellation Policy</h3>
+<h3>Deposits and cancellation policy</h3>
 <p>Protect your income with clear policies:</p>
 <ul>
   <li><strong>Booking deposits:</strong> Require a 20-50% non-refundable deposit for appointments over $100. This dramatically reduces no-shows and filters out uncommitted bookings.</li>
@@ -265,10 +265,10 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'finding-attracting-clients',
-      title: 'Finding and Attracting Clients as a Freelancer',
+      title: 'Finding clients on your own',
       content: `<p>Client acquisition is the lifeblood of freelance beauty work. The professionals who build sustainable careers are not necessarily the most talented, they are the ones who consistently attract the right clients through smart, repeatable strategies.</p>
 
-<h3>The Client Acquisition Funnel</h3>
+<h3>The acquisition funnel</h3>
 <p>Think of client acquisition as a funnel with three stages:</p>
 <ol>
   <li><strong>Discovery:</strong> Potential clients become aware you exist (social media, referrals, marketplace listings, search results)</li>
@@ -277,7 +277,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
 </ol>
 <p>Most freelancers focus exclusively on discovery, posting more content, running more ads, while ignoring the evaluation and conversion stages where most potential clients drop off. A beautiful Instagram feed means nothing if your booking process requires a DM conversation, three back-and-forth messages, and a bank transfer.</p>
 
-<h3>Top Client Acquisition Channels</h3>
+<h3>Where the clients come from</h3>
 <p>Prioritize channels based on your specialty, location, and target clients:</p>
 <ul>
   <li><strong>Referrals from existing clients:</strong> The highest-converting channel. Happy clients bring friends, family, and colleagues who already trust your work before they arrive. Incentivize referrals with a discount or bonus service for both parties.</li>
@@ -288,7 +288,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Community events:</strong> Pop-up services at markets, charity events, or local business meetups build awareness and create personal connections that convert into long-term clients.</li>
 </ul>
 
-<h3>Converting Enquiries into Bookings</h3>
+<h3>Turning enquiries into bookings</h3>
 <p>Speed and simplicity are everything. Research shows that responding to enquiries within 5 minutes makes you 10x more likely to convert compared to waiting an hour. Use these conversion tactics:</p>
 <ul>
   <li><strong>Online booking:</strong> Let clients book and pay a deposit instantly, 24/7, without messaging you. Every step of friction between interest and booking costs you conversions.</li>
@@ -297,12 +297,12 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Fast response:</strong> If direct enquiries are necessary, respond within minutes. Use automated responses to acknowledge the message immediately and provide booking links or next steps.</li>
 </ul>
 
-<h3>Retaining Clients Long-Term</h3>
+<h3>Keeping them for years</h3>
 <p>Acquiring a new client costs 5-7x more than retaining an existing one. Build retention into every interaction:</p>
 <ul>
   <li>Rebook before they leave, suggest the next appointment while they are still in the chair and happy with the result</li>
   <li>Send personalized follow-ups 24 hours after each appointment</li>
-  <li>Remember personal details and preferences ,  <a href="/en/features/professional/ai-salon-management">client management tools</a> make this automatic</li>
+  <li>Remember personal details and preferences, which <a href="/en/features/professional/ai-salon-management">client management tools</a> do for you</li>
   <li>Reward loyalty with exclusive offers, early access to new services, or birthday perks</li>
   <li>Ask for reviews after every positive experience, reviews compound your reputation over time</li>
 </ul>`,
@@ -323,10 +323,10 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'building-personal-brand',
-      title: 'Building a Personal Brand That Attracts Premium Clients',
+      title: 'Building a brand that attracts premium clients',
       content: `<p>Your personal brand is the reason clients choose you over every other professional offering the same services at a similar price. It is not a logo. It is the consistent experience, aesthetic, and reputation you build across every touchpoint.</p>
 
-<h3>What a Personal Brand Actually Is</h3>
+<h3>What a personal brand actually is</h3>
 <p>In beauty, your personal brand consists of four elements:</p>
 <ol>
   <li><strong>Signature style:</strong> The visual identity of your work. Are you known for natural, lived-in colour? Bold editorial looks? Precision fades? Your style should be identifiable without your name attached.</li>
@@ -335,7 +335,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Reputation:</strong> What others say about you when you are not in the room. Reviews, testimonials, word-of-mouth recommendations, and your standing within the professional community.</li>
 </ol>
 
-<h3>The Brand-Building Playbook</h3>
+<h3>How to build one</h3>
 <p>Build your brand systematically rather than hoping it develops organically:</p>
 <ul>
   <li><strong>Define your niche:</strong> "I do everything" is not a brand. "I specialize in bridal hair for GCC weddings" or "I create custom nail art for fashion-forward clients" is a brand. Specialization feels limiting but actually expands your market by making you the obvious choice for a specific need.</li>
@@ -345,7 +345,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Collect testimonials actively:</strong> After every great appointment, ask for a review. Make it easy, send a direct link. Feature the best testimonials prominently. Social proof converts more effectively than any amount of self-promotion.</li>
 </ul>
 
-<h3>Common Branding Mistakes to Avoid</h3>
+<h3>Mistakes that cost you</h3>
 <ul>
   <li><strong>Inconsistency:</strong> Changing your aesthetic, voice, or positioning every few months confuses potential clients and resets your brand recognition.</li>
   <li><strong>Copying competitors:</strong> Emulating another professional's brand makes you a less convincing version of them. Study competitors for inspiration, but your brand must be authentically yours.</li>
@@ -365,10 +365,10 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'managing-your-schedule',
-      title: 'Managing Your Schedule for Maximum Earnings and Wellbeing',
+      title: 'Running a schedule that pays without breaking you',
       content: `<p>Your schedule is your most valuable asset as a freelancer. How you structure it determines not only your income but your energy, creativity, and longevity in the industry. The goal is not to fill every hour. It is to fill the right hours at the right rates.</p>
 
-<h3>The Ideal Schedule Structure</h3>
+<h3>What a good schedule looks like</h3>
 <p>Build your schedule around these principles:</p>
 <ul>
   <li><strong>Peak hours for premium services:</strong> Reserve your highest-demand time slots (typically evenings and weekends) for your most profitable services. A Friday evening balayage at $250 generates more than a Tuesday morning blowout at $65, and takes the same calendar slot.</li>
@@ -377,7 +377,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Off days that are truly off:</strong> Protect at least 1-2 full days per week with no client work. Rest is not optional. It is what maintains the creativity, energy, and enthusiasm that make your work exceptional.</li>
 </ul>
 
-<h3>Optimizing for Revenue Per Hour</h3>
+<h3>Earning more per hour</h3>
 <p>Smart scheduling can increase your effective hourly rate by 25% without adding clients:</p>
 <table>
   <thead>
@@ -416,7 +416,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   </tbody>
 </table>
 
-<h3>Managing Mobile and Multi-Location Work</h3>
+<h3>Working mobile and across locations</h3>
 <p>If you offer mobile services or work across multiple locations, scheduling becomes more complex but also more lucrative:</p>
 <ul>
   <li><strong>Zone your service area:</strong> Divide your coverage area into zones and assign specific days to each zone. This eliminates cross-city travel between appointments.</li>
@@ -424,7 +424,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Use centralized scheduling:</strong> A single booking platform that shows your availability across all locations prevents double bookings and gives clients real-time visibility. <a href="/en/features/professional/booking-management">Daisy's booking management</a> syncs your calendar across every channel clients might use to reach you.</li>
 </ul>
 
-<h3>Preventing Burnout</h3>
+<h3>Staying out of burnout</h3>
 <p>The freelance beauty industry has a high burnout rate. Protect yourself by:</p>
 <ul>
   <li>Setting a maximum number of clients per day (typically 4-6 for most service types) and never exceeding it, regardless of demand</li>
@@ -449,10 +449,10 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'client-relationships-communication',
-      title: 'Client Relationships: Communication That Builds Loyalty',
+      title: 'Client relationships and the messages that build them',
       content: `<p>In freelance beauty work, your client relationships are your business. Unlike a salon where clients might be loyal to the brand, your clients are loyal to you, which makes the quality of your relationships the ultimate competitive advantage.</p>
 
-<h3>The Client Experience Journey</h3>
+<h3>The client journey</h3>
 <p>Every client interaction follows a predictable journey. Optimizing each stage builds the loyalty that drives referrals, repeat bookings, and premium pricing acceptance:</p>
 <ol>
   <li><strong>Pre-appointment:</strong> Confirmation message with details (time, location, preparation instructions), sent automatically 24 hours before. This reduces no-shows and sets a professional tone.</li>
@@ -462,7 +462,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Follow-up:</strong> A brief personalized message 24-48 hours later checking on their satisfaction. This touchpoint catches any issues early and reinforces that you care beyond the transaction.</li>
 </ol>
 
-<h3>Managing Difficult Situations</h3>
+<h3>When things go wrong</h3>
 <p>Every freelancer will face challenging client interactions. How you handle them defines your reputation:</p>
 <ul>
   <li><strong>Unhappy with results:</strong> Listen fully without defensiveness. Acknowledge their feelings. Offer a specific solution (correction appointment, partial refund, or alternative approach). Document the interaction and outcome for your records.</li>
@@ -471,7 +471,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Inappropriate behaviour:</strong> You have the absolute right to refuse service and terminate appointments. Have a clear policy and enforce it without hesitation. Your safety and comfort are non-negotiable.</li>
 </ul>
 
-<h3>Building a Client Communication System</h3>
+<h3>A system for staying in touch</h3>
 <p>Consistent, professional communication does not require constant personal effort. Build a system:</p>
 <ul>
   <li><strong>Automated booking confirmations and reminders:</strong> Set these up once and they run forever, reducing no-shows and keeping clients informed without you lifting a finger.</li>
@@ -487,13 +487,13 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'tools-technology',
-      title: 'Essential Tools and Technology for Freelance Beauty Professionals',
+      title: 'The tools worth paying for',
       content: `<p>The right technology stack eliminates administrative burden, projects professionalism, and gives you data-driven visibility into your business performance. Modern freelance beauty professionals who leverage technology earn more and work fewer hours than those who rely on manual processes.</p>
 
-<h3>Your Core Technology Stack</h3>
+<h3>Your core stack</h3>
 <p>Every freelance beauty professional needs these five categories of tools:</p>
 
-<h3>1. Booking and Client Management Platform</h3>
+<h3>1. Booking and client management</h3>
 <p>This is your most important technology investment. Your booking platform should handle:</p>
 <ul>
   <li>Online booking with real-time availability</li>
@@ -505,7 +505,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
 </ul>
 <p><a href="/en/features/professional/booking-management">Daisy's professional platform</a> covers all of these in a single, purpose-built solution designed specifically for beauty professionals, with AI assistance that handles enquiries, manages your calendar, and automates client communication 24/7.</p>
 
-<h3>2. Financial Management Tools</h3>
+<h3>2. Financial tools</h3>
 <p>Track every dollar flowing in and out:</p>
 <ul>
   <li><strong>Invoicing:</strong> Generate professional invoices automatically after each service. Tools like Daisy's integrated payments handle this seamlessly.</li>
@@ -513,7 +513,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Tax preparation:</strong> Connect your accounting software to your bank and payment platform for automatic transaction categorization. This saves 10-20 hours at tax time.</li>
 </ul>
 
-<h3>3. Social Media and Content Tools</h3>
+<h3>3. Social and content tools</h3>
 <p>Your online presence drives discovery and builds your brand:</p>
 <ul>
   <li><strong>Content creation:</strong> Canva for graphics and templates, InShot or CapCut for video editing, Lightroom presets for consistent photo editing</li>
@@ -521,14 +521,14 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Link-in-bio:</strong> Linktree or a simple booking page that directs traffic to your booking platform</li>
 </ul>
 
-<h3>4. Communication Tools</h3>
+<h3>4. Communication</h3>
 <p>Centralize client communication to prevent messages from falling through cracks:</p>
 <ul>
   <li><strong>Business WhatsApp:</strong> Separate from your personal number, with business profile, automated responses, and catalogue features</li>
   <li><strong>Unified inbox:</strong> Platforms that funnel Instagram DMs, WhatsApp messages, and website enquiries into one place ensure every potential client gets a prompt response</li>
 </ul>
 
-<h3>5. Education and Development</h3>
+<h3>5. Education and development</h3>
 <p>Stay current and competitive:</p>
 <ul>
   <li>Online courses (MasterClass, Skillshare, industry-specific platforms)</li>
@@ -537,7 +537,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li>Professional community memberships for peer learning and networking</li>
 </ul>
 
-<h3>Evaluating Technology Investments</h3>
+<h3>Deciding what is worth buying</h3>
 <p>Before adding any tool to your stack, ask three questions:</p>
 <ol>
   <li><strong>Does it save me time?</strong> Every hour saved on admin is an hour available for paid client work or rest.</li>
@@ -561,10 +561,10 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'scaling-solo-to-business',
-      title: 'Scaling from Solo Freelancer to Business Owner',
+      title: 'From solo freelancer to business owner',
       content: `<p>The transition from solo freelancer to business owner is the highest-leverage move you can make in your beauty career. It shifts your income from being limited by your personal hours to being multiplied by the hours of a team, and it is more achievable than most professionals realize.</p>
 
-<h3>Signs You Are Ready to Scale</h3>
+<h3>Signs you are ready to scale</h3>
 <p>Consider scaling when you consistently experience these signals:</p>
 <ul>
   <li>Your calendar is fully booked 3+ weeks in advance</li>
@@ -575,7 +575,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li>You genuinely want to manage and mentor other professionals (not just tolerate it)</li>
 </ul>
 
-<h3>Scaling Models for Beauty Freelancers</h3>
+<h3>Ways to scale</h3>
 <p>You do not need to jump straight to a full salon. Consider these progressive models:</p>
 <table>
   <thead>
@@ -609,7 +609,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   </tbody>
 </table>
 
-<h3>Building a Team Under Your Brand</h3>
+<h3>Building a team under your name</h3>
 <p>Your team is an extension of your brand. Hire and develop accordingly:</p>
 <ul>
   <li><strong>Hire for values first, skills second:</strong> Technical skills can be taught; work ethic, client care, and professionalism cannot. Look for professionals who share your commitment to quality and your approach to client relationships.</li>
@@ -618,7 +618,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Use technology to unify operations:</strong> A shared platform for booking, client management, and team scheduling ensures everyone works from the same system. This is where <a href="/en/features/professional/ai-salon-management">AI-powered management tools</a> become essential, they maintain service quality and operational consistency as you scale beyond what one person can personally oversee.</li>
 </ul>
 
-<h3>Financial Considerations for Scaling</h3>
+<h3>What scaling costs</h3>
 <p>Scaling changes your financial model fundamentally:</p>
 <ul>
   <li><strong>Revenue diversification:</strong> Your income no longer depends solely on your personal service hours. Revenue comes from team services, chair rental, retail product sales, and potentially brand licensing.</li>
@@ -634,10 +634,10 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
     // =========================================================================
     {
       id: 'financial-management-growth',
-      title: 'Financial Management for Long-Term Success',
+      title: 'Managing the money for the long run',
       content: `<p>Financial management separates freelancers who build wealth from those who simply earn an income. The habits you establish now, even if your revenue is modest, compound into financial security and career freedom over time.</p>
 
-<h3>Understanding Your Numbers</h3>
+<h3>Knowing your numbers</h3>
 <p>Every freelance beauty professional should know these numbers by heart, updated monthly:</p>
 <ul>
   <li><strong>Gross revenue:</strong> Total money collected from clients before any expenses</li>
@@ -648,7 +648,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Rebooking rate:</strong> Percentage of clients who book a follow-up appointment. Industry benchmark is 40-60%; top freelancers achieve 70%+.</li>
 </ul>
 
-<h3>Building Multiple Revenue Streams</h3>
+<h3>More than one income stream</h3>
 <p>Diversify your income to reduce dependency on hourly service work:</p>
 <ul>
   <li><strong>Retail product sales:</strong> Recommend and sell the professional products you use. Typical retail margins are 40-60%, and clients prefer buying from someone who understands their specific needs.</li>
@@ -657,7 +657,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Subscription or membership models:</strong> Monthly maintenance packages (e.g., "Signature Blowout Club: 4 blowouts/month for $200") create predictable recurring revenue and guaranteed bookings.</li>
 </ul>
 
-<h3>Planning for the Future</h3>
+<h3>Planning further out</h3>
 <p>Freelance work can be physically demanding and time-limited. Plan for longevity:</p>
 <ul>
   <li><strong>Retirement savings:</strong> Contribute a fixed percentage of net income to a retirement account every month. Start with 10% and increase as revenue grows. The compounding power of starting early is extraordinary.</li>
@@ -666,7 +666,7 @@ export const freelanceBeautyProfessionalGuide: PillarPageData = {
   <li><strong>Career transition planning:</strong> Many beauty professionals eventually move into training, consulting, brand management, or business ownership. Building business skills, a strong network, and financial reserves while you are working keeps these doors open.</li>
 </ul>
 
-<h3>Using Technology to Track Everything</h3>
+<h3>Letting the software track it</h3>
 <p>Manual financial tracking is unsustainable and error-prone. Build an automated system:</p>
 <ol>
   <li>All client payments flow through your booking platform (instant revenue tracking)</li>

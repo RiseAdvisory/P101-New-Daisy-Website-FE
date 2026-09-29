@@ -19,22 +19,22 @@ export const salonAnalyticsReporting: PillarPageData = {
 
   heroTitle: 'Salon Analytics & Reporting: Data-Driven Growth',
   heroSubtitle:
-    'How top-performing salons use data and reporting to make smarter decisions, retain more clients, and grow revenue predictably.',
+    'How the best-run salons use their data to decide better, hold on to more clients and grow revenue they can actually forecast.',
   readingTime: '19 min read',
   lastUpdated: '2026-03-18T00:00:00.000Z',
 
   keyTakeaways: [
-    'Data-driven salons grow revenue 20-35% faster than competitors relying on intuition, because metrics reveal specific opportunities that gut feeling misses.',
-    'The five most critical salon metrics to track weekly are: revenue per service hour, client retention rate, average ticket value, rebooking rate, and chair utilization.',
-    'Client retention analytics, not just acquisition, is where the highest ROI lies: increasing retention by 5% can boost profits by 25-95%.',
-    'Staff performance metrics should balance productivity (revenue per hour) with quality (client satisfaction, retention rate per stylist) to avoid incentivizing speed over service.',
-    'Predictive analytics powered by AI can forecast revenue, identify at-risk clients before they churn, and recommend staffing levels, shifting salon management from reactive to proactive.',
+    'Salons that work from data grow revenue 20-35% faster than those running on instinct, because the numbers point at opportunities instinct walks past.',
+    'Five metrics are worth checking weekly: revenue per service hour, client retention rate, average ticket value, rebooking rate and chair utilization.',
+    'Retention analytics return more than acquisition analytics. Lifting retention by 5% can raise profits 25-95%.',
+    'Balance productivity metrics like revenue per hour against quality ones like satisfaction and retention per stylist, or you end up paying people to rush.',
+    'AI-driven prediction forecasts revenue, flags clients before they leave and suggests staffing levels, which moves you from reacting to planning.',
   ],
 
-  introduction: `<p>Every salon generates data. Bookings, cancellations, revenue, client visits, staff schedules, product sales, marketing campaigns, every interaction creates a data point. The difference between salons that grow consistently and those that plateau is not the data itself. It is whether that data is captured, analyzed, and acted upon.</p>
-<p>Most salon owners know their total revenue. Far fewer know their revenue per service hour, their client retention rate by stylist, their marketing cost per new client, or which service category is growing fastest. These are the metrics that reveal specific, actionable opportunities, the kind of insights that turn a good salon into a great one.</p>
-<p>This guide is not about drowning you in numbers. It is about identifying the metrics that matter most, building reporting systems that work without consuming your time, and developing the analytical habits that separate the top 10% of salon businesses from everyone else.</p>
-<p>Whether you run a single-chair studio or a multi-location group, the principles are the same: measure what matters, review it regularly, and take action based on what the data tells you. Modern platforms like <a href="/en/features/business/analytics-reports">Daisy's analytics and reporting tools</a> automate the hard part, collecting and visualizing the data, so you can focus on the valuable part: making better decisions.</p>`,
+  introduction: `<p>Every salon produces data. Bookings, cancellations, revenue, visits, staff schedules, product sales, campaigns, every interaction leaves a trace. What separates salons that keep growing from those that stall is not the data. It is whether anyone captures it, reads it and does something about it.</p>
+<p>Most owners know their total revenue. Far fewer know their revenue per service hour, their retention rate by stylist, what a new client costs them in marketing, or which service category is growing fastest. Those are the numbers that point at something you can act on.</p>
+<p>This is not about drowning in numbers. It is about picking the metrics that matter, setting up reporting that does not eat your week, and building the habit of looking at it, which is what the top 10% of salon businesses do differently.</p>
+<p>Single chair or multi-location group, the principles hold: measure what matters, look at it regularly, act on what it says. Platforms like <a href="/en/features/business/analytics-reports">Daisy's analytics and reporting tools</a> handle the tedious half, collecting and presenting the data, which leaves you the half that pays.</p>`,
 
   sections: [
     // =========================================================================
@@ -42,10 +42,10 @@ export const salonAnalyticsReporting: PillarPageData = {
     // =========================================================================
     {
       id: 'why-analytics-matter',
-      title: 'Why Salon Analytics Matter More Than Ever',
+      title: 'Why this matters more than it used to',
       content: `<p>Salon analytics transform guesswork into strategy. Without data, every business decision, pricing, staffing, marketing, service menu changes, is based on intuition. With data, you can see exactly what is working, what is not, and where the biggest opportunities for growth exist.</p>
 
-<h3>The Performance Gap Between Data-Driven and Intuition-Led Salons</h3>
+<h3>The gap between measuring and guessing</h3>
 <p>Industry research consistently shows that salons using analytics outperform those that do not:</p>
 <ul>
   <li><strong>Revenue growth:</strong> Data-driven salons grow revenue 20-35% faster than competitors relying on gut feeling. The difference is not luck. It is the ability to identify and double down on what works.</li>
@@ -54,7 +54,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   <li><strong>Marketing ROI:</strong> Without tracking, you cannot know which marketing channels are bringing in clients and which are wasting money. Salons that measure marketing ROI typically reallocate 30-40% of their budget to higher-performing channels, immediately improving returns.</li>
 </ul>
 
-<h3>Common Myths About Salon Analytics</h3>
+<h3>What owners get wrong about analytics</h3>
 <p>Misconceptions prevent many salon owners from embracing data:</p>
 <ul>
   <li><strong>"Analytics are for big businesses"</strong>. Wrong. A solo practitioner who tracks five key metrics weekly will outperform a 10-chair salon that tracks none. The size of the business is irrelevant; the discipline of measurement is what matters.</li>
@@ -63,7 +63,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   <li><strong>"Numbers are not my strength"</strong>. You do not need to be a data scientist. You need to understand five to eight numbers and their trends. If you can read a bank statement, you can read a salon dashboard.</li>
 </ul>
 
-<h3>The Analytics Maturity Ladder</h3>
+<h3>The maturity ladder</h3>
 <p>Most salons progress through four stages of analytics maturity:</p>
 <ol>
   <li><strong>Stage 1. Blind:</strong> No systematic tracking. Decisions based entirely on memory and intuition. Most new businesses start here.</li>
@@ -89,10 +89,10 @@ export const salonAnalyticsReporting: PillarPageData = {
     // =========================================================================
     {
       id: 'key-metrics-to-track',
-      title: 'The Essential Salon Metrics You Should Track Weekly',
+      title: 'The metrics worth checking every week',
       content: `<p>Tracking too many metrics creates noise. Tracking the right metrics creates clarity. These are the metrics that the most successful salon owners review every single week, the numbers that directly connect to revenue, growth, and client satisfaction.</p>
 
-<h3>The Core Five: Your Weekly Dashboard</h3>
+<h3>The core five: your weekly dashboard</h3>
 <table>
   <thead>
     <tr>
@@ -136,7 +136,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   </tbody>
 </table>
 
-<h3>The Supporting Seven: Your Monthly Deep Dive</h3>
+<h3>The supporting seven: your monthly look</h3>
 <p>Review these metrics monthly to get a complete picture of business health:</p>
 <ol>
   <li><strong>New client acquisition rate:</strong> Number of first-time clients per month. Track the source (referral, marketplace, social media, walk-in) to understand which channels deliver results.</li>
@@ -148,7 +148,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   <li><strong>Net Promoter Score (NPS) or review rating:</strong> Your average review score and the percentage of clients who would recommend you. This is the leading indicator of future retention and referral rates.</li>
 </ol>
 
-<h3>Setting Up Your Tracking System</h3>
+<h3>Setting up the tracking</h3>
 <p>You do not need spreadsheets. Modern salon management platforms track all of these metrics automatically and present them in visual dashboards. <a href="/en/features/business/analytics-reports">Daisy's analytics dashboard</a> provides real-time visibility into every metric listed above, updated automatically with every booking, payment, and client interaction.</p>
 <p>The setup process takes less than an hour: connect your booking calendar, payment processing, and client database (all built into the platform), and your dashboard starts populating immediately. From that point forward, your only job is to review the numbers weekly and take action on what they tell you.</p>`,
       callout: {
@@ -172,19 +172,19 @@ export const salonAnalyticsReporting: PillarPageData = {
     // =========================================================================
     {
       id: 'revenue-reporting',
-      title: 'Revenue Reporting: Understanding Where Your Money Comes From',
+      title: 'Revenue reporting: where the money comes from',
       content: `<p>Total revenue is a vanity metric. Knowing where your revenue comes from, how it is trending, and which segments are growing or declining is what enables strategic decision-making.</p>
 
-<h3>Breaking Down Revenue by Dimension</h3>
+<h3>Cutting revenue different ways</h3>
 <p>Analyze your revenue across multiple dimensions to uncover actionable insights:</p>
 
-<h3>Revenue by Service Category</h3>
+<h3>Revenue by service category</h3>
 <p>Break total revenue into categories: hair colour, haircuts, treatments, nails, skin care, waxing, wellness, retail. This reveals which categories are driving growth and which are stagnating. A typical salon discovering their data for the first time finds that 60-70% of revenue comes from just 2-3 service categories, suggesting both a strength to protect and a vulnerability to address.</p>
 
-<h3>Revenue by Staff Member</h3>
+<h3>Revenue by staff member</h3>
 <p>Understand how revenue is distributed across your team. In most salons, the top 20% of staff generate 50-60% of total revenue. This is not necessarily a problem, but it highlights where training investment, mentoring, and strategic booking adjustments could lift the performance of your middle tier.</p>
 
-<h3>Revenue by Time Period</h3>
+<h3>Revenue by time period</h3>
 <p>Map your revenue by day of week, time of day, and month of year:</p>
 <ul>
   <li><strong>Day-of-week patterns:</strong> Most salons see peak revenue Thursday through Saturday. Understanding the magnitude of daily variation helps you make staffing, pricing, and marketing decisions.</li>
@@ -192,7 +192,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   <li><strong>Year-over-year trends:</strong> Compare the same month across years to understand genuine growth versus seasonal fluctuation. A 10% revenue increase in December means nothing if December is always your best month, compare it to last December.</li>
 </ul>
 
-<h3>Revenue by Client Segment</h3>
+<h3>Revenue by client segment</h3>
 <p>Segment your clients by value and analyze revenue contribution:</p>
 <table>
   <thead>
@@ -231,7 +231,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   </tbody>
 </table>
 
-<h3>Revenue Forecasting</h3>
+<h3>Forecasting revenue</h3>
 <p>Once you have three to six months of tracked data, you can begin forecasting future revenue with reasonable accuracy. Basic forecasting uses historical averages adjusted for known factors (seasonal patterns, planned promotions, staff changes). AI-powered forecasting, available through platforms like Daisy, factors in dozens of variables simultaneously to produce more accurate predictions that account for emerging trends in your booking data.</p>
 <p>Accurate revenue forecasting enables better decisions about hiring, lease commitments, equipment investments, and marketing budgets, decisions that become risky without data to support them.</p>`,
       relatedLinks: [
@@ -247,10 +247,10 @@ export const salonAnalyticsReporting: PillarPageData = {
     // =========================================================================
     {
       id: 'client-retention-analytics',
-      title: 'Client Retention Analytics: Your Most Profitable Metric',
+      title: 'Retention analytics, the most profitable number you have',
       content: `<p>Increasing client retention by just 5% can boost profits by 25-95%, according to research by Bain & Company. Yet most salon owners spend five to ten times more effort on acquiring new clients than on retaining existing ones. Retention analytics flip this equation by showing you exactly who is at risk and what to do about it.</p>
 
-<h3>Measuring Retention Accurately</h3>
+<h3>Measuring retention properly</h3>
 <p>Retention is not as simple as counting repeat visits. Meaningful retention metrics account for expected visit frequency:</p>
 <ul>
   <li><strong>Standard retention rate:</strong> Percentage of clients who return within their expected timeframe (e.g., within 8 weeks for a client who typically visits every 6 weeks). Industry average is 50-60%; top salons achieve 75-85%.</li>
@@ -259,7 +259,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   <li><strong>Retention by service type:</strong> Some services naturally generate higher retention than others. Colour clients typically have 70-80% retention because they need regular maintenance. Haircut-only clients may have 40-50% retention. Understanding this helps you forecast more accurately and prioritize high-retention services in marketing.</li>
 </ul>
 
-<h3>Identifying At-Risk Clients</h3>
+<h3>Spotting clients before they go</h3>
 <p>The most valuable retention insight is predictive: identifying clients who are likely to leave before they actually leave. Warning signs include:</p>
 <ul>
   <li>Visit interval extending beyond their typical pattern (e.g., a 6-week regular who has not visited in 9 weeks)</li>
@@ -270,7 +270,7 @@ export const salonAnalyticsReporting: PillarPageData = {
 </ul>
 <p><a href="/en/features/business/ai-salon-management">AI-powered platforms</a> can flag at-risk clients automatically based on these behavioural signals, giving you the opportunity to intervene with a personal outreach, special offer, or service recovery before the client is lost.</p>
 
-<h3>The Economics of Retention</h3>
+<h3>What retention is worth</h3>
 <p>Understanding the financial impact of retention makes it impossible to ignore:</p>
 <ul>
   <li><strong>Cost to acquire a new client:</strong> $25-$75 depending on channel and market</li>
@@ -280,7 +280,7 @@ export const salonAnalyticsReporting: PillarPageData = {
 </ul>
 <p>Every dollar invested in retention systems, client management software, automated communication, loyalty programs, generates 5-10x the return of the same dollar invested in acquisition advertising.</p>
 
-<h3>Building a Retention Dashboard</h3>
+<h3>Building a retention dashboard</h3>
 <p>Your retention dashboard should show at a glance:</p>
 <ol>
   <li>Overall retention rate (current month vs. trailing 3-month average)</li>
@@ -310,10 +310,10 @@ export const salonAnalyticsReporting: PillarPageData = {
     // =========================================================================
     {
       id: 'staff-performance-metrics',
-      title: 'Staff Performance Metrics: Balancing Productivity and Quality',
+      title: 'Staff metrics: productivity against quality',
       content: `<p>Staff performance analytics help you develop your team, recognize top performers, identify coaching opportunities, and make fair compensation decisions based on objective data rather than perception.</p>
 
-<h3>The Balanced Scorecard for Salon Staff</h3>
+<h3>A balanced scorecard for staff</h3>
 <p>Measuring staff on revenue alone incentivizes rushing through clients and pushing unnecessary services. A balanced approach tracks both productivity and quality:</p>
 <table>
   <thead>
@@ -370,7 +370,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   </tbody>
 </table>
 
-<h3>Using Performance Data for Coaching</h3>
+<h3>Using the data to coach</h3>
 <p>The purpose of tracking staff metrics is development, not punishment. Use data to identify specific growth opportunities:</p>
 <ul>
   <li><strong>High productivity, low retention:</strong> This stylist fills the chair efficiently but clients do not come back. Focus coaching on consultation skills, client rapport, and aftercare follow-up.</li>
@@ -379,7 +379,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   <li><strong>Consistently strong across all metrics:</strong> Your top performer. Recognize them publicly, offer growth opportunities (mentoring, advanced training), and ensure their compensation reflects their value.</li>
 </ul>
 
-<h3>Fair Compensation Based on Data</h3>
+<h3>Paying fairly from the numbers</h3>
 <p>Performance data enables transparent, fair compensation models:</p>
 <ul>
   <li><strong>Commission tiers:</strong> Higher commission rates tied to achieving specific metric thresholds (e.g., 45% commission below $8,000 monthly revenue, 50% above $8,000, 55% above $12,000)</li>
@@ -389,7 +389,7 @@ export const salonAnalyticsReporting: PillarPageData = {
 </ul>
 <p>When compensation is linked to transparent, measurable criteria, team members know exactly what is expected and how to earn more. This clarity reduces compensation disputes and creates a culture of continuous improvement.</p>
 
-<h3>Team Performance Reviews</h3>
+<h3>Performance reviews</h3>
 <p>Conduct monthly one-on-one performance reviews using data as the foundation:</p>
 <ol>
   <li>Share the dashboard showing their key metrics with trends</li>
@@ -406,10 +406,10 @@ export const salonAnalyticsReporting: PillarPageData = {
     // =========================================================================
     {
       id: 'marketing-roi-measurement',
-      title: 'Marketing ROI Measurement: Stop Wasting Money',
+      title: 'Measuring marketing return, and stopping the waste',
       content: `<p>Most salon owners cannot answer the question "which marketing channel brings you the most clients per dollar spent?" If you cannot answer it either, you are almost certainly wasting 30-50% of your marketing budget on channels that underperform.</p>
 
-<h3>Setting Up Marketing Attribution</h3>
+<h3>Setting up attribution</h3>
 <p>Marketing attribution means tracking where each new client came from. The setup is straightforward:</p>
 <ol>
   <li><strong>Ask every new client:</strong> "How did you find us?" during booking or at their first visit. Record the answer in your client management system. Simple, but often overlooked.</li>
@@ -418,7 +418,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   <li><strong>Calculate channel ROI:</strong> For each marketing channel, divide total spend by new clients acquired. Then multiply clients by their average first-year value to get the true ROI.</li>
 </ol>
 
-<h3>Channel Performance Benchmarks</h3>
+<h3>What good looks like per channel</h3>
 <p>Use these benchmarks to evaluate whether your channels are performing competitively:</p>
 <table>
   <thead>
@@ -475,7 +475,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   </tbody>
 </table>
 
-<h3>Campaign-Level Analysis</h3>
+<h3>Looking at individual campaigns</h3>
 <p>For specific marketing campaigns (seasonal promotion, new service launch, reactivation campaign), track these metrics:</p>
 <ul>
   <li><strong>Reach:</strong> How many people saw the campaign</li>
@@ -486,7 +486,7 @@ export const salonAnalyticsReporting: PillarPageData = {
 </ul>
 <p>Any campaign with an ROI below 200% (meaning you made at least 3x your spend back) should be reviewed for optimization or reallocation. Any campaign with an ROI above 500% should be scaled up.</p>
 
-<h3>The Lifetime Value Approach</h3>
+<h3>Thinking in lifetime value</h3>
 <p>The most sophisticated marketing measurement looks beyond the first visit. A new client acquired for $50 might seem expensive if their first visit generates $100. But if their average lifetime value is $3,000 over three years, that $50 acquisition cost represents a 60x return. Always evaluate marketing ROI against lifetime value, not just first-visit revenue.</p>`,
       callout: {
         type: 'warning',
@@ -499,12 +499,12 @@ export const salonAnalyticsReporting: PillarPageData = {
     // =========================================================================
     {
       id: 'predictive-analytics',
-      title: 'Predictive Analytics: The Future of Salon Management',
+      title: 'Predictive analytics and what comes next',
       content: `<p>Predictive analytics uses historical data and AI algorithms to forecast future outcomes, shifting salon management from "what happened" to "what will happen next." This is the most powerful application of data in the beauty industry, and it is now accessible to businesses of every size through AI-powered platforms.</p>
 
-<h3>What Predictive Analytics Can Do for Your Salon</h3>
+<h3>What prediction can do for you</h3>
 
-<h3>1. Revenue Forecasting</h3>
+<h3>1. Forecasting revenue</h3>
 <p>AI models analyze your historical revenue data, seasonal patterns, booking trends, and external factors to forecast revenue for the coming weeks, months, and quarters. Accurate revenue forecasting enables better decisions about:</p>
 <ul>
   <li>Staffing levels (hire before the busy season, not during it)</li>
@@ -513,10 +513,10 @@ export const salonAnalyticsReporting: PillarPageData = {
   <li>Marketing timing (run promotions when they will have the greatest impact)</li>
 </ul>
 
-<h3>2. Client Churn Prediction</h3>
+<h3>2. Predicting churn</h3>
 <p>AI identifies clients who are likely to stop visiting based on behavioural patterns, extending visit intervals, declining service frequency, reduced engagement. By flagging at-risk clients before they leave, you can intervene with personalized outreach, incentives, or service recovery. Salons using churn prediction retain 15-25% more at-risk clients compared to those without it.</p>
 
-<h3>3. Demand Forecasting</h3>
+<h3>3. Forecasting demand</h3>
 <p>Predict booking demand by day, time slot, and service type. This enables:</p>
 <ul>
   <li><strong>Dynamic staffing:</strong> Schedule more team members during predicted busy periods and fewer during predicted slow periods</li>
@@ -524,13 +524,13 @@ export const salonAnalyticsReporting: PillarPageData = {
   <li><strong>Capacity optimization:</strong> Ensure you have the right mix of service types scheduled to maximize chair utilization</li>
 </ul>
 
-<h3>4. Service Recommendation Engine</h3>
+<h3>4. Recommending services</h3>
 <p>Based on a client's service history and the patterns of similar clients, AI recommends services, add-ons, and products they are most likely to want. This powers personalized marketing and gives your team data-backed upsell suggestions that feel helpful rather than pushy.</p>
 
-<h3>5. Marketing Optimization</h3>
+<h3>5. Tuning the marketing</h3>
 <p>Predictive models identify which clients are most likely to respond to specific offers, when to send marketing messages for maximum engagement, and which channels to prioritize for different client segments. This dramatically improves marketing ROI compared to "send the same message to everyone."</p>
 
-<h3>Getting Started with Predictive Analytics</h3>
+<h3>Where to start</h3>
 <p>You do not need a data science team. Modern platforms handle the complexity behind the scenes:</p>
 <ol>
   <li><strong>Start collecting data consistently:</strong> The quality of predictions depends entirely on the quality and volume of historical data. If you are not yet tracking client behaviour, service history, and revenue metrics systematically, start now, even basic data collection today fuels powerful predictions in 6-12 months.</li>
@@ -555,10 +555,10 @@ export const salonAnalyticsReporting: PillarPageData = {
     // =========================================================================
     {
       id: 'building-data-culture',
-      title: 'Building a Data Culture in Your Salon',
+      title: 'Building the habit across your team',
       content: `<p>Analytics tools are only valuable if they are used consistently. Building a data culture means making data-informed decision-making a habit for you and your entire team, not a one-time exercise.</p>
 
-<h3>The Weekly Metrics Review</h3>
+<h3>The weekly review</h3>
 <p>The single most impactful habit you can build is a weekly metrics review. Here is a proven 30-minute framework:</p>
 <ol>
   <li><strong>Minutes 1-5:</strong> Review the Core Five metrics from your dashboard. Note any numbers that are above or below target.</li>
@@ -567,7 +567,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   <li><strong>Minutes 25-30:</strong> Record your decisions and schedule any necessary follow-ups. This creates accountability and a history of data-driven actions you can review over time.</li>
 </ol>
 
-<h3>Involving Your Team in Data</h3>
+<h3>Bringing the team in</h3>
 <p>Data should not be a secret locked in the owner's office. Involve your team:</p>
 <ul>
   <li><strong>Share relevant metrics:</strong> Show each team member their personal dashboard, retention rate, average ticket, rebooking rate. When people can see their own numbers, they naturally work to improve them.</li>
@@ -576,7 +576,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   <li><strong>Tie incentives to measurable outcomes:</strong> Commission bonuses, recognition, and advancement tied to specific metrics create alignment between individual performance and business goals.</li>
 </ul>
 
-<h3>Common Data Culture Pitfalls</h3>
+<h3>Where this goes wrong</h3>
 <p>Avoid these mistakes as you build your analytical capability:</p>
 <ul>
   <li><strong>Analysis paralysis:</strong> Tracking too many metrics and spending too long analyzing them. Focus on the Core Five, take action quickly, and add complexity only when you have mastered the basics.</li>
@@ -586,7 +586,7 @@ export const salonAnalyticsReporting: PillarPageData = {
   <li><strong>Chasing lagging indicators:</strong> Revenue is a lagging indicator, it shows what already happened. Focus equal attention on leading indicators like rebooking rate, client satisfaction, and new client enquiries. These tell you what is about to happen.</li>
 </ul>
 
-<h3>The Data-Driven Salon Playbook</h3>
+<h3>The playbook</h3>
 <p>Here is the complete implementation path, from zero analytics to a fully data-driven salon:</p>
 <table>
   <thead>

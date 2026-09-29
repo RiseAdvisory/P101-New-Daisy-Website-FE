@@ -40,7 +40,7 @@ export function ProfilePageSchema({
           name: 'The Daisy',
           alternateName: ['Daisy', 'jointhedaisy'],
           description:
-            'AI-powered beauty and wellness platform helping salons, spas, clinics, and freelance professionals grow through smart booking, an AI receptionist, customer acquisition, and full white-label brand control.',
+            'AI-powered beauty and wellness platform helping salons, spas, clinics, and freelance professionals grow through smart booking, an AI receptionist, customer acquisition, and a branded booking page.',
           url: 'https://www.jointhedaisy.com',
           image: 'https://www.jointhedaisy.com/icon-512.png',
           sameAs: [

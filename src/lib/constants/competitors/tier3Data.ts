@@ -16,7 +16,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     website: 'https://squareup.com/appointments',
     tier: 3,
     description:
-      'Payment-first booking solution from Square (Block, Inc.). Leverages Square\'s POS ecosystem. Free plan available for individuals.',
+      'A payment-first booking tool from Square, part of Block, Inc., built on top of the Square POS ecosystem. Individuals can use it free.',
     founded: '2009',
     headquarters: 'San Francisco, CA, USA',
 
@@ -65,7 +65,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     aiCapabilities: {
       hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'No AI capabilities. Standard automated reminders only.',
+      aiDescription: 'No AI. Standard automated reminders and nothing more.',
     },
 
     daisyAdvantages: [
@@ -92,16 +92,16 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     ],
 
     faq: [
-      { question: 'How does Square Appointments compare to Daisy?', answer: 'Square Appointments is a general-purpose scheduling add-on to Square\'s POS, while Daisy is purpose-built for beauty/wellness with AI receptionist, marketplace, cashback, and Arabic support. Square excels at payments but lacks beauty-specific management, AI, and customer acquisition tools.' },
-      { question: 'Is Square Appointments free?', answer: 'Square Appointments is free for individual users, but paid plans start at $29/mo for multiple staff. You\'ll also pay 2.6% + $0.10 per transaction on all Square payments.' },
-      { question: 'What are the hidden costs of using Square Appointments for a salon?', answer: 'Beyond the subscription fee, Square charges 2.6% + $0.10 on every transaction processed through their POS. You may also need to purchase Square hardware for in-person payments, and since Square lacks beauty-specific features like client history, formulas, or service menus, many salons end up paying for additional third-party tools.' },
-      { question: 'Can I migrate my client data from Square Appointments to Daisy?', answer: 'Yes. Daisy provides guided data migration support to help you transfer client records, appointment history, and contact information from Square Appointments. Our onboarding team ensures a smooth transition so you don\'t lose any client relationships.' },
-      { question: 'Does Square Appointments work in Arabic or support GCC countries?', answer: 'No. Square Appointments does not offer an Arabic interface and has no presence in GCC countries. It doesn\'t support local payment methods like mada, Apple Pay (MENA), or Knet. Daisy provides native Arabic/English with full GCC compliance across all six countries.' },
-      { question: 'Does Square Appointments have AI features like an AI receptionist?', answer: 'No. Square Appointments has no AI capabilities, no AI receptionist, no smart scheduling, and no AI-powered marketing. Daisy\'s 24/7 AI receptionist handles bookings, answers customer questions, and processes payments even when your salon is closed.' },
-      { question: 'Is Square Appointments good enough for a multi-location beauty business?', answer: 'Square Appointments supports multiple locations on the Premium plan ($69/mo), but it remains a general scheduling tool without beauty-specific features like service menus, formula tracking, or stylist portfolios. Daisy is built specifically for multi-location beauty businesses with centralized management, AI, and a customer marketplace.' },
-      { question: 'How does Square Appointments mobile app compare to Daisy?', answer: 'Square\'s mobile app is focused on payments and basic scheduling. Daisy\'s mobile app offers full salon management, AI receptionist access, real-time analytics, client communication, and marketplace visibility, all designed specifically for beauty professionals on the go.' },
-      { question: 'What kind of customer support does Square Appointments offer?', answer: 'Square provides general support via email, phone, and community forums, but there is no dedicated beauty industry support team. Daisy offers specialized onboarding and support from a team that understands salon and spa operations, plus local GCC support in Arabic and English.' },
-      { question: 'Can Square Appointments help me get new clients like Daisy can?', answer: 'No. Square Appointments is purely an operations tool, it doesn\'t include any customer acquisition features. Daisy combines a consumer marketplace, cashback rewards, and AI-powered marketing to actively drive new clients to your business.' },
+      { question: 'How does Square Appointments compare to Daisy?', answer: 'Square Appointments is a general-purpose scheduling add-on to Square\'s POS. Daisy is built for beauty and wellness, with an AI receptionist, a marketplace, cashback and Arabic support. Square is excellent at payments and has nothing for beauty-specific management, AI or customer acquisition.' },
+      { question: 'Is Square Appointments free?', answer: 'It is free for an individual user. Once you add staff, paid plans start at $29/mo, and every Square payment carries 2.6% + $0.10 on top.' },
+      { question: 'What are the hidden costs of using Square Appointments for a salon?', answer: 'Past the subscription, Square takes 2.6% + $0.10 on every transaction through its POS. In-person payments usually mean buying Square hardware too. And because there is no client history, no formula tracking and no proper service menu, most salons end up paying for third-party tools to fill the gaps.' },
+      { question: 'Can I migrate my client data from Square Appointments to Daisy?', answer: 'Yes. Daisy walks you through the migration, moving client records, appointment history and contact details across from Square Appointments, so no client relationship gets lost on the way.' },
+      { question: 'Does Square Appointments work in Arabic or support GCC countries?', answer: 'No. There is no Arabic interface and no presence in the GCC, and local payment methods such as mada, Apple Pay in MENA and Knet are unsupported. Daisy runs natively in Arabic and English with full GCC compliance across all six countries.' },
+      { question: 'Does Square Appointments have AI features like an AI receptionist?', answer: 'No. There is no AI receptionist, no smart scheduling and no AI marketing. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments while the salon is shut.' },
+      { question: 'Is Square Appointments good enough for a multi-location beauty business?', answer: 'Multiple locations are supported on the Premium plan at $69/mo, but it is still a general scheduling tool with no service menus, no formula tracking and no stylist portfolios. Daisy was built for multi-location beauty businesses, with centralized management, AI and a customer marketplace.' },
+      { question: 'How does Square Appointments mobile app compare to Daisy?', answer: 'Square\'s app is about payments and basic scheduling. Daisy\'s covers the whole salon: the AI receptionist, live analytics, client messaging and marketplace visibility, designed for a beauty professional working between appointments.' },
+      { question: 'What kind of customer support does Square Appointments offer?', answer: 'Square supports you by email, phone and community forum, with nobody who specifically knows the beauty industry. Daisy\'s onboarding and support come from people who understand how a salon or spa runs, with local GCC support in Arabic and English.' },
+      { question: 'Can Square Appointments help me get new clients like Daisy can?', answer: 'No. Square Appointments runs your operations and does nothing to find you customers. Daisy puts a consumer marketplace, cashback rewards and AI-powered marketing together to bring new clients in.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -116,7 +116,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     website: 'https://www.mangomint.com',
     tier: 3,
     description:
-      'Premium, modern salon and spa software known for clean design and automation. Highly rated on Capterra (4.9/5). Focuses on established salons and spas.',
+      'Premium, modern salon and spa software, known for a clean interface and strong automation, and rated 4.9/5 on Capterra. It aims at established salons and spas.',
     founded: '2017',
     headquarters: 'Austin, TX, USA',
 
@@ -160,7 +160,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     aiCapabilities: {
       hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'Smart automations for workflows but no true AI features (no receptionist, chatbot, or AI marketing).',
+      aiDescription: 'Smart workflow automations, but no real AI: no receptionist, no chatbot, no AI marketing.',
     },
 
     daisyAdvantages: [
@@ -182,15 +182,15 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     ],
 
     faq: [
-      { question: 'How does Mangomint compare to Daisy?', answer: 'Mangomint is a premium ($165-375/mo) US-focused salon software with beautiful design and strong automations. Daisy offers AI receptionist, marketplace, cashback, and Arabic support at more accessible pricing. Mangomint excels at operations; Daisy excels at growth.' },
-      { question: 'Why is Mangomint so expensive compared to other salon software?', answer: 'Mangomint positions itself as a premium product with a clean interface and strong automations, starting at $165/mo and going up to $375/mo. While the design is excellent, it lacks AI features, a customer marketplace, and any Arabic or GCC support. Daisy offers more advanced capabilities including AI receptionist and customer acquisition tools at more accessible pricing.' },
-      { question: 'Can I switch from Mangomint to Daisy without losing my data?', answer: 'Yes. Daisy offers full data migration support to transfer your client records, appointment history, staff schedules, and service menus from Mangomint. Our team handles the transition so your business experiences zero downtime.' },
-      { question: 'Does Mangomint support Arabic or work in the Middle East?', answer: 'No. Mangomint is exclusively focused on the US market with an English-only interface. It has no Arabic support, no GCC compliance, and no local payment method integration. Daisy provides native Arabic and English with support built for the Gulf, live in Kuwait today.' },
-      { question: 'Does Mangomint have an AI receptionist or AI features?', answer: 'No. Mangomint offers smart workflow automations but no true AI capabilities, no AI receptionist, no AI chatbot, no AI-powered marketing. Daisy\'s 24/7 AI receptionist can handle bookings, answer questions, and process payments automatically.' },
-      { question: 'Is Mangomint worth $375 a month for my salon?', answer: 'Mangomint\'s Unlimited plan at $375/mo provides excellent operations tools, but it doesn\'t include customer acquisition features, AI, or marketplace visibility. For salons looking to grow (not just operate), Daisy\'s AI-powered platform with marketplace and cashback often delivers better ROI at a more accessible price point.' },
-      { question: 'How does Mangomint\'s mobile app compare to Daisy?', answer: 'Mangomint has a well-designed mobile app focused on scheduling and operations. Daisy\'s mobile app adds AI receptionist access, marketplace visibility, real-time customer acquisition analytics, and multilingual Arabic/English support, going beyond operations to drive business growth.' },
-      { question: 'What integrations does Mangomint offer compared to Daisy?', answer: 'Mangomint integrates with payment processors and some third-party tools, with API access on the Unlimited plan ($375/mo). Daisy provides built-in integrations for payments, marketing, CRM, and customer acquisition in a single platform, plus GCC-specific payment methods like mada and Knet.' },
-      { question: 'Does Mangomint help me get new customers or just manage existing ones?', answer: 'Mangomint is focused on managing existing clients and operations. It has no marketplace, no customer discovery features, and no cashback rewards. Daisy includes a consumer marketplace, cashback program, and AI-powered marketing to actively drive new customers to your business.' },
+      { question: 'How does Mangomint compare to Daisy?', answer: 'Mangomint is premium US salon software at $165-375/mo, beautifully designed and strong on automation. Daisy adds an AI receptionist, a marketplace, cashback and Arabic support, and costs less. Mangomint is built to run a salon, Daisy to grow one.' },
+      { question: 'Why is Mangomint so expensive compared to other salon software?', answer: 'Mangomint sells itself as a premium product, with a clean interface and strong automations, from $165/mo up to $375/mo. The design earns the price; the missing AI, absent customer marketplace and lack of any Arabic or GCC support do not. Daisy offers more, including the AI receptionist and acquisition tools, for less.' },
+      { question: 'Can I switch from Mangomint to Daisy without losing my data?', answer: 'Yes. Daisy moves your client records, appointment history, staff schedules and service menus across from Mangomint, and handles the transition so the business never goes offline.' },
+      { question: 'Does Mangomint support Arabic or work in the Middle East?', answer: 'No. Mangomint serves the US only, in English. There is no Arabic, no GCC compliance and no local payment integration. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today.' },
+      { question: 'Does Mangomint have an AI receptionist or AI features?', answer: 'No. The workflow automations are smart, but none of it is AI: no receptionist, no chatbot, no AI marketing. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments on its own.' },
+      { question: 'Is Mangomint worth $375 a month for my salon?', answer: 'The Unlimited plan at $375/mo buys excellent operations tools and nothing that acquires customers, no AI and no marketplace visibility. For a salon trying to grow rather than simply run, Daisy\'s AI platform with its marketplace and cashback usually returns more, for less.' },
+      { question: 'How does Mangomint\'s mobile app compare to Daisy?', answer: 'Mangomint\'s app is well designed and built around scheduling and operations. Daisy\'s adds the AI receptionist, marketplace visibility, live acquisition analytics and Arabic and English throughout, which takes it past operations into growth.' },
+      { question: 'What integrations does Mangomint offer compared to Daisy?', answer: 'It connects to payment processors and a handful of third-party tools, with API access reserved for the Unlimited plan at $375/mo. Daisy has payments, marketing, CRM and acquisition built into one platform, along with GCC payment methods such as mada and Knet.' },
+      { question: 'Does Mangomint help me get new customers or just manage existing ones?', answer: 'Mangomint looks after the clients you already have. There is no marketplace, nothing for discovery and no cashback. Daisy includes a consumer marketplace, a cashback program and AI-powered marketing to bring new customers in.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -205,7 +205,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     website: 'https://www.phorest.com',
     tier: 3,
     description:
-      'Loyalty and retention-focused salon software. Strong in UK/Ireland market. Comprehensive marketing and CRM features.',
+      'Salon software built around loyalty and retention, strong across the UK and Ireland, with thorough marketing and CRM features.',
     founded: '2003',
     headquarters: 'Dublin, Ireland',
 
@@ -238,7 +238,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     aiCapabilities: {
       hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: true, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'Basic AI-assisted marketing campaign suggestions. No receptionist, chatbot, or smart scheduling.',
+      aiDescription: 'AI stretches to suggesting marketing campaigns. No receptionist, no chatbot, no smart scheduling.',
     },
 
     daisyAdvantages: [
@@ -251,15 +251,15 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['UK/Ireland-focused', 'No Arabic/GCC', 'Limited AI', 'No marketplace', 'Opaque pricing'],
 
     faq: [
-      { question: 'How does Phorest compare to Daisy?', answer: 'Phorest excels at CRM and loyalty in the UK/Ireland market. Daisy offers AI receptionist, marketplace, cashback, and Arabic/GCC support that Phorest lacks. Phorest is retention-focused; Daisy covers both acquisition and retention.' },
-      { question: 'Is Phorest pricing transparent or are there hidden fees?', answer: 'Phorest\'s starter plan is around $99/mo, but higher tiers require custom quotes with opaque pricing. Additional costs include SMS charges and payment processing fees. Daisy offers transparent flat pricing with no per-message or hidden fees.' },
-      { question: 'Can I move my client database from Phorest to Daisy?', answer: 'Yes. Daisy provides dedicated data migration support for Phorest users, transferring client records, loyalty points history, appointment data, and marketing preferences. Our onboarding team ensures a seamless transition.' },
-      { question: 'Does Phorest work in Arabic or support salons in the GCC?', answer: 'No. Phorest is focused on the UK and Ireland market with an English-only interface. It has no Arabic support, no GCC compliance, and no local Middle Eastern payment methods. Daisy provides native Arabic/English with full GCC compliance across all six countries.' },
-      { question: 'Does Phorest have AI features like Daisy?', answer: 'Phorest has basic AI-assisted marketing campaign suggestions, but no AI receptionist, no AI chatbot, and no smart scheduling. Daisy offers a complete AI ecosystem including a 24/7 AI receptionist that handles bookings and customer inquiries automatically.' },
-      { question: 'How does Phorest\'s loyalty program compare to Daisy\'s cashback?', answer: 'Phorest uses a traditional loyalty points system that only retains existing clients. Daisy\'s cashback rewards program both retains existing clients and attracts new ones through the consumer marketplace, combining retention and acquisition in one system.' },
-      { question: 'Is Phorest good for salons outside the UK and Ireland?', answer: 'Phorest has expanded somewhat beyond UK/Ireland, but its core expertise and support remain focused there. It has no presence in the Middle East, no Arabic support, and no GCC-specific features. Daisy is built for global reach with particular strength in GCC markets.' },
-      { question: 'How does Phorest\'s mobile app compare to Daisy?', answer: 'Phorest offers a mobile app focused on CRM and marketing management. Daisy\'s mobile app goes further with AI receptionist access, marketplace visibility, cashback tracking, and full multilingual Arabic/English support for both salon owners and their clients.' },
-      { question: 'What customer support does Phorest offer compared to Daisy?', answer: 'Phorest provides dedicated account managers for higher-tier plans with UK/Ireland business hours support. Daisy offers specialized beauty industry support with local GCC support teams, Arabic-speaking representatives, and onboarding assistance tailored to the Middle East market.' },
+      { question: 'How does Phorest compare to Daisy?', answer: 'Across the UK and Ireland, Phorest is very good at CRM and loyalty. Daisy adds an AI receptionist, a marketplace, cashback and Arabic and GCC support, none of which Phorest has. Phorest keeps the clients you have; Daisy also finds you new ones.' },
+      { question: 'Is Phorest pricing transparent or are there hidden fees?', answer: 'The starter plan sits around $99/mo, and everything above it needs a custom quote you cannot look up. SMS charges and payment processing fees come on top. Daisy charges a flat published rate, with nothing per message and nothing hidden.' },
+      { question: 'Can I move my client database from Phorest to Daisy?', answer: 'Yes. Daisy migrates Phorest users itself, bringing across client records, loyalty points history, appointment data and marketing preferences, with the onboarding team handling the transition.' },
+      { question: 'Does Phorest work in Arabic or support salons in the GCC?', answer: 'No. Phorest serves the UK and Ireland in English only, with no Arabic, no GCC compliance and no local Middle Eastern payment methods. Daisy runs natively in Arabic and English with full GCC compliance across all six countries.' },
+      { question: 'Does Phorest have AI features like Daisy?', answer: 'The AI suggests marketing campaigns and stops there. No receptionist, no chatbot, no smart scheduling. Daisy runs a complete AI ecosystem, including a 24/7 receptionist that handles bookings and customer questions by itself.' },
+      { question: 'How does Phorest\'s loyalty program compare to Daisy\'s cashback?', answer: 'Phorest runs a traditional points system, which works on the clients you already have. Daisy\'s cashback rewards hold those clients and pull new ones in through the consumer marketplace, so retention and acquisition run on the same mechanism.' },
+      { question: 'Is Phorest good for salons outside the UK and Ireland?', answer: 'Phorest has reached a little past the UK and Ireland, though its expertise and its support still sit there. There is no Middle East presence, no Arabic and nothing built for the GCC. Daisy works across markets and is strongest in the Gulf.' },
+      { question: 'How does Phorest\'s mobile app compare to Daisy?', answer: 'Phorest\'s app centres on CRM and marketing management. Daisy\'s adds the AI receptionist, marketplace visibility, cashback tracking and full Arabic and English support for owners and their clients alike.' },
+      { question: 'What customer support does Phorest offer compared to Daisy?', answer: 'Higher tiers come with a dedicated account manager, and support runs on UK and Ireland business hours. Daisy provides beauty industry support from local GCC teams, with Arabic-speaking representatives and onboarding built for the Middle East.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -273,7 +273,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'Timely',
     website: 'https://www.gettimely.com',
     tier: 3,
-    description: 'Per-staff pricing model salon software from New Zealand. Strong in NZ/Australia/UK markets. Clean, modern interface.',
+    description: 'New Zealand salon software priced per member of staff, strong across New Zealand, Australia and the UK, with a clean modern interface.',
     founded: '2012',
     headquarters: 'Auckland, New Zealand',
 
@@ -316,15 +316,15 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['No AI', 'No marketplace', 'Per-staff pricing scales badly', 'NZ/AU/UK only', 'No Arabic/GCC'],
 
     faq: [
-      { question: 'How does Timely compare to Daisy?', answer: 'Timely is a clean, modern platform popular in NZ/Australia/UK with per-staff pricing. Daisy offers AI, marketplace, cashback, flat pricing, and Arabic/GCC support that Timely lacks.' },
-      { question: 'How expensive does Timely get as I add more staff?', answer: 'Timely uses per-staff pricing that escalates quickly. On the Innovate plan, you pay $50/mo base plus $15 per staff member. A salon with 10 stylists would pay $200/mo. Daisy offers flat pricing that doesn\'t penalize you for growing your team.' },
-      { question: 'Are there hidden fees with Timely beyond the subscription?', answer: 'Yes. Beyond the per-staff subscription, Timely charges separately for SMS reminders and payment processing. These costs add up, especially for busy salons. Daisy includes notifications and integrated payment processing in its flat pricing.' },
-      { question: 'Can I transfer my data from Timely to Daisy?', answer: 'Yes. Daisy provides full data migration support for Timely users, including client records, appointment history, staff schedules, and service configurations. Our onboarding team handles the entire process to ensure a smooth switch.' },
-      { question: 'Does Timely support Arabic or work in the Middle East?', answer: 'No. Timely is focused on New Zealand, Australia, and the UK. It has no Arabic interface, no GCC compliance, and no local payment methods for the Middle East. Daisy provides native Arabic/English support with support built for the Gulf, live in Kuwait today.' },
-      { question: 'Does Timely have any AI features?', answer: 'No. Timely has no AI capabilities, no AI receptionist, no chatbot, no smart scheduling, and no AI-powered marketing. Daisy\'s AI receptionist works 24/7 to handle bookings, answer client questions, and process payments automatically.' },
-      { question: 'How does Timely\'s mobile app compare to Daisy?', answer: 'Timely has a well-designed mobile app for scheduling and staff management. Daisy\'s mobile app adds AI receptionist access, marketplace visibility, cashback management, real-time business analytics, and full multilingual Arabic/English support.' },
-      { question: 'Can Timely help me attract new clients to my salon?', answer: 'No. Timely is an operations tool with no customer acquisition features, no marketplace, no cashback rewards, and no customer discovery platform. Daisy includes a consumer marketplace, cashback program, and AI-powered marketing to actively bring new customers to your business.' },
-      { question: 'What kind of customer support does Timely provide?', answer: 'Timely offers email-based support and an online help center. They don\'t provide phone support or dedicated account managers. Daisy offers multi-channel support including dedicated onboarding, Arabic-speaking support staff, and local GCC support teams.' },
+      { question: 'How does Timely compare to Daisy?', answer: 'Timely is a clean, modern platform, popular across New Zealand, Australia and the UK, and priced per member of staff. Daisy adds AI, a marketplace, cashback, flat pricing and Arabic and GCC support, none of which Timely has.' },
+      { question: 'How expensive does Timely get as I add more staff?', answer: 'Per-staff pricing climbs quickly. The Innovate plan is $50/mo as a base plus $15 for each member of staff, so a salon with 10 stylists pays $200/mo. Daisy charges flat, so hiring costs you nothing extra.' },
+      { question: 'Are there hidden fees with Timely beyond the subscription?', answer: 'Yes. On top of the per-staff subscription, SMS reminders and payment processing are billed separately, which mounts up in a busy salon. Daisy includes notifications and payment processing in its flat price.' },
+      { question: 'Can I transfer my data from Timely to Daisy?', answer: 'Yes. Daisy migrates Timely users itself, moving client records, appointment history, staff schedules and service configurations, with the onboarding team handling the whole process.' },
+      { question: 'Does Timely support Arabic or work in the Middle East?', answer: 'No. Timely serves New Zealand, Australia and the UK. There is no Arabic interface, no GCC compliance and no local payment methods for the Middle East. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today.' },
+      { question: 'Does Timely have any AI features?', answer: 'No. There is no AI receptionist, no chatbot, no smart scheduling and no AI marketing. Daisy\'s AI receptionist works 24/7, taking bookings, answering client questions and processing payments on its own.' },
+      { question: 'How does Timely\'s mobile app compare to Daisy?', answer: 'Timely\'s app is well designed for scheduling and staff management. Daisy\'s adds the AI receptionist, marketplace visibility, cashback management, live business analytics and full Arabic and English support.' },
+      { question: 'Can Timely help me attract new clients to my salon?', answer: 'No. Timely runs your operations. There is no marketplace, no cashback and nothing that helps a new client find you. Daisy includes a consumer marketplace, a cashback program and AI-powered marketing to bring customers in.' },
+      { question: 'What kind of customer support does Timely provide?', answer: 'Support runs through email and an online help centre, with no phone line and no dedicated account manager. Daisy provides multi-channel support, dedicated onboarding, Arabic-speaking staff and local GCC teams.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -338,7 +338,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'Meevo',
     website: 'https://www.meevo.com',
     tier: 3,
-    description: 'Established US salon/spa management platform. No contracts policy. Comprehensive feature set for mid-market salons.',
+    description: 'A long-established US salon and spa management platform with a no-contracts policy and a thorough feature set aimed at mid-market salons.',
     founded: '2006',
     headquarters: 'New Jersey, USA',
 
@@ -370,7 +370,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     aiCapabilities: {
       hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'No AI capabilities. Traditional salon software.',
+      aiDescription: 'No AI. Traditional salon software.',
     },
 
     daisyAdvantages: ['AI-powered platform vs traditional software', 'Arabic/GCC vs US-only', 'Marketplace + cashback', 'Modern tech stack'],
@@ -379,15 +379,15 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['No AI', 'US-only', 'Dated interface', 'No marketplace', 'No Arabic/GCC'],
 
     faq: [
-      { question: 'How does Meevo compare to Daisy?', answer: 'Meevo is an established US salon platform with solid features but no AI, marketplace, or international support. Daisy offers AI receptionist, marketplace, cashback, and Arabic/GCC compliance on a modern platform.' },
-      { question: 'What are the hidden costs with Meevo beyond the $139 monthly subscription?', answer: 'Meevo charges extra for hardware (POS terminals, card readers) and add-on features that aren\'t included in the base plan. Setup fees and training costs may also apply. Daisy offers transparent pricing with no hardware requirements and all features included.' },
-      { question: 'Can I move my salon data from Meevo to Daisy?', answer: 'Yes. Daisy provides comprehensive data migration from Meevo, including client profiles, appointment history, product inventory, staff records, and financial data. Our onboarding team handles the full transition.' },
-      { question: 'Does Meevo support Arabic or have any presence in the Middle East?', answer: 'No. Meevo is exclusively a US-focused platform with no Arabic interface, no GCC compliance, and no Middle Eastern payment methods. Daisy provides native Arabic/English support with support built for the Gulf, live in Kuwait today.' },
-      { question: 'Does Meevo have AI features like an AI receptionist?', answer: 'No. Meevo is traditional salon software with no AI capabilities, no AI receptionist, no chatbot, no smart scheduling. Daisy\'s 24/7 AI receptionist handles bookings, answers customer questions, and processes payments even outside business hours.' },
-      { question: 'Is Meevo\'s interface modern or does it feel outdated?', answer: 'Meevo was founded in 2006 and while it has been updated over the years, many users note the interface feels dated compared to newer platforms. Daisy is built on a modern tech stack with a clean, intuitive interface designed for today\'s beauty professionals.' },
-      { question: 'How does Meevo\'s mobile app compare to Daisy?', answer: 'Meevo offers a mobile companion app for basic management tasks. Daisy\'s mobile app provides full salon management, AI receptionist access, marketplace visibility, real-time analytics, and multilingual Arabic/English support, purpose-built for salon owners on the go.' },
-      { question: 'Does Meevo have a marketplace to help me find new clients?', answer: 'Meevo has a minimal listing directory, but no true consumer marketplace. Daisy includes a full consumer marketplace with cashback rewards, discovery features, and AI-powered marketing to actively attract new clients to your salon.' },
-      { question: 'What customer support does Meevo provide?', answer: 'Meevo offers US-based phone and email support during business hours. Daisy provides multi-channel support with specialized beauty industry expertise, Arabic-speaking representatives, and dedicated GCC support teams for businesses in the Middle East.' },
+      { question: 'How does Meevo compare to Daisy?', answer: 'Meevo is an established US salon platform with solid features and no AI, no marketplace and no international support. Daisy brings an AI receptionist, a marketplace, cashback and Arabic and GCC compliance, on a modern platform.' },
+      { question: 'What are the hidden costs with Meevo beyond the $139 monthly subscription?', answer: 'Hardware costs extra, meaning POS terminals and card readers, as do the add-on features left out of the base plan. Setup fees and training can apply on top. Daisy publishes its pricing, needs no hardware and includes the features.' },
+      { question: 'Can I move my salon data from Meevo to Daisy?', answer: 'Yes. Daisy moves client profiles, appointment history, product inventory, staff records and financial data across from Meevo, with the onboarding team handling the transition.' },
+      { question: 'Does Meevo support Arabic or have any presence in the Middle East?', answer: 'No. Meevo serves the US only, with no Arabic interface, no GCC compliance and no Middle Eastern payment methods. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today.' },
+      { question: 'Does Meevo have AI features like an AI receptionist?', answer: 'No. Meevo is traditional salon software: no AI receptionist, no chatbot, no smart scheduling. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments long after you have gone home.' },
+      { question: 'Is Meevo\'s interface modern or does it feel outdated?', answer: 'Meevo dates from 2006, and although it has been updated since, users regularly describe the interface as dated next to newer platforms. Daisy is built on a modern stack, with an interface made for how beauty professionals work now.' },
+      { question: 'How does Meevo\'s mobile app compare to Daisy?', answer: 'Meevo has a companion app for basic management tasks. Daisy\'s covers the whole salon: the AI receptionist, marketplace visibility, live analytics and Arabic and English throughout, built for an owner who is rarely at a desk.' },
+      { question: 'Does Meevo have a marketplace to help me find new clients?', answer: 'There is a thin listing directory, but nothing that works as a consumer marketplace. Daisy includes a full one, with cashback rewards, discovery features and AI-powered marketing to bring new clients to the salon.' },
+      { question: 'What customer support does Meevo provide?', answer: 'Meevo offers US-based phone and email support in business hours. Daisy provides multi-channel support from people who know the beauty industry, with Arabic-speaking representatives and dedicated GCC teams for Middle East businesses.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -401,7 +401,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'Treatwell',
     website: 'https://www.treatwell.com',
     tier: 3,
-    description: 'European beauty marketplace with up to 35% commission on bookings. Largest marketplace in Europe (13 countries).',
+    description: 'Europe\'s largest beauty marketplace, running across 13 countries and taking up to 35% commission on bookings.',
     founded: '2008',
     headquarters: 'Amsterdam, Netherlands',
 
@@ -443,16 +443,16 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['Up to 35% commission', 'Very basic management tools', 'No AI', 'Low Capterra rating (3.8)', 'No GCC/Arabic', 'Marketplace dependency'],
 
     faq: [
-      { question: 'How does Treatwell compare to Daisy?', answer: 'Treatwell is a European marketplace charging up to 35% commission per booking with minimal management tools. Daisy is a complete platform with flat pricing, AI receptionist, and full business management, no commissions on customer bookings.' },
-      { question: 'How much does Treatwell actually cost salons with their commission model?', answer: 'Treatwell charges up to 35% commission on marketplace bookings. For a salon generating $10,000/mo through Treatwell, that\'s up to $3,500 in commissions. Daisy charges flat subscription pricing with no commissions on bookings, your revenue stays yours.' },
-      { question: 'Can I switch from Treatwell to Daisy and keep my clients?', answer: 'Yes. Daisy helps you migrate client data from Treatwell and build direct relationships with your customers. Unlike Treatwell where the marketplace owns the customer relationship, Daisy ensures you own your client data and can communicate directly with them.' },
-      { question: 'Does Treatwell work in Arabic or support salons in the Gulf?', answer: 'No. Treatwell operates in 13 European countries only, with no Arabic interface, no GCC presence, and no Middle Eastern payment methods. Daisy provides native Arabic/English support and support built for the Gulf, live in Kuwait today.' },
-      { question: 'Does Treatwell have AI features?', answer: 'No. Treatwell has no AI capabilities, no AI receptionist, no chatbot, and no smart scheduling. It\'s a marketplace listing service with basic booking. Daisy offers a 24/7 AI receptionist, AI-powered marketing, and smart scheduling to grow your business.' },
-      { question: 'Why does Treatwell have a lower rating on Capterra than other salon software?', answer: 'Treatwell has a 3.8/5 rating on Capterra, lower than most competitors. Common complaints include high commission rates, limited business management tools, and lack of control over pricing and client relationships. Daisy gives salons full control with flat pricing and comprehensive tools.' },
-      { question: 'Does Treatwell offer real salon management tools or just a marketplace listing?', answer: 'Treatwell Connect offers basic salon management, but most salons use Treatwell purely as a marketplace listing. For real business management, most Treatwell users still need separate software. Daisy provides a complete all-in-one platform, booking, POS, CRM, marketing, AI, and marketplace.' },
-      { question: 'How does Treatwell\'s app compare to Daisy for salon owners?', answer: 'Treatwell\'s salon-facing app is primarily for managing marketplace bookings. Daisy\'s app provides full salon management, AI receptionist, direct client communication, analytics, and multilingual Arabic/English support, far beyond marketplace listing management.' },
-      { question: 'Is Treatwell sustainable for my salon long-term with 35% commission?', answer: 'Many salons find Treatwell\'s commission model unsustainable as their business grows, paying more in fees as they become more successful. Daisy\'s flat subscription model means your costs stay predictable while your revenue grows, with no commissions eating into your margins.' },
-      { question: 'What support does Treatwell offer compared to Daisy?', answer: 'Treatwell provides basic email support for partner salons during European business hours. Daisy offers dedicated onboarding, multi-channel support, Arabic-speaking representatives, and local GCC support teams with deep beauty industry expertise.' },
+      { question: 'How does Treatwell compare to Daisy?', answer: 'Treatwell is a European marketplace that takes up to 35% commission per booking and offers little in the way of management tools. Daisy is a complete platform with flat pricing, an AI receptionist and full business management, and takes no commission on customer bookings.' },
+      { question: 'How much does Treatwell actually cost salons with their commission model?', answer: 'Commission on marketplace bookings runs up to 35%. A salon putting $10,000/mo through Treatwell hands over as much as $3,500. Daisy charges a flat subscription and takes no commission, so the revenue stays with you.' },
+      { question: 'Can I switch from Treatwell to Daisy and keep my clients?', answer: 'Yes. Daisy moves your client data across and helps you build direct relationships from there. On Treatwell the marketplace holds the customer relationship. On Daisy the client data is yours, and so is the line to them.' },
+      { question: 'Does Treatwell work in Arabic or support salons in the Gulf?', answer: 'No. Treatwell runs in 13 European countries and nowhere else, with no Arabic interface, no GCC presence and no Middle Eastern payment methods. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today.' },
+      { question: 'Does Treatwell have AI features?', answer: 'No. There is no AI receptionist, no chatbot and no smart scheduling. Treatwell is a marketplace listing with basic booking attached. Daisy offers a 24/7 AI receptionist, AI-powered marketing and smart scheduling.' },
+      { question: 'Why does Treatwell have a lower rating on Capterra than other salon software?', answer: 'Treatwell sits at 3.8/5 on Capterra, below most competitors. The recurring complaints are the commission rates, the thin business management tools, and how little control salons have over pricing and their own client relationships. Daisy hands that control back, on flat pricing.' },
+      { question: 'Does Treatwell offer real salon management tools or just a marketplace listing?', answer: 'Treatwell Connect does basic salon management, though most salons treat Treatwell as a marketplace listing and nothing else. For real management, they buy separate software anyway. Daisy covers booking, POS, CRM, marketing, AI and the marketplace in one place.' },
+      { question: 'How does Treatwell\'s app compare to Daisy for salon owners?', answer: 'The salon-facing app exists mainly to manage marketplace bookings. Daisy\'s covers the salon itself: the AI receptionist, direct client communication, analytics and Arabic and English throughout.' },
+      { question: 'Is Treatwell sustainable for my salon long-term with 35% commission?', answer: 'Plenty of salons find the commission model stops working as they grow, since success itself raises the bill. On a flat subscription your costs hold still while the revenue climbs, and nothing comes out of the margin.' },
+      { question: 'What support does Treatwell offer compared to Daisy?', answer: 'Partner salons get basic email support on European business hours. Daisy provides dedicated onboarding, multi-channel support, Arabic-speaking representatives and local GCC teams who know the beauty industry well.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -466,7 +466,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'Acuity Scheduling',
     website: 'https://acuityscheduling.com',
     tier: 3,
-    description: 'General-purpose scheduling tool owned by Squarespace. Not beauty-specific but used by some independent beauty professionals.',
+    description: 'A general-purpose scheduling tool owned by Squarespace. Nothing about it is specific to beauty, though some independent professionals use it anyway.',
     founded: '2006',
     headquarters: 'New York, USA (Squarespace)',
 
@@ -500,7 +500,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     aiCapabilities: {
       hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'No AI capabilities. Generic scheduling tool.',
+      aiDescription: 'No AI. A generic scheduling tool.',
     },
 
     daisyAdvantages: ['Purpose-built for beauty vs generic scheduling', 'AI receptionist', 'Full business suite (POS, CRM, marketing)', 'Marketplace + cashback', 'Arabic/GCC'],
@@ -509,16 +509,16 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['Not beauty-specific', 'No POS/inventory/CRM', 'No AI', 'No marketplace', 'No Arabic/GCC'],
 
     faq: [
-      { question: 'How does Acuity compare to Daisy for salons?', answer: 'Acuity is a general scheduling tool at $16-49/mo, great for basic booking but lacking salon-specific features like POS, inventory, client management, AI, and marketplace. Daisy is purpose-built for beauty businesses with complete management and growth tools.' },
-      { question: 'Is Acuity Scheduling really just a calendar or does it have salon features?', answer: 'Acuity is fundamentally a calendar and scheduling tool, not salon software. It lacks POS, inventory management, formula tracking, service menus, staff commissions, and other beauty-specific features. Most salons using Acuity need to add multiple other tools. Daisy includes everything a beauty business needs in one platform.' },
-      { question: 'What hidden costs should I expect with Acuity Scheduling?', answer: 'While Acuity\'s subscription is affordable ($16-49/mo), beauty businesses typically need to add separate tools for POS, CRM, marketing, and inventory, each with its own subscription. Payment processing fees also apply. Daisy bundles all these capabilities into one platform.' },
-      { question: 'Can I migrate my booking data from Acuity to Daisy?', answer: 'Yes. Daisy provides full data migration support for Acuity users, transferring client records, appointment history, and booking preferences. Our onboarding team ensures a smooth transition to Daisy\'s comprehensive beauty platform.' },
-      { question: 'Does Acuity Scheduling support Arabic or work in the Gulf region?', answer: 'No. Acuity is a US-based product (owned by Squarespace) with no Arabic interface, no GCC compliance, and no Middle Eastern payment methods. Daisy provides native Arabic/English support with support built for the Gulf, live in Kuwait today.' },
-      { question: 'Does Acuity have any AI features for my salon?', answer: 'No. Acuity has no AI capabilities, no AI receptionist, no chatbot, no smart scheduling, and no AI-powered marketing. It\'s a straightforward scheduling tool. Daisy\'s 24/7 AI receptionist handles bookings, answers client questions, and processes payments automatically.' },
-      { question: 'Why do so many people use Acuity if it\'s not built for salons?', answer: 'Acuity has a 4.8 rating with 5,600+ reviews because it\'s an excellent general scheduling tool, simple, reliable, and affordable. However, beauty businesses often outgrow it as they need POS, client management, staff scheduling, and marketing. Daisy is built for this exact growth trajectory.' },
-      { question: 'How does Acuity\'s Squarespace integration compare to what Daisy offers?', answer: 'Acuity integrates with Squarespace for website embedding, but this only covers booking. Daisy provides a complete ecosystem, marketplace visibility, AI receptionist, POS, CRM, and marketing, that goes far beyond embedding a booking widget on your website.' },
-      { question: 'Can Acuity help me attract new clients or just manage bookings?', answer: 'Acuity is purely a booking management tool with no customer acquisition features, no marketplace, no cashback, no discovery platform. Daisy includes a consumer marketplace, cashback rewards, and AI-powered marketing to actively drive new clients to your business.' },
-      { question: 'What support does Acuity offer for beauty business owners?', answer: 'Acuity provides general email support and a knowledge base, but no beauty-specific guidance or dedicated account management. Daisy offers specialized onboarding for beauty businesses, Arabic-speaking support staff, and local GCC support teams who understand salon operations.' },
+      { question: 'How does Acuity compare to Daisy for salons?', answer: 'Acuity is a general scheduling tool at $16-49/mo. It handles basic booking well and has no POS, no inventory, no client management, no AI and no marketplace. Daisy was built for beauty businesses, with the management and growth tools to match.' },
+      { question: 'Is Acuity Scheduling really just a calendar or does it have salon features?', answer: 'At bottom Acuity is a calendar, not salon software. There is no POS, no inventory management, no formula tracking, no service menus and no staff commissions. Most salons on Acuity end up buying several other tools to fill the gaps. Daisy holds all of it in one platform.' },
+      { question: 'What hidden costs should I expect with Acuity Scheduling?', answer: 'The subscription itself is cheap at $16-49/mo. A beauty business then adds separate tools for POS, CRM, marketing and inventory, each with its own bill, and payment processing fees on top. Daisy puts all of it in one platform.' },
+      { question: 'Can I migrate my booking data from Acuity to Daisy?', answer: 'Yes. Daisy moves client records, appointment history and booking preferences across from Acuity, with the onboarding team handling the transition.' },
+      { question: 'Does Acuity Scheduling support Arabic or work in the Gulf region?', answer: 'No. Acuity is a US product, owned by Squarespace, with no Arabic interface, no GCC compliance and no Middle Eastern payment methods. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today.' },
+      { question: 'Does Acuity have any AI features for my salon?', answer: 'No. There is no AI receptionist, no chatbot, no smart scheduling and no AI marketing. It is a straightforward scheduling tool. Daisy\'s 24/7 AI receptionist takes bookings, answers client questions and processes payments by itself.' },
+      { question: 'Why do so many people use Acuity if it\'s not built for salons?', answer: 'Acuity holds a 4.8 rating across 5,600+ reviews because it is an excellent general scheduling tool: simple, reliable and cheap. Beauty businesses tend to outgrow it once they need POS, client management, staff scheduling and marketing. That trajectory is what Daisy was built for.' },
+      { question: 'How does Acuity\'s Squarespace integration compare to what Daisy offers?', answer: 'The Squarespace integration embeds booking in your website, and that is all it does. Daisy brings marketplace visibility, an AI receptionist, POS, CRM and marketing, which is a good deal more than a booking widget.' },
+      { question: 'Can Acuity help me attract new clients or just manage bookings?', answer: 'Acuity manages bookings and does nothing to find you customers: no marketplace, no cashback, nowhere to be discovered. Daisy includes a consumer marketplace, cashback rewards and AI-powered marketing to bring new clients in.' },
+      { question: 'What support does Acuity offer for beauty business owners?', answer: 'Support is general email and a knowledge base, with no beauty-specific guidance and no account manager. Daisy provides onboarding built for beauty businesses, Arabic-speaking support staff and local GCC teams who understand how a salon runs.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -532,7 +532,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'SimplyBook.me',
     website: 'https://simplybook.me',
     tier: 3,
-    description: 'Generic booking platform with 70+ add-on modules. Customizable but requires configuration. Not beauty-specific.',
+    description: 'A generic booking platform built from 70+ add-on modules. Highly customizable, and it expects you to do the configuring. Nothing specific to beauty.',
     founded: '2013',
     headquarters: 'Limassol, Cyprus',
 
@@ -567,7 +567,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     aiCapabilities: {
       hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'No AI capabilities. Modular add-on system for features.',
+      aiDescription: 'No AI. Features arrive through a modular add-on system.',
     },
 
     daisyAdvantages: ['Beauty-specific vs generic booking', 'AI receptionist', 'Integrated platform vs modular add-ons', 'Native Arabic vs translated', 'Marketplace + cashback', 'GCC compliance'],
@@ -576,15 +576,15 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['Not beauty-specific', 'Add-on complexity', 'No AI', 'Translated (not native) Arabic', 'No marketplace'],
 
     faq: [
-      { question: 'How does SimplyBook.me compare to Daisy?', answer: 'SimplyBook.me is a generic booking tool with modular add-ons, while Daisy is purpose-built for beauty with AI, marketplace, cashback, and native Arabic. SimplyBook offers translated Arabic; Daisy provides native Arabic with equal priority.' },
-      { question: 'How much does SimplyBook.me actually cost with all the add-on modules?', answer: 'SimplyBook.me starts free or at $8.25/mo, but beauty businesses typically need multiple add-on modules (POS, CRM, marketing, etc.) which accumulate costs. SMS reminders are charged separately. The total cost often exceeds what you\'d pay for Daisy\'s all-inclusive platform with AI and marketplace.' },
-      { question: 'Is SimplyBook.me\'s Arabic support good enough for GCC businesses?', answer: 'SimplyBook.me offers translated Arabic, which often contains awkward phrasing and lacks cultural nuance. It has minimal GCC compliance and no local payment methods. Daisy provides native Arabic with equal priority to English, full RTL support, and GCC-specific compliance across all six countries.' },
-      { question: 'Can I migrate my data from SimplyBook.me to Daisy?', answer: 'Yes. Daisy provides full data migration support for SimplyBook.me users, including client records, booking history, and service configurations. Our team handles the transition from the modular add-on system to Daisy\'s integrated platform.' },
-      { question: 'Does SimplyBook.me have AI features?', answer: 'No. SimplyBook.me has no AI capabilities, no AI receptionist, no chatbot, no smart scheduling, and no AI-powered marketing. Features are added through manual module selection. Daisy\'s AI receptionist handles bookings, customer questions, and payments 24/7.' },
-      { question: 'Is managing 70+ add-on modules in SimplyBook.me complicated?', answer: 'Yes, many users find SimplyBook.me\'s modular approach overwhelming. Choosing from 70+ modules, configuring each one, and managing compatibility can be time-consuming. Daisy provides an integrated platform where all beauty-specific features work together out of the box.' },
-      { question: 'Does SimplyBook.me have a marketplace to help me get new clients?', answer: 'SimplyBook.me has a basic business directory, but it\'s not a consumer-facing marketplace. Daisy includes a full consumer marketplace with cashback rewards and discovery features that actively drive new customers to your business.' },
-      { question: 'How does SimplyBook.me\'s mobile app compare to Daisy?', answer: 'SimplyBook.me offers a basic mobile app for booking management. Daisy\'s mobile app provides full salon management, AI receptionist access, marketplace visibility, real-time analytics, and native Arabic/English support, purpose-built for beauty professionals.' },
-      { question: 'What customer support does SimplyBook.me offer?', answer: 'SimplyBook.me provides email and chat support with a knowledge base. Support is in English with limited multi-language availability. Daisy offers specialized beauty industry support, Arabic-speaking representatives, and local GCC support teams.' },
+      { question: 'How does SimplyBook.me compare to Daisy?', answer: 'SimplyBook.me is a generic booking tool assembled from modular add-ons. Daisy was built for beauty, with AI, a marketplace, cashback and native Arabic. SimplyBook\'s Arabic is translated; Daisy treats Arabic as an equal priority.' },
+      { question: 'How much does SimplyBook.me actually cost with all the add-on modules?', answer: 'It starts free, or at $8.25/mo, and a beauty business then needs several add-on modules for POS, CRM and marketing, each adding to the bill. SMS reminders are charged on top. The total often passes what Daisy costs all-inclusive, with the AI and marketplace included.' },
+      { question: 'Is SimplyBook.me\'s Arabic support good enough for GCC businesses?', answer: 'The Arabic is translated, and it reads that way, with awkward phrasing and little cultural feel. GCC compliance is minimal and there are no local payment methods. Daisy treats Arabic as equal to English, supports right-to-left properly, and meets GCC requirements across all six countries.' },
+      { question: 'Can I migrate my data from SimplyBook.me to Daisy?', answer: 'Yes. Daisy moves client records, booking history and service configurations across, and handles the shift from a modular add-on system to an integrated platform.' },
+      { question: 'Does SimplyBook.me have AI features?', answer: 'No. There is no AI receptionist, no chatbot, no smart scheduling and no AI marketing. Features arrive by picking modules yourself. Daisy\'s AI receptionist handles bookings, customer questions and payments 24/7.' },
+      { question: 'Is managing 70+ add-on modules in SimplyBook.me complicated?', answer: 'Many users say so. Choosing among 70+ modules, configuring each one and keeping them compatible takes real time. On Daisy the beauty-specific features are already integrated and work together from the start.' },
+      { question: 'Does SimplyBook.me have a marketplace to help me get new clients?', answer: 'There is a basic business directory, which is not the same thing as a consumer marketplace. Daisy includes a full one, with cashback rewards and discovery features that bring new customers to you.' },
+      { question: 'How does SimplyBook.me\'s mobile app compare to Daisy?', answer: 'SimplyBook.me\'s app handles basic booking management. Daisy\'s covers the whole salon, with the AI receptionist, marketplace visibility, live analytics and native Arabic and English, built for beauty professionals.' },
+      { question: 'What customer support does SimplyBook.me offer?', answer: 'Support comes by email and chat, backed by a knowledge base, in English with limited coverage in other languages. Daisy provides beauty industry support, Arabic-speaking representatives and local GCC teams.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -598,7 +598,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'Setmore',
     website: 'https://www.setmore.com',
     tier: 3,
-    description: 'Free general-purpose scheduling tool. Basic features, broad appeal. Not beauty-specific.',
+    description: 'A free general-purpose scheduling tool with basic features and wide appeal. Nothing in it is specific to beauty.',
     founded: '2011',
     headquarters: 'Portland, OR, USA',
 
@@ -641,15 +641,15 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['Very basic', 'Not beauty-specific', 'No AI', 'No POS/CRM', 'No Arabic/GCC', 'No marketplace'],
 
     faq: [
-      { question: 'How does Setmore compare to Daisy?', answer: 'Setmore is a free basic scheduling tool, while Daisy is a complete AI-powered beauty business platform. Setmore is fine for getting started, but businesses needing POS, CRM, AI, marketplace, and Arabic support will need Daisy.' },
-      { question: 'Is Setmore really free and what are the catch costs?', answer: 'Setmore\'s free plan supports up to 4 staff with basic scheduling. Paid plans are $5-12 per user per month, which adds up for larger teams. However, the real cost is what\'s missing, no POS, no CRM, no marketing, no AI, no marketplace. Most growing salons need to add multiple paid tools on top of Setmore.' },
-      { question: 'Can I migrate my client data from Setmore to Daisy?', answer: 'Yes. Daisy provides full data migration support from Setmore, including client contact information, appointment history, and service preferences. Our onboarding team handles the transition to ensure nothing is lost.' },
-      { question: 'Does Setmore support Arabic or work in the Middle East?', answer: 'No. Setmore has no Arabic interface, no GCC compliance, and no Middle Eastern payment methods. It\'s a US-based generic scheduling tool. Daisy provides native Arabic/English support with support built for the Gulf, live in Kuwait today.' },
-      { question: 'Does Setmore have any AI features?', answer: 'No. Setmore has no AI capabilities whatsoever, no AI receptionist, no chatbot, no smart scheduling, and no AI-powered marketing. Daisy\'s 24/7 AI receptionist handles bookings, answers client questions, and processes payments automatically.' },
-      { question: 'When should I upgrade from Setmore to a platform like Daisy?', answer: 'When you need beauty-specific features like POS, client history, formula tracking, staff commissions, or marketing tools. Setmore can\'t provide these. If you want AI to handle after-hours bookings or a marketplace to attract new clients, it\'s time to move to Daisy.' },
-      { question: 'How does Setmore\'s mobile app compare to Daisy?', answer: 'Setmore has a basic mobile app for viewing and managing appointments. Daisy\'s mobile app provides full salon management, AI receptionist, marketplace visibility, cashback tracking, real-time analytics, and multilingual Arabic/English support.' },
-      { question: 'Can Setmore help me grow my client base?', answer: 'No. Setmore is a scheduling tool with no customer acquisition features, no marketplace, no cashback rewards, no marketing automation. Daisy includes a consumer marketplace, cashback program, and AI-powered marketing to actively drive new customers to your business.' },
-      { question: 'What customer support does Setmore provide compared to Daisy?', answer: 'Setmore offers email support and a help center. There\'s no phone support on free plans and no beauty-specific guidance. Daisy provides specialized beauty industry support, Arabic-speaking representatives, dedicated onboarding, and local GCC support teams.' },
+      { question: 'How does Setmore compare to Daisy?', answer: 'Setmore is a free basic scheduling tool. Daisy is a complete AI-powered platform for a beauty business. Setmore is fine to start on, and anyone who needs POS, CRM, AI, a marketplace or Arabic will outgrow it.' },
+      { question: 'Is Setmore really free and what are the catch costs?', answer: 'The free plan covers up to 4 staff on basic scheduling, and paid plans run $5-12 per user per month, which mounts up across a bigger team. The real cost is what is absent: no POS, no CRM, no marketing, no AI, no marketplace. Most growing salons end up buying several paid tools to sit alongside it.' },
+      { question: 'Can I migrate my client data from Setmore to Daisy?', answer: 'Yes. Daisy moves client contact details, appointment history and service preferences across from Setmore, with the onboarding team making sure nothing goes missing.' },
+      { question: 'Does Setmore support Arabic or work in the Middle East?', answer: 'No. There is no Arabic interface, no GCC compliance and no Middle Eastern payment methods. It is a US generic scheduling tool. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today.' },
+      { question: 'Does Setmore have any AI features?', answer: 'No. There is no AI receptionist, no chatbot, no smart scheduling and no AI marketing. Daisy\'s 24/7 AI receptionist takes bookings, answers client questions and processes payments on its own.' },
+      { question: 'When should I upgrade from Setmore to a platform like Daisy?', answer: 'When you start needing POS, client history, formula tracking, staff commissions or marketing tools, because Setmore has none of them. The same goes for wanting AI to pick up after-hours bookings or a marketplace to bring new clients in.' },
+      { question: 'How does Setmore\'s mobile app compare to Daisy?', answer: 'Setmore\'s app views and manages appointments. Daisy\'s covers the whole salon: the AI receptionist, marketplace visibility, cashback tracking, live analytics and Arabic and English throughout.' },
+      { question: 'Can Setmore help me grow my client base?', answer: 'No. Setmore schedules appointments. There is no marketplace, no cashback and no marketing automation. Daisy includes a consumer marketplace, a cashback program and AI-powered marketing to bring new customers in.' },
+      { question: 'What customer support does Setmore provide compared to Daisy?', answer: 'Support is email and a help centre, with no phone line on free plans and nobody who knows the beauty industry. Daisy provides beauty industry support, Arabic-speaking representatives, dedicated onboarding and local GCC teams.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -663,7 +663,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'BookB',
     website: 'https://www.bookb.app',
     tier: 3,
-    description: 'Dubai-specific beauty booking app with UAE compliance focus. Small local marketplace for Dubai salons.',
+    description: 'A Dubai-only beauty booking app built around UAE compliance, with a small local marketplace for Dubai salons.',
     founded: '2020',
     headquarters: 'Dubai, UAE',
 
@@ -703,15 +703,15 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['Very basic features', 'Dubai-only', 'No AI', 'No reviews', 'Tiny marketplace', 'No staff/inventory/reporting'],
 
     faq: [
-      { question: 'How does BookB compare to Daisy?', answer: 'BookB is a basic Dubai-specific booking app, while Daisy is a comprehensive platform with AI, full business management, cashback, and coverage across all 6 GCC countries.' },
-      { question: 'What does BookB cost and is the pricing transparent?', answer: 'BookB requires you to contact them for pricing, there are no publicly listed plans. This lack of transparency makes it hard to compare value. Daisy offers clear, published pricing with all features included and no hidden fees.' },
-      { question: 'Can I switch from BookB to Daisy without losing my data?', answer: 'Yes. Daisy provides data migration support for BookB users, transferring client records and booking history. Since BookB has limited data fields, the migration is typically straightforward, and you\'ll gain access to much more comprehensive client management with Daisy.' },
-      { question: 'Does BookB work outside of Dubai?', answer: 'No. BookB is focused exclusively on the Dubai market. If you plan to expand to other emirates or GCC countries, you\'ll need a different platform. Daisy is built for the GCC — native Arabic/English UI and local payment methods — live in Kuwait today and expanding across the Gulf.' },
-      { question: 'Does BookB have AI features like Daisy?', answer: 'No. BookB has no AI capabilities, no AI receptionist, no chatbot, and no smart scheduling. Daisy\'s 24/7 AI receptionist handles bookings, answers customer questions, and processes payments automatically in both Arabic and English.' },
-      { question: 'How does BookB\'s marketplace compare to Daisy\'s?', answer: 'BookB has a small local marketplace limited to Dubai. Daisy\'s marketplace covers all GCC countries and includes cashback rewards, customer discovery, and AI-powered recommendations to help salons attract and retain more clients.' },
-      { question: 'Does BookB offer staff management and business analytics?', answer: 'No. BookB is a basic booking app without staff management, reporting, analytics, marketing, or inventory features. Daisy provides comprehensive business management including staff scheduling, commissions, detailed analytics, marketing automation, and inventory tracking.' },
-      { question: 'How does BookB\'s mobile app compare to Daisy?', answer: 'BookB\'s app covers basic booking functionality for the Dubai market. Daisy\'s mobile app provides full salon management, AI receptionist, marketplace visibility across all GCC countries, real-time analytics, and comprehensive Arabic/English support.' },
-      { question: 'What support does BookB offer compared to Daisy?', answer: 'BookB is a small startup with limited support resources focused on Dubai. Daisy offers comprehensive support across all GCC countries with dedicated onboarding, Arabic-speaking representatives, and a team that understands beauty business operations at scale.' },
+      { question: 'How does BookB compare to Daisy?', answer: 'BookB is a basic booking app for Dubai. Daisy is a full platform with AI, complete business management, cashback and coverage across all 6 GCC countries.' },
+      { question: 'What does BookB cost and is the pricing transparent?', answer: 'You have to contact BookB for pricing, because no plans are listed publicly, which makes comparing value difficult. Daisy publishes its pricing, includes the features and adds nothing later.' },
+      { question: 'Can I switch from BookB to Daisy without losing my data?', answer: 'Yes. Daisy moves client records and booking history across. BookB holds relatively few data fields, so the migration is usually straightforward, and what you land in is a far more capable client management system.' },
+      { question: 'Does BookB work outside of Dubai?', answer: 'No. BookB serves the Dubai market and nowhere else, so expanding into other emirates or GCC countries means changing platform. Daisy was built for the GCC, with a native Arabic and English interface and local payment methods, live in Kuwait today and expanding across the Gulf.' },
+      { question: 'Does BookB have AI features like Daisy?', answer: 'No. There is no AI receptionist, no chatbot and no smart scheduling. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments by itself, in Arabic and English.' },
+      { question: 'How does BookB\'s marketplace compare to Daisy\'s?', answer: 'BookB\'s marketplace is small and stops at Dubai. Daisy\'s runs across every GCC country, with cashback rewards, customer discovery and AI-powered recommendations behind it.' },
+      { question: 'Does BookB offer staff management and business analytics?', answer: 'No. BookB books appointments. There is no staff management, no reporting, no analytics, no marketing and no inventory. Daisy covers staff scheduling, commissions, detailed analytics, marketing automation and inventory tracking.' },
+      { question: 'How does BookB\'s mobile app compare to Daisy?', answer: 'BookB\'s app handles basic booking for the Dubai market. Daisy\'s covers the whole salon, with the AI receptionist, marketplace visibility across every GCC country, live analytics and full Arabic and English support.' },
+      { question: 'What support does BookB offer compared to Daisy?', answer: 'BookB is a small startup with limited support resources, all pointed at Dubai. Daisy supports customers across every GCC country, with dedicated onboarding, Arabic-speaking representatives and a team that has seen beauty businesses operate at scale.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -725,7 +725,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'Belliata',
     website: 'https://www.belliata.com',
     tier: 3,
-    description: 'Beauty consumer marketplace with some SaaS features. Available in UAE and select international markets.',
+    description: 'A beauty consumer marketplace with some SaaS features attached, available in the UAE and a handful of international markets.',
     founded: '2017',
     headquarters: 'Dubai, UAE',
 
@@ -769,15 +769,15 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['Basic features', 'Translated not native Arabic', 'UAE-only', 'No AI', 'Marketplace commission', 'Limited management tools'],
 
     faq: [
-      { question: 'How does Belliata compare to Daisy?', answer: 'Belliata is a UAE marketplace with basic management features. Daisy provides AI receptionist, complete business management, native Arabic, cashback rewards, and coverage across all 6 GCC countries.' },
-      { question: 'Does Belliata charge commission on bookings like other marketplaces?', answer: 'Yes. Belliata operates a marketplace model with commission on bookings made through their platform. While they offer a free tier, marketplace bookings come with fees. Daisy charges a flat subscription with no commissions, your booking revenue stays yours.' },
-      { question: 'Can I migrate my client data from Belliata to Daisy?', answer: 'Yes. Daisy provides full data migration support for Belliata users, transferring client records, booking history, and service preferences. Our onboarding team ensures a smooth transition to Daisy\'s more comprehensive platform.' },
-      { question: 'Is Belliata\'s Arabic support good enough for my salon?', answer: 'Belliata offers translated Arabic, which can feel unnatural and may contain awkward phrasing. Daisy provides native Arabic with equal priority to English, written and reviewed by Arabic-speaking team members, with proper RTL layout and cultural relevance throughout the platform.' },
-      { question: 'Does Belliata have AI features?', answer: 'No. Belliata has no AI capabilities, no AI receptionist, no chatbot, no smart scheduling. Daisy\'s 24/7 AI receptionist handles bookings, answers customer questions, and processes payments in both Arabic and English automatically.' },
-      { question: 'Does Belliata work outside the UAE?', answer: 'Belliata is primarily focused on the UAE market with some international presence. Daisy is built for the GCC — native Arabic/English UI and local payment methods — live in Kuwait today and expanding across the Gulf.' },
-      { question: 'How does Belliata\'s marketplace compare to Daisy\'s?', answer: 'Belliata\'s marketplace is UAE-focused with basic salon listings. Daisy\'s marketplace covers all GCC countries and adds cashback rewards, AI-powered recommendations, customer reviews, and discovery features to actively drive clients to your salon.' },
-      { question: 'Does Belliata offer full salon management or just booking?', answer: 'Belliata\'s management features are limited, basic client management and staff scheduling on the Pro plan. It lacks advanced reporting, marketing automation, and inventory tracking. Daisy provides comprehensive salon management with AI, advanced analytics, marketing tools, and full business operations support.' },
-      { question: 'How does Belliata\'s app compare to Daisy for salon owners?', answer: 'Belliata\'s app (rated 4.5 on the App Store) focuses on marketplace bookings. Daisy\'s app provides full salon management, AI receptionist access, GCC-wide marketplace visibility, cashback tracking, real-time analytics, and native Arabic/English support.' },
+      { question: 'How does Belliata compare to Daisy?', answer: 'Belliata is a UAE marketplace with basic management features bolted on. Daisy brings an AI receptionist, complete business management, native Arabic, cashback rewards and coverage across all 6 GCC countries.' },
+      { question: 'Does Belliata charge commission on bookings like other marketplaces?', answer: 'Yes. Belliata runs a marketplace model and takes commission on bookings made through it. There is a free tier, but marketplace bookings still carry fees. Daisy charges a flat subscription and no commission, so the booking revenue stays with you.' },
+      { question: 'Can I migrate my client data from Belliata to Daisy?', answer: 'Yes. Daisy moves client records, booking history and service preferences across, with the onboarding team handling the transition.' },
+      { question: 'Is Belliata\'s Arabic support good enough for my salon?', answer: 'Belliata\'s Arabic is translated, and it reads that way, unnatural in places and awkwardly phrased in others. Daisy treats Arabic as equal to English, written and reviewed by Arabic speakers on the team, with right-to-left layout done properly and language that fits the region.' },
+      { question: 'Does Belliata have AI features?', answer: 'No. There is no AI receptionist, no chatbot and no smart scheduling. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments on its own, in Arabic and English.' },
+      { question: 'Does Belliata work outside the UAE?', answer: 'Belliata concentrates on the UAE, with some presence elsewhere. Daisy was built for the GCC, with a native Arabic and English interface and local payment methods, live in Kuwait today and expanding across the Gulf.' },
+      { question: 'How does Belliata\'s marketplace compare to Daisy\'s?', answer: 'Belliata\'s marketplace covers the UAE with basic salon listings. Daisy\'s runs across every GCC country and adds cashback rewards, AI-powered recommendations, customer reviews and discovery features that push clients towards your salon.' },
+      { question: 'Does Belliata offer full salon management or just booking?', answer: 'The management side is thin: basic client management and staff scheduling on the Pro plan, with no advanced reporting, no marketing automation and no inventory tracking. Daisy covers salon management properly, with AI, advanced analytics, marketing tools and the rest of the operation.' },
+      { question: 'How does Belliata\'s app compare to Daisy for salon owners?', answer: 'Belliata\'s app, rated 4.5 on the App Store, is built around marketplace bookings. Daisy\'s covers the whole salon: the AI receptionist, marketplace visibility across the GCC, cashback tracking, live analytics and native Arabic and English.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -791,7 +791,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'Sparkalz',
     website: 'https://www.sparkalz.com',
     tier: 3,
-    description: 'Dubai-focused salon POS and management system. Basic booking and point-of-sale for local salons.',
+    description: 'A Dubai salon POS and management system, offering basic booking and point-of-sale to local salons.',
     founded: '2019',
     headquarters: 'Dubai, UAE',
 
@@ -831,15 +831,15 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['Very limited features', 'Dubai-only', 'No AI', 'No marketplace', 'No marketing', 'No reviews', 'Opaque pricing'],
 
     faq: [
-      { question: 'How does Sparkalz compare to Daisy?', answer: 'Sparkalz is a Dubai-based salon POS system with basic features. Daisy provides a complete AI-powered platform with marketplace, cashback, marketing, and GCC-wide coverage.' },
-      { question: 'What does Sparkalz cost and why isn\'t pricing listed publicly?', answer: 'Sparkalz requires you to contact them for pricing and may involve hardware costs for POS terminals. The lack of published pricing makes comparison difficult. Daisy offers clear, transparent pricing with no hardware requirements and all features included.' },
-      { question: 'Can I move my salon data from Sparkalz to Daisy?', answer: 'Yes. Daisy provides data migration support for Sparkalz users, transferring client records, transaction history, and inventory data. Our onboarding team ensures a smooth transition from POS-focused to full platform management.' },
-      { question: 'Does Sparkalz work outside of Dubai?', answer: 'No. Sparkalz is focused exclusively on the Dubai market. Salons expanding to other emirates or GCC countries will need a different solution. Daisy is built for the GCC — native Arabic/English UI and local payment methods — live in Kuwait today and expanding across the Gulf.' },
-      { question: 'Does Sparkalz have AI features?', answer: 'No. Sparkalz has no AI capabilities, no AI receptionist, no chatbot, and no smart scheduling. Daisy\'s 24/7 AI receptionist handles bookings, answers customer queries, and processes payments in Arabic and English automatically.' },
-      { question: 'Is Sparkalz more than just a POS system for salons?', answer: 'Sparkalz primarily focuses on point-of-sale and basic booking. It lacks marketing tools, advanced reporting, a customer marketplace, or staff management features. Daisy provides a complete platform covering POS, booking, CRM, marketing, AI, analytics, and customer acquisition.' },
-      { question: 'How does Sparkalz\'s mobile app compare to Daisy?', answer: 'Sparkalz\'s mobile capabilities are centered around POS transactions and basic booking. Daisy\'s mobile app provides full salon management, AI receptionist, GCC-wide marketplace visibility, real-time analytics, marketing tools, and native Arabic/English support.' },
-      { question: 'Can Sparkalz help me get new customers?', answer: 'No. Sparkalz is an operations-focused POS tool with no customer acquisition features, no marketplace, no cashback, and no marketing automation. Daisy includes a consumer marketplace, cashback rewards, and AI-powered marketing to actively bring new clients to your salon.' },
-      { question: 'What customer support does Sparkalz offer?', answer: 'Sparkalz is a small Dubai-based company with limited support resources. Daisy offers comprehensive support across all GCC countries with dedicated onboarding, Arabic-speaking representatives, and a team with deep beauty industry expertise.' },
+      { question: 'How does Sparkalz compare to Daisy?', answer: 'Sparkalz is a Dubai salon POS system with a basic feature set. Daisy is a complete AI-powered platform with a marketplace, cashback, marketing and coverage across the GCC.' },
+      { question: 'What does Sparkalz cost and why isn\'t pricing listed publicly?', answer: 'Pricing comes only by contacting them, and POS terminals may add hardware costs on top. With nothing published, comparison is difficult. Daisy publishes its pricing, needs no hardware and includes the features.' },
+      { question: 'Can I move my salon data from Sparkalz to Daisy?', answer: 'Yes. Daisy moves client records, transaction history and inventory data across, and the onboarding team handles the step up from a POS-centred setup to a full platform.' },
+      { question: 'Does Sparkalz work outside of Dubai?', answer: 'No. Sparkalz serves Dubai and nowhere else, so a salon expanding into other emirates or GCC countries needs something different. Daisy was built for the GCC, with a native Arabic and English interface and local payment methods, live in Kuwait today and expanding across the Gulf.' },
+      { question: 'Does Sparkalz have AI features?', answer: 'No. There is no AI receptionist, no chatbot and no smart scheduling. Daisy\'s 24/7 AI receptionist takes bookings, answers queries and processes payments by itself, in Arabic and English.' },
+      { question: 'Is Sparkalz more than just a POS system for salons?', answer: 'Sparkalz is point-of-sale and basic booking. There are no marketing tools, no advanced reporting, no customer marketplace and no staff management. Daisy covers POS, booking, CRM, marketing, AI, analytics and customer acquisition.' },
+      { question: 'How does Sparkalz\'s mobile app compare to Daisy?', answer: 'On mobile, Sparkalz handles POS transactions and basic booking. Daisy\'s app covers the whole salon, with the AI receptionist, marketplace visibility across the GCC, live analytics, marketing tools and native Arabic and English.' },
+      { question: 'Can Sparkalz help me get new customers?', answer: 'No. Sparkalz is a POS tool built for operations, with no marketplace, no cashback and no marketing automation. Daisy includes a consumer marketplace, cashback rewards and AI-powered marketing to bring new clients to the salon.' },
+      { question: 'What customer support does Sparkalz offer?', answer: 'Sparkalz is a small Dubai company with limited support resources. Daisy supports customers across every GCC country, with dedicated onboarding, Arabic-speaking representatives and a team that knows the beauty industry well.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -853,7 +853,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'SQUIRE',
     website: 'https://www.getsquire.com',
     tier: 3,
-    description: 'Barbershop-specific management platform with POS and marketplace. Focused exclusively on the barbershop vertical.',
+    description: 'A management platform built for barbershops, with POS and a marketplace, and aimed at that vertical alone.',
     founded: '2015',
     headquarters: 'New York, NY, USA',
     funding: '$165M+',
@@ -896,16 +896,16 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['Barbershop-only', 'No AI', 'US-only', 'No Arabic/GCC', 'Per-barber pricing'],
 
     faq: [
-      { question: 'How does SQUIRE compare to Daisy?', answer: 'SQUIRE is built specifically for barbershops in the US market. Daisy serves the broader beauty and wellness industry with AI, marketplace, cashback, and Arabic/GCC support that SQUIRE doesn\'t offer.' },
-      { question: 'How much does SQUIRE actually cost with per-barber pricing?', answer: 'SQUIRE charges $30/mo base plus $15-25 per barber. A barbershop with 8 barbers could pay $150-230/mo, plus 2.6% + $0.10 per transaction. Daisy offers flat pricing with no per-staff charges, so your costs don\'t increase as your team grows.' },
-      { question: 'Can I switch from SQUIRE to Daisy and keep my client data?', answer: 'Yes. Daisy provides full data migration support from SQUIRE, transferring client profiles, appointment history, and booking preferences. Our onboarding team handles the transition so you don\'t lose any client relationships.' },
-      { question: 'Does SQUIRE work for salons and spas, not just barbershops?', answer: 'No. SQUIRE is built exclusively for barbershops and lacks features needed by salons, spas, and wellness businesses, like advanced service menus, treatment tracking, and beauty-specific workflows. Daisy serves the full beauty and wellness spectrum including salons, spas, barbershops, clinics, and more.' },
-      { question: 'Does SQUIRE support Arabic or work in the GCC?', answer: 'No. SQUIRE is a US-focused platform with no Arabic interface, no GCC compliance, and no Middle Eastern payment methods. Daisy provides native Arabic/English support with support built for the Gulf, live in Kuwait today.' },
-      { question: 'Does SQUIRE have AI features like Daisy?', answer: 'No. SQUIRE has no AI capabilities, no AI receptionist, no chatbot, and no smart scheduling. Daisy\'s 24/7 AI receptionist handles bookings, answers customer questions, and processes payments in both Arabic and English.' },
-      { question: 'How does SQUIRE\'s marketplace compare to Daisy\'s?', answer: 'SQUIRE has a barbershop-only marketplace focused on the US. Daisy\'s marketplace covers the full beauty and wellness industry across all GCC countries, with cashback rewards and AI-powered recommendations to drive customer discovery.' },
-      { question: 'Is SQUIRE good for a barbershop that also offers other services?', answer: 'SQUIRE is optimized for traditional barbershop services. If your business also offers salon services, facials, spa treatments, or other beauty services, SQUIRE\'s narrow focus becomes a limitation. Daisy supports all beauty and wellness service types in one platform.' },
-      { question: 'How does SQUIRE\'s mobile app compare to Daisy?', answer: 'SQUIRE\'s mobile app is well-designed for barbershop management. Daisy\'s app provides broader beauty business management, AI receptionist access, GCC-wide marketplace visibility, cashback tracking, and multilingual Arabic/English support.' },
-      { question: 'What customer support does SQUIRE offer compared to Daisy?', answer: 'SQUIRE provides US-based support focused on barbershop operations. Daisy offers multi-channel support with beauty industry expertise across all verticals, Arabic-speaking representatives, and dedicated GCC support teams.' },
+      { question: 'How does SQUIRE compare to Daisy?', answer: 'SQUIRE is built for US barbershops specifically. Daisy serves the wider beauty and wellness industry, with AI, a marketplace, cashback and Arabic and GCC support that SQUIRE does not have.' },
+      { question: 'How much does SQUIRE actually cost with per-barber pricing?', answer: 'SQUIRE charges a $30/mo base plus $15-25 for each barber, so a shop with 8 barbers lands at $150-230/mo, before 2.6% + $0.10 on every transaction. Daisy charges flat, with nothing per member of staff, so hiring does not raise the bill.' },
+      { question: 'Can I switch from SQUIRE to Daisy and keep my client data?', answer: 'Yes. Daisy moves client profiles, appointment history and booking preferences across from SQUIRE, with the onboarding team handling it so no client relationship is lost.' },
+      { question: 'Does SQUIRE work for salons and spas, not just barbershops?', answer: 'No. SQUIRE was built for barbershops alone and lacks what salons, spas and wellness businesses need: advanced service menus, treatment tracking and beauty-specific workflows. Daisy covers the whole spectrum, from salons and spas to barbershops and clinics.' },
+      { question: 'Does SQUIRE support Arabic or work in the GCC?', answer: 'No. SQUIRE is a US platform, with no Arabic interface, no GCC compliance and no Middle Eastern payment methods. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today.' },
+      { question: 'Does SQUIRE have AI features like Daisy?', answer: 'No. There is no AI receptionist, no chatbot and no smart scheduling. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments in Arabic and English.' },
+      { question: 'How does SQUIRE\'s marketplace compare to Daisy\'s?', answer: 'SQUIRE\'s marketplace covers barbershops in the US and nothing else. Daisy\'s spans the whole beauty and wellness industry across every GCC country, with cashback rewards and AI-powered recommendations behind the discovery.' },
+      { question: 'Is SQUIRE good for a barbershop that also offers other services?', answer: 'SQUIRE is tuned for traditional barbershop services. Add salon services, facials or spa treatments and that narrow focus starts to get in the way. Daisy handles every beauty and wellness service type in one platform.' },
+      { question: 'How does SQUIRE\'s mobile app compare to Daisy?', answer: 'SQUIRE\'s app is well designed for running a barbershop. Daisy\'s reaches across the wider beauty business, with the AI receptionist, marketplace visibility throughout the GCC, cashback tracking and Arabic and English support.' },
+      { question: 'What customer support does SQUIRE offer compared to Daisy?', answer: 'SQUIRE supports US barbershop operations. Daisy provides multi-channel support with expertise across every beauty vertical, Arabic-speaking representatives and dedicated GCC teams.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -919,7 +919,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'Salonist',
     website: 'https://www.salonist.io',
     tier: 3,
-    description: 'Budget-friendly salon management from India. Basic features at low cost. Some GCC/international presence.',
+    description: 'Budget salon management out of India, offering basic features cheaply, with some GCC and international presence.',
     founded: '2017',
     headquarters: 'New Delhi, India',
 
@@ -960,15 +960,15 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['Basic features only', 'No AI', 'No Arabic', 'No marketplace', 'Limited GCC support', 'Small company'],
 
     faq: [
-      { question: 'How does Salonist compare to Daisy?', answer: 'Salonist is a budget salon tool at $25/mo with basic features. Daisy provides AI receptionist, marketplace, cashback, native Arabic, and comprehensive management, justifying the investment in business growth.' },
-      { question: 'Is Salonist really as affordable as it looks at $25 a month?', answer: 'Salonist\'s $25/mo price is genuinely low, but you get basic features only. There are no advanced analytics, no AI, no marketplace, and limited marketing. Many businesses end up needing additional tools, which erodes the cost advantage. Daisy includes everything in one platform.' },
-      { question: 'Can I migrate my data from Salonist to Daisy?', answer: 'Yes. Daisy provides data migration support for Salonist users, transferring client records, appointment history, and inventory data. Our onboarding team ensures a smooth transition with no data loss.' },
-      { question: 'Does Salonist support Arabic for my salon?', answer: 'No. Despite having some GCC presence (UAE), Salonist does not offer an Arabic interface. Daisy provides native Arabic with equal priority to English, full RTL layout support, and culturally relevant content throughout the platform.' },
-      { question: 'Does Salonist have any AI features?', answer: 'No. Salonist has no AI capabilities, no AI receptionist, no chatbot, no smart scheduling, and no AI-powered marketing. Daisy\'s 24/7 AI receptionist handles bookings, answers customer questions, and processes payments in both Arabic and English.' },
-      { question: 'Is Salonist reliable enough for a growing beauty business?', answer: 'Salonist is a smaller company from India with a limited review base. As your business grows, you may outgrow its basic feature set and limited support. Daisy is built to scale with your business, offering advanced AI, marketplace, and comprehensive management tools.' },
-      { question: 'Does Salonist have a marketplace or customer acquisition tools?', answer: 'No. Salonist has no marketplace, no cashback program, and no customer discovery features. It\'s purely an operations tool. Daisy combines operations with customer acquisition through its marketplace, cashback rewards, and AI-powered marketing.' },
-      { question: 'How does Salonist\'s mobile app compare to Daisy?', answer: 'Salonist offers a basic mobile app for appointment and client management. Daisy\'s mobile app provides full salon management, AI receptionist access, marketplace visibility, cashback tracking, real-time analytics, and native Arabic/English support.' },
-      { question: 'What customer support does Salonist offer?', answer: 'Salonist provides basic email support, primarily during Indian business hours. There\'s no dedicated beauty industry expertise or local GCC support. Daisy offers multi-channel support with Arabic-speaking representatives, dedicated onboarding, and local GCC support teams.' },
+      { question: 'How does Salonist compare to Daisy?', answer: 'Salonist is a budget tool at $25/mo with basic features. Daisy adds an AI receptionist, a marketplace, cashback, native Arabic and management deep enough to grow a business on.' },
+      { question: 'Is Salonist really as affordable as it looks at $25 a month?', answer: 'The $25/mo price is genuinely low, and what it buys is basic. No advanced analytics, no AI, no marketplace and thin marketing. Most businesses end up buying other tools, which is where the saving goes. Daisy holds all of it in one platform.' },
+      { question: 'Can I migrate my data from Salonist to Daisy?', answer: 'Yes. Daisy moves client records, appointment history and inventory data across, with the onboarding team making sure nothing is lost.' },
+      { question: 'Does Salonist support Arabic for my salon?', answer: 'No. Salonist has some GCC presence in the UAE and still no Arabic interface. Daisy treats Arabic as equal to English, supports right-to-left layout properly, and reads as though it was written for the region.' },
+      { question: 'Does Salonist have any AI features?', answer: 'No. There is no AI receptionist, no chatbot, no smart scheduling and no AI marketing. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments in Arabic and English.' },
+      { question: 'Is Salonist reliable enough for a growing beauty business?', answer: 'Salonist is a smaller Indian company with few reviews to judge it by. A growing business tends to run past both the feature set and the support. Daisy is built to scale, with AI, a marketplace and management tools that keep up.' },
+      { question: 'Does Salonist have a marketplace or customer acquisition tools?', answer: 'No. There is no marketplace, no cashback and nowhere for a client to discover you. It runs your operations, nothing more. Daisy pairs the operations with acquisition, through the marketplace, cashback rewards and AI-powered marketing.' },
+      { question: 'How does Salonist\'s mobile app compare to Daisy?', answer: 'Salonist\'s app handles appointments and client management. Daisy\'s covers the whole salon, with the AI receptionist, marketplace visibility, cashback tracking, live analytics and native Arabic and English.' },
+      { question: 'What customer support does Salonist offer?', answer: 'Support is basic email, mostly on Indian business hours, with no beauty industry expertise and nothing local to the GCC. Daisy provides multi-channel support with Arabic-speaking representatives, dedicated onboarding and local GCC teams.' },
     ],
 
     lastResearched: '2026-03-13',
@@ -982,7 +982,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'Pabau',
     website: 'https://www.pabau.com',
     tier: 3,
-    description: 'Med spa and clinical-focused practice management from the UK. Strong client records and forms. Growing AI features for clinical workflows.',
+    description: 'UK practice management built for med spas and clinical work, strong on client records and forms, with AI features for clinical workflows starting to appear.',
     founded: '2012',
     headquarters: 'London, UK',
 
@@ -1014,7 +1014,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     aiCapabilities: {
       hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'Basic automation for clinical workflows. No true AI receptionist, chatbot, or smart scheduling.',
+      aiDescription: 'Basic automation across clinical workflows. No real AI receptionist, chatbot or smart scheduling.',
     },
 
     daisyAdvantages: ['Full AI ecosystem vs basic automation', 'Arabic/GCC support', 'Marketplace + cashback', 'Flat pricing vs per-user', 'Broader beauty/wellness vs clinical-only'],
@@ -1023,15 +1023,15 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['UK-focused', 'Per-user pricing', 'No AI', 'No marketplace', 'No Arabic/GCC', 'Clinical-focused not beauty-broad'],
 
     faq: [
-      { question: 'How does Pabau compare to Daisy?', answer: 'Pabau excels at clinical/med spa records and consent forms in the UK market. Daisy offers AI receptionist, marketplace, cashback, Arabic support, and GCC compliance across the broader beauty and wellness industry.' },
-      { question: 'How expensive does Pabau get with per-user pricing?', answer: 'Pabau charges approximately $49/mo per user. A med spa with 10 practitioners would pay around $490/mo, plus payment processing fees. Daisy offers flat pricing that doesn\'t scale with your team size, making costs predictable as your business grows.' },
-      { question: 'Can I migrate my clinic data from Pabau to Daisy?', answer: 'Yes. Daisy provides comprehensive data migration support from Pabau, including client records, treatment history, consent forms, and appointment data. Our onboarding team ensures a smooth transition for clinical and beauty businesses.' },
-      { question: 'Does Pabau support Arabic or work in the Middle East?', answer: 'No. Pabau is UK-focused with no Arabic interface, no GCC compliance, and no Middle Eastern payment methods. Daisy provides native Arabic/English support with support built for the Gulf, live in Kuwait today, including support for local clinical and beauty regulations.' },
-      { question: 'Does Pabau have AI features like an AI receptionist?', answer: 'Pabau has basic workflow automation for clinical tasks but no true AI, no AI receptionist, no chatbot, and no smart scheduling. Daisy\'s 24/7 AI receptionist handles bookings, answers patient and client questions, and processes payments automatically.' },
-      { question: 'Is Pabau only for med spas or can salons use it too?', answer: 'Pabau is designed primarily for clinical and med spa environments, its strength is consent forms, treatment records, and clinical workflows. Regular salons and spas may find it overly clinical and missing beauty-specific features. Daisy serves the full spectrum from salons to spas to clinics.' },
-      { question: 'Does Pabau have a marketplace to help attract new clients?', answer: 'No. Pabau has no consumer marketplace, no customer discovery features, and no cashback program. Daisy includes a consumer marketplace, cashback rewards, and AI-powered marketing to actively drive new patients and clients to your business.' },
-      { question: 'How does Pabau\'s mobile app compare to Daisy?', answer: 'Pabau\'s mobile app is focused on clinical record management and consent forms. Daisy\'s mobile app provides full business management, AI receptionist access, marketplace visibility, cashback tracking, real-time analytics, and multilingual Arabic/English support.' },
-      { question: 'What customer support does Pabau offer compared to Daisy?', answer: 'Pabau provides UK-based support with clinical workflow expertise during UK business hours. Daisy offers multi-channel support with both beauty and clinical expertise, Arabic-speaking representatives, and dedicated GCC support teams for Middle Eastern businesses.' },
+      { question: 'How does Pabau compare to Daisy?', answer: 'In the UK market, Pabau is very good at clinical and med spa records and consent forms. Daisy brings an AI receptionist, a marketplace, cashback, Arabic support and GCC compliance, across the wider beauty and wellness industry.' },
+      { question: 'How expensive does Pabau get with per-user pricing?', answer: 'Pabau charges roughly $49/mo per user, so a med spa with 10 practitioners pays around $490/mo, before payment processing fees. Daisy charges flat regardless of team size, which keeps the bill predictable as you grow.' },
+      { question: 'Can I migrate my clinic data from Pabau to Daisy?', answer: 'Yes. Daisy moves client records, treatment history, consent forms and appointment data across from Pabau, with the onboarding team handling it for clinical and beauty businesses alike.' },
+      { question: 'Does Pabau support Arabic or work in the Middle East?', answer: 'No. Pabau serves the UK, with no Arabic interface, no GCC compliance and no Middle Eastern payment methods. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today, including local clinical and beauty regulations.' },
+      { question: 'Does Pabau have AI features like an AI receptionist?', answer: 'Pabau automates clinical workflows, and none of it is really AI: no receptionist, no chatbot, no smart scheduling. Daisy\'s 24/7 AI receptionist takes bookings, answers patient and client questions, and processes payments on its own.' },
+      { question: 'Is Pabau only for med spas or can salons use it too?', answer: 'Pabau was designed for clinical and med spa environments, and consent forms, treatment records and clinical workflows are where it is strongest. A regular salon or spa will find it clinical in tone and short on beauty-specific features. Daisy covers the full spectrum, salons through spas to clinics.' },
+      { question: 'Does Pabau have a marketplace to help attract new clients?', answer: 'No. There is no consumer marketplace, nothing for discovery and no cashback. Daisy includes a consumer marketplace, cashback rewards and AI-powered marketing to bring new patients and clients in.' },
+      { question: 'How does Pabau\'s mobile app compare to Daisy?', answer: 'Pabau\'s app centres on clinical records and consent forms. Daisy\'s covers the whole business, with the AI receptionist, marketplace visibility, cashback tracking, live analytics and Arabic and English throughout.' },
+      { question: 'What customer support does Pabau offer compared to Daisy?', answer: 'Pabau supports you from the UK, on UK business hours, from people who understand clinical workflows. Daisy provides multi-channel support covering both beauty and clinical work, with Arabic-speaking representatives and dedicated GCC teams.' },
     ],
 
     lastResearched: '2026-03-13',

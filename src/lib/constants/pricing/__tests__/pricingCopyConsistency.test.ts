@@ -82,6 +82,11 @@ describe('pricing copy consistency', () => {
       /starting at \$50\/month/i,
       /Basic \(\$50\/mo\)/i,
       /Basic \$50\/mo/i,
+      // Phrasings a humanizer rewrite reintroduced, e.g. "flat from $50/month",
+      // "in every plan from $50/month". Deliberately requires "Daisy" or "plan"
+      // nearby so competitor ranges are not caught.
+      /Daisy[^.]{0,80}from \$50\/month/i,
+      /plan[^.]{0,40}from \$50\/month/i,
       /تبدأ من 50 دولار/,
       /بدءاً من 50 دولار/,
     ];
@@ -114,5 +119,50 @@ describe('pricing copy consistency', () => {
       // of "$50" would wrongly rewrite them, so pin that they survive.
       expect(solutionData).toMatch(/ranges? from \$50\/mo/i);
     });
+  });
+
+  describe('capability claims match what ships', () => {
+    // The product supports a logo and seven theme colours on a Daisy-hosted
+    // booking page. There is no custom-domain and no custom-font support:
+    // VendorTheme has seven colour columns and nothing else.
+    const UNSHIPPED_CAPABILITY_CLAIMS = [
+      /your domain/i,
+      /custom domains? (?:are |is )?(?:supported|and subdomains)/i,
+      /book\.yoursalon\.com/i,
+      /(?:full|complete) white-?label/i,
+      /White-?label everything/i,
+    ];
+
+    it.each(UNSHIPPED_CAPABILITY_CLAIMS.map((re) => [re.source, re] as const))(
+      'has no content file claiming %s',
+      (_label, pattern) => {
+        const offenders = CONTENT_FILES.filter((f) =>
+          pattern.test(fs.readFileSync(f, 'utf-8')),
+        ).map((f) => path.relative(ROOT, f));
+
+        expect(offenders).toEqual([]);
+      },
+    );
+  });
+
+  describe('language support is stated as two', () => {
+    // Marketing site locales are ['en', 'ar']; the backend seeds three
+    // (en/ar/ru) and the app exposes Arabic and English. Never "10+".
+    const INFLATED_LANGUAGE_CLAIMS = [
+      /10\+[^.]{0,30}languages/i,
+      /languages[^.]{0,20}10\+/i,
+      /\+10[^.]{0,20}لغ/,
+    ];
+
+    it.each(INFLATED_LANGUAGE_CLAIMS.map((re) => [re.source, re] as const))(
+      'has no content file claiming %s',
+      (_label, pattern) => {
+        const offenders = CONTENT_FILES.filter((f) =>
+          pattern.test(fs.readFileSync(f, 'utf-8')),
+        ).map((f) => path.relative(ROOT, f));
+
+        expect(offenders).toEqual([]);
+      },
+    );
   });
 });
