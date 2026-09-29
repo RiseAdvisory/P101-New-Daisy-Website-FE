@@ -35,17 +35,17 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'AI Features', daisy: 'Voice receptionist + chatbot', typical: 'None or basic' },
       ],
       howDaisyImplements:
-        'Daisy combines all salon management functions into one AI-powered platform with a 24/7 voice receptionist, cashback customer acquisition, and branded booking pages. Starting at $50/month with flat pricing and no per-staff fees, Daisy is designed for growth -- not just operations.',
+        'Daisy combines all salon management functions into one AI-powered platform with a 24/7 voice receptionist, cashback customer acquisition, and branded booking pages. Starting at $1/month (+$50 once you pass 5 appointments in a month) with no per-staff fees, Daisy is designed for growth -- not just operations.',
       faqs: [
         {
           question: 'What is the best salon management software in 2026?',
           answer:
-            'The best salon management software in 2026 combines AI capabilities, customer acquisition tools, and comprehensive business management. Daisy leads with its AI receptionist, cashback loyalty system, and branded booking pages -- all for flat monthly pricing starting at $50/month.',
+            'The best salon management software in 2026 combines AI capabilities, customer acquisition tools, and comprehensive business management. Daisy leads with its AI receptionist, cashback loyalty system, and branded booking pages -- all starting at $1/month (+$50 once you pass 5 appointments in a month).',
         },
         {
           question: 'How much does salon management software typically cost?',
           answer:
-            'Salon management software ranges from free (with limitations and commissions) to $300+/month for premium solutions. Daisy offers three plans: Basic ($50/mo), Growth ($150/mo), and Business ($250/mo) with transparent flat pricing and no per-staff fees.',
+            'Salon management software ranges from free (with limitations and commissions) to $300+/month for premium solutions. Daisy offers three plans: Basic (from $1/mo, +$50 once you pass 5 appointments in a month), Growth ($150/mo), and Business ($250/mo), with transparent pricing and no per-staff fees.',
         },
         {
           question: 'Do I need salon management software for a small salon?',
@@ -111,7 +111,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'How much does an AI receptionist for a salon cost?',
           answer:
-            'Standalone AI receptionist services for salons typically cost $200-500/month. Daisy includes an AI receptionist in all plans starting at $50/month, bundled with full salon management software.',
+            'Standalone AI receptionist services for salons typically cost $200-500/month. Daisy includes an AI receptionist in all plans starting at $1/month (+$50 once you pass 5 appointments in a month), bundled with full salon management software.',
         },
         {
           question: 'Can an AI receptionist really replace a human receptionist?',
@@ -207,7 +207,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'Which salon software offers cashback for customers?',
           answer:
-            'Daisy is one of the few salon platforms that includes a built-in cashback system. RepeatMD offers a similar concept for med spas at $700/month, while Daisy includes it in all plans starting at $50/month.',
+            'Daisy is one of the few salon platforms that includes a built-in cashback system. RepeatMD offers a similar concept for med spas at $700/month, while Daisy includes it in all plans starting at $1/month (+$50 once you pass 5 appointments in a month).',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'ai-receptionist-for-salons'],
@@ -251,7 +251,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'How much does white-label salon software cost?',
           answer:
-            'Standalone branded booking solutions can cost $200-500/month on top of regular software fees. Daisy includes a branded booking page in all plans starting at $50/month.',
+            'Standalone branded booking solutions can cost $200-500/month on top of regular software fees. Daisy includes a branded booking page in all plans starting at $1/month (+$50 once you pass 5 appointments in a month).',
         },
         {
           question: 'What will my booking link look like with salon booking software?',
@@ -382,7 +382,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'How much does a salon management system cost?',
           answer:
-            'Costs range from $50-500/month for the software platform, plus $0-2,000 for hardware if required. Daisy eliminates hardware costs entirely — the complete system runs on your existing devices starting at $50/month.',
+            'Costs range from $50-500/month for the software platform, plus $0-2,000 for hardware if required. Daisy eliminates hardware costs entirely — the complete system runs on your existing devices starting at $1/month (+$50 once you pass 5 appointments in a month).',
         },
         {
           question: 'Can a small salon benefit from a management system?',
@@ -402,7 +402,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'What is the best salon management system in 2026?',
           answer:
-            'The best system in 2026 combines comprehensive software with AI capabilities and requires no additional hardware. Daisy leads with its all-in-one approach: AI receptionist, cashback customer acquisition, branded booking pages, and zero-hardware cloud platform starting at $50/month.',
+            'The best system in 2026 combines comprehensive software with AI capabilities and requires no additional hardware. Daisy leads with its all-in-one approach: AI receptionist, cashback customer acquisition, branded booking pages, and zero-hardware cloud platform starting at $1/month (+$50 once you pass 5 appointments in a month).',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'salon-employee-management-software'],
@@ -562,17 +562,17 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'ميزات الذكاء الاصطناعي', daisy: 'موظف استقبال ذكي + دردشة آلية', typical: 'لا يوجد أو أساسي' },
       ],
       howDaisyImplements:
-        'تجمع ديزي جميع وظائف إدارة الصالون في منصة واحدة مدعومة بالذكاء الاصطناعي مع موظف استقبال ذكي يعمل على مدار الساعة، ونظام كاشباك لاكتساب العملاء، وعلامة تجارية مخصّصة. بأسعار تبدأ من 50 دولارًا شهريًا وبتسعير ثابت ومن دون رسوم لكل موظف، صُممت ديزي للنمو، لا لإدارة العمليات فقط.',
+        'تجمع ديزي جميع وظائف إدارة الصالون في منصة واحدة مدعومة بالذكاء الاصطناعي مع موظف استقبال ذكي يعمل على مدار الساعة، ونظام كاشباك لاكتساب العملاء، وعلامة تجارية مخصّصة. بأسعار تبدأ من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر) ومن دون رسوم لكل موظف، صُممت ديزي للنمو، لا لإدارة العمليات فقط.',
       faqs: [
         {
           question: 'ما هو أفضل برنامج لإدارة الصالونات في 2026؟',
           answer:
-            'أفضل برنامج لإدارة الصالونات في 2026 يجمع بين قدرات الذكاء الاصطناعي وأدوات اكتساب العملاء وإدارة الأعمال الشاملة. تتصدر ديزي بموظف الاستقبال الذكي ونظام ولاء الكاشباك والعلامة التجارية المخصّصة، وكل ذلك بتسعير شهري ثابت يبدأ من 50 دولارًا شهريًا.',
+            'أفضل برنامج لإدارة الصالونات في 2026 يجمع بين قدرات الذكاء الاصطناعي وأدوات اكتساب العملاء وإدارة الأعمال الشاملة. تتصدر ديزي بموظف الاستقبال الذكي ونظام ولاء الكاشباك والعلامة التجارية المخصّصة، وكل ذلك بأسعار تبدأ من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
         {
           question: 'كم تكلفة برنامج إدارة الصالونات عادةً؟',
           answer:
-            'تتراوح تكلفة برامج إدارة الصالونات من مجاني (مع قيود وعمولات) إلى أكثر من 300 دولار شهرياً للحلول المتميزة. تقدم ديزي ثلاث خطط: الأساسية (50 دولاراً/شهرياً)، والنمو (150 دولاراً/شهرياً)، والأعمال (250 دولاراً/شهرياً) بتسعير ثابت شفاف وبدون رسوم لكل موظف.',
+            'تتراوح تكلفة برامج إدارة الصالونات من مجاني (مع قيود وعمولات) إلى أكثر من 300 دولار شهرياً للحلول المتميزة. تقدم ديزي ثلاث خطط: الأساسية (من دولار واحد شهرياً، +50 دولاراً بعد تجاوز 5 مواعيد في الشهر)، والنمو (150 دولاراً/شهرياً)، والأعمال (250 دولاراً/شهرياً) بتسعير ثابت شفاف وبدون رسوم لكل موظف.',
         },
         {
           question: 'هل أحتاج برنامج إدارة صالونات لصالون صغير؟',
@@ -638,7 +638,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'كم تكلفة موظف الاستقبال الذكي للصالون؟',
           answer:
-            'تتكلف خدمات موظف الاستقبال الذكي المستقلة للصالونات عادةً 200-500 دولار شهرياً. تتضمن ديزي موظف استقبال ذكي في جميع الخطط بدءاً من 50 دولاراً شهرياً، مُدمجاً مع برنامج إدارة الصالون الكامل.',
+            'تتكلف خدمات موظف الاستقبال الذكي المستقلة للصالونات عادةً 200-500 دولار شهرياً. تتضمن ديزي موظف استقبال ذكي في جميع الخطط بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر)، مُدمجاً مع برنامج إدارة الصالون الكامل.',
         },
         {
           question: 'هل يمكن لموظف الاستقبال الذكي أن يحل محل موظف الاستقبال البشري فعلاً؟',
@@ -734,7 +734,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'أي برنامج صالونات يقدم كاشباك للعملاء؟',
           answer:
-            'ديزي هي واحدة من المنصات القليلة للصالونات التي تتضمن نظام كاشباك مدمج. تقدم RepeatMD مفهوماً مشابهاً لمراكز التجميل الطبية بسعر 700 دولار شهرياً، بينما تتضمنه ديزي في جميع الخطط بدءاً من 50 دولاراً شهرياً.',
+            'ديزي هي واحدة من المنصات القليلة للصالونات التي تتضمن نظام كاشباك مدمج. تقدم RepeatMD مفهوماً مشابهاً لمراكز التجميل الطبية بسعر 700 دولار شهرياً، بينما تتضمنه ديزي في جميع الخطط بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'ai-receptionist-for-salons'],
@@ -778,7 +778,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'كم تكلفة برنامج صالون بعلامة تجارية بيضاء؟',
           answer:
-            'يمكن أن تتكلف حلول صفحات الحجز المستقلة بعلامتك 200-500 دولار شهرياً بالإضافة إلى رسوم البرنامج العادية. تتضمن ديزي صفحة حجز بعلامتك التجارية في جميع الخطط بدءاً من 50 دولاراً شهرياً.',
+            'يمكن أن تتكلف حلول صفحات الحجز المستقلة بعلامتك 200-500 دولار شهرياً بالإضافة إلى رسوم البرنامج العادية. تتضمن ديزي صفحة حجز بعلامتك التجارية في جميع الخطط بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
         {
           question: 'هل يمكنني استخدام نطاقي الخاص مع برنامج حجز الصالون؟',
@@ -909,7 +909,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'كم تكلفة نظام إدارة الصالونات؟',
           answer:
-            'تتراوح التكاليف من 50 إلى 500 دولار شهرياً للمنصة البرمجية، بالإضافة إلى 0-2,000 دولار للأجهزة إذا لزم الأمر. تلغي ديزي تكاليف الأجهزة تماماً — يعمل النظام الكامل على أجهزتك الحالية بدءاً من 50 دولاراً شهرياً.',
+            'تتراوح التكاليف من 50 إلى 500 دولار شهرياً للمنصة البرمجية، بالإضافة إلى 0-2,000 دولار للأجهزة إذا لزم الأمر. تلغي ديزي تكاليف الأجهزة تماماً — يعمل النظام الكامل على أجهزتك الحالية بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
         {
           question: 'هل يمكن لصالون صغير الاستفادة من نظام إدارة؟',
@@ -929,7 +929,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'ما هو أفضل نظام إدارة صالونات في 2026؟',
           answer:
-            'أفضل نظام في 2026 يجمع بين برمجيات شاملة وقدرات ذكاء اصطناعي ولا يتطلب أجهزة إضافية. تتصدر ديزي بنهجها المتكامل: موظف استقبال ذكي واكتساب عملاء بالكاشباك وعلامة تجارية بيضاء ومنصة سحابية بدون أجهزة بدءاً من 50 دولاراً شهرياً.',
+            'أفضل نظام في 2026 يجمع بين برمجيات شاملة وقدرات ذكاء اصطناعي ولا يتطلب أجهزة إضافية. تتصدر ديزي بنهجها المتكامل: موظف استقبال ذكي واكتساب عملاء بالكاشباك وعلامة تجارية بيضاء ومنصة سحابية بدون أجهزة بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'salon-employee-management-software'],

@@ -52,7 +52,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     },
     pricingHook: {
       headline: 'Free to Start. Grow at Your Own Pace.',
-      body: "14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.",
+      body: "14-day free trial with full access to every feature. No credit card required. After that, plans start at $1/month, with +$50/month once you pass 5 appointments in a month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.",
       ctaText: 'Download the app',
       ctaLink: '/get-the-app',
       pricingLinkText: 'See full pricing details →',
@@ -74,7 +74,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     },
     titleFraque: 'Frequently Asked Questions',
     fallbackFaqs: [
-      { question: 'How much does it cost?', answer: 'Start with a 14-day free trial: full access, no credit card required. After that, flexible plans start from $50/month. You only pay commission on new customers who find you through the Daisy marketplace. Your existing clients, zero commission.' },
+      { question: 'How much does it cost?', answer: 'Start with a 14-day free trial: full access, no credit card required. After that, plans start at $1/month, with +$50/month once you pass 5 appointments in a month. You only pay commission on new customers who find you through the Daisy marketplace. Your existing clients, zero commission.' },
       { question: 'How does the AI receptionist work?', answer: 'The AI handles your WhatsApp and Instagram messages 24/7: answering customer questions, checking availability, booking appointments, and processing payments. It learns your services, pricing, and preferences over time to give your customers a personalized experience.' },
       { question: 'Can I migrate from my current booking system?', answer: 'Yes. Our onboarding team helps you migrate your client data, booking history, and preferences at no extra cost.' },
       { question: 'What messaging channels does the AI handle?', answer: 'Currently WhatsApp and Instagram DMs, with more channels coming soon. The AI responds instantly in Arabic and English, matching your customers\' preferred language.' },
@@ -339,7 +339,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     },
     pricingHook: {
       headline: 'ابدأ مجانًا. انمُ بالسرعة التي تناسبك.',
-      body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل إلى جميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولارًا شهريًا. موظف الاستقبال الذكي لا يتولى الرسائل فحسب، بل يتعلم تفضيلات عملائك بمرور الوقت، ويخصص كل تفاعل، ويحوّل الزوار الجدد إلى عملاء أوفياء. تُفرض العمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، أما عملاؤك الحاليون فلا تُفرض عليهم أي عمولة.',
+      body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل إلى جميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، تبدأ الباقات من دولار واحد شهرياً، مع +50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر. موظف الاستقبال الذكي لا يتولى الرسائل فحسب، بل يتعلم تفضيلات عملائك بمرور الوقت، ويخصص كل تفاعل، ويحوّل الزوار الجدد إلى عملاء أوفياء. تُفرض العمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، أما عملاؤك الحاليون فلا تُفرض عليهم أي عمولة.',
       ctaText: 'حمّل التطبيق',
       ctaLink: '/get-the-app',
       pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة ←',
@@ -361,7 +361,7 @@ export const businessPageData: I18nContent<LandingPageContent> = {
     },
     titleFraque: 'أسئلة شائعة',
     fallbackFaqs: [
-      { question: 'كم تبلغ التكلفة؟', answer: 'ابدأ بتجربة مجانية لمدة 14 يومًا: وصول كامل، بدون بطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولارًا شهريًا. تُفرض العمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي، أما عملاؤك الحاليون فلا تُفرض عليهم أي عمولة.' },
+      { question: 'كم تبلغ التكلفة؟', answer: 'ابدأ بتجربة مجانية لمدة 14 يومًا: وصول كامل، بدون بطاقة ائتمان. بعد ذلك، تبدأ الباقات من دولار واحد شهرياً، مع +50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر. تُفرض العمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي، أما عملاؤك الحاليون فلا تُفرض عليهم أي عمولة.' },
       { question: 'كيف يعمل موظف الاستقبال الذكي؟', answer: 'يتولى الذكاء الاصطناعي رسائل واتساب وإنستغرام الخاصة بك على مدار الساعة: يجيب على أسئلة العملاء، يتحقق من التوافر، يحجز المواعيد، ويعالج المدفوعات. يتعلم خدماتك وأسعارك وتفضيلاتك بمرور الوقت ليمنح عملاءك تجربة شخصية.' },
       { question: 'هل يمكنني الانتقال من نظام الحجز الحالي؟', answer: 'نعم. يساعدك فريق الإعداد لدينا في نقل بيانات عملائك وسجل الحجوزات وتفضيلاتك دون أي تكلفة إضافية.' },
       { question: 'ما قنوات المراسلة التي يتولاها الذكاء الاصطناعي؟', answer: 'حاليًا واتساب ورسائل إنستغرام المباشرة، مع المزيد من القنوات قريبًا. ويرد الذكاء الاصطناعي فورًا بالعربية والإنجليزية وباللغة التي يفضّلها عملاؤك.' },
