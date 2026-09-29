@@ -447,7 +447,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     heroTitle: 'Daisy vs DINGG',
     heroSubtitle: 'Both offer AI and Arabic support, but Daisy is built for the GCC, live in Kuwait today, with a complete growth ecosystem.',
     tldr: 'DINGG offers a competitive AI suite at $49-79/mo and is expanding into the UAE. Daisy covers more of the GCC, 6 countries against 1, and adds a consumer marketplace, cashback and white-labeling that DINGG does not have.',
-    verdict: 'DINGG is a credible AI competitor and priced affordably. It is early in its GCC expansion, though, covering the UAE only, with no marketplace, no cashback and limited funding. Daisy offers more complete AI, a wider GCC presence and stronger growth tools.',
+    verdict: 'DINGG is a credible AI competitor and priced affordably. Its GCC coverage spans five countries and stops short of Bahrain, with no marketplace, no cashback and limited funding. Daisy offers more complete AI, a wider GCC presence and stronger growth tools.',
     featureCommentary: {
       onlineBooking: 'Both offer good booking. DINGG keeps it basic, while Daisy adds AI self-service across the whole flow.',
       posAndPayments: 'Both offer POS. Daisy carries more payment options across all GCC countries.',
@@ -547,11 +547,11 @@ export const daisyVsPages: DaisyVsPageData[] = [
     slug: 'daisy-vs-mangomint',
     competitorSlug: 'mangomint',
     metaTitle: 'Daisy vs Mangomint: AI Growth vs Clean Operations',
-    metaDescription: 'Compare Daisy and Mangomint. AI-powered growth platform versus premium operations-focused salon software ($165-375/mo).',
+    metaDescription: 'Compare Daisy and Mangomint. AI-powered growth platform versus premium operations-focused salon software ($120 per location plus $10 per user).',
     keywords: ['daisy vs mangomint', 'mangomint alternative', 'premium salon software'],
     heroTitle: 'Daisy vs Mangomint',
     heroSubtitle: 'Mangomint runs a beautiful salon. Daisy grows a successful business.',
-    tldr: 'Mangomint holds the highest Capterra rating at 4.9/5, and the design is beautiful, for $165-375/mo. It is US-only though, with no AI, no marketplace and no customer acquisition tools. Daisy offers AI and growth tools at a more accessible price.',
+    tldr: 'Mangomint holds the highest Capterra rating at 4.9/5, and the design is beautiful, at $120 per location plus $10 per user. It is US-only though, with no marketplace and no customer acquisition tools. Daisy offers AI and growth tools at a more accessible price.',
     verdict: 'For a US salon that wants clean operations above all, Mangomint is exceptional. For a business that wants AI-driven growth as well as operations, Daisy is the better fit.',
     featureCommentary: {
       onlineBooking: 'Both offer excellent booking, and Mangomint earns its praise for clean, intuitive design.',
@@ -810,9 +810,9 @@ export const alternativePages: AlternativePageData[] = [
     metaDescription: 'Want more than clean operations? Daisy adds AI, marketplace, cashback, and Arabic support to premium salon management.',
     keywords: ['mangomint alternative', 'mangomint replacement'],
     heroTitle: 'Looking for a Mangomint Alternative?',
-    heroSubtitle: 'A beautiful operations tool with no AI, no marketplace and nothing that brings customers in.',
+    heroSubtitle: 'A beautiful operations tool with no marketplace and nothing that brings customers in.',
     painPoints: [
-      'Premium pricing of $165-375/mo, and no AI for it',
+      'Cost climbs with every location and user, at $120 per location plus $10 per user',
       'No consumer marketplace for customer discovery',
       'US-only, with no Arabic and no GCC support',
       'Operations only, with nothing for growth or acquisition',
@@ -1127,7 +1127,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best mangomint alternatives', 'mangomint alternatives'],
     heroTitle: '5 Best Mangomint Alternatives in 2026',
     heroSubtitle: 'Clean operations at $165+/mo. So where is the AI, and where are the new customers?',
-    intro: 'Mangomint holds the highest Capterra rating at 4.9/5. Premium pricing, no AI and no marketplace still leave room for alternatives that can actually grow a business.',
+    intro: 'Mangomint holds the highest Capterra rating at 4.9/5. Pricing that climbs with every location and user, and no marketplace, still leave room for alternatives that can actually grow a business.',
     alternatives: ['boulevard', 'vagaro', 'glossgenius', 'booksy'],
     bestFor: {
       'boulevard': 'Best for premium salons wanting enterprise polish',
@@ -1166,7 +1166,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best zenoti alternatives', 'zenoti alternatives', 'zenoti competitors', 'salon software like zenoti'],
     heroTitle: '7 Best Zenoti Alternatives in 2026',
     heroSubtitle: 'Enterprise pricing from $225+/mo per location, on an annual contract, after a complicated implementation. These alternatives deliver AI without the overhead.',
-    intro: 'Zenoti is a powerful enterprise platform running 6 AI agents. At $225+/month per location, with mandatory annual contracts and a long implementation, plenty of businesses go looking elsewhere. It has GCC offices and still no Arabic UI. The alternatives below are compared on AI, pricing and how quickly you can deploy them.',
+    intro: 'Zenoti is a powerful enterprise platform marketing nine AI agents. At $225+/month per location, with mandatory annual contracts and a long implementation, plenty of businesses go looking elsewhere. It has GCC offices and still no Arabic UI. The alternatives below are compared on AI, pricing and how quickly you can deploy them.',
     alternatives: ['boulevard', 'mangomint', 'mindbody', 'fresha', 'vagaro', 'phorest'],
     bestFor: {
       'boulevard': 'Best for premium multi-location salons',
@@ -1206,7 +1206,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best phorest alternatives', 'phorest alternatives', 'phorest competitors', 'salon software like phorest'],
     heroTitle: '5 Best Phorest Alternatives in 2026',
     heroSubtitle: 'Excellent CRM and loyalty at ~$99/mo, confined to the UK and Ireland, with no AI, no marketplace and no Arabic support.',
-    intro: 'Phorest has a loyal following across the UK and Ireland, built on excellent CRM, strong loyalty programs and a 4.8 rating. No AI, no customer marketplace and no Arabic or GCC support all cap its appeal once a business wants to grow past its current market. Here are the top alternatives.',
+    intro: 'Phorest has a loyal following across the UK and Ireland, built on excellent CRM, strong loyalty programs and a 4.8 rating. Its AI sits at the front desk, and there is no customer marketplace and no Arabic or GCC support all cap its appeal once a business wants to grow past its current market. Here are the top alternatives.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'boulevard'],
     bestFor: {
       'fresha': 'Best for global marketplace reach',
@@ -1604,7 +1604,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['mindbody vs zenoti', 'mindbody or zenoti', 'zenoti vs mindbody comparison'],
     heroTitle: 'Mindbody vs Zenoti',
     heroSubtitle: 'The industry legacy versus the AI-first challenger, two enterprise platforms, fundamentally different approaches.',
-    verdict: 'Mindbody wins on marketplace scale and brand recognition in fitness. Zenoti wins on AI capabilities with 6 AI agents and modern architecture. Both are expensive enterprise solutions with no cashback or full Arabic UI support.',
+    verdict: 'Mindbody wins on marketplace scale and brand recognition in fitness. Zenoti wins on AI capabilities, marketing nine AI agents, and modern architecture. Both are expensive enterprise solutions with no cashback or full Arabic UI support.',
     whoShouldChooseA: [
       'You need the largest fitness and wellness marketplace',
       'Brand recognition and industry trust matter most',

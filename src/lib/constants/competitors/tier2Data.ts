@@ -280,7 +280,9 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     gccPresence: {
       hasArabicUI: true,
       arabicQuality: 'native',
-      gccCountries: ['UAE'],
+      // Live country sites verified 2026-09-29: dingg.app/ae, /sa, /qa, /kw, /om
+      // all return 200 with country-specific titles. /bh returns 404.
+      gccCountries: ['UAE', 'KSA', 'Qatar', 'Kuwait', 'Oman'],
       localCompliance: true,
       localPaymentMethods: true,
       localSupport: true,
@@ -382,7 +384,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Is DINGG\'s Arabic support as good as Daisy\'s for GCC businesses?',
         answer:
-          'The Arabic interface is genuinely native and the GCC presence is being built, but it currently runs in the UAE only. Daisy offers native Arabic with local payment methods, built for the Gulf and live in Kuwait today.',
+          'The Arabic interface is genuinely native and DINGG runs country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman, though not Bahrain. Daisy offers native Arabic with local payment methods, built for the Gulf and live in Kuwait today.',
       },
       {
         question: 'How good is DINGG\'s mobile app for day-to-day salon management?',
@@ -408,7 +410,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
 
     lastResearched: '2026-03-13',
     notes:
-      'The closest Tier 2 competitor on AI. Arabic support and AI at an affordable price is a compelling combination. The weaknesses are an early-stage GCC expansion covering the UAE only, no marketplace, and limited funding. Worth watching as it grows in the region.',
+      'The closest Tier 2 competitor on AI. Arabic support and AI at an affordable price is a compelling combination. The weaknesses are no marketplace and limited funding; its GCC coverage now spans five countries, short of the full six. Worth watching as it grows in the region.',
   },
 
   // ---------------------------------------------------------------------------

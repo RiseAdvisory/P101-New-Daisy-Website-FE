@@ -7,3 +7,13 @@
 200  https://biz.booksy.com/features/ai-receptionist-beta  booksy-ai-receptionist.html
 200  https://glossgenius.com/reception  glossgenius-reception.html
 200  https://www.mindbodyonline.com/business/pricing  mindbody-pricing.html
+200  https://www.mangomint.com/pricing/  mangomint-pricing.html
+200  https://www.mangomint.com/learn/price-changes-2026/  mangomint-price-changes.html
+200  https://www.phorest.com/gb/pricing/  phorest-pricing.html
+200  https://www.zenoti.com/ai-workforce  zenoti-ai-workforce.html
+200  https://dingg.app/ae  dingg-ae.html
+200  https://dingg.app/sa  dingg-sa.html
+200  https://dingg.app/qa  dingg-qa.html
+200  https://dingg.app/kw  dingg-kw.html
+200  https://dingg.app/om  dingg-om.html
+404  https://dingg.app/bh  dingg-bh-404.html

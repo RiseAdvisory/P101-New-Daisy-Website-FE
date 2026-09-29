@@ -1225,7 +1225,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     website: 'https://www.zenoti.com',
     tier: 1,
     description:
-      'Enterprise-grade, AI-first management platform for salons, spas and med spas. Its 6 AI agents make it the most comprehensive AI suite in the industry. A Dubai office gives it real GCC presence.',
+      'Enterprise-grade, AI-first management platform for salons, spas and med spas. Its AI Workforce, marketed as nine AI agents, is among the most comprehensive AI suites in the industry. A Dubai office gives it real GCC presence.',
     founded: '2010',
     headquarters: 'Bellevue, WA, USA',
     employeeCount: '1,500+',
@@ -1316,7 +1316,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: true,
       hasAiPricing: true,
       aiDescription:
-        'The most comprehensive AI suite available: 6 AI agents covering the phone receptionist, marketing campaigns, review management, scheduling optimization, analytics and staff recommendations. AI comes first here, and the investment continues.',
+        'The most comprehensive AI suite available: nine AI agents covering the phone receptionist, marketing campaigns, review management, scheduling optimization, analytics and staff recommendations. AI comes first here, and the investment continues.',
     },
 
     targetMarket:
@@ -1354,7 +1354,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Multi-location salon, spa and med spa owners who want enterprise features and AI automation',
       toneAndVoice: 'Enterprise and technology-forward, always arguing from ROI',
       keyMessages: [
-        'AI-first platform with 6 AI agents',
+        'AI-first platform marketing nine AI agents',
         'Built for multi-location businesses',
         'Enterprise-grade reliability',
         '$282M+ funded by top VCs',
@@ -1414,7 +1414,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Compliance tools',
       ],
       assessment:
-        'The most growth-oriented competitor of the set, and the most AI-first. A solid operations foundation with 6 AI agents working on top of it. Most of those AI features sit in the higher enterprise tiers. On AI, this is Daisy\'s most direct competitor.',
+        'The most growth-oriented competitor of the set, and the most AI-first. A solid operations foundation with nine AI agents working on top of it. Most of those AI features sit in the higher enterprise tiers. On AI, this is Daisy\'s most direct competitor.',
     },
 
     daisyAdvantages: [
@@ -1460,7 +1460,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Zenoti\'s AI compare to Daisy\'s?',
         answer:
-          'Zenoti has the most comprehensive AI suite of any traditional platform, running 6 AI agents. Those features generally sit in enterprise tiers behind opaque pricing. Daisy puts the AI receptionist, smart scheduling and AI marketing in the base platform at a published price, and adds the native Arabic support Zenoti does not have.',
+          'Zenoti has the most comprehensive AI suite of any traditional platform, marketing nine AI agents. Those features generally sit in enterprise tiers behind opaque pricing. Daisy puts the AI receptionist, smart scheduling and AI marketing in the base platform at a published price, and adds the native Arabic support Zenoti does not have.',
       },
       {
         question: 'Is Zenoti suitable for small salons?',

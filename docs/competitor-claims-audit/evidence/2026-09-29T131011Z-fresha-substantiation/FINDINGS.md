@@ -102,3 +102,50 @@ The same page also confirms a claim Daisy makes that is true and has been kept: 
 ## What this does not establish
 
 Nothing here speaks to the quality, reliability or real-world performance of any rival's AI, nor to pricing beyond what each page states. The corrections move the comparison from presence to scope and channel coverage, which is what the evidence supports.
+
+---
+
+## Mangomint, DINGG, Phorest, Zenoti — the remaining Critical rows
+
+### Mangomint — the published price is stale
+
+`mangomint.com/pricing`, HTTP 200:
+
+> "$120 per location and $10 per user"
+> "Locations $120/mo each · Users $10/mo each"
+
+Daisy published $165–375/mo across three named tiers. Those tiers no longer exist; Mangomint moved to per-location plus per-user. Unlike Fresha, this price **is** published openly on their own page, so it is safe to state with a capture date.
+
+Add-ons, also published: Phone $70/mo per line, Marketing from $30/mo, Payroll $50/mo + $8 per worker.
+
+**Not changed:** Daisy also claims Mangomint has "no AI". Their pricing page contains exactly one instance of "AI", and it is a note telling AI agents where to find a Markdown version of the page, not a product. So the claim is not contradicted by this capture, but neither is it positively verified. Given four rivals in this audit turned out to ship AI that Daisy said they lacked, this one should be checked properly rather than assumed.
+
+### DINGG — "1 GCC country" is false, but "not all six" is true
+
+Live country sites, all HTTP 200 with country-specific titles, verified 2026-09-29:
+
+| URL | Title |
+|---|---|
+| `dingg.app/ae` | Salon & Spa Software in UAE |
+| `dingg.app/sa` | Salon & Spa Software in Saudi Arabia |
+| `dingg.app/qa` | Salon & Spa Software in Qatar |
+| `dingg.app/kw` | Salon & Spa Software in Kuwait |
+| `dingg.app/om` | Salon & Spa Software in Oman |
+| `dingg.app/bh` | **404 — Page Not Found** |
+
+Five GCC markets, not one. Bahrain genuinely absent, so Daisy's six-country coverage remains a real and defensible differentiator; the copy now says five-not-six rather than one.
+
+### Phorest — "no AI" is false
+
+`phorest.com/gb/pricing`, HTTP 200, lists under an "AI Features" section:
+
+> "**Front Desk AI** — Give clients faster answers and smoother bookings with AI that supports everyday front-desk conversations."
+> "**Cheat Sheet AI** — Get an instant summary of each client's history before they arrive."
+
+### Zenoti — "6 AI agents" is outdated
+
+`zenoti.com/ai-workforce`, HTTP 200:
+
+> "AI Workforce … **Nine AI agents** — each built for a specific revenue leak in your business."
+
+Daisy said six. Note this claim was in Daisy's copy as a point in Zenoti's favour, so correcting it upward is simply accuracy, not a concession.
