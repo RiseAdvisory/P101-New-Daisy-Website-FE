@@ -1195,7 +1195,7 @@ const performanceReviewsArticle: LocalBlogPost = {
 <li>How often they add something to a booking</li>
 <li>The direction of travel, month on month and quarter on quarter</li>
 </ul>
-<p><strong>Evidence sources:</strong> The Daisy&rsquo;s <a href="/en/features/business/analytics-reporting">analytics dashboard</a>, your financial reports, and the POS.</p>
+<p><strong>Evidence sources:</strong> The Daisy&rsquo;s <a href="/en/features/business/analytics-reports">analytics dashboard</a>, your financial reports, and the POS.</p>
 
 <h3>4. Team contribution (weight: 10%)</h3>
 <p>What they add to the room.</p>

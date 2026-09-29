@@ -685,7 +685,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
 </ul>
 
 <h3>Tracking it with your platform</h3>
-<p>Manual tracking fails because it depends on consistency during your busiest periods, exactly when you are least likely to update a spreadsheet. Integrated <a href="/en/features/business/analytics-reporting">salon analytics platforms</a> track every metric automatically, alert you when KPIs move outside target ranges, and surface insights you would never discover manually.</p>
+<p>Manual tracking fails because it depends on consistency during your busiest periods, exactly when you are least likely to update a spreadsheet. Integrated <a href="/en/features/business/analytics-reports">salon analytics platforms</a> track every metric automatically, alert you when KPIs move outside target ranges, and surface insights you would never discover manually.</p>
 <p>The best platforms provide weekly automated reports that show your growth dashboard, highlight wins, flag concerns, and suggest specific actions. This turns data from an overwhelming wall of numbers into an actionable growth tool.</p>
 <p>Growth is not accidental. It is the result of clear strategy, disciplined execution, and consistent measurement. Build the systems described in this guide, measure relentlessly, and your beauty business will compound its success, from startup to scale.</p>`,
     },

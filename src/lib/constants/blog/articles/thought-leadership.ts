@@ -108,7 +108,7 @@ const deathOfSalonSoftwareArticle: LocalBlogPost = {
 </ul>
 
 <h2>How The Daisy is built around this</h2>
-<p><a href="/en/features/business/salon-management-software">The Daisy</a> started as a platform ecosystem rather than being retrofitted from legacy salon software, and the pieces are meant to feed each other:</p>
+<p><a href="/en/salon-management-software">The Daisy</a> started as a platform ecosystem rather than being retrofitted from legacy salon software, and the pieces are meant to feed each other:</p>
 <ul>
 <li>The <strong>AI receptionist</strong> takes inquiries and pushes bookings into the smart calendar.</li>
 <li>The <strong>smart calendar</strong> arranges the day and sends its data to the analytics engine.</li>
@@ -288,7 +288,7 @@ const adoptAiOrLeftBehindArticle: LocalBlogPost = {
 <p>None of this needs a technology overhaul or a six-month implementation project. A realistic path looks like this.</p>
 <ol>
 <li><strong>Look at what you already run.</strong> List every tool and what it costs, then write down what you keep wishing it could do.</li>
-<li><strong>Look at platforms built on AI.</strong> <a href="/en/features/business/salon-management-software">The Daisy</a> is one. Compare what they can actually do rather than the length of the feature list.</li>
+<li><strong>Look at platforms built on AI.</strong> <a href="/en/salon-management-software">The Daisy</a> is one. Compare what they can actually do rather than the length of the feature list.</li>
 <li><strong>Work out the ROI.</strong> Our <a href="/en/resources/blog/business/calculate-roi-switching-salon-software">ROI calculation framework</a> estimates what switching does to your finances.</li>
 <li><strong>Turn on AI booking first.</strong> It is the fastest and most visible change. Add analytics, marketing automation and growth features across the first 30-60 days.</li>
 <li><strong>Measure, then widen.</strong> Check results weekly, and switch on more as the improvements show up.</li>
@@ -420,7 +420,7 @@ const operationsToGrowthMindsetArticle: LocalBlogPost = {
 <p>Plenty of owners see themselves in every part of the business. "Nobody can do it like I do" is a point of pride and a ceiling at the same time. When you are the best stylist, the best receptionist and the best manager, handing anything over feels like settling. Growth means accepting that 80% from a capable system or colleague beats 100% from you, because it buys back the 20% of the work only you can do.</p>
 
 <h3>Your technology needs you</h3>
-<p>If every booking, reminder and report needs a person to push it along, you have no way out of the operational work. Traditional salon software was built for the operator era and helps you manage rather than lead. Platforms like <a href="/en/features/business/salon-management-software">The Daisy</a> automate the operations so your attention can go somewhere else.</p>
+<p>If every booking, reminder and report needs a person to push it along, you have no way out of the operational work. Traditional salon software was built for the operator era and helps you manage rather than lead. Platforms like <a href="/en/salon-management-software">The Daisy</a> automate the operations so your attention can go somewhere else.</p>
 
 <h3>Letting go is uncomfortable</h3>
 <p>What if the AI says the wrong thing to a client? What if someone makes a poor scheduling call? What if it goes wrong while you are not looking? The worry is natural and out of proportion. Occasional imperfection from a system or a colleague costs far less than an owner permanently buried in operations.</p>
@@ -644,7 +644,7 @@ const fiveAppsHowToFixArticle: LocalBlogPost = {
 <p>Adding a seventh app solves nothing. Replacing the whole stack with one platform that handles everything natively does.</p>
 
 <h3>What one platform covers</h3>
-<p>A platform such as <a href="/en/features/business/salon-management-software">The Daisy</a> takes the place of the whole stack:</p>
+<p>A platform such as <a href="/en/salon-management-software">The Daisy</a> takes the place of the whole stack:</p>
 <ul>
 <li><strong>Booking in one place.</strong> <a href="/en/features/business/booking-management">Smart scheduling</a> with an AI receptionist, online booking, intake from WhatsApp, Instagram, phone and web, and a calendar that arranges itself. Replaces your booking system.</li>
 <li><strong>Payments built in.</strong> <a href="/en/features/business/payment-processing">Full payment processing</a>, POS, tips, gift cards, invoicing and cashback in one system. Replaces your payment processor.</li>

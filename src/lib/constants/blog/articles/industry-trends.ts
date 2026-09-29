@@ -69,7 +69,7 @@ const beautyIndustryStatistics2026Article: LocalBlogPost = {
 <li><strong>AI adoption:</strong> approximately 15% of beauty businesses have deployed some form of AI automation, up from under 3% in 2024, and early adopters report 25&ndash;40% reductions in administrative workload. The curve is steep, with analysts projecting 35&ndash;40% adoption by end of 2027.</li>
 <li><strong>Marketplace listings:</strong> 42% of salons with an online presence are listed on at least one beauty marketplace, and those businesses report 20&ndash;30% of new client acquisition coming through that channel.</li>
 <li><strong>Social media as booking channel:</strong> Instagram and WhatsApp now sit second and third behind salon websites, and in the GCC WhatsApp handles approximately 35% of initial booking inquiries.</li>
-<li><strong>Salon management platforms:</strong> 58% of salons with 5+ employees now run a dedicated <a href="/en/features/business/salon-management-software">salon management platform</a>, up from 41% in 2023.</li>
+<li><strong>Salon management platforms:</strong> 58% of salons with 5+ employees now run a dedicated <a href="/en/salon-management-software">salon management platform</a>, up from 41% in 2023.</li>
 </ul>
 
 <h2>Regional growth hotspots</h2>
@@ -272,7 +272,7 @@ const aiBeautyIndustryApplicationsArticle: LocalBlogPost = {
 <li><strong>If client retention is declining:</strong> turn on automated communication with personalisation behind it. Rebooking prompts and re-engagement messages work.</li>
 <li><strong>If you do not know your numbers:</strong> start with analytics. Nothing improves that you do not measure, and this surfaces things no spreadsheet you maintain by hand ever would.</li>
 </ol>
-<p>The Daisy holds all of these in a <a href="/en/features/business/salon-management-software">single platform</a>, so you can switch one on and add the rest at your own pace. <a href="/en/pricing/business">Pricing options</a> are here.</p>
+<p>The Daisy holds all of these in a <a href="/en/salon-management-software">single platform</a>, so you can switch one on and add the rest at your own pace. <a href="/en/pricing/business">Pricing options</a> are here.</p>
 
 <h2>Frequently asked questions</h2>
 
@@ -431,7 +431,7 @@ const sustainabilityBeautySalonsArticle: LocalBlogPost = {
 <li>Disposable product elimination: $600&ndash;$1,500</li>
 <li><strong>Total annual savings: $3,400&ndash;$8,200</strong></li>
 </ul>
-<p>Those are conservative figures and leave out the revenue from clients who chose you partly for this. Pairing the practices with a good <a href="/en/features/business/salon-management-software">salon management platform</a> compounds them: less paper because the systems are digital, less energy wasted on idle equipment because the scheduling is tighter, and less overstock because the data tells you what you actually use.</p>
+<p>Those are conservative figures and leave out the revenue from clients who chose you partly for this. Pairing the practices with a good <a href="/en/salon-management-software">salon management platform</a> compounds them: less paper because the systems are digital, less energy wasted on idle equipment because the scheduling is tighter, and less overstock because the data tells you what you actually use.</p>
 <p><a href="/en/pricing/business">The Daisy's pricing</a> shows how a digital-first platform fits into this.</p>
 
 <h2>Frequently asked questions</h2>
@@ -579,7 +579,7 @@ const beautyMarketplacesImpactArticle: LocalBlogPost = {
 
 <h2>The platform ecosystem alternative</h2>
 <p>Some platforms put marketplace visibility and business management in the same place, so clients acquired through the marketplace land in your own booking system, CRM, and marketing tools. The split between marketplace clients and direct clients disappears, because one system holds both.</p>
-<p><a href="/en/features/business/salon-management-software">The Daisy</a> works this way. Someone who finds your salon through The Daisy marketplace books into your management system, and their details, preferences, and history are there straight away for follow-up, loyalty, and marketing. Nobody leaks back to a separate marketplace with your competitors on the screen.</p>
+<p><a href="/en/salon-management-software">The Daisy</a> works this way. Someone who finds your salon through The Daisy marketplace books into your management system, and their details, preferences, and history are there straight away for follow-up, loyalty, and marketing. Nobody leaks back to a separate marketplace with your competitors on the screen.</p>
 <p>That answers the central problem with marketplaces. You keep the acquisition and lose the commission on every repeat visit, and the loyalty stays with you rather than a third party. <a href="/en/pricing/business">Pricing</a> has the specifics.</p>
 
 <h2>The future of beauty marketplaces</h2>
@@ -721,7 +721,7 @@ const wellnessBeautyIntegrationArticle: LocalBlogPost = {
 <ul>
 <li><strong>Higher earning potential:</strong> practitioners offering wellness-integrated services report 20&ndash;35% higher average ticket values than traditional services alone. Across a year that is a real income rise without a single extra hour worked.</li>
 <li><strong>Stronger client retention:</strong> once someone associates you with the whole experience rather than the haircut, they stay. Wellness-integrated practitioners report 25&ndash;30% higher rebooking rates and considerably less attrition.</li>
-<li><strong>Career differentiation:</strong> among thousands of hairstylists, estheticians, and nail technicians, wellness credentials are something to point at. Clients look for people with broader skills, and <a href="/en/features/professional/personal-brand">building your personal brand</a> around this gives you a position nobody nearby holds.</li>
+<li><strong>Career differentiation:</strong> among thousands of hairstylists, estheticians, and nail technicians, wellness credentials are something to point at. Clients look for people with broader skills, and <a href="/en/features/professional/business-growth">building your personal brand</a> around this gives you a position nobody nearby holds.</li>
 <li><strong>Future-proofing:</strong> as automation takes over admin and the simpler tasks, what stays valuable is empathy, thinking about the whole person, care tailored to them, and building an experience software cannot copy. Those are exactly the skills this develops.</li>
 <li><strong>Entrepreneurial options:</strong> wellness credentials open more doors independently. Mobile wellness-beauty services, a private studio, and corporate wellness partnerships are all within reach once you combine the two skill sets.</li>
 </ul>
@@ -732,9 +732,9 @@ const wellnessBeautyIntegrationArticle: LocalBlogPost = {
 <li><strong>Month 1, research and choose your focus.</strong> Learning all of it is unnecessary. Pick the one area closest to what you already do and who already sits in your chair. Hairstylists start with scalp therapy, nail technicians with reflexology, estheticians with holistic skincare consultations.</li>
 <li><strong>Month 2&ndash;3, get certified.</strong> Take a reputable short course, ideally one written for people already practising rather than for career changers. The good ones put your hands on the work instead of only teaching theory.</li>
 <li><strong>Month 3&ndash;4, pilot with existing clients.</strong> Give the add-on free to 10&ndash;15 regulars and ask them what it felt like, what they would pay, and whether the appointment flowed. Price from what they tell you.</li>
-<li><strong>Month 4 onward, launch and market.</strong> Put the services on the menu, update your profile on the salon's <a href="/en/features/professional/booking-calendar">booking platform</a>, and tell people through social media and in the chair. Track revenue per service so you know whether it worked.</li>
+<li><strong>Month 4 onward, launch and market.</strong> Put the services on the menu, update your profile on the salon's <a href="/en/features/professional/booking-management">booking platform</a>, and tell people through social media and in the chair. Track revenue per service so you know whether it worked.</li>
 </ol>
-<p>All of this needs a platform that handles a flexible service menu alongside your schedule and client messages. <a href="/en/pricing/business">The Daisy's plans</a> show what that looks like.</p>
+<p>All of this needs a platform that handles a flexible service menu alongside your schedule and client messages. <a href="/en/pricing/professional">The Daisy's plans</a> show what that looks like.</p>
 
 <h2>Challenges and how to overcome them</h2>
 <ul>
@@ -907,7 +907,7 @@ const beautyIndustryPredictions2027Article: LocalBlogPost = {
 <ol>
 <li><strong>Adopt AI tools this year.</strong> There is a learning curve and it is manageable. Starting now buys you 12+ months of learning and accumulated data before everyone else arrives.</li>
 <li><strong>Launch a membership programme.</strong> Even a crude one starts the recurring revenue and produces retention data worth having.</li>
-<li><strong>Consolidate your software stack.</strong> Several disconnected tools should become one, whether that is <a href="/en/features/business/salon-management-software">The Daisy</a> or another platform holding booking, CRM, marketing, analytics, and AI together.</li>
+<li><strong>Consolidate your software stack.</strong> Several disconnected tools should become one, whether that is <a href="/en/salon-management-software">The Daisy</a> or another platform holding booking, CRM, marketing, analytics, and AI together.</li>
 <li><strong>Invest in your team.</strong> Pay for wellness certification, technology training, and development. How broad their skills are is an asset on your side of the balance sheet.</li>
 <li><strong>Start collecting and using data.</strong> Every client interaction is a data point, and your systems should capture it, organise it, and put it to work.</li>
 </ol>

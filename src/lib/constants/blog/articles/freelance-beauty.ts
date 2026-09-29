@@ -1141,7 +1141,7 @@ const taxGuideArticle: LocalBlogPost = {
 <p>Professional liability, public liability, and equipment insurance premiums are fully deductible business expenses.</p>
 
 <h3>Marketing and advertising</h3>
-<p>Social media ads, website hosting, business cards, printed materials, booking platform subscriptions, and anything else spent on marketing. That includes <a href="/en/pricing/business">The Daisy subscription</a> and any other software you run for client management, booking, and communication.</p>
+<p>Social media ads, website hosting, business cards, printed materials, booking platform subscriptions, and anything else spent on marketing. That includes <a href="/en/pricing/professional">The Daisy subscription</a> and any other software you run for client management, booking, and communication.</p>
 
 <h3>Education and training</h3>
 <p>Courses, workshops, certifications, conferences, and study materials for your profession, plus the travel to get to them. Training improves the career and reduces the tax bill at the same time.</p>

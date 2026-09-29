@@ -90,7 +90,7 @@ const salonKpisToTrackArticle: LocalBlogPost = {
 <p><strong>Formula:</strong> Average Revenue Per Visit &times; Average Visits Per Year &times; Average Client Lifespan (in years)</p>
 <p><strong>Example:</strong> If your ARPC is $70, clients visit an average of 8 times per year, and the average client relationship lasts 3 years, your CLV is $70 &times; 8 &times; 3 = $1,680.</p>
 <p><strong>Benchmark:</strong> This depends heavily on your service mix and market. For a mid-range salon, $800&ndash;$2,000 is typical. For premium salons with strong retention and high ticket services, $3,000&ndash;$8,000+ is achievable. Knowing yours is what tells you how much you can afford to spend winning and keeping a client.</p>
-<p><strong>What to do if it is declining:</strong> Only three things can cause it: visits get less frequent, average spend falls, or the relationship ends sooner. Work out which. Cashback and loyalty programmes, of the kind built into <a href="/en/features/business/salon-management-software">The Daisy</a>, act on frequency and lifespan. Bundling and premium add-ons act on spend.</p>
+<p><strong>What to do if it is declining:</strong> Only three things can cause it: visits get less frequent, average spend falls, or the relationship ends sooner. Work out which. Cashback and loyalty programmes, of the kind built into <a href="/en/salon-management-software">The Daisy</a>, act on frequency and lifespan. Bundling and premium add-ons act on spend.</p>
 
 <h2>KPI 7: staff productivity</h2>
 <p>Revenue per person per unit of time. It shows you both the individual and the team, and it underpins fair pay, sensible rotas, and any plan to grow.</p>
@@ -279,7 +279,7 @@ const salonClientLifetimeValueArticle: LocalBlogPost = {
 <li>No response to rebooking prompts</li>
 <li>Negative feedback or unresolved complaints</li>
 </ul>
-<p><a href="/en/features/business/salon-management-software">Intelligent salon platforms</a> raise these automatically, while there is still something to save.</p>
+<p><a href="/en/salon-management-software">Intelligent salon platforms</a> raise these automatically, while there is still something to save.</p>
 
 <h2>Tracking CLV over time</h2>
 <p>This is not a number you work out once. Track it monthly and read the trend quarterly.</p>
@@ -680,7 +680,7 @@ const dataDrivenSalonManagementArticle: LocalBlogPost = {
 </ul>
 
 <h2>When to upgrade to a salon analytics platform</h2>
-<p>Tracking by hand gets you started and then runs out of road. Move to a <a href="/en/features/business/salon-management-software">salon management platform</a> with analytics built in once:</p>
+<p>Tracking by hand gets you started and then runs out of road. Move to a <a href="/en/salon-management-software">salon management platform</a> with analytics built in once:</p>
 <ul>
 <li>The daily entry takes more than 5 minutes, or you have started skipping days.</li>
 <li>You want the metrics that are painful by hand, meaning CLV, revenue by channel, and staff-level analytics.</li>

@@ -1085,7 +1085,7 @@ const independentClientLoyaltyArticle: LocalBlogPost = {
 <li><strong>Automated communication sequences:</strong> thank-yous, rebooking reminders, and birthday messages that go out on their own and still read as personal.</li>
 <li><strong>Earnings and schedule tracking:</strong> visibility of revenue, client frequency, and how full your diary runs, which is what turns pricing and availability into decisions rather than guesses.</li>
 </ul>
-<p><a href="/en/features/professional/booking-management">The Daisy for Professionals</a> is built for independent beauty professionals and puts all of it in one platform. You get a professional salon's operational backing while keeping the personal, independent experience your clients came for. Explore the feature set alongside our <a href="/en/pricing/business">pricing plans</a>.</p>
+<p><a href="/en/features/professional/booking-management">The Daisy for Professionals</a> is built for independent beauty professionals and puts all of it in one platform. You get a professional salon's operational backing while keeping the personal, independent experience your clients came for. Explore the feature set alongside our <a href="/en/pricing/professional">pricing plans</a>.</p>
 
 <h2>Measuring your loyalty success</h2>
 <p>Check these monthly:</p>

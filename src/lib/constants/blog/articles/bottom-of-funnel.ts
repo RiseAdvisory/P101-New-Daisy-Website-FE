@@ -78,7 +78,7 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
 <li><strong>Business profile:</strong> salon name, logo, location, operating hours, contact details.</li>
 <li><strong>Service menu:</strong> rebuild your services with accurate names, descriptions, durations, and prices. Use the chance to clear out what you no longer offer and rewrite descriptions that were never quite right.</li>
 <li><strong>Staff profiles:</strong> each team member with their schedule, permissions, and commission structure.</li>
-<li><strong>Import client data:</strong> upload the export. Platforms like <a href="/en/features/business/salon-management-software">The Daisy</a> have guided import tools that map your CSV columns to the right fields for you.</li>
+<li><strong>Import client data:</strong> upload the export. Platforms like <a href="/en/salon-management-software">The Daisy</a> have guided import tools that map your CSV columns to the right fields for you.</li>
 <li><strong>Payment setup:</strong> connect your processor, and allow 2-3 business days for verification if you are changing processor too.</li>
 </ul>
 
@@ -290,7 +290,7 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>The first month sets the tone for everything after</h2>
 <p>The first 30 days decide whether your team takes to the new platform or quietly drifts back to old habits. Knowing what each week normally looks like lets you set expectations honestly, recognise real progress, and skip the frustration that comes from not knowing whether what you are seeing is a problem.</p>
-<p>What follows is the first month after go-live, drawn from how salons actually onboard onto platforms like <a href="/en/features/business/salon-management-software">The Daisy</a>. It includes the difficult parts, not only the wins.</p>
+<p>What follows is the first month after go-live, drawn from how salons actually onboard onto platforms like <a href="/en/salon-management-software">The Daisy</a>. It includes the difficult parts, not only the wins.</p>
 
 <h2>Week 1: the learning curve is real (but short)</h2>
 <p>Week one is the steep bit. Everything is unfamiliar, and something that took seconds before might take a minute while you hunt for the right button. That is normal.</p>
@@ -356,7 +356,7 @@ const firstMonthNewPlatformArticle: LocalBlogPost = {
 
 <h3>Features to activate</h3>
 <ul>
-<li><strong>Cashback programme:</strong> launch your client cashback incentives if you have not. On platforms like <a href="/en/features/business/salon-management-software">The Daisy</a> it is a single click.</li>
+<li><strong>Cashback programme:</strong> launch your client cashback incentives if you have not. On platforms like <a href="/en/salon-management-software">The Daisy</a> it is a single click.</li>
 <li><strong>Automated rebooking prompts:</strong> messages that nudge clients once their usual interval has passed.</li>
 <li><strong>Client segmentation:</strong> group people by visit frequency, service preference, or spend, which makes targeted marketing possible in a way a mass send never is.</li>
 <li><strong>Staff performance tracking:</strong> look at booking rate, average ticket, and retention per person, and share the good results with the team.</li>
@@ -507,7 +507,7 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
 <p>The return comes from four places. Most owners weigh only the first and underestimate the rest.</p>
 
 <h3>Pillar 1: revenue gains</h3>
-<p>Platforms like <a href="/en/features/business/salon-management-software">The Daisy</a> ship features built to bring money in. The levers, and how to size each one:</p>
+<p>Platforms like <a href="/en/salon-management-software">The Daisy</a> ship features built to bring money in. The levers, and how to size each one:</p>
 
 <h4>Recovered missed bookings</h4>
 <p>Salons miss 30-40% of inbound booking calls because staff are with clients. An AI receptionist covering phone, WhatsApp, Instagram, and web chat around the clock catches the bookings that were going to a competitor.</p>
