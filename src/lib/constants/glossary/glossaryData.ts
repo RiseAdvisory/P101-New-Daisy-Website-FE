@@ -246,7 +246,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'Which salon software offers white-label features?',
           answer:
-            'Daisy includes it in all plans. Boulevard and Mangomint allow some customisation. Fresha, Booksy and Vagaro display their own branding prominently.',
+            'Daisy includes it in all plans. Boulevard and Mangomint allow some customisation. Check each platform\'s current plan terms for how its own branding appears on your booking page.',
         },
         {
           question: 'How much does white-label salon software cost?',
@@ -773,7 +773,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'أي برنامج صالونات يقدم ميزات العلامة التجارية البيضاء؟',
           answer:
-            'تتضمن ديزي علامة تجارية بيضاء كاملة في جميع الخطط. يقدم Boulevard وMangomint بعض التخصيص. معظم المنصات مثل Fresha وBooksy وVagaro تعرض علامتها التجارية الخاصة بشكل بارز.',
+            'تتضمن ديزي علامة تجارية بيضاء كاملة في جميع الخطط. يقدم Boulevard وMangomint بعض التخصيص. راجع شروط الباقات الحالية لكل منصة لمعرفة كيف تظهر علامتها على صفحة حجزك.',
         },
         {
           question: 'كم تكلفة برنامج صالون بعلامة تجارية بيضاء؟',

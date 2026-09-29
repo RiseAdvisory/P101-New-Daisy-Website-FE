@@ -654,7 +654,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <h2>Why payment processing fees matter for your beauty business</h2>
 <p>Every card payment costs you something. At 2-3% per transaction it looks trivial. Multiply it by hundreds or thousands of transactions a month and it becomes one of your biggest costs after rent and wages.</p>
 <p>A salon processing 50,000 AED in monthly card payments at a 2.9% rate pays 1,450 AED per month, or 17,400 AED per year, in processing fees alone. At 150,000 AED monthly it is over 52,000 AED annually. A fraction of a percent is not a rounding error at that scale.</p>
-<p>Almost nobody compares them, because the pricing is hard to compare on purpose. Every processor uses a different model, bundles the fees differently, and keeps some of the cost in the small print. What follows sets out what each major option actually costs you.</p>
+<p>Almost nobody compares them, because every processor uses a different model and bundles the fees differently, so the headline rates are not like for like. What follows sets out what each major option actually costs you.</p>
 
 <h2>Understanding payment processing fee structures</h2>
 <p>Three structures cover the field, and you need all three before any comparison makes sense:</p>
@@ -670,9 +670,9 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <p><strong>Cons:</strong> the statements take work to read, the total moves month to month, and the networks change interchange rates from time to time.</p>
 
 <h3>Commission-based processing</h3>
-<p>Some salon platforms take a share of each booking as commission instead of, or on top of, a processing fee, for example 20% of every booking's value. Marketplace platforms that also bring you clients commonly work this way.</p>
+<p>Some salon platforms take a share of each booking as commission instead of, or on top of, a processing fee, Fresha, for example, publishes a one-time 50% commission on each new client its marketplace introduces, minimum AED 20, with returning clients free. Marketplace platforms that also bring you clients commonly work this way.</p>
 <p><strong>Pros:</strong> usually nothing upfront and no monthly subscription, so you pay only when you earn.</p>
-<p><strong>Cons:</strong> it gets expensive fast. A 20% commission on a 300 AED service is 60 AED, against roughly 8 AED for a standard processing fee, and the bill rises with everything you build.</p>
+<p><strong>Cons:</strong> the cost lands on acquisition. A one-time 50% commission on a first 300 AED booking is 150 AED against roughly 8 AED for a standard processing fee, but it is charged once per client, so it falls away as those clients return.</p>
 
 <h2>Provider-by-provider comparison</h2>
 <p>How the main options compare on fees, features, and what they cost in total:</p>
@@ -748,14 +748,14 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <tr><td>Processing fees</td><td>Competitive flat rate</td><td>~2,120 AED</td><td>~4,220 AED</td><td>~2,200 AED</td></tr>
 <tr><td>New client commission</td><td>0 AED</td><td>0 AED</td><td>~2,000 AED</td><td>0 AED</td></tr>
 <tr><td>Platform/subscription fee</td><td>Included</td><td>~110 AED</td><td>~150 AED (Independent, UAE)</td><td>~200-400 AED</td></tr>
-<tr><td>Additional tool costs</td><td>0 AED</td><td>~100-300 AED</td><td>~100-200 AED</td><td>~100-300 AED</td></tr>
-<tr><td><strong>Estimated monthly total</strong></td><td><strong>See pricing page</strong></td><td><strong>~2,430 AED</strong></td><td><strong>~6,500 AED</strong></td><td><strong>~2,700 AED</strong></td></tr>
+<tr><td>Additional tool costs</td><td>0 AED</td><td>~100-300 AED</td><td>&mdash;</td><td>~100-300 AED</td></tr>
+<tr><td><strong>Estimated monthly total</strong></td><td><strong>See pricing page</strong></td><td><strong>~2,430 AED</strong></td><td><strong>~6,370 AED</strong></td><td><strong>~2,700 AED</strong></td></tr>
 </tbody>
 </table>
 
 <p>Fresha&rsquo;s figures use its published UAE rates: 4.90% + AED 0.75 online, a one-time 50% commission on each new marketplace client with a minimum of AED 20, and AED 149.95 per month for the Independent plan. What the table shows is that the marketplace commission drives the total. A salon getting a large share of its clients through the marketplace pays considerably more in the months it is acquiring; a salon running mostly on repeat business pays the commission once per client and then not again.</p>
 
-<h2>Hidden costs to watch for</h2>
+<h2>Costs that sit outside the headline rate</h2>
 <p>Six costs that surprise people who only read the headline rate:</p>
 <ul>
 <li><strong>Chargeback fees:</strong> a client disputing a charge with their bank costs you a fee of typically $15-$25 whether you win or lose. Clear receipts and good communication mean fewer disputes.</li>
@@ -785,7 +785,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <li>Almost everything is paid in person and you have no need for online payment or invoicing features</li>
 </ul>
 
-<h3>Avoid commission-based platforms if:</h3>
+<h3>Think carefully about commission-based platforms if:</h3>
 <ul>
 <li>Your client base is established and marketplace discovery is not where new clients come from</li>
 <li>A large share of your new clients does come through the platform, since commission will then be your biggest payment cost</li>
@@ -1531,9 +1531,9 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <p><strong>السلبيات:</strong> من الصعب قراءة البيانات الشهرية، وتتقلب التكاليف، وتغير شبكات البطاقات أسعار التبادل بشكل دوري.</p>
 
 <h3>المعالجة على أساس العمولة</h3>
-<p> تأخذ بعض منصات الصالونات نسبة مئوية من كل حجز كعمولة بدلاً من (أو بالإضافة إلى) رسوم المعالجة القياسية. على سبيل المثال، 20% من قيمة كل حجز. يعد هذا النموذج شائعًا بين منصات السوق التي توفر أيضًا اكتساب العملاء.</p>
+<p> تأخذ بعض منصات الصالونات نسبة مئوية من كل حجز كعمولة بدلاً من (أو بالإضافة إلى) رسوم المعالجة القياسية. فمثلاً تنشر Fresha عمولة لمرة واحدة 50% على كل عميل جديد يجلبه سوقها، بحد أدنى 20 درهماً، والعملاء العائدون مجاناً. ويشيع هذا النموذج بين منصات السوق التي توفر أيضاً اكتساب العملاء.</p>
 <p><strong>الإيجابيات:</strong> غالبًا لا توجد رسوم مقدمة أو اشتراك شهري - لا تدفع إلا عندما تكسب.</p>
-<p><strong>السلبيات:</strong> باهظ الثمن للغاية على نطاق واسع. العمولة البالغة 20% على خدمة بقيمة 300 درهم هي 60 درهمًا إماراتيًا - مقارنة بحوالي 8 دراهم إماراتية مقابل رسوم المعالجة القياسية. كلما نما نشاطك التجاري، كلما دفعت أكثر.</p>
+<p><strong>السلبيات:</strong> باهظ الثمن للغاية على نطاق واسع. العمولة لمرة واحدة بنسبة 50% على حجز أول بقيمة 300 درهم هي 150 درهماً، مقابل نحو 8 دراهم لرسوم المعالجة القياسية، لكنها تُحتسب مرة واحدة لكل عميل فتتلاشى مع عودته.</p>
 
 <h2>المقارنة بين مقدم الخدمة ومقدم الخدمة</h2>
 <p>إليك كيفية مقارنة خيارات الدفع الرئيسية لشركات التجميل من حيث الرسوم والميزات والتكلفة الإجمالية:</p>
@@ -1609,14 +1609,14 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <tr><td>رسوم المعالجة</td><td>سعر موحد تنافسي</td><td>~2,120 درهم</td><td>~4,220 درهم</td><td>~2,200 درهم</td></tr>
 <tr><td>عمولة العميل الجديد</td><td>0 درهم</td><td>0 درهم</td><td>~2,000 درهم</td><td>0 درهم</td></tr>
 <tr><td>رسوم المنصة/الاشتراك</td><td>متضمن</td><td>~110 درهم</td><td>~150 درهم (Independent، الإمارات)</td><td>~200-400 درهم</td></tr>
-<tr><td>تكاليف الأدوات الإضافية</td><td>0 AED</td><td>~100-300 AED</td><td>~100-200 AED</td><td>~100-300 AED</td></tr>
-<tr><td><strong>الإجمالي الشهري المقدر</strong></td><td><strong>انظر الأسعار page</strong></td><td><strong>~2,430 درهم</strong></td><td><strong>~6,500 درهم</strong></td><td><strong>~2,700 درهم</strong></td></tr>
+<tr><td>تكاليف الأدوات الإضافية</td><td>0 درهم</td><td>~100-300 درهم</td><td>&mdash;</td><td>~100-300 درهم</td></tr>
+<tr><td><strong>الإجمالي الشهري المقدر</strong></td><td><strong>انظر الأسعار page</strong></td><td><strong>~2,430 درهم</strong></td><td><strong>~6,370 درهم</strong></td><td><strong>~2,700 درهم</strong></td></tr>
 </tbody>
 </table>
 
 <p>أرقام Fresha أعلاه مبنية على أسعارها المنشورة في الإمارات: 4.90% + 0.75 درهم للمدفوعات الإلكترونية، وعمولة لمرة واحدة 50% على كل عميل سوق جديد بحد أدنى 20 درهماً، و149.95 درهماً شهرياً لخطة Independent. وما يظهره الجدول أن عمولة السوق هي التي تحرّك الإجمالي: الصالون الذي يعتمد على السوق في استقطاب عملائه يدفع أكثر في أشهر الاستقطاب، أما الصالون القائم على العملاء العائدين فيدفع العمولة مرة واحدة لكل عميل ثم لا يدفعها ثانية.</p>
 
-<h2>التكاليف الخفية التي يجب مراقبتها</h2>
+<h2>تكاليف خارج المعدل المُعلن</h2>
 <p> بعيدًا عن الأسعار الرئيسية، تفاجئ هذه التكاليف العديد من أصحاب الصالونات:</p>
 <ul>
 <li><strong> رسوم رد المبالغ المدفوعة:</strong> عندما يعترض العميل على رسوم مع البنك الذي يتعامل معه، يفرض المعالج رسومًا (عادةً 15 إلى 25 دولارًا) بغض النظر عن النتيجة. تعمل الأنظمة الأساسية التي تتميز بالتواصل الجيد مع العملاء والإيصالات الواضحة على تقليل تكرار عمليات رد المبالغ المدفوعة.</li>
@@ -1646,7 +1646,7 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <li>أنت تقبل في المقام الأول الدفعات الشخصية ولا تحتاج إلى ميزات متقدمة للدفع عبر الإنترنت أو تحرير الفواتير</li>
 </ul>
 
-<h3>تجنب المنصات القائمة على العمولة إذا:</h3>
+<h3>فكّر مليّاً في المنصات القائمة على العمولة إذا:</h3>
 <ul>
 <li>لديك قاعدة عملاء راسخة ولا تعتمد على اكتشاف السوق لعملاء جدد</li>
 <li> حجم تعاملات عملائك الجدد من المنصة كبير - ستكون العمولات أكبر تكلفة متعلقة بالدفع</li>

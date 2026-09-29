@@ -31,8 +31,8 @@ export const SwitchingCTA: FC<SwitchingCTAProps> = ({
           Ready to switch from {competitorName}?
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg text-[#D5D9D9]">
-          Join businesses that have already made the move to an AI-powered
-          growth platform.
+          Daisy is built for salons that want growth tools, not just a
+          calendar.
         </p>
 
         {/* Switching Reasons */}

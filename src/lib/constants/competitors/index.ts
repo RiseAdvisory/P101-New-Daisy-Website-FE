@@ -29,6 +29,7 @@ export { aiTools, aiToolsI18n } from './aiTools';
 
 // Tier data I18n helpers
 export { getTier1CompetitorsI18n } from './tier1Data';
+import { getTier1CompetitorsI18n } from './tier1Data';
 export { getTier2CompetitorsI18n } from './tier2Data';
 export { getTier3CompetitorsI18n } from './tier3Data';
 
@@ -76,8 +77,24 @@ export function getCompetitorsByTier(tier: CompetitorTier): CompetitorData[] {
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
-/** Get a single competitor by slug */
-export function getCompetitor(slug: string): CompetitorData | undefined {
+/**
+ * Get a single competitor by slug.
+ *
+ * `locale` matters: the Arabic records in tier1Data.ar.ts were unreachable,
+ * because every caller used the English-only `competitors` map. That meant
+ * /ar/compare/daisy-vs-fresha published the English pros, cons, FAQ and FAQ
+ * JSON-LD about a named competitor, and any correction made to the Arabic
+ * record never reached a reader or a crawler. Falls back to English when a
+ * slug has no translated record.
+ */
+export function getCompetitor(
+  slug: string,
+  locale: string = 'en',
+): CompetitorData | undefined {
+  if (locale === 'ar') {
+    const ar = getTier1CompetitorsI18n().ar?.[slug];
+    if (ar) return ar;
+  }
   return competitors[slug];
 }
 
@@ -106,7 +123,10 @@ export function getAiCompetitors(): CompetitorData[] {
 /** Feature rating label */
 export function featureRatingLabel(rating: FeatureRating): string {
   const labels: Record<FeatureRating, string> = {
-    0: 'Not Available',
+    // Was 'Not Available'. These are Daisy's own 0-3 editorial ratings, so a 0
+    // is the absence of a documented capability, not proof the competitor
+    // lacks it. Publishing it as "Not Available" asserted more than we know.
+    0: 'Not published',
     1: 'Basic',
     2: 'Good',
     3: 'Best-in-Class',
@@ -134,6 +154,10 @@ export function compareFeatures(slug: string): {
     { key: 'reportingAndAnalytics', label: 'Reporting & Analytics' },
     { key: 'aiCapabilities', label: 'AI Capabilities' },
     { key: 'brandingAndWhiteLabel', label: 'Branding & White-Label' },
+    // Was omitted, which dropped the single category where competitors most
+    // often beat Daisy (Daisy 0, Fresha 3). A comparison that hides the
+    // competitor's strongest category is indefensible.
+    { key: 'marketplaceAndDiscovery', label: 'Marketplace & Discovery' },
   ];
 
   return categories.map(({ key, label }) => ({

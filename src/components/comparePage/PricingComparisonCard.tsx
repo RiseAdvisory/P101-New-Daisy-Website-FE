@@ -70,7 +70,7 @@ export const PricingComparisonCard: FC<PricingComparisonCardProps> = ({
 }) => {
   const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
   const localeDaisyData = daisyDataI18n[locale as keyof typeof daisyDataI18n] || daisyDataI18n.en;
-  const competitor = getCompetitor(competitorSlug);
+  const competitor = getCompetitor(competitorSlug, locale);
 
   if (!competitor) return null;
 
@@ -80,7 +80,7 @@ export const PricingComparisonCard: FC<PricingComparisonCardProps> = ({
         <h2 className="mb-2 text-center text-3xl font-bold text-[#172524]">
           {heading || t.headingDefault(competitorName)}
         </h2>
-        <p className="mb-10 text-center text-[#455150]" data-geo-answer="true">
+        <p className="mb-10 text-center text-[#455150]">
           {t.transparentPricing}
         </p>
 

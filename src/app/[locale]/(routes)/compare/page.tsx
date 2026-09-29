@@ -14,7 +14,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   const isAr = locale === 'ar';
   return {
     title: isAr
-      ? 'مقارنات ديزي. اكتشف كيف نتفوق | ديزي'
+      ? 'مقارنات ديزي: كيف نقارن | ديزي'
       : 'Daisy Comparisons. See How We Stack Up | The Daisy',
     description: isAr
       ? 'قارن ديزي مع أفضل برامج إدارة الصالونات. مقارنات مفصلة بالميزات والأسعار والقدرات.'
@@ -28,7 +28,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     ],
     openGraph: {
       title: isAr
-        ? 'مقارنات ديزي. اكتشف كيف نتفوق | ديزي'
+        ? 'مقارنات ديزي: كيف نقارن | ديزي'
         : 'Daisy Comparisons. See How We Stack Up | The Daisy',
       description: isAr
         ? 'قارن ديزي مع أفضل برامج إدارة الصالونات. مقارنات مفصلة بالميزات والأسعار والقدرات.'
@@ -40,7 +40,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     twitter: {
       card: 'summary_large_image',
       title: isAr
-        ? 'مقارنات ديزي. اكتشف كيف نتفوق | ديزي'
+        ? 'مقارنات ديزي: كيف نقارن | ديزي'
         : 'Daisy Comparisons. See How We Stack Up | The Daisy',
       description: isAr
         ? 'قارن ديزي مع أفضل برامج إدارة الصالونات. مقارنات مفصلة بالميزات والأسعار والقدرات.'
@@ -93,7 +93,7 @@ export default function CompareIndexPage({ params }: { params: { locale: string 
                   Daisy vs {competitor.name}
                 </h3>
                 <p className="text-sm text-[#586968]">
-                  Tier {competitor.tier} · {competitor.headquarters}
+                  {competitor.headquarters}
                 </p>
                 <p className="mt-2 line-clamp-2 text-sm text-[#455150]">
                   {page.tldr}

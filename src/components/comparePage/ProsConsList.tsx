@@ -43,7 +43,7 @@ export const ProsConsList: FC<ProsConsListProps> = ({ pros, cons, title, heading
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-red-50">
                 <X className="h-4 w-4 text-red-500" strokeWidth={3} />
               </div>
-              <h3 className="text-lg font-bold text-red-600">Limitations</h3>
+              <h3 className="text-lg font-bold text-red-600">Things to weigh</h3>
             </div>
             <ul className="space-y-4">
               {cons.map((con) => (
