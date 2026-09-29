@@ -40,7 +40,8 @@ export interface PricingData {
   startingPrice: string;
   startingPriceNumeric?: number;
   tiers: PricingTier[];
-  transactionFees?: string; // e.g. "2.19% + $0.19"
+  /** Published transaction rate, in the vendor's own currency, e.g. "4.90% + AED 0.75". */
+  transactionFees?: string;
   commissionOnMarketplace?: string; // e.g. "20% on new clients"
   hiddenCosts: string[];
   pricingModel: 'flat' | 'per-staff' | 'per-location' | 'usage-based' | 'hybrid';

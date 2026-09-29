@@ -6,7 +6,7 @@ import { Check, AlertTriangle } from 'lucide-react';
 const uiStrings = {
   en: {
     headingDefault: (name: string) => `How Much Does Daisy Cost vs ${name}?`,
-    transparentPricing: 'Transparent pricing vs hidden costs',
+    transparentPricing: 'One price, versus charges that stack on top',
     recommended: 'Recommended',
     dayFreeTrial: (days: number) => `${days}-day free trial`,
     simpleFlatPricing: 'Simple flat pricing',
@@ -22,14 +22,17 @@ const uiStrings = {
     ],
     freePlanAvailable: 'Free plan available',
     perStaff: '/ staff',
-    hiddenCostsToWatch: 'Hidden costs to watch',
+    // These charges are published by the vendors themselves, so the label says
+    // what they are, costs that stack on top of the subscription, rather than
+    // implying concealment.
+    hiddenCostsToWatch: 'Costs that add up on top',
     additionalFees: 'Additional Fees',
     transactionFee: 'Transaction fee:',
     marketplaceCommission: 'Marketplace commission:',
   },
   ar: {
     headingDefault: (name: string) => `كم تكلفة ديزي مقارنة بـ ${name}؟`,
-    transparentPricing: 'تسعير شفاف مقابل تكاليف مخفية',
+    transparentPricing: 'سعر واحد، مقابل رسوم تُضاف فوق الاشتراك',
     recommended: 'موصى به',
     dayFreeTrial: (days: number) => `تجربة مجانية لمدة ${days} يوم`,
     simpleFlatPricing: 'تسعير ثابت بسيط',
@@ -45,7 +48,7 @@ const uiStrings = {
     ],
     freePlanAvailable: 'باقة مجانية متاحة',
     perStaff: '/ موظف',
-    hiddenCostsToWatch: 'تكاليف مخفية يجب مراقبتها',
+    hiddenCostsToWatch: 'تكاليف تُضاف فوق الاشتراك',
     additionalFees: 'رسوم إضافية',
     transactionFee: 'رسوم المعاملات:',
     marketplaceCommission: 'عمولة السوق:',

@@ -47,6 +47,12 @@ tmpclaude-*
 /docs/*
 !/docs/daisy-authors/
 !/docs/daisy-authors/**
+# Competitor claims audit + pre-edit archives. Tracked deliberately: a cease
+# and desist was received, so the audit findings and the timestamped record of
+# what was published before any correction must be versioned, not left only on
+# one machine.
+!/docs/competitor-claims-audit/
+!/docs/competitor-claims-audit/**
 # Channel alignment: store listing copy, screenshot asset locations, audit log.
 # Deliberately tracked so the store source of truth is versioned. Credentials
 # stay in ~/.daisy and must never be referenced here by id or account email.

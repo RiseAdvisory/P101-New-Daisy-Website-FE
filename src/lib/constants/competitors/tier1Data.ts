@@ -29,63 +29,59 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       staffManagement: 2,
       marketingAndCrm: 1,
       inventoryManagement: 1,
-      reportingAndAnalytics: 2,
+      reportingAndAnalytics: 3, // 60 reports + live dashboards, evidenced in Fresha's own Schedule 4
       marketplaceAndDiscovery: 3,
-      aiCapabilities: 1,
+      aiCapabilities: 2, // AI Concierge answers calls and books; Daisy still spans more channels
       brandingAndWhiteLabel: 0,
     },
 
     pricing: {
       hasFreePlan: false,
       freeTrialDays: 14,
-      startingPrice: 'From $9.95/mo + fees',
-      startingPriceNumeric: 9.95,
+      // Fresha publishes local-currency pricing per market. These are its published
+      // UAE figures (fresha.com/pricing, UAE), the market these pages address.
+      // Source: Fresha's own schedules, 2026-09-29.
+      startingPrice: 'From AED 149.95/mo (UAE Independent plan)',
+      // Sorting only, never displayed: approximate USD equivalent of AED 149.95
+      // so the price sort stays meaningful across a USD-denominated list.
+      startingPriceNumeric: 40.83,
       tiers: [
         {
-          name: 'Starter',
-          price: '$9.95/mo',
-          priceNumeric: 9.95,
+          name: 'Independent',
+          price: 'AED 149.95/mo',
+          priceNumeric: 149.95,
           features: [
+            'One team member',
+            'Multiple locations',
             'Appointment scheduling',
-            'Calendar management',
             'Client database',
-            'Basic reporting',
           ],
         },
         {
-          name: 'Standard',
-          price: '$25/mo',
-          priceNumeric: 25,
+          name: 'Team',
+          price: 'Custom rates',
           features: [
-            'All Starter features',
-            'Online payments',
-            'Email marketing',
-            'Google integration',
-          ],
-        },
-        {
-          name: 'Premium',
-          price: 'Custom pricing',
-          features: [
-            'All Standard features',
-            'Marketplace listing',
-            'Advanced marketing',
-            'Priority support',
+            'Unlimited team members',
+            'Phone support',
+            'Team management',
           ],
         },
       ],
-      transactionFees: '2.19% + $0.20 per transaction',
-      commissionOnMarketplace: '20% on new clients from marketplace',
+      transactionFees: 'Online payments 4.90% + AED 0.75 per transaction (UAE published)',
+      commissionOnMarketplace: 'One-time 50% commission on new marketplace clients (minimum AED 20); returning clients free',
+      // Fresha publishes all of these on its own pricing page. Figures below are
+      // its published UAE rates, so the point is that they stack, not that they
+      // are concealed.
       hiddenCosts: [
-        'Transaction fees on all card payments on top of subscription',
-        'Marketplace commission on new clients',
-        'SMS/email campaign costs per message',
-        'No-show protection fees',
-        'Previously free features now require paid plans',
+        'Online payments charged at 4.90% + AED 0.75 per transaction, on top of the subscription',
+        'One-time 50% commission on new marketplace clients, minimum AED 20',
+        'Marketing emails free for the first 50 each month, then AED 0.08 each; texts AED 0.14',
+        'Insights add-on at AED 319.95 per bookable team member per month',
+        'Previously free features now require a paid plan',
       ],
       pricingModel: 'hybrid',
-      pricingPageUrl: 'https://www.fresha.com/for-business/pricing',
-      lastVerified: '2026-03-14',
+      pricingPageUrl: 'https://www.fresha.com/pricing',
+      lastVerified: '2026-09-29',
     },
 
     reviews: [
@@ -96,9 +92,18 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     ],
 
     gccPresence: {
-      hasArabicUI: false,
-      arabicQuality: 'none',
-      gccCountries: ['UAE'],
+      hasArabicUI: true,
+      // Fresha announced "Fresha is live in Arabic" (fresha.com/blog/expanding-in-the-GCC,
+      // 2025-07). Verified 2026-09-29: fresha.com/ar/pricing serves <html lang="ar" dir="rtl">.
+      // 'translated' not 'native': an Arabic UI demonstrably exists, but we have not
+      // established localisation depth or local payment rails. Not 'none'.
+      arabicQuality: 'translated',
+      // All six GCC states. Fresha publishes local-currency pricing in each:
+      // AED 149.95 (UAE), SAR 149.95 (KSA), QAR 149.95 (Qatar), OMR 11.95 (Oman),
+      // BHD 14.95 (Bahrain), and operates in Kuwait. An earlier correction here
+      // listed five and omitted Bahrain; Fresha's own published Bahrain pricing
+      // shows that was wrong.
+      gccCountries: ['UAE', 'KSA', 'Qatar', 'Oman', 'Bahrain', 'Kuwait'],
       localCompliance: false,
       localPaymentMethods: false,
       localSupport: false,
@@ -112,7 +117,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'No AI today. An AI receptionist was announced for 2026 and has not launched. What exists is automated confirmations and reminders.',
+        'Fresha publishes an AI Concierge that answers calls and books appointments. Pricing for it is not listed publicly. Compare scope: Daisy\'s AI receptionist also covers WhatsApp and Instagram chat, and works in Arabic and English.',
     },
 
     targetMarket:
@@ -149,7 +154,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Independent beauty professionals and small salon owners after affordable software that also gets them found',
       toneAndVoice: 'Simple and direct, leaning on ease of use and the size of the marketplace',
       keyMessages: [
-        'Affordable plans starting at $9.95/mo',
+        'Competitively priced plans, published per market',
         '450M+ appointments booked',
         '100K+ partner venues',
         'All-in-one platform',
@@ -208,18 +213,18 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     },
 
     daisyAdvantages: [
-      '24/7 AI receptionist vs no AI. Daisy handles calls, bookings, and payments automatically',
+      'AI receptionist across calls, WhatsApp and Instagram, in Arabic and English, taking bookings and payments',
       'Official Meta Tech Provider with native WhatsApp Business API and Instagram integration vs no messaging automation',
       '360° customer acquisition (marketplace + cashback + AI marketing) vs marketplace-only discovery',
-      'Native Arabic UI with equal Arabic/English priority vs English-only platform',
+      'Arabic and English treated as equals across the whole product, not a translated layer',
       'Branded booking page with no Daisy branding vs Fresha-branded experience',
       'Predictable flat pricing vs subscription fees plus transaction fees and commissions',
       'AI-powered analytics and recommendations vs basic static reports',
-      'Complete GCC compliance (VAT, local payment methods) vs limited UAE presence',
+      'GCC-built with local payment methods, vs confirming rails and compliance market by market',
     ],
 
     daisySwitchingReasons: [
-      'Tired of paying 20% commission on marketplace bookings',
+      'Tired of paying a one-time 50% commission on new marketplace clients',
       'Need Arabic language support for GCC clients',
       'Want AI to handle after-hours calls and bookings',
       'Need more than basic marketing, want proactive customer acquisition',
@@ -230,19 +235,19 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     competitorStrengths: [
       'Largest beauty marketplace (25M+ consumers)',
-      'Low starting price ($9.95/mo) for basic features',
+      'Competitive entry price, published in local currency per market',
       'Very high app store ratings and consumer adoption',
       'Global presence with strong brand recognition',
       'Simple, intuitive user interface',
     ],
 
     competitorWeaknesses: [
-      'No AI capabilities (receptionist, chatbot, or smart scheduling)',
-      'No Arabic UI. English only',
+      'AI Concierge covers phone calls; no comparable AI across WhatsApp and Instagram chat',
+      'Arabic UI exists; confirm localisation depth and local payment rails for your market',
       'Subscription fees plus transaction fees and marketplace commissions add up quickly',
-      'Basic marketing tools (no AI, no CRM automation)',
+      'Marketing tools are basic next to AI-driven campaigns and CRM automation',
       'No branding control, all customer-facing pages are Fresha-branded',
-      'Limited GCC presence, no local compliance, payment methods, or support',
+      'Confirm local payment rails and tax compliance for your specific GCC market',
       'Recent pricing changes causing partner dissatisfaction',
     ],
 
@@ -250,7 +255,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How much does Fresha cost?',
         answer:
-          'Fresha is no longer free. Plans open at $9.95/month for the basics, with higher tiers above that. On top of the subscription come transaction fees of 2.19% + $0.20 on every card payment, 20% commission on new marketplace clients, and a per-message charge for marketing campaigns. A salon running $10,000/month through cards pays $239 in transaction fees alone, before the subscription and the marketplace commission.',
+          'Fresha is no longer free, and it prices per market. In the UAE its published rate is AED 149.95 per month for the Independent plan, with Team plans at custom rates. On top of the subscription sit online payments at 4.90% + AED 0.75 per transaction, a one-time 50% commission on new marketplace clients with a minimum of AED 20, and per-message charges for marketing once the first 50 emails each month are used. Those charges stack, so the monthly total is worth working out for your own volume rather than reading off the headline plan price.',
       },
       {
         question: 'How does Daisy compare to Fresha for salon management?',
@@ -265,17 +270,17 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Fresha work in the Middle East?',
         answer:
-          'Fresha has some UAE presence, but no Arabic, no local payment methods and nothing for GCC compliance. Daisy was built for the GCC, with a native Arabic interface and local payment integration, and is live in Kuwait today.',
+          'Yes. Fresha states it is live in Arabic and runs teams in Dubai and Saudi Arabia, with local operations launching in Qatar, Oman and Kuwait. Worth checking for your own market is how deep that localisation goes and which local payment methods are supported. Daisy was built for the GCC from the start, with Arabic and English as equals, local payment integration, and is live in Kuwait today.',
       },
       {
         question: 'Is Fresha really free to use?',
         answer:
-          'No. The free plan is gone. Fresha now charges a monthly subscription from $9.95/mo, plus 2.19% + $0.20 per card transaction, 20% commission on new marketplace clients, and a fee per marketing message. The "free" branding is out of date. Daisy charges one transparent all-inclusive price, with no hidden commission and no per-message charge.',
+          'No. The free plan is gone. Fresha now charges a monthly subscription, AED 149.95 in the UAE for the Independent plan, plus online payments at 4.90% + AED 0.75 per transaction, a one-time 50% commission on new marketplace clients, and per-message charges for marketing beyond the first 50 emails a month. Daisy charges one all-inclusive price, with no marketplace commission and no per-message charge.',
       },
       {
-        question: 'What are the hidden costs of using Fresha?',
+        question: 'What does Fresha cost on top of the subscription?',
         answer:
-          'Past the subscription, Fresha takes 2.19% + $0.20 on every card payment, 20% commission on new clients who come through the marketplace, a fee for SMS and email campaigns, and a charge for no-show protection. Stacked together these can run past the subscription itself. Daisy folds marketing, AI and payment processing into plain plans with nothing added later.',
+          'Fresha publishes these charges on its own pricing page, so they are not concealed, but they do stack. In the UAE: online payments at 4.90% + AED 0.75 per transaction, a one-time 50% commission on new marketplace clients with an AED 20 minimum, marketing emails free for the first 50 each month and then AED 0.08 each, texts at AED 0.14, and an Insights add-on at AED 319.95 per bookable team member per month. Added together these can exceed the subscription itself. Daisy folds marketing, AI and payment processing into one plan price.',
       },
       {
         question: 'How hard is it to migrate my data from Fresha?',
@@ -285,7 +290,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Fresha have AI features like Daisy?',
         answer:
-          'Fresha announced an AI receptionist for 2026 and it has not shipped. As things stand there is no AI in Fresha for marketing, scheduling or customer engagement. Daisy\'s AI receptionist is live today, taking bookings, payments and customer service 24/7 in Arabic and English.',
+          'Fresha publishes an AI Concierge that answers calls and books appointments; it does not list a price for it publicly. The comparison worth making is scope rather than presence: Daisy\'s AI receptionist handles calls and WhatsApp and Instagram chat, takes payments, and works in Arabic and English.',
       },
       {
         question: 'How good is the Fresha mobile app?',
@@ -295,13 +300,13 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Can I reach Fresha customer support quickly?',
         answer:
-          'Support runs through email and in-app chat, and plenty of users report slow replies, particularly since moving off the free model pushed their support volume up. There is no phone line. Daisy gives every plan a dedicated account manager, live chat and phone support with priority response.',
+          'Fresha publishes email support with a typical two-day response, chat with a typical two-minute response on all plans, and phone support on the Team plan. Daisy gives every plan a dedicated account manager, live chat and phone support with priority response, without reserving the phone channel for a higher tier.',
       },
     ],
 
     lastResearched: '2026-03-13',
     notes:
-      'No longer free. Monthly subscriptions now sit on top of transaction fees, which has drawn partner backlash. The AI receptionist announced for 2026 has not arrived. Main vulnerability: no Arabic support, and costs that compound across subscription, transaction fees and commissions.',
+      'No longer free. Monthly subscriptions now sit on top of transaction fees, which has drawn partner backlash. Fresha ships an AI Concierge for calls and is live in Arabic with GCC teams, so the old absence claims no longer hold. Main vulnerability: costs that compound across subscription, transaction fees and commissions.',
   },
 
   // ---------------------------------------------------------------------------
@@ -350,7 +355,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
             'Calendar management',
             'Client management',
             'Marketplace listing',
-            'Digital Doorman AI',
+            'AI Receptionist (beta)',
             'Basic reporting',
           ],
         },
@@ -405,7 +410,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'The "Digital Doorman" AI voice receptionist answers the phone and passes callers to booking. A Google AI Mode integration has been announced. There is no AI chatbot, no scheduling optimization and no marketing automation.',
+        'Booksy\'s AI Receptionist (beta) answers calls day or night and books the appointment onto the Booksy calendar. It is English and Spanish, and access is request-based while in beta. There is no AI chatbot for WhatsApp or Instagram, no scheduling optimization and no marketing automation.',
     },
 
     targetMarket:
@@ -445,7 +450,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         '380K+ service providers',
         'Mobile-first booking experience',
         'Marketplace discovery',
-        'Digital Doorman AI receptionist',
+        'AI Receptionist (beta)',
         'Manage your business from your phone',
       ],
     },
@@ -485,7 +490,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       growthFeatures: [
         'Consumer marketplace',
         'Social media booking',
-        'Digital Doorman AI for calls',
+        'AI Receptionist for calls (beta)',
       ],
       operationsFeatures: [
         'Mobile calendar',
@@ -495,11 +500,11 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Inventory tracking',
       ],
       assessment:
-        'Operations-focused, with the marketplace as its main growth channel. Digital Doorman is promising but handles calls and nothing else. No marketing or acquisition tools that work on their own.',
+        'Operations-focused, with the marketplace as its main growth channel. Its AI Receptionist books from phone calls, but stops at the phone: no WhatsApp or Instagram, and no marketing or acquisition tools that work on their own.',
     },
 
     daisyAdvantages: [
-      'Full AI ecosystem (receptionist + chatbot + smart scheduling + marketing) vs single "Digital Doorman" feature',
+      'Full AI ecosystem (receptionist + chatbot + smart scheduling + marketing) vs a phone-only AI receptionist',
       'Official Meta Tech Provider with native WhatsApp and Instagram messaging vs no messaging platform integration',
       'Native multilingual support (Arabic/English and more) vs English-only platform',
       'Customer acquisition engine with cashback rewards vs basic marketplace listing',
@@ -521,7 +526,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     competitorStrengths: [
       'Excellent mobile app experience',
       'Strong in barbershop vertical',
-      'Digital Doorman AI voice receptionist',
+      'AI Receptionist that books from calls (beta)',
       'Large consumer marketplace',
       'Google AI Mode integration announced',
       'Affordable per-provider pricing for solopreneurs',
@@ -549,9 +554,9 @@ export const tier1Competitors: Record<string, CompetitorData> = {
           'Booksy has no GCC presence at all: no Arabic interface, no local payment methods, nothing for regional compliance. Daisy was built for the Middle East, with a native Arabic interface, local payment integration and full GCC compliance across UAE, KSA, Kuwait, Bahrain, Oman and Qatar.',
       },
       {
-        question: 'What is Booksy\'s Digital Doorman?',
+        question: 'What is Booksy\'s AI Receptionist?',
         answer:
-          'Digital Doorman is Booksy\'s AI voice receptionist. It answers the phone and points callers at online booking. Routing is where it stops: it cannot take a payment, answer a detailed question or cover customer service 24/7. Daisy\'s AI receptionist handles calls, bookings, payments and customer service in Arabic and English.',
+          'Booksy\'s AI Receptionist answers calls day or night and books the appointment for the caller. It is in beta, request-based, and covers English and Spanish on the phone channel. Daisy\'s AI receptionist handles calls, bookings, payments and customer service in Arabic and English.',
       },
       {
         question: 'Can I switch from Booksy to Daisy?',
@@ -571,7 +576,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Booksy\'s AI compare to Daisy\'s AI receptionist?',
         answer:
-          'Digital Doorman answers the phone and redirects callers to online booking, which makes it a call router. It cannot take payments, answer detailed service questions or work through a complicated booking. Daisy\'s AI receptionist carries the whole journey: answering questions, booking, taking payment and following up, 24/7 in Arabic and English.',
+          'Booksy\'s AI Receptionist books from phone calls, in beta, in English and Spanish. The difference is channel and scope rather than presence: Daisy\'s AI receptionist carries the whole journey across phone, WhatsApp and Instagram in Arabic and English: answering questions, booking, taking payment and following up, 24/7 in Arabic and English.',
       },
       {
         question: 'Is the Booksy app good for salon owners?',
@@ -592,7 +597,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     lastResearched: '2026-03-13',
     notes:
-      'Strong on mobile and strong with barbershops. Digital Doorman is a real competitive move, though narrow next to a full AI platform, and the Google AI Mode integration could firm up its position. No GCC presence at all is the key weakness.',
+      'Strong on mobile and strong with barbershops. Its AI Receptionist books from phone calls, which is a real competitive move, though narrower than AI across every channel, and the Google AI Mode integration could firm up its position. No GCC presence at all is the key weakness.',
   },
 
   // ---------------------------------------------------------------------------
@@ -1006,7 +1011,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'No AI of its own. The AI front desk, Messenger[ai], is a third-party add-on costing about ~$199/mo on top. Higher tiers include basic automated marketing. No smart scheduling and no AI analytics.',
+        'Mindbody lists an AI Concierge that turns missed calls into bookings, alongside the Messenger[ai] front desk which is a paid add-on. Both sit on the phone and messaging front desk rather than across the platform: no smart scheduling and no AI analytics.',
     },
 
     targetMarket:
@@ -1186,7 +1191,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Mindbody have real AI or is it just marketing?',
         answer:
-          'The AI arrived through the Messenger[ai] acquisition, which answers calls and does basic booking. It is a paid add-on at about ~$199/mo and sits loosely on top of the platform rather than inside it. The core product has no AI marketing, no scheduling optimization and no predictive analytics. Daisy includes the receptionist, marketing and smart scheduling in the base plan.',
+          'Mindbody lists an AI Concierge for turning missed calls into bookings, and the Messenger[ai] front desk as a paid add-on. Both sit on the front desk rather than across the platform: the core product has no AI marketing, no scheduling optimization and no predictive analytics. Daisy includes the receptionist, marketing and smart scheduling in the base plan.',
       },
       {
         question: 'How hard is it to move my data out of Mindbody?',
@@ -1219,7 +1224,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     website: 'https://www.zenoti.com',
     tier: 1,
     description:
-      'Enterprise-grade, AI-first management platform for salons, spas and med spas. Its 6 AI agents make it the most comprehensive AI suite in the industry. A Dubai office gives it real GCC presence.',
+      'Enterprise-grade, AI-first management platform for salons, spas and med spas. Its AI Workforce, marketed as nine AI agents, is among the most comprehensive AI suites in the industry. A Dubai office gives it real GCC presence.',
     founded: '2010',
     headquarters: 'Bellevue, WA, USA',
     employeeCount: '1,500+',
@@ -1310,7 +1315,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: true,
       hasAiPricing: true,
       aiDescription:
-        'The most comprehensive AI suite available: 6 AI agents covering the phone receptionist, marketing campaigns, review management, scheduling optimization, analytics and staff recommendations. AI comes first here, and the investment continues.',
+        'The most comprehensive AI suite available: nine AI agents covering the phone receptionist, marketing campaigns, review management, scheduling optimization, analytics and staff recommendations. AI comes first here, and the investment continues.',
     },
 
     targetMarket:
@@ -1348,7 +1353,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Multi-location salon, spa and med spa owners who want enterprise features and AI automation',
       toneAndVoice: 'Enterprise and technology-forward, always arguing from ROI',
       keyMessages: [
-        'AI-first platform with 6 AI agents',
+        'AI-first platform marketing nine AI agents',
         'Built for multi-location businesses',
         'Enterprise-grade reliability',
         '$282M+ funded by top VCs',
@@ -1408,7 +1413,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Compliance tools',
       ],
       assessment:
-        'The most growth-oriented competitor of the set, and the most AI-first. A solid operations foundation with 6 AI agents working on top of it. Most of those AI features sit in the higher enterprise tiers. On AI, this is Daisy\'s most direct competitor.',
+        'The most growth-oriented competitor of the set, and the most AI-first. A solid operations foundation with nine AI agents working on top of it. Most of those AI features sit in the higher enterprise tiers. On AI, this is Daisy\'s most direct competitor.',
     },
 
     daisyAdvantages: [
@@ -1454,7 +1459,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Zenoti\'s AI compare to Daisy\'s?',
         answer:
-          'Zenoti has the most comprehensive AI suite of any traditional platform, running 6 AI agents. Those features generally sit in enterprise tiers behind opaque pricing. Daisy puts the AI receptionist, smart scheduling and AI marketing in the base platform at a published price, and adds the native Arabic support Zenoti does not have.',
+          'Zenoti has the most comprehensive AI suite of any traditional platform, marketing nine AI agents. Those features generally sit in enterprise tiers behind opaque pricing. Daisy puts the AI receptionist, smart scheduling and AI marketing in the base platform at a published price, and adds the native Arabic support Zenoti does not have.',
       },
       {
         question: 'Is Zenoti suitable for small salons?',

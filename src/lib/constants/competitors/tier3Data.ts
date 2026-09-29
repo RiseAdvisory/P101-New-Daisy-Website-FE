@@ -135,12 +135,13 @@ export const tier3Competitors: Record<string, CompetitorData> = {
 
     pricing: {
       hasFreePlan: false,
-      startingPrice: '$165/mo',
-      startingPriceNumeric: 165,
+      // Mangomint moved to per-location + per-user pricing. Verified on
+      // mangomint.com/pricing 2026-09-29: "$120 per location and $10 per user".
+      startingPrice: 'From $120/mo per location + $10 per user',
+      startingPriceNumeric: 120,
       tiers: [
-        { name: 'Essentials', price: '$165/mo', priceNumeric: 165, billingCycle: 'monthly', features: ['Booking', 'Calendar', 'POS', 'Client management'] },
-        { name: 'Standard', price: '$245/mo', priceNumeric: 245, billingCycle: 'monthly', features: ['Everything in Essentials', 'Marketing', 'Advanced reporting', 'Automations'] },
-        { name: 'Unlimited', price: '$375/mo', priceNumeric: 375, billingCycle: 'monthly', features: ['Everything in Standard', 'Unlimited staff', 'API access', 'Priority support'] },
+        { name: 'Per location', price: '$120/mo each', priceNumeric: 120, billingCycle: 'monthly', features: ['Booking', 'Calendar', 'POS', 'Client management'] },
+        { name: 'Per user', price: '$10/mo each', priceNumeric: 10, billingCycle: 'monthly', features: ['Added for every user on the account'] },
       ],
       hiddenCosts: ['Premium pricing', 'Payment processing fees', 'Limited marketing tools'],
       pricingModel: 'flat',
@@ -165,7 +166,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
 
     daisyAdvantages: [
       'AI receptionist and chatbot vs no AI', 'Consumer marketplace vs no marketplace',
-      'More affordable pricing vs $165-375/mo', 'Arabic/English support vs US-only',
+      'Pricing that does not climb with every location and user', 'Arabic/English support vs US-only',
       'Customer acquisition engine vs operations-only', 'GCC compliance',
     ],
     daisySwitchingReasons: [
@@ -177,19 +178,19 @@ export const tier3Competitors: Record<string, CompetitorData> = {
       'Excellent staff management', 'Modern tech stack',
     ],
     competitorWeaknesses: [
-      'Premium pricing ($165-375/mo)', 'US-only', 'No AI', 'No marketplace',
+      'Cost climbs with every location and user ($120/location + $10/user)', 'US-only', 'No marketplace',
       'No Arabic/GCC', 'Small review base', 'No customer acquisition tools',
     ],
 
     faq: [
-      { question: 'How does Mangomint compare to Daisy?', answer: 'Mangomint is premium US salon software at $165-375/mo, beautifully designed and strong on automation. Daisy adds an AI receptionist, a marketplace, cashback and Arabic support, and costs less. Mangomint is built to run a salon, Daisy to grow one.' },
-      { question: 'Why is Mangomint so expensive compared to other salon software?', answer: 'Mangomint sells itself as a premium product, with a clean interface and strong automations, from $165/mo up to $375/mo. The design earns the price; the missing AI, absent customer marketplace and lack of any Arabic or GCC support do not. Daisy offers more, including the AI receptionist and acquisition tools, for less.' },
+      { question: 'How does Mangomint compare to Daisy?', answer: 'Mangomint is premium US salon software charging $120 per location plus $10 per user, beautifully designed and strong on automation. Daisy adds an AI receptionist, a marketplace, cashback and Arabic support, and costs less. Mangomint is built to run a salon, Daisy to grow one.' },
+      { question: 'Why is Mangomint so expensive compared to other salon software?', answer: 'Mangomint sells itself as a premium product, with a clean interface and strong automations, at $120 per location plus $10 per user, so the cost climbs with the team. The design earns the price; the absent customer marketplace and lack of any Arabic or GCC support do not. Daisy offers more, including the AI receptionist and acquisition tools, for less.' },
       { question: 'Can I switch from Mangomint to Daisy without losing my data?', answer: 'Yes. Daisy moves your client records, appointment history, staff schedules and service menus across from Mangomint, and handles the transition so the business never goes offline.' },
       { question: 'Does Mangomint support Arabic or work in the Middle East?', answer: 'No. Mangomint serves the US only, in English. There is no Arabic, no GCC compliance and no local payment integration. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today.' },
       { question: 'Does Mangomint have an AI receptionist or AI features?', answer: 'No. The workflow automations are smart, but none of it is AI: no receptionist, no chatbot, no AI marketing. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments on its own.' },
-      { question: 'Is Mangomint worth $375 a month for my salon?', answer: 'The Unlimited plan at $375/mo buys excellent operations tools and nothing that acquires customers, no AI and no marketplace visibility. For a salon trying to grow rather than simply run, Daisy\'s AI platform with its marketplace and cashback usually returns more, for less.' },
+      { question: 'Is Mangomint worth it for my salon?', answer: 'At $120 per location plus $10 per user it buys excellent operations tools and nothing that acquires customers, no AI and no marketplace visibility. For a salon trying to grow rather than simply run, Daisy\'s AI platform with its marketplace and cashback usually returns more, for less.' },
       { question: 'How does Mangomint\'s mobile app compare to Daisy?', answer: 'Mangomint\'s app is well designed and built around scheduling and operations. Daisy\'s adds the AI receptionist, marketplace visibility, live acquisition analytics and Arabic and English throughout, which takes it past operations into growth.' },
-      { question: 'What integrations does Mangomint offer compared to Daisy?', answer: 'It connects to payment processors and a handful of third-party tools, with API access reserved for the Unlimited plan at $375/mo. Daisy has payments, marketing, CRM and acquisition built into one platform, along with GCC payment methods such as mada and Knet.' },
+      { question: 'What integrations does Mangomint offer compared to Daisy?', answer: 'It connects to payment processors and a handful of third-party tools, with add-ons priced separately on top of the per-location and per-user fees. Daisy has payments, marketing, CRM and acquisition built into one platform, along with GCC payment methods such as mada and Knet.' },
       { question: 'Does Mangomint help me get new customers or just manage existing ones?', answer: 'Mangomint looks after the clients you already have. There is no marketplace, nothing for discovery and no cashback. Daisy includes a consumer marketplace, a cashback program and AI-powered marketing to bring new customers in.' },
     ],
 
@@ -238,24 +239,24 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     aiCapabilities: {
       hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: true, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'AI stretches to suggesting marketing campaigns. No receptionist, no chatbot, no smart scheduling.',
+      aiDescription: 'Phorest sells Front Desk AI for everyday front-desk conversations and Cheat Sheet AI for client-history summaries, alongside AI marketing campaign suggestions. No AI across WhatsApp or Instagram, and no smart scheduling.',
     },
 
     daisyAdvantages: [
-      'Full AI ecosystem vs basic marketing AI only', 'Arabic/English vs English-only',
+      'AI across calls, WhatsApp and Instagram vs front-desk and marketing AI', 'Arabic/English vs English-only',
       'Consumer marketplace vs no marketplace', 'GCC presence vs UK/Ireland-only',
       'Cashback rewards vs traditional loyalty points',
     ],
     daisySwitchingReasons: ['Need Arabic/GCC support', 'Want AI receptionist', 'Want marketplace for customer discovery'],
     competitorStrengths: ['Excellent CRM and loyalty tools', 'Strong UK/Ireland market position', 'Good marketing automation', 'Established brand (2003)'],
-    competitorWeaknesses: ['UK/Ireland-focused', 'No Arabic/GCC', 'Limited AI', 'No marketplace', 'Opaque pricing'],
+    competitorWeaknesses: ['UK/Ireland-focused', 'No Arabic/GCC', 'No AI across WhatsApp or Instagram', 'No marketplace', 'Opaque pricing'],
 
     faq: [
       { question: 'How does Phorest compare to Daisy?', answer: 'Across the UK and Ireland, Phorest is very good at CRM and loyalty. Daisy adds an AI receptionist, a marketplace, cashback and Arabic and GCC support, none of which Phorest has. Phorest keeps the clients you have; Daisy also finds you new ones.' },
       { question: 'Is Phorest pricing transparent or are there hidden fees?', answer: 'The starter plan sits around $99/mo, and everything above it needs a custom quote you cannot look up. SMS charges and payment processing fees come on top. Daisy charges a flat published rate, with nothing per message and nothing hidden.' },
       { question: 'Can I move my client database from Phorest to Daisy?', answer: 'Yes. Daisy migrates Phorest users itself, bringing across client records, loyalty points history, appointment data and marketing preferences, with the onboarding team handling the transition.' },
       { question: 'Does Phorest work in Arabic or support salons in the GCC?', answer: 'No. Phorest serves the UK and Ireland in English only, with no Arabic, no GCC compliance and no local Middle Eastern payment methods. Daisy runs natively in Arabic and English with full GCC compliance across all six countries.' },
-      { question: 'Does Phorest have AI features like Daisy?', answer: 'The AI suggests marketing campaigns and stops there. No receptionist, no chatbot, no smart scheduling. Daisy runs a complete AI ecosystem, including a 24/7 receptionist that handles bookings and customer questions by itself.' },
+      { question: 'Does Phorest have AI features like Daisy?', answer: 'Yes. Phorest sells Front Desk AI and Cheat Sheet AI, plus AI marketing suggestions. The difference is channel coverage rather than presence: Daisy runs a complete AI ecosystem, including a 24/7 receptionist that handles bookings and customer questions by itself.' },
       { question: 'How does Phorest\'s loyalty program compare to Daisy\'s cashback?', answer: 'Phorest runs a traditional points system, which works on the clients you already have. Daisy\'s cashback rewards hold those clients and pull new ones in through the consumer marketplace, so retention and acquisition run on the same mechanism.' },
       { question: 'Is Phorest good for salons outside the UK and Ireland?', answer: 'Phorest has reached a little past the UK and Ireland, though its expertise and its support still sit there. There is no Middle East presence, no Arabic and nothing built for the GCC. Daisy works across markets and is strongest in the Gulf.' },
       { question: 'How does Phorest\'s mobile app compare to Daisy?', answer: 'Phorest\'s app centres on CRM and marketing management. Daisy\'s adds the AI receptionist, marketplace visibility, cashback tracking and full Arabic and English support for owners and their clients alike.' },

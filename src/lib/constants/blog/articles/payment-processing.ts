@@ -706,10 +706,9 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <p>Fresha is a beauty-specific booking platform with payment processing built in.</p>
 <ul>
 <li><strong>Processing model:</strong> Flat-rate plus commission on new clients</li>
-<li><strong>Card-present rate:</strong> 2.19% + $0.20 per transaction</li>
-<li><strong>Online rate:</strong> 2.19% + $0.20 per transaction</li>
-<li><strong>Commission on new client bookings:</strong> 20% commission on the first booking from new clients acquired through the Fresha marketplace</li>
-<li><strong>Monthly platform fee:</strong> Free base plan (with limited features); paid add-ons for marketing, reporting, and advanced tools</li>
+<li><strong>Online payments (UAE published):</strong> 4.90% + AED 0.75 per transaction</li>
+<li><strong>Commission on new client bookings:</strong> a one-time 50% commission on new clients acquired through the Fresha marketplace, minimum AED 20; returning clients free</li>
+<li><strong>Monthly platform fee:</strong> priced per market, AED 149.95 per month for the Independent plan in the UAE, with Team plans at custom rates</li>
 <li><strong>Key consideration:</strong> the headline processing rate is competitive, and the 20% new client commission is where the cost sits. If 30% of your monthly bookings come from new Fresha marketplace clients, what you actually pay is well above the stated rate. A salon doing 100 bookings per month averaging 250 AED, where 30 are new marketplace clients, pays roughly 1,500 AED in commissions alone, before any processing fees.</li>
 </ul>
 
@@ -1568,9 +1567,8 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <p>Fresha هي عبارة عن منصة حجز خاصة بالجمال مع معالجة متكاملة للدفع.</p>
 <ul>
 <li><strong>نموذج المعالجة:</strong> السعر الثابت بالإضافة إلى العمولة على العملاء الجدد</li>
-<li><strong>سعر وجود البطاقة:</strong> 2.19% + 0.20 دولار لكل معاملة</li>
-<li><strong>السعر عبر الإنترنت:</strong> 2.19% + 0.20 دولار لكل معاملة</li>
-<li><strong>عمولة على حجوزات العملاء الجدد:</strong> عمولة 20% على الحجز الأول من العملاء الجدد الذين تم الحصول عليهم من خلال سوق Fresha</li>
+<li><strong>المدفوعات الإلكترونية (منشور للإمارات):</strong> 4.90% + 0.75 درهم لكل معاملة</li>
+<li><strong>عمولة على حجوزات العملاء الجدد:</strong> عمولة لمرة واحدة 50% على العملاء الجدد القادمين من سوق Fresha، بحد أدنى 20 درهماً؛ العملاء العائدون مجاناً</li>
 <li><strong>رسوم النظام الأساسي الشهرية:</strong> خطة أساسية مجانية (مع ميزات محدودة)؛ إضافات مدفوعة للتسويق وإعداد التقارير والأدوات المتقدمة</li>
 <li><strong>الاعتبار الرئيسي:</strong> يعد معدل معالجة العناوين الرئيسية لشركة Fresha تنافسيًا، ولكن عمولة العميل الجديد البالغة 20% هي التكلفة المخفية. إذا كانت 30% من حجوزاتك الشهرية تأتي من عملاء سوق Fresha الجدد، فإن تكلفة المعالجة الفعلية الخاصة بك أعلى بكثير من المعدل المذكور. يقوم صالون بإجراء 100 حجز شهريًا بمتوسط 250 درهمًا إماراتيًا، حيث 30 من عملاء السوق الجدد، يدفع ما يقرب من 1500 درهم إماراتي كعمولات فقط - بالإضافة إلى رسوم المعالجة.</li>
 </ul>

@@ -36,14 +36,44 @@ export function ProductComparisonSchema({
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Web, iOS, Android',
         ...(product.url && { url: product.url }),
-        ...(product.startingPrice && {
-          offers: {
-            '@type': 'Offer',
-            price: product.startingPrice.replace(/[^0-9.]/g, ''),
-            priceCurrency: 'USD',
-            description: product.startingPrice,
-          },
-        }),
+        ...(() => {
+          // Prices are published in local currency and differ by market, so the
+          // currency must be read from the string rather than assumed. Emitting a
+          // local-currency figure as USD would publish a false price in structured
+          // data, which search engines ingest. If the currency cannot be
+          // determined, omit the offer rather than guess.
+          const raw = product.startingPrice;
+          if (!raw) return {};
+          const currency = /AED/i.test(raw)
+            ? 'AED'
+            : /SAR/i.test(raw)
+              ? 'SAR'
+              : /QAR/i.test(raw)
+                ? 'QAR'
+                : /OMR/i.test(raw)
+                  ? 'OMR'
+                  : /BHD/i.test(raw)
+                    ? 'BHD'
+                    : /KWD/i.test(raw)
+                      ? 'KWD'
+                      : /[$]|USD/i.test(raw)
+                        ? 'USD'
+                        : /£|GBP/i.test(raw)
+                          ? 'GBP'
+                          : /€|EUR/i.test(raw)
+                            ? 'EUR'
+                            : null;
+          const amount = raw.replace(/[^0-9.]/g, '');
+          if (!currency || !amount) return { };
+          return {
+            offers: {
+              '@type': 'Offer',
+              price: amount,
+              priceCurrency: currency,
+              description: raw,
+            },
+          };
+        })(),
         ...(product.rating && {
           aggregateRating: {
             '@type': 'AggregateRating',

@@ -94,12 +94,12 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'How does an AI-powered growth platform stack up against the world\'s largest beauty marketplace?',
     tldr: 'Fresha is a marketplace charging subscription fees plus hidden transaction costs. Daisy is a complete growth platform with an AI receptionist, cashback rewards and Arabic support. Pick Fresha for marketplace exposure, Daisy to actively grow the business.',
     verdict:
-      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and commissions, and it has no AI, no Arabic support and no customer acquisition tools. For businesses serious about growth, particularly in the GCC, Daisy is the better choice.',
+      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and a one-time 50% commission on new marketplace clients. Its AI Concierge covers phone calls; Daisy\'s AI receptionist also works across WhatsApp and Instagram, in Arabic and English, and Daisy charges no marketplace commission.',
     featureCommentary: {
       onlineBooking:
         'Both do online booking well. Fresha\'s strength is the size of its consumer marketplace, with 25M+ users. Daisy answers that with AI booking that carries the whole flow, payments and customer service included, 24/7 and without anyone stepping in.',
       posAndPayments:
-        'Fresha takes 2.19% + $0.20 on every card transaction and 20% commission on marketplace bookings. Across a year, a busy salon can pay thousands in hidden fees. Daisy charges a transparent flat rate with nothing added per transaction.',
+        'In the UAE, Fresha publishes online payments at 4.90% + AED 0.75 per transaction and a one-time 50% commission on new marketplace clients, minimum AED 20. Those are published rather than hidden, but across a year they add up. Daisy charges a flat rate with nothing added per transaction and no marketplace commission.',
       clientManagement:
         'Fresha gives you basic client profiles and history. Daisy layers AI on top, predicting no-shows, flagging VIP clients and suggesting personalized offers from booking patterns.',
       staffManagement:
@@ -124,7 +124,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'You operate in the GCC and need local compliance and payment methods',
     ],
     whoShouldChooseCompetitor: [
-      'You need to start cheaply, at the $9.95/mo base plan',
+      'You want the lowest published entry plan and the marketplace reach',
       'Marketplace discovery is where most of your new clients come from',
       'You work alone and process few transactions',
       'You operate only in English-speaking Western markets',
@@ -146,7 +146,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     heroTitle: 'Daisy vs Booksy',
     heroSubtitle:
       'A mobile-first booking app against a full AI-powered growth platform, which one actually grows your business?',
-    tldr: 'Booksy is a solid mobile-first booking app with a basic AI voice receptionist called "Digital Doorman". Daisy brings a complete AI ecosystem, Arabic support, cashback-driven customer acquisition and flat pricing that doesn\'t rise with every provider you add.',
+    tldr: 'Booksy is a solid mobile-first booking app whose AI Receptionist (beta) answers calls and books appointments, in English and Spanish. Daisy brings a complete AI ecosystem, Arabic support, cashback-driven customer acquisition and flat pricing that doesn\'t rise with every provider you add.',
     verdict:
       'Booksy suits independent barbers and beauty pros who want simple mobile booking with marketplace exposure. For teams, though, the per-provider pricing gets expensive, there is no GCC presence, and the AI does nothing beyond routing calls. For growing businesses, particularly in Arabic-speaking markets, Daisy wins clearly.',
     featureCommentary: {
@@ -167,7 +167,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketplaceAndDiscovery:
         'Booksy has a strong consumer marketplace, especially popular with barbershops. Daisy runs marketplace, cashback rewards and AI marketing together, so three acquisition channels rather than one.',
       aiCapabilities:
-        'Booksy\'s "Digital Doorman" answers inbound calls and passes them to booking, which makes it a single-purpose AI feature. Daisy\'s AI ecosystem covers the receptionist on voice and chat, smart scheduling, marketing automation and analytics, all working together.',
+        'Booksy\'s AI Receptionist answers inbound calls and books the appointment, on the phone channel only and in beta. Daisy\'s AI ecosystem covers the receptionist on voice and chat, smart scheduling, marketing automation and analytics, all working together.',
     },
     whoShouldChooseDaisy: [
       'You want AI across the business, not just call routing',
@@ -256,7 +256,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'A beautifully designed solopreneur tool against a complete AI-powered growth platform, which matches your ambitions?',
     tldr: 'GlossGenius is beautiful, simple and cheap at $24/mo, which suits solo US beauty professionals well. Daisy is built for businesses that intend to scale, with an AI receptionist, team management, a marketplace with cashback and Arabic support. GlossGenius helps you look great, Daisy helps you grow.',
     verdict:
-      'For solo professionals in the US, GlossGenius wins on design and simplicity. Its AI, though, is analytics only and sits in the $148/mo tier, team features are locked behind Platinum, and there is no Arabic or GCC support. If you have growth ambitions, a team, or clients outside those markets, Daisy is the clear choice.',
+      'For solo professionals in the US, GlossGenius wins on design and simplicity. Its Reception AI covers calls and texts rather than WhatsApp or Instagram, team features are locked behind Platinum, and there is no Arabic or GCC support. If you have growth ambitions, a team, or clients outside those markets, Daisy is the clear choice.',
     featureCommentary: {
       onlineBooking:
         'Both offer strong booking experiences. GlossGenius is known for beautiful booking pages, and the design genuinely sets it apart. Daisy matches the functionality and adds AI that can carry the whole booking conversation.',
@@ -275,7 +275,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketplaceAndDiscovery:
         'GlossGenius has no consumer marketplace. What it gives you is a passive booking page. Daisy actively acquires customers through the marketplace, cashback rewards and AI-powered marketing.',
       aiCapabilities:
-        'The Growth Analyst in Platinum at $148/mo is the only AI GlossGenius has. There is no AI receptionist, no chatbot and no smart scheduling. Daisy includes the whole AI ecosystem in the base platform: receptionist, chatbot, scheduling, marketing and analytics.',
+        'GlossGenius ships Reception, an AI front desk answering calls and texts 24/7 and booking onto the calendar, free on GlossGenius until 30 November 2026, plus a Growth Analyst in Platinum. The difference is channel coverage: Daisy includes the whole AI ecosystem in the base platform: receptionist, chatbot, scheduling, marketing and analytics.',
     },
     whoShouldChooseDaisy: [
       'You have a team, or expect to, and want staff management included',
@@ -447,7 +447,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     heroTitle: 'Daisy vs DINGG',
     heroSubtitle: 'Both offer AI and Arabic support, but Daisy is built for the GCC, live in Kuwait today, with a complete growth ecosystem.',
     tldr: 'DINGG offers a competitive AI suite at $49-79/mo and is expanding into the UAE. Daisy covers more of the GCC, 6 countries against 1, and adds a consumer marketplace, cashback and white-labeling that DINGG does not have.',
-    verdict: 'DINGG is a credible AI competitor and priced affordably. It is early in its GCC expansion, though, covering the UAE only, with no marketplace, no cashback and limited funding. Daisy offers more complete AI, a wider GCC presence and stronger growth tools.',
+    verdict: 'DINGG is a credible AI competitor and priced affordably. Its GCC coverage spans five countries and stops short of Bahrain, with no marketplace, no cashback and limited funding. Daisy offers more complete AI, a wider GCC presence and stronger growth tools.',
     featureCommentary: {
       onlineBooking: 'Both offer good booking. DINGG keeps it basic, while Daisy adds AI self-service across the whole flow.',
       posAndPayments: 'Both offer POS. Daisy carries more payment options across all GCC countries.',
@@ -547,11 +547,11 @@ export const daisyVsPages: DaisyVsPageData[] = [
     slug: 'daisy-vs-mangomint',
     competitorSlug: 'mangomint',
     metaTitle: 'Daisy vs Mangomint: AI Growth vs Clean Operations',
-    metaDescription: 'Compare Daisy and Mangomint. AI-powered growth platform versus premium operations-focused salon software ($165-375/mo).',
+    metaDescription: 'Compare Daisy and Mangomint. AI-powered growth platform versus premium operations-focused salon software ($120 per location plus $10 per user).',
     keywords: ['daisy vs mangomint', 'mangomint alternative', 'premium salon software'],
     heroTitle: 'Daisy vs Mangomint',
     heroSubtitle: 'Mangomint runs a beautiful salon. Daisy grows a successful business.',
-    tldr: 'Mangomint holds the highest Capterra rating at 4.9/5, and the design is beautiful, for $165-375/mo. It is US-only though, with no AI, no marketplace and no customer acquisition tools. Daisy offers AI and growth tools at a more accessible price.',
+    tldr: 'Mangomint holds the highest Capterra rating at 4.9/5, and the design is beautiful, at $120 per location plus $10 per user. It is US-only though, with no marketplace and no customer acquisition tools. Daisy offers AI and growth tools at a more accessible price.',
     verdict: 'For a US salon that wants clean operations above all, Mangomint is exceptional. For a business that wants AI-driven growth as well as operations, Daisy is the better fit.',
     featureCommentary: {
       onlineBooking: 'Both offer excellent booking, and Mangomint earns its praise for clean, intuitive design.',
@@ -656,8 +656,8 @@ export const alternativePages: AlternativePageData[] = [
     heroTitle: 'Looking for a Fresha Alternative?',
     heroSubtitle: 'Subscription fees, then transaction fees, then marketplace commissions. The costs keep stacking.',
     painPoints: [
-      'Transaction fees of 2.19% + $0.20 eating into every payment',
-      '20% commission on marketplace bookings, so new clients cost you money',
+      'Online payments charged at 4.90% + AED 0.75, eating into every transaction',
+      'A one-time 50% commission on new marketplace clients, minimum AED 20',
       'No Arabic, which rules out serving GCC clients properly',
       'No AI receptionist, so you are still answering calls and messages yourself',
       'Fresha-branded booking pages, with no control over how your brand looks',
@@ -683,7 +683,7 @@ export const alternativePages: AlternativePageData[] = [
     heroSubtitle: 'A great app, but per-provider pricing and thin AI are holding the business back.',
     painPoints: [
       'Per-provider pricing at $29.99-49.99 each, which gets expensive as the team grows',
-      'Digital Doorman routes calls and nothing more, so it cannot take payment or answer a question',
+      'The AI Receptionist books from phone calls, but does not cover WhatsApp or Instagram',
       'No Arabic, so GCC clients are out of reach',
       'No cashback or loyalty program to keep customers coming back',
       'A Booksy-branded experience, with little control over your own',
@@ -763,7 +763,7 @@ export const alternativePages: AlternativePageData[] = [
     painPoints: [
       'Expensive plans at $139-699/mo, with marketplace commissions on top',
       'A legacy interface that has not kept up',
-      'No AI receptionist and no chatbot',
+      'AI sits at the front desk, with Messenger[ai] as a paid add-on on top',
       'No Arabic, which closes off the GCC',
       'Complicated contracts, and a steady stream of upselling',
       'Built mainly for fitness, with beauty treated as secondary',
@@ -810,9 +810,9 @@ export const alternativePages: AlternativePageData[] = [
     metaDescription: 'Want more than clean operations? Daisy adds AI, marketplace, cashback, and Arabic support to premium salon management.',
     keywords: ['mangomint alternative', 'mangomint replacement'],
     heroTitle: 'Looking for a Mangomint Alternative?',
-    heroSubtitle: 'A beautiful operations tool with no AI, no marketplace and nothing that brings customers in.',
+    heroSubtitle: 'A beautiful operations tool with no marketplace and nothing that brings customers in.',
     painPoints: [
-      'Premium pricing of $165-375/mo, and no AI for it',
+      'Cost climbs with every location and user, at $120 per location plus $10 per user',
       'No consumer marketplace for customer discovery',
       'US-only, with no Arabic and no GCC support',
       'Operations only, with nothing for growth or acquisition',
@@ -1007,7 +1007,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best fresha alternatives', 'fresha alternatives', 'fresha competitors', 'salon software like fresha'],
     heroTitle: '7 Best Fresha Alternatives in 2026',
     heroSubtitle: 'Fresha\'s subscription fees plus hidden transaction costs are adding up. Here are the best alternatives for a growing beauty business.',
-    intro: 'Fresha runs the world\'s largest beauty marketplace. It also stacks monthly subscriptions on top of transaction fees, takes 20% commission on marketplace bookings and offers no AI, which is sending businesses looking. The alternatives below are compared on features, pricing, AI and international support.',
+    intro: 'Fresha runs the world\'s largest beauty marketplace. It also stacks monthly subscriptions on top of transaction fees and takes a one-time 50% commission on new marketplace clients, which is sending some businesses looking. The alternatives below are compared on features, pricing, AI and international support.',
     alternatives: ['booksy', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
     bestFor: {
       'booksy': 'Best for mobile-first solopreneurs',
@@ -1027,7 +1027,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best booksy alternatives', 'booksy alternatives', 'booksy competitors'],
     heroTitle: '7 Best Booksy Alternatives in 2026',
     heroSubtitle: 'Per-provider pricing and thin AI no longer working for you? Here are better options for a growing team.',
-    intro: 'Booksy is a popular mobile-first booking app. For a team, though, per-provider pricing gets expensive, the Digital Doorman AI does nothing beyond routing calls, and there is no GCC support. The alternatives below suit different kinds of business.',
+    intro: 'Booksy is a popular mobile-first booking app. For a team, though, per-provider pricing gets expensive, its AI Receptionist covers phone calls only, and there is no GCC support. The alternatives below suit different kinds of business.',
     alternatives: ['fresha', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
     bestFor: {
       'fresha': 'Best for marketplace-driven client discovery',
@@ -1050,7 +1050,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     intro: 'Vagaro is a comprehensive US salon platform with no AI, a per-staff calendar fee and no international support. Which of the alternatives below fits depends on what you are optimising for.',
     alternatives: ['fresha', 'booksy', 'glossgenius', 'boulevard', 'mindbody', 'mangomint'],
     bestFor: {
-      'fresha': 'Best for salons wanting free marketplace exposure',
+      'fresha': 'Best for salons wanting the widest marketplace exposure',
       'booksy': 'Best for mobile-first independent professionals',
       'glossgenius': 'Best for solo stylists who value design and simplicity',
       'boulevard': 'Best for premium multi-service salons',
@@ -1127,7 +1127,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best mangomint alternatives', 'mangomint alternatives'],
     heroTitle: '5 Best Mangomint Alternatives in 2026',
     heroSubtitle: 'Clean operations at $165+/mo. So where is the AI, and where are the new customers?',
-    intro: 'Mangomint holds the highest Capterra rating at 4.9/5. Premium pricing, no AI and no marketplace still leave room for alternatives that can actually grow a business.',
+    intro: 'Mangomint holds the highest Capterra rating at 4.9/5. Pricing that climbs with every location and user, and no marketplace, still leave room for alternatives that can actually grow a business.',
     alternatives: ['boulevard', 'vagaro', 'glossgenius', 'booksy'],
     bestFor: {
       'boulevard': 'Best for premium salons wanting enterprise polish',
@@ -1148,7 +1148,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     intro: 'Square Appointments is a solid free scheduling tool attached to a great POS, and it was never built for beauty. The alternatives below bring industry-specific features, AI and a marketplace.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'glossgenius', 'boulevard', 'mangomint'],
     bestFor: {
-      'fresha': 'Best for free marketplace-powered booking',
+      'fresha': 'Best for marketplace-powered booking reach',
       'vagaro': 'Best for the most complete feature set',
       'booksy': 'Best for beauty professionals wanting industry-specific tools',
       'glossgenius': 'Best for independent stylists upgrading from generic tools',
@@ -1166,7 +1166,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best zenoti alternatives', 'zenoti alternatives', 'zenoti competitors', 'salon software like zenoti'],
     heroTitle: '7 Best Zenoti Alternatives in 2026',
     heroSubtitle: 'Enterprise pricing from $225+/mo per location, on an annual contract, after a complicated implementation. These alternatives deliver AI without the overhead.',
-    intro: 'Zenoti is a powerful enterprise platform running 6 AI agents. At $225+/month per location, with mandatory annual contracts and a long implementation, plenty of businesses go looking elsewhere. It has GCC offices and still no Arabic UI. The alternatives below are compared on AI, pricing and how quickly you can deploy them.',
+    intro: 'Zenoti is a powerful enterprise platform marketing nine AI agents. At $225+/month per location, with mandatory annual contracts and a long implementation, plenty of businesses go looking elsewhere. It has GCC offices and still no Arabic UI. The alternatives below are compared on AI, pricing and how quickly you can deploy them.',
     alternatives: ['boulevard', 'mangomint', 'mindbody', 'fresha', 'vagaro', 'phorest'],
     bestFor: {
       'boulevard': 'Best for premium multi-location salons',
@@ -1206,7 +1206,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best phorest alternatives', 'phorest alternatives', 'phorest competitors', 'salon software like phorest'],
     heroTitle: '5 Best Phorest Alternatives in 2026',
     heroSubtitle: 'Excellent CRM and loyalty at ~$99/mo, confined to the UK and Ireland, with no AI, no marketplace and no Arabic support.',
-    intro: 'Phorest has a loyal following across the UK and Ireland, built on excellent CRM, strong loyalty programs and a 4.8 rating. No AI, no customer marketplace and no Arabic or GCC support all cap its appeal once a business wants to grow past its current market. Here are the top alternatives.',
+    intro: 'Phorest has a loyal following across the UK and Ireland, built on excellent CRM, strong loyalty programs and a 4.8 rating. Its AI sits at the front desk, and there is no customer marketplace and no Arabic or GCC support all cap its appeal once a business wants to grow past its current market. Here are the top alternatives.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'boulevard'],
     bestFor: {
       'fresha': 'Best for global marketplace reach',
@@ -1227,7 +1227,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     intro: 'Timely has a clean interface and a solid 4.7 rating across New Zealand, Australia and the UK. Per-staff pricing, at $9-15/staff on top of the $30/mo base, scales badly once a team grows, and there is no AI, no marketplace and no Arabic support to grow into. Here are better alternatives for a scaling beauty business.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'glossgenius'],
     bestFor: {
-      'fresha': 'Best for free marketplace-driven booking',
+      'fresha': 'Best for marketplace-driven booking reach',
       'vagaro': 'Best for growing teams wanting flat-rate value',
       'booksy': 'Best for affordable mobile booking',
       'glossgenius': 'Best for design-focused solo professionals',
@@ -1291,7 +1291,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['fresha vs booksy', 'fresha or booksy', 'booksy vs fresha comparison'],
     heroTitle: 'Fresha vs Booksy',
     heroSubtitle: 'Two popular booking platforms, but which one is right for your beauty business?',
-    verdict: 'Fresha wins on marketplace scale and lower starting price. Booksy wins on mobile experience and has a basic AI voice feature (Digital Doorman). Neither offers Arabic support, full AI ecosystem, or cashback-driven customer acquisition.',
+    verdict: 'Fresha wins on marketplace scale and lower starting price. Booksy wins on mobile experience and its AI Receptionist books from calls. Neither offers Arabic support, full AI ecosystem, or cashback-driven customer acquisition.',
     whoShouldChooseA: [
       'You want an affordable starting point with marketplace exposure',
       'Marketplace discovery is your primary acquisition channel',
@@ -1299,7 +1299,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     ],
     whoShouldChooseB: [
       'You prefer a mobile-first experience',
-      'You want basic AI voice receptionist (Digital Doorman)',
+      'You want an AI receptionist that books from phone calls',
       'You\'re an independent barber or beauty pro',
     ],
     daisyPitch: 'Both Fresha and Booksy are operations tools with marketplace bolt-ons. Daisy is a growth platform with full AI ecosystem, Arabic support, cashback rewards, and branded booking pages, capabilities neither competitor offers.',
@@ -1309,7 +1309,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     slugB: 'vagaro',
     combinedSlug: 'fresha-vs-vagaro',
     metaTitle: 'Fresha vs Vagaro: Marketplace vs Feature-Rich (2026)',
-    metaDescription: 'Compare Fresha (from $9.95/mo + fees) and Vagaro (feature-rich at $30/mo). Pricing, features, and which is better for your salon.',
+    metaDescription: 'Compare Fresha (published per market, from AED 149.95/mo in the UAE) and Vagaro (feature-rich at $30/mo). Pricing, features, and which is better for your salon.',
     keywords: ['fresha vs vagaro', 'fresha or vagaro', 'vagaro vs fresha'],
     heroTitle: 'Fresha vs Vagaro',
     heroSubtitle: 'Low starting price with stacking fees versus $30/mo with comprehensive features, which model works better?',
@@ -1335,7 +1335,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['booksy vs vagaro', 'booksy or vagaro', 'vagaro vs booksy'],
     heroTitle: 'Booksy vs Vagaro',
     heroSubtitle: 'Mobile-first booking app versus comprehensive all-in-one salon platform.',
-    verdict: 'Booksy excels on mobile UX and has basic AI (Digital Doorman). Vagaro offers more features and better POS. Both lack Arabic support, full AI, and cashback rewards.',
+    verdict: 'Booksy excels on mobile UX and its AI Receptionist books from calls. Vagaro offers more features and better POS. Both lack Arabic support, full AI, and cashback rewards.',
     whoShouldChooseA: [
       'Mobile-first experience is your top priority',
       'You\'re a solo barber or beauty pro',
@@ -1390,7 +1390,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     slugB: 'glossgenius',
     combinedSlug: 'fresha-vs-glossgenius',
     metaTitle: 'Fresha vs GlossGenius: Marketplace vs Design (2026)',
-    metaDescription: 'Compare Fresha (from $9.95/mo + marketplace) and GlossGenius ($24/mo beauty-focused). Features, pricing, and which suits your salon better.',
+    metaDescription: 'Compare Fresha (published per market, from AED 149.95/mo in the UAE) and GlossGenius ($24/mo beauty-focused). Features, pricing, and which suits your salon better.',
     keywords: ['fresha vs glossgenius', 'fresha or glossgenius'],
     heroTitle: 'Fresha vs GlossGenius',
     heroSubtitle: 'Marketplace with stacking fees versus beautiful design at $24/mo, which trade-off works for you?',
@@ -1408,7 +1408,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['booksy vs glossgenius', 'booksy or glossgenius'],
     heroTitle: 'Booksy vs GlossGenius',
     heroSubtitle: 'Mobile-first marketplace versus beautifully simple salon tool, two approaches for beauty professionals.',
-    verdict: 'Booksy wins on mobile app and marketplace. GlossGenius wins on design and affordability. Booksy has basic AI; GlossGenius has AI analytics only at $148/mo.',
+    verdict: 'Booksy wins on mobile app and marketplace. GlossGenius wins on design and affordability. Booksy\'s AI Receptionist books from calls; GlossGenius Reception covers calls and texts.',
     whoShouldChooseA: ['Mobile experience is priority', 'You want marketplace exposure', 'Basic AI call handling appeals to you'],
     whoShouldChooseB: ['Beautiful booking pages matter most', 'You want the simplest tool at $24/mo', 'You\'re a US-based solo professional'],
     daisyPitch: 'Both serve solo US professionals well. Daisy serves growing businesses with full AI, Arabic support, team management, marketplace, and cashback.',
@@ -1447,7 +1447,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     slugB: 'mindbody',
     combinedSlug: 'fresha-vs-mindbody',
     metaTitle: 'Fresha vs Mindbody: Budget vs Enterprise (2026)',
-    metaDescription: 'Compare Fresha (from $9.95/mo + fees) and Mindbody ($139+/mo enterprise). Two ends of salon software, plus a modern alternative.',
+    metaDescription: 'Compare Fresha (published per market, from AED 149.95/mo in the UAE) and Mindbody ($139+/mo enterprise). Two ends of salon software, plus a modern alternative.',
     keywords: ['fresha vs mindbody', 'fresha or mindbody'],
     heroTitle: 'Fresha vs Mindbody',
     heroSubtitle: 'The budget marketplace versus the enterprise legacy, two ends of beauty business software.',
@@ -1516,11 +1516,11 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['booksy vs mindbody', 'booksy or mindbody', 'mindbody vs booksy comparison'],
     heroTitle: 'Booksy vs Mindbody',
     heroSubtitle: 'Mobile-first affordability versus enterprise legacy, two very different tiers of beauty business software.',
-    verdict: 'Booksy wins on mobile experience, affordability, and has a basic AI voice feature (Digital Doorman). Mindbody wins on enterprise scale and the largest fitness marketplace. Neither offers Arabic support or cashback rewards.',
+    verdict: 'Booksy wins on mobile experience and affordability, and its AI Receptionist books from calls. Mindbody wins on enterprise scale and the largest fitness marketplace. Neither offers Arabic support or cashback rewards.',
     whoShouldChooseA: [
       'You\'re an independent professional who values mobile-first',
       'Budget matters ,  $29.99/mo vs $139+/mo',
-      'Basic AI call routing (Digital Doorman) appeals to you',
+      'An AI receptionist that books from phone calls appeals to you',
     ],
     whoShouldChooseB: [
       'You run a multi-location fitness or wellness brand',
@@ -1542,7 +1542,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     whoShouldChooseA: [
       'You\'re a beauty professional who wants a specialized platform',
       'Mobile-first experience and marketplace matter',
-      'Basic AI voice handling (Digital Doorman) is appealing',
+      'An AI receptionist handling phone bookings is appealing',
     ],
     whoShouldChooseB: [
       'Payment processing is your primary need',
@@ -1582,7 +1582,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['glossgenius vs square appointments', 'glossgenius or square appointments', 'square appointments vs glossgenius'],
     heroTitle: 'GlossGenius vs Square Appointments',
     heroSubtitle: 'Beautiful beauty-focused design at $24/mo versus free payment-first scheduling, aesthetics versus ecosystem.',
-    verdict: 'GlossGenius wins on design, beauty-specific branding, and client experience. Square wins on free tier, POS ecosystem, and payment processing. GlossGenius has AI analytics at $148/mo; Square has no AI. Neither supports Arabic or cashback.',
+    verdict: 'GlossGenius wins on design, beauty-specific branding, and client experience. Square wins on free tier, POS ecosystem, and payment processing. GlossGenius has Reception for calls and texts, plus AI analytics at $148/mo; Square has no AI. Neither supports Arabic or cashback.',
     whoShouldChooseA: [
       'Brand aesthetics and beautiful booking pages matter most',
       'You\'re a solo beauty professional who values design',
@@ -1604,7 +1604,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['mindbody vs zenoti', 'mindbody or zenoti', 'zenoti vs mindbody comparison'],
     heroTitle: 'Mindbody vs Zenoti',
     heroSubtitle: 'The industry legacy versus the AI-first challenger, two enterprise platforms, fundamentally different approaches.',
-    verdict: 'Mindbody wins on marketplace scale and brand recognition in fitness. Zenoti wins on AI capabilities with 6 AI agents and modern architecture. Both are expensive enterprise solutions with no cashback or full Arabic UI support.',
+    verdict: 'Mindbody wins on marketplace scale and brand recognition in fitness. Zenoti wins on AI capabilities, marketing nine AI agents, and modern architecture. Both are expensive enterprise solutions with no cashback or full Arabic UI support.',
     whoShouldChooseA: [
       'You need the largest fitness and wellness marketplace',
       'Brand recognition and industry trust matter most',
