@@ -1,0 +1,4 @@
+200  https://www.fresha.com/pricing  pricing-en.html
+200  https://www.fresha.com/ar/pricing  pricing-ar.html
+200  https://www.fresha.com/en-GB/pricing  pricing-en-GB.html
+200  https://www.fresha.com/for-business/features/ai-concierge  ai-concierge.html
