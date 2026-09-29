@@ -50,3 +50,17 @@ Requested from Kuwait, the Independent plan showed **KWD 8.95/month**, with **Te
 ## Integrity
 
 `SHA256SUMS.txt` covers all four captures. `capture-log.txt` records HTTP status and source URL per file.
+
+---
+
+## Addendum — pricing is geo-determined, not locale-determined
+
+**Correction to an earlier assumption in this workstream.** Fresha's per-locale URLs (`/ar/pricing`, `/en-GB/pricing`) change **language only**. Price and currency follow the requesting IP.
+
+Proof from the captures in this folder: all three of `/pricing`, `/ar/pricing` and `/en-GB/pricing` returned `data-country-code="KW"` and KWD figures. `/en-GB/pricing` is Kuwaiti pricing rendered in British English, not UK pricing.
+
+So Fresha's non-GCC pricing cannot be observed from Kuwait by changing the URL.
+
+**An independent, dated source shows a different market.** The Internet Archive snapshot of `fresha.com/pricing` taken **2026-09-13** carries `data-country-code="CA"` and dollar-denominated figures — a different geography from a third party, captured before this dispute, with no involvement from Daisy. Saved here as `pricing-wayback-20260913-CA.html`.
+
+**Implication for any published price claim.** Fresha's pricing is market-varying, and Team and Enterprise are quote-based rather than published. Any single figure, or any range presented as comprehensive, will be wrong in some market. A market-qualified and dated statement, or a comparison on pricing *structure* rather than amount, is the only form that stays true.
