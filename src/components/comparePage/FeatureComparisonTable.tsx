@@ -79,11 +79,16 @@ export const FeatureComparisonTable: FC<FeatureComparisonTableProps> = ({
         <p className="mb-4 text-center text-[#455150]">
           {comparison.length} categories rated from Basic to Best-in-Class
         </p>
-        <p
-          className="mb-10 text-center text-sm font-medium text-primary"
-          data-geo-answer="true"
-        >
-          Daisy leads in {daisyWinCount} of {comparison.length} categories
+        {/*
+          This scoreboard is Daisy's own editorial assessment, not an independent
+          benchmark, and it must say so. It also carries no data-geo-answer marker:
+          that attribute flags factual answers for extraction, and a self-scored
+          comparison presented as a neutral fact is exactly the kind of claim a
+          competitor can fairly object to.
+        */}
+        <p className="mb-10 text-center text-sm font-medium text-primary">
+          Daisy&rsquo;s own assessment: we lead in {daisyWinCount} of{' '}
+          {comparison.length} categories
         </p>
 
         <div className="overflow-x-auto">

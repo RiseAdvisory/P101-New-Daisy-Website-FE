@@ -149,3 +149,40 @@ Five GCC markets, not one. Bahrain genuinely absent, so Daisy's six-country cove
 > "AI Workforce … **Nine AI agents** — each built for a specific revenue leak in your business."
 
 Daisy said six. Note this claim was in Daisy's copy as a point in Zenoti's favour, so correcting it upward is simply accuracy, not a concession.
+
+---
+
+## The cease and desist letter itself
+
+Received as an attachment on Jira **PD-6750** ("Fresha info alignement"), from **BSA Law** for Fresha.com SV Ltd via Fresha.com FZCO, dated **29 September 2026**. 41 pages including four schedules.
+
+**The PDF is not copied into this repository.** It is marked "External Confidential", and Jira is already its system of record. Referenced here by ticket and attachment id (53884) instead.
+
+**Deadline: seven days from 29 September**, i.e. on or about 6 October 2026, with written confirmation of correction required.
+
+### What the letter supplied that we could not obtain ourselves
+
+Earlier in this workstream we could not see Fresha's non-Kuwait pricing, because their per-locale URLs change language only while price follows the requesting IP. The letter resolves that: it states Fresha's own published GCC pricing, with dated captures at Schedules 2 and 3.
+
+| Market | Independent plan |
+|---|---|
+| UAE | AED 149.95/mo |
+| Saudi Arabia | SAR 149.95/mo |
+| Oman | OMR 11.95/mo (Team OMR 7.95 per bookable team member) |
+| Bahrain | BHD 14.95/mo |
+| Qatar | QAR 149.95/mo |
+
+Also published, per Schedule 2 (UAE): online payments 4.90% + AED 0.75; marketplace new-client fee a **one-time 50% commission, minimum AED 20**, returning clients free; marketing emails 50 free monthly then AED 0.08, texts AED 0.14; Insights AED 319.95 per bookable team member per month; support by email (typical 2-day) and chat (typical 2-minute) on all plans, phone on Team.
+
+### Corrections this forced beyond what the audit had found
+
+1. **Bahrain.** An earlier correction in this workstream set Fresha's GCC coverage to five countries from their blog post. Schedule 3 shows published Bahrain pricing. The blog was not a complete list, and the five-country figure was wrong. Now all six.
+2. **Marketplace commission.** Daisy published "20%", and the audit had classified that as verified-keep. Fresha's published UAE figure is a **one-time 50%, minimum AED 20**. Our figure was wrong and understated it.
+3. **Transaction fees.** Daisy published 2.19% + $0.20. Fresha's published UAE rate is 4.90% + AED 0.75.
+4. **Phone support.** Daisy stated "There is no phone line." Schedule 2 shows phone support on the Team plan.
+5. **Structured data.** `ProductComparisonSchema` hardcoded `priceCurrency: 'USD'` and stripped non-numerics from the price string, so the compare page was emitting `price: 9.95, priceCurrency: USD` for Fresha into machine-readable metadata that search engines ingest. The letter does not name this, since it addresses the visible pages, but it was the same fabricated figure in the form crawlers consume. The schema now reads currency from the string and omits the offer when currency cannot be determined.
+6. **The ratings scoreboard.** "Daisy leads in 7 of 9 categories" is computed from our own feature ratings and carried `data-geo-answer="true"`, marking a self-scored claim for extraction as if it were a neutral fact. Two of the inputs were contradicted by evidence: Fresha's AI rating of 1 ("basic") against a shipped voice AI that books, and reporting of 2 against the 60 reports and live dashboards shown in their own Schedule 4. With those corrected the figure computes to **5 of 9**, and the line is now attributed as Daisy's own assessment with the extraction marker removed.
+
+### One inconsistency in the letter, recorded factually
+
+The body states the Comparison Pages were "captured and authenticated on 23 September 2026". Schedule 1's own header and every figure caption within it state **14 September 2026**. Noted without comment on its significance.

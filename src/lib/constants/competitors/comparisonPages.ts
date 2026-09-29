@@ -94,12 +94,12 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'How does an AI-powered growth platform stack up against the world\'s largest beauty marketplace?',
     tldr: 'Fresha is a marketplace charging subscription fees plus hidden transaction costs. Daisy is a complete growth platform with an AI receptionist, cashback rewards and Arabic support. Pick Fresha for marketplace exposure, Daisy to actively grow the business.',
     verdict:
-      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and a 20% commission on new marketplace clients. Its AI Concierge covers phone calls; Daisy\'s AI receptionist also works across WhatsApp and Instagram, in Arabic and English, and Daisy charges no marketplace commission.',
+      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and a one-time 50% commission on new marketplace clients. Its AI Concierge covers phone calls; Daisy\'s AI receptionist also works across WhatsApp and Instagram, in Arabic and English, and Daisy charges no marketplace commission.',
     featureCommentary: {
       onlineBooking:
         'Both do online booking well. Fresha\'s strength is the size of its consumer marketplace, with 25M+ users. Daisy answers that with AI booking that carries the whole flow, payments and customer service included, 24/7 and without anyone stepping in.',
       posAndPayments:
-        'Fresha takes 2.19% + $0.20 on every card transaction and 20% commission on marketplace bookings. Across a year, a busy salon can pay thousands in hidden fees. Daisy charges a transparent flat rate with nothing added per transaction.',
+        'In the UAE, Fresha publishes online payments at 4.90% + AED 0.75 per transaction and a one-time 50% commission on new marketplace clients, minimum AED 20. Those are published rather than hidden, but across a year they add up. Daisy charges a flat rate with nothing added per transaction and no marketplace commission.',
       clientManagement:
         'Fresha gives you basic client profiles and history. Daisy layers AI on top, predicting no-shows, flagging VIP clients and suggesting personalized offers from booking patterns.',
       staffManagement:
@@ -124,7 +124,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'You operate in the GCC and need local compliance and payment methods',
     ],
     whoShouldChooseCompetitor: [
-      'You need to start cheaply, at the $9.95/mo base plan',
+      'You want the lowest published entry plan and the marketplace reach',
       'Marketplace discovery is where most of your new clients come from',
       'You work alone and process few transactions',
       'You operate only in English-speaking Western markets',
@@ -656,8 +656,8 @@ export const alternativePages: AlternativePageData[] = [
     heroTitle: 'Looking for a Fresha Alternative?',
     heroSubtitle: 'Subscription fees, then transaction fees, then marketplace commissions. The costs keep stacking.',
     painPoints: [
-      'Transaction fees of 2.19% + $0.20 eating into every payment',
-      '20% commission on marketplace bookings, so new clients cost you money',
+      'Online payments charged at 4.90% + AED 0.75, eating into every transaction',
+      'A one-time 50% commission on new marketplace clients, minimum AED 20',
       'No Arabic, which rules out serving GCC clients properly',
       'No AI receptionist, so you are still answering calls and messages yourself',
       'Fresha-branded booking pages, with no control over how your brand looks',
@@ -1007,7 +1007,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best fresha alternatives', 'fresha alternatives', 'fresha competitors', 'salon software like fresha'],
     heroTitle: '7 Best Fresha Alternatives in 2026',
     heroSubtitle: 'Fresha\'s subscription fees plus hidden transaction costs are adding up. Here are the best alternatives for a growing beauty business.',
-    intro: 'Fresha runs the world\'s largest beauty marketplace. It also stacks monthly subscriptions on top of transaction fees and takes a 20% commission on new marketplace clients, which is sending some businesses looking. The alternatives below are compared on features, pricing, AI and international support.',
+    intro: 'Fresha runs the world\'s largest beauty marketplace. It also stacks monthly subscriptions on top of transaction fees and takes a one-time 50% commission on new marketplace clients, which is sending some businesses looking. The alternatives below are compared on features, pricing, AI and international support.',
     alternatives: ['booksy', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
     bestFor: {
       'booksy': 'Best for mobile-first solopreneurs',
@@ -1309,7 +1309,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     slugB: 'vagaro',
     combinedSlug: 'fresha-vs-vagaro',
     metaTitle: 'Fresha vs Vagaro: Marketplace vs Feature-Rich (2026)',
-    metaDescription: 'Compare Fresha (from $9.95/mo + fees) and Vagaro (feature-rich at $30/mo). Pricing, features, and which is better for your salon.',
+    metaDescription: 'Compare Fresha (published per market, from AED 149.95/mo in the UAE) and Vagaro (feature-rich at $30/mo). Pricing, features, and which is better for your salon.',
     keywords: ['fresha vs vagaro', 'fresha or vagaro', 'vagaro vs fresha'],
     heroTitle: 'Fresha vs Vagaro',
     heroSubtitle: 'Low starting price with stacking fees versus $30/mo with comprehensive features, which model works better?',
@@ -1390,7 +1390,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     slugB: 'glossgenius',
     combinedSlug: 'fresha-vs-glossgenius',
     metaTitle: 'Fresha vs GlossGenius: Marketplace vs Design (2026)',
-    metaDescription: 'Compare Fresha (from $9.95/mo + marketplace) and GlossGenius ($24/mo beauty-focused). Features, pricing, and which suits your salon better.',
+    metaDescription: 'Compare Fresha (published per market, from AED 149.95/mo in the UAE) and GlossGenius ($24/mo beauty-focused). Features, pricing, and which suits your salon better.',
     keywords: ['fresha vs glossgenius', 'fresha or glossgenius'],
     heroTitle: 'Fresha vs GlossGenius',
     heroSubtitle: 'Marketplace with stacking fees versus beautiful design at $24/mo, which trade-off works for you?',
@@ -1447,7 +1447,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     slugB: 'mindbody',
     combinedSlug: 'fresha-vs-mindbody',
     metaTitle: 'Fresha vs Mindbody: Budget vs Enterprise (2026)',
-    metaDescription: 'Compare Fresha (from $9.95/mo + fees) and Mindbody ($139+/mo enterprise). Two ends of salon software, plus a modern alternative.',
+    metaDescription: 'Compare Fresha (published per market, from AED 149.95/mo in the UAE) and Mindbody ($139+/mo enterprise). Two ends of salon software, plus a modern alternative.',
     keywords: ['fresha vs mindbody', 'fresha or mindbody'],
     heroTitle: 'Fresha vs Mindbody',
     heroSubtitle: 'The budget marketplace versus the enterprise legacy, two ends of beauty business software.',

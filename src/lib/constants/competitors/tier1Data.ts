@@ -29,63 +29,59 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       staffManagement: 2,
       marketingAndCrm: 1,
       inventoryManagement: 1,
-      reportingAndAnalytics: 2,
+      reportingAndAnalytics: 3, // 60 reports + live dashboards, evidenced in Fresha's own Schedule 4
       marketplaceAndDiscovery: 3,
-      aiCapabilities: 1,
+      aiCapabilities: 2, // AI Concierge answers calls and books; Daisy still spans more channels
       brandingAndWhiteLabel: 0,
     },
 
     pricing: {
       hasFreePlan: false,
       freeTrialDays: 14,
-      startingPrice: 'From $9.95/mo + fees',
-      startingPriceNumeric: 9.95,
+      // Fresha publishes local-currency pricing per market. These are its published
+      // UAE figures (fresha.com/pricing, UAE), the market these pages address.
+      // Source: Fresha's own schedules, 2026-09-29.
+      startingPrice: 'From AED 149.95/mo (UAE Independent plan)',
+      // Sorting only, never displayed: approximate USD equivalent of AED 149.95
+      // so the price sort stays meaningful across a USD-denominated list.
+      startingPriceNumeric: 40.83,
       tiers: [
         {
-          name: 'Starter',
-          price: '$9.95/mo',
-          priceNumeric: 9.95,
+          name: 'Independent',
+          price: 'AED 149.95/mo',
+          priceNumeric: 149.95,
           features: [
+            'One team member',
+            'Multiple locations',
             'Appointment scheduling',
-            'Calendar management',
             'Client database',
-            'Basic reporting',
           ],
         },
         {
-          name: 'Standard',
-          price: '$25/mo',
-          priceNumeric: 25,
+          name: 'Team',
+          price: 'Custom rates',
           features: [
-            'All Starter features',
-            'Online payments',
-            'Email marketing',
-            'Google integration',
-          ],
-        },
-        {
-          name: 'Premium',
-          price: 'Custom pricing',
-          features: [
-            'All Standard features',
-            'Marketplace listing',
-            'Advanced marketing',
-            'Priority support',
+            'Unlimited team members',
+            'Phone support',
+            'Team management',
           ],
         },
       ],
-      transactionFees: '2.19% + $0.20 per transaction',
-      commissionOnMarketplace: '20% on new clients from marketplace',
+      transactionFees: 'Online payments 4.90% + AED 0.75 per transaction (UAE published)',
+      commissionOnMarketplace: 'One-time 50% commission on new marketplace clients (minimum AED 20); returning clients free',
+      // Fresha publishes all of these on its own pricing page. Figures below are
+      // its published UAE rates, so the point is that they stack, not that they
+      // are concealed.
       hiddenCosts: [
-        'Transaction fees on all card payments on top of subscription',
-        'Marketplace commission on new clients',
-        'SMS/email campaign costs per message',
-        'No-show protection fees',
-        'Previously free features now require paid plans',
+        'Online payments charged at 4.90% + AED 0.75 per transaction, on top of the subscription',
+        'One-time 50% commission on new marketplace clients, minimum AED 20',
+        'Marketing emails free for the first 50 each month, then AED 0.08 each; texts AED 0.14',
+        'Insights add-on at AED 319.95 per bookable team member per month',
+        'Previously free features now require a paid plan',
       ],
       pricingModel: 'hybrid',
-      pricingPageUrl: 'https://www.fresha.com/for-business/pricing',
-      lastVerified: '2026-03-14',
+      pricingPageUrl: 'https://www.fresha.com/pricing',
+      lastVerified: '2026-09-29',
     },
 
     reviews: [
@@ -102,9 +98,12 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       // 'translated' not 'native': an Arabic UI demonstrably exists, but we have not
       // established localisation depth or local payment rails. Not 'none'.
       arabicQuality: 'translated',
-      // Same source: teams in Dubai and Saudi Arabia, local operations launching in
-      // Qatar, Oman and Kuwait. Kuwait independently confirmed 2026-09-29.
-      gccCountries: ['UAE', 'KSA', 'Qatar', 'Oman', 'Kuwait'],
+      // All six GCC states. Fresha publishes local-currency pricing in each:
+      // AED 149.95 (UAE), SAR 149.95 (KSA), QAR 149.95 (Qatar), OMR 11.95 (Oman),
+      // BHD 14.95 (Bahrain), and operates in Kuwait. An earlier correction here
+      // listed five and omitted Bahrain; Fresha's own published Bahrain pricing
+      // shows that was wrong.
+      gccCountries: ['UAE', 'KSA', 'Qatar', 'Oman', 'Bahrain', 'Kuwait'],
       localCompliance: false,
       localPaymentMethods: false,
       localSupport: false,
@@ -155,7 +154,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Independent beauty professionals and small salon owners after affordable software that also gets them found',
       toneAndVoice: 'Simple and direct, leaning on ease of use and the size of the marketplace',
       keyMessages: [
-        'Affordable plans starting at $9.95/mo',
+        'Competitively priced plans, published per market',
         '450M+ appointments booked',
         '100K+ partner venues',
         'All-in-one platform',
@@ -221,11 +220,11 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'Branded booking page with no Daisy branding vs Fresha-branded experience',
       'Predictable flat pricing vs subscription fees plus transaction fees and commissions',
       'AI-powered analytics and recommendations vs basic static reports',
-      'Complete GCC compliance (VAT, local payment methods) vs limited UAE presence',
+      'GCC-built with local payment methods, vs confirming rails and compliance market by market',
     ],
 
     daisySwitchingReasons: [
-      'Tired of paying 20% commission on marketplace bookings',
+      'Tired of paying a one-time 50% commission on new marketplace clients',
       'Need Arabic language support for GCC clients',
       'Want AI to handle after-hours calls and bookings',
       'Need more than basic marketing, want proactive customer acquisition',
@@ -236,7 +235,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     competitorStrengths: [
       'Largest beauty marketplace (25M+ consumers)',
-      'Low starting price ($9.95/mo) for basic features',
+      'Competitive entry price, published in local currency per market',
       'Very high app store ratings and consumer adoption',
       'Global presence with strong brand recognition',
       'Simple, intuitive user interface',
@@ -256,7 +255,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How much does Fresha cost?',
         answer:
-          'Fresha is no longer free. Plans open at $9.95/month for the basics, with higher tiers above that. On top of the subscription come transaction fees of 2.19% + $0.20 on every card payment, 20% commission on new marketplace clients, and a per-message charge for marketing campaigns. A salon running $10,000/month through cards pays $239 in transaction fees alone, before the subscription and the marketplace commission.',
+          'Fresha is no longer free, and it prices per market. In the UAE its published rate is AED 149.95 per month for the Independent plan, with Team plans at custom rates. On top of the subscription sit online payments at 4.90% + AED 0.75 per transaction, a one-time 50% commission on new marketplace clients with a minimum of AED 20, and per-message charges for marketing once the first 50 emails each month are used. Those charges stack, so the monthly total is worth working out for your own volume rather than reading off the headline plan price.',
       },
       {
         question: 'How does Daisy compare to Fresha for salon management?',
@@ -276,12 +275,12 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Is Fresha really free to use?',
         answer:
-          'No. The free plan is gone. Fresha now charges a monthly subscription from $9.95/mo, plus 2.19% + $0.20 per card transaction, 20% commission on new marketplace clients, and a fee per marketing message. The "free" branding is out of date. Daisy charges one transparent all-inclusive price, with no hidden commission and no per-message charge.',
+          'No. The free plan is gone. Fresha now charges a monthly subscription, AED 149.95 in the UAE for the Independent plan, plus online payments at 4.90% + AED 0.75 per transaction, a one-time 50% commission on new marketplace clients, and per-message charges for marketing beyond the first 50 emails a month. Daisy charges one all-inclusive price, with no marketplace commission and no per-message charge.',
       },
       {
-        question: 'What are the hidden costs of using Fresha?',
+        question: 'What does Fresha cost on top of the subscription?',
         answer:
-          'Past the subscription, Fresha takes 2.19% + $0.20 on every card payment, 20% commission on new clients who come through the marketplace, a fee for SMS and email campaigns, and a charge for no-show protection. Stacked together these can run past the subscription itself. Daisy folds marketing, AI and payment processing into plain plans with nothing added later.',
+          'Fresha publishes these charges on its own pricing page, so they are not concealed, but they do stack. In the UAE: online payments at 4.90% + AED 0.75 per transaction, a one-time 50% commission on new marketplace clients with an AED 20 minimum, marketing emails free for the first 50 each month and then AED 0.08 each, texts at AED 0.14, and an Insights add-on at AED 319.95 per bookable team member per month. Added together these can exceed the subscription itself. Daisy folds marketing, AI and payment processing into one plan price.',
       },
       {
         question: 'How hard is it to migrate my data from Fresha?',
@@ -301,7 +300,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Can I reach Fresha customer support quickly?',
         answer:
-          'Support runs through email and in-app chat, and plenty of users report slow replies, particularly since moving off the free model pushed their support volume up. There is no phone line. Daisy gives every plan a dedicated account manager, live chat and phone support with priority response.',
+          'Fresha publishes email support with a typical two-day response, chat with a typical two-minute response on all plans, and phone support on the Team plan. Daisy gives every plan a dedicated account manager, live chat and phone support with priority response, without reserving the phone channel for a higher tier.',
       },
     ],
 
