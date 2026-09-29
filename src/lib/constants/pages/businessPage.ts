@@ -29,18 +29,18 @@ export const businessPageData: I18nContent<LandingPageContent> = {
         { label: 'Staff Management', description: 'Scheduling, permissions, and performance' },
         { label: 'Marketing Engine', description: 'Promotions, campaigns, and customer retention' },
         { label: 'Analytics Dashboard', description: 'Revenue trends, insights, and reporting' },
-        { label: 'Brand Control', description: 'White-label everything with your brand' },
+        { label: 'Brand Control', description: 'Branded booking page with your logo and colours' },
       ],
       stats: [
         { value: '8', context: 'tools in one platform' },
         { value: '24/7', context: 'AI receptionist' },
-        { value: '10+', context: 'languages supported' },
+        { value: '2', context: 'languages: Arabic and English' },
       ],
     },
     socialProofStats: [
       { value: '8', context: 'tools replaced by one platform' },
       { value: '24/7', context: 'AI receptionist, never misses a message' },
-      { value: '10+', context: 'languages supported' },
+      { value: '2', context: 'languages: Arabic and English' },
     ],
     howItWorks: {
       title: 'How It Works',
@@ -321,13 +321,13 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '8', context: 'أدوات في منصة واحدة' },
         { value: '24/7', context: 'موظف استقبال ذكي' },
-        { value: '+10', context: 'لغة مدعومة' },
+        { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
       ],
     },
     socialProofStats: [
       { value: '8', context: 'أدوات تم استبدالها بمنصة واحدة' },
       { value: '24/7', context: 'موظف استقبال ذكي، لا يفوت أي رسالة' },
-      { value: '+10', context: 'لغة مدعومة' },
+      { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
     ],
     howItWorks: {
       title: 'كيف يعمل',

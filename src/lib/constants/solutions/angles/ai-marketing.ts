@@ -45,8 +45,8 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { label: 'Payments & Invoicing', description: 'Seamless transactions and financial tracking' },
         { label: 'Staff Management', description: 'Scheduling, permissions, and performance' },
         { label: 'Analytics Dashboard', description: 'Revenue trends, insights, and reporting' },
-        { label: 'Brand Control', description: 'White-label everything with your brand' },
-      ], stats: [{ value: '24/7', context: 'AI marketing' }, { value: '8', context: 'tools in one platform' }, { value: '10+', context: 'languages supported' }] },
+        { label: 'Brand Control', description: 'Branded booking page with your logo and colours' },
+      ], stats: [{ value: '24/7', context: 'AI marketing' }, { value: '8', context: 'tools in one platform' }, { value: '2', context: 'languages: Arabic and English' }] },
       inlineCtas: {
         afterScroll: { headline: 'Ready to let AI handle your marketing?', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'Start Your 14-Day Free Trial', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/business' },
@@ -94,7 +94,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { label: 'إدارة الموظفين', description: 'جدولة وصلاحيات وأداء' },
         { label: 'لوحة التحليلات', description: 'اتجاهات الإيرادات والرؤى والتقارير' },
         { label: 'التحكم بالعلامة التجارية', description: 'كل شيء بعلامتك التجارية الخاصة' },
-      ], stats: [{ value: '24/7', context: 'تسويق ذكي' }, { value: '8', context: 'أدوات في منصة واحدة' }, { value: '+10', context: 'لغة مدعومة' }] },
+      ], stats: [{ value: '24/7', context: 'تسويق ذكي' }, { value: '8', context: 'أدوات في منصة واحدة' }, { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' }] },
       inlineCtas: {
         afterScroll: { headline: 'مستعد لترك الذكاء الاصطناعي يدير تسويقك؟', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/business' },
@@ -144,7 +144,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { label: 'Client Management', description: 'Build relationships with detailed client profiles' },
         { label: 'Calendar Sync', description: 'Sync with Google Calendar and other tools' },
         { label: 'Marketplace Visibility', description: 'Customers find you when searching nearby' },
-      ], stats: [{ value: '0', context: 'marketing hours' }, { value: '24/7', context: 'AI retention' }, { value: '10+', context: 'languages supported' }] },
+      ], stats: [{ value: '0', context: 'marketing hours' }, { value: '24/7', context: 'AI retention' }, { value: '2', context: 'languages: Arabic and English' }] },
       inlineCtas: {
         afterScroll: { headline: 'Ready to grow your client base on autopilot?', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'Start Your Free Trial', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/professional' },
@@ -192,7 +192,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { label: 'إدارة العملاء', description: 'ابنِ علاقات مع ملفات عملاء مفصلة' },
         { label: 'مزامنة التقويم', description: 'مزامنة مع تقويم جوجل وأدوات أخرى' },
         { label: 'ظهور في السوق', description: 'العملاء يجدونك عند البحث بالقرب منهم' },
-      ], stats: [{ value: '0', context: 'ساعات تسويق' }, { value: '24/7', context: 'احتفاظ ذكي' }, { value: '+10', context: 'لغة مدعومة' }] },
+      ], stats: [{ value: '0', context: 'ساعات تسويق' }, { value: '24/7', context: 'احتفاظ ذكي' }, { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' }] },
       inlineCtas: {
         afterScroll: { headline: 'مستعد لتنمية قاعدة عملائك على الطيار الآلي؟', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'ابدأ تجربتك المجانية', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/professional' },

@@ -39,14 +39,14 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         categoryLabel: 'BRAND CONTROL FOR BUSINESS',
         headline: 'Your Brand on Every Touchpoint. Not Ours.',
         subHeadline:
-          'Your logo, your colors, your domain. Customers see your brand from booking to confirmation. No "Powered by" badges. No co-branding.',
+          'Your logo, your name, your colors. Customers see your brand from booking to confirmation. No "Powered by" badges. No Daisy branding on the page.',
         ctaText: 'Start Your 14-Day Free Trial',
         ctaLink: '/get-the-app',
         trustLine: 'No credit card required. Our team helps you set up.',
         answerBlock: {
-          question: 'What is white-label brand control for beauty businesses?',
+          question: 'What is a branded booking page for beauty businesses?',
           answer:
-            'White-label brand control means your customers see your brand at every step: your logo on the booking page, your colors on confirmations, your domain on every link. The Daisy powers everything behind the scenes, but your brand is the only one your customers experience.',
+            'A branded booking page means your customers see your brand at every step: your logo on the booking page, your name and colors on confirmations. The Daisy powers everything behind the scenes, but your brand is the only one your customers experience.',
         },
       },
       scrollSections: [
@@ -60,11 +60,11 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
           mainImageHeight: 500,
           infoScroll: {
             title: 'Customer Visits Your Booking Page',
-            text: 'Your Logo. Your Colors. Your Domain.',
+            text: 'Your Logo. Your Name. Your Colors.',
             description:
-              'A customer clicks your booking link and lands on a page that looks and feels entirely yours. Your logo, your brand colors, your fonts. They have no idea a platform powers it.',
+              'A customer clicks your booking link and lands on a page that looks and feels entirely yours. Your logo, your business name, your brand colors. No Daisy branding anywhere on it.',
             listSub: [
-              'Custom domain support',
+              'Short, shareable booking link',
               'Your logo and brand colors',
               'No third-party branding visible',
             ],
@@ -155,7 +155,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         subHeadline:
           'Stop paying for 8 separate tools. Daisy combines everything you need to run and grow your beauty business.',
         capabilities: [
-          { label: 'Brand Control', description: 'White-label everything with your brand' },
+          { label: 'Brand Control', description: 'Branded booking page with your logo and colours' },
           { label: 'AI Receptionist', description: '24/7 WhatsApp and Instagram messaging, booking, and payments' },
           { label: 'Smart Booking', description: 'Intelligent scheduling that fills your calendar' },
           { label: 'Customer Acquisition', description: 'Marketplace, cashback, and marketing tools' },
@@ -167,7 +167,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         stats: [
           { value: '100%', context: 'your brand' },
           { value: '24/7', context: 'AI receptionist' },
-          { value: '10+', context: 'languages supported' },
+          { value: '2', context: 'languages: Arabic and English' },
         ],
       },
       inlineCtas: {
@@ -186,10 +186,10 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       },
       titleFraque: 'Frequently Asked Questions',
       fallbackFaqs: [
-        { question: 'Can I use my own domain?', answer: 'Yes. You can connect your own custom domain so your booking page lives on your website, not ours. Customers see your URL, your brand, your identity.' },
-        { question: 'What can I customize?', answer: 'Logo, brand colors, fonts, booking page layout, confirmation messages, reminder notifications, receipts, and more. Every customer-facing touchpoint is fully customizable.' },
+        { question: 'What will my booking link look like?', answer: 'You get a short booking link to share, like thedaisy.link/your-salon. Custom domains are not supported yet, but the page itself carries no Daisy branding: customers see your logo, your name, and your colors.' },
+        { question: 'What can I customize?', answer: 'Your logo, your business name, and your brand colors across the booking page, plus confirmation messages, reminder notifications and receipts. Custom fonts and custom domains are not supported yet.' },
         { question: 'Will customers see The Daisy brand?', answer: 'No. There are no "Powered by" badges or co-branding. Your customers interact with your brand exclusively.' },
-        { question: 'Can I match my existing brand guidelines?', answer: 'Absolutely. Upload your logo, set your brand colors, and customize your fonts. The booking experience matches your existing brand identity seamlessly.' },
+        { question: 'Can I match my existing brand guidelines?', answer: 'Upload your logo and set your brand colors, and the booking experience carries your identity with no Daisy branding on the page. Custom fonts are not supported yet.' },
       ],
     },
     ar: {
@@ -197,14 +197,14 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         categoryLabel: 'التحكم بالعلامة التجارية للأعمال',
         headline: 'علامتك التجارية على كل نقطة تواصل. ليست علامتنا.',
         subHeadline:
-          'شعارك، ألوانك، نطاقك. العملاء يرون علامتك التجارية من الحجز إلى التأكيد. بدون شارات "مدعوم من". بدون علامات مشتركة.',
+          'شعارك، اسمك، ألوانك. العملاء يرون علامتك التجارية من الحجز إلى التأكيد. بدون شارات "مدعوم من". بدون أي علامة لديزي على الصفحة.',
         ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
         ctaLink: '/get-the-app',
         trustLine: 'لا حاجة لبطاقة ائتمان. فريقنا يساعدك في الإعداد.',
         answerBlock: {
           question: 'ما هو التحكم بالعلامة التجارية البيضاء لأعمال التجميل؟',
           answer:
-            'التحكم بالعلامة التجارية البيضاء يعني أن عملاءك يرون علامتك في كل خطوة: شعارك على صفحة الحجز، ألوانك على التأكيدات، نطاقك على كل رابط. ديزي تدير كل شيء خلف الكواليس، لكن علامتك التجارية هي الوحيدة التي يختبرها عملاؤك.',
+            'صفحة الحجز بعلامتك تعني أن عملاءك يرون علامتك في كل خطوة: شعارك على صفحة الحجز، واسمك وألوانك على التأكيدات. ديزي تدير كل شيء خلف الكواليس، ولا تظهر أي علامة لديزي على الصفحة.',
         },
       },
       scrollSections: [
@@ -218,9 +218,9 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
           mainImageHeight: 500,
           infoScroll: {
             title: 'العميل يزور صفحة الحجز الخاصة بك',
-            text: 'شعارك. ألوانك. نطاقك.',
+            text: 'شعارك. اسمك. ألوانك.',
             description:
-              'عميل ينقر على رابط الحجز ويصل إلى صفحة تبدو وتشعر بأنها ملكك بالكامل. شعارك، ألوان علامتك، خطوطك. لا يعلم أن منصة تديرها.',
+              'عميل ينقر على رابط الحجز ويصل إلى صفحة تبدو وتشعر بأنها ملكك بالكامل. شعارك، اسمك، ألوان علامتك. بدون أي علامة لديزي على الصفحة.',
             listSub: [
               'دعم النطاق المخصص',
               'شعارك وألوان علامتك التجارية',
@@ -324,7 +324,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         stats: [
           { value: '100%', context: 'علامتك التجارية' },
           { value: '24/7', context: 'موظف استقبال ذكي' },
-          { value: '+10', context: 'لغة مدعومة' },
+          { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
         ],
       },
       inlineCtas: {
@@ -343,10 +343,10 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       },
       titleFraque: 'أسئلة شائعة',
       fallbackFaqs: [
-        { question: 'هل يمكنني استخدام نطاقي الخاص؟', answer: 'نعم. يمكنك ربط نطاقك المخصص حتى تكون صفحة الحجز على موقعك، ليس على موقعنا. العملاء يرون عنوان URL الخاص بك، علامتك، هويتك.' },
-        { question: 'ما الذي يمكنني تخصيصه؟', answer: 'الشعار، ألوان العلامة التجارية، الخطوط، تخطيط صفحة الحجز، رسائل التأكيد، إشعارات التذكير، الإيصالات، والمزيد. كل نقطة تواصل مع العملاء قابلة للتخصيص بالكامل.' },
+        { question: 'كيف سيبدو رابط الحجز الخاص بي؟', answer: 'تحصل على رابط حجز قصير تشاركه، مثل thedaisy.link/your-salon. النطاقات المخصصة غير مدعومة حالياً، لكن الصفحة نفسها لا تحمل أي علامة لديزي: يرى العملاء شعارك واسمك وألوانك.' },
+        { question: 'ما الذي يمكنني تخصيصه؟', answer: 'شعارك، واسم نشاطك، وألوان علامتك على صفحة الحجز، إضافة إلى رسائل التأكيد وإشعارات التذكير والإيصالات. الخطوط المخصصة والنطاقات المخصصة غير مدعومة حالياً.' },
         { question: 'هل سيرى العملاء علامة ذا ديزي التجارية؟', answer: 'لا. لا توجد شارات "مدعوم من" أو علامات مشتركة. عملاؤك يتفاعلون مع علامتك التجارية حصريًا.' },
-        { question: 'هل يمكنني مطابقة إرشادات علامتي التجارية الحالية؟', answer: 'بالتأكيد. ارفع شعارك، حدد ألوان علامتك، وخصص خطوطك. تجربة الحجز تتطابق مع هوية علامتك التجارية الحالية بسلاسة.' },
+        { question: 'هل يمكنني مطابقة إرشادات علامتي التجارية الحالية؟', answer: 'ارفع شعارك وحدد ألوان علامتك، وتحمل تجربة الحجز هويتك دون أي علامة لديزي على الصفحة. الخطوط المخصصة غير مدعومة حالياً.' },
       ],
     },
   },
@@ -449,7 +449,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       socialProofStats: [
         { value: '1', context: 'branded booking page, all yours' },
         { value: '0', context: 'platform branding visible to clients' },
-        { value: '10+', context: 'languages for your audience' },
+        { value: '2', context: 'languages for your audience: Arabic and English' },
       ],
       howItWorks: {
         title: 'How It Works',
@@ -483,7 +483,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         stats: [
           { value: '1', context: 'branded page' },
           { value: '24/7', context: 'AI-powered booking' },
-          { value: '10+', context: 'languages supported' },
+          { value: '2', context: 'languages: Arabic and English' },
         ],
       },
       inlineCtas: {
@@ -606,7 +606,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       socialProofStats: [
         { value: '1', context: 'صفحة حجز بعلامتك، ملكك بالكامل' },
         { value: '0', context: 'علامات منصة مرئية للعملاء' },
-        { value: '+10', context: 'لغة لجمهورك' },
+        { value: '2', context: 'لغتان لجمهورك: العربية والإنجليزية' },
       ],
       howItWorks: {
         title: 'كيف يعمل',
@@ -640,7 +640,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         stats: [
           { value: '1', context: 'صفحة بعلامتك' },
           { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' },
-          { value: '+10', context: 'لغة مدعومة' },
+          { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
         ],
       },
       inlineCtas: {

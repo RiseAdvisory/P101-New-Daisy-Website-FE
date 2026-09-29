@@ -75,7 +75,7 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
 <li><strong>Marketing tools:</strong> Built-in email and SMS campaigns, loyalty programmes, and cashback incentives that drive repeat visits without requiring a separate marketing platform.</li>
 <li><strong>Inventory management:</strong> Track retail product stock levels, automate reorder alerts, and link product sales to client visits.</li>
 <li><strong>Marketplace listing:</strong> Platforms that include a consumer-facing marketplace give you an additional client acquisition channel at no extra cost.</li>
-<li><strong>White-label branding:</strong> Customise the booking experience with your logo, colours, and domain so clients see your brand, not the software vendor's.</li>
+<li><strong>Branded booking page:</strong> Customise the booking experience with your logo, business name and colours so clients see your brand, not the software vendor's.</li>
 </ul>
 
 <h2>Step 3: Evaluate the Client Experience</h2>

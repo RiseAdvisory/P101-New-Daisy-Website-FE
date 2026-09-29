@@ -218,7 +218,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What is the best salon software in 2026?',
           answer:
-            'The best salon software depends on your needs. For growth-focused businesses wanting AI, cashback, and white-label branding, Daisy leads. For budget-conscious single-chair operators, simpler tools may suffice. Always evaluate total cost including hidden fees.',
+            'The best salon software depends on your needs. For growth-focused businesses wanting AI, cashback, and branded booking pages, Daisy leads. For budget-conscious single-chair operators, simpler tools may suffice. Always evaluate total cost including hidden fees.',
         },
         {
           question: 'What hidden fees should I watch for in salon software?',
@@ -253,7 +253,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What salon software works best for multi-location businesses?',
           answer:
-            'Multi-location salons need centralized management, per-location analytics, and consistent branding. Daisy supports up to 4 locations on the Business plan with white-label branding and unified reporting.',
+            'Multi-location salons need centralized management, per-location analytics, and consistent branding. Daisy supports up to 4 locations on the Business plan with branded booking pages and unified reporting.',
         },
       ],
       metaTitle: 'How to Choose the Best Salon Software in 2026 | Buyer\'s Guide',
@@ -296,7 +296,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'Daisy makes switching from Fresha seamless. Free data migration (Business plan) imports all your client records and history. You get features Fresha never offered: AI receptionist, cashback loyalty, white-label branding, and Arabic support. Plus transparent flat pricing with no marketplace commissions.',
+        'Daisy makes switching from Fresha seamless. Free data migration (Business plan) imports all your client records and history. You get features Fresha never offered: AI receptionist, cashback loyalty, branded booking pages, and Arabic support. Plus transparent flat pricing with no marketplace commissions.',
       faqs: [
         {
           question: 'Can I export my data from Fresha?',
@@ -326,7 +326,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What features does Daisy have that Fresha doesn\'t?',
           answer:
-            'Daisy offers several features Fresha lacks: AI voice receptionist, cashback customer acquisition, full white-label branding, native Arabic support, and transparent flat pricing with no transaction fees or marketplace commissions.',
+            'Daisy offers several features Fresha lacks: AI voice receptionist, cashback customer acquisition, full branded booking pages, native Arabic support, and transparent flat pricing with no transaction fees or marketplace commissions.',
         },
       ],
       metaTitle: 'How to Switch from Fresha | Migration Guide 2026',

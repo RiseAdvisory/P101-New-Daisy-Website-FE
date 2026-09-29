@@ -46,8 +46,8 @@ const servicePortfolioAngle: Record<'business' | 'professional', I18nContent<Lan
         { label: 'Staff Management', description: 'Scheduling, permissions, and performance' },
         { label: 'Marketing Engine', description: 'Promotions, campaigns, and customer retention' },
         { label: 'Analytics Dashboard', description: 'Revenue trends, insights, and reporting' },
-        { label: 'Brand Control', description: 'White-label everything with your brand' },
-      ], stats: [{ value: '3x', context: 'more bookings' }, { value: '24/7', context: 'AI receptionist' }, { value: '10+', context: 'languages supported' }] },
+        { label: 'Brand Control', description: 'Branded booking page with your logo and colours' },
+      ], stats: [{ value: '3x', context: 'more bookings' }, { value: '24/7', context: 'AI receptionist' }, { value: '2', context: 'languages: Arabic and English' }] },
       inlineCtas: {
         afterScroll: { headline: 'Ready to show customers what you can do?', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'Start Your 14-Day Free Trial', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/business' },
@@ -96,7 +96,7 @@ const servicePortfolioAngle: Record<'business' | 'professional', I18nContent<Lan
         { label: 'محرك التسويق', description: 'عروض وحملات والاحتفاظ بالعملاء' },
         { label: 'لوحة التحليلات', description: 'اتجاهات الإيرادات والرؤى والتقارير' },
         { label: 'التحكم بالعلامة التجارية', description: 'كل شيء بعلامتك التجارية الخاصة' },
-      ], stats: [{ value: '3x', context: 'حجوزات أكثر' }, { value: '24/7', context: 'موظف استقبال ذكي' }, { value: '+10', context: 'لغة مدعومة' }] },
+      ], stats: [{ value: '3x', context: 'حجوزات أكثر' }, { value: '24/7', context: 'موظف استقبال ذكي' }, { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' }] },
       inlineCtas: {
         afterScroll: { headline: 'مستعد لإظهار ما يمكنك تقديمه للعملاء؟', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/business' },
@@ -130,7 +130,7 @@ const servicePortfolioAngle: Record<'business' | 'professional', I18nContent<Lan
       socialProofStats: [
         { value: '1', context: 'professional portfolio, always visible' },
         { value: '0', context: 'cost to showcase your work' },
-        { value: '10+', context: 'languages for your audience' },
+        { value: '2', context: 'languages for your audience: Arabic and English' },
       ],
       howItWorks: { title: 'How It Works', steps: [
         { title: 'Sign up and tell us about yourself', description: 'Takes 5 minutes. Set your services, availability, and pricing.' },
@@ -147,7 +147,7 @@ const servicePortfolioAngle: Record<'business' | 'professional', I18nContent<Lan
         { label: 'Smart Notifications', description: 'Appointment reminders that reduce no-shows' },
         { label: 'Calendar Sync', description: 'Sync with Google Calendar and other tools' },
         { label: 'Marketplace Visibility', description: 'Customers find you when searching nearby' },
-      ], stats: [{ value: '1', context: 'professional portfolio' }, { value: '24/7', context: 'AI-powered booking' }, { value: '10+', context: 'languages supported' }] },
+      ], stats: [{ value: '1', context: 'professional portfolio' }, { value: '24/7', context: 'AI-powered booking' }, { value: '2', context: 'languages: Arabic and English' }] },
       inlineCtas: {
         afterScroll: { headline: 'Ready to let your work speak for itself?', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'Start Your Free Trial', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/professional' },
@@ -179,7 +179,7 @@ const servicePortfolioAngle: Record<'business' | 'professional', I18nContent<Lan
       socialProofStats: [
         { value: '1', context: 'معرض أعمال مهني، مرئي دائمًا' },
         { value: '0', context: 'تكلفة لعرض أعمالك' },
-        { value: '+10', context: 'لغة لجمهورك' },
+        { value: '2', context: 'لغتان لجمهورك: العربية والإنجليزية' },
       ],
       howItWorks: { title: 'كيف يعمل', steps: [
         { title: 'سجّل وأخبرنا عن نفسك', description: 'يستغرق 5 دقائق. حدد خدماتك وتوافرك وأسعارك.' },
@@ -196,7 +196,7 @@ const servicePortfolioAngle: Record<'business' | 'professional', I18nContent<Lan
         { label: 'إشعارات ذكية', description: 'تذكيرات بالمواعيد تقلل حالات عدم الحضور' },
         { label: 'مزامنة التقويم', description: 'مزامنة مع تقويم جوجل وأدوات أخرى' },
         { label: 'ظهور في السوق', description: 'العملاء يجدونك عند البحث بالقرب منهم' },
-      ], stats: [{ value: '1', context: 'معرض أعمال مهني' }, { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' }, { value: '+10', context: 'لغة مدعومة' }] },
+      ], stats: [{ value: '1', context: 'معرض أعمال مهني' }, { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' }, { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' }] },
       inlineCtas: {
         afterScroll: { headline: 'مستعد لترك أعمالك تتحدث عن نفسها؟', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'ابدأ تجربتك المجانية', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/professional' },

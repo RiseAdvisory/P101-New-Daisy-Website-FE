@@ -35,12 +35,12 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'AI Features', daisy: 'Voice receptionist + chatbot', typical: 'None or basic' },
       ],
       howDaisyImplements:
-        'Daisy combines all salon management functions into one AI-powered platform with a 24/7 voice receptionist, cashback customer acquisition, and white-label branding. Starting at $1/month (+$50 once you pass 5 appointments in a month) with no per-staff fees, Daisy is designed for growth -- not just operations.',
+        'Daisy combines all salon management functions into one AI-powered platform with a 24/7 voice receptionist, cashback customer acquisition, and branded booking pages. Starting at $1/month (+$50 once you pass 5 appointments in a month) with no per-staff fees, Daisy is designed for growth -- not just operations.',
       faqs: [
         {
           question: 'What is the best salon management software in 2026?',
           answer:
-            'The best salon management software in 2026 combines AI capabilities, customer acquisition tools, and comprehensive business management. Daisy leads with its AI receptionist, cashback loyalty system, and white-label branding -- all starting at $1/month (+$50 once you pass 5 appointments in a month).',
+            'The best salon management software in 2026 combines AI capabilities, customer acquisition tools, and comprehensive business management. Daisy leads with its AI receptionist, cashback loyalty system, and branded booking pages -- all starting at $1/month (+$50 once you pass 5 appointments in a month).',
         },
         {
           question: 'How much does salon management software typically cost?',
@@ -220,19 +220,18 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       slug: 'white-label-salon-software',
       term: 'White-Label Salon Software',
       definition:
-        'is a salon management platform that can be fully rebranded with your business\'s logo, colors, domain, and identity -- so every customer touchpoint (booking page, app, receipts, communications) shows your brand, not the software provider\'s.',
+        'is a salon management platform that can be rebranded with your business\'s logo, colors, and identity -- so every customer touchpoint (booking page, app, receipts, communications) shows your brand, not the software provider\'s.',
       extendedDescription:
-        'White-label salon software solves a critical branding problem: most salon platforms force businesses to use the provider\'s branding, which dilutes brand identity and creates customer confusion. With white-label solutions, your booking page looks like YOUR website, confirmation emails come from YOUR brand, and the customer experience is seamlessly branded. This is particularly important for premium salons and multi-location businesses building brand equity.',
+        'White-label salon software solves a critical branding problem: most salon platforms force businesses to use the provider\'s branding, which dilutes brand identity and creates customer confusion. With branded booking solutions, your booking page looks like YOUR website, confirmation emails come from YOUR brand, and the customer experience is seamlessly branded. This is particularly important for premium salons and multi-location businesses building brand equity.',
       keyFeatures: [
         { label: 'Booking Page', daisy: 'Fully branded', typical: 'Provider branded' },
         { label: 'Customer Communications', daisy: 'Your brand', typical: 'Software brand' },
         { label: 'Mobile App', daisy: 'Your logo & colors', typical: 'Not available' },
         { label: 'Receipts & Invoices', daisy: 'Custom branded', typical: 'Generic template' },
-        { label: 'Domain', daisy: 'Your domain', typical: 'Provider subdomain' },
         { label: 'Cost', daisy: 'Included in plan', typical: 'Premium add-on ($100+/mo)' },
       ],
       howDaisyImplements:
-        'Daisy includes full white-label capabilities in all plans at no extra cost. Customize your booking page, customer app, email templates, receipts, and all customer communications with your logo, colors, and brand identity. Your customers interact with your brand, not Daisy\'s.',
+        'Daisy includes a branded booking page in all plans at no extra cost. Customize your booking page, customer app, email templates, receipts, and all customer communications with your logo, colors, and brand identity. Your customers interact with your brand, not Daisy\'s.',
       faqs: [
         {
           question: 'What is white-label salon software?',
@@ -240,24 +239,24 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
             'White-label salon software is a platform you can rebrand as your own. Your customers see your logo, colors, and brand on the booking page, app, and all communications -- they never see the software provider\'s branding.',
         },
         {
-          question: 'Why does white-label branding matter for salons?',
+          question: 'Why does a branded booking page matter for salons?',
           answer:
             'Brand consistency builds trust and professionalism. When customers book through a page with YOUR branding (not Fresha\'s or Booksy\'s), it strengthens your brand identity and increases perceived value.',
         },
         {
           question: 'Which salon software offers white-label features?',
           answer:
-            'Daisy includes full white-label branding in all plans. Boulevard and Mangomint offer some customization. Most platforms like Fresha, Booksy, and Vagaro prominently display their own branding.',
+            'Daisy includes a branded booking page in all plans. Boulevard and Mangomint offer some customization. Most platforms like Fresha, Booksy, and Vagaro prominently display their own branding.',
         },
         {
           question: 'How much does white-label salon software cost?',
           answer:
-            'Standalone white-label solutions can cost $200-500/month on top of regular software fees. Daisy includes complete white-label capabilities in all plans starting at $1/month (+$50 once you pass 5 appointments in a month).',
+            'Standalone branded booking solutions can cost $200-500/month on top of regular software fees. Daisy includes a branded booking page in all plans starting at $1/month (+$50 once you pass 5 appointments in a month).',
         },
         {
-          question: 'Can I use my own domain with salon booking software?',
+          question: 'What will my booking link look like with salon booking software?',
           answer:
-            'With Daisy, yes -- you can use your own domain for your booking page. Many competitors force you to use their subdomain (e.g., yoursalon.booksy.com), which dilutes your brand.',
+            'With Daisy you get a short booking link to share, such as thedaisy.link/your-salon. Custom domains are not supported yet. The page it opens carries your logo, your business name and your brand colours, with no Daisy branding on it.',
         },
         {
           question: 'Does white-label affect the booking experience?',
@@ -403,7 +402,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'What is the best salon management system in 2026?',
           answer:
-            'The best system in 2026 combines comprehensive software with AI capabilities and requires no additional hardware. Daisy leads with its all-in-one approach: AI receptionist, cashback customer acquisition, white-label branding, and zero-hardware cloud platform starting at $1/month (+$50 once you pass 5 appointments in a month).',
+            'The best system in 2026 combines comprehensive software with AI capabilities and requires no additional hardware. Daisy leads with its all-in-one approach: AI receptionist, cashback customer acquisition, branded booking pages, and zero-hardware cloud platform starting at $1/month (+$50 once you pass 5 appointments in a month).',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'salon-employee-management-software'],
@@ -756,11 +755,10 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'اتصالات العملاء', daisy: 'علامتك التجارية', typical: 'علامة البرنامج' },
         { label: 'تطبيق الهاتف', daisy: 'شعارك وألوانك', typical: 'غير متوفر' },
         { label: 'الإيصالات والفواتير', daisy: 'بعلامتك التجارية', typical: 'قالب عام' },
-        { label: 'النطاق', daisy: 'نطاقك الخاص', typical: 'نطاق فرعي للمزود' },
         { label: 'التكلفة', daisy: 'مُضمّنة في الخطة', typical: 'إضافة مميزة (100+ دولار/شهرياً)' },
       ],
       howDaisyImplements:
-        'تتضمن ديزي قدرات العلامة التجارية البيضاء الكاملة في جميع الخطط بدون تكلفة إضافية. خصّص صفحة الحجز وتطبيق العملاء وقوالب البريد الإلكتروني والإيصالات وجميع اتصالات العملاء بشعارك وألوانك وهويتك التجارية. يتفاعل عملاؤك مع علامتك التجارية وليس مع علامة ديزي.',
+        'تتضمن ديزي صفحة حجز بعلامتك التجارية في جميع الخطط بدون تكلفة إضافية. خصّص صفحة الحجز وتطبيق العملاء وقوالب البريد الإلكتروني والإيصالات وجميع اتصالات العملاء بشعارك وألوانك وهويتك التجارية. يتفاعل عملاؤك مع علامتك التجارية وليس مع علامة ديزي.',
       faqs: [
         {
           question: 'ما هو برنامج الصالون ذو العلامة التجارية البيضاء؟',
@@ -780,12 +778,12 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'كم تكلفة برنامج صالون بعلامة تجارية بيضاء؟',
           answer:
-            'يمكن أن تتكلف حلول العلامة التجارية البيضاء المستقلة 200-500 دولار شهرياً بالإضافة إلى رسوم البرنامج العادية. تتضمن ديزي قدرات العلامة التجارية البيضاء الكاملة في جميع الخطط بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
+            'يمكن أن تتكلف حلول صفحات الحجز المستقلة بعلامتك 200-500 دولار شهرياً بالإضافة إلى رسوم البرنامج العادية. تتضمن ديزي صفحة حجز بعلامتك التجارية في جميع الخطط بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
         {
           question: 'هل يمكنني استخدام نطاقي الخاص مع برنامج حجز الصالون؟',
           answer:
-            'مع ديزي، نعم، يمكنك استخدام نطاقك الخاص لصفحة الحجز. يجبرك العديد من المنافسين على استخدام نطاقهم الفرعي (مثل yoursalon.booksy.com)، مما يُضعف علامتك التجارية.',
+            'مع ديزي تحصل على رابط حجز قصير تشاركه، مثل thedaisy.link/your-salon. النطاقات المخصصة غير مدعومة حالياً. والصفحة التي يفتحها تحمل شعارك واسم نشاطك وألوان علامتك، دون أي علامة لديزي عليها.',
         },
         {
           question: 'هل تؤثر العلامة التجارية البيضاء على تجربة الحجز؟',
