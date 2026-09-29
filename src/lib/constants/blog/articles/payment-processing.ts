@@ -828,7 +828,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 `,
     metaTitle: 'Payment Fees: Daisy vs Alternatives | The Daisy',
     metaDescription:
-      'Compare salon payment processing fees across The Daisy, Square, Fresha, Stripe, and SumUp. See real cost breakdowns including hidden fees and commissions.',
+      'Compare salon payment processing fees across The Daisy, Square, Fresha, Stripe, and SumUp. See real cost breakdowns including per-transaction charges and commissions.',
     createdAt: '2025-08-14T05:00:00.000Z',
     updatedAt: '2025-08-14T05:00:00.000Z',
     publishedAt: '2025-08-14T05:00:00.000Z',
@@ -1570,7 +1570,7 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <li><strong>المدفوعات الإلكترونية (منشور للإمارات):</strong> 4.90% + 0.75 درهم لكل معاملة</li>
 <li><strong>عمولة على حجوزات العملاء الجدد:</strong> عمولة لمرة واحدة 50% على العملاء الجدد القادمين من سوق Fresha، بحد أدنى 20 درهماً؛ العملاء العائدون مجاناً</li>
 <li><strong>رسوم النظام الأساسي الشهرية:</strong> خطة أساسية مجانية (مع ميزات محدودة)؛ إضافات مدفوعة للتسويق وإعداد التقارير والأدوات المتقدمة</li>
-<li><strong>الاعتبار الرئيسي:</strong> يعد معدل معالجة العناوين الرئيسية لشركة Fresha تنافسيًا، ولكن عمولة العميل الجديد البالغة 20% هي التكلفة المخفية. إذا كانت 30% من حجوزاتك الشهرية تأتي من عملاء سوق Fresha الجدد، فإن تكلفة المعالجة الفعلية الخاصة بك أعلى بكثير من المعدل المذكور. يقوم صالون بإجراء 100 حجز شهريًا بمتوسط 250 درهمًا إماراتيًا، حيث 30 من عملاء السوق الجدد، يدفع ما يقرب من 1500 درهم إماراتي كعمولات فقط - بالإضافة إلى رسوم المعالجة.</li>
+<li><strong>الاعتبار الرئيسي:</strong> يعد معدل معالجة العناوين الرئيسية لشركة Fresha تنافسيًا، ولكن عمولة العميل الجديد لمرة واحدة البالغة 50% (بحد أدنى 20 درهماً) هي التكلفة الأكبر. إذا كانت 30% من حجوزاتك الشهرية تأتي من عملاء سوق Fresha الجدد، فإن تكلفة المعالجة الفعلية الخاصة بك أعلى بكثير من المعدل المذكور. يقوم صالون بإجراء 100 حجز شهريًا بمتوسط 250 درهمًا إماراتيًا، حيث 30 من عملاء السوق الجدد، يدفع ما يقرب من 1500 درهم إماراتي كعمولات فقط - بالإضافة إلى رسوم المعالجة.</li>
 </ul>
 
 <h3>الشريط (التكامل المباشر)</h3>

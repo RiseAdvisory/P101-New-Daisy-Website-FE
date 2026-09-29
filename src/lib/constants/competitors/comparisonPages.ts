@@ -92,7 +92,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     heroTitle: 'Daisy vs Fresha',
     heroSubtitle:
       'How does an AI-powered growth platform stack up against the world\'s largest beauty marketplace?',
-    tldr: 'Fresha is a marketplace charging subscription fees plus hidden transaction costs. Daisy is a complete growth platform with an AI receptionist, cashback rewards and Arabic support. Pick Fresha for marketplace exposure, Daisy to actively grow the business.',
+    tldr: 'Fresha is a marketplace charging subscription fees plus published transaction and marketplace charges that stack. Daisy is a complete growth platform with an AI receptionist, cashback rewards and Arabic support. Pick Fresha for marketplace exposure, Daisy to actively grow the business.',
     verdict:
       'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and a one-time 50% commission on new marketplace clients. Its AI Concierge covers phone calls; Daisy\'s AI receptionist also works across WhatsApp and Instagram, in Arabic and English, and Daisy charges no marketplace commission.',
     featureCommentary: {
@@ -109,16 +109,16 @@ export const daisyVsPages: DaisyVsPageData[] = [
       inventoryManagement:
         'Both offer basic inventory tracking. Call it a tie, since neither platform specializes in deep inventory management.',
       reportingAndAnalytics:
-        'Fresha offers standard reports. Daisy uses AI to recommend actions rather than only draw dashboards, spotting trends, suggesting pricing changes and forecasting demand.',
+        'Fresha has a deep reporting suite, around 60 reports plus live dashboards. Daisy uses AI to recommend actions rather than only draw dashboards, spotting trends, suggesting pricing changes and forecasting demand.',
       marketplaceAndDiscovery:
         'Fresha\'s biggest strength is the 25M+ consumers browsing its marketplace. Daisy comes at it differently, with 360° customer acquisition where marketplace, cashback rewards and AI marketing work together to bring customers in and keep them.',
       aiCapabilities:
-        'The gap is widest here. Fresha has announced AI features for 2026 but hasn\'t shipped them. Daisy\'s AI receptionist is live today, taking calls, bookings, payments and customer service in Arabic and English 24/7.',
+        'Both ship AI, and the difference is reach. Fresha\'s AI Concierge answers phone calls and books from them. Daisy\'s AI receptionist carries calls plus WhatsApp and Instagram chat, takes payments and handles customer service, in Arabic and English, 24/7.',
     },
     whoShouldChooseDaisy: [
       'You want an AI receptionist covering bookings and customer service 24/7',
       'Your GCC clients need Arabic',
-      'You want pricing you can predict, with no hidden transaction fees',
+      'You want pricing you can predict, with nothing added per transaction',
       'You want to build your brand rather than Fresha\'s',
       'You want acquisition that works for you, not just a marketplace listing',
       'You operate in the GCC and need local compliance and payment methods',
@@ -127,7 +127,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'You want the lowest published entry plan and the marketplace reach',
       'Marketplace discovery is where most of your new clients come from',
       'You work alone and process few transactions',
-      'You operate only in English-speaking Western markets',
+      'Marketplace reach matters more to you than breadth of AI channels',
     ],
   },
   {
@@ -651,21 +651,21 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'fresha',
     competitorSlug: 'fresha',
     metaTitle: 'Best Fresha Alternative for Salons (2026)',
-    metaDescription: 'Looking for a Fresha alternative? Daisy offers AI receptionist, transparent pricing, Arabic support, and cashback, without Fresha\'s hidden fees.',
+    metaDescription: 'Looking for a Fresha alternative? Daisy offers AI receptionist, transparent pricing, Arabic support, and cashback, without per-transaction charges or marketplace commission.',
     keywords: ['fresha alternative', 'fresha replacement', 'better than fresha', 'salon software like fresha'],
     heroTitle: 'Looking for a Fresha Alternative?',
     heroSubtitle: 'Subscription fees, then transaction fees, then marketplace commissions. The costs keep stacking.',
     painPoints: [
       'Online payments charged at 4.90% + AED 0.75, eating into every transaction',
       'A one-time 50% commission on new marketplace clients, minimum AED 20',
-      'No Arabic, which rules out serving GCC clients properly',
-      'No AI receptionist, so you are still answering calls and messages yourself',
+      'Arabic exists, but localisation depth and local payment rails need checking per market',
+      'The AI Concierge covers phone calls only, so WhatsApp and Instagram are still yours to answer',
       'Fresha-branded booking pages, with no control over how your brand looks',
       'Recent feature removals and pricing changes that broke trust',
     ],
     switchingReasons: [
       'An AI receptionist covering bookings, payments and customer service 24/7',
-      'Flat, transparent pricing with no hidden transaction fees or commissions',
+      'Flat pricing with nothing added per transaction and no marketplace commission',
       'Native Arabic and English for the GCC market',
       'Cashback rewards that build loyalty and bring people back',
       'White-label booking pages, so the brand stays yours',
@@ -1006,7 +1006,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     metaDescription: 'Looking for Fresha alternatives? Compare the top 7 salon platforms with better AI, pricing transparency, and Arabic support.',
     keywords: ['best fresha alternatives', 'fresha alternatives', 'fresha competitors', 'salon software like fresha'],
     heroTitle: '7 Best Fresha Alternatives in 2026',
-    heroSubtitle: 'Fresha\'s subscription fees plus hidden transaction costs are adding up. Here are the best alternatives for a growing beauty business.',
+    heroSubtitle: 'Fresha\'s subscription plus its per-transaction and marketplace charges add up. Here are the best alternatives for a growing beauty business.',
     intro: 'Fresha runs the world\'s largest beauty marketplace. It also stacks monthly subscriptions on top of transaction fees and takes a one-time 50% commission on new marketplace clients, which is sending some businesses looking. The alternatives below are compared on features, pricing, AI and international support.',
     alternatives: ['booksy', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
     bestFor: {

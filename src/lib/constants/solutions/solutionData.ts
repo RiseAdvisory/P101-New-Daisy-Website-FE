@@ -121,7 +121,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'How much does salon management software cost?',
         answer:
-          'Salon software ranges from free (with hidden fees like Fresha) to $400+/mo (Boulevard, Mangomint). Daisy offers flat pricing that includes AI, unlimited staff, and all features, no per-staff surcharges or feature tiers.',
+          'Salon software ranges from low published entry plans with per-transaction and marketplace charges on top, such as Fresha, to $400+/mo (Boulevard, Mangomint). Daisy offers flat pricing that includes AI, unlimited staff, and all features, no per-staff surcharges or feature tiers.',
       },
       {
         question: 'Can I switch from my current salon software?',
@@ -375,7 +375,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'How much does beauty salon software cost?',
         answer:
-          'Beauty salon software ranges from free (Fresha, with hidden fees) to $400+/mo (Mangomint, Boulevard). Daisy offers flat pricing that includes AI, unlimited staff, and all features without per-staff surcharges.',
+          'Beauty salon software ranges from low published entry plans with usage charges on top, such as Fresha, to $400+/mo (Mangomint, Boulevard). Daisy offers flat pricing that includes AI, unlimited staff, and all features without per-staff surcharges.',
       },
       {
         question: 'Is Daisy good for hair salons?',
@@ -385,7 +385,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'Can I switch from Fresha to Daisy?',
         answer:
-          'Yes. Daisy provides full migration support to transfer your client database, service menu, booking history, and staff profiles. Most salons switch in under a week with no downtime. Unlike Fresha, Daisy has no hidden per-transaction fees.',
+          'Yes. Daisy provides full migration support to transfer your client database, service menu, booking history, and staff profiles. Most salons switch in under a week with no downtime. Unlike Fresha, Daisy adds nothing per transaction and takes no marketplace commission.',
       },
       {
         question: 'Does Daisy work in Arabic for beauty salons?',
