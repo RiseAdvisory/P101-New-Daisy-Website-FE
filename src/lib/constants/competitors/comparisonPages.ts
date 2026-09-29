@@ -146,7 +146,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     heroTitle: 'Daisy vs Booksy',
     heroSubtitle:
       'A mobile-first booking app against a full AI-powered growth platform, which one actually grows your business?',
-    tldr: 'Booksy is a solid mobile-first booking app with a basic AI voice receptionist called "Digital Doorman". Daisy brings a complete AI ecosystem, Arabic support, cashback-driven customer acquisition and flat pricing that doesn\'t rise with every provider you add.',
+    tldr: 'Booksy is a solid mobile-first booking app whose AI Receptionist (beta) answers calls and books appointments, in English and Spanish. Daisy brings a complete AI ecosystem, Arabic support, cashback-driven customer acquisition and flat pricing that doesn\'t rise with every provider you add.',
     verdict:
       'Booksy suits independent barbers and beauty pros who want simple mobile booking with marketplace exposure. For teams, though, the per-provider pricing gets expensive, there is no GCC presence, and the AI does nothing beyond routing calls. For growing businesses, particularly in Arabic-speaking markets, Daisy wins clearly.',
     featureCommentary: {
@@ -167,7 +167,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketplaceAndDiscovery:
         'Booksy has a strong consumer marketplace, especially popular with barbershops. Daisy runs marketplace, cashback rewards and AI marketing together, so three acquisition channels rather than one.',
       aiCapabilities:
-        'Booksy\'s "Digital Doorman" answers inbound calls and passes them to booking, which makes it a single-purpose AI feature. Daisy\'s AI ecosystem covers the receptionist on voice and chat, smart scheduling, marketing automation and analytics, all working together.',
+        'Booksy\'s AI Receptionist answers inbound calls and books the appointment, on the phone channel only and in beta. Daisy\'s AI ecosystem covers the receptionist on voice and chat, smart scheduling, marketing automation and analytics, all working together.',
     },
     whoShouldChooseDaisy: [
       'You want AI across the business, not just call routing',
@@ -256,7 +256,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'A beautifully designed solopreneur tool against a complete AI-powered growth platform, which matches your ambitions?',
     tldr: 'GlossGenius is beautiful, simple and cheap at $24/mo, which suits solo US beauty professionals well. Daisy is built for businesses that intend to scale, with an AI receptionist, team management, a marketplace with cashback and Arabic support. GlossGenius helps you look great, Daisy helps you grow.',
     verdict:
-      'For solo professionals in the US, GlossGenius wins on design and simplicity. Its AI, though, is analytics only and sits in the $148/mo tier, team features are locked behind Platinum, and there is no Arabic or GCC support. If you have growth ambitions, a team, or clients outside those markets, Daisy is the clear choice.',
+      'For solo professionals in the US, GlossGenius wins on design and simplicity. Its Reception AI covers calls and texts rather than WhatsApp or Instagram, team features are locked behind Platinum, and there is no Arabic or GCC support. If you have growth ambitions, a team, or clients outside those markets, Daisy is the clear choice.',
     featureCommentary: {
       onlineBooking:
         'Both offer strong booking experiences. GlossGenius is known for beautiful booking pages, and the design genuinely sets it apart. Daisy matches the functionality and adds AI that can carry the whole booking conversation.',
@@ -275,7 +275,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketplaceAndDiscovery:
         'GlossGenius has no consumer marketplace. What it gives you is a passive booking page. Daisy actively acquires customers through the marketplace, cashback rewards and AI-powered marketing.',
       aiCapabilities:
-        'The Growth Analyst in Platinum at $148/mo is the only AI GlossGenius has. There is no AI receptionist, no chatbot and no smart scheduling. Daisy includes the whole AI ecosystem in the base platform: receptionist, chatbot, scheduling, marketing and analytics.',
+        'GlossGenius ships Reception, an AI front desk answering calls and texts 24/7 and booking onto the calendar, free on GlossGenius until 30 November 2026, plus a Growth Analyst in Platinum. The difference is channel coverage: Daisy includes the whole AI ecosystem in the base platform: receptionist, chatbot, scheduling, marketing and analytics.',
     },
     whoShouldChooseDaisy: [
       'You have a team, or expect to, and want staff management included',
@@ -683,7 +683,7 @@ export const alternativePages: AlternativePageData[] = [
     heroSubtitle: 'A great app, but per-provider pricing and thin AI are holding the business back.',
     painPoints: [
       'Per-provider pricing at $29.99-49.99 each, which gets expensive as the team grows',
-      'Digital Doorman routes calls and nothing more, so it cannot take payment or answer a question',
+      'The AI Receptionist books from phone calls, but does not cover WhatsApp or Instagram',
       'No Arabic, so GCC clients are out of reach',
       'No cashback or loyalty program to keep customers coming back',
       'A Booksy-branded experience, with little control over your own',
@@ -763,7 +763,7 @@ export const alternativePages: AlternativePageData[] = [
     painPoints: [
       'Expensive plans at $139-699/mo, with marketplace commissions on top',
       'A legacy interface that has not kept up',
-      'No AI receptionist and no chatbot',
+      'AI sits at the front desk, with Messenger[ai] as a paid add-on on top',
       'No Arabic, which closes off the GCC',
       'Complicated contracts, and a steady stream of upselling',
       'Built mainly for fitness, with beauty treated as secondary',
@@ -1027,7 +1027,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best booksy alternatives', 'booksy alternatives', 'booksy competitors'],
     heroTitle: '7 Best Booksy Alternatives in 2026',
     heroSubtitle: 'Per-provider pricing and thin AI no longer working for you? Here are better options for a growing team.',
-    intro: 'Booksy is a popular mobile-first booking app. For a team, though, per-provider pricing gets expensive, the Digital Doorman AI does nothing beyond routing calls, and there is no GCC support. The alternatives below suit different kinds of business.',
+    intro: 'Booksy is a popular mobile-first booking app. For a team, though, per-provider pricing gets expensive, its AI Receptionist covers phone calls only, and there is no GCC support. The alternatives below suit different kinds of business.',
     alternatives: ['fresha', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
     bestFor: {
       'fresha': 'Best for marketplace-driven client discovery',
@@ -1291,7 +1291,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['fresha vs booksy', 'fresha or booksy', 'booksy vs fresha comparison'],
     heroTitle: 'Fresha vs Booksy',
     heroSubtitle: 'Two popular booking platforms, but which one is right for your beauty business?',
-    verdict: 'Fresha wins on marketplace scale and lower starting price. Booksy wins on mobile experience and has a basic AI voice feature (Digital Doorman). Neither offers Arabic support, full AI ecosystem, or cashback-driven customer acquisition.',
+    verdict: 'Fresha wins on marketplace scale and lower starting price. Booksy wins on mobile experience and its AI Receptionist books from calls. Neither offers Arabic support, full AI ecosystem, or cashback-driven customer acquisition.',
     whoShouldChooseA: [
       'You want an affordable starting point with marketplace exposure',
       'Marketplace discovery is your primary acquisition channel',
@@ -1299,7 +1299,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     ],
     whoShouldChooseB: [
       'You prefer a mobile-first experience',
-      'You want basic AI voice receptionist (Digital Doorman)',
+      'You want an AI receptionist that books from phone calls',
       'You\'re an independent barber or beauty pro',
     ],
     daisyPitch: 'Both Fresha and Booksy are operations tools with marketplace bolt-ons. Daisy is a growth platform with full AI ecosystem, Arabic support, cashback rewards, and branded booking pages, capabilities neither competitor offers.',
@@ -1335,7 +1335,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['booksy vs vagaro', 'booksy or vagaro', 'vagaro vs booksy'],
     heroTitle: 'Booksy vs Vagaro',
     heroSubtitle: 'Mobile-first booking app versus comprehensive all-in-one salon platform.',
-    verdict: 'Booksy excels on mobile UX and has basic AI (Digital Doorman). Vagaro offers more features and better POS. Both lack Arabic support, full AI, and cashback rewards.',
+    verdict: 'Booksy excels on mobile UX and its AI Receptionist books from calls. Vagaro offers more features and better POS. Both lack Arabic support, full AI, and cashback rewards.',
     whoShouldChooseA: [
       'Mobile-first experience is your top priority',
       'You\'re a solo barber or beauty pro',
@@ -1408,7 +1408,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['booksy vs glossgenius', 'booksy or glossgenius'],
     heroTitle: 'Booksy vs GlossGenius',
     heroSubtitle: 'Mobile-first marketplace versus beautifully simple salon tool, two approaches for beauty professionals.',
-    verdict: 'Booksy wins on mobile app and marketplace. GlossGenius wins on design and affordability. Booksy has basic AI; GlossGenius has AI analytics only at $148/mo.',
+    verdict: 'Booksy wins on mobile app and marketplace. GlossGenius wins on design and affordability. Booksy\'s AI Receptionist books from calls; GlossGenius Reception covers calls and texts.',
     whoShouldChooseA: ['Mobile experience is priority', 'You want marketplace exposure', 'Basic AI call handling appeals to you'],
     whoShouldChooseB: ['Beautiful booking pages matter most', 'You want the simplest tool at $24/mo', 'You\'re a US-based solo professional'],
     daisyPitch: 'Both serve solo US professionals well. Daisy serves growing businesses with full AI, Arabic support, team management, marketplace, and cashback.',
@@ -1516,11 +1516,11 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['booksy vs mindbody', 'booksy or mindbody', 'mindbody vs booksy comparison'],
     heroTitle: 'Booksy vs Mindbody',
     heroSubtitle: 'Mobile-first affordability versus enterprise legacy, two very different tiers of beauty business software.',
-    verdict: 'Booksy wins on mobile experience, affordability, and has a basic AI voice feature (Digital Doorman). Mindbody wins on enterprise scale and the largest fitness marketplace. Neither offers Arabic support or cashback rewards.',
+    verdict: 'Booksy wins on mobile experience and affordability, and its AI Receptionist books from calls. Mindbody wins on enterprise scale and the largest fitness marketplace. Neither offers Arabic support or cashback rewards.',
     whoShouldChooseA: [
       'You\'re an independent professional who values mobile-first',
       'Budget matters ,  $29.99/mo vs $139+/mo',
-      'Basic AI call routing (Digital Doorman) appeals to you',
+      'An AI receptionist that books from phone calls appeals to you',
     ],
     whoShouldChooseB: [
       'You run a multi-location fitness or wellness brand',
@@ -1542,7 +1542,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     whoShouldChooseA: [
       'You\'re a beauty professional who wants a specialized platform',
       'Mobile-first experience and marketplace matter',
-      'Basic AI voice handling (Digital Doorman) is appealing',
+      'An AI receptionist handling phone bookings is appealing',
     ],
     whoShouldChooseB: [
       'Payment processing is your primary need',
@@ -1582,7 +1582,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['glossgenius vs square appointments', 'glossgenius or square appointments', 'square appointments vs glossgenius'],
     heroTitle: 'GlossGenius vs Square Appointments',
     heroSubtitle: 'Beautiful beauty-focused design at $24/mo versus free payment-first scheduling, aesthetics versus ecosystem.',
-    verdict: 'GlossGenius wins on design, beauty-specific branding, and client experience. Square wins on free tier, POS ecosystem, and payment processing. GlossGenius has AI analytics at $148/mo; Square has no AI. Neither supports Arabic or cashback.',
+    verdict: 'GlossGenius wins on design, beauty-specific branding, and client experience. Square wins on free tier, POS ecosystem, and payment processing. GlossGenius has Reception for calls and texts, plus AI analytics at $148/mo; Square has no AI. Neither supports Arabic or cashback.',
     whoShouldChooseA: [
       'Brand aesthetics and beautiful booking pages matter most',
       'You\'re a solo beauty professional who values design',

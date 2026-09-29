@@ -356,7 +356,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
             'Calendar management',
             'Client management',
             'Marketplace listing',
-            'Digital Doorman AI',
+            'AI Receptionist (beta)',
             'Basic reporting',
           ],
         },
@@ -411,7 +411,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'The "Digital Doorman" AI voice receptionist answers the phone and passes callers to booking. A Google AI Mode integration has been announced. There is no AI chatbot, no scheduling optimization and no marketing automation.',
+        'Booksy\'s AI Receptionist (beta) answers calls day or night and books the appointment onto the Booksy calendar. It is English and Spanish, and access is request-based while in beta. There is no AI chatbot for WhatsApp or Instagram, no scheduling optimization and no marketing automation.',
     },
 
     targetMarket:
@@ -451,7 +451,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         '380K+ service providers',
         'Mobile-first booking experience',
         'Marketplace discovery',
-        'Digital Doorman AI receptionist',
+        'AI Receptionist (beta)',
         'Manage your business from your phone',
       ],
     },
@@ -491,7 +491,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       growthFeatures: [
         'Consumer marketplace',
         'Social media booking',
-        'Digital Doorman AI for calls',
+        'AI Receptionist for calls (beta)',
       ],
       operationsFeatures: [
         'Mobile calendar',
@@ -501,11 +501,11 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Inventory tracking',
       ],
       assessment:
-        'Operations-focused, with the marketplace as its main growth channel. Digital Doorman is promising but handles calls and nothing else. No marketing or acquisition tools that work on their own.',
+        'Operations-focused, with the marketplace as its main growth channel. Its AI Receptionist books from phone calls, but stops at the phone: no WhatsApp or Instagram, and no marketing or acquisition tools that work on their own.',
     },
 
     daisyAdvantages: [
-      'Full AI ecosystem (receptionist + chatbot + smart scheduling + marketing) vs single "Digital Doorman" feature',
+      'Full AI ecosystem (receptionist + chatbot + smart scheduling + marketing) vs a phone-only AI receptionist',
       'Official Meta Tech Provider with native WhatsApp and Instagram messaging vs no messaging platform integration',
       'Native multilingual support (Arabic/English and more) vs English-only platform',
       'Customer acquisition engine with cashback rewards vs basic marketplace listing',
@@ -527,7 +527,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     competitorStrengths: [
       'Excellent mobile app experience',
       'Strong in barbershop vertical',
-      'Digital Doorman AI voice receptionist',
+      'AI Receptionist that books from calls (beta)',
       'Large consumer marketplace',
       'Google AI Mode integration announced',
       'Affordable per-provider pricing for solopreneurs',
@@ -555,9 +555,9 @@ export const tier1Competitors: Record<string, CompetitorData> = {
           'Booksy has no GCC presence at all: no Arabic interface, no local payment methods, nothing for regional compliance. Daisy was built for the Middle East, with a native Arabic interface, local payment integration and full GCC compliance across UAE, KSA, Kuwait, Bahrain, Oman and Qatar.',
       },
       {
-        question: 'What is Booksy\'s Digital Doorman?',
+        question: 'What is Booksy\'s AI Receptionist?',
         answer:
-          'Digital Doorman is Booksy\'s AI voice receptionist. It answers the phone and points callers at online booking. Routing is where it stops: it cannot take a payment, answer a detailed question or cover customer service 24/7. Daisy\'s AI receptionist handles calls, bookings, payments and customer service in Arabic and English.',
+          'Booksy\'s AI Receptionist answers calls day or night and books the appointment for the caller. It is in beta, request-based, and covers English and Spanish on the phone channel. Daisy\'s AI receptionist handles calls, bookings, payments and customer service in Arabic and English.',
       },
       {
         question: 'Can I switch from Booksy to Daisy?',
@@ -577,7 +577,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Booksy\'s AI compare to Daisy\'s AI receptionist?',
         answer:
-          'Digital Doorman answers the phone and redirects callers to online booking, which makes it a call router. It cannot take payments, answer detailed service questions or work through a complicated booking. Daisy\'s AI receptionist carries the whole journey: answering questions, booking, taking payment and following up, 24/7 in Arabic and English.',
+          'Booksy\'s AI Receptionist books from phone calls, in beta, in English and Spanish. The difference is channel and scope rather than presence: Daisy\'s AI receptionist carries the whole journey across phone, WhatsApp and Instagram in Arabic and English: answering questions, booking, taking payment and following up, 24/7 in Arabic and English.',
       },
       {
         question: 'Is the Booksy app good for salon owners?',
@@ -598,7 +598,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     lastResearched: '2026-03-13',
     notes:
-      'Strong on mobile and strong with barbershops. Digital Doorman is a real competitive move, though narrow next to a full AI platform, and the Google AI Mode integration could firm up its position. No GCC presence at all is the key weakness.',
+      'Strong on mobile and strong with barbershops. Its AI Receptionist books from phone calls, which is a real competitive move, though narrower than AI across every channel, and the Google AI Mode integration could firm up its position. No GCC presence at all is the key weakness.',
   },
 
   // ---------------------------------------------------------------------------
@@ -1012,7 +1012,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'No AI of its own. The AI front desk, Messenger[ai], is a third-party add-on costing about ~$199/mo on top. Higher tiers include basic automated marketing. No smart scheduling and no AI analytics.',
+        'Mindbody lists an AI Concierge that turns missed calls into bookings, alongside the Messenger[ai] front desk which is a paid add-on. Both sit on the phone and messaging front desk rather than across the platform: no smart scheduling and no AI analytics.',
     },
 
     targetMarket:
@@ -1192,7 +1192,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Mindbody have real AI or is it just marketing?',
         answer:
-          'The AI arrived through the Messenger[ai] acquisition, which answers calls and does basic booking. It is a paid add-on at about ~$199/mo and sits loosely on top of the platform rather than inside it. The core product has no AI marketing, no scheduling optimization and no predictive analytics. Daisy includes the receptionist, marketing and smart scheduling in the base plan.',
+          'Mindbody lists an AI Concierge for turning missed calls into bookings, and the Messenger[ai] front desk as a paid add-on. Both sit on the front desk rather than across the platform: the core product has no AI marketing, no scheduling optimization and no predictive analytics. Daisy includes the receptionist, marketing and smart scheduling in the base plan.',
       },
       {
         question: 'How hard is it to move my data out of Mindbody?',

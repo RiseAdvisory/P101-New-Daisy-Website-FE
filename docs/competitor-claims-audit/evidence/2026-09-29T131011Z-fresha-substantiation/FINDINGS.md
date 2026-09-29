@@ -64,3 +64,41 @@ So Fresha's non-GCC pricing cannot be observed from Kuwait by changing the URL.
 **An independent, dated source shows a different market.** The Internet Archive snapshot of `fresha.com/pricing` taken **2026-09-13** carries `data-country-code="CA"` and dollar-denominated figures — a different geography from a third party, captured before this dispute, with no involvement from Daisy. Saved here as `pricing-wayback-20260913-CA.html`.
 
 **Implication for any published price claim.** Fresha's pricing is market-varying, and Team and Enterprise are quote-based rather than published. Any single figure, or any range presented as comprehensive, will be wrong in some market. A market-qualified and dated statement, or a comparison on pricing *structure* rather than amount, is the only form that stays true.
+
+---
+
+## Booksy, GlossGenius and Mindbody — same pattern, same verdict
+
+Checked against each rival's own pages on the same day, because Daisy published absence claims about all three.
+
+### Booksy — "routing only, cannot book, not 24/7" is false
+
+`biz.booksy.com/features/ai-receptionist-beta`, HTTP 200:
+
+> "Booksy's automated receptionist picks up when you can't, and **books the appointment for you**."
+> "Every call gets answered, **day or night**."
+> "AI Receptionist is **in beta**. Current Booksy providers can request access and start using it today."
+
+It books, and it is day-or-night. The true and still-useful qualifiers are that it is in beta, request-based, English and Spanish, and phone-only. Note also that Booksy now brands this "AI Receptionist"; "Digital Doorman" appears to be the older name Daisy was still using.
+
+### GlossGenius — "AI receptionist not available; analytics only" is false
+
+`glossgenius.com/reception`, HTTP 200:
+
+> "Reception by Genius AI: Calls, Texts & Bookings."
+> "Reception answers your calls and texts 24/7 and **books clients in seconds**."
+> "**Free on GlossGenius until 11/30/26.**"
+
+Reception is shipped. It covers calls and texts, not WhatsApp or Instagram, which is the honest distinction. The internal pack proposed "promo then $50/mo"; the page states only that it is free until 30 November 2026, so no post-promo price is asserted in the corrected copy.
+
+### Mindbody — "AI Receptionist not available" is false
+
+`mindbodyonline.com/business/pricing`, HTTP 200, lists among plan features:
+
+> "**AI Concierge** — Turn missed calls into bookings"
+
+The same page also confirms a claim Daisy makes that is true and has been kept: the marketplace fee is "20%, capped at $30 … and only on the first purchase for someone new to your business."
+
+## What this does not establish
+
+Nothing here speaks to the quality, reliability or real-world performance of any rival's AI, nor to pricing beyond what each page states. The corrections move the comparison from presence to scope and channel coverage, which is what the evidence supports.

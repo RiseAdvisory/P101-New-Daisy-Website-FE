@@ -4,3 +4,6 @@
 200  https://www.fresha.com/for-business/features/ai-concierge  ai-concierge.html
 200  http://web.archive.org/web/20260913005755/https://www.fresha.com/pricing  pricing-wayback-20260913-CA.html
 200  https://www.fresha.com/blog/expanding-in-the-GCC  blog-expanding-in-the-GCC.html
+200  https://biz.booksy.com/features/ai-receptionist-beta  booksy-ai-receptionist.html
+200  https://glossgenius.com/reception  glossgenius-reception.html
+200  https://www.mindbodyonline.com/business/pricing  mindbody-pricing.html

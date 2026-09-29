@@ -519,7 +519,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: true,
       hasAiPricing: false,
       aiDescription:
-        'The AI Growth Analyst offers business insights and growth recommendations, and only appears in the Platinum tier at $148/mo. No AI receptionist, no chatbot, no smart scheduling.',
+        'GlossGenius ships Reception, an AI front desk that answers calls and texts 24/7 and books onto the calendar; it is free on GlossGenius until 30 November 2026. The AI Growth Analyst, which produces business insights, appears in the Platinum tier. There is no AI across WhatsApp or Instagram, and no smart scheduling.',
     },
 
     targetMarket:
@@ -542,7 +542,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     },
 
     daisyAdvantages: [
-      '24/7 AI receptionist vs AI analytics only (and only in $148/mo tier)',
+      'AI receptionist across calls, WhatsApp and Instagram, in Arabic and English, vs a calls-and-texts front desk',
       'Full AI ecosystem (receptionist + chatbot + scheduling + marketing) vs single AI feature',
       'Native Arabic/English vs English-only, US-only',
       'Consumer marketplace with cashback vs no marketplace',
@@ -575,7 +575,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       'AI limited to analytics in highest tier only',
       'No consumer marketplace',
       'Weak team/staff management (Platinum only)',
-      'No AI receptionist or chatbot',
+      'Reception covers calls and texts; no AI across WhatsApp or Instagram',
       'No cashback or loyalty programs',
       'Solopreneur focus, limited for growing teams',
     ],
@@ -584,12 +584,12 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does GlossGenius compare to Daisy?',
         answer:
-          'For a US-based solopreneur, GlossGenius is hard to beat on design and simplicity. It has no AI receptionist, no marketplace, no Arabic, and no team management below the $148/mo tier. Daisy is a complete growth platform with AI, a marketplace, cashback and GCC compliance, at any size.',
+          'For a US-based solopreneur, GlossGenius is hard to beat on design and simplicity. It has no marketplace, no Arabic, and no team management below the Platinum tier, and its Reception AI covers calls and texts rather than WhatsApp or Instagram. Daisy is a complete growth platform with AI across every channel, a marketplace, cashback and GCC compliance, at any size.',
       },
       {
         question: 'Does GlossGenius have AI features?',
         answer:
-          'There is an AI Growth Analyst in the Platinum tier at $148/mo, which produces business insights. There is no AI receptionist, no chatbot and no smart scheduling. Daisy includes all of that in the base platform.',
+          'GlossGenius ships Reception, an AI front desk answering calls and texts 24/7 and booking onto the calendar, free on GlossGenius until 30 November 2026, plus an AI Growth Analyst in the Platinum tier for business insights. The comparison is channel coverage rather than presence: Daisy\'s AI receptionist also works across WhatsApp and Instagram, in Arabic and English, and is in the base platform.',
       },
       {
         question: 'What are the real costs of using GlossGenius once you add everything up?',
