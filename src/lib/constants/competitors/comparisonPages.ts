@@ -94,7 +94,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'How does an AI-powered growth platform stack up against the world\'s largest beauty marketplace?',
     tldr: 'Fresha is a marketplace charging subscription fees plus hidden transaction costs. Daisy is a complete growth platform with an AI receptionist, cashback rewards and Arabic support. Pick Fresha for marketplace exposure, Daisy to actively grow the business.',
     verdict:
-      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and commissions, and it has no AI, no Arabic support and no customer acquisition tools. For businesses serious about growth, particularly in the GCC, Daisy is the better choice.',
+      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and a 20% commission on new marketplace clients. Its AI Concierge covers phone calls; Daisy\'s AI receptionist also works across WhatsApp and Instagram, in Arabic and English, and Daisy charges no marketplace commission.',
     featureCommentary: {
       onlineBooking:
         'Both do online booking well. Fresha\'s strength is the size of its consumer marketplace, with 25M+ users. Daisy answers that with AI booking that carries the whole flow, payments and customer service included, 24/7 and without anyone stepping in.',
@@ -1007,7 +1007,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best fresha alternatives', 'fresha alternatives', 'fresha competitors', 'salon software like fresha'],
     heroTitle: '7 Best Fresha Alternatives in 2026',
     heroSubtitle: 'Fresha\'s subscription fees plus hidden transaction costs are adding up. Here are the best alternatives for a growing beauty business.',
-    intro: 'Fresha runs the world\'s largest beauty marketplace. It also stacks monthly subscriptions on top of transaction fees, takes 20% commission on marketplace bookings and offers no AI, which is sending businesses looking. The alternatives below are compared on features, pricing, AI and international support.',
+    intro: 'Fresha runs the world\'s largest beauty marketplace. It also stacks monthly subscriptions on top of transaction fees and takes a 20% commission on new marketplace clients, which is sending some businesses looking. The alternatives below are compared on features, pricing, AI and international support.',
     alternatives: ['booksy', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
     bestFor: {
       'booksy': 'Best for mobile-first solopreneurs',
@@ -1050,7 +1050,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     intro: 'Vagaro is a comprehensive US salon platform with no AI, a per-staff calendar fee and no international support. Which of the alternatives below fits depends on what you are optimising for.',
     alternatives: ['fresha', 'booksy', 'glossgenius', 'boulevard', 'mindbody', 'mangomint'],
     bestFor: {
-      'fresha': 'Best for salons wanting free marketplace exposure',
+      'fresha': 'Best for salons wanting the widest marketplace exposure',
       'booksy': 'Best for mobile-first independent professionals',
       'glossgenius': 'Best for solo stylists who value design and simplicity',
       'boulevard': 'Best for premium multi-service salons',
@@ -1148,7 +1148,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     intro: 'Square Appointments is a solid free scheduling tool attached to a great POS, and it was never built for beauty. The alternatives below bring industry-specific features, AI and a marketplace.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'glossgenius', 'boulevard', 'mangomint'],
     bestFor: {
-      'fresha': 'Best for free marketplace-powered booking',
+      'fresha': 'Best for marketplace-powered booking reach',
       'vagaro': 'Best for the most complete feature set',
       'booksy': 'Best for beauty professionals wanting industry-specific tools',
       'glossgenius': 'Best for independent stylists upgrading from generic tools',
@@ -1227,7 +1227,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     intro: 'Timely has a clean interface and a solid 4.7 rating across New Zealand, Australia and the UK. Per-staff pricing, at $9-15/staff on top of the $30/mo base, scales badly once a team grows, and there is no AI, no marketplace and no Arabic support to grow into. Here are better alternatives for a scaling beauty business.',
     alternatives: ['fresha', 'vagaro', 'booksy', 'glossgenius'],
     bestFor: {
-      'fresha': 'Best for free marketplace-driven booking',
+      'fresha': 'Best for marketplace-driven booking reach',
       'vagaro': 'Best for growing teams wanting flat-rate value',
       'booksy': 'Best for affordable mobile booking',
       'glossgenius': 'Best for design-focused solo professionals',

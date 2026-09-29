@@ -96,9 +96,15 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     ],
 
     gccPresence: {
-      hasArabicUI: false,
-      arabicQuality: 'none',
-      gccCountries: ['UAE'],
+      hasArabicUI: true,
+      // Fresha announced "Fresha is live in Arabic" (fresha.com/blog/expanding-in-the-GCC,
+      // 2025-07). Verified 2026-09-29: fresha.com/ar/pricing serves <html lang="ar" dir="rtl">.
+      // 'translated' not 'native': an Arabic UI demonstrably exists, but we have not
+      // established localisation depth or local payment rails. Not 'none'.
+      arabicQuality: 'translated',
+      // Same source: teams in Dubai and Saudi Arabia, local operations launching in
+      // Qatar, Oman and Kuwait. Kuwait independently confirmed 2026-09-29.
+      gccCountries: ['UAE', 'KSA', 'Qatar', 'Oman', 'Kuwait'],
       localCompliance: false,
       localPaymentMethods: false,
       localSupport: false,
@@ -112,7 +118,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'No AI today. An AI receptionist was announced for 2026 and has not launched. What exists is automated confirmations and reminders.',
+        'Fresha publishes an AI Concierge that answers calls and books appointments. Pricing for it is not listed publicly. Compare scope: Daisy\'s AI receptionist also covers WhatsApp and Instagram chat, and works in Arabic and English.',
     },
 
     targetMarket:
@@ -208,10 +214,10 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     },
 
     daisyAdvantages: [
-      '24/7 AI receptionist vs no AI. Daisy handles calls, bookings, and payments automatically',
+      'AI receptionist across calls, WhatsApp and Instagram, in Arabic and English, taking bookings and payments',
       'Official Meta Tech Provider with native WhatsApp Business API and Instagram integration vs no messaging automation',
       '360° customer acquisition (marketplace + cashback + AI marketing) vs marketplace-only discovery',
-      'Native Arabic UI with equal Arabic/English priority vs English-only platform',
+      'Arabic and English treated as equals across the whole product, not a translated layer',
       'Branded booking page with no Daisy branding vs Fresha-branded experience',
       'Predictable flat pricing vs subscription fees plus transaction fees and commissions',
       'AI-powered analytics and recommendations vs basic static reports',
@@ -237,12 +243,12 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     ],
 
     competitorWeaknesses: [
-      'No AI capabilities (receptionist, chatbot, or smart scheduling)',
-      'No Arabic UI. English only',
+      'AI Concierge covers phone calls; no comparable AI across WhatsApp and Instagram chat',
+      'Arabic UI exists; confirm localisation depth and local payment rails for your market',
       'Subscription fees plus transaction fees and marketplace commissions add up quickly',
-      'Basic marketing tools (no AI, no CRM automation)',
+      'Marketing tools are basic next to AI-driven campaigns and CRM automation',
       'No branding control, all customer-facing pages are Fresha-branded',
-      'Limited GCC presence, no local compliance, payment methods, or support',
+      'Confirm local payment rails and tax compliance for your specific GCC market',
       'Recent pricing changes causing partner dissatisfaction',
     ],
 
@@ -265,7 +271,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Fresha work in the Middle East?',
         answer:
-          'Fresha has some UAE presence, but no Arabic, no local payment methods and nothing for GCC compliance. Daisy was built for the GCC, with a native Arabic interface and local payment integration, and is live in Kuwait today.',
+          'Yes. Fresha states it is live in Arabic and runs teams in Dubai and Saudi Arabia, with local operations launching in Qatar, Oman and Kuwait. Worth checking for your own market is how deep that localisation goes and which local payment methods are supported. Daisy was built for the GCC from the start, with Arabic and English as equals, local payment integration, and is live in Kuwait today.',
       },
       {
         question: 'Is Fresha really free to use?',
@@ -285,7 +291,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Fresha have AI features like Daisy?',
         answer:
-          'Fresha announced an AI receptionist for 2026 and it has not shipped. As things stand there is no AI in Fresha for marketing, scheduling or customer engagement. Daisy\'s AI receptionist is live today, taking bookings, payments and customer service 24/7 in Arabic and English.',
+          'Fresha publishes an AI Concierge that answers calls and books appointments; it does not list a price for it publicly. The comparison worth making is scope rather than presence: Daisy\'s AI receptionist handles calls and WhatsApp and Instagram chat, takes payments, and works in Arabic and English.',
       },
       {
         question: 'How good is the Fresha mobile app?',
@@ -301,7 +307,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     lastResearched: '2026-03-13',
     notes:
-      'No longer free. Monthly subscriptions now sit on top of transaction fees, which has drawn partner backlash. The AI receptionist announced for 2026 has not arrived. Main vulnerability: no Arabic support, and costs that compound across subscription, transaction fees and commissions.',
+      'No longer free. Monthly subscriptions now sit on top of transaction fees, which has drawn partner backlash. Fresha ships an AI Concierge for calls and is live in Arabic with GCC teams, so the old absence claims no longer hold. Main vulnerability: costs that compound across subscription, transaction fees and commissions.',
   },
 
   // ---------------------------------------------------------------------------

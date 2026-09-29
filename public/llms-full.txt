@@ -263,7 +263,7 @@ URL: https://www.jointhedaisy.com/en/salon-analytics-reporting
 ## Competitor Comparisons (Summary)
 
 ### Daisy vs Fresha
-Fresha is a free marketplace-based platform (recently introducing paid features). Daisy offers AI receptionist, cashback loyalty, and white-label branding that Fresha lacks. Fresha charges marketplace commission; Daisy uses flat pricing with no commissions.
+Fresha is a marketplace-based platform with paid subscription tiers on top of transaction fees. Fresha ships an AI Concierge for phone calls; Daisy's AI receptionist also covers WhatsApp and Instagram chat in Arabic and English. Fresha charges a 20% commission on new marketplace clients; Daisy charges none.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-fresha
 
 ### Daisy vs Booksy
