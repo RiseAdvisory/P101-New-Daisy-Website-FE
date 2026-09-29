@@ -34,13 +34,13 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '8', context: 'tools in one platform' },
         { value: '24/7', context: 'AI receptionist' },
-        { value: '10+', context: 'languages supported' },
+        { value: '2', context: 'languages: Arabic and English' },
       ],
     },
     socialProofStats: [
       { value: '8', context: 'tools replaced by one platform' },
       { value: '24/7', context: 'AI receptionist, never misses a message' },
-      { value: '10+', context: 'languages supported' },
+      { value: '2', context: 'languages: Arabic and English' },
     ],
     howItWorks: {
       title: 'How It Works',
@@ -321,13 +321,13 @@ export const businessPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '8', context: 'أدوات في منصة واحدة' },
         { value: '24/7', context: 'موظف استقبال ذكي' },
-        { value: '+10', context: 'لغة مدعومة' },
+        { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
       ],
     },
     socialProofStats: [
       { value: '8', context: 'أدوات تم استبدالها بمنصة واحدة' },
       { value: '24/7', context: 'موظف استقبال ذكي، لا يفوت أي رسالة' },
-      { value: '+10', context: 'لغة مدعومة' },
+      { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
     ],
     howItWorks: {
       title: 'كيف يعمل',

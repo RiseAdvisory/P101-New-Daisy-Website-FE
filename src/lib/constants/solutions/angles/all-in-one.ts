@@ -46,7 +46,7 @@ const allInOneAngle: Record<'business' | 'professional', I18nContent<LandingPage
         { label: 'Marketing Engine', description: 'Promotions, campaigns, and customer retention' },
         { label: 'Analytics Dashboard', description: 'Revenue trends, insights, and reporting' },
         { label: 'Brand Control', description: 'Branded booking page with your logo and colours' },
-      ], stats: [{ value: '8', context: 'tools replaced' }, { value: '24/7', context: 'AI receptionist' }, { value: '10+', context: 'languages supported' }] },
+      ], stats: [{ value: '8', context: 'tools replaced' }, { value: '24/7', context: 'AI receptionist' }, { value: '2', context: 'languages: Arabic and English' }] },
       inlineCtas: {
         afterScroll: { headline: 'Ready to replace your entire tool stack?', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'Start Your 14-Day Free Trial', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/business' },
@@ -94,7 +94,7 @@ const allInOneAngle: Record<'business' | 'professional', I18nContent<LandingPage
         { label: 'محرك التسويق', description: 'عروض وحملات والاحتفاظ بالعملاء' },
         { label: 'لوحة التحليلات', description: 'اتجاهات الإيرادات والرؤى والتقارير' },
         { label: 'التحكم بالعلامة التجارية', description: 'كل شيء بعلامتك التجارية الخاصة' },
-      ], stats: [{ value: '8', context: 'أدوات تم استبدالها' }, { value: '24/7', context: 'موظف استقبال ذكي' }, { value: '+10', context: 'لغة مدعومة' }] },
+      ], stats: [{ value: '8', context: 'أدوات تم استبدالها' }, { value: '24/7', context: 'موظف استقبال ذكي' }, { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' }] },
       inlineCtas: {
         afterScroll: { headline: 'مستعد لاستبدال كل أدواتك بمنصة واحدة؟', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/business' },
@@ -144,7 +144,7 @@ const allInOneAngle: Record<'business' | 'professional', I18nContent<LandingPage
         { label: 'Smart Notifications', description: 'Appointment reminders that reduce no-shows' },
         { label: 'Calendar Sync', description: 'Sync with Google Calendar and other tools' },
         { label: 'Marketplace Visibility', description: 'Customers find you when searching nearby' },
-      ], stats: [{ value: '1', context: 'app for everything' }, { value: '24/7', context: 'AI-powered booking' }, { value: '10+', context: 'languages supported' }] },
+      ], stats: [{ value: '1', context: 'app for everything' }, { value: '24/7', context: 'AI-powered booking' }, { value: '2', context: 'languages: Arabic and English' }] },
       inlineCtas: {
         afterScroll: { headline: 'Ready to simplify your professional life?', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'Start Your Free Trial', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/professional' },
@@ -192,7 +192,7 @@ const allInOneAngle: Record<'business' | 'professional', I18nContent<LandingPage
         { label: 'إشعارات ذكية', description: 'تذكيرات بالمواعيد تقلل حالات عدم الحضور' },
         { label: 'مزامنة التقويم', description: 'مزامنة مع تقويم جوجل وأدوات أخرى' },
         { label: 'ظهور في السوق', description: 'العملاء يجدونك عند البحث بالقرب منهم' },
-      ], stats: [{ value: '1', context: 'تطبيق لكل شيء' }, { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' }, { value: '+10', context: 'لغة مدعومة' }] },
+      ], stats: [{ value: '1', context: 'تطبيق لكل شيء' }, { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' }, { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' }] },
       inlineCtas: {
         afterScroll: { headline: 'مستعد لتبسيط حياتك المهنية؟', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'ابدأ تجربتك المجانية', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/professional' },
