@@ -236,7 +236,12 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'Want AI to handle after-hours calls and bookings',
       'Need more than basic marketing, want proactive customer acquisition',
       'Want full brand control instead of Fresha-branded booking pages',
-      'Need local payment methods and VAT compliance for GCC',
+      // Was 'Need local payment methods and VAT compliance for GCC'. Framed as
+      // a reason to leave Fresha, it implied Fresha lacks VAT compliance -
+      // the precise claim BSA's letter raises at 3.1, and the one thing it
+      // complains of that is NOT enumerated in 2(a) to 2(d). Fresha states it
+      // provides UAE-compliant VAT/TRN invoicing; we have no evidence otherwise.
+      'Want local payment rails and GCC tax handling built in rather than confirmed market by market',
       'Pricing moved from free to paid subscriptions, which changed your numbers',
     ],
 
