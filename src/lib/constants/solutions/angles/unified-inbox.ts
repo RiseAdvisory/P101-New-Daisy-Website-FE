@@ -268,7 +268,7 @@ const unifiedInboxAngle: Record<
         stats: [
           { value: '2+', context: 'messaging channels unified' },
           { value: '24/7', context: 'AI receptionist' },
-          { value: '10+', context: 'languages supported' },
+          { value: '2', context: 'languages: Arabic and English' },
         ],
       },
       inlineCtas: {
@@ -426,7 +426,7 @@ const unifiedInboxAngle: Record<
         stats: [
           { value: '+2', context: 'قناة مراسلة موحدة' },
           { value: '24/7', context: 'موظف استقبال ذكي' },
-          { value: '+10', context: 'لغة مدعومة' },
+          { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
         ],
       },
       inlineCtas: {
@@ -586,7 +586,7 @@ const unifiedInboxAngle: Record<
         stats: [
           { value: '0', context: 'missed messages' },
           { value: '24/7', context: 'AI-powered booking' },
-          { value: '10+', context: 'languages supported' },
+          { value: '2', context: 'languages: Arabic and English' },
         ],
       },
       inlineCtas: {
@@ -744,7 +744,7 @@ const unifiedInboxAngle: Record<
         stats: [
           { value: '0', context: 'رسائل فائتة' },
           { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' },
-          { value: '+10', context: 'لغة مدعومة' },
+          { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
         ],
       },
       inlineCtas: {

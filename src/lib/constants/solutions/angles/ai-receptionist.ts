@@ -28,7 +28,7 @@ const aiReceptionistAngle: Record<
         answerBlock: {
           question: 'How does the Daisy AI receptionist work for beauty businesses?',
           answer:
-            "The Daisy AI receptionist handles your WhatsApp and Instagram messages 24/7. It answers customer questions, checks staff availability, books appointments, and processes payments automatically. It learns your services, pricing, and preferences over time to provide personalized responses in 10+ languages.",
+            "The Daisy AI receptionist handles your WhatsApp and Instagram messages 24/7. It answers customer questions, checks staff availability, books appointments, and processes payments automatically. It learns your services, pricing, and preferences over time to provide personalized responses in Arabic and English.",
         },
       },
     },
@@ -45,7 +45,7 @@ const aiReceptionistAngle: Record<
         answerBlock: {
           question: 'كيف يعمل موظف الاستقبال الذكي من ديزي لأعمال التجميل؟',
           answer:
-            'يتولى موظف الاستقبال الذكي من ديزي رسائل واتساب وإنستغرام الخاصة بك على مدار الساعة. يجيب على أسئلة العملاء، يتحقق من توافر الموظفين، يحجز المواعيد، ويعالج المدفوعات تلقائيًا. يتعلم خدماتك وأسعارك وتفضيلاتك بمرور الوقت لتقديم ردود مخصصة بأكثر من 10 لغات.',
+            'يتولى موظف الاستقبال الذكي من ديزي رسائل واتساب وإنستغرام الخاصة بك على مدار الساعة. يجيب على أسئلة العملاء، يتحقق من توافر الموظفين، يحجز المواعيد، ويعالج المدفوعات تلقائيًا. يتعلم خدماتك وأسعارك وتفضيلاتك بمرور الوقت لتقديم ردود مخصصة بالعربية والإنجليزية.',
         },
       },
     },

@@ -167,7 +167,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         stats: [
           { value: '100%', context: 'your brand' },
           { value: '24/7', context: 'AI receptionist' },
-          { value: '10+', context: 'languages supported' },
+          { value: '2', context: 'languages: Arabic and English' },
         ],
       },
       inlineCtas: {
@@ -324,7 +324,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         stats: [
           { value: '100%', context: 'علامتك التجارية' },
           { value: '24/7', context: 'موظف استقبال ذكي' },
-          { value: '+10', context: 'لغة مدعومة' },
+          { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
         ],
       },
       inlineCtas: {
@@ -449,7 +449,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       socialProofStats: [
         { value: '1', context: 'branded booking page, all yours' },
         { value: '0', context: 'platform branding visible to clients' },
-        { value: '10+', context: 'languages for your audience' },
+        { value: '2', context: 'languages for your audience: Arabic and English' },
       ],
       howItWorks: {
         title: 'How It Works',
@@ -483,7 +483,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         stats: [
           { value: '1', context: 'branded page' },
           { value: '24/7', context: 'AI-powered booking' },
-          { value: '10+', context: 'languages supported' },
+          { value: '2', context: 'languages: Arabic and English' },
         ],
       },
       inlineCtas: {
@@ -606,7 +606,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       socialProofStats: [
         { value: '1', context: 'صفحة حجز بعلامتك، ملكك بالكامل' },
         { value: '0', context: 'علامات منصة مرئية للعملاء' },
-        { value: '+10', context: 'لغة لجمهورك' },
+        { value: '2', context: 'لغتان لجمهورك: العربية والإنجليزية' },
       ],
       howItWorks: {
         title: 'كيف يعمل',
@@ -640,7 +640,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         stats: [
           { value: '1', context: 'صفحة بعلامتك' },
           { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' },
-          { value: '+10', context: 'لغة مدعومة' },
+          { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
         ],
       },
       inlineCtas: {

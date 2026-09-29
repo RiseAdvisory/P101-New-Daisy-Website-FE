@@ -121,7 +121,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         stats: [
           { value: '0', context: 'scheduling conflicts' },
           { value: '24/7', context: 'AI receptionist' },
-          { value: '10+', context: 'languages supported' },
+          { value: '2', context: 'languages: Arabic and English' },
         ],
       },
       inlineCtas: {
@@ -204,7 +204,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         stats: [
           { value: '0', context: 'تعارضات في الجدولة' },
           { value: '24/7', context: 'موظف استقبال ذكي' },
-          { value: '+10', context: 'لغة مدعومة' },
+          { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
         ],
       },
       inlineCtas: {
@@ -289,7 +289,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         stats: [
           { value: '0%', context: 'scheduling admin' },
           { value: '24/7', context: 'AI-powered booking' },
-          { value: '10+', context: 'languages supported' },
+          { value: '2', context: 'languages: Arabic and English' },
         ],
       },
       inlineCtas: {
@@ -372,7 +372,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         stats: [
           { value: '0%', context: 'إدارة جدولة' },
           { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' },
-          { value: '+10', context: 'لغة مدعومة' },
+          { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
         ],
       },
       inlineCtas: {

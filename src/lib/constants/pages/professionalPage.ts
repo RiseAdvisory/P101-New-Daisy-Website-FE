@@ -34,13 +34,13 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '1', context: 'app for everything' },
         { value: '24/7', context: 'AI-powered booking' },
-        { value: '10+', context: 'languages supported' },
+        { value: '2', context: 'languages: Arabic and English' },
       ],
     },
     socialProofStats: [
       { value: '0%', context: 'commission on your existing clients' },
       { value: '24/7', context: 'AI handles bookings while you work' },
-      { value: '10+', context: 'languages supported' },
+      { value: '2', context: 'languages: Arabic and English' },
     ],
     howItWorks: {
       title: 'How It Works',
@@ -321,13 +321,13 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       stats: [
         { value: '1', context: 'تطبيق لكل شيء' },
         { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' },
-        { value: '+10', context: 'لغة مدعومة' },
+        { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
       ],
     },
     socialProofStats: [
       { value: '0%', context: 'عمولة على عملائك الحاليين' },
       { value: '24/7', context: 'الذكاء الاصطناعي يدير الحجوزات أثناء عملك' },
-      { value: '+10', context: 'لغة مدعومة' },
+      { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
     ],
     howItWorks: {
       title: 'كيف يعمل',
