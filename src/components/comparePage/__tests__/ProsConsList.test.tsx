@@ -18,10 +18,13 @@ describe('ProsConsList', () => {
     expect(screen.getByText('Fresha')).toBeInTheDocument();
   });
 
-  it('renders "Strengths" and "Limitations" headers', () => {
+  // Renamed from "Limitations": the column lists neutral advisories alongside
+  // a competitor's published pricing facts, and a red-X "Limitations" heading
+  // rendered those as defects.
+  it('renders "Strengths" and "Things to weigh" headers', () => {
     render(<ProsConsList {...defaultProps} />);
     expect(screen.getByText('Strengths')).toBeInTheDocument();
-    expect(screen.getByText('Limitations')).toBeInTheDocument();
+    expect(screen.getByText('Things to weigh')).toBeInTheDocument();
   });
 
   it('renders all pros items', () => {

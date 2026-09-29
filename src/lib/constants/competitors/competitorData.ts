@@ -42,7 +42,7 @@ export interface PricingData {
   tiers: PricingTier[];
   /** Published transaction rate, in the vendor's own currency, e.g. "4.90% + AED 0.75". */
   transactionFees?: string;
-  commissionOnMarketplace?: string; // e.g. "20% on new clients"
+  commissionOnMarketplace?: string; // e.g. "One-time 50% on new clients, min AED 20; returning clients free"
   hiddenCosts: string[];
   pricingModel: 'flat' | 'per-staff' | 'per-location' | 'usage-based' | 'hybrid';
   pricingPageUrl?: string;

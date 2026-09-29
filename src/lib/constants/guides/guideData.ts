@@ -218,17 +218,17 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What is the best salon software in 2026?',
           answer:
-            'The best salon software depends on your needs. For growth-focused businesses wanting AI, cashback, and branded booking pages, Daisy leads. For budget-conscious single-chair operators, simpler tools may suffice. Always evaluate total cost including hidden fees.',
+            'The best salon software depends on your needs. For growth-focused businesses wanting AI, cashback, and branded booking pages, Daisy leads. For budget-conscious single-chair operators, simpler tools may suffice. Always evaluate total cost including the charges that sit on top of the subscription.',
         },
         {
-          question: 'What hidden fees should I watch for in salon software?',
+          question: 'What charges sit on top of the subscription in salon software?',
           answer:
-            'The usual ones: per-staff charges of $5-15/staff/month, transaction fees of 2-3% per payment, marketplace commissions of 20-30%, premium upsells and hardware. Daisy charges a flat monthly fee and none of these.',
+            'The usual ones: per-staff charges of $5-15/staff/month, transaction fees of 2-3% per payment, a marketplace commission on clients the marketplace introduces, premium upsells and hardware. Daisy charges a flat monthly fee and none of these.',
         },
         {
           question: 'Should I choose salon software with a marketplace?',
           answer:
-            'If acquisition matters to you, yes, though watch the commissions, which reach 30% per booking on some platforms. Daisy\'s marketplace charges none, so you keep 100% of the booking revenue.',
+            'If acquisition matters to you, yes, though check how each marketplace charges for the clients it introduces. Daisy\'s marketplace charges no commission at all, new clients or returning, so you keep 100% of the booking revenue.',
         },
         {
           question: 'How important are AI features in salon software?',
@@ -258,7 +258,7 @@ export const guideData: I18nContent<GuideData[]> = {
       ],
       metaTitle: 'How to Choose the Best Salon Software in 2026 | Buyer\'s Guide',
       metaDescription:
-        'Step-by-step guide to choosing salon software. Compare features, pricing models, AI capabilities, and hidden fees. Find the right platform for your beauty business.',
+        'Step-by-step guide to choosing salon software. Compare features, pricing models, AI capabilities, and the charges that stack on top. Find the right platform for your beauty business.',
       keywords: ['best salon software', 'salon software comparison', 'choose salon software', 'salon software pricing', 'beauty business software guide'],
       relatedGuides: ['reduce-salon-no-shows', 'get-more-salon-clients'],
     },
@@ -272,11 +272,11 @@ export const guideData: I18nContent<GuideData[]> = {
       steps: [
         {
           name: 'Export your data from Fresha',
-          text: 'Download your client list, appointment history and financial records from Fresha under Settings > Data Export, which gives you CSV files. Store them somewhere safe, because this is the most valuable thing your business owns.',
+          text: 'Download your client list, appointment history and financial records from your current platform, checking its current documentation for the export option. Store them somewhere safe, because this is the most valuable thing your business owns.',
         },
         {
           name: 'Choose your new platform',
-          text: 'Compare alternatives on features, pricing and migration help. The questions that matter: does the AI reach customers on the channels you actually use, WhatsApp and Instagram rather than the phone alone; is the full cost published, including transaction and marketplace fees; and does it support your market and language?',
+          text: 'Compare alternatives on features, pricing and migration help. The questions that matter: does the AI reach customers on the channels you actually use, WhatsApp and Instagram rather than the phone alone; is the full cost published, including transaction and marketplace fees; and does it fund new-client acquisition rather than charge you for it?',
         },
         {
           name: 'Set up the new platform in parallel',
@@ -301,7 +301,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'Can I export my data from Fresha?',
           answer:
-            'Yes. Client lists, appointment history and financial records all export as CSV, under Settings > Data Export in the Fresha dashboard.',
+            'Yes. Client lists, appointment history and financial records export as CSV. Check Fresha\'s current documentation for where the export option sits.',
         },
         {
           question: 'What is the best Fresha alternative in 2026?',
@@ -331,7 +331,7 @@ export const guideData: I18nContent<GuideData[]> = {
       ],
       metaTitle: 'How to Switch from Fresha | Migration Guide 2026',
       metaDescription:
-        'Step-by-step guide to switching from Fresha to a better salon platform. Export data, migrate clients, and transition smoothly with zero downtime.',
+        'Step-by-step guide to moving your salon off Fresha. Export data, migrate clients, and transition smoothly with zero downtime.',
       keywords: ['switch from Fresha', 'Fresha alternative migration', 'Fresha data export', 'salon software migration', 'leave Fresha'],
       relatedGuides: ['choose-best-salon-software', 'get-more-salon-clients'],
     },
@@ -605,17 +605,17 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'ما أفضل برنامج لإدارة الصالونات في 2026؟',
           answer:
-            'أفضل برنامج لإدارة الصالونات يعتمد على احتياجاتك. للأعمال المركّزة على النمو التي تريد الذكاء الاصطناعي والكاشباك والعلامة التجارية المخصصة، تتصدر ديزي. للمشغلين ذوي الميزانية المحدودة بكرسي واحد، قد تكفي أدوات أبسط. قيّم دائمًا التكلفة الإجمالية بما فيها الرسوم المخفية.',
+            'أفضل برنامج لإدارة الصالونات يعتمد على احتياجاتك. للأعمال المركّزة على النمو التي تريد الذكاء الاصطناعي والكاشباك والعلامة التجارية المخصصة، تتصدر ديزي. للمشغلين ذوي الميزانية المحدودة بكرسي واحد، قد تكفي أدوات أبسط. قيّم دائمًا التكلفة الإجمالية بما فيها الرسوم التي تُضاف فوق الاشتراك.',
         },
         {
-          question: 'ما الرسوم المخفية التي يجب الانتباه لها في برامج الصالونات؟',
+          question: 'ما الرسوم التي تُضاف فوق الاشتراك في برامج الصالونات؟',
           answer:
-            'الرسوم المخفية الشائعة: رسوم لكل موظف (5-15 دولاراً/موظف/شهرياً)، ورسوم معاملات (2-3% لكل دفعة)، وعمولات سوق (20-30%)، وترقيات ميزات مدفوعة، وتكاليف أجهزة. تفرض ديزي رسماً شهرياً ثابتاً بدون أي من هذه.',
+            'الرسوم الشائعة فوق الاشتراك: رسوم لكل موظف (5-15 دولاراً/موظف/شهرياً)، ورسوم معاملات (2-3% لكل دفعة)، وعمولة سوق على العملاء الذين يجلبهم السوق، وترقيات ميزات مدفوعة، وتكاليف أجهزة. تفرض ديزي رسماً شهرياً ثابتاً بدون أي من هذه.',
         },
         {
           question: 'هل يجب أن أختار برنامج صالون يتضمن سوقاً؟',
           answer:
-            'إذا كان اكتساب العملاء أولوية، نعم. لكن احذر من عمولات السوق (حتى 30% لكل حجز في بعض المنصات). سوق ديزي بدون عمولات، وتحتفظ فيه بـ 100% من إيرادات الحجز.',
+            'إذا كان اكتساب العملاء أولوية، نعم. لكن تحقّق من كيفية احتساب كل سوق لعمولته على العملاء الذين يجلبهم. سوق ديزي بلا أي عمولة، للعملاء الجدد والمتكررين، وتحتفظ فيه بـ 100% من إيرادات الحجز.',
         },
         {
           question: 'ما مدى أهمية ميزات الذكاء الاصطناعي في برامج الصالونات؟',
@@ -635,7 +635,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'هل برامج الصالون المجانية تستحق؟',
           answer:
-            'برامج الصالون المجانية عادة تحقق أرباحها من عمولات السوق أو رسوم المعاملات أو الميزات المحدودة. احسب التكلفة الإجمالية؛ فمنصة "مجانية" تفرض عمولة 20% قد تكلّف أكثر من منصة مدفوعة بتسعير ثابت.',
+            'برامج الصالون المجانية عادة تحقق أرباحها من عمولات السوق أو رسوم المعاملات أو الميزات المحدودة. احسب التكلفة الإجمالية؛ فمنصة بسعر دخول منخفض تفرض عمولة على كل عميل جديد قد تكلّف أكثر من منصة بتسعير ثابت.',
         },
         {
           question: 'ما برنامج الصالون الأفضل للأعمال متعددة الفروع؟',
@@ -645,7 +645,7 @@ export const guideData: I18nContent<GuideData[]> = {
       ],
       metaTitle: 'كيف تختار أفضل برنامج لإدارة الصالون في 2026 | دليل المشتري',
       metaDescription:
-        'دليل خطوة بخطوة لاختيار برنامج إدارة الصالون. قارن الميزات ونماذج التسعير وقدرات الذكاء الاصطناعي والرسوم المخفية. اعثر على المنصة المناسبة لعملك في مجال التجميل.',
+        'دليل خطوة بخطوة لاختيار برنامج إدارة الصالون. قارن الميزات ونماذج التسعير وقدرات الذكاء الاصطناعي والرسوم التي تُضاف فوق الاشتراك. اعثر على المنصة المناسبة لعملك في مجال التجميل.',
       keywords: ['أفضل برنامج صالون', 'مقارنة برامج الصالونات', 'اختيار برنامج صالون', 'تسعير برامج الصالونات', 'دليل برامج أعمال التجميل'],
       relatedGuides: ['reduce-salon-no-shows', 'get-more-salon-clients'],
     },
@@ -659,7 +659,7 @@ export const guideData: I18nContent<GuideData[]> = {
       steps: [
         {
           name: 'تصدير بياناتك من Fresha',
-          text: 'حمّل قائمة عملائك وسجل المواعيد والسجلات المالية من Fresha. انتقل إلى الإعدادات > تصدير البيانات للحصول على ملفات CSV. احفظها بأمان؛ فهذا أثمن أصول عملك.',
+          text: 'حمّل قائمة عملائك وسجل المواعيد والسجلات المالية من منصتك الحالية، وراجع وثائقها الحالية لموضع خيار التصدير. احفظها بأمان؛ فهذا أثمن أصول عملك.',
         },
         {
           name: 'اختيار منصتك الجديدة',
@@ -688,7 +688,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'هل يمكنني تصدير بياناتي من Fresha؟',
           answer:
-            'نعم. يسمح Fresha بتصدير بيانات قوائم العملاء وسجل المواعيد والسجلات المالية عبر ملفات CSV. انتقل إلى الإعدادات > تصدير البيانات في لوحة تحكم Fresha.',
+            'نعم. يسمح Fresha بتصدير قوائم العملاء وسجل المواعيد والسجلات المالية عبر ملفات CSV. راجع وثائق Fresha الحالية لموضع خيار التصدير.',
         },
         {
           question: 'ما أفضل بديل لـ Fresha في 2026؟',
@@ -718,7 +718,7 @@ export const guideData: I18nContent<GuideData[]> = {
       ],
       metaTitle: 'كيف تنتقل من Fresha | دليل الترحيل 2026',
       metaDescription:
-        'دليل خطوة بخطوة للانتقال من Fresha إلى منصة صالون أفضل. صدّر البيانات، ورحّل العملاء، وانتقل بسلاسة بدون توقف.',
+        'دليل خطوة بخطوة لنقل صالونك من Fresha. صدّر البيانات، ورحّل العملاء، وانتقل بسلاسة بدون توقف.',
       keywords: ['الانتقال من Fresha', 'ترحيل بديل Fresha', 'تصدير بيانات Fresha', 'ترحيل برنامج الصالون', 'ترك Fresha'],
       relatedGuides: ['choose-best-salon-software', 'get-more-salon-clients'],
     },

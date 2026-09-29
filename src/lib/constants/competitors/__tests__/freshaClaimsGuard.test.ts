@@ -141,3 +141,104 @@ describe('Fresha record matches the verified facts', () => {
     expect(fresha).toMatch(/one-time 50% commission/i);
   });
 });
+
+describe('claims the letter raises outside paragraphs 2(a)-(d)', () => {
+  // The letter's section 3.1 complains that we suggest Fresha is deficient in
+  // UAE-compliant VAT/TRN invoicing. That claim is NOT enumerated in 2(a)-(d),
+  // so an audit driven off the 2(a)-(d) fact list never looked for it.
+  it('does not imply Fresha lacks VAT or tax compliance', () => {
+    expect(
+      offenders(
+        /(?:no|lacks?|without|need)[^.]{0,40}(?:VAT|TRN|tax compliance)|tax compliance for your|التوافق الضريبي في سوقك/,
+      ),
+    ).toEqual([]);
+  });
+
+  it('does not claim Fresha has no phone support', () => {
+    expect(offenders(/no phone support|without phone support|لا يوجد دعم هاتفي/)).toEqual([]);
+  });
+
+  // Section 3.2: statements "designed to divert customers". An asserted
+  // defection trend is the clearest form of that.
+  it('does not assert that businesses are leaving Fresha', () => {
+    expect(
+      offenders(
+        /partner dissatisfaction|already made the move|sending some businesses looking|caught some partners out|broke trust|partner backlash|استياء الشركاء/,
+      ),
+    ).toEqual([]);
+  });
+
+  // Section 3.3: advertising must not damage a competitor through UNVERIFIED
+  // claims. These are the ones we could find no source for anywhere.
+  it('does not publish unsourced quality verdicts about Fresha', () => {
+    expect(
+      offenders(
+        /unreliable notifications|grown cluttered|process can be awkward|basic static reports|ليست سلسة دائمًا|تقارير ثابتة أساسية/,
+      ),
+    ).toEqual([]);
+  });
+
+  it('does not assert Fresha offers no branding control at all', () => {
+    expect(
+      offenders(
+        /all customer-facing pages are Fresha-branded|No branding control|جميع الصفحات الموجهة للعملاء بعلامة/,
+      ),
+    ).toEqual([]);
+  });
+});
+
+describe('the ratings framework the letter calls fabricated', () => {
+  const table = fs.readFileSync(
+    path.join(ROOT, 'components', 'comparePage', 'FeatureComparisonTable.tsx'),
+    'utf8',
+  );
+  const index = fs.readFileSync(
+    path.join(ROOT, 'lib', 'constants', 'competitors', 'index.ts'),
+    'utf8',
+  );
+
+  it('publishes no aggregate "we lead in N of M" scoreboard', () => {
+    expect(table).not.toMatch(/we lead in/i);
+    expect(table).not.toMatch(/daisyWinCount/);
+  });
+
+  it('does not badge rows with a self-assigned win', () => {
+    expect(table).not.toMatch(/Daisy leads/);
+  });
+
+  // A comparison table that silently drops the competitor's strongest category
+  // is the hardest thing here to defend.
+  it('includes the category competitors most often lead on', () => {
+    expect(index).toMatch(/marketplaceAndDiscovery/);
+    expect(table).toMatch(/marketplaceAndDiscovery/);
+  });
+
+  // An editorial 0 is the absence of a documented capability, not proof of
+  // absence. It used to render as the absolute "Not Available".
+  it('does not render a zero rating as an absolute', () => {
+    expect(index).not.toMatch(/0: 'Not Available'/);
+  });
+});
+
+describe('Arabic corrections actually reach the Arabic pages', () => {
+  // tier1Data.ar.ts was unreferenced: every caller used the English-only
+  // `competitors` map, so /ar/compare/daisy-vs-fresha published the English
+  // pros, cons, FAQ and FAQ JSON-LD, and Arabic fixes were dead code.
+  it('resolves competitors by locale', () => {
+    const index = fs.readFileSync(
+      path.join(ROOT, 'lib', 'constants', 'competitors', 'index.ts'),
+      'utf8',
+    );
+    expect(index).toMatch(/export function getCompetitor\(\s*slug: string,\s*locale/);
+  });
+
+  it('passes the locale through from the compare and alternative pages', () => {
+    for (const rel of [
+      ['app', '[locale]', '(routes)', 'compare', '[slug]', 'ComparePageClient.tsx'],
+      ['app', '[locale]', '(routes)', 'alternative', '[slug]', 'AlternativePageClient.tsx'],
+    ]) {
+      const src = fs.readFileSync(path.join(ROOT, ...rel), 'utf8');
+      expect(src).toMatch(/getCompetitor\([^)]*,\s*locale\)/);
+    }
+  });
+});

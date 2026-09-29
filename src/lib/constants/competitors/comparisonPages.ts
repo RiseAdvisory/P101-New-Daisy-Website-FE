@@ -101,11 +101,11 @@ export const daisyVsPages: DaisyVsPageData[] = [
       posAndPayments:
         'In the UAE, Fresha publishes online payments at 4.90% + AED 0.75 per transaction and a one-time 50% commission on new marketplace clients, minimum AED 20. Those are published rather than hidden, but across a year they add up. Daisy charges a flat rate with nothing added per transaction and no marketplace commission.',
       clientManagement:
-        'Fresha gives you basic client profiles and history. Daisy layers AI on top, predicting no-shows, flagging VIP clients and suggesting personalized offers from booking patterns.',
+        'Fresha gives you client profiles and history. Daisy layers AI on top, predicting no-shows, flagging VIP clients and suggesting personalized offers from booking patterns.',
       staffManagement:
         'Both handle scheduling and staff calendars. Daisy\'s AI scheduling arranges appointment slots around revenue, closing gaps and preventing double-bookings on its own.',
       marketingAndCrm:
-        'Fresha\'s marketing is pay-per-message blast campaigns. Daisy runs AI-powered marketing automation, targeted campaigns, cashback incentives and personalized engagement that keeps going without you.',
+        'Fresha charges per marketing message beyond the first 50 emails each month. Daisy runs AI-powered marketing automation, targeted campaigns, cashback incentives and personalized engagement that keeps going without you.',
       inventoryManagement:
         'Both offer basic inventory tracking. Call it a tie, since neither platform specializes in deep inventory management.',
       reportingAndAnalytics:
@@ -117,11 +117,11 @@ export const daisyVsPages: DaisyVsPageData[] = [
     },
     whoShouldChooseDaisy: [
       'You want an AI receptionist covering bookings and customer service 24/7',
-      'Your GCC clients need Arabic',
+      'You want Arabic and English as equals, with cashback rewards your Arabic-speaking clients can spend',
       'You want pricing you can predict, with nothing added per transaction',
-      'You want to build your brand rather than Fresha\'s',
+      'You want a booking page carrying your logo, name and colours',
       'You want acquisition that works for you, not just a marketplace listing',
-      'You operate in the GCC and need local compliance and payment methods',
+      'You want a GCC-built platform with cashback acquisition and local payment integration',
     ],
     whoShouldChooseCompetitor: [
       'You want the lowest published entry plan and the marketplace reach',
@@ -658,17 +658,17 @@ export const alternativePages: AlternativePageData[] = [
     painPoints: [
       'Online payments charged at 4.90% + AED 0.75, eating into every transaction',
       'A one-time 50% commission on new marketplace clients, minimum AED 20',
-      'Arabic exists, but localisation depth and local payment rails need checking per market',
+      'Marketing is charged per message once the first 50 emails each month are used',
       'The AI Concierge covers phone calls only, so WhatsApp and Instagram are still yours to answer',
-      'Fresha-branded booking pages, with no control over how your brand looks',
-      'Pricing moved from free to paid subscriptions, which caught some partners out',
+      'Bookings run through the Fresha marketplace brand rather than your own',
+      'A published monthly subscription that sits on top of transaction fees and marketplace commission',
     ],
     switchingReasons: [
       'An AI receptionist covering bookings, payments and customer service 24/7',
       'Flat pricing with nothing added per transaction and no marketplace commission',
-      'Native Arabic and English for the GCC market',
+      'Arabic and English as equals, with cashback rewards built for GCC clients',
       'Cashback rewards that build loyalty and bring people back',
-      'White-label booking pages, so the brand stays yours',
+      'A booking page carrying your logo, name and colours, with no platform branding',
       'A straightforward migration, with help moving your data',
     ],
     topAlternatives: ['booksy', 'vagaro', 'glossgenius', 'square-appointments'],
@@ -1003,11 +1003,11 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     slug: 'best-fresha-alternatives',
     competitorSlug: 'fresha',
     metaTitle: '7 Best Fresha Alternatives for Salons (2026)',
-    metaDescription: 'Looking for Fresha alternatives? Compare the top 7 salon platforms with better AI, pricing transparency, and Arabic support.',
+    metaDescription: 'Looking for Fresha alternatives? Compare the top salon platforms on AI channel coverage, all-in pricing and cashback-driven acquisition.',
     keywords: ['best fresha alternatives', 'fresha alternatives', 'fresha competitors', 'salon software like fresha'],
-    heroTitle: '7 Best Fresha Alternatives in 2026',
+    heroTitle: 'Fresha Alternatives Compared (2026)',
     heroSubtitle: 'Fresha\'s subscription plus its per-transaction and marketplace charges add up. Here are the best alternatives for a growing beauty business.',
-    intro: 'Fresha runs the world\'s largest beauty marketplace. It also stacks monthly subscriptions on top of transaction fees and takes a one-time 50% commission on new marketplace clients, which is sending some businesses looking. The alternatives below are compared on features, pricing, AI and international support.',
+    intro: 'Fresha runs the world\'s largest beauty marketplace. It also stacks monthly subscriptions on top of transaction fees and takes a one-time 50% commission on new marketplace clients, with returning clients free. The alternatives below are compared on features, pricing, AI and international support.',
     alternatives: ['booksy', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
     bestFor: {
       'booksy': 'Best for mobile-first solopreneurs',
@@ -1037,7 +1037,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mangomint': 'Best for salons prioritizing clean operations',
       'square-appointments': 'Best for businesses needing strong POS integration',
     },
-    daisyEdge: 'These alternatives all handle operations well. Fresha answers calls with AI, but on the phone only. None of them pairs that with AI-powered acquisition or cashback rewards that bring new clients through the door. That growth layer is what booking platforms tend to miss, and what Daisy adds.',
+    daisyEdge: 'These alternatives all handle operations well. Fresha answers calls with AI, but on the phone only. None of them pairs that with cashback rewards that bring clients back. That growth layer is what booking platforms tend to miss, and what Daisy adds.',
   },
   {
     slug: 'best-vagaro-alternatives',
@@ -1057,7 +1057,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mindbody': 'Best for fitness and wellness businesses',
       'mangomint': 'Best for operationally complex salons',
     },
-    daisyEdge: 'Vagaro alternatives manage your business. Fresha and Booksy bring a marketplace listing, but none of them actively works your existing client list. Daisy adds an AI receptionist across calls, WhatsApp and Instagram, plus a cashback marketplace, which turns salon software into a growth engine.',
+    daisyEdge: 'Vagaro alternatives manage your business. Fresha and Booksy bring a marketplace listing and charge per marketing message beyond a free allowance. Daisy adds an AI receptionist across calls, WhatsApp and Instagram, plus a cashback marketplace, which turns salon software into a growth engine.',
   },
   {
     slug: 'best-glossgenius-alternatives',
@@ -1077,7 +1077,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mangomint': 'Best for team-heavy salons wanting clean automation',
       'square-appointments': 'Best for payment-first businesses',
     },
-    daisyEdge: 'These alternatives close the team management gap. Fresha and Booksy answer calls with AI; neither carries it into WhatsApp or Instagram, and none of them keeps finding new customers around the clock. Daisy does, at flat pricing and with no per-staff fee.',
+    daisyEdge: 'These alternatives close the team management gap. Fresha and Booksy answer calls with AI; neither carries it into WhatsApp or Instagram, and none of them pairs that with cashback rewards that bring clients back. Daisy does, at flat pricing and with no per-staff fee.',
   },
   // P3
   {
@@ -1098,7 +1098,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'glossgenius': 'Best for independent professionals wanting modern UX',
       'mangomint': 'Best for highest-rated salon operations',
     },
-    daisyEdge: 'The modern alternatives fix the interface and the pricing. Not one of them puts AI automation, cashback-driven acquisition and Arabic support in the same platform. Daisy gives you the modern experience with the growth tools already in it.',
+    daisyEdge: 'The modern alternatives fix the interface and the pricing. Not one of them adds cashback-driven acquisition on top. Daisy gives you the modern experience with the growth tools already in it.',
   },
   {
     slug: 'best-boulevard-alternatives',
@@ -1176,7 +1176,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'vagaro': 'Best for comprehensive features at mid-market pricing',
       'phorest': 'Best for UK/Ireland salons with strong CRM needs',
     },
-    daisyEdge: 'The enterprise alternatives cut Zenoti\'s complexity down. None offers a fully integrated AI receptionist, a cashback acquisition engine and a native Arabic UI with no per-location surcharge. Daisy delivers the enterprise AI without the enterprise overhead.',
+    daisyEdge: 'The enterprise alternatives cut Zenoti\'s complexity down. None of them adds a cashback acquisition engine with no per-location surcharge. Daisy delivers the enterprise AI without the enterprise overhead.',
   },
   {
     slug: 'best-acuity-alternatives',
@@ -1196,7 +1196,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'setmore': 'Best for budget-friendly basic scheduling',
       'simplybook-me': 'Best for businesses wanting modular customisation',
     },
-    daisyEdge: 'These beauty-specific alternatives cover what Acuity leaves out for salons: POS, CRM and inventory. Of these, Fresha answers calls with AI, and only on the phone. None adds a cashback marketplace that brings new clients in, and none treats Arabic and English as equals across the product. Daisy is the complete upgrade path.',
+    daisyEdge: 'These beauty-specific alternatives cover what Acuity leaves out for salons: POS, CRM and inventory. Of these, Fresha answers calls with AI, and only on the phone. None adds a cashback marketplace that brings new clients in, and none adds a cashback marketplace that brings new clients in. Daisy is the complete upgrade path.',
   },
   {
     slug: 'best-phorest-alternatives',
@@ -1214,7 +1214,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'booksy': 'Best for mobile-first professionals',
       'boulevard': 'Best for premium salon brands',
     },
-    daisyEdge: 'These alternatives reach beyond the UK and Ireland. None of them combines CRM-level client management with AI-powered acquisition, cashback loyalty and native Arabic support. Daisy matches what Phorest does with clients and adds the growth tools it never had.',
+    daisyEdge: 'These alternatives reach beyond the UK and Ireland. None of them combines client management with cashback loyalty and AI across WhatsApp and Instagram. Daisy matches what Phorest does with clients and adds the growth tools it never had.',
   },
   {
     slug: 'best-timely-alternatives',
@@ -1232,7 +1232,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'booksy': 'Best for affordable mobile booking',
       'glossgenius': 'Best for design-focused solo professionals',
     },
-    daisyEdge: 'These alternatives take the per-staff surprises out of the bill. Only Fresha answers calls with AI here, and only on the phone. None pairs that with cashback acquisition, or with Arabic and English built as equals. Daisy charges a flat, transparent rate and builds the growth tools into every plan.',
+    daisyEdge: 'These alternatives take the per-staff surprises out of the bill. Only Fresha answers calls with AI here, and only on the phone. None pairs that with cashback acquisition. Daisy charges a flat, transparent rate and builds the growth tools into every plan.',
   },
   {
     slug: 'best-setmore-alternatives',
@@ -1252,7 +1252,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'acuity-scheduling': 'Best for advanced scheduling customisation',
       'simplybook-me': 'Best for businesses wanting modular add-on flexibility',
     },
-    daisyEdge: 'These alternatives add the beauty-specific features generic scheduling never had. None includes AI-powered acquisition, cashback rewards, or Arabic and English built as equals from the booking page to the staff app. Daisy is where a business goes when it has outgrown free tools.',
+    daisyEdge: 'These alternatives add the beauty-specific features generic scheduling never had. None of them pairs that with cashback rewards that bring clients back, or with AI that carries into WhatsApp and Instagram. Daisy is where a business goes when it has outgrown free tools.',
   },
   {
     slug: 'best-simplybookme-alternatives',

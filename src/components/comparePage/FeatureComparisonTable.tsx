@@ -66,9 +66,9 @@ export const FeatureComparisonTable: FC<FeatureComparisonTableProps> = ({
     'reportingAndAnalytics',
     'aiCapabilities',
     'brandingAndWhiteLabel',
+    // Must stay in the same order as compareFeatures() in competitors/index.ts.
+    'marketplaceAndDiscovery',
   ];
-
-  const daisyWinCount = comparison.filter((c) => c.daisyWins).length;
 
   return (
     <section className="py-16 px-4 bg-[#F8F5F3]">
@@ -80,15 +80,14 @@ export const FeatureComparisonTable: FC<FeatureComparisonTableProps> = ({
           {comparison.length} categories rated from Basic to Best-in-Class
         </p>
         {/*
-          This scoreboard is Daisy's own editorial assessment, not an independent
-          benchmark, and it must say so. It also carries no data-geo-answer marker:
-          that attribute flags factual answers for extraction, and a self-scored
-          comparison presented as a neutral fact is exactly the kind of claim a
-          competitor can fairly object to.
+          The aggregate win tally that used to sit here is
+          the "fabricated ratings framework" the cease and desist names. A
+          disclaimer does not cure it - the letter says so explicitly - so the
+          aggregate verdict is gone. The per-row ratings remain, labelled as
+          Daisy's own assessment rather than a benchmark.
         */}
         <p className="mb-10 text-center text-sm font-medium text-primary">
-          Daisy&rsquo;s own assessment: we lead in {daisyWinCount} of{' '}
-          {comparison.length} categories
+          Ratings are Daisy&rsquo;s own assessment, not an independent benchmark
         </p>
 
         <div className="overflow-x-auto">
@@ -139,21 +138,15 @@ export const FeatureComparisonTable: FC<FeatureComparisonTableProps> = ({
                     className={cn(
                       'border-b border-[#E8E9E9] last:border-b-0 transition-colors',
                       index % 2 === 0 ? 'bg-white' : 'bg-[#F8F5F3]/50',
-                      row.daisyWins && 'bg-primary/5',
                     )}
                   >
                     <td className="px-6 py-4">
                       <span className="text-sm font-medium text-[#172524]">
                         {row.category}
                       </span>
-                      {row.daisyWins && (
-                        <span className="ml-2 inline-flex items-center rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-bold text-primary uppercase">
-                          Daisy leads
-                        </span>
-                      )}
                     </td>
                     <td className="px-6 py-4">
-                      <RatingDots rating={row.daisy} highlight={row.daisyWins} />
+                      <RatingDots rating={row.daisy} highlight />
                     </td>
                     <td className="px-6 py-4">
                       <RatingDots rating={row.competitor} />

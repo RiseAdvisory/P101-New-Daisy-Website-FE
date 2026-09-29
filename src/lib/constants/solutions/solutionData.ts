@@ -353,7 +353,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'Marketplace Discovery',
         description:
-          'Get discovered by new clients browsing the Daisy marketplace. No 20% commissions, your clients, your revenue.',
+          'Get discovered by new clients browsing the Daisy marketplace. No commission on marketplace bookings, new clients or returning. Your clients, your revenue.',
       },
       {
         title: 'AI Marketing Automation',
@@ -497,7 +497,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'What is the best salon appointment scheduling software?',
         answer:
-          'For AI-powered scheduling with Arabic support, Daisy is the top choice. For straightforward scheduling on an entry plan, Square Appointments or Fresha work. For budget scheduling only, Acuity ($16/mo) is affordable but lacks salon-specific features.',
+          'For AI that handles WhatsApp and Instagram as well as phone, plus cashback-funded acquisition, Daisy is the top choice. For scheduling on a published entry plan with per-transaction fees, Square Appointments or Fresha work. For budget scheduling only, Acuity ($16/mo) is affordable but lacks salon-specific features.',
       },
       {
         question: 'How does AI scheduling work?',
@@ -608,7 +608,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'Can Daisy handle nail salon scheduling?', answer: 'Yes. Daisy supports varied service durations, multiple simultaneous techs, walk-in queues, and automatic rebooking for maintenance appointments.' },
-      { question: 'What is the best nail salon software in 2026?', answer: 'For nail salons wanting AI booking, automated rebooking, and cashback loyalty, Daisy is the top choice. GlossGenius is popular for solo nail techs on a budget. Fresha offers basic booking on a published entry plan, with per-transaction fees on top.' },
+      { question: 'What is the best nail salon software in 2026?', answer: 'For nail salons wanting AI booking, automated rebooking, and cashback loyalty, Daisy is the top choice. GlossGenius is popular for solo nail techs on a budget. Fresha offers booking on a published entry plan, with per-transaction fees on top; Daisy bundles AI, unlimited techs and rebooking automation into one flat price.' },
       { question: 'How much does nail salon software cost?', answer: 'Nail salon software ranges from low published entry plans with transaction fees on top, such as Fresha, to $200+/mo for full platforms. Daisy offers flat pricing that includes AI, unlimited techs, rebooking automation, and all features.' },
       { question: 'How does Daisy help nail salons retain clients?', answer: 'Daisy sends automated rebooking reminders when it\'s time for fills or new sets, offers cashback rewards that build with each visit, and uses AI to send personalized offers based on client history and preferences.' },
       { question: 'Does Daisy work for independent nail technicians?', answer: 'Yes. Daisy scales from solo nail techs to multi-location nail bars. For independent techs, the AI receptionist is invaluable, handling calls and bookings while you focus on your client\'s nails.' },
@@ -1155,7 +1155,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'اكتشاف عبر السوق',
         description:
-          'يكتشفك عملاء جدد عبر سوق ديزي. بدون عمولات 20%، عملاؤك، إيراداتك.',
+          'يكتشفك عملاء جدد عبر سوق ديزي. بدون أي عمولة على حجوزات السوق — عملاء جدد أو متكررون. عملاؤك، إيراداتك.',
       },
       {
         title: 'أتمتة التسويق بالذكاء الاصطناعي',
@@ -1299,7 +1299,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'ما هو أفضل برنامج جدولة مواعيد صالون؟',
         answer:
-          'للجدولة المدعومة بالذكاء الاصطناعي مع دعم عربي، ديزي هو الخيار الأول. للجدولة الأساسية على خطة مبتدئة، Square Appointments أو Fresha تعمل. للجدولة الاقتصادية فقط، Acuity (16 دولاراً شهرياً) ميسور لكنه يفتقر لميزات الصالونات المتخصصة.',
+          'للذكاء الاصطناعي الذي يعمل عبر واتساب وإنستغرام إضافة إلى الهاتف، مع استقطاب عملاء بالكاشباك، ديزي هو الخيار الأول. للجدولة على خطة مُعلنة مع رسوم لكل معاملة، Square Appointments أو Fresha تعمل. للجدولة الاقتصادية فقط، Acuity (16 دولاراً شهرياً) ميسور لكنه يفتقر لميزات الصالونات المتخصصة.',
       },
       {
         question: 'كيف تعمل الجدولة بالذكاء الاصطناعي؟',
@@ -1410,7 +1410,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'هل يمكن لديزي التعامل مع جدولة صالون الأظافر؟', answer: 'نعم. يدعم ديزي فترات الخدمة المتنوعة وفنيات متعددة في وقت واحد وطوابير الحضور المباشر وإعادة الحجز التلقائية لمواعيد الصيانة.' },
-      { question: 'ما هو أفضل برنامج صالون أظافر في 2026؟', answer: 'لصالونات الأظافر التي تريد حجزاً ذكياً وإعادة حجز تلقائية وولاء كاشباك، ديزي هو الخيار الأول. GlossGenius شائع لفنيات الأظافر المستقلات بميزانية محدودة. يقدم Fresha حجزاً أساسياً ضمن خطة مُعلنة، مع رسوم لكل معاملة فوقها.' },
+      { question: 'ما هو أفضل برنامج صالون أظافر في 2026؟', answer: 'لصالونات الأظافر التي تريد حجزاً ذكياً وإعادة حجز تلقائية وولاء كاشباك، ديزي هو الخيار الأول. GlossGenius شائع لفنيات الأظافر المستقلات بميزانية محدودة. يقدم Fresha حجزاً ضمن خطة مُعلنة مع رسوم لكل معاملة فوقها؛ أما ديزي فتجمع الذكاء الاصطناعي وعدداً غير محدود من الفنيات وأتمتة إعادة الحجز بسعر واحد ثابت.' },
       { question: 'كم يكلف برنامج صالون الأظافر؟', answer: 'تتراوح أسعار برامج صالونات الأظافر من خطط أساسية منخفضة السعر مع رسوم معاملات فوقها — مثل Fresha — إلى أكثر من 200 دولار شهرياً للمنصات الكاملة. يقدم ديزي سعراً ثابتاً يشمل الذكاء الاصطناعي وفنيات غير محدودات وأتمتة إعادة الحجز وجميع الميزات.' },
       { question: 'كيف يساعد ديزي صالونات الأظافر في الاحتفاظ بالعملاء؟', answer: 'يرسل ديزي تذكيرات إعادة حجز تلقائية عندما يحين وقت التعبئة أو المجموعات الجديدة، ويقدم مكافآت كاشباك تتراكم مع كل زيارة، ويستخدم الذكاء الاصطناعي لإرسال عروض مخصصة بناءً على سجل العملاء وتفضيلاتهم.' },
       { question: 'هل يعمل ديزي لفنيات الأظافر المستقلات؟', answer: 'نعم. يتوسع ديزي من فنيات الأظافر المستقلات إلى بارات الأظافر متعددة الفروع. للفنيات المستقلات، موظف الاستقبال الذكي لا يُقدّر بثمن — يتولى المكالمات والحجوزات بينما تركزين على أظافر عميلتك.' },

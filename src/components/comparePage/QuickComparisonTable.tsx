@@ -53,7 +53,6 @@ export const QuickComparisonTable: FC<QuickComparisonTableProps> = ({
         </h2>
         <p
           className="mb-10 text-center text-[#455150]"
-          data-geo-answer="true"
         >
           {t.stackUp(competitorName)}
         </p>

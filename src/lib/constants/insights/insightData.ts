@@ -169,9 +169,10 @@ export const industryStats: StatCategory[] = [
         source: 'Payment industry standard',
       },
       {
-        value: '20-30%',
-        description: 'Marketplace commission charged by some "free" booking platforms',
-        source: 'Platform pricing analysis',
+        value: '50%',
+        description:
+          'One-time commission Fresha publishes on each new client its UAE marketplace introduces (minimum AED 20; returning clients free)',
+        source: 'Fresha published UAE pricing',
       },
       {
         value: '15-20%',
@@ -348,7 +349,7 @@ const industryStatsAr: StatCategory[] = [
       },
       {
         value: '20-30%',
-        description: 'عمولة السوق التي تفرضها بعض منصات الحجز "المجانية"',
+        description: 'عمولة لمرة واحدة تنشرها Fresha على كل عميل جديد يجلبه سوقها في الإمارات (بحد أدنى 20 درهماً؛ العملاء العائدون مجاناً)',
         source: 'Platform pricing analysis',
       },
       {

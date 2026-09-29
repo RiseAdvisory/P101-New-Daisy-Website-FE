@@ -44,7 +44,7 @@ function DaisyVsPage({
   slug: string;
   locale?: string;
 }) {
-  const competitor = getCompetitor(data.competitorSlug);
+  const competitor = getCompetitor(data.competitorSlug, locale);
   if (!competitor) return null;
 
   const relatedPages = getRelatedComparePages(slug, 4, locale);
@@ -54,7 +54,6 @@ function DaisyVsPage({
     {
       label: 'AI Receptionist',
       daisy: '24/7 Voice + Chat',
-      daisyWins: true,
       // Never a fixed pejorative: describe the channels the competitor's AI
       // actually covers. 'Basic (limited)' capped every rival at "basic"
       // regardless of what their record said.
@@ -65,7 +64,6 @@ function DaisyVsPage({
     {
       label: 'Arabic Support',
       daisy: 'Native Arabic + English',
-      daisyWins: true,
       // 'Translated' was an unsourced quality downgrade published as fact.
       // Report only what we can substantiate: whether an Arabic UI exists.
       competitor: competitor.gccPresence.hasArabicUI
@@ -80,7 +78,6 @@ function DaisyVsPage({
     {
       label: 'Customer Acquisition',
       daisy: 'Marketplace + Cashback + AI Marketing',
-      daisyWins: true,
       competitor: competitor.features.marketplaceAndDiscovery >= 2
         ? 'Marketplace discovery'
         : 'Limited / None',
@@ -100,6 +97,8 @@ function DaisyVsPage({
       // lookup at all - a flat assertion about each rival that nothing backed.
       label: 'White-Label',
       daisy: 'Full brand control',
+      // Derived, not asserted. brandingAndWhiteLabel is an editorial rating we
+      // assign, so this only claims a difference in our own assessment.
       daisyWins:
         competitor.features.brandingAndWhiteLabel <
         daisyData.features.brandingAndWhiteLabel,
@@ -131,9 +130,11 @@ function DaisyVsPage({
           },
           {
             name: competitor.name,
-            description: `${competitor.name} salon and beauty business management software`,
+            description: competitor.description,
+        url: competitor.website,
             startingPrice: competitor.pricing.startingPrice,
-            rating: competitor.reviews.length > 0 ? competitor.reviews[0].rating : undefined,
+            // No rating passed: a single cherry-picked platform score is not an
+        // aggregate, and we have no sourced mean to publish for a competitor.
           },
         ]}
         pageTitle={`Daisy vs ${competitor.name} Comparison ${new Date().getFullYear()}`}
@@ -210,7 +211,7 @@ function DaisyVsPage({
                 'Cashback customer acquisition',
                 'Full brand control (white-label)',
                 'All 6 GCC countries supported',
-                'Flat pricing, no hidden fees',
+                'One flat price, no transaction fee and no marketplace commission',
                 'Complete business management suite',
               ]}
               cons={[
@@ -306,8 +307,8 @@ function CompetitorVsPage({
   slug: string;
   locale?: string;
 }) {
-  const competitorA = getCompetitor(data.slugA);
-  const competitorB = getCompetitor(data.slugB);
+  const competitorA = getCompetitor(data.slugA, locale);
+  const competitorB = getCompetitor(data.slugB, locale);
   if (!competitorA || !competitorB) return null;
 
   const relatedPages = getRelatedComparePages(slug, 4, locale);

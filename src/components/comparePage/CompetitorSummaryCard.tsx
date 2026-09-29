@@ -87,7 +87,7 @@ export const CompetitorSummaryCard: FC<CompetitorSummaryCardProps> = ({
   locale = 'en',
 }) => {
   const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
-  const competitor = getCompetitor(competitorSlug);
+  const competitor = getCompetitor(competitorSlug, locale);
   if (!competitor) return null;
 
   const avgRating = getAverageRating(competitorSlug);

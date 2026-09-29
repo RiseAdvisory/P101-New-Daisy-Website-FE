@@ -685,8 +685,8 @@ const fiveAppsHowToFixArticle: LocalBlogPost = {
 <h2>The financial case</h2>
 <p>Consolidating nearly always cuts total software spend while raising what the software can do.</p>
 <ul>
-<li><strong>The old stack:</strong> $300-800/month for 5-6 separate tools with no AI, no client acquisition and nothing joined up.</li>
-<li><strong>One platform:</strong> $100-300/month covering AI automation, marketplace visibility, cashback, marketing, analytics and growth features the old stack never offered.</li>
+<li><strong>The old stack:</strong> $300-800/month for 5-6 separate tools that do not share data, each with its own login, invoice and export.</li>
+<li><strong>One platform:</strong> $100-300/month covering AI automation, marketplace visibility, cashback, marketing and analytics in one joined-up system.</li>
 <li><strong>Net:</strong> $100-500/month in direct savings, 20-40 hours/month back, and revenue growth from features you did not previously have.</li>
 </ul>
 <p>Work out your own numbers with our <a href="/en/resources/blog/business/calculate-roi-switching-salon-software">ROI calculation framework</a>, or put <a href="/en/pricing/business">The Daisy's pricing</a> next to what you currently spend.</p>

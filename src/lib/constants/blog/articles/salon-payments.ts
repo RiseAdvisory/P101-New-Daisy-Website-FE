@@ -1288,8 +1288,8 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
 <h3>4. Choose the right fee structure</h3>
 <p>Flat-rate suits most salons on both simplicity and cost. Interchange-plus is only worth it at very high volume with mostly domestic debit cards.</p>
 
-<h3>5. Avoid commission-based platforms for existing clients</h3>
-<p>With an established client base, this is the most expensive option available to you by a distance, since a 20% commission makes any difference in processing rate irrelevant. Use them for acquiring new clients where the arithmetic supports it, and put your regulars through something that takes no commission.</p>
+<h3>5. Match the platform to your client mix</h3>
+<p>Commission-based platforms charge on acquisition, not on repeat business. Fresha, for example, charges once per new marketplace client and nothing on their return visits. Work out what share of your bookings are genuinely new marketplace introductions before assuming the commission is or is not worth it.</p>
 
 <h3>6. Minimise chargebacks</h3>
 <p>Each one costs you the fee, the revenue, and your afternoon. Send clear digital receipts, make sure your business name is recognisable on a card statement, keep the refund policy fair, and tell people before you change anything about their billing.</p>
@@ -1316,7 +1316,7 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
 <h2>Frequently asked questions</h2>
 
 <h3>What is a good effective processing rate for a salon?</h3>
-<p>On flat-rate processing with no commissions, an effective rate of 2.8&ndash;3.5% is normal and fine. Above 4%, go looking for hidden fees or a different provider. Salons paying commission on marketplace bookings often see 5&ndash;8% once that is counted.</p>
+<p>On flat-rate processing with no commissions, an effective rate of 2.8&ndash;3.5% is normal and fine. Above 4%, go looking for hidden fees or a different provider. Salons on platforms with higher published online rates, or paying acquisition commissions in a heavy new-client month, often see 5&ndash;8% once everything is counted.</p>
 
 <h3>Should I pass processing fees on to clients?</h3>
 <p>In beauty, a surcharge sours the last moment of the visit and sends people to competitors who simply absorb it. Build it into your prices instead. A 3% fee on a 300 AED service is 9 AED, so put the price up by 10 AED and say nothing about it.</p>
@@ -2128,8 +2128,8 @@ const paymentProcessingFeesArticleAr: LocalBlogPost = {
 <h3>4. اختر هيكل الرسوم المناسب</h3>
 <p> بالنسبة لمعظم الصالونات، يوفر السعر الثابت أفضل توازن بين البساطة والتكلفة. ضع في اعتبارك فقط interchange-plus إذا كنت تقوم بمعالجة كميات كبيرة جدًا وكانت معظم المعاملات عبارة عن بطاقات خصم محلية.</p>
 
-<h3>5. تجنب المنصات القائمة على العمولة للعملاء الحاليين</h3>
-<p>إذا كان لديك قاعدة عملاء راسخة، فإن المنصات القائمة على العمولة هي خيار الدفع الأكثر تكلفة على الإطلاق. عمولة 20٪ تقزّم أي فارق في رسوم المعالجة. استخدم الأنظمة الأساسية القائمة على العمولة فقط لاكتساب عملاء جدد إذا كانت الرياضيات منطقية، وقم بمعالجة العملاء المتكررين من خلال نظام غير عمولة.</p>
+<h3>5. اختر المنصة بحسب تركيبة عملائك</h3>
+<p>المنصات القائمة على العمولة تحتسبها على الاستقطاب لا على الحجوزات المتكررة. فـ Fresha مثلاً تحتسبها مرة واحدة لكل عميل سوق جديد، ولا تحتسب شيئاً على زياراته التالية. استخدم الأنظمة الأساسية القائمة على العمولة فقط لاكتساب عملاء جدد إذا كانت الرياضيات منطقية، وقم بمعالجة العملاء المتكررين من خلال نظام غير عمولة.</p>
 
 <h3>6. تقليل عمليات رد المبالغ المدفوعة</h3>
 <p>عمليات رد المبالغ المدفوعة باهظة الثمن (الرسوم + الإيرادات المفقودة + الوقت). يمكنك تقليلها من خلال: إرسال إيصالات رقمية واضحة، واستخدام أسماء تجارية معروفة في كشوفات البطاقة، واتباع سياسة استرداد عادلة، والتواصل بشكل استباقي بشأن أي تغييرات في الفواتير.</p>
@@ -2156,7 +2156,7 @@ const paymentProcessingFeesArticleAr: LocalBlogPost = {
 <h2>الأسئلة الشائعة</h2>
 
 <h3>ما هو معدل المعالجة الفعال الجيد للصالون؟</h3>
-<p> بالنسبة للصالون الذي يستخدم المعالجة بسعر ثابت بدون عمولات، فإن المعدل الفعلي الذي يتراوح بين 2.8 و3.5% هو معدل نموذجي ومقبول. إذا تجاوز المعدل الفعلي 4%، فتحقق من الرسوم المخفية أو فكر في تبديل مقدمي الخدمة. قد تشهد الصالونات التي تدفع عمولات على حجوزات السوق معدلات فعالة تتراوح بين 5-8% عند تضمين العمولات.</p>
+<p> بالنسبة للصالون الذي يستخدم المعالجة بسعر ثابت بدون عمولات، فإن المعدل الفعلي الذي يتراوح بين 2.8 و3.5% هو معدل نموذجي ومقبول. إذا تجاوز المعدل الفعلي 4%، فتحقق من الرسوم المخفية أو فكر في تبديل مقدمي الخدمة. قد تشهد الصالونات على منصات بمعدلات إلكترونية أعلى، أو التي تدفع عمولات استقطاب في شهر كثيف بالعملاء الجدد، معدلات فعالة تتراوح بين 5-8% عند تضمين العمولات.</p>
 
 <h3> هل يجب أن أقوم بتمرير رسوم المعالجة إلى العملاء؟</h3>
 <p> في معظم سياقات صناعة التجميل، يؤدي فرض رسوم إضافية على العملاء إلى خلق تجربة سلبية ويخاطر بفقدانهم لصالح المنافسين الذين يستوعبون التكلفة. بدلاً من ذلك، قم بإدراج رسوم المعالجة في أسعار الخدمة الخاصة بك. رسوم 3% على خدمة بقيمة 300 درهم هي 9 دراهم - قم بزيادة سعر الخدمة بمقدار 10 دراهم واستيعاب الرسوم بشفافية.</p>

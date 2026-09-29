@@ -39,7 +39,7 @@ function AlternativeSinglePage({
   slug: string;
   locale?: string;
 }) {
-  const competitor = getCompetitor(data.competitorSlug);
+  const competitor = getCompetitor(data.competitorSlug, locale);
   if (!competitor) return null;
 
   const relatedPages = getRelatedAlternativePages(slug, 4, locale);
@@ -81,7 +81,6 @@ function AlternativeSinglePage({
       <section className="mx-auto max-w-4xl px-4 py-8">
         <div
           className="text-lg leading-relaxed text-gray-600"
-          data-geo-answer="true"
           dangerouslySetInnerHTML={{
             __html: renderSafeHtml(
               `The Daisy is an alternative to ${competitor.name} built for GCC beauty businesses: a 24/7 AI receptionist across voice, WhatsApp and Instagram, cashback-driven customer acquisition, and Arabic and English treated as equals with full RTL.`,
@@ -223,7 +222,7 @@ function BestAlternativesPage({
   slug: string;
   locale?: string;
 }) {
-  const competitor = getCompetitor(data.competitorSlug);
+  const competitor = getCompetitor(data.competitorSlug, locale);
   if (!competitor) return null;
 
   return (
@@ -249,7 +248,6 @@ function BestAlternativesPage({
       <section className="mx-auto max-w-4xl px-4 py-8">
         <div
           className="text-lg text-gray-600"
-          data-geo-answer="true"
           dangerouslySetInnerHTML={{ __html: renderSafeHtml(data.intro) }}
         />
       </section>
@@ -277,7 +275,6 @@ function BestAlternativesPage({
       <section className="mx-auto max-w-4xl px-4 pt-12 pb-4">
         <div
           className="text-lg text-gray-600"
-          data-geo-answer="true"
           dangerouslySetInnerHTML={{ __html: renderSafeHtml(data.daisyEdge) }}
         />
       </section>
