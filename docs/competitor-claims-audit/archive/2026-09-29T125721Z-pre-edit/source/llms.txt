@@ -1,0 +1,193 @@
+# Daisy (The Daisy)
+
+> Daisy is an AI-powered beauty and wellness platform that helps salons, spas, clinics, and beauty businesses grow through an AI receptionist, 360-degree customer acquisition (marketplace + cashback + marketing automation), and full white-label brand control. Available in English and Arabic with native GCC support.
+
+## Product Facts
+
+- **Website**: https://www.jointhedaisy.com
+- **Type**: SaaS platform for beauty and wellness businesses
+- **Languages**: English and Arabic (full RTL support)
+- **Markets**: GCC (UAE, Saudi Arabia, Kuwait, Bahrain, Oman, Qatar) and global
+- **Pricing**: From $50/mo (Basic), $150/mo (Growth), $250/mo (Business) -- flat pricing, no per-staff fees
+- **Free Trial**: 14 days
+- **Key Differentiators**: AI receptionist, cashback loyalty system, white-label branding, multilingual (Arabic/English and more)
+- **Partnerships**: Official Meta Tech Provider (WhatsApp Business API, Instagram Messaging API)
+
+## Core Features (8 Categories)
+
+1. Online Booking & Scheduling -- AI-powered appointment management with 24/7 availability
+2. POS & Payments -- Integrated point of sale with no transaction fees
+3. Client Management -- CRM with customer profiles, history, and preferences
+4. Staff Management -- Employee scheduling, performance tracking, commissions
+5. Marketing & CRM -- Automated campaigns, cashback rewards, customer acquisition
+6. Inventory Management -- Stock tracking, low-stock alerts, supplier management
+7. Reporting & Analytics -- AI-driven business insights and revenue analytics
+8. AI Capabilities -- Voice receptionist, chatbot, smart scheduling, predictive analytics
+
+## User Types
+
+- **Business Owners**: Salon/spa/clinic owners seeking growth tools and business management
+- **Professionals**: Beauty and wellness service providers managing their careers
+- **Customers**: End users booking beauty services and earning cashback rewards
+
+## Pages
+
+### Main Pages
+- [Business Landing](https://www.jointhedaisy.com/en/business): Value proposition for salon and spa owners
+- [Professional Landing](https://www.jointhedaisy.com/en/professional): Career opportunities for beauty professionals
+- [Pricing](https://www.jointhedaisy.com/en/pricing): Transparent pricing plans and comparison
+- [About](https://www.jointhedaisy.com/en/about): Company mission, vision, and team
+- [Contact](https://www.jointhedaisy.com/en/contact): Get in touch with Daisy
+- [FAQ](https://www.jointhedaisy.com/en/faq): Frequently asked questions
+- [Get the App](https://www.jointhedaisy.com/en/get-the-app): Download Daisy on iOS and Android
+
+### Feature Pages
+- [Business Features](https://www.jointhedaisy.com/en/features/business): All features for salon and spa owners
+- [Professional Features](https://www.jointhedaisy.com/en/features/professional): Features for beauty professionals
+
+### Feature Deep-Dives (Business)
+- [AI Salon Management](https://www.jointhedaisy.com/en/features/business/ai-salon-management): AI-powered salon management with voice receptionist and smart scheduling
+- [Booking Management](https://www.jointhedaisy.com/en/features/business/booking-management): Online booking, calendar management, and appointment automation
+- [Communication Tools](https://www.jointhedaisy.com/en/features/business/communication-tools): Multi-channel client communication and automated messaging
+- [Marketing & Promotions](https://www.jointhedaisy.com/en/features/business/marketing-promotions): Cashback loyalty, referral programmes, and marketing automation
+- [Payment Processing](https://www.jointhedaisy.com/en/features/business/payment-processing): Integrated POS, invoicing, and financial management
+- [Business Growth](https://www.jointhedaisy.com/en/features/business/business-growth): Multi-location expansion, marketplace visibility, and acquisition tools
+- [Team Management](https://www.jointhedaisy.com/en/features/business/team-management): Staff scheduling, performance tracking, and commission management
+- [Analytics & Reports](https://www.jointhedaisy.com/en/features/business/analytics-reports): AI-driven business insights and revenue analytics
+
+### Feature Deep-Dives (Professional)
+- [AI Professional Tools](https://www.jointhedaisy.com/en/features/professional/ai-salon-management): AI-powered tools for beauty professionals
+- [Booking Management](https://www.jointhedaisy.com/en/features/professional/booking-management): Personal appointment scheduling and calendar management
+- [Client Communication](https://www.jointhedaisy.com/en/features/professional/communication-tools): Client messaging and automated follow-ups
+- [Personal Marketing](https://www.jointhedaisy.com/en/features/professional/marketing-promotions): Build your personal brand and attract clients
+- [Payment & Invoicing](https://www.jointhedaisy.com/en/features/professional/payment-processing): Accept payments and manage invoices
+- [Career Growth](https://www.jointhedaisy.com/en/features/professional/business-growth): Build your client base and grow your career
+- [Schedule Management](https://www.jointhedaisy.com/en/features/professional/team-management): Manage your availability and work-life balance
+- [Earnings & Analytics](https://www.jointhedaisy.com/en/features/professional/analytics-reports): Track earnings, performance, and client insights
+
+### Comprehensive Guides (Pillar Pages)
+- [Salon Management Software Guide](https://www.jointhedaisy.com/en/salon-management-software): The complete guide to choosing, implementing, and maximizing salon management software
+- [Beauty Booking System Guide](https://www.jointhedaisy.com/en/beauty-booking-system): Everything you need to know about beauty booking systems, from setup to optimization
+- [Salon Marketing Strategies](https://www.jointhedaisy.com/en/salon-marketing-strategies): Proven salon marketing strategies that drive growth through digital, social, and loyalty channels
+- [AI for Salon Businesses](https://www.jointhedaisy.com/en/ai-salon-software): How AI is transforming salon businesses with smart scheduling, predictive analytics, and 24/7 reception
+- [Beauty Business Growth Guide](https://www.jointhedaisy.com/en/beauty-business-growth-guide): From startup to scale -- complete guide to growing a beauty business
+- [Salon Payment Solutions](https://www.jointhedaisy.com/en/salon-payment-solutions): Complete guide to salon POS systems, payment processing, tipping, and invoicing
+- [Salon Staff Management](https://www.jointhedaisy.com/en/salon-staff-management): Build and retain a great salon team with hiring, scheduling, and commission strategies
+- [Salon Client Retention](https://www.jointhedaisy.com/en/salon-client-retention): Proven client retention strategies including loyalty programs, cashback, and personalization
+- [Freelance Beauty Professional Guide](https://www.jointhedaisy.com/en/freelance-beauty-professional-guide): Complete guide for independent beauty professionals on going freelance, pricing, and scaling
+- [Beauty Industry Trends 2026](https://www.jointhedaisy.com/en/beauty-industry-trends): Key beauty industry trends including AI adoption, sustainability, and GCC market growth
+- [Salon Analytics & Reporting](https://www.jointhedaisy.com/en/salon-analytics-reporting): Data-driven salon growth through KPIs, revenue reporting, and predictive analytics
+
+### Solution Pages (by Use Case)
+- [Salon Management Software](https://www.jointhedaisy.com/en/solutions/salon-management-software): AI-powered salon management
+- [Spa Booking System](https://www.jointhedaisy.com/en/solutions/spa-booking-system): Spa scheduling and management
+- [Beauty Salon Software](https://www.jointhedaisy.com/en/solutions/beauty-salon-software): Complete beauty business software
+- [Salon Appointment Scheduling](https://www.jointhedaisy.com/en/solutions/salon-appointment-scheduling): Smart scheduling tools
+- [Barbershop Software](https://www.jointhedaisy.com/en/solutions/barbershop-software): Barbershop management tools
+- [Nail Salon Software](https://www.jointhedaisy.com/en/solutions/nail-salon-software): Nail salon booking and management
+- [Med Spa Software](https://www.jointhedaisy.com/en/solutions/med-spa-software): Medical spa with compliance tools
+- [Salon POS System](https://www.jointhedaisy.com/en/solutions/salon-pos-system): Point of sale for salons
+- [Salon CRM Software](https://www.jointhedaisy.com/en/solutions/salon-crm-software): Customer relationship management
+- [Salon Marketing Software](https://www.jointhedaisy.com/en/solutions/salon-marketing-software): Marketing automation tools
+- [Salon Booking App](https://www.jointhedaisy.com/en/solutions/salon-booking-app): Mobile booking application
+- [Beauty Business Management](https://www.jointhedaisy.com/en/solutions/beauty-business-management): All-in-one business platform
+
+### Competitor Comparisons
+- [Daisy vs Fresha](https://www.jointhedaisy.com/en/compare/daisy-vs-fresha): Side-by-side comparison
+- [Daisy vs Booksy](https://www.jointhedaisy.com/en/compare/daisy-vs-booksy): Side-by-side comparison
+- [Daisy vs Vagaro](https://www.jointhedaisy.com/en/compare/daisy-vs-vagaro): Side-by-side comparison
+- [Daisy vs GlossGenius](https://www.jointhedaisy.com/en/compare/daisy-vs-glossgenius): Side-by-side comparison
+- [Daisy vs Mindbody](https://www.jointhedaisy.com/en/compare/daisy-vs-mindbody): Side-by-side comparison
+- [Daisy vs Boulevard](https://www.jointhedaisy.com/en/compare/daisy-vs-boulevard): Side-by-side comparison
+- [Daisy vs Glamera](https://www.jointhedaisy.com/en/compare/daisy-vs-glamera): Side-by-side comparison
+- [Daisy vs DINGG](https://www.jointhedaisy.com/en/compare/daisy-vs-dingg): Side-by-side comparison
+- [Daisy vs RepeatMD](https://www.jointhedaisy.com/en/compare/daisy-vs-repeatmd): Side-by-side comparison
+- [Daisy vs Planity](https://www.jointhedaisy.com/en/compare/daisy-vs-planity): Side-by-side comparison
+- [Daisy vs Mangomint](https://www.jointhedaisy.com/en/compare/daisy-vs-mangomint): Side-by-side comparison
+- [Daisy vs Square Appointments](https://www.jointhedaisy.com/en/compare/daisy-vs-square-appointments): Side-by-side comparison
+- [Daisy vs Phorest](https://www.jointhedaisy.com/en/compare/daisy-vs-phorest): Side-by-side comparison
+- [Daisy vs Acuity Scheduling](https://www.jointhedaisy.com/en/compare/daisy-vs-acuity-scheduling): Side-by-side comparison
+
+### Alternative Pages
+- [Fresha Alternative](https://www.jointhedaisy.com/en/alternative/fresha): Why switch from Fresha to Daisy
+- [Booksy Alternative](https://www.jointhedaisy.com/en/alternative/booksy): Why switch from Booksy to Daisy
+- [Vagaro Alternative](https://www.jointhedaisy.com/en/alternative/vagaro): Why switch from Vagaro to Daisy
+- [GlossGenius Alternative](https://www.jointhedaisy.com/en/alternative/glossgenius): Why switch from GlossGenius to Daisy
+- [Mindbody Alternative](https://www.jointhedaisy.com/en/alternative/mindbody): Why switch from Mindbody to Daisy
+- [Boulevard Alternative](https://www.jointhedaisy.com/en/alternative/boulevard): Why switch from Boulevard to Daisy
+
+### Glossary (Definitions)
+- [Salon Management Software](https://www.jointhedaisy.com/en/glossary/salon-management-software): What is salon management software?
+- [AI Receptionist for Salons](https://www.jointhedaisy.com/en/glossary/ai-receptionist-for-salons): What is an AI receptionist for salons?
+- [Cashback in Beauty Booking](https://www.jointhedaisy.com/en/glossary/cashback-beauty-booking): What is cashback in beauty booking?
+- [White-Label Salon Software](https://www.jointhedaisy.com/en/glossary/white-label-salon-software): What is white-label salon software?
+- [Salon Booking Software](https://www.jointhedaisy.com/en/glossary/salon-booking-software): What is salon booking software?
+
+### How-To Guides
+- [Reduce Salon No-Shows](https://www.jointhedaisy.com/en/guides/reduce-salon-no-shows): How to reduce no-shows by 30-40%
+- [Get More Salon Clients](https://www.jointhedaisy.com/en/guides/get-more-salon-clients): How to grow your salon client base
+- [Choose Best Salon Software](https://www.jointhedaisy.com/en/guides/choose-best-salon-software): How to evaluate and choose salon software
+- [Switch from Fresha](https://www.jointhedaisy.com/en/guides/switch-from-fresha): Step-by-step Fresha migration guide
+- [Set Up Online Booking](https://www.jointhedaisy.com/en/guides/set-up-online-booking-salon): How to set up online booking for your salon
+
+### Industry Data
+- [Salon Industry Statistics 2026](https://www.jointhedaisy.com/en/insights): Comprehensive beauty industry data and trends
+
+### Blog Content Library (118 articles across 21 categories)
+
+**Daisy Platform Advantage:**
+- [How AI Receptionists Transform Salon Customer Service](https://www.jointhedaisy.com/en/resources/blog/business/ai-receptionist-salon-customer-service): 24/7 AI reception for salons
+- [Why All-in-One Platforms Beat Point Solutions](https://www.jointhedaisy.com/en/resources/blog/business/all-in-one-salon-platform-vs-point-solutions): Platform vs fragmented tools
+- [360-Degree Customer Acquisition](https://www.jointhedaisy.com/en/resources/blog/business/360-degree-customer-acquisition-salons): Complete acquisition strategy
+- [White-Label Booking](https://www.jointhedaisy.com/en/resources/blog/business/white-label-salon-booking): Brand control for salons
+
+**Decision Stage (Switching):**
+- [Salon Software Switching Checklist](https://www.jointhedaisy.com/en/resources/blog/business/salon-software-switching-checklist-migration): 30-day migration plan
+- [ROI of Switching Salon Software](https://www.jointhedaisy.com/en/resources/blog/business/calculate-roi-switching-salon-software): How to calculate switching ROI
+
+**Thought Leadership:**
+- [Why the Future Belongs to Platform Ecosystems](https://www.jointhedaisy.com/en/resources/blog/business/death-of-salon-software-platform-ecosystems): Beyond traditional salon software
+- [Why Salons Need AI (Not Just Software)](https://www.jointhedaisy.com/en/resources/blog/business/modern-salons-ai-platform-not-software): AI platform vs traditional tools
+
+**Industry Knowledge (selected):**
+- [15 Salon Marketing Ideas for 2026](https://www.jointhedaisy.com/en/resources/blog/business/salon-marketing-ideas-2026): Proven marketing strategies
+- [How to Start a Beauty Business](https://www.jointhedaisy.com/en/resources/blog/business/how-to-start-beauty-business): Complete startup guide
+- [Beauty Industry Statistics 2026](https://www.jointhedaisy.com/en/resources/blog/business/beauty-industry-statistics-2026): Key industry numbers
+- [Going Freelance as a Beauty Professional](https://www.jointhedaisy.com/en/resources/blog/professional/going-freelance-beauty-professional): Freelance guide for beauty pros
+
+### Resources
+- [Blog](https://www.jointhedaisy.com/en/resources/blog-post): 118 articles across salon management, marketing, payments, staffing, retention, analytics, and more
+- [Tutorials](https://www.jointhedaisy.com/en/resources/tutorials): How-to guides for using Daisy
+- [Testimonials](https://www.jointhedaisy.com/en/resources/testimonials): Customer success stories
+
+## Frequently Asked Questions
+
+Q: What is The Daisy?
+A: The Daisy is an AI-powered beauty and wellness platform that helps salons, spas, clinics, and freelance professionals grow their business through smart booking, an AI receptionist, 360-degree customer acquisition, and full white-label brand control. Available in English and Arabic.
+
+Q: How much does The Daisy cost?
+A: Business plans start at $50/month ($42/month billed annually) for the Basic plan, $150/month for Growth, and $250/month for the full Business plan. Professionals can start free with the Starter plan. All paid plans include a 14-day free trial. Flat pricing with no per-staff fees.
+
+Q: What makes The Daisy different from other salon software?
+A: Six key differentiators: (1) AI receptionist for 24/7 customer service, (2) 360-degree customer acquisition combining marketplace, cashback, and marketing, (3) full white-label brand control, (4) network effects that improve with more data, (5) all-in-one platform replacing 5+ tools across 8 categories, and (6) bilingual Arabic/English with native GCC support.
+
+Q: Does The Daisy have an AI receptionist?
+A: Yes. The Daisy includes a built-in AI receptionist that handles customer inquiries, appointment booking, and payments 24/7 via voice call and chat, so businesses never miss a booking even outside working hours.
+
+Q: What countries does The Daisy support?
+A: The Daisy serves the GCC region (UAE, Saudi Arabia, Kuwait, Bahrain, Oman, Qatar) and global markets. The platform is fully bilingual in English and Arabic with native RTL support.
+
+Q: Can I switch to The Daisy from Fresha or other salon software?
+A: Yes. The Daisy offers free data migration and assisted onboarding on all Growth and Business plans. See the step-by-step migration guide at https://www.jointhedaisy.com/en/guides/switch-from-fresha
+
+Q: Does The Daisy offer a free trial?
+A: Yes. All paid plans include a 14-day free trial with full access to all features. Professionals can also use the free Starter plan indefinitely for their first 100 bookings.
+
+Q: What types of businesses use The Daisy?
+A: Salons, spas, barbershops, nail salons, med spas, clinics, and freelance beauty professionals. The platform serves business owners who want to grow (not just manage) their beauty business.
+
+Q: Does The Daisy charge per-staff or per-booking fees?
+A: No. The Daisy uses flat monthly pricing with no per-staff surcharges and no per-booking transaction fees. Plans include a set number of user seats (5, 10, or 15) and workspaces.
+
+Q: What features does The Daisy include?
+A: Eight core feature categories: (1) Online Booking & Scheduling, (2) POS & Payments, (3) Client Management/CRM, (4) Staff Management, (5) Marketing & Cashback, (6) Inventory Management, (7) Reporting & Analytics, and (8) AI Capabilities including voice receptionist and predictive analytics.
