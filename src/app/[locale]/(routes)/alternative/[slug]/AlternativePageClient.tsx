@@ -84,7 +84,7 @@ function AlternativeSinglePage({
           data-geo-answer="true"
           dangerouslySetInnerHTML={{
             __html: renderSafeHtml(
-              `The Daisy is the leading alternative to ${competitor.name}, offering AI-powered salon management with 24/7 receptionist, cashback customer acquisition, and native Arabic/English support that ${competitor.name} lacks.`,
+              `The Daisy is an alternative to ${competitor.name} built for GCC beauty businesses: a 24/7 AI receptionist across voice, WhatsApp and Instagram, cashback-driven customer acquisition, and Arabic and English treated as equals with full RTL.`,
             ),
           }}
         />

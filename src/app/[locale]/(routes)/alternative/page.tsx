@@ -17,7 +17,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
       ? 'بدائل برامج الصالونات. قارن وانتقل | ديزي'
       : 'Salon Software Alternatives. Compare & Switch | The Daisy',
     description: isAr
-      ? 'قارن بدائل برامج إدارة الصالونات. اكتشف لماذا تنتقل مشاريع التجميل إلى ديزي من Fresha وBooksy وVagaro وغيرها.'
+      ? 'قارن بدائل برامج إدارة الصالونات من حيث الذكاء الاصطناعي والأسعار والدعم العربي: Fresha وBooksy وVagaro وغيرها جنباً إلى جنب.'
       : 'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives with AI features, pricing, and Arabic support.',
     keywords: [
       'fresha alternative',
@@ -30,7 +30,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
         ? 'بدائل برامج الصالونات. قارن وانتقل | ديزي'
         : 'Salon Software Alternatives. Compare & Switch | The Daisy',
       description: isAr
-        ? 'قارن بدائل برامج إدارة الصالونات. اكتشف لماذا تنتقل مشاريع التجميل إلى ديزي من Fresha وBooksy وVagaro وغيرها.'
+        ? 'قارن بدائل برامج إدارة الصالونات من حيث الذكاء الاصطناعي والأسعار والدعم العربي: Fresha وBooksy وVagaro وغيرها جنباً إلى جنب.'
         : 'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives with AI features, pricing, and Arabic support.',
       url: `https://www.jointhedaisy.com/${locale}/alternative`,
       type: 'website',
@@ -42,7 +42,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
         ? 'بدائل برامج الصالونات. قارن وانتقل | ديزي'
         : 'Salon Software Alternatives. Compare & Switch | The Daisy',
       description: isAr
-        ? 'قارن بدائل برامج إدارة الصالونات. اكتشف لماذا تنتقل مشاريع التجميل إلى ديزي من Fresha وBooksy وVagaro وغيرها.'
+        ? 'قارن بدائل برامج إدارة الصالونات من حيث الذكاء الاصطناعي والأسعار والدعم العربي: Fresha وBooksy وVagaro وغيرها جنباً إلى جنب.'
         : 'Looking for alternatives to Fresha, Booksy, Vagaro, or GlossGenius? Compare top salon software alternatives.',
       images: ['/images/og/og-default.jpg'],
     },

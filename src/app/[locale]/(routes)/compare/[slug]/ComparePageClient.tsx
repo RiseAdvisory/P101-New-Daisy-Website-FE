@@ -1,5 +1,5 @@
 import { getComparePageData } from '@/lib/constants/competitors/comparisonPages';
-import { getCompetitor } from '@/lib/constants/competitors';
+import { getCompetitor, featureRatingLabel } from '@/lib/constants/competitors';
 import { getRelatedComparePages } from '@/lib/constants/competitors/comparisonPages';
 import { ComparisonHero } from '@/components/comparePage/ComparisonHero';
 import { QuickComparisonTable } from '@/components/comparePage/QuickComparisonTable';
@@ -54,18 +54,23 @@ function DaisyVsPage({
     {
       label: 'AI Receptionist',
       daisy: '24/7 Voice + Chat',
+      daisyWins: true,
+      // Never a fixed pejorative: describe the channels the competitor's AI
+      // actually covers. 'Basic (limited)' capped every rival at "basic"
+      // regardless of what their record said.
       competitor: competitor.aiCapabilities.hasAiReceptionist
-        ? 'Basic (limited)'
-        : 'Not Available',
+        ? 'Voice calls'
+        : 'No AI receptionist published',
     },
     {
       label: 'Arabic Support',
       daisy: 'Native Arabic + English',
+      daisyWins: true,
+      // 'Translated' was an unsourced quality downgrade published as fact.
+      // Report only what we can substantiate: whether an Arabic UI exists.
       competitor: competitor.gccPresence.hasArabicUI
-        ? competitor.gccPresence.arabicQuality === 'native'
-          ? 'Native Arabic'
-          : 'Translated'
-        : 'English Only',
+        ? 'Arabic UI available'
+        : 'No Arabic UI published',
     },
     {
       label: 'Pricing Model',
@@ -75,22 +80,30 @@ function DaisyVsPage({
     {
       label: 'Customer Acquisition',
       daisy: 'Marketplace + Cashback + AI Marketing',
+      daisyWins: true,
       competitor: competitor.features.marketplaceAndDiscovery >= 2
-        ? 'Marketplace only'
+        ? 'Marketplace discovery'
         : 'Limited / None',
     },
     {
       label: 'GCC Countries',
       daisy: '6 (UAE, KSA, Kuwait, Bahrain, Oman, Qatar)',
+      // Six against six is not a win, whatever order they are listed in.
+      daisyWins: competitor.gccPresence.gccCountries.length < 6,
       competitor:
         competitor.gccPresence.gccCountries.length > 0
           ? competitor.gccPresence.gccCountries.join(', ')
           : 'None',
     },
     {
+      // Was hardcoded to 'Not Available' for every competitor, with no data
+      // lookup at all - a flat assertion about each rival that nothing backed.
       label: 'White-Label',
       daisy: 'Full brand control',
-      competitor: 'Not Available',
+      daisyWins:
+        competitor.features.brandingAndWhiteLabel <
+        daisyData.features.brandingAndWhiteLabel,
+      competitor: featureRatingLabel(competitor.features.brandingAndWhiteLabel),
     },
   ];
 

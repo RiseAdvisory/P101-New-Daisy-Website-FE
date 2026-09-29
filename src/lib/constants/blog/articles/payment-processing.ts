@@ -709,7 +709,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <li><strong>Online payments (UAE published):</strong> 4.90% + AED 0.75 per transaction</li>
 <li><strong>Commission on new client bookings:</strong> a one-time 50% commission on new clients acquired through the Fresha marketplace, minimum AED 20; returning clients free</li>
 <li><strong>Monthly platform fee:</strong> priced per market, AED 149.95 per month for the Independent plan in the UAE, with Team plans at custom rates</li>
-<li><strong>Key consideration:</strong> the headline processing rate is competitive, and the 20% new client commission is where the cost sits. If 30% of your monthly bookings come from new Fresha marketplace clients, what you actually pay is well above the stated rate. A salon doing 100 bookings per month averaging 250 AED, where 30 are new marketplace clients, pays roughly 1,500 AED in commissions alone, before any processing fees.</li>
+<li><strong>Key consideration:</strong> the marketplace commission, not the processing rate, is what moves the total. It is charged once per new client, at 50% of that first booking, so a month of heavy marketplace acquisition costs far more than the headline rate suggests, while a month of returning clients costs nothing extra. A salon doing 100 bookings per month averaging 250 AED, where 30 are new marketplace clients, pays roughly 3,750 AED in commissions that month, before processing fees. On The Daisy there is no commission either way.</li>
 </ul>
 
 <h3>Stripe (direct integration)</h3>
@@ -738,22 +738,22 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 </ul>
 
 <h2>Total cost comparison: a real-world scenario</h2>
-<p>Per-transaction fees are only part of the bill. Take a salon processing 80,000 AED in payments across 400 transactions, with 25% of bookings from new clients:</p>
+<p>Per-transaction fees are only part of the bill. Take a salon processing 80,000 AED in payments across 400 transactions, with 25% of bookings from new clients. Of those 100 new clients, assume 20 are found through a platform&rsquo;s own marketplace, since marketplace commissions apply only to clients the marketplace introduced:</p>
 
 <table>
 <thead>
 <tr><th>Cost Component</th><th>The Daisy</th><th>Square (Plus)</th><th>Fresha</th><th>Stripe + Separate Software</th></tr>
 </thead>
 <tbody>
-<tr><td>Processing fees (card-present)</td><td>Competitive flat rate</td><td>~2,120 AED</td><td>~1,790 AED</td><td>~2,200 AED</td></tr>
-<tr><td>New client commission</td><td>0 AED</td><td>0 AED</td><td>~4,000 AED</td><td>0 AED</td></tr>
-<tr><td>Platform/subscription fee</td><td>Included</td><td>~110 AED</td><td>0 AED (base)</td><td>~200-400 AED</td></tr>
+<tr><td>Processing fees</td><td>Competitive flat rate</td><td>~2,120 AED</td><td>~4,220 AED</td><td>~2,200 AED</td></tr>
+<tr><td>New client commission</td><td>0 AED</td><td>0 AED</td><td>~2,000 AED</td><td>0 AED</td></tr>
+<tr><td>Platform/subscription fee</td><td>Included</td><td>~110 AED</td><td>~150 AED (Independent, UAE)</td><td>~200-400 AED</td></tr>
 <tr><td>Additional tool costs</td><td>0 AED</td><td>~100-300 AED</td><td>~100-200 AED</td><td>~100-300 AED</td></tr>
-<tr><td><strong>Estimated monthly total</strong></td><td><strong>See pricing page</strong></td><td><strong>~2,430 AED</strong></td><td><strong>~5,990 AED</strong></td><td><strong>~2,700 AED</strong></td></tr>
+<tr><td><strong>Estimated monthly total</strong></td><td><strong>See pricing page</strong></td><td><strong>~2,430 AED</strong></td><td><strong>~6,500 AED</strong></td><td><strong>~2,700 AED</strong></td></tr>
 </tbody>
 </table>
 
-<p>What the table shows is that Fresha's low processing rate is outweighed by the 20% new client commission. A salon getting a large share of its clients through the marketplace pays considerably more overall than it would with a flat-rate processor charging no commission.</p>
+<p>Fresha&rsquo;s figures use its published UAE rates: 4.90% + AED 0.75 online, a one-time 50% commission on each new marketplace client with a minimum of AED 20, and AED 149.95 per month for the Independent plan. What the table shows is that the marketplace commission drives the total. A salon getting a large share of its clients through the marketplace pays considerably more in the months it is acquiring; a salon running mostly on repeat business pays the commission once per client and then not again.</p>
 
 <h2>Hidden costs to watch for</h2>
 <p>Six costs that surprise people who only read the headline rate:</p>
@@ -828,7 +828,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 `,
     metaTitle: 'Payment Fees: Daisy vs Alternatives | The Daisy',
     metaDescription:
-      'Compare salon payment processing fees across The Daisy, Square, Fresha, Stripe, and SumUp. See real cost breakdowns including hidden fees and commissions.',
+      'Compare salon payment processing fees across The Daisy, Square, Fresha, Stripe, and SumUp. See real cost breakdowns including per-transaction charges and commissions.',
     createdAt: '2025-08-14T05:00:00.000Z',
     updatedAt: '2025-08-14T05:00:00.000Z',
     publishedAt: '2025-08-14T05:00:00.000Z',
@@ -1569,8 +1569,8 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <li><strong>نموذج المعالجة:</strong> السعر الثابت بالإضافة إلى العمولة على العملاء الجدد</li>
 <li><strong>المدفوعات الإلكترونية (منشور للإمارات):</strong> 4.90% + 0.75 درهم لكل معاملة</li>
 <li><strong>عمولة على حجوزات العملاء الجدد:</strong> عمولة لمرة واحدة 50% على العملاء الجدد القادمين من سوق Fresha، بحد أدنى 20 درهماً؛ العملاء العائدون مجاناً</li>
-<li><strong>رسوم النظام الأساسي الشهرية:</strong> خطة أساسية مجانية (مع ميزات محدودة)؛ إضافات مدفوعة للتسويق وإعداد التقارير والأدوات المتقدمة</li>
-<li><strong>الاعتبار الرئيسي:</strong> يعد معدل معالجة العناوين الرئيسية لشركة Fresha تنافسيًا، ولكن عمولة العميل الجديد البالغة 20% هي التكلفة المخفية. إذا كانت 30% من حجوزاتك الشهرية تأتي من عملاء سوق Fresha الجدد، فإن تكلفة المعالجة الفعلية الخاصة بك أعلى بكثير من المعدل المذكور. يقوم صالون بإجراء 100 حجز شهريًا بمتوسط 250 درهمًا إماراتيًا، حيث 30 من عملاء السوق الجدد، يدفع ما يقرب من 1500 درهم إماراتي كعمولات فقط - بالإضافة إلى رسوم المعالجة.</li>
+<li><strong>رسوم النظام الأساسي الشهرية:</strong> مُسعّرة حسب السوق — 149.95 درهماً شهرياً لخطة Independent في الإمارات، وخطط Team بأسعار مخصصة</li>
+<li><strong>الاعتبار الرئيسي:</strong> عمولة السوق، لا معدل المعالجة، هي ما يحرّك الإجمالي. تُحتسب مرة واحدة لكل عميل جديد بنسبة 50% من حجزه الأول، لذا فإن شهر الاستقطاب المكثف عبر السوق يكلّف أكثر بكثير مما يوحي به المعدل المُعلن، بينما لا يكلّف شهر العملاء العائدين أي مبلغ إضافي. صالون يجري 100 حجز شهريًا بمتوسط 250 درهمًا، منها 30 لعملاء سوق جدد، يدفع نحو 3,750 درهمًا عمولاتٍ في ذلك الشهر قبل رسوم المعالجة. أما في ديزي فلا عمولة في الحالتين.</li>
 </ul>
 
 <h3>الشريط (التكامل المباشر)</h3>
@@ -1599,22 +1599,22 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 </ul>
 
 <h2>مقارنة التكلفة الإجمالية: سيناريو واقعي</h2>
-<p> الرسوم لكل معاملة تحكي جزءًا من القصة فقط. دعونا نضع نموذجًا للتكلفة الشهرية الإجمالية لمعالجة الصالون بقيمة 80,000 درهم إماراتي على دفعات عبر 400 معاملة، مع 25% من الحجوزات من العملاء الجدد:</p>
+<p> الرسوم لكل معاملة تحكي جزءًا من القصة فقط. دعونا نضع نموذجًا للتكلفة الشهرية الإجمالية لمعالجة الصالون بقيمة 80,000 درهم إماراتي على دفعات عبر 400 معاملة، مع 25% من الحجوزات من العملاء الجدد. ومن بين هؤلاء المئة عميل جديد، نفترض أن 20 منهم جاؤوا عبر سوق المنصة نفسها، لأن عمولة السوق لا تُحتسب إلا على العملاء الذين جلبهم السوق:</p>
 
 <table>
 <thead>
-<tr><th>مكون التكلفة</th><th>الأقحوان</th><th>مربع (زائد)</th><th>Fresha</th><th>شريط + برنامج منفصل</th></tr>
+<tr><th>مكون التكلفة</th><th>ديزي</th><th>Square (Plus)</th><th>Fresha</th><th>Stripe + برنامج منفصل</th></tr>
 </thead>
 <tbody>
-<tr><td>رسوم المعالجة (مع وجود البطاقة)</td><td>سعر موحد تنافسي</td><td>~2,120 درهم</td><td>~1,790 AED</td><td>~2,200 درهم</td></tr>
-<tr><td>عمولة العميل الجديد</td><td>0 AED</td><td>0 AED</td><td>~4,000 درهم</td><td>0 AED</td></tr>
-<tr><td>رسوم المنصة/الاشتراك</td><td>متضمن</td><td>~110 درهم</td><td>0 درهم (القاعدة)</td><td>~200-400 درهم</td></tr>
+<tr><td>رسوم المعالجة</td><td>سعر موحد تنافسي</td><td>~2,120 درهم</td><td>~4,220 درهم</td><td>~2,200 درهم</td></tr>
+<tr><td>عمولة العميل الجديد</td><td>0 درهم</td><td>0 درهم</td><td>~2,000 درهم</td><td>0 درهم</td></tr>
+<tr><td>رسوم المنصة/الاشتراك</td><td>متضمن</td><td>~110 درهم</td><td>~150 درهم (Independent، الإمارات)</td><td>~200-400 درهم</td></tr>
 <tr><td>تكاليف الأدوات الإضافية</td><td>0 AED</td><td>~100-300 AED</td><td>~100-200 AED</td><td>~100-300 AED</td></tr>
-<tr><td><strong>الإجمالي الشهري المقدر</strong></td><td><strong>انظر الأسعار page</strong></td><td><strong>~2,430 درهم</strong></td><td><strong>~5,990 AED</strong></td><td><strong>~2,700 درهم</strong></td></tr>
+<tr><td><strong>الإجمالي الشهري المقدر</strong></td><td><strong>انظر الأسعار page</strong></td><td><strong>~2,430 درهم</strong></td><td><strong>~6,500 درهم</strong></td><td><strong>~2,700 درهم</strong></td></tr>
 </tbody>
 </table>
 
-<p> الفكرة الحاسمة هي أن معدل المعالجة المنخفض لـ Fresha تطغى عليه عمولة العميل الجديد البالغة 20%. يدفع الصالون الذي يكتسب جزءًا كبيرًا من العملاء من خلال السوق مبلغًا إجماليًا أكبر بكثير مما يدفعه مع معالج بسعر ثابت لا يتقاضى أي عمولة.</p>
+<p>أرقام Fresha أعلاه مبنية على أسعارها المنشورة في الإمارات: 4.90% + 0.75 درهم للمدفوعات الإلكترونية، وعمولة لمرة واحدة 50% على كل عميل سوق جديد بحد أدنى 20 درهماً، و149.95 درهماً شهرياً لخطة Independent. وما يظهره الجدول أن عمولة السوق هي التي تحرّك الإجمالي: الصالون الذي يعتمد على السوق في استقطاب عملائه يدفع أكثر في أشهر الاستقطاب، أما الصالون القائم على العملاء العائدين فيدفع العمولة مرة واحدة لكل عميل ثم لا يدفعها ثانية.</p>
 
 <h2>التكاليف الخفية التي يجب مراقبتها</h2>
 <p> بعيدًا عن الأسعار الرئيسية، تفاجئ هذه التكاليف العديد من أصحاب الصالونات:</p>

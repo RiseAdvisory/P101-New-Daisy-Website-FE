@@ -1172,12 +1172,12 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
 <p><strong>Best for:</strong> salons over 200,000 AED monthly, mostly taking domestic debit, with somebody who will actually read the statements.</p>
 
 <h3>Commission-based pricing</h3>
-<p>The platform takes a share of each booking&rsquo;s value, sometimes on top of the usual processing fee, so 20% commission on new client bookings + 2.19% processing fee.</p>
-<p><strong>How it works:</strong> A new client books a 400 AED service. You pay 80 AED in commission plus 8.76 AED in processing fees = 88.76 AED total. The identical booking from an existing client costs you only the 8.76 AED.</p>
+<p>The platform takes a share of a booking&rsquo;s value on top of the usual processing fee. Fresha, for example, publishes a one-time 50% commission on each new client its marketplace introduces, minimum AED 20, with returning clients free, alongside a published UAE online rate of 4.90% + AED 0.75.</p>
+<p><strong>How it works:</strong> A new marketplace client books a 400 AED service. You pay 200 AED in commission plus 20.35 AED in processing = 220.35 AED. That same client returning next month costs you only the 20.35 AED, because the commission is charged once per client rather than once per booking.</p>
 <p><strong>Pros:</strong> nothing upfront and no subscription, so you only pay having earned something.</p>
-<p><strong>Cons:</strong> it gets very expensive very quickly, since the better your acquisition the bigger the bill. A salon acquiring 100 new clients per month at 350 AED average spend pays 7,000 AED monthly in commissions alone, before any processing fees.</p>
+<p><strong>Cons:</strong> the bill tracks your acquisition, so the months you grow fastest are the months you pay most. A salon acquiring 100 new marketplace clients at 350 AED average spend pays 17,500 AED in commission that month, before processing. Each of those clients is chargeable only once, so the cost falls away as they become regulars, but it has to be funded up front.</p>
 <p><strong>Who uses this model:</strong> marketplace-first platforms such as Fresha, on bookings that came through the marketplace.</p>
-<p><strong>Best for:</strong> a brand new salon with nobody on its books, buying exposure and knowing what it is paying for. Not something an established business should be living with.</p>
+<p><strong>Best for:</strong> salons that want marketplace exposure and are comfortable paying for each new client it introduces. Worth modelling against your own mix, because if most of your bookings are repeat business a platform with no commission is usually cheaper.</p>
 
 <h2>Anatomy of a processing fee</h2>
 <p>When you pay 2.6% + 0.10 AED per transaction, three parties are splitting it.</p>
@@ -2012,12 +2012,12 @@ const paymentProcessingFeesArticleAr: LocalBlogPost = {
 <p><strong>الأفضل لـ:</strong> الصالونات ذات الحجم الكبير (200000+ درهم شهريًا) مع معاملات بطاقات الخصم المحلية بشكل أساسي والقدرة الإدارية على تحليل البيانات المعقدة.</p>
 
 <h3>التسعير على أساس العمولة</h3>
-<p> تأخذ المنصة نسبة من قيمة كل حجز كعمولة، بالإضافة إلى رسوم المعالجة القياسية في بعض الأحيان. على سبيل المثال: عمولة 20% على حجوزات العملاء الجدد + 2.19% رسوم المعالجة.</p>
-<p><strong>كيفية العمل:</strong> عميل جديد يحجز خدمة بقيمة 400 درهم. أنت تدفع 80 درهمًا إماراتيًا كعمولة بالإضافة إلى 8.76 درهمًا إماراتيًا كرسوم معالجة = إجمالي 88.76 درهمًا إماراتيًا. يدفع العميل الحالي الذي يحجز نفس الخدمة رسوم المعالجة البالغة 8.76 درهمًا إماراتيًا فقط.</p>
+<p>تأخذ المنصة نسبة من قيمة الحجز كعمولة، إضافة إلى رسوم المعالجة القياسية. فعلى سبيل المثال تنشر Fresha عمولة لمرة واحدة بنسبة 50% على كل عميل جديد يجلبه سوقها، بحد أدنى 20 درهماً، والعملاء العائدون مجاناً، إلى جانب معدل منشور للإمارات قدره 4.90% + 0.75 درهم للمدفوعات الإلكترونية.</p>
+<p><strong>كيفية العمل:</strong> عميل سوق جديد يحجز خدمة بقيمة 400 درهم. تدفع 200 درهم عمولةً و20.35 درهماً رسوم معالجة = 220.35 درهماً. وإذا عاد العميل نفسه الشهر المقبل فلن تدفع سوى 20.35 درهماً، لأن العمولة تُحتسب مرة واحدة لكل عميل لا مرة لكل حجز.</p>
 <p><strong>الإيجابيات:</strong> لا توجد تكاليف مقدمة أو اشتراك شهري. لن تدفع إلا عندما تحقق إيرادات.</p>
-<p><strong>السلبيات:</strong> باهظ الثمن للغاية على نطاق واسع. مع نمو عملية اكتساب العملاء الجدد، تنمو تكاليف عمولتك بشكل متناسب. صالون يستقطب 100 عميل جديد شهريًا بمتوسط إنفاق 350 درهمًا إماراتيًا ويدفع 7000 درهم شهريًا كعمولات وحدها - بالإضافة إلى رسوم المعالجة.</p>
+<p><strong>السلبيات:</strong> الفاتورة تتبع وتيرة استقطابك، فالأشهر التي تنمو فيها أسرع هي الأشهر التي تدفع فيها أكثر. صالون يستقطب 100 عميل سوق جديد بمتوسط إنفاق 350 درهماً يدفع 17,500 درهم عمولةً في ذلك الشهر قبل رسوم المعالجة. ولا تُحتسب العمولة لكل عميل إلا مرة واحدة، فتتلاشى التكلفة مع تحوّلهم إلى عملاء دائمين، لكنها تحتاج تمويلاً مقدماً.</p>
 <p><strong>من يستخدم هذا النموذج:</strong> منصات السوق الأولى مثل Fresha (للحجوزات من مصادر السوق).</p>
-<p><strong>الأفضل لـ:</strong> صالونات جديدة تمامًا ليس بها أي عملاء يحتاجون إلى التعرض للسوق وعلى استعداد للدفع مقابل اكتساب العملاء. غير مناسب على المدى الطويل للشركات القائمة.</p>
+<p><strong>الأفضل لـ:</strong> الصالونات التي تريد ظهوراً عبر السوق ولا تمانع الدفع مقابل كل عميل جديد يجلبه. ويستحق الأمر مقارنته بتركيبة عملائك، فإن كان معظم حجوزاتك من عملاء عائدين فغالباً ما تكون المنصة بلا عمولة أقل تكلفة.</p>
 
 <h2>تشريح رسوم المعالجة</h2>
 <p>عندما تدفع 2.6% + 0.10 درهم لكل معاملة، أين تذهب هذه الأموال؟</p>

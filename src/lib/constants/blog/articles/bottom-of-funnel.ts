@@ -44,7 +44,7 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Why switching salon software feels harder than it is</h2>
 <p>Switching carries less risk than most owners assume. Staying put carries more, if the platform is capping your growth, raising its fees, or missing what the business needs in 2026. Between migration tools, cloud architecture, and proper onboarding support, a planned switch takes 30 days with no downtime and no lost bookings.</p>
-<p>What follows is a day-by-day plan: what to do, when, and what to watch. Leaving Fresha, Vagaro, Booksy, or an older system makes no difference to the structure.</p>
+<p>What follows is a day-by-day plan: what to do, when, and what to watch. Leaving any incumbent platform - Fresha, Vagaro, Booksy or an on-premise system - makes no difference to the structure.</p>
 <p>For a migration guide covering the edge cases, see our <a href="/en/resources/blog/business/complete-salon-software-switching-guide">complete salon software switching guide</a>.</p>
 
 <h2>Week 1 (days 1-7): assessment and setup</h2>

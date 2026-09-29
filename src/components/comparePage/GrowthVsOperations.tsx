@@ -12,18 +12,29 @@ const DAISY_GROWTH_SCORE = 9;
 
 export const GrowthVsOperations: FC<GrowthVsOperationsProps> = ({
   competitorName,
-  competitorGrowthScore = 3,
+  competitorGrowthScore,
   heading,
 }) => {
+  // No silent default: an absent score used to render as 3/10, assigning an
+  // unflattering number to a competitor we had no data for.
+  if (competitorGrowthScore === undefined) return null;
   return (
     <section className="py-16 px-4 bg-[#F8F5F3]">
       <div className="mx-auto max-w-4xl">
         <h2 className="mb-2 text-center text-3xl font-bold text-[#172524]">
           {heading || `Is ${competitorName} an Operations Tool or a Growth Partner?`}
         </h2>
-        <p className="mb-10 text-center text-[#586968]">
+        <p className="mb-2 text-center text-[#586968]">
           There is a fundamental difference in what each platform is designed to
           do
+        </p>
+        {/*
+          Same reasoning as FeatureComparisonTable: this is a 0-10 scale Daisy
+          assigns, not an independent benchmark, and publishing it unlabelled
+          reads as a neutral instrument scoring a named competitor.
+        */}
+        <p className="mb-10 text-center text-sm font-medium text-primary">
+          Daisy&rsquo;s own assessment, not an independent benchmark
         </p>
 
         {/* Visual Scale */}
