@@ -611,7 +611,7 @@ export const beautyBookingSystem: PillarPageData = {
       relatedLinks: [
         {
           title: 'Daisy Pricing Plans',
-          url: '/en/pricing',
+          url: '/en/pricing/business',
         },
         {
           title: 'Daisy vs Fresha',

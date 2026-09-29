@@ -36,7 +36,7 @@ const allInOneAngle: Record<'business' | 'professional', I18nContent<LandingPage
         { title: 'Our team helps you get set up', description: 'We migrate your data, configure your AI receptionist, and test everything with you.' },
         { title: 'Go live. Your AI receptionist takes over.', description: 'Customers get instant responses. You get control.' },
       ] },
-      pricingHook: { headline: 'Free to Start. Grow at Your Own Pace.', body: "14-day free trial with full access to every feature. No credit card required. After that, flexible plans starting from $50/month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.", ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app', pricingLinkText: 'See full pricing details \u2192', pricingLinkHref: '/pricing' },
+      pricingHook: { headline: 'Free to Start. Grow at Your Own Pace.', body: "14-day free trial with full access to every feature. No credit card required. After that, plans start at $1/month, with +$50/month once you pass 5 appointments in a month. Your AI receptionist doesn't just handle messages. It learns your customers' preferences over time, personalizing every interaction and turning first-time visitors into loyal regulars. Commission only on new customers the Daisy marketplace brings you, your existing clients, zero commission.", ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app', pricingLinkText: 'See full pricing details \u2192', pricingLinkHref: '/pricing' },
       platformStrengths: { headline: 'Everything You Need to Run Your Business', subHeadline: 'Stop paying for 8 separate tools. Daisy combines everything you need to run and grow your beauty business.', capabilities: [
         { label: 'AI Receptionist', description: '24/7 WhatsApp and Instagram messaging, booking, and payments' },
         { label: 'Smart Booking', description: 'Intelligent scheduling that fills your calendar' },
@@ -45,8 +45,8 @@ const allInOneAngle: Record<'business' | 'professional', I18nContent<LandingPage
         { label: 'Staff Management', description: 'Scheduling, permissions, and performance' },
         { label: 'Marketing Engine', description: 'Promotions, campaigns, and customer retention' },
         { label: 'Analytics Dashboard', description: 'Revenue trends, insights, and reporting' },
-        { label: 'Brand Control', description: 'White-label everything with your brand' },
-      ], stats: [{ value: '8', context: 'tools replaced' }, { value: '24/7', context: 'AI receptionist' }, { value: '10+', context: 'languages supported' }] },
+        { label: 'Brand Control', description: 'Branded booking page with your logo and colours' },
+      ], stats: [{ value: '8', context: 'tools replaced' }, { value: '24/7', context: 'AI receptionist' }, { value: '2', context: 'languages: Arabic and English' }] },
       inlineCtas: {
         afterScroll: { headline: 'Ready to replace your entire tool stack?', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'Start Your 14-Day Free Trial', ctaText: 'Start Your 14-Day Free Trial', ctaLink: '/get-the-app', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/business' },
@@ -54,7 +54,7 @@ const allInOneAngle: Record<'business' | 'professional', I18nContent<LandingPage
       titleFraque: 'Frequently Asked Questions',
       fallbackFaqs: [
         { question: 'What tools does Daisy replace?', answer: 'Your booking software, messaging tools, payment processor, marketing platform, staff scheduling app, analytics, brand and website management, and acquisition channels. All 8 categories, one platform.' },
-        { question: 'How much does it cost compared to separate tools?', answer: 'Daisy starts at $50/month after a 14-day free trial. Most businesses are spending $200-500/month across separate tools for booking, marketing, payments and messaging. This replaces all of them for a fraction of it.' },
+        { question: 'How much does it cost compared to separate tools?', answer: 'Daisy starts at $1/month after a 14-day free trial, plus $50 once you pass 5 appointments in a month. Most businesses are spending $200-500/month across separate tools for booking, marketing, payments and messaging. This replaces all of them for a fraction of it.' },
         { question: 'Can I migrate my data from current tools?', answer: 'Yes. The onboarding team moves your client data, booking history and preferences across from your current tools at no extra cost, and stays with you through it.' },
         { question: 'Is there a free trial?', answer: 'Yes, a 14-day free trial with every feature open and no credit card. We help you set up and migrate your data during it.' },
       ],
@@ -84,7 +84,7 @@ const allInOneAngle: Record<'business' | 'professional', I18nContent<LandingPage
         { title: 'فريقنا يساعدك في الإعداد', description: 'ننقل بياناتك ونُعدّ موظف الاستقبال الذكي ونختبر كل شيء معك.' },
         { title: 'ابدأ العمل. موظف الاستقبال الذكي يتولى المهمة.', description: 'العملاء يحصلون على ردود فورية. أنت تحصل على التحكم.' },
       ] },
-      pricingHook: { headline: 'ابدأ مجانًا. انمُ بالسرعة التي تناسبك.', body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولار/شهريًا. موظف الاستقبال الذكي لا يتولى الرسائل فحسب. بل يتعلم تفضيلات عملائك بمرور الوقت، ويُخصّص كل تفاعل ويحوّل الزوار الجدد إلى عملاء أوفياء. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، عملاؤك الحاليون، بدون أي عمولة.', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app', pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190', pricingLinkHref: '/pricing' },
+      pricingHook: { headline: 'ابدأ مجانًا. انمُ بالسرعة التي تناسبك.', body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، تبدأ الباقات من دولار واحد شهرياً، مع +50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر. موظف الاستقبال الذكي لا يتولى الرسائل فحسب. بل يتعلم تفضيلات عملائك بمرور الوقت، ويُخصّص كل تفاعل ويحوّل الزوار الجدد إلى عملاء أوفياء. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، عملاؤك الحاليون، بدون أي عمولة.', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app', pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190', pricingLinkHref: '/pricing' },
       platformStrengths: { headline: 'كل ما تحتاجه لإدارة عملك', subHeadline: 'توقف عن الدفع لـ 8 أدوات منفصلة. ديزي تجمع كل ما تحتاجه لإدارة وتنمية أعمالك في مجال التجميل.', capabilities: [
         { label: 'موظف استقبال ذكي', description: 'رسائل واتساب وإنستغرام وحجوزات ومدفوعات على مدار الساعة' },
         { label: 'حجز ذكي', description: 'جدولة ذكية تملأ تقويمك' },
@@ -94,7 +94,7 @@ const allInOneAngle: Record<'business' | 'professional', I18nContent<LandingPage
         { label: 'محرك التسويق', description: 'عروض وحملات والاحتفاظ بالعملاء' },
         { label: 'لوحة التحليلات', description: 'اتجاهات الإيرادات والرؤى والتقارير' },
         { label: 'التحكم بالعلامة التجارية', description: 'كل شيء بعلامتك التجارية الخاصة' },
-      ], stats: [{ value: '8', context: 'أدوات تم استبدالها' }, { value: '24/7', context: 'موظف استقبال ذكي' }, { value: '+10', context: 'لغة مدعومة' }] },
+      ], stats: [{ value: '8', context: 'أدوات تم استبدالها' }, { value: '24/7', context: 'موظف استقبال ذكي' }, { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' }] },
       inlineCtas: {
         afterScroll: { headline: 'مستعد لاستبدال كل أدواتك بمنصة واحدة؟', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا', ctaLink: '/get-the-app', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/business' },
@@ -102,7 +102,7 @@ const allInOneAngle: Record<'business' | 'professional', I18nContent<LandingPage
       titleFraque: 'أسئلة شائعة',
       fallbackFaqs: [
         { question: 'ما الأدوات التي تستبدلها ديزي؟', answer: 'ديزي تستبدل برنامج الحجز وأدوات المراسلة ومعالج الدفع ومنصة التسويق وتطبيق جدولة الموظفين وأدوات التحليلات وإدارة العلامة التجارية/الموقع وقنوات استقطاب العملاء. جميع الفئات الـ 8 في منصة واحدة.' },
-        { question: 'كم تكلف مقارنة بالأدوات المنفصلة؟', answer: 'ديزي تبدأ من 50 دولار/شهريًا بعد تجربة مجانية لمدة 14 يومًا. معظم الأعمال تنفق 200-500 دولار/شهريًا على أدوات منفصلة للحجز والتسويق والمدفوعات والمراسلة. ديزي تجمع كل هذا بجزء من التكلفة.' },
+        { question: 'كم تكلف مقارنة بالأدوات المنفصلة؟', answer: 'تبدأ ديزي من دولار واحد شهرياً بعد تجربة مجانية لمدة 14 يومًا، مع +50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر. معظم الأعمال تنفق 200-500 دولار/شهريًا على أدوات منفصلة للحجز والتسويق والمدفوعات والمراسلة. ديزي تجمع كل هذا بجزء من التكلفة.' },
         { question: 'هل يمكنني نقل بياناتي من الأدوات الحالية؟', answer: 'نعم. فريق الإعداد لدينا يساعدك في نقل بيانات العملاء وسجل الحجوزات والتفضيلات من أدواتك الحالية بدون تكلفة إضافية. الانتقال سلس ومدعوم.' },
         { question: 'هل هناك تجربة مجانية؟', answer: 'نعم. ابدأ بتجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. فريقنا يساعدك في الإعداد ونقل البيانات أثناء التجربة.' },
       ],
@@ -144,7 +144,7 @@ const allInOneAngle: Record<'business' | 'professional', I18nContent<LandingPage
         { label: 'Smart Notifications', description: 'Appointment reminders that reduce no-shows' },
         { label: 'Calendar Sync', description: 'Sync with Google Calendar and other tools' },
         { label: 'Marketplace Visibility', description: 'Customers find you when searching nearby' },
-      ], stats: [{ value: '1', context: 'app for everything' }, { value: '24/7', context: 'AI-powered booking' }, { value: '10+', context: 'languages supported' }] },
+      ], stats: [{ value: '1', context: 'app for everything' }, { value: '24/7', context: 'AI-powered booking' }, { value: '2', context: 'languages: Arabic and English' }] },
       inlineCtas: {
         afterScroll: { headline: 'Ready to simplify your professional life?', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'Start Your Free Trial', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app', secondaryLinkText: 'Explore all features \u2192', secondaryLinkHref: '/features/professional' },
@@ -192,7 +192,7 @@ const allInOneAngle: Record<'business' | 'professional', I18nContent<LandingPage
         { label: 'إشعارات ذكية', description: 'تذكيرات بالمواعيد تقلل حالات عدم الحضور' },
         { label: 'مزامنة التقويم', description: 'مزامنة مع تقويم جوجل وأدوات أخرى' },
         { label: 'ظهور في السوق', description: 'العملاء يجدونك عند البحث بالقرب منهم' },
-      ], stats: [{ value: '1', context: 'تطبيق لكل شيء' }, { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' }, { value: '+10', context: 'لغة مدعومة' }] },
+      ], stats: [{ value: '1', context: 'تطبيق لكل شيء' }, { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' }, { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' }] },
       inlineCtas: {
         afterScroll: { headline: 'مستعد لتبسيط حياتك المهنية؟', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app' },
         afterFeatures: { headline: 'ابدأ تجربتك المجانية', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app', secondaryLinkText: 'استكشف جميع الميزات \u2192', secondaryLinkHref: '/features/professional' },

@@ -99,7 +99,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
       },
       pricingHook: {
         headline: 'Free to Start. Grow at Your Own Pace.',
-        body: "A 14-day free trial with every feature open, no credit card. After that, flexible plans from $50/month. Your AI receptionist does more than answer messages: it learns what your customers like and turns first-time visitors into regulars. Commission applies only to new customers the Daisy marketplace sends you. On your existing clients, zero.",
+        body: "A 14-day free trial with every feature open, no credit card. After that, plans start at $1/month, plus $50 once you pass 5 appointments in a month. Your AI receptionist does more than answer messages: it learns what your customers like and turns first-time visitors into regulars. Commission applies only to new customers the Daisy marketplace sends you. On your existing clients, zero.",
         ctaText: 'Start Your 14-Day Free Trial',
         ctaLink: '/get-the-app',
         pricingLinkText: 'See full pricing details \u2192',
@@ -116,12 +116,12 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
           { label: 'Staff Management', description: 'Scheduling, permissions, and performance' },
           { label: 'Marketing Engine', description: 'Promotions, campaigns, and customer retention' },
           { label: 'Analytics Dashboard', description: 'Revenue trends, insights, and reporting' },
-          { label: 'Brand Control', description: 'White-label everything with your brand' },
+          { label: 'Brand Control', description: 'Branded booking page with your logo and colours' },
         ],
         stats: [
           { value: '0', context: 'scheduling conflicts' },
           { value: '24/7', context: 'AI receptionist' },
-          { value: '10+', context: 'languages supported' },
+          { value: '2', context: 'languages: Arabic and English' },
         ],
       },
       inlineCtas: {
@@ -182,7 +182,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
       },
       pricingHook: {
         headline: 'ابدأ مجانًا. انمُ بالسرعة التي تناسبك.',
-        body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، باقات مرنة تبدأ من 50 دولار/شهريًا. موظف الاستقبال الذكي لا يتولى الرسائل فحسب. بل يتعلم تفضيلات عملائك بمرور الوقت، ويُخصّص كل تفاعل ويحوّل الزوار الجدد إلى عملاء أوفياء. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، عملاؤك الحاليون، بدون أي عمولة.',
+        body: 'تجربة مجانية لمدة 14 يومًا مع وصول كامل لجميع الميزات. لا حاجة لبطاقة ائتمان. بعد ذلك، تبدأ الباقات من دولار واحد شهرياً، مع +50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر. موظف الاستقبال الذكي لا يتولى الرسائل فحسب. بل يتعلم تفضيلات عملائك بمرور الوقت، ويُخصّص كل تفاعل ويحوّل الزوار الجدد إلى عملاء أوفياء. عمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي، عملاؤك الحاليون، بدون أي عمولة.',
         ctaText: 'ابدأ تجربتك المجانية لمدة 14 يومًا',
         ctaLink: '/get-the-app',
         pricingLinkText: 'اطلع على تفاصيل الأسعار الكاملة \u2190',
@@ -204,7 +204,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         stats: [
           { value: '0', context: 'تعارضات في الجدولة' },
           { value: '24/7', context: 'موظف استقبال ذكي' },
-          { value: '+10', context: 'لغة مدعومة' },
+          { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
         ],
       },
       inlineCtas: {
@@ -289,7 +289,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         stats: [
           { value: '0%', context: 'scheduling admin' },
           { value: '24/7', context: 'AI-powered booking' },
-          { value: '10+', context: 'languages supported' },
+          { value: '2', context: 'languages: Arabic and English' },
         ],
       },
       inlineCtas: {
@@ -372,7 +372,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
         stats: [
           { value: '0%', context: 'إدارة جدولة' },
           { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' },
-          { value: '+10', context: 'لغة مدعومة' },
+          { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' },
         ],
       },
       inlineCtas: {

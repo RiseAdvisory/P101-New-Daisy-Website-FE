@@ -290,7 +290,7 @@ export const daisyData: {
   keyDifferentiators: [
     'AI receptionist (24/7 customer service, appointments, payments)',
     'Customer acquisition engine (marketplace + cashback + marketing)',
-    'Full brand control (white-label everything)',
+    'Branded booking page (your logo, name and colours)',
     'Network effects (AI improves with more data)',
     'All-in-one (8 categories replacing 5+ tools)',
     'Multilingual (Arabic/English with equal priority, more languages coming, GCC + global)',

@@ -49,7 +49,7 @@ export const faqPageData: I18nContent<FaqPageData> = {
         {
           title: 'Pricing & Plans',
           questions: [
-            { question: 'How much does it cost?', answer: 'Start with a 14-day free trial: full access, no credit card required. After that, flexible plans start from $50/month. You only pay commission on new customers who find you through the Daisy marketplace. Your existing clients, zero commission.' },
+            { question: 'How much does it cost?', answer: 'Start with a 14-day free trial: full access, no credit card required. After that, plans start at $1/month, with +$50/month once you pass 5 appointments in a month. You only pay commission on new customers who find you through the Daisy marketplace. Your existing clients, zero commission.' },
             { question: 'What is included in the subscription?', answer: 'Every plan includes online booking, AI receptionist, calendar management, client database, payment processing, team scheduling, and basic analytics. Higher tiers add advanced marketing tools, multi-location management, and priority support.' },
             { question: 'Are there any hidden fees?', answer: 'No. Your subscription fee and marketplace commission (on new clients only) are the only costs. Payment processing fees are standard industry rates and transparently displayed before you sign up.' },
             { question: 'Can I change my plan later?', answer: 'Yes. Upgrade or downgrade anytime from your account settings. Changes take effect at the start of your next billing cycle. No penalties for switching.' },
@@ -248,7 +248,7 @@ export const faqPageData: I18nContent<FaqPageData> = {
         {
           title: 'الأسعار والباقات',
           questions: [
-            { question: 'كم تكلفة الاشتراك؟', answer: 'ابدأ بفترة تجريبية مجانية لمدة 14 يوماً: وصول كامل، بدون بطاقة ائتمان. بعد ذلك، تبدأ الباقات المرنة من 50 دولار/شهرياً. تدفع عمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي. عملاؤك الحاليون، بدون عمولة.' },
+            { question: 'كم تكلفة الاشتراك؟', answer: 'ابدأ بفترة تجريبية مجانية لمدة 14 يوماً: وصول كامل، بدون بطاقة ائتمان. بعد ذلك، تبدأ الباقات من دولار واحد شهرياً، مع +50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر. تدفع عمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي. عملاؤك الحاليون، بدون عمولة.' },
             { question: 'ما المشمول في الاشتراك؟', answer: 'كل باقة تشمل الحجز عبر الإنترنت، وموظف الاستقبال الذكي، وإدارة التقويم، وقاعدة بيانات العملاء، ومعالجة المدفوعات، وجدولة الفريق، والتحليلات الأساسية. الباقات الأعلى تضيف أدوات تسويق متقدمة وإدارة مواقع متعددة ودعم أولوية.' },
             { question: 'هل هناك رسوم مخفية؟', answer: 'لا. رسوم اشتراكك وعمولة السوق (على العملاء الجدد فقط) هي التكاليف الوحيدة. رسوم معالجة المدفوعات هي الأسعار القياسية في الصناعة ويتم عرضها بشفافية قبل التسجيل.' },
             { question: 'هل يمكنني تغيير باقتي لاحقاً؟', answer: 'نعم. قم بالترقية أو التخفيض في أي وقت من إعدادات حسابك. التغييرات تسري في بداية دورة الفوترة التالية. لا عقوبات للتبديل.' },

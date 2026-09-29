@@ -694,7 +694,7 @@ export const alternativePages: AlternativePageData[] = [
       'The full AI ecosystem: receptionist, chatbot, smart scheduling and marketing',
       'Native Arabic and English, which opens the GCC',
       'Cashback rewards that keep customers returning without prompting',
-      'White-label everything, so it is your brand and your experience throughout',
+      'A branded booking page, so it is your brand and your experience throughout',
       'No contracts, and help with the migration',
     ],
     topAlternatives: ['fresha', 'vagaro', 'glossgenius', 'boulevard'],
@@ -1302,7 +1302,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'You want basic AI voice receptionist (Digital Doorman)',
       'You\'re an independent barber or beauty pro',
     ],
-    daisyPitch: 'Both Fresha and Booksy are operations tools with marketplace bolt-ons. Daisy is a growth platform with full AI ecosystem, Arabic support, cashback rewards, and white-labeling, capabilities neither competitor offers.',
+    daisyPitch: 'Both Fresha and Booksy are operations tools with marketplace bolt-ons. Daisy is a growth platform with full AI ecosystem, Arabic support, cashback rewards, and branded booking pages, capabilities neither competitor offers.',
   },
   {
     slugA: 'fresha',
@@ -1505,7 +1505,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'You want a free starting tier with no subscription',
       'You already use the Square ecosystem',
     ],
-    daisyPitch: 'Fresha offers marketplace reach; Square offers POS strength. Daisy combines both approaches with full AI receptionist, Arabic support, cashback-driven customer acquisition, and white-label branding.',
+    daisyPitch: 'Fresha offers marketplace reach; Square offers POS strength. Daisy combines both approaches with full AI receptionist, Arabic support, cashback-driven customer acquisition, and branded booking pages.',
   },
   {
     slugA: 'booksy',
@@ -1571,7 +1571,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'Square payment ecosystem is already in use',
       'Basic scheduling is all you need',
     ],
-    daisyPitch: 'Vagaro manages operations well; Square handles payments well. Daisy is a growth platform that does both and adds full AI receptionist, Arabic support, cashback-driven acquisition, and white-label branding.',
+    daisyPitch: 'Vagaro manages operations well; Square handles payments well. Daisy is a growth platform that does both and adds full AI receptionist, Arabic support, cashback-driven acquisition, and branded booking pages.',
   },
   {
     slugA: 'glossgenius',

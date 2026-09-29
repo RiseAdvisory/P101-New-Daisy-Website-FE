@@ -501,7 +501,7 @@ const whiteLabelBookingArticle: LocalBlogPost = {
       'White-label booking lets your salon present a fully branded booking experience without any third-party logos or links. Learn why brand ownership in the booking flow builds trust, increases conversions, and protects your client relationships.',
     aboutPosts: `
 <h2>What is white-label booking?</h2>
-<p>White-label booking runs entirely under your salon&rsquo;s brand: your logo, your colours, your domain, your wording, with the software provider nowhere in sight. From the first click to the confirmation message, the only brand a client meets is yours.</p>
+<p>Branded booking runs entirely under your salon&rsquo;s brand: your logo, your colours, your business name, your wording, with the software provider nowhere in sight. From the first click to the confirmation message, the only brand a client meets is yours.</p>
 <p>Most <a href="/en/glossary/salon-management-software">salon software</a> sends your clients to a booking page carrying the software company&rsquo;s logo and branding. Every booking puts another company&rsquo;s name in front of them instead of yours. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy work the other way round, so yours is the only brand anyone sees across booking, confirmations, reminders, and follow-ups.</p>
 
 <h2>Why your brand experience matters in the booking flow</h2>
@@ -518,7 +518,7 @@ const whiteLabelBookingArticle: LocalBlogPost = {
 <p>A booking page carrying another company&rsquo;s brand is building their awareness using your clients. Every confirmation reading &ldquo;Powered by [Software Name]&rdquo; teaches people to connect booking with that software rather than with you. Switch platforms later and the recognition leaves with the old vendor.</p>
 <p>White-label puts every touchpoint behind your name, so what people remember about booking is your salon and nothing else.</p>
 
-<h2>What does full white-label include?</h2>
+<h2>What does a branded booking page include?</h2>
 <p>Real white-label goes well past taking a logo off a page. The Daisy covers every client-facing part of your digital presence:</p>
 
 <h3>Branded booking page</h3>
@@ -550,12 +550,12 @@ const whiteLabelBookingArticle: LocalBlogPost = {
 <ol>
 <li><strong>Upload your brand assets:</strong> logo, colour palette, fonts.</li>
 <li><strong>Configure your booking page:</strong> pick the layout, add service images, write the welcome message.</li>
-<li><strong>Set up your domain:</strong> point your domain or subdomain at your Daisy booking page.</li>
+<li><strong>Share your booking link:</strong> use your short booking link (thedaisy.link/your-salon) across your bio, receipts and campaigns.</li>
 <li><strong>Customise communications:</strong> sender name, email address, and templates for confirmations, reminders, and marketing.</li>
 <li><strong>Configure AI personality:</strong> the tone, the languages, and how your AI receptionist opens a conversation.</li>
 <li><strong>Preview and publish:</strong> check every client-facing touchpoint before it goes live.</li>
 </ol>
-<p>See <a href="/en/pricing/business">pricing</a> for which plans carry full white-label.</p>
+<p>See <a href="/en/pricing/business">pricing</a> for which plans carry the branded booking page.</p>
 
 <h2>The revenue impact of branded booking experiences</h2>
 <p>This is a revenue question rather than a taste one, and it shows up in both takings and retention.</p>
@@ -570,7 +570,7 @@ const whiteLabelBookingArticle: LocalBlogPost = {
 <p>A polished branded experience reads as quality, and clients who move through one perceive more value in what you do, which is what supports your prices. A generic booking page says the opposite, that your salon cuts corners on details, which is the last impression a premium brand can afford.</p>
 
 <h3>Increased referral effectiveness</h3>
-<p>A shared booking link should be working for you. A white-label URL (book.yoursalon.com) puts your name into every referral conversation, while a generic third-party link (software-name.com/yoursalon) introduces the new client to somebody else&rsquo;s brand before yours. Every referral landing on your own page converts better for it.</p>
+<p>A shared booking link should be working for you. A short, memorable booking link puts your name into every referral conversation, while a cluttered third-party listing page introduces the new client to somebody else&rsquo;s brand before yours. Every referral landing on your own page converts better for it.</p>
 
 <h2>Common objections to white-label booking</h2>
 <p>Owners hesitate over this for a few recurring reasons, and each is worth answering:</p>
@@ -590,7 +590,7 @@ const whiteLabelBookingArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>Can I use my own domain for the booking page?</h3>
-<p>Yes, custom domains and subdomains both work, so clients see your URL such as book.yoursalon.com rather than someone else&rsquo;s address. It needs one straightforward DNS change, which the onboarding team walks you through.</p>
+<p>You share a short booking link such as thedaisy.link/your-salon. Custom domains are not supported yet. The page it opens carries your logo, your business name and your brand colours, with no Daisy branding on it. The onboarding team walks you through.</p>
 
 <h3>Does white-label apply to the mobile app experience too?</h3>
 <p>Yes. Booking through The Daisy app, your branding runs through the whole thing, with your logo, colours, and service imagery forming a storefront of your own inside the app.</p>
@@ -1783,9 +1783,9 @@ const whiteLabelBookingArticleAr: LocalBlogPost = {
 <h2>كيفية إعداد حجز البطاقة البيضاء على ديزي</h2>
 <p>يستغرق تكوين الحجز ذو العلامة البيضاء أقل من 30 دقيقة:</p>
 <ol>
-<li><strong>قم بتحميل أصول علامتك التجارية:</strong> الشعار ولوحة الألوان والخطوط المفضلة.</li>
+<li><strong>قم بتحميل أصول علامتك التجارية:</strong> الشعار ولوحة الألوان واسم النشاط.</li>
 <li><strong>قم بتكوين صفحة الحجز الخاصة بك:</strong> اختر التخطيط، وأضف صور الخدمة، واكتب رسالة الترحيب الخاصة بك.</li>
-<li><strong>إعداد نطاقك:</strong> قم بتوجيه نطاقك المخصص (أو النطاق الفرعي) إلى صفحة حجز ديزي الخاصة بك.</li>
+<li><strong>شارك رابط الحجز:</strong> استخدم رابط الحجز القصير (thedaisy.link/your-salon) في نبذتك وإيصالاتك وحملاتك.</li>
 <li><strong>تخصيص الاتصالات:</strong> تعيين اسم المرسل وعنوان البريد الإلكتروني وقوالب الرسائل للتأكيدات والتذكيرات والتسويق.</li>
 <li><strong>تكوين شخصية الذكاء الاصطناعي:</strong> حدد النغمة واللغة وأسلوب الترحيب لموظف الاستقبال الذي يعمل بتقنية الذكاء الاصطناعي.</li>
 <li><strong>المعاينة والنشر:</strong> قم بمراجعة كل نقطة اتصال تواجه العميل قبل بدء البث المباشر.</li>
@@ -1805,7 +1805,7 @@ const whiteLabelBookingArticleAr: LocalBlogPost = {
 <p> تشير التجربة الرقمية المصقولة والمتميزة بالكامل إلى الجودة والاحترافية. العملاء الذين يواجهون رحلة حجز سلسة ذات علامة تجارية يدركون قيمة أعلى في خدماتك، مما يدعم الأسعار المتميزة. على العكس من ذلك، تشير صفحة الحجز العامة إلى أن الصالون الخاص بك يختصر التفاصيل - وهو الانطباع المعاكس تمامًا الذي تريد علامة التجميل المتميزة خلقه.</p>
 
 <h3>زيادة فعالية الإحالة</h3>
-<p>عندما يشارك العملاء الحاليون رابط الحجز الخاص بك مع الأصدقاء، فمن المفترض أن يعزز هذا الرابط علامتك التجارية. يحمل عنوان URL للحجز ذو العلامة البيضاء (book.yoursalon.com) علامتك التجارية في كل محادثة إحالة. يعمل الرابط العام لجهة خارجية (software-name.com/yoursalon) على تخفيف تأثير الإحالة لأن العميل الجديد يواجه علامة تجارية غير مألوفة قبل أن يواجه علامتك التجارية. تمثل كل إحالة تؤدي إلى صفحتك التي تحمل علامتك التجارية فرصة تحويل أقوى.</p>
+<p>عندما يشارك العملاء الحاليون رابط الحجز الخاص بك مع الأصدقاء، فمن المفترض أن يعزز هذا الرابط علامتك التجارية. يحمل رابط الحجز القصير والسهل التذكر علامتك التجارية في كل محادثة إحالة، والصفحة التي يفتحها لا تُظهر سوى علامتك. يعمل الرابط العام لجهة خارجية (software-name.com/yoursalon) على تخفيف تأثير الإحالة لأن العميل الجديد يواجه علامة تجارية غير مألوفة قبل أن يواجه علامتك التجارية. تمثل كل إحالة تؤدي إلى صفحتك التي تحمل علامتك التجارية فرصة تحويل أقوى.</p>
 
 <h2>الاعتراضات الشائعة على حجز البطاقة البيضاء</h2>
 <p> يتردد بعض أصحاب الصالونات في إعطاء الأولوية للعلامة التجارية ذات العلامة البيضاء. فيما يلي الاعتراضات الأكثر شيوعًا والواقع وراءها.</p>
@@ -1824,8 +1824,8 @@ const whiteLabelBookingArticleAr: LocalBlogPost = {
 
 <h2>الأسئلة الشائعة</h2>
 
-<h3>هل يمكنني استخدام النطاق الخاص بي لصفحة الحجز؟</h3>
-<p>نعم. يدعم ديزي النطاقات المخصصة والنطاقات الفرعية لصفحة الحجز الخاصة بك. سيرى العملاء عنوان URL الخاص بك (على سبيل المثال، book.yoursalon.com) بدلاً من عنوان جهة خارجية. يتطلب الإعداد تكوينًا بسيطًا لنظام أسماء النطاقات (DNS) يرشدك إليه فريق الإعداد.</p>
+<h3>كيف سيبدو رابط الحجز الخاص بي؟</h3>
+<p>تحصل على رابط حجز قصير تشاركه، مثل thedaisy.link/your-salon. النطاقات المخصصة غير مدعومة حالياً. والصفحة التي يفتحها الرابط تحمل شعارك واسم نشاطك وألوان علامتك، دون أي علامة لديزي عليها.</p>
 
 <h3>هل تنطبق العلامة البيضاء على تجربة تطبيق الهاتف المحمول أيضًا؟</h3>
 <p>نعم. عندما يقوم العملاء بالحجز من خلال تطبيق ديزي، فإن العلامة التجارية لصالونك تكون بارزة طوال تجربتهم. يعمل شعارك وألوانك وصور الخدمة على إنشاء واجهة متجر ذات علامة تجارية ضمن النظام البيئي للتطبيق.</p>

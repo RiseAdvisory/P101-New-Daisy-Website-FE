@@ -111,7 +111,7 @@ function DaisyVsPage({
         products={[
           {
             name: 'Daisy',
-            description: 'AI-powered beauty and wellness platform with cashback, AI receptionist, and white-label branding',
+            description: 'AI-powered beauty and wellness platform with cashback, AI receptionist, and branded booking pages',
             url: 'https://www.jointhedaisy.com',
             startingPrice: daisyData.pricing.startingPrice,
             features: ['AI Receptionist', 'Cashback Loyalty', 'White-Label', 'Arabic + English', 'No Transaction Fees'],

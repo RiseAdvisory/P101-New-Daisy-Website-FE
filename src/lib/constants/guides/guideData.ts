@@ -218,7 +218,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What is the best salon software in 2026?',
           answer:
-            'The best salon software depends on your needs. For growth-focused businesses wanting AI, cashback, and white-label branding, Daisy leads. For budget-conscious single-chair operators, simpler tools may suffice. Always evaluate total cost including hidden fees.',
+            'The best salon software depends on your needs. For growth-focused businesses wanting AI, cashback, and branded booking pages, Daisy leads. For budget-conscious single-chair operators, simpler tools may suffice. Always evaluate total cost including hidden fees.',
         },
         {
           question: 'What hidden fees should I watch for in salon software?',
@@ -296,7 +296,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'Daisy makes switching from Fresha seamless. Free data migration (Business plan) imports all your client records and history. You get features Fresha never offered: AI receptionist, cashback loyalty, white-label branding, and Arabic support. Plus transparent flat pricing with no marketplace commissions.',
+        'Daisy makes switching from Fresha seamless. Free data migration (Business plan) imports all your client records and history. You get features Fresha never offered: AI receptionist, cashback loyalty, branded booking pages, and Arabic support. Plus transparent flat pricing with no marketplace commissions.',
       faqs: [
         {
           question: 'Can I export my data from Fresha?',
@@ -306,7 +306,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What is the best Fresha alternative in 2026?',
           answer:
-            'For a salon that wants AI, cashback loyalty and pricing it can read, Daisy is the strongest option. Where Fresha\'s fee structure keeps moving, Daisy is flat from $50/month with no commissions.',
+            'For a salon that wants AI, cashback loyalty and pricing it can read, Daisy is the strongest option. Where Fresha\'s fee structure keeps moving, Daisy starts at $1/month, plus $50 once you pass 5 appointments in a month, with no commissions.',
         },
         {
           question: 'Will I lose my clients if I switch from Fresha?',
@@ -326,7 +326,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What features does Daisy have that Fresha doesn\'t?',
           answer:
-            'Several: an AI voice receptionist, cashback acquisition, full white-label branding, native Arabic, and flat published pricing with no transaction fees or marketplace commissions.',
+            'Several: an AI voice receptionist, cashback acquisition, a branded booking page, native Arabic, and flat published pricing with no transaction fees or marketplace commissions.',
         },
       ],
       metaTitle: 'How to Switch from Fresha | Migration Guide 2026',
@@ -345,7 +345,7 @@ export const guideData: I18nContent<GuideData[]> = {
       steps: [
         {
           name: 'Choose salon booking software',
-          text: 'Pick <a href="/en/glossary/salon-booking-software">salon booking software</a> that covers online booking, the calendar and automated reminders. Daisy does AI-powered booking with no transaction fees from $50/month.',
+          text: 'Pick <a href="/en/glossary/salon-booking-software">salon booking software</a> that covers online booking, the calendar and automated reminders. Daisy does AI-powered booking with no transaction fees, from $1/month, plus $50 once you pass 5 appointments in a month.',
         },
         {
           name: 'Configure your services and pricing',
@@ -384,7 +384,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'How much does online booking software cost for salons?',
           answer:
-            'Most salon management platforms include it. Daisy starts at $50/month with nothing added per booking, where some platforms charge $1-3 a booking, which mounts up quickly.',
+            'Most salon management platforms include it. Daisy starts at $1/month, plus $50 once you pass 5 appointments in a month, with nothing added per booking, where some platforms charge $1-3 a booking, which mounts up quickly.',
         },
         {
           question: 'Can clients book through Instagram or Google?',
@@ -693,7 +693,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'ما أفضل بديل لـ Fresha في 2026؟',
           answer:
-            'ديزي هي البديل الأفضل لـ Fresha للصالونات التي تريد ميزات الذكاء الاصطناعي وولاء الكاشباك وتسعيراً شفافاً. على عكس هيكل رسوم Fresha المتغير، تقدم ديزي تسعيراً ثابتاً يبدأ من 50 دولاراً شهرياً بدون عمولات.',
+            'ديزي هي البديل الأفضل لـ Fresha للصالونات التي تريد ميزات الذكاء الاصطناعي وولاء الكاشباك وتسعيراً شفافاً. على عكس هيكل رسوم Fresha المتغير، تبدأ ديزي من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر) بدون عمولات.',
         },
         {
           question: 'هل سأخسر عملائي إذا انتقلت من Fresha؟',
@@ -732,7 +732,7 @@ export const guideData: I18nContent<GuideData[]> = {
       steps: [
         {
           name: 'اختيار برنامج حجز الصالون',
-          text: 'اختر <a href="/ar/glossary/salon-booking-software">برنامج حجز صالون</a> يتضمن الحجز عبر الإنترنت وإدارة التقويم والتذكيرات التلقائية. تقدم ديزي حجزاً مدعوماً بالذكاء الاصطناعي بدون رسوم معاملات يبدأ من 50 دولاراً شهرياً.',
+          text: 'اختر <a href="/ar/glossary/salon-booking-software">برنامج حجز صالون</a> يتضمن الحجز عبر الإنترنت وإدارة التقويم والتذكيرات التلقائية. تقدم ديزي حجزاً مدعوماً بالذكاء الاصطناعي بدون رسوم معاملات، يبدأ من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
         {
           name: 'ضبط خدماتك وأسعارك',
@@ -771,7 +771,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'كم تكلفة برنامج الحجز عبر الإنترنت للصالونات؟',
           answer:
-            'الحجز عبر الإنترنت مشمول في معظم منصات إدارة الصالونات. تبدأ ديزي من 50 دولاراً شهرياً بدون رسوم حجز إضافية. بعض المنصات تفرض رسوماً لكل حجز بقيمة 1-3 دولارات، وهي تتراكم بسرعة.',
+            'الحجز عبر الإنترنت مشمول في معظم منصات إدارة الصالونات. تبدأ ديزي من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر) بدون رسوم حجز إضافية. بعض المنصات تفرض رسوماً لكل حجز بقيمة 1-3 دولارات، وهي تتراكم بسرعة.',
         },
         {
           question: 'هل يمكن للعملاء الحجز عبر إنستغرام أو Google؟',

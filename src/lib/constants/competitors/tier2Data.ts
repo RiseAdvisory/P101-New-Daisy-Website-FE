@@ -146,7 +146,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       'Limited to KSA market primarily',
       'Small team and limited funding ($2.37M)',
       'Basic reporting only',
-      'No white-labeling or brand control',
+      'No branding control on customer-facing pages',
       'Limited scalability beyond GCC',
     ],
 
@@ -194,7 +194,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Can I keep my own brand identity on Glamera or is everything Glamera-branded?',
         answer:
-          'Glamera is marketplace-first, so your business appears under the Glamera brand. There is no white-labeling and no custom branding. Daisy gives you full white-label control, so your brand carries across booking pages, apps and every message to a customer.',
+          'Glamera is marketplace-first, so your business appears under the Glamera brand. There is no white-labeling and no custom branding. Daisy gives you a branded booking page, so your brand carries across booking pages, apps and every message to a customer.',
       },
     ],
 
@@ -319,7 +319,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     daisyAdvantages: [
       'Established GCC presence across all 6 countries vs UAE-only expansion',
       'Consumer marketplace with cashback vs no marketplace',
-      'Full white-label brand control vs standard branding',
+      'Branded booking page with no Daisy branding vs standard branding',
       'More comprehensive feature depth across all categories',
       'Stronger GCC compliance and local payment integrations',
       'AI that handles payments and full booking flow vs routing-focused AI',
@@ -329,7 +329,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     daisySwitchingReasons: [
       'Need broader GCC coverage beyond just UAE',
       'Want consumer-facing marketplace and cashback for acquisition',
-      'Need white-labeling for brand consistency',
+      'Need a branded booking page for brand consistency',
       'Want deeper feature set (POS, inventory, advanced reporting)',
       'Need AI that handles full booking and payment flow',
     ],
@@ -348,7 +348,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       'No consumer marketplace or cashback program',
       'Limited to UAE in GCC, not yet in KSA, Kuwait, etc.',
       'Basic inventory management',
-      'No white-labeling option',
+      'No branding control option',
       'Lower review count and brand awareness',
       'AI features locked behind higher tier',
     ],
@@ -1349,7 +1349,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       'No Arabic or multi-language GCC support',
       'Basic business management features',
       'No cashback or loyalty programs',
-      'No white-labeling',
+      'No branding control',
       'Limited marketing tools',
     ],
 

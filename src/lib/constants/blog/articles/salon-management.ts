@@ -75,7 +75,7 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
 <li><strong>Marketing tools:</strong> email and SMS campaigns, loyalty, and cashback built in, so repeat visits do not need a second platform.</li>
 <li><strong>Inventory management:</strong> stock levels tracked, reorder alerts automatic, and product sales tied to the visit they happened on.</li>
 <li><strong>Marketplace listing:</strong> a consumer-facing marketplace inside the platform is another acquisition channel you are not paying extra for.</li>
-<li><strong>White-label branding:</strong> your logo, your colours, your domain on the booking page, so clients see you rather than your supplier.</li>
+<li><strong>Branded booking page:</strong> your logo, your name and your colours on the booking page, so clients see you rather than your supplier.</li>
 </ul>
 
 <h2>Step 3: evaluate the client experience</h2>

@@ -465,7 +465,7 @@ export const aiSalonSoftware: PillarPageData = {
         },
         {
           title: 'Daisy Pricing Plans',
-          url: '/en/pricing',
+          url: '/en/pricing/business',
         },
       ],
     },

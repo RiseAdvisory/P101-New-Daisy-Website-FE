@@ -35,12 +35,12 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'AI Features', daisy: 'Voice receptionist + chatbot', typical: 'None or basic' },
       ],
       howDaisyImplements:
-        'Daisy brings the salon management functions into one AI-powered platform, with a 24/7 voice receptionist, cashback customer acquisition and white-label branding. Pricing is flat from $50/month with no per-staff fees, and the platform is built for growth rather than operations alone.',
+        'Daisy brings the salon management functions into one AI-powered platform, with a 24/7 voice receptionist, cashback customer acquisition and white-label branding. Pricing starts at $1/month, plus $50 once you pass 5 appointments in a month, with no per-staff fees, and the platform is built for growth rather than operations alone.',
       faqs: [
         {
           question: 'What is the best salon management software in 2026?',
           answer:
-            'The strongest options in 2026 combine AI, customer acquisition tools and full business management. Daisy offers an AI receptionist, a cashback loyalty system and white-label branding, on flat monthly pricing from $50/month.',
+            'The strongest options in 2026 combine AI, customer acquisition tools and full business management. Daisy offers an AI receptionist, a cashback loyalty system and white-label branding, from $1/month, plus $50 once you pass 5 appointments in a month.',
         },
         {
           question: 'How much does salon management software typically cost?',
@@ -111,7 +111,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'How much does an AI receptionist for a salon cost?',
           answer:
-            'Standalone AI receptionist services for salons typically cost $200-500/month. Daisy includes an AI receptionist in all plans starting at $50/month, bundled with full salon management software.',
+            'Standalone AI receptionist services for salons typically cost $200-500/month. Daisy includes an AI receptionist in all plans starting at $1/month (+$50 once you pass 5 appointments in a month), bundled with full salon management software.',
         },
         {
           question: 'Can an AI receptionist really replace a human receptionist?',
@@ -207,7 +207,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'Which salon software offers cashback for customers?',
           answer:
-            'Few salon platforms build cashback in. RepeatMD offers something comparable for med spas at $700/month; Daisy includes it in every plan from $50/month.',
+            'Few salon platforms build cashback in. RepeatMD offers something comparable for med spas at $700/month; Daisy includes it in every plan from $1/month, plus $50 once you pass 5 appointments in a month.',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'ai-receptionist-for-salons'],
@@ -228,7 +228,6 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'Customer Communications', daisy: 'Your brand', typical: 'Software brand' },
         { label: 'Mobile App', daisy: 'Your logo & colors', typical: 'Not available' },
         { label: 'Receipts & Invoices', daisy: 'Custom branded', typical: 'Generic template' },
-        { label: 'Domain', daisy: 'Your domain', typical: 'Provider subdomain' },
         { label: 'Cost', daisy: 'Included in plan', typical: 'Premium add-on ($100+/mo)' },
       ],
       howDaisyImplements:
@@ -240,7 +239,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
             'A platform you rebrand as your own. Your logo, colours and brand appear on the booking page, the app and every message, and the software provider\'s branding never surfaces.',
         },
         {
-          question: 'Why does white-label branding matter for salons?',
+          question: 'Why does a branded booking page matter for salons?',
           answer:
             'Consistent branding reads as trustworthy and professional. A booking page carrying your brand rather than Fresha\'s or Booksy\'s strengthens your identity and raises what customers think the service is worth.',
         },
@@ -252,10 +251,10 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'How much does white-label salon software cost?',
           answer:
-            'Bought separately, white-label runs $200-500/month on top of the software itself. Daisy includes it in every plan from $50/month.',
+            'Bought separately, white-label runs $200-500/month on top of the software itself. Daisy includes it in every plan from $1/month, plus $50 once you pass 5 appointments in a month.',
         },
         {
-          question: 'Can I use my own domain with salon booking software?',
+          question: 'What will my booking link look like with salon booking software?',
           answer:
             'With Daisy, yes. Your booking page sits on your own domain. Many competitors put you on a subdomain of theirs, such as yoursalon.booksy.com, which weakens your brand.',
         },
@@ -383,7 +382,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'How much does a salon management system cost?',
           answer:
-            'The software platform runs $50-500/month, with a further $0-2,000 for hardware where it is needed. Daisy removes the hardware cost entirely, since the system runs on devices you already own, from $50/month.',
+            'The software platform runs $50-500/month, with a further $0-2,000 for hardware where it is needed. Daisy removes the hardware cost entirely, since the system runs on devices you already own, from $1/month, plus $50 once you pass 5 appointments in a month.',
         },
         {
           question: 'Can a small salon benefit from a management system?',
@@ -403,7 +402,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'What is the best salon management system in 2026?',
           answer:
-            'The strongest option in 2026 combines full software with AI and asks for no additional hardware. Daisy offers an AI receptionist, cashback customer acquisition, white-label branding and a cloud platform needing no hardware, from $50/month.',
+            'The strongest option in 2026 combines full software with AI and asks for no additional hardware. Daisy offers an AI receptionist, cashback customer acquisition, white-label branding and a cloud platform needing no hardware, from $1/month, plus $50 once you pass 5 appointments in a month.',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'salon-employee-management-software'],
@@ -563,17 +562,17 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'ميزات الذكاء الاصطناعي', daisy: 'موظف استقبال ذكي + دردشة آلية', typical: 'لا يوجد أو أساسي' },
       ],
       howDaisyImplements:
-        'تجمع ديزي جميع وظائف إدارة الصالون في منصة واحدة مدعومة بالذكاء الاصطناعي مع موظف استقبال ذكي يعمل على مدار الساعة، ونظام كاشباك لاكتساب العملاء، وعلامة تجارية مخصّصة. بأسعار تبدأ من 50 دولارًا شهريًا وبتسعير ثابت ومن دون رسوم لكل موظف، صُممت ديزي للنمو، لا لإدارة العمليات فقط.',
+        'تجمع ديزي جميع وظائف إدارة الصالون في منصة واحدة مدعومة بالذكاء الاصطناعي مع موظف استقبال ذكي يعمل على مدار الساعة، ونظام كاشباك لاكتساب العملاء، وعلامة تجارية مخصّصة. بأسعار تبدأ من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر) ومن دون رسوم لكل موظف، صُممت ديزي للنمو، لا لإدارة العمليات فقط.',
       faqs: [
         {
           question: 'ما هو أفضل برنامج لإدارة الصالونات في 2026؟',
           answer:
-            'أفضل برنامج لإدارة الصالونات في 2026 يجمع بين قدرات الذكاء الاصطناعي وأدوات اكتساب العملاء وإدارة الأعمال الشاملة. تتصدر ديزي بموظف الاستقبال الذكي ونظام ولاء الكاشباك والعلامة التجارية المخصّصة، وكل ذلك بتسعير شهري ثابت يبدأ من 50 دولارًا شهريًا.',
+            'أفضل برنامج لإدارة الصالونات في 2026 يجمع بين قدرات الذكاء الاصطناعي وأدوات اكتساب العملاء وإدارة الأعمال الشاملة. تتصدر ديزي بموظف الاستقبال الذكي ونظام ولاء الكاشباك والعلامة التجارية المخصّصة، وكل ذلك بأسعار تبدأ من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
         {
           question: 'كم تكلفة برنامج إدارة الصالونات عادةً؟',
           answer:
-            'تتراوح تكلفة برامج إدارة الصالونات من مجاني (مع قيود وعمولات) إلى أكثر من 300 دولار شهرياً للحلول المتميزة. تقدم ديزي ثلاث خطط: الأساسية (50 دولاراً/شهرياً)، والنمو (150 دولاراً/شهرياً)، والأعمال (250 دولاراً/شهرياً) بتسعير ثابت شفاف وبدون رسوم لكل موظف.',
+            'تتراوح تكلفة برامج إدارة الصالونات من مجاني (مع قيود وعمولات) إلى أكثر من 300 دولار شهرياً للحلول المتميزة. تقدم ديزي ثلاث خطط: الأساسية (من دولار واحد شهرياً، +50 دولاراً بعد تجاوز 5 مواعيد في الشهر)، والنمو (150 دولاراً/شهرياً)، والأعمال (250 دولاراً/شهرياً) بتسعير ثابت شفاف وبدون رسوم لكل موظف.',
         },
         {
           question: 'هل أحتاج برنامج إدارة صالونات لصالون صغير؟',
@@ -639,7 +638,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'كم تكلفة موظف الاستقبال الذكي للصالون؟',
           answer:
-            'تتكلف خدمات موظف الاستقبال الذكي المستقلة للصالونات عادةً 200-500 دولار شهرياً. تتضمن ديزي موظف استقبال ذكي في جميع الخطط بدءاً من 50 دولاراً شهرياً، مُدمجاً مع برنامج إدارة الصالون الكامل.',
+            'تتكلف خدمات موظف الاستقبال الذكي المستقلة للصالونات عادةً 200-500 دولار شهرياً. تتضمن ديزي موظف استقبال ذكي في جميع الخطط بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر)، مُدمجاً مع برنامج إدارة الصالون الكامل.',
         },
         {
           question: 'هل يمكن لموظف الاستقبال الذكي أن يحل محل موظف الاستقبال البشري فعلاً؟',
@@ -735,7 +734,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'أي برنامج صالونات يقدم كاشباك للعملاء؟',
           answer:
-            'ديزي هي واحدة من المنصات القليلة للصالونات التي تتضمن نظام كاشباك مدمج. تقدم RepeatMD مفهوماً مشابهاً لمراكز التجميل الطبية بسعر 700 دولار شهرياً، بينما تتضمنه ديزي في جميع الخطط بدءاً من 50 دولاراً شهرياً.',
+            'ديزي هي واحدة من المنصات القليلة للصالونات التي تتضمن نظام كاشباك مدمج. تقدم RepeatMD مفهوماً مشابهاً لمراكز التجميل الطبية بسعر 700 دولار شهرياً، بينما تتضمنه ديزي في جميع الخطط بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'ai-receptionist-for-salons'],
@@ -756,11 +755,10 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'اتصالات العملاء', daisy: 'علامتك التجارية', typical: 'علامة البرنامج' },
         { label: 'تطبيق الهاتف', daisy: 'شعارك وألوانك', typical: 'غير متوفر' },
         { label: 'الإيصالات والفواتير', daisy: 'بعلامتك التجارية', typical: 'قالب عام' },
-        { label: 'النطاق', daisy: 'نطاقك الخاص', typical: 'نطاق فرعي للمزود' },
         { label: 'التكلفة', daisy: 'مُضمّنة في الخطة', typical: 'إضافة مميزة (100+ دولار/شهرياً)' },
       ],
       howDaisyImplements:
-        'تتضمن ديزي قدرات العلامة التجارية البيضاء الكاملة في جميع الخطط بدون تكلفة إضافية. خصّص صفحة الحجز وتطبيق العملاء وقوالب البريد الإلكتروني والإيصالات وجميع اتصالات العملاء بشعارك وألوانك وهويتك التجارية. يتفاعل عملاؤك مع علامتك التجارية وليس مع علامة ديزي.',
+        'تتضمن ديزي صفحة حجز بعلامتك التجارية في جميع الخطط بدون تكلفة إضافية. خصّص صفحة الحجز وتطبيق العملاء وقوالب البريد الإلكتروني والإيصالات وجميع اتصالات العملاء بشعارك وألوانك وهويتك التجارية. يتفاعل عملاؤك مع علامتك التجارية وليس مع علامة ديزي.',
       faqs: [
         {
           question: 'ما هو برنامج الصالون ذو العلامة التجارية البيضاء؟',
@@ -780,12 +778,12 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'كم تكلفة برنامج صالون بعلامة تجارية بيضاء؟',
           answer:
-            'يمكن أن تتكلف حلول العلامة التجارية البيضاء المستقلة 200-500 دولار شهرياً بالإضافة إلى رسوم البرنامج العادية. تتضمن ديزي قدرات العلامة التجارية البيضاء الكاملة في جميع الخطط بدءاً من 50 دولاراً شهرياً.',
+            'يمكن أن تتكلف حلول صفحات الحجز المستقلة بعلامتك 200-500 دولار شهرياً بالإضافة إلى رسوم البرنامج العادية. تتضمن ديزي صفحة حجز بعلامتك التجارية في جميع الخطط بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
         {
           question: 'هل يمكنني استخدام نطاقي الخاص مع برنامج حجز الصالون؟',
           answer:
-            'مع ديزي، نعم، يمكنك استخدام نطاقك الخاص لصفحة الحجز. يجبرك العديد من المنافسين على استخدام نطاقهم الفرعي (مثل yoursalon.booksy.com)، مما يُضعف علامتك التجارية.',
+            'مع ديزي تحصل على رابط حجز قصير تشاركه، مثل thedaisy.link/your-salon. النطاقات المخصصة غير مدعومة حالياً. والصفحة التي يفتحها تحمل شعارك واسم نشاطك وألوان علامتك، دون أي علامة لديزي عليها.',
         },
         {
           question: 'هل تؤثر العلامة التجارية البيضاء على تجربة الحجز؟',
@@ -911,7 +909,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'كم تكلفة نظام إدارة الصالونات؟',
           answer:
-            'تتراوح التكاليف من 50 إلى 500 دولار شهرياً للمنصة البرمجية، بالإضافة إلى 0-2,000 دولار للأجهزة إذا لزم الأمر. تلغي ديزي تكاليف الأجهزة تماماً — يعمل النظام الكامل على أجهزتك الحالية بدءاً من 50 دولاراً شهرياً.',
+            'تتراوح التكاليف من 50 إلى 500 دولار شهرياً للمنصة البرمجية، بالإضافة إلى 0-2,000 دولار للأجهزة إذا لزم الأمر. تلغي ديزي تكاليف الأجهزة تماماً — يعمل النظام الكامل على أجهزتك الحالية بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
         {
           question: 'هل يمكن لصالون صغير الاستفادة من نظام إدارة؟',
@@ -931,7 +929,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'ما هو أفضل نظام إدارة صالونات في 2026؟',
           answer:
-            'أفضل نظام في 2026 يجمع بين برمجيات شاملة وقدرات ذكاء اصطناعي ولا يتطلب أجهزة إضافية. تتصدر ديزي بنهجها المتكامل: موظف استقبال ذكي واكتساب عملاء بالكاشباك وعلامة تجارية بيضاء ومنصة سحابية بدون أجهزة بدءاً من 50 دولاراً شهرياً.',
+            'أفضل نظام في 2026 يجمع بين برمجيات شاملة وقدرات ذكاء اصطناعي ولا يتطلب أجهزة إضافية. تتصدر ديزي بنهجها المتكامل: موظف استقبال ذكي واكتساب عملاء بالكاشباك وعلامة تجارية بيضاء ومنصة سحابية بدون أجهزة بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'salon-employee-management-software'],

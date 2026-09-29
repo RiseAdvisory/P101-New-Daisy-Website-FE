@@ -2487,7 +2487,7 @@ const performanceReviewsArticleAr: LocalBlogPost = {
 <li>معدل البيع الإضافي والخدمات المضافة</li>
 <li>اتجاه نمو الإيرادات (شهر بعد شهر، ربع بعد ربع)</li>
 </ul>
-<p><strong>مصادر الأدلة:</strong> <a href="/ar/features/business/analytics-reporting">لوحة التحليلات من ديزي</a>، التقارير المالية، بيانات نقاط البيع.</p>
+<p><strong>مصادر الأدلة:</strong> <a href="/ar/features/business/analytics-reports">لوحة التحليلات من ديزي</a>، التقارير المالية، بيانات نقاط البيع.</p>
 
 <h3>4. المساهمة في الفريق (الوزن: 10%)</h3>
 <p>تقيّم كيف يساهم المحترف في ديناميكيات الفريق وثقافة الصالون.</p>

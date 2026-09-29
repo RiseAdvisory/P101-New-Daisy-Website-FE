@@ -476,7 +476,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
   <li>All-in-one platform (booking, payments, marketing, team management, analytics)</li>
   <li>AI and automation capabilities</li>
   <li>Multi-location support built into the core product</li>
-  <li>White-label branding to maintain your identity</li>
+  <li>Branded booking pages to maintain your identity</li>
   <li>Open ecosystem (integrations with tools you already use)</li>
   <li>Mobile-first design (manage your business from anywhere)</li>
 </ul>`,
@@ -613,7 +613,7 @@ export const beautyBusinessGrowthGuide: PillarPageData = {
   <li><strong>Marketing efficiency ratio:</strong> Revenue generated per marketing dollar spent. Track by channel to identify your highest-ROI investments.</li>
   <li><strong>Break-even timeline for new locations:</strong> A new salon location should break even within 6-12 months. Longer indicates structural issues with the market, pricing, or operations.</li>
 </ul>
-<p>Modern <a href="/en/features/business/analytics-reporting">salon analytics platforms</a> calculate most of these metrics automatically, giving you real-time visibility into your financial health without manual spreadsheet work.</p>`,
+<p>Modern <a href="/en/features/business/analytics-reports">salon analytics platforms</a> calculate most of these metrics automatically, giving you real-time visibility into your financial health without manual spreadsheet work.</p>`,
       relatedLinks: [
         {
           title: 'Revenue Growth Strategies for Salons',
