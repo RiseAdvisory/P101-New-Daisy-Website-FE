@@ -27,7 +27,10 @@ const uiStrings = {
     feature: 'Feature',
   },
   ar: {
-    howCompare: (name: string) => `كيف تتفوق ديزي مقارنة بـ ${name}؟`,
+    // Was "كيف تتفوق ديزي" - "how does Daisy OUTPERFORM" - while the English
+    // asks the neutral "how does Daisy compare". On a named competitor's page
+    // that is a superiority claim the English never made.
+    howCompare: (name: string) => `كيف تقارن ديزي مع ${name}؟`,
     stackUp: (name: string) =>
       `كيف تقارن ديزي و${name} في لمحة سريعة`,
     caption: (name: string) =>

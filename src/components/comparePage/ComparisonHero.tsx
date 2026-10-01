@@ -10,26 +10,23 @@ interface ComparisonHeroProps {
     | 'best-alternatives'
     | 'competitor-vs'
     | 'solution';
+  locale?: string;
 }
 
-const variantStyles: Record<
-  ComparisonHeroProps['variant'],
-  { badgeText: string }
-> = {
-  'daisy-vs': {
-    badgeText: 'Head-to-Head Comparison',
+const badgeText: Record<'en' | 'ar', Record<ComparisonHeroProps['variant'], string>> = {
+  en: {
+    'daisy-vs': 'Head-to-Head Comparison',
+    alternative: 'Alternative Guide',
+    'best-alternatives': 'Top Alternatives',
+    'competitor-vs': 'Software Comparison',
+    solution: 'Solution Overview',
   },
-  alternative: {
-    badgeText: 'Alternative Guide',
-  },
-  'best-alternatives': {
-    badgeText: 'Top Alternatives',
-  },
-  'competitor-vs': {
-    badgeText: 'Software Comparison',
-  },
-  solution: {
-    badgeText: 'Solution Overview',
+  ar: {
+    'daisy-vs': 'مقارنة مباشرة',
+    alternative: 'دليل البدائل',
+    'best-alternatives': 'أبرز البدائل',
+    'competitor-vs': 'مقارنة البرامج',
+    solution: 'نظرة عامة على الحل',
   },
 };
 
@@ -37,8 +34,9 @@ export const ComparisonHero: FC<ComparisonHeroProps> = ({
   title,
   subtitle,
   variant,
+  locale = 'en',
 }) => {
-  const styles = variantStyles[variant];
+  const badge = (badgeText[locale as 'en' | 'ar'] ?? badgeText.en)[variant];
 
   return (
     <section
@@ -58,7 +56,7 @@ export const ComparisonHero: FC<ComparisonHeroProps> = ({
             'bg-primary/10 text-primary border-primary/20',
           )}
         >
-          {styles.badgeText}
+          {badge}
         </span>
 
         <h1

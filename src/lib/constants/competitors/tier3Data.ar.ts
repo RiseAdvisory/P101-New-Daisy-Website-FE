@@ -4,6 +4,7 @@
 
 import type { CompetitorData } from './competitorData';
 import { tier3Competitors } from './tier3Data';
+import { localizeRecordToArabic } from './arabicRecordStrings';
 
 function arCompetitor(
   slug: string,
@@ -11,7 +12,9 @@ function arCompetitor(
 ): CompetitorData {
   const base = tier3Competitors[slug];
   if (!base) throw new Error(`Missing tier3 competitor: ${slug}`);
-  return { ...base, ...overrides } as CompetitorData;
+  // Pricing and headquarters are inherited from English unless overridden;
+  // translate them so they do not render in English on Arabic pages.
+  return localizeRecordToArabic({ ...base, ...overrides } as CompetitorData);
 }
 
 export const tier3CompetitorsAr: Record<string, CompetitorData> = {

@@ -13,9 +13,37 @@ interface FeatureComparisonTableProps {
   competitorName: string;
   secondCompetitor?: { slug: string; name: string };
   heading?: string;
+  locale?: string;
 }
 
-function RatingDots({ rating, highlight }: { rating: FeatureRating; highlight?: boolean }) {
+const uiStrings = {
+  en: {
+    heading: (name: string) => `How Do Daisy and ${name} Compare on Features?`,
+    rated: (n: number) => `${n} categories rated from Basic to Best-in-Class`,
+    ownAssessment: 'Ratings are Daisy’s own assessment, not an independent benchmark',
+    caption: (name: string) => `Daisy vs ${name} Feature Comparison ${new Date().getFullYear()}`,
+    category: 'Category',
+    daisy: 'Daisy',
+  },
+  ar: {
+    heading: (name: string) => `كيف تقارن ديزي و${name} من حيث الميزات؟`,
+    rated: (n: number) => `${n} فئات مقيّمة من «أساسي» إلى «الأفضل في فئته»`,
+    ownAssessment: 'التقييمات تقدير ديزي الخاص، وليست معياراً مستقلاً',
+    caption: (name: string) => `مقارنة الميزات بين ديزي و${name} ${new Date().getFullYear()}`,
+    category: 'الفئة',
+    daisy: 'ديزي',
+  },
+};
+
+function RatingDots({
+  rating,
+  highlight,
+  locale = 'en',
+}: {
+  rating: FeatureRating;
+  highlight?: boolean;
+  locale?: string;
+}) {
   return (
     <div className="flex items-center gap-2">
       <div className="flex gap-1" aria-hidden="true">
@@ -39,7 +67,7 @@ function RatingDots({ rating, highlight }: { rating: FeatureRating; highlight?: 
           highlight ? 'text-primary' : 'text-[#586968]',
         )}
       >
-        {featureRatingLabel(rating)}
+        {featureRatingLabel(rating, locale)}
       </span>
     </div>
   );
@@ -50,10 +78,12 @@ export const FeatureComparisonTable: FC<FeatureComparisonTableProps> = ({
   competitorName,
   secondCompetitor,
   heading,
+  locale = 'en',
 }) => {
-  const comparison = compareFeatures(competitorSlug);
+  const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
+  const comparison = compareFeatures(competitorSlug, locale);
   const secondCompetitorData = secondCompetitor
-    ? getCompetitor(secondCompetitor.slug)
+    ? getCompetitor(secondCompetitor.slug, locale)
     : null;
 
   const featureKeys: (keyof typeof daisyData.features)[] = [
@@ -74,10 +104,10 @@ export const FeatureComparisonTable: FC<FeatureComparisonTableProps> = ({
     <section className="py-16 px-4 bg-[#F8F5F3]">
       <div className="mx-auto max-w-4xl">
         <h2 className="mb-2 text-center text-3xl font-bold text-[#172524]">
-          {heading || `How Do Daisy and ${competitorName} Compare on Features?`}
+          {heading || t.heading(competitorName)}
         </h2>
         <p className="mb-4 text-center text-[#455150]">
-          {comparison.length} categories rated from Basic to Best-in-Class
+          {t.rated(comparison.length)}
         </p>
         {/*
           The aggregate win tally that used to sit here is
@@ -87,13 +117,13 @@ export const FeatureComparisonTable: FC<FeatureComparisonTableProps> = ({
           Daisy's own assessment rather than a benchmark.
         */}
         <p className="mb-10 text-center text-sm font-medium text-primary">
-          Ratings are Daisy&rsquo;s own assessment, not an independent benchmark
+          {t.ownAssessment}
         </p>
 
         <div className="overflow-x-auto">
           <table className="w-full min-w-[600px] border-collapse overflow-hidden rounded-xl border border-[#E8E9E9] bg-white shadow-sm">
             <caption className="sr-only">
-              Daisy vs {competitorName} Feature Comparison {new Date().getFullYear()}
+              {t.caption(competitorName)}
             </caption>
             <thead>
               <tr className="border-b border-[#E8E9E9] bg-[#F8F5F3]">
@@ -102,13 +132,13 @@ export const FeatureComparisonTable: FC<FeatureComparisonTableProps> = ({
                   className="px-6 py-4 text-start text-sm font-semibold text-[#586968] uppercase tracking-wider"
                   style={{ width: '35%' }}
                 >
-                  Category
+                  {t.category}
                 </th>
                 <th
                   scope="col"
                   className="px-6 py-4 text-start text-sm font-bold text-primary uppercase tracking-wider"
                 >
-                  Daisy
+                  {t.daisy}
                 </th>
                 <th
                   scope="col"
@@ -146,14 +176,14 @@ export const FeatureComparisonTable: FC<FeatureComparisonTableProps> = ({
                       </span>
                     </td>
                     <td className="px-6 py-4">
-                      <RatingDots rating={row.daisy} highlight />
+                      <RatingDots rating={row.daisy} highlight locale={locale} />
                     </td>
                     <td className="px-6 py-4">
-                      <RatingDots rating={row.competitor} />
+                      <RatingDots rating={row.competitor} locale={locale} />
                     </td>
                     {secondRating !== null && secondRating !== undefined && (
                       <td className="px-6 py-4">
-                        <RatingDots rating={secondRating} />
+                        <RatingDots rating={secondRating} locale={locale} />
                       </td>
                     )}
                   </tr>
@@ -178,7 +208,7 @@ export const FeatureComparisonTable: FC<FeatureComparisonTableProps> = ({
                   />
                 ))}
               </div>
-              <span>{featureRatingLabel(rating)}</span>
+              <span>{featureRatingLabel(rating, locale)}</span>
             </div>
           ))}
         </div>

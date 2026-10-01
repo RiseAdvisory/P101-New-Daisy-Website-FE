@@ -6,15 +6,52 @@ interface GrowthVsOperationsProps {
   competitorName: string;
   competitorGrowthScore?: number;
   heading?: string;
+  locale?: string;
 }
 
 const DAISY_GROWTH_SCORE = 9;
+
+const uiStrings = {
+  en: {
+    heading: (name: string) => `Is ${name} an Operations Tool or a Growth Partner?`,
+    sub: 'There is a fundamental difference in what each platform is designed to do',
+    ownAssessment: 'Daisy’s own assessment, not an independent benchmark',
+    operations: 'Operations',
+    growth: 'Growth',
+    daisy: 'Daisy',
+    opsTitle: 'Operations Tool',
+    // "basic reporting" dropped: on a page asking whether a named competitor
+    // is an operations tool, it read as a verdict on their reporting, which
+    // their published live dashboards contradict.
+    opsBody:
+      'Helps you manage the business you already have. Scheduling, payments, and reporting. You still need to find and retain customers yourself.',
+    growthTitle: 'Growth Partner',
+    growthBody:
+      'Actively helps you grow. AI-powered customer acquisition, cashback loyalty, smart marketing automation, and an always-on receptionist that converts inquiries into bookings.',
+  },
+  ar: {
+    heading: (name: string) => `هل ${name} أداة تشغيل أم شريك نمو؟`,
+    sub: 'ثمة فرق جوهري في ما صُممت كل منصة للقيام به',
+    ownAssessment: 'تقدير ديزي الخاص، وليس معياراً مستقلاً',
+    operations: 'التشغيل',
+    growth: 'النمو',
+    daisy: 'ديزي',
+    opsTitle: 'أداة تشغيل',
+    opsBody:
+      'تساعدك على إدارة العمل الذي لديك أصلاً: الجدولة والمدفوعات والتقارير. ويبقى عليك أن تجد العملاء وتحتفظ بهم بنفسك.',
+    growthTitle: 'شريك نمو',
+    growthBody:
+      'يساعدك فعلياً على النمو: استقطاب العملاء بالذكاء الاصطناعي، وولاء عبر الكاشباك، وأتمتة تسويق ذكية، وموظف استقبال يعمل دون توقف ويحوّل الاستفسارات إلى حجوزات.',
+  },
+};
 
 export const GrowthVsOperations: FC<GrowthVsOperationsProps> = ({
   competitorName,
   competitorGrowthScore,
   heading,
+  locale = 'en',
 }) => {
+  const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
   // No silent default: an absent score used to render as 3/10, assigning an
   // unflattering number to a competitor we had no data for.
   if (competitorGrowthScore === undefined) return null;
@@ -22,11 +59,10 @@ export const GrowthVsOperations: FC<GrowthVsOperationsProps> = ({
     <section className="py-16 px-4 bg-[#F8F5F3]">
       <div className="mx-auto max-w-4xl">
         <h2 className="mb-2 text-center text-3xl font-bold text-[#172524]">
-          {heading || `Is ${competitorName} an Operations Tool or a Growth Partner?`}
+          {heading || t.heading(competitorName)}
         </h2>
         <p className="mb-2 text-center text-[#586968]">
-          There is a fundamental difference in what each platform is designed to
-          do
+          {t.sub}
         </p>
         {/*
           Same reasoning as FeatureComparisonTable: this is a 0-10 scale Daisy
@@ -34,7 +70,7 @@ export const GrowthVsOperations: FC<GrowthVsOperationsProps> = ({
           reads as a neutral instrument scoring a named competitor.
         */}
         <p className="mb-10 text-center text-sm font-medium text-primary">
-          Daisy&rsquo;s own assessment, not an independent benchmark
+          {t.ownAssessment}
         </p>
 
         {/* Visual Scale */}
@@ -44,10 +80,10 @@ export const GrowthVsOperations: FC<GrowthVsOperationsProps> = ({
             <div className="mb-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wider">
               <div className="flex items-center gap-1.5 text-[#586968]">
                 <Settings className="h-4 w-4" />
-                <span>Operations</span>
+                <span>{t.operations}</span>
               </div>
               <div className="flex items-center gap-1.5 text-primaryBtn">
-                <span>Growth</span>
+                <span>{t.growth}</span>
                 <TrendingUp className="h-4 w-4" />
               </div>
             </div>
@@ -79,7 +115,7 @@ export const GrowthVsOperations: FC<GrowthVsOperationsProps> = ({
                     <span className="text-xs font-bold text-[#172524]">
                       {competitorName}
                     </span>
-                    <span className="ml-1.5 text-xs font-medium text-[#586968]">
+                    <span className="ms-1.5 text-xs font-medium text-[#586968]">
                       {competitorGrowthScore}/10
                     </span>
                   </div>
@@ -98,9 +134,9 @@ export const GrowthVsOperations: FC<GrowthVsOperationsProps> = ({
                   <div className="h-6 w-6 rounded-full border-[3px] border-primary bg-primary shadow-md shadow-primaryBtn/30" />
                   <div className="mt-9 whitespace-nowrap rounded-lg border border-primaryBtn/20 bg-primary/10 px-3 py-1.5 shadow-sm">
                     <span className="text-xs font-bold text-primary">
-                      Daisy
+                      {t.daisy}
                     </span>
-                    <span className="ml-1.5 text-xs font-medium text-primaryBtn">
+                    <span className="ms-1.5 text-xs font-medium text-primaryBtn">
                       {DAISY_GROWTH_SCORE}/10
                     </span>
                   </div>
@@ -116,13 +152,11 @@ export const GrowthVsOperations: FC<GrowthVsOperationsProps> = ({
                     <Settings className="h-4 w-4 text-[#586968]" />
                   </div>
                   <h3 className="text-sm font-bold text-[#172524]">
-                    Operations Tool
+                    {t.opsTitle}
                   </h3>
                 </div>
                 <p className="text-sm leading-relaxed text-[#586968]">
-                  Helps you manage the business you already have. Scheduling,
-                  payments, and basic reporting. You still need to find and
-                  retain customers yourself.
+                  {t.opsBody}
                 </p>
               </div>
 
@@ -132,13 +166,11 @@ export const GrowthVsOperations: FC<GrowthVsOperationsProps> = ({
                     <TrendingUp className="h-4 w-4 text-primaryBtn" />
                   </div>
                   <h3 className="text-sm font-bold text-primary">
-                    Growth Partner
+                    {t.growthTitle}
                   </h3>
                 </div>
                 <p className="text-sm leading-relaxed text-[#586968]">
-                  Actively helps you grow. AI-powered customer acquisition,
-                  cashback loyalty, smart marketing automation, and an always-on
-                  receptionist that converts inquiries into bookings.
+                  {t.growthBody}
                 </p>
               </div>
             </div>
