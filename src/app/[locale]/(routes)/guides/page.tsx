@@ -9,10 +9,17 @@ import { renderSafeHtml } from '@/lib/utils/htmlContent';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
+  // Was English for both locales: the Arabic pages' search titles and social
+  // previews read in English.
+  const isAr = locale === 'ar';
   return {
-  title: 'Salon Business Guides | The Daisy',
+  title: isAr
+      ? 'أدلة أعمال الصالونات | ديزي'
+      : 'Salon Business Guides | The Daisy',
   description:
-    'Step-by-step guides for salon owners: reduce no-shows, get more clients, choose the right software, set up online booking, and grow your beauty business.',
+    isAr
+      ? 'أدلة خطوة بخطوة لأصحاب الصالونات: قلّل حالات عدم الحضور، واستقطب المزيد من العملاء، واختر البرنامج المناسب، وأعدّ الحجز الإلكتروني، ونمِّ عملك في مجال التجميل.'
+      : 'Step-by-step guides for salon owners: reduce no-shows, get more clients, choose the right software, set up online booking, and grow your beauty business.',
   keywords: [
     'salon business guides',
     'how to reduce no-shows salon',
@@ -21,18 +28,26 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'salon software guide',
   ],
   openGraph: {
-    title: 'Salon Business Guides | The Daisy',
+    title: isAr
+      ? 'أدلة أعمال الصالونات | ديزي'
+      : 'Salon Business Guides | The Daisy',
     description:
-      'Step-by-step guides for salon owners on growing their beauty business.',
+      isAr
+      ? 'أدلة خطوة بخطوة لأصحاب الصالونات لتنمية أعمالهم في مجال التجميل.'
+      : 'Step-by-step guides for salon owners on growing their beauty business.',
     url: `https://www.jointhedaisy.com/${locale}/guides`,
     type: 'website',
     images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Salon Business Guides | The Daisy',
+    title: isAr
+      ? 'أدلة أعمال الصالونات | ديزي'
+      : 'Salon Business Guides | The Daisy',
     description:
-      'Step-by-step guides for salon owners: reduce no-shows, get more clients, choose the right software.',
+      isAr
+      ? 'أدلة خطوة بخطوة لأصحاب الصالونات: قلّل حالات عدم الحضور، واستقطب المزيد من العملاء، واختر البرنامج المناسب.'
+      : 'Step-by-step guides for salon owners: reduce no-shows, get more clients, choose the right software.',
     images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/guides', locale),

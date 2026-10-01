@@ -435,12 +435,13 @@ export function FeatureDeepDiveClient({ userType, slug, locale = 'en' }: Props) 
       <SolutionCTA
         headline={t.readyToExperience(data.categoryName)}
         subtext={t.ctaSubtext(data.categoryName, userType)}
+        locale={activeLocale}
       />
 
       {/* Related */}
       {relatedLinks.length > 0 && (
         <section className="mx-auto max-w-5xl px-4 py-12">
-          <RelatedPages links={relatedLinks} />
+          <RelatedPages links={relatedLinks} locale={activeLocale} />
         </section>
       )}
     </main>

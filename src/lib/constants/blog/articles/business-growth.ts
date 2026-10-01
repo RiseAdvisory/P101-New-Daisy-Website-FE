@@ -1542,9 +1542,9 @@ const daisyMarketingSuiteArticleAr: LocalBlogPost = {
 
 <h3>هل ستعمل مجموعة التسويق مع صالون جديد بدون قاعدة عملاء حالية؟</h3>
 <p>نعم. بالنسبة للصالونات الجديدة، فإن الأدوات الأكثر تأثيرًا هي قائمة السوق (التي تجلب العملاء ذوي النوايا العالية الذين يبحثون بنشاط عن الخدمات)، وتكامل الملف التجاري على جوجل (الذي يلتقط حركة البحث المحلية)، وتكامل الحجز عبر وسائل التواصل الاجتماعي (الذي يحول المتابعين إلى عملاء). مع نمو قاعدة عملائك، أصبحت الحملات الآلية وبرنامج الإحالة أكثر قوة.</p>`,
-    metaTitle: "Daisy's Marketing Suite for Salons | The Daisy",
+    metaTitle: 'مجموعة التسويق من ديزي للصالونات | ديزي',
     metaDescription:
-      "Learn how The Daisy's built-in marketing suite helps salons attract new clients through automated campaigns, reviews, referrals, and social media integration.",
+      'تعرّف كيف تساعد مجموعة التسويق المدمجة في ديزي الصالونات على استقطاب عملاء جدد عبر الحملات الآلية والمراجعات والإحالات والتكامل مع وسائل التواصل الاجتماعي.',
     createdAt: '2025-11-03T05:00:00.000Z',
     updatedAt: '2025-11-03T05:00:00.000Z',
     publishedAt: '2025-11-03T05:00:00.000Z',

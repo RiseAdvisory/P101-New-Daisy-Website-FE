@@ -1652,7 +1652,7 @@ const clientExperienceArticleAr: LocalBlogPost = {
 const clientPersonalizationArticleAr: LocalBlogPost = {
   id: 1185,
   attributes: {
-    title: "Salon Personalization: Remembering Every Client's Preferences",
+    title: 'تخصيص تجربة الصالون: تذكّر تفضيلات كل عميل',
     slug: 'salon-client-personalization-tips',
     description:
       'تعرف على كيفية تقديم تجارب صالون مخصصة على نطاق واسع من خلال التقاط تفضيلات العميل وإنشاء ملفات تعريف تفصيلية واستخدام التكنولوجيا لضمان تقديم كل عضو في الفريق الخدمة المخصصة التي تحافظ على ولاء العملاء.',

@@ -59,13 +59,13 @@ export function PillarPageTemplate({ data, locale }: PillarPageTemplateProps) {
       />
 
       {/* Key Takeaways (GEO answer block) */}
-      <KeyTakeaways takeaways={data.keyTakeaways} />
+      <KeyTakeaways takeaways={data.keyTakeaways} locale={locale} />
 
       {/* Content area with TOC */}
       <div className="mx-auto max-w-5xl px-4 py-8">
         {/* Mobile TOC (collapsible, hidden on desktop, rendered inside TableOfContents) */}
         <div className="lg:hidden">
-          <TableOfContents sections={tocSections} />
+          <TableOfContents sections={tocSections} locale={locale} />
         </div>
 
         <div className="lg:grid lg:grid-cols-[1fr_240px] lg:gap-12">
@@ -121,19 +121,19 @@ export function PillarPageTemplate({ data, locale }: PillarPageTemplateProps) {
 
           {/* Desktop TOC sidebar column (hidden on mobile via TableOfContents component) */}
           <div className="hidden lg:block">
-            <TableOfContents sections={tocSections} />
+            <TableOfContents sections={tocSections} locale={locale} />
           </div>
         </div>
       </div>
 
       {/* Cluster Articles */}
-      <ClusterArticleGrid articles={data.clusterArticles} />
+      <ClusterArticleGrid articles={data.clusterArticles} locale={locale} />
 
       {/* Related Pillars */}
       <RelatedPillars slugs={data.relatedPillarSlugs} locale={locale} />
 
       {/* Bottom CTA */}
-      <PillarCTA />
+      <PillarCTA locale={locale} />
     </main>
   );
 }

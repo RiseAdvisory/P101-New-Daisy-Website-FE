@@ -84,7 +84,7 @@ export const HeroBlogPage = ({ breadcrumbTitle, breadcrumbDescription, breadcrum
               )?.name ||
                 post?.user?.data?.attributes?.name ||
                 post?.user?.name ||
-                'Author'}
+                (isRtl ? 'الكاتب' : 'Author')}
             </span>
           </span>
           <span className="text-white/60 font-bold">|</span>

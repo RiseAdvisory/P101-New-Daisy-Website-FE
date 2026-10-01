@@ -8,10 +8,17 @@ import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
+  // Was English for both locales: the Arabic pages' search titles and social
+  // previews read in English.
+  const isAr = locale === 'ar';
   return {
-  title: 'Beauty Business Solutions. AI-Powered Software | The Daisy',
+  title: isAr
+      ? 'حلول أعمال التجميل: برامج مدعومة بالذكاء الاصطناعي | ديزي'
+      : 'Beauty Business Solutions. AI-Powered Software | The Daisy',
   description:
-    'Explore The Daisy solutions for salons, spas, barbershops, and med spas. AI booking, POS, CRM, marketing, and staff management built for your business type.',
+    isAr
+      ? 'استكشف حلول ديزي للصالونات والمنتجعات الصحية وصالونات الحلاقة وعيادات التجميل: حجز ذكي ونقاط بيع وإدارة علاقات العملاء والتسويق وإدارة الفريق، مصممة لنوع عملك.'
+      : 'Explore The Daisy solutions for salons, spas, barbershops, and med spas. AI booking, POS, CRM, marketing, and staff management built for your business type.',
   keywords: [
     'salon management software',
     'spa booking system',
@@ -20,18 +27,26 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'beauty business solutions',
   ],
   openGraph: {
-    title: 'Beauty Business Solutions. AI-Powered Software | The Daisy',
+    title: isAr
+      ? 'حلول أعمال التجميل: برامج مدعومة بالذكاء الاصطناعي | ديزي'
+      : 'Beauty Business Solutions. AI-Powered Software | The Daisy',
     description:
-      'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing.',
+      isAr
+      ? 'استكشف حلول ديزي لإدارة الصالونات وحجز المنتجعات الصحية وجدولة المواعيد ونقاط البيع وإدارة علاقات العملاء والتسويق.'
+      : 'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing.',
     url: `https://www.jointhedaisy.com/${locale}/solutions`,
     type: 'website',
     images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Beauty Business Solutions. AI-Powered Software | The Daisy',
+    title: isAr
+      ? 'حلول أعمال التجميل: برامج مدعومة بالذكاء الاصطناعي | ديزي'
+      : 'Beauty Business Solutions. AI-Powered Software | The Daisy',
     description:
-      'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing.',
+      isAr
+      ? 'استكشف حلول ديزي لإدارة الصالونات وحجز المنتجعات الصحية وجدولة المواعيد ونقاط البيع وإدارة علاقات العملاء والتسويق.'
+      : 'Explore Daisy\'s solutions for salon management, spa booking, appointment scheduling, POS, CRM, and marketing.',
     images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/solutions', locale),

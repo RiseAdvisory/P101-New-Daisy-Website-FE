@@ -193,7 +193,7 @@ const industryStatsAr: StatCategory[] = [
     category: 'حجم السوق والنمو',
     stats: [
       {
-        value: '$712M',
+        value: '$712 مليون',
         description: 'الحجم المتوقع لسوق برمجيات الصالونات عالمياً بحلول 2028',
         source: 'Grand View Research',
       },
@@ -203,14 +203,14 @@ const industryStatsAr: StatCategory[] = [
         source: 'Allied Market Research',
       },
       {
-        value: '$532B',
+        value: '$532 مليار',
         description: 'قيمة سوق التجميل والعناية الشخصية عالمياً في 2025',
         source: 'Statista',
       },
       {
         value: '87%',
         description: 'من أصحاب الصالونات يؤكدون أن التكنولوجيا ضرورية لنمو أعمالهم',
-        source: 'Salon Today survey',
+        source: 'استطلاع Salon Today',
       },
     ],
   },
@@ -220,12 +220,12 @@ const industryStatsAr: StatCategory[] = [
       {
         value: '67%',
         description: 'من عملاء التجميل يفضلون الحجز عبر الإنترنت بدلاً من الاتصال الهاتفي',
-        source: 'GetApp survey',
+        source: 'استطلاع GetApp',
       },
       {
         value: '40%',
         description: 'زيادة في المواعيد عند توفير خدمة الحجز الإلكتروني على مدار الساعة',
-        source: 'Salon booking platform data',
+        source: 'بيانات منصات حجز الصالونات',
       },
       {
         value: '46%',
@@ -235,7 +235,7 @@ const industryStatsAr: StatCategory[] = [
       {
         value: '35%',
         description: 'من مكالمات الصالونات لا يُرد عليها خلال أوقات الذروة وخارج ساعات العمل',
-        source: 'Industry research estimates',
+        source: 'تقديرات أبحاث القطاع',
       },
     ],
   },
@@ -245,22 +245,22 @@ const industryStatsAr: StatCategory[] = [
       {
         value: '20-30%',
         description: 'متوسط معدل عدم الحضور في الصالونات التي لا تتخذ إجراءات وقائية',
-        source: 'Industry average estimates',
+        source: 'تقديرات متوسط القطاع',
       },
       {
         value: '30-40%',
         description: 'انخفاض في حالات عدم الحضور عند استخدام تذكيرات آلية عبر الرسائل النصية والبريد الإلكتروني',
-        source: 'Salon software platform data',
+        source: 'بيانات منصات برامج الصالونات',
       },
       {
         value: '$67,000',
         description: 'الإيرادات السنوية المقدّرة التي يخسرها كل صالون بسبب عدم حضور العملاء',
-        source: 'Industry calculations',
+        source: 'حسابات القطاع',
       },
       {
         value: '95%',
         description: 'معدل فتح تذكيرات المواعيد عبر الرسائل النصية (مقابل 20% للبريد الإلكتروني)',
-        source: 'SMS marketing benchmarks',
+        source: 'معايير التسويق بالرسائل النصية',
       },
     ],
   },
@@ -270,7 +270,7 @@ const industryStatsAr: StatCategory[] = [
       {
         value: '$25-50',
         description: 'متوسط تكلفة استقطاب عميل جديد للصالون عبر الإعلانات المدفوعة',
-        source: 'Digital marketing benchmarks',
+        source: 'معايير التسويق الرقمي',
       },
       {
         value: '5x',
@@ -280,12 +280,12 @@ const industryStatsAr: StatCategory[] = [
       {
         value: '20-30%',
         description: 'زيادة في القيمة الدائمة للعميل مع برامج الولاء والاسترداد النقدي',
-        source: 'Loyalty program research',
+        source: 'أبحاث برامج الولاء',
       },
       {
         value: '3x',
         description: 'حجوزات جديدة أكثر للصالونات التي تمتلك أكثر من 50 تقييماً بمعدل 4.5+ نجوم',
-        source: 'BrightLocal consumer survey',
+        source: 'استطلاع المستهلكين من BrightLocal',
       },
     ],
   },
@@ -295,22 +295,22 @@ const industryStatsAr: StatCategory[] = [
       {
         value: '73%',
         description: 'من شركات الخدمات تخطط لزيادة استثماراتها في الذكاء الاصطناعي بحلول 2027',
-        source: 'McKinsey Global Survey',
+        source: 'استطلاع McKinsey العالمي',
       },
       {
         value: '+10 ساعات',
         description: 'يوفرها أصحاب الصالونات أسبوعياً باستخدام الجدولة والأتمتة بالذكاء الاصطناعي',
-        source: 'Salon software user surveys',
+        source: 'استطلاعات مستخدمي برامج الصالونات',
       },
       {
         value: '24/7',
         description: 'موظفو الاستقبال الافتراضيون يعملون على مدار الساعة لاستقطاب إيرادات خارج أوقات العمل',
-        source: 'AI receptionist platform data',
+        source: 'بيانات منصات الاستقبال الذكي',
       },
       {
         value: '70-80%',
         description: 'من المكالمات الروتينية للصالونات يمكن التعامل معها بالذكاء الاصطناعي دون تدخل بشري',
-        source: 'AI customer service benchmarks',
+        source: 'معايير خدمة العملاء بالذكاء الاصطناعي',
       },
     ],
   },
@@ -318,24 +318,24 @@ const industryStatsAr: StatCategory[] = [
     category: 'سوق التجميل في دول مجلس التعاون الخليجي',
     stats: [
       {
-        value: '$28B',
+        value: '$28 مليار',
         description: 'قيمة سوق التجميل والعناية الشخصية في دول مجلس التعاون الخليجي',
         source: 'Euromonitor International',
       },
       {
         value: '+15%',
         description: 'معدل النمو السنوي لخدمات التجميل في الإمارات والمملكة العربية السعودية',
-        source: 'Regional market reports',
+        source: 'تقارير الأسواق الإقليمية',
       },
       {
         value: '+70%',
         description: 'من مستهلكي التجميل في دول الخليج يستخدمون تطبيقات الجوال لحجز الخدمات',
-        source: 'Regional consumer surveys',
+        source: 'استطلاعات المستهلكين الإقليمية',
       },
       {
         value: '2',
         description: 'لغتان (العربية + الإنجليزية) مطلوبتان لتغطية سوق دول الخليج بالكامل',
-        source: 'GCC demographics',
+        source: 'التركيبة السكانية في الخليج',
       },
     ],
   },
@@ -345,7 +345,7 @@ const industryStatsAr: StatCategory[] = [
       {
         value: '2-3%',
         description: 'رسوم المعاملات التي تفرضها معالجات الدفع عادةً (ديزي تفرض 0%)',
-        source: 'Payment industry standard',
+        source: 'معيار قطاع المدفوعات',
       },
       {
         value: '50%',
@@ -355,12 +355,12 @@ const industryStatsAr: StatCategory[] = [
       {
         value: '15-20%',
         description: 'زيادة في الإيرادات أبلغت عنها الصالونات التي تستخدم أنظمة نقاط بيع متكاملة',
-        source: 'POS adoption studies',
+        source: 'دراسات اعتماد نقاط البيع',
       },
       {
         value: '68%',
         description: 'من العملاء يفضلون خيارات الدفع الإلكتروني في الصالونات',
-        source: 'Consumer payment surveys',
+        source: 'استطلاعات مدفوعات المستهلكين',
       },
     ],
   },

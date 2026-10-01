@@ -8,9 +8,10 @@ interface Challenge {
 interface ChallengesSectionProps {
   challenges: Challenge[];
   heading?: string;
+  locale?: string;
 }
 
-export function ChallengesSection({ challenges, heading }: ChallengesSectionProps) {
+export function ChallengesSection({ challenges, heading, locale = 'en' }: ChallengesSectionProps) {
   if (!challenges || challenges.length === 0) {
     return null;
   }
@@ -19,7 +20,10 @@ export function ChallengesSection({ challenges, heading }: ChallengesSectionProp
     <section className="w-full bg-[#F8F5F3] px-4 py-16 md:py-24">
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-12 text-center text-[28px] font-semibold leading-9 text-[#172524] md:text-[36px] md:leading-[44px]">
-          {heading || 'What Challenges Do Beauty Businesses Face?'}
+          {heading ||
+            (locale === 'ar'
+              ? 'ما التحديات التي تواجهها أعمال التجميل؟'
+              : 'What Challenges Do Beauty Businesses Face?')}
         </h2>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

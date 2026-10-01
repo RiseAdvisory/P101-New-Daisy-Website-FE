@@ -9,15 +9,16 @@ interface ClusterArticle {
 
 interface ClusterArticleGridProps {
   articles: ClusterArticle[];
+  locale?: string;
 }
 
-export async function ClusterArticleGrid({ articles }: ClusterArticleGridProps) {
+export async function ClusterArticleGrid({ articles, locale = 'en' }: ClusterArticleGridProps) {
   if (!articles || articles.length === 0) return null;
 
   const resolvedArticles = (
     await Promise.all(
       articles.map(async ({ slug, userType }) => {
-        const post = await getBlogPostBySlug(userType, slug, 'en');
+        const post = await getBlogPostBySlug(userType, slug, locale);
         if (!post) return null;
         return {
           slug,
@@ -34,14 +35,14 @@ export async function ClusterArticleGrid({ articles }: ClusterArticleGridProps) 
   return (
     <section className="mx-auto max-w-5xl px-4 py-12">
       <h2 className="mb-8 text-2xl font-bold text-[#172524]">
-        Related Articles
+        {locale === 'ar' ? 'مقالات ذات صلة' : 'Related Articles'}
       </h2>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {resolvedArticles.map((article) =>
           article ? (
             <Link
               key={article.slug}
-              href={`/en/resources/blog/${article.userType === 'business' ? 'businesses' : 'professionals'}/${article.slug}`}
+              href={`/${locale}/resources/blog/${article.userType === 'business' ? 'businesses' : 'professionals'}/${article.slug}`}
               className="group flex flex-col rounded-xl border border-[#E8E9E9] bg-white p-6 transition-all hover:border-primaryBtn/30 hover:shadow-md"
             >
               <h3 className="text-base font-bold text-[#172524] transition-colors group-hover:text-primary">
@@ -51,8 +52,8 @@ export async function ClusterArticleGrid({ articles }: ClusterArticleGridProps) 
                 {article.description}
               </p>
               <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-primary opacity-70 transition-opacity group-hover:opacity-100">
-                Read more
-                <ArrowRight className="h-3.5 w-3.5" />
+                {locale === 'ar' ? 'اقرأ المزيد' : 'Read more'}
+                <ArrowRight className="h-3.5 w-3.5 rtl:rotate-180" />
               </div>
             </Link>
           ) : null

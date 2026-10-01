@@ -14,6 +14,7 @@
  * currency names that legitimately stay Latin are allowed.
  */
 import { render } from '@testing-library/react';
+import latinAllowlist from '@/lib/i18n/latinAllowlist.json';
 import { ComparePageClient } from '@/app/[locale]/(routes)/compare/[slug]/ComparePageClient';
 import { AlternativePageClient } from '@/app/[locale]/(routes)/alternative/[slug]/AlternativePageClient';
 import {
@@ -21,6 +22,10 @@ import {
   getAllAlternativeSlugs,
 } from '@/lib/constants/competitors/comparisonPages';
 import { competitors } from '@/lib/constants/competitors/competitorData';
+import { GuidesPageClient } from '@/app/[locale]/(routes)/guides/[slug]/GuidesPageClient';
+import { SolutionsPageClient } from '@/app/[locale]/(routes)/solutions/[slug]/SolutionsPageClient';
+import { guideData } from '@/lib/constants/guides/guideData';
+import { getAllSolutionSlugs } from '@/lib/constants/solutions';
 
 /**
  * Competitors' own plan names (Premier, Booksy Biz, Ultimate...) are product
@@ -31,17 +36,9 @@ const PLAN_NAMES = new Set(
   Object.values(competitors).flatMap((c) => c.pricing.tiers.map((t) => t.name)),
 );
 
-const ALLOWED_LATIN = new Set(
-  `daisy fresha booksy vagaro glossgenius mindbody square appointments boulevard mangomint zenoti phorest
-   acuity scheduling setmore timely simplybook me ai concierge whatsapp instagram facebook aed sar qar omr bhd kwd
-   usd pos crm rtl vat trn independent team smart website insights apple pay google play app sms api meta tech
-   provider white label white-label tiktok linkedin youtube ios android faq gcc uae ksa seo vs pro plus premium duo
-   vera capterra g2 tabby tamara mada stc knet benefit sumup stripe dingg glamera planity repeatmd zylu belliata
-   treatwell pabau squire meevo bookb sparkalz salonist messenger studio connect elite business growth basic
-   starter professional squarespace beauty bank`
-    .split(/\s+/)
-    .filter(Boolean),
-);
+const ALLOWED_LATIN = new Set<string>(latinAllowlist.words);
+const WHOLE_NODES = new Set<string>(latinAllowlist.wholeNodes);
+const PHRASES: string[] = latinAllowlist.phrases;
 
 /** Text nodes whose letters are mostly English words that are not names. */
 export function englishTextNodes(root: HTMLElement): string[] {
@@ -52,10 +49,13 @@ export function englishTextNodes(root: HTMLElement): string[] {
     const parent = node.parentElement;
     if (!parent || parent.closest('script,style,noscript,svg')) continue;
     const text = (node.textContent || '').replace(/\s+/g, ' ').trim();
-    if (!text || PLAN_NAMES.has(text)) continue;
-    const words = text.match(/[A-Za-z][A-Za-z'’-]*/g) || [];
+    if (!text || PLAN_NAMES.has(text) || WHOLE_NODES.has(text)) continue;
+    // Same as scripts/i18n-render-audit.mjs: proper names inside Arabic text and
+    // multipliers ("3x") are not English copy.
+    const checked = PHRASES.reduce((t, ph) => t.split(ph).join(' '), text).replace(/\b\d+(\.\d+)?x\b/g, ' ');
+    const words = checked.match(/[A-Za-z][A-Za-z'’-]*/g) || [];
     const english = words.filter((w) => !ALLOWED_LATIN.has(w.toLowerCase()));
-    const arabicChars = (text.match(/[؀-ۿ]/g) || []).length;
+    const arabicChars = (checked.match(/[؀-ۿ]/g) || []).length;
     const latinChars = english.join('').length;
     // One English word is enough: single labels like "Operations" or
     // "Category" slipped past a two-word threshold.
@@ -74,6 +74,21 @@ describe('Arabic compare pages render Arabic', () => {
 describe('Arabic alternative pages render Arabic', () => {
   it.each(getAllAlternativeSlugs())('/ar/alternative/%s', (slug) => {
     const { container } = render(<AlternativePageClient slug={slug} locale="ar" />);
+    expect(englishTextNodes(container)).toEqual([]);
+  });
+});
+
+describe('Arabic guide pages render Arabic', () => {
+  it.each(guideData.ar.map((g) => g.slug))('/ar/guides/%s', (slug) => {
+    const guide = guideData.ar.find((g) => g.slug === slug)!;
+    const { container } = render(<GuidesPageClient guide={guide} locale="ar" />);
+    expect(englishTextNodes(container)).toEqual([]);
+  });
+});
+
+describe('Arabic solution pages render Arabic', () => {
+  it.each(getAllSolutionSlugs())('/ar/solutions/%s', (slug) => {
+    const { container } = render(<SolutionsPageClient slug={slug} locale="ar" />);
     expect(englishTextNodes(container)).toEqual([]);
   });
 });

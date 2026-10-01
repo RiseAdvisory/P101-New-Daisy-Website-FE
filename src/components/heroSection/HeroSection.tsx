@@ -5,6 +5,12 @@ import { HomeIcon } from '@/assets/icons/homeIcon/HomeIcon';
 import { BreadcrumbWithCustomSeparator } from '../blogPage/blogPosts/BreadCrumbs';
 import { usePathname } from 'next/navigation';
 
+// Scroll prompts callers pass in English; rendered in Arabic on /ar/ pages.
+const SCROLL_PROMPT_AR: Record<string, string> = {
+  'Don’t believe us? Keep reading...': 'لا تصدقنا؟ تابع القراءة...',
+  'Explore the features': 'استكشف الميزات',
+};
+
 export const HeroPage = ({
   title,
   description,
@@ -37,6 +43,8 @@ export const HeroPage = ({
   bredCrumbHref?: string;
 }) => {
   const path = usePathname();
+  const isAr = path?.split('/')[1] === 'ar';
+  const scrollPrompt = isAr ? SCROLL_PROMPT_AR[titleScroll] ?? titleScroll : titleScroll;
   const Heading = features ? 'h1' : 'h2';
   const scrollToTopOfBlock = () => {
     if (blockRef.current) {
@@ -85,7 +93,7 @@ export const HeroPage = ({
         })}
       >
         <p className="text-base text-white font-normal ltr:font-montserrat">
-          {titleScroll}
+          {scrollPrompt}
         </p>
         <span
           onClick={scrollToTopOfBlock}

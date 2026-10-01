@@ -1,9 +1,10 @@
 interface KeyTakeawaysProps {
   takeaways: string[];
+  locale?: string;
 }
 import { renderSafeHtml } from '@/lib/utils/htmlContent';
 
-export function KeyTakeaways({ takeaways }: KeyTakeawaysProps) {
+export function KeyTakeaways({ takeaways, locale = 'en' }: KeyTakeawaysProps) {
   if (!takeaways || takeaways.length === 0) return null;
 
   return (
@@ -13,7 +14,7 @@ export function KeyTakeaways({ takeaways }: KeyTakeawaysProps) {
     >
       <div className="rounded-2xl border border-primaryBtn/30 bg-primary/5 p-6 md:p-8">
         <h2 className="mb-4 text-lg font-bold text-[#172524]">
-          Key Takeaways
+          {locale === 'ar' ? 'أبرز النقاط' : 'Key Takeaways'}
         </h2>
         <ul className="space-y-2">
           {takeaways.map((item, i) => (
