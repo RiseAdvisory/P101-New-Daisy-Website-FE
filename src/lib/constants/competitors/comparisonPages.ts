@@ -659,8 +659,8 @@ export const alternativePages: AlternativePageData[] = [
       'Online payments charged at 4.90% + AED 0.75, eating into every transaction',
       'A one-time 50% commission on new marketplace clients, minimum AED 20',
       'Marketing is charged per message once the first 50 emails each month are used',
-      'The AI Concierge covers phone calls only, so WhatsApp and Instagram are still yours to answer',
-      'Bookings run through the Fresha marketplace brand rather than your own',
+      'The AI Concierge is a paid add-on, and its published material does not name WhatsApp or Instagram, so confirm those channels if you need them',
+      'Marketplace bookings carry Fresha branding; a fully branded site is a paid Smart Website add-on',
       'A published monthly subscription that sits on top of transaction fees and marketplace commission',
     ],
     switchingReasons: [
@@ -709,7 +709,7 @@ export const alternativePages: AlternativePageData[] = [
     heroSubtitle: 'Vagaro manages your business well. It just does not grow it.',
     painPoints: [
       '$10/month for every additional staff calendar, which adds up fast',
-      'No AI receptionist, so the calls are still yours to answer',
+      'Vera answers chat and SMS but does not take payment on a voice call',
       'No Arabic, which closes off the GCC',
       'Built around operations, with nothing that goes out and finds customers',
       'Marketing sold as add-ons rather than built into the platform',
@@ -1017,7 +1017,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mangomint': 'Best for operations-focused salons wanting clean UX',
       'square-appointments': 'Best for businesses already using Square for payments',
     },
-    daisyEdge: 'Not one of these alternatives includes an AI receptionist that books appointments 24/7, a cashback-powered acquisition marketplace, or native Arabic support. Daisy combines all three with white-label branding and flat pricing, which makes it a growth tool rather than an operations one.',
+    daisyEdge: 'Booksy answers calls with AI; none of these alternatives pairs that with a cashback-powered acquisition marketplace or Arabic and English as equals. Daisy combines all three with white-label branding and flat pricing, which makes it a growth tool rather than an operations one.',
   },
   {
     slug: 'best-booksy-alternatives',
@@ -1027,7 +1027,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best booksy alternatives', 'booksy alternatives', 'booksy competitors'],
     heroTitle: '7 Best Booksy Alternatives in 2026',
     heroSubtitle: 'Per-provider pricing and thin AI no longer working for you? Here are better options for a growing team.',
-    intro: 'Booksy is a popular mobile-first booking app. For a team, though, per-provider pricing gets expensive, its AI Receptionist covers phone calls only, and there is no GCC support. The alternatives below suit different kinds of business.',
+    intro: 'Booksy is a popular mobile-first booking app. For a team, though, per-provider pricing gets expensive, its AI Receptionist is in beta and its published material does not name WhatsApp or Instagram, and there is no GCC support. The alternatives below suit different kinds of business.',
     alternatives: ['fresha', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
     bestFor: {
       'fresha': 'Best for marketplace-driven client discovery',

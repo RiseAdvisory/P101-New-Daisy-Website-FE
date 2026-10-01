@@ -37,7 +37,9 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     pricing: {
       hasFreePlan: false,
-      freeTrialDays: 14,
+      // No trial length published here. Fresha's Schedule 2 records none, and an
+      // external reviewer puts it at 7 days rather than the 14 we had asserted.
+      // Removing beats guessing - the pricing card simply omits the badge.
       // Fresha publishes local-currency pricing per market. These are its published
       // UAE figures (fresha.com/pricing, UAE), the market these pages address.
       // Source: Fresha's own schedules, 2026-09-29.
@@ -124,7 +126,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'Fresha publishes an AI Concierge that answers calls and books appointments. Pricing for it is not listed publicly. Compare scope: Daisy\'s AI receptionist also covers WhatsApp and Instagram chat, and works in Arabic and English.',
+        'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on. Its published material does not name WhatsApp or Instagram, so confirm channel coverage with Fresha directly. Daisy\'s AI receptionist covers calls, WhatsApp and Instagram in Arabic and English.',
     },
 
     targetMarket:
@@ -256,7 +258,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'Marketing is billed per message once the first 50 emails each month are used',
       'Subscription fees plus transaction fees and marketplace commissions add up quickly',
       'Marketing is email and SMS with no AI campaign automation',
-      'Bookings run through the Fresha marketplace brand; Daisy gives you a booking page carrying only your own',
+      'Marketplace bookings carry Fresha branding, though direct booking links, Facebook and Instagram booking and a paid Smart Website add-on are also offered; Daisy includes a fully branded booking page in every plan',
       'Marketplace commission is charged on every new client it introduces, on top of the subscription',
       'Subscription, transaction fee and marketplace commission are billed separately, so the monthly total depends on your volume',
     ],
@@ -300,7 +302,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Fresha have AI features like Daisy?',
         answer:
-          'Fresha publishes an AI Concierge that answers calls and books appointments; it does not list a price for it publicly. The comparison worth making is scope rather than presence: Daisy\'s AI receptionist handles calls and WhatsApp and Instagram chat, takes payments, and works in Arabic and English.',
+          'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on. Its published material does not name WhatsApp or Instagram. Daisy\'s AI receptionist handles calls plus WhatsApp and Instagram chat, takes payments, and works in Arabic and English.',
       },
       {
         question: 'How good is the Fresha mobile app?',
@@ -310,7 +312,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Can I reach Fresha customer support quickly?',
         answer:
-          'Fresha publishes email support with a typical two-day response, chat with a typical two-minute response on all plans, and phone support on the Team plan. Daisy gives every plan a dedicated account manager, live chat and phone support with priority response, without reserving the phone channel for a higher tier.',
+          'Fresha publishes email support with a typical two-day response, chat with a typical two-minute response on all plans, and phone support on the Team plan. Daisy includes customer support on every plan, with priority support on the higher tiers.',
       },
     ],
 
