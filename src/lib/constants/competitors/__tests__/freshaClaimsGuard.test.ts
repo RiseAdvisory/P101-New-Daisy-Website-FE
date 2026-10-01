@@ -242,3 +242,84 @@ describe('Arabic corrections actually reach the Arabic pages', () => {
     }
   });
 });
+
+describe('round-two reviewer findings stay fixed', () => {
+  // Fresha's own AI Concierge page describes calls AND messages. Their FAQ
+  // describes a phone receptionist and never names WhatsApp or Instagram, so
+  // "does not name those channels" is defensible; "calls only" is not.
+  it('does not assert that any rival AI is calls-only', () => {
+    expect(offenders(/calls only|phone calls only|covers phone calls\b[^.]{0,20}only/)).toEqual([]);
+  });
+
+  // Fresha publishes a price for the AI Concierge.
+  it('does not claim the AI Concierge has no public price', () => {
+    expect(
+      offenders(/not listed publicly|does not list a price|سعراً لها علناً|دون سعر معلن/),
+    ).toEqual([]);
+  });
+
+  // Their Schedule 2 records direct booking links, Facebook and Instagram
+  // bookings (free) and a Smart Website add-on, so an unqualified
+  // "bookings run through the marketplace brand" overstates it.
+  it('does not claim all Fresha bookings carry marketplace branding', () => {
+    expect(
+      offenders(/[Bb]ookings run through the Fresha marketplace brand|تمر عبر علامة سوق Fresha/),
+    ).toEqual([]);
+  });
+
+  it('asserts no trial length for Fresha', () => {
+    const tier1 = fs.readFileSync(
+      path.join(ROOT, 'lib', 'constants', 'competitors', 'tier1Data.ts'),
+      'utf8',
+    );
+    const fresha = tier1.slice(tier1.indexOf('\n  fresha: {'), tier1.indexOf('\n  booksy: {'));
+    expect(fresha).not.toMatch(/freeTrialDays/);
+  });
+
+  it('claims no absolute advantage over every competitor', () => {
+    const diff = fs.readFileSync(
+      path.join(ROOT, 'components', 'comparePage', 'DaisyDifferentiators.tsx'),
+      'utf8',
+    );
+    expect(diff).not.toMatch(/every competitor|كل منافس/);
+  });
+
+  // Our own Booksy record sets hasAiReceptionist: true, so a blanket "not one
+  // of these alternatives has an AI receptionist" contradicts our own data.
+  it('does not deny an AI receptionist to a list that includes Booksy', () => {
+    const cp = fs.readFileSync(
+      path.join(ROOT, 'lib', 'constants', 'competitors', 'comparisonPages.ts'),
+      'utf8',
+    );
+    expect(cp).not.toMatch(/Not one of these alternatives includes an AI receptionist/);
+  });
+});
+
+describe('claims about Daisy itself are consistent', () => {
+  // The letter's consumer-protection grounds apply to our own claims too.
+  const files = contentFiles();
+  function find(pattern: RegExp): string[] {
+    const out: string[] = [];
+    for (const f of files) {
+      const t = fs.readFileSync(f, 'utf8');
+      if (pattern.test(t)) out.push(path.relative(ROOT, f));
+    }
+    return out;
+  }
+
+  it('does not claim all six GCC countries are supported today', () => {
+    // Our own copy says Daisy is live in Kuwait today.
+    expect(find(/All 6 GCC countries supported/)).toEqual([]);
+  });
+
+  it('gives one migration timeframe, not two', () => {
+    expect(find(/fully operational on Daisy within 48 hours/)).toEqual([]);
+  });
+
+  // Our pricing data lists 'Basic Customer Support' on the entry tier and
+  // 'Priority Customer Support' higher up, so a dedicated account manager and
+  // phone support on every plan is not supportable.
+  it('does not promise a dedicated account manager on every plan', () => {
+    expect(find(/every plan a dedicated account manager/)).toEqual([]);
+  });
+});

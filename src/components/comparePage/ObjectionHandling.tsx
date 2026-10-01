@@ -18,7 +18,7 @@ function getObjections(competitorName?: string): Objection[] {
   return [
     {
       question: 'Is it hard to switch?',
-      answer: `Switching from ${name} to Daisy is straightforward. Our dedicated onboarding team handles the entire migration, importing your client database, appointment history, and settings. Most businesses are fully operational on Daisy within 48 hours.`,
+      answer: `Switching from ${name} to Daisy is straightforward. Our dedicated onboarding team handles the entire migration, importing your client database, appointment history, and settings. Most businesses are switched inside a week without going offline.`,
       icon: ArrowRightLeft,
     },
     {

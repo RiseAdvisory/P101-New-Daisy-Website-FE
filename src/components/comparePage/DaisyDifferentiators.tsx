@@ -13,7 +13,7 @@ const differentiatorIcons = [Bot, Users, Palette, TrendingUp, Layers, Globe];
 const uiStrings = {
   en: {
     heading: 'What Makes Daisy Different',
-    subheading: 'Six differentiators that set Daisy apart from every competitor',
+    subheading: 'Six things Daisy is built around',
     keyAdvantage: 'Key advantage',
     descriptions: [
       'Handles bookings, payments, and customer service in Arabic and English around the clock.',
@@ -26,7 +26,7 @@ const uiStrings = {
   },
   ar: {
     heading: 'ما الذي يميّز ديزي',
-    subheading: 'ست ميزات تفصل ديزي عن كل منافس',
+    subheading: 'ست ركائز بُنيت ديزي عليها',
     keyAdvantage: 'ميزة رئيسية',
     descriptions: [
       'يتولى الحجوزات والمدفوعات وخدمة العملاء بالعربية والإنجليزية على مدار الساعة.',

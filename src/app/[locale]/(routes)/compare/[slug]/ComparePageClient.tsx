@@ -58,7 +58,7 @@ function DaisyVsPage({
       // actually covers. 'Basic (limited)' capped every rival at "basic"
       // regardless of what their record said.
       competitor: competitor.aiCapabilities.hasAiReceptionist
-        ? 'Voice calls'
+        ? 'AI Concierge'
         : 'No AI receptionist published',
     },
     {
@@ -210,7 +210,7 @@ function DaisyVsPage({
                 'AI receptionist (24/7, Arabic + English)',
                 'Cashback customer acquisition',
                 'Full brand control (white-label)',
-                'All 6 GCC countries supported',
+                'Built for the GCC, live in Kuwait today',
                 'One flat price, no transaction fee and no marketplace commission',
                 'Complete business management suite',
               ]}
