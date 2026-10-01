@@ -20,7 +20,7 @@ export function RelatedPillars({ slugs, locale = 'en' }: RelatedPillarsProps) {
     <section className="bg-[#F8F5F3] px-4 py-12">
       <div className="mx-auto max-w-5xl">
         <h2 className="mb-6 text-2xl font-bold text-[#172524]">
-          Related Guides
+          {locale === 'ar' ? 'أدلة ذات صلة' : 'Related Guides'}
         </h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {pillars.map((pillar) =>
@@ -37,8 +37,8 @@ export function RelatedPillars({ slugs, locale = 'en' }: RelatedPillarsProps) {
                   {pillar.excerpt}
                 </p>
                 <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-primary opacity-70 transition-opacity group-hover:opacity-100">
-                  Read more
-                  <ArrowRight className="h-3.5 w-3.5" />
+                  {locale === 'ar' ? 'اقرأ المزيد' : 'Read more'}
+                  <ArrowRight className="h-3.5 w-3.5 rtl:rotate-180" />
                 </div>
               </Link>
             ) : null

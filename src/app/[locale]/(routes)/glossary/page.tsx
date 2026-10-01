@@ -9,10 +9,17 @@ import { stripHtml } from '@/lib/utils/htmlContent';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const { locale } = params;
+  // Was English for both locales: the Arabic pages' search titles and social
+  // previews read in English.
+  const isAr = locale === 'ar';
   return {
-  title: 'Salon Software Glossary | The Daisy',
+  title: isAr
+      ? 'مسرد مصطلحات برامج الصالونات | ديزي'
+      : 'Salon Software Glossary | The Daisy',
   description:
-    'Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations of salon management, AI receptionist, cashback booking, and more.',
+    isAr
+      ? 'تعرّف على أهم مصطلحات قطاع التجميل وبرامج الصالونات: تعريفات ومقارنات وشروحات من خبراء حول إدارة الصالونات وموظف الاستقبال الذكي والحجز مع الكاشباك وغيرها.'
+      : 'Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations of salon management, AI receptionist, cashback booking, and more.',
   keywords: [
     'salon software glossary',
     'beauty industry terms',
@@ -21,18 +28,26 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     'cashback booking explained',
   ],
   openGraph: {
-    title: 'Salon Software Glossary | The Daisy',
+    title: isAr
+      ? 'مسرد مصطلحات برامج الصالونات | ديزي'
+      : 'Salon Software Glossary | The Daisy',
     description:
-      'Understand key beauty industry and salon software terms. Expert definitions and comparisons.',
+      isAr
+      ? 'تعرّف على أهم مصطلحات قطاع التجميل وبرامج الصالونات: تعريفات ومقارنات من خبراء.'
+      : 'Understand key beauty industry and salon software terms. Expert definitions and comparisons.',
     url: `https://www.jointhedaisy.com/${locale}/glossary`,
     type: 'website',
     images: [{ url: '/images/og/og-default.jpg', width: 1200, height: 630, alt: 'The Daisy' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Salon Software Glossary | The Daisy',
+    title: isAr
+      ? 'مسرد مصطلحات برامج الصالونات | ديزي'
+      : 'Salon Software Glossary | The Daisy',
     description:
-      'Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations.',
+      isAr
+      ? 'تعرّف على أهم مصطلحات قطاع التجميل وبرامج الصالونات: تعريفات ومقارنات وشروحات من خبراء.'
+      : 'Understand key beauty industry and salon software terms. Definitions, comparisons, and expert explanations.',
     images: ['/images/og/og-default.jpg'],
   },
     alternates: localeAlternates('/glossary', locale),

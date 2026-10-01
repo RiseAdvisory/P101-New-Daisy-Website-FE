@@ -1,4 +1,5 @@
 import { getSolution, getRelatedSolutions } from '@/lib/constants/solutions';
+import { getComparePageData } from '@/lib/constants/competitors/comparisonPages';
 import { SolutionHero } from '@/components/solutionsPage/SolutionHero';
 import { ChallengesSection } from '@/components/solutionsPage/ChallengesSection';
 import { IndustryFeatures } from '@/components/solutionsPage/IndustryFeatures';
@@ -49,9 +50,11 @@ export function SolutionsPageClient({ slug, locale = 'en' }: Props) {
       description: s.metaDescription.slice(0, 120) + '...',
     })),
     ...data.relatedComparisons.map((compSlug) => ({
-      title: compSlug
-        .replace(/-/g, ' ')
-        .replace(/\b\w/g, (c) => c.toUpperCase()),
+      // Was the slug title-cased ("Daisy Vs Acuity Scheduling"), in English on
+      // Arabic pages. Use the comparison page's own title in this locale.
+      title:
+        getComparePageData(compSlug, locale)?.data.heroTitle ??
+        compSlug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
       url: `/${locale}/compare/${compSlug}`,
       description: t.seeComparison,
     })),
@@ -97,7 +100,7 @@ export function SolutionsPageClient({ slug, locale = 'en' }: Props) {
       </section>
 
       {/* Challenges */}
-      <ChallengesSection challenges={data.challenges} />
+      <ChallengesSection challenges={data.challenges} locale={locale} />
 
       {/* Features / How Daisy Solves It */}
       <IndustryFeatures features={data.features} locale={locale} />
@@ -135,12 +138,12 @@ export function SolutionsPageClient({ slug, locale = 'en' }: Props) {
       )}
 
       {/* CTA */}
-      <SolutionCTA />
+      <SolutionCTA locale={locale} />
 
       {/* Related */}
       {relatedLinks.length > 0 && (
         <section className="mx-auto max-w-5xl px-4 py-12">
-          <RelatedPages links={relatedLinks} />
+          <RelatedPages links={relatedLinks} locale={locale} />
         </section>
       )}
     </main>

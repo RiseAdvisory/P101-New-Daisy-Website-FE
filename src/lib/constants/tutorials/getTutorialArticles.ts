@@ -1,6 +1,6 @@
 import { tutorialCatalog, TutorialCategory } from './tutorialCatalog';
 import { businessBlogPosts, professionalBlogPosts, LocalBlogPost } from '../blog/blogData';
-import { guideEntries } from '../guides/guideData';
+import { guideData } from '../guides/guideData';
 
 export interface TutorialArticle {
   title: string;
@@ -44,8 +44,11 @@ function blogPostToTutorialArticle(
   };
 }
 
-function guideToTutorialArticle(slug: string): TutorialArticle | null {
-  const guide = guideEntries.find((g) => g.slug === slug);
+function guideToTutorialArticle(slug: string, locale: string = 'en'): TutorialArticle | null {
+  // Was the English guide list regardless of locale, so /ar/resources/tutorials
+  // showed English guide cards beside correctly localised blog cards.
+  const guides = guideData[locale as keyof typeof guideData] ?? guideData.en;
+  const guide = guides.find((g) => g.slug === slug) ?? guideData.en.find((g) => g.slug === slug);
   if (!guide) return null;
 
   return {
@@ -86,7 +89,7 @@ export function getTutorialArticles(
         .filter((a): a is TutorialArticle => a !== null);
 
       const guideArticles = category.guideSlugs
-        .map((slug) => guideToTutorialArticle(slug))
+        .map((slug) => guideToTutorialArticle(slug, locale))
         .filter((a): a is TutorialArticle => a !== null);
 
       const articles = [...blogArticles, ...guideArticles];

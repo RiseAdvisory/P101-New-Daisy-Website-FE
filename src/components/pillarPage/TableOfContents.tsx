@@ -12,19 +12,27 @@ interface TableOfContentsProps {
   sections: TOCItem[];
   includeIntro?: boolean;
   includeFaq?: boolean;
+  locale?: string;
 }
+
+const uiStrings = {
+  en: { intro: 'Introduction', faq: 'FAQ', toc: 'Table of Contents', onPage: 'On this page', start: 'Start Free Trial' },
+  ar: { intro: 'مقدمة', faq: 'الأسئلة الشائعة', toc: 'المحتويات', onPage: 'في هذه الصفحة', start: 'ابدأ تجربتك المجانية' },
+};
 
 export function TableOfContents({
   sections,
   includeIntro = true,
   includeFaq = true,
+  locale = 'en',
 }: TableOfContentsProps) {
+  const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
   const [activeId, setActiveId] = useState<string>('');
 
   const allItems: TOCItem[] = [
-    ...(includeIntro ? [{ id: 'introduction', title: 'Introduction' }] : []),
+    ...(includeIntro ? [{ id: 'introduction', title: t.intro }] : []),
     ...sections,
-    ...(includeFaq ? [{ id: 'faq', title: 'FAQ' }] : []),
+    ...(includeFaq ? [{ id: 'faq', title: t.faq }] : []),
   ];
 
   useEffect(() => {
@@ -54,7 +62,7 @@ export function TableOfContents({
       {/* Mobile TOC, collapsible, visible only on small screens */}
       <details className="mb-8 rounded-xl border border-[#E8E9E9] bg-[#F8F5F3] lg:hidden">
         <summary className="cursor-pointer p-4 font-semibold text-[#172524]">
-          Table of Contents
+          {t.toc}
         </summary>
         <nav className="border-t border-[#E8E9E9] p-4">
           <ul className="space-y-2">
@@ -76,7 +84,7 @@ export function TableOfContents({
       <aside className="hidden lg:block">
         <div className="sticky top-8">
           <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#586968]">
-            On this page
+            {t.onPage}
           </p>
           <nav>
             <ul className="space-y-1 border-l border-[#E8E9E9]">
@@ -101,7 +109,7 @@ export function TableOfContents({
               href="/get-the-app"
               className="block rounded-xl bg-primary px-4 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-primary/90"
             >
-              Start Free Trial
+              {t.start}
             </Link>
           </div>
         </div>

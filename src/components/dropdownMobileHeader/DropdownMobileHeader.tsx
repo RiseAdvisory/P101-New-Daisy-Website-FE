@@ -8,7 +8,8 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 interface PropsDropDownHeader {
   state: string;
@@ -29,6 +30,7 @@ export const DropDownMobileHeader = ({
 }: PropsDropDownHeader) => {
   const [open, setOpen] = useState(false);
   const router = useRouter();
+  const isAr = getLocaleFromPathname(usePathname() || '') === 'ar';
   const [active, setActive] = useState('');
   const [stateActive, setStateActive] = useState('');
   const handleSelect = (item: any) => {
@@ -53,7 +55,7 @@ export const DropDownMobileHeader = ({
           classNames,
         )}
       >
-        <span className="sr-only">Language: </span>
+        <span className="sr-only">{isAr ? 'اللغة: ' : 'Language: '}</span>
         <p className="mr-2 rtl:mr-0 rtl:">{state}</p>
         <ArrowDownIcon className=" stroke-white group-hover:stroke-primary rtl:mr-2" />
       </DropdownMenuTrigger>

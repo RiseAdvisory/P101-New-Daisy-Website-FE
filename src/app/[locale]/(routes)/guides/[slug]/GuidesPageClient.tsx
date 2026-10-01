@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { GuideData } from '@/lib/constants/guides/guideData';
+import { GuideData, guideData } from '@/lib/constants/guides/guideData';
 import { FaqSchema } from '@/components/seo/FaqSchema';
 import { HowToSchema } from '@/components/seo/HowToSchema';
 import { ComparisonBreadcrumbSchema } from '@/components/seo/ComparisonBreadcrumbSchema';
@@ -12,7 +12,41 @@ interface Props {
   locale: string;
 }
 
+
+const uiStrings = {
+  en: {
+    guides: 'Guides',
+    whyMatters: 'Why This Matters',
+    steps: 'Step-by-Step Guide',
+    howDaisyHelps: 'How Does Daisy Help?',
+    faq: 'Frequently Asked Questions',
+    related: 'Related Guides',
+    ready: 'Ready to Get Started?',
+    trial: 'Try Daisy free for 14 days. No credit card required.',
+    start: 'Start Free Trial',
+  },
+  ar: {
+    guides: 'الأدلة',
+    whyMatters: 'لماذا يهم هذا',
+    steps: 'دليل خطوة بخطوة',
+    howDaisyHelps: 'كيف تساعدك ديزي؟',
+    faq: 'الأسئلة الشائعة',
+    related: 'أدلة ذات صلة',
+    ready: 'مستعد للبدء؟',
+    trial: 'جرّب ديزي مجاناً لمدة 14 يوماً. لا حاجة لبطاقة ائتمان.',
+    start: 'ابدأ تجربتك المجانية',
+  },
+};
+
+/** Related-guide label: the guide's own title in this locale, not its slug. */
+function relatedGuideTitle(slug: string, locale: string): string {
+  const list = guideData[locale as keyof typeof guideData] ?? guideData.en;
+  const match = list.find((g) => g.slug === slug);
+  return match?.title ?? slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
 export function GuidesPageClient({ guide, locale }: Props) {
+  const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
   const slug = guide.slug;
 
   return (
@@ -39,7 +73,7 @@ export function GuidesPageClient({ guide, locale }: Props) {
         <div className="mx-auto max-w-4xl">
           <nav className="mb-6 text-sm text-[#586968]">
             <Link href={`/${locale}/guides`} className="hover:text-primary">
-              Guides
+              {t.guides}
             </Link>
             <span className="mx-2">/</span>
             <span className="text-[#172524]">{guide.title}</span>
@@ -68,7 +102,7 @@ export function GuidesPageClient({ guide, locale }: Props) {
       {/* Problem Explained */}
       <section className="mx-auto max-w-4xl px-4 py-12">
         <h2 className="mb-4 text-2xl font-bold text-[#172524]">
-          Why This Matters
+          {t.whyMatters}
         </h2>
         <p className="text-lg leading-relaxed text-[#455150]">
           <span
@@ -81,7 +115,7 @@ export function GuidesPageClient({ guide, locale }: Props) {
       <section className="bg-[#F8F5F3] px-4 py-12">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-8 text-2xl font-bold text-[#172524]">
-            Step-by-Step Guide
+            {t.steps}
           </h2>
           <ol className="space-y-6">
             {guide.steps.map((step, index) => (
@@ -110,7 +144,7 @@ export function GuidesPageClient({ guide, locale }: Props) {
       {/* How Daisy Helps */}
       <section className="mx-auto max-w-4xl px-4 py-12">
         <h2 className="mb-4 text-2xl font-bold text-[#172524]">
-          How Does Daisy Help?
+          {t.howDaisyHelps}
         </h2>
         <div className="rounded-2xl border border-primaryBtn/30 bg-primary/5 p-6 md:p-8">
           <p
@@ -125,7 +159,7 @@ export function GuidesPageClient({ guide, locale }: Props) {
         <section className="bg-[#F8F5F3] px-4 py-12">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-6 text-2xl font-bold text-[#172524]">
-              Frequently Asked Questions
+              {t.faq}
             </h2>
             <div className="space-y-4">
               {guide.faqs.map((faq, i) => (
@@ -151,7 +185,7 @@ export function GuidesPageClient({ guide, locale }: Props) {
       {guide.relatedGuides.length > 0 && (
         <section className="mx-auto max-w-4xl px-4 py-12">
           <h2 className="mb-6 text-2xl font-bold text-[#172524]">
-            Related Guides
+            {t.related}
           </h2>
           <div className="flex flex-wrap gap-3">
             {guide.relatedGuides.map((relatedSlug) => (
@@ -160,9 +194,7 @@ export function GuidesPageClient({ guide, locale }: Props) {
                 href={`/${locale}/guides/${relatedSlug}`}
                 className="rounded-full border border-[#E8E9E9] px-4 py-2 text-sm font-medium text-[#455150] transition-colors hover:border-primary/20 hover:bg-primary/5 hover:text-primary"
               >
-                {relatedSlug
-                  .replace(/-/g, ' ')
-                  .replace(/\b\w/g, (c) => c.toUpperCase())}
+                {relatedGuideTitle(relatedSlug, locale)}
               </Link>
             ))}
           </div>
@@ -173,16 +205,16 @@ export function GuidesPageClient({ guide, locale }: Props) {
       <section className="bg-primary px-4 py-12">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="mb-4 text-2xl font-bold text-white">
-            Ready to Get Started?
+            {t.ready}
           </h2>
           <p className="mb-6 text-white/80">
-            Try Daisy free for 14 days. No credit card required.
+            {t.trial}
           </p>
           <Link
             href={`/${locale}/get-the-app`}
             className="inline-block rounded-full bg-white px-8 py-3 font-semibold text-primary transition-colors hover:bg-white/90"
           >
-            Start Free Trial
+            {t.start}
           </Link>
         </div>
       </section>
