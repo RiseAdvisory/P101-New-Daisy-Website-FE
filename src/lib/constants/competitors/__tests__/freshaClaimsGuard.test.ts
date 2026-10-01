@@ -348,3 +348,20 @@ describe('round-three fact-check findings stay fixed', () => {
     expect(bad).toEqual([]);
   });
 });
+
+describe('insight statistics about Fresha', () => {
+  // The Arabic stat kept value '20-30%' beside a description saying 50% after
+  // the English twin was corrected. Every insight that names Fresha must carry
+  // the published UAE figure, in both locales.
+  it('shows 50% on every insight that names Fresha', () => {
+    const src = fs.readFileSync(
+      path.join(ROOT, 'lib', 'constants', 'insights', 'insightData.ts'),
+      'utf8',
+    );
+    const wrong: string[] = [];
+    for (const m of src.matchAll(/value:\s*'([^']*)',\s*description:\s*'([^']*)'/g)) {
+      if (/Fresha/.test(m[2]) && m[1] !== '50%') wrong.push(`${m[1]} | ${m[2].slice(0, 60)}`);
+    }
+    expect(wrong).toEqual([]);
+  });
+});
