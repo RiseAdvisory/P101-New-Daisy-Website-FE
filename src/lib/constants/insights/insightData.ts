@@ -348,9 +348,9 @@ const industryStatsAr: StatCategory[] = [
         source: 'Payment industry standard',
       },
       {
-        value: '20-30%',
+        value: '50%',
         description: 'عمولة لمرة واحدة تنشرها Fresha على كل عميل جديد يجلبه سوقها في الإمارات (بحد أدنى 20 درهماً؛ العملاء العائدون مجاناً)',
-        source: 'Platform pricing analysis',
+        source: 'أسعار Fresha المنشورة في الإمارات',
       },
       {
         value: '15-20%',
