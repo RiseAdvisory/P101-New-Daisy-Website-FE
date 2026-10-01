@@ -670,9 +670,9 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <p><strong>Cons:</strong> the statements take work to read, the total moves month to month, and the networks change interchange rates from time to time.</p>
 
 <h3>Commission-based processing</h3>
-<p>Some salon platforms take a share of each booking as commission instead of, or on top of, a processing fee, Fresha, for example, publishes a one-time 50% commission on each new client its marketplace introduces, minimum AED 20, with returning clients free. Marketplace platforms that also bring you clients commonly work this way.</p>
+<p>Some salon platforms take a share of each booking as commission instead of, or on top of, a processing fee. Fresha, for example, publishes in the UAE a one-time 50% commission on each new client its marketplace introduces, minimum AED 20, with returning clients free. Marketplace platforms that also bring you clients commonly work this way.</p>
 <p><strong>Pros:</strong> usually nothing upfront and no monthly subscription, so you pay only when you earn.</p>
-<p><strong>Cons:</strong> the cost lands on acquisition. A one-time 50% commission on a first 300 AED booking is 150 AED against roughly 8 AED for a standard processing fee, but it is charged once per client, so it falls away as those clients return.</p>
+<p><strong>Cons:</strong> the cost lands on acquisition. At the UAE rate, a one-time 50% commission on a first 300 AED booking is 150 AED against roughly 8 AED for a standard processing fee, but it is charged once per client, so it falls away as those clients return.</p>
 
 <h2>Provider-by-provider comparison</h2>
 <p>How the main options compare on fees, features, and what they cost in total:</p>
@@ -707,7 +707,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <ul>
 <li><strong>Processing model:</strong> Flat-rate plus commission on new clients</li>
 <li><strong>Online payments (UAE published):</strong> 4.90% + AED 0.75 per transaction</li>
-<li><strong>Commission on new client bookings:</strong> a one-time 50% commission on new clients acquired through the Fresha marketplace, minimum AED 20; returning clients free</li>
+<li><strong>Commission on new client bookings (UAE published):</strong> a one-time 50% commission on new clients acquired through the Fresha marketplace, minimum AED 20; returning clients free</li>
 <li><strong>Monthly platform fee:</strong> priced per market, AED 149.95 per month for the Independent plan in the UAE, with Team plans at custom rates</li>
 <li><strong>Key consideration:</strong> the marketplace commission, not the processing rate, is what moves the total. It is charged once per new client, at 50% of that first booking, so a month of heavy marketplace acquisition costs far more than the headline rate suggests, while a month of returning clients costs nothing extra. A salon doing 100 bookings per month averaging 250 AED, where 30 are new marketplace clients, pays roughly 3,750 AED in commissions that month, before processing fees. On The Daisy there is no commission either way.</li>
 </ul>
@@ -1531,7 +1531,7 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <p><strong>السلبيات:</strong> من الصعب قراءة البيانات الشهرية، وتتقلب التكاليف، وتغير شبكات البطاقات أسعار التبادل بشكل دوري.</p>
 
 <h3>المعالجة على أساس العمولة</h3>
-<p> تأخذ بعض منصات الصالونات نسبة مئوية من كل حجز كعمولة بدلاً من (أو بالإضافة إلى) رسوم المعالجة القياسية. فمثلاً تنشر Fresha عمولة لمرة واحدة 50% على كل عميل جديد يجلبه سوقها، بحد أدنى 20 درهماً، والعملاء العائدون مجاناً. ويشيع هذا النموذج بين منصات السوق التي توفر أيضاً اكتساب العملاء.</p>
+<p> تأخذ بعض منصات الصالونات نسبة مئوية من كل حجز كعمولة بدلاً من (أو بالإضافة إلى) رسوم المعالجة القياسية. فمثلاً تنشر Fresha في الإمارات عمولة لمرة واحدة 50% على كل عميل جديد يجلبه سوقها، بحد أدنى 20 درهماً، والعملاء العائدون مجاناً. ويشيع هذا النموذج بين منصات السوق التي توفر أيضاً اكتساب العملاء.</p>
 <p><strong>الإيجابيات:</strong> غالبًا لا توجد رسوم مقدمة أو اشتراك شهري - لا تدفع إلا عندما تكسب.</p>
 <p><strong>السلبيات:</strong> باهظ الثمن للغاية على نطاق واسع. العمولة لمرة واحدة بنسبة 50% على حجز أول بقيمة 300 درهم هي 150 درهماً، مقابل نحو 8 دراهم لرسوم المعالجة القياسية، لكنها تُحتسب مرة واحدة لكل عميل فتتلاشى مع عودته.</p>
 
