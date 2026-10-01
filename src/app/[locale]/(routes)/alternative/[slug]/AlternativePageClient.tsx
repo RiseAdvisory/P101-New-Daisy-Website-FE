@@ -19,6 +19,34 @@ interface Props {
   locale?: string;
 }
 
+
+const uiStrings = {
+  en: {
+    answer: (name: string) =>
+      `The Daisy is an alternative to ${name} built for GCC beauty businesses: a 24/7 AI receptionist across voice, WhatsApp and Instagram, cashback-driven customer acquisition, and Arabic and English treated as equals with full RTL.`,
+    whyLook: (name: string) => `Why People Look for ${name} Alternatives`,
+    howCompares: (name: string) => `How Daisy Compares to ${name}`,
+    whySwitch: 'Why Switch to Daisy?',
+    otherAlternatives: (name: string) => `Other ${name} Alternatives`,
+    faq: 'Frequently Asked Questions',
+    topAlternatives: (name: string) => `Top Alternatives to ${name}`,
+  },
+  ar: {
+    answer: (name: string) =>
+      `ديزي بديل لـ ${name} مبني لأعمال التجميل في الخليج: موظف استقبال ذكي على مدار الساعة عبر المكالمات وواتساب وإنستغرام، واستقطاب عملاء عبر الكاشباك، والعربية والإنجليزية بأولوية متساوية مع دعم كامل للكتابة من اليمين إلى اليسار.`,
+    whyLook: (name: string) => `لماذا يبحث البعض عن بدائل لـ ${name}`,
+    howCompares: (name: string) => `كيف تقارن ديزي مع ${name}`,
+    whySwitch: 'لماذا الانتقال إلى ديزي؟',
+    otherAlternatives: (name: string) => `بدائل أخرى لـ ${name}`,
+    faq: 'الأسئلة الشائعة',
+    topAlternatives: (name: string) => `أبرز البدائل لـ ${name}`,
+  },
+};
+
+type UiStrings = (typeof uiStrings)['en'];
+const stringsFor = (locale: string): UiStrings =>
+  (uiStrings as Record<string, UiStrings>)[locale] || uiStrings.en;
+
 export function AlternativePageClient({ slug, locale = 'en' }: Props) {
   const result = getAlternativePageData(slug, locale);
   if (!result) return null;
@@ -41,6 +69,7 @@ function AlternativeSinglePage({
 }) {
   const competitor = getCompetitor(data.competitorSlug, locale);
   if (!competitor) return null;
+  const t = stringsFor(locale);
 
   const relatedPages = getRelatedAlternativePages(slug, 4, locale);
   // Add cross-link to the compare page
@@ -75,6 +104,7 @@ function AlternativeSinglePage({
         title={data.heroTitle}
         subtitle={data.heroSubtitle}
         variant="alternative"
+        locale={locale}
       />
 
       {/* Answer block for AI extraction */}
@@ -83,7 +113,7 @@ function AlternativeSinglePage({
           className="text-lg leading-relaxed text-gray-600"
           dangerouslySetInnerHTML={{
             __html: renderSafeHtml(
-              `The Daisy is an alternative to ${competitor.name} built for GCC beauty businesses: a 24/7 AI receptionist across voice, WhatsApp and Instagram, cashback-driven customer acquisition, and Arabic and English treated as equals with full RTL.`,
+              t.answer(competitor.name),
             ),
           }}
         />
@@ -92,7 +122,7 @@ function AlternativeSinglePage({
       {/* Pain Points */}
       <section className="mx-auto max-w-4xl px-4 py-12">
         <h2 className="mb-6 text-2xl font-bold text-gray-900">
-          Why People Look for {competitor.name} Alternatives
+          {t.whyLook(competitor.name)}
         </h2>
         <div className="space-y-3">
           {data.painPoints.map((point, i) => (
@@ -114,11 +144,12 @@ function AlternativeSinglePage({
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-5xl px-4">
           <h2 className="mb-6 text-2xl font-bold text-gray-900">
-            How Daisy Compares to {competitor.name}
+            {t.howCompares(competitor.name)}
           </h2>
           <FeatureComparisonTable
             competitorSlug={data.competitorSlug}
             competitorName={competitor.name}
+            locale={locale}
           />
         </div>
       </section>
@@ -126,7 +157,7 @@ function AlternativeSinglePage({
       {/* Why Switch to Daisy */}
       <section className="mx-auto max-w-4xl px-4 py-12">
         <h2 className="mb-6 text-2xl font-bold text-gray-900">
-          Why Switch to Daisy?
+          {t.whySwitch}
         </h2>
         <div className="space-y-3">
           {data.switchingReasons.map((reason, i) => (
@@ -149,7 +180,7 @@ function AlternativeSinglePage({
         <section className="bg-gray-50 py-12">
           <div className="mx-auto max-w-5xl px-4">
             <h2 className="mb-6 text-2xl font-bold text-gray-900">
-              Other {competitor.name} Alternatives
+              {t.otherAlternatives(competitor.name)}
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {data.topAlternatives.map((altSlug) => (
@@ -170,7 +201,7 @@ function AlternativeSinglePage({
         <section className="bg-gray-50 py-12">
           <div className="mx-auto max-w-4xl px-4">
             <h2 className="mb-6 text-2xl font-bold text-gray-900">
-              Frequently Asked Questions
+              {t.faq}
             </h2>
             <div className="space-y-4">
               {competitor.faq.map((faq, i) => (
@@ -194,19 +225,20 @@ function AlternativeSinglePage({
 
       {/* Objection Handling */}
       <section className="mx-auto max-w-5xl px-4 py-12">
-        <ObjectionHandling variant="compact" competitorName={competitor.name} />
+        <ObjectionHandling variant="compact" competitorName={competitor.name} locale={locale} />
       </section>
 
       {/* CTA */}
       <SwitchingCTA
         competitorName={competitor.name}
         switchingReasons={competitor.daisySwitchingReasons.slice(0, 3)}
+        locale={locale}
       />
 
       {/* Related Pages */}
       {allRelatedPages.length > 0 && (
         <section className="mx-auto max-w-5xl px-4 py-12">
-          <RelatedPages links={allRelatedPages} />
+          <RelatedPages links={allRelatedPages} locale={locale} />
         </section>
       )}
     </main>
@@ -224,6 +256,7 @@ function BestAlternativesPage({
 }) {
   const competitor = getCompetitor(data.competitorSlug, locale);
   if (!competitor) return null;
+  const t = stringsFor(locale);
 
   return (
     <main className="min-h-screen">
@@ -235,13 +268,14 @@ function BestAlternativesPage({
       <WebPageSchema
         title={data.metaTitle}
         description={data.metaDescription}
-        url={`https://www.jointhedaisy.com/alternative/${slug}`}
+        url={`https://www.jointhedaisy.com/${locale}/alternative/${slug}`}
       />
 
       <ComparisonHero
         title={data.heroTitle}
         subtitle={data.heroSubtitle}
         variant="best-alternatives"
+        locale={locale}
       />
 
       {/* Intro */}
@@ -256,7 +290,7 @@ function BestAlternativesPage({
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-5xl px-4">
           <h2 className="mb-6 text-2xl font-bold text-gray-900">
-            Top Alternatives to {competitor.name}
+            {t.topAlternatives(competitor.name)}
           </h2>
           <div className="space-y-4">
             {data.alternatives.map((altSlug) => (
@@ -282,7 +316,7 @@ function BestAlternativesPage({
       <DaisyDifferentiators locale={locale} />
 
       {/* CTA */}
-      <SwitchingCTA competitorName={competitor.name} />
+      <SwitchingCTA competitorName={competitor.name} locale={locale} />
     </main>
   );
 }

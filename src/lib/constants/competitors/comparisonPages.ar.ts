@@ -1033,6 +1033,34 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'ديزي يقدم AI استقبال/تواصل + سوق + كاشباك + واجهة عربية/RTL، ما يجعله منصة نمو لا مجرد جدولة.',
   },
   {
+    // Had no Arabic entry, so /ar/alternative/best-simplybookme-alternatives
+    // rendered entirely in English. The English intro's absence claims about
+    // SimplyBook.me (translated Arabic, no AI, no marketplace) are unverified
+    // and deliberately not carried over.
+    slug: 'best-simplybookme-alternatives',
+    competitorSlug: 'simplybook-me',
+    metaTitle: 'أفضل بدائل SimplyBook.me للصالونات (2026)',
+    metaDescription:
+      'تعبت من إدارة أكثر من 70 إضافة؟ قارن بدائل SimplyBook.me المخصصة للتجميل: منصات متكاملة مع AI وسوق.',
+    keywords: ['بدائل simplybook.me', 'بدائل simplybook'],
+    heroTitle: 'أفضل بدائل SimplyBook.me في 2026',
+    heroSubtitle:
+      'التسعير المجزأ على أكثر من 70 إضافة يبدو مرناً، حتى تجد نفسك تدفع مقابل 15 ميزة كان يُفترض أن تكون مشمولة أصلاً.',
+    intro:
+      'يقدم SimplyBook.me حجزاً عاماً قائماً على نظام إضافات مجزأ، من المجاني حتى $59.90 شهرياً. ولعمل تجميل يريد أدوات تعمل دون تجميع، هذه أفضل البدائل المتكاملة.',
+    alternatives: ['fresha', 'booksy', 'vagaro', 'glossgenius', 'acuity-scheduling', 'setmore'],
+    bestFor: {
+      fresha: 'الأفضل للاكتشاف عبر السوق بسعر دخول منشور منخفض',
+      booksy: 'الأفضل لمحترفي التجميل الذين يعتمدون على الجوال',
+      vagaro: 'الأفضل لميزات شاملة دون تعقيد الإضافات',
+      glossgenius: 'الأفضل للتصميم الأنيق والبساطة',
+      'acuity-scheduling': 'الأفضل لتخصيص الجدولة المتقدم',
+      setmore: 'الأفضل للجدولة الأساسية المجانية',
+    },
+    daisyEdge:
+      'تستبدل هذه البدائل تعقيد الإضافات بمنصات متكاملة. يجيب Fresha وBooksy على المكالمات بالذكاء الاصطناعي، لكن أياً منها لا يجمع ذلك مع الذكاء الاصطناعي عبر واتساب وإنستغرام، أو سوق كاشباك يستقطب العملاء. ديزي تستبدل التعقيد بمنصة واحدة تنمّي عملك أيضاً.',
+  },
+  {
     slug: 'best-simplybook-me-alternatives',
     competitorSlug: 'simplybook-me',
     metaTitle: 'أفضل بدائل SimplyBook.me (2026)',

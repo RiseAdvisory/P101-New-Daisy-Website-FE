@@ -6,9 +6,22 @@ interface ProsConsListProps {
   cons: string[];
   title: string;
   heading?: string;
+  locale?: string;
 }
 
-export const ProsConsList: FC<ProsConsListProps> = ({ pros, cons, title, heading }) => {
+const uiStrings = {
+  en: { strengths: 'Strengths', weigh: 'Things to weigh' },
+  ar: { strengths: 'نقاط القوة', weigh: 'ما يستحق الموازنة' },
+};
+
+export const ProsConsList: FC<ProsConsListProps> = ({
+  pros,
+  cons,
+  title,
+  heading,
+  locale = 'en',
+}) => {
+  const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
   return (
     <section className="py-16 px-4">
       <div className="mx-auto max-w-6xl">
@@ -23,7 +36,7 @@ export const ProsConsList: FC<ProsConsListProps> = ({ pros, cons, title, heading
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10">
                 <Check className="h-4 w-4 text-primary" strokeWidth={3} />
               </div>
-              <h3 className="text-lg font-bold text-primary">Strengths</h3>
+              <h3 className="text-lg font-bold text-primary">{t.strengths}</h3>
             </div>
             <ul className="space-y-4">
               {pros.map((pro) => (
@@ -43,7 +56,7 @@ export const ProsConsList: FC<ProsConsListProps> = ({ pros, cons, title, heading
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-red-50">
                 <X className="h-4 w-4 text-red-500" strokeWidth={3} />
               </div>
-              <h3 className="text-lg font-bold text-red-600">Things to weigh</h3>
+              <h3 className="text-lg font-bold text-red-600">{t.weigh}</h3>
             </div>
             <ul className="space-y-4">
               {cons.map((con) => (

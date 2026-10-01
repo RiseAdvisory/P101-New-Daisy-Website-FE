@@ -8,7 +8,30 @@ interface VerdictSectionProps {
   competitorReasons: string[];
   competitorName: string;
   heading?: string;
+  /**
+   * Who the left-hand list is for. Defaults to Daisy. Competitor-vs pages pass
+   * competitor A: they used to render A's reasons (e.g. Fresha's) under a
+   * hardcoded "Choose Daisy if..." heading, presenting a rival's selling
+   * points as Daisy's.
+   */
+  optionAName?: string;
+  locale?: string;
 }
+
+const uiStrings = {
+  en: {
+    heading: (a: string, b: string) => `Should You Choose ${a} or ${b}?`,
+    verdict: 'Our Verdict',
+    chooseIf: (name: string) => `Choose ${name} if...`,
+    daisy: 'Daisy',
+  },
+  ar: {
+    heading: (a: string, b: string) => `هل تختار ${a} أم ${b}؟`,
+    verdict: 'خلاصتنا',
+    chooseIf: (name: string) => `اختر ${name} إذا...`,
+    daisy: 'ديزي',
+  },
+};
 
 export const VerdictSection: FC<VerdictSectionProps> = ({
   verdict,
@@ -16,12 +39,16 @@ export const VerdictSection: FC<VerdictSectionProps> = ({
   competitorReasons,
   competitorName,
   heading,
+  optionAName,
+  locale = 'en',
 }) => {
+  const t = uiStrings[locale as keyof typeof uiStrings] || uiStrings.en;
+  const optionA = optionAName ?? t.daisy;
   return (
     <section className="py-16 px-4 bg-[#F8F5F3]">
       <div className="mx-auto max-w-4xl">
         <h2 className="mb-6 text-center text-3xl font-bold text-[#172524]">
-          {heading || `Should You Choose Daisy or ${competitorName}?`}
+          {heading || t.heading(optionA, competitorName)}
         </h2>
 
         {/* Verdict Box */}
@@ -29,7 +56,7 @@ export const VerdictSection: FC<VerdictSectionProps> = ({
           <div className="mb-4 flex items-center gap-2">
             <div className="h-1.5 w-1.5 rounded-full bg-primary" />
             <span className="text-sm font-bold text-primary uppercase tracking-wider">
-              Our Verdict
+              {t.verdict}
             </span>
           </div>
           <p className="text-lg leading-relaxed text-[#172524] md:text-xl">
@@ -46,7 +73,7 @@ export const VerdictSection: FC<VerdictSectionProps> = ({
                 <ArrowRight className="h-5 w-5 text-primary" />
               </div>
               <h3 className="text-lg font-bold text-[#172524]">
-                Choose Daisy if...
+                {t.chooseIf(optionA)}
               </h3>
             </div>
             <ul className="space-y-4">
@@ -73,7 +100,7 @@ export const VerdictSection: FC<VerdictSectionProps> = ({
                 <ArrowRight className="h-5 w-5 text-[#586968]" />
               </div>
               <h3 className="text-lg font-bold text-[#172524]">
-                Choose {competitorName} if...
+                {t.chooseIf(competitorName)}
               </h3>
             </div>
             <ul className="space-y-4">

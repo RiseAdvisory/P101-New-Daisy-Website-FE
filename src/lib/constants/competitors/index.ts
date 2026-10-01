@@ -30,6 +30,8 @@ export { aiTools, aiToolsI18n } from './aiTools';
 // Tier data I18n helpers
 export { getTier1CompetitorsI18n } from './tier1Data';
 import { getTier1CompetitorsI18n } from './tier1Data';
+import { getTier2CompetitorsI18n } from './tier2Data';
+import { getTier3CompetitorsI18n } from './tier3Data';
 export { getTier2CompetitorsI18n } from './tier2Data';
 export { getTier3CompetitorsI18n } from './tier3Data';
 
@@ -92,7 +94,13 @@ export function getCompetitor(
   locale: string = 'en',
 ): CompetitorData | undefined {
   if (locale === 'ar') {
-    const ar = getTier1CompetitorsI18n().ar?.[slug];
+    // All three tiers. The first fix here read tier 1 only, so Glamera, DINGG,
+    // Mangomint and every other tier-2/3 rival still rendered their English
+    // record on Arabic pages.
+    const ar =
+      getTier1CompetitorsI18n().ar?.[slug] ??
+      getTier2CompetitorsI18n().ar?.[slug] ??
+      getTier3CompetitorsI18n().ar?.[slug];
     if (ar) return ar;
   }
   return competitors[slug];
@@ -120,22 +128,47 @@ export function getAiCompetitors(): CompetitorData[] {
   );
 }
 
+// Was 'Not Available' for 0. These are Daisy's own 0-3 editorial ratings, so a
+// 0 is the absence of a documented capability, not proof the competitor lacks
+// it. Publishing it as "Not Available" asserted more than we know.
+const RATING_LABELS: Record<'en' | 'ar', Record<FeatureRating, string>> = {
+  en: { 0: 'Not published', 1: 'Basic', 2: 'Good', 3: 'Best-in-Class' },
+  ar: { 0: 'غير منشور', 1: 'أساسي', 2: 'جيد', 3: 'الأفضل في فئته' },
+};
+
 /** Feature rating label */
-export function featureRatingLabel(rating: FeatureRating): string {
-  const labels: Record<FeatureRating, string> = {
-    // Was 'Not Available'. These are Daisy's own 0-3 editorial ratings, so a 0
-    // is the absence of a documented capability, not proof the competitor
-    // lacks it. Publishing it as "Not Available" asserted more than we know.
-    0: 'Not published',
-    1: 'Basic',
-    2: 'Good',
-    3: 'Best-in-Class',
-  };
-  return labels[rating];
+export function featureRatingLabel(rating: FeatureRating, locale: string = 'en'): string {
+  return (RATING_LABELS[locale as 'en' | 'ar'] ?? RATING_LABELS.en)[rating];
+}
+
+const FEATURE_CATEGORY_LABELS: Record<
+  keyof typeof daisyData.features,
+  { en: string; ar: string }
+> = {
+  onlineBooking: { en: 'Online Booking', ar: 'الحجز أونلاين' },
+  posAndPayments: { en: 'POS & Payments', ar: 'نقاط البيع والمدفوعات' },
+  clientManagement: { en: 'Client Management', ar: 'إدارة العملاء' },
+  staffManagement: { en: 'Staff Management', ar: 'إدارة الفريق' },
+  marketingAndCrm: { en: 'Marketing & Promotion', ar: 'التسويق والترويج' },
+  inventoryManagement: { en: 'Inventory Management', ar: 'إدارة المخزون' },
+  reportingAndAnalytics: { en: 'Reporting & Analytics', ar: 'التقارير والتحليلات' },
+  aiCapabilities: { en: 'AI Capabilities', ar: 'قدرات الذكاء الاصطناعي' },
+  brandingAndWhiteLabel: { en: 'Branding & White-Label', ar: 'العلامة التجارية والوايت ليبل' },
+  marketplaceAndDiscovery: { en: 'Marketplace & Discovery', ar: 'السوق والاكتشاف' },
+};
+
+/**
+ * Display label for a feature category key. Replaces the camelCase-splitting
+ * that rendered "pos And Payments" - in English - as a heading on Arabic pages.
+ */
+export function featureCategoryLabel(key: string, locale: string = 'en'): string {
+  const entry = FEATURE_CATEGORY_LABELS[key as keyof typeof FEATURE_CATEGORY_LABELS];
+  if (!entry) return key.replace(/([A-Z])/g, ' $1').trim();
+  return locale === 'ar' ? entry.ar : entry.en;
 }
 
 /** Compare a competitor's features against Daisy */
-export function compareFeatures(slug: string): {
+export function compareFeatures(slug: string, locale: string = 'en'): {
   category: string;
   daisy: FeatureRating;
   competitor: FeatureRating;
@@ -161,7 +194,7 @@ export function compareFeatures(slug: string): {
   ];
 
   return categories.map(({ key, label }) => ({
-    category: label,
+    category: locale === 'en' ? label : featureCategoryLabel(key, locale),
     daisy: daisyData.features[key],
     competitor: competitor.features[key],
     daisyWins: daisyData.features[key] > competitor.features[key],

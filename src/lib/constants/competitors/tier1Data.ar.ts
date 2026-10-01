@@ -4,6 +4,7 @@
 
 import type { CompetitorData } from './competitorData';
 import { tier1Competitors } from './tier1Data';
+import { localizeRecordToArabic } from './arabicRecordStrings';
 
 /**
  * Build an Arabic competitor record by spreading the English base
@@ -15,7 +16,9 @@ function arCompetitor(
 ): CompetitorData {
   const base = tier1Competitors[slug];
   if (!base) throw new Error(`Missing tier1 competitor: ${slug}`);
-  return { ...base, ...overrides } as CompetitorData;
+  // Pricing and headquarters are inherited from English unless overridden;
+  // translate them so they do not render in English on Arabic pages.
+  return localizeRecordToArabic({ ...base, ...overrides } as CompetitorData);
 }
 
 export const tier1CompetitorsAr: Record<string, CompetitorData> = {
