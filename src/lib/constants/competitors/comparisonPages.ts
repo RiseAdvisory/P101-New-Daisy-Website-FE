@@ -94,7 +94,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'How does an AI-powered growth platform stack up against the world\'s largest beauty marketplace?',
     tldr: 'Fresha is a marketplace charging subscription fees plus published transaction and marketplace charges that stack. Daisy is a complete growth platform with an AI receptionist, cashback rewards and Arabic support. Pick Fresha for marketplace exposure, Daisy to actively grow the business.',
     verdict:
-      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and a one-time 50% commission on new marketplace clients. Its AI Concierge covers phone calls; Daisy\'s AI receptionist also works across WhatsApp and Instagram, in Arabic and English, and Daisy charges no marketplace commission.',
+      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and a one-time 50% commission on new marketplace clients in the UAE. Its AI Concierge answers calls and messages; Daisy\'s AI receptionist also works across WhatsApp and Instagram, in Arabic and English, and Daisy charges no marketplace commission.',
     featureCommentary: {
       onlineBooking:
         'Both do online booking well. Fresha\'s strength is the size of its consumer marketplace, with 25M+ users. Daisy answers that with AI booking that carries the whole flow, payments and customer service included, 24/7 and without anyone stepping in.',
@@ -657,9 +657,9 @@ export const alternativePages: AlternativePageData[] = [
     heroSubtitle: 'Subscription fees, then transaction fees, then marketplace commissions. The costs keep stacking.',
     painPoints: [
       'Online payments charged at 4.90% + AED 0.75, eating into every transaction',
-      'A one-time 50% commission on new marketplace clients, minimum AED 20',
+      'A one-time marketplace commission on each new client it introduces: 50% with an AED 20 minimum in the UAE, 20% in its USD markets',
       'Marketing is charged per message once the first 50 emails each month are used',
-      'The AI Concierge is a paid add-on, and its published material does not name WhatsApp or Instagram, so confirm those channels if you need them',
+      'The AI Concierge is a paid add-on at $99.95 per location per month, and its published material does not name WhatsApp or Instagram',
       'Marketplace bookings carry Fresha branding; a fully branded site is a paid Smart Website add-on',
       'A published monthly subscription that sits on top of transaction fees and marketplace commission',
     ],
@@ -1007,7 +1007,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best fresha alternatives', 'fresha alternatives', 'fresha competitors', 'salon software like fresha'],
     heroTitle: 'Fresha Alternatives Compared (2026)',
     heroSubtitle: 'Fresha\'s subscription plus its per-transaction and marketplace charges add up. Here are the best alternatives for a growing beauty business.',
-    intro: 'Fresha runs the world\'s largest beauty marketplace. It also stacks monthly subscriptions on top of transaction fees and takes a one-time 50% commission on new marketplace clients, with returning clients free. The alternatives below are compared on features, pricing, AI and international support.',
+    intro: 'Fresha runs the world\'s largest beauty marketplace. It also stacks monthly subscriptions on top of transaction fees and takes a one-time marketplace commission on new clients, 50% in the UAE, with returning clients free. The alternatives below are compared on features, pricing, AI and international support.',
     alternatives: ['booksy', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
     bestFor: {
       'booksy': 'Best for mobile-first solopreneurs',

@@ -267,15 +267,6 @@ describe('round-two reviewer findings stay fixed', () => {
     ).toEqual([]);
   });
 
-  it('asserts no trial length for Fresha', () => {
-    const tier1 = fs.readFileSync(
-      path.join(ROOT, 'lib', 'constants', 'competitors', 'tier1Data.ts'),
-      'utf8',
-    );
-    const fresha = tier1.slice(tier1.indexOf('\n  fresha: {'), tier1.indexOf('\n  booksy: {'));
-    expect(fresha).not.toMatch(/freeTrialDays/);
-  });
-
   it('claims no absolute advantage over every competitor', () => {
     const diff = fs.readFileSync(
       path.join(ROOT, 'components', 'comparePage', 'DaisyDifferentiators.tsx'),
@@ -321,5 +312,39 @@ describe('claims about Daisy itself are consistent', () => {
   // phone support on every plan is not supportable.
   it('does not promise a dedicated account manager on every plan', () => {
     expect(find(/every plan a dedicated account manager/)).toEqual([]);
+  });
+});
+
+describe('round-three fact-check findings stay fixed', () => {
+  it('leaves no residual calls-only framing', () => {
+    expect(offenders(/not calls alone|calls alone|covers phone calls;/)).toEqual([]);
+  });
+
+  // Fresha's trial is 7 days per Schedule 2. We had asserted 14.
+  it('states the trial length Schedule 2 records', () => {
+    const tier1 = fs.readFileSync(
+      path.join(ROOT, 'lib', 'constants', 'competitors', 'tier1Data.ts'),
+      'utf8',
+    );
+    const fresha = tier1.slice(tier1.indexOf('\n  fresha: {'), tier1.indexOf('\n  booksy: {'));
+    expect(fresha).toMatch(/freeTrialDays: 7/);
+    expect(fresha).not.toMatch(/freeTrialDays: 14/);
+  });
+
+  // The 50% is Fresha's UAE rate. Its USD markets publish 20% with a $6
+  // minimum, so an unqualified 50% is wrong outside the Gulf - the mirror of
+  // the original allegation, which was showing USD figures to a GCC audience.
+  it('qualifies the marketplace commission by market', () => {
+    const bad: string[] = [];
+    for (const f of contentFiles()) {
+      const t = fs.readFileSync(f, 'utf8');
+      for (const m of t.matchAll(/one-time 50%|عمولة لمرة واحدة 50%|عمولة 50% لمرة واحدة/g)) {
+        const w = t.slice(Math.max(0, (m.index ?? 0) - 320), (m.index ?? 0) + 420);
+        if (!/UAE|الإمارات/.test(w)) {
+          bad.push(`${path.relative(ROOT, f)}:${t.slice(0, m.index).split('\n').length}`);
+        }
+      }
+    }
+    expect(bad).toEqual([]);
   });
 });

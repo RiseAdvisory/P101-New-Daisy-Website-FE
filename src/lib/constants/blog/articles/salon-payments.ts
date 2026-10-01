@@ -1172,7 +1172,7 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
 <p><strong>Best for:</strong> salons over 200,000 AED monthly, mostly taking domestic debit, with somebody who will actually read the statements.</p>
 
 <h3>Commission-based pricing</h3>
-<p>The platform takes a share of a booking&rsquo;s value on top of the usual processing fee. Fresha, for example, publishes a one-time 50% commission on each new client its marketplace introduces, minimum AED 20, with returning clients free, alongside a published UAE online rate of 4.90% + AED 0.75.</p>
+<p>The platform takes a share of a booking&rsquo;s value on top of the usual processing fee. Fresha, for example, publishes in the UAE a one-time 50% commission on each new client its marketplace introduces, minimum AED 20, with returning clients free, alongside an online rate of 4.90% + AED 0.75. The rate differs by market - 20% in its USD markets.</p>
 <p><strong>How it works:</strong> A new marketplace client books a 400 AED service. You pay 200 AED in commission plus 20.35 AED in processing = 220.35 AED. That same client returning next month costs you only the 20.35 AED, because the commission is charged once per client rather than once per booking.</p>
 <p><strong>Pros:</strong> nothing upfront and no subscription, so you only pay having earned something.</p>
 <p><strong>Cons:</strong> the bill tracks your acquisition, so the months you grow fastest are the months you pay most. A salon acquiring 100 new marketplace clients at 350 AED average spend pays 17,500 AED in commission that month, before processing. Each of those clients is chargeable only once, so the cost falls away as they become regulars, but it has to be funded up front.</p>

@@ -37,9 +37,9 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     pricing: {
       hasFreePlan: false,
-      // No trial length published here. Fresha's Schedule 2 records none, and an
-      // external reviewer puts it at 7 days rather than the 14 we had asserted.
-      // Removing beats guessing - the pricing card simply omits the badge.
+      // 7 days, per Schedule 2 of the cease and desist. We previously asserted
+      // 14, which was unsourced and wrong.
+      freeTrialDays: 7,
       // Fresha publishes local-currency pricing per market. These are its published
       // UAE figures (fresha.com/pricing, UAE), the market these pages address.
       // Source: Fresha's own schedules, 2026-09-29.
@@ -126,7 +126,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on. Its published material does not name WhatsApp or Instagram, so confirm channel coverage with Fresha directly. Daisy\'s AI receptionist covers calls, WhatsApp and Instagram in Arabic and English.',
+        'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on at $99.95 per location per month, including 200 minutes and 500 messages. Its published material does not name WhatsApp or Instagram, so confirm channel coverage with Fresha directly. Daisy\'s AI receptionist covers calls, WhatsApp and Instagram in Arabic and English.',
     },
 
     targetMarket:
@@ -231,9 +231,9 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     ],
 
     daisySwitchingReasons: [
-      'Would rather not pay a one-time 50% commission on each new marketplace client',
+      'Would rather not pay a marketplace commission on each new client it introduces - a one-time 50% in the UAE, 20% in Fresha\'s USD markets',
       'Want Arabic and English as equals across staff tools, client messages and booking pages, with an AI receptionist that works in both',
-      'Want one AI receptionist across calls, WhatsApp and Instagram, not calls alone',
+      'Want one AI receptionist across calls, WhatsApp and Instagram, in Arabic and English',
       'Want marketing included in the plan price rather than billed per message',
       'Want a booking page carrying your logo, name and colours and no platform branding',
       // Was 'Need local payment methods and VAT compliance for GCC'. Framed as
@@ -254,7 +254,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     ],
 
     competitorWeaknesses: [
-      'AI Concierge covers phone calls; no comparable AI across WhatsApp and Instagram chat',
+      'AI Concierge is a paid add-on at $99.95 per location per month, and its published material does not name WhatsApp or Instagram',
       'Marketing is billed per message once the first 50 emails each month are used',
       'Subscription fees plus transaction fees and marketplace commissions add up quickly',
       'Marketing is email and SMS with no AI campaign automation',
@@ -302,7 +302,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Fresha have AI features like Daisy?',
         answer:
-          'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on. Its published material does not name WhatsApp or Instagram. Daisy\'s AI receptionist handles calls plus WhatsApp and Instagram chat, takes payments, and works in Arabic and English.',
+          'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on at $99.95 per location per month. Its published material does not name WhatsApp or Instagram. Daisy\'s AI receptionist handles calls plus WhatsApp and Instagram chat, takes payments, and works in Arabic and English.',
       },
       {
         question: 'How good is the Fresha mobile app?',
