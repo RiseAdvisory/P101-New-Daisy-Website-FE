@@ -94,7 +94,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'How does an AI-powered growth platform stack up against the world\'s largest beauty marketplace?',
     tldr: 'Fresha is a marketplace charging subscription fees plus published transaction and marketplace charges that stack. Daisy is a complete growth platform with an AI receptionist, cashback rewards and Arabic support. Pick Fresha for marketplace exposure, Daisy to actively grow the business.',
     verdict:
-      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and a one-time 50% commission on new marketplace clients in the UAE. Its AI Concierge answers calls and messages; Daisy\'s AI receptionist also works across WhatsApp and Instagram, in Arabic and English, and Daisy charges no marketplace commission.',
+      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and a one-time 50% commission on new marketplace clients in the UAE. Its AI Concierge answers calls and messages. Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site, in Arabic and English, and Daisy charges no marketplace commission.',
     featureCommentary: {
       onlineBooking:
         'Both do online booking well. Fresha\'s strength is the size of its consumer marketplace, with 25M+ users. Daisy answers that with AI booking that carries the whole flow, payments and customer service included, 24/7 and without anyone stepping in.',
@@ -113,7 +113,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketplaceAndDiscovery:
         'Fresha\'s biggest strength is the 25M+ consumers browsing its marketplace. Daisy comes at it differently, with 360° customer acquisition where marketplace, cashback rewards and AI marketing work together to bring customers in and keep them.',
       aiCapabilities:
-        'Both ship AI, and the difference is reach. Fresha\'s AI Concierge answers phone calls and books from them. Daisy\'s AI receptionist carries calls plus WhatsApp and Instagram chat, takes payments and handles customer service, in Arabic and English, 24/7.',
+        'Both ship AI, on different channels. Fresha\'s AI Concierge answers calls and messages and books appointments; as of October 2026, Fresha\'s published pages do not list WhatsApp or Instagram as Concierge channels. Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site, takes payments and handles customer service, in Arabic and English, 24/7. It does not answer phone calls today.',
     },
     whoShouldChooseDaisy: [
       'You want an AI receptionist covering bookings and customer service 24/7',
@@ -659,7 +659,7 @@ export const alternativePages: AlternativePageData[] = [
       'Online payments charged at 4.90% + AED 0.75, eating into every transaction',
       'A one-time marketplace commission on each new client it introduces: 50% with an AED 20 minimum in the UAE, 20% in its USD markets',
       'Marketing is charged per message once the first 50 emails each month are used',
-      'The AI Concierge is a paid add-on at $99.95 per location per month, and its published material does not name WhatsApp or Instagram',
+      'The AI Concierge is a paid add-on at $99.95 per location per month, and its published pages do not list WhatsApp or Instagram as supported channels',
       'Marketplace bookings carry Fresha branding; a fully branded site is a paid Smart Website add-on',
       'A published monthly subscription that sits on top of transaction fees and marketplace commission',
     ],
@@ -1017,7 +1017,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mangomint': 'Best for operations-focused salons wanting clean UX',
       'square-appointments': 'Best for businesses already using Square for payments',
     },
-    daisyEdge: 'Booksy answers calls with AI; none of these alternatives pairs that with a cashback-powered acquisition marketplace or Arabic and English as equals. Daisy combines all three with white-label branding and flat pricing, which makes it a growth tool rather than an operations one.',
+    daisyEdge: 'Several of these alternatives now sell AI receptionists, Booksy among them; none pairs that with a cashback-powered acquisition marketplace or Arabic and English as equals. Daisy combines all three with white-label branding and flat pricing, which makes it a growth tool rather than an operations one.',
   },
   {
     slug: 'best-booksy-alternatives',
@@ -1037,7 +1037,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mangomint': 'Best for salons prioritizing clean operations',
       'square-appointments': 'Best for businesses needing strong POS integration',
     },
-    daisyEdge: 'These alternatives all handle operations well. Fresha answers calls with AI, but on the phone only. None of them pairs that with cashback rewards that bring clients back. That growth layer is what booking platforms tend to miss, and what Daisy adds.',
+    daisyEdge: 'These alternatives all handle operations well, and several now sell AI receptionists: Fresha\'s AI Concierge answers calls and messages. None of them pairs that with cashback rewards that bring clients back. That growth layer is what booking platforms tend to miss, and what Daisy adds.',
   },
   {
     slug: 'best-vagaro-alternatives',
@@ -1057,7 +1057,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mindbody': 'Best for fitness and wellness businesses',
       'mangomint': 'Best for operationally complex salons',
     },
-    daisyEdge: 'Vagaro alternatives manage your business. Fresha and Booksy bring a marketplace listing and charge per marketing message beyond a free allowance. Daisy adds an AI receptionist across calls, WhatsApp and Instagram, plus a cashback marketplace, which turns salon software into a growth engine.',
+    daisyEdge: 'Vagaro alternatives manage your business. Fresha and Booksy bring a marketplace listing and charge per marketing message beyond a free allowance. Daisy adds an AI receptionist on WhatsApp, Instagram and your booking site, plus a cashback marketplace, which turns salon software into a growth engine.',
   },
   {
     slug: 'best-glossgenius-alternatives',
@@ -1077,7 +1077,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mangomint': 'Best for team-heavy salons wanting clean automation',
       'square-appointments': 'Best for payment-first businesses',
     },
-    daisyEdge: 'These alternatives close the team management gap. Fresha and Booksy answer calls with AI; neither carries it into WhatsApp or Instagram, and none of them pairs that with cashback rewards that bring clients back. Daisy does, at flat pricing and with no per-staff fee.',
+    daisyEdge: 'These alternatives close the team management gap. Fresha\'s AI Concierge answers calls and messages, and several of the others sell AI receptionists too, but none of them pairs that with cashback rewards that bring clients back. Daisy does, at flat pricing and with no per-staff fee.',
   },
   // P3
   {
@@ -1155,7 +1155,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'boulevard': 'Best for premium salon experiences',
       'mangomint': 'Best for operations-focused salon management',
     },
-    daisyEdge: 'The beauty-specific alternatives cover what Square leaves out. Fresha and Booksy take calls with AI. None pairs that with AI across WhatsApp and Instagram, or a cashback marketplace that brings new clients in. Daisy is built for a beauty business that wants to grow rather than only fill a calendar.',
+    daisyEdge: 'The beauty-specific alternatives cover what Square leaves out. Fresha\'s AI Concierge answers calls and messages, and several of the others sell AI receptionists too. None pairs that with a cashback marketplace that brings new clients in. Daisy is built for a beauty business that wants to grow rather than only fill a calendar.',
   },
   // P5
   {
@@ -1196,7 +1196,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'setmore': 'Best for budget-friendly basic scheduling',
       'simplybook-me': 'Best for businesses wanting modular customisation',
     },
-    daisyEdge: 'These beauty-specific alternatives cover what Acuity leaves out for salons: POS, CRM and inventory. Of these, Fresha answers calls with AI, and only on the phone. None adds a cashback marketplace that brings new clients in, and none adds a cashback marketplace that brings new clients in. Daisy is the complete upgrade path.',
+    daisyEdge: 'These beauty-specific alternatives cover what Acuity leaves out for salons: POS, CRM and inventory. Of these, Fresha\'s AI Concierge answers calls and messages, and several others sell AI receptionists too. None adds a cashback marketplace that brings new clients in. Daisy is the complete upgrade path.',
   },
   {
     slug: 'best-phorest-alternatives',
@@ -1232,7 +1232,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'booksy': 'Best for affordable mobile booking',
       'glossgenius': 'Best for design-focused solo professionals',
     },
-    daisyEdge: 'These alternatives take the per-staff surprises out of the bill. Only Fresha answers calls with AI here, and only on the phone. None pairs that with cashback acquisition. Daisy charges a flat, transparent rate and builds the growth tools into every plan.',
+    daisyEdge: 'These alternatives take the per-staff surprises out of the bill. Fresha\'s AI Concierge answers calls and messages, and the others here sell AI receptionists too. None pairs that with cashback acquisition. Daisy charges a flat, transparent rate and builds the growth tools into every plan.',
   },
   {
     slug: 'best-setmore-alternatives',
@@ -1272,7 +1272,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'acuity-scheduling': 'Best for advanced scheduling customisation',
       'setmore': 'Best for free basic scheduling',
     },
-    daisyEdge: 'These alternatives swap the add-on complexity for all-in-one platforms. Fresha and Booksy take calls with AI. None pairs that with AI across WhatsApp and Instagram, or a cashback marketplace that acquires clients. Daisy replaces the complexity with one platform that also grows the business.',
+    daisyEdge: 'These alternatives swap the add-on complexity for all-in-one platforms. Fresha\'s AI Concierge answers calls and messages, and several of the others sell AI receptionists too. None pairs that with a cashback marketplace that acquires clients. Daisy replaces the complexity with one platform that also grows the business.',
   },
 ];
 
@@ -1291,7 +1291,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['fresha vs booksy', 'fresha or booksy', 'booksy vs fresha comparison'],
     heroTitle: 'Fresha vs Booksy',
     heroSubtitle: 'Two popular booking platforms, but which one is right for your beauty business?',
-    verdict: 'Fresha wins on marketplace scale and lower starting price. Booksy wins on mobile experience and its AI Receptionist books from calls. Fresha has an Arabic UI and an AI Concierge for calls; Booksy has neither. Neither carries AI across WhatsApp and Instagram, and neither offers cashback-driven customer acquisition.',
+    verdict: 'Fresha wins on marketplace scale and lower starting price. Booksy wins on mobile experience. Both sell AI that answers calls: Fresha\'s AI Concierge also answers messages, and Booksy\'s AI Receptionist is in beta. Fresha has an Arabic UI; Booksy does not. As of October 2026, neither lists WhatsApp or Instagram as an AI channel, and neither offers cashback-driven customer acquisition.',
     whoShouldChooseA: [
       'You want an affordable starting point with marketplace exposure',
       'Marketplace discovery is your primary acquisition channel',
@@ -1302,7 +1302,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'You want an AI receptionist that books from phone calls',
       'You\'re an independent barber or beauty pro',
     ],
-    daisyPitch: 'Both Fresha and Booksy are operations tools with marketplace bolt-ons. Daisy is a growth platform: AI across calls, WhatsApp and Instagram, Arabic and English as equals, cashback rewards, and fully branded booking pages.',
+    daisyPitch: 'Both Fresha and Booksy are operations tools with marketplace bolt-ons. Daisy is a growth platform: AI on WhatsApp, Instagram and your booking site, Arabic and English as equals, cashback rewards, and fully branded booking pages.',
   },
   {
     slugA: 'fresha',
@@ -1313,7 +1313,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['fresha vs vagaro', 'fresha or vagaro', 'vagaro vs fresha'],
     heroTitle: 'Fresha vs Vagaro',
     heroSubtitle: 'Low starting price with stacking fees versus $30/mo with comprehensive features, which model works better?',
-    verdict: 'Fresha starts cheaper but subscription fees plus transaction fees plus commissions add up. Vagaro offers more features at a predictable $30/mo. Fresha ships an AI Concierge for calls and an Arabic UI; Vagaro has neither. Neither carries AI across WhatsApp and Instagram, and neither offers cashback rewards.',
+    verdict: 'Fresha starts cheaper but subscription fees plus transaction fees plus commissions add up. Vagaro offers more features at a predictable $30/mo. Fresha\'s AI Concierge answers calls and messages, and Fresha ships an Arabic UI. Vagaro sells Vera, an AI receptionist for chat and text, and we could not find an Arabic UI for it. Neither offers cashback rewards.',
     whoShouldChooseA: [
       'You\'re a solo practitioner with low transaction volume',
       'You want marketplace exposure from day one',
@@ -1324,7 +1324,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'You have multiple staff and need per-calendar management',
       'POS quality and hardware integration matter',
     ],
-    daisyPitch: 'Fresha and Vagaro focus on operations. Daisy adds cashback acquisition, proactive growth tools, and an AI receptionist that works across calls, WhatsApp and Instagram in Arabic and English.',
+    daisyPitch: 'Fresha and Vagaro focus on operations. Daisy adds cashback acquisition, proactive growth tools, and an AI receptionist that works on WhatsApp, Instagram and your booking site in Arabic and English.',
   },
   {
     slugA: 'booksy',
@@ -1394,7 +1394,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['fresha vs glossgenius', 'fresha or glossgenius'],
     heroTitle: 'Fresha vs GlossGenius',
     heroSubtitle: 'Marketplace with stacking fees versus beautiful design at $24/mo, which trade-off works for you?',
-    verdict: 'Fresha wins on marketplace scale. GlossGenius wins on design and simplicity. Fresha has an Arabic UI and AI for calls; neither platform reaches WhatsApp or Instagram, and neither offers cashback.',
+    verdict: 'Fresha wins on marketplace scale. GlossGenius wins on design and simplicity. Both sell AI receptionists: Fresha\'s AI Concierge answers calls and messages, and GlossGenius Reception answers calls and texts. Fresha has an Arabic UI. As of October 2026, neither lists WhatsApp or Instagram as an AI channel, and neither offers cashback.',
     whoShouldChooseA: ['You want marketplace exposure with low starting cost', 'Client discovery through marketplace matters most', 'You\'re comfortable with transaction fees on top of subscription'],
     whoShouldChooseB: ['Design and aesthetics matter most', 'You want affordable paid software ($24/mo)', 'You\'re a solo US beauty professional'],
     daisyPitch: 'Fresha gives marketplace, GlossGenius gives design. Daisy gives both, plus AI across every channel, Arabic and English as equals, cashback, and growth tools.',
@@ -1451,7 +1451,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['fresha vs mindbody', 'fresha or mindbody'],
     heroTitle: 'Fresha vs Mindbody',
     heroSubtitle: 'The budget marketplace versus the enterprise legacy, two ends of beauty business software.',
-    verdict: 'Fresha is better for cost-conscious small businesses with its lower starting price. Mindbody is better for large enterprise operations. Fresha\'s AI Concierge takes phone calls and it ships an Arabic UI; Mindbody does neither. Neither offers cashback or AI across WhatsApp and Instagram.',
+    verdict: 'Fresha is better for cost-conscious small businesses with its lower starting price. Mindbody is better for large enterprise operations. Both sell AI front-desk tools: Fresha\'s AI Concierge answers calls and messages, and Mindbody\'s own AI Concierge, on its Ultimate plan, follows up missed calls by text and web chat. Fresha has an Arabic UI; as of October 2026 we could not find one for Mindbody. Neither offers cashback.',
     whoShouldChooseA: ['Cost is the top priority', 'You want marketplace exposure at a lower price point', 'You\'re a small salon'],
     whoShouldChooseB: ['Enterprise features are required', 'Large fitness marketplace matters', 'Multi-location management needed'],
     daisyPitch: 'Between published-but-stacking fees and expensive enterprise, Daisy offers the modern middle: one all-inclusive price with nothing added per transaction, AI across every channel, Arabic and English as equals, and cashback.',
@@ -1494,7 +1494,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['fresha vs square appointments', 'fresha or square appointments', 'square appointments vs fresha'],
     heroTitle: 'Fresha vs Square Appointments',
     heroSubtitle: 'Beauty marketplace with commission fees versus free payment-first scheduling, different models for different priorities.',
-    verdict: 'Fresha wins on beauty-specific features and marketplace exposure with 25M+ users. Square Appointments wins on POS quality and free tier. Fresha\'s AI Concierge answers phone calls and it ships an Arabic UI; neither platform carries AI into WhatsApp or Instagram, and neither offers cashback rewards.',
+    verdict: 'Fresha wins on beauty-specific features and marketplace exposure with 25M+ users. Square Appointments wins on POS quality and free tier. Fresha\'s AI Concierge answers calls and messages, and Fresha ships an Arabic UI. As of October 2026, neither platform lists WhatsApp or Instagram as an AI channel, and neither offers cashback rewards.',
     whoShouldChooseA: [
       'You want marketplace exposure to 25M+ beauty customers',
       'Beauty-specific features (service menus, commissions) matter',
@@ -1505,7 +1505,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'You want a free starting tier with no subscription',
       'You already use the Square ecosystem',
     ],
-    daisyPitch: 'Fresha offers marketplace reach; Square offers POS strength. Daisy combines both approaches with an AI receptionist across calls, WhatsApp and Instagram, Arabic and English as equals, cashback-driven customer acquisition, and branded booking pages.',
+    daisyPitch: 'Fresha offers marketplace reach; Square offers POS strength. Daisy combines both approaches with an AI receptionist on WhatsApp, Instagram and your booking site, Arabic and English as equals, cashback-driven customer acquisition, and branded booking pages.',
   },
   {
     slugA: 'booksy',

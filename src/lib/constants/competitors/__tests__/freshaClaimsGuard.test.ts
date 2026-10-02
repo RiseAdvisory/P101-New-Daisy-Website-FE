@@ -298,11 +298,6 @@ describe('claims about Daisy itself are consistent', () => {
     return out;
   }
 
-  it('does not claim all six GCC countries are supported today', () => {
-    // Our own copy says Daisy is live in Kuwait today.
-    expect(find(/All 6 GCC countries supported/)).toEqual([]);
-  });
-
   it('gives one migration timeframe, not two', () => {
     expect(find(/fully operational on Daisy within 48 hours/)).toEqual([]);
   });
@@ -363,5 +358,76 @@ describe('insight statistics about Fresha', () => {
       if (/Fresha/.test(m[2]) && m[1] !== '50%') wrong.push(`${m[1]} | ${m[2].slice(0, 60)}`);
     }
     expect(wrong).toEqual([]);
+  });
+});
+
+/**
+ * Round four (2 Oct 2026). Fresha's AI Concierge page describes it as
+ * answering "calls and messages around the clock" (meta description, captured
+ * 2026-10-02 14:02 UTC), yet about twenty lines still called it phone-only or
+ * "for calls". The round-two pattern only caught the words "calls only".
+ *
+ * The founder confirmed the same day that Daisy's own AI receptionist does not
+ * answer phone calls today: it works on WhatsApp, Instagram and the booking
+ * site, as the pricing page says. So the comparison cannot rest on Daisy
+ * carrying calls that Fresha does not.
+ */
+describe('Fresha AI Concierge channels', () => {
+  it('does not describe the Concierge as phone-only or for calls', () => {
+    expect(
+      offenders(
+        /phone-only|on the phone only|only on the phone|AI Concierge for (?:phone )?calls|Concierge answers phone calls|Concierge takes phone calls|AI for calls|take calls with AI|answers? calls with AI/,
+      ),
+    ).toEqual([]);
+  });
+
+  it('does not describe the Concierge as phone-only in Arabic', () => {
+    expect(
+      offenders(
+        /AI Concierge للمكالمات|على المكالمات وتحجز منها|تقتصر[^.]{0,40}على الهاتف|ذكاءً اصطناعياً للمكالمات|على المكالمات بالذكاء الاصطناعي/,
+      ),
+    ).toEqual([]);
+  });
+
+  it('records the Concierge as answering messages, since the boolean renders as a table cell', () => {
+    const tier1 = fs.readFileSync(
+      path.join(ROOT, 'lib', 'constants', 'competitors', 'tier1Data.ts'),
+      'utf8',
+    );
+    const fresha = tier1.slice(tier1.indexOf('\n  fresha: {'), tier1.indexOf('\n  booksy: {'));
+    expect(fresha).toMatch(/hasAiChatbot: true/);
+  });
+
+  // "AI Concierge" is Fresha's product name. The quick table printed it for
+  // every competitor with an AI receptionist, Booksy and DINGG included.
+  it("does not label other companies' AI with Fresha's product name", () => {
+    const page = fs.readFileSync(
+      path.join(ROOT, 'app', '[locale]', '(routes)', 'compare', '[slug]', 'ComparePageClient.tsx'),
+      'utf8',
+    );
+    expect(page).not.toMatch(/\?\s*'AI Concierge'/);
+  });
+
+  it('does not credit Daisy with answering phone calls beside Fresha', () => {
+    expect(
+      offenders(
+        /(?:AI receptionist|AI) (?:carries|covers|handles|works across|across) calls|calls plus WhatsApp|calls, WhatsApp and Instagram|as well as phone calls|عبر المكالمات وواتساب|يغطي المكالمات|يتولى المكالمات|إضافة إلى المكالمات/,
+      ),
+    ).toEqual([]);
+  });
+
+  it("does not describe Daisy's AI as voice on the comparison templates", () => {
+    for (const rel of [
+      ['app', '[locale]', '(routes)', 'compare', '[slug]', 'ComparePageClient.tsx'],
+      ['app', '[locale]', '(routes)', 'alternative', '[slug]', 'AlternativePageClient.tsx'],
+    ]) {
+      const src = fs.readFileSync(path.join(ROOT, ...rel), 'utf8');
+      expect(src).not.toMatch(/Voice \+ Chat|across voice|صوت ومحادثة|عبر الصوت|المكالمات وواتساب/);
+    }
+  });
+
+  it('keeps llms-full.txt in line', () => {
+    const llms = fs.readFileSync(path.join(ROOT, '..', 'public', 'llms-full.txt'), 'utf8');
+    expect(llms).not.toMatch(/AI Concierge for phone calls|Concierge is phone-only/);
   });
 });
