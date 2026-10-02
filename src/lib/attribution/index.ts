@@ -13,6 +13,8 @@
  * The module is SSR-safe: every browser-API call is guarded.
  */
 
+import { advertisingAllowed, getCookie } from '@/lib/consent';
+
 const STORAGE_KEY = 'daisy_attribution';
 const STORAGE_VERSION = 1;
 /** Refresh the stored record every read so attribution survives 90 days of inactivity. */
@@ -370,13 +372,41 @@ export function buildSignupUrl(pageSlug: string, baseUrl: string = SIGNUP_URL): 
   if (source) {
     // Forward everything captured, including ad click ids: those are what
     // let the ad platforms close the loop on a conversion.
-    return appendTouchToUrl(baseUrl, source);
+    return appendMetaIds(appendTouchToUrl(baseUrl, source), record);
   }
 
   const out = new URL(baseUrl);
   out.searchParams.set('utm_source', CTA_STAMP.utm_source);
   out.searchParams.set('utm_medium', CTA_STAMP.utm_medium);
   out.searchParams.set('utm_campaign', pageSlug);
+  return appendMetaIds(out.toString(), record);
+}
+
+/**
+ * Add Meta's identifiers so the backend can report a signup against the ad.
+ *
+ * Signup happens on trythedaisy.com, another domain, where this site's Meta
+ * cookies do not exist. Without these on the link, the signup cannot be tied
+ * back to the click:
+ *
+ *   fbclid  The forwarded touch is chosen for utm_ credit, so a Meta click on
+ *           a later visit was dropped whenever the first touch carried other
+ *           attribution. Meta needs its own click id regardless.
+ *   fbc     The _fbc cookie: the click id with the time of the click, which
+ *           Meta prefers over a bare fbclid.
+ *   fbp     The _fbp cookie: Meta's browser id, for matching without a click.
+ *
+ * Only where advertising is allowed, as for the pixel itself.
+ */
+function appendMetaIds(url: string, record: AttributionRecord | null): string {
+  if (!advertisingAllowed()) return url;
+  const out = new URL(url);
+  const fbclid = record?.lastTouch.fbclid ?? record?.firstTouch.fbclid;
+  if (fbclid && !out.searchParams.has('fbclid')) out.searchParams.set('fbclid', fbclid);
+  const fbc = getCookie('_fbc');
+  if (fbc) out.searchParams.set('fbc', fbc);
+  const fbp = getCookie('_fbp');
+  if (fbp) out.searchParams.set('fbp', fbp);
   return out.toString();
 }
 

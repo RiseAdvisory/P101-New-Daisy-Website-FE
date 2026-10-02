@@ -25,7 +25,7 @@ import { CONSENT_COOKIE, CONSENT_REQUIRED_COUNTRIES } from '@/lib/consent';
 const GRAPH_VERSION = 'v26.0';
 
 /** The events src/lib/meta/pixel.ts can send. Anything else is rejected. */
-const ALLOWED_EVENTS = new Set(['Lead', 'ViewContent', 'ClickedAppStore']);
+const ALLOWED_EVENTS = new Set(['Lead', 'ViewContent', 'ClickedAppStore', 'GetStartedClick']);
 
 const MAX_BODY_BYTES = 8 * 1024;
 

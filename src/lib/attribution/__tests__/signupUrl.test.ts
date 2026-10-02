@@ -154,3 +154,65 @@ describe('buildSignupUrl — first touch wins across a multi-page session', () =
     expect(url.searchParams.get('utm_source')).not.toBe('website');
   });
 });
+
+/**
+ * Signup happens on trythedaisy.com, another domain, where Meta's cookies from
+ * this site do not exist. The backend can only report the signup against the
+ * ad click if the link carries Meta's identifiers.
+ */
+describe('buildSignupUrl — Meta identifiers for the cross-domain signup', () => {
+  function setCookies(value: string) {
+    Object.defineProperty(document, 'cookie', { writable: true, configurable: true, value });
+  }
+
+  afterEach(() => setCookies(''));
+
+  it('forwards a Meta click from a later visit when the first touch carried other attribution', () => {
+    visitWith('?utm_source=newsletter', '/en/business');
+    visitWith('?fbclid=meta-click-2', '/en/business');
+
+    const url = new URL(buildSignupUrl('business'));
+    // First touch still owns the utm_ credit...
+    expect(url.searchParams.get('utm_source')).toBe('newsletter');
+    // ...but Meta needs its own click id to attribute the signup.
+    expect(url.searchParams.get('fbclid')).toBe('meta-click-2');
+  });
+
+  it("passes the pixel's _fbc and _fbp cookies", () => {
+    setCookies('_fbc=fb.1.1700000000000.meta-click; _fbp=fb.1.1700000000000.42');
+    visitWith('?fbclid=meta-click', '/en/business');
+
+    const url = new URL(buildSignupUrl('business'));
+    expect(url.searchParams.get('fbc')).toBe('fb.1.1700000000000.meta-click');
+    expect(url.searchParams.get('fbp')).toBe('fb.1.1700000000000.42');
+  });
+
+  it('passes _fbp for an organic visitor too, alongside the stamp', () => {
+    setCookies('_fbp=fb.1.1700000000000.42');
+    visitWith('', '/en/business');
+
+    const url = new URL(buildSignupUrl('business'));
+    expect(url.searchParams.get('utm_source')).toBe('website');
+    expect(url.searchParams.get('fbp')).toBe('fb.1.1700000000000.42');
+  });
+
+  it('passes no Meta identifiers for a visitor who declined', () => {
+    setCookies('clarity-consent=declined; _fbc=fb.1.1.x; _fbp=fb.1.1.42');
+    visitWith('?utm_source=newsletter', '/en/business');
+    visitWith('?fbclid=meta-click-2', '/en/business');
+
+    const url = new URL(buildSignupUrl('business'));
+    expect(url.searchParams.get('fbc')).toBeNull();
+    expect(url.searchParams.get('fbp')).toBeNull();
+    expect(url.searchParams.get('fbclid')).toBeNull();
+  });
+
+  it('passes no Meta identifiers where advertising consent is required', () => {
+    setCookies('geo-country=GB; _fbc=fb.1.1.x; _fbp=fb.1.1.42');
+    visitWith('', '/en/business');
+
+    const url = new URL(buildSignupUrl('business'));
+    expect(url.searchParams.get('fbc')).toBeNull();
+    expect(url.searchParams.get('fbp')).toBeNull();
+  });
+});
