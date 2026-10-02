@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { localeAlternates } from '@/lib/utils/metadata';
 import { BusinessClient } from './BusinessClient';
+import { TrackViewContent } from '@/components/meta/TrackViewContent';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { PageBreadcrumbSchema } from '@/components/seo/PageBreadcrumbSchema';
 import { LandingHero } from '@/components/shared/LandingHero';
@@ -135,6 +136,7 @@ export default function BusinessPage({ params }: { params: { locale: string } })
         />
       )}
       <BusinessClient lang={params.locale} />
+      <TrackViewContent persona="business" />
     </>
   );
 }
