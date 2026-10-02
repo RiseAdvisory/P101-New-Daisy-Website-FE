@@ -25,25 +25,12 @@ const PlatformStrengths = dynamic(
 const QASection = dynamic(
   () => import('@/components/QASection/QASection').then((mod) => mod.QASection),
 );
-const BecomeFormPartner = dynamic(
-  () => import('@/components/businessPage/BecomeFormPartner').then((mod) => mod.BecomeFormPartner),
-);
 
-const uiStrings = {
-  en: {
-    formTitle: 'Get Listed on The Daisy. Free',
-    formSubtitle: 'Tell us about yourself and our team will help you get set up.',
-  },
-  ar: {
-    formTitle: 'سجّل في ديزي. مجاناً',
-    formSubtitle: 'أخبرنا عن نفسك وسيساعدك فريقنا على البدء.',
-  },
-} as const;
-
+// Ends with the FAQ. The partner form that followed it was retired, since
+// signup goes through Get Started and /get-the-app.
 export const ProfessionalClient = ({ lang }: { lang: string }) => {
   const pageData = t(professionalPageData, lang);
   const dataScroll = toScrollSectionItems(pageData.scrollSections);
-  const ui = uiStrings[lang as keyof typeof uiStrings] || uiStrings.en;
 
   return (
     <div className="w-full bg-primary md:-mt-[100px]">
@@ -105,11 +92,6 @@ export const ProfessionalClient = ({ lang }: { lang: string }) => {
         />
       )}
       <QASection pageType="Professional" titleFraque={pageData.titleFraque} fallbackFaqs={pageData.fallbackFaqs} />
-      <BecomeFormPartner
-        defaultType="professional"
-        title={ui.formTitle}
-        subtitle={ui.formSubtitle}
-      />
     </div>
   );
 };
