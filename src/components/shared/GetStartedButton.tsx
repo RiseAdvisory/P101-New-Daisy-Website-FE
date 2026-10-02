@@ -1,11 +1,12 @@
 'use client';
-import { useEffect, useMemo, useState } from 'react';
+import { MouseEvent, useEffect, useMemo, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import {
   SIGNUP_URL,
   buildSignupUrl,
   campaignSlugFromPath,
 } from '@/lib/attribution';
+import { trackConversion } from '@/lib/meta/trackConversion';
 import { getLocaleFromPathname } from '@/lib/utils/locale';
 
 /**
@@ -51,11 +52,29 @@ export const GetStartedButton = ({ className, campaign, label }: Props) => {
     setHref(buildSignupUrl(slug));
   }, [slug]);
 
+  /**
+   * The href is rebuilt at click time because the pixel sets _fbp after this
+   * button mounts, so on a first visit the mount-time href lacks it.
+   *
+   * trackConversion sends its Conversions API request with keepalive before
+   * returning, so it survives the page navigating away.
+   */
+  const onActivate = (e: MouseEvent<HTMLAnchorElement>) => {
+    // auxclick also fires for the right button; only the middle one navigates.
+    if (e.type === 'auxclick' && e.button !== 1) return;
+    const url = buildSignupUrl(slug);
+    e.currentTarget.href = url;
+    setHref(url);
+    void trackConversion('GetStartedClick', { customData: { content_name: slug } });
+  };
+
   const text = label ?? (locale === 'ar' ? LABELS.ar : LABELS.en);
 
   return (
     <a
       href={href}
+      onClick={onActivate}
+      onAuxClick={onActivate}
       data-testid="get-started-cta"
       data-campaign={slug}
       className={

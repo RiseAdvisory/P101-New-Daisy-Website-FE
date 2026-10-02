@@ -27,7 +27,13 @@ export type MetaEventName =
    */
   | 'ViewContent'
   /** Outbound click to the App Store or Play Store. Install intent proxy. */
-  | 'ClickedAppStore';
+  | 'ClickedAppStore'
+  /**
+   * Click-through on a "Get started" CTA to web signup. Deliberately not Lead:
+   * optimising on a click labelled Lead would teach Meta to find people who
+   * click, not people who sign up. Lead is reserved for a completed signup.
+   */
+  | 'GetStartedClick';
 
 const STANDARD_EVENTS = new Set<MetaEventName>(['Lead', 'ViewContent']);
 

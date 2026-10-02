@@ -103,12 +103,16 @@ describe('ProfessionalClient', () => {
     });
   });
 
-  it('renders BecomeFormPartner component', async () => {
+  // The partner form was retired: signup goes through Get Started and
+  // /get-the-app.
+  it('ends with the FAQ, with no partner form', async () => {
     render(<ProfessionalClient lang="en" />);
 
-    await waitFor(() => {
-      expect(screen.getByTestId('become-partner')).toBeInTheDocument();
-    });
+    await waitFor(() => expect(screen.getByTestId('qa-section')).toBeInTheDocument());
+    expect(screen.queryByTestId('become-partner')).toBeNull();
+    expect(screen.getByTestId('qa-section').parentElement?.lastElementChild).toBe(
+      screen.getByTestId('qa-section'),
+    );
   });
 
   it('renders all main sections when data is loaded', async () => {
@@ -123,7 +127,6 @@ describe('ProfessionalClient', () => {
       expect(screen.getByTestId('pricing-hook')).toBeInTheDocument();
       expect(screen.getByTestId('platform-strengths')).toBeInTheDocument();
       expect(screen.getByTestId('qa-section')).toBeInTheDocument();
-      expect(screen.getByTestId('become-partner')).toBeInTheDocument();
     });
   });
 });

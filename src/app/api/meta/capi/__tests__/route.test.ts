@@ -62,6 +62,12 @@ describe('/api/meta/capi', () => {
     expect(mockFetch).not.toHaveBeenCalled();
   });
 
+  it('accepts the Get Started click', async () => {
+    const res = await POST(makeRequest({ eventName: 'GetStartedClick', eventId: 'evt-3' }));
+    expect(res.status).toBe(200);
+    expect(JSON.parse(mockFetch.mock.calls[0][1].body).data[0].event_name).toBe('GetStartedClick');
+  });
+
   it('rejects requests that do not come from our pages', async () => {
     const res = await POST(makeRequest(viewContent, { origin: 'https://evil.example' }));
     expect(res.status).toBe(403);

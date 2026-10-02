@@ -120,7 +120,18 @@ describe('Business Page', () => {
       expect(getByTestId('pricing-hook')).toBeInTheDocument();
       expect(getByTestId('platform-strengths')).toBeInTheDocument();
       expect(getByTestId('qa-section')).toBeInTheDocument();
-      expect(getByTestId('become-partner')).toBeInTheDocument();
     });
+  });
+
+  // This is the homepage (/ and /en redirect here). The partner form was
+  // retired: signup goes through Get Started and /get-the-app.
+  it('ends with the FAQ, with no partner form', async () => {
+    const { getByTestId, queryByTestId } = render(<Business params={{ locale: 'en' }} />);
+
+    await waitFor(() => expect(getByTestId('qa-section')).toBeInTheDocument());
+    expect(queryByTestId('become-partner')).toBeNull();
+    expect(getByTestId('qa-section').parentElement?.lastElementChild).toBe(
+      getByTestId('qa-section'),
+    );
   });
 });
