@@ -63,8 +63,24 @@ export function getConsentState(): ConsentState {
   return consentRequired() ? 'pending' : 'not-required';
 }
 
-/** True when a tracker is allowed to load right now. */
+/** True when an analytics tracker is allowed to load right now. */
 export function trackingAllowed(): boolean {
   const state = getConsentState();
   return state === 'granted' || state === 'not-required';
+}
+
+/**
+ * True when an ADVERTISING tracker (the Meta pixel and its Conversions API
+ * twin) may run. Stricter than trackingAllowed().
+ *
+ * The only banner today asks about analytics cookies ("You can accept or
+ * decline analytics cookies"), so accepting it is not informed consent to
+ * advertising tracking. Until a banner offers that choice (PD-6332),
+ * advertising runs only where no prior consent is required. An explicit
+ * decline is honoured everywhere, including for a visitor who declined in a
+ * consent-required country and is now browsing from elsewhere.
+ */
+export function advertisingAllowed(country = getCountry()): boolean {
+  if (getCookie(CONSENT_COOKIE) === 'declined') return false;
+  return !consentRequired(country);
 }

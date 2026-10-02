@@ -1,4 +1,4 @@
-import { getCookie } from '@/lib/consent';
+import { advertisingAllowed, getCookie } from '@/lib/consent';
 import { MetaEventName, newEventId, trackEvent } from './pixel';
 
 /**
@@ -6,6 +6,11 @@ import { MetaEventName, newEventId, trackEvent } from './pixel';
  * single shared event ID, so Meta deduplicates them into one conversion.
  *
  * The CAPI call is fire-and-forget: it must never delay or fail a form submit.
+ *
+ * Both halves are consent-gated. The browser pixel is no-op without consent
+ * because it never loads, but the CAPI call used to go out regardless - sending
+ * a declined or undecided visitor's hashed email and phone to Meta through our
+ * own server. Hashed identifiers are still personal data under GDPR.
  */
 export async function trackConversion(
   eventName: MetaEventName,
@@ -16,6 +21,7 @@ export async function trackConversion(
     customData?: Record<string, unknown>;
   } = {},
 ): Promise<void> {
+  if (!advertisingAllowed()) return;
   const eventId = newEventId();
 
   // Browser side. No-ops when the pixel has not loaded.

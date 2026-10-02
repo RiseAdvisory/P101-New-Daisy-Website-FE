@@ -21,7 +21,10 @@ declare global {
 export type MetaEventName =
   /** Trial form submitted on /start-free-trial. The primary web conversion. */
   | 'Lead'
-  /** Pricing or feature deep-dive viewed. Mid-funnel intent. */
+  /**
+   * A persona landing page (/business, /professional) viewed. The live ad set
+   * optimises for CONTENT_VIEW, so this is the event it learns from.
+   */
   | 'ViewContent'
   /** Outbound click to the App Store or Play Store. Install intent proxy. */
   | 'ClickedAppStore';

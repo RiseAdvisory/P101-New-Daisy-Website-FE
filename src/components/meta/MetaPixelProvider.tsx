@@ -1,46 +1,44 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Script from 'next/script';
 import { usePathname } from 'next/navigation';
-import { getConsentState, trackingAllowed } from '@/lib/consent';
+import { advertisingAllowed } from '@/lib/consent';
 
 /**
- * Loads the Meta Pixel, gated on the same consent rule as Microsoft Clarity.
+ * Loads the Meta Pixel, gated on advertisingAllowed().
  *
- * The script is never injected until consent allows it, so no request reaches
- * Meta for a user in a consent-required territory who has not opted in. That is
- * stricter than calling fbq('consent','revoke') after load, which still
- * contacts Meta.
+ * The script is never injected where consent does not allow it, so no request
+ * reaches Meta for those visitors. That is stricter than calling
+ * fbq('consent','revoke') after load, which still contacts Meta.
  *
- * PageView fires on route changes because the App Router does not reload the
- * document between navigations.
+ * The existing banner asks about analytics only, so accepting it does not
+ * enable this pixel; see advertisingAllowed() for why.
+ *
+ * PageView: the inline snippet sends the first one. The effect below sends one
+ * for each later App Router navigation, which does not reload the document.
+ * It used to fire on load as well, racing the snippet, so first page views
+ * could be counted twice.
  */
 export function MetaPixelProvider({ pixelId }: { pixelId: string }) {
   const [shouldLoad, setShouldLoad] = useState(false);
   const pathname = usePathname();
+  const lastTrackedPath = useRef<string | null>(null);
 
   useEffect(() => {
-    if (trackingAllowed()) setShouldLoad(true);
+    if (advertisingAllowed()) setShouldLoad(true);
   }, []);
 
-  // Re-check after the consent banner resolves, so accepting takes effect
-  // without a reload. The banner is owned by ClarityProvider; both read the
-  // same cookie.
   useEffect(() => {
-    if (shouldLoad) return;
-    const id = window.setInterval(() => {
-      if (getConsentState() === 'granted') {
-        setShouldLoad(true);
-        window.clearInterval(id);
-      }
-    }, 1000);
-    return () => window.clearInterval(id);
-  }, [shouldLoad]);
-
-  useEffect(() => {
-    if (!shouldLoad || typeof window.fbq !== 'function') return;
-    window.fbq('track', 'PageView');
+    if (!shouldLoad) return;
+    if (lastTrackedPath.current === null) {
+      // First load: the snippet's own PageView covers it.
+      lastTrackedPath.current = pathname;
+      return;
+    }
+    if (pathname === lastTrackedPath.current) return;
+    lastTrackedPath.current = pathname;
+    if (typeof window.fbq === 'function') window.fbq('track', 'PageView');
   }, [pathname, shouldLoad]);
 
   if (!shouldLoad) return null;

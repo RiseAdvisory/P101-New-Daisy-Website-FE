@@ -1,5 +1,6 @@
 import {
   CONSENT_COOKIE,
+  advertisingAllowed,
   consentRequired,
   getConsentState,
   trackingAllowed,
@@ -63,5 +64,30 @@ describe('getConsentState', () => {
   it('treats a missing geo cookie as not requiring consent', () => {
     setCookies('');
     expect(getConsentState()).toBe('not-required');
+  });
+});
+
+describe('advertisingAllowed', () => {
+  // The banner asks about analytics only, so accepting it must not switch on
+  // an advertising tracker in a consent-required country.
+  it('stays off in the UK even after the analytics banner is accepted', () => {
+    setCookies(`geo-country=GB; ${CONSENT_COOKIE}=accepted`);
+    expect(trackingAllowed()).toBe(true);
+    expect(advertisingAllowed()).toBe(false);
+  });
+
+  it('stays off across the EEA before any answer', () => {
+    setCookies('geo-country=DE');
+    expect(advertisingAllowed()).toBe(false);
+  });
+
+  it('runs in Kuwait with no banner interaction', () => {
+    setCookies('geo-country=KW');
+    expect(advertisingAllowed()).toBe(true);
+  });
+
+  it('honours an explicit decline even outside consent-required territories', () => {
+    setCookies(`geo-country=KW; ${CONSENT_COOKIE}=declined`);
+    expect(advertisingAllowed()).toBe(false);
   });
 });
