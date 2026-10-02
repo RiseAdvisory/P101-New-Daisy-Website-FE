@@ -25,25 +25,13 @@ const PlatformStrengths = dynamic(
 const QASection = dynamic(
   () => import('@/components/QASection/QASection').then((mod) => mod.QASection),
 );
-const BecomeFormPartner = dynamic(
-  () => import('@/components/businessPage/BecomeFormPartner').then((mod) => mod.BecomeFormPartner),
-);
 
-const uiStrings = {
-  en: {
-    formTitle: 'Ready to Take Control? Tell Us About Your Business.',
-    formSubtitle: 'Our team will reach out within 24 hours to help you get started.',
-  },
-  ar: {
-    formTitle: 'هل أنت مستعد للسيطرة؟ أخبرنا عن عملك.',
-    formSubtitle: 'سيتواصل فريقنا معك خلال 24 ساعة لمساعدتك على البدء.',
-  },
-} as const;
-
+// This is the homepage: / and /en redirect to /business. It ends with the FAQ.
+// The partner form that followed it was retired, since signup goes through
+// Get Started and /get-the-app.
 export const BusinessClient = ({ lang }: { lang: string }) => {
   const pageData = t(businessPageData, lang);
   const dataScroll = toScrollSectionItems(pageData.scrollSections);
-  const ui = uiStrings[lang as keyof typeof uiStrings] || uiStrings.en;
 
   return (
     <div className="w-full bg-primary md:-mt-[100px]">
@@ -105,11 +93,6 @@ export const BusinessClient = ({ lang }: { lang: string }) => {
         />
       )}
       <QASection pageType="Business" titleFraque={pageData.titleFraque} fallbackFaqs={pageData.fallbackFaqs} />
-      <BecomeFormPartner
-        defaultType="business"
-        title={ui.formTitle}
-        subtitle={ui.formSubtitle}
-      />
     </div>
   );
 };
