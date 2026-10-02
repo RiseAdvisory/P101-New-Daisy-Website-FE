@@ -31,7 +31,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       inventoryManagement: 1,
       reportingAndAnalytics: 3, // 60 reports + live dashboards, evidenced in Fresha's own Schedule 4
       marketplaceAndDiscovery: 3,
-      aiCapabilities: 2, // AI Concierge answers calls and books; Daisy still spans more channels
+      aiCapabilities: 2, // AI Concierge answers calls and messages; Daisy covers WhatsApp, Instagram and the booking site, not calls
       brandingAndWhiteLabel: 0,
     },
 
@@ -115,18 +115,18 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     },
 
     aiCapabilities: {
-      // Fresha's AI Concierge answers calls and books from them (verified
-      // 2026-09-29). This boolean is rendered directly as a table cell, so
-      // leaving it false published a bare "Not Available" - the exact claim
-      // in allegation 2(b). Chatbot stays false: the Concierge is phone-only.
+      // Fresha's AI Concierge answers calls and messages and books
+      // appointments (its own page, re-verified 2026-10-02). These booleans
+      // render directly as table cells, so a false here publishes a bare
+      // "Not Available" - the exact claim in allegation 2(b).
       hasAiReceptionist: true,
-      hasAiChatbot: false,
+      hasAiChatbot: true,
       hasSmartScheduling: false,
       hasAiMarketing: false,
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on at $99.95 per location per month, including 200 minutes and 500 messages. Its published material does not name WhatsApp or Instagram, so confirm channel coverage with Fresha directly. Daisy\'s AI receptionist covers calls, WhatsApp and Instagram in Arabic and English.',
+        'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on at $99.95 per location per month, including 200 minutes and 500 messages. Its published pages do not list WhatsApp or Instagram as Concierge channels, so confirm channel coverage with Fresha directly. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English; it does not answer phone calls today.',
     },
 
     targetMarket:
@@ -220,7 +220,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     },
 
     daisyAdvantages: [
-      'AI receptionist across calls, WhatsApp and Instagram, in Arabic and English, taking bookings and payments',
+      'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English, taking bookings and payments',
       'Official Meta Tech Provider with native WhatsApp Business API and Instagram integration, vs email and SMS campaigns with no two-way WhatsApp or Instagram automation',
       '360° customer acquisition (marketplace + cashback + AI marketing) vs marketplace-only discovery',
       'Arabic and English as equals across the whole product, with an AI receptionist that works in both',
@@ -233,7 +233,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     daisySwitchingReasons: [
       'Would rather not pay a marketplace commission on each new client it introduces - a one-time 50% in the UAE, 20% in Fresha\'s USD markets',
       'Want Arabic and English as equals across staff tools, client messages and booking pages, with an AI receptionist that works in both',
-      'Want one AI receptionist across calls, WhatsApp and Instagram, in Arabic and English',
+      'Want an AI receptionist on WhatsApp and Instagram, in Arabic and English',
       'Want marketing included in the plan price rather than billed per message',
       'Want a booking page carrying your logo, name and colours and no platform branding',
       // Was 'Need local payment methods and VAT compliance for GCC'. Framed as
@@ -254,7 +254,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     ],
 
     competitorWeaknesses: [
-      'AI Concierge is a paid add-on at $99.95 per location per month, and its published material does not name WhatsApp or Instagram',
+      'AI Concierge is a paid add-on at $99.95 per location per month, and its published pages do not list WhatsApp or Instagram as supported channels',
       'Marketing is billed per message once the first 50 emails each month are used',
       'Subscription fees plus transaction fees and marketplace commissions add up quickly',
       'Marketing is email and SMS with no AI campaign automation',
@@ -272,7 +272,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Daisy compare to Fresha for salon management?',
         answer:
-          'Fresha covers operations and attaches a marketplace, and it ships an AI Concierge for calls plus an Arabic interface. Daisy carries its AI receptionist across calls, WhatsApp and Instagram, treats Arabic and English as equals, and adds cashback acquisition and a fully branded booking page.',
+          'Fresha covers operations and attaches a marketplace, and it ships an AI Concierge that answers calls and messages, plus an Arabic interface. Daisy runs its AI receptionist on WhatsApp, Instagram and the booking site, treats Arabic and English as equals, and adds cashback acquisition and a fully branded booking page.',
       },
       {
         question: 'Can I switch from Fresha to Daisy?',
@@ -282,7 +282,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Fresha work in the Middle East?',
         answer:
-          'Yes. Fresha operates across all six GCC states and publishes local-currency pricing in each, with an Arabic interface and teams in Dubai and Saudi Arabia. Daisy was built for the GCC from the start, with Arabic and English as equals, local payment integration, and is live in Kuwait today.',
+          'Yes. Fresha operates across all six GCC states and publishes local-currency pricing in each, with an Arabic interface and teams in Dubai and Saudi Arabia. Daisy was built for the GCC from the start, with Arabic and English as equals, local payment integration, and is live in all six GCC countries.',
       },
       {
         question: 'Is Fresha really free to use?',
@@ -302,7 +302,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Fresha have AI features like Daisy?',
         answer:
-          'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on at $99.95 per location per month. Its published material does not name WhatsApp or Instagram. Daisy\'s AI receptionist handles calls plus WhatsApp and Instagram chat, takes payments, and works in Arabic and English.',
+          'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on at $99.95 per location per month. Its published pages do not list WhatsApp or Instagram as Concierge channels. Daisy\'s AI receptionist handles WhatsApp and Instagram chat and the booking site, takes payments, and works in Arabic and English. It does not answer phone calls today.',
       },
       {
         question: 'How good is the Fresha mobile app?',
@@ -318,7 +318,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     lastResearched: '2026-03-13',
     notes:
-      'No longer free. Monthly subscriptions now sit on top of transaction fees, on top of published transaction fees and marketplace commission. Fresha ships an AI Concierge for calls and is live in Arabic with GCC teams, so the old absence claims no longer hold. Main vulnerability: costs that compound across subscription, transaction fees and commissions.',
+      'No longer free. Monthly subscriptions now sit on top of transaction fees, on top of published transaction fees and marketplace commission. Fresha ships an AI Concierge that answers calls and messages, and is live in Arabic with GCC teams, so the old absence claims no longer hold. Main vulnerability: costs that compound across subscription, transaction fees and commissions.',
   },
 
   // ---------------------------------------------------------------------------

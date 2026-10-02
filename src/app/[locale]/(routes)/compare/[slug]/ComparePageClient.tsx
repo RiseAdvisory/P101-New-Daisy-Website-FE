@@ -47,15 +47,15 @@ const uiStrings = {
     customerAcquisition: 'Customer Acquisition',
     gccCountries: 'GCC Countries',
     whiteLabel: 'White-Label',
-    daisyAi: '24/7 Voice + Chat',
+    daisyAi: 'WhatsApp, Instagram and booking site, 24/7',
     daisyArabic: 'Native Arabic + English',
     daisyPricing: 'Flat pricing, all features',
     daisyAcquisition: 'Marketplace + Cashback + AI Marketing',
-    // Was "6 (UAE, KSA, Kuwait, Bahrain, Oman, Qatar)", beside a competitor
-    // listing the same six - while our own copy says Daisy is live in Kuwait.
-    daisyGcc: 'Built for all six; live in Kuwait today',
+    // Founder confirmed 2026-10-02 that Daisy is live in all six GCC countries.
+    daisyGcc: 'Live in all six GCC countries',
     daisyWhiteLabel: 'Full brand control',
     noAiReceptionist: 'No AI receptionist published',
+    aiReceptionistPublished: 'Publishes an AI receptionist',
     arabicUi: 'Arabic UI available',
     noArabicUi: 'No Arabic UI published',
     marketplaceDiscovery: 'Marketplace discovery',
@@ -68,7 +68,7 @@ const uiStrings = {
       'AI receptionist (24/7, Arabic + English)',
       'Cashback customer acquisition',
       'Full brand control (white-label)',
-      'Built for the GCC, live in Kuwait today',
+      'Live in all six GCC countries',
       'One flat price, no transaction fee and no marketplace commission',
       'Complete business management suite',
     ],
@@ -90,13 +90,14 @@ const uiStrings = {
     customerAcquisition: 'استقطاب العملاء',
     gccCountries: 'دول الخليج',
     whiteLabel: 'وايت ليبل',
-    daisyAi: 'صوت ومحادثة على مدار الساعة',
+    daisyAi: 'واتساب وإنستغرام وصفحة الحجز، على مدار الساعة',
     daisyArabic: 'العربية والإنجليزية بأولوية متساوية',
     daisyPricing: 'سعر ثابت يشمل كل الميزات',
     daisyAcquisition: 'سوق + كاشباك + تسويق بالذكاء الاصطناعي',
-    daisyGcc: 'مبنية لدول الخليج الست؛ متاحة اليوم في الكويت',
+    daisyGcc: 'متاحة في دول الخليج الست',
     daisyWhiteLabel: 'تحكم كامل بالعلامة التجارية',
     noAiReceptionist: 'لا يوجد موظف استقبال ذكي منشور',
+    aiReceptionistPublished: 'تنشر موظف استقبال ذكي',
     arabicUi: 'واجهة عربية متاحة',
     noArabicUi: 'لا توجد واجهة عربية منشورة',
     marketplaceDiscovery: 'الاكتشاف عبر السوق',
@@ -109,7 +110,7 @@ const uiStrings = {
       'موظف استقبال ذكي على مدار الساعة بالعربية والإنجليزية',
       'استقطاب العملاء عبر الكاشباك',
       'تحكم كامل بعلامتك التجارية (وايت ليبل)',
-      'مبنية للخليج، ومتاحة اليوم في الكويت',
+      'متاحة في دول الخليج الست',
       'سعر واحد ثابت، دون رسوم معاملات ودون عمولة سوق',
       'منظومة متكاملة لإدارة الأعمال',
     ],
@@ -163,8 +164,10 @@ function DaisyVsPage({
       // Never a fixed pejorative: describe the channels the competitor's AI
       // actually covers. 'Basic (limited)' capped every rival at "basic"
       // regardless of what their record said.
+      // "AI Concierge" is Fresha's product name; it was printed here for
+      // every competitor with an AI receptionist, Booksy and DINGG included.
       competitor: competitor.aiCapabilities.hasAiReceptionist
-        ? 'AI Concierge'
+        ? t.aiReceptionistPublished
         : t.noAiReceptionist,
     },
     {
@@ -190,8 +193,8 @@ function DaisyVsPage({
     },
     {
       label: t.gccCountries,
-      // No win claimed: Daisy is live in Kuwait today, so a market-count
-      // comparison cannot favour Daisy against a rival operating in more.
+      // No win claimed: rivals such as Fresha also operate across the GCC,
+      // so a market count is not an advantage to assert.
       daisy: t.daisyGcc,
       competitor:
         competitor.gccPresence.gccCountries.length > 0

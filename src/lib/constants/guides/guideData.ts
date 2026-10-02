@@ -326,7 +326,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What features does Daisy have that Fresha doesn\'t?',
           answer:
-            'Daisy\'s AI handles WhatsApp and Instagram as well as phone calls, where Fresha\'s AI Concierge is phone-only. Daisy also adds cashback-funded acquisition, a fully white-label booking page with no third-party badge, and flat published pricing with nothing added per transaction and no marketplace commission.',
+            'Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site. Fresha\'s AI Concierge answers calls and messages, and as of October 2026 its published pages do not list WhatsApp or Instagram as channels. Daisy also adds cashback-funded acquisition, a fully white-label booking page with no third-party badge, and flat published pricing with nothing added per transaction and no marketplace commission.',
         },
       ],
       metaTitle: 'How to Switch from Fresha | Migration Guide 2026',
@@ -713,7 +713,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'ما الميزات التي تمتلكها ديزي ولا يمتلكها Fresha؟',
           answer:
-            'يعمل الذكاء الاصطناعي في ديزي عبر واتساب وإنستغرام إضافة إلى المكالمات، بينما تقتصر خدمة AI Concierge لدى Fresha على الهاتف. وتضيف ديزي استقطاب عملاء بالكاشباك، وصفحة حجز بعلامتك التجارية بالكامل دون شعار أي طرف ثالث، وتسعيراً ثابتاً معلناً لا يضيف شيئاً على كل معاملة ولا عمولة سوق.',
+            'يعمل موظف الاستقبال الذكي في ديزي عبر واتساب وإنستغرام وصفحة الحجز. أما خدمة AI Concierge لدى Fresha فتردّ على المكالمات والرسائل، ولا تُدرج صفحاتها المنشورة حتى أكتوبر 2026 واتساب أو إنستغرام ضمن قنواتها. وتضيف ديزي استقطاب عملاء بالكاشباك، وصفحة حجز بعلامتك التجارية بالكامل دون شعار أي طرف ثالث، وتسعيراً ثابتاً معلناً لا يضيف شيئاً على كل معاملة ولا عمولة سوق.',
         },
       ],
       metaTitle: 'كيف تنتقل من Fresha | دليل الترحيل 2026',

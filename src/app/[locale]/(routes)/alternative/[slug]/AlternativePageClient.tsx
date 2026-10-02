@@ -23,7 +23,7 @@ interface Props {
 const uiStrings = {
   en: {
     answer: (name: string) =>
-      `The Daisy is an alternative to ${name} built for GCC beauty businesses: a 24/7 AI receptionist across voice, WhatsApp and Instagram, cashback-driven customer acquisition, and Arabic and English treated as equals with full RTL.`,
+      `The Daisy is an alternative to ${name} built for GCC beauty businesses: a 24/7 AI receptionist on WhatsApp, Instagram and the booking site, cashback-driven customer acquisition, and Arabic and English treated as equals with full RTL.`,
     whyLook: (name: string) => `Why People Look for ${name} Alternatives`,
     howCompares: (name: string) => `How Daisy Compares to ${name}`,
     whySwitch: 'Why Switch to Daisy?',
@@ -33,7 +33,7 @@ const uiStrings = {
   },
   ar: {
     answer: (name: string) =>
-      `ديزي بديل لـ ${name} مبني لأعمال التجميل في الخليج: موظف استقبال ذكي على مدار الساعة عبر المكالمات وواتساب وإنستغرام، واستقطاب عملاء عبر الكاشباك، والعربية والإنجليزية بأولوية متساوية مع دعم كامل للكتابة من اليمين إلى اليسار.`,
+      `ديزي بديل لـ ${name} مبني لأعمال التجميل في الخليج: موظف استقبال ذكي على مدار الساعة عبر واتساب وإنستغرام وصفحة الحجز، واستقطاب عملاء عبر الكاشباك، والعربية والإنجليزية بأولوية متساوية مع دعم كامل للكتابة من اليمين إلى اليسار.`,
     whyLook: (name: string) => `لماذا يبحث البعض عن بدائل لـ ${name}`,
     howCompares: (name: string) => `كيف تقارن ديزي مع ${name}`,
     whySwitch: 'لماذا الانتقال إلى ديزي؟',
