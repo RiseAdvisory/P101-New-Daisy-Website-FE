@@ -11,9 +11,12 @@ import { trackConversion } from '@/lib/meta/trackConversion';
  * The live ad set optimises for CONTENT_VIEW; until this fired, it was asked
  * to find people likely to do something it had never observed.
  *
- * It waits briefly for the pixel's _fbp cookie, which fbevents.js sets once it
- * loads, so the server-side twin carries it for matching. After 5 seconds it
- * sends anyway: the CAPI half still lands when an ad blocker stops the pixel.
+ * It waits for both the pixel (window.fbq) and its _fbp cookie, so the browser
+ * event goes out and the server-side twin carries _fbp for matching. Waiting on
+ * the cookie alone was wrong for returning visitors: _fbp survives from an
+ * earlier visit, so it exists before the pixel script runs, and only the CAPI
+ * half was sent (seen on production 2026-10-02). After 5 seconds it sends
+ * anyway, so the CAPI half still lands when an ad blocker stops the pixel.
  */
 export function TrackViewContent({ persona }: { persona: 'business' | 'professional' }) {
   useEffect(() => {
@@ -22,7 +25,8 @@ export function TrackViewContent({ persona }: { persona: 'business' | 'professio
     const started = Date.now();
     const tick = () => {
       if (cancelled) return;
-      if (getCookie('_fbp') || Date.now() - started > 5000) {
+      const pixelReady = typeof window.fbq === 'function' && Boolean(getCookie('_fbp'));
+      if (pixelReady || Date.now() - started > 5000) {
         void trackConversion('ViewContent', {
           customData: { content_category: persona, content_name: `${persona}-landing` },
         });
