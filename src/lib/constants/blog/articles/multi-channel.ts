@@ -1626,13 +1626,316 @@ const whatsappPricingSalonCostsArticleAr: LocalBlogPost = {
   },
 };
 
+// ---------------------------------------------------------------------------
+// Article 5: WhatsApp Business app coexistence
+// Type: Feature Explainer | User: Business | Category: Multi-Channel
+// Parent pillar: /salon-marketing-strategies
+// Facts: Meta's coexistence docs (onboarding-business-app-users, updated
+// 26 Jun 2026), changelog (11 Feb 2025), account_update webhook reference and
+// pricing page; Daisy behaviour from the coexistence release (epic PD-6494).
+// ---------------------------------------------------------------------------
+const whatsappCoexistenceArticle: LocalBlogPost = {
+  id: 1218,
+  attributes: {
+    title: 'Keep Your WhatsApp Business App and Connect It to Daisy: WhatsApp Coexistence Explained',
+    slug: 'whatsapp-business-app-coexistence-salons',
+    description:
+      'You no longer have to choose between the WhatsApp Business app on your phone and a business platform. With coexistence, one number works in both, and Daisy now supports it.',
+    aboutPosts: `
+<p><strong>In short:</strong> WhatsApp coexistence lets a salon use one WhatsApp number in two places at once: the WhatsApp Business app on its phone, and a business platform such as The Daisy. Messages sync both ways, so you can reply from your phone or from Daisy while clients keep messaging the number they already know. Daisy now supports coexistence, so you can connect your existing WhatsApp Business number and keep using the app.</p>
+
+<h2>What is WhatsApp coexistence?</h2>
+<p>Coexistence is a WhatsApp feature from Meta. It connects a number you already use in the WhatsApp Business app to the WhatsApp Business Platform (the system business software like Daisy runs on) without moving the number off your phone. Meta <a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/changelog">added it in February 2025</a>.</p>
+<p>In <a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-business-app-users">Meta's words</a>, businesses "can still send messages on a one-to-one basis using the WhatsApp Business app, and WhatsApp keeps messaging history between both apps in sync."</p>
+<p>Before coexistence, connecting a number to business software usually took it out of the WhatsApp Business app on your phone. For a salon that was a real cost, because clients know that number and the team is used to answering it on the phone.</p>
+
+<h2>Why does this matter for a salon?</h2>
+<p>Most salons in the Gulf already run on WhatsApp. Clients message to book, reschedule and ask about prices, and they've been messaging the same number for years. With coexistence you keep that number, so you don't have to tell clients about a new one or reprint anything.</p>
+<p>You and your team also keep the WhatsApp Business app on your phones, while the same conversations show up in Daisy next to bookings and client records. And with your permission, Daisy imports up to six months of past chats and your WhatsApp contacts, so your history comes with you.</p>
+
+<h2>What's new in Daisy?</h2>
+<p>When you connect WhatsApp in Daisy, you now choose how:</p>
+<table>
+<thead><tr><th></th><th>Keep using my WhatsApp Business app</th><th>Connect a new number</th></tr></thead>
+<tbody>
+<tr><td>Number</td><td>The one your clients already know</td><td>A brand-new WhatsApp Business number</td></tr>
+<tr><td>Where you reply</td><td>On your phone or in Daisy, synced both ways</td><td>In Daisy</td></tr>
+<tr><td>Past chats</td><td>Up to 180 days of chats and contacts imported, if you approve</td><td>Starts fresh</td></tr>
+<tr><td>Best for</td><td>Salons with an established WhatsApp number</td><td>New businesses, or a separate booking line</td></tr>
+</tbody>
+</table>
+<p>If you choose <strong>Keep using my WhatsApp Business app</strong>:</p>
+<ul>
+<li>Messages you send from your phone also appear in the Daisy conversation, so everyone on the team sees the whole thread.</li>
+<li>Once you approve history sharing on your phone, Daisy imports up to 180 days of one-to-one chats. Group chats aren't imported.</li>
+<li>Daisy adds your WhatsApp contacts to your client list and keeps syncing new ones.</li>
+<li>Edited messages are marked as edited, and deleted ones show "This message was deleted".</li>
+<li>If Daisy's AI receptionist is handling a chat and you reply to that client from your phone, Daisy hands the conversation to you and the AI stops replying in it.</li>
+</ul>
+
+<h2>How do I connect my existing WhatsApp Business number?</h2>
+<p>You'll need the owner account in Daisy and the phone that has your WhatsApp Business app on it.</p>
+<ol>
+<li>Update the WhatsApp Business app on your phone. Meta requires version 2.24.17 or later.</li>
+<li>In Daisy, open the WhatsApp connection screen, choose <strong>Keep using my WhatsApp Business app</strong>, and tap <strong>Continue</strong>.</li>
+<li>Sign in with Facebook and follow Meta's steps to connect your business.</li>
+<li>When your phone prompts you, confirm the connection in the WhatsApp Business app.</li>
+<li>Approve chat history sharing on your phone. Daisy then imports your recent chats and contacts, and you can watch the progress on the connection screen.</li>
+</ol>
+<p>Tip: approve history sharing the first time you're asked. Meta allows the history import once, within 24 hours of connecting. If you decline or miss that window, you'd have to disconnect and reconnect to try again, and Meta may not allow a second import.</p>
+
+<h2>What changes in my WhatsApp Business app?</h2>
+<p>Your app keeps working for one-to-one chats, calls, groups, your catalog, quick replies, away messages and labels. Meta does switch off a few features on numbers connected this way:</p>
+<ul>
+<li>Disappearing messages are turned off for one-to-one chats.</li>
+<li>View-once messages and live location messages are disabled.</li>
+<li>Broadcast lists are disabled, and existing ones become read-only. You can send campaigns from Daisy instead.</li>
+<li>Linked devices are signed out when you connect. You can link them again afterwards, WhatsApp Web included, except WhatsApp for Windows and WhatsApp for WearOS, which aren't supported.</li>
+</ul>
+<p>Two more things to expect. Meta only provides photos and files from roughly the last 14 days of your history, so older imported chats arrive as text. And group chats stay in your WhatsApp app but don't come into Daisy.</p>
+
+<h2>How do I keep the connection working?</h2>
+<p>Open the WhatsApp Business app on your phone regularly. Meta <a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/account_update/">disconnects the number</a> if the phone app has been inactive for about 14 days.</p>
+<p>Changing phones or reinstalling WhatsApp can also disconnect the number from Daisy. If that happens, Daisy tells you in the app, and by email if your email address is verified, and it reconnects automatically once Meta reports the number is back.</p>
+<p>To disconnect on purpose, open the WhatsApp Business app, go to <strong>Settings &gt; Account &gt; Business Platform</strong> and tap <strong>Disconnect Account</strong>. Meta controls this step, so it happens on your phone rather than in Daisy.</p>
+
+<h2>What does it cost?</h2>
+<p>Messages you send from the WhatsApp Business app stay free, as they are today. Messages sent through the WhatsApp Business Platform, including from Daisy, follow <a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing">Meta's platform pricing</a>. Since 1 October 2026 every business number gets 1,000 free service messages a month, and Meta charges from the 1,001st. Our guide to <a href="/en/resources/blog/business/whatsapp-business-pricing-salon-costs">what WhatsApp actually costs a salon</a> has the full breakdown.</p>
+
+<h2>Is coexistence available in Kuwait, the UAE and Saudi Arabia?</h2>
+<p>Meta's current documentation doesn't list any country where coexistence is unsupported, and no GCC country appeared on its earlier lists either.</p>
+
+<h2>Frequently asked questions</h2>
+<h3>Will my clients notice anything?</h3>
+<p>No. They keep messaging the same number, in the same WhatsApp chat.</p>
+<h3>Can I still reply from my phone?</h3>
+<p>Yes. You can reply from the WhatsApp Business app or from Daisy, and both stay in sync.</p>
+<h3>Do I lose my WhatsApp chat history?</h3>
+<p>No. Your chats stay in the app on your phone. With your approval, Daisy also imports up to 180 days of one-to-one chats, including photos and files from roughly the last 14 days.</p>
+<h3>What if the AI receptionist is answering a client and I reply from my phone?</h3>
+<p>Daisy hands that conversation to you and the AI stops replying in it, so your client doesn't get two answers.</p>
+<h3>Can I still use WhatsApp Web?</h3>
+<p>Yes. Connecting signs out your linked devices, and you can link WhatsApp Web again afterwards. WhatsApp for Windows and WearOS aren't supported with coexistence.</p>
+<h3>Can I stop using it later?</h3>
+<p>Yes. Disconnect from inside the WhatsApp Business app, under Settings &gt; Account &gt; Business Platform. Your number keeps working in the app.</p>
+
+<p>Your clients already know your WhatsApp number, and Daisy can now work with it without taking it off your phone. For more on using WhatsApp with your clients, see our <a href="/en/resources/blog/business/whatsapp-marketing-salons-guide">WhatsApp marketing guide for salons</a>, or <a href="/en/pricing/business">see Daisy's plans</a>.</p>
+`,
+    metaTitle: 'WhatsApp Coexistence for Salons: Keep Your App | The Daisy',
+    metaDescription:
+      'Connect the WhatsApp Business number your clients already know to Daisy and keep the app on your phone. Learn how coexistence works and how to set it up.',
+    createdAt: '2026-10-04T08:00:00.000Z',
+    updatedAt: '2026-10-04T08:00:00.000Z',
+    publishedAt: '2026-10-04T08:00:00.000Z',
+    locale: 'en',
+    sortId: 122,
+    tags: { category: 'Multi-Channel', topic: 'WhatsApp' },
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'Sofia Alvarez',
+          jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist',
+          date: '4 October 2026',
+          time: '6 min.',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
+    category: { data: { id: 23, attributes: { name: 'Multi-Channel' } } },
+    picture: {
+      data: {
+        attributes: {
+          url: '/images/blog/whatsapp-business-app-coexistence-salons.webp',
+          alternativeText: 'A salon phone and a laptop showing the same chat, kept in sync',
+        },
+      },
+    },
+    image: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/whatsapp-business-app-coexistence-salons.webp',
+            formats: { large: { url: '/images/blog/whatsapp-business-app-coexistence-salons.webp' } },
+          },
+        },
+      ],
+    },
+  },
+};
+
+// Arabic is written for terminology and fact consistency with the English and
+// the app's own Arabic strings. It is never run through the humanizer; it
+// needs a native-speaker pass.
+const whatsappCoexistenceArticleAr: LocalBlogPost = {
+  id: 1218,
+  attributes: {
+    title: 'احتفظ بتطبيق واتساب للأعمال واربطه بديزي: شرح ميزة التعايش في واتساب',
+    slug: 'whatsapp-business-app-coexistence-salons',
+    description:
+      'لم تعد مضطرًا للاختيار بين تطبيق واتساب للأعمال على هاتفك ومنصة أعمال. مع ميزة التعايش يعمل رقم واحد في المكانين معًا، وديزي تدعم ذلك الآن.',
+    aboutPosts: `
+<p><strong>باختصار:</strong> تتيح ميزة التعايش في واتساب (Coexistence) للصالون استخدام رقم واتساب واحد في مكانين في الوقت نفسه: تطبيق واتساب للأعمال على هاتفه، ومنصة أعمال مثل ديزي. تتزامن الرسائل في الاتجاهين، فتستطيع الرد من هاتفك أو من ديزي بينما يواصل عملاؤك مراسلة الرقم الذي يعرفونه. وديزي تدعم ميزة التعايش الآن، فيمكنك ربط رقم واتساب للأعمال الحالي ومواصلة استخدام التطبيق.</p>
+
+<h2>ما هي ميزة التعايش في واتساب؟</h2>
+<p>التعايش ميزة من ميتا في واتساب، تربط رقمًا تستخدمه أصلًا في تطبيق واتساب للأعمال بمنصة واتساب للأعمال (وهي المنظومة التي تعمل عليها برامج الأعمال مثل ديزي) من دون نقل الرقم من هاتفك. وقد <a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/changelog">أضافتها ميتا في فبراير 2025</a>.</p>
+<p>وبحسب <a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-business-app-users">وثائق ميتا</a>، يظل بإمكان الأعمال إرسال الرسائل في محادثات فردية عبر تطبيق واتساب للأعمال، ويُبقي واتساب سجل المراسلات متزامنًا بين التطبيقين.</p>
+<p>قبل ميزة التعايش، كان ربط الرقم ببرنامج أعمال يعني عادةً خروجه من تطبيق واتساب للأعمال على هاتفك. وكان ذلك ثمنًا حقيقيًا يدفعه الصالون، لأن العملاء يعرفون هذا الرقم والفريق اعتاد الرد عليه من الهاتف.</p>
+
+<h2>لماذا يهمّ هذا الصالون؟</h2>
+<p>معظم صالونات الخليج تعتمد على واتساب أصلًا. يراسلك العملاء للحجز وتغيير المواعيد والسؤال عن الأسعار، ويراسلون الرقم نفسه منذ سنوات. ومع ميزة التعايش تحتفظ بهذا الرقم، فلا حاجة لإبلاغ العملاء برقم جديد ولا لإعادة طباعة أي شيء.</p>
+<p>وتحتفظ أنت وفريقك بتطبيق واتساب للأعمال على هواتفكم، بينما تظهر المحادثات نفسها في ديزي بجانب الحجوزات وسجلات العملاء. وبموافقتك، تستورد ديزي ما يصل إلى ستة أشهر من المحادثات السابقة وجهات اتصالك على واتساب، فينتقل سجلّك معك.</p>
+
+<h2>ما الجديد في ديزي؟</h2>
+<p>عند ربط واتساب في ديزي، صار بإمكانك اختيار طريقة الربط:</p>
+<table>
+<thead><tr><th></th><th>الاستمرار في استخدام تطبيق WhatsApp Business</th><th>ربط رقم جديد</th></tr></thead>
+<tbody>
+<tr><td>الرقم</td><td>الرقم الذي يعرفه عملاؤك</td><td>رقم واتساب للأعمال جديد</td></tr>
+<tr><td>أين ترد</td><td>من هاتفك أو من ديزي، مع مزامنة في الاتجاهين</td><td>من ديزي</td></tr>
+<tr><td>المحادثات السابقة</td><td>استيراد محادثات حتى 180 يومًا وجهات الاتصال، بعد موافقتك</td><td>بداية جديدة</td></tr>
+<tr><td>الأنسب لـ</td><td>الصالونات التي لديها رقم واتساب معروف</td><td>الأعمال الجديدة، أو خط حجز منفصل</td></tr>
+</tbody>
+</table>
+<p>إذا اخترت <strong>الاستمرار في استخدام تطبيق WhatsApp Business</strong>:</p>
+<ul>
+<li>تظهر الرسائل التي ترسلها من هاتفك في محادثة ديزي أيضًا، فيرى الفريق كله المحادثة كاملة.</li>
+<li>بعد موافقتك على مشاركة السجل من هاتفك، تستورد ديزي المحادثات الفردية حتى 180 يومًا. أما المحادثات الجماعية فلا تُستورد.</li>
+<li>تضيف ديزي جهات اتصالك على واتساب إلى قائمة عملائك، وتواصل مزامنة الجهات الجديدة.</li>
+<li>تظهر الرسائل المعدّلة بعلامة تعديل، وتظهر الرسائل المحذوفة بعبارة "تم حذف هذه الرسالة".</li>
+<li>إذا كان موظف الاستقبال الذكي في ديزي يتولى محادثة ورددت على العميل نفسه من هاتفك، تنقل ديزي المحادثة إليك ويتوقف الذكاء الاصطناعي عن الرد فيها.</li>
+</ul>
+
+<h2>كيف أربط رقم واتساب للأعمال الحالي؟</h2>
+<p>ستحتاج إلى حساب المالك في ديزي، والهاتف الذي عليه تطبيق واتساب للأعمال.</p>
+<ol>
+<li>حدّث تطبيق واتساب للأعمال على هاتفك، إذ تشترط ميتا الإصدار 2.24.17 أو أحدث.</li>
+<li>في ديزي، افتح شاشة ربط واتساب، واختر <strong>الاستمرار في استخدام تطبيق WhatsApp Business</strong>، ثم اضغط <strong>متابعة</strong>.</li>
+<li>سجّل الدخول عبر فيسبوك واتبع خطوات ميتا لربط نشاطك التجاري.</li>
+<li>عندما يطلب منك هاتفك ذلك، أكّد الربط من تطبيق واتساب للأعمال.</li>
+<li>وافق على مشاركة سجل المحادثات من هاتفك. بعدها تستورد ديزي محادثاتك الأخيرة وجهات اتصالك، ويمكنك متابعة التقدم من شاشة الربط.</li>
+</ol>
+<p>نصيحة: وافق على مشاركة السجل من أول مرة يُطلب منك ذلك. فميتا تسمح باستيراد السجل مرة واحدة فقط، خلال 24 ساعة من الربط. وإذا رفضت أو فاتتك هذه المهلة، فستضطر إلى قطع الاتصال وإعادة الربط للمحاولة مجددًا، وقد لا تسمح ميتا باستيراد ثانٍ.</p>
+
+<h2>ما الذي يتغير في تطبيق واتساب للأعمال لديّ؟</h2>
+<p>يستمر تطبيقك في العمل للمحادثات الفردية والمكالمات والمجموعات والكتالوج والردود السريعة ورسائل الغياب والتصنيفات. لكن ميتا توقف بعض الميزات في الأرقام المربوطة بهذه الطريقة:</p>
+<ul>
+<li>تُوقَف الرسائل المؤقتة (ذاتية الاختفاء) في المحادثات الفردية.</li>
+<li>تُعطَّل رسائل العرض لمرة واحدة ورسائل الموقع المباشر.</li>
+<li>تُعطَّل قوائم البث، وتصبح القوائم الحالية للقراءة فقط. ويمكنك إرسال الحملات من ديزي بدلًا منها.</li>
+<li>يُسجَّل خروج الأجهزة المرتبطة عند الربط، ويمكنك ربطها مجددًا بعد ذلك، ومنها واتساب ويب، باستثناء واتساب لنظام Windows وواتساب لنظام WearOS لأنهما غير مدعومين.</li>
+</ul>
+<p>وهناك أمران آخران. لا توفر ميتا الصور والملفات إلا من آخر 14 يومًا تقريبًا من سجلك، لذا تصل المحادثات الأقدم المستوردة نصًّا فقط. كما تبقى المحادثات الجماعية في تطبيق واتساب لديك ولا تنتقل إلى ديزي.</p>
+
+<h2>كيف أحافظ على استمرار الربط؟</h2>
+<p>افتح تطبيق واتساب للأعمال على هاتفك بانتظام، فميتا <a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/account_update/">تقطع ربط الرقم</a> إذا ظل التطبيق على الهاتف غير نشط نحو 14 يومًا.</p>
+<p>وقد يؤدي تغيير الهاتف أو إعادة تثبيت واتساب أيضًا إلى قطع ربط الرقم بديزي. وفي هذه الحالة تُعلمك ديزي داخل التطبيق، وعبر البريد الإلكتروني إذا كان بريدك موثّقًا، ثم تعيد الربط تلقائيًا بمجرد أن تُبلغ ميتا بعودة الرقم.</p>
+<p>ولقطع الاتصال عن قصد، افتح تطبيق واتساب للأعمال وانتقل إلى الإعدادات ثم الحساب ثم منصة الأعمال (Settings &gt; Account &gt; Business Platform)، واضغط قطع اتصال الحساب (Disconnect Account). هذه الخطوة تتحكم بها ميتا، لذا تتم من هاتفك لا من ديزي.</p>
+
+<h2>كم يكلّف ذلك؟</h2>
+<p>تبقى الرسائل التي ترسلها من تطبيق واتساب للأعمال مجانية كما هي اليوم. أما الرسائل المرسلة عبر منصة واتساب للأعمال، ومنها ما يُرسل من ديزي، فتخضع <a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing">لتسعير منصة ميتا</a>. ومنذ 1 أكتوبر 2026 يحصل كل رقم أعمال على 1,000 رسالة خدمة مجانية شهريًا، وتبدأ ميتا الاحتساب من الرسالة رقم 1,001. ويقدّم دليلنا <a href="/ar/resources/blog/business/whatsapp-business-pricing-salon-costs">كم يكلفك واتساب فعليًا في صالونك</a> التفاصيل كاملة.</p>
+
+<h2>هل ميزة التعايش متاحة في الكويت والإمارات والسعودية؟</h2>
+<p>لا تذكر وثائق ميتا الحالية أي دولة لا تُدعم فيها ميزة التعايش، ولم تظهر أي دولة خليجية في قوائمها السابقة أيضًا.</p>
+
+<h2>الأسئلة الشائعة</h2>
+<h3>هل سيلاحظ عملائي أي تغيير؟</h3>
+<p>لا. سيواصلون مراسلة الرقم نفسه، في محادثة واتساب نفسها.</p>
+<h3>هل ما زال بإمكاني الرد من هاتفي؟</h3>
+<p>نعم. يمكنك الرد من تطبيق واتساب للأعمال أو من ديزي، ويبقى الاثنان متزامنين.</p>
+<h3>هل سأفقد سجل محادثاتي على واتساب؟</h3>
+<p>لا. تبقى محادثاتك في التطبيق على هاتفك. وبموافقتك تستورد ديزي أيضًا المحادثات الفردية حتى 180 يومًا، مع الصور والملفات من آخر 14 يومًا تقريبًا.</p>
+<h3>ماذا لو كان موظف الاستقبال الذكي يرد على عميل ورددت أنا من هاتفي؟</h3>
+<p>تنقل ديزي تلك المحادثة إليك ويتوقف الذكاء الاصطناعي عن الرد فيها، فلا تصل عميلك إجابتان.</p>
+<h3>هل يمكنني الاستمرار في استخدام واتساب ويب؟</h3>
+<p>نعم. يؤدي الربط إلى تسجيل خروج أجهزتك المرتبطة، ويمكنك ربط واتساب ويب مجددًا بعد ذلك. أما واتساب لنظام Windows ولنظام WearOS فغير مدعومين مع ميزة التعايش.</p>
+<h3>هل يمكنني التوقف عن استخدامها لاحقًا؟</h3>
+<p>نعم. اقطع الاتصال من داخل تطبيق واتساب للأعمال، من الإعدادات ثم الحساب ثم منصة الأعمال. ويبقى رقمك يعمل في التطبيق.</p>
+
+<p>عملاؤك يعرفون رقم واتساب الخاص بك، وأصبح بإمكان ديزي العمل معه من دون أخذه من هاتفك. ولمزيد من الأفكار حول التواصل مع عملائك عبر واتساب، اطّلع على <a href="/ar/resources/blog/business/whatsapp-marketing-salons-guide">دليل التسويق عبر واتساب للصالونات</a>، أو <a href="/ar/pricing/business">اطّلع على باقات ديزي</a>.</p>
+`,
+    metaTitle: 'ميزة التعايش في واتساب للصالونات: احتفظ بتطبيقك | ديزي',
+    metaDescription:
+      'اربط رقم واتساب للأعمال الذي يعرفه عملاؤك بديزي واحتفظ بالتطبيق على هاتفك. تعرّف على طريقة عمل ميزة التعايش وكيفية إعدادها.',
+    createdAt: '2026-10-04T08:00:00.000Z',
+    updatedAt: '2026-10-04T08:00:00.000Z',
+    publishedAt: '2026-10-04T08:00:00.000Z',
+    locale: 'ar',
+    sortId: 122,
+    tags: { category: 'Multi-Channel', topic: 'WhatsApp' },
+    user: {
+      data: {
+        id: 5,
+        attributes: {
+          name: 'صوفيا ألفاريز',
+          jobTitle: 'مستشارة عمليات الصالونات وخبيرة استراتيجيات تقنية التجميل',
+          date: '4 أكتوبر 2026',
+          time: '6 دقائق',
+          picture: {
+            data: {
+              attributes: {
+                url: '/images/blog/author-sofia-alvarez.webp',
+              },
+            },
+          },
+        },
+      },
+    },
+    iconOwner: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/author-sofia-alvarez.webp',
+          },
+        },
+      ],
+    },
+    category: { data: { id: 23, attributes: { name: 'Multi-Channel' } } },
+    picture: {
+      data: {
+        attributes: {
+          url: '/images/blog/whatsapp-business-app-coexistence-salons.webp',
+          alternativeText: 'هاتف صالون وحاسوب محمول يعرضان المحادثة نفسها بشكل متزامن',
+        },
+      },
+    },
+    image: {
+      data: [
+        {
+          attributes: {
+            url: '/images/blog/whatsapp-business-app-coexistence-salons.webp',
+            formats: { large: { url: '/images/blog/whatsapp-business-app-coexistence-salons.webp' } },
+          },
+        },
+      ],
+    },
+  },
+};
+
 export const multiChannelBusinessArticles: LocalBlogPost[] = [
   whatsappMarketingSalonsArticle,
   managingInstagramDmsArticle,
   omnichannelCommunicationArticle,
   whatsappPricingSalonCostsArticle,
+  whatsappCoexistenceArticle,
   whatsappMarketingSalonsArticleAr,
   managingInstagramDmsArticleAr,
   omnichannelCommunicationArticleAr,
   whatsappPricingSalonCostsArticleAr,
+  whatsappCoexistenceArticleAr,
 ];
