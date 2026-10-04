@@ -282,7 +282,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Fresha work in the Middle East?',
         answer:
-          'Yes. Fresha operates across all six GCC states and publishes local-currency pricing in each, with an Arabic interface and teams in Dubai and Saudi Arabia. Daisy was built for the GCC from the start, with Arabic and English as equals, local payment integration, and is live in all six GCC countries.',
+          'Yes. Fresha operates across all six GCC states and publishes local-currency pricing in each, with an Arabic interface and teams in Dubai and Saudi Arabia. Daisy was built for the GCC from the start, with Arabic and English as equals and local payment integration, and it is live in all six GCC countries.',
       },
       {
         question: 'Is Fresha really free to use?',
