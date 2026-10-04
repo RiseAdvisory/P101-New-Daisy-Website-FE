@@ -307,10 +307,11 @@ function DaisyVsPage({
         locale={locale}
       />
 
-      {/* Pros & Cons */}
-      <section className="bg-gray-50 py-12">
+      {/* Pros & Cons: each list spans three rows of this grid (heading,
+          Strengths, Things to weigh) so the two platforms line up. */}
+      <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-5xl px-4">
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-x-8 gap-y-12 md:grid-cols-2 md:gap-y-6">
             <ProsConsList
               pros={competitor.competitorStrengths}
               cons={competitor.competitorWeaknesses}
