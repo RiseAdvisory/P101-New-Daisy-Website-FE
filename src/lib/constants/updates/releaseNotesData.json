@@ -1,8 +1,46 @@
 [
   {
+    "version": "whatsapp-coexistence",
+    "date": "2026-10-04",
+    "platforms": [
+      "web"
+    ],
+    "title": {
+      "en": "Keep your WhatsApp Business app when you connect WhatsApp",
+      "ar": "احتفظ بتطبيق WhatsApp Business عند ربط WhatsApp"
+    },
+    "summary": {
+      "en": "Connect the WhatsApp Business number your clients already know, and keep using the app on your phone. Messages sync both ways between your phone and Daisy.",
+      "ar": "اربط رقم WhatsApp Business الذي يعرفه عملاؤك، واستمر في استخدام التطبيق على هاتفك. تتزامن الرسائل في الاتجاهين بين هاتفك وDaisy."
+    },
+    "highlights": {
+      "en": [
+        "Choose \"Keep using my WhatsApp Business app\" when connecting WhatsApp",
+        "Reply from your phone or from Daisy, synced both ways",
+        "Import up to 180 days of chats and your WhatsApp contacts",
+        "Edited and deleted messages are shown in Daisy",
+        "Replying from your phone hands the chat over from the AI receptionist to you"
+      ],
+      "ar": [
+        "اختر \"الاستمرار في استخدام تطبيق WhatsApp Business\" عند ربط WhatsApp",
+        "رُد من هاتفك أو من Daisy مع مزامنة في الاتجاهين",
+        "استيراد محادثات حتى 180 يوماً وجهات اتصالك على WhatsApp",
+        "عرض الرسائل المعدّلة والمحذوفة في Daisy",
+        "الرد من هاتفك ينقل المحادثة من موظف الاستقبال الذكي إليك"
+      ]
+    },
+    "storeNotes": {
+      "en": "You can now keep your WhatsApp Business app when you connect WhatsApp to Daisy. Choose \"Keep using my WhatsApp Business app\" and reply from your phone or from Daisy, with messages synced both ways. Daisy imports up to 180 days of chats and your WhatsApp contacts, and shows edited and deleted messages. When you reply from your phone, the AI receptionist hands that chat over to you.",
+      "ar": "جديد: احتفظ بتطبيق WhatsApp Business عند ربط WhatsApp بـ Daisy. اختر \"الاستمرار في استخدام تطبيق WhatsApp Business\" ورُد من هاتفك أو من Daisy مع مزامنة الرسائل في الاتجاهين. استورد محادثات حتى 180 يوماً وجهات اتصالك، وشاهد الرسائل المعدّلة والمحذوفة، وعندما ترد من هاتفك ينقل موظف الاستقبال الذكي المحادثة إليك."
+    }
+  },
+  {
     "version": "1.5.4",
     "date": "2026-08-01",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "maintenanceOnly": true,
     "title": {
       "en": "Maintenance release",
@@ -13,8 +51,14 @@
       "ar": "إصلاحات وتحسينات في الأداء. مخفي عن صفحة التحديثات لعدم وجود جديد يخص مقدّمي الخدمة."
     },
     "highlights": {
-      "en": ["Bug fixes", "Performance improvements"],
-      "ar": ["إصلاح الأخطاء", "تحسينات في الأداء"]
+      "en": [
+        "Bug fixes",
+        "Performance improvements"
+      ],
+      "ar": [
+        "إصلاح الأخطاء",
+        "تحسينات في الأداء"
+      ]
     },
     "storeNotes": {
       "en": "This release includes bug fixes and performance improvements.",

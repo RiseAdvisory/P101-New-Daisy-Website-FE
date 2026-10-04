@@ -20,10 +20,12 @@ const PLATFORM_LABELS: Record<ReleasePlatform, { en: string; ar: string }> = {
 // the ISO value in the <time datetime> attribute, whatever the runtime's
 // ICU defaults are. Note ar-SA would resolve to the Islamic calendar and
 // print a Hijri date (١٣ صفر ١٤٤٨) for a 2026-07-27 entry, so it is not
-// used here.
+// used here. The digits are pinned too (nu-arab): plain "ar" gives
+// Arabic-Indic digits on some ICU versions and Western digits on newer ones
+// (ICU 78 / Node 25), so the server and a visitor's browser could disagree.
 function formatDate(iso: string, locale: string): string {
   return new Date(`${iso}T00:00:00Z`).toLocaleDateString(
-    locale === 'ar' ? 'ar-u-ca-gregory' : 'en-US-u-ca-gregory',
+    locale === 'ar' ? 'ar-u-ca-gregory-nu-arab' : 'en-US-u-ca-gregory',
     { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' },
   );
 }
