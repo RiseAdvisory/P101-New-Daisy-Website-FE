@@ -13,6 +13,8 @@ import { ComparisonBreadcrumbSchema } from '@/components/seo/ComparisonBreadcrum
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { renderSafeHtml } from '@/lib/utils/htmlContent';
 import { Check, X } from 'lucide-react';
+import { ComparisonSourceNote } from '@/components/comparePage/ComparisonSourceNote';
+import { comparisonLastUpdated } from '@/lib/constants/competitors/comparisonLastUpdated';
 
 interface Props {
   slug: string;
@@ -97,6 +99,7 @@ function AlternativeSinglePage({
         title={data.metaTitle}
         description={data.metaDescription}
         url={`https://www.jointhedaisy.com/${locale}/alternative/${slug}`}
+        dateModified={comparisonLastUpdated('alternative', slug)}
       />
       {competitor.faq.length > 0 && <FaqSchema faqs={competitor.faq} />}
 
@@ -105,6 +108,7 @@ function AlternativeSinglePage({
         subtitle={data.heroSubtitle}
         variant="alternative"
         locale={locale}
+        lastUpdated={comparisonLastUpdated('alternative', slug)}
       />
 
       {/* Answer block for AI extraction */}
@@ -241,6 +245,7 @@ function AlternativeSinglePage({
           <RelatedPages links={allRelatedPages} locale={locale} />
         </section>
       )}
+      <ComparisonSourceNote locale={locale} lastUpdated={comparisonLastUpdated('alternative', slug)} />
     </main>
   );
 }
@@ -269,6 +274,7 @@ function BestAlternativesPage({
         title={data.metaTitle}
         description={data.metaDescription}
         url={`https://www.jointhedaisy.com/${locale}/alternative/${slug}`}
+        dateModified={comparisonLastUpdated('alternative', slug)}
       />
 
       <ComparisonHero
@@ -276,6 +282,7 @@ function BestAlternativesPage({
         subtitle={data.heroSubtitle}
         variant="best-alternatives"
         locale={locale}
+        lastUpdated={comparisonLastUpdated('alternative', slug)}
       />
 
       {/* Intro */}
@@ -317,6 +324,7 @@ function BestAlternativesPage({
 
       {/* CTA */}
       <SwitchingCTA competitorName={competitor.name} locale={locale} />
+      <ComparisonSourceNote locale={locale} lastUpdated={comparisonLastUpdated('alternative', slug)} />
     </main>
   );
 }
