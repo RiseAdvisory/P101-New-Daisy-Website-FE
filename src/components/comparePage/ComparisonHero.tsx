@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { cn } from '@/lib/utils';
+import { formatComparisonDate } from '@/lib/constants/competitors/comparisonLastUpdated';
 
 interface ComparisonHeroProps {
   title: string;
@@ -11,7 +12,11 @@ interface ComparisonHeroProps {
     | 'competitor-vs'
     | 'solution';
   locale?: string;
+  /** ISO date (yyyy-mm-dd) the page last changed; shown under the subtitle. */
+  lastUpdated?: string;
 }
+
+const lastUpdatedLabel = { en: 'Last updated', ar: 'آخر تحديث' } as const;
 
 const badgeText: Record<'en' | 'ar', Record<ComparisonHeroProps['variant'], string>> = {
   en: {
@@ -35,6 +40,7 @@ export const ComparisonHero: FC<ComparisonHeroProps> = ({
   subtitle,
   variant,
   locale = 'en',
+  lastUpdated,
 }) => {
   const badge = (badgeText[locale as 'en' | 'ar'] ?? badgeText.en)[variant];
 
@@ -71,6 +77,13 @@ export const ComparisonHero: FC<ComparisonHeroProps> = ({
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#455150] md:text-xl">
           {subtitle}
         </p>
+
+        {lastUpdated && (
+          <p className="mt-4 text-sm text-[#455150]" data-testid="comparison-last-updated">
+            {lastUpdatedLabel[locale === 'ar' ? 'ar' : 'en']}:{' '}
+            <time dateTime={lastUpdated}>{formatComparisonDate(lastUpdated, locale)}</time>
+          </p>
+        )}
 
         <div className="mx-auto mt-8 h-1 w-20 rounded-full bg-primary" />
       </div>

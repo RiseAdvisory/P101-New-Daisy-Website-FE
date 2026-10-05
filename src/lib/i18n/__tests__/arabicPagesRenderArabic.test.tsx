@@ -50,6 +50,8 @@ export function englishTextNodes(root: HTMLElement): string[] {
     if (!parent || parent.closest('script,style,noscript,svg')) continue;
     const text = (node.textContent || '').replace(/\s+/g, ' ').trim();
     if (!text || PLAN_NAMES.has(text) || WHOLE_NODES.has(text)) continue;
+    // An email address is not English copy (same rule as the audit script).
+    if (/^[\w.+-]+@[\w.-]+$/.test(text)) continue;
     // Same as scripts/i18n-render-audit.mjs: proper names inside Arabic text and
     // multipliers ("3x") are not English copy.
     const checked = PHRASES.reduce((t, ph) => t.split(ph).join(' '), text).replace(/\b\d+(\.\d+)?x\b/g, ' ');

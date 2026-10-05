@@ -22,6 +22,8 @@ import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import { ProductComparisonSchema } from '@/components/seo/ProductComparisonSchema';
 import { daisyData } from '@/lib/constants/competitors/competitorData';
 import { renderSafeHtml } from '@/lib/utils/htmlContent';
+import { ComparisonSourceNote } from '@/components/comparePage/ComparisonSourceNote';
+import { comparisonLastUpdated } from '@/lib/constants/competitors/comparisonLastUpdated';
 
 interface Props {
   slug: string;
@@ -226,6 +228,7 @@ function DaisyVsPage({
         title={data.metaTitle}
         description={data.metaDescription}
         url={`https://www.jointhedaisy.com/${locale}/compare/${slug}`}
+        dateModified={comparisonLastUpdated('compare', slug)}
       />
       {competitor.faq.length > 0 && <FaqSchema faqs={competitor.faq} />}
       <ProductComparisonSchema
@@ -255,6 +258,7 @@ function DaisyVsPage({
         subtitle={data.heroSubtitle}
         variant="daisy-vs"
         locale={locale}
+        lastUpdated={comparisonLastUpdated('compare', slug)}
       />
 
       {/* TL;DR */}
@@ -402,6 +406,7 @@ function DaisyVsPage({
           <RelatedPages links={relatedPages} locale={locale} />
         </section>
       )}
+      <ComparisonSourceNote locale={locale} lastUpdated={comparisonLastUpdated('compare', slug)} />
     </main>
   );
 }
@@ -433,6 +438,7 @@ function CompetitorVsPage({
         title={data.metaTitle}
         description={data.metaDescription}
         url={`https://www.jointhedaisy.com/${locale}/compare/${slug}`}
+        dateModified={comparisonLastUpdated('compare', slug)}
       />
 
       <ComparisonHero
@@ -440,6 +446,7 @@ function CompetitorVsPage({
         subtitle={data.heroSubtitle}
         variant="competitor-vs"
         locale={locale}
+        lastUpdated={comparisonLastUpdated('compare', slug)}
       />
 
       {/* Feature Comparison */}
@@ -496,6 +503,7 @@ function CompetitorVsPage({
           <RelatedPages links={relatedPages} locale={locale} />
         </section>
       )}
+      <ComparisonSourceNote locale={locale} lastUpdated={comparisonLastUpdated('compare', slug)} />
     </main>
   );
 }
