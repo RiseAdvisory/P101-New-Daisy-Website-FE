@@ -149,10 +149,10 @@ export async function getBlogPostBySlug(
  * Get all blog slugs for static generation
  */
 export async function getAllBlogSlugs(): Promise<
-  Array<{ userType: UserType; slug: string; locale: string; publishedAt?: string }>
+  Array<{ userType: UserType; slug: string; locale: string; publishedAt?: string; updatedAt?: string }>
 > {
   const userTypes: UserType[] = ['customer', 'business', 'professional'];
-  const slugs: Array<{ userType: UserType; slug: string; locale: string; publishedAt?: string }> = [];
+  const slugs: Array<{ userType: UserType; slug: string; locale: string; publishedAt?: string; updatedAt?: string }> = [];
 
   for (const userType of userTypes) {
     // Slugs are locale-agnostic at the routing level; generate from English canonicals.
@@ -164,6 +164,7 @@ export async function getAllBlogSlugs(): Promise<
           slug: post.attributes.slug,
           locale: 'en',
           publishedAt: post.attributes.publishedAt,
+          updatedAt: post.attributes.updatedAt,
         });
       }
     });

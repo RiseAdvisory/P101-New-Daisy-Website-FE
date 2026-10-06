@@ -126,3 +126,67 @@ describe('sitemap() — ROUTE_LAST_UPDATED per-route overrides', () => {
     expect(pillar?.lastModified).toBe('2026-04-27T00:00:00.000Z');
   });
 });
+
+describe('sitemap() — dates follow the content', () => {
+  const { getAllBlogSlugs } = jest.requireMock('@/lib/api/blog') as {
+    getAllBlogSlugs: jest.Mock;
+  };
+  const { COMPARISON_LAST_UPDATED } = jest.requireActual(
+    '@/lib/constants/competitors/comparisonLastUpdated',
+  ) as typeof import('@/lib/constants/competitors/comparisonLastUpdated');
+  const { RELEASE_NOTES } = jest.requireActual(
+    '@/lib/constants/updates/releaseNotes',
+  ) as typeof import('@/lib/constants/updates/releaseNotes');
+
+  const at = (entries: Awaited<ReturnType<typeof sitemap>>, path: string) =>
+    entries.filter(
+      (e) =>
+        e.url === `https://www.jointhedaisy.com/en${path}` ||
+        e.url === `https://www.jointhedaisy.com/ar${path}`,
+    );
+
+  it('gives every comparison and alternatives page the date shown on the page', async () => {
+    const entries = await sitemap();
+    for (const [key, date] of Object.entries(COMPARISON_LAST_UPDATED)) {
+      const matches = at(entries, `/${key}`);
+      expect({ key, count: matches.length }).toEqual({ key, count: 2 });
+      for (const e of matches) {
+        expect({ key, lastModified: e.lastModified }).toEqual({ key, lastModified: `${date}T00:00:00.000Z` });
+      }
+    }
+  });
+
+  it('dates a blog post by its later revision when it has one', async () => {
+    getAllBlogSlugs.mockResolvedValueOnce([
+      { userType: 'business', slug: 'revised', locale: 'en', publishedAt: '2026-04-01T05:00:00.000Z', updatedAt: '2026-09-01T05:00:00.000Z' },
+      { userType: 'business', slug: 'untouched', locale: 'en', publishedAt: '2026-04-01T05:00:00.000Z', updatedAt: '2026-04-01T05:00:00.000Z' },
+    ]);
+    const entries = await sitemap();
+    expect(at(entries, '/resources/blog/business/revised')[0].lastModified).toBe('2026-09-01T05:00:00.000Z');
+    expect(at(entries, '/resources/blog/business/untouched')[0].lastModified).toBe('2026-04-01T05:00:00.000Z');
+  });
+
+  it('moves a blog listing forward when a post is added to it', async () => {
+    getAllBlogSlugs.mockResolvedValueOnce([
+      { userType: 'business', slug: 'new-post', locale: 'en', publishedAt: '2026-10-04T08:00:00.000Z' },
+      { userType: 'professional', slug: 'older-post', locale: 'en', publishedAt: '2026-04-11T05:00:00.000Z' },
+    ]);
+    const entries = await sitemap();
+    expect(at(entries, '/resources/blog-post')[0].lastModified).toBe('2026-10-04T08:00:00.000Z');
+    expect(at(entries, '/resources/blog-post/business')[0].lastModified).toBe('2026-10-04T08:00:00.000Z');
+    expect(at(entries, '/resources/blog-post/professional')[0].lastModified).toBe('2026-04-11T05:00:00.000Z');
+    // No customer posts: the listing keeps the bucket date.
+    expect(at(entries, '/resources/blog-post/customer')[0].lastModified).toBe('2026-03-17T00:00:00.000Z');
+  });
+
+  it('dates the updates page by its newest visible release note', async () => {
+    const newest = RELEASE_NOTES.filter((n) => !n.maintenanceOnly)
+      .map((n) => n.date)
+      .sort()
+      .pop();
+    const entries = await sitemap();
+    for (const e of at(entries, '/resources/updates')) {
+      expect(e.lastModified).toBe(`${newest}T00:00:00.000Z`);
+    }
+  });
+});

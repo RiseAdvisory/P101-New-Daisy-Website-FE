@@ -263,6 +263,8 @@ export const guideData: I18nContent<GuideData[]> = {
       relatedGuides: ['reduce-salon-no-shows', 'get-more-salon-clients'],
     },
     {
+      // AI Concierge wording corrected (PR #342)
+      lastUpdated: '2026-10-02T00:00:00.000Z',
       slug: 'switch-from-fresha',
       title: 'How Do I Switch from Fresha to Another Platform?',
       answer:
@@ -650,6 +652,8 @@ export const guideData: I18nContent<GuideData[]> = {
       relatedGuides: ['reduce-salon-no-shows', 'get-more-salon-clients'],
     },
     {
+      // AI Concierge wording corrected (PR #342)
+      lastUpdated: '2026-10-02T00:00:00.000Z',
       slug: 'switch-from-fresha',
       title: 'كيف أنتقل من Fresha إلى منصة أخرى؟',
       answer:
