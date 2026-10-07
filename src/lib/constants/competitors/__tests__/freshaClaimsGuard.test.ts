@@ -21,6 +21,8 @@
  */
 import fs from 'fs';
 import path from 'path';
+import { daisyVsPages } from '../comparisonPages';
+import { daisyVsPages as daisyVsPagesAr } from '../comparisonPages.ar';
 
 const ROOT = path.join(__dirname, '..', '..', '..', '..');
 
@@ -429,5 +431,35 @@ describe('Fresha AI Concierge channels', () => {
   it('keeps llms-full.txt in line', () => {
     const llms = fs.readFileSync(path.join(ROOT, '..', 'public', 'llms-full.txt'), 'utf8');
     expect(llms).not.toMatch(/AI Concierge for phone calls|Concierge is phone-only/);
+  });
+});
+
+// Fresha announced AI-powered intelligent scheduling, including Dynamic
+// Reassignment, on 8 May 2026. The staff-management row on /compare/daisy-vs-fresha
+// still credited AI scheduling to Daisy alone until the competitor watch
+// caught it on 2026-10-06.
+describe('Fresha AI scheduling', () => {
+  it('records smart scheduling as shipping', () => {
+    const tier1 = fs.readFileSync(
+      path.join(ROOT, 'lib', 'constants', 'competitors', 'tier1Data.ts'),
+      'utf8',
+    );
+    const fresha = tier1.slice(tier1.indexOf('\n  fresha: {'), tier1.indexOf('\n  booksy: {'));
+    expect(fresha).toMatch(/hasSmartScheduling: true/);
+  });
+
+  it('credits Fresha with AI scheduling on the staff-management row, EN and AR', () => {
+    const en = daisyVsPages.find((p) => p.slug === 'daisy-vs-fresha')!.featureCommentary.staffManagement;
+    const ar = daisyVsPagesAr.find((p) => p.slug === 'daisy-vs-fresha')!.featureCommentary.staffManagement;
+    expect(en).toMatch(/Fresha[^.]*AI-powered intelligent scheduling/);
+    expect(ar).toMatch(/Fresha[^.]*الجدولة الذكية/);
+  });
+
+  it('does not say Fresha lacks AI scheduling', () => {
+    expect(
+      offenders(
+        /(?:no|without|lacks?|missing) (?:AI|smart|intelligent) scheduling|(?:لا|بدون|دون|تفتقر إلى) (?:ال)?جدولة (?:ال)?ذكية/,
+      ),
+    ).toEqual([]);
   });
 });

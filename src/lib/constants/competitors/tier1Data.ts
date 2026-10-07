@@ -121,7 +121,11 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       // "Not Available" - the exact claim in allegation 2(b).
       hasAiReceptionist: true,
       hasAiChatbot: true,
-      hasSmartScheduling: false,
+      // Fresha announced AI-powered intelligent scheduling, including Dynamic
+      // Reassignment, on 8 May 2026 (fresha.com/blog/fresha-ai-powered-
+      // intelligent-scheduling-beauty-wellness). Found by the competitor watch
+      // on 2026-10-06.
+      hasSmartScheduling: true,
       hasAiMarketing: false,
       hasAiAnalytics: false,
       hasAiPricing: false,

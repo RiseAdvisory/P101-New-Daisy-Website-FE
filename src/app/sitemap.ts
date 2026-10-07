@@ -7,6 +7,8 @@ import { getGuideSitemapData } from '@/lib/constants/guides/guideData';
 import { getAllFeatureDeepDiveSlugs } from '@/lib/constants/features/featureDeepDive';
 import { getPillarSitemapData } from '@/lib/constants/pillars';
 import { getAllAngleParams } from '@/lib/constants/solutions/angles';
+import { comparisonLastUpdated } from '@/lib/constants/competitors/comparisonLastUpdated';
+import { RELEASE_NOTES } from '@/lib/constants/updates/releaseNotes';
 
 const BASE_URL = 'https://www.jointhedaisy.com';
 const LOCALES = ['en', 'ar'];
@@ -51,15 +53,25 @@ function localizedEntries(
  * Routes not listed here fall back to one of the bucket constants below.
  */
 const ROUTE_LAST_UPDATED: Record<string, string> = {
-  // Tier 1 Arabic metadata pass (PR #278) + professional mobile scroll fix (PR #279)
-  '/business': '2026-05-04T00:00:00.000Z',
-  '/professional': '2026-05-04T00:00:00.000Z',
+  // Both pages now end with the FAQ; the partner form is gone (PR #341)
+  '/business': '2026-10-02T00:00:00.000Z',
+  '/professional': '2026-10-02T00:00:00.000Z',
   // Trial flow now redirects to /get-the-app (see middleware.ts)
   '/get-the-app': '2026-05-19T00:00:00.000Z',
 };
 
 function lastModFor(routeKey: string, fallback: string): string {
   return ROUTE_LAST_UPDATED[routeKey] ?? fallback;
+}
+
+/** A yyyy-mm-dd date as the ISO timestamp the rest of the sitemap uses. */
+function isoDay(date: string | undefined): string | undefined {
+  return date ? `${date.slice(0, 10)}T00:00:00.000Z` : undefined;
+}
+
+/** The latest of several ISO dates, ignoring missing ones. */
+function latest(...dates: Array<string | undefined>): string | undefined {
+  return dates.filter((d): d is string => Boolean(d)).sort().pop();
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -92,19 +104,45 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...localizedEntries('/get-the-app', { lastModified: lastModFor('/get-the-app', STATIC_CONTENT_DATE), changeFrequency: 'monthly', priority: 0.9 }),
   ];
 
+  // Blog posts. A post's date is when it was published or, if later, when it
+  // was last revised (updatedAt). New posts appear here on the next deploy
+  // with no other step.
+  const blogSlugs = await getAllBlogSlugs();
+  const postDate = (item: (typeof blogSlugs)[number]) =>
+    latest(item.publishedAt, item.updatedAt) ?? SEO_CONTENT_DATE;
+  const blogPages = blogSlugs.flatMap((item) =>
+    localizedEntries(`/resources/blog/${item.userType}/${item.slug}`, {
+      lastModified: postDate(item),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    })
+  );
+
+  // A blog listing changes whenever a post is added to it, so it carries the
+  // date of its newest post. The bare hub lists every persona.
+  const newestPost = (userType?: string) =>
+    latest(...blogSlugs.filter((i) => !userType || i.userType === userType).map(postDate)) ??
+    SEO_CONTENT_DATE;
+
+  // The updates page lists release notes, so it changes when one is added.
+  // Maintenance-only entries are hidden from the page and do not count.
+  const newestReleaseNote =
+    isoDay(latest(...RELEASE_NOTES.filter((n) => !n.maintenanceOnly).map((n) => n.date))) ??
+    STATIC_CONTENT_DATE;
+
   // Resource pages — bare hub URLs serve all personas; per-persona variants
   // are individually indexable so the locale + persona combination is the
   // canonical SEO target the persona toggle navigates to.
   const resourcePages = [
-    ...localizedEntries('/resources/blog-post', { lastModified: lastModFor('/resources/blog-post', SEO_CONTENT_DATE), changeFrequency: 'daily', priority: 0.7 }),
-    ...localizedEntries('/resources/blog-post/business', { lastModified: lastModFor('/resources/blog-post/business', SEO_CONTENT_DATE), changeFrequency: 'daily', priority: 0.7 }),
-    ...localizedEntries('/resources/blog-post/professional', { lastModified: lastModFor('/resources/blog-post/professional', SEO_CONTENT_DATE), changeFrequency: 'daily', priority: 0.7 }),
-    ...localizedEntries('/resources/blog-post/customer', { lastModified: lastModFor('/resources/blog-post/customer', SEO_CONTENT_DATE), changeFrequency: 'daily', priority: 0.7 }),
+    ...localizedEntries('/resources/blog-post', { lastModified: lastModFor('/resources/blog-post', newestPost()), changeFrequency: 'daily', priority: 0.7 }),
+    ...localizedEntries('/resources/blog-post/business', { lastModified: lastModFor('/resources/blog-post/business', newestPost('business')), changeFrequency: 'daily', priority: 0.7 }),
+    ...localizedEntries('/resources/blog-post/professional', { lastModified: lastModFor('/resources/blog-post/professional', newestPost('professional')), changeFrequency: 'daily', priority: 0.7 }),
+    ...localizedEntries('/resources/blog-post/customer', { lastModified: lastModFor('/resources/blog-post/customer', newestPost('customer')), changeFrequency: 'daily', priority: 0.7 }),
     ...localizedEntries('/resources/tutorials', { lastModified: lastModFor('/resources/tutorials', STATIC_CONTENT_DATE), changeFrequency: 'weekly', priority: 0.6 }),
     ...localizedEntries('/resources/tutorials/business', { lastModified: lastModFor('/resources/tutorials/business', STATIC_CONTENT_DATE), changeFrequency: 'weekly', priority: 0.6 }),
     ...localizedEntries('/resources/tutorials/professional', { lastModified: lastModFor('/resources/tutorials/professional', STATIC_CONTENT_DATE), changeFrequency: 'weekly', priority: 0.6 }),
     ...localizedEntries('/resources/testimonials', { lastModified: lastModFor('/resources/testimonials', STATIC_CONTENT_DATE), changeFrequency: 'weekly', priority: 0.5 }),
-    ...localizedEntries('/resources/updates', { lastModified: lastModFor('/resources/updates', STATIC_CONTENT_DATE), changeFrequency: 'weekly', priority: 0.6 }),
+    ...localizedEntries('/resources/updates', { lastModified: lastModFor('/resources/updates', newestReleaseNote), changeFrequency: 'weekly', priority: 0.6 }),
   ];
 
   // Legal pages
@@ -114,16 +152,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // /resources/legal excluded — redirects (307) and wastes crawl budget
   ];
 
-  // Dynamically fetch blog posts
-  const blogSlugs = await getAllBlogSlugs();
-  const blogPages = blogSlugs.flatMap((item) =>
-    localizedEntries(`/resources/blog/${item.userType}/${item.slug}`, {
-      lastModified: item.publishedAt || SEO_CONTENT_DATE,
-      changeFrequency: 'weekly',
-      priority: 0.7,
-    })
-  );
-
   // SEO pages: comparison, alternative, solution (index pages)
   const compareIndexPages = [
     ...localizedEntries('/compare', { lastModified: lastModFor('/compare', SEO_CONTENT_DATE), changeFrequency: 'weekly', priority: 0.8 }),
@@ -131,12 +159,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...localizedEntries('/solutions', { lastModified: lastModFor('/solutions', SEO_CONTENT_DATE), changeFrequency: 'weekly', priority: 0.8 }),
   ];
 
+  // Comparison and alternatives pages use the same date the page shows under
+  // its title ("Last updated"), from comparisonLastUpdated.ts.
   const comparePages = getAllCompareSlugs().flatMap((slug) =>
-    localizedEntries(`/compare/${slug}`, { lastModified: lastModFor(`/compare/${slug}`, SEO_CONTENT_DATE), changeFrequency: 'monthly', priority: 0.8 })
+    localizedEntries(`/compare/${slug}`, {
+      lastModified: lastModFor(`/compare/${slug}`, isoDay(comparisonLastUpdated('compare', slug)) ?? SEO_CONTENT_DATE),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    })
   );
 
   const alternativePagesList = getAllAlternativeSlugs().flatMap((slug) =>
-    localizedEntries(`/alternative/${slug}`, { lastModified: lastModFor(`/alternative/${slug}`, SEO_CONTENT_DATE), changeFrequency: 'monthly', priority: 0.8 })
+    localizedEntries(`/alternative/${slug}`, {
+      lastModified: lastModFor(`/alternative/${slug}`, isoDay(comparisonLastUpdated('alternative', slug)) ?? SEO_CONTENT_DATE),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    })
   );
 
   const solutionPages = getAllSolutionSlugs().flatMap((slug) =>

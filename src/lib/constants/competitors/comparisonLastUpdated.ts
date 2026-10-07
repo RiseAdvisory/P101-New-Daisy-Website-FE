@@ -53,7 +53,7 @@ export const COMPARISON_LAST_UPDATED: Record<string, string> = {
   'compare/daisy-vs-booksy': '2026-09-29',
   'compare/daisy-vs-boulevard': '2026-09-05',
   'compare/daisy-vs-dingg': '2026-09-29',
-  'compare/daisy-vs-fresha': '2026-10-04',
+  'compare/daisy-vs-fresha': '2026-10-06',
   'compare/daisy-vs-glamera': '2026-09-29',
   'compare/daisy-vs-glossgenius': '2026-09-29',
   'compare/daisy-vs-mangomint': '2026-09-29',

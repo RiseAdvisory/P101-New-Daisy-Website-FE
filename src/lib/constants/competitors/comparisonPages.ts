@@ -103,7 +103,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       clientManagement:
         'Fresha gives you client profiles and history. Daisy layers AI on top, predicting no-shows, flagging VIP clients and suggesting personalized offers from booking patterns.',
       staffManagement:
-        'Both handle scheduling and staff calendars. Daisy\'s AI scheduling arranges appointment slots around revenue, closing gaps and preventing double-bookings on its own.',
+        'Both handle scheduling and staff calendars, and both now use AI for it. In May 2026 Fresha announced AI-powered intelligent scheduling. Its Dynamic Reassignment feature moves flexible appointments between suitable team members in real time. Daisy\'s AI scheduling arranges slots around revenue, so it fills gaps and prevents double-bookings.',
       marketingAndCrm:
         'Fresha charges per marketing message beyond the first 50 emails each month. Daisy runs AI-powered marketing automation, targeted campaigns, cashback incentives and personalized engagement that keeps going without you.',
       inventoryManagement:
