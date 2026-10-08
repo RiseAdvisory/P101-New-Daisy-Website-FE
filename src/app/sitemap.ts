@@ -56,8 +56,8 @@ const ROUTE_LAST_UPDATED: Record<string, string> = {
   // Both pages now end with the FAQ; the partner form is gone (PR #341)
   '/business': '2026-10-02T00:00:00.000Z',
   '/professional': '2026-10-02T00:00:00.000Z',
-  // Trial flow now redirects to /get-the-app (see middleware.ts)
-  '/get-the-app': '2026-05-19T00:00:00.000Z',
+  // Crawlers are no longer sent on to the Play Store (see src/lib/utils/crawler.ts)
+  '/get-the-app': '2026-10-08T00:00:00.000Z',
 };
 
 function lastModFor(routeKey: string, fallback: string): string {

@@ -7,6 +7,7 @@ import { t } from '@/lib/constants/i18n';
 import { getTheAppPageData } from '@/lib/constants/pages/getTheAppPageData';
 import { buttonAppData } from '@/lib/constants/shared/buttonAppData';
 import { needsAppStoreEscape } from '@/lib/utils/inAppBrowser';
+import { isCrawler } from '@/lib/utils/crawler';
 import { InAppBrowserNotice } from '@/components/getTheApp/InAppBrowserNotice';
 
 export const GetTheAppClient = ({ lang }: { lang: string }) => {
@@ -19,6 +20,9 @@ export const GetTheAppClient = ({ lang }: { lang: string }) => {
   useEffect(() => {
     try {
       const ua = navigator.userAgent || '';
+      // Googlebot's smartphone crawler looks like an Android phone; leave it
+      // on the page so Google indexes it (see src/lib/utils/crawler.ts).
+      if (isCrawler(ua)) return;
       const win = window as unknown as { MSStream?: unknown };
       // Inside an iOS in-app browser the App Store navigation would dead-end,
       // so stay put and let InAppBrowserNotice offer the Safari hand-off and
