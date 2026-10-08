@@ -10,13 +10,13 @@ import { detectInAppBrowser } from '@/lib/utils/inAppBrowser';
  */
 
 const PAGE_SOURCE = fs.readFileSync(
-  path.join(__dirname, '..', 'page.tsx'),
+  path.join(__dirname, '..', 'mobileRedirectScript.ts'),
   'utf8',
 );
 
 function extractInlineRegex(): RegExp {
   const match = PAGE_SOURCE.match(/const IN_APP_UA_RE =\s*([\s\S]*?);\n/);
-  if (!match) throw new Error('IN_APP_UA_RE not found in page.tsx');
+  if (!match) throw new Error('IN_APP_UA_RE not found in mobileRedirectScript.ts');
   const literal = match[1].trim();
   const parts = literal.match(/^\/(.*)\/([a-z]*)$/s);
   if (!parts) throw new Error(`IN_APP_UA_RE is not a regex literal: ${literal}`);
