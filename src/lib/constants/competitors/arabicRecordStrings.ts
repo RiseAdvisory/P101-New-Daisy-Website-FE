@@ -38,6 +38,7 @@ const HEADQUARTERS: Record<string, string> = {
   'Paris, France': 'باريس، فرنسا',
   'Pleasanton, CA, USA': 'بليزانتون، كاليفورنيا، الولايات المتحدة',
   'Portland, OR, USA': 'بورتلاند، أوريغون، الولايات المتحدة',
+  'Raleigh, NC, USA': 'رالي، كارولاينا الشمالية، الولايات المتحدة',
   'Riyadh, Saudi Arabia': 'الرياض، السعودية',
   'San Francisco, CA, USA': 'سان فرانسيسكو، كاليفورنيا، الولايات المتحدة',
   'San Luis Obispo, CA, USA': 'سان لويس أوبيسبو، كاليفورنيا، الولايات المتحدة',
@@ -124,6 +125,39 @@ const EXACT: Record<string, string> = {
   'Very high commission rates': 'نسب عمولة مرتفعة جداً',
   'Very high monthly cost for the feature set': 'تكلفة شهرية مرتفعة جداً مقارنة بالميزات',
   'Website builder add-on': 'إضافة منشئ المواقع',
+
+  // Acuity Scheduling, Setmore, SimplyBook.me and SQUIRE (verified 2026-10-09)
+  '$16/mo billed annually': '$16 شهرياً عند الدفع السنوي',
+  '$20/mo, or $16/mo billed annually': '$20 شهرياً، أو $16 شهرياً عند الدفع السنوي',
+  '$34/mo, or $27/mo billed annually': '$34 شهرياً، أو $27 شهرياً عند الدفع السنوي',
+  '$61/mo, or $49/mo billed annually': '$61 شهرياً، أو $49 شهرياً عند الدفع السنوي',
+  'Card processing fees from Stripe, Square or PayPal (Acuity adds no payment fee of its own)':
+    'رسوم معالجة البطاقات لدى Stripe أو Square أو PayPal (لا يضيف Acuity رسوماً خاصة به على المدفوعات)',
+  'Prices exclude applicable taxes': 'الأسعار لا تشمل الضرائب المطبقة',
+  'Free (paid from $5/mo per user, billed annually)':
+    'مجاني (الباقات المدفوعة من $5 شهرياً لكل مستخدم عند الدفع السنوي)',
+  '$12/mo per user, or $5/mo per user billed annually':
+    '$12 شهرياً لكل مستخدم، أو $5 شهرياً لكل مستخدم عند الدفع السنوي',
+  'Live Receptionist (human call answering, US only): $99/mo add-on':
+    'خدمة Live Receptionist (رد بشري على المكالمات، في الولايات المتحدة فقط): إضافة بـ $99 شهرياً',
+  'Extra SMS credits beyond the 500 a month per Pro user, bought in-app':
+    'رصيد رسائل نصية إضافي يتجاوز 500 رسالة شهرياً لكل مستخدم في باقة Pro، يُشترى من داخل التطبيق',
+  'Free (paid from $11.9/mo billed annually)':
+    'مجاني (الباقات المدفوعة من $11.9 شهرياً عند الدفع السنوي)',
+  '$13.9/mo, or $11.9/mo billed annually': '$13.9 شهرياً، أو $11.9 شهرياً عند الدفع السنوي',
+  '$29.9/mo, or $24.9/mo billed annually': '$29.9 شهرياً، أو $24.9 شهرياً عند الدفع السنوي',
+  '$59.9/mo, or $49.9/mo billed annually': '$59.9 شهرياً، أو $49.9 شهرياً عند الدفع السنوي',
+  'Pricing on request': 'السعر عند الطلب',
+  'SMS credits: $8 per 100': 'رصيد الرسائل النصية: $8 لكل 100',
+  'WhatsApp credits: $8 per 100': 'رصيد رسائل واتساب: $8 لكل 100',
+  'AI Voice Booking credits: $8 per 100': 'رصيد الحجز الصوتي بالذكاء الاصطناعي (AI Voice Booking): $8 لكل 100',
+  'Extra bookings: $4 per 100': 'حجوزات إضافية: $4 لكل 100',
+  '$150/mo per shop': '$150 شهرياً لكل محل',
+  '$250/mo per shop': '$250 شهرياً لكل محل',
+  'Operator AI phone answering: $99/mo add-on (listed on the Executive plan)':
+    'الرد الهاتفي بالذكاء الاصطناعي Operator: إضافة بـ $99 شهرياً (مدرجة في باقة Executive)',
+  'Branded website and landing pages: $25/mo add-on (listed on the Executive plan)':
+    'موقع وصفحات هبوط تحمل علامتك: إضافة بـ $25 شهرياً (مدرجة في باقة Executive)',
 };
 
 /**
