@@ -9,50 +9,70 @@ import type { I18nContent } from '../i18n';
 export const tier3Competitors: Record<string, CompetitorData> = {
   // ---------------------------------------------------------------------------
   // 13. Square Appointments
+  // Sources, all read 2026-10-09:
+  //   squareup.com/us/en/appointments/pricing (plans, US processing rates,
+  //     "There is no employee limit", Square AI "currenty in beta" on all three
+  //     plans, multi-location on Plus and Premium, support hours)
+  //   squareup.com/us/en/appointments (customer profiles; Square Go is "our
+  //     free marketplace app")
+  //   squareup.com/us/en/appointments/square-go, squareup.com/us/en/ai,
+  //   squareup.com/us/en/appointments/scheduling-features/square-assistant
+  //   Block, Inc. FY2025 Form 10-K (sec.gov): "no formal headquarters";
+  //     principal executive office in Oakland, CA; Square started February 2009
   // ---------------------------------------------------------------------------
   'square-appointments': {
     slug: 'square-appointments',
     name: 'Square Appointments',
-    website: 'https://squareup.com/appointments',
+    website: 'https://squareup.com/us/en/appointments',
     tier: 3,
     description:
-      'A payment-first booking tool from Square, part of Block, Inc., built on top of the Square POS ecosystem. Individuals can use it free.',
+      'Booking and payments software from Square, part of Block, Inc., built on the Square point-of-sale system and sold to beauty, health, fitness and other appointment businesses. Square Free has no monthly fee.',
     founded: '2009',
-    headquarters: 'San Francisco, CA, USA',
+    // Block's principal executive office (it reports no formal headquarters).
+    headquarters: 'Oakland, CA, USA',
 
     features: {
       onlineBooking: 2,
       posAndPayments: 3,
-      clientManagement: 1,
-      staffManagement: 1,
-      marketingAndCrm: 1,
+      clientManagement: 2, // automatic customer profiles with preferences, documents and images
+      staffManagement: 2, // unlimited staff calendars on every plan; shifts and payroll
+      marketingAndCrm: 2, // email and text marketing, points-based loyalty
       inventoryManagement: 2,
       reportingAndAnalytics: 2,
-      marketplaceAndDiscovery: 1,
-      aiCapabilities: 0,
-      brandingAndWhiteLabel: 0,
+      marketplaceAndDiscovery: 2, // Square Go, a free marketplace app
+      aiCapabilities: 2, // Square AI (beta) on every plan; Square Assistant answers client texts
+      brandingAndWhiteLabel: 1, // free booking site and Square Online websites
     },
 
     pricing: {
       hasFreePlan: true,
-      startingPrice: 'Free (paid from $29/mo)',
+      startingPrice: 'Free (paid from $49/mo per location)',
       startingPriceNumeric: 0,
       tiers: [
-        { name: 'Free', price: 'Free', priceNumeric: 0, features: ['Individual booking', 'Square POS', 'Basic calendar'] },
-        { name: 'Plus', price: '$29/mo', priceNumeric: 29, billingCycle: 'monthly', features: ['Multiple staff', 'No-show protection', 'Google calendar sync'] },
-        { name: 'Premium', price: '$69/mo', priceNumeric: 69, billingCycle: 'monthly', features: ['Advanced features', 'Multiple locations', 'Resource management'] },
+        { name: 'Square Free', price: '$0/mo', priceNumeric: 0, billingCycle: 'monthly', features: ['Unlimited staff calendars', 'Online booking site', 'Appointment reminders'] },
+        { name: 'Square Plus', price: '$49/mo per location', priceNumeric: 49, billingCycle: 'monthly', features: ['Multi-location management', 'Waitlist', 'Email and text marketing'] },
+        { name: 'Square Premium', price: '$149/mo per location', priceNumeric: 149, billingCycle: 'monthly', features: ['Resource management', 'Lowest processing rates', '24/7 phone support'] },
       ],
-      transactionFees: '2.6% + $0.10 per transaction',
-      hiddenCosts: ['Transaction fees on all Square payments', 'Hardware costs for POS', 'Limited beauty-specific features'],
-      pricingModel: 'flat',
-      lastVerified: '2026-03-13',
+      transactionFees: 'Square Free (US): 2.6% + 15¢ in person, 3.3% + 30¢ online',
+      hiddenCosts: [
+        'Square Plus text marketing: 500 texts a month included, then 3¢ per text (US)',
+        'Keyed or card-on-file payments: 3.5% + 15¢ (US)',
+        'Cards issued outside the US: an extra 1.5%',
+        'Square hardware from $59 (US)',
+      ],
+      pricingModel: 'per-location',
+      pricingPageUrl: 'https://squareup.com/us/en/appointments/pricing',
+      lastVerified: '2026-10-09',
     },
 
+    // Capterra, Wayback Machine snapshot of capterra.com/p/170263/Square-Appointments/
+    // taken 2026-09-12 (Capterra blocks automated reads): 4.5 from 262 reviews.
     reviews: [
-      { platform: 'Capterra', rating: 4.4, reviewCount: 200 },
-      { platform: 'G2', rating: 4.3, reviewCount: 150 },
+      { platform: 'Capterra', rating: 4.5, reviewCount: 262, url: 'https://www.capterra.com/p/170263/Square-Appointments/' },
     ],
 
+    // Square's region list (read 2026-10-09): Australia, Canada, France, Ireland,
+    // Japan, Spain, the UK and the US. No GCC country and no Arabic site.
     gccPresence: {
       hasArabicUI: false,
       arabicQuality: 'none',
@@ -63,52 +83,65 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     },
 
     aiCapabilities: {
-      hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
-      hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'No AI. Standard automated reminders and nothing more.',
+      hasAiReceptionist: false, hasAiChatbot: true, hasSmartScheduling: false,
+      hasAiMarketing: true, hasAiAnalytics: true, hasAiPricing: false,
+      aiDescription: 'Square AI (beta) is included on Square Free, Plus and Premium. Owners can ask it about their business data, and it drafts content such as marketing campaigns. Square Assistant answers client texts 24/7 so clients can confirm, reschedule or cancel. As of October 2026, Square does not list an AI receptionist of its own that takes new bookings.',
     },
 
     daisyAdvantages: [
-      'Purpose-built for beauty/wellness vs generic scheduling tool',
-      '24/7 AI receptionist vs no AI',
-      'Consumer marketplace with cashback vs no marketplace',
-      'Native Arabic/English vs English-only',
-      'Complete beauty business management vs payment-first add-on',
+      'Built for beauty and wellness only, where Square Appointments is sold to many kinds of appointment business',
+      'An AI receptionist that takes new bookings on WhatsApp, Instagram and the booking site, where Square Assistant confirms, reschedules and cancels by text',
+      'Cashback rewards for clients, where Square Loyalty uses points',
+      'Native Arabic/English, where Square\'s published sites show no Arabic',
+      'Complete beauty business management',
       'GCC compliance and local payments',
     ],
     daisySwitchingReasons: [
       'Need beauty-specific features beyond basic scheduling',
       'Want AI receptionist for after-hours bookings',
       'Need Arabic support and GCC compliance',
-      'Want customer acquisition tools (marketplace, cashback)',
+      'Want cashback rewards that bring clients back',
     ],
     competitorStrengths: [
-      'Free plan available', 'Best-in-class POS and payments', 'Square ecosystem integration',
-      'Trusted brand name', 'Easy setup',
+      'Square Free plan with no monthly fee and unlimited staff calendars',
+      'Payments, point-of-sale hardware and booking in one system',
+      'Square Go, a free marketplace app where clients can find and book you',
+      'Square AI (beta) on every plan',
+      '24/7 phone support on Square Premium',
     ],
     competitorWeaknesses: [
-      'Generic scheduling, not beauty-specific', 'No AI', 'No Arabic/GCC',
-      'Limited salon management features', 'No marketplace',
+      'Sold to many kinds of appointment business, not built only for beauty',
+      'No Arabic interface or GCC country on Square\'s published region list (October 2026)',
+      'Multi-location management needs Square Plus or Premium, billed per location',
+      'No text marketing on Square Free',
+      'No AI receptionist for new bookings listed by Square (October 2026)',
     ],
 
     faq: [
-      { question: 'How does Square Appointments compare to Daisy?', answer: 'Square Appointments is a general-purpose scheduling add-on to Square\'s POS. Daisy is built for beauty and wellness, with an AI receptionist, a marketplace, cashback and Arabic support. Square is excellent at payments and has nothing for beauty-specific management, AI or customer acquisition.' },
-      { question: 'Is Square Appointments free?', answer: 'It is free for an individual user. Once you add staff, paid plans start at $29/mo, and every Square payment carries 2.6% + $0.10 on top.' },
-      { question: 'What are the hidden costs of using Square Appointments for a salon?', answer: 'Past the subscription, Square takes 2.6% + $0.10 on every transaction through its POS. In-person payments usually mean buying Square hardware too. And because there is no client history, no formula tracking and no proper service menu, most salons end up paying for third-party tools to fill the gaps.' },
+      { question: 'How does Square Appointments compare to Daisy?', answer: 'Square Appointments is the booking side of Square\'s point-of-sale system. It is sold to beauty, health, fitness and other appointment businesses, and comes with a free plan and Square Go, a free marketplace app. Daisy is built for beauty and wellness only. Its AI receptionist books clients on WhatsApp, Instagram and the booking site in Arabic and English, and it adds cashback rewards for clients. Square\'s strength is payments and hardware.' },
+      { question: 'Is Square Appointments free?', answer: 'Square Free has no monthly fee and includes unlimited staff calendars; you pay processing fees on each payment, which in the US are 2.6% + 15¢ in person and 3.3% + 30¢ online. Square Plus costs $49 a month per location and Square Premium $149 a month per location, both with lower processing rates (Square\'s US pricing page, October 2026).' },
+      { question: 'What does Square Appointments cost beyond the subscription?', answer: 'Square publishes its extra costs. In the US, processing on Square Free is 2.6% + 15¢ in person and 3.3% + 30¢ online, and on Square Plus 2.5% + 15¢ and 2.9% + 30¢. Keyed or card-on-file payments are 3.5% + 15¢, and cards issued outside the US add 1.5%. Square Plus includes 500 marketing texts a month, then 3¢ per text, and Square hardware starts at $59.' },
       { question: 'Can I migrate my client data from Square Appointments to Daisy?', answer: 'Yes. Daisy walks you through the migration, moving client records, appointment history and contact details across from Square Appointments, so no client relationship gets lost on the way.' },
-      { question: 'Does Square Appointments work in Arabic or support GCC countries?', answer: 'No. There is no Arabic interface and no presence in the GCC, and local payment methods such as mada, Apple Pay in MENA and Knet are unsupported. Daisy runs natively in Arabic and English with full GCC compliance across all six countries.' },
-      { question: 'Does Square Appointments have AI features like an AI receptionist?', answer: 'No. There is no AI receptionist, no smart scheduling and no AI marketing. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments while the salon is shut.' },
-      { question: 'Is Square Appointments good enough for a multi-location beauty business?', answer: 'Multiple locations are supported on the Premium plan at $69/mo, but it is still a general scheduling tool with no service menus, no formula tracking and no stylist portfolios. Daisy was built for multi-location beauty businesses, with centralized management, AI and a customer marketplace.' },
-      { question: 'How does Square Appointments mobile app compare to Daisy?', answer: 'Square\'s app is about payments and basic scheduling. Daisy\'s covers the whole salon: the AI receptionist, live analytics, client messaging and marketplace visibility, designed for a beauty professional working between appointments.' },
-      { question: 'What kind of customer support does Square Appointments offer?', answer: 'Square supports you by email, phone and community forum, with nobody who specifically knows the beauty industry. Daisy\'s onboarding and support come from people who understand how a salon or spa runs, with local GCC support in Arabic and English.' },
-      { question: 'Can Square Appointments help me get new clients like Daisy can?', answer: 'No. Square Appointments runs your operations and does nothing to find you customers. Daisy puts a consumer marketplace, cashback rewards and AI-powered marketing together to bring new clients in.' },
+      { question: 'Does Square Appointments work in Arabic or support GCC countries?', answer: 'Square\'s published region list covers Australia, Canada, France, Ireland, Japan, Spain, the UK and the US, and none of those sites is in Arabic (October 2026). Daisy runs natively in Arabic and English with full GCC compliance across all six countries.' },
+      { question: 'Does Square Appointments have AI features like an AI receptionist?', answer: 'Yes, though not an AI receptionist. Square AI (beta), on every plan, answers owners\' questions about their business data and drafts content. Square Assistant replies to client texts 24/7 so clients can confirm, reschedule or cancel. As of October 2026, Square does not list an AI receptionist of its own that takes new bookings. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments while the salon is shut.' },
+      { question: 'Is Square Appointments good enough for a multi-location beauty business?', answer: 'Square Plus ($49 a month per location) and Square Premium ($149 a month per location) both include multi-location management, and Premium adds resource management for rooms, chairs and stations. Daisy was built for multi-location beauty businesses, with centralized management, AI and a customer marketplace.' },
+      { question: 'How does Square Appointments mobile app compare to Daisy?', answer: 'Square\'s app covers appointments, payments and client profiles, and works with Square\'s card readers and terminals. Daisy\'s covers the whole salon: the AI receptionist, live analytics, client messaging and marketplace visibility, designed for a beauty professional working between appointments.' },
+      { question: 'What kind of customer support does Square Appointments offer?', answer: 'Every Square plan includes chat and email support. Phone support runs 6am to 6pm PT, Monday to Friday, for the first 90 days on Square Free and ongoing on Square Plus, and 24/7 on Square Premium. Daisy\'s onboarding and support come from people who understand how a salon or spa runs, with local GCC support in Arabic and English.' },
+      { question: 'Can Square Appointments help me get new clients like Daisy can?', answer: 'Yes, in part. Square Go is Square\'s free marketplace app, and eligible Square Appointments businesses get a profile on it. Square also offers email and text marketing and a points-based loyalty program. Daisy puts a consumer marketplace, cashback rewards and AI-powered marketing together to bring new clients in.' },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
   },
 
   // ---------------------------------------------------------------------------
   // 14. Mangomint
+  // Sources, all read 2026-10-09:
+  //   mangomint.com/pricing ("Monthly price is $120 per location and $10 per
+  //     user", add-ons, processing rates, "No contracts")
+  //   mangomint.com/llms.txt ("The company was founded in 2017")
+  //   store.mangomint.com ("Canada Front Desk Bundle", CAD currency)
+  //   mangomint.com/about-us (no headquarters published: "A global team of
+  //     100+ people, across 6 countries")
   // ---------------------------------------------------------------------------
   mangomint: {
     slug: 'mangomint',
@@ -116,41 +149,45 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     website: 'https://www.mangomint.com',
     tier: 3,
     description:
-      'Premium, modern salon and spa software, known for a clean interface and strong automation, and rated 4.9/5 on Capterra. It aims at established salons and spas.',
+      'Salon and spa software founded in 2017, known for its clean design and automation. It serves businesses in the US and Canada and charges $120 per location plus $10 per user each month.',
     founded: '2017',
-    headquarters: 'Austin, TX, USA',
 
     features: {
       onlineBooking: 3,
       posAndPayments: 2,
       clientManagement: 2,
       staffManagement: 3,
-      marketingAndCrm: 1,
-      inventoryManagement: 1,
+      marketingAndCrm: 2, // Campaigns, Automated Flows, Offers (marketing add-on from $30/mo)
+      inventoryManagement: 2, // product catalog, stock levels, purchase orders
       reportingAndAnalytics: 2,
-      marketplaceAndDiscovery: 0,
-      aiCapabilities: 1,
+      marketplaceAndDiscovery: 0, // no consumer marketplace on its published pages
+      aiCapabilities: 0, // no AI features on its published pages as of 2026-10-09
       brandingAndWhiteLabel: 1,
     },
 
     pricing: {
       hasFreePlan: false,
-      // Mangomint moved to per-location + per-user pricing. Verified on
-      // mangomint.com/pricing 2026-09-29: "$120 per location and $10 per user".
       startingPrice: 'From $120/mo per location + $10 per user',
       startingPriceNumeric: 120,
       tiers: [
         { name: 'Per location', price: '$120/mo each', priceNumeric: 120, billingCycle: 'monthly', features: ['Booking', 'Calendar', 'POS', 'Client management'] },
         { name: 'Per user', price: '$10/mo each', priceNumeric: 10, billingCycle: 'monthly', features: ['Added for every user on the account'] },
       ],
-      hiddenCosts: ['Premium pricing', 'Payment processing fees', 'Limited marketing tools'],
-      pricingModel: 'flat',
-      lastVerified: '2026-03-13',
+      transactionFees: '2.45% + 15¢ in person, 2.90% + 30¢ for virtual payments',
+      hiddenCosts: [
+        'Phone add-on: $70/mo per line',
+        'Marketing add-on: from $30/mo for 3,500 credits',
+        'Payroll add-on: $50/mo + $8 per worker',
+      ],
+      pricingModel: 'hybrid',
+      pricingPageUrl: 'https://www.mangomint.com/pricing/',
+      lastVerified: '2026-10-09',
     },
 
+    // Capterra, Wayback Machine snapshot of capterra.com/p/187593/Mangomint/
+    // taken 2026-09-21 (Capterra blocks automated reads): 5.0 from 345 reviews.
     reviews: [
-      { platform: 'Capterra', rating: 4.9, reviewCount: 170 },
-      { platform: 'G2', rating: 4.7, reviewCount: 100 },
+      { platform: 'Capterra', rating: 5.0, reviewCount: 345, url: 'https://www.capterra.com/p/187593/Mangomint/' },
     ],
 
     gccPresence: {
@@ -161,44 +198,63 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     aiCapabilities: {
       hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'Smart workflow automations, but no real AI: no receptionist, no chatbot, no AI marketing.',
+      aiDescription: 'Mangomint publishes workflow automation such as Automated Flows, Express Booking and an intelligent waitlist. Its published pages do not list AI features as of October 2026.',
     },
 
     daisyAdvantages: [
-      'AI receptionist and chatbot vs no AI', 'Consumer marketplace vs no marketplace',
-      'Pricing that does not climb with every location and user', 'Arabic/English support vs US-only',
-      'Customer acquisition engine vs operations-only', 'GCC compliance',
+      'An AI receptionist and chatbot, where Mangomint\'s published pages list no AI features',
+      'A consumer marketplace, where Mangomint lists none',
+      'Pricing that does not climb with every location and user',
+      'Arabic/English support, where Mangomint\'s published pages show no Arabic',
+      'Cashback-driven customer acquisition',
+      'GCC compliance',
     ],
     daisySwitchingReasons: [
-      'Premium pricing without AI features', 'Need Arabic/GCC support',
+      'Want AI features that Mangomint does not list', 'Need Arabic/GCC support',
       'Want marketplace for customer discovery', 'Need AI receptionist',
     ],
     competitorStrengths: [
-      'Highest Capterra rating (4.9/5)', 'Beautiful, clean design', 'Strong automations',
-      'Excellent staff management', 'Modern tech stack',
+      'Capterra rating of 5.0 from 345 reviews (September 2026)',
+      'Clean, modern design',
+      'Automated Flows, Express Booking and a virtual waiting room',
+      'Staff management with commissions, permissions and a payroll add-on',
+      'No contracts, free onboarding and free data transfer',
     ],
     competitorWeaknesses: [
-      'Cost climbs with every location and user ($120/location + $10/user)', 'US-only', 'No marketplace',
-      'No Arabic/GCC', 'Small review base', 'No customer acquisition tools',
+      'Cost rises with each location and user ($120 per location + $10 per user a month)',
+      'Serves the US and Canada; no Arabic interface or GCC presence listed (October 2026)',
+      'No consumer marketplace listed on Mangomint\'s published pages',
+      'No AI features listed on Mangomint\'s published pages (October 2026)',
+      'Marketing messages use credits from the marketing add-on, from $30 a month',
     ],
 
     faq: [
-      { question: 'How does Mangomint compare to Daisy?', answer: 'Mangomint is premium US salon software charging $120 per location plus $10 per user, beautifully designed and strong on automation. Daisy adds an AI receptionist, a marketplace, cashback and Arabic support, and costs less. Mangomint is built to run a salon, Daisy to grow one.' },
-      { question: 'Why is Mangomint so expensive compared to other salon software?', answer: 'Mangomint sells itself as a premium product, with a clean interface and strong automations, at $120 per location plus $10 per user, so the cost climbs with the team. The design earns the price; the absent customer marketplace and lack of any Arabic or GCC support do not. Daisy offers more, including the AI receptionist and acquisition tools, for less.' },
+      { question: 'How does Mangomint compare to Daisy?', answer: 'Mangomint is salon and spa software for the US and Canada, priced at $120 per location plus $10 per user each month, with a clean design and strong automation. Daisy adds an AI receptionist, a marketplace, cashback and Arabic support, and costs less.' },
+      { question: 'How much does Mangomint cost?', answer: 'Mangomint charges $120 per location plus $10 per user each month, with no contracts. Optional add-ons are Phone at $70 a month per line, Marketing from $30 a month and Payroll at $50 a month plus $8 per worker. Card processing is 2.45% + 15¢ in person and 2.90% + 30¢ for virtual payments (Mangomint pricing page, October 2026). Daisy offers more, including the AI receptionist and acquisition tools, for less.' },
       { question: 'Can I switch from Mangomint to Daisy without losing my data?', answer: 'Yes. Daisy moves your client records, appointment history, staff schedules and service menus across from Mangomint, and handles the transition so the business never goes offline.' },
-      { question: 'Does Mangomint support Arabic or work in the Middle East?', answer: 'No. Mangomint serves the US only, in English. There is no Arabic, no GCC compliance and no local payment integration. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today.' },
-      { question: 'Does Mangomint have an AI receptionist or AI features?', answer: 'No. The workflow automations are smart, but none of it is AI: no receptionist, no chatbot, no AI marketing. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments on its own.' },
-      { question: 'Is Mangomint worth it for my salon?', answer: 'At $120 per location plus $10 per user it buys excellent operations tools and nothing that acquires customers, no AI and no marketplace visibility. For a salon trying to grow rather than simply run, Daisy\'s AI platform with its marketplace and cashback usually returns more, for less.' },
+      { question: 'Does Mangomint support Arabic or work in the Middle East?', answer: 'Mangomint\'s published pages show customers in the US and Canada, with Canadian card-reader bundles priced in Canadian dollars, and no Arabic interface or Middle East presence as of October 2026. Daisy runs natively in Arabic and English with support built for the Gulf, and is live in all six GCC countries.' },
+      { question: 'Does Mangomint have an AI receptionist or AI features?', answer: 'Mangomint\'s published pages list workflow automation, such as Automated Flows and Express Booking, but no AI receptionist, chatbot or AI marketing as of October 2026. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments on its own.' },
+      { question: 'Is Mangomint a good fit for my salon?', answer: 'Mangomint suits salons and spas in the US and Canada that want clean operations, automation and no contracts, at $120 per location plus $10 per user. Its published pages list no consumer marketplace or AI features. If you want a marketplace, cashback and an AI receptionist, Daisy includes them.' },
       { question: 'How does Mangomint\'s mobile app compare to Daisy?', answer: 'Mangomint\'s app is well designed and built around scheduling and operations. Daisy\'s adds the AI receptionist, marketplace visibility, live acquisition analytics and Arabic and English throughout, which takes it past operations into growth.' },
-      { question: 'What integrations does Mangomint offer compared to Daisy?', answer: 'It connects to payment processors and a handful of third-party tools, with add-ons priced separately on top of the per-location and per-user fees. Daisy has payments, marketing, CRM and acquisition built into one platform, along with GCC payment methods such as mada and Knet.' },
-      { question: 'Does Mangomint help me get new customers or just manage existing ones?', answer: 'Mangomint looks after the clients you already have. There is no marketplace, nothing for discovery and no cashback. Daisy includes a consumer marketplace, a cashback program and AI-powered marketing to bring new customers in.' },
+      { question: 'What integrations does Mangomint offer compared to Daisy?', answer: 'Mangomint lists integrations including Shopify, QuickBooks payroll sync and the telehealth tools Doxy.me and Docovia, and sells Phone, Marketing and Payroll as add-ons. Daisy has payments, marketing, CRM and acquisition built into one platform, along with GCC payment methods such as mada and Knet.' },
+      { question: 'Does Mangomint help me get new customers or just manage existing ones?', answer: 'Mangomint offers campaigns, automated flows and offers for the clients you already have, using the marketing add-on from $30 a month. Its published pages list no consumer marketplace or cashback. Daisy includes a consumer marketplace, a cashback program and AI-powered marketing to bring new customers in.' },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
   },
 
   // ---------------------------------------------------------------------------
   // 15. Phorest
+  // Sources, all read 2026-10-09:
+  //   phorest.com/ae ("Premium Salon & Med Spa Software | Phorest UAE",
+  //     enquiriesuae@phorest.com, Dubai and Abu Dhabi customers)
+  //   phorest.com/ae/features/ai-features ("Front Desk AI handles scheduling
+  //     requests and FAQs via SMS & Whatsapp"; Cheat Sheet AI; Optimised
+  //     Scheduling; Ads Manager AI; Insights AI "Coming later this year")
+  //   phorest.com/gb/pricing, /us/pricing, /ae/pricing (every plan is
+  //     "Request a quote"; Front Desk AI under "Add to any plan"; UK SMS rates)
+  //   phorest.com/ae/contact (offices: Dublin head office, UK, US, Canada,
+  //     Australia, Germany, Finland); phorest.com FAQ ("founded in Ireland in 2003")
   // ---------------------------------------------------------------------------
   phorest: {
     slug: 'phorest',
@@ -206,30 +262,140 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     website: 'https://www.phorest.com',
     tier: 3,
     description:
-      'Salon software built around loyalty and retention, strong across the UK and Ireland, with thorough marketing and CRM features.',
+      'Salon, spa and aesthetic clinic software founded in Dublin in 2003, built around client retention, marketing and loyalty. Phorest says more than 12,000 businesses use it. It has offices in Ireland, the UK, the US, Canada, Australia, Germany and Finland, and a UAE country site.',
     founded: '2003',
     headquarters: 'Dublin, Ireland',
 
     features: {
       onlineBooking: 2, posAndPayments: 2, clientManagement: 3, staffManagement: 2,
-      marketingAndCrm: 3, inventoryManagement: 1, reportingAndAnalytics: 2,
-      marketplaceAndDiscovery: 1, aiCapabilities: 1, brandingAndWhiteLabel: 0,
+      marketingAndCrm: 3, inventoryManagement: 2, reportingAndAnalytics: 2,
+      marketplaceAndDiscovery: 1, // Reserve with Google and Ads Manager; no consumer marketplace listed
+      aiCapabilities: 2, // Front Desk AI (SMS and WhatsApp), Cheat Sheet AI, Ads Manager AI
+      brandingAndWhiteLabel: 2, // branded booking app for iOS and Android
     },
 
     pricing: {
       hasFreePlan: false,
-      startingPrice: '~$99/mo',
-      startingPriceNumeric: 99,
+      startingPrice: 'Pricing on request',
       tiers: [
-        { name: 'Starter', price: '~$99/mo', priceNumeric: 99, features: ['Booking', 'CRM', 'Basic marketing', 'POS'] },
-        { name: 'Grow', price: 'Custom', features: ['Advanced marketing', 'Loyalty program', 'Advanced reporting', 'Multi-location'] },
+        { name: 'Starter', price: 'Pricing on request', billingCycle: 'custom', features: ['Booking', 'Automated SMS and email reminders', 'Point of sale'] },
+        { name: 'Grow', price: 'Pricing on request', billingCycle: 'custom', features: ['Reconnect SMS', 'Online Reputation Manager', 'Digital consultation forms'] },
+        { name: 'Ultimate', price: 'Pricing on request', billingCycle: 'custom', features: ['Branded booking app', 'Digital loyalty programme', 'Reserve with Google'] },
+        { name: 'Elite', price: 'Pricing on request', billingCycle: 'custom', features: ['2-Way SMS', 'Phorest Ads Manager', 'Memberships'] },
       ],
-      hiddenCosts: ['Opaque higher-tier pricing', 'SMS costs', 'Payment processing'],
-      pricingModel: 'flat',
-      lastVerified: '2026-03-13',
+      hiddenCosts: [
+        'UK SMS: 9.5p per message on Starter, 8.2p on Grow, 7p on Ultimate; 500 free a month on Elite',
+        'Front Desk AI is an add-on, priced on request',
+      ],
+      pricingModel: 'hybrid',
+      pricingPageUrl: 'https://www.phorest.com/gb/pricing/',
+      lastVerified: '2026-10-09',
     },
 
-    reviews: [{ platform: 'Capterra', rating: 4.8, reviewCount: 400 }],
+    // Capterra, Wayback Machine snapshot of capterra.com/p/113530/Phorest-Salon-Software/
+    // taken 2026-09-16 (Capterra blocks automated reads): 4.8 from 431 reviews.
+    reviews: [{ platform: 'Capterra', rating: 4.8, reviewCount: 431, url: 'https://www.capterra.com/p/113530/Phorest-Salon-Software/' }],
+
+    gccPresence: {
+      hasArabicUI: false, arabicQuality: 'none', gccCountries: ['UAE'],
+      localCompliance: false, localPaymentMethods: false, localSupport: false,
+    },
+
+    aiCapabilities: {
+      hasAiReceptionist: true, hasAiChatbot: true, hasSmartScheduling: true,
+      hasAiMarketing: true, hasAiAnalytics: false, hasAiPricing: false,
+      aiDescription: 'Front Desk AI, an add-on, answers SMS and WhatsApp messages 24/7, handles booking, rescheduling and rebooking requests and common questions, and passes complex conversations to staff. Cheat Sheet AI summarises each client\'s history for the stylist. Phorest Ads Manager uses AI to build Facebook and Instagram audiences and write ad copy, and Optimised Scheduling reduces gaps in the book. Phorest says Insights AI is coming later this year.',
+    },
+
+    daisyAdvantages: [
+      'AI receptionist on WhatsApp, Instagram and the booking site, where Phorest\'s Front Desk AI covers SMS and WhatsApp', 'Arabic/English, where Phorest\'s published pages show no Arabic',
+      'Consumer marketplace, where Phorest lists none', 'Live in all six GCC countries, where Phorest has a UAE site',
+      'Cashback rewards vs traditional loyalty points',
+    ],
+    daisySwitchingReasons: ['Need Arabic/GCC support', 'Want an AI receptionist on Instagram as well as WhatsApp', 'Want marketplace for customer discovery'],
+    competitorStrengths: [
+      'Client management, marketing and Treatcard loyalty in one system',
+      'Front Desk AI on SMS and WhatsApp, plus Cheat Sheet AI',
+      'Branded booking app for iOS and Android',
+      'Free data migration and free training for life',
+      'Established in 2003, with offices in seven countries',
+    ],
+    competitorWeaknesses: [
+      'Prices are quoted on request, so costs cannot be compared up front',
+      'No Arabic interface listed on Phorest\'s published pages (October 2026)',
+      'Front Desk AI is an add-on and lists SMS and WhatsApp, not Instagram',
+      'No consumer marketplace listed on Phorest\'s published pages',
+      'SMS is charged per message on the lower UK plans',
+    ],
+
+    faq: [
+      { question: 'How does Phorest compare to Daisy?', answer: 'Phorest is strong on client management, marketing and Treatcard loyalty, and sells Front Desk AI for SMS and WhatsApp. It has offices in Ireland, the UK, the US, Canada, Australia, Germany and Finland, and a UAE country site. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English, and Daisy adds a consumer marketplace with cashback.' },
+      { question: 'What does Phorest cost?', answer: 'Phorest names its plans (Starter, Grow, Ultimate and Elite in the UK) but quotes prices on request. Its UK pricing page lists SMS at 9.5p per message on Starter, 8.2p on Grow and 7p on Ultimate, and 500 free SMS a month on Elite. Daisy charges a flat published rate, with nothing per message.' },
+      { question: 'Can I move my client database from Phorest to Daisy?', answer: 'Yes. Daisy migrates Phorest users itself, bringing across client records, loyalty points history, appointment data and marketing preferences, with the onboarding team handling the transition.' },
+      { question: 'Does Phorest work in Arabic or support salons in the GCC?', answer: 'Phorest runs a UAE country site (phorest.com/ae) and features salons in Dubai and Abu Dhabi. Its published pages do not show an Arabic interface as of October 2026. Daisy runs natively in Arabic and English with full GCC compliance across all six countries.' },
+      { question: 'Does Phorest have AI features like Daisy?', answer: 'Yes. Front Desk AI, an add-on, answers SMS and WhatsApp messages 24/7 and handles booking, rescheduling and rebooking requests. Cheat Sheet AI summarises client history before each appointment, and Phorest Ads Manager uses AI for audiences and ad copy. The difference is channels and language: Daisy\'s 24/7 receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English.' },
+      { question: 'How does Phorest\'s loyalty program compare to Daisy\'s cashback?', answer: 'Phorest\'s Treatcard is a points programme: clients collect points and spend them on services they would not normally buy. Daisy\'s cashback rewards hold clients and pull new ones in through the consumer marketplace, so retention and acquisition run on the same mechanism.' },
+      { question: 'Is Phorest good for salons outside the UK and Ireland?', answer: 'Phorest has offices in Ireland, the UK, the US, Canada, Australia, Germany and Finland, plus a UAE country site, and says more than 12,000 businesses use it. Its published pages show no Arabic interface. Daisy works across markets and is strongest in the Gulf.' },
+      { question: 'How does Phorest\'s mobile app compare to Daisy?', answer: 'PhorestGo lets owners and staff manage bookings, clients, stock and marketing from a phone, and Phorest can build a salon its own branded booking app. Daisy\'s adds the AI receptionist, marketplace visibility, cashback tracking and full Arabic and English support for owners and their clients alike.' },
+      { question: 'What customer support does Phorest offer compared to Daisy?', answer: 'Phorest\'s support team is reachable by phone or chat, and Phorest offers free training for life and a business advisor. Its UAE pricing page lists phone support from 9am to 6pm, Monday to Saturday. Daisy provides beauty industry support from local GCC teams, with Arabic-speaking representatives and onboarding built for the Middle East.' },
+    ],
+
+    lastResearched: '2026-10-09',
+  },
+
+  // ---------------------------------------------------------------------------
+  // 16. Timely
+  // Sources, all read 2026-10-09:
+  //   gettimely.com/pricing (prices load from /dist/common.bundle.js; US:
+  //     Base $9 solo, Build $26 + $24 per extra staff, Elevate $39 + $29,
+  //     Innovate $47 + $36, flat $241 / $300 for 8 to 19 staff; region list;
+  //     support rows; SMS allowances and rates; "SMS is included in all
+  //     countries except for the UAE, Ghana, Saudi Arabia and Qatar")
+  //   gettimely.com/features/ai-smart-automations ("Textie Bestie, Timely's AI
+  //     SMS generator")
+  //   gettimely.com/ai-llm-info-page ("Launch year: 2011", "Headquarters:
+  //     Wellington, New Zealand", "Parent group: EverCommerce")
+  // ---------------------------------------------------------------------------
+  timely: {
+    slug: 'timely',
+    name: 'Timely',
+    website: 'https://www.gettimely.com',
+    tier: 3,
+    description: 'Booking and payments software for hair and beauty professionals, launched in New Zealand in 2011 and now part of EverCommerce. Timely prices per staff member and publishes prices for the US, Canada, the UK, Ireland, Europe, Australia, New Zealand and the rest of the world.',
+    founded: '2011',
+    headquarters: 'Wellington, New Zealand',
+
+    features: {
+      onlineBooking: 2, posAndPayments: 2, clientManagement: 2, staffManagement: 2,
+      marketingAndCrm: 2, inventoryManagement: 2, reportingAndAnalytics: 2,
+      marketplaceAndDiscovery: 0, // no consumer marketplace on its published pages
+      aiCapabilities: 1, // Textie Bestie, an AI SMS generator
+      brandingAndWhiteLabel: 1, // free customisable mini-website, custom confirmation page
+    },
+
+    pricing: {
+      hasFreePlan: false,
+      startingPrice: 'From $9/mo (Base, one staff member)',
+      startingPriceNumeric: 9,
+      tiers: [
+        { name: 'Base', price: '$9/mo, one staff member only', priceNumeric: 9, billingCycle: 'monthly', features: ['Solo professionals', 'New customers, for a limited time'] },
+        { name: 'Build', price: '$26/mo, then $24 per extra staff', priceNumeric: 26, billingCycle: 'monthly', features: ['Booking', 'Payments', 'Stock'] },
+        { name: 'Elevate', price: '$39/mo, then $29 per extra staff', priceNumeric: 39, billingCycle: 'monthly', features: ['Everything in Build', 'Consultation forms', 'Targeted SMS campaigns'] },
+        { name: 'Innovate', price: '$47/mo, then $36 per extra staff', priceNumeric: 47, billingCycle: 'monthly', features: ['Everything in Elevate', 'Automatic consultation forms', 'Dedicated SMS number'] },
+      ],
+      hiddenCosts: [
+        'SMS beyond the monthly allowance: 5¢ each (US)',
+        'Targeted SMS campaigns: 5¢ per SMS on Elevate and Innovate (US)',
+        'Card processing fees on Timely payments',
+      ],
+      pricingModel: 'per-staff',
+      pricingPageUrl: 'https://www.gettimely.com/pricing/',
+      lastVerified: '2026-10-09',
+    },
+
+    // Capterra, Wayback Machine snapshot of capterra.com/p/142756/Timely/
+    // taken 2026-09-21 (Capterra blocks automated reads): 4.7 from 711 reviews.
+    reviews: [{ platform: 'Capterra', rating: 4.7, reviewCount: 711, url: 'https://www.capterra.com/p/142756/Timely/' }],
 
     gccPresence: {
       hasArabicUI: false, arabicQuality: 'none', gccCountries: [],
@@ -239,96 +405,39 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     aiCapabilities: {
       hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: true, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'Phorest sells Front Desk AI for everyday front-desk conversations and Cheat Sheet AI for client-history summaries, alongside AI marketing campaign suggestions. No AI across WhatsApp or Instagram, and no smart scheduling.',
+      aiDescription: 'Textie Bestie, Timely\'s AI SMS generator, drafts client messages and campaign texts. Timely\'s published pages do not list an AI receptionist or AI chat assistant as of October 2026.',
     },
 
-    daisyAdvantages: [
-      'AI across calls, WhatsApp and Instagram vs front-desk and marketing AI', 'Arabic/English vs English-only',
-      'Consumer marketplace vs no marketplace', 'GCC presence vs UK/Ireland-only',
-      'Cashback rewards vs traditional loyalty points',
+    daisyAdvantages: ['AI receptionist, where Timely\'s AI drafts SMS messages', 'Flat pricing vs per-staff pricing', 'Arabic/GCC, where Timely\'s published pages show neither', 'Marketplace + cashback, where Timely lists neither'],
+    daisySwitchingReasons: ['Per-staff pricing getting expensive', 'Need Arabic/GCC support', 'Want an AI receptionist that books clients', 'Need marketplace'],
+    competitorStrengths: [
+      'Clean, modern interface',
+      'Capterra rating of 4.7 from 711 reviews (September 2026)',
+      'No contracts: you pay month by month',
+      'Booking, payments, consultation forms and stock in one system',
+      'Base plan at $9 a month for solo professionals (new customers)',
     ],
-    daisySwitchingReasons: ['Need Arabic/GCC support', 'Want AI receptionist', 'Want marketplace for customer discovery'],
-    competitorStrengths: ['Excellent CRM and loyalty tools', 'Strong UK/Ireland market position', 'Good marketing automation', 'Established brand (2003)'],
-    competitorWeaknesses: ['UK/Ireland-focused', 'No Arabic/GCC', 'No AI across WhatsApp or Instagram', 'No marketplace', 'Opaque pricing'],
-
-    faq: [
-      { question: 'How does Phorest compare to Daisy?', answer: 'Across the UK and Ireland, Phorest is very good at CRM and loyalty. Daisy adds an AI receptionist, a marketplace, cashback and Arabic and GCC support, none of which Phorest has. Phorest keeps the clients you have; Daisy also finds you new ones.' },
-      { question: 'Is Phorest pricing transparent or are there hidden fees?', answer: 'The starter plan sits around $99/mo, and everything above it needs a custom quote you cannot look up. SMS charges and payment processing fees come on top. Daisy charges a flat published rate, with nothing per message and nothing hidden.' },
-      { question: 'Can I move my client database from Phorest to Daisy?', answer: 'Yes. Daisy migrates Phorest users itself, bringing across client records, loyalty points history, appointment data and marketing preferences, with the onboarding team handling the transition.' },
-      { question: 'Does Phorest work in Arabic or support salons in the GCC?', answer: 'No. Phorest serves the UK and Ireland in English only, with no Arabic, no GCC compliance and no local Middle Eastern payment methods. Daisy runs natively in Arabic and English with full GCC compliance across all six countries.' },
-      { question: 'Does Phorest have AI features like Daisy?', answer: 'Yes. Phorest sells Front Desk AI and Cheat Sheet AI, plus AI marketing suggestions. The difference is channel coverage rather than presence: Daisy runs a complete AI ecosystem, including a 24/7 receptionist that handles bookings and customer questions by itself.' },
-      { question: 'How does Phorest\'s loyalty program compare to Daisy\'s cashback?', answer: 'Phorest runs a traditional points system, which works on the clients you already have. Daisy\'s cashback rewards hold those clients and pull new ones in through the consumer marketplace, so retention and acquisition run on the same mechanism.' },
-      { question: 'Is Phorest good for salons outside the UK and Ireland?', answer: 'Phorest has reached a little past the UK and Ireland, though its expertise and its support still sit there. There is no Middle East presence, no Arabic and nothing built for the GCC. Daisy works across markets and is strongest in the Gulf.' },
-      { question: 'How does Phorest\'s mobile app compare to Daisy?', answer: 'Phorest\'s app centres on CRM and marketing management. Daisy\'s adds the AI receptionist, marketplace visibility, cashback tracking and full Arabic and English support for owners and their clients alike.' },
-      { question: 'What customer support does Phorest offer compared to Daisy?', answer: 'Higher tiers come with a dedicated account manager, and support runs on UK and Ireland business hours. Daisy provides beauty industry support from local GCC teams, with Arabic-speaking representatives and onboarding built for the Middle East.' },
+    competitorWeaknesses: [
+      'Priced per staff member up to seven staff, so the bill rises as the team grows',
+      'No AI receptionist listed on Timely\'s published pages (October 2026)',
+      'No consumer marketplace listed on Timely\'s published pages',
+      'No Arabic interface or GCC presence listed, and Timely\'s SMS is not available in the UAE, Saudi Arabia or Qatar',
+      'Phone support is listed only for Australia, New Zealand, the UK and Ireland',
     ],
 
-    lastResearched: '2026-03-13',
-  },
-
-  // ---------------------------------------------------------------------------
-  // 16. Timely
-  // ---------------------------------------------------------------------------
-  timely: {
-    slug: 'timely',
-    name: 'Timely',
-    website: 'https://www.gettimely.com',
-    tier: 3,
-    description: 'New Zealand salon software priced per member of staff, strong across New Zealand, Australia and the UK, with a clean modern interface.',
-    founded: '2012',
-    headquarters: 'Auckland, New Zealand',
-
-    features: {
-      onlineBooking: 2, posAndPayments: 2, clientManagement: 2, staffManagement: 2,
-      marketingAndCrm: 2, inventoryManagement: 1, reportingAndAnalytics: 2,
-      marketplaceAndDiscovery: 0, aiCapabilities: 0, brandingAndWhiteLabel: 0,
-    },
-
-    pricing: {
-      hasFreePlan: false,
-      startingPrice: '$30/mo',
-      startingPriceNumeric: 30,
-      tiers: [
-        { name: 'Build', price: '$30/mo', priceNumeric: 30, perStaff: true, perStaffCost: '+$9/staff', features: ['Booking', 'Calendar', 'Client management'] },
-        { name: 'Elevate', price: '$45/mo', priceNumeric: 45, perStaff: true, perStaffCost: '+$12/staff', features: ['Everything in Build', 'Marketing', 'Reporting'] },
-        { name: 'Innovate', price: '$50/mo', priceNumeric: 50, perStaff: true, perStaffCost: '+$15/staff', features: ['Everything in Elevate', 'Advanced features', 'API access'] },
-      ],
-      hiddenCosts: ['Per-staff costs scale quickly', 'Payment processing', 'SMS costs'],
-      pricingModel: 'per-staff',
-      lastVerified: '2026-03-13',
-    },
-
-    reviews: [{ platform: 'Capterra', rating: 4.7, reviewCount: 700 }],
-
-    gccPresence: {
-      hasArabicUI: false, arabicQuality: 'none', gccCountries: [],
-      localCompliance: false, localPaymentMethods: false, localSupport: false,
-    },
-
-    aiCapabilities: {
-      hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
-      hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'No AI capabilities.',
-    },
-
-    daisyAdvantages: ['AI receptionist vs no AI', 'Flat pricing vs per-staff scaling', 'Arabic/GCC vs NZ/AU only', 'Marketplace + cashback vs no acquisition tools'],
-    daisySwitchingReasons: ['Per-staff pricing getting expensive', 'Need Arabic/GCC support', 'Want AI features', 'Need marketplace'],
-    competitorStrengths: ['Clean modern interface', 'Good reviews (4.7)', 'Strong in NZ/AU/UK', 'Affordable for solos'],
-    competitorWeaknesses: ['No AI', 'No marketplace', 'Per-staff pricing scales badly', 'NZ/AU/UK only', 'No Arabic/GCC'],
-
     faq: [
-      { question: 'How does Timely compare to Daisy?', answer: 'Timely is a clean, modern platform, popular across New Zealand, Australia and the UK, and priced per member of staff. Daisy adds AI, a marketplace, cashback, flat pricing and Arabic and GCC support, none of which Timely has.' },
-      { question: 'How expensive does Timely get as I add more staff?', answer: 'Per-staff pricing climbs quickly. The Innovate plan is $50/mo as a base plus $15 for each member of staff, so a salon with 10 stylists pays $200/mo. Daisy charges flat, so hiring costs you nothing extra.' },
-      { question: 'Are there hidden fees with Timely beyond the subscription?', answer: 'Yes. On top of the per-staff subscription, SMS reminders and payment processing are billed separately, which mounts up in a busy salon. Daisy includes notifications and payment processing in its flat price.' },
+      { question: 'How does Timely compare to Daisy?', answer: 'Timely is booking and payments software for hair and beauty professionals, launched in New Zealand in 2011 and now part of EverCommerce. It is priced per staff member, and its AI tool, Textie Bestie, drafts SMS messages. Daisy adds an AI receptionist, a marketplace, cashback, flat pricing and Arabic and GCC support.' },
+      { question: 'How expensive does Timely get as I add more staff?', answer: 'In the US, Build costs $26 a month for one staff member plus $24 for each extra staff member, up to seven. Elevate is $39 plus $29 per extra staff member, and Innovate $47 plus $36. Teams of 8 to 19 pay a flat $241 a month on Elevate or $300 on Innovate. A five-person team on Innovate pays $191 a month. Daisy charges flat, so hiring costs you nothing extra.' },
+      { question: 'What does Timely cost beyond the subscription?', answer: 'Timely publishes its extra costs. Each plan includes a monthly SMS allowance per staff member (in the US, 100 on Build, 200 on Elevate and 350 on Innovate), and extra SMS cost 5¢ each in the US. Card processing fees apply to Timely payments and are listed in Timely\'s help centre. Daisy includes notifications and payment processing in its flat price.' },
       { question: 'Can I transfer my data from Timely to Daisy?', answer: 'Yes. Daisy migrates Timely users itself, moving client records, appointment history, staff schedules and service configurations, with the onboarding team handling the whole process.' },
-      { question: 'Does Timely support Arabic or work in the Middle East?', answer: 'No. Timely serves New Zealand, Australia and the UK. There is no Arabic interface, no GCC compliance and no local payment methods for the Middle East. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today.' },
-      { question: 'Does Timely have any AI features?', answer: 'No. There is no AI receptionist, no chatbot, no smart scheduling and no AI marketing. Daisy\'s AI receptionist works 24/7, taking bookings, answering client questions and processing payments on its own.' },
+      { question: 'Does Timely support Arabic or work in the Middle East?', answer: 'Timely publishes prices for the US, Canada, the UK, Ireland, Europe, Australia, New Zealand and the rest of the world. Its published pages show no Arabic interface, and its pricing FAQ says SMS is not available in the UAE, Saudi Arabia or Qatar (October 2026). Daisy runs natively in Arabic and English with support built for the Gulf, and is live in all six GCC countries.' },
+      { question: 'Does Timely have any AI features?', answer: 'Timely\'s AI feature is Textie Bestie, an AI SMS generator that helps write client messages. Its published pages do not list an AI receptionist, chatbot or AI scheduling as of October 2026. Daisy\'s AI receptionist works 24/7, taking bookings, answering client questions and processing payments on its own.' },
       { question: 'How does Timely\'s mobile app compare to Daisy?', answer: 'Timely\'s app is well designed for scheduling and staff management. Daisy\'s adds the AI receptionist, marketplace visibility, cashback management, live business analytics and full Arabic and English support.' },
-      { question: 'Can Timely help me attract new clients to my salon?', answer: 'No. Timely runs your operations. There is no marketplace, no cashback and nothing that helps a new client find you. Daisy includes a consumer marketplace, a cashback program and AI-powered marketing to bring customers in.' },
-      { question: 'What kind of customer support does Timely provide?', answer: 'Support runs through email and an online help centre, with no phone line and no dedicated account manager. Daisy provides multi-channel support, dedicated onboarding, Arabic-speaking staff and local GCC teams.' },
+      { question: 'Can Timely help me attract new clients to my salon?', answer: 'Timely offers a free mini-website, booking buttons for Instagram, Facebook and Messenger, Google review requests and targeted SMS campaigns. Its published pages list no consumer marketplace or cashback. Daisy includes a consumer marketplace, a cashback program and AI-powered marketing to bring customers in.' },
+      { question: 'What kind of customer support does Timely provide?', answer: 'Every Timely plan includes online support, a help centre, a chatbot and live messaging. Phone support appears on Timely\'s pricing page only for Australia, New Zealand, the UK and Ireland, included on Innovate and a paid add-on on other plans. Daisy provides multi-channel support, dedicated onboarding, Arabic-speaking staff and local GCC teams.' },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
   },
 
   // ---------------------------------------------------------------------------
