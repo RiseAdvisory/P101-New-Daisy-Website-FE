@@ -35,6 +35,7 @@ const HEADQUARTERS: Record<string, string> = {
   'New Jersey, USA': 'نيوجيرسي، الولايات المتحدة',
   'New York, NY, USA': 'نيويورك، الولايات المتحدة',
   'New York, USA (Squarespace)': 'نيويورك، الولايات المتحدة (Squarespace)',
+  'Oakland, CA, USA': 'أوكلاند، كاليفورنيا، الولايات المتحدة',
   'Paris, France': 'باريس، فرنسا',
   'Pleasanton, CA, USA': 'بليزانتون، كاليفورنيا، الولايات المتحدة',
   'Portland, OR, USA': 'بورتلاند، أوريغون، الولايات المتحدة',
@@ -42,6 +43,7 @@ const HEADQUARTERS: Record<string, string> = {
   'San Francisco, CA, USA': 'سان فرانسيسكو، كاليفورنيا، الولايات المتحدة',
   'San Luis Obispo, CA, USA': 'سان لويس أوبيسبو، كاليفورنيا، الولايات المتحدة',
   'Warsaw, Poland (US HQ: Chicago)': 'وارسو، بولندا (المقر الأمريكي: شيكاغو)',
+  'Wellington, New Zealand': 'ويلينغتون، نيوزيلندا',
 };
 
 /** Descriptive tier labels. Product plan names are deliberately absent. */
@@ -124,6 +126,35 @@ const EXACT: Record<string, string> = {
   'Very high commission rates': 'نسب عمولة مرتفعة جداً',
   'Very high monthly cost for the feature set': 'تكلفة شهرية مرتفعة جداً مقارنة بالميزات',
   'Website builder add-on': 'إضافة منشئ المواقع',
+
+  // Square Appointments, Mangomint, Phorest and Timely (vendor pages read 2026-10-09).
+  'Square Free (US): 2.6% + 15¢ in person, 3.3% + 30¢ online':
+    'Square Free (الولايات المتحدة): 2.6% + 15¢ للدفع الحضوري، و3.3% + 30¢ للدفع أونلاين',
+  'Square Plus text marketing: 500 texts a month included, then 3¢ per text (US)':
+    'التسويق بالرسائل النصية في Square Plus: 500 رسالة شهرياً مشمولة، ثم 3¢ لكل رسالة (الولايات المتحدة)',
+  'Keyed or card-on-file payments: 3.5% + 15¢ (US)':
+    'الدفع بإدخال رقم البطاقة يدوياً أو ببطاقة محفوظة: 3.5% + 15¢ (الولايات المتحدة)',
+  'Cards issued outside the US: an extra 1.5%': 'البطاقات الصادرة خارج الولايات المتحدة: 1.5% إضافية',
+  'Square hardware from $59 (US)': 'أجهزة Square تبدأ من $59 (الولايات المتحدة)',
+  '2.45% + 15¢ in person, 2.90% + 30¢ for virtual payments':
+    '2.45% + 15¢ للدفع الحضوري، و2.90% + 30¢ للدفع عن بُعد',
+  'Phone add-on: $70/mo per line': 'إضافة الهاتف: $70 شهرياً لكل خط',
+  'Marketing add-on: from $30/mo for 3,500 credits': 'إضافة التسويق: من $30 شهرياً مقابل 3,500 رصيد',
+  'Payroll add-on: $50/mo + $8 per worker': 'إضافة الرواتب: $50 شهرياً + $8 لكل موظف',
+  'Pricing on request': 'السعر عند الطلب',
+  'UK SMS: 9.5p per message on Starter, 8.2p on Grow, 7p on Ultimate; 500 free a month on Elite':
+    'الرسائل النصية في المملكة المتحدة: 9.5 بنس للرسالة في Starter، و8.2 بنس في Grow، و7 بنسات في Ultimate، و500 رسالة مجانية شهرياً في Elite',
+  'Front Desk AI is an add-on, priced on request': 'Front Desk AI إضافة مدفوعة، وسعرها عند الطلب',
+  'From $9/mo (Base, one staff member)': 'من $9 شهرياً (Base، لموظف واحد)',
+  '$9/mo, one staff member only': '$9 شهرياً، لموظف واحد فقط',
+  '$26/mo, then $24 per extra staff': '$26 شهرياً، ثم $24 لكل موظف إضافي',
+  '$39/mo, then $29 per extra staff': '$39 شهرياً، ثم $29 لكل موظف إضافي',
+  '$47/mo, then $36 per extra staff': '$47 شهرياً، ثم $36 لكل موظف إضافي',
+  'SMS beyond the monthly allowance: 5¢ each (US)':
+    'الرسائل النصية الزائدة عن الحصة الشهرية: 5¢ للرسالة (الولايات المتحدة)',
+  'Targeted SMS campaigns: 5¢ per SMS on Elevate and Innovate (US)':
+    'حملات الرسائل النصية الموجّهة: 5¢ للرسالة في Elevate وInnovate (الولايات المتحدة)',
+  'Card processing fees on Timely payments': 'رسوم معالجة البطاقات على مدفوعات Timely',
 };
 
 /**
