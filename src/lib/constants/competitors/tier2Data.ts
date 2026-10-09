@@ -1257,7 +1257,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Is Boulevard available in the Middle East?',
         answer:
-          'Boulevard describes its customers as self-care businesses across the US, and its published pages list no GCC country, Arabic interface or GCC payment method (October 2026). For a Middle East beauty business, Daisy offers a native Arabic interface, local payment integration and support built for the Gulf, live in Kuwait today.',
+          'Boulevard describes its customers as self-care businesses across the US, and its published pages list no GCC country, Arabic interface or GCC payment method (October 2026). For a Middle East beauty business, Daisy offers a native Arabic interface, local payment integration and support built for the Gulf, live in all six GCC countries.',
       },
       {
         question: 'What does Boulevard actually cost when you include transaction fees?',

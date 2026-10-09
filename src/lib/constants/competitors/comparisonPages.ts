@@ -1201,7 +1201,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mindbody': 'Best for fitness and wellness crossover businesses',
       'fresha': 'Best for cost-conscious salons wanting marketplace exposure',
       'vagaro': 'Best for comprehensive features at mid-market pricing',
-      'phorest': 'Best for UK/Ireland salons with strong CRM needs',
+      'phorest': 'Best for salons that want strong CRM and client retention tools',
     },
     daisyEdge: 'Daisy pairs an AI receptionist on WhatsApp, Instagram and the booking site with cashback-driven acquisition and Arabic and English as equals, at a published price.',
   },
@@ -1298,7 +1298,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     bestFor: {
       'fresha': 'Best for marketplace-led discovery at a low published entry price',
       'booksy': 'Best for mobile-first beauty professionals',
-      'vagaro': 'Best for comprehensive features without add-on complexity',
+      'vagaro': 'Best for a broad feature set',
       'glossgenius': 'Best for clean design and simplicity',
       'acuity-scheduling': 'Best for advanced scheduling customisation',
       'setmore': 'Best for free basic scheduling',
@@ -1453,7 +1453,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     combinedSlug: 'mindbody-vs-boulevard',
     metaTitle: 'Mindbody vs Boulevard: Features, AI and Pricing (2026)',
     // Boulevard pricing (joinblvd.com/pricing, read 2026-10-09): Essentials "$143/mo for 1 location".
-    metaDescription: 'Compare Mindbody (from $79/mo per location in the US) and Boulevard (from $143/mo for one location): features, AI, pricing, and which platform to choose.',
+    metaDescription: 'Compare Mindbody (from $79/mo per location in the US) and Boulevard (from $159/mo for one location, or $143/mo billed annually): features, AI, pricing, and which platform to choose.',
     keywords: ['mindbody vs boulevard', 'mindbody or boulevard'],
     heroTitle: 'Mindbody vs Boulevard',
     heroSubtitle: 'A long-established wellness platform and a premium salon and spa platform, compared.',
@@ -1491,7 +1491,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     verdict: 'Fresha is better for cost-conscious small businesses with its lower starting price. Mindbody is better for large enterprise operations. Both sell AI front-desk tools: Fresha\'s AI Concierge answers calls and messages, and Mindbody\'s own AI Concierge, on its Ultimate plan, follows up missed calls by text and web chat. Fresha has an Arabic UI; as of October 2026 we could not find one for Mindbody. Neither offers cashback.',
     whoShouldChooseA: ['Cost is the top priority', 'You want marketplace exposure at a lower price point', 'You\'re a small salon'],
     whoShouldChooseB: ['Enterprise features are required', 'Large fitness marketplace matters', 'Multi-location management needed'],
-    daisyPitch: 'Between published-but-stacking fees and quote-based higher tiers, Daisy offers the modern middle: one all-inclusive price with nothing added per transaction, AI across every channel, Arabic and English as equals, and cashback.',
+    daisyPitch: 'Between published-but-stacking fees and quote-based higher tiers, Daisy offers the modern middle: one all-inclusive price with nothing added per transaction, an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and cashback.',
   },
   {
     slugA: 'booksy',
@@ -1667,12 +1667,12 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     slugB: 'boulevard',
     combinedSlug: 'zenoti-vs-boulevard',
     metaTitle: 'Zenoti vs Boulevard: AI Enterprise vs Premium Design (2026)',
-    metaDescription: 'Compare Zenoti (AI-first, pricing on request) and Boulevard (from $143/mo for one location): AI capabilities, features, and which premium platform to choose.',
+    metaDescription: 'Compare Zenoti (AI-first, pricing on request) and Boulevard (from $159/mo for one location, or $143/mo billed annually): AI capabilities, features, and which premium platform to choose.',
     keywords: ['zenoti vs boulevard', 'zenoti or boulevard', 'boulevard vs zenoti comparison'],
     heroTitle: 'Zenoti vs Boulevard',
     heroSubtitle: 'An AI-first platform with a workforce of AI agents versus a premium salon platform with Precision Scheduling.',
     // Zenoti pricing and About pages, help.zenoti.com, and joinblvd.com/pricing, read 2026-10-09.
-    verdict: 'Zenoti wins on AI breadth, with AI agents in its AI Plus package, and on global reach: 30,000+ businesses in 50+ countries, by its own count. Boulevard publishes its pricing, from $143/mo for one location, and offers Beau, an AI receptionist for calls. Zenoti\'s interface languages are English, French and French-Canada; we found no Arabic option as of October 2026.',
+    verdict: 'Zenoti wins on AI breadth, with AI agents in its AI Plus package, and on global reach: 30,000+ businesses in 50+ countries, by its own count. Boulevard publishes its pricing, from $159/mo for one location ($143/mo billed annually), and offers Beau, an AI receptionist for calls. Zenoti\'s interface languages are English, French and French-Canada; we found no Arabic option as of October 2026.',
     whoShouldChooseA: [
       'You want AI agents across calls, marketing, leads and scheduling',
       'Global enterprise scale with multi-location management is key',

@@ -1207,7 +1207,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       mindbody: 'الأفضل لسيناريوهات عافية/لياقة',
       fresha: 'الأفضل للسوق كنقطة بداية',
       vagaro: 'الأفضل لميزات تشغيل كثيرة',
-      phorest: 'الأفضل لمن يركز على CRM في أسواق معينة',
+      phorest: 'الأفضل للصالونات التي تحتاج أدوات قوية لإدارة العملاء والاحتفاظ بهم',
     },
     daisyEdge:
       'ديزي تجمع موظف استقبال ذكياً عبر واتساب وإنستغرام وصفحة الحجز مع استقطاب قائم على الكاشباك، والعربية والإنجليزية بأولوية متساوية، بسعر منشور.',
@@ -1326,7 +1326,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     bestFor: {
       fresha: 'الأفضل للاكتشاف عبر السوق بسعر دخول منشور منخفض',
       booksy: 'الأفضل لمحترفي التجميل الذين يعتمدون على الجوال',
-      vagaro: 'الأفضل لميزات شاملة دون تعقيد الإضافات',
+      vagaro: 'الأفضل لمجموعة واسعة من الميزات',
       glossgenius: 'الأفضل للتصميم الأنيق والبساطة',
       'acuity-scheduling': 'الأفضل لتخصيص الجدولة المتقدم',
       setmore: 'الأفضل للجدولة الأساسية المجانية',
@@ -1509,7 +1509,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     combinedSlug: 'mindbody-vs-boulevard',
     metaTitle: 'Mindbody مقابل Boulevard: الميزات والذكاء الاصطناعي والأسعار (2026)',
     metaDescription:
-      'قارن Mindbody (من $79 شهرياً لكل موقع في الولايات المتحدة) وBoulevard (من $143 شهرياً لموقع واحد): الميزات والذكاء الاصطناعي والأسعار.',
+      'قارن Mindbody (من $79 شهرياً لكل موقع في الولايات المتحدة) وBoulevard (من $159 شهرياً لموقع واحد، أو $143 شهرياً عند الدفع السنوي): الميزات والذكاء الاصطناعي والأسعار.',
     keywords: ['mindbody vs boulevard'],
     heroTitle: 'Mindbody مقابل Boulevard',
     heroSubtitle: 'منصة عافية عريقة ومنصة Premium للصالونات والسبا، في مقارنة واحدة.',
@@ -1710,13 +1710,13 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     combinedSlug: 'zenoti-vs-boulevard',
     metaTitle: 'Zenoti مقابل Boulevard: مؤسسي مقابل Premium',
     metaDescription:
-      'قارن Zenoti (السعر عند الطلب) وBoulevard (من $143 شهرياً لموقع واحد): قدرات الذكاء الاصطناعي والميزات وأي منصة تختار.',
+      'قارن Zenoti (السعر عند الطلب) وBoulevard (من $159 شهرياً لموقع واحد، أو $143 شهرياً عند الدفع السنوي): قدرات الذكاء الاصطناعي والميزات وأي منصة تختار.',
     keywords: ['zenoti vs boulevard', 'boulevard vs zenoti'],
     heroTitle: 'Zenoti مقابل Boulevard',
     heroSubtitle: 'منصة تضع الذكاء الاصطناعي أولاً مع مجموعة وكلاء ذكية، مقابل منصة Premium للصالونات مع Precision Scheduling.',
     // Zenoti pricing and About pages, help.zenoti.com, and joinblvd.com/pricing, read 2026-10-09.
     verdict:
-      'يتفوق Zenoti في اتساع أدوات الذكاء الاصطناعي، مع وكلاء ضمن باقة AI Plus، وفي الانتشار العالمي: أكثر من 30,000 عمل في أكثر من 50 دولة بحسب Zenoti. أما Boulevard فينشر أسعاره، من $143 شهرياً لموقع واحد، ويقدم Beau، موظف استقبال ذكياً للمكالمات. لغات واجهة Zenoti هي الإنجليزية والفرنسية والفرنسية الكندية، ولم نجد خيار العربية حتى أكتوبر 2026.',
+      'يتفوق Zenoti في اتساع أدوات الذكاء الاصطناعي، مع وكلاء ضمن باقة AI Plus، وفي الانتشار العالمي: أكثر من 30,000 عمل في أكثر من 50 دولة بحسب Zenoti. أما Boulevard فينشر أسعاره، من $159 شهرياً لموقع واحد ($143 شهرياً عند الدفع السنوي)، ويقدم Beau، موظف استقبال ذكياً للمكالمات. لغات واجهة Zenoti هي الإنجليزية والفرنسية والفرنسية الكندية، ولم نجد خيار العربية حتى أكتوبر 2026.',
     whoShouldChooseA: [
       'تريد وكلاء ذكاء اصطناعي للمكالمات والتسويق والعملاء المحتملين والجدولة',
       'تدير سلسلة متعددة الفروع ولا مانع لديك من التسعير بعرض سعر',
