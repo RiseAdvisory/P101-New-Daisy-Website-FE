@@ -13,72 +13,121 @@ export const tier2Competitors: Record<string, CompetitorData> = {
   glamera: {
     slug: 'glamera',
     name: 'Glamera',
-    website: 'https://www.glamera.com',
+    // www.glamera.com did not resolve on 2026-10-09 (no DNS A record); the
+    // business site below is live and is where Glamera publishes its pricing.
+    website: 'https://business.glamera.com/en',
     tier: 2,
+    // business.glamera.com/en, read 2026-10-09: "Manage bookings, staff,
+    // payments, inventory, websites and much more all in one powerful
+    // ecosystem." Stats band: "3500+ Businesses", "10+ Countries".
     description:
-      'Arabic-native beauty marketplace and SaaS platform out of Saudi Arabia, pairing a 100K+ user consumer marketplace with business management tools. Expanding into UAE and Egypt.',
+      'Salon and spa management platform from Saudi Arabia. It covers appointments, POS, inventory, staff, accounting, marketing and multi-branch management, and adds a website builder, a staff app, a self-service kiosk and payments. Glamera says it serves 3,500+ businesses in 10+ countries.',
+    // Wamda, 29 Sep 2019 ("Glamera raises $250,000"): founded earlier in 2019.
     founded: '2019',
+    // Footer address on business.glamera.com, read 2026-10-09:
+    // "Riyadh - El Raeed District ... El Garage Building".
     headquarters: 'Riyadh, Saudi Arabia',
-    employeeCount: '50-100',
-    funding: '$2.37M',
+    // Wamda: $250K (Sep 2019), six-figure seed (Aug 2020), $1.3M seed (5 Oct 2022).
+    funding: '$1.3M seed (Oct 2022), after smaller rounds in 2019 and 2020',
 
+    // Ratings re-assessed 2026-10-09 against Glamera's own pages: POS is in
+    // every plan, inventory from Basic, websites with a custom domain through
+    // Glamera Pro, marketing plus SMS and WhatsApp integration, loyalty
+    // programs, and multi-branch control from one dashboard.
     features: {
       onlineBooking: 2,
-      posAndPayments: 1,
-      clientManagement: 1,
-      staffManagement: 1,
-      marketingAndCrm: 1,
-      inventoryManagement: 0,
-      reportingAndAnalytics: 1,
-      marketplaceAndDiscovery: 2,
+      posAndPayments: 2,
+      clientManagement: 2,
+      staffManagement: 2,
+      marketingAndCrm: 2,
+      inventoryManagement: 2,
+      reportingAndAnalytics: 2,
+      // No consumer marketplace on its current pages; its 2019 consumer iOS app
+      // is still listed but was last updated in 2021.
+      marketplaceAndDiscovery: 1,
+      // No AI listed on its product or pricing pages as of 2026-10-09.
       aiCapabilities: 0,
-      brandingAndWhiteLabel: 0,
+      brandingAndWhiteLabel: 2,
     },
 
+    // business.glamera.com/en/our-pricing, read 2026-10-09. Prices shown as
+    // "SAR 125 /month" etc., with "save up to 20% with annual billing". The
+    // page states "No hidden fees". There is no free plan.
     pricing: {
-      hasFreePlan: true,
-      startingPrice: 'Free (paid from ~$30/mo)',
-      startingPriceNumeric: 0,
+      hasFreePlan: false,
+      startingPrice: 'From SAR 125/mo',
+      // Sorting only, never displayed: USD equivalent of SAR 125 at the 3.75 peg.
+      startingPriceNumeric: 33.33,
       tiers: [
         {
-          name: 'Free',
-          price: 'Free',
-          priceNumeric: 0,
-          features: ['Basic booking', 'Marketplace listing', 'Limited features'],
-        },
-        {
-          name: 'Professional',
-          price: '~$30/mo',
-          priceNumeric: 30,
+          name: 'Foundation',
+          price: 'SAR 125/mo',
+          priceNumeric: 33.33,
           billingCycle: 'monthly',
           features: [
-            'Full booking management',
-            'Client management',
-            'Staff scheduling',
-            'Basic reporting',
-            'Priority marketplace listing',
+            'Up to 3 users',
+            'Appointment management',
+            'POS screen and invoice issuance',
+            'Financial transactions',
+            'Essential reports',
+          ],
+        },
+        {
+          name: 'Basic',
+          price: 'SAR 225/mo',
+          priceNumeric: 60,
+          billingCycle: 'monthly',
+          features: [
+            'Up to 10 users',
+            'Everything in Foundation',
+            'Staff management',
+            'Inventory management',
+            'Advanced reports',
+          ],
+        },
+        {
+          name: 'Advanced',
+          price: 'SAR 325/mo',
+          priceNumeric: 86.67,
+          billingCycle: 'monthly',
+          features: [
+            'Up to 20 users',
+            'Everything in Basic',
+            'Integrated accounting system',
+            'Professional reports',
+            'Dedicated account manager',
           ],
         },
       ],
+      // Add-ons as the pricing page lists them: "Staff & Owners App ... SAR 10
+      // additional per employee per month"; website creation and the
+      // self-service kiosk carry no published price.
       hiddenCosts: [
-        'Marketplace commission on bookings',
-        'Limited features in free tier',
-        'Premium placement fees',
+        'Staff & Owners App: SAR 10 per employee per month',
+        'Website and self-service kiosk add-ons, priced on request',
       ],
-      pricingModel: 'hybrid',
-      lastVerified: '2026-03-13',
+      pricingModel: 'flat',
+      pricingPageUrl: 'https://business.glamera.com/en/our-pricing',
+      lastVerified: '2026-10-09',
     },
 
-    reviews: [
-      { platform: 'App Store', rating: 4.5, reviewCount: 5000 },
-      { platform: 'Google Play', rating: 4.3, reviewCount: 8000 },
-    ],
+    // The earlier 4.5 (App Store, 5,000) and 4.3 (Google Play, 8,000) figures
+    // had no source. On 2026-10-09 the consumer "Glamera" iOS app showed 2.8
+    // from 12 ratings (Saudi store, last updated 2021) and the business apps
+    // too few ratings to display, so no rating is published here.
+    reviews: [],
 
     gccPresence: {
+      // Bilingual site; App Store lists Arabic and English for its apps.
       hasArabicUI: true,
       arabicQuality: 'native',
-      gccCountries: ['KSA', 'UAE'],
+      // business.glamera.com/en/about-us, read 2026-10-09: "Serving Clients
+      // Across the Arab World" lists Egypt, Saudi Arabia, Qatar, Bahrain, UAE,
+      // Kuwait, Lebanon and Oman.
+      gccCountries: ['KSA', 'UAE', 'Kuwait', 'Qatar', 'Bahrain', 'Oman'],
+      // "Fully compliant with ZATCA e-invoicing regulations (Phase 1 & 2)".
       localCompliance: true,
+      // "Licensed by Saudi Payments"; integrations list Mada, Apple Pay, Tabby, Tamara.
       localPaymentMethods: true,
       localSupport: true,
     },
@@ -90,117 +139,113 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       hasAiMarketing: false,
       hasAiAnalytics: false,
       hasAiPricing: false,
-      aiDescription: 'No AI. Automated booking confirmations are the extent of it.',
+      // Wamda, 27 Jan 2026, on the Bookr MoU: the deal will enable "the rollout
+      // of advanced AI capabilities tailored to the beauty and wellness sector".
+      aiDescription:
+        'Glamera\'s product and pricing pages do not list AI features as of October 2026. When it announced its agreement to acquire Bookr in January 2026, Glamera said it plans to roll out AI capabilities built for the beauty and wellness sector.',
     },
 
     targetMarket:
-      'Saudi beauty salons and spas, aimed at Arabic-speaking businesses in KSA, with the marketplace pushing into UAE and Egypt.',
+      'Beauty salons, barbershops, spas, massage centres and gyms, from independent professionals to multi-branch businesses, mainly in Saudi Arabia and the wider Arab world.',
 
     messaging: {
-      tagline: 'Your beauty marketplace',
+      tagline: 'The Operating System for Beauty & Wellness Businesses',
       primaryValueProp:
-        'Arabic-native beauty marketplace connecting Saudi consumers with local salons and spas',
-      targetAudience: 'Saudi salon owners who want to show up on a local marketplace',
-      toneAndVoice: 'Local and Arabic-first, with the marketplace front and centre',
+        'Bookings, staff, payments, inventory and websites managed in one connected system',
+      targetAudience: 'Beauty and wellness businesses, from independent experts to multi-branch enterprises',
+      toneAndVoice: 'Operational and bilingual, in Arabic and English',
       keyMessages: [
-        'Arabic-native platform',
-        '100K+ consumers on marketplace',
-        'Built for Saudi market',
-        'Free to start',
-        'Growing to UAE and Egypt',
+        '3,500+ businesses in 10+ countries',
+        'ZATCA e-invoicing compliant (Phase 1 and 2)',
+        'Licensed by Saudi Payments',
+        'No hidden fees',
+        'Dedicated account manager and 24/7 support',
       ],
     },
 
     daisyAdvantages: [
-      '24/7 AI receptionist vs no AI at all',
-      'Complete business management suite vs basic booking/marketplace',
-      'POS, inventory, and advanced reporting vs minimal features',
-      'AI-powered marketing vs no marketing tools',
-      'Global scalability vs KSA-focused only',
-      'White-label brand control vs Glamera-branded marketplace',
-      'Cashback customer acquisition vs marketplace-only discovery',
-      'Full staff management vs basic scheduling',
+      '24/7 AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English. Glamera\'s published pages list no AI receptionist as of October 2026',
+      'Cashback rewards for customers, built into the platform',
+      'Branded booking page; Glamera lists its website builder as an add-on',
+      'AI help with marketing campaigns and reporting',
     ],
 
     daisySwitchingReasons: [
-      'Need more than a marketplace, want complete business management',
-      'Want AI receptionist to handle calls and bookings 24/7',
-      'Need POS, inventory, and advanced reporting',
-      'Want to build own brand instead of relying on Glamera marketplace',
-      'Need marketing automation beyond marketplace listing',
-      'Want to expand beyond Saudi Arabia with a global platform',
+      'You want an AI receptionist answering clients on WhatsApp and Instagram around the clock',
+      'You want cashback rewards to bring clients back',
+      'You want your own brand on the booking page and on client messages',
+      'You want AI help with marketing and reporting',
     ],
 
     competitorStrengths: [
-      'Native Arabic UI, built for Saudi market',
-      'Growing consumer marketplace (100K+ users)',
-      'Free tier available',
-      'Local GCC compliance and payment methods',
-      'Arabic-speaking customer support',
+      'Arabic and English interface, built in Saudi Arabia',
+      'POS and invoicing in every plan, with ZATCA e-invoicing compliance (Phase 1 and 2)',
+      'Published prices in SAR from SAR 125 a month, and "No hidden fees" on its pricing page',
+      'Payment integrations include mada, Apple Pay, Tabby and Tamara',
+      'Multi-branch management from one dashboard, plus a website builder, staff app and self-service kiosk',
+      'Says it serves 3,500+ businesses in 10+ countries',
     ],
 
     competitorWeaknesses: [
-      'Zero AI capabilities',
-      'Very basic business management features',
-      'No POS or inventory management',
-      'Limited to KSA market primarily',
-      'Small team and limited funding ($2.37M)',
-      'Basic reporting only',
-      'No branding control on customer-facing pages',
-      'Limited scalability beyond GCC',
+      'No AI receptionist or other AI features on its published pages as of October 2026',
+      'Inventory management starts on the Basic plan (SAR 225 a month)',
+      'The staff and owners app costs SAR 10 per employee per month on top of the plan',
+      'Website and self-service kiosk add-ons have no published price',
+      'Plans cap users at 3, 10 or 20',
+      'Lists loyalty programs but no cashback rewards',
     ],
 
     faq: [
       {
         question: 'How does Daisy compare to Glamera?',
         answer:
-          'Glamera is a Saudi-focused marketplace with basic booking attached. Daisy is a growth platform: AI receptionist, full business management, POS, marketing automation and white-labeling. Both are natively Arabic, but Daisy carries considerably more, particularly on AI.',
+          'Both are salon platforms built for Arabic-speaking markets, with Arabic and English interfaces. Glamera covers appointments, POS, inventory, staff, accounting, marketing and multi-branch management, with plans from SAR 125 a month. Daisy adds a 24/7 AI receptionist on WhatsApp, Instagram and the booking site, and cashback rewards for customers. Glamera\'s published pages do not list AI features as of October 2026.',
       },
       {
-        question: 'Is Glamera available outside Saudi Arabia?',
+        question: 'Where does Glamera operate?',
         answer:
-          'Glamera is moving into UAE and Egypt but remains Saudi-focused. Daisy was built for the GCC, with a native Arabic and English interface and local payment methods, live in Kuwait today and expanding across the Gulf.',
+          'Glamera is based in Riyadh and says it serves 3,500+ businesses in 10+ countries. Its about page lists Saudi Arabia, the UAE, Kuwait, Qatar, Bahrain, Oman, Egypt and Lebanon. In January 2026 it signed a memorandum of understanding to acquire Bookr, a Kuwait-based salon booking platform. Daisy is live in all six GCC countries.',
       },
       {
-        question: 'What are the hidden costs when using Glamera?',
+        question: 'What does Glamera cost?',
         answer:
-          'Glamera takes a marketplace commission on bookings that come through its consumer platform, and charges premium placement fees for better visibility. The free tier is thin enough to push most businesses onto a paid plan. Daisy publishes its pricing, takes no per-booking commission and includes the core features in every plan.',
+          'Glamera publishes three plans in Saudi riyals: Foundation at SAR 125 a month for up to 3 users, Basic at SAR 225 for up to 10 users and Advanced at SAR 325 for up to 20 users. Annual billing saves up to 20%. The staff and owners app adds SAR 10 per employee per month, and the website and self-service kiosk add-ons are priced on request. Its pricing page says "No hidden fees". Daisy publishes its plans on its pricing page.',
       },
       {
         question: 'How hard is it to switch from Glamera to Daisy?',
         answer:
-          'A thin feature set means there is less to move, so the switch is straightforward. Daisy handles the onboarding and the data migration, transferring client records, booking history and staff details without interrupting the business.',
+          'Daisy handles the onboarding and the data migration, transferring client records, booking history and staff details without interrupting the business.',
       },
       {
         question: 'Does Glamera have AI features like an AI receptionist?',
         answer:
-          'No. Glamera has no AI at all, just automated booking confirmations. Daisy runs a full AI ecosystem: a 24/7 receptionist taking calls, bookings and payments, plus AI marketing, smart scheduling and analytics.',
+          'Glamera\'s product and pricing pages do not list an AI receptionist or other AI features as of October 2026. When it announced the Bookr agreement in January 2026, Glamera said it plans to roll out AI capabilities for the beauty and wellness sector. Daisy\'s AI receptionist answers clients on WhatsApp, Instagram and the booking site, in Arabic and English, 24/7.',
       },
       {
-        question: 'How good is Glamera\'s mobile app compared to Daisy?',
+        question: 'Does Glamera have a mobile app for owners and staff?',
         answer:
-          'The app rates decently, 4.5 on the App Store and 4.3 on Google Play, and works well as a consumer marketplace for finding salons. The business management side is basic. Daisy\'s app carries a complete management suite with AI, POS, inventory and advanced reporting alongside the marketplace.',
+          'Yes. Glamera One is its business app for owners, managers and staff, covering appointments, the calendar, staff performance and client communication. Glamera\'s pricing page lists the staff and owners app at SAR 10 per employee per month. Daisy\'s mobile and desktop app is part of its plans.',
       },
       {
         question: 'Can Glamera support a multi-location salon business?',
         answer:
-          'Glamera was designed around individual salon listings on its marketplace, and multi-location management is limited. Daisy was built to scale, with multi-branch management, centralized reporting, staff scheduling across locations and one inventory across all of them.',
+          'Yes. Glamera says it gives you centralized control over all your branches from one dashboard, with unified reporting and access permissions for each branch. Daisy also manages multiple branches from one account, with centralized reporting, staff scheduling across locations and one inventory across all of them.',
       },
       {
         question: 'What kind of customer support does Glamera provide?',
         answer:
-          'Support is Arabic-speaking and oriented to the Saudi market. With a team of 50-100 employees and $2.37M in funding, capacity is necessarily limited. Daisy provides dedicated onboarding and multi-channel support in Arabic and English, on a larger support infrastructure.',
+          'Glamera says customers get a dedicated account manager and 24/7 support. On its pricing page, the dedicated account manager is listed with the Advanced plan. Daisy provides dedicated onboarding and multi-channel support in Arabic and English.',
       },
       {
-        question: 'Can I keep my own brand identity on Glamera or is everything Glamera-branded?',
+        question: 'Can I keep my own brand identity on Glamera?',
         answer:
-          'Glamera is marketplace-first, so your business appears under the Glamera brand. There is no white-labeling and no custom branding. Daisy gives you a branded booking page, so your brand carries across booking pages, apps and every message to a customer.',
+          'Yes. Glamera Pro is a website builder with online booking, SMS and WhatsApp integration, online payments and a custom domain, and Glamera\'s pricing page lists website creation as an add-on. Daisy gives you a branded booking page, so your brand carries across booking pages, apps and every message to a customer.',
       },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
     notes:
-      'A direct GCC competitor working from a thin feature set. Its strength is the Arabic-native marketplace in KSA. It is exposed on AI, on depth and on scale, and the small funding round caps how fast that changes.',
+      'Saudi platform and the closest regional rival in Daisy\'s markets. Publishes SAR pricing with POS in every plan. Signed an MoU to acquire Kuwait\'s Bookr in January 2026; no completion found as of 2026-10-09. Recheck its pages for the AI it announced.',
   },
 
   // ---------------------------------------------------------------------------
@@ -211,206 +256,192 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     name: 'DINGG',
     website: 'https://www.dingg.app',
     tier: 2,
+    // dingg.app/ae and dingg.app/ae/features/dingg-ai-salon-software, read 2026-10-09.
     description:
-      'India-based salon management platform with genuinely strong AI in its AI Genius suite. It is expanding into the UAE and the wider GCC with a native Arabic interface, positioned as the tech-forward option for beauty businesses.',
+      'Salon and spa software from India, run by Vrienden Tech, with country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman. Its AI Genius suite includes a WhatsApp AI assistant that answers questions and takes bookings, plus smart scheduling, client segmentation and predictive insights.',
+    // Entrepreneur India and TheSaaSNews, Sep 2022: founded 2018.
     founded: '2018',
-    headquarters: 'Mumbai, India',
-    employeeCount: '50-100',
-    funding: '~$3M',
+    // TheSaaSNews (18 Sep 2022) and Outlook Startup describe DINGG as Pune-based.
+    // DINGG's own pages publish no address.
+    headquarters: 'Pune, India',
+    // Entrepreneur India (16 Sep 2022) and TheSaaSNews (18 Sep 2022):
+    // "Rs 3.5 crore in pre-Series A", led by Big Sun Ventures.
+    funding: 'INR 3.5 crore pre-Series A (Sep 2022)',
 
+    // Re-assessed 2026-10-09 against dingg.app: inventory lists stock alerts,
+    // audits, supplier ordering and multi-site stock; booking runs through the
+    // business's own website and WhatsApp.
     features: {
       onlineBooking: 2,
       posAndPayments: 2,
       clientManagement: 2,
       staffManagement: 2,
       marketingAndCrm: 2,
-      inventoryManagement: 1,
+      inventoryManagement: 2,
       reportingAndAnalytics: 2,
       marketplaceAndDiscovery: 1,
       aiCapabilities: 2,
-      brandingAndWhiteLabel: 0,
+      // "Seamless website integration for online booking"; no white-label offer listed.
+      brandingAndWhiteLabel: 1,
     },
 
+    // DINGG publishes no prices. dingg.app/ae FAQ, read 2026-10-09: "DINGG
+    // offers affordable monthly and annual plans in AED ... Book a free demo
+    // for current UAE pricing." /pricing redirects to the demo form. The old
+    // $49 and $79 tiers came from a third-party listing, not from DINGG. Its
+    // country pages offer a free trial without stating the length.
     pricing: {
       hasFreePlan: false,
-      freeTrialDays: 14,
-      startingPrice: '$49/mo',
-      startingPriceNumeric: 49,
-      tiers: [
-        {
-          name: 'Starter',
-          price: '$49/mo',
-          priceNumeric: 49,
-          billingCycle: 'monthly',
-          features: [
-            'Online booking',
-            'Client management',
-            'Basic reporting',
-            'Staff scheduling',
-          ],
-        },
-        {
-          name: 'Professional',
-          price: '$79/mo',
-          priceNumeric: 79,
-          billingCycle: 'monthly',
-          features: [
-            'Everything in Starter',
-            'AI Genius suite',
-            'Marketing automation',
-            'Advanced analytics',
-            'Inventory management',
-          ],
-        },
-      ],
-      hiddenCosts: [
-        'AI features only in higher tier',
-        'Payment processing fees',
-        'SMS/messaging costs',
-      ],
+      startingPrice: 'Pricing on request',
+      tiers: [],
+      hiddenCosts: [],
+      // Not published by DINGG; this field is not rendered on any page.
       pricingModel: 'flat',
-      lastVerified: '2026-03-13',
+      pricingPageUrl: 'https://www.dingg.app/ae',
+      lastVerified: '2026-10-09',
     },
 
+    // Google Play, "DINGG Business" (app.dingg.vendor), read 2026-10-09:
+    // 4.5 stars, 83 reviews, 10K+ downloads. The iOS app shows too few ratings
+    // in the UAE store to publish.
     reviews: [
-      { platform: 'Google Play', rating: 4.2, reviewCount: 3000 },
-      { platform: 'App Store', rating: 4.0, reviewCount: 500 },
+      { platform: 'Google Play', rating: 4.5, reviewCount: 83 },
     ],
 
     gccPresence: {
-      hasArabicUI: true,
-      arabicQuality: 'native',
-      // Live country sites verified 2026-09-29: dingg.app/ae, /sa, /qa, /kw, /om
-      // all return 200 with country-specific titles. /bh returns 404.
+      // Not verified. DINGG's country pages say WhatsApp reminders and campaigns
+      // go out "in both English and Arabic", but no page shows an Arabic
+      // interface and its App Store listings give English only (2026-10-09).
+      hasArabicUI: false,
+      arabicQuality: 'none',
+      // Live country sites re-verified 2026-10-09: dingg.app/ae, /sa, /qa, /kw,
+      // /om return 200 with country-specific titles. /bh returns 404.
       gccCountries: ['UAE', 'KSA', 'Qatar', 'Kuwait', 'Oman'],
+      // VAT-compliant invoices in AED and SAR, "ZATCA-ready reports".
       localCompliance: true,
+      // "DINGG supports cards, Apple Pay and popular UAE payment options".
       localPaymentMethods: true,
       localSupport: true,
     },
 
+    // dingg.app/ae/features/dingg-ai-salon-software, read 2026-10-09: "DINGG AI
+    // handles WhatsApp conversations automatically, answering questions,
+    // sharing prices, and even taking bookings"; FAQ: "It's like having a
+    // virtual receptionist 24/7." The page does not mention phone calls.
     aiCapabilities: {
       hasAiReceptionist: true,
       hasAiChatbot: true,
       hasSmartScheduling: true,
       hasAiMarketing: true,
-      hasAiAnalytics: false,
+      hasAiAnalytics: true,
       hasAiPricing: false,
       aiDescription:
-        'The AI Genius suite covers an AI receptionist for calls, a chatbot for messaging, smart scheduling and AI-suggested marketing campaigns. For the price, that is a competitive offering.',
+        'DINGG AI Genius includes a WhatsApp AI assistant that answers questions, shares service menus and prices, and takes and confirms bookings 24/7; DINGG compares it to a virtual receptionist. The suite also lists smart scheduling, client segmentation, WhatsApp marketing, client summaries for upselling, predictive analytics and transaction monitoring. Its pages do not mention phone calls.',
     },
 
     targetMarket:
-      'Beauty salons and spas across India, now reaching into the UAE and GCC. Mid-range pricing aimed at growing businesses that want AI without enterprise bills.',
+      'Salons, spas, barbershops and beauty clinics in India, the US and five GCC countries: the UAE, Saudi Arabia, Qatar, Kuwait and Oman.',
 
     messaging: {
-      tagline: 'Smart salon management powered by AI',
+      tagline: 'Streamline, Automate and Grow with DINGG',
       primaryValueProp:
-        'AI-powered salon management with native Arabic support at an affordable price point',
-      targetAudience:
-        'Growing salons in India and the GCC that want AI without paying enterprise rates',
-      toneAndVoice: 'Tech-forward and approachable, with AI as the headline',
+        'All-in-one salon and spa software with VAT-compliant billing, WhatsApp marketing and online booking',
+      targetAudience: 'Salons, spas and clinics of every size in India, the GCC and the US',
+      toneAndVoice: 'Practical and growth-minded, with AI and WhatsApp up front',
       keyMessages: [
-        'AI Genius suite for smart management',
-        'Arabic-native for GCC market',
-        'Affordable AI-powered features',
-        'Complete salon management',
-        'Growing in UAE/GCC',
+        'DINGG AI Genius',
+        'WhatsApp booking and marketing in English and Arabic',
+        'VAT-compliant billing in local currency',
+        'Multi-location and franchise management',
+        'Loyalty points, memberships and gift cards',
       ],
     },
 
     daisyAdvantages: [
-      'Established GCC presence across all 6 countries vs UAE-only expansion',
-      'Consumer marketplace with cashback vs no marketplace',
-      'Branded booking page with no Daisy branding vs standard branding',
-      'More comprehensive feature depth across all categories',
-      'Stronger GCC compliance and local payment integrations',
-      'AI that handles payments and full booking flow vs routing-focused AI',
-      'Customer acquisition engine vs operations-focused platform',
+      'Live in all six GCC countries, Bahrain included; DINGG has country sites for five',
+      'AI receptionist that also answers on Instagram; DINGG lists WhatsApp, SMS and your website for its AI assistant',
+      'Arabic and English interface; DINGG\'s pages mention Arabic for WhatsApp messages',
+      'Cashback rewards for customers; DINGG\'s loyalty runs on points, vouchers and prepaid credits',
+      'Published prices; DINGG gives pricing in a demo',
+      'Consumer marketplace for customer acquisition',
     ],
 
     daisySwitchingReasons: [
-      'Need broader GCC coverage beyond just UAE',
-      'Want consumer-facing marketplace and cashback for acquisition',
-      'Need a branded booking page for brand consistency',
-      'Want deeper feature set (POS, inventory, advanced reporting)',
-      'Need AI that handles full booking and payment flow',
+      'You need coverage in Bahrain as well as the rest of the GCC',
+      'You want an AI receptionist that also answers on Instagram',
+      'You want cashback rewards to bring clients back',
+      'You want to see prices before booking a demo',
+      'You want a consumer marketplace bringing new customers in',
     ],
 
     competitorStrengths: [
-      'Strong AI suite at affordable price ($49-79/mo)',
-      'Native Arabic UI for GCC market',
-      'Good AI receptionist and chatbot capabilities',
-      'Growing GCC presence with local support',
-      'Competitive pricing for AI features',
+      'AI Genius: a WhatsApp AI assistant that takes bookings, plus smart scheduling, segmentation and predictive insights',
+      'Country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman, with billing in each local currency',
+      'VAT-compliant invoicing, with ZATCA-ready reports in Saudi Arabia',
+      'WhatsApp reminders and campaigns in English and Arabic',
+      'Loyalty points, memberships, packages and gift cards',
+      'Multi-location and franchise management',
     ],
 
     competitorWeaknesses: [
-      'Small company with limited funding ($3M)',
-      'India-centric. GCC expansion still early',
-      'No consumer marketplace or cashback program',
-      'Limited to UAE in GCC, not yet in KSA, Kuwait, etc.',
-      'Basic inventory management',
-      'No branding control option',
-      'Lower review count and brand awareness',
-      'AI features locked behind higher tier',
+      'Does not publish prices; you get them in a demo',
+      'No Bahrain site among its GCC country sites',
+      'No Arabic interface shown on its pages or app listings',
+      'No consumer marketplace listed',
+      'Its AI assistant is listed for WhatsApp, SMS and the business website, not Instagram',
     ],
 
     faq: [
       {
         question: 'How does DINGG compare to Daisy?',
         answer:
-          'DINGG has a competitive AI suite at $49-79/mo with Arabic support. Daisy carries more around it: marketplace-driven acquisition, cashback rewards, white-labeling, and presence across all 6 GCC countries against DINGG\'s UAE-only footprint.',
+          'Both publish AI that books appointments over WhatsApp. DINGG\'s AI Genius adds smart scheduling, segmentation and predictive insights, and DINGG runs country sites for five GCC states. Daisy\'s AI receptionist also covers Instagram, and Daisy publishes its prices, adds cashback rewards and a consumer marketplace, and is live in all six GCC countries, Bahrain included.',
       },
       {
         question: 'Does DINGG work in the GCC?',
         answer:
-          'DINGG is moving into the UAE with a native Arabic interface and local payment support, and has not yet reached KSA, Kuwait, Bahrain, Oman or Qatar. Daisy was built for the GCC, with a native Arabic and English interface and local payment methods, live in Kuwait today and expanding across the Gulf.',
+          'Yes. DINGG runs country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman, with billing in each local currency and VAT-compliant invoicing. We found no Bahrain site as of October 2026. Daisy is live in all six GCC countries.',
       },
       {
-        question: 'How much does DINGG really cost with all the add-ons?',
+        question: 'How much does DINGG cost?',
         answer:
-          'DINGG opens at $49/mo for the basics, and the AI Genius suite only appears at $79/mo. Payment processing and SMS costs sit on top of the subscription. Daisy puts the AI in the core platform rather than behind a higher tier.',
+          'DINGG does not publish prices. Its UAE site says it offers monthly and annual plans in AED and asks you to book a free demo for current pricing. Daisy publishes its plans on its pricing page.',
       },
       {
         question: 'Can I migrate my salon data from DINGG to Daisy?',
         answer:
-          'Yes. Daisy moves your client database, appointment history and staff records across. The two platforms structure booking and client data similarly, so the transition is manageable, and the onboarding team walks you through each step.',
+          'Yes. Daisy moves your client database, appointment history and staff records across, and the onboarding team walks you through each step.',
       },
       {
-        question: 'How does DINGG\'s AI receptionist compare to Daisy\'s?',
+        question: 'How does DINGG\'s AI compare to Daisy\'s?',
         answer:
-          'AI Genius gives you a receptionist and chatbot for calls and messages, plus smart scheduling. Daisy\'s receptionist goes further, running the full booking flow and taking payment on its own, and it sits behind a consumer marketplace and cashback system DINGG has nothing equivalent to.',
+          'DINGG\'s AI assistant answers questions, shares service menus and prices, and takes bookings on WhatsApp, SMS and your website, 24/7. AI Genius also covers smart scheduling, client segmentation, WhatsApp marketing and predictive analytics. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English, takes payment inside the booking flow, and sits alongside a consumer marketplace and cashback rewards.',
       },
       {
         question: 'Is DINGG\'s Arabic support as good as Daisy\'s for GCC businesses?',
         answer:
-          'The Arabic interface is genuinely native and DINGG runs country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman, though not Bahrain. Daisy offers native Arabic with local payment methods, built for the Gulf and live in Kuwait today.',
+          'DINGG sends WhatsApp reminders and campaigns in English and Arabic, and runs country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman. Its pages and app listings do not show an Arabic interface as of October 2026. Daisy\'s staff interface, booking pages and client messages are in Arabic and English.',
       },
       {
-        question: 'How good is DINGG\'s mobile app for day-to-day salon management?',
+        question: 'Does DINGG have a mobile app?',
         answer:
-          'The app rates 4.2 on Google Play and 4.0 on the App Store, and handles booking and client management reasonably. Reviews suggest it is still maturing. Daisy\'s app is more finished, with POS, inventory, AI and marketplace access in one place.',
+          'Yes. The DINGG Business app is on Google Play, rated 4.5 from 83 reviews in October 2026, and on the App Store. DINGG also lists a kiosk app and a client self-service portal. Daisy\'s app puts POS, inventory, AI and marketplace access in one place.',
       },
       {
         question: 'Does DINGG support multi-branch salon businesses?',
         answer:
-          'Multi-location support exists at a basic level. With a small team and $3M in funding, enterprise-grade multi-branch management is not where DINGG is strongest. Daisy was built to scale, with centralized multi-branch dashboards, cross-location reporting, staff allocation and inventory management.',
+          'Yes. DINGG lists multi-location and franchise management, with one dashboard for all outlets, stock tracked across sites, and pricing and offers set by location. Daisy also runs multiple branches centrally, with cross-location reporting, staff allocation and inventory management.',
       },
       {
         question: 'What integrations does DINGG support compared to Daisy?',
         answer:
-          'DINGG connects to the common payment gateways and basic tools, and the wider integration ecosystem is still growing at its size. Daisy reaches further, covering local GCC payment methods, marketing tools, Google Calendar sync and a consumer marketplace.',
-      },
-      {
-        question: 'Is DINGG a reliable long-term choice for my beauty business?',
-        answer:
-          'DINGG is promising and the AI is strong. On $3M in funding with a team of 50-100, there is real risk around how far it can grow and how much support it can carry. Daisy is more established, present in more markets, deeper on features, and built to support businesses as they scale.',
+          'DINGG lists payments by card, Apple Pay and popular UAE payment options, messaging over WhatsApp, SMS and email, and booking on your own website. Daisy connects to local GCC payment methods, marketing tools and Google Calendar, and includes a consumer marketplace.',
       },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
     notes:
-      'The closest Tier 2 competitor on AI. Arabic support and AI at an affordable price is a compelling combination. The weaknesses are no marketplace and limited funding; its GCC coverage now spans five countries, short of the full six. Worth watching as it grows in the region.',
+      'The closest Tier 2 rival on AI: its WhatsApp assistant takes bookings. Country sites in five GCC states, without Bahrain. Prices on request. Recheck dingg.app for an Arabic interface and a Bahrain site.',
   },
 
   // ---------------------------------------------------------------------------
@@ -807,60 +838,64 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     name: 'RepeatMD',
     website: 'https://www.repeatmd.com',
     tier: 2,
+    // repeatmd.com and repeatmd.com/how-it-works, read 2026-10-09: "rewards,
+    // AI, and 24/7 shopping inside your own branded app".
     description:
-      'An AI-powered growth platform for med spas and aesthetic practices, built around the "Beauty Bank" cashback concept and the Adonis and Aria AI agents. Patient retention and revenue growth are the whole focus.',
-    founded: '2020',
-    headquarters: 'Miami, FL, USA',
-    employeeCount: '50-100',
-    funding: '$16M+',
+      'Patient rewards and ecommerce platform for aesthetic and wellness practices in the US and Canada, delivered as each practice\'s own branded app. It combines mobile rewards, memberships, Beauty Bank pre-saved balances, patient financing and Adonis and Aria, AI treatment advisors that answer questions, sell treatments and book appointments.',
+    // repeatmd.com/about, read 2026-10-09: "FEB 2021 RepeatMD created".
+    founded: '2021',
+    // Footer: "5599 San Felipe, 4th Floor, Houston, TX 77056". The about page
+    // says the team is "headquartered in Houston and New York City".
+    headquarters: 'Houston, TX, USA',
+    // repeatmd.com/about: "May 2023 Grew to over 100 employees!"
+    employeeCount: '100+',
+    // repeatmd.com/about: "November 2023 Announced $50M Series A led by
+    // Centana & Full-In Partners", after a seed round closed in December 2022.
+    funding: '$50M Series A (Nov 2023)',
 
+    // Re-assessed 2026-10-09. RepeatMD sells inside a branded patient app and
+    // says "All our clients use an existing EMR or PM system", so booking stays
+    // basic. Staff scheduling and inventory are not listed on its pages.
     features: {
       onlineBooking: 1,
-      posAndPayments: 1,
+      posAndPayments: 2,
       clientManagement: 2,
-      staffManagement: 1,
+      staffManagement: 0,
       marketingAndCrm: 3,
       inventoryManagement: 0,
       reportingAndAnalytics: 2,
       marketplaceAndDiscovery: 1,
       aiCapabilities: 2,
-      brandingAndWhiteLabel: 0,
+      // "We'll build your branded app" for each practice.
+      brandingAndWhiteLabel: 2,
     },
 
+    // repeatmd.com/pricing FAQ, read 2026-10-09: "Let's craft a proposal just
+    // for you. Generally, our platform's monthly cost falls within the
+    // hundreds of dollars range. RepeatMD's pricing is tailored based on
+    // factors unique to your team". The old ~$700/mo figure and the
+    // implementation-fee line had no source and are removed.
     pricing: {
       hasFreePlan: false,
-      startingPrice: '~$700/mo',
-      startingPriceNumeric: 700,
-      tiers: [
-        {
-          name: 'Standard',
-          price: '~$700/mo',
-          priceNumeric: 700,
-          billingCycle: 'monthly',
-          features: [
-            'Beauty Bank cashback',
-            'AI agents (Adonis/Aria)',
-            'Marketing automation',
-            'Patient retention tools',
-            'Loyalty program',
-            'Analytics dashboard',
-          ],
-        },
-      ],
-      hiddenCosts: [
-        'Very high monthly cost for the feature set',
-        'Implementation fees',
-        'Limited operations features, may need separate software',
-      ],
-      pricingModel: 'flat',
-      lastVerified: '2026-03-13',
+      startingPrice: 'Pricing on request',
+      tiers: [],
+      hiddenCosts: [],
+      // Not published ("tailored based on factors unique to your team"); this
+      // field is not rendered on any page.
+      pricingModel: 'hybrid',
+      pricingPageUrl: 'https://repeatmd.com/pricing',
+      lastVerified: '2026-10-09',
     },
 
+    // App Store (US), "MyRepeat: Patient Rewards" by RepeatMD, Inc, read
+    // 2026-10-09: 4.9 from 26,581 ratings. The earlier G2 4.7 (80) figure could
+    // not be re-checked (G2 blocks automated reads) and is removed.
     reviews: [
-      { platform: 'G2', rating: 4.7, reviewCount: 80 },
+      { platform: 'App Store', rating: 4.9, reviewCount: 26581 },
     ],
 
     gccPresence: {
+      // "Trusted by practices in US & Canada"; App Store lists English only.
       hasArabicUI: false,
       arabicQuality: 'none',
       gccCountries: [],
@@ -869,130 +904,131 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       localSupport: false,
     },
 
+    // repeatmd.com/blog/repeatmd-v3-automated-revenue (21 Oct 2025), read
+    // 2026-10-09: Adonis and Aria "are your AI treatment advisors, available
+    // 24/7 ... They make personalized recommendations, sell treatments, and
+    // even book appointments." How-it-works page: they turn "conversations
+    // into direct sales or bookings."
     aiCapabilities: {
-      hasAiReceptionist: false,
+      hasAiReceptionist: true,
       hasAiChatbot: true,
       hasSmartScheduling: false,
       hasAiMarketing: true,
-      hasAiAnalytics: true,
+      hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'Two AI agents: Adonis for marketing and lead generation, Aria for patient communication. The "Beauty Bank" cashback concept handles retention, and campaigns are AI-optimized. No voice receptionist and no smart scheduling.',
+        'Adonis and Aria are AI treatment advisors inside the practice\'s patient app. RepeatMD says they are available 24/7, answer questions, make personalized recommendations, sell treatments and "even book appointments". Ageless AI, introduced in January 2026, produces before-and-after visualizations to qualify patients. RepeatMD does not list WhatsApp, Instagram or phone as channels for its AI.',
     },
 
     targetMarket:
-      'Med spas, aesthetic clinics and premium beauty practices across the US and Canada. High-revenue businesses that can justify $700/mo for growth tools.',
+      'Medical spas, cosmetic dermatology, plastic surgery, wellness and integrative medicine, cosmetic dentistry and chiropractic practices in the US and Canada.',
 
     messaging: {
-      tagline: 'The growth platform for med spas',
+      tagline: 'AI-Powered Rewards & Ecommerce for Aesthetic and Wellness Practices',
       primaryValueProp:
-        'AI-powered patient retention and revenue growth through cashback rewards and intelligent marketing',
+        'Rewards, AI and 24/7 shopping inside the practice\'s own branded app',
       targetAudience:
-        'Med spa owners chasing patient retention and revenue growth, with $700/mo to put behind it',
-      toneAndVoice: 'Premium and results-driven, speaking the med spa industry\'s own language',
+        'Aesthetic and wellness practices in the US and Canada, most of them single-location',
+      toneAndVoice: 'Sales-focused, built around its "Medcommerce" message',
       keyMessages: [
-        'Beauty Bank cashback drives repeat visits',
-        'AI agents automate patient engagement',
-        'Revenue growth platform, not operations software',
-        'Built for med spas and aesthetics',
-        'Measurable ROI on patient retention',
+        '4,000+ practices in the US and Canada',
+        '2,000,000+ patients',
+        'Your own branded app in 30 days or less',
+        'AI treatment advisors that sell and book',
+        'Memberships, Beauty Bank and Affirm financing',
       ],
     },
 
     daisyAdvantages: [
-      'Complete platform (booking + POS + CRM + marketing) vs marketing-only tool at $700/mo',
-      '24/7 AI receptionist (voice + chat) vs chat-only AI agents',
-      'All-in-one pricing vs $700/mo for growth features alone (still need separate operations software)',
-      'Native Arabic/English vs US/Canada only',
-      'GCC compliance and local payments vs no international support',
-      'Full operations suite included vs requiring separate booking/POS software',
-      'Broader market (beauty + wellness) vs med spa only',
+      'Booking, POS, staff and operations in one platform; RepeatMD says its clients run an existing EMR or practice management system alongside it',
+      'AI receptionist on WhatsApp, Instagram and the booking site; RepeatMD\'s AI advisors work inside its patient app',
+      'Arabic and English, live in all six GCC countries; RepeatMD lists practices in the US and Canada',
+      'Published prices; RepeatMD prices on request',
+      'Serves salons, barbershops and spas as well as clinics',
     ],
 
     daisySwitchingReasons: [
-      '$700/mo for marketing only, still need separate booking and POS software',
-      'Want complete platform instead of paying for multiple tools',
-      'Need voice AI receptionist, not just chat agents',
-      'Expanding to GCC/Middle East, need Arabic support',
-      'Want marketplace for customer discovery, not just retention',
-      'Need booking, POS, and operations in same platform',
+      'You want booking, POS and operations in the same platform as your rewards',
+      'You run a practice in the GCC and need Arabic',
+      'You want an AI receptionist on WhatsApp and Instagram',
+      'You want to see prices before a sales call',
+      'You run a salon or spa rather than a medical practice',
     ],
 
     competitorStrengths: [
-      'Innovative cashback concept (Beauty Bank)',
-      'Strong AI marketing agents (Adonis/Aria)',
-      'Focused on measurable revenue growth',
-      'High G2 ratings (4.7) from niche audience',
-      'Deep med spa industry expertise',
+      'Each practice gets its own branded app, built in 30 days or less',
+      'Adonis and Aria, AI treatment advisors that answer questions, sell treatments and book appointments 24/7',
+      'Mobile rewards, memberships, Beauty Bank pre-saved balances and Affirm patient financing',
+      '4,000+ practices and 2,000,000+ patients in the US and Canada',
+      'MyRepeat patient app rated 4.9 on the App Store from 26,000+ ratings',
+      'SkinDrop sells 3,000+ professional skincare products in the app with no inventory to manage',
     ],
 
     competitorWeaknesses: [
-      'Very expensive ($700/mo) for marketing-only tool',
-      'No booking, POS, or operations features, needs separate software',
-      'US/Canada only, no international support',
-      'No Arabic or GCC presence',
-      'Med spa niche, limited beauty/wellness applicability',
-      'No consumer marketplace for acquisition',
-      'No voice AI receptionist',
-      'Small review base (80 G2 reviews)',
+      'Not a full practice management system: RepeatMD says its clients use an existing EMR or PM system',
+      'Prices on request; RepeatMD says the monthly cost is generally "within the hundreds of dollars range"',
+      'Lists practices in the US and Canada only, with no Arabic interface published',
+      'Built for aesthetic and wellness practices rather than salons and barbershops',
+      'AI advisors work inside its own patient app; no WhatsApp or Instagram channel listed',
+      'No staff scheduling or inventory management listed',
     ],
 
     faq: [
       {
         question: 'How does RepeatMD compare to Daisy?',
         answer:
-          'RepeatMD is a $700/mo marketing tool for med spas that still needs separate booking and POS software behind it. Daisy is one platform covering AI receptionist, booking, POS, marketing and marketplace, with Arabic support and GCC compliance, for less money.',
+          'RepeatMD gives aesthetic and wellness practices their own branded app with rewards, memberships, ecommerce, patient financing and AI treatment advisors. It works alongside the practice\'s existing EMR or practice management system. Daisy is one platform covering an AI receptionist, booking, POS, marketing and cashback, in Arabic and English, and it is live in all six GCC countries.',
       },
       {
         question: 'What is RepeatMD\'s Beauty Bank?',
         answer:
-          'Beauty Bank is RepeatMD\'s cashback loyalty scheme, rewarding patients for coming back. Daisy has a comparable cashback system inside the wider platform, plus a consumer marketplace for acquisition that RepeatMD does not offer.',
+          'Beauty Bank lets patients pre-save money for future treatments at a practice, like a digital wallet. Practices can encourage deposits with bonuses, priority scheduling or cashback rewards, and patients spend the balance when they book. Daisy has a cashback system inside the wider platform, plus a consumer marketplace for acquisition.',
       },
       {
-        question: 'Why does RepeatMD cost $700 a month and are there hidden fees on top?',
+        question: 'How much does RepeatMD cost?',
         answer:
-          'RepeatMD charges roughly $700/mo for marketing and retention, with implementation fees on top. It includes no booking, no POS and no operations, so separate software is a requirement rather than an option. Daisy covers marketing, AI, booking, POS and operations in one platform for a fraction of the combined cost.',
+          'RepeatMD does not publish a price list. Its pricing page says the cost is tailored to each practice and that the monthly cost "generally ... falls within the hundreds of dollars range", with exact figures after a call. Daisy publishes its plans on its pricing page.',
       },
       {
         question: 'Can I move my patient data from RepeatMD to Daisy?',
         answer:
-          'Yes. Daisy\'s onboarding team moves client profiles, loyalty balances and engagement history across. Because RepeatMD holds marketing and retention data rather than full operations, what actually migrates is customer records and campaign data, which keeps it manageable.',
+          'Yes. Daisy\'s onboarding team moves client profiles, loyalty balances and engagement history across. RepeatMD runs alongside an EMR or practice management system, so plan to bring records over from that system too.',
       },
       {
         question: 'Does RepeatMD work for beauty businesses in the Middle East?',
         answer:
-          'No. RepeatMD serves the US and Canadian med spa market only, in English. There is no Arabic interface, no GCC compliance and no local payment methods. Daisy was built for the GCC, with a native Arabic and English interface and local payment methods, live in Kuwait today and expanding across the Gulf.',
+          'RepeatMD lists practices in the US and Canada, and its patient app is listed in English only. It does not publish an Arabic interface or GCC payment methods. Daisy was built for the GCC, with a native Arabic and English interface and local payment methods, and is live in all six GCC countries.',
       },
       {
         question: 'How do RepeatMD\'s AI agents compare to Daisy\'s AI receptionist?',
         answer:
-          'Adonis handles marketing and lead generation, Aria handles patient communication, and both work over chat. Neither takes a voice call, and neither books or takes payment on its own. Daisy\'s AI receptionist covers voice, chat, the full booking flow and payment, 24/7.',
+          'Adonis and Aria are AI treatment advisors in the practice\'s patient app. RepeatMD says they answer questions 24/7, recommend and sell treatments, and book appointments. Daisy\'s AI receptionist answers clients on WhatsApp, Instagram and the booking site, in Arabic and English, and takes payment in the booking flow.',
       },
       {
-        question: 'Does RepeatMD have a mobile app for managing my business?',
+        question: 'Does RepeatMD have a mobile app?',
         answer:
-          'Mobile presence is thin, with 80 G2 reviews and no meaningful app store ratings. As a marketing tool rather than a management platform, the mobile experience is about watching campaigns rather than running a day. Daisy\'s mobile app covers the whole business: bookings, POS, staff and the AI features.',
+          'Yes. RepeatMD builds each practice a branded patient app with rewards, AI advisors and 24/7 shopping, and its MyRepeat patient app is rated 4.9 on the App Store from 26,000+ ratings. Its dashboards track sales and memberships. Daisy\'s mobile app covers the whole business: bookings, POS, staff and the AI features.',
       },
       {
         question: 'Can RepeatMD handle multiple clinic locations?',
         answer:
-          'It can run marketing and retention campaigns across multi-location med spas. Without booking, POS or operations, each location still needs separate software to get through the day. Daisy manages multi-branch centrally, with booking, staff scheduling, reporting and marketing across every location in one platform.',
+          'Yes. RepeatMD says its pricing suits practices with one location or 100, and it runs alongside each practice\'s existing EMR or practice management system. Daisy manages multiple branches centrally, with booking, staff scheduling, reporting and marketing across every location in one platform.',
       },
       {
         question: 'What integrations does RepeatMD offer and do I need other software too?',
         answer:
-          'It connects to some EMR and EHR systems and to marketing tools, and you will still need separate booking software, a POS and operations tools beside it. That means several vendors, several logins and data sitting in separate places. Daisy removes the fragmentation by holding booking, POS, marketing, AI and operations together.',
+          'RepeatMD says all its clients use an existing EMR or practice management system, and it offers options to embed links to EMRs and other tools. Patient financing runs through Affirm. Daisy holds booking, POS, marketing, AI and operations together in one platform.',
       },
       {
         question: 'Is RepeatMD suitable for regular beauty salons or just med spas?',
         answer:
-          'RepeatMD is built for med spas and aesthetic practices, and the pricing, features and AI agents all reflect that niche. A regular salon, a barbershop or a wellness business would find it expensive and badly fitted. Daisy serves every beauty and wellness vertical the same, from hair salons to med spas to nail studios.',
+          'RepeatMD is built for medical spas, cosmetic dermatology, plastic surgery, wellness, cosmetic dentistry and chiropractic practices. Daisy serves every beauty and wellness vertical the same, from hair salons to med spas to nail studios.',
       },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
     notes:
-      'The cashback concept is interesting and validates Daisy\'s approach. At $700/mo for marketing alone, with no operations, the value proposition looks weak beside an all-in-one platform, and the med spa niche limits how far it reaches.',
+      'Patient rewards and ecommerce app for US and Canadian aesthetic practices that runs beside the practice\'s EMR. Quote-based pricing. Its AI advisors book appointments (V3, October 2025). Its Beauty Bank is a pre-save wallet, not a cashback scheme.',
   },
 
   // ---------------------------------------------------------------------------
@@ -1228,59 +1264,102 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     name: 'Planity',
     website: 'https://www.planity.com',
     tier: 2,
+    // info.planity.com and info.planity.com/tarifs, read 2026-10-09: "60 000
+    // établissements", "15M d'utilisateurs", "Sans engagement ni commission".
+    // Planity press release, 20 Feb 2024: "plus de 10 millions de rendez-vous
+    // qui sont pris chaque mois".
     description:
-      'France\'s #1 beauty booking platform, handling 10M+ monthly bookings. The commission-free SaaS model is what sets it apart from marketplace rivals, and a $50M+ Series C is funding expansion across Europe.',
+      'French beauty and wellness booking platform and salon software, used by 60,000 businesses in France, Belgium and Germany. Bookings through planity.com carry no commission; businesses pay a subscription that is priced on request. Planity reported more than 10 million bookings a month in February 2024.',
+    // Planity press release, 20 Feb 2024: "Créé en 2017".
     founded: '2017',
+    // Legal notice on info.planity.com: 5-7 rue Saint-Fiacre, 75002 Paris.
     headquarters: 'Paris, France',
-    employeeCount: '200-300',
-    funding: '$50M+ (Series C)',
+    // Planity press release, 20 Feb 2024: "lève 45 millions d'euros en série
+    // C" and "a levé au total 95 millions d'euros depuis sa création".
+    funding: '€95M in total, including a €45M Series C (Feb 2024)',
 
+    // Re-assessed 2026-10-09 against info.planity.com: NF525-certified till,
+    // card terminal and Tap to Pay; stock management with low-stock alerts;
+    // custom loyalty program and SMS campaigns; custom website with domain name
+    // and a booking module for an existing site.
     features: {
       onlineBooking: 3,
       posAndPayments: 2,
       clientManagement: 2,
       staffManagement: 2,
-      marketingAndCrm: 1,
-      inventoryManagement: 1,
+      marketingAndCrm: 2,
+      inventoryManagement: 2,
       reportingAndAnalytics: 2,
       marketplaceAndDiscovery: 3,
-      aiCapabilities: 0,
-      brandingAndWhiteLabel: 0,
+      // AI phone assistant launched July 2026 (Maddyness); AI-powered blog in
+      // the custom website offer.
+      aiCapabilities: 1,
+      brandingAndWhiteLabel: 2,
     },
 
+    // info.planity.com/tarifs, read 2026-10-09. Three plans, no prices shown.
+    // FAQ: "Planity propose des abonnements sans engagement à des tarifs fixes
+    // et transparents : sans commission sur vos rendez-vous, ni frais
+    // d'installation ou de maintenance. Prenez contact avec l'un de nos
+    // conseillers". The old ~€59/mo figure had no source.
     pricing: {
       hasFreePlan: false,
-      startingPrice: '~€59/mo',
-      startingPriceNumeric: 64,
+      startingPrice: 'Pricing on request',
       tiers: [
         {
-          name: 'Standard',
-          price: '~€59/mo',
-          priceNumeric: 64,
-          billingCycle: 'monthly',
+          name: 'Agenda',
+          price: 'Pricing on request',
           features: [
-            'Online booking',
-            'Calendar management',
-            'Marketplace listing (no commission)',
-            'Client management',
-            'Basic reporting',
+            'Personalized page on planity.com',
+            'Online agenda',
+            '300 reminder SMS per month',
+            'Client file management',
+            'Deposits and prepayment',
+            'Booking button for social networks',
+          ],
+        },
+        {
+          name: 'Agenda + Caisse',
+          price: 'Pricing on request',
+          features: [
+            'Everything in Agenda',
+            'NF525-certified till software',
+            'Product stock management',
+            'Online sale of gift cards and services',
+            'Accounting data export',
+          ],
+        },
+        {
+          name: 'Agenda + Caisse + TPE',
+          price: 'Pricing on request',
+          features: [
+            'Everything in Agenda + Caisse',
+            'Card terminal linked to the software',
+            'Suggested tips',
+            'Daily transfers of takings',
           ],
         },
       ],
+      // info.planity.com/solution/marketing-etablissement, read 2026-10-09:
+      // "0,07€ HT par SMS".
       hiddenCosts: [
-        'Limited transparency on full pricing',
-        'Advanced features may require higher plans',
+        'SMS marketing campaigns: €0.07 excl. VAT per SMS',
       ],
       pricingModel: 'flat',
-      lastVerified: '2026-03-13',
+      pricingPageUrl: 'https://info.planity.com/tarifs',
+      lastVerified: '2026-10-09',
     },
 
+    // Read 2026-10-09. App Store (France), "Planity": 4.9 from 773,063
+    // ratings. Google Play, "Planity" (com.planitypublic): 4.8, 403K reviews.
     reviews: [
-      { platform: 'App Store', rating: 4.8, reviewCount: 180000 },
-      { platform: 'Google Play', rating: 4.5, reviewCount: 50000 },
+      { platform: 'App Store', rating: 4.9, reviewCount: 773063 },
+      { platform: 'Google Play', rating: 4.8, reviewCount: 403000 },
     ],
 
     gccPresence: {
+      // App Store languages: French and German (consumer app); English, French
+      // and German (Planity Pro app).
       hasArabicUI: false,
       arabicQuality: 'none',
       gccCountries: [],
@@ -1289,123 +1368,131 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       localSupport: false,
     },
 
+    // Maddyness, 8 Jul 2026 (Maxence Fabrion): Planity bets on AI "avec le
+    // lancement d'un assistant téléphonique intelligent capable de répondre
+    // aux appels entrants, de proposer des créneaux disponibles, de répondre
+    // aux demandes courantes et d'intégrer automatiquement les réservations
+    // dans l'agenda des professionnels, y compris en dehors des horaires
+    // d'ouverture". Advanced analytics are "dans les tuyaux" (in the
+    // pipeline), so hasAiAnalytics stays false. Planity's own newsroom
+    // (newsroom.planity.com) lists the article as press coverage dated
+    // 08/07/2026; the product pages on info.planity.com do not describe the
+    // assistant yet (checked 2026-10-09).
     aiCapabilities: {
-      hasAiReceptionist: false,
+      hasAiReceptionist: true,
       hasAiChatbot: false,
       hasSmartScheduling: false,
       hasAiMarketing: false,
       hasAiAnalytics: false,
       hasAiPricing: false,
-      aiDescription: 'No AI. Automated booking confirmations and reminders are the extent of it.',
+      aiDescription:
+        'Planity launched an AI phone assistant that answers incoming calls, offers available slots, handles common requests and adds bookings to the agenda, including outside opening hours (Maddyness, 8 July 2026). Its custom website offer includes an AI-powered blog. Planity said advanced analytics with personalized recommendations were in development.',
     },
 
     targetMarket:
-      'French beauty salons and hairdressers, now moving into other European markets. The commission-free model lands well with businesses tired of marketplace fees.',
+      'Hair salons, barbershops, beauty institutes, nail bars, spas and wellness practitioners in France, Belgium and Germany.',
 
     messaging: {
-      tagline: 'La plateforme de réservation beauté #1 en France',
+      tagline: 'La plateforme n°1 pour gérer votre salon ou institut',
       primaryValueProp:
-        'France\'s largest beauty marketplace with zero commission. SaaS-only pricing',
+        'Commission-free booking platform and salon software on a fixed subscription',
       targetAudience:
-        'French hairdressers and beauty professionals who want the marketplace exposure without paying commission for it',
-      toneAndVoice: 'Local and professional, built on an anti-commission message',
+        'Beauty and wellness professionals in France, Belgium and Germany who want marketplace exposure without paying commission for it',
+      toneAndVoice: 'Local and professional, built on a no-commission message',
       keyMessages: [
-        '10M+ monthly bookings',
-        'Zero commission, flat monthly fee',
-        '#1 in France',
-        'Largest French beauty marketplace',
-        '€50M+ funded for growth',
+        '60,000 businesses and 15 million users',
+        'No commission and no commitment',
+        'NF525-certified till software',
+        '10 million+ bookings a month (February 2024)',
+        'France, Belgium and Germany',
       ],
     },
 
     daisyAdvantages: [
-      '24/7 AI receptionist vs no AI capabilities',
-      'Native Arabic/English for GCC vs French-focused',
-      'AI-powered marketing and analytics vs basic tools',
-      'Cashback customer rewards vs no loyalty program',
-      'White-label brand control vs Planity-branded marketplace',
-      'Full operations suite (POS, inventory, staffing) vs basic management',
-      'GCC compliance and local payments vs European-only',
+      'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English; Planity\'s AI assistant answers phone calls',
+      'Arabic and English, live in all six GCC countries; Planity operates in France, Belgium and Germany',
+      'Cashback rewards for customers; Planity offers loyalty cards and discounts',
+      'Published prices; Planity prices on request',
+      'GCC compliance and local payment methods',
     ],
 
     daisySwitchingReasons: [
-      'Expanding beyond France/Europe to GCC market',
-      'Need AI capabilities (receptionist, chatbot, marketing)',
-      'Want full operations suite beyond basic booking',
-      'Need Arabic language support',
-      'Want cashback rewards for customer retention',
-      'Need deeper POS and inventory management',
+      'You operate in the GCC',
+      'You need an Arabic interface',
+      'You want an AI receptionist on WhatsApp and Instagram',
+      'You want cashback rewards for customer retention',
+      'You want to see prices before talking to sales',
     ],
 
     competitorStrengths: [
-      'Largest beauty marketplace in France (10M+ monthly bookings)',
-      'Commission-free model, flat SaaS pricing',
-      'Very high consumer adoption and app ratings',
-      'Strong brand in French market',
-      'Well-funded ($50M+ Series C) for European expansion',
+      'Large consumer marketplace: 15 million users and 60,000 businesses',
+      'No commission on bookings, no setup or maintenance fees and no commitment',
+      'More than 10 million bookings a month (February 2024) and 500 million+ since launch',
+      'NF525-certified till, its own card terminal and Tap to Pay',
+      'Consumer app rated 4.9 on the App Store and 4.8 on Google Play',
+      'AI phone assistant that answers calls and books appointments, launched July 2026',
     ],
 
     competitorWeaknesses: [
-      'No AI capabilities at all',
-      'France-focused, limited international presence',
-      'No Arabic or multi-language GCC support',
-      'Basic business management features',
-      'No cashback or loyalty programs',
-      'No branding control',
-      'Limited marketing tools',
+      'Operates in France, Belgium and Germany',
+      'No Arabic interface published',
+      'Prices on request',
+      'SMS marketing campaigns cost €0.07 excl. VAT per SMS',
+      'Loyalty program requires the till software',
+      'No WhatsApp or Instagram AI listed',
     ],
 
     faq: [
       {
         question: 'How does Planity compare to Daisy?',
         answer:
-          'Planity dominates France on 10M+ monthly bookings and commission-free pricing, and it stops at Europe, with no AI. Daisy is a complete AI-powered growth platform with Arabic and English support, cashback rewards and GCC compliance, built for a wider audience.',
+          'Planity leads beauty booking in France, with 60,000 businesses in France, Belgium and Germany and no commission on bookings, and it launched an AI phone assistant in July 2026. Daisy is built for the GCC. Its AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English, it adds cashback rewards, and it is live in all six GCC countries.',
       },
       {
         question: 'Does Planity charge commission on bookings like other marketplaces?',
         answer:
-          'No, and that is the whole pitch. The commission-free SaaS model runs at roughly 59 euros per month, a flat subscription with nothing taken per booking. Daisy also takes no per-booking commission, and adds AI, cashback and full business management on top.',
+          'No. Planity says its subscriptions carry no commission on bookings and no setup or maintenance fees, with no commitment. It does not publish subscription prices; a Planity adviser recommends a plan. Daisy also takes no per-booking commission, and adds AI, cashback and full business management on top.',
       },
       {
         question: 'Does Planity work outside of France or support Arabic?',
         answer:
-          'Planity is expanding across Europe and remains France-centred, with no Arabic, no GCC compliance and no Middle Eastern payment methods. Daisy works across markets, with native Arabic and English, coverage of all 6 GCC countries and local payment integrations.',
+          'Planity operates in France, Belgium and Germany, where it counts 10,000 businesses outside France (Maddyness, July 2026). Its apps are listed in French, German and English, and it publishes no Arabic interface. Daisy has native Arabic and English, is live in all six GCC countries and integrates local payment methods.',
       },
       {
         question: 'Does Planity have any AI features?',
         answer:
-          'No. There is no AI at all, only automated booking confirmations and reminders. No receptionist, no chatbot, no smart scheduling, no AI marketing. Daisy runs a full AI ecosystem covering calls, bookings, payments, marketing and analytics on its own.',
+          'Yes. In July 2026 Planity launched an AI phone assistant that answers incoming calls, offers available slots, handles common requests and adds bookings to the agenda, including outside opening hours, as reported by Maddyness. Its custom website offer includes an AI-powered blog. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site rather than the phone, in Arabic and English, alongside AI marketing and analytics.',
       },
       {
         question: 'How difficult is it to migrate from Planity to Daisy?',
         answer:
-          'Planity concentrates on booking and basic client management, so there is less to move and the migration is straightforward. Daisy\'s onboarding team transfers client databases, appointment history and business profiles. It matters most for a business moving from European into Middle Eastern markets.',
+          'Daisy\'s onboarding team transfers client databases, appointment history and business profiles. It matters most for a business moving from European into Middle Eastern markets.',
       },
       {
         question: 'How good is Planity\'s mobile app compared to Daisy?',
         answer:
-          'The app rates 4.8 on the App Store across 180,000+ reviews, which its enormous French consumer base explains. The business management side is basic. Daisy\'s app carries both the consumer marketplace and a full business management suite, with AI, POS, inventory and marketing.',
+          'Planity\'s consumer app is rated 4.9 on the App Store in France from 773,000+ ratings and 4.8 on Google Play from 403,000+ reviews, and businesses run their salon from the Planity Pro app. Daisy\'s app carries both the consumer marketplace and a full business management suite, with AI, POS, inventory and marketing.',
       },
       {
         question: 'Can Planity support a multi-location beauty business?',
         answer:
-          'You can list multiple locations on the marketplace, though the management tools behind that are basic next to platforms built for it. Daisy provides centralized multi-branch dashboards, staff scheduling across locations, one inventory and consolidated reporting, aimed at a growing chain.',
+          'Planity lists management tools for each establishment: daily revenue, occupancy by day and by team member, monthly statistics and stock control. Daisy provides centralized multi-branch dashboards, staff scheduling across locations, one inventory and consolidated reporting, aimed at a growing chain.',
       },
       {
         question: 'What customer support does Planity offer and is it available in English?',
         answer:
-          'Support is mostly in French, which follows from where Planity sells. English is limited and Arabic does not exist. Daisy supports customers in Arabic and English with dedicated onboarding, which matters in the GCC and anywhere else running in more than one language.',
+          'Planity says it offers personalized support six days a week, and its business site is in French and German. Daisy supports customers in Arabic and English with dedicated onboarding, which matters in the GCC and anywhere else running in more than one language.',
       },
       {
         question: 'Does Planity integrate with other business tools and payment systems?',
         answer:
-          'It connects to European payment systems and basic salon management tools, all built around the French market. GCC payment gateways such as mada, Benefit and KNET are not supported. Daisy connects to local GCC payment methods, Google Calendar and marketing tools, and includes a marketplace, which gives an international business considerably more to work with.',
+          'Planity connects its booking platform to its NF525-certified till, its own card terminal and Tap to Pay, a custom website or a booking module for an existing site, and accounting exports, all built for France, Belgium and Germany. Daisy connects to local GCC payment methods, Google Calendar and marketing tools, and includes a marketplace.',
       },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
     notes:
-      'The market leader in France, at genuine scale with 10M+ bookings/mo, and the commission-free model is compelling. With no AI, no Arabic and no GCC presence, it is not a threat in Daisy\'s primary market. Still worth watching for what it says about marketplace strategy.',
+      'Market leader in France, also in Belgium and Germany, with a commission-free subscription model. Reported profitability and an AI phone assistant in July 2026 (Maddyness). No Arabic and no GCC presence published.',
   },
 };
 
