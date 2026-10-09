@@ -70,17 +70,12 @@ const EXACT: Record<string, string> = {
     'ميزات الذكاء الاصطناعي في باقات Premier وما فوقها فقط ($295+ شهرياً)',
   'AI features only in higher tier': 'ميزات الذكاء الاصطناعي في الباقة الأعلى فقط',
   'Add-on feature costs': 'تكاليف الميزات الإضافية',
-  'Advanced AI features may be in higher tiers': 'قد تكون ميزات الذكاء الاصطناعي المتقدمة في باقات أعلى',
   'Advanced features may require higher plans': 'قد تتطلب الميزات المتقدمة باقات أعلى',
   'Basic support': 'دعم أساسي',
-  'Contract lock-in with early termination fees': 'التزام تعاقدي مع رسوم إنهاء مبكر',
-  'Custom pricing requires sales call, no transparency':
-    'التسعير المخصص يتطلب اتصالاً بفريق المبيعات، دون شفافية',
   'Features are add-on modules, costs accumulate': 'الميزات وحدات إضافية، وتتراكم التكاليف',
   'Forms add-on': 'إضافة النماذج',
   'Hardware costs': 'تكاليف الأجهزة',
   'Hardware costs for POS': 'تكاليف أجهزة نقاط البيع',
-  'Implementation and onboarding fees': 'رسوم التطبيق والإعداد',
   'Implementation fees': 'رسوم التطبيق',
   'Limited advanced features': 'ميزات متقدمة محدودة',
   'Limited beauty-specific features': 'ميزات محدودة خاصة بقطاع التجميل',
@@ -92,30 +87,24 @@ const EXACT: Record<string, string> = {
     'ميزات تشغيل محدودة، وقد تحتاج إلى برنامج منفصل',
   'Limited transparency on full pricing': 'شفافية محدودة في التسعير الكامل',
   'Marketplace commission on bookings': 'عمولة السوق على الحجوزات',
-  'Messenger[ai] AI front desk is separate add-on (~$199/mo)':
-    'مكتب الاستقبال الذكي Messenger[ai] إضافة منفصلة (~$199 شهرياً)',
   'Opaque higher-tier pricing': 'تسعير غير واضح للباقات الأعلى',
   'Opaque pricing': 'تسعير غير واضح',
   'Opaque pricing, requires sales contact': 'تسعير غير واضح، يتطلب التواصل مع المبيعات',
   'Payment processing': 'معالجة المدفوعات',
   'Payment processing fees': 'رسوم معالجة المدفوعات',
-  'Payment processing fees not included': 'رسوم معالجة المدفوعات غير مشمولة',
   'Payment processing fees on all transactions': 'رسوم معالجة المدفوعات على جميع المعاملات',
   'Per-barber pricing': 'تسعير لكل حلاق',
-  'Per-location pricing for multi-site businesses': 'تسعير لكل موقع للأعمال متعددة الفروع',
   'Per-provider pricing scales with team size': 'التسعير لكل مقدّم خدمة يرتفع مع حجم الفريق',
   'Per-staff costs scale quickly': 'تكاليف كل موظف ترتفع بسرعة',
   'Per-user pricing scales': 'التسعير لكل مستخدم يرتفع مع النمو',
   'Per-user pricing scales with team': 'التسعير لكل مستخدم يرتفع مع حجم الفريق',
   'Premium marketplace placement costs': 'تكاليف الظهور المميز في السوق',
-  'Premium marketplace placement costs extra': 'الظهور المميز في السوق بتكلفة إضافية',
   'Premium placement fees': 'رسوم الظهور المميز',
   'Premium pricing': 'تسعير مرتفع',
   'Premium pricing for premium market': 'تسعير مرتفع لسوق الفئة العليا',
   'SMS costs': 'تكاليف الرسائل النصية',
   'SMS costs extra': 'الرسائل النصية بتكلفة إضافية',
   'SMS/messaging costs': 'تكاليف الرسائل النصية والمراسلة',
-  'Setup and onboarding fees for higher tiers': 'رسوم الإعداد والتهيئة للباقات الأعلى',
   'Team features only in highest tier': 'ميزات الفريق في الباقة الأعلى فقط',
   'Text marketing add-on costs': 'تكاليف إضافة التسويق بالرسائل النصية',
   'Transaction fees on all Square payments': 'رسوم معاملات على جميع مدفوعات Square',
@@ -124,6 +113,23 @@ const EXACT: Record<string, string> = {
   'Very high commission rates': 'نسب عمولة مرتفعة جداً',
   'Very high monthly cost for the feature set': 'تكلفة شهرية مرتفعة جداً مقارنة بالميزات',
   'Website builder add-on': 'إضافة منشئ المواقع',
+
+  // Mindbody and Zenoti, as each publishes them (read 2026-10-09).
+  'Pricing on request': 'السعر عند الطلب',
+  'From $79/mo per location (US)': 'من $79 شهرياً لكل موقع (الولايات المتحدة)',
+  'Processing rate plus a fixed $0.10 to $0.30 per transaction with Mindbody Payments (North America and Asia)':
+    'نسبة معالجة يُضاف إليها رسم ثابت من $0.10 إلى $0.30 لكل معاملة عبر Mindbody Payments (أمريكا الشمالية وآسيا)',
+  "20% of a new client's first purchase through the Mindbody app, capped at $30":
+    '20% من أول عملية شراء لعميل جديد يصل عبر تطبيق Mindbody، بحد أقصى $30',
+  "Premium add-ons, such as the branded app, AI Concierge and email and text marketing, when your plan doesn't include them":
+    'إضافات مدفوعة مثل التطبيق الذي يحمل علامتك وAI Concierge والتسويق بالبريد الإلكتروني والرسائل النصية، إذا لم تكن ضمن باقتك',
+  'Data transfer service when you switch to Mindbody (fees may apply)':
+    'خدمة نقل البيانات عند الانتقال إلى Mindbody (قد تُفرض عليها رسوم)',
+  'Premium implementation, custom data conversion and Technical Account Management, priced separately':
+    'التطبيق المتقدم وتحويل البيانات المخصص وإدارة الحساب التقنية، وتُسعَّر بشكل منفصل',
+  'Voice, SMS and messaging usage, billed by consumption with optional base packs':
+    'استخدام المكالمات الصوتية والرسائل النصية والمراسلة، ويُحتسب حسب الاستهلاك مع باقات أساسية اختيارية',
+  'AI agents need the AI Plus package': 'وكلاء الذكاء الاصطناعي يتطلبون باقة AI Plus',
 };
 
 /**

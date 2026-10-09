@@ -915,12 +915,15 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     name: 'Mindbody',
     website: 'https://www.mindbodyonline.com',
     tier: 1,
+    // Sources, read 2026-10-09: mindbodyonline.com/company ("founded in San Luis
+    // Obispo"), mindbodyonline.com/business/ai-concierge ("Playlist, Mindbody's
+    // parent company"), playlist.com (brands: Mindbody, Booker, ClassPass, EGYM),
+    // Playlist/EGYM merger close announced 31 Mar 2026 (insider.fitt.co press release).
     description:
-      'The veteran of wellness software, established in 2001, with the largest consumer marketplace in the category. Vista Equity Partners has owned it since a $1.9B acquisition in 2019. It serves fitness, wellness and beauty businesses worldwide.',
+      'Wellness business software founded in 2001 in San Luis Obispo, California, with the Mindbody consumer app as its marketplace. It is part of Playlist, which also owns ClassPass and Booker and merged with EGYM in March 2026. Mindbody serves fitness, wellness and beauty businesses.',
     founded: '2001',
     headquarters: 'San Luis Obispo, CA, USA',
-    employeeCount: '2,000+',
-    funding: 'PE-backed (Vista Equity, $1.9B acquisition)',
+    funding: 'Private; part of Playlist, whose EGYM merger (closed 31 Mar 2026) came with $785M in new equity',
 
     features: {
       onlineBooking: 3,
@@ -931,107 +934,126 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       inventoryManagement: 2,
       reportingAndAnalytics: 3,
       marketplaceAndDiscovery: 3,
-      aiCapabilities: 1,
-      brandingAndWhiteLabel: 0,
+      // AI Concierge (books by SMS and web chat), AI Insights on every plan,
+      // AI content tools in marketing: mindbodyonline.com, read 2026-10-09.
+      aiCapabilities: 2,
+      // Branded booking widgets and a customized website on every plan, and a
+      // branded app add-on on Accelerate and Ultimate (Mindbody pricing page).
+      brandingAndWhiteLabel: 2,
     },
 
+    // Mindbody pricing page (mindbodyonline.com/business/pricing), read
+    // 2026-10-09: every plan shows "Let's talk"; FAQ: "Starting at $79
+    // USD/month (North America and Asia)". Mindbody blog "New Mindbody Pricing
+    // in the US" (last updated 2 Oct 2026): "In the U.S., Mindbody plans begin
+    // at $79 USD per month, per location" and "Accelerate and Ultimate are
+    // quote-based".
     pricing: {
       hasFreePlan: false,
-      startingPrice: '$139/mo',
-      startingPriceNumeric: 139,
+      startingPrice: 'From $79/mo per location (US)',
+      startingPriceNumeric: 79,
       tiers: [
         {
           name: 'Starter',
-          price: '$139/mo',
-          priceNumeric: 139,
-          billingCycle: 'monthly',
+          price: '$79/mo per location',
+          priceNumeric: 79,
           features: [
-            'Schedule & booking',
-            'Client management',
+            'Business management tools',
+            'Integrated payments',
+            'Branded website booking widgets',
+            'A website for your business',
+            'Listing on the Mindbody app',
             'Basic reporting',
-            'Mobile app',
-            'Marketplace listing',
           ],
         },
         {
           name: 'Accelerate',
-          price: '$279/mo',
-          priceNumeric: 279,
-          billingCycle: 'monthly',
+          price: 'Pricing on request',
+          billingCycle: 'custom',
           features: [
             'Everything in Starter',
-            'Advanced marketing',
-            'Automations',
-            'AI front desk (add-on)',
-            'Reviews management',
+            'Analytics and reporting',
+            'Room and resource management',
+            'Client Pick-a-Spot',
+            'Promo codes',
+            'AI Concierge as an add-on',
           ],
         },
         {
           name: 'Ultimate',
-          price: '$499/mo',
-          priceNumeric: 499,
-          billingCycle: 'monthly',
+          price: 'Pricing on request',
+          billingCycle: 'custom',
           features: [
             'Everything in Accelerate',
-            'Advanced reporting & dashboards',
-            'Dedicated account manager',
-            'Priority support',
+            'Automated email and text campaigns',
+            'AI Concierge (24/7 AI front desk)',
+            'Built-in sales pipeline',
+            'Next-level analytics',
           ],
         },
         {
-          name: 'Ultimate Plus',
-          price: '$699/mo',
-          priceNumeric: 699,
-          billingCycle: 'monthly',
-          features: [
-            'Everything in Ultimate',
-            'Multiple locations',
-            'Custom integrations',
-            'Enterprise features',
-          ],
+          name: 'Enterprise',
+          price: 'Pricing on request',
+          billingCycle: 'custom',
+          features: ['Customized plan for multi-location and franchise businesses'],
         },
       ],
+      // Pricing page FAQ: "a payment processing rate plus a fixed fee of $0.10
+      // to $0.30 (in North America and Asia) will apply per transaction".
+      transactionFees:
+        'Processing rate plus a fixed $0.10 to $0.30 per transaction with Mindbody Payments (North America and Asia)',
+      // Pricing page FAQ: "The fee is 20%, capped at $30 USD ... and only on
+      // the first purchase for someone new to your business."
+      commissionOnMarketplace:
+        '20% of a new client\'s first purchase through the Mindbody app, capped at $30',
+      // Pricing page FAQ and US pricing blog, read 2026-10-09. Mindbody also
+      // says: "There's no onboarding fee on any Mindbody plan."
       hiddenCosts: [
-        'Messenger[ai] AI front desk is separate add-on (~$199/mo)',
-        'Payment processing fees not included',
-        'Premium marketplace placement costs extra',
-        'Contract lock-in with early termination fees',
-        'Setup and onboarding fees for higher tiers',
+        'Premium add-ons, such as the branded app, AI Concierge and email and text marketing, when your plan doesn\'t include them',
+        'Data transfer service when you switch to Mindbody (fees may apply)',
+        'Premium implementation, custom data conversion and Technical Account Management, priced separately',
       ],
-      pricingModel: 'flat',
-      pricingPageUrl: 'https://www.mindbodyonline.com/pricing',
-      lastVerified: '2026-03-13',
+      pricingModel: 'per-location',
+      pricingPageUrl: 'https://www.mindbodyonline.com/business/pricing',
+      lastVerified: '2026-10-09',
     },
 
+    // Capterra: Wayback snapshot of capterra.com/p/40229/MINDBODY/, 21 Sep 2026.
+    // App Store: US listings via the iTunes lookup API, 2026-10-09.
     reviews: [
-      { platform: 'Capterra', rating: 4.0, reviewCount: 2961 },
-      { platform: 'G2', rating: 3.6, reviewCount: 750 },
-      { platform: 'App Store', rating: 4.8, reviewCount: 400000 },
-      { platform: 'Google Play', rating: 4.2, reviewCount: 85000 },
+      { platform: 'Capterra', rating: 4.0, reviewCount: 2995 },
+      { platform: 'App Store (Mindbody Business)', rating: 4.6, reviewCount: 23535 },
+      { platform: 'App Store (Mindbody consumer app)', rating: 4.9, reviewCount: 272398 },
     ],
 
+    // Mindbody infographic "Fully Integrated Payments - Better Client
+    // Experience in the UAE" (en-gb, updated 7 Oct 2025): "Mindbody Payments is
+    // here in the UAE!" Mindbody Business on the App Store lists EN, FR, DE,
+    // IT, PT, ES (read 2026-10-09); no Arabic found.
     gccPresence: {
       hasArabicUI: false,
       arabicQuality: 'none',
-      gccCountries: [],
+      gccCountries: ['UAE'],
       localCompliance: false,
-      localPaymentMethods: false,
+      localPaymentMethods: true,
       localSupport: false,
     },
 
+    // mindbodyonline.com/business/ai-concierge, /business/reporting,
+    // /business/marketing and /business/pricing, read 2026-10-09.
     aiCapabilities: {
-      hasAiReceptionist: false,
-      hasAiChatbot: false,
+      hasAiReceptionist: true,
+      hasAiChatbot: true,
       hasSmartScheduling: false,
-      hasAiMarketing: false,
-      hasAiAnalytics: false,
+      hasAiMarketing: true,
+      hasAiAnalytics: true,
       hasAiPricing: false,
       aiDescription:
-        'Mindbody lists an AI Concierge that turns missed calls into bookings, alongside the Messenger[ai] front desk which is a paid add-on. Both sit on the phone and messaging front desk rather than across the platform: no smart scheduling and no AI analytics.',
+        'AI Concierge answers client questions and books, reschedules and cancels appointments by SMS and web chat, 24/7, and follows up missed calls by text. It comes with the Ultimate plan and is an add-on on Accelerate. Mindbody also markets Messenger[ai] as an AI front desk. AI Insights (weekly summaries, Clients at Risk, Big Spenders) is on every plan, and the marketing tools include AI content creation.',
     },
 
     targetMarket:
-      'Medium and large fitness studios, wellness centers and beauty businesses in North America. The centre of gravity is fitness, meaning yoga, pilates and gyms, rather than beauty. Enterprise-minded, with multi-location support.',
+      'Fitness, wellness and beauty businesses, from small studios to multi-location and franchise brands. Many features are built around class-based fitness, such as class schedules, memberships and Pick-a-Spot, and Mindbody also sells to salons and spas.',
 
     contentAndSeo: {
       estimatedMonthlyTraffic: '8M+',
@@ -1046,44 +1068,39 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       ],
       contentTypes: ['blog', 'research reports', 'webinars', 'case studies', 'industry trends'],
       seoStrengths: [
-        'Highest domain authority in category',
         'Extensive content library',
         'Strong marketplace SEO',
         'Industry research reports',
       ],
-      seoWeaknesses: [
-        'Content skews fitness over beauty',
-        'Legacy URL structures',
-        'Slow site performance',
-      ],
+      seoWeaknesses: ['Content mostly covers fitness rather than beauty'],
     },
 
     messaging: {
       tagline: 'The wellness technology platform',
       primaryValueProp:
-        'The industry\'s largest consumer marketplace combined with comprehensive business management for wellness businesses',
+        'A large consumer marketplace combined with business management for fitness, wellness and beauty businesses',
       targetAudience:
-        'Established fitness studios, wellness centers and beauty businesses that want marketplace exposure and enterprise-grade tools',
-      toneAndVoice: 'Professional and enterprise-facing, positioned as the industry leader',
+        'Fitness studios, wellness centers and beauty businesses that want marketplace exposure and multi-location tools',
+      toneAndVoice: 'Professional, positioned as the industry leader',
       keyMessages: [
-        'World\'s largest wellness marketplace',
-        '3M+ active consumers',
-        'Trusted by industry leaders',
-        'Comprehensive business management',
-        '20+ years of industry experience',
+        'The industry\'s largest fitness and wellness marketplace (Mindbody\'s claim)',
+        '3M+ active users on the Mindbody app',
+        '600M+ classes and appointments booked last year',
+        'Starting at $79 USD/month in North America and Asia',
+        '20+ years in wellness software',
       ],
     },
 
     conversionStrategy: {
       primaryCta: 'Get a demo',
-      leadMagnets: ['Industry trend reports', 'ROI calculator', 'Webinars'],
+      leadMagnets: ['Industry trend reports', 'Webinars'],
       freeTrialOffered: false,
       demoOffered: true,
       socialProof: [
-        '3M+ active consumers',
+        '3M+ active app users',
+        '40k+ businesses',
         '20+ years in industry',
-        'Industry research reports',
-        'Enterprise client logos',
+        'Customer stories',
       ],
       conversionTactics: [
         'Demo-first sales process',
@@ -1093,31 +1110,33 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       ],
     },
 
+    // Pricing page FAQ, read 2026-10-09: "Your Mindbody contract depends on the
+    // specific plan and billing terms you signed up for, including any
+    // promotions applied" and cancellation "may require advance notice".
     switchingAnalysis: {
       dataExport: true,
       contractLockIn: true,
       migrationSupport: true,
-      switchingDifficulty: 'hard',
+      switchingDifficulty: 'moderate',
       lockInTactics: [
-        'Annual contracts with early termination fees',
-        'Deep data integration makes switching complex',
+        'Contract terms depend on the plan, billing terms and any promotion applied',
+        'Cancellation may require advance notice under the agreement',
         'Marketplace listing and consumer relationships',
-        'Enterprise integrations and API dependencies',
-        'Staff training investment',
       ],
       switchingIncentives: [
-        'Dedicated migration team for enterprise',
-        'Data export tools available',
+        'Data transfer service for new customers (fees may apply)',
+        'Free one-on-one onboarding',
       ],
     },
 
     growthVsOperations: {
       growthScore: 5,
       growthFeatures: [
-        'Largest consumer marketplace (3M+)',
-        'Marketing automation (higher tiers)',
-        'Review management',
-        'Social media integration',
+        'Mindbody app marketplace (3M+ active users)',
+        'Email and text campaigns (Ultimate)',
+        'AI Concierge (Ultimate; add-on on Accelerate)',
+        'ClassPass and Reserve with Google integrations',
+        'Intro offers and dynamic pricing',
       ],
       operationsFeatures: [
         'Schedule & booking',
@@ -1128,107 +1147,105 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Multi-location management',
       ],
       assessment:
-        'Operations and growth are both covered, but the growth features sit behind expensive tiers. The marketplace is the strongest asset. Marketing automation requires the Accelerate tier at $279+/mo, and the AI is entirely add-on.',
+        'Mindbody covers operations and growth. The Mindbody app marketplace is its main acquisition channel. Email and text campaigns and AI Concierge come with Ultimate, and AI Concierge is an add-on on Accelerate.',
     },
 
     daisyAdvantages: [
-      '24/7 AI receptionist included vs Messenger[ai] as $199/mo add-on',
-      'Predictable pricing from Day 1 vs $139-699/mo tier complexity',
-      'Native Arabic/English support vs English-only',
-      'No contracts or lock-in vs annual contracts with termination fees',
-      'Built for beauty/wellness vs fitness-first platform',
-      'Branded booking page with no Daisy branding vs Mindbody-branded marketplace',
-      'Customer acquisition engine vs marketplace-dependent growth',
-      'GCC compliance and local payments vs no international support',
+      'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English, vs AI Concierge on SMS and web chat',
+      'Predictable pricing from Day 1 vs Accelerate and Ultimate quoted on request',
+      'Arabic and English interface vs a Business app that lists English, French, German, Italian, Portuguese and Spanish',
+      'No contracts or lock-in vs contract terms that depend on the Mindbody plan and billing terms',
+      'Built for beauty and wellness vs a platform with many class-based fitness features',
+      'Cashback-driven customer acquisition vs the Mindbody app marketplace, which charges on a new client\'s first purchase',
+      'Live in all six GCC countries vs Mindbody Payments in the UAE',
     ],
 
     daisySwitchingReasons: [
-      'Monthly costs escalating ($139-699 + add-ons) with limited ROI',
-      'Locked into annual contract and want flexibility',
-      'Need Arabic support for GCC market',
-      'AI front desk add-on is expensive and separate from platform',
-      'Platform feels fitness-focused, not beauty-optimized',
-      'Want brand control instead of Mindbody-branded experience',
-      'Need GCC compliance and local payment methods',
-      'Frustrated with declining Capterra/G2 ratings and support quality',
+      'Campaigns and AI Concierge need Ultimate, which is quoted on request, and you want one published price',
+      'Want a plan with no contract',
+      'Need Arabic support for the GCC market',
+      'Want an AI receptionist on WhatsApp and Instagram, in Arabic and English',
+      'Want software built around salons and spas rather than class-based fitness',
     ],
 
+    // Mindbody homepage ("over 3 million active users"; "over 600 million
+    // classes & appointments were booked with Mindbody" last year), pricing
+    // page and /business/reporting, read 2026-10-09.
     competitorStrengths: [
-      'Largest consumer marketplace in wellness (3M+ active users)',
-      'Most comprehensive enterprise feature set',
-      'Highest domain authority and content library',
-      'Strong brand recognition (20+ years)',
-      'Advanced reporting and analytics',
-      'Multi-location management',
+      'Large consumer marketplace: 3M+ active users on the Mindbody app',
+      'Over 600 million classes and appointments booked through Mindbody last year, by Mindbody\'s count',
+      'AI Concierge books, reschedules and cancels by SMS and web chat, 24/7 (Ultimate)',
+      'Unlimited users per location on every plan',
+      'AI Insights on every plan, with Comparative Analytics on Accelerate and Ultimate',
+      'Multi-location and enterprise management',
+      '24/7 support by phone, chat and email, with free one-on-one onboarding',
     ],
 
     competitorWeaknesses: [
-      'Most expensive option ($139-699/mo + add-ons)',
-      'No native AI. Messenger[ai] is expensive add-on',
-      'Annual contracts with termination fees',
-      'Declining review ratings (4.0 Capterra, 3.6 G2)',
-      'No Arabic or GCC support',
-      'Fitness-focused, beauty is secondary',
-      'Complex pricing makes true cost hard to predict',
-      'Slow to innovate under PE ownership',
+      'Only the US entry price ($79/mo per location) is published; Accelerate, Ultimate and Enterprise are quoted on request',
+      'Email and text campaigns need Ultimate; AI Concierge needs Ultimate or an Accelerate add-on',
+      'Arabic isn\'t among the Mindbody Business app\'s listed languages (App Store, October 2026)',
+      'The Mindbody app takes 20% of a new client\'s first purchase, capped at $30',
+      'Contract terms depend on the plan and billing terms, and cancelling may need advance notice',
+      'Many features are built for class-based fitness studios',
     ],
 
     faq: [
       {
-        question: 'How much does Mindbody actually cost?',
+        question: 'How much does Mindbody cost?',
         answer:
-          'Plans run from $139/mo for Starter to $699/mo for Ultimate Plus, and the real number is higher. The AI front desk, Messenger[ai], adds about ~$199/mo, payment processing adds per-transaction fees, and the annual contract keeps you there. A mid-size salon on Accelerate with AI can reach $478+/mo before transaction fees.',
+          'In the US, Mindbody starts at $79 a month per location on Starter, according to Mindbody\'s blog (updated October 2026). Accelerate, Ultimate and Enterprise are priced on request. On top of the subscription, Mindbody Payments charges a processing rate plus $0.10 to $0.30 per transaction in North America and Asia, the Mindbody app takes 20% of a new client\'s first purchase (capped at $30), and premium add-ons cost extra when your plan doesn\'t include them. Mindbody says there is no onboarding fee on any plan.',
       },
       {
         question: 'How does Daisy compare to Mindbody?',
         answer:
-          'Mindbody has the largest marketplace, charges premium prices, and sells AI as an expensive add-on. Daisy puts the AI receptionist, marketing and analytics in the base platform, with no contract. For a beauty business it also brings Arabic support, white-labeling and cashback rewards, none of which Mindbody offers.',
+          'Mindbody has a large consumer marketplace, with 3M+ active app users, and puts AI Concierge and email and text campaigns in its Ultimate plan. Daisy puts the AI receptionist, marketing and analytics in the base platform, with no contract. Its AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English, and Daisy adds cashback rewards and white-label booking pages. Mindbody\'s Business app doesn\'t list Arabic among its languages.',
       },
       {
         question: 'Is Mindbody good for beauty salons?',
         answer:
-          'Mindbody was built for fitness, meaning yoga, pilates and gyms, then extended into beauty. It works for a salon, though much of what a salon needs sits in the higher tiers. A beauty-focused platform like Daisy is shaped around salons and spas from the start, with an AI receptionist, cashback rewards and white-label booking pages.',
+          'Mindbody serves fitness, wellness and beauty businesses, and it pitches AI Concierge to hair salons, nail salons and day spas. Many of its features are built for class-based studios, such as class schedules and Pick-a-Spot. A beauty-focused platform like Daisy is shaped around salons and spas from the start, with an AI receptionist, cashback rewards and white-label booking pages.',
       },
       {
         question: 'Can I cancel my Mindbody contract?',
         answer:
-          'Mindbody generally requires an annual contract with an early termination fee, so check what your agreement says. When you are ready to move, Daisy has no contracts and will handle the data transfer.',
+          'Mindbody says your contract depends on the plan and billing terms you signed up for, including any promotion, and that cancelling may need advance notice under your agreement. Check what yours says. When you are ready to move, Daisy has no contracts and will handle the data transfer.',
       },
       {
-        question: 'Why is Mindbody so expensive compared to other salon software?',
+        question: 'What does Mindbody charge on top of the subscription?',
         answer:
-          'The pricing follows the enterprise-first model it has run under Vista Equity Partners ownership. Plans go from $139/mo to $699/mo, and the extras stack: the Messenger[ai] front desk adds about ~$199/mo, payment processing adds per-transaction fees, and the annual contract holds you in place. A mid-size salon on Accelerate with AI can reach $478+/mo. Daisy includes the AI in the base plan for a fraction of that.',
+          'Mindbody lists three things. If you use Mindbody Payments, there is a processing rate plus a fixed $0.10 to $0.30 per transaction (North America and Asia). When the Mindbody app brings you a new client, Mindbody takes 20% of that client\'s first purchase, capped at $30, once. And premium add-ons, such as the branded app, AI front desk support and email and text marketing, cost extra when your plan doesn\'t include them. Its data transfer service for new customers may also carry a fee.',
       },
       {
-        question: 'Does Mindbody support Arabic or work well in the Gulf?',
+        question: 'Does Mindbody support Arabic or work in the Gulf?',
         answer:
-          'The platform is built around English and localizes little. There is no Arabic interface, no GCC payment methods and no regional VAT compliance. For a salon or spa in the Gulf, Daisy offers native Arabic and English, local payment integration and support built for the region, live in Kuwait today.',
+          'Mindbody Payments is available in the UAE. The Mindbody Business app on the App Store lists English, French, German, Italian, Portuguese and Spanish, and we could not find an Arabic interface as of October 2026. Daisy offers Arabic and English as equals, with local payment integration and support built for the region, and is live in all six GCC countries.',
       },
       {
-        question: 'Does Mindbody have real AI or is it just marketing?',
+        question: 'What AI does Mindbody offer?',
         answer:
-          'Mindbody lists an AI Concierge for turning missed calls into bookings, and the Messenger[ai] front desk as a paid add-on. Both sit on the front desk rather than across the platform: the core product has no AI marketing, no scheduling optimization and no predictive analytics. Daisy includes the receptionist, marketing and smart scheduling in the base plan.',
+          'AI Concierge answers client questions and books, reschedules and cancels appointments by SMS and web chat, 24/7, and it follows up missed calls by text. It comes with the Ultimate plan and is an add-on on Accelerate. AI Insights, which flags clients at risk and big spenders, is on every plan, and the marketing tools include AI content creation. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English.',
       },
       {
-        question: 'How hard is it to move my data out of Mindbody?',
+        question: 'How do I move my data out of Mindbody?',
         answer:
-          'Migrating off Mindbody takes work. Exports are allowed but the process is cumbersome, and users report incomplete results, particularly for historical reporting and client communication records. The annual contract also constrains when you can move. Daisy provides dedicated enterprise migration support with a parallel run period, so nothing is lost on the way across.',
+          'Check your agreement for any notice period, then plan the export with Mindbody support. Mindbody also offers APIs for exporting data. Daisy provides dedicated migration support with a parallel run period, so nothing is lost on the way across.',
       },
       {
-        question: 'Is the Mindbody app reliable for salon management?',
+        question: 'How is the Mindbody app rated?',
         answer:
-          'The consumer app for finding and booking is well known and has millions of downloads. The business app has been sliding in the reviews, with owners citing a dated interface, slow performance and features that feel aimed at fitness studios rather than beauty businesses. Daisy\'s app was built for beauty and wellness, and it is quick.',
+          'On the US App Store in October 2026, the Mindbody Business app was rated 4.6 from about 23,500 ratings, and the consumer app 4.9 from about 272,000. Daisy\'s app was built for beauty and wellness, and it is quick.',
       },
       {
         question: 'Can Mindbody handle multi-location salon chains?',
         answer:
-          'Yes, and it is one of Mindbody\'s real strengths at the higher tiers. It costs, though: $419-$699/mo per location, and some chains still consolidate cross-location reporting by hand. Daisy runs multi-branch operations with centralized dashboards, one set of client records and cross-location analytics, at a price more businesses can reach.',
+          'Yes. Multi-location management is one of Mindbody\'s strengths, and it offers a custom Enterprise plan for multi-location and franchise businesses. Subscription prices rise with each location, not with staff. Daisy runs multi-branch operations with centralized dashboards, one set of client records and cross-location analytics.',
       },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
     notes:
-      'The largest and longest-established player, and showing signs of stagnation under private equity ownership. Review scores are falling, pricing is high and there is no native AI. A fitness-first posture leaves beauty underserved. Main vulnerability: cost and contracts.',
+      'Founded 2001, now part of Playlist. Starts at $79/mo per location in the US; Accelerate and Ultimate are quoted. Ultimate includes AI Concierge (SMS and web chat) and email and text campaigns. Mindbody Payments is available in the UAE. Arabic is not in the Business app language list. Main contrast for Daisy: AI channels (WhatsApp, Instagram), Arabic, GCC coverage and cashback.',
   },
 
   // ---------------------------------------------------------------------------
@@ -1239,12 +1256,20 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     name: 'Zenoti',
     website: 'https://www.zenoti.com',
     tier: 1,
+    // zenoti.com/company/about-us, read 2026-10-09: began as ManageMySpa in
+    // Hyderabad in 2010; offices in Bellevue, Brisbane, Dubai, Hyderabad,
+    // Jakarta, Kuala Lumpur, Manchester and Manila; "1200+ global employees as
+    // of 2024"; "$1.5B valuation as of 2021". zenoti.com/ai-workforce and
+    // zenoti.com/pricing-zenoti ("You must be on our AI Plus package to leverage
+    // our AI Agents"), read 2026-10-09.
     description:
-      'Enterprise-grade, AI-first management platform for salons, spas and med spas. Its AI Workforce, marketed as nine AI agents, is among the most comprehensive AI suites in the industry. A Dubai office gives it real GCC presence.',
+      'Software for salons, spas, medspas and fitness businesses that began as ManageMySpa in Hyderabad in 2010. Zenoti markets an AI Workforce of AI agents, which need its AI Plus package, and lists an office in Dubai among its eight offices.',
     founded: '2010',
     headquarters: 'Bellevue, WA, USA',
-    employeeCount: '1,500+',
-    funding: '$282M+',
+    employeeCount: '1,200+ (2024)',
+    // Zenoti press release, 15 Dec 2020: $160M Series D led by Advent
+    // International, about $250M raised in total.
+    funding: 'About $250M raised by its $160M Series D (Dec 2020); valued at $1.5B as of 2021',
 
     features: {
       onlineBooking: 3,
@@ -1256,86 +1281,85 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       reportingAndAnalytics: 3,
       marketplaceAndDiscovery: 1,
       aiCapabilities: 3,
-      brandingAndWhiteLabel: 1,
+      // Branded guest app and branded webstore: zenoti.com/platform/online-booking
+      // ("Zenoti Webstore and Mobile App reflect your brand's design"), 2026-10-09.
+      brandingAndWhiteLabel: 2,
     },
 
+    // zenoti.com/pricing-zenoti, read 2026-10-09: no prices; "Get a Quote" on
+    // Zenoti OS and the AI Workforce; "Your Zenoti subscription includes access
+    // to our voice, SMS, and messaging tools. Usage is billed based on
+    // consumption with optional base packs."
     pricing: {
       hasFreePlan: false,
-      startingPrice: 'Custom (~$225+/mo per location)',
-      startingPriceNumeric: 225,
+      startingPrice: 'Pricing on request',
       tiers: [
         {
-          name: 'Essential',
-          price: 'Custom',
+          name: 'Zenoti OS',
+          price: 'Pricing on request',
+          billingCycle: 'custom',
           features: [
-            'Core booking & scheduling',
-            'POS & payments',
-            'Client management',
-            'Basic reporting',
-            'Mobile app',
-          ],
-        },
-        {
-          name: 'Grow',
-          price: 'Custom',
-          features: [
-            'Everything in Essential',
+            'Appointment book and online booking',
+            'POS and payment processing',
+            'Payroll and commissions',
+            'Inventory management',
             'Marketing automation',
-            'Advanced analytics',
-            'AI scheduling',
-            'Multi-location dashboard',
           ],
         },
         {
-          name: 'Enterprise',
-          price: 'Custom',
+          name: 'AI Plus',
+          price: 'Pricing on request',
+          billingCycle: 'custom',
           features: [
-            'Everything in Grow',
-            'Full AI suite (6 agents)',
-            'Custom integrations',
-            'Dedicated success manager',
-            'API access',
+            'AI agents (AI Workforce)',
+            'Dedicated Customer Success Manager',
+            'Priority support backed by SLAs',
           ],
         },
       ],
       hiddenCosts: [
-        'Custom pricing requires sales call, no transparency',
-        'Implementation and onboarding fees',
-        'Per-location pricing for multi-site businesses',
-        'Advanced AI features may be in higher tiers',
+        'Voice, SMS and messaging usage, billed by consumption with optional base packs',
+        'AI agents need the AI Plus package',
       ],
-      pricingModel: 'per-location',
-      pricingPageUrl: 'https://www.zenoti.com/pricing',
-      lastVerified: '2026-03-13',
+      pricingModel: 'hybrid',
+      pricingPageUrl: 'https://www.zenoti.com/pricing-zenoti',
+      lastVerified: '2026-10-09',
     },
 
+    // Capterra: Wayback snapshot of capterra.com/p/131057/ZENOTI/, 21 Sep 2026.
     reviews: [
-      { platform: 'Capterra', rating: 4.4, reviewCount: 1239 },
-      { platform: 'G2', rating: 4.3, reviewCount: 600 },
+      { platform: 'Capterra', rating: 4.4, reviewCount: 1290 },
     ],
 
+    // help.zenoti.com "Access Zenoti in your preferred language", read
+    // 2026-10-09: "Zenoti currently supports French and French-Canada."
+    // Dubai office (About page); help.zenoti.com "E-Invoicing in Saudi Arabia"
+    // (ZATCA QR codes, "VAT receipt - GCC"). Other GCC countries not found.
     gccPresence: {
       hasArabicUI: false,
       arabicQuality: 'none',
-      gccCountries: ['UAE', 'KSA', 'Kuwait', 'Bahrain', 'Oman', 'Qatar'],
+      gccCountries: ['UAE', 'KSA'],
       localCompliance: true,
-      localPaymentMethods: true,
+      localPaymentMethods: false,
       localSupport: true,
     },
 
+    // zenoti.com/ai-workforce and /platform/dynamic-pricing, read 2026-10-09.
+    // Dynamic pricing adjusts prices on demand triggers; Zenoti doesn't label
+    // it AI, so hasAiPricing stays false.
     aiCapabilities: {
       hasAiReceptionist: true,
       hasAiChatbot: true,
       hasSmartScheduling: true,
       hasAiMarketing: true,
       hasAiAnalytics: true,
-      hasAiPricing: true,
+      hasAiPricing: false,
       aiDescription:
-        'The most comprehensive AI suite available: nine AI agents covering the phone receptionist, marketing campaigns, review management, scheduling optimization, analytics and staff recommendations. AI comes first here, and the investment continues.',
+        'Zenoti markets an AI Workforce of agents, including an AI Receptionist voice agent that answers calls and books, an AI Digital Marketer, AI Lead Manager, AI Employee Scheduler, AI Retention Manager and AI Business Advisor, plus SmartBot for booking by chat. Zenoti says the AI agents need its AI Plus package. It also offers demand-based dynamic pricing.',
     },
 
     targetMarket:
-      'Mid-size to large multi-location salons, spas, med spas and fitness franchises. Enterprise-focused, aimed at businesses with 30+ employees, and growing in the GCC out of the Dubai office.',
+      'Salons, spas, medspas, fitness centres and barbershops, from single locations to enterprise franchises, by Zenoti\'s description. Its eight offices include Dubai.',
 
     contentAndSeo: {
       estimatedMonthlyTraffic: '1.5M+',
@@ -1355,70 +1379,68 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Case studies with ROI data',
       ],
       seoWeaknesses: [
-        'Lower domain authority than Fresha/Mindbody',
         'Limited SMB-focused content',
         'Gated content reduces SEO value',
       ],
     },
 
     messaging: {
-      tagline: 'AI-first salon, spa & med spa software',
+      tagline: 'AI-native platform built for beauty and wellness',
       primaryValueProp:
-        'Enterprise-grade platform with the industry\'s most advanced AI suite, designed for multi-location beauty and wellness businesses',
+        'One platform with built-in AI agents for salons, spas, medspas, fitness centres and barbershops',
       targetAudience:
-        'Multi-location salon, spa and med spa owners who want enterprise features and AI automation',
-      toneAndVoice: 'Enterprise and technology-forward, always arguing from ROI',
+        'Salon, spa, medspa and fitness owners, from single locations to enterprise franchises',
+      toneAndVoice: 'Technology-forward, always arguing from ROI',
       keyMessages: [
-        'AI-first platform marketing nine AI agents',
+        'An AI Workforce of agents',
+        'Replaces 8 to 12 separate tools',
+        'Trusted by 30,000+ businesses across 50+ countries',
         'Built for multi-location businesses',
-        'Enterprise-grade reliability',
-        '$282M+ funded by top VCs',
-        'Trusted by leading salon and spa brands',
       ],
     },
 
     conversionStrategy: {
-      primaryCta: 'Request a demo',
+      primaryCta: 'Book a demo',
       leadMagnets: ['ROI calculator', 'Industry whitepapers', 'Webinars', 'Case studies'],
       freeTrialOffered: false,
       demoOffered: true,
       socialProof: [
-        '$282M+ in funding',
-        'Enterprise client logos',
-        'Industry awards',
+        '30,000+ businesses across 50+ countries',
+        'Customer success stories',
+        'G2 badges',
         'AI leadership positioning',
       ],
       conversionTactics: [
-        'Enterprise sales process with demos',
+        'Demo and quote-led sales process',
         'ROI-focused messaging',
         'AI differentiation',
         'Case studies with measurable results',
       ],
     },
 
+    // Contract terms are not published on zenoti.com (pricing page read
+    // 2026-10-09), so no contract claim is made.
     switchingAnalysis: {
       dataExport: true,
-      contractLockIn: true,
+      contractLockIn: false,
       migrationSupport: true,
-      switchingDifficulty: 'hard',
+      switchingDifficulty: 'moderate',
       lockInTactics: [
-        'Annual/multi-year enterprise contracts',
-        'Deep system integrations',
         'Staff training and workflow dependencies',
         'Custom configuration investment',
-        'Data migration complexity',
+        'Data migration',
       ],
-      switchingIncentives: ['Dedicated migration team', 'Parallel run period offered'],
+      switchingIncentives: ['White-glove migration support', 'Structured onboarding and staff training'],
     },
 
     growthVsOperations: {
       growthScore: 7,
       growthFeatures: [
-        'AI marketing campaigns',
-        'AI review management',
-        'Smart scheduling optimization',
-        'Client retention automation',
-        'AI analytics and insights',
+        'AI Digital Marketer',
+        'AI Lead Manager',
+        'AI Receptionist for calls',
+        'AI Retention Manager',
+        'Automated reputation management',
       ],
       operationsFeatures: [
         'POS & payments',
@@ -1429,104 +1451,97 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Compliance tools',
       ],
       assessment:
-        'The most growth-oriented competitor of the set, and the most AI-first. A solid operations foundation with nine AI agents working on top of it. Most of those AI features sit in the higher enterprise tiers. On AI, this is Daisy\'s most direct competitor.',
+        'Zenoti covers operations and adds an AI Workforce for marketing, leads, calls, scheduling and retention. Zenoti says the AI agents need its AI Plus package. On AI, this is Daisy\'s most direct competitor.',
     },
 
     daisyAdvantages: [
-      'Transparent, predictable pricing vs opaque enterprise quotes',
-      'Native Arabic UI vs English-only platform (despite GCC offices)',
-      'No contracts or lock-in vs annual enterprise agreements',
-      'SMB-friendly from Day 1 vs enterprise-only focus',
-      'Cashback and marketplace consumer acquisition vs no marketplace',
-      'Branded booking page with no Daisy branding vs Zenoti-branded experience',
-      'Faster onboarding (days, not weeks) vs complex enterprise implementation',
+      'Transparent, predictable pricing vs quotes on request',
+      'Native Arabic UI vs an interface in English, French and French-Canada',
+      'No contracts or lock-in',
+      'Cashback and a consumer marketplace for acquisition; a consumer marketplace isn\'t listed on Zenoti\'s published pages',
+      'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English, vs an AI Receptionist voice agent for calls',
     ],
 
     daisySwitchingReasons: [
-      'Enterprise pricing too expensive for small-medium businesses',
-      'Need Arabic UI. Zenoti has GCC offices but English-only platform',
-      'Locked into annual contract and want flexibility',
-      'Don\'t need enterprise complexity, want simpler, faster setup',
-      'Want consumer-facing marketplace and cashback for acquisition',
-      'Need transparent pricing without sales calls',
+      'Want a published price instead of a custom quote',
+      'Need an Arabic interface; Zenoti lists English, French and French-Canada',
+      'Want the AI receptionist without adding a separate AI package',
+      'Want a consumer-facing marketplace and cashback for acquisition',
     ],
 
     competitorStrengths: [
-      'Most comprehensive AI suite in the industry (6 agents)',
-      'Enterprise-grade features and reliability',
-      'Physical GCC presence with Dubai office',
+      'A broad AI Workforce: AI Receptionist (voice), AI Digital Marketer, AI Lead Manager, AI Employee Scheduler, AI Retention Manager and more',
+      'Serves salons, spas, medspas, fitness and barbershops, from single sites to enterprise franchises',
+      'An office in Dubai, and Saudi (ZATCA) e-invoicing support',
       'Strong multi-location management',
-      'Robust inventory and reporting systems',
-      'Heavy VC backing ($282M+) ensures continued development',
+      '24/7 global support for every customer',
+      'Inventory, payroll and reporting in one system',
     ],
 
     competitorWeaknesses: [
-      'No Arabic UI despite GCC presence. English only',
-      'Enterprise pricing excludes SMBs',
-      'Opaque pricing requires sales calls',
-      'Annual contracts with lock-in',
-      'Complex implementation (weeks, not days)',
-      'No consumer marketplace or cashback program',
-      'AI features gated behind higher tiers',
-      'Overkill for single-location businesses',
+      'No Arabic interface listed: Zenoti\'s help centre lists French and French-Canada besides English (October 2026)',
+      'Pricing by quote only',
+      'AI agents need the AI Plus package',
+      'Voice, SMS and messaging usage is billed on top, by consumption',
+      'A consumer marketplace isn\'t listed on Zenoti\'s published pages (October 2026)',
     ],
 
     faq: [
       {
         question: 'How does Zenoti\'s AI compare to Daisy\'s?',
         answer:
-          'Zenoti has the most comprehensive AI suite of any traditional platform, marketing nine AI agents. Those features generally sit in enterprise tiers behind opaque pricing. Daisy puts the AI receptionist, smart scheduling and AI marketing in the base platform at a published price, and adds the native Arabic support Zenoti does not have.',
+          'Zenoti markets an AI Workforce of agents, among them an AI Receptionist voice agent that answers calls and books, plus agents for marketing, leads, scheduling and retention. Zenoti says the agents need its AI Plus package, and its pricing is by quote. Daisy puts the AI receptionist, smart scheduling and AI marketing in the base platform at a published price. Its receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English.',
       },
       {
         question: 'Is Zenoti suitable for small salons?',
         answer:
-          'Zenoti is designed for mid-size and large multi-location businesses, priced accordingly at typically $225+/month per location, on a contract. A small salon is better served by something like Daisy, which offers the AI features at a price a smaller business can carry, without a contract.',
+          'Zenoti says it serves businesses of all sizes, from single locations to enterprise franchises. Its pricing is by quote, and the AI agents need the AI Plus package. A small salon that wants published pricing with the AI included can compare that with Daisy, which has no contract.',
       },
       {
         question: 'Does Zenoti support Arabic?',
         answer:
-          'It has a Dubai office and serves all 6 GCC countries, and the platform is still English-only with no Arabic interface. Daisy treats Arabic and English as equal priorities, designed for the GCC from the start.',
+          'Zenoti\'s help centre says it currently supports French and French-Canada besides English, and we found no Arabic option as of October 2026. Zenoti has an office in Dubai and publishes guidance for Saudi e-invoicing. Daisy treats Arabic and English as equal priorities, designed for the GCC from the start.',
       },
       {
         question: 'Can I switch from Zenoti to Daisy?',
         answer:
-          'Zenoti generally runs annual contracts, so check what yours says. Once it allows, Daisy provides enterprise migration support covering the data transfer, a parallel run period and staff training. The move usually takes less time than the original Zenoti implementation did.',
+          'Yes. Check your Zenoti agreement for its term and notice period first. Daisy provides migration support covering the data transfer, a parallel run period and staff training.',
       },
       {
-        question: 'How much does Zenoti really cost?',
+        question: 'How much does Zenoti cost?',
         answer:
-          'Pricing is custom and opaque, starting around $225+/month per location and climbing with add-ons such as the advanced AI agents, marketing automation and enterprise features. Annual contracts are standard and implementation fees can be substantial. Daisy publishes its pricing, includes the AI in the base plan and asks for no contract.',
+          'Zenoti doesn\'t publish prices. Plans are quoted on request, and multi-location pricing depends on your footprint. Voice, SMS and messaging usage is billed by consumption on top, and the AI agents need the AI Plus package. Daisy publishes its pricing, includes the AI in the base plan and asks for no contract.',
       },
       {
-        question: 'Is Zenoti too complex for small or mid-size salons?',
+        question: 'How long does Zenoti take to set up?',
         answer:
-          'Zenoti is built for enterprise and multi-location businesses and carries the complexity that implies. Smaller and mid-size salons tend to find the implementation long, running weeks to months, the learning curve steep and the feature set more than they need. Daisy aims at the same capability without the enterprise weight, and works from a single-location salon up to a growing chain.',
+          'Zenoti says most customers are up and running in days to weeks, with phased rollouts for larger deployments, and that every subscription includes onboarding support and training. Daisy is built to work from a single-location salon up to a growing chain.',
       },
       {
-        question: 'Why doesn\'t Zenoti have Arabic support despite having a Dubai office?',
+        question: 'Does Zenoti\'s Dubai office mean it supports Arabic?',
         answer:
-          'It has an office in Dubai and clients across all six GCC countries, and the platform remains English-only with no Arabic user interface. Arabic-speaking staff and customers work in English or not at all. Daisy treats Arabic and English as equal priorities, built for GCC businesses and the people they serve.',
+          'Not according to Zenoti\'s own pages. Its About page lists the Dubai office, but its help centre lists only French and French-Canada as interface languages besides English (October 2026). Daisy treats Arabic and English as equal priorities, built for GCC businesses and the people they serve.',
       },
       {
-        question: 'How good is Zenoti\'s customer support?',
+        question: 'What support does Zenoti offer?',
         answer:
-          'Support is tiered. Basic is included, while priority and dedicated support need a higher plan. Users on standard plans report slow responses and tickets that take days to close, which is hard going on a platform this complex when something breaks. Daisy provides responsive support on every plan, with dedicated account management.',
+          'Zenoti says every customer gets 24/7 global support and access to Zenoti University. Its published response targets are under 30 minutes for critical issues, under 2 hours for urgent ones and the same day for general questions. AI Plus customers also get a dedicated Customer Success Manager and priority support backed by SLAs. Daisy provides responsive support on every plan, with dedicated account management.',
       },
       {
         question: 'Does Zenoti have a consumer marketplace for customer acquisition?',
         answer:
-          'No. Zenoti is a B2B management platform with no consumer marketplace and no discovery features, so the traffic is yours to find. Daisy puts a consumer marketplace together with cashback rewards and AI-powered marketing to bring new customers in, a 360-degree acquisition engine Zenoti does not offer.',
+          'Zenoti lists booking through your own webstore, a branded mobile app, SmartBot chat, Reserve with Google, Facebook and Instagram. A consumer marketplace isn\'t listed on its published pages as of October 2026. Daisy pairs a consumer marketplace with cashback rewards and AI-powered marketing to bring new customers in.',
       },
       {
-        question: 'How does Zenoti\'s mobile app compare to Daisy\'s?',
+        question: 'What mobile apps does Zenoti have?',
         answer:
-          'There are staff and customer apps, both solid for enterprise operations. They also mirror the desktop platform\'s enterprise orientation, and users find them heavy going for everyday salon tasks. Daisy\'s mobile app is built for speed and simplicity, with AI handling the routine work in the background.',
+          'Zenoti lists a branded guest app for your clients, the MyZen app for providers and Zenoti Mobile. Daisy\'s mobile app is built for speed and simplicity, with AI handling routine work in the background.',
       },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
     notes:
-      'The most direct competitor on AI. Where Daisy separates: Arabic support, which Zenoti lacks despite its GCC offices, along with transparent pricing, no contracts, reach down into smaller businesses, and a consumer marketplace with cashback for acquisition.',
+      'The most direct competitor on AI. Quote-only pricing; AI agents need AI Plus; interface in English, French and French-Canada (no Arabic found); Dubai office and Saudi e-invoicing support. Fair contrasts for Daisy: Arabic, published pricing, AI on WhatsApp and Instagram, and a consumer marketplace with cashback.',
   },
 };
 
