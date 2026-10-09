@@ -39,15 +39,22 @@ describe('getGlossarySitemapData', () => {
     const refreshed = [
       'salon-management-software',
       'ai-receptionist-for-salons',
-      'cashback-beauty-booking',
       'salon-management-system',
-      'salon-employee-management-software',
       'salon-customer-management',
     ];
     for (const slug of refreshed) {
       const record = data.find((r) => r.slug === slug);
       expect(record).toBeDefined();
       expect(record?.lastUpdated).toBe('2026-04-27T00:00:00.000Z');
+    }
+  });
+
+  it('reports 2026-10-09 for the entries whose competitor claims were corrected that day', () => {
+    const data = getGlossarySitemapData();
+    for (const slug of ['cashback-beauty-booking', 'salon-employee-management-software']) {
+      const record = data.find((r) => r.slug === slug);
+      expect(record).toBeDefined();
+      expect(record?.lastUpdated).toBe('2026-10-09T00:00:00.000Z');
     }
   });
 });

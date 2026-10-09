@@ -267,55 +267,55 @@ Fresha is a marketplace-based platform with paid subscription tiers on top of tr
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-fresha
 
 ### Daisy vs Booksy
-Booksy is a mobile-first marketplace popular with barbers. Daisy provides deeper AI capabilities, Arabic language support, and business growth tools beyond basic booking.
+Booksy is a booking app and marketplace used by 330,000+ pros. Booksy Biz costs $29.99/mo plus $20/mo for each extra team member, with every feature in one plan, and includes an AI Receptionist (beta) that answers phone calls in English or Spanish. Booksy lists no GCC country or Arabic support as of October 2026. Daisy's AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-booksy
 
 ### Daisy vs Vagaro
-Vagaro offers feature-rich salon software at $49-199/mo with per-staff pricing. Daisy's flat pricing model and AI capabilities provide better value for growing businesses.
+Vagaro starts at $23.99/mo for one calendar in the US (a limited-time offer; $30/mo regular), plus $10/mo for each extra calendar. Its Vera Receptionist, a $10/mo US add-on, books, reschedules and cancels over chat and SMS. Vagaro operates in the US, Canada, the UK and Australia, without Arabic. Daisy works in Arabic and English across the GCC.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-vagaro
 
 ### Daisy vs GlossGenius
-GlossGenius focuses on design-forward booking for solo professionals. Daisy serves businesses of all sizes with multi-location support and advanced AI tools.
+GlossGenius is US-only salon software from $28/mo ($24/mo billed annually), with multi-location support on every plan. Its Genius AI includes Reception, a $50/mo add-on that answers calls and texts 24/7. Daisy serves the GCC, in Arabic and English.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-glossgenius
 
 ### Daisy vs Mindbody
-Mindbody targets fitness and wellness with enterprise pricing ($75-150+/mo). Daisy offers comparable features at lower price points with superior AI and GCC market support.
+Mindbody serves fitness, wellness and beauty businesses. US plans start at $79/mo per location (Starter), and higher plans are priced on request. Its AI Concierge answers SMS and web chat 24/7 (included in Ultimate, an add-on on Accelerate), and Mindbody Payments is available in the UAE. Daisy's AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-mindbody
 
 ### Daisy vs Boulevard
-Boulevard is a premium US-focused platform ($188M funded). Daisy matches Boulevard's sophistication while serving GCC markets and offering flat pricing without per-staff fees.
+Boulevard is premium salon and spa software for the US. Essentials costs $159/mo for one location ($143/mo billed annually), Premier $325/mo and Prestige $455/mo per location, and Enterprise is priced on request. Beau, its voice AI receptionist, costs $125/mo per location. Boulevard had raised about $188M by July 2025 and lists no GCC country or Arabic support as of October 2026.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-boulevard
 
 ### Daisy vs Glamera
-Glamera is an Arabic-native Saudi marketplace. Daisy provides a more comprehensive AI suite, true multilingual support (not Arabic-only), and business growth tools beyond marketplace listing.
+Glamera is salon software based in Riyadh, with plans from SAR 125/mo and no free plan. It serves Egypt, Saudi Arabia, Qatar, Bahrain, the UAE, Kuwait, Lebanon and Oman, with POS, marketing, SMS and WhatsApp messaging, and loyalty. Glamera's pages list no AI features as of October 2026. Daisy adds an AI receptionist on WhatsApp, Instagram and the booking site, plus cashback.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-glamera
 
 ### Daisy vs DINGG
-DINGG is India-based with AI features expanding to UAE. Daisy offers native GCC presence with local payment integrations, Arabic support, and deeper AI receptionist capabilities.
+DINGG is based in Pune, India, with country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman. Its AI handles WhatsApp conversations and bookings, and pricing is on request. DINGG publishes no Arabic interface; Daisy works in Arabic and English.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-dingg
 
 ### Daisy vs RepeatMD
-RepeatMD focuses on med spa growth with cashback ($700/mo). Daisy provides similar cashback mechanics at a fraction of the price while serving all beauty verticals.
+RepeatMD, based in Houston, runs patient rewards and memberships for med spas inside the practice's own branded app, next to its existing EMR or practice management system. Pricing is on request, and its Beauty Bank is a pre-save wallet rather than cashback. Daisy builds cashback into one platform for salons, spas and clinics.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-repeatmd
 
 ### Daisy vs Planity
-Planity is a French marketplace (10M+ monthly bookings). Daisy offers global reach with GCC focus, AI receptionist, and growth tools beyond marketplace-only discovery.
+Planity is a booking marketplace and salon software in France, Belgium and Germany. It reported 10M+ appointments a month in February 2024 and launched an AI phone assistant in July 2026. Pricing is on request. Daisy serves the GCC, in Arabic and English.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-planity
 
 ### Daisy vs Mangomint
-Mangomint is a premium US salon software with clean UX. Daisy matches the modern interface while adding AI receptionist, cashback, and Arabic/GCC market support.
+Mangomint is salon and spa software for the US and Canada, at $120 per location plus $10 per user each month, with Phone, Marketing and Payroll add-ons. It lists no AI features as of October 2026. Daisy adds an AI receptionist, cashback, and Arabic support for the GCC.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-mangomint
 
 ### Daisy vs Square Appointments
-Square Appointments is part of Square's payment ecosystem. Daisy provides deeper beauty-specific features, AI capabilities, and no reliance on Square hardware.
+Square Appointments is part of Square's payment ecosystem. In the US it has a free plan, with Plus at $49/mo and Premium at $149/mo per location. Square AI (beta) is on every plan, and Square Assistant answers client texts 24/7. Square operates in Australia, Canada, France, Ireland, Japan, Spain, the UK and the US, and not in the GCC. Daisy serves the GCC, in Arabic and English.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-square-appointments
 
 ### Daisy vs Phorest
-Phorest focuses on salon client retention. Daisy adds AI receptionist, marketplace discovery, and cashback acquisition tools to complement retention strategies.
+Phorest is salon and clinic software with email, SMS and WhatsApp marketing and a branded booking app; pricing is on request. Its Front Desk AI add-on answers booking requests and FAQs by SMS and WhatsApp 24/7, and Phorest has a UAE site. Daisy's AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English, and Daisy includes marketplace discovery and cashback.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-phorest
 
 ### Daisy vs Acuity Scheduling
-Acuity (by Squarespace) is a general appointment scheduler. Daisy is purpose-built for beauty with industry-specific features, AI, and integrated payments.
+Acuity Scheduling, owned by Squarespace, is a general-purpose scheduler used across many industries, beauty among them. Plans start at $20/mo ($16/mo billed annually), Premium includes an AI Booking Assistant chat bot, and its POS covers card readers and Tap to Pay. Daisy is built for beauty businesses in the GCC, in Arabic and English.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-acuity-scheduling
 
 ## All Page URLs

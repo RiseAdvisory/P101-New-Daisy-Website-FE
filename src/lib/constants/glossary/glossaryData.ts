@@ -16,6 +16,8 @@ export interface GlossaryEntry {
   lastUpdated?: string;
 }
 
+// Competitor facts (RepeatMD, Booksy) checked 2026-10-09 against the vendors' own pages;
+// sources are listed in src/lib/constants/competitors/tier1Data.ts and tier2Data.ts.
 export const glossaryData: I18nContent<GlossaryEntry[]> = {
   en: [
     {
@@ -152,7 +154,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'cashback-beauty-booking',
-      lastUpdated: '2026-04-27T00:00:00.000Z',
+      lastUpdated: '2026-10-09T00:00:00.000Z',
       term: 'Cashback in Beauty Booking',
       definition:
         'is a customer loyalty mechanism where beauty service platforms return a percentage of each booking value to the customer, incentivizing repeat visits and new customer acquisition through a rewards-based marketplace.',
@@ -207,7 +209,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'Which salon software offers cashback for customers?',
           answer:
-            'Few salon platforms build cashback in. RepeatMD offers something comparable for med spas at $700/month; Daisy includes it in every plan from $1/month, plus $50 once you pass 5 appointments in a month.',
+            'Few salon platforms build cashback in. RepeatMD, a med spa platform, offers patient rewards and memberships, with pricing on request; Daisy includes it in every plan from $1/month, plus $50 once you pass 5 appointments in a month.',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'ai-receptionist-for-salons'],
@@ -256,7 +258,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'What will my booking link look like with salon booking software?',
           answer:
-            'With Daisy, yes. Your booking page sits on your own domain. Many competitors put you on a subdomain of theirs, such as yoursalon.booksy.com, which weakens your brand.',
+            'With Daisy, yes. Your booking page sits on your own domain. Some platforms host your booking page on their own domain; Booksy, for example, says its booking sites are hosted on the Booksy domain.',
         },
         {
           question: 'Does white-label affect the booking experience?',
@@ -413,7 +415,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-employee-management-software',
-      lastUpdated: '2026-04-27T00:00:00.000Z',
+      lastUpdated: '2026-10-09T00:00:00.000Z',
       term: 'Salon Employee Management Software',
       definition:
         'is specialized functionality within <a href="/en/glossary/salon-management-software">salon management software</a> that handles staff scheduling, commission tracking, performance analytics, team permissions, and workforce coordination for beauty businesses.',
@@ -448,7 +450,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'What salon software has built-in staff management features?',
           answer:
-            'Daisy, Boulevard, and Mangomint include comprehensive staff management. Fresha and Booksy cover staff scheduling; commission and performance reporting depth varies by plan. Daisy includes all staff features in every plan.',
+            'Daisy, Boulevard, and Mangomint include comprehensive staff management. Fresha and Booksy cover staff scheduling. On Fresha, commission and performance reporting depth varies by plan; Booksy sells a single plan with all features included. Daisy includes all staff features in every plan.',
         },
         {
           question: 'How do I track salon employee performance?',
@@ -679,7 +681,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'cashback-beauty-booking',
-      lastUpdated: '2026-04-27T00:00:00.000Z',
+      lastUpdated: '2026-10-09T00:00:00.000Z',
       term: 'الكاشباك في حجز التجميل',
       definition:
         'هو آلية ولاء للعملاء تقوم فيها منصات خدمات التجميل بإرجاع نسبة من قيمة كل حجز إلى العميل، مما يحفز الزيارات المتكررة واكتساب عملاء جدد من خلال سوق قائم على المكافآت.',
@@ -734,7 +736,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'أي برنامج صالونات يقدم كاشباك للعملاء؟',
           answer:
-            'ديزي هي واحدة من المنصات القليلة للصالونات التي تتضمن نظام كاشباك مدمج. تقدم RepeatMD مفهوماً مشابهاً لمراكز التجميل الطبية بسعر 700 دولار شهرياً، بينما تتضمنه ديزي في جميع الخطط بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
+            'ديزي هي واحدة من المنصات القليلة للصالونات التي تتضمن نظام كاشباك مدمج. تقدم RepeatMD، وهي منصة لمراكز التجميل الطبية، برامج مكافآت للمرضى وعضويات بأسعار متاحة عند الطلب، بينما تتضمنه ديزي في جميع الخطط بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'ai-receptionist-for-salons'],
@@ -940,7 +942,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-employee-management-software',
-      lastUpdated: '2026-04-27T00:00:00.000Z',
+      lastUpdated: '2026-10-09T00:00:00.000Z',
       term: 'برنامج إدارة موظفي الصالون',
       definition:
         'هو وظائف متخصصة ضمن <a href="/ar/glossary/salon-management-software">برنامج إدارة الصالونات</a> تتولى جدولة الموظفين وتتبع العمولات وتحليلات الأداء وصلاحيات الفريق وتنسيق القوى العاملة لمشاريع التجميل.',
@@ -975,7 +977,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'أي برنامج صالونات يتضمن ميزات إدارة موظفين مدمجة؟',
           answer:
-            'تتضمن ديزي وBoulevard وMangomint إدارة موظفين شاملة. يغطي Fresha وBooksy جدولة الموظفين، ويتفاوت عمق تقارير العمولات والأداء حسب الباقة. تتضمن ديزي جميع ميزات الموظفين في كل خطة.',
+            'تتضمن ديزي وBoulevard وMangomint إدارة موظفين شاملة. يغطي Fresha وBooksy جدولة الموظفين. في Fresha يتفاوت عمق تقارير العمولات والأداء حسب الباقة، بينما يبيع Booksy باقة واحدة تشمل جميع الميزات. تتضمن ديزي جميع ميزات الموظفين في كل خطة.',
         },
         {
           question: 'كيف أتتبع أداء موظفي الصالون؟',
