@@ -467,62 +467,82 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'Acuity Scheduling',
     website: 'https://acuityscheduling.com',
     tier: 3,
-    description: 'A general-purpose scheduling tool owned by Squarespace. Nothing about it is specific to beauty, though some independent professionals use it anyway.',
-    founded: '2006',
+    // Sources read 2026-10-09: acuityscheduling.com/pricing, /features,
+    // /features/point-of-sale, /features/client-management,
+    // /features/staff-management, /solutions/beauty, /about.
+    description: 'A general-purpose online scheduling tool, owned by Squarespace since 2019 and used across many industries, beauty among them. It covers booking, payments, client profiles and staff calendars.',
+    founded: '2006', // acuityscheduling.com/about: "Acuity was founded in 2006"
     headquarters: 'New York, USA (Squarespace)',
 
     features: {
-      onlineBooking: 3, posAndPayments: 1, clientManagement: 1, staffManagement: 1,
-      marketingAndCrm: 1, inventoryManagement: 0, reportingAndAnalytics: 1,
-      marketplaceAndDiscovery: 0, aiCapabilities: 0, brandingAndWhiteLabel: 1,
+      onlineBooking: 3, posAndPayments: 2, clientManagement: 2, staffManagement: 2,
+      marketingAndCrm: 1, inventoryManagement: 0, reportingAndAnalytics: 2,
+      marketplaceAndDiscovery: 0, aiCapabilities: 1, brandingAndWhiteLabel: 2,
     },
 
+    // acuityscheduling.com/pricing, read 2026-10-09. USD, before tax. "Pay
+    // annually / Save 20%" vs "Pay monthly": Starter $16 / $20, Standard
+    // $27 / $34, Premium $49 / $61 per month. Plans renamed from
+    // Emerging / Growing / Powerhouse.
     pricing: {
       hasFreePlan: false,
-      startingPrice: '$16/mo',
+      freeTrialDays: 7,
+      startingPrice: '$16/mo billed annually',
       startingPriceNumeric: 16,
       tiers: [
-        { name: 'Emerging', price: '$16/mo', priceNumeric: 16, features: ['1 calendar', 'Online booking', 'Payment collection'] },
-        { name: 'Growing', price: '$27/mo', priceNumeric: 27, features: ['6 calendars', 'SMS reminders', 'Packages'] },
-        { name: 'Powerhouse', price: '$49/mo', priceNumeric: 49, features: ['36 calendars', 'Custom API', 'Multiple locations'] },
+        { name: 'Starter', price: '$20/mo, or $16/mo billed annually', priceNumeric: 16, features: ['1 calendar', 'Payments via Stripe, Square, PayPal or Venmo', 'Email reminders', 'Custom client forms'] },
+        { name: 'Standard', price: '$34/mo, or $27/mo billed annually', priceNumeric: 27, features: ['Up to 6 calendars', 'Text reminders', 'Waitlist', 'Memberships, packages and gift certificates'] },
+        { name: 'Premium', price: '$61/mo, or $49/mo billed annually', priceNumeric: 49, features: ['Up to 36 calendars', 'AI Booking Assistant', 'HIPAA BAA', 'Custom API and CSS'] },
       ],
-      hiddenCosts: ['Very basic, beauty businesses need additional tools', 'Payment processing fees'],
+      // /features/point-of-sale: "Acuity itself does not charge additional
+      // fees for using payment features, but processing fees will apply based
+      // on the payment processor you use (Stripe, Square, or PayPal)."
+      hiddenCosts: [
+        'Card processing fees from Stripe, Square or PayPal (Acuity adds no payment fee of its own)',
+        'Prices exclude applicable taxes',
+      ],
       pricingModel: 'flat',
-      lastVerified: '2026-03-13',
+      pricingPageUrl: 'https://acuityscheduling.com/pricing',
+      lastVerified: '2026-10-09',
     },
 
-    reviews: [{ platform: 'Capterra', rating: 4.8, reviewCount: 5600 }],
+    // Capterra product page, Wayback snapshot 2026-09-21: 4.8, 5,766 reviews.
+    reviews: [{ platform: 'Capterra', rating: 4.8, reviewCount: 5766 }],
 
     gccPresence: {
       hasArabicUI: false, arabicQuality: 'none', gccCountries: [],
       localCompliance: false, localPaymentMethods: false, localSupport: false,
     },
 
+    // /features: "Book smarter with the Booking Assistant, an AI chat bot that
+    // get clients booked. (*Available on the Premium plan)". /solutions/beauty:
+    // clients "describe it in plain language and walk away with a confirmed
+    // appointment ... even after hours."
     aiCapabilities: {
-      hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
+      hasAiReceptionist: true, hasAiChatbot: true, hasSmartScheduling: false,
       hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'No AI. A generic scheduling tool.',
+      aiDescription: 'AI Booking Assistant on the Premium plan: an AI chat bot that lets clients book in plain language, including after hours.',
     },
 
-    daisyAdvantages: ['Purpose-built for beauty vs generic scheduling', 'AI receptionist', 'Full business suite (POS, CRM, marketing)', 'Marketplace + cashback', 'Arabic/GCC'],
-    daisySwitchingReasons: ['Need beauty-specific features', 'Want AI', 'Need POS/payments integration', 'Want marketplace and customer acquisition'],
-    competitorStrengths: ['Very affordable ($16/mo)', 'Excellent booking experience', 'Highest review count (5,600)', 'Squarespace integration'],
-    competitorWeaknesses: ['Not beauty-specific', 'No POS/inventory/CRM', 'No AI', 'No marketplace', 'No Arabic/GCC'],
+    daisyAdvantages: ['Built for beauty businesses rather than general scheduling', 'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English', 'Inventory, marketing and cashback in the same platform', 'Consumer marketplace with cashback', 'Arabic interface and GCC focus'],
+    daisySwitchingReasons: ['Need beauty-specific features', 'Want an AI receptionist on WhatsApp and Instagram', 'Need inventory and marketing in the same system', 'Want marketplace and customer acquisition'],
+    competitorStrengths: ['Starter plan from $16/mo billed annually', 'Rated 4.8/5 from 5,700+ reviews on Capterra', 'In-person payments with card readers or Tap to Pay', 'Works with Squarespace or any other website'],
+    competitorWeaknesses: ['General scheduling tool rather than beauty-specific software', 'AI Booking Assistant only on the Premium plan', 'No inventory tracking or consumer marketplace listed on its published pages as of October 2026', 'No Arabic interface published'],
 
     faq: [
-      { question: 'How does Acuity compare to Daisy for salons?', answer: 'Acuity is a general scheduling tool at $16-49/mo. It handles basic booking well and has no POS, no inventory, no client management, no AI and no marketplace. Daisy was built for beauty businesses, with the management and growth tools to match.' },
-      { question: 'Is Acuity Scheduling really just a calendar or does it have salon features?', answer: 'At bottom Acuity is a calendar, not salon software. There is no POS, no inventory management, no formula tracking, no service menus and no staff commissions. Most salons on Acuity end up buying several other tools to fill the gaps. Daisy holds all of it in one platform.' },
-      { question: 'What hidden costs should I expect with Acuity Scheduling?', answer: 'The subscription itself is cheap at $16-49/mo. A beauty business then adds separate tools for POS, CRM, marketing and inventory, each with its own bill, and payment processing fees on top. Daisy puts all of it in one platform.' },
+      { question: 'How does Acuity compare to Daisy for salons?', answer: 'Acuity is general scheduling software, priced from $16/mo billed annually ($20 monthly) up to $49/mo billed annually ($61 monthly). It covers booking, payments, client profiles and staff calendars, and its Premium plan adds an AI Booking Assistant. Daisy is built for beauty businesses, with an AI receptionist on WhatsApp, Instagram and its booking site, a consumer marketplace with cashback, and Arabic and English as equals.' },
+      { question: 'Does Acuity Scheduling have salon features?', answer: 'Acuity has a beauty and salon solution covering online booking, deposits, in-person payments by card reader or Tap to Pay, client profiles with notes and history, intake forms, packages, gift certificates and staff permissions. Inventory tracking isn\'t listed on Acuity\'s published pages as of October 2026. Daisy is built around how beauty businesses work, with inventory, marketing and cashback in the same platform.' },
+      { question: 'What does Acuity cost beyond the subscription?', answer: 'Acuity publishes three plans in USD, before tax: Starter at $20/mo ($16/mo billed annually), Standard at $34/mo ($27/mo billed annually) and Premium at $61/mo ($49/mo billed annually). Acuity says it charges no setup, cancellation or support fees and no fee of its own on payments. Card processing fees come from the processor you connect: Stripe, Square or PayPal.' },
       { question: 'Can I migrate my booking data from Acuity to Daisy?', answer: 'Yes. Daisy moves client records, appointment history and booking preferences across from Acuity, with the onboarding team handling the transition.' },
-      { question: 'Does Acuity Scheduling support Arabic or work in the Gulf region?', answer: 'No. Acuity is a US product, owned by Squarespace, with no Arabic interface, no GCC compliance and no Middle Eastern payment methods. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today.' },
-      { question: 'Does Acuity have any AI features for my salon?', answer: 'No. There is no AI receptionist, no chatbot, no smart scheduling and no AI marketing. It is a straightforward scheduling tool. Daisy\'s 24/7 AI receptionist takes bookings, answers client questions and processes payments by itself.' },
-      { question: 'Why do so many people use Acuity if it\'s not built for salons?', answer: 'Acuity holds a 4.8 rating across 5,600+ reviews because it is an excellent general scheduling tool: simple, reliable and cheap. Beauty businesses tend to outgrow it once they need POS, client management, staff scheduling and marketing. That trajectory is what Daisy was built for.' },
-      { question: 'How does Acuity\'s Squarespace integration compare to what Daisy offers?', answer: 'The Squarespace integration embeds booking in your website, and that is all it does. Daisy brings marketplace visibility, an AI receptionist, POS, CRM and marketing, which is a good deal more than a booking widget.' },
-      { question: 'Can Acuity help me attract new clients or just manage bookings?', answer: 'Acuity manages bookings and does nothing to find you customers: no marketplace, no cashback, nowhere to be discovered. Daisy includes a consumer marketplace, cashback rewards and AI-powered marketing to bring new clients in.' },
-      { question: 'What support does Acuity offer for beauty business owners?', answer: 'Support is general email and a knowledge base, with no beauty-specific guidance and no account manager. Daisy provides onboarding built for beauty businesses, Arabic-speaking support staff and local GCC teams who understand how a salon runs.' },
+      { question: 'Does Acuity Scheduling support Arabic or work in the Gulf region?', answer: 'Acuity doesn\'t publish an Arabic interface, GCC pricing or Gulf payment methods as of October 2026. It is owned by Squarespace, a US company. Daisy runs natively in Arabic and English and is live in all six GCC countries.' },
+      { question: 'Does Acuity have any AI features for my salon?', answer: 'Yes. Acuity\'s Premium plan ($49/mo billed annually, $61 monthly) includes the AI Booking Assistant, a chat bot that lets clients describe what they want in plain language and book, including after hours. Daisy\'s AI receptionist works 24/7 on WhatsApp, Instagram and the booking site, in Arabic and English, and takes bookings, answers client questions and processes payments.' },
+      { question: 'Why do so many businesses use Acuity?', answer: 'Acuity is rated 4.8/5 from more than 5,700 reviews on Capterra, and it serves businesses in many industries, from consultants to salons. Daisy is built for beauty businesses specifically, and adds an AI receptionist on WhatsApp and Instagram, a marketplace with cashback, and Arabic.' },
+      { question: 'How does Acuity\'s Squarespace integration compare to what Daisy offers?', answer: 'Acuity integrates with Squarespace websites, and you can also embed it on any other site or use it without a website. Daisy adds marketplace visibility, an AI receptionist on WhatsApp and Instagram, POS, CRM and marketing tools in one platform.' },
+      { question: 'Can Acuity help me attract new clients or just manage bookings?', answer: 'Acuity offers coupons, gift certificates, packages, a waitlist and a booking page you can share by link or QR code. A consumer marketplace isn\'t listed on Acuity\'s published pages as of October 2026. Daisy includes a consumer marketplace, cashback rewards and AI-powered marketing to bring new clients in.' },
+      { question: 'What support does Acuity offer for beauty business owners?', answer: 'Acuity includes customer support on every plan and runs a help center, a user forum and webinars. Its Enterprise offering adds VIP account management. Daisy provides onboarding built for beauty businesses, Arabic-speaking support staff and local GCC teams who understand how a salon runs.' },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
   },
 
   // ---------------------------------------------------------------------------
@@ -533,62 +553,92 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'SimplyBook.me',
     website: 'https://simplybook.me',
     tier: 3,
-    description: 'A generic booking platform built from 70+ add-on modules. Highly customizable, and it expects you to do the configuring. Nothing specific to beauty.',
-    founded: '2013',
+    // Sources read 2026-10-09: simplybook.me/en/pricing, /en/ai-voice-booking,
+    // /en/ai-scheduling-assistant, /en/marketing-tools, /en/about-us,
+    // /en/contact-us, help.simplybook.me (custom wording and translations).
+    description: 'Booking software for many industries, built on more than 70 custom features that a business switches on as needed. It includes POS, marketing tools and AI booking options.',
+    // /en/about-us: "In 2009, in Iceland, we set out to solve a simple but
+    // frustrating problem ... In 2011, we rebranded to SimplyBook.me".
+    founded: '2009',
+    // /en/contact-us: "Nafpliou 28, Medical Court ... 3025, Limassol, Cyprus".
     headquarters: 'Limassol, Cyprus',
 
     features: {
-      onlineBooking: 2, posAndPayments: 1, clientManagement: 1, staffManagement: 1,
-      marketingAndCrm: 1, inventoryManagement: 0, reportingAndAnalytics: 1,
-      marketplaceAndDiscovery: 1, aiCapabilities: 0, brandingAndWhiteLabel: 1,
+      onlineBooking: 2, posAndPayments: 2, clientManagement: 2, staffManagement: 2,
+      marketingAndCrm: 2, inventoryManagement: 0, reportingAndAnalytics: 2,
+      marketplaceAndDiscovery: 1, aiCapabilities: 2, brandingAndWhiteLabel: 2,
     },
 
+    // US pricing from the Wayback snapshot of simplybook.me/en/pricing dated
+    // 2026-09-26 (USD). The live page read 2026-10-09 from Kuwait shows the
+    // same figures in EUR (Basic EUR 11.9 billed annually / EUR 13.9 monthly).
+    // Add-on credits as listed on the live page in USD.
     pricing: {
       hasFreePlan: true,
-      startingPrice: 'Free (paid from $8.25/mo)',
+      freeTrialDays: 14,
+      startingPrice: 'Free (paid from $11.9/mo billed annually)',
       startingPriceNumeric: 0,
       tiers: [
-        { name: 'Free', price: 'Free', priceNumeric: 0, features: ['50 bookings/mo', 'Basic calendar', '1 provider'] },
-        { name: 'Basic', price: '$8.25/mo', priceNumeric: 8.25, features: ['100 bookings/mo', '3 custom features', 'Email reminders'] },
-        { name: 'Standard', price: '$24.90/mo', priceNumeric: 24.9, features: ['500 bookings/mo', '8 custom features', 'POS'] },
-        { name: 'Premium', price: '$59.90/mo', priceNumeric: 59.9, features: ['Unlimited bookings', 'Unlimited features', 'Priority support'] },
+        { name: 'Free', price: 'Free', priceNumeric: 0, features: ['50 bookings/mo', '1 provider', '1 premium custom feature'] },
+        { name: 'Basic', price: '$13.9/mo, or $11.9/mo billed annually', priceNumeric: 11.9, features: ['100 bookings/mo', '5 providers', 'Sales (POS)'] },
+        { name: 'Standard', price: '$29.9/mo, or $24.9/mo billed annually', priceNumeric: 24.9, features: ['500 bookings/mo', '15 providers', 'Branded Client App', 'HIPAA'] },
+        { name: 'Premium', price: '$59.9/mo, or $49.9/mo billed annually', priceNumeric: 49.9, features: ['2,000 bookings/mo', '30 providers', 'Payments PRO', 'Unlimited custom features'] },
+        { name: 'Enterprise', price: 'Pricing on request', features: ['Multi-location access', 'Account manager', 'Full white label'] },
       ],
-      hiddenCosts: ['Features are add-on modules, costs accumulate', 'SMS costs extra'],
+      hiddenCosts: [
+        'SMS credits: $8 per 100',
+        'WhatsApp credits: $8 per 100',
+        'AI Voice Booking credits: $8 per 100',
+        'Extra bookings: $4 per 100',
+      ],
       pricingModel: 'usage-based',
-      lastVerified: '2026-03-13',
+      pricingPageUrl: 'https://simplybook.me/en/pricing',
+      lastVerified: '2026-10-09',
     },
 
-    reviews: [{ platform: 'Capterra', rating: 4.6, reviewCount: 1200 }],
+    // Capterra product page, Wayback snapshot 2026-09-21: 4.6, 1,289 reviews.
+    reviews: [{ platform: 'Capterra', rating: 4.6, reviewCount: 1289 }],
 
+    // Arabic is not in the "Multiple languages" list on /en/pricing (English,
+    // Taiwanese, French, Chinese, Spanish, Korean, German, Japanese, Russian,
+    // Portuguese, Brazilian Portuguese, Italian, Dutch, Ukrainian, Czech,
+    // Norwegian, Swedish, Danish, Greek, Hungarian, Finnish, Polish). Custom
+    // wording lets a business translate the booking site itself. No GCC
+    // country site, office or local-currency pricing found.
     gccPresence: {
-      hasArabicUI: true, arabicQuality: 'translated', gccCountries: ['UAE'],
+      hasArabicUI: false, arabicQuality: 'none', gccCountries: [],
       localCompliance: false, localPaymentMethods: false, localSupport: false,
     },
 
+    // /en/ai-scheduling-assistant: Ask Simply "is the AI scheduling assistant
+    // built directly into your SimplyBook.me admin". /en/ai-voice-booking:
+    // "AI Voice Booking to your website and social media (Facebook, Whatsapp,
+    // Instagram)"; "Support across 50+ languages, including ... Arabic";
+    // credits "€8 for 100 credits".
     aiCapabilities: {
-      hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
-      hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'No AI. Features arrive through a modular add-on system.',
+      hasAiReceptionist: true, hasAiChatbot: true, hasSmartScheduling: false,
+      hasAiMarketing: false, hasAiAnalytics: true, hasAiPricing: false,
+      aiDescription: 'Ask Simply, an AI assistant in the admin that sets up services, schedules and reports by chat; and AI Voice Booking, a paid add-on on prepaid credits that books clients by voice or text on the website, Facebook, Instagram and WhatsApp, in 50+ languages including Arabic.',
     },
 
-    daisyAdvantages: ['Beauty-specific vs generic booking', 'AI receptionist', 'Integrated platform vs modular add-ons', 'Native Arabic vs translated', 'Marketplace + cashback', 'GCC compliance'],
-    daisySwitchingReasons: ['Need beauty-specific platform', 'Want AI features', 'Tired of managing add-on modules', 'Need native Arabic, not translated'],
-    competitorStrengths: ['Very affordable', 'Highly customizable (70+ modules)', 'Free plan', 'Some Arabic support'],
-    competitorWeaknesses: ['Not beauty-specific', 'Add-on complexity', 'No AI', 'Translated (not native) Arabic', 'No marketplace'],
+    daisyAdvantages: ['Built for beauty businesses rather than general booking', 'AI receptionist included in every plan', 'One integrated platform rather than features switched on one by one', 'Arabic interface with right-to-left layout', 'Marketplace with cashback', 'Live in all six GCC countries'],
+    daisySwitchingReasons: ['Need a beauty-specific platform', 'Want an AI receptionist included in the plan', 'Prefer an integrated platform to switching features on one by one', 'Need an Arabic interface'],
+    competitorStrengths: ['Free plan, with paid plans from $11.9/mo billed annually', 'More than 70 custom features to choose from', 'AI Voice Booking on web, Facebook, Instagram and WhatsApp, Arabic included', 'Sales (POS) from the Basic plan', 'Rated 4.6/5 from 1,280+ reviews on Capterra'],
+    competitorWeaknesses: ['General booking software rather than beauty-specific', 'Premium custom features capped by plan below Premium', 'AI Voice Booking and SMS run on prepaid credits', 'Arabic isn\'t among its listed interface languages as of October 2026', 'Loyalty runs on points rather than cashback'],
 
     faq: [
-      { question: 'How does SimplyBook.me compare to Daisy?', answer: 'SimplyBook.me is a generic booking tool assembled from modular add-ons. Daisy was built for beauty, with AI, a marketplace, cashback and native Arabic. SimplyBook\'s Arabic is translated; Daisy treats Arabic as an equal priority.' },
-      { question: 'How much does SimplyBook.me actually cost with all the add-on modules?', answer: 'It starts free, or at $8.25/mo, and a beauty business then needs several add-on modules for POS, CRM and marketing, each adding to the bill. SMS reminders are charged on top. The total often passes what Daisy costs all-inclusive, with the AI and marketplace included.' },
-      { question: 'Is SimplyBook.me\'s Arabic support good enough for GCC businesses?', answer: 'The Arabic is translated, and it reads that way, with awkward phrasing and little cultural feel. GCC compliance is minimal and there are no local payment methods. Daisy treats Arabic as equal to English, supports right-to-left properly, and meets GCC requirements across all six countries.' },
-      { question: 'Can I migrate my data from SimplyBook.me to Daisy?', answer: 'Yes. Daisy moves client records, booking history and service configurations across, and handles the shift from a modular add-on system to an integrated platform.' },
-      { question: 'Does SimplyBook.me have AI features?', answer: 'No. There is no AI receptionist, no chatbot, no smart scheduling and no AI marketing. Features arrive by picking modules yourself. Daisy\'s AI receptionist handles bookings, customer questions and payments 24/7.' },
-      { question: 'Is managing 70+ add-on modules in SimplyBook.me complicated?', answer: 'Many users say so. Choosing among 70+ modules, configuring each one and keeping them compatible takes real time. On Daisy the beauty-specific features are already integrated and work together from the start.' },
-      { question: 'Does SimplyBook.me have a marketplace to help me get new clients?', answer: 'There is a basic business directory, which is not the same thing as a consumer marketplace. Daisy includes a full one, with cashback rewards and discovery features that bring new customers to you.' },
-      { question: 'How does SimplyBook.me\'s mobile app compare to Daisy?', answer: 'SimplyBook.me\'s app handles basic booking management. Daisy\'s covers the whole salon, with the AI receptionist, marketplace visibility, live analytics and native Arabic and English, built for beauty professionals.' },
-      { question: 'What customer support does SimplyBook.me offer?', answer: 'Support comes by email and chat, backed by a knowledge base, in English with limited coverage in other languages. Daisy provides beauty industry support, Arabic-speaking representatives and local GCC teams.' },
+      { question: 'How does SimplyBook.me compare to Daisy?', answer: 'SimplyBook.me is booking software for many industries, built from 70+ custom features you switch on. It includes Sales (POS) from Basic, an AI assistant called Ask Simply, and AI Voice Booking on prepaid credits. Daisy is built for beauty, with an AI receptionist included in every plan, a marketplace with cashback, and Arabic and English as equals.' },
+      { question: 'How much does SimplyBook.me cost?', answer: 'US pricing: Free is $0 for 50 bookings a month; Basic is $13.9/mo, or $11.9/mo billed annually; Standard is $29.9/mo, or $24.9/mo billed annually; Premium is $59.9/mo, or $49.9/mo billed annually; Enterprise is priced on request. Plans are set by booking volume, number of providers and how many premium custom features you can switch on. SMS, WhatsApp and AI Voice Booking credits cost $8 per 100, and extra bookings $4 per 100.' },
+      { question: 'Does SimplyBook.me support Arabic?', answer: 'Arabic isn\'t among the interface languages SimplyBook.me lists as of October 2026, though its custom wording tool lets you translate the booking site yourself and its client app has a right-to-left option. Its AI Voice Booking lists Arabic among 50+ languages. Daisy treats Arabic as equal to English, with right-to-left layout built in, and is live in all six GCC countries.' },
+      { question: 'Can I migrate my data from SimplyBook.me to Daisy?', answer: 'Yes. Daisy moves client records, booking history and service configurations across, and the onboarding team handles the switch.' },
+      { question: 'Does SimplyBook.me have AI features?', answer: 'Yes. Ask Simply is an AI assistant inside the admin that creates services, sets opening hours, switches on features and answers report questions by chat. AI Voice Booking is a paid add-on that lets clients book by voice or text on your website, Facebook, Instagram and WhatsApp, and can take calls to your WhatsApp Business number; it runs on prepaid credits ($8 per 100). Daisy\'s AI receptionist is included in every plan and works 24/7 on WhatsApp, Instagram and the booking site, in Arabic and English.' },
+      { question: 'How do SimplyBook.me\'s custom features work?', answer: 'SimplyBook.me has 70+ custom features, such as POS, intake forms, memberships and gift cards. Free features are unlimited, while premium ones count against your plan: 1 on Free, 3 on Basic, 8 on Standard and unlimited on Premium. Ask Simply can switch features on for you. On Daisy the beauty-specific features come built in and work together from the start.' },
+      { question: 'Does SimplyBook.me have a marketplace to help me get new clients?', answer: 'SimplyBook.me lists businesses in its Booking.page directory, which it calls a marketplace, and takes bookings through Google, Facebook and Instagram. Its loyalty system uses points. Daisy pairs its consumer marketplace with cashback rewards that bring new customers to you.' },
+      { question: 'How does SimplyBook.me\'s mobile app compare to Daisy?', answer: 'SimplyBook.me has an Admin App for iOS and Android and a Client App, which can carry your branding from the Standard plan. Daisy\'s app covers the AI receptionist, marketplace visibility, live analytics, and Arabic and English, built for beauty professionals.' },
+      { question: 'What customer support does SimplyBook.me offer?', answer: 'SimplyBook.me offers live chat, email, a help centre and video tutorials, and its Enterprise plan adds an account manager. Daisy provides beauty industry support, Arabic-speaking representatives and local GCC teams.' },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
   },
 
   // ---------------------------------------------------------------------------
@@ -599,61 +649,80 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'Setmore',
     website: 'https://www.setmore.com',
     tier: 3,
-    description: 'A free general-purpose scheduling tool with basic features and wide appeal. Nothing in it is specific to beauty.',
-    founded: '2011',
-    headquarters: 'Portland, OR, USA',
+    // Sources read 2026-10-09: setmore.com/pricing, /features,
+    // /features/live-receptionist, /integrations/google-ai-studio, /terms.
+    description: 'A general-purpose scheduling tool with a free plan for up to 4 users, used across many industries, beauty among them.',
+    // No founding year is given on Setmore's own pages or in a dated press
+    // source we could find, so none is published here.
+    // setmore.com/terms: "The Site is controlled and operated by Setmore in
+    // Raleigh, North Carolina, United States of America."
+    headquarters: 'Raleigh, NC, USA',
 
     features: {
-      onlineBooking: 2, posAndPayments: 1, clientManagement: 1, staffManagement: 1,
-      marketingAndCrm: 0, inventoryManagement: 0, reportingAndAnalytics: 1,
-      marketplaceAndDiscovery: 0, aiCapabilities: 0, brandingAndWhiteLabel: 0,
+      onlineBooking: 2, posAndPayments: 2, clientManagement: 2, staffManagement: 2,
+      marketingAndCrm: 1, inventoryManagement: 0, reportingAndAnalytics: 1,
+      marketplaceAndDiscovery: 1, aiCapabilities: 1, brandingAndWhiteLabel: 2,
     },
 
+    // setmore.com/pricing, read 2026-10-09. Free: "$0 user / mo", "Up to 4
+    // users". Pro: "Unlimited users", "$12 and $5 user / month", "*Annual
+    // pricing" for the $5. The Free column lists in-person payments, Tap to
+    // Pay, cash register, customer profiles and "24/7 human support: Chat,
+    // email, and phone". Live Receptionist: "add for $99 / month",
+    // "Service available in the US only."
     pricing: {
       hasFreePlan: true,
-      startingPrice: 'Free (paid from $5/mo)',
+      startingPrice: 'Free (paid from $5/mo per user, billed annually)',
       startingPriceNumeric: 0,
       tiers: [
-        { name: 'Free', price: 'Free', priceNumeric: 0, features: ['Up to 4 staff', 'Online booking', 'Email reminders'] },
-        { name: 'Pro', price: '$5/mo', priceNumeric: 5, perStaff: true, perStaffCost: '$5/user/mo', features: ['SMS reminders', 'Recurring appointments', 'Custom booking page'] },
-        { name: 'Team', price: '$12/mo', priceNumeric: 12, perStaff: true, perStaffCost: '$12/user/mo', features: ['Everything in Pro', 'Payment processing', 'Advanced features'] },
+        { name: 'Free', price: 'Free', priceNumeric: 0, features: ['Up to 4 users', 'Online booking', 'In-person payments and Tap to Pay', 'Customer profiles', '24/7 human support'] },
+        { name: 'Pro', price: '$12/mo per user, or $5/mo per user billed annually', priceNumeric: 5, features: ['Unlimited users', 'SMS reminders (500 credits per user per month)', 'Recurring appointments', 'Remove Setmore branding'] },
       ],
-      hiddenCosts: ['Per-user pricing scales', 'Very basic features'],
+      hiddenCosts: [
+        'Live Receptionist (human call answering, US only): $99/mo add-on',
+        'Extra SMS credits beyond the 500 a month per Pro user, bought in-app',
+      ],
       pricingModel: 'per-staff',
-      lastVerified: '2026-03-13',
+      pricingPageUrl: 'https://www.setmore.com/pricing',
+      lastVerified: '2026-10-09',
     },
 
-    reviews: [{ platform: 'Capterra', rating: 4.7, reviewCount: 900 }],
+    // Capterra product page, Wayback snapshot 2026-08-29: 4.6, 959 reviews.
+    reviews: [{ platform: 'Capterra', rating: 4.6, reviewCount: 959 }],
 
     gccPresence: {
       hasArabicUI: false, arabicQuality: 'none', gccCountries: [],
       localCompliance: false, localPaymentMethods: false, localSupport: false,
     },
 
+    // No AI receptionist or chatbot on setmore.com/pricing, /features or the
+    // site map as of 2026-10-09. /integrations/google-ai-studio: "Let Gemini
+    // transform booking data into summaries, follow-ups, and key insights"
+    // (set up through Zapier).
     aiCapabilities: {
       hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'No AI capabilities.',
+      aiDescription: 'No AI receptionist or chatbot is listed on Setmore\'s published pages as of October 2026. Setmore documents a Zapier connection to Google AI Studio (Gemini) for booking summaries and follow-up drafts, and sells a human Live Receptionist service in the US.',
     },
 
-    daisyAdvantages: ['Complete beauty platform vs basic scheduling', 'AI receptionist', 'POS, CRM, marketing included', 'Arabic/GCC', 'Marketplace + cashback'],
-    daisySwitchingReasons: ['Outgrowing basic scheduling', 'Need beauty-specific features', 'Want AI', 'Need Arabic/GCC'],
-    competitorStrengths: ['Free plan with 4 staff', 'Simple and easy', 'Good reviews'],
-    competitorWeaknesses: ['Very basic', 'Not beauty-specific', 'No AI', 'No POS/CRM', 'No Arabic/GCC', 'No marketplace'],
+    daisyAdvantages: ['Built for beauty businesses rather than general scheduling', 'AI receptionist on WhatsApp, Instagram and the booking site', 'Inventory, marketing and cashback in one platform', 'Arabic interface and GCC focus', 'Consumer marketplace with cashback'],
+    daisySwitchingReasons: ['Outgrowing general scheduling', 'Need beauty-specific features', 'Want an AI receptionist', 'Need Arabic/GCC'],
+    competitorStrengths: ['Free plan for up to 4 users', 'In-person payments, Tap to Pay and customer profiles on the free plan', '24/7 human support by chat, email and phone, free plan included', 'Rated 4.6/5 from 950+ reviews on Capterra'],
+    competitorWeaknesses: ['General scheduling tool rather than beauty-specific software', 'No AI receptionist or chatbot listed as of October 2026', 'SMS reminders only on the paid Pro plan', 'No Arabic interface or GCC pricing published', 'No consumer marketplace listed'],
 
     faq: [
-      { question: 'How does Setmore compare to Daisy?', answer: 'Setmore is a free basic scheduling tool. Daisy is a complete AI-powered platform for a beauty business. Setmore is fine to start on, and anyone who needs POS, CRM, AI, a marketplace or Arabic will outgrow it.' },
-      { question: 'Is Setmore really free and what are the catch costs?', answer: 'The free plan covers up to 4 staff on basic scheduling, and paid plans run $5-12 per user per month, which mounts up across a bigger team. The real cost is what is absent: no POS, no CRM, no marketing, no AI, no marketplace. Most growing salons end up buying several paid tools to sit alongside it.' },
+      { question: 'How does Setmore compare to Daisy?', answer: 'Setmore is general scheduling software with a free plan for up to 4 users that already covers online booking, in-person payments, customer profiles and 24/7 human support. Daisy is built for beauty businesses, with an AI receptionist on WhatsApp, Instagram and the booking site, a consumer marketplace with cashback, and Arabic and English as equals.' },
+      { question: 'Is Setmore really free, and what do the paid plans cost?', answer: 'Setmore\'s Free plan costs $0 for up to 4 users. Pro costs $12 per user per month, or $5 per user per month billed annually, and adds unlimited users, SMS reminders with 500 credits per user each month, recurring appointments and the option to remove Setmore branding. Its human Live Receptionist service is a separate $99/mo plan, available in the US only.' },
       { question: 'Can I migrate my client data from Setmore to Daisy?', answer: 'Yes. Daisy moves client contact details, appointment history and service preferences across from Setmore, with the onboarding team making sure nothing goes missing.' },
-      { question: 'Does Setmore support Arabic or work in the Middle East?', answer: 'No. There is no Arabic interface, no GCC compliance and no Middle Eastern payment methods. It is a US generic scheduling tool. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today.' },
-      { question: 'Does Setmore have any AI features?', answer: 'No. There is no AI receptionist, no chatbot, no smart scheduling and no AI marketing. Daisy\'s 24/7 AI receptionist takes bookings, answers client questions and processes payments on its own.' },
-      { question: 'When should I upgrade from Setmore to a platform like Daisy?', answer: 'When you start needing POS, client history, formula tracking, staff commissions or marketing tools, because Setmore has none of them. The same goes for wanting AI to pick up after-hours bookings or a marketplace to bring new clients in.' },
-      { question: 'How does Setmore\'s mobile app compare to Daisy?', answer: 'Setmore\'s app views and manages appointments. Daisy\'s covers the whole salon: the AI receptionist, marketplace visibility, cashback tracking, live analytics and Arabic and English throughout.' },
-      { question: 'Can Setmore help me grow my client base?', answer: 'No. Setmore schedules appointments. There is no marketplace, no cashback and no marketing automation. Daisy includes a consumer marketplace, a cashback program and AI-powered marketing to bring new customers in.' },
-      { question: 'What customer support does Setmore provide compared to Daisy?', answer: 'Support is email and a help centre, with no phone line on free plans and nobody who knows the beauty industry. Daisy provides beauty industry support, Arabic-speaking representatives, dedicated onboarding and local GCC teams.' },
+      { question: 'Does Setmore support Arabic or work in the Middle East?', answer: 'Setmore publishes its site in English, French, German, Spanish, Italian and Portuguese, with no Arabic interface and no GCC pricing as of October 2026. Daisy runs natively in Arabic and English and is live in all six GCC countries.' },
+      { question: 'Does Setmore have any AI features?', answer: 'No AI receptionist or chatbot is listed on Setmore\'s published pages as of October 2026. Setmore documents a Zapier connection to Google AI Studio that uses Gemini to draft booking summaries and follow-ups, and it sells a Live Receptionist service staffed by people, in the US only. Daisy\'s AI receptionist works 24/7 on WhatsApp, Instagram and the booking site, taking bookings, answering client questions and processing payments.' },
+      { question: 'When should I upgrade from Setmore to a platform like Daisy?', answer: 'When you want software built around a beauty business: inventory, marketing with cashback, an AI receptionist that handles WhatsApp and Instagram after hours, or a marketplace that brings new clients in. Setmore already covers booking, payments and customer profiles, so the move is about growth more than day-to-day operations.' },
+      { question: 'How does Setmore\'s mobile app compare to Daisy?', answer: 'Setmore has iOS and Android apps for managing appointments, and clients can add your booking page to their home screen like an app. Daisy\'s app covers the AI receptionist, marketplace visibility, cashback tracking, live analytics, and Arabic and English throughout.' },
+      { question: 'Can Setmore help me grow my client base?', answer: 'Setmore lets clients book through Reserve with Google, Facebook and Instagram buttons and your website, and its Pro plan sends Google review requests. A consumer marketplace and cashback aren\'t listed on its published pages as of October 2026. Daisy includes a consumer marketplace, a cashback program and AI-powered marketing to bring new customers in.' },
+      { question: 'What customer support does Setmore provide compared to Daisy?', answer: 'Setmore offers 24/7 human support by chat, email and phone on every plan, with priority support and instant video support on Pro. Daisy provides beauty industry support, Arabic-speaking representatives, dedicated onboarding and local GCC teams.' },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
   },
 
   // ---------------------------------------------------------------------------
@@ -854,62 +923,89 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     name: 'SQUIRE',
     website: 'https://www.getsquire.com',
     tier: 3,
-    description: 'A management platform built for barbershops, with POS and a marketplace, and aimed at that vertical alone.',
+    // getsquire.com returns a Cloudflare 403 to our requests (curl and
+    // WebFetch, 2026-10-09), so these facts come from the latest Wayback
+    // snapshots: /pricing and / on 2026-08-05, /features/pos-payments on
+    // 2026-06-13, /company on 2026-06-04.
+    description: 'Business management software and POS built for barbershops, with online booking, discovery through Google, Instagram and the SQUIRE app, and an AI phone receptionist sold as an add-on.',
+    // /company: "SQUIRE was officially launched in 2015".
     founded: '2015',
+    // Fortune, 28 Jul 2021: "The company, which is based out of New York".
     headquarters: 'New York, NY, USA',
-    funding: '$165M+',
+    // AfroTech, 28 Jul 2021: the $60M Series D brought "its total raised since
+    // launching to roughly $165 million".
+    funding: 'About $165M raised through its 2021 Series D',
 
     features: {
       onlineBooking: 2, posAndPayments: 2, clientManagement: 2, staffManagement: 2,
-      marketingAndCrm: 1, inventoryManagement: 0, reportingAndAnalytics: 2,
-      marketplaceAndDiscovery: 2, aiCapabilities: 0, brandingAndWhiteLabel: 0,
+      marketingAndCrm: 2, inventoryManagement: 2, reportingAndAnalytics: 2,
+      marketplaceAndDiscovery: 2, aiCapabilities: 2, brandingAndWhiteLabel: 2,
     },
 
+    // /pricing JSON-LD offers (US): Independent $30, Pro $50, Executive $150,
+    // Titan $250 per month; also CAD, GBP and EUR offers for Canada, the UK and
+    // the EU. FAQ: "Every plan is flat-rate - one monthly fee per shop, no
+    // per-barber charges." Executive lists "Operator AI phone answering
+    // (add-on: $99/mo)" and "branded website and landing pages (add-on:
+    // $25/mo)". No card processing rate is published in readable text, so
+    // none is quoted here.
     pricing: {
       hasFreePlan: false,
       startingPrice: '$30/mo',
       startingPriceNumeric: 30,
       tiers: [
-        { name: 'Standard', price: '$30/mo', priceNumeric: 30, perStaff: true, perStaffCost: '+$15-25/barber', features: ['Booking', 'POS', 'Client management', 'Marketplace'] },
+        { name: 'Independent', price: '$30/mo', priceNumeric: 30, features: ['For individual barbers', 'Online booking and no-show protection', 'Engage, powered by SQUIRE AI', 'Reporting with AI-powered insights'] },
+        { name: 'Pro', price: '$50/mo', priceNumeric: 50, features: ['Single-location shops', 'Multiple barber accounts', 'Google and Instagram booking'] },
+        { name: 'Executive', price: '$150/mo per shop', priceNumeric: 150, features: ['Multi-location support', 'Unlimited email and SMS marketing', 'Commission and rent collection'] },
+        { name: 'Titan', price: '$250/mo per shop', priceNumeric: 250, features: ['Branded app', 'Loyalty program and gift cards', 'Inventory tracking and purchase orders'] },
       ],
-      transactionFees: '2.6% + $0.10 per transaction',
-      hiddenCosts: ['Per-barber pricing', 'Payment processing fees'],
-      pricingModel: 'per-staff',
-      lastVerified: '2026-03-13',
+      hiddenCosts: [
+        'Operator AI phone answering: $99/mo add-on (listed on the Executive plan)',
+        'Branded website and landing pages: $25/mo add-on (listed on the Executive plan)',
+      ],
+      pricingModel: 'per-location',
+      pricingPageUrl: 'https://www.getsquire.com/pricing',
+      lastVerified: '2026-10-09',
     },
 
-    reviews: [{ platform: 'Capterra', rating: 4.3, reviewCount: 100 }],
+    // No current Capterra figure could be read (Capterra blocks automated
+    // requests and has no recent snapshot), so no rating is published.
+    reviews: [],
 
     gccPresence: {
       hasArabicUI: false, arabicQuality: 'none', gccCountries: [],
       localCompliance: false, localPaymentMethods: false, localSupport: false,
     },
 
+    // /pricing: "Operator, powered by SQUIRE AI (add-on: $99/mo)", "Engage,
+    // powered by SQUIRE AI", "Reporting and AI-powered insights".
+    // /features/operator: "SQUIRE Operator answers calls and books clients
+    // directly"; "Booking capabilities in English and Spanish".
     aiCapabilities: {
-      hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
-      hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'No AI capabilities.',
+      hasAiReceptionist: true, hasAiChatbot: false, hasSmartScheduling: false,
+      hasAiMarketing: true, hasAiAnalytics: true, hasAiPricing: false,
+      aiDescription: 'SQUIRE AI powers Engage marketing and AI-powered reporting insights. Operator, a $99/mo add-on, answers calls and books clients in English and Spanish.',
     },
 
-    daisyAdvantages: ['Broader beauty/wellness coverage vs barbershop-only', 'AI receptionist', 'Arabic/GCC support', 'Cashback rewards', 'Flat pricing vs per-barber'],
-    daisySwitchingReasons: ['Expanding beyond barbershop services', 'Want AI', 'Need Arabic/GCC', 'Per-barber pricing expensive'],
-    competitorStrengths: ['Deep barbershop expertise', 'Good marketplace', 'Well-funded ($165M)', 'Strong in US barbershop market'],
-    competitorWeaknesses: ['Barbershop-only', 'No AI', 'US-only', 'No Arabic/GCC', 'Per-barber pricing'],
+    daisyAdvantages: ['Built for salons, spas and clinics as well as barbershops', 'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English', 'Arabic interface and GCC focus', 'Cashback rewards'],
+    daisySwitchingReasons: ['Expanding beyond barbershop services', 'Want an AI receptionist on WhatsApp and Instagram, in Arabic', 'Operating in the GCC', 'Want cashback rewards for clients'],
+    competitorStrengths: ['Built specifically for barbershops', 'POS with Tap to Pay, a card reader or full register hardware', 'Client discovery through Google, Instagram and the SQUIRE app', 'A flat monthly price per shop, with no per-barber charge', 'Operator AI phone receptionist in English and Spanish (add-on)'],
+    competitorWeaknesses: ['Focused on barbershops rather than salons, spas or clinics', 'No Arabic interface or GCC pricing published as of October 2026', 'Operator AI receptionist is a $99/mo add-on, listed on the Executive plan'],
 
     faq: [
-      { question: 'How does SQUIRE compare to Daisy?', answer: 'SQUIRE is built for US barbershops specifically. Daisy serves the wider beauty and wellness industry, with AI, a marketplace, cashback and Arabic and GCC support that SQUIRE does not have.' },
-      { question: 'How much does SQUIRE actually cost with per-barber pricing?', answer: 'SQUIRE charges a $30/mo base plus $15-25 for each barber, so a shop with 8 barbers lands at $150-230/mo, before 2.6% + $0.10 on every transaction. Daisy charges flat, with nothing per member of staff, so hiring does not raise the bill.' },
+      { question: 'How does SQUIRE compare to Daisy?', answer: 'SQUIRE is business management software and POS built for barbershops, with prices published for the US, Canada, the UK and the EU. Daisy serves salons, spas, clinics and barbershops, with an AI receptionist on WhatsApp, Instagram and the booking site, cashback rewards, and Arabic and English for the GCC.' },
+      { question: 'How much does SQUIRE cost?', answer: 'SQUIRE\'s published US prices are $30/mo for Independent (solo barbers), $50/mo for Pro (single-location shops), $150/mo per shop for Executive and $250/mo per shop for Titan. SQUIRE says every plan is a flat monthly fee per shop, with no per-barber charge. Operator, its AI phone receptionist, is a $99/mo add-on.' },
       { question: 'Can I switch from SQUIRE to Daisy and keep my client data?', answer: 'Yes. Daisy moves client profiles, appointment history and booking preferences across from SQUIRE, with the onboarding team handling it so no client relationship is lost.' },
-      { question: 'Does SQUIRE work for salons and spas, not just barbershops?', answer: 'No. SQUIRE was built for barbershops alone and lacks what salons, spas and wellness businesses need: advanced service menus, treatment tracking and beauty-specific workflows. Daisy covers the whole spectrum, from salons and spas to barbershops and clinics.' },
-      { question: 'Does SQUIRE support Arabic or work in the GCC?', answer: 'No. SQUIRE is a US platform, with no Arabic interface, no GCC compliance and no Middle Eastern payment methods. Daisy runs natively in Arabic and English with support built for the Gulf, live in Kuwait today.' },
-      { question: 'Does SQUIRE have AI features like Daisy?', answer: 'No. There is no AI receptionist, no chatbot and no smart scheduling. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments in Arabic and English.' },
-      { question: 'How does SQUIRE\'s marketplace compare to Daisy\'s?', answer: 'SQUIRE\'s marketplace covers barbershops in the US and nothing else. Daisy\'s spans the whole beauty and wellness industry across every GCC country, with cashback rewards and AI-powered recommendations behind the discovery.' },
-      { question: 'Is SQUIRE good for a barbershop that also offers other services?', answer: 'SQUIRE is tuned for traditional barbershop services. Add salon services, facials or spa treatments and that narrow focus starts to get in the way. Daisy handles every beauty and wellness service type in one platform.' },
-      { question: 'How does SQUIRE\'s mobile app compare to Daisy?', answer: 'SQUIRE\'s app is well designed for running a barbershop. Daisy\'s reaches across the wider beauty business, with the AI receptionist, marketplace visibility throughout the GCC, cashback tracking and Arabic and English support.' },
-      { question: 'What customer support does SQUIRE offer compared to Daisy?', answer: 'SQUIRE supports US barbershop operations. Daisy provides multi-channel support with expertise across every beauty vertical, Arabic-speaking representatives and dedicated GCC teams.' },
+      { question: 'Does SQUIRE work for salons and spas, not just barbershops?', answer: 'SQUIRE describes itself as built for barbers and barbershop owners, and its features and plans are set up around barbershops. Daisy covers salons, spas, clinics and barbershops in one platform.' },
+      { question: 'Does SQUIRE support Arabic or work in the GCC?', answer: 'SQUIRE publishes prices for the US, Canada, the UK and the EU, with no Arabic interface or GCC pricing as of October 2026. Daisy runs natively in Arabic and English and is live in all six GCC countries.' },
+      { question: 'Does SQUIRE have AI features like Daisy?', answer: 'Yes. SQUIRE AI powers its Engage marketing tools and AI-powered reporting insights, and Operator, a $99/mo add-on, answers calls and books clients in English and Spanish. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site rather than the phone, in Arabic and English, and is included in every plan.' },
+      { question: 'How does SQUIRE\'s marketplace compare to Daisy\'s?', answer: 'SQUIRE helps shops get found on Google, Instagram and its own app, and says a shop\'s clients are not shown to other businesses. Daisy\'s marketplace spans the wider beauty and wellness industry across the GCC, with cashback rewards and AI-powered recommendations behind the discovery.' },
+      { question: 'Is SQUIRE good for a barbershop that also offers other services?', answer: 'SQUIRE is built around barbershop services. If you also offer salon services, facials or spa treatments, Daisy handles every beauty and wellness service type in one platform.' },
+      { question: 'How does SQUIRE\'s mobile app compare to Daisy?', answer: 'SQUIRE offers an app for barbers and shop owners, plus branded client apps: Flex on every plan, and a custom branded app on Titan. Daisy\'s app adds the AI receptionist, marketplace visibility across the GCC, cashback tracking, and Arabic and English support.' },
+      { question: 'What customer support does SQUIRE offer compared to Daisy?', answer: 'SQUIRE includes a dedicated onboarding specialist from the Pro plan and migrates a switching shop\'s client list and booking history. Daisy provides multi-channel support with expertise across every beauty vertical, Arabic-speaking representatives and dedicated GCC teams.' },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
   },
 
   // ---------------------------------------------------------------------------
