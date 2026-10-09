@@ -448,93 +448,117 @@ export const tier2Competitors: Record<string, CompetitorData> = {
   // 8. GlossGenius
   // ---------------------------------------------------------------------------
   glossgenius: {
+    // Sources read 2026-10-09: glossgenius.com/pricing, genius.ai/reception,
+    // glossgenius.com/ai-business-tools, glossgenius.com/for-multi-location-appointment-businesses,
+    // glossgenius.com/legal/privacy, glossgenius.com/legal/terms, the US App Store listing,
+    // and Fortune (21 Jul 2026) for funding and headcount.
     slug: 'glossgenius',
     name: 'GlossGenius',
     website: 'https://www.glossgenius.com',
     tier: 2,
     description:
-      'Booking and business management built for beauty, aimed at independent professionals, and known for how good it looks and how easily it works. It has raised $116M and its AI features are growing.',
+      'US booking, payments and business software for beauty, wellness and medspa businesses. Since July 2026 it is a product of Genius AI, the new name of the company behind it. Its AI agents answer calls and texts, analyse sales and write marketing campaigns.',
     founded: '2016',
     headquarters: 'New York, NY, USA',
-    employeeCount: '200-300',
-    funding: '$116M+',
+    // Fortune, 21 Jul 2026: "Genius AI itself is a sizable company, with 400 employees."
+    employeeCount: '400',
+    // Fortune, 21 Jul 2026: "The company has now raised more than $120 million"
+    funding: 'More than $120M (Fortune, July 2026)',
 
     features: {
       onlineBooking: 3,
       posAndPayments: 2,
       clientManagement: 2,
-      staffManagement: 1,
+      // Gold and Platinum publish roles, permissions, time tracking and (Platinum) custom commissions.
+      staffManagement: 2,
       marketingAndCrm: 2,
-      inventoryManagement: 1,
+      // Every plan publishes inventory and retail management, barcode scanning and low-stock alerts.
+      inventoryManagement: 2,
       reportingAndAnalytics: 2,
+      // No consumer marketplace of its own; Reserve with Google on Gold and Platinum.
       marketplaceAndDiscovery: 1,
-      aiCapabilities: 1,
-      brandingAndWhiteLabel: 1,
+      // Reception, Growth Analyst and AI Marketing Assistant are all published.
+      aiCapabilities: 2,
+      // Custom booking website builder on every plan.
+      brandingAndWhiteLabel: 2,
     },
 
     pricing: {
       hasFreePlan: false,
       freeTrialDays: 14,
-      startingPrice: '$24/mo',
-      startingPriceNumeric: 24,
+      // glossgenius.com/pricing, read 2026-10-09: monthly billing $28 / $56 / $168,
+      // billed annually $24 / $48 / $148 (US, per business).
+      startingPrice: '$28/mo ($24/mo billed annually)',
+      startingPriceNumeric: 28,
       tiers: [
         {
           name: 'Standard',
-          price: '$24/mo',
-          priceNumeric: 24,
+          price: '$28/mo ($24/mo billed annually)',
+          priceNumeric: 28,
           billingCycle: 'monthly',
           features: [
-            'Online booking',
-            'Calendar management',
-            'Payment processing',
-            'Client management',
-            'Basic marketing',
+            'Custom booking website',
+            'Email and text marketing',
+            'Inventory and retail management',
+            'Packages and memberships',
+            'Growth Analyst and AI Marketing Assistant as a limited trial',
           ],
         },
         {
           name: 'Gold',
-          price: '$48/mo',
-          priceNumeric: 48,
+          price: '$56/mo ($48/mo billed annually)',
+          priceNumeric: 56,
           billingCycle: 'monthly',
           features: [
             'Everything in Standard',
-            'Website builder',
-            'Advanced marketing',
-            'Custom booking page',
-            'Priority support',
+            'Staff management for teams of up to 9',
+            'Google booking and reviews',
+            'Forms, waitlist and time tracking',
+            'Growth Analyst (20 queries a month) and AI Marketing Assistant',
           ],
         },
         {
           name: 'Platinum',
-          price: '$148/mo',
-          priceNumeric: 148,
+          price: '$168/mo ($148/mo billed annually)',
+          priceNumeric: 168,
           billingCycle: 'monthly',
           features: [
             'Everything in Gold',
-            'AI Growth Analyst',
-            'Team management',
-            'Advanced reporting',
-            'White-label booking page',
+            'Built for teams of 10 or more, with unlimited team members',
+            'Custom commissions and team goal setting',
+            'Google Marketing Analytics',
+            'Growth Analyst with unlimited queries',
           ],
         },
       ],
+      // "Flat 2.6% rate ... no Tap to Pay, card-on-file, or manual entry fees."
       transactionFees: '2.6% per transaction',
       hiddenCosts: [
-        'Payment processing fees on all transactions',
-        'AI features only in Platinum tier ($148/mo)',
-        'Team features only in highest tier',
+        // genius.ai/reception: free through 30 Nov 2026, then $50/month incl. 100 minutes
+        // and 200 texts; overages $0.50 per minute and $0.05 per message.
+        'Reception (AI receptionist): $50/mo from 1 December 2026, with 100 minutes and 200 texts; $0.50 per extra minute and $0.05 per extra text',
+        'Payroll add-on: $40/mo plus $6 per seat',
+        'Instant payouts: 1.8% fee',
+        'Each additional location: the plan price less 15%',
       ],
       pricingModel: 'flat',
       pricingPageUrl: 'https://www.glossgenius.com/pricing',
-      lastVerified: '2026-03-13',
+      lastVerified: '2026-10-09',
     },
 
+    // Third-party review sites (Capterra, G2) could not be read on 2026-10-09; only the
+    // official App Store listing is kept. US App Store, read 2026-10-09: 4.5 from 4,434 ratings.
     reviews: [
-      { platform: 'Capterra', rating: 4.6, reviewCount: 300 },
-      { platform: 'G2', rating: 4.5, reviewCount: 200 },
-      { platform: 'App Store', rating: 4.9, reviewCount: 45000 },
+      {
+        platform: 'App Store',
+        rating: 4.5,
+        reviewCount: 4434,
+        url: 'https://apps.apple.com/us/app/glossgenius-booking-payments/id1081286979',
+      },
     ],
 
+    // glossgenius.com/legal/privacy: "GlossGenius is currently only available for use
+    // within the United States." The iOS app lists English only.
     gccPresence: {
       hasArabicUI: false,
       arabicQuality: 'none',
@@ -545,89 +569,85 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     },
 
     aiCapabilities: {
-      hasAiReceptionist: false,
-      hasAiChatbot: false,
+      hasAiReceptionist: true,
+      hasAiChatbot: true,
       hasSmartScheduling: false,
-      hasAiMarketing: false,
+      hasAiMarketing: true,
       hasAiAnalytics: true,
       hasAiPricing: false,
       aiDescription:
-        'GlossGenius ships Reception, an AI front desk that answers calls and texts 24/7 and books onto the calendar; it is free on GlossGenius until 30 November 2026. The AI Growth Analyst, which produces business insights, appears in the Platinum tier. There is no AI across WhatsApp or Instagram, and no smart scheduling.',
+        'GlossGenius sells three AI agents. Reception answers calls and replies to texts 24/7 and books straight into the GlossGenius calendar. It is free until 30 November 2026 and then a $50/mo add-on. Growth Analyst answers questions about the business: a limited trial on Standard, 20 queries a month on Gold and unlimited on Platinum. The AI Marketing Assistant writes and sends email and text campaigns on Gold and Platinum, with a limited trial on Standard. GlossGenius\'s published pages do not list WhatsApp or Instagram as Reception channels as of October 2026.',
     },
 
     targetMarket:
-      'Independent beauty professionals and small salons in the US, particularly solopreneurs who care how their tools look and want them simple.',
+      'Beauty, wellness, medspa, health and fitness businesses in the United States, from solo professionals and booth renters to multi-location teams. GlossGenius says its service is available only in the US.',
 
     messaging: {
-      tagline: 'The business platform for beauty professionals',
+      tagline: 'Scheduling, payments, and admin. Handled.',
       primaryValueProp:
-        'Beautiful, easy-to-use booking platform designed specifically for beauty professionals with AI growth insights',
+        'One system for appointment businesses that books clients, takes payments and runs AI agents for reception, growth analysis and marketing',
       targetAudience:
-        'Independent beauty professionals who want simple, good-looking tools to run their business',
-      toneAndVoice: 'Elegant and design-led, speaking entirely to beauty',
+        'US appointment businesses of every size in beauty, wellness, medspa, health and fitness',
+      toneAndVoice: 'Elegant and design-led',
       keyMessages: [
-        'Built for beauty professionals',
-        'Beautiful booking pages',
-        'AI Growth Analyst',
-        'Easy to use from Day 1',
-        'White-label in Platinum',
+        'Scheduling, payments and admin handled',
+        'Reception answers calls and texts 24/7',
+        'Growth Analyst and Marketing Assistant',
+        'Flat 2.6% processing rate',
+        'Free data transfer',
       ],
     },
 
     daisyAdvantages: [
-      'AI receptionist across calls, WhatsApp and Instagram, in Arabic and English, vs a calls-and-texts front desk',
-      'Full AI ecosystem (receptionist + chatbot + scheduling + marketing) vs single AI feature',
-      'Native Arabic/English vs English-only, US-only',
-      'Consumer marketplace with cashback vs no marketplace',
-      'Complete business suite (POS, inventory, staff) vs limited features',
-      'GCC compliance and local payments vs no international support',
-      'Customer acquisition engine vs passive booking page',
+      'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English, where Reception works on calls and texts',
+      'AI receptionist included in the plan, where Reception becomes a $50/mo add-on after 30 November 2026',
+      'Native Arabic and English, where GlossGenius has an English-only app and is available only in the US',
+      'Consumer marketplace with cashback, where GlossGenius offers a booking website and Reserve with Google',
+      'Live in all six GCC countries, with GCC compliance and local payments',
     ],
 
     daisySwitchingReasons: [
-      'Need real AI capabilities beyond growth analytics',
-      'Want AI receptionist to handle calls and bookings',
-      'Expanding to GCC/Middle East market, need Arabic support',
-      'Need consumer marketplace for customer discovery',
+      'Want an AI receptionist that works on WhatsApp and Instagram, beyond calls and texts',
+      'Expanding to the GCC or Middle East and need Arabic support',
+      'Need a consumer marketplace for customer discovery',
       'Want cashback rewards to drive customer retention',
-      'Team management features locked behind expensive tier',
+      'Want the AI receptionist included in the plan rather than sold as an add-on',
     ],
 
     competitorStrengths: [
-      'Beautiful, design-forward platform',
-      'Very easy to use, excellent UX',
-      'Affordable starting price ($24/mo)',
-      'Well-funded ($116M) with rapid development',
-      'High app store ratings (4.9)',
-      'White-label booking page in Platinum tier',
+      'Design-led booking website and client experience',
+      'Quick to set up, with a free data transfer service',
+      'Flat 2.6% card rate, with no extra fee for Tap to Pay, card-on-file or manual entry',
+      'Reception answers calls and texts 24/7 and books into the calendar',
+      'Multi-location support on every plan',
+      'Rated 4.5 on the US App Store from about 4,400 ratings (October 2026)',
     ],
 
     competitorWeaknesses: [
-      'US-only, no international or GCC support',
-      'No Arabic or multi-language support',
-      'AI limited to analytics in highest tier only',
-      'No consumer marketplace',
-      'Weak team/staff management (Platinum only)',
-      'Reception covers calls and texts; no AI across WhatsApp or Instagram',
-      'No cashback or loyalty programs',
-      'Solopreneur focus, limited for growing teams',
+      'Available only in the United States, according to its privacy policy',
+      'No Arabic interface; its iOS app lists English only',
+      'No consumer marketplace of its own',
+      'Staff management starts on Gold; the Standard plan has none',
+      'Reception covers calls and texts; WhatsApp and Instagram are not listed as channels (October 2026)',
+      'Reception becomes a $50/mo add-on after 30 November 2026',
+      'No cashback rewards listed on its published pages',
     ],
 
     faq: [
       {
         question: 'How does GlossGenius compare to Daisy?',
         answer:
-          'For a US-based solopreneur, GlossGenius is hard to beat on design and simplicity. It has no marketplace, no Arabic, and no team management below the Platinum tier, and its Reception AI covers calls and texts rather than WhatsApp or Instagram. Daisy is a complete growth platform with AI across every channel, a marketplace, cashback and GCC compliance, at any size.',
+          'GlossGenius suits US beauty and wellness businesses that want a design-led booking site, quick setup and a flat 2.6% card rate, and its Reception agent answers calls and texts. It is available only in the US, has no Arabic interface and has no consumer marketplace of its own. Daisy runs its AI receptionist on WhatsApp, Instagram and the booking site in Arabic and English, adds a marketplace with cashback, and is live in all six GCC countries.',
       },
       {
         question: 'Does GlossGenius have AI features?',
         answer:
-          'GlossGenius ships Reception, an AI front desk answering calls and texts 24/7 and booking onto the calendar, free on GlossGenius until 30 November 2026, plus an AI Growth Analyst in the Platinum tier for business insights. The comparison is channel coverage rather than presence: Daisy\'s AI receptionist also works across WhatsApp and Instagram, in Arabic and English, and is in the base platform.',
+          'Yes, three of them. Reception answers calls and texts 24/7 and books onto the GlossGenius calendar. It is free until 30 November 2026 and then costs $50/mo for 100 minutes and 200 texts. Growth Analyst answers questions about your sales and clients (a limited trial on Standard, 20 queries a month on Gold, unlimited on Platinum), and the AI Marketing Assistant writes email and text campaigns on Gold and Platinum. The difference with Daisy is channels and language. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English, and is in the base platform. It does not answer phone calls.',
       },
       {
         question: 'What are the real costs of using GlossGenius once you add everything up?',
         answer:
-          'It starts at $24/mo and takes 2.6% on every transaction. Team management and AI both require Platinum at $148/mo. A salon running $10,000/mo through the system pays $260 in transaction fees alone. Daisy publishes its pricing, includes the AI in the core platform, and does not take a cut of each sale.',
+          'Standard is $28/mo, Gold $56/mo and Platinum $168/mo, or $24, $48 and $148 a month billed annually. Card payments carry a flat 2.6% on every plan, so a salon taking $10,000 a month by card pays $260 in processing. Instant payouts cost 1.8%, Payroll is $40/mo plus $6 per seat, each extra location is billed at the plan price less 15%, and Reception costs $50/mo from 1 December 2026. Daisy publishes its pricing, includes the AI in the core platform, and does not take a cut of each sale.',
       },
       {
         question: 'Can I switch from GlossGenius to Daisy and keep my client data?',
@@ -637,38 +657,38 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does GlossGenius support Arabic or work in the Middle East?',
         answer:
-          'No. GlossGenius is entirely US-focused and English-only. There is no Arabic interface, no GCC compliance and no local payment methods for the Middle East. Daisy was built with native Arabic and English from the start, across all 6 GCC countries.',
+          'No. GlossGenius\'s privacy policy says the service is available only in the United States, and its iOS app lists English as its only language. Daisy was built with native Arabic and English from the start, across all 6 GCC countries.',
       },
       {
         question: 'How good is GlossGenius\'s mobile app for running a salon?',
         answer:
-          'The mobile app is excellent, rated 4.9 on the App Store across 45,000+ reviews, and its strength is how well it looks and works for an independent professional. It runs shallow once a team grows, and AI and staff management sit behind expensive upgrades. Daisy matches the app quality with far more built into it.',
+          'The GlossGenius app is rated 4.5 on the US App Store from about 4,400 ratings (October 2026). It covers booking, payments and client records, and you switch Reception on from inside the app. Daisy offers mobile and desktop apps in Arabic and English, with its AI receptionist on WhatsApp, Instagram and the booking site.',
       },
       {
         question: 'Can GlossGenius handle a salon with multiple locations?',
         answer:
-          'GlossGenius was designed for solopreneurs. Multi-location and team features only appear in Platinum at $148/mo, and even there they are limited next to platforms built for it. Daisy scales from a single-chair stylist to a multi-branch chain, managed centrally.',
+          'Yes. GlossGenius includes multi-location on every plan, with one login, a shared client list, menus per location, staff scheduling across locations and per-location reports. Each additional location is billed at the plan price less 15%. Daisy also scales from a single-chair stylist to a multi-branch chain, managed centrally.',
       },
       {
         question: 'What kind of customer support does GlossGenius offer?',
         answer:
-          'Priority support comes with Gold at $48/mo and Platinum at $148/mo. Standard users get basic support. All of it is in English. Daisy offers multi-channel support in Arabic and English, with dedicated onboarding on every plan.',
+          'GlossGenius lists a learning centre, Gloss University training and a free data transfer service on every plan. Its published pricing for beauty and wellness plans does not set out support tiers; the medspa Practice Advanced plan adds premium customer support. Daisy offers multi-channel support in Arabic and English, with dedicated onboarding on every plan.',
       },
       {
         question: 'Does GlossGenius integrate with other tools I already use?',
         answer:
-          'Integrations are limited, centred on payment processing and GlossGenius\'s own ecosystem, with little third-party support for marketing, accounting or inventory. Daisy reaches wider, covering local GCC payment gateways, Google Calendar, marketing tools and a built-in consumer marketplace.',
+          'GlossGenius builds most tools into its own platform: payments, card readers, a website builder, marketing, inventory and an optional Payroll add-on. Its pricing page lists Reserve with Google, Google reviews and two-way calendar sync, plus Google Marketing Analytics and website pixel tracking on Platinum. Daisy\'s integrations cover local GCC payment gateways, Google Calendar, marketing tools and a built-in consumer marketplace.',
       },
       {
         question: 'Is GlossGenius good for salons that want to attract new customers?',
         answer:
-          'You get a basic marketplace listing and genuinely beautiful booking pages, and nothing that actively goes out and finds customers. No cashback, no loyalty program, no AI marketing. Daisy includes a consumer marketplace with cashback, AI-driven campaigns and an acquisition engine built to bring new clients through the door.',
+          'GlossGenius does not list a consumer marketplace of its own. It gives you a booking website, automated review prompts, email and text marketing, and on Gold and Platinum, Reserve with Google, Google review integration and the AI Marketing Assistant. Cashback rewards are not listed on its published pages. Daisy includes a consumer marketplace with cashback, AI-driven campaigns and an acquisition engine built to bring new clients through the door.',
       },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
     notes:
-      'The design and the funding behind it make this a growing threat in the US. The US-only focus and the thin AI, analytics alone and only in the top tier, leave Daisy clearly differentiated, particularly across the GCC.',
+      'GlossGenius has been a Genius AI product since July 2026 and, by its own privacy policy, is available only in the US. It sells AI agents for calls and texts, analytics and marketing. Daisy differs on channels (WhatsApp, Instagram, booking site), Arabic, GCC presence and the cashback marketplace. Re-check Reception pricing after 30 November 2026.',
   },
 
   // ---------------------------------------------------------------------------
@@ -1035,16 +1055,22 @@ export const tier2Competitors: Record<string, CompetitorData> = {
   // 11. Boulevard
   // ---------------------------------------------------------------------------
   boulevard: {
+    // Sources read 2026-10-09: joinblvd.com/pricing (Spa, Hair Salon, Nail Salon, Barber and
+    // Massage show the same prices), joinblvd.com/features/ai-receptionist,
+    // joinblvd.com/features/boulevard-ai, joinblvd.com/features/self-booking,
+    // joinblvd.com/features/loyalty-and-offers, the Series D press release (17 Jul 2025),
+    // Crunchbase News (17 Jul 2025) and the US App Store listing for Boulevard Professional.
     slug: 'boulevard',
     name: 'Boulevard',
     website: 'https://www.joinblvd.com',
     tier: 2,
     description:
-      'A premium, design-led salon and spa management platform with AI scheduling and the Duo AI assistant. It has raised $188M and aims squarely at the luxury end of the market.',
+      'A premium client experience platform for salons, spas, medspas and barbershops in the US, built around Precision Scheduling. It sells Beau, a voice AI receptionist, as an add-on, and had raised about $188M by July 2025.',
+    // Press release, 17 Jul 2025: "Founded in 2016" (dateline LOS ANGELES).
     founded: '2016',
     headquarters: 'Los Angeles, CA, USA',
-    employeeCount: '200-400',
-    funding: '$188M',
+    // Crunchbase News, 17 Jul 2025: "In total, Boulevard has raised about $188 million".
+    funding: 'About $188M (Crunchbase News, July 2025)',
 
     features: {
       onlineBooking: 3,
@@ -1054,73 +1080,99 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       marketingAndCrm: 2,
       inventoryManagement: 2,
       reportingAndAnalytics: 3,
+      // No consumer marketplace of its own; self-booking syncs with Google, Instagram, Facebook.
       marketplaceAndDiscovery: 1,
+      // Precision Scheduling, Beau (add-on), AI email writing and the Billie assistant.
       aiCapabilities: 2,
-      brandingAndWhiteLabel: 1,
+      // Self-booking overlay on the business's own site and branded emails.
+      brandingAndWhiteLabel: 2,
     },
 
     pricing: {
       hasFreePlan: false,
-      startingPrice: '$158/mo',
-      startingPriceNumeric: 158,
+      // US list prices, read 2026-10-09. Billed monthly: $159 / $325 / $455; billed annually
+      // (save 10%): $143 / $293 / $410. Premier and Prestige are per location. A fall offer
+      // for new customers ("New customers only. Terms apply.") shows Premier at $260
+      // ($234 annual) and Prestige at $364 ($328 annual).
+      startingPrice: '$159/mo ($143/mo billed annually)',
+      startingPriceNumeric: 159,
       tiers: [
         {
           name: 'Essentials',
-          price: '$158/mo',
-          priceNumeric: 158,
+          price: '$159/mo ($143/mo billed annually)',
+          priceNumeric: 159,
           billingCycle: 'monthly',
           features: [
-            'Online booking',
-            'Calendar management',
-            'POS & payments',
-            'Client profiles',
-            'Basic reporting',
+            'One location, up to 5 providers',
+            'Precision Scheduling',
+            'Online booking, POS and payments',
+            '250 free texts and 1,000 free email blasts a month',
+            'Email and live chat support',
           ],
         },
         {
           name: 'Premier',
-          price: '$295/mo',
-          priceNumeric: 295,
+          price: '$325/mo per location ($293/mo billed annually)',
+          priceNumeric: 325,
           billingCycle: 'monthly',
           features: [
             'Everything in Essentials',
-            'Precision Scheduling AI',
-            'Duo AI assistant',
-            'Advanced reporting',
-            'Marketing tools',
-            'Multi-location',
+            'Unlimited professionals',
+            'Multi-location support and reporting',
+            'Shared memberships',
+            'Google Analytics and Meta Pixel',
           ],
         },
         {
           name: 'Prestige',
-          price: '$410/mo',
-          priceNumeric: 410,
+          price: '$455/mo per location ($410/mo billed annually)',
+          priceNumeric: 455,
           billingCycle: 'monthly',
           features: [
             'Everything in Premier',
-            'Franchise management',
-            'Custom integrations',
-            'Dedicated success manager',
-            'API access',
+            'Forms add-on included',
+            '2,500 free texts and 10,000 free email blasts a month',
+            '100 GB storage',
+          ],
+        },
+        {
+          name: 'Enterprise',
+          price: 'Pricing on request',
+          billingCycle: 'custom',
+          features: [
+            'Bespoke plan for large operations',
+            'APIs and enterprise-grade integrations',
           ],
         },
       ],
-      transactionFees: '2.6% + $0.10 per transaction',
+      // Pricing comparison table: "Starting at 2.65% or as low as 1% with Boulevard Offset."
+      transactionFees: 'From 2.65% per card transaction (as low as 1% with Boulevard Offset)',
       hiddenCosts: [
-        'AI features only in Premier+ tiers ($295+/mo)',
-        'Payment processing fees',
-        'Premium pricing for premium market',
+        // joinblvd.com/features/ai-receptionist: "$125/mo per location for 200 minutes,
+        // and just $0.60 per minute over that."
+        'Beau AI receptionist: $125/mo per location for 200 minutes, then $0.60 per minute',
+        'Automated campaigns: $2 per completed appointment',
+        'Forms add-on: from $65/mo per location (included in Prestige)',
+        'Email blasts beyond the plan allowance: $0.01 per email',
       ],
-      pricingModel: 'flat',
+      pricingModel: 'per-location',
       pricingPageUrl: 'https://www.joinblvd.com/pricing',
-      lastVerified: '2026-03-13',
+      lastVerified: '2026-10-09',
     },
 
+    // Third-party review sites (Capterra, G2) could not be read on 2026-10-09; only the
+    // official App Store listing is kept. Boulevard Professional, US App Store: 4.6 from 600.
     reviews: [
-      { platform: 'Capterra', rating: 4.6, reviewCount: 350 },
-      { platform: 'G2', rating: 4.5, reviewCount: 250 },
+      {
+        platform: 'App Store',
+        rating: 4.6,
+        reviewCount: 600,
+        url: 'https://apps.apple.com/us/app/boulevard-professional/id1171157037',
+      },
     ],
 
+    // Boulevard describes its customers as businesses "across the U.S."; no GCC country,
+    // Arabic interface or GCC payment method is listed. The iOS app lists English only.
     gccPresence: {
       hasArabicUI: false,
       arabicQuality: 'none',
@@ -1131,88 +1183,86 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     },
 
     aiCapabilities: {
-      hasAiReceptionist: false,
+      hasAiReceptionist: true,
+      // Billie, an in-platform chat assistant for the business's own staff.
       hasAiChatbot: true,
       hasSmartScheduling: true,
-      hasAiMarketing: false,
+      hasAiMarketing: true,
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'Precision Scheduling AI arranges appointment slots, and Duo is an AI assistant for business insights and task automation. Both appear only in the Premier tier at $295/mo and above.',
+        'Precision Scheduling is included on every plan and steers bookings to the times that suit the business. Beau is a voice AI receptionist sold as an add-on at $125/mo per location for 200 minutes. It answers calls 24/7, answers questions, sends booking links and takes messages. Boulevard Marketing uses AI to suggest email subject lines, copy and images, and Billie is a chat assistant inside the platform for staff. Duo is Boulevard\'s card reader and point of sale, not an AI product.',
     },
 
     targetMarket:
-      'Premium, design-conscious salons and spas in the US, along with multi-location businesses and luxury brands. Budget-conscious and international markets are not the target.',
+      'Appointment-based self-care businesses in the US, including salons, spas, medspas, barbershops and nail salons, from single locations to multi-location brands and enterprises.',
 
     messaging: {
-      tagline: 'Client experience management for salons and spas',
+      tagline: 'The tech behind your touch',
       primaryValueProp:
-        'Premium, beautifully designed platform with AI scheduling for luxury salons and spas',
+        'Client experience platform for appointment-based self-care businesses, with Precision Scheduling, payments, marketing and an AI receptionist',
       targetAudience:
-        'Premium salon and spa owners who care about design and will pay for it',
-      toneAndVoice: 'Premium and sophisticated, with design doing most of the talking',
+        'Salons, spas, medspas and barbershops in the US, from single locations to enterprises',
+      toneAndVoice: 'Premium and design-led',
       keyMessages: [
-        'Precision Scheduling AI',
-        'Built for premium brands',
-        'Beautiful client experience',
-        '$188M funded',
-        'Duo AI assistant',
+        'Precision Scheduling',
+        'Beau, the AI receptionist',
+        'Client experience platform',
+        'Boulevard Duo payments',
+        'Boulevard AI',
       ],
     },
 
     daisyAdvantages: [
-      '24/7 AI receptionist (voice + chat) vs chat-only Duo assistant',
-      'Consumer marketplace with cashback vs no marketplace',
-      'Native Arabic/English support vs English/US-only',
-      'More accessible pricing vs $158-410/mo',
-      'GCC compliance and local payments vs no international support',
-      'Customer acquisition engine vs operations-only platform',
-      'AI included in base platform vs locked behind $295/mo tier',
+      'AI receptionist on WhatsApp, Instagram and the booking site, included in the plan, where Beau answers phone calls as a $125/mo per-location add-on',
+      'Consumer marketplace with cashback, where Boulevard has no consumer marketplace of its own',
+      'Native Arabic and English, where the Boulevard Professional app lists English only',
+      'A lower entry price than Boulevard\'s $159/mo ($143/mo billed annually)',
+      'Live in all six GCC countries, with GCC compliance and local payments',
     ],
 
     daisySwitchingReasons: [
-      'Premium pricing ($158-410/mo) without AI included in base tier',
+      'Want an AI receptionist on WhatsApp and Instagram, included in the plan',
       'Need Arabic support for GCC expansion',
-      'Want consumer marketplace for customer discovery',
-      'Need voice AI receptionist, not just chat assistant',
+      'Want a consumer marketplace for customer discovery',
+      'Want a lower entry price than $159/mo',
       'Want GCC compliance and local payment methods',
-      'Need customer acquisition tools beyond beautiful booking pages',
+      'Want cashback rewards for clients',
     ],
 
     competitorStrengths: [
-      'Excellent design and user experience',
-      'Precision Scheduling AI is genuinely innovative',
-      'Strong franchise management features',
-      'Well-funded ($188M) with rapid development',
-      'Good reviews and growing market share',
-      'Comprehensive POS and client management',
+      'Design-led client experience, with self-booking that syncs with Google, Instagram and Facebook',
+      'Precision Scheduling on every plan',
+      'Multi-location tools on Premier and Prestige',
+      'Beau, a voice AI receptionist that answers calls 24/7 (paid add-on)',
+      'Email and text marketing, referral and loyalty programs on every plan',
+      'Raised about $188M, according to Crunchbase News (July 2025)',
     ],
 
     competitorWeaknesses: [
-      'Premium pricing limits market ($158-410/mo)',
-      'US-only, no international or GCC support',
-      'No Arabic or multi-language support',
-      'AI features locked behind $295/mo tier',
-      'No consumer marketplace or cashback',
-      'No voice AI receptionist',
-      'Premium positioning may not fit all markets',
+      'Entry price of $159/mo ($143/mo billed annually) for one location and up to 5 providers',
+      'Multi-location support starts on Premier, at $325/mo per location ($293/mo billed annually)',
+      'Beau is a paid add-on at $125/mo per location for 200 minutes, and sends booking links rather than booking itself',
+      'No consumer marketplace of its own',
+      'No Arabic interface; the Boulevard Professional iOS app lists English only',
+      'No GCC country or GCC payment method listed on its published pages (October 2026)',
     ],
 
     faq: [
       {
         question: 'How does Boulevard compare to Daisy?',
         answer:
-          'Boulevard is a premium US platform at $158-410/mo, with AI scheduling and a beautiful interface. Daisy is a complete growth platform, adding an AI receptionist, marketplace, cashback and Arabic support at a lower price. Boulevard\'s AI needs the $295/mo Premier tier; Daisy includes it in the base platform.',
+          'Boulevard is a premium US platform with Precision Scheduling on every plan, from $159/mo ($143/mo billed annually), and it sells Beau, a voice AI receptionist, as an add-on. Daisy is a complete growth platform, adding an AI receptionist on WhatsApp, Instagram and the booking site, a marketplace, cashback and Arabic support at a lower price. Daisy includes its AI receptionist in the base platform.',
       },
       {
         question: 'Is Boulevard available in the Middle East?',
         answer:
-          'No. Boulevard runs in the US only, with no Arabic, no GCC compliance and no local payment methods. For a Middle East beauty business, Daisy offers a native Arabic interface, local payment integration and support built for the Gulf, live in Kuwait today.',
+          'Boulevard describes its customers as self-care businesses across the US, and its published pages list no GCC country, Arabic interface or GCC payment method (October 2026). For a Middle East beauty business, Daisy offers a native Arabic interface, local payment integration and support built for the Gulf, live in Kuwait today.',
       },
       {
         question: 'What does Boulevard actually cost when you include transaction fees?',
         answer:
-          'The subscription runs $158-410/mo, and every payment carries 2.6% + $0.10 on top. A salon processing $20,000/mo pays $520+ in processing fees alone, and the AI still requires the $295/mo Premier tier. Daisy costs less, includes the AI in the core platform, and does not take a slice of each transaction.',
+          'Essentials is $159/mo for one location and up to 5 providers. Premier is $325/mo and Prestige $455/mo per location, and a fall offer for new customers brings them to $260 and $364. Billed annually, the same plans are $143, $293 and $410 ($234 and $328 on the offer). Boulevard lists card processing from 2.65%, or as low as 1% with Boulevard Offset, where clients pay a 3% fee. Beau costs $125/mo per location for 200 minutes. Daisy costs less, includes the AI in the core platform, and does not take a slice of each transaction.',
       },
       {
         question: 'How difficult is it to switch from Boulevard to Daisy?',
@@ -1222,38 +1272,38 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Boulevard\'s Precision Scheduling AI compare to Daisy\'s AI?',
         answer:
-          'Precision Scheduling AI arranges slots and Duo produces business insights, and both need the $295/mo tier. Daisy goes further: a 24/7 voice and chat receptionist that books and takes payment on its own, plus AI marketing and analytics, all in the core platform.',
+          'Precision Scheduling is on every Boulevard plan and steers bookings to the times that suit the business. Beau answers phone calls 24/7 as a paid add-on, and Boulevard also uses AI to draft marketing emails. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site, and books and takes payment on its own in Arabic and English, with AI marketing and analytics in the core platform. It does not answer phone calls.',
       },
       {
         question: 'Does Boulevard support Arabic-speaking staff and clients?',
         answer:
-          'No. Boulevard is English-only, with no Arabic interface, no right-to-left layout and no Middle Eastern localization. Daisy is natively Arabic and English throughout, across staff interfaces, client messages and booking pages, built for the GCC.',
+          'Boulevard\'s published pages list no Arabic interface, and its Boulevard Professional iOS app lists English as its only language (October 2026). Daisy is natively Arabic and English throughout, across staff interfaces, client messages and booking pages, built for the GCC.',
       },
       {
         question: 'How good is Boulevard\'s mobile app for daily salon management?',
         answer:
-          'Reviews are solid at 4.6 on Capterra and 4.5 on G2, and the mobile experience matches the premium brand. Bookings, client check-in and POS all work well. The price puts it beyond a lot of businesses. Daisy matches the mobile quality, adds AI and a marketplace, and costs less.',
+          'The Boulevard Professional app is rated 4.6 on the US App Store from about 600 ratings (October 2026), and payments run through the Boulevard Duo app and card reader on iPad. Bookings, client check-in and POS are all covered. Daisy matches the mobile quality, adds an AI receptionist on WhatsApp and Instagram and a marketplace, and costs less.',
       },
       {
         question: 'Can Boulevard support franchise or multi-location salon businesses?',
         answer:
-          'Yes. Franchise management sits in the Prestige tier at $410/mo, with custom integrations, API access and a dedicated success manager. For a chain still growing, that is a lot to carry. Daisy offers multi-branch management, centralized reporting and cross-location tools at prices lower down the range.',
+          'Yes. Premier and Prestige include multi-location support and reporting, location-level billing and inter-location reporting, priced per location. Boulevard also has an Enterprise plan for large operations, with APIs and enterprise-grade integrations. Daisy offers multi-branch management, centralized reporting and cross-location tools at prices lower down the range.',
       },
       {
         question: 'What customer support does Boulevard provide?',
         answer:
-          'Support depends on your tier, and a dedicated success manager only comes with Prestige at $410/mo. All of it is in English. Daisy provides multi-channel support in Arabic and English, with onboarding included on every plan, so a GCC business gets the same service as anyone else.',
+          'Every Boulevard plan includes email and live chat support, and an onboarding specialist helps new customers set up. Its pages are in English. Daisy provides multi-channel support in Arabic and English, with onboarding included on every plan, so a GCC business gets the same service as anyone else.',
       },
       {
         question: 'Does Boulevard help attract new customers or just manage existing ones?',
         answer:
-          'Boulevard is about operations and the client experience. There is no consumer marketplace, no cashback and nothing that actively goes looking for customers. Daisy runs the operations and adds a consumer marketplace, cashback rewards and AI-driven marketing, so it keeps the clients you have and brings new ones in.',
+          'Boulevard includes email and text marketing, offer codes, referral and loyalty programs on every plan, sells automated campaigns at $2 per completed appointment, and its self-booking syncs with Google, Instagram and Facebook. It does not list a consumer marketplace of its own or cashback rewards. Daisy runs the operations and adds a consumer marketplace, cashback rewards and AI-driven marketing, so it keeps the clients you have and brings new ones in.',
       },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
     notes:
-      'The positioning and the design make this a serious competitor in the US luxury segment, and Precision Scheduling AI is genuinely innovative. The gaps are US-only reach, no marketplace and high pricing. Not a direct threat in the GCC.',
+      'Premium US platform. Prices read on 9 October 2026 include a fall offer for new customers on Premier and Prestige, so re-check them. Beau, the voice AI receptionist, is a paid add-on and sends booking links. Daisy differs on WhatsApp and Instagram AI, Arabic, GCC presence and the cashback marketplace.',
   },
 
   // ---------------------------------------------------------------------------
