@@ -253,43 +253,44 @@ export const daisyVsPages: DaisyVsPageData[] = [
     ],
     heroTitle: 'Daisy vs GlossGenius',
     heroSubtitle:
-      'A beautifully designed solopreneur tool against a complete AI-powered growth platform, which matches your ambitions?',
-    tldr: 'GlossGenius is beautiful, simple and cheap at $24/mo, which suits solo US beauty professionals well. Daisy is built for businesses that intend to scale, with an AI receptionist, team management, a marketplace with cashback and Arabic support. GlossGenius helps you look great, Daisy helps you grow.',
+      'A design-led US booking platform against an AI growth platform built for the GCC. Which one fits your business?',
+    // GlossGenius facts below: glossgenius.com/pricing, genius.ai/reception and
+    // glossgenius.com/legal/privacy, read 2026-10-09.
+    tldr: 'GlossGenius is a design-led US platform from $28/mo ($24/mo billed annually), with AI agents that answer calls and texts, analyse sales and write marketing. Daisy is built for GCC businesses, with an AI receptionist on WhatsApp, Instagram and the booking site in Arabic and English, plus a marketplace with cashback. GlossGenius is available only in the US; Daisy is live in all six GCC countries.',
     verdict:
-      'For solo professionals in the US, GlossGenius wins on design and simplicity. Its Reception AI covers calls and texts rather than WhatsApp or Instagram, team features are locked behind Platinum, and there is no Arabic or GCC support. If you have growth ambitions, a team, or clients outside those markets, Daisy is the clear choice.',
+      'For businesses in the US, GlossGenius is a strong choice on design and simplicity, and its Reception agent answers calls and texts. It is available only in the US, has no Arabic interface, and does not list WhatsApp or Instagram as Reception channels. If your clients are in the GCC, message you on WhatsApp or Instagram, or expect Arabic, Daisy is the better fit.',
     featureCommentary: {
       onlineBooking:
-        'Both offer strong booking experiences. GlossGenius is known for beautiful booking pages, and the design genuinely sets it apart. Daisy matches the functionality and adds AI that can carry the whole booking conversation.',
+        'Both offer strong booking experiences. GlossGenius is known for its booking websites, and the design genuinely sets it apart. Its Reception add-on also books by phone call and text. Daisy\'s AI carries the booking conversation on WhatsApp, Instagram and the booking site.',
       posAndPayments:
-        'GlossGenius charges 2.6% per transaction on every plan. Daisy charges flat, with transparent payment processing. At high volume, those GlossGenius transaction fees mount up.',
+        'GlossGenius publishes a flat 2.6% card rate on every plan, with no extra fee for Tap to Pay, card-on-file or manual entry, and charges 1.8% for instant payouts. Daisy charges flat, with transparent payment processing.',
       clientManagement:
-        'GlossGenius offers clean client profiles. Daisy adds AI that helps you read your clients and hold on to them before they drift.',
+        'GlossGenius offers client profiles, notes, history and client insights. Daisy uses AI to help you read your clients and hold on to them before they drift.',
       staffManagement:
-        'A major gap. GlossGenius only supports team management in Platinum at $148/mo, because it is designed for solopreneurs. Daisy puts full staff management in the base platform: scheduling, permissions and performance tracking.',
+        'GlossGenius adds staff management on Gold ($56/mo, or $48 billed annually) for teams of up to 9, and Platinum is built for teams of 10 or more, with custom commissions. The Standard plan has no staff management. Daisy puts full staff management in the base platform: scheduling, permissions and performance tracking.',
       marketingAndCrm:
-        'GlossGenius puts basic marketing in Standard and the advanced version in Gold. Daisy provides AI-powered marketing automation with cashback rewards that work at acquiring and keeping customers.',
+        'GlossGenius includes email and text marketing on every plan, and its AI Marketing Assistant on Gold and Platinum, with a limited trial on Standard. Daisy provides AI-powered marketing automation with cashback rewards that work at acquiring and keeping customers.',
       inventoryManagement:
-        'GlossGenius has basic product management and Daisy offers much the same. Neither specializes in deep inventory.',
+        'GlossGenius includes inventory and retail management on every plan, with barcode scanning, low-stock alerts and inventory reports. Daisy offers much the same.',
       reportingAndAnalytics:
-        'GlossGenius keeps its AI Growth Analyst in the Platinum tier at $148/mo. Daisy includes AI-powered analytics in the base platform, so smart insights need no premium tier.',
+        'GlossGenius has standard reports on every plan. Its AI Growth Analyst is a limited trial on Standard, 20 queries a month on Gold and unlimited on Platinum. Daisy includes AI-powered analytics in the base platform.',
       marketplaceAndDiscovery:
-        'GlossGenius has no consumer marketplace. What it gives you is a passive booking page. Daisy actively acquires customers through the marketplace, cashback rewards and AI-powered marketing.',
+        'GlossGenius does not list a consumer marketplace of its own. It offers a booking website on every plan and Reserve with Google on Gold and Platinum. Daisy actively acquires customers through the marketplace, cashback rewards and AI-powered marketing.',
       aiCapabilities:
-        'GlossGenius ships Reception, an AI front desk answering calls and texts 24/7 and booking onto the calendar, free on GlossGenius until 30 November 2026, plus a Growth Analyst in Platinum. The difference is channel coverage: Daisy includes the whole AI ecosystem in the base platform: receptionist, chatbot, scheduling, marketing and analytics.',
+        'GlossGenius sells three AI agents. Reception answers calls and texts 24/7 and books onto the calendar (free until 30 November 2026, then $50/mo). Growth Analyst answers questions about the business, and the Marketing Assistant writes campaigns. The difference is channels and language: Daisy\'s receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English, and the base platform includes receptionist, chatbot, scheduling, marketing and analytics.',
     },
     whoShouldChooseDaisy: [
       'You have a team, or expect to, and want staff management included',
-      'You want an AI receptionist, not only AI analytics',
+      'You want an AI receptionist on WhatsApp and Instagram, in Arabic and English',
       'You need Arabic, or you operate in the GCC',
       'You want a marketplace and cashback bringing customers in',
-      'You would rather not pay $148/mo for basic AI features',
-      'You are focused on growing a business, not just running a solo practice',
+      'You would rather have the AI receptionist in your plan than pay for it as an add-on',
     ],
     whoShouldChooseCompetitor: [
-      'You are a solo beauty professional in the US',
+      'You run a beauty or wellness business in the US',
       'Design and aesthetics come first for you',
-      'You want the simplest tool available, at $24/mo',
-      'You need neither team management nor an AI receptionist',
+      'You want a simple tool from $28/mo ($24/mo billed annually)',
+      'You want an AI receptionist that answers phone calls and texts',
     ],
   },
   // P2: Tier 1 remaining
@@ -371,35 +372,37 @@ export const daisyVsPages: DaisyVsPageData[] = [
     competitorSlug: 'boulevard',
     metaTitle: 'Daisy vs Boulevard: Premium Salon Software Compared',
     metaDescription:
-      'Compare Daisy and Boulevard for premium salon management. AI features, pricing ($158-410/mo vs flat), Arabic support, and customer acquisition.',
+      'Compare Daisy and Boulevard for premium salon management: AI receptionists, pricing (Boulevard from $159/mo), Arabic support and customer acquisition.',
     keywords: ['daisy vs boulevard', 'boulevard alternative', 'boulevard comparison', 'premium salon software'],
     heroTitle: 'Daisy vs Boulevard',
-    heroSubtitle: 'Two premium platforms, but only one includes AI receptionist and customer acquisition at base pricing.',
-    tldr: 'Boulevard is beautifully designed and has Precision Scheduling AI, but it runs $158-410/mo with the AI locked behind $295+. Daisy includes the full AI ecosystem at base pricing, along with Arabic support and a marketplace.',
-    verdict: 'Boulevard is excellent for premium US salons that put design first and can afford $295+/mo for the AI features. Daisy offers more AI for less, and adds the GCC support Boulevard does not have.',
+    heroSubtitle: 'Two premium platforms. Boulevard sells its Beau phone receptionist as an add-on, while Daisy\'s AI receptionist on WhatsApp, Instagram and the booking site comes in the plan.',
+    // Boulevard facts below: joinblvd.com/pricing, /features/ai-receptionist and
+    // /features/boulevard-ai, read 2026-10-09.
+    tldr: 'Boulevard is design-led and includes Precision Scheduling on every plan, from $159/mo ($143/mo billed annually). Beau, its voice AI receptionist, costs $125/mo per location. Daisy includes its AI receptionist on WhatsApp, Instagram and the booking site, along with Arabic support, a marketplace and cashback.',
+    verdict: 'Boulevard is excellent for premium US salons that put design first and want an AI receptionist on the phone. Daisy suits businesses whose clients message on WhatsApp and Instagram, who need Arabic, or who operate in the GCC, where Boulevard lists no presence.',
     featureCommentary: {
-      onlineBooking: 'Both offer excellent booking, and Boulevard\'s Precision Scheduling AI, which arranges slot allocation, is genuinely innovative.',
-      posAndPayments: 'Boulevard has a strong POS from $158+/mo. Daisy offers a comparable one at flat pricing, with nothing withheld by tier.',
+      onlineBooking: 'Both offer excellent booking. Boulevard includes Precision Scheduling on every plan, which steers bookings to the times that suit the business, and its self-booking syncs with Google, Instagram and Facebook.',
+      posAndPayments: 'Boulevard has a strong POS built around its Duo card reader, and lists card processing from 2.65%. Daisy offers a comparable one at flat pricing, with nothing withheld by tier.',
       clientManagement: 'Both are good at client management, and Boulevard\'s client experience features suit luxury salons particularly well.',
-      staffManagement: 'Both handle staff well, and Boulevard adds franchise management in its Prestige tier.',
-      marketingAndCrm: 'Boulevard keeps marketing in Premier at $295/mo. Daisy includes AI marketing and cashback at base pricing.',
+      staffManagement: 'Both handle staff well. Boulevard\'s Essentials plan covers one location and up to 5 providers, and Premier and Prestige add unlimited professionals and multi-location tools, priced per location.',
+      marketingAndCrm: 'Boulevard includes email and text marketing, offer codes, referral and loyalty programs on every plan, and charges $2 per completed appointment for automated campaigns. Daisy includes AI marketing and cashback at base pricing.',
       inventoryManagement: 'Inventory tracking is good on both.',
-      reportingAndAnalytics: 'Both provide strong reporting, with Boulevard\'s Duo AI assistant adding insights in the Premier tier.',
-      marketplaceAndDiscovery: 'Boulevard has no consumer marketplace. Daisy acquires through marketplace and cashback together.',
-      aiCapabilities: 'Boulevard puts Precision Scheduling and the Duo assistant in Premier at $295/mo. Daisy includes receptionist, chatbot, scheduling and marketing at base pricing.',
+      reportingAndAnalytics: 'Both provide strong reporting, and Boulevard includes standard and advanced reports on every plan.',
+      marketplaceAndDiscovery: 'Boulevard does not list a consumer marketplace of its own. Daisy acquires through marketplace and cashback together.',
+      aiCapabilities: 'Every Boulevard plan includes Precision Scheduling and AI help with marketing emails. Beau, a voice receptionist that answers calls 24/7, costs $125/mo per location for 200 minutes. Daisy includes receptionist, chatbot, scheduling and marketing at base pricing, with the receptionist on WhatsApp, Instagram and the booking site rather than phone calls.',
     },
     whoShouldChooseDaisy: [
       'You want an AI receptionist and chatbot at base pricing',
       'You need Arabic support for GCC markets',
       'You want a consumer marketplace bringing customers in',
-      'You would rather pay flat than climb $158-410/mo tiers',
+      'You would rather pay flat than move up Boulevard\'s per-location tiers',
       'You want cashback rewards holding on to customers',
     ],
     whoShouldChooseCompetitor: [
       'You run a premium US luxury salon or spa',
-      'You need franchise management features',
+      'You need multi-location or franchise management features',
       'Design aesthetics are your absolute first priority',
-      'You can budget $295+/mo for the AI features',
+      'You want an AI receptionist that answers phone calls',
     ],
   },
   {
@@ -728,25 +731,27 @@ export const alternativePages: AlternativePageData[] = [
   {
     slug: 'glossgenius',
     competitorSlug: 'glossgenius',
-    metaTitle: 'Best GlossGenius Alternative for Growing Teams (2026)',
-    metaDescription: 'Outgrowing GlossGenius? Daisy offers team management, AI receptionist, and marketplace, without paying $148/mo for basic AI.',
+    metaTitle: 'Best GlossGenius Alternative for GCC Salons (2026)',
+    metaDescription: 'GlossGenius is available only in the US. Daisy offers an AI receptionist on WhatsApp and Instagram, Arabic and English, and a cashback marketplace.',
     keywords: ['glossgenius alternative', 'glossgenius replacement', 'better than glossgenius'],
     heroTitle: 'Looking for a GlossGenius Alternative?',
-    heroSubtitle: 'Beautiful design, and a real pleasure for solo pros. Then you decide to grow.',
+    heroSubtitle: 'Beautiful design and simple to run, in the US. Here is how Daisy compares if your clients are in the GCC.',
+    // GlossGenius facts: glossgenius.com/pricing, genius.ai/reception and
+    // glossgenius.com/legal/privacy, read 2026-10-09.
     painPoints: [
-      'Team management locked inside the $148/mo Platinum tier',
-      'AI that stops at Growth Analyst analytics, with no receptionist or chatbot',
-      'No consumer marketplace, so nobody discovers you through it',
-      'US-only, with no Arabic and no international support',
-      '2.6% taken in transaction fees on every payment',
-      'Designed around solopreneurs rather than businesses that are growing',
+      'Available only in the United States, according to its privacy policy',
+      'No Arabic interface; its iOS app lists English only',
+      'Reception covers calls and texts, with no WhatsApp or Instagram channel listed',
+      'Reception becomes a $50/mo add-on after 30 November 2026',
+      'No consumer marketplace of its own, and no cashback rewards listed',
+      'Staff management starts on Gold, at $56/mo ($48/mo billed annually)',
     ],
     switchingReasons: [
       'Team management from day one, so hiring does not mean upgrading',
       'The full AI ecosystem: receptionist, chatbot, scheduling and marketing',
       'A consumer marketplace with cashback, bringing customers in',
       'Arabic and English support, which opens the GCC',
-      'AI at base pricing, with no $148/mo premium to reach it',
+      'An AI receptionist on WhatsApp, Instagram and the booking site, included in the plan',
       'Built to carry you from working alone to running a team',
     ],
     topAlternatives: ['fresha', 'booksy', 'boulevard', 'vagaro'],
@@ -782,19 +787,20 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'boulevard',
     competitorSlug: 'boulevard',
     metaTitle: 'Best Boulevard Alternative for Salons (2026)',
-    metaDescription: 'Looking beyond Boulevard? Get AI receptionist, marketplace, and Arabic support at more accessible pricing.',
+    metaDescription: 'Looking beyond Boulevard? Daisy includes an AI receptionist on WhatsApp and Instagram, a cashback marketplace and Arabic support, at a lower entry price.',
     keywords: ['boulevard alternative', 'boulevard replacement', 'salon software like boulevard'],
     heroTitle: 'Looking for a Boulevard Alternative?',
-    heroSubtitle: 'Premium design and smart scheduling, but $158-410/mo with no marketplace is hard to justify.',
+    heroSubtitle: 'Premium design and Precision Scheduling, from $159/mo ($143/mo billed annually), with no consumer marketplace of its own.',
+    // Boulevard facts: joinblvd.com/pricing and /features/ai-receptionist, read 2026-10-09.
     painPoints: [
-      'Premium pricing that starts at $158/mo and reaches $295+/mo before the AI appears',
-      'No consumer marketplace bringing customers in',
-      'US-only, with no Arabic and no GCC support',
-      'AI locked inside the Premier tier at $295/mo',
-      'No cashback or loyalty rewards built in',
+      'Entry price of $159/mo ($143/mo billed annually) for one location and up to 5 providers',
+      'Multi-location support starts on Premier, at $325/mo per location ($293/mo billed annually)',
+      'Beau, the AI receptionist, is a $125/mo per-location add-on and works on phone calls',
+      'No consumer marketplace of its own, and no cashback rewards listed',
+      'No Arabic interface or GCC presence listed on its published pages',
     ],
     switchingReasons: [
-      'An AI receptionist included at base pricing',
+      'An AI receptionist on WhatsApp, Instagram and the booking site, included at base pricing',
       'A consumer marketplace with cashback, doing the acquiring',
       'Arabic/English support for GCC expansion',
       'A more accessible price, with the full AI included',
@@ -1062,12 +1068,14 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
   {
     slug: 'best-glossgenius-alternatives',
     competitorSlug: 'glossgenius',
-    metaTitle: '7 Best GlossGenius Alternatives for Growing Teams',
-    metaDescription: 'Outgrowing GlossGenius? Compare platforms with team management, AI, and marketplace features included.',
+    metaTitle: '7 Best GlossGenius Alternatives (2026)',
+    metaDescription: 'Compare GlossGenius alternatives on price, AI, marketplace and where they operate, including Daisy for the GCC.',
     keywords: ['best glossgenius alternatives', 'glossgenius alternatives', 'glossgenius competitors'],
     heroTitle: '7 Best GlossGenius Alternatives in 2026',
-    heroSubtitle: 'Beautiful for solos, but team management at $148/mo and no marketplace put a ceiling on growth.',
-    intro: 'GlossGenius is loved for its design and simplicity. Team features sit in Platinum at $148/mo, the AI stops at analytics, and there is no marketplace. Here are the strongest options for a growing team.',
+    heroSubtitle: 'GlossGenius is built for US businesses. These alternatives differ on marketplace, price and reach.',
+    // GlossGenius facts: glossgenius.com/pricing, genius.ai/reception and
+    // glossgenius.com/legal/privacy, read 2026-10-09.
+    intro: 'GlossGenius is known for its design and simplicity, and it sells AI agents for calls, texts, analytics and marketing. It is available only in the US, has no Arabic interface and has no consumer marketplace of its own. If any of that matters to you, here are the strongest options.',
     alternatives: ['fresha', 'booksy', 'vagaro', 'boulevard', 'mangomint', 'square-appointments'],
     bestFor: {
       'fresha': 'Best for marketplace-led client acquisition',
@@ -1077,7 +1085,9 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mangomint': 'Best for team-heavy salons wanting clean automation',
       'square-appointments': 'Best for payment-first businesses',
     },
-    daisyEdge: 'These alternatives close the team management gap. Fresha\'s AI Concierge answers calls and messages, and several of the others sell AI receptionists too, but none of them pairs that with cashback rewards that bring clients back. Daisy does, at flat pricing and with no per-staff fee.',
+    // Booksy (biz.booksy.com/features/ai-receptionist-beta) and Boulevard
+    // (joinblvd.com/features/ai-receptionist) phone receptionists, read 2026-10-09.
+    daisyEdge: 'Fresha\'s AI Concierge answers calls and messages, and Booksy and Boulevard sell AI receptionists that answer phone calls, as GlossGenius does with Reception. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English, and Daisy pairs it with cashback rewards that bring clients back, at flat pricing and with no per-staff fee.',
   },
   // P3
   {
@@ -1103,12 +1113,13 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
   {
     slug: 'best-boulevard-alternatives',
     competitorSlug: 'boulevard',
-    metaTitle: '5 Best Boulevard Alternatives: More AI, Better Value',
-    metaDescription: 'Looking beyond Boulevard? Find platforms with AI, marketplace, and Arabic support at better pricing.',
+    metaTitle: '5 Best Boulevard Alternatives for Salons and Spas (2026)',
+    metaDescription: 'Compare Boulevard alternatives on price, AI and features, and see where Daisy adds Arabic support and a cashback marketplace.',
     keywords: ['best boulevard alternatives', 'boulevard alternatives'],
     heroTitle: '5 Best Boulevard Alternatives in 2026',
-    heroSubtitle: 'Premium design at $158+/mo, with the AI behind a $295 gate. These alternatives include more for less.',
-    intro: 'Boulevard is beautifully designed. Premium pricing and AI sitting behind the Premier tier are what send businesses looking for better value. Here are the strongest alternatives.',
+    heroSubtitle: 'Boulevard starts at $159/mo ($143/mo billed annually). These alternatives differ on price, AI and reach.',
+    // Boulevard facts: joinblvd.com/pricing and /features/boulevard-ai, read 2026-10-09.
+    intro: 'Boulevard is beautifully designed, includes Precision Scheduling on every plan and sells Beau, a voice AI receptionist, as an add-on. If price or regional coverage decides it for you, here are the strongest options.',
     alternatives: ['vagaro', 'mangomint', 'glossgenius', 'booksy'],
     bestFor: {
       'vagaro': 'Best for comprehensive features at a lower price point',
@@ -1116,7 +1127,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'glossgenius': 'Best for solo professionals wanting premium simplicity',
       'booksy': 'Best for mobile-first beauty professionals',
     },
-    daisyEdge: 'These alternatives all offer premium salon management. None includes a 24/7 AI receptionist, a cashback rewards marketplace or native Arabic support. Daisy matches the quality and includes the growth tools at every tier.',
+    daisyEdge: 'These alternatives all offer salon management, and some sell AI receptionists that answer phone calls, among them GlossGenius (calls and texts) and Booksy. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English, and Daisy adds a cashback rewards marketplace. Daisy matches the quality and includes the growth tools at every tier.',
   },
   // P4
   {
@@ -1376,28 +1387,30 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     slugB: 'boulevard',
     combinedSlug: 'glossgenius-vs-boulevard',
     metaTitle: 'GlossGenius vs Boulevard: Budget vs Premium (2026)',
-    metaDescription: 'Compare GlossGenius ($24/mo) and Boulevard ($158/mo) for beauty businesses. Features, AI, design, and which is right for you.',
+    metaDescription: 'Compare GlossGenius (from $28/mo) and Boulevard (from $159/mo) for beauty businesses. Features, AI, design, and which is right for you.',
     keywords: ['glossgenius vs boulevard', 'glossgenius or boulevard'],
     heroTitle: 'GlossGenius vs Boulevard',
-    heroSubtitle: 'Beautiful design at $24/mo versus premium enterprise at $158/mo, different markets, different strengths.',
-    verdict: 'GlossGenius wins on simplicity and affordability for solos. Boulevard wins on enterprise features and AI scheduling. Neither has Arabic support or cashback.',
+    heroSubtitle: 'Beautiful design from $28/mo versus a premium client experience from $159/mo, different markets, different strengths.',
+    // Monthly-billing entry prices from glossgenius.com/pricing and joinblvd.com/pricing,
+    // and both AI receptionist pages, read 2026-10-09.
+    verdict: 'GlossGenius wins on simplicity and price for solo professionals and small teams. Boulevard wins on enterprise features and Precision Scheduling. Both sell AI receptionists: GlossGenius Reception answers calls and texts, and Boulevard\'s Beau answers calls. As of October 2026, neither lists an Arabic interface or cashback rewards.',
     whoShouldChooseA: ['You\'re a solo beauty professional', 'Budget is under $50/mo', 'Simplicity over features'],
     whoShouldChooseB: ['You run a premium multi-location salon', 'AI scheduling optimization matters', 'Enterprise features are needed'],
-    daisyPitch: 'Both target different segments of the US market. Daisy serves all business sizes with full AI, Arabic support, marketplace, and cashback, capabilities neither offers.',
+    daisyPitch: 'Both serve the US market, at different price points. Daisy serves GCC businesses of every size with an AI receptionist on WhatsApp, Instagram and the booking site, Arabic support, a marketplace and cashback.',
   },
   {
     slugA: 'fresha',
     slugB: 'glossgenius',
     combinedSlug: 'fresha-vs-glossgenius',
     metaTitle: 'Fresha vs GlossGenius: Marketplace vs Design (2026)',
-    metaDescription: 'Compare Fresha (published per market, from AED 149.95/mo in the UAE) and GlossGenius ($24/mo beauty-focused). Features, pricing, and which suits your salon better.',
+    metaDescription: 'Compare Fresha (published per market, from AED 149.95/mo in the UAE) and GlossGenius (beauty-focused, from $28/mo or $24/mo billed annually). Features, pricing, and which suits your salon better.',
     keywords: ['fresha vs glossgenius', 'fresha or glossgenius'],
     heroTitle: 'Fresha vs GlossGenius',
-    heroSubtitle: 'Marketplace with stacking fees versus beautiful design at $24/mo, which trade-off works for you?',
+    heroSubtitle: 'Marketplace with stacking fees versus beautiful design from $28/mo, which trade-off works for you?',
     verdict: 'Fresha wins on marketplace scale. GlossGenius wins on design and simplicity. Both sell AI receptionists: Fresha\'s AI Concierge answers calls and messages, and GlossGenius Reception answers calls and texts. Fresha has an Arabic UI. As of October 2026, neither lists WhatsApp or Instagram as an AI channel, and neither offers cashback.',
     whoShouldChooseA: ['You want marketplace exposure with low starting cost', 'Client discovery through marketplace matters most', 'You\'re comfortable with transaction fees on top of subscription'],
-    whoShouldChooseB: ['Design and aesthetics matter most', 'You want affordable paid software ($24/mo)', 'You\'re a solo US beauty professional'],
-    daisyPitch: 'Fresha gives marketplace, GlossGenius gives design. Daisy gives both, plus AI across every channel, Arabic and English as equals, cashback, and growth tools.',
+    whoShouldChooseB: ['Design and aesthetics matter most', 'You want affordable paid software (from $28/mo, or $24/mo billed annually)', 'You\'re a solo US beauty professional'],
+    daisyPitch: 'Fresha gives marketplace, GlossGenius gives design. Daisy gives both, plus AI on WhatsApp, Instagram and the booking site, Arabic and English as equals, cashback, and growth tools.',
   },
   {
     slugA: 'booksy',
@@ -1409,9 +1422,9 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     heroTitle: 'Booksy vs GlossGenius',
     heroSubtitle: 'Mobile-first marketplace versus beautifully simple salon tool, two approaches for beauty professionals.',
     verdict: 'Booksy wins on mobile app and marketplace. GlossGenius wins on design and affordability. Booksy\'s AI Receptionist books from calls; GlossGenius Reception covers calls and texts.',
-    whoShouldChooseA: ['Mobile experience is priority', 'You want marketplace exposure', 'Basic AI call handling appeals to you'],
-    whoShouldChooseB: ['Beautiful booking pages matter most', 'You want the simplest tool at $24/mo', 'You\'re a US-based solo professional'],
-    daisyPitch: 'Both serve solo US professionals well. Daisy serves growing businesses with full AI, Arabic support, team management, marketplace, and cashback.',
+    whoShouldChooseA: ['Mobile experience is priority', 'You want marketplace exposure', 'An AI receptionist that books from phone calls appeals to you'],
+    whoShouldChooseB: ['Beautiful booking pages matter most', 'You want a simple tool from $28/mo ($24/mo billed annually)', 'You\'re a US-based solo professional'],
+    daisyPitch: 'Both serve independent professionals well. Daisy offers an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and a marketplace with cashback, for growing businesses in the GCC.',
   },
   {
     slugA: 'mindbody',
@@ -1437,10 +1450,12 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['vagaro vs glossgenius', 'vagaro or glossgenius'],
     heroTitle: 'Vagaro vs GlossGenius',
     heroSubtitle: 'Comprehensive features versus beautiful simplicity, the right choice depends on your business stage.',
-    verdict: 'Vagaro offers more features at $30/mo. GlossGenius is simpler and more beautiful at $24/mo. Neither has full AI or Arabic support.',
+    // GlossGenius facts read 2026-10-09. Vagaro's site blocks automated tools, so no Vagaro
+    // price or AI claim is made here.
+    verdict: 'Vagaro covers a wide range of salon features. GlossGenius is simpler and design-led, from $28/mo ($24/mo billed annually), and sells Reception, an AI receptionist for calls and texts. As of October 2026, GlossGenius lists no Arabic interface.',
     whoShouldChooseA: ['You need comprehensive features', 'Team management is important', 'POS quality matters'],
     whoShouldChooseB: ['Simplicity and design matter most', 'You\'re a solo professional', 'Budget is a priority'],
-    daisyPitch: 'Vagaro manages operations; GlossGenius looks great. Daisy does both and adds AI, Arabic, marketplace, and cashback.',
+    daisyPitch: 'Vagaro manages operations; GlossGenius looks great. Daisy covers operations too, and offers an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and cashback rewards.',
   },
   {
     slugA: 'fresha',
@@ -1461,28 +1476,32 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     slugB: 'boulevard',
     combinedSlug: 'booksy-vs-boulevard',
     metaTitle: 'Booksy vs Boulevard: Affordable vs Premium (2026)',
-    metaDescription: 'Compare Booksy (mobile-first, $29.99/mo) and Boulevard (premium, $158/mo). Features, AI, and which matches your salon.',
+    metaDescription: 'Compare Booksy (mobile-first, $29.99/mo) and Boulevard (premium, from $159/mo). Features, AI, and which matches your salon.',
     keywords: ['booksy vs boulevard', 'booksy or boulevard'],
     heroTitle: 'Booksy vs Boulevard',
     heroSubtitle: 'Mobile-first affordability versus premium design and AI scheduling, which tier fits your business?',
-    verdict: 'Booksy is better for budget-conscious mobile professionals. Boulevard is better for premium established salons. Both lack Arabic and cashback.',
+    // Booksy: biz.booksy.com/pricing ($29.99/month plus $20 per extra team member) and its
+    // AI Receptionist beta page; Boulevard: joinblvd.com/pricing. Read 2026-10-09.
+    verdict: 'Booksy is better for budget-conscious mobile professionals. Boulevard is better for premium established salons. Both sell AI receptionists that answer phone calls: Booksy\'s AI Receptionist (beta) and Boulevard\'s Beau (paid add-on). As of October 2026, neither lists an Arabic interface or cashback rewards.',
     whoShouldChooseA: ['You\'re budget-conscious', 'Mobile-first matters most', 'You\'re an independent professional'],
     whoShouldChooseB: ['Premium brand experience is priority', 'AI scheduling optimization appeals', 'You run a multi-location salon'],
-    daisyPitch: 'From budget mobile to premium desktop, Daisy offers full AI, Arabic, marketplace, and cashback at any business size.',
+    daisyPitch: 'Whether you work alone or run a premium salon, Daisy offers an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, a marketplace and cashback, at any business size.',
   },
   {
     slugA: 'vagaro',
     slugB: 'boulevard',
     combinedSlug: 'vagaro-vs-boulevard',
     metaTitle: 'Vagaro vs Boulevard: Value vs Premium (2026)',
-    metaDescription: 'Compare Vagaro ($30/mo value) and Boulevard ($158/mo premium). Features, AI, POS, and which salon software delivers better ROI.',
+    metaDescription: 'Compare Vagaro (broad features) and Boulevard (premium, from $159/mo). Features, AI, POS, and which salon software delivers better ROI.',
     keywords: ['vagaro vs boulevard', 'vagaro or boulevard'],
     heroTitle: 'Vagaro vs Boulevard',
-    heroSubtitle: 'Feature-rich value at $30/mo versus premium design at $158/mo, the ROI question.',
-    verdict: 'Vagaro offers excellent value with broad features. Boulevard offers premium experience with AI scheduling. Neither has Arabic, cashback, or full AI ecosystem.',
+    heroSubtitle: 'Broad features versus premium design from $159/mo, the ROI question.',
+    // Boulevard facts read 2026-10-09. Vagaro's site blocks automated tools, so no Vagaro
+    // price, AI or language claim is made here.
+    verdict: 'Vagaro offers broad features for the price. Boulevard offers a premium experience with Precision Scheduling, and sells Beau, a voice AI receptionist, as an add-on. As of October 2026, Boulevard lists no Arabic interface or cashback rewards.',
     whoShouldChooseA: ['Value for money is priority', 'You want broad feature coverage', 'Budget-friendly for growing teams'],
     whoShouldChooseB: ['Premium experience is priority', 'AI scheduling matters', 'You target luxury clientele'],
-    daisyPitch: 'Vagaro gives features, Boulevard gives premium. Daisy gives AI + growth + Arabic support at fair pricing.',
+    daisyPitch: 'Vagaro gives features, Boulevard gives premium. Daisy offers an AI receptionist on WhatsApp, Instagram and the booking site, growth tools and Arabic support at fair pricing.',
   },
   // P5
   {

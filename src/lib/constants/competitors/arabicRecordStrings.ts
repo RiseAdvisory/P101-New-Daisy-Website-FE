@@ -64,10 +64,31 @@ const EXACT: Record<string, string> = {
   'Up to 35% per booking': 'حتى 35% لكل حجز',
 
   '$10/month per additional staff calendar': '$10 شهرياً لكل تقويم موظف إضافي',
-  'AI features only in Platinum tier ($148/mo)':
-    'ميزات الذكاء الاصطناعي في باقة Platinum فقط ($148 شهرياً)',
-  'AI features only in Premier+ tiers ($295+/mo)':
-    'ميزات الذكاء الاصطناعي في باقات Premier وما فوقها فقط ($295+ شهرياً)',
+  // GlossGenius (glossgenius.com/pricing, genius.ai/reception), read 2026-10-09.
+  '$28/mo ($24/mo billed annually)': '$28 شهرياً ($24 شهرياً عند الدفع السنوي)',
+  '$56/mo ($48/mo billed annually)': '$56 شهرياً ($48 شهرياً عند الدفع السنوي)',
+  '$168/mo ($148/mo billed annually)': '$168 شهرياً ($148 شهرياً عند الدفع السنوي)',
+  'Reception (AI receptionist): $50/mo from 1 December 2026, with 100 minutes and 200 texts; $0.50 per extra minute and $0.05 per extra text':
+    'Reception (موظف الاستقبال الذكي): $50 شهرياً اعتباراً من 1 ديسمبر 2026، وتشمل 100 دقيقة و200 رسالة نصية، ثم $0.50 لكل دقيقة إضافية و$0.05 لكل رسالة إضافية',
+  'Payroll add-on: $40/mo plus $6 per seat': 'إضافة الرواتب (Payroll): $40 شهرياً إضافة إلى $6 لكل مستخدم',
+  'Instant payouts: 1.8% fee': 'التحويل الفوري للمدفوعات: رسوم بنسبة 1.8%',
+  'Each additional location: the plan price less 15%': 'كل موقع إضافي: سعر الباقة مع خصم 15%',
+  // Boulevard (joinblvd.com/pricing, joinblvd.com/features/ai-receptionist), read 2026-10-09.
+  '$159/mo ($143/mo billed annually)': '$159 شهرياً ($143 شهرياً عند الدفع السنوي)',
+  '$325/mo per location ($293/mo billed annually)':
+    '$325 شهرياً لكل موقع ($293 شهرياً عند الدفع السنوي)',
+  '$455/mo per location ($410/mo billed annually)':
+    '$455 شهرياً لكل موقع ($410 شهرياً عند الدفع السنوي)',
+  'Pricing on request': 'السعر عند الطلب',
+  'From 2.65% per card transaction (as low as 1% with Boulevard Offset)':
+    'من 2.65% لكل معاملة بالبطاقة (وقد تنخفض إلى 1% مع برنامج Boulevard Offset)',
+  'Beau AI receptionist: $125/mo per location for 200 minutes, then $0.60 per minute':
+    'موظف الاستقبال الذكي Beau: $125 شهرياً لكل موقع مقابل 200 دقيقة، ثم $0.60 لكل دقيقة',
+  'Automated campaigns: $2 per completed appointment': 'الحملات المؤتمتة: $2 لكل موعد مكتمل',
+  'Forms add-on: from $65/mo per location (included in Prestige)':
+    'إضافة النماذج: من $65 شهرياً لكل موقع (مشمولة في باقة Prestige)',
+  'Email blasts beyond the plan allowance: $0.01 per email':
+    'رسائل البريد الإلكتروني الجماعية بعد الحصة المشمولة في الباقة: $0.01 لكل رسالة',
   'AI features only in higher tier': 'ميزات الذكاء الاصطناعي في الباقة الأعلى فقط',
   'Add-on feature costs': 'تكاليف الميزات الإضافية',
   'Advanced AI features may be in higher tiers': 'قد تكون ميزات الذكاء الاصطناعي المتقدمة في باقات أعلى',
