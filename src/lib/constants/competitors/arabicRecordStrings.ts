@@ -51,6 +51,9 @@ const HEADQUARTERS: Record<string, string> = {
 const TIER_LABELS: Record<string, string> = {
   '+1 Staff': '+1 موظف',
   Custom: 'مخصص',
+  'Each additional calendar': 'كل تقويم إضافي',
+  'Each additional team member': 'كل عضو إضافي في الفريق',
+  'One calendar': 'تقويم واحد',
   Free: 'مجاني',
   'Per location': 'لكل موقع',
   'Per user': 'لكل مستخدم',
@@ -66,6 +69,42 @@ const EXACT: Record<string, string> = {
   'Pricing on request': 'السعر عند الطلب',
   'Subscription + reduced commission': 'اشتراك + عمولة مخفّضة',
   'Up to 35% per booking': 'حتى 35% لكل حجز',
+
+  // Booksy (biz.booksy.com/pricing, read 2026-10-09)
+  '$29.99/mo + $20/mo per extra user (US)':
+    '$29.99 شهرياً + $20 شهرياً لكل مستخدم إضافي (الولايات المتحدة)',
+  '2.49% + $0.10 card reader, 2.49% + $0.20 Tap to Pay, 2.69% + $0.30 mobile and keyed-in (US)':
+    '2.49% + $0.10 عبر قارئ البطاقات، و2.49% + $0.20 عبر Tap to Pay، و2.69% + $0.30 للدفع عبر الجوال والإدخال اليدوي (الولايات المتحدة)',
+  "None unless you turn on Boost: then a one-time 30% of a new client's first visit, capped at $100":
+    'لا عمولة ما لم تفعّل Boost، وعندها تُحتسب لمرة واحدة 30% من قيمة الزيارة الأولى للعميل الجديد، بحد أقصى $100',
+  'Each additional team member adds $20/month': 'كل عضو إضافي في الفريق يضيف $20 شهرياً',
+  'Card payments from 2.49% + $0.10 per transaction on the Booksy Card Reader':
+    'مدفوعات البطاقات من 2.49% + $0.10 لكل معاملة عبر قارئ البطاقات من Booksy',
+  "Optional Boost: one-time 30% of a new client's first visit, up to $100":
+    'خدمة Boost الاختيارية: 30% لمرة واحدة من قيمة الزيارة الأولى للعميل الجديد، بحد أقصى $100',
+  'Fast Payouts in 30 minutes cost 1.5%; next-business-day payouts are free':
+    'التحويل السريع خلال 30 دقيقة برسوم 1.5%، والتحويل في يوم العمل التالي مجاني',
+  'Card reader hardware: Stripe Reader M2 $53.10 or S710 $299, plus shipping':
+    'أجهزة قراءة البطاقات: Stripe Reader M2 بسعر $53.10 أو S710 بسعر $299، إضافة إلى تكلفة الشحن',
+
+  // Vagaro (help centre "Vagaro Plans, Pricing, and Premium Features", read 2026-10-09)
+  '$23.99/mo for 1 calendar (US offer; $30/mo regular)':
+    '$23.99 شهرياً لتقويم واحد (عرض في الولايات المتحدة، والسعر المعتاد $30 شهرياً)',
+  '2.6% + $0.10 in person, 3.5% + $0.19 keyed-in (US small merchants)':
+    '2.6% + $0.10 للدفع الحضوري، و3.5% + $0.19 للإدخال اليدوي (التجار الصغار في الولايات المتحدة)',
+  "None on standard Marketplace bookings (US); Vera Fill My Books charges 20% on a new customer's first booking":
+    'لا عمولة على حجوزات السوق العادية (الولايات المتحدة)، بينما تفرض ميزة Vera Fill My Books نسبة 20% على أول حجز للعميل الجديد',
+  '$10/month per additional calendar, up to seven paid licences':
+    '$10 شهرياً لكل تقويم إضافي، حتى سبعة تراخيص مدفوعة',
+  'Monthly FANF and Mastercard location fees on card processing':
+    'رسوم FANF الشهرية ورسوم الموقع من Mastercard على معالجة البطاقات',
+  'Text marketing from $20/month for 1,000 credits': 'التسويق بالرسائل النصية من $20 شهرياً مقابل 1,000 رصيد',
+  'Vera Receptionist $10/month, which needs a Text Marketing plan':
+    'موظف الاستقبال Vera Receptionist بسعر $10 شهرياً، ويتطلب باقة للتسويق بالرسائل النصية',
+  'Forms $10/month and MySite website $20/month':
+    'النماذج بسعر $10 شهرياً، وموقع MySite الإلكتروني بسعر $20 شهرياً',
+  'Branded app $100/month plus a $100 development fee (limited-time price)':
+    'تطبيق يحمل علامتك التجارية بسعر $100 شهرياً إضافة إلى رسوم تطوير $100 (سعر لفترة محدودة)',
 
   '$10/month per additional staff calendar': '$10 شهرياً لكل تقويم موظف إضافي',
   'AI features only in Platinum tier ($148/mo)':
