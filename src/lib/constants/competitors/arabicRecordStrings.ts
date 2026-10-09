@@ -26,6 +26,7 @@ const HEADQUARTERS: Record<string, string> = {
   'Bellevue, WA, USA': 'بلفيو، واشنطن، الولايات المتحدة',
   'Dubai, UAE': 'دبي، الإمارات',
   'Dublin, Ireland': 'دبلن، أيرلندا',
+  'Houston, TX, USA': 'هيوستن، تكساس، الولايات المتحدة',
   'Limassol, Cyprus': 'ليماسول، قبرص',
   'London, UK': 'لندن، المملكة المتحدة',
   'Los Angeles, CA, USA': 'لوس أنجلوس، كاليفورنيا، الولايات المتحدة',
@@ -39,6 +40,7 @@ const HEADQUARTERS: Record<string, string> = {
   'Pleasanton, CA, USA': 'بليزانتون، كاليفورنيا، الولايات المتحدة',
   'Portland, OR, USA': 'بورتلاند، أوريغون، الولايات المتحدة',
   'Raleigh, NC, USA': 'رالي، كارولاينا الشمالية، الولايات المتحدة',
+  'Pune, India': 'بونه، الهند',
   'Riyadh, Saudi Arabia': 'الرياض، السعودية',
   'San Francisco, CA, USA': 'سان فرانسيسكو، كاليفورنيا، الولايات المتحدة',
   'San Luis Obispo, CA, USA': 'سان لويس أوبيسبو، كاليفورنيا، الولايات المتحدة',
@@ -61,6 +63,7 @@ const EXACT: Record<string, string> = {
   Custom: 'مخصص',
   Free: 'مجاني',
   'Quote-based': 'حسب عرض السعر',
+  'Pricing on request': 'السعر عند الطلب',
   'Subscription + reduced commission': 'اشتراك + عمولة مخفّضة',
   'Up to 35% per booking': 'حتى 35% لكل حجز',
 
@@ -105,7 +108,12 @@ const EXACT: Record<string, string> = {
   'Premium pricing for premium market': 'تسعير مرتفع لسوق الفئة العليا',
   'SMS costs': 'تكاليف الرسائل النصية',
   'SMS costs extra': 'الرسائل النصية بتكلفة إضافية',
+  'SMS marketing campaigns: €0.07 excl. VAT per SMS':
+    'حملات التسويق بالرسائل النصية: €0.07 لكل رسالة دون ضريبة القيمة المضافة',
   'SMS/messaging costs': 'تكاليف الرسائل النصية والمراسلة',
+  'Setup and onboarding fees for higher tiers': 'رسوم الإعداد والتهيئة للباقات الأعلى',
+  'Staff & Owners App: SAR 10 per employee per month':
+    'تطبيق الموظفين والملاك: SAR 10 لكل موظف شهرياً',
   'Team features only in highest tier': 'ميزات الفريق في الباقة الأعلى فقط',
   'Text marketing add-on costs': 'تكاليف إضافة التسويق بالرسائل النصية',
   'Transaction fees on all Square payments': 'رسوم معاملات على جميع مدفوعات Square',
@@ -113,10 +121,11 @@ const EXACT: Record<string, string> = {
   'Very basic, beauty businesses need additional tools': 'أساسي جداً، وتحتاج أعمال التجميل إلى أدوات إضافية',
   'Very high commission rates': 'نسب عمولة مرتفعة جداً',
   'Very high monthly cost for the feature set': 'تكلفة شهرية مرتفعة جداً مقارنة بالميزات',
+  'Website and self-service kiosk add-ons, priced on request':
+    'إضافتا الموقع الإلكتروني وجهاز الخدمة الذاتية، السعر عند الطلب',
   'Website builder add-on': 'إضافة منشئ المواقع',
 
   // Mindbody and Zenoti, as each publishes them (read 2026-10-09).
-  'Pricing on request': 'السعر عند الطلب',
   'From $79/mo per location (US)': 'من $79 شهرياً لكل موقع (الولايات المتحدة)',
   'Processing rate plus a fixed $0.10 to $0.30 per transaction with Mindbody Payments (North America and Asia)':
     'نسبة معالجة يُضاف إليها رسم ثابت من $0.10 إلى $0.30 لكل معاملة عبر Mindbody Payments (أمريكا الشمالية وآسيا)',
