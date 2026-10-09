@@ -124,7 +124,6 @@ const EXACT: Record<string, string> = {
     '$325 شهرياً لكل موقع ($293 شهرياً عند الدفع السنوي)',
   '$455/mo per location ($410/mo billed annually)':
     '$455 شهرياً لكل موقع ($410 شهرياً عند الدفع السنوي)',
-  'Pricing on request': 'السعر عند الطلب',
   'From 2.65% per card transaction (as low as 1% with Boulevard Offset)':
     'من 2.65% لكل معاملة بالبطاقة (وقد تنخفض إلى 1% مع برنامج Boulevard Offset)',
   'Beau AI receptionist: $125/mo per location for 200 minutes, then $0.60 per minute':
