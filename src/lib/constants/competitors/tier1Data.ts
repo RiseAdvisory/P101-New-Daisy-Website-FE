@@ -327,6 +327,11 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
   // ---------------------------------------------------------------------------
   // 2. Booksy
+  // Sources read 2026-10-09: biz.booksy.com/pricing, /features,
+  // /features/ai-receptionist-beta, /make-the-switch, /about-us, /contact,
+  // biz.booksy.com home page; help.booksy.com "Can I use Booksy outside of my
+  // country?"; Booksy blog, 27 Jan 2021 ($70M Series C, Versum merger,
+  // founded 2014); US App Store and Google Play listings for Booksy Biz.
   // ---------------------------------------------------------------------------
   booksy: {
     slug: 'booksy',
@@ -334,11 +339,17 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     website: 'https://www.booksy.com',
     tier: 1,
     description:
-      'Mobile-first beauty booking platform carrying 380K+ service providers across 50+ countries. It bought Versum in 2020 for the salon management side. The consumer app is where its attention goes.',
-    founded: '2016',
+      'Mobile-first booking and business app for beauty and wellness professionals, with a consumer marketplace. Booksy says more than 330,000 professionals use it, and its help centre lists 16 countries. Founded in Poland in 2014, it merged with Versum in December 2020.',
+    // Booksy blog, 27 Jan 2021: "Established in 2014".
+    founded: '2014',
+    // biz.booksy.com/contact lists offices in Warsaw (ul. Prosta 67) and, for
+    // the US, Chicago (515 N State St).
     headquarters: 'Warsaw, Poland (US HQ: Chicago)',
-    employeeCount: '500-800',
-    funding: '$130M+',
+    // biz.booksy.com/about-us: "750+ employees".
+    employeeCount: '750+',
+    // Booksy blog, 27 Jan 2021: "$70 million in a Series C round led by Cat
+    // Rock Capital". Earlier rounds are not listed on Booksy's own pages.
+    funding: '$70M Series C (2021)',
 
     features: {
       onlineBooking: 3,
@@ -346,17 +357,23 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       clientManagement: 2,
       staffManagement: 2,
       marketingAndCrm: 2,
-      inventoryManagement: 1,
+      // Inventory management (stock level, usage, location) is included in
+      // every subscription (biz.booksy.com/features).
+      inventoryManagement: 2,
       reportingAndAnalytics: 2,
       marketplaceAndDiscovery: 2,
       aiCapabilities: 2,
-      brandingAndWhiteLabel: 0,
+      // Booking sites sit on the Booksy domain, with a website widget and
+      // Instagram, Facebook and Google booking buttons. Basic, not absent.
+      brandingAndWhiteLabel: 1,
     },
 
+    // biz.booksy.com/pricing (US), read 2026-10-09: "$29.99 per month + tax",
+    // "Add extra users for $20/month each", "All features included".
     pricing: {
       hasFreePlan: false,
       freeTrialDays: 14,
-      startingPrice: '$29.99/mo',
+      startingPrice: '$29.99/mo + $20/mo per extra user (US)',
       startingPriceNumeric: 29.99,
       tiers: [
         {
@@ -364,51 +381,50 @@ export const tier1Competitors: Record<string, CompetitorData> = {
           price: '$29.99/mo',
           priceNumeric: 29.99,
           billingCycle: 'monthly',
-          perStaff: true,
-          perStaffCost: '$29.99/provider',
           features: [
-            'Online booking',
-            'Calendar management',
-            'Client management',
-            'Marketplace listing',
+            'All features included',
+            'Online booking and marketplace listing',
+            'Marketing tools, message blasts and 2,000 marketing texts a month',
+            'Loyalty cards and inventory',
             'AI Receptionist (beta)',
-            'Basic reporting',
           ],
         },
         {
-          name: 'Booksy Biz+',
-          price: '$49.99/mo',
-          priceNumeric: 49.99,
+          name: 'Each additional team member',
+          price: '$20/mo',
+          priceNumeric: 20,
           billingCycle: 'monthly',
-          perStaff: true,
-          perStaffCost: '$49.99/provider',
-          features: [
-            'Everything in Biz',
-            'Advanced reporting',
-            'Inventory management',
-            'Marketing tools',
-            'Multiple locations',
-          ],
+          features: ['Same features as the base subscription'],
         },
       ],
-      transactionFees: '2.49% + $0.15 per transaction',
+      transactionFees:
+        '2.49% + $0.10 card reader, 2.49% + $0.20 Tap to Pay, 2.69% + $0.30 mobile and keyed-in (US)',
+      // Pricing page FAQ: no commission unless Boost is on; then "30% of the
+      // total cost of their first visit", "up to a maximum of $100".
+      commissionOnMarketplace:
+        'None unless you turn on Boost: then a one-time 30% of a new client\'s first visit, capped at $100',
+      // All published on biz.booksy.com/pricing. They add up; none is hidden.
       hiddenCosts: [
-        'Per-provider pricing scales with team size',
-        'Payment processing fees',
-        'Premium marketplace placement costs',
+        'Each additional team member adds $20/month',
+        'Card payments from 2.49% + $0.10 per transaction on the Booksy Card Reader',
+        'Optional Boost: one-time 30% of a new client\'s first visit, up to $100',
+        'Fast Payouts in 30 minutes cost 1.5%; next-business-day payouts are free',
+        'Card reader hardware: Stripe Reader M2 $53.10 or S710 $299, plus shipping',
       ],
-      pricingModel: 'per-staff',
-      pricingPageUrl: 'https://www.booksy.com/biz/pricing',
-      lastVerified: '2026-03-13',
+      pricingModel: 'hybrid',
+      pricingPageUrl: 'https://biz.booksy.com/pricing',
+      lastVerified: '2026-10-09',
     },
 
+    // Official store listings for the Booksy Biz app, read 2026-10-09:
+    // US App Store 4.5 (15,020 ratings), Google Play 4.7 (31.6K reviews).
     reviews: [
-      { platform: 'Capterra', rating: 4.4, reviewCount: 479 },
-      { platform: 'G2', rating: 4.2, reviewCount: 350 },
-      { platform: 'App Store', rating: 4.9, reviewCount: 200000 },
-      { platform: 'Google Play', rating: 4.6, reviewCount: 100000 },
+      { platform: 'App Store', rating: 4.5, reviewCount: 15020 },
+      { platform: 'Google Play', rating: 4.7, reviewCount: 31600 },
     ],
 
+    // help.booksy.com lists 16 countries, none in the GCC. The Booksy Biz App
+    // Store listing languages are EN, FR, DE, PL, PT, ZH, ES, UK, VI.
     gccPresence: {
       hasArabicUI: false,
       arabicQuality: 'none',
@@ -418,6 +434,8 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       localSupport: false,
     },
 
+    // biz.booksy.com/features/ai-receptionist-beta: phone booking system,
+    // "English or Spanish", "in beta", providers "can request access".
     aiCapabilities: {
       hasAiReceptionist: true,
       hasAiChatbot: false,
@@ -426,11 +444,11 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'Booksy\'s AI Receptionist (beta) answers calls day or night and books the appointment onto the Booksy calendar. It is English and Spanish, and access is request-based while in beta. There is no AI chatbot for WhatsApp or Instagram, no scheduling optimization and no marketing automation.',
+        'Booksy\'s AI Receptionist (beta) answers phone calls day or night and books the appointment onto the Booksy calendar, in English or Spanish. Current Booksy providers can request access during the beta, and Booksy says appointments with No-Show Protection are not supported yet. As of October 2026, Booksy\'s published pages do not list WhatsApp or Instagram as AI Receptionist channels.',
     },
 
     targetMarket:
-      'Independent barbers and beauty professionals, mostly in the US and Europe, with particular strength among barbershops and a user base that lives on mobile.',
+      'Independent barbers, beauty professionals and multi-staff salons in the 16 countries Booksy lists, including the US, the UK, Poland, Spain and Brazil. It has a strong following among barbershops.',
 
     contentAndSeo: {
       estimatedMonthlyTraffic: '2.5M+',
@@ -448,11 +466,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Good app store optimization',
         'Provider profile pages',
       ],
-      seoWeaknesses: [
-        'Limited B2B content',
-        'Weak comparison page strategy',
-        'No advanced content marketing',
-      ],
+      seoWeaknesses: [],
     },
 
     messaging: {
@@ -463,8 +477,8 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Independent beauty professionals and barbers who want mobile booking and to be discovered',
       toneAndVoice: 'Energetic and modern, built around the phone',
       keyMessages: [
-        '380K+ service providers',
-        'Mobile-first booking experience',
+        '330,000+ beauty and wellness pros',
+        'Every feature included in one subscription',
         'Marketplace discovery',
         'AI Receptionist (beta)',
         'Manage your business from your phone',
@@ -472,107 +486,108 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     },
 
     conversionStrategy: {
-      primaryCta: 'Start free trial',
+      primaryCta: 'Start free now',
       freeTrialOffered: true,
       demoOffered: false,
       socialProof: [
-        '380K+ service providers',
-        'Millions of bookings monthly',
-        'App Store featured',
-        'Industry awards',
+        '330,000+ professionals',
+        '65 million+ customers',
+        '46,500+ app store reviews',
       ],
       conversionTactics: [
         '14-day free trial',
-        'Mobile app onboarding',
+        'Free data transfer and 1:1 onboarding',
         'Marketplace as acquisition channel',
-        'Referral bonuses',
       ],
     },
 
+    // biz.booksy.com/make-the-switch: "Free data transfer" of services,
+    // client databases, future appointments, reviews and photos.
     switchingAnalysis: {
       dataExport: true,
       contractLockIn: false,
-      migrationSupport: false,
+      migrationSupport: true,
       switchingDifficulty: 'easy',
       lockInTactics: [
         'Client relationships in app',
         'Marketplace profile and reviews',
-        'Per-provider pricing makes it feel affordable',
       ],
+      switchingIncentives: ['Free data transfer', '1:1 onboarding support'],
     },
 
     growthVsOperations: {
-      growthScore: 4,
+      growthScore: 5,
       growthFeatures: [
-        'Consumer marketplace',
-        'Social media booking',
-        'AI Receptionist for calls (beta)',
+        'Consumer marketplace and Boost',
+        'Message blasts and automated marketing',
+        'Loyalty cards',
+        'Instagram, Facebook and Reserve with Google booking',
+        'AI Receptionist for phone calls (beta)',
       ],
       operationsFeatures: [
         'Mobile calendar',
         'Client database',
         'POS & payments',
         'Staff management',
-        'Inventory tracking',
+        'Inventory management',
       ],
       assessment:
-        'Operations-focused, with the marketplace as its main growth channel. Its AI Receptionist books from phone calls, but stops at the phone: no WhatsApp or Instagram, and no marketing or acquisition tools that work on their own.',
+        'An operations platform whose growth comes from the marketplace, Boost, built-in marketing tools and loyalty cards. Its AI Receptionist (beta) books from phone calls in English and Spanish.',
     },
 
     daisyAdvantages: [
-      'Full AI ecosystem (receptionist + chatbot + smart scheduling + marketing) vs a phone-only AI receptionist',
-      'Official Meta Tech Provider with native WhatsApp and Instagram messaging vs no messaging platform integration',
-      'Native multilingual support (Arabic/English and more) vs English-only platform',
-      'Customer acquisition engine with cashback rewards vs basic marketplace listing',
-      'Branded booking page with no Daisy branding vs Booksy-branded experience',
-      'Complete GCC market support vs zero GCC presence',
-      'All-in-one flat pricing vs per-provider pricing that scales with team',
-      'AI-powered marketing automation vs no marketing AI',
+      'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English; Booksy\'s AI Receptionist (beta) answers phone calls in English and Spanish',
+      'Official Meta Tech Provider with native WhatsApp and Instagram messaging',
+      'Arabic and English as equals; Booksy\'s business app lists nine languages, and Arabic is not one of them',
+      'Cashback-funded customer acquisition alongside the marketplace',
+      'A booking page that carries your logo, name and colours; Booksy hosts booking sites on its own domain, with a widget for your website',
+      'Built for the GCC; Booksy\'s help centre lists no GCC country',
+      'Plan pricing with no fee for each extra user; Booksy adds $20 a month per additional team member',
+      'AI-powered marketing automation',
     ],
 
     daisySwitchingReasons: [
-      'Need Arabic support for GCC market clients',
-      'Want comprehensive AI beyond just call handling',
-      'Per-provider pricing getting expensive as team grows',
-      'Need customer acquisition tools beyond marketplace',
-      'Want a branded booking experience for brand building',
-      'Need GCC compliance and local payment methods',
+      'Need Arabic for clients in the GCC',
+      'Want an AI receptionist on WhatsApp and Instagram as well as your booking site',
+      'Paying $20 a month for each extra team member as the team grows',
+      'Want cashback rewards to bring clients back',
+      'Want a booking page carrying your own brand',
+      'Need local payment methods in the GCC',
     ],
 
     competitorStrengths: [
-      'Excellent mobile app experience',
-      'Strong in barbershop vertical',
-      'AI Receptionist that books from calls (beta)',
-      'Large consumer marketplace',
-      'Google AI Mode integration announced',
-      'Affordable per-provider pricing for solopreneurs',
+      'Mobile-first app that also runs on tablet and web',
+      'Strong following among barbershops',
+      'AI Receptionist (beta) that books from phone calls in English and Spanish',
+      'Consumer marketplace that Booksy says reaches 65 million customers',
+      'Bookable through Google\'s AI Mode in Search, which Booksy announced in 2025',
+      'Every feature in one subscription, including marketing tools, loyalty cards and inventory',
     ],
 
     competitorWeaknesses: [
-      'No Arabic support or GCC presence',
-      'AI limited to call handling only',
-      'Per-provider pricing expensive for larger teams',
-      'No branding control on customer-facing pages',
-      'Limited marketing and CRM tools',
-      'Weak inventory management',
-      'No cashback or loyalty program built in',
+      'No Arabic interface and no GCC country on its published list, as of October 2026',
+      'The AI Receptionist is in beta, and Booksy\'s published pages do not list WhatsApp or Instagram as channels',
+      'Each additional team member adds $20 a month',
+      'Booking sites are hosted on the Booksy domain',
+      'Optional Boost charges a one-time 30% of a new client\'s first visit, up to $100',
+      'Loyalty runs on digital stamp cards; cashback rewards are not listed on Booksy\'s published pages',
     ],
 
     faq: [
       {
         question: 'How does Daisy compare to Booksy?',
         answer:
-          'Booksy is a mobile-first booking app with a consumer marketplace. Daisy is a growth platform, with a full AI ecosystem covering receptionist, chatbot, smart scheduling and marketing, native Arabic and English, acquisition through cashback rewards, and complete control of your brand. Booksy has none of those.',
+          'Booksy is a mobile-first booking app with a consumer marketplace, and every Booksy subscription includes marketing tools, loyalty cards and inventory. Its AI Receptionist (beta) answers phone calls in English and Spanish. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English, and Daisy adds cashback-driven acquisition and a branded booking page.',
       },
       {
         question: 'Is Booksy good for salons in the Middle East?',
         answer:
-          'Booksy has no GCC presence at all: no Arabic interface, no local payment methods, nothing for regional compliance. Daisy was built for the Middle East, with a native Arabic interface, local payment integration and full GCC compliance across UAE, KSA, Kuwait, Bahrain, Oman and Qatar.',
+          'Booksy\'s help centre lists 16 countries, none of them in the GCC, and its business app lists nine languages, not including Arabic, as of October 2026. Daisy was built for the Middle East, with a native Arabic interface, local payment integration and full GCC compliance across UAE, KSA, Kuwait, Bahrain, Oman and Qatar.',
       },
       {
         question: 'What is Booksy\'s AI Receptionist?',
         answer:
-          'Booksy\'s AI Receptionist answers calls day or night and books the appointment for the caller. It is in beta, request-based, and covers English and Spanish on the phone channel. Daisy\'s AI receptionist handles calls, bookings, payments and customer service in Arabic and English.',
+          'An automated phone receptionist. It answers calls day or night and books the appointment onto your Booksy calendar, in English or Spanish. It is in beta, current Booksy providers can request access, and Booksy says appointments with No-Show Protection are not supported yet. Daisy\'s AI receptionist handles bookings, payments and customer service on WhatsApp, Instagram and the booking site, in Arabic and English. It does not answer phone calls today.',
       },
       {
         question: 'Can I switch from Booksy to Daisy?',
@@ -582,42 +597,52 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How much does Booksy cost per month?',
         answer:
-          'Booksy Biz starts at $29.99/month per service provider, which mounts up quickly across a team. A 5-person salon is at roughly $150/month before any add-ons. Booksy Biz+, with advanced marketing, reporting and multi-location support, costs more again. Daisy does not multiply the price by headcount, so the bill stays predictable as you grow.',
+          'In the US, Booksy costs $29.99 a month plus tax, and $20 a month for each additional team member. Every feature is included in that price, so a five-person salon pays $109.99 a month before tax. Card payments cost 2.49% + $0.10 on the Booksy Card Reader, 2.49% + $0.20 with Tap to Pay and 2.69% + $0.30 for mobile and keyed-in payments. Boost, the optional marketplace promotion, charges a one-time 30% of a new client\'s first visit, capped at $100. Daisy does not multiply the price by headcount, so the bill stays predictable as you grow.',
       },
       {
         question: 'Does Booksy support Arabic or work well in the Gulf region?',
         answer:
-          'Booksy has no GCC presence, no Arabic, no local payment integration and no regional compliance. Daisy was built for the Gulf, with a native Arabic interface and local payment methods, and is live in Kuwait today.',
+          'Not as of October 2026. Booksy\'s business app lists English, French, German, Polish, Portuguese, Spanish, Chinese, Ukrainian and Vietnamese, and its help centre lists no GCC country. Daisy was built for the Gulf, with a native Arabic interface and local payment methods, and is live in all six GCC countries.',
       },
       {
         question: 'How does Booksy\'s AI compare to Daisy\'s AI receptionist?',
         answer:
-          'Booksy\'s AI Receptionist books from phone calls, in beta, in English and Spanish. The difference is channel and scope rather than presence: Daisy\'s AI receptionist carries the whole journey across phone, WhatsApp and Instagram in Arabic and English: answering questions, booking, taking payment and following up, 24/7 in Arabic and English.',
+          'They cover different channels. Booksy\'s AI Receptionist (beta) answers phone calls in English and Spanish and books onto your calendar. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English: it answers questions, books, takes payment and follows up, 24/7. It does not answer phone calls.',
       },
       {
         question: 'Is the Booksy app good for salon owners?',
         answer:
-          'The consumer app is polished and reviews well for finding and booking services. The business app works, though owners mention navigation taking some learning, limited customization, and occasional sync problems between the consumer and business sides. In Daisy the business and customer sides are one system.',
+          'Booksy Biz is rated 4.5 on the US App Store from about 15,000 ratings and 4.7 on Google Play from about 31,600 reviews, as of October 2026, and it runs on phone, tablet and web. In Daisy the business and customer sides are one system.',
       },
       {
         question: 'Can Booksy handle multiple salon locations?',
         answer:
-          'Multi-location management sits in the higher Booksy Biz+ tier, but the product grew up around single-provider businesses, barbers especially. Cross-branch reporting and centralized staff management are less developed than on platforms built for it. Daisy handles multi-branch natively, with centralized analytics, staff scheduling across locations and one set of client records.',
+          'Booksy\'s published pages focus on single-location and multi-staff businesses, with staff profiles, shifts, commissions and five permission levels, plus a Shared Location option for booth renters. We could not find multi-location management described on Booksy\'s published pages as of October 2026, so ask Booksy directly if you run several branches. Daisy handles multi-branch natively, with centralized analytics, staff scheduling across locations and one set of client records.',
       },
       {
         question: 'Does Booksy integrate with other business tools I use?',
         answer:
-          'Integrations are limited: Google Calendar sync, basic social media booking links and Booksy\'s own payment processing. There is no open API to build against. Daisy covers Google Calendar sync, social media and payment gateways, and gives you API access to connect whatever else you run.',
+          'Booksy lists booking buttons for Reserve with Google, Instagram and Facebook, a website widget, Google and Apple calendar import, and its own payments. Daisy covers Google Calendar sync, social media and payment gateways, and gives you API access to connect whatever else you run.',
       },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
     notes:
-      'Strong on mobile and strong with barbershops. Its AI Receptionist books from phone calls, which is a real competitive move, though narrower than AI across every channel, and the Google AI Mode integration could firm up its position. No GCC presence at all is the key weakness.',
+      'Strong on mobile and with barbershops. All features come in one $29.99 subscription plus $20 per extra user (US). Its AI Receptionist (beta) books from phone calls, and Booksy is bookable through Google AI Mode. Booksy\'s help centre lists 16 countries, none in the GCC.',
   },
 
   // ---------------------------------------------------------------------------
   // 3. Vagaro
+  // vagaro.com returns 403 to automated tools. Sources, read 2026-10-09:
+  // Vagaro's help centre through its public Zendesk API
+  // (support.vagaro.com/api/v2/help_center/...): "Vagaro Plans, Pricing, and
+  // Premium Features" (updated 2026-10-06), "United States - Credit Card
+  // Processing Rates and Fees", "Set Up A Chatbot for Your Business with Vera
+  // Receptionist", "Grow Your Business with Vera Fill My Books", "What's
+  // Included in Your Free Trial", "Give Customers Points for Purchases",
+  // "Reports for Multi-Location Businesses", "Export Your Customer List".
+  // Wayback captures: vagaro.com/pro (2026-09-27), en-ca/pro/updates
+  // (2026-10-06), en-ca/pro/about-us (2026-07-11). US App Store listings.
   // ---------------------------------------------------------------------------
   vagaro: {
     slug: 'vagaro',
@@ -625,11 +650,14 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     website: 'https://www.vagaro.com',
     tier: 1,
     description:
-      'All-in-one management platform for salons, spas and fitness businesses, with 220K+ of them on board. It acquired Schedulicity in January 2025. The marketplace and the breadth of features are its strengths.',
-    founded: '2010',
+      'All-in-one software for salons, spas and fitness businesses in the US, Canada, the UK and Australia. Vagaro says more than 100,000 businesses rely on it, and it acquired Schedulicity in January 2025.',
+    // vagaro.com/pro (Wayback 2026-09-27): "17 years in business".
+    founded: '2009',
+    // Business Wire release, 15 Jun 2023, datelined Pleasanton, Calif.
     headquarters: 'Pleasanton, CA, USA',
-    employeeCount: '500-700',
-    funding: 'Bootstrapped / private',
+    // FTV Capital release, 5 Dec 2018: "$63 million growth equity round, its
+    // first institutional capital"; FTV, 2 Nov 2021: "$1 Billion Valuation".
+    funding: '$63M growth equity led by FTV Capital (2018); further FTV investment at a $1B valuation (2021)',
 
     features: {
       onlineBooking: 3,
@@ -640,60 +668,72 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       inventoryManagement: 2,
       reportingAndAnalytics: 2,
       marketplaceAndDiscovery: 2,
-      aiCapabilities: 1,
-      brandingAndWhiteLabel: 0,
+      // Vera Receptionist (chat and SMS), Fill My Books, AI copy and reports.
+      aiCapabilities: 2,
+      // Branded App and MySite websites with your own domain are published.
+      brandingAndWhiteLabel: 2,
     },
 
+    // Help centre "Vagaro Plans, Pricing, and Premium Features" (US): "$23.99
+    // per month, Only for a limited time"; "Each additional employee calendar
+    // is $10 per month for up to seven licenses". vagaro.com/pro shows "$30"
+    // struck through beside "$23.99/month".
     pricing: {
       hasFreePlan: false,
       freeTrialDays: 30,
-      startingPrice: '$30/mo',
-      startingPriceNumeric: 30,
+      startingPrice: '$23.99/mo for 1 calendar (US offer; $30/mo regular)',
+      startingPriceNumeric: 23.99,
       tiers: [
         {
-          name: 'Single',
-          price: '$30/mo',
-          priceNumeric: 30,
+          name: 'One calendar',
+          price: '$23.99/mo',
+          priceNumeric: 23.99,
           billingCycle: 'monthly',
           features: [
-            'Online booking',
-            'Calendar management',
-            'POS & payments',
-            'Client management',
-            'Marketing tools',
-            'Reporting',
+            'Online booking and calendar',
+            'POS and payments',
+            'Free Vagaro Marketplace listing',
+            '1,000 free marketing emails a month',
+            'Loyalty points',
+            'Reports',
           ],
         },
         {
-          name: '+1 Staff',
-          price: '$40/mo',
-          priceNumeric: 40,
+          name: 'Each additional calendar',
+          price: '$10/mo',
+          priceNumeric: 10,
           billingCycle: 'monthly',
-          perStaff: true,
-          perStaffCost: '+$10/additional calendar',
-          features: ['Everything in Single', 'Additional staff calendar ($10 each)'],
+          features: ['Up to seven paid licences; further employees added at no charge'],
         },
       ],
-      transactionFees: '2.75% per transaction (Vagaro Pay)',
+      transactionFees: '2.6% + $0.10 in person, 3.5% + $0.19 keyed-in (US small merchants)',
+      // Standard Marketplace listing is free in the US; Fill My Books carries
+      // a 20% fee on a new customer's first booking (5% on returning
+      // customers for last-minute openings).
+      commissionOnMarketplace:
+        'None on standard Marketplace bookings (US); Vera Fill My Books charges 20% on a new customer\'s first booking',
+      // All published in Vagaro's help centre. They add up; none is hidden.
       hiddenCosts: [
-        '$10/month per additional staff calendar',
-        'Payment processing fees',
-        'Text marketing add-on costs',
-        'Website builder add-on',
-        'Forms add-on',
+        '$10/month per additional calendar, up to seven paid licences',
+        'Monthly FANF and Mastercard location fees on card processing',
+        'Text marketing from $20/month for 1,000 credits',
+        'Vera Receptionist $10/month, which needs a Text Marketing plan',
+        'Forms $10/month and MySite website $20/month',
+        'Branded app $100/month plus a $100 development fee (limited-time price)',
       ],
       pricingModel: 'hybrid',
       pricingPageUrl: 'https://www.vagaro.com/pro/pricing',
-      lastVerified: '2026-03-13',
+      lastVerified: '2026-10-09',
     },
 
+    // US App Store listing for the Vagaro Pro business app, read 2026-10-09:
+    // 4.4 (15,806 ratings).
     reviews: [
-      { platform: 'Capterra', rating: 4.7, reviewCount: 3463 },
-      { platform: 'G2', rating: 4.3, reviewCount: 500 },
-      { platform: 'App Store', rating: 4.7, reviewCount: 95000 },
-      { platform: 'Google Play', rating: 4.3, reviewCount: 28000 },
+      { platform: 'App Store', rating: 4.4, reviewCount: 15806 },
     ],
 
+    // Help centre: software for "businesses in the United States, Canada, the
+    // United Kingdom, and Australia". App Store listings: English only.
     gccPresence: {
       hasArabicUI: false,
       arabicQuality: 'none',
@@ -703,19 +743,24 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       localSupport: false,
     },
 
+    // Help centre, Vera Receptionist (updated 2026-08-28): replies to Vagaro
+    // Listing Page messages and, with a Text Marketing plan, SMS; can "Book
+    // appointments" and "Reschedule or cancel"; over SMS sends a link instead;
+    // "United States - $10 per month". Vagaro updates page: "Ask Vera About
+    // Your Reports" (Aug 2026). Fill My Books: "powered by Vera".
     aiCapabilities: {
-      hasAiReceptionist: false,
+      hasAiReceptionist: true,
       hasAiChatbot: true,
       hasSmartScheduling: false,
-      hasAiMarketing: false,
-      hasAiAnalytics: false,
+      hasAiMarketing: true,
+      hasAiAnalytics: true,
       hasAiPricing: false,
       aiDescription:
-        'A basic AI chatbot that answers questions without booking an appointment or taking a payment. No AI receptionist, no smart scheduling, no marketing AI. Schedulicity was acquired in Jan 2025 to widen the marketplace.',
+        'Vagaro sells Vera Receptionist, an AI chatbot in Connect by Vagaro that answers messages from your Vagaro listing page and, with a Text Marketing plan, SMS. In chat it can book, reschedule and cancel appointments; over SMS it sends a booking link instead. It costs $10 a month in the US and needs a Text Marketing plan. Vera also writes marketing copy, answers questions about your reports and runs Fill My Books promotions on the Vagaro Marketplace. As of October 2026, Vagaro\'s published pages do not list phone calls as a Vera channel.',
     },
 
     targetMarket:
-      'Small and medium salons, spas and fitness businesses in North America. The breadth suits multi-service operators, and the price makes it easy to say yes to.',
+      'Small and medium salons, spas and fitness businesses in the US, Canada, the UK and Australia. The breadth of features suits businesses that offer several kinds of service.',
 
     contentAndSeo: {
       estimatedMonthlyTraffic: '3M+',
@@ -734,44 +779,39 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Comprehensive marketplace SEO pages',
         'Good keyword coverage for salon software terms',
       ],
-      seoWeaknesses: [
-        'Content quality is inconsistent',
-        'Limited comparison content',
-        'No podcast or video strategy',
-      ],
+      seoWeaknesses: [],
     },
 
     messaging: {
       tagline: 'The all-in-one salon, spa & fitness software',
       primaryValueProp:
-        'Affordable all-in-one business management with marketplace at $30/month starting price',
+        'All-in-one business management with a consumer marketplace, from $23.99 a month in the US on a limited-time offer',
       targetAudience:
-        'Cost-conscious salon and spa owners who want everything without paying enterprise rates',
+        'Salon, spa and fitness business owners who want a broad feature set at a low entry price',
       toneAndVoice: 'Practical and feature-led, always circling back to value',
       keyMessages: [
-        'All-in-one at $30/month',
-        '220K+ businesses trust Vagaro',
+        '$23.99/month for one calendar (limited-time offer, $30 regular)',
+        '300K professionals trusting Vagaro',
         '30-day free trial',
-        'No contracts, cancel anytime',
-        'Marketplace exposure included',
+        'Cancel anytime with no cancellation fees',
+        'Free Vagaro Marketplace listing',
       ],
     },
 
     conversionStrategy: {
-      primaryCta: 'Try it free for 30 days',
+      primaryCta: 'Start Free Trial',
       freeTrialOffered: true,
       demoOffered: true,
       socialProof: [
-        '220,000+ businesses',
-        '3,400+ Capterra reviews',
-        'Highest-rated salon software',
-        'Featured in Business Insider',
+        '300K professionals trusting Vagaro',
+        '162M+ appointments made in 2026',
+        '17 years in business',
       ],
       conversionTactics: [
-        'Generous 30-day free trial',
-        'Low starting price ($30/mo)',
+        '30-day free trial',
+        'Limited-time $23.99/month offer',
+        'Free card reader with Vagaro Merchant Services',
         'Demo available for larger businesses',
-        'Feature comparison pages vs competitors',
       ],
     },
 
@@ -783,19 +823,19 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       lockInTactics: [
         'Client history and notes',
         'Marketplace presence and reviews',
-        'Low price makes it hard to justify switching',
-        'Add-on ecosystem creates investment',
+        'Branded app and MySite website',
       ],
-      switchingIncentives: ['Free data migration assistance', 'No cancellation fees'],
+      switchingIncentives: ['Data import with help from its Onboarding Team', 'No cancellation fees'],
     },
 
     growthVsOperations: {
-      growthScore: 4,
+      growthScore: 5,
       growthFeatures: [
         'Consumer marketplace',
-        'Email/text marketing',
-        'Social media booking links',
-        'Gift certificates',
+        'Vera Fill My Books promotions',
+        'Email and text marketing',
+        'Loyalty points',
+        'Gift certificates and Daily Deals',
       ],
       operationsFeatures: [
         'POS & payments',
@@ -806,105 +846,105 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         'Forms & intake',
       ],
       assessment:
-        'A feature-rich operations platform whose growth comes through the marketplace. Marketing exists but amounts to email and text blasts. Nothing AI-driven for acquisition or the customer lifecycle.',
+        'An operations platform with a consumer marketplace. For growth it offers email and text campaigns, points-based loyalty and Vera Fill My Books, which promotes openings on the Vagaro Marketplace for a fee on new-customer bookings.',
     },
 
     daisyAdvantages: [
-      '24/7 AI receptionist that books appointments and processes payments vs basic chatbot that can\'t book',
-      'Official Meta Tech Provider with native WhatsApp and Instagram APIs vs basic SMS notifications',
-      'AI-powered customer acquisition engine vs passive marketplace listing',
-      'Native Arabic/English support vs English-only',
-      'Branded booking page with no Daisy branding vs Vagaro-branded experience',
-      'Cashback reward system for customer retention vs no loyalty program',
-      'Smart AI scheduling optimization vs manual calendar management',
-      'GCC market compliance and local payments vs no international support',
+      'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English; Vagaro\'s Vera Receptionist answers listing-page chat and SMS as a $10/month add-on',
+      'Official Meta Tech Provider with native WhatsApp and Instagram messaging',
+      'Cashback-funded customer acquisition alongside the marketplace',
+      'Arabic and English as equals; Vagaro\'s apps list English only',
+      'A branded booking page in every plan; Vagaro sells MySite websites and a branded app as add-ons',
+      'Cashback rewards for retention; Vagaro\'s loyalty program is points-based',
+      'Smart AI scheduling',
+      'Built for the GCC with local payments; Vagaro sells in the US, Canada, the UK and Australia',
     ],
 
     daisySwitchingReasons: [
-      'Chatbot can\'t actually book appointments, need real AI that converts',
-      'Per-calendar add-on pricing adds up with growing team',
-      'No Arabic support for Middle East expansion',
-      'Want AI-driven marketing, not just email/text blasts',
-      'Need a branded booking page for brand consistency',
-      'Want cashback rewards to drive customer loyalty',
-      'Marketplace alone isn\'t enough for customer acquisition',
+      'Want an AI receptionist on WhatsApp and Instagram, in Arabic and English',
+      'Paying $10 a month for each extra calendar as the team grows',
+      'Need Arabic for clients in the GCC',
+      'Want cashback rewards that bring clients back',
+      'Want a branded booking page included in the plan price',
+      'Need local payment methods in the GCC',
     ],
 
     competitorStrengths: [
-      'Most affordable starting price ($30/mo) among full-featured platforms',
-      'Highest volume of reviews (3,400+ on Capterra)',
-      'Comprehensive feature set covering salon, spa, and fitness',
-      'Generous 30-day free trial',
-      'Strong POS and payment processing',
-      'Acquired Schedulicity for expanded marketplace reach',
+      'US plan from $23.99 a month for one calendar on a limited-time offer ($30 regular)',
+      'Broad feature set covering salon, spa and fitness',
+      '30-day free trial',
+      'Strong POS with its own card readers and PayPro hardware',
+      'Vera AI tools: an AI receptionist for chat and SMS, AI-written marketing copy and Fill My Books promotions',
+      'Branded app and MySite websites, with your own domain',
+      '24/7 support team, according to its help centre',
+      'Acquired Schedulicity in January 2025',
     ],
 
     competitorWeaknesses: [
-      'AI chatbot cannot book appointments or process payments',
-      'No Arabic support or GCC presence',
-      'Add-on pricing creates unpredictable costs',
-      'No branding control option',
-      'Marketing tools are basic (no AI, no CRM automation)',
-      'No cashback or loyalty system',
-      'Interface can feel dated compared to newer platforms',
+      'No Arabic interface and no GCC market on its published pages, as of October 2026',
+      'Vera Receptionist is a $10/month add-on that needs a Text Marketing plan, and over SMS it sends a booking link rather than booking',
+      'Each additional calendar adds $10 a month, up to seven paid licences',
+      'Text marketing, Forms, MySite and the branded app are paid add-ons',
+      'Fill My Books charges 20% on a new customer\'s first booking',
+      'Loyalty is points-based; cashback rewards are not listed on Vagaro\'s published pages',
     ],
 
     faq: [
       {
         question: 'How does Vagaro pricing work?',
         answer:
-          'Vagaro starts at $30/month for one user. Every additional staff calendar adds $10/month, and payment processing takes 2.75% per transaction. Text marketing, the website builder and forms are all extra. A 5-person salon lands around $70/month before transaction fees and add-ons.',
+          'In the US, Vagaro\'s base subscription is $23.99 a month for one calendar on a limited-time offer ($30 regular). Each additional employee calendar is $10 a month, up to seven paid licences; after that, new employees are added at no extra charge. Card processing for small merchants is 2.6% + $0.10 in person and 3.5% + $0.19 keyed in, plus monthly FANF and Mastercard location fees. Add-ons include text marketing from $20 a month, Forms at $10, MySite at $20 and Vera Receptionist at $10. A salon with five calendars pays $63.99 a month in subscription on the current offer, or $70 at the regular price, before processing and add-ons.',
       },
       {
         question: 'How does Daisy compare to Vagaro?',
         answer:
-          'Vagaro gives you comprehensive operations at a low price. What it does not give you is growth: a 24/7 AI receptionist, cashback-driven acquisition, white-label branding, native Arabic. Vagaro\'s chatbot answers questions. Daisy\'s AI books the appointment and takes the payment.',
+          'Both run bookings, payments and client records, and both sell an AI receptionist. Vagaro\'s Vera answers listing-page chat and SMS as a $10 a month add-on, and Vagaro sells in the US, Canada, the UK and Australia. Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site in Arabic and English, and Daisy adds cashback-driven acquisition and a branded booking page.',
       },
       {
         question: 'Can Vagaro\'s AI chatbot book appointments?',
         answer:
-          'No. It answers basic questions about your business and stops there, with no booking and no payments. Daisy\'s AI receptionist runs the full booking flow, payment included, 24/7 in Arabic and English.',
+          'Yes, in chat. Vagaro\'s help centre says Vera Receptionist can book, reschedule and cancel appointments and check availability. Over SMS it sends the customer a booking link instead. It costs $10 a month in the US and needs a Text Marketing plan. Daisy\'s AI receptionist books and takes payment on WhatsApp, Instagram and the booking site, 24/7 in Arabic and English.',
       },
       {
         question: 'Can I switch from Vagaro to Daisy?',
         answer:
-          'Yes. Vagaro has no contracts and lets you export your data. Daisy will move the client data, appointment history and service menus across, and most businesses are done inside a week.',
+          'Yes. Vagaro has no contracts, you can cancel at any time, and it lets you export your customer list. Daisy will move the client data, appointment history and service menus across, and most businesses are done inside a week.',
       },
       {
-        question: 'What are the hidden fees with Vagaro?',
+        question: 'What does Vagaro cost on top of the subscription?',
         answer:
-          'The $30/month base price reads well, then the extras arrive. Each additional staff calendar is $10/month, payment processing takes 2.75% per transaction, text marketing charges per message, the website builder is an add-on, custom forms are paid, and branded app listings carry their own fee. A 5-person salon using marketing can pass $100+/month before transaction fees. Daisy includes AI marketing and team features in the base plan.',
+          'Vagaro publishes all of these, so they are not hidden, but they add up. In the US: $10 a month for each additional calendar up to seven, card processing from 2.6% + $0.10 in person with monthly network fees, text marketing from $20 a month for 1,000 credits, Vera Receptionist at $10 a month, Forms at $10, MySite at $20, and a branded app at $100 a month plus a $100 development fee at its current limited-time price. Fill My Books charges 20% on a new customer\'s first booking. Daisy includes AI marketing and team features in the base plan.',
       },
       {
         question: 'Does Vagaro work for salons in Dubai or Saudi Arabia?',
         answer:
-          'Vagaro is built around the US, with no Arabic, no GCC payment methods and nothing for regional compliance. Daisy was built for the GCC, with a native Arabic and English interface and local payment integration, live in Kuwait today.',
+          'Vagaro sells its software in the US, Canada, the UK and Australia, and its apps list English only. We could not find GCC pricing, payments or an Arabic interface on its published pages as of October 2026. Daisy was built for the GCC, with a native Arabic and English interface and local payment integration, and is live in all six GCC countries.',
       },
       {
-        question: 'Does Vagaro have real AI features?',
+        question: 'Does Vagaro have AI features?',
         answer:
-          'There is a basic AI chatbot that answers questions about your business. It cannot book, cannot take payment and cannot work through a complicated request on its own. No AI marketing, no scheduling optimization, no predictive analytics. Daisy\'s AI receptionist runs the full booking flow including payment, alongside AI marketing campaigns and smart scheduling, all in the base plan.',
+          'Yes. Vera, Vagaro\'s built-in AI assistant, runs several features. Vera Receptionist answers chat and SMS for $10 a month in the US. Fill My Books creates deals and promotes your openings on the Vagaro Marketplace for a 20% fee on a new customer\'s first booking. Vera can also write descriptions and marketing copy and answer questions about your reports. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English, alongside AI marketing and smart scheduling.',
       },
       {
         question: 'How good is the Vagaro mobile app for business owners?',
         answer:
-          'The business app covers scheduling and client management, though users describe an interface crowded with too many features, and push notification reliability comes up often. The consumer marketplace app is a separate download. Daisy\'s business app is purpose-built, notifications arrive, and the customer side is part of the same experience.',
+          'The Vagaro Pro business app is rated 4.4 out of 5 from about 15,800 ratings on the US App Store, as of October 2026, and customers book through a separate Vagaro app. Daisy\'s business app is built around salon operations, with the AI receptionist, cashback and payments in one place.',
       },
       {
         question: 'Can Vagaro scale for multiple salon locations?',
         answer:
-          'Multi-location is supported, but reporting across branches is basic and centralized inventory tracking has to be set up by hand. Integration gaps remain from the Schedulicity acquisition. Daisy gives multi-location businesses centralized analytics, staff scheduling across branches, one set of client records and inventory managed across every site.',
+          'Yes. Vagaro supports multi-location businesses, and its reports can cover up to 25 locations at once. Daisy gives multi-location businesses centralized analytics, staff scheduling across branches, one set of client records and inventory managed across every site.',
       },
       {
         question: 'How is Vagaro\'s customer support?',
         answer:
-          'Phone, email and live chat, during US business hours, Mon-Fri. Users rate it responsive, while noting that complicated problems take several rounds to settle. There is no 24/7 cover. Daisy provides dedicated account management, live chat and priority support on every plan, across GCC and global business hours.',
+          'Vagaro\'s help centre says customers get access to its 24/7 support team. Its AI assistant, Vera, answers questions first, with a Chat with Human option to reach an agent, and one-on-one training costs $100 in the US. Daisy includes customer support on every plan, with priority support on the higher tiers.',
       },
     ],
 
-    lastResearched: '2026-03-13',
+    lastResearched: '2026-10-09',
     notes:
-      'The best value of the Tier 1 competitors at $30/mo. The Schedulicity acquisition in Jan 2025 widened the marketplace. The AI chatbot cannot book. Main vulnerability: no real AI and no internationalization.',
+      'US plan from $23.99 a month for one calendar on a limited-time offer ($30 regular), plus $10 per extra calendar up to seven. Vera Receptionist (chat and SMS, $10/month add-on) books in chat. Sold in the US, Canada, the UK and Australia, with no Arabic interface listed. Acquired Schedulicity in January 2025.',
   },
 
   // ---------------------------------------------------------------------------

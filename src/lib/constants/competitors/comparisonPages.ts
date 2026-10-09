@@ -146,31 +146,33 @@ export const daisyVsPages: DaisyVsPageData[] = [
     heroTitle: 'Daisy vs Booksy',
     heroSubtitle:
       'A mobile-first booking app against a full AI-powered growth platform, which one actually grows your business?',
-    tldr: 'Booksy is a solid mobile-first booking app whose AI Receptionist (beta) answers calls and books appointments, in English and Spanish. Daisy brings a complete AI ecosystem, Arabic support, cashback-driven customer acquisition and flat pricing that doesn\'t rise with every provider you add.',
+    // Booksy facts re-verified 2026-10-09 on biz.booksy.com (pricing, features,
+    // AI Receptionist) and help.booksy.com.
+    tldr: 'Booksy is a solid mobile-first booking app. Its subscription includes marketing tools, loyalty cards and inventory, and its AI Receptionist (beta) answers phone calls and books appointments in English and Spanish. Daisy runs its AI receptionist on WhatsApp, Instagram and the booking site in Arabic and English, adds cashback-driven customer acquisition, and has flat pricing that doesn\'t rise with every provider you add.',
     verdict:
-      'Booksy suits independent barbers and beauty pros who want simple mobile booking with marketplace exposure. For teams, though, the per-provider pricing gets expensive, there is no GCC presence, and the AI does nothing beyond routing calls. For growing businesses, particularly in Arabic-speaking markets, Daisy wins clearly.',
+      'Booksy suits independent barbers and beauty pros who want simple mobile booking with marketplace exposure. For a growing team, each additional member adds $20 a month, Booksy lists no GCC market, and its AI Receptionist works on phone calls in English and Spanish. For businesses in Arabic-speaking markets that want AI on WhatsApp and Instagram, Daisy is the better fit.',
     featureCommentary: {
       onlineBooking:
         'Both offer strong online booking with consumer-facing marketplaces. Booksy has the edge on mobile app design, having been built mobile-first. Daisy matches the booking functionality and adds AI-powered self-service across the full customer journey.',
       posAndPayments:
-        'Booksy charges 2.49% + $0.15 per transaction and prices per provider, at $29.99-$49.99/provider/month. A 5-person team could be paying $150-250/month before a single transaction fee. Daisy charges flat whatever the team size.',
+        'In the US, Booksy charges 2.49% + $0.10 per transaction on its card reader, 2.49% + $0.20 with Tap to Pay and 2.69% + $0.30 for mobile and keyed-in payments. The subscription is $29.99 a month plus $20 for each additional team member, so a five-person team pays $109.99 a month before tax and processing. Daisy charges flat whatever the team size.',
       clientManagement:
-        'Both platforms handle client profiles and history. Daisy adds AI client intelligence that spots churn risks by itself and recommends how to hold on to those clients.',
+        'Both platforms handle client profiles and history, and Booksy adds client notes, tags and custom forms. Daisy adds AI client intelligence that spots churn risks by itself and recommends how to hold on to those clients.',
       staffManagement:
-        'Scheduling is comparable. With Booksy, every new team member adds to the bill, because pricing is per provider. Daisy includes unlimited staff at flat pricing.',
+        'Scheduling is comparable, and Booksy includes shifts, commissions and five permission levels. Each new team member adds $20 a month to a Booksy bill. Daisy includes unlimited staff at flat pricing.',
       marketingAndCrm:
-        'Booksy puts basic marketing tools in the Biz+ tier. Daisy provides AI-powered marketing automation with cashback rewards, a proven engine for acquiring and keeping customers.',
+        'Booksy includes message blasts, automated campaigns, promotions, loyalty cards and 2,000 marketing texts a month in every subscription. Daisy provides AI-powered marketing automation with cashback rewards, a proven engine for acquiring and keeping customers.',
       inventoryManagement:
-        'Booksy has basic inventory in Biz+ and Daisy offers comparable tracking. Neither is an inventory management specialist.',
+        'Booksy includes inventory tracking in every subscription: stock levels, product usage and location. Daisy offers comparable tracking. Neither is an inventory management specialist.',
       reportingAndAnalytics:
-        'Booksy offers standard business reports. Daisy adds AI insights that recommend what to do rather than only showing you the data.',
+        'Booksy publishes 16 revenue and cash-flow reports plus staff performance reports. Daisy adds AI insights that recommend what to do rather than only showing you the data.',
       marketplaceAndDiscovery:
-        'Booksy has a strong consumer marketplace, especially popular with barbershops. Daisy runs marketplace, cashback rewards and AI marketing together, so three acquisition channels rather than one.',
+        'Booksy has a strong consumer marketplace, especially popular with barbershops, and its optional Boost charges a one-time 30% of a new client\'s first visit, capped at $100. Daisy runs marketplace, cashback rewards and AI marketing together.',
       aiCapabilities:
-        'Booksy\'s AI Receptionist answers inbound calls and books the appointment, on the phone channel only and in beta. Daisy\'s AI ecosystem covers the receptionist on voice and chat, smart scheduling, marketing automation and analytics, all working together.',
+        'Booksy\'s AI Receptionist (beta) answers inbound phone calls and books the appointment, in English or Spanish. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English, alongside smart scheduling, marketing automation and analytics. It does not answer phone calls today.',
     },
     whoShouldChooseDaisy: [
-      'You want AI across the business, not just call routing',
+      'You want an AI receptionist on WhatsApp and Instagram, in Arabic and English',
       'You need Arabic',
       'Your team is growing and per-provider pricing is starting to hurt',
       'You want cashback rewards driving customer loyalty',
@@ -180,7 +182,8 @@ export const daisyVsPages: DaisyVsPageData[] = [
     whoShouldChooseCompetitor: [
       'You are a solo barber or independent beauty professional',
       'A mobile-first experience matters to you above everything else',
-      'You work only in the US or Europe',
+      'You want an AI receptionist that answers phone calls in English or Spanish',
+      'You work in a market Booksy serves, such as the US, the UK or Europe',
       'You value the barbershop community Booksy has built',
     ],
   },
@@ -189,7 +192,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     competitorSlug: 'vagaro',
     metaTitle: 'Daisy vs Vagaro: Which Salon Software Is Better?',
     metaDescription:
-      'Compare Daisy and Vagaro for salon management. AI features, pricing transparency, Arabic support, and customer acquisition tools, see how they stack up.',
+      'Compare Daisy and Vagaro for salon management: AI features, pricing, Arabic support and customer acquisition tools, side by side.',
     keywords: [
       'daisy vs vagaro',
       'vagaro alternative',
@@ -200,41 +203,43 @@ export const daisyVsPages: DaisyVsPageData[] = [
     heroTitle: 'Daisy vs Vagaro',
     heroSubtitle:
       'A feature-rich operations platform against an AI-powered growth engine, which suits your salon better?',
-    tldr: 'Vagaro is a comprehensive US-focused operations platform, strong on features and affordable to start. Daisy adds what Vagaro lacks: an AI receptionist, cashback-driven acquisition, Arabic support and real customer growth tools. Vagaro runs your business, Daisy grows it.',
+    // Vagaro facts re-verified 2026-10-09 in Vagaro's help centre (pricing,
+    // processing rates, Vera Receptionist, Fill My Books, free trial).
+    tldr: 'Vagaro is a comprehensive platform sold in the US, Canada, the UK and Australia. It is strong on features, affordable to start, and sells an AI receptionist, Vera, for chat and SMS. Daisy adds an AI receptionist on WhatsApp and Instagram, cashback-driven acquisition and Arabic support, and it is built for the GCC.',
     verdict:
-      'Vagaro is a solid all-rounder for US-based salons wanting comprehensive features at a good price. It remains an operations tool, though, built to help you manage rather than grow. For a growth-oriented business, Daisy\'s AI, acquisition engine and GCC support make it the better investment.',
+      'Vagaro is a solid all-rounder for salons in the US, Canada, the UK and Australia that want broad features at a good price, and its Vera tools bring AI to chat, marketing and reports. For a business in the GCC that wants Arabic, an AI receptionist on WhatsApp and Instagram, and cashback acquisition, Daisy is the better fit.',
     featureCommentary: {
       onlineBooking:
-        'Vagaro offers excellent booking backed by a consumer marketplace of 220K+ businesses. Daisy matches the booking quality and adds AI-powered self-service that can run the entire booking flow, upsells and payments included, without anyone stepping in.',
+        'Vagaro offers strong booking backed by its consumer marketplace, and says more than 100,000 businesses rely on it. Daisy matches the booking quality and adds AI-powered self-service that can run the entire booking flow, upsells and payments included, without anyone stepping in.',
       posAndPayments:
-        'Vagaro has an excellent POS with hardware options and 2.75% transaction fees, though the $10/month for each additional staff calendar adds up. Daisy drops the per-staff surcharge with flat pricing and offers comparable payment processing.',
+        'Vagaro has a strong POS with its own hardware. In the US, small merchants pay 2.6% + $0.10 per in-person transaction and 3.5% + $0.19 keyed in, plus monthly network fees, and each additional calendar is $10 a month up to seven paid licences. Daisy drops the per-staff surcharge with flat pricing and offers comparable payment processing.',
       clientManagement:
-        'Vagaro provides solid client profiles. Daisy builds on that with AI that predicts behavior and sends personalized outreach automatically.',
+        'Vagaro provides solid client profiles and a points-based loyalty program. Daisy builds on that with AI that predicts behavior and sends personalized outreach automatically.',
       staffManagement:
-        'Both handle staff scheduling well. Vagaro charges $10/month per additional calendar, which gets expensive for larger teams. Daisy includes every member of staff in its flat pricing.',
+        'Both handle staff scheduling well. Vagaro charges $10 a month per additional calendar for up to seven paid licences, after which new employees are added at no charge. Daisy includes every member of staff in its flat pricing.',
       marketingAndCrm:
-        'Vagaro sells good marketing tools as add-ons, covering email and text campaigns. Daisy treats AI-powered marketing automation with cashback rewards as a core feature rather than an extra.',
+        'Vagaro includes 1,000 marketing emails a month, sells text marketing from $20 a month, and its AI assistant Vera can write campaign copy. Daisy treats AI-powered marketing automation with cashback rewards as a core feature rather than an extra.',
       inventoryManagement:
         'Vagaro has good inventory tracking and product management, while Daisy offers basic inventory. For inventory-heavy businesses, Vagaro has the slight edge.',
       reportingAndAnalytics:
-        'Both offer solid reporting. Daisy adds AI insights that recommend specific actions from your data instead of only displaying metrics.',
+        'Both offer solid reporting, and both use AI on it. Vagaro lets you ask Vera questions about your reports. Daisy\'s AI recommends specific actions from your data.',
       marketplaceAndDiscovery:
-        'Vagaro has a consumer marketplace listing 220K+ businesses. Daisy combines marketplace, cashback and AI marketing into a broader acquisition strategy.',
+        'Vagaro has a consumer marketplace with free listings in the US, and its Vera Fill My Books feature promotes your openings there for a 20% fee on a new customer\'s first booking. Daisy combines marketplace, cashback and AI marketing into one acquisition strategy.',
       aiCapabilities:
-        'Vagaro\'s AI amounts to basic automated reminders. Daisy provides a 24/7 AI receptionist, a chatbot, smart scheduling and AI marketing. This is the largest gap between the two platforms.',
+        'Vagaro sells Vera Receptionist, an AI chatbot that answers messages from your Vagaro listing page and, with a Text Marketing plan, SMS. In chat it can book, reschedule and cancel appointments; over SMS it sends a booking link. It costs $10 a month in the US. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English and takes payments. As of October 2026, Vagaro\'s published pages do not list phone calls for Vera, and Daisy does not answer phone calls today.',
     },
     whoShouldChooseDaisy: [
-      'You want AI covering bookings, calls and customer service 24/7',
+      'You want an AI receptionist on WhatsApp and Instagram, in Arabic and English',
       'Your GCC clients need Arabic support',
-      'You want acquisition tools, not only operations management',
+      'You want cashback-driven acquisition alongside the marketplace',
       'You want flat pricing with no per-staff add-ons',
       'You want cashback rewards driving loyalty and repeat bookings',
-      'You are trying to grow the business, not just keep it running',
+      'You operate in the GCC',
     ],
     whoShouldChooseCompetitor: [
       'You need a top-tier POS with physical hardware integration',
       'You want a 30-day free trial before committing',
-      'You are a US-based salon wanting a proven, feature-rich operations platform',
+      'You are in the US, Canada, the UK or Australia and want a proven, feature-rich platform',
       'Deep inventory management is critical for you',
     ],
   },
@@ -680,14 +685,15 @@ export const alternativePages: AlternativePageData[] = [
     metaDescription: 'Outgrowing Booksy? Daisy offers full AI ecosystem, flat pricing (no per-provider fees), Arabic support, and cashback-powered customer acquisition.',
     keywords: ['booksy alternative', 'booksy replacement', 'better than booksy', 'booking app like booksy'],
     heroTitle: 'Looking for a Booksy Alternative?',
-    heroSubtitle: 'A great app, but per-provider pricing and thin AI are holding the business back.',
+    heroSubtitle: 'A strong mobile app, but each extra team member adds $20 a month and the AI Receptionist works on phone calls.',
+    // Booksy facts re-verified 2026-10-09 on biz.booksy.com and help.booksy.com.
     painPoints: [
-      'Per-provider pricing at $29.99-49.99 each, which gets expensive as the team grows',
-      'The AI Receptionist books from phone calls, but does not cover WhatsApp or Instagram',
-      'No Arabic, so GCC clients are out of reach',
-      'No cashback or loyalty program to keep customers coming back',
-      'A Booksy-branded experience, with little control over your own',
-      'No white-labeling, so you cannot brand it professionally',
+      'Each additional team member adds $20 a month to the $29.99 base, so a five-person team pays $109.99 a month before tax',
+      'The AI Receptionist (beta) answers phone calls in English and Spanish; Booksy\'s published pages do not list WhatsApp or Instagram as channels',
+      'No Arabic in the business app, and no GCC country on Booksy\'s published list',
+      'Loyalty runs on digital stamp cards, and cashback rewards are not listed on Booksy\'s published pages',
+      'Booking sites are hosted on the Booksy domain, with a widget for your own website',
+      'Optional Boost charges a one-time 30% of a new client\'s first visit, up to $100',
     ],
     switchingReasons: [
       'Flat pricing whatever the team size, so growing costs you nothing extra',
@@ -703,20 +709,21 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'vagaro',
     competitorSlug: 'vagaro',
     metaTitle: 'Best Vagaro Alternative for Growing Salons (2026)',
-    metaDescription: 'Looking beyond Vagaro? Daisy adds AI receptionist, Arabic support, and cashback acquisition tools that Vagaro doesn\'t offer.',
+    metaDescription: 'Looking beyond Vagaro? Daisy adds an AI receptionist on WhatsApp and Instagram, Arabic support and cashback acquisition tools.',
     keywords: ['vagaro alternative', 'vagaro replacement', 'better than vagaro', 'salon software like vagaro'],
     heroTitle: 'Looking for a Vagaro Alternative?',
-    heroSubtitle: 'Vagaro manages your business well. It just does not grow it.',
+    heroSubtitle: 'Vagaro is strong on operations. Daisy adds Arabic, AI on WhatsApp and Instagram, and cashback.',
+    // Vagaro facts re-verified 2026-10-09 in Vagaro's help centre.
     painPoints: [
-      '$10/month for every additional staff calendar, which adds up fast',
-      'Vera answers chat and SMS but does not take payment on a voice call',
-      'No Arabic, which closes off the GCC',
-      'Built around operations, with nothing that goes out and finds customers',
-      'Marketing sold as add-ons rather than built into the platform',
-      'No cashback or loyalty rewards to bring people back',
+      '$10 a month for each additional calendar, up to seven paid licences',
+      'Vera Receptionist is a $10/month add-on that needs a Text Marketing plan, and over SMS it sends a booking link rather than booking',
+      'No Arabic interface; Vagaro lists the US, Canada, the UK and Australia as its markets',
+      'Fill My Books marketplace promotion charges 20% on a new customer\'s first booking',
+      'Text marketing is a paid plan, from $20 a month for 1,000 credits',
+      'Loyalty is points-based, and cashback rewards are not listed on Vagaro\'s published pages',
     ],
     switchingReasons: [
-      'An AI receptionist covering your phones, bookings and payments 24/7',
+      'An AI receptionist on WhatsApp, Instagram and your booking site, covering bookings and payments 24/7',
       'Flat pricing covering every member of staff, with no per-calendar surcharge',
       'Cashback rewards that turn a first visit into a regular one',
       'AI-powered marketing that keeps running without you',
@@ -1023,11 +1030,11 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     slug: 'best-booksy-alternatives',
     competitorSlug: 'booksy',
     metaTitle: '7 Best Booksy Alternatives for Beauty Pros (2026)',
-    metaDescription: 'Top Booksy alternatives compared. Find booking platforms with better AI, flat pricing, and international support for your beauty business.',
+    metaDescription: 'Top Booksy alternatives compared on AI, pricing for growing teams and Arabic support for your beauty business.',
     keywords: ['best booksy alternatives', 'booksy alternatives', 'booksy competitors'],
     heroTitle: '7 Best Booksy Alternatives in 2026',
-    heroSubtitle: 'Per-provider pricing and thin AI no longer working for you? Here are better options for a growing team.',
-    intro: 'Booksy is a popular mobile-first booking app. For a team, though, per-provider pricing gets expensive, its AI Receptionist is in beta and its published material does not name WhatsApp or Instagram, and there is no GCC support. The alternatives below suit different kinds of business.',
+    heroSubtitle: 'Paying $20 a month for every extra team member, or want AI beyond the phone? Here are other options for a growing team.',
+    intro: 'Booksy is a popular mobile-first booking app. For a growing team, each additional member adds $20 a month to the $29.99 base. Its AI Receptionist is in beta and answers phone calls, and its published pages do not list WhatsApp or Instagram. Booksy also lists no GCC market. The alternatives below suit different kinds of business.',
     alternatives: ['fresha', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
     bestFor: {
       'fresha': 'Best for marketplace-driven client discovery',
@@ -1037,17 +1044,17 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mangomint': 'Best for salons prioritizing clean operations',
       'square-appointments': 'Best for businesses needing strong POS integration',
     },
-    daisyEdge: 'These alternatives all handle operations well, and several now sell AI receptionists: Fresha\'s AI Concierge answers calls and messages. None of them pairs that with cashback rewards that bring clients back. That growth layer is what booking platforms tend to miss, and what Daisy adds.',
+    daisyEdge: 'These alternatives all handle operations well, and several now sell AI receptionists: Fresha\'s AI Concierge answers calls and messages, and Vagaro\'s Vera answers chat and SMS. Daisy pairs its AI receptionist with cashback rewards that bring clients back, and treats Arabic and English as equals.',
   },
   {
     slug: 'best-vagaro-alternatives',
     competitorSlug: 'vagaro',
     metaTitle: '7 Best Vagaro Alternatives for Salons (2026)',
-    metaDescription: 'Top Vagaro alternatives compared. AI-powered platforms, better pricing models, and international support for modern salons.',
+    metaDescription: 'Top Vagaro alternatives compared on AI, pricing models and Arabic support for modern salons.',
     keywords: ['best vagaro alternatives', 'vagaro alternatives', 'vagaro competitors'],
     heroTitle: '7 Best Vagaro Alternatives in 2026',
-    heroSubtitle: 'Vagaro manages well without growing anything. These alternatives add AI-powered acquisition.',
-    intro: 'Vagaro is a comprehensive US salon platform with no AI, a per-staff calendar fee and no international support. Which of the alternatives below fits depends on what you are optimising for.',
+    heroSubtitle: 'Vagaro is strong on operations. These alternatives differ on AI channels, pricing and markets.',
+    intro: 'Vagaro is an all-in-one platform sold in the US, Canada, the UK and Australia. In the US it starts at $23.99 a month for one calendar on a limited-time offer ($30 regular), plus $10 for each additional calendar up to seven, and its Vera Receptionist answers chat and SMS as a $10 a month add-on. Which of the alternatives below fits depends on what you are optimising for.',
     alternatives: ['fresha', 'booksy', 'glossgenius', 'boulevard', 'mindbody', 'mangomint'],
     bestFor: {
       'fresha': 'Best for salons wanting the widest marketplace exposure',
@@ -1057,7 +1064,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mindbody': 'Best for fitness and wellness businesses',
       'mangomint': 'Best for operationally complex salons',
     },
-    daisyEdge: 'Vagaro alternatives manage your business. Fresha and Booksy bring a marketplace listing and charge per marketing message beyond a free allowance. Daisy adds an AI receptionist on WhatsApp, Instagram and your booking site, plus a cashback marketplace, which turns salon software into a growth engine.',
+    daisyEdge: 'Vagaro alternatives manage your business. Fresha brings a marketplace listing and charges per marketing message beyond a free allowance, and Booksy includes 2,000 marketing texts a month. Daisy adds an AI receptionist on WhatsApp, Instagram and your booking site, plus a cashback marketplace, which turns salon software into a growth engine.',
   },
   {
     slug: 'best-glossgenius-alternatives',
@@ -1309,11 +1316,11 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     slugB: 'vagaro',
     combinedSlug: 'fresha-vs-vagaro',
     metaTitle: 'Fresha vs Vagaro: Marketplace vs Feature-Rich (2026)',
-    metaDescription: 'Compare Fresha (published per market, from AED 149.95/mo in the UAE) and Vagaro (feature-rich at $30/mo). Pricing, features, and which is better for your salon.',
+    metaDescription: 'Compare Fresha (published per market, from AED 149.95/mo in the UAE) and Vagaro (feature-rich, from $23.99/mo in the US on a limited-time offer). Pricing, features, and which is better for your salon.',
     keywords: ['fresha vs vagaro', 'fresha or vagaro', 'vagaro vs fresha'],
     heroTitle: 'Fresha vs Vagaro',
-    heroSubtitle: 'Low starting price with stacking fees versus $30/mo with comprehensive features, which model works better?',
-    verdict: 'Fresha starts cheaper but subscription fees plus transaction fees plus commissions add up. Vagaro offers more features at a predictable $30/mo. Fresha\'s AI Concierge answers calls and messages, and Fresha ships an Arabic UI. Vagaro sells Vera, an AI receptionist for chat and text, and we could not find an Arabic UI for it. Neither offers cashback rewards.',
+    heroSubtitle: 'Low starting price with stacking fees versus a feature-rich platform from $23.99/mo, which model works better?',
+    verdict: 'Fresha starts cheaper but subscription fees plus transaction fees plus commissions add up. Vagaro offers more features from $23.99/mo for one calendar on its current US offer ($30 regular), plus $10 per extra calendar. Fresha\'s AI Concierge answers calls and messages, and Fresha ships an Arabic UI. Vagaro sells Vera, an AI receptionist for chat and text, and we could not find an Arabic UI for it. Neither offers cashback rewards.',
     whoShouldChooseA: [
       'You\'re a solo practitioner with low transaction volume',
       'You want marketplace exposure from day one',
@@ -1331,22 +1338,23 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     slugB: 'vagaro',
     combinedSlug: 'booksy-vs-vagaro',
     metaTitle: 'Booksy vs Vagaro: Mobile App vs All-in-One (2026)',
-    metaDescription: 'Compare Booksy (mobile-first) and Vagaro (feature-rich). Per-provider vs per-calendar pricing, AI features, and marketplace differences.',
+    metaDescription: 'Compare Booksy (mobile-first) and Vagaro (feature-rich): per-user vs per-calendar pricing, AI features and marketplace differences.',
     keywords: ['booksy vs vagaro', 'booksy or vagaro', 'vagaro vs booksy'],
     heroTitle: 'Booksy vs Vagaro',
     heroSubtitle: 'Mobile-first booking app versus comprehensive all-in-one salon platform.',
-    verdict: 'Booksy excels on mobile UX and its AI Receptionist books from calls. Vagaro offers more features and better POS. Both lack Arabic support, full AI, and cashback rewards.',
+    verdict: 'Booksy excels on mobile UX, and its AI Receptionist (beta) books from phone calls. Vagaro offers more features and a stronger POS, and its Vera Receptionist answers chat and SMS. Neither lists an Arabic interface or cashback rewards on its published pages as of October 2026.',
     whoShouldChooseA: [
       'Mobile-first experience is your top priority',
       'You\'re a solo barber or beauty pro',
-      'You want basic AI call handling',
+      'You want an AI receptionist that answers phone calls in English or Spanish',
     ],
     whoShouldChooseB: [
       'You want the most comprehensive feature set',
       'POS and hardware integration matter',
       'You need strong inventory and reporting',
+      'You want an AI receptionist for chat and SMS',
     ],
-    daisyPitch: 'Both are solid operations platforms. Daisy offers what neither provides: full AI ecosystem, Arabic/English multilingual support, cashback customer acquisition, and white-label brand control.',
+    daisyPitch: 'Both are solid operations platforms. Daisy adds an AI receptionist on WhatsApp, Instagram and your booking site, Arabic and English as equals, and cashback-driven customer acquisition.',
   },
   {
     slugA: 'vagaro',
@@ -1538,7 +1546,9 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     keywords: ['booksy vs square appointments', 'booksy or square appointments', 'square appointments vs booksy'],
     heroTitle: 'Booksy vs Square Appointments',
     heroSubtitle: 'Beauty-focused mobile app versus payment-first general scheduler, specialization versus ecosystem.',
-    verdict: 'Booksy wins on beauty-specific features, mobile app, and marketplace. Square wins on POS, free tier, and payment ecosystem. Booksy has basic AI; Square has none. Neither supports Arabic or cashback.',
+    // Square: squareup.com/us/en/appointments/pricing, read 2026-10-09 (Square
+    // AI, beta, on all three plans). App Store languages: CA, EN, FR, JA, ES.
+    verdict: 'Booksy wins on beauty-specific features, mobile app, and marketplace. Square wins on POS, its free plan, and the payment ecosystem. Booksy\'s AI Receptionist (beta) answers phone calls, and Square AI (beta) gives business recommendations on every Square Appointments plan. Neither lists an Arabic interface as of October 2026.',
     whoShouldChooseA: [
       'You\'re a beauty professional who wants a specialized platform',
       'Mobile-first experience and marketplace matter',
@@ -1549,7 +1559,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'You want to start free and scale up',
       'You already rely on the Square ecosystem',
     ],
-    daisyPitch: 'Booksy specializes in beauty; Square specializes in payments. Daisy combines beauty-specific tools with full AI receptionist, Arabic support, cashback rewards, and growth-focused features neither platform offers.',
+    daisyPitch: 'Booksy specializes in beauty; Square specializes in payments. Daisy combines beauty-specific tools with an AI receptionist on WhatsApp and Instagram, Arabic support and cashback rewards.',
   },
   {
     slugA: 'vagaro',
@@ -1559,8 +1569,8 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     metaDescription: 'Compare Vagaro (feature-rich salon software) and Square Appointments (payment-first scheduling). Pricing, features, and which delivers more value.',
     keywords: ['vagaro vs square appointments', 'vagaro or square appointments', 'square appointments vs vagaro'],
     heroTitle: 'Vagaro vs Square Appointments',
-    heroSubtitle: 'Comprehensive beauty features at $30/mo versus free payment-first scheduling, depth versus simplicity.',
-    verdict: 'Vagaro wins on feature depth, beauty-specific tools, and POS quality. Square wins on free tier and payment ecosystem integration. Vagaro has a basic AI chatbot; Square has no AI. Neither supports Arabic or cashback.',
+    heroSubtitle: 'Comprehensive beauty features from $23.99/mo versus free payment-first scheduling, depth versus simplicity.',
+    verdict: 'Vagaro wins on feature depth, beauty-specific tools, and POS quality. Square wins on its free plan and payment ecosystem integration. Vagaro\'s Vera Receptionist answers chat and SMS, and Square AI (beta) gives business recommendations on every plan. Neither lists an Arabic interface as of October 2026.',
     whoShouldChooseA: [
       'You need comprehensive salon management features',
       'Team management and scheduling depth matter',
@@ -1571,7 +1581,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'Square payment ecosystem is already in use',
       'Basic scheduling is all you need',
     ],
-    daisyPitch: 'Vagaro manages operations well; Square handles payments well. Daisy is a growth platform that does both and adds full AI receptionist, Arabic support, cashback-driven acquisition, and branded booking pages.',
+    daisyPitch: 'Vagaro manages operations well; Square handles payments well. Daisy is a growth platform that does both, with an AI receptionist on WhatsApp and Instagram, Arabic support, cashback-driven acquisition and a branded booking page in every plan.',
   },
   {
     slugA: 'glossgenius',
