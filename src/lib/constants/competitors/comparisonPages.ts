@@ -1507,7 +1507,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     verdict: 'Booksy is better for budget-conscious mobile professionals. Boulevard is better for premium established salons. Both sell AI receptionists that answer phone calls: Booksy\'s AI Receptionist (beta) and Boulevard\'s Beau (paid add-on). As of October 2026, neither lists an Arabic interface or cashback rewards.',
     whoShouldChooseA: ['You\'re budget-conscious', 'Mobile-first matters most', 'You\'re an independent professional'],
     whoShouldChooseB: ['Premium brand experience is priority', 'AI scheduling optimization appeals', 'You run a multi-location salon'],
-    daisyPitch: 'Whether you work alone or run a premium salon, Daisy offers an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, a marketplace and cashback, at any business size.',
+    daisyPitch: 'Daisy suits a solo professional and a premium salon alike: an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and a marketplace with cashback.',
   },
   {
     slugA: 'vagaro',
