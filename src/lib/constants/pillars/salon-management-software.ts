@@ -136,7 +136,7 @@ export const salonManagementSoftware: PillarPageData = {
   <li>Calendar gaps from inefficient scheduling cost $1,500-$3,000 per month</li>
   <li>Owner time spent on admin (at $50/hour equivalent) costs $2,500-$3,000 per month</li>
 </ul>
-<p>Total: $6,000-$10,000 per month in lost revenue and opportunity cost, before counting the bookings lost to unanswered inquiries, far exceeding the $100-$400 monthly cost of comprehensive salon software. The question is not whether you can afford software; it is whether you can afford to operate without it.</p>`,
+<p>Total: $6,000-$10,000 per month in lost revenue and opportunity cost, before counting the bookings lost to unanswered inquiries, far exceeding the $100-$400 monthly cost of comprehensive salon software. Running without software usually costs more than paying for it.</p>`,
       callout: {
         type: 'warning',
         text: 'Inquiries that wait while staff are busy with clients turn into bookings for someone else. An <a href="/en/glossary/ai-receptionist-for-salons">AI receptionist</a> answers messages 24/7, even outside business hours. Daisy\'s works on WhatsApp, Instagram and the booking site and does not answer phone calls yet.',
