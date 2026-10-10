@@ -107,6 +107,7 @@ export const guideData: I18nContent<GuideData[]> = {
       relatedGuides: ['get-more-salon-clients', 'choose-best-salon-software'],
     },
     {
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       slug: 'get-more-salon-clients',
       title: 'How Do I Get More Clients for My Salon?',
       answer:
@@ -180,6 +181,7 @@ export const guideData: I18nContent<GuideData[]> = {
       relatedGuides: ['reduce-salon-no-shows', 'choose-best-salon-software'],
     },
     {
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       slug: 'choose-best-salon-software',
       title: 'How Do I Choose the Best Salon Software?',
       answer:
@@ -338,6 +340,7 @@ export const guideData: I18nContent<GuideData[]> = {
       relatedGuides: ['choose-best-salon-software', 'get-more-salon-clients'],
     },
     {
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       slug: 'set-up-online-booking-salon',
       title: 'How Do I Set Up Online Booking for My Salon?',
       answer:
@@ -496,6 +499,7 @@ export const guideData: I18nContent<GuideData[]> = {
       relatedGuides: ['get-more-salon-clients', 'choose-best-salon-software'],
     },
     {
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       slug: 'get-more-salon-clients',
       title: 'كيف أحصل على عملاء أكثر لصالوني؟',
       answer:
@@ -569,6 +573,7 @@ export const guideData: I18nContent<GuideData[]> = {
       relatedGuides: ['reduce-salon-no-shows', 'choose-best-salon-software'],
     },
     {
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       slug: 'choose-best-salon-software',
       title: 'كيف أختار أفضل برنامج لإدارة الصالون؟',
       answer:
@@ -727,6 +732,7 @@ export const guideData: I18nContent<GuideData[]> = {
       relatedGuides: ['choose-best-salon-software', 'get-more-salon-clients'],
     },
     {
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       slug: 'set-up-online-booking-salon',
       title: 'كيف أُعدّ الحجز عبر الإنترنت لصالوني؟',
       answer:

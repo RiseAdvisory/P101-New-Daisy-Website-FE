@@ -220,6 +220,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'white-label-salon-software',
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       term: 'White-Label Salon Software',
       definition:
         'is a salon management platform that can be rebranded with your business\'s logo, colors and identity, so every customer touchpoint, from the booking page and app to receipts and communications, shows your brand rather than the software provider\'s.',
@@ -747,6 +748,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'white-label-salon-software',
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       term: 'برنامج صالون بعلامة تجارية بيضاء',
       definition:
         'هي منصة إدارة صالونات يمكن إعادة تسميتها بالكامل بشعار عملك وألوانه وهويته، بحيث تعرض كل نقطة تواصل مع العميل (صفحة الحجز، والتطبيق، والإيصالات، والاتصالات) علامتك التجارية لا العلامة التجارية لمزوّد البرنامج.',

@@ -98,3 +98,40 @@ describe('competitor claims stay accurate', () => {
     expect(offenders(/live in Kuwait today/i)).toEqual([]);
   });
 });
+
+// Founder-confirmed on 2026-10-10: Daisy's AI does not handle calls yet; each
+// plan includes a set number of team members and extra ones are paid; the
+// marketplace is optional and available in selected countries; a business can
+// redirect its own domain to its Daisy booking site but not host it there.
+describe("claims about Daisy's own product stay accurate", () => {
+  it('does not describe Daisy as a voice or phone receptionist', () => {
+    expect(
+      offenders(
+        /Daisy[^.'"]{0,80}\b(?:voice (?:receptionist|call|calls|AI)|Voice \+ Chat|via voice call)|voice receptionist \+ chatbot/i,
+      ),
+    ).toEqual([]);
+  });
+
+  it('does not promise unlimited staff or pricing that ignores team size', () => {
+    expect(
+      offenders(
+        // Competitors that publish unlimited users (Mindbody, Square, Setmore...)
+        // are stated as such; only sentences crediting Daisy count here.
+        /Daisy[^.'"]{0,80}(?:unlimited (?:staff|users|team members|stylists|barbers|technicians|therapists)|no per-(?:staff|user|seat|barber|stylist|therapist|provider) (?:fee|fees|charge|charges|pricing))|flat pricing whatever|regardless of team size|hiring costs you nothing/i,
+      ),
+    ).toEqual([]);
+  });
+
+  it('does not describe the marketplace as covering every GCC country', () => {
+    expect(
+      // "live in all six GCC countries" describes the platform and is true.
+      offenders(/marketplace (?:across|in|throughout|visibility across) (?:all |every |the )?(?:6 |six )?GCC/i),
+    ).toEqual([]);
+  });
+
+  it('does not say the booking page is hosted on the business\'s own domain', () => {
+    expect(
+      offenders(/(?:sits|lives|hosted) on your own domain|Connect your own domain|on your own domain \(/i),
+    ).toEqual([]);
+  });
+});
