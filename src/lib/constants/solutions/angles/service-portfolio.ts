@@ -146,7 +146,7 @@ const servicePortfolioAngle: Record<'business' | 'professional', I18nContent<Lan
         { label: 'Client Management', description: 'Build relationships with detailed client profiles' },
         { label: 'Smart Notifications', description: 'Appointment reminders that reduce no-shows' },
         { label: 'Calendar Sync', description: 'Sync with Google Calendar and other tools' },
-        { label: 'Marketplace Visibility', description: 'Customers find you when searching nearby' },
+        { label: 'Marketplace Visibility', description: 'Optional listing for nearby searches, in selected countries' },
       ], stats: [{ value: '1', context: 'professional portfolio' }, { value: '24/7', context: 'AI-powered booking' }, { value: '2', context: 'languages: Arabic and English' }] },
       inlineCtas: {
         afterScroll: { headline: 'Ready to let your work speak for itself?', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app' },
@@ -195,7 +195,7 @@ const servicePortfolioAngle: Record<'business' | 'professional', I18nContent<Lan
         { label: 'إدارة العملاء', description: 'ابنِ علاقات مع ملفات عملاء مفصلة' },
         { label: 'إشعارات ذكية', description: 'تذكيرات بالمواعيد تقلل حالات عدم الحضور' },
         { label: 'مزامنة التقويم', description: 'مزامنة مع تقويم جوجل وأدوات أخرى' },
-        { label: 'ظهور في السوق', description: 'العملاء يجدونك عند البحث بالقرب منهم' },
+        { label: 'ظهور في السوق', description: 'إدراج اختياري يظهر في عمليات البحث القريبة، في دول مختارة' },
       ], stats: [{ value: '1', context: 'معرض أعمال مهني' }, { value: '24/7', context: 'حجز مدعوم بالذكاء الاصطناعي' }, { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' }] },
       inlineCtas: {
         afterScroll: { headline: 'مستعد لترك أعمالك تتحدث عن نفسها؟', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app' },

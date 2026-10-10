@@ -22,22 +22,22 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
   en: [
     {
       slug: 'salon-management-software',
-      lastUpdated: '2026-04-27T00:00:00.000Z',
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       term: 'Salon Management Software',
       definition:
         'is a digital platform that helps salon owners manage daily operations including appointment scheduling, client records, staff management, payments, and marketing from a single system.',
       extendedDescription:
-        'Salon management software replaces manual booking, paper records and disconnected tools with a single platform. Newer systems such as Daisy add AI features on top of the operational basics, including automated customer acquisition, voice receptionists and predictive analytics. The global salon software market is projected to reach $712 million by 2028, on rising demand for automation and customer experience tools.',
+        'Salon management software replaces manual booking, paper records and disconnected tools with a single platform. Newer systems such as Daisy add AI features on top of the operational basics, including automated customer acquisition, AI receptionists that answer customer messages, and predictive analytics. The global salon software market is projected to reach $712 million by 2028, on rising demand for automation and customer experience tools.',
       keyFeatures: [
         { label: 'Online Booking', daisy: 'AI-powered 24/7', typical: 'Basic web form' },
         { label: 'Payment Processing', daisy: 'No transaction fees', typical: '2-3% per transaction' },
         { label: 'Client Management', daisy: 'AI-driven CRM', typical: 'Basic contact list' },
         { label: 'Staff Scheduling', daisy: 'Smart optimization', typical: 'Manual calendar' },
         { label: 'Marketing', daisy: 'Automated campaigns', typical: 'Basic email blasts' },
-        { label: 'AI Features', daisy: 'Voice receptionist + chatbot', typical: 'None or basic' },
+        { label: 'AI Features', daisy: 'AI receptionist on WhatsApp + Instagram', typical: 'None or basic' },
       ],
       howDaisyImplements:
-        'Daisy brings the salon management functions into one AI-powered platform, with a 24/7 voice receptionist, cashback customer acquisition and white-label branding. Pricing starts at $1/month, plus $50 once you pass 5 appointments in a month, with no per-staff fees, and the platform is built for growth rather than operations alone.',
+        'Daisy brings the salon management functions into one AI-powered platform, with a 24/7 AI receptionist on WhatsApp, Instagram and the booking site, cashback customer acquisition and white-label branding. Pricing starts at $1/month, plus $50 once you pass 5 appointments in a month. Business plans include 5, 10 or 15 team members, and the platform is built for growth rather than operations alone.',
       faqs: [
         {
           question: 'What is the best salon management software in 2026?',
@@ -47,17 +47,17 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'How much does salon management software typically cost?',
           answer:
-            'Prices run from free, usually with limitations and commissions, up to $300+/month for premium systems. Daisy has three plans: Basic at $50/mo, Growth at $150/mo and Business at $250/mo, all flat and without per-staff fees.',
+            'Prices run from free, usually with limitations and commissions, up to $300+/month for premium systems. Daisy has three plans: Basic at $50/mo, Growth at $150/mo and Business at $250/mo. They include 5, 10 or 15 team members, and each extra calendar is $10/month.',
         },
         {
           question: 'Do I need salon management software for a small salon?',
           answer:
-            'Yes. Small salons gain as much as larger ones. Salons running management software report a 30-40% reduction in no-shows from automated reminders, and AI tools recover up to 35% of missed after-hours calls.',
+            'Yes. Small salons gain as much as larger ones. Salons running management software report a 30-40% reduction in no-shows from automated reminders, and an AI receptionist replies to the messages that come in after hours.',
         },
         {
           question: 'Can salon management software help me get more clients?',
           answer:
-            'Most salon software only manages the clients you already have. Daisy also acquires new ones, through marketplace discovery, cashback rewards and AI-powered marketing automation, which is what 360-degree customer acquisition means in practice.',
+            'Most salon software only manages the clients you already have. Daisy also acquires new ones, through an optional marketplace available in selected countries, cashback rewards and AI-powered marketing automation, which is what 360-degree customer acquisition means in practice.',
         },
         {
           question: 'What features should I look for in salon software?',
@@ -88,37 +88,37 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'ai-receptionist-for-salons',
-      lastUpdated: '2026-04-27T00:00:00.000Z',
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       term: 'AI Receptionist for Salons',
       definition:
-        'is an artificial intelligence system that handles phone calls, chat messages, and booking inquiries for beauty businesses 24/7, automatically scheduling appointments, answering questions, and processing payments without human intervention.',
+        'is an artificial intelligence system that answers customer messages and booking inquiries for beauty businesses 24/7, on channels such as WhatsApp, Instagram and a booking site, scheduling appointments, answering questions and processing payments without human intervention.',
       extendedDescription:
-        'An AI receptionist uses natural language processing and voice synthesis to speak with customers much as a human receptionist would. It answers calls during and after business hours, holds several conversations at once, and turns inquiries into bookings. Beauty businesses miss up to 35% of inbound calls outside business hours, and that is the revenue an AI receptionist recovers.',
+        'An AI receptionist uses natural language processing to reply to customers much as a human receptionist would. It answers messages during and after business hours, holds several conversations at once, and turns inquiries into bookings. Some AI receptionists also answer phone calls. Daisy\'s works on WhatsApp, Instagram and the booking site, and it does not answer phone calls yet.',
       keyFeatures: [
         { label: '24/7 Availability', daisy: 'Always on', typical: 'Business hours only' },
         { label: 'Language Support', daisy: 'Arabic & English', typical: 'English only' },
         { label: 'Booking Capability', daisy: 'Direct booking + payment', typical: 'Callback scheduling' },
-        { label: 'Voice Quality', daisy: 'Natural conversation', typical: 'Robotic or basic IVR' },
+        { label: 'Channels', daisy: 'WhatsApp, Instagram + booking site', typical: 'Single channel' },
         { label: 'Learning', daisy: 'Improves with usage', typical: 'Static scripts' },
         { label: 'Integration', daisy: 'Full CRM + calendar sync', typical: 'Standalone system' },
       ],
       howDaisyImplements:
-        'Daisy\'s AI receptionist takes voice calls and chat messages in Arabic and English, 24/7. It books directly into your calendar, answers questions on services and pricing, processes payments, and improves as it handles more conversations. It is included in every plan at no extra cost.',
+        'Daisy\'s AI receptionist answers WhatsApp, Instagram and booking-site messages in Arabic and English, 24/7. It books directly into your calendar, answers questions on services and pricing, processes payments, and improves as it handles more conversations. It does not answer phone calls yet. Every plan includes 50 AI receptionist conversations, and you can buy more as pay-as-you-go top-ups.',
       faqs: [
         {
           question: 'What is an AI receptionist for salons?',
           answer:
-            'An automated system that answers calls and messages, books appointments, handles questions about services and pricing, and processes payments, without human involvement, 24 hours a day.',
+            'An automated system that answers customer messages, books appointments, handles questions about services and pricing, and processes payments, without human involvement, 24 hours a day. Daisy\'s works on WhatsApp, Instagram and the booking site.',
         },
         {
           question: 'How much does an AI receptionist for a salon cost?',
           answer:
-            'Standalone AI receptionist services for salons typically cost $200-500/month. Daisy includes an AI receptionist in all plans starting at $1/month (+$50 once you pass 5 appointments in a month), bundled with full salon management software.',
+            'Standalone AI receptionist services for salons typically cost $200-500/month. Daisy includes an AI receptionist, with 50 conversations, in all plans starting at $1/month (+$50 once you pass 5 appointments in a month), bundled with full salon management software.',
         },
         {
           question: 'Can an AI receptionist really replace a human receptionist?',
           answer:
-            'It handles the routine work of booking, rescheduling and common questions, which is 70-80% of salon calls, and passes anything complicated to a person. Most salons use it alongside their staff rather than instead of them.',
+            'It handles the routine work of booking, rescheduling and common questions, and passes anything complicated to a person. Most salons use it alongside their staff rather than instead of them. Daisy\'s answers messages only, so your team still takes the phone calls.',
         },
         {
           question: 'Does Daisy\'s AI receptionist work in Arabic?',
@@ -131,26 +131,26 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
             'It checks live staff availability, offers suitable slots, confirms with the customer, sends the reminders and syncs everything to the salon calendar without being asked.',
         },
         {
-          question: 'Will customers know they\'re talking to an AI?',
+          question: 'Will customers know they\'re messaging an AI?',
           answer:
             'Systems like Daisy\'s use natural language processing, so the conversation reads naturally. Transparency still matters, and most customers value the instant reply and the 24/7 availability.',
         },
         {
-          question: 'How many calls can an AI receptionist handle at once?',
+          question: 'How many conversations can an AI receptionist handle at once?',
           answer:
-            'An AI receptionist takes any number of calls and chats at once, which a person cannot. At peak hours that means nothing missed and nobody on hold.',
+            'It can hold any number of chats at once, which a person cannot, so at peak hours no customer waits for a reply.',
         },
         {
           question: 'Do I need special equipment for an AI receptionist?',
           answer:
-            'No. It works with your existing phone number, routing calls through the cloud. There is no hardware, no installation and no IT setup.',
+            'No. Daisy\'s AI receptionist works through WhatsApp, Instagram and your Daisy booking site, so there is no hardware, no installation and no IT setup.',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'white-label-salon-software'],
       metaTitle: 'What is an AI Receptionist for Salons? | 24/7 Automated Booking',
       metaDescription:
-        'Learn what an AI receptionist for salons does, how it books appointments 24/7, and why beauty businesses are adopting AI to capture missed calls and grow revenue.',
-      keywords: ['AI receptionist salon', 'salon virtual receptionist', 'automated salon booking', '24/7 salon answering', 'AI phone answering beauty'],
+        'Learn what an AI receptionist for salons does, how it books appointments 24/7 over WhatsApp and Instagram, and why beauty businesses use it to grow revenue.',
+      keywords: ['AI receptionist salon', 'salon virtual receptionist', 'automated salon booking', '24/7 salon answering', 'AI WhatsApp booking salon'],
     },
     {
       slug: 'cashback-beauty-booking',
@@ -222,7 +222,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       slug: 'white-label-salon-software',
       term: 'White-Label Salon Software',
       definition:
-        'is a salon management platform that can be rebranded with your business\'s logo, colors, domain and identity, so every customer touchpoint, from the booking page and app to receipts and communications, shows your brand rather than the software provider\'s.',
+        'is a salon management platform that can be rebranded with your business\'s logo, colors and identity, so every customer touchpoint, from the booking page and app to receipts and communications, shows your brand rather than the software provider\'s.',
       extendedDescription:
         'Most salon platforms put their own branding in front of your customers, which weakens your identity and confuses people about who they are dealing with. White-label software removes that: the booking page looks like your website, confirmation emails come from your brand, and the experience holds together throughout. It matters most to premium salons and to multi-location businesses building brand equity.',
       keyFeatures: [
@@ -258,7 +258,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'What will my booking link look like with salon booking software?',
           answer:
-            'With Daisy, yes. Your booking page sits on your own domain. Some platforms host your booking page on their own domain; Booksy, for example, says its booking sites are hosted on the Booksy domain.',
+            'With Daisy you get a short booking link to share, such as thedaisy.link/your-salon. The booking site is hosted on Daisy\'s domain, so it cannot run on your own, but you can redirect your own domain to it. The page shows your logo, business name and colours. Most platforms work this way; Booksy, for example, says its booking sites are hosted on the Booksy domain.',
         },
         {
           question: 'Does white-label affect the booking experience?',
@@ -349,7 +349,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-management-system',
-      lastUpdated: '2026-04-27T00:00:00.000Z',
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       term: 'Salon Management System',
       definition:
         'is the complete operational infrastructure a beauty business runs on, covering software, hardware, workflows and integrations, from appointment booking and point-of-sale terminals through to staff coordination and customer communications.',
@@ -389,7 +389,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'Can a small salon benefit from a management system?',
           answer:
-            'Yes, and often more than large ones, because the owner is doing several jobs at once. A unified system automates the admin, catches the missed calls and takes back the evenings and weekends that manual work eats.',
+            'Yes, and often more than large ones, because the owner is doing several jobs at once. A unified system automates the admin, answers the messages that would otherwise wait, and takes back the evenings and weekends that manual work eats.',
         },
         {
           question: 'How do I switch to a new salon management system?',
@@ -415,7 +415,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-employee-management-software',
-      lastUpdated: '2026-10-09T00:00:00.000Z',
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       term: 'Salon Employee Management Software',
       definition:
         'is specialized functionality within <a href="/en/glossary/salon-management-software">salon management software</a> that handles staff scheduling, commission tracking, performance analytics, team permissions, and workforce coordination for beauty businesses.',
@@ -470,7 +470,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'How many staff can salon management software handle?',
           answer:
-            'Daisy runs from a solo practitioner to 100+ staff across several locations. Every plan includes unlimited staff with no per-seat fee, unlike platforms that charge by employee.',
+            'Daisy runs from a solo practitioner to 100+ staff across several locations. Business plans include 5, 10 or 15 team members and 1, 2 or 4 workspaces. Beyond that, an extra calendar is $10/month and an extra workspace $25/month.',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-management-system', 'salon-booking-software'],
@@ -549,7 +549,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
   ar: [
     {
       slug: 'salon-management-software',
-      lastUpdated: '2026-04-27T00:00:00.000Z',
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       term: 'برنامج إدارة الصالونات',
       definition:
         'هو منصة رقمية تساعد أصحاب الصالونات على إدارة العمليات اليومية بما في ذلك جدولة المواعيد، وسجلات العملاء، وإدارة الموظفين، والمدفوعات، والتسويق من نظام واحد.',
@@ -561,10 +561,10 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         { label: 'إدارة العملاء', daisy: 'نظام CRM ذكي', typical: 'قائمة جهات اتصال بسيطة' },
         { label: 'جدولة الموظفين', daisy: 'تحسين ذكي', typical: 'تقويم يدوي' },
         { label: 'التسويق', daisy: 'حملات آلية', typical: 'رسائل بريد إلكتروني بسيطة' },
-        { label: 'ميزات الذكاء الاصطناعي', daisy: 'موظف استقبال ذكي + دردشة آلية', typical: 'لا يوجد أو أساسي' },
+        { label: 'ميزات الذكاء الاصطناعي', daisy: 'موظف استقبال ذكي عبر واتساب وإنستغرام', typical: 'لا يوجد أو أساسي' },
       ],
       howDaisyImplements:
-        'تجمع ديزي جميع وظائف إدارة الصالون في منصة واحدة مدعومة بالذكاء الاصطناعي مع موظف استقبال ذكي يعمل على مدار الساعة، ونظام كاشباك لاكتساب العملاء، وعلامة تجارية مخصّصة. بأسعار تبدأ من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر) ومن دون رسوم لكل موظف، صُممت ديزي للنمو، لا لإدارة العمليات فقط.',
+        'تجمع ديزي جميع وظائف إدارة الصالون في منصة واحدة مدعومة بالذكاء الاصطناعي مع موظف استقبال ذكي يعمل على مدار الساعة عبر واتساب وإنستغرام وموقع الحجز، ونظام كاشباك لاكتساب العملاء، وعلامة تجارية مخصّصة. تبدأ الأسعار من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر)، وتشمل خطط الأعمال 5 أو 10 أو 15 عضواً في الفريق. صُممت ديزي للنمو، لا لإدارة العمليات فقط.',
       faqs: [
         {
           question: 'ما هو أفضل برنامج لإدارة الصالونات في 2026؟',
@@ -574,17 +574,17 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'كم تكلفة برنامج إدارة الصالونات عادةً؟',
           answer:
-            'تتراوح تكلفة برامج إدارة الصالونات من مجاني (مع قيود وعمولات) إلى أكثر من 300 دولار شهرياً للحلول المتميزة. تقدم ديزي ثلاث خطط: الأساسية (من دولار واحد شهرياً، +50 دولاراً بعد تجاوز 5 مواعيد في الشهر)، والنمو (150 دولاراً/شهرياً)، والأعمال (250 دولاراً/شهرياً) بتسعير ثابت شفاف وبدون رسوم لكل موظف.',
+            'تتراوح تكلفة برامج إدارة الصالونات من مجاني (مع قيود وعمولات) إلى أكثر من 300 دولار شهرياً للحلول المتميزة. تقدم ديزي ثلاث خطط: الأساسية (من دولار واحد شهرياً، +50 دولاراً بعد تجاوز 5 مواعيد في الشهر)، والنمو (150 دولاراً/شهرياً)، والأعمال (250 دولاراً/شهرياً). تشمل الخطط 5 أو 10 أو 15 عضواً في الفريق، وكل تقويم إضافي بـ 10 دولارات شهرياً.',
         },
         {
           question: 'هل أحتاج برنامج إدارة صالونات لصالون صغير؟',
           answer:
-            'نعم. حتى الصالونات الصغيرة تستفيد بشكل كبير من برامج الإدارة. تُظهر الأبحاث أن الصالونات التي تستخدم البرامج تشهد انخفاضاً بنسبة 30-40% في حالات عدم الحضور من خلال التذكيرات الآلية ويمكنها استعادة ما يصل إلى 35% من المكالمات الفائتة خارج ساعات العمل باستخدام أدوات الذكاء الاصطناعي.',
+            'نعم. حتى الصالونات الصغيرة تستفيد بشكل كبير من برامج الإدارة. تُظهر الأبحاث أن الصالونات التي تستخدم البرامج تشهد انخفاضاً بنسبة 30-40% في حالات عدم الحضور من خلال التذكيرات الآلية، كما يرد موظف الاستقبال الذكي على الرسائل التي تصل بعد ساعات العمل.',
         },
         {
           question: 'هل يمكن لبرنامج إدارة الصالونات مساعدتي في الحصول على المزيد من العملاء؟',
           answer:
-            'معظم برامج الصالونات تدير العملاء الحاليين فقط. ديزي مختلفة، فهي تكتسب عملاء جدد بنشاط من خلال اكتشاف السوق ومكافآت الكاشباك وأتمتة التسويق المدعومة بالذكاء الاصطناعي، مما يوفر منظومة متكاملة لاكتساب العملاء.',
+            'معظم برامج الصالونات تدير العملاء الحاليين فقط. ديزي مختلفة، فهي تكتسب عملاء جدد بنشاط من خلال سوق اختياري متاح في دول مختارة ومكافآت الكاشباك وأتمتة التسويق المدعومة بالذكاء الاصطناعي، مما يوفر منظومة متكاملة لاكتساب العملاء.',
         },
         {
           question: 'ما الميزات التي يجب البحث عنها في برنامج الصالون؟',
@@ -615,37 +615,37 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'ai-receptionist-for-salons',
-      lastUpdated: '2026-04-27T00:00:00.000Z',
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       term: 'موظف الاستقبال الذكي للصالونات',
       definition:
-        'هو نظام ذكاء اصطناعي يتولى المكالمات الهاتفية والرسائل النصية واستفسارات الحجز لمشاريع التجميل على مدار الساعة، حيث يقوم بجدولة المواعيد والإجابة على الأسئلة ومعالجة المدفوعات تلقائياً دون تدخل بشري.',
+        'هو نظام ذكاء اصطناعي يرد على رسائل العملاء واستفسارات الحجز لمشاريع التجميل على مدار الساعة عبر قنوات مثل واتساب وإنستغرام وموقع الحجز، فيجدول المواعيد ويجيب على الأسئلة ويعالج المدفوعات تلقائياً دون تدخل بشري.',
       extendedDescription:
-        'يستخدم موظف الاستقبال الذكي معالجة اللغة الطبيعية وتركيب الصوت للتفاعل مع العملاء تمامًا كما يفعل موظف الاستقبال البشري. يمكنه الرد على المكالمات أثناء وبعد ساعات العمل، والتعامل مع محادثات متعددة في وقت واحد، وتحويل الاستفسارات إلى حجوزات. تشير الأبحاث إلى أن مشاريع التجميل تفقد ما يصل إلى 35% من المكالمات الواردة خارج ساعات العمل، وهي إيرادات يمكن لموظف الاستقبال الذكي استعادتها.',
+        'يستخدم موظف الاستقبال الذكي معالجة اللغة الطبيعية للرد على العملاء تمامًا كما يفعل موظف الاستقبال البشري. يرد على الرسائل أثناء ساعات العمل وبعدها، ويتعامل مع محادثات متعددة في وقت واحد، ويحوّل الاستفسارات إلى حجوزات. بعض أنظمة الاستقبال الذكية ترد أيضاً على المكالمات الهاتفية، أما موظف الاستقبال الذكي من ديزي فيعمل عبر واتساب وإنستغرام وموقع الحجز، ولا يرد على المكالمات الهاتفية حتى الآن.',
       keyFeatures: [
         { label: 'التوفر على مدار الساعة', daisy: 'يعمل دائمًا', typical: 'ساعات العمل فقط' },
         { label: 'دعم اللغات', daisy: 'العربية والإنجليزية', typical: 'الإنجليزية فقط' },
         { label: 'قدرة الحجز', daisy: 'حجز مباشر + دفع', typical: 'جدولة معاودة الاتصال' },
-        { label: 'جودة الصوت', daisy: 'محادثة طبيعية', typical: 'آلي أو نظام رد صوتي بسيط' },
+        { label: 'القنوات', daisy: 'واتساب وإنستغرام + موقع الحجز', typical: 'قناة واحدة' },
         { label: 'التعلّم', daisy: 'يتحسّن بمرور الوقت', typical: 'نصوص ثابتة' },
         { label: 'التكامل', daisy: 'تكامل كامل مع CRM + التقويم', typical: 'نظام منفصل' },
       ],
       howDaisyImplements:
-        'يتولى موظف الاستقبال الذكي من ديزي المكالمات الصوتية والرسائل النصية باللغتين العربية والإنجليزية على مدار الساعة. يحجز المواعيد مباشرة في تقويمك، ويجيب على أسئلة الخدمات والأسعار، ويعالج المدفوعات، ويتعلم من كل تفاعل ليتحسن بمرور الوقت. مُضمّن في جميع خطط ديزي بدون تكلفة إضافية.',
+        'يرد موظف الاستقبال الذكي من ديزي على رسائل واتساب وإنستغرام وموقع الحجز باللغتين العربية والإنجليزية على مدار الساعة. يحجز المواعيد مباشرة في تقويمك، ويجيب على أسئلة الخدمات والأسعار، ويعالج المدفوعات، ويتعلم من كل تفاعل ليتحسن بمرور الوقت. ولا يرد على المكالمات الهاتفية حتى الآن. تشمل كل خطة 50 محادثة لموظف الاستقبال الذكي، ويمكنك شراء محادثات إضافية حسب الاستخدام.',
       faqs: [
         {
           question: 'ما هو موظف الاستقبال الذكي للصالونات؟',
           answer:
-            'موظف الاستقبال الذكي للصالونات هو نظام آلي يرد على المكالمات الهاتفية والرسائل، ويحجز المواعيد، ويجيب على أسئلة الخدمات والأسعار، ويعالج المدفوعات، وكل ذلك من دون تدخل بشري وعلى مدار 24 ساعة في اليوم.',
+            'موظف الاستقبال الذكي للصالونات هو نظام آلي يرد على رسائل العملاء، ويحجز المواعيد، ويجيب على أسئلة الخدمات والأسعار، ويعالج المدفوعات، وكل ذلك من دون تدخل بشري وعلى مدار 24 ساعة في اليوم. ويعمل موظف الاستقبال الذكي من ديزي عبر واتساب وإنستغرام وموقع الحجز.',
         },
         {
           question: 'كم تكلفة موظف الاستقبال الذكي للصالون؟',
           answer:
-            'تتكلف خدمات موظف الاستقبال الذكي المستقلة للصالونات عادةً 200-500 دولار شهرياً. تتضمن ديزي موظف استقبال ذكي في جميع الخطط بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر)، مُدمجاً مع برنامج إدارة الصالون الكامل.',
+            'تتكلف خدمات موظف الاستقبال الذكي المستقلة للصالونات عادةً 200-500 دولار شهرياً. تتضمن ديزي موظف استقبال ذكي مع 50 محادثة مشمولة في جميع الخطط بدءاً من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر)، مُدمجاً مع برنامج إدارة الصالون الكامل.',
         },
         {
           question: 'هل يمكن لموظف الاستقبال الذكي أن يحل محل موظف الاستقبال البشري فعلاً؟',
           answer:
-            'يتعامل موظف الاستقبال الذكي مع المهام الروتينية مثل الحجز وإعادة الجدولة والأسئلة الشائعة، وهي تمثل 70-80% من مكالمات الصالون. وللمسائل المعقدة، يمكنه تحويلها إلى الموظفين. تستخدم العديد من الصالونات الذكاء الاصطناعي لتكملة طاقم العمل البشري لا لاستبداله.',
+            'يتعامل موظف الاستقبال الذكي مع المهام الروتينية مثل الحجز وإعادة الجدولة والأسئلة الشائعة، ويحوّل المسائل المعقدة إلى الموظفين. تستخدم العديد من الصالونات الذكاء الاصطناعي لتكملة طاقم العمل البشري لا لاستبداله. ولأن موظف الاستقبال الذكي من ديزي يرد على الرسائل فقط، يبقى فريقك هو من يرد على المكالمات الهاتفية.',
         },
         {
           question: 'هل يعمل موظف الاستقبال الذكي من ديزي باللغة العربية؟',
@@ -658,26 +658,26 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
             'يتحقق موظف الاستقبال الذكي من توفر الموظفين في الوقت الفعلي، ويقترح أفضل مواعيد الحجز، ويؤكد الحجز مع العميل، ويرسل التذكيرات، ويزامن كل شيء مع تقويم صالونك، وكل ذلك تلقائيًا.',
         },
         {
-          question: 'هل سيعرف العملاء أنهم يتحدثون مع ذكاء اصطناعي؟',
+          question: 'هل سيعرف العملاء أنهم يراسلون ذكاءً اصطناعياً؟',
           answer:
             'تستخدم أنظمة الاستقبال الذكية الحديثة مثل نظام ديزي معالجة اللغة الطبيعية لإجراء محادثات شبيهة بالبشر. مع أهمية الشفافية، يقدّر معظم العملاء الاستجابة الفورية والتوفر على مدار الساعة.',
         },
         {
-          question: 'كم عدد المكالمات التي يمكن لموظف الاستقبال الذكي التعامل معها في وقت واحد؟',
+          question: 'كم عدد المحادثات التي يمكن لموظف الاستقبال الذكي التعامل معها في وقت واحد؟',
           answer:
-            'على عكس موظفي الاستقبال البشريين، يمكن لموظف الاستقبال الذكي التعامل مع عدد غير محدود من المكالمات والمحادثات المتزامنة. خلال أوقات الذروة، يعني ذلك صفر مكالمات فائتة وصفر أوقات انتظار.',
+            'على عكس موظفي الاستقبال البشريين، يمكن لموظف الاستقبال الذكي إدارة أي عدد من المحادثات في الوقت نفسه، فلا ينتظر أي عميل الرد في أوقات الذروة.',
         },
         {
           question: 'هل أحتاج إلى معدات خاصة لموظف الاستقبال الذكي؟',
           answer:
-            'لا. يعمل موظف الاستقبال الذكي من ديزي مع رقم هاتفك الحالي. يتم توجيه المكالمات عبر السحابة، من دون أجهزة أو تثبيت أو إعداد تقني.',
+            'لا. يعمل موظف الاستقبال الذكي من ديزي عبر واتساب وإنستغرام وموقع الحجز الخاص بك على ديزي، من دون أجهزة أو تثبيت أو إعداد تقني.',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-booking-software', 'white-label-salon-software'],
       metaTitle: 'ما هو موظف الاستقبال الذكي للصالونات؟ | حجز آلي على مدار الساعة',
       metaDescription:
-        'تعرّف على ما يفعله موظف الاستقبال الذكي للصالونات، وكيف يحجز المواعيد على مدار الساعة، ولماذا تتبنى مشاريع التجميل الذكاء الاصطناعي لاستقطاب المكالمات الفائتة وزيادة الإيرادات.',
-      keywords: ['موظف استقبال ذكي للصالون', 'موظف استقبال افتراضي للصالون', 'حجز صالون آلي', 'رد صالون على مدار الساعة', 'رد هاتفي ذكي للتجميل'],
+        'تعرّف على ما يفعله موظف الاستقبال الذكي للصالونات، وكيف يحجز المواعيد على مدار الساعة عبر واتساب وإنستغرام، ولماذا تستخدمه مشاريع التجميل لزيادة الإيرادات.',
+      keywords: ['موظف استقبال ذكي للصالون', 'موظف استقبال افتراضي للصالون', 'حجز صالون آلي', 'رد صالون على مدار الساعة', 'حجز ذكي عبر واتساب للصالون'],
     },
     {
       slug: 'cashback-beauty-booking',
@@ -749,7 +749,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
       slug: 'white-label-salon-software',
       term: 'برنامج صالون بعلامة تجارية بيضاء',
       definition:
-        'هي منصة إدارة صالونات يمكن إعادة تسميتها بالكامل بشعار عملك وألوانه ونطاقه وهويته، بحيث تعرض كل نقطة تواصل مع العميل (صفحة الحجز، والتطبيق، والإيصالات، والاتصالات) علامتك التجارية لا العلامة التجارية لمزوّد البرنامج.',
+        'هي منصة إدارة صالونات يمكن إعادة تسميتها بالكامل بشعار عملك وألوانه وهويته، بحيث تعرض كل نقطة تواصل مع العميل (صفحة الحجز، والتطبيق، والإيصالات، والاتصالات) علامتك التجارية لا العلامة التجارية لمزوّد البرنامج.',
       extendedDescription:
         'يحل برنامج الصالون ذو العلامة التجارية البيضاء مشكلة حرجة في الهوية التجارية: معظم منصات الصالونات تجبر المشاريع على استخدام العلامة التجارية للمزوّد، مما يُضعف هوية المشروع ويسبب ارتباك العملاء. مع حلول العلامة التجارية البيضاء، تبدو صفحة الحجز الخاصة بك كامتداد لموقعك الإلكتروني، وتصل رسائل التأكيد باسم علامتك التجارية، وتظهر تجربة العميل بهوية متسقة وسلسة. هذا مهم بشكل خاص للصالونات الراقية والمشاريع متعددة الفروع التي تبني قيمة علامتها التجارية.',
       keyFeatures: [
@@ -785,7 +785,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'هل يمكنني استخدام نطاقي الخاص مع برنامج حجز الصالون؟',
           answer:
-            'مع ديزي تحصل على رابط حجز قصير تشاركه، مثل thedaisy.link/your-salon. النطاقات المخصصة غير مدعومة حالياً. والصفحة التي يفتحها تحمل شعارك واسم نشاطك وألوان علامتك، دون أي علامة لديزي عليها.',
+            'مع ديزي تحصل على رابط حجز قصير تشاركه، مثل thedaisy.link/your-salon. تستضيف ديزي موقع الحجز، لذلك لا يمكن تشغيله على نطاقك الخاص، لكن يمكنك توجيه نطاقك إلى صفحة الحجز في ديزي. والصفحة التي يفتحها تحمل شعارك واسم نشاطك وألوان علامتك، دون أي علامة لديزي عليها.',
         },
         {
           question: 'هل تؤثر العلامة التجارية البيضاء على تجربة الحجز؟',
@@ -876,7 +876,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-management-system',
-      lastUpdated: '2026-04-27T00:00:00.000Z',
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       term: 'نظام إدارة الصالونات',
       definition:
         'هو البنية التحتية التشغيلية الكاملة — البرمجيات والأجهزة وسير العمل والتكاملات — التي يستخدمها مشروع التجميل لتشغيل العمليات اليومية، من حجز المواعيد وأجهزة نقاط البيع إلى تنسيق الموظفين والتواصل مع العملاء.',
@@ -916,7 +916,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'هل يمكن لصالون صغير الاستفادة من نظام إدارة؟',
           answer:
-            'بالتأكيد. غالبًا ما تستفيد الصالونات الصغيرة بشكل أكبر لأن المالك يتولى أدواراً متعددة. يؤتمت النظام الموحد المهام الإدارية ويلتقط المكالمات الفائتة عبر الذكاء الاصطناعي ويقلل العبء اليدوي الذي يبقي أصحاب الصالونات الصغيرة يعملون في المساء وعطلات نهاية الأسبوع.',
+            'بالتأكيد. غالبًا ما تستفيد الصالونات الصغيرة بشكل أكبر لأن المالك يتولى أدواراً متعددة. يؤتمت النظام الموحد المهام الإدارية ويرد بالذكاء الاصطناعي على الرسائل التي كانت ستنتظر ويقلل العبء اليدوي الذي يبقي أصحاب الصالونات الصغيرة يعملون في المساء وعطلات نهاية الأسبوع.',
         },
         {
           question: 'كيف أنتقل إلى نظام إدارة صالونات جديد؟',
@@ -942,7 +942,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-employee-management-software',
-      lastUpdated: '2026-10-09T00:00:00.000Z',
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       term: 'برنامج إدارة موظفي الصالون',
       definition:
         'هو وظائف متخصصة ضمن <a href="/ar/glossary/salon-management-software">برنامج إدارة الصالونات</a> تتولى جدولة الموظفين وتتبع العمولات وتحليلات الأداء وصلاحيات الفريق وتنسيق القوى العاملة لمشاريع التجميل.',
@@ -997,7 +997,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'كم عدد الموظفين الذين يمكن لبرنامج إدارة الصالون التعامل معهم؟',
           answer:
-            'تتوسع ديزي من الممارسين المنفردين إلى أكثر من 100 موظف عبر فروع متعددة. تتضمن جميع الخطط عدداً غير محدود من الموظفين بدون رسوم لكل مقعد — وهو ما يميزها عن المنصات التي تفرض رسوماً لكل موظف.',
+            'تتوسع ديزي من الممارسين المنفردين إلى أكثر من 100 موظف عبر فروع متعددة. تشمل خطط الأعمال 5 أو 10 أو 15 عضواً في الفريق و1 أو 2 أو 4 مساحات عمل. وبعد ذلك، يكلف كل تقويم إضافي 10 دولارات شهرياً وكل مساحة عمل إضافية 25 دولاراً شهرياً.',
         },
       ],
       relatedTerms: ['salon-management-software', 'salon-management-system', 'salon-booking-software'],

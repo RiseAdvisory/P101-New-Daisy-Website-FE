@@ -120,7 +120,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
         {
           name: 'List on a discovery marketplace',
-          text: 'Get onto a beauty marketplace like Daisy, where people are already searching for services. Those clients arrive ready to book rather than browsing.',
+          text: 'Get onto a beauty marketplace where people are already searching for services. Daisy\'s marketplace is optional, available in selected countries, and lists businesses after a service-quality review. Those clients arrive ready to book rather than browsing.',
         },
         {
           name: 'Launch a cashback loyalty program',
@@ -132,7 +132,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
         {
           name: 'Enable 24/7 booking availability',
-          text: 'Put an AI receptionist on your calls, messages and booking inquiries around the clock. Beauty businesses miss up to 35% of calls outside opening hours, and every one of those was a potential client.',
+          text: 'Put an AI receptionist on your WhatsApp, Instagram and booking-site messages around the clock. A message that waits until morning often belongs to a client who has already booked somewhere else.',
         },
         {
           name: 'Collect and showcase reviews',
@@ -140,7 +140,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'Daisy provides 360-degree customer acquisition as a complete salon management platform: marketplace discovery brings new clients, cashback keeps them coming back, AI marketing automates promotions, and the AI receptionist ensures you never miss a lead. All channels work together to grow your client base automatically.',
+        'Daisy provides 360-degree customer acquisition as a complete salon management platform: the optional marketplace, available in selected countries, brings new clients, cashback keeps them coming back, AI marketing automates promotions, and the AI receptionist answers WhatsApp and Instagram inquiries 24/7. All channels work together to grow your client base automatically.',
       faqs: [
         {
           question: 'How do salons get new clients in 2026?',
@@ -213,7 +213,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'Daisy checks every box: comprehensive features, transparent flat pricing (no per-staff or transaction fees), AI-powered growth tools, native Arabic/English support, and free data migration on the Business plan. See our full salon management software guide for a detailed breakdown, or start with a 14-day free trial to experience it yourself.',
+        'Daisy checks every box: comprehensive features, published pricing with no transaction fees and 5, 10 or 15 team members included, AI-powered growth tools, native Arabic/English support, and free data migration on the Business plan. See our full salon management software guide for a detailed breakdown, or start with a 14-day free trial to experience it yourself.',
       faqs: [
         {
           question: 'What is the best salon software in 2026?',
@@ -223,17 +223,17 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What charges sit on top of the subscription in salon software?',
           answer:
-            'The usual ones: per-staff charges of $5-15/staff/month, transaction fees of 2-3% per payment, a marketplace commission on clients the marketplace introduces, premium upsells and hardware. Daisy charges a flat monthly fee and none of these.',
+            'The usual ones: per-staff charges of $5-15/staff/month, transaction fees of 2-3% per payment, a marketplace commission on clients the marketplace introduces, premium upsells and hardware. Daisy charges no transaction fees and 0% commission on your existing clients. Its plans include 5, 10 or 15 team members, and an extra calendar is $10/month.',
         },
         {
           question: 'Should I choose salon software with a marketplace?',
           answer:
-            'If acquisition matters to you, yes, though check how each marketplace charges for the clients it introduces. Daisy\'s marketplace charges no commission at all, new clients or returning, so you keep 100% of the booking revenue.',
+            'If acquisition matters to you, yes, though check how each marketplace charges for the clients it introduces. Daisy\'s marketplace is optional and available in selected countries. Its commission applies only to new clients it brings you, and your existing clients carry 0% commission.',
         },
         {
           question: 'How important are AI features in salon software?',
           answer:
-            'More every year. An AI receptionist alone recovers 35% of missed calls, smart scheduling closes the gaps, and automated marketing saves 5-10 hours weekly. It is the clearest difference between platforms now.',
+            'More every year. An AI receptionist answers booking messages around the clock, smart scheduling closes the gaps, and automated marketing saves 5-10 hours weekly. It is the clearest difference between platforms now.',
         },
         {
           question: 'Can I try salon software before buying?',
@@ -253,7 +253,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What salon software works best for multi-location businesses?',
           answer:
-            'Multi-location businesses need central management, analytics per site and branding that holds across them. Daisy handles up to 4 locations on the Business plan, white-labelled, with reporting in one place.',
+            'Multi-location businesses need central management, analytics per site and branding that holds across them. Daisy\'s Business plan includes 4 workspaces, and each extra workspace is $25/month. Every location carries your branding, with reporting in one place.',
         },
       ],
       metaTitle: 'How to Choose the Best Salon Software in 2026 | Buyer\'s Guide',
@@ -264,7 +264,7 @@ export const guideData: I18nContent<GuideData[]> = {
     },
     {
       // AI Concierge wording corrected (PR #342)
-      lastUpdated: '2026-10-02T00:00:00.000Z',
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       slug: 'switch-from-fresha',
       title: 'How Do I Switch from Fresha to Another Platform?',
       answer:
@@ -298,7 +298,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'Daisy makes switching from Fresha straightforward. Free data migration (Business plan) imports all your client records and history. Daisy adds what Fresha does not: an AI receptionist that works across WhatsApp and Instagram as well as the phone, cashback that brings new clients in, a fully white-label booking page, and flat pricing with nothing added per transaction and no marketplace commission.',
+        'Daisy makes switching from Fresha straightforward. Free data migration (Business plan) imports all your client records and history. Daisy adds what Fresha does not: an AI receptionist that works on WhatsApp, Instagram and your booking site, cashback that brings new clients in, a fully white-label booking page, and published pricing with nothing added per transaction and 0% commission on your existing clients.',
       faqs: [
         {
           question: 'Can I export my data from Fresha?',
@@ -308,7 +308,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What is the best Fresha alternative in 2026?',
           answer:
-            'For a salon that wants AI across WhatsApp and Instagram, cashback loyalty and a single flat bill, Daisy is the strongest option. Fresha\'s total combines a subscription, a per-transaction fee and a one-time commission on each new marketplace client; Daisy is $1/month, plus $50 once you pass 5 appointments in a month, with no commissions.',
+            'For a salon that wants AI across WhatsApp and Instagram, cashback loyalty and one monthly bill, Daisy is the strongest option. Fresha\'s total combines a subscription, a per-transaction fee and a one-time commission on each new marketplace client; Daisy is $1/month, plus $50 once you pass 5 appointments in a month, with 0% commission on your existing clients. The only commission is on new clients its optional marketplace brings you.',
         },
         {
           question: 'Will I lose my clients if I switch from Fresha?',
@@ -323,12 +323,12 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'Is Fresha still free?',
           answer:
-            'No. Fresha now sells subscription plans, priced per market: in the UAE that is AED 149.95 a month for the Independent plan, with Team plans quoted on request. On top of that sit transaction fees of 4.90% + AED 0.75 and a one-time 50% commission on each new marketplace client, minimum AED 20. Add those together before comparing against a flat-rate alternative like Daisy.',
+            'No. Fresha now sells subscription plans, priced per market: in the UAE that is AED 149.95 a month for the Independent plan, with Team plans quoted on request. On top of that sit transaction fees of 4.90% + AED 0.75 and a one-time 50% commission on each new marketplace client, minimum AED 20. Add those together before comparing against an alternative like Daisy.',
         },
         {
           question: 'What features does Daisy have that Fresha doesn\'t?',
           answer:
-            'Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site. Fresha\'s AI Concierge answers calls and messages, and as of October 2026 its published pages do not list WhatsApp or Instagram as channels. Daisy also adds cashback-funded acquisition, a fully white-label booking page with no third-party badge, and flat published pricing with nothing added per transaction and no marketplace commission.',
+            'Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site. Fresha\'s AI Concierge answers calls and messages, and as of October 2026 its published pages do not list WhatsApp or Instagram as channels. Daisy also adds cashback-funded acquisition, a fully white-label booking page with no third-party badge, and published pricing with nothing added per transaction and 0% commission on your existing clients.',
         },
       ],
       metaTitle: 'How to Switch from Fresha | Migration Guide 2026',
@@ -359,7 +359,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
         {
           name: 'Customize your booking page',
-          text: 'Add your logo, colours and photos. White-labelled, the booking page reads as part of your own site rather than somebody else\'s platform.',
+          text: 'Add your logo, colours and photos. White-labelled, the booking page carries your brand rather than somebody else\'s platform.',
         },
         {
           name: 'Add booking to your website and social media',
@@ -509,7 +509,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
         {
           name: 'التسجيل في سوق اكتشاف',
-          text: 'انضم إلى سوق تجميل مثل ديزي حيث يبحث العملاء الجدد بنشاط عن خدمات. اكتشاف السوق يجلب عملاء مستعدين للحجز، لا مجرد متصفحين.',
+          text: 'انضم إلى سوق تجميل يبحث فيه العملاء الجدد بنشاط عن خدمات. سوق ديزي اختياري ومتاح في دول مختارة، ويُدرج الأعمال بعد مراجعة لجودة الخدمة. اكتشاف السوق يجلب عملاء مستعدين للحجز، لا مجرد متصفحين.',
         },
         {
           name: 'إطلاق برنامج ولاء الكاشباك',
@@ -521,7 +521,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
         {
           name: 'تفعيل الحجز على مدار الساعة',
-          text: 'ثبّت موظف استقبال ذكي يرد على المكالمات والرسائل واستفسارات الحجز على مدار الساعة. تفوّت شركات التجميل ما يصل إلى 35% من المكالمات خارج أوقات العمل، وكل مكالمة منها فرصة لعميل محتمل جديد.',
+          text: 'ثبّت موظف استقبال ذكي يرد على رسائل واتساب وإنستغرام وموقع الحجز على مدار الساعة. فالرسالة التي تنتظر حتى الصباح كثيراً ما تكون من عميل حجز في مكان آخر.',
         },
         {
           name: 'جمع التقييمات وعرضها',
@@ -529,7 +529,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'توفر ديزي منظومة متكاملة لاكتساب العملاء بصفتها منصة إدارة صالونات متكاملة: اكتشاف السوق يجلب عملاء جدداً، والكاشباك يضمن عودتهم، والتسويق بالذكاء الاصطناعي يؤتمت العروض، وموظف الاستقبال الذكي يضمن عدم تفويت أي فرصة. جميع القنوات تعمل معاً لتنمية قاعدة عملائك تلقائيًا.',
+        'توفر ديزي منظومة متكاملة لاكتساب العملاء بصفتها منصة إدارة صالونات متكاملة: السوق الاختياري المتاح في دول مختارة يجلب عملاء جدداً، والكاشباك يضمن عودتهم، والتسويق بالذكاء الاصطناعي يؤتمت العروض، وموظف الاستقبال الذكي يرد على استفسارات واتساب وإنستغرام على مدار الساعة. جميع القنوات تعمل معاً لتنمية قاعدة عملائك تلقائيًا.',
       faqs: [
         {
           question: 'كيف تحصل الصالونات على عملاء جدد في 2026؟',
@@ -602,7 +602,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'تحقق ديزي كل المعايير: ميزات شاملة، وتسعير ثابت شفاف (بدون رسوم لكل موظف أو رسوم معاملات)، وأدوات نمو مدعومة بالذكاء الاصطناعي، ودعم أصلي بالعربية والإنجليزية، وترحيل بيانات مجاني في خطة الأعمال. اطلع على دليل برامج إدارة الصالونات الكامل للاطلاع على شرح مفصّل، أو ابدأ بتجربة مجانية لمدة 14 يومًا لتجربتها بنفسك.',
+        'تحقق ديزي كل المعايير: ميزات شاملة، وتسعير مُعلن بدون رسوم معاملات مع 5 أو 10 أو 15 عضواً في الفريق ضمن الخطة، وأدوات نمو مدعومة بالذكاء الاصطناعي، ودعم أصلي بالعربية والإنجليزية، وترحيل بيانات مجاني في خطة الأعمال. اطلع على دليل برامج إدارة الصالونات الكامل للاطلاع على شرح مفصّل، أو ابدأ بتجربة مجانية لمدة 14 يومًا لتجربتها بنفسك.',
       faqs: [
         {
           question: 'ما أفضل برنامج لإدارة الصالونات في 2026؟',
@@ -612,17 +612,17 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'ما الرسوم التي تُضاف فوق الاشتراك في برامج الصالونات؟',
           answer:
-            'الرسوم الشائعة فوق الاشتراك: رسوم لكل موظف (5-15 دولاراً/موظف/شهرياً)، ورسوم معاملات (2-3% لكل دفعة)، وعمولة سوق على العملاء الذين يجلبهم السوق، وترقيات ميزات مدفوعة، وتكاليف أجهزة. تفرض ديزي رسماً شهرياً ثابتاً بدون أي من هذه.',
+            'الرسوم الشائعة فوق الاشتراك: رسوم لكل موظف (5-15 دولاراً/موظف/شهرياً)، ورسوم معاملات (2-3% لكل دفعة)، وعمولة سوق على العملاء الذين يجلبهم السوق، وترقيات ميزات مدفوعة، وتكاليف أجهزة. لا تفرض ديزي رسوم معاملات، وعمولتها 0% على عملائك الحاليين. تشمل خططها 5 أو 10 أو 15 عضواً في الفريق، وكل تقويم إضافي بـ 10 دولارات شهرياً.',
         },
         {
           question: 'هل يجب أن أختار برنامج صالون يتضمن سوقاً؟',
           answer:
-            'إذا كان اكتساب العملاء أولوية، نعم. لكن تحقّق من كيفية احتساب كل سوق لعمولته على العملاء الذين يجلبهم. سوق ديزي بلا أي عمولة، للعملاء الجدد والمتكررين، وتحتفظ فيه بـ 100% من إيرادات الحجز.',
+            'إذا كان اكتساب العملاء أولوية، نعم. لكن تحقّق من كيفية احتساب كل سوق لعمولته على العملاء الذين يجلبهم. سوق ديزي اختياري ومتاح في دول مختارة، ولا تُفرض عمولته إلا على العملاء الجدد الذين يجلبهم لك، وعمولة عملائك الحاليين 0%.',
         },
         {
           question: 'ما مدى أهمية ميزات الذكاء الاصطناعي في برامج الصالونات؟',
           answer:
-            'أهمية متزايدة. موظف الاستقبال الذكي وحده يمكنه استرداد 35% من المكالمات الفائتة. الجدولة الذكية تقلّل الفجوات. التسويق التلقائي يوفر 5-10 ساعات أسبوعياً. الذكاء الاصطناعي هو أكبر عامل تمييز في برامج الصالونات الحديثة.',
+            'أهمية متزايدة. موظف الاستقبال الذكي يرد على رسائل الحجز على مدار الساعة. الجدولة الذكية تقلّل الفجوات. التسويق التلقائي يوفر 5-10 ساعات أسبوعياً. الذكاء الاصطناعي هو أكبر عامل تمييز في برامج الصالونات الحديثة.',
         },
         {
           question: 'هل يمكنني تجربة برنامج الصالون قبل الشراء؟',
@@ -642,7 +642,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'ما برنامج الصالون الأفضل للأعمال متعددة الفروع؟',
           answer:
-            'الصالونات متعددة الفروع تحتاج إدارة مركزية وتحليلات لكل فرع وعلامة تجارية متسقة. تدعم ديزي ما يصل إلى 4 فروع في خطة الأعمال مع علامة تجارية مخصصة وتقارير موحّدة.',
+            'الصالونات متعددة الفروع تحتاج إدارة مركزية وتحليلات لكل فرع وعلامة تجارية متسقة. تشمل خطة الأعمال في ديزي 4 مساحات عمل، وكل مساحة عمل إضافية بـ 25 دولاراً شهرياً، مع علامة تجارية مخصصة لكل فرع وتقارير موحّدة.',
         },
       ],
       metaTitle: 'كيف تختار أفضل برنامج لإدارة الصالون في 2026 | دليل المشتري',
@@ -653,7 +653,7 @@ export const guideData: I18nContent<GuideData[]> = {
     },
     {
       // AI Concierge wording corrected (PR #342)
-      lastUpdated: '2026-10-02T00:00:00.000Z',
+      lastUpdated: '2026-10-10T00:00:00.000Z',
       slug: 'switch-from-fresha',
       title: 'كيف أنتقل من Fresha إلى منصة أخرى؟',
       answer:
@@ -687,7 +687,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'تجعل ديزي الانتقال من Fresha مباشراً. ترحيل البيانات المجاني (خطة الأعمال) يستورد جميع سجلات عملائك وتاريخهم. وتضيف ديزي ما لا تقدمه Fresha: موظف استقبال ذكي يعمل عبر واتساب وإنستغرام إضافة إلى الهاتف، وكاشباك يجلب عملاء جدداً، وصفحة حجز بعلامتك التجارية بالكامل، وتسعير ثابت لا يضيف شيئاً على كل معاملة ولا عمولة سوق.',
+        'تجعل ديزي الانتقال من Fresha مباشراً. ترحيل البيانات المجاني (خطة الأعمال) يستورد جميع سجلات عملائك وتاريخهم. وتضيف ديزي ما لا تقدمه Fresha: موظف استقبال ذكي يعمل عبر واتساب وإنستغرام وصفحة الحجز، وكاشباك يجلب عملاء جدداً، وصفحة حجز بعلامتك التجارية بالكامل، وتسعير مُعلن لا يضيف شيئاً على كل معاملة مع عمولة 0% على عملائك الحاليين.',
       faqs: [
         {
           question: 'هل يمكنني تصدير بياناتي من Fresha؟',
@@ -697,7 +697,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'ما أفضل بديل لـ Fresha في 2026؟',
           answer:
-            'ديزي هي البديل الأفضل لـ Fresha للصالونات التي تريد ذكاءً اصطناعياً عبر واتساب وإنستغرام وولاء الكاشباك وفاتورة واحدة ثابتة. فإجمالي Fresha يجمع اشتراكاً ورسوم معاملات وعمولة لمرة واحدة على كل عميل سوق جديد، بينما تبدأ ديزي من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر) بدون عمولات.',
+            'ديزي هي البديل الأفضل لـ Fresha للصالونات التي تريد ذكاءً اصطناعياً عبر واتساب وإنستغرام وولاء الكاشباك وفاتورة شهرية واحدة. فإجمالي Fresha يجمع اشتراكاً ورسوم معاملات وعمولة لمرة واحدة على كل عميل سوق جديد، بينما تبدأ ديزي من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر) مع عمولة 0% على عملائك الحاليين. ولا تفرض ديزي عمولة إلا على العملاء الجدد الذين يجلبهم سوقها الاختياري.',
         },
         {
           question: 'هل سأخسر عملائي إذا انتقلت من Fresha؟',
@@ -712,12 +712,12 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'هل لا يزال Fresha مجانياً؟',
           answer:
-            'لا. تبيع Fresha الآن خطط اشتراك مُسعّرة حسب السوق: في الإمارات 149.95 درهماً شهرياً لخطة Independent، وخطط Team بأسعار عند الطلب. وفوق ذلك رسوم معاملات 4.90% + 0.75 درهم، وعمولة لمرة واحدة 50% على كل عميل سوق جديد بحد أدنى 20 درهماً. اجمع هذه البنود قبل المقارنة ببديل ثابت السعر مثل ديزي.',
+            'لا. تبيع Fresha الآن خطط اشتراك مُسعّرة حسب السوق: في الإمارات 149.95 درهماً شهرياً لخطة Independent، وخطط Team بأسعار عند الطلب. وفوق ذلك رسوم معاملات 4.90% + 0.75 درهم، وعمولة لمرة واحدة 50% على كل عميل سوق جديد بحد أدنى 20 درهماً. اجمع هذه البنود قبل المقارنة ببديل مثل ديزي.',
         },
         {
           question: 'ما الميزات التي تمتلكها ديزي ولا يمتلكها Fresha؟',
           answer:
-            'يعمل موظف الاستقبال الذكي في ديزي عبر واتساب وإنستغرام وصفحة الحجز. أما خدمة AI Concierge لدى Fresha فتردّ على المكالمات والرسائل، ولا تُدرج صفحاتها المنشورة حتى أكتوبر 2026 واتساب أو إنستغرام ضمن قنواتها. وتضيف ديزي استقطاب عملاء بالكاشباك، وصفحة حجز بعلامتك التجارية بالكامل دون شعار أي طرف ثالث، وتسعيراً ثابتاً معلناً لا يضيف شيئاً على كل معاملة ولا عمولة سوق.',
+            'يعمل موظف الاستقبال الذكي في ديزي عبر واتساب وإنستغرام وصفحة الحجز. أما خدمة AI Concierge لدى Fresha فتردّ على المكالمات والرسائل، ولا تُدرج صفحاتها المنشورة حتى أكتوبر 2026 واتساب أو إنستغرام ضمن قنواتها. وتضيف ديزي استقطاب عملاء بالكاشباك، وصفحة حجز بعلامتك التجارية بالكامل دون شعار أي طرف ثالث، وتسعيراً معلناً لا يضيف شيئاً على كل معاملة مع عمولة 0% على عملائك الحاليين.',
         },
       ],
       metaTitle: 'كيف تنتقل من Fresha | دليل الترحيل 2026',
@@ -748,7 +748,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
         {
           name: 'تخصيص صفحة الحجز',
-          text: 'أضف شعارك وألوان علامتك التجارية وصورك. مع ميزة العلامة التجارية المخصصة من ديزي، تبدو صفحة حجزك كموقعك الخاص، وليس منصة طرف ثالث.',
+          text: 'أضف شعارك وألوان علامتك التجارية وصورك. مع ميزة العلامة التجارية المخصصة من ديزي، تحمل صفحة حجزك علامتك التجارية، لا علامة منصة طرف ثالث.',
         },
         {
           name: 'إضافة الحجز لموقعك ووسائل التواصل',
