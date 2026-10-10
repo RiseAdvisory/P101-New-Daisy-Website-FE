@@ -363,7 +363,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       'Arabic and English interface; DINGG\'s pages mention Arabic for WhatsApp messages',
       'Cashback rewards for customers; DINGG\'s loyalty runs on points, vouchers and prepaid credits',
       'Published prices; DINGG gives pricing in a demo',
-      'Consumer marketplace for customer acquisition',
+      'Optional consumer marketplace, in selected countries, for customer acquisition',
     ],
 
     daisySwitchingReasons: [
@@ -371,7 +371,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       'You want an AI receptionist that also answers on Instagram',
       'You want cashback rewards to bring clients back',
       'You want to see prices before booking a demo',
-      'You want a consumer marketplace bringing new customers in',
+      'You want the option of a consumer marketplace bringing new customers in',
     ],
 
     competitorStrengths: [
@@ -395,7 +395,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does DINGG compare to Daisy?',
         answer:
-          'Both publish AI that books appointments over WhatsApp. DINGG\'s AI Genius adds smart scheduling, segmentation and predictive insights, and DINGG runs country sites for five GCC states. Daisy\'s AI receptionist also covers Instagram, and Daisy publishes its prices, adds cashback rewards and a consumer marketplace, and is live in all six GCC countries, Bahrain included.',
+          'Both publish AI that books appointments over WhatsApp. DINGG\'s AI Genius adds smart scheduling, segmentation and predictive insights, and DINGG runs country sites for five GCC states. Daisy\'s AI receptionist also covers Instagram, and Daisy publishes its prices, adds cashback rewards and an optional consumer marketplace, and is live in all six GCC countries, Bahrain included.',
       },
       {
         question: 'Does DINGG work in the GCC?',
@@ -415,7 +415,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does DINGG\'s AI compare to Daisy\'s?',
         answer:
-          'DINGG\'s AI assistant answers questions, shares service menus and prices, and takes bookings on WhatsApp, SMS and your website, 24/7. AI Genius also covers smart scheduling, client segmentation, WhatsApp marketing and predictive analytics. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English, takes payment inside the booking flow, and sits alongside a consumer marketplace and cashback rewards.',
+          'DINGG\'s AI assistant answers questions, shares service menus and prices, and takes bookings on WhatsApp, SMS and your website, 24/7. AI Genius also covers smart scheduling, client segmentation, WhatsApp marketing and predictive analytics. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English, takes payment inside the booking flow, and sits alongside cashback rewards and an optional consumer marketplace.',
       },
       {
         question: 'Is DINGG\'s Arabic support as good as Daisy\'s for GCC businesses?',
@@ -425,7 +425,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does DINGG have a mobile app?',
         answer:
-          'Yes. The DINGG Business app is on Google Play, rated 4.5 from 83 reviews in October 2026, and on the App Store. DINGG also lists a kiosk app and a client self-service portal. Daisy\'s app puts POS, inventory, AI and marketplace access in one place.',
+          'Yes. The DINGG Business app is on Google Play, rated 4.5 from 83 reviews in October 2026, and on the App Store. DINGG also lists a kiosk app and a client self-service portal. Daisy\'s app puts POS, inventory and AI in one place, with marketplace access for businesses that opt in.',
       },
       {
         question: 'Does DINGG support multi-branch salon businesses?',
@@ -435,7 +435,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'What integrations does DINGG support compared to Daisy?',
         answer:
-          'DINGG lists payments by card, Apple Pay and popular UAE payment options, messaging over WhatsApp, SMS and email, and booking on your own website. Daisy connects to local GCC payment methods, marketing tools and Google Calendar, and includes a consumer marketplace.',
+          'DINGG lists payments by card, Apple Pay and popular UAE payment options, messaging over WhatsApp, SMS and email, and booking on your own website. Daisy connects to local GCC payment methods, marketing tools and Google Calendar, and offers an optional consumer marketplace.',
       },
     ],
 
@@ -600,18 +600,18 @@ export const tier2Competitors: Record<string, CompetitorData> = {
 
     daisyAdvantages: [
       'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English, where Reception works on calls and texts',
-      'AI receptionist included in the plan, where Reception becomes a $50/mo add-on after 30 November 2026',
+      'AI receptionist in the plan, with 50 conversations included, where Reception becomes a $50/mo add-on after 30 November 2026',
       'Native Arabic and English, where GlossGenius has an English-only app and is available only in the US',
-      'Consumer marketplace with cashback, where GlossGenius offers a booking website and Reserve with Google',
+      'Cashback and an optional consumer marketplace, where GlossGenius offers a booking website and Reserve with Google',
       'Live in all six GCC countries, with GCC compliance and local payments',
     ],
 
     daisySwitchingReasons: [
       'Want an AI receptionist that works on WhatsApp and Instagram, beyond calls and texts',
       'Expanding to the GCC or Middle East and need Arabic support',
-      'Need a consumer marketplace for customer discovery',
+      'Want the option of a consumer marketplace for customer discovery',
       'Want cashback rewards to drive customer retention',
-      'Want the AI receptionist included in the plan rather than sold as an add-on',
+      'Want the AI receptionist in the plan, with 50 conversations included, rather than sold as an add-on',
     ],
 
     competitorStrengths: [
@@ -637,7 +637,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does GlossGenius compare to Daisy?',
         answer:
-          'GlossGenius suits US beauty and wellness businesses that want a design-led booking site, quick setup and a flat 2.6% card rate, and its Reception agent answers calls and texts. It is available only in the US, has no Arabic interface and has no consumer marketplace of its own. Daisy runs its AI receptionist on WhatsApp, Instagram and the booking site in Arabic and English, adds a marketplace with cashback, and is live in all six GCC countries.',
+          'GlossGenius suits US beauty and wellness businesses that want a design-led booking site, quick setup and a flat 2.6% card rate, and its Reception agent answers calls and texts. It is available only in the US, has no Arabic interface and has no consumer marketplace of its own. Daisy runs its AI receptionist on WhatsApp, Instagram and the booking site in Arabic and English, is live in all six GCC countries, and adds cashback and an optional marketplace.',
       },
       {
         question: 'Does GlossGenius have AI features?',
@@ -677,18 +677,18 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does GlossGenius integrate with other tools I already use?',
         answer:
-          'GlossGenius builds most tools into its own platform: payments, card readers, a website builder, marketing, inventory and an optional Payroll add-on. Its pricing page lists Reserve with Google, Google reviews and two-way calendar sync, plus Google Marketing Analytics and website pixel tracking on Platinum. Daisy\'s integrations cover local GCC payment gateways, Google Calendar, marketing tools and a built-in consumer marketplace.',
+          'GlossGenius builds most tools into its own platform: payments, card readers, a website builder, marketing, inventory and an optional Payroll add-on. Its pricing page lists Reserve with Google, Google reviews and two-way calendar sync, plus Google Marketing Analytics and website pixel tracking on Platinum. Daisy\'s integrations cover local GCC payment gateways, Google Calendar and marketing tools, and it offers an optional consumer marketplace.',
       },
       {
         question: 'Is GlossGenius good for salons that want to attract new customers?',
         answer:
-          'GlossGenius does not list a consumer marketplace of its own. It gives you a booking website, automated review prompts, email and text marketing, and on Gold and Platinum, Reserve with Google, Google review integration and the AI Marketing Assistant. Cashback rewards are not listed on its published pages. Daisy includes a consumer marketplace with cashback, AI-driven campaigns and an acquisition engine built to bring new clients through the door.',
+          'GlossGenius does not list a consumer marketplace of its own. It gives you a booking website, automated review prompts, email and text marketing, and on Gold and Platinum, Reserve with Google, Google review integration and the AI Marketing Assistant. Cashback rewards are not listed on its published pages. Daisy includes cashback, AI-driven campaigns and an acquisition engine built to bring new clients through the door, and businesses can opt in to its marketplace in selected countries.',
       },
     ],
 
     lastResearched: '2026-10-09',
     notes:
-      'GlossGenius has been a Genius AI product since July 2026 and, by its own privacy policy, is available only in the US. It sells AI agents for calls and texts, analytics and marketing. Daisy differs on channels (WhatsApp, Instagram, booking site), Arabic, GCC presence and the cashback marketplace. Re-check Reception pricing after 30 November 2026.',
+      'GlossGenius has been a Genius AI product since July 2026 and, by its own privacy policy, is available only in the US. It sells AI agents for calls and texts, analytics and marketing. Daisy differs on channels (WhatsApp, Instagram, booking site), Arabic, GCC presence and cashback with an optional marketplace. Re-check Reception pricing after 30 November 2026.',
   },
 
   // ---------------------------------------------------------------------------
@@ -764,10 +764,10 @@ export const tier2Competitors: Record<string, CompetitorData> = {
 
     daisyAdvantages: [
       'Proven AI capabilities vs no AI',
-      'Complete platform with POS, inventory, marketplace vs basic features',
+      'Complete platform with POS, inventory and an optional marketplace vs basic features',
       'Native Arabic UI vs unconfirmed Arabic support',
       'Transparent pricing vs opaque quote-based model',
-      'Consumer marketplace with cashback vs no marketplace',
+      'Cashback and an optional consumer marketplace vs no marketplace',
       'All 6 GCC countries vs UAE/KSA only',
       'Established team and product vs early-stage startup',
     ],
@@ -775,7 +775,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     daisySwitchingReasons: [
       'Need AI receptionist for after-hours bookings',
       'Need complete business management (POS, inventory, reporting)',
-      'Want consumer marketplace for customer acquisition',
+      'Want the option of a consumer marketplace for customer acquisition',
       'Need transparent pricing without sales calls',
       'Want proven platform with Arabic UI, not an early-stage product',
     ],
@@ -801,7 +801,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Zylu compare to Daisy?',
         answer:
-          'Zylu is an early-stage GCC platform offering basic booking. Daisy is a full AI-powered platform with complete business management, a marketplace, cashback and native Arabic support across all 6 GCC countries.',
+          'Zylu is an early-stage GCC platform offering basic booking. Daisy is a full AI-powered platform with complete business management, cashback, an optional marketplace and native Arabic support, and it is live in all six GCC countries.',
       },
       {
         question: 'How much does Zylu cost and is the pricing transparent?',
@@ -831,7 +831,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Zylu have a mobile app and how good is it?',
         answer:
-          'There are few public reviews and almost no app store presence, so the mobile app is hard to judge. Daisy\'s app is fully featured and well rated, carrying business management, AI tools, POS and marketplace access wherever you are.',
+          'There are few public reviews and almost no app store presence, so the mobile app is hard to judge. Daisy\'s app is fully featured and well rated, carrying business management, AI tools and POS wherever you are, plus marketplace access for businesses that opt in.',
       },
       {
         question: 'Can Zylu support a salon chain with multiple branches?',
@@ -841,7 +841,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'What integrations does Zylu offer?',
         answer:
-          'The integration ecosystem looks limited, which its stage and team size would predict, and there are no local GCC payment method integrations despite the regional targeting. Daisy connects to local payment gateways, Google Calendar and marketing platforms, and includes a consumer marketplace.',
+          'The integration ecosystem looks limited, which its stage and team size would predict, and there are no local GCC payment method integrations despite the regional targeting. Daisy connects to local payment gateways, Google Calendar and marketing platforms, and offers an optional consumer marketplace.',
       },
     ],
 
@@ -1002,7 +1002,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'What is RepeatMD\'s Beauty Bank?',
         answer:
-          'Beauty Bank lets patients pre-save money for future treatments at a practice, like a digital wallet. Practices can encourage deposits with bonuses, priority scheduling or cashback rewards, and patients spend the balance when they book. Daisy has a cashback system inside the wider platform, plus a consumer marketplace for acquisition.',
+          'Beauty Bank lets patients pre-save money for future treatments at a practice, like a digital wallet. Practices can encourage deposits with bonuses, priority scheduling or cashback rewards, and patients spend the balance when they book. Daisy has a cashback system inside the wider platform, plus an optional consumer marketplace for acquisition.',
       },
       {
         question: 'How much does RepeatMD cost?',
@@ -1214,8 +1214,8 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     },
 
     daisyAdvantages: [
-      'AI receptionist on WhatsApp, Instagram and the booking site, included in the plan, where Beau answers phone calls as a $125/mo per-location add-on',
-      'Consumer marketplace with cashback, where Boulevard has no consumer marketplace of its own',
+      'AI receptionist on WhatsApp, Instagram and the booking site, with 50 conversations included in the plan, where Beau answers phone calls as a $125/mo per-location add-on',
+      'Cashback and an optional consumer marketplace, where Boulevard has no consumer marketplace of its own',
       'Native Arabic and English, where the Boulevard Professional app lists English only',
       'A lower entry price than Boulevard\'s $159/mo ($143/mo billed annually)',
       'Live in all six GCC countries, with GCC compliance and local payments',
@@ -1224,7 +1224,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     daisySwitchingReasons: [
       'Want an AI receptionist on WhatsApp and Instagram, included in the plan',
       'Need Arabic support for GCC expansion',
-      'Want a consumer marketplace for customer discovery',
+      'Want the option of a consumer marketplace for customer discovery',
       'Want a lower entry price than $159/mo',
       'Want GCC compliance and local payment methods',
       'Want cashback rewards for clients',
@@ -1252,7 +1252,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Boulevard compare to Daisy?',
         answer:
-          'Boulevard is a premium US platform with Precision Scheduling on every plan, from $159/mo ($143/mo billed annually), and it sells Beau, a voice AI receptionist, as an add-on. Daisy is a complete growth platform, adding an AI receptionist on WhatsApp, Instagram and the booking site, a marketplace, cashback and Arabic support at a lower price. Daisy includes its AI receptionist in the base platform.',
+          'Boulevard is a premium US platform with Precision Scheduling on every plan, from $159/mo ($143/mo billed annually), and it sells Beau, a voice AI receptionist, as an add-on. Daisy is a complete growth platform, adding an AI receptionist on WhatsApp, Instagram and the booking site, cashback, an optional marketplace and Arabic support at a lower price. Daisy includes its AI receptionist in the base platform.',
       },
       {
         question: 'Is Boulevard available in the Middle East?',
@@ -1282,7 +1282,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'How good is Boulevard\'s mobile app for daily salon management?',
         answer:
-          'The Boulevard Professional app is rated 4.6 on the US App Store from about 600 ratings (October 2026), and payments run through the Boulevard Duo app and card reader on iPad. Bookings, client check-in and POS are all covered. Daisy matches the mobile quality, adds an AI receptionist on WhatsApp and Instagram and a marketplace, and costs less.',
+          'The Boulevard Professional app is rated 4.6 on the US App Store from about 600 ratings (October 2026), and payments run through the Boulevard Duo app and card reader on iPad. Bookings, client check-in and POS are all covered. Daisy matches the mobile quality, adds an AI receptionist on WhatsApp and Instagram and an optional marketplace, and costs less.',
       },
       {
         question: 'Can Boulevard support franchise or multi-location salon businesses?',
@@ -1297,13 +1297,13 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Boulevard help attract new customers or just manage existing ones?',
         answer:
-          'Boulevard includes email and text marketing, offer codes, referral and loyalty programs on every plan, sells automated campaigns at $2 per completed appointment, and its self-booking syncs with Google, Instagram and Facebook. It does not list a consumer marketplace of its own or cashback rewards. Daisy runs the operations and adds a consumer marketplace, cashback rewards and AI-driven marketing, so it keeps the clients you have and brings new ones in.',
+          'Boulevard includes email and text marketing, offer codes, referral and loyalty programs on every plan, sells automated campaigns at $2 per completed appointment, and its self-booking syncs with Google, Instagram and Facebook. It does not list a consumer marketplace of its own or cashback rewards. Daisy runs the operations and adds cashback rewards, AI-driven marketing and an optional consumer marketplace, so it keeps the clients you have and brings new ones in.',
       },
     ],
 
     lastResearched: '2026-10-09',
     notes:
-      'Premium US platform. Prices read on 9 October 2026 include a fall offer for new customers on Premier and Prestige, so re-check them. Beau, the voice AI receptionist, is a paid add-on and sends booking links. Daisy differs on WhatsApp and Instagram AI, Arabic, GCC presence and the cashback marketplace.',
+      'Premium US platform. Prices read on 9 October 2026 include a fall offer for new customers on Premier and Prestige, so re-check them. Beau, the voice AI receptionist, is a paid add-on and sends booking links. Daisy differs on WhatsApp and Instagram AI, Arabic, GCC presence and cashback with an optional marketplace.',
   },
 
   // ---------------------------------------------------------------------------
@@ -1501,7 +1501,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Planity charge commission on bookings like other marketplaces?',
         answer:
-          'No. Planity says its subscriptions carry no commission on bookings and no setup or maintenance fees, with no commitment. It does not publish subscription prices; a Planity adviser recommends a plan. Daisy also takes no per-booking commission, and adds AI, cashback and full business management on top.',
+          'No. Planity says its subscriptions carry no commission on bookings and no setup or maintenance fees, with no commitment. It does not publish subscription prices; a Planity adviser recommends a plan. Daisy takes no commission on bookings from your existing clients, and its marketplace commission applies only to new clients the marketplace brings. It adds AI, cashback and full business management on top.',
       },
       {
         question: 'Does Planity work outside of France or support Arabic?',
@@ -1521,7 +1521,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'How good is Planity\'s mobile app compared to Daisy?',
         answer:
-          'Planity\'s consumer app is rated 4.9 on the App Store in France from 773,000+ ratings and 4.8 on Google Play from 403,000+ reviews, and businesses run their salon from the Planity Pro app. Daisy\'s app carries both the consumer marketplace and a full business management suite, with AI, POS, inventory and marketing.',
+          'Planity\'s consumer app is rated 4.9 on the App Store in France from 773,000+ ratings and 4.8 on Google Play from 403,000+ reviews, and businesses run their salon from the Planity Pro app. Daisy\'s app carries a full business management suite, with AI, POS, inventory and marketing, and links to the consumer marketplace for businesses that opt in.',
       },
       {
         question: 'Can Planity support a multi-location beauty business?',
@@ -1536,7 +1536,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Planity integrate with other business tools and payment systems?',
         answer:
-          'Planity connects its booking platform to its NF525-certified till, its own card terminal and Tap to Pay, a custom website or a booking module for an existing site, and accounting exports, all built for France, Belgium and Germany. Daisy connects to local GCC payment methods, Google Calendar and marketing tools, and includes a marketplace.',
+          'Planity connects its booking platform to its NF525-certified till, its own card terminal and Tap to Pay, a custom website or a booking module for an existing site, and accounting exports, all built for France, Belgium and Germany. Daisy connects to local GCC payment methods, Google Calendar and marketing tools, and offers an optional marketplace.',
       },
     ],
 

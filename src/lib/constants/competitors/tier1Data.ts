@@ -226,20 +226,20 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     daisyAdvantages: [
       'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English, taking bookings and payments',
       'Official Meta Tech Provider with native WhatsApp Business API and Instagram integration, vs email and SMS campaigns with no two-way WhatsApp or Instagram automation',
-      '360° customer acquisition (marketplace + cashback + AI marketing) vs marketplace-only discovery',
+      'Customer acquisition through cashback and AI marketing, plus an optional marketplace in selected countries, vs marketplace-only discovery',
       'Arabic and English as equals across the whole product, with an AI receptionist that works in both',
-      'A booking page that carries your logo, name and colours, with no platform branding',
-      'Predictable flat pricing vs subscription fees plus transaction fees and commissions',
+      'A booking page with your logo, name and colours that your own domain can redirect to',
+      'Nothing added per transaction, vs online payments at 4.90% + AED 0.75 per transaction in the UAE',
       'AI that recommends the next action, on top of dashboards and reports',
       'GCC-built, with cashback acquisition and local payment integration in every plan',
     ],
 
     daisySwitchingReasons: [
-      'Would rather not pay a marketplace commission on each new client it introduces - a one-time 50% in the UAE, 20% in Fresha\'s USD markets',
+      'Want 50 AI receptionist conversations in the plan, rather than an AI add-on priced per location',
       'Want Arabic and English as equals across staff tools, client messages and booking pages, with an AI receptionist that works in both',
       'Want an AI receptionist on WhatsApp and Instagram, in Arabic and English',
       'Want marketing included in the plan price rather than billed per message',
-      'Want a booking page carrying your logo, name and colours and no platform branding',
+      'Want a booking page carrying your logo, name and colours, with your own domain redirecting to it',
       // Was 'Need local payment methods and VAT compliance for GCC'. Framed as
       // a reason to leave Fresha, it implied a compliance gap on their side -
       // the precise claim BSA's letter raises at 3.1, and the one thing it
@@ -291,12 +291,12 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Is Fresha really free to use?',
         answer:
-          'No. The free plan is gone. Fresha now charges a monthly subscription, AED 149.95 in the UAE for the Independent plan, plus online payments at 4.90% + AED 0.75 per transaction, a one-time 50% commission on new marketplace clients, and per-message charges for marketing beyond the first 50 emails a month. Daisy charges one all-inclusive price, with no marketplace commission and no per-message charge.',
+          'No. The free plan is gone. Fresha now charges a monthly subscription, AED 149.95 in the UAE for the Independent plan, plus online payments at 4.90% + AED 0.75 per transaction, a one-time 50% commission on new marketplace clients, and per-message charges for marketing beyond the first 50 emails a month. Daisy publishes its plan prices and charges nothing per marketing message. Its marketplace is optional, and commission applies only to new clients it brings you.',
       },
       {
         question: 'What does Fresha cost on top of the subscription?',
         answer:
-          'Fresha publishes these charges on its own pricing page, so they are not concealed, but they do stack. In the UAE: online payments at 4.90% + AED 0.75 per transaction, a one-time 50% commission on new marketplace clients with an AED 20 minimum, marketing emails free for the first 50 each month and then AED 0.08 each, texts at AED 0.14, and an Insights add-on at AED 319.95 per bookable team member per month. Added together these can exceed the subscription itself. Daisy folds marketing, AI and payment processing into one plan price.',
+          'Fresha publishes these charges on its own pricing page, so they are not concealed, but they do stack. In the UAE: online payments at 4.90% + AED 0.75 per transaction, a one-time 50% commission on new marketplace clients with an AED 20 minimum, marketing emails free for the first 50 each month and then AED 0.08 each, texts at AED 0.14, and an Insights add-on at AED 319.95 per bookable team member per month. Added together these can exceed the subscription itself. Daisy\'s plan price covers marketing and payment processing and includes 50 AI receptionist conversations, with paid top-ups after that.',
       },
       {
         question: 'How hard is it to migrate my data from Fresha?',
@@ -539,17 +539,17 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English; Booksy\'s AI Receptionist (beta) answers phone calls in English and Spanish',
       'Official Meta Tech Provider with native WhatsApp and Instagram messaging',
       'Arabic and English as equals; Booksy\'s business app lists nine languages, and Arabic is not one of them',
-      'Cashback-funded customer acquisition alongside the marketplace',
-      'A booking page that carries your logo, name and colours; Booksy hosts booking sites on its own domain, with a widget for your website',
+      'Cashback-funded customer acquisition, with an optional marketplace in selected countries',
+      'A booking page with your logo, name and colours that your own domain can redirect to',
       'Built for the GCC; Booksy\'s help centre lists no GCC country',
-      'Plan pricing with no fee for each extra user; Booksy adds $20 a month per additional team member',
+      'Plans that include 5, 10 or 15 team members, then $10 a month per extra calendar; Booksy adds $20 a month per additional team member',
       'AI-powered marketing automation',
     ],
 
     daisySwitchingReasons: [
       'Need Arabic for clients in the GCC',
       'Want an AI receptionist on WhatsApp and Instagram as well as your booking site',
-      'Paying $20 a month for each extra team member as the team grows',
+      'Want a plan that covers a team of 5, 10 or 15, where Booksy adds $20 a month for each extra team member',
       'Want cashback rewards to bring clients back',
       'Want a booking page carrying your own brand',
       'Need local payment methods in the GCC',
@@ -568,7 +568,6 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'No Arabic interface and no GCC country on its published list, as of October 2026',
       'The AI Receptionist is in beta, and Booksy\'s published pages do not list WhatsApp or Instagram as channels',
       'Each additional team member adds $20 a month',
-      'Booking sites are hosted on the Booksy domain',
       'Optional Boost charges a one-time 30% of a new client\'s first visit, up to $100',
       'Loyalty runs on digital stamp cards; cashback rewards are not listed on Booksy\'s published pages',
     ],
@@ -597,7 +596,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How much does Booksy cost per month?',
         answer:
-          'In the US, Booksy costs $29.99 a month plus tax, and $20 a month for each additional team member. Every feature is included in that price, so a five-person salon pays $109.99 a month before tax. Card payments cost 2.49% + $0.10 on the Booksy Card Reader, 2.49% + $0.20 with Tap to Pay and 2.69% + $0.30 for mobile and keyed-in payments. Boost, the optional marketplace promotion, charges a one-time 30% of a new client\'s first visit, capped at $100. Daisy does not multiply the price by headcount, so the bill stays predictable as you grow.',
+          'In the US, Booksy costs $29.99 a month plus tax, and $20 a month for each additional team member. Every feature is included in that price, so a five-person salon pays $109.99 a month before tax. Card payments cost 2.49% + $0.10 on the Booksy Card Reader, 2.49% + $0.20 with Tap to Pay and 2.69% + $0.30 for mobile and keyed-in payments. Boost, the optional marketplace promotion, charges a one-time 30% of a new client\'s first visit, capped at $100. Daisy\'s Basic plan includes 5 team members, Growth 10 and Business 15, and each extra calendar is $10 a month.',
       },
       {
         question: 'Does Booksy support Arabic or work well in the Gulf region?',
@@ -852,7 +851,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     daisyAdvantages: [
       'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English; Vagaro\'s Vera Receptionist answers listing-page chat and SMS as a $10/month add-on',
       'Official Meta Tech Provider with native WhatsApp and Instagram messaging',
-      'Cashback-funded customer acquisition alongside the marketplace',
+      'Cashback-funded customer acquisition, with an optional marketplace in selected countries',
       'Arabic and English as equals; Vagaro\'s apps list English only',
       'A branded booking page in every plan; Vagaro sells MySite websites and a branded app as add-ons',
       'Cashback rewards for retention; Vagaro\'s loyalty program is points-based',
@@ -862,7 +861,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     daisySwitchingReasons: [
       'Want an AI receptionist on WhatsApp and Instagram, in Arabic and English',
-      'Paying $10 a month for each extra calendar as the team grows',
+      'Want 5, 10 or 15 team members included before any extra-calendar charge',
       'Need Arabic for clients in the GCC',
       'Want cashback rewards that bring clients back',
       'Want a branded booking page included in the plan price',
@@ -913,7 +912,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'What does Vagaro cost on top of the subscription?',
         answer:
-          'Vagaro publishes all of these, so they are not hidden, but they add up. In the US: $10 a month for each additional calendar up to seven, card processing from 2.6% + $0.10 in person with monthly network fees, text marketing from $20 a month for 1,000 credits, Vera Receptionist at $10 a month, Forms at $10, MySite at $20, and a branded app at $100 a month plus a $100 development fee at its current limited-time price. Fill My Books charges 20% on a new customer\'s first booking. Daisy includes AI marketing and team features in the base plan.',
+          'Vagaro publishes all of these, so they are not hidden, but they add up. In the US: $10 a month for each additional calendar up to seven, card processing from 2.6% + $0.10 in person with monthly network fees, text marketing from $20 a month for 1,000 credits, Vera Receptionist at $10 a month, Forms at $10, MySite at $20, and a branded app at $100 a month plus a $100 development fee at its current limited-time price. Fill My Books charges 20% on a new customer\'s first booking. Daisy\'s plans include AI marketing and 5, 10 or 15 team members, with extra calendars at $10 a month.',
       },
       {
         question: 'Does Vagaro work for salons in Dubai or Saudi Arabia?',
@@ -1192,11 +1191,11 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     daisyAdvantages: [
       'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English, vs AI Concierge on SMS and web chat',
-      'Predictable pricing from Day 1 vs Accelerate and Ultimate quoted on request',
+      'Published prices for every plan vs Accelerate and Ultimate quoted on request',
       'Arabic and English interface vs a Business app that lists English, French, German, Italian, Portuguese and Spanish',
       'No contracts or lock-in vs contract terms that depend on the Mindbody plan and billing terms',
       'Built for beauty and wellness vs a platform with many class-based fitness features',
-      'Cashback-driven customer acquisition vs the Mindbody app marketplace, which charges on a new client\'s first purchase',
+      'Cashback-driven customer acquisition, with an optional marketplace in selected countries',
       'Live in all six GCC countries vs Mindbody Payments in the UAE',
     ],
 
@@ -1495,18 +1494,18 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     },
 
     daisyAdvantages: [
-      'Transparent, predictable pricing vs quotes on request',
+      'Published pricing vs quotes on request',
       'Native Arabic UI vs an interface in English, French and French-Canada',
       'No contracts or lock-in',
-      'Cashback and a consumer marketplace for acquisition; a consumer marketplace isn\'t listed on Zenoti\'s published pages',
+      'Cashback and an optional consumer marketplace (selected countries) for acquisition; a consumer marketplace isn\'t listed on Zenoti\'s published pages',
       'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English, vs an AI Receptionist voice agent for calls',
     ],
 
     daisySwitchingReasons: [
       'Want a published price instead of a custom quote',
       'Need an Arabic interface; Zenoti lists English, French and French-Canada',
-      'Want the AI receptionist without adding a separate AI package',
-      'Want a consumer-facing marketplace and cashback for acquisition',
+      'Want an AI receptionist in the plan, with 50 conversations included, without a separate AI package',
+      'Want cashback for acquisition, with the option of a consumer marketplace',
     ],
 
     competitorStrengths: [
@@ -1570,7 +1569,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Zenoti have a consumer marketplace for customer acquisition?',
         answer:
-          'Zenoti lists booking through your own webstore, a branded mobile app, SmartBot chat, Reserve with Google, Facebook and Instagram. A consumer marketplace isn\'t listed on its published pages as of October 2026. Daisy pairs a consumer marketplace with cashback rewards and AI-powered marketing to bring new customers in.',
+          'Zenoti lists booking through your own webstore, a branded mobile app, SmartBot chat, Reserve with Google, Facebook and Instagram. A consumer marketplace isn\'t listed on its published pages as of October 2026. Daisy pairs cashback rewards and AI-powered marketing with an optional consumer marketplace, available in selected countries, to bring new customers in.',
       },
       {
         question: 'What mobile apps does Zenoti have?',
@@ -1581,7 +1580,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     lastResearched: '2026-10-09',
     notes:
-      'The most direct competitor on AI. Quote-only pricing; AI agents need AI Plus; interface in English, French and French-Canada (no Arabic found); Dubai office and Saudi e-invoicing support. Fair contrasts for Daisy: Arabic, published pricing, AI on WhatsApp and Instagram, and a consumer marketplace with cashback.',
+      'The most direct competitor on AI. Quote-only pricing; AI agents need AI Plus; interface in English, French and French-Canada (no Arabic found); Dubai office and Saudi e-invoicing support. Fair contrasts for Daisy: Arabic, published pricing, AI on WhatsApp and Instagram, and cashback with an optional marketplace.',
   },
 };
 

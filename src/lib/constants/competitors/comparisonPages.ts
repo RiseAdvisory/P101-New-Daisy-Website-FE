@@ -94,12 +94,12 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'How does an AI-powered growth platform stack up against the world\'s largest beauty marketplace?',
     tldr: 'Fresha is a marketplace charging subscription fees plus published transaction and marketplace charges that stack. Daisy is a complete growth platform with an AI receptionist, cashback rewards and Arabic support. Pick Fresha for marketplace exposure, Daisy to actively grow the business.',
     verdict:
-      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and a one-time 50% commission on new marketplace clients in the UAE. Its AI Concierge answers calls and messages. Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site, in Arabic and English, and Daisy charges no marketplace commission.',
+      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and a one-time 50% commission on new marketplace clients in the UAE. Its AI Concierge answers calls and messages. Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site, in Arabic and English. Daisy\'s marketplace is optional, and its commission applies only to new clients the marketplace brings you.',
     featureCommentary: {
       onlineBooking:
         'Both do online booking well. Fresha\'s strength is the size of its consumer marketplace, with 25M+ users. Daisy answers that with AI booking that carries the whole flow, payments and customer service included, 24/7 and without anyone stepping in.',
       posAndPayments:
-        'In the UAE, Fresha publishes online payments at 4.90% + AED 0.75 per transaction and a one-time 50% commission on new marketplace clients, minimum AED 20. Those are published rather than hidden, but across a year they add up. Daisy charges a flat rate with nothing added per transaction and no marketplace commission.',
+        'In the UAE, Fresha publishes online payments at 4.90% + AED 0.75 per transaction and a one-time 50% commission on new marketplace clients, minimum AED 20. Those are published rather than hidden, but across a year they add up. Daisy adds nothing per transaction. Its marketplace is optional, and commission applies only to new clients it brings you.',
       clientManagement:
         'Fresha gives you client profiles and history. Daisy layers AI on top, predicting no-shows, flagging VIP clients and suggesting personalized offers from booking patterns.',
       staffManagement:
@@ -111,7 +111,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       reportingAndAnalytics:
         'Fresha has a deep reporting suite, around 60 reports plus live dashboards. Daisy uses AI to recommend actions rather than only draw dashboards, spotting trends, suggesting pricing changes and forecasting demand.',
       marketplaceAndDiscovery:
-        'Fresha\'s biggest strength is the 25M+ consumers browsing its marketplace. Daisy comes at it differently, with 360° customer acquisition where marketplace, cashback rewards and AI marketing work together to bring customers in and keep them.',
+        'Fresha\'s biggest strength is the 25M+ consumers browsing its marketplace. Daisy takes a different route. Cashback rewards and AI marketing bring customers in and keep them coming back, and a business can opt in to Daisy\'s marketplace, which runs in selected countries and lists a business after a service-quality review.',
       aiCapabilities:
         'Both ship AI, on different channels. Fresha\'s AI Concierge answers calls and messages and books appointments; as of October 2026, Fresha\'s published pages do not list WhatsApp or Instagram as Concierge channels. Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site, takes payments and handles customer service, in Arabic and English, 24/7. It does not answer phone calls today.',
     },
@@ -148,18 +148,18 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'A mobile-first booking app against a full AI-powered growth platform, which one actually grows your business?',
     // Booksy facts re-verified 2026-10-09 on biz.booksy.com (pricing, features,
     // AI Receptionist) and help.booksy.com.
-    tldr: 'Booksy is a solid mobile-first booking app. Its subscription includes marketing tools, loyalty cards and inventory, and its AI Receptionist (beta) answers phone calls and books appointments in English and Spanish. Daisy runs its AI receptionist on WhatsApp, Instagram and the booking site in Arabic and English, adds cashback-driven customer acquisition, and has flat pricing that doesn\'t rise with every provider you add.',
+    tldr: 'Booksy is a solid mobile-first booking app. Its subscription includes marketing tools, loyalty cards and inventory, and its AI Receptionist (beta) answers phone calls and books appointments in English and Spanish. Daisy runs its AI receptionist on WhatsApp, Instagram and the booking site in Arabic and English, adds cashback-driven customer acquisition, and its plans include 5, 10 or 15 team members.',
     verdict:
       'Booksy suits independent barbers and beauty pros who want simple mobile booking with marketplace exposure. For a growing team, each additional member adds $20 a month, Booksy lists no GCC market, and its AI Receptionist works on phone calls in English and Spanish. For businesses in Arabic-speaking markets that want AI on WhatsApp and Instagram, Daisy is the better fit.',
     featureCommentary: {
       onlineBooking:
-        'Both offer strong online booking with consumer-facing marketplaces. Booksy has the edge on mobile app design, having been built mobile-first. Daisy matches the booking functionality and adds AI-powered self-service across the full customer journey.',
+        'Both offer strong online booking and a consumer marketplace, though Daisy\'s marketplace is optional and available in selected countries. Booksy has the edge on mobile app design, having been built mobile-first. Daisy matches the booking functionality and adds AI-powered self-service across the full customer journey.',
       posAndPayments:
-        'In the US, Booksy charges 2.49% + $0.10 per transaction on its card reader, 2.49% + $0.20 with Tap to Pay and 2.69% + $0.30 for mobile and keyed-in payments. The subscription is $29.99 a month plus $20 for each additional team member, so a five-person team pays $109.99 a month before tax and processing. Daisy charges flat whatever the team size.',
+        'In the US, Booksy charges 2.49% + $0.10 per transaction on its card reader, 2.49% + $0.20 with Tap to Pay and 2.69% + $0.30 for mobile and keyed-in payments. The subscription is $29.99 a month plus $20 for each additional team member, so a five-person team pays $109.99 a month before tax and processing. Daisy\'s Basic plan includes 5 team members, and each extra calendar is $10 a month.',
       clientManagement:
         'Both platforms handle client profiles and history, and Booksy adds client notes, tags and custom forms. Daisy adds AI client intelligence that spots churn risks by itself and recommends how to hold on to those clients.',
       staffManagement:
-        'Scheduling is comparable, and Booksy includes shifts, commissions and five permission levels. Each new team member adds $20 a month to a Booksy bill. Daisy includes unlimited staff at flat pricing.',
+        'Scheduling is comparable, and Booksy includes shifts, commissions and five permission levels. Each new team member adds $20 a month to a Booksy bill. Daisy\'s plans include 5, 10 or 15 team members, then $10 a month for each extra calendar.',
       marketingAndCrm:
         'Booksy includes message blasts, automated campaigns, promotions, loyalty cards and 2,000 marketing texts a month in every subscription. Daisy provides AI-powered marketing automation with cashback rewards, a proven engine for acquiring and keeping customers.',
       inventoryManagement:
@@ -167,14 +167,14 @@ export const daisyVsPages: DaisyVsPageData[] = [
       reportingAndAnalytics:
         'Booksy publishes 16 revenue and cash-flow reports plus staff performance reports. Daisy adds AI insights that recommend what to do rather than only showing you the data.',
       marketplaceAndDiscovery:
-        'Booksy has a strong consumer marketplace, especially popular with barbershops, and its optional Boost charges a one-time 30% of a new client\'s first visit, capped at $100. Daisy runs marketplace, cashback rewards and AI marketing together.',
+        'Booksy has a strong consumer marketplace, especially popular with barbershops, and its optional Boost charges a one-time 30% of a new client\'s first visit, capped at $100. Daisy pairs cashback rewards and AI marketing with an optional marketplace, available in selected countries.',
       aiCapabilities:
         'Booksy\'s AI Receptionist (beta) answers inbound phone calls and books the appointment, in English or Spanish. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English, alongside smart scheduling, marketing automation and analytics. It does not answer phone calls today.',
     },
     whoShouldChooseDaisy: [
       'You want an AI receptionist on WhatsApp and Instagram, in Arabic and English',
       'You need Arabic',
-      'Your team is growing and per-provider pricing is starting to hurt',
+      'You want your team covered by the plan (5, 10 or 15 team members, depending on the tier)',
       'You want cashback rewards driving customer loyalty',
       'You operate in the GCC',
       'You want white-labeling so the brand stays yours',
@@ -212,11 +212,11 @@ export const daisyVsPages: DaisyVsPageData[] = [
       onlineBooking:
         'Vagaro offers strong booking backed by its consumer marketplace, and says more than 100,000 businesses rely on it. Daisy matches the booking quality and adds AI-powered self-service that can run the entire booking flow, upsells and payments included, without anyone stepping in.',
       posAndPayments:
-        'Vagaro has a strong POS with its own hardware. In the US, small merchants pay 2.6% + $0.10 per in-person transaction and 3.5% + $0.19 keyed in, plus monthly network fees, and each additional calendar is $10 a month up to seven paid licences. Daisy drops the per-staff surcharge with flat pricing and offers comparable payment processing.',
+        'Vagaro has a strong POS with its own hardware. In the US, small merchants pay 2.6% + $0.10 per in-person transaction and 3.5% + $0.19 keyed in, plus monthly network fees, and each additional calendar is $10 a month up to seven paid licences. Daisy\'s plans include 5, 10 or 15 team members before any extra-calendar charge, and it offers comparable payment processing.',
       clientManagement:
         'Vagaro provides solid client profiles and a points-based loyalty program. Daisy builds on that with AI that predicts behavior and sends personalized outreach automatically.',
       staffManagement:
-        'Both handle staff scheduling well. Vagaro charges $10 a month per additional calendar for up to seven paid licences, after which new employees are added at no charge. Daisy includes every member of staff in its flat pricing.',
+        'Both handle staff scheduling well. Vagaro charges $10 a month per additional calendar for up to seven paid licences, after which new employees are added at no charge. Daisy\'s plans include 5, 10 or 15 team members, and each extra calendar is $10 a month.',
       marketingAndCrm:
         'Vagaro includes 1,000 marketing emails a month, sells text marketing from $20 a month, and its AI assistant Vera can write campaign copy. Daisy treats AI-powered marketing automation with cashback rewards as a core feature rather than an extra.',
       inventoryManagement:
@@ -224,15 +224,15 @@ export const daisyVsPages: DaisyVsPageData[] = [
       reportingAndAnalytics:
         'Both offer solid reporting, and both use AI on it. Vagaro lets you ask Vera questions about your reports. Daisy\'s AI recommends specific actions from your data.',
       marketplaceAndDiscovery:
-        'Vagaro has a consumer marketplace with free listings in the US, and its Vera Fill My Books feature promotes your openings there for a 20% fee on a new customer\'s first booking. Daisy combines marketplace, cashback and AI marketing into one acquisition strategy.',
+        'Vagaro has a consumer marketplace with free listings in the US, and its Vera Fill My Books feature promotes your openings there for a 20% fee on a new customer\'s first booking. Daisy combines cashback and AI marketing with an optional marketplace, available in selected countries.',
       aiCapabilities:
         'Vagaro sells Vera Receptionist, an AI chatbot that answers messages from your Vagaro listing page and, with a Text Marketing plan, SMS. In chat it can book, reschedule and cancel appointments; over SMS it sends a booking link. It costs $10 a month in the US. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English and takes payments. As of October 2026, Vagaro\'s published pages do not list phone calls for Vera, and Daisy does not answer phone calls today.',
     },
     whoShouldChooseDaisy: [
       'You want an AI receptionist on WhatsApp and Instagram, in Arabic and English',
       'Your GCC clients need Arabic support',
-      'You want cashback-driven acquisition alongside the marketplace',
-      'You want flat pricing with no per-staff add-ons',
+      'You want cashback-driven acquisition, with the option to join a marketplace',
+      'You want 5, 10 or 15 team members included in your plan',
       'You want cashback rewards driving loyalty and repeat bookings',
       'You operate in the GCC',
     ],
@@ -261,18 +261,18 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'A design-led US booking platform against an AI growth platform built for the GCC. Which one fits your business?',
     // GlossGenius facts below: glossgenius.com/pricing, genius.ai/reception and
     // glossgenius.com/legal/privacy, read 2026-10-09.
-    tldr: 'GlossGenius is a design-led US platform from $28/mo ($24/mo billed annually), with AI agents that answer calls and texts, analyse sales and write marketing. Daisy is built for GCC businesses, with an AI receptionist on WhatsApp, Instagram and the booking site in Arabic and English, plus a marketplace with cashback. GlossGenius is available only in the US; Daisy is live in all six GCC countries.',
+    tldr: 'GlossGenius is a design-led US platform from $28/mo ($24/mo billed annually), with AI agents that answer calls and texts, analyse sales and write marketing. Daisy is built for GCC businesses, with an AI receptionist on WhatsApp, Instagram and the booking site in Arabic and English, plus cashback and an optional marketplace. GlossGenius is available only in the US; Daisy is live in all six GCC countries.',
     verdict:
       'For businesses in the US, GlossGenius is a strong choice on design and simplicity, and its Reception agent answers calls and texts. It is available only in the US, has no Arabic interface, and does not list WhatsApp or Instagram as Reception channels. If your clients are in the GCC, message you on WhatsApp or Instagram, or expect Arabic, Daisy is the better fit.',
     featureCommentary: {
       onlineBooking:
         'Both offer strong booking experiences. GlossGenius is known for its booking websites, and the design genuinely sets it apart. Its Reception add-on also books by phone call and text. Daisy\'s AI carries the booking conversation on WhatsApp, Instagram and the booking site.',
       posAndPayments:
-        'GlossGenius publishes a flat 2.6% card rate on every plan, with no extra fee for Tap to Pay, card-on-file or manual entry, and charges 1.8% for instant payouts. Daisy charges flat, with transparent payment processing.',
+        'GlossGenius publishes a flat 2.6% card rate on every plan, with no extra fee for Tap to Pay, card-on-file or manual entry, and charges 1.8% for instant payouts. Daisy publishes its plan prices, with transparent payment processing.',
       clientManagement:
         'GlossGenius offers client profiles, notes, history and client insights. Daisy uses AI to help you read your clients and hold on to them before they drift.',
       staffManagement:
-        'GlossGenius adds staff management on Gold ($56/mo, or $48 billed annually) for teams of up to 9, and Platinum is built for teams of 10 or more, with custom commissions. The Standard plan has no staff management. Daisy puts full staff management in the base platform: scheduling, permissions and performance tracking.',
+        'GlossGenius adds staff management on Gold ($56/mo, or $48 billed annually) for teams of up to 9, and Platinum is built for teams of 10 or more, with custom commissions. The Standard plan has no staff management. Daisy includes staff management on every plan, with scheduling, permissions and performance tracking. Plans include 5, 10 or 15 team members.',
       marketingAndCrm:
         'GlossGenius includes email and text marketing on every plan, and its AI Marketing Assistant on Gold and Platinum, with a limited trial on Standard. Daisy provides AI-powered marketing automation with cashback rewards that work at acquiring and keeping customers.',
       inventoryManagement:
@@ -280,7 +280,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       reportingAndAnalytics:
         'GlossGenius has standard reports on every plan. Its AI Growth Analyst is a limited trial on Standard, 20 queries a month on Gold and unlimited on Platinum. Daisy includes AI-powered analytics in the base platform.',
       marketplaceAndDiscovery:
-        'GlossGenius does not list a consumer marketplace of its own. It offers a booking website on every plan and Reserve with Google on Gold and Platinum. Daisy actively acquires customers through the marketplace, cashback rewards and AI-powered marketing.',
+        'GlossGenius does not list a consumer marketplace of its own. It offers a booking website on every plan and Reserve with Google on Gold and Platinum. Daisy brings in customers through cashback rewards and AI-powered marketing, plus an optional marketplace in selected countries.',
       aiCapabilities:
         'GlossGenius sells three AI agents. Reception answers calls and texts 24/7 and books onto the calendar (free until 30 November 2026, then $50/mo). Growth Analyst answers questions about the business, and the Marketing Assistant writes campaigns. The difference is channels and language: Daisy\'s receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English, and the base platform includes receptionist, chatbot, scheduling, marketing and analytics.',
     },
@@ -288,8 +288,8 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'You have a team, or expect to, and want staff management included',
       'You want an AI receptionist on WhatsApp and Instagram, in Arabic and English',
       'You need Arabic, or you operate in the GCC',
-      'You want a marketplace and cashback bringing customers in',
-      'You would rather have the AI receptionist in your plan than pay for it as an add-on',
+      'You want cashback to bring customers in, with the option of joining a marketplace',
+      'You would rather start with 50 AI receptionist conversations in your plan than pay for an add-on',
     ],
     whoShouldChooseCompetitor: [
       'You run a beauty or wellness business in the US',
@@ -319,13 +319,13 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketingAndCrm: 'Mindbody\'s automated email and text campaigns come with the Ultimate plan; lower plans get reminders and confirmations. Daisy treats AI automation with cashback rewards as a core feature.',
       inventoryManagement: 'Inventory tracking is comparable on both platforms.',
       reportingAndAnalytics: 'Both have AI-assisted reporting: Mindbody\'s AI Insights is on every plan, and Daisy adds AI recommendations.',
-      marketplaceAndDiscovery: 'The Mindbody app, with 3M+ active users, is Mindbody\'s strongest asset. Daisy answers with 360° acquisition, combining marketplace, cashback and AI marketing.',
+      marketplaceAndDiscovery: 'The Mindbody app, with 3M+ active users, is Mindbody\'s strongest asset. Daisy answers with cashback and AI marketing, plus an optional marketplace in selected countries.',
       aiCapabilities: 'Mindbody\'s AI Concierge answers questions and books, reschedules and cancels by SMS and web chat, 24/7, on the Ultimate plan or as an Accelerate add-on. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English, alongside smart scheduling and marketing automation.',
     },
     whoShouldChooseDaisy: [
       'You want an AI receptionist on WhatsApp and Instagram, in Arabic and English',
       'You need Arabic for the GCC market',
-      'You want transparent pricing with no marketplace commissions',
+      'You want published prices on every plan',
       'You want customer acquisition driven by cashback',
       'You run a salon or spa rather than a class-based studio',
     ],
@@ -345,7 +345,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     keywords: ['daisy vs toast', 'toast beauty alternative', 'toast salon software', 'beauty pos comparison'],
     heroTitle: 'Daisy vs Toast',
     heroSubtitle: 'Purpose-built beauty AI platform versus restaurant POS technology adapting to services.',
-    tldr: 'Toast is a restaurant technology company moving into services on the back of its POS infrastructure. Daisy is purpose-built for beauty and wellness, with AI, a marketplace and Arabic support. Toast has great POS hardware, Daisy has intelligence built for this industry.',
+    tldr: 'Toast is a restaurant technology company moving into services on the back of its POS infrastructure. Daisy is purpose-built for beauty and wellness, with AI, an optional marketplace and Arabic support. Toast has great POS hardware, Daisy has intelligence built for this industry.',
     verdict: 'Toast is strongest on POS hardware and payment infrastructure. It remains a restaurant company adapting to beauty, though, with no AI receptionist, no beauty-specific workflows, no marketplace and no GCC support. For a growth platform built for beauty, choose Daisy.',
     featureCommentary: {
       onlineBooking: 'Daisy offers beauty booking built for the job, with AI. Toast has basic scheduling adapted from its restaurant model.',
@@ -355,13 +355,13 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketingAndCrm: 'Daisy provides AI-powered marketing with cashback. Toast carries over basic email marketing from its restaurant stack.',
       inventoryManagement: 'Toast has strong inventory, inherited from restaurant operations. Daisy covers what a beauty business needs to track.',
       reportingAndAnalytics: 'Both offer reporting. Daisy adds AI insights and recommendations shaped around beauty.',
-      marketplaceAndDiscovery: 'Daisy has a consumer beauty marketplace. Toast has none.',
+      marketplaceAndDiscovery: 'Daisy has an optional consumer beauty marketplace, available in selected countries. Toast has none.',
       aiCapabilities: 'Daisy provides the full set: AI receptionist, chatbot, smart scheduling and marketing. Toast has basic automation only.',
     },
     whoShouldChooseDaisy: [
       'You run a beauty or wellness business rather than a restaurant',
       'You want an AI receptionist and chatbot',
-      'You need a consumer beauty marketplace',
+      'You want the option of a consumer beauty marketplace',
       'You want Arabic support and GCC compliance',
       'You want workflows built for beauty rather than adapted to it',
     ],
@@ -384,24 +384,24 @@ export const daisyVsPages: DaisyVsPageData[] = [
     heroSubtitle: 'Two premium platforms. Boulevard sells its Beau phone receptionist as an add-on, while Daisy\'s AI receptionist on WhatsApp, Instagram and the booking site comes in the plan.',
     // Boulevard facts below: joinblvd.com/pricing, /features/ai-receptionist and
     // /features/boulevard-ai, read 2026-10-09.
-    tldr: 'Boulevard is design-led and includes Precision Scheduling on every plan, from $159/mo ($143/mo billed annually). Beau, its voice AI receptionist, costs $125/mo per location. Daisy includes its AI receptionist on WhatsApp, Instagram and the booking site, along with Arabic support, a marketplace and cashback.',
+    tldr: 'Boulevard is design-led and includes Precision Scheduling on every plan, from $159/mo ($143/mo billed annually). Beau, its voice AI receptionist, costs $125/mo per location. Daisy includes its AI receptionist on WhatsApp, Instagram and the booking site, along with Arabic support, cashback and an optional marketplace.',
     verdict: 'Boulevard is excellent for premium US salons that put design first and want an AI receptionist on the phone. Daisy suits businesses whose clients message on WhatsApp and Instagram, who need Arabic, or who operate in the GCC, where Boulevard lists no presence.',
     featureCommentary: {
       onlineBooking: 'Both offer excellent booking. Boulevard includes Precision Scheduling on every plan, which steers bookings to the times that suit the business, and its self-booking syncs with Google, Instagram and Facebook.',
-      posAndPayments: 'Boulevard has a strong POS built around its Duo card reader, and lists card processing from 2.65%. Daisy offers a comparable one at flat pricing, with nothing withheld by tier.',
+      posAndPayments: 'Boulevard has a strong POS built around its Duo card reader, and lists card processing from 2.65%. Daisy offers a comparable POS on every plan.',
       clientManagement: 'Both are good at client management, and Boulevard\'s client experience features suit luxury salons particularly well.',
       staffManagement: 'Both handle staff well. Boulevard\'s Essentials plan covers one location and up to 5 providers, and Premier and Prestige add unlimited professionals and multi-location tools, priced per location.',
       marketingAndCrm: 'Boulevard includes email and text marketing, offer codes, referral and loyalty programs on every plan, and charges $2 per completed appointment for automated campaigns. Daisy includes AI marketing and cashback at base pricing.',
       inventoryManagement: 'Inventory tracking is good on both.',
       reportingAndAnalytics: 'Both provide strong reporting, and Boulevard includes standard and advanced reports on every plan.',
-      marketplaceAndDiscovery: 'Boulevard does not list a consumer marketplace of its own. Daisy acquires through marketplace and cashback together.',
+      marketplaceAndDiscovery: 'Boulevard does not list a consumer marketplace of its own. Daisy brings in clients through cashback, with an optional marketplace in selected countries.',
       aiCapabilities: 'Every Boulevard plan includes Precision Scheduling and AI help with marketing emails. Beau, a voice receptionist that answers calls 24/7, costs $125/mo per location for 200 minutes. Daisy includes receptionist, chatbot, scheduling and marketing at base pricing, with the receptionist on WhatsApp, Instagram and the booking site rather than phone calls.',
     },
     whoShouldChooseDaisy: [
       'You want an AI receptionist and chatbot at base pricing',
       'You need Arabic support for GCC markets',
-      'You want a consumer marketplace bringing customers in',
-      'You would rather pay flat than move up Boulevard\'s per-location tiers',
+      'You want the option of a consumer marketplace bringing customers in',
+      'You want a lower entry price than Boulevard\'s $159/mo',
       'You want cashback rewards holding on to customers',
     ],
     whoShouldChooseCompetitor: [
@@ -432,7 +432,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketingAndCrm: 'Glamera lists marketing tools, SMS and WhatsApp integration, and loyalty programs. Daisy provides AI-powered marketing with cashback rewards.',
       inventoryManagement: 'Glamera includes inventory management from its Basic plan at SAR 225 a month. Daisy covers the basics.',
       reportingAndAnalytics: 'Glamera has essential reports on Foundation, advanced reports on Basic and professional reports on Advanced, plus BI dashboards. Daisy adds AI insights you can act on.',
-      marketplaceAndDiscovery: 'Glamera\'s current pages centre on business tools and your own booking website rather than a consumer marketplace. Daisy runs marketplace, cashback and AI marketing across 6 GCC countries.',
+      marketplaceAndDiscovery: 'Glamera\'s current pages centre on business tools and your own booking website rather than a consumer marketplace. Daisy offers cashback and AI marketing, and an optional marketplace in selected countries.',
       aiCapabilities: 'Glamera\'s published pages do not list AI features as of October 2026; in January 2026 it said it plans to roll out AI for the sector. Daisy provides a full AI ecosystem: receptionist, chatbot, scheduling, marketing and analytics.',
     },
     whoShouldChooseDaisy: [
@@ -458,7 +458,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     keywords: ['daisy vs dingg', 'dingg alternative', 'ai salon software', 'gcc salon management'],
     heroTitle: 'Daisy vs DINGG',
     heroSubtitle: 'Both publish AI that books appointments on WhatsApp. They differ on channels, language, pricing and GCC coverage.',
-    tldr: 'DINGG is an India-based salon platform whose AI assistant answers clients and takes bookings on WhatsApp. It runs country sites for five GCC states and gives prices on request. Daisy\'s AI receptionist also covers Instagram, in Arabic and English, and Daisy adds cashback rewards, a consumer marketplace and published prices. Daisy is live in all six GCC countries.',
+    tldr: 'DINGG is an India-based salon platform whose AI assistant answers clients and takes bookings on WhatsApp. It runs country sites for five GCC states and gives prices on request. Daisy\'s AI receptionist also covers Instagram, in Arabic and English, and Daisy adds cashback rewards, an optional consumer marketplace and published prices. Daisy is live in all six GCC countries.',
     verdict: 'DINGG is a credible AI competitor with a broad feature set and local billing in five GCC states. Daisy is the better fit if you need Bahrain, an Arabic interface, an AI receptionist on Instagram, cashback rewards, or prices you can see before a demo.',
     featureCommentary: {
       onlineBooking: 'Both offer 24/7 online booking. DINGG books through your website and its WhatsApp AI assistant; Daisy\'s AI books on WhatsApp, Instagram and the booking site.',
@@ -468,7 +468,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketingAndCrm: 'DINGG lists email, SMS and WhatsApp campaigns, segmentation and AI-driven WhatsApp marketing. Daisy includes AI marketing with cashback rewards.',
       inventoryManagement: 'DINGG lists stock alerts, supplier ordering and stock across sites. Daisy covers the basics.',
       reportingAndAnalytics: 'DINGG lists AI insights and predictive analytics. Daisy adds AI recommendations and forecasting.',
-      marketplaceAndDiscovery: 'DINGG does not list a consumer marketplace. Daisy acquires customers through marketplace and cashback together.',
+      marketplaceAndDiscovery: 'DINGG does not list a consumer marketplace. Daisy acquires customers through cashback, and through an optional marketplace in selected countries.',
       aiCapabilities: 'Both publish AI that takes bookings. DINGG\'s assistant works on WhatsApp, SMS and your website, alongside AI scheduling, segmentation and analytics. Daisy\'s AI receptionist covers WhatsApp, Instagram and the booking site, takes payment inside the booking flow, and runs in Arabic and English.',
     },
     whoShouldChooseDaisy: [
@@ -505,7 +505,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketingAndCrm: 'This is where RepeatMD is strongest, with mobile rewards, memberships, Beauty Bank pre-saved balances, text marketing and its Adonis and Aria AI advisors. Daisy offers AI marketing with cashback, and the rest of the platform besides.',
       inventoryManagement: 'RepeatMD does not list inventory management; its SkinDrop store sells products without the practice holding stock. Daisy covers the basics.',
       reportingAndAnalytics: 'RepeatMD has sales and membership dashboards. Daisy looks at the wider business too.',
-      marketplaceAndDiscovery: 'RepeatMD focuses on keeping a practice\'s own patients coming back through its branded app. Daisy adds marketplace discovery and cashback.',
+      marketplaceAndDiscovery: 'RepeatMD focuses on keeping a practice\'s own patients coming back through its branded app. Daisy adds cashback, plus optional marketplace discovery in selected countries.',
       aiCapabilities: 'Both publish AI that books. RepeatMD\'s Adonis and Aria work inside the patient app and also recommend and sell treatments. Daisy\'s AI receptionist answers on WhatsApp, Instagram and the booking site, in Arabic and English, and covers the full customer journey.',
     },
     whoShouldChooseDaisy: [
@@ -542,7 +542,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketingAndCrm: 'Planity offers a custom loyalty program, SMS campaigns at €0.07 excl. VAT per message and a custom website. Daisy provides AI-powered marketing with cashback.',
       inventoryManagement: 'Both track product stock, and Planity sets low-stock alerts.',
       reportingAndAnalytics: 'Both offer reporting. Daisy adds AI insights.',
-      marketplaceAndDiscovery: 'Planity runs France\'s leading beauty booking marketplace, with 15 million users. Daisy runs one for the GCC, with cashback attached.',
+      marketplaceAndDiscovery: 'Planity runs France\'s leading beauty booking marketplace, with 15 million users. Daisy\'s marketplace is optional and available in selected countries, with cashback attached.',
       aiCapabilities: 'Planity launched an AI phone assistant in July 2026 that answers calls and books appointments. Daisy\'s AI receptionist covers WhatsApp, Instagram and the booking site in Arabic and English, alongside AI marketing and insights.',
     },
     whoShouldChooseDaisy: [
@@ -566,8 +566,8 @@ export const daisyVsPages: DaisyVsPageData[] = [
     metaDescription: 'Compare Daisy and Mangomint. AI-powered growth platform versus premium operations-focused salon software ($120 per location plus $10 per user).',
     keywords: ['daisy vs mangomint', 'mangomint alternative', 'premium salon software'],
     heroTitle: 'Daisy vs Mangomint',
-    heroSubtitle: 'Mangomint runs clean operations. Daisy adds AI and a cashback marketplace to grow the business.',
-    tldr: 'Mangomint has a clean design and a Capterra rating of 5.0, and charges $120 per location plus $10 per user each month. It serves the US and Canada, and its published pages list no consumer marketplace or AI features. Daisy adds an AI receptionist, a marketplace with cashback and Arabic support at a more accessible price.',
+    heroSubtitle: 'Mangomint runs clean operations. Daisy adds AI, cashback and an optional marketplace to grow the business.',
+    tldr: 'Mangomint has a clean design and a Capterra rating of 5.0, and charges $120 per location plus $10 per user each month. It serves the US and Canada, and its published pages list no consumer marketplace or AI features. Daisy adds an AI receptionist, cashback, an optional marketplace and Arabic support at a more accessible price.',
     verdict: 'For a salon or spa in the US or Canada that wants clean operations above all, Mangomint is a strong choice. For a business that wants AI and growth tools as well as operations, Daisy is the better fit.',
     featureCommentary: {
       onlineBooking: 'Both offer excellent booking, and Mangomint earns its praise for clean, intuitive design.',
@@ -577,10 +577,10 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketingAndCrm: 'Mangomint offers campaigns, automated flows and offers through its marketing add-on, from $30 a month. Daisy includes AI-powered marketing with cashback.',
       inventoryManagement: 'Both cover the inventory basics.',
       reportingAndAnalytics: 'Both offer solid reporting, with Daisy adding AI recommendations.',
-      marketplaceAndDiscovery: 'Mangomint\'s published pages list no consumer marketplace. Daisy provides one, with cashback alongside.',
+      marketplaceAndDiscovery: 'Mangomint\'s published pages list no consumer marketplace. Daisy offers an optional one in selected countries, with cashback alongside.',
       aiCapabilities: 'Mangomint publishes workflow automation but lists no AI features as of October 2026. Daisy has an AI receptionist on WhatsApp, Instagram and the booking site.',
     },
-    whoShouldChooseDaisy: ['You want an AI receptionist', 'You need Arabic and GCC support', 'You want a marketplace and cashback that bring in new customers', 'You want a more accessible price'],
+    whoShouldChooseDaisy: ['You want an AI receptionist', 'You need Arabic and GCC support', 'You want cashback, and the option of a marketplace, to bring in new customers', 'You want a more accessible price'],
     whoShouldChooseCompetitor: ['You run a salon or spa in the US or Canada and want clean, automated operations', 'Clean design matters most', 'You do not need a marketplace or an AI receptionist'],
   },
   {
@@ -601,10 +601,10 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketingAndCrm: 'Square offers email and text marketing and a points-based loyalty program. Daisy includes AI campaigns with cashback.',
       inventoryManagement: 'Square has decent product management, inherited from its retail side.',
       reportingAndAnalytics: 'Square offers standard reports, and Square AI (beta) answers questions about your data. Daisy adds AI insights aimed at beauty.',
-      marketplaceAndDiscovery: 'Square Go is Square\'s free marketplace app for appointment businesses. Daisy\'s marketplace adds cashback for clients.',
+      marketplaceAndDiscovery: 'Square Go is Square\'s free marketplace app for appointment businesses. Daisy\'s optional marketplace, available in selected countries, adds cashback for clients.',
       aiCapabilities: 'Square AI (beta) is on every Square plan, and Square Assistant answers client texts to confirm, reschedule or cancel. Daisy\'s AI receptionist takes new bookings on WhatsApp, Instagram and the booking site, in Arabic and English.',
     },
-    whoShouldChooseDaisy: ['You want features built for beauty', 'You need an AI receptionist', 'You want a marketplace with cashback rewards for clients', 'You need Arabic/GCC support'],
+    whoShouldChooseDaisy: ['You want features built for beauty', 'You need an AI receptionist', 'You want cashback rewards for clients, with the option of a marketplace', 'You need Arabic/GCC support'],
     whoShouldChooseCompetitor: ['You need free scheduling to begin with', 'You are already in the Square POS ecosystem', 'You need retail-grade POS hardware'],
   },
   {
@@ -615,8 +615,8 @@ export const daisyVsPages: DaisyVsPageData[] = [
     keywords: ['daisy vs phorest', 'phorest alternative', 'salon crm comparison'],
     heroTitle: 'Daisy vs Phorest',
     heroSubtitle: 'Modern AI-powered growth against an established loyalty-focused CRM. Which approach wins?',
-    tldr: 'Phorest has strong client management and loyalty tools, has been around since 2003, and sells Front Desk AI for SMS and WhatsApp. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English, and Daisy adds a consumer marketplace with cashback.',
-    verdict: 'Phorest is very good at holding on to clients, and its AI now answers SMS and WhatsApp. Daisy covers acquisition as well as retention, with a cashback marketplace and an Arabic interface, which suits a business trying to grow rather than only keep what it has.',
+    tldr: 'Phorest has strong client management and loyalty tools, has been around since 2003, and sells Front Desk AI for SMS and WhatsApp. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English, and Daisy adds cashback and an optional consumer marketplace.',
+    verdict: 'Phorest is very good at holding on to clients, and its AI now answers SMS and WhatsApp. Daisy covers acquisition as well as retention, with cashback, an optional marketplace and an Arabic interface, which suits a business trying to grow rather than only keep what it has.',
     featureCommentary: {
       onlineBooking: 'Both offer solid online booking, and both use AI to answer booking requests: Phorest on SMS and WhatsApp, Daisy on WhatsApp, Instagram and the booking site.',
       posAndPayments: 'POS and payments are handled well on both.',
@@ -625,10 +625,10 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketingAndCrm: 'Phorest is strong on loyalty and marketing automation. Daisy adds AI campaigns with cashback.',
       inventoryManagement: 'Both cover the inventory basics.',
       reportingAndAnalytics: 'Reporting is solid on both.',
-      marketplaceAndDiscovery: 'Phorest offers Reserve with Google and an Ads Manager for Facebook and Instagram, and lists no consumer marketplace. Daisy provides a marketplace with cashback attached.',
+      marketplaceAndDiscovery: 'Phorest offers Reserve with Google and an Ads Manager for Facebook and Instagram, and lists no consumer marketplace. Daisy offers an optional marketplace in selected countries, with cashback attached.',
       aiCapabilities: 'Phorest sells Front Desk AI for SMS and WhatsApp, Cheat Sheet AI for client summaries and AI ad audiences. Daisy\'s AI receptionist adds Instagram and the booking site, in Arabic and English.',
     },
-    whoShouldChooseDaisy: ['You want an AI receptionist on Instagram as well as WhatsApp, in Arabic and English', 'You need Arabic and GCC support', 'You want a marketplace bringing clients in', 'You want cashback rewards'],
+    whoShouldChooseDaisy: ['You want an AI receptionist on Instagram as well as WhatsApp, in Arabic and English', 'You need Arabic and GCC support', 'You want the option of a marketplace bringing clients in', 'You want cashback rewards'],
     whoShouldChooseCompetitor: ['You run a salon in one of Phorest\'s markets and want deep CRM and loyalty', 'A branded booking app for your clients matters to you'],
   },
   {
@@ -640,8 +640,8 @@ export const daisyVsPages: DaisyVsPageData[] = [
     keywords: ['daisy vs acuity scheduling', 'acuity alternative for salons', 'salon scheduling comparison'],
     heroTitle: 'Daisy vs Acuity Scheduling',
     heroSubtitle: 'A general scheduling tool from $16/mo billed annually, against a growth platform built for beauty businesses.',
-    tldr: 'Acuity is strong general scheduling software, from $16/mo billed annually, with payments, client profiles and an AI Booking Assistant on its Premium plan. Daisy is built for beauty, with an AI receptionist on WhatsApp, Instagram and the booking site, a consumer marketplace with cashback, and Arabic and English as equals.',
-    verdict: 'For appointment scheduling across many kinds of business, Acuity is a strong choice. For a beauty business that wants an AI receptionist on WhatsApp and Instagram, a marketplace with cashback, and Arabic, Daisy is built for the job.',
+    tldr: 'Acuity is strong general scheduling software, from $16/mo billed annually, with payments, client profiles and an AI Booking Assistant on its Premium plan. Daisy is built for beauty, with an AI receptionist on WhatsApp, Instagram and the booking site, cashback and an optional consumer marketplace, and Arabic and English as equals.',
+    verdict: 'For appointment scheduling across many kinds of business, Acuity is a strong choice. For a beauty business that wants an AI receptionist on WhatsApp and Instagram, cashback with an optional marketplace, and Arabic, Daisy is built for the job.',
     featureCommentary: {
       onlineBooking: 'Scheduling is Acuity\'s core, and it does it very well. Daisy matches that and connects booking to its AI receptionist.',
       posAndPayments: 'Acuity takes deposits online and in-person payments by card reader or Tap to Pay, through Stripe, Square or PayPal. Daisy has a POS built into the same platform.',
@@ -650,10 +650,10 @@ export const daisyVsPages: DaisyVsPageData[] = [
       marketingAndCrm: 'Acuity offers coupons, gift certificates, packages and email marketing integrations. Daisy includes AI campaigns with cashback.',
       inventoryManagement: 'Inventory tracking isn\'t listed on Acuity\'s published pages as of October 2026. Daisy covers what a beauty business stocks.',
       reportingAndAnalytics: 'Acuity reports on appointments, no-shows and performance. Daisy provides AI-powered analytics.',
-      marketplaceAndDiscovery: 'A consumer marketplace isn\'t listed on Acuity\'s published pages as of October 2026. Daisy provides one, with cashback alongside.',
+      marketplaceAndDiscovery: 'A consumer marketplace isn\'t listed on Acuity\'s published pages as of October 2026. Daisy offers an optional one in selected countries, with cashback alongside.',
       aiCapabilities: 'Acuity\'s Premium plan includes an AI Booking Assistant chat bot for clients. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English.',
     },
-    whoShouldChooseDaisy: ['You run a beauty business and want software built for it', 'You want an AI receptionist on WhatsApp and Instagram', 'You want a marketplace and cashback bringing clients in', 'You need Arabic and GCC support'],
+    whoShouldChooseDaisy: ['You run a beauty business and want software built for it', 'You want an AI receptionist on WhatsApp and Instagram', 'You want cashback, and the option of a marketplace, bringing clients in', 'You need Arabic and GCC support'],
     whoShouldChooseCompetitor: ['You need scheduling for a business outside beauty, or across several kinds of service', 'You want a plan from $16/mo billed annually', 'Your website runs on Squarespace'],
   },
 ];
@@ -668,7 +668,7 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'fresha',
     competitorSlug: 'fresha',
     metaTitle: 'Best Fresha Alternative for Salons (2026)',
-    metaDescription: 'Looking for a Fresha alternative? Daisy offers AI receptionist, transparent pricing, Arabic support, and cashback, without per-transaction charges or marketplace commission.',
+    metaDescription: 'Looking for a Fresha alternative? Daisy offers an AI receptionist, published pricing, Arabic support and cashback, with nothing added per transaction.',
     keywords: ['fresha alternative', 'fresha replacement', 'better than fresha', 'salon software like fresha'],
     heroTitle: 'Looking for a Fresha Alternative?',
     heroSubtitle: 'Subscription fees, then transaction fees, then marketplace commissions. The costs keep stacking.',
@@ -682,10 +682,10 @@ export const alternativePages: AlternativePageData[] = [
     ],
     switchingReasons: [
       'An AI receptionist covering bookings, payments and customer service 24/7',
-      'Flat pricing with nothing added per transaction and no marketplace commission',
+      'Nothing added per transaction, and marketplace commission only on new clients the marketplace brings',
       'Arabic and English as equals, with cashback rewards built for GCC clients',
       'Cashback rewards that build loyalty and bring people back',
-      'A booking page carrying your logo, name and colours, with no platform branding',
+      'A booking page with your logo, name and colours that your own domain can redirect to',
       'A straightforward migration, with help moving your data',
     ],
     topAlternatives: ['booksy', 'vagaro', 'glossgenius', 'square-appointments'],
@@ -694,7 +694,7 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'booksy',
     competitorSlug: 'booksy',
     metaTitle: 'Best Booksy Alternative for Beauty Pros (2026)',
-    metaDescription: 'Outgrowing Booksy? Daisy offers full AI ecosystem, flat pricing (no per-provider fees), Arabic support, and cashback-powered customer acquisition.',
+    metaDescription: 'Outgrowing Booksy? Daisy offers a full AI ecosystem, plans with 5, 10 or 15 team members, Arabic support and cashback-powered customer acquisition.',
     keywords: ['booksy alternative', 'booksy replacement', 'better than booksy', 'booking app like booksy'],
     heroTitle: 'Looking for a Booksy Alternative?',
     heroSubtitle: 'A strong mobile app, but each extra team member adds $20 a month and the AI Receptionist works on phone calls.',
@@ -704,11 +704,10 @@ export const alternativePages: AlternativePageData[] = [
       'The AI Receptionist (beta) answers phone calls in English and Spanish; Booksy\'s published pages do not list WhatsApp or Instagram as channels',
       'No Arabic in the business app, and no GCC country on Booksy\'s published list',
       'Loyalty runs on digital stamp cards, and cashback rewards are not listed on Booksy\'s published pages',
-      'Booking sites are hosted on the Booksy domain, with a widget for your own website',
       'Optional Boost charges a one-time 30% of a new client\'s first visit, up to $100',
     ],
     switchingReasons: [
-      'Flat pricing whatever the team size, so growing costs you nothing extra',
+      'Plans that include 5, 10 or 15 team members, then $10 a month for each extra calendar',
       'The full AI ecosystem: receptionist, chatbot, smart scheduling and marketing',
       'Native Arabic and English, which opens the GCC',
       'Cashback rewards that keep customers returning without prompting',
@@ -727,7 +726,7 @@ export const alternativePages: AlternativePageData[] = [
     heroSubtitle: 'Vagaro is strong on operations. Daisy adds Arabic, AI on WhatsApp and Instagram, and cashback.',
     // Vagaro facts re-verified 2026-10-09 in Vagaro's help centre.
     painPoints: [
-      '$10 a month for each additional calendar, up to seven paid licences',
+      'One calendar on the base plan, then $10 a month for each additional calendar, up to seven paid licences',
       'Vera Receptionist is a $10/month add-on that needs a Text Marketing plan, and over SMS it sends a booking link rather than booking',
       'No Arabic interface; Vagaro lists the US, Canada, the UK and Australia as its markets',
       'Fill My Books marketplace promotion charges 20% on a new customer\'s first booking',
@@ -736,7 +735,7 @@ export const alternativePages: AlternativePageData[] = [
     ],
     switchingReasons: [
       'An AI receptionist on WhatsApp, Instagram and your booking site, covering bookings and payments 24/7',
-      'Flat pricing covering every member of staff, with no per-calendar surcharge',
+      'Plans that include 5, 10 or 15 team members before any extra-calendar charge',
       'Cashback rewards that turn a first visit into a regular one',
       'AI-powered marketing that keeps running without you',
       'Arabic and English support, which opens the GCC',
@@ -748,7 +747,7 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'glossgenius',
     competitorSlug: 'glossgenius',
     metaTitle: 'Best GlossGenius Alternative for GCC Salons (2026)',
-    metaDescription: 'GlossGenius is available only in the US. Daisy offers an AI receptionist on WhatsApp and Instagram, Arabic and English, and a cashback marketplace.',
+    metaDescription: 'GlossGenius is available only in the US. Daisy offers an AI receptionist on WhatsApp and Instagram, Arabic and English, cashback and an optional marketplace.',
     keywords: ['glossgenius alternative', 'glossgenius replacement', 'better than glossgenius'],
     heroTitle: 'Looking for a GlossGenius Alternative?',
     heroSubtitle: 'Beautiful design and simple to run, in the US. Here is how Daisy compares if your clients are in the GCC.',
@@ -763,11 +762,11 @@ export const alternativePages: AlternativePageData[] = [
       'Staff management starts on Gold, at $56/mo ($48/mo billed annually)',
     ],
     switchingReasons: [
-      'Team management from day one, so hiring does not mean upgrading',
+      'Team management on every plan, with 5 team members included from the Basic plan',
       'The full AI ecosystem: receptionist, chatbot, scheduling and marketing',
-      'A consumer marketplace with cashback, bringing customers in',
+      'Cashback rewards and an optional marketplace, bringing customers in',
       'Arabic and English support, which opens the GCC',
-      'An AI receptionist on WhatsApp, Instagram and the booking site, included in the plan',
+      'An AI receptionist on WhatsApp, Instagram and the booking site, with 50 conversations included in the plan',
       'Built to carry you from working alone to running a team',
     ],
     topAlternatives: ['fresha', 'booksy', 'boulevard', 'vagaro'],
@@ -792,10 +791,10 @@ export const alternativePages: AlternativePageData[] = [
     switchingReasons: [
       'An AI-powered platform built for salons and spas',
       'An AI receptionist on WhatsApp, Instagram and the booking site, 24/7',
-      'Transparent pricing with no marketplace commissions',
+      'Published prices on every plan',
       'Arabic and English support for GCC markets',
       'Built for beauty and wellness rather than adapted to them',
-      'Cashback rewards in place of a commission-taking marketplace',
+      'Cashback rewards that bring clients back',
     ],
     topAlternatives: ['fresha', 'vagaro', 'boulevard', 'booksy'],
   },
@@ -803,7 +802,7 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'boulevard',
     competitorSlug: 'boulevard',
     metaTitle: 'Best Boulevard Alternative for Salons (2026)',
-    metaDescription: 'Looking beyond Boulevard? Daisy includes an AI receptionist on WhatsApp and Instagram, a cashback marketplace and Arabic support, at a lower entry price.',
+    metaDescription: 'Looking beyond Boulevard? Daisy includes an AI receptionist on WhatsApp and Instagram, cashback, an optional marketplace and Arabic support, at a lower entry price.',
     keywords: ['boulevard alternative', 'boulevard replacement', 'salon software like boulevard'],
     heroTitle: 'Looking for a Boulevard Alternative?',
     heroSubtitle: 'Premium design and Precision Scheduling, from $159/mo ($143/mo billed annually), with no consumer marketplace of its own.',
@@ -817,9 +816,9 @@ export const alternativePages: AlternativePageData[] = [
     ],
     switchingReasons: [
       'An AI receptionist on WhatsApp, Instagram and the booking site, included at base pricing',
-      'A consumer marketplace with cashback, doing the acquiring',
+      'Cashback and an optional marketplace, doing the acquiring',
       'Arabic/English support for GCC expansion',
-      'A more accessible price, with the full AI included',
+      'A lower entry price, with 50 AI receptionist conversations included',
       'White-label control of your brand',
     ],
     topAlternatives: ['mangomint', 'vagaro', 'glossgenius', 'booksy'],
@@ -829,19 +828,19 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'mangomint',
     competitorSlug: 'mangomint',
     metaTitle: 'Best Mangomint Alternative: AI + Growth (2026)',
-    metaDescription: 'Want more than clean operations? Daisy adds an AI receptionist, a marketplace, cashback and Arabic support to salon management.',
+    metaDescription: 'Want more than clean operations? Daisy adds an AI receptionist, cashback, an optional marketplace and Arabic support to salon management.',
     keywords: ['mangomint alternative', 'mangomint replacement'],
     heroTitle: 'Looking for a Mangomint Alternative?',
     heroSubtitle: 'Clean operations software, priced per location and per user, with no marketplace or AI features listed.',
     painPoints: [
-      'Cost climbs with every location and user, at $120 per location plus $10 per user',
+      'Priced at $120 per location plus $10 per user each month',
       'No consumer marketplace listed on Mangomint\'s published pages',
       'Serves the US and Canada, with no Arabic interface or GCC presence listed',
       'Marketing messages need the marketing add-on, from $30 a month',
     ],
     switchingReasons: [
       'An AI receptionist and chatbot included',
-      'A consumer marketplace with cashback',
+      'Cashback and an optional marketplace',
       'Arabic and English support',
       'Growth tools sitting alongside clean operations',
     ],
@@ -851,7 +850,7 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'square-appointments',
     competitorSlug: 'square-appointments',
     metaTitle: 'Best Square Appointments Alternative for Salons (2026)',
-    metaDescription: 'Outgrowing Square Appointments? Daisy offers beauty-specific AI, marketplace, and Arabic support.',
+    metaDescription: 'Outgrowing Square Appointments? Daisy offers beauty-specific AI, cashback, an optional marketplace and Arabic support.',
     keywords: ['square appointments alternative', 'square appointments replacement'],
     heroTitle: 'Looking for a Square Appointments Alternative?',
     heroSubtitle: 'A strong payments system, but a beauty business may want software built only for beauty.',
@@ -864,7 +863,7 @@ export const alternativePages: AlternativePageData[] = [
     switchingReasons: [
       'Built for beauty and wellness from the start',
       'An AI receptionist covering bookings and customer service',
-      'A consumer marketplace, with cashback attached',
+      'Cashback, with an optional marketplace in selected countries',
       'Arabic and English support for GCC markets',
     ],
     topAlternatives: ['fresha', 'vagaro', 'booksy', 'glossgenius'],
@@ -873,10 +872,10 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'phorest',
     competitorSlug: 'phorest',
     metaTitle: 'Best Phorest Alternative: AI-Powered Growth (2026)',
-    metaDescription: 'Moving beyond Phorest? Daisy adds an AI receptionist on Instagram as well as WhatsApp, a cashback marketplace and Arabic support.',
+    metaDescription: 'Moving beyond Phorest? Daisy adds an AI receptionist on Instagram as well as WhatsApp, cashback, an optional marketplace and Arabic support.',
     keywords: ['phorest alternative', 'phorest replacement'],
     heroTitle: 'Looking for a Phorest Alternative?',
-    heroSubtitle: 'Strong CRM and loyalty, with Front Desk AI on SMS and WhatsApp. Daisy adds Instagram, Arabic and a cashback marketplace.',
+    heroSubtitle: 'Strong CRM and loyalty, with Front Desk AI on SMS and WhatsApp. Daisy adds Instagram, Arabic, cashback and an optional marketplace.',
     painPoints: [
       'No Arabic interface listed, and the UAE is the only GCC country with a Phorest site',
       'Front Desk AI is an add-on and lists SMS and WhatsApp, not Instagram',
@@ -885,7 +884,7 @@ export const alternativePages: AlternativePageData[] = [
     ],
     switchingReasons: [
       'The full AI ecosystem behind your salon management',
-      'A consumer marketplace, with cashback attached',
+      'Cashback, with an optional marketplace in selected countries',
       'Arabic and English support for the GCC',
       'AI-powered marketing with cashback',
     ],
@@ -895,7 +894,7 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'acuity-scheduling',
     competitorSlug: 'acuity-scheduling',
     metaTitle: 'Best Acuity Scheduling Alternative for Salons (2026)',
-    metaDescription: 'Looking past Acuity? Daisy is built for beauty businesses, with an AI receptionist on WhatsApp and Instagram, a marketplace with cashback, and Arabic support.',
+    metaDescription: 'Looking past Acuity? Daisy is built for beauty businesses, with an AI receptionist on WhatsApp and Instagram, cashback, an optional marketplace and Arabic support.',
     keywords: ['acuity scheduling alternative', 'acuity alternative for beauty'],
     heroTitle: 'Looking for an Acuity Scheduling Alternative?',
     heroSubtitle: 'Great at appointments. A beauty business may also want a marketplace, cashback and Arabic.',
@@ -908,7 +907,7 @@ export const alternativePages: AlternativePageData[] = [
     switchingReasons: [
       'A beauty platform with booking, POS, CRM and AI in one place',
       'An AI receptionist on WhatsApp, Instagram and the booking site',
-      'A consumer marketplace with cashback rewards',
+      'Cashback rewards and an optional marketplace',
       'Arabic and English support for GCC markets',
     ],
     topAlternatives: ['vagaro', 'fresha', 'glossgenius'],
@@ -916,11 +915,11 @@ export const alternativePages: AlternativePageData[] = [
   {
     slug: 'timely',
     competitorSlug: 'timely',
-    metaTitle: 'Best Timely Alternative: Flat Pricing and an AI Receptionist (2026)',
-    metaDescription: 'Tired of per-staff pricing? Daisy offers flat pricing, AI receptionist, and Arabic support.',
+    metaTitle: 'Best Timely Alternative with an AI Receptionist (2026)',
+    metaDescription: 'Comparing Timely alternatives? Daisy plans include 5, 10 or 15 team members, an AI receptionist and Arabic support.',
     keywords: ['timely alternative', 'timely replacement', 'timely salon software alternative'],
     heroTitle: 'Looking for a Timely Alternative?',
-    heroSubtitle: 'A clean interface, but per-staff pricing and no AI receptionist hold a growing team back.',
+    heroSubtitle: 'A clean interface, priced per staff member, with no AI receptionist listed.',
     painPoints: [
       'Priced per staff member up to seven staff ($24 to $36 for each extra staff member in the US)',
       'Its AI feature, Textie Bestie, writes SMS; no AI receptionist is listed',
@@ -928,10 +927,10 @@ export const alternativePages: AlternativePageData[] = [
       'No consumer marketplace listed on Timely\'s published pages',
     ],
     switchingReasons: [
-      'Flat pricing whatever the team size',
-      'The full AI ecosystem included',
+      'Plans that include 5, 10 or 15 team members',
+      'An AI receptionist, smart scheduling and AI marketing',
       'Arabic and English for GCC markets',
-      'A consumer marketplace with cashback',
+      'Cashback and an optional marketplace',
     ],
     topAlternatives: ['vagaro', 'fresha', 'booksy'],
   },
@@ -939,7 +938,7 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'zenoti',
     competitorSlug: 'zenoti',
     metaTitle: 'Best Zenoti Alternative for Salons & Spas (2026)',
-    metaDescription: 'Looking for a Zenoti alternative? Daisy offers an AI receptionist on WhatsApp and Instagram, a consumer marketplace with cashback, native Arabic and published pricing.',
+    metaDescription: 'Looking for a Zenoti alternative? Daisy offers an AI receptionist on WhatsApp and Instagram, cashback, an optional marketplace, native Arabic and published pricing.',
     keywords: ['zenoti alternative', 'zenoti replacement', 'zenoti alternative for salons'],
     heroTitle: 'Looking for a Zenoti Alternative?',
     heroSubtitle: 'A broad AI suite, sold by quote, with an interface in English and French but not Arabic.',
@@ -952,8 +951,8 @@ export const alternativePages: AlternativePageData[] = [
     ],
     switchingReasons: [
       'An AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English',
-      'Flat, transparent pricing, with no custom quote to chase',
-      'A consumer marketplace with cashback, bringing customers in',
+      'Published pricing, with no custom quote to chase',
+      'Cashback rewards and an optional marketplace, bringing customers in',
       'A native Arabic and English interface, built for the GCC from day one',
       'A quick setup with migration support',
       'White-label control of your brand included',
@@ -965,7 +964,7 @@ export const alternativePages: AlternativePageData[] = [
     competitorSlug: 'setmore',
     metaTitle: 'Best Setmore Alternative for Beauty Businesses (2026)',
     // Setmore facts: setmore.com/pricing and /features/live-receptionist, read 2026-10-09.
-    metaDescription: 'Outgrowing free scheduling? Daisy is built for beauty businesses, with an AI receptionist on WhatsApp and Instagram, a marketplace with cashback, and Arabic support.',
+    metaDescription: 'Outgrowing free scheduling? Daisy is built for beauty businesses, with an AI receptionist on WhatsApp and Instagram, cashback, an optional marketplace and Arabic support.',
     keywords: ['setmore alternative', 'setmore replacement', 'setmore alternative for salons'],
     heroTitle: 'Looking for a Setmore Alternative?',
     heroSubtitle: 'Setmore\'s free plan covers a lot. A growing beauty business may also want an AI receptionist, a marketplace and Arabic.',
@@ -979,9 +978,9 @@ export const alternativePages: AlternativePageData[] = [
     switchingReasons: [
       'An AI receptionist covering bookings, payments and customer service 24/7',
       'A complete beauty platform with booking, POS, CRM and AI in one place',
-      'A consumer marketplace with cashback, sending new clients your way',
+      'Cashback and an optional marketplace, sending new clients your way',
       'Arabic and English support built for GCC markets',
-      'Flat pricing that does not punish you for hiring',
+      'Plans that include 5, 10 or 15 team members',
       'White-label control, so the salon identity stays yours',
     ],
     topAlternatives: ['fresha', 'vagaro', 'booksy', 'glossgenius'],
@@ -991,7 +990,7 @@ export const alternativePages: AlternativePageData[] = [
     competitorSlug: 'simplybook-me',
     metaTitle: 'Best SimplyBook.me Alternative for Salons (2026)',
     // SimplyBook.me facts: simplybook.me/en/pricing and /en/ai-voice-booking, read 2026-10-09.
-    metaDescription: 'Comparing SimplyBook.me alternatives? Daisy is built for beauty businesses, with an AI receptionist, a marketplace with cashback, and Arabic, all included.',
+    metaDescription: 'Comparing SimplyBook.me alternatives? Daisy is built for beauty businesses, with an AI receptionist, cashback, an optional marketplace and Arabic.',
     keywords: ['simplybook alternative', 'simplybook.me alternative', 'simplybook replacement'],
     heroTitle: 'Looking for a SimplyBook.me Alternative?',
     heroSubtitle: 'SimplyBook.me offers 70+ custom features, and your plan sets how many premium ones you can switch on.',
@@ -1004,11 +1003,11 @@ export const alternativePages: AlternativePageData[] = [
       'SMS and WhatsApp messages are bought as credits ($8 per 100)',
     ],
     switchingReasons: [
-      'An AI receptionist included, with no add-on fee',
+      'An AI receptionist with 50 conversations included in every plan',
       'Built for beauty and wellness businesses specifically',
-      'A consumer marketplace with cashback that brings clients to you',
+      'Cashback and an optional marketplace that bring clients to you',
       'An Arabic and English interface with right-to-left layout built in',
-      'POS, CRM, AI and marketing all included, with no modules to buy',
+      'POS, CRM, AI and marketing in one platform, without switching features on one by one',
       'White-label control, so the brand looks like yours',
     ],
     topAlternatives: ['fresha', 'vagaro', 'booksy', 'glossgenius'],
@@ -1039,7 +1038,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mangomint': 'Best for operations-focused salons wanting clean UX',
       'square-appointments': 'Best for businesses already using Square for payments',
     },
-    daisyEdge: 'Several of these alternatives now sell AI receptionists, Booksy among them; none pairs that with a cashback-powered acquisition marketplace or Arabic and English as equals. Daisy combines all three with white-label branding and flat pricing, which makes it a growth tool rather than an operations one.',
+    daisyEdge: 'Several of these alternatives now sell AI receptionists, Booksy among them; none pairs that with a cashback-powered acquisition marketplace or Arabic and English as equals. Daisy combines all three with a branded booking page and published plan prices, and its marketplace is optional and available in selected countries. That makes it a growth tool rather than an operations one.',
   },
   {
     slug: 'best-booksy-alternatives',
@@ -1079,7 +1078,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'mindbody': 'Best for fitness and wellness businesses',
       'mangomint': 'Best for operationally complex salons',
     },
-    daisyEdge: 'Vagaro alternatives manage your business. Fresha brings a marketplace listing and charges per marketing message beyond a free allowance, and Booksy includes 2,000 marketing texts a month. Daisy adds an AI receptionist on WhatsApp, Instagram and your booking site, plus a cashback marketplace, which turns salon software into a growth engine.',
+    daisyEdge: 'Vagaro alternatives manage your business. Fresha brings a marketplace listing and charges per marketing message beyond a free allowance, and Booksy includes 2,000 marketing texts a month. Daisy adds an AI receptionist on WhatsApp, Instagram and your booking site, plus cashback and an optional marketplace, which turns salon software into a growth engine.',
   },
   {
     slug: 'best-glossgenius-alternatives',
@@ -1103,7 +1102,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     },
     // Booksy (biz.booksy.com/features/ai-receptionist-beta) and Boulevard
     // (joinblvd.com/features/ai-receptionist) phone receptionists, read 2026-10-09.
-    daisyEdge: 'Fresha\'s AI Concierge answers calls and messages, and Booksy and Boulevard sell AI receptionists that answer phone calls, as GlossGenius does with Reception. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English, and Daisy pairs it with cashback rewards that bring clients back, at flat pricing and with no per-staff fee.',
+    daisyEdge: 'Fresha\'s AI Concierge answers calls and messages, and Booksy and Boulevard sell AI receptionists that answer phone calls, as GlossGenius does with Reception. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English, and Daisy pairs it with cashback rewards that bring clients back. Its plans include 5, 10 or 15 team members.',
   },
   // P3
   {
@@ -1130,7 +1129,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     slug: 'best-boulevard-alternatives',
     competitorSlug: 'boulevard',
     metaTitle: '5 Best Boulevard Alternatives for Salons and Spas (2026)',
-    metaDescription: 'Compare Boulevard alternatives on price, AI and features, and see where Daisy adds Arabic support and a cashback marketplace.',
+    metaDescription: 'Compare Boulevard alternatives on price, AI and features, and see where Daisy adds Arabic support, cashback and an optional marketplace.',
     keywords: ['best boulevard alternatives', 'boulevard alternatives'],
     heroTitle: '5 Best Boulevard Alternatives in 2026',
     heroSubtitle: 'Boulevard starts at $159/mo ($143/mo billed annually). These alternatives differ on price, AI and reach.',
@@ -1143,7 +1142,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'glossgenius': 'Best for solo professionals wanting premium simplicity',
       'booksy': 'Best for mobile-first beauty professionals',
     },
-    daisyEdge: 'These alternatives all offer salon management, and some sell AI receptionists that answer phone calls, among them GlossGenius (calls and texts) and Booksy. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English, and Daisy adds a cashback rewards marketplace. Daisy matches the quality and includes the growth tools at every tier.',
+    daisyEdge: 'These alternatives all offer salon management, and some sell AI receptionists that answer phone calls, among them GlossGenius (calls and texts) and Booksy. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English, and Daisy adds cashback rewards and an optional marketplace in selected countries. Daisy matches the quality and adds the growth tools.',
   },
   // P4
   {
@@ -1182,7 +1181,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'boulevard': 'Best for premium salon experiences',
       'mangomint': 'Best for operations-focused salon management',
     },
-    daisyEdge: 'The alternatives here are built around salons and spas. Fresha\'s AI Concierge answers calls and messages, and several of the others sell AI receptionists too. Daisy pairs an AI receptionist on WhatsApp, Instagram and the booking site with a cashback marketplace that brings new clients in, in Arabic and English.',
+    daisyEdge: 'The alternatives here are built around salons and spas. Fresha\'s AI Concierge answers calls and messages, and several of the others sell AI receptionists too. Daisy pairs an AI receptionist on WhatsApp, Instagram and the booking site with cashback rewards and an optional marketplace that bring new clients in, in Arabic and English.',
   },
   // P5
   {
@@ -1224,7 +1223,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'setmore': 'Best for budget-friendly basic scheduling',
       'simplybook-me': 'Best for businesses wanting modular customisation',
     },
-    daisyEdge: 'Several of these alternatives are built for beauty businesses, and some list inventory tracking or a client marketplace, which Acuity\'s published pages don\'t. Of these, Fresha\'s AI Concierge answers calls and messages, and several others sell AI receptionists too. None adds a cashback marketplace that brings new clients in. Daisy is the complete upgrade path.',
+    daisyEdge: 'Several of these alternatives are built for beauty businesses, and some list inventory tracking or a client marketplace, which Acuity\'s published pages don\'t. Of these, Fresha\'s AI Concierge answers calls and messages, and several others sell AI receptionists too. None adds a cashback marketplace that brings new clients in. Daisy offers one as an option in selected countries, which makes it the complete upgrade path.',
   },
   {
     slug: 'best-phorest-alternatives',
@@ -1260,7 +1259,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
       'booksy': 'Best for affordable mobile booking',
       'glossgenius': 'Best for design-focused solo professionals',
     },
-    daisyEdge: 'These alternatives handle booking for growing teams. Fresha\'s AI Concierge answers calls and messages, and the others here sell AI receptionists too. Daisy adds cashback acquisition, charges a flat, transparent rate and builds the growth tools into every plan.',
+    daisyEdge: 'These alternatives handle booking for growing teams. Fresha\'s AI Concierge answers calls and messages, and the others here sell AI receptionists too. Daisy adds cashback acquisition and published prices, and its plans include 5, 10 or 15 team members.',
   },
   {
     slug: 'best-setmore-alternatives',
@@ -1417,7 +1416,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     verdict: 'GlossGenius wins on simplicity and price for solo professionals and small teams. Boulevard wins on enterprise features and Precision Scheduling. Both sell AI receptionists: GlossGenius Reception answers calls and texts, and Boulevard\'s Beau answers calls. As of October 2026, neither lists an Arabic interface or cashback rewards.',
     whoShouldChooseA: ['You\'re a solo beauty professional', 'Budget is under $50/mo', 'Simplicity over features'],
     whoShouldChooseB: ['You run a premium multi-location salon', 'AI scheduling optimization matters', 'Enterprise features are needed'],
-    daisyPitch: 'Both serve the US market, at different price points. Daisy serves GCC businesses of every size with an AI receptionist on WhatsApp, Instagram and the booking site, Arabic support, a marketplace and cashback.',
+    daisyPitch: 'Both serve the US market, at different price points. Daisy serves GCC businesses of every size with an AI receptionist on WhatsApp, Instagram and the booking site, Arabic support, cashback and an optional marketplace.',
   },
   {
     slugA: 'fresha',
@@ -1431,7 +1430,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     verdict: 'Fresha wins on marketplace scale. GlossGenius wins on design and simplicity. Both sell AI receptionists: Fresha\'s AI Concierge answers calls and messages, and GlossGenius Reception answers calls and texts. Fresha has an Arabic UI. As of October 2026, neither lists WhatsApp or Instagram as an AI channel, and neither offers cashback.',
     whoShouldChooseA: ['You want marketplace exposure with low starting cost', 'Client discovery through marketplace matters most', 'You\'re comfortable with transaction fees on top of subscription'],
     whoShouldChooseB: ['Design and aesthetics matter most', 'You want affordable paid software (from $28/mo, or $24/mo billed annually)', 'You\'re a solo US beauty professional'],
-    daisyPitch: 'Fresha gives marketplace, GlossGenius gives design. Daisy gives both, plus AI on WhatsApp, Instagram and the booking site, Arabic and English as equals, cashback, and growth tools.',
+    daisyPitch: 'Fresha gives marketplace reach, GlossGenius gives design. Daisy gives you a branded booking page and an optional marketplace, plus AI on WhatsApp, Instagram and the booking site, Arabic and English as equals, cashback, and growth tools.',
   },
   {
     slugA: 'booksy',
@@ -1445,7 +1444,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     verdict: 'Booksy wins on mobile app and marketplace. GlossGenius wins on design and affordability. Booksy\'s AI Receptionist books from calls; GlossGenius Reception covers calls and texts.',
     whoShouldChooseA: ['Mobile experience is priority', 'You want marketplace exposure', 'An AI receptionist that books from phone calls appeals to you'],
     whoShouldChooseB: ['Beautiful booking pages matter most', 'You want a simple tool from $28/mo ($24/mo billed annually)', 'You\'re a US-based solo professional'],
-    daisyPitch: 'Both serve independent professionals well. Daisy offers an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and a marketplace with cashback, for growing businesses in the GCC.',
+    daisyPitch: 'Both serve independent professionals well. Daisy offers an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and cashback with an optional marketplace, for growing businesses in the GCC.',
   },
   {
     slugA: 'mindbody',
@@ -1491,7 +1490,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     verdict: 'Fresha is better for cost-conscious small businesses with its lower starting price. Mindbody is better for large enterprise operations. Both sell AI front-desk tools: Fresha\'s AI Concierge answers calls and messages, and Mindbody\'s own AI Concierge, on its Ultimate plan, follows up missed calls by text and web chat. Fresha has an Arabic UI; as of October 2026 we could not find one for Mindbody. Neither offers cashback.',
     whoShouldChooseA: ['Cost is the top priority', 'You want marketplace exposure at a lower price point', 'You\'re a small salon'],
     whoShouldChooseB: ['Enterprise features are required', 'Large fitness marketplace matters', 'Multi-location management needed'],
-    daisyPitch: 'Between published-but-stacking fees and quote-based higher tiers, Daisy offers the modern middle: one all-inclusive price with nothing added per transaction, an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and cashback.',
+    daisyPitch: 'Between published-but-stacking fees and quote-based higher tiers, Daisy offers the modern middle: published plan prices with nothing added per transaction, an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and cashback.',
   },
   {
     slugA: 'booksy',
@@ -1507,7 +1506,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     verdict: 'Booksy is better for budget-conscious mobile professionals. Boulevard is better for premium established salons. Both sell AI receptionists that answer phone calls: Booksy\'s AI Receptionist (beta) and Boulevard\'s Beau (paid add-on). As of October 2026, neither lists an Arabic interface or cashback rewards.',
     whoShouldChooseA: ['You\'re budget-conscious', 'Mobile-first matters most', 'You\'re an independent professional'],
     whoShouldChooseB: ['Premium brand experience is priority', 'AI scheduling optimization appeals', 'You run a multi-location salon'],
-    daisyPitch: 'Daisy suits a solo professional and a premium salon alike: an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and a marketplace with cashback.',
+    daisyPitch: 'Daisy suits a solo professional and a premium salon alike: an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and cashback with an optional marketplace.',
   },
   {
     slugA: 'vagaro',
@@ -1546,7 +1545,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'You want a free starting tier with no subscription',
       'You already use the Square ecosystem',
     ],
-    daisyPitch: 'Fresha offers marketplace reach; Square offers POS strength. Daisy combines both approaches with an AI receptionist on WhatsApp, Instagram and your booking site, Arabic and English as equals, cashback-driven customer acquisition, and branded booking pages.',
+    daisyPitch: 'Fresha offers marketplace reach; Square offers POS strength. Daisy pairs a POS and an optional marketplace with an AI receptionist on WhatsApp, Instagram and your booking site, Arabic and English as equals, cashback-driven customer acquisition, and branded booking pages.',
   },
   {
     slugA: 'booksy',
@@ -1660,7 +1659,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
       'You run a medspa or spa and want forms and charting built in',
       'You\'re an enterprise salon or spa chain',
     ],
-    daisyPitch: 'Daisy delivers AI capabilities rivaling Zenoti with marketplace reach rivaling Mindbody, plus Arabic support, cashback acquisition, and accessible pricing for all business sizes.',
+    daisyPitch: 'Daisy pairs an AI receptionist on WhatsApp, Instagram and the booking site with cashback acquisition and an optional marketplace, plus Arabic support and published pricing for businesses of all sizes.',
   },
   {
     slugA: 'zenoti',
