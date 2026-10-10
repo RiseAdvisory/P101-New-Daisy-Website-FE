@@ -123,7 +123,7 @@ const aiReceptionistArticle: LocalBlogPost = {
 `,
     metaTitle: 'AI Receptionists Transform Salon Service | The Daisy',
     metaDescription:
-      'Learn how AI receptionists answer salon messages and take bookings 24/7 on WhatsApp, Instagram and the booking site, and unlock after-hours revenue.',
+      'Learn how AI receptionists answer salon messages and take bookings 24/7 on WhatsApp, Instagram and the booking site, including after hours.',
     createdAt: '2026-03-18T08:00:00.000Z',
     updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-03-18T08:00:00.000Z',
