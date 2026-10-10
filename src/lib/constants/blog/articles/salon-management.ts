@@ -71,7 +71,7 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
 
 <h3>High-value nice-to-have features</h3>
 <ul>
-<li><strong>AI receptionist:</strong> an <a href="/en/features/business/ai-salon-management">AI assistant that handles booking inquiries</a> on phone, WhatsApp, and chat 24/7 catches the revenue that missed calls take away.</li>
+<li><strong>AI receptionist:</strong> an <a href="/en/features/business/ai-salon-management">AI assistant that handles booking inquiries</a> on WhatsApp, Instagram and your booking site 24/7 catches the bookings that slow replies lose. Check which channels each one covers: some also answer phone calls, and Daisy's does not yet.</li>
 <li><strong>Marketing tools:</strong> email and SMS campaigns, loyalty, and cashback built in, so repeat visits do not need a second platform.</li>
 <li><strong>Inventory management:</strong> stock levels tracked, reorder alerts automatic, and product sales tied to the visit they happened on.</li>
 <li><strong>Marketplace listing:</strong> a consumer-facing marketplace inside the platform is another acquisition channel you are not paying extra for.</li>
@@ -147,7 +147,7 @@ const chooseSalonSoftwareArticle: LocalBlogPost = {
     metaDescription:
       'Step-by-step guide to choosing salon management software. Evaluate features, pricing, scalability, and support to make the right decision for your business.',
     createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'en',
     sortId: 56,
@@ -287,12 +287,12 @@ const salonSoftwareChecklistArticle: LocalBlogPost = {
 <p>Ask for the Google review automatically after the appointment and make leaving one take seconds. How many reviews you have and what they say decides how many people find you in local search.</p>
 
 <h3>21. Marketplace listing</h3>
-<p>Platforms like <a href="/en/features/business/ai-salon-management">The Daisy</a> carry a consumer-facing marketplace, which puts you in front of people already searching for beauty services near you. That channel costs you no extra marketing spend.</p>
+<p>Platforms like <a href="/en/features/business/ai-salon-management">The Daisy</a> carry a consumer-facing marketplace, which can put you in front of people already searching for beauty services near you. Daisy's marketplace is optional and available in selected countries. Listing follows a service-quality review, and commission applies only to new customers the marketplace brings you.</p>
 
 <h2>Category 5: operations and intelligence (features 22-25)</h2>
 
 <h3>22. AI receptionist</h3>
-<p>An assistant taking booking inquiries by phone, WhatsApp, and chat 24/7. It catches the evenings, the hours when everyone is with a client, and the mornings when the phone will not stop. Salons with AI receptionists report 15-25% more bookings from demand that was previously missed.</p>
+<p>An assistant that answers booking inquiries on WhatsApp, Instagram and your booking site 24/7. It covers the evenings, the hours when everyone is with a client, and the busy mornings when messages pile up. Some AI receptionists also answer phone calls. Daisy's does not yet, so calls still go to your team.</p>
 
 <h3>23. Staff performance analytics</h3>
 <p>Revenue, retention, average ticket, rebooking rate, and utilisation, per person. That is what a useful coaching conversation is built on, and it shows you who is thriving and who needs help.</p>
@@ -313,7 +313,7 @@ const salonSoftwareChecklistArticle: LocalBlogPost = {
 <p>No. Booking, scheduling, and client management change your day immediately, so start there. Marketing, AI, and deeper analytics matter more as the client base grows. Choose a platform that has all 25 anyway, so you are not migrating again the month you need them.</p>
 
 <h3>Which features have the biggest impact on revenue?</h3>
-<p>Online booking, automated reminders, and the AI receptionist. Booking catches demand 24/7, reminders stop the no-show losses, and the AI means no enquiry goes unanswered. Together, these three features can increase monthly revenue by 20-35%.</p>
+<p>Online booking, automated reminders, and the AI receptionist. Booking catches demand 24/7, reminders stop the no-show losses, and the AI means no message goes unanswered. Together, these three features can increase monthly revenue by 20-35%.</p>
 
 <h3>Should I prioritise features or ease of use?</h3>
 <p>Both, and if forced to pick, ease of use. A platform stuffed with features your team avoids is worth nothing at all. The good ones manage both, delivering everything through something that barely needs training.</p>
@@ -325,7 +325,7 @@ const salonSoftwareChecklistArticle: LocalBlogPost = {
     metaDescription:
       'Checklist of 25 essential salon software features across booking, payments, marketing, and AI. Score any platform to find gaps before you commit.',
     createdAt: '2026-02-14T05:00:00.000Z',
-    updatedAt: '2026-02-14T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-02-14T05:00:00.000Z',
     locale: 'en',
     sortId: 57,
@@ -760,7 +760,7 @@ const smallSalonSoftwareArticle: LocalBlogPost = {
 <p>Working alone in your own salon or suite, this is what you want configured:</p>
 <ul>
 <li><strong>Online booking with direct link:</strong> put the link on Instagram, WhatsApp, Google, and your website. They book themselves and you get on with the work.</li>
-<li><strong>AI receptionist or automated responses:</strong> an <a href="/en/features/business/ai-salon-management">AI receptionist</a> answers booking inquiries while you have someone in the chair, which ends both the missed calls and the "sorry I could not get to the phone" messages.</li>
+<li><strong>AI receptionist or automated responses:</strong> an <a href="/en/features/business/ai-salon-management">AI receptionist</a> answers booking messages on WhatsApp, Instagram and your booking site while you have someone in the chair, so nobody waits hours for a reply. It does not answer phone calls yet.</li>
 <li><strong>Automated reminders:</strong> configure it once and everyone gets a reminder 24 hours and 2 hours beforehand. The no-shows fall straight away.</li>
 <li><strong>One-tap rebooking:</strong> ask for the next appointment at the end of this one, and the income starts becoming something you can forecast.</li>
 <li><strong>Integrated payments:</strong> take the money, record it, and update the day's report in a single action.</li>
@@ -782,7 +782,7 @@ const smallSalonSoftwareArticle: LocalBlogPost = {
 <li><strong>Multi-location readiness:</strong> check it handles branches even with one location today, because changing software mid-expansion is avoidable misery.</li>
 <li><strong>Advanced features you can unlock later:</strong> marketing automation, loyalty, and deeper analytics waiting for the day you want them, with no migration attached.</li>
 </ul>
-<p><a href="/en/pricing/business">The Daisy's pricing</a> runs from solo operator to multi-location without charging you for growing.</p>
+<p><a href="/en/pricing/business">The Daisy's pricing</a> runs from solo operator to multi-location. Solo plans cover one bookable provider. Business plans include 5, 10 or 15 team members, and each extra calendar is $10/month.</p>
 
 <h2>Frequently asked questions</h2>
 
@@ -802,7 +802,7 @@ const smallSalonSoftwareArticle: LocalBlogPost = {
     metaDescription:
       'Best salon software for small teams of 1-5 staff. Learn which features matter, avoid pricing traps, and choose a platform that scales with your business.',
     createdAt: '2026-02-23T05:00:00.000Z',
-    updatedAt: '2026-02-23T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-02-23T05:00:00.000Z',
     locale: 'en',
     sortId: 60,
@@ -915,7 +915,7 @@ const multiLocationSalonArticle: LocalBlogPost = {
 <h2>Setting up multi-location software</h2>
 
 <h3>Step 1: choose a true multi-location platform</h3>
-<p>Plenty of salon software handles this badly, offering what amounts to separate accounts behind one login. You want multi-branch management built in, with a shared database and central controls. <a href="/en/features/business/ai-salon-management">The Daisy</a> was designed for it, running unlimited branches from one dashboard.</p>
+<p>Plenty of salon software handles this badly, offering what amounts to separate accounts behind one login. You want multi-branch management built in, with a shared database and central controls. <a href="/en/features/business/ai-salon-management">The Daisy</a> was designed for it, running several branches from one dashboard. Business plans include 1, 2 or 4 workspaces, and each extra workspace is $25/month.</p>
 
 <h3>Step 2: standardise your operations</h3>
 <p>Before any of it goes in, make the branches match on:</p>
@@ -978,7 +978,7 @@ const multiLocationSalonArticle: LocalBlogPost = {
     metaDescription:
       'Manage multiple salon branches from one platform. Learn about centralised reporting, unified clients, cross-location booking, and scalable operations.',
     createdAt: '2025-12-02T05:00:00.000Z',
-    updatedAt: '2025-12-02T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-12-02T05:00:00.000Z',
     locale: 'en',
     sortId: 61,
@@ -1076,7 +1076,7 @@ const salonSoftwareROIArticle: LocalBlogPost = {
 <h3>Category 2: cost reductions</h3>
 
 <h4>Reduced reception staff time</h4>
-<p>Online booking, automated reminders, and AI-handled inquiries take the phone calls and manual scheduling off your front desk. Plenty of small salons cut reception hours or move those people onto work that earns.</p>
+<p>Online booking, automated reminders, and AI replies to WhatsApp and Instagram inquiries reduce the time your front desk spends on phone calls and manual scheduling. Plenty of small salons cut reception hours or move those people onto work that earns.</p>
 <p><strong>Calculation:</strong> Hours saved per week x hourly labour cost x 4.3 weeks = monthly cost savings.</p>
 <p><em>Example: 10 hours/week saved x $18/hour x 4.3 = $774 monthly savings.</em></p>
 
@@ -1111,7 +1111,7 @@ const salonSoftwareROIArticle: LocalBlogPost = {
 <ol>
 <li><strong>Count your current monthly bookings</strong> and your average service value.</li>
 <li><strong>Estimate your no-show rate</strong> from your records, or assume 8-12% if you have none.</li>
-<li><strong>Count missed calls and inquiries</strong> per week, using your phone logs and message history.</li>
+<li><strong>Count unanswered messages and inquiries</strong> per week, using your WhatsApp, Instagram and booking site history.</li>
 <li><strong>Track how many hours</strong> go weekly into scheduling, reminders, and admin, yours and your staff's.</li>
 <li><strong>List all current software costs</strong> that one platform would make redundant.</li>
 </ol>
@@ -1145,7 +1145,7 @@ const salonSoftwareROIArticle: LocalBlogPost = {
     metaDescription:
       'Calculate the ROI of salon management software. See revenue gains, cost savings, and time recovered that turn your subscription into a growth investment.',
     createdAt: '2025-05-20T05:00:00.000Z',
-    updatedAt: '2025-05-20T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-05-20T05:00:00.000Z',
     locale: 'en',
     sortId: 62,
@@ -1300,7 +1300,7 @@ const freeVsPaidSalonSoftwareArticle: LocalBlogPost = {
 <li><strong>Evaluate total cost of ownership:</strong> Subscription + any per-user fees + any transaction fees + any add-on costs = your real monthly expense.</li>
 <li><strong>Consider the revenue it generates:</strong> the cheapest plan is poor value if it cannot bring in bookings, and the dearest is not expensive if it earns considerably more than it charges.</li>
 </ul>
-<p><a href="/en/pricing/business">The Daisy's transparent pricing</a> covers all-inclusive plans with no hidden fees and no transaction charges.</p>
+<p><a href="/en/pricing/business">The Daisy's transparent pricing</a> lists what each plan includes, with no hidden fees and no transaction charges. Business plans come with 5, 10 or 15 team members, and each extra calendar is $10/month.</p>
 
 <h2>Making the switch from free to paid</h2>
 <p>Ready to leave a free platform:</p>
@@ -1330,7 +1330,7 @@ const freeVsPaidSalonSoftwareArticle: LocalBlogPost = {
     metaDescription:
       'Compare free and paid salon software beyond the price tag. See hidden costs, feature gaps, and real total cost to find the best value for your salon.',
     createdAt: '2025-02-03T05:00:00.000Z',
-    updatedAt: '2025-02-03T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-02-03T05:00:00.000Z',
     locale: 'en',
     sortId: 63,
@@ -1424,7 +1424,7 @@ const chooseSalonSoftwareArticleAr: LocalBlogPost = {
 
 <h3>ميزات عالية القيمة تستحق الحصول عليها</h3>
 <ul>
-<li><strong>موظف استقبال ذكي:</strong> مساعد <a href="/ar/features/business/ai-salon-management">ذكاء اصطناعي يتعامل مع استفسارات الحجز</a> عبر الهاتف وواتساب والدردشة على مدار الساعة طوال أيام الأسبوع يلتقط الإيرادات التي قد تخسرها بسبب المكالمات الفائتة.</li>
+<li><strong>موظف استقبال ذكي:</strong> مساعد <a href="/ar/features/business/ai-salon-management">ذكاء اصطناعي يتعامل مع استفسارات الحجز</a> عبر واتساب وإنستغرام وموقع الحجز على مدار الساعة طوال أيام الأسبوع يلتقط الحجوزات التي يضيّعها التأخر في الرد. تحقّق من القنوات التي يغطيها كل خيار، فبعضها يرد على المكالمات الهاتفية أيضًا، أما موظف الاستقبال الذكي من ديزي فلا يرد عليها حتى الآن.</li>
 <li><strong>أدوات التسويق:</strong> حملات البريد الإلكتروني والرسائل النصية القصيرة المدمجة، وبرامج الولاء، وحوافز الكاشباك التي تزيد من تكرار الزيارات دون الحاجة إلى منصة تسويق منفصلة.</li>
 <li><strong>إدارة المخزون:</strong> تتبع مستويات مخزون منتجات البيع بالتجزئة، وأتمتة تنبيهات إعادة الطلب، وربط مبيعات المنتج بزيارات العملاء.</li>
 <li><strong>قائمة السوق:</strong> تمنحك الأنظمة الأساسية التي تشتمل على سوق يواجه المستهلك قناة إضافية لاكتساب العملاء دون أي تكلفة إضافية.</li>
@@ -1497,7 +1497,7 @@ const chooseSalonSoftwareArticleAr: LocalBlogPost = {
 <p> تقدم العديد من المنصات خصومات على الالتزامات السنوية، أو الصفقات متعددة المواقع، أو الأعمال التجارية في مرحلة مبكرة. لن يضرك السؤال أبدًا، خاصة إذا كنت ستحضر فروعًا متعددة أو فريقًا كبيرًا. تقدم بعض الأنظمة الأساسية أيضًا أرصدة الإعداد أو تتنازل عن رسوم الإعداد للعملاء الجدد الذين ينتقلون من أحد المنافسين.</p>`,
     metaTitle: 'كيف تختار برنامج إدارة الصالون | ديزي',
     metaDescription: 'دليل خطوة بخطوة لاختيار برنامج إدارة الصالون المناسب.',
-    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-10-10T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'ar', sortId: 56,
     tags: { category: 'Salon Management', topic: 'Software Selection' },
     user: {"data":{"id":4,"attributes":{"name":"Ethan Cole","jobTitle":"Behavioral Data Analyst & Digital Conversion Strategist","date":"3 May 2025","time":"9 min.","picture":{"data":{"attributes":{"url":"/images/blog/author-ethan-cole.webp"}}}}}},
@@ -1587,12 +1587,12 @@ const salonSoftwareChecklistArticleAr: LocalBlogPost = {
 <p> طلب مراجعات جوجل تلقائيًا بعد المواعيد وتوفير طريقة بسيطة للعملاء الراضين لتركها. يؤثر عدد تعليقاتك وتقييمك على جوجل بشكل مباشر على عدد العملاء الجدد الذين يعثرون عليك من خلال البحث المحلي.</p>
 
 <h3>21. قائمة السوق</h3>
-<p>تتضمن منصات مثل <a href="/ar/features/business/ai-salon-management">ديزي</a> سوقًا موجهًا للمستهلك يمنح رؤية صالونك للعملاء الذين يبحثون بنشاط عن خدمات التجميل في منطقتك. هذه قناة اكتساب تعمل بدون أي إنفاق تسويقي إضافي.</p>
+<p>تتضمن منصات مثل <a href="/ar/features/business/ai-salon-management">ديزي</a> سوقًا موجهًا للمستهلك يمكن أن يعرض صالونك للعملاء الذين يبحثون بنشاط عن خدمات التجميل في منطقتك. سوق ديزي اختياري ومتاح في دول مختارة، ويخضع الإدراج فيه لمراجعة جودة الخدمة، وتُطبق العمولة فقط على العملاء الجدد الذين يجلبهم السوق.</p>
 
 <h2>الفئة 5: العمليات والاستخبارات (المميزات 22-25)</h2>
 
 <h3>22. موظف استقبال بالذكاء الاصطناعي</h3>
-<p> مساعد الذكاء الاصطناعي الذي يتعامل مع استفسارات الحجز عبر الهاتف والواتساب والدردشة على مدار الساعة طوال أيام الأسبوع. يلتقط هذا الحجوزات خارج ساعات العمل، عندما يكون فريقك مشغولاً بالعملاء، وخلال فترات الذروة عندما يرن الهاتف باستمرار. أبلغت الصالونات التي لديها موظفو استقبال يعملون بالذكاء الاصطناعي عن زيادة في الحجوزات بنسبة 15-25% مقارنة بالطلب الذي تم تفويته سابقًا.</p>
+<p> مساعد الذكاء الاصطناعي الذي يرد على استفسارات الحجز عبر واتساب وإنستغرام وموقع الحجز على مدار الساعة طوال أيام الأسبوع. يغطي هذا المساء، والساعات التي يكون فيها فريقك مشغولاً بالعملاء، وصباحات الذروة عندما تتراكم الرسائل. بعض موظفي الاستقبال الأذكياء يردون على المكالمات الهاتفية أيضًا، أما موظف الاستقبال الذكي من ديزي فلا يرد عليها حتى الآن، لذا تظل المكالمات تصل إلى فريقك.</p>
 
 <h3>23. تحليلات أداء الموظفين</h3>
 <p> تتبع مقاييس الموظفين الفردية: الإيرادات الناتجة، ومعدل الاحتفاظ بالعملاء، ومتوسط قيمة التذكرة، ومعدل إعادة الحجز، والاستخدام. تعمل هذه البيانات على تعزيز محادثات التدريب وتساعدك على تحديد أفضل الموظفين أداءً وأولئك الذين يحتاجون إلى الدعم.</p>
@@ -1613,7 +1613,7 @@ const salonSoftwareChecklistArticleAr: LocalBlogPost = {
 <p>لا. ركز على ميزات الحجز والجدولة وإدارة العملاء أولاً - فهي تؤثر على عملياتك اليومية على الفور. تصبح ميزات التسويق والذكاء الاصطناعي والتحليلات المتقدمة أكثر قيمة مع نمو قاعدة عملائك. ومع ذلك، اختر منصة توفر جميع الميزات الـ 25 حتى لا تضطر إلى التبديل مرة أخرى عندما تكون مستعدًا لاستخدامها.</p>
 
 <h3> ما هي الميزات التي لها التأثير الأكبر على الإيرادات؟</h3>
-<p> الحجز عبر الإنترنت، والتذكيرات الآلية، وموظف الاستقبال الذي يعمل بالذكاء الاصطناعي له التأثير الأكبر على الإيرادات. يلتقط الحجز عبر الإنترنت الطلب على مدار 24 ساعة طوال أيام الأسبوع، كما تمنع رسائل التذكير خسائر عدم الحضور، ويضمن موظف استقبال يعمل بالذكاء الاصطناعي عدم تفويت أي استفسار عن الحجز. يمكن لهذه الميزات الثلاث معًا زيادة الإيرادات الشهرية بنسبة 20-35%.</p>
+<p> الحجز عبر الإنترنت، والتذكيرات الآلية، وموظف الاستقبال الذي يعمل بالذكاء الاصطناعي له التأثير الأكبر على الإيرادات. يلتقط الحجز عبر الإنترنت الطلب على مدار 24 ساعة طوال أيام الأسبوع، كما تمنع رسائل التذكير خسائر عدم الحضور، ويضمن موظف استقبال يعمل بالذكاء الاصطناعي عدم بقاء أي رسالة حجز دون رد. يمكن لهذه الميزات الثلاث معًا زيادة الإيرادات الشهرية بنسبة 20-35%.</p>
 
 <h3> هل يجب أن أعطي الأولوية للميزات أم لسهولة الاستخدام؟</h3>
 <p> كلاهما مهم، ولكن سهولة الاستخدام هي الأفضل إذا كان عليك الاختيار. إن النظام الأساسي الغني بالميزات الذي يرفض فريقك استخدامه لا قيمة له. توفر أفضل المنصات الحديثة ميزات شاملة من خلال واجهات بديهية تتطلب الحد الأدنى من التدريب.</p>
@@ -1622,7 +1622,7 @@ const salonSoftwareChecklistArticleAr: LocalBlogPost = {
 <p> قم بمراجعة منصتك سنويًا. يتطور سوق برامج الصالون بسرعة، وقد تصبح الميزات التي كانت متطورة قبل عامين قياسية الآن. تضمن المراجعة السنوية أنك لا تدفع أسعارًا مرتفعة مقابل الميزات المتوفرة الآن على نطاق واسع، وأنك لا تفتقد الإمكانات التي يمكن أن تؤدي إلى نمو كبير.</p>`,
     metaTitle: 'قائمة فحص ميزات برنامج الصالون | ديزي',
     metaDescription: 'قائمة فحص شاملة لميزات برنامج الصالون.',
-    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-10-10T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'ar', sortId: 57,
     tags: { category: 'Salon Management', topic: 'Features Checklist' },
     user: { data: { id: 5, attributes: { name: 'Sofia Alvarez', jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist', date: '19 June 2025', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-sofia-alvarez.webp' } } } } } },
@@ -1903,7 +1903,7 @@ const smallSalonSoftwareArticleAr: LocalBlogPost = {
 <p>إذا كنت مشغلًا منفردًا - مقدم الخدمة الوحيد في الصالون أو الجناح الخاص بك - فإليك تكوين البرنامج المثالي:</p>
 <ul>
 <li><strong>الحجز عبر الإنترنت برابط مباشر:</strong> شارك رابط الحجز الخاص بك على إنستغرام وواتساب وجوجل وموقعك الإلكتروني. يقوم العملاء بحجز أنفسهم؛ أنت تركز على تقديم خدمة رائعة.</li>
-<li><strong>موظف الاستقبال أو الردود الآلية:</strong> يتعامل موظف الاستقبال <a href="/ar/features/business/ai-salon-management">AI</a> مع استفسارات الحجز أثناء تواجدك مع العملاء. لا مزيد من المكالمات الفائتة، لا مزيد من رسائل "آسف لم أتمكن من الوصول إلى الهاتف".</li>
+<li><strong>موظف الاستقبال أو الردود الآلية:</strong> يتعامل موظف الاستقبال <a href="/ar/features/business/ai-salon-management">AI</a> مع رسائل الحجز عبر واتساب وإنستغرام وموقع الحجز أثناء تواجدك مع العملاء، فلا ينتظر أحد ساعات للحصول على رد. ولا يرد على المكالمات الهاتفية حتى الآن.</li>
 <li><strong>التذكيرات التلقائية:</strong> اضبطها مرة واحدة - يحصل كل عميل على تذكير قبل 24 ساعة وساعتين من موعده. يتم إسقاط حالات عدم الحضور على الفور.</li>
 <li><strong>إعادة الحجز بنقرة واحدة:</strong> بعد كل موعد، اطلب من العميل تحديد موعد لزيارته التالية. تصبح الإيرادات المتكررة إيرادات يمكن التنبؤ بها.</li>
 <li><strong>المدفوعات المتكاملة:</strong> قبول الدفع وتسجيل المعاملة وتحديث تقريرك اليومي في خطوة واحدة.</li>
@@ -1925,7 +1925,7 @@ const smallSalonSoftwareArticleAr: LocalBlogPost = {
 <li><strong>جاهزية متعددة المواقع:</strong> حتى لو كان لديك موقع واحد الآن، تأكد من أن المنصة تدعم فروعًا متعددة. يعد تبديل البرامج أثناء التوسيع أمرًا مؤلمًا ويمكن تجنبه.</li>
 <li><strong>ميزات متقدمة يمكنك فتحها لاحقًا:</strong> يجب أن تكون أتمتة التسويق، وبرامج الولاء، والتحليلات المتقدمة متاحة عندما تكون مستعدًا، دون الحاجة إلى تغيير النظام الأساسي.</li>
 </ul>
-<p>راجع <a href="/ar/pricing/business">تسعير ديزي</a> للتعرف على الخطط التي تتراوح من المشغل الفردي إلى المواقع المتعددة دون معاقبة النمو.</p>
+<p>راجع <a href="/ar/pricing/business">تسعير ديزي</a> للتعرف على الخطط التي تتراوح من المشغل الفردي إلى المواقع المتعددة. تغطي خطط المحترفين المستقلين مقدّم خدمة واحدًا قابلًا للحجز، وتشمل خطط الأعمال 5 أو 10 أو 15 عضوًا في الفريق، وكل تقويم إضافي بـ 10 دولارات شهريًا.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
@@ -1942,7 +1942,7 @@ const smallSalonSoftwareArticleAr: LocalBlogPost = {
 <p>يمكنك ذلك، ولكن تبديل الأنظمة الأساسية لاحقًا يعني ترحيل البيانات وإعادة تدريب الموظفين وتحديث جميع روابط الحجز الخاصة بك. من الأفضل الآن اختيار نظام أساسي يقدم خطة مناسبة للمبتدئين مع إمكانية فتح الميزات المتقدمة أثناء النمو - نفس النظام الأساسي، نفس البيانات، لا حاجة للترحيل.</p>`,
     metaTitle: 'خيارات برامج الصالون الصغير | ديزي',
     metaDescription: 'أفضل خيارات البرامج للصالونات الصغيرة.',
-    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-10-10T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'ar', sortId: 60,
     tags: { category: 'Salon Management', topic: 'Small Salon' },
     user: { data: { id: 5, attributes: { name: 'Sofia Alvarez', jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist', date: '19 June 2025', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-sofia-alvarez.webp' } } } } } },
@@ -2005,7 +2005,7 @@ const multiLocationSalonArticleAr: LocalBlogPost = {
 <h2>إعداد برنامج متعدد المواقع</h2>
 
 <h3>الخطوة 1: اختر منصة حقيقية متعددة المواقع</h3>
-<p> لا تدعم كل برامج الصالون تعدد المواقع بشكل جيد. يقدمها البعض كفكرة لاحقة - حسابات منفصلة بشكل أساسي مع تسجيل دخول مشترك. ابحث عن الأنظمة الأساسية التي تكون فيها إدارة الفروع المتعددة قدرة أساسية، مع قاعدة بيانات موحدة وضوابط مركزية. <a href="/ar/features/business/ai-salon-management">تم تصميم ديزي</a> للعمل في مواقع متعددة من الألف إلى الياء، مع لوحة تحكم واحدة لإدارة عدد غير محدود من الفروع.</p>
+<p> لا تدعم كل برامج الصالون تعدد المواقع بشكل جيد. يقدمها البعض كفكرة لاحقة - حسابات منفصلة بشكل أساسي مع تسجيل دخول مشترك. ابحث عن الأنظمة الأساسية التي تكون فيها إدارة الفروع المتعددة قدرة أساسية، مع قاعدة بيانات موحدة وضوابط مركزية. <a href="/ar/features/business/ai-salon-management">تم تصميم ديزي</a> للعمل في مواقع متعددة من الألف إلى الياء، مع لوحة تحكم واحدة لإدارة عدة فروع. تشمل خطط الأعمال مساحة عمل واحدة أو 2 أو 4 مساحات عمل، وكل مساحة عمل إضافية بـ 25 دولارًا شهريًا.</p>
 
 <h3>الخطوة الثانية: توحيد عملياتك</h3>
 <p>قبل إعداد برنامج متعدد المواقع، قم بالتوحيد عبر الفروع:</p>
@@ -2065,7 +2065,7 @@ const multiLocationSalonArticleAr: LocalBlogPost = {
 <p> على منصة حقيقية متعددة المواقع، يتم تخزين بطاقات الهدايا والباقات المدفوعة مسبقًا في قاعدة بيانات العميل الموحدة ويمكن استردادها في أي فرع. إذا كنت تستخدم أنظمة منفصلة لكل فرع، فهذا يتطلب تتبعًا يدويًا ويشكل مصدرًا شائعًا للأخطاء وإحباط العميل.</p>`,
     metaTitle: 'برنامج إدارة الصالون متعدد المواقع | ديزي',
     metaDescription: 'كيف تختار برنامجاً يدير عدة فروع.',
-    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-10-10T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'ar', sortId: 61,
     tags: { category: 'Salon Management', topic: 'Multi-Location' },
     user: { data: { id: 5, attributes: { name: 'Sofia Alvarez', jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist', date: '19 June 2025', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-sofia-alvarez.webp' } } } } } },
@@ -2148,7 +2148,7 @@ const salonSoftwareROIArticleAr: LocalBlogPost = {
 <ol>
 <li><strong>احسب حجوزاتك الشهرية الحالية</strong> ومتوسط قيمة الخدمة.</li>
 <li><strong>قم بتقدير معدل عدم الحضور</strong> (راجع سجلاتك أو قم بتقدير 8-12% إذا لم تكن متأكدًا).</li>
-<li><strong>إحصاء المكالمات والاستفسارات الفائتة</strong> أسبوعيًا (تحقق من سجلات الهاتف وسجل الرسائل).</li>
+<li><strong>إحصاء الرسائل والاستفسارات التي لم يُرد عليها</strong> أسبوعيًا (تحقق من سجل رسائل واتساب وإنستغرام وموقع الحجز).</li>
 <li><strong>تتبع عدد الساعات</strong> التي تقضيها أنت أو موظفوك في الجدولة والتذكيرات والمهام الإدارية أسبوعيًا.</li>
 <li><strong>أدرج جميع تكاليف البرامج الحالية</strong> التي ستحل محلها منصة الكل في واحد.</li>
 </ol>
@@ -2179,7 +2179,7 @@ const salonSoftwareROIArticleAr: LocalBlogPost = {
 <p>يمكن ذلك إذا توقفت عن استخدام إمكانيات المنصة. يأتي أكبر عائد على الاستثمار من الميزات التي تستخدمها بنشاط - الحملات التسويقية، وموظف استقبال الذكاء الاصطناعي، والقرارات المبنية على التحليلات. إذا كنت تستخدم المنصة فقط للحجز الأساسي، فلن تحصل إلا على جزء صغير من العائد المحتمل. تعامل مع برنامجك كأداة للنمو، وليس مجرد تقويم.</p>`,
     metaTitle: 'حاسبة عائد الاستثمار لبرنامج الصالون | ديزي',
     metaDescription: 'كيف تحسب العائد على الاستثمار في برنامج الصالون.',
-    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-10-10T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'ar', sortId: 62,
     tags: { category: 'Salon Management', topic: 'ROI' },
     user: { data: { id: 5, attributes: { name: 'Sofia Alvarez', jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist', date: '19 June 2025', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-sofia-alvarez.webp' } } } } } },
@@ -2284,7 +2284,7 @@ const freeVsPaidSalonSoftwareArticleAr: LocalBlogPost = {
 <li><strong>تقييم التكلفة الإجمالية للملكية:</strong> الاشتراك + أي رسوم لكل مستخدم + أي رسوم معاملات + أي تكاليف إضافية = مصاريفك الشهرية الحقيقية.</li>
 <li><strong>ضع في اعتبارك الإيرادات التي تحققها:</strong> أرخص خطة مدفوعة ليست هي الأفضل قيمة إذا كانت تفتقر إلى الميزات التي تؤدي إلى الحجوزات. لا تكون الخطة الأكثر تكلفة باهظة الثمن إذا كانت تحقق إيرادات أكبر بكثير من تكلفتها.</li>
 </ul>
-<p>راجع <a href="/ar/pricing/business">أسعار ديزي الشفافة</a> للتعرف على الخطط الشاملة بدون رسوم مخفية أو رسوم معاملات.</p>
+<p>راجع <a href="/ar/pricing/business">أسعار ديزي الشفافة</a> للتعرف على ما تتضمنه كل خطة، بدون رسوم مخفية أو رسوم معاملات. تأتي خطط الأعمال مع 5 أو 10 أو 15 عضوًا في الفريق، وكل تقويم إضافي بـ 10 دولارات شهريًا.</p>
 
 <h2>التحويل من مجاني إلى مدفوع</h2>
 <p>إذا كنت حاليًا تستخدم نظامًا أساسيًا مجانيًا وجاهزًا للترقية:</p>
@@ -2311,7 +2311,7 @@ const freeVsPaidSalonSoftwareArticleAr: LocalBlogPost = {
 <p>عدد قليل جدًا. يوجد برنامج صالون مفتوح المصدر ولكنه يتطلب خبرة فنية للإعداد والصيانة والتخصيص. بالنسبة لمعظم أصحاب الصالونات، فإن استثمار الوقت في إدارة البرامج مفتوحة المصدر يتجاوز بكثير تكلفة الاشتراك المدفوع. من الناحية العملية، تفتقر برامج الصالونات "المجانية حقًا" إلى الميزات اللازمة لإدارة عمل احترافي أو تتطلب جهدًا فنيًا كافيًا مما يجعلها ليست مجانية حقًا.</p>`,
     metaTitle: 'برنامج الصالون المجاني مقابل المدفوع | ديزي',
     metaDescription: 'مقارنة بين البرامج المجانية والمدفوعة لإدارة الصالون.',
-    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-10-10T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'ar', sortId: 63,
     tags: { category: 'Salon Management', topic: 'Free vs Paid' },
     user: { data: { id: 5, attributes: { name: 'Sofia Alvarez', jobTitle: 'Salon Operations Consultant & Beauty Technology Strategist', date: '19 June 2025', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-sofia-alvarez.webp' } } } } } },

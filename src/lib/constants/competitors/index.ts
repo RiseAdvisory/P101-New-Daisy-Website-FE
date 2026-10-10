@@ -188,7 +188,7 @@ export function compareFeatures(slug: string, locale: string = 'en'): {
     { key: 'aiCapabilities', label: 'AI Capabilities' },
     { key: 'brandingAndWhiteLabel', label: 'Branding & White-Label' },
     // Was omitted, which dropped the single category where competitors most
-    // often beat Daisy (Daisy 0, Fresha 3). A comparison that hides the
+    // often beat Daisy (Daisy 1, Fresha 3). A comparison that hides the
     // competitor's strongest category is indefensible.
     { key: 'marketplaceAndDiscovery', label: 'Marketplace & Discovery' },
   ];

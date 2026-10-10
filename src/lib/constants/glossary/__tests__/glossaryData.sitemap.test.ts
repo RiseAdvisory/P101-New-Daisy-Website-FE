@@ -34,20 +34,30 @@ describe('getGlossarySitemapData', () => {
     }
   });
 
-  it('reports a fresh lastUpdated for the salon-management-software cluster touched on 2026-04-11', () => {
+  it('keeps 2026-04-27 for the salon-customer-management entry from the 2026-04-11 cluster', () => {
+    const record = getGlossarySitemapData().find((r) => r.slug === 'salon-customer-management');
+    expect(record).toBeDefined();
+    expect(record?.lastUpdated).toBe('2026-04-27T00:00:00.000Z');
+  });
+
+  it('reports 2026-10-09 for the entry whose competitor claims were corrected that day', () => {
+    const record = getGlossarySitemapData().find((r) => r.slug === 'cashback-beauty-booking');
+    expect(record).toBeDefined();
+    expect(record?.lastUpdated).toBe('2026-10-09T00:00:00.000Z');
+  });
+
+  it('reports 2026-10-10 for the entries whose Daisy claims were corrected that day', () => {
     const data = getGlossarySitemapData();
     const refreshed = [
       'salon-management-software',
       'ai-receptionist-for-salons',
-      'cashback-beauty-booking',
       'salon-management-system',
       'salon-employee-management-software',
-      'salon-customer-management',
     ];
     for (const slug of refreshed) {
       const record = data.find((r) => r.slug === slug);
       expect(record).toBeDefined();
-      expect(record?.lastUpdated).toBe('2026-04-27T00:00:00.000Z');
+      expect(record?.lastUpdated).toBe('2026-10-10T00:00:00.000Z');
     }
   });
 });

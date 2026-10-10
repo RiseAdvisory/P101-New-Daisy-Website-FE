@@ -54,12 +54,12 @@ const aiSchedulingArticle: LocalBlogPost = {
 <li><strong>Staff schedule coordination:</strong> 1-2 hours matching employee availability against client requests and service specializations.</li>
 <li><strong>Sending reminders and confirmations:</strong> 1-2 hours of manual texts, WhatsApp messages, and phone calls.</li>
 </ul>
-<p>Salons miss 30-40% of inbound calls because staff are with clients. Every one of those is a booking that may go to whoever picks up first.</p>
+<p>Messages that sit unanswered while staff are with clients often turn into bookings somewhere else.</p>
 
 <h2>How does AI scheduling work?</h2>
 <p>AI scheduling platforms like <a href="/en/features/business/ai-salon-management">The Daisy</a> use machine learning to run the booking workflow without anyone stepping in:</p>
 <ol>
-<li><strong>Customer reaches out</strong> via phone, WhatsApp, Instagram DM, website chat, or any connected channel.</li>
+<li><strong>Customer reaches out</strong> via WhatsApp, Instagram DM, website chat, or any connected channel.</li>
 <li><strong>AI identifies the customer</strong> from your database, or creates a new profile.</li>
 <li><strong>AI understands the request</strong>, whether that is a new booking, a reschedule, a pricing question, or a general inquiry, and replies naturally in Arabic or English.</li>
 <li><strong>AI checks real-time availability</strong> across all staff members, accounting for service duration, setup time, and specialization.</li>
@@ -70,8 +70,8 @@ const aiSchedulingArticle: LocalBlogPost = {
 
 <h2>How much time does each feature save?</h2>
 
-<h3>24/7 AI receptionist: 3-5 hours saved</h3>
-<p>An AI receptionist takes every inbound inquiry, including calls, messages, and social media DMs, without anyone stepping away from a client. It runs around the clock, so the bookings that used to disappear during busy blocks or after closing get captured instead. Salon owners report that phone interruptions during client sessions stop completely.</p>
+<h3>24/7 AI receptionist: less time on booking messages</h3>
+<p>An AI receptionist answers inquiries on WhatsApp, Instagram DMs and your booking site, so nobody has to step away from a client. It does not answer phone calls yet. Because it runs around the clock, bookings that used to slip away during busy blocks or after closing get caught.</p>
 
 <h3>Smart calendar optimization: 2-3 hours saved</h3>
 <p>Rather than arranging appointments by hand, the AI reads service durations, staff skills, and past booking patterns to build the day's schedule. It adds buffer time between services, prevents double-bookings, and fills the gaps manual scheduling tends to leave behind.</p>
@@ -89,7 +89,6 @@ const aiSchedulingArticle: LocalBlogPost = {
 <p>Salons using AI scheduling report:</p>
 <ul>
 <li><strong>10+ hours per week</strong> freed from scheduling administration</li>
-<li><strong>30-40% reduction</strong> in missed booking opportunities</li>
 <li><strong>Up to 40% fewer no-shows</strong> through smart reminders</li>
 <li><strong>15-20% increase</strong> in daily appointments through calendar optimization</li>
 <li><strong>Zero double-bookings</strong> with real-time availability checking</li>
@@ -98,7 +97,7 @@ const aiSchedulingArticle: LocalBlogPost = {
 <h2>How to get started with AI scheduling</h2>
 <p>Setting up AI scheduling on The Daisy takes under an hour:</p>
 <ol>
-<li><strong>Connect your channels:</strong> link your phone line, WhatsApp Business, Instagram, and website.</li>
+<li><strong>Connect your channels:</strong> link your WhatsApp Business account, Instagram, and website.</li>
 <li><strong>Import your service menu:</strong> add services, durations, pricing, and staff assignments.</li>
 <li><strong>Set your business rules:</strong> operating hours, buffer times, cancellation policies, and booking requirements.</li>
 <li><strong>Go live:</strong> the AI starts handling bookings immediately and gets better at reading your business over the first few weeks.</li>
@@ -108,10 +107,10 @@ const aiSchedulingArticle: LocalBlogPost = {
 <h2>Frequently asked questions</h2>
 
 <h3>Does AI scheduling work for small salons with only 1-2 staff?</h3>
-<p>Yes, and small salons often gain the most, because the owner is usually a service provider too. Instead of breaking off mid-appointment to answer a booking call, you let the AI take it. Solo stylists see the largest relative time saving since they have no reception staff to hand off to.</p>
+<p>Yes, and small salons often gain the most, because the owner is usually a service provider too. Instead of breaking off mid-appointment to reply to a booking message, you let the AI answer it. Solo stylists see the largest relative time saving since they have no reception staff to hand off to.</p>
 
 <h3>Will clients know they are speaking to AI?</h3>
-<p>The Daisy's AI communicates naturally in Arabic and English, and it understands beauty industry terminology and client preferences. Most clients do not notice the difference, and many prefer an instant reply to being put on hold or leaving a voicemail.</p>
+<p>The Daisy's AI communicates naturally in Arabic and English, and it understands beauty industry terminology and client preferences. Most clients do not notice the difference, and many would rather get an instant reply than wait hours for one.</p>
 
 <h3>Can AI handle complex booking requests like group appointments?</h3>
 <p>Yes. It manages multi-service bookings, group appointments, recurring bookings, and special requests, checking availability across several staff members at once to find a time that works for the whole group.</p>
@@ -123,7 +122,7 @@ const aiSchedulingArticle: LocalBlogPost = {
     metaDescription:
       'AI scheduling automates salon booking, calendar optimization, and reminders. Learn how salon owners save 10+ hours per week with smart scheduling software.',
     createdAt: '2026-03-17T08:00:00.000Z',
-    updatedAt: '2026-03-17T08:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-03-17T08:00:00.000Z',
     locale: 'en',
     sortId: 4,
@@ -340,10 +339,10 @@ const fiveWaysAiArticle: LocalBlogPost = {
 <p>Artificial intelligence has moved past the hype into daily practical use for beauty businesses. In 2026 it is not replacing stylists or automating creativity. It removes the admin that stops salon owners from doing the work they are actually good at.</p>
 <p>Here are five ways AI is changing beauty businesses right now, with outcomes salon and spa owners are already seeing.</p>
 
-<h2>1. A 24/7 AI receptionist that never misses a call</h2>
-<p>Missed calls are the biggest revenue leak most salons have. Salons miss 30-40% of inbound calls because staff are with clients, and each one is a booking that may end up with a competitor.</p>
-<p>An AI receptionist, like the one built into <a href="/en/features/business/ai-salon-management">The Daisy platform</a>, handles every customer interaction across phone, WhatsApp, Instagram DM, website chat, and SMS. It runs 24 hours a day, 7 days a week, answering inquiries, booking appointments, processing payments, and replying in Arabic or English.</p>
-<p><strong>The business impact:</strong> salon owners using AI receptionists report capturing bookings they used to lose, especially after-hours inquiries and calls that landed in the middle of a busy appointment block.</p>
+<h2>1. A 24/7 AI receptionist that never leaves a message waiting</h2>
+<p>Slow replies are one of the biggest revenue leaks most salons have. While staff are with clients, WhatsApp and Instagram messages wait, and a client who waits too long often books with a competitor.</p>
+<p>An AI receptionist, like the one built into <a href="/en/features/business/ai-salon-management">The Daisy platform</a>, answers customer messages on WhatsApp, Instagram DM, website chat, and SMS. It does not answer phone calls yet. It runs 24 hours a day, 7 days a week, answering inquiries, booking appointments, processing payments, and replying in Arabic or English.</p>
+<p><strong>The business impact:</strong> salon owners using AI receptionists report capturing bookings they used to lose, especially after-hours inquiries and messages that arrived in the middle of a busy appointment block.</p>
 
 <h2>2. Smart scheduling that maximizes revenue per day</h2>
 <p>A traditional booking calendar lets clients take any open slot. AI scheduling works out which arrangement of those slots earns the most across the day.</p>
@@ -381,7 +380,7 @@ const fiveWaysAiArticle: LocalBlogPost = {
 <h2>How to start using AI in your salon</h2>
 <p>Getting started takes no technical expertise and no large upfront investment. The Daisy platform brings all five capabilities into one system built for beauty and wellness businesses:</p>
 <ol>
-<li><strong>Sign up and connect your channels:</strong> phone, WhatsApp, social media, website.</li>
+<li><strong>Sign up and connect your channels:</strong> WhatsApp, social media, website.</li>
 <li><strong>Import your service menu and staff schedules.</strong></li>
 <li><strong>The AI begins working immediately,</strong> handling bookings, optimising your calendar, and learning your business patterns.</li>
 <li><strong>Review weekly insight reports</strong> and act on the recommendations.</li>
@@ -391,10 +390,10 @@ const fiveWaysAiArticle: LocalBlogPost = {
 <h2>Frequently asked questions</h2>
 
 <h3>Is AI suitable for small salons or only large chains?</h3>
-<p>Small salons often get more out of it, because the owner is handling clients and admin at the same time. A solo stylist who cannot pick up the phone during an appointment gains more from an AI receptionist than a 20-chair salon with a dedicated front desk.</p>
+<p>Small salons often get more out of it, because the owner is handling clients and admin at the same time. A solo stylist who cannot reply to messages during an appointment gains more from an AI receptionist than a 20-chair salon with a dedicated front desk.</p>
 
 <h3>How much does AI salon software cost?</h3>
-<p>The Daisy offers AI-powered salon management with zero commission on bookings. Visit the <a href="/en/pricing/business">pricing page</a> for current plan details. Most salons find that the revenue captured from previously missed bookings alone covers the subscription cost.</p>
+<p>The Daisy offers AI-powered salon management with no commission on bookings from your own clients. Visit the <a href="/en/pricing/business">pricing page</a> for current plan details. Most salons find that the revenue captured from previously missed bookings alone covers the subscription cost.</p>
 
 <h3>Does AI work in Arabic?</h3>
 <p>The Daisy's AI operates natively in Arabic and English with full cultural context understanding. There is no translation layer in between. It understands and replies in both languages, including GCC dialects and beauty industry terminology.</p>
@@ -403,7 +402,7 @@ const fiveWaysAiArticle: LocalBlogPost = {
     metaDescription:
       'Five ways AI transforms beauty businesses: 24/7 receptionists, smart scheduling, predictive insights, automated communication, and intelligent upselling.',
     createdAt: '2025-04-28T05:00:00.000Z',
-    updatedAt: '2025-04-28T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-04-28T05:00:00.000Z',
     locale: 'en',
     sortId: 6,
@@ -476,9 +475,9 @@ const aiToolsProfessionalArticle: LocalBlogPost = {
 <h2>Essential AI tools for beauty professionals</h2>
 
 <h3>1. AI booking assistant</h3>
-<p>An AI booking assistant takes appointment requests across every channel you use, including phone, WhatsApp, Instagram DMs, and your website, without you stopping what you are doing. A potential client messaging at 9pm about availability gets an immediate reply, and the AI checks your calendar and books them in.</p>
+<p>An AI booking assistant takes appointment requests on the channels clients message you on, such as WhatsApp, Instagram DMs and your website, while you carry on with what you are doing. A potential client messaging at 9pm about availability gets an immediate reply, and the AI checks your calendar and books them in.</p>
 <p><strong>Why it matters for independents:</strong> a salon employee can pass a call to reception. You cannot, so every inquiry you fail to answer quickly is a booking gone. An AI assistant catches them during appointments, on days off, and outside working hours.</p>
-<p><a href="/en/features/professional/ai-salon-management">The Daisy's AI tools for professionals</a> include a fully autonomous booking assistant that handles the whole conversation naturally in Arabic and English.</p>
+<p><a href="/en/features/professional/ai-salon-management">The Daisy's AI tools for professionals</a> include a fully autonomous booking assistant that handles the whole conversation naturally in Arabic and English, on WhatsApp, Instagram and your booking site. It does not answer phone calls yet.</p>
 
 <h3>2. Smart calendar management</h3>
 <p>Running your own calendar means balancing client preferences, travel time if you are mobile, service durations, and your own life. AI calendar tools read your patterns and arrange the day for you.</p>
@@ -535,19 +534,19 @@ const aiToolsProfessionalArticle: LocalBlogPost = {
 <h2>Frequently asked questions</h2>
 
 <h3>Are AI tools affordable for independent professionals?</h3>
-<p>The Daisy is built with independent professionals in mind. Plans are priced for solo operators, and the platform charges zero commission on bookings. Most professionals find that capturing just a few bookings they would previously have missed covers the subscription cost entirely.</p>
+<p>The Daisy is built with independent professionals in mind. Plans are priced for solo operators, and the platform charges no commission on bookings from your own clients. Most professionals find that capturing just a few bookings they would previously have missed covers the subscription cost entirely.</p>
 
 <h3>Do I need to be tech-savvy to use AI tools?</h3>
 <p>No. Modern AI tools are set-and-forget. You connect your channels, set your preferences, and the AI takes it from there. The Daisy's interface is built for beauty professionals, not tech experts.</p>
 
 <h3>Can AI help me if I am just starting out?</h3>
-<p>Yes, and arguably more so. When you are building a client base, every potential booking counts, and the AI catches each one and handles the conversation properly even while you are with a client. It also helps new professionals get found by matching them with people searching for their specific services.</p>
+<p>Yes, and arguably more so. When you are building a client base, every potential booking counts, and the AI catches each one and handles the conversation properly even while you are with a client. If you join The Daisy's optional marketplace, which is available in selected countries after a service-quality review, it can also help people searching for your specific services find you.</p>
 `,
     metaTitle: 'AI Tools for Independent Beauty Pros | The Daisy',
     metaDescription:
       'Essential AI tools for freelance stylists and beauty professionals: automated booking, smart scheduling, client insights, and more. No tech skills needed.',
     createdAt: '2025-07-05T05:00:00.000Z',
-    updatedAt: '2025-07-05T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-07-05T05:00:00.000Z',
     locale: 'en',
     sortId: 41,
@@ -622,8 +621,8 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
 
 <h3>Customer response and booking capture</h3>
 <p><strong>Traditional platforms:</strong> an online booking page lets clients self-book into open slots. Phone calls, WhatsApp messages, and social media inquiries still land on your staff. After hours, anyone who gets in touch waits until the next business day.</p>
-<p><strong>The Daisy (AI-powered):</strong> an AI receptionist takes every inbound interaction, across phone calls, WhatsApp, Instagram DMs, website chat, and SMS, 24/7. It reads booking requests, checks availability, confirms appointments, and processes payments on its own. Clients get an answer whenever they reach out.</p>
-<p><strong>Why it matters:</strong> salons miss 30-40% of inbound calls. Answering every inquiry instead of missing a third of them adds up over weeks and months.</p>
+<p><strong>The Daisy (AI-powered):</strong> an AI receptionist answers messages on WhatsApp, Instagram DMs, website chat, and SMS, 24/7. It does not answer phone calls yet. It reads booking requests, checks availability, confirms appointments, and processes payments on its own. Clients get an answer whenever they send a message.</p>
+<p><strong>Why it matters:</strong> a booking message answered in seconds at 10pm can become an appointment. Leave it until the next morning and it often goes to another salon. Over weeks and months, those replies add up.</p>
 
 <h3>Calendar intelligence</h3>
 <p><strong>Traditional platforms:</strong> the calendar shows open time slots and lets clients pick. It tells you what is free, not what is best. Gaps between appointments, awkward service sequencing, and underused slots are left to staff.</p>
@@ -647,8 +646,8 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
 
 <h3>Pricing model</h3>
 <p><strong>Traditional platforms:</strong> models vary widely. Some charge per booking on commission, some charge per team member, and some run flat monthly fees with feature tiers. Commission gets expensive as the business grows.</p>
-<p><strong>The Daisy:</strong> subscription-based with zero commission on bookings. Your growth does not increase your platform costs proportionally. See the <a href="/en/pricing/business">pricing page</a> for current plans.</p>
-<p><strong>Why it matters:</strong> commission-based pricing penalises success, since booking more appointments raises your software bill. Flat-rate pricing improves your margins as you grow.</p>
+<p><strong>The Daisy:</strong> subscription-based, with no commission on bookings from your own clients. Commission applies only to new customers that Daisy's optional marketplace brings you. Business plans include 5, 10 or 15 team members, and each extra calendar is $10/month. See the <a href="/en/pricing/business">pricing page</a> for current plans.</p>
+<p><strong>Why it matters:</strong> commission-based pricing penalises success, since booking more appointments raises your software bill. With a subscription, the bill does not rise with every booking, so your margins improve as you grow.</p>
 
 <h2>Summary comparison table</h2>
 <table>
@@ -656,20 +655,20 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
 <tr><th>Capability</th><th>Traditional Salon Software</th><th>The Daisy (AI-Powered)</th></tr>
 </thead>
 <tbody>
-<tr><td>Booking capture</td><td>Online form + manual for calls/messages</td><td>AI handles all channels 24/7</td></tr>
+<tr><td>Booking capture</td><td>Online form + manual for calls/messages</td><td>AI answers WhatsApp, Instagram and booking site messages 24/7</td></tr>
 <tr><td>Calendar optimization</td><td>Manual slot management</td><td>AI-optimised scheduling</td></tr>
 <tr><td>Language support</td><td>English primary, basic translations</td><td>Native Arabic + English</td></tr>
 <tr><td>Client communication</td><td>Basic reminders</td><td>Full lifecycle automation</td></tr>
 <tr><td>Analytics</td><td>Historical reports</td><td>Predictive intelligence</td></tr>
 <tr><td>Upselling</td><td>Manual, staff-dependent</td><td>AI-driven, data-personalised</td></tr>
-<tr><td>Commission</td><td>Often per-booking</td><td>Zero commission</td></tr>
+<tr><td>Commission</td><td>Often per-booking</td><td>0% on your own clients</td></tr>
 </tbody>
 </table>
 
 <h2>Who is The Daisy best suited for?</h2>
 <p>The Daisy's AI-powered platform is built for beauty and wellness businesses that want to:</p>
 <ul>
-<li>Capture every potential booking without adding reception staff</li>
+<li>Reply to every booking message without adding reception staff</li>
 <li>Serve Arabic and English-speaking clients equally well</li>
 <li>Decide from data rather than intuition</li>
 <li>Automate administrative tasks to focus on client service</li>
@@ -684,7 +683,7 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
 <p>Yes. The Daisy supports data migration from most salon management platforms. Your client records, booking history, and service menu come across during setup, and your booking flow keeps running through the transition.</p>
 
 <h3>Does The Daisy work with my existing phone number?</h3>
-<p>Yes. The AI receptionist connects to your existing business phone line. Clients keep calling the same number, and every call gets answered instantly, 24/7.</p>
+<p>Not yet. The Daisy's AI receptionist does not answer phone calls yet. It answers on WhatsApp, Instagram and your booking site, so clients who message you get a reply in seconds, 24/7. Calls to your salon number still reach your team as they do today.</p>
 
 <h3>What if I only need basic booking, not full AI?</h3>
 <p>The Daisy offers different plan tiers. Start with core booking and scheduling, then turn on the advanced AI capabilities as the business grows. Nothing obliges you to use every feature from day one.</p>
@@ -693,7 +692,7 @@ const daisyVsCompetitorsArticle: LocalBlogPost = {
     metaDescription:
       'Compare Daisy AI salon scheduling with traditional booking software. Key differences in booking capture, calendar optimization, language support, and pricing.',
     createdAt: '2025-12-01T05:00:00.000Z',
-    updatedAt: '2025-12-01T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-12-01T05:00:00.000Z',
     locale: 'en',
     sortId: 7,
@@ -775,12 +774,12 @@ const aiSchedulingArticleAr: LocalBlogPost = {
 <li><strong>تنسيق جداول الموظفين:</strong> 1-2 ساعة في مطابقة توفر الموظفين مع طلبات العملاء وتخصصات الخدمة.</li>
 <li><strong>إرسال التذكيرات والتأكيدات:</strong> 1-2 ساعة في الرسائل النصية اليدوية ورسائل واتساب أو المكالمات الهاتفية.</li>
 </ul>
-<p>تُظهر بيانات القطاع أن الصالونات تفوّت 30-40% من المكالمات الواردة لأن الموظفين مشغولون مع العملاء. كل مكالمة فائتة هي حجز محتمل يضيع لصالح منافس يستجيب بشكل أسرع.</p>
+<p>الرسائل التي تبقى دون رد بينما ينشغل الموظفون مع العملاء كثيراً ما تتحول إلى حجوزات لدى منافس يستجيب بشكل أسرع.</p>
 
 <h2>كيف تعمل الجدولة الذكية؟</h2>
 <p>تستخدم منصات الجدولة الذكية مثل <a href="/ar/features/business/ai-salon-management">ديزي</a> التعلم الآلي للتعامل مع سير عمل الحجز بالكامل دون تدخل بشري. إليك العملية خطوة بخطوة:</p>
 <ol>
-<li><strong>يتواصل العميل</strong> عبر الهاتف أو واتساب أو رسائل إنستغرام أو دردشة الموقع أو أي قناة متصلة.</li>
+<li><strong>يتواصل العميل</strong> عبر واتساب أو رسائل إنستغرام أو دردشة الموقع أو أي قناة متصلة.</li>
 <li><strong>يتعرف الذكاء الاصطناعي على العميل</strong> من قاعدة بياناتك أو ينشئ ملفاً شخصياً جديداً تلقائياً.</li>
 <li><strong>يفهم الذكاء الاصطناعي الطلب</strong> - سواء كان حجزاً جديداً أو إعادة جدولة أو استفساراً عن الأسعار أو استفساراً عاماً - ويستجيب بشكل طبيعي بالعربية أو الإنجليزية.</li>
 <li><strong>يتحقق الذكاء الاصطناعي من التوفر الفوري</strong> عبر جميع أعضاء الفريق، مع مراعاة مدة الخدمة ووقت التجهيز والتخصص.</li>
@@ -792,8 +791,8 @@ const aiSchedulingArticleAr: LocalBlogPost = {
 <h2>كم من الوقت توفر كل ميزة؟</h2>
 <p>إليك تفصيل توفير الوقت حسب كل قدرة من قدرات الجدولة الذكية:</p>
 
-<h3>موظف الاستقبال الذكي على مدار الساعة: توفير 3-5 ساعات</h3>
-<p>يتعامل موظف الاستقبال الذكي مع كل استفسار وارد - مكالمات ورسائل ورسائل مواقع التواصل الاجتماعي - دون تدخل بشري. يعمل على مدار الساعة، مما يعني أن الحجوزات التي كانت ستُفقد خلال فترات الذروة أو بعد ساعات العمل يتم التقاطها تلقائياً. يُبلغ أصحاب الصالونات عن القضاء على مقاطعات الهاتف أثناء جلسات العملاء بالكامل.</p>
+<h3>موظف الاستقبال الذكي على مدار الساعة: وقت أقل في الرد على رسائل الحجز</h3>
+<p>يرد موظف الاستقبال الذكي على الاستفسارات التي تصل عبر واتساب ورسائل إنستغرام وموقع الحجز، فلا يضطر أحد إلى ترك عميله. ولا يرد على المكالمات الهاتفية حتى الآن. ولأنه يعمل على مدار الساعة، فإن الحجوزات التي كانت ستُفقد خلال فترات الذروة أو بعد ساعات العمل يتم التقاطها تلقائياً.</p>
 
 <h3>تحسين التقويم الذكي: توفير 2-3 ساعات</h3>
 <p>بدلاً من ترتيب المواعيد يدوياً، يحلل الذكاء الاصطناعي مدة الخدمات ومهارات الموظفين وأنماط الحجز التاريخية لبناء جدول يومي محسّن. يراعي تلقائياً وقت الفاصل بين الخدمات ويتجنب الحجوزات المزدوجة ويملأ الفجوات التي قد تفوتها الجدولة اليدوية.</p>
@@ -811,7 +810,6 @@ const aiSchedulingArticleAr: LocalBlogPost = {
 <p>تُبلغ الصالونات التي تستخدم الجدولة الذكية باستمرار عن هذه النتائج:</p>
 <ul>
 <li><strong>أكثر من 10 ساعات أسبوعياً</strong> متحررة من إدارة الجدولة</li>
-<li><strong>انخفاض بنسبة 30-40%</strong> في فرص الحجز الفائتة</li>
 <li><strong>انخفاض يصل إلى 40% في حالات عدم الحضور</strong> من خلال التذكيرات الذكية</li>
 <li><strong>زيادة بنسبة 15-20%</strong> في المواعيد اليومية من خلال تحسين التقويم</li>
 <li><strong>صفر حجوزات مزدوجة</strong> مع فحص التوفر الفوري</li>
@@ -820,7 +818,7 @@ const aiSchedulingArticleAr: LocalBlogPost = {
 <h2>كيف تبدأ مع الجدولة الذكية</h2>
 <p>إعداد الجدولة الذكية على ديزي يستغرق أقل من ساعة:</p>
 <ol>
-<li><strong>اربط قنواتك:</strong> اربط خط هاتفك وواتساب للأعمال وإنستغرام وموقعك الإلكتروني.</li>
+<li><strong>اربط قنواتك:</strong> اربط حساب واتساب للأعمال وإنستغرام وموقعك الإلكتروني.</li>
 <li><strong>استورد قائمة خدماتك:</strong> أضف الخدمات والمدد والأسعار وتعيينات الموظفين.</li>
 <li><strong>حدد قواعد عملك:</strong> عرّف ساعات العمل وأوقات الفاصل وسياسات الإلغاء ومتطلبات الحجز.</li>
 <li><strong>ابدأ:</strong> يبدأ الذكاء الاصطناعي في التعامل مع الحجوزات فوراً ويحسّن فهمه لعملك خلال الأسابيع الأولى.</li>
@@ -830,10 +828,10 @@ const aiSchedulingArticleAr: LocalBlogPost = {
 <h2>الأسئلة الشائعة</h2>
 
 <h3>هل تعمل الجدولة الذكية للصالونات الصغيرة التي بها موظف أو اثنين فقط؟</h3>
-<p>نعم. الجدولة الذكية ذات قيمة خاصة للصالونات الصغيرة حيث يكون المالك أيضاً مقدم خدمة. بدلاً من مقاطعة جلسات العملاء للرد على مكالمات الحجز، يتعامل الذكاء الاصطناعي مع كل شيء. يُبلغ المصممون المستقلون عن أعلى توفير نسبي للوقت لأنهم لا يستطيعون تفويض مهام الاستقبال لموظفين آخرين.</p>
+<p>نعم. الجدولة الذكية ذات قيمة خاصة للصالونات الصغيرة حيث يكون المالك أيضاً مقدم خدمة. بدلاً من مقاطعة جلسات العملاء للرد على رسائل الحجز، يتولى الذكاء الاصطناعي الرد عليها. يُبلغ المصممون المستقلون عن أعلى توفير نسبي للوقت لأنهم لا يستطيعون تفويض مهام الاستقبال لموظفين آخرين.</p>
 
 <h3>هل سيعرف العملاء أنهم يتحدثون مع ذكاء اصطناعي؟</h3>
-<p>يتواصل الذكاء الاصطناعي في ديزي بشكل طبيعي بالعربية والإنجليزية، مع فهم مصطلحات صناعة التجميل وتفضيلات العملاء. معظم العملاء لا يلاحظون الفرق، وكثيرون يفضلون الاستجابة الفورية على الانتظار أو ترك رسالة صوتية.</p>
+<p>يتواصل الذكاء الاصطناعي في ديزي بشكل طبيعي بالعربية والإنجليزية، مع فهم مصطلحات صناعة التجميل وتفضيلات العملاء. معظم العملاء لا يلاحظون الفرق، وكثيرون يفضلون الرد الفوري على انتظار الرد لساعات.</p>
 
 <h3>هل يمكن للذكاء الاصطناعي التعامل مع طلبات الحجز المعقدة مثل مواعيد المجموعات؟</h3>
 <p>نعم. يمكن للذكاء الاصطناعي إدارة حجوزات الخدمات المتعددة ومواعيد المجموعات والحجوزات المتكررة والطلبات الخاصة. يتحقق من التوفر عبر عدة أعضاء في الفريق في وقت واحد ويجد الأوقات المثالية التي تناسب المجموعة بأكملها.</p>
@@ -845,7 +843,7 @@ const aiSchedulingArticleAr: LocalBlogPost = {
     metaDescription:
       'تعمل الجدولة الذكية على أتمتة حجز الصالونات وتحسين التقويم والتذكيرات. تعرّف على كيفية توفير أصحاب الصالونات لأكثر من 10 ساعات أسبوعياً مع برنامج الجدولة الذكي.',
     createdAt: '2026-03-17T08:00:00.000Z',
-    updatedAt: '2026-03-17T08:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-03-17T08:00:00.000Z',
     locale: 'ar',
     sortId: 4,
@@ -1060,10 +1058,10 @@ const fiveWaysAiArticleAr: LocalBlogPost = {
 <p>انتقل الذكاء الاصطناعي من مجرد ضجة إلى استخدام عملي يومي لشركات التجميل. في 2026، الذكاء الاصطناعي لا يتعلق باستبدال المصممين أو أتمتة الإبداع - بل يتعلق بالقضاء على العبء الإداري الذي يمنع أصحاب الصالونات من التركيز على ما يجيدونه: تقديم خدمة استثنائية.</p>
 <p>إليك خمس طرق محددة ومُثبتة يحوّل بها الذكاء الاصطناعي أعمال التجميل الآن، مع نتائج حقيقية يشهدها أصحاب الصالونات والمنتجعات بالفعل.</p>
 
-<h2>1. موظف استقبال ذكي على مدار الساعة لا يفوّت أي مكالمة</h2>
-<p>أكبر تسرب للإيرادات في الصالونات هو المكالمات الفائتة. تُظهر بيانات القطاع أن الصالونات تفوّت 30-40% من المكالمات الواردة لأن الموظفين مشغولون مع العملاء. كل مكالمة فائتة تمثل حجزاً محتملاً - وعميلاً قد يحجز مع منافس بدلاً منك.</p>
-<p>موظف الاستقبال الذكي، مثل المدمج في <a href="/ar/features/business/ai-salon-management">منصة ديزي</a>، يتعامل مع كل تفاعل عميل عبر الهاتف وواتساب ورسائل إنستغرام ودردشة الموقع والرسائل النصية. يعمل 24 ساعة يومياً، 7 أيام في الأسبوع، يجيب على الاستفسارات ويحجز المواعيد ويعالج المدفوعات ويستجيب بالعربية والإنجليزية.</p>
-<p><strong>الأثر على الأعمال:</strong> يُبلغ أصحاب الصالونات الذين يستخدمون موظفي الاستقبال الذكيين عن التقاط حجوزات كانوا يخسرونها سابقاً - خاصة الاستفسارات بعد ساعات العمل والمكالمات التي تأتي خلال فترات المواعيد المزدحمة.</p>
+<h2>1. موظف استقبال ذكي على مدار الساعة لا يترك رسالة دون رد</h2>
+<p>بطء الرد من أكبر أسباب تسرب الإيرادات في معظم الصالونات. فبينما ينشغل الموظفون مع العملاء، تنتظر رسائل واتساب وإنستغرام، والعميل الذي ينتظر طويلاً كثيراً ما يحجز لدى منافس.</p>
+<p>موظف الاستقبال الذكي، مثل المدمج في <a href="/ar/features/business/ai-salon-management">منصة ديزي</a>، يرد على رسائل العملاء عبر واتساب ورسائل إنستغرام ودردشة الموقع والرسائل النصية. ولا يرد على المكالمات الهاتفية حتى الآن. يعمل 24 ساعة يومياً، 7 أيام في الأسبوع، يجيب على الاستفسارات ويحجز المواعيد ويعالج المدفوعات ويستجيب بالعربية والإنجليزية.</p>
+<p><strong>الأثر على الأعمال:</strong> يُبلغ أصحاب الصالونات الذين يستخدمون موظفي الاستقبال الذكيين عن التقاط حجوزات كانوا يخسرونها سابقاً - خاصة الاستفسارات بعد ساعات العمل والرسائل التي تصل خلال فترات المواعيد المزدحمة.</p>
 
 <h2>2. جدولة ذكية تعظّم الإيرادات يومياً</h2>
 <p>تقاويم الحجز التقليدية تسمح للعملاء باختيار أي موعد متاح. الجدولة الذكية تذهب أبعد من ذلك بتحليل أي ترتيب للمواعيد يولّد أكبر إيرادات ليومك.</p>
@@ -1101,7 +1099,7 @@ const fiveWaysAiArticleAr: LocalBlogPost = {
 <h2>كيف تبدأ باستخدام الذكاء الاصطناعي في صالونك</h2>
 <p>البدء مع الذكاء الاصطناعي لا يتطلب خبرة تقنية أو استثماراً أولياً كبيراً. تدمج منصة ديزي جميع القدرات الخمس في نظام واحد مصمم خصيصاً لشركات التجميل والعافية:</p>
 <ol>
-<li><strong>سجّل واربط قنواتك</strong> - الهاتف وواتساب ومواقع التواصل الاجتماعي والموقع الإلكتروني.</li>
+<li><strong>سجّل واربط قنواتك</strong> - واتساب ومواقع التواصل الاجتماعي والموقع الإلكتروني.</li>
 <li><strong>استورد قائمة خدماتك وجداول موظفيك.</strong></li>
 <li><strong>يبدأ الذكاء الاصطناعي بالعمل فوراً</strong> - التعامل مع الحجوزات وتحسين تقويمك وتعلم أنماط عملك.</li>
 <li><strong>راجع تقارير الرؤى الأسبوعية</strong> وتصرف بناءً على التوصيات.</li>
@@ -1111,10 +1109,10 @@ const fiveWaysAiArticleAr: LocalBlogPost = {
 <h2>الأسئلة الشائعة</h2>
 
 <h3>هل الذكاء الاصطناعي مناسب للصالونات الصغيرة أم للسلاسل الكبيرة فقط؟</h3>
-<p>الجدولة الذكية والأتمتة ذات قيمة خاصة للصالونات الصغيرة حيث يتعامل المالك مع العملاء والإدارة معاً. المصمم المستقل الذي لا يستطيع الرد على الهاتف أثناء المواعيد يستفيد أكثر من موظف الاستقبال الذكي مقارنة بصالون كبير يضم 20 كرسياً مع طاقم استقبال مخصص.</p>
+<p>الجدولة الذكية والأتمتة ذات قيمة خاصة للصالونات الصغيرة حيث يتعامل المالك مع العملاء والإدارة معاً. المصمم المستقل الذي لا يستطيع الرد على الرسائل أثناء المواعيد يستفيد أكثر من موظف الاستقبال الذكي مقارنة بصالون كبير يضم 20 كرسياً مع طاقم استقبال مخصص.</p>
 
 <h3>كم تكلفة برنامج صالون الذكاء الاصطناعي؟</h3>
-<p>تقدم ديزي إدارة صالونات مدعومة بالذكاء الاصطناعي بدون عمولة على الحجوزات. قم بزيارة <a href="/ar/pricing/business">صفحة الأسعار</a> لمعرفة تفاصيل الخطط الحالية. تجد معظم الصالونات أن الإيرادات المُلتقطة من الحجوزات التي كانت تُفقد سابقاً وحدها تغطي تكلفة الاشتراك.</p>
+<p>تقدم ديزي إدارة صالونات مدعومة بالذكاء الاصطناعي بدون عمولة على حجوزات عملائك الحاليين. قم بزيارة <a href="/ar/pricing/business">صفحة الأسعار</a> لمعرفة تفاصيل الخطط الحالية. تجد معظم الصالونات أن الإيرادات المُلتقطة من الحجوزات التي كانت تُفقد سابقاً وحدها تغطي تكلفة الاشتراك.</p>
 
 <h3>هل يعمل الذكاء الاصطناعي باللغة العربية؟</h3>
 <p>يعمل الذكاء الاصطناعي في ديزي أصلاً بالعربية والإنجليزية مع فهم كامل للسياق الثقافي. إنه ليس طبقة ترجمة - بل يفهم ويستجيب حقاً بكلتا اللغتين، بما في ذلك لهجات دول مجلس التعاون الخليجي ومصطلحات صناعة التجميل.</p>
@@ -1123,7 +1121,7 @@ const fiveWaysAiArticleAr: LocalBlogPost = {
     metaDescription:
       'خمس طرق يحوّل بها الذكاء الاصطناعي أعمال التجميل: موظفو استقبال على مدار الساعة، جدولة ذكية، رؤى تنبؤية، تواصل تلقائي، وبيع إضافي ذكي.',
     createdAt: '2025-04-28T05:00:00.000Z',
-    updatedAt: '2025-04-28T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-04-28T05:00:00.000Z',
     locale: 'ar',
     sortId: 6,
@@ -1195,9 +1193,9 @@ const aiToolsProfessionalArticleAr: LocalBlogPost = {
 <h2>أدوات الذكاء الاصطناعي الأساسية لمتخصصي التجميل</h2>
 
 <h3>1. مساعد الحجز الذكي</h3>
-<p>يتعامل مساعد الحجز الذكي مع طلبات المواعيد عبر جميع قنواتك - الهاتف وواتساب ورسائل إنستغرام وموقعك الإلكتروني - دون الحاجة إلى التوقف عما تفعله. عندما يرسل عميل محتمل رسالة في التاسعة مساءً يسأل عن التوفر، يستجيب الذكاء الاصطناعي فوراً ويتحقق من تقويمك ويحجز الموعد.</p>
+<p>يتعامل مساعد الحجز الذكي مع طلبات المواعيد عبر القنوات التي يراسلك العملاء من خلالها، مثل واتساب ورسائل إنستغرام وموقعك الإلكتروني، دون الحاجة إلى التوقف عما تفعله. عندما يرسل عميل محتمل رسالة في التاسعة مساءً يسأل عن التوفر، يستجيب الذكاء الاصطناعي فوراً ويتحقق من تقويمك ويحجز الموعد.</p>
 <p><strong>لماذا يهم للمستقلين:</strong> على عكس موظفي الصالون الذين يمكنهم تحويل المكالمات إلى الاستقبال، يخسر المتخصصون المستقلون حجوزات في كل مرة لا يمكنهم فيها الرد فوراً. مساعد ذكي يعني أنك لن تفوّت أي استفسار، حتى أثناء المواعيد أو في أيام الراحة أو خارج ساعات العمل.</p>
-<p>تتضمن <a href="/ar/features/professional/ai-salon-management">أدوات الذكاء الاصطناعي للمتخصصين في ديزي</a> مساعد حجز مستقل تماماً يتعامل مع المحادثة بالكامل بشكل طبيعي بالعربية والإنجليزية.</p>
+<p>تتضمن <a href="/ar/features/professional/ai-salon-management">أدوات الذكاء الاصطناعي للمتخصصين في ديزي</a> مساعد حجز مستقل تماماً يتعامل مع المحادثة بالكامل بشكل طبيعي بالعربية والإنجليزية، عبر واتساب وإنستغرام وموقع الحجز. ولا يرد على المكالمات الهاتفية حتى الآن.</p>
 
 <h3>2. إدارة التقويم الذكية</h3>
 <p>إدارة تقويمك الخاص تعني تحقيق التوازن بين تفضيلات العملاء ووقت التنقل (للمتخصصين المتنقلين) ومدة الخدمات وجدولك الشخصي. تحلل أدوات التقويم الذكية أنماطك وتحسّن يومك تلقائياً.</p>
@@ -1254,19 +1252,19 @@ const aiToolsProfessionalArticleAr: LocalBlogPost = {
 <h2>الأسئلة الشائعة</h2>
 
 <h3>هل أدوات الذكاء الاصطناعي ميسورة التكلفة للمتخصصين المستقلين؟</h3>
-<p>صُممت ديزي مع وضع المتخصصين المستقلين في الاعتبار. الخطط مسعّرة للعاملين المنفردين، والمنصة لا تفرض عمولة على الحجوزات. يجد معظم المتخصصين أن التقاط بضع حجوزات فقط كانوا سيفقدونها سابقاً يغطي تكلفة الاشتراك بالكامل.</p>
+<p>صُممت ديزي مع وضع المتخصصين المستقلين في الاعتبار. الخطط مسعّرة للعاملين المنفردين، والمنصة لا تفرض عمولة على حجوزات عملائك الحاليين. يجد معظم المتخصصين أن التقاط بضع حجوزات فقط كانوا سيفقدونها سابقاً يغطي تكلفة الاشتراك بالكامل.</p>
 
 <h3>هل أحتاج أن أكون متمكناً من التكنولوجيا لاستخدام أدوات الذكاء الاصطناعي؟</h3>
 <p>لا. أدوات الذكاء الاصطناعي الحديثة مصممة لتعمل وتُنسى. تربط قنواتك وتحدد تفضيلاتك والذكاء الاصطناعي يتولى الباقي. واجهة ديزي مبنية لمتخصصي التجميل، وليس خبراء التكنولوجيا.</p>
 
 <h3>هل يمكن للذكاء الاصطناعي مساعدتي إذا كنت في البداية فقط؟</h3>
-<p>بالتأكيد. أدوات الذكاء الاصطناعي ذات قيمة خاصة للمتخصصين الذين يبنون قاعدة عملائهم لأنها تضمن التقاط كل حجز محتمل والتعامل مع كل تفاعل بشكل احترافي، حتى عندما تكون مشغولاً بالمواعيد. تساعد المنصة أيضاً المتخصصين الجدد في الاكتشاف من خلال مطابقتهم مع العملاء الذين يبحثون عن خدماتهم المحددة.</p>
+<p>بالتأكيد. أدوات الذكاء الاصطناعي ذات قيمة خاصة للمتخصصين الذين يبنون قاعدة عملائهم لأنها تضمن التقاط كل حجز محتمل والتعامل مع كل تفاعل بشكل احترافي، حتى عندما تكون مشغولاً بالمواعيد. وإذا انضممت إلى سوق ديزي الاختياري، المتاح في دول مختارة بعد مراجعة جودة الخدمة، فقد يساعد أيضاً العملاء الذين يبحثون عن خدماتك المحددة في العثور عليك.</p>
 `,
     metaTitle: 'أدوات الذكاء الاصطناعي لمتخصصي التجميل المستقلين | ديزي',
     metaDescription:
       'أدوات الذكاء الاصطناعي الأساسية للمصممين المستقلين ومتخصصي التجميل: حجز تلقائي، جدولة ذكية، رؤى العملاء، والمزيد. لا حاجة لمهارات تقنية.',
     createdAt: '2025-07-05T05:00:00.000Z',
-    updatedAt: '2025-07-05T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-07-05T05:00:00.000Z',
     locale: 'ar',
     sortId: 41,
@@ -1340,8 +1338,8 @@ const daisyVsCompetitorsArticleAr: LocalBlogPost = {
 
 <h3>استجابة العملاء والتقاط الحجوزات</h3>
 <p><strong>المنصات التقليدية:</strong> توفر صفحة حجز إلكتروني حيث يمكن للعملاء الحجز الذاتي خلال المواعيد المتاحة. تتطلب المكالمات الهاتفية ورسائل واتساب واستفسارات مواقع التواصل الاجتماعي معالجة يدوية من الموظفين. بعد ساعات العمل، تبقى الحجوزات المحتملة بدون رد حتى يوم العمل التالي.</p>
-<p><strong>ديزي (مدعومة بالذكاء الاصطناعي):</strong> يتعامل موظف الاستقبال الذكي مع كل تفاعل وارد - مكالمات هاتفية وواتساب ورسائل إنستغرام ودردشة الموقع والرسائل النصية - على مدار الساعة. يفهم طلبات الحجز ويتحقق من التوفر ويؤكد المواعيد ويعالج المدفوعات دون تدخل بشري. يحصل العملاء على استجابة فورية بغض النظر عن وقت تواصلهم.</p>
-<p><strong>لماذا يهم:</strong> تفوّت الصالونات 30-40% من المكالمات الواردة. الفرق بين الرد على كل استفسار وفقدان ثلثها يتراكم إلى إيرادات كبيرة على مدى الأسابيع والأشهر.</p>
+<p><strong>ديزي (مدعومة بالذكاء الاصطناعي):</strong> يرد موظف الاستقبال الذكي على الرسائل عبر واتساب ورسائل إنستغرام ودردشة الموقع والرسائل النصية على مدار الساعة. ولا يرد على المكالمات الهاتفية حتى الآن. يفهم طلبات الحجز ويتحقق من التوفر ويؤكد المواعيد ويعالج المدفوعات دون تدخل بشري. يحصل العملاء على رد فوري متى أرسلوا رسالة.</p>
+<p><strong>لماذا يهم:</strong> رسالة الحجز التي يُرد عليها خلال ثوانٍ في العاشرة مساءً قد تتحول إلى موعد، أما إذا تُركت حتى الصباح فكثيراً ما تذهب إلى صالون آخر. ومع مرور الأسابيع والأشهر يتراكم أثر هذه الردود.</p>
 
 <h3>ذكاء التقويم</h3>
 <p><strong>المنصات التقليدية:</strong> تعرض المواعيد المتاحة وتسمح للعملاء بالاختيار. يُظهر التقويم ما هو متاح لكنه لا يقترح ما هو مثالي. الفجوات بين المواعيد والتسلسل غير الأمثل للخدمات والأوقات غير المستغلة تُترك للموظفين لإدارتها يدوياً.</p>
@@ -1365,8 +1363,8 @@ const daisyVsCompetitorsArticleAr: LocalBlogPost = {
 
 <h3>نموذج التسعير</h3>
 <p><strong>المنصات التقليدية:</strong> تتنوع النماذج بشكل كبير. بعضها يفرض رسوماً لكل حجز (عمولة)، وبعضها لكل عضو في الفريق، وبعضها رسوم شهرية ثابتة مع مستويات ميزات. نماذج العمولة يمكن أن تصبح مكلفة مع نمو عملك.</p>
-<p><strong>ديزي:</strong> اشتراك بدون عمولة على الحجوزات. نموك لا يزيد تكاليف المنصة بشكل متناسب. انظر <a href="/ar/pricing/business">صفحة الأسعار</a> للخطط الحالية.</p>
-<p><strong>لماذا يهم:</strong> التسعير القائم على العمولة يعاقب النجاح. كلما حجزت مواعيد أكثر، زادت تكاليف البرنامج. التسعير الثابت يعني تحسن هوامش ربحك مع النمو.</p>
+<p><strong>ديزي:</strong> اشتراك بدون عمولة على حجوزات عملائك الحاليين، وتُطبق العمولة فقط على العملاء الجدد الذين يجلبهم السوق الاختياري. تشمل خطط الأعمال 5 أو 10 أو 15 عضواً في الفريق، وكل تقويم إضافي بـ 10 دولارات شهرياً. انظر <a href="/ar/pricing/business">صفحة الأسعار</a> للخطط الحالية.</p>
+<p><strong>لماذا يهم:</strong> التسعير القائم على العمولة يعاقب النجاح. كلما حجزت مواعيد أكثر، زادت تكاليف البرنامج. ومع الاشتراك لا ترتفع الفاتورة مع كل حجز، فتتحسن هوامش ربحك مع النمو.</p>
 
 <h2>جدول المقارنة الملخص</h2>
 <table>
@@ -1374,20 +1372,20 @@ const daisyVsCompetitorsArticleAr: LocalBlogPost = {
 <tr><th>القدرة</th><th>برامج الصالون التقليدية</th><th>ديزي (مدعومة بالذكاء الاصطناعي)</th></tr>
 </thead>
 <tbody>
-<tr><td>التقاط الحجوزات</td><td>نموذج إلكتروني + يدوي للمكالمات/الرسائل</td><td>الذكاء الاصطناعي يتعامل مع جميع القنوات على مدار الساعة</td></tr>
+<tr><td>التقاط الحجوزات</td><td>نموذج إلكتروني + يدوي للمكالمات/الرسائل</td><td>الذكاء الاصطناعي يرد على رسائل واتساب وإنستغرام وموقع الحجز على مدار الساعة</td></tr>
 <tr><td>تحسين التقويم</td><td>إدارة يدوية للمواعيد</td><td>جدولة محسّنة بالذكاء الاصطناعي</td></tr>
 <tr><td>دعم اللغات</td><td>الإنجليزية أساسية، ترجمات بسيطة</td><td>عربية + إنجليزية أصيلة</td></tr>
 <tr><td>التواصل مع العملاء</td><td>تذكيرات أساسية</td><td>أتمتة دورة كاملة</td></tr>
 <tr><td>التحليلات</td><td>تقارير تاريخية</td><td>ذكاء تنبؤي</td></tr>
 <tr><td>البيع الإضافي</td><td>يدوي، يعتمد على الموظفين</td><td>مدعوم بالذكاء الاصطناعي، مخصص بالبيانات</td></tr>
-<tr><td>العمولة</td><td>غالبًا لكل حجز</td><td>بدون عمولة</td></tr>
+<tr><td>العمولة</td><td>غالبًا لكل حجز</td><td>0% على عملائك الحاليين</td></tr>
 </tbody>
 </table>
 
 <h2>لمن منصة ديزي الأنسب؟</h2>
 <p>منصة ديزي المدعومة بالذكاء الاصطناعي مصممة لشركات التجميل والعافية التي تريد:</p>
 <ul>
-<li>التقاط كل حجز محتمل دون إضافة موظفي استقبال</li>
+<li>الرد على كل رسالة حجز دون إضافة موظفي استقبال</li>
 <li>خدمة العملاء الناطقين بالعربية والإنجليزية بشكل متساوٍ</li>
 <li>اتخاذ قرارات مبنية على البيانات بدلاً من الاعتماد على الحدس</li>
 <li>أتمتة المهام الإدارية للتركيز على خدمة العملاء</li>
@@ -1402,7 +1400,7 @@ const daisyVsCompetitorsArticleAr: LocalBlogPost = {
 <p>نعم. تدعم ديزي نقل البيانات من معظم منصات إدارة الصالونات. يمكن استيراد سجلات العملاء وسجل الحجوزات وقائمة الخدمات أثناء الإعداد. التحول مصمم ليكون سلساً بدون انقطاع في تدفق الحجز.</p>
 
 <h3>هل تعمل ديزي مع رقم هاتفي الحالي؟</h3>
-<p>نعم. يتصل موظف الاستقبال الذكي بخط هاتف عملك الحالي. يستمر العملاء في الاتصال بنفس الرقم - الفرق أن كل مكالمة تُجاب فوراً، على مدار الساعة.</p>
+<p>ليس بعد. لا يرد موظف الاستقبال الذكي من ديزي على المكالمات الهاتفية حتى الآن. فهو يرد عبر واتساب وإنستغرام وموقع الحجز، فيحصل العملاء الذين يراسلونك على رد خلال ثوانٍ على مدار الساعة. أما المكالمات إلى رقم صالونك فتصل إلى فريقك كما هو الحال اليوم.</p>
 
 <h3>ماذا لو كنت أحتاج فقط إلى حجز أساسي، وليس ذكاء اصطناعي كامل؟</h3>
 <p>تقدم ديزي مستويات مختلفة من الخطط. يمكنك البدء بميزات الحجز والجدولة الأساسية وتفعيل قدرات الذكاء الاصطناعي المتقدمة مع نمو عملك. لا يوجد شرط لاستخدام كل ميزة من اليوم الأول.</p>
@@ -1411,7 +1409,7 @@ const daisyVsCompetitorsArticleAr: LocalBlogPost = {
     metaDescription:
       'قارن جدولة ديزي الذكية للصالونات مع برامج الحجز التقليدية. الفروقات الرئيسية في التقاط الحجوزات وتحسين التقويم ودعم اللغات والأسعار.',
     createdAt: '2025-12-01T05:00:00.000Z',
-    updatedAt: '2025-12-01T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-12-01T05:00:00.000Z',
     locale: 'ar',
     sortId: 7,

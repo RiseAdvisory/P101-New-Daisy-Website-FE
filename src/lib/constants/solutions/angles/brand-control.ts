@@ -186,8 +186,8 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       },
       titleFraque: 'Frequently Asked Questions',
       fallbackFaqs: [
-        { question: 'Can I use my own domain?', answer: 'Yes. Connect your own domain and the booking page lives on your website rather than ours, so customers see your URL throughout.' },
-        { question: 'What can I customize?', answer: 'Your logo, your business name and your brand colours across the booking page, plus confirmation messages, reminders and receipts. Custom fonts and custom domains are not supported yet.' },
+        { question: 'Can I use my own domain?', answer: 'Not directly. Daisy hosts your branded booking site and gives you a short link to share, such as thedaisy.link/your-salon. You can redirect your own domain to that page, and the page shows your logo, name and colours.' },
+        { question: 'What can I customize?', answer: 'Your logo, your business name and your brand colours across the booking page, plus confirmation messages, reminders and receipts. Custom fonts are not supported yet. Daisy hosts the booking page, and you can redirect your own domain to it.' },
         { question: 'Will customers see The Daisy brand?', answer: 'No. There is no "Powered by" badge and no co-branding. Your customers deal with your brand and nothing else.' },
         { question: 'Can I match my existing brand guidelines?', answer: 'Yes. Upload your logo, set your colours and choose your fonts, and the booking experience matches the brand you already have.' },
       ],
@@ -222,7 +222,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
             description:
               'عميل ينقر على رابط الحجز ويصل إلى صفحة تبدو وتشعر بأنها ملكك بالكامل. شعارك، اسمك، ألوان علامتك. بدون أي علامة لديزي على الصفحة.',
             listSub: [
-              'دعم النطاق المخصص',
+              'رابط حجز قصير قابل للمشاركة',
               'شعارك وألوان علامتك التجارية',
               'بدون علامات تجارية لأطراف ثالثة',
             ],
@@ -343,8 +343,8 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
       },
       titleFraque: 'أسئلة شائعة',
       fallbackFaqs: [
-        { question: 'كيف سيبدو رابط الحجز الخاص بي؟', answer: 'تحصل على رابط حجز قصير تشاركه، مثل thedaisy.link/your-salon. النطاقات المخصصة غير مدعومة حالياً، لكن الصفحة نفسها لا تحمل أي علامة لديزي: يرى العملاء شعارك واسمك وألوانك.' },
-        { question: 'ما الذي يمكنني تخصيصه؟', answer: 'شعارك، واسم نشاطك، وألوان علامتك على صفحة الحجز، إضافة إلى رسائل التأكيد وإشعارات التذكير والإيصالات. الخطوط المخصصة والنطاقات المخصصة غير مدعومة حالياً.' },
+        { question: 'كيف سيبدو رابط الحجز الخاص بي؟', answer: 'تحصل على رابط حجز قصير تشاركه، مثل thedaisy.link/your-salon. تستضيف ديزي موقع الحجز، ويمكنك توجيه نطاقك الخاص إليه، والصفحة نفسها لا تحمل أي علامة لديزي: يرى العملاء شعارك واسمك وألوانك.' },
+        { question: 'ما الذي يمكنني تخصيصه؟', answer: 'شعارك، واسم نشاطك، وألوان علامتك على صفحة الحجز، إضافة إلى رسائل التأكيد وإشعارات التذكير والإيصالات. الخطوط المخصصة غير مدعومة حالياً. وتستضيف ديزي صفحة الحجز، ويمكنك توجيه نطاقك الخاص إليها.' },
         { question: 'هل سيرى العملاء علامة ذا ديزي التجارية؟', answer: 'لا. لا توجد شارات "مدعوم من" أو علامات مشتركة. عملاؤك يتفاعلون مع علامتك التجارية حصريًا.' },
         { question: 'هل يمكنني مطابقة إرشادات علامتي التجارية الحالية؟', answer: 'ارفع شعارك وحدد ألوان علامتك، وتحمل تجربة الحجز هويتك دون أي علامة لديزي على الصفحة. الخطوط المخصصة غير مدعومة حالياً.' },
       ],
@@ -478,7 +478,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
           { label: 'Client Management', description: 'Build relationships with detailed client profiles' },
           { label: 'Smart Notifications', description: 'Appointment reminders that reduce no-shows' },
           { label: 'Calendar Sync', description: 'Sync with Google Calendar and other tools' },
-          { label: 'Marketplace Visibility', description: 'Customers find you when searching nearby' },
+          { label: 'Marketplace Visibility', description: 'Optional listing for nearby searches, in selected countries' },
         ],
         stats: [
           { value: '1', context: 'branded page' },
@@ -505,7 +505,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         { question: 'Can I customize my profile page?', answer: 'Yes. Add your name, photo, bio, portfolio images, service descriptions and pricing, and the profile reads like your own website.' },
         { question: 'Will clients see The Daisy brand?', answer: 'Clients deal with your profile. Your name, your work and your brand are what they remember.' },
         { question: 'Can I add my portfolio?', answer: 'Yes. Upload before and after photos, service images and client transformations, and the portfolio sits front and centre on your profile.' },
-        { question: 'How do clients find my page?', answer: 'Your profile shows up in the Daisy marketplace when someone searches for beauty services near you, and you can share your direct booking link anywhere else you post.' },
+        { question: 'How do clients find my page?', answer: 'If you join the Daisy marketplace, which is optional and available in selected countries, your profile can show up when someone searches for beauty services near you. You can also share your direct booking link anywhere you post.' },
       ],
     },
     ar: {
@@ -635,7 +635,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
           { label: 'إدارة العملاء', description: 'ابنِ علاقات مع ملفات عملاء مفصلة' },
           { label: 'إشعارات ذكية', description: 'تذكيرات بالمواعيد تقلل حالات عدم الحضور' },
           { label: 'مزامنة التقويم', description: 'مزامنة مع تقويم جوجل وأدوات أخرى' },
-          { label: 'ظهور في السوق', description: 'العملاء يجدونك عند البحث بالقرب منهم' },
+          { label: 'ظهور في السوق', description: 'إدراج اختياري يظهر في عمليات البحث القريبة، في دول مختارة' },
         ],
         stats: [
           { value: '1', context: 'صفحة بعلامتك' },
@@ -662,7 +662,7 @@ const brandControlAngle: Record<'business' | 'professional', I18nContent<Landing
         { question: 'هل يمكنني تخصيص صفحة ملفي الشخصي؟', answer: 'نعم. يمكنك إضافة اسمك وصورتك ونبذتك وصور أعمالك وأوصاف الخدمات والأسعار. ملفك الشخصي يبدو ويشعر كأنه موقعك المهني الخاص.' },
         { question: 'هل سيرى العملاء علامة ذا ديزي التجارية؟', answer: 'العملاء يتفاعلون مع ملفك المهني. اسمك وأعمالك وعلامتك هي ما يرونه ويتذكرونه.' },
         { question: 'هل يمكنني إضافة معرض أعمالي؟', answer: 'بالتأكيد. ارفع صور قبل/بعد وصور عرض الخدمات وتحولات العملاء. معرض أعمالك يُعرض بشكل بارز على صفحة ملفك الشخصي.' },
-        { question: 'كيف يجد العملاء صفحتي؟', answer: 'يظهر ملفك الشخصي في سوق ديزي عندما يبحث العملاء عن خدمات التجميل في منطقتك. يمكنك أيضًا مشاركة رابط الحجز المباشر على وسائل التواصل الاجتماعي وتطبيقات المراسلة.' },
+        { question: 'كيف يجد العملاء صفحتي؟', answer: 'إذا انضممت إلى سوق ديزي، وهو اختياري ومتاح في دول مختارة، يمكن أن يظهر ملفك الشخصي عندما يبحث العملاء عن خدمات التجميل في منطقتك. يمكنك أيضًا مشاركة رابط الحجز المباشر على وسائل التواصل الاجتماعي وتطبيقات المراسلة.' },
       ],
     },
   },

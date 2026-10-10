@@ -19,7 +19,7 @@ export const salonManagementSoftware: PillarPageData = {
   heroSubtitle:
     'How salon owners use technology to buy back time, grow revenue and treat clients better, without making the day more complicated.',
   readingTime: '18 min read',
-  lastUpdated: '2026-04-27T00:00:00.000Z',
+  lastUpdated: '2026-10-10T00:00:00.000Z',
 
   keyTakeaways: [
     'One platform takes the place of 5+ separate tools, covering booking, payments, marketing, team management and analytics.',
@@ -122,7 +122,7 @@ export const salonManagementSoftware: PillarPageData = {
 <h3>What manual management costs you</h3>
 <p>Salon owners who rely on manual processes experience a predictable set of problems:</p>
 <ul>
-  <li><strong>Missed bookings:</strong> Industry data shows salons miss 30-40% of inbound phone calls because staff are busy with clients. Each missed call is a potential booking lost to a competitor.</li>
+  <li><strong>Missed bookings:</strong> When staff are busy with clients, calls and messages wait for a reply, and each one left too long is a potential booking lost to a competitor.</li>
   <li><strong>No-shows and late cancellations:</strong> Without automated reminders, the average no-show rate sits between 15-20%. For a salon generating $50,000 monthly, that represents $7,500-$10,000 in lost revenue.</li>
   <li><strong>Scheduling conflicts:</strong> Double bookings, mismatched service durations, and forgotten staff availability create chaos that damages the client experience and team morale.</li>
   <li><strong>Invisible performance data:</strong> Without analytics, you cannot identify which services are most profitable, which team members are underbooked, or which marketing efforts actually drive revenue.</li>
@@ -132,15 +132,14 @@ export const salonManagementSoftware: PillarPageData = {
 <h3>The price of doing nothing</h3>
 <p>The cost is not just the software subscription you are avoiding. It is the revenue you are leaving on the table. Consider a salon with five stylists:</p>
 <ul>
-  <li>Missed calls cost approximately $3,000-$5,000 per month in lost bookings</li>
   <li>No-shows without automated reminders cost $2,000-$4,000 per month</li>
   <li>Calendar gaps from inefficient scheduling cost $1,500-$3,000 per month</li>
   <li>Owner time spent on admin (at $50/hour equivalent) costs $2,500-$3,000 per month</li>
 </ul>
-<p>Total: $9,000-$15,000 per month in lost revenue and opportunity cost, far exceeding the $100-$400 monthly cost of comprehensive salon software. The question is not whether you can afford software; it is whether you can afford to operate without it.</p>`,
+<p>Total: $6,000-$10,000 per month in lost revenue and opportunity cost, before counting the bookings lost to unanswered inquiries, far exceeding the $100-$400 monthly cost of comprehensive salon software. Running without software usually costs more than paying for it.</p>`,
       callout: {
         type: 'warning',
-        text: 'Salons that miss 30-40% of inbound calls due to staff being busy with clients lose thousands in potential bookings every month. An <a href="/en/glossary/ai-receptionist-for-salons">AI receptionist</a> captures every inquiry 24/7, even outside business hours.',
+        text: 'Inquiries that wait while staff are busy with clients turn into bookings for someone else. An <a href="/en/glossary/ai-receptionist-for-salons">AI receptionist</a> answers messages 24/7, even outside business hours. Daisy\'s works on WhatsApp, Instagram and the booking site and does not answer phone calls yet.',
       },
       relatedLinks: [
         {
@@ -397,8 +396,8 @@ export const salonManagementSoftware: PillarPageData = {
       content: `<p>AI is the single biggest shift in salon technology since online booking. It moves software from a passive tool that records what happens in your salon to an active system that manages, predicts, and optimizes your business around the clock, without human intervention.</p>
 
 <h3>The 24/7 AI receptionist</h3>
-<p>The most immediately impactful AI feature for salons is a virtual receptionist that handles every client inquiry, phone calls, WhatsApp messages, Instagram DMs, website chat, automatically, in any language, at any hour. Unlike a human receptionist who can only handle one call at a time during business hours, <a href="/en/features/business/ai-salon-management">an AI receptionist</a> manages unlimited simultaneous conversations 24/7.</p>
-<p>This solves the salon industry's biggest revenue leak: missed calls. When your team is busy with clients, the AI handles booking requests, answers pricing questions, manages cancellations, and adds new clients to your database, instantly. Salons using AI receptionists report capturing 30-50% more bookings simply by responding to inquiries they previously missed.</p>
+<p>The most immediately impactful AI feature for salons is a virtual receptionist that answers client messages on WhatsApp, Instagram DMs and website chat automatically, in several languages, at any hour. Unlike a human receptionist who can only handle one conversation at a time during business hours, <a href="/en/features/business/ai-salon-management">an AI receptionist</a> manages many conversations at once, 24/7. Daisy's works on WhatsApp, Instagram and the booking site, and it does not answer phone calls yet.</p>
+<p>This closes one of the salon industry's biggest revenue leaks: unanswered inquiries. When your team is busy with clients, the AI handles booking requests, answers pricing questions, manages cancellations, and adds new clients to your database, instantly.</p>
 
 <h3>Predictive analytics and smart scheduling</h3>
 <p>AI analyses your historical data to predict future demand patterns, enabling proactive business decisions:</p>
@@ -489,7 +488,7 @@ export const salonManagementSoftware: PillarPageData = {
   </thead>
   <tbody>
     <tr>
-      <td>Booking volume (missed calls eliminated)</td>
+      <td>Booking volume (24/7 online booking and instant replies)</td>
       <td>15-25% more bookings</td>
       <td>Compare monthly booking count before/after</td>
     </tr>
@@ -520,7 +519,7 @@ export const salonManagementSoftware: PillarPageData = {
 <p>Quantify the admin time and operational costs that software eliminates:</p>
 <ul>
   <li><strong>Owner admin time:</strong> 10-15 hours per week saved, valued at your effective hourly rate ($50-$100/hour = $2,000-$6,000/month)</li>
-  <li><strong>Receptionist hours:</strong> If AI handles booking inquiries, you may reduce reception coverage by 50-75%, saving $1,500-$3,000/month</li>
+  <li><strong>Receptionist hours:</strong> If AI handles booking messages, your reception team spends less time on routine inquiries and more on the clients in front of them</li>
   <li><strong>Marketing tool subscriptions:</strong> Replacing separate SMS, email, and loyalty platforms saves $100-$300/month</li>
   <li><strong>Accounting time:</strong> Automated reporting and payment reconciliation saves 3-5 hours per month of bookkeeping</li>
 </ul>
@@ -528,7 +527,7 @@ export const salonManagementSoftware: PillarPageData = {
 <h3>The formula</h3>
 <p>Calculate your salon's specific ROI with this straightforward formula:</p>
 <ol>
-  <li><strong>Monthly revenue gain:</strong> (New bookings from reduced missed calls) + (Revenue recovered from no-show reduction) + (Revenue from improved calendar utilization)</li>
+  <li><strong>Monthly revenue gain:</strong> (New bookings from online booking and faster replies) + (Revenue recovered from no-show reduction) + (Revenue from improved calendar utilization)</li>
   <li><strong>Monthly cost savings:</strong> (Hours saved x hourly rate) + (Eliminated tool subscriptions) + (Reduced reception staffing)</li>
   <li><strong>Monthly software cost:</strong> Your platform subscription + any per-transaction fees</li>
   <li><strong>Monthly ROI:</strong> (Revenue gain + Cost savings - Software cost) / Software cost x 100</li>
@@ -577,13 +576,13 @@ export const salonManagementSoftware: PillarPageData = {
 
 <h3>Platforms replace point solutions</h3>
 <p>The future belongs to platforms, not individual tools. Salon owners will choose an ecosystem, a platform that connects booking, payments, marketing, client communication, and growth tools, and build their entire business operations within it. This mirrors the broader technology trend where businesses consolidate around fewer, more powerful platforms rather than managing dozens of separate tools.</p>
-<p>Platforms with strong ecosystem effects, where the value of the platform increases as more businesses and clients use it, will dominate. A marketplace platform like Daisy, where every new salon adds more clients to the network and every new client increases visibility for all salons, creates network effects that standalone tools simply cannot match.</p>
+<p>Platforms with strong ecosystem effects, where the value of the platform increases as more businesses and clients use it, will dominate. A marketplace platform like Daisy, where every new salon adds more clients to the network and every new client increases visibility for the salons listed on it, creates network effects that standalone tools simply cannot match.</p>
 
 <h3>Personalisation at scale</h3>
 <p>Generic marketing blasts are dying. The next generation of salon software enables one-to-one personalization for every client interaction, automated messages that reference specific services, products, and preferences, timed to each client's individual patterns. A client who books every six weeks receives a rebooking prompt at week five. A client who always adds a treatment upgrade gets a personalized upsell suggestion. This level of personalization, previously only possible for salons with a single attentive owner, becomes automated and scalable.</p>
 
 <h3>Talking to your software</h3>
-<p>Keyboard and touchscreen are not the only interfaces anymore. Voice-activated salon management, checking tomorrow's schedule by asking your phone, or having your AI receptionist handle a phone call with natural conversation, is already possible and will become mainstream. Salons that adopt platforms with strong conversational AI capabilities position themselves for a future where clients expect to interact with businesses as naturally as they interact with friends.</p>
+<p>Keyboard and touchscreen are not the only interfaces anymore. Voice-activated salon management, such as checking tomorrow's schedule by asking your phone, or an AI receptionist that answers phone calls in natural conversation, is already possible with some tools and is likely to become mainstream. Daisy's AI receptionist works on WhatsApp, Instagram and the booking site today, and it does not answer phone calls yet. Salons that adopt platforms with strong conversational AI capabilities position themselves for a future where clients expect to interact with businesses as naturally as they interact with friends.</p>
 
 <h3>Data as the moat</h3>
 <p>The most important asset your salon software generates is not bookings or payments. It is data. Client preferences, seasonal demand patterns, service profitability, team performance, and marketing effectiveness data compounds in value over time. Salons that start collecting and acting on this data now will have years of strategic insight that new competitors cannot replicate. Choose a platform that gives you full ownership and access to your data, not one that keeps it locked behind proprietary walls.</p>
@@ -607,7 +606,7 @@ export const salonManagementSoftware: PillarPageData = {
     {
       question: 'What is the best salon management software?',
       answer:
-        'The best salon management software depends on your salon\'s size and goals, but the strongest platforms combine AI automation, online booking, client communication, payments, marketing, team management, and analytics in one system. Daisy is designed as an AI-native, all-in-one platform that covers all eight essential feature categories, with the added advantage of a customer acquisition marketplace that actively brings new clients to your business. When evaluating, score each platform across all eight categories rather than focusing on a single feature.',
+        'The best salon management software depends on your salon\'s size and goals, but the strongest platforms combine AI automation, online booking, client communication, payments, marketing, team management, and analytics in one system. Daisy is designed as an AI-native, all-in-one platform that covers all eight essential feature categories, with the added advantage of an optional customer acquisition marketplace, available in selected countries, that brings new clients to the businesses listed on it. When evaluating, score each platform across all eight categories rather than focusing on a single feature.',
     },
     {
       question: 'How much does salon software cost?',

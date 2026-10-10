@@ -266,7 +266,7 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Tipping in the beauty industry: the current landscape</h2>
 <p>Tipping accounts for 15&ndash;25% of a beauty professional&rsquo;s total compensation in most markets, and almost no salon has written a policy for it. Clients guess at what is expected, staff cannot predict their income, and the owner ends up arbitrating arguments about who gets what. A proper framework inside your <a href="/en/resources/blog/business/salon-payment-solutions">salon payment workflow</a> ends the guessing for everyone.</p>
-<p>Digital payment changed all of this. Cash tips are falling away because fewer people carry any. A 2025 Square report found that digital tip prompts increase average gratuity by 18% compared to cash-only tipping, though only where the interface is well designed and belongs to the checkout rather than interrupting it. Ignoring that shift quietly cuts your team&rsquo;s income.</p>
+<p>Digital payment changed all of this. Cash tips are falling away because fewer people carry any. Digital tip prompts can raise what clients leave, but only where the interface is well designed and belongs to the checkout rather than interrupting it. Ignoring that shift quietly cuts your team&rsquo;s income.</p>
 <p>What follows is how to build a tipping system that is clear, fair, and of this decade.</p>
 
 <h2>Tipping etiquette: what clients actually expect</h2>
@@ -348,7 +348,7 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
 <ul>
 <li><strong>Tracking:</strong> digital tips record and attribute themselves. Cash relies on people telling you, which is inconsistent and impossible to check.</li>
 <li><strong>Frequency:</strong> with fewer people carrying notes, a digital prompt means the question gets asked every time. Cash-only means it mostly does not get asked at all.</li>
-<li><strong>Amount:</strong> digital tips average 18% higher than cash tips according to Square&rsquo;s 2025 data, because the preset amounts pull expectations up.</li>
+<li><strong>Amount:</strong> preset amounts on a tip screen anchor what clients expect to give.</li>
 <li><strong>Payroll integration:</strong> digital tips arrive in payroll on their own. Cash needs reporting and reconciling by hand.</li>
 <li><strong>Tax compliance:</strong> digital tips leave a record. Cash tips leave whatever someone chose to write down.</li>
 </ul>
@@ -390,7 +390,7 @@ const salonTippingPoliciesArticle: LocalBlogPost = {
     metaDescription:
       'Build a clear salon tipping policy. Cover etiquette standards, digital tipping setup, tip distribution models, and staff management. Complete guide for owners.',
     createdAt: '2026-02-15T05:00:00.000Z',
-    updatedAt: '2026-02-15T05:00:00.000Z',
+    updatedAt: '2026-10-09T08:00:00.000Z',
     publishedAt: '2026-02-15T05:00:00.000Z',
     locale: 'en',
     sortId: 81,
@@ -1566,7 +1566,7 @@ const salonTippingPoliciesArticleAr: LocalBlogPost = {
     description: 'دليل شامل لإكراميات الصالونات يغطي معايير آداب السلوك، وكيفية وضع سياسة واضحة لإكراميات عملك، وحلول البقشيش الرقمية التي تزيد من الإكراميات، ونماذج توزيع الإكراميات التي تجعل فريقك سعيدًا.',
     aboutPosts: `<h2> البقشيش في صناعة التجميل: المشهد الحالي</h2>
 <p> تمثل الإكراميات ما بين 15 إلى 25% من إجمالي تعويضات محترفي التجميل في معظم الأسواق. ومع ذلك، فإن معظم الصالونات ليس لديها سياسة رسمية لإكراميات البقشيش، مما يترك العملاء في حيرة من أمرهم بشأن التوقعات، والموظفين غير متأكدين من دخلهم، ويقع أصحابها في وسط نزاعات حول توزيع البقشيش. يعمل إطار عمل البقشيش المصمم جيدًا ضمن <a href="/ar/resources/blog/business/salon-payment-solutions">سير عمل الدفع في الصالون</a> على إزالة هذا الغموض بالنسبة لجميع المشاركين.</p>
-<p> لقد أدى التحول إلى المدفوعات الرقمية إلى تغيير جذري في ديناميكيات البقشيش. تتناقص الإكراميات النقدية نظرًا لأن عددًا أقل من العملاء يحملون العملة المادية. وجد تقرير 2025 Square أن مطالبات الإكراميات الرقمية تزيد متوسط ​​المكافأة بنسبة 18% مقارنةً بالإكراميات النقدية فقط - ولكن فقط عندما تكون واجهة البقشيش مصممة جيدًا ومدمجة بشكل طبيعي في تجربة الدفع. الصالونات التي تتجاهل هذا التحول تعمل بشكل فعال على تقليل دخل فريقها.</p>
+<p> لقد أدى التحول إلى المدفوعات الرقمية إلى تغيير جذري في ديناميكيات البقشيش. تتناقص الإكراميات النقدية نظرًا لأن عددًا أقل من العملاء يحملون العملة المادية. يمكن لمطالبات الإكراميات الرقمية أن ترفع ما يتركه العملاء، ولكن فقط عندما تكون واجهة البقشيش مصممة جيدًا ومدمجة بشكل طبيعي في تجربة الدفع. الصالونات التي تتجاهل هذا التحول تعمل بشكل فعال على تقليل دخل فريقها.</p>
 <p>يغطي هذا الدليل كل ما تحتاجه لبناء نظام إكراميات واضح وعادل وحديث لصالونك.</p>
 
 <h2>آداب البقشيش: ما يتوقعه العملاء فعليًا</h2>
@@ -1648,7 +1648,7 @@ const salonTippingPoliciesArticleAr: LocalBlogPost = {
 <ul>
 <li><strong>التتبع:</strong> يتم تسجيل النصائح الرقمية وإسنادها تلقائيًا. تعتمد النصائح النقدية على التقارير الذاتية، وهو أمر غير متسق ويصعب تدقيقه.</li>
 <li><strong>التكرار:</strong> نظرًا لأن عددًا أقل من العملاء يحملون أموالًا نقدية، تضمن المطالبات الرقمية تقديم النصائح في كل معاملة. البقشيش النقدي فقط يعني عدم وجود مطالبة أو إكرامية بشأن معظم المعاملات.</li>
-<li><strong>المبلغ:</strong> يبلغ متوسط الإكراميات الرقمية أعلى بنسبة 18% من الإكراميات النقدية وفقًا لبيانات Square لعام 2025، لأن المبالغ المحددة مسبقًا تثبت التوقعات صعودًا.</li>
+<li><strong>المبلغ:</strong> المبالغ المحددة مسبقًا على شاشة الإكرامية ترسم توقعات العملاء لما سيدفعونه.</li>
 <li><strong>تكامل كشوف المرتبات:</strong> تتدفق النصائح الرقمية مباشرة إلى حسابات كشوف المرتبات. تتطلب النصائح النقدية إعداد تقارير يدوية وتسوية.</li>
 <li><strong>الامتثال الضريبي:</strong> تعمل النصائح الرقمية على إنشاء سجلات تلقائية للأغراض الضريبية. تتطلب النصائح النقدية تقارير مبنية على الثقة.</li>
 </ul>
@@ -1687,7 +1687,7 @@ const salonTippingPoliciesArticleAr: LocalBlogPost = {
 <p> يجب أن تكون الإكراميات مكملة للأجر الأساسي العادل، وليس استبداله. إذا كانت الإكراميات تمثل أكثر من 25-30% من إجمالي تعويضات أحد أعضاء الفريق، فقد يكون أجرك الأساسي منخفضًا جدًا. يعاني الموظفون الذين يعتمدون بشكل كبير على الإكراميات من تقلبات الدخل التي تزيد من معدل دوران الموظفين.</p>`,
     metaTitle: 'سياسات البقشيش في الصالون: الدليل الرقمي | ديزي',
     metaDescription: 'دليل لسياسات البقشيش الرقمية في الصالونات الحديثة.',
-    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-10-09T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'ar', sortId: 86,
     tags: { category: 'Salon Payments', topic: 'Tipping' },
     user: { data: { id: 4, attributes: { name: 'Ethan Cole', jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist', date: '3 May 2025', time: '9 min.', picture: { data: { attributes: { url: '/images/blog/author-ethan-cole.webp' } } } } } },

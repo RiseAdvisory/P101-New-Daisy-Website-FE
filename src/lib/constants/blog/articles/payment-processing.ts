@@ -43,7 +43,7 @@ const salonPosSystemsArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Why your salon POS system matters more than ever</h2>
 <p>This stopped being a cash register some time ago. In 2026 the POS is where appointments, client records, inventory, staff performance, and your financial reporting all meet. Get it right and checkout gets faster, more revenue reaches the till, and you can see how the business is doing without waiting for month end.</p>
-<p>Get it wrong and there is a queue at the desk, half your processes happen on paper, and you cannot see the numbers you need. A 2025 Square industry report found that 68% of beauty businesses that upgraded their POS system saw a measurable increase in average transaction value within six months, mostly because a better system makes it easier to take any payment method, apply a promotion, and sell something extra while the client is standing there.</p>
+<p>Get it wrong and there is a queue at the desk, half your processes happen on paper, and you cannot see the numbers you need. A better system also helps lift the average ticket, because it makes it easier to take any payment method, apply a promotion, and sell something extra while the client is standing there.</p>
 <p>What follows is what to look at when choosing or replacing your salon POS in 2026.</p>
 
 <h2>What a modern salon POS system actually does</h2>
@@ -165,7 +165,7 @@ const salonPosSystemsArticle: LocalBlogPost = {
     metaDescription:
       'Choose the right salon POS system in 2026. Compare hardware, software, fees, and must-have features for beauty businesses. Complete evaluation guide.',
     createdAt: '2026-03-17T08:00:00.000Z',
-    updatedAt: '2026-03-17T08:00:00.000Z',
+    updatedAt: '2026-10-09T08:00:00.000Z',
     publishedAt: '2026-03-17T08:00:00.000Z',
     locale: 'en',
     sortId: 23,
@@ -643,6 +643,13 @@ const gettingPaidFasterArticle: LocalBlogPost = {
 // Article 4: Payment Processing Fees Compared: Daisy vs Alternatives
 // Type: Comparison | User: Business | Category: Payment Processing
 // ---------------------------------------------------------------------------
+// Sources for the Square and Stripe figures, read 2026-10-09:
+//   squareup.com/us/en/appointments/pricing (US plans and processing rates; see competitors/tier3Data.ts)
+//   Square's region list: Australia, Canada, France, Ireland, Japan, Spain, the UK and the US
+//   squareup.com/help/us/en/article/3807-deposit-options-with-square ("Standard next-business-day
+//     transfer" is free; instant and same-day transfers "for a 1.95% fee per transfer")
+//   stripe.com/pricing (US: 2.9% + 30c online, 2.7% + 5c in person)
+//   stripe.com/ae/pricing (UAE: "2.9% + AED1.00 per successful transaction" for domestic cards)
 const paymentFeesComparedArticle: LocalBlogPost = {
   id: 123,
   attributes: {
@@ -683,23 +690,23 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <li><strong>Processing model:</strong> Flat-rate</li>
 <li><strong>Card-present rate:</strong> Competitive flat rate (see <a href="/en/pricing/business">pricing page</a> for current rates)</li>
 <li><strong>Online/card-not-present rate:</strong> Slightly higher flat rate for online payments and payment links</li>
-<li><strong>Commission on bookings:</strong> zero, with no commission on any booking regardless of how the client found you</li>
+<li><strong>Commission on bookings:</strong> 0% on bookings from your own clients, whichever channel they book through. Commission applies only to new customers that Daisy's optional marketplace brings you</li>
 <li><strong>Monthly platform fee:</strong> Included in salon management subscription</li>
 <li><strong>Payout speed:</strong> Next-business-day deposits standard</li>
 <li><strong>Hardware:</strong> Compatible with standard card readers; no proprietary hardware required</li>
-<li><strong>Key differentiator:</strong> with no booking commission, your processing costs do not climb with your revenue the way they do on commission-based platforms. Payment connects to appointments, client profiles, tip management, and reporting.</li>
+<li><strong>Key differentiator:</strong> bookings from your own clients carry no commission, so repeat business adds nothing to your platform costs. Payment connects to appointments, client profiles, tip management, and reporting.</li>
 </ul>
 
 <h3>Square</h3>
-<p>Square is a general-purpose payment platform used across small business, salons included.</p>
+<p>Square is a general-purpose payment platform used across small business, salons included. It operates in Australia, Canada, France, Ireland, Japan, Spain, the UK and the US, and not in the GCC, so the figures below are Square Appointments&rsquo; US prices.</p>
 <ul>
 <li><strong>Processing model:</strong> Flat-rate</li>
-<li><strong>Card-present rate:</strong> 2.6% + $0.10 per transaction</li>
-<li><strong>Online rate:</strong> 2.9% + $0.30 per transaction</li>
-<li><strong>Commission on bookings:</strong> None through Square itself, but Square Appointments charges a monthly fee</li>
-<li><strong>Monthly fee:</strong> Free basic plan; Plus plan at $29/month per location; Premium at $69/month</li>
-<li><strong>Payout speed:</strong> 1-2 business days (instant transfer available for additional fee)</li>
-<li><strong>Key consideration:</strong> a solid general-purpose POS, without the beauty-specific pieces such as AI booking, integrated WhatsApp communication, and multilingual Arabic and English support. Filling those gaps may mean more tools.</li>
+<li><strong>Card-present rate:</strong> 2.6% + 15¢ per transaction on Square Free; 2.5% + 15¢ on Plus</li>
+<li><strong>Online rate:</strong> 3.3% + 30¢ per transaction on Square Free; 2.9% + 30¢ on Plus</li>
+<li><strong>Commission on bookings:</strong> None. Square Appointments has a free plan, and its paid plans carry a monthly fee per location</li>
+<li><strong>Monthly fee:</strong> Square Free $0; Plus $49/month per location; Premium $149/month per location</li>
+<li><strong>Payout speed:</strong> next business day by default, at no charge; instant or same-day transfers cost 1.95% per transfer</li>
+<li><strong>Key consideration:</strong> a general-purpose POS with beauty booking on top. Square AI (beta) comes with all three plans, and Square Assistant answers client texts 24/7 to confirm, reschedule or cancel. Square does not operate in the GCC, so salons there cannot sign up for it.</li>
 </ul>
 
 <h3>Fresha</h3>
@@ -709,15 +716,15 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <li><strong>Online payments (UAE published):</strong> 4.90% + AED 0.75 per transaction</li>
 <li><strong>Commission on new client bookings (UAE published):</strong> a one-time 50% commission on new clients acquired through the Fresha marketplace, minimum AED 20; returning clients free</li>
 <li><strong>Monthly platform fee:</strong> priced per market, AED 149.95 per month for the Independent plan in the UAE, with Team plans at custom rates</li>
-<li><strong>Key consideration:</strong> the marketplace commission, not the processing rate, is what moves the total. It is charged once per new client, at 50% of that first booking, so a month of heavy marketplace acquisition costs far more than the headline rate suggests, while a month of returning clients costs nothing extra. A salon doing 100 bookings per month averaging 250 AED, where 30 are new marketplace clients, pays roughly 3,750 AED in commissions that month, before processing fees. On The Daisy there is no commission either way.</li>
+<li><strong>Key consideration:</strong> the marketplace commission, not the processing rate, is what moves the total. It is charged once per new client, at 50% of that first booking, so a month of heavy marketplace acquisition costs far more than the headline rate suggests, while a month of returning clients costs nothing extra. A salon doing 100 bookings per month averaging 250 AED, where 30 are new marketplace clients, pays roughly 3,750 AED in commissions that month, before processing fees. On The Daisy, bookings from your own clients carry 0% commission, and commission applies only to new customers its optional marketplace brings you.</li>
 </ul>
 
 <h3>Stripe (direct integration)</h3>
 <p>Stripe is aimed at developers, and some salons reach it through custom or third-party integrations.</p>
 <ul>
 <li><strong>Processing model:</strong> Flat-rate</li>
-<li><strong>Card-present rate:</strong> 2.7% + $0.05 per transaction (via Stripe Terminal)</li>
-<li><strong>Online rate:</strong> 2.9% + $0.30 per transaction</li>
+<li><strong>Card-present rate:</strong> 2.7% + $0.05 per transaction via Stripe Terminal (US)</li>
+<li><strong>Online rate:</strong> 2.9% + $0.30 per transaction (US); 2.9% + AED 1.00 for domestic cards in the UAE</li>
 <li><strong>Commission:</strong> None</li>
 <li><strong>Monthly fee:</strong> None for standard processing; Stripe billing tools have additional pricing</li>
 <li><strong>Payout speed:</strong> 2 business days standard</li>
@@ -742,16 +749,18 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 
 <table>
 <thead>
-<tr><th>Cost Component</th><th>The Daisy</th><th>Square (Plus)</th><th>Fresha</th><th>Stripe + Separate Software</th></tr>
+<tr><th>Cost Component</th><th>The Daisy</th><th>Fresha</th><th>Stripe + Separate Software</th></tr>
 </thead>
 <tbody>
-<tr><td>Processing fees</td><td>Competitive flat rate</td><td>~2,120 AED</td><td>~4,220 AED</td><td>~2,200 AED</td></tr>
-<tr><td>New client commission</td><td>0 AED</td><td>0 AED</td><td>~2,000 AED</td><td>0 AED</td></tr>
-<tr><td>Platform/subscription fee</td><td>Included</td><td>~110 AED</td><td>~150 AED (Independent, UAE)</td><td>~200-400 AED</td></tr>
-<tr><td>Additional tool costs</td><td>0 AED</td><td>~100-300 AED</td><td>&mdash;</td><td>~100-300 AED</td></tr>
-<tr><td><strong>Estimated monthly total</strong></td><td><strong>See pricing page</strong></td><td><strong>~2,430 AED</strong></td><td><strong>~6,370 AED</strong></td><td><strong>~2,700 AED</strong></td></tr>
+<tr><td>Processing fees</td><td>Competitive flat rate</td><td>~4,220 AED</td><td>~2,720 AED</td></tr>
+<tr><td>New client commission</td><td>0 AED on your own clients; commission only on new marketplace customers</td><td>~2,000 AED</td><td>0 AED</td></tr>
+<tr><td>Platform/subscription fee</td><td>Included</td><td>~150 AED (Independent, UAE)</td><td>~200-400 AED</td></tr>
+<tr><td>Additional tool costs</td><td>0 AED</td><td>&mdash;</td><td>~100-300 AED</td></tr>
+<tr><td><strong>Estimated monthly total</strong></td><td><strong>See pricing page</strong></td><td><strong>~6,370 AED</strong></td><td><strong>~3,200 AED</strong></td></tr>
 </tbody>
 </table>
+
+<p>Square is left out of this scenario because it does not operate in the UAE. The Stripe column uses Stripe&rsquo;s published UAE rate of 2.9% + AED 1.00 per domestic card payment. In the US, Square Appointments Plus costs $49/month per location, with in-person card payments at 2.5% + 15¢.</p>
 
 <p>Fresha&rsquo;s figures use its published UAE rates: 4.90% + AED 0.75 online, a one-time 50% commission on each new marketplace client with a minimum of AED 20, and AED 149.95 per month for the Independent plan. What the table shows is that the marketplace commission drives the total. A salon getting a large share of its clients through the marketplace pays considerably more in the months it is acquiring; a salon running mostly on repeat business pays the commission once per client and then not again.</p>
 
@@ -773,12 +782,12 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <ul>
 <li>You want payment processing, booking, client management, and communication in one system</li>
 <li>You need Arabic, English, and more for both clients and staff</li>
-<li>You want no commission on bookings, so growing does not cost you more and more</li>
+<li>You want 0% commission on bookings from your own clients, with commission only on new customers an optional marketplace brings you</li>
 <li>You want automated booking, smart scheduling, and predictive analytics sitting alongside the payments</li>
 <li>You want next-business-day payouts and no fee for them</li>
 </ul>
 
-<h3>Choose a general-purpose processor (Square, SumUp) if:</h3>
+<h3>Choose a general-purpose processor (such as Square or SumUp, where they operate) if:</h3>
 <ul>
 <li>You already have a salon management system you like and only need a card reader</li>
 <li>Your transaction volume is low enough that a monthly subscription is not worth it</li>
@@ -830,7 +839,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
     metaDescription:
       'Compare salon payment processing fees across The Daisy, Square, Fresha, Stripe, and SumUp. See real cost breakdowns including per-transaction charges and commissions.',
     createdAt: '2025-08-14T05:00:00.000Z',
-    updatedAt: '2025-08-14T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-08-14T05:00:00.000Z',
     locale: 'en',
     sortId: 26,
@@ -901,7 +910,7 @@ const salonPosSystemsArticleAr: LocalBlogPost = {
       'دليل شامل لاختيار نظام نقاط البيع المناسب لصالونك في عام 2026. تعرف على الميزات الأكثر أهمية، وكيفية تقييم الأجهزة مقابل البرامج، وكيف تبدو معالجة الدفع الحديثة لشركات التجميل.',
     aboutPosts: `<h2>لماذا يعتبر نظام نقاط البيع في صالونك أكثر أهمية من أي وقت مضى</h2>
 <p> لم يعد نظام نقاط البيع مجرد ماكينة تسجيل نقدي. في عام 2026، ستكون نقاط البيع في صالونك بمثابة الجهاز العصبي المركزي لشركتك - حيث تربط المواعيد وسجلات العملاء والمخزون وأداء الموظفين والتقارير المالية في سير عمل واحد. يعمل نظام نقاط البيع الصحيح على تقليل الاحتكاك بالدفع، وتحقيق المزيد من الإيرادات، ويمنحك رؤية في الوقت الفعلي لسلامة عملك.</p>
-<p> من ناحية أخرى، يؤدي النظام الخاطئ إلى إنشاء اختناقات عند الخروج، ويفرض حلولاً يدوية، ويتركك أعمى عن البيانات التي تحتاجها لاتخاذ قرارات العمل الذكية. وجد تقرير صناعة Square لعام 2025 أن 68% من شركات التجميل التي قامت بترقية نظام نقاط البيع الخاصة بها شهدت زيادة قابلة للقياس في متوسط قيمة المعاملة في غضون ستة أشهر - ويرجع ذلك إلى حد كبير إلى أن الأنظمة الأفضل تسهل قبول طرق دفع متعددة، وتطبيق العروض الترويجية، وزيادة المبيعات عند الدفع.</p>
+<p> من ناحية أخرى، يؤدي النظام الخاطئ إلى إنشاء اختناقات عند الخروج، ويفرض حلولاً يدوية، ويتركك أعمى عن البيانات التي تحتاجها لاتخاذ قرارات العمل الذكية. كما يساعد النظام الأفضل على رفع متوسط قيمة الفاتورة، لأنه يسهّل قبول طرق دفع متعددة، وتطبيق العروض الترويجية، وزيادة المبيعات عند الدفع.</p>
 <p>يرشدك هذا الدليل إلى كل ما تحتاج إلى تقييمه عند اختيار أو ترقية نقاط البيع في صالونك في عام 2026.</p>
 
 <h2>ما يفعله نظام نقاط البيع الحديث للصالونات</h2>
@@ -1022,7 +1031,7 @@ const salonPosSystemsArticleAr: LocalBlogPost = {
     metaDescription:
       'اختر نظام نقاط البيع المناسب لصالونك في 2026. قارن بين الأجهزة والبرامج والرسوم والميزات الضرورية لأعمال التجميل.',
     createdAt: '2026-03-17T08:00:00.000Z',
-    updatedAt: '2026-03-17T08:00:00.000Z',
+    updatedAt: '2026-10-09T08:00:00.000Z',
     publishedAt: '2026-03-17T08:00:00.000Z',
     locale: 'ar',
     sortId: 23,
@@ -1544,23 +1553,23 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <li><strong>نموذج المعالجة:</strong> المعدل الثابت</li>
 <li><strong>سعر وجود البطاقة:</strong> سعر ثابت تنافسي (راجع <a href="/ar/pricing/business">صفحة التسعير</a> لمعرفة الأسعار الحالية)</li>
 <li><strong>سعر عدم وجود البطاقة على الإنترنت/البطاقة:</strong> سعر ثابت أعلى قليلاً للمدفوعات عبر الإنترنت وروابط الدفع</li>
-<li><strong>العمولة على الحجوزات:</strong> صفر - لا توجد عمولة على أي حجز، بغض النظر عن كيفية عثور العميل عليك</li>
+<li><strong>العمولة على الحجوزات:</strong> 0% على حجوزات عملائك الحاليين أيًا كانت القناة التي يحجزون منها، وتُطبق العمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي الاختياري</li>
 <li><strong>رسوم المنصة الشهرية:</strong> متضمنة في اشتراك إدارة الصالون</li>
 <li><strong>سرعة الدفع:</strong> معيار الإيداع في يوم العمل التالي</li>
 <li><strong>الأجهزة:</strong> متوافقة مع أجهزة قراءة البطاقات القياسية؛ لا يلزم وجود أجهزة خاصة</li>
-<li><strong>الفرق الرئيسي:</strong> عمولة الحجز الصفرية تعني أن تكاليف المعالجة الخاصة بك لا تتناسب مع إيراداتك بالطريقة التي تعمل بها الأنظمة الأساسية القائمة على العمولة. يتم دمج الدفع بالكامل مع المواعيد وملفات تعريف العملاء وإدارة النصائح وإعداد التقارير.</li>
+<li><strong>الفرق الرئيسي:</strong> لا تُحتسب أي عمولة على حجوزات عملائك الحاليين، فلا تضيف الزيارات المتكررة شيئًا إلى تكاليف المنصة. يتم دمج الدفع بالكامل مع المواعيد وملفات تعريف العملاء وإدارة الإكراميات وإعداد التقارير.</li>
 </ul>
 
-<h3>مربع</h3>
-<p>Square عبارة عن منصة دفع للأغراض العامة تستخدمها العديد من الشركات الصغيرة بما في ذلك الصالونات.</p>
+<h3>Square</h3>
+<p>Square منصة دفع للأغراض العامة تستخدمها شركات صغيرة كثيرة، ومنها الصالونات. تعمل في أستراليا وكندا وفرنسا وأيرلندا واليابان وإسبانيا والمملكة المتحدة والولايات المتحدة، ولا تعمل في دول الخليج، لذلك فالأرقام أدناه هي أسعار Square Appointments في الولايات المتحدة.</p>
 <ul>
 <li><strong>نموذج المعالجة:</strong> معدل ثابت</li>
-<li><strong>سعر وجود البطاقة:</strong> 2.6% + 0.10 دولار لكل معاملة</li>
-<li><strong>السعر عبر الإنترنت:</strong> 2.9% + 0.30 دولار لكل معاملة</li>
-<li><strong>عمولة الحجوزات:</strong> لا شيء من خلال Square نفسها، ولكن تفرض Square Appointments رسومًا شهرية</li>
-<li><strong>الرسوم الشهرية:</strong> الخطة الأساسية المجانية؛ الخطة الإضافية بسعر 29 دولارًا شهريًا لكل موقع؛ قسط بسعر 69 دولارًا شهريًا</li>
-<li><strong>سرعة الدفع:</strong> يوم أو يومين عمل (التحويل الفوري متاح مقابل رسوم إضافية)</li>
-<li><strong>الاعتبارات الرئيسية:</strong> Square عبارة عن نقطة بيع قوية للأغراض العامة ولكنها تفتقر إلى ميزات خاصة بالجمال مثل الحجز باستخدام الذكاء الاصطناعي، واتصال واتساب المتكامل، ودعم متعدد اللغات باللغتين العربية والإنجليزية. قد تحتاج إلى أدوات إضافية لملء الفجوات.</li>
+<li><strong>سعر وجود البطاقة:</strong> 2.6% + 15 سنتاً لكل معاملة في Square Free، و2.5% + 15 سنتاً في Plus</li>
+<li><strong>السعر عبر الإنترنت:</strong> 3.3% + 30 سنتاً لكل معاملة في Square Free، و2.9% + 30 سنتاً في Plus</li>
+<li><strong>عمولة الحجوزات:</strong> لا شيء. لدى Square Appointments خطة مجانية، أما الخطط المدفوعة فلها رسوم شهرية لكل موقع</li>
+<li><strong>الرسوم الشهرية:</strong> Square Free مجاناً؛ Plus بسعر 49 دولاراً شهرياً لكل موقع؛ Premium بسعر 149 دولاراً شهرياً لكل موقع</li>
+<li><strong>سرعة الدفع:</strong> في يوم العمل التالي افتراضياً ودون رسوم؛ التحويل الفوري أو في اليوم نفسه برسوم 1.95% لكل تحويل</li>
+<li><strong>الاعتبارات الرئيسية:</strong> نقطة بيع للأغراض العامة مع حجز لأعمال التجميل. تأتي Square AI (في مرحلة تجريبية beta) مع الخطط الثلاث، ويرد Square Assistant على رسائل العملاء النصية على مدار الساعة لتأكيد المواعيد أو إعادة جدولتها أو إلغائها. لا تعمل Square في دول الخليج، لذلك لا يمكن للصالونات هناك الاشتراك فيها.</li>
 </ul>
 
 <h3>فريشا</h3>
@@ -1570,22 +1579,22 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <li><strong>المدفوعات الإلكترونية (منشور للإمارات):</strong> 4.90% + 0.75 درهم لكل معاملة</li>
 <li><strong>عمولة على حجوزات العملاء الجدد:</strong> عمولة لمرة واحدة 50% على العملاء الجدد القادمين من سوق Fresha، بحد أدنى 20 درهماً؛ العملاء العائدون مجاناً</li>
 <li><strong>رسوم النظام الأساسي الشهرية:</strong> مُسعّرة حسب السوق — 149.95 درهماً شهرياً لخطة Independent في الإمارات، وخطط Team بأسعار مخصصة</li>
-<li><strong>الاعتبار الرئيسي:</strong> عمولة السوق، لا معدل المعالجة، هي ما يحرّك الإجمالي. تُحتسب مرة واحدة لكل عميل جديد بنسبة 50% من حجزه الأول، لذا فإن شهر الاستقطاب المكثف عبر السوق يكلّف أكثر بكثير مما يوحي به المعدل المُعلن، بينما لا يكلّف شهر العملاء العائدين أي مبلغ إضافي. صالون يجري 100 حجز شهريًا بمتوسط 250 درهمًا، منها 30 لعملاء سوق جدد، يدفع نحو 3,750 درهمًا عمولاتٍ في ذلك الشهر قبل رسوم المعالجة. أما في ديزي فلا عمولة في الحالتين.</li>
+<li><strong>الاعتبار الرئيسي:</strong> عمولة السوق، لا معدل المعالجة، هي ما يحرّك الإجمالي. تُحتسب مرة واحدة لكل عميل جديد بنسبة 50% من حجزه الأول، لذا فإن شهر الاستقطاب المكثف عبر السوق يكلّف أكثر بكثير مما يوحي به المعدل المُعلن، بينما لا يكلّف شهر العملاء العائدين أي مبلغ إضافي. صالون يجري 100 حجز شهريًا بمتوسط 250 درهمًا، منها 30 لعملاء سوق جدد، يدفع نحو 3,750 درهمًا عمولاتٍ في ذلك الشهر قبل رسوم المعالجة. أما في ديزي فلا عمولة على حجوزات عملائك الحاليين، وتُطبق العمولة فقط على العملاء الجدد الذين يجلبهم سوقها الاختياري.</li>
 </ul>
 
-<h3>الشريط (التكامل المباشر)</h3>
+<h3>Stripe (التكامل المباشر)</h3>
 <p>Stripe هو معالج دفع يركز على المطورين وتستخدمه بعض الصالونات من خلال عمليات تكامل مخصصة أو عمليات تكامل مع جهات خارجية.</p>
 <ul>
 <li><strong>نموذج المعالجة:</strong> معدل ثابت</li>
-<li><strong>سعر وجود البطاقة:</strong> 2.7% + 0.05 دولار لكل معاملة (عبر Stripe Terminal)</li>
-<li><strong>السعر عبر الإنترنت:</strong> 2.9% + 0.30 دولار لكل معاملة</li>
+<li><strong>سعر وجود البطاقة:</strong> 2.7% + 0.05 دولار لكل معاملة عبر Stripe Terminal (الولايات المتحدة)</li>
+<li><strong>السعر عبر الإنترنت:</strong> 2.9% + 0.30 دولار لكل معاملة (الولايات المتحدة)؛ و2.9% + 1.00 درهم للبطاقات المحلية في الإمارات</li>
 <li><strong>العمولة:</strong> لا شيء</li>
 <li><strong>الرسوم الشهرية:</strong> لا توجد رسوم للمعالجة القياسية؛ أدوات الفوترة الشريطية لها أسعار إضافية</li>
 <li><strong>سرعة الدفع:</strong> معيار يومي عمل</li>
 <li><strong>الاعتبارات الرئيسية:</strong> يعد Stripe معالجًا قويًا ولكنه يتطلب تكاملًا تقنيًا. إنها ليست منصة لإدارة الصالون - فأنت بحاجة إلى برنامج منفصل للحجز وإدارة العملاء وإعداد التقارير. الأنسب للصالونات التي لديها موارد المطورين أو عند استخدامها كواجهة خلفية للدفع لمنصة الصالون.</li>
 </ul>
 
-<h3>التلخيص</h3>
+<h3>SumUp</h3>
 <p>SumUp يقدم برامج قراءة بطاقات بسيطة ومنخفضة التكلفة شائعة لدى الشركات الصغيرة ومحترفي الهاتف المحمول.</p>
 <ul>
 <li><strong>نموذج المعالجة:</strong> معدل ثابت</li>
@@ -1603,16 +1612,18 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 
 <table>
 <thead>
-<tr><th>مكون التكلفة</th><th>ديزي</th><th>Square (Plus)</th><th>Fresha</th><th>Stripe + برنامج منفصل</th></tr>
+<tr><th>مكون التكلفة</th><th>ديزي</th><th>Fresha</th><th>Stripe + برنامج منفصل</th></tr>
 </thead>
 <tbody>
-<tr><td>رسوم المعالجة</td><td>سعر موحد تنافسي</td><td>~2,120 درهم</td><td>~4,220 درهم</td><td>~2,200 درهم</td></tr>
-<tr><td>عمولة العميل الجديد</td><td>0 درهم</td><td>0 درهم</td><td>~2,000 درهم</td><td>0 درهم</td></tr>
-<tr><td>رسوم المنصة/الاشتراك</td><td>متضمن</td><td>~110 درهم</td><td>~150 درهم (Independent، الإمارات)</td><td>~200-400 درهم</td></tr>
-<tr><td>تكاليف الأدوات الإضافية</td><td>0 درهم</td><td>~100-300 درهم</td><td>&mdash;</td><td>~100-300 درهم</td></tr>
-<tr><td><strong>الإجمالي الشهري المقدر</strong></td><td><strong>انظر الأسعار page</strong></td><td><strong>~2,430 درهم</strong></td><td><strong>~6,370 درهم</strong></td><td><strong>~2,700 درهم</strong></td></tr>
+<tr><td>رسوم المعالجة</td><td>سعر موحد تنافسي</td><td>~4,220 درهم</td><td>~2,720 درهم</td></tr>
+<tr><td>عمولة العميل الجديد</td><td>0 درهم على عملائك الحاليين، والعمولة على عملاء السوق الجدد فقط</td><td>~2,000 درهم</td><td>0 درهم</td></tr>
+<tr><td>رسوم المنصة/الاشتراك</td><td>متضمن</td><td>~150 درهم (Independent، الإمارات)</td><td>~200-400 درهم</td></tr>
+<tr><td>تكاليف الأدوات الإضافية</td><td>0 درهم</td><td>&mdash;</td><td>~100-300 درهم</td></tr>
+<tr><td><strong>الإجمالي الشهري المقدر</strong></td><td><strong>انظر الأسعار page</strong></td><td><strong>~6,370 درهم</strong></td><td><strong>~3,200 درهم</strong></td></tr>
 </tbody>
 </table>
+
+<p>استُبعدت Square من هذا السيناريو لأنها لا تعمل في الإمارات. ويستخدم عمود Stripe سعرها المنشور في الإمارات، وهو 2.9% + 1.00 درهم لكل دفعة ببطاقة محلية. وفي الولايات المتحدة تكلف خطة Square Appointments Plus مبلغ 49 دولاراً شهرياً لكل موقع، مع رسوم 2.5% + 15 سنتاً على مدفوعات البطاقات الحضورية.</p>
 
 <p>أرقام Fresha أعلاه مبنية على أسعارها المنشورة في الإمارات: 4.90% + 0.75 درهم للمدفوعات الإلكترونية، وعمولة لمرة واحدة 50% على كل عميل سوق جديد بحد أدنى 20 درهماً، و149.95 درهماً شهرياً لخطة Independent. وما يظهره الجدول أن عمولة السوق هي التي تحرّك الإجمالي: الصالون الذي يعتمد على السوق في استقطاب عملائه يدفع أكثر في أشهر الاستقطاب، أما الصالون القائم على العملاء العائدين فيدفع العمولة مرة واحدة لكل عميل ثم لا يدفعها ثانية.</p>
 
@@ -1634,12 +1645,12 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <ul>
 <li>تريد معالجة الدفع والحجز وإدارة العملاء والتواصل في نظام واحد</li>
 <li>تحتاج إلى دعم متعدد اللغات (العربية والإنجليزية والمزيد) للعملاء والموظفين</li>
-<li>أنت لا تريد عمولة على الحجوزات - يجب ألا يؤدي نموك إلى زيادة تكاليف النظام الأساسي الخاص بك بشكل غير متناسب</li>
+<li>تريد 0% عمولة على حجوزات عملائك الحاليين، مع عمولة فقط على العملاء الجدد الذين يجلبهم سوق اختياري</li>
 <li> أنت تقدر الميزات المدعومة بالذكاء الاصطناعي مثل الحجز الآلي، والجدولة الذكية، والتحليلات التنبؤية إلى جانب معالجة الدفع</li>
 <li>تريد الحصول على دفعات في يوم العمل التالي بدون رسوم إضافية</li>
 </ul>
 
-<h3>اختر معالجًا للأغراض العامة (مربع، تلخيص) إذا:</h3>
+<h3>اختر معالجًا للأغراض العامة (مثل Square أو SumUp، حيث يعملان) إذا:</h3>
 <ul>
 <li>لديك بالفعل نظام لإدارة الصالونات وأنت سعيد به وتحتاج فقط إلى قارئ بطاقات</li>
 <li>حجم معاملاتك منخفض جدًا وتريد تجنب رسوم الاشتراك الشهري</li>
@@ -1690,7 +1701,7 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
     metaDescription:
       'قارن رسوم معالجة الدفع للصالونات. تعلّم الفرق بين الأسعار الثابتة والمتغيرة واختر الأنسب لعملك.',
     createdAt: '2025-08-14T05:00:00.000Z',
-    updatedAt: '2025-08-14T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-08-14T05:00:00.000Z',
     locale: 'ar',
     sortId: 26,

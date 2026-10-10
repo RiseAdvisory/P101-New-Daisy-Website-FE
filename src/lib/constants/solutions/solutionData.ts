@@ -32,6 +32,10 @@ export interface SolutionData {
 // Solution Pages Data (i18n)
 // -----------------------------------------------------------------------------
 
+// Competitor facts in this file were checked on 2026-10-09 against the vendors' own
+// pages. Sources are listed in src/lib/constants/competitors/tier1Data.ts, tier2Data.ts
+// and tier3Data.ts. Daisy's AI receptionist works on WhatsApp, Instagram and the booking
+// site; it does not answer phone calls.
 export const solutionData: I18nContent<SolutionData[]> = {
   en: [
   // P1: 4 highest-traffic keywords
@@ -55,14 +59,14 @@ export const solutionData: I18nContent<SolutionData[]> = {
     intro: 'Traditional salon software helps you manage appointments and track payments. Daisy goes further, it\'s a growth platform that uses AI to bring in new clients, keep existing ones coming back, and handle the admin work that eats into your day. The global salon software market is projected to reach $712M by 2028, and salons that adopt management software see a 30-40% reduction in no-shows (industry research). From solo stylists to multi-location salons, Daisy scales with your ambitions.',
     challenges: [
       {
-        title: 'Missed calls mean missed revenue',
+        title: 'Unanswered messages mean missed revenue',
         description:
-          'Industry data shows salons miss 30-40% of inbound calls. Every missed call is a potential booking lost to a competitor who answers faster.',
+          'When a WhatsApp or Instagram inquiry waits hours for a reply, the client often books with whoever answered first.',
       },
       {
-        title: 'Staff stretched thin between clients and phones',
+        title: 'Staff stretched thin between clients and messages',
         description:
-          'Your team should focus on delivering great service, not answering phones and managing bookings between appointments.',
+          'Your team should focus on delivering great service, not replying to messages and managing bookings between appointments.',
       },
       {
         title: 'No-shows drain your schedule',
@@ -84,12 +88,12 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: '24/7 AI Receptionist',
         description:
-          'Never miss a booking again. Daisy\'s AI answers calls, messages, and website inquiries in Arabic and English, processing bookings and payments without human intervention.',
+          'Never miss a booking again. Daisy\'s AI answers messages on WhatsApp, Instagram and your booking site in Arabic and English, processing bookings and payments without human intervention.',
       },
       {
         title: 'Smart Online Booking',
         description:
-          'Clients book anytime from your website, social media, or the Daisy marketplace. AI optimizes your schedule to minimize gaps and maximize revenue.',
+          'Clients book anytime from your website, social media, or the Daisy marketplace if you join it. AI optimizes your schedule to minimize gaps and maximize revenue.',
       },
       {
         title: 'Integrated POS & Payments',
@@ -109,7 +113,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'Complete Staff Management',
         description:
-          'Schedule staff, track performance, assign services, and manage permissions, all included in flat pricing, no per-staff fees.',
+          'Schedule staff, track performance, assign services, and manage permissions. Plans include 5, 10 or 15 team members, and each extra calendar is $10/month.',
       },
     ],
     faqs: [
@@ -121,7 +125,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'How much does salon management software cost?',
         answer:
-          'Salon software ranges from low published entry plans with per-transaction and marketplace charges on top, such as Fresha, to $400+/mo (Boulevard, Mangomint). Daisy offers flat pricing that includes AI, unlimited staff, and all features, no per-staff surcharges or feature tiers.',
+          'Salon software ranges from low published entry plans with per-transaction and marketplace charges on top, such as Fresha, to per-location plans such as Boulevard (from $159/mo for one location) and Mangomint ($120 per location plus $10 per user each month). Daisy\'s three plans include AI and 5, 10 or 15 team members, from $1/month (plus $50 once you pass 5 appointments in a month), and each extra calendar is $10/month.',
       },
       {
         question: 'Can I switch from my current salon software?',
@@ -131,17 +135,17 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'Does Daisy work for salons in the Middle East?',
         answer:
-          'Daisy is built for the GCC with native Arabic UI (not translated) and local payment methods, and is live in Kuwait today with more Gulf markets on the way.',
+          'Daisy is built for the GCC with native Arabic UI (not translated) and local payment methods, and is live in all six GCC countries.',
       },
       {
         question: 'What is the best salon management software in 2026?',
         answer:
-          'The best salon management software in 2026 depends on your priorities. For AI-driven growth with cashback and Arabic support, Daisy is the leading choice. For marketplace exposure, Fresha is popular. For US-only premium salons, Boulevard or Mangomint are strong options.',
+          'The best salon management software in 2026 depends on your priorities. For AI-driven growth with cashback and Arabic support, Daisy is the leading choice. For marketplace exposure, Fresha is popular. For premium salons in North America, Boulevard (US) and Mangomint (US and Canada) are strong options.',
       },
       {
         question: 'Does Daisy work in Arabic?',
         answer:
-          'Yes. Daisy features a fully native Arabic interface, not a translation layer. The AI receptionist speaks and processes bookings in Arabic and English fluently, and all client-facing elements support RTL layout.',
+          'Yes. Daisy features a fully native Arabic interface, not a translation layer. The AI receptionist replies and takes bookings in Arabic and English, and all client-facing elements support RTL layout.',
       },
       {
         question: 'What features should I look for in salon software?',
@@ -151,7 +155,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'Is Daisy suitable for a small salon with one stylist?',
         answer:
-          'Absolutely. Daisy scales from solo stylists to multi-location businesses. For solo operators, the AI receptionist is especially valuable, it acts as your virtual front desk, handling calls and bookings while you focus on clients.',
+          'Absolutely. Daisy scales from solo stylists to multi-location businesses. For solo operators, the AI receptionist is especially valuable. It acts as your virtual front desk, answering WhatsApp and Instagram messages and taking bookings while you focus on clients.',
       },
       {
         question: 'How does Daisy help reduce salon no-shows?',
@@ -258,12 +262,12 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'What is the best spa booking system in 2026?',
         answer:
-          'For AI-powered booking with Arabic support and cashback loyalty, Daisy is the top choice. Mindbody is popular for fitness-focused spas. Boulevard targets luxury spas but at a premium price point ($200+/mo). Daisy covers all tiers with flat pricing.',
+          'For AI-powered booking with Arabic support and cashback loyalty, Daisy is the top choice. Mindbody serves fitness, wellness and beauty businesses, from $79/mo per location in the US. Boulevard\'s plans start at $159/mo for one location ($143/mo billed annually). Daisy\'s plans include AI and 5, 10 or 15 team members.',
       },
       {
         question: 'How much does spa management software cost per month?',
         answer:
-          'Spa software typically ranges from $50/mo (basic tools) to $500+/mo (enterprise platforms like Mindbody or Boulevard). Daisy offers flat pricing that includes AI concierge, unlimited staff, and all features without per-therapist surcharges.',
+          'Spa software typically ranges from $50/mo for basic tools to enterprise plans priced on request, such as Mindbody Enterprise and Boulevard Enterprise. Daisy\'s plans include the AI concierge and 5, 10 or 15 team members, and each extra therapist calendar is $10/month.',
       },
       {
         question: 'Can I switch from Mindbody to Daisy?',
@@ -288,7 +292,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'Can spa guests book online after business hours?',
         answer:
-          'Absolutely. Daisy\'s AI concierge operates 24/7, handling online and phone bookings at any hour. Since over 60% of spa bookings happen outside business hours, this means significantly more revenue captured.',
+          'Absolutely. Daisy\'s AI concierge operates 24/7, taking bookings through WhatsApp, Instagram and your booking site at any hour. Since over 60% of spa bookings happen outside business hours, this means significantly more revenue captured.',
       },
     ],
     relatedSolutions: ['salon-management-software', 'beauty-salon-software', 'salon-appointment-scheduling'],
@@ -311,7 +315,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       'The beauty industry moves fast. Your software should keep up, with AI that books, markets, and grows your salon while you create.',
     definition:
       'Beauty salon software is a business management platform designed for hair salons, beauty studios, and multi-service beauty businesses to manage bookings, payments, clients, staff, and marketing in one place. The Daisy is an AI-powered beauty salon platform that goes beyond operations to actively acquire and retain clients through cashback rewards and a 24/7 AI receptionist.',
-    intro: 'Beauty salons need more than appointment books and payment terminals. In a competitive market where the average salon loses 10-25% of clients each year to natural churn, the salons that thrive are the ones that acquire clients efficiently, retain them with loyalty rewards, and deliver exceptional service. Beauty businesses that miss up to 35% of inbound calls outside business hours are leaving revenue on the table. Daisy is built specifically for beauty professionals who think like business owners.',
+    intro: 'Beauty salons need more than appointment books and payment terminals. In a competitive market where the average salon loses 10-25% of clients each year to natural churn, the salons that thrive are the ones that acquire clients efficiently, retain them with loyalty rewards, and deliver exceptional service. Beauty businesses that leave messages unanswered outside business hours are leaving revenue on the table. Daisy is built specifically for beauty professionals who think like business owners.',
     challenges: [
       {
         title: 'Competition is fierce',
@@ -338,7 +342,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'AI Receptionist for Beauty',
         description:
-          'Handles booking calls, answers service questions, and processes payments in Arabic and English. Your virtual front desk works 24/7.',
+          'Handles booking requests on WhatsApp, Instagram and your booking site, answers service questions, and processes payments in Arabic and English. Your virtual front desk works 24/7.',
       },
       {
         title: 'Beauty-Specific Client Profiles',
@@ -353,7 +357,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'Marketplace Discovery',
         description:
-          'Get discovered by new clients browsing the Daisy marketplace. No commission on marketplace bookings, new clients or returning. Your clients, your revenue.',
+          'Get discovered by new clients browsing the Daisy marketplace. Joining is optional, the marketplace is available in selected countries, and businesses are listed after a service-quality review. Commission applies only to new clients it brings you.',
       },
       {
         title: 'AI Marketing Automation',
@@ -370,27 +374,27 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'What is the best beauty salon software?',
         answer:
-          'The best beauty salon software depends on your needs. For growth-focused salons wanting AI, cashback, and Arabic support, Daisy leads. For budget solopreneurs, GlossGenius ($24/mo) is affordable. For marketplace exposure, Fresha has the largest consumer base, on published subscription plans plus per-transaction and new-client marketplace fees.',
+          'The best beauty salon software depends on your needs. For growth-focused salons wanting AI, cashback, and Arabic support, Daisy leads. For budget solopreneurs in the US, GlossGenius Standard costs $28/mo, or $24/mo billed annually. For marketplace exposure, Fresha has the largest consumer base, on published subscription plans plus per-transaction and new-client marketplace fees.',
       },
       {
         question: 'How much does beauty salon software cost?',
         answer:
-          'Beauty salon software ranges from low published entry plans with usage charges on top, such as Fresha, to $400+/mo (Mangomint, Boulevard). Daisy offers flat pricing that includes AI, unlimited staff, and all features without per-staff surcharges.',
+          'Beauty salon software ranges from low published entry plans with usage charges on top, such as Fresha, to per-location plans such as Mangomint ($120 per location plus $10 per user each month) and Boulevard (from $159/mo for one location). Daisy\'s plans include AI and 5, 10 or 15 team members, and each extra calendar is $10/month.',
       },
       {
         question: 'Is Daisy good for hair salons?',
         answer:
-          'Yes. Daisy supports hair salon-specific features like color formula tracking, rebooking reminders for regular cuts/colors, and staff skill-based booking. The AI receptionist handles the common calls hair salons receive.',
+          'Yes. Daisy supports hair salon-specific features like color formula tracking, rebooking reminders for regular cuts/colors, and staff skill-based booking. The AI receptionist handles the common questions hair salons get on WhatsApp and Instagram.',
       },
       {
         question: 'Can I switch from Fresha to Daisy?',
         answer:
-          'Yes. Daisy provides full migration support to transfer your client database, service menu, booking history, and staff profiles. Most salons switch in under a week with no downtime. Unlike Fresha, Daisy adds nothing per transaction and takes no marketplace commission.',
+          'Yes. Daisy provides full migration support to transfer your client database, service menu, booking history, and staff profiles. Most salons switch in under a week with no downtime. Unlike Fresha, Daisy adds nothing per transaction. Daisy charges 0% commission on your existing clients, and marketplace commission applies only to new clients its marketplace brings you.',
       },
       {
         question: 'Does Daisy work in Arabic for beauty salons?',
         answer:
-          'Yes. Daisy has a fully native Arabic interface, not a translation. The AI receptionist speaks Arabic and English fluently, and all client-facing booking pages support RTL layout for Arabic-speaking clients.',
+          'Yes. Daisy has a fully native Arabic interface, not a translation. The AI receptionist replies in Arabic and English, and all client-facing booking pages support RTL layout for Arabic-speaking clients.',
       },
       {
         question: 'What features should I look for in beauty salon software?',
@@ -400,7 +404,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'How does Daisy help beauty salons get new clients?',
         answer:
-          'Daisy acquires clients through three channels: the Daisy marketplace (where new clients discover you), cashback rewards (incentivizing referrals and repeat visits), and AI marketing automation (targeted campaigns based on client behavior).',
+          'Daisy acquires clients through three channels: the optional Daisy marketplace, available in selected countries (where new clients discover you), cashback rewards (incentivizing referrals and repeat visits), and AI marketing automation (targeted campaigns based on client behavior).',
       },
       {
         question: 'Is beauty salon software worth the investment?',
@@ -465,7 +469,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'AI-Powered Self-Service Booking',
         description:
-          'Clients book directly from any channel, website, phone, social media, marketplace. AI handles the conversation, checks availability, and processes payment.',
+          'Clients book directly from your website, WhatsApp, Instagram or the Daisy marketplace if you join it. AI handles the conversation, checks availability, and processes payment.',
       },
       {
         title: 'Smart Schedule Optimization',
@@ -478,9 +482,9 @@ export const solutionData: I18nContent<SolutionData[]> = {
           'SMS and WhatsApp reminders reduce no-shows by up to 50%. Optional deposit requirements for high-value bookings.',
       },
       {
-        title: '24/7 AI Phone Handling',
+        title: '24/7 AI Messaging',
         description:
-          'Never miss a call. AI answers in Arabic or English, books appointments, and handles common questions, even at 2 AM.',
+          'Never miss a message. AI replies on WhatsApp, Instagram and your booking site in Arabic or English, books appointments, and handles common questions, even at 2 AM.',
       },
       {
         title: 'Multi-Channel Booking Sync',
@@ -497,12 +501,12 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'What is the best salon appointment scheduling software?',
         answer:
-          'For AI that handles WhatsApp and Instagram as well as phone, plus cashback-funded acquisition, Daisy is the top choice. For scheduling on a published entry plan with per-transaction fees, Square Appointments or Fresha work. For budget scheduling only, Acuity ($16/mo) is affordable but lacks salon-specific features.',
+          'For AI that handles WhatsApp, Instagram and your booking site in Arabic and English, plus cashback-funded acquisition, Daisy is the top choice. For scheduling on a published entry plan with per-transaction fees, Square Appointments or Fresha work. Acuity Scheduling is a general-purpose scheduler used across many industries, from $20/mo ($16/mo billed annually).',
       },
       {
         question: 'How does AI scheduling work?',
         answer:
-          'Daisy\'s AI answers calls and messages, understands what service the client wants, checks real-time availability across all staff, suggests optimal time slots, processes payment or deposit, and sends confirmation, all without human intervention.',
+          'Daisy\'s AI answers messages on WhatsApp, Instagram and your booking site, understands what service the client wants, checks real-time availability across all staff, suggests optimal time slots, processes payment or deposit, and sends confirmation, all without human intervention.',
       },
       {
         question: 'Can clients book through WhatsApp?',
@@ -512,17 +516,19 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'How much can AI scheduling save my salon?',
         answer:
-          'Salons using AI scheduling typically save 15-20 hours per week on phone calls and admin, reduce no-shows by 40-50%, and increase bookings by capturing after-hours inquiries that previously went unanswered.',
+          'Salons using AI scheduling spend less time on booking messages and admin, reduce no-shows by 40-50%, and increase bookings by capturing after-hours inquiries that previously went unanswered.',
       },
+      // Calendly: calendly.com, read 2026-10-09 ("20 million professionals"; solutions for sales,
+      // marketing, recruiting, education, technology and financial services).
       {
         question: 'Can I switch from Acuity or Calendly to Daisy?',
         answer:
-          'Yes. While Acuity and Calendly are generic scheduling tools, Daisy is purpose-built for salons with service-specific features, staff skill matching, and beauty industry workflows. Migration is supported with no downtime.',
+          'Yes. Acuity and Calendly are general-purpose scheduling tools used across many industries. Daisy is purpose-built for salons, with service-specific features, staff skill matching, and beauty industry workflows. Migration is supported with no downtime.',
       },
       {
         question: 'Does Daisy support online booking in Arabic?',
         answer:
-          'Yes. Daisy\'s booking interface is fully native in Arabic with RTL layout. The AI receptionist handles phone and chat bookings in Arabic and English, making it ideal for GCC salons.',
+          'Yes. Daisy\'s booking interface is fully native in Arabic with RTL layout. The AI receptionist handles bookings on WhatsApp, Instagram and the booking site in Arabic and English, making it ideal for GCC salons.',
       },
       {
         question: 'How does Daisy prevent double-bookings?',
@@ -552,33 +558,35 @@ export const solutionData: I18nContent<SolutionData[]> = {
   {
     slug: 'barbershop-software',
     metaTitle: 'Barbershop Software with AI Booking | The Daisy',
-    metaDescription: 'Run your barbershop smarter with AI booking, walk-in management, and cashback loyalty. No per-barber pricing.',
+    metaDescription: 'Run your barbershop smarter with AI booking, walk-in management, and cashback loyalty. Plans include 5, 10 or 15 team members.',
     keywords: ['barbershop software', 'barber booking software', 'barbershop management', 'barber scheduling app'],
     heroTitle: 'Barbershop Software That Works as Hard as You Do',
     heroSubtitle: 'Walk-ins, regulars, and everything in between, managed by AI so you focus on the chair.',
     definition:
-      'Barbershop software is a management platform built for barbershops that handles walk-in queues, scheduled appointments, barber preferences, and payments. The Daisy is an AI-powered barbershop platform with flat pricing (no per-barber fees), walk-in/appointment hybrid management, and cashback loyalty.',
-    intro: 'Barbershops run differently than salons. Walk-ins are common, regulars expect their usual, and the vibe matters. The men\'s grooming market has grown to over $80 billion globally, and barbershops that adopt digital booking see up to 30% more appointments from online channels. Daisy understands barbershop culture and provides tools that match, from AI that handles calls to flat pricing that doesn\'t charge per barber.',
+      'Barbershop software is a management platform built for barbershops that handles walk-in queues, scheduled appointments, barber preferences, and payments. The Daisy is an AI-powered barbershop platform with walk-in/appointment hybrid management, cashback loyalty, and plans that include 5, 10 or 15 team members.',
+    intro: 'Barbershops run differently than salons. Walk-ins are common, regulars expect their usual, and the vibe matters. The men\'s grooming market has grown to over $80 billion globally, and barbershops that adopt digital booking see up to 30% more appointments from online channels. Daisy understands barbershop culture and provides tools that match, from AI that answers WhatsApp and Instagram messages to plans that include 5, 10 or 15 team members.',
     challenges: [
       { title: 'Walk-in management chaos', description: 'Balancing walk-ins with appointments without frustrating either group.' },
-      { title: 'Per-barber pricing kills growth', description: 'Adding a new barber to the team shouldn\'t cost $30+/mo extra.' },
+      { title: 'Team costs that are hard to predict', description: 'Before you hire, you should know what another barber adds to the monthly bill.' },
       { title: 'Regulars want their barber', description: 'Clients have preferences. Without smart booking, they end up with the wrong person.' },
       { title: 'No marketing beyond social media', description: 'Instagram is great for showcasing cuts, but converting followers to bookings needs a direct path.' },
     ],
     features: [
       { title: 'Walk-In + Appointment Hybrid', description: 'Manage walk-ins and scheduled appointments in one view. AI estimates wait times and notifies walk-in clients.' },
-      { title: 'Flat Pricing, No Per-Barber Fees', description: 'Add your whole team without worrying about per-seat costs. One price, unlimited barbers.' },
-      { title: 'AI Phone Handling', description: 'AI answers calls, books appointments, and lets regulars request their preferred barber.' },
+      { title: 'Team Members Included', description: 'Plans include 5, 10 or 15 team members. Each extra barber calendar is $10/month, so you know the cost before you hire.' },
+      { title: 'AI Booking on WhatsApp and Instagram', description: 'AI answers messages, books appointments, and lets regulars request their preferred barber.' },
       { title: 'Cashback Loyalty', description: 'Turn walk-ins into regulars with cashback rewards that bring them back.' },
     ],
     faqs: [
-      { question: 'Is Daisy good for barbershops?', answer: 'Yes. Daisy supports walk-in management, barber preferences, flat pricing (no per-barber fees), and AI phone handling, all designed for how barbershops actually operate.' },
-      { question: 'How does Daisy compare to SQUIRE for barbershops?', answer: 'SQUIRE is barbershop-specific but US-only with per-barber pricing. Daisy offers flat pricing, AI, Arabic support, and cashback that SQUIRE lacks.' },
-      { question: 'What is the best barbershop software in 2026?', answer: 'For barbershops wanting AI booking, walk-in management, and flat pricing, Daisy leads. SQUIRE is barbershop-specific but US-only and charges per barber. Booksy is popular for mobile booking but lacks AI and cashback features.' },
-      { question: 'How much does barbershop software cost?', answer: 'Barbershop software ranges from $25/mo (basic tools) to $100+/barber/mo (SQUIRE). Daisy uses flat pricing, add your whole team without per-barber fees, including AI receptionist and all features.' },
+      { question: 'Is Daisy good for barbershops?', answer: 'Yes. Daisy supports walk-in management, barber preferences, plans that include 5, 10 or 15 team members, and AI booking on WhatsApp and Instagram, all designed for how barbershops actually operate.' },
+      // SQUIRE facts from Wayback Machine snapshots of getsquire.com (Aug 2026), as recorded in
+      // competitors/tier3Data.ts; Booksy facts from booksy.com, read 2026-10-09 (tier1Data.ts).
+      { question: 'How does Daisy compare to SQUIRE for barbershops?', answer: 'SQUIRE is built for barbershops. It charges a flat price per shop, from $30/mo, with no per-barber charges, and offers an AI phone receptionist (Operator) as a $99/mo add-on in English and Spanish. It sells in the US, Canada, the UK and the EU. Daisy is built for the GCC: its AI works on WhatsApp, Instagram and the booking site in Arabic and English, and it includes cashback rewards.' },
+      { question: 'What is the best barbershop software in 2026?', answer: 'For barbershops wanting AI booking on WhatsApp and Instagram, walk-in management, and cashback loyalty, Daisy leads. SQUIRE is barbershop-specific, with a flat price per shop. Booksy, used by 330,000+ pros, costs $29.99/mo plus $20/mo for each extra team member and has an AI Receptionist in beta that answers calls in English or Spanish.' },
+      { question: 'How much does barbershop software cost?', answer: 'Barbershop software ranges from about $25/mo for basic tools to $250/mo per shop for SQUIRE\'s Titan plan (its plans start at $30/mo per shop). Daisy\'s plans include the AI receptionist and 5, 10 or 15 team members, and each extra barber calendar is $10/month.' },
       { question: 'Can Daisy manage walk-ins and appointments together?', answer: 'Yes. Daisy\'s hybrid system manages walk-ins and scheduled appointments side by side. AI estimates wait times for walk-ins and notifies clients when their barber is ready.' },
-      { question: 'Does barbershop software work in Arabic?', answer: 'Daisy is one of the few barbershop platforms with a fully native Arabic interface. The AI receptionist handles calls and bookings in Arabic and English, making it ideal for barbershops in the GCC.' },
-      { question: 'How does Daisy help barbershops get more clients?', answer: 'Daisy brings in new clients through the marketplace (where people discover barbershops), cashback rewards (incentivizing repeat visits and referrals), and AI marketing automation that runs targeted campaigns on autopilot.' },
+      { question: 'Does barbershop software work in Arabic?', answer: 'Daisy is one of the few barbershop platforms with a fully native Arabic interface. The AI receptionist handles messages and bookings on WhatsApp, Instagram and the booking site in Arabic and English, making it ideal for barbershops in the GCC.' },
+      { question: 'How does Daisy help barbershops get more clients?', answer: 'Daisy brings in new clients through the optional marketplace, available in selected countries (where people discover barbershops), cashback rewards (incentivizing repeat visits and referrals), and AI marketing automation that runs targeted campaigns on autopilot.' },
       { question: 'Can clients request their preferred barber when booking?', answer: 'Yes. Clients can select their preferred barber during booking, and AI remembers their preference for future bookings. Regulars are automatically matched with their usual barber.' },
       { question: 'Does Daisy support barbershop loyalty programs?', answer: 'Yes. Daisy\'s cashback rewards system turns walk-ins into regulars. Clients earn cashback on every visit, creating a financial incentive to keep coming back, more effective than traditional punch cards.' },
     ],
@@ -608,11 +616,11 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'Can Daisy handle nail salon scheduling?', answer: 'Yes. Daisy supports varied service durations, multiple simultaneous techs, walk-in queues, and automatic rebooking for maintenance appointments.' },
-      { question: 'What is the best nail salon software in 2026?', answer: 'For nail salons wanting AI booking, automated rebooking, and cashback loyalty, Daisy is the top choice. GlossGenius is popular for solo nail techs on a budget. Fresha offers booking on a published entry plan, with per-transaction fees on top; Daisy bundles AI, unlimited techs and rebooking automation into one flat price.' },
-      { question: 'How much does nail salon software cost?', answer: 'Nail salon software ranges from low published entry plans with transaction fees on top, such as Fresha, to $200+/mo for full platforms. Daisy offers flat pricing that includes AI, unlimited techs, rebooking automation, and all features.' },
+      { question: 'What is the best nail salon software in 2026?', answer: 'For nail salons wanting AI booking, automated rebooking, and cashback loyalty, Daisy is the top choice. GlossGenius is available in the US only and starts at $28/mo ($24/mo billed annually). Fresha offers booking on a published entry plan, with per-transaction fees on top; Daisy bundles AI and rebooking automation into plans that include 5, 10 or 15 team members.' },
+      { question: 'How much does nail salon software cost?', answer: 'Nail salon software ranges from low published entry plans with transaction fees on top, such as Fresha, to $200+/mo for full platforms. Daisy\'s plans include AI, rebooking automation and 5, 10 or 15 team members, and each extra tech calendar is $10/month.' },
       { question: 'How does Daisy help nail salons retain clients?', answer: 'Daisy sends automated rebooking reminders when it\'s time for fills or new sets, offers cashback rewards that build with each visit, and uses AI to send personalized offers based on client history and preferences.' },
-      { question: 'Does Daisy work for independent nail technicians?', answer: 'Yes. Daisy scales from solo nail techs to multi-location nail bars. For independent techs, the AI receptionist is invaluable, handling calls and bookings while you focus on your client\'s nails.' },
-      { question: 'Can nail salon clients book online with Daisy?', answer: 'Yes. Clients book 24/7 from your website, social media, or the Daisy marketplace. The AI handles service selection, duration, and payment, even at 2 AM.' },
+      { question: 'Does Daisy work for independent nail technicians?', answer: 'Yes. Daisy scales from solo nail techs to multi-location nail bars. For independent techs, the AI receptionist is invaluable, handling messages and bookings while you focus on your client\'s nails.' },
+      { question: 'Can nail salon clients book online with Daisy?', answer: 'Yes. Clients book 24/7 from your website, social media, or the Daisy marketplace if you join it. The AI handles service selection, duration, and payment, even at 2 AM.' },
       { question: 'Does Daisy support walk-in management for nail salons?', answer: 'Yes. Daisy provides a fair digital queue for walk-ins with real-time wait time estimates. Walk-in clients can join the queue online and get notified when their turn is approaching.' },
       { question: 'Can I track nail service preferences in Daisy?', answer: 'Yes. Daisy\'s client profiles store preferred nail shapes, colors, gel vs. acrylic preferences, allergies, and full service history. AI uses this data to personalize every rebooking reminder.' },
       { question: 'Does nail salon software work in Arabic?', answer: 'Daisy features a fully native Arabic interface with RTL layout support. The AI receptionist communicates in Arabic and English, making it the ideal choice for nail salons in the GCC region.' },
@@ -643,9 +651,12 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'Is Daisy suitable for medical spas?', answer: 'Yes. Daisy supports consent forms, treatment records, multi-session scheduling, and compliance requirements. The AI concierge handles patient inquiries about treatments professionally.' },
-      { question: 'How does Daisy compare to RepeatMD for med spas?', answer: 'RepeatMD is a $700/mo marketing tool requiring separate operations software. Daisy is a complete platform including AI, booking, POS, and marketing with cashback, all in one.' },
-      { question: 'What is the best med spa software in 2026?', answer: 'For AI-powered med spa management with cashback retention, Daisy is the top choice. Boulevard targets luxury practices at $200+/mo. AestheticsPro focuses on charting but lacks AI and marketing. Daisy offers the most complete platform at flat pricing.' },
-      { question: 'How much does med spa software cost per month?', answer: 'Med spa software ranges from $150/mo (basic tools) to $700+/mo (RepeatMD for marketing alone, plus operations software). Daisy offers flat pricing that includes AI concierge, consent management, marketing, and all features.' },
+      // RepeatMD and Boulevard facts: competitors/tier2Data.ts sources, read 2026-10-09.
+      // AestheticsPro: aestheticspro.com, read 2026-10-09 ("E-Records, charts, notes, photos";
+      // "Phone, text, and website agents"; "Email, text, and social tools to create campaigns").
+      { question: 'How does Daisy compare to RepeatMD for med spas?', answer: 'RepeatMD runs patient rewards and memberships inside a practice\'s own branded app, next to its existing EMR or practice management system. Pricing is on request. Daisy is a complete platform including AI, booking, POS, and marketing with cashback, all in one.' },
+      { question: 'What is the best med spa software in 2026?', answer: 'For AI-powered med spa management with cashback retention, Daisy is the top choice. Boulevard\'s Aesthetics Essentials plan costs $199/mo ($179/mo billed annually). AestheticsPro offers charting, AI phone, text and website agents, and email and text marketing. Daisy offers the most complete platform, with published pricing.' },
+      { question: 'How much does med spa software cost per month?', answer: 'Med spa software ranges from about $150/mo for basic tools to plans priced on request. Boulevard\'s Aesthetics Essentials plan, for example, costs $199/mo, and RepeatMD prices on request. Daisy\'s published plans include the AI concierge, consent management and marketing.' },
       { question: 'Can Daisy handle multi-session treatment plans?', answer: 'Yes. Daisy manages treatment series (e.g., 6-session laser packages) with automated scheduling, session tracking, progress documentation, and AI reminders for upcoming appointments.' },
       { question: 'Does Daisy support digital consent forms for med spas?', answer: 'Yes. Create custom digital consent forms that patients sign on a tablet or phone before treatment. Forms are stored securely alongside treatment records and before/after photos.' },
       { question: 'Can I switch from AestheticsPro or Boulevard to Daisy?', answer: 'Yes. Daisy provides migration support for patient records, treatment history, consent forms, and staff schedules. Most med spas complete the transition in under a week with no disruption.' },
@@ -664,7 +675,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
     heroTitle: 'Salon POS System with Built-In Growth',
     heroSubtitle: 'Process payments, track retail, and grow revenue, all from one system with transparent pricing.',
     definition:
-      'A salon POS (point-of-sale) system is payment processing and retail management software designed for salons and beauty businesses, handling service payments, product sales, tips, and revenue tracking. The Daisy is an AI-powered salon POS that integrates payments with booking, CRM, and marketing, with zero transaction fees and transparent flat pricing.',
+      'A salon POS (point-of-sale) system is payment processing and retail management software designed for salons and beauty businesses, handling service payments, product sales, tips, and revenue tracking. The Daisy is an AI-powered salon POS that integrates payments with booking, CRM, and marketing, with zero transaction fees and transparent published pricing.',
     intro: 'Your POS should do more than process payments. Salons that add retail product sales alongside services increase average ticket value by 15-25%, and integrated POS systems reduce checkout time by up to 50% compared to separate tools. Daisy\'s salon POS integrates with AI booking, client profiles, and cashback rewards, turning every transaction into a growth opportunity.',
     challenges: [
       { title: 'Hidden transaction fees', description: 'Most POS systems charge 2-3% per transaction. On $10,000/mo in card payments, that\'s $200-300 in fees.' },
@@ -678,12 +689,12 @@ export const solutionData: I18nContent<SolutionData[]> = {
       { title: 'AI Revenue Insights', description: 'AI analyzes payment patterns to recommend pricing optimizations and upsell opportunities.' },
     ],
     faqs: [
-      { question: 'What POS system is best for salons?', answer: 'For beauty-specific POS with AI and cashback, Daisy leads. For hardware-first POS, Square or Toast are strong. For comprehensive features, Vagaro\'s POS is solid.' },
-      { question: 'How much does a salon POS system cost?', answer: 'Salon POS systems range from free (Square, with per-transaction fees) to $200+/mo for integrated platforms. Daisy offers transparent flat pricing with POS included, no hidden per-transaction fees eating into your revenue.' },
+      { question: 'What POS system is best for salons?', answer: 'For beauty-specific POS with AI and cashback, Daisy leads. For hardware-first POS in the US, Square Appointments has a free plan, with in-person card payments at 2.6% + 15¢. For comprehensive features, Vagaro\'s POS is solid.' },
+      { question: 'How much does a salon POS system cost?', answer: 'Salon POS systems range from free (Square, with per-transaction fees) to $200+/mo for integrated platforms. Daisy offers transparent published pricing with POS included, no hidden per-transaction fees eating into your revenue.' },
       { question: 'Does Daisy charge per-transaction fees?', answer: 'Daisy offers transparent pricing. Unlike many POS systems that charge 2-3% per transaction (which on $10,000/mo in card payments means $200-300 in fees), Daisy\'s pricing is clear and predictable.' },
       { question: 'Can Daisy POS handle retail product sales?', answer: 'Yes. Daisy\'s POS supports retail product sales alongside services. Track inventory automatically, bundle products with treatments, and see retail performance analytics, all in one system.' },
       { question: 'Does the salon POS support split payments and tips?', answer: 'Yes. Daisy handles split payments across multiple methods, tip processing, gift card redemption, and cashback rewards, all in a smooth checkout flow that staff learn in minutes.' },
-      { question: 'Can I switch from Square POS to Daisy?', answer: 'Yes. Daisy provides migration support and is purpose-built for beauty businesses. Unlike generic POS systems like Square, Daisy integrates payments with AI booking, client profiles, and cashback loyalty.' },
+      { question: 'Can I switch from Square POS to Daisy?', answer: 'Yes. Daisy provides migration support and is purpose-built for beauty businesses. Square serves many kinds of businesses and does not operate in the GCC. Daisy integrates payments with AI booking, client profiles, and cashback loyalty.' },
       { question: 'Does salon POS software work in Arabic?', answer: 'Daisy\'s POS interface is fully native in Arabic with RTL support. Receipts, client-facing screens, and reporting all work seamlessly in Arabic and English.' },
       { question: 'What payment methods does Daisy POS accept?', answer: 'Daisy supports all major payment methods including credit/debit cards, Apple Pay, Google Pay, Mada (GCC), cash, gift cards, and cashback wallet balance. Multiple methods can be combined in one transaction.' },
       { question: 'Does Daisy POS include sales reporting?', answer: 'Yes. Daisy provides real-time revenue reporting, service vs. retail breakdowns, staff performance metrics, daily/weekly/monthly trends, and AI-powered insights that recommend pricing optimizations and upsell opportunities.' },
@@ -714,8 +725,8 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'What CRM features do salons need?', answer: 'Essential: client profiles, booking history, automated reminders, marketing campaigns. Advanced: AI churn prediction, personalized offers, cashback loyalty, and multi-channel communication.' },
-      { question: 'What is the best salon CRM software in 2026?', answer: 'For AI-powered client management with cashback retention, Daisy is the leading choice. Phorest is strong on client communication. Vagaro offers basic CRM with booking. Daisy uniquely combines AI churn prediction, cashback loyalty, and Arabic support.' },
-      { question: 'How much does salon CRM software cost?', answer: 'Standalone salon CRMs range from $50-200/mo. However, most salons benefit from an integrated platform (CRM + booking + POS + marketing). Daisy includes full CRM in its flat pricing, no extra charge for client management features.' },
+      { question: 'What is the best salon CRM software in 2026?', answer: 'For AI-powered client management with cashback retention, Daisy is the leading choice. Phorest is strong on client communication, with email, SMS and WhatsApp marketing. Vagaro pairs booking with client profiles and a points loyalty program. Daisy uniquely combines AI churn prediction, cashback loyalty, and Arabic support.' },
+      { question: 'How much does salon CRM software cost?', answer: 'Standalone salon CRMs range from $50-200/mo. However, most salons benefit from an integrated platform (CRM + booking + POS + marketing). Daisy includes full CRM in every plan, with no extra charge for client management features.' },
       { question: 'How does AI predict client churn in salons?', answer: 'Daisy\'s AI analyzes booking frequency, spending patterns, and engagement signals to identify clients at risk of leaving. When a regular client\'s visit interval increases, AI automatically triggers re-engagement campaigns before they churn.' },
       { question: 'Can Daisy CRM track client preferences and formulas?', answer: 'Yes. Daisy stores color formulas, product preferences, allergies, service history, spending patterns, and personal notes, all in one rich client profile. Staff can access this information before each appointment.' },
       { question: 'Does Daisy CRM support automated marketing?', answer: 'Yes. Daisy automatically sends birthday campaigns, rebooking reminders, win-back sequences for lapsed clients, and personalized offers based on client behavior, without any manual work from your team.' },
@@ -744,18 +755,18 @@ export const solutionData: I18nContent<SolutionData[]> = {
     features: [
       { title: 'AI Campaign Manager', description: 'AI creates, schedules, and optimizes campaigns. Birthday offers, seasonal promotions, and rebooking reminders, automated.' },
       { title: 'Cashback Acquisition Engine', description: 'Cashback rewards create a financial incentive for booking, referring friends, and leaving reviews.' },
-      { title: 'Marketplace Visibility', description: 'Get discovered on the Daisy marketplace by clients actively looking for beauty services in your area.' },
+      { title: 'Marketplace Visibility', description: 'Get discovered on the optional Daisy marketplace, available in selected countries, by clients actively looking for beauty services in your area.' },
       { title: 'Multi-Channel Outreach', description: 'Email, SMS, WhatsApp, reach clients on the channel they prefer. AI picks the optimal channel per client.' },
     ],
     faqs: [
       { question: 'How does AI salon marketing work?', answer: 'Daisy\'s AI analyzes your client data to identify opportunities (lapsed clients, upcoming birthdays, seasonal trends), creates personalized campaigns, and sends them at optimal times, all automatically.' },
-      { question: 'What is the best salon marketing software in 2026?', answer: 'For AI-powered marketing with cashback acquisition, Daisy is the top choice. RepeatMD focuses on med spa marketing at $700/mo. Phorest has strong email marketing. Daisy uniquely combines AI campaigns, cashback rewards, and marketplace visibility in one platform.' },
-      { question: 'How much does salon marketing software cost?', answer: 'Standalone salon marketing tools range from $50/mo to $700/mo (RepeatMD). Daisy includes full marketing automation in its flat pricing. AI campaigns, cashback rewards, and marketplace listing, no extra subscription needed.' },
+      { question: 'What is the best salon marketing software in 2026?', answer: 'For AI-powered marketing with cashback acquisition, Daisy is the top choice. RepeatMD runs patient rewards and memberships for med spas, with pricing on request. Phorest offers email, SMS and WhatsApp marketing. Daisy uniquely combines AI campaigns, cashback rewards, and marketplace visibility in one platform.' },
+      { question: 'How much does salon marketing software cost?', answer: 'Standalone salon marketing tools start around $50/mo, and some, such as RepeatMD, price on request. Daisy includes marketing automation in its plans: AI campaigns, cashback rewards and an optional marketplace listing, with no extra subscription needed.' },
       { question: 'Does Daisy replace the need for social media marketing?', answer: 'Daisy complements social media by providing a direct booking path from social profiles and converting followers into paying clients. It also provides channels social media can\'t, automated SMS, WhatsApp, and email marketing, plus marketplace discovery.' },
       { question: 'How does cashback marketing work for salons?', answer: 'Clients earn cashback on every booking, referral, and review. This creates a self-reinforcing growth loop: existing clients bring new ones, new clients earn cashback and come back, and your marketing cost per acquisition drops over time.' },
       { question: 'Can Daisy send automated rebooking reminders?', answer: 'Yes. Daisy\'s AI tracks each client\'s booking patterns and sends personalized rebooking reminders at the optimal time, via their preferred channel (SMS, WhatsApp, or email). No manual work required.' },
       { question: 'Does salon marketing software work in Arabic?', answer: 'Daisy\'s marketing automation is fully native in Arabic. Automated campaigns, client communications, and marketplace listings all work seamlessly in Arabic and English, essential for salons targeting GCC clients.' },
-      { question: 'How does the Daisy marketplace help salons find new clients?', answer: 'The Daisy marketplace is a discovery platform where new clients search for beauty services in their area. Unlike marketplaces that charge 20% commission, Daisy listing is included in your subscription, your clients, your revenue.' },
+      { question: 'How does the Daisy marketplace help salons find new clients?', answer: 'The Daisy marketplace is a discovery platform where new clients search for beauty services in their area. It is optional and available in selected countries, and businesses are listed after a service-quality review. Commission applies only to new clients the marketplace brings you, and your existing clients carry 0% commission.' },
       { question: 'Can I track which marketing campaigns bring in the most bookings?', answer: 'Yes. Daisy provides full campaign analytics showing open rates, click rates, bookings generated, and revenue attributed to each campaign. AI uses this data to optimize future campaigns automatically.' },
     ],
     relatedSolutions: ['salon-crm-software', 'salon-management-software'],
@@ -774,7 +785,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
     challenges: [
       { title: 'Clients expect instant booking', description: '78% of consumers prefer booking online. If your salon doesn\'t offer it, competitors do.' },
       { title: 'Multiple booking channels cause chaos', description: 'Phone, Instagram DM, walk-in, website, without sync, you get double-bookings and missed appointments.' },
-      { title: 'Generic booking pages hurt your brand', description: 'A booking page carrying another platform\'s badge doesn\'t reflect your salon\'s personality, and on marketplace models the new clients who arrive that way carry a commission.' },
+      { title: 'Generic booking pages hurt your brand', description: 'A booking page carrying another platform\'s badge doesn\'t reflect your salon\'s personality.' },
     ],
     features: [
       { title: 'Instant Mobile Booking', description: 'Clients book in seconds from any device. Beautiful, fast, branded booking experience.' },
@@ -784,10 +795,10 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'What is the best salon booking app?', answer: 'For AI-powered booking with Arabic support and cashback, Daisy leads. For marketplace-based booking reach, Fresha is popular. For mobile-first, Booksy has a great app.' },
-      { question: 'How much does a salon booking app cost?', answer: 'Salon booking apps range from low published entry plans with per-transaction fees on top, such as Fresha, to $200+/mo for premium platforms. Daisy offers flat pricing that includes the booking app, AI receptionist, cashback, and all features, with nothing added per transaction.' },
+      { question: 'How much does a salon booking app cost?', answer: 'Salon booking apps range from low published entry plans with per-transaction fees on top, such as Fresha, to $200+/mo for premium platforms. Daisy\'s plans include the booking app, the AI receptionist and cashback, with nothing added per transaction.' },
       { question: 'Can clients book appointments through my salon\'s website?', answer: 'Yes. Daisy provides an embeddable booking widget for your website, plus a standalone branded booking page. Clients book directly without leaving your site, and the experience matches your brand aesthetic.' },
       { question: 'Does the salon booking app work offline?', answer: 'Daisy\'s booking app works online from any device. For staff, the management app includes offline functionality for essential tasks like checking schedules and client profiles when connectivity is limited.' },
-      { question: 'Can I switch from Booksy or Fresha\'s booking app to Daisy?', answer: 'Yes. Daisy provides migration support including client data, booking history, and staff profiles. Daisy\'s booking page is fully white-label, your brand only with no third-party badge, and Daisy charges no commission on bookings, new or returning.' },
+      { question: 'Can I switch from Booksy or Fresha\'s booking app to Daisy?', answer: 'Yes. Daisy provides migration support including client data, booking history, and staff profiles. Daisy\'s booking page is fully white-label, your brand only with no third-party badge, and Daisy charges 0% commission on your existing clients. Commission applies only to new clients its optional marketplace brings you.' },
       { question: 'Does the booking app support Arabic?', answer: 'Yes. Daisy\'s booking app is fully native in Arabic with RTL layout. Clients can browse services, select staff, and complete bookings entirely in Arabic or English.' },
       { question: 'How does Daisy\'s white-label booking work?', answer: 'Daisy removes all third-party branding from your booking experience. Your logo, your name, your colors, clients see only your brand. No "Powered by" logos or links to competitor listings.' },
       { question: 'Can clients pay when they book through the app?', answer: 'Yes. Daisy supports full payment or deposit collection at the time of booking. This reduces no-shows and secures revenue. Clients can pay via card, Apple Pay, Google Pay, or Mada (GCC).' },
@@ -819,11 +830,11 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'What is beauty business management software?', answer: 'Beauty business management software handles booking, payments, client management, staff scheduling, marketing, and reporting, ideally in one integrated platform. Daisy adds AI and cashback to this foundation.' },
-      { question: 'What is the best beauty business management platform in 2026?', answer: 'For all-in-one management with AI and cashback, Daisy is the leading choice. Vagaro is a solid mid-range option. Mindbody targets fitness and wellness. Boulevard focuses on luxury. Daisy uniquely combines all features with AI and Arabic support at flat pricing.' },
-      { question: 'How much does beauty business management software cost?', answer: 'Individual tools (booking + POS + CRM + marketing) can cost $300-500/mo combined. All-in-one platforms range from $50/mo (basic) to $400+/mo (premium). Daisy offers flat pricing that replaces multiple subscriptions with one comprehensive platform.' },
+      { question: 'What is the best beauty business management platform in 2026?', answer: 'For all-in-one management with AI and cashback, Daisy is the leading choice. Vagaro is a solid mid-range option. Mindbody serves fitness, wellness and beauty businesses. Boulevard sells per-location plans from $159/mo. Daisy uniquely combines all features with AI and Arabic support.' },
+      { question: 'How much does beauty business management software cost?', answer: 'Individual tools (booking + POS + CRM + marketing) can cost $300-500/mo combined. All-in-one platforms range from $50/mo (basic) to $400+/mo (premium). Daisy\'s plans replace multiple subscriptions with one comprehensive platform.' },
       { question: 'Can I replace multiple software tools with Daisy?', answer: 'Yes. Daisy replaces your booking tool, POS, CRM, marketing software, client management, and reporting tools with one integrated platform. Most beauty businesses eliminate 4-6 separate subscriptions after switching.' },
       { question: 'Does Daisy support multiple beauty business locations?', answer: 'Yes. Daisy offers centralized multi-location management with shared client databases, location-specific staff and services, consolidated reporting, and a single dashboard to control everything.' },
-      { question: 'How does Daisy help beauty businesses grow?', answer: 'Daisy drives growth through three engines: AI receptionist (captures every inquiry 24/7), cashback rewards (turns first-timers into regulars who refer friends), and marketplace visibility (new clients discover you). All automated, no extra effort.' },
+      { question: 'How does Daisy help beauty businesses grow?', answer: 'Daisy drives growth through three engines: AI receptionist (answers WhatsApp, Instagram and booking-site inquiries 24/7), cashback rewards (turns first-timers into regulars who refer friends), and the optional marketplace, available in selected countries (new clients discover you). All automated, no extra effort.' },
       { question: 'Can I switch from Vagaro or Mindbody to Daisy?', answer: 'Yes. Daisy provides full migration support including client databases, service menus, booking history, and staff profiles. Most businesses complete the switch in under a week with zero downtime.' },
       { question: 'Does beauty business software work in Arabic?', answer: 'Daisy is built with native Arabic support, not a translation layer. Every feature from booking to reporting to AI receptionist works natively in Arabic and English, with full RTL layout support.' },
       { question: 'What reporting and analytics does Daisy provide?', answer: 'Daisy offers real-time dashboards covering revenue, bookings, staff performance, client retention, marketing ROI, and cashback program metrics. AI surfaces actionable insights and growth opportunities automatically.' },
@@ -857,14 +868,14 @@ export const solutionData: I18nContent<SolutionData[]> = {
     intro: 'برامج الصالونات التقليدية تساعدك في إدارة المواعيد وتتبع المدفوعات. ديزي يذهب أبعد من ذلك — إنه منصة نمو تستخدم الذكاء الاصطناعي لجلب عملاء جدد، والحفاظ على العملاء الحاليين، والتعامل مع المهام الإدارية التي تستهلك وقتك. من المتوقع أن يصل سوق برمجيات الصالونات العالمي إلى 712 مليون دولار بحلول 2028، والصالونات التي تعتمد برامج الإدارة تشهد انخفاضاً بنسبة 30-40% في حالات عدم الحضور. من المصففين المستقلين إلى الصالونات متعددة الفروع، ديزي يتوسع مع طموحاتك.',
     challenges: [
       {
-        title: 'المكالمات الفائتة تعني إيرادات ضائعة',
+        title: 'الرسائل بلا رد تعني إيرادات ضائعة',
         description:
-          'تُظهر بيانات القطاع أن الصالونات تفقد 30-40% من المكالمات الواردة. كل مكالمة فائتة هي حجز محتمل يذهب لمنافس يرد أسرع.',
+          'عندما ينتظر استفسار على واتساب أو إنستغرام ساعات قبل الرد، كثيراً ما يحجز العميل لدى من رد عليه أولاً.',
       },
       {
-        title: 'الفريق مُنهَك بين العملاء والهواتف',
+        title: 'الفريق مُنهَك بين العملاء والرسائل',
         description:
-          'يجب أن يركز فريقك على تقديم خدمة ممتازة، لا على الرد على الهواتف وإدارة الحجوزات بين المواعيد.',
+          'يجب أن يركز فريقك على تقديم خدمة ممتازة، لا على الرد على الرسائل وإدارة الحجوزات بين المواعيد.',
       },
       {
         title: 'عدم الحضور يُنهك جدولك',
@@ -886,12 +897,12 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'موظف استقبال ذكي يعمل على مدار الساعة',
         description:
-          'لن تفوتك حجوزات بعد الآن. ذكاء ديزي الاصطناعي يرد على المكالمات والرسائل واستفسارات الموقع بالعربية والإنجليزية، ويعالج الحجوزات والمدفوعات دون تدخل بشري.',
+          'لن تفوتك حجوزات بعد الآن. ذكاء ديزي الاصطناعي يرد على الرسائل عبر واتساب وإنستغرام وموقع الحجز بالعربية والإنجليزية، ويعالج الحجوزات والمدفوعات دون تدخل بشري.',
       },
       {
         title: 'حجز إلكتروني ذكي',
         description:
-          'يحجز العملاء في أي وقت من موقعك أو وسائل التواصل أو سوق ديزي. يُحسّن الذكاء الاصطناعي جدولك لتقليل الفجوات وزيادة الإيرادات.',
+          'يحجز العملاء في أي وقت من موقعك أو وسائل التواصل أو سوق ديزي إن انضممت إليه. يُحسّن الذكاء الاصطناعي جدولك لتقليل الفجوات وزيادة الإيرادات.',
       },
       {
         title: 'نقاط بيع ومدفوعات متكاملة',
@@ -911,7 +922,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'إدارة شاملة للموظفين',
         description:
-          'جدولة الموظفين وتتبع الأداء وتعيين الخدمات وإدارة الصلاحيات، كل ذلك مشمول في السعر الثابت، بدون رسوم لكل موظف.',
+          'جدولة الموظفين وتتبع الأداء وتعيين الخدمات وإدارة الصلاحيات. تشمل الخطط 5 أو 10 أو 15 عضواً في الفريق، وكل تقويم إضافي بـ 10 دولارات شهرياً.',
       },
     ],
     faqs: [
@@ -923,7 +934,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'كم يكلف برنامج إدارة الصالونات؟',
         answer:
-          'تتراوح أسعار برامج الصالونات من خطط أساسية منخفضة السعر تُضاف إليها رسوم معاملات وعمولات سوق — مثل Fresha — إلى أكثر من 400 دولار شهرياً (Boulevard، Mangomint). يقدم ديزي سعراً ثابتاً يشمل الذكاء الاصطناعي وموظفين غير محدودين وجميع الميزات، بدون رسوم إضافية لكل موظف أو مستويات ميزات.',
+          'تتراوح أسعار برامج الصالونات من خطط أساسية منخفضة السعر تُضاف إليها رسوم معاملات وعمولات سوق — مثل Fresha — إلى خطط تُسعَّر لكل فرع مثل Boulevard (من 159 دولاراً شهرياً لفرع واحد) وMangomint (120 دولاراً لكل فرع إضافة إلى 10 دولارات لكل مستخدم شهرياً). تشمل خطط ديزي الثلاث الذكاء الاصطناعي و5 أو 10 أو 15 عضواً في الفريق، بدءاً من دولار واحد شهرياً (+50 دولاراً بعد تجاوز 5 مواعيد في الشهر)، وكل تقويم إضافي بـ 10 دولارات شهرياً.',
       },
       {
         question: 'هل يمكنني الانتقال من برنامج الصالون الحالي؟',
@@ -938,12 +949,12 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'ما هو أفضل برنامج إدارة صالونات في 2026؟',
         answer:
-          'أفضل برنامج إدارة صالونات في 2026 يعتمد على أولوياتك. للنمو المدعوم بالذكاء الاصطناعي مع كاشباك ودعم عربي، ديزي هو الخيار الأول. لعرض السوق، Fresha شائع. للصالونات الفاخرة في أمريكا فقط، Boulevard أو Mangomint خيارات قوية.',
+          'أفضل برنامج إدارة صالونات في 2026 يعتمد على أولوياتك. للنمو المدعوم بالذكاء الاصطناعي مع كاشباك ودعم عربي، ديزي هو الخيار الأول. لعرض السوق، Fresha شائع. للصالونات الفاخرة في أمريكا الشمالية، Boulevard (الولايات المتحدة) وMangomint (الولايات المتحدة وكندا) خيارات قوية.',
       },
       {
         question: 'هل يعمل ديزي بالعربية؟',
         answer:
-          'نعم. يتميز ديزي بواجهة عربية أصيلة بالكامل، وليست طبقة ترجمة. موظف الاستقبال الذكي يتحدث ويعالج الحجوزات بالعربية والإنجليزية بطلاقة، وجميع العناصر المواجهة للعملاء تدعم تخطيط RTL.',
+          'نعم. يتميز ديزي بواجهة عربية أصيلة بالكامل، وليست طبقة ترجمة. موظف الاستقبال الذكي يرد ويستقبل الحجوزات بالعربية والإنجليزية، وجميع العناصر المواجهة للعملاء تدعم تخطيط RTL.',
       },
       {
         question: 'ما الميزات التي يجب أن أبحث عنها في برنامج صالون؟',
@@ -953,7 +964,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'هل ديزي مناسب لصالون صغير بمصفف واحد؟',
         answer:
-          'بالتأكيد. ديزي يتوسع من المصففين المستقلين إلى الشركات متعددة الفروع. للمشغلين المستقلين، موظف الاستقبال الذكي ذو قيمة خاصة — يعمل كمكتب استقبال افتراضي يتولى المكالمات والحجوزات بينما تركز أنت على العملاء.',
+          'بالتأكيد. ديزي يتوسع من المصففين المستقلين إلى الشركات متعددة الفروع. للمشغلين المستقلين، موظف الاستقبال الذكي ذو قيمة خاصة — يعمل كمكتب استقبال افتراضي يرد على رسائل واتساب وإنستغرام ويتولى الحجوزات بينما تركز أنت على العملاء.',
       },
       {
         question: 'كيف يساعد ديزي في تقليل حالات عدم الحضور؟',
@@ -1060,12 +1071,12 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'ما هو أفضل نظام حجز سبا في 2026؟',
         answer:
-          'للحجز المدعوم بالذكاء الاصطناعي مع دعم عربي وولاء كاشباك، ديزي هو الخيار الأول. Mindbody شائع للسبا المركّز على اللياقة. Boulevard يستهدف السبا الفاخر بسعر مرتفع (أكثر من 200 دولار شهرياً). ديزي يغطي جميع المستويات بسعر ثابت.',
+          'للحجز المدعوم بالذكاء الاصطناعي مع دعم عربي وولاء كاشباك، ديزي هو الخيار الأول. يخدم Mindbody أعمال اللياقة والعافية والتجميل، بسعر يبدأ من 79 دولاراً شهرياً لكل فرع في الولايات المتحدة. تبدأ خطط Boulevard من 159 دولاراً شهرياً لفرع واحد (143 دولاراً شهرياً عند الدفع السنوي). تشمل خطط ديزي 5 أو 10 أو 15 عضواً في الفريق مع الذكاء الاصطناعي.',
       },
       {
         question: 'كم يكلف برنامج إدارة السبا شهرياً؟',
         answer:
-          'تتراوح أسعار برامج السبا من 50 دولاراً شهرياً (أدوات أساسية) إلى أكثر من 500 دولار شهرياً (منصات مؤسسية مثل Mindbody أو Boulevard). يقدم ديزي سعراً ثابتاً يشمل الكونسيرج الذكي وموظفين غير محدودين وجميع الميزات بدون رسوم إضافية لكل معالج.',
+          'تتراوح أسعار برامج السبا عادة من 50 دولاراً شهرياً للأدوات الأساسية إلى خطط مؤسسية تُسعَّر عند الطلب، مثل Mindbody Enterprise وBoulevard Enterprise. تشمل خطط ديزي الكونسيرج الذكي و5 أو 10 أو 15 عضواً في الفريق، وكل تقويم إضافي لمعالج بـ 10 دولارات شهرياً.',
       },
       {
         question: 'هل يمكنني الانتقال من Mindbody إلى ديزي؟',
@@ -1090,7 +1101,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'هل يمكن لضيوف السبا الحجز إلكترونياً بعد ساعات العمل؟',
         answer:
-          'بالتأكيد. كونسيرج ديزي الذكي يعمل على مدار الساعة، ويتعامل مع الحجوزات الإلكترونية والهاتفية في أي وقت. بما أن أكثر من 60% من حجوزات السبا تحدث خارج ساعات العمل، هذا يعني إيرادات أكثر بكثير.',
+          'بالتأكيد. كونسيرج ديزي الذكي يعمل على مدار الساعة، ويستقبل الحجوزات عبر واتساب وإنستغرام وموقع الحجز في أي وقت. بما أن أكثر من 60% من حجوزات السبا تحدث خارج ساعات العمل، هذا يعني إيرادات أكثر بكثير.',
       },
     ],
     relatedSolutions: ['salon-management-software', 'beauty-salon-software', 'salon-appointment-scheduling'],
@@ -1113,7 +1124,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       'صناعة التجميل تتحرك بسرعة. برنامجك يجب أن يواكب ذلك، بذكاء اصطناعي يحجز ويُسوّق وينمّي صالونك بينما تبدع أنت.',
     definition:
       'برنامج صالون التجميل هو منصة إدارة أعمال مصممة لصالونات الشعر واستوديوهات التجميل وأعمال التجميل متعددة الخدمات لإدارة الحجوزات والمدفوعات والعملاء والموظفين والتسويق في مكان واحد. ديزي هو منصة صالون تجميل مدعومة بالذكاء الاصطناعي تتجاوز العمليات لاستقطاب العملاء والاحتفاظ بهم بفاعلية عبر مكافآت الكاشباك وموظف استقبال ذكي يعمل على مدار الساعة.',
-    intro: 'صالونات التجميل تحتاج أكثر من دفاتر مواعيد وأجهزة دفع. في سوق تنافسي حيث يفقد الصالون المتوسط 10-25% من عملائه سنوياً بسبب التناقص الطبيعي، الصالونات التي تزدهر هي التي تستقطب العملاء بكفاءة وتحافظ عليهم بمكافآت الولاء وتقدم خدمة استثنائية. أعمال التجميل التي تفقد حتى 35% من المكالمات الواردة خارج ساعات العمل تترك إيرادات على الطاولة. ديزي مصمم خصيصاً لمحترفي التجميل الذين يفكرون كأصحاب أعمال.',
+    intro: 'صالونات التجميل تحتاج أكثر من دفاتر مواعيد وأجهزة دفع. في سوق تنافسي حيث يفقد الصالون المتوسط 10-25% من عملائه سنوياً بسبب التناقص الطبيعي، الصالونات التي تزدهر هي التي تستقطب العملاء بكفاءة وتحافظ عليهم بمكافآت الولاء وتقدم خدمة استثنائية. أعمال التجميل التي تترك الرسائل بلا رد خارج ساعات العمل تترك إيرادات على الطاولة. ديزي مصمم خصيصاً لمحترفي التجميل الذين يفكرون كأصحاب أعمال.',
     challenges: [
       {
         title: 'المنافسة شرسة',
@@ -1140,7 +1151,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'موظف استقبال ذكي للتجميل',
         description:
-          'يتعامل مع مكالمات الحجز ويجيب على أسئلة الخدمات ويعالج المدفوعات بالعربية والإنجليزية. مكتب استقبالك الافتراضي يعمل على مدار الساعة.',
+          'يتعامل مع طلبات الحجز عبر واتساب وإنستغرام وموقع الحجز ويجيب على أسئلة الخدمات ويعالج المدفوعات بالعربية والإنجليزية. مكتب استقبالك الافتراضي يعمل على مدار الساعة.',
       },
       {
         title: 'ملفات عملاء متخصصة للتجميل',
@@ -1155,7 +1166,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'اكتشاف عبر السوق',
         description:
-          'يكتشفك عملاء جدد عبر سوق ديزي. بدون أي عمولة على حجوزات السوق — عملاء جدد أو متكررون. عملاؤك، إيراداتك.',
+          'يكتشفك عملاء جدد عبر سوق ديزي. الانضمام اختياري، والسوق متاح في دول مختارة، وتُدرج الأعمال بعد مراجعة لجودة الخدمة. ولا تُفرض العمولة إلا على العملاء الجدد الذين يجلبهم لك.',
       },
       {
         title: 'أتمتة التسويق بالذكاء الاصطناعي',
@@ -1172,27 +1183,27 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'ما هو أفضل برنامج صالون تجميل؟',
         answer:
-          'أفضل برنامج صالون تجميل يعتمد على احتياجاتك. للصالونات المركّزة على النمو التي تريد ذكاء اصطناعي وكاشباك ودعم عربي، ديزي في المقدمة. لأصحاب المشاريع بميزانية محدودة، GlossGenius (24 دولاراً شهرياً) ميسور. لعرض السوق، لدى Fresha أكبر قاعدة مستهلكين، عبر خطط اشتراك مُعلنة إضافة إلى رسوم معاملات وعمولة على العملاء الجدد.',
+          'أفضل برنامج صالون تجميل يعتمد على احتياجاتك. للصالونات المركّزة على النمو التي تريد ذكاء اصطناعي وكاشباك ودعم عربي، ديزي في المقدمة. لأصحاب المشاريع الفردية بميزانية محدودة في الولايات المتحدة، خطة Standard من GlossGenius تكلف 28 دولاراً شهرياً، أو 24 دولاراً شهرياً عند الدفع السنوي. لعرض السوق، لدى Fresha أكبر قاعدة مستهلكين، عبر خطط اشتراك مُعلنة إضافة إلى رسوم معاملات وعمولة على العملاء الجدد.',
       },
       {
         question: 'كم يكلف برنامج صالون التجميل؟',
         answer:
-          'تتراوح أسعار برامج صالونات التجميل من خطط أساسية منخفضة السعر مع رسوم استخدام مُعلنة فوقها — مثل Fresha — إلى أكثر من 400 دولار شهرياً (Mangomint، Boulevard). يقدم ديزي سعراً ثابتاً يشمل الذكاء الاصطناعي وموظفين غير محدودين وجميع الميزات بدون رسوم إضافية لكل موظف.',
+          'تتراوح أسعار برامج صالونات التجميل من خطط أساسية منخفضة السعر مع رسوم استخدام مُعلنة فوقها — مثل Fresha — إلى خطط تُسعَّر لكل فرع مثل Mangomint (120 دولاراً لكل فرع إضافة إلى 10 دولارات لكل مستخدم شهرياً) وBoulevard (من 159 دولاراً شهرياً لفرع واحد). تشمل خطط ديزي الذكاء الاصطناعي و5 أو 10 أو 15 عضواً في الفريق، وكل تقويم إضافي بـ 10 دولارات شهرياً.',
       },
       {
         question: 'هل ديزي جيد لصالونات الشعر؟',
         answer:
-          'نعم. يدعم ديزي ميزات خاصة بصالونات الشعر مثل تتبع تركيبات الألوان وتذكيرات إعادة الحجز للقصات/الصبغات المنتظمة والحجز حسب مهارات الموظفين. موظف الاستقبال الذكي يتعامل مع المكالمات الشائعة لصالونات الشعر.',
+          'نعم. يدعم ديزي ميزات خاصة بصالونات الشعر مثل تتبع تركيبات الألوان وتذكيرات إعادة الحجز للقصات/الصبغات المنتظمة والحجز حسب مهارات الموظفين. موظف الاستقبال الذكي يتعامل مع الأسئلة الشائعة التي تصل صالونات الشعر عبر واتساب وإنستغرام.',
       },
       {
         question: 'هل يمكنني الانتقال من Fresha إلى ديزي؟',
         answer:
-          'نعم. يوفر ديزي دعم نقل شامل لتحويل قاعدة بيانات العملاء وقائمة الخدمات وسجل الحجوزات وملفات الموظفين. معظم الصالونات تنتقل في أقل من أسبوع بدون توقف. على عكس Fresha، لا يفرض ديزي أي رسوم على المعاملات ولا عمولة سوق.',
+          'نعم. يوفر ديزي دعم نقل شامل لتحويل قاعدة بيانات العملاء وقائمة الخدمات وسجل الحجوزات وملفات الموظفين. معظم الصالونات تنتقل في أقل من أسبوع بدون توقف. على عكس Fresha، لا يفرض ديزي أي رسوم على المعاملات. وعمولة ديزي 0% على عملائك الحاليين، ولا تُفرض عمولة السوق إلا على العملاء الجدد الذين يجلبهم سوقها.',
       },
       {
         question: 'هل يعمل ديزي بالعربية لصالونات التجميل؟',
         answer:
-          'نعم. لدى ديزي واجهة عربية أصيلة بالكامل وليست ترجمة. موظف الاستقبال الذكي يتحدث العربية والإنجليزية بطلاقة، وجميع صفحات الحجز المواجهة للعملاء تدعم تخطيط RTL للعملاء الناطقين بالعربية.',
+          'نعم. لدى ديزي واجهة عربية أصيلة بالكامل وليست ترجمة. موظف الاستقبال الذكي يرد بالعربية والإنجليزية، وجميع صفحات الحجز المواجهة للعملاء تدعم تخطيط RTL للعملاء الناطقين بالعربية.',
       },
       {
         question: 'ما الميزات التي يجب أن أبحث عنها في برنامج صالون تجميل؟',
@@ -1202,7 +1213,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'كيف يساعد ديزي صالونات التجميل في الحصول على عملاء جدد؟',
         answer:
-          'يستقطب ديزي العملاء عبر ثلاث قنوات: سوق ديزي (حيث يكتشفك عملاء جدد)، ومكافآت الكاشباك (تحفيز الإحالات والزيارات المتكررة)، وأتمتة التسويق بالذكاء الاصطناعي (حملات مستهدفة بناءً على سلوك العملاء).',
+          'يستقطب ديزي العملاء عبر ثلاث قنوات: سوق ديزي الاختياري المتاح في دول مختارة (حيث يكتشفك عملاء جدد)، ومكافآت الكاشباك (تحفيز الإحالات والزيارات المتكررة)، وأتمتة التسويق بالذكاء الاصطناعي (حملات مستهدفة بناءً على سلوك العملاء).',
       },
       {
         question: 'هل يستحق برنامج صالون التجميل الاستثمار؟',
@@ -1267,7 +1278,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'حجز ذاتي مدعوم بالذكاء الاصطناعي',
         description:
-          'يحجز العملاء مباشرة من أي قناة — الموقع أو الهاتف أو وسائل التواصل أو السوق. يتولى الذكاء الاصطناعي المحادثة ويتحقق من التوفر ويعالج الدفع.',
+          'يحجز العملاء مباشرة من موقعك أو واتساب أو إنستغرام أو سوق ديزي إن انضممت إليه. يتولى الذكاء الاصطناعي المحادثة ويتحقق من التوفر ويعالج الدفع.',
       },
       {
         title: 'تحسين الجدول الذكي',
@@ -1280,9 +1291,9 @@ export const solutionData: I18nContent<SolutionData[]> = {
           'تذكيرات عبر الرسائل النصية وواتساب تقلل عدم الحضور بنسبة تصل إلى 50%. متطلبات عربون اختيارية للحجوزات عالية القيمة.',
       },
       {
-        title: 'التعامل مع المكالمات الهاتفية بالذكاء الاصطناعي على مدار الساعة',
+        title: 'رسائل بالذكاء الاصطناعي على مدار الساعة',
         description:
-          'لن تفوتك مكالمة. يرد الذكاء الاصطناعي بالعربية أو الإنجليزية ويحجز المواعيد ويجيب على الأسئلة الشائعة، حتى في الثانية صباحاً.',
+          'لن تفوتك رسالة. يرد الذكاء الاصطناعي عبر واتساب وإنستغرام وموقع الحجز بالعربية أو الإنجليزية ويحجز المواعيد ويجيب على الأسئلة الشائعة، حتى في الثانية صباحاً.',
       },
       {
         title: 'مزامنة الحجز متعدد القنوات',
@@ -1299,12 +1310,12 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'ما هو أفضل برنامج جدولة مواعيد صالون؟',
         answer:
-          'للذكاء الاصطناعي الذي يعمل عبر واتساب وإنستغرام إضافة إلى الهاتف، مع استقطاب عملاء بالكاشباك، ديزي هو الخيار الأول. للجدولة على خطة مُعلنة مع رسوم لكل معاملة، Square Appointments أو Fresha تعمل. للجدولة الاقتصادية فقط، Acuity (16 دولاراً شهرياً) ميسور لكنه يفتقر لميزات الصالونات المتخصصة.',
+          'للذكاء الاصطناعي الذي يعمل عبر واتساب وإنستغرام وموقع الحجز بالعربية والإنجليزية، مع استقطاب عملاء بالكاشباك، ديزي هو الخيار الأول. للجدولة على خطة مُعلنة مع رسوم لكل معاملة، Square Appointments أو Fresha تعمل. Acuity Scheduling أداة جدولة عامة تُستخدم في قطاعات كثيرة، بسعر يبدأ من 20 دولاراً شهرياً (16 دولاراً شهرياً عند الدفع السنوي).',
       },
       {
         question: 'كيف تعمل الجدولة بالذكاء الاصطناعي؟',
         answer:
-          'ذكاء ديزي الاصطناعي يرد على المكالمات والرسائل ويفهم الخدمة التي يريدها العميل ويتحقق من التوفر الفوري عبر جميع الموظفين ويقترح أوقاتاً مثالية ويعالج الدفع أو العربون ويرسل التأكيد — كل ذلك بدون تدخل بشري.',
+          'ذكاء ديزي الاصطناعي يرد على الرسائل عبر واتساب وإنستغرام وموقع الحجز ويفهم الخدمة التي يريدها العميل ويتحقق من التوفر الفوري عبر جميع الموظفين ويقترح أوقاتاً مثالية ويعالج الدفع أو العربون ويرسل التأكيد — كل ذلك بدون تدخل بشري.',
       },
       {
         question: 'هل يمكن للعملاء الحجز عبر واتساب؟',
@@ -1314,17 +1325,17 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'كم يمكن أن توفر الجدولة الذكية لصالوني؟',
         answer:
-          'الصالونات التي تستخدم الجدولة الذكية عادة توفر 15-20 ساعة أسبوعياً من المكالمات والعمل الإداري، وتقلل عدم الحضور بنسبة 40-50%، وتزيد الحجوزات بالتقاط الاستفسارات بعد ساعات العمل التي كانت تذهب بلا رد.',
+          'الصالونات التي تستخدم الجدولة الذكية تقضي وقتاً أقل في رسائل الحجز والعمل الإداري، وتقلل عدم الحضور بنسبة 40-50%، وتزيد الحجوزات بالتقاط الاستفسارات بعد ساعات العمل التي كانت تذهب بلا رد.',
       },
       {
         question: 'هل يمكنني الانتقال من Acuity أو Calendly إلى ديزي؟',
         answer:
-          'نعم. بينما Acuity وCalendly هي أدوات جدولة عامة، ديزي مصمم خصيصاً للصالونات بميزات خاصة بالخدمات ومطابقة مهارات الموظفين وسير عمل صناعة التجميل. النقل مدعوم بدون توقف.',
+          'نعم. Acuity وCalendly أدوات جدولة عامة تُستخدم في قطاعات كثيرة، أما ديزي فمصمم خصيصاً للصالونات بميزات خاصة بالخدمات ومطابقة مهارات الموظفين وسير عمل صناعة التجميل. النقل مدعوم بدون توقف.',
       },
       {
         question: 'هل يدعم ديزي الحجز الإلكتروني بالعربية؟',
         answer:
-          'نعم. واجهة الحجز في ديزي أصيلة بالكامل بالعربية مع تخطيط RTL. يتعامل موظف الاستقبال الذكي مع الحجوزات الهاتفية والدردشة بالعربية والإنجليزية، مما يجعله مثالياً لصالونات الخليج.',
+          'نعم. واجهة الحجز في ديزي أصيلة بالكامل بالعربية مع تخطيط RTL. يتعامل موظف الاستقبال الذكي مع الحجوزات عبر واتساب وإنستغرام وموقع الحجز بالعربية والإنجليزية، مما يجعله مثالياً لصالونات الخليج.',
       },
       {
         question: 'كيف يمنع ديزي الحجوزات المزدوجة؟',
@@ -1354,33 +1365,33 @@ export const solutionData: I18nContent<SolutionData[]> = {
   {
     slug: 'barbershop-software',
     metaTitle: 'برنامج حلاقة بحجز ذكي | ديزي',
-    metaDescription: 'أدِر محل الحلاقة بذكاء مع الحجز الذكي وإدارة الحضور المباشر وولاء الكاشباك. بدون رسوم لكل حلاق.',
+    metaDescription: 'أدِر محل الحلاقة بذكاء مع الحجز الذكي وإدارة الحضور المباشر وولاء الكاشباك. تشمل الخطط 5 أو 10 أو 15 عضواً في الفريق.',
     keywords: ['برنامج حلاقة', 'برنامج حجز حلاق', 'إدارة محل حلاقة', 'تطبيق جدولة حلاق'],
     heroTitle: 'برنامج حلاقة يعمل بجدّ مثلك',
     heroSubtitle: 'الحضور المباشر والعملاء الدائمون وكل شيء بينهما — يديره الذكاء الاصطناعي لتركز أنت على الكرسي.',
     definition:
-      'برنامج الحلاقة هو منصة إدارة مصممة لمحلات الحلاقة تتعامل مع طوابير الحضور المباشر والمواعيد المجدولة وتفضيلات الحلاقين والمدفوعات. ديزي هو منصة حلاقة مدعومة بالذكاء الاصطناعي بسعر ثابت (بدون رسوم لكل حلاق) وإدارة مختلطة للحضور المباشر والمواعيد وولاء كاشباك.',
-    intro: 'محلات الحلاقة تعمل بشكل مختلف عن الصالونات. الحضور المباشر شائع، والعملاء الدائمون يتوقعون المعتاد، والأجواء مهمة. نما سوق العناية بالرجال إلى أكثر من 80 مليار دولار عالمياً، ومحلات الحلاقة التي تعتمد الحجز الرقمي تشهد زيادة تصل إلى 30% في المواعيد من القنوات الإلكترونية. ديزي يفهم ثقافة محلات الحلاقة ويوفر أدوات تتناسب معها — من ذكاء اصطناعي يتعامل مع المكالمات إلى سعر ثابت لا يفرض رسوماً لكل حلاق.',
+      'برنامج الحلاقة هو منصة إدارة مصممة لمحلات الحلاقة تتعامل مع طوابير الحضور المباشر والمواعيد المجدولة وتفضيلات الحلاقين والمدفوعات. ديزي هو منصة حلاقة مدعومة بالذكاء الاصطناعي بإدارة مختلطة للحضور المباشر والمواعيد وولاء كاشباك، وخطط تشمل 5 أو 10 أو 15 عضواً في الفريق.',
+    intro: 'محلات الحلاقة تعمل بشكل مختلف عن الصالونات. الحضور المباشر شائع، والعملاء الدائمون يتوقعون المعتاد، والأجواء مهمة. نما سوق العناية بالرجال إلى أكثر من 80 مليار دولار عالمياً، ومحلات الحلاقة التي تعتمد الحجز الرقمي تشهد زيادة تصل إلى 30% في المواعيد من القنوات الإلكترونية. ديزي يفهم ثقافة محلات الحلاقة ويوفر أدوات تتناسب معها — من ذكاء اصطناعي يرد على رسائل واتساب وإنستغرام إلى خطط تشمل 5 أو 10 أو 15 عضواً في الفريق.',
     challenges: [
       { title: 'فوضى إدارة الحضور المباشر', description: 'موازنة الحضور المباشر مع المواعيد دون إحباط أي مجموعة.' },
-      { title: 'الرسوم لكل حلاق تعيق النمو', description: 'إضافة حلاق جديد للفريق يجب ألا تكلف 30+ دولاراً شهرياً إضافياً.' },
+      { title: 'تكاليف فريق يصعب توقعها', description: 'قبل أن توظف، يجب أن تعرف ما يضيفه حلاق جديد إلى فاتورتك الشهرية.' },
       { title: 'العملاء الدائمون يريدون حلاقهم', description: 'العملاء لديهم تفضيلات. بدون حجز ذكي، ينتهي بهم الأمر مع الشخص الخطأ.' },
       { title: 'لا تسويق بعد وسائل التواصل', description: 'إنستغرام ممتاز لعرض القصات، لكن تحويل المتابعين إلى حجوزات يحتاج مساراً مباشراً.' },
     ],
     features: [
       { title: 'نظام مختلط للحضور المباشر والمواعيد', description: 'أدِر الحضور المباشر والمواعيد المجدولة في عرض واحد. يقدّر الذكاء الاصطناعي أوقات الانتظار ويُخطر العملاء.' },
-      { title: 'سعر ثابت بدون رسوم لكل حلاق', description: 'أضف فريقك بالكامل دون القلق من تكاليف لكل مقعد. سعر واحد، حلاقون غير محدودين.' },
-      { title: 'التعامل مع المكالمات بالذكاء الاصطناعي', description: 'يرد الذكاء الاصطناعي على المكالمات ويحجز المواعيد ويتيح للعملاء الدائمين طلب حلاقهم المفضل.' },
+      { title: 'أعضاء الفريق مشمولون', description: 'تشمل الخطط 5 أو 10 أو 15 عضواً في الفريق. وكل تقويم إضافي لحلاق بـ 10 دولارات شهرياً، فتعرف التكلفة قبل أن توظف.' },
+      { title: 'الحجز بالذكاء الاصطناعي عبر واتساب وإنستغرام', description: 'يرد الذكاء الاصطناعي على الرسائل ويحجز المواعيد ويتيح للعملاء الدائمين طلب حلاقهم المفضل.' },
       { title: 'ولاء الكاشباك', description: 'حوّل الحضور المباشر إلى عملاء دائمين بمكافآت كاشباك تجعلهم يعودون.' },
     ],
     faqs: [
-      { question: 'هل ديزي جيد لمحلات الحلاقة؟', answer: 'نعم. يدعم ديزي إدارة الحضور المباشر وتفضيلات الحلاقين والسعر الثابت (بدون رسوم لكل حلاق) والتعامل مع المكالمات بالذكاء الاصطناعي، كل ذلك مصمم لطريقة عمل محلات الحلاقة فعلياً.' },
-      { question: 'كيف يقارن ديزي مع SQUIRE لمحلات الحلاقة؟', answer: 'SQUIRE متخصص في محلات الحلاقة لكنه متاح فقط في أمريكا مع رسوم لكل حلاق. يقدم ديزي سعراً ثابتاً وذكاء اصطناعي ودعم عربي وكاشباك لا يوفرها SQUIRE.' },
-      { question: 'ما هو أفضل برنامج حلاقة في 2026؟', answer: 'لمحلات الحلاقة التي تريد حجزاً ذكياً وإدارة حضور مباشر وسعراً ثابتاً، ديزي في المقدمة. SQUIRE متخصص في الحلاقة لكنه أمريكي فقط ويفرض رسوماً لكل حلاق. Booksy شائع للحجز عبر الهاتف لكنه يفتقر للذكاء الاصطناعي والكاشباك.' },
-      { question: 'كم يكلف برنامج الحلاقة؟', answer: 'تتراوح أسعار برامج الحلاقة من 25 دولاراً شهرياً (أدوات أساسية) إلى أكثر من 100 دولار/حلاق/شهرياً (SQUIRE). ديزي يستخدم سعراً ثابتاً — أضف فريقك بالكامل بدون رسوم لكل حلاق، مع موظف الاستقبال الذكي وجميع الميزات.' },
+      { question: 'هل ديزي جيد لمحلات الحلاقة؟', answer: 'نعم. يدعم ديزي إدارة الحضور المباشر وتفضيلات الحلاقين وخططاً تشمل 5 أو 10 أو 15 عضواً في الفريق والحجز بالذكاء الاصطناعي عبر واتساب وإنستغرام، كل ذلك مصمم لطريقة عمل محلات الحلاقة فعلياً.' },
+      { question: 'كيف يقارن ديزي مع SQUIRE لمحلات الحلاقة؟', answer: 'SQUIRE مصمم لمحلات الحلاقة. يفرض سعراً ثابتاً لكل محل يبدأ من 30 دولاراً شهرياً دون رسوم لكل حلاق، ويقدم موظف استقبال هاتفياً بالذكاء الاصطناعي (Operator) كإضافة بسعر 99 دولاراً شهرياً بالإنجليزية والإسبانية. ويبيع خدماته في الولايات المتحدة وكندا والمملكة المتحدة والاتحاد الأوروبي. أما ديزي فمصمم لدول الخليج: يعمل ذكاؤه الاصطناعي عبر واتساب وإنستغرام وموقع الحجز بالعربية والإنجليزية، ويتضمن مكافآت الكاشباك.' },
+      { question: 'ما هو أفضل برنامج حلاقة في 2026؟', answer: 'لمحلات الحلاقة التي تريد حجزاً ذكياً عبر واتساب وإنستغرام وإدارة حضور مباشر وولاء كاشباك، ديزي في المقدمة. SQUIRE متخصص في الحلاقة بسعر ثابت لكل محل. أما Booksy، الذي يستخدمه أكثر من 330,000 محترف، فتكلفته 29.99 دولاراً شهرياً إضافة إلى 20 دولاراً شهرياً لكل عضو إضافي في الفريق، ولديه AI Receptionist في مرحلة تجريبية (beta) يرد على المكالمات بالإنجليزية أو الإسبانية.' },
+      { question: 'كم يكلف برنامج الحلاقة؟', answer: 'تتراوح أسعار برامج الحلاقة من نحو 25 دولاراً شهرياً للأدوات الأساسية إلى 250 دولاراً شهرياً لكل محل في خطة Titan من SQUIRE (تبدأ خططه من 30 دولاراً شهرياً لكل محل). تشمل خطط ديزي موظف الاستقبال الذكي و5 أو 10 أو 15 عضواً في الفريق، وكل تقويم إضافي لحلاق بـ 10 دولارات شهرياً.' },
       { question: 'هل يمكن لديزي إدارة الحضور المباشر والمواعيد معاً؟', answer: 'نعم. نظام ديزي المختلط يدير الحضور المباشر والمواعيد المجدولة جنباً إلى جنب. يقدّر الذكاء الاصطناعي أوقات الانتظار للحضور المباشر ويُخطر العملاء عندما يكون حلاقهم جاهزاً.' },
-      { question: 'هل يعمل برنامج الحلاقة بالعربية؟', answer: 'ديزي من القلائل بين منصات الحلاقة التي تتميز بواجهة عربية أصيلة بالكامل. يتعامل موظف الاستقبال الذكي مع المكالمات والحجوزات بالعربية والإنجليزية، مما يجعله مثالياً لمحلات الحلاقة في الخليج.' },
-      { question: 'كيف يساعد ديزي محلات الحلاقة في الحصول على مزيد من العملاء؟', answer: 'يجلب ديزي عملاء جدداً عبر السوق (حيث يكتشف الناس محلات الحلاقة)، ومكافآت الكاشباك (تحفيز الزيارات المتكررة والإحالات)، وأتمتة التسويق بالذكاء الاصطناعي التي تُشغّل حملات مستهدفة على الطيار الآلي.' },
+      { question: 'هل يعمل برنامج الحلاقة بالعربية؟', answer: 'ديزي من القلائل بين منصات الحلاقة التي تتميز بواجهة عربية أصيلة بالكامل. يتعامل موظف الاستقبال الذكي مع الرسائل والحجوزات عبر واتساب وإنستغرام وموقع الحجز بالعربية والإنجليزية، مما يجعله مثالياً لمحلات الحلاقة في الخليج.' },
+      { question: 'كيف يساعد ديزي محلات الحلاقة في الحصول على مزيد من العملاء؟', answer: 'يجلب ديزي عملاء جدداً عبر السوق الاختياري المتاح في دول مختارة (حيث يكتشف الناس محلات الحلاقة)، ومكافآت الكاشباك (تحفيز الزيارات المتكررة والإحالات)، وأتمتة التسويق بالذكاء الاصطناعي التي تُشغّل حملات مستهدفة على الطيار الآلي.' },
       { question: 'هل يمكن للعملاء طلب حلاقهم المفضل عند الحجز؟', answer: 'نعم. يمكن للعملاء اختيار حلاقهم المفضل أثناء الحجز، ويتذكر الذكاء الاصطناعي تفضيلهم للحجوزات المستقبلية. العملاء الدائمون يُطابَقون تلقائياً مع حلاقهم المعتاد.' },
       { question: 'هل يدعم ديزي برامج ولاء محلات الحلاقة؟', answer: 'نعم. نظام مكافآت الكاشباك من ديزي يحوّل الحضور المباشر إلى عملاء دائمين. يكسب العملاء كاشباك في كل زيارة، مما يخلق حافزاً مالياً للعودة — أكثر فعالية من بطاقات الطوابع التقليدية.' },
     ],
@@ -1410,11 +1421,11 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'هل يمكن لديزي التعامل مع جدولة صالون الأظافر؟', answer: 'نعم. يدعم ديزي فترات الخدمة المتنوعة وفنيات متعددة في وقت واحد وطوابير الحضور المباشر وإعادة الحجز التلقائية لمواعيد الصيانة.' },
-      { question: 'ما هو أفضل برنامج صالون أظافر في 2026؟', answer: 'لصالونات الأظافر التي تريد حجزاً ذكياً وإعادة حجز تلقائية وولاء كاشباك، ديزي هو الخيار الأول. GlossGenius شائع لفنيات الأظافر المستقلات بميزانية محدودة. يقدم Fresha حجزاً ضمن خطة مُعلنة مع رسوم لكل معاملة فوقها؛ أما ديزي فتجمع الذكاء الاصطناعي وعدداً غير محدود من الفنيات وأتمتة إعادة الحجز بسعر واحد ثابت.' },
-      { question: 'كم يكلف برنامج صالون الأظافر؟', answer: 'تتراوح أسعار برامج صالونات الأظافر من خطط أساسية منخفضة السعر مع رسوم معاملات فوقها — مثل Fresha — إلى أكثر من 200 دولار شهرياً للمنصات الكاملة. يقدم ديزي سعراً ثابتاً يشمل الذكاء الاصطناعي وفنيات غير محدودات وأتمتة إعادة الحجز وجميع الميزات.' },
+      { question: 'ما هو أفضل برنامج صالون أظافر في 2026؟', answer: 'لصالونات الأظافر التي تريد حجزاً ذكياً وإعادة حجز تلقائية وولاء كاشباك، ديزي هو الخيار الأول. GlossGenius متاح في الولايات المتحدة فقط، ويبدأ سعره من 28 دولاراً شهرياً (24 دولاراً شهرياً عند الدفع السنوي). يقدم Fresha حجزاً ضمن خطة مُعلنة مع رسوم لكل معاملة فوقها؛ أما ديزي فتجمع الذكاء الاصطناعي وأتمتة إعادة الحجز في خطط تشمل 5 أو 10 أو 15 عضواً في الفريق.' },
+      { question: 'كم يكلف برنامج صالون الأظافر؟', answer: 'تتراوح أسعار برامج صالونات الأظافر من خطط أساسية منخفضة السعر مع رسوم معاملات فوقها — مثل Fresha — إلى أكثر من 200 دولار شهرياً للمنصات الكاملة. تشمل خطط ديزي الذكاء الاصطناعي وأتمتة إعادة الحجز و5 أو 10 أو 15 عضواً في الفريق، وكل تقويم إضافي لفنية بـ 10 دولارات شهرياً.' },
       { question: 'كيف يساعد ديزي صالونات الأظافر في الاحتفاظ بالعملاء؟', answer: 'يرسل ديزي تذكيرات إعادة حجز تلقائية عندما يحين وقت التعبئة أو المجموعات الجديدة، ويقدم مكافآت كاشباك تتراكم مع كل زيارة، ويستخدم الذكاء الاصطناعي لإرسال عروض مخصصة بناءً على سجل العملاء وتفضيلاتهم.' },
-      { question: 'هل يعمل ديزي لفنيات الأظافر المستقلات؟', answer: 'نعم. يتوسع ديزي من فنيات الأظافر المستقلات إلى بارات الأظافر متعددة الفروع. للفنيات المستقلات، موظف الاستقبال الذكي لا يُقدّر بثمن — يتولى المكالمات والحجوزات بينما تركزين على أظافر عميلتك.' },
-      { question: 'هل يمكن لعملاء صالون الأظافر الحجز إلكترونياً مع ديزي؟', answer: 'نعم. يحجز العملاء على مدار الساعة من موقعك أو وسائل التواصل أو سوق ديزي. يتعامل الذكاء الاصطناعي مع اختيار الخدمة والمدة والدفع، حتى في الثانية صباحاً.' },
+      { question: 'هل يعمل ديزي لفنيات الأظافر المستقلات؟', answer: 'نعم. يتوسع ديزي من فنيات الأظافر المستقلات إلى بارات الأظافر متعددة الفروع. للفنيات المستقلات، موظف الاستقبال الذكي لا يُقدّر بثمن — يتولى الرسائل والحجوزات بينما تركزين على أظافر عميلتك.' },
+      { question: 'هل يمكن لعملاء صالون الأظافر الحجز إلكترونياً مع ديزي؟', answer: 'نعم. يحجز العملاء على مدار الساعة من موقعك أو وسائل التواصل أو سوق ديزي إن انضممت إليه. يتعامل الذكاء الاصطناعي مع اختيار الخدمة والمدة والدفع، حتى في الثانية صباحاً.' },
       { question: 'هل يدعم ديزي إدارة الحضور المباشر لصالونات الأظافر؟', answer: 'نعم. يوفر ديزي طابوراً رقمياً عادلاً للحضور المباشر مع تقديرات وقت الانتظار الفورية. يمكن لعملاء الحضور المباشر الانضمام للطابور إلكترونياً وتلقي إشعار عند اقتراب دورهم.' },
       { question: 'هل يمكنني تتبع تفضيلات خدمات الأظافر في ديزي؟', answer: 'نعم. تخزن ملفات عملاء ديزي أشكال الأظافر المفضلة والألوان وتفضيلات الجل مقابل الأكريليك والحساسيات وسجل الخدمة الكامل. يستخدم الذكاء الاصطناعي هذه البيانات لتخصيص كل تذكير إعادة حجز.' },
       { question: 'هل يعمل برنامج صالون الأظافر بالعربية؟', answer: 'يتميز ديزي بواجهة عربية أصيلة بالكامل مع دعم تخطيط RTL. يتواصل موظف الاستقبال الذكي بالعربية والإنجليزية، مما يجعله الخيار المثالي لصالونات الأظافر في منطقة الخليج.' },
@@ -1445,9 +1456,9 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'هل ديزي مناسب للمنتجعات الصحية الطبية؟', answer: 'نعم. يدعم ديزي نماذج الموافقة وسجلات العلاج والجدولة متعددة الجلسات ومتطلبات الامتثال. الكونسيرج الذكي يتعامل مع استفسارات المرضى عن العلاجات باحترافية.' },
-      { question: 'كيف يقارن ديزي مع RepeatMD للميد سبا؟', answer: 'RepeatMD هو أداة تسويق بـ700 دولار شهرياً تتطلب برنامج عمليات منفصل. ديزي منصة شاملة تتضمن الذكاء الاصطناعي والحجز ونقاط البيع والتسويق مع كاشباك، كل ذلك في نظام واحد.' },
-      { question: 'ما هو أفضل برنامج ميد سبا في 2026؟', answer: 'لإدارة الميد سبا المدعومة بالذكاء الاصطناعي مع احتفاظ عبر الكاشباك، ديزي هو الخيار الأول. Boulevard يستهدف الممارسات الفاخرة بأكثر من 200 دولار شهرياً. AestheticsPro يركز على الرسم البياني السريري لكنه يفتقر للذكاء الاصطناعي والتسويق. ديزي يقدم المنصة الأكثر شمولاً بسعر ثابت.' },
-      { question: 'كم يكلف برنامج الميد سبا شهرياً؟', answer: 'تتراوح أسعار برامج الميد سبا من 150 دولاراً شهرياً (أدوات أساسية) إلى أكثر من 700 دولار شهرياً (RepeatMD للتسويق فقط، بالإضافة إلى برنامج عمليات). يقدم ديزي سعراً ثابتاً يشمل الكونسيرج الذكي وإدارة الموافقات والتسويق وجميع الميزات.' },
+      { question: 'كيف يقارن ديزي مع RepeatMD للميد سبا؟', answer: 'يدير RepeatMD برامج مكافآت المرضى والعضويات داخل تطبيق يحمل علامة العيادة نفسها، إلى جانب نظام السجلات الطبية الإلكترونية أو نظام إدارة العيادة الحالي، وأسعاره متاحة عند الطلب. ديزي منصة شاملة تتضمن الذكاء الاصطناعي والحجز ونقاط البيع والتسويق مع كاشباك، كل ذلك في نظام واحد.' },
+      { question: 'ما هو أفضل برنامج ميد سبا في 2026؟', answer: 'لإدارة الميد سبا المدعومة بالذكاء الاصطناعي مع احتفاظ عبر الكاشباك، ديزي هو الخيار الأول. خطة Aesthetics Essentials من Boulevard تكلف 199 دولاراً شهرياً (179 دولاراً شهرياً عند الدفع السنوي). ويقدم AestheticsPro السجلات السريرية، ووكلاء ذكاء اصطناعي للهاتف والرسائل النصية والموقع، والتسويق عبر البريد الإلكتروني والرسائل النصية. ديزي يقدم المنصة الأكثر شمولاً بأسعار مُعلنة.' },
+      { question: 'كم يكلف برنامج الميد سبا شهرياً؟', answer: 'تتراوح أسعار برامج الميد سبا من نحو 150 دولاراً شهرياً للأدوات الأساسية إلى خطط تُسعَّر عند الطلب. فمثلاً خطة Aesthetics Essentials من Boulevard تكلف 199 دولاراً شهرياً، ويسعّر RepeatMD خدماته عند الطلب. تشمل خطط ديزي المُعلنة الكونسيرج الذكي وإدارة الموافقات والتسويق.' },
       { question: 'هل يمكن لديزي التعامل مع خطط العلاج متعددة الجلسات؟', answer: 'نعم. يدير ديزي سلسلة العلاجات (مثل باقات الليزر ذات 6 جلسات) مع جدولة تلقائية وتتبع الجلسات وتوثيق التقدم وتذكيرات ذكية بالمواعيد القادمة.' },
       { question: 'هل يدعم ديزي نماذج الموافقة الرقمية للميد سبا؟', answer: 'نعم. أنشئ نماذج موافقة رقمية مخصصة يوقعها المرضى على جهاز لوحي أو هاتف قبل العلاج. تُحفظ النماذج بأمان مع سجلات العلاج والصور قبل/بعد.' },
       { question: 'هل يمكنني الانتقال من AestheticsPro أو Boulevard إلى ديزي؟', answer: 'نعم. يوفر ديزي دعم نقل لسجلات المرضى وسجل العلاجات ونماذج الموافقة وجداول الموظفين. معظم الميد سبا تُكمل الانتقال في أقل من أسبوع بدون أي تعطيل.' },
@@ -1466,7 +1477,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
     heroTitle: 'نظام نقاط بيع صالونات مع نمو مدمج',
     heroSubtitle: 'عالج المدفوعات وتتبع التجزئة ونمّ الإيرادات — كل ذلك من نظام واحد بأسعار شفافة.',
     definition:
-      'نظام نقاط البيع (POS) للصالونات هو برنامج معالجة مدفوعات وإدارة تجزئة مصمم للصالونات وأعمال التجميل، يتعامل مع مدفوعات الخدمات ومبيعات المنتجات والإكراميات وتتبع الإيرادات. ديزي هو نظام نقاط بيع صالونات مدعوم بالذكاء الاصطناعي يدمج المدفوعات مع الحجز وإدارة العملاء والتسويق، بدون رسوم معاملات وبأسعار ثابتة شفافة.',
+      'نظام نقاط البيع (POS) للصالونات هو برنامج معالجة مدفوعات وإدارة تجزئة مصمم للصالونات وأعمال التجميل، يتعامل مع مدفوعات الخدمات ومبيعات المنتجات والإكراميات وتتبع الإيرادات. ديزي هو نظام نقاط بيع صالونات مدعوم بالذكاء الاصطناعي يدمج المدفوعات مع الحجز وإدارة العملاء والتسويق، بدون رسوم معاملات وبأسعار مُعلنة شفافة.',
     intro: 'يجب أن يفعل نظام نقاط البيع أكثر من معالجة المدفوعات. الصالونات التي تضيف مبيعات التجزئة إلى جانب الخدمات تزيد متوسط قيمة الفاتورة بنسبة 15-25%، وأنظمة نقاط البيع المتكاملة تقلل وقت الدفع بنسبة تصل إلى 50% مقارنة بالأدوات المنفصلة. نظام نقاط بيع ديزي للصالونات يتكامل مع الحجز الذكي وملفات العملاء ومكافآت الكاشباك، محولاً كل معاملة إلى فرصة نمو.',
     challenges: [
       { title: 'رسوم معاملات خفية', description: 'معظم أنظمة نقاط البيع تفرض 2-3% لكل معاملة. على 10,000 دولار شهرياً من المدفوعات بالبطاقة، هذا 200-300 دولار في الرسوم.' },
@@ -1480,12 +1491,12 @@ export const solutionData: I18nContent<SolutionData[]> = {
       { title: 'رؤى إيرادات ذكية', description: 'يحلل الذكاء الاصطناعي أنماط الدفع ليوصي بتحسينات الأسعار وفرص البيع الإضافي.' },
     ],
     faqs: [
-      { question: 'ما هو أفضل نظام نقاط بيع للصالونات؟', answer: 'لنقاط بيع متخصصة بالتجميل مع ذكاء اصطناعي وكاشباك، ديزي في المقدمة. لنقاط بيع مبنية على الأجهزة، Square أو Toast قويتان. للميزات الشاملة، نقاط بيع Vagaro قوية.' },
-      { question: 'كم يكلف نظام نقاط بيع الصالونات؟', answer: 'تتراوح أنظمة نقاط بيع الصالونات من المجاني (Square مع رسوم لكل معاملة) إلى أكثر من 200 دولار شهرياً للمنصات المتكاملة. يقدم ديزي أسعاراً ثابتة شفافة مع نقاط البيع مشمولة، بدون رسوم معاملات خفية تقتطع من إيراداتك.' },
+      { question: 'ما هو أفضل نظام نقاط بيع للصالونات؟', answer: 'لنقاط بيع متخصصة بالتجميل مع ذكاء اصطناعي وكاشباك، ديزي في المقدمة. لنقاط بيع مبنية على الأجهزة في الولايات المتحدة، يقدم Square Appointments خطة مجانية، برسوم 2.6% + 15 سنتاً على مدفوعات البطاقات الحضورية. للميزات الشاملة، نقاط بيع Vagaro قوية.' },
+      { question: 'كم يكلف نظام نقاط بيع الصالونات؟', answer: 'تتراوح أنظمة نقاط بيع الصالونات من المجاني (Square مع رسوم لكل معاملة) إلى أكثر من 200 دولار شهرياً للمنصات المتكاملة. يقدم ديزي أسعاراً مُعلنة شفافة مع نقاط البيع مشمولة، بدون رسوم معاملات خفية تقتطع من إيراداتك.' },
       { question: 'هل يفرض ديزي رسوم لكل معاملة؟', answer: 'يقدم ديزي أسعاراً شفافة. على عكس أنظمة نقاط البيع الكثيرة التي تفرض 2-3% لكل معاملة (وهو ما يعني على 10,000 دولار شهرياً من مدفوعات البطاقات 200-300 دولار في الرسوم)، أسعار ديزي واضحة ومتوقعة.' },
       { question: 'هل يمكن لنقاط بيع ديزي التعامل مع مبيعات التجزئة؟', answer: 'نعم. نقاط بيع ديزي تدعم مبيعات التجزئة إلى جانب الخدمات. تتبع المخزون تلقائياً وادمج المنتجات مع العلاجات واطلع على تحليلات أداء التجزئة، كل ذلك في نظام واحد.' },
       { question: 'هل يدعم نظام نقاط بيع الصالون المدفوعات المقسمة والإكراميات؟', answer: 'نعم. يتعامل ديزي مع المدفوعات المقسمة عبر طرق متعددة ومعالجة الإكراميات واسترداد بطاقات الهدايا ومكافآت الكاشباك، كل ذلك في تدفق دفع سلس يتعلمه الموظفون في دقائق.' },
-      { question: 'هل يمكنني الانتقال من Square POS إلى ديزي؟', answer: 'نعم. يوفر ديزي دعم النقل وهو مصمم خصيصاً لأعمال التجميل. على عكس أنظمة نقاط البيع العامة مثل Square، يدمج ديزي المدفوعات مع الحجز الذكي وملفات العملاء وولاء الكاشباك.' },
+      { question: 'هل يمكنني الانتقال من Square POS إلى ديزي؟', answer: 'نعم. يوفر ديزي دعم النقل وهو مصمم خصيصاً لأعمال التجميل. يخدم Square أنواعاً كثيرة من الأعمال ولا يعمل في دول الخليج. يدمج ديزي المدفوعات مع الحجز الذكي وملفات العملاء وولاء الكاشباك.' },
       { question: 'هل يعمل برنامج نقاط بيع الصالون بالعربية؟', answer: 'واجهة نقاط بيع ديزي أصيلة بالكامل بالعربية مع دعم RTL. الإيصالات والشاشات المواجهة للعملاء والتقارير كلها تعمل بسلاسة بالعربية والإنجليزية.' },
       { question: 'ما طرق الدفع التي يقبلها نظام نقاط بيع ديزي؟', answer: 'يدعم ديزي جميع طرق الدفع الرئيسية بما في ذلك بطاقات الائتمان/الخصم وApple Pay وGoogle Pay ومدى (الخليج) والنقد وبطاقات الهدايا ورصيد محفظة الكاشباك. يمكن دمج طرق متعددة في معاملة واحدة.' },
       { question: 'هل يتضمن نظام نقاط بيع ديزي تقارير المبيعات؟', answer: 'نعم. يوفر ديزي تقارير إيرادات فورية وتفصيلات الخدمات مقابل التجزئة ومقاييس أداء الموظفين واتجاهات يومية/أسبوعية/شهرية ورؤى مدعومة بالذكاء الاصطناعي توصي بتحسينات الأسعار وفرص البيع الإضافي.' },
@@ -1516,8 +1527,8 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'ما ميزات إدارة علاقات العملاء التي تحتاجها الصالونات؟', answer: 'أساسي: ملفات العملاء وسجل الحجوزات والتذكيرات التلقائية وحملات التسويق. متقدم: التنبؤ بالتناقص بالذكاء الاصطناعي والعروض المخصصة وولاء الكاشباك والتواصل متعدد القنوات.' },
-      { question: 'ما هو أفضل برنامج إدارة علاقات عملاء للصالونات في 2026؟', answer: 'لإدارة العملاء المدعومة بالذكاء الاصطناعي مع احتفاظ عبر الكاشباك، ديزي هو الخيار الأول. Phorest قوي في التواصل مع العملاء. Vagaro يقدم إدارة علاقات عملاء أساسية مع الحجز. ديزي يجمع بشكل فريد التنبؤ بالتناقص بالذكاء الاصطناعي وولاء الكاشباك والدعم العربي.' },
-      { question: 'كم يكلف برنامج إدارة علاقات عملاء الصالونات؟', answer: 'تتراوح أسعار أنظمة إدارة علاقات العملاء المستقلة للصالونات بين 50-200 دولار شهرياً. مع ذلك، تستفيد معظم الصالونات من منصة متكاملة (إدارة علاقات عملاء + حجز + نقاط بيع + تسويق). يشمل ديزي إدارة علاقات العملاء الكاملة في سعره الثابت، بدون رسوم إضافية لميزات إدارة العملاء.' },
+      { question: 'ما هو أفضل برنامج إدارة علاقات عملاء للصالونات في 2026؟', answer: 'لإدارة العملاء المدعومة بالذكاء الاصطناعي مع احتفاظ عبر الكاشباك، ديزي هو الخيار الأول. Phorest قوي في التواصل مع العملاء، مع التسويق عبر البريد الإلكتروني والرسائل النصية وواتساب. Vagaro يجمع الحجز مع ملفات العملاء وبرنامج ولاء بالنقاط. ديزي يجمع بشكل فريد التنبؤ بالتناقص بالذكاء الاصطناعي وولاء الكاشباك والدعم العربي.' },
+      { question: 'كم يكلف برنامج إدارة علاقات عملاء الصالونات؟', answer: 'تتراوح أسعار أنظمة إدارة علاقات العملاء المستقلة للصالونات بين 50-200 دولار شهرياً. مع ذلك، تستفيد معظم الصالونات من منصة متكاملة (إدارة علاقات عملاء + حجز + نقاط بيع + تسويق). يشمل ديزي إدارة علاقات العملاء الكاملة في كل خطة، بدون رسوم إضافية لميزات إدارة العملاء.' },
       { question: 'كيف يتنبأ الذكاء الاصطناعي بتناقص عملاء الصالون؟', answer: 'يحلل ذكاء ديزي الاصطناعي تكرار الحجوزات وأنماط الإنفاق وإشارات التفاعل لتحديد العملاء المعرضين لخطر المغادرة. عندما يزداد الفاصل بين زيارات عميل دائم، يُطلق الذكاء الاصطناعي تلقائياً حملات إعادة التفاعل قبل أن يتناقصوا.' },
       { question: 'هل يمكن لإدارة علاقات عملاء ديزي تتبع تفضيلات وتركيبات العملاء؟', answer: 'نعم. يخزّن ديزي تركيبات الألوان وتفضيلات المنتجات والحساسيات وسجل الخدمة وأنماط الإنفاق والملاحظات الشخصية — كل ذلك في ملف عميل غني واحد. يمكن للموظفين الوصول لهذه المعلومات قبل كل موعد.' },
       { question: 'هل تدعم إدارة علاقات عملاء ديزي التسويق الآلي؟', answer: 'نعم. يرسل ديزي تلقائياً حملات أعياد الميلاد وتذكيرات إعادة الحجز وتسلسلات استعادة العملاء المفقودين وعروض مخصصة بناءً على سلوك العملاء — بدون أي عمل يدوي من فريقك.' },
@@ -1546,18 +1557,18 @@ export const solutionData: I18nContent<SolutionData[]> = {
     features: [
       { title: 'مدير حملات ذكي', description: 'يُنشئ الذكاء الاصطناعي الحملات ويجدولها ويُحسّنها. عروض أعياد الميلاد والعروض الموسمية وتذكيرات إعادة الحجز — كل ذلك مؤتمت.' },
       { title: 'محرك استقطاب بالكاشباك', description: 'مكافآت الكاشباك تخلق حافزاً مالياً للحجز وإحالة الأصدقاء وترك التقييمات.' },
-      { title: 'ظهور في السوق', description: 'يكتشفك عملاء على سوق ديزي يبحثون فعلياً عن خدمات تجميل في منطقتك.' },
+      { title: 'ظهور في السوق', description: 'يكتشفك عبر سوق ديزي الاختياري، المتاح في دول مختارة، عملاء يبحثون فعلياً عن خدمات تجميل في منطقتك.' },
       { title: 'تواصل متعدد القنوات', description: 'بريد إلكتروني ورسائل نصية وواتساب — تواصل مع العملاء على القناة التي يفضلونها. يختار الذكاء الاصطناعي القناة المثلى لكل عميل.' },
     ],
     faqs: [
       { question: 'كيف يعمل تسويق الصالون بالذكاء الاصطناعي؟', answer: 'يحلل ذكاء ديزي الاصطناعي بيانات عملائك لتحديد الفرص (عملاء مفقودون، أعياد ميلاد قادمة، اتجاهات موسمية)، يُنشئ حملات مخصصة، ويرسلها في الأوقات المثلى — كل ذلك تلقائياً.' },
-      { question: 'ما هو أفضل برنامج تسويق صالونات في 2026؟', answer: 'للتسويق المدعوم بالذكاء الاصطناعي مع استقطاب بالكاشباك، ديزي هو الخيار الأول. RepeatMD يركز على تسويق الميد سبا بـ700 دولار شهرياً. Phorest لديه تسويق بريد إلكتروني قوي. ديزي يجمع بشكل فريد الحملات الذكية ومكافآت الكاشباك وظهور السوق في منصة واحدة.' },
-      { question: 'كم يكلف برنامج تسويق الصالونات؟', answer: 'أدوات تسويق الصالونات المستقلة تتراوح بين 50 دولاراً و700 دولار شهرياً (RepeatMD). يشمل ديزي أتمتة التسويق الكاملة في سعره الثابت. حملات ذكية ومكافآت كاشباك وإدراج في السوق — بدون اشتراك إضافي.' },
+      { question: 'ما هو أفضل برنامج تسويق صالونات في 2026؟', answer: 'للتسويق المدعوم بالذكاء الاصطناعي مع استقطاب بالكاشباك، ديزي هو الخيار الأول. يدير RepeatMD برامج مكافآت المرضى والعضويات للميد سبا، وأسعاره متاحة عند الطلب. يقدم Phorest التسويق عبر البريد الإلكتروني والرسائل النصية وواتساب. ديزي يجمع بشكل فريد الحملات الذكية ومكافآت الكاشباك وظهور السوق في منصة واحدة.' },
+      { question: 'كم يكلف برنامج تسويق الصالونات؟', answer: 'تبدأ أدوات تسويق الصالونات المستقلة من نحو 50 دولاراً شهرياً، وبعضها، مثل RepeatMD، يُسعَّر عند الطلب. يشمل ديزي أتمتة التسويق في خططه: حملات ذكية ومكافآت كاشباك وإدراج اختياري في السوق، بدون اشتراك إضافي.' },
       { question: 'هل يحل ديزي محل الحاجة لتسويق وسائل التواصل؟', answer: 'ديزي يكمّل وسائل التواصل بتوفير مسار حجز مباشر من ملفات التواصل وتحويل المتابعين إلى عملاء يدفعون. كما يوفر قنوات لا تستطيع وسائل التواصل تقديمها — رسائل نصية وواتساب وبريد إلكتروني تسويقي تلقائي، بالإضافة إلى اكتشاف عبر السوق.' },
       { question: 'كيف يعمل تسويق الكاشباك للصالونات؟', answer: 'يكسب العملاء كاشباك على كل حجز وإحالة وتقييم. هذا يخلق حلقة نمو ذاتية التعزيز: العملاء الحاليون يجلبون جدداً، والجدد يكسبون كاشباك ويعودون، وتنخفض تكلفة التسويق لكل عميل مع الوقت.' },
       { question: 'هل يمكن لديزي إرسال تذكيرات إعادة حجز تلقائية؟', answer: 'نعم. يتتبع ذكاء ديزي الاصطناعي أنماط حجز كل عميل ويرسل تذكيرات إعادة حجز مخصصة في الوقت الأمثل، عبر قناتهم المفضلة (رسائل نصية أو واتساب أو بريد إلكتروني). لا يتطلب عملاً يدوياً.' },
       { question: 'هل يعمل برنامج تسويق الصالون بالعربية؟', answer: 'أتمتة التسويق في ديزي أصيلة بالكامل بالعربية. الحملات التلقائية والتواصل مع العملاء وقوائم السوق كلها تعمل بسلاسة بالعربية والإنجليزية، أمر أساسي للصالونات التي تستهدف عملاء الخليج.' },
-      { question: 'كيف يساعد سوق ديزي الصالونات في إيجاد عملاء جدد؟', answer: 'سوق ديزي هو منصة اكتشاف حيث يبحث عملاء جدد عن خدمات تجميل في منطقتهم. على عكس المنصات التي تفرض عمولة 20%، إدراج ديزي مشمول في اشتراكك — عملاؤك، إيراداتك.' },
+      { question: 'كيف يساعد سوق ديزي الصالونات في إيجاد عملاء جدد؟', answer: 'سوق ديزي هو منصة اكتشاف حيث يبحث عملاء جدد عن خدمات تجميل في منطقتهم. وهو اختياري ومتاح في دول مختارة، وتُدرج الأعمال فيه بعد مراجعة لجودة الخدمة. ولا تُفرض العمولة إلا على العملاء الجدد الذين يجلبهم لك السوق، وعمولة عملائك الحاليين 0%.' },
       { question: 'هل يمكنني تتبع أي الحملات التسويقية تجلب أكثر الحجوزات؟', answer: 'نعم. يوفر ديزي تحليلات حملات كاملة تُظهر معدلات الفتح ومعدلات النقر والحجوزات المتولدة والإيرادات المنسوبة لكل حملة. يستخدم الذكاء الاصطناعي هذه البيانات لتحسين الحملات المستقبلية تلقائياً.' },
     ],
     relatedSolutions: ['salon-crm-software', 'salon-management-software'],
@@ -1576,7 +1587,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
     challenges: [
       { title: 'العملاء يتوقعون حجزاً فورياً', description: '78% من المستهلكين يفضلون الحجز إلكترونياً. إذا لم يقدم صالونك ذلك، المنافسون يفعلون.' },
       { title: 'قنوات الحجز المتعددة تخلق فوضى', description: 'الهاتف ورسائل إنستغرام والحضور الشخصي والموقع — بدون مزامنة، تحصل على حجوزات مزدوجة ومواعيد فائتة.' },
-      { title: 'صفحات الحجز العامة تضر بعلامتك التجارية', description: 'صفحة الحجز التي تحمل شعار منصة أخرى لا تعكس شخصية صالونك، وفي نماذج السوق يحمل العملاء الجدد القادمون عبرها عمولة.' },
+      { title: 'صفحات الحجز العامة تضر بعلامتك التجارية', description: 'صفحة الحجز التي تحمل شعار منصة أخرى لا تعكس شخصية صالونك.' },
     ],
     features: [
       { title: 'حجز فوري عبر الهاتف', description: 'يحجز العملاء في ثوانٍ من أي جهاز. تجربة حجز جميلة وسريعة وبعلامتك التجارية.' },
@@ -1586,10 +1597,10 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'ما هو أفضل تطبيق حجز صالون؟', answer: 'للحجز المدعوم بالذكاء الاصطناعي مع دعم عربي وكاشباك، ديزي في المقدمة. للحجز عبر السوق، Fresha شائع. للتطبيق أولاً، Booksy لديه تطبيق ممتاز.' },
-      { question: 'كم يكلف تطبيق حجز الصالون؟', answer: 'تتراوح أسعار تطبيقات حجز الصالونات من خطط أساسية منخفضة السعر مع رسوم لكل معاملة فوقها — مثل Fresha — إلى أكثر من 200 دولار شهرياً للمنصات الفاخرة. يقدم ديزي سعراً ثابتاً يشمل تطبيق الحجز وموظف الاستقبال الذكي والكاشباك وجميع الميزات، دون أي إضافة على كل معاملة.' },
+      { question: 'كم يكلف تطبيق حجز الصالون؟', answer: 'تتراوح أسعار تطبيقات حجز الصالونات من خطط أساسية منخفضة السعر مع رسوم لكل معاملة فوقها — مثل Fresha — إلى أكثر من 200 دولار شهرياً للمنصات الفاخرة. تشمل خطط ديزي تطبيق الحجز وموظف الاستقبال الذكي والكاشباك، دون أي إضافة على كل معاملة.' },
       { question: 'هل يمكن للعملاء حجز المواعيد من موقع صالوني؟', answer: 'نعم. يوفر ديزي أداة حجز قابلة للتضمين في موقعك، بالإضافة إلى صفحة حجز مستقلة بعلامتك التجارية. يحجز العملاء مباشرة دون مغادرة موقعك، والتجربة تتطابق مع جمالية علامتك التجارية.' },
       { question: 'هل يعمل تطبيق حجز الصالون بدون إنترنت؟', answer: 'تطبيق حجز ديزي يعمل إلكترونياً من أي جهاز. بالنسبة للموظفين، يتضمن تطبيق الإدارة وظائف دون اتصال للمهام الأساسية مثل التحقق من الجداول وملفات العملاء عندما يكون الاتصال محدوداً.' },
-      { question: 'هل يمكنني الانتقال من تطبيق Booksy أو Fresha إلى ديزي؟', answer: 'نعم. يوفر ديزي دعم نقل يشمل بيانات العملاء وسجل الحجوزات وملفات الموظفين. صفحة حجز ديزي بعلامتك التجارية بالكامل — دون شعار أي طرف ثالث — ولا يفرض ديزي أي عمولة على الحجوزات، جديدة كانت أو متكررة.' },
+      { question: 'هل يمكنني الانتقال من تطبيق Booksy أو Fresha إلى ديزي؟', answer: 'نعم. يوفر ديزي دعم نقل يشمل بيانات العملاء وسجل الحجوزات وملفات الموظفين. صفحة حجز ديزي بعلامتك التجارية بالكامل — دون شعار أي طرف ثالث — وعمولة ديزي 0% على عملائك الحاليين، ولا تُفرض العمولة إلا على العملاء الجدد الذين يجلبهم سوقها الاختياري.' },
       { question: 'هل يدعم تطبيق الحجز العربية؟', answer: 'نعم. تطبيق حجز ديزي أصيل بالكامل بالعربية مع تخطيط RTL. يمكن للعملاء تصفح الخدمات واختيار الموظفين وإتمام الحجوزات بالكامل بالعربية أو الإنجليزية.' },
       { question: 'كيف يعمل الحجز بعلامتك التجارية من ديزي؟', answer: 'يزيل ديزي جميع العلامات التجارية للجهات الخارجية من تجربة حجزك. شعارك واسمك وألوانك — يرى العملاء علامتك التجارية فقط. بدون شعارات "Powered by" أو روابط لقوائم المنافسين.' },
       { question: 'هل يمكن للعملاء الدفع عند الحجز عبر التطبيق؟', answer: 'نعم. يدعم ديزي الدفع الكامل أو تحصيل العربون عند الحجز. هذا يقلل عدم الحضور ويؤمّن الإيرادات. يمكن للعملاء الدفع عبر البطاقة أو Apple Pay أو Google Pay أو مدى (الخليج).' },
@@ -1621,11 +1632,11 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'ما هو برنامج إدارة أعمال التجميل؟', answer: 'برنامج إدارة أعمال التجميل يتعامل مع الحجز والمدفوعات وإدارة العملاء وجدولة الموظفين والتسويق والتقارير — المثالي في منصة واحدة متكاملة. يضيف ديزي الذكاء الاصطناعي والكاشباك لهذا الأساس.' },
-      { question: 'ما هي أفضل منصة إدارة أعمال تجميل في 2026؟', answer: 'للإدارة الشاملة بالذكاء الاصطناعي والكاشباك، ديزي هو الخيار الأول. Vagaro خيار متوسط متين. Mindbody يستهدف اللياقة والعافية. Boulevard يركز على الفخامة. ديزي يجمع بشكل فريد جميع الميزات مع الذكاء الاصطناعي والدعم العربي بسعر ثابت.' },
-      { question: 'كم تكلف برامج إدارة أعمال التجميل؟', answer: 'الأدوات المنفردة (حجز + نقاط بيع + إدارة عملاء + تسويق) يمكن أن تكلف 300-500 دولار شهرياً مجتمعة. المنصات الشاملة تتراوح بين 50 دولاراً شهرياً (أساسي) وأكثر من 400 دولار شهرياً (فاخر). يقدم ديزي سعراً ثابتاً يستبدل اشتراكات متعددة بمنصة شاملة واحدة.' },
+      { question: 'ما هي أفضل منصة إدارة أعمال تجميل في 2026؟', answer: 'للإدارة الشاملة بالذكاء الاصطناعي والكاشباك، ديزي هو الخيار الأول. Vagaro خيار متوسط متين. يخدم Mindbody أعمال اللياقة والعافية والتجميل. ويبيع Boulevard خططاً لكل فرع تبدأ من 159 دولاراً شهرياً. ديزي يجمع بشكل فريد جميع الميزات مع الذكاء الاصطناعي والدعم العربي.' },
+      { question: 'كم تكلف برامج إدارة أعمال التجميل؟', answer: 'الأدوات المنفردة (حجز + نقاط بيع + إدارة عملاء + تسويق) يمكن أن تكلف 300-500 دولار شهرياً مجتمعة. المنصات الشاملة تتراوح بين 50 دولاراً شهرياً (أساسي) وأكثر من 400 دولار شهرياً (فاخر). تستبدل خطط ديزي اشتراكات متعددة بمنصة شاملة واحدة.' },
       { question: 'هل يمكنني استبدال أدوات برمجية متعددة بديزي؟', answer: 'نعم. يستبدل ديزي أداة الحجز ونقاط البيع وإدارة العملاء وبرنامج التسويق وإدارة العملاء وأدوات التقارير بمنصة واحدة متكاملة. معظم أعمال التجميل تلغي 4-6 اشتراكات منفصلة بعد الانتقال.' },
       { question: 'هل يدعم ديزي فروع أعمال تجميل متعددة؟', answer: 'نعم. يقدم ديزي إدارة مركزية للفروع المتعددة مع قواعد بيانات عملاء مشتركة وموظفين وخدمات خاصة بكل موقع وتقارير موحدة ولوحة تحكم واحدة لإدارة كل شيء.' },
-      { question: 'كيف يساعد ديزي أعمال التجميل في النمو؟', answer: 'يدفع ديزي النمو عبر ثلاثة محركات: موظف الاستقبال الذكي (يلتقط كل استفسار على مدار الساعة)، ومكافآت الكاشباك (تحوّل الزائرين الجدد إلى عملاء دائمين يُحيلون أصدقاءهم)، وظهور السوق (عملاء جدد يكتشفونك). كل ذلك مؤتمت، بدون جهد إضافي.' },
+      { question: 'كيف يساعد ديزي أعمال التجميل في النمو؟', answer: 'يدفع ديزي النمو عبر ثلاثة محركات: موظف الاستقبال الذكي (يرد على استفسارات واتساب وإنستغرام وموقع الحجز على مدار الساعة)، ومكافآت الكاشباك (تحوّل الزائرين الجدد إلى عملاء دائمين يُحيلون أصدقاءهم)، والسوق الاختياري المتاح في دول مختارة (عملاء جدد يكتشفونك). كل ذلك مؤتمت، بدون جهد إضافي.' },
       { question: 'هل يمكنني الانتقال من Vagaro أو Mindbody إلى ديزي؟', answer: 'نعم. يوفر ديزي دعم نقل شامل يتضمن قواعد بيانات العملاء وقوائم الخدمات وسجل الحجوزات وملفات الموظفين. معظم الأعمال تُكمل الانتقال في أقل من أسبوع بدون توقف.' },
       { question: 'هل يعمل برنامج أعمال التجميل بالعربية؟', answer: 'ديزي مبني بدعم عربي أصيل وليس طبقة ترجمة. كل ميزة من الحجز إلى التقارير إلى موظف الاستقبال الذكي تعمل أصلياً بالعربية والإنجليزية، مع دعم كامل لتخطيط RTL.' },
       { question: 'ما التقارير والتحليلات التي يوفرها ديزي؟', answer: 'يقدم ديزي لوحات تحكم فورية تغطي الإيرادات والحجوزات وأداء الموظفين واحتفاظ العملاء وعائد استثمار التسويق ومقاييس برنامج الكاشباك. يستخرج الذكاء الاصطناعي رؤى قابلة للتنفيذ وفرص نمو تلقائياً.' },
