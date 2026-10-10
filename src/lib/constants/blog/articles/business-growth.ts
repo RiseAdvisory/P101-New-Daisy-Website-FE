@@ -244,7 +244,7 @@ const multiChannelAcquisitionArticle: LocalBlogPost = {
 
 <h3>Channel 1: marketplace visibility</h3>
 <p>A beauty marketplace lets people browse and discover businesses by location, service, rating, and availability. Think of it as the "Amazon for beauty services", where someone ready to book searches for what they want and picks from what is there.</p>
-<p><strong>Why it works:</strong> marketplace clients arrive with intent. Nobody browses one idly, they are looking for a provider. The Daisy marketplace puts your salon in front of them and lets them book on the spot.</p>
+<p><strong>Why it works:</strong> marketplace clients arrive with intent. Nobody browses one idly, they are looking for a provider. The Daisy marketplace is optional and available in selected countries. If you join and your listing passes a service-quality review, it puts your salon in front of these clients and lets them book on the spot.</p>
 <p><strong>How to optimise:</strong></p>
 <ul>
 <li>Fill out your profile properly, with professional photos, real service descriptions, and accurate pricing.</li>
@@ -360,7 +360,7 @@ const multiChannelAcquisitionArticle: LocalBlogPost = {
 <p>Marketplace and Google Business can produce bookings in the first week. Social and referrals usually need 4-8 weeks to build momentum. The compounding across all of them shows up clearly in revenue after 3-4 months of doing it consistently.</p>
 
 <h3>Can I manage multi-channel acquisition without a marketing team?</h3>
-<p>Yes. Platforms like The Daisy automate most of the workflow: marketplace listings, booking integration across channels, client communication, and performance tracking. Setting it up takes real time, and running it afterwards fits into 3-5 hours a week for the owner or one team member.</p>
+<p>Yes. Platforms like The Daisy automate most of the workflow: booking integration across channels, client communication, and performance tracking, plus a listing on the optional Daisy marketplace where it is available. Setting it up takes real time, and running it afterwards fits into 3-5 hours a week for the owner or one team member.</p>
 
 <h3>How do I know which channels to prioritise?</h3>
 <p>Match them to what you need now. Want clients quickly? Marketplace and Google Business move fastest. Building long-term awareness? Put the effort into social content. Retention weak? Fix re-engagement and loyalty before spending anything on new acquisition. Review the performance data monthly and shift money toward whatever is returning most.</p>
@@ -369,7 +369,7 @@ const multiChannelAcquisitionArticle: LocalBlogPost = {
     metaDescription:
       'Multi-channel client acquisition drives beauty business growth. Covers marketplace, cashback, social media, SEO, referrals, and re-engagement strategies.',
     createdAt: '2025-05-08T05:00:00.000Z',
-    updatedAt: '2025-05-08T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-05-08T05:00:00.000Z',
     locale: 'en',
     sortId: 28,
@@ -570,13 +570,13 @@ const daisyMarketingSuiteArticle: LocalBlogPost = {
 <p>Frequency caps are built in. You set the maximum marketing messages a client can get per week or month, and the system prioritises the most relevant ones within that ceiling. Clients can also opt out of marketing while still getting booking messages like confirmations and reminders.</p>
 
 <h3>Will the marketing suite work for a new salon with no existing client base?</h3>
-<p>Yes. With no client base yet, the tools that matter are the marketplace listing, which brings people already searching for your services, the Google Business Profile integration, which catches local search, and social booking integration, which turns followers into clients. The automated campaigns and referrals grow into their strength as your client base builds.</p>
+<p>Yes. With no client base yet, three tools matter most: the Google Business Profile integration catches local search, social booking integration turns followers into clients, and a marketplace listing reaches people already searching for your services. The Daisy marketplace is optional and available in selected countries, and every listing goes through a service-quality review first. The automated campaigns and referrals grow into their strength as your client base builds.</p>
 `,
     metaTitle: 'مجموعة تسويق ديزي للصالونات | ديزي',
     metaDescription:
       'تعرف على كيف تساعد مجموعة التسويق المدمجة من ديزي الصالونات على جذب عملاء جدد عبر الحملات الآلية والمراجعات والإحالات وتكامل السوشيال.',
     createdAt: '2025-11-03T05:00:00.000Z',
-    updatedAt: '2025-11-03T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-11-03T05:00:00.000Z',
     locale: 'en',
     sortId: 29,
@@ -881,7 +881,7 @@ const salonRevenueGrowthArticle: LocalBlogPost = {
 <p>No-shows take 10-15% of potential revenue from the average salon. Fight it with automated reminders, which cut them by up to 40%, deposits on high-value services, and a cancellation policy stated at the time of booking.</p>
 
 <h3>Missed booking opportunities</h3>
-<p>Every call that rings out during a busy stretch is money gone. Industry data shows salons miss 30-40% of inbound calls. An AI receptionist covering calls, WhatsApp, and social inquiries around the clock picks those up.</p>
+<p>Every inquiry that waits through a busy stretch, or arrives after closing, can turn into a booking somewhere else. An AI receptionist that replies on WhatsApp, Instagram and your booking site around the clock picks those up. Daisy's AI receptionist covers those three channels. It does not answer phone calls yet, so calls to the salon still need someone on your team.</p>
 
 <h3>Calendar gaps</h3>
 <p>Empty slots between appointments earn nothing. Smart scheduling reads your calendar and proposes fixes: hand the slot to someone waitlisted, drop a shorter service into a small gap, or announce walk-in availability.</p>
@@ -952,13 +952,13 @@ const salonRevenueGrowthArticle: LocalBlogPost = {
 <p>Compare yourself against the standards. A healthy beauty business runs profit margins of 15-20% after paying the owner, staff utilisation of 75-85%, retention above 60%, and year-over-year revenue growth of 10-20%. Sitting well below those leaves you room to work with. The Daisy's analytics dashboard benchmarks you automatically and points at where to start.</p>
 
 <h3>What technology investment gives the best ROI for salon revenue growth?</h3>
-<p>One platform covering booking, AI client communication, and analytics returns the most, consistently. The maths is not complicated: catch the bookings you were missing, given 30-40% of calls go unanswered, cut no-shows by 40% with automated reminders, and lift rebooking through systematic follow-up. Those add up to gains that usually clear the platform cost inside the first month. Explore <a href="/en/features/business/business-growth">The Daisy's revenue growth tools</a> for the specifics.</p>
+<p>One platform covering booking, AI client communication, and analytics returns the most, consistently. The maths is not complicated: catch the bookings you were missing by replying to every WhatsApp, Instagram and booking-site inquiry, even after hours, cut no-shows by 40% with automated reminders, and lift rebooking through systematic follow-up. Those add up to gains that usually clear the platform cost inside the first month. Explore <a href="/en/features/business/business-growth">The Daisy's revenue growth tools</a> for the specifics.</p>
 `,
     metaTitle: 'Salon Revenue Growth Strategies 2026 | The Daisy',
     metaDescription:
       'Proven salon revenue growth strategies for 2026: pricing optimization, menu engineering, client retention, upselling, and technology-driven efficiency tactics.',
     createdAt: '2025-02-23T05:00:00.000Z',
-    updatedAt: '2025-02-23T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-02-23T05:00:00.000Z',
     locale: 'en',
     sortId: 31,
@@ -1221,7 +1221,7 @@ const multiChannelAcquisitionArticleAr: LocalBlogPost = {
 
 <h3>القناة 1: رؤية السوق</h3>
 <p> سوق التجميل عبارة عن منصة حيث يتصفح العملاء المحتملون أعمال التجميل ويكتشفونها استنادًا إلى الموقع والخدمات والتقييمات والتوافر. فكر في الأمر على أنه "أمازون لخدمات التجميل" - العملاء المستعدون للحجز يبحثون عما يحتاجون إليه ويختارون من بين الخيارات المتاحة.</p>
-<p><strong>سبب نجاحه:</strong> يتمتع عملاء السوق برغبة عالية في الحجز. إنهم لا يتصفحون بشكل عرضي، بل يبحثون بنشاط عن مزود الخدمة. يربط سوق ديزي صالونك بهؤلاء العملاء ذوي النوايا العالية ويتيح لهم الحجز على الفور.</p>
+<p><strong>سبب نجاحه:</strong> يتمتع عملاء السوق برغبة عالية في الحجز. إنهم لا يتصفحون بشكل عرضي، بل يبحثون بنشاط عن مزود الخدمة. سوق ديزي اختياري ومتاح في دول مختارة. إذا انضممت إليه واجتاز إدراجك مراجعة جودة الخدمة، يربط صالونك بهؤلاء العملاء ذوي النوايا العالية ويتيح لهم الحجز على الفور.</p>
 <p><strong>كيفية التحسين:</strong></p>
 <ul>
 <li>أكمل ملفك الشخصي بصور احترافية وأوصاف تفصيلية للخدمة وأسعار دقيقة.</li>
@@ -1337,7 +1337,7 @@ const multiChannelAcquisitionArticleAr: LocalBlogPost = {
 <p> يمكن لقنوات السوق والملف التجاري على Google إنشاء حجوزات جديدة خلال الأسبوع الأول. تستغرق وسائل التواصل الاجتماعي وبرامج الإحالة عادة من 4 إلى 8 أسابيع لاكتساب الزخم. عادة ما يصبح التأثير المركب لعمل جميع القنوات معًا واضحًا في نمو الإيرادات بعد 3-4 أشهر من التنفيذ المستمر.</p>
 
 <h3>هل يمكنني إدارة الاستحواذ متعدد القنوات بدون فريق تسويق؟</h3>
-<p>نعم. تعمل الأنظمة الأساسية مثل ديزي على أتمتة الكثير من سير العمل متعدد القنوات - إدارة قوائم السوق، وتكامل الحجز عبر القنوات، والتواصل الآلي مع العملاء، وتتبع الأداء. يتطلب الإعداد الأولي وقتًا مخصصًا، ولكن يمكن التعامل مع الإدارة المستمرة بواسطة مالك الصالون أو عضو واحد في الفريق يقضي من 3 إلى 5 ساعات أسبوعيًا في الأنشطة التسويقية.</p>
+<p>نعم. تعمل الأنظمة الأساسية مثل ديزي على أتمتة الكثير من سير العمل متعدد القنوات: تكامل الحجز عبر القنوات، والتواصل الآلي مع العملاء، وتتبع الأداء، إضافة إلى الإدراج في سوق ديزي الاختياري حيثما كان متاحًا. يتطلب الإعداد الأولي وقتًا مخصصًا، ولكن يمكن التعامل مع الإدارة المستمرة بواسطة مالك الصالون أو عضو واحد في الفريق يقضي من 3 إلى 5 ساعات أسبوعيًا في الأنشطة التسويقية.</p>
 
 <h3>كيف أعرف القنوات التي يجب تحديد أولوياتها؟</h3>
 <p> ابدأ بالقنوات التي تتوافق مع قدراتك وأهدافك المباشرة. إذا كنت بحاجة إلى عملاء جدد بسرعة، فإن السوق وملفك التجاري على Google يقدمان أسرع النتائج. وإذا كنت ترغب في بناء وعي بعلامتك التجارية على المدى الطويل، فاستثمر في محتوى الوسائط الاجتماعية. وإذا كان معدل الاحتفاظ لديك منخفضًا، فركز على إعادة المشاركة والولاء قبل الإنفاق على اكتساب عملاء جدد. راجع بيانات أداء قناتك شهريًا ووجّه استثمارك نحو ما يحقق أفضل عائد.</p>`,
@@ -1345,7 +1345,7 @@ const multiChannelAcquisitionArticleAr: LocalBlogPost = {
     metaDescription:
       'تعلم كيف يدفع الاستقطاب متعدد القنوات النمو المستدام لأعمال التجميل. يغطي السوق والكاشباك ووسائل التواصل الاجتماعي والحجز المباشر.',
     createdAt: '2025-05-08T05:00:00.000Z',
-    updatedAt: '2025-05-08T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-05-08T05:00:00.000Z',
     locale: 'ar',
     sortId: 28,
@@ -1541,12 +1541,12 @@ const daisyMarketingSuiteArticleAr: LocalBlogPost = {
 <p> يتضمن ديزي حدود تردد مدمجة تمنع الإفراط في إرسال الرسائل. يمكنك تعيين الحد الأقصى لعدد الرسائل التسويقية التي يمكن أن يتلقاها العميل في الأسبوع أو الشهر، ويقوم النظام تلقائيًا بتحديد أولويات الرسائل الأكثر صلة ضمن هذا الحد. يمكن للعملاء أيضًا إلغاء الاشتراك في الاتصالات التسويقية مع الاستمرار في تلقي الرسائل المتعلقة بالحجز مثل التأكيدات والتذكيرات.</p>
 
 <h3>هل ستعمل مجموعة التسويق مع صالون جديد بدون قاعدة عملاء حالية؟</h3>
-<p>نعم. بالنسبة للصالونات الجديدة، فإن الأدوات الأكثر تأثيرًا هي قائمة السوق (التي تجلب العملاء ذوي النوايا العالية الذين يبحثون بنشاط عن الخدمات)، وتكامل الملف التجاري على جوجل (الذي يلتقط حركة البحث المحلية)، وتكامل الحجز عبر وسائل التواصل الاجتماعي (الذي يحول المتابعين إلى عملاء). مع نمو قاعدة عملائك، أصبحت الحملات الآلية وبرنامج الإحالة أكثر قوة.</p>`,
+<p>نعم. بالنسبة للصالونات الجديدة، فإن الأدوات الأكثر تأثيرًا هي قائمة السوق (التي تجلب العملاء ذوي النوايا العالية الذين يبحثون بنشاط عن الخدمات)، وتكامل الملف التجاري على جوجل (الذي يلتقط حركة البحث المحلية)، وتكامل الحجز عبر وسائل التواصل الاجتماعي (الذي يحول المتابعين إلى عملاء). سوق ديزي اختياري ومتاح في دول مختارة، ويخضع كل إدراج فيه لمراجعة جودة الخدمة أولًا. مع نمو قاعدة عملائك، أصبحت الحملات الآلية وبرنامج الإحالة أكثر قوة.</p>`,
     metaTitle: 'مجموعة التسويق من ديزي للصالونات | ديزي',
     metaDescription:
       'تعرّف كيف تساعد مجموعة التسويق المدمجة في ديزي الصالونات على استقطاب عملاء جدد عبر الحملات الآلية والمراجعات والإحالات والتكامل مع وسائل التواصل الاجتماعي.',
     createdAt: '2025-11-03T05:00:00.000Z',
-    updatedAt: '2025-11-03T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-11-03T05:00:00.000Z',
     locale: 'ar',
     sortId: 29,
@@ -1840,7 +1840,7 @@ const salonRevenueGrowthArticleAr: LocalBlogPost = {
 <p>يكلف عدم الحضور الصالون العادي 10-15% من الإيرادات المحتملة. يمكنك مكافحة ذلك من خلال التذكيرات التلقائية (تقليل حالات عدم الحضور بنسبة تصل إلى 40%)، ومتطلبات الإيداع للخدمات عالية القيمة، وسياسة إلغاء واضحة يتم الإبلاغ عنها عند الحجز.</p>
 
 <h3>فرص الحجز الضائعة</h3>
-<p>كل مكالمة هاتفية لم يتم الرد عليها خلال فترات الانشغال هي خسارة محتملة في الإيرادات. تظهر بيانات الصناعة أن الصالونات تفوت ما بين 30 إلى 40% من المكالمات الواردة. موظف استقبال يعمل بالذكاء الاصطناعي يتعامل مع المكالمات ورسائل واتساب واستفسارات وسائل التواصل الاجتماعي على مدار الساعة طوال أيام الأسبوع ويلتقط هذه الفرص الضائعة.</p>
+<p>كل استفسار ينتظر خلال فترات الانشغال، أو يصل بعد الإغلاق، قد يتحول إلى حجز لدى منافس. موظف استقبال يعمل بالذكاء الاصطناعي ويرد عبر واتساب وإنستغرام وموقع الحجز على مدار الساعة يلتقط هذه الفرص. يعمل موظف الاستقبال الذكي من ديزي على هذه القنوات تحديدًا ولا يرد على المكالمات الهاتفية حتى الآن، لذلك تظل المكالمات إلى الصالون بحاجة إلى أحد أفراد فريقك.</p>
 
 <h3>الفجوات في التقويم</h3>
 <p>الفترات الفارغة بين المواعيد هي إيرادات مهدرة. تعمل أنظمة الجدولة الذكية على تحليل التقويم الخاص بك واقتراح طرق لسد الفجوات - حيث تقدم الفرصة للعملاء المدرجين في قائمة الانتظار، أو تقترح خدمات أقصر للفجوات الصغيرة، أو تطالب بإعلانات التوفر المباشرة.</p>
@@ -1911,12 +1911,12 @@ const salonRevenueGrowthArticleAr: LocalBlogPost = {
 <p> قم بمقارنة مقاييسك الرئيسية بمعايير الصناعة. عادةً ما تحقق شركات التجميل الصحي ما يلي: هوامش ربح تتراوح بين 15-20% بعد تعويض المالك، ومعدلات استخدام الموظفين تتراوح بين 75-85%، ومعدلات الاحتفاظ بالعملاء تزيد عن 60%، ونمو الإيرادات على أساس سنوي بنسبة 10-20%. إذا كانت مقاييسك أقل بكثير من هذه المعايير، فهناك مجال للتحسين. تقوم لوحة معلومات تحليلات ديزي تلقائيًا بمقارنة أدائك بمعايير الصناعة وتحديد مجالات محددة للتحسين.</p>
 
 <h3>ما هو الاستثمار التكنولوجي الذي يوفر أفضل عائد استثمار لنمو إيرادات الصالونات؟</h3>
-<p> منصة موحدة لإدارة الصالون مع الحجز الآلي، والتواصل مع العملاء المدعوم بالذكاء الاصطناعي، والتحليلات التي توفر باستمرار أعلى عائد على الاستثمار. الحسابات واضحة ومباشرة: تسجيل الحجوزات الفائتة سابقًا (30-40% من المكالمات التي لم يتم الرد عليها)، وتقليل حالات عدم الحضور بنسبة 40% من خلال التذكيرات الآلية، وزيادة معدلات إعادة الحجز من خلال المتابعات المنهجية، كل ذلك يؤدي إلى مكاسب إيرادات قابلة للقياس تتجاوز عادةً تكلفة النظام الأساسي خلال الشهر الأول. استكشف <a href="/ar/features/business/business-growth">أدوات نمو إيرادات ديزي</a> لمعرفة الإمكانات المحددة التي تؤدي إلى هذه النتائج.</p>`,
+<p> منصة موحدة لإدارة الصالون مع الحجز الآلي، والتواصل مع العملاء المدعوم بالذكاء الاصطناعي، والتحليلات التي توفر باستمرار أعلى عائد على الاستثمار. الحسابات واضحة ومباشرة: التقاط الحجوزات التي كانت تفوتك بالرد على كل استفسار عبر واتساب وإنستغرام وموقع الحجز حتى بعد ساعات العمل، وتقليل حالات عدم الحضور بنسبة 40% من خلال التذكيرات الآلية، وزيادة معدلات إعادة الحجز من خلال المتابعات المنهجية، كل ذلك يؤدي إلى مكاسب إيرادات قابلة للقياس تتجاوز عادةً تكلفة النظام الأساسي خلال الشهر الأول. استكشف <a href="/ar/features/business/business-growth">أدوات نمو إيرادات ديزي</a> لمعرفة الإمكانات المحددة التي تؤدي إلى هذه النتائج.</p>`,
     metaTitle: 'استراتيجيات نمو إيرادات الصالون 2026 | ديزي',
     metaDescription:
       'استراتيجيات مثبتة لنمو إيرادات الصالون في 2026. يغطي التسعير والاحتفاظ والجدولة واستقطاب العملاء الجدد.',
     createdAt: '2025-02-23T05:00:00.000Z',
-    updatedAt: '2025-02-23T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-02-23T05:00:00.000Z',
     locale: 'ar',
     sortId: 31,

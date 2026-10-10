@@ -212,7 +212,7 @@ const aiBeautyIndustryApplicationsArticle: LocalBlogPost = {
 <p>What follows covers the <a href="/en/beauty-industry-trends">practical AI applications</a> beauty businesses run today, what each one does in plain terms, and how to work out whether it suits yours. Nothing about the distant future, and nothing that is not already working somewhere.</p>
 
 <h2>AI receptionists: handling every customer interaction</h2>
-<p>This is the one that changes the most. An AI receptionist answers every call, WhatsApp message, Instagram DM, and website inquiry, instantly, 24 hours a day, in whichever language the client wrote in.</p>
+<p>This is the one that changes the most. An AI receptionist answers WhatsApp messages, Instagram DMs, and website inquiries instantly, 24 hours a day, in whichever language the client wrote in. Some products also answer phone calls. The Daisy's AI receptionist does not answer phone calls yet. It works on WhatsApp, Instagram and the booking site.</p>
 <p>In practice that means:</p>
 <ul>
 <li><strong>Answers booking inquiries:</strong> a client messages "Can I get a balayage this Saturday?" and within seconds the AI has checked real availability, offered suitable slots, and confirmed the booking.</li>
@@ -221,7 +221,7 @@ const aiBeautyIndustryApplicationsArticle: LocalBlogPost = {
 <li><strong>Manages multi-language conversations:</strong> full fluency in Arabic and English, with more to come, and it follows clients who switch between the two mid-sentence.</li>
 <li><strong>Escalates complex requests:</strong> group bookings, complaints, and anything unusual go to your team with the whole conversation attached.</li>
 </ul>
-<p>The effect shows up in the numbers. Salons using <a href="/en/features/business/ai-salon-management">AI receptionists</a> report a 90&ndash;95% reduction in missed communications and a 20&ndash;30% increase in after-hours bookings. A salon losing even 5 bookings per week to missed calls usually covers the cost of the whole platform in the first month.</p>
+<p>The effect shows up in the numbers. Salons using <a href="/en/features/business/ai-salon-management">AI receptionists</a> report a 20&ndash;30% increase in after-hours bookings. A salon losing even 5 bookings per week to unanswered messages usually covers the cost of the whole platform in the first month.</p>
 
 <h2>Smart scheduling and calendar optimisation</h2>
 <p>Ordinary scheduling waits for a request and answers yes or no. AI scheduling works ahead of that, reading your booking patterns, who is best at what, how long services actually take, and past demand, then arranging the calendar to earn more from the same hours.</p>
@@ -267,7 +267,7 @@ const aiBeautyIndustryApplicationsArticle: LocalBlogPost = {
 <h2>Getting started with AI in your salon</h2>
 <p>Nobody needs all of this at once. Start where it hurts most and add from there.</p>
 <ol>
-<li><strong>If missed calls and slow responses are your biggest problem:</strong> start with an AI receptionist. It usually returns the most, because it catches revenue you are losing right now.</li>
+<li><strong>If slow replies to messages are your biggest problem:</strong> start with an AI receptionist. It usually returns the most, because it catches revenue you are losing right now.</li>
 <li><strong>If your calendar has too many gaps:</strong> put in smart scheduling and automated gap-filling. Better utilisation usually pays for whatever you add next.</li>
 <li><strong>If client retention is declining:</strong> turn on automated communication with personalisation behind it. Rebooking prompts and re-engagement messages work.</li>
 <li><strong>If you do not know your numbers:</strong> start with analytics. Nothing improves that you do not measure, and this surfaces things no spreadsheet you maintain by hand ever would.</li>
@@ -283,7 +283,7 @@ const aiBeautyIndustryApplicationsArticle: LocalBlogPost = {
 <p>It usually comes inside a salon management platform subscription rather than as a separate purchase. Monthly costs for a comprehensive platform with AI features range from $50&ndash;$200 depending on salon size and features selected. Set that against fewer missed bookings, the labour saved on communication, and tighter scheduling, and most salons are ahead within the first month.</p>
 
 <h3>Will AI replace salon staff?</h3>
-<p>It replaces admin, not people. Phone calls, scheduling logistics, reminders, campaigns, and analysis all go to the machine. Cutting hair, applying treatments, and knowing your clients do not. What most salons get is staff spending more of the day on clients and less on paperwork, calls, and the diary, which is better for them and better for the client.</p>
+<p>It replaces admin, not people. Booking messages, scheduling logistics, reminders, campaigns, and analysis all go to the machine. Cutting hair, applying treatments, and knowing your clients do not. What most salons get is staff spending more of the day on clients and less on paperwork, messages, and the diary, which is better for them and better for the client.</p>
 
 <h3>Do clients care whether they interact with AI or a human?</h3>
 <p>Research consistently shows they care about speed and accuracy rather than who answered. Someone who gets a correct reply to a WhatsApp booking inquiry at 10pm on a Sunday is far happier than someone who left a voicemail and waited until Monday. Most clients do not notice when it is set up well, and satisfaction scores for AI-handled interactions are typically equal to or higher than human-handled ones.</p>
@@ -295,7 +295,7 @@ const aiBeautyIndustryApplicationsArticle: LocalBlogPost = {
     metaDescription:
       'Practical AI applications for salons and spas in 2026: AI receptionists, smart scheduling, predictive analytics, and automated marketing explained.',
     createdAt: '2026-04-11T05:00:00.000Z',
-    updatedAt: '2026-04-11T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-04-11T05:00:00.000Z',
     locale: 'en',
     sortId: 109,
@@ -579,7 +579,7 @@ const beautyMarketplacesImpactArticle: LocalBlogPost = {
 
 <h2>The platform ecosystem alternative</h2>
 <p>Some platforms put marketplace visibility and business management in the same place, so clients acquired through the marketplace land in your own booking system, CRM, and marketing tools. The split between marketplace clients and direct clients disappears, because one system holds both.</p>
-<p><a href="/en/salon-management-software">The Daisy</a> works this way. Someone who finds your salon through The Daisy marketplace books into your management system, and their details, preferences, and history are there straight away for follow-up, loyalty, and marketing. Nobody leaks back to a separate marketplace with your competitors on the screen.</p>
+<p><a href="/en/salon-management-software">The Daisy</a> works this way. Its marketplace is optional and available in selected countries, and listing follows a service-quality review. If you join, someone who finds your salon through The Daisy marketplace books into your management system, and their details, preferences, and history are there straight away for follow-up, loyalty, and marketing. Nobody leaks back to a separate marketplace with your competitors on the screen.</p>
 <p>That answers the central problem with marketplaces. You keep the acquisition and lose the commission on every repeat visit, and the loyalty stays with you rather than a third party. <a href="/en/pricing/business">Pricing</a> has the specifics.</p>
 
 <h2>The future of beauty marketplaces</h2>
@@ -612,7 +612,7 @@ const beautyMarketplacesImpactArticle: LocalBlogPost = {
     metaDescription:
       'How beauty marketplaces are changing salon client discovery. Learn the risks, opportunities, and strategies for using marketplaces to grow your business.',
     createdAt: '2026-02-12T05:00:00.000Z',
-    updatedAt: '2026-02-12T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-02-12T05:00:00.000Z',
     locale: 'en',
     sortId: 111,
@@ -1116,7 +1116,7 @@ const aiBeautyIndustryApplicationsArticleAr: LocalBlogPost = {
 <p> تتناول هذه المقالة <a href="/ar/beauty-industry-trends">تطبيقات الذكاء الاصطناعي العملية</a> التي تستخدمها شركات التجميل فعليًا اليوم، وما يفعله كل تطبيق بعبارات واضحة، وكيفية تقييم ما إذا كان كل تطبيق مفيدًا لشركتك. لا توجد مصطلحات مبهمة أو تكهنات حول المستقبل البعيد، بل أدوات تعمل اليوم فعلًا.</p>
 
 <h2>موظفو الاستقبال AI: التعامل مع كل تفاعل مع العميل</h2>
-<p> إن تطبيق الذكاء الاصطناعي الأكثر تأثيرًا في صناعة التجميل هو موظف استقبال الذكاء الاصطناعي. يجيب موظف استقبال يعمل بتقنية الذكاء الاصطناعي على كل مكالمة، ورسالة واتساب، ورسالة مباشرة على إنستغرام، واستفسار عن الموقع الإلكتروني يتلقاها صالونك - على الفور، على مدار 24 ساعة في اليوم، باللغة التي يفضلها عميلك.</p>
+<p> إن تطبيق الذكاء الاصطناعي الأكثر تأثيرًا في صناعة التجميل هو موظف استقبال الذكاء الاصطناعي. يجيب موظف استقبال يعمل بتقنية الذكاء الاصطناعي على رسائل واتساب والرسائل المباشرة على إنستغرام والاستفسارات عبر الموقع الإلكتروني التي يتلقاها صالونك، على الفور، على مدار 24 ساعة في اليوم، باللغة التي يفضلها عميلك. بعض المنتجات ترد أيضاً على المكالمات الهاتفية، أما موظف الاستقبال الذكي من ديزي فلا يرد على المكالمات الهاتفية حتى الآن، ويعمل عبر واتساب وإنستغرام وموقع الحجز.</p>
 <p> إليك ما يفعله موظف استقبال الذكاء الاصطناعي عمليًا:</p>
 <ul>
 <li><strong>إجابات استفسارات الحجز:</strong> رسالة من العميل "هل يمكنني الحصول على بالياج هذا السبت؟" ويتحقق الذكاء الاصطناعي من التوفر في الوقت الفعلي، ويقدم فترات زمنية مناسبة، ويؤكد الحجز - كل ذلك في غضون ثوانٍ.</li>
@@ -1125,7 +1125,7 @@ const aiBeautyIndustryApplicationsArticleAr: LocalBlogPost = {
 <li><strong>يدير المحادثات متعددة اللغات:</strong> الطلاقة الكاملة في اللغتين العربية والإنجليزية (والتوسع)، مع التبديل الطبيعي للرموز للعملاء الذين يخلطون اللغات.</li>
 <li><strong>تصعيد الطلبات المعقدة:</strong> يتم توجيه الحجوزات الجماعية أو التعامل مع الشكاوى أو الطلبات غير العادية إلى فريقك البشري مع سياق محادثة كامل.</li>
 </ul>
-<p> التأثير التجاري مباشر: الصالونات التي تستخدم <a href="/ar/features/business/ai-salon-management">موظفي الاستقبال بالذكاء الاصطناعي</a> أبلغت عن انخفاض بنسبة 90-95% في الاتصالات المفقودة وزيادة بنسبة 20-30% في الحجوزات بعد ساعات العمل. بالنسبة للصالون الذي يخسر حتى 5 حجوزات أسبوعيًا بسبب المكالمات الفائتة، فإن عائد الاستثمار عادةً ما يدفع ثمن المنصة بأكملها خلال الشهر الأول.</p>
+<p> التأثير التجاري مباشر: الصالونات التي تستخدم <a href="/ar/features/business/ai-salon-management">موظفي الاستقبال بالذكاء الاصطناعي</a> أبلغت عن زيادة بنسبة 20-30% في الحجوزات بعد ساعات العمل. بالنسبة للصالون الذي يخسر حتى 5 حجوزات أسبوعيًا بسبب الرسائل التي لا تلقى رداً، فإن عائد الاستثمار عادةً ما يدفع ثمن المنصة بأكملها خلال الشهر الأول.</p>
 
 <h2>الجدولة الذكية وتحسين التقويم</h2>
 <p> تعتبر الجدولة التقليدية تفاعلية - حيث يطلب العملاء وقتًا، ويكون هذا الوقت متاحًا لديك أو لا. تعتبر الجدولة المدعومة بالذكاء الاصطناعي استباقية. فهو يحلل أنماط الحجز الخاصة بك، ونقاط قوة الموظفين، ومدة الخدمة، والطلب التاريخي لتحسين التقويم الخاص بك لتحقيق أقصى قدر من الإيرادات.</p>
@@ -1171,7 +1171,7 @@ const aiBeautyIndustryApplicationsArticleAr: LocalBlogPost = {
 <h2>البدء باستخدام الذكاء الاصطناعي في صالونك</h2>
 <p> لا تحتاج إلى تنفيذ كل تطبيق من تطبيقات الذكاء الاصطناعي مرة واحدة. الطريقة الأكثر فعالية هي البدء بالتطبيق الذي يعالج أكبر نقاط الضعف لديك والتوسع من هناك.</p>
 <ol>
-<li><strong>إذا كانت المكالمات الفائتة والاستجابات البطيئة هي مشكلتك الكبرى:</strong> ابدأ بموظف استقبال يعمل بالذكاء الاصطناعي. عادةً ما تكون هذه هي الخطوة الأولى ذات أعلى عائد استثمار لأنها تسجل على الفور الإيرادات التي تخسرها حاليًا.</li>
+<li><strong>إذا كان بطء الرد على الرسائل هو مشكلتك الكبرى:</strong> ابدأ بموظف استقبال يعمل بالذكاء الاصطناعي. عادةً ما تكون هذه هي الخطوة الأولى ذات أعلى عائد استثمار لأنها تسجل على الفور الإيرادات التي تخسرها حاليًا.</li>
 <li><strong>إذا كان التقويم الخاص بك يحتوي على الكثير من الفجوات:</strong> قم بتنفيذ الجدولة الذكية وملء الفجوات تلقائيًا. غالبًا ما تمول الإيرادات المستردة من الاستخدام الأفضل أدوات الذكاء الاصطناعي الإضافية.</li>
 <li><strong>إذا كان الاحتفاظ بالعملاء آخذًا في الانخفاض:</strong> فعّل التواصل الآلي مع العميل من خلال التخصيص المدعوم بالذكاء الاصطناعي. إن تذكيرات إعادة الحجز ورسائل إعادة المشاركة أدوات احتفاظ مثبتة.</li>
 <li><strong>إذا كنت لا تعرف أرقامك:</strong> ابدأ بمنصة تحليلية مدعومة بالذكاء الاصطناعي. لا يمكنك تحسين ما لا يمكنك قياسه، وتكشف تحليلات الذكاء الاصطناعي عن رؤى لن تجدها أبدًا في جداول البيانات اليدوية.</li>
@@ -1187,7 +1187,7 @@ const aiBeautyIndustryApplicationsArticleAr: LocalBlogPost = {
 <p> عادةً ما يتم تضمين إمكانات الذكاء الاصطناعي في اشتراكات منصة إدارة الصالونات الحديثة بدلاً من بيعها كأدوات مستقلة. تتراوح التكاليف الشهرية لمنصة شاملة مع ميزات الذكاء الاصطناعي من 50 إلى 200 دولار حسب حجم الصالون والميزات المحددة. عندما تأخذ في الاعتبار تقليل الحجوزات الفائتة، وتوفير العمالة من خلال الاتصال الآلي، وتحسين كفاءة الجدولة، فإن معظم الصالونات تشهد عائدًا إيجابيًا على الاستثمار خلال الشهر الأول.</p>
 
 <h3>هل سيحل الذكاء الاصطناعي محل موظفي الصالون؟</h3>
-<p>الذكاء الاصطناعي في صناعة التجميل يحل محل المهام الإدارية، وليس الأشخاص. يتعامل مع المكالمات الهاتفية وجدولة الخدمات اللوجستية وتذكير المواعيد والحملات التسويقية وتحليل البيانات. فهو لا يقوم بقص الشعر أو تطبيق العلاجات أو بناء العلاقات الشخصية التي يقدرها العملاء. والنتيجة بالنسبة لمعظم الصالونات هي أن الموظفين الحاليين يقضون وقتًا أطول في خدمة العملاء ووقتًا أقل في الأعمال الورقية والمكالمات الهاتفية والجدولة - مما يؤدي إلى تحسين رضا الموظفين وتجربة العملاء.</p>
+<p>الذكاء الاصطناعي في صناعة التجميل يحل محل المهام الإدارية، وليس الأشخاص. يتعامل مع رسائل الحجز وجدولة الخدمات اللوجستية وتذكير المواعيد والحملات التسويقية وتحليل البيانات. فهو لا يقوم بقص الشعر أو تطبيق العلاجات أو بناء العلاقات الشخصية التي يقدرها العملاء. والنتيجة بالنسبة لمعظم الصالونات هي أن الموظفين الحاليين يقضون وقتًا أطول في خدمة العملاء ووقتًا أقل في الأعمال الورقية والرسائل والجدولة - مما يؤدي إلى تحسين رضا الموظفين وتجربة العملاء.</p>
 
 <h3>هل يهتم العملاء بتفاعلهم مع الذكاء الاصطناعي أو مع الإنسان؟</h3>
 <p> تظهر الأبحاث باستمرار أن العملاء يعطون الأولوية للسرعة والدقة على ما إذا كانت الاستجابة تأتي من إنسان أو من الذكاء الاصطناعي. العميل الذي يتلقى استجابة فورية ودقيقة لاستفسار الحجز عبر تطبيق واتساب في الساعة 10 مساءً يوم الأحد يكون أكثر رضاًا بكثير من العميل الذي يترك بريدًا صوتيًا وينتظر حتى صباح يوم الاثنين. لا يلاحظ غالبية العملاء أنهم يتفاعلون مع الذكاء الاصطناعي عندما يتم تنفيذ النظام بشكل جيد، وعادةً ما تكون درجات الرضا عن التفاعلات التي يتم التعامل معها بواسطة الذكاء الاصطناعي مساوية أو أعلى من التفاعلات التي يتم التعامل معها بواسطة الإنسان.</p>
@@ -1196,7 +1196,7 @@ const aiBeautyIndustryApplicationsArticleAr: LocalBlogPost = {
 <p> يمكن إعداد معظم منصات الصالونات التي تعمل بالذكاء الاصطناعي وتشغيلها خلال 1-3 أيام. يتضمن الإعداد ربط قنوات الاتصال الخاصة بك، واستيراد قائمة الخدمة والأسعار، وتكوين قواعد عملك. لا يوجد تركيب فني معقد مطلوب. تم تصميم الأنظمة الأساسية مثل ديزي للمستخدمين غير التقنيين وتتضمن إعدادًا إرشاديًا يرشدك خلال كل خطوة.</p>`,
     metaTitle: 'الذكاء الاصطناعي في صناعة التجميل 2026 | ديزي',
     metaDescription: 'كيف يحوّل الذكاء الاصطناعي صناعة التجميل: حجز ذكي وتحليلات تنبؤية وتواصل مخصص وتحسين العمليات.',
-    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-10-10T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'ar', sortId: 109,
     tags: { category: 'Industry Trends', topic: 'AI' },
     user: { data: { id: 4, attributes: { name: 'Ethan Cole', jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist', date: '1 April 2026', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-ethan-cole.webp' } } } } } },
@@ -1378,7 +1378,7 @@ const beautyMarketplacesImpactArticleAr: LocalBlogPost = {
 
 <h2>النظام البيئي البديل للمنصة</h2>
 <p> تجمع بعض الأنظمة الأساسية بين رؤية السوق والإدارة الكاملة للأعمال، مما يؤدي إلى إنشاء نظام بيئي متكامل حيث يتغذى الاستحواذ على السوق مباشرة في نظام الحجز الخاص بك وإدارة علاقات العملاء وأدوات التسويق. يزيل هذا النموذج التوتر بين العملاء من مصادر السوق والعملاء المباشرين لأن نفس النظام الأساسي يتعامل مع كليهما.</p>
-<p><a href="/ar/salon-management-software">يعمل ديزي</a> على هذا الطراز. العملاء الذين يكتشفون صالونك من خلال سوق ديزي يحجزون مباشرة في نظام الإدارة الخاص بك. تتوفر بياناتهم وتفضيلاتهم وسجل الحجز على الفور للمتابعة الشخصية وبرامج الولاء والتسويق المستهدف. لا يوجد "تسرب" مرة أخرى إلى سوق منفصل حيث يكون المنافسون مرئيين.</p>
+<p><a href="/ar/salon-management-software">يعمل ديزي</a> على هذا الطراز. سوق ديزي اختياري ومتاح في دول مختارة، ويخضع الإدراج فيه لمراجعة جودة الخدمة. وإذا انضممت إليه، فإن العملاء الذين يكتشفون صالونك من خلال سوق ديزي يحجزون مباشرة في نظام الإدارة الخاص بك. تتوفر بياناتهم وتفضيلاتهم وسجل الحجز على الفور للمتابعة الشخصية وبرامج الولاء والتسويق المستهدف. لا يوجد "تسرب" مرة أخرى إلى سوق منفصل حيث يكون المنافسون مرئيين.</p>
 <p> يحل هذا النهج المتكامل معضلة السوق الأساسية: يمكنك الحصول على ميزة الاستحواذ دون تحمل عبء العمولة المستمر على الزيارات المتكررة، ودون المخاطرة بانتماء ولاء العميل إلى طرف ثالث. راجع <a href="/ar/pricing/business">pricing</a> للحصول على تفاصيل حول كيفية عمل ذلك.</p>
 
 <h2>مستقبل أسواق التجميل</h2>
@@ -1408,7 +1408,7 @@ const beautyMarketplacesImpactArticleAr: LocalBlogPost = {
 <p>نعم، ما لم يتطلب سوق معين التفرد (وهو أمر نادر ويعتبر علامة حمراء بشكل عام). تؤدي إدارة قوائم البيانات عبر أسواق متعددة إلى زيادة النفقات الإدارية، لذا تأكد من أن <a href="/ar/features/business/booking-management">نظام إدارة الحجوزات</a> يقوم بمزامنة التوفر عبر جميع الأنظمة الأساسية في الوقت الفعلي لمنع الحجوزات المزدوجة.</p>`,
     metaTitle: 'تأثير أسواق التجميل على الصالونات | ديزي',
     metaDescription: 'كيف تؤثر أسواق التجميل على اكتساب عملاء الصالونات والاحتفاظ بهم والإيرادات. حلل التأثير وحسّن استراتيجيتك.',
-    createdAt: '2025-06-19T05:00:00.000Z', updatedAt: '2025-06-19T05:00:00.000Z', publishedAt: '2025-06-19T05:00:00.000Z',
+    createdAt: '2025-06-19T05:00:00.000Z', updatedAt: '2026-10-10T08:00:00.000Z', publishedAt: '2025-06-19T05:00:00.000Z',
     locale: 'ar', sortId: 111,
     tags: { category: 'Industry Trends', topic: 'Marketplaces' },
     user: { data: { id: 3, attributes: { name: 'Julian Moreau', jobTitle: 'Beauty Industry Growth Strategist & Digital Marketing Specialist', date: '1 April 2026', time: '10 min.', picture: { data: { attributes: { url: '/images/blog/author-julian-moreau.webp' } } } } } },

@@ -72,7 +72,7 @@ const deathOfSalonSoftwareArticle: LocalBlogPost = {
 <p>A platform ecosystem replaces the patchwork of separate tools with one connected system, where each function feeds the others. In practice that means the following.</p>
 
 <h3>Operations and AI automation</h3>
-<p>Rather than a static calendar, the platform runs <a href="/en/features/business/ai-salon-management">AI across the whole operational workflow</a>. An AI receptionist takes booking inquiries on phone, WhatsApp, Instagram and web chat, 24 hours a day, in several languages. Smart scheduling arranges the calendar for revenue rather than merely avoiding clashes. Confirmations, reminders, follow-ups and rebooking prompts go out without anyone touching them.</p>
+<p>Rather than a static calendar, the platform runs <a href="/en/features/business/ai-salon-management">AI across the whole operational workflow</a>. An AI receptionist takes booking inquiries on WhatsApp, Instagram and web chat, 24 hours a day, in Arabic and English. Smart scheduling arranges the calendar for revenue rather than merely avoiding clashes. Confirmations, reminders, follow-ups and rebooking prompts go out without anyone touching them.</p>
 
 <h3>The client acquisition engine</h3>
 <p>Traditional software acquires nobody. A platform ecosystem brings a marketplace where clients find and book you, cashback that attracts price-sensitive clients and keeps them coming back, referral programmes that turn your existing clients into a channel, and <a href="/en/features/business/marketing-promotions">marketing tools</a> running campaigns from the same system that holds the client data.</p>
@@ -114,7 +114,7 @@ const deathOfSalonSoftwareArticle: LocalBlogPost = {
 <li>The <strong>smart calendar</strong> arranges the day and sends its data to the analytics engine.</li>
 <li>The <strong>analytics engine</strong> produces the insight the marketing campaigns are built on.</li>
 <li>Those <strong>marketing campaigns</strong> drive bookings back through the AI receptionist.</li>
-<li><strong>Marketplace visibility</strong> brings in new clients, who land in the same system.</li>
+<li>The optional <strong>marketplace</strong>, available in selected countries, brings in new clients, who land in the same system.</li>
 <li>The <strong>cashback programme</strong> keeps them returning and feeds lifetime value data back to analytics.</li>
 </ul>
 <p>Each part makes the rest work better. Stitching separate tools together with integrations that break, sync late and lose records is a different thing entirely.</p>
@@ -127,7 +127,7 @@ const deathOfSalonSoftwareArticle: LocalBlogPost = {
 <li>Has it improved since the day you set it up?</li>
 <li>Does it handle your client communication, or just remind you to?</li>
 <li>Does it predict anything, or only report the past?</li>
-<li>Does it answer inquiries on every channel, or does your team still pick up every call?</li>
+<li>Does it answer inquiries on WhatsApp, Instagram and your booking site, or does your team still reply to each one by hand?</li>
 <li>Does it come with marketing, loyalty and referrals, or is growth a separate problem you own?</li>
 </ol>
 <p>Three or more "no" answers means you are on software rather than a platform, and the distance between you and where the market is going keeps growing.</p>
@@ -153,7 +153,7 @@ const deathOfSalonSoftwareArticle: LocalBlogPost = {
     metaDescription:
       'Traditional salon software is dying. The future belongs to platform ecosystems with AI, client acquisition, and growth tools. Learn why the shift matters.',
     createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'en',
     sortId: 52,
@@ -230,8 +230,8 @@ const adoptAiOrLeftBehindArticle: LocalBlogPost = {
 <p>Set aside the talk of sentient machines. In this industry AI is practical and specific. Here is what it does right now, in 2026.</p>
 
 <h3>Booking that runs 24/7</h3>
-<p>An <a href="/en/features/business/ai-salon-management">AI receptionist</a> takes every booking inquiry, whether it arrives by phone, WhatsApp, Instagram DM or website chat, without anyone stepping in. It follows natural language in Arabic and English, knows your service menu, checks live availability and confirms on the spot. It works as well at 2 AM on a Friday as at 10 AM on a Tuesday.</p>
-<p>The impact: salons using AI booking report 30-40% more bookings, purely from answering inquiries that used to be missed during busy stretches, after hours and on days off.</p>
+<p>An <a href="/en/features/business/ai-salon-management">AI receptionist</a> takes booking inquiries that arrive by WhatsApp, Instagram DM or website chat, without anyone stepping in. Daisy's AI receptionist does not answer phone calls yet. It follows natural language in Arabic and English, knows your service menu, checks live availability and confirms on the spot. It works as well at 2 AM on a Friday as at 10 AM on a Tuesday.</p>
+<p>The impact: messages that used to wait through busy stretches, after hours and on days off get an answer while the client is still deciding, and more of them turn into bookings.</p>
 
 <h3>Predicting demand</h3>
 <p>The system reads your booking history and forecasts demand by day, time, service and season. It tells you when to roster extra staff, when a promotion would fill a quiet stretch, and which services are rising or fading. Decisions that used to run on instinct now run on patterns pulled from thousands of data points.</p>
@@ -304,7 +304,7 @@ const adoptAiOrLeftBehindArticle: LocalBlogPost = {
 <p>Profitable is exactly when to do it. Adopting from strength goes far better than adopting from desperation. The salons that struggle are the ones that waited until falling numbers forced the decision, by which point competitors had a head start measured in years. Move while you are strong and AI accelerates growth instead of being a last throw at reversing a decline.</p>
 
 <h3>Will AI replace my staff?</h3>
-<p>No. It replaces administrative tasks, not people. Your stylists, therapists and technicians deliver the service clients are paying for, and no AI does that. What goes is the repetitive work that keeps pulling them away: routine calls, calendar wrangling, reminders, compiling reports. Most staff come round to it quickly once they feel the admin load drop.</p>
+<p>No. It replaces administrative tasks, not people. Your stylists, therapists and technicians deliver the service clients are paying for, and no AI does that. What goes is the repetitive work that keeps pulling them away: routine booking messages, calendar wrangling, reminders, compiling reports. Most staff come round to it quickly once they feel the admin load drop.</p>
 
 <h3>Can I do this gradually?</h3>
 <p>Yes, and it usually goes better. Start with AI booking, which has the biggest effect and disturbs the least, run it beside your existing process for 2-4 weeks, then widen as the results come in. Platforms like The Daisy are built for phased adoption, so nothing forces you to switch everything on day one.</p>
@@ -316,7 +316,7 @@ const adoptAiOrLeftBehindArticle: LocalBlogPost = {
     metaDescription:
       'Beauty businesses that delay AI adoption will face a widening gap by 2028. Learn what AI does for salons today and why the adoption window is closing.',
     createdAt: '2025-05-03T05:00:00.000Z',
-    updatedAt: '2025-05-03T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-05-03T05:00:00.000Z',
     locale: 'en',
     sortId: 53,
@@ -437,11 +437,11 @@ const operationsToGrowthMindsetArticle: LocalBlogPost = {
 <h3>Step 2: automate the base (weeks 2-4)</h3>
 <p>Technology frees time faster than anything else here. Specifically:</p>
 <ul>
-<li><strong>Booking.</strong> An <a href="/en/features/business/ai-salon-management">AI receptionist</a> takes every booking inquiry 24/7, which on its own returns 5-10 hours per week spent on calls, messages and the calendar.</li>
+<li><strong>Booking.</strong> An <a href="/en/features/business/ai-salon-management">AI receptionist</a> answers booking inquiries on WhatsApp, Instagram and your booking site 24/7, which takes most of the booking messages and calendar juggling off your plate. It does not answer phone calls yet, so calls still come to you.</li>
 <li><strong>Communication.</strong> Automate confirmations, reminders, follow-ups and rebooking prompts, and 3-5 hours per week of manual messaging disappears.</li>
 <li><strong>Reporting.</strong> Swap the spreadsheet assembly for live <a href="/en/features/business/analytics-reports">analytics dashboards</a>, saving 2-4 hours per month and giving you better answers sooner.</li>
 </ul>
-<p>Those three together usually return 10-15 hours per week, which is enough to put real weight behind growth work.</p>
+<p>Together those three hand back enough of the week to put real weight behind growth work.</p>
 
 <h3>Step 3: delegate what is left (weeks 4-8)</h3>
 <p>Whatever cannot be automated goes to your team.</p>
@@ -452,7 +452,7 @@ const operationsToGrowthMindsetArticle: LocalBlogPost = {
 </ul>
 
 <h3>Step 4: spend the freed hours on growth</h3>
-<p>You now hold 10-15 hours per week that used to go to operations. Spend them deliberately.</p>
+<p>You now have hours each week that used to go to operations. Spend them deliberately.</p>
 <ul>
 <li><strong>Client acquisition.</strong> Work out which channels bring your most valuable clients, push harder on those, and try something you have not. On The Daisy, switch on the <a href="/en/features/business/marketing-promotions">marketing and promotions suite</a> and let the AI-driven campaigns run.</li>
 <li><strong>New services.</strong> Look at treatments gaining ground, new product lines and packages that would lift your average ticket.</li>
@@ -504,7 +504,7 @@ const operationsToGrowthMindsetArticle: LocalBlogPost = {
     metaDescription:
       'Escape the operator trap. Learn the mindset shift from managing daily salon operations to leading business growth with AI automation and smart delegation.',
     createdAt: '2025-08-17T05:00:00.000Z',
-    updatedAt: '2025-08-17T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-08-17T05:00:00.000Z',
     locale: 'en',
     sortId: 54,
@@ -646,10 +646,10 @@ const fiveAppsHowToFixArticle: LocalBlogPost = {
 <h3>What one platform covers</h3>
 <p>A platform such as <a href="/en/salon-management-software">The Daisy</a> takes the place of the whole stack:</p>
 <ul>
-<li><strong>Booking in one place.</strong> <a href="/en/features/business/booking-management">Smart scheduling</a> with an AI receptionist, online booking, intake from WhatsApp, Instagram, phone and web, and a calendar that arranges itself. Replaces your booking system.</li>
+<li><strong>Booking in one place.</strong> <a href="/en/features/business/booking-management">Smart scheduling</a> with an AI receptionist, online booking, intake from WhatsApp, Instagram and web, and a calendar that arranges itself. Replaces your booking system.</li>
 <li><strong>Payments built in.</strong> <a href="/en/features/business/payment-processing">Full payment processing</a>, POS, tips, gift cards, invoicing and cashback in one system. Replaces your payment processor.</li>
 <li><strong>Marketing on your own data.</strong> <a href="/en/features/business/marketing-promotions">Email, SMS and WhatsApp campaigns</a> drawing on your client records, plus automated promotions, loyalty and referrals. Replaces your email marketing and SMS tools.</li>
-<li><strong>One inbox.</strong> WhatsApp, Instagram DMs, phone and web chat arrive together, attached to the client profile, with <a href="/en/features/business/communication-tools">automated responses and AI handling</a>. Replaces your separate messaging tools.</li>
+<li><strong>One inbox.</strong> WhatsApp, Instagram DMs and web chat arrive together, attached to the client profile, with <a href="/en/features/business/communication-tools">automated responses and AI handling</a>. Replaces your separate messaging tools.</li>
 <li><strong>Live analytics.</strong> <a href="/en/features/business/analytics-reports">Dashboards and reports</a> built from bookings, revenue, client behaviour, marketing performance and staff figures together. The spreadsheet assembly ends. Replaces your manual reporting.</li>
 <li><strong>AI that has something to work with.</strong> With everything in one system, <a href="/en/features/business/ai-salon-management">the AI can predict and recommend</a>. It sees who is drifting away from the booking data, what they respond to from the marketing data, what they spend from payments and what they like from their history. Fragmented tools cannot do this.</li>
 </ul>
@@ -666,7 +666,7 @@ const fiveAppsHowToFixArticle: LocalBlogPost = {
 </ol>
 <p>And after:</p>
 <ol>
-<li>Open The Daisy dashboard. Today's appointments, the overnight messages the AI already answered, campaign performance, revenue, and a note that 3 new clients booked through the marketplace while you slept.</li>
+<li>Open The Daisy dashboard. Today's appointments, the overnight messages the AI already answered, campaign performance, revenue, and, if you have joined the optional marketplace, a note that 3 new clients booked through it while you slept.</li>
 </ol>
 <p>Five tools each doing one thing on its own, against one platform doing all of it together.</p>
 
@@ -686,7 +686,7 @@ const fiveAppsHowToFixArticle: LocalBlogPost = {
 <p>Consolidating nearly always cuts total software spend while raising what the software can do.</p>
 <ul>
 <li><strong>The old stack:</strong> $300-800/month for 5-6 separate tools that do not share data, each with its own login, invoice and export.</li>
-<li><strong>One platform:</strong> $100-300/month covering AI automation, marketplace visibility, cashback, marketing and analytics in one joined-up system.</li>
+<li><strong>One platform:</strong> $100-300/month covering AI automation, cashback, marketing, analytics and an optional marketplace listing in one joined-up system.</li>
 <li><strong>Net:</strong> $100-500/month in direct savings, 20-40 hours/month back, and revenue growth from features you did not previously have.</li>
 </ul>
 <p>Work out your own numbers with our <a href="/en/resources/blog/business/calculate-roi-switching-salon-software">ROI calculation framework</a>, or put <a href="/en/pricing/business">The Daisy's pricing</a> next to what you currently spend.</p>
@@ -715,7 +715,7 @@ const fiveAppsHowToFixArticle: LocalBlogPost = {
     metaDescription:
       'Most salons use 5+ disconnected apps for booking, payments, and marketing. Learn the true cost of fragmentation and how to consolidate to one platform.',
     createdAt: '2025-01-26T05:00:00.000Z',
-    updatedAt: '2025-01-26T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-01-26T05:00:00.000Z',
     locale: 'en',
     sortId: 55,
@@ -810,7 +810,7 @@ const deathOfSalonSoftwareArticleAr: LocalBlogPost = {
 <p>تستبدل منظومة المنصة المتكاملة خليط الأدوات المنفصلة بنظام واحد متصل حيث تعمل كل وظيفة معًا وتجعل كل وظيفة أخرى أذكى. إليك ما يعنيه ذلك عمليًا:</p>
 
 <h3>العمليات وأتمتة الذكاء الاصطناعي</h3>
-<p>بدلاً من تقويم ثابت، تستخدم منظومة المنصة <a href="/ar/features/business/ai-salon-management">الذكاء الاصطناعي لإدارة سير العمل التشغيلي بالكامل</a>. موظف استقبال ذكي يتعامل مع استفسارات الحجز عبر الهاتف وواتساب وإنستغرام ومحادثة الويب - على مدار الساعة وبلغات متعددة. جدولة ذكية تحسّن تقويمك لأقصى إيرادات وليس فقط لعدم وجود تعارضات. سير عمل آلي يتعامل مع التأكيدات والتذكيرات والمتابعات وتحفيز إعادة الحجز دون تدخل بشري.</p>
+<p>بدلاً من تقويم ثابت، تستخدم منظومة المنصة <a href="/ar/features/business/ai-salon-management">الذكاء الاصطناعي لإدارة سير العمل التشغيلي بالكامل</a>. موظف استقبال ذكي يتعامل مع استفسارات الحجز عبر واتساب وإنستغرام ومحادثة الويب - على مدار الساعة بالعربية والإنجليزية. جدولة ذكية تحسّن تقويمك لأقصى إيرادات وليس فقط لعدم وجود تعارضات. سير عمل آلي يتعامل مع التأكيدات والتذكيرات والمتابعات وتحفيز إعادة الحجز دون تدخل بشري.</p>
 
 <h3>محرك اكتساب العملاء</h3>
 <p>البرامج التقليدية ليس لديها أي قدرة على اكتساب العملاء. منظومة المنصة تتضمن سوقًا حيث يكتشف العملاء المحتملون خدماتك ويحجزونها، وحوافز كاشباك تجذب العملاء الحساسين للسعر وتدفع الولاء، وبرامج إحالة تحوّل العملاء الحاليين لقنوات اكتساب، و<a href="/ar/features/business/marketing-promotions">أدوات تسويق</a> متكاملة تدير الحملات من نفس النظام الذي يحمل بيانات عملائك.</p>
@@ -852,7 +852,7 @@ const deathOfSalonSoftwareArticleAr: LocalBlogPost = {
 <li><strong>التقويم الذكي</strong> يحسّن الجدولة ويغذي البيانات لمحرك التحليلات.</li>
 <li><strong>محرك التحليلات</strong> يولّد رؤى تُوجّه حملات التسويق.</li>
 <li><strong>حملات التسويق</strong> تدفع الحجوزات عبر موظف الاستقبال الذكي.</li>
-<li><strong>رؤية السوق</strong> تجذب عملاء جدد يدخلون نفس المنظومة.</li>
+<li><strong>السوق الاختياري</strong>، المتاح في دول مختارة، يجذب عملاء جددًا يدخلون نفس المنظومة.</li>
 <li><strong>برنامج الكاشباك</strong> يحفّز الاحتفاظ ويغذي بيانات القيمة العمرية للعميل إلى التحليلات.</li>
 </ul>
 <p>كل مكوّن يجعل كل مكوّن آخر أكثر فعالية. هذا مختلف جذريًا عن ربط أدوات منفصلة بتكاملات تنقطع وتتأخر في المزامنة وتخلق فجوات بيانات.</p>
@@ -865,7 +865,7 @@ const deathOfSalonSoftwareArticleAr: LocalBlogPost = {
 <li>هل يتعلم ويتحسن بمرور الوقت أم يفعل نفس ما فعله يوم إعداده؟</li>
 <li>هل يؤتمت تواصلك أم يذكّرك فقط بالتواصل؟</li>
 <li>هل يتنبأ بالاتجاهات أم يُبلّغ فقط عن الماضي؟</li>
-<li>هل يتعامل مع الاستفسارات عبر جميع القنوات أم لا يزال فريقك يرد على كل مكالمة؟</li>
+<li>هل يرد على الاستفسارات عبر واتساب وإنستغرام وموقع الحجز، أم لا يزال فريقك يرد على كل استفسار يدويًا؟</li>
 <li>هل يتضمن أدوات نمو (تسويق وولاء وإحالات) أم النمو مشكلتك لتحلها بشكل منفصل؟</li>
 </ol>
 <p>إذا أجبت بـ "لا" على ثلاثة أسئلة أو أكثر، فأنت على برنامج وليس منصة. الفجوة بين مكانك وأين يتجه السوق ستتسع فقط.</p>
@@ -891,7 +891,7 @@ const deathOfSalonSoftwareArticleAr: LocalBlogPost = {
     metaDescription:
       'برامج الصالونات التقليدية تحتضر. المستقبل لمنظومات المنصات مع الذكاء الاصطناعي واكتساب العملاء وأدوات النمو. تعرّف على أهمية هذا التحول.',
     createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'ar',
     sortId: 52,
@@ -920,8 +920,8 @@ const adoptAiOrLeftBehindArticleAr: LocalBlogPost = {
 <p> انسَ الضجيج حول الروبوتات الواعية. يعد الذكاء الاصطناعي في صناعة التجميل أمرًا عمليًا ومحددًا وذو قيمة فورية. وإليك ما تفعله الآن، في عام 2026:</p>
 
 <h3>24/7 الحجز الذكي</h3>
-<p>يتعامل موظف الاستقبال <a href="/ar/features/business/ai-salon-management">AI</a> مع كل استفسار عن الحجز - المكالمات الهاتفية، ورسائل واتساب، والرسائل المباشرة على إنستغرام، ومحادثات موقع الويب - دون تدخل بشري. فهو يفهم اللغة الطبيعية باللغتين العربية والإنجليزية، ويعرف قائمة الخدمات الخاصة بك، ويتحقق من التوفر في الوقت الفعلي، ويؤكد الحجوزات على الفور. تعمل الساعة 2 صباحًا يوم الجمعة بنفس فعالية الساعة 10 صباحًا يوم الثلاثاء.</p>
-<p>التأثير: الصالونات التي تستخدم تقرير الحجز بالذكاء الاصطناعي تلتقط حجوزات أكثر بنسبة 30-40% ببساطة عن طريق الرد على الاستفسارات التي فاتتها سابقًا خلال فترات الانشغال، وبعد ساعات العمل، وفي أيام العطلات.</p>
+<p>يتعامل موظف الاستقبال <a href="/ar/features/business/ai-salon-management">AI</a> مع استفسارات الحجز التي تصل عبر رسائل واتساب، والرسائل المباشرة على إنستغرام، ومحادثات موقع الويب، دون تدخل بشري. ولا يرد موظف الاستقبال الذكي من ديزي على المكالمات الهاتفية حتى الآن. فهو يفهم اللغة الطبيعية باللغتين العربية والإنجليزية، ويعرف قائمة الخدمات الخاصة بك، ويتحقق من التوفر في الوقت الفعلي، ويؤكد الحجوزات على الفور. تعمل الساعة 2 صباحًا يوم الجمعة بنفس فعالية الساعة 10 صباحًا يوم الثلاثاء.</p>
+<p>التأثير: الرسائل التي كانت تنتظر خلال فترات الانشغال وبعد ساعات العمل وفي أيام العطلات تحصل على رد بينما لا يزال العميل يقرر، فيتحول عدد أكبر منها إلى حجوزات.</p>
 
 <h3>إدارة الطلب التنبؤية</h3>
 <p>AI يحلل بيانات الحجز التاريخية الخاصة بك للتنبؤ بالطلب حسب اليوم والوقت ونوع الخدمة والموسم. فهو يخبرك بموعد جدولة موظفين إضافيين، ومتى يتم تشغيل العروض الترويجية لملء الفترات البطيئة، وما هي الخدمات التي تتجه نحو الأعلى أو الأسفل. القرارات التي كانت تعتمد على الشعور الغريزي أصبحت الآن تعتمد على التعرف على الأنماط عبر آلاف نقاط البيانات.</p>
@@ -994,7 +994,7 @@ const adoptAiOrLeftBehindArticleAr: LocalBlogPost = {
 <p> إذا كان صالونك مربحًا اليوم، فهذا ممتاز - وهذا هو الوقت المناسب تمامًا لاعتماد الذكاء الاصطناعي. تتبنى الشركات الناجحة من موقع القوة، وليس من موقع اليأس. الصالونات التي تعاني من اعتماد الذكاء الاصطناعي هي تلك التي تنتظر حتى يؤدي انخفاض الأداء إلى فرض القرار. بحلول ذلك الوقت، يكون لدى المنافسين بداية متعددة السنوات. تبنّى ما دمت قويًا، وسيعمل الذكاء الاصطناعي على تسريع نموك بدلاً من أن تكون مثل السلام عليك لعكس مسار التدهور.</p>
 
 <h3> هل سيحل الذكاء الاصطناعي محل طاقم العمل الخاص بي؟</h3>
-<p>لا. يحل الذكاء الاصطناعي محل المهام الإدارية، وليس الأشخاص. يقدم المصممون والمعالجون والفنيون لديك الخدمة التي يدفع العملاء مقابلها - ولا يستطيع الذكاء الاصطناعي القيام بذلك. ما يحل محله الذكاء الاصطناعي هو العمل المتكرر الذي يبعد الموظفين عن العملاء: الرد على المكالمات الروتينية، وإدارة التقويم، وإرسال التذكيرات، وتجميع التقارير. يقضي فريقك وقتًا أطول في القيام بما تم تدريبه وشغفه به. يرحب معظم الموظفين بالذكاء الاصطناعي بمجرد أن يختبروا تخفيف العبء الإداري.</p>
+<p>لا. يحل الذكاء الاصطناعي محل المهام الإدارية، وليس الأشخاص. يقدم المصممون والمعالجون والفنيون لديك الخدمة التي يدفع العملاء مقابلها - ولا يستطيع الذكاء الاصطناعي القيام بذلك. ما يحل محله الذكاء الاصطناعي هو العمل المتكرر الذي يبعد الموظفين عن العملاء: الرد على رسائل الحجز الروتينية، وإدارة التقويم، وإرسال التذكيرات، وتجميع التقارير. يقضي فريقك وقتًا أطول في القيام بما تم تدريبه وشغفه به. يرحب معظم الموظفين بالذكاء الاصطناعي بمجرد أن يختبروا تخفيف العبء الإداري.</p>
 
 <h3>هل يمكنني اعتماد الذكاء الاصطناعي تدريجيًا، أم أحتاج إلى تبديل كل شيء مرة واحدة؟</h3>
 <p>الاعتماد التدريجي يعمل بشكل جيد. ابدأ بحجز الذكاء الاصطناعي (الميزة ذات التأثير الأعلى والأقل تعطيلًا)، وقم بتشغيلها جنبًا إلى جنب مع عملياتك الحالية لمدة 2-4 أسابيع، ثم قم بالتوسيع عندما ترى النتائج. تم تصميم الأنظمة الأساسية الحديثة مثل ديزي للاعتماد على مراحل - فلا تحتاج إلى تنشيط كل ميزة في اليوم الأول. يصبح النظام أكثر قيمة كلما قمت بتنشيط المزيد من الإمكانات.</p>
@@ -1005,7 +1005,7 @@ const adoptAiOrLeftBehindArticleAr: LocalBlogPost = {
     metaDescription:
       'أعمال التجميل التي تؤخر تبني الذكاء الاصطناعي ستواجه فجوة متسعة بحلول 2028. تعرّف على ما يفعله الذكاء الاصطناعي للصالونات ولماذا نافذة التبني تُغلق.',
     createdAt: '2025-05-03T05:00:00.000Z',
-    updatedAt: '2025-05-03T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-05-03T05:00:00.000Z',
     locale: 'ar',
     sortId: 53,
@@ -1078,11 +1078,11 @@ const operationsToGrowthMindsetArticleAr: LocalBlogPost = {
 <h3>الخطوة 2: أتمتة قاعدة العمليات (الأسابيع 2-4)</h3>
 <p> أسرع طريقة لتفريغ الوقت من العمليات هي التكنولوجيا. على وجه التحديد:</p>
 <ul>
-<li><strong>الحجز التلقائي:</strong> يتولى <a href="/ar/features/business/ai-salon-management">موظف استقبال ذكي</a> جميع استفسارات الحجز على مدار الساعة طوال أيام الأسبوع. وهذا وحده يوفر بين 5 و10 ساعات أسبوعيًا من الرد على المكالمات والرسائل وإدارة التقويم.</li>
+<li><strong>الحجز التلقائي:</strong> يتولى <a href="/ar/features/business/ai-salon-management">موظف استقبال ذكي</a> استفسارات الحجز عبر واتساب وإنستغرام وموقع الحجز على مدار الساعة طوال أيام الأسبوع، فيرفع عنك معظم رسائل الحجز وترتيب التقويم. ولا يرد على المكالمات الهاتفية حتى الآن، لذلك تبقى المكالمات لديك.</li>
 <li><strong>الاتصال التلقائي:</strong> أعدّ التأكيدات التلقائية والتذكيرات والمتابعات وتذكيرات إعادة الحجز. يؤدي هذا إلى التخلص من 3-5 ساعات أسبوعيًا من الرسائل اليدوية.</li>
 <li><strong>أتمتة إعداد التقارير:</strong> استبدل التجميع اليدوي لجداول البيانات بلوحات <a href="/ar/features/business/analytics-reports">تحليلات لحظية</a>. وهذا يوفر من 2 إلى 4 ساعات شهريًا مع تقديم رؤى أفضل وأسرع.</li>
 </ul>
-<p> عادةً ما توفر عمليات التشغيل الآلي الثلاث هذه وحدها بين 10 و15 ساعة أسبوعيًا، وهو ما يكفي للاستثمار بشكل هادف في أنشطة النمو.</p>
+<p> توفر عمليات التشغيل الآلي الثلاث هذه معًا وقتًا كافيًا من أسبوعك للاستثمار بشكل هادف في أنشطة النمو.</p>
 
 <h3>الخطوة 3: تفويض العمليات المتبقية (الأسابيع 4-8)</h3>
 <p>بالنسبة للمهام التي لا يمكن أتمتتها، قم بتفويض فريقك:</p>
@@ -1093,7 +1093,7 @@ const operationsToGrowthMindsetArticleAr: LocalBlogPost = {
 </ul>
 
 <h3>الخطوة 4: استثمار الوقت الحر في النمو (مستمر)</h3>
-<p> الآن لديك 10-15 ساعة أسبوعيًا كانت تُستهلك في العمليات. استثمر هذا الوقت بشكل متعمد:</p>
+<p> الآن لديك ساعات كل أسبوع كانت تُستهلك في العمليات. استثمر هذا الوقت بشكل متعمد:</p>
 <ul>
 <li><strong>استراتيجية اكتساب العملاء:</strong> راجع القنوات التي تجلب العملاء الأكثر قيمة. ضاعف الاستثمار في ما ينجح، وجرّب ما لم تختبره بعد. إذا كنت تستخدم ديزي، فقم بتنشيط <a href="/ar/features/business/marketing-promotions">مجموعة التسويق والعروض الترويجية</a> واترك الحملات المدعومة بالذكاء الاصطناعي تعمل تلقائيًا.</li>
 <li><strong>ابتكار الخدمة:</strong> ابحث عن العلاجات الرائجة وخطوط المنتجات الجديدة وحزم الخدمات التي يمكن أن تزيد متوسط قيمة التذكرة.</li>
@@ -1144,7 +1144,7 @@ const operationsToGrowthMindsetArticleAr: LocalBlogPost = {
     metaDescription:
       'اهرب من فخ المُشغّل. تعلّم التحول الذهني من إدارة العمليات اليومية للصالون إلى قيادة نمو الأعمال مع أتمتة الذكاء الاصطناعي والتفويض الذكي.',
     createdAt: '2025-08-17T05:00:00.000Z',
-    updatedAt: '2025-08-17T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-08-17T05:00:00.000Z',
     locale: 'ar',
     sortId: 54,
@@ -1239,10 +1239,10 @@ const fiveAppsHowToFixArticleAr: LocalBlogPost = {
 <h3>ما توفره المنصة الموحدة</h3>
 <p>نظام أساسي مثل <a href="/ar/salon-management-software">ديزي</a> يستبدل مجموعتك المجزأة بـ:</p>
 <ul>
-<li><strong>الحجز الموحد:</strong> <a href="/ar/features/business/booking-management">جدولة ذكية</a> مع موظف استقبال يعمل بالذكاء الاصطناعي، والحجز عبر الإنترنت، واستقبال متعدد القنوات (واتساب، وإنستغرام، والهاتف، والويب)، وتحسين التقويم. يحل محل نظام الحجز الخاص بك.</li>
+<li><strong>الحجز الموحد:</strong> <a href="/ar/features/business/booking-management">جدولة ذكية</a> مع موظف استقبال يعمل بالذكاء الاصطناعي، والحجز عبر الإنترنت، واستقبال متعدد القنوات (واتساب، وإنستغرام، والويب)، وتحسين التقويم. يحل محل نظام الحجز الخاص بك.</li>
 <li><strong>المدفوعات المتكاملة:</strong> <a href="/ar/features/business/payment-processing">معالجة الدفع الكامل</a>، نقاط البيع، الإكراميات، بطاقات الهدايا، الفواتير، وإدارة الكاشباك في نظام واحد. يحل محل معالج الدفع الخاص بك.</li>
 <li><strong>التسويق المدمج:</strong> <a href="/ar/features/business/marketing-promotions">حملات البريد الإلكتروني والرسائل النصية القصيرة والواتساب</a> المدعومة ببيانات عميلك. الترقيات الآلية وبرامج الولاء وأدوات الإحالة. يحل محل أدوات التسويق عبر البريد الإلكتروني والرسائل النصية القصيرة.</li>
-<li><strong>الاتصال الموحد:</strong> جميع رسائل العميل - واتساب وإنستغرام DM والهاتف والدردشة عبر الويب - في صندوق بريد واحد متصل بملفات تعريف العميل. <a href="/ar/features/business/communication-tools"> الاستجابات الآلية والتعامل مع الذكاء الاصطناعي</a>. يحل محل أدوات المراسلة المنفصلة.</li>
+<li><strong>الاتصال الموحد:</strong> جميع رسائل العميل - واتساب وإنستغرام DM والدردشة عبر الويب - في صندوق بريد واحد متصل بملفات تعريف العميل. <a href="/ar/features/business/communication-tools"> الاستجابات الآلية والتعامل مع الذكاء الاصطناعي</a>. يحل محل أدوات المراسلة المنفصلة.</li>
 <li><strong>تحليلات في الوقت الفعلي:</strong> <a href="/ar/features/business/analytics-reports">لوحات المعلومات والتقارير</a> التي يتم إنشاؤها من جميع بياناتك - الحجوزات، والإيرادات، وسلوك العميل، والأداء التسويقي، ومقاييس الموظفين - في مكان واحد. لا مزيد من تجميع جداول البيانات. يحل محل التقارير اليدوية.</li>
 <li><strong>ذكاء الذكاء الاصطناعي:</strong> نظرًا لأن جميع البيانات موجودة في نظام واحد، يمكن لـ <a href="/ar/features/business/ai-salon-management">AI إنشاء تنبؤات وتوصيات مفيدة</a>. فهو يعرف العملاء المعرضين لخطر التوقف (بيانات الحجز)، وما يستجيبون له (بيانات التسويق)، والمبلغ الذي ينفقونه (بيانات الدفع)، وما هي الخدمات التي يفضلونها (بيانات التاريخ). وهذا مستحيل باستخدام الأدوات المجزأة.</li>
 </ul>
@@ -1259,7 +1259,7 @@ const fiveAppsHowToFixArticleAr: LocalBlogPost = {
 </ol>
 <p>بعد الدمج:</p>
 <ol>
-<li>افتح لوحة معلومات ديزي. كل شيء موجود: مواعيد اليوم، والرسائل الليلية (التي تمت معالجتها بالفعل بواسطة الذكاء الاصطناعي)، وأداء الحملات التسويقية، وبيانات الإيرادات، وإشعار بأن 3 عملاء جدد قاموا بالحجز عبر السوق بين عشية وضحاها.</li>
+<li>افتح لوحة معلومات ديزي. كل شيء موجود: مواعيد اليوم، والرسائل الليلية (التي تمت معالجتها بالفعل بواسطة الذكاء الاصطناعي)، وأداء الحملات التسويقية، وبيانات الإيرادات، وإذا كنت قد انضممت إلى السوق الاختياري، إشعار بأن 3 عملاء جدد قاموا بالحجز عبره بين عشية وضحاها.</li>
 </ol>
 <p> هذا هو الفرق. ليست خمس أدوات تقوم بخمسة أشياء بشكل منفصل. منصة واحدة تفعل كل شيء معًا.</p>
 
@@ -1279,7 +1279,7 @@ const fiveAppsHowToFixArticleAr: LocalBlogPost = {
 <p> يؤدي الدمج دائمًا إلى تقليل إجمالي إنفاق البرامج مع زيادة القدرة:</p>
 <ul>
 <li><strong>المكدس المجزأ القديم:</strong> 300-800 دولار شهريًا مقابل 5-6 أدوات منفصلة بدون ذكاء اصطناعي، ولا اكتساب العميل، ولا ذكاء متكامل.</li>
-<li><strong>النظام الأساسي الموحد:</strong> 100-300 دولار شهريًا لمنصة واحدة مع أتمتة الذكاء الاصطناعي، ورؤية السوق، وبرنامج الكاشباك، وأدوات التسويق، والتحليلات، وميزات النمو التي لا يمكن أن توفرها مجموعتك القديمة.</li>
+<li><strong>النظام الأساسي الموحد:</strong> 100-300 دولار شهريًا لمنصة واحدة مع أتمتة الذكاء الاصطناعي، وإدراج اختياري في السوق، وبرنامج الكاشباك، وأدوات التسويق، والتحليلات، وميزات النمو التي لا يمكن أن توفرها مجموعتك القديمة.</li>
 <li><strong>صافي التوفير:</strong> 100-500 دولار أمريكي شهريًا في التكاليف المباشرة، بالإضافة إلى 20-40 ساعة شهريًا في وقت الاسترداد، بالإضافة إلى نمو الإيرادات من الميزات التي لم توفرها أدواتك القديمة.</li>
 </ul>
 <p>احسب مدخراتك المحددة باستخدام <a href="/ar/resources/blog/business/calculate-roi-switching-salon-software">إطار حساب عائد الاستثمار</a>، أو استكشف <a href="/ar/pricing/business">تسعير ديزي</a> للمقارنة بإجمالي إنفاقك الحالي على البرامج.</p>
@@ -1307,7 +1307,7 @@ const fiveAppsHowToFixArticleAr: LocalBlogPost = {
     metaDescription:
       'معظم الصالونات تستخدم 5+ تطبيقات منفصلة للحجز والمدفوعات والتسويق. تعرّف على التكلفة الحقيقية للتجزئة وكيف تتوحد في منصة واحدة.',
     createdAt: '2025-01-26T05:00:00.000Z',
-    updatedAt: '2025-01-26T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-01-26T05:00:00.000Z',
     locale: 'ar',
     sortId: 55,

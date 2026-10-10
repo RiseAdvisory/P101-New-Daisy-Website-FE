@@ -893,7 +893,7 @@ const reviewRequestAutomationArticle: LocalBlogPost = {
 <p>Put the effort where it counts:</p>
 <ul>
 <li><strong>Google Business Profile:</strong> the one that matters most for local discovery, because Google reviews feed straight into your search ranking and map visibility. Make it the primary target.</li>
-<li><strong>The Daisy platform:</strong> reviews here lift your profile in marketplace results and build trust with people already browsing.</li>
+<li><strong>The Daisy platform:</strong> if you join Daisy's optional marketplace (available in selected countries), reviews here lift your profile in its results and build trust with people already browsing.</li>
 <li><strong>Instagram:</strong> not a review platform as such, though comments and story mentions do the same work. Ask clients to tag you when they post their results.</li>
 <li><strong>Facebook:</strong> still worth something with certain demographics, particularly for established businesses already active there.</li>
 </ul>
@@ -1013,7 +1013,7 @@ const reviewRequestAutomationArticle: LocalBlogPost = {
     metaDescription:
       'Automate review requests to get more 5-star reviews for your salon. Learn the best timing, messaging templates, and platform strategies for beauty businesses.',
     createdAt: '2025-02-02T05:00:00.000Z',
-    updatedAt: '2025-02-02T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-02-02T05:00:00.000Z',
     locale: 'en',
     sortId: 17,
@@ -1938,7 +1938,7 @@ const reviewRequestAutomationArticleAr: LocalBlogPost = {
 <p> ركز جهودك في بناء المراجعة على الأنظمة الأساسية الأكثر أهمية لنشاطك التجاري:</p>
 <ul>
 <li><strong>الملف التجاري على جوجل:</strong> النظام الأساسي الأكثر تأثيرًا للاكتشاف المحلي. تؤثر مراجعات جوجل بشكل مباشر على ترتيب بحثك ورؤية الخريطة. يجب أن يكون هذا هو هدف المراجعة الأساسي.</li>
-<li><strong>منصة ديزي:</strong> تساعد التعليقات على ديزي ملفك الشخصي على الظهور في نتائج بحث السوق وبناء الثقة مع مستخدمي المنصة.</li>
+<li><strong>منصة ديزي:</strong> إذا انضممت إلى سوق ديزي الاختياري المتاح في دول مختارة، تساعد التعليقات على ديزي ملفك الشخصي على الظهور في نتائج بحث السوق وبناء الثقة مع مستخدمي المنصة.</li>
 <li><strong>إنستغرام:</strong> على الرغم من أنها ليست منصة مراجعة تقليدية، إلا أن التعليقات وإشارات القصة تعمل كدليل اجتماعي. شجع العملاء على الإشارة إليك في المشاركات التي تعرض نتائجهم.</li>
 <li><strong>Facebook:</strong> لا يزال ملائمًا لفئات سكانية معينة، خاصة بالنسبة للأنشطة التجارية الراسخة التي تتمتع بحضور نشط على Facebook.</li>
 </ul>
@@ -2057,7 +2057,7 @@ const reviewRequestAutomationArticleAr: LocalBlogPost = {
     metaDescription:
       'أتمتة طلبات التقييم لصالونك. اجمع المزيد من التقييمات الإيجابية عبر الإنترنت وجذب عملاء جدد باستمرار.',
     createdAt: '2025-02-02T05:00:00.000Z',
-    updatedAt: '2025-02-02T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-02-02T05:00:00.000Z',
     locale: 'ar',
     sortId: 17,

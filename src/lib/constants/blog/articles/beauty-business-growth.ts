@@ -948,7 +948,7 @@ const buildingFreelanceBeautyBusinessArticle: LocalBlogPost = {
 <ul>
 <li><strong>Instagram:</strong> your visual portfolio. Post transformations, process videos, and tips 4-5 times a week.</li>
 <li><strong>Google Business Profile:</strong> essential for local search if you work from a fixed location.</li>
-<li><strong>Professional booking platforms:</strong> <a href="/en/features/professional/booking-management">The Daisy's professional profile</a> puts you in front of clients searching for your services in your area. Fill it out properly, with good photos, service descriptions, pricing, and real availability.</li>
+<li><strong>Professional booking platforms:</strong> <a href="/en/features/professional/booking-management">The Daisy's professional profile</a> can put you in front of clients searching for your services in your area through Daisy's optional marketplace, available in selected countries once your profile passes a service-quality review. Fill it out properly, with good photos, service descriptions, pricing, and real availability.</li>
 </ul>
 
 <h3>Referral programme</h3>
@@ -1003,7 +1003,7 @@ const buildingFreelanceBeautyBusinessArticle: LocalBlogPost = {
     metaDescription:
       'Complete guide to building a freelance beauty business from scratch. Covers setup, pricing, client acquisition, finances, and growth strategies for independents.',
     createdAt: '2025-06-17T05:00:00.000Z',
-    updatedAt: '2025-06-17T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-06-17T05:00:00.000Z',
     locale: 'en',
     sortId: 78,
@@ -2156,7 +2156,7 @@ const buildingFreelanceBeautyBusinessArticleAr: LocalBlogPost = {
 <ul>
 <li><strong>إنستغرام:</strong> معرض أعمالك البصري. انشر صور التحولات ومقاطع فيديو العمليات والنصائح 4-5 مرات أسبوعياً.</li>
 <li><strong>ملف جوجل التجاري:</strong> أساسي لظهور البحث المحلي إذا كان لديك موقع ثابت.</li>
-<li><strong>منصات الحجز المهنية:</strong> يربطك <a href="/ar/features/professional/booking-management">الملف المهني في ديزي</a> بعملاء يبحثون عن خدمات محددة في منطقتك. أكمل ملفك بصور عالية الجودة ووصف الخدمات والأسعار والتوفر.</li>
+<li><strong>منصات الحجز المهنية:</strong> يمكن أن يربطك <a href="/ar/features/professional/booking-management">الملف المهني في ديزي</a> بعملاء يبحثون عن خدمات محددة في منطقتك عبر سوق ديزي الاختياري، المتاح في دول مختارة بعد اجتياز ملفك مراجعة جودة الخدمة. أكمل ملفك بصور عالية الجودة ووصف الخدمات والأسعار والتوفر.</li>
 </ul>
 
 <h3>برنامج الإحالة</h3>
@@ -2211,7 +2211,7 @@ const buildingFreelanceBeautyBusinessArticleAr: LocalBlogPost = {
     metaDescription:
       'دليل بناء عمل تجميل حر من الصفر. يغطي النموذج والتسعير والعملاء والنمو.',
     createdAt: '2025-06-17T05:00:00.000Z',
-    updatedAt: '2025-06-17T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-06-17T05:00:00.000Z',
     locale: 'ar',
     sortId: 78,

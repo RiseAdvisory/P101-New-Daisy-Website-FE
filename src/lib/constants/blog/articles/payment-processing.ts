@@ -690,11 +690,11 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <li><strong>Processing model:</strong> Flat-rate</li>
 <li><strong>Card-present rate:</strong> Competitive flat rate (see <a href="/en/pricing/business">pricing page</a> for current rates)</li>
 <li><strong>Online/card-not-present rate:</strong> Slightly higher flat rate for online payments and payment links</li>
-<li><strong>Commission on bookings:</strong> zero, with no commission on any booking regardless of how the client found you</li>
+<li><strong>Commission on bookings:</strong> 0% on bookings from your own clients, whichever channel they book through. Commission applies only to new customers that Daisy's optional marketplace brings you</li>
 <li><strong>Monthly platform fee:</strong> Included in salon management subscription</li>
 <li><strong>Payout speed:</strong> Next-business-day deposits standard</li>
 <li><strong>Hardware:</strong> Compatible with standard card readers; no proprietary hardware required</li>
-<li><strong>Key differentiator:</strong> with no booking commission, your processing costs do not climb with your revenue the way they do on commission-based platforms. Payment connects to appointments, client profiles, tip management, and reporting.</li>
+<li><strong>Key differentiator:</strong> bookings from your own clients carry no commission, so repeat business adds nothing to your platform costs. Payment connects to appointments, client profiles, tip management, and reporting.</li>
 </ul>
 
 <h3>Square</h3>
@@ -716,7 +716,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <li><strong>Online payments (UAE published):</strong> 4.90% + AED 0.75 per transaction</li>
 <li><strong>Commission on new client bookings (UAE published):</strong> a one-time 50% commission on new clients acquired through the Fresha marketplace, minimum AED 20; returning clients free</li>
 <li><strong>Monthly platform fee:</strong> priced per market, AED 149.95 per month for the Independent plan in the UAE, with Team plans at custom rates</li>
-<li><strong>Key consideration:</strong> the marketplace commission, not the processing rate, is what moves the total. It is charged once per new client, at 50% of that first booking, so a month of heavy marketplace acquisition costs far more than the headline rate suggests, while a month of returning clients costs nothing extra. A salon doing 100 bookings per month averaging 250 AED, where 30 are new marketplace clients, pays roughly 3,750 AED in commissions that month, before processing fees. On The Daisy there is no commission either way.</li>
+<li><strong>Key consideration:</strong> the marketplace commission, not the processing rate, is what moves the total. It is charged once per new client, at 50% of that first booking, so a month of heavy marketplace acquisition costs far more than the headline rate suggests, while a month of returning clients costs nothing extra. A salon doing 100 bookings per month averaging 250 AED, where 30 are new marketplace clients, pays roughly 3,750 AED in commissions that month, before processing fees. On The Daisy, bookings from your own clients carry 0% commission, and commission applies only to new customers its optional marketplace brings you.</li>
 </ul>
 
 <h3>Stripe (direct integration)</h3>
@@ -753,7 +753,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 </thead>
 <tbody>
 <tr><td>Processing fees</td><td>Competitive flat rate</td><td>~4,220 AED</td><td>~2,720 AED</td></tr>
-<tr><td>New client commission</td><td>0 AED</td><td>~2,000 AED</td><td>0 AED</td></tr>
+<tr><td>New client commission</td><td>0 AED on your own clients; commission only on new marketplace customers</td><td>~2,000 AED</td><td>0 AED</td></tr>
 <tr><td>Platform/subscription fee</td><td>Included</td><td>~150 AED (Independent, UAE)</td><td>~200-400 AED</td></tr>
 <tr><td>Additional tool costs</td><td>0 AED</td><td>&mdash;</td><td>~100-300 AED</td></tr>
 <tr><td><strong>Estimated monthly total</strong></td><td><strong>See pricing page</strong></td><td><strong>~6,370 AED</strong></td><td><strong>~3,200 AED</strong></td></tr>
@@ -782,7 +782,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <ul>
 <li>You want payment processing, booking, client management, and communication in one system</li>
 <li>You need Arabic, English, and more for both clients and staff</li>
-<li>You want no commission on bookings, so growing does not cost you more and more</li>
+<li>You want 0% commission on bookings from your own clients, with commission only on new customers an optional marketplace brings you</li>
 <li>You want automated booking, smart scheduling, and predictive analytics sitting alongside the payments</li>
 <li>You want next-business-day payouts and no fee for them</li>
 </ul>
@@ -839,7 +839,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
     metaDescription:
       'Compare salon payment processing fees across The Daisy, Square, Fresha, Stripe, and SumUp. See real cost breakdowns including per-transaction charges and commissions.',
     createdAt: '2025-08-14T05:00:00.000Z',
-    updatedAt: '2026-10-09T08:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-08-14T05:00:00.000Z',
     locale: 'en',
     sortId: 26,
@@ -1553,11 +1553,11 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <li><strong>نموذج المعالجة:</strong> المعدل الثابت</li>
 <li><strong>سعر وجود البطاقة:</strong> سعر ثابت تنافسي (راجع <a href="/ar/pricing/business">صفحة التسعير</a> لمعرفة الأسعار الحالية)</li>
 <li><strong>سعر عدم وجود البطاقة على الإنترنت/البطاقة:</strong> سعر ثابت أعلى قليلاً للمدفوعات عبر الإنترنت وروابط الدفع</li>
-<li><strong>العمولة على الحجوزات:</strong> صفر - لا توجد عمولة على أي حجز، بغض النظر عن كيفية عثور العميل عليك</li>
+<li><strong>العمولة على الحجوزات:</strong> 0% على حجوزات عملائك الحاليين أيًا كانت القناة التي يحجزون منها، وتُطبق العمولة فقط على العملاء الجدد الذين يجلبهم سوق ديزي الاختياري</li>
 <li><strong>رسوم المنصة الشهرية:</strong> متضمنة في اشتراك إدارة الصالون</li>
 <li><strong>سرعة الدفع:</strong> معيار الإيداع في يوم العمل التالي</li>
 <li><strong>الأجهزة:</strong> متوافقة مع أجهزة قراءة البطاقات القياسية؛ لا يلزم وجود أجهزة خاصة</li>
-<li><strong>الفرق الرئيسي:</strong> عمولة الحجز الصفرية تعني أن تكاليف المعالجة الخاصة بك لا تتناسب مع إيراداتك بالطريقة التي تعمل بها الأنظمة الأساسية القائمة على العمولة. يتم دمج الدفع بالكامل مع المواعيد وملفات تعريف العملاء وإدارة النصائح وإعداد التقارير.</li>
+<li><strong>الفرق الرئيسي:</strong> لا تُحتسب أي عمولة على حجوزات عملائك الحاليين، فلا تضيف الزيارات المتكررة شيئًا إلى تكاليف المنصة. يتم دمج الدفع بالكامل مع المواعيد وملفات تعريف العملاء وإدارة الإكراميات وإعداد التقارير.</li>
 </ul>
 
 <h3>Square</h3>
@@ -1579,7 +1579,7 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <li><strong>المدفوعات الإلكترونية (منشور للإمارات):</strong> 4.90% + 0.75 درهم لكل معاملة</li>
 <li><strong>عمولة على حجوزات العملاء الجدد:</strong> عمولة لمرة واحدة 50% على العملاء الجدد القادمين من سوق Fresha، بحد أدنى 20 درهماً؛ العملاء العائدون مجاناً</li>
 <li><strong>رسوم النظام الأساسي الشهرية:</strong> مُسعّرة حسب السوق — 149.95 درهماً شهرياً لخطة Independent في الإمارات، وخطط Team بأسعار مخصصة</li>
-<li><strong>الاعتبار الرئيسي:</strong> عمولة السوق، لا معدل المعالجة، هي ما يحرّك الإجمالي. تُحتسب مرة واحدة لكل عميل جديد بنسبة 50% من حجزه الأول، لذا فإن شهر الاستقطاب المكثف عبر السوق يكلّف أكثر بكثير مما يوحي به المعدل المُعلن، بينما لا يكلّف شهر العملاء العائدين أي مبلغ إضافي. صالون يجري 100 حجز شهريًا بمتوسط 250 درهمًا، منها 30 لعملاء سوق جدد، يدفع نحو 3,750 درهمًا عمولاتٍ في ذلك الشهر قبل رسوم المعالجة. أما في ديزي فلا عمولة في الحالتين.</li>
+<li><strong>الاعتبار الرئيسي:</strong> عمولة السوق، لا معدل المعالجة، هي ما يحرّك الإجمالي. تُحتسب مرة واحدة لكل عميل جديد بنسبة 50% من حجزه الأول، لذا فإن شهر الاستقطاب المكثف عبر السوق يكلّف أكثر بكثير مما يوحي به المعدل المُعلن، بينما لا يكلّف شهر العملاء العائدين أي مبلغ إضافي. صالون يجري 100 حجز شهريًا بمتوسط 250 درهمًا، منها 30 لعملاء سوق جدد، يدفع نحو 3,750 درهمًا عمولاتٍ في ذلك الشهر قبل رسوم المعالجة. أما في ديزي فلا عمولة على حجوزات عملائك الحاليين، وتُطبق العمولة فقط على العملاء الجدد الذين يجلبهم سوقها الاختياري.</li>
 </ul>
 
 <h3>Stripe (التكامل المباشر)</h3>
@@ -1616,7 +1616,7 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 </thead>
 <tbody>
 <tr><td>رسوم المعالجة</td><td>سعر موحد تنافسي</td><td>~4,220 درهم</td><td>~2,720 درهم</td></tr>
-<tr><td>عمولة العميل الجديد</td><td>0 درهم</td><td>~2,000 درهم</td><td>0 درهم</td></tr>
+<tr><td>عمولة العميل الجديد</td><td>0 درهم على عملائك الحاليين، والعمولة على عملاء السوق الجدد فقط</td><td>~2,000 درهم</td><td>0 درهم</td></tr>
 <tr><td>رسوم المنصة/الاشتراك</td><td>متضمن</td><td>~150 درهم (Independent، الإمارات)</td><td>~200-400 درهم</td></tr>
 <tr><td>تكاليف الأدوات الإضافية</td><td>0 درهم</td><td>&mdash;</td><td>~100-300 درهم</td></tr>
 <tr><td><strong>الإجمالي الشهري المقدر</strong></td><td><strong>انظر الأسعار page</strong></td><td><strong>~6,370 درهم</strong></td><td><strong>~3,200 درهم</strong></td></tr>
@@ -1645,7 +1645,7 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <ul>
 <li>تريد معالجة الدفع والحجز وإدارة العملاء والتواصل في نظام واحد</li>
 <li>تحتاج إلى دعم متعدد اللغات (العربية والإنجليزية والمزيد) للعملاء والموظفين</li>
-<li>أنت لا تريد عمولة على الحجوزات - يجب ألا يؤدي نموك إلى زيادة تكاليف النظام الأساسي الخاص بك بشكل غير متناسب</li>
+<li>تريد 0% عمولة على حجوزات عملائك الحاليين، مع عمولة فقط على العملاء الجدد الذين يجلبهم سوق اختياري</li>
 <li> أنت تقدر الميزات المدعومة بالذكاء الاصطناعي مثل الحجز الآلي، والجدولة الذكية، والتحليلات التنبؤية إلى جانب معالجة الدفع</li>
 <li>تريد الحصول على دفعات في يوم العمل التالي بدون رسوم إضافية</li>
 </ul>
@@ -1701,7 +1701,7 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
     metaDescription:
       'قارن رسوم معالجة الدفع للصالونات. تعلّم الفرق بين الأسعار الثابتة والمتغيرة واختر الأنسب لعملك.',
     createdAt: '2025-08-14T05:00:00.000Z',
-    updatedAt: '2026-10-09T08:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-08-14T05:00:00.000Z',
     locale: 'ar',
     sortId: 26,
