@@ -39,11 +39,11 @@ const aiReceptionistArticle: LocalBlogPost = {
     title: 'How AI Receptionists Are Transforming Salon Customer Service',
     slug: 'ai-receptionist-salon-customer-service',
     description:
-      'AI receptionists handle salon calls, messages, and bookings around the clock without human intervention. Learn how 24/7 AI customer service is transforming the salon industry, reducing missed calls by over 90%, and creating better experiences for both clients and staff.',
+      'AI receptionists answer salon messages and take bookings around the clock without anyone stepping in. Learn how 24/7 AI customer service on WhatsApp, Instagram and the booking site is changing the salon industry, and what it does for clients and staff.',
     aboutPosts: `
 <h2>What is an AI receptionist for salons?</h2>
-<p>An AI receptionist handles every inbound interaction your salon receives, across phone calls, WhatsApp, Instagram DMs, website chat, and SMS, with nobody stepping in. A basic chatbot follows a script. This understands natural language, remembers who it is talking to, and makes genuine decisions about scheduling, pricing, and what to recommend.</p>
-<p>Missed calls and slow replies cost this industry billions a year. Research consistently shows that salons miss 30&ndash;40% of inbound calls during busy hours, and over 80% of after-hours inquiries go unanswered until the next business day. Each one is a booking that goes to whoever picks up first. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy fix it at the source, answering every interaction immediately, 24 hours a day, 7 days a week, 365 days a year.</p>
+<p>An AI receptionist answers the inbound messages your salon receives, across WhatsApp, Instagram DMs, website chat, and SMS, with nobody stepping in. A basic chatbot follows a script. This understands natural language, remembers who it is talking to, and makes genuine decisions about scheduling, pricing, and what to recommend.</p>
+<p>Slow replies cost salons bookings every day. Messages that sit unanswered during a busy afternoon or after closing often turn into bookings somewhere else, because people book with whoever replies first. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy fix it at the source. The Daisy&rsquo;s AI receptionist answers on WhatsApp, Instagram and your booking site, in Arabic and English, 24 hours a day, 7 days a week. It does not answer phone calls yet.</p>
 
 <h2>Why traditional reception models fail modern salons</h2>
 <p>The traditional reception desk was built for a simpler business. Now it fails in several ways, each of which costs you revenue and loyalty.</p>
@@ -56,7 +56,7 @@ const aiReceptionistArticle: LocalBlogPost = {
 <p>The Daisy runs every interaction through a pipeline combining natural language understanding, your business context, and decisions made in real time.</p>
 <p>When a client makes contact on any channel:</p>
 <ol>
-<li><strong>Channel detection:</strong> The AI identifies whether the inquiry arrives via phone call, WhatsApp, Instagram DM, website chat, SMS, or Facebook Messenger. Each channel receives a response formatted appropriately for that medium.</li>
+<li><strong>Channel detection:</strong> The AI identifies whether the inquiry arrives via WhatsApp, Instagram DM, website chat, SMS, or Facebook Messenger. Each channel receives a response formatted appropriately for that medium.</li>
 <li><strong>Client identification:</strong> the system matches the number or account against your client database. A returning client brings their whole history with them: preferred services, favourite stylist, last visit, outstanding balance, communication preferences. Anyone new gets profiled automatically.</li>
 <li><strong>Intent recognition:</strong> Using natural language processing trained on millions of beauty-industry conversations, the AI understands what the client wants. Whether they say &ldquo;I need a haircut Thursday afternoon,&rdquo; &ldquo;How much is a balayage?&rdquo; or &ldquo;Can I reschedule my appointment?&rdquo; the system correctly interprets the intent without rigid keyword matching.</li>
 <li><strong>Real-time availability check:</strong> For booking requests, the AI checks live calendar availability across all staff members, accounting for service duration, buffer time, staff specialisations, and your business rules. It suggests optimal slots that minimise calendar gaps.</li>
@@ -68,17 +68,17 @@ const aiReceptionistArticle: LocalBlogPost = {
 <h2>The business impact of 24/7 AI customer service</h2>
 <p>Every metric that decides salon profitability moves once this is in place.</p>
 
-<h3>Missed calls drop to near zero</h3>
-<p>This lands first. Every call answered on the first ring, every message inside seconds, every DM instantly. Salons using The Daisy&rsquo;s AI receptionist report a 90&ndash;95% reduction in missed communication, which converts straight into bookings that used to disappear.</p>
+<h3>Unanswered messages stop piling up</h3>
+<p>This lands first. Every WhatsApp message and Instagram DM gets a reply within seconds, and the AI handles booking requests on your booking site straight away. Inquiries that used to wait until someone had a free moment become bookings instead of disappearing.</p>
 
 <h3>After-hours revenue unlocked</h3>
 <p>With 35&ndash;45% of booking requests arriving outside business hours, an AI receptionist reaches revenue a traditional salon cannot touch. Someone scrolling Instagram at midnight, searching over lunch, or messaging on the commute gets an answer and books there and then. Many salons find after-hours bookings make up 20&ndash;30% of all new bookings within the first month.</p>
 
 <h3>Client satisfaction and retention improve</h3>
-<p>An instant answer is simply a better experience. No hold music, no voicemail, no waiting for tomorrow. The AI remembers preferences, greets returning clients by name, and offers their usual service or stylist before they ask. That combination is hard for a competitor to match, particularly one still answering the phone by hand.</p>
+<p>An instant answer is simply a better experience. Nobody waits hours for a reply or until tomorrow. The AI remembers preferences, greets returning clients by name, and offers their usual service or stylist before they ask. That combination is hard for a competitor to match, particularly one still replying to every message by hand.</p>
 
 <h3>Staff productivity increases</h3>
-<p>Take booking calls away and your team stays with the person in the chair. Stylists report fewer interruptions and better work, and owners report better morale, because nobody has ever enjoyed a phone ringing mid-service.</p>
+<p>Take booking messages off your team&rsquo;s plate and they stay with the person in the chair. Stylists report fewer interruptions and better work, and owners report better morale, because nobody enjoys stopping mid-service to answer a WhatsApp.</p>
 
 <h3>Operational costs decrease</h3>
 <p>It costs a fraction of a receptionist&rsquo;s salary, with no benefits, no sick days, no training period, and no turnover. Across multiple locations the saving multiplies, since one AI covers every branch at once. Compare it against what reception costs you now on <a href="/en/pricing/business">The Daisy&rsquo;s pricing plans</a>.</p>
@@ -88,7 +88,7 @@ const aiReceptionistArticle: LocalBlogPost = {
 <ul>
 <li><strong>Beauty industry training:</strong> The AI understands salon-specific terminology, service categories, pricing structures, and client expectations. It knows the difference between a balayage and highlights, understands that a &ldquo;trim&rdquo; means different things to different clients, and can discuss treatment options knowledgeably.</li>
 <li><strong>Multilingual fluency:</strong> full Arabic and English, more languages coming, and natural code-switching for clients who move between them mid-sentence. There is no translation layer in between, because the AI understands the cultural nuance and how people actually communicate in each.</li>
-<li><strong>Multi-channel unified experience:</strong> call, WhatsApp, or Instagram DM, it stays one conversation. Somebody can start booking on WhatsApp and finish on the phone, and the AI carries the whole thread with them.</li>
+<li><strong>Multi-channel unified experience:</strong> WhatsApp, Instagram DM or your booking site, it stays one conversation. Somebody can ask a question on Instagram and finish booking on WhatsApp, and the AI carries the whole thread with them.</li>
 <li><strong>Deep integration:</strong> The AI receptionist is not a bolt-on tool. It is integrated into The Daisy&rsquo;s complete <a href="/en/features/business/ai-salon-management">salon management platform</a>, meaning it has real-time access to your calendar, client database, service menu, pricing, and staff availability.</li>
 <li><strong>Continuous learning:</strong> Every interaction makes the AI smarter. It learns your business patterns, client preferences, common questions, and seasonal trends. After the first month, its accuracy and helpfulness measurably increase.</li>
 </ul>
@@ -96,36 +96,36 @@ const aiReceptionistArticle: LocalBlogPost = {
 <h2>How to deploy an AI receptionist in your salon</h2>
 <p>Setup runs under an hour and needs no technical background.</p>
 <ol>
-<li><strong>Connect your communication channels:</strong> Link your business phone number, WhatsApp Business account, Instagram profile, website, and any other customer-facing channels.</li>
+<li><strong>Connect your communication channels:</strong> Link your WhatsApp Business account, your Instagram profile and your booking site.</li>
 <li><strong>Configure your service menu:</strong> Import or enter your services, durations, pricing, and staff assignments. The AI uses this information to answer pricing questions and make accurate booking decisions.</li>
 <li><strong>Set your brand voice:</strong> Choose the tone, personality, and greeting style that matches your salon&rsquo;s brand. The AI adapts its communication style accordingly.</li>
 <li><strong>Define business rules:</strong> Set operating hours, buffer times, cancellation policies, deposit requirements, and escalation triggers.</li>
-<li><strong>Go live:</strong> The AI begins handling all inbound communication immediately. You can monitor conversations in real time and adjust settings as needed.</li>
+<li><strong>Go live:</strong> The AI starts answering messages on your connected channels straight away. You can monitor conversations in real time and adjust settings as needed.</li>
 </ol>
-<p>Inside a week the missed communications collapse and the bookings climb, mostly from the after-hours inquiries you were never seeing.</p>
+<p>Inside a week the unanswered messages stop piling up and the bookings climb, mostly from the after-hours inquiries you were never seeing.</p>
 
 <h2>Frequently asked questions</h2>
 
 <h3>Will my clients feel uncomfortable talking to an AI?</h3>
-<p>Most never notice. It writes and speaks naturally, in language that fits the industry. Client feedback consistently prefers an instant answer to hold music or voicemail, because what people care about is speed and accuracy rather than who produced the reply.</p>
+<p>Most never notice. It writes naturally, in language that fits the industry. Client feedback consistently prefers an instant answer to waiting hours for a reply, because what people care about is speed and accuracy rather than who produced the reply.</p>
 
 <h3>Can the AI handle complex requests like wedding party bookings?</h3>
 <p>Yes. It handles multi-service bookings, groups, recurring schedules, and event requests. For a wedding party it coordinates several staff members&rsquo; availability, works out group pricing, and staggers the appointment times. Anything past its confidence threshold goes to your team with the full conversation attached.</p>
 
 <h3>What happens during a service outage or technical issue?</h3>
-<p>The infrastructure is built for 99.9% uptime. If something does break, calls forward to your backup number and messages queue for processing the moment the system returns. You hear about any interruption immediately, so you can fall back to your own plan if you need to.</p>
+<p>The infrastructure is built for 99.9% uptime. If something does break, messages queue for processing the moment the system returns. You hear about any interruption immediately, so you can fall back to your own plan if you need to.</p>
 
 <h3>Does the AI receptionist replace my entire front desk staff?</h3>
-<p>It takes all inbound communication: calls, messages, bookings. Plenty of salons then move their receptionist onto work worth more, whether client experience, retail, or upselling. Others cut the reception cost outright. Which suits you depends on your size and how you run, and either way the communication itself is covered.</p>
+<p>It takes the messages and bookings that come in on WhatsApp, Instagram and your booking site. It does not answer phone calls yet, so someone still needs to pick up the salon phone. Plenty of salons move their receptionist onto work worth more, such as client experience, retail, or upselling, with the phone as one part of the job. Which suits you depends on your size and how you run.</p>
 
 <h3>How does the AI handle angry or upset clients?</h3>
 <p>It recognises negative sentiment and answers with patience and something practical. It can reschedule, apply credits or discounts inside the rules you set, and hand over anything needing human judgement. It also never gets defensive or takes it personally, which defuses a situation faster than a stressed receptionist on a bad day usually can.</p>
 `,
     metaTitle: 'AI Receptionists Transform Salon Service | The Daisy',
     metaDescription:
-      'Learn how AI receptionists handle all salon calls, bookings, and messages 24/7. Reduce missed calls by 90% and unlock after-hours revenue automatically.',
+      'Learn how AI receptionists answer salon messages and take bookings 24/7 on WhatsApp, Instagram and the booking site, and unlock after-hours revenue.',
     createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'en',
     sortId: 41,
@@ -352,7 +352,7 @@ const customerAcquisitionArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>What is 360-degree customer acquisition?</h2>
 <p>It means being visible, convincing, and bookable everywhere people look for beauty services. Rather than leaning on one or two channels such as Instagram posts and passing trade, you build something that catches demand from marketplace search, social, referrals, cashback, email, SMS, Google, and direct bookings at the same time.</p>
-<p>Most salons work from a painfully narrow set: an Instagram account, some word of mouth, whoever walks past. That leaves an enormous amount on the table, because people find services down dozens of different routes. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy are built on the idea that acquisition should cover every touchpoint bar the phone, which the AI receptionist has already taken care of.</p>
+<p>Most salons work from a painfully narrow set: an Instagram account, some word of mouth, whoever walks past. That leaves an enormous amount on the table, because people find services down dozens of different routes. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy are built on the idea that acquisition should cover every touchpoint where people look for beauty services. The phone is the one channel The Daisy&rsquo;s AI receptionist does not answer yet, so calls still go to your team.</p>
 
 <h2>Why single-channel acquisition is a losing strategy</h2>
 <p>Depending on one or two channels leaves you exposed in three ways, each of which caps how far you can grow.</p>
@@ -371,7 +371,7 @@ const customerAcquisitionArticle: LocalBlogPost = {
 
 <h3>Pillar 1: marketplace presence</h3>
 <p>A beauty marketplace lets clients browse, compare, and book, much as Uber Eats works for restaurants. Being listed puts you in front of people already searching in your area and ready to book. They are strong leads precisely because the decision to have the service is made, and all that remains is choosing who does it.</p>
-<p>The Daisy&rsquo;s marketplace puts your salon in front of exactly those people. Your profile carries your services, pricing, portfolio, reviews, and availability, and they book without leaving it. Paid advertising charges you for impressions whether anything comes of them. This reaches people at the moment they intend to buy.</p>
+<p>The Daisy&rsquo;s marketplace is optional and available in selected countries. If you choose to join and your salon passes the service-quality review, your profile carries your services, pricing, portfolio, reviews, and availability, and people book without leaving it. Paid advertising charges you for impressions whether anything comes of them. This reaches people at the moment they intend to buy, and commission applies only to the new customers it brings you.</p>
 
 <h3>Pillar 2: cashback and loyalty incentives</h3>
 <p>Cashback turns a one-off into a regular and gives people a financial reason to pick you. Earning on every booking raises the cost of leaving, since going elsewhere means walking away from what they have built up. The most successful platforms in other industries have been proving this for years.</p>
@@ -411,15 +411,15 @@ const customerAcquisitionArticle: LocalBlogPost = {
 
 <h2>The cost of single-channel acquisition vs. 360-degree strategy</h2>
 <p>Look at the economics. A salon running acquisition entirely through Instagram typically pays $15&ndash;$40 per new client on boosted posts and ads, with conversion that swings whenever the algorithm does. When reach drops, and it does regularly, your cost per acquisition spikes at the same moment your pipeline empties.</p>
-<p>Spread across five channels, the cost structures differ. Marketplace clients arrive through platform-funded discovery. Cashback bookings are subsidised by the platform. A referral costs you the reward and nothing else. Organic SEO and digital discovery cost almost nothing at the margin. When one channel has a bad month the rest hold your growth up. That is better strategy and cheaper economics at the same time.</p>
+<p>Spread across five channels, the cost structures differ. Marketplace clients arrive through platform-funded discovery, with commission due only on the new customers the marketplace brings. Cashback bookings are subsidised by the platform. A referral costs you the reward and nothing else. Organic SEO and digital discovery cost almost nothing at the margin. When one channel has a bad month the rest hold your growth up. That is better strategy and cheaper economics at the same time.</p>
 
 <h2>Getting started with 360-degree acquisition</h2>
-<p>All five on day one is not the plan. Begin with marketplace presence and automated marketing, then add cashback, referrals, and SEO as you build. The Daisy&rsquo;s onboarding team will help you order it around your client base and what you are aiming at.</p>
+<p>All five on day one is not the plan. Begin with automated marketing, plus marketplace presence if the marketplace is available in your country and you want to join, then add cashback, referrals, and SEO as you build. The Daisy&rsquo;s onboarding team will help you order it around your client base and what you are aiming at.</p>
 
 <h2>Frequently asked questions</h2>
 
 <h3>Does the marketplace compete with my direct bookings?</h3>
-<p>No. It brings you people who would never have found you. Your existing clients carry on booking through your own branded page or by contacting you however they always have. It widens the reach without touching what you already have.</p>
+<p>No. It brings you people who would never have found you. Joining is optional, and commission applies only to the new customers the marketplace brings, never to your existing clients. Your existing clients carry on booking through your own branded page or by contacting you however they always have. It widens the reach without touching what you already have.</p>
 
 <h3>Who funds the cashback, the salon or the platform?</h3>
 <p>The Daisy funds it. Nothing comes off your service revenue and you receive the full price. It is the platform investing in retention and loyalty, which pays off for you and for your clients.</p>
@@ -434,7 +434,7 @@ const customerAcquisitionArticle: LocalBlogPost = {
     metaDescription:
       'Build a 360-degree salon customer acquisition strategy with marketplace presence, cashback incentives, automated marketing, referrals, and digital discovery.',
     createdAt: '2026-04-09T05:00:00.000Z',
-    updatedAt: '2026-04-09T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-04-09T05:00:00.000Z',
     locale: 'en',
     sortId: 43,
@@ -512,7 +512,7 @@ const whiteLabelBookingArticle: LocalBlogPost = {
 <p>White-label carries the salon into the digital space instead. Your palette, your imagery, your tone of voice, all holding together. The first digital moment feels like walking through your door: deliberate, professional, unmistakably yours.</p>
 
 <h3>Trust increases when the brand is consistent</h3>
-<p>People finish a booking more often when it feels familiar. A redirect to a third-party domain or branding they do not recognise adds hesitation. Studies in e-commerce consistently show that brand consistency across touchpoints increases conversion rates by 10&ndash;20%, and salon booking behaves no differently.</p>
+<p>People finish a booking more often when it feels familiar. Branding they do not recognise adds hesitation. Studies in e-commerce consistently show that brand consistency across touchpoints increases conversion rates by 10&ndash;20%, and salon booking behaves no differently.</p>
 
 <h3>Client relationships belong to you</h3>
 <p>A booking page carrying another company&rsquo;s brand is building their awareness using your clients. Every confirmation reading &ldquo;Powered by [Software Name]&rdquo; teaches people to connect booking with that software rather than with you. Switch platforms later and the recognition leaves with the old vendor.</p>
@@ -522,13 +522,13 @@ const whiteLabelBookingArticle: LocalBlogPost = {
 <p>Real white-label goes well past taking a logo off a page. The Daisy covers every client-facing part of your digital presence:</p>
 
 <h3>Branded booking page</h3>
-<p>Your colours, logo, fonts, and imagery, hosted on your own domain (yourSalon.com/book) or embedded straight into your existing site. No third-party branding appears anywhere on it.</p>
+<p>Your colours, logo, fonts, and imagery, on a booking site Daisy hosts for you. You can redirect your own domain to it. No third-party branding appears anywhere on it.</p>
 
 <h3>Branded communications</h3>
 <p>Confirmations, reminders, follow-ups, marketing emails, SMS: every one arrives under your salon&rsquo;s name. Sender name, email address, and the design of the message all belong to you.</p>
 
 <h3>Branded AI interactions</h3>
-<p>The Daisy&rsquo;s <a href="/en/features/business/ai-salon-management">AI receptionist</a> speaks in your salon&rsquo;s voice. On WhatsApp, on the phone, or in Instagram DMs, clients meet your brand rather than a generic assistant. You set the greeting style, the languages, and the personality to match how your salon actually sounds.</p>
+<p>The Daisy&rsquo;s <a href="/en/features/business/ai-salon-management">AI receptionist</a> writes in your salon&rsquo;s voice. On WhatsApp, in Instagram DMs or on your booking site, clients meet your brand rather than a generic assistant. You set the greeting style, the languages, and the personality to match how your salon talks to clients.</p>
 
 <h3>Branded client portal</h3>
 <p>Returning clients find their booking history, loyalty points, and upcoming appointments in a portal branded entirely to you. It reads as a &ldquo;VIP membership&rdquo;, which is exactly the feeling that brings people back.</p>
@@ -561,7 +561,7 @@ const whiteLabelBookingArticle: LocalBlogPost = {
 <p>This is a revenue question rather than a taste one, and it shows up in both takings and retention.</p>
 
 <h3>Higher booking completion rates</h3>
-<p>Studies in e-commerce show that branded checkout experiences convert 10&ndash;20% higher than generic ones, and salon booking follows the same pattern. Tapping &ldquo;Book Now&rdquo; and landing somewhere that matches the brand they already trust gets more people through. A redirect to an unfamiliar page makes them pause, and a new client still deciding whether to try you is exactly who you lose there.</p>
+<p>Studies in e-commerce show that branded checkout experiences convert 10&ndash;20% higher than generic ones, and salon booking follows the same pattern. Tapping &ldquo;Book Now&rdquo; and landing somewhere that matches the brand they already trust gets more people through. A page wearing someone else&rsquo;s branding makes them pause, and a new client still deciding whether to try you is exactly who you lose there.</p>
 
 <h3>Stronger client lifetime value</h3>
 <p>When the whole experience, from booking through the service to the follow-up, belongs to your brand, loyalty runs deeper. People shop around less because the relationship is with your salon rather than with a piece of software. That shows up as more rebooking, more referrals, and more willingness to try something new on the menu.</p>
@@ -590,7 +590,7 @@ const whiteLabelBookingArticle: LocalBlogPost = {
 <h2>Frequently Asked Questions</h2>
 
 <h3>Can I use my own domain for the booking page?</h3>
-<p>You share a short booking link such as thedaisy.link/your-salon. Custom domains are not supported yet. The page it opens carries your logo, your business name and your brand colours, with no Daisy branding on it. The onboarding team walks you through.</p>
+<p>Not yet. Daisy hosts your branded booking site at a short link such as thedaisy.link/your-salon, and you can redirect your own domain to it. The page carries your logo, your business name and your brand colours, with no Daisy branding on it. The onboarding team walks you through.</p>
 
 <h3>Does white-label apply to the mobile app experience too?</h3>
 <p>Yes. Booking through The Daisy app, your branding runs through the whole thing, with your logo, colours, and service imagery forming a storefront of your own inside the app.</p>
@@ -605,7 +605,7 @@ const whiteLabelBookingArticle: LocalBlogPost = {
     metaDescription:
       'White-label booking puts your brand first in every client interaction. Build trust, increase conversions, and own your client relationships completely.',
     createdAt: '2025-08-27T05:00:00.000Z',
-    updatedAt: '2025-08-27T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-08-27T05:00:00.000Z',
     locale: 'en',
     sortId: 44,
@@ -833,7 +833,7 @@ const dataDrivenPlatformArticle: LocalBlogPost = {
 <p>A network effect is when something becomes more valuable the more people use it. On a beauty platform that shows up in several ways, all of which reach your salon directly.</p>
 
 <h3>AI gets smarter with more data</h3>
-<p>The Daisy&rsquo;s AI is trained on millions of beauty industry interactions. Every booking, conversation, scheduling pattern, and campaign result across the network feeds it. The AI receptionist taking your calls is drawing on the collective experience of thousands of beauty businesses rather than only on yours.</p>
+<p>The Daisy&rsquo;s AI is trained on millions of beauty industry interactions. Every booking, conversation, scheduling pattern, and campaign result across the network feeds it. The AI receptionist answering your WhatsApp and Instagram messages is drawing on the collective experience of thousands of beauty businesses rather than only on yours.</p>
 <p>A standalone tool installed in one salon learns from one salon. An AI learning from a whole network schedules better, communicates better, predicts demand better, and personalises marketing better. The gap is measurable and it widens.</p>
 
 <h3>Demand signals become predictive</h3>
@@ -915,7 +915,7 @@ const dataDrivenPlatformArticle: LocalBlogPost = {
     metaDescription:
       'Discover how data-driven beauty platforms create competitive moats through network effects, AI intelligence, and market insights that grow stronger over time.',
     createdAt: '2025-12-12T05:00:00.000Z',
-    updatedAt: '2025-12-12T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-12-12T05:00:00.000Z',
     locale: 'en',
     sortId: 46,
@@ -1028,7 +1028,7 @@ const modernSalonsAiArticle: LocalBlogPost = {
 <p>A yes to any of these means you would gain from moving:</p>
 <ul>
 <li>Do you spend more than 5 hours per week on administrative tasks that could be automated?</li>
-<li>Are you missing calls or messages from potential clients?</li>
+<li>Are messages from potential clients waiting hours for a reply?</li>
 <li>Is your marketing inconsistent or manually managed?</li>
 <li>Do you struggle to predict busy and slow periods?</li>
 <li>Are you losing clients to competitors who respond faster?</li>
@@ -1038,7 +1038,7 @@ const modernSalonsAiArticle: LocalBlogPost = {
 
 <h2>Making the transition from software to AI platform</h2>
 <p>The switch is easier than most owners expect. Onboarding moves your client data, booking history, and business configuration across in hours rather than weeks. The AI starts learning immediately, delivers from day one, and improves every day after that.</p>
-<p>Owners tend to report three surprises. The migration was quicker and less disruptive than they had braced for. The AI produced visible improvements inside the first week, particularly on recovered calls and automated communication. And the time it gave back went straight to the parts of the business they actually enjoy: their clients, the creative work, and deciding where to go next.</p>
+<p>Owners tend to report three surprises. The migration was quicker and less disruptive than they had braced for. The AI produced visible improvements inside the first week, particularly on faster replies to client messages and automated communication. And the time it gave back went straight to the parts of the business they actually enjoy: their clients, the creative work, and deciding where to go next.</p>
 <p>Adopting one is largely settled. What is still open is how much ground you are prepared to lose while deciding.</p>
 
 <h2>Frequently Asked Questions</h2>
@@ -1062,7 +1062,7 @@ const modernSalonsAiArticle: LocalBlogPost = {
     metaDescription:
       'Learn why modern salons need an AI platform, not just software. Discover how AI-powered systems learn, adapt, and grow your business autonomously over time.',
     createdAt: '2025-04-25T05:00:00.000Z',
-    updatedAt: '2025-04-25T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-04-25T05:00:00.000Z',
     locale: 'en',
     sortId: 47,
@@ -1132,13 +1132,13 @@ const softwareWarningSignsArticle: LocalBlogPost = {
 <p>Whatever you chose when you opened may well have been right then. Businesses change though, clients expect more, and the technology moves. What worked three years ago can be the thing holding you back now, quietly, while you look for the problem somewhere else.</p>
 <p>These 10 signs say your software is costing you. Recognise three or more in how you work and it is worth looking at what else exists. <a href="/en/ai-salon-software">AI-powered salon platforms</a> like The Daisy were built to remove every one of them.</p>
 
-<h2>Warning sign 1: you are still answering booking calls manually</h2>
-<p>Any time your team spends answering the phone to book someone in says the software is behind. People expect to book instantly on whichever channel they already use, whether WhatsApp, Instagram, your website, or an app, without waiting for a person to get back to them.</p>
-<p>Every call answered is attention taken from whoever is in the chair. Every call missed is a booking somebody else takes. An AI receptionist covers every inquiry on every channel instantly, around the clock, with nobody involved. Without that, you lose clients on the days you do nothing about it.</p>
+<h2>Warning sign 1: you are still answering booking messages by hand</h2>
+<p>Any time your team spends typing out replies to book someone in says the software is behind. People expect to book instantly on whichever channel they already use, whether WhatsApp, Instagram, your website, or an app, without waiting for a person to get back to them.</p>
+<p>Every message answered by hand is attention taken from whoever is in the chair. Every message left waiting is a booking somebody else takes. The Daisy&rsquo;s AI receptionist answers on WhatsApp, Instagram and your booking site instantly, around the clock. It does not answer phone calls yet, so calls still go to your team. Without that, you lose clients on the days you do nothing about it.</p>
 
 <h2>Warning sign 2: your online booking page looks generic</h2>
 <p>A booking page carrying another company&rsquo;s branding gives away a little of your own with every booking. Clients should meet your brand and nobody else&rsquo;s through the whole process. A generic page tells them your salon runs on somebody else&rsquo;s tools rather than presenting something finished.</p>
-<p>White-label booking, where your brand, colours, logo, and domain are all anyone sees, is standard on modern platforms. Software that cannot do it leaves your digital presence working against you.</p>
+<p>White-label booking, where your brand, colours, and logo are all anyone sees, is standard on modern platforms. Software that cannot do it leaves your digital presence working against you.</p>
 
 <h2>Warning sign 3: you cannot serve Arabic and English clients equally</h2>
 <p>English-only software, or software treating Arabic as an afterthought with broken RTL formatting, underserves a large part of your potential client base. Across the GCC and the Middle East, multilingual support is the baseline rather than a feature.</p>
@@ -1162,7 +1162,7 @@ const softwareWarningSignsArticle: LocalBlogPost = {
 
 <h2>Warning sign 8: new clients cannot find you online</h2>
 <p>Not appearing in marketplace searches, Google discovery, or AI recommendation engines means your software is contributing nothing to your visibility. Modern platforms produce structured data, aggregate your reviews, and generate the SEO signals that get you found.</p>
-<p>A Daisy marketplace listing puts you in front of people already searching your area and ready to book. Without marketplace presence you are invisible to a growing group who look for services through platform search rather than Google or Instagram.</p>
+<p>In the countries where it is available, the optional Daisy marketplace puts you in front of people already searching your area and ready to book, once your salon passes its service-quality review. Without marketplace presence you are invisible to a growing group who look for services through platform search rather than Google or Instagram.</p>
 
 <h2>Warning sign 9: you cannot scale to multiple locations easily</h2>
 <p>If a second location means standing up a whole separate instance, duplicating every configuration, and running two systems that ignore each other, your tool was not built for growth. Multi-location management belongs in the core rather than bolted on later.</p>
@@ -1176,7 +1176,7 @@ const softwareWarningSignsArticle: LocalBlogPost = {
 <p>Noticing them is the easy part. Acting is what separates the salons that grow from the ones that stall:</p>
 <ol>
 <li><strong>Count your warning signs:</strong> three or more and the software is actively capping your growth.</li>
-<li><strong>Calculate the hidden costs:</strong> every subscription across your separate tools, the hours going into manual work, and what you estimate you lose to missed calls, no-shows, and the marketing you never send.</li>
+<li><strong>Calculate the hidden costs:</strong> every subscription across your separate tools, the hours going into manual work, and what you estimate you lose to slow replies, no-shows, and the marketing you never send.</li>
 <li><strong>Evaluate modern alternatives:</strong> look for one system that answers all 10. The Daisy was built to remove every limitation in this article.</li>
 <li><strong>Test before you commit:</strong> most platforms offer a trial or a demonstration, so see the difference yourself first.</li>
 <li><strong>Plan your migration:</strong> data migration comes with onboarding, and the switch is easier than most owners expect.</li>
@@ -1204,7 +1204,7 @@ const softwareWarningSignsArticle: LocalBlogPost = {
     metaDescription:
       'Spot the 10 warning signs that your current salon software is limiting your growth. Learn what modern AI-powered platforms offer that outdated tools cannot.',
     createdAt: '2025-02-20T05:00:00.000Z',
-    updatedAt: '2025-02-20T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-02-20T05:00:00.000Z',
     locale: 'en',
     sortId: 48,
@@ -1272,10 +1272,10 @@ const aiReceptionistArticleAr: LocalBlogPost = {
     title: 'كيف يحوّل موظف الاستقبال الذكي خدمة عملاء الصالون',
     slug: 'ai-receptionist-salon-customer-service',
     description:
-      'يتعامل موظفو الاستقبال الذين يعملون بتقنية الذكاء الاصطناعي مع مكالمات الصالون والرسائل والحجوزات على مدار الساعة دون تدخل بشري. تعرف على كيفية قيام خدمة العملاء المدعومة بالذكاء الاصطناعي على مدار الساعة طوال أيام الأسبوع بتغيير صناعة الصالونات، وتقليل المكالمات الفائتة بنسبة تزيد عن 90%، وإنشاء تجارب أفضل لكل من العملاء والموظفين.',
+      'يرد موظفو الاستقبال الذين يعملون بتقنية الذكاء الاصطناعي على رسائل الصالون ويتولون الحجوزات على مدار الساعة دون تدخل بشري. تعرّف على كيف تغيّر خدمة العملاء المدعومة بالذكاء الاصطناعي عبر واتساب وإنستغرام وموقع الحجز صناعة الصالونات، وما تقدمه للعملاء والموظفين.',
     aboutPosts: `<h2>ما هو موظف الاستقبال بالذكاء الاصطناعي للصالونات؟</h2>
-<p> موظف استقبال يعمل بالذكاء الاصطناعي هو مساعد افتراضي ذكي يتعامل مع كل تفاعل وارد للعملاء في صالونك - المكالمات الهاتفية، ورسائل واتساب، ورسائل إنستغرام المباشرة، والدردشة على موقع الويب، والرسائل النصية القصيرة - دون أي تدخل بشري. على عكس روبوتات الدردشة الأساسية التي تتبع نصوصًا صارمة، يفهم موظف الاستقبال ذو الذكاء الاصطناعي اللغة الطبيعية، ويتذكر تاريخ العميل، ويتخذ قرارات حقيقية بشأن الجدولة، وأسئلة التسعير، وتوصيات الخدمة.</p>
-<p> تخسر صناعة التجميل المليارات كل عام بسبب المكالمات الفائتة وأوقات الاستجابة البطيئة. تظهر الأبحاث باستمرار أن الصالونات تفوت ما بين 30 إلى 40% من المكالمات الواردة خلال ساعات الذروة، وأكثر من 80% من الاستفسارات بعد ساعات العمل لا يتم الرد عليها حتى يوم العمل التالي. كل مكالمة فائتة هي حجز محتمل مفقود لمنافس يستجيب بشكل أسرع. <a href="/ar/ai-salon-software">منصات الصالونات المدعومة بالذكاء الاصطناعي</a> مثل ديزي تحل هذه المشكلة من جذورها من خلال ضمان حصول كل تفاعل مع العميل على استجابة فورية وذكية - 24 ساعة في اليوم، 7 أيام في الأسبوع، 365 يومًا في السنة.</p>
+<p> موظف استقبال يعمل بالذكاء الاصطناعي هو مساعد افتراضي ذكي يرد على الرسائل الواردة من العملاء إلى صالونك عبر واتساب، ورسائل إنستغرام المباشرة، والدردشة على موقع الويب، والرسائل النصية القصيرة، دون أي تدخل بشري. على عكس روبوتات الدردشة الأساسية التي تتبع نصوصًا صارمة، يفهم موظف الاستقبال ذو الذكاء الاصطناعي اللغة الطبيعية، ويتذكر تاريخ العميل، ويتخذ قرارات حقيقية بشأن الجدولة، وأسئلة التسعير، وتوصيات الخدمة.</p>
+<p> تخسر الصالونات حجوزات كل يوم بسبب بطء الردود. فالرسائل التي تبقى دون رد في فترة ما بعد الظهر المزدحمة أو بعد الإغلاق تتحول غالبًا إلى حجوزات لدى منافس آخر، لأن العملاء يحجزون لدى من يرد أولًا. <a href="/ar/ai-salon-software">منصات الصالونات المدعومة بالذكاء الاصطناعي</a> مثل ديزي تحل هذه المشكلة من جذورها. يرد موظف الاستقبال الذكي من ديزي عبر واتساب وإنستغرام وموقع الحجز، بالعربية والإنجليزية، 24 ساعة في اليوم، 7 أيام في الأسبوع. ولا يرد على المكالمات الهاتفية حتى الآن.</p>
 
 <h2>لماذا تفشل عارضات الاستقبال التقليدية الصالونات الحديثة</h2>
 <p> تم تصميم نموذج استقبال الصالون التقليدي لوقت أبسط. واليوم ينهار هذا الأمر بعدة طرق تكلفك بشكل مباشر الإيرادات وولاء العملاء.</p>
@@ -1288,7 +1288,7 @@ const aiReceptionistArticleAr: LocalBlogPost = {
 <p> يقوم موظف استقبال الذكاء الاصطناعي في ديزي بمعالجة كل تفاعل مع العميل من خلال مسار متطور يجمع بين فهم اللغة الطبيعية وسياق العمل واتخاذ القرار في الوقت الفعلي.</p>
 <p>هذا ما يحدث عندما يتصل العميل بصالونك عبر أي قناة:</p>
 <ol>
-<li><strong>اكتشاف القناة:</strong> يحدد الذكاء الاصطناعي ما إذا كان الاستفسار يصل عبر مكالمة هاتفية أو واتساب أو إنستغرام DM أو دردشة موقع الويب أو الرسائل القصيرة أو Facebook Messenger. تتلقى كل قناة استجابة منسقة بشكل مناسب لتلك الوسيطة.</li>
+<li><strong>اكتشاف القناة:</strong> يحدد الذكاء الاصطناعي ما إذا كان الاستفسار يصل عبر واتساب أو إنستغرام DM أو دردشة موقع الويب أو الرسائل القصيرة أو Facebook Messenger. تتلقى كل قناة استجابة منسقة بشكل مناسب لتلك الوسيطة.</li>
 <li><strong>تعريف العميل:</strong> يقوم النظام بالتحقق من رقم جهة الاتصال أو الحساب مقابل قاعدة بيانات العميل الخاصة بك. بالنسبة للعملاء العائدين، فإنه يسترد على الفور سجلهم الكامل - الخدمات المفضلة، والمصمم المفضل، وتاريخ الزيارة الأخيرة، والرصيد المتميز، وتفضيلات الاتصال. يتم إنشاء ملف تعريف لجهات الاتصال الجديدة تلقائيًا.</li>
 <li><strong>التعرف على النوايا:</strong> باستخدام معالجة اللغة الطبيعية المدربة على ملايين المحادثات المتعلقة بصناعة التجميل، يفهم الذكاء الاصطناعي ما يريده العميل. سواء قالوا "أحتاج إلى قصة شعر بعد ظهر يوم الخميس"، أو "كم سعر البالياج؟" أو "هل يمكنني إعادة جدولة موعدي؟" يفسر النظام النية بشكل صحيح دون المطابقة الصارمة للكلمات الرئيسية.</li>
 <li><strong>التحقق من التوفر في الوقت الفعلي:</strong> بالنسبة لطلبات الحجز، يتحقق الذكاء الاصطناعي من توفر التقويم المباشر لجميع الموظفين، مع مراعاة مدة الخدمة، والوقت الاحتياطي، وتخصصات الموظفين، وقواعد عملك. فهو يقترح فتحات مثالية تقلل من فجوات التقويم.</li>
@@ -1300,17 +1300,17 @@ const aiReceptionistArticleAr: LocalBlogPost = {
 <h2>التأثير التجاري لخدمة عملاء الذكاء الاصطناعي على مدار الساعة طوال أيام الأسبوع</h2>
 <p>يؤدي نشر موظف استقبال يعمل بالذكاء الاصطناعي إلى إنشاء تحسينات قابلة للقياس عبر كل مقياس يهم ربحية الصالون.</p>
 
-<h3> انخفاض المكالمات الفائتة إلى ما يقرب من الصفر</h3>
-<p> التأثير الأكثر إلحاحًا هو إزالة المكالمات الفائتة. يقوم موظف استقبال يعمل بالذكاء الاصطناعي بالرد على كل مكالمة في الحلقة الأولى، وكل رسالة في غضون ثوانٍ، وكل رسالة مباشرة على الفور. تشير الصالونات التي تستخدم موظف استقبال الذكاء الاصطناعي في ديزي إلى انخفاض بنسبة 90-95% في الاتصالات المفقودة. وهذا يُترجم مباشرةً إلى حجوزات مستردة والتي كان من الممكن أن تُفقد.</p>
+<h3>لا تتراكم الرسائل دون رد</h3>
+<p>هذا أول ما تلاحظه. تحصل كل رسالة واتساب وكل رسالة مباشرة على إنستغرام على رد خلال ثوانٍ، ويتولى الذكاء الاصطناعي طلبات الحجز على موقع الحجز فورًا. أما الاستفسارات التي كانت تنتظر حتى يجد أحد الموظفين لحظة فراغ، فتتحول إلى حجوزات بدلًا من أن تضيع.</p>
 
 <h3>تم تحرير الإيرادات بعد ساعات العمل</h3>
 <p> مع وصول 35 إلى 45% من طلبات الحجز خارج ساعات العمل، يحصل موظف استقبال يعمل بالذكاء الاصطناعي على مدار الساعة طوال أيام الأسبوع على إيرادات لا يستطيع الصالون التقليدي الوصول إليها. العملاء الذين يتصفحون إنستغرام في منتصف الليل، أو يبحثون عن الخدمات أثناء استراحة الغداء، أو يرسلون الرسائل أثناء التنقل، جميعهم يتلقون ردودًا فورية ويمكنهم الحجز على الفور. تفيد العديد من الصالونات أن الحجوزات بعد ساعات العمل تمثل 20-30% من إجمالي الحجوزات الجديدة خلال الشهر الأول من نشر استقبال الذكاء الاصطناعي.</p>
 
 <h3>تحسين رضا العملاء والاحتفاظ بهم</h3>
-<p> الردود الفورية تخلق تجربة أفضل للعميل. لا يوجد موسيقى، لا بريد صوتي، لا انتظار حتى الغد. يتذكر الذكاء الاصطناعي تفضيلات العميل، ويحيي العملاء العائدين بالاسم، ويقترح بشكل استباقي خدماتهم المعتادة أو المصمم. تعمل هذه الخدمة الشخصية الفورية على بناء الولاء الذي يصعب على المنافسين مضاهاته - وخاصة المنافسين الذين ما زالوا يعتمدون على الاستقبال البشري فقط.</p>
+<p> الردود الفورية تخلق تجربة أفضل للعميل. لا ينتظر أحد ساعات للحصول على رد أو حتى الغد. يتذكر الذكاء الاصطناعي تفضيلات العميل، ويحيي العملاء العائدين بالاسم، ويقترح بشكل استباقي خدماتهم المعتادة أو المصمم. تعمل هذه الخدمة الشخصية الفورية على بناء الولاء الذي يصعب على المنافسين مضاهاته - وخاصة المنافسين الذين ما زالوا يردون على كل رسالة يدويًا.</p>
 
 <h3>زيادة إنتاجية الموظفين</h3>
-<p> عندما يتوقف فريقك عن التعامل مع مكالمات الحجز، يظل تركيزهم على العملاء الجالسين في كراسيهم. يُبلغ المصممون عن انقطاعات أقل وجودة خدمة أفضل ودرجات أعلى لرضا العملاء. أفاد أصحاب الصالونات أن إلغاء واجبات الرد على الهاتف يؤدي إلى تحسين معنويات الفريق بشكل عام لأنه لا أحد يستمتع بالمقاطعة المستمرة لرنين الهواتف أثناء جلسات العميل.</p>
+<p> عندما يتوقف فريقك عن التعامل مع رسائل الحجز، يظل تركيزهم على العملاء الجالسين في كراسيهم. يُبلغ المصممون عن انقطاعات أقل وجودة خدمة أفضل ودرجات أعلى لرضا العملاء. أفاد أصحاب الصالونات أن تخفيف عبء الرد على الرسائل يحسّن معنويات الفريق بشكل عام، لأنه لا أحد يستمتع بالتوقف أثناء جلسة العميل للرد على رسالة واتساب.</p>
 
 <h3>انخفاض التكاليف التشغيلية</h3>
 <p> يتكلف موظف الاستقبال الذي يعمل بالذكاء الاصطناعي في ديزي جزءًا صغيرًا من راتب موظف الاستقبال البشري. لا توجد فوائد، ولا أيام مرضية، ولا فترات تدريب، ولا تكاليف دوران. بالنسبة للصالونات متعددة المواقع، تتضاعف التوفيرات لأن الذكاء الاصطناعي الواحد يتعامل مع جميع الفروع في وقت واحد. استكشف <a href="/ar/pricing/business">خطط تسعير ديزي</a> لمقارنة التكلفة بنفقات الاستقبال الحالية.</p>
@@ -1320,7 +1320,7 @@ const aiReceptionistArticleAr: LocalBlogPost = {
 <ul>
 <li><strong>التدريب على صناعة التجميل:</strong> يفهم الذكاء الاصطناعي المصطلحات الخاصة بالصالون وفئات الخدمة وهياكل التسعير وتوقعات العملاء. إنه يعرف الفرق بين البلياج والهايلايت، ويدرك أن "التقليم" يعني أشياء مختلفة للعملاء المختلفين، ويمكنه مناقشة خيارات العلاج عن علم.</li>
 <li><strong>الطلاقة في تعدد اللغات:</strong> دعم كامل باللغتين العربية والإنجليزية، مع المزيد من اللغات القادمة، والتبديل الطبيعي للرموز للعملاء الذين يخلطون اللغات. هذه ليست ترجمة أساسية - فالذكاء الاصطناعي يفهم الفروق الثقافية الدقيقة وأساليب الاتصال عبر اللغات.</li>
-<li><strong>تجربة موحدة متعددة القنوات:</strong> سواء اتصل العميل أو أرسل رسائل على واتساب أو رسائل مباشرة على إنستغرام، يحتفظ الذكاء الاصطناعي بسلسلة محادثة واحدة. يمكن للعميل بدء الحجز على واتساب والمتابعة عبر الهاتف - يتمتع الذكاء الاصطناعي بسياق كامل للتفاعل بأكمله.</li>
+<li><strong>تجربة موحدة متعددة القنوات:</strong> سواء راسل العميل عبر واتساب أو أرسل رسالة مباشرة على إنستغرام أو استخدم موقع الحجز، يحتفظ الذكاء الاصطناعي بسلسلة محادثة واحدة. يمكن للعميل أن يطرح سؤالًا على إنستغرام ثم يكمل الحجز على واتساب، ويبقى لدى الذكاء الاصطناعي سياق التفاعل بأكمله.</li>
 <li><strong>التكامل العميق:</strong> موظف استقبال الذكاء الاصطناعي ليس أداة مثبتة. لقد تم دمجه في <a href="/ar/features/business/ai-salon-management">منصة إدارة الصالون الكاملة</a> من ديزي، مما يعني أنه يتمتع بإمكانية الوصول في الوقت الفعلي إلى التقويم الخاص بك، وقاعدة بيانات العملاء، وقائمة الخدمات، والأسعار، وتوافر الموظفين.</li>
 <li><strong>التعلم المستمر:</strong> كل تفاعل يجعل الذكاء الاصطناعي أكثر ذكاءً. فهو يتعلم أنماط عملك وتفضيلات العميل والأسئلة الشائعة والاتجاهات الموسمية. بعد الشهر الأول، تزداد دقتها وفائدتها بشكل ملحوظ.</li>
 </ul>
@@ -1328,35 +1328,35 @@ const aiReceptionistArticleAr: LocalBlogPost = {
 <h2>كيفية تعيين موظف استقبال يعمل بالذكاء الاصطناعي في صالونك</h2>
 <p> يستغرق البدء مع موظف الاستقبال الذي يعمل بالذكاء الاصطناعي في ديزي أقل من ساعة ولا يتطلب أي خبرة فنية.</p>
 <ol>
-<li><strong> قم بتوصيل قنوات الاتصال الخاصة بك:</strong> اربط رقم هاتف عملك وحساب واتساب للأعمال وملفك الشخصي على إنستغرام والموقع الإلكتروني وأي قنوات أخرى تواجه العملاء.</li>
+<li><strong> قم بتوصيل قنوات الاتصال الخاصة بك:</strong> اربط حساب واتساب للأعمال وملفك الشخصي على إنستغرام وموقع الحجز.</li>
 <li><strong> قم بتكوين قائمة الخدمة الخاصة بك:</strong> قم باستيراد أو إدخال خدماتك، والمدد، والأسعار، وتعيينات الموظفين. يستخدم الذكاء الاصطناعي هذه المعلومات للإجابة على أسئلة التسعير واتخاذ قرارات حجز دقيقة.</li>
 <li><strong>ضبط صوت علامتك التجارية:</strong> اختر النغمة والشخصية وأسلوب الترحيب الذي يتناسب مع العلامة التجارية لصالونك. يقوم الذكاء الاصطناعي بتكييف أسلوب الاتصال الخاص به وفقًا لذلك.</li>
 <li><strong>تحديد قواعد العمل:</strong> تعيين ساعات العمل، وأوقات التخزين المؤقت، وسياسات الإلغاء، ومتطلبات الإيداع، ومشغلات التصعيد.</li>
-<li><strong>البدء المباشر:</strong> يبدأ الذكاء الاصطناعي في التعامل مع جميع الاتصالات الواردة على الفور. يمكنك مراقبة المحادثات في الوقت الفعلي وضبط الإعدادات حسب الحاجة.</li>
+<li><strong>البدء المباشر:</strong> يبدأ الذكاء الاصطناعي في الرد على الرسائل عبر قنواتك المتصلة على الفور. يمكنك مراقبة المحادثات في الوقت الفعلي وضبط الإعدادات حسب الحاجة.</li>
 </ol>
-<p>خلال الأسبوع الأول، ستلاحظ انخفاضًا كبيرًا في الاتصالات الفائتة وزيادة في الحجوزات، خاصة من الاستفسارات بعد ساعات العمل.</p>
+<p>خلال الأسبوع الأول، ستلاحظ أن الرسائل لم تعد تتراكم دون رد وأن الحجوزات تزداد، خاصة من الاستفسارات بعد ساعات العمل.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
 <h3> هل سيشعر عملائي بعدم الارتياح عند التحدث إلى الذكاء الاصطناعي؟</h3>
-<p> لا يلاحظ معظم العملاء أنهم يتفاعلون مع الذكاء الاصطناعي. يتواصل موظف الاستقبال الذي يعمل بالذكاء الاصطناعي في ديزي بشكل طبيعي، باستخدام لغة المحادثة المناسبة لصناعة التجميل. تُظهر تعليقات العملاء دائمًا تفضيلًا للاستجابات الفورية بدلاً من التعليق أو ترك البريد الصوتي. العامل الرئيسي الذي يهتم به العملاء هو السرعة والدقة، وليس ما إذا كانت الاستجابة تأتي من إنسان أو من الذكاء الاصطناعي.</p>
+<p> لا يلاحظ معظم العملاء أنهم يتفاعلون مع الذكاء الاصطناعي. يتواصل موظف الاستقبال الذي يعمل بالذكاء الاصطناعي في ديزي بشكل طبيعي، باستخدام لغة المحادثة المناسبة لصناعة التجميل. تُظهر تعليقات العملاء دائمًا تفضيلًا للاستجابات الفورية بدلاً من انتظار الرد لساعات. العامل الرئيسي الذي يهتم به العملاء هو السرعة والدقة، وليس ما إذا كانت الاستجابة تأتي من إنسان أو من الذكاء الاصطناعي.</p>
 
 <h3>هل يستطيع الذكاء الاصطناعي التعامل مع الطلبات المعقدة مثل حجوزات حفلات الزفاف؟</h3>
 <p>نعم. يدير الذكاء الاصطناعي حجوزات الخدمات المتعددة، والمواعيد الجماعية، والجداول الزمنية المتكررة، وطلبات الأحداث الخاصة. بالنسبة لحجوزات حفل الزفاف، فإنه يقوم بتنسيق التوفر عبر العديد من الموظفين، وحساب أسعار المجموعة، وإدارة الخدمات اللوجستية لأوقات المواعيد المتداخلة. يتم تصعيد الطلبات التي تتجاوز حد ثقة الذكاء الاصطناعي بسلاسة إلى فريقك مع السياق الكامل.</p>
 
 <h3>ماذا يحدث أثناء انقطاع الخدمة أو مشكلة فنية؟</h3>
-<p> تم تصميم البنية التحتية لـ ديزي لضمان تشغيل بنسبة 99.9%. في حالة حدوث مشكلة فنية نادرة، تتم إعادة توجيه المكالمات تلقائيًا إلى رقمك الاحتياطي، ويتم وضع الرسائل في قائمة الانتظار للمعالجة الفورية بمجرد تعافي النظام. يتم إعلامك على الفور بأي انقطاع في الخدمة حتى تتمكن من تفعيل خطة الاتصال الاحتياطية إذا لزم الأمر.</p>
+<p> تم تصميم البنية التحتية لـ ديزي لضمان تشغيل بنسبة 99.9%. في حالة حدوث مشكلة فنية نادرة، يتم وضع الرسائل في قائمة الانتظار للمعالجة الفورية بمجرد تعافي النظام. يتم إعلامك على الفور بأي انقطاع في الخدمة حتى تتمكن من تفعيل خطة الاتصال الاحتياطية إذا لزم الأمر.</p>
 
 <h3>هل يحل موظف الاستقبال الذي يعمل بتقنية الذكاء الاصطناعي محل موظفي مكتب الاستقبال بالكامل؟</h3>
-<p> يتعامل الذكاء الاصطناعي مع جميع الاتصالات الواردة - المكالمات والرسائل والحجوزات. تقوم العديد من الصالونات بإعادة تخصيص موظف الاستقبال الخاص بها لمهام ذات قيمة أعلى مثل إدارة تجربة العميل، ومبيعات التجزئة، والبيع. البعض الآخر يقلل من تكاليف موظفي الاستقبال بالكامل. يعتمد النهج الصحيح على حجم الصالون الخاص بك ونموذج الخدمة. يضمن الذكاء الاصطناعي التعامل مع عبء عمل الاتصالات بشكل مثالي بغض النظر عن قرارات التوظيف الخاصة بك.</p>
+<p> يتولى الذكاء الاصطناعي الرسائل والحجوزات التي تصل عبر واتساب وإنستغرام وموقع الحجز. ولا يرد على المكالمات الهاتفية حتى الآن، لذلك لا يزال هاتف الصالون بحاجة إلى من يرد عليه. تقوم العديد من الصالونات بإعادة تخصيص موظف الاستقبال الخاص بها لمهام ذات قيمة أعلى مثل إدارة تجربة العميل، ومبيعات التجزئة، والبيع الإضافي، مع بقاء الرد على الهاتف جزءًا من عمله. يعتمد النهج الصحيح على حجم الصالون الخاص بك ونموذج الخدمة.</p>
 
 <h3>كيف يتعامل الذكاء الاصطناعي مع العملاء الغاضبين أو المنزعجين؟</h3>
 <p> يتم تدريب الذكاء الاصطناعي على التعرف على المشاعر السلبية والاستجابة لها بالتعاطف والصبر واللغة الموجهة نحو الحلول. يمكنه عرض إعادة جدولة المواعيد، وتطبيق الاعتمادات أو الخصومات المناسبة ضمن القواعد المحددة مسبقًا، وتصعيد المواقف التي تتطلب الحكم البشري. لا يستجيب الذكاء الاصطناعي أبدًا بشكل دفاعي أو عاطفي، مما يؤدي غالبًا إلى تهدئة المواقف بشكل أكثر فعالية مما قد يفعله موظف الاستقبال البشري المتوتر.</p>`,
     metaTitle: 'موظف الاستقبال الذكي يحوّل خدمة الصالون | ديزي',
     metaDescription:
-      'تعلّم كيف يتعامل موظف الاستقبال الذكي مع جميع مكالمات وحجوزات ورسائل الصالون على مدار الساعة. قلل المكالمات الفائتة بنسبة 90% واكتشف إيرادات ما بعد ساعات العمل تلقائياً.',
+      'تعلّم كيف يرد موظف الاستقبال الذكي على رسائل الصالون ويتولى الحجوزات على مدار الساعة عبر واتساب وإنستغرام وموقع الحجز، واكتشف إيرادات ما بعد ساعات العمل.',
     createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'ar',
     sortId: 41,
@@ -1586,7 +1586,7 @@ const customerAcquisitionArticleAr: LocalBlogPost = {
       'تغطي استراتيجية متكاملة لاكتساب العملاء كل قناة يكتشف فيها عملاء الصالون المحتملون الخدمات ويقيّمونها ويحجزونها. تعرّف على كيفية إنشاء محرك اكتساب شامل يجمع بين التواجد في السوق وحوافز الكاشباك والتسويق الآلي وبرامج الإحالة.',
     aboutPosts: `<h2>ما المقصود باكتساب العملاء بطريقة 360 درجة؟</h2>
 <p> الاكتساب المتكامل للعملاء هو استراتيجية تضمن أن يكون صالونك مرئيًا وجذابًا وقابلًا للحجز عبر كل قناة يبحث فيها العملاء المحتملون عن خدمات التجميل. بدلًا من الاعتماد على قناة تسويق واحدة أو اثنتين، مثل منشورات إنستغرام أو الزيارات المباشرة، يمكنك إنشاء نظام شامل يلتقط الطلب من البحث في السوق، ووسائل التواصل الاجتماعي، والإحالات، وحوافز الكاشباك، والتسويق عبر البريد الإلكتروني، وحملات الرسائل النصية القصيرة، واكتشاف Google، والحجوزات المباشرة في وقت واحد.</p>
-<p> تكتسب معظم الصالونات عملاء جدد من خلال مجموعة ضيقة للغاية من القنوات. حساب على إنستغرام، وربما بعض الكلمات الشفهية وحركة المرور على الأقدام. وهذا يترك فرصة هائلة على الطاولة لأن العملاء يكتشفون الخدمات من خلال عشرات المسارات المختلفة. <a href="/ar/ai-salon-software"> منصات الصالونات التي تعمل بالذكاء الاصطناعي</a> مثل ديزي مبنية على مبدأ مفاده أن اكتساب العملاء يجب أن يغطي كل نقطة اتصال باستثناء الهاتف - لأن موظف الاستقبال الذي يعمل بالذكاء الاصطناعي يتعامل مع ذلك بالفعل.</p>
+<p> تكتسب معظم الصالونات عملاء جدد من خلال مجموعة ضيقة للغاية من القنوات. حساب على إنستغرام، وربما بعض الكلمات الشفهية وحركة المرور على الأقدام. وهذا يترك فرصة هائلة على الطاولة لأن العملاء يكتشفون الخدمات من خلال عشرات المسارات المختلفة. <a href="/ar/ai-salon-software"> منصات الصالونات التي تعمل بالذكاء الاصطناعي</a> مثل ديزي مبنية على مبدأ مفاده أن اكتساب العملاء يجب أن يغطي كل نقطة يبحث فيها الناس عن خدمات التجميل. والهاتف هو القناة الوحيدة التي لا يرد عليها موظف الاستقبال الذكي من ديزي حتى الآن، لذلك تبقى المكالمات من مهام فريقك.</p>
 
 <h2>لماذا يعتبر الاستحواذ على قناة واحدة استراتيجية خاسرة</h2>
 <p> يؤدي الاعتماد على قناة أو قناتين للعملاء الجدد إلى إنشاء ثلاث نقاط ضعف خطيرة تهدد نموك على المدى الطويل.</p>
@@ -1605,7 +1605,7 @@ const customerAcquisitionArticleAr: LocalBlogPost = {
 
 <h3>الركيزة الأولى: التواجد في السوق</h3>
 <p> سوق التجميل عبارة عن منصة حيث يتصفح العملاء خدمات الصالون ويقارنونها ويحجزونها - على غرار الطريقة التي تعمل بها خدمة Uber Eats في المطاعم. يتيح لك إدراجك في أحد الأسواق إمكانية الوصول إلى العملاء الذين يبحثون بنشاط عن الخدمات في منطقتك بهدف الحجز. هؤلاء عملاء محتملون ذوو جودة عالية لأنهم قرروا بالفعل أنهم يريدون خدمة ويختارون بين مقدمي الخدمة.</p>
-<p> يربط سوق ديزي صالونك بالعملاء الذين يبحثون بنشاط عن خدمات التجميل في منطقتك. يعرض ملفك الشخصي خدماتك وأسعارك ومحفظتك ومراجعاتك ومدى توفرك - ويمكن للعملاء الحجز مباشرة دون مغادرة المنصة. على عكس الإعلانات المدفوعة حيث تدفع مقابل مرات الظهور سواء تم التحويل أم لا، فإن التواجد في السوق يضعك أمام العملاء في اللحظة المحددة لنية الشراء.</p>
+<p> سوق ديزي اختياري ومتاح في دول مختارة. إذا اخترت الانضمام إليه واجتاز صالونك مراجعة جودة الخدمة، يربطك السوق بالعملاء الذين يبحثون بنشاط عن خدمات التجميل في منطقتك. يعرض ملفك الشخصي خدماتك وأسعارك ومحفظتك ومراجعاتك ومدى توفرك - ويمكن للعملاء الحجز مباشرة دون مغادرة المنصة. على عكس الإعلانات المدفوعة حيث تدفع مقابل مرات الظهور سواء تم التحويل أم لا، فإن التواجد في السوق يضعك أمام العملاء في اللحظة المحددة لنية الشراء، ولا تُطبق العمولة إلا على العملاء الجدد الذين يجلبهم لك السوق.</p>
 
 <h3>الركيزة الثانية: الكاشباك وحوافز الولاء</h3>
 <p> تعمل برامج الكاشباك على تحويل عملاء الزيارة الواحدة إلى زوار متكررين وتمنحهم حافزًا ماليًا لاختيار صالونك على المنافسين. عندما يحصل العميل على كاشباك على كل حجز، تزيد تكلفة التبديل - سيفقد مكافآته المتراكمة إذا ذهب إلى مكان آخر. وهذه آلية احتفاظ أثبتت فعاليتها وتستخدمها الأنظمة الأساسية الأكثر نجاحًا في الصناعات الأخرى.</p>
@@ -1645,15 +1645,15 @@ const customerAcquisitionArticleAr: LocalBlogPost = {
 
 <h2>تكلفة الاستحواذ على قناة واحدة مقابل إستراتيجية 360 درجة</h2>
 <p> لوضع الفرق في منظوره الصحيح، فكر في الاقتصاد. عادةً ما يدفع الصالون الذي يعتمد فقط على إنستغرام للاكتساب ما بين 15 إلى 40 دولارًا لكل عميل جديد من خلال المنشورات المعززة والإعلانات المدفوعة، مع معدلات تحويل تتقلب بناءً على تغييرات الخوارزمية. إذا انخفض معدل الوصول إلى إنستغرام (وهو ما يحدث بانتظام)، فسترتفع تكلفة الاكتساب لديك وينضب خط الأنابيب الخاص بك في نفس الوقت.</p>
-<p> توزّع الاستراتيجية الشاملة عملية الاكتساب عبر خمس قنوات، ولكل منها هيكل تكلفة مختلف. يأتي عملاء السوق من خلال الاكتشاف الممول من المنصة. وتدعم المنصة الحجوزات المستندة إلى الكاشباك. ويأتي عملاء الإحالة مقابل مكافأة الإحالة. أما تحسين محركات البحث العضوي والاكتشاف الرقمي فتكلفتهما الهامشية تقترب من الصفر. وعندما يضعف أداء أي قناة، تحافظ القنوات الأخرى على مسار النمو. وهذا التنويع ليس ذكيًا من الناحية الاستراتيجية فحسب، بل هو أيضًا أكثر كفاءة ومرونة ماليًا من أي نهج أحادي القناة.</p>
+<p> توزّع الاستراتيجية الشاملة عملية الاكتساب عبر خمس قنوات، ولكل منها هيكل تكلفة مختلف. يأتي عملاء السوق من خلال الاكتشاف الممول من المنصة، ولا تُطبق العمولة إلا على العملاء الجدد الذين يجلبهم السوق. وتدعم المنصة الحجوزات المستندة إلى الكاشباك. ويأتي عملاء الإحالة مقابل مكافأة الإحالة. أما تحسين محركات البحث العضوي والاكتشاف الرقمي فتكلفتهما الهامشية تقترب من الصفر. وعندما يضعف أداء أي قناة، تحافظ القنوات الأخرى على مسار النمو. وهذا التنويع ليس ذكيًا من الناحية الاستراتيجية فحسب، بل هو أيضًا أكثر كفاءة ومرونة ماليًا من أي نهج أحادي القناة.</p>
 
 <h2>البدء في الاكتساب الشامل</h2>
-<p> لا تحتاج إلى تفعيل جميع الركائز الخمس في اليوم الأول. ابدأ بالتواجد في السوق والتسويق الآلي، ثم قم بإضافة الكاشباك والإحالات وتحسين محركات البحث أثناء بناء الزخم. سيساعدك فريق الإعداد في ديزي على تحديد الأولويات بناءً على قاعدة عملائك الحالية وأهداف النمو.</p>
+<p> لا تحتاج إلى تفعيل جميع الركائز الخمس في اليوم الأول. ابدأ بالتسويق الآلي، وبالتواجد في السوق إذا كان متاحًا في بلدك واخترت الانضمام إليه، ثم قم بإضافة الكاشباك والإحالات وتحسين محركات البحث أثناء بناء الزخم. سيساعدك فريق الإعداد في ديزي على تحديد الأولويات بناءً على قاعدة عملائك الحالية وأهداف النمو.</p>
 
 <h2>الأسئلة الشائعة</h2>
 
 <h3>هل يتنافس السوق مع حجوزاتي المباشرة؟</h3>
-<p>لا. يجلب لك السوق عملاء جددًا لم يكونوا ليجدوا صالونك بطريقة أخرى. يستمر العملاء الحاليون في الحجز مباشرةً من خلال صفحة الحجز التي تحمل علامتك التجارية أو عن طريق الاتصال بصالونك عبر أي قناة. يوسع السوق نطاق وصولك؛ ولا يؤدي إلى تفكيك قاعدة عملائك الحالية.</p>
+<p>لا. يجلب لك السوق عملاء جددًا لم يكونوا ليجدوا صالونك بطريقة أخرى. والانضمام إليه اختياري، ولا تُطبق العمولة إلا على العملاء الجدد الذين يجلبهم السوق، ولا تُطبق أبدًا على عملائك الحاليين. يستمر العملاء الحاليون في الحجز مباشرةً من خلال صفحة الحجز التي تحمل علامتك التجارية أو عن طريق الاتصال بصالونك عبر أي قناة. يوسع السوق نطاق وصولك؛ ولا يؤدي إلى تفكيك قاعدة عملائك الحالية.</p>
 
 <h3>من يمول كاشباك الصالون: الصالون أم المنصة؟</h3>
 <p> يتم تمويل الكاشباك من قبل ديزي، ولا يتم خصمه من إيرادات الخدمة الخاصة بك. تتلقى سعر الخدمة الكامل الخاص بك. الكاشباك هو استثمار ديزي في الاحتفاظ بالعملاء والولاء للنظام الأساسي، وهو ما يفيدك أنت وعملائك.</p>
@@ -1667,7 +1667,7 @@ const customerAcquisitionArticleAr: LocalBlogPost = {
     metaDescription:
       'تعلّم كيف يجذب محرك اكتساب العملاء في ديزي عملاء جدد لصالونك. سوق + كاشباك + تسويق رقمي في منصة واحدة.',
     createdAt: '2026-04-09T05:00:00.000Z',
-    updatedAt: '2026-04-09T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-04-09T05:00:00.000Z',
     locale: 'ar',
     sortId: 43,
@@ -1736,7 +1736,7 @@ const whiteLabelBookingArticleAr: LocalBlogPost = {
     description:
       'يتيح الحجز ذو العلامة البيضاء لصالونك تقديم تجربة حجز تحمل علامة تجارية كاملة دون أي شعارات أو روابط تابعة لجهات خارجية. تعرف على السبب الذي يجعل ملكية العلامة التجارية في تدفق الحجز تؤدي إلى بناء الثقة وزيادة التحويلات وحماية علاقات عملائك.',
     aboutPosts: `<h2>ما هو حجز البطاقة البيضاء؟</h2>
-<p> الحجز ذو العلامة البيضاء هو نظام حجز يعمل بالكامل تحت العلامة التجارية لصالونك. شعارك، وألوانك، ومجالك، ورسائلك - مع انعدام الرؤية لموفر البرنامج الأساسي. عندما يحجز العميل موعدًا، فإنه يتفاعل حصريًا مع علامتك التجارية منذ النقرة الأولى وحتى رسالة التأكيد.</p>
+<p> الحجز ذو العلامة البيضاء هو نظام حجز يعمل بالكامل تحت العلامة التجارية لصالونك. شعارك، وألوانك، واسم نشاطك، ورسائلك - مع انعدام الرؤية لموفر البرنامج الأساسي. عندما يحجز العميل موعدًا، فإنه يتفاعل حصريًا مع علامتك التجارية منذ النقرة الأولى وحتى رسالة التأكيد.</p>
 <p>معظم <a href="/ar/glossary/salon-management-software">برامج الصالون</a> تجبرك على إرسال العملاء إلى صفحة الحجز الملصقة بشعار شركة البرمجيات والعلامة التجارية. في كل مرة يقوم فيها العميل بالحجز، يرى اسم شركة أخرى - وليس اسمك. <a href="/ar/ai-salon-software">منصات الصالونات المدعومة بالذكاء الاصطناعي</a> مثل ديزي تتبع نهجًا مختلفًا تمامًا: علامتك التجارية هي العلامة التجارية الوحيدة التي يراها عملاؤك على الإطلاق طوال تجربة الحجز والتأكيدات والتذكيرات والمتابعات.</p>
 
 <h2>لماذا تعتبر تجربة علامتك التجارية مهمة في تدفق الحجز</h2>
@@ -1747,7 +1747,7 @@ const whiteLabelBookingArticleAr: LocalBlogPost = {
 <p> من ناحية أخرى، تعمل تجربة الحجز ذات العلامة البيضاء على توسيع علامتك التجارية من الصالون الفعلي إلى الفضاء الرقمي. لوحة الألوان والصور الخاصة بك ونبرة الصوت - كلها متسقة. يبدو التفاعل الرقمي الأول للعميل وكأنه يدخل إلى صالونك: مقصود واحترافي ومميز لك.</p>
 
 <h3>تزداد الثقة عندما تكون العلامة التجارية متسقة</h3>
-<p> من المرجح أن يقوم العملاء بإكمال الحجز عندما تكون التجربة مألوفة وجديرة بالثقة. تؤدي إعادة التوجيه إلى نطاق جهة خارجية أو إظهار علامة تجارية غير مألوفة إلى حدوث احتكاك. تظهر الدراسات في مجال التجارة الإلكترونية باستمرار أن اتساق العلامة التجارية عبر نقاط الاتصال يزيد من معدلات التحويل بنسبة 10-20%. وينطبق نفس المبدأ على حجز الصالون.</p>
+<p> من المرجح أن يقوم العملاء بإكمال الحجز عندما تكون التجربة مألوفة وجديرة بالثقة. يؤدي ظهور علامة تجارية غير مألوفة إلى حدوث احتكاك. تظهر الدراسات في مجال التجارة الإلكترونية باستمرار أن اتساق العلامة التجارية عبر نقاط الاتصال يزيد من معدلات التحويل بنسبة 10-20%. وينطبق نفس المبدأ على حجز الصالون.</p>
 
 <h3>علاقات العملاء ملك لك</h3>
 <p> عندما تعرض صفحة الحجز الخاصة بك علامة تجارية لشركة أخرى، فإن هذه الشركة تعمل على بناء الوعي لدى عملائك على نفقتك الخاصة. كل رسالة تأكيد بالبريد الإلكتروني تقول "مدعوم من [اسم البرنامج]" تدرب عملائك على ربط تجربة الحجز الخاصة بهم بهذا البرنامج بدلاً من الصالون الخاص بك. إذا قمت بتبديل الأنظمة الأساسية في أي وقت، فإن التعرف على العلامة التجارية سينتقل إلى البائع القديم - وليس معك.</p>
@@ -1757,13 +1757,13 @@ const whiteLabelBookingArticleAr: LocalBlogPost = {
 <p> إن التسمية البيضاء الحقيقية تتجاوز مجرد إزالة الشعار من صفحة الحجز. يغطي نظام العلامة البيضاء الخاص بـ ديزي كل عنصر يواجه العميل في تواجدك الرقمي:</p>
 
 <h3>صفحة الحجز ذات العلامة التجارية</h3>
-<p> تستخدم صفحة الحجز الخاصة بك ألوان صالونك وشعاره وخطوطه وصوره. يمكن استضافته على المجال الخاص بك (yourSalon.com/book) أو تضمينه مباشرة في موقع الويب الخاص بك الحالي. لا تظهر أي علامة تجارية لجهة خارجية في أي مكان على الصفحة.</p>
+<p> تستخدم صفحة الحجز الخاصة بك ألوان صالونك وشعاره وخطوطه وصوره. تستضيف ديزي موقع الحجز الذي يحمل علامتك التجارية، ويمكنك إعادة توجيه نطاقك الخاص إليه. لا تظهر أي علامة تجارية لجهة خارجية في أي مكان على الصفحة.</p>
 
 <h3>الاتصالات ذات العلامة التجارية</h3>
 <p>كل رسالة يتلقاها عملاؤك - تأكيدات الحجز، وتذكيرات المواعيد، وطلبات المتابعة، ورسائل البريد الإلكتروني التسويقية، وإشعارات الرسائل النصية القصيرة - تأتي من اسم صالونك وعلامتك التجارية. يعكس اسم المرسل وعنوان البريد الإلكتروني وتصميم الرسالة هوية علامتك التجارية.</p>
 
 <h3>تفاعلات الذكاء الاصطناعي ذات العلامة التجارية</h3>
-<p>يتواصل موظف الاستقبال <a href="/ar/features/business/ai-salon-management">الذكي من ديزي</a> باستخدام صوت صالونك ونغمته وشخصيته. عندما يتفاعل العملاء مع الذكاء الاصطناعي عبر واتساب أو الهاتف أو إنستغرام، فإنهم يختبرون علامتك التجارية، وليس مساعد ذكاء اصطناعي عامًا. يمكنك تكوين نمط الترحيب وتفضيلات اللغة وشخصية الاتصال لتتناسب مع شخصية صالونك.</p>
+<p>يتواصل موظف الاستقبال <a href="/ar/features/business/ai-salon-management">الذكي من ديزي</a> بأسلوب صالونك ونغمته وشخصيته. عندما يتفاعل العملاء مع الذكاء الاصطناعي عبر واتساب أو إنستغرام أو موقع الحجز، فإنهم يختبرون علامتك التجارية، وليس مساعد ذكاء اصطناعي عامًا. يمكنك تكوين نمط الترحيب وتفضيلات اللغة وشخصية الاتصال لتتناسب مع شخصية صالونك.</p>
 
 <h3>بوابة العميل ذات العلامة التجارية</h3>
 <p> يمكن للعملاء العائدين الوصول إلى سجل الحجز ونقاط الولاء والمواعيد القادمة من خلال بوابة تحمل العلامة التجارية بالكامل لصالونك. وهذا يخلق إحساسًا بتجربة "عضوية VIP" التي تعزز الولاء وتشجع الزيارات المتكررة.</p>
@@ -1796,7 +1796,7 @@ const whiteLabelBookingArticleAr: LocalBlogPost = {
 <p>الحجز ذو العلامة البيضاء ليس مجرد تفضيل جمالي - بل له تأثير تجاري قابل للقياس يؤثر بشكل مباشر على إيراداتك والاحتفاظ بالعملاء.</p>
 
 <h3>ارتفاع معدلات إتمام الحجز</h3>
-<p> تظهر دراسات التجارة الإلكترونية أن تجارب الدفع ذات العلامات التجارية تحقق نسبة أعلى بنسبة 10-20% من التجارب العامة. وينطبق نفس المبدأ على حجز الصالون. عندما ينقر العملاء على "احجز الآن" ويصلون إلى الصفحة التي تتطابق مع العلامة التجارية التي يثقون بها بالفعل، فمن المرجح أن يكملوا الحجز. تؤدي إعادة التوجيه إلى صفحة طرف ثالث غير مألوفة إلى التردد، خاصة بالنسبة للعملاء الجدد الذين ما زالوا يقيمون ما إذا كانوا سيجربون صالونك أم لا.</p>
+<p> تظهر دراسات التجارة الإلكترونية أن تجارب الدفع ذات العلامات التجارية تحقق نسبة أعلى بنسبة 10-20% من التجارب العامة. وينطبق نفس المبدأ على حجز الصالون. عندما ينقر العملاء على "احجز الآن" ويصلون إلى الصفحة التي تتطابق مع العلامة التجارية التي يثقون بها بالفعل، فمن المرجح أن يكملوا الحجز. تؤدي صفحة تحمل علامة تجارية لجهة أخرى إلى التردد، خاصة بالنسبة للعملاء الجدد الذين ما زالوا يقيمون ما إذا كانوا سيجربون صالونك أم لا.</p>
 
 <h3>القيمة الدائمة للعميل الأقوى</h3>
 <p> العملاء الذين يربطون تجربة الصالون بأكملها - بدءًا من الحجز إلى الخدمة وحتى المتابعة - بعلامتك التجارية يطورون ولاءً أعمق للعلامة التجارية. من غير المرجح أن يتسوقوا لأن علاقتهم بصالونك، وليس بمنصة برمجية. وهذا يُترجم إلى معدلات إعادة حجز أعلى، والمزيد من الإحالات، واستعداد أكبر لتجربة خدمات إضافية.</p>
@@ -1825,7 +1825,7 @@ const whiteLabelBookingArticleAr: LocalBlogPost = {
 <h2>الأسئلة الشائعة</h2>
 
 <h3>كيف سيبدو رابط الحجز الخاص بي؟</h3>
-<p>تحصل على رابط حجز قصير تشاركه، مثل thedaisy.link/your-salon. النطاقات المخصصة غير مدعومة حالياً. والصفحة التي يفتحها الرابط تحمل شعارك واسم نشاطك وألوان علامتك، دون أي علامة لديزي عليها.</p>
+<p>تستضيف ديزي موقع الحجز الذي يحمل علامتك التجارية على رابط قصير تشاركه، مثل thedaisy.link/your-salon، ويمكنك إعادة توجيه نطاقك الخاص إليه. والصفحة التي يفتحها الرابط تحمل شعارك واسم نشاطك وألوان علامتك، دون أي علامة لديزي عليها.</p>
 
 <h3>هل تنطبق العلامة البيضاء على تجربة تطبيق الهاتف المحمول أيضًا؟</h3>
 <p>نعم. عندما يقوم العملاء بالحجز من خلال تطبيق ديزي، فإن العلامة التجارية لصالونك تكون بارزة طوال تجربتهم. يعمل شعارك وألوانك وصور الخدمة على إنشاء واجهة متجر ذات علامة تجارية ضمن النظام البيئي للتطبيق.</p>
@@ -1839,7 +1839,7 @@ const whiteLabelBookingArticleAr: LocalBlogPost = {
     metaDescription:
       'احصل على نظام حجز بعلامتك التجارية الخاصة. تحكم كامل بالهوية البصرية وتجربة العميل مع منصة ديزي.',
     createdAt: '2025-08-27T05:00:00.000Z',
-    updatedAt: '2025-08-27T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-08-27T05:00:00.000Z',
     locale: 'ar',
     sortId: 44,
@@ -2070,7 +2070,7 @@ const dataDrivenPlatformArticleAr: LocalBlogPost = {
 <p> تحدث تأثيرات الشبكة عندما يصبح المنتج أو الخدمة أكثر قيمة مع زيادة عدد الأشخاص الذين يستخدمونها. في منصة التجميل، تظهر تأثيرات الشبكة بعدة طرق تفيد صالونك بشكل مباشر.</p>
 
 <h3>الذكاء الاصطناعي يصبح أكثر ذكاءً مع المزيد من البيانات</h3>
-<p> تم تدريب الذكاء الاصطناعي الخاص بـ ديزي على الملايين من تفاعلات صناعة التجميل. يساهم كل حجز، وكل محادثة مع العميل، وكل نمط جدولة، وكل نتيجة حملة تسويقية عبر الشبكة في ذكاء الذكاء الاصطناعي. وهذا يعني أن موظف الاستقبال الذي يعمل بتقنية الذكاء الاصطناعي والذي يتعامل مع مكالمات عملائك لا يتعلم فقط من بيانات صالونك - بل يتعلم من التجربة الجماعية لآلاف شركات التجميل.</p>
+<p> تم تدريب الذكاء الاصطناعي الخاص بـ ديزي على الملايين من تفاعلات صناعة التجميل. يساهم كل حجز، وكل محادثة مع العميل، وكل نمط جدولة، وكل نتيجة حملة تسويقية عبر الشبكة في ذكاء الذكاء الاصطناعي. وهذا يعني أن موظف الاستقبال الذي يعمل بتقنية الذكاء الاصطناعي والذي يرد على رسائل عملائك عبر واتساب وإنستغرام لا يتعلم فقط من بيانات صالونك - بل يتعلم من التجربة الجماعية لآلاف شركات التجميل.</p>
 <p> لا يمكن لأداة الذكاء الاصطناعي المستقلة المثبتة في صالون واحد أن تتعلم إلا من البيانات المحدودة لذلك الصالون. توفر منصة الذكاء الاصطناعي التي تتعلم من الشبكة بأكملها أداءً أفضل بشكل ملحوظ في تحسين الجدولة والتواصل مع العملاء والتنبؤ بالطلب وتخصيص التسويق. الفرق قابل للقياس وينمو بمرور الوقت.</p>
 
 <h3>إشارات الطلب تصبح تنبؤية</h3>
@@ -2151,7 +2151,7 @@ const dataDrivenPlatformArticleAr: LocalBlogPost = {
     metaDescription:
       'حوّل بيانات صالونك إلى نمو. ديزي يحول كل حجز وتفاعل إلى رؤى قابلة للتنفيذ تزيد الإيرادات.',
     createdAt: '2025-12-12T05:00:00.000Z',
-    updatedAt: '2025-12-12T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-12-12T05:00:00.000Z',
     locale: 'ar',
     sortId: 46,
@@ -2266,7 +2266,7 @@ const modernSalonsAiArticleAr: LocalBlogPost = {
 <p>إذا أجبت بنعم على أي من هذه الأسئلة، فسيستفيد صالونك من الانتقال إلى منصة الذكاء الاصطناعي:</p>
 <ul>
 <li>هل تقضي أكثر من 5 ساعات أسبوعيًا في المهام الإدارية التي يمكن أتمتتها؟</li>
-<li>هل تفتقد مكالمات أو رسائل من العملاء المحتملين؟</li>
+<li>هل تنتظر رسائل العملاء المحتملين ساعات قبل أن تحصل على رد؟</li>
 <li>هل تسويقك غير متسق أو مُدار يدويًا؟</li>
 <li>هل تجد صعوبة في التنبؤ بالفترات المزدحمة والبطيئة؟</li>
 <li>هل تخسر عملاءك لصالح المنافسين الذين يستجيبون بشكل أسرع؟</li>
@@ -2276,7 +2276,7 @@ const modernSalonsAiArticleAr: LocalBlogPost = {
 
 <h2>الانتقال من البرمجيات إلى منصة الذكاء الاصطناعي</h2>
 <p> يعد التحول من البرامج التقليدية إلى منصة الذكاء الاصطناعي أبسط مما يتوقعه معظم أصحاب الصالونات. تعمل عملية الإعداد في ديزي على ترحيل بيانات العميل وسجل الحجز وتكوين الأعمال خلال ساعات، وليس أسابيع. يبدأ الذكاء الاصطناعي في تعلم أنماط أعمالك على الفور ويقدم قيمة من اليوم الأول - بينما يصبح أكثر ذكاءً كل يوم بعد ذلك.</p>
-<p> أبلغ معظم أصحاب الصالونات عن ثلاث مفاجآت رئيسية عندما قاموا بالتبديل: أولاً، كان الانتقال أسرع وأقل إزعاجًا مما كانوا يخشونه. ثانيًا، بدأ الذكاء الاصطناعي في تقديم تحسينات ملحوظة خلال الأسبوع الأول - خاصة في استعادة المكالمات الفائتة والتواصل الآلي مع العميل. ثالثًا، حررهم توفير الوقت التشغيلي للتركيز على أجزاء أعمالهم التي يستمتعون بها كثيرًا: العلاقات مع العملاء، والعمل الإبداعي، والنمو الاستراتيجي.</p>
+<p> أبلغ معظم أصحاب الصالونات عن ثلاث مفاجآت رئيسية عندما قاموا بالتبديل: أولاً، كان الانتقال أسرع وأقل إزعاجًا مما كانوا يخشونه. ثانيًا، بدأ الذكاء الاصطناعي في تقديم تحسينات ملحوظة خلال الأسبوع الأول - خاصة في سرعة الرد على رسائل العملاء والتواصل الآلي معهم. ثالثًا، حررهم توفير الوقت التشغيلي للتركيز على أجزاء أعمالهم التي يستمتعون بها كثيرًا: العلاقات مع العملاء، والعمل الإبداعي، والنمو الاستراتيجي.</p>
 <p> السؤال ليس ما إذا كان يجب اعتماد منصة الذكاء الاصطناعي. والسؤال هو ما هو مقدار الأرض التنافسية التي ترغب في التنازل عنها أثناء الانتظار.</p>
 
 <h2>الأسئلة الشائعة</h2>
@@ -2299,7 +2299,7 @@ const modernSalonsAiArticleAr: LocalBlogPost = {
     metaDescription:
       'اكتشف لماذا أصبح الذكاء الاصطناعي ضرورة للصالونات الحديثة. من موظف الاستقبال الذكي إلى التحليلات التنبؤية.',
     createdAt: '2025-04-25T05:00:00.000Z',
-    updatedAt: '2025-04-25T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-04-25T05:00:00.000Z',
     locale: 'ar',
     sortId: 47,
@@ -2371,13 +2371,13 @@ const softwareWarningSignsArticleAr: LocalBlogPost = {
 <p> ربما كان البرنامج الذي اخترته عندما بدأت الصالون الخاص بك هو الأداة المناسبة في ذلك الوقت. لكن شركات التجميل تتطور، وتزداد توقعات العملاء، وتتقدم التكنولوجيا. ما نجح قبل ثلاث سنوات يمكن أن يصبح عنق الزجاجة اليوم - مما يحد من نموك بهدوء بينما تفترض أن المشكلة تكمن في مكان آخر.</p>
 <p> تشير العلامات التحذيرية العشرة التالية إلى أن برنامج الصالون الحالي الذي تستخدمه يعيق عملك. إذا تعرفت على ثلاثة أو أكثر من هذه العناصر في عملياتك اليومية، فقد حان الوقت لتقييم البدائل الحديثة. <a href="/ar/ai-salon-software">منصات الصالونات المدعومة بالذكاء الاصطناعي</a> مثل ديزي مصممة خصيصًا للتخلص من كل نقطة من نقاط الألم هذه.</p>
 
-<h2>علامة التحذير 1: مازلت ترد على مكالمات الحجز يدويًا</h2>
-<p>إذا كان فريقك يقضي أي وقت في الرد على المكالمات الهاتفية لحجز المواعيد، فهذا يعني أن برنامجك أصبح قديمًا. يتوقع العملاء المعاصرون الحجز فورًا عبر قناتهم المفضلة - واتساب أو إنستغرام أو موقع الويب أو التطبيق - دون انتظار استجابة بشرية.</p>
-<p>كل مكالمة يجيب عليها فريقك هي وقت مأخوذ من خدمة العميل أمامهم. كل مكالمة تفوتك هي بمثابة حجز مفقود لمنافس. يتعامل موظف استقبال يعمل بالذكاء الاصطناعي مع كل استفسار وارد عبر كل قناة على الفور، على مدار الساعة طوال أيام الأسبوع، دون تدخل بشري. إذا كان برنامجك الحالي لا يتضمن استقبالًا مدعومًا بالذكاء الاصطناعي، فإنك تفقد عملاء في كل يوم لا تقوم فيه بالترقية.</p>
+<h2>علامة التحذير 1: مازلت ترد على رسائل الحجز يدويًا</h2>
+<p>إذا كان فريقك يقضي أي وقت في كتابة الردود لحجز المواعيد، فهذا يعني أن برنامجك أصبح قديمًا. يتوقع العملاء المعاصرون الحجز فورًا عبر قناتهم المفضلة - واتساب أو إنستغرام أو موقع الويب أو التطبيق - دون انتظار استجابة بشرية.</p>
+<p>كل رسالة يرد عليها فريقك يدويًا هي وقت مأخوذ من خدمة العميل أمامهم. كل رسالة تبقى دون رد هي بمثابة حجز مفقود لمنافس. يرد موظف الاستقبال الذكي من ديزي عبر واتساب وإنستغرام وموقع الحجز على الفور، على مدار الساعة طوال أيام الأسبوع. ولا يرد على المكالمات الهاتفية حتى الآن، لذلك تبقى المكالمات من مهام فريقك. إذا كان برنامجك الحالي لا يتضمن استقبالًا مدعومًا بالذكاء الاصطناعي، فإنك تفقد عملاء في كل يوم لا تقوم فيه بالترقية.</p>
 
 <h2>علامة التحذير 2: صفحة الحجز عبر الإنترنت الخاصة بك تبدو عامة</h2>
 <p>إذا كانت صفحة الحجز الخاصة بك تحتوي على علامة تجارية لشركة أخرى، فإنك تتنازل عن حقوق ملكية العلامة التجارية مع كل حجز. يجب أن يتفاعل العملاء حصريًا مع علامتك التجارية طوال تجربة الحجز بأكملها. تشير صفحات الحجز العامة للعملاء إلى أن صالونك يعتمد على أدوات خارجية بدلاً من تقديم تجربة رقمية احترافية مصقولة.</p>
-<p> الحجز ذو العلامة البيضاء - حيث تكون علامتك التجارية وألوانك وشعارك ومجالك هي الأشياء الوحيدة التي يراها العملاء - هو المعيار لمنصات الصالونات الحديثة. إذا لم يتمكن برنامجك من تحقيق ذلك، فإن تواجدك الرقمي يعمل ضد علامتك التجارية، وليس لصالحها.</p>
+<p> الحجز ذو العلامة البيضاء - حيث تكون علامتك التجارية وألوانك وشعارك هي الأشياء الوحيدة التي يراها العملاء - هو المعيار لمنصات الصالونات الحديثة. إذا لم يتمكن برنامجك من تحقيق ذلك، فإن تواجدك الرقمي يعمل ضد علامتك التجارية، وليس لصالحها.</p>
 
 <h2>علامة التحذير 3: لا يمكنك خدمة العملاء باللغتين العربية والإنجليزية على قدم المساواة</h2>
 <p>إذا كان برنامجك يدعم اللغة الإنجليزية فقط (أو يتعامل مع اللغة العربية كفكرة ثانوية مع تنسيق RTL ضعيف)، فإنك تستبعد أو لا تخدم جزءًا كبيرًا من قاعدة عملائك المحتملة. في أسواق دول مجلس التعاون الخليجي والشرق الأوسط، لا يعد الدعم متعدد اللغات ميزة - بل هو متطلب أساسي.</p>
@@ -2401,7 +2401,7 @@ const softwareWarningSignsArticleAr: LocalBlogPost = {
 
 <h2>علامة التحذير 8: العملاء الجدد لا يمكنهم العثور عليك عبر الإنترنت</h2>
 <p>إذا لم يظهر صالونك في عمليات بحث السوق، أو نتائج اكتشاف جوجل، أو محركات التوصية المدعومة بالذكاء الاصطناعي، فإن برنامجك لا يساهم في ظهورك الرقمي. تقوم الأنظمة الأساسية الحديثة بإنشاء بيانات منظمة، وتجميع المراجعات، وإنشاء إشارات تحسين محركات البحث (SEO) التي تساعد العملاء المحتملين في العثور عليك.</p>
-<p> إن إدراجك في سوق ديزي يضع صالونك أمام العملاء الذين يبحثون بنشاط عن خدمات التجميل في منطقتك بهدف الحجز. إذا كان برنامجك الحالي لا يتضمن تواجدًا في السوق، فأنت غير مرئي لشريحة متزايدة من العملاء المحتملين الذين يكتشفون الخدمات من خلال بحث النظام الأساسي بدلاً من جوجل أو إنستغرام.</p>
+<p> في الدول التي يتوفر فيها سوق ديزي الاختياري، يضع الإدراج فيه صالونك، بعد اجتياز مراجعة جودة الخدمة، أمام العملاء الذين يبحثون بنشاط عن خدمات التجميل في منطقتك بهدف الحجز. إذا كان برنامجك الحالي لا يتضمن تواجدًا في السوق، فأنت غير مرئي لشريحة متزايدة من العملاء المحتملين الذين يكتشفون الخدمات من خلال بحث النظام الأساسي بدلاً من جوجل أو إنستغرام.</p>
 
 <h2>علامة التحذير 9: لا يمكنك التوسع إلى مواقع متعددة بسهولة</h2>
 <p> إذا كانت فكرة فتح موقع ثانٍ تعني إعداد مثيل منفصل تمامًا لبرنامجك، وتكرار التكوينات، وإدارة نظامين منفصلين، فإن أداتك الحالية لم تكن مصممة لتحقيق النمو. يجب أن تكون إدارة المواقع المتعددة قدرة أساسية، وليست فكرة لاحقة.</p>
@@ -2415,7 +2415,7 @@ const softwareWarningSignsArticleAr: LocalBlogPost = {
 <p> التعرف على هذه العلامات التحذيرية هو الخطوة الأولى. إن العمل بها هو ما يفصل بين الصالونات المتنامية والصالونات الراكدة. إليك خطة عمل عملية:</p>
 <ol>
 <li><strong>قم بإحصاء العلامات التحذيرية الخاصة بك:</strong> إذا تم تطبيق ثلاث علامات أو أكثر، فإن برنامجك يحد بشكل فعال من نموك.</li>
-<li><strong>احسب التكاليف المخفية:</strong> قم بإضافة رسوم الاشتراك لجميع أدواتك المنفصلة، والساعات التي تقضيها في المهام اليدوية، والإيرادات المقدرة المفقودة بسبب المكالمات الفائتة، وعدم الحضور، والفجوات التسويقية.</li>
+<li><strong>احسب التكاليف المخفية:</strong> قم بإضافة رسوم الاشتراك لجميع أدواتك المنفصلة، والساعات التي تقضيها في المهام اليدوية، والإيرادات المقدرة المفقودة بسبب بطء الردود، وعدم الحضور، والفجوات التسويقية.</li>
 <li><strong>تقييم البدائل الحديثة:</strong> ابحث عن المنصات التي تعالج جميع العلامات التحذيرية العشرة من نظام واحد. تم تصميم ديزي خصيصًا لإزالة كل القيود الموضحة في هذه المقالة.</li>
 <li><strong>اختبر قبل الالتزام:</strong> تقدم معظم المنصات الحديثة تجارب أو عروض توضيحية. شاهد الفرق مباشرة قبل اتخاذ القرار.</li>
 <li><strong>التخطيط للترحيل:</strong> تتعامل الأنظمة الأساسية الحديثة مع ترحيل البيانات كجزء من عملية الإعداد. يعد التبديل أبسط مما يتوقعه معظم أصحاب الصالونات.</li>
@@ -2442,7 +2442,7 @@ const softwareWarningSignsArticleAr: LocalBlogPost = {
     metaDescription:
       'هل برنامج صالونك يعيق نموك؟ تعرّف على العلامات التحذيرية ومتى يجب التحول إلى منصة أفضل.',
     createdAt: '2025-02-20T05:00:00.000Z',
-    updatedAt: '2025-02-20T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-02-20T05:00:00.000Z',
     locale: 'ar',
     sortId: 48,
