@@ -35,7 +35,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
     },
 
     overview:
-      'As an independent beauty professional, you are your own receptionist, scheduler, marketer, and bookkeeper, all while delivering the high-quality service your clients expect. The Daisy is an AI-powered platform for beauty professionals that takes the administrative weight off your shoulders. The AI receptionist answers client enquiries via WhatsApp, Instagram DMs, phone, and chat, booking appointments, answering pricing questions, and collecting payments while you are mid-service or off the clock. Smart scheduling analyses your working patterns to optimise your calendar, minimise gaps between appointments, and suggest time blocks that maximise your daily earnings. Client insights surface patterns you would otherwise miss: which services generate the most income, which clients are overdue for a visit, and when your busiest periods are so you can plan accordingly. Whether you are a freelance hairstylist working from a rented chair, a mobile nail technician visiting clients at home, or an esthetician building a client base at a salon, The Daisy\'s AI scales to fit your working style. It communicates naturally in both Arabic and English, understands beauty industry terminology, and learns your preferences over time. The result is more bookings, fewer missed enquiries, and a clear picture of how your career is growing, without hiring an assistant or spending your evenings on admin.',
+      'As an independent beauty professional, you are your own receptionist, scheduler, marketer, and bookkeeper, all while delivering the high-quality service your clients expect. The Daisy is an AI-powered platform for beauty professionals that takes the administrative weight off your shoulders. The AI receptionist answers client enquiries on WhatsApp, Instagram DMs and your booking page, booking appointments, answering pricing questions, and collecting payments while you are mid-service or off the clock. Smart scheduling analyses your working patterns to optimise your calendar, minimise gaps between appointments, and suggest time blocks that maximise your daily earnings. Client insights surface patterns you would otherwise miss: which services generate the most income, which clients are overdue for a visit, and when your busiest periods are so you can plan accordingly. Whether you are a freelance hairstylist working from a rented chair, a mobile nail technician visiting clients at home, or an esthetician building a client base at a salon, The Daisy\'s AI scales to fit your working style. It communicates naturally in both Arabic and English, understands beauty industry terminology, and learns your preferences over time. The result is more bookings, fewer missed enquiries, and a clear picture of how your career is growing, without hiring an assistant or spending your evenings on admin.',
 
     keyCapabilities: [
       'AI receptionist that answers client messages and books appointments while you work',
@@ -61,9 +61,9 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         name: 'AI Receptionist for Professionals',
         description:
-          'Your personal AI assistant that handles client interactions across WhatsApp, Instagram DMs, phone, and website chat. It understands booking requests, checks your real-time availability, confirms appointments, and collects payments, all while you are with a client, commuting between locations, or simply off the clock. Every interaction is professional and personalised, reflecting your brand and tone.',
+          'Your personal AI assistant that handles client conversations on WhatsApp, Instagram DMs and your booking page. It understands booking requests, checks your real-time availability, confirms appointments, and collects payments, all while you are with a client, commuting between locations, or simply off the clock. Every interaction is professional and personalised, reflecting your brand and tone. It does not answer phone calls yet.',
         howItWorks: [
-          'A client reaches out via WhatsApp, Instagram, phone, or your booking link.',
+          'A client reaches out on WhatsApp, Instagram or your booking link.',
           'The AI identifies the client from your contact list or creates a new profile automatically.',
           'It understands the request, booking, rescheduling, pricing question, or availability check, and responds naturally.',
           'If booking, the AI checks your live calendar, suggests available slots, and confirms the appointment.',
@@ -133,7 +133,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         step: 1,
         title: 'Connect Your Channels',
         description:
-          'Link your WhatsApp, Instagram, phone number, and booking page. The AI starts handling client interactions within minutes, no technical setup required.',
+          'Link your WhatsApp, Instagram and booking page. The AI starts handling client interactions within minutes, no technical setup required.',
       },
       {
         step: 2,
@@ -145,7 +145,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         step: 3,
         title: 'Clients Interact Naturally',
         description:
-          'Clients message, call, or visit your booking page as they normally would. The AI handles the conversation, books the appointment, and collects payment, all without your intervention.',
+          'Clients message you or visit your booking page as they normally would. The AI handles the conversation, books the appointment, and collects payment, all without your intervention.',
       },
       {
         step: 4,
@@ -164,7 +164,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
     comparisonHighlights: [
       {
         area: 'Client Response Time',
-        daisy: 'Instant 24/7 AI response across WhatsApp, Instagram, phone, and chat',
+        daisy: 'Instant 24/7 AI replies on WhatsApp, Instagram and your booking page',
         typical: 'Delayed replies when busy with clients, missed messages after hours',
       },
       {
@@ -199,7 +199,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         title: 'The Freelance Hairstylist Who Stopped Missing Bookings',
         businessType: 'Freelance Hairstylist',
         scenario:
-          'Layla rents a chair at a busy salon and cannot answer her phone while with clients. Before The Daisy, she estimated she was losing a third of her enquiries. Now the AI receptionist responds to every WhatsApp message and Instagram DM instantly, books appointments into her calendar, and collects deposits, so Layla focuses on her craft while her schedule stays consistently full.',
+          'Layla rents a chair at a busy salon and cannot reply to messages while she is with clients. Before The Daisy, enquiries often sat unanswered until her next break. Now the AI receptionist responds to every WhatsApp message and Instagram DM instantly, books appointments into her calendar, and collects deposits, so Layla focuses on her craft while her schedule stays consistently full.',
       },
       {
         title: 'The Mobile Nail Technician With a Smarter Schedule',
@@ -263,7 +263,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         question: 'What is an AI receptionist and do I need one as a freelancer?',
         answer:
-          'An AI receptionist is an automated assistant that handles client enquiries. WhatsApp messages, Instagram DMs, phone calls, and booking page interactions, without you needing to stop what you are doing. As a freelancer, you are your own receptionist, which means every unanswered message is a potentially lost booking. The Daisy\'s AI ensures every enquiry gets an instant, professional response 24/7.',
+          'An AI receptionist is an automated assistant that handles client enquiries on WhatsApp, Instagram DMs and your booking page, without you needing to stop what you are doing. The Daisy\'s AI receptionist does not answer phone calls yet. As a freelancer, you are your own receptionist, which means every unanswered message is a potentially lost booking. The Daisy\'s AI ensures every enquiry gets an instant, professional response 24/7.',
       },
       {
         question: 'Does The Daisy AI work in Arabic for my clients?',
@@ -336,7 +336,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
     },
 
     overview:
-      'Your time is your inventory. Every hour you cannot fill is income you cannot recover, and every scheduling conflict damages the trust your clients place in you. Yet most independent beauty professionals still manage bookings through a mix of WhatsApp messages, phone calls, and mental notes, a system that breaks down the moment you get busy. The Daisy\'s Booking Management replaces that chaos with a professional, unified scheduling platform built for the reality of independent beauty work. Clients book directly through your personalised booking page, available 24/7 on your website, social media profiles, and the Daisy marketplace. The system understands your service durations, break preferences, and location schedules, so it never creates impossible days. Deposit collection and clear cancellation policies protect your income from no-shows. If you work at multiple locations, a salon chair two days a week, a home studio three days, mobile clients on weekends, the calendar keeps everything in one place with location-specific availability. Recurring appointment scheduling locks in your regular clients for weeks ahead, giving you predictable income you can count on. Whether you are a freelance hairstylist, mobile nail technician, or independent esthetician, The Daisy ensures your booking process feels as professional as your service.',
+      'Your time is your inventory. Every hour you cannot fill is income you cannot recover, and every scheduling conflict damages the trust your clients place in you. Yet most independent beauty professionals still manage bookings through a mix of WhatsApp messages, phone calls, and mental notes, a system that breaks down the moment you get busy. The Daisy\'s Booking Management replaces that chaos with a professional, unified scheduling platform built for the reality of independent beauty work. Clients book directly through your personalised booking page, which is open 24/7 and easy to link from your website and social media profiles, or through the optional Daisy marketplace. The system understands your service durations, break preferences, and location schedules, so it never creates impossible days. Deposit collection and clear cancellation policies protect your income from no-shows. If you work at multiple locations, a salon chair two days a week, a home studio three days, mobile clients on weekends, the calendar keeps everything in one place with location-specific availability. Recurring appointment scheduling locks in your regular clients for weeks ahead, giving you predictable income you can count on. Whether you are a freelance hairstylist, mobile nail technician, or independent esthetician, The Daisy ensures your booking process feels as professional as your service.',
 
     keyCapabilities: [
       'Personal booking page with 24/7 client self-scheduling',
@@ -478,7 +478,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
     comparisonHighlights: [
       {
         area: 'Booking Availability',
-        daisy: '24/7 self-service booking via professional branded page, social links, and marketplace',
+        daisy: '24/7 self-service booking via professional branded page, social links, and the optional marketplace',
         typical: 'Clients must message you directly and wait for a reply during your free time',
       },
       {
@@ -987,7 +987,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       'Automated review collection after every appointment with public display on your profile',
       'Built-in referral program that rewards clients for recommending you to friends',
       'Social media integration linking Instagram and other platforms to your booking page',
-      'Daisy marketplace visibility putting you in front of new clients searching locally',
+      'Optional Daisy marketplace listing that puts you in front of new clients searching locally',
       'Promotional tools for seasonal offers, flash discounts, and new service launches',
     ],
 
@@ -1062,9 +1062,9 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         name: 'Daisy Marketplace Presence',
         description:
-          'Your profile on the Daisy marketplace puts you in front of new clients who are actively searching for beauty services in your area. Unlike social media where you compete for attention, marketplace visitors already intend to book. Your profile includes your portfolio, reviews, pricing, availability, and a direct booking button. The marketplace is a powerful discovery channel that requires no marketing effort from you.',
+          'If you join the Daisy marketplace, available in selected countries, your profile puts you in front of new clients who are actively searching for beauty services in your area. Unlike social media where you compete for attention, marketplace visitors already intend to book. Your profile includes your portfolio, reviews, pricing, availability, and a direct booking button. The marketplace is a powerful discovery channel that requires no marketing effort from you.',
         howItWorks: [
-          'Your Daisy profile is automatically listed on the marketplace based on your location and services.',
+          'You opt in, and after a service-quality review your Daisy profile is listed on the marketplace based on your location and services.',
           'New clients search by service type, location, availability, and rating.',
           'Your portfolio, reviews, and pricing are displayed prominently to build trust.',
           'Clients book directly from your marketplace listing without needing to contact you first.',
@@ -1111,7 +1111,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
         step: 4,
         title: 'Get Discovered on the Marketplace',
         description:
-          'Your profile appears on the Daisy marketplace with your portfolio, reviews, and availability. New clients in your area find and book you without any marketing effort from your side.',
+          'If you opt in and pass the service-quality review, your profile appears on the Daisy marketplace with your portfolio, reviews, and availability. New clients in your area can then find and book you without any marketing effort from your side.',
       },
       {
         step: 5,
@@ -1246,7 +1246,7 @@ export const professionalEntries1: FeatureDeepDive[] = [
       {
         question: 'What is the Daisy marketplace and how does it help me?',
         answer:
-          'The Daisy marketplace is a platform where clients search for beauty services in their area. Your profile is listed automatically with your portfolio, reviews, pricing, and availability. Clients who find you on the marketplace can book directly, giving you a new source of clients without any advertising spend or marketing effort.',
+          'The Daisy marketplace is an optional platform, available in selected countries, where clients search for beauty services in their area. If you opt in and pass a service-quality review, your profile is listed with your portfolio, reviews, pricing, and availability. Clients who find you there can book directly, which gives you a new source of clients without any advertising spend. Commission applies only to the new clients the marketplace brings you.',
       },
       {
         question: 'Do I need marketing experience to use these tools?',
