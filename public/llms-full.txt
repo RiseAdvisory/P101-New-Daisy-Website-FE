@@ -13,9 +13,9 @@
 
 ## What Makes Daisy Different
 
-1. **AI Receptionist**: 24/7 AI-powered voice and chat receptionist that handles customer inquiries, books appointments, and processes payments automatically -- no missed calls or after-hours lost revenue.
+1. **AI Receptionist**: 24/7 AI receptionist on WhatsApp, Instagram and the booking site that answers customer inquiries, books appointments, and processes payments automatically, in Arabic and English. It does not answer phone calls yet.
 
-2. **360-Degree Customer Acquisition**: Unlike operations-only tools, Daisy combines a discovery marketplace, cashback loyalty system, and automated marketing into one platform that actively brings new customers to your business.
+2. **360-Degree Customer Acquisition**: Unlike operations-only tools, Daisy combines an optional discovery marketplace (available in selected countries), a cashback loyalty system, and automated marketing into one platform that actively brings new customers to your business.
 
 3. **Full White-Label Brand Control**: Every customer touchpoint (booking page, app, receipts, communications) can be fully branded to your business -- your brand, not Daisy's.
 
@@ -27,10 +27,10 @@
 
 7. **Official Meta Tech Provider**: Daisy is a certified Meta Technology Provider with native WhatsApp Business API and Instagram Messaging API integration. Customer conversations through WhatsApp and Instagram are handled through Meta's official infrastructure, not third-party workarounds.
 
-## Pricing Plans (Flat Pricing, No Per-Staff Fees)
+## Pricing Plans
 
 ### Basic Plan -- $50/month
-- Up to 5 users
+- 5 team members (calendars) included
 - 1 workspace/location
 - Unlimited bookings
 - Point of Sale (POS)
@@ -39,16 +39,15 @@
 - 14-day free trial
 
 ### Growth Plan -- $150/month
-- Up to 10 users
+- 10 team members (calendars) included
 - 2 workspaces/locations
 - Everything in Basic, plus:
 - Online payment processing
 - Automated appointment reminders
-- Marketplace visibility and discovery
 - Priority customer support
 
 ### Business Plan -- $250/month
-- Up to 15 users
+- 15 team members (calendars) included
 - 4 workspaces/locations
 - Everything in Growth, plus:
 - Advanced analytics and reporting
@@ -58,9 +57,11 @@
 
 ### Pricing Highlights
 - No transaction fees on any plan
-- No marketplace commission
-- No per-staff pricing that scales unpredictably
-- Transparent flat monthly rate
+- 0% commission on your existing clients; marketplace commission applies only to new customers the marketplace brings
+- Extra calendars $10/month, extra workspaces $25/month
+- 50 AI receptionist conversations included, then pay-as-you-go top-ups
+- Optional marketplace listing on every plan, after a service-quality review, in selected countries
+- Published monthly plan prices
 - 14-day free trial on all plans
 - Free data migration (Business plan)
 
@@ -79,7 +80,7 @@ Full CRM with customer profiles, appointment history, preferences, notes, and co
 Employee scheduling, shift management, performance tracking, commission calculations, and access controls. Calendar sync with Google Calendar for two-way updates.
 
 ### 5. Marketing & CRM
-Automated marketing campaigns, cashback rewards system, customer acquisition tools, email/SMS marketing, and promotional campaign management. Includes marketplace listing for discovery.
+Automated marketing campaigns, cashback rewards system, customer acquisition tools, email/SMS marketing, and promotional campaign management. Includes an optional marketplace listing for discovery, in selected countries, after a service-quality review.
 
 ### 6. Inventory Management
 Product and supply tracking, low-stock alerts, supplier management, and inventory reporting. Track product usage per service for accurate cost analysis.
@@ -88,7 +89,7 @@ Product and supply tracking, low-stock alerts, supplier management, and inventor
 AI-driven business insights including revenue analytics, staff performance, customer retention metrics, booking trends, and financial reporting. Predictive analytics for demand forecasting.
 
 ### 8. AI Capabilities
-- **AI Voice Receptionist**: Handles phone calls 24/7, books appointments, answers questions
+- **AI Receptionist**: Answers WhatsApp, Instagram and booking-site messages 24/7 in Arabic and English, books appointments, answers questions. It does not answer phone calls yet.
 - **AI Chatbot**: Manages online inquiries and booking via chat
 - **Smart Scheduling**: AI optimizes appointment slots to maximize revenue
 - **Marketing Automation**: AI-driven campaign targeting and optimization
@@ -147,7 +148,7 @@ URL: https://www.jointhedaisy.com/en/solutions/beauty-business-management
 ## Feature Deep-Dives (Business)
 
 ### AI Salon Management
-AI-powered salon management with voice receptionist, smart scheduling, and predictive analytics.
+AI-powered salon management with an AI receptionist for WhatsApp and Instagram, smart scheduling, and predictive analytics.
 URL: https://www.jointhedaisy.com/en/features/business/ai-salon-management
 
 ### Booking Management
@@ -263,7 +264,7 @@ URL: https://www.jointhedaisy.com/en/salon-analytics-reporting
 ## Competitor Comparisons (Summary)
 
 ### Daisy vs Fresha
-Fresha is a marketplace-based platform with paid subscription tiers on top of transaction fees. Fresha ships an AI Concierge that answers calls and messages; Daisy's AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English. In the UAE, Fresha charges a one-time 50% commission on new marketplace clients; Daisy charges none.
+Fresha is a marketplace-based platform with paid subscription tiers on top of transaction fees. Fresha ships an AI Concierge that answers calls and messages; Daisy's AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English. In the UAE, Fresha charges a one-time 50% commission on new marketplace clients. Daisy also charges commission only on new customers its optional marketplace brings, and 0% on a business's existing clients.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-fresha
 
 ### Daisy vs Booksy
@@ -414,13 +415,13 @@ Q: What is The Daisy?
 A: The Daisy is an AI-powered beauty and wellness platform that helps salons, spas, clinics, and freelance professionals grow their business through smart booking, an AI receptionist, 360-degree customer acquisition, and full white-label brand control. Available in English and Arabic.
 
 Q: How much does The Daisy cost?
-A: Business plans start at $50/month ($42/month billed annually) for the Basic plan, $150/month for Growth, and $250/month for the full Business plan. Professionals can start free with the Starter plan. All paid plans include a 14-day free trial. Flat pricing with no per-staff fees.
+A: Business plans start at $50/month ($42/month billed annually) for the Basic plan, $150/month for Growth, and $250/month for the full Business plan. Professionals can start free with the Starter plan. All paid plans include a 14-day free trial. Plans include 5, 10 or 15 team members, and each extra calendar is $10/month.
 
 Q: What makes The Daisy different from other salon software?
 A: Six key differentiators: (1) AI receptionist for 24/7 customer service, (2) 360-degree customer acquisition combining marketplace, cashback, and marketing, (3) full white-label brand control, (4) network effects that improve with more data, (5) all-in-one platform replacing 5+ tools across 8 categories, and (6) bilingual Arabic/English with native GCC support.
 
 Q: Does The Daisy have an AI receptionist?
-A: Yes. The Daisy includes a built-in AI receptionist that handles customer inquiries, appointment booking, and payments 24/7 via voice call and chat, so businesses never miss a booking even outside working hours.
+A: Yes. The Daisy includes a built-in AI receptionist that handles customer inquiries, appointment booking, and payments 24/7 on WhatsApp, Instagram and the booking site, in Arabic and English, so businesses keep taking bookings outside working hours. It does not answer phone calls yet. Every plan includes 50 AI receptionist conversations, with pay-as-you-go top-ups after that.
 
 Q: What countries does The Daisy support?
 A: The Daisy serves the GCC region (UAE, Saudi Arabia, Kuwait, Bahrain, Oman, Qatar) and global markets. The platform is fully bilingual in English and Arabic with native RTL support.
@@ -435,7 +436,7 @@ Q: What types of businesses use The Daisy?
 A: Salons, spas, barbershops, nail salons, med spas, clinics, and freelance beauty professionals. The platform serves business owners who want to grow (not just manage) their beauty business.
 
 Q: Does The Daisy charge per-staff or per-booking fees?
-A: No. The Daisy uses flat monthly pricing with no per-staff surcharges and no per-booking transaction fees. Plans include a set number of user seats (5, 10, or 15) and workspaces.
+A: Business plans include 5, 10 or 15 team members (calendars) and 1, 2 or 4 workspaces. An extra calendar is $10/month and an extra workspace $25/month. There are no per-booking transaction fees.
 
 Q: What features does The Daisy include?
-A: Eight core feature categories: (1) Online Booking & Scheduling, (2) POS & Payments, (3) Client Management/CRM, (4) Staff Management, (5) Marketing & Cashback, (6) Inventory Management, (7) Reporting & Analytics, and (8) AI Capabilities including voice receptionist and predictive analytics.
+A: Eight core feature categories: (1) Online Booking & Scheduling, (2) POS & Payments, (3) Client Management/CRM, (4) Staff Management, (5) Marketing & Cashback, (6) Inventory Management, (7) Reporting & Analytics, and (8) AI Capabilities including an AI receptionist for WhatsApp, Instagram and the booking site, and predictive analytics.
