@@ -173,7 +173,7 @@ export const faqPageData: I18nContent<FaqPageData> = {
         {
           title: 'Getting Started',
           questions: [
-            { question: 'What is The Daisy for beauty professionals?', answer: 'The Daisy gives beauty professionals their own booking page, AI-powered customer service, payment processing, and the option to list in a marketplace of customers actively looking for services, whether you work at a salon, freelance, or run your own business.' },
+            { question: 'What is The Daisy for beauty professionals?', answer: 'The Daisy gives beauty professionals their own booking page, AI-powered customer service, payment processing, and the option to list in a marketplace of customers looking for services. It works for professionals at a salon, freelancers and owners of their own business.' },
             { question: 'Who can join as a professional?', answer: 'Hairstylists, nail technicians, aestheticians, makeup artists, beauty therapists, barbers, spa therapists, and any licensed beauty or wellness professional. Freelance, salon-based, and mobile service providers are all welcome.' },
             { question: 'Do I need to work at a salon to join?', answer: 'No. Freelance professionals, independent stylists, mobile service providers, and salon-based professionals are all welcome.' },
             { question: 'How do I sign up?', answer: 'Download The Daisy app, select "Professional" during registration, and complete your profile with your services, pricing, availability, and portfolio photos. Verification typically takes 24-48 hours.' },
