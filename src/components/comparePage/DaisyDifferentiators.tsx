@@ -17,8 +17,8 @@ const uiStrings = {
     keyAdvantage: 'Key advantage',
     descriptions: [
       'Handles bookings, payments, and customer service in Arabic and English around the clock.',
-      'Marketplace, cashback rewards, and AI marketing working together to fill your calendar.',
-      'A branded booking page, so clients see your brand, not ours.',
+      'Cashback rewards and AI marketing, plus an optional marketplace in selected countries, working together to fill your calendar.',
+      'A booking page with your logo, name and colours, hosted by Daisy. You can redirect your own domain to it.',
       'More businesses on the platform means smarter AI recommendations for everyone.',
       'Booking, payments, CRM, marketing, analytics, inventory, marketplace, and AI in one platform.',
       'Native Arabic and English with full RTL support, built for the GCC market and beyond.',
@@ -30,8 +30,8 @@ const uiStrings = {
     keyAdvantage: 'ميزة رئيسية',
     descriptions: [
       'يتولى الحجوزات والمدفوعات وخدمة العملاء بالعربية والإنجليزية على مدار الساعة.',
-      'السوق ومكافآت الكاشباك والتسويق بالذكاء الاصطناعي يعملون معاً لملء جدولك.',
-      'وايت ليبل لكل شيء حتى يرى العملاء علامتك التجارية، وليس علامتنا.',
+      'مكافآت الكاشباك والتسويق بالذكاء الاصطناعي، إلى جانب سوق اختياري متاح في دول مختارة، تعمل معاً لملء جدولك.',
+      'صفحة حجز بشعارك واسمك وألوانك تستضيفها ديزي، ويمكنك تحويل نطاقك الخاص إليها.',
       'كلما زاد عدد الشركات على المنصة، أصبحت توصيات الذكاء الاصطناعي أذكى للجميع.',
       'الحجوزات والمدفوعات وإدارة العملاء والتسويق والتحليلات والمخزون والسوق والذكاء الاصطناعي في منصة واحدة.',
       'عربي وإنجليزي أصلي مع دعم كامل للاتجاه من اليمين لليسار، مصمم لسوق الخليج وما بعده.',
