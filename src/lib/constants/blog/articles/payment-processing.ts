@@ -706,7 +706,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <li><strong>Commission on bookings:</strong> None. Square Appointments has a free plan, and its paid plans carry a monthly fee per location</li>
 <li><strong>Monthly fee:</strong> Square Free $0; Plus $49/month per location; Premium $149/month per location</li>
 <li><strong>Payout speed:</strong> next business day by default, at no charge; instant or same-day transfers cost 1.95% per transfer</li>
-<li><strong>Key consideration:</strong> a general-purpose POS with beauty booking on top. Square AI (beta) comes with all three plans, and Square Assistant answers client texts 24/7 to confirm, reschedule or cancel. Square does not operate in the GCC, so salons there cannot sign up for it.</li>
+<li><strong>Key consideration:</strong> a general-purpose POS with beauty booking on top. Square AI (beta) comes with all three plans, and Square Assistant lets clients reply to text reminders to confirm, cancel or change an appointment. Square does not operate in the GCC, so salons there cannot sign up for it.</li>
 </ul>
 
 <h3>Fresha</h3>
@@ -839,7 +839,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
     metaDescription:
       'Compare salon payment processing fees across The Daisy, Square, Fresha, Stripe, and SumUp. See real cost breakdowns including per-transaction charges and commissions.',
     createdAt: '2025-08-14T05:00:00.000Z',
-    updatedAt: '2026-10-10T08:00:00.000Z',
+    updatedAt: '2026-10-13T08:00:00.000Z',
     publishedAt: '2025-08-14T05:00:00.000Z',
     locale: 'en',
     sortId: 26,
@@ -1569,7 +1569,7 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <li><strong>عمولة الحجوزات:</strong> لا شيء. لدى Square Appointments خطة مجانية، أما الخطط المدفوعة فلها رسوم شهرية لكل موقع</li>
 <li><strong>الرسوم الشهرية:</strong> Square Free مجاناً؛ Plus بسعر 49 دولاراً شهرياً لكل موقع؛ Premium بسعر 149 دولاراً شهرياً لكل موقع</li>
 <li><strong>سرعة الدفع:</strong> في يوم العمل التالي افتراضياً ودون رسوم؛ التحويل الفوري أو في اليوم نفسه برسوم 1.95% لكل تحويل</li>
-<li><strong>الاعتبارات الرئيسية:</strong> نقطة بيع للأغراض العامة مع حجز لأعمال التجميل. تأتي Square AI (في مرحلة تجريبية beta) مع الخطط الثلاث، ويرد Square Assistant على رسائل العملاء النصية على مدار الساعة لتأكيد المواعيد أو إعادة جدولتها أو إلغائها. لا تعمل Square في دول الخليج، لذلك لا يمكن للصالونات هناك الاشتراك فيها.</li>
+<li><strong>الاعتبارات الرئيسية:</strong> نقطة بيع للأغراض العامة مع حجز لأعمال التجميل. تأتي Square AI (في مرحلة تجريبية beta) مع الخطط الثلاث، ويتيح Square Assistant للعملاء الرد على رسائل التذكير النصية لتأكيد المواعيد أو تغييرها أو إلغائها. لا تعمل Square في دول الخليج، لذلك لا يمكن للصالونات هناك الاشتراك فيها.</li>
 </ul>
 
 <h3>فريشا</h3>
@@ -1701,7 +1701,7 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
     metaDescription:
       'قارن رسوم معالجة الدفع للصالونات. تعلّم الفرق بين الأسعار الثابتة والمتغيرة واختر الأنسب لعملك.',
     createdAt: '2025-08-14T05:00:00.000Z',
-    updatedAt: '2026-10-10T08:00:00.000Z',
+    updatedAt: '2026-10-13T08:00:00.000Z',
     publishedAt: '2025-08-14T05:00:00.000Z',
     locale: 'ar',
     sortId: 26,

@@ -458,7 +458,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     keywords: ['daisy vs dingg', 'dingg alternative', 'ai salon software', 'gcc salon management'],
     heroTitle: 'Daisy vs DINGG',
     heroSubtitle: 'Both publish AI that books appointments on WhatsApp. They differ on channels, language, pricing and GCC coverage.',
-    tldr: 'DINGG is an India-based salon platform whose AI assistant answers clients and takes bookings on WhatsApp. It runs country sites for five GCC states and gives prices on request. Daisy\'s AI receptionist also covers Instagram, in Arabic and English, and Daisy adds cashback rewards, an optional consumer marketplace and published prices. Daisy is live in all six GCC countries.',
+    tldr: 'DINGG is an India-based salon platform whose AI assistant answers clients and takes bookings on WhatsApp. It runs country sites for five GCC states. Its US prices start at $79 a month, and its UAE prices are given on request. Daisy\'s AI receptionist also covers Instagram, in Arabic and English, and Daisy adds cashback rewards, an optional consumer marketplace and published prices. Daisy is live in all six GCC countries.',
     verdict: 'DINGG is a credible AI competitor with a broad feature set and local billing in five GCC states. Daisy is the better fit if you need Bahrain, an Arabic interface, an AI receptionist on Instagram, cashback rewards, or prices you can see before a demo.',
     featureCommentary: {
       onlineBooking: 'Both offer 24/7 online booking. DINGG books through your website and its WhatsApp AI assistant; Daisy\'s AI books on WhatsApp, Instagram and the booking site.',
@@ -676,7 +676,7 @@ export const alternativePages: AlternativePageData[] = [
       'Online payments charged at 4.90% + AED 0.75, eating into every transaction',
       'A one-time marketplace commission on each new client it introduces: 50% with an AED 20 minimum in the UAE, 20% in its USD markets',
       'Marketing is charged per message once the first 50 emails each month are used',
-      'The AI Concierge is a paid add-on at $99.95 per location per month, and its published pages do not list WhatsApp or Instagram as supported channels',
+      'The AI Concierge is a paid add-on, listed at $99.95 per location per month on Fresha\'s US pricing page, and its published pages do not list WhatsApp or Instagram as supported channels',
       'Marketplace bookings carry Fresha branding; a fully branded site is a paid Smart Website add-on',
       'A published monthly subscription that sits on top of transaction fees and marketplace commission',
     ],

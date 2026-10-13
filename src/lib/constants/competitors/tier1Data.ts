@@ -130,7 +130,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on at $99.95 per location per month, including 200 minutes and 500 messages. Its published pages do not list WhatsApp or Instagram as Concierge channels, so confirm channel coverage with Fresha directly. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English; it does not answer phone calls today.',
+        'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on, listed at $99.95 per location per month on Fresha\'s US pricing page, including 200 minutes and 500 messages. Its published pages do not list WhatsApp or Instagram as Concierge channels, so confirm channel coverage with Fresha directly. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English; it does not answer phone calls today.',
     },
 
     targetMarket:
@@ -258,7 +258,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     ],
 
     competitorWeaknesses: [
-      'AI Concierge is a paid add-on at $99.95 per location per month, and its published pages do not list WhatsApp or Instagram as supported channels',
+      'AI Concierge is a paid add-on, listed at $99.95 per location per month on Fresha\'s US pricing page, and its published pages do not list WhatsApp or Instagram as supported channels',
       'Marketing is billed per message once the first 50 emails each month are used',
       'Subscription fees plus transaction fees and marketplace commissions add up quickly',
       'Marketing is email and SMS with no AI campaign automation',
@@ -306,7 +306,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Does Fresha have AI features like Daisy?',
         answer:
-          'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on at $99.95 per location per month. Its published pages do not list WhatsApp or Instagram as Concierge channels. Daisy\'s AI receptionist handles WhatsApp and Instagram chat and the booking site, takes payments, and works in Arabic and English. It does not answer phone calls today.',
+          'Fresha publishes an AI Concierge that answers calls and messages and books appointments, sold as a paid add-on, listed at $99.95 per location per month on Fresha\'s US pricing page. Its published pages do not list WhatsApp or Instagram as Concierge channels. Daisy\'s AI receptionist handles WhatsApp and Instagram chat and the booking site, takes payments, and works in Arabic and English. It does not answer phone calls today.',
       },
       {
         question: 'How good is the Fresha mobile app?',

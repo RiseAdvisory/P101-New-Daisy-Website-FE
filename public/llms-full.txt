@@ -292,7 +292,7 @@ Glamera is salon software based in Riyadh, with plans from SAR 125/mo and no fre
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-glamera
 
 ### Daisy vs DINGG
-DINGG is based in Pune, India, with country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman. Its AI handles WhatsApp conversations and bookings, and pricing is on request. DINGG publishes no Arabic interface; Daisy works in Arabic and English.
+DINGG is based in Pune, India, with country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman. Its AI handles WhatsApp conversations and bookings. Its US prices start at $79/month for one location ($149/month for multiple locations), and UAE pricing is on request. DINGG publishes no Arabic interface; Daisy works in Arabic and English.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-dingg
 
 ### Daisy vs RepeatMD
@@ -308,7 +308,7 @@ Mangomint is salon and spa software for the US and Canada, at $120 per location 
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-mangomint
 
 ### Daisy vs Square Appointments
-Square Appointments is part of Square's payment ecosystem. In the US it has a free plan, with Plus at $49/mo and Premium at $149/mo per location. Square AI (beta) is on every plan, and Square Assistant answers client texts 24/7. Square operates in Australia, Canada, France, Ireland, Japan, Spain, the UK and the US, and not in the GCC. Daisy serves the GCC, in Arabic and English.
+Square Appointments is part of Square's payment ecosystem. In the US it has a free plan, with Plus at $49/mo and Premium at $149/mo per location. Square AI (beta) is on every plan, and Square Assistant lets clients reply to text reminders to confirm, cancel or change an appointment. Square operates in Australia, Canada, France, Ireland, Japan, Spain, the UK and the US, and not in the GCC. Daisy serves the GCC, in Arabic and English.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-square-appointments
 
 ### Daisy vs Phorest

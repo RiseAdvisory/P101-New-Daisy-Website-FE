@@ -285,19 +285,26 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       brandingAndWhiteLabel: 1,
     },
 
-    // DINGG publishes no prices. dingg.app/ae FAQ, read 2026-10-09: "DINGG
-    // offers affordable monthly and annual plans in AED ... Book a free demo
-    // for current UAE pricing." /pricing redirects to the demo form. The old
-    // $49 and $79 tiers came from a third-party listing, not from DINGG. Its
-    // country pages offer a free trial without stating the length.
+    // US prices from DINGG's own blog, "DINGG vs Vagaro vs Fresha vs Zenoti
+    // vs Booksy: Compared" (dingg.app/blogs/comparison-of-the-top-salon-
+    // management-software-in-the-us, modified 2026-07-08, read 2026-10-13):
+    // "Starts at $79/month flat (single location), $149/month
+    // (multi-location)", with reminders, WhatsApp marketing and loyalty
+    // included. UAE pricing is not shown: dingg.app/ae FAQ (read 2026-10-09)
+    // says "Book a free demo for current UAE pricing". Its country pages
+    // offer a free trial without stating the length.
     pricing: {
       hasFreePlan: false,
-      startingPrice: 'Pricing on request',
-      tiers: [],
+      startingPrice: 'From $79/mo in the US',
+      startingPriceNumeric: 79,
+      tiers: [
+        { name: 'Single location (US)', price: '$79/mo', priceNumeric: 79, billingCycle: 'monthly', features: ['One location', 'Reminders, WhatsApp marketing and loyalty included'] },
+        { name: 'Multi-location (US)', price: '$149/mo', priceNumeric: 149, billingCycle: 'monthly', features: ['Multiple locations'] },
+      ],
       hiddenCosts: [],
-      // Not published by DINGG; this field is not rendered on any page.
+      // DINGG's blog calls its US price flat; this field is not rendered.
       pricingModel: 'flat',
-      pricingPageUrl: 'https://www.dingg.app/ae',
+      pricingPageUrl: 'https://dingg.app/blogs/comparison-of-the-top-salon-management-software-in-the-us',
       lastVerified: '2026-10-09',
     },
 
@@ -362,7 +369,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       'AI receptionist that also answers on Instagram; DINGG lists WhatsApp, SMS and your website for its AI assistant',
       'Arabic and English interface; DINGG\'s pages mention Arabic for WhatsApp messages',
       'Cashback rewards for customers; DINGG\'s loyalty runs on points, vouchers and prepaid credits',
-      'Published prices; DINGG gives pricing in a demo',
+      'Published prices for the GCC; DINGG gives its UAE pricing in a demo',
       'Optional consumer marketplace, in selected countries, for customer acquisition',
     ],
 
@@ -405,7 +412,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'How much does DINGG cost?',
         answer:
-          'DINGG does not publish prices. Its UAE site says it offers monthly and annual plans in AED and asks you to book a free demo for current pricing. Daisy publishes its plans on its pricing page.',
+          'In the US, DINGG\'s own blog lists $79 a month for a single location and $149 a month for multiple locations, with reminders, WhatsApp marketing and loyalty included. Its UAE site shows no prices: it offers monthly and annual plans in AED and asks you to book a free demo for current pricing. Daisy publishes its plans on its pricing page.',
       },
       {
         question: 'Can I migrate my salon data from DINGG to Daisy?',
@@ -441,7 +448,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
 
     lastResearched: '2026-10-09',
     notes:
-      'The closest Tier 2 rival on AI: its WhatsApp assistant takes bookings. Country sites in five GCC states, without Bahrain. Prices on request. Recheck dingg.app for an Arabic interface and a Bahrain site.',
+      'The closest Tier 2 rival on AI: its WhatsApp assistant takes bookings. Country sites in five GCC states, without Bahrain. US prices from $79/mo on its blog; UAE prices on request. Recheck dingg.app for an Arabic interface and a Bahrain site.',
   },
 
   // ---------------------------------------------------------------------------
