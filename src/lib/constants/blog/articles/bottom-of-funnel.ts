@@ -189,7 +189,7 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
 <h2>What to look for in your new salon platform</h2>
 <p>Still deciding? These are what separate a modern platform from legacy software:</p>
 <ul>
-<li><strong>AI-powered booking:</strong> scheduling that optimises the calendar for you rather than just putting bookings online. <a href="/en/features/business/ai-salon-management">The Daisy's AI receptionist</a> takes bookings across every channel 24/7.</li>
+<li><strong>AI-powered booking:</strong> scheduling that optimises the calendar for you rather than just putting bookings online. <a href="/en/features/business/ai-salon-management">The Daisy's AI receptionist</a> takes bookings on WhatsApp, Instagram and your booking site 24/7.</li>
 <li><strong>Multi-channel client acquisition:</strong> a platform that brings clients in rather than only managing the ones you have. Marketplace visibility, cashback incentives, and marketing tools built in all count.</li>
 <li><strong>Growth analytics:</strong> live dashboards covering revenue trends, retention, staff performance, and where the growth is, rather than a basic appointment report.</li>
 <li><strong>Scalability:</strong> if expansion is the plan, the platform needs <a href="/en/features/business/business-growth">multi-location management</a> from one dashboard.</li>
@@ -221,7 +221,7 @@ const salonSwitchingChecklistArticle: LocalBlogPost = {
     metaDescription:
       'Follow this 30-day checklist to switch salon software without losing clients or data. Covers migration, training, client comms, and go-live planning.',
     createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'en',
     sortId: 49,
@@ -510,9 +510,9 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
 <p>Platforms like <a href="/en/salon-management-software">The Daisy</a> ship features built to bring money in. The levers, and how to size each one:</p>
 
 <h4>Recovered missed bookings</h4>
-<p>Salons miss 30-40% of inbound booking calls because staff are with clients. An AI receptionist covering phone, WhatsApp, Instagram, and web chat around the clock catches the bookings that were going to a competitor.</p>
-<p><strong>How to calculate:</strong> Estimate your missed calls per week (ask your team or check phone records). Multiply by your average booking value. Even converting 50% of previously missed inquiries into bookings creates significant revenue.</p>
-<p><em>Example: 15 missed calls/week x $80 average booking x 50% conversion = $600/week = $2,400/month in recovered revenue.</em></p>
+<p>Booking messages that sit unanswered while staff are with clients, or after closing, often become bookings somewhere else. An AI receptionist covering WhatsApp, Instagram, and web chat around the clock replies before the client moves on. The Daisy's AI receptionist does not answer phone calls yet.</p>
+<p><strong>How to calculate:</strong> Estimate your unanswered booking messages per week (check your WhatsApp and Instagram inboxes). Multiply by your average booking value. Even converting 50% of previously missed inquiries into bookings creates significant revenue.</p>
+<p><em>Example: 15 unanswered inquiries/week x $80 average booking x 50% conversion = $600/week = $2,400/month in recovered revenue.</em></p>
 
 <h4>Reduced no-shows</h4>
 <p>Automated reminders by SMS, WhatsApp, and email cut no-shows 15-40%. A no-show is a slot you cannot resell, so all of it is lost.</p>
@@ -664,7 +664,7 @@ const calculateRoiSwitchingArticle: LocalBlogPost = {
     metaDescription:
       'Learn how to calculate the ROI of switching salon software. Covers revenue gains, cost savings, time savings, and a step-by-step formula for your business.',
     createdAt: '2025-05-26T05:00:00.000Z',
-    updatedAt: '2025-05-26T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-05-26T05:00:00.000Z',
     locale: 'en',
     sortId: 51,
@@ -880,7 +880,7 @@ const salonSwitchingChecklistArticleAr: LocalBlogPost = {
 <h2>ما يجب البحث عنه في منصة الصالون الجديدة</h2>
 <p>إذا كنت لا تزال تقيّم الخيارات، إليك القدرات التي تفصل المنصات الحديثة عن البرامج القديمة:</p>
 <ul>
-<li><strong>حجز مدعوم بالذكاء الاصطناعي:</strong> جدولة ذكية تحسّن تقويمك تلقائيًا، وليس مجرد حجز أساسي عبر الإنترنت. <a href="/ar/features/business/ai-salon-management">موظف الاستقبال الذكي في ديزي</a> يتعامل مع الحجوزات عبر كل قناة على مدار الساعة.</li>
+<li><strong>حجز مدعوم بالذكاء الاصطناعي:</strong> جدولة ذكية تحسّن تقويمك تلقائيًا، وليس مجرد حجز أساسي عبر الإنترنت. <a href="/ar/features/business/ai-salon-management">موظف الاستقبال الذكي في ديزي</a> يتعامل مع الحجوزات عبر واتساب وإنستغرام وموقع الحجز على مدار الساعة.</li>
 <li><strong>استقطاب عملاء متعدد القنوات:</strong> منصة تجلب لك عملاء جدد، ولا تكتفي بإدارة الموجودين. رؤية السوق وحوافز الكاشباك وأدوات التسويق المتكاملة مهمة.</li>
 <li><strong>تحليلات النمو:</strong> لوحات معلومات فورية تعرض اتجاهات الإيرادات واحتفاظ العملاء وأداء الموظفين وفرص النمو - وليس مجرد تقارير مواعيد أساسية.</li>
 <li><strong>قابلية التوسع:</strong> إذا كنت تخطط للتوسع، يجب أن تدعم منصتك <a href="/ar/features/business/business-growth">إدارة المواقع المتعددة</a> من لوحة تحكم واحدة.</li>
@@ -912,7 +912,7 @@ const salonSwitchingChecklistArticleAr: LocalBlogPost = {
     metaDescription:
       'اتبع قائمة التحقق هذه لمدة 30 يومًا لتبديل برنامج الصالون دون فقدان العملاء أو البيانات. تغطي النقل والتدريب والتواصل وتخطيط الإطلاق.',
     createdAt: '2026-03-18T08:00:00.000Z',
-    updatedAt: '2026-03-18T08:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'ar',
     sortId: 49,
@@ -1197,9 +1197,9 @@ const calculateRoiSwitchingArticleAr: LocalBlogPost = {
 <p>المنصات الحديثة مثل <a href="/ar/salon-management-software">ديزي</a> تتضمن ميزات مصممة خصيصًا لزيادة الإيرادات. إليك رافعات الإيرادات وكيفية تقدير تأثيرها:</p>
 
 <h4>الحجوزات الفائتة المستردة</h4>
-<p>الصالونات تفوّت 30-40% من مكالمات الحجز الواردة لأن الموظفين مشغولون مع العملاء. موظف استقبال ذكي يتعامل مع الاستفسارات على مدار الساعة عبر الهاتف وواتساب وإنستغرام والدردشة يلتقط حجوزات كانت ستذهب لمنافس.</p>
-<p><strong>كيفية الحساب:</strong> قدّر مكالماتك الفائتة أسبوعيًا (اسأل فريقك أو تحقق من سجلات الهاتف). اضربها في متوسط قيمة الحجز. حتى تحويل 50% من الاستفسارات الفائتة سابقًا إلى حجوزات يخلق إيرادات كبيرة.</p>
-<p><em>مثال: 15 مكالمة فائتة/أسبوع × 80 دولار متوسط حجز × 50% تحويل = 600 دولار/أسبوع = 2,400 دولار/شهر في إيرادات مستردة.</em></p>
+<p>رسائل الحجز التي تبقى دون رد بينما الموظفون مشغولون مع العملاء، أو بعد الإغلاق، كثيرًا ما تتحول إلى حجوزات في مكان آخر. موظف استقبال ذكي يرد على الاستفسارات على مدار الساعة عبر واتساب وإنستغرام والدردشة يجيب عليها قبل أن ينتقل العميل إلى غيرك. موظف الاستقبال الذكي من ديزي لا يرد على المكالمات الهاتفية حتى الآن.</p>
+<p><strong>كيفية الحساب:</strong> قدّر رسائل الحجز التي لم يُرد عليها أسبوعيًا (تحقق من صناديق رسائل واتساب وإنستغرام). اضربها في متوسط قيمة الحجز. حتى تحويل 50% من الاستفسارات الفائتة سابقًا إلى حجوزات يخلق إيرادات كبيرة.</p>
+<p><em>مثال: 15 استفسارًا دون رد/أسبوع × 80 دولار متوسط حجز × 50% تحويل = 600 دولار/أسبوع = 2,400 دولار/شهر في إيرادات مستردة.</em></p>
 
 <h4>تقليل حالات عدم الحضور</h4>
 <p>التذكيرات التلقائية عبر الرسائل النصية وواتساب والبريد الإلكتروني تقلل عدم الحضور بنسبة 15-40%. كل حالة عدم حضور هي فترة زمنية لا يمكن إعادة بيعها - إنها إيرادات مفقودة محضة.</p>
@@ -1351,7 +1351,7 @@ const calculateRoiSwitchingArticleAr: LocalBlogPost = {
     metaDescription:
       'تعلم كيف تحسب العائد على الاستثمار من تبديل برنامج الصالون. يغطي مكاسب الإيرادات وتوفير التكاليف وتوفير الوقت وصيغة خطوة بخطوة لعملك.',
     createdAt: '2025-05-26T05:00:00.000Z',
-    updatedAt: '2025-05-26T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-05-26T05:00:00.000Z',
     locale: 'ar',
     sortId: 51,

@@ -1254,7 +1254,7 @@ const independentBeautyProfessionalMarketingArticle: LocalBlogPost = {
 <p>Four more channels are worth your time beyond social media.</p>
 
 <h3>Platform profiles</h3>
-<p>Booking platforms put you in front of people searching by service and location. <a href="/en/features/professional/marketing-promotions">The Daisy's professional profile</a> is built for being found, holding your portfolio, services, reviews, and booking together. Fill every field, because professionals with complete profiles receive 3-4x more booking enquiries than those with partial profiles.</p>
+<p>Booking platforms with a marketplace put you in front of people searching by service and location. <a href="/en/features/professional/marketing-promotions">The Daisy's professional profile</a> holds your portfolio, services, reviews, and booking together. If you join Daisy's optional marketplace, available in selected countries after a service-quality review, it is the profile clients there see. Fill every field, because professionals with complete profiles receive 3-4x more booking enquiries than those with partial profiles.</p>
 
 <h3>Google Business Profile</h3>
 <p>Working from a fixed address, whether a rented chair, a studio, or a room at home, means claiming one of these. It catches people already searching for your service nearby, which is as ready to book as anyone gets. Apply the same principles from our <a href="/en/resources/blog/business/google-my-business-salon-optimization">Google Business Profile guide</a>, scaled to one person.</p>
@@ -1313,7 +1313,7 @@ const independentBeautyProfessionalMarketingArticle: LocalBlogPost = {
     metaDescription:
       'Complete marketing guide for independent beauty professionals. Covers personal branding, social media, client acquisition, pricing, and building a loyal client base.',
     createdAt: '2025-09-21T05:00:00.000Z',
-    updatedAt: '2025-09-21T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-09-21T05:00:00.000Z',
     locale: 'en',
     sortId: 72,
@@ -2547,7 +2547,7 @@ const independentBeautyProfessionalMarketingArticleAr: LocalBlogPost = {
 <p>بعيدًا عن وسائل التواصل الاجتماعي، يمكن للمحترفين المستقلين الاستفادة من العديد من قنوات الاكتساب عالية التأثير.</p>
 
 <h3>ملفات تعريف النظام الأساسي</h3>
-<p> توفر منصات الحجز الاحترافية اكتشافًا مدمجًا للعملاء الذين يبحثون حسب الخدمة والموقع. <a href="/ar/features/professional/marketing-promotions">تم تحسين الملف الشخصي الاحترافي لـ ديزي</a> لاكتشاف العملاء، من خلال محفظتك وخدماتك ومراجعاتك وحجزك المباشر في مكان واحد. أكمل ملفك الشخصي بالكامل - يتلقى المحترفون الذين لديهم ملفات شخصية كاملة استفسارات حجز أكثر بمقدار 3-4 مرات من أولئك الذين لديهم ملفات شخصية جزئية.</p>
+<p> توفر منصات الحجز التي تضم سوقًا اكتشافًا مدمجًا للعملاء الذين يبحثون حسب الخدمة والموقع. <a href="/ar/features/professional/marketing-promotions">يجمع الملف الشخصي الاحترافي لـ ديزي</a> محفظتك وخدماتك ومراجعاتك وحجزك المباشر في مكان واحد، وهو الملف الذي يراه العملاء في سوق ديزي الاختياري إذا انضممت إليه، وهذا السوق متاح في دول مختارة ويخضع الإدراج فيه لمراجعة جودة الخدمة. أكمل ملفك الشخصي بالكامل - يتلقى المحترفون الذين لديهم ملفات شخصية كاملة استفسارات حجز أكثر بمقدار 3-4 مرات من أولئك الذين لديهم ملفات شخصية جزئية.</p>
 
 <h3>الملف التجاري على جوجل</h3>
 <p>إذا كان لديك موقع ثابت (كرسي مستأجر، أو استوديو، أو صالون منزلي)، فاطلب ملفًا تجاريًا على جوجل. يلتقط هذا العملاء ذوي الاهتمام الأكبر - الأشخاص الذين يبحثون بنشاط عن خدماتك في منطقتك. اتبع نفس مبادئ التحسين الواردة في <a href="/ar/resources/blog/business/google-my-business-salon-optimization">دليل الملفات التجارية على جوجل</a>، والذي تم تكييفه ليناسب ممارستك الفردية.</p>
@@ -2605,7 +2605,7 @@ const independentBeautyProfessionalMarketingArticleAr: LocalBlogPost = {
     metaDescription:
       'دليل تسويقي شامل لمحترفي التجميل المستقلين. يغطي العلامة التجارية الشخصية ووسائل التواصل واستقطاب العملاء والتسعير وبناء قاعدة عملاء مخلصة.',
     createdAt: '2025-09-21T05:00:00.000Z',
-    updatedAt: '2025-09-21T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-09-21T05:00:00.000Z',
     locale: 'ar',
     sortId: 72,

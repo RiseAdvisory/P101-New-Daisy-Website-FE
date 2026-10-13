@@ -102,7 +102,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
     metaTitle:
       'AI for Beauty Salons. AI Receptionist, Smart Booking & Business Intelligence | The Daisy',
     metaDescription:
-      'The Daisy is an AI-powered salon management platform with a 24/7 AI receptionist that answers calls, books appointments, processes payments, and delivers smart business insights in Arabic and English.',
+      'The Daisy is an AI-powered salon management platform with a 24/7 AI receptionist that replies on WhatsApp, Instagram and your booking site, books appointments, processes payments, and delivers smart business insights in Arabic and English.',
     keywords: [
       'AI salon management',
       'AI receptionist for salons',
@@ -118,17 +118,17 @@ export const featureDeepDives: FeatureDeepDive[] = [
 
     heroTitle: 'AI Business Intelligence for Salons & Beauty Businesses',
     heroSubtitle:
-      'The Daisy\'s AI receptionist answers every call, books every appointment, processes payments, and delivers smart business insights 24/7, in Arabic and English.',
+      'The Daisy\'s AI receptionist answers messages on WhatsApp, Instagram and your booking site, books appointments, processes payments, and delivers smart business insights 24/7, in Arabic and English.',
     heroStat: {
       value: '24/7',
       label: 'Always-on AI receptionist',
     },
 
     overview:
-      'The Daisy is an AI-powered booking and business management platform designed for the beauty and wellness industry. Unlike generic salon management software, The Daisy integrates artificial intelligence into every aspect of your operations, from an AI receptionist that answers calls and books appointments 24/7, to predictive analytics that forecast demand and identify growth opportunities. Beauty professionals spend hours managing schedules, clients, and marketing manually. AI automation handles these repetitive tasks so you can focus on delivering exceptional service. The Daisy\'s AI system understands beauty industry terminology, communicates naturally in both Arabic and English, processes bookings and payments autonomously, and surfaces actionable business insights from your data. Whether you run a single chair or manage a multi-location chain, the AI scales to match your ambitions without increasing your headcount.',
+      'The Daisy is an AI-powered booking and business management platform designed for the beauty and wellness industry. Unlike generic salon management software, The Daisy integrates artificial intelligence into every aspect of your operations, from an AI receptionist that answers WhatsApp and Instagram messages and books appointments 24/7, to predictive analytics that forecast demand and identify growth opportunities. Beauty professionals spend hours managing schedules, clients, and marketing manually. AI automation handles these repetitive tasks so you can focus on delivering exceptional service. The Daisy\'s AI system understands beauty industry terminology, communicates naturally in both Arabic and English, processes bookings and payments autonomously, and surfaces actionable business insights from your data. It works the same for a single chair or a multi-location chain, without adding front-desk staff.',
 
     keyCapabilities: [
-      'AI receptionist that answers calls and books appointments 24/7',
+      'AI receptionist that answers WhatsApp and Instagram messages and books appointments 24/7',
       'Smart scheduling that optimises calendars for maximum revenue',
       'Predictive business insights with automated weekly reports',
       'Automated client communication across WhatsApp, SMS, and email',
@@ -137,8 +137,8 @@ export const featureDeepDives: FeatureDeepDive[] = [
     ],
 
     painPoints: [
-      'Industry data shows salons miss 30–40% of inbound calls, meaning potential bookings go to competitors who respond faster.',
-      'Staff spend up to 4 hours daily on administrative tasks, answering phones, confirming appointments, sending reminders, instead of serving clients.',
+      'Messages that arrive while your team is with clients can wait hours for a reply, and those clients often book with whoever answers first.',
+      'Staff lose hours every day to admin: replying to messages, confirming appointments and sending reminders instead of serving clients.',
       'Generic CRM tools and booking platforms lack beauty-industry intelligence, forcing business owners to piece together fragmented solutions.',
       'Manual scheduling creates double-bookings, underutilised time slots, and scheduling gaps that directly reduce daily revenue.',
       'Without data-driven insights, business decisions rely on gut feeling rather than evidence, leading to missed growth opportunities.',
@@ -151,9 +151,9 @@ export const featureDeepDives: FeatureDeepDive[] = [
       {
         name: 'AI Receptionist',
         description:
-          'A fully autonomous receptionist that handles inbound and outbound customer interactions through voice calls, WhatsApp, Instagram DMs, website chat, and SMS. It understands context, remembers client preferences, and communicates naturally in both Arabic and English, no scripts, no hold music, no missed calls.',
+          'A fully autonomous receptionist that handles customer conversations on WhatsApp, Instagram DMs and your booking site. It understands context, remembers client preferences and talks naturally in Arabic and English without scripts. It does not answer phone calls yet.',
         howItWorks: [
-          'Customer reaches out via any supported channel (phone, WhatsApp, chat, social media).',
+          'Customer messages you on WhatsApp, Instagram or your booking site.',
           'AI identifies the customer from your database or creates a new profile automatically.',
           'AI understands the request, booking, rescheduling, pricing inquiry, or general question, and responds naturally.',
           'If booking, AI checks real-time availability, suggests optimal time slots, and confirms the appointment.',
@@ -222,7 +222,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
         step: 1,
         title: 'Connect Your Channels',
         description:
-          'Link your phone line, WhatsApp Business, Instagram, website, and any other customer touchpoints. Setup takes minutes, not days.',
+          'Link your WhatsApp Business account, Instagram and your Daisy booking site. Setup takes minutes, not days.',
       },
       {
         step: 2,
@@ -234,7 +234,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
         step: 3,
         title: 'Customers Interact Naturally',
         description:
-          'Clients call, message, or chat as they normally would. The AI handles the conversation naturally, booking, answering questions, or routing complex requests to your team.',
+          'Clients message you on WhatsApp, Instagram or your booking site as they normally would. The AI handles the conversation naturally, booking, answering questions, or routing complex requests to your team.',
       },
       {
         step: 4,
@@ -253,7 +253,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
     comparisonHighlights: [
       {
         area: 'Customer Response',
-        daisy: '24/7 instant response across all channels, voice, chat, social, SMS',
+        daisy: '24/7 instant replies on WhatsApp, Instagram and your booking site',
         typical: 'Limited to business hours, relies on staff availability',
       },
       {
@@ -285,16 +285,16 @@ export const featureDeepDives: FeatureDeepDive[] = [
 
     useCases: [
       {
-        title: 'The Solo Stylist Who Never Misses a Call',
+        title: 'The Solo Stylist Who Replies While She Works',
         businessType: 'Solo Salon',
         scenario:
-          'Sarah runs a one-chair salon. She physically cannot answer the phone while with a client. Before Daisy, she lost an estimated 40% of enquiries. Now the AI receptionist handles every call, books appointments during her sessions, and even processes deposits, meaning Sarah focuses entirely on her craft while her bookings stay full.',
+          'Sarah runs a one-chair salon. She cannot reply to messages while she is with a client, so enquiries used to wait until her next break. Now the AI receptionist answers her WhatsApp and Instagram messages, books appointments during her sessions and even takes deposits, so Sarah focuses on her craft while her bookings stay full.',
       },
       {
         title: 'The Multi-Location Chain That Scaled Smart',
         businessType: 'Salon Chain',
         scenario:
-          'A 5-branch salon group was spending on multiple receptionists across locations. Daisy\'s AI handles all incoming communications centrally, routes bookings to the correct branch, and provides unified analytics across all locations. The group reduced reception overhead while improving booking capture rates.',
+          'A 5-branch salon group was spending on multiple receptionists across locations. Daisy\'s AI answers incoming WhatsApp and Instagram messages centrally, routes bookings to the correct branch, and provides unified analytics across all locations. The group reduced reception overhead while improving booking capture rates.',
       },
       {
         title: 'The Premium Spa Offering Multilingual Luxury',
@@ -347,12 +347,12 @@ export const featureDeepDives: FeatureDeepDive[] = [
       {
         question: 'How can AI help beauty salons grow revenue?',
         answer:
-          'AI helps beauty salons grow revenue in several ways: it captures bookings 24/7 through an AI receptionist (eliminating missed calls), optimises scheduling to minimise calendar gaps, predicts demand to adjust staffing and promotions, and identifies upsell opportunities based on client history. The Daisy platform integrates all of these AI capabilities specifically for the beauty and wellness industry.',
+          'AI helps beauty salons grow revenue in several ways: it captures bookings 24/7 through an AI receptionist that answers WhatsApp and Instagram messages, optimises scheduling to minimise calendar gaps, predicts demand to adjust staffing and promotions, and identifies upsell opportunities based on client history. The Daisy platform integrates all of these AI capabilities specifically for the beauty and wellness industry.',
       },
       {
         question: 'What is an AI receptionist for salons and how does it work?',
         answer:
-          'An AI receptionist is an automated system that handles customer interactions, phone calls, WhatsApp messages, Instagram DMs, and website chat, without human intervention. The Daisy\'s AI receptionist understands booking requests, checks real-time availability, confirms appointments, and processes payments. It operates 24/7 in both Arabic and English, meaning your salon never misses a potential booking.',
+          'An AI receptionist is an automated system that handles customer conversations without human intervention. The Daisy\'s AI receptionist works on WhatsApp, Instagram DMs and your booking site, and it does not answer phone calls yet. It understands booking requests, checks real-time availability, confirms appointments, and processes payments. It operates 24/7 in both Arabic and English, meaning your salon never misses a potential booking.',
       },
       {
         question: 'Does The Daisy AI work in Arabic?',
@@ -362,7 +362,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
       {
         question: 'Will AI replace my salon reception staff?',
         answer:
-          'AI is designed to augment, not replace. The Daisy\'s AI handles routine enquiries, after-hours calls, and high-volume periods that your team cannot manage alone. Your staff can focus on premium in-person service while the AI ensures no opportunity is missed. Many businesses find they can grow without adding reception headcount.',
+          'AI is designed to augment, not replace. The Daisy\'s AI handles routine enquiries, after-hours messages, and high-volume periods that your team cannot manage alone. Your staff can focus on premium in-person service while the AI ensures no opportunity is missed. Many businesses find they can grow without adding reception headcount.',
       },
       {
         question: 'How long does it take to set up AI for my salon?',
@@ -372,12 +372,12 @@ export const featureDeepDives: FeatureDeepDive[] = [
       {
         question: 'What AI tools does The Daisy offer for beauty businesses?',
         answer:
-          'The Daisy offers AI-powered tools including: a 24/7 AI receptionist for calls and messages, smart scheduling that optimises your calendar for maximum revenue, predictive business insights with automated weekly reports, personalised client communication across all channels, multilingual support (currently Arabic and English, with more languages coming), and AI-driven upselling recommendations based on client history.',
+          'The Daisy offers AI-powered tools including: a 24/7 AI receptionist for WhatsApp, Instagram and booking site messages, smart scheduling that optimises your calendar for maximum revenue, predictive business insights with automated weekly reports, personalised client communication across all channels, multilingual support (currently Arabic and English, with more languages coming), and AI-driven upselling recommendations based on client history.',
       },
       {
         question: 'How is The Daisy different from other salon booking software?',
         answer:
-          'Unlike generic booking software, The Daisy integrates AI-driven analytics and automation designed specifically for beauty and wellness businesses. While most platforms offer basic calendar management, The Daisy\'s AI handles client interactions, optimises scheduling, predicts business trends, and communicates in both Arabic and English, all from one platform with zero commission on bookings.',
+          'Unlike generic booking software, The Daisy integrates AI-driven analytics and automation designed specifically for beauty and wellness businesses. While most platforms offer basic calendar management, The Daisy\'s AI handles client interactions, optimises scheduling, predicts business trends, and communicates in both Arabic and English, all from one platform with 0% commission on bookings from your existing clients.',
       },
     ],
 
@@ -428,10 +428,10 @@ export const featureDeepDives: FeatureDeepDive[] = [
     },
 
     overview:
-      'Your appointment book is the heartbeat of your beauty business. Every empty slot is lost revenue that can never be recovered, and every scheduling conflict erodes client trust. Yet most salons still rely on disconnected tools, a paper diary, a basic online form, and a phone that rings while stylists are mid-service. Daisy\'s Booking Management system replaces that patchwork with a unified, intelligent scheduling platform built specifically for the beauty industry. Clients book online 24/7 through your branded booking page, your website, social media links, or the Daisy marketplace. The system understands service durations, staff specialisations, buffer times, and equipment requirements, so it never creates impossible schedules. Waitlists automatically fill cancelled slots. Deposit collection and cancellation policies reduce no-shows before they happen. Multi-service bookings calculate total duration and find the optimal sequence. Recurring appointment scheduling locks in regular clients for months ahead. And because every booking flows through a single system, your entire team sees one real-time calendar, no double-bookings, no confusion, no missed revenue. Whether you operate a single chair or manage a multi-location chain, Daisy\'s booking system scales with your business while keeping the client experience effortless.',
+      'Your appointment book is the heartbeat of your beauty business. Every empty slot is lost revenue that can never be recovered, and every scheduling conflict erodes client trust. Yet most salons still rely on disconnected tools, a paper diary, a basic online form, and a phone that rings while stylists are mid-service. Daisy\'s Booking Management system replaces that patchwork with a unified, intelligent scheduling platform built specifically for the beauty industry. Clients book online 24/7 through your branded booking page, a link on your website or social media, or the optional Daisy marketplace. The system understands service durations, staff specialisations, buffer times, and equipment requirements, so it never creates impossible schedules. Waitlists automatically fill cancelled slots. Deposit collection and cancellation policies reduce no-shows before they happen. Multi-service bookings calculate total duration and find the optimal sequence. Recurring appointment scheduling locks in regular clients for months ahead. And because every booking flows through a single system, your entire team sees one real-time calendar, no double-bookings, no confusion, no missed revenue. The same booking system works for a single chair or a multi-location chain, and clients book the same way at either.',
 
     keyCapabilities: [
-      '24/7 online booking through website, social media, and marketplace',
+      '24/7 online booking through your booking site, social media and the optional marketplace',
       'Smart calendar management with conflict detection and gap minimisation',
       'No-show prevention with deposits, reminders, and waitlists',
       'Recurring appointment scheduling for predictable revenue',
@@ -453,7 +453,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
       {
         name: '24/7 Online Booking',
         description:
-          'Your clients can book appointments at any time, midnight, early morning, during their lunch break, through your branded booking page, website widget, social media links, or the Daisy marketplace. The booking interface shows real-time availability, service descriptions, pricing, and staff profiles, giving clients full confidence in their choice without needing to call.',
+          'Your clients can book appointments at any time, midnight, early morning, during their lunch break, through your branded booking page, a link on your website, social media links, or the optional Daisy marketplace. The booking interface shows real-time availability, service descriptions, pricing, and staff profiles, giving clients full confidence in their choice without needing to call.',
         howItWorks: [
           'Client visits your booking page, website, or marketplace listing and browses available services.',
           'They select their desired service(s), preferred staff member (optional), and a convenient date and time.',
@@ -550,7 +550,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
         step: 3,
         title: 'Enable Booking Channels',
         description:
-          'Activate your branded booking page, embed the booking widget on your website, share direct booking links on social media, and list on the Daisy marketplace, all in minutes.',
+          'Activate your branded booking page, link your website to it or redirect your own domain to it, and share direct booking links on social media, all in minutes. Where the Daisy marketplace is available, you can also apply to join it.',
       },
       {
         step: 4,
@@ -569,7 +569,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
     comparisonHighlights: [
       {
         area: 'Online Availability',
-        daisy: '24/7 booking via branded page, website widget, social links, and marketplace',
+        daisy: '24/7 booking via your branded page, website and social links, and the optional marketplace',
         typical: 'Basic online form or phone-only booking during business hours',
       },
       {
@@ -1080,7 +1080,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
       'Cashback rewards on every booking to drive repeat visits',
       'Automated referral program with dual rewards',
       'Targeted promotions to specific client segments',
-      'Daisy marketplace listing for organic discovery',
+      'Optional Daisy marketplace listing for organic discovery',
       'Loyalty tiers with progressive benefits for top clients',
     ],
 
@@ -1154,9 +1154,9 @@ export const featureDeepDives: FeatureDeepDive[] = [
       {
         name: 'Marketplace Visibility',
         description:
-          'List your business on the Daisy marketplace where thousands of potential clients search for beauty and wellness services in their area. Your listing showcases your brand, services, pricing, reviews, and real-time availability, with a direct "Book Now" button. Marketplace visibility provides a steady stream of new client discovery without ongoing advertising spend.',
+          'Apply to list your business on the optional Daisy marketplace, available in selected countries, where thousands of potential clients search for beauty and wellness services in their area. Your listing showcases your brand, services, pricing, reviews, and real-time availability, with a direct "Book Now" button. Marketplace visibility provides a steady stream of new client discovery without ongoing advertising spend.',
         howItWorks: [
-          'Your business profile, services, and availability are automatically listed on the Daisy marketplace.',
+          'If you opt in and your business passes a service-quality review, your profile, services and availability appear on the Daisy marketplace.',
           'Potential clients search by location, service type, price range, rating, and availability.',
           'Your listing highlights your brand, reviews, specialisations, and unique selling points.',
           'Clients book directly from the marketplace, and the appointment flows into your calendar.',
@@ -1184,13 +1184,13 @@ export const featureDeepDives: FeatureDeepDive[] = [
         step: 1,
         title: 'Activate Your Growth Tools',
         description:
-          'Enable cashback rewards, referral programme, loyalty points, and marketplace listing. Each tool takes minutes to configure with your preferred settings, percentages, and rules.',
+          'Enable cashback rewards, referral programme and loyalty points, and apply for a marketplace listing if you want one. Each tool takes minutes to configure with your preferred settings, percentages, and rules.',
       },
       {
         step: 2,
         title: 'Clients Earn and Engage',
         description:
-          'From their first booking, clients earn cashback and loyalty points automatically. Referral links are generated and ready to share. Your marketplace listing attracts new discovery.',
+          'From their first booking, clients earn cashback and loyalty points automatically. Referral links are generated and ready to share. If you joined the marketplace, your listing brings in new clients.',
       },
       {
         step: 3,
@@ -1342,7 +1342,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
       {
         question: 'How does marketplace listing pricing work?',
         answer:
-          'Your Daisy subscription includes marketplace visibility. There are no additional listing fees or commissions per booking from the marketplace. The marketplace is part of the Daisy ecosystem designed to help all participating businesses grow their client base.',
+          'Joining the marketplace is optional, and it is available in selected countries. Every Daisy plan is eligible after a service-quality review, and there is no listing fee. Daisy charges commission only on new customers the marketplace brings you. Bookings from your existing clients carry 0% commission.',
       },
       {
         question: 'Can I track which marketing channel brings the most clients?',
@@ -1712,10 +1712,10 @@ export const featureDeepDives: FeatureDeepDive[] = [
     },
 
     overview:
-      'Growing a beauty business has traditionally meant one of two things: opening more locations with all the operational complexity that entails, or spending more on marketing with uncertain returns. Daisy changes the growth equation by providing a comprehensive platform that handles both acquisition and operations as you scale. Your business is listed on the Daisy marketplace, putting you in front of thousands of potential clients actively searching for beauty services. Your brand is showcased through a branded booking page, your logo, your name, your colours, so clients see your brand, not a generic platform. As you add locations, every branch is managed from a single dashboard with unified reporting, cross-location booking, and centralised brand control. For businesses ready to franchise, Daisy provides the infrastructure for franchisee onboarding, standardised operations, and performance monitoring. This is not just a booking tool that happens to work for multiple locations. It is a growth platform designed from the ground up for beauty businesses that think bigger, whether bigger means dominating your local market or expanding across regions.',
+      'Growing a beauty business has traditionally meant one of two things: opening more locations with all the operational complexity that entails, or spending more on marketing with uncertain returns. Daisy changes the growth equation by providing a comprehensive platform that handles both acquisition and operations as you scale. You can also choose to list your business on the Daisy marketplace. It is available in selected countries, listing follows a service-quality review, and it puts you in front of thousands of potential clients actively searching for beauty services. Your brand is showcased through a branded booking page, your logo, your name, your colours, so clients see your brand, not a generic platform. As you add locations, every branch is managed from a single dashboard with unified reporting, cross-location booking, and centralised brand control. For businesses ready to franchise, Daisy provides the infrastructure for franchisee onboarding, standardised operations, and performance monitoring. Daisy was built for beauty businesses that plan to grow, whether that means leading your local market or opening in new regions, rather than as a booking tool stretched across several locations.',
 
     keyCapabilities: [
-      'Commission-free marketplace listing for client discovery',
+      'Optional marketplace listing for client discovery, with commission only on new customers it brings',
       '360-degree customer acquisition across multiple channels',
       'Branded booking pages on booking pages, emails, and receipts',
       'Multi-location management from a single dashboard',
@@ -1737,9 +1737,9 @@ export const featureDeepDives: FeatureDeepDive[] = [
       {
         name: 'Marketplace Discovery Engine',
         description:
-          'The Daisy marketplace is where thousands of consumers search for beauty and wellness services. Your business appears in relevant searches based on location, service type, rating, and availability. Rich listings showcase your brand story, service menu, staff profiles, client reviews, and real-time booking availability. New clients discover you, browse your offerings, and book, all without you spending a dirham on advertising.',
+          'The Daisy marketplace, available in selected countries, is where thousands of consumers search for beauty and wellness services. If you join, your business appears in relevant searches based on location, service type, rating, and availability. Rich listings showcase your brand story, service menu, staff profiles, client reviews, and real-time booking availability. New clients discover you, browse your offerings, and book, all without you spending a dirham on advertising.',
         howItWorks: [
-          'Your business profile, services, photos, and reviews are automatically listed on the Daisy marketplace.',
+          'You opt in, and after a service-quality review your profile, services, photos and reviews appear on the Daisy marketplace.',
           'Clients search by location, service, price range, rating, availability, and specialty.',
           'Your listing is ranked based on profile completeness, review quality, response rate, and booking conversion.',
           'Clients book directly from your marketplace listing, and the appointment flows into your calendar.',
@@ -1816,7 +1816,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
         step: 2,
         title: 'Activate Acquisition Channels',
         description:
-          'Enable marketplace listing, cashback rewards, referral programme, and social media booking. Each channel begins generating client discovery and bookings independently.',
+          'Enable cashback rewards, referral programme and social media booking, and apply for a marketplace listing if it is available in your country. Each channel then brings in client discovery and bookings on its own.',
       },
       {
         step: 3,
@@ -1835,7 +1835,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
     comparisonHighlights: [
       {
         area: 'Client Discovery',
-        daisy: 'Active marketplace with thousands of searching consumers plus multi-channel acquisition',
+        daisy: 'Optional marketplace with thousands of searching consumers, plus multi-channel acquisition',
         typical: 'Word-of-mouth and self-managed social media only',
       },
       {
@@ -1932,7 +1932,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
       {
         question: 'How does the marketplace help me get new clients?',
         answer:
-          'The Daisy marketplace is a consumer-facing platform where thousands of people search for beauty and wellness services. Your business appears in relevant searches, and clients can view your profile, services, reviews, and availability before booking directly. It is a passive acquisition channel, new clients find you without you spending on advertising.',
+          'The Daisy marketplace is an optional, consumer-facing platform, available in selected countries, where thousands of people search for beauty and wellness services. Once your business joins and passes a service-quality review, it appears in relevant searches, and clients can view your profile, services, reviews, and availability before booking directly. It is a passive acquisition channel: new clients find you without you spending on advertising, and commission applies only to those new customers.',
       },
       {
         question: 'What does white-label mean in practice?',
@@ -1942,7 +1942,7 @@ export const featureDeepDives: FeatureDeepDive[] = [
       {
         question: 'How difficult is it to add a new location?',
         answer:
-          'Adding a new location takes minutes. You create the branch in your dashboard, configure its address, operating hours, and staff, and optionally import your standardised service menu from your master template. The new location immediately appears in the marketplace, accepts online bookings, and reports into your unified dashboard.',
+          'Adding a new location takes minutes. You create the branch in your dashboard, configure its address, operating hours, and staff, and optionally import your standardised service menu from your master template. The new location accepts online bookings right away and reports into your unified dashboard. If you list it on the marketplace, it appears there after a service-quality review.',
       },
       {
         question: 'Can clients book at any of my locations?',

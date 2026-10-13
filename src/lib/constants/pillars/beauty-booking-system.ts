@@ -20,7 +20,7 @@ export const beautyBookingSystem: PillarPageData = {
   heroSubtitle:
     'The right booking system stops the missed calls, fills the empty chairs and turns your calendar into something that grows the business, without adding an hour of admin.',
   readingTime: '19 min read',
-  lastUpdated: '2026-03-18T00:00:00.000Z',
+  lastUpdated: '2026-10-10T00:00:00.000Z',
 
   keyTakeaways: [
     'A booking system takes the phone calls, WhatsApp messages and paper diary and replaces them with 24/7 online scheduling clients reach from any device.',
@@ -232,7 +232,7 @@ export const beautyBookingSystem: PillarPageData = {
       content: `<p>Online booking is not just a convenience. It is the single biggest revenue lever most salons are not fully using. The data is unambiguous: salons that offer 24/7 online booking capture significantly more appointments than those relying on phone calls and messages.</p>
 
 <h3>What the numbers say</h3>
-<p>Industry research consistently shows that salons miss 30-40% of inbound phone calls because staff are busy with clients. Each missed call is a potential booking walking straight to a competitor who offers online scheduling. Online booking eliminates this problem entirely, your booking page never puts a client on hold, never goes to voicemail, and never closes for the night.</p>
+<p>When staff are busy with clients, phone calls go unanswered, and each one can be a booking that goes to a competitor who offers online scheduling. Online booking eliminates this problem entirely, your booking page never puts a client on hold, never goes to voicemail, and never closes for the night.</p>
 <table>
   <thead>
     <tr>
@@ -453,7 +453,7 @@ export const beautyBookingSystem: PillarPageData = {
       content: `<p>AI-powered booking systems represent a fundamental shift from passive scheduling tools to active business growth engines. Instead of simply accepting appointments, these systems optimize your calendar, predict client behaviour, and manage communication, transforming booking from an administrative task into a revenue driver.</p>
 
 <h3>The AI receptionist</h3>
-<p>The most visible AI booking capability is a <a href="/en/features/business/ai-salon-management">virtual receptionist</a> that handles booking inquiries across every channel, phone, WhatsApp, Instagram DMs, web chat, and SMS, simultaneously, in any language, at any hour. Unlike traditional online booking where the client self-serves through a form, an AI receptionist engages in natural conversation:</p>
+<p>The most visible AI booking capability is a <a href="/en/features/business/ai-salon-management">virtual receptionist</a> that handles booking inquiries on messaging channels such as WhatsApp, Instagram DMs and web chat, many at once, in several languages, at any hour. Daisy's works on WhatsApp, Instagram and the booking site, and it does not answer phone calls yet. Unlike traditional online booking where the client self-serves through a form, an AI receptionist engages in natural conversation:</p>
 <ul>
   <li>Recommends services based on client questions and preferences</li>
   <li>Suggests optimal times based on the client's history and provider availability</li>
@@ -461,7 +461,7 @@ export const beautyBookingSystem: PillarPageData = {
   <li>Manages cancellations and rescheduling without human intervention</li>
   <li>Answers pricing, availability, and service questions instantly</li>
 </ul>
-<p>The impact is immediate. Salons implementing AI receptionists report capturing 30-50% more bookings because every inquiry gets an instant response, even the 30-40% of calls that go to voicemail when staff are busy with clients.</p>
+<p>The impact is immediate, because every message gets an instant reply, including the ones that arrive while staff are busy with clients.</p>
 
 <h3>Schedules that arrange themselves</h3>
 <p>AI analyses your booking patterns, service durations, and team availability to identify and eliminate calendar inefficiencies that human schedulers miss:</p>

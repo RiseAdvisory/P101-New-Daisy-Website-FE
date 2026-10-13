@@ -18,6 +18,6 @@ describe('getPillarSitemapData', () => {
       (r) => r.slug === 'salon-management-software',
     );
     expect(record).toBeDefined();
-    expect(record?.lastUpdated).toBe('2026-04-27T00:00:00.000Z');
+    expect(record?.lastUpdated).toBe('2026-10-10T00:00:00.000Z');
   });
 });

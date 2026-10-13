@@ -53,11 +53,6 @@ export const industryStats: StatCategory[] = [
         description: 'Of all Google searches have local intent (relevant for salon discovery)',
         source: 'Google',
       },
-      {
-        value: '35%',
-        description: 'Of salon calls go unanswered during peak hours and after-hours',
-        source: 'Industry research estimates',
-      },
     ],
   },
   {
@@ -127,11 +122,6 @@ export const industryStats: StatCategory[] = [
         value: '24/7',
         description: 'AI receptionists run round-the-clock and capture after-hours revenue',
         source: 'AI receptionist platform data',
-      },
-      {
-        value: '70-80%',
-        description: 'Of routine salon calls can be handled by AI without human intervention',
-        source: 'AI customer service benchmarks',
       },
     ],
   },
@@ -232,11 +222,6 @@ const industryStatsAr: StatCategory[] = [
         description: 'من عمليات البحث على Google ذات طابع محلي (مهم لاكتشاف الصالونات)',
         source: 'Google',
       },
-      {
-        value: '35%',
-        description: 'من مكالمات الصالونات لا يُرد عليها خلال أوقات الذروة وخارج ساعات العمل',
-        source: 'تقديرات أبحاث القطاع',
-      },
     ],
   },
   {
@@ -306,11 +291,6 @@ const industryStatsAr: StatCategory[] = [
         value: '24/7',
         description: 'موظفو الاستقبال الافتراضيون يعملون على مدار الساعة لاستقطاب إيرادات خارج أوقات العمل',
         source: 'بيانات منصات الاستقبال الذكي',
-      },
-      {
-        value: '70-80%',
-        description: 'من المكالمات الروتينية للصالونات يمكن التعامل معها بالذكاء الاصطناعي دون تدخل بشري',
-        source: 'معايير خدمة العملاء بالذكاء الاصطناعي',
       },
     ],
   },

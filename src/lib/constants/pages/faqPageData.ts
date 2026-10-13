@@ -51,7 +51,7 @@ export const faqPageData: I18nContent<FaqPageData> = {
           questions: [
             { question: 'How much does it cost?', answer: 'Start with a 14-day free trial: full access, no credit card required. After that, plans start at $1/month, with +$50/month once you pass 5 appointments in a month. You only pay commission on new customers who find you through the Daisy marketplace. Your existing clients, zero commission.' },
             { question: 'What is included in the subscription?', answer: 'Every plan includes online booking, AI receptionist, calendar management, client database, payment processing, team scheduling, and basic analytics. Higher tiers add advanced marketing tools, multi-location management, and priority support.' },
-            { question: 'Are there any hidden fees?', answer: 'No. Your subscription fee and marketplace commission (on new clients only) are the only costs. Payment processing fees are standard industry rates and transparently displayed before you sign up.' },
+            { question: 'Are there any hidden fees?', answer: 'No. You pay your subscription, any add-ons you choose (such as extra team members, extra workspaces or AI conversation top-ups), and marketplace commission on new clients only. Payment processing fees are standard industry rates and transparently displayed before you sign up.' },
             { question: 'Can I change my plan later?', answer: 'Yes. Upgrade or downgrade anytime from your account settings. Changes take effect at the start of your next billing cycle. No penalties for switching.' },
             { question: 'Is there a contract or lock-in period?', answer: 'No. All plans are month-to-month. You can cancel anytime with no cancellation fees. Your data remains accessible for 30 days after cancellation.' },
             { question: 'Do I pay commission on my existing clients?', answer: 'No. Commission is only charged on new clients who discover and book you through the Daisy marketplace. Clients you bring to the platform yourself are commission-free, always.' },
@@ -71,7 +71,7 @@ export const faqPageData: I18nContent<FaqPageData> = {
         {
           title: 'Booking & Calendar',
           questions: [
-            { question: 'How does online booking work?', answer: 'Customers book through your personalised booking page, the Daisy marketplace, or directly via WhatsApp and Instagram. Appointments sync to your calendar in real time. You control your availability, buffer times, and booking rules.' },
+            { question: 'How does online booking work?', answer: 'Customers book through your personalised booking page, the Daisy marketplace if you join it, or directly via WhatsApp and Instagram. Appointments sync to your calendar in real time. You control your availability, buffer times, and booking rules.' },
             { question: 'Can I sync with Google Calendar?', answer: 'Yes. Two-way sync with Google Calendar means your Daisy appointments appear in Google and your Google events block availability in Daisy. No double bookings.' },
             { question: 'How do you handle no-shows?', answer: 'You can require deposits at booking, send automated reminders (WhatsApp, SMS, or email) at intervals you choose, and set a cancellation policy with automatic enforcement. Businesses using these features report up to 60% fewer no-shows.' },
             { question: 'Can customers book multiple services in one visit?', answer: 'Yes. Customers can bundle services into a single appointment. The system automatically calculates the total duration and price, and schedules the right team members for each service.' },
@@ -173,7 +173,7 @@ export const faqPageData: I18nContent<FaqPageData> = {
         {
           title: 'Getting Started',
           questions: [
-            { question: 'What is The Daisy for beauty professionals?', answer: 'The Daisy gives beauty professionals their own booking page, AI-powered customer service, payment processing, and visibility in a marketplace of customers actively looking for services — whether you work at a salon, freelance, or run your own business.' },
+            { question: 'What is The Daisy for beauty professionals?', answer: 'The Daisy gives beauty professionals their own booking page, AI-powered customer service, payment processing, and the option to list in a marketplace of customers looking for services. It works for professionals at a salon, freelancers and owners of their own business.' },
             { question: 'Who can join as a professional?', answer: 'Hairstylists, nail technicians, aestheticians, makeup artists, beauty therapists, barbers, spa therapists, and any licensed beauty or wellness professional. Freelance, salon-based, and mobile service providers are all welcome.' },
             { question: 'Do I need to work at a salon to join?', answer: 'No. Freelance professionals, independent stylists, mobile service providers, and salon-based professionals are all welcome.' },
             { question: 'How do I sign up?', answer: 'Download The Daisy app, select "Professional" during registration, and complete your profile with your services, pricing, availability, and portfolio photos. Verification typically takes 24-48 hours.' },
@@ -206,7 +206,7 @@ export const faqPageData: I18nContent<FaqPageData> = {
         {
           title: 'Profile & Visibility',
           questions: [
-            { question: 'How do customers find my profile?', answer: 'Your profile appears in the Daisy marketplace when customers search for beauty services in your area. The more complete your profile, the higher your visibility.' },
+            { question: 'How do customers find my profile?', answer: 'If you join the Daisy marketplace (optional, and available in selected countries) and your profile passes a service-quality review, it appears when customers search for beauty services in your area. The more complete your profile, the higher your visibility.' },
             { question: 'How can I improve my visibility?', answer: 'Complete your full profile, add high-quality portfolio photos, collect client reviews, respond quickly to messages, and maintain a high booking completion rate. The algorithm rewards active, reliable professionals.' },
             { question: 'Can clients leave reviews?', answer: 'Yes. After each completed appointment, clients can leave a rating and written review. Positive reviews boost your visibility and help attract new clients.' },
             { question: 'Can I showcase my portfolio?', answer: 'Yes. Upload photos of your work to your profile. Before-and-after images, service examples, and your workspace environment help clients choose you with confidence.' },
@@ -217,10 +217,10 @@ export const faqPageData: I18nContent<FaqPageData> = {
         {
           title: 'Going Independent',
           questions: [
-            { question: 'Does The Daisy support freelance professionals?', answer: 'Yes. The Daisy is designed for both salon-based and independent professionals. Freelancers get the same booking, payment, and AI tools — plus marketplace visibility to attract new clients without salon overhead.' },
-            { question: 'What tools does The Daisy provide for independent professionals?', answer: 'Your own booking page, AI receptionist for WhatsApp and Instagram, payment processing, calendar management, client database, automated reminders, and marketplace visibility. Everything you need to run a solo practice.' },
+            { question: 'Does The Daisy support freelance professionals?', answer: 'Yes. The Daisy is designed for both salon-based and independent professionals. Freelancers get the same booking, payment, and AI tools, plus optional marketplace visibility to attract new clients without salon overhead.' },
+            { question: 'What tools does The Daisy provide for independent professionals?', answer: 'Your own booking page, AI receptionist for WhatsApp and Instagram, payment processing, calendar management, client database, automated reminders, and optional marketplace visibility. Everything you need to run a solo practice.' },
             { question: 'How should I price my services?', answer: 'Research comparable services in your area, factor in your experience and specialisations, and set competitive prices in your profile. You can adjust pricing anytime and run promotions to attract new clients.' },
-            { question: 'How do I build a client base from scratch?', answer: 'Complete your profile, add portfolio photos, set competitive pricing, and the marketplace will start showing you to nearby customers. Encourage early clients to leave reviews — social proof is the fastest way to grow on the platform.' },
+            { question: 'How do I build a client base from scratch?', answer: 'Complete your profile, add portfolio photos and set competitive pricing. If you join the marketplace and pass its service-quality review, it will start showing you to nearby customers. Encourage early clients to leave reviews, because social proof is the fastest way to grow on the platform.' },
             { question: 'Do I need my own insurance?', answer: 'We strongly recommend professional liability insurance for all independent professionals. The Daisy does not provide insurance coverage — you are responsible for your own professional indemnity and public liability insurance.' },
             { question: 'Can I transition from salon employment to freelance on The Daisy?', answer: 'Yes. Many professionals start by creating their profile while still employed at a salon, then gradually transition as they build their independent client base. The platform supports this gradual shift.' },
           ],
@@ -250,7 +250,7 @@ export const faqPageData: I18nContent<FaqPageData> = {
           questions: [
             { question: 'كم تكلفة الاشتراك؟', answer: 'ابدأ بفترة تجريبية مجانية لمدة 14 يوماً: وصول كامل، بدون بطاقة ائتمان. بعد ذلك، تبدأ الباقات من دولار واحد شهرياً، مع +50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر. تدفع عمولة فقط على العملاء الجدد الذين يجدونك عبر سوق ديزي. عملاؤك الحاليون، بدون عمولة.' },
             { question: 'ما المشمول في الاشتراك؟', answer: 'كل باقة تشمل الحجز عبر الإنترنت، وموظف الاستقبال الذكي، وإدارة التقويم، وقاعدة بيانات العملاء، ومعالجة المدفوعات، وجدولة الفريق، والتحليلات الأساسية. الباقات الأعلى تضيف أدوات تسويق متقدمة وإدارة مواقع متعددة ودعم أولوية.' },
-            { question: 'هل هناك رسوم مخفية؟', answer: 'لا. رسوم اشتراكك وعمولة السوق (على العملاء الجدد فقط) هي التكاليف الوحيدة. رسوم معالجة المدفوعات هي الأسعار القياسية في الصناعة ويتم عرضها بشفافية قبل التسجيل.' },
+            { question: 'هل هناك رسوم مخفية؟', answer: 'لا. تدفع اشتراكك، وأي إضافات تختارها (مثل أعضاء فريق إضافيين أو مساحات عمل إضافية أو شحن محادثات الذكاء الاصطناعي)، وعمولة السوق على العملاء الجدد فقط. رسوم معالجة المدفوعات هي الأسعار القياسية في الصناعة ويتم عرضها بشفافية قبل التسجيل.' },
             { question: 'هل يمكنني تغيير باقتي لاحقاً؟', answer: 'نعم. قم بالترقية أو التخفيض في أي وقت من إعدادات حسابك. التغييرات تسري في بداية دورة الفوترة التالية. لا عقوبات للتبديل.' },
             { question: 'هل هناك عقد أو فترة التزام؟', answer: 'لا. جميع الباقات شهرية. يمكنك الإلغاء في أي وقت بدون رسوم إلغاء. بياناتك تبقى متاحة لمدة 30 يوماً بعد الإلغاء.' },
             { question: 'هل أدفع عمولة على عملائي الحاليين؟', answer: 'لا. العمولة تُفرض فقط على العملاء الجدد الذين يكتشفونك ويحجزون عبر سوق ديزي. العملاء الذين تجلبهم بنفسك إلى المنصة بدون عمولة، دائمًا.' },
@@ -270,7 +270,7 @@ export const faqPageData: I18nContent<FaqPageData> = {
         {
           title: 'الحجز والتقويم',
           questions: [
-            { question: 'كيف يعمل الحجز عبر الإنترنت؟', answer: 'يحجز العملاء من خلال صفحة الحجز المخصصة لك، أو سوق ديزي، أو مباشرة عبر واتساب وإنستغرام. المواعيد تتزامن مع تقويمك في الوقت الفعلي. أنت تتحكم في توفرك وأوقات الاستراحة وقواعد الحجز.' },
+            { question: 'كيف يعمل الحجز عبر الإنترنت؟', answer: 'يحجز العملاء من خلال صفحة الحجز المخصصة لك، أو سوق ديزي إذا انضممت إليه، أو مباشرة عبر واتساب وإنستغرام. المواعيد تتزامن مع تقويمك في الوقت الفعلي. أنت تتحكم في توفرك وأوقات الاستراحة وقواعد الحجز.' },
             { question: 'هل يمكنني المزامنة مع تقويم جوجل؟', answer: 'نعم. المزامنة ثنائية الاتجاه مع تقويم جوجل تعني أن مواعيد ديزي تظهر في جوجل وأحداث جوجل تحجب التوفر في ديزي. لا حجوزات مزدوجة.' },
             { question: 'كيف تتعاملون مع عدم الحضور؟', answer: 'يمكنك طلب إيداعات عند الحجز، وإرسال تذكيرات تلقائية (واتساب أو رسائل نصية أو بريد إلكتروني) على فترات تختارها، وتحديد سياسة إلغاء مع تطبيق تلقائي. الأعمال التي تستخدم هذه الميزات تبلغ عن انخفاض يصل إلى 60% في حالات عدم الحضور.' },
             { question: 'هل يمكن للعملاء حجز خدمات متعددة في زيارة واحدة؟', answer: 'نعم. يمكن للعملاء تجميع الخدمات في موعد واحد. يحسب النظام تلقائياً المدة الإجمالية والسعر، ويجدول أعضاء الفريق المناسبين لكل خدمة.' },
@@ -372,7 +372,7 @@ export const faqPageData: I18nContent<FaqPageData> = {
         {
           title: 'البدء',
           questions: [
-            { question: 'ما هو ديزي للمتخصصين في التجميل؟', answer: 'يمنح ديزي متخصصي التجميل صفحة حجز خاصة بهم، وخدمة عملاء مدعومة بالذكاء الاصطناعي، ومعالجة مدفوعات، وظهور في سوق عملاء يبحثون بنشاط عن الخدمات — سواء كنت تعمل في صالون أو مستقل أو تدير عملك الخاص.' },
+            { question: 'ما هو ديزي للمتخصصين في التجميل؟', answer: 'يمنح ديزي متخصصي التجميل صفحة حجز خاصة بهم، وخدمة عملاء مدعومة بالذكاء الاصطناعي، ومعالجة مدفوعات، وإمكانية الإدراج في سوق عملاء يبحثون بنشاط عن الخدمات، سواء كنت تعمل في صالون أو مستقل أو تدير عملك الخاص.' },
             { question: 'من يمكنه الانضمام كمتخصص؟', answer: 'مصففو الشعر، وفنيو الأظافر، وأخصائيو التجميل، وفنانو المكياج، ومعالجو التجميل، والحلاقون، ومعالجو السبا، وأي متخصص مرخص في التجميل أو العافية. المستقلون والعاملون في الصالونات ومقدمو الخدمات المتنقلة مرحب بهم جميعاً.' },
             { question: 'هل أحتاج للعمل في صالون للانضمام؟', answer: 'لا. المتخصصون المستقلون والمصففون المستقلون ومقدمو الخدمات المتنقلة والمتخصصون العاملون في الصالونات مرحب بهم جميعاً.' },
             { question: 'كيف أسجل؟', answer: 'حمّل تطبيق ديزي، اختر "متخصص" أثناء التسجيل، وأكمل ملفك الشخصي بخدماتك وأسعارك وتوفرك وصور أعمالك. التحقق يستغرق عادة 24-48 ساعة.' },
@@ -405,7 +405,7 @@ export const faqPageData: I18nContent<FaqPageData> = {
         {
           title: 'الملف الشخصي والظهور',
           questions: [
-            { question: 'كيف يجد العملاء ملفي الشخصي؟', answer: 'يظهر ملفك الشخصي في سوق ديزي عندما يبحث العملاء عن خدمات التجميل في منطقتك. كلما كان ملفك الشخصي أكثر اكتمالاً، كان ظهورك أعلى.' },
+            { question: 'كيف يجد العملاء ملفي الشخصي؟', answer: 'إذا انضممت إلى سوق ديزي (وهو اختياري ومتاح في دول مختارة) واجتاز ملفك مراجعة جودة الخدمة، يظهر ملفك عندما يبحث العملاء عن خدمات التجميل في منطقتك. كلما كان ملفك الشخصي أكثر اكتمالاً، كان ظهورك أعلى.' },
             { question: 'كيف يمكنني تحسين ظهوري؟', answer: 'أكمل ملفك الشخصي بالكامل، وأضف صور أعمال عالية الجودة، واجمع تقييمات العملاء، واستجب بسرعة للرسائل، وحافظ على معدل إتمام حجوزات مرتفع. الخوارزمية تكافئ المتخصصين النشطين والموثوقين.' },
             { question: 'هل يمكن للعملاء ترك تقييمات؟', answer: 'نعم. بعد كل موعد مكتمل، يمكن للعملاء ترك تقييم ومراجعة مكتوبة. التقييمات الإيجابية تعزز ظهورك وتساعد في جذب عملاء جدد.' },
             { question: 'هل يمكنني عرض معرض أعمالي؟', answer: 'نعم. ارفع صور أعمالك إلى ملفك الشخصي. صور قبل وبعد وأمثلة الخدمات وبيئة مكان عملك تساعد العملاء في اختيارك بثقة.' },
@@ -416,10 +416,10 @@ export const faqPageData: I18nContent<FaqPageData> = {
         {
           title: 'العمل المستقل',
           questions: [
-            { question: 'هل يدعم ديزي المتخصصين المستقلين؟', answer: 'نعم. ديزي مصمم للمتخصصين العاملين في الصالونات والمستقلين على حد سواء. المستقلون يحصلون على نفس أدوات الحجز والدفع والذكاء الاصطناعي — بالإضافة إلى ظهور في السوق لجذب عملاء جدد بدون تكاليف الصالون.' },
-            { question: 'ما الأدوات التي يوفرها ديزي للمتخصصين المستقلين؟', answer: 'صفحة حجز خاصة بك، وموظف استقبال ذكي لواتساب وإنستغرام، ومعالجة مدفوعات، وإدارة تقويم، وقاعدة بيانات عملاء، وتذكيرات تلقائية، وظهور في السوق. كل ما تحتاجه لإدارة ممارسة مستقلة.' },
+            { question: 'هل يدعم ديزي المتخصصين المستقلين؟', answer: 'نعم. ديزي مصمم للمتخصصين العاملين في الصالونات والمستقلين على حد سواء. المستقلون يحصلون على نفس أدوات الحجز والدفع والذكاء الاصطناعي، بالإضافة إلى ظهور اختياري في السوق لجذب عملاء جدد بدون تكاليف الصالون.' },
+            { question: 'ما الأدوات التي يوفرها ديزي للمتخصصين المستقلين؟', answer: 'صفحة حجز خاصة بك، وموظف استقبال ذكي لواتساب وإنستغرام، ومعالجة مدفوعات، وإدارة تقويم، وقاعدة بيانات عملاء، وتذكيرات تلقائية، وظهور اختياري في السوق. كل ما تحتاجه لإدارة ممارسة مستقلة.' },
             { question: 'كيف أسعّر خدماتي؟', answer: 'ابحث عن خدمات مماثلة في منطقتك، واحسب خبرتك وتخصصاتك، وحدد أسعاراً تنافسية في ملفك الشخصي. يمكنك تعديل الأسعار في أي وقت وتقديم عروض ترويجية لجذب عملاء جدد.' },
-            { question: 'كيف أبني قاعدة عملاء من الصفر؟', answer: 'أكمل ملفك الشخصي، وأضف صور أعمال، وحدد أسعاراً تنافسية، وسيبدأ السوق بعرضك للعملاء القريبين. شجع العملاء الأوائل على ترك تقييمات — الدليل الاجتماعي هو أسرع طريقة للنمو على المنصة.' },
+            { question: 'كيف أبني قاعدة عملاء من الصفر؟', answer: 'أكمل ملفك الشخصي، وأضف صور أعمال، وحدد أسعاراً تنافسية. إذا انضممت إلى السوق واجتزت مراجعة جودة الخدمة، سيبدأ بعرضك للعملاء القريبين. شجع العملاء الأوائل على ترك تقييمات، لأن الدليل الاجتماعي هو أسرع طريقة للنمو على المنصة.' },
             { question: 'هل أحتاج تأمين خاص بي؟', answer: 'نوصي بشدة بتأمين المسؤولية المهنية لجميع المتخصصين المستقلين. ديزي لا يوفر تغطية تأمينية — أنت مسؤول عن تأمين التعويض المهني والمسؤولية العامة.' },
             { question: 'هل يمكنني الانتقال من العمل في صالون إلى العمل المستقل على ديزي؟', answer: 'نعم. العديد من المتخصصين يبدؤون بإنشاء ملفهم الشخصي أثناء عملهم في صالون، ثم ينتقلون تدريجياً مع بناء قاعدة عملائهم المستقلة. المنصة تدعم هذا الانتقال التدريجي.' },
           ],

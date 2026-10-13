@@ -823,7 +823,7 @@ const findingClientsArticle: LocalBlogPost = {
 <p>Be listed where people go looking for someone like you:</p>
 <ul>
 <li><strong>Google Business Profile:</strong> anyone with a fixed location needs one. Fill it with photos, services, and hours, and keep collecting reviews. A local "near me" search is the closest thing to a client with their card already out.</li>
-<li><strong>Beauty-specific platforms:</strong> <a href="/en/features/professional/booking-management">The Daisy</a> and platforms like it put independent professionals in front of clients searching in their area. A profile with booking, reviews, and your work on it reaches people at the point they are ready to book.</li>
+<li><strong>Beauty-specific platforms:</strong> booking platforms with a marketplace put independent professionals in front of clients searching in their area. <a href="/en/features/professional/booking-management">The Daisy</a> has an optional marketplace in selected countries and lists profiles after a service-quality review. A profile with booking, reviews, and your work on it reaches people at the point they are ready to book.</li>
 <li><strong>Industry directories:</strong> local business directories, beauty association listings, and venue partner directories add visibility and the backlinks that help your search ranking.</li>
 </ul>
 
@@ -879,7 +879,7 @@ const findingClientsArticle: LocalBlogPost = {
     metaDescription:
       'Proven strategies for freelance beauty professionals to find clients. Social media, referrals, networking, and platform listings to build a full schedule.',
     createdAt: '2025-06-25T05:00:00.000Z',
-    updatedAt: '2025-06-25T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-06-25T05:00:00.000Z',
     locale: 'en',
     sortId: 104,
@@ -1944,7 +1944,7 @@ const findingClientsArticleAr: LocalBlogPost = {
 <p> قم بإدراج خدماتك على المنصات التي يبحث فيها العملاء المحتملون بنشاط عن محترفي التجميل:</p>
 <ul>
 <li><strong>الملف التجاري على جوجل:</strong> إذا كان لديك موقع ثابت، فهذا أمر ضروري. يمكنك التحسين باستخدام الصور والخدمات وساعات العمل وجمع التقييمات بشكل نشط. تعد عمليات البحث المحلية عن "بالقرب مني" هي طلبات البحث ذات الاهتمام الأعلى في مجال التجميل.</li>
-<li><strong>منصات خاصة بالجمال:</strong> منصات مثل <a href="/ar/features/professional/booking-management">ديزي</a> تربط محترفي التجميل المستقلين بالعملاء الذين يبحثون عن الخدمات في منطقتهم. إن إدراجك على منصة احترافية تتمتع بإمكانية الحجز والمراجعات والملف الشخصي المنسق يضعك أمام العملاء المستعدين للحجز.</li>
+<li><strong>منصات خاصة بالجمال:</strong> منصات الحجز التي تضم سوقًا تربط محترفي التجميل المستقلين بالعملاء الذين يبحثون عن الخدمات في منطقتهم. لدى <a href="/ar/features/professional/booking-management">ديزي</a> سوق اختياري متاح في دول مختارة، ويخضع الإدراج فيه لمراجعة جودة الخدمة. إن إدراجك على منصة احترافية تتمتع بإمكانية الحجز والمراجعات والملف الشخصي المنسق يضعك أمام العملاء المستعدين للحجز.</li>
 <li><strong>أدلة الصناعة:</strong> تعمل أدلة الأعمال المحلية وقوائم جمعيات التجميل وأدلة شركاء الأماكن على زيادة ظهورك عبر الإنترنت وتوفير روابط خلفية تعمل على تحسين تصنيف البحث الخاص بك.</li>
 </ul>
 
@@ -1997,7 +1997,7 @@ const findingClientsArticleAr: LocalBlogPost = {
 <p> مهم للغاية. وجدت دراسة BrightLocal لعام 2025 أن 87% من المستهلكين يقرؤون المراجعات عبر الإنترنت قبل زيارة شركة محلية، وتصنف خدمات التجميل من بين أفضل الفئات التي تؤثر فيها المراجعات على قرارات الشراء. استهدف الحصول على ما لا يقل عن 20 إلى 30 مراجعة على جوجل ومنصة الحجز الخاصة بك. اطلب من كل عميل راضٍ إجراء مراجعة، واجعل الأمر سهلاً من خلال رابط مباشر. قم بالرد على كل مراجعة، سواء كانت إيجابية أو سلبية، لإظهار التفاعل.</p>`,
     metaTitle: 'إيجاد عملاء التجميل المستقلين | ديزي',
     metaDescription: 'استراتيجيات عملية لإيجاد عملاء كمحترف تجميل مستقل.',
-    createdAt: '2025-07-10T05:00:00.000Z', updatedAt: '2025-07-10T05:00:00.000Z', publishedAt: '2025-07-10T05:00:00.000Z',
+    createdAt: '2025-07-10T05:00:00.000Z', updatedAt: '2026-10-10T08:00:00.000Z', publishedAt: '2025-07-10T05:00:00.000Z',
     locale: 'ar', sortId: 104,
     tags: { category: 'Freelance', topic: 'Client Acquisition' },
     user: {"data":{"id":6,"attributes":{"name":"Amara Nasser","jobTitle":"Independent Beauty Professional & Freelance Career Mentor","date":"10 July 2025","time":"9 min.","picture":{"data":{"attributes":{"url":"/images/blog/author-amara-nasser.webp"}}}}}},

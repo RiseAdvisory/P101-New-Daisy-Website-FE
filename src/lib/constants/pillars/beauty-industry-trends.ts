@@ -21,7 +21,7 @@ export const beautyIndustryTrends: PillarPageData = {
   heroSubtitle:
     'What is reshaping the beauty industry, and what salon owners, professionals and entrepreneurs need to do about it now.',
   readingTime: '22 min read',
-  lastUpdated: '2026-03-18T00:00:00.000Z',
+  lastUpdated: '2026-10-10T00:00:00.000Z',
 
   keyTakeaways: [
     'Global beauty and wellness is projected to pass $680 billion in 2026, with salons and spas growing 7-9% a year.',
@@ -128,8 +128,8 @@ export const beautyIndustryTrends: PillarPageData = {
 <p>AI in beauty is not futuristic. It is operational today across multiple use cases:</p>
 
 <h3>1. AI receptionists and client communication</h3>
-<p>AI-powered virtual receptionists handle booking enquiries, answer client questions, manage cancellations, and process payments across every communication channel, phone, WhatsApp, Instagram, web chat, in any language, 24 hours a day. This eliminates the 30-40% of calls that go unanswered in typical salons and captures after-hours bookings that would otherwise be lost to competitors.</p>
-<p><a href="/en/features/business/ai-salon-management">Daisy's AI receptionist</a> is a prime example, it manages multi-channel communication without human intervention, learning client preferences and conversation patterns over time to deliver increasingly personalized interactions.</p>
+<p>AI-powered virtual receptionists handle booking enquiries, answer client questions, manage cancellations, and process payments on channels such as WhatsApp, Instagram and web chat, in several languages, 24 hours a day. Some also answer phone calls. They reply to messages that would otherwise wait and capture after-hours bookings that would otherwise be lost to competitors.</p>
+<p><a href="/en/features/business/ai-salon-management">Daisy's AI receptionist</a> is a prime example. It works on WhatsApp, Instagram and the booking site without human intervention, learning client preferences and conversation patterns over time to deliver increasingly personalized interactions. It does not answer phone calls yet.</p>
 
 <h3>2. Smart scheduling and resource use</h3>
 <p>AI scheduling algorithms analyze booking patterns, service durations, staff skills, and client preferences to optimize calendar placement. The result: fewer gaps between appointments, better staff utilization, reduced overbooking, and intelligent waitlist management that automatically fills cancellations.</p>

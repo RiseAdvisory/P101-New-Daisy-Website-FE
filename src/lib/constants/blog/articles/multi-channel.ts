@@ -330,7 +330,7 @@ const managingInstagramDmsArticle: LocalBlogPost = {
 <p>Connect the inbox to your <a href="/en/glossary/salon-management-software">salon management platform</a> and considerably more becomes possible:</p>
 <ul>
 <li><strong>AI-powered responses:</strong> an <a href="/en/features/business/ai-salon-management">AI receptionist</a> reads the message, works out what they want, checks live availability, and comes back with booking options that fit, automatically, 24/7.</li>
-<li><strong>Unified inbox:</strong> DMs, WhatsApp, phone, and web chat in one <a href="/en/features/business/communication-tools">communication dashboard</a> rather than four apps to check.</li>
+<li><strong>Unified inbox:</strong> Instagram DMs, WhatsApp and web chat in one <a href="/en/features/business/communication-tools">communication dashboard</a> rather than several apps to check.</li>
 <li><strong>Client recognition:</strong> a message from an existing client brings up their profile, history, and preferences, so even the automated reply knows who it is talking to.</li>
 <li><strong>Booking flow within DM:</strong> rather than sending anyone to a separate page, the AI offers times and confirms the appointment inside the Instagram conversation.</li>
 </ul>
@@ -376,7 +376,7 @@ const managingInstagramDmsArticle: LocalBlogPost = {
     metaDescription:
       'Turn Instagram DMs into salon bookings. Learn how to organise, respond to, and convert DM inquiries with templates, automation, and best practices.',
     createdAt: '2025-06-19T05:00:00.000Z',
-    updatedAt: '2025-06-19T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-06-19T05:00:00.000Z',
     locale: 'en',
     sortId: 119,
@@ -462,7 +462,7 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 <h3>Tier 1: essential channels</h3>
 <ul>
 <li><strong>WhatsApp:</strong> the dominant booking and communication channel in most markets, with 90%+ open rates, instant delivery, and support for images and booking flows. If you only do one digital channel properly, do this one.</li>
-<li><strong>Phone:</strong> still matters for complicated questions, older clients, and sorting out walk-ins. Volume is falling and it is still 18&ndash;22% of bookings in most markets. An <a href="/en/features/business/ai-salon-management">AI receptionist</a> handles calls as well as it handles anything digital.</li>
+<li><strong>Phone:</strong> still matters for complicated questions, older clients, and sorting out walk-ins. Volume is falling and it is still 18&ndash;22% of bookings in most markets. Calls still need a person, because Daisy's <a href="/en/features/business/ai-salon-management">AI receptionist</a> does not answer phone calls yet. It covers WhatsApp, Instagram and your booking site.</li>
 <li><strong>Instagram DMs:</strong> how beauty clients get from finding you to booking you. 40% of beauty consumers who discover a salon on Instagram send a DM before booking. Unavoidable if you want clients under 40.</li>
 <li><strong>Online booking page:</strong> your website or <a href="/en/features/business/booking-management">booking platform</a> is where people who prefer to help themselves go. Three taps to book, no more.</li>
 </ul>
@@ -485,7 +485,7 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 <p>Nobody needs developers for this. The platforms handle the integration, and your job is picking one and setting it up for how you work.</p>
 
 <h3>Step 1: centralise your inbox</h3>
-<p>Everything rests on one inbox holding messages from every channel. Rather than checking Instagram, then WhatsApp, then email, then the call log, your team looks at a single <a href="/en/features/business/communication-tools">communication dashboard</a>.</p>
+<p>Everything rests on one inbox holding messages from every channel. Rather than checking Instagram, then WhatsApp, then email, your team looks at a single <a href="/en/features/business/communication-tools">communication dashboard</a>.</p>
 <p>That gives you:</p>
 <ul>
 <li>Every message from every channel in one view.</li>
@@ -552,22 +552,22 @@ const omnichannelCommunicationArticle: LocalBlogPost = {
 <p>No. Start where your clients already are. For most salons, WhatsApp, Instagram DMs, phone, and an online booking page cover 90%+ of client communication. Add more only when something tells you people want it. Four channels done well beats eight done adequately, provided the four are connected.</p>
 
 <h3>How does omnichannel work for a small salon with only 1-2 staff?</h3>
-<p>It matters more when there are fewer of you, not less. One inbox means one person sees everything without switching apps, and AI answers while you are with a client, so nothing is missed however busy the day gets. That is what lets a 2-person salon answer like a large team.</p>
+<p>It matters more when there are fewer of you, not less. One inbox means one person sees everything without switching apps, and AI answers messages while you are with a client, so nobody's message sits unanswered, however busy the day gets. That is what lets a 2-person salon answer like a large team.</p>
 
 <h3>Will omnichannel communication feel impersonal to clients?</h3>
-<p>Quite the reverse, because the salon remembers them wherever they turn up. Someone who chatted on Instagram rings and hears "Hi Sarah, I see you were asking about balayage pricing, would you like to go ahead and book?" That is personal. Making them repeat themselves is what feels cold.</p>
+<p>Quite the reverse, because the salon remembers them wherever they turn up. Someone who chatted on Instagram sends a WhatsApp message the next day and reads "Hi Sarah, I see you were asking about balayage pricing, would you like to go ahead and book?" That is personal. Making them repeat themselves is what feels cold.</p>
 
 <h3>How much does an omnichannel system cost?</h3>
-<p>Modern salon management platforms usually include it in the subscription with nothing extra to pay. The Daisy includes WhatsApp, Instagram, phone, web chat, and email integration in its standard plans. You are buying one platform that connects everything rather than one tool per channel, which normally works out cheaper than the separate tools combined.</p>
+<p>Modern salon management platforms usually include it in the subscription with nothing extra to pay. The Daisy includes WhatsApp, Instagram, web chat, and email integration in its standard plans. Phone calls are not part of it yet, so calls still go to your team. You are buying one platform that connects everything rather than one tool per channel, which normally works out cheaper than the separate tools combined.</p>
 
 <h3>How long does it take to implement omnichannel communication?</h3>
-<p>On a platform built for it, 1&ndash;3 days. Connect your WhatsApp Business number, Instagram account, phone number, and website chat widget, then set your automated responses and voice. Everything funnels into the one inbox from that moment. The technical part is easy; getting your team out of five apps and into one takes another week or two.</p>
+<p>On a platform built for it, 1&ndash;3 days. Connect your WhatsApp Business number, Instagram account, and website chat widget, then set your automated responses and voice. Everything funnels into the one inbox from that moment. The technical part is easy; getting your team out of five apps and into one takes another week or two.</p>
 `,
     metaTitle: 'Omnichannel Salon Communication Guide | The Daisy',
     metaDescription:
-      'Build omnichannel communication for your salon. Unify WhatsApp, Instagram, phone, and web into one system that never misses a booking inquiry.',
+      'Build omnichannel communication for your salon. Bring WhatsApp, Instagram and web messages into one system so booking inquiries stop slipping through.',
     createdAt: '2026-04-01T05:00:00.000Z',
-    updatedAt: '2026-04-01T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-04-01T05:00:00.000Z',
     locale: 'en',
     sortId: 120,
@@ -1128,7 +1128,7 @@ const managingInstagramDmsArticleAr: LocalBlogPost = {
 <p>ربط رسائل إنستغرام المباشرة بـ<a href="/ar/glossary/salon-management-software">منصة إدارة صالونك</a> يفتح أتمتة أقوى:</p>
 <ul>
 <li><strong>ردود مدعومة بالذكاء الاصطناعي:</strong> يمكن لـ<a href="/ar/features/business/ai-salon-management">موظف الاستقبال الذكي</a> قراءة الرسالة المباشرة وفهم النية والتحقق من التوفر في الوقت الفعلي والرد بخيارات حجز مخصصة - كل ذلك تلقائيًا على مدار الساعة.</li>
-<li><strong>صندوق وارد موحد:</strong> شاهد جميع رسائل العملاء (رسائل مباشرة وواتساب وهاتف ومحادثة ويب) في <a href="/ar/features/business/communication-tools">لوحة تحكم اتصالات</a> واحدة بدلاً من التحقق من تطبيقات متعددة.</li>
+<li><strong>صندوق وارد موحد:</strong> شاهد جميع رسائل العملاء (رسائل إنستغرام المباشرة وواتساب ومحادثة الويب) في <a href="/ar/features/business/communication-tools">لوحة تحكم اتصالات</a> واحدة بدلاً من التحقق من تطبيقات متعددة.</li>
 <li><strong>التعرف على العميل:</strong> عندما تصل رسالة مباشرة من عميل حالي، يسحب النظام ملفه وسجل حجوزاته وتفضيلاته - مما يتيح ردودًا مخصصة حتى في المحادثات الآلية.</li>
 <li><strong>تدفق الحجز ضمن الرسالة المباشرة:</strong> بدلاً من إعادة توجيه العملاء لصفحة حجز منفصلة، يعرض الذكاء الاصطناعي الأوقات المتاحة ويؤكد الحجوزات بالكامل ضمن محادثة إنستغرام.</li>
 </ul>
@@ -1174,7 +1174,7 @@ const managingInstagramDmsArticleAr: LocalBlogPost = {
     metaDescription:
       'حوّل رسائل Instagram المباشرة إلى حجوزات صالون. تعلّم كيفية تنظيم استفسارات الرسائل المباشرة والرد عليها وتحويلها مع القوالب والأتمتة وأفضل الممارسات.',
     createdAt: '2025-06-19T05:00:00.000Z',
-    updatedAt: '2025-06-19T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2025-06-19T05:00:00.000Z',
     locale: 'ar',
     sortId: 119,
@@ -1255,7 +1255,7 @@ const omnichannelCommunicationArticleAr: LocalBlogPost = {
 <h3>المستوى 1: القنوات الأساسية</h3>
 <ul>
 <li><strong>واتساب:</strong> قناة الحجز والتواصل المهيمنة في معظم الأسواق. معدلات فتح 90%+، تسليم فوري، يدعم الوسائط الغنية وتدفقات الحجز. إذا كنت ستستثمر في قناة رقمية واحدة فقط، فليكن واتساب.</li>
-<li><strong>الهاتف:</strong> لا يزال مهمًا للاستفسارات المعقدة والفئات العمرية الأكبر وتنسيق الزيارات بدون موعد. حجمه يتراجع لكنه لا يزال يمثل 18-22% من الحجوزات في معظم الأسواق. يمكن لـ<a href="/ar/features/business/ai-salon-management">موظف الاستقبال الذكي</a> التعامل مع المكالمات الهاتفية بنفس جودة القنوات الرقمية.</li>
+<li><strong>الهاتف:</strong> لا يزال مهمًا للاستفسارات المعقدة والفئات العمرية الأكبر وتنسيق الزيارات بدون موعد. حجمه يتراجع لكنه لا يزال يمثل 18-22% من الحجوزات في معظم الأسواق. تظل المكالمات بحاجة إلى شخص من فريقك، فـ<a href="/ar/features/business/ai-salon-management">موظف الاستقبال الذكي</a> من ديزي لا يرد على المكالمات الهاتفية حتى الآن، ويغطي واتساب وإنستغرام وموقع الحجز.</li>
 <li><strong>رسائل إنستغرام المباشرة:</strong> قناة الاكتشاف إلى الحجز الأساسية لأعمال التجميل. 40% من مستهلكي التجميل الذين يكتشفون صالونًا على إنستغرام يرسلون رسالة مباشرة قبل الحجز. ضرورية للصالونات التي تستهدف عملاء تحت 40.</li>
 <li><strong>صفحة الحجز الإلكتروني:</strong> موقعك أو <a href="/ar/features/business/booking-management">منصة الحجز</a> حيث يذهب عملاء الخدمة الذاتية مباشرة. يجب أن تكون خالية من الاحتكاك - ثلاث نقرات للحجز.</li>
 </ul>
@@ -1278,7 +1278,7 @@ const omnichannelCommunicationArticleAr: LocalBlogPost = {
 <p>بناء التواصل الشامل لا يتطلب توظيف فريق مطورين. منصات الصالونات الحديثة تتعامل مع التكامل التقني. مهمتك هي اختيار المنصة المناسبة وتهيئتها لنشاطك.</p>
 
 <h3>الخطوة 1: مركزة صندوق الوارد</h3>
-<p>أساس التواصل الشامل هو صندوق وارد موحد حيث تظهر جميع رسائل العملاء من جميع القنوات في مكان واحد. بدلاً من التحقق من إنستغرام ثم واتساب ثم البريد الإلكتروني ثم سجل المكالمات، يرى فريقك كل محادثة في <a href="/ar/features/business/communication-tools">لوحة تحكم اتصالات</a> واحدة.</p>
+<p>أساس التواصل الشامل هو صندوق وارد موحد حيث تظهر جميع رسائل العملاء من جميع القنوات في مكان واحد. بدلاً من التحقق من إنستغرام ثم واتساب ثم البريد الإلكتروني، يرى فريقك كل محادثة في <a href="/ar/features/business/communication-tools">لوحة تحكم اتصالات</a> واحدة.</p>
 <p>يوفر صندوق الوارد الموحد:</p>
 <ul>
 <li>كل رسالة من كل قناة في عرض واحد.</li>
@@ -1348,19 +1348,19 @@ const omnichannelCommunicationArticleAr: LocalBlogPost = {
 <p>التواصل الشامل أهم بالنسبة للصالونات الصغيرة لأن لديك عددًا أقل من الأشخاص لمراقبة القنوات. صندوق وارد موحد يعني أن شخصًا واحدًا يمكنه رؤية جميع الرسائل في مكان واحد بدلاً من التنقل بين التطبيقات. الردود المدعومة بالذكاء الاصطناعي تتعامل مع الاستفسارات بينما أنت مع العملاء، فلا تفوتك رسالة أبدًا بغض النظر عن انشغالك. التكنولوجيا هي المُعادل الذي يمنح صالون من شخصين قدرة تواصل فريق كبير.</p>
 
 <h3>هل سيبدو التواصل الشامل غير شخصي للعملاء؟</h3>
-<p>العكس. التواصل الشامل يبدو أكثر شخصية لأن الصالون يتذكر العميل عبر القنوات. عندما يتصل عميل تحدث على إنستغرام بصالونك ويقول الذكاء الاصطناعي أو موظف الاستقبال "مرحبًا سارة، أرى أنك كنت تسألين عن أسعار البالاياج - هل تودين المضي قدمًا والحجز؟" هذه تجربة شخصية ومتصلة. التواصل المجزأ (حيث يجب على العميل تكرار نفسه) هو ما يبدو غير شخصي.</p>
+<p>العكس. التواصل الشامل يبدو أكثر شخصية لأن الصالون يتذكر العميل عبر القنوات. عندما تراسل عميلة تحدثت على إنستغرام صالونك عبر واتساب في اليوم التالي وتقرأ "مرحبًا سارة، أرى أنك كنت تسألين عن أسعار البالاياج - هل تودين المضي قدمًا والحجز؟" هذه تجربة شخصية ومتصلة. التواصل المجزأ (حيث يجب على العميل تكرار نفسه) هو ما يبدو غير شخصي.</p>
 
 <h3>كم يكلف نظام التواصل الشامل؟</h3>
-<p>قدرة التواصل الشامل عادةً مضمّنة في منصات إدارة الصالونات الحديثة بدون تكلفة إضافية تتجاوز اشتراك المنصة. تتضمن ديزي تكامل واتساب وإنستغرام والهاتف ومحادثة الويب والبريد الإلكتروني في خططها القياسية. أنت لا تدفع لكل قناة بشكل منفصل - بل تدفع لمنصة تربطها جميعًا. هذا عادةً أقل تكلفة من التكلفة المجمعة لأدوات منفصلة لكل قناة.</p>
+<p>قدرة التواصل الشامل عادةً مضمّنة في منصات إدارة الصالونات الحديثة بدون تكلفة إضافية تتجاوز اشتراك المنصة. تتضمن ديزي تكامل واتساب وإنستغرام ومحادثة الويب والبريد الإلكتروني في خططها القياسية. ولا تشمل المكالمات الهاتفية حتى الآن، لذا تبقى المكالمات لدى فريقك. أنت لا تدفع لكل قناة بشكل منفصل - بل تدفع لمنصة تربطها جميعًا. هذا عادةً أقل تكلفة من التكلفة المجمعة لأدوات منفصلة لكل قناة.</p>
 
 <h3>كم من الوقت يستغرق تنفيذ التواصل الشامل؟</h3>
-<p>على منصة تدعم التواصل الشامل أصلاً، يستغرق الإعداد 1-3 أيام. تربط رقم واتساب للأعمال وحساب إنستغرام ورقم الهاتف وأداة محادثة الموقع بالمنصة. تهيّئ ردودك الآلية وإعدادات صوت العلامة التجارية. بمجرد الربط، تتدفق جميع القنوات إلى صندوق الوارد الموحد فورًا. الإعداد التقني مباشر - التحول الثقافي (فريقك يستخدم صندوق وارد واحد بدلاً من خمسة تطبيقات) يحتاج أسبوعًا أو اثنين ليصبح عادة.</p>
+<p>على منصة تدعم التواصل الشامل أصلاً، يستغرق الإعداد 1-3 أيام. تربط رقم واتساب للأعمال وحساب إنستغرام وأداة محادثة الموقع بالمنصة. تهيّئ ردودك الآلية وإعدادات صوت العلامة التجارية. بمجرد الربط، تتدفق جميع القنوات إلى صندوق الوارد الموحد فورًا. الإعداد التقني مباشر - التحول الثقافي (فريقك يستخدم صندوق وارد واحد بدلاً من خمسة تطبيقات) يحتاج أسبوعًا أو اثنين ليصبح عادة.</p>
 `,
     metaTitle: 'دليل التواصل الشامل للصالونات | ديزي',
     metaDescription:
-      'ابنِ تواصلاً شاملاً لصالونك. وحّد واتساب وInstagram والهاتف والويب في نظام واحد لا يفوّت أي استفسار حجز.',
+      'ابنِ تواصلاً شاملاً لصالونك. اجمع رسائل واتساب وInstagram والويب في نظام واحد حتى لا تضيع استفسارات الحجز.',
     createdAt: '2026-04-01T05:00:00.000Z',
-    updatedAt: '2026-04-01T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-04-01T05:00:00.000Z',
     locale: 'ar',
     sortId: 120,

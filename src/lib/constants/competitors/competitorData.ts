@@ -213,28 +213,37 @@ export const daisyData: {
     marketingAndCrm: 3,
     inventoryManagement: 2,
     reportingAndAnalytics: 3,
-    marketplaceAndDiscovery: 0,
+    // Basic, not 0: the marketplace exists but is opt-in, runs in selected
+    // countries only, and lists a business after a service-quality review
+    // (pricing page: "Marketplace Eligibility: After review").
+    marketplaceAndDiscovery: 1,
     aiCapabilities: 2,
     brandingAndWhiteLabel: 3,
   },
+  // Mirrors the /pricing page (src/lib/constants/pricing/v3). Each plan
+  // includes a set number of team members (calendars) and workspaces; extra
+  // ones are paid add-ons. Basic bills a $1/month base, plus $50 in any month
+  // the account passes 5 appointments.
   pricing: {
     hasFreePlan: false,
     freeTrialDays: 14,
-    startingPrice: 'From $50/mo',
-    startingPriceNumeric: 50,
+    startingPrice: 'From $1/mo',
+    startingPriceNumeric: 1,
     tiers: [
       {
         name: 'Basic',
-        price: '$50/mo',
-        priceNumeric: 50,
+        price: '$1/mo, +$50/mo once you pass 5 appointments in a month',
+        priceNumeric: 1,
         billingCycle: 'monthly',
+        perStaffCost: '$10/mo per extra calendar',
         features: [
-          '5 users / calendar',
-          '1 workspace/location',
+          '5 team members / calendars',
+          '1 workspace',
           'Unlimited bookings',
           'Sales management (POS)',
           'Client management',
           'Mobile & desktop app',
+          '50 AI receptionist conversations included',
         ],
       },
       {
@@ -242,12 +251,13 @@ export const daisyData: {
         price: '$150/mo',
         priceNumeric: 150,
         billingCycle: 'monthly',
+        perStaffCost: '$10/mo per extra calendar',
         features: [
-          '10 users / calendar',
-          '2 workspaces/locations',
+          '10 team members / calendars',
+          '2 workspaces',
           'Online payments',
           'Automated reminders',
-          'Marketplace visibility',
+          'Cashback promotions, after a service-quality review',
           'Priority support',
         ],
       },
@@ -256,19 +266,30 @@ export const daisyData: {
         price: '$250/mo',
         priceNumeric: 250,
         billingCycle: 'monthly',
+        perStaffCost: '$10/mo per extra calendar',
         features: [
-          '15 users / calendar',
-          '4 workspaces/locations',
+          '15 team members / calendars',
+          '4 workspaces',
           'Advanced analytics',
           'Free data migration',
           'Assisted onboarding',
-          'All features included',
+          'Advanced AI receptionist customization',
         ],
       },
     ],
-    hiddenCosts: [],
+    // Published add-ons from the pricing page, listed so this record never
+    // implies the plan price covers any team size or any AI volume.
+    hiddenCosts: [
+      'Extra team member / calendar: $10 a month each',
+      'Extra workspace: $25 a month each',
+      'AI receptionist conversations beyond the 50 included: pay-as-you-go top-ups',
+      'Marketplace commission on new clients the marketplace brings (the marketplace is optional)',
+    ],
+    // 'flat' is kept for the PricingComparisonCard label, which now reads
+    // "Monthly subscription". The plans are tiered: each includes a set
+    // number of team members, and extra calendars cost $10 a month.
     pricingModel: 'flat',
-    lastVerified: '2026-03-14',
+    lastVerified: '2026-10-10',
   },
   gccPresence: {
     hasArabicUI: true,
@@ -286,11 +307,11 @@ export const daisyData: {
     hasAiAnalytics: true,
     hasAiPricing: false,
     aiDescription:
-      '24/7 AI receptionist handling bookings, payments, and customer service in Arabic and English. AI-powered marketing recommendations and analytics.',
+      '24/7 AI receptionist on WhatsApp, Instagram and the booking site, handling bookings, payments and customer service in Arabic and English. It does not answer phone calls yet. Every plan includes 50 AI receptionist conversations, with paid top-ups after that. AI-powered marketing recommendations and analytics.',
   },
   keyDifferentiators: [
     'AI receptionist (24/7 customer service, appointments, payments)',
-    'Customer acquisition engine (marketplace + cashback + marketing)',
+    'Customer acquisition engine (cashback, marketing and an optional marketplace)',
     'Branded booking page (your logo, name and colours)',
     'Network effects (AI improves with more data)',
     'All-in-one (8 categories replacing 5+ tools)',
@@ -321,20 +342,22 @@ export const daisyDataAr: typeof daisyData = {
   features: daisyData.features,
   pricing: {
     ...daisyData.pricing,
-    startingPrice: 'من $50/شهرياً',
+    startingPrice: 'من $1/شهرياً',
     tiers: [
       {
         name: 'أساسي',
-        price: '$50/شهرياً',
-        priceNumeric: 50,
+        price: '$1/شهرياً، +$50 شهرياً بعد تجاوز 5 مواعيد في الشهر',
+        priceNumeric: 1,
         billingCycle: 'monthly',
+        perStaffCost: '$10 شهرياً لكل تقويم إضافي',
         features: [
-          '5 مستخدمين / تقويم',
-          'موقع/فرع واحد',
+          '5 أعضاء فريق / تقاويم',
+          'مساحة عمل واحدة',
           'حجوزات غير محدودة',
           'إدارة المبيعات (نقاط البيع)',
           'إدارة العملاء',
           'تطبيق جوال وسطح مكتب',
+          '50 محادثة لموظف الاستقبال الذكي مشمولة',
         ],
       },
       {
@@ -342,12 +365,13 @@ export const daisyDataAr: typeof daisyData = {
         price: '$150/شهرياً',
         priceNumeric: 150,
         billingCycle: 'monthly',
+        perStaffCost: '$10 شهرياً لكل تقويم إضافي',
         features: [
-          '10 مستخدمين / تقويم',
-          'موقعان/فرعان',
+          '10 أعضاء فريق / تقاويم',
+          'مساحتا عمل',
           'مدفوعات إلكترونية',
           'تذكيرات تلقائية',
-          'ظهور في السوق',
+          'عروض الكاشباك بعد مراجعة جودة الخدمة',
           'دعم أولوية',
         ],
       },
@@ -356,30 +380,36 @@ export const daisyDataAr: typeof daisyData = {
         price: '$250/شهرياً',
         priceNumeric: 250,
         billingCycle: 'monthly',
+        perStaffCost: '$10 شهرياً لكل تقويم إضافي',
         features: [
-          '15 مستخدم / تقويم',
-          '4 مواقع/فروع',
+          '15 عضو فريق / تقاويم',
+          '4 مساحات عمل',
           'تحليلات متقدمة',
           'ترحيل بيانات مجاني',
           'تأهيل مُرافق',
-          'جميع الميزات مضمنة',
+          'تخصيص متقدم لموظف الاستقبال الذكي',
         ],
       },
     ],
-    hiddenCosts: [],
+    hiddenCosts: [
+      'عضو فريق / تقويم إضافي: $10 شهرياً لكل واحد',
+      'مساحة عمل إضافية: $25 شهرياً لكل واحدة',
+      'محادثات موظف الاستقبال الذكي بعد الخمسين المشمولة: رصيد إضافي حسب الاستخدام',
+      'عمولة السوق على العملاء الجدد الذين يجلبهم السوق (الانضمام إلى السوق اختياري)',
+    ],
     pricingModel: 'flat',
-    lastVerified: '2026-03-14',
+    lastVerified: '2026-10-10',
   },
   gccPresence: daisyData.gccPresence,
   aiCapabilities: {
     ...daisyData.aiCapabilities,
     aiDescription:
-      'موظف استقبال ذكي يعمل على مدار الساعة يتعامل مع الحجوزات والمدفوعات وخدمة العملاء بالعربية والإنجليزية. توصيات تسويقية وتحليلات مدعومة بالذكاء الاصطناعي.',
+      'موظف استقبال ذكي يعمل على مدار الساعة عبر واتساب وإنستغرام وصفحة الحجز، ويتعامل مع الحجوزات والمدفوعات وخدمة العملاء بالعربية والإنجليزية، ولا يرد على المكالمات الهاتفية حالياً. تشمل كل باقة 50 محادثة لموظف الاستقبال الذكي، ثم رصيد إضافي مدفوع. توصيات تسويقية وتحليلات مدعومة بالذكاء الاصطناعي.',
   },
   keyDifferentiators: [
     'موظف استقبال ذكي (خدمة عملاء 24/7، مواعيد، مدفوعات)',
-    'محرك استقطاب العملاء (سوق + كاشباك + تسويق)',
-    'تحكم كامل بالعلامة التجارية (وايت ليبل لكل شيء)',
+    'محرك استقطاب العملاء (كاشباك + تسويق + سوق اختياري)',
+    'صفحة حجز بعلامتك التجارية (شعارك واسمك وألوانك)',
     'تأثيرات الشبكة (الذكاء الاصطناعي يتحسن مع مزيد من البيانات)',
     'الكل في واحد (8 فئات تحل محل 5+ أدوات)',
     'متعدد اللغات (عربي/إنجليزي بأولوية متساوية، لغات إضافية قادمة، الخليج + عالمي)',

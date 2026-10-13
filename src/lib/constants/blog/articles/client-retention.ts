@@ -210,7 +210,7 @@ const rebookingStrategiesArticle: LocalBlogPost = {
     aboutPosts: `
 <h2>Why rebooking is the most profitable action in your salon</h2>
 <p>Booking a client's next appointment before they leave is the most profitable thing your salon does all day. Rebook at checkout and there is an 80-90% chance they turn up for it. Let them walk out with nothing scheduled and the chance of seeing them again inside 90 days falls to 20-30%. That gap is the difference between a salon that thrives and one permanently replacing the clients it lost.</p>
-<p>Even so, the average salon rebook rate sits at just 35-40%, according to 2025 industry data from Phorest Salon Software. Six in ten clients leave with nothing on the books. Every unbooked departure is revenue you did not take and a door held open for a competitor. Below are the strategies the best salons use to reach 60-80%.</p>
+<p>Even so, many salons watch most clients leave with nothing on the books. Every unbooked departure is revenue you did not take and a door held open for a competitor. Below are the strategies the best salons use to reach 60-80%.</p>
 
 <h2>Understanding why clients don't rebook</h2>
 <p>Fix the barriers before the tactics. Five reasons account for most of it:</p>
@@ -309,7 +309,7 @@ const rebookingStrategiesArticle: LocalBlogPost = {
     metaDescription:
       'Proven salon rebooking strategies that increase return visit rates by 30-50%. Front-desk scripts, automated reminders, and incentives that drive repeat visits.',
     createdAt: '2025-07-14T05:00:00.000Z',
-    updatedAt: '2025-07-14T05:00:00.000Z',
+    updatedAt: '2026-10-09T08:00:00.000Z',
     publishedAt: '2025-07-14T05:00:00.000Z',
     locale: 'en',
     sortId: 93,
@@ -1346,7 +1346,7 @@ const rebookingStrategiesArticleAr: LocalBlogPost = {
       'اكتشف إستراتيجيات إعادة حجز الصالونات التي أثبتت جدواها والتي تزيد من معدلات الزيارة المتكررة بنسبة 30-50%. تعرف على نصوص مكتب الاستقبال، وتسلسلات التذكير التلقائية، وهياكل الحوافز التي تحول الزائرين لمرة واحدة إلى عملاء متكررين مخلصين.',
     aboutPosts: `<h2>لماذا يعد إعادة الحجز الإجراء الأكثر ربحية في صالونك</h2>
 <p> إعادة الحجز - تحديد الموعد التالي للعميل قبل مغادرته - هو الإجراء الوحيد الأكثر ربحية الذي يتخذه صالونك كل يوم. العميل الذي يعيد الحجز عند الدفع لديه فرصة بنسبة 80-90% لحضور هذا الموعد فعليًا. العميل الذي يغادر بدون حجز مستقبلي لديه فرصة بنسبة 20-30٪ فقط للعودة خلال الـ 90 يومًا القادمة. يمثل هذا الاختلاف الفجوة بين الصالون المزدهر والصالون الذي يطارد عملاء جدد باستمرار ليحلوا محل العملاء المفقودين.</p>
-<p> على الرغم من ذلك، يبلغ متوسط معدل إعادة الحجز في الصالون 35-40% فقط، وفقًا لبيانات الصناعة لعام 2025 من تقرير Phorest. وهذا يعني أن ستة من كل عشرة عملاء يغادرون دون موعد تالي في الكتب. تمثل كل مغادرة غير محظورة فرصة ضائعة للإيرادات ودعوة مفتوحة لمنافس للتدخل. يشرح هذا الدليل استراتيجيات إعادة الحجز ذات التأثير الأعلى التي تستخدمها أفضل الصالونات لتحقيق معدلات إعادة حجز بنسبة 60-80%.</p>
+<p> على الرغم من ذلك، يرى كثير من الصالونات معظم عملائها يغادرون دون موعد تالٍ محجوز. تمثل كل مغادرة غير محظورة فرصة ضائعة للإيرادات ودعوة مفتوحة لمنافس للتدخل. يشرح هذا الدليل استراتيجيات إعادة الحجز ذات التأثير الأعلى التي تستخدمها أفضل الصالونات لتحقيق معدلات إعادة حجز بنسبة 60-80%.</p>
 
 <h2>فهم سبب عدم قيام العملاء بإعادة الحجز</h2>
 <p>قبل تنفيذ الاستراتيجيات، افهم العوائق. تحدد الأبحاث خمسة أسباب رئيسية لمغادرة العملاء دون إعادة الحجز:</p>
@@ -1444,7 +1444,7 @@ const rebookingStrategiesArticleAr: LocalBlogPost = {
     metaDescription:
       'استراتيجيات إعادة حجز مثبتة للصالون. يغطي إعادة الحجز عند الكرسي والمتابعات والتذكيرات.',
     createdAt: '2025-07-14T05:00:00.000Z',
-    updatedAt: '2025-07-14T05:00:00.000Z',
+    updatedAt: '2026-10-09T08:00:00.000Z',
     publishedAt: '2025-07-14T05:00:00.000Z',
     locale: 'ar',
     sortId: 93,

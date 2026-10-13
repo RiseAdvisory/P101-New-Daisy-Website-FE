@@ -361,11 +361,11 @@ export const professionalEntries2: FeatureDeepDive[] = [
     },
 
     overview:
-      'Your talent deserves to be seen. Whether you are a salon employee dreaming of independence or a freelancer looking to fill your calendar, the biggest challenge is the same: getting your name out there and building a reputation that attracts clients on its own. Most beauty professionals rely on word-of-mouth alone, which works, but it is slow and unpredictable. The Daisy\'s Career Growth tools turn your skills into a visible, searchable personal brand. Build a professional portfolio that showcases your best work with before-and-after photos organised by service type. Claim your own profile on The Daisy\'s marketplace, where clients actively search for professionals in their area. Collect and display verified client reviews that build trust with new prospects. Track your reputation score and respond to feedback promptly. When you are ready to go independent, The Daisy provides the business infrastructure you need, booking, payments, client management, marketing, without the overhead of building it yourself. You do not need a business degree or a marketing budget. You need great skills, a platform that makes those skills visible, and tools that handle the business side while you focus on your craft. The Daisy is that platform. Whether your goal is a fuller calendar, higher-paying clients, or full independence, the path starts with making your work visible and your reputation undeniable.',
+      'Your talent deserves to be seen. For a salon employee planning to go independent and for a freelancer trying to fill a calendar, the hardest part is the same: getting your name out there and building a reputation that attracts clients on its own. Most beauty professionals rely on word-of-mouth alone, which works, but it is slow and unpredictable. The Daisy\'s Career Growth tools turn your skills into a visible, searchable personal brand. Build a professional portfolio that showcases your best work with before-and-after photos organised by service type. If you want more reach, list your profile on The Daisy\'s optional marketplace, available in selected countries, where clients actively search for professionals in their area. Collect and display verified client reviews that build trust with new prospects. Track your reputation score and respond to feedback promptly. When you are ready to go independent, The Daisy provides the business infrastructure you need, booking, payments, client management, marketing, without the overhead of building it yourself. You do not need a business degree or a marketing budget. You need great skills, a platform that makes those skills visible, and tools that handle the business side while you focus on your craft. The Daisy is that platform. A fuller calendar, higher-paying clients and full independence all start with the same step: making your work visible and building a reputation clients trust.',
 
     keyCapabilities: [
       'Professional portfolio with before-and-after gallery organised by service',
-      'Personal profile on The Daisy marketplace searchable by clients',
+      'Optional profile on The Daisy marketplace, searchable by clients',
       'Verified client review collection and reputation management',
       'Client acquisition tools including referral programmes and promotions',
       'Independence readiness dashboard showing your business metrics',
@@ -401,7 +401,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         name: 'Marketplace Profile',
         description:
-          'Claim your spot on The Daisy marketplace, where clients actively search for beauty professionals in their area. Your profile displays your specialisations, availability, pricing, portfolio, reviews, and booking link. Clients can find you by service type, location, rating, and availability. This is not passive social media hoping someone notices your post. This is active client acquisition, people searching for exactly what you offer and finding you.',
+          'Apply for a spot on The Daisy marketplace, available in selected countries, where clients actively search for beauty professionals in their area. Your profile displays your specialisations, availability, pricing, portfolio, reviews, and booking link. Clients can find you by service type, location, rating, and availability. This is not passive social media hoping someone notices your post. This is active client acquisition, people searching for exactly what you offer and finding you.',
         howItWorks: [
           'Create your professional profile with your specialisations, bio, and service menu.',
           'Set your location, availability, and pricing so clients can find and book you directly.',
@@ -485,7 +485,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
         step: 3,
         title: 'Get Discovered on the Marketplace',
         description:
-          'Your profile goes live on The Daisy marketplace, where clients in your area actively search for the services you offer. New booking enquiries start coming in.',
+          'If you opt in, your profile goes live on The Daisy marketplace after a service-quality review, and clients in your area can find the services you offer. From there, new booking enquiries can start coming in.',
       },
       {
         step: 4,
@@ -616,7 +616,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         question: 'How does the marketplace help me get new clients?',
         answer:
-          'The Daisy marketplace is where clients actively search for beauty professionals by service type, location, availability, and rating. Your profile, portfolio, and reviews are displayed to clients looking for exactly what you offer. Unlike social media, these are people with intent to book, not just casual browsers.',
+          'The Daisy marketplace, available in selected countries, is where clients actively search for beauty professionals by service type, location, availability, and rating. If you join, your profile, portfolio, and reviews are shown to clients looking for exactly what you offer. Unlike social media followers, these are people who came to book.',
       },
       {
         question: 'Are the reviews on my profile verified?',
@@ -641,7 +641,7 @@ export const professionalEntries2: FeatureDeepDive[] = [
       {
         question: 'Does building my Daisy profile cost anything?',
         answer:
-          'Creating your professional profile, building your portfolio, and appearing on the marketplace are included in your Daisy subscription. There are no additional listing fees or per-lead charges. Every client who discovers you through the marketplace is yours to keep.',
+          'Your profile and portfolio are part of your Daisy subscription. Marketplace eligibility is included on every plan after a service-quality review, with no listing fee. Daisy charges commission only on new clients the marketplace brings you, never on your existing clients. Every client who discovers you through the marketplace is yours to keep.',
       },
     ],
 

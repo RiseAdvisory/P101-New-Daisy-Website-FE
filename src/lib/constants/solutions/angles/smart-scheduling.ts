@@ -284,7 +284,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
           { label: 'Client Management', description: 'Build relationships with detailed client profiles' },
           { label: 'Smart Notifications', description: 'Appointment reminders that reduce no-shows' },
           { label: 'Calendar Sync', description: 'Sync with Google Calendar and other tools' },
-          { label: 'Marketplace Visibility', description: 'Customers find you when searching nearby' },
+          { label: 'Marketplace Visibility', description: 'Optional listing for nearby searches, in selected countries' },
         ],
         stats: [
           { value: '0%', context: 'scheduling admin' },
@@ -367,7 +367,7 @@ const smartSchedulingAngle: Record<'business' | 'professional', I18nContent<Land
           { label: 'إدارة العملاء', description: 'ابنِ علاقات مع ملفات عملاء مفصلة' },
           { label: 'إشعارات ذكية', description: 'تذكيرات بالمواعيد تقلل حالات عدم الحضور' },
           { label: 'مزامنة التقويم', description: 'مزامنة مع تقويم جوجل وأدوات أخرى' },
-          { label: 'ظهور في السوق', description: 'العملاء يجدونك عند البحث بالقرب منهم' },
+          { label: 'ظهور في السوق', description: 'إدراج اختياري يظهر في عمليات البحث القريبة، في دول مختارة' },
         ],
         stats: [
           { value: '0%', context: 'إدارة جدولة' },

@@ -69,7 +69,7 @@ const onlineBookingSetupArticle: LocalBlogPost = {
 
 <h3>Nice-to-have features</h3>
 <ul>
-<li><strong>AI receptionist:</strong> takes booking inquiries by phone and chat, so nothing is missed while you are with a client.</li>
+<li><strong>AI receptionist:</strong> takes booking inquiries on WhatsApp, Instagram and your booking site, so messages are not missed while you are with a client.</li>
 <li><strong>Waitlist management:</strong> contacts waitlisted clients the moment a slot opens.</li>
 <li><strong>Deposit collection:</strong> partial payment at booking, which protects you against no-shows.</li>
 <li><strong>Recurring bookings:</strong> lets regulars set up a series of appointments in one go.</li>
@@ -166,13 +166,13 @@ const onlineBookingSetupArticle: LocalBlogPost = {
 <p>Good systems include a notes field for special requests. For genuinely custom work, clients can contact you directly, or the AI receptionist can handle the conversation and create the booking itself.</p>
 
 <h3>Can I still accept phone and walk-in bookings?</h3>
-<p>Yes. Online booking adds a channel rather than removing one. Your team can add bookings by hand, an AI receptionist can take them by phone, and everything lands on the same calendar whatever the source.</p>
+<p>Yes. Online booking adds a channel rather than removing one. Your team adds phone and walk-in bookings by hand, the AI receptionist takes bookings over WhatsApp and Instagram, and everything lands on the same calendar whatever the source. Daisy's AI receptionist does not answer phone calls yet.</p>
 `,
     metaTitle: 'Online Booking for Salons: Setup Guide | The Daisy',
     metaDescription:
       'Step-by-step guide to setting up online booking for your salon. Configure services, connect booking channels, and start accepting appointments today.',
     createdAt: '2026-03-17T09:00:00.000Z',
-    updatedAt: '2026-03-17T09:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-03-17T09:00:00.000Z',
     locale: 'en',
     sortId: 8,
@@ -435,7 +435,7 @@ const waitlistManagementArticle: LocalBlogPost = {
 <li>Acceptable date range (e.g., &ldquo;any time this week&rdquo; or &ldquo;Tuesday or Wednesday morning&rdquo;)</li>
 <li>How they want to be notified (WhatsApp, SMS, or email)</li>
 </ul>
-<p>This works through any channel: your website, social media, WhatsApp, or an <a href="/en/features/business/ai-salon-management">AI receptionist</a> taking the call.</p>
+<p>This works through any channel: your website, social media, WhatsApp, or an <a href="/en/features/business/ai-salon-management">AI receptionist</a> answering a message.</p>
 
 <h3>Step 2: cancellation triggers automatic matching</h3>
 <p>The moment someone cancels or gets marked as a no-show, the system:</p>
@@ -532,7 +532,7 @@ const waitlistManagementArticle: LocalBlogPost = {
     metaDescription:
       'Automated salon waitlist management fills cancelled appointment slots in minutes, captures overflow demand, and recovers thousands in lost revenue monthly.',
     createdAt: '2026-02-10T05:00:00.000Z',
-    updatedAt: '2026-02-10T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-02-10T05:00:00.000Z',
     locale: 'en',
     sortId: 10,
@@ -1173,7 +1173,7 @@ const onlineBookingSetupArticleAr: LocalBlogPost = {
 
 <h3>ميزات مستحسنة</h3>
 <ul>
-<li><strong>موظف الاستقبال الذكي:</strong> يتولى استفسارات الحجز عبر الهاتف والدردشة تلقائياً، حتى لا تفوتك حجوزات أبداً حتى عندما تكون مشغولاً مع العملاء.</li>
+<li><strong>موظف الاستقبال الذكي:</strong> يتولى استفسارات الحجز عبر واتساب وإنستغرام وموقع الحجز تلقائياً، حتى لا تفوتك الرسائل عندما تكون مشغولاً مع العملاء.</li>
 <li><strong>إدارة قائمة الانتظار:</strong> يتصل تلقائياً بعملاء قائمة الانتظار عند توفر فترة.</li>
 <li><strong>تحصيل العربون:</strong> اشترط دفعة جزئية عند الحجز لتقليل عدم الحضور وحماية إيراداتك.</li>
 <li><strong>الحجوزات المتكررة:</strong> اسمح للعملاء المنتظمين بجدولة موعدهم التالي في سلسلة تلقائياً.</li>
@@ -1270,13 +1270,13 @@ const onlineBookingSetupArticleAr: LocalBlogPost = {
 <p>تتضمن أنظمة الحجز الجيدة حقل ملاحظات حيث يمكن للعملاء إضافة طلبات خاصة. للخدمات المخصصة بالكامل، يمكن للعملاء التواصل معك مباشرة أو يمكن لموظف الاستقبال الذكي التعامل مع المحادثة وإنشاء حجز مخصص.</p>
 
 <h3>هل لا يزال بإمكاني قبول حجوزات هاتفية وبدون موعد؟</h3>
-<p>بالتأكيد. الحجز الإلكتروني هو قناة إضافية وليس بديلاً. لا يزال بإمكان فريقك إضافة حجوزات يدوياً، ويمكن لموظف الاستقبال الذكي التعامل مع الحجوزات الهاتفية تلقائياً. جميع الحجوزات - بغض النظر عن المصدر - تظهر على نفس التقويم الموحد.</p>
+<p>بالتأكيد. الحجز الإلكتروني هو قناة إضافية وليس بديلاً. يضيف فريقك الحجوزات الهاتفية وحجوزات الزيارات المباشرة يدوياً، ويتولى موظف الاستقبال الذكي الحجوزات عبر واتساب وإنستغرام. ولا يرد موظف الاستقبال الذكي من ديزي على المكالمات الهاتفية حتى الآن. جميع الحجوزات - بغض النظر عن المصدر - تظهر على نفس التقويم الموحد.</p>
 `,
     metaTitle: 'دليل إعداد الحجز عبر الإنترنت للصالونات | ديزي',
     metaDescription:
       'دليل إعداد الحجز عبر الإنترنت لصالونك خطوة بخطوة. اختر النظام وكوّن الخدمات وابدأ القبول خلال يوم.',
     createdAt: '2026-03-17T09:00:00.000Z',
-    updatedAt: '2026-03-17T09:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-03-17T09:00:00.000Z',
     locale: 'ar',
     sortId: 8,
@@ -1531,7 +1531,7 @@ const waitlistManagementArticleAr: LocalBlogPost = {
 <li>نطاق التواريخ المقبول (مثلاً "أي وقت هذا الأسبوع" أو "صباح الثلاثاء أو الأربعاء")</li>
 <li>طريقة الإشعار المفضلة (واتساب أو رسائل نصية أو بريد إلكتروني)</li>
 </ul>
-<p>يمكن أن يحدث هذا عبر أي قناة حجز - الموقع الإلكتروني أو وسائل التواصل الاجتماعي أو واتساب أو حتى من خلال <a href="/ar/features/business/ai-salon-management">موظف الاستقبال الذكي</a> الذي يتولى مكالمة هاتفية.</p>
+<p>يمكن أن يحدث هذا عبر أي قناة حجز - الموقع الإلكتروني أو وسائل التواصل الاجتماعي أو واتساب أو حتى من خلال <a href="/ar/features/business/ai-salon-management">موظف الاستقبال الذكي</a> الذي يرد على رسالة.</p>
 
 <h3>الخطوة 2: الإلغاء يطلق مطابقة تلقائية</h3>
 <p>لحظة إلغاء عميل محجوز أو تسجيل عدم حضور، يقوم النظام فوراً بـ:</p>
@@ -1628,7 +1628,7 @@ const waitlistManagementArticleAr: LocalBlogPost = {
     metaDescription:
       'أتقن إدارة قائمة الانتظار لملء الإلغاءات تلقائيًا وتعظيم استغلال صالونك.',
     createdAt: '2026-02-10T05:00:00.000Z',
-    updatedAt: '2026-02-10T05:00:00.000Z',
+    updatedAt: '2026-10-10T08:00:00.000Z',
     publishedAt: '2026-02-10T05:00:00.000Z',
     locale: 'ar',
     sortId: 10,

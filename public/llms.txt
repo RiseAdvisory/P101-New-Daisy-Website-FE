@@ -8,7 +8,7 @@
 - **Type**: SaaS platform for beauty and wellness businesses
 - **Languages**: English and Arabic (full RTL support)
 - **Markets**: GCC (UAE, Saudi Arabia, Kuwait, Bahrain, Oman, Qatar) and global
-- **Pricing**: From $50/mo (Basic), $150/mo (Growth), $250/mo (Business) -- flat pricing, no per-staff fees
+- **Pricing**: From $50/mo (Basic), $150/mo (Growth), $250/mo (Business). Plans include 5, 10 or 15 team members; an extra calendar is $10/mo and an extra workspace $25/mo
 - **Free Trial**: 14 days
 - **Key Differentiators**: AI receptionist, cashback loyalty system, white-label branding, multilingual (Arabic/English and more)
 - **Partnerships**: Official Meta Tech Provider (WhatsApp Business API, Instagram Messaging API)
@@ -22,7 +22,7 @@
 5. Marketing & CRM -- Automated campaigns, cashback rewards, customer acquisition
 6. Inventory Management -- Stock tracking, low-stock alerts, supplier management
 7. Reporting & Analytics -- AI-driven business insights and revenue analytics
-8. AI Capabilities -- Voice receptionist, chatbot, smart scheduling, predictive analytics
+8. AI Capabilities -- AI receptionist for WhatsApp, Instagram and the booking site, smart scheduling, predictive analytics
 
 ## User Types
 
@@ -46,7 +46,7 @@
 - [Professional Features](https://www.jointhedaisy.com/en/features/professional): Features for beauty professionals
 
 ### Feature Deep-Dives (Business)
-- [AI Salon Management](https://www.jointhedaisy.com/en/features/business/ai-salon-management): AI-powered salon management with voice receptionist and smart scheduling
+- [AI Salon Management](https://www.jointhedaisy.com/en/features/business/ai-salon-management): AI-powered salon management with an AI receptionist for WhatsApp and Instagram, and smart scheduling
 - [Booking Management](https://www.jointhedaisy.com/en/features/business/booking-management): Online booking, calendar management, and appointment automation
 - [Communication Tools](https://www.jointhedaisy.com/en/features/business/communication-tools): Multi-channel client communication and automated messaging
 - [Marketing & Promotions](https://www.jointhedaisy.com/en/features/business/marketing-promotions): Cashback loyalty, referral programmes, and marketing automation
@@ -166,13 +166,13 @@ Q: What is The Daisy?
 A: The Daisy is an AI-powered beauty and wellness platform that helps salons, spas, clinics, and freelance professionals grow their business through smart booking, an AI receptionist, 360-degree customer acquisition, and full white-label brand control. Available in English and Arabic.
 
 Q: How much does The Daisy cost?
-A: Business plans start at $50/month ($42/month billed annually) for the Basic plan, $150/month for Growth, and $250/month for the full Business plan. Professionals can start free with the Starter plan. All paid plans include a 14-day free trial. Flat pricing with no per-staff fees.
+A: Business plans start at $50/month ($42/month billed annually) for the Basic plan, $150/month for Growth, and $250/month for the full Business plan. Professionals can start free with the Starter plan. All paid plans include a 14-day free trial. Plans include 5, 10 or 15 team members, and each extra calendar is $10/month.
 
 Q: What makes The Daisy different from other salon software?
 A: Six key differentiators: (1) AI receptionist for 24/7 customer service, (2) 360-degree customer acquisition combining marketplace, cashback, and marketing, (3) full white-label brand control, (4) network effects that improve with more data, (5) all-in-one platform replacing 5+ tools across 8 categories, and (6) bilingual Arabic/English with native GCC support.
 
 Q: Does The Daisy have an AI receptionist?
-A: Yes. The Daisy includes a built-in AI receptionist that handles customer inquiries, appointment booking, and payments 24/7 via voice call and chat, so businesses never miss a booking even outside working hours.
+A: Yes. The Daisy includes a built-in AI receptionist that handles customer inquiries, appointment booking, and payments 24/7 on WhatsApp, Instagram and the booking site, in Arabic and English, so businesses keep taking bookings outside working hours. It does not answer phone calls yet. Every plan includes 50 AI receptionist conversations, with pay-as-you-go top-ups after that.
 
 Q: What countries does The Daisy support?
 A: The Daisy serves the GCC region (UAE, Saudi Arabia, Kuwait, Bahrain, Oman, Qatar) and global markets. The platform is fully bilingual in English and Arabic with native RTL support.
@@ -187,7 +187,7 @@ Q: What types of businesses use The Daisy?
 A: Salons, spas, barbershops, nail salons, med spas, clinics, and freelance beauty professionals. The platform serves business owners who want to grow (not just manage) their beauty business.
 
 Q: Does The Daisy charge per-staff or per-booking fees?
-A: No. The Daisy uses flat monthly pricing with no per-staff surcharges and no per-booking transaction fees. Plans include a set number of user seats (5, 10, or 15) and workspaces.
+A: Business plans include 5, 10 or 15 team members (calendars) and 1, 2 or 4 workspaces. An extra calendar is $10/month and an extra workspace $25/month. There are no per-booking transaction fees.
 
 Q: What features does The Daisy include?
-A: Eight core feature categories: (1) Online Booking & Scheduling, (2) POS & Payments, (3) Client Management/CRM, (4) Staff Management, (5) Marketing & Cashback, (6) Inventory Management, (7) Reporting & Analytics, and (8) AI Capabilities including voice receptionist and predictive analytics.
+A: Eight core feature categories: (1) Online Booking & Scheduling, (2) POS & Payments, (3) Client Management/CRM, (4) Staff Management, (5) Marketing & Cashback, (6) Inventory Management, (7) Reporting & Analytics, and (8) AI Capabilities including an AI receptionist for WhatsApp, Instagram and the booking site, and predictive analytics.

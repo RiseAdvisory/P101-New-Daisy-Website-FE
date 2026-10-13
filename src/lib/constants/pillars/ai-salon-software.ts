@@ -20,11 +20,11 @@ export const aiSalonSoftware: PillarPageData = {
   heroSubtitle:
     'What salon software can do has changed, from a 24/7 receptionist that never misses an inquiry to analytics that keep working on your revenue overnight.',
   readingTime: '21 min read',
-  lastUpdated: '2026-03-18T00:00:00.000Z',
+  lastUpdated: '2026-10-10T00:00:00.000Z',
 
   keyTakeaways: [
     'AI salon software swaps manual, reactive work for systems that run 24/7, catching missed inquiries, tightening schedules and personalising client messages across your whole list.',
-    'For most salons the AI receptionist changes the most, because it answers the 30-40% of booking inquiries that go nowhere while staff are with clients.',
+    'For most salons the AI receptionist changes the most, because it answers the booking messages that would otherwise wait while staff are with clients.',
     'AI scheduling closes calendar gaps and lifts chair utilization by 15-25% without adding a single opening hour.',
     'AI marketing gets the right message to the right client at the right moment, at a level of personalisation nobody could maintain by hand across hundreds of clients.',
     'The advantage compounds. The longer you run an AI-native platform, the better it knows your business, and the harder that is for a competitor to copy.',
@@ -117,8 +117,8 @@ export const aiSalonSoftware: PillarPageData = {
       content: `<p>Of everything AI does for a salon today, the receptionist matters most. It plugs the industry's biggest revenue leak, the inquiries nobody answers, and it does so while improving the client experience and giving your team their attention back.</p>
 
 <h3>The problem it solves</h3>
-<p>Industry data consistently shows that salons miss 30-40% of inbound phone calls because staff are occupied with clients. Each missed call represents a potential booking that walks straight to a competitor. Beyond phone calls, client inquiries arrive across multiple channels. WhatsApp, Instagram DMs, Facebook messages, website chat, Google Business messages, and most salons have no system for responding to all of them promptly.</p>
-<p>An AI receptionist handles every inquiry, on every channel, simultaneously, in any language, at any hour. It does not put clients on hold. It does not go to voicemail. It does not forget to check the Instagram DMs at the end of the day.</p>
+<p>Client inquiries now arrive on several channels at once: WhatsApp, Instagram DMs, Facebook messages, website chat and Google Business messages, as well as the phone. Staff who are busy with clients cannot keep up with all of them, and most salons have no system for answering every message promptly. A message left until the evening is often a booking that went to a competitor.</p>
+<p>An AI receptionist answers messages simultaneously, in several languages, at any hour. It does not leave a client waiting for a reply, and it does not forget to check the Instagram DMs at the end of the day. Some AI receptionists also answer phone calls. Daisy's works on WhatsApp, Instagram and the booking site, and it does not answer phone calls yet.</p>
 
 <h3>What it can actually do</h3>
 <p>Modern AI receptionists go far beyond simple chatbot responses. They engage in natural, context-aware conversations that handle the full range of client interactions:</p>
@@ -133,17 +133,17 @@ export const aiSalonSoftware: PillarPageData = {
 <h3>What it does to revenue</h3>
 <p>The revenue impact of an AI receptionist is direct and measurable:</p>
 <ul>
-  <li><strong>Captured bookings from missed calls:</strong> Salons report capturing 30-50% more booking inquiries after implementing an AI receptionist, simply by responding to messages and calls that previously went unanswered.</li>
+  <li><strong>Captured bookings from unanswered messages:</strong> Booking requests that used to wait for a reply get an answer straight away, so fewer of them end up with a competitor.</li>
   <li><strong>After-hours conversions:</strong> 35%+ of beauty bookings happen outside business hours. An AI receptionist converts these after-hours browsers into confirmed appointments instead of losing them overnight.</li>
   <li><strong>Faster response time:</strong> The average salon takes 4-8 hours to respond to a new inquiry via social media. An AI receptionist responds in seconds. Research shows that responding within five minutes makes you 21 times more likely to convert the inquiry into a booking compared to responding after 30 minutes.</li>
-  <li><strong>Reduced staffing cost:</strong> Salons with AI receptionists can reduce front-desk hours by 50-75%, redirecting those hours (and payroll costs) to revenue-generating activities.</li>
+  <li><strong>Less front-desk time:</strong> Routine message traffic no longer needs a person, so front-desk hours can go to work that earns money.</li>
 </ul>
 
 <h3>People and AI together</h3>
 <p>An AI receptionist does not replace your team, it amplifies them. The optimal model is AI handling the routine and repetitive (availability checks, confirmations, reminders, basic inquiries) while your team handles the personal and complex (consultations, complaints, VIP client requests, creative recommendations). This division of labour means your team spends their time on interactions that build relationships and drive loyalty, while the AI handles the high-volume communication that would otherwise consume hours of their day.</p>`,
       callout: {
         type: 'info',
-        text: 'An AI receptionist responds to client inquiries in seconds, 24/7, across every channel. Research shows that responding within five minutes makes you 21x more likely to convert an inquiry into a booking, yet the average salon takes 4-8 hours to respond on social media.',
+        text: 'An AI receptionist responds to client messages in seconds, 24/7. Research shows that responding within five minutes makes you 21x more likely to convert an inquiry into a booking, yet the average salon takes 4-8 hours to respond on social media.',
       },
       relatedLinks: [
         {
@@ -584,7 +584,7 @@ export const aiSalonSoftware: PillarPageData = {
     {
       question: 'How does an AI receptionist work for salons?',
       answer:
-        'An AI receptionist handles client inquiries across every communication channel, phone, WhatsApp, Instagram DMs, web chat, SMS, and Google Business messages, simultaneously, 24/7, in any language. It engages in natural conversation (not scripted chatbot responses), checking availability, recommending services, answering questions, completing bookings, managing cancellations, and escalating complex issues to your team. The AI learns your service catalogue, pricing, policies, and FAQs, and for returning clients, references their booking history to provide personalized responses. Salons with AI receptionists report capturing 30-50% more booking inquiries, primarily from calls and messages that previously went unanswered.',
+        'An AI receptionist handles client messages on channels such as WhatsApp, Instagram DMs and a booking site, many conversations at once, 24/7, in several languages. It engages in natural conversation (not scripted chatbot responses), checking availability, recommending services, answering questions, completing bookings, managing cancellations, and escalating complex issues to your team. The AI learns your service catalogue, pricing, policies, and FAQs, and for returning clients, references their booking history to provide personalized responses. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site in Arabic and English, and it does not answer phone calls yet.',
     },
     {
       question: 'Will AI replace my salon staff?',
@@ -614,7 +614,7 @@ export const aiSalonSoftware: PillarPageData = {
     {
       question: 'Can AI salon software work for a small salon with 1-2 staff?',
       answer:
-        'Absolutely, and small salons often see the highest relative impact. When you are a solo practitioner or a two-person team, every missed call, every no-show, and every hour spent on admin directly reduces your earning capacity. An AI receptionist captures inquiries while you are with clients (you cannot answer the phone mid-service). Smart scheduling eliminates gaps that are proportionally more costly in a small calendar. Automated communication handles the follow-ups and reminders you simply do not have time to send manually. Small salons typically recover 10-15 hours per week of owner time, time that can be spent with clients or growing the business.',
+        'Absolutely, and small salons often see the highest relative impact. When you are a solo practitioner or a two-person team, every unanswered message, every no-show, and every hour spent on admin directly reduces your earning capacity. An AI receptionist answers WhatsApp and Instagram inquiries while you are with clients (you cannot reply mid-service). Smart scheduling eliminates gaps that are proportionally more costly in a small calendar. Automated communication handles the follow-ups and reminders you simply do not have time to send manually. Small salons typically recover 10-15 hours per week of owner time, time that can be spent with clients or growing the business.',
     },
   ],
 

@@ -381,7 +381,7 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
         item(
           2,
           'Custom Booking Page',
-          'Create a branded booking page that lives on your website. Your brand, your client experience.',
+          'Create a branded booking page that Daisy hosts, and redirect your own domain to it if you like. Your brand, your client experience.',
           '/images/features/business/custom-booking-page.webp',
           { padding: '24px 24px 24px 24px', objectFit: 'cover', objectPosition: 'bottom' },
           '/images/features/business/custom-booking-page-mobile.webp',
@@ -775,7 +775,7 @@ export const featuresBusinessData: I18nContent<FeaturesBusinessPageContent> = {
         item(
           2,
           'صفحة حجز مخصصة',
-          'أنشئ صفحة حجز بعلامتك التجارية تعيش على موقعك الإلكتروني. علامتك، تجربة عملائك.',
+          'أنشئ صفحة حجز بعلامتك التجارية تستضيفها ديزي، ويمكنك تحويل نطاقك الخاص إليها إن أردت. علامتك، تجربة عملائك.',
           '/images/features/business/custom-booking-page.webp',
           { padding: '24px 24px 24px 24px', objectFit: 'cover', objectPosition: 'bottom' },
           '/images/features/business/custom-booking-page-mobile.webp',

@@ -143,7 +143,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { label: 'Professional Profile', description: 'Showcase your work and attract new clients' },
         { label: 'Client Management', description: 'Build relationships with detailed client profiles' },
         { label: 'Calendar Sync', description: 'Sync with Google Calendar and other tools' },
-        { label: 'Marketplace Visibility', description: 'Customers find you when searching nearby' },
+        { label: 'Marketplace Visibility', description: 'Optional listing for nearby searches, in selected countries' },
       ], stats: [{ value: '0', context: 'marketing hours' }, { value: '24/7', context: 'AI retention' }, { value: '2', context: 'languages: Arabic and English' }] },
       inlineCtas: {
         afterScroll: { headline: 'Ready to grow your client base on autopilot?', ctaText: 'Start Your Free Trial', ctaLink: '/get-the-app' },
@@ -191,7 +191,7 @@ const aiMarketingAngle: Record<'business' | 'professional', I18nContent<LandingP
         { label: 'الملف المهني', description: 'اعرض أعمالك واجذب عملاء جدد' },
         { label: 'إدارة العملاء', description: 'ابنِ علاقات مع ملفات عملاء مفصلة' },
         { label: 'مزامنة التقويم', description: 'مزامنة مع تقويم جوجل وأدوات أخرى' },
-        { label: 'ظهور في السوق', description: 'العملاء يجدونك عند البحث بالقرب منهم' },
+        { label: 'ظهور في السوق', description: 'إدراج اختياري يظهر في عمليات البحث القريبة، في دول مختارة' },
       ], stats: [{ value: '0', context: 'ساعات تسويق' }, { value: '24/7', context: 'احتفاظ ذكي' }, { value: '2', context: 'لغتان مدعومتان: العربية والإنجليزية' }] },
       inlineCtas: {
         afterScroll: { headline: 'مستعد لتنمية قاعدة عملائك على الطيار الآلي؟', ctaText: 'ابدأ تجربتك المجانية', ctaLink: '/get-the-app' },

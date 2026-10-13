@@ -14,7 +14,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       answerBlock: {
         question: 'What is The Daisy for beauty professionals?',
         answer:
-          "The Daisy is an all-in-one app for beauty and wellness professionals. Its AI assistant handles WhatsApp and Instagram messages, bookings, and payments 24/7, so professionals can focus on providing exceptional services. Features flexible scheduling, multilingual support, and a marketplace for client discovery.",
+          "The Daisy is an all-in-one app for beauty and wellness professionals. Its AI assistant handles WhatsApp and Instagram messages, bookings, and payments 24/7, so professionals can focus on providing exceptional services. Features flexible scheduling, multilingual support, and an optional marketplace for client discovery.",
       },
     },
     platformStrengths: {
@@ -29,7 +29,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         { label: 'Client Management', description: 'Build relationships with detailed client profiles' },
         { label: 'Smart Notifications', description: 'Appointment reminders that reduce no-shows' },
         { label: 'Calendar Sync', description: 'Sync with Google Calendar and other tools' },
-        { label: 'Marketplace Visibility', description: 'Customers find you when searching nearby' },
+        { label: 'Marketplace Visibility', description: 'Optional listing so nearby customers can find you' },
       ],
       stats: [
         { value: '1', context: 'app for everything' },
@@ -53,7 +53,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
     pricingHook: {
       headline: 'Free to Join. Zero Risk.',
       body: "Create your profile and start accepting bookings at no cost. Premium features available through affordable plans. Daisy doesn't just manage your schedule. It learns your clients' preferences, personalizes their booking experience, and makes sure you never miss an inquiry. Commission only on new clients who find you through the Daisy marketplace, your existing clients always pay zero commission.",
-      ctaText: 'Get Listed for Free',
+      ctaText: 'Sign Up for Free',
       ctaLink: '/get-the-app',
       pricingLinkText: 'See full pricing details →',
       pricingLinkHref: '/pricing',
@@ -76,7 +76,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
     fallbackFaqs: [
       { question: 'Is there a fee or commission?', answer: 'Joining is free. Commission is only charged on new clients who book you through the Daisy marketplace, your existing clients pay zero commission. Premium features available through affordable subscription tiers.' },
       { question: 'Do I need to work at a salon to join?', answer: 'No. Freelance professionals, independent stylists, mobile service providers, and salon-based professionals are all welcome.' },
-      { question: 'How do customers find my profile?', answer: 'Your profile appears in the Daisy marketplace when customers search for beauty services in your area. The more complete your profile, the higher your visibility.' },
+      { question: 'How do customers find my profile?', answer: 'If you join the Daisy marketplace (optional, and available in selected countries) and your profile passes a service-quality review, it appears when customers search for beauty services in your area. The more complete your profile, the higher your visibility.' },
       { question: 'How does payment work?', answer: 'Your earnings are tracked in real-time in the app. Payments are processed securely and deposited to your bank account weekly. You can see exactly what you earned from each appointment.' },
     ],
     scrollSections: [
@@ -301,7 +301,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
       answerBlock: {
         question: 'ما هي منصة ديزي لمتخصصي التجميل؟',
         answer:
-          'ديزي تطبيق شامل لمتخصصي التجميل والعافية. يتولى مساعدها الذكي رسائل واتساب وإنستغرام والحجوزات والمدفوعات على مدار الساعة، حتى يتمكن المتخصصون من التركيز على تقديم خدمات استثنائية. وتتميز المنصة بجدولة مرنة ودعم متعدد اللغات وسوق يساعد على الوصول إلى عملاء جدد.',
+          'ديزي تطبيق شامل لمتخصصي التجميل والعافية. يتولى مساعدها الذكي رسائل واتساب وإنستغرام والحجوزات والمدفوعات على مدار الساعة، حتى يتمكن المتخصصون من التركيز على تقديم خدمات استثنائية. وتتميز المنصة بجدولة مرنة ودعم متعدد اللغات وسوق اختياري يساعد على الوصول إلى عملاء جدد.',
       },
     },
     platformStrengths: {
@@ -316,7 +316,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
         { label: 'إدارة العملاء', description: 'ابنِ علاقات مع ملفات عملاء مفصلة' },
         { label: 'إشعارات ذكية', description: 'تذكيرات بالمواعيد تقلل حالات عدم الحضور' },
         { label: 'مزامنة التقويم', description: 'مزامنة مع تقويم جوجل وأدوات أخرى' },
-        { label: 'ظهور في السوق', description: 'العملاء يجدونك عند البحث بالقرب منهم' },
+        { label: 'ظهور في السوق', description: 'إدراج اختياري يجدك من خلاله العملاء القريبون' },
       ],
       stats: [
         { value: '1', context: 'تطبيق لكل شيء' },
@@ -363,7 +363,7 @@ export const professionalPageData: I18nContent<LandingPageContent> = {
     fallbackFaqs: [
       { question: 'هل هناك رسوم أو عمولة؟', answer: 'الانضمام مجاني. تُفرض العمولة فقط على العملاء الجدد الذين يحجزون عبر سوق ديزي، أما عملاؤك الحاليون فلا تُفرض عليهم أي عمولة. الميزات المتقدمة متاحة من خلال باقات اشتراك بأسعار معقولة.' },
       { question: 'هل أحتاج للعمل في صالون للانضمام؟', answer: 'لا. المتخصصون المستقلون والمصممون المستقلون ومقدمو الخدمات المتنقلون والمتخصصون في الصالونات مرحب بهم جميعًا.' },
-      { question: 'كيف يجد العملاء ملفي الشخصي؟', answer: 'يظهر ملفك الشخصي في سوق ديزي عندما يبحث العملاء عن خدمات التجميل في منطقتك. كلما كان ملفك أكثر اكتمالًا، زاد ظهورك.' },
+      { question: 'كيف يجد العملاء ملفي الشخصي؟', answer: 'إذا انضممت إلى سوق ديزي (وهو اختياري ومتاح في دول مختارة) واجتاز ملفك مراجعة جودة الخدمة، يظهر ملفك عندما يبحث العملاء عن خدمات التجميل في منطقتك. كلما كان ملفك أكثر اكتمالًا، زاد ظهورك.' },
       { question: 'كيف يعمل الدفع؟', answer: 'يتم تتبع أرباحك في الوقت الفعلي في التطبيق. تتم معالجة المدفوعات بشكل آمن وإيداعها في حسابك البنكي أسبوعيًا. يمكنك رؤية ما كسبته بالضبط من كل موعد.' },
     ],
     scrollSections: [

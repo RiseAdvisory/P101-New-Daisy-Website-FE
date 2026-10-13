@@ -12,7 +12,7 @@ describe('sitemap()', () => {
     );
     expect(matches).toHaveLength(2); // en + ar
     for (const entry of matches) {
-      expect(entry.lastModified).toBe('2026-04-27T00:00:00.000Z');
+      expect(entry.lastModified).toBe('2026-10-10T00:00:00.000Z');
     }
   });
 
@@ -25,7 +25,7 @@ describe('sitemap()', () => {
     );
     expect(matches).toHaveLength(2);
     for (const entry of matches) {
-      expect(entry.lastModified).toBe('2026-04-27T00:00:00.000Z');
+      expect(entry.lastModified).toBe('2026-10-10T00:00:00.000Z');
     }
   });
 
@@ -113,17 +113,17 @@ describe('sitemap() — ROUTE_LAST_UPDATED per-route overrides', () => {
 
   it('routes with per-entry data (glossary/pillars) keep their data-layer dates and are NOT touched by the route map', async () => {
     const entries = await sitemap();
-    // Salon-management-software glossary entry was bumped to 2026-04-27 in PR #269.
+    // Salon-management-software glossary entry was bumped to 2026-10-10 when its Daisy claims were corrected.
     const glossary = entries.find(
       (e) =>
         e.url === 'https://www.jointhedaisy.com/en/glossary/salon-management-software',
     );
-    expect(glossary?.lastModified).toBe('2026-04-27T00:00:00.000Z');
+    expect(glossary?.lastModified).toBe('2026-10-10T00:00:00.000Z');
     // Pillar version of same slug also uses its own per-pillar date.
     const pillar = entries.find(
       (e) => e.url === 'https://www.jointhedaisy.com/en/salon-management-software',
     );
-    expect(pillar?.lastModified).toBe('2026-04-27T00:00:00.000Z');
+    expect(pillar?.lastModified).toBe('2026-10-10T00:00:00.000Z');
   });
 });
 
