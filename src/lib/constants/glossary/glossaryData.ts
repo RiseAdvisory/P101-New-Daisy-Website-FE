@@ -22,7 +22,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
   en: [
     {
       slug: 'salon-management-software',
-      lastUpdated: '2026-10-10T00:00:00.000Z',
+      lastUpdated: '2026-10-18T00:00:00.000Z',
       term: 'Salon Management Software',
       definition:
         'is a digital platform that helps salon owners manage daily operations including appointment scheduling, client records, staff management, payments, and marketing from a single system.',
@@ -30,7 +30,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         'Salon management software replaces manual booking, paper records and disconnected tools with a single platform. Newer systems such as Daisy add AI features on top of the operational basics, including automated customer acquisition, AI receptionists that answer customer messages, and predictive analytics. The global salon software market is projected to reach $712 million by 2028, on rising demand for automation and customer experience tools.',
       keyFeatures: [
         { label: 'Online Booking', daisy: 'AI-powered 24/7', typical: 'Basic web form' },
-        { label: 'Payment Processing', daisy: 'No transaction fees', typical: '2-3% per transaction' },
+        { label: 'Payment Processing', daisy: 'No Daisy fee per transaction; provider card fees apply', typical: '2-3% per transaction' },
         { label: 'Client Management', daisy: 'AI-driven CRM', typical: 'Basic contact list' },
         { label: 'Staff Scheduling', daisy: 'Smart optimization', typical: 'Manual calendar' },
         { label: 'Marketing', daisy: 'Automated campaigns', typical: 'Basic email blasts' },
@@ -285,6 +285,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-booking-software',
+      lastUpdated: '2026-10-18T00:00:00.000Z',
       term: 'Salon Booking Software',
       definition:
         'is a digital tool that lets beauty businesses accept and manage appointment bookings online, so customers can schedule themselves 24/7 and automated reminders can cut no-shows.',
@@ -334,7 +335,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'Can I accept deposits through salon booking software?',
           answer:
-            'Yes. Daisy takes deposits or full prepayment at booking, which reduces no-shows and steadies cash flow. Payments processed through Daisy carry no transaction fee.',
+            'Yes. Daisy takes deposits or full prepayment at booking, which reduces no-shows and steadies cash flow. Daisy adds no fee of its own per transaction; card processing fees are set by the payment provider.',
         },
         {
           question: 'Does salon booking software work for walk-in clients?',
@@ -550,7 +551,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
   ar: [
     {
       slug: 'salon-management-software',
-      lastUpdated: '2026-10-10T00:00:00.000Z',
+      lastUpdated: '2026-10-18T00:00:00.000Z',
       term: 'برنامج إدارة الصالونات',
       definition:
         'هو منصة رقمية تساعد أصحاب الصالونات على إدارة العمليات اليومية بما في ذلك جدولة المواعيد، وسجلات العملاء، وإدارة الموظفين، والمدفوعات، والتسويق من نظام واحد.',
@@ -558,7 +559,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         'يستبدل برنامج إدارة الصالونات أنظمة الحجز اليدوية والسجلات الورقية والأدوات المنفصلة بمنصة متكاملة واحدة. تتجاوز الحلول الحديثة مثل ديزي العمليات الأساسية لتشمل ميزات مدعومة بالذكاء الاصطناعي مثل اكتساب العملاء الآلي وموظف الاستقبال الذكي والتحليلات التنبؤية. من المتوقع أن يصل سوق برامج الصالونات العالمي إلى 712 مليون دولار بحلول عام 2028، مدفوعاً بالطلب المتزايد على أدوات الأتمتة وتجربة العملاء.',
       keyFeatures: [
         { label: 'الحجز الإلكتروني', daisy: 'مدعوم بالذكاء الاصطناعي على مدار الساعة', typical: 'نموذج ويب بسيط' },
-        { label: 'معالجة المدفوعات', daisy: 'بدون رسوم معاملات', typical: '2-3% لكل معاملة' },
+        { label: 'معالجة المدفوعات', daisy: 'دون رسوم من ديزي على كل معاملة؛ تُطبَّق رسوم البطاقات لدى المزوّد', typical: '2-3% لكل معاملة' },
         { label: 'إدارة العملاء', daisy: 'نظام CRM ذكي', typical: 'قائمة جهات اتصال بسيطة' },
         { label: 'جدولة الموظفين', daisy: 'تحسين ذكي', typical: 'تقويم يدوي' },
         { label: 'التسويق', daisy: 'حملات آلية', typical: 'رسائل بريد إلكتروني بسيطة' },
@@ -813,6 +814,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
     },
     {
       slug: 'salon-booking-software',
+      lastUpdated: '2026-10-18T00:00:00.000Z',
       term: 'برنامج حجز الصالونات',
       definition:
         'هي أداة رقمية تمكّن مشاريع التجميل من قبول وإدارة وتحسين حجوزات المواعيد إلكترونيًا، مما يتيح للعملاء الحجز الذاتي على مدار الساعة ويقلل حالات عدم الحضور من خلال التذكيرات الآلية.',
@@ -862,7 +864,7 @@ export const glossaryData: I18nContent<GlossaryEntry[]> = {
         {
           question: 'هل يمكنني قبول العربون عبر برنامج حجز الصالون؟',
           answer:
-            'نعم. تدعم ديزي العربون المسبق والدفع الكامل عند الحجز، مما يقلل حالات عدم الحضور ويحسّن التدفق النقدي. لا تُفرض رسوم معاملات على المدفوعات المعالجة عبر ديزي.',
+            'نعم. تدعم ديزي العربون المسبق والدفع الكامل عند الحجز، مما يقلل حالات عدم الحضور ويحسّن التدفق النقدي. لا تضيف ديزي رسوماً خاصة بها على كل معاملة، وتُحتسب رسوم معالجة البطاقات لدى مزوّد الدفع.',
         },
         {
           question: 'هل يعمل برنامج حجز الصالون مع العملاء بدون موعد؟',

@@ -59,10 +59,13 @@ const TIER_LABELS: Record<string, string> = {
   Free: 'مجاني',
   'Per location': 'لكل موقع',
   'Per user': 'لكل مستخدم',
+  'Single location (US)': 'موقع واحد (الولايات المتحدة)',
+  'Multi-location (US)': 'عدة مواقع (الولايات المتحدة)',
 };
 
 /** Whole strings: pricing labels and the "costs that add up on top" lines. */
 const EXACT: Record<string, string> = {
+  'From $79/mo in the US': 'من $79 شهرياً في الولايات المتحدة',
   'Commission-based': 'قائم على العمولة',
   'Contact for pricing': 'تواصل لمعرفة السعر',
   Custom: 'مخصص',

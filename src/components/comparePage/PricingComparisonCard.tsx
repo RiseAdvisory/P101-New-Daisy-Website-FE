@@ -6,7 +6,7 @@ import { Check, AlertTriangle } from 'lucide-react';
 const uiStrings = {
   en: {
     headingDefault: (name: string) => `How Much Does Daisy Cost vs ${name}?`,
-    transparentPricing: 'Published plan prices, next to the charges each platform adds on top',
+    transparentPricing: 'Daisy\'s plan prices, next to each platform\'s other published charges',
     recommended: 'Recommended',
     dayFreeTrial: (days: number) => `${days}-day free trial`,
     simpleFlatPricing: 'Monthly subscription',
@@ -15,24 +15,24 @@ const uiStrings = {
     includedInAllPlans: 'Included in all plans',
     includedItems: [
       '50 AI receptionist conversations included',
-      'No transaction fees',
+      'No Daisy fee per transaction (card processing fees apply)',
       '0% commission on your existing clients',
       'Arabic & English support',
       '5, 10 or 15 team members, depending on the plan',
     ],
     freePlanAvailable: 'Free plan available',
     perStaff: '/ staff',
-    // These charges are published by the vendors themselves, so the label says
-    // what they are, costs that stack on top of the subscription, rather than
-    // implying concealment.
-    hiddenCostsToWatch: 'Costs that add up on top',
-    additionalFees: 'Additional Fees',
+    // Charges each vendor publishes besides its plan price. Some, such as
+    // Fresha's payment processing, are optional, so the label must not
+    // present them as costs every customer pays in addition to the plan.
+    hiddenCostsToWatch: 'Other published charges',
+    additionalFees: 'Fee details',
     transactionFee: 'Transaction fee:',
     marketplaceCommission: 'Marketplace commission:',
   },
   ar: {
     headingDefault: (name: string) => `كم تكلفة ديزي مقارنة بـ ${name}؟`,
-    transparentPricing: 'أسعار باقات منشورة، إلى جانب الرسوم التي تضيفها كل منصة فوق الاشتراك',
+    transparentPricing: 'أسعار باقات ديزي، إلى جانب الرسوم الأخرى التي تنشرها كل منصة',
     recommended: 'موصى به',
     dayFreeTrial: (days: number) => `تجربة مجانية لمدة ${days} يوم`,
     // Arabic puts the noun first ("نموذج اشتراك شهري"), so the label carries
@@ -43,15 +43,15 @@ const uiStrings = {
     includedInAllPlans: 'مشمول في جميع الباقات',
     includedItems: [
       '50 محادثة لموظف الاستقبال الذكي مشمولة',
-      'بدون رسوم معاملات',
+      'دون رسوم من ديزي على كل معاملة (تُطبَّق رسوم معالجة البطاقات)',
       'عمولة 0% على عملائك الحاليين',
       'دعم عربي وإنجليزي',
       '5 أو 10 أو 15 عضو فريق حسب الباقة',
     ],
     freePlanAvailable: 'باقة مجانية متاحة',
     perStaff: '/ موظف',
-    hiddenCostsToWatch: 'تكاليف تُضاف فوق الاشتراك',
-    additionalFees: 'رسوم إضافية',
+    hiddenCostsToWatch: 'رسوم أخرى منشورة',
+    additionalFees: 'تفاصيل الرسوم',
     transactionFee: 'رسوم المعاملات:',
     marketplaceCommission: 'عمولة السوق:',
   },

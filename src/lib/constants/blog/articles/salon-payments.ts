@@ -1172,7 +1172,7 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
 <p><strong>Best for:</strong> salons over 200,000 AED monthly, mostly taking domestic debit, with somebody who will actually read the statements.</p>
 
 <h3>Commission-based pricing</h3>
-<p>The platform takes a share of a booking&rsquo;s value on top of the usual processing fee. Fresha, for example, publishes in the UAE a one-time 50% commission on each new client its marketplace introduces, minimum AED 20, with returning clients free, alongside an online rate of 4.90% + AED 0.75. The rate differs by market - 20% in its USD markets.</p>
+<p>The platform takes a share of a booking&rsquo;s value on top of the usual processing fee. Fresha, for example, publishes in the UAE a one-time 50% commission on each new client its marketplace introduces, minimum AED 20, with returning clients free. The commission differs by market: 20% in its USD markets. Fresha&rsquo;s payment processing is optional; salons that use it pay 4.90% + AED 0.75 per online transaction in the UAE.</p>
 <p><strong>How it works:</strong> A new marketplace client books a 400 AED service. You pay 200 AED in commission plus 20.35 AED in processing = 220.35 AED. That same client returning next month costs you only the 20.35 AED, because the commission is charged once per client rather than once per booking.</p>
 <p><strong>Pros:</strong> nothing upfront and no subscription, so you only pay having earned something.</p>
 <p><strong>Cons:</strong> the bill tracks your acquisition, so the months you grow fastest are the months you pay most. A salon acquiring 100 new marketplace clients at 350 AED average spend pays 17,500 AED in commission that month, before processing. Each of those clients is chargeable only once, so the cost falls away as they become regulars, but it has to be funded up front.</p>
@@ -1331,7 +1331,7 @@ const paymentProcessingFeesArticle: LocalBlogPost = {
     metaDescription:
       'Understand what your salon really pays in payment processing fees. Covers flat-rate, interchange-plus, and commission models with real cost calculations.',
     createdAt: '2025-10-08T05:00:00.000Z',
-    updatedAt: '2025-10-08T05:00:00.000Z',
+    updatedAt: '2026-10-18T08:00:00.000Z',
     publishedAt: '2025-10-08T05:00:00.000Z',
     locale: 'en',
     sortId: 85,
@@ -2012,7 +2012,7 @@ const paymentProcessingFeesArticleAr: LocalBlogPost = {
 <p><strong>الأفضل لـ:</strong> الصالونات ذات الحجم الكبير (200000+ درهم شهريًا) مع معاملات بطاقات الخصم المحلية بشكل أساسي والقدرة الإدارية على تحليل البيانات المعقدة.</p>
 
 <h3>التسعير على أساس العمولة</h3>
-<p>تأخذ المنصة نسبة من قيمة الحجز كعمولة، إضافة إلى رسوم المعالجة القياسية. فعلى سبيل المثال تنشر Fresha عمولة لمرة واحدة بنسبة 50% على كل عميل جديد يجلبه سوقها، بحد أدنى 20 درهماً، والعملاء العائدون مجاناً، إلى جانب معدل منشور للإمارات قدره 4.90% + 0.75 درهم للمدفوعات الإلكترونية.</p>
+<p>تأخذ المنصة نسبة من قيمة الحجز كعمولة، إضافة إلى رسوم المعالجة القياسية. فعلى سبيل المثال تنشر Fresha عمولة لمرة واحدة بنسبة 50% على كل عميل جديد يجلبه سوقها، بحد أدنى 20 درهماً، والعملاء العائدون مجاناً. ومعالجة المدفوعات عبر Fresha اختيارية، ومن يستخدمها في الإمارات يدفع 4.90% + 0.75 درهم لكل معاملة إلكترونية.</p>
 <p><strong>كيفية العمل:</strong> عميل سوق جديد يحجز خدمة بقيمة 400 درهم. تدفع 200 درهم عمولةً و20.35 درهماً رسوم معالجة = 220.35 درهماً. وإذا عاد العميل نفسه الشهر المقبل فلن تدفع سوى 20.35 درهماً، لأن العمولة تُحتسب مرة واحدة لكل عميل لا مرة لكل حجز.</p>
 <p><strong>الإيجابيات:</strong> لا توجد تكاليف مقدمة أو اشتراك شهري. لن تدفع إلا عندما تحقق إيرادات.</p>
 <p><strong>السلبيات:</strong> الفاتورة تتبع وتيرة استقطابك، فالأشهر التي تنمو فيها أسرع هي الأشهر التي تدفع فيها أكثر. صالون يستقطب 100 عميل سوق جديد بمتوسط إنفاق 350 درهماً يدفع 17,500 درهم عمولةً في ذلك الشهر قبل رسوم المعالجة. ولا تُحتسب العمولة لكل عميل إلا مرة واحدة، فتتلاشى التكلفة مع تحوّلهم إلى عملاء دائمين، لكنها تحتاج تمويلاً مقدماً.</p>
@@ -2168,7 +2168,7 @@ const paymentProcessingFeesArticleAr: LocalBlogPost = {
 <p>سنويًا على الأقل. سوق معالجة الدفع تنافسي، ويصبح مقدمو الخدمات الجدد أو تعديلات الأسعار متاحين بانتظام. مراجعة سنوية لمدة 15 دقيقة يمكن أن توفر آلاف الدراهم سنوياً.</p>`,
     metaTitle: 'رسوم معالجة المدفوعات في الصالون: دليل كامل | ديزي',
     metaDescription: 'فهم وتحسين رسوم معالجة المدفوعات لصالونك.',
-    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-03-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
+    createdAt: '2026-03-18T08:00:00.000Z', updatedAt: '2026-10-18T08:00:00.000Z', publishedAt: '2026-03-18T08:00:00.000Z',
     locale: 'ar', sortId: 90,
     tags: { category: 'Salon Payments', topic: 'Processing Fees' },
     user: { data: { id: 4, attributes: { name: 'Ethan Cole', jobTitle: 'Behavioral Data Analyst & Digital Conversion Strategist', date: '3 May 2025', time: '9 min.', picture: { data: { attributes: { url: '/images/blog/author-ethan-cole.webp' } } } } } },

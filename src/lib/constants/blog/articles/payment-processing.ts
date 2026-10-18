@@ -706,14 +706,14 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <li><strong>Commission on bookings:</strong> None. Square Appointments has a free plan, and its paid plans carry a monthly fee per location</li>
 <li><strong>Monthly fee:</strong> Square Free $0; Plus $49/month per location; Premium $149/month per location</li>
 <li><strong>Payout speed:</strong> next business day by default, at no charge; instant or same-day transfers cost 1.95% per transfer</li>
-<li><strong>Key consideration:</strong> a general-purpose POS with beauty booking on top. Square AI (beta) comes with all three plans, and Square Assistant answers client texts 24/7 to confirm, reschedule or cancel. Square does not operate in the GCC, so salons there cannot sign up for it.</li>
+<li><strong>Key consideration:</strong> a general-purpose POS with beauty booking on top. Square AI (beta) comes with all three plans, and Square Assistant lets clients reply to text reminders to confirm, cancel or change an appointment. Square does not operate in the GCC, so salons there cannot sign up for it.</li>
 </ul>
 
 <h3>Fresha</h3>
 <p>Fresha is a beauty-specific booking platform with payment processing built in.</p>
 <ul>
 <li><strong>Processing model:</strong> Flat-rate plus commission on new clients</li>
-<li><strong>Online payments (UAE published):</strong> 4.90% + AED 0.75 per transaction</li>
+<li><strong>Online payments (UAE published, optional):</strong> 4.90% + AED 0.75 per transaction, only if you process payments through Fresha. Payment processing through Fresha is optional, and a salon that doesn&rsquo;t use it pays Fresha no transaction fees.</li>
 <li><strong>Commission on new client bookings (UAE published):</strong> a one-time 50% commission on new clients acquired through the Fresha marketplace, minimum AED 20; returning clients free</li>
 <li><strong>Monthly platform fee:</strong> priced per market, AED 149.95 per month for the Independent plan in the UAE, with Team plans at custom rates</li>
 <li><strong>Key consideration:</strong> the marketplace commission, not the processing rate, is what moves the total. It is charged once per new client, at 50% of that first booking, so a month of heavy marketplace acquisition costs far more than the headline rate suggests, while a month of returning clients costs nothing extra. A salon doing 100 bookings per month averaging 250 AED, where 30 are new marketplace clients, pays roughly 3,750 AED in commissions that month, before processing fees. On The Daisy, bookings from your own clients carry 0% commission, and commission applies only to new customers its optional marketplace brings you.</li>
@@ -752,9 +752,9 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 <tr><th>Cost Component</th><th>The Daisy</th><th>Fresha</th><th>Stripe + Separate Software</th></tr>
 </thead>
 <tbody>
-<tr><td>Processing fees</td><td>Competitive flat rate</td><td>~4,220 AED</td><td>~2,720 AED</td></tr>
+<tr><td>Processing fees</td><td>Set by the payment provider, billed separately</td><td>~4,220 AED</td><td>~2,720 AED</td></tr>
 <tr><td>New client commission</td><td>0 AED on your own clients; commission only on new marketplace customers</td><td>~2,000 AED</td><td>0 AED</td></tr>
-<tr><td>Platform/subscription fee</td><td>Included</td><td>~150 AED (Independent, UAE)</td><td>~200-400 AED</td></tr>
+<tr><td>Platform/subscription fee</td><td>See pricing page</td><td>~150 AED (Independent, UAE)</td><td>~200-400 AED</td></tr>
 <tr><td>Additional tool costs</td><td>0 AED</td><td>&mdash;</td><td>~100-300 AED</td></tr>
 <tr><td><strong>Estimated monthly total</strong></td><td><strong>See pricing page</strong></td><td><strong>~6,370 AED</strong></td><td><strong>~3,200 AED</strong></td></tr>
 </tbody>
@@ -762,7 +762,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
 
 <p>Square is left out of this scenario because it does not operate in the UAE. The Stripe column uses Stripe&rsquo;s published UAE rate of 2.9% + AED 1.00 per domestic card payment. In the US, Square Appointments Plus costs $49/month per location, with in-person card payments at 2.5% + 15¢.</p>
 
-<p>Fresha&rsquo;s figures use its published UAE rates: 4.90% + AED 0.75 online, a one-time 50% commission on each new marketplace client with a minimum of AED 20, and AED 149.95 per month for the Independent plan. What the table shows is that the marketplace commission drives the total. A salon getting a large share of its clients through the marketplace pays considerably more in the months it is acquiring; a salon running mostly on repeat business pays the commission once per client and then not again.</p>
+<p>The Fresha column assumes the salon chooses Fresha&rsquo;s optional payment processing; a salon that doesn&rsquo;t use it pays Fresha no transaction fees. Fresha&rsquo;s figures use its published UAE rates: 4.90% + AED 0.75 online, a one-time 50% commission on each new marketplace client with a minimum of AED 20, and AED 149.95 per month for the Independent plan. What the table shows is that the marketplace commission drives the total. A salon getting a large share of its clients through the marketplace pays considerably more in the months it is acquiring; a salon running mostly on repeat business pays the commission once per client and then not again.</p>
 
 <h2>Costs that sit outside the headline rate</h2>
 <p>Six costs that surprise people who only read the headline rate:</p>
@@ -839,7 +839,7 @@ const paymentFeesComparedArticle: LocalBlogPost = {
     metaDescription:
       'Compare salon payment processing fees across The Daisy, Square, Fresha, Stripe, and SumUp. See real cost breakdowns including per-transaction charges and commissions.',
     createdAt: '2025-08-14T05:00:00.000Z',
-    updatedAt: '2026-10-10T08:00:00.000Z',
+    updatedAt: '2026-10-18T08:00:00.000Z',
     publishedAt: '2025-08-14T05:00:00.000Z',
     locale: 'en',
     sortId: 26,
@@ -1569,14 +1569,14 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <li><strong>عمولة الحجوزات:</strong> لا شيء. لدى Square Appointments خطة مجانية، أما الخطط المدفوعة فلها رسوم شهرية لكل موقع</li>
 <li><strong>الرسوم الشهرية:</strong> Square Free مجاناً؛ Plus بسعر 49 دولاراً شهرياً لكل موقع؛ Premium بسعر 149 دولاراً شهرياً لكل موقع</li>
 <li><strong>سرعة الدفع:</strong> في يوم العمل التالي افتراضياً ودون رسوم؛ التحويل الفوري أو في اليوم نفسه برسوم 1.95% لكل تحويل</li>
-<li><strong>الاعتبارات الرئيسية:</strong> نقطة بيع للأغراض العامة مع حجز لأعمال التجميل. تأتي Square AI (في مرحلة تجريبية beta) مع الخطط الثلاث، ويرد Square Assistant على رسائل العملاء النصية على مدار الساعة لتأكيد المواعيد أو إعادة جدولتها أو إلغائها. لا تعمل Square في دول الخليج، لذلك لا يمكن للصالونات هناك الاشتراك فيها.</li>
+<li><strong>الاعتبارات الرئيسية:</strong> نقطة بيع للأغراض العامة مع حجز لأعمال التجميل. تأتي Square AI (في مرحلة تجريبية beta) مع الخطط الثلاث، ويتيح Square Assistant للعملاء الرد على رسائل التذكير النصية لتأكيد المواعيد أو تغييرها أو إلغائها. لا تعمل Square في دول الخليج، لذلك لا يمكن للصالونات هناك الاشتراك فيها.</li>
 </ul>
 
 <h3>فريشا</h3>
 <p>Fresha هي عبارة عن منصة حجز خاصة بالجمال مع معالجة متكاملة للدفع.</p>
 <ul>
 <li><strong>نموذج المعالجة:</strong> السعر الثابت بالإضافة إلى العمولة على العملاء الجدد</li>
-<li><strong>المدفوعات الإلكترونية (منشور للإمارات):</strong> 4.90% + 0.75 درهم لكل معاملة</li>
+<li><strong>المدفوعات الإلكترونية (منشور للإمارات، اختيارية):</strong> 4.90% + 0.75 درهم لكل معاملة، فقط إذا عالجت المدفوعات عبر Fresha. ومعالجة المدفوعات عبر Fresha اختيارية، والصالون الذي لا يستخدمها لا يدفع أي رسوم معاملات لـ Fresha.</li>
 <li><strong>عمولة على حجوزات العملاء الجدد:</strong> عمولة لمرة واحدة 50% على العملاء الجدد القادمين من سوق Fresha، بحد أدنى 20 درهماً؛ العملاء العائدون مجاناً</li>
 <li><strong>رسوم النظام الأساسي الشهرية:</strong> مُسعّرة حسب السوق — 149.95 درهماً شهرياً لخطة Independent في الإمارات، وخطط Team بأسعار مخصصة</li>
 <li><strong>الاعتبار الرئيسي:</strong> عمولة السوق، لا معدل المعالجة، هي ما يحرّك الإجمالي. تُحتسب مرة واحدة لكل عميل جديد بنسبة 50% من حجزه الأول، لذا فإن شهر الاستقطاب المكثف عبر السوق يكلّف أكثر بكثير مما يوحي به المعدل المُعلن، بينما لا يكلّف شهر العملاء العائدين أي مبلغ إضافي. صالون يجري 100 حجز شهريًا بمتوسط 250 درهمًا، منها 30 لعملاء سوق جدد، يدفع نحو 3,750 درهمًا عمولاتٍ في ذلك الشهر قبل رسوم المعالجة. أما في ديزي فلا عمولة على حجوزات عملائك الحاليين، وتُطبق العمولة فقط على العملاء الجدد الذين يجلبهم سوقها الاختياري.</li>
@@ -1615,17 +1615,17 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
 <tr><th>مكون التكلفة</th><th>ديزي</th><th>Fresha</th><th>Stripe + برنامج منفصل</th></tr>
 </thead>
 <tbody>
-<tr><td>رسوم المعالجة</td><td>سعر موحد تنافسي</td><td>~4,220 درهم</td><td>~2,720 درهم</td></tr>
+<tr><td>رسوم المعالجة</td><td>يحددها مزوّد الدفع وتُحتسب منفصلة</td><td>~4,220 درهم</td><td>~2,720 درهم</td></tr>
 <tr><td>عمولة العميل الجديد</td><td>0 درهم على عملائك الحاليين، والعمولة على عملاء السوق الجدد فقط</td><td>~2,000 درهم</td><td>0 درهم</td></tr>
-<tr><td>رسوم المنصة/الاشتراك</td><td>متضمن</td><td>~150 درهم (Independent، الإمارات)</td><td>~200-400 درهم</td></tr>
+<tr><td>رسوم المنصة/الاشتراك</td><td>انظر صفحة الأسعار</td><td>~150 درهم (Independent، الإمارات)</td><td>~200-400 درهم</td></tr>
 <tr><td>تكاليف الأدوات الإضافية</td><td>0 درهم</td><td>&mdash;</td><td>~100-300 درهم</td></tr>
-<tr><td><strong>الإجمالي الشهري المقدر</strong></td><td><strong>انظر الأسعار page</strong></td><td><strong>~6,370 درهم</strong></td><td><strong>~3,200 درهم</strong></td></tr>
+<tr><td><strong>الإجمالي الشهري المقدر</strong></td><td><strong>انظر صفحة الأسعار</strong></td><td><strong>~6,370 درهم</strong></td><td><strong>~3,200 درهم</strong></td></tr>
 </tbody>
 </table>
 
 <p>استُبعدت Square من هذا السيناريو لأنها لا تعمل في الإمارات. ويستخدم عمود Stripe سعرها المنشور في الإمارات، وهو 2.9% + 1.00 درهم لكل دفعة ببطاقة محلية. وفي الولايات المتحدة تكلف خطة Square Appointments Plus مبلغ 49 دولاراً شهرياً لكل موقع، مع رسوم 2.5% + 15 سنتاً على مدفوعات البطاقات الحضورية.</p>
 
-<p>أرقام Fresha أعلاه مبنية على أسعارها المنشورة في الإمارات: 4.90% + 0.75 درهم للمدفوعات الإلكترونية، وعمولة لمرة واحدة 50% على كل عميل سوق جديد بحد أدنى 20 درهماً، و149.95 درهماً شهرياً لخطة Independent. وما يظهره الجدول أن عمولة السوق هي التي تحرّك الإجمالي: الصالون الذي يعتمد على السوق في استقطاب عملائه يدفع أكثر في أشهر الاستقطاب، أما الصالون القائم على العملاء العائدين فيدفع العمولة مرة واحدة لكل عميل ثم لا يدفعها ثانية.</p>
+<p>يفترض عمود Fresha أن الصالون يختار معالجة المدفوعات الاختيارية لدى Fresha؛ أما الصالون الذي لا يستخدمها فلا يدفع أي رسوم معاملات لـ Fresha. أرقام Fresha أعلاه مبنية على أسعارها المنشورة في الإمارات: 4.90% + 0.75 درهم للمدفوعات الإلكترونية، وعمولة لمرة واحدة 50% على كل عميل سوق جديد بحد أدنى 20 درهماً، و149.95 درهماً شهرياً لخطة Independent. وما يظهره الجدول أن عمولة السوق هي التي تحرّك الإجمالي: الصالون الذي يعتمد على السوق في استقطاب عملائه يدفع أكثر في أشهر الاستقطاب، أما الصالون القائم على العملاء العائدين فيدفع العمولة مرة واحدة لكل عميل ثم لا يدفعها ثانية.</p>
 
 <h2>تكاليف خارج المعدل المُعلن</h2>
 <p> بعيدًا عن الأسعار الرئيسية، تفاجئ هذه التكاليف العديد من أصحاب الصالونات:</p>
@@ -1701,7 +1701,7 @@ const paymentFeesComparedArticleAr: LocalBlogPost = {
     metaDescription:
       'قارن رسوم معالجة الدفع للصالونات. تعلّم الفرق بين الأسعار الثابتة والمتغيرة واختر الأنسب لعملك.',
     createdAt: '2025-08-14T05:00:00.000Z',
-    updatedAt: '2026-10-10T08:00:00.000Z',
+    updatedAt: '2026-10-18T08:00:00.000Z',
     publishedAt: '2025-08-14T05:00:00.000Z',
     locale: 'ar',
     sortId: 26,

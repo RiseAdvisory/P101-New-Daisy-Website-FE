@@ -155,7 +155,7 @@ export const industryStats: StatCategory[] = [
     stats: [
       {
         value: '2-3%',
-        description: 'Typical transaction fee charged by payment processors (Daisy charges 0%)',
+        description: 'Typical transaction fee charged by payment processors (Daisy adds no fee of its own)',
         source: 'Payment industry standard',
       },
       {
@@ -324,7 +324,7 @@ const industryStatsAr: StatCategory[] = [
     stats: [
       {
         value: '2-3%',
-        description: 'رسوم المعاملات التي تفرضها معالجات الدفع عادةً (ديزي تفرض 0%)',
+        description: 'رسوم المعاملات التي تفرضها معالجات الدفع عادةً (ولا تضيف ديزي رسوماً خاصة بها)',
         source: 'معيار قطاع المدفوعات',
       },
       {

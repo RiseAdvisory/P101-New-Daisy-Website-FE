@@ -463,3 +463,53 @@ describe('Fresha AI scheduling', () => {
     ).toEqual([]);
   });
 });
+
+// Fresha's pricing FAQ (read 2026-10-18): "Can I still use Fresha if I don't
+// want to accept payments? Yes, absolutely! ... it's entirely optional." Its
+// 4.90% + AED 0.75 rate applies only to businesses that process payments
+// through Fresha, so it must never read as a cost every customer pays on top
+// of the subscription. Daisy's own pricing page says card processing fees are
+// separate and set by the payment provider, so Daisy must not claim zero.
+describe('Fresha payment processing is optional', () => {
+  it('says "optional" next to every mention of the 4.90% rate', () => {
+    const missing: string[] = [];
+    for (const file of [...FILES, path.join(ROOT, '..', 'public', 'llms-full.txt')]) {
+      const text = fs.readFileSync(file, 'utf8');
+      for (const match of text.matchAll(/4[.,]90 ?%/g)) {
+        const start = match.index ?? 0;
+        const window = text.slice(Math.max(0, start - 250), start + 250);
+        if (!/optional|اختياري|e\.g\./i.test(window)) {
+          missing.push(`${path.relative(ROOT, file)}:${text.slice(0, start).split('\n').length}`);
+        }
+      }
+    }
+    expect(missing).toEqual([]);
+  });
+
+  it('does not describe Fresha charges as stacking on top of the subscription', () => {
+    expect(
+      offenders(
+        /stacking fees|charges that stack|they do stack|costs keep stacking|stacks monthly subscriptions|on top of (?:the )?(?:subscription|transaction fees)|eating into every transaction|تتراكم|الرسوم المتراكمة|رسوماً متراكمة|فوق الاشتراك|فوقه رسوم/,
+      ),
+    ).toEqual([]);
+  });
+
+  it('labels the vendor charges in the pricing card as published, not stacked', () => {
+    const card = fs.readFileSync(path.join(ROOT, 'components', 'comparePage', 'PricingComparisonCard.tsx'), 'utf8');
+    expect(card).not.toMatch(/Costs that add up on top|تكاليف تُضاف فوق الاشتراك/);
+    expect(card).toMatch(/Other published charges/);
+  });
+
+  it('does not claim Daisy charges nothing per transaction', () => {
+    const claims: string[] = [];
+    for (const file of [...FILES, path.join(ROOT, '..', 'public', 'llms.txt'), path.join(ROOT, '..', 'public', 'llms-full.txt')]) {
+      const lines = fs.readFileSync(file, 'utf8').split('\n');
+      lines.forEach((line, i) => {
+        if (/nothing added per transaction|adds nothing per transaction|zero transaction fees|No transaction fees|no transaction fees on|without transaction fees|Daisy charges 0%\)|بدون رسوم معاملات|ديزي تفرض 0%/.test(line)) {
+          claims.push(`${path.relative(ROOT, file)}:${i + 1}`);
+        }
+      });
+    }
+    expect(claims).toEqual([]);
+  });
+});

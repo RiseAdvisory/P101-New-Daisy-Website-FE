@@ -3,6 +3,7 @@ jest.mock('@/lib/api/blog', () => ({
 }));
 
 import sitemap from '../sitemap';
+import { getGlossarySitemapData } from '@/lib/constants/glossary/glossaryData';
 
 describe('sitemap()', () => {
   it('emits the refreshed lastModified for the salon-management-software glossary entries (en + ar)', async () => {
@@ -12,7 +13,7 @@ describe('sitemap()', () => {
     );
     expect(matches).toHaveLength(2); // en + ar
     for (const entry of matches) {
-      expect(entry.lastModified).toBe('2026-10-10T00:00:00.000Z');
+      expect(entry.lastModified).toBe('2026-10-18T00:00:00.000Z');
     }
   });
 
@@ -29,23 +30,17 @@ describe('sitemap()', () => {
     }
   });
 
-  it('falls back to the default content date for glossary entries without a per-entry lastUpdated', async () => {
+  it('falls back to the default content date for glossary pages without a per-entry lastUpdated', async () => {
     const entries = await sitemap();
-    // ai-booking-software is a known entry that was not part of the 2026-04-11 cluster work
-    const fallback = entries.find((e) =>
-      e.url.endsWith('/en/glossary/ai-booking-software'),
-    );
-    if (fallback) {
-      // If this entry exists in the dataset, it should still be on the constant
-      expect(fallback.lastModified).toBe('2026-03-17T00:00:00.000Z');
+    // Every glossary entry is dated today, so check the rule on any undated
+    // entry that is added later, and on the undated glossary index.
+    for (const { slug, lastUpdated } of getGlossarySitemapData()) {
+      if (lastUpdated) continue;
+      const entry = entries.find((e) => e.url.endsWith(`/en/glossary/${slug}`));
+      expect(entry?.lastModified).toBe('2026-03-17T00:00:00.000Z');
     }
-    // Otherwise, just confirm at least one glossary URL still uses the fallback constant.
-    const anyOnFallback = entries.some(
-      (e) =>
-        e.url.includes('/glossary/') &&
-        e.lastModified === '2026-03-17T00:00:00.000Z',
-    );
-    expect(anyOnFallback).toBe(true);
+    const index = entries.find((e) => e.url === 'https://www.jointhedaisy.com/en/glossary');
+    expect(index?.lastModified).toBe('2026-03-17T00:00:00.000Z');
   });
 
   it('still includes hreflang alternates for the refreshed URLs', async () => {
@@ -113,12 +108,12 @@ describe('sitemap() — ROUTE_LAST_UPDATED per-route overrides', () => {
 
   it('routes with per-entry data (glossary/pillars) keep their data-layer dates and are NOT touched by the route map', async () => {
     const entries = await sitemap();
-    // Salon-management-software glossary entry was bumped to 2026-10-10 when its Daisy claims were corrected.
+    // Salon-management-software glossary entry was bumped to 2026-10-18 when its payment-processing wording was corrected.
     const glossary = entries.find(
       (e) =>
         e.url === 'https://www.jointhedaisy.com/en/glossary/salon-management-software',
     );
-    expect(glossary?.lastModified).toBe('2026-10-10T00:00:00.000Z');
+    expect(glossary?.lastModified).toBe('2026-10-18T00:00:00.000Z');
     // Pillar version of same slug also uses its own per-pillar date.
     const pillar = entries.find(
       (e) => e.url === 'https://www.jointhedaisy.com/en/salon-management-software',

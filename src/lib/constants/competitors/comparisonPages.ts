@@ -81,7 +81,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     competitorSlug: 'fresha',
     metaTitle: 'Daisy vs Fresha: Complete Comparison (2026)',
     metaDescription:
-      'Compare Daisy and Fresha side-by-side. See how AI-powered growth tools, Arabic support, and transparent pricing stack up against Fresha\'s marketplace model.',
+      'Compare Daisy and Fresha side-by-side. See how AI-powered growth tools, Arabic support and published pricing compare with Fresha\'s marketplace model.',
     keywords: [
       'daisy vs fresha',
       'fresha alternative',
@@ -92,14 +92,14 @@ export const daisyVsPages: DaisyVsPageData[] = [
     heroTitle: 'Daisy vs Fresha',
     heroSubtitle:
       'How does an AI-powered growth platform stack up against the world\'s largest beauty marketplace?',
-    tldr: 'Fresha is a marketplace charging subscription fees plus published transaction and marketplace charges that stack. Daisy is a complete growth platform with an AI receptionist, cashback rewards and Arabic support. Pick Fresha for marketplace exposure, Daisy to actively grow the business.',
+    tldr: 'Fresha charges a subscription and a one-time commission on new marketplace clients, plus published per-transaction fees if a business chooses to process payments through Fresha. Daisy is a complete growth platform with an AI receptionist, cashback rewards and Arabic support. Pick Fresha for marketplace exposure, Daisy to actively grow the business.',
     verdict:
-      'Fresha brings marketplace reach, but it now charges monthly subscriptions on top of transaction fees and a one-time 50% commission on new marketplace clients in the UAE. Its AI Concierge answers calls and messages. Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site, in Arabic and English. Daisy\'s marketplace is optional, and its commission applies only to new clients the marketplace brings you.',
+      'Fresha brings marketplace reach. It charges a monthly subscription and a one-time 50% commission on new marketplace clients in the UAE, with per-transaction fees only if a business processes payments through Fresha. Its AI Concierge answers calls and messages. Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site, in Arabic and English. Daisy\'s marketplace is optional, and its commission applies only to new clients the marketplace brings you.',
     featureCommentary: {
       onlineBooking:
         'Both do online booking well. Fresha\'s strength is the size of its consumer marketplace, with 25M+ users. Daisy answers that with AI booking that carries the whole flow, payments and customer service included, 24/7 and without anyone stepping in.',
       posAndPayments:
-        'In the UAE, Fresha publishes online payments at 4.90% + AED 0.75 per transaction and a one-time 50% commission on new marketplace clients, minimum AED 20. Those are published rather than hidden, but across a year they add up. Daisy adds nothing per transaction. Its marketplace is optional, and commission applies only to new clients it brings you.',
+        'In the UAE, Fresha\'s optional payment processing is published at 4.90% + AED 0.75 per online transaction; businesses that don\'t use it pay Fresha no transaction fees. Fresha also publishes a one-time 50% commission on new marketplace clients, minimum AED 20. On Daisy, card processing fees are set by the payment provider and billed separately; Daisy adds no platform fee per transaction. Its marketplace is optional, and commission applies only to new clients it brings you.',
       clientManagement:
         'Fresha gives you client profiles and history. Daisy layers AI on top, predicting no-shows, flagging VIP clients and suggesting personalized offers from booking patterns.',
       staffManagement:
@@ -118,7 +118,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     whoShouldChooseDaisy: [
       'You want an AI receptionist covering bookings and customer service 24/7',
       'You want Arabic and English as equals, with cashback rewards your Arabic-speaking clients can spend',
-      'You want pricing you can predict, with nothing added per transaction',
+      'You want a plan price with no Daisy platform fee added per transaction',
       'You want a booking page carrying your logo, name and colours',
       'You want acquisition that works for you, not just a marketplace listing',
       'You want a GCC-built platform with cashback acquisition and local payment integration',
@@ -458,7 +458,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     keywords: ['daisy vs dingg', 'dingg alternative', 'ai salon software', 'gcc salon management'],
     heroTitle: 'Daisy vs DINGG',
     heroSubtitle: 'Both publish AI that books appointments on WhatsApp. They differ on channels, language, pricing and GCC coverage.',
-    tldr: 'DINGG is an India-based salon platform whose AI assistant answers clients and takes bookings on WhatsApp. It runs country sites for five GCC states and gives prices on request. Daisy\'s AI receptionist also covers Instagram, in Arabic and English, and Daisy adds cashback rewards, an optional consumer marketplace and published prices. Daisy is live in all six GCC countries.',
+    tldr: 'DINGG is an India-based salon platform whose AI assistant answers clients and takes bookings on WhatsApp. It runs country sites for five GCC states. Its US prices start at $79 a month, and its UAE prices are given on request. Daisy\'s AI receptionist also covers Instagram, in Arabic and English, and Daisy adds cashback rewards, an optional consumer marketplace and published prices. Daisy is live in all six GCC countries.',
     verdict: 'DINGG is a credible AI competitor with a broad feature set and local billing in five GCC states. Daisy is the better fit if you need Bahrain, an Arabic interface, an AI receptionist on Instagram, cashback rewards, or prices you can see before a demo.',
     featureCommentary: {
       onlineBooking: 'Both offer 24/7 online booking. DINGG books through your website and its WhatsApp AI assistant; Daisy\'s AI books on WhatsApp, Instagram and the booking site.',
@@ -668,21 +668,21 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'fresha',
     competitorSlug: 'fresha',
     metaTitle: 'Best Fresha Alternative for Salons (2026)',
-    metaDescription: 'Looking for a Fresha alternative? Daisy offers an AI receptionist, published pricing, Arabic support and cashback, with nothing added per transaction.',
+    metaDescription: 'Looking for a Fresha alternative? Daisy offers an AI receptionist, published pricing, Arabic support and cashback, with no Daisy fee per transaction.',
     keywords: ['fresha alternative', 'fresha replacement', 'better than fresha', 'salon software like fresha'],
     heroTitle: 'Looking for a Fresha Alternative?',
-    heroSubtitle: 'Subscription fees, then transaction fees, then marketplace commissions. The costs keep stacking.',
+    heroSubtitle: 'Fresha charges a subscription and a commission on new marketplace clients, plus per-transaction fees if you use its payments.',
     painPoints: [
-      'Online payments charged at 4.90% + AED 0.75, eating into every transaction',
+      'If you process payments through Fresha, which is optional, online payments cost 4.90% + AED 0.75 per transaction',
       'A one-time marketplace commission on each new client it introduces: 50% with an AED 20 minimum in the UAE, 20% in its USD markets',
       'Marketing is charged per message once the first 50 emails each month are used',
-      'The AI Concierge is a paid add-on at $99.95 per location per month, and its published pages do not list WhatsApp or Instagram as supported channels',
+      'The AI Concierge is a paid add-on, listed at $99.95 per location per month on Fresha\'s US pricing page, and its published pages do not list WhatsApp or Instagram as supported channels',
       'Marketplace bookings carry Fresha branding; a fully branded site is a paid Smart Website add-on',
-      'A published monthly subscription that sits on top of transaction fees and marketplace commission',
+      'A published monthly subscription, billed separately from the marketplace commission and any payment processing fees',
     ],
     switchingReasons: [
       'An AI receptionist covering bookings, payments and customer service 24/7',
-      'Nothing added per transaction, and marketplace commission only on new clients the marketplace brings',
+      'No Daisy fee per transaction (card processing fees from the payment provider apply), and marketplace commission only on new clients the marketplace brings',
       'Arabic and English as equals, with cashback rewards built for GCC clients',
       'Cashback rewards that build loyalty and bring people back',
       'A booking page with your logo, name and colours that your own domain can redirect to',
@@ -1028,7 +1028,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     keywords: ['best fresha alternatives', 'fresha alternatives', 'fresha competitors', 'salon software like fresha'],
     heroTitle: 'Fresha Alternatives Compared (2026)',
     heroSubtitle: 'Fresha\'s subscription plus its per-transaction and marketplace charges add up. Here are the best alternatives for a growing beauty business.',
-    intro: 'Fresha runs the world\'s largest beauty marketplace. It also stacks monthly subscriptions on top of transaction fees and takes a one-time marketplace commission on new clients, 50% in the UAE, with returning clients free. The alternatives below are compared on features, pricing, AI and international support.',
+    intro: 'Fresha runs the world\'s largest beauty marketplace. It charges a monthly subscription and a one-time marketplace commission on new clients, 50% in the UAE, with returning clients free, plus per-transaction fees for businesses that process payments through Fresha, which is optional. The alternatives below are compared on features, pricing, AI and international support.',
     alternatives: ['booksy', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
     bestFor: {
       'booksy': 'Best for mobile-first solopreneurs',
@@ -1342,8 +1342,8 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     metaDescription: 'Compare Fresha (published per market, from AED 149.95/mo in the UAE) and Vagaro (feature-rich, from $23.99/mo in the US on a limited-time offer). Pricing, features, and which is better for your salon.',
     keywords: ['fresha vs vagaro', 'fresha or vagaro', 'vagaro vs fresha'],
     heroTitle: 'Fresha vs Vagaro',
-    heroSubtitle: 'Low starting price with stacking fees versus a feature-rich platform from $23.99/mo, which model works better?',
-    verdict: 'Fresha starts cheaper but subscription fees plus transaction fees plus commissions add up. Vagaro offers more features from $23.99/mo for one calendar on its current US offer ($30 regular), plus $10 per extra calendar. Fresha\'s AI Concierge answers calls and messages, and Fresha ships an Arabic UI. Vagaro sells Vera, an AI receptionist for chat and text, and we could not find an Arabic UI for it. Neither offers cashback rewards.',
+    heroSubtitle: 'A marketplace with separately billed fees versus a feature-rich platform from $23.99/mo. Which model works better?',
+    verdict: 'Fresha charges a subscription and a commission on new marketplace clients, plus per-transaction fees if you use its optional payment processing. Vagaro offers more features from $23.99/mo for one calendar on its current US offer ($30 regular), plus $10 per extra calendar. Fresha\'s AI Concierge answers calls and messages, and Fresha ships an Arabic UI. Vagaro sells Vera, an AI receptionist for chat and text, and we could not find an Arabic UI for it. Neither offers cashback rewards.',
     whoShouldChooseA: [
       'You\'re a solo practitioner with low transaction volume',
       'You want marketplace exposure from day one',
@@ -1426,9 +1426,9 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     metaDescription: 'Compare Fresha (published per market, from AED 149.95/mo in the UAE) and GlossGenius (beauty-focused, from $28/mo or $24/mo billed annually). Features, pricing, and which suits your salon better.',
     keywords: ['fresha vs glossgenius', 'fresha or glossgenius'],
     heroTitle: 'Fresha vs GlossGenius',
-    heroSubtitle: 'Marketplace with stacking fees versus beautiful design from $28/mo, which trade-off works for you?',
+    heroSubtitle: 'A marketplace with separately billed fees versus beautiful design from $28/mo. Which trade-off works for you?',
     verdict: 'Fresha wins on marketplace scale. GlossGenius wins on design and simplicity. Both sell AI receptionists: Fresha\'s AI Concierge answers calls and messages, and GlossGenius Reception answers calls and texts. Fresha has an Arabic UI. As of October 2026, neither lists WhatsApp or Instagram as an AI channel, and neither offers cashback.',
-    whoShouldChooseA: ['You want marketplace exposure with low starting cost', 'Client discovery through marketplace matters most', 'You\'re comfortable with transaction fees on top of subscription'],
+    whoShouldChooseA: ['You want marketplace exposure with low starting cost', 'Client discovery through marketplace matters most', 'You\'re comfortable with a commission on new marketplace clients'],
     whoShouldChooseB: ['Design and aesthetics matter most', 'You want affordable paid software (from $28/mo, or $24/mo billed annually)', 'You\'re a solo US beauty professional'],
     daisyPitch: 'Fresha gives marketplace reach, GlossGenius gives design. Daisy gives you a branded booking page and an optional marketplace, plus AI on WhatsApp, Instagram and the booking site, Arabic and English as equals, cashback, and growth tools.',
   },
@@ -1490,7 +1490,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     verdict: 'Fresha is better for cost-conscious small businesses with its lower starting price. Mindbody is better for large enterprise operations. Both sell AI front-desk tools: Fresha\'s AI Concierge answers calls and messages, and Mindbody\'s own AI Concierge, on its Ultimate plan, follows up missed calls by text and web chat. Fresha has an Arabic UI; as of October 2026 we could not find one for Mindbody. Neither offers cashback.',
     whoShouldChooseA: ['Cost is the top priority', 'You want marketplace exposure at a lower price point', 'You\'re a small salon'],
     whoShouldChooseB: ['Enterprise features are required', 'Large fitness marketplace matters', 'Multi-location management needed'],
-    daisyPitch: 'Between published-but-stacking fees and quote-based higher tiers, Daisy offers the modern middle: published plan prices with nothing added per transaction, an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and cashback.',
+    daisyPitch: 'Between separately billed fees and quote-based higher tiers, Daisy offers the modern middle: published plan prices with no Daisy fee per transaction, an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and cashback.',
   },
   {
     slugA: 'booksy',

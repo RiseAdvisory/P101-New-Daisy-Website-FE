@@ -1,5 +1,5 @@
 import { getAlternativePageData } from '@/lib/constants/competitors/comparisonPages';
-import { getRelatedAlternativePages } from '@/lib/constants/competitors/comparisonPages';
+import { getRelatedAlternativePages, getDaisyVsPage } from '@/lib/constants/competitors/comparisonPages';
 import { getCompetitor } from '@/lib/constants/competitors';
 import { ComparisonHero } from '@/components/comparePage/ComparisonHero';
 import { FeatureComparisonTable } from '@/components/comparePage/FeatureComparisonTable';
@@ -74,7 +74,10 @@ function AlternativeSinglePage({
   const t = stringsFor(locale);
 
   const relatedPages = getRelatedAlternativePages(slug, 4, locale);
-  // Add cross-link to the compare page
+  // Cross-link to the Daisy-vs page, but only when one exists: Timely, Zenoti,
+  // Setmore and SimplyBook.me have alternative pages and no compare page, and
+  // the link used to point them at a 404.
+  const hasComparePage = Boolean(getDaisyVsPage(`daisy-vs-${data.competitorSlug}`));
   const compareLink = {
     title:
       locale === 'ar'
@@ -86,7 +89,7 @@ function AlternativeSinglePage({
         ? `مقارنة تفصيلية ميزة بميزة بين ديزي و${competitor.name}.`
         : `Detailed feature-by-feature comparison of Daisy and ${competitor.name}.`,
   };
-  const allRelatedPages = [compareLink, ...relatedPages];
+  const allRelatedPages = hasComparePage ? [compareLink, ...relatedPages] : relatedPages;
 
   return (
     <main className="min-h-screen">

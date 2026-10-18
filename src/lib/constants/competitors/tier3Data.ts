@@ -85,7 +85,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     aiCapabilities: {
       hasAiReceptionist: false, hasAiChatbot: true, hasSmartScheduling: false,
       hasAiMarketing: true, hasAiAnalytics: true, hasAiPricing: false,
-      aiDescription: 'Square AI (beta) is included on Square Free, Plus and Premium. Owners can ask it about their business data, and it drafts content such as marketing campaigns. Square Assistant answers client texts 24/7 so clients can confirm, reschedule or cancel. As of October 2026, Square does not list an AI receptionist of its own that takes new bookings.',
+      aiDescription: 'Square AI (beta) is included on Square Free, Plus and Premium. Owners can ask it about their business data, and it drafts content such as marketing campaigns. Square Assistant lets clients reply to text reminders to confirm, cancel or change an appointment, and the calendar updates automatically. As of October 2026, Square does not list an AI receptionist of its own that takes new bookings.',
     },
 
     daisyAdvantages: [
@@ -123,7 +123,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
       { question: 'What does Square Appointments cost beyond the subscription?', answer: 'Square publishes its extra costs. In the US, processing on Square Free is 2.6% + 15¢ in person and 3.3% + 30¢ online, and on Square Plus 2.5% + 15¢ and 2.9% + 30¢. Keyed or card-on-file payments are 3.5% + 15¢, and cards issued outside the US add 1.5%. Square Plus includes 500 marketing texts a month, then 3¢ per text, and Square hardware starts at $59.' },
       { question: 'Can I migrate my client data from Square Appointments to Daisy?', answer: 'Yes. Daisy walks you through the migration, moving client records, appointment history and contact details across from Square Appointments, so no client relationship gets lost on the way.' },
       { question: 'Does Square Appointments work in Arabic or support GCC countries?', answer: 'Square\'s published region list covers Australia, Canada, France, Ireland, Japan, Spain, the UK and the US, and none of those sites is in Arabic (October 2026). Daisy runs natively in Arabic and English with full GCC compliance across all six countries.' },
-      { question: 'Does Square Appointments have AI features like an AI receptionist?', answer: 'Yes, though not an AI receptionist. Square AI (beta), on every plan, answers owners\' questions about their business data and drafts content. Square Assistant replies to client texts 24/7 so clients can confirm, reschedule or cancel. As of October 2026, Square does not list an AI receptionist of its own that takes new bookings. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments while the salon is shut.' },
+      { question: 'Does Square Appointments have AI features like an AI receptionist?', answer: 'Yes, though not an AI receptionist. Square AI (beta), on every plan, answers owners\' questions about their business data and drafts content. Square Assistant lets clients reply to text reminders to confirm, cancel or change an appointment, and the calendar updates automatically. As of October 2026, Square does not list an AI receptionist of its own that takes new bookings. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments while the salon is shut.' },
       { question: 'Is Square Appointments good enough for a multi-location beauty business?', answer: 'Square Plus ($49 a month per location) and Square Premium ($149 a month per location) both include multi-location management, and Premium adds resource management for rooms, chairs and stations. Daisy was built for multi-location beauty businesses, with centralized management, AI and an optional customer marketplace.' },
       { question: 'How does Square Appointments mobile app compare to Daisy?', answer: 'Square\'s app covers appointments, payments and client profiles, and works with Square\'s card readers and terminals. Daisy\'s covers the whole salon: the AI receptionist, live analytics, client messaging and optional marketplace listing, designed for a beauty professional working between appointments.' },
       { question: 'What kind of customer support does Square Appointments offer?', answer: 'Every Square plan includes chat and email support. Phone support runs 6am to 6pm PT, Monday to Friday, for the first 90 days on Square Free and ongoing on Square Plus, and 24/7 on Square Premium. Daisy\'s onboarding and support come from people who understand how a salon or spa runs, with local GCC support in Arabic and English.' },
@@ -518,7 +518,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     features: {
       onlineBooking: 2, posAndPayments: 1, clientManagement: 1, staffManagement: 1,
       marketingAndCrm: 1, inventoryManagement: 0, reportingAndAnalytics: 1,
-      marketplaceAndDiscovery: 3, aiCapabilities: 0, brandingAndWhiteLabel: 0,
+      marketplaceAndDiscovery: 3, aiCapabilities: 2, brandingAndWhiteLabel: 0,
     },
 
     pricing: {
@@ -541,23 +541,27 @@ export const tier3Competitors: Record<string, CompetitorData> = {
       localCompliance: false, localPaymentMethods: false, localSupport: false,
     },
 
+    // treatwell.co.uk/partners/solutions/ai-receptionist (read 2026-10-13):
+    // "It answers calls day or night – handling bookings, reschedules and
+    // cancellations directly in your Treatwell calendar", "From £69 a month",
+    // "soon, it'll answer on WhatsApp too".
     aiCapabilities: {
-      hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
+      hasAiReceptionist: true, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'No AI capabilities.',
+      aiDescription: 'Treatwell sells an AI Receptionist, from £69 a month in the UK, that answers calls day or night and books, reschedules and cancels appointments in the Treatwell calendar. Treatwell says WhatsApp support is coming.',
     },
 
-    daisyAdvantages: ['Complete platform vs marketplace-only', '0% commission on your existing clients', 'AI receptionist', 'Arabic/GCC', 'Full business management', 'Published plan prices'],
-    daisySwitchingReasons: ['35% commission is unsustainable', 'Need full business management', 'Want AI', 'Need Arabic/GCC support'],
+    daisyAdvantages: ['Complete platform vs marketplace-only', '0% commission on your existing clients', 'AI receptionist on WhatsApp, Instagram and the booking site', 'Arabic/GCC', 'Full business management', 'Published plan prices'],
+    daisySwitchingReasons: ['35% commission is unsustainable', 'Need full business management', 'Want an AI receptionist on WhatsApp and Instagram', 'Need Arabic/GCC support'],
     competitorStrengths: ['Largest European beauty marketplace', '13 countries coverage', 'Consumer brand recognition'],
-    competitorWeaknesses: ['Up to 35% commission', 'Very basic management tools', 'No AI', 'Low Capterra rating (3.8)', 'No GCC/Arabic', 'Marketplace dependency'],
+    competitorWeaknesses: ['Up to 35% commission', 'Very basic management tools', 'Low Capterra rating (3.8)', 'No GCC/Arabic', 'Marketplace dependency'],
 
     faq: [
       { question: 'How does Treatwell compare to Daisy?', answer: 'Treatwell is a European marketplace that takes up to 35% commission per booking and offers little in the way of management tools. Daisy is a complete platform with published plan prices, an AI receptionist and full business management. It takes no commission on your existing clients, and its marketplace commission applies only to new clients the marketplace brings.' },
       { question: 'How much does Treatwell actually cost salons with their commission model?', answer: 'Commission on marketplace bookings runs up to 35%. A salon putting $10,000/mo through Treatwell hands over as much as $3,500. Daisy charges a monthly subscription and no commission on bookings from your existing clients. Its marketplace is optional, and commission applies only to new clients it brings you.' },
       { question: 'Can I switch from Treatwell to Daisy and keep my clients?', answer: 'Yes. Daisy moves your client data across and helps you build direct relationships from there. On Treatwell the marketplace holds the customer relationship. On Daisy the client data is yours, and so is the line to them.' },
       { question: 'Does Treatwell work in Arabic or support salons in the Gulf?', answer: 'No. Treatwell runs in 13 European countries and nowhere else, with no Arabic interface, no GCC presence and no Middle Eastern payment methods. Daisy runs natively in Arabic and English with support built for the Gulf, live in all six GCC countries.' },
-      { question: 'Does Treatwell have AI features?', answer: 'No. There is no AI receptionist, no chatbot and no smart scheduling. Treatwell is a marketplace listing with basic booking attached. Daisy offers a 24/7 AI receptionist, AI-powered marketing and smart scheduling.' },
+      { question: 'Does Treatwell have AI features?', answer: 'Yes. Treatwell sells an AI Receptionist, from £69 a month in the UK, that answers calls day or night and books, reschedules and cancels appointments in the Treatwell calendar. Treatwell says WhatsApp support is coming. Daisy\'s AI receptionist works on WhatsApp, Instagram and the booking site, in Arabic and English, and does not answer phone calls yet.' },
       { question: 'Why does Treatwell have a lower rating on Capterra than other salon software?', answer: 'Treatwell sits at 3.8/5 on Capterra, below most competitors. The recurring complaints are the commission rates, the thin business management tools, and how little control salons have over pricing and their own client relationships. Daisy hands that control back, on published plan prices.' },
       { question: 'Does Treatwell offer real salon management tools or just a marketplace listing?', answer: 'Treatwell Connect does basic salon management, though most salons treat Treatwell as a marketplace listing and nothing else. For real management, they buy separate software anyway. Daisy covers booking, POS, CRM, marketing and AI in one place, with an optional marketplace.' },
       { question: 'How does Treatwell\'s app compare to Daisy for salon owners?', answer: 'The salon-facing app exists mainly to manage marketplace bookings. Daisy\'s covers the salon itself: the AI receptionist, direct client communication, analytics and Arabic and English throughout.' },
