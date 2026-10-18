@@ -49,7 +49,6 @@ describe('getGlossarySitemapData', () => {
   it('reports 2026-10-10 for the entries whose Daisy claims were corrected that day', () => {
     const data = getGlossarySitemapData();
     const refreshed = [
-      'salon-management-software',
       'ai-receptionist-for-salons',
       'salon-management-system',
       'salon-employee-management-software',
@@ -58,6 +57,15 @@ describe('getGlossarySitemapData', () => {
       const record = data.find((r) => r.slug === slug);
       expect(record).toBeDefined();
       expect(record?.lastUpdated).toBe('2026-10-10T00:00:00.000Z');
+    }
+  });
+
+  it('reports 2026-10-18 for the entries whose payment-processing wording was corrected that day', () => {
+    const data = getGlossarySitemapData();
+    for (const slug of ['salon-management-software', 'salon-booking-software']) {
+      const record = data.find((r) => r.slug === slug);
+      expect(record).toBeDefined();
+      expect(record?.lastUpdated).toBe('2026-10-18T00:00:00.000Z');
     }
   });
 });

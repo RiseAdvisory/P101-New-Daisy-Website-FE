@@ -71,7 +71,7 @@ const uiStrings = {
       'Cashback customer acquisition',
       'Full brand control (white-label)',
       'Live in all six GCC countries',
-      'No transaction fee, and 0% commission on your existing clients',
+      'No Daisy fee per transaction, and 0% commission on your existing clients',
       'Complete business management suite',
     ],
     daisyCons: [
@@ -113,7 +113,7 @@ const uiStrings = {
       'استقطاب العملاء عبر الكاشباك',
       'تحكم كامل بعلامتك التجارية (وايت ليبل)',
       'متاحة في دول الخليج الست',
-      'دون رسوم معاملات، وعمولة 0% على عملائك الحاليين',
+      'دون رسوم من ديزي على كل معاملة، وعمولة 0% على عملائك الحاليين',
       'منظومة متكاملة لإدارة الأعمال',
     ],
     daisyCons: [
@@ -238,7 +238,7 @@ function DaisyVsPage({
             description: 'AI-powered beauty and wellness platform with cashback, AI receptionist, and branded booking pages',
             url: 'https://www.jointhedaisy.com',
             startingPrice: daisyData.pricing.startingPrice,
-            features: ['AI Receptionist', 'Cashback Loyalty', 'White-Label', 'Arabic + English', 'No Transaction Fees'],
+            features: ['AI Receptionist', 'Cashback Loyalty', 'White-Label', 'Arabic + English', 'No Daisy Fee Per Transaction'],
           },
           {
             name: competitor.name,

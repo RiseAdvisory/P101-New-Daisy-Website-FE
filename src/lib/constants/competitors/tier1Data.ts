@@ -69,13 +69,15 @@ export const tier1Competitors: Record<string, CompetitorData> = {
           ],
         },
       ],
-      transactionFees: 'Online payments 4.90% + AED 0.75 per transaction (UAE published)',
+      transactionFees: '4.90% + AED 0.75 per online transaction, only if you process payments through Fresha, which is optional (UAE published)',
       commissionOnMarketplace: 'One-time 50% commission on new marketplace clients (minimum AED 20); returning clients free',
-      // Fresha publishes all of these on its own pricing page. Figures below are
-      // its published UAE rates, so the point is that they stack, not that they
-      // are concealed.
+      // Fresha publishes all of these on its own pricing page; figures are its
+      // published UAE rates. Payment processing through Fresha is optional:
+      // pricing FAQ, read 2026-10-18, "Can I still use Fresha if I don't want
+      // to accept payments? Yes, absolutely! ... it's entirely optional." Its
+      // transaction fee applies only to businesses that use Fresha payments.
       hiddenCosts: [
-        'Online payments charged at 4.90% + AED 0.75 per transaction, on top of the subscription',
+        'Optional payment processing through Fresha: 4.90% + AED 0.75 per online transaction. Businesses that don\'t process payments through Fresha pay Fresha no transaction fees.',
         'One-time 50% commission on new marketplace clients, minimum AED 20',
         'Marketing emails free for the first 50 each month, then AED 0.08 each; texts AED 0.14',
         'Insights add-on at AED 319.95 per bookable team member per month',
@@ -229,7 +231,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       'Customer acquisition through cashback and AI marketing, plus an optional marketplace in selected countries, vs marketplace-only discovery',
       'Arabic and English as equals across the whole product, with an AI receptionist that works in both',
       'A booking page with your logo, name and colours that your own domain can redirect to',
-      'Nothing added per transaction, vs online payments at 4.90% + AED 0.75 per transaction in the UAE',
+      'No Daisy fee per transaction (card processing fees from the payment provider apply), vs Fresha\'s optional payment processing at 4.90% + AED 0.75 per online transaction in the UAE',
       'AI that recommends the next action, on top of dashboards and reports',
       'GCC-built, with cashback acquisition and local payment integration in every plan',
     ],
@@ -260,18 +262,17 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: [
       'AI Concierge is a paid add-on, listed at $99.95 per location per month on Fresha\'s US pricing page, and its published pages do not list WhatsApp or Instagram as supported channels',
       'Marketing is billed per message once the first 50 emails each month are used',
-      'Subscription fees plus transaction fees and marketplace commissions add up quickly',
+      'Marketplace commission and, if you use Fresha\'s payment processing, per-transaction fees are billed separately from the subscription',
       'Marketing is email and SMS with no AI campaign automation',
       'Marketplace bookings carry Fresha branding, though direct booking links, Facebook and Instagram booking and a paid Smart Website add-on are also offered; Daisy includes a fully branded booking page in every plan',
-      'Marketplace commission is charged on every new client it introduces, on top of the subscription',
-      'Subscription, transaction fee and marketplace commission are billed separately, so the monthly total depends on your volume',
+      'Marketplace commission is charged on every new client the marketplace introduces, billed separately from the subscription',
     ],
 
     faq: [
       {
         question: 'How much does Fresha cost?',
         answer:
-          'Fresha is no longer free, and it prices per market. In the UAE its published rate is AED 149.95 per month for the Independent plan, with Team plans at custom rates. On top of the subscription sit online payments at 4.90% + AED 0.75 per transaction, a one-time 50% commission on new marketplace clients with a minimum of AED 20, and per-message charges for marketing once the first 50 emails each month are used. Those charges stack, so the monthly total is worth working out for your own volume rather than reading off the headline plan price.',
+          'Fresha is no longer free, and it prices per market. In the UAE its published rate is AED 149.95 per month for the Independent plan, with Team plans at custom rates. Fresha also publishes a one-time 50% commission on new marketplace clients with a minimum of AED 20, and per-message charges for marketing once the first 50 emails each month are used. Payment processing through Fresha is optional: businesses that use it pay 4.90% + AED 0.75 per online transaction, and businesses that don\'t pay Fresha no transaction fees. Which charges apply depends on how you use Fresha, so work out the monthly total for your own business rather than reading it off the headline plan price.',
       },
       {
         question: 'How does Daisy compare to Fresha for salon management?',
@@ -291,12 +292,12 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'Is Fresha really free to use?',
         answer:
-          'No. The free plan is gone. Fresha now charges a monthly subscription, AED 149.95 in the UAE for the Independent plan, plus online payments at 4.90% + AED 0.75 per transaction, a one-time 50% commission on new marketplace clients, and per-message charges for marketing beyond the first 50 emails a month. Daisy publishes its plan prices and charges nothing per marketing message. Its marketplace is optional, and commission applies only to new clients it brings you.',
+          'No. The free plan is gone. Fresha now charges a monthly subscription, AED 149.95 in the UAE for the Independent plan, a one-time 50% commission on new marketplace clients, and per-message charges for marketing beyond the first 50 emails a month. Payment processing through Fresha is optional: if you use it, online payments cost 4.90% + AED 0.75 per transaction, and businesses that don\'t use it pay Fresha no transaction fees. Daisy publishes its plan prices and charges nothing per marketing message. Its marketplace is optional, and commission applies only to new clients it brings you.',
       },
       {
-        question: 'What does Fresha cost on top of the subscription?',
+        question: 'What other charges does Fresha publish?',
         answer:
-          'Fresha publishes these charges on its own pricing page, so they are not concealed, but they do stack. In the UAE: online payments at 4.90% + AED 0.75 per transaction, a one-time 50% commission on new marketplace clients with an AED 20 minimum, marketing emails free for the first 50 each month and then AED 0.08 each, texts at AED 0.14, and an Insights add-on at AED 319.95 per bookable team member per month. Added together these can exceed the subscription itself. Daisy\'s plan price covers marketing and payment processing and includes 50 AI receptionist conversations, with paid top-ups after that.',
+          'Fresha publishes these charges on its own pricing page. In the UAE: a one-time 50% commission on new marketplace clients with an AED 20 minimum, marketing emails free for the first 50 each month and then AED 0.08 each, texts at AED 0.14, and an Insights add-on at AED 319.95 per bookable team member per month. Payment processing through Fresha is optional: if you use it, online payments cost 4.90% + AED 0.75 per transaction, and businesses that don\'t use it pay Fresha no transaction fees. Daisy\'s plan price covers marketing and includes 50 AI receptionist conversations, with paid top-ups after that. Card processing fees on Daisy are set by the payment provider and billed separately.',
       },
       {
         question: 'How hard is it to migrate my data from Fresha?',
@@ -322,7 +323,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     lastResearched: '2026-03-13',
     notes:
-      'No longer free. Monthly subscriptions now sit on top of transaction fees, on top of published transaction fees and marketplace commission. Fresha ships an AI Concierge that answers calls and messages, and is live in Arabic with GCC teams, so the old absence claims no longer hold. Main vulnerability: costs that compound across subscription, transaction fees and commissions.',
+      'No longer free. Fresha charges a monthly subscription and a one-time commission on new marketplace clients, plus published per-transaction fees for businesses that choose Fresha payments, which are optional. Fresha ships an AI Concierge that answers calls and messages, and is live in Arabic with GCC teams, so the old absence claims no longer hold.',
   },
 
   // ---------------------------------------------------------------------------
