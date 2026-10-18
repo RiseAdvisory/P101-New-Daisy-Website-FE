@@ -671,7 +671,7 @@ export const alternativePages: AlternativePageData[] = [
     metaDescription: 'Looking for a Fresha alternative? Daisy offers an AI receptionist, published pricing, Arabic support and cashback, with no Daisy fee per transaction.',
     keywords: ['fresha alternative', 'fresha replacement', 'better than fresha', 'salon software like fresha'],
     heroTitle: 'Looking for a Fresha Alternative?',
-    heroSubtitle: 'A subscription, a commission on new marketplace clients, and per-transaction fees if you use Fresha payments. Here is how Daisy compares.',
+    heroSubtitle: 'Fresha charges a subscription and a commission on new marketplace clients, plus per-transaction fees if you use its payments.',
     painPoints: [
       'If you process payments through Fresha, which is optional, online payments cost 4.90% + AED 0.75 per transaction',
       'A one-time marketplace commission on each new client it introduces: 50% with an AED 20 minimum in the UAE, 20% in its USD markets',
