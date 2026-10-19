@@ -34,6 +34,7 @@
     "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-tabs": "^1.0.4",
     "@vercel/analytics": "^2.0.1",
+    "@vercel/global-config": "1.5.1",
     "@vercel/speed-insights": "^2.0.0",
     "axios": "^1.7.2",
     "class-variance-authority": "^0.7.0",

@@ -75,6 +75,7 @@ export async function middleware(request: NextRequest) {
     pathname.startsWith('/sitemap') ||
     pathname.startsWith('/robots') ||
     pathname.startsWith('/llms') ||
+    pathname.startsWith('/watch/') ||
     pathname.includes('.')
   ) {
     return NextResponse.next();
