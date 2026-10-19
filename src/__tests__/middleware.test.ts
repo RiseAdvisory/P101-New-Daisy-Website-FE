@@ -242,4 +242,13 @@ describe('middleware', () => {
 
     expect(response.headers.get('x-middleware-next')).toBe('1');
   });
+
+  it('leaves /watch links to their page, without a locale prefix', async () => {
+    const request = new NextRequest(
+      'https://example.com/watch/block-time-on-your-calendar',
+    );
+    const response = await middleware(request);
+    expect(response.status).toBe(200);
+    expect(response.headers.get('location')).toBeNull();
+  });
 });
