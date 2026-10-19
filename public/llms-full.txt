@@ -56,7 +56,7 @@
 - All premium features included
 
 ### Pricing Highlights
-- No Daisy fee per transaction on any plan; card processing fees are set by the payment provider
+- No Daisy fee per transaction (card processing fees from the payment provider apply), on any plan
 - 0% commission on your existing clients; marketplace commission applies only to new customers the marketplace brings
 - Extra calendars $10/month, extra workspaces $25/month
 - 50 AI receptionist conversations included, then pay-as-you-go top-ups
@@ -71,7 +71,7 @@
 AI-powered appointment management with real-time availability, automated reminders, waitlist management, and 24/7 online booking. Smart scheduling optimizes staff utilization and reduces gaps.
 
 ### 2. POS & Payments
-Integrated point of sale with no Daisy fee per transaction (provider card fees apply), multiple payment methods, receipt management, and tip handling. Supports local payment methods in GCC markets.
+Integrated point of sale with no Daisy fee per transaction (card processing fees from the payment provider apply), multiple payment methods, receipt management, and tip handling. Supports local payment methods in GCC markets.
 
 ### 3. Client Management
 Full CRM with customer profiles, appointment history, preferences, notes, and communication history. Track customer lifetime value and identify VIP clients.
@@ -126,7 +126,7 @@ Medical spa software with compliance features, consent form management, treatmen
 URL: https://www.jointhedaisy.com/en/solutions/med-spa-software
 
 ### Salon POS System
-Integrated point of sale for salons with retail product sales, service bundling, tip management, and financial reporting, with no Daisy fee per transaction (provider card fees apply).
+Integrated point of sale for salons with retail product sales, service bundling, tip management, and financial reporting, with no Daisy fee per transaction (card processing fees from the payment provider apply).
 URL: https://www.jointhedaisy.com/en/solutions/salon-pos-system
 
 ### Salon CRM Software
@@ -164,7 +164,7 @@ Cashback loyalty, referral programmes, marketplace visibility, and marketing aut
 URL: https://www.jointhedaisy.com/en/features/business/marketing-promotions
 
 ### Payment Processing
-Integrated POS, invoicing, tip management, and financial reporting with no Daisy fee per transaction (provider card fees apply).
+Integrated POS, invoicing, tip management, and financial reporting with no Daisy fee per transaction (card processing fees from the payment provider apply).
 URL: https://www.jointhedaisy.com/en/features/business/payment-processing
 
 ### Business Growth
@@ -436,7 +436,7 @@ Q: What types of businesses use The Daisy?
 A: Salons, spas, barbershops, nail salons, med spas, clinics, and freelance beauty professionals. The platform serves business owners who want to grow (not just manage) their beauty business.
 
 Q: Does The Daisy charge per-staff or per-booking fees?
-A: Business plans include 5, 10 or 15 team members (calendars) and 1, 2 or 4 workspaces. An extra calendar is $10/month and an extra workspace $25/month. Daisy adds no fee per booking or per transaction; card processing fees are set by the payment provider.
+A: Business plans include 5, 10 or 15 team members (calendars) and 1, 2 or 4 workspaces. An extra calendar is $10/month and an extra workspace $25/month. Daisy adds no fee per booking, and there is no Daisy fee per transaction (card processing fees from the payment provider apply).
 
 Q: What features does The Daisy include?
 A: Eight core feature categories: (1) Online Booking & Scheduling, (2) POS & Payments, (3) Client Management/CRM, (4) Staff Management, (5) Marketing & Cashback, (6) Inventory Management, (7) Reporting & Analytics, and (8) AI Capabilities including an AI receptionist for WhatsApp, Instagram and the booking site, and predictive analytics.

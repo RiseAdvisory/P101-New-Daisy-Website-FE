@@ -181,7 +181,7 @@ export const guideData: I18nContent<GuideData[]> = {
       relatedGuides: ['reduce-salon-no-shows', 'choose-best-salon-software'],
     },
     {
-      lastUpdated: '2026-10-18T00:00:00.000Z',
+      lastUpdated: '2026-10-19T00:00:00.000Z',
       slug: 'choose-best-salon-software',
       title: 'How Do I Choose the Best Salon Software?',
       answer:
@@ -225,7 +225,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What charges sit on top of the subscription in salon software?',
           answer:
-            'The usual ones: per-staff charges of $5-15/staff/month, transaction fees of 2-3% per payment, a marketplace commission on clients the marketplace introduces, premium upsells and hardware. Daisy adds no fee per transaction (card processing fees from the payment provider apply) and charges 0% commission on your existing clients. Its plans include 5, 10 or 15 team members, and an extra calendar is $10/month.',
+            'The usual ones: per-staff charges of $5-15/staff/month, transaction fees of 2-3% per payment, a marketplace commission on clients the marketplace introduces, premium upsells and hardware. There is no Daisy fee per transaction (card processing fees from the payment provider apply), and Daisy charges 0% commission on your existing clients. Its plans include 5, 10 or 15 team members, and an extra calendar is $10/month.',
         },
         {
           question: 'Should I choose salon software with a marketplace?',
@@ -266,7 +266,7 @@ export const guideData: I18nContent<GuideData[]> = {
     },
     {
       // AI Concierge wording corrected (PR #342)
-      lastUpdated: '2026-10-18T00:00:00.000Z',
+      lastUpdated: '2026-10-19T00:00:00.000Z',
       slug: 'switch-from-fresha',
       title: 'How Do I Switch from Fresha to Another Platform?',
       answer:
@@ -300,7 +300,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'Daisy makes switching from Fresha straightforward. Free data migration (Business plan) imports all your client records and history. Daisy adds what Fresha does not: an AI receptionist that works on WhatsApp, Instagram and your booking site, cashback that brings new clients in, a fully white-label booking page, and published pricing with no Daisy fee per transaction and 0% commission on your existing clients.',
+        'Daisy makes switching from Fresha straightforward. Free data migration (Business plan) imports all your client records and history. Daisy adds what Fresha does not: an AI receptionist that works on WhatsApp, Instagram and your booking site, cashback that brings new clients in, a fully white-label booking page, and published pricing with no Daisy fee per transaction (card processing fees from the payment provider apply) and 0% commission on your existing clients.',
       faqs: [
         {
           question: 'Can I export my data from Fresha?',
@@ -330,7 +330,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'What features does Daisy have that Fresha doesn\'t?',
           answer:
-            'Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site. Fresha\'s AI Concierge answers calls and messages, and as of October 2026 its published pages do not list WhatsApp or Instagram as channels. Daisy also adds cashback-funded acquisition, a fully white-label booking page with no third-party badge, and published pricing with no Daisy fee per transaction and 0% commission on your existing clients.',
+            'Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site. Fresha\'s AI Concierge answers calls and messages, and as of October 2026 its published pages do not list WhatsApp or Instagram as channels. Daisy also adds cashback-funded acquisition, a fully white-label booking page with no third-party badge, and published pricing with no Daisy fee per transaction (card processing fees from the payment provider apply) and 0% commission on your existing clients.',
         },
       ],
       metaTitle: 'How to Switch from Fresha | Migration Guide 2026',
@@ -340,7 +340,7 @@ export const guideData: I18nContent<GuideData[]> = {
       relatedGuides: ['choose-best-salon-software', 'get-more-salon-clients'],
     },
     {
-      lastUpdated: '2026-10-18T00:00:00.000Z',
+      lastUpdated: '2026-10-19T00:00:00.000Z',
       slug: 'set-up-online-booking-salon',
       title: 'How Do I Set Up Online Booking for My Salon?',
       answer:
@@ -350,7 +350,7 @@ export const guideData: I18nContent<GuideData[]> = {
       steps: [
         {
           name: 'Choose salon booking software',
-          text: 'Pick <a href="/en/glossary/salon-booking-software">salon booking software</a> that covers online booking, the calendar and automated reminders. Daisy does AI-powered booking with no Daisy fee per transaction, from $1/month, plus $50 once you pass 5 appointments in a month.',
+          text: 'Pick <a href="/en/glossary/salon-booking-software">salon booking software</a> that covers online booking, the calendar and automated reminders. Daisy does AI-powered booking with no Daisy fee per transaction (card processing fees from the payment provider apply), from $1/month, plus $50 once you pass 5 appointments in a month.',
         },
         {
           name: 'Configure your services and pricing',
@@ -573,7 +573,7 @@ export const guideData: I18nContent<GuideData[]> = {
       relatedGuides: ['reduce-salon-no-shows', 'choose-best-salon-software'],
     },
     {
-      lastUpdated: '2026-10-18T00:00:00.000Z',
+      lastUpdated: '2026-10-19T00:00:00.000Z',
       slug: 'choose-best-salon-software',
       title: 'كيف أختار أفضل برنامج لإدارة الصالون؟',
       answer:
@@ -617,7 +617,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'ما الرسوم التي تُضاف فوق الاشتراك في برامج الصالونات؟',
           answer:
-            'الرسوم الشائعة فوق الاشتراك: رسوم لكل موظف (5-15 دولاراً/موظف/شهرياً)، ورسوم معاملات (2-3% لكل دفعة)، وعمولة سوق على العملاء الذين يجلبهم السوق، وترقيات ميزات مدفوعة، وتكاليف أجهزة. لا تضيف ديزي رسوماً على كل معاملة (تُطبَّق رسوم معالجة البطاقات لدى مزوّد الدفع)، وعمولتها 0% على عملائك الحاليين. تشمل خططها 5 أو 10 أو 15 عضواً في الفريق، وكل تقويم إضافي بـ 10 دولارات شهرياً.',
+            'الرسوم الشائعة فوق الاشتراك: رسوم لكل موظف (5-15 دولاراً/موظف/شهرياً)، ورسوم معاملات (2-3% لكل دفعة)، وعمولة سوق على العملاء الذين يجلبهم السوق، وترقيات ميزات مدفوعة، وتكاليف أجهزة. وفي ديزي: دون رسوم من ديزي على كل معاملة (تُطبَّق رسوم معالجة البطاقات لدى مزوّد الدفع)، وعمولة 0% على عملائك الحاليين. تشمل خططها 5 أو 10 أو 15 عضواً في الفريق، وكل تقويم إضافي بـ 10 دولارات شهرياً.',
         },
         {
           question: 'هل يجب أن أختار برنامج صالون يتضمن سوقاً؟',
@@ -658,7 +658,7 @@ export const guideData: I18nContent<GuideData[]> = {
     },
     {
       // AI Concierge wording corrected (PR #342)
-      lastUpdated: '2026-10-18T00:00:00.000Z',
+      lastUpdated: '2026-10-19T00:00:00.000Z',
       slug: 'switch-from-fresha',
       title: 'كيف أنتقل من Fresha إلى منصة أخرى؟',
       answer:
@@ -692,7 +692,7 @@ export const guideData: I18nContent<GuideData[]> = {
         },
       ],
       howDaisyHelps:
-        'تجعل ديزي الانتقال من Fresha مباشراً. ترحيل البيانات المجاني (خطة الأعمال) يستورد جميع سجلات عملائك وتاريخهم. وتضيف ديزي ما لا تقدمه Fresha: موظف استقبال ذكي يعمل عبر واتساب وإنستغرام وصفحة الحجز، وكاشباك يجلب عملاء جدداً، وصفحة حجز بعلامتك التجارية بالكامل، وتسعير مُعلن دون رسوم من ديزي على كل معاملة مع عمولة 0% على عملائك الحاليين.',
+        'تجعل ديزي الانتقال من Fresha مباشراً. ترحيل البيانات المجاني (خطة الأعمال) يستورد جميع سجلات عملائك وتاريخهم. وتضيف ديزي ما لا تقدمه Fresha: موظف استقبال ذكي يعمل عبر واتساب وإنستغرام وصفحة الحجز، وكاشباك يجلب عملاء جدداً، وصفحة حجز بعلامتك التجارية بالكامل، وتسعير مُعلن دون رسوم من ديزي على كل معاملة (تُطبَّق رسوم معالجة البطاقات لدى مزوّد الدفع) مع عمولة 0% على عملائك الحاليين.',
       faqs: [
         {
           question: 'هل يمكنني تصدير بياناتي من Fresha؟',
@@ -722,7 +722,7 @@ export const guideData: I18nContent<GuideData[]> = {
         {
           question: 'ما الميزات التي تمتلكها ديزي ولا يمتلكها Fresha؟',
           answer:
-            'يعمل موظف الاستقبال الذكي في ديزي عبر واتساب وإنستغرام وصفحة الحجز. أما خدمة AI Concierge لدى Fresha فتردّ على المكالمات والرسائل، ولا تُدرج صفحاتها المنشورة حتى أكتوبر 2026 واتساب أو إنستغرام ضمن قنواتها. وتضيف ديزي استقطاب عملاء بالكاشباك، وصفحة حجز بعلامتك التجارية بالكامل دون شعار أي طرف ثالث، وتسعيراً معلناً دون رسوم من ديزي على كل معاملة مع عمولة 0% على عملائك الحاليين.',
+            'يعمل موظف الاستقبال الذكي في ديزي عبر واتساب وإنستغرام وصفحة الحجز. أما خدمة AI Concierge لدى Fresha فتردّ على المكالمات والرسائل، ولا تُدرج صفحاتها المنشورة حتى أكتوبر 2026 واتساب أو إنستغرام ضمن قنواتها. وتضيف ديزي استقطاب عملاء بالكاشباك، وصفحة حجز بعلامتك التجارية بالكامل دون شعار أي طرف ثالث، وتسعيراً معلناً دون رسوم من ديزي على كل معاملة (تُطبَّق رسوم معالجة البطاقات لدى مزوّد الدفع) مع عمولة 0% على عملائك الحاليين.',
         },
       ],
       metaTitle: 'كيف تنتقل من Fresha | دليل الترحيل 2026',
@@ -732,7 +732,7 @@ export const guideData: I18nContent<GuideData[]> = {
       relatedGuides: ['choose-best-salon-software', 'get-more-salon-clients'],
     },
     {
-      lastUpdated: '2026-10-18T00:00:00.000Z',
+      lastUpdated: '2026-10-19T00:00:00.000Z',
       slug: 'set-up-online-booking-salon',
       title: 'كيف أُعدّ الحجز عبر الإنترنت لصالوني؟',
       answer:
@@ -742,7 +742,7 @@ export const guideData: I18nContent<GuideData[]> = {
       steps: [
         {
           name: 'اختيار برنامج حجز الصالون',
-          text: 'اختر <a href="/ar/glossary/salon-booking-software">برنامج حجز صالون</a> يتضمن الحجز عبر الإنترنت وإدارة التقويم والتذكيرات التلقائية. تقدم ديزي حجزاً مدعوماً بالذكاء الاصطناعي دون رسوم من ديزي على كل معاملة، يبدأ من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
+          text: 'اختر <a href="/ar/glossary/salon-booking-software">برنامج حجز صالون</a> يتضمن الحجز عبر الإنترنت وإدارة التقويم والتذكيرات التلقائية. تقدم ديزي حجزاً مدعوماً بالذكاء الاصطناعي دون رسوم من ديزي على كل معاملة (تُطبَّق رسوم معالجة البطاقات لدى مزوّد الدفع)، يبدأ من دولار واحد شهرياً (+50 دولاراً شهرياً بعد تجاوز 5 مواعيد في الشهر).',
         },
         {
           name: 'ضبط خدماتك وأسعارك',

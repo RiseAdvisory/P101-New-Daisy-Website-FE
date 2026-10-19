@@ -297,7 +297,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'What other charges does Fresha publish?',
         answer:
-          'Fresha publishes these charges on its own pricing page. In the UAE: a one-time 50% commission on new marketplace clients with an AED 20 minimum, marketing emails free for the first 50 each month and then AED 0.08 each, texts at AED 0.14, and an Insights add-on at AED 319.95 per bookable team member per month. Payment processing through Fresha is optional: if you use it, online payments cost 4.90% + AED 0.75 per transaction, and businesses that don\'t use it pay Fresha no transaction fees. Daisy\'s plan price covers marketing and includes 50 AI receptionist conversations, with paid top-ups after that. Card processing fees on Daisy are set by the payment provider and billed separately.',
+          'Fresha publishes these charges on its own pricing page. In the UAE: a one-time 50% commission on new marketplace clients with an AED 20 minimum, marketing emails free for the first 50 each month and then AED 0.08 each, texts at AED 0.14, and an Insights add-on at AED 319.95 per bookable team member per month. Payment processing through Fresha is optional: if you use it, online payments cost 4.90% + AED 0.75 per transaction, and businesses that don\'t use it pay Fresha no transaction fees. Daisy\'s plan price covers marketing and includes 50 AI receptionist conversations, with paid top-ups after that. There is no Daisy fee per transaction (card processing fees from the payment provider apply).',
       },
       {
         question: 'How hard is it to migrate my data from Fresha?',

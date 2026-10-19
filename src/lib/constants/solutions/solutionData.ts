@@ -98,7 +98,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'Integrated POS & Payments',
         description:
-          'Accept all payment methods with published pricing. Daisy adds no fee of its own per transaction; card processing fees are set by the payment provider.',
+          'Accept all payment methods with published pricing. There is no Daisy fee per transaction (card processing fees from the payment provider apply).',
       },
       {
         title: 'Cashback Customer Acquisition',
@@ -389,7 +389,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         question: 'Can I switch from Fresha to Daisy?',
         answer:
-          'Yes. Daisy provides full migration support to transfer your client database, service menu, booking history, and staff profiles. Most salons switch in under a week with no downtime. Daisy adds no fee per transaction; card processing fees are set by the payment provider. Daisy charges 0% commission on your existing clients, and marketplace commission applies only to new clients its marketplace brings you.',
+          'Yes. Daisy provides full migration support to transfer your client database, service menu, booking history, and staff profiles. Most salons switch in under a week with no downtime. There is no Daisy fee per transaction (card processing fees from the payment provider apply). Daisy charges 0% commission on your existing clients, and marketplace commission applies only to new clients its marketplace brings you.',
       },
       {
         question: 'Does Daisy work in Arabic for beauty salons?',
@@ -675,7 +675,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
     heroTitle: 'Salon POS System with Built-In Growth',
     heroSubtitle: 'Process payments, track retail, and grow revenue, all from one system with transparent pricing.',
     definition:
-      'A salon POS (point-of-sale) system is payment processing and retail management software designed for salons and beauty businesses, handling service payments, product sales, tips, and revenue tracking. The Daisy is an AI-powered salon POS that integrates payments with booking, CRM, and marketing, with no Daisy fee per transaction and published pricing; card processing fees are set by the payment provider.',
+      'A salon POS (point-of-sale) system is payment processing and retail management software designed for salons and beauty businesses, handling service payments, product sales, tips, and revenue tracking. The Daisy is an AI-powered salon POS that integrates payments with booking, CRM, and marketing, with published pricing and no Daisy fee per transaction (card processing fees from the payment provider apply).',
     intro: 'Your POS should do more than process payments. Salons that add retail product sales alongside services increase average ticket value by 15-25%, and integrated POS systems reduce checkout time by up to 50% compared to separate tools. Daisy\'s salon POS integrates with AI booking, client profiles, and cashback rewards, turning every transaction into a growth opportunity.',
     challenges: [
       { title: 'Hidden transaction fees', description: 'Most POS systems charge 2-3% per transaction. On $10,000/mo in card payments, that\'s $200-300 in fees.' },
@@ -690,8 +690,8 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'What POS system is best for salons?', answer: 'For beauty-specific POS with AI and cashback, Daisy leads. For hardware-first POS in the US, Square Appointments has a free plan, with in-person card payments at 2.6% + 15¢. For comprehensive features, Vagaro\'s POS is solid.' },
-      { question: 'How much does a salon POS system cost?', answer: 'Salon POS systems range from free (Square, with per-transaction fees) to $200+/mo for integrated platforms. Daisy publishes its pricing, includes POS, and adds no fee of its own per transaction; card processing fees are set by the payment provider.' },
-      { question: 'Does Daisy charge per-transaction fees?', answer: 'Daisy adds no platform fee per transaction. Card processing fees are set by the payment provider, billed separately from your Daisy subscription, and shown before payments are activated.' },
+      { question: 'How much does a salon POS system cost?', answer: 'Salon POS systems range from free (Square, with per-transaction fees) to $200+/mo for integrated platforms. Daisy publishes its pricing and includes POS, with no Daisy fee per transaction (card processing fees from the payment provider apply).' },
+      { question: 'Does Daisy charge per-transaction fees?', answer: 'No. There is no Daisy fee per transaction (card processing fees from the payment provider apply). Those card fees are billed separately from your Daisy subscription and shown before payments are activated.' },
       { question: 'Can Daisy POS handle retail product sales?', answer: 'Yes. Daisy\'s POS supports retail product sales alongside services. Track inventory automatically, bundle products with treatments, and see retail performance analytics, all in one system.' },
       { question: 'Does the salon POS support split payments and tips?', answer: 'Yes. Daisy handles split payments across multiple methods, tip processing, gift card redemption, and cashback rewards, all in a smooth checkout flow that staff learn in minutes.' },
       { question: 'Can I switch from Square POS to Daisy?', answer: 'Yes. Daisy provides migration support and is purpose-built for beauty businesses. Square serves many kinds of businesses and does not operate in the GCC. Daisy integrates payments with AI booking, client profiles, and cashback loyalty.' },
@@ -907,7 +907,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
       {
         title: 'نقاط بيع ومدفوعات متكاملة',
         description:
-          'اقبل جميع طرق الدفع بأسعار مُعلنة. لا يضيف ديزي رسوماً خاصة به على كل معاملة، وتُحتسب رسوم معالجة البطاقات لدى مزوّد الدفع.',
+          'اقبل جميع طرق الدفع بأسعار مُعلنة، دون رسوم من ديزي على كل معاملة (تُطبَّق رسوم معالجة البطاقات لدى مزوّد الدفع).',
       },
       {
         title: 'استقطاب العملاء عبر الكاشباك',
@@ -1477,7 +1477,7 @@ export const solutionData: I18nContent<SolutionData[]> = {
     heroTitle: 'نظام نقاط بيع صالونات مع نمو مدمج',
     heroSubtitle: 'عالج المدفوعات وتتبع التجزئة ونمّ الإيرادات — كل ذلك من نظام واحد بأسعار شفافة.',
     definition:
-      'نظام نقاط البيع (POS) للصالونات هو برنامج معالجة مدفوعات وإدارة تجزئة مصمم للصالونات وأعمال التجميل، يتعامل مع مدفوعات الخدمات ومبيعات المنتجات والإكراميات وتتبع الإيرادات. ديزي هو نظام نقاط بيع صالونات مدعوم بالذكاء الاصطناعي يدمج المدفوعات مع الحجز وإدارة العملاء والتسويق، دون رسوم من ديزي على كل معاملة وبأسعار مُعلنة، وتُحتسب رسوم معالجة البطاقات لدى مزوّد الدفع.',
+      'نظام نقاط البيع (POS) للصالونات هو برنامج معالجة مدفوعات وإدارة تجزئة مصمم للصالونات وأعمال التجميل، يتعامل مع مدفوعات الخدمات ومبيعات المنتجات والإكراميات وتتبع الإيرادات. ديزي هو نظام نقاط بيع صالونات مدعوم بالذكاء الاصطناعي يدمج المدفوعات مع الحجز وإدارة العملاء والتسويق، بأسعار مُعلنة ودون رسوم من ديزي على كل معاملة (تُطبَّق رسوم معالجة البطاقات لدى مزوّد الدفع).',
     intro: 'يجب أن يفعل نظام نقاط البيع أكثر من معالجة المدفوعات. الصالونات التي تضيف مبيعات التجزئة إلى جانب الخدمات تزيد متوسط قيمة الفاتورة بنسبة 15-25%، وأنظمة نقاط البيع المتكاملة تقلل وقت الدفع بنسبة تصل إلى 50% مقارنة بالأدوات المنفصلة. نظام نقاط بيع ديزي للصالونات يتكامل مع الحجز الذكي وملفات العملاء ومكافآت الكاشباك، محولاً كل معاملة إلى فرصة نمو.',
     challenges: [
       { title: 'رسوم معاملات خفية', description: 'معظم أنظمة نقاط البيع تفرض 2-3% لكل معاملة. على 10,000 دولار شهرياً من المدفوعات بالبطاقة، هذا 200-300 دولار في الرسوم.' },
@@ -1492,8 +1492,8 @@ export const solutionData: I18nContent<SolutionData[]> = {
     ],
     faqs: [
       { question: 'ما هو أفضل نظام نقاط بيع للصالونات؟', answer: 'لنقاط بيع متخصصة بالتجميل مع ذكاء اصطناعي وكاشباك، ديزي في المقدمة. لنقاط بيع مبنية على الأجهزة في الولايات المتحدة، يقدم Square Appointments خطة مجانية، برسوم 2.6% + 15 سنتاً على مدفوعات البطاقات الحضورية. للميزات الشاملة، نقاط بيع Vagaro قوية.' },
-      { question: 'كم يكلف نظام نقاط بيع الصالونات؟', answer: 'تتراوح أنظمة نقاط بيع الصالونات من المجاني (Square مع رسوم لكل معاملة) إلى أكثر من 200 دولار شهرياً للمنصات المتكاملة. ينشر ديزي أسعاره ويشمل نقاط البيع، ولا يضيف رسوماً خاصة به على كل معاملة، وتُحتسب رسوم معالجة البطاقات لدى مزوّد الدفع.' },
-      { question: 'هل يفرض ديزي رسوم لكل معاملة؟', answer: 'لا يضيف ديزي رسوم منصة على كل معاملة. رسوم معالجة البطاقات يحددها مزوّد الدفع، وتُحتسب منفصلة عن اشتراك ديزي، وتظهر قبل تفعيل المدفوعات.' },
+      { question: 'كم يكلف نظام نقاط بيع الصالونات؟', answer: 'تتراوح أنظمة نقاط بيع الصالونات من المجاني (Square مع رسوم لكل معاملة) إلى أكثر من 200 دولار شهرياً للمنصات المتكاملة. ينشر ديزي أسعاره ويشمل نقاط البيع، دون رسوم من ديزي على كل معاملة (تُطبَّق رسوم معالجة البطاقات لدى مزوّد الدفع).' },
+      { question: 'هل يفرض ديزي رسوم لكل معاملة؟', answer: 'لا، فالمدفوعات دون رسوم من ديزي على كل معاملة (تُطبَّق رسوم معالجة البطاقات لدى مزوّد الدفع). وتُحتسب رسوم البطاقات هذه منفصلة عن اشتراك ديزي، وتظهر قبل تفعيل المدفوعات.' },
       { question: 'هل يمكن لنقاط بيع ديزي التعامل مع مبيعات التجزئة؟', answer: 'نعم. نقاط بيع ديزي تدعم مبيعات التجزئة إلى جانب الخدمات. تتبع المخزون تلقائياً وادمج المنتجات مع العلاجات واطلع على تحليلات أداء التجزئة، كل ذلك في نظام واحد.' },
       { question: 'هل يدعم نظام نقاط بيع الصالون المدفوعات المقسمة والإكراميات؟', answer: 'نعم. يتعامل ديزي مع المدفوعات المقسمة عبر طرق متعددة ومعالجة الإكراميات واسترداد بطاقات الهدايا ومكافآت الكاشباك، كل ذلك في تدفق دفع سلس يتعلمه الموظفون في دقائق.' },
       { question: 'هل يمكنني الانتقال من Square POS إلى ديزي؟', answer: 'نعم. يوفر ديزي دعم النقل وهو مصمم خصيصاً لأعمال التجميل. يخدم Square أنواعاً كثيرة من الأعمال ولا يعمل في دول الخليج. يدمج ديزي المدفوعات مع الحجز الذكي وملفات العملاء وولاء الكاشباك.' },
