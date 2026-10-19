@@ -513,3 +513,48 @@ describe('Fresha payment processing is optional', () => {
     expect(claims).toEqual([]);
   });
 });
+
+// One wording for Daisy's own per-transaction position, so the copy cannot
+// drift into "no transaction fees" or "0%" (the pricing page says card
+// processing fees are separate and set by the payment provider).
+describe("Daisy's per-transaction wording is standard", () => {
+  const STD_EN = ' (card processing fees from the payment provider apply)';
+  const STD_AR = ' (تُطبَّق رسوم معالجة البطاقات لدى مزوّد الدفع)';
+  const ALL = [...FILES, path.join(ROOT, '..', 'public', 'llms.txt'), path.join(ROOT, '..', 'public', 'llms-full.txt')];
+
+  it('always follows "no Daisy fee per transaction" with the provider note, EN and AR', () => {
+    const bad: string[] = [];
+    for (const file of ALL) {
+      const text = fs.readFileSync(file, 'utf8');
+      const check = (re: RegExp, suffix: string) => {
+        for (const m of text.matchAll(re)) {
+          const end = (m.index ?? 0) + m[0].length;
+          if (text.slice(end, end + suffix.length) !== suffix) {
+            bad.push(`${path.relative(ROOT, file)}:${text.slice(0, m.index).split('\n').length}`);
+          }
+        }
+      };
+      check(/Daisy fee per transaction/gi, STD_EN);
+      check(/رسوم من ديزي على كل معاملة/g, STD_AR);
+    }
+    expect(bad).toEqual([]);
+  });
+
+  it('uses no other wording for it', () => {
+    expect(
+      offenders(
+        /no fee of its own per transaction|Daisy platform fee|no platform fee per transaction|provider card fees apply|card processing fees on Daisy|رسوماً خاصة بها على كل معاملة|رسوماً خاصة به على كل معاملة|رسوم منصة على كل معاملة/,
+      ).concat(
+        // offenders() only scans lines near a Fresha mention; check the rest too.
+        ALL.flatMap((file) =>
+          fs
+            .readFileSync(file, 'utf8')
+            .split('\n')
+            .map((line, i) => ({ line, i }))
+            .filter(({ line }) => /no fee of its own per transaction|Daisy platform fee|provider card fees apply|رسوماً خاصة بها على كل معاملة/.test(line))
+            .map(({ i }) => `${path.relative(ROOT, file)}:${i + 1}`),
+        ),
+      ),
+    ).toEqual([]);
+  });
+});

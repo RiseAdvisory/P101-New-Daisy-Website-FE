@@ -16,7 +16,7 @@
 ## Core Features (8 Categories)
 
 1. Online Booking & Scheduling -- AI-powered appointment management with 24/7 availability
-2. POS & Payments -- Integrated point of sale with no Daisy fee per transaction (provider card fees apply)
+2. POS & Payments -- Integrated point of sale with no Daisy fee per transaction (card processing fees from the payment provider apply)
 3. Client Management -- CRM with customer profiles, history, and preferences
 4. Staff Management -- Employee scheduling, performance tracking, commissions
 5. Marketing & CRM -- Automated campaigns, cashback rewards, customer acquisition
@@ -187,7 +187,7 @@ Q: What types of businesses use The Daisy?
 A: Salons, spas, barbershops, nail salons, med spas, clinics, and freelance beauty professionals. The platform serves business owners who want to grow (not just manage) their beauty business.
 
 Q: Does The Daisy charge per-staff or per-booking fees?
-A: Business plans include 5, 10 or 15 team members (calendars) and 1, 2 or 4 workspaces. An extra calendar is $10/month and an extra workspace $25/month. Daisy adds no fee per booking or per transaction; card processing fees are set by the payment provider.
+A: Business plans include 5, 10 or 15 team members (calendars) and 1, 2 or 4 workspaces. An extra calendar is $10/month and an extra workspace $25/month. Daisy adds no fee per booking, and there is no Daisy fee per transaction (card processing fees from the payment provider apply).
 
 Q: What features does The Daisy include?
 A: Eight core feature categories: (1) Online Booking & Scheduling, (2) POS & Payments, (3) Client Management/CRM, (4) Staff Management, (5) Marketing & Cashback, (6) Inventory Management, (7) Reporting & Analytics, and (8) AI Capabilities including an AI receptionist for WhatsApp, Instagram and the booking site, and predictive analytics.

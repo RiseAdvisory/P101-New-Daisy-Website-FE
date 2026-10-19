@@ -60,12 +60,12 @@ describe('getGlossarySitemapData', () => {
     }
   });
 
-  it('reports 2026-10-18 for the entries whose payment-processing wording was corrected that day', () => {
+  it('reports 2026-10-19 for the entries whose payment-processing wording was last changed that day', () => {
     const data = getGlossarySitemapData();
     for (const slug of ['salon-management-software', 'salon-booking-software']) {
       const record = data.find((r) => r.slug === slug);
       expect(record).toBeDefined();
-      expect(record?.lastUpdated).toBe('2026-10-18T00:00:00.000Z');
+      expect(record?.lastUpdated).toBe('2026-10-19T00:00:00.000Z');
     }
   });
 });

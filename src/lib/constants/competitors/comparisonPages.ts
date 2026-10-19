@@ -99,7 +99,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       onlineBooking:
         'Both do online booking well. Fresha\'s strength is the size of its consumer marketplace, with 25M+ users. Daisy answers that with AI booking that carries the whole flow, payments and customer service included, 24/7 and without anyone stepping in.',
       posAndPayments:
-        'In the UAE, Fresha\'s optional payment processing is published at 4.90% + AED 0.75 per online transaction; businesses that don\'t use it pay Fresha no transaction fees. Fresha also publishes a one-time 50% commission on new marketplace clients, minimum AED 20. On Daisy, card processing fees are set by the payment provider and billed separately; Daisy adds no platform fee per transaction. Its marketplace is optional, and commission applies only to new clients it brings you.',
+        'In the UAE, Fresha\'s optional payment processing is published at 4.90% + AED 0.75 per online transaction; businesses that don\'t use it pay Fresha no transaction fees. Fresha also publishes a one-time 50% commission on new marketplace clients, minimum AED 20. There is no Daisy fee per transaction (card processing fees from the payment provider apply). Its marketplace is optional, and commission applies only to new clients it brings you.',
       clientManagement:
         'Fresha gives you client profiles and history. Daisy layers AI on top, predicting no-shows, flagging VIP clients and suggesting personalized offers from booking patterns.',
       staffManagement:
@@ -118,7 +118,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     whoShouldChooseDaisy: [
       'You want an AI receptionist covering bookings and customer service 24/7',
       'You want Arabic and English as equals, with cashback rewards your Arabic-speaking clients can spend',
-      'You want a plan price with no Daisy platform fee added per transaction',
+      'You want a plan price with no Daisy fee per transaction (card processing fees from the payment provider apply)',
       'You want a booking page carrying your logo, name and colours',
       'You want acquisition that works for you, not just a marketplace listing',
       'You want a GCC-built platform with cashback acquisition and local payment integration',
@@ -668,7 +668,7 @@ export const alternativePages: AlternativePageData[] = [
     slug: 'fresha',
     competitorSlug: 'fresha',
     metaTitle: 'Best Fresha Alternative for Salons (2026)',
-    metaDescription: 'Looking for a Fresha alternative? Daisy offers an AI receptionist, published pricing, Arabic support and cashback, with no Daisy fee per transaction.',
+    metaDescription: 'Looking for a Fresha alternative? Daisy offers an AI receptionist, published pricing, Arabic support and cashback, with no Daisy fee per transaction (card processing fees from the payment provider apply).',
     keywords: ['fresha alternative', 'fresha replacement', 'better than fresha', 'salon software like fresha'],
     heroTitle: 'Looking for a Fresha Alternative?',
     heroSubtitle: 'Fresha charges a subscription and a commission on new marketplace clients, plus per-transaction fees if you use its payments.',
@@ -1490,7 +1490,7 @@ export const competitorVsPages: CompetitorVsPageData[] = [
     verdict: 'Fresha is better for cost-conscious small businesses with its lower starting price. Mindbody is better for large enterprise operations. Both sell AI front-desk tools: Fresha\'s AI Concierge answers calls and messages, and Mindbody\'s own AI Concierge, on its Ultimate plan, follows up missed calls by text and web chat. Fresha has an Arabic UI; as of October 2026 we could not find one for Mindbody. Neither offers cashback.',
     whoShouldChooseA: ['Cost is the top priority', 'You want marketplace exposure at a lower price point', 'You\'re a small salon'],
     whoShouldChooseB: ['Enterprise features are required', 'Large fitness marketplace matters', 'Multi-location management needed'],
-    daisyPitch: 'Between separately billed fees and quote-based higher tiers, Daisy offers the modern middle: published plan prices with no Daisy fee per transaction, an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and cashback.',
+    daisyPitch: 'Between separately billed fees and quote-based higher tiers, Daisy offers the modern middle: published plan prices with no Daisy fee per transaction (card processing fees from the payment provider apply), an AI receptionist on WhatsApp, Instagram and the booking site, Arabic and English as equals, and cashback.',
   },
   {
     slugA: 'booksy',

@@ -15,7 +15,7 @@ const uiStrings = {
     includedInAllPlans: 'Included in all plans',
     includedItems: [
       '50 AI receptionist conversations included',
-      'No Daisy fee per transaction (card processing fees apply)',
+      'No Daisy fee per transaction (card processing fees from the payment provider apply)',
       '0% commission on your existing clients',
       'Arabic & English support',
       '5, 10 or 15 team members, depending on the plan',
@@ -43,7 +43,7 @@ const uiStrings = {
     includedInAllPlans: 'مشمول في جميع الباقات',
     includedItems: [
       '50 محادثة لموظف الاستقبال الذكي مشمولة',
-      'دون رسوم من ديزي على كل معاملة (تُطبَّق رسوم معالجة البطاقات)',
+      'دون رسوم من ديزي على كل معاملة (تُطبَّق رسوم معالجة البطاقات لدى مزوّد الدفع)',
       'عمولة 0% على عملائك الحاليين',
       'دعم عربي وإنجليزي',
       '5 أو 10 أو 15 عضو فريق حسب الباقة',
