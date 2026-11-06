@@ -1027,7 +1027,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     metaDescription: 'Looking for Fresha alternatives? Compare the top salon platforms on AI channel coverage, all-in pricing and cashback-driven acquisition.',
     keywords: ['best fresha alternatives', 'fresha alternatives', 'fresha competitors', 'salon software like fresha'],
     heroTitle: 'Fresha Alternatives Compared (2026)',
-    heroSubtitle: 'Fresha\'s subscription plus its per-transaction and marketplace charges add up. Here are the best alternatives for a growing beauty business.',
+    heroSubtitle: 'Fresha charges a subscription and a one-time commission on new marketplace clients, plus per-transaction fees if a business chooses Fresha\'s optional payment processing. Here are the best alternatives for a growing beauty business.',
     intro: 'Fresha runs the world\'s largest beauty marketplace. It charges a monthly subscription and a one-time marketplace commission on new clients, 50% in the UAE, with returning clients free, plus per-transaction fees for businesses that process payments through Fresha, which is optional. The alternatives below are compared on features, pricing, AI and international support.',
     alternatives: ['booksy', 'vagaro', 'glossgenius', 'boulevard', 'mangomint', 'square-appointments'],
     bestFor: {
