@@ -23,6 +23,8 @@ import fs from 'fs';
 import path from 'path';
 import { daisyVsPages } from '../comparisonPages';
 import { daisyVsPages as daisyVsPagesAr } from '../comparisonPages.ar';
+import { bestAlternativesPages } from '../comparisonPages';
+import { tier1CompetitorsAr } from '../tier1Data.ar';
 
 const ROOT = path.join(__dirname, '..', '..', '..', '..');
 
@@ -556,5 +558,37 @@ describe("Daisy's per-transaction wording is standard", () => {
         ),
       ),
     ).toEqual([]);
+  });
+});
+
+// Corrections of 6 November 2026. offenders() skips text with no "Fresha"
+// nearby, and the Arabic "Choose Fresha if" list is too far from the name to
+// be caught, so the retired wording is checked in every content file here.
+describe('6 November 2026 Fresha corrections stay in place', () => {
+  it('drops the retired wording everywhere', () => {
+    const found: string[] = [];
+    for (const file of [...FILES, path.join(ROOT, '..', 'public', 'llms.txt'), path.join(ROOT, '..', 'public', 'llms-full.txt')]) {
+      fs.readFileSync(file, 'utf8')
+        .split('\n')
+        .forEach((line, i) => {
+          if (/الرسوم المتراكمة|لا واجهة مترجمة فقط|عمق التعريب|ودعماً هاتفياً مع أولوية|per-transaction and marketplace charges add up/.test(line)) {
+            found.push(`${path.relative(ROOT, file)}:${i + 1}`);
+          }
+        });
+    }
+    expect(found).toEqual([]);
+  });
+
+  it('uses the corrected wording on the Fresha pages', () => {
+    const compareAr = daisyVsPagesAr.find((p) => p.slug === 'daisy-vs-fresha');
+    expect(compareAr?.whoShouldChooseCompetitor).toContain('تقبل عمولة على العملاء الجدد من السوق مقابل الاكتشاف');
+
+    const fresha = tier1CompetitorsAr.fresha;
+    expect(fresha.daisySwitchingReasons.join('\n')).toContain('مع موظف استقبال ذكي يعمل باللغتين');
+    const answers = fresha.faq.map((f) => f.answer).join('\n');
+    expect(answers).toContain('مع دعم ذي أولوية في الباقات الأعلى');
+
+    const best = bestAlternativesPages.find((p) => p.slug === 'best-fresha-alternatives');
+    expect(best?.heroSubtitle).toContain("Fresha's optional payment processing");
   });
 });
