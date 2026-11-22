@@ -384,7 +384,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     heroSubtitle: 'Two premium platforms. Boulevard sells its Beau phone receptionist as an add-on, while Daisy\'s AI receptionist on WhatsApp, Instagram and the booking site comes in the plan.',
     // Boulevard facts below: joinblvd.com/pricing, /features/ai-receptionist and
     // /features/boulevard-ai, read 2026-10-09.
-    tldr: 'Boulevard is design-led and includes Precision Scheduling on every plan, from $159/mo ($143/mo billed annually). Beau, its voice AI receptionist, costs $125/mo per location. Daisy includes its AI receptionist on WhatsApp, Instagram and the booking site, along with Arabic support, cashback and an optional marketplace.',
+    tldr: 'Boulevard is design-led and includes Precision Scheduling on every plan, from $159/mo ($143/mo billed annually). Beau, its voice AI receptionist, costs $149/mo per location. Daisy includes its AI receptionist on WhatsApp, Instagram and the booking site, along with Arabic support, cashback and an optional marketplace.',
     verdict: 'Boulevard is excellent for premium US salons that put design first and want an AI receptionist on the phone. Daisy suits businesses whose clients message on WhatsApp and Instagram, who need Arabic, or who operate in the GCC, where Boulevard lists no presence.',
     featureCommentary: {
       onlineBooking: 'Both offer excellent booking. Boulevard includes Precision Scheduling on every plan, which steers bookings to the times that suit the business, and its self-booking syncs with Google, Instagram and Facebook.',
@@ -395,7 +395,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       inventoryManagement: 'Inventory tracking is good on both.',
       reportingAndAnalytics: 'Both provide strong reporting, and Boulevard includes standard and advanced reports on every plan.',
       marketplaceAndDiscovery: 'Boulevard does not list a consumer marketplace of its own. Daisy brings in clients through cashback, with an optional marketplace in selected countries.',
-      aiCapabilities: 'Every Boulevard plan includes Precision Scheduling and AI help with marketing emails. Beau, a voice receptionist that answers calls 24/7, costs $125/mo per location for 200 minutes. Daisy includes receptionist, chatbot, scheduling and marketing at base pricing, with the receptionist on WhatsApp, Instagram and the booking site rather than phone calls.',
+      aiCapabilities: 'Every Boulevard plan includes Precision Scheduling and AI help with marketing emails. Beau, a voice receptionist that answers calls 24/7, costs $149/mo per location for 100 minutes. Daisy includes receptionist, chatbot, scheduling and marketing at base pricing, with the receptionist on WhatsApp, Instagram and the booking site rather than phone calls.',
     },
     whoShouldChooseDaisy: [
       'You want an AI receptionist and chatbot at base pricing',
@@ -449,7 +449,8 @@ export const daisyVsPages: DaisyVsPageData[] = [
     ],
   },
   {
-    // Facts re-verified 2026-10-09 against dingg.app country sites and AI page.
+    // Facts re-verified 2026-10-09 against dingg.app country sites and AI page;
+    // Bahrain site and Arabic support re-read 2026-11-17 (see tier2Data.ts).
     slug: 'daisy-vs-dingg',
     competitorSlug: 'dingg',
     metaTitle: 'Daisy vs DINGG: AI Salon Platforms Compared',
@@ -457,12 +458,12 @@ export const daisyVsPages: DaisyVsPageData[] = [
       'Compare Daisy and DINGG for AI salon software in the GCC: AI channels, Arabic, pricing, loyalty and country coverage.',
     keywords: ['daisy vs dingg', 'dingg alternative', 'ai salon software', 'gcc salon management'],
     heroTitle: 'Daisy vs DINGG',
-    heroSubtitle: 'Both publish AI that books appointments on WhatsApp. They differ on channels, language, pricing and GCC coverage.',
-    tldr: 'DINGG is an India-based salon platform whose AI assistant answers clients and takes bookings on WhatsApp. It runs country sites for five GCC states. Its US prices start at $79 a month, and its UAE prices are given on request. Daisy\'s AI receptionist also covers Instagram, in Arabic and English, and Daisy adds cashback rewards, an optional consumer marketplace and published prices. Daisy is live in all six GCC countries.',
-    verdict: 'DINGG is a credible AI competitor with a broad feature set and local billing in five GCC states. Daisy is the better fit if you need Bahrain, an Arabic interface, an AI receptionist on Instagram, cashback rewards, or prices you can see before a demo.',
+    heroSubtitle: 'Both publish AI that books appointments on WhatsApp. They differ on AI channels, pricing, cashback rewards and the marketplace.',
+    tldr: 'DINGG is an India-based salon platform whose AI assistant answers clients and takes bookings on WhatsApp. It runs country sites in all six GCC states. Its US prices start at $79 a month, and its UAE prices are given on request. Daisy\'s AI receptionist also covers Instagram, in Arabic and English, and Daisy adds cashback rewards, an optional consumer marketplace and published prices. Daisy is live in all six GCC countries.',
+    verdict: 'DINGG is a credible AI competitor with a broad feature set and local billing across the GCC. Daisy is the better fit if you want an AI receptionist on Instagram, cashback rewards, or prices you can see before a demo.',
     featureCommentary: {
       onlineBooking: 'Both offer 24/7 online booking. DINGG books through your website and its WhatsApp AI assistant; Daisy\'s AI books on WhatsApp, Instagram and the booking site.',
-      posAndPayments: 'Both offer POS. DINGG bills in local currency with VAT-compliant invoices in its five GCC markets. Daisy carries payment options across all six GCC countries.',
+      posAndPayments: 'Both offer POS. DINGG bills in local currency with VAT-compliant invoices in its GCC markets. Daisy carries payment options across all six GCC countries.',
       clientManagement: 'Both handle client profiles. DINGG adds AI client summaries for upselling, and Daisy adds AI for retention and personalization.',
       staffManagement: 'Both handle scheduling, commissions and team management.',
       marketingAndCrm: 'DINGG lists email, SMS and WhatsApp campaigns, segmentation and AI-driven WhatsApp marketing. Daisy includes AI marketing with cashback rewards.',
@@ -472,11 +473,9 @@ export const daisyVsPages: DaisyVsPageData[] = [
       aiCapabilities: 'Both publish AI that takes bookings. DINGG\'s assistant works on WhatsApp, SMS and your website, alongside AI scheduling, segmentation and analytics. Daisy\'s AI receptionist covers WhatsApp, Instagram and the booking site, takes payment inside the booking flow, and runs in Arabic and English.',
     },
     whoShouldChooseDaisy: [
-      'You operate in Bahrain, or across all six GCC countries',
       'You want an AI receptionist that also answers on Instagram',
       'You want cashback rewards keeping clients around',
       'You want white-label control of the brand',
-      'You want an Arabic interface for your staff',
     ],
     whoShouldChooseCompetitor: [
       'You operate in India or the US as well as the GCC',
@@ -567,7 +566,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
     keywords: ['daisy vs mangomint', 'mangomint alternative', 'premium salon software'],
     heroTitle: 'Daisy vs Mangomint',
     heroSubtitle: 'Mangomint runs clean operations. Daisy adds AI, cashback and an optional marketplace to grow the business.',
-    tldr: 'Mangomint has a clean design and a Capterra rating of 5.0, and charges $120 per location plus $10 per user each month. It serves the US and Canada, and its published pages list no consumer marketplace or AI features. Daisy adds an AI receptionist, cashback, an optional marketplace and Arabic support at a more accessible price.',
+    tldr: 'Mangomint has a clean design and a Capterra rating of 5.0, and charges $120 per location plus $10 per user each month. It serves the US and Canada, and its published pages list no consumer marketplace. Its AI receptionist, Mira, is a paid add-on for calls and texts. Daisy adds an AI receptionist on WhatsApp and Instagram, cashback, an optional marketplace and Arabic support at a more accessible price.',
     verdict: 'For a salon or spa in the US or Canada that wants clean operations above all, Mangomint is a strong choice. For a business that wants AI and growth tools as well as operations, Daisy is the better fit.',
     featureCommentary: {
       onlineBooking: 'Both offer excellent booking, and Mangomint earns its praise for clean, intuitive design.',
@@ -578,7 +577,7 @@ export const daisyVsPages: DaisyVsPageData[] = [
       inventoryManagement: 'Both cover the inventory basics.',
       reportingAndAnalytics: 'Both offer solid reporting, with Daisy adding AI recommendations.',
       marketplaceAndDiscovery: 'Mangomint\'s published pages list no consumer marketplace. Daisy offers an optional one in selected countries, with cashback alongside.',
-      aiCapabilities: 'Mangomint publishes workflow automation but lists no AI features as of October 2026. Daisy has an AI receptionist on WhatsApp, Instagram and the booking site.',
+      aiCapabilities: 'Mangomint offers Mira, an AI receptionist for phone calls and texts that needs its $70/mo Phone add-on. Daisy has an AI receptionist on WhatsApp, Instagram and the booking site.',
     },
     whoShouldChooseDaisy: ['You want an AI receptionist', 'You need Arabic and GCC support', 'You want cashback, and the option of a marketplace, to bring in new customers', 'You want a more accessible price'],
     whoShouldChooseCompetitor: ['You run a salon or spa in the US or Canada and want clean, automated operations', 'Clean design matters most', 'You do not need a marketplace or an AI receptionist'],
@@ -727,7 +726,7 @@ export const alternativePages: AlternativePageData[] = [
     // Vagaro facts re-verified 2026-10-09 in Vagaro's help centre.
     painPoints: [
       'One calendar on the base plan, then $10 a month for each additional calendar, up to seven paid licences',
-      'Vera Receptionist is a $10/month add-on that needs a Text Marketing plan, and over SMS it sends a booking link rather than booking',
+      'Vera Receptionist is a $10/month add-on in the US that needs a Text Marketing plan, and over SMS it sends a booking link rather than booking',
       'No Arabic interface; Vagaro lists the US, Canada, the UK and Australia as its markets',
       'Fill My Books marketplace promotion charges 20% on a new customer\'s first booking',
       'Text marketing is a paid plan, from $20 a month for 1,000 credits',
@@ -810,7 +809,7 @@ export const alternativePages: AlternativePageData[] = [
     painPoints: [
       'Entry price of $159/mo ($143/mo billed annually) for one location and up to 5 providers',
       'Multi-location support starts on Premier, at $325/mo per location ($293/mo billed annually)',
-      'Beau, the AI receptionist, is a $125/mo per-location add-on and works on phone calls',
+      'Beau, the AI receptionist, is a $149/mo per-location add-on and works on phone calls',
       'No consumer marketplace of its own, and no cashback rewards listed',
       'No Arabic interface or GCC presence listed on its published pages',
     ],
@@ -831,7 +830,7 @@ export const alternativePages: AlternativePageData[] = [
     metaDescription: 'Want more than clean operations? Daisy adds an AI receptionist, cashback, an optional marketplace and Arabic support to salon management.',
     keywords: ['mangomint alternative', 'mangomint replacement'],
     heroTitle: 'Looking for a Mangomint Alternative?',
-    heroSubtitle: 'Clean operations software, priced per location and per user, with no marketplace or AI features listed.',
+    heroSubtitle: 'Clean operations software, priced per location and per user. It lists no consumer marketplace, and its AI receptionist is a paid add-on.',
     painPoints: [
       'Priced at $120 per location plus $10 per user each month',
       'No consumer marketplace listed on Mangomint\'s published pages',
@@ -900,7 +899,7 @@ export const alternativePages: AlternativePageData[] = [
     heroSubtitle: 'Great at appointments. A beauty business may also want a marketplace, cashback and Arabic.',
     painPoints: [
       'General scheduling software rather than a platform built for beauty',
-      'The AI Booking Assistant is only on the Premium plan ($49/mo billed annually)',
+      'The AI Booking Assistant is only on the Premium plan ($55/mo billed annually)',
       'No inventory tracking or consumer marketplace listed on its published pages as of October 2026',
       'No Arabic interface or GCC pricing published',
     ],
@@ -1149,11 +1148,11 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     slug: 'best-mangomint-alternatives',
     competitorSlug: 'mangomint',
     metaTitle: '5 Best Mangomint Alternatives with AI (2026)',
-    metaDescription: 'Want AI features with Mangomint-quality operations? These alternatives add growth tools to clean salon management.',
+    metaDescription: 'Mangomint alternatives compared: salon platforms that add growth tools such as cashback and a marketplace to clean salon management.',
     keywords: ['best mangomint alternatives', 'mangomint alternatives'],
     heroTitle: '5 Best Mangomint Alternatives in 2026',
     heroSubtitle: 'Clean operations at $120 per location plus $10 per user, with no AI features or consumer marketplace listed.',
-    intro: 'Mangomint has a Capterra rating of 5.0 from 345 reviews (September 2026) and a clean, automated product. Pricing per location and per user, no consumer marketplace and no AI features on its published pages leave room for alternatives that help a business grow.',
+    intro: 'Mangomint has a Capterra rating of 5.0 from 345 reviews (September 2026) and a clean, automated product. Pricing per location and per user, no consumer marketplace and an AI receptionist sold as a paid add-on leave room for alternatives that help a business grow.',
     alternatives: ['boulevard', 'vagaro', 'glossgenius', 'booksy'],
     bestFor: {
       'boulevard': 'Best for premium salons wanting enterprise polish',
@@ -1731,7 +1730,9 @@ export function getCompetitorVsPage(slug: string): CompetitorVsPageData | undefi
 
 /** Get all slugs for the /compare/[slug] route */
 export function getAllCompareSlugs(): string[] {
-  const daisyVsSlugs = daisyVsPages.map((p) => p.slug);
+  // A Daisy-vs page renders an empty body without its competitor's record
+  // (daisy-vs-toast has none), so it is not published or put in the sitemap.
+  const daisyVsSlugs = daisyVsPages.filter((p) => competitors[p.competitorSlug]).map((p) => p.slug);
   const vsSlugs = competitorVsPages.map((p) => p.combinedSlug);
   return [...daisyVsSlugs, ...vsSlugs];
 }
@@ -1752,7 +1753,9 @@ export function getComparePageData(
   | { type: 'competitor-vs'; data: CompetitorVsPageData }
   | undefined {
   const daisyVs = getDaisyVsPageI18n(slug, locale);
-  if (daisyVs) return { type: 'daisy-vs', data: daisyVs };
+  // Same rule as getAllCompareSlugs: no competitor record, no page. The route
+  // is rendered per request, so dynamicParams alone does not 404 it.
+  if (daisyVs && competitors[daisyVs.competitorSlug]) return { type: 'daisy-vs', data: daisyVs };
   const competitorVs = getCompetitorVsPageI18n(slug, locale);
   if (competitorVs) return { type: 'competitor-vs', data: competitorVs };
   return undefined;

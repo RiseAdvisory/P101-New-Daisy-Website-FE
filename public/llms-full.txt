@@ -272,7 +272,7 @@ Booksy is a booking app and marketplace used by 330,000+ pros. Booksy Biz costs 
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-booksy
 
 ### Daisy vs Vagaro
-Vagaro starts at $23.99/mo for one calendar in the US (a limited-time offer; $30/mo regular), plus $10/mo for each extra calendar. Its Vera Receptionist, a $10/mo US add-on, books, reschedules and cancels over chat and SMS. Vagaro operates in the US, Canada, the UK and Australia, without Arabic. Daisy works in Arabic and English across the GCC.
+Vagaro starts at $23.99/mo for one calendar in the US (a limited-time offer; $30/mo regular), plus $10/mo for each extra calendar. Its Vera Receptionist, a $10/mo add-on in the US, answers messages from a business's Vagaro listing page and text marketing number, and sends clients a link to book, reschedule or cancel. Vagaro operates in the US, Canada, the UK and Australia, without Arabic. Daisy works in Arabic and English across the GCC.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-vagaro
 
 ### Daisy vs GlossGenius
@@ -284,7 +284,7 @@ Mindbody serves fitness, wellness and beauty businesses. US plans start at $79/m
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-mindbody
 
 ### Daisy vs Boulevard
-Boulevard is premium salon and spa software for the US. Essentials costs $159/mo for one location ($143/mo billed annually), Premier $325/mo and Prestige $455/mo per location, and Enterprise is priced on request. Beau, its voice AI receptionist, costs $125/mo per location. Boulevard had raised about $188M by July 2025 and lists no GCC country or Arabic support as of October 2026.
+Boulevard is premium salon and spa software for the US. Essentials costs $159/mo for one location ($143/mo billed annually), Premier $325/mo and Prestige $455/mo per location, and Enterprise is priced on request. Beau, its voice AI receptionist, costs $149/mo per location. Boulevard had raised about $188M by July 2025 and lists no GCC country or Arabic support as of October 2026.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-boulevard
 
 ### Daisy vs Glamera
@@ -292,7 +292,7 @@ Glamera is salon software based in Riyadh, with plans from SAR 125/mo and no fre
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-glamera
 
 ### Daisy vs DINGG
-DINGG is based in Pune, India, with country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman. Its AI handles WhatsApp conversations and bookings. Its US prices start at $79/month for one location ($149/month for multiple locations), and UAE pricing is on request. DINGG publishes no Arabic interface; Daisy works in Arabic and English.
+DINGG is based in Pune, India, with country sites for the UAE, Saudi Arabia, Qatar, Kuwait, Oman and Bahrain. Its AI handles WhatsApp conversations and bookings. Its US prices start at $79/month for one location ($149/month for multiple locations), and UAE pricing is on request. DINGG's site says it supports English and Arabic, and Daisy also works in both.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-dingg
 
 ### Daisy vs RepeatMD
@@ -304,7 +304,7 @@ Planity is a booking marketplace and salon software in France, Belgium and Germa
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-planity
 
 ### Daisy vs Mangomint
-Mangomint is salon and spa software for the US and Canada, at $120 per location plus $10 per user each month, with Phone, Marketing and Payroll add-ons. It lists no AI features as of October 2026. Daisy adds an AI receptionist, cashback, and Arabic support for the GCC.
+Mangomint is salon and spa software for the US and Canada, at $120 per location plus $10 per user each month, with Phone, Marketing and Payroll add-ons. Its AI receptionist, Mira, answers calls and texts and is a paid add-on that needs the Phone add-on. Daisy adds an AI receptionist on WhatsApp and Instagram, cashback, and Arabic support for the GCC.
 URL: https://www.jointhedaisy.com/en/compare/daisy-vs-mangomint
 
 ### Daisy vs Square Appointments

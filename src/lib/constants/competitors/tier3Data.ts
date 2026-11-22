@@ -161,7 +161,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
       inventoryManagement: 2, // product catalog, stock levels, purchase orders
       reportingAndAnalytics: 2,
       marketplaceAndDiscovery: 0, // no consumer marketplace on its published pages
-      aiCapabilities: 0, // no AI features on its published pages as of 2026-10-09
+      aiCapabilities: 2, // Mira AI receptionist for calls and texts, a paid add-on (read 2026-11-17)
       brandingAndWhiteLabel: 1,
     },
 
@@ -195,14 +195,18 @@ export const tier3Competitors: Record<string, CompetitorData> = {
       localCompliance: false, localPaymentMethods: false, localSupport: false,
     },
 
+    // mangomint.com/mira and /pricing, read 2026-11-17: "Introducing Mira: The
+    // most powerful AI receptionist for beauty & wellness Handles phone calls
+    // and text messages Books, reschedules, and cancels appointments";
+    // "Phone $70/mo per line Required to use Mira."
     aiCapabilities: {
-      hasAiReceptionist: false, hasAiChatbot: false, hasSmartScheduling: false,
+      hasAiReceptionist: true, hasAiChatbot: false, hasSmartScheduling: false,
       hasAiMarketing: false, hasAiAnalytics: false, hasAiPricing: false,
-      aiDescription: 'Mangomint publishes workflow automation such as Automated Flows, Express Booking and an intelligent waitlist. Its published pages do not list AI features as of October 2026.',
+      aiDescription: 'Mangomint offers Mira, an AI receptionist that answers phone calls and text messages and books, reschedules and cancels appointments. Mira is a paid add-on and needs the Phone add-on at $70/mo per line. Mangomint also publishes workflow automation such as Automated Flows, Express Booking and an intelligent waitlist.',
     },
 
     daisyAdvantages: [
-      'An AI receptionist and chatbot, where Mangomint\'s published pages list no AI features',
+      'An AI receptionist on WhatsApp, Instagram and the booking site; Mangomint\'s Mira works on phone calls and texts',
       'An optional consumer marketplace, where Mangomint lists none',
       'Plans that include 5, 10 or 15 team members, where Mangomint adds $10 per user',
       'Arabic/English support, where Mangomint\'s published pages show no Arabic',
@@ -210,13 +214,14 @@ export const tier3Competitors: Record<string, CompetitorData> = {
       'GCC compliance',
     ],
     daisySwitchingReasons: [
-      'Want AI features that Mangomint does not list', 'Need Arabic/GCC support',
-      'Want the option of a marketplace for customer discovery', 'Need AI receptionist',
+      'Want an AI receptionist on WhatsApp and Instagram', 'Need Arabic/GCC support',
+      'Want the option of a marketplace for customer discovery',
     ],
     competitorStrengths: [
       'Capterra rating of 5.0 from 345 reviews (September 2026)',
       'Clean, modern design',
       'Automated Flows, Express Booking and a virtual waiting room',
+      'Mira, a paid AI receptionist add-on that answers calls and texts and books appointments',
       'Staff management with commissions, permissions and a payroll add-on',
       'No contracts, free onboarding and free data transfer',
     ],
@@ -224,18 +229,18 @@ export const tier3Competitors: Record<string, CompetitorData> = {
       'Cost rises with each location and user ($120 per location + $10 per user a month)',
       'Serves the US and Canada; no Arabic interface or GCC presence listed (October 2026)',
       'No consumer marketplace listed on Mangomint\'s published pages',
-      'No AI features listed on Mangomint\'s published pages (October 2026)',
+      'Its AI receptionist, Mira, is a paid add-on and needs the Phone add-on ($70/mo per line)',
       'Marketing messages use credits from the marketing add-on, from $30 a month',
     ],
 
     faq: [
-      { question: 'How does Mangomint compare to Daisy?', answer: 'Mangomint is salon and spa software for the US and Canada, priced at $120 per location plus $10 per user each month, with a clean design and strong automation. Daisy adds an AI receptionist, cashback, an optional marketplace and Arabic support, and costs less.' },
+      { question: 'How does Mangomint compare to Daisy?', answer: 'Mangomint is salon and spa software for the US and Canada, priced at $120 per location plus $10 per user each month, with a clean design and strong automation. Daisy adds an AI receptionist on WhatsApp and Instagram, cashback, an optional marketplace and Arabic support, and costs less.' },
       { question: 'How much does Mangomint cost?', answer: 'Mangomint charges $120 per location plus $10 per user each month, with no contracts. Optional add-ons are Phone at $70 a month per line, Marketing from $30 a month and Payroll at $50 a month plus $8 per worker. Card processing is 2.45% + 15¢ in person and 2.90% + 30¢ for virtual payments (Mangomint pricing page, October 2026). Daisy offers more, including the AI receptionist and acquisition tools, for less.' },
       { question: 'Can I switch from Mangomint to Daisy without losing my data?', answer: 'Yes. Daisy moves your client records, appointment history, staff schedules and service menus across from Mangomint, and handles the transition so the business never goes offline.' },
       { question: 'Does Mangomint support Arabic or work in the Middle East?', answer: 'Mangomint\'s published pages show customers in the US and Canada, with Canadian card-reader bundles priced in Canadian dollars, and no Arabic interface or Middle East presence as of October 2026. Daisy runs natively in Arabic and English with support built for the Gulf, and is live in all six GCC countries.' },
-      { question: 'Does Mangomint have an AI receptionist or AI features?', answer: 'Mangomint\'s published pages list workflow automation, such as Automated Flows and Express Booking, but no AI receptionist, chatbot or AI marketing as of October 2026. Daisy\'s 24/7 AI receptionist takes bookings, answers questions and processes payments on its own.' },
-      { question: 'Is Mangomint a good fit for my salon?', answer: 'Mangomint suits salons and spas in the US and Canada that want clean operations, automation and no contracts, at $120 per location plus $10 per user. Its published pages list no consumer marketplace or AI features. If you want an AI receptionist and cashback, Daisy includes them, and its marketplace is an option in selected countries.' },
-      { question: 'How does Mangomint\'s mobile app compare to Daisy?', answer: 'Mangomint\'s app is well designed and built around scheduling and operations. Daisy\'s adds the AI receptionist, optional marketplace listing, live acquisition analytics and Arabic and English throughout, which takes it past operations into growth.' },
+      { question: 'Does Mangomint have an AI receptionist or AI features?', answer: 'Yes. Mangomint offers Mira, an AI receptionist that answers phone calls and text messages and books, reschedules and cancels appointments. Mira is a paid add-on and needs Mangomint\'s Phone add-on at $70 a month per line. Daisy\'s 24/7 AI receptionist works on WhatsApp, Instagram and the booking site, and takes bookings, answers questions and processes payments on its own.' },
+      { question: 'Is Mangomint a good fit for my salon?', answer: 'Mangomint suits salons and spas in the US and Canada that want clean operations, automation and no contracts, at $120 per location plus $10 per user. Its published pages list no consumer marketplace, and its AI receptionist, Mira, is a paid add-on for calls and texts. If you want an AI receptionist on WhatsApp and Instagram and cashback, Daisy includes them, and its marketplace is an option in selected countries.' },
+      { question: 'How does Mangomint\'s mobile app compare to Daisy?', answer: 'Mangomint\'s app is well designed and built around scheduling and operations. Daisy\'s adds an AI receptionist on WhatsApp and Instagram, optional marketplace listing, live acquisition analytics and Arabic and English throughout, which takes it past operations into growth.' },
       { question: 'What integrations does Mangomint offer compared to Daisy?', answer: 'Mangomint lists integrations including Shopify, QuickBooks payroll sync and the telehealth tools Doxy.me and Docovia, and sells Phone, Marketing and Payroll as add-ons. Daisy has payments, marketing, CRM and acquisition built into one platform, along with GCC payment methods such as mada and Knet.' },
       { question: 'Does Mangomint help me get new customers or just manage existing ones?', answer: 'Mangomint offers campaigns, automated flows and offers for the clients you already have, using the marketing add-on from $30 a month. Its published pages list no consumer marketplace or cashback. Daisy includes a cashback program and AI-powered marketing to bring new customers in, plus an optional consumer marketplace in selected countries.' },
     ],
@@ -596,7 +601,8 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     // acuityscheduling.com/pricing, read 2026-10-09. USD, before tax. "Pay
     // annually / Save 20%" vs "Pay monthly": Starter $16 / $20, Standard
     // $27 / $34, Premium $49 / $61 per month. Plans renamed from
-    // Emerging / Growing / Powerhouse.
+    // Emerging / Growing / Powerhouse. Re-read 2026-11-17: Premium is now
+    // "$55 / month $69 / month"; Starter and Standard are unchanged.
     pricing: {
       hasFreePlan: false,
       freeTrialDays: 7,
@@ -605,7 +611,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
       tiers: [
         { name: 'Starter', price: '$20/mo, or $16/mo billed annually', priceNumeric: 16, features: ['1 calendar', 'Payments via Stripe, Square, PayPal or Venmo', 'Email reminders', 'Custom client forms'] },
         { name: 'Standard', price: '$34/mo, or $27/mo billed annually', priceNumeric: 27, features: ['Up to 6 calendars', 'Text reminders', 'Waitlist', 'Memberships, packages and gift certificates'] },
-        { name: 'Premium', price: '$61/mo, or $49/mo billed annually', priceNumeric: 49, features: ['Up to 36 calendars', 'AI Booking Assistant', 'HIPAA BAA', 'Custom API and CSS'] },
+        { name: 'Premium', price: '$69/mo, or $55/mo billed annually', priceNumeric: 55, features: ['Up to 36 calendars', 'AI Booking Assistant', 'HIPAA BAA', 'Custom API and CSS'] },
       ],
       // /features/point-of-sale: "Acuity itself does not charge additional
       // fees for using payment features, but processing fees will apply based
@@ -616,7 +622,7 @@ export const tier3Competitors: Record<string, CompetitorData> = {
       ],
       pricingModel: 'flat',
       pricingPageUrl: 'https://acuityscheduling.com/pricing',
-      lastVerified: '2026-10-09',
+      lastVerified: '2026-11-17',
     },
 
     // Capterra product page, Wayback snapshot 2026-09-21: 4.8, 5,766 reviews.
@@ -643,12 +649,12 @@ export const tier3Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: ['General scheduling tool rather than beauty-specific software', 'AI Booking Assistant only on the Premium plan', 'No inventory tracking or consumer marketplace listed on its published pages as of October 2026', 'No Arabic interface published'],
 
     faq: [
-      { question: 'How does Acuity compare to Daisy for salons?', answer: 'Acuity is general scheduling software, priced from $16/mo billed annually ($20 monthly) up to $49/mo billed annually ($61 monthly). It covers booking, payments, client profiles and staff calendars, and its Premium plan adds an AI Booking Assistant. Daisy is built for beauty businesses, with an AI receptionist on WhatsApp, Instagram and its booking site, cashback, an optional consumer marketplace, and Arabic and English as equals.' },
+      { question: 'How does Acuity compare to Daisy for salons?', answer: 'Acuity is general scheduling software, priced from $16/mo billed annually ($20 monthly) up to $55/mo billed annually ($69 monthly). It covers booking, payments, client profiles and staff calendars, and its Premium plan adds an AI Booking Assistant. Daisy is built for beauty businesses, with an AI receptionist on WhatsApp, Instagram and its booking site, cashback, an optional consumer marketplace, and Arabic and English as equals.' },
       { question: 'Does Acuity Scheduling have salon features?', answer: 'Acuity has a beauty and salon solution covering online booking, deposits, in-person payments by card reader or Tap to Pay, client profiles with notes and history, intake forms, packages, gift certificates and staff permissions. Inventory tracking isn\'t listed on Acuity\'s published pages as of October 2026. Daisy is built around how beauty businesses work, with inventory, marketing and cashback in the same platform.' },
-      { question: 'What does Acuity cost beyond the subscription?', answer: 'Acuity publishes three plans in USD, before tax: Starter at $20/mo ($16/mo billed annually), Standard at $34/mo ($27/mo billed annually) and Premium at $61/mo ($49/mo billed annually). Acuity says it charges no setup, cancellation or support fees and no fee of its own on payments. Card processing fees come from the processor you connect: Stripe, Square or PayPal.' },
+      { question: 'What does Acuity cost beyond the subscription?', answer: 'Acuity publishes three plans in USD, before tax: Starter at $20/mo ($16/mo billed annually), Standard at $34/mo ($27/mo billed annually) and Premium at $69/mo ($55/mo billed annually). Acuity says it charges no setup, cancellation or support fees and no fee of its own on payments. Card processing fees come from the processor you connect: Stripe, Square or PayPal.' },
       { question: 'Can I migrate my booking data from Acuity to Daisy?', answer: 'Yes. Daisy moves client records, appointment history and booking preferences across from Acuity, with the onboarding team handling the transition.' },
       { question: 'Does Acuity Scheduling support Arabic or work in the Gulf region?', answer: 'Acuity doesn\'t publish an Arabic interface, GCC pricing or Gulf payment methods as of October 2026. It is owned by Squarespace, a US company. Daisy runs natively in Arabic and English and is live in all six GCC countries.' },
-      { question: 'Does Acuity have any AI features for my salon?', answer: 'Yes. Acuity\'s Premium plan ($49/mo billed annually, $61 monthly) includes the AI Booking Assistant, a chat bot that lets clients describe what they want in plain language and book, including after hours. Daisy\'s AI receptionist works 24/7 on WhatsApp, Instagram and the booking site, in Arabic and English, and takes bookings, answers client questions and processes payments.' },
+      { question: 'Does Acuity have any AI features for my salon?', answer: 'Yes. Acuity\'s Premium plan ($55/mo billed annually, $69 monthly) includes the AI Booking Assistant, a chat bot that lets clients describe what they want in plain language and book, including after hours. Daisy\'s AI receptionist works 24/7 on WhatsApp, Instagram and the booking site, in Arabic and English, and takes bookings, answers client questions and processes payments.' },
       { question: 'Why do so many businesses use Acuity?', answer: 'Acuity is rated 4.8/5 from more than 5,700 reviews on Capterra, and it serves businesses in many industries, from consultants to salons. Daisy is built for beauty businesses specifically, and adds an AI receptionist on WhatsApp and Instagram, cashback with an optional marketplace, and Arabic.' },
       { question: 'How does Acuity\'s Squarespace integration compare to what Daisy offers?', answer: 'Acuity integrates with Squarespace websites, and you can also embed it on any other site or use it without a website. Daisy adds an AI receptionist on WhatsApp and Instagram, POS, CRM and marketing tools in one platform, with an optional marketplace listing.' },
       { question: 'Can Acuity help me attract new clients or just manage bookings?', answer: 'Acuity offers coupons, gift certificates, packages, a waitlist and a booking page you can share by link or QR code. A consumer marketplace isn\'t listed on Acuity\'s published pages as of October 2026. Daisy includes cashback rewards and AI-powered marketing to bring new clients in, plus an optional consumer marketplace in selected countries.' },

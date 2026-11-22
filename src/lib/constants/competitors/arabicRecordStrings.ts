@@ -104,8 +104,8 @@ const EXACT: Record<string, string> = {
   'Monthly FANF and Mastercard location fees on card processing':
     'رسوم FANF الشهرية ورسوم الموقع من Mastercard على معالجة البطاقات',
   'Text marketing from $20/month for 1,000 credits': 'التسويق بالرسائل النصية من $20 شهرياً مقابل 1,000 رصيد',
-  'Vera Receptionist $10/month, which needs a Text Marketing plan':
-    'موظف الاستقبال Vera Receptionist بسعر $10 شهرياً، ويتطلب باقة للتسويق بالرسائل النصية',
+  'Vera Receptionist $10/month in the US, which needs a Text Marketing plan':
+    'موظف الاستقبال Vera Receptionist بسعر $10 شهرياً في الولايات المتحدة، ويتطلب باقة للتسويق بالرسائل النصية',
   'Forms $10/month and MySite website $20/month':
     'النماذج بسعر $10 شهرياً، وموقع MySite الإلكتروني بسعر $20 شهرياً',
   'Branded app $100/month plus a $100 development fee (limited-time price)':
@@ -129,8 +129,8 @@ const EXACT: Record<string, string> = {
     '$455 شهرياً لكل موقع ($410 شهرياً عند الدفع السنوي)',
   'From 2.65% per card transaction (as low as 1% with Boulevard Offset)':
     'من 2.65% لكل معاملة بالبطاقة (وقد تنخفض إلى 1% مع برنامج Boulevard Offset)',
-  'Beau AI receptionist: $125/mo per location for 200 minutes, then $0.60 per minute':
-    'موظف الاستقبال الذكي Beau: $125 شهرياً لكل موقع مقابل 200 دقيقة، ثم $0.60 لكل دقيقة',
+  'Beau AI receptionist: $149/mo per location for 100 minutes, then $0.50 per minute':
+    'موظف الاستقبال الذكي Beau: $149 شهرياً لكل موقع مقابل 100 دقيقة، ثم $0.50 لكل دقيقة',
   'Automated campaigns: $2 per completed appointment': 'الحملات المؤتمتة: $2 لكل موعد مكتمل',
   'Forms add-on: from $65/mo per location (included in Prestige)':
     'إضافة النماذج: من $65 شهرياً لكل موقع (مشمولة في باقة Prestige)',
@@ -208,7 +208,7 @@ const EXACT: Record<string, string> = {
   '$16/mo billed annually': '$16 شهرياً عند الدفع السنوي',
   '$20/mo, or $16/mo billed annually': '$20 شهرياً، أو $16 شهرياً عند الدفع السنوي',
   '$34/mo, or $27/mo billed annually': '$34 شهرياً، أو $27 شهرياً عند الدفع السنوي',
-  '$61/mo, or $49/mo billed annually': '$61 شهرياً، أو $49 شهرياً عند الدفع السنوي',
+  '$69/mo, or $55/mo billed annually': '$69 شهرياً، أو $55 شهرياً عند الدفع السنوي',
   'Card processing fees from Stripe, Square or PayPal (Acuity adds no payment fee of its own)':
     'رسوم معالجة البطاقات لدى Stripe أو Square أو PayPal (لا يضيف Acuity رسوماً خاصة به على المدفوعات)',
   'Prices exclude applicable taxes': 'الأسعار لا تشمل الضرائب المطبقة',
