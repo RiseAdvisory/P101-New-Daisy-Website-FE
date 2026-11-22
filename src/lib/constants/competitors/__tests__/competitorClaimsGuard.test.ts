@@ -156,6 +156,23 @@ describe('17 November 2026 audit corrections stay fixed', () => {
     ).toEqual([]);
   });
 
+  it('does not say Mangomint has no AI features, in any wording', () => {
+    // Glamera and others can still be described as listing no AI features;
+    // only matches with Mangomint named nearby count here.
+    const found: string[] = [];
+    for (const file of FILES) {
+      const text = fs.readFileSync(file, 'utf8');
+      for (const m of text.matchAll(/no AI features|دون ميزات ذكاء اصطناعي|لا تذكر[^'\n]{0,40}ميزات ذكاء اصطناعي/g)) {
+        const start = m.index ?? 0;
+        const window = text.slice(Math.max(0, start - 250), start + 250);
+        if (/Mangomint/.test(window) && !/Glamera/.test(window)) {
+          found.push(`${path.relative(ROOT, file)}:${text.slice(0, start).split('\n').length}`);
+        }
+      }
+    }
+    expect(found).toEqual([]);
+  });
+
   it('uses the current Boulevard Beau, Acuity Premium and SQUIRE prices', () => {
     expect(
       offenders(

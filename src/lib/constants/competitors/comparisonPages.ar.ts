@@ -1147,11 +1147,11 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     competitorSlug: 'mangomint',
     metaTitle: 'أفضل بدائل Mangomint مع أدوات نمو (2026)',
     metaDescription:
-      'بدائل Mangomint لمن يريد تشغيل نظيف مع AI واكتساب/احتفاظ.',
+      'مقارنة بدائل Mangomint: منصات صالونات تضيف أدوات نمو مثل الكاشباك والسوق إلى التشغيل النظيف.',
     keywords: ['بدائل mangomint'],
     heroTitle: 'أفضل بدائل Mangomint في 2026',
     heroSubtitle:
-      'تشغيل نظيف بسعر $120 لكل فرع و$10 لكل مستخدم، دون ميزات ذكاء اصطناعي أو سوق للمستهلكين مذكورة.',
+      'تشغيل نظيف بسعر $120 لكل فرع و$10 لكل مستخدم، دون سوق مستهلكين مذكور، وموظف الاستقبال الذكي فيه إضافة مدفوعة.',
     intro:
       'لدى Mangomint تقييم 5.0 على Capterra من 345 مراجعة (سبتمبر 2026) ومنتج نظيف مؤتمت، لكن كثيراً من الأعمال تريد سوقاً أو أدوات احتفاظ أو دعماً عربياً. هذه بدائل حسب الحاجة.',
     alternatives: ['boulevard', 'vagaro', 'glossgenius', 'booksy'],

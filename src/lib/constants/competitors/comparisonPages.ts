@@ -1151,7 +1151,7 @@ export const bestAlternativesPages: BestAlternativesPageData[] = [
     metaDescription: 'Mangomint alternatives compared: salon platforms that add growth tools such as cashback and a marketplace to clean salon management.',
     keywords: ['best mangomint alternatives', 'mangomint alternatives'],
     heroTitle: '5 Best Mangomint Alternatives in 2026',
-    heroSubtitle: 'Clean operations at $120 per location plus $10 per user, with no AI features or consumer marketplace listed.',
+    heroSubtitle: 'Clean operations at $120 per location plus $10 per user. No consumer marketplace is listed, and its AI receptionist is a paid add-on.',
     intro: 'Mangomint has a Capterra rating of 5.0 from 345 reviews (September 2026) and a clean, automated product. Pricing per location and per user, no consumer marketplace and an AI receptionist sold as a paid add-on leave room for alternatives that help a business grow.',
     alternatives: ['boulevard', 'vagaro', 'glossgenius', 'booksy'],
     bestFor: {

@@ -185,3 +185,21 @@ describe('sitemap() — dates follow the content', () => {
     }
   });
 });
+
+describe('sitemap() — 22 November 2026 competitor corrections', () => {
+  it('leaves out compare pages that have no competitor record', async () => {
+    const entries = await sitemap();
+    expect(entries.filter((e) => e.url.includes('/compare/daisy-vs-toast'))).toEqual([]);
+  });
+
+  it('dates the hubs and the corrected solutions pages to the correction', async () => {
+    const entries = await sitemap();
+    for (const route of ['/compare', '/alternative', '/solutions/barbershop-software', '/solutions/med-spa-software']) {
+      const matches = entries.filter((e) => e.url.endsWith(`/en${route}`) || e.url.endsWith(`/ar${route}`));
+      expect({ route, count: matches.length }).toEqual({ route, count: 2 });
+      for (const entry of matches) {
+        expect({ route, lastModified: entry.lastModified }).toEqual({ route, lastModified: '2026-11-22T00:00:00.000Z' });
+      }
+    }
+  });
+});
