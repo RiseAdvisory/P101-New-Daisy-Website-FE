@@ -62,9 +62,9 @@ const ROUTE_LAST_UPDATED: Record<string, string> = {
   '/solutions/spa-booking-system': '2026-10-10T00:00:00.000Z',
   '/solutions/beauty-salon-software': '2026-10-19T00:00:00.000Z',
   '/solutions/salon-appointment-scheduling': '2026-10-18T00:00:00.000Z',
-  '/solutions/barbershop-software': '2026-10-10T00:00:00.000Z',
+  '/solutions/barbershop-software': '2026-11-22T00:00:00.000Z',
   '/solutions/nail-salon-software': '2026-10-18T00:00:00.000Z',
-  '/solutions/med-spa-software': '2026-10-10T00:00:00.000Z',
+  '/solutions/med-spa-software': '2026-11-22T00:00:00.000Z',
   '/solutions/salon-pos-system': '2026-10-19T00:00:00.000Z',
   '/solutions/salon-crm-software': '2026-10-10T00:00:00.000Z',
   '/solutions/salon-marketing-software': '2026-10-10T00:00:00.000Z',
@@ -91,6 +91,9 @@ const ROUTE_LAST_UPDATED: Record<string, string> = {
   '/insights': '2026-10-19T00:00:00.000Z',
   // Crawlers are no longer sent on to the Play Store (see src/lib/utils/crawler.ts)
   '/get-the-app': '2026-10-08T00:00:00.000Z',
+  // Hub pages repeat competitor summaries corrected on 22 November 2026
+  '/compare': '2026-11-22T00:00:00.000Z',
+  '/alternative': '2026-11-22T00:00:00.000Z',
 };
 
 function lastModFor(routeKey: string, fallback: string): string {

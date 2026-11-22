@@ -121,9 +121,9 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       // Bilingual site; App Store lists Arabic and English for its apps.
       hasArabicUI: true,
       arabicQuality: 'native',
-      // business.glamera.com/en/about-us, read 2026-10-09: "Serving Clients
-      // Across the Arab World" lists Egypt, Saudi Arabia, Qatar, Bahrain, UAE,
-      // Kuwait, Lebanon and Oman.
+      // business.glamera.com/en/about-us, read 2026-10-09 and again 2026-11-17:
+      // "Serving Clients Across the Arab World" lists Egypt, Saudi Arabia, Qatar,
+      // Bahrain, UAE, Kuwait, Lebanon and Oman.
       gccCountries: ['KSA', 'UAE', 'Kuwait', 'Qatar', 'Bahrain', 'Oman'],
       // "Fully compliant with ZATCA e-invoicing regulations (Phase 1 & 2)".
       localCompliance: true,
@@ -256,9 +256,10 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     name: 'DINGG',
     website: 'https://www.dingg.app',
     tier: 2,
-    // dingg.app/ae and dingg.app/ae/features/dingg-ai-salon-software, read 2026-10-09.
+    // dingg.app/ae and dingg.app/ae/features/dingg-ai-salon-software, read 2026-10-09;
+    // dingg.app/bh, read 2026-11-17.
     description:
-      'Salon and spa software from India, run by Vrienden Tech, with country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman. Its AI Genius suite includes a WhatsApp AI assistant that answers questions and takes bookings, plus smart scheduling, client segmentation and predictive insights.',
+      'Salon and spa software from India, run by Vrienden Tech, with country sites for the UAE, Saudi Arabia, Qatar, Kuwait, Oman and Bahrain. Its AI Genius suite includes a WhatsApp AI assistant that answers questions and takes bookings, plus smart scheduling, client segmentation and predictive insights.',
     // Entrepreneur India and TheSaaSNews, Sep 2022: founded 2018.
     founded: '2018',
     // TheSaaSNews (18 Sep 2022) and Outlook Startup describe DINGG as Pune-based.
@@ -316,14 +317,16 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     ],
 
     gccPresence: {
-      // Not verified. DINGG's country pages say WhatsApp reminders and campaigns
-      // go out "in both English and Arabic", but no page shows an Arabic
-      // interface and its App Store listings give English only (2026-10-09).
-      hasArabicUI: false,
-      arabicQuality: 'none',
-      // Live country sites re-verified 2026-10-09: dingg.app/ae, /sa, /qa, /kw,
-      // /om return 200 with country-specific titles. /bh returns 404.
-      gccCountries: ['UAE', 'KSA', 'Qatar', 'Kuwait', 'Oman'],
+      // dingg.app/kw, read 2026-11-17: "Does DINGG work in Arabic? Yes. DINGG
+      // supports English and Arabic, so your team can work in the language they
+      // prefer and clients can be messaged in theirs." Its country pages switch
+      // between English and Arabic. arabicQuality is not rendered anywhere.
+      hasArabicUI: true,
+      arabicQuality: 'native',
+      // dingg.app/ae, /sa, /qa, /kw and /om re-verified 2026-10-09. dingg.app/bh
+      // went live in November 2026 ("Salon Software in Bahrain", VAT invoices
+      // in BHD, read 2026-11-17); it returned 404 on 2026-10-09.
+      gccCountries: ['UAE', 'KSA', 'Qatar', 'Kuwait', 'Oman', 'Bahrain'],
       // VAT-compliant invoices in AED and SAR, "ZATCA-ready reports".
       localCompliance: true,
       // "DINGG supports cards, Apple Pay and popular UAE payment options".
@@ -347,7 +350,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     },
 
     targetMarket:
-      'Salons, spas, barbershops and beauty clinics in India, the US and five GCC countries: the UAE, Saudi Arabia, Qatar, Kuwait and Oman.',
+      'Salons, spas, barbershops and beauty clinics in India, the US and all six GCC countries.',
 
     messaging: {
       tagline: 'Streamline, Automate and Grow with DINGG',
@@ -365,16 +368,13 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     },
 
     daisyAdvantages: [
-      'Live in all six GCC countries, Bahrain included; DINGG has country sites for five',
       'AI receptionist that also answers on Instagram; DINGG lists WhatsApp, SMS and your website for its AI assistant',
-      'Arabic and English interface; DINGG\'s pages mention Arabic for WhatsApp messages',
       'Cashback rewards for customers; DINGG\'s loyalty runs on points, vouchers and prepaid credits',
       'Published prices for the GCC; DINGG gives its UAE pricing in a demo',
       'Optional consumer marketplace, in selected countries, for customer acquisition',
     ],
 
     daisySwitchingReasons: [
-      'You need coverage in Bahrain as well as the rest of the GCC',
       'You want an AI receptionist that also answers on Instagram',
       'You want cashback rewards to bring clients back',
       'You want to see prices before booking a demo',
@@ -383,17 +383,15 @@ export const tier2Competitors: Record<string, CompetitorData> = {
 
     competitorStrengths: [
       'AI Genius: a WhatsApp AI assistant that takes bookings, plus smart scheduling, segmentation and predictive insights',
-      'Country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman, with billing in each local currency',
+      'Country sites in all six GCC states, with billing in each local currency',
       'VAT-compliant invoicing, with ZATCA-ready reports in Saudi Arabia',
-      'WhatsApp reminders and campaigns in English and Arabic',
+      'Works in English and Arabic, for staff and for client messages',
       'Loyalty points, memberships, packages and gift cards',
       'Multi-location and franchise management',
     ],
 
     competitorWeaknesses: [
       'Does not publish prices; you get them in a demo',
-      'No Bahrain site among its GCC country sites',
-      'No Arabic interface shown on its pages or app listings',
       'No consumer marketplace listed',
       'Its AI assistant is listed for WhatsApp, SMS and the business website, not Instagram',
     ],
@@ -402,12 +400,12 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does DINGG compare to Daisy?',
         answer:
-          'Both publish AI that books appointments over WhatsApp. DINGG\'s AI Genius adds smart scheduling, segmentation and predictive insights, and DINGG runs country sites for five GCC states. Daisy\'s AI receptionist also covers Instagram, and Daisy publishes its prices, adds cashback rewards and an optional consumer marketplace, and is live in all six GCC countries, Bahrain included.',
+          'Both publish AI that books appointments over WhatsApp. DINGG\'s AI Genius adds smart scheduling, segmentation and predictive insights, and DINGG runs country sites in all six GCC states. Daisy\'s AI receptionist also covers Instagram, and Daisy publishes its prices and adds cashback rewards and an optional consumer marketplace.',
       },
       {
         question: 'Does DINGG work in the GCC?',
         answer:
-          'Yes. DINGG runs country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman, with billing in each local currency and VAT-compliant invoicing. We found no Bahrain site as of October 2026. Daisy is live in all six GCC countries.',
+          'Yes. DINGG runs country sites for the UAE, Saudi Arabia, Qatar, Kuwait, Oman and Bahrain, with billing in each local currency and VAT-compliant invoicing. Daisy is live in all six GCC countries.',
       },
       {
         question: 'How much does DINGG cost?',
@@ -427,7 +425,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'Is DINGG\'s Arabic support as good as Daisy\'s for GCC businesses?',
         answer:
-          'DINGG sends WhatsApp reminders and campaigns in English and Arabic, and runs country sites for the UAE, Saudi Arabia, Qatar, Kuwait and Oman. Its pages and app listings do not show an Arabic interface as of October 2026. Daisy\'s staff interface, booking pages and client messages are in Arabic and English.',
+          'DINGG\'s site says it supports English and Arabic, so staff can work in either language and clients get messages in theirs. It runs country sites in all six GCC states. Daisy\'s staff interface, booking pages and client messages are in Arabic and English.',
       },
       {
         question: 'Does DINGG have a mobile app?',
@@ -446,9 +444,9 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       },
     ],
 
-    lastResearched: '2026-10-09',
+    lastResearched: '2026-11-17',
     notes:
-      'The closest Tier 2 rival on AI: its WhatsApp assistant takes bookings. Country sites in five GCC states, without Bahrain. US prices from $79/mo on its blog; UAE prices on request. Recheck dingg.app for an Arabic interface and a Bahrain site.',
+      'The closest Tier 2 rival on AI: its WhatsApp assistant takes bookings. Country sites in all six GCC states (Bahrain added November 2026) and English and Arabic support, per dingg.app/kw and /bh, read 2026-11-17. US prices from $79/mo on its blog; UAE prices on request.',
   },
 
   // ---------------------------------------------------------------------------
@@ -1155,9 +1153,10 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       // Pricing comparison table: "Starting at 2.65% or as low as 1% with Boulevard Offset."
       transactionFees: 'From 2.65% per card transaction (as low as 1% with Boulevard Offset)',
       hiddenCosts: [
-        // joinblvd.com/features/ai-receptionist: "$125/mo per location for 200 minutes,
-        // and just $0.60 per minute over that."
-        'Beau AI receptionist: $125/mo per location for 200 minutes, then $0.60 per minute',
+        // joinblvd.com/features/ai-receptionist, read 2026-11-17: "$149/mo per
+        // location for 100 minutes, and just $0.50 per minute over that." Until
+        // November 2026 it was $125 for 200 minutes, then $0.60 a minute.
+        'Beau AI receptionist: $149/mo per location for 100 minutes, then $0.50 per minute',
         'Automated campaigns: $2 per completed appointment',
         'Forms add-on: from $65/mo per location (included in Prestige)',
         'Email blasts beyond the plan allowance: $0.01 per email',
@@ -1198,7 +1197,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       hasAiAnalytics: false,
       hasAiPricing: false,
       aiDescription:
-        'Precision Scheduling is included on every plan and steers bookings to the times that suit the business. Beau is a voice AI receptionist sold as an add-on at $125/mo per location for 200 minutes. It answers calls 24/7, answers questions, sends booking links and takes messages. Boulevard Marketing uses AI to suggest email subject lines, copy and images, and Billie is a chat assistant inside the platform for staff. Duo is Boulevard\'s card reader and point of sale, not an AI product.',
+        'Precision Scheduling is included on every plan and steers bookings to the times that suit the business. Beau is a voice AI receptionist sold as an add-on at $149/mo per location for 100 minutes. It answers calls 24/7, answers questions, sends booking links and takes messages. Boulevard Marketing uses AI to suggest email subject lines, copy and images, and Billie is a chat assistant inside the platform for staff. Duo is Boulevard\'s card reader and point of sale, not an AI product.',
     },
 
     targetMarket:
@@ -1221,7 +1220,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     },
 
     daisyAdvantages: [
-      'AI receptionist on WhatsApp, Instagram and the booking site, with 50 conversations included in the plan, where Beau answers phone calls as a $125/mo per-location add-on',
+      'AI receptionist on WhatsApp, Instagram and the booking site, with 50 conversations included in the plan, where Beau answers phone calls as a $149/mo per-location add-on',
       'Cashback and an optional consumer marketplace, where Boulevard has no consumer marketplace of its own',
       'Native Arabic and English, where the Boulevard Professional app lists English only',
       'A lower entry price than Boulevard\'s $159/mo ($143/mo billed annually)',
@@ -1249,7 +1248,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
     competitorWeaknesses: [
       'Entry price of $159/mo ($143/mo billed annually) for one location and up to 5 providers',
       'Multi-location support starts on Premier, at $325/mo per location ($293/mo billed annually)',
-      'Beau is a paid add-on at $125/mo per location for 200 minutes, and sends booking links rather than booking itself',
+      'Beau is a paid add-on at $149/mo per location for 100 minutes, and sends booking links rather than booking itself',
       'No consumer marketplace of its own',
       'No Arabic interface; the Boulevard Professional iOS app lists English only',
       'No GCC country or GCC payment method listed on its published pages (October 2026)',
@@ -1269,7 +1268,7 @@ export const tier2Competitors: Record<string, CompetitorData> = {
       {
         question: 'What does Boulevard actually cost when you include transaction fees?',
         answer:
-          'Essentials is $159/mo for one location and up to 5 providers. Premier is $325/mo and Prestige $455/mo per location, and a fall offer for new customers brings them to $260 and $364. Billed annually, the same plans are $143, $293 and $410 ($234 and $328 on the offer). Boulevard lists card processing from 2.65%, or as low as 1% with Boulevard Offset, where clients pay a 3% fee. Beau costs $125/mo per location for 200 minutes. Daisy costs less, includes the AI in the core platform, and does not take a slice of each transaction.',
+          'Essentials is $159/mo for one location and up to 5 providers. Premier is $325/mo and Prestige $455/mo per location, and a fall offer for new customers brings them to $260 and $364. Billed annually, the same plans are $143, $293 and $410 ($234 and $328 on the offer). Boulevard lists card processing from 2.65%, or as low as 1% with Boulevard Offset, where clients pay a 3% fee. Beau costs $149/mo per location for 100 minutes. Daisy costs less, includes the AI in the core platform, and does not take a slice of each transaction.',
       },
       {
         question: 'How difficult is it to switch from Boulevard to Daisy?',

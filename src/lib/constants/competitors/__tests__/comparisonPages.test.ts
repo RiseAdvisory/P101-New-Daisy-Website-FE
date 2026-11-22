@@ -6,6 +6,8 @@ import {
   getRelatedComparePages,
   getRelatedAlternativePages,
 } from '../comparisonPages';
+import { daisyVsPages, competitorVsPages } from '../comparisonPages';
+import { competitors } from '../competitorData';
 
 describe('comparisonPages helpers', () => {
   // ---------------------------------------------------------------------------
@@ -221,5 +223,41 @@ describe('comparisonPages helpers', () => {
       const related = getRelatedAlternativePages('fresha', 2);
       expect(related.length).toBeLessThanOrEqual(2);
     });
+  });
+});
+
+// A Daisy-vs page renders from its competitor's record. Without one the page
+// body is empty (daisy-vs-toast was published that way), so such pages are
+// left out of the published slugs and return no page data, which 404s.
+describe('Daisy-vs pages need a competitor record', () => {
+  it('publishes a Daisy-vs page exactly when its competitor has a record', () => {
+    const slugs = getAllCompareSlugs();
+    for (const page of daisyVsPages) {
+      expect({ slug: page.slug, published: slugs.includes(page.slug) }).toEqual({
+        slug: page.slug,
+        published: Boolean(competitors[page.competitorSlug]),
+      });
+    }
+  });
+
+  it('leaves daisy-vs-toast out, since Toast has no record', () => {
+    expect(competitors.toast).toBeUndefined();
+    expect(getAllCompareSlugs()).not.toContain('daisy-vs-toast');
+  });
+
+  it('keeps every competitor-vs page', () => {
+    const slugs = getAllCompareSlugs();
+    for (const page of competitorVsPages) expect(slugs).toContain(page.combinedSlug);
+  });
+
+  it.each(['en', 'ar'])('returns page data only for Daisy-vs pages with a record (%s)', (locale) => {
+    for (const page of daisyVsPages) {
+      const result = getComparePageData(page.slug, locale);
+      if (competitors[page.competitorSlug]) {
+        expect({ slug: page.slug, type: result?.type }).toEqual({ slug: page.slug, type: 'daisy-vs' });
+      } else {
+        expect({ slug: page.slug, result }).toEqual({ slug: page.slug, result: undefined });
+      }
+    }
   });
 });

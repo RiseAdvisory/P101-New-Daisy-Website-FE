@@ -135,3 +135,53 @@ describe("claims about Daisy's own product stay accurate", () => {
     ).toEqual([]);
   });
 });
+
+// Competitor pages changed between the 10 and 17 November 2026 audits, and
+// some of our figures had been wrong for longer. These were re-read on the
+// competitors' own sites on 2026-11-17; sources are in the record comments.
+describe('17 November 2026 audit corrections stay fixed', () => {
+  it('does not say DINGG lacks a Bahrain site or an Arabic interface', () => {
+    expect(
+      offenders(
+        /No Bahrain site|We found no Bahrain site|country sites for five GCC|five GCC states|DINGG publishes no Arabic interface|Its pages and app listings do not show an Arabic interface|No Arabic interface shown on its pages or app listings|لا موقع للبحرين|ولم نجد موقعاً للبحرين|مواقع لخمس دول|خمس دول خليجية/,
+      ),
+    ).toEqual([]);
+  });
+
+  it('does not say Mangomint lists no AI features', () => {
+    expect(
+      offenders(
+        /Mangomint publishes workflow automation but lists no AI|It lists no AI features as of October 2026|No AI features listed on Mangomint|AI features that Mangomint does not list|no AI features on its published pages|ميزات ذكاء اصطناعي لا يذكرها Mangomint|لا تذكر صفحات Mangomint المنشورة ميزات ذكاء اصطناعي/,
+      ),
+    ).toEqual([]);
+  });
+
+  it('does not say Mangomint has no AI features, in any wording', () => {
+    // Glamera and others can still be described as listing no AI features;
+    // only matches with Mangomint named nearby count here.
+    const found: string[] = [];
+    for (const file of FILES) {
+      const text = fs.readFileSync(file, 'utf8');
+      for (const m of text.matchAll(/no AI features|دون ميزات ذكاء اصطناعي|لا تذكر[^'\n]{0,40}ميزات ذكاء اصطناعي/g)) {
+        const start = m.index ?? 0;
+        const window = text.slice(Math.max(0, start - 250), start + 250);
+        if (/Mangomint/.test(window) && !/Glamera/.test(window)) {
+          found.push(`${path.relative(ROOT, file)}:${text.slice(0, start).split('\n').length}`);
+        }
+      }
+    }
+    expect(found).toEqual([]);
+  });
+
+  it('uses the current Boulevard Beau, Acuity Premium and SQUIRE prices', () => {
+    expect(
+      offenders(
+        /Beau[^.'\n]{0,80}\$125|\$125\/mo per location|\$125 شهرياً لكل موقع|\$61\/mo, or \$49\/mo|Premium[^.'\n]{0,40}\(\$49\/mo billed annually\)|from \$30\/mo, with no per-barber|plans start at \$30\/mo per shop/,
+      ),
+    ).toEqual([]);
+  });
+
+  it('does not say Vagaro Vera books over SMS', () => {
+    expect(offenders(/cancels over chat and SMS/)).toEqual([]);
+  });
+});

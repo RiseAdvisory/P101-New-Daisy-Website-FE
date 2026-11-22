@@ -717,7 +717,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
         '$10/month per additional calendar, up to seven paid licences',
         'Monthly FANF and Mastercard location fees on card processing',
         'Text marketing from $20/month for 1,000 credits',
-        'Vera Receptionist $10/month, which needs a Text Marketing plan',
+        'Vera Receptionist $10/month in the US, which needs a Text Marketing plan',
         'Forms $10/month and MySite website $20/month',
         'Branded app $100/month plus a $100 development fee (limited-time price)',
       ],
@@ -850,7 +850,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
     },
 
     daisyAdvantages: [
-      'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English; Vagaro\'s Vera Receptionist answers listing-page chat and SMS as a $10/month add-on',
+      'AI receptionist on WhatsApp, Instagram and the booking site, in Arabic and English; Vagaro\'s Vera Receptionist answers listing-page chat and SMS as a $10/month add-on in the US',
       'Official Meta Tech Provider with native WhatsApp and Instagram messaging',
       'Cashback-funded customer acquisition, with an optional marketplace in selected countries',
       'Arabic and English as equals; Vagaro\'s apps list English only',
@@ -882,7 +882,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
 
     competitorWeaknesses: [
       'No Arabic interface and no GCC market on its published pages, as of October 2026',
-      'Vera Receptionist is a $10/month add-on that needs a Text Marketing plan, and over SMS it sends a booking link rather than booking',
+      'Vera Receptionist is a $10/month add-on in the US that needs a Text Marketing plan, and over SMS it sends a booking link rather than booking',
       'Each additional calendar adds $10 a month, up to seven paid licences',
       'Text marketing, Forms, MySite and the branded app are paid add-ons',
       'Fill My Books charges 20% on a new customer\'s first booking',
@@ -898,7 +898,7 @@ export const tier1Competitors: Record<string, CompetitorData> = {
       {
         question: 'How does Daisy compare to Vagaro?',
         answer:
-          'Both run bookings, payments and client records, and both sell an AI receptionist. Vagaro\'s Vera answers listing-page chat and SMS as a $10 a month add-on, and Vagaro sells in the US, Canada, the UK and Australia. Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site in Arabic and English, and Daisy adds cashback-driven acquisition and a branded booking page.',
+          'Both run bookings, payments and client records, and both sell an AI receptionist. Vagaro\'s Vera answers listing-page chat and SMS as a $10 a month add-on in the US, and Vagaro sells in the US, Canada, the UK and Australia. Daisy\'s AI receptionist works on WhatsApp, Instagram and your booking site in Arabic and English, and Daisy adds cashback-driven acquisition and a branded booking page.',
       },
       {
         question: 'Can Vagaro\'s AI chatbot book appointments?',

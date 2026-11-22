@@ -61,7 +61,9 @@ const uiStrings = {
     arabicUi: 'Arabic UI available',
     noArabicUi: 'No Arabic UI published',
     marketplaceDiscovery: 'Marketplace discovery',
-    limitedNone: 'Limited / None',
+    // Derived from the marketplace rating only, so it names the marketplace
+    // rather than judging a rival's whole approach to finding clients.
+    limitedNone: 'Limited or no marketplace',
     none: 'None',
     country: (c: string) => c,
     competitorStrengths: (name: string) => `What Are ${name}'s Strengths and Limitations?`,
@@ -103,7 +105,7 @@ const uiStrings = {
     arabicUi: 'واجهة عربية متاحة',
     noArabicUi: 'لا توجد واجهة عربية منشورة',
     marketplaceDiscovery: 'الاكتشاف عبر السوق',
-    limitedNone: 'محدود / لا يوجد',
+    limitedNone: 'سوق محدود أو غير متوفر',
     none: 'لا يوجد',
     country: (c: string) => GCC_AR[c] ?? c,
     competitorStrengths: (name: string) => `نقاط قوة ${name} وما يستحق الموازنة`,
